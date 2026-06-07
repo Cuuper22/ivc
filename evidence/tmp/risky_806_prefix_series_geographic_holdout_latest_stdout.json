@@ -1,0 +1,397 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_806_prefix_series_geographic_holdout_20260531",
+  "tier": "promoted_candidate_metadata_layer",
+  "bet": "806 has a construction-sensitive prefix-series role: when preceded by 154/158 it predicts a following 465..475 series sign. Harappa alone supplies the rule, and non-Harappa rows are the held-out test. 155 and 100 are possible extension members because they appear only in the held-out/non-Harappa side and obey the same successor band.",
+  "trained_rule": {
+    "prefix_signs_learned_from_harappa": [
+      "154",
+      "158"
+    ],
+    "successor_band": "465..475",
+    "harappa_train": {
+      "target_n": 23,
+      "target_hits_465_475": 23,
+      "control_n": 23,
+      "control_hits_465_475": 0,
+      "fisher_right_tail": 1.2145605314292647e-13
+    },
+    "non_harappa_holdout": {
+      "target_n": 6,
+      "target_hits_465_475": 6,
+      "control_n": 58,
+      "control_hits_465_475": 3,
+      "fisher_right_tail": 0.0000011203829020606104
+    },
+    "all_sites_trained_prefix_only": {
+      "target_n": 29,
+      "target_hits_465_475": 29,
+      "control_n": 81,
+      "control_hits_465_475": 3,
+      "fisher_right_tail": 1.600720818212485e-23
+    },
+    "exact_text_site_type_symbol_prev_next_dedup": {
+      "all_sites": {
+        "target_n": 23,
+        "target_hits_465_475": 23,
+        "control_n": 60,
+        "control_hits_465_475": 3,
+        "fisher_right_tail": 1.41754854212285e-17
+      },
+      "non_harappa_holdout": {
+        "target_n": 6,
+        "target_hits_465_475": 6,
+        "control_n": 44,
+        "control_hits_465_475": 3,
+        "fisher_right_tail": 0.000005286110744019978
+      }
+    }
+  },
+  "extension_rule": {
+    "prefix_signs": [
+      "154",
+      "155",
+      "158",
+      "100"
+    ],
+    "status": "candidate_extension_not_needed_for_the_holdout_but_strongly_suggested_by_155_and_100_rows",
+    "non_harappa_holdout": {
+      "target_n": 9,
+      "target_hits_465_475": 9,
+      "control_n": 55,
+      "control_hits_465_475": 0,
+      "fisher_right_tail": 3.631004997603842e-11
+    },
+    "all_sites": {
+      "target_n": 32,
+      "target_hits_465_475": 32,
+      "control_n": 78,
+      "control_hits_465_475": 0,
+      "fisher_right_tail": 1.8761378553826887e-28
+    },
+    "exact_text_site_type_symbol_prev_next_dedup": {
+      "all_sites": {
+        "target_n": 26,
+        "target_hits_465_475": 26,
+        "control_n": 57,
+        "control_hits_465_475": 0,
+        "fisher_right_tail": 4.1424562890791096e-22
+      },
+      "non_harappa_holdout": {
+        "target_n": 9,
+        "target_hits_465_475": 9,
+        "control_n": 41,
+        "control_hits_465_475": 0,
+        "fisher_right_tail": 3.9913249350800554e-10
+      }
+    },
+    "prefix_successor_distribution": [
+      {
+        "next": "465",
+        "n": 5
+      },
+      {
+        "next": "467",
+        "n": 7
+      },
+      {
+        "next": "468",
+        "n": 8
+      },
+      {
+        "next": "469",
+        "n": 1
+      },
+      {
+        "next": "470",
+        "n": 2
+      },
+      {
+        "next": "471",
+        "n": 1
+      },
+      {
+        "next": "472",
+        "n": 5
+      },
+      {
+        "next": "473",
+        "n": 1
+      },
+      {
+        "next": "474",
+        "n": 1
+      },
+      {
+        "next": "475",
+        "n": 1
+      }
+    ]
+  },
+  "adversarial_notes": [
+    "The trained 154/158 rule is not allowed to learn 155 or 100 from Harappa, because they are absent there in this context.",
+    "The extension family is therefore lower confidence than the 154/158 rule, but it is not a free rescue: 155 and 100 occur on the held-out side and both land inside the same 465..475 successor band.",
+    "Exact text/site/type/symbol/prev/next collapse preserves the trained and extension effects in the non-Harappa holdout.",
+    "This is still metadata-layer evidence. Source-token boxing and copy-family collapse can demote it."
+  ],
+  "predecessor_breakdown": [
+    {
+      "prev": "235",
+      "n": 17,
+      "hits_465_475": 0,
+      "terminal": 14,
+      "examples": [
+        "H-21 +405-061-527-555-233-235-806-002-817+",
+        "H-204 +400-740-405-590-235-806+",
+        "H-750 +400-740-405-590-235-806+",
+        "H-751 +400-740-405-590-235-806+"
+      ]
+    },
+    {
+      "prev": "154",
+      "n": 16,
+      "hits_465_475": 16,
+      "terminal": 0,
+      "examples": [
+        "H-1999 +400-154-806-467+",
+        "H-1788 +154-806-470-002-861+",
+        "H-27 +154-806-468-001-740-877-032+",
+        "H-132 +154-806-471-407-845-740-233-231-798+"
+      ]
+    },
+    {
+      "prev": "845",
+      "n": 15,
+      "hits_465_475": 0,
+      "terminal": 15,
+      "examples": [
+        "M-2054 +740-900-850-407-061-845-806+",
+        "M-582 +740-900-850-407-061-845-806+",
+        "M-583 +740-900-850-407-061-845-806+",
+        "M-585 +740-900-850-407-061-845-806+"
+      ]
+    },
+    {
+      "prev": "158",
+      "n": 13,
+      "hits_465_475": 13,
+      "terminal": 0,
+      "examples": [
+        "H-1980 +400-158-806-475+",
+        "H-1979 +740-158-806-467+",
+        "H-58 +158-806-468-740-752-231-235+",
+        "H-189 +400-158-806-470+"
+      ]
+    },
+    {
+      "prev": "233",
+      "n": 8,
+      "hits_465_475": 0,
+      "terminal": 6,
+      "examples": [
+        "H-22 +740-920-320-233-806-002-405-321+",
+        "M-1953 +407-845-233-806+",
+        "M-171 +407-061-740-923-233-806-060-692+",
+        "M-503 +740-176-233-806+"
+      ]
+    },
+    {
+      "prev": "240",
+      "n": 7,
+      "hits_465_475": 0,
+      "terminal": 1,
+      "examples": [
+        "H-649 +520-033-705-233-240-806-002-820+",
+        "M-166 +390-844-240-806-002-861+",
+        "M-357 +740-100-806-472-240-806-001-820+",
+        "M-358 +003-001-520-240-806-002-502-031+"
+      ]
+    },
+    {
+      "prev": "032",
+      "n": 4,
+      "hits_465_475": 0,
+      "terminal": 2,
+      "examples": [
+        "H-20 +740-176-690-435-255-220-032-806-060-550+",
+        "M-392 +740-405-590-220-032-806+",
+        "M-1052 +679-740-220-032-806-001-595-575-001-095+",
+        "M-1265 +740-055-240-220-032-806+"
+      ]
+    },
+    {
+      "prev": "231",
+      "n": 4,
+      "hits_465_475": 0,
+      "terminal": 1,
+      "examples": [
+        "H-130 +409-032-845-033-705-231-806-002-595-812-125-717+",
+        "H-135 +740-773-231-806-002-861+",
+        "H-388 +520-033-706-231-806-002-817+",
+        "M-1452 +740-176-231-806+"
+      ]
+    },
+    {
+      "prev": "415",
+      "n": 3,
+      "hits_465_475": 0,
+      "terminal": 1,
+      "examples": [
+        "H-103 +159-097/520-033-705/740-717-220-415-806+",
+        "M-1985 +100-904-717-220-415-806-742+",
+        "M-369 +740-690-435-255-240-220-415-806-742-060-920+"
+      ]
+    },
+    {
+      "prev": "740",
+      "n": 3,
+      "hits_465_475": 0,
+      "terminal": 2,
+      "examples": [
+        "H-654 +405-061-740-806+",
+        "L-83 +740-806-240-002-820+",
+        "M-409 +045-740-806+"
+      ]
+    },
+    {
+      "prev": "003",
+      "n": 2,
+      "hits_465_475": 0,
+      "terminal": 0,
+      "examples": [
+        "H-1657 +740-405-590-032-900-003-806-235-220-032-002-690-921+",
+        "H-25 +740-900-003-806-033-705-235-055+"
+      ]
+    },
+    {
+      "prev": "155",
+      "n": 2,
+      "hits_465_475": 2,
+      "terminal": 0,
+      "examples": [
+        "M-1683 +155-806-467-001-692+",
+        "M-1962 +155-806-468+"
+      ]
+    },
+    {
+      "prev": "236",
+      "n": 2,
+      "hits_465_475": 0,
+      "terminal": 0,
+      "examples": [
+        "H-405 +236-806-002-863+",
+        "M-678 +740-752-006-503-236-806-002-031-502+"
+      ]
+    },
+    {
+      "prev": "368",
+      "n": 2,
+      "hits_465_475": 0,
+      "terminal": 2,
+      "examples": [
+        "H-694 +740-390-590-235-368-806+",
+        "H-695 +740-390-590-235-368-806+"
+      ]
+    },
+    {
+      "prev": "706",
+      "n": 2,
+      "hits_465_475": 0,
+      "terminal": 2,
+      "examples": [
+        "M-753 +520-033-706-806+",
+        "M-1323 +740-798-405-590-033-706-806+"
+      ]
+    },
+    {
+      "prev": "798",
+      "n": 2,
+      "hits_465_475": 0,
+      "terminal": 2,
+      "examples": [
+        "M-1956 +740-900-790-220-415-798-806+",
+        "M-370 +832-904-740-444-388-233-798-806+"
+      ]
+    },
+    {
+      "prev": "055",
+      "n": 1,
+      "hits_465_475": 0,
+      "terminal": 1,
+      "examples": [
+        "H-661 +740-055-806+"
+      ]
+    },
+    {
+      "prev": "100",
+      "n": 1,
+      "hits_465_475": 1,
+      "terminal": 0,
+      "examples": [
+        "M-357 +740-100-806-472-240-806-001-820+"
+      ]
+    },
+    {
+      "prev": "320",
+      "n": 1,
+      "hits_465_475": 0,
+      "terminal": 1,
+      "examples": [
+        "M-173 +740-388-900-320-806+"
+      ]
+    },
+    {
+      "prev": "400",
+      "n": 1,
+      "hits_465_475": 0,
+      "terminal": 0,
+      "examples": [
+        "M-916 +400-806-805+"
+      ]
+    },
+    {
+      "prev": "455",
+      "n": 1,
+      "hits_465_475": 0,
+      "terminal": 1,
+      "examples": [
+        "- +154-806-472-013-220-455-806+"
+      ]
+    },
+    {
+      "prev": "565",
+      "n": 1,
+      "hits_465_475": 0,
+      "terminal": 1,
+      "examples": [
+        "H-679 +565-806+"
+      ]
+    },
+    {
+      "prev": "590",
+      "n": 1,
+      "hits_465_475": 0,
+      "terminal": 0,
+      "examples": [
+        "M-1306 +740-405-590-806-002-820+"
+      ]
+    },
+    {
+      "prev": "923",
+      "n": 1,
+      "hits_465_475": 0,
+      "terminal": 1,
+      "examples": [
+        "M-1784 +740-923-806+"
+      ]
+    }
+  ],
+  "decision": "promote_as_metadata_layer_series_operator_candidate",
+  "falsifiers": [
+    "A source-visible 154-806 or 158-806 row followed by a non-465..475 sign kills the trained version.",
+    "Any non-prefix predecessor before 806 followed by 465..475 kills the exclusivity version.",
+    "Exact source-family collapse that reduces the trained holdout to fewer than two independent objects demotes the candidate.",
+    "Blind source boxes showing that the 806 or successor token boundaries are catalog artifacts demote the candidate."
+  ]
+}
