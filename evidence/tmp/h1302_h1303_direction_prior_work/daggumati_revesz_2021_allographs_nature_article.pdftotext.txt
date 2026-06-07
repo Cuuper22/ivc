@@ -1,0 +1,609 @@
+                  ARTICLE
+                  https://doi.org/10.1057/s41599-021-00713-0               OPEN
+
+                  A method of identifying allographs in undeciphered
+                  scripts and its application to the Indus Valley Script
+                  Shruti Daggumati1 & Peter Z. Revesz                   1✉
+
+
+
+
+                  This work describes a general method of testing for redundancies in the sign lists of ancient
+                  scripts by data mining the positions of the signs within the inscriptions. The redundant signs
+1234567890():,;
+
+
+
+
+                  are allographs of the same grapheme. The method is applied to the undeciphered Indus
+                  Valley Script, which stands out from other ancient scripts by having a large proposed sign list
+                  that contains dozens of asymmetric signs that have mirrored pairs. By a statistical analysis of
+                  mirrored asymmetric signs, this paper shows that the Indus Valley Script was multi-
+                  directional and the mirroring of signs often denotes only the direction of writing without any
+                  difference in meaning. For this and ﬁve other speciﬁc reasons listed in the paper, 50 pairs of
+                  signs, 23 mirrored, and 27 non-mirrored, can be grouped together because each pair consists
+                  of only insigniﬁcant variations of the same original sign. The reduced sign list may make
+                  decipherment easier in the future.
+
+
+
+
+                  1 Department of Computer Science and Engineering, University of Nebraska-Lincoln, Lincoln, USA. ✉email: revesz@cse.unl.edu
+
+
+                  HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2021)8:50 | https://doi.org/10.1057/s41599-021-00713-0                      1
+ARTICLE                                  HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-021-00713-0
+
+
+
+
+A
+Introduction
+         n important ﬁrst step in understanding a script is being           and many other scholars have neglected the difference between
+         able to tell how many different signs it has. Hence var-           the original and reversed sign on seals. Wells is one scholar who
+         iations of signs that denote the same concept need to be           noted the difference between the original and mirrored signs and
+grouped together. Although this grouping is naturally present in            regards them as separate entities (Wells, 1998). Therefore, it is
+all work, the process of grouping is not described and analyzed in          essential to correctly group signs based not only on their visual
+a systematic way but mostly presented as a fact based on the                similarities, as earlier authors have done but also by careful data
+visual sense of the researcher with only occasional ad-hoc argu-            analysis of their positions within the inscriptions (Fuls, 2013;
+ments given. Our goal is to systemize the process of grouping of            Wells, 2011, 2015).
+variations of signs. The debate over the exact number of signs is              The rest of this paper is organized as follows. Section “Data
+particularly acute in the case of the Indus Valley Script. The Indus        sources and methods” describes the data sources used. Section
+Valley Script is estimated to have between 417 (Mahadevan,                  “Multi-directionality of the Indus Valley Script shown by mir-
+1977) and 694 (Wells, 2015) signs. The Indus Valley Script also             rored asymmetric signs” considers asymmetric signs that have
+shows a large variation in the way certain signs are written                mirrored pairs. Section “Reducing the Indus Valley Script sign set
+because of the various ways it was expressed including carving,             by data mining inscriptions” discusses the implications of mer-
+chiseling, embossing, incising, inlaying, molding and painting,             ging some groups of signs and thereby reducing the total number
+and the range of writing materials used including bone or ivory,            of signs in the Indus Valley Script. Section “Conclusions and
+ceramic, copper, faience, gold, gypsum, sandstone, silver, steatite,        future works” gives some conclusions and presents ideas for
+stoneware, and terracotta (Parpola et al., 2010). When consulting           future work. Finally, section “Data availability” makes a statement
+the largest collection of signs (Wells, 2015), <10% occur more              about data availability.
+than 50 times as shown in Fig. 1.
+   It is also necessary to establish the correct reading direction of
+                                                                            Data sources and methods
+each inscription. Previous scholars who have made over a hundred
+                                                                            The signs noted in this work reference multiple authors
+unsuccessful attempts to decipher the Indus Valley Script have
+                                                                            (Mahadevan, 1977; Parpola, 1986, 1994; Wells, 1998), CISI
+mostly concurred that the Indus Valley Script was always read
+                                                                            (Joshi and Parpola, 1987; Parpola et al., 2010; Shah and Par-
+right to left. In addition, some scholars have also accepted that each
+                                                                            pola, 1991), and the ICIT dataset. The data set we focus on was
+sign variation is unique. We show that the Indus Valley Script was
+                                                                            curated and veriﬁed in two ways. First, by hand (using sign lists
+multi-directional and has a smaller sign set.
+                                                                            from other authors and CISI), and second, by using the ICIT
+   In this work, we focus on the asymmetric signs as well as
+                                                                            database as a resource. Each sign on the seals in question were
+similar signs. We deﬁne symmetry as vertical line symmetry,
+                                                                            stored in a MongoDB database. The signs we focused on for
+where the left and right portions of a sign are mirror images of
+                                                                            symmetric/asymmetric were a primary ﬁeld that enabled us to
+each other. It is seen that even though there is an almost equal
+                                                                            focus on their relation to other signs in the seal and similar
+distribution of asymmetric and symmetric signs, the frequency of
+                                                                            seals. The following attributes were stored for each seal: CISI
+symmetric signs is much greater than asymmetric (Daniels and
+                                                                            id, sign number, location, other signs on the seal, length of the
+Bright, 1996; Mahadevan, 1977).
+                                                                            seal, and a ﬂag to indicate if it was a multi-line seal. Each seal is
+   When focusing on the asymmetric signs, a couple of interesting
+                                                                            stored as a document which has the aforementioned properties.
+characteristics appear; duplicate and mirrored signs. Mahadevan
+                                                                            Unlike traditional databases the MongoDB database allows for
+                                                                            multiple correlations to be made to a sign and it also allows for
+                                                                            an easier analysis. Each of the frequencies listed in this work is
+                                                                            easily tabulated via querying the data set. This database
+                                                                            setup could expand in the future to further analyze seals with
+                                                                            animal symbols.
+
+                                                                            Multi-directionality of the Indus Valley Script shown by
+                                                                            mirrored asymmetric signs
+                                                                            In this section, we focus on the signs which we classify as mir-
+                                                                            rored. According to our identiﬁcation, there are at least 23 mir-
+                                                                            rored asymmetric signs in the Indus Valley Script. Each of the
+                                                                            mirrored asymmetric signs can be used multiple times, but
+                                                                            usually much less frequently than the original sign. Hence while
+                                                                            the original signs occurred 1659 times, their mirrored signs
+                                                                            occurred only a total of 110 times, that is only about 6.7 percent.
+                                                                            As we went through each example of a mirrored sign, we tried to
+                                                                            ﬁnd an apparent reason for the mirroring. We divide the
+                                                                            occurrence of mirrored signs into two distinct categories: (I)
+                                                                            deliberate and (II) accidental. We could distinguish ﬁve different
+                                                                            reasons for a deliberate mirroring of a sign. When we could not
+                                                                            ﬁnd an apparent reason, then we call the use of the mirrored sign
+                                                                            ’accidental.’ In general, we tried hard to ﬁnd a reason for mir-
+                                                                            roring of the signs and accepted that a mirroring is accidental
+                                                                            only if no other reasonable explanation could be identiﬁed. As we
+                                                                            browsed through the library, we found that the earlier classiﬁ-
+                                                                            cations of the reasons for the mirroring were useful in identifying
+Fig. 1 Distribution of Indus Valley Script signs. Venn diagram regarding    the later occurrences of mirrored signs. Each category has various
+asymmetry, mirroring, and frequency.                                        types, which are listed below:
+
+2                           HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2021)8:50 | https://doi.org/10.1057/s41599-021-00713-0
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-021-00713-0                                         ARTICLE
+
+  Classiﬁcation of mirrored signs                                            due to sign occurring as a terminal character on the left; for the
+                                                                             majority of the tablets sign occurs on the right. Seal K-45 occurs
+  I - Deliberate
+                                                                             in Kalibangan; Kalibangan has only two noted seals with the
+                                                                             original sign . Due to the scarcity in the region, the evidence
+  Type 1. The mirrored sign is found in a sequence that is                   shows that it is a location anomaly.
+  reversed.                                                                     There are three occurrences of the mirrored sign in Mohenjo-
+  Type 2. Two or more mirrored signs occur on the same seal/                 Daro. Seal M-1783 is boustrophedonic as the mirrored sign
+  tablet.                                                                    appears on the second line. The claim that the second line is
+  Type 3. The mirrored sign appears on a crowded seal to                     boustrophedonic is not supported by the positional analysis work
+  save space.                                                                of Fuls (2013), however the original occurs one time on a two-
+  Type 4. The mirrored sign occurs on a boustrophedonic
+                                                                             line seal as a terminal character, much like seal M-1783. It was
+  artifact.
+                                                                             also seen that the signs are not carved as neatly as other Indus
+  Type 5. The mirrored sign indicates an underlying meaning.
+                                                                             Valley Script seals. M-2027 is a fragment of a tablet that is merely
+                                                                             sketched in CISI; therefore, we cannot guarantee its validity. The
+  II - Accidental                                                            evidence shows that Seal M-632 is carved incorrectly due to its
+                                                                             appearing with two other asymmetric signs and due to that
+  Type 6. The mirrored sign is incorrect in the ICIT database of             the probability of a mirrored sign with the aforementioned
+  (Wells and Fuls, 2017).                                                    classiﬁcations is 0.04%.
+  Type 7. The mirrored sign is a location anomaly.
+  Type 8. The mirrored signs (a) are carving errors or (b) occur             Sign . Four occurrences exist for the mirrored sign. Of those
+  at different periods.                                                      four, entry H-1468 is found on a pot shard, so the direction is
+   Type 1 occurs when all asymmetric signs are mirrored. This                unclear; therefore, we conclude that direction is the same as the
+may indicate that instead of the normal right to left reading                original. Seal M-62 contains the mirrored sign paired with the
+direction a reverse direction is intended.                                   original sign with a sign in between; we conclude that this sign is
+   Type 2 also may indicate a left to right reading direction.               paired, i.e.       .
+   Type 3 is merely to save space.                                              The last two occurrences are found in Kalibangan. Seal K-6 is a
+   Type 4 reverses the reading direction for each row to make                boustrophedonic inscription that contains two mirrored signs:
+reading possible without a large movement of the eyes.                       and . In addition, the probability that these two mirrored signs
+   Type 8 is divided into cases. If an anomaly occurs only once,             occur on the same seal is 17;650    4
+                                                                                                                     ´ 17;650
+                                                                                                                          3
+                                                                                                                              ¼ 3:852 ´ 108 . One
+then it is carving error (a), while if it occurs several times but           interesting aspect of this seal is that the direction that the animal
+always in late periods, then it is a style change over time (b). We          is facing is left when they are most often facing right. Seal K-56 is
+consider these two cases related in the sense that an accidentally           noted incorrectly in the ICIT database, and the direction should
+introduced carving error could be copied by later scribes.                   be that of the original.
+   Neither Types 1–4 nor Types 6–8, the accidentally mirrored
+occurrences, have grammatical meanings. Only Type 5 allows the               Sign . Three occurrences exist for the mirrored sign. One in
+mirroring to denote a grammatical marker. We categorized as                  Kalibangan and two in Mohenjo-daro. In Kalibangan, Seal K-6
+Type 5 only some of the occurrences of the mirrored pair and .               notes the only time either the original or mirrored value of this
+Wells (2011) has done a detailed statistical analysis of some of             sign is used. As discussed above, Seal K-6 is boustrophedonic.
+these symbols and argued for a grammatical marker role for the                  The other two seals are found in Mohejo-daro. Seal M-747 is
+mirrored signs. We feel that Types 1–4 and 6–8 occurrences                   written in a boustrophedonic manner and should be read from
+should not be used in any statistical analysis regarding gram-               right to left, and then left to right. Seal M-782 is noted incorrectly
+matical meaning because of the non-grammatical explanations.                 in the ICIT database and the direction should be that of the
+                                                                             original.
+Data collection. There are 23 pairs of mirrored signs. The curated
+sign list is retrieved from the up-to-date online Indus writing              Sign . According to ICIT, six occurrences exist for , three in
+database which hosts the Interactive Corpus of Indus Text (ICIT)             Harappa and three in Mohenjo-daro. Figure 2 shows two
+(Wells and Fuls, 2017). In addition to using ICIT, we referenced             instances of using the sign instead of the sign. The seals shown
+the Corpus of Indus Seals and Inscriptions (CISI) to verify the              on the left and the right of this ﬁgure are numbered H-50 and M-
+mirrored signs (Joshi and Parpola, 1987); in our work, we only               1350, respectively, in CISI. In the ﬁrst case the sign is used to save
+analyze the signs found in CISI.                                             space, while in the second case the sign may be a carving error.
+   Table 1 shows the 23 pairs of mirrored signs, where the left                 According to ICIT, Tablet M-600 includes mirrored sign on
+sign is the original sign and the right sign is the mirrored sign.           the front side and mirrored sign on the backside. However, on
+Wells (2015) already noted that the signs, , , and have the                  further inspection, we see that the backside has the sign . The
+four largest allographic sets of Indus Valley Script signs. We claim         fragment of the tablet reads on the front        and on the back.
+that all the 23 pairs of mirrored signs are allographs. The                  Copper Tablet M-599 contains the same text on the front and
+frequencies listed next to each sign are also retrieved from ICIT.           back as M-600. Given the evidence of two mirrored signs on the
+As seen in the table each mirrored sign occurs <20 times, where              front and back the evidence shows that the seal contains mirrored
+almost half occur at most twice. Table 1 also contains the artifact          writing and that the probability of these two mirrored signs
+names where the mirrored signs occur and its’ sub-type. Later                                                   8
+                                                                             occurring on the same seal is 17;650  ´ 17;650
+                                                                                                                        3
+                                                                                                                            ¼ 7:704 ´ 108 . These
+sections describe the categorizations in detail.                             tablets are similar to copper tablets M-547, M-548, M-549, M-
+                                                                             1555, M-1556, M-1557, and M-1558, where the only difference is
+Signs                                                                        the mirrored sign. Upon inspecting seal M-749 in CISI we see
+Sign . There are ﬁve occurrences of the mirrored sign . Only one             that it does not contain sign but instead .
+occurs in Harappa, on tablet H-795 that is barely legible.                      For the three occurrences in Harappa, the signs found on the
+Assuming that this is sign , we state that the tablet is mirrored            pottery artifacts H-1413 and H-1745 very slightly represent sign
+
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2021)8:50 | https://doi.org/10.1057/s41599-021-00713-0                                          3
+ARTICLE                              HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-021-00713-0
+
+
+
+Table 1 Signs which are found to be mirrored, including their frequency, CISI ID, and categorized type.
+
+
+
+
+4                       HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2021)8:50 | https://doi.org/10.1057/s41599-021-00713-0
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-021-00713-0                                          ARTICLE
+
+
+
+
+Fig. 2 Mirroring of the rake sign. Seal 131 (left) from Vats (1940) and seal 599 (right) from Mackay (1938) show the use of the   sign.
+
+
+ . Triangular Tablet H-1930 contains a few peculiarities. The sign           numbered H-8 and H-161, respectively, in CISI. Wells (2011) has
+  does not have the “E” shape that has and more of a “Y” shape.              performed a detailed analysis on this symbol. We see the most
+In addition, this is the only tablet to have both signs and .                unique occurrence of the mirrored sign on Seal M-1272; where
+With all of these unique attributes, the evidence supports a                 ICIT states that the mirrored sign appears with the original.
+negligible mirroring.                                                        Inspecting the seal in CISI we see that the stated mirrored sign
+                                                                             appears on the right-hand side, as shown on seal M-1272. Upon
+Sign . Four occurrences exist for mirrored sign . Mohenjo-daro               further inspection we note that the ﬁrst sign is different from the
+has one occurrence of the mirrored sign on the copper Tablet M-              one stated, and the curved nature of the ﬁrst sign is not similar to
+600; as discussed above.                                                     the stated mirrored sign (it is not truly symmetric). The quoted
+   One mirrored sign is found on Seal B-4 in Banawali which                  mirrored sign is more similar to , which occurs as an initial
+reads      . In this location, sign only occurs once, and that is in         symbol all but one time throughout all of the Indus Valley
+the mirrored format. Due to its rarity in this location; it is a             Script seals.
+location anomaly.                                                               In seals H-8, shown on the left side of Fig. 3, and H-1657 the
+   In Harappa, we ﬁnd the other two occurrences of . Tablet H-               mirrored sign appears as a pair with sign , where the right-hand
+2104 is unique where the sign       appears only twice throughout            side is crowded with . We see that the ﬁts perfectly into the
+the Indus Valley Script. Upon consulting CISI we see that the                angles of the sign. An overlap of artifact sequences among the
+direction noted in ICIT is incorrect and the sign, in reality, is the        items where the original signs and mirrored sign are
+original. Triangular Tablet H-632 is unique in regards to its shape          found is non-existent. Upon further inspection, it appears that
+and reads            , where we see that the terminal sign is ;              the sign appears in the sequence with either               or just ,
+therefore, we can conclude that this tablet likely has an erroneous          whereas the combination of            or    is non-existent in the
+carving.                                                                     artifacts where the original sign is found. These sequences are
+                                                                             found on artifacts H-64, H-161 (see the right side of Fig. 3), H-
+Sign . The ICIT database contains one account of the mirrored                245, M-245, M-779, M-1141, M-1737, and M-1826. In these cases
+sign    which is found on the H-1775 tablet as listed in CISI.               the mirrored sign may indicate some meaning.
+Given that this is one account of this sign, and it contains a                  Tablet H-209 is stated to have sign , but on further inspection,
+common triplet pair we conclude that this seal contains an                   we see that the sign is not clear. Seal H-482 is stated to have sign
+accidental mirrored carving.                                                 on the seal, but with further inspection of CISI, we see that the
+                                                                             sign is incomplete and may not be the mirrored sign. Inspecting
+Sign . Out of 455 occurrences of sign noted in ICIT only three               tablet M-494 in CISI it is not apparent that the sign is on the
+occur as a mirror . This low percentage is our ﬁrst inclination              artifact. Tablet H-2128 is crowded on the left side where the
+that the mirrored sign does not indicate a different glyph. The              mirrored seal appears; therefore, we conclude that the sign
+mirrored sign that occurs independently on a shard of pottery L-             direction is negligible. Seal M-239 is noted to be mirrored as the
+251, allows us to conclude that directionality of the sign is the            sign is also mirrored (some scholars may perceive the seal to
+original. Seal K-77 reads        which is similar to Seal K-68 which         include the sign instead which has only one occurrence in the
+reads      ; only mirrored. We see that the obverse side of the seal         entire Indus seal set).
+has similar signs i.e. long vertical lines. We also see that the seals
+are similar in shape and size.                                               Sign . Of the 17 mirrored occurrences listed in ICIT, 11 of them
+   Consulting CISI we see that Seal M-1233 has a crude                       (H-278–H-284, H-871–H-873) are a repeated sign sequence
+unﬁnished surface with a sign that appears to be with one                    found on a cylindrical clay tablet with a crocodile on the back. We
+less horizontal line. In addition, we notice that sign is crowded            note that the original sign does not occur in this sequence nor
+at the edge of the seal, and the carvings seem more haphazard                does the original sign occur with a crocodile or on a cylindrical
+than usual Indus Valley Script carvings. We conclude that this               tablet. We conclude that these 11 mirrored signs are one repeated
+single occurrence in Mohenjo-daro is likely an erroneous carving.            mistake.
+                                                                                Seal H-598 and Tablet H-1924 are both incorrectly noted in
+Sign . The mirrored sign appears 15 times according to the ICIT              ICIT, the sign should be noted as the original. H-1154 and H-
+database. Figure 3 shows two examples of the use of the sign.                1835 appear on small tablet shards where the sign is unclear;
+The seals shown on the left and the right of this ﬁgure are                  therefore, the sign may not be . Tablet H-2039 has rotated 90°,
+
+
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2021)8:50 | https://doi.org/10.1057/s41599-021-00713-0                                        5
+ARTICLE                                   HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-021-00713-0
+
+
+
+
+Fig. 3 Mirroring of the bow sign. Seals 1 (left) and 262 from Vats (1940) show the use of the sign.
+
+
+
+thus the evidence supports a writing anomaly. H-2039 appears on
+a coin size tablet where the sign appears squished due to space               Table 2 Three of the CISI tablets which are most similar to
+limitations; thus, the mirroring is negligible.                               H-1864.
+   All but one-mirrored sign occur in Harappa. Seal M-189 is the
+only one to occur in Mohenjo-daro; therefore, the evidence                    CISI of artifact                                        Signs
+supports a location anomaly.                                                  H-1864
+                                                                              M-164
+Signs and . According to ICIT, there are two entries for ,                    M-717
+however, after consulting CISI, we conclude that neither are
+mirrored signs. One entry is unclear as it is found on a broken
+shard of pottery; incomplete and may not be the sign stated. The            Sign . The mirrored sign occurs four times in the ICIT database. We
+second entry is in good condition; however, the seal M-331, is              ﬁnd that one of the entries, H-305 is noted incorrectly in the ICIT
+boustrophedonic. The sign is found in the second row of the seal            database and should be similar to tablets H-921 or H-2123 which
+and the ﬁrst row is read from right to left.                                both read       . We note that Tablet H-1864 is incorrectly carved,
+   Seal H-1902 we note to be an accidental carving, due to all other        due to similarity to other seals, e.g. M-164 and M-717; illustrated in
+occurrences of this sign are in the initial position. Similar to we         Table 2. The mirrored sign on tablet H-2124 occurs independently.
+conclude entry M-402 for is also boustrophedonic. The seal has              Therefore, nothing can be concluded other than the sign is a writing
+one asymmetric sign which only occurs once throughout the Indus             anomaly on a tablet, which is in poor condition.
+Valley Script which we believe to be a simpler version of .                    Seal M-664 found in Mohenjo-Daro is incorrectly carved due
+   Signs and for the majority of artifacts, are initial characters,         to that the mirrored sign is the only occurrence in this location.
+thus this ensures that these signs are not mirrors yet,                     In addition, the pair       occurs four times in Mohenjo-daro, as
+boustrophedonic. In addition, to concluding that signs and                  the beginning signs of seal M-664 with sign            reversed. In
+are the originals. We speculate that sign is a variation of sign ,          addition, the carving on the tablets is slightly written on a
+which has only occurred once throughout the Indus Valley Script.            diagonal. Signs are usually carved straight across the top of the
+Supplementary to this we see that neither signs and nor their               seal. We see that with the two erroneous mirrored signs the
+mirrors occur together.                                                     probability of a mirrored sign is 0.02%.
+
+Sign . The ICIT database states two seals contain the mirrored              Sign . The mirrored sign occurs ﬁve times in Harappa and once
+sign . After further investigation of CISI, we see that K-18 is             in Mohenjo-Daro. In Harappa, the signs             occur together in
+incorrectly noted and does not contain the mirrored sign, but               this order at least 42 times. Examining tablet H-232, we see that
+rather the original. According to ICIT the seal found in Mohenjo-           the tablet reads          where the mirrored sign is not instead
+Daro M-745 reads              . Upon consulting CISI, we see that           it is . In addition, we see that the reason behind mirroring the
+this sign is not actually mirrored but the original sign.                   sign is due to space limitations on the tablet. Tablets H-1302, H-
+                                                                            1303, and H-1822 are all mirrored writing which contain the
+Sign . We note that this sign is among other sign varients as               signs       however, it is incorrectly noted in the ICIT database as
+noted by Parpola (1994) and Wells (2015). According to ICIT we                     where the mirrored sign         should be noted as . The
+see that there are three occurrences for the mirrored sign and              mirrored sign found in Mohenjo-Daro appears on ivory rod M-
+seven occurrences for the original sign. However on further                 1650. On further inspection of CISI, we see that the mirrored sign
+inspection of the original sign and the mirrored sign, the artifacts        is also incorrectly noted in the ICIT.
+in CISI show only one occurrence of and the other nine are the                 Triangular Tablet H-853 is the only occurrence of the mirrored
+sign . All but three artifacts are found on copper tablets. For the         sign , as we have concluded the other noted mirrors are
+single seal L-36 which contains the sign , it is seen that the ticks        incorrect. We see that the probability of having a mirrored sign
+at the top of the sign would be cut off if the sign were ;                  instead of the original as 0.005%. As the sign is also carved in the
+therefore, this is due to space limitations on the seal. A mirrored         unique triangular tablet, we conclude that the tablet is an
+sign does not exist and the only sign is .                                  accidental carving.
+
+
+6                           HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2021)8:50 | https://doi.org/10.1057/s41599-021-00713-0
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-021-00713-0                                              ARTICLE
+
+Sign . There are 12 occurrences of the mirrored sign . Seal H-                Sign . The mirrored sign occurs only once in Lothal, which is
+663 is noted incorrectly in the ICIT database and should be                   around 700 km away from the other locations which use the
+written as the original. All the occurrences of the mirrored sign in          original sign . In addition, the pair of        occurs in Harappa
+Lothal (L-28, L-37, L-210) are location anomalies, as the original            which is similar to the one in Lothal. Therefore, we conclude that
+sign and the mirrored sign have an almost equal distribution.                 the mirrored sign found in Lothal is a location anomaly.
+For the rest of the artifacts, we see that there are portions of the
+text inclusive of the mirrored sign which is found on artifacts with          Sign . The mirrored sign occurs once in Mohenjo-Daro which
+the original sign. This evidence shows that mirroring is negligible.          is roughly 685 km from Harappa where the original sign occurs
+                                                                              11 times. We conclude that the reversed sign is a writing direction
+Location anomalies. Of the 23 mirrored pairs two signs occur                  and a location anomaly. In addition, we state that the direction of
+more frequently in one location or occur only in one location of              the tick of sign 851 indicates writing direction.
+the Indus Valley, as shown in Table 3. The distances between
+these Indus Valley sites differ from 670 km to at least 900 km as             Sign . According to ICIT, the mirrored sign occurs 10 times. In
+seen in Fig. 4. We conclude that these signs are not mirrored                 all of these 10 cases, we see that the mirrored sign is a terminal
+signs, rather the directionality of these signs are due to infrequent         sign on the left side and that the next sign is always a form of .
+usage and/or location.                                                        In the majority of the artifacts with the original sign, we see that
+                                                                              the original sign is also a terminal sign and is followed by a
+                                                                              variation of ; therefore, we conclude that the mirrored sign is
+                                                                              negligible. Wells also noted that these two signs created bonded
+ Table 3 The location and frequency of two of the claimed
+                                                                              clusters (Wells, 2015).
+ mirrored signs.
+                                                                                 A few of the artifacts may not be the mirrored sign or a unique
+                                                                              variation. Tablet H-344 is unrecognizable, therefore, it may not
+ Sign             Locations                                                   contain the sign . Seal L-9 is broken, so the mirrored sign may
+                  Harappa               Lothal             Mohenjo-daro       not be on the artifact. Tablet H-2084 has the mirrored sign
+                  1                     –                  6                  rotated 45°, which is a writing anomaly.
+                  –                     1                  –
+                  11                    –                  –                  Sign . Two occurrences exist for the mirrored sign , one in
+                  –                     –                  1
+                                                                              Harappa and one in Mohenjo-daro. Out of all the seals with sign
+                                                                              regardless of being the original or mirrored, Seal M-784 is the
+
+
+
+
+Fig. 4 The red boxes highlight some of the major archeological sites of the Indus Valley Script inscriptions. The red boxes were added to a map from
+the Wikipedia article on “Indus Valley Civilization” and appears at https://bit.ly/39B95az. The original map was created by Avantiputra7 and is used by a
+CC BY-SA 3.0 license.
+
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2021)8:50 | https://doi.org/10.1057/s41599-021-00713-0                                                7
+ARTICLE                                 HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-021-00713-0
+
+
+
+ Table 4 The CISI tablets which are most similar to H-298, on              variations that really denote the same sign. In our grouping work,
+ the front and back.                                                       we started from the more expansive list of Wells because
+                                                                           Mahadevan did not provide written reasons for his groupings. In
+                                                                           contrast, we wanted to support our groupings with an explana-
+ CISI of artifact                  Front                       Back
+                                                                           tion that can be checked and veriﬁed by future researchers.
+ H-298                                                                        After some experimentation, we identiﬁed six different reasons
+ H-894                                                                     for grouping signs together. Identifying these reasons based on
+ H-1178                                                                    some early examples was helpful in debating whether some sign
+                                                                           variations in later examples should be grouped together. We
+                                                                           could go through our list of possible reasons and check whether
+most legible. The artifacts show that the sign has zero common             each reason applied or not. This method sped up the decision
+signs other than ; therefore, the evidence shows that the                  process regarding grouping. We also believe that the method of
+direction of writing is negligible. Additionally, we see that the          stating explicitly a set of agreeable reasons for grouping makes the
+original and mirrored sign have an almost equal distribution.              results more robust. That is because once people agree that
+                                                                           something is a good reason for merging, the identiﬁcation whe-
+Sign . The mirrored sign occurs only twice in comparison to                ther the reason applies or does not apply is often straightforward.
+the original which occurs 57 times. Rectangular Tablet H-298 is            Therefore, once the agreement on reasons is reached, people tend
+found in Harappa and reads           . The original sign      occurs       to come to the same conclusion regarding whether two signs
+frequently with , e.g.       occurs on rectangular Tablets H-894,          should be merged or not. This methodical approach is better than
+H-1178, and H-1946 which are all found in Harappa. Tablets H-              having no explicitly stated reasons for merging but relying only
+894 and H-1178 are most similar to H-298 on both sides of the              on an implicit “visual sense’ that may be subjective and different
+tablet as seen in Table 4. Due to the similarity on both sides of the      for each scholar. On the other hand, we admit that we do not
+seals and is found in the same location, the evidence shows that           present a fool-proof method for grouping signs, and future
+Tablet H-298 is an incorrect marking.                                      researchers may well identify additional reasons for grouping
+   For the triangular Tablet H-1920 which reads                   the      sings beyond the six reasons that we present below.
+evidence shows that       is mistakenly carved due to being rarely
+used in combination with signs         and the use of the triangular
+tablet. The sign is often found as a terminal character on the             Six reasons for grouping signs. We found the following six
+left-hand side, which provides further evidence to neglect                 reasons for grouping together signs:
+meaning behind the mirroring of the sign.                                     Reasons for grouping signs
+                                                                              1. The signs are squished or morphed due to space issues.
+Sign . The original sign and the mirrored sign occur infre-
+                                                                              2. The signs are mirrored without an underlying meaning.
+quently and all occurrences are located in Mohenjo-daro. There is
+                                                                              3. The sequence that the main sign is found on is the same as
+an equal distribution of using the original or mirrored sign. In
+                                                                                 the variation.
+addition to this, we see that none of the seals contain any signs in
+                                                                              4. The sign is a location anomaly.
+common, regardless of containing the original or mirrored sign.
+                                                                              5. An incorrect sign is noted.
+Due to this, we state that this sign is a writing anomaly; therefore,
+                                                                              6. Visual similarity of signs is high and a varied sign occurs
+directionality is negligible.
+                                                                                 only once.
+Sign . There are three occurrences of the mirrored sign which                Below we illustrate these types of reasons in separate
+all occur as seals in Mohenjo-daro. There is no overlap between            subsections. Table 5 shows the grouping of signs with 27
+any of the seals that contain the original sign or the mirrored            variations that could be merged with another sign, called the
+sign . The probability of using an original or mirrored sign has           main sign, according to the six types of reasons.
+an almost equal distribution. We conclude that the directionality
+of the sign is negligible.                                                 Reason 1: Space issues lead to signs being squished. Signs which are
+                                                                           squished or morphed due to space issues should be placed in the
+                                                                           same set as the main sign. In this section, we describe, illustrate,
+Reducing the Indus Valley Script sign set by data mining                   and show proof for signs which fall into this type. The signs
+inscriptions                                                               and are the same. There are three occurrences of ; however,
+Reducing the Indus Valley Script sign set is important because it          upon further inspection, it is clear that the sign is only altered for
+is the ﬁrst step in the decipherment of the script. A sufﬁciently          space issues as seen in Fig. 5. Similarly,      and     are the same
+small set of signs is needed before the tedious guesswork of
+assigning phonetic values to each sign. If several variations of a         signs, but the second is more constricted. Signs and are also
+sign are not recognized as the same sign, then it could lead               the same, as can be seen in H-1936, sign curves towards the
+would-be-decipherers astray as they assign different phonetic              bottom of the round seal.
+values to the different versions. Intuitively, a good grouping of             Sign     and     should be the same sign. Figure 6 shows on the
+signs would contain few singletons, that is, signs that occur only         left side a normal      sign, while on the right side the      sign is
+once in the corpus of inscriptions.                                        missing the line in the middle due to the limitations of space. In
+   Many scholars have grouped similar signs together (Fairservis,          addition to this, we see that the signs are all on the right.
+1983, 1992; Mahadevan, 1977; Parpola, 1994) but their groupings               Sign     is a squished version of . Sign appears only once
+left a large number of singletons. Mahadevan claims to have                on a crowded seal and the evidence shows that it is the same as .
+found 417 signs. Out of these 417 signs, nearly 27 percent occur
+                                                                           In addition, we see that sign is incorrectly noted as a diamond
+only once. Wells found 694 signs with 222 singletons. The correct
+number of signs may well be any number between 417 and 694,                pattern in the ovular shape when it is shown to be ovular inside as
+that is, it is just as likely that Mahadevan was too eager to group        well, much like . Signs        and are condensed versions of
+some signs together as Wells was too cautious and left separate            and . The seals where         and appear are limited in space.
+
+8                          HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2021)8:50 | https://doi.org/10.1057/s41599-021-00713-0
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-021-00713-0                                          ARTICLE
+
+ Table 5 The signs grouped according to the six types of
+ reasons.
+
+
+
+
+                                                                             Fig. 5 Constriction of the man-with-comb sign. Seal 241 from Vats (1940)
+                                                                             shows that the     sign is constricted.
+
+
+
+                                                                              Table 6 The signs found in similar position patterns, where
+                                                                              the “X” can be replaced with any of the signs shown in the
+                                                                              ﬁrst column.
+
+
+
+
+                                                                             female and neutral genders. However, scripts that use different
+                                                                             grammatical markers, such as Minoan Linear A and Mycenaean
+                                                                             Greek Linear B, usually denote those markers by completely
+                                                                             different signs instead of by signs that have only tiny differences.
+Reason 2: Signs are mirrored. Sign      is uniquely found on a               Moreover, the variations occur at various places (initially, medi-
+mirrored seal. As seen in seal H-2085, there are two mirrored                ally, and ﬁnally) within these short sequences, which are pre-
+signs found on the seal. The is mirrored on one side and is                  sumably single words. Hence if these signs denoted grammatical
+mirrored on the obverse. This would be according to the classi-              markers, then they would be unlikely to all just denote one type of
+ﬁcation of Section 3 a Type 1 case for considering the and                   marker, such as gender. We would need to consider several types
+signs to be the same. Similarly, the mirrored signs of Section 3,            of grammatical markers that all happen to be denoted by tiny
+except for the Type 5 case of and , can be also grouped together.            differences in signs. That seems improbable.
+
+Reason 3: The sequence that the main sign is found on is the same            Reason 4: The sign is a location anomaly. Signs    and     are
+as the variation. The signs grouped according to Reason 3 are                noted to be the same sign. Sign    is found in Lothal which is
+shown in Table 6. It is possible to imagine that these pairs of signs        nearly 700 km away from Mohenjo-daro and Harappa where the
+serve some function such as different plural markers for male,               sign    is found.
+
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2021)8:50 | https://doi.org/10.1057/s41599-021-00713-0                                            9
+ARTICLE                                  HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-021-00713-0
+
+
+
+
+Fig. 6 Seals 99 (left) and 68 (right) from Mackay (1938). The sign      shown on the left seems to be simpliﬁed to      on the right because of space
+limitation.
+
+                                                                            Reason 6: Visual similarity of signs is high and varied sign occurs
+                                                                            only once. In addition to the grouping of signs which we have
+                                                                            shown evidence for, we speculate that the following few signs are
+                                                                            the same due to the extreme similarity of the signs and due to that
+                                                                            the variation occurs only once.
+                                                                               Sign occurs once in comparison to sign which occurs eight
+                                                                            times. The only difference between the two is the line above the
+                                                                            diagonal. We see that sign occurs in Kalibangan on a pot, which
+                                                                            is evidence for being an anomaly in terms of location.
+                                                                               Signs , , and all occur only once. They are all found in
+                                                                            Mohenjo-daro and have not occurred in the other locations of the
+                                                                            Indus civilization. Due to being not only a location anomaly but
+                                                                            an outlier in Mohenjo-daro, the evidence shows that the signs
+                                                                            should be considered the same.
+                                                                               Sign occurs once in comparison to sign which occurs nine
+                                                                            times. The sign appears constricted on the top of the seal and in
+                                                                            the corner. Due to having such high similarity with , the sign
+                                                                            seems an erroneous version of sign .
+
+                                                                            Conclusions and future work
+                                                                            Even though there have been over 100 decipherment attempts of
+                                                                            the Indus Valley Script, none of the attempts involved a thorough
+Fig. 7 Incorrectly carved bow sign. Seal 230 from Vats (1940) shows that    examination of redundancies in the sign lists. This article iden-
+the supposed sign is a sign that only slightly extends the bounds.          tiﬁed 50 signs as redundant in the Indus Valley Script sign list of
+                                                                            Wells (2015). Hence would-be-decipherers need to ﬁnd the cor-
+                                                                            rect phonetic values for 50 fewer signs than they previously
+Reason 5: Incorrect sign noted. Human error was possible when               thought. That is a signiﬁcant reduction in the search space for
+these signs were carved or when they were inserted into the ICIT            phonetic assignments to the Indus Valley Script signs.
+database (Wells and Fuls, 2017). We see that signs , , and                     This methodology could be expanded to other anomalies found
+are the same sign, and are incorrectly noted in the dataset. In             in the Indus Valley Script and lead to a greater understanding of
+comparison we see that in sign the curve has slightly gone out              this undeciphered script. Analyzing the location, the context
+of the bounds on the left bottom side as shown in Fig. 7.                   (Ansumali Mukhopadhyay, 2019; Rao et al., 2009a, b; Yadav et al.,
+Therefore, the evidence shows that this is a carving mistake.               2010), the period of time when a sign was used (Possehl, 1996), or
+   In addition, we see that sign is incorrectly noted as a different        the object a sign was found on and the relationship of the Indus
+sign from as the signs were the same according to CISI on seal              Valley Script signs to the signs in related scripts (Daggumati
+                                                                            and Revesz, 2018, 2019; Hunter, 1929; Kak, 1988; Revesz,
+M-109; however, we see that seal C-9 appears skewed to the top              2016a, b, c, 2017a, b) could facilitate a decipherment of the Indus
+where the sign is cut off. Similarly, we see that sign         is only      Valley Script (Robinson, 2002, 2015).
+slightly shifted on the left side, which is due to carving error. Sign
+    occurs on two items, a bangle where the seals are curved due
+                                                                            Data availability
+to the nature of the object, and on a seal which cannot be
+                                                                            The Indus Valley Script image dataset analyzed during the cur-
+validated due to only a drawing existing for it in CISI; therefore,
+                                                                            rent study is available in the original three volumes of the Corpus
+we conclude it is an error in notation. Finally, the evidence shows
+                                                                            of Indus Seals and Inscriptions (CISI) (Joshi and Parpola, 1987;
+that sign        has been incorrectly noted, and the seal that              Parpola et al., 2010; Shah and Parpola, 1991), which contain
+supposedly contains this sign actually contains three signs, which          copyrighted images. To illustrate some of the key concepts, in the
+includes instead of .                                                       ﬁgures we used some images of the Indus Valley Script seals and
+
+10                          HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2021)8:50 | https://doi.org/10.1057/s41599-021-00713-0
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-021-00713-0                                                                    ARTICLE
+
+tablets from Mackay (1938) and Vats (1940), which have copy-                            Revesz PZ (2016b) A computer-aided translation of the Cretan Hieroglyph script.
+right free images.                                                                            Int J Signal Process 1:127–133
+                                                                                        Revesz PZ (2016c) A computer-aided translation of the Phaistos Disk. Int J
+                                                                                              Comput 10:94–100
+Received: 17 February 2020; Accepted: 11 January 2021;                                  Revesz PZ (2017a) Establishing the West-Ugric language family with Minoan,
+                                                                                              Hattic and Hungarian by a decipherment of Linear A. WSEAS Trans Inf Sci
+                                                                                              Appl 14:306–335
+                                                                                        Revesz PZ (2017b) A translation of the Arkalochori Axe and the Malia Altar Stone.
+                                                                                              WSEAS Trans Inf Sci Appl 14(1):124–133
+                                                                                        Robinson A (2002) Lost languages: the enigma of the worldas undeciphered scripts.
+References                                                                                    McGraw-Hill, New York
+Ansumali Mukhopadhyay B (2019) Interrogating Indus inscriptions to unravel              Robinson A (2015) Ancient civilization: cracking the indus script. Nat News 526:1
+      their mechanisms of meaning conveyance. Palgrave Commun 5:73                      Shah SGM, Parpola A, Stacul G, Lyytikkä J, Ilyas SM (1991) Corpus of Indus Seals
+Daggumati S, Revesz PZ (2018) Data mining ancient script image data using                     and Inscriptions. 2. Collections in Pakistan. In: Annales Academiae Scien-
+      convolutional neural networks. In: Flesca S, Zumpano E, Masciari E, Car-                tiarum Fennicae, Series B, Vol. 240. Suomalainen Tiedeakatemia, pp. 1–448
+      oprese L (eds) Proceedings of the 22nd international database engineering &       Vats MS (1940) Excavations at Harappa. Munshiram Manoharlal Publishers Pvt.
+      applications symposium. ACM, pp 267–272                                                 Ltd., Delhi
+Daggumati S, Revesz PZ (2019) Data mining ancient scripts to investigate their          Wells B (1998) An introduction to Indus writing. University of Calgary
+      relationships and origins. In: Desai BC, Anagnostopoulos D, ManolopoulosY,        Wells B, Fuls A (2017) Online Indus writing database. http://www.indus.epigraphica.de/
+      Nikolaidou M (eds) Proceedings of the 23rd international database engi-           Wells BK (2011) Epigraphic approaches to Indus Writing. Oxbow Books
+      neering & applications symposium. ACM, pp. 209–218.                               Wells BK (2015) The archaeology and epigraphy of Indus writing. Archaeopress
+Daniels PT, Bright W (1996) The world’s writing systems. Oxford University Press        Yadav N, Joglekar H, Rao RP et al. (2010) Statistical analysis of the Indus script
+Fairservis WA (1983) The script of the Indus Valley civilization. Sci Am 248(3):58–67         using n-grams. PLoS ONE 5(3):e9506
+Fairservis WA (1992) The Harappan civilization and its writing: a model for the
+      decipherment of the Indus Script. Brill.
+Fuls A (2013) Positional analysis of indus signs. Epigraﬁka 7:253–275                   Competing interests
+Hunter GR (1929) The script of Harappa and Mohenjodaro and its connection               The authors declare no competing interests.
+      with other scripts. Ph.D. thesis, University of Oxford.
+Joshi JP, Parpola A (1987) Corpus of Indus Seals and Inscriptions. 1. Collections in    Additional information
+      India. In: Annales Academiae Scientiarum Fennicae, Series B, Vol. 239.            Correspondence and requests for materials should be addressed to P.Z.R.
+      Suomalainen Tiedeakatemia, pp. 1–375.
+Kak SC (1988) A frequency analysis of the Indus script. Cryptologia 12(3):129–143       Reprints and permission information is available at http://www.nature.com/reprints
+Mackay EJH (1938) Further excavations at Mohenjo-daro. Munshiram Manoharlal
+      Publishers Pvt. Ltd., Delhi                                                       Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in
+Mahadevan I (1977) The Indus Script: texts, concordance and tables, memoirs—            published maps and institutional afﬁliations.
+      Archaeological Survey of India, no. 77. Archaeological Survey of India
+Parpola A (1986) The Indus script: a challenging puzzle. World Archaeol 17
+      (3):399–419
+Parpola A (1994) Deciphering the Indus script. Cambridge University Press
+Parpola A (1996) The world’s writing systems. Oxford University Press                                     Open Access This article is licensed under a Creative Commons
+Parpola A, Pande BM, Koskikallio P (2010) Corpus of Indus Seals and Inscriptions,                         Attribution 4.0 International License, which permits use, sharing,
+      vol. 3. New material, untraced objects, and collections outside India and         adaptation, distribution and reproduction in any medium or format, as long as you give
+      Pakistan. Suomalainen Tiedeakatemia                                               appropriate credit to the original author(s) and the source, provide a link to the Creative
+Possehl GL (1996) Indus Age: the writing system, vol. 3. University of Pennsylvania     Commons license, and indicate if changes were made. The images or other third party
+      Press                                                                             material in this article are included in the article’s Creative Commons license, unless
+Rao RP, Yadav N, Vahia MN, Joglekar H, Adhikari R, Mahadevan I (2009a)                  indicated otherwise in a credit line to the material. If material is not included in the
+      Entropic evidence for linguistic structure in the Indus script. Science 324       article’s Creative Commons license and your intended use is not permitted by statutory
+      (5931):1165–1165                                                                  regulation or exceeds the permitted use, you will need to obtain permission directly from
+Rao RP, Yadav N, Vahia MN, Joglekar H, Adhikari R, Mahadevan I (2009b) A                the copyright holder. To view a copy of this license, visit http://creativecommons.org/
+      Markov model of the Indus script. Proc Natl Acad Sci USA 106                      licenses/by/4.0/.
+      (33):13685–13690
+Revesz PZ (2016a) Bioinformatics evolutionary tree algorithms reveal the history of
+      the Cretan Script Family. Int J Appl Math Inform 10:67–76                         © The Author(s) 2021
+
+
+
+
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2021)8:50 | https://doi.org/10.1057/s41599-021-00713-0                                                                        11
+
