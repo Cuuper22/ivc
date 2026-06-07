@@ -1,0 +1,27 @@
+[workspace]
+resolver = "2"
+members = ["analysis", "artefact_finder", "indus_corpus", "json_validator"]
+
+[workspace.package]
+authors = ["[mayig-email]"]
+edition = "2021"
+description = "Corpus of Indus Seals and Inscriptions digitization with subjective allographs"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/mayig/indus-valley-script-corpus"
+readme = "README.md"
+keywords = [
+    "indus",
+    "seals",
+    "inscriptions",
+    "corpus",
+    "digitization",
+    "allographs",
+    "subjective",
+    "rust",
+]
+categories = ["linguistics"]
+
+[workspace.dependencies]
+anyhow = "1.0.86"
+serde = { version = "1.0.203", features = ["derive"] }
+serde_json = "1.0.117"
