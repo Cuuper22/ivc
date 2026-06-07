@@ -1,0 +1,47 @@
+{
+  "date": "2026-05-29",
+  "status": "source_token_brahmi_descent_v2_no_accepted_anchor",
+  "source": {
+    "indoskript_homepage": "https://www.indoskript.phil.uni-wuerzburg.de",
+    "early_date_max": -100,
+    "early_manuscript_limit": 36,
+    "answer_keys": [
+      "data/open_prototype/reports/campaign_002_y_branch_gap_blind_answer_key.csv",
+      "data/open_prototype/reports/effective_unicity_m70_blind_token_box_answer_key.csv",
+      "data/open_prototype/reports/effective_unicity_directionality_blind_packet_answer_key.csv",
+      "data/open_prototype/reports/effective_unicity_directionality_blind_packet_v2_answer_key.csv",
+      "data/open_prototype/reports/effective_unicity_directionality_blind_packet_v2b_answer_key.csv",
+      "data/open_prototype/reports/effective_unicity_directionality_blind_packet_v2c_answer_key.csv",
+      "data/open_prototype/reports/source_box_negative_control_v2_m381_answer_key.csv"
+    ],
+    "segmentation_policy": "projection-gap tokenization only; rows whose visual gaps do not recover the exact catalog token count are rejected before Brahmi comparison."
+  },
+  "counts": {
+    "brahmi_feature_rows": 1342,
+    "brahmi_features": 1342,
+    "source_answer_key_rows": 104,
+    "source_rows_exact_projection_count": 61,
+    "source_token_feature_records": 611,
+    "source_token_segment_rows": 611,
+    "family_rows_with_ge_2_samples": 83,
+    "family_null_rows": 83,
+    "candidate_only_rows": 0,
+    "accepted_phonetic_anchors": 0
+  },
+  "nulls": {
+    "shape_iterations_per_token_family_sample": 200,
+    "label_null_iterations_per_family": 1000,
+    "survival_rule": ">=2 samples, 100% modal Brahmi label agreement, shape null <=0.01, label null <=0.01, then still candidate-only pending manual visual descent review."
+  },
+  "candidate_only_rows": [],
+  "decision": "No Brahmi-derived phonetic anchor is accepted. Any candidate-only row is explicitly blocked from the claim ledger until source tokenization and visual descent are manually reviewed with matched negatives.",
+  "outputs": {
+    "inventory": "data/brahmi/source_token_descent_inventory_v2.csv",
+    "segments": "data/brahmi/source_token_segments_v2.csv",
+    "neighbors": "data/brahmi/source_token_brahmi_neighbors_v2.csv",
+    "family_summary": "data/brahmi/source_token_family_descent_summary_v2.csv",
+    "shape_null_iterations": "data/brahmi/source_token_shape_null_iterations_v2.csv",
+    "label_null_iterations": "data/brahmi/source_token_label_null_iterations_v2.csv",
+    "fetch_log": "data/brahmi/source_token_descent_fetch_log_v2.csv"
+  }
+}

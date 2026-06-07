@@ -1,0 +1,138 @@
+{
+  "source": "H-2218 through H-2239 public image-lead search",
+  "checked_at": "2026-05-24",
+  "source_pages_checked": 5,
+  "target_objects": 22,
+  "target_labels": 66,
+  "image_lead_rows": 12,
+  "text_only_target_mentions": 5,
+  "unique_public_labels_found": [
+    "h2219A",
+    "h2219B",
+    "h2219C"
+  ],
+  "unique_image_urls_found": [
+    "https://1.bp.blogspot.com/--7ViRdbqZ64/Tt8R6hPRBOI/AAAAAAAAQyI/-FLYOn7JyHg/s320/h2219C.jpg",
+    "https://1.bp.blogspot.com/-0w5Y4gq5OME/Tt8Ru7tYzWI/AAAAAAAAQx8/3AvnFVQ-PhU/s320/h2219B.jpg",
+    "https://2.bp.blogspot.com/-5mD7if-CTPo/Tt8Rk9vZGEI/AAAAAAAAQxw/PJeXbXwAw5Y/s320/h2219A.jpg"
+  ],
+  "unique_cisi_candidates_found": [
+    "H-2219"
+  ],
+  "missing_cisi_candidates": [
+    "H-2218",
+    "H-2220",
+    "H-2221",
+    "H-2222",
+    "H-2223",
+    "H-2224",
+    "H-2225",
+    "H-2226",
+    "H-2227",
+    "H-2228",
+    "H-2229",
+    "H-2230",
+    "H-2231",
+    "H-2232",
+    "H-2233",
+    "H-2234",
+    "H-2235",
+    "H-2236",
+    "H-2237",
+    "H-2238",
+    "H-2239"
+  ],
+  "page_summaries": [
+    {
+      "url": "https://bharatkalyan1.rssing.com/chan-6237423/all_p220.html",
+      "statusCode": 200,
+      "bytes": 1903509,
+      "target_label_mentions": [
+        "h2219A",
+        "h2219B",
+        "h2219C"
+      ],
+      "claim_term_counts": {
+        "rebus": 323,
+        "decipherment_terms": 100,
+        "bill_of_lading": 6,
+        "supercargo": 53,
+        "workshop_product_account": 0,
+        "metallurgical": 3
+      }
+    },
+    {
+      "url": "https://bharatkalyan1.rssing.com/chan-6237423/all_p276.html",
+      "statusCode": 200,
+      "bytes": 2613584,
+      "target_label_mentions": [
+        "h2219A",
+        "h2219B",
+        "h2219C"
+      ],
+      "claim_term_counts": {
+        "rebus": 414,
+        "decipherment_terms": 320,
+        "bill_of_lading": 4,
+        "supercargo": 86,
+        "workshop_product_account": 1,
+        "metallurgical": 0
+      }
+    },
+    {
+      "url": "https://bharatkalyan1.rssing.com/chan-6237423/all_p304.html",
+      "statusCode": 200,
+      "bytes": 2518096,
+      "target_label_mentions": [
+        "h2219A",
+        "h2219B",
+        "h2219C"
+      ],
+      "claim_term_counts": {
+        "rebus": 230,
+        "decipherment_terms": 5,
+        "bill_of_lading": 0,
+        "supercargo": 21,
+        "workshop_product_account": 0,
+        "metallurgical": 0
+      }
+    },
+    {
+      "url": "https://bharatkalyan1.rssing.com/chan-6237423/all_p305.html",
+      "statusCode": 200,
+      "bytes": 2101710,
+      "target_label_mentions": [
+        "h2219A",
+        "h2219B",
+        "h2219C"
+      ],
+      "claim_term_counts": {
+        "rebus": 325,
+        "decipherment_terms": 12,
+        "bill_of_lading": 0,
+        "supercargo": 15,
+        "workshop_product_account": 1,
+        "metallurgical": 5
+      }
+    },
+    {
+      "url": "https://bharatkalyan97.blogspot.com/2011/12/indus-valley-mystery-and-use-of-tablets.html",
+      "statusCode": 200,
+      "bytes": 20010,
+      "target_label_mentions": [],
+      "claim_term_counts": {
+        "rebus": 0,
+        "decipherment_terms": 0,
+        "bill_of_lading": 0,
+        "supercargo": 0,
+        "workshop_product_account": 0,
+        "metallurgical": 0
+      }
+    }
+  ],
+  "key_observation": "Across the checked public RSS/blog pages, object-level A/B/C image labels were found only for H-2219. The other H-2218 through H-2239 objects still need CISI plates, higher-resolution source images, or direct archive access.",
+  "interpretation_boundary": "This is a public source-lead audit only. It accepts no sign segmentation, allography, side orientation, physical side function, numerical value, metrological reading, sign meaning, phonetic value, language identity, or translation.",
+  "outputs": [
+    "data/open_prototype/reports/h2218_h2239_public_image_lead_search.csv"
+  ]
+}

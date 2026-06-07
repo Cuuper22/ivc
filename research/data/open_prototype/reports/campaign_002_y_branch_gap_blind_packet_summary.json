@@ -1,0 +1,58 @@
+{
+  "date": "2026-05-29",
+  "packet_id": "branch_gap_source_box_v1",
+  "status": "blind_branch_gap_token_box_packet_created_no_claim_promotion",
+  "counts": {
+    "blind_items": 14,
+    "primary_targets": 3,
+    "backup_targets": 3,
+    "scoring_negatives": 6,
+    "quarantine_items": 2,
+    "accepted_claims_increment": 0
+  },
+  "branch_targets_by_sign": {
+    "031": [
+      "M-318",
+      "M-678"
+    ],
+    "220": [
+      "M-29",
+      "M-655"
+    ],
+    "368": [
+      "M-12",
+      "M-311"
+    ]
+  },
+  "route_failure_correction": {
+    "demoted": "H-44",
+    "reason": "OCR prefix/split labels such as H-449 produced false H-44 route matches before numeric-suffix rejection."
+  },
+  "visual_qa": {
+    "contact_sheet_checked": true,
+    "label_leakage_tightened": [
+      "BG003",
+      "BG009",
+      "BG013",
+      "BG014"
+    ],
+    "accepted_claims_increment": 0
+  },
+  "null_question": "Can public-route branch-gap crops for 002 followed by 368/031/220 be tokenized and aligned more reliably than matched negative or quarantine source crops when catalogue text and object labels are hidden?",
+  "promotion_thresholds": [
+    "This packet can only promote route candidates to source-box adjudication candidates; it cannot accept a structural claim.",
+    "At least two independent blind reviews must produce stable token counts and boxes for each primary target before unblinding.",
+    "Scoring negatives must produce zero hard branch-relation hits under the same review instructions.",
+    "Quarantine items diagnose route leakage and image quality; they do not enter false-positive denominators.",
+    "Any dependence on source labels, catalogue text, or post-hoc orientation choice blocks promotion."
+  ],
+  "files": {
+    "blind_manifest": "data/open_prototype/reports/campaign_002_y_branch_gap_blind_manifest.csv",
+    "answer_key": "data/open_prototype/reports/campaign_002_y_branch_gap_blind_answer_key.csv",
+    "review_template": "data/open_prototype/reports/campaign_002_y_branch_gap_blind_review_template.csv",
+    "contact_sheet": "tmp/002_y_branch_gap_blind_packet/branch_gap_blind_contact_sheet.png",
+    "blind_image_dir": "tmp/002_y_branch_gap_blind_packet/blind_images",
+    "source_crop_dir": "tmp/002_y_branch_gap_blind_packet/source_crops"
+  },
+  "interpretation_boundary": "No token order, physical direction, sign identity, sign meaning, phonetic value, language family, translation, or accepted structural claim follows from packet creation."
+}

@@ -1,0 +1,1971 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_390_external_personnel_register_maxstat_20260531",
+  "tier": "wild shot",
+  "bet": "`390` marks an external Meluhha-contact personnel/title register on non-circular objects; if real, it should survive all-sign and all-pair max-stat enrichment tests against type-matched internal rows and not be carried only by Kish or Gonur.",
+  "readable_side_motivation": "The cuneiform lead inventory contains Meluhha interpreter/person/title contexts such as eme-bal me-luh-ha, lu2 me-luh-ha, and ugula me-luh-ha. This report tests only the Indus-side contextual prediction; it does not assign sound.",
+  "sources": {
+    "external_objects": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\meluhha\\external_indus_objects.csv",
+    "background": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\lipi\\metadata_filtered.csv"
+  },
+  "exact_collapse": "condition label + type + shape + text",
+  "null": {
+    "iterations": 5000,
+    "preserves": "row feature sets and number of external rows; shuffles the external/non-external label",
+    "maxstat_scope": "all observed signs for sign targets, all observed adjacent pairs for pair targets"
+  },
+  "panels": [
+    {
+      "id": "external_non_circular_type_matched",
+      "external_rows": 23,
+      "background_rows": 2852,
+      "target_rows": [
+        {
+          "target": "390",
+          "kind": "signs",
+          "feature": "390",
+          "a": 5,
+          "b": 18,
+          "c": 189,
+          "d": 2663,
+          "fisher_p": 0.01645282137833582,
+          "rank": 7,
+          "total_features": 48,
+          "maxstat_fpr": 0.9824
+        },
+        {
+          "target": "740-390",
+          "kind": "pairs",
+          "feature": "740-390",
+          "a": 2,
+          "b": 21,
+          "c": 34,
+          "d": 2818,
+          "fisher_p": 0.03270931959739427,
+          "rank": 43,
+          "total_features": 54,
+          "maxstat_fpr": 1
+        },
+        {
+          "target": "390-590",
+          "kind": "pairs",
+          "feature": "390-590",
+          "a": 2,
+          "b": 21,
+          "c": 48,
+          "d": 2804,
+          "fisher_p": 0.05945932124335897,
+          "rank": 47,
+          "total_features": 54,
+          "maxstat_fpr": 1
+        }
+      ],
+      "top_signs": [
+        {
+          "feature": "095",
+          "a": 2,
+          "b": 21,
+          "c": 4,
+          "d": 2848,
+          "fisher_p": 0.0009008153485489095,
+          "rank": 1,
+          "total_features": 48
+        },
+        {
+          "feature": "004",
+          "a": 3,
+          "b": 20,
+          "c": 49,
+          "d": 2803,
+          "fisher_p": 0.007657562749600832,
+          "rank": 2,
+          "total_features": 48
+        },
+        {
+          "feature": "026",
+          "a": 1,
+          "b": 22,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007999999999988905,
+          "rank": 3,
+          "total_features": 48
+        },
+        {
+          "feature": "117",
+          "a": 1,
+          "b": 22,
+          "c": 1,
+          "d": 2851,
+          "fisher_p": 0.015938761308230732,
+          "rank": 4,
+          "total_features": 48
+        },
+        {
+          "feature": "127",
+          "a": 1,
+          "b": 22,
+          "c": 1,
+          "d": 2851,
+          "fisher_p": 0.015938761308230732,
+          "rank": 5,
+          "total_features": 48
+        },
+        {
+          "feature": "517",
+          "a": 1,
+          "b": 22,
+          "c": 1,
+          "d": 2851,
+          "fisher_p": 0.015938761308230732,
+          "rank": 6,
+          "total_features": 48
+        },
+        {
+          "feature": "390",
+          "a": 5,
+          "b": 18,
+          "c": 189,
+          "d": 2663,
+          "fisher_p": 0.01645282137833582,
+          "rank": 7,
+          "total_features": 48
+        },
+        {
+          "feature": "278",
+          "a": 1,
+          "b": 22,
+          "c": 2,
+          "d": 2850,
+          "fisher_p": 0.023816731544952296,
+          "rank": 8,
+          "total_features": 48
+        },
+        {
+          "feature": "285",
+          "a": 1,
+          "b": 22,
+          "c": 2,
+          "d": 2850,
+          "fisher_p": 0.023816731544952296,
+          "rank": 9,
+          "total_features": 48
+        },
+        {
+          "feature": "426",
+          "a": 1,
+          "b": 22,
+          "c": 2,
+          "d": 2850,
+          "fisher_p": 0.023816731544952296,
+          "rank": 10,
+          "total_features": 48
+        },
+        {
+          "feature": "029",
+          "a": 1,
+          "b": 22,
+          "c": 3,
+          "d": 2849,
+          "fisher_p": 0.031634355212880466,
+          "rank": 11,
+          "total_features": 48
+        },
+        {
+          "feature": "643",
+          "a": 1,
+          "b": 22,
+          "c": 3,
+          "d": 2849,
+          "fisher_p": 0.031634355212880466,
+          "rank": 12,
+          "total_features": 48
+        },
+        {
+          "feature": "392",
+          "a": 1,
+          "b": 22,
+          "c": 4,
+          "d": 2848,
+          "fisher_p": 0.03939207371866825,
+          "rank": 13,
+          "total_features": 48
+        },
+        {
+          "feature": "257",
+          "a": 1,
+          "b": 22,
+          "c": 8,
+          "d": 2844,
+          "fisher_p": 0.06983261701569161,
+          "rank": 14,
+          "total_features": 48
+        },
+        {
+          "feature": "000",
+          "a": 10,
+          "b": 13,
+          "c": 793,
+          "d": 2059,
+          "fisher_p": 0.07935688834261906,
+          "rank": 15,
+          "total_features": 48
+        }
+      ],
+      "top_pairs": [
+        {
+          "feature": "004-002",
+          "a": 2,
+          "b": 21,
+          "c": 11,
+          "d": 2841,
+          "fisher_p": 0.004527160413047952,
+          "rank": 1,
+          "total_features": 54
+        },
+        {
+          "feature": "000-095",
+          "a": 1,
+          "b": 22,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007999999999988905,
+          "rank": 2,
+          "total_features": 54
+        },
+        {
+          "feature": "000-374",
+          "a": 1,
+          "b": 22,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007999999999988905,
+          "rank": 3,
+          "total_features": 54
+        },
+        {
+          "feature": "000-643",
+          "a": 1,
+          "b": 22,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007999999999988905,
+          "rank": 4,
+          "total_features": 54
+        },
+        {
+          "feature": "002-095",
+          "a": 1,
+          "b": 22,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007999999999988905,
+          "rank": 5,
+          "total_features": 54
+        },
+        {
+          "feature": "002-278",
+          "a": 1,
+          "b": 22,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007999999999988905,
+          "rank": 6,
+          "total_features": 54
+        },
+        {
+          "feature": "026-060",
+          "a": 1,
+          "b": 22,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007999999999988905,
+          "rank": 7,
+          "total_features": 54
+        },
+        {
+          "feature": "029-220",
+          "a": 1,
+          "b": 22,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007999999999988905,
+          "rank": 8,
+          "total_features": 54
+        },
+        {
+          "feature": "060-257",
+          "a": 1,
+          "b": 22,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007999999999988905,
+          "rank": 9,
+          "total_features": 54
+        },
+        {
+          "feature": "060-840",
+          "a": 1,
+          "b": 22,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007999999999988905,
+          "rank": 10,
+          "total_features": 54
+        },
+        {
+          "feature": "066-740",
+          "a": 1,
+          "b": 22,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007999999999988905,
+          "rank": 11,
+          "total_features": 54
+        },
+        {
+          "feature": "095-000",
+          "a": 1,
+          "b": 22,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007999999999988905,
+          "rank": 12,
+          "total_features": 54
+        },
+        {
+          "feature": "125-220",
+          "a": 1,
+          "b": 22,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007999999999988905,
+          "rank": 13,
+          "total_features": 54
+        },
+        {
+          "feature": "220-390",
+          "a": 1,
+          "b": 22,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007999999999988905,
+          "rank": 14,
+          "total_features": 54
+        },
+        {
+          "feature": "220-632",
+          "a": 1,
+          "b": 22,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007999999999988905,
+          "rank": 15,
+          "total_features": 54
+        }
+      ],
+      "support_external": [
+        {
+          "id": "16.1",
+          "cisi": "Alt-90",
+          "site": "Altyn Depe",
+          "type": "SEAL:S",
+          "shape": "square",
+          "complete": "Y",
+          "text": "+390-415+"
+        },
+        {
+          "id": "1971.1",
+          "cisi": "-",
+          "site": "Kish",
+          "type": "SEAL:S",
+          "shape": "square",
+          "complete": "Y",
+          "text": "+740-390-590-220-003-060-840-416+"
+        },
+        {
+          "id": "3884.1",
+          "cisi": "-",
+          "site": "Tell Umma",
+          "type": "TAG:L",
+          "shape": "-",
+          "complete": "Y",
+          "text": "+390-004-002-705-127+"
+        },
+        {
+          "id": "3885.1",
+          "cisi": "-",
+          "site": "Tello",
+          "type": "SEAL:S",
+          "shape": "square",
+          "complete": "N",
+          "text": "+000-220-390-440-384+"
+        },
+        {
+          "id": "4155.1",
+          "cisi": "-",
+          "site": "Gonur Depe",
+          "type": "SEAL:S",
+          "shape": "square",
+          "complete": "Y",
+          "text": "+740-390-590-125-220-235-002-285+"
+        }
+      ]
+    },
+    {
+      "id": "external_non_circular_type_matched_leave_kish",
+      "external_rows": 21,
+      "background_rows": 2852,
+      "target_rows": [
+        {
+          "target": "390",
+          "kind": "signs",
+          "feature": "390",
+          "a": 4,
+          "b": 17,
+          "c": 189,
+          "d": 2663,
+          "fisher_p": 0.047944231554945295,
+          "rank": 12,
+          "total_features": 44,
+          "maxstat_fpr": 1
+        },
+        {
+          "target": "740-390",
+          "kind": "pairs",
+          "feature": "740-390",
+          "a": 1,
+          "b": 20,
+          "c": 34,
+          "d": 2818,
+          "fisher_p": 0.22764192558987473,
+          "rank": 45,
+          "total_features": 47,
+          "maxstat_fpr": 1
+        },
+        {
+          "target": "390-590",
+          "kind": "pairs",
+          "feature": "390-590",
+          "a": 1,
+          "b": 20,
+          "c": 48,
+          "d": 2804,
+          "fisher_p": 0.30408382625443964,
+          "rank": 46,
+          "total_features": 47,
+          "maxstat_fpr": 1
+        }
+      ],
+      "top_signs": [
+        {
+          "feature": "095",
+          "a": 2,
+          "b": 19,
+          "c": 4,
+          "d": 2848,
+          "fisher_p": 0.0007501404894199377,
+          "rank": 1,
+          "total_features": 44
+        },
+        {
+          "feature": "004",
+          "a": 3,
+          "b": 18,
+          "c": 49,
+          "d": 2803,
+          "fisher_p": 0.005910418615940098,
+          "rank": 2,
+          "total_features": 44
+        },
+        {
+          "feature": "026",
+          "a": 1,
+          "b": 20,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.00730943264880699,
+          "rank": 3,
+          "total_features": 44
+        },
+        {
+          "feature": "117",
+          "a": 1,
+          "b": 20,
+          "c": 1,
+          "d": 2851,
+          "fisher_p": 0.014567963955913827,
+          "rank": 4,
+          "total_features": 44
+        },
+        {
+          "feature": "127",
+          "a": 1,
+          "b": 20,
+          "c": 1,
+          "d": 2851,
+          "fisher_p": 0.014567963955913827,
+          "rank": 5,
+          "total_features": 44
+        },
+        {
+          "feature": "517",
+          "a": 1,
+          "b": 20,
+          "c": 1,
+          "d": 2851,
+          "fisher_p": 0.014567963955913827,
+          "rank": 6,
+          "total_features": 44
+        },
+        {
+          "feature": "278",
+          "a": 1,
+          "b": 20,
+          "c": 2,
+          "d": 2850,
+          "fisher_p": 0.02177593078183698,
+          "rank": 7,
+          "total_features": 44
+        },
+        {
+          "feature": "285",
+          "a": 1,
+          "b": 20,
+          "c": 2,
+          "d": 2850,
+          "fisher_p": 0.02177593078183698,
+          "rank": 8,
+          "total_features": 44
+        },
+        {
+          "feature": "426",
+          "a": 1,
+          "b": 20,
+          "c": 2,
+          "d": 2850,
+          "fisher_p": 0.02177593078183698,
+          "rank": 9,
+          "total_features": 44
+        },
+        {
+          "feature": "029",
+          "a": 1,
+          "b": 20,
+          "c": 3,
+          "d": 2849,
+          "fisher_p": 0.028933667873786952,
+          "rank": 10,
+          "total_features": 44
+        },
+        {
+          "feature": "392",
+          "a": 1,
+          "b": 20,
+          "c": 4,
+          "d": 2848,
+          "fisher_p": 0.03604150787865124,
+          "rank": 11,
+          "total_features": 44
+        },
+        {
+          "feature": "390",
+          "a": 4,
+          "b": 17,
+          "c": 189,
+          "d": 2663,
+          "fisher_p": 0.047944231554945295,
+          "rank": 12,
+          "total_features": 44
+        },
+        {
+          "feature": "257",
+          "a": 1,
+          "b": 20,
+          "c": 8,
+          "d": 2844,
+          "fisher_p": 0.06398047716510197,
+          "rank": 13,
+          "total_features": 44
+        },
+        {
+          "feature": "921",
+          "a": 1,
+          "b": 20,
+          "c": 11,
+          "d": 2841,
+          "fisher_p": 0.08442677653319486,
+          "rank": 14,
+          "total_features": 44
+        },
+        {
+          "feature": "066",
+          "a": 1,
+          "b": 20,
+          "c": 12,
+          "d": 2840,
+          "fisher_p": 0.09114716719860083,
+          "rank": 15,
+          "total_features": 44
+        }
+      ],
+      "top_pairs": [
+        {
+          "feature": "004-002",
+          "a": 2,
+          "b": 19,
+          "c": 11,
+          "d": 2841,
+          "fisher_p": 0.0037820885524778745,
+          "rank": 1,
+          "total_features": 47
+        },
+        {
+          "feature": "000-095",
+          "a": 1,
+          "b": 20,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.00730943264880699,
+          "rank": 2,
+          "total_features": 47
+        },
+        {
+          "feature": "000-374",
+          "a": 1,
+          "b": 20,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.00730943264880699,
+          "rank": 3,
+          "total_features": 47
+        },
+        {
+          "feature": "002-095",
+          "a": 1,
+          "b": 20,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.00730943264880699,
+          "rank": 4,
+          "total_features": 47
+        },
+        {
+          "feature": "002-278",
+          "a": 1,
+          "b": 20,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.00730943264880699,
+          "rank": 5,
+          "total_features": 47
+        },
+        {
+          "feature": "026-060",
+          "a": 1,
+          "b": 20,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.00730943264880699,
+          "rank": 6,
+          "total_features": 47
+        },
+        {
+          "feature": "029-220",
+          "a": 1,
+          "b": 20,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.00730943264880699,
+          "rank": 7,
+          "total_features": 47
+        },
+        {
+          "feature": "060-257",
+          "a": 1,
+          "b": 20,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.00730943264880699,
+          "rank": 8,
+          "total_features": 47
+        },
+        {
+          "feature": "066-740",
+          "a": 1,
+          "b": 20,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.00730943264880699,
+          "rank": 9,
+          "total_features": 47
+        },
+        {
+          "feature": "095-000",
+          "a": 1,
+          "b": 20,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.00730943264880699,
+          "rank": 10,
+          "total_features": 47
+        },
+        {
+          "feature": "125-220",
+          "a": 1,
+          "b": 20,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.00730943264880699,
+          "rank": 11,
+          "total_features": 47
+        },
+        {
+          "feature": "220-390",
+          "a": 1,
+          "b": 20,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.00730943264880699,
+          "rank": 12,
+          "total_features": 47
+        },
+        {
+          "feature": "220-632",
+          "a": 1,
+          "b": 20,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.00730943264880699,
+          "rank": 13,
+          "total_features": 47
+        },
+        {
+          "feature": "278-595",
+          "a": 1,
+          "b": 20,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.00730943264880699,
+          "rank": 14,
+          "total_features": 47
+        },
+        {
+          "feature": "390-440",
+          "a": 1,
+          "b": 20,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.00730943264880699,
+          "rank": 15,
+          "total_features": 47
+        }
+      ],
+      "support_external": [
+        {
+          "id": "16.1",
+          "cisi": "Alt-90",
+          "site": "Altyn Depe",
+          "type": "SEAL:S",
+          "shape": "square",
+          "complete": "Y",
+          "text": "+390-415+"
+        },
+        {
+          "id": "3884.1",
+          "cisi": "-",
+          "site": "Tell Umma",
+          "type": "TAG:L",
+          "shape": "-",
+          "complete": "Y",
+          "text": "+390-004-002-705-127+"
+        },
+        {
+          "id": "3885.1",
+          "cisi": "-",
+          "site": "Tello",
+          "type": "SEAL:S",
+          "shape": "square",
+          "complete": "N",
+          "text": "+000-220-390-440-384+"
+        },
+        {
+          "id": "4155.1",
+          "cisi": "-",
+          "site": "Gonur Depe",
+          "type": "SEAL:S",
+          "shape": "square",
+          "complete": "Y",
+          "text": "+740-390-590-125-220-235-002-285+"
+        }
+      ]
+    },
+    {
+      "id": "external_non_circular_type_matched_leave_gonur",
+      "external_rows": 22,
+      "background_rows": 2852,
+      "target_rows": [
+        {
+          "target": "390",
+          "kind": "signs",
+          "feature": "390",
+          "a": 4,
+          "b": 18,
+          "c": 189,
+          "d": 2663,
+          "fisher_p": 0.05557135798233655,
+          "rank": 12,
+          "total_features": 45,
+          "maxstat_fpr": 1
+        },
+        {
+          "target": "740-390",
+          "kind": "pairs",
+          "feature": "740-390",
+          "a": 1,
+          "b": 21,
+          "c": 34,
+          "d": 2818,
+          "fisher_p": 0.23704781724037316,
+          "rank": 47,
+          "total_features": 49,
+          "maxstat_fpr": 1
+        },
+        {
+          "target": "390-590",
+          "kind": "pairs",
+          "feature": "390-590",
+          "a": 1,
+          "b": 21,
+          "c": 48,
+          "d": 2804,
+          "fisher_p": 0.3159487853761509,
+          "rank": 48,
+          "total_features": 49,
+          "maxstat_fpr": 1
+        }
+      ],
+      "top_signs": [
+        {
+          "feature": "095",
+          "a": 2,
+          "b": 20,
+          "c": 4,
+          "d": 2848,
+          "fisher_p": 0.0008238176656032429,
+          "rank": 1,
+          "total_features": 45
+        },
+        {
+          "feature": "004",
+          "a": 3,
+          "b": 19,
+          "c": 49,
+          "d": 2803,
+          "fisher_p": 0.006750504143149487,
+          "rank": 2,
+          "total_features": 45
+        },
+        {
+          "feature": "026",
+          "a": 1,
+          "b": 21,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007654836464875896,
+          "rank": 3,
+          "total_features": 45
+        },
+        {
+          "feature": "117",
+          "a": 1,
+          "b": 21,
+          "c": 1,
+          "d": 2851,
+          "fisher_p": 0.015253720418086588,
+          "rank": 4,
+          "total_features": 45
+        },
+        {
+          "feature": "127",
+          "a": 1,
+          "b": 21,
+          "c": 1,
+          "d": 2851,
+          "fisher_p": 0.015253720418086588,
+          "rank": 5,
+          "total_features": 45
+        },
+        {
+          "feature": "517",
+          "a": 1,
+          "b": 21,
+          "c": 1,
+          "d": 2851,
+          "fisher_p": 0.015253720418086588,
+          "rank": 6,
+          "total_features": 45
+        },
+        {
+          "feature": "278",
+          "a": 1,
+          "b": 21,
+          "c": 2,
+          "d": 2850,
+          "fisher_p": 0.022797041501217558,
+          "rank": 7,
+          "total_features": 45
+        },
+        {
+          "feature": "426",
+          "a": 1,
+          "b": 21,
+          "c": 2,
+          "d": 2850,
+          "fisher_p": 0.022797041501217558,
+          "rank": 8,
+          "total_features": 45
+        },
+        {
+          "feature": "029",
+          "a": 1,
+          "b": 21,
+          "c": 3,
+          "d": 2849,
+          "fisher_p": 0.030285186777201264,
+          "rank": 9,
+          "total_features": 45
+        },
+        {
+          "feature": "643",
+          "a": 1,
+          "b": 21,
+          "c": 3,
+          "d": 2849,
+          "fisher_p": 0.030285186777201264,
+          "rank": 10,
+          "total_features": 45
+        },
+        {
+          "feature": "392",
+          "a": 1,
+          "b": 21,
+          "c": 4,
+          "d": 2848,
+          "fisher_p": 0.03771854074587129,
+          "rank": 11,
+          "total_features": 45
+        },
+        {
+          "feature": "390",
+          "a": 4,
+          "b": 18,
+          "c": 189,
+          "d": 2663,
+          "fisher_p": 0.05557135798233655,
+          "rank": 12,
+          "total_features": 45
+        },
+        {
+          "feature": "000",
+          "a": 10,
+          "b": 12,
+          "c": 793,
+          "d": 2059,
+          "fisher_p": 0.05926395756417422,
+          "rank": 13,
+          "total_features": 45
+        },
+        {
+          "feature": "257",
+          "a": 1,
+          "b": 21,
+          "c": 8,
+          "d": 2844,
+          "fisher_p": 0.06691164477309358,
+          "rank": 14,
+          "total_features": 45
+        },
+        {
+          "feature": "921",
+          "a": 1,
+          "b": 21,
+          "c": 11,
+          "d": 2841,
+          "fisher_p": 0.08824962924096943,
+          "rank": 15,
+          "total_features": 45
+        }
+      ],
+      "top_pairs": [
+        {
+          "feature": "004-002",
+          "a": 2,
+          "b": 20,
+          "c": 11,
+          "d": 2841,
+          "fisher_p": 0.004146869674175522,
+          "rank": 1,
+          "total_features": 49
+        },
+        {
+          "feature": "000-095",
+          "a": 1,
+          "b": 21,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007654836464875896,
+          "rank": 2,
+          "total_features": 49
+        },
+        {
+          "feature": "000-374",
+          "a": 1,
+          "b": 21,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007654836464875896,
+          "rank": 3,
+          "total_features": 49
+        },
+        {
+          "feature": "000-643",
+          "a": 1,
+          "b": 21,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007654836464875896,
+          "rank": 4,
+          "total_features": 49
+        },
+        {
+          "feature": "002-095",
+          "a": 1,
+          "b": 21,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007654836464875896,
+          "rank": 5,
+          "total_features": 49
+        },
+        {
+          "feature": "002-278",
+          "a": 1,
+          "b": 21,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007654836464875896,
+          "rank": 6,
+          "total_features": 49
+        },
+        {
+          "feature": "026-060",
+          "a": 1,
+          "b": 21,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007654836464875896,
+          "rank": 7,
+          "total_features": 49
+        },
+        {
+          "feature": "029-220",
+          "a": 1,
+          "b": 21,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007654836464875896,
+          "rank": 8,
+          "total_features": 49
+        },
+        {
+          "feature": "060-257",
+          "a": 1,
+          "b": 21,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007654836464875896,
+          "rank": 9,
+          "total_features": 49
+        },
+        {
+          "feature": "060-840",
+          "a": 1,
+          "b": 21,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007654836464875896,
+          "rank": 10,
+          "total_features": 49
+        },
+        {
+          "feature": "066-740",
+          "a": 1,
+          "b": 21,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007654836464875896,
+          "rank": 11,
+          "total_features": 49
+        },
+        {
+          "feature": "095-000",
+          "a": 1,
+          "b": 21,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007654836464875896,
+          "rank": 12,
+          "total_features": 49
+        },
+        {
+          "feature": "220-390",
+          "a": 1,
+          "b": 21,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007654836464875896,
+          "rank": 13,
+          "total_features": 49
+        },
+        {
+          "feature": "220-632",
+          "a": 1,
+          "b": 21,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007654836464875896,
+          "rank": 14,
+          "total_features": 49
+        },
+        {
+          "feature": "278-595",
+          "a": 1,
+          "b": 21,
+          "c": 0,
+          "d": 2852,
+          "fisher_p": 0.007654836464875896,
+          "rank": 15,
+          "total_features": 49
+        }
+      ],
+      "support_external": [
+        {
+          "id": "16.1",
+          "cisi": "Alt-90",
+          "site": "Altyn Depe",
+          "type": "SEAL:S",
+          "shape": "square",
+          "complete": "Y",
+          "text": "+390-415+"
+        },
+        {
+          "id": "1971.1",
+          "cisi": "-",
+          "site": "Kish",
+          "type": "SEAL:S",
+          "shape": "square",
+          "complete": "Y",
+          "text": "+740-390-590-220-003-060-840-416+"
+        },
+        {
+          "id": "3884.1",
+          "cisi": "-",
+          "site": "Tell Umma",
+          "type": "TAG:L",
+          "shape": "-",
+          "complete": "Y",
+          "text": "+390-004-002-705-127+"
+        },
+        {
+          "id": "3885.1",
+          "cisi": "-",
+          "site": "Tello",
+          "type": "SEAL:S",
+          "shape": "square",
+          "complete": "N",
+          "text": "+000-220-390-440-384+"
+        }
+      ]
+    },
+    {
+      "id": "external_non_circular_complete_y_type_matched",
+      "external_rows": 12,
+      "background_rows": 1644,
+      "target_rows": [
+        {
+          "target": "390",
+          "kind": "signs",
+          "feature": "390",
+          "a": 4,
+          "b": 8,
+          "c": 144,
+          "d": 1500,
+          "fisher_p": 0.017163104473152106,
+          "rank": 7,
+          "total_features": 35,
+          "maxstat_fpr": 0.9786
+        },
+        {
+          "target": "740-390",
+          "kind": "pairs",
+          "feature": "740-390",
+          "a": 2,
+          "b": 10,
+          "c": 25,
+          "d": 1619,
+          "fisher_p": 0.015282859486904136,
+          "rank": 24,
+          "total_features": 35,
+          "maxstat_fpr": 1
+        },
+        {
+          "target": "390-590",
+          "kind": "pairs",
+          "feature": "390-590",
+          "a": 2,
+          "b": 10,
+          "c": 37,
+          "d": 1607,
+          "fisher_p": 0.03074058806994446,
+          "rank": 30,
+          "total_features": 35,
+          "maxstat_fpr": 1
+        }
+      ],
+      "top_signs": [
+        {
+          "feature": "004",
+          "a": 3,
+          "b": 9,
+          "c": 38,
+          "d": 1606,
+          "fisher_p": 0.0026555362853281435,
+          "rank": 1,
+          "total_features": 35
+        },
+        {
+          "feature": "026",
+          "a": 1,
+          "b": 11,
+          "c": 0,
+          "d": 1644,
+          "fisher_p": 0.007246376811610632,
+          "rank": 2,
+          "total_features": 35
+        },
+        {
+          "feature": "127",
+          "a": 1,
+          "b": 11,
+          "c": 0,
+          "d": 1644,
+          "fisher_p": 0.007246376811610632,
+          "rank": 3,
+          "total_features": 35
+        },
+        {
+          "feature": "117",
+          "a": 1,
+          "b": 11,
+          "c": 1,
+          "d": 1643,
+          "fisher_p": 0.01444459039369607,
+          "rank": 4,
+          "total_features": 35
+        },
+        {
+          "feature": "285",
+          "a": 1,
+          "b": 11,
+          "c": 1,
+          "d": 1643,
+          "fisher_p": 0.01444459039369607,
+          "rank": 5,
+          "total_features": 35
+        },
+        {
+          "feature": "426",
+          "a": 1,
+          "b": 11,
+          "c": 1,
+          "d": 1643,
+          "fisher_p": 0.01444459039369607,
+          "rank": 6,
+          "total_features": 35
+        },
+        {
+          "feature": "390",
+          "a": 4,
+          "b": 8,
+          "c": 144,
+          "d": 1500,
+          "fisher_p": 0.017163104473152106,
+          "rank": 7,
+          "total_features": 35
+        },
+        {
+          "feature": "278",
+          "a": 1,
+          "b": 11,
+          "c": 2,
+          "d": 1642,
+          "fisher_p": 0.021594931938621987,
+          "rank": 8,
+          "total_features": 35
+        },
+        {
+          "feature": "392",
+          "a": 1,
+          "b": 11,
+          "c": 3,
+          "d": 1641,
+          "fisher_p": 0.02869769105340042,
+          "rank": 9,
+          "total_features": 35
+        },
+        {
+          "feature": "257",
+          "a": 1,
+          "b": 11,
+          "c": 4,
+          "d": 1640,
+          "fisher_p": 0.03575315576740733,
+          "rank": 10,
+          "total_features": 35
+        },
+        {
+          "feature": "066",
+          "a": 1,
+          "b": 11,
+          "c": 5,
+          "d": 1639,
+          "fisher_p": 0.04276161253943271,
+          "rank": 11,
+          "total_features": 35
+        },
+        {
+          "feature": "632",
+          "a": 1,
+          "b": 11,
+          "c": 10,
+          "d": 1634,
+          "fisher_p": 0.07710869439137727,
+          "rank": 12,
+          "total_features": 35
+        },
+        {
+          "feature": "013",
+          "a": 1,
+          "b": 11,
+          "c": 15,
+          "d": 1629,
+          "fisher_p": 0.11032265698107975,
+          "rank": 13,
+          "total_features": 35
+        },
+        {
+          "feature": "595",
+          "a": 1,
+          "b": 11,
+          "c": 16,
+          "d": 1628,
+          "fisher_p": 0.11683249119821945,
+          "rank": 14,
+          "total_features": 35
+        },
+        {
+          "feature": "003",
+          "a": 2,
+          "b": 10,
+          "c": 85,
+          "d": 1559,
+          "fisher_p": 0.1279792525074676,
+          "rank": 15,
+          "total_features": 35
+        }
+      ],
+      "top_pairs": [
+        {
+          "feature": "004-002",
+          "a": 2,
+          "b": 10,
+          "c": 10,
+          "d": 1634,
+          "fisher_p": 0.0030529786826655942,
+          "rank": 1,
+          "total_features": 35
+        },
+        {
+          "feature": "002-278",
+          "a": 1,
+          "b": 11,
+          "c": 0,
+          "d": 1644,
+          "fisher_p": 0.007246376811610632,
+          "rank": 2,
+          "total_features": 35
+        },
+        {
+          "feature": "026-060",
+          "a": 1,
+          "b": 11,
+          "c": 0,
+          "d": 1644,
+          "fisher_p": 0.007246376811610632,
+          "rank": 3,
+          "total_features": 35
+        },
+        {
+          "feature": "060-257",
+          "a": 1,
+          "b": 11,
+          "c": 0,
+          "d": 1644,
+          "fisher_p": 0.007246376811610632,
+          "rank": 4,
+          "total_features": 35
+        },
+        {
+          "feature": "060-840",
+          "a": 1,
+          "b": 11,
+          "c": 0,
+          "d": 1644,
+          "fisher_p": 0.007246376811610632,
+          "rank": 5,
+          "total_features": 35
+        },
+        {
+          "feature": "066-740",
+          "a": 1,
+          "b": 11,
+          "c": 0,
+          "d": 1644,
+          "fisher_p": 0.007246376811610632,
+          "rank": 6,
+          "total_features": 35
+        },
+        {
+          "feature": "125-220",
+          "a": 1,
+          "b": 11,
+          "c": 0,
+          "d": 1644,
+          "fisher_p": 0.007246376811610632,
+          "rank": 7,
+          "total_features": 35
+        },
+        {
+          "feature": "220-632",
+          "a": 1,
+          "b": 11,
+          "c": 0,
+          "d": 1644,
+          "fisher_p": 0.007246376811610632,
+          "rank": 8,
+          "total_features": 35
+        },
+        {
+          "feature": "278-595",
+          "a": 1,
+          "b": 11,
+          "c": 0,
+          "d": 1644,
+          "fisher_p": 0.007246376811610632,
+          "rank": 9,
+          "total_features": 35
+        },
+        {
+          "feature": "392-004",
+          "a": 1,
+          "b": 11,
+          "c": 0,
+          "d": 1644,
+          "fisher_p": 0.007246376811610632,
+          "rank": 10,
+          "total_features": 35
+        },
+        {
+          "feature": "520-013",
+          "a": 1,
+          "b": 11,
+          "c": 0,
+          "d": 1644,
+          "fisher_p": 0.007246376811610632,
+          "rank": 11,
+          "total_features": 35
+        },
+        {
+          "feature": "617-117",
+          "a": 1,
+          "b": 11,
+          "c": 0,
+          "d": 1644,
+          "fisher_p": 0.007246376811610632,
+          "rank": 12,
+          "total_features": 35
+        },
+        {
+          "feature": "632-066",
+          "a": 1,
+          "b": 11,
+          "c": 0,
+          "d": 1644,
+          "fisher_p": 0.007246376811610632,
+          "rank": 13,
+          "total_features": 35
+        },
+        {
+          "feature": "705-127",
+          "a": 1,
+          "b": 11,
+          "c": 0,
+          "d": 1644,
+          "fisher_p": 0.007246376811610632,
+          "rank": 14,
+          "total_features": 35
+        },
+        {
+          "feature": "740-742",
+          "a": 1,
+          "b": 11,
+          "c": 0,
+          "d": 1644,
+          "fisher_p": 0.007246376811610632,
+          "rank": 15,
+          "total_features": 35
+        }
+      ],
+      "support_external": [
+        {
+          "id": "16.1",
+          "cisi": "Alt-90",
+          "site": "Altyn Depe",
+          "type": "SEAL:S",
+          "shape": "square",
+          "complete": "Y",
+          "text": "+390-415+"
+        },
+        {
+          "id": "1971.1",
+          "cisi": "-",
+          "site": "Kish",
+          "type": "SEAL:S",
+          "shape": "square",
+          "complete": "Y",
+          "text": "+740-390-590-220-003-060-840-416+"
+        },
+        {
+          "id": "3884.1",
+          "cisi": "-",
+          "site": "Tell Umma",
+          "type": "TAG:L",
+          "shape": "-",
+          "complete": "Y",
+          "text": "+390-004-002-705-127+"
+        },
+        {
+          "id": "4155.1",
+          "cisi": "-",
+          "site": "Gonur Depe",
+          "type": "SEAL:S",
+          "shape": "square",
+          "complete": "Y",
+          "text": "+740-390-590-125-220-235-002-285+"
+        }
+      ]
+    },
+    {
+      "id": "external_square_seal_s_only",
+      "external_rows": 13,
+      "background_rows": 1610,
+      "target_rows": [
+        {
+          "target": "390",
+          "kind": "signs",
+          "feature": "390",
+          "a": 4,
+          "b": 9,
+          "c": 150,
+          "d": 1460,
+          "fisher_p": 0.028209493399109366,
+          "rank": 5,
+          "total_features": 36,
+          "maxstat_fpr": 0.9974
+        },
+        {
+          "target": "740-390",
+          "kind": "pairs",
+          "feature": "740-390",
+          "a": 2,
+          "b": 11,
+          "c": 29,
+          "d": 1581,
+          "fisher_p": 0.02416553971349327,
+          "rank": 28,
+          "total_features": 37,
+          "maxstat_fpr": 1
+        },
+        {
+          "target": "390-590",
+          "kind": "pairs",
+          "feature": "390-590",
+          "a": 2,
+          "b": 11,
+          "c": 40,
+          "d": 1570,
+          "fisher_p": 0.042577547081447745,
+          "rank": 31,
+          "total_features": 37,
+          "maxstat_fpr": 1
+        }
+      ],
+      "top_signs": [
+        {
+          "feature": "026",
+          "a": 1,
+          "b": 12,
+          "c": 0,
+          "d": 1610,
+          "fisher_p": 0.008009858287122652,
+          "rank": 1,
+          "total_features": 36
+        },
+        {
+          "feature": "426",
+          "a": 1,
+          "b": 12,
+          "c": 1,
+          "d": 1609,
+          "fisher_p": 0.01596045745004455,
+          "rank": 2,
+          "total_features": 36
+        },
+        {
+          "feature": "278",
+          "a": 1,
+          "b": 12,
+          "c": 2,
+          "d": 1608,
+          "fisher_p": 0.023852199617327756,
+          "rank": 3,
+          "total_features": 36
+        },
+        {
+          "feature": "285",
+          "a": 1,
+          "b": 12,
+          "c": 2,
+          "d": 1608,
+          "fisher_p": 0.023852199617327756,
+          "rank": 4,
+          "total_features": 36
+        },
+        {
+          "feature": "390",
+          "a": 4,
+          "b": 9,
+          "c": 150,
+          "d": 1460,
+          "fisher_p": 0.028209493399109366,
+          "rank": 5,
+          "total_features": 36
+        },
+        {
+          "feature": "392",
+          "a": 1,
+          "b": 12,
+          "c": 3,
+          "d": 1607,
+          "fisher_p": 0.03168548443515551,
+          "rank": 6,
+          "total_features": 36
+        },
+        {
+          "feature": "643",
+          "a": 1,
+          "b": 12,
+          "c": 3,
+          "d": 1607,
+          "fisher_p": 0.03168548443515551,
+          "rank": 7,
+          "total_features": 36
+        },
+        {
+          "feature": "257",
+          "a": 1,
+          "b": 12,
+          "c": 7,
+          "d": 1603,
+          "fisher_p": 0.06244195702911803,
+          "rank": 8,
+          "total_features": 36
+        },
+        {
+          "feature": "066",
+          "a": 1,
+          "b": 12,
+          "c": 8,
+          "d": 1602,
+          "fisher_p": 0.06998886387653949,
+          "rank": 9,
+          "total_features": 36
+        },
+        {
+          "feature": "220",
+          "a": 4,
+          "b": 9,
+          "c": 201,
+          "d": 1409,
+          "fisher_p": 0.07039252689944127,
+          "rank": 10,
+          "total_features": 36
+        },
+        {
+          "feature": "013",
+          "a": 1,
+          "b": 12,
+          "c": 13,
+          "d": 1597,
+          "fisher_p": 0.10688935317144733,
+          "rank": 11,
+          "total_features": 36
+        },
+        {
+          "feature": "384",
+          "a": 1,
+          "b": 12,
+          "c": 13,
+          "d": 1597,
+          "fisher_p": 0.10688935317144733,
+          "rank": 12,
+          "total_features": 36
+        },
+        {
+          "feature": "003",
+          "a": 2,
+          "b": 11,
+          "c": 76,
+          "d": 1534,
+          "fisher_p": 0.126310697582548,
+          "rank": 13,
+          "total_features": 36
+        },
+        {
+          "feature": "632",
+          "a": 1,
+          "b": 12,
+          "c": 17,
+          "d": 1593,
+          "fisher_p": 0.13543146126690733,
+          "rank": 14,
+          "total_features": 36
+        },
+        {
+          "feature": "595",
+          "a": 1,
+          "b": 12,
+          "c": 19,
+          "d": 1591,
+          "fisher_p": 0.1493845433774121,
+          "rank": 15,
+          "total_features": 36
+        }
+      ],
+      "top_pairs": [
+        {
+          "feature": "000-643",
+          "a": 1,
+          "b": 12,
+          "c": 0,
+          "d": 1610,
+          "fisher_p": 0.008009858287122652,
+          "rank": 1,
+          "total_features": 37
+        },
+        {
+          "feature": "002-278",
+          "a": 1,
+          "b": 12,
+          "c": 0,
+          "d": 1610,
+          "fisher_p": 0.008009858287122652,
+          "rank": 2,
+          "total_features": 37
+        },
+        {
+          "feature": "026-060",
+          "a": 1,
+          "b": 12,
+          "c": 0,
+          "d": 1610,
+          "fisher_p": 0.008009858287122652,
+          "rank": 3,
+          "total_features": 37
+        },
+        {
+          "feature": "060-257",
+          "a": 1,
+          "b": 12,
+          "c": 0,
+          "d": 1610,
+          "fisher_p": 0.008009858287122652,
+          "rank": 4,
+          "total_features": 37
+        },
+        {
+          "feature": "060-840",
+          "a": 1,
+          "b": 12,
+          "c": 0,
+          "d": 1610,
+          "fisher_p": 0.008009858287122652,
+          "rank": 5,
+          "total_features": 37
+        },
+        {
+          "feature": "066-740",
+          "a": 1,
+          "b": 12,
+          "c": 0,
+          "d": 1610,
+          "fisher_p": 0.008009858287122652,
+          "rank": 6,
+          "total_features": 37
+        },
+        {
+          "feature": "125-220",
+          "a": 1,
+          "b": 12,
+          "c": 0,
+          "d": 1610,
+          "fisher_p": 0.008009858287122652,
+          "rank": 7,
+          "total_features": 37
+        },
+        {
+          "feature": "220-390",
+          "a": 1,
+          "b": 12,
+          "c": 0,
+          "d": 1610,
+          "fisher_p": 0.008009858287122652,
+          "rank": 8,
+          "total_features": 37
+        },
+        {
+          "feature": "220-632",
+          "a": 1,
+          "b": 12,
+          "c": 0,
+          "d": 1610,
+          "fisher_p": 0.008009858287122652,
+          "rank": 9,
+          "total_features": 37
+        },
+        {
+          "feature": "278-595",
+          "a": 1,
+          "b": 12,
+          "c": 0,
+          "d": 1610,
+          "fisher_p": 0.008009858287122652,
+          "rank": 10,
+          "total_features": 37
+        },
+        {
+          "feature": "390-415",
+          "a": 1,
+          "b": 12,
+          "c": 0,
+          "d": 1610,
+          "fisher_p": 0.008009858287122652,
+          "rank": 11,
+          "total_features": 37
+        },
+        {
+          "feature": "390-440",
+          "a": 1,
+          "b": 12,
+          "c": 0,
+          "d": 1610,
+          "fisher_p": 0.008009858287122652,
+          "rank": 12,
+          "total_features": 37
+        },
+        {
+          "feature": "392-004",
+          "a": 1,
+          "b": 12,
+          "c": 0,
+          "d": 1610,
+          "fisher_p": 0.008009858287122652,
+          "rank": 13,
+          "total_features": 37
+        },
+        {
+          "feature": "440-384",
+          "a": 1,
+          "b": 12,
+          "c": 0,
+          "d": 1610,
+          "fisher_p": 0.008009858287122652,
+          "rank": 14,
+          "total_features": 37
+        },
+        {
+          "feature": "520-013",
+          "a": 1,
+          "b": 12,
+          "c": 0,
+          "d": 1610,
+          "fisher_p": 0.008009858287122652,
+          "rank": 15,
+          "total_features": 37
+        }
+      ],
+      "support_external": [
+        {
+          "id": "16.1",
+          "cisi": "Alt-90",
+          "site": "Altyn Depe",
+          "type": "SEAL:S",
+          "shape": "square",
+          "complete": "Y",
+          "text": "+390-415+"
+        },
+        {
+          "id": "1971.1",
+          "cisi": "-",
+          "site": "Kish",
+          "type": "SEAL:S",
+          "shape": "square",
+          "complete": "Y",
+          "text": "+740-390-590-220-003-060-840-416+"
+        },
+        {
+          "id": "3885.1",
+          "cisi": "-",
+          "site": "Tello",
+          "type": "SEAL:S",
+          "shape": "square",
+          "complete": "N",
+          "text": "+000-220-390-440-384+"
+        },
+        {
+          "id": "4155.1",
+          "cisi": "-",
+          "site": "Gonur Depe",
+          "type": "SEAL:S",
+          "shape": "square",
+          "complete": "Y",
+          "text": "+740-390-590-125-220-235-002-285+"
+        }
+      ]
+    }
+  ],
+  "decision": "wild_shot_not_promoted_by_maxstat",
+  "caveat": "External-object rows are still catalogue-derived and source validation can kill the bet. Leave-site panels are destructive, not proof of title/personnel semantics."
+}

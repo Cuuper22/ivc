@@ -1,0 +1,936 @@
+{
+  "generated_at_local": "2026-05-24T17:02:39-07:00",
+  "source_file": "data/open_prototype/reports/sign_policy_sensitivity_sequences.csv",
+  "eligible_records": 136,
+  "policies_analyzed": [
+    "raw_lipi_numeric",
+    "p385_merge_only",
+    "mayig_observed_parpola"
+  ],
+  "minimum_count_for_non_sparse_class": 5,
+  "classification_rules": {
+    "initial_operator_candidate": "token_count >= 5, initial_share >= 0.6, terminal_share <= 0.2",
+    "terminal_operator_candidate": "token_count >= 5, terminal_share >= 0.6, initial_share <= 0.2",
+    "medial_core_candidate": "token_count >= 5, medial_share >= 0.75",
+    "edge_bivalent_candidate": "token_count >= 5, initial_share + terminal_share >= 0.65, and both initial and terminal >= 0.2",
+    "distributed_recurrent_candidate": "token_count >= 10 and no position share >= 0.6",
+    "sparse_unclassified": "token_count < 5"
+  },
+  "policy_summaries": [
+    {
+      "policy": "raw_lipi_numeric",
+      "records": 136,
+      "tokens": 739,
+      "vocab_size": 189,
+      "global_position_shares": {
+        "initial": 0.184032,
+        "medial": 0.631935,
+        "terminal": 0.184032,
+        "single": 0
+      },
+      "class_counts": {
+        "distributed_recurrent_candidate": 2,
+        "initial_operator_candidate": 4,
+        "medial_core_candidate": 25,
+        "sparse_unclassified": 149,
+        "terminal_operator_candidate": 4,
+        "weak_or_mixed_positional_candidate": 5
+      },
+      "top_by_class": {
+        "distributed_recurrent_candidate": [
+          {
+            "sign": "L390",
+            "token_count": 25,
+            "initial_share": 0.52,
+            "medial_share": 0.44,
+            "terminal_share": 0.04,
+            "examples": "M-12;M-17;M-32;M-35;M-38;M-48;M-51;M-70"
+          },
+          {
+            "sign": "L820",
+            "token_count": 14,
+            "initial_share": 0.142857,
+            "medial_share": 0.285714,
+            "terminal_share": 0.571429,
+            "examples": "M-6;M-16;M-31;M-48;M-54;M-86;M-103;M-108"
+          }
+        ],
+        "initial_operator_candidate": [
+          {
+            "sign": "L740",
+            "token_count": 73,
+            "initial_share": 0.821918,
+            "medial_share": 0.178082,
+            "terminal_share": 0,
+            "examples": "M-5;M-12;M-14;M-15;M-18;M-21;M-24;M-26"
+          },
+          {
+            "sign": "L520",
+            "token_count": 15,
+            "initial_share": 0.933333,
+            "medial_share": 0,
+            "terminal_share": 0.066667,
+            "examples": "M-37;M-64;M-65;M-75;M-85;M-86;M-117;M-122"
+          },
+          {
+            "sign": "L090",
+            "token_count": 8,
+            "initial_share": 1,
+            "medial_share": 0,
+            "terminal_share": 0,
+            "examples": "M-15;M-24;M-26;M-53;M-100;M-104;M-136;M-184"
+          },
+          {
+            "sign": "L156",
+            "token_count": 5,
+            "initial_share": 1,
+            "medial_share": 0,
+            "terminal_share": 0,
+            "examples": "M-80;M-93;M-96;M-97;M-132"
+          }
+        ],
+        "medial_core_candidate": [
+          {
+            "sign": "L002",
+            "token_count": 60,
+            "initial_share": 0,
+            "medial_share": 1,
+            "terminal_share": 0,
+            "examples": "M-12;M-14;M-15;M-17;M-21;M-24;M-29;M-32"
+          },
+          {
+            "sign": "L220",
+            "token_count": 29,
+            "initial_share": 0.034483,
+            "medial_share": 0.965517,
+            "terminal_share": 0,
+            "examples": "M-29;M-36;M-37;M-38;M-46;M-52;M-53;M-64"
+          },
+          {
+            "sign": "L032",
+            "token_count": 21,
+            "initial_share": 0,
+            "medial_share": 0.904762,
+            "terminal_share": 0.095238,
+            "examples": "M-3;M-21;M-33;M-36;M-38;M-52;M-56;M-57"
+          },
+          {
+            "sign": "L060",
+            "token_count": 17,
+            "initial_share": 0,
+            "medial_share": 1,
+            "terminal_share": 0,
+            "examples": "M-5;M-26;M-31;M-48;M-56;M-59;M-63;M-64"
+          },
+          {
+            "sign": "L240",
+            "token_count": 14,
+            "initial_share": 0,
+            "medial_share": 1,
+            "terminal_share": 0,
+            "examples": "M-5;M-24;M-29;M-30;M-38;M-42;M-46;M-54"
+          },
+          {
+            "sign": "L233",
+            "token_count": 13,
+            "initial_share": 0,
+            "medial_share": 0.923077,
+            "terminal_share": 0.076923,
+            "examples": "M-12;M-31;M-33;M-35;M-85;M-88;M-107;M-118"
+          },
+          {
+            "sign": "L235",
+            "token_count": 13,
+            "initial_share": 0,
+            "medial_share": 0.923077,
+            "terminal_share": 0.076923,
+            "examples": "M-5;M-24;M-29;M-30;M-38;M-46;M-47;M-51"
+          },
+          {
+            "sign": "L741",
+            "token_count": 13,
+            "initial_share": 0,
+            "medial_share": 0.923077,
+            "terminal_share": 0.076923,
+            "examples": "M-51;M-85;M-93;M-112;M-113;M-127;M-128;M-129"
+          },
+          {
+            "sign": "L003",
+            "token_count": 10,
+            "initial_share": 0,
+            "medial_share": 0.8,
+            "terminal_share": 0.2,
+            "examples": "M-32;M-59;M-80;M-93;M-94;M-95;M-102;M-132"
+          },
+          {
+            "sign": "L368",
+            "token_count": 10,
+            "initial_share": 0.2,
+            "medial_share": 0.8,
+            "terminal_share": 0,
+            "examples": "M-1;M-12;M-13;M-36;M-48;M-59;M-80;M-84"
+          }
+        ],
+        "sparse_unclassified": [
+          {
+            "sign": "L004",
+            "token_count": 4,
+            "initial_share": 0,
+            "medial_share": 0.5,
+            "terminal_share": 0.5,
+            "examples": "M-64;M-75;M-96;M-103"
+          },
+          {
+            "sign": "L055",
+            "token_count": 4,
+            "initial_share": 0,
+            "medial_share": 0.75,
+            "terminal_share": 0.25,
+            "examples": "M-18;M-29;M-43;M-117"
+          },
+          {
+            "sign": "L527",
+            "token_count": 4,
+            "initial_share": 0.75,
+            "medial_share": 0.25,
+            "terminal_share": 0,
+            "examples": "M-40;M-42;M-88;M-133"
+          },
+          {
+            "sign": "L545",
+            "token_count": 4,
+            "initial_share": 0,
+            "medial_share": 0,
+            "terminal_share": 1,
+            "examples": "M-78;M-102;M-132;M-136"
+          },
+          {
+            "sign": "L590",
+            "token_count": 4,
+            "initial_share": 0,
+            "medial_share": 1,
+            "terminal_share": 0,
+            "examples": "M-12;M-35;M-94;M-131"
+          },
+          {
+            "sign": "L061",
+            "token_count": 3,
+            "initial_share": 0,
+            "medial_share": 1,
+            "terminal_share": 0,
+            "examples": "M-164;M-170;M-171"
+          },
+          {
+            "sign": "L100",
+            "token_count": 3,
+            "initial_share": 0,
+            "medial_share": 1,
+            "terminal_share": 0,
+            "examples": "M-91;M-116;M-144"
+          },
+          {
+            "sign": "L125",
+            "token_count": 3,
+            "initial_share": 0,
+            "medial_share": 0.666667,
+            "terminal_share": 0.333333,
+            "examples": "M-13;M-38;M-119"
+          },
+          {
+            "sign": "L142",
+            "token_count": 3,
+            "initial_share": 0,
+            "medial_share": 1,
+            "terminal_share": 0,
+            "examples": "M-71;M-145;M-164"
+          },
+          {
+            "sign": "L151",
+            "token_count": 3,
+            "initial_share": 1,
+            "medial_share": 0,
+            "terminal_share": 0,
+            "examples": "M-71;M-119;M-160"
+          }
+        ],
+        "terminal_operator_candidate": [
+          {
+            "sign": "L817",
+            "token_count": 12,
+            "initial_share": 0,
+            "medial_share": 0.083333,
+            "terminal_share": 0.916667,
+            "examples": "M-14;M-32;M-42;M-58;M-75;M-80;M-90;M-101"
+          },
+          {
+            "sign": "L861",
+            "token_count": 12,
+            "initial_share": 0,
+            "medial_share": 0.166667,
+            "terminal_share": 0.833333,
+            "examples": "M-1;M-15;M-21;M-47;M-77;M-91;M-100;M-118"
+          },
+          {
+            "sign": "L140",
+            "token_count": 8,
+            "initial_share": 0,
+            "medial_share": 0.375,
+            "terminal_share": 0.625,
+            "examples": "M-8;M-24;M-51;M-53;M-74;M-109;M-115;M-142"
+          },
+          {
+            "sign": "L692",
+            "token_count": 8,
+            "initial_share": 0,
+            "medial_share": 0.125,
+            "terminal_share": 0.875,
+            "examples": "M-5;M-21;M-26;M-69;M-70;M-134;M-146;M-171"
+          }
+        ],
+        "weak_or_mixed_positional_candidate": [
+          {
+            "sign": "L550",
+            "token_count": 8,
+            "initial_share": 0,
+            "medial_share": 0.625,
+            "terminal_share": 0.375,
+            "examples": "M-42;M-56;M-63;M-82;M-108;M-133;M-149;M-158"
+          },
+          {
+            "sign": "L031",
+            "token_count": 7,
+            "initial_share": 0.142857,
+            "medial_share": 0.571429,
+            "terminal_share": 0.285714,
+            "examples": "M-9;M-65;M-90;M-135;M-136;M-155;M-160"
+          },
+          {
+            "sign": "L920",
+            "token_count": 7,
+            "initial_share": 0,
+            "medial_share": 0.428571,
+            "terminal_share": 0.571429,
+            "examples": "M-44;M-48;M-53;M-59;M-84;M-113;M-146"
+          },
+          {
+            "sign": "L806",
+            "token_count": 5,
+            "initial_share": 0,
+            "medial_share": 0.6,
+            "terminal_share": 0.4,
+            "examples": "M-29;M-30;M-166;M-171;M-173"
+          },
+          {
+            "sign": "L840",
+            "token_count": 5,
+            "initial_share": 0,
+            "medial_share": 0.6,
+            "terminal_share": 0.4,
+            "examples": "M-56;M-90;M-113;M-116;M-143"
+          }
+        ]
+      }
+    },
+    {
+      "policy": "p385_merge_only",
+      "records": 136,
+      "tokens": 739,
+      "vocab_size": 188,
+      "global_position_shares": {
+        "initial": 0.184032,
+        "medial": 0.631935,
+        "terminal": 0.184032,
+        "single": 0
+      },
+      "class_counts": {
+        "distributed_recurrent_candidate": 2,
+        "initial_operator_candidate": 4,
+        "medial_core_candidate": 25,
+        "sparse_unclassified": 149,
+        "terminal_operator_candidate": 3,
+        "weak_or_mixed_positional_candidate": 5
+      },
+      "top_by_class": {
+        "distributed_recurrent_candidate": [
+          {
+            "sign": "L390",
+            "token_count": 25,
+            "initial_share": 0.52,
+            "medial_share": 0.44,
+            "terminal_share": 0.04,
+            "examples": "M-12;M-17;M-32;M-35;M-38;M-48;M-51;M-70"
+          },
+          {
+            "sign": "L820",
+            "token_count": 14,
+            "initial_share": 0.142857,
+            "medial_share": 0.285714,
+            "terminal_share": 0.571429,
+            "examples": "M-6;M-16;M-31;M-48;M-54;M-86;M-103;M-108"
+          }
+        ],
+        "initial_operator_candidate": [
+          {
+            "sign": "L740",
+            "token_count": 73,
+            "initial_share": 0.821918,
+            "medial_share": 0.178082,
+            "terminal_share": 0,
+            "examples": "M-5;M-12;M-14;M-15;M-18;M-21;M-24;M-26"
+          },
+          {
+            "sign": "L520",
+            "token_count": 15,
+            "initial_share": 0.933333,
+            "medial_share": 0,
+            "terminal_share": 0.066667,
+            "examples": "M-37;M-64;M-65;M-75;M-85;M-86;M-117;M-122"
+          },
+          {
+            "sign": "L090",
+            "token_count": 8,
+            "initial_share": 1,
+            "medial_share": 0,
+            "terminal_share": 0,
+            "examples": "M-15;M-24;M-26;M-53;M-100;M-104;M-136;M-184"
+          },
+          {
+            "sign": "L156",
+            "token_count": 5,
+            "initial_share": 1,
+            "medial_share": 0,
+            "terminal_share": 0,
+            "examples": "M-80;M-93;M-96;M-97;M-132"
+          }
+        ],
+        "medial_core_candidate": [
+          {
+            "sign": "L002",
+            "token_count": 60,
+            "initial_share": 0,
+            "medial_share": 1,
+            "terminal_share": 0,
+            "examples": "M-12;M-14;M-15;M-17;M-21;M-24;M-29;M-32"
+          },
+          {
+            "sign": "L220",
+            "token_count": 29,
+            "initial_share": 0.034483,
+            "medial_share": 0.965517,
+            "terminal_share": 0,
+            "examples": "M-29;M-36;M-37;M-38;M-46;M-52;M-53;M-64"
+          },
+          {
+            "sign": "L032",
+            "token_count": 21,
+            "initial_share": 0,
+            "medial_share": 0.904762,
+            "terminal_share": 0.095238,
+            "examples": "M-3;M-21;M-33;M-36;M-38;M-52;M-56;M-57"
+          },
+          {
+            "sign": "L060",
+            "token_count": 17,
+            "initial_share": 0,
+            "medial_share": 1,
+            "terminal_share": 0,
+            "examples": "M-5;M-26;M-31;M-48;M-56;M-59;M-63;M-64"
+          },
+          {
+            "sign": "L240",
+            "token_count": 14,
+            "initial_share": 0,
+            "medial_share": 1,
+            "terminal_share": 0,
+            "examples": "M-5;M-24;M-29;M-30;M-38;M-42;M-46;M-54"
+          },
+          {
+            "sign": "L233",
+            "token_count": 13,
+            "initial_share": 0,
+            "medial_share": 0.923077,
+            "terminal_share": 0.076923,
+            "examples": "M-12;M-31;M-33;M-35;M-85;M-88;M-107;M-118"
+          },
+          {
+            "sign": "L235",
+            "token_count": 13,
+            "initial_share": 0,
+            "medial_share": 0.923077,
+            "terminal_share": 0.076923,
+            "examples": "M-5;M-24;M-29;M-30;M-38;M-46;M-47;M-51"
+          },
+          {
+            "sign": "L741",
+            "token_count": 13,
+            "initial_share": 0,
+            "medial_share": 0.923077,
+            "terminal_share": 0.076923,
+            "examples": "M-51;M-85;M-93;M-112;M-113;M-127;M-128;M-129"
+          },
+          {
+            "sign": "L003",
+            "token_count": 10,
+            "initial_share": 0,
+            "medial_share": 0.8,
+            "terminal_share": 0.2,
+            "examples": "M-32;M-59;M-80;M-93;M-94;M-95;M-102;M-132"
+          },
+          {
+            "sign": "L368",
+            "token_count": 10,
+            "initial_share": 0.2,
+            "medial_share": 0.8,
+            "terminal_share": 0,
+            "examples": "M-1;M-12;M-13;M-36;M-48;M-59;M-80;M-84"
+          }
+        ],
+        "sparse_unclassified": [
+          {
+            "sign": "L004",
+            "token_count": 4,
+            "initial_share": 0,
+            "medial_share": 0.5,
+            "terminal_share": 0.5,
+            "examples": "M-64;M-75;M-96;M-103"
+          },
+          {
+            "sign": "L055",
+            "token_count": 4,
+            "initial_share": 0,
+            "medial_share": 0.75,
+            "terminal_share": 0.25,
+            "examples": "M-18;M-29;M-43;M-117"
+          },
+          {
+            "sign": "L527",
+            "token_count": 4,
+            "initial_share": 0.75,
+            "medial_share": 0.25,
+            "terminal_share": 0,
+            "examples": "M-40;M-42;M-88;M-133"
+          },
+          {
+            "sign": "L545",
+            "token_count": 4,
+            "initial_share": 0,
+            "medial_share": 0,
+            "terminal_share": 1,
+            "examples": "M-78;M-102;M-132;M-136"
+          },
+          {
+            "sign": "L590",
+            "token_count": 4,
+            "initial_share": 0,
+            "medial_share": 1,
+            "terminal_share": 0,
+            "examples": "M-12;M-35;M-94;M-131"
+          },
+          {
+            "sign": "L061",
+            "token_count": 3,
+            "initial_share": 0,
+            "medial_share": 1,
+            "terminal_share": 0,
+            "examples": "M-164;M-170;M-171"
+          },
+          {
+            "sign": "L100",
+            "token_count": 3,
+            "initial_share": 0,
+            "medial_share": 1,
+            "terminal_share": 0,
+            "examples": "M-91;M-116;M-144"
+          },
+          {
+            "sign": "L125",
+            "token_count": 3,
+            "initial_share": 0,
+            "medial_share": 0.666667,
+            "terminal_share": 0.333333,
+            "examples": "M-13;M-38;M-119"
+          },
+          {
+            "sign": "L142",
+            "token_count": 3,
+            "initial_share": 0,
+            "medial_share": 1,
+            "terminal_share": 0,
+            "examples": "M-71;M-145;M-164"
+          },
+          {
+            "sign": "L151",
+            "token_count": 3,
+            "initial_share": 1,
+            "medial_share": 0,
+            "terminal_share": 0,
+            "examples": "M-71;M-119;M-160"
+          }
+        ],
+        "terminal_operator_candidate": [
+          {
+            "sign": "P385",
+            "token_count": 24,
+            "initial_share": 0,
+            "medial_share": 0.125,
+            "terminal_share": 0.875,
+            "examples": "M-1;M-14;M-15;M-21;M-32;M-42;M-47;M-58"
+          },
+          {
+            "sign": "L140",
+            "token_count": 8,
+            "initial_share": 0,
+            "medial_share": 0.375,
+            "terminal_share": 0.625,
+            "examples": "M-8;M-24;M-51;M-53;M-74;M-109;M-115;M-142"
+          },
+          {
+            "sign": "L692",
+            "token_count": 8,
+            "initial_share": 0,
+            "medial_share": 0.125,
+            "terminal_share": 0.875,
+            "examples": "M-5;M-21;M-26;M-69;M-70;M-134;M-146;M-171"
+          }
+        ],
+        "weak_or_mixed_positional_candidate": [
+          {
+            "sign": "L550",
+            "token_count": 8,
+            "initial_share": 0,
+            "medial_share": 0.625,
+            "terminal_share": 0.375,
+            "examples": "M-42;M-56;M-63;M-82;M-108;M-133;M-149;M-158"
+          },
+          {
+            "sign": "L031",
+            "token_count": 7,
+            "initial_share": 0.142857,
+            "medial_share": 0.571429,
+            "terminal_share": 0.285714,
+            "examples": "M-9;M-65;M-90;M-135;M-136;M-155;M-160"
+          },
+          {
+            "sign": "L920",
+            "token_count": 7,
+            "initial_share": 0,
+            "medial_share": 0.428571,
+            "terminal_share": 0.571429,
+            "examples": "M-44;M-48;M-53;M-59;M-84;M-113;M-146"
+          },
+          {
+            "sign": "L806",
+            "token_count": 5,
+            "initial_share": 0,
+            "medial_share": 0.6,
+            "terminal_share": 0.4,
+            "examples": "M-29;M-30;M-166;M-171;M-173"
+          },
+          {
+            "sign": "L840",
+            "token_count": 5,
+            "initial_share": 0,
+            "medial_share": 0.6,
+            "terminal_share": 0.4,
+            "examples": "M-56;M-90;M-113;M-116;M-143"
+          }
+        ]
+      }
+    },
+    {
+      "policy": "mayig_observed_parpola",
+      "records": 136,
+      "tokens": 739,
+      "vocab_size": 160,
+      "global_position_shares": {
+        "initial": 0.184032,
+        "medial": 0.631935,
+        "terminal": 0.184032,
+        "single": 0
+      },
+      "class_counts": {
+        "distributed_recurrent_candidate": 2,
+        "initial_operator_candidate": 5,
+        "medial_core_candidate": 26,
+        "sparse_unclassified": 122,
+        "terminal_operator_candidate": 3,
+        "weak_or_mixed_positional_candidate": 2
+      },
+      "top_by_class": {
+        "distributed_recurrent_candidate": [
+          {
+            "sign": "P086",
+            "token_count": 29,
+            "initial_share": 0.517241,
+            "medial_share": 0.448276,
+            "terminal_share": 0.034483,
+            "examples": "M-12;M-17;M-32;M-34;M-35;M-38;M-48;M-51"
+          },
+          {
+            "sign": "P378",
+            "token_count": 14,
+            "initial_share": 0.142857,
+            "medial_share": 0.285714,
+            "terminal_share": 0.571429,
+            "examples": "M-6;M-16;M-31;M-48;M-54;M-86;M-103;M-108"
+          }
+        ],
+        "initial_operator_candidate": [
+          {
+            "sign": "P324",
+            "token_count": 76,
+            "initial_share": 0.789474,
+            "medial_share": 0.210526,
+            "terminal_share": 0,
+            "examples": "M-5;M-12;M-14;M-15;M-18;M-21;M-24;M-26"
+          },
+          {
+            "sign": "P217",
+            "token_count": 15,
+            "initial_share": 0.933333,
+            "medial_share": 0,
+            "terminal_share": 0.066667,
+            "examples": "M-37;M-64;M-65;M-75;M-85;M-86;M-117;M-122"
+          },
+          {
+            "sign": "P013",
+            "token_count": 8,
+            "initial_share": 1,
+            "medial_share": 0,
+            "terminal_share": 0,
+            "examples": "M-15;M-24;M-26;M-53;M-100;M-104;M-136;M-184"
+          },
+          {
+            "sign": "P004",
+            "token_count": 6,
+            "initial_share": 1,
+            "medial_share": 0,
+            "terminal_share": 0,
+            "examples": "M-80;M-93;M-96;M-97;M-102;M-132"
+          },
+          {
+            "sign": "P301",
+            "token_count": 5,
+            "initial_share": 0.8,
+            "medial_share": 0.2,
+            "terminal_share": 0,
+            "examples": "M-40;M-42;M-63;M-88;M-133"
+          }
+        ],
+        "medial_core_candidate": [
+          {
+            "sign": "P122",
+            "token_count": 59,
+            "initial_share": 0,
+            "medial_share": 1,
+            "terminal_share": 0,
+            "examples": "M-12;M-14;M-15;M-17;M-21;M-24;M-29;M-32"
+          },
+          {
+            "sign": "P050",
+            "token_count": 27,
+            "initial_share": 0.037037,
+            "medial_share": 0.962963,
+            "terminal_share": 0,
+            "examples": "M-29;M-36;M-37;M-38;M-46;M-52;M-53;M-64"
+          },
+          {
+            "sign": "P145",
+            "token_count": 22,
+            "initial_share": 0,
+            "medial_share": 0.909091,
+            "terminal_share": 0.090909,
+            "examples": "M-3;M-21;M-33;M-36;M-38;M-52;M-56;M-57"
+          },
+          {
+            "sign": "P120",
+            "token_count": 17,
+            "initial_share": 0,
+            "medial_share": 1,
+            "terminal_share": 0,
+            "examples": "M-5;M-26;M-31;M-48;M-56;M-59;M-63;M-64"
+          },
+          {
+            "sign": "P230",
+            "token_count": 16,
+            "initial_share": 0,
+            "medial_share": 0.75,
+            "terminal_share": 0.25,
+            "examples": "M-42;M-43;M-46;M-51;M-54;M-56;M-57;M-63"
+          },
+          {
+            "sign": "P060",
+            "token_count": 14,
+            "initial_share": 0,
+            "medial_share": 0.928571,
+            "terminal_share": 0.071429,
+            "examples": "M-5;M-24;M-29;M-30;M-38;M-46;M-47;M-51"
+          },
+          {
+            "sign": "P062",
+            "token_count": 14,
+            "initial_share": 0,
+            "medial_share": 1,
+            "terminal_share": 0,
+            "examples": "M-5;M-24;M-29;M-30;M-38;M-42;M-46;M-54"
+          },
+          {
+            "sign": "P364",
+            "token_count": 14,
+            "initial_share": 0,
+            "medial_share": 0.857143,
+            "terminal_share": 0.142857,
+            "examples": "M-29;M-30;M-44;M-52;M-69;M-77;M-115;M-117"
+          },
+          {
+            "sign": "P058",
+            "token_count": 13,
+            "initial_share": 0,
+            "medial_share": 0.923077,
+            "terminal_share": 0.076923,
+            "examples": "M-12;M-31;M-33;M-35;M-85;M-88;M-107;M-118"
+          },
+          {
+            "sign": "P316",
+            "token_count": 13,
+            "initial_share": 0.076923,
+            "medial_share": 0.769231,
+            "terminal_share": 0.153846,
+            "examples": "M-8;M-44;M-54;M-64;M-65;M-74;M-86;M-100"
+          }
+        ],
+        "sparse_unclassified": [
+          {
+            "sign": "P051",
+            "token_count": 4,
+            "initial_share": 1,
+            "medial_share": 0,
+            "terminal_share": 0,
+            "examples": "M-54;M-57;M-70;M-147"
+          },
+          {
+            "sign": "P075",
+            "token_count": 4,
+            "initial_share": 0,
+            "medial_share": 0.75,
+            "terminal_share": 0.25,
+            "examples": "M-92;M-108;M-121;M-157"
+          },
+          {
+            "sign": "P108",
+            "token_count": 4,
+            "initial_share": 0,
+            "medial_share": 0.5,
+            "terminal_share": 0.5,
+            "examples": "M-1;M-12;M-34;M-71"
+          },
+          {
+            "sign": "P124",
+            "token_count": 4,
+            "initial_share": 0,
+            "medial_share": 0.5,
+            "terminal_share": 0.5,
+            "examples": "M-64;M-75;M-96;M-103"
+          },
+          {
+            "sign": "P142",
+            "token_count": 4,
+            "initial_share": 0,
+            "medial_share": 0.75,
+            "terminal_share": 0.25,
+            "examples": "M-18;M-29;M-43;M-117"
+          },
+          {
+            "sign": "P215",
+            "token_count": 4,
+            "initial_share": 0,
+            "medial_share": 1,
+            "terminal_share": 0,
+            "examples": "M-48;M-51;M-58;M-92"
+          },
+          {
+            "sign": "P226",
+            "token_count": 4,
+            "initial_share": 0,
+            "medial_share": 0,
+            "terminal_share": 1,
+            "examples": "M-78;M-102;M-132;M-136"
+          },
+          {
+            "sign": "P270",
+            "token_count": 4,
+            "initial_share": 0,
+            "medial_share": 0.75,
+            "terminal_share": 0.25,
+            "examples": "M-8;M-36;M-38;M-119"
+          },
+          {
+            "sign": "P276",
+            "token_count": 4,
+            "initial_share": 0,
+            "medial_share": 1,
+            "terminal_share": 0,
+            "examples": "M-12;M-35;M-94;M-131"
+          },
+          {
+            "sign": "P355",
+            "token_count": 4,
+            "initial_share": 0,
+            "medial_share": 0.5,
+            "terminal_share": 0.5,
+            "examples": "M-121;M-131;M-157;M-172"
+          }
+        ],
+        "terminal_operator_candidate": [
+          {
+            "sign": "P385",
+            "token_count": 25,
+            "initial_share": 0,
+            "medial_share": 0.12,
+            "terminal_share": 0.88,
+            "examples": "M-1;M-14;M-15;M-21;M-32;M-42;M-47;M-58"
+          },
+          {
+            "sign": "P256",
+            "token_count": 9,
+            "initial_share": 0,
+            "medial_share": 0.222222,
+            "terminal_share": 0.777778,
+            "examples": "M-5;M-21;M-26;M-38;M-69;M-70;M-134;M-146"
+          },
+          {
+            "sign": "P011",
+            "token_count": 8,
+            "initial_share": 0,
+            "medial_share": 0.375,
+            "terminal_share": 0.625,
+            "examples": "M-8;M-24;M-51;M-53;M-74;M-109;M-115;M-142"
+          }
+        ],
+        "weak_or_mixed_positional_candidate": [
+          {
+            "sign": "P144",
+            "token_count": 7,
+            "initial_share": 0.142857,
+            "medial_share": 0.571429,
+            "terminal_share": 0.285714,
+            "examples": "M-9;M-65;M-90;M-135;M-136;M-155;M-160"
+          },
+          {
+            "sign": "P349",
+            "token_count": 6,
+            "initial_share": 0,
+            "medial_share": 0.666667,
+            "terminal_share": 0.333333,
+            "examples": "M-56;M-90;M-113;M-116;M-143;M-166"
+          }
+        ]
+      }
+    }
+  ],
+  "interpretation_boundary": [
+    "Classes are positional behavior labels, not meanings.",
+    "The row set is all Mohenjo-daro seal data after strict filtering.",
+    "A sign class is only a hypothesis queue until it survives larger corpora, image validation, and controls."
+  ]
+}

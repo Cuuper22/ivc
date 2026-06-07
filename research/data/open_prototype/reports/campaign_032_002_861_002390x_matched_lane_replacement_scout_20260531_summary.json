@@ -1,0 +1,100 @@
+{
+  "run_date": "2026-05-31",
+  "input": "data/open_prototype/lipi/metadata_filtered.csv",
+  "live_predecessors": [
+    "004",
+    "032"
+  ],
+  "lane_occurrences": 73,
+  "adjacent_002390_lane_rows": 4,
+  "replacement_targets": [
+    {
+      "id": "744.2",
+      "object": "H-1993",
+      "prev_before_002": "004",
+      "branch_after_390": "095",
+      "source_tier": "route_or_metadata_pressure",
+      "needed_upgrade": "lane_has_no_strict_side_bind_or_replace_any_branch"
+    },
+    {
+      "id": "3875.1",
+      "object": "Sktd-1",
+      "prev_before_002": "004",
+      "branch_after_390": "125",
+      "source_tier": "public_panel_downweighted",
+      "needed_upgrade": "lane_has_no_strict_side_bind_or_replace_any_branch"
+    },
+    {
+      "id": "3335.1",
+      "object": "-",
+      "prev_before_002": "032",
+      "branch_after_390": "590",
+      "source_tier": "metadata_or_blocked",
+      "needed_upgrade": "bind_this_row_or_replace_with_strict_same_prev_branch_alternative"
+    }
+  ],
+  "lane_summary": [
+    {
+      "prev_before_002": "004",
+      "all_prev_002_occurrences": 22,
+      "post_002_heads_all": "817:7; 861:5; 365:2; 390:2; 820:2; 031:1; 278:1; 705:1; 933:1",
+      "non_adjacent_post_002_heads": "817:7; 861:5; 365:2; 820:2; 031:1; 278:1; 705:1; 933:1",
+      "adjacent_002390_rows": 2,
+      "adjacent_002390_branches": "095:1; 125:1",
+      "adjacent_002390_terminal_classes": "continuing:1; terminal:1",
+      "adjacent_source_tiers": "public_panel_downweighted:1; route_or_metadata_pressure:1",
+      "strict_adjacent_rows": 0,
+      "strict_adjacent_branches": "",
+      "adjacent_objects": "H-1993:390->095/<END>:route_or_metadata_pressure; Sktd-1:390->125/820:public_panel_downweighted",
+      "gate": "branch_split_non_strict_no_replacement"
+    },
+    {
+      "prev_before_002": "032",
+      "all_prev_002_occurrences": 51,
+      "post_002_heads_all": "820:11; 861:11; 817:9; 000:4; 390:2; <END>:1; 142:1; 144:1; 168:1; 252:1; 300:1; 368:1; 415:1; 454:1; 690:1; 717:1; 880:1; 892:1; 900:1",
+      "non_adjacent_post_002_heads": "820:11; 861:11; 817:9; 000:4; <END>:1; 142:1; 144:1; 168:1; 252:1; 300:1; 368:1; 415:1; 454:1; 690:1; 717:1; 880:1; 892:1; 900:1",
+      "adjacent_002390_rows": 2,
+      "adjacent_002390_branches": "590:1; 692:1",
+      "adjacent_002390_terminal_classes": "continuing:1; terminal:1",
+      "adjacent_source_tiers": "metadata_or_blocked:1; strict_visible:1",
+      "strict_adjacent_rows": 1,
+      "strict_adjacent_branches": "692:1",
+      "adjacent_objects": "M-70:390->692/<END>:strict_visible; -:390->590/032:metadata_or_blocked",
+      "gate": "branch_split_partly_strict_no_replacement"
+    }
+  ],
+  "decisions": [
+    {
+      "decision": "no_local_replacement_witness_for_004_or_032",
+      "evidence": "004:H-1993:390->095/<END>:route_or_metadata_pressure; Sktd-1:390->125/820:public_panel_downweighted | 032:M-70:390->692/<END>:strict_visible; -:390->590/032:metadata_or_blocked",
+      "result": "local metadata has no additional adjacent 002-390 branch rows for either live predecessor lane",
+      "consequence": "the next matched-lane work is external/source acquisition or replacement discovery, not local row re-ranking"
+    },
+    {
+      "decision": "004_lane_requires_h1993_or_equivalent",
+      "evidence": "H-1993:390->095/<END>:route_or_metadata_pressure; Sktd-1:390->125/820:public_panel_downweighted",
+      "result": "branch_split_non_strict_no_replacement",
+      "consequence": "Sktd-1 cannot be promoted without a strict non-125 comparator; H-1993 remains the named acquisition target"
+    },
+    {
+      "decision": "032_lane_requires_3335_binding_or_equivalent",
+      "evidence": "M-70:390->692/<END>:strict_visible; -:390->590/032:metadata_or_blocked",
+      "result": "branch_split_partly_strict_no_replacement",
+      "consequence": "M-70 is already strict; the blocked side is 3335.1 or another strict 032->002-390 branch alternative"
+    },
+    {
+      "decision": "post002_head_alternation_is_not_branch_replacement",
+      "evidence": "004:all_heads=817:7; 861:5; 365:2; 390:2; 820:2; 031:1; 278:1; 705:1; 933:1 | 032:all_heads=820:11; 861:11; 817:9; 000:4; 390:2; <END>:1; 142:1; 144:1; 168:1; 252:1; 300:1; 368:1; 415:1; 454:1; 690:1; 717:1; 880:1; 892:1; 900:1",
+      "result": "both live predecessors have non-390 post-002 heads in local metadata, but those are not adjacent 002-390-X branch alternatives",
+      "consequence": "head-level anti-template controls stay separate from branch-slot promotion"
+    }
+  ],
+  "status": "matched_lane_replacement_scout_no_local_replacement_witness_no_values",
+  "outputs": {
+    "lane_occurrences": "data/open_prototype/reports/campaign_032_002_861_002390x_matched_lane_replacement_scout_20260531_lane_occurrences.csv",
+    "lane_summary": "data/open_prototype/reports/campaign_032_002_861_002390x_matched_lane_replacement_scout_20260531_lane_summary.csv",
+    "replacement_targets": "data/open_prototype/reports/campaign_032_002_861_002390x_matched_lane_replacement_scout_20260531_replacement_targets.csv",
+    "decisions": "data/open_prototype/reports/campaign_032_002_861_002390x_matched_lane_replacement_scout_20260531_decisions.csv",
+    "summary": "data/open_prototype/reports/campaign_032_002_861_002390x_matched_lane_replacement_scout_20260531_summary.json"
+  }
+}

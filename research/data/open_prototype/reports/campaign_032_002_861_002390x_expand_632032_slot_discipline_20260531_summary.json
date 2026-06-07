@@ -1,0 +1,33 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "expand_632032_slot_discipline",
+  "rows": {
+    "raw": 5679,
+    "canonical_numeric_sequences": 3503,
+    "sign_632_occurrences": 31,
+    "chunk_632032_occurrences": 7,
+    "chunk_after_125": 4,
+    "chunk_after_governed_125": 3,
+    "chunk_not_after_125": 3,
+    "terminal_632032_chunks": 5
+  },
+  "bets": [
+    {
+      "bet_id": "EXPAND_632032_GENERAL_TERMINAL_COMPOUND",
+      "tier": "candidate"
+    },
+    {
+      "bet_id": "EXPAND_125632032_IS_GOVERNED_REUSE_NOT_UNIQUE_TAIL",
+      "tier": "candidate"
+    },
+    {
+      "bet_id": "EXPAND_632032_SLOT_DISCIPLINE_WARNING",
+      "tier": "wild_shot"
+    },
+    {
+      "bet_id": "EXPAND_M119_POSTTAIL_900563_EXTENSION",
+      "tier": "wild_shot"
+    }
+  ]
+}

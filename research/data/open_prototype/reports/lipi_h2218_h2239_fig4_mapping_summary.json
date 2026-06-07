@@ -1,0 +1,65 @@
+{
+  "source": "H-2218 through H-2239 Fig. 4 source mapping",
+  "source_url": "https://www.harappa.com/sites/default/files/pdf/Kenoyer2000_The%20Tiny%20Steatite%20Seals%20of%20Harappa.pdf",
+  "mapped_fig4_items": 22,
+  "expected_fig4_tablet_items": 22,
+  "missing_fig4_items": [],
+  "manufacturing_group_signature_counts": {
+    "group_1": {
+      "artifact_count": 6,
+      "local_signature_counts": {
+        "A": 4,
+        "B_side_swap": 2
+      },
+      "cisi": [
+        "H-2221",
+        "H-2222",
+        "H-2220",
+        "H-2227",
+        "H-2229",
+        "H-2225"
+      ]
+    },
+    "group_2": {
+      "artifact_count": 9,
+      "local_signature_counts": {
+        "A": 6,
+        "B_side_swap": 3
+      },
+      "cisi": [
+        "H-2224",
+        "H-2235",
+        "H-2219",
+        "H-2218",
+        "H-2228",
+        "H-2226",
+        "H-2223",
+        "H-2236",
+        "H-2239"
+      ]
+    },
+    "group_3": {
+      "artifact_count": 7,
+      "local_signature_counts": {
+        "033_variant": 1,
+        "154_variant": 1,
+        "A": 3,
+        "B_side_swap": 2
+      },
+      "cisi": [
+        "H-2237",
+        "H-2238",
+        "H-2230",
+        "H-2233",
+        "H-2231",
+        "H-2234",
+        "H-2232"
+      ]
+    }
+  },
+  "key_observation": "The Meadow and Kenoyer 2000 manufacturing groups do not collapse to the local side-order signature classes; every group contains a mix of local signature classes or variants.",
+  "outputs": [
+    "data/open_prototype/reports/lipi_h2218_h2239_fig4_mapping.csv"
+  ],
+  "interpretation_boundary": "Fig. 4 mapping and coarse visual-source availability only; no physical side function, numerical value, metrological reading, sign meaning, phonetic value, language identity, or translation is accepted."
+}

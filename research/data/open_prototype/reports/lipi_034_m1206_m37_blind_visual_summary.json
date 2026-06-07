@@ -1,0 +1,24 @@
+{
+  "date": "2026-05-25",
+  "packet": "lipi_034_m1206_m37_blind_visual_orientation",
+  "status": "source_visible_broad_pattern_match_with_fine_form_split_pressure",
+  "source_objects": ["M-37", "M-1206"],
+  "broad_blind_classes": {
+    "T": "triangular / standard-on-stem or pennant-like sign",
+    "L": "split leaf / fish-like sign with lower fork",
+    "R": "rake / vertical-stroke bundle sign"
+  },
+  "observed_orders": [
+    {"object": "M-37", "label": "A", "display_order": "R-L-T"},
+    {"object": "M-37", "label": "a", "display_order": "T-L-R"},
+    {"object": "M-1206", "label": "A+E", "display_order": "R-L-T"},
+    {"object": "M-1206", "label": "A", "display_order": "R-L-T"},
+    {"object": "M-1206", "label": "a", "display_order": "T-L-R"}
+  ],
+  "main_result": "M-37 and M-1206 share the same broad three-class face pattern in source images, but fine-form identity is not established.",
+  "adversarial_downgrade": "The result weakens a naive terminal-substitution interpretation because the source-visible rows look like broad pattern recurrences with fine-form variation, not a clean semantic contrast.",
+  "accepted_source_mapping_count": 0,
+  "accepted_sign_value_count": 0,
+  "accepted_translation_count": 0,
+  "next_experiment": "blind fine-form binning of source-visible 520-220-415 and 520-220-034 comparanda before any 034/415 allograph or distinction claim"
+}

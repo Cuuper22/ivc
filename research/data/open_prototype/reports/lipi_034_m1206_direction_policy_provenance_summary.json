@@ -1,0 +1,27 @@
+{
+  "date": "2026-05-26",
+  "question": "Where do the H-938 B and H-910 B R/L direction fields come from, and how much source-grade weight can they carry?",
+  "answer": "The target R/L fields are inherited from the Yajnadevam Lipi dir. column through local metadata_filtered.csv and downstream report scripts. The local component/image probes do not compute direction from source panels; they only test the consequence of the recorded direction. Current source-visible controls validate object panels and component positions, but do not independently prove the R/L policy for H-938 B or H-910 B.",
+  "recorded_direction_source": "Yajnadevam/lipi dir. column copied into data/open_prototype/lipi/metadata_filtered.csv",
+  "local_direction_computation_from_images": false,
+  "current_upstream_lipi_checked": true,
+  "current_upstream_lipi_checked_date": "2026-05-26",
+  "current_upstream_lipi_sha256": "c02e3d7bb74cf5abb11cc94f88d8d469e6acc5d6fad4b7153c02c43428f58d98",
+  "local_filtered_lipi_sha256": "b3e2a94efdf70eaa893bbbbd35fd057b53f766c82823a3efb8ee37f9365311fe",
+  "source_image_proven_direction": false,
+  "recorded_rl_allowed_use": "working_corpus_policy_for_conditional_component_assignment",
+  "recorded_rl_forbidden_use": "source-grade proof of sign identity, allography, value, function, or translation",
+  "accepted_034_415_component_match": false,
+  "accepted_allograph_status": false,
+  "accepted_value_or_translation": false,
+  "claim_status": "negative_for_direct_034_415_under_recorded_RL_unresolved_if_direction_policy_fails",
+  "next_gate": "Find source/corpus notes that define direction assignment for H-938/H-910 or independent source-visible 034/032/033/700 controls where component ownership can be checked without relying on the same R/L assumption.",
+  "artifacts": {
+    "provenance_csv": "data/open_prototype/reports/lipi_034_m1206_direction_policy_provenance.csv",
+    "direction_sensitivity_gate": "data/open_prototype/reports/lipi_034_m1206_h938_h910_direction_sensitivity_gate.csv",
+    "local_lipi_metadata": "data/open_prototype/lipi/metadata_filtered.csv",
+    "current_upstream_lipi_snapshot": "tmp/lipi_current_inscriptions_20260526.csv",
+    "h938_same_object_audit": "data/open_prototype/reports/lipi_034_m1206_h938_same_object_source_panel_audit.csv",
+    "clean_two_panel_controls": "data/open_prototype/reports/lipi_frame700_034_clean_two_panel_close_read.csv"
+  }
+}

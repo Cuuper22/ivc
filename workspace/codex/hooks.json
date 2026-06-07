@@ -1,0 +1,118 @@
+{
+  "SessionStart": [
+    {
+      "matcher": "startup",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "py -3 C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\.codex\\hooks\\ivc_hook.py SessionStart",
+          "timeout": 10
+        }
+      ]
+    },
+    {
+      "matcher": "resume",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "py -3 C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\.codex\\hooks\\ivc_hook.py SessionStart",
+          "timeout": 10
+        }
+      ]
+    },
+    {
+      "matcher": "compact",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "py -3 C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\.codex\\hooks\\ivc_hook.py SessionStart",
+          "timeout": 10
+        }
+      ]
+    }
+  ],
+  "UserPromptSubmit": [
+    {
+      "matcher": null,
+      "hooks": [
+        {
+          "type": "command",
+          "command": "py -3 C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\.codex\\hooks\\ivc_hook.py UserPromptSubmit",
+          "timeout": 10
+        }
+      ]
+    }
+  ],
+  "PreToolUse": [
+    {
+      "matcher": null,
+      "hooks": [
+        {
+          "type": "command",
+          "command": "py -3 C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\.codex\\hooks\\ivc_hook.py PreToolUse",
+          "timeout": 10
+        }
+      ]
+    }
+  ],
+  "PostToolUse": [
+    {
+      "matcher": null,
+      "hooks": [
+        {
+          "type": "command",
+          "command": "py -3 C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\.codex\\hooks\\ivc_hook.py PostToolUse",
+          "timeout": 10
+        }
+      ]
+    }
+  ],
+  "PreCompact": [
+    {
+      "matcher": null,
+      "hooks": [
+        {
+          "type": "command",
+          "command": "py -3 C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\.codex\\hooks\\ivc_hook.py PreCompact",
+          "timeout": 10
+        }
+      ]
+    }
+  ],
+  "PostCompact": [
+    {
+      "matcher": null,
+      "hooks": [
+        {
+          "type": "command",
+          "command": "py -3 C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\.codex\\hooks\\ivc_hook.py PostCompact",
+          "timeout": 10
+        }
+      ]
+    }
+  ],
+  "PermissionRequest": [
+    {
+      "matcher": null,
+      "hooks": [
+        {
+          "type": "command",
+          "command": "py -3 C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\.codex\\hooks\\ivc_hook.py PermissionRequest",
+          "timeout": 10
+        }
+      ]
+    }
+  ],
+  "Stop": [
+    {
+      "matcher": null,
+      "hooks": [
+        {
+          "type": "command",
+          "command": "py -3 C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\.codex\\hooks\\ivc_hook.py Stop",
+          "timeout": 10
+        }
+      ]
+    }
+  ]
+}

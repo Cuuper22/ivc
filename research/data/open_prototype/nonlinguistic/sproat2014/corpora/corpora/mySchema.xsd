@@ -1,0 +1,165 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!--  -->
+	<xs:element name="collection">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="1" name="entry"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+<!--a bibliographic entry and all the documents found in that source  -->
+	<xs:element name="entry">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" name="bib"/>
+				<xs:element maxOccurs="unbounded" name="document" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+<!--page number, optional description, and the docText -->
+	<xs:element name="document">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="page" type="xs:string" minOccurs="0"/>
+				<xs:element maxOccurs="1" minOccurs="0" name="description" type="xs:string"/>
+				<xs:element name="docText"/>
+			</xs:all>
+			<xs:anyAttribute/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="bib">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="author" type="xs:string"/>
+				<xs:element name="year" type="xs:string"/>
+				<xs:element name="title" type="xs:string"/>
+				<xs:element name="pubInfo" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+<!--actual text consisting of symbols, lines, circles, and/or symbolUnits  -->
+	<xs:element name="docText">
+		<xs:complexType>
+				<xs:sequence>
+					<xs:element minOccurs="0" name="description" type="xs:string"/>
+					<xs:group maxOccurs="unbounded" ref="symbolGroup"/>
+					<xs:choice/>
+				</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+<!--contains "symbolGroup" to allow just symbols or the embedding of lines, circles, and symbolUnits  -->	
+   <xs:element name="circle">
+		<xs:complexType>
+			<xs:group maxOccurs="unbounded" ref="symbolGroup"/>
+		</xs:complexType>
+	</xs:element>
+<!--symbols can be grouped into lines, circles, or symbolUnits, or stand as a lone symbol.
+    lines, circles, and symbolUnits can recursively embed other symbolGroup elements  -->	
+	<xs:group name="symbolGroup">
+		<xs:sequence>
+		    <xs:element maxOccurs="unbounded" minOccurs="0" name="line"/>
+		    <xs:element maxOccurs="unbounded" minOccurs="0" name="circle"/>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="symbol"/>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="symbolUnit"/>
+			<xs:element minOccurs="0" name="description" type="xs:string"/>
+			<xs:element minOccurs="0" name="src" type="xs:string"/>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="alternative"/>
+		</xs:sequence>
+	</xs:group>
+	<!--splits a document into "lines" Lines must be labled with integers-->
+	<xs:element name="line">
+		<xs:complexType>
+			<xs:group maxOccurs="unbounded" ref="symbolGroup"/>
+			<xs:attribute name="number" type="lineType"/>
+		</xs:complexType>
+	</xs:element>
+<!--splits a document into "sides" such as rock faces. 
+    Sides must be labeled (A,B,C,D,recto,verso) char lables are neutral in order. 
+    recto is known front side, and verso is known back side -->	
+	<xs:element name="side">
+		<xs:complexType>
+			<xs:group maxOccurs="unbounded" ref="symbolGroup"/>
+			<xs:attribute name="number" type="sideType"/>
+		</xs:complexType>
+	</xs:element>
+	
+<!-- can contain an alternative title, a title and src tag, or an entire alternative unit(circle, line, symbolUnit) -->	
+	<xs:element name="alternative">
+	  <xs:complexType mixed="true">
+		 <xs:choice>
+		     <xs:element name="alternative" type="xs:string"/>
+		     <!--group allows a symbol unit or circle, etc to have an alternative transcription -->
+			 <xs:group maxOccurs="unbounded" ref="symbolGroup"/>
+			 <xs:sequence>
+			     <xs:element name="title" maxOccurs="unbounded" type="xs:string"/>
+			     <xs:element name="src" type="xs:string"/>
+			 </xs:sequence>
+		 </xs:choice>
+	  </xs:complexType>
+	</xs:element>
+	
+<!--contains "symbolGroup" to allow just symbols or the embedding of lines, circles, and symbol units  -->	
+	<xs:element name="symbolUnit">
+		<xs:complexType>
+			<xs:group maxOccurs="unbounded" ref="symbolGroup"/>
+			<xs:anyAttribute/>
+		</xs:complexType>
+	</xs:element>
+<!--alternatives can simply be a title, or it can have title and src tags inside it-->	
+	<xs:element name="symbol">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="title" type="xs:string"/>
+				<xs:element maxOccurs="unbounded" minOccurs="0" name="alternative"/>
+				<xs:element minOccurs="0" name="description" type="xs:string"/>
+			</xs:sequence>
+			<xs:anyAttribute/>
+		</xs:complexType>
+	</xs:element>
+	<!--These are restricted values for "reliability" attribute-->	
+	<xs:simpleType name="relType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="uncertain"/>
+			<xs:enumeration value="fragment"/>
+			<xs:enumeration value="alternative transcriptions"/>
+		</xs:restriction>
+	</xs:simpleType>
+<!--numType: A,B,recto,verso,or any integer-->		
+	<xs:simpleType name="numType"> 
+		<xs:union memberTypes="sideType lineType"/>
+	</xs:simpleType>
+<!--This is the set of all integers for labeling lines for "numType"-->	
+	<xs:simpleType name="lineType">
+		 <xs:restriction base="xs:integer"/>
+	</xs:simpleType>
+<!--This is the set for labeling sides for "numType-->	
+	<xs:simpleType name="sideType">
+		 <xs:restriction base="xs:string">
+			<xs:enumeration value="A"/>
+			<xs:enumeration value="B"/>
+			<xs:enumeration value="C"/>
+			<xs:enumeration value="D"/>
+			<xs:enumeration value="recto"/>
+			<xs:enumeration value="verso"/>		
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="tType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="totemPole"/>
+			<xs:enumeration value="Vinča"/>
+			<xs:enumeration value="PictishStone"/>
+			<xs:enumeration value="Kudduru" />
+		</xs:restriction>
+	</xs:simpleType>
+<!--type,number, and reliability have simpleType restrictions-->
+	<xs:attribute name="type" type="tType"/>
+	<xs:attribute name="number" type="numType"/>
+	<xs:attribute name="origin" type="xs:string"/>
+	<xs:attribute name="reliability" type="relType"/>
+	<xs:attribute name="id" type="xs:ID"/>
+	<xs:attribute name="xref" type="xs:IDREF"/>
+	<xs:attribute name="region" type="xs:string"/>
+	<xs:attribute name="class" type="xs:string"/>
+	<xs:attribute name="group" type="xs:string"/>
+</xs:schema>

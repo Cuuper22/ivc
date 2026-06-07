@@ -1,0 +1,43 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "xslot_source_weight_consolidation",
+  "compact_parser": {
+    "core_load_bearing": [
+      "125 open branch syntax through strict M-119/M-735, but carrier/tail-conditioned",
+      "095 and 692 terminal syntax through strict M-71/M-70"
+    ],
+    "pressure_only": [
+      "705 repeated terminal syntax until M-1825 and Dholavira bind",
+      "530 one-complement linker until H-773 is token-strict",
+      "590-032 bridge until 3335.1 binds",
+      "125-820 terminal cap until Sktd-1 unwraps or a third governed row appears"
+    ],
+    "killed_or_demoted": [
+      "broad 125 sign value",
+      "820 title value",
+      "125-195 reusable tail",
+      "072/140/346/707 as meaningful X classes"
+    ]
+  },
+  "x_summary": {
+    "125": "keep_candidate_open_branch_syntax_only",
+    "140": "demote_to_wild_singleton_terminal_filler",
+    "346": "demote_to_wild_singleton_terminal_filler",
+    "530": "keep_one_complement_prediction_not_load_bearing",
+    "590": "keep_bridge_prediction_source_blocked",
+    "692": "keep_singleton_strict_terminal_edge",
+    "705": "demote_repeated_terminal_until_source_bound",
+    "707": "demote_to_wild_singleton_terminal_filler",
+    "095": "keep_terminal_syntax_semantics_wild",
+    "072": "demote_to_wild_singleton_terminal_filler"
+  },
+  "contradiction_results": {
+    "CONSOLIDATE_125_MUST_BE_OPEN_CONTINUING": "pass",
+    "CONSOLIDATE_CLOSED_FAMILY_MUST_END": "pass",
+    "CONSOLIDATE_CLOSED_FAMILY_SOURCE_WEIGHT": "partial_pass",
+    "CONSOLIDATE_530_EXACTLY_ONE_COMPLEMENT": "partial_pass",
+    "CONSOLIDATE_590_REQUIRES_032_TAIL": "partial_pass",
+    "CONSOLIDATE_SINGLETONS_DO_NOT_CARRY_MODEL": "pass_demote"
+  }
+}

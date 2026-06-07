@@ -1,0 +1,50 @@
+{
+  "date": "2026-05-29",
+  "question": "source route status of H-823/H-1845/H-237 controls for the 740-X-240-060-692 slot family",
+  "targets": [
+    "H-823",
+    "H-1845",
+    "H-237"
+  ],
+  "cisi_ocr_rows": 0,
+  "local_hit_rows": 58,
+  "decisions": [
+    {
+      "target": "H-823",
+      "x": "636",
+      "slot_text": "+740-636-240-060-692+",
+      "companion": "+700-034+",
+      "previous_status": "metadata_route_only",
+      "new_status": "exact_route_dark_after_cisi_ia_and_web_checks",
+      "working_source_weight": "0.25",
+      "cisi_ocr_hit_rows": "0",
+      "local_hit_rows": "22",
+      "decision": "H-823 keeps only the local H88-1196 route; public CISI IA OCR and checked web search did not locate an image or page route."
+    },
+    {
+      "target": "H-1845",
+      "x": "642",
+      "slot_text": "+740-642-240-060-692+",
+      "companion": "+700-034+",
+      "previous_status": "public_page_route_visible_not_local",
+      "new_status": "public_harappa_route_visible_shell_download_blocked_cisi_public_ocr_unlocated",
+      "working_source_weight": "0.75",
+      "cisi_ocr_hit_rows": "0",
+      "local_hit_rows": "18",
+      "decision": "H-1845 remains a real public-route source control via Harappa.com/H2000-4484 / 2227-15 / Figure 42.05, but no local image was acquired and no CISI IA OCR route was found."
+    },
+    {
+      "target": "H-237",
+      "x": "642",
+      "slot_text": "+740-642-240-060-692+",
+      "companion": "+700-033+",
+      "previous_status": "metadata_only_no_excavation_id",
+      "new_status": "metadata_only_no_excavation_route_ref_clone_pressure",
+      "working_source_weight": "0.05",
+      "cisi_ocr_hit_rows": "0",
+      "local_hit_rows": "18",
+      "decision": "H-237 remains metadata-only. The local current export gives ref:424.2 for its SP text, so it is clone-pressure on H-1845 rather than independent source weight."
+    }
+  ],
+  "accepted_values_or_translations": 0
+}

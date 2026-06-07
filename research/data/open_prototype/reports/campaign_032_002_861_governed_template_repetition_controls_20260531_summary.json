@@ -1,0 +1,25 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "governed_template_repetition_controls",
+  "hypothesis_tested": "Repeated governed `125` templates should survive better than ordinary repeated `002-H-tail` copy/register templates.",
+  "key_counts": {
+    "governed_002_occurrences": 813,
+    "distinct_template_4": 293,
+    "repeated_template_4_families": 47,
+    "repeated_125_template_4_families": 3,
+    "repeated_non125_template_4_families": 44,
+    "cross_site_repeated_template_4_families": 24,
+    "cross_site_repeated_125_template_4_families": 2,
+    "exact_text_dominated_repeated_template_4_families": 8,
+    "exact_text_dominated_repeated_125_template_4_families": 0,
+    "repeated_125_templates": "297-350-125-413:2;390-125-632-032:2;610-125-032-<END>:2",
+    "top_repeated_templates": "817-<END>-<END>-<END>:148;861-<END>-<END>-<END>:140;820-<END>-<END>-<END>:94;000-<END>-<END>-<END>:47;405-501-<END>-<END>:29;824-<END>-<END>-<END>:9;056-091-<END>-<END>:8;861-416-<END>-<END>:6;880-<END>-<END>-<END>:5;000-000-<END>-<END>:3;575-000-<END>-<END>:3;817-000-<END>-<END>:3"
+  },
+  "decisions": [
+    "The naive argument \"repetition means grammar\" is killed: many non-125 templates repeat, and some are obvious copy/register controls.",
+    "The broader 125 grammar survives as a candidate, not accepted: repeated 125 templates are a tiny subset of all repeats but are not exact-text dominated.",
+    "Cross-site repeated 125 templates remain the best risky signal: 610-125-032 and 297-350-125-413.",
+    "390-125-632-032 remains useful but same-site only, so it is weaker than the cross-site templates."
+  ],
+  "next_falsifier": "Source/plate or family-collapse work should attack the cross-site 610-125-032 and 297-350-125-413 rows. If they collapse as copies or non-comparable contexts, demote broader 125 grammar."
+}

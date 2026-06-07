@@ -1,0 +1,43 @@
+{
+  "date": "2026-05-29",
+  "strict_rows_scanned": 4011,
+  "rows_with_603_occurrence": 7,
+  "603_occurrences": 7,
+  "mobility_class_counts": {
+    "independent_740_603_240_060_692_lane": 3,
+    "post_002_861_terminal_tail": 3,
+    "independent_other": 1
+  },
+  "post_002_861": {
+    "rows": 3,
+    "register_cells": 3,
+    "prefix_before_002_861": "220 032:1;798 803:1;740 055:1",
+    "site_type_symbol_shape": "Mohenjo-daro|SEAL:S|Gaur|square:1;Mohenjo-daro|SEAL:S|Bull1:W|square:1;Mohenjo-daro|SEAL:R|None|rectangular:1",
+    "examples": [
+      "M-240 +520-240-220-032-002-861-603+",
+      "M-714 +740-585-017-033-705-233-798-803-002-861-603+",
+      "M-1273 +740-055-002-861-603+"
+    ]
+  },
+  "independent": {
+    "rows": 4,
+    "exact_formula_families": 2,
+    "register_cells": 2,
+    "lane_740_603_240_060_692_rows": 3,
+    "other_independent_rows": 1,
+    "site_type_symbol_shape": "Harappa|TAB:B|None|rectangular:3;Unknown|SEAL:C|Scene|circular:1",
+    "examples": [
+      "H-1138 +740-603-240-060-692+",
+      "H-1846 +740-603-240-060-692+",
+      "- +000-603-091-190+",
+      "H-1137 +740-603-240-060-692+"
+    ]
+  },
+  "decision": "603_mobility_is_live_but_not_yet_a_value",
+  "decision_basis": [
+    "Post-861 603 is terminal in three Mohenjo-daro seal rows across three register cells.",
+    "Independent 603 is dominated by one repeated Harappa TAB:B formula lane plus one weak scene/control row.",
+    "The bridge is real enough to prioritize, but not clean enough to call 603 a value or translation."
+  ],
+  "next_campaign": "source_layout_and_neighbor_ecology_for_603"
+}

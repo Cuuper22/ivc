@@ -1,0 +1,121 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "390405_collision_adversary_blocks_p086_collapse_no_values",
+  "question": "Does Mayig P086 pressure justify collapsing local 390 and 405 inside the 002-head ecology?",
+  "counts": {
+    "adjacent_002_390_frames": 15,
+    "adjacent_002_405_frames": 32,
+    "collapsed_002_390_or_405_frames": 47
+  },
+  "branch_counts_390": {
+    "125": 4,
+    "140": 1,
+    "346": 1,
+    "530": 1,
+    "590": 1,
+    "692": 1,
+    "705": 2,
+    "707": 1,
+    "072": 1,
+    "095": 2
+  },
+  "branch_counts_405": {
+    "125": 1,
+    "321": 1,
+    "372": 1,
+    "501": 29
+  },
+  "branch_counts_collapsed": {
+    "390->072": 1,
+    "390->095": 2,
+    "390->125": 4,
+    "390->140": 1,
+    "390->346": 1,
+    "390->530": 1,
+    "390->590": 1,
+    "390->692": 1,
+    "390->705": 2,
+    "390->707": 1,
+    "405->125": 1,
+    "405->321": 1,
+    "405->372": 1,
+    "405->501": 29
+  },
+  "p086_edges": [
+    {
+      "checked_date": "2026-05-31",
+      "lipi_sign": "390",
+      "mayig_sign": "P086",
+      "support_count": "25",
+      "counterexample_count": "0",
+      "top_share": "1.000000",
+      "confidence": "medium_low",
+      "accepted_for_analysis": "false",
+      "review_status": "needs_image_or_authoritative_sign_list_validation",
+      "example_witnesses": "M-12;M-17;M-32;M-35;M-38;M-48;M-51;M-70",
+      "accepted_decipherment_claim": "0"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "lipi_sign": "405",
+      "mayig_sign": "P086",
+      "support_count": "2",
+      "counterexample_count": "0",
+      "top_share": "1.000000",
+      "confidence": "very_low",
+      "accepted_for_analysis": "false",
+      "review_status": "needs_image_or_authoritative_sign_list_validation",
+      "example_witnesses": "M-34;M-172",
+      "accepted_decipherment_claim": "0"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "lipi_sign": "406",
+      "mayig_sign": "P086",
+      "support_count": "1",
+      "counterexample_count": "0",
+      "top_share": "1.000000",
+      "confidence": "very_low",
+      "accepted_for_analysis": "false",
+      "review_status": "needs_image_or_authoritative_sign_list_validation",
+      "example_witnesses": "M-170",
+      "accepted_decipherment_claim": "0"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "lipi_sign": "407",
+      "mayig_sign": "P086",
+      "support_count": "1",
+      "counterexample_count": "0",
+      "top_share": "1.000000",
+      "confidence": "very_low",
+      "accepted_for_analysis": "false",
+      "review_status": "needs_image_or_authoritative_sign_list_validation",
+      "example_witnesses": "M-171",
+      "accepted_decipherment_claim": "0"
+    }
+  ],
+  "dominant_405_cluster": {
+    "next_501_count": 29,
+    "exact_text_counts": {
+      "+520-240-002-405-501+": 29
+    },
+    "register_counts": {
+      "Harappa|TAB:B|cylindrical|Bull1:I|None": 24,
+      "Harappa|TAB:B|cylindrical|Bull1:U|None": 2,
+      "Harappa|TAB:B|cylindrical|Bull1|None": 3
+    }
+  },
+  "adversarial_decision": [
+    "Local 405 cannot be blindly collapsed into 390 from Mayig P086 pressure.",
+    "The adjacent 002-405 field is larger than the 002-390 field but is dominated by a repeated Harappa cylindrical TAB:B formula, +520-240-002-405-501+.",
+    "The Mohenjo collision rows M-34 and M-41 are useful warnings, not replacements for the 002-390-X matched lanes.",
+    "The exact 002-390-X ecology remains a live object, but any future crosswalk-normalized use of Mayig P086 must carry this 390/405 collision guard."
+  ],
+  "accepted_value_claims": 0,
+  "accepted_phonetic_claims": 0,
+  "accepted_language_identity_claims": 0,
+  "accepted_function_claims": 0,
+  "accepted_sign_meaning_claims": 0,
+  "accepted_translation_claims": 0
+}

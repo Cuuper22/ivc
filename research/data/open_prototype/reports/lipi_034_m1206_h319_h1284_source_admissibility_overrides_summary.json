@@ -1,0 +1,11 @@
+{
+  "date": "2026-05-26",
+  "purpose": "Prevent local clean/model rows from being misread as source-grade evidence in the H-319/H-1284 branch.",
+  "rows": 4,
+  "h319_status": "local_pressure_acquisition_target",
+  "h1284_status": "local_pressure_acquisition_target",
+  "h938_status": "source_grade_same_object_pressure_control_only",
+  "h939_status": "source_visible_not_upgraded",
+  "accepted_interpretive_claims": 0,
+  "file": "data/open_prototype/reports/lipi_034_m1206_h319_h1284_source_admissibility_overrides.csv"
+}

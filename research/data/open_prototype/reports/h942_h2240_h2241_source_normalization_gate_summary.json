@@ -1,0 +1,76 @@
+{
+  "question": "Can H-942, H-2240, and H-2241 be source-normalized enough to close Parpola 2019's obverse recurrence control for the H-2148 companion row?",
+  "result": "No. H-942 is source-visible but locally terminal-different at +520-220-016+ and is admissible only as a full-signband stress/control. H-2240 is an exact local +520-220-415+ recurrence but remains source-dark in the checked public layer. H-2241 is fragmentary local 415 pressure and also source-dark. The recurrence remains useful prior-work pressure, not a closed crosswalk.",
+  "status": "source_normalization_pending",
+  "prior_work_anchor": "tmp/parpola_2019_bone_rods.txt lines 102-106",
+  "local_rows": {
+    "H-2148": ["481.1 +520-220-415+", "481.2 +110+"],
+    "H-940": ["1820.1 +520-220-415+", "1820.2 +110+"],
+    "H-942": ["1822.1 +520-220-016+", "1822.2 +033-700+"],
+    "H-2240": ["816.1 +520-220-415+", "816.2 +869-575+"],
+    "H-2241": ["639.1 ]415-240+", "639.2 ]000+"]
+  },
+  "source_status": {
+    "H-942": "source_visible_full_signband_control_side_mapping_caution",
+    "H-2240": "source_dark_in_checked_public_layer_exact_local_recurrence",
+    "H-2241": "source_dark_in_checked_public_layer_fragmentary_local_pressure"
+  },
+  "h942_crops": [
+    {
+      "path": "tmp/m1206_singleton_controls/derived/h942/H942_A_panel_labeled_from_cisi_pakistan_n374.png",
+      "width": 660,
+      "height": 440,
+      "sha256": "EF163DD3223EAFD0CAD47D5AEED8B660F197DCD247CFDF6EA037D14B7792EF01"
+    },
+    {
+      "path": "tmp/m1206_singleton_controls/derived/h942/H942_A_signband_from_cisi_pakistan_n374.png",
+      "width": 520,
+      "height": 190,
+      "sha256": "1A093A16F8E1D641736896512AB2F193C0E63B58205C6D48F3D21D52B8C37543"
+    },
+    {
+      "path": "tmp/m1206_singleton_controls/derived/h942/H942_B_panel_labeled_from_cisi_pakistan_n374.png",
+      "width": 610,
+      "height": 440,
+      "sha256": "D4867DDA67CCD4F5604B8C1055658DBAE07508A15F67B0B3FBF82CDF3192FE78"
+    },
+    {
+      "path": "tmp/m1206_singleton_controls/derived/h942/H942_B_signband_from_cisi_pakistan_n374.png",
+      "width": 440,
+      "height": 180,
+      "sha256": "732989B7EC1C739B78E3BE847B90FB1EDF65BEF787F7E0C46B125EDF4F41B7F5"
+    }
+  ],
+  "decisions": {
+    "h942": "source_visible_full_signband_stress_control_not_terminal_identity",
+    "h2240": "exact_local_recurrence_but_source_acquisition_required",
+    "h2241": "fragmentary_pressure_only_source_acquisition_required",
+    "local_415_equals_016": "unaccepted",
+    "translation": "unaccepted"
+  },
+  "acquisition_actions": [
+    {
+      "message_id": "19e64843a928358d",
+      "thread_id": "19e6211289c772f3",
+      "to": "andreas.fuls@tu-berlin.de",
+      "cc": "harappa@gmail.com",
+      "subject": "Re: connect",
+      "status": "sent_targeted_h2240_h2241_source_normalization_request"
+    }
+  ],
+  "accepted_claims": {
+    "h942_source_visible": true,
+    "h942_side_mapping_is_object_level_inference": true,
+    "h942_terminal_isolated_016_evidence": false,
+    "h2240_source_visible": false,
+    "h2241_source_visible": false,
+    "h2240_exact_local_520_220_415_recurrence": true,
+    "h2241_fragmentary_415_pressure": true,
+    "local_415_equals_local_016": false,
+    "local_415_equals_parpola_final_sign_189": false,
+    "local_016_equals_parpola_final_sign_189": false,
+    "phonetic_value": false,
+    "translation": false
+  },
+  "next_gate": "Await or independently acquire H-2240 / H96-3177 Figure 20.03 and H-2241 / H95-2425 Figure 29.08 source panels, side labels, and source transcriptions. Use H-942 only as a source-visible full-signband stress/control unless a separate terminal-level recut gate is run."
+}

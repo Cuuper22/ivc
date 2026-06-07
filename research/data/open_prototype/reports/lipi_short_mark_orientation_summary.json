@@ -1,0 +1,84 @@
+{
+  "source": "Harappa TAB:B/TAB:I short-mark orientation audit",
+  "checked_at": "2026-05-24",
+  "input": "data/open_prototype/reports/lipi_multiside_mark_rows.csv",
+  "target_short_mark_rows": 491,
+  "two_token_700_companion_rows": 368,
+  "core_032_033_034_rows": 353,
+  "target_type_counts": {
+    "TAB:B": 222,
+    "TAB:I": 269
+  },
+  "orientation_class_counts": {
+    "non_700_short_mark": 123,
+    "two_token_700_companion": 368
+  },
+  "two_token_order_counts": {
+    "700_first": 313,
+    "700_last": 55
+  },
+  "core_companion_order_counts": {
+    "032": {
+      "rows": 102,
+      "order_counts": {
+        "700_first": 85,
+        "700_last": 17
+      },
+      "type_counts": {
+        "TAB:B": 63,
+        "TAB:I": 39
+      },
+      "side_counts": {
+        "1": 44,
+        "2": 58
+      }
+    },
+    "033": {
+      "rows": 137,
+      "order_counts": {
+        "700_first": 113,
+        "700_last": 24
+      },
+      "type_counts": {
+        "TAB:B": 73,
+        "TAB:I": 64
+      },
+      "side_counts": {
+        "1": 51,
+        "2": 85,
+        "3": 1
+      }
+    },
+    "034": {
+      "rows": 114,
+      "order_counts": {
+        "700_first": 101,
+        "700_last": 13
+      },
+      "type_counts": {
+        "TAB:B": 42,
+        "TAB:I": 72
+      },
+      "side_counts": {
+        "1": 63,
+        "2": 50,
+        "3": 1
+      }
+    }
+  },
+  "corrected_orientation_flags": [
+    "orientation_balance_binomial_700_first_vs_last:all_target_rows:032",
+    "orientation_balance_binomial_700_first_vs_last:all_target_rows:033",
+    "orientation_balance_binomial_700_first_vs_last:all_target_rows:034",
+    "type_orientation_assoc_fisher_TAB_I_vs_TAB_B:TAB:I_vs_TAB:B:032",
+    "type_orientation_assoc_fisher_TAB_I_vs_TAB_B:TAB:I_vs_TAB:B:033"
+  ],
+  "key_observation": "In the Harappa TAB:B/TAB:I short-mark queue, two-token 700 companion marks are strongly 700-first overall, but reversed 033/032/034 forms are present. Orientation is therefore a validation variable, not a value or reading.",
+  "interpretation_boundary": "This is a local side-mark orientation audit only. It accepts no physical side function, numerical value, metrological reading, sign meaning, phonetic value, language identity, or translation.",
+  "outputs": [
+    "data/open_prototype/reports/lipi_short_mark_orientation_rows.csv",
+    "data/open_prototype/reports/lipi_short_mark_orientation_companions.csv",
+    "data/open_prototype/reports/lipi_short_mark_orientation_tests.csv",
+    "data/open_prototype/reports/lipi_short_mark_orientation_summary.json"
+  ]
+}

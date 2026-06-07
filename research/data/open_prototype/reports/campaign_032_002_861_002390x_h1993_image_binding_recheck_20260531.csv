@@ -1,0 +1,11 @@
+check,target,evidence,result,decision
+local_target,H-1993 / 744.2,"metadata_filtered row has object H-1993, excavation hook H96-2769Figure 17.07, dimensions 29.2 x 10.7 x 6.2, text +740-000-220-004-002-390-095+","valid route target","keep as repeated 095 acquisition target only"
+harappa_page,CISI Volume 3 Part 1,"Harappa public page identifies Kenoyer/Meadow 2010 essay as part of Corpus of Indus Seals and Inscriptions Volume 3 Part 1","provenance route tightened","seek full CISI 3.1 rather than treating public essay as plate evidence"
+cisi_toc,HARP H-1521 to H-2583,"public PDF table of contents lists HARP excavations H-1521 to H-2583 on pages 207-360 and Harappa basic data on pages 423-441","plate/data range identified but not acquired","H-1993 should be hunted in full volume pages, not counted now"
+public_pdf_excerpt,Kenoyer-Meadow-2010-HARP.pdf,"public Harappa PDF accessible locally/web is 17 pages and contains essay/front matter, not the HARP plate/data pages","no object image in excerpt","no source-image promotion"
+harp_photo_database,HARP image provenance,"essay states HARP object photos were cataloged for the volume and many color images scanned into a photo database","image existence/provenance pressure only","acquisition lead, not evidence"
+public_search,H-1993/H96-2769/ICIT744 exact terms,"fresh web searches for H96-2769, H-1993, ICIT 744, Figure 17.07, FTrench 37, and CISI 3 range terms","no usable artifact image or caption recovered","keep source status blocked"
+local_text_search,downloaded Harappa/Kenoyer text dumps,"Select-String over local Kenoyer/Meadow and Harappa text candidates for H96-2769, H-1993, H1993, ICIT 744, Figure 17.07, 17.07, FTrench 37","no target match","no local text bridge"
+local_image_search,local image filenames,"targeted filename search for H-1993, H1993, H96-2769, ICIT 744, Figure 17.07; unrelated numeric Brahmi filename hits ignored","no H-1993 image asset","no local image bridge"
+false_bridge_guard,Figure 17.07,"local H-1803 rows 562.1 and 562.2 also carry H94-2193Figure 17.07","figure label is not unique","future route must bind object/excavation id directly"
+decision,H-1993 / ICIT 744,"combined public route tightening, failed public/local image checks, and false-bridge guard","h1993_cisi3_plate_range_identified_no_image_binding","do not count H-1993 as strict source evidence"

@@ -1,0 +1,8 @@
+checked_date,role,rows,strict_countable,downweighted_pressure,route_or_unbound,excluded,structural_only,source_buckets,demoted_tiers,decision
+2026-05-31,095_terminal_booster,2,1,0,1,0,0,route_only:1;strict_countable:1,route_pressure_only:1;wild_shot_singleton_source_visible:1,keep as wild shot singleton source-visible; do not promote
+2026-05-31,125_open_linker,4,2,1,0,1,0,strict_countable:2;downweighted_pressure:1;excluded_visual:1,candidate_source_visible:2;candidate_pressure_only:1;excluded_from_strict_counts:1,keep as wounded candidate; strict support exists but formula/site risk remains
+2026-05-31,530_open_extender,1,0,0,0,0,1,structural_only:1,candidate_structural_only:1,keep as open-lane comparator; source-dark for this campaign
+2026-05-31,590_open_extender_unbound,1,0,0,1,0,0,unbound_private:1,wild_shot_unbound_private:1,demote to adjudication hook until 3335.1 source binds
+2026-05-31,692_terminal_comparator,1,1,0,0,0,0,strict_countable:1,strict_comparator_not_classifier:1,"keep as strict terminal comparator, not classifier"
+2026-05-31,705_terminal_booster,2,0,0,2,0,0,source_blocked:1;unbound_candidate:1,wild_shot_source_blocked:2,keep as structural wild shot only; source binding is destructive test
+2026-05-31,singleton_terminal_payload,4,0,0,0,0,4,structural_only:4,wild_shot_structural_singleton:4,keep as singleton bait only

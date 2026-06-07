@@ -1,0 +1,17 @@
+checked_date,set_name,hierarchy,rows,correct,wrong,accuracy,step_counts
+2026-05-31,raw,grammar_pair_x_scope,316,234,82,0.740506,x:87;global:41;scope:115;pair:73
+2026-05-31,raw,scope_first_null,316,227,89,0.718354,x:44;global:42;scope:151;scope_x:79
+2026-05-31,raw,x_then_scope,316,232,84,0.734177,x:151;global:42;scope:123
+2026-05-31,raw,scope_only_null,316,216,100,0.683544,global:86;scope:230
+2026-05-31,collapse_scope_pair_tail,grammar_pair_x_scope,270,189,81,0.700000,x:84;global:46;scope:119;pair:21
+2026-05-31,collapse_scope_pair_tail,scope_first_null,270,183,87,0.677778,x:38;global:46;scope:146;scope_x:40
+2026-05-31,collapse_scope_pair_tail,x_then_scope,270,188,82,0.696296,x:102;global:46;scope:122
+2026-05-31,collapse_scope_pair_tail,scope_only_null,270,172,98,0.637037,global:84;scope:186
+2026-05-31,collapse_pair_tail,grammar_pair_x_scope,243,160,83,0.658436,x:71;global:43;scope:117;pair:12
+2026-05-31,collapse_pair_tail,scope_first_null,243,156,87,0.641975,x:25;global:44;scope:138;scope_x:36
+2026-05-31,collapse_pair_tail,x_then_scope,243,158,85,0.650206,x:80;global:44;scope:119
+2026-05-31,collapse_pair_tail,scope_only_null,243,148,95,0.609053,global:69;scope:174
+2026-05-31,collapse_pair,grammar_pair_x_scope,231,148,83,0.640693,x:73;global:41;scope:117
+2026-05-31,collapse_pair,scope_first_null,231,149,82,0.645022,x:24;global:41;scope:136;scope_x:30
+2026-05-31,collapse_pair,x_then_scope,231,148,83,0.640693,x:73;global:41;scope:117
+2026-05-31,collapse_pair,scope_only_null,231,147,84,0.636364,global:65;scope:166

@@ -1,0 +1,17 @@
+{
+  "date": "2026-05-26",
+  "question": "Does the H-938/H-910 mirror-order pair decide whether local 034 is the vertical/rake 415-like component or the loop/leaf component?",
+  "answer": "It decides only conditionally. Under the recorded local R/L direction on both companion sides, 034 maps to the loop/leaf component in H-938 B and H-910 B, so direct 034=415 component identity is rejected. If the recorded direction policy fails and both sides must be forced L/R, the assignment flips and 034 maps to the vertical/rake component. That counterfactual is not accepted without a source/transcription-policy reason.",
+  "accepted_direction_policy": "recorded_local_RL_used_as_current_working_policy_only",
+  "accepted_034_415_component_match": false,
+  "accepted_allograph_status": false,
+  "accepted_value_or_translation": false,
+  "claim_status": "conditional_negative_under_recorded_direction_unresolved_if_direction_policy_fails",
+  "next_gate": "Validate the recorded R/L policy for H-938 B and H-910 B from source notes, corpus transcription convention, or independent source-visible 034/032/033/700 controls before turning this into a global sign-identity decision.",
+  "artifacts": {
+    "comparison_sheet": "tmp/h910_component_probe/h938_h910_component_order_comparison.png",
+    "gate_csv": "data/open_prototype/reports/lipi_034_m1206_h938_h910_direction_sensitivity_gate.csv",
+    "h910_component_probe": "docs/lipi_034_m1206_h910_component_probe.md",
+    "h938_component_probe_adjudication": "data/open_prototype/reports/lipi_034_m1206_h938_b_component_probe_adjudication.csv"
+  }
+}

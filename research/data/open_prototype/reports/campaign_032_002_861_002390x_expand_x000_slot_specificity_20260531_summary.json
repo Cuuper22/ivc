@@ -1,0 +1,26 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "x000_slot_specificity",
+  "occurrences": 1324,
+  "x_slot_occurrences": 27,
+  "x_slot_terminal": 24,
+  "non_x_occurrences": 1297,
+  "non_x_terminal": 478,
+  "frame_proximal_occurrences": 91,
+  "frame_proximal_terminal": 75,
+  "prefix_before_frame_occurrences": 147,
+  "prefix_before_frame_terminal": 0,
+  "terminal_gap": 0.52,
+  "role_counts": "no_002_context:1086;prefix_before_002_frame:147;head_slot_after_002:54;x_slot_after_002_head:27;post_frame_non_x_payload:10",
+  "bets": [
+    {
+      "bet_id": "EXPAND_X000_SLOT_SPECIFIC_ZERO_NOT_GENERIC_BLANK",
+      "tier": "candidate"
+    },
+    {
+      "bet_id": "EXPAND_X000_FRAME_PROXIMAL_NULL_OPERATOR",
+      "tier": "candidate"
+    }
+  ]
+}

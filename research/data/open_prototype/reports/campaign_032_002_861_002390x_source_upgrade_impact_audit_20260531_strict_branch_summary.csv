@@ -1,0 +1,42 @@
+scenario,branch_after_390,strict_rows,terminal_classes,prevs,objects
+baseline_current_strict_core,095,1,terminal:1,142:1,M-71:142->095-><END>:terminal
+baseline_current_strict_core,125,2,continuing:2,235:1; 484:1,M-119:484->125->632 032 900 563:continuing; M-735:235->125->195:continuing
+baseline_current_strict_core,692,1,terminal:1,032:1,M-70:032->692-><END>:terminal
+upgrade_h1993_only,095,2,terminal:2,004:1; 142:1,H-1993:004->095-><END>:terminal; M-71:142->095-><END>:terminal
+upgrade_h1993_only,125,2,continuing:2,235:1; 484:1,M-119:484->125->632 032 900 563:continuing; M-735:235->125->195:continuing
+upgrade_h1993_only,692,1,terminal:1,032:1,M-70:032->692-><END>:terminal
+upgrade_sktd1_only,095,1,terminal:1,142:1,M-71:142->095-><END>:terminal
+upgrade_sktd1_only,125,3,continuing:3,004:1; 235:1; 484:1,M-119:484->125->632 032 900 563:continuing; M-735:235->125->195:continuing; Sktd-1:004->125->820:continuing
+upgrade_sktd1_only,692,1,terminal:1,032:1,M-70:032->692-><END>:terminal
+upgrade_h1993_and_sktd1,095,2,terminal:2,004:1; 142:1,H-1993:004->095-><END>:terminal; M-71:142->095-><END>:terminal
+upgrade_h1993_and_sktd1,125,3,continuing:3,004:1; 235:1; 484:1,M-119:484->125->632 032 900 563:continuing; M-735:235->125->195:continuing; Sktd-1:004->125->820:continuing
+upgrade_h1993_and_sktd1,692,1,terminal:1,032:1,M-70:032->692-><END>:terminal
+upgrade_3335_1,095,1,terminal:1,142:1,M-71:142->095-><END>:terminal
+upgrade_3335_1,125,2,continuing:2,235:1; 484:1,M-119:484->125->632 032 900 563:continuing; M-735:235->125->195:continuing
+upgrade_3335_1,590,1,continuing:1,032:1,-:3335.1:032->590->032:continuing
+upgrade_3335_1,692,1,terminal:1,032:1,M-70:032->692-><END>:terminal
+upgrade_m1825_only,095,1,terminal:1,142:1,M-71:142->095-><END>:terminal
+upgrade_m1825_only,125,2,continuing:2,235:1; 484:1,M-119:484->125->632 032 900 563:continuing; M-735:235->125->195:continuing
+upgrade_m1825_only,692,1,terminal:1,032:1,M-70:032->692-><END>:terminal
+upgrade_m1825_only,705,1,terminal:1,031:1,M-1825:031->705-><END>:terminal
+upgrade_dholavira_4237_1_only,095,1,terminal:1,142:1,M-71:142->095-><END>:terminal
+upgrade_dholavira_4237_1_only,125,2,continuing:2,235:1; 484:1,M-119:484->125->632 032 900 563:continuing; M-735:235->125->195:continuing
+upgrade_dholavira_4237_1_only,692,1,terminal:1,032:1,M-70:032->692-><END>:terminal
+upgrade_dholavira_4237_1_only,705,1,terminal:1,388:1,-:4237.1:388->705-><END>:terminal
+upgrade_m1825_and_dholavira_705_pair,095,1,terminal:1,142:1,M-71:142->095-><END>:terminal
+upgrade_m1825_and_dholavira_705_pair,125,2,continuing:2,235:1; 484:1,M-119:484->125->632 032 900 563:continuing; M-735:235->125->195:continuing
+upgrade_m1825_and_dholavira_705_pair,692,1,terminal:1,032:1,M-70:032->692-><END>:terminal
+upgrade_m1825_and_dholavira_705_pair,705,2,terminal:2,031:1; 388:1,M-1825:031->705-><END>:terminal; -:4237.1:388->705-><END>:terminal
+upgrade_m38,095,1,terminal:1,142:1,M-71:142->095-><END>:terminal
+upgrade_m38,125,3,continuing:3,235:2; 484:1,M-38:235->125->632 032:continuing; M-119:484->125->632 032 900 563:continuing; M-735:235->125->195:continuing
+upgrade_m38,692,1,terminal:1,032:1,M-70:032->692-><END>:terminal
+upgrade_h773,095,1,terminal:1,142:1,M-71:142->095-><END>:terminal
+upgrade_h773,125,2,continuing:2,235:1; 484:1,M-119:484->125->632 032 900 563:continuing; M-735:235->125->195:continuing
+upgrade_h773,530,1,continuing:1,803:1,H-773:803->530->741:continuing
+upgrade_h773,692,1,terminal:1,032:1,M-70:032->692-><END>:terminal
+upgrade_all_named_blockers,095,2,terminal:2,004:1; 142:1,H-1993:004->095-><END>:terminal; M-71:142->095-><END>:terminal
+upgrade_all_named_blockers,125,4,continuing:4,235:2; 004:1; 484:1,M-38:235->125->632 032:continuing; M-119:484->125->632 032 900 563:continuing; M-735:235->125->195:continuing; Sktd-1:004->125->820:continuing
+upgrade_all_named_blockers,530,1,continuing:1,803:1,H-773:803->530->741:continuing
+upgrade_all_named_blockers,590,1,continuing:1,032:1,-:3335.1:032->590->032:continuing
+upgrade_all_named_blockers,692,1,terminal:1,032:1,M-70:032->692-><END>:terminal
+upgrade_all_named_blockers,705,2,terminal:2,031:1; 388:1,M-1825:031->705-><END>:terminal; -:4237.1:388->705-><END>:terminal

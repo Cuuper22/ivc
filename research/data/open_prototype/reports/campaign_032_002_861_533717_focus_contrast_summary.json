@@ -1,0 +1,45 @@
+{
+  "date": "2026-05-29",
+  "focus_rows": 7,
+  "target_rows": [
+    "M-376",
+    "M-391"
+  ],
+  "control_rows": [
+    "M-1954",
+    "M-355",
+    "M-1267",
+    "M-1273",
+    "M-1973"
+  ],
+  "tail_class_counts": {
+    "bare": 3,
+    "long_alt_tail": 1,
+    "target_533_717": 2,
+    "short_alt_603": 1
+  },
+  "shape_counts_by_tail_class": {
+    "bare": "rectangular:3",
+    "long_alt_tail": "cuboid-convex:1",
+    "short_alt_603": "rectangular:1",
+    "target_533_717": "cuboid-convex:2"
+  },
+  "length_counts_by_tail_class": {
+    "bare": "7:2;12:1",
+    "long_alt_tail": "13:1",
+    "short_alt_603": "5:1",
+    "target_533_717": "7:1;12:1"
+  },
+  "hostile_controls": [
+    "M-355 shares cuboid-convex no-icon SEAL:R status with the target rows but takes long tail 360-520-919-140.",
+    "M-1267 shares length 7 with M-376 but is bare after 002-861.",
+    "M-1954 shares length 12 with M-391 but is bare after 002-861 and remains source-pending.",
+    "M-1273 shares the same broad register but takes 603."
+  ],
+  "decision": "metadata_features_do_not_separate_533_717_cleanly",
+  "next_decision_question": "Use source layout and source-family independence to decide whether M-376/M-391 form a real subclass or a tiny copy/source-family cell.",
+  "outputs": {
+    "focus_rows_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_533717_focus_contrast_rows.csv",
+    "features_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_533717_focus_contrast_features.csv"
+  }
+}

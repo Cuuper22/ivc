@@ -1,0 +1,3 @@
+checked_date,test,result,effect_on_4148,effect_on_x000,decision
+2026-05-31,000033_boundary_pressure,15/24_000033_pairs_terminal,softens_033_as_boundary_candidate,4148_damage_softened_but_not_removed_because_267_000_033_is_singleton,"000-033 has boundary pressure, but the exact 267-000-033 frame is singleton and source-unbound."
+2026-05-31,4148_specific_context,prev=267; next_after_pair=<END>; pair_at_end=true,local_pair_is_terminal_which_softens_payload_reading,source still decides whether terminal 033 is a boundary sign or meaningful governed payload,Do not kill X=000 from 4148 until a source image proves continuous governed payload.

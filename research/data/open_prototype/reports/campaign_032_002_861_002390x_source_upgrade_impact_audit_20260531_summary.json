@@ -1,0 +1,218 @@
+{
+  "run_date": "2026-05-31",
+  "input": "data/open_prototype/reports/campaign_032_002_861_002390x_branch_sign_ecology_20260531_002390_frames.csv",
+  "scenario_count": 11,
+  "scenarios": [
+    {
+      "scenario": "baseline_current_strict_core",
+      "upgraded_ids": "",
+      "purpose": "current strict source-visible state",
+      "strict_rows": 4,
+      "strict_objects": "M-70 M-71 M-119 M-735",
+      "strict_matched_prev_split_count": 0,
+      "strict_matched_prev_splits": "",
+      "strict_705_terminal_rows": 0,
+      "strict_705_terminal_objects": "",
+      "strict_non125_continuing_rows": 0,
+      "strict_non125_continuing_objects": "",
+      "strict_125_continuing_rows": 2,
+      "unlocks": "no_new_decisive_gate"
+    },
+    {
+      "scenario": "upgrade_h1993_only",
+      "upgraded_ids": "744.2",
+      "purpose": "test whether H-1993 image binding alone unlocks the 004 split",
+      "strict_rows": 5,
+      "strict_objects": "H-1993 M-70 M-71 M-119 M-735",
+      "strict_matched_prev_split_count": 0,
+      "strict_matched_prev_splits": "",
+      "strict_705_terminal_rows": 0,
+      "strict_705_terminal_objects": "",
+      "strict_non125_continuing_rows": 0,
+      "strict_non125_continuing_objects": "",
+      "strict_125_continuing_rows": 2,
+      "unlocks": "no_new_decisive_gate"
+    },
+    {
+      "scenario": "upgrade_sktd1_only",
+      "upgraded_ids": "3875.1",
+      "purpose": "test whether Sktd-1 strict token/order alone unlocks the 004 split",
+      "strict_rows": 5,
+      "strict_objects": "M-70 M-71 M-119 M-735 Sktd-1",
+      "strict_matched_prev_split_count": 0,
+      "strict_matched_prev_splits": "",
+      "strict_705_terminal_rows": 0,
+      "strict_705_terminal_objects": "",
+      "strict_non125_continuing_rows": 0,
+      "strict_non125_continuing_objects": "",
+      "strict_125_continuing_rows": 3,
+      "unlocks": "expanded_strict_125_continuation_set"
+    },
+    {
+      "scenario": "upgrade_h1993_and_sktd1",
+      "upgraded_ids": "744.2 3875.1",
+      "purpose": "test full 004 strict split",
+      "strict_rows": 6,
+      "strict_objects": "H-1993 M-70 M-71 M-119 M-735 Sktd-1",
+      "strict_matched_prev_split_count": 1,
+      "strict_matched_prev_splits": "004:095:1; 125:1",
+      "strict_705_terminal_rows": 0,
+      "strict_705_terminal_objects": "",
+      "strict_non125_continuing_rows": 0,
+      "strict_non125_continuing_objects": "",
+      "strict_125_continuing_rows": 3,
+      "unlocks": "strict_matched_prev_split:004; expanded_strict_125_continuation_set"
+    },
+    {
+      "scenario": "upgrade_3335_1",
+      "upgraded_ids": "3335.1",
+      "purpose": "test whether the 032 split unlocks because M-70 is already strict",
+      "strict_rows": 5,
+      "strict_objects": "M-70 M-71 M-119 M-735 -:3335.1",
+      "strict_matched_prev_split_count": 1,
+      "strict_matched_prev_splits": "032:590:1; 692:1",
+      "strict_705_terminal_rows": 0,
+      "strict_705_terminal_objects": "",
+      "strict_non125_continuing_rows": 1,
+      "strict_non125_continuing_objects": "-:3335.1:590",
+      "strict_125_continuing_rows": 2,
+      "unlocks": "strict_matched_prev_split:032; strict_non125_continuing:-:3335.1"
+    },
+    {
+      "scenario": "upgrade_m1825_only",
+      "upgraded_ids": "3992.1",
+      "purpose": "test one strict 705 terminal witness",
+      "strict_rows": 5,
+      "strict_objects": "M-70 M-71 M-119 M-735 M-1825",
+      "strict_matched_prev_split_count": 0,
+      "strict_matched_prev_splits": "",
+      "strict_705_terminal_rows": 1,
+      "strict_705_terminal_objects": "M-1825",
+      "strict_non125_continuing_rows": 0,
+      "strict_non125_continuing_objects": "",
+      "strict_125_continuing_rows": 2,
+      "unlocks": "single_strict_705_terminal"
+    },
+    {
+      "scenario": "upgrade_dholavira_4237_1_only",
+      "upgraded_ids": "4237.1",
+      "purpose": "test one strict Dholavira 705 terminal witness",
+      "strict_rows": 5,
+      "strict_objects": "M-70 M-71 M-119 M-735 -:4237.1",
+      "strict_matched_prev_split_count": 0,
+      "strict_matched_prev_splits": "",
+      "strict_705_terminal_rows": 1,
+      "strict_705_terminal_objects": "-:4237.1",
+      "strict_non125_continuing_rows": 0,
+      "strict_non125_continuing_objects": "",
+      "strict_125_continuing_rows": 2,
+      "unlocks": "single_strict_705_terminal"
+    },
+    {
+      "scenario": "upgrade_m1825_and_dholavira_705_pair",
+      "upgraded_ids": "3992.1 4237.1",
+      "purpose": "test repeated strict 705 terminal ecology",
+      "strict_rows": 6,
+      "strict_objects": "M-70 M-71 M-119 M-735 M-1825 -:4237.1",
+      "strict_matched_prev_split_count": 0,
+      "strict_matched_prev_splits": "",
+      "strict_705_terminal_rows": 2,
+      "strict_705_terminal_objects": "M-1825 -:4237.1",
+      "strict_non125_continuing_rows": 0,
+      "strict_non125_continuing_objects": "",
+      "strict_125_continuing_rows": 2,
+      "unlocks": "repeated_strict_705_terminal_pair"
+    },
+    {
+      "scenario": "upgrade_m38",
+      "upgraded_ids": "2566.1",
+      "purpose": "test 235 same-branch tail split with both M-38 and M-735 strict",
+      "strict_rows": 5,
+      "strict_objects": "M-38 M-70 M-71 M-119 M-735",
+      "strict_matched_prev_split_count": 0,
+      "strict_matched_prev_splits": "",
+      "strict_705_terminal_rows": 0,
+      "strict_705_terminal_objects": "",
+      "strict_non125_continuing_rows": 0,
+      "strict_non125_continuing_objects": "",
+      "strict_125_continuing_rows": 3,
+      "unlocks": "expanded_strict_125_continuation_set"
+    },
+    {
+      "scenario": "upgrade_h773",
+      "upgraded_ids": "1665.1",
+      "purpose": "test strict non-125 continuing exception",
+      "strict_rows": 5,
+      "strict_objects": "H-773 M-70 M-71 M-119 M-735",
+      "strict_matched_prev_split_count": 0,
+      "strict_matched_prev_splits": "",
+      "strict_705_terminal_rows": 0,
+      "strict_705_terminal_objects": "",
+      "strict_non125_continuing_rows": 1,
+      "strict_non125_continuing_objects": "H-773:530",
+      "strict_125_continuing_rows": 2,
+      "unlocks": "strict_non125_continuing:H-773"
+    },
+    {
+      "scenario": "upgrade_all_named_blockers",
+      "upgraded_ids": "744.2 3875.1 3335.1 3992.1 4237.1 2566.1 1665.1",
+      "purpose": "upper-bound audit if all currently named blockers became strict",
+      "strict_rows": 11,
+      "strict_objects": "H-1993 H-773 M-38 M-70 M-71 M-119 M-735 -:3335.1 Sktd-1 M-1825 -:4237.1",
+      "strict_matched_prev_split_count": 2,
+      "strict_matched_prev_splits": "004:095:1; 125:1 | 032:590:1; 692:1",
+      "strict_705_terminal_rows": 2,
+      "strict_705_terminal_objects": "M-1825 -:4237.1",
+      "strict_non125_continuing_rows": 2,
+      "strict_non125_continuing_objects": "H-773:530 -:3335.1:590",
+      "strict_125_continuing_rows": 4,
+      "unlocks": "strict_matched_prev_split:004/032; repeated_strict_705_terminal_pair; strict_non125_continuing:H-773/-:3335.1; expanded_strict_125_continuation_set"
+    }
+  ],
+  "decisions": [
+    {
+      "decision": "h1993_alone_does_not_unlock_strict_004_split",
+      "evidence": "no_new_decisive_gate",
+      "result": "strict matched predecessor splits: 0",
+      "consequence": "H-1993 binding is necessary for the 004 lane but insufficient unless Sktd-1 becomes strict or another strict 004->002-390->125 witness appears"
+    },
+    {
+      "decision": "004_lane_needs_dual_strict_sides",
+      "evidence": "004:095:1; 125:1",
+      "result": "strict_matched_prev_split:004; expanded_strict_125_continuation_set",
+      "consequence": "the 004 lane can unlock only as a dual-side strict upgrade under the current local inventory"
+    },
+    {
+      "decision": "3335_1_is_highest_single_object_matched_gate_unlock",
+      "evidence": "032:590:1; 692:1",
+      "result": "strict_matched_prev_split:032; strict_non125_continuing:-:3335.1",
+      "consequence": "if 3335.1 were source-bound and its sequence valid, it would pair with already-strict M-70 to unlock the 032 matched-predecessor gate, though formula-family pressure would still need collapse"
+    },
+    {
+      "decision": "dual_705_upgrade_strengthens_ecology_not_matched_lane",
+      "evidence": "M-1825 -:4237.1",
+      "result": "repeated_strict_705_terminal_pair",
+      "consequence": "Dholavira 4237.1 plus M-1825 would create repeated strict 705 terminal ecology, but not a matched-predecessor branch split"
+    },
+    {
+      "decision": "h773_upgrade_would_attack_closure_polarity",
+      "evidence": "H-773:530",
+      "result": "strict_non125_continuing:H-773",
+      "consequence": "a strict H-773 target-side reading would create a strict non-125 continuing exception, useful as an adversarial polarity test rather than a matched-lane proof"
+    },
+    {
+      "decision": "m38_upgrade_is_tail_subframe_not_branch_split",
+      "evidence": "",
+      "result": "expanded_strict_125_continuation_set",
+      "consequence": "M-38 becoming strict would expand 125 continuation and the 235 same-branch tail split, but it would not create branch alternation"
+    }
+  ],
+  "status": "source_upgrade_impact_audit_3335_single_unlock_004_dual_upgrade_705_ecology_no_values",
+  "outputs": {
+    "scenario_summary": "data/open_prototype/reports/campaign_032_002_861_002390x_source_upgrade_impact_audit_20260531_scenario_summary.csv",
+    "strict_prev_groups": "data/open_prototype/reports/campaign_032_002_861_002390x_source_upgrade_impact_audit_20260531_strict_prev_groups.csv",
+    "strict_branch_summary": "data/open_prototype/reports/campaign_032_002_861_002390x_source_upgrade_impact_audit_20260531_strict_branch_summary.csv",
+    "decisions": "data/open_prototype/reports/campaign_032_002_861_002390x_source_upgrade_impact_audit_20260531_decisions.csv",
+    "summary": "data/open_prototype/reports/campaign_032_002_861_002390x_source_upgrade_impact_audit_20260531_summary.json"
+  }
+}

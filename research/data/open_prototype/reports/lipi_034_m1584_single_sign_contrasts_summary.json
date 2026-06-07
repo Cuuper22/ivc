@@ -1,0 +1,149 @@
+{
+  "checked_date": "2026-05-25",
+  "target": "M-1584",
+  "exact_plus034_rows": 11,
+  "contrast_rows": 23,
+  "key_counts": {
+    "total_rows": 5679,
+    "rows_containing_034": 182,
+    "exact_plus034": 11,
+    "exact_plus034_by_site": {
+      "Derawar Ther": 1,
+      "Harappa": 8,
+      "Mohenjo-daro": 1,
+      "Nausharo": 1
+    },
+    "exact_plus034_by_region": {
+      "Inter-Riverine": 9,
+      "Lower Indus": 2
+    },
+    "exact_plus034_by_type": {
+      "POT:T:g": 9,
+      "TAB:B": 2
+    },
+    "exact_plus034_by_material": {
+      "Clay": 9,
+      "Faience": 2
+    },
+    "single_neighbor_summary": {
+      "700": {
+        "exact_bounded_count": 11,
+        "single_any_count": 69,
+        "damaged_or_bracketed_count": 58,
+        "exact_pot_clay_count": 7,
+        "exact_sites": {
+          "Harappa": 9,
+          "Lothal": 1,
+          "Nuhato": 1
+        }
+      },
+      "032": {
+        "exact_bounded_count": 47,
+        "single_any_count": 67,
+        "damaged_or_bracketed_count": 20,
+        "exact_pot_clay_count": 38,
+        "exact_sites": {
+          "Dholavira": 6,
+          "Harappa": 35,
+          "Kalibangan": 2,
+          "Mohenjo-daro": 3,
+          "Nausharo": 1
+        }
+      },
+      "033": {
+        "exact_bounded_count": 25,
+        "single_any_count": 62,
+        "damaged_or_bracketed_count": 37,
+        "exact_pot_clay_count": 17,
+        "exact_sites": {
+          "Dholavira": 1,
+          "Harappa": 21,
+          "Kalibangan": 1,
+          "Mohenjo-daro": 2
+        }
+      },
+      "034": {
+        "exact_bounded_count": 11,
+        "single_any_count": 32,
+        "damaged_or_bracketed_count": 21,
+        "exact_pot_clay_count": 9,
+        "exact_sites": {
+          "Derawar Ther": 1,
+          "Harappa": 8,
+          "Mohenjo-daro": 1,
+          "Nausharo": 1
+        }
+      },
+      "004": {
+        "exact_bounded_count": 6,
+        "single_any_count": 8,
+        "damaged_or_bracketed_count": 2,
+        "exact_pot_clay_count": 6,
+        "exact_sites": {
+          "Harappa": 6
+        }
+      },
+      "002": {
+        "exact_bounded_count": 12,
+        "single_any_count": 21,
+        "damaged_or_bracketed_count": 9,
+        "exact_pot_clay_count": 11,
+        "exact_sites": {
+          "Harappa": 11,
+          "Mohenjo-daro": 1
+        }
+      }
+    },
+    "mohenjo_daro_m_series_034_contexts": [
+      {
+        "cisi": "M-1963",
+        "text": "+000-034-104+",
+        "type": "SEAL:R",
+        "material": "Steatite",
+        "condition": "Poor",
+        "packet_status": "unpacketized_context"
+      },
+      {
+        "cisi": "M-2104",
+        "text": "+151-097-700-034+",
+        "type": "ROD",
+        "material": "Ivory",
+        "condition": "Fair",
+        "packet_status": "previous_packet_or_quarantine"
+      },
+      {
+        "cisi": "M-315",
+        "text": "+390-034-002-374-228-741+",
+        "type": "SEAL:S",
+        "material": "Steatite",
+        "condition": "Good",
+        "packet_status": "previous_packet_or_quarantine"
+      },
+      {
+        "cisi": "M-685",
+        "text": "]034-204+",
+        "type": "SEAL:S",
+        "material": "Steatite",
+        "condition": "Poor",
+        "packet_status": "previous_packet_or_quarantine"
+      },
+      {
+        "cisi": "M-1206",
+        "text": "+520-220-034+",
+        "type": "SEAL:S",
+        "material": "Steatite",
+        "condition": "Good",
+        "packet_status": "previous_packet_or_quarantine"
+      },
+      {
+        "cisi": "M-1584",
+        "text": "+034+",
+        "type": "POT:T:g",
+        "material": "Clay",
+        "condition": "Poor",
+        "packet_status": "current_packet"
+      }
+    ]
+  },
+  "verdict": "M-1584 upgrades from public-dark to source-visible object binding, but remains only graphic/local-code pressure for +034+. No value or translation accepted."
+}

@@ -1,0 +1,70 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "lipi_034_crosswalk_darkness_diagnostic",
+  "question": "Why does lipi 034 have no clean Mayig/Parpola crosswalk candidate: real crosswalk filtering, or absence from the overlap corpus?",
+  "inputs": [
+    "data/open_prototype/lipi/metadata_filtered.csv",
+    "data/open_prototype/reports/overlap_probe.csv",
+    "data/open_prototype/reports/crosswalk_alignment_pairs.csv",
+    "data/open_prototype/reports/crosswalk_lipi_to_mayig_candidates.csv"
+  ],
+  "target_signs": [
+    "032",
+    "033",
+    "034"
+  ],
+  "overlap_scope": {
+    "rows": 179,
+    "rows_by_site": {
+      "Mohenjo-daro": 179
+    },
+    "rows_by_type": {
+      "SEAL:S": 179
+    },
+    "rows_by_mayig_description": {
+      "unicorn I seal": 9,
+      "unicorn II seal": 19,
+      "unicorn III seal": 45,
+      "unicorn IV seal": 96,
+      "unicorn V seal": 10
+    }
+  },
+  "sign_coverage": {
+    "032": {
+      "metadata_rows": 566,
+      "overlap_rows": 27,
+      "clean_alignment_rows": 21,
+      "candidate_present": true,
+      "top_mayig_sign": "P145",
+      "diagnostic_status": "crosswalk_candidate_present"
+    },
+    "033": {
+      "metadata_rows": 506,
+      "overlap_rows": 12,
+      "clean_alignment_rows": 9,
+      "candidate_present": true,
+      "top_mayig_sign": "P147",
+      "diagnostic_status": "crosswalk_candidate_present"
+    },
+    "034": {
+      "metadata_rows": 182,
+      "overlap_rows": 0,
+      "clean_alignment_rows": 0,
+      "candidate_present": false,
+      "top_mayig_sign": null,
+      "diagnostic_status": "coverage_absent_from_overlap_not_crosswalk_filtered"
+    }
+  },
+  "exact_034_metadata_rows": 182,
+  "exact_034_overlap_rows": 0,
+  "raw_overlap_lines_containing_string_034": 1,
+  "raw_034_line_hit_note": "Raw text search hits are not sign-token hits; the observed hit is an artifact ID/string occurrence such as M-34.",
+  "conclusion": "The clean crosswalk lacks 034 because the current Mayig overlap layer has zero exact lipi 034 token rows. This is overlap coverage darkness, not evidence that 034 lacks a Mayig/Parpola counterpart.",
+  "outputs": [
+    "data/open_prototype/reports/lipi_034_crosswalk_darkness_sign_coverage.csv",
+    "data/open_prototype/reports/lipi_034_crosswalk_darkness_rows.csv",
+    "data/open_prototype/reports/lipi_034_crosswalk_darkness_overlap_rows.csv",
+    "data/open_prototype/reports/lipi_034_crosswalk_darkness_summary.json"
+  ],
+  "accepted_decipherment_claims": 0
+}

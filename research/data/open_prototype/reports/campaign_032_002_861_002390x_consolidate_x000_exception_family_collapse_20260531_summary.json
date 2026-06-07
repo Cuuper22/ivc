@@ -1,0 +1,24 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "x000_exception_family_collapse",
+  "target_count": 3,
+  "sequence_tests": 12,
+  "singleton_sequences": [
+    "4148.1:exact_tail_267_000_033",
+    "4148.1:head267_x000",
+    "4148.1:same_tail_267_000_any",
+    "M-451:exact_tail_520_000_000_000_906_388",
+    "M-451:zero_chain_000_000_000_906_388",
+    "M-451:same_head_520_000",
+    "Ns-66:exact_tail_892_000_002",
+    "Ns-66:frame_002_892_000"
+  ],
+  "local_family_softeners": [
+    "4148.1:payload_candidate_000_033:family_context_available_but_not_decisive",
+    "M-451:payload_candidate_906_388:repeated_terminal_boundary_pressure",
+    "Ns-66:reset_candidate_000_002:family_context_available_but_not_decisive",
+    "Ns-66:terminal_002_context:family_context_available_but_not_decisive"
+  ],
+  "conclusion": "The three X=000 exceptions do not collapse away locally; 4148.1 remains the cleanest kill switch, M-451 and Ns-66 remain singleton pressure rather than solved exceptions."
+}

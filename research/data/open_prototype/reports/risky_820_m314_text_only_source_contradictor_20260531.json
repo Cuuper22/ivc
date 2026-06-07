@@ -1,0 +1,99 @@
+{
+  "date": "2026-05-31",
+  "tier": "candidate",
+  "phase_context": "EXPAND",
+  "risky_bet_tested": "If 820 is a rhinoceros semantic sign, then source-visible text-only/no-iconography objects ending in 002-820 should be absent or rare enough to require explanation. M-314 is the direct embarrass-the-model case because the catalogue row is a long text-only Mohenjo-daro seal ending in 002-820.",
+  "observed": {
+    "lipi_row": {
+      "id": "2832.1",
+      "cisi": "M-314",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:S",
+      "shape": "square",
+      "symbol": "None",
+      "cult": "None",
+      "text_length": 17,
+      "text": "+953-817-390-125-308-809-033/740-760-706-466/520-231-240-235-002-820+",
+      "terminal_frame": "002-820"
+    },
+    "source_page": {
+      "local_path": "tmp/820_m314_source_pages/India_n113_w2000.jpg",
+      "public_url": "https://archive.org/download/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan/Corpus%20of%20Indus%20Seals%20and%20Inscriptions.%20Collections%20in%20India/page/n113_w2000.jpg",
+      "djvu_page": "India_0113.djvu",
+      "visible_page_header": "MOHENJO-DARO 313-317 SEALS ... no iconography; silver",
+      "visible_object_labels": ["M-314 A", "M-314 a"],
+      "visual_result": "M-314 is source-visible as a text-only/no-animal inscription panel. The final sign on M-314 a is a wheel/rosette-like sign matching the 820 terminal used in the rhinoceros packet."
+    },
+    "same_packet_shape_checks": {
+      "M-375": {
+        "local_path": "tmp/820_m314_source_pages/India_n128_w2000.jpg",
+        "public_url": "https://archive.org/download/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan/Corpus%20of%20Indus%20Seals%20and%20Inscriptions.%20Collections%20in%20India/page/n128_w2000.jpg",
+        "visible_page_header": "no iconography II ... SEALS MOHENJO-DARO 371-375",
+        "visual_result": "M-375 a is source-visible as no-iconography and ends in the same wheel/rosette-like 820 shape."
+      },
+      "M-381": {
+        "local_path": "tmp/820_m314_source_pages/India_n129_w2000.jpg",
+        "public_url": "https://archive.org/download/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan/Corpus%20of%20Indus%20Seals%20and%20Inscriptions.%20Collections%20in%20India/page/n129_w2000.jpg",
+        "visible_page_header": "MOHENJO-DARO 376-381 SEALS ... no iconography III",
+        "visual_result": "M-381 a, the sole object behind the old Brahmi ra/tha 820 token artifact, is source-visible with a wheel/rosette-like terminal 820. The forked/Brahmi-looking route is therefore a crop/model artifact, not a distinct source-visible sign form."
+      }
+    }
+  },
+  "context_scan_from_lipi_metadata": {
+    "terminal_002_820_rows": 93,
+    "terminal_820_rows": 174,
+    "terminal_002_820_by_symbol_top": {
+      "None": 26,
+      "Bull1:W": 18,
+      "Bull1": 13,
+      "Bull1:I": 6,
+      "Bull1:J": 4,
+      "Rhin": 4
+    },
+    "mohenjo_text_only_002_820_rows_seen_in_scan": [
+      "M-1974",
+      "M-1955",
+      "M-1960",
+      "M-314",
+      "M-375",
+      "M-381",
+      "M-384",
+      "M-385",
+      "M-1137",
+      "M-1306",
+      "M-1346",
+      "M-1354",
+      "M-1959"
+    ],
+    "interpretation": "The contradiction is not isolated to M-314. Metadata-level counts already show that terminal 002-820 is common in symbol=None rows, so the positive claim must be a packet-level enrichment of 820 in rhinoceros seals, not a global animal semantic."
+  },
+  "impact": {
+    "killed_or_demoted": [
+      {
+        "claim": "820 is globally a rhinoceros semantic sign.",
+        "new_status": "demoted",
+        "reason": "M-314 is a source-visible text-only/no-iconography seal with terminal 002-820."
+      },
+      {
+        "claim": "The rhinoceros packet licenses a direct phonetic or lexical reading of 820.",
+        "new_status": "not_supported",
+        "reason": "The same terminal sign appears in a long text-only seal, so the current evidence supports a terminal/register role before it supports a rhino word/value."
+      }
+    ],
+    "surviving_minimal_model": "820 is a wheel/rosette terminal closer in the 002 closure ecology. It is strongly selected in one Mohenjo-daro rhinoceros square-seal packet, but it also occurs in a text-only/no-iconography long seal. The semantic bet must therefore be contextual/register-level, not a global pictorial label.",
+    "prediction": "Independent source-visible 820 rows should split into at least two contexts: (1) rosette terminal in animal packets, especially the M-1136/M-1137/M-1138/M-1139 rhinoceros cluster, and (2) rosette terminal in long or formulaic text-only objects such as M-314. If future source pages show that M-314's terminal sign is not visually homologous with the rhinoceros rosette, the rosette-closure model should split 820 into contaminated subforms."
+  },
+  "adversarial_status": {
+    "forger_false_positive_rate": null,
+    "why_no_forger_rate_here": "This report is a source-bound contradiction/constraint on the interpretation of an already-tested 820 terminal enrichment, not a standalone statistical enrichment claim.",
+    "skeptic_attack": "The page-level source check kills the naive semantic reading but does not kill the narrower closure/register model. Material metadata conflict is present: the source page header includes 'silver' while the Lipi row says Steatite/White, so no material inference is made from this row."
+  },
+  "counts_incremented": {
+    "translations": 0,
+    "phonetic_values": 0,
+    "sign_meanings": 0,
+    "language_identification": 0,
+    "structural_findings": 0,
+    "external_anchors": 0
+  }
+}

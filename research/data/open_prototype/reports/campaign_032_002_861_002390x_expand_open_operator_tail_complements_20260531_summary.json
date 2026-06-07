@@ -1,0 +1,26 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "open_operator_tail_complements",
+  "focus": {
+    "125": {
+      "x_slot_occurrences": 11,
+      "x_slot_next1": "632:3;032:2;820:2;195:1;590:1",
+      "repeated_local_complements": "032:2;632:3;820:2",
+      "provisional_role": "linker_with_repeated_complements"
+    },
+    "530": {
+      "x_slot_occurrences": 4,
+      "x_slot_next1": "000:1;741:1;820:1;904:1",
+      "repeated_local_complements": "",
+      "provisional_role": "open_but_tail_residue_risk"
+    },
+    "861": {
+      "x_slot_occurrences": 3,
+      "x_slot_next1": "031:1;590:1",
+      "repeated_local_complements": "",
+      "provisional_role": "underpowered_open_operator"
+    }
+  },
+  "strongest_new_parse_bet": "125 is the first open X operator with repeated governed-complement candidates."
+}

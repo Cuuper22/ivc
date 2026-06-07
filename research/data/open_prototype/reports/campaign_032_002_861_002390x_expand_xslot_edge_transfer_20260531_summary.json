@@ -1,0 +1,73 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "xslot_edge_transfer",
+  "total_x_occurrences": 316,
+  "frequent_x_signs": 35,
+  "focus": {
+    "125": {
+      "x_occurrences": 11,
+      "x_terminal_rate": "0.182",
+      "global_terminal_rate": "0.288",
+      "terminal_delta": "-0.106",
+      "classification": "open_or_payload_transfer"
+    },
+    "530": {
+      "x_occurrences": 4,
+      "x_terminal_rate": "0.000",
+      "global_terminal_rate": "0.316",
+      "terminal_delta": "-0.316",
+      "classification": "constructional_anti_terminal_or_payload"
+    },
+    "590": {
+      "x_occurrences": 7,
+      "x_terminal_rate": "0.429",
+      "global_terminal_rate": "0.259",
+      "terminal_delta": "0.170",
+      "classification": "mixed"
+    },
+    "692": {
+      "x_occurrences": 3,
+      "x_terminal_rate": "0.667",
+      "global_terminal_rate": "0.766",
+      "terminal_delta": "-0.100",
+      "classification": "global_edge_transfer"
+    },
+    "705": {
+      "x_occurrences": 5,
+      "x_terminal_rate": "0.800",
+      "global_terminal_rate": "0.269",
+      "terminal_delta": "0.531",
+      "classification": "constructional_terminal_boost"
+    },
+    "861": {
+      "x_occurrences": 3,
+      "x_terminal_rate": "0.333",
+      "global_terminal_rate": "0.636",
+      "terminal_delta": "-0.303",
+      "classification": "constructional_anti_terminal_or_payload"
+    },
+    "000": {
+      "x_occurrences": 27,
+      "x_terminal_rate": "0.889",
+      "global_terminal_rate": "0.437",
+      "terminal_delta": "0.452",
+      "classification": "constructional_terminal_boost"
+    },
+    "095": {
+      "x_occurrences": 3,
+      "x_terminal_rate": "1.000",
+      "global_terminal_rate": "0.267",
+      "terminal_delta": "0.733",
+      "classification": "constructional_terminal_boost"
+    },
+    "033": {
+      "x_occurrences": 2,
+      "x_terminal_rate": "1.000",
+      "global_terminal_rate": "0.461",
+      "terminal_delta": "0.539",
+      "classification": "underpowered"
+    }
+  },
+  "provisional_read": "If 000 looks like global edge transfer and a non-000 sign has constructional boost, move the parser away from null-core toward edge/operator classes."
+}

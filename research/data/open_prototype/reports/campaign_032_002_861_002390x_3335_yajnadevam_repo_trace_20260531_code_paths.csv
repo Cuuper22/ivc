@@ -1,0 +1,4 @@
+file,finding,present,interpretation
+src/pages/index.vue,image lookup uses sealImages[item.cisi],yes,cisi dash row cannot render an image unless the map has a dash key
+dev-tools/generate-seal-id-to-image-map.js,image-map generator derives keys from filenames matching place-number pattern,yes,"public image assets are keyed to object ids like M-940, not metadata row ids like 3335.1"
+src/assets/data/seal_id_and_image_mapping.json,target and dash keys absent,no,no repo-internal image bridge for 3335.1

@@ -1,0 +1,3 @@
+checked_date,decision_id,action,target,reason,next_status
+2026-05-31,CONSOLIDATE_X000_EXCEPTION_TARGETS_FIRST,rank_next_destructive_tests,M-451;4148.1;Ns-66,These are the only current X=000 rows that actually continue after 000.,attack_before_expanding_new_null_claims
+2026-05-31,CONSOLIDATE_X000_NONZERO_PAYLOAD_KILL_SWITCH,define_kill_switch,4148.1,A real nonzero payload after X=000 is the sharpest possible local kill condition.,highest_priority_if_source_available

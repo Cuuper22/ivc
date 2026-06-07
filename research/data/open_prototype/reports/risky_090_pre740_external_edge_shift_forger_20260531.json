@@ -1,0 +1,24 @@
+{
+  "run_date": "2026-05-31T15:05:00-07:00",
+  "phase": "EXPAND",
+  "bet_id": "V2_V4_V1_090_PRE740_EXTERNAL_EDGE_SHIFT_20260531",
+  "vector": "V2 slot grammar + V4 context + V1 external-contact discriminator",
+  "confidence_tier": "wild shot",
+  "risky_bet": "`090` is a pre-opener/register qualifier before `740` in local rows, but shifts toward the edge in external circular seals. This predicts function and copying/register behavior, not sound.",
+  "observed": {
+    "local_090_740_rows": 100,
+    "local_090_before_740": 91,
+    "local_090_before_740_share": 0.91,
+    "external_circular_090_rows": 7,
+    "external_circular_090_near_edge": 5,
+    "external_circular_090_near_edge_share": 0.7142857142857143,
+    "local_090_rows": 141,
+    "local_090_near_edge": 116,
+    "local_090_near_edge_share": 0.8226950354609929
+  },
+  "direction_shuffle_false_positive_rate": 0,
+  "external_edge_vs_local_fisher_p": 0.8857614626465112,
+  "adversarial_test": "Canonical exact-text collapse; exclude known external rows for the local 090>740 test; row-internal sign shuffle preserving every local 090+740 row multiset; Fisher test for external circular 090 near-edge pressure against all local 090 rows.",
+  "falsifier": "If source-visible external circular 090 rows are not edge/near-edge, or local 090+740 rows do not preserve 090-before-740 after source/copy-family collapse, demote to a generic 090+740 formula with no external position-shift claim.",
+  "next_prediction": "New local 090+740 rows should usually place 090 before 740; new external circular 090 rows should often put 090 at an edge or near-edge and should not need 740 to carry the route/register function."
+}

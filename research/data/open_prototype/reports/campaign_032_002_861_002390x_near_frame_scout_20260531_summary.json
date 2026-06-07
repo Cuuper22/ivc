@@ -1,0 +1,73 @@
+{
+  "run_date": "2026-05-31",
+  "input": "data/open_prototype/lipi/metadata_filtered.csv",
+  "metadata_rows": 5679,
+  "adjacent_002390_rows": 15,
+  "adjacent_damaged_or_open_rows": 0,
+  "adjacent_multi_prev_groups": [
+    {
+      "prev_before_002": "004",
+      "rows": 2,
+      "branches": "095 125",
+      "objects": "H-1993 Sktd-1",
+      "damaged_or_open_rows": 0,
+      "multi_branch": "yes",
+      "examples": "H-1993:095-><END>:no; Sktd-1:125->820:no"
+    },
+    {
+      "prev_before_002": "032",
+      "rows": 2,
+      "branches": "590 692",
+      "objects": "M-70 -",
+      "damaged_or_open_rows": 0,
+      "multi_branch": "yes",
+      "examples": "M-70:692-><END>:no; -:590->032:no"
+    },
+    {
+      "prev_before_002": "235",
+      "rows": 2,
+      "branches": "125",
+      "objects": "M-38 M-735",
+      "damaged_or_open_rows": 0,
+      "multi_branch": "no",
+      "examples": "M-38:125->632 032:no; M-735:125->195:no"
+    }
+  ],
+  "gapped_002_x_390_rows": 2,
+  "gapped_multi_prev_groups": [],
+  "decisions": [
+    {
+      "decision": "adjacent_frame_set_unchanged",
+      "evidence": "15 adjacent 002-390 rows; damaged/open adjacent rows 0",
+      "result": "same 15 clean adjacent frames as replacement branch-sign ecology",
+      "consequence": "no hidden damaged/open adjacent row rescues matched-predecessor proof"
+    },
+    {
+      "decision": "only_three_adjacent_multi_prev_groups",
+      "evidence": "004:H-1993:095-><END>:no; Sktd-1:125->820:no | 032:M-70:692-><END>:no; -:590->032:no | 235:M-38:125->632 032:no; M-735:125->195:no",
+      "result": "multi-row adjacent predecessor groups remain 004, 032, and 235",
+      "consequence": "predecessor-gate blocking analysis remains complete for adjacent 002-390-X"
+    },
+    {
+      "decision": "gapped_002_x_390_no_rescue",
+      "evidence": "K-89:350->002-595-390->000:+001-350-002-595-390-000+ | -:000->002-861-390-><END>:]740-142-000-002-861-390[",
+      "result": "2 gapped 002-X-390 rows, no repeated/matched predecessor branch split",
+      "consequence": "gapped near-frames do not create a new same-predecessor alternative"
+    },
+    {
+      "decision": "icit_4348_guard_reinforced",
+      "evidence": "]740-142-000-002-861-390[",
+      "result": "Dholavira 4348.1 is 002-861-390, not adjacent 002-390-X",
+      "consequence": "do not use ICIT 4348 as a bridge into the 002-390-705 / 4237.1 lane"
+    }
+  ],
+  "status": "near_frame_scout_no_hidden_matched_prev_rescue_no_values",
+  "outputs": {
+    "adjacent_rows": "data/open_prototype/reports/campaign_032_002_861_002390x_near_frame_scout_20260531_adjacent_rows.csv",
+    "gapped_rows": "data/open_prototype/reports/campaign_032_002_861_002390x_near_frame_scout_20260531_gapped_rows.csv",
+    "adjacent_prev_summary": "data/open_prototype/reports/campaign_032_002_861_002390x_near_frame_scout_20260531_adjacent_prev_summary.csv",
+    "gapped_prev_summary": "data/open_prototype/reports/campaign_032_002_861_002390x_near_frame_scout_20260531_gapped_prev_summary.csv",
+    "decisions": "data/open_prototype/reports/campaign_032_002_861_002390x_near_frame_scout_20260531_decisions.csv",
+    "summary": "data/open_prototype/reports/campaign_032_002_861_002390x_near_frame_scout_20260531_summary.json"
+  }
+}

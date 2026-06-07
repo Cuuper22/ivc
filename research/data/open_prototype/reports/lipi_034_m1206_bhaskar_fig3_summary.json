@@ -1,0 +1,53 @@
+{
+  "date": "2026-05-25",
+  "object": "M-1206",
+  "local_rows": [
+    "3556.1 +520-220-034+",
+    "3556.2 +740-690-435-255-002-861+"
+  ],
+  "source_packet": "lipi_034_m1206_bhaskar_fig3",
+  "routes_rows": 12,
+  "visual_input_rows": 9,
+  "adjudication_rows": 7,
+  "segmentation_scenarios": 5,
+  "stored_source_files": [
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m1206_bhaskar/Bhaskar2022_IJHS_57_3_1.pdf",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m1206_bhaskar/S1-IndusZoomorphicIconCatalogue.pdf",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m1206_bhaskar/43539_2022_52_MOESM1_ESM.xlsx"
+  ],
+  "stored_visual_derivatives": [
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m1206_bhaskar/page18-18.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m1206_bhaskar/derived/m1206_fig3_caption_context.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m1206_bhaskar/derived/m1206_fig3_right_full.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m1206_bhaskar/derived/m1206_fig3_inscription_band.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m1206_bhaskar/derived/m1206_fig3_signs_close.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m1206_bhaskar/derived/m1206_fig3_signs_close_gray_autocontrast.png"
+  ],
+  "positive_result": "Bhaskar 2022 Fig. 3 gives a real public image lead: caption identifies the right-hand image as M-1206 and says images are from CISI; the rendered crop visibly carries a three-group inscription compatible with the local length-3 row.",
+  "adversarial_downgrade": "The same article running text refers to M-2016 for Fig. 3 while the caption says M-1206, and the figure does not show the six-sign companion side. Therefore the route is secondary and source-gated.",
+  "decision": "await_replies_or_acquire_CISI_HARP_all_side_record_before_any_034_visual_assignment",
+  "accepted_source_mapping_claims": 0,
+  "accepted_sign_values": 0,
+  "accepted_sign_meanings": 0,
+  "accepted_translations": 0,
+  "s1_xlsx_m1206_row": "M-1206 | text-present marker | P8 | F0 | Bison",
+  "terminal_contrast_report": "data/open_prototype/reports/lipi_034_m1206_520_220_terminal_contrasts.csv",
+  "terminal_contrast_result": "52 local 520-220-prefix rows; 034 is a singleton terminal after 520-220 in the filtered lipi planning layer, while 415 has 28 rows.",
+  "sent_source_requests": [
+    {
+      "recipient": "harappa@gmail.com",
+      "message_id": "19e5fde0422b8419",
+      "purpose": "M-1206 all-side source image/record request"
+    },
+    {
+      "recipient": "mvbhaskar@mac.com",
+      "message_id": "19e5fde06da717e8",
+      "purpose": "M-1206 vs M-2016 Fig. 3 clarification"
+    }
+  ],
+  "author_reply_date": "2026-05-26",
+  "author_reply_message_id": "19e62d227a12942a",
+  "author_reply_result": "Bhaskar confirms M-2016 running-text mention is a typo; Fig. 3 caption M-1206 is correct; supplementary catalogue verifies.",
+  "updated_adversarial_status": "object-number conflict resolved for secondary route; side binding/source transcription/orientation still source-gated",
+  "decision_after_author_reply": "Bhaskar Fig. 3 is object-number-clean secondary corroboration; direct CISI n181 remains primary source-visible evidence; accepted mappings/values/translations remain 0."
+}

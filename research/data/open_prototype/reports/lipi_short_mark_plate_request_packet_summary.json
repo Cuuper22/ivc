@@ -1,0 +1,66 @@
+{
+  "source": "033/034 short-mark side-relation first plate request packet",
+  "checked_at": "2026-05-24",
+  "input": "data/open_prototype/reports/lipi_short_mark_side_relation_validation_sheet.csv",
+  "packet_artifacts": 17,
+  "packet_rows_from_validation_sheet": 18,
+  "request_tier_counts": {
+    "tier_1_033_after_with_400_740_176": 15,
+    "tier_1_034_before_with_400_740_176": 2
+  },
+  "type_counts": {
+    "TAB:B": 1,
+    "TAB:I": 16
+  },
+  "artifact_ids": [
+    "H-233",
+    "H-309",
+    "H-316",
+    "H-353",
+    "H-355",
+    "H-357",
+    "H-935",
+    "H-978",
+    "H-1302",
+    "H-1303",
+    "H-1304",
+    "H-1344",
+    "H-1345",
+    "H-1346",
+    "H-1347",
+    "H-933",
+    "H-960"
+  ],
+  "duplicated_artifacts_in_packet": [
+    "H-355"
+  ],
+  "blank_manual_fields": [
+    "source_found",
+    "source_citation",
+    "image_or_plate_id",
+    "image_resolution_or_quality",
+    "catalog_rows_distinct_physical_sides",
+    "side_order_basis",
+    "image_direction_basis",
+    "short_mark_verified",
+    "longer_text_verified",
+    "sign_033_034_contrast_visible",
+    "relation_survives_image_check",
+    "validation_outcome",
+    "notes"
+  ],
+  "allowed_validation_outcomes": [
+    "passes_source_check",
+    "fails_side_relation",
+    "fails_segmentation",
+    "fails_033_034_contrast",
+    "direction_unresolved",
+    "source_unavailable"
+  ],
+  "key_observation": "This packet is the first manual source-validation request for the 033/034 side-relation contrast. It contains prefilled artifact context and blank evidence fields, so source inspection can accept, weaken, or reject the planning-layer contrast.",
+  "interpretation_boundary": "This is a manual plate request packet only. It accepts no physical side function, numerical value, metrological reading, sign meaning, phonetic value, language identity, or translation.",
+  "outputs": [
+    "data/open_prototype/reports/lipi_short_mark_plate_request_packet.csv",
+    "data/open_prototype/reports/lipi_short_mark_plate_request_packet_summary.json"
+  ]
+}

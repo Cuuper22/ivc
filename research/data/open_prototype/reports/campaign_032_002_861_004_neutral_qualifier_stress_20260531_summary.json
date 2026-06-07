@@ -1,0 +1,106 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "004_neutral_qualifier_stress",
+  "hypothesis_tested": "`004` before `002` is a neutral qualifier that permits head/branch choice rather than directly selecting the `002-390-X` branch.",
+  "totals": {
+    "all_002_frames": 699,
+    "prev004_frames": 18,
+    "prev004_002390_frames": 2,
+    "exact_390004002_frames": 8
+  },
+  "key_rows": [
+    {
+      "object": "H-1993",
+      "text": "+740-000-220-004-002-390-095+",
+      "branch_after_head": "095",
+      "tail_after_branch": "<END>",
+      "terminal_after_head": "false",
+      "source_status": "route_pressure_supplement_row_no_strict_image"
+    },
+    {
+      "object": "Sktd-1",
+      "text": "+390-004-002-390-125-820+",
+      "branch_after_head": "125",
+      "tail_after_branch": "820",
+      "terminal_after_head": "false",
+      "source_status": "route_pressure_public_panel_order_not_strict"
+    }
+  ],
+  "family_rows": [
+    {
+      "checked_date": "2026-05-31",
+      "family": "004-002-all",
+      "rows": "18",
+      "terminal_after_head": "9",
+      "head_count": "9",
+      "branch_count": "12",
+      "top_heads": "817:4;861:4;365:2;390:2;820:2;031:1;278:1;705:1",
+      "top_branches": "817-<END>:3;861-<END>:3;365-460:2;820-<END>:2;031-376:1;278-595:1;390-095:1;390-125:1",
+      "implication": "`004` before `002` is compatible with multiple heads and outcomes; it is not a direct `X` selector by itself."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "family": "004-002-390",
+      "rows": "2",
+      "terminal_after_head": "0",
+      "head_count": "1",
+      "branch_count": "2",
+      "top_heads": "390:2",
+      "top_branches": "390-095:1;390-125:1",
+      "implication": "`004-002-390` splits into `095` closure and `125-820` continuation, so `004` is not determining the branch sign under `390`."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "family": "390-004-002-exact-prefix",
+      "rows": "8",
+      "terminal_after_head": "4",
+      "head_count": "6",
+      "branch_count": "7",
+      "top_heads": "817:2;861:2;031:1;390:1;705:1;820:1",
+      "top_branches": "817-<END>:2;031-376:1;390-125:1;705-127:1;820-<END>:1;861-<END>:1;861-125:1",
+      "implication": "The exact `390-004-002` prefix is closure-heavy but branch-diverse; copied-prefix pressure remains, but it does not collapse to one tail."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "family": "non004-002-390",
+      "rows": "13",
+      "terminal_after_head": "0",
+      "head_count": "1",
+      "branch_count": "10",
+      "top_heads": "390:13",
+      "top_branches": "390-125:3;390-705:2;390-072:1;390-095:1;390-140:1;390-346:1;390-530:1;390-590:1",
+      "implication": "Non-`004` `002-390` rows are also branch-diverse; selector choice is not reducible to `004`."
+    }
+  ],
+  "decisions": [
+    {
+      "checked_date": "2026-05-31",
+      "named_bet": "`004` is a neutral qualifier before `002`, not the selector of `X`",
+      "tier_after_test": "candidate_mixed",
+      "evidence": "`004-002` has multiple heads; the exact `004-002-390` pair splits into `095` terminal closure (H-1993) and `125-820` continuation (Sktd-1).",
+      "adversary": "`004-002` is closure-heavy and exact-prefix `390-004-002` has formula pressure, so neutral does not mean free or semantically solved.",
+      "falsifier_or_rescue": "A source-bound failure of H-1993 or Sktd-1 kills the clean `004-002-390` split; a third sourced `004-002-390` branch with a new X strengthens neutrality."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "named_bet": "`004` directly selects `125` under `002-390`",
+      "tier_after_test": "dead",
+      "evidence": "Same immediate predecessor `004` and same head `390` produce both `095` and `125`; selector choice cannot be assigned to `004` alone.",
+      "adversary": "Sktd-1 is only route-pressure/panel-order weak, so this death is model-level, not accepted source fact.",
+      "falsifier_or_rescue": "If Sktd-1 is source-rejected and H-1993 source-binds as the only clean `004-002-390` row, the direct-selector bet becomes underdetermined rather than dead."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "named_bet": "`390-004-002` is a copied prefix that determines closure",
+      "tier_after_test": "wild_shot_demoted",
+      "evidence": "The exact prefix is closure-heavy but still branches into `817`, `820`, `861`, `390-125-820`, `031-376`, and `705-127` in canonical rows.",
+      "adversary": "Several rows are metadata-only or source-limited, and `817` dominates, so formula-prefix pressure remains a live adversary.",
+      "falsifier_or_rescue": "Source-normalized collapse to one copied `390-004-002-817` family would revive copied-prefix closure; source-preserved branch diversity kills it."
+    }
+  ],
+  "confidence_after_test": {
+    "004_neutral_qualifier": "candidate_mixed",
+    "004_selects_125_under_390": "dead",
+    "390004002_copied_prefix_closure": "wild_shot_demoted"
+  }
+}

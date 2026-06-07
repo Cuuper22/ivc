@@ -1,0 +1,17 @@
+{
+  "source": "H-1302/H-1303 CISI public route check",
+  "checked_at": "2026-05-26",
+  "artifacts": [
+    "H-1302",
+    "H-1303"
+  ],
+  "key_observation": "Public CISI Pakistan vol. 2 is not the source-image route for these two Harappa targets: its contents page scopes Harappa black-and-white photographs to H-266..H-1019, while H-1302/H-1303 fall outside that range. Exact OCR target searches find no H-1302/H-1303 target hits; bare 1302/1303 hits are Mohenjo-daro M-number homonyms or index/data noise.",
+  "source_witnesses": {
+    "cisi_pakistan_contents_page": "tmp/h1302_h1303_cisi_public_route_check/derived/cisi_pakistan_contents_page-006.png",
+    "cisi_pakistan_harappa_range_crop": "tmp/h1302_h1303_cisi_public_route_check/derived/cisi_pakistan_harappa_range_crop.png",
+    "cisi_pakistan_ocr": "tmp/cisi_pakistan_ocr/pakistan_djvu.xml",
+    "range_crop_sha256": "d3b27649b08dfbd841b9c6a0414618809905e269860a4368911dc54bd44f8c24"
+  },
+  "decision": "Route H-1302/H-1303 to CISI 3.1, HARP, ICIT/Wells-Fuls data, or source-holder request. Do not keep treating public CISI vol. 2 as likely to contain the panels.",
+  "interpretation_boundary": "No source image validation, side order, sign correction, value, phonetic reading, language identity, or translation is accepted."
+}

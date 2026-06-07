@@ -1,0 +1,81 @@
+{
+  "date": "2026-05-26",
+  "status": "fig5_1_visual_anchor_found_namespace_shortcuts_blocked",
+  "research_question": "Can Parpola 2019 article signs 60, 107, and 189 be bridged through Mayig V###, Mahadevan M###, or local Lipi numeric labels?",
+  "answer": "No. Parpola 1994 Fig. 5.1 gives direct visual anchors for the article signs, while Mayig feature metadata shows that the obvious V### and M### shortcuts point to different sign families.",
+  "row_count": 16,
+  "accepted_crosswalk_count": 0,
+  "accepted_translation_count": 0,
+  "rendered_signlist_pages": [
+    {
+      "path": "tmp/parpola_1994_signlist/rendered/fig5_1-089.png",
+      "width": 1805,
+      "height": 2357,
+      "sha256": "8AFCF0D1D4662FC47014FDBF6CD6CED0F85E0FF07C2799169758E2AC2FF6996B",
+      "article_signs_visible": [
+        "60"
+      ]
+    },
+    {
+      "path": "tmp/parpola_1994_signlist/rendered/fig5_1-090.png",
+      "width": 1804,
+      "height": 2357,
+      "sha256": "0368015D49DD13C24AB6E7DFC889A2FE1A2FB16C7AF607827AB7B6C7D104FA4D",
+      "article_signs_visible": [
+        "107"
+      ]
+    },
+    {
+      "path": "tmp/parpola_1994_signlist/rendered/fig5_1-092.png",
+      "width": 1231,
+      "height": 1607,
+      "sha256": "3EF658B0D255988184F55ADB8883B97FDFC7661DEE12DF41248018134AF3A51C",
+      "article_signs_visible": [
+        "189"
+      ]
+    }
+  ],
+  "feature_shortcuts_rejected": {
+    "article_sign_107": [
+      "Mayig V107 -> P191, Mahadevan M132, Wells W450",
+      "Mahadevan M107 -> P125, Parpola V005/V017/V715/V799",
+      "local M-35 terminal 107 -> P007 in current overlap, Parpola V146/V374, Mahadevan M004, Wells W105/W107"
+    ],
+    "article_sign_189": [
+      "Mayig V189 -> P071, Mahadevan M076, Wells W260",
+      "Mahadevan M189 -> P305, Parpola V058/V716, Wells W420",
+      "local M-77 terminal 861 -> P385 in current overlap, Parpola V162/V420/V421/V510, Mahadevan M267, Wells W817/W861",
+      "local 415 control M-37 -> P092 in current overlap, Parpola V042/V182, Mahadevan M171, Wells W415",
+      "local 016 controls -> P126 in current overlap, Parpola V006/V018/V670/V723, Mahadevan M108/M109, Wells W006/W016"
+    ],
+    "article_sign_60": [
+      "Mayig V060 -> P264, Mahadevan M238, Wells W603",
+      "Mahadevan M060 -> P051, Parpola V513/V321, Wells W226",
+      "local 220 -> P050 remains only a bounded fish-form candidate, not an accepted crosswalk"
+    ]
+  },
+  "admissible_now": [
+    "Parpola 2019 signs 60, 107, and 189 can be visually anchored to Parpola 1994 Fig. 5.1",
+    "Mayig feature metadata can be used as a namespace witness",
+    "local 220 to article sign 60 is a candidate bridge to test, not a conclusion"
+  ],
+  "blocked_claims": [
+    "Parpola article sign no. 107 = Mayig V107",
+    "Parpola article sign no. 107 = Mahadevan M107",
+    "Parpola article sign no. 107 = local M-35 token 107",
+    "Parpola article sign no. 60 = Mayig V060",
+    "Parpola article sign no. 60 = Mahadevan M060",
+    "Parpola article sign no. 189 = Mayig V189",
+    "Parpola article sign no. 189 = Mahadevan M189",
+    "Parpola article sign no. 189 = local 415",
+    "Parpola article sign no. 189 = local 016",
+    "Parpola article sign no. 189 = M-77 terminal 861",
+    "Parpola article sign no. 60 = local 220",
+    "M-77 token mapping",
+    "415=016",
+    "sign value",
+    "phonetic value",
+    "translation"
+  ],
+  "next_required_evidence": "Object-level source transcription or sign-list concordance tying Parpola 1994 Fig. 5.1 signs 60/107/189 to M-35, M-77, H-942/H-2240/H-2241, and H-940/H-2147/H-2148 local rows."
+}

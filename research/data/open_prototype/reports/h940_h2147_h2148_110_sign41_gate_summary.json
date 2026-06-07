@@ -1,0 +1,40 @@
+{
+  "date": "2026-05-26",
+  "question": "Does the H-940/H-2147/H-2148 branch identify local 110 as Parpola sign no. 41?",
+  "local_110_rows": 6,
+  "parpola_branch_110_rows": 3,
+  "outside_control_110_rows": 3,
+  "parpola_branch_objects": [
+    "H-940",
+    "H-2147",
+    "H-2148"
+  ],
+  "outside_control_objects": [
+    "H-2100",
+    "H-2152",
+    "Kanmer local row 4881.1"
+  ],
+  "result": "Correction: the checked local Lipi metadata has six rows containing local sign token 110, not three. H-940, H-2147, and H-2148 remain the current three-object Parpola sign-no.-41 branch, but H-2147 is now demoted to component-level visual pressure after raw recropping; it is not a clean single-sign panel witness. H-940 B is source-visible as local +110+ but remains visually split at current public quality. H-2148 is public_visual_route_count_mapped through Kenoyer 2005 Figure 14.1 and is the cleanest current branch witness. H-2100, H-2152, and Kanmer 4881.1 are outside 110 controls that block any population-level local 110 = Parpola sign no. 41 claim.",
+  "accepted_claims": {
+    "raw_lipi_110_scope": "Six rows contain local sign token 110 in the sign-string field: H-2148, H-2147, H-2100, H-2152, H-940, and Kanmer 4881.1.",
+    "parpola_branch_scope": "H-940, H-2147, and H-2148 are the active three-object Parpola sign-no.-41 branch in the checked project state.",
+    "h940_source_visible_110": "H-940 B is a source-visible local +110+ anchor.",
+    "h2148_source_visible_110": "H-2148 is source-visible at object and count-level mapping: the Figure 14.1 one-sign panel maps to local 481.2 +110+ by sign count.",
+    "hypothesis_priority": "local 110 <-> Parpola sign no. 41 remains a priority crosswalk target only after adding outside controls",
+    "h2147_component_only": "H-2147 is public object-visible, but current visual evidence is only component-level pressure, not clean single-sign-panel evidence."
+  },
+  "not_accepted": [
+    "local 110 appears only in H-940, H-2147, and H-2148",
+    "local 110 equals Parpola sign no. 41",
+    "row-to-panel mapping for H-2147",
+    "H-2148 side-label or Parpola sign-list evidence beyond count-level row mapping",
+    "H-2100 or H-2152 source-side evidence",
+    "Kanmer 4881.1 source-side evidence",
+    "sign value",
+    "phonetic value",
+    "language identification",
+    "translation",
+    "H-2147 lower panel is a clean single-sign 110 witness"
+  ],
+  "next_gate": "Retest only after acquiring H-2147 Figure 27.14/source-side notes and a better H-940 B source panel; keep H-2148 as the cleanest count-mapped target; keep H-2100, H-2152, and Kanmer as outside controls."
+}

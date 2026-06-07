@@ -1,0 +1,29 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "left_context_shadow_predictions",
+  "rows": {
+    "raw": 5679,
+    "canonical_numeric_sequences": 3503,
+    "governed_frames": 272,
+    "target_002_390_frames": 15,
+    "exact_duplicate_left_groups": 16
+  },
+  "support_counts": {
+    "no_shadow": 28,
+    "untyped_shadow_at_suffix2_left": 4,
+    "untyped_shadow_at_exact_left": 3,
+    "untyped_shadow_at_suffix3_left": 3,
+    "supports_004_neutral_shadow_at_exact_left": 1,
+    "supports_004_neutral_shadow_at_suffix2_left": 1,
+    "supports_004_neutral_shadow_at_suffix3_left": 1,
+    "supports_032_no125_context_at_exact_left": 1,
+    "supports_032_no125_context_at_suffix2_left": 1,
+    "supports_032_no125_context_at_suffix3_left": 1,
+    "supports_rank_trigger_head_switch_at_suffix2_left": 1
+  },
+  "exact_rank_support": false,
+  "exact_rank_break": false,
+  "suffix_032_break": false,
+  "exact_004_support": true,
+  "decisions": "V11_LEFT_CONTEXT_SHADOW_PREDICTIONS_20260531:mixed_shadow_support_for_left_context"
+}

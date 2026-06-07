@@ -1,0 +1,192 @@
+{
+  "date": "2026-05-29",
+  "packet_id": "directionality_no_overlay_packet_v1",
+  "status": "scored_reviews_present_not_acceptance_by_itself",
+  "reviewer_count": 2,
+  "reviewer_summaries": [
+    {
+      "reviewer": "blind_review_a",
+      "review_path": "data/open_prototype/reports/effective_unicity_directionality_blind_reviews/blind_review_a.csv",
+      "target_pass": 0,
+      "target_fail": 7,
+      "target_uncertain": 0,
+      "scoring_negative_true_negative": 2,
+      "scoring_negative_hard_false_positive": 1,
+      "scoring_negative_uncertain_target_like": 3,
+      "scoring_negative_label_leak_excluded": 1,
+      "quarantine_rows": 1,
+      "missing_rows": 0,
+      "yes_only_fpr": 0.3333333333333333,
+      "conservative_fpr": 0.6666666666666666
+    },
+    {
+      "reviewer": "blind_review_b",
+      "review_path": "data/open_prototype/reports/effective_unicity_directionality_blind_reviews/blind_review_b.csv",
+      "target_pass": 1,
+      "target_fail": 4,
+      "target_uncertain": 2,
+      "scoring_negative_true_negative": 3,
+      "scoring_negative_hard_false_positive": 1,
+      "scoring_negative_uncertain_target_like": 2,
+      "scoring_negative_label_leak_excluded": 1,
+      "quarantine_rows": 1,
+      "missing_rows": 0,
+      "yes_only_fpr": 0.25,
+      "conservative_fpr": 0.5
+    }
+  ],
+  "target_object_view_results": {
+    "blind_review_a:M-811": [
+      {
+        "blind_id": "D001",
+        "source_view": "a_signband",
+        "outcome": "target_fail",
+        "review_token_count": 7,
+        "expected_token_count": 3,
+        "boxable_call": "yes",
+        "label_leak_call": "no"
+      },
+      {
+        "blind_id": "D005",
+        "source_view": "A_signband",
+        "outcome": "target_fail",
+        "review_token_count": 7,
+        "expected_token_count": 3,
+        "boxable_call": "yes",
+        "label_leak_call": "no"
+      }
+    ],
+    "blind_review_a:M-1320": [
+      {
+        "blind_id": "D003",
+        "source_view": "A_signband",
+        "outcome": "target_fail",
+        "review_token_count": 8,
+        "expected_token_count": 5,
+        "boxable_call": "yes",
+        "label_leak_call": "no"
+      },
+      {
+        "blind_id": "D011",
+        "source_view": "a_signband",
+        "outcome": "target_fail",
+        "review_token_count": 8,
+        "expected_token_count": 5,
+        "boxable_call": "yes",
+        "label_leak_call": "no"
+      }
+    ],
+    "blind_review_a:M-1310": [
+      {
+        "blind_id": "D008",
+        "source_view": "A_signband",
+        "outcome": "target_fail",
+        "review_token_count": 8,
+        "expected_token_count": 7,
+        "boxable_call": "yes",
+        "label_leak_call": "no"
+      },
+      {
+        "blind_id": "D012",
+        "source_view": "a_signband",
+        "outcome": "target_fail",
+        "review_token_count": 8,
+        "expected_token_count": 7,
+        "boxable_call": "yes",
+        "label_leak_call": "no"
+      }
+    ],
+    "blind_review_a:H-654": [
+      {
+        "blind_id": "D013",
+        "source_view": "A_signband",
+        "outcome": "target_fail",
+        "review_token_count": 5,
+        "expected_token_count": 4,
+        "boxable_call": "yes",
+        "label_leak_call": "no"
+      }
+    ],
+    "blind_review_b:M-811": [
+      {
+        "blind_id": "D001",
+        "source_view": "a_signband",
+        "outcome": "target_fail",
+        "review_token_count": 7,
+        "expected_token_count": 3,
+        "boxable_call": "yes",
+        "label_leak_call": "no"
+      },
+      {
+        "blind_id": "D005",
+        "source_view": "A_signband",
+        "outcome": "target_fail",
+        "review_token_count": 7,
+        "expected_token_count": 3,
+        "boxable_call": "yes",
+        "label_leak_call": "no"
+      }
+    ],
+    "blind_review_b:M-1320": [
+      {
+        "blind_id": "D003",
+        "source_view": "A_signband",
+        "outcome": "target_fail",
+        "review_token_count": 7,
+        "expected_token_count": 5,
+        "boxable_call": "yes",
+        "label_leak_call": "no"
+      },
+      {
+        "blind_id": "D011",
+        "source_view": "a_signband",
+        "outcome": "target_fail",
+        "review_token_count": 7,
+        "expected_token_count": 5,
+        "boxable_call": "yes",
+        "label_leak_call": "no"
+      }
+    ],
+    "blind_review_b:M-1310": [
+      {
+        "blind_id": "D008",
+        "source_view": "A_signband",
+        "outcome": "target_uncertain",
+        "review_token_count": 8,
+        "expected_token_count": 7,
+        "boxable_call": "uncertain",
+        "label_leak_call": "no"
+      },
+      {
+        "blind_id": "D012",
+        "source_view": "a_signband",
+        "outcome": "target_uncertain",
+        "review_token_count": 8,
+        "expected_token_count": 7,
+        "boxable_call": "uncertain",
+        "label_leak_call": "no"
+      }
+    ],
+    "blind_review_b:H-654": [
+      {
+        "blind_id": "D013",
+        "source_view": "A_signband",
+        "outcome": "target_count_boxable_pass",
+        "review_token_count": 4,
+        "expected_token_count": 4,
+        "boxable_call": "yes",
+        "label_leak_call": "no"
+      }
+    ]
+  },
+  "max_yes_only_fpr": 0.3333333333333333,
+  "max_conservative_fpr": 0.6666666666666666,
+  "promotion_gate_decision": "failed_packet_gate_no_promotion",
+  "promotion_gate_failed_reasons": [
+    "below_forger_real_negative_denominator_floor",
+    "scoring_negatives_produced_hard_count_boxable_false_positives",
+    "not_all_targets_cleanly_recovered"
+  ],
+  "accepted_claims_increment": 0,
+  "interpretation_boundary": "This review scoring only measures blind crop boxability, token-count recovery, label leakage, and false-positive behavior for selected source-normalization candidates. It cannot assign signs, sounds, meanings, language, translation, or accepted structural status."
+}

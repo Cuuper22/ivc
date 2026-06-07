@@ -1,0 +1,19 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_700_terminal_code_retraction_20260531",
+  "tier": "wild shot killed",
+  "wild_bet": "The raw row-shuffle terminal network suggested a 700-governed terminal code: 700-033, 700-034, and 700-032 were high-support terminal-heavy raw edges, with reverse 033/032-700 also terminal-heavy.",
+  "why_it_was_plausible": "In the raw complete-row network, 700-033 had 144/128 terminal cells, 700-034 had 113/110, and 700-032 had 94/89; row-internal shuffles did not reproduce the larger terminal network.",
+  "destructive_exact_collapse": {
+    "source": "data/open_prototype/reports/risky_terminal_governor_network_20260531_edges.csv",
+    "700_033": "25 exact cells, 18 terminal, terminal_share=0.72",
+    "700_032": "19 exact cells, 15 terminal, terminal_share=0.7894736842105263",
+    "700_034": "13 exact cells, 10 terminal, terminal_share=0.7692307692307693",
+    "033_700": "5 exact cells, 4 terminal, terminal_share=0.8",
+    "032_700": "10 exact cells, 7 terminal, terminal_share=0.7"
+  },
+  "decision": "kill_as_clean_terminal_governor_candidate; retain only as possible register/copy-family pressure",
+  "contrast_with_live_network": "The 002/060/820 terminal-governor network survives exact collapse at >=20 cells and >=0.85 terminal share. The 700 family does not.",
+  "revival_condition": "Only revive if source-family collapse, not raw row count, yields a 700 edge above the same threshold or if a narrower pre-registered register-specific model predicts 700 edge behavior."
+}

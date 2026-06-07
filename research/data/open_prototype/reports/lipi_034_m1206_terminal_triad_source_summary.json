@@ -1,0 +1,26 @@
+{
+  "date": "2026-05-25",
+  "packet": "lipi_034_m1206_terminal_triad_source_recheck",
+  "status": "source_visible_two_of_three_terminal_triad",
+  "local_triad": {
+    "M-1912": "+520-220-003+",
+    "M-1206": "+520-220-034+",
+    "M-37": "+520-220-415+"
+  },
+  "new_positive_source_routes": [
+    "M-37: CISI Vol. 1 Collections in India, IA n54, printed p19, labels M-37 A/a",
+    "M-1206: CISI Vol. 2 Collections in Pakistan, IA n181, printed p147, labels M-1206 A+E/A/a/e(1)/B/C/D/F",
+    "M-1206 data: CISI Vol. 2 Collections in Pakistan, IA n472, printed p438"
+  ],
+  "major_upgrade": "M-1206 no longer depends on Bhaskar Fig. 3 for source reachability, and its long e(1) side is visible on the same CISI object page.",
+  "remaining_blockers": [
+    "M-1912 still lacks an equivalent raw CISI source witness in this packet",
+    "A/a orientation and local R/L alignment are unresolved",
+    "034 remains absent from current clean Mayig/Parpola overlap",
+    "no blind terminal classification has been completed"
+  ],
+  "accepted_source_mapping_count": 0,
+  "accepted_sign_value_count": 0,
+  "accepted_translation_count": 0,
+  "next_experiment": "blind outer-sign classification on M-37 and M-1206 source crops, then orientation-gated 520-220-X prefix test"
+}

@@ -1,0 +1,63 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_060_cap_blind_packet_reinterpretation_20260531",
+  "tier": "candidate",
+  "bet_tested": "The existing broad 060-920 blind packet can be re-scored against the expanded 060 terminal-cap paradigm: strict cap member 920, sibling cap 820, near-cap/internal-boundary member 692, and cap member 550.",
+  "blind_packet": "blind_060920_terminal_cap_20260531",
+  "source_files": [
+    "data/open_prototype/reports/blind_060920_terminal_cap_20260531_answer_key.csv",
+    "data/open_prototype/reports/blind_sidecar_results_20260531.json"
+  ],
+  "rescored_results": {
+    "060_920": {
+      "panels": [
+        "BC001",
+        "BC003",
+        "BC007",
+        "BC008",
+        "BC010",
+        "BC012"
+      ],
+      "called_cap_like": 6,
+      "total": 6,
+      "interpretation": "Strong visual support for 920 as a distinctive cap member after 060."
+    },
+    "060_820": {
+      "panels": [
+        "BC005",
+        "BC009"
+      ],
+      "called_cap_like_or_possible": 1,
+      "called_control": 1,
+      "total": 2,
+      "interpretation": "Weak/inconsistent visual support. BC009/L-21 was the old low-confidence false positive and is now a predicted sibling-cap partial hit, but BC005/M-31 was missed."
+    },
+    "060_692": {
+      "panels": [
+        "BC002",
+        "BC006",
+        "BC011"
+      ],
+      "called_cap_like_or_possible": 0,
+      "called_control": 3,
+      "total": 3,
+      "interpretation": "No visual support for a shared 920-like cap morphology. This is compatible with 692 being a functional near-cap/internal-boundary member, not a visual allograph of 920."
+    },
+    "060_550": {
+      "panels": [
+        "BC004"
+      ],
+      "called_cap_like_or_possible": 0,
+      "called_control": 1,
+      "total": 1,
+      "interpretation": "No visual support from this packet."
+    }
+  },
+  "decision": "Promote functional terminal-cap paradigm only; demote shared visual shape-family interpretation. The blind packet independently supports 060-920 and gives one weak predicted hit for 060-820, but it does not make 692 or 550 visually cap-like.",
+  "model_update": "Treat 060 as a structural hinge whose cap members need not be graphically similar. 920 is the visually distinctive member selected by 741/742/745; 820 is a portable closure sign shared with 002; 692 is a near-cap/internal-boundary member; 550 remains a structural cap with no visual promotion.",
+  "falsifiers": [
+    "A new blind packet containing balanced 060-920, 060-820, 060-692, 060-550, and 060-noncap rows should not be scored as shared visual allography unless readers recover multiple cap members above controls.",
+    "If future readers consistently classify 692/550 as controls while only 920 is cap-like, the shared visual-family bet stays dead but the functional slot grammar can still survive."
+  ]
+}

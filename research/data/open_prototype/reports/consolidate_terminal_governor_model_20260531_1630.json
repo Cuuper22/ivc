@@ -1,0 +1,257 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "wall_clock": "2026-05-31 16:30 America/Los_Angeles",
+  "candidate_id": "consolidate_terminal_governor_model_20260531_1630",
+  "tier": "promoted candidate",
+  "smallest_surviving_model": {
+    "claim": "The strongest current structural reading is a terminal-governor grammar, not a phonetic reading: signs 002 and 060 behave as governors whose immediately following signs close formulaic units. Sign 820 is shared across both governors. Sign 741/742/745 is a feeder alloseries selecting the marked 060-920 closure.",
+    "hardest_block_core": {
+      "definition": "The portion still strict after removing Mohenjo-daro SEAL:S under text-family collapse.",
+      "edges": [
+        "002-817",
+        "002-820",
+        "060-920"
+      ],
+      "interpretation": "This is the minimum model to carry forward if the skeptic demands the Mohenjo-daro SEAL:S block be removed."
+    },
+    "global_extension": {
+      "definition": "Branches strict or near-strict in the full corpus but support-limited under the harshest site/type block.",
+      "edges": [
+        "060-550",
+        "060-820",
+        "060-692",
+        "002-861"
+      ],
+      "interpretation": "These remain live, but the lower-support 060 branches should be presented as global-corpus extension rather than hardest-block core."
+    },
+    "002": {
+      "strict_closures": [
+        {
+          "edge": "002-817",
+          "exact_cells": 108,
+          "terminal_cells": 105,
+          "object_cells": 119,
+          "object_terminal_cells": 116,
+          "sites": 9,
+          "role": "strict closure"
+        },
+        {
+          "edge": "002-820",
+          "exact_cells": 75,
+          "terminal_cells": 70,
+          "object_cells": 75,
+          "object_terminal_cells": 70,
+          "sites": 7,
+          "role": "strict closure shared with 060"
+        }
+      ],
+      "leaky_closures": [
+        {
+          "edge": "002-861",
+          "exact_cells": 126,
+          "terminal_cells": 102,
+          "object_cells": 131,
+          "object_terminal_cells": 102,
+          "sites": 7,
+          "role": "near/leaky closure; continuation tails not opener-class"
+        }
+      ],
+      "selector_model": "No robust feeder-selector system survived for 002. The only expansion hit is wild shot 503-002 -> 817 at 5/5 exact cells, but closure-label shuffle gives p=0.0892 and no 503-002-000 damaged-row prediction exists."
+    },
+    "060": {
+      "strict_closures": [
+        {
+          "edge": "060-920",
+          "exact_cells": 52,
+          "terminal_cells": 51,
+          "object_cells": 51,
+          "object_terminal_cells": 51,
+          "sites": 8,
+          "role": "marked strict closure selected by 741/742/745"
+        },
+        {
+          "edge": "060-550",
+          "exact_cells": 24,
+          "terminal_cells": 23,
+          "object_cells": 26,
+          "object_terminal_cells": 25,
+          "sites": 3,
+          "role": "strict closure"
+        },
+        {
+          "edge": "060-820",
+          "exact_cells": 23,
+          "terminal_cells": 23,
+          "object_cells": 23,
+          "object_terminal_cells": 23,
+          "sites": 5,
+          "role": "strict closure shared with 002"
+        }
+      ],
+      "near_or_boundary_closures": [
+        {
+          "edge": "060-692",
+          "exact_cells": 33,
+          "terminal_cells": 28,
+          "object_cells": 35,
+          "object_terminal_cells": 31,
+          "sites": 5,
+          "role": "near-cap/internal-boundary closure; nonterminal tails are opener-class in exact cells"
+        }
+      ],
+      "selector_model": "The only robust selector is the 741/742/745 feeder alloseries for 920: 40/52 060-920 cells have one of those immediate left signs, while 0/78 sibling 060-692/550/820 cells do; cap-label shuffle p=0/5000 fixed and maxstat."
+    },
+    "shared_closure": {
+      "sign": "820",
+      "role": "portable closure sign",
+      "evidence": "Only target with two qualified high-support terminal governors at >=20 exact cells and >=0.90 terminal share: 002:75/70 and 060:23/23. Terminal flag shuffle p=0/5000 fixed and maxstat.",
+      "visual_status": "Candidate source-peek support for wheel/rosette identity across 002-820 and at least one 060-820 row; not a phonetic anchor."
+    },
+    "separate_semantic_result": {
+      "sign": "407",
+      "role": "rectangular/copper administrative register candidate",
+      "status": "Keep separate from terminal-governor grammar. Internal context result is strong; Meluhha-copper external convergence is candidate only because complete external Indus rows have 0/20 with 407 and the one Susa 407 row is poor/incomplete."
+    }
+  },
+  "adversarial_survivals": [
+    {
+      "test": "terminal-flag shuffle over exact-collapsed branches",
+      "source_report": "data/open_prototype/reports/risky_terminal_governor_network_20260531.json",
+      "result": "p=0/5000 for live edge count, multi-governor count, shared closure count, and exact target shape"
+    },
+    {
+      "test": "row-internal order forger preserving each inscription sign multiset",
+      "source_report": "data/open_prototype/reports/risky_terminal_governor_network_row_shuffle_forger_20260531.json",
+      "result": "p=0/2000 for reproducing the target 002/060/820 network"
+    },
+    {
+      "test": "leave-site stress",
+      "source_report": "data/open_prototype/reports/risky_terminal_governor_leave_site_stress_20260531.json",
+      "result": "Strict 002-817, 002-820, 060-920, 060-550, and 060-820 survive leaving out Mohenjo-daro or Harappa. 060-692 weakens when Harappa is removed, matching its near/boundary tier."
+    },
+    {
+      "test": "object-level edge dedupe",
+      "source_report": "data/open_prototype/reports/risky_terminal_governor_object_dedupe_20260531.json",
+      "result": "The graph survives when each CISI/object contributes at most one count per edge. Strict survivors: 002-817, 002-820, 060-920, 060-692, 060-550, 060-820. 002-861 remains near/leaky."
+    },
+    {
+      "test": "text-family collapse",
+      "source_report": "data/open_prototype/reports/risky_terminal_governor_text_family_collapse_20260531.json",
+      "result": "The graph survives when each exact inscription text contributes at most once per edge, regardless of object/site/type/symbol. Strict survivors: 002-817 96/93, 002-820 72/67, 060-920 51/50, 060-820 23/23, 060-550 23/22; terminal shuffle p=0/5000 for target shape."
+    },
+    {
+      "test": "global direction reversal",
+      "source_report": "data/open_prototype/reports/risky_terminal_governor_direction_reversal_20260531.json",
+      "result": "The target network is not reproduced by reversal; keep as catalog-terminal asymmetric structure, not physical-direction proof."
+    },
+    {
+      "test": "741/742/745 selector object/text-family and leave-site stress",
+      "source_report": "data/open_prototype/reports/risky_060920_selector_object_site_stress_20260531.json",
+      "result": "Selector survives object collapse (40/52 in 060-920, 0/84 sibling leaks), text-family collapse (39/51, 0/76), leave-Mohenjo, and leave-Harappa; null p=0/5000 for object and text-family panels."
+    },
+    {
+      "test": "local source spot audit",
+      "source_report": "data/open_prototype/reports/risky_terminal_governor_source_spot_audit_20260531.json",
+      "result": "One locally available source image per live edge was inspected. No immediate contradiction found for 002-817, 002-820, 002-861, 060-920, 060-550, 060-820, or 060-692. This is source-compatible only, not source-normalized acceptance."
+    },
+    {
+      "test": "penultimate-final independence null",
+      "source_report": "data/open_prototype/reports/risky_terminal_governor_penult_final_pairing_null_20260531.json",
+      "result": "Across 2,127 terminal text families, preserving penultimate signs and shuffling final signs gives p=0/5000 for target hit-pair count, minimum target count, multi-penult count, shared 820, and exact target shape."
+    },
+    {
+      "test": "leave-block stress, especially Mohenjo-daro SEAL:S",
+      "source_report": "data/open_prototype/reports/risky_terminal_governor_leave_block_stress_20260531.json",
+      "result": "Removing weak object/site identity rows leaves the strict/near split intact. Removing Mohenjo-daro SEAL:S leaves the core edges 002-817, 002-820, and 060-920 strict, but drops lower-support 060-550/060-820/060-692 below the n>=20 strict floor. This support-limits the full five-edge shape under the harshest block, without contradicting terminal behavior."
+    }
+  ],
+  "killed_or_demoted": [
+    {
+      "claim": "All 060 cap signs form a shared visual cap-shape family.",
+      "decision": "demoted",
+      "reason": "Blind packet supports visually distinctive 060-920 and weakly one 060-820 case, but not 692/550 as a common visual family."
+    },
+    {
+      "claim": "700 is a clean terminal governor parallel to 002/060.",
+      "decision": "killed",
+      "reason": "Raw row-shuffle output found 700-like terminal pressure, but exact collapse drops 700-033/034/032 below strict thresholds."
+    },
+    {
+      "claim": "060 cap choice has broad metadata semantics by site/type/symbol/material/shape.",
+      "decision": "killed for this phase",
+      "reason": "No corrected semantic split survived; do not treat 920/692/550/820 as animal/material semantic labels yet."
+    },
+    {
+      "claim": "002 closure choice has a robust feeder-selector grammar parallel to 060.",
+      "decision": "demoted to one wild shot",
+      "reason": "Only 503-002 -> 817 appears at 5/5 exact cells; closure-label null p=0.0892 and no damaged 503-002-000 prediction exists."
+    },
+    {
+      "claim": "741/742/745 are one proven graphic allograph family.",
+      "decision": "demoted",
+      "reason": "Local source panels support the terminal environment, but do not force a single-shape merger. Keep the promoted claim as syntactic alloseries, not visual allography."
+    },
+    {
+      "claim": "060-692 visibly closes a physical line or segment in all nonterminal exceptions.",
+      "decision": "demoted",
+      "reason": "Source peek supports local syntactic restart, but physical-line restart is clear only in M-1127 among checked rows."
+    },
+    {
+      "claim": "407 provides a diffuse Meluhha bilingual anchor for sound.",
+      "decision": "demoted to semantic convergence",
+      "reason": "Cuneiform Meluhha copper contexts and Indus 407 copper/register context converge semantically, but complete external Indus rows do not carry 407 and no object-level readable-script bridge is present."
+    }
+  ],
+  "ranked_live_bets": [
+    {
+      "rank": 1,
+      "tier": "promoted candidate",
+      "bet": "002 and 060 are terminal governors with a shared 820 closure and distinct closure inventories.",
+      "why_it_survives": "Exact collapse, terminal shuffle, row-order forger, leave-site stress, object dedupe, text-family collapse, penult-final independence null, source spot audit, and reversal test all point the same way.",
+      "why_not_accepted_yet": "Needs token-boxed source audit for a stratified sample and a stricter symbol-family/source-family null before it should enter the accepted_claims ledger. The full 060 lower-branch inventory is support-limited when Mohenjo-daro SEAL:S is removed."
+    },
+    {
+      "rank": 2,
+      "tier": "promoted candidate",
+      "bet": "741/742/745 selects the marked 060-920 closure.",
+      "why_it_survives": "40/52 target hits and 0/84 sibling leaks after object collapse; 39/51 and 0/76 after text-family collapse; survives leave-Mohenjo and leave-Harappa; cap-label shuffle p=0/5000.",
+      "why_not_accepted_yet": "Visual audit keeps this as syntactic alloseries, not proven allography; still needs stratified source-token boxing."
+    },
+    {
+      "rank": 3,
+      "tier": "candidate",
+      "bet": "820 is a portable wheel/rosette-like closure sign shared by 002 and 060.",
+      "why_it_survives": "It is the only multigovernor high-support closure sign under the tested thresholds.",
+      "why_not_promoted_yet": "Visual source-peek is positive but thin; L-21 is poor and the old Brahmi-value route is blocked."
+    },
+    {
+      "rank": 4,
+      "tier": "candidate",
+      "bet": "060-692 is an internal-boundary near-cap, not a failed cap.",
+      "why_it_survives": "All five exact nonterminal tails are opener-class signs; object-level terminal share is 31/35.",
+      "why_not_promoted_yet": "Harappa removal weakens it and physical-line restart support is narrow."
+    },
+    {
+      "rank": 5,
+      "tier": "candidate",
+      "bet": "407 carries copper/rectangular administrative semantic load and weakly converges with cuneiform Meluhha copper contexts.",
+      "why_it_survives": "Internal context tests are strong and already promoted in earlier reports.",
+      "why_not_promoted_here": "External-object bridge is absent: 0/20 complete Mesopotamia/Gulf/Iranian Plateau rows with 407."
+    },
+    {
+      "rank": 6,
+      "tier": "wild shot",
+      "bet": "503-002 predicts 817.",
+      "why_it_survives": "5/5 exact cells across Harappa and Mohenjo-daro.",
+      "why_it_is_weak": "Shuffle p=0.0892 and no damaged-row adjudicator exists."
+    }
+  ],
+  "next_destructive_tests_for_next_expand": [
+    "Run stratified source-token boxing for the promoted 002/060 governor edges and the 741/742/745 alloseries without relying on catalog segmentation.",
+    "Create a stricter source-family null that clusters by source plate/panel or by graphic family before rescoring the terminal-governor graph.",
+    "Use the damaged terminal rows to make blind predictions only for 002-000/060-000 rows whose source images are good enough to adjudicate 817/820/861/920/550/692.",
+    "Source-audit a stratified sample of the seven terminal-governor edges, prioritizing non-Mohenjo and non-Harappa rows plus the shared 820 edge.",
+    "Test whether 820 has a visual rosette/wheel class across all high-confidence 002-820 and 060-820 source panels before reopening any Brahmi/descent value hypothesis."
+  ]
+}

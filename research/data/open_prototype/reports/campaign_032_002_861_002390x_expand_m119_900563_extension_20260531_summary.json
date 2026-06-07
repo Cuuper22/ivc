@@ -1,0 +1,27 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "expand_m119_900563_extension",
+  "rows": {
+    "raw": 5679,
+    "canonical_numeric_sequences": 3503,
+    "sign_900_rows": 85,
+    "sign_563_rows": 1,
+    "exact_900_563_rows": 1,
+    "exact_125_632_032_900_563_rows": 1
+  },
+  "bets": [
+    {
+      "bet_id": "EXPAND_M119_900563_SECONDARY_EXTENSION",
+      "tier": "wild_shot_singleton"
+    },
+    {
+      "bet_id": "EXPAND_563_IS_NOT_CURRENTLY_A_SIGN_VALUE",
+      "tier": "candidate_negative"
+    },
+    {
+      "bet_id": "EXPAND_900_IS_TOO_PRODUCTIVE_TO_EXPLAIN_M119_ALONE",
+      "tier": "candidate_negative"
+    }
+  ]
+}

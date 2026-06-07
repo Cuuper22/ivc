@@ -1,0 +1,30 @@
+{
+  "date": "2026-05-26",
+  "question": "What would make local token 110 and Parpola sign no. 41 an admissible crosswalk rather than a visual hunch?",
+  "result": "The immediate admissibility test is panel identity, not visual similarity: H-2148's clean single-panel source image must be explicitly tied to both local token 110 and Parpola sign no. 41 on the same physical side. Until then the crosswalk remains P0.",
+  "admissible_only_if": [
+    "H-2148 source image clearly shows the clean single-panel target",
+    "the same physical side/panel is explicitly mapped to local 110",
+    "Parpola sign no. 41 is demonstrably assigned to that same physical side/panel",
+    "the graphic form is stable under source-quality inspection",
+    "at least one outside control or independent branch witness supports the same relation",
+    "H-940 is either excluded or re-enters only after source-grade topology match"
+  ],
+  "kill_if": [
+    "H-2148 clean panel maps to a local row other than 110",
+    "Parpola sign no. 41 refers to the companion side",
+    "source-grade H-2148 evidence shows damage, hatching, or multi-sign clustering",
+    "outside controls map the same graphic form to a different local token",
+    "H-940 remains graphically different while still belonging to Parpola no. 41",
+    "local 110 splits into multiple source-visible graphic classes with no allographic rule"
+  ],
+  "status": "P0_crosswalk_hypothesis_only",
+  "not_accepted": [
+    "local 110 equals Parpola sign no. 41",
+    "sign value",
+    "phonetic value",
+    "language identification",
+    "translation"
+  ],
+  "stored_gate": "docs/h2148_110_parpola41_crosswalk_decision_gate.md"
+}

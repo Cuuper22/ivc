@@ -1,0 +1,48 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "002_head_class_discriminator",
+  "same_register_scope": "Mohenjo-daro|SEAL:S|square|Steatite",
+  "frames": 288,
+  "supported_heads": 10,
+  "head_390": {
+    "checked_date": "2026-05-31",
+    "head": "390",
+    "frames": "8",
+    "immediate_end_count": "0",
+    "immediate_end_rate": "0/8",
+    "takes_x_count": "8",
+    "takes_x_rate": "8/8",
+    "x_terminal_count": "5",
+    "x_terminal_rate": "5/8",
+    "x_continuing_count": "3",
+    "x_continuing_rate": "3/8",
+    "dominant_x": "125",
+    "dominant_x_rate": "3/8",
+    "x_distribution": "125:3;095:1;140:1;346:1;692:1;707:1",
+    "sample_objects": "M-38;M-70;M-71;M-119;M-213;M-232;M-708;M-735",
+    "head_class": "branch_selector_candidate"
+  },
+  "terminal_default_heads": [
+    "817",
+    "820",
+    "824",
+    "861"
+  ],
+  "branch_bearing_heads": [
+    "220",
+    "368",
+    "374",
+    "390"
+  ],
+  "new_bets": {
+    "HEAD_CLASS_390_BRANCH_SELECTOR": "candidate",
+    "TERMINAL_DEFAULT_HEADS_861_817_820": "wild shot",
+    "BRANCH_HEAD_CLASS_NOT_SIGN_MEANING": "candidate"
+  },
+  "immediate_tests": [
+    "Source-collapse terminal-default heads 861/817/820 to make sure they are not duplicate/register artifacts.",
+    "Hunt strict same-register 002-390 with no X; that kills branch-selector 390.",
+    "Hunt strict same-register 002-390-non125-Y continuation; that kills binary 125/non125 parser."
+  ]
+}

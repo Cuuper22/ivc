@@ -1,0 +1,22 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "lipi_frame700_034_clean_two_panel_close_read",
+  "source_scope": "manual close-read of IA CISI page images for H-930 and H-789",
+  "input_objects": 2,
+  "close_read_rows": 2,
+  "source_panel_count_matches_local_side_count": 2,
+  "short_panel_candidate_on_printed_B": 2,
+  "companion_panel_candidate_on_printed_A": 2,
+  "grade_counts": {
+    "B_clean_two_panel_locator_lower_stroke_confidence": 1,
+    "B_plus_clean_two_panel_locator_not_subtype_validation": 1
+  },
+  "decision_counts": {
+    "use_as_clean_control_for_calibrating_next_source_close_reads": 1,
+    "use_as_independent_lane_control_after_preserving_scan_uncertainty": 1
+  },
+  "accepted_decipherment_claims": 0,
+  "upgraded_evidence": "H-930 and H-789 are upgraded from page-located clean two-panel candidates to close-read clean controls for panel-count and short-vs-long side calibration.",
+  "still_blocked": "Neither scan independently establishes 032/033 subtype, reading direction, physical side order, sign meaning, phonetic value, or translation.",
+  "immediate_research_consequence": "H-930 should calibrate strict-local source close-reading; H-789 should calibrate independent-lane controls. Messy targets H-771, H-893, H-925, H-983, and H-353 cannot inherit these upgrades without variant/side reconciliation."
+}

@@ -1,0 +1,63 @@
+{
+  "generated_at_local": "2026-05-28T23:13:58-07:00",
+  "experiment": "E5.3a Linear B Series D Gapped Held-Out Test",
+  "source_file": "data/open_prototype/known_scripts/linear_b_series_d/Samples.txt",
+  "source_md5": "0c9b9190b86840c82cafdbf4f4b8c827",
+  "source_md5_verified": true,
+  "gapped_rows": 513,
+  "gap_encoding": "exact sign token \"*\" after hyphen splitting; asterisk-number signs such as *56 are preserved as real tokens",
+  "gap_count_per_row": {
+    "exactly_one_gap_rows": 513,
+    "other_gap_count_rows": 0
+  },
+  "ivc_like_length_cap": {
+    "cap_sign_tokens": 8,
+    "ivc_numeric_clean_rows": 2883,
+    "ivc_length_mean": 4.039195,
+    "ivc_length_median": 4,
+    "ivc_length_p95": 8,
+    "eligible_gapped_rows": 299
+  },
+  "duplicate_exposure": {
+    "exact_duplicate_sequence_rows_in_targets": 40,
+    "row_leave_one_out": "removes only the target row from training; exact duplicate sequences can remain",
+    "sequence_leave_one_out": "removes every clean-row training sequence identical to the target original sequence"
+  },
+  "primary_results": {
+    "all_513_gapped_rows__row_leave_one_out": {
+      "evaluated_gaps": 513,
+      "top1_accuracy": 0.300195,
+      "top5_accuracy": 0.633528,
+      "mrr": 0.454565,
+      "median_rank": 3
+    },
+    "all_513_gapped_rows__sequence_leave_one_out": {
+      "evaluated_gaps": 513,
+      "top1_accuracy": 0.294347,
+      "top5_accuracy": 0.625731,
+      "mrr": 0.44884,
+      "median_rank": 3
+    },
+    "ivc_p95_length_cap_gapped_rows__row_leave_one_out": {
+      "evaluated_gaps": 299,
+      "top1_accuracy": 0.304348,
+      "top5_accuracy": 0.652174,
+      "mrr": 0.464666,
+      "median_rank": 3
+    },
+    "ivc_p95_length_cap_gapped_rows__sequence_leave_one_out": {
+      "evaluated_gaps": 299,
+      "top1_accuracy": 0.294314,
+      "top5_accuracy": 0.638796,
+      "mrr": 0.454842,
+      "median_rank": 3
+    }
+  },
+  "interpretation_boundary": "Known-script comparator only. This evaluates recovery of source-provided synthetic Linear B gaps with known readings hidden. It does not validate any IVC sign, side relation, semantic field, phonetic value, language identity, or translation.",
+  "artifact_files": [
+    "data/open_prototype/reports/linear_b_series_d_gapped_alignment.csv",
+    "data/open_prototype/reports/linear_b_series_d_gapped_heldout_predictions.csv",
+    "data/open_prototype/reports/linear_b_series_d_gapped_heldout_summary.csv",
+    "data/open_prototype/reports/linear_b_series_d_gapped_heldout_summary.json"
+  ]
+}

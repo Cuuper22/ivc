@@ -1,0 +1,89 @@
+{
+  "date": "2026-05-29",
+  "canonical_rows": 144,
+  "source_ready_rows": 14,
+  "quantified_rows": 12,
+  "visual_only_unquantified_rows": [
+    "M-355",
+    "M-1267"
+  ],
+  "contact_sheet": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\032_002_861_source_first_terminal_space\\campaign_032_002_861_source_first_terminal_space_contact_sheet.png",
+  "decisions": [
+    {
+      "test": "quantified_tail_windows_vs_bare_margins",
+      "decision": "terminal_space_adversary_generalizes_across_current_quantified_source_rows",
+      "evidence": "tailed windows span 120-265px / share 0.177-0.433; bare post-terminal margins span 28-45px / share 0.040-0.063",
+      "limit": "tailed windows are candidate tail content boxes, while bare margins are terminal-side margins from source-control overlays; this is a blocking adversary, not an automated proof"
+    },
+    {
+      "test": "tail_edge_attachment",
+      "decision": "same_line_tail_attachment_survives_as_positional_evidence",
+      "evidence": "5/6 quantified tailed rows touch the marked terminal edge; all six have same-line attachment verdicts",
+      "limit": "exact 861|tail boundaries and sign identities remain catalog-mediated"
+    },
+    {
+      "test": "bare_tail_sized_empty_slot",
+      "decision": "not_observed_in_current_quantified_bare_controls",
+      "evidence": "largest measured bare post-terminal margin is 45px, below the smallest measured tailed terminal-content window 120px",
+      "limit": "does not prove no available physical space existed outside current boxes; requires fresh blind source recut before grammar promotion"
+    },
+    {
+      "test": "visual_only_rows",
+      "decision": "not_comparable_for_terminal_space",
+      "evidence": "M-355:long_continuation;M-1267:closure",
+      "limit": "M-355 and M-1267 remain source-visible but unquantified in this packet"
+    },
+    {
+      "test": "grammar_promotion",
+      "decision": "blocked",
+      "evidence": "source-first segmentation keeps typed continuation visible, but terminal-space and formula-template attacks both remain active",
+      "limit": "promote only after blind terminal-space recut finds bare controls with tail-sized space still choosing closure or exact/near-exact formulas alternating under comparable layout"
+    }
+  ],
+  "class_rows": [
+    {
+      "tail_class": "closure",
+      "source_ready_rows": 7,
+      "quantified_rows": 6,
+      "tails": "<END>:7",
+      "prefix_last2_distribution": "220 032:3;740 176:1;390 803:1;233 803:1;720 175:1",
+      "register_distribution": "Mohenjo-daro|SEAL:S|Bull1:W|square:3;Harappa|SEAL:S|Bull1:W|square:1;Mohenjo-daro|SEAL:S|Bull1|square:1;Mohenjo-daro|SEAL:S|Bull|square:1;Mohenjo-daro|SEAL:R|None|rectangular:1",
+      "metric_status_distribution": "quantified:6;visual_only_unquantified:1",
+      "width_or_margin_range": "margin 28-45px / share 0.040-0.063",
+      "verdict": "bare_controls_show_terminal_edge_but_not_tail_sized_post_margin"
+    },
+    {
+      "tail_class": "fixed_pair",
+      "source_ready_rows": 3,
+      "quantified_rows": 3,
+      "tails": "533 717:2;255 416:1",
+      "prefix_last2_distribution": "220 032:1;100 176:1;233 805:1",
+      "register_distribution": "Mohenjo-daro|SEAL:R|None|cuboid-convex:2;Mohenjo-daro|SEAL:S|Bull1:S|square:1",
+      "metric_status_distribution": "quantified:3",
+      "width_or_margin_range": "tail-window 195-265px / share 0.331-0.433",
+      "verdict": "same_line_source_visible_fixed_unit_but_large_terminal_window_and_narrow_register"
+    },
+    {
+      "tail_class": "long_continuation",
+      "source_ready_rows": 1,
+      "quantified_rows": 0,
+      "tails": "360 520 919 140:1",
+      "prefix_last2_distribution": "231 235:1",
+      "register_distribution": "Mohenjo-daro|SEAL:R|None|cuboid-convex:1",
+      "metric_status_distribution": "visual_only_unquantified:1",
+      "width_or_margin_range": "unquantified",
+      "verdict": "source_visible_adversary_visual_only_not_metric_promotable"
+    },
+    {
+      "tail_class": "simple_single",
+      "source_ready_rows": 3,
+      "quantified_rows": 3,
+      "tails": "603:3",
+      "prefix_last2_distribution": "220 032:1;798 803:1;740 055:1",
+      "register_distribution": "Mohenjo-daro|SEAL:S|Gaur|square:1;Mohenjo-daro|SEAL:S|Bull1:W|square:1;Mohenjo-daro|SEAL:R|None|rectangular:1",
+      "metric_status_distribution": "quantified:3",
+      "width_or_margin_range": "tail-window 120-225px / share 0.177-0.286",
+      "verdict": "same_line_source_visible_but_tail_space_adversary_active"
+    }
+  ]
+}

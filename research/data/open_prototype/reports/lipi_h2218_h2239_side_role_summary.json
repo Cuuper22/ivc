@@ -1,0 +1,81 @@
+{
+  "source": "H-2218 through H-2239 side-role template probe",
+  "checked_at": "2026-05-24",
+  "input": "data/open_prototype/reports/lipi_h2218_h2239_fig4_mapping.csv",
+  "source_rows": 22,
+  "complete_three_role_inventory_rows": 22,
+  "side3_role_15x_003_rows": 22,
+  "two_template_fit_rows": 22,
+  "role_counts_by_side": {
+    "side_1": {
+      "role_700_03x": 9,
+      "role_861_003": 13
+    },
+    "side_2": {
+      "role_700_03x": 13,
+      "role_861_003": 9
+    },
+    "side_3": {
+      "role_15x_003": 22
+    }
+  },
+  "template_class_counts": {
+    "template_700_861_15x": 9,
+    "template_861_700_15x": 13
+  },
+  "exact_text_counts_by_role": {
+    "role_861_003": {
+      "+861-003+": 22
+    },
+    "role_700_03x": {
+      "+700-033+": 1,
+      "+700-034+": 21
+    },
+    "role_15x_003": {
+      "+154-003+": 1,
+      "+156-003+": 21
+    }
+  },
+  "variant_localization": [
+    {
+      "cisi": "H-2237",
+      "fig4_number": 17,
+      "manufacturing_group": "group_3",
+      "side_index": 3,
+      "side_text": "+154-003+",
+      "side_role": "role_15x_003",
+      "template_class": "template_700_861_15x"
+    },
+    {
+      "cisi": "H-2238",
+      "fig4_number": 18,
+      "manufacturing_group": "group_3",
+      "side_index": 1,
+      "side_text": "+700-033+",
+      "side_role": "role_700_03x",
+      "template_class": "template_700_861_15x"
+    }
+  ],
+  "rowwise_role_permutation_checks": {
+    "role_15x_003_fixed_on_side_3": {
+      "observed": 22,
+      "eligible_n": 22,
+      "exact_p_ge_observed": "3.186635545325e-11",
+      "null": "one_of_three_role_positions_per_object"
+    },
+    "two_template_fit_861_700_15x_or_700_861_15x": {
+      "observed": 22,
+      "eligible_n": 22,
+      "exact_p_ge_observed": "3.186635545325e-11",
+      "null": "two_of_six_role_permutations_per_object"
+    }
+  },
+  "key_observation": "All 22 local rows fit a three-role inventory: one +861-003+ side, one +700-03x+ side, and one +15x-003+ side. The +15x-003+ role is always local side 3, while the +861-003+ and +700-03x+ roles swap between local sides 1 and 2.",
+  "interpretation_boundary": "This is a local side-role template and catalog-side stability probe only. It accepts no physical side function, numerical value, metrological reading, sign meaning, phonetic value, language identity, or translation.",
+  "outputs": [
+    "data/open_prototype/reports/lipi_h2218_h2239_side_role_templates.csv",
+    "data/open_prototype/reports/lipi_h2218_h2239_side_role_counts.csv",
+    "data/open_prototype/reports/lipi_h2218_h2239_side_role_tests.csv",
+    "data/open_prototype/reports/lipi_h2218_h2239_side_role_summary.json"
+  ]
+}

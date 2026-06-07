@@ -1,0 +1,61 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "x000_robustness_controls",
+  "controls": 23,
+  "serious_controls": 23,
+  "survives": 21,
+  "damaging": [
+    "non_seal_only",
+    "collapse_by_x_and_site_all_terminal"
+  ],
+  "baseline": {
+    "checked_date": "2026-05-31",
+    "control_type": "baseline",
+    "label": "all_xslot_rows",
+    "x000_rows": "27",
+    "x000_terminal": "24/27",
+    "x000_rate": "0.889",
+    "non000_rows": "245",
+    "non000_terminal": "146/245",
+    "non000_rate": "0.596",
+    "gap": "0.293",
+    "verdict": "survives",
+    "x000_sites": "Mohenjo-daro:9;Harappa:8;Kalibangan:3;Nausharo:2;Allahdino:1;Dholavira:1;Rakhigarhi:1;Shikarpur:1;Tepe Yahya:1",
+    "x000_heads": "000:3;575:3;817:3;031:2;820:2;861:2;095:1;220:1;267:1;296:1;297:1;416:1;435:1;452:1;520:1;700:1;703:1;892:1",
+    "examples": "Ad-8:861-000-<END> | H-1038:297-000-<END> | H-2338:575-000-<END> | -:617.1:575-000-<END> | H-78:575-000-<END> | H-461:452-000-<END> | H-593:220-000-<END> | H-609:817-000-<END>"
+  },
+  "seal": {
+    "checked_date": "2026-05-31",
+    "control_type": "domain",
+    "label": "seal_only",
+    "x000_rows": "16",
+    "x000_terminal": "15/16",
+    "x000_rate": "0.938",
+    "non000_rows": "217",
+    "non000_terminal": "128/217",
+    "non000_rate": "0.590",
+    "gap": "0.348",
+    "verdict": "survives",
+    "x000_sites": "Mohenjo-daro:8;Harappa:5;Kalibangan:2;Rakhigarhi:1",
+    "x000_heads": "000:2;817:2;031:1;220:1;267:1;296:1;297:1;416:1;435:1;452:1;575:1;700:1;703:1;820:1",
+    "examples": "H-1038:297-000-<END> | H-78:575-000-<END> | H-461:452-000-<END> | H-593:220-000-<END> | H-609:817-000-<END> | K-44:000-000-<END> | M-1787:703-000-<END> | M-1884:416-000-<END>"
+  },
+  "non_seal": {
+    "checked_date": "2026-05-31",
+    "control_type": "domain",
+    "label": "non_seal_only",
+    "x000_rows": "11",
+    "x000_terminal": "9/11",
+    "x000_rate": "0.818",
+    "non000_rows": "28",
+    "non000_terminal": "18/28",
+    "non000_rate": "0.643",
+    "gap": "0.175",
+    "verdict": "damages_x000_rule",
+    "x000_sites": "Harappa:3;Nausharo:2;Allahdino:1;Dholavira:1;Kalibangan:1;Mohenjo-daro:1;Shikarpur:1;Tepe Yahya:1",
+    "x000_heads": "575:2;861:2;000:1;031:1;095:1;520:1;817:1;820:1;892:1",
+    "examples": "Ad-8:861-000-<END> | H-2338:575-000-<END> | -:617.1:575-000-<END> | H-909:820-000-<END> | M-451:520-000-000 000 906 388 | TY-106:095-000-<END> | -:4344.1:031-000-<END> | K-155:817-000-<END>"
+  },
+  "conclusion": "X=000 remains candidate but takes robustness damage."
+}

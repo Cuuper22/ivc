@@ -1,0 +1,5 @@
+checked_date,check_id,result,evidence,parser_consequence
+2026-05-31,CONSOLIDATE_LEFT_235_TARGET_PREDICTS_125,pass_source_thin,M-38:235->125->632 032:unbound | M-735:235->125->195:strict,"235 remains a P086 trigger candidate in target 002-390, but only one exact strict 390 row carries it."
+2026-05-31,CONSOLIDATE_LEFT_032_AVOIDS_125,pass_split_source_blocked,M-70:032->692-><END>:strict | -:3335.1:032->590->032:unbound,032 no-235 suppression survives locally; M-70 is strict but 3335.1 blocks the split from promotion.
+2026-05-31,CONSOLIDATE_LEFT_004_IS_NEUTRAL_SPLIT,partial_source_blocked,H-1993:004->095-><END>:route_only | Sktd-1:004->125->820:panel_permissive_not_strict,004 split survives only as a prediction because H-1993 is route-only and Sktd-1 is wrapped/permissive.
+2026-05-31,CONSOLIDATE_LEFT_OPERATORS_ARE_NOT_SIGN_VALUES,pass_demote_semantics,235 has target-only trigger pressure; 032 and 004 split; all three are source- or scope-limited.,"Treat left contexts as local operators, not sign values or translations."

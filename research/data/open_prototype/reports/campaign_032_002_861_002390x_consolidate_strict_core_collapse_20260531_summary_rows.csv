@@ -1,0 +1,4 @@
+checked_date,bucket,n,x_distribution,terminal_distribution,left_distribution,decision,evidence
+2026-05-31,strict_core_all,4,125:2;095:1;692:1,False:2;True:2,032:1;142:1;235:1;484:1,strict_core_preserves_open_vs_terminal_syntax_only,M-70:032->692-><END> | M-71:142->095-><END> | M-119:484->125->632 032 900 563 | M-735:235->125->195
+2026-05-31,strict_core_open,2,125:2,False:2,235:1;484:1,125_open_syntax_survives_strict_core,M-119:484->125->632 032 900 563 | M-735:235->125->195
+2026-05-31,strict_core_terminal,2,095:1;692:1,True:2,032:1;142:1,095_692_terminal_syntax_survives_strict_core,M-70:032->692-><END> | M-71:142->095-><END>

@@ -1,0 +1,41 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "candidate_id": "risky_806_series_holdout_source_peek_20260531",
+  "bet_under_test": "Non-Harappa 154/158 + 806 rows obey the 465..475 successor-band prediction.",
+  "source_peek_rows": [
+    {
+      "cisi": "M-371",
+      "catalog_text": "+617-142-384-032-154-806-467+",
+      "image_path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-371_a.jpg",
+      "visual_result": "Row-level visible long signband. Compatible with a right/terminal cluster corresponding to the catalogued 154-806-467 tail, but exact token boxes are not independently established."
+    },
+    {
+      "cisi": "M-470",
+      "catalog_text": "+400-158-806-473+",
+      "image_path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-470_A.jpg",
+      "visual_result": "Row-level visible four-sign band. Compatible with the catalogued 158-806-473 series row; exact token identity remains catalog-mediated."
+    },
+    {
+      "cisi": "M-1419",
+      "catalog_text": "+400-158-806-467+",
+      "image_path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-1419_A.jpg",
+      "visual_result": "Row-level visible four-sign band. Compatible with the catalogued 158-806-467 series row; exact token identity remains catalog-mediated."
+    }
+  ],
+  "unresolved_holdout_rows_without_local_image": [
+    "M-1986 +154-806-468+",
+    "M-1957 +154-806-474-013-820+",
+    "M-1683 +155-806-467-001-692+",
+    "M-1962 +155-806-468+",
+    "Dholavira +154-806-472-013-220-455-806+",
+    "M-357 +740-100-806-472-240-806-001-820+"
+  ],
+  "decision": "keep_806_series_as_promoted_metadata_candidate_not_source_boxed",
+  "why_not_accepted": [
+    "Only three non-Harappa holdout rows were row-level source-visible in the local cache.",
+    "No blind boxes have independently recovered 154/158, 806, and the 46x/47x successor signs.",
+    "The 155/100 extension members remain source-unchecked locally."
+  ],
+  "next_destructive_test": "Blind-box M-371/M-470/M-1419 plus Harappa positives and nonprefix-806 controls; separately locate images for M-1986, M-1957, M-1683, M-1962, M-357, and the Dholavira row."
+}

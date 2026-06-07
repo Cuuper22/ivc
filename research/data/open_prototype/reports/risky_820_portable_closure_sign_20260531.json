@@ -1,0 +1,599 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_820_portable_closure_sign_20260531",
+  "tier": "candidate",
+  "bet": "Sign 820 is a portable closure sign shared by at least two governors: 002 and 060. It is not simply the terminal partner of one local formula. In exact-collapsed bigram cells, 002-820 and 060-820 both exceed 20 cells and 0.90 terminal share.",
+  "thresholds": {
+    "minimum_exact_cells_per_governor_branch": 20,
+    "minimum_terminal_share_per_governor_branch": 0.9
+  },
+  "target_820": {
+    "target_rank": 1,
+    "score": {
+      "target": "820",
+      "qualified_governor_count": 2,
+      "qualified_governor_cells": 98,
+      "qualified_terminal_cells": 93,
+      "qualified_governors": "002:75/70 060:23/23",
+      "total_incoming_exact_cells": 152,
+      "incoming_branches": 29
+    },
+    "incoming_branches": [
+      {
+        "target": "820",
+        "prev": "002",
+        "exact_cells": 75,
+        "terminal_cells": 70,
+        "terminal_share": 0.9333333333333333,
+        "sites": 7,
+        "types": 6,
+        "examples": [
+          "-:002-820-<END>:+236-002-820+",
+          "H-1045:002-820-<END>:+740-900-005-002-820+",
+          "H-1967:002-820-<END>:+382-760-382-002-820+",
+          "H-1882:002-820-<END>:+002-820+",
+          "H-1680:002-820-<END>:+390-003-002-820+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "060",
+        "exact_cells": 23,
+        "terminal_cells": 23,
+        "terminal_share": 1,
+        "sites": 5,
+        "types": 4,
+        "examples": [
+          "H-2090:060-820-<END>:+869-060-820+",
+          "H-715:060-820-<END>:+526-550-060-820+",
+          "K-16:060-820-<END>:+090-740-240/060-820+",
+          "L-21:060-820-<END>:+156-142-060-820+",
+          "L-122:060-820-<END>:+527-550-740-443-060-820+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "001",
+        "exact_cells": 15,
+        "terminal_cells": 11,
+        "terminal_share": 0.7333333333333333,
+        "sites": 3,
+        "types": 3,
+        "examples": [
+          "H-2089:001-820-<END>:+869-060-001-820+",
+          "H-26:001-820-<END>:+740-388-231-240-798-001-820+",
+          "H-411:001-820-<END>:+740-440-240-001-820+",
+          "M-1762:001-820-<END>:+645-202-001-820+",
+          "M-157:001-820-<END>:+740-900-790-233-798-001-820+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "032",
+        "exact_cells": 7,
+        "terminal_cells": 1,
+        "terminal_share": 0.14285714285714285,
+        "sites": 3,
+        "types": 4,
+        "examples": [
+          "H-799:032-820-100:+032-820-100-415+",
+          "M-1853:032-820-140:+032-820-140-005+",
+          "M-356:032-820-920:+400-595-420-125-032-820-920-140+",
+          "M-494:032-820-740:+921-100-415-904-017-032-820-740-904-741+",
+          "M-495:032-820-740:+740-100-415-904-017-032-820-740-904-741+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "013",
+        "exact_cells": 4,
+        "terminal_cells": 4,
+        "terminal_share": 1,
+        "sites": 2,
+        "types": 2,
+        "examples": [
+          "M-1957:013-820-<END>:+154-806-474-013-820+",
+          "M-400:013-820-<END>:+617-142-013-820+",
+          "M-1979:013-820-<END>:+740-923-013-820+",
+          "-:013-820-<END>:+390-016-013-820+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "595",
+        "exact_cells": 3,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 2,
+        "types": 2,
+        "examples": [
+          "H-80:595-820-100:+595-820-100-415-741-315-850+",
+          "H-506:595-820-002:+294-350-595-820-002-820+",
+          "M-1290:595-820-706:+595-820-706+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "031",
+        "exact_cells": 2,
+        "terminal_cells": 1,
+        "terminal_share": 0.5,
+        "sites": 2,
+        "types": 2,
+        "examples": [
+          "H-1198:031-820-<END>:+740-061-001-031-820+",
+          "-:031-820-104:+031-820-104-013-817+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "125",
+        "exact_cells": 2,
+        "terminal_cells": 2,
+        "terminal_share": 1,
+        "sites": 2,
+        "types": 1,
+        "examples": [
+          "M-41:125-820-<END>:+740-636-240-233-235-002-405-125-820+",
+          "Sktd-1:125-820-<END>:+390-004-002-390-125-820+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "014",
+        "exact_cells": 1,
+        "terminal_cells": 1,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "examples": [
+          "H-472:014-820-<END>:+740-585-900-014-820+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "033",
+        "exact_cells": 1,
+        "terminal_cells": 1,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "examples": [
+          "H-2018:033-820-<END>:+033-820+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "062",
+        "exact_cells": 1,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 1,
+        "types": 1,
+        "examples": [
+          "M-664:062-820-500:+151-062-820-500-706+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "090",
+        "exact_cells": 1,
+        "terminal_cells": 1,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "examples": [
+          "M-268:090-820-<END>:+215-001-480-090-820+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "140",
+        "exact_cells": 1,
+        "terminal_cells": 1,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "examples": [
+          "M-634:140-820-<END>:+679-740-220-415-001-820-812-820-140-820+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "240",
+        "exact_cells": 1,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 1,
+        "types": 1,
+        "examples": [
+          "-:240-820-033:+090-740-100-415-240-820-033+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "267",
+        "exact_cells": 1,
+        "terminal_cells": 1,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "examples": [
+          "M-214:267-820-<END>:+400-267-820+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "390",
+        "exact_cells": 1,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 1,
+        "types": 1,
+        "examples": [
+          "M-48:390-820-463:+390-820-463-060-368-920+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "400",
+        "exact_cells": 1,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 1,
+        "types": 1,
+        "examples": [
+          "H-814:400-820-100:+400-820-100-415+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "413",
+        "exact_cells": 1,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 1,
+        "types": 1,
+        "examples": [
+          "M-108:413-820-220:+413-820-220-065-798-550-820+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "415",
+        "exact_cells": 1,
+        "terminal_cells": 1,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "examples": [
+          "-:415-820-<END>:+415-820+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "530",
+        "exact_cells": 1,
+        "terminal_cells": 1,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "examples": [
+          "M-623:530-820-<END>:+740-760-175-176-220-415-798-002-299-530-820+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "550",
+        "exact_cells": 1,
+        "terminal_cells": 1,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "examples": [
+          "M-108:550-820-<END>:+413-820-220-065-798-550-820+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "611",
+        "exact_cells": 1,
+        "terminal_cells": 1,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "examples": [
+          "-:611-820-<END>:+798-821-031-645-850-820-388-611-820+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "717",
+        "exact_cells": 1,
+        "terminal_cells": 1,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "examples": [
+          "M-1667:717-820-<END>:+740-690-435-255-220-032-002-717-820+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "760",
+        "exact_cells": 1,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 1,
+        "types": 1,
+        "examples": [
+          "M-700:760-820-368:+740-760-820-368-263+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "798",
+        "exact_cells": 1,
+        "terminal_cells": 1,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "examples": [
+          "H-1402:798-820-<END>:+740-798-820+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "812",
+        "exact_cells": 1,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 1,
+        "types": 1,
+        "examples": [
+          "M-634:812-820-140:+679-740-220-415-001-820-812-820-140-820+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "840",
+        "exact_cells": 1,
+        "terminal_cells": 1,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "examples": [
+          "H-88:840-820-<END>:+740-032-840-820+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "850",
+        "exact_cells": 1,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 1,
+        "types": 1,
+        "examples": [
+          "-:850-820-388:+798-821-031-645-850-820-388-611-820+"
+        ]
+      },
+      {
+        "target": "820",
+        "prev": "861",
+        "exact_cells": 1,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 1,
+        "types": 1,
+        "examples": [
+          "K-6:861-820-551:+622-740-717/368-861-820-551+"
+        ]
+      }
+    ]
+  },
+  "whole_corpus_comparator": {
+    "top_20_targets_by_qualified_multigovernor_closure": [
+      {
+        "target": "820",
+        "qualified_governor_count": 2,
+        "qualified_governor_cells": 98,
+        "qualified_terminal_cells": 93,
+        "qualified_governors": "002:75/70 060:23/23",
+        "total_incoming_exact_cells": 152,
+        "incoming_branches": 29
+      },
+      {
+        "target": "817",
+        "qualified_governor_count": 1,
+        "qualified_governor_cells": 108,
+        "qualified_terminal_cells": 105,
+        "qualified_governors": "002:108/105",
+        "total_incoming_exact_cells": 143,
+        "incoming_branches": 13
+      },
+      {
+        "target": "920",
+        "qualified_governor_count": 1,
+        "qualified_governor_cells": 52,
+        "qualified_terminal_cells": 51,
+        "qualified_governors": "060:52/51",
+        "total_incoming_exact_cells": 101,
+        "incoming_branches": 29
+      },
+      {
+        "target": "550",
+        "qualified_governor_count": 1,
+        "qualified_governor_cells": 24,
+        "qualified_terminal_cells": 23,
+        "qualified_governors": "060:24/23",
+        "total_incoming_exact_cells": 75,
+        "incoming_branches": 17
+      },
+      {
+        "target": "002",
+        "qualified_governor_count": 0,
+        "qualified_governor_cells": 0,
+        "qualified_terminal_cells": 0,
+        "qualified_governors": "",
+        "total_incoming_exact_cells": 520,
+        "incoming_branches": 132
+      },
+      {
+        "target": "740",
+        "qualified_governor_count": 0,
+        "qualified_governor_cells": 0,
+        "qualified_terminal_cells": 0,
+        "qualified_governors": "",
+        "total_incoming_exact_cells": 334,
+        "incoming_branches": 82
+      },
+      {
+        "target": "032",
+        "qualified_governor_count": 0,
+        "qualified_governor_cells": 0,
+        "qualified_terminal_cells": 0,
+        "qualified_governors": "",
+        "total_incoming_exact_cells": 265,
+        "incoming_branches": 72
+      },
+      {
+        "target": "220",
+        "qualified_governor_count": 0,
+        "qualified_governor_cells": 0,
+        "qualified_terminal_cells": 0,
+        "qualified_governors": "",
+        "total_incoming_exact_cells": 247,
+        "incoming_branches": 74
+      },
+      {
+        "target": "240",
+        "qualified_governor_count": 0,
+        "qualified_governor_cells": 0,
+        "qualified_terminal_cells": 0,
+        "qualified_governors": "",
+        "total_incoming_exact_cells": 204,
+        "incoming_branches": 63
+      },
+      {
+        "target": "033",
+        "qualified_governor_count": 0,
+        "qualified_governor_cells": 0,
+        "qualified_terminal_cells": 0,
+        "qualified_governors": "",
+        "total_incoming_exact_cells": 179,
+        "incoming_branches": 63
+      },
+      {
+        "target": "060",
+        "qualified_governor_count": 0,
+        "qualified_governor_cells": 0,
+        "qualified_terminal_cells": 0,
+        "qualified_governors": "",
+        "total_incoming_exact_cells": 173,
+        "incoming_branches": 60
+      },
+      {
+        "target": "861",
+        "qualified_governor_count": 0,
+        "qualified_governor_cells": 0,
+        "qualified_terminal_cells": 0,
+        "qualified_governors": "",
+        "total_incoming_exact_cells": 164,
+        "incoming_branches": 16
+      },
+      {
+        "target": "235",
+        "qualified_governor_count": 0,
+        "qualified_governor_cells": 0,
+        "qualified_terminal_cells": 0,
+        "qualified_governors": "",
+        "total_incoming_exact_cells": 157,
+        "incoming_branches": 42
+      },
+      {
+        "target": "741",
+        "qualified_governor_count": 0,
+        "qualified_governor_cells": 0,
+        "qualified_terminal_cells": 0,
+        "qualified_governors": "",
+        "total_incoming_exact_cells": 154,
+        "incoming_branches": 73
+      },
+      {
+        "target": "003",
+        "qualified_governor_count": 0,
+        "qualified_governor_cells": 0,
+        "qualified_terminal_cells": 0,
+        "qualified_governors": "",
+        "total_incoming_exact_cells": 146,
+        "incoming_branches": 43
+      },
+      {
+        "target": "031",
+        "qualified_governor_count": 0,
+        "qualified_governor_cells": 0,
+        "qualified_terminal_cells": 0,
+        "qualified_governors": "",
+        "total_incoming_exact_cells": 145,
+        "incoming_branches": 76
+      },
+      {
+        "target": "233",
+        "qualified_governor_count": 0,
+        "qualified_governor_cells": 0,
+        "qualified_terminal_cells": 0,
+        "qualified_governors": "",
+        "total_incoming_exact_cells": 135,
+        "incoming_branches": 52
+      },
+      {
+        "target": "001",
+        "qualified_governor_count": 0,
+        "qualified_governor_cells": 0,
+        "qualified_terminal_cells": 0,
+        "qualified_governors": "",
+        "total_incoming_exact_cells": 131,
+        "incoming_branches": 69
+      },
+      {
+        "target": "590",
+        "qualified_governor_count": 0,
+        "qualified_governor_cells": 0,
+        "qualified_terminal_cells": 0,
+        "qualified_governors": "",
+        "total_incoming_exact_cells": 120,
+        "incoming_branches": 29
+      },
+      {
+        "target": "705",
+        "qualified_governor_count": 0,
+        "qualified_governor_cells": 0,
+        "qualified_terminal_cells": 0,
+        "qualified_governors": "",
+        "total_incoming_exact_cells": 114,
+        "incoming_branches": 28
+      }
+    ]
+  },
+  "terminal_flag_shuffle_null": {
+    "iterations": 5000,
+    "preserves": "exact-collapsed predecessor-target branch sizes; shuffles only terminal/nonterminal outcomes",
+    "fixed_820_p_ge_governor_count": 0,
+    "fixed_820_p_ge_qualified_cells": 0,
+    "maxstat_p_any_target_ge_820_governor_count": 0,
+    "maxstat_p_any_target_ge_820_qualified_cells": 0
+  },
+  "predictions": [
+    "Future exact-collapsed 060-820 and 002-820 rows should remain overwhelmingly terminal even under source normalization.",
+    "If a third high-support governor of 820 appears, it should also be terminal-heavy rather than a random continuation context.",
+    "The visual/source review of 820 should not require it to be a private allograph tied only to 002 or only to 060."
+  ],
+  "demoters": [
+    "Demote if source review merges 060-820 with a different sign class or shows 002-820 is a copying cluster only.",
+    "Demote if leave-one-site collapse removes either 002 or 060 as a qualified governor.",
+    "Demote if stricter position-preserving nulls make two qualified governors common."
+  ],
+  "decision": "candidate_survives_multigovernor_closure_test"
+}

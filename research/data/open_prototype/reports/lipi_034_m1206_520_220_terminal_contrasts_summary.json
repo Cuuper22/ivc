@@ -1,0 +1,165 @@
+{
+  "date": "2026-05-25",
+  "question": "What is the local planning-layer contrast set for M-1206 +520-220-034+?",
+  "source": "data/open_prototype/lipi/metadata_filtered.csv",
+  "rows_with_prefix_520_220": 52,
+  "unique_terminals_after_520_220": 16,
+  "terminal_counts": {
+    "415": 28,
+    "240": 5,
+    "002": 3,
+    "016": 3,
+    "003": 2,
+    "001": 1,
+    "004": 1,
+    "006": 1,
+    "031": 1,
+    "032": 1,
+    "034": 1,
+    "235": 1,
+    "368": 1,
+    "621": 1,
+    "742": 1,
+    "803": 1
+  },
+  "terminal_034_rows": [
+    {
+      "date": "2026-05-25",
+      "id": "3556.1",
+      "cisi": "M-1206",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:S",
+      "material": "Steatite",
+      "shape": "square",
+      "symbol": "Gaur",
+      "cult": "None",
+      "sides": "2",
+      "dir": "R/L",
+      "class": "MT",
+      "signs": "3",
+      "terminal_after_520_220": "034",
+      "tail_after_terminal": "",
+      "has_034_terminal": "true",
+      "text": "+520-220-034+",
+      "research_use": "520_220_terminal_contrast_for_M1206_source_gate",
+      "accepted_claim": "0"
+    }
+  ],
+  "terminal_by_site": {
+    "001": {
+      "Mohenjo-daro": 1
+    },
+    "002": {
+      "Banawali": 1,
+      "Mohenjo-daro": 2
+    },
+    "003": {
+      "Mohenjo-daro": 2
+    },
+    "004": {
+      "Mohenjo-daro": 1
+    },
+    "006": {
+      "Kalibangan": 1
+    },
+    "016": {
+      "Harappa": 1,
+      "Mohenjo-daro": 2
+    },
+    "031": {
+      "Mohenjo-daro": 1
+    },
+    "032": {
+      "Mohenjo-daro": 1
+    },
+    "034": {
+      "Mohenjo-daro": 1
+    },
+    "235": {
+      "Mohenjo-daro": 1
+    },
+    "240": {
+      "Harappa": 2,
+      "Mohenjo-daro": 3
+    },
+    "368": {
+      "Mohenjo-daro": 1
+    },
+    "415": {
+      "Harappa": 19,
+      "Lothal": 1,
+      "Mohenjo-daro": 8
+    },
+    "621": {
+      "Mohenjo-daro": 1
+    },
+    "742": {
+      "Nausharo": 1
+    },
+    "803": {
+      "Mohenjo-daro": 1
+    }
+  },
+  "terminal_by_type": {
+    "001": {
+      "SEAL:S": 1
+    },
+    "002": {
+      "TAG": 1,
+      "SEAL:S": 2
+    },
+    "003": {
+      "SEAL:S": 2
+    },
+    "004": {
+      "SEAL:S": 1
+    },
+    "006": {
+      "SEAL:S": 1
+    },
+    "016": {
+      "TAB:I": 1,
+      "SEAL:S": 2
+    },
+    "031": {
+      "SEAL:S": 1
+    },
+    "032": {
+      "SEAL:S": 1
+    },
+    "034": {
+      "SEAL:S": 1
+    },
+    "235": {
+      "SEAL:S": 1
+    },
+    "240": {
+      "SEAL:S": 4,
+      "TAB:B": 1
+    },
+    "368": {
+      "SEAL:S": 1
+    },
+    "415": {
+      "SEAL:S": 8,
+      "TAB:B": 4,
+      "TAB:I": 13,
+      "TAG": 1,
+      "SEAL:R": 2
+    },
+    "621": {
+      "SEAL:S": 1
+    },
+    "742": {
+      "SEAL:S": 1
+    },
+    "803": {
+      "SEAL:S": 1
+    }
+  },
+  "interpretation": "M-1206 is currently the only 520-220-034 prefix row found in the filtered lipi planning layer; this makes it a singleton terminal-slot source-validation target, not proof of value or meaning.",
+  "accepted_source_mapping_claims": 0,
+  "accepted_sign_values": 0,
+  "accepted_sign_meanings": 0,
+  "accepted_translations": 0
+}

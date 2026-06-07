@@ -1,0 +1,232 @@
+{
+  "source": "Harappa TAB:B/TAB:I short-mark companion-context audit",
+  "checked_at": "2026-05-24",
+  "input": "data/open_prototype/reports/lipi_multiside_mark_rows.csv",
+  "target_rows": 353,
+  "target_type_counts": {
+    "TAB:B": 178,
+    "TAB:I": 175
+  },
+  "companion_counts": {
+    "032": 102,
+    "033": 137,
+    "034": 114
+  },
+  "order_counts": {
+    "700_first": 299,
+    "700_last": 54
+  },
+  "context_class_counts": {
+    "all_short_or_no_longer_text": 62,
+    "multiple_longer_texts": 5,
+    "single_longer_text": 233,
+    "single_short_no_longer_text": 53
+  },
+  "side_relation_counts": {
+    "no_longer_text": 115,
+    "short_after_all_longer": 132,
+    "short_before_all_longer": 105,
+    "short_between_longer_sides": 1
+  },
+  "focus_long_tokens": [
+    "400",
+    "740",
+    "176",
+    "240",
+    "031",
+    "001",
+    "140",
+    "368",
+    "900",
+    "002",
+    "861",
+    "416"
+  ],
+  "focus_long_sequences": [
+    "+400-740-176+",
+    "+002-861-416+",
+    "+520-220-415+",
+    "+400-236-220+",
+    "+400-740-032-027+",
+    "+400-740-892-617+",
+    "+740-031-001-140+",
+    "+740-690-636-240+",
+    "+740-760-840-799+",
+    "+740-840-013+",
+    "+824-032-578-415+"
+  ],
+  "permutation_model": {
+    "iterations": 5000,
+    "seed": 20260524,
+    "block": "type|700_order"
+  },
+  "emitted_tests": 90,
+  "corrected_fisher_flags": [
+    "033:short_after_all_longer",
+    "034:short_after_all_longer"
+  ],
+  "corrected_block_permutation_flags": [
+    "033:short_after_all_longer",
+    "034:short_after_all_longer"
+  ],
+  "companion_summaries": {
+    "032": {
+      "rows": 102,
+      "type_counts": {
+        "TAB:B": 63,
+        "TAB:I": 39
+      },
+      "order_counts": {
+        "700_first": 85,
+        "700_last": 17
+      },
+      "context_class_counts": {
+        "all_short_or_no_longer_text": 7,
+        "single_longer_text": 73,
+        "single_short_no_longer_text": 22
+      },
+      "side_relation_counts": {
+        "no_longer_text": 29,
+        "short_after_all_longer": 40,
+        "short_before_all_longer": 33
+      },
+      "longer_token_presence_counts": {
+        "140": 3,
+        "176": 7,
+        "240": 8,
+        "368": 0,
+        "400": 36,
+        "416": 0,
+        "740": 41,
+        "861": 1,
+        "900": 1,
+        "031": 4,
+        "001": 4,
+        "002": 6
+      },
+      "top_longer_families": [
+        "NO_LONGER_TEXT:29",
+        "2:+740-031-001-140+:3",
+        "1:+400-158-592+:2",
+        "1:+400-740-176+:2",
+        "1:+400-740-892-617+:2",
+        "1:+740-690-636-240+:2",
+        "1:+740-904-240-002-817+:2",
+        "1:+156-176-741-060-920+:1",
+        "1:+400-156-118+:1",
+        "1:+400-226-032+:1",
+        "1:+400-232-235+:1",
+        "1:+400-520-400-352+:1"
+      ]
+    },
+    "033": {
+      "rows": 137,
+      "type_counts": {
+        "TAB:B": 73,
+        "TAB:I": 64
+      },
+      "order_counts": {
+        "700_first": 113,
+        "700_last": 24
+      },
+      "context_class_counts": {
+        "all_short_or_no_longer_text": 16,
+        "multiple_longer_texts": 3,
+        "single_longer_text": 97,
+        "single_short_no_longer_text": 21
+      },
+      "side_relation_counts": {
+        "no_longer_text": 37,
+        "short_after_all_longer": 67,
+        "short_before_all_longer": 32,
+        "short_between_longer_sides": 1
+      },
+      "longer_token_presence_counts": {
+        "140": 2,
+        "176": 23,
+        "240": 12,
+        "368": 2,
+        "400": 54,
+        "416": 1,
+        "740": 75,
+        "861": 2,
+        "900": 0,
+        "031": 4,
+        "001": 3,
+        "002": 4
+      },
+      "top_longer_families": [
+        "NO_LONGER_TEXT:37",
+        "1:+400-740-176+:16",
+        "1:+740-840-013+:3",
+        "2:+400-740-176+:3",
+        "1:+400-154-896+:2",
+        "1:+400-740-178+:2",
+        "1:+740-390-590-240+:2",
+        "2:+740-642-240-001-692+:2",
+        "1:+032-820-100-415+:1",
+        "1:+090-740-362+:1",
+        "1:+137-002-820+:1",
+        "1:+151-840-416+:1"
+      ]
+    },
+    "034": {
+      "rows": 114,
+      "type_counts": {
+        "TAB:B": 42,
+        "TAB:I": 72
+      },
+      "order_counts": {
+        "700_first": 101,
+        "700_last": 13
+      },
+      "context_class_counts": {
+        "all_short_or_no_longer_text": 39,
+        "multiple_longer_texts": 2,
+        "single_longer_text": 63,
+        "single_short_no_longer_text": 10
+      },
+      "side_relation_counts": {
+        "no_longer_text": 49,
+        "short_after_all_longer": 25,
+        "short_before_all_longer": 40
+      },
+      "longer_token_presence_counts": {
+        "140": 1,
+        "176": 16,
+        "240": 7,
+        "368": 0,
+        "400": 30,
+        "416": 5,
+        "740": 44,
+        "861": 5,
+        "900": 0,
+        "031": 3,
+        "001": 1,
+        "002": 5
+      },
+      "top_longer_families": [
+        "NO_LONGER_TEXT:49",
+        "1:+400-740-176+:7",
+        "2:+002-861-416+:4",
+        "1:+520-220-415+:3",
+        "2:+151-740-222+:2",
+        "2:+400-740-032-027+:2",
+        "2:+400-740-176+:2",
+        "2:+400-775-516+:2",
+        "2:+565-740-176-231+:2",
+        "1:+002-861-416+:1",
+        "1:+032-257-840+:1",
+        "1:+400-151-336-630-706+:1"
+      ]
+    }
+  },
+  "key_observation": "Some short-mark companions retain longer-context associations after preserving artifact type and 700-order blocks. These are validation-priority contrasts only.",
+  "interpretation_boundary": "This is a companion-context audit only. It accepts no physical side function, numerical value, metrological reading, sign meaning, phonetic value, language identity, or translation.",
+  "outputs": [
+    "data/open_prototype/reports/lipi_short_mark_companion_context_rows.csv",
+    "data/open_prototype/reports/lipi_short_mark_companion_context_families.csv",
+    "data/open_prototype/reports/lipi_short_mark_companion_context_tests.csv",
+    "data/open_prototype/reports/lipi_short_mark_companion_context_summary.json"
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "date": "2026-05-31",
+  "status": "vector4_targeted_context_nulls_negative_gate",
+  "input": "data/open_prototype/reports/lipi_scope_rows.csv",
+  "iterations_per_null_model": 2000,
+  "collapse_modes": {
+    "context_exact": 2192,
+    "text_only": 1798
+  },
+  "null_models": [
+    "shuffle_contexts_global",
+    "shuffle_contexts_within_site",
+    "shuffle_contexts_within_token_count",
+    "shuffle_units_within_site_type"
+  ],
+  "interpretation_boundary": "This is a fixed-target V4 check for known tempting leads. It is not a family-wise discovery scan and cannot by itself promote sign meaning. A lead with high worst null share is killed; a lead with low target-specific null share only earns a source-check queue.",
+  "accepted_claim_increment": 0,
+  "target_count": 8,
+  "target_rows": [
+    {
+      "target_id": "context_exact_407_material_copper",
+      "unit": "unigram:407",
+      "context": "material=Copper",
+      "collapse_mode": "context_exact",
+      "support": 25,
+      "z": 15.919522,
+      "worst_z_ge_observed_share": 1,
+      "worst_z_null_model": "shuffle_units_within_site_type",
+      "decision": "not_claim_eligible",
+      "reason": "target-specific null only; broad family-wise scan, source checks, and exact-text/context-collapse survival remain required"
+    },
+    {
+      "target_id": "context_exact_407_type_tabc",
+      "unit": "unigram:407",
+      "context": "type=TAB:C",
+      "collapse_mode": "context_exact",
+      "support": 25,
+      "z": 16.395964,
+      "worst_z_ge_observed_share": 1,
+      "worst_z_null_model": "shuffle_units_within_site_type",
+      "decision": "not_claim_eligible",
+      "reason": "target-specific null only; broad family-wise scan, source checks, and exact-text/context-collapse survival remain required"
+    },
+    {
+      "target_id": "context_exact_061845_material_copper",
+      "unit": "bigram:061-845",
+      "context": "material=Copper",
+      "collapse_mode": "context_exact",
+      "support": 8,
+      "z": 14.555993,
+      "worst_z_ge_observed_share": 1,
+      "worst_z_null_model": "shuffle_units_within_site_type",
+      "decision": "not_claim_eligible",
+      "reason": "target-specific null only; broad family-wise scan, source checks, and exact-text/context-collapse survival remain required"
+    },
+    {
+      "target_id": "context_exact_158806_symbol_phyt",
+      "unit": "bigram:158-806",
+      "context": "symbol=Phyt",
+      "collapse_mode": "context_exact",
+      "support": 5,
+      "z": 12.839621,
+      "worst_z_ge_observed_share": 0,
+      "worst_z_null_model": "shuffle_contexts_global",
+      "decision": "not_claim_eligible",
+      "reason": "target-specific null only; broad family-wise scan, source checks, and exact-text/context-collapse survival remain required"
+    },
+    {
+      "target_id": "context_exact_154806_sealr_none",
+      "unit": "bigram:154-806",
+      "context": "type_symbol=SEAL:R|None",
+      "collapse_mode": "context_exact",
+      "support": 11,
+      "z": 8.896395,
+      "worst_z_ge_observed_share": 0.532,
+      "worst_z_null_model": "shuffle_units_within_site_type",
+      "decision": "not_claim_eligible",
+      "reason": "target-specific null only; broad family-wise scan, source checks, and exact-text/context-collapse survival remain required"
+    },
+    {
+      "target_id": "text_only_400_type_tabb",
+      "unit": "unigram:400",
+      "context": "type=TAB:B",
+      "collapse_mode": "text_only",
+      "support": 94,
+      "z": 11.800809,
+      "worst_z_ge_observed_share": 1,
+      "worst_z_null_model": "shuffle_units_within_site_type",
+      "decision": "not_claim_eligible",
+      "reason": "target-specific null only; broad family-wise scan, source checks, and exact-text/context-collapse survival remain required"
+    },
+    {
+      "target_id": "text_only_407_material_copper",
+      "unit": "unigram:407",
+      "context": "material=Copper",
+      "collapse_mode": "text_only",
+      "support": 14,
+      "z": 10.831359,
+      "worst_z_ge_observed_share": 1,
+      "worst_z_null_model": "shuffle_units_within_site_type",
+      "decision": "not_claim_eligible",
+      "reason": "target-specific null only; broad family-wise scan, source checks, and exact-text/context-collapse survival remain required"
+    },
+    {
+      "target_id": "text_only_158806_symbol_phyt",
+      "unit": "bigram:158-806",
+      "context": "symbol=Phyt",
+      "collapse_mode": "text_only",
+      "support": 3,
+      "z": 8.930802,
+      "worst_z_ge_observed_share": 0.0075,
+      "worst_z_null_model": "shuffle_units_within_site_type",
+      "decision": "not_claim_eligible",
+      "reason": "target-specific null only; broad family-wise scan, source checks, and exact-text/context-collapse survival remain required"
+    }
+  ],
+  "files": {
+    "targets": "data/open_prototype/reports/vector4_targeted_context_nulls_20260531.csv",
+    "iterations": "data/open_prototype/reports/vector4_targeted_context_nulls_20260531_iterations.csv"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "question": "Does Parpola 2019's H-942/H-2240/H-2241 obverse recurrence support H-2148's companion row or expose a sign-inventory problem?",
+  "result": "Both. H-2240 exactly supports local +520-220-415+ as part of the companion-text family and H-2241 gives fragmentary 415 pressure, but H-942 is locally +520-220-016+ while Parpola names it in the same recurrence set. This makes H-942 a sign-inventory/source-normalization stress case, not a translation clue.",
+  "status": "companion_text_inventory_gate_open",
+  "prior_work_anchor": "tmp/parpola_2019_bone_rods.txt lines 102-106",
+  "local_rows": {
+    "H-2148": ["481.1 +520-220-415+", "481.2 +110+"],
+    "H-940": ["1820.1 +520-220-415+", "1820.2 +110+"],
+    "H-942": ["1822.1 +520-220-016+", "1822.2 +033-700+"],
+    "H-2240": ["816.1 +520-220-415+", "816.2 +869-575+"],
+    "H-2241": ["639.1 ]415-240+", "639.2 ]000+"]
+  },
+  "decisions": {
+    "h2148_companion_family": "supported_by_H940_and_H2240",
+    "h2241": "fragmentary_pressure_only",
+    "h942": "explicit_415_016_stress_case",
+    "local_415_equals_016": "unaccepted",
+    "translation": "unaccepted"
+  },
+  "accepted_claims": {
+    "parpola_obverse_control_set_exists": true,
+    "h2240_exact_local_520_220_415_recurrence": true,
+    "h942_stresses_415_016_inventory": true,
+    "local_415_equals_local_016": false,
+    "local_415_equals_parpola_final_sign_189": false,
+    "local_016_equals_parpola_final_sign_189": false,
+    "phonetic_value": false,
+    "translation": false
+  },
+  "next_gate": "Source-normalize H-942, H-2240, and H-2241 against H-940/H-2148 to decide whether local 415 and 016 reflect allography, sign-list convention mismatch, terminal variant tolerance, or source-side transcription mismatch."
+}

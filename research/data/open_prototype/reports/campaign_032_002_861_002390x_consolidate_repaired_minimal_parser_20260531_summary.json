@@ -1,0 +1,19 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "repaired_minimal_parser_v2",
+  "core": [
+    "REPAIRED_FRAME_002_HEAD_X",
+    "REPAIRED_X000_ZERO_COMPLEMENT"
+  ],
+  "edge_or_live": [
+    "REPAIRED_HEADSLOT_000_EDGE",
+    "REPAIRED_TERMINAL_CLASSES_095_705",
+    "REPAIRED_OPEN_OPERATORS_530_125"
+  ],
+  "demoted": [
+    "REPAIRED_EXCEPTION_HOOKS_590_692_707",
+    "REPAIRED_BROAD_FRAME_PROXIMAL_NULL"
+  ],
+  "parser": "FRAME(002) HEAD(H) OP(X), with X=000 zero-complement as strongest core subrule; 095/705 terminal classes and 530/125 open operators live but not load-bearing."
+}

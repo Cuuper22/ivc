@@ -1,0 +1,5 @@
+checked_date,family,rows,terminal_after_head,head_count,branch_count,top_heads,top_branches,implication
+2026-05-31,004-002-all,18,9,9,12,817:4;861:4;365:2;390:2;820:2;031:1;278:1;705:1,817-<END>:3;861-<END>:3;365-460:2;820-<END>:2;031-376:1;278-595:1;390-095:1;390-125:1,`004` before `002` is compatible with multiple heads and outcomes; it is not a direct `X` selector by itself.
+2026-05-31,004-002-390,2,0,1,2,390:2,390-095:1;390-125:1,"`004-002-390` splits into `095` closure and `125-820` continuation, so `004` is not determining the branch sign under `390`."
+2026-05-31,390-004-002-exact-prefix,8,4,6,7,817:2;861:2;031:1;390:1;705:1;820:1,817-<END>:2;031-376:1;390-125:1;705-127:1;820-<END>:1;861-<END>:1;861-125:1,"The exact `390-004-002` prefix is closure-heavy but branch-diverse; copied-prefix pressure remains, but it does not collapse to one tail."
+2026-05-31,non004-002-390,13,0,1,10,390:13,390-125:3;390-705:2;390-072:1;390-095:1;390-140:1;390-346:1;390-530:1;390-590:1,Non-`004` `002-390` rows are also branch-diverse; selector choice is not reducible to `004`.

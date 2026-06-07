@@ -1,0 +1,4 @@
+checked_date,decision_id,action,target,reason,model_effect
+2026-05-31,CONSOLIDATE_X000_SURVIVES_ROBUSTNESS_CONTROLS,keep_with_warning,X=000 zero-complement,serious_controls=23; survives=21; damaging=2.,Keep X=000 but downgrade robustness until damaging controls are explained.
+2026-05-31,CONSOLIDATE_X000_SEAL_CONTROL,keep,seal-domain X=000,seal_only=15/16 vs non000 128/217.,Separates seal/formula explanation from cross-domain zero-complement behavior.
+2026-05-31,CONSOLIDATE_X000_NON_SEAL_CONTROL,warn,non-seal X=000,non_seal_only=9/11 vs non000 18/28.,"If non-seal fails, X=000 becomes seal/register-biased; if it survives, grammar reading strengthens."

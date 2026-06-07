@@ -1,0 +1,288 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_240798_family_collapse_stress_20260531",
+  "tier": "candidate_fragile",
+  "bet": "The 240-798 copper-axis split survives after collapsing the repeated 407/845 240-798 witnesses into one source/semantic family.",
+  "source": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\lipi\\metadata_filtered.csv",
+  "panels": [
+    {
+      "policy": "exact_text",
+      "family_count": 23,
+      "final_distribution": {
+        "220": 2,
+        "235": 9,
+        "415": 1,
+        "798": 5,
+        "803": 2,
+        "806": 1,
+        "031": 3
+      },
+      "target_feature": {
+        "feature": "has_407_or_845_or_095",
+        "a": 3,
+        "b": 2,
+        "c": 0,
+        "d": 18,
+        "fisher_p": 0.0056465273856577455,
+        "rank": 1,
+        "total_features": 4,
+        "maxstat_fpr": 0.0042
+      },
+      "top_features": [
+        {
+          "feature": "has_407_or_845_or_095",
+          "a": 3,
+          "b": 2,
+          "c": 0,
+          "d": 18,
+          "fisher_p": 0.0056465273856577455,
+          "rank": 1,
+          "total_features": 4
+        },
+        {
+          "feature": "has_407",
+          "a": 2,
+          "b": 3,
+          "c": 0,
+          "d": 18,
+          "fisher_p": 0.03952569169960457,
+          "rank": 2,
+          "total_features": 4
+        },
+        {
+          "feature": "has_845",
+          "a": 2,
+          "b": 3,
+          "c": 0,
+          "d": 18,
+          "fisher_p": 0.03952569169960457,
+          "rank": 3,
+          "total_features": 4
+        },
+        {
+          "feature": "has_095",
+          "a": 1,
+          "b": 4,
+          "c": 0,
+          "d": 18,
+          "fisher_p": 0.2173913043478236,
+          "rank": 4,
+          "total_features": 4
+        }
+      ],
+      "axis_families": [
+        {
+          "key": "+520-095-033-706-240-798+",
+          "final": "798",
+          "has407": false,
+          "has845": false,
+          "has095": true,
+          "members": [
+            "H-660:+520-095-033-706-240-798+"
+          ]
+        },
+        {
+          "key": "+407-063-845-240-798+",
+          "final": "798",
+          "has407": true,
+          "has845": true,
+          "has095": false,
+          "members": [
+            "-:+407-063-845-240-798+"
+          ]
+        },
+        {
+          "key": "+407-061-845-240-798+",
+          "final": "798",
+          "has407": true,
+          "has845": true,
+          "has095": false,
+          "members": [
+            "M-567:+407-061-845-240-798+"
+          ]
+        }
+      ]
+    },
+    {
+      "policy": "axis_family",
+      "family_count": 22,
+      "final_distribution": {
+        "220": 2,
+        "235": 9,
+        "415": 1,
+        "798": 4,
+        "803": 2,
+        "806": 1,
+        "031": 3
+      },
+      "target_feature": {
+        "feature": "has_407_or_845_or_095",
+        "a": 2,
+        "b": 2,
+        "c": 0,
+        "d": 18,
+        "fisher_p": 0.025974025974025924,
+        "rank": 1,
+        "total_features": 4,
+        "maxstat_fpr": 0.0248
+      },
+      "top_features": [
+        {
+          "feature": "has_407_or_845_or_095",
+          "a": 2,
+          "b": 2,
+          "c": 0,
+          "d": 18,
+          "fisher_p": 0.025974025974025924,
+          "rank": 1,
+          "total_features": 4
+        },
+        {
+          "feature": "has_095",
+          "a": 1,
+          "b": 3,
+          "c": 0,
+          "d": 18,
+          "fisher_p": 0.1818181818181831,
+          "rank": 2,
+          "total_features": 4
+        },
+        {
+          "feature": "has_407",
+          "a": 1,
+          "b": 3,
+          "c": 0,
+          "d": 18,
+          "fisher_p": 0.1818181818181831,
+          "rank": 3,
+          "total_features": 4
+        },
+        {
+          "feature": "has_845",
+          "a": 1,
+          "b": 3,
+          "c": 0,
+          "d": 18,
+          "fisher_p": 0.1818181818181831,
+          "rank": 4,
+          "total_features": 4
+        }
+      ],
+      "axis_families": [
+        {
+          "key": "+520-095-033-706-240-798+",
+          "final": "798",
+          "has407": false,
+          "has845": false,
+          "has095": true,
+          "members": [
+            "H-660:+520-095-033-706-240-798+"
+          ]
+        },
+        {
+          "key": "AXIS_407_845_240_798",
+          "final": "798",
+          "has407": true,
+          "has845": true,
+          "has095": false,
+          "members": [
+            "-:+407-063-845-240-798+",
+            "M-567:+407-061-845-240-798+"
+          ]
+        }
+      ]
+    },
+    {
+      "policy": "source_semantic_family",
+      "family_count": 22,
+      "final_distribution": {
+        "220": 2,
+        "235": 9,
+        "415": 1,
+        "798": 4,
+        "803": 2,
+        "806": 1,
+        "031": 3
+      },
+      "target_feature": {
+        "feature": "has_407_or_845_or_095",
+        "a": 2,
+        "b": 2,
+        "c": 0,
+        "d": 18,
+        "fisher_p": 0.025974025974025924,
+        "rank": 1,
+        "total_features": 4,
+        "maxstat_fpr": 0.0288
+      },
+      "top_features": [
+        {
+          "feature": "has_407_or_845_or_095",
+          "a": 2,
+          "b": 2,
+          "c": 0,
+          "d": 18,
+          "fisher_p": 0.025974025974025924,
+          "rank": 1,
+          "total_features": 4
+        },
+        {
+          "feature": "has_095",
+          "a": 1,
+          "b": 3,
+          "c": 0,
+          "d": 18,
+          "fisher_p": 0.1818181818181831,
+          "rank": 2,
+          "total_features": 4
+        },
+        {
+          "feature": "has_407",
+          "a": 1,
+          "b": 3,
+          "c": 0,
+          "d": 18,
+          "fisher_p": 0.1818181818181831,
+          "rank": 3,
+          "total_features": 4
+        },
+        {
+          "feature": "has_845",
+          "a": 1,
+          "b": 3,
+          "c": 0,
+          "d": 18,
+          "fisher_p": 0.1818181818181831,
+          "rank": 4,
+          "total_features": 4
+        }
+      ],
+      "axis_families": [
+        {
+          "key": "AXIS_095_240_798",
+          "final": "798",
+          "has407": false,
+          "has845": false,
+          "has095": true,
+          "members": [
+            "H-660:+520-095-033-706-240-798+"
+          ]
+        },
+        {
+          "key": "AXIS_407_845_240_798",
+          "final": "798",
+          "has407": true,
+          "has845": true,
+          "has095": false,
+          "members": [
+            "-:+407-063-845-240-798+",
+            "M-567:+407-061-845-240-798+"
+          ]
+        }
+      ]
+    }
+  ],
+  "decision": "survives_axis_family_collapse_but_fragile",
+  "caveat": "This is still tiny: after hostile collapse, the positive axis support is two families, not three rows."
+}

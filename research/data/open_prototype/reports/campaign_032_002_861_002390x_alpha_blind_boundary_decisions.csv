@@ -1,0 +1,6 @@
+decision,verdict,affected_objects,reason,next_action
+blind_layer_validated,pass,ALPHA BRAVO CHARLIE DELTA ECHO,Mechanic validation passed after alphabetic neutralization and path neutralization,Use alpha packet as the blind adjudication layer
+source_window_proof_not_achieved,downgrade,M-119 M-735 M-70 M-71 Sktd-1,All blind reads were partial and at least one reader rejected or nearly rejected CHARLIE,Do not call current source bands source-window-preserved proof
+sktd1_removed_from_strict_visual_counts,demote,Sktd-1,Blind readers treated CHARLIE as unstable or rejectable,Keep Sktd-1 downweighted only
+125_stays_live_positionally_only,keep_live_but_weak,M-119 M-735,ALPHA and ECHO remain partially segmentable but not clean blind boundary witnesses,Test against source-routed matched non-125 branches
+non125_controls_remain_necessary,keep_live,M-70 M-71,DELTA and BRAVO are also partial but preserve the visible plurality pressure,Route H-1993 and 705 witnesses before making branch grammar claims

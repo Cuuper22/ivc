@@ -1,0 +1,83 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_407_meluhha_copper_semantic_bridge_20260531",
+  "tier": "candidate",
+  "vector": "V1 diffuse Meluhha bilingual + V4 context-to-meaning",
+  "risky_bet": "The best current Meluhha bridge is semantic/register, not phonetic: readable cuneiform independently associates Meluhha with copper and prestige-material chains, while internal Indus metadata independently promotes sign 407 as the copper/rectangular administrative register marker. If this is real, 407 should be treated as a material/register sign-function candidate, not as a sound value.",
+  "cuneiform_side": {
+    "source_table": "data/meluhha/cdli_meluhha_context_leads.csv",
+    "lead_06_meluhha_copper": {
+      "verified_context_count": 11,
+      "same_line_context_count": 10,
+      "artifact_count": 3,
+      "artifact_ps": [
+        "P136689",
+        "P232301",
+        "P431882"
+      ],
+      "best_example": "P136689 line: 6(disz) ma-na uruda me-luh-ha"
+    },
+    "lead_05_prestige_material_chain": {
+      "verified_context_count": 35,
+      "same_line_context_count": 25,
+      "artifact_count": 12,
+      "best_example": "P232301 line: uruda# nagga lagab za-gin3-na ku3 NE gug gi-rin me-luh-ha-da"
+    }
+  },
+  "indus_side": {
+    "source_reports": [
+      "data/open_prototype/reports/risky_407_copper_tab_c_register_forger_20260531.json",
+      "data/open_prototype/reports/risky_407_rectangular_copper_register_forger_20260531.json",
+      "data/open_prototype/reports/risky_740_407_register_opening_model_20260531.json"
+    ],
+    "407_copper_tab_c": {
+      "tier": "candidate",
+      "copper": "18/119 vs 52/3384; rank 1/714; Bonferroni=3.786700743410161e-9; maxstat=0",
+      "tab_c": "18/94 vs 52/3409; rank 1/714; Bonferroni=5.310069742000693e-11; maxstat=0"
+    },
+    "407_rectangular_copper_register": {
+      "tier": "promoted candidate",
+      "all_canonical": "53/444 register rows vs 17/3059 background; rank 1/714; Bonferroni=1.2618252646220003e-31; maxstat=0",
+      "leave_mohenjo": "14/159 vs 11/1812; Bonferroni=3.1639957675202756e-7",
+      "leave_harappa": "46/363 vs 7/1958; Bonferroni=2.356342611257845e-28"
+    },
+    "740_407_opening_model": {
+      "tier": "promoted candidate",
+      "summary": "740 is broad opener in SEAL:R/TAB:C; 407 is narrower independent opener. Strict 740-before-407 nesting is killed by mixed collision rows."
+    }
+  },
+  "external_indus_object_check": {
+    "complete_external_rows_in_metadata": 20,
+    "complete_external_rows_with_407": 0,
+    "all_external_rows_with_407": [
+      {
+        "id": "3881.1",
+        "site": "Susa",
+        "region": "Iranian Plateau",
+        "complete": "N",
+        "condition": "Poor",
+        "type": "SEAL:C",
+        "shape": "circular",
+        "text": "+700-604-407-090-365-000+"
+      }
+    ],
+    "interpretation": "External Indus-style objects do not currently support a 407 object-level bridge. The Susa 407 row is poor/incomplete and outside the rectangular/copper register."
+  },
+  "decision": "candidate_semantic_convergence_only; no external phonetic anchor and no object-level bilingual",
+  "predictions": [
+    "New source-verified copper TAB:C and rectangular SEAL:R rows should continue to overproduce 407.",
+    "If future external Indus-style rows with secure commodity/material context appear, the bridge predicts enrichment of 407 or the 740/407 register system; absence would demote the diffuse bridge but not the internal 407 register claim.",
+    "Readable cuneiform Meluhha attestations should continue to be richer in commodity/material contexts than in usable personal-name/object-pair contexts."
+  ],
+  "demoters": [
+    "If source-normalized Indus copper/rectangular rows lose 407 enrichment, kill the bridge.",
+    "If Meluhha copper/material leads collapse to generic, non-Meluhha administrative noise under matched non-Meluhha controls, demote.",
+    "If external Indus rows remain 407-free after better source acquisition, this stays an internal semantic candidate only."
+  ],
+  "non_claims": [
+    "No 407 sound value is assigned.",
+    "No cuneiform line is paired to a specific Indus object.",
+    "No accepted external anchor is claimed."
+  ]
+}

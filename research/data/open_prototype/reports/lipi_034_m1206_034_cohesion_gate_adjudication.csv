@@ -1,0 +1,14 @@
+date,blind_id,unblinded_object,local_text,source_side,role_keyed,blind_result,adjudication,decision_use,accepted_claim
+2026-05-26,C001,M-1206,+520-220-034+,A+E,034_target,stable_with_C002_C003_under_order_reversal,"Target family survives internally; composite label warning remains","positive_internal_target_stability",0
+2026-05-26,C002,M-1206,+520-220-034+,A,034_target,stable_with_C001_C003,"Target family survives internally","positive_internal_target_stability",0
+2026-05-26,C003,M-1206,+520-220-034+,a,034_target_mirror,stable_with_C001_C002_under_mirroring,"Target family survives internally with mirror/order reversal","positive_internal_target_stability",0
+2026-05-26,C004,M-37,+520-220-415+,A,415_same_site_control,strongest_external_match,"Closest same-site external visual relative; not proof of identity","primary_415_family_pressure",0
+2026-05-26,C005,M-37,+520-220-415+,a,415_same_site_control_mirror,strongest_external_match,"Closest same-site external visual relative under mirror/order change; not proof of identity","primary_415_family_pressure",0
+2026-05-26,C006,H-938,+520-220-415+,A,415_exact_side_control,weaker_relevant_match,"Relevant exact-side 415 control but less close in blind view","secondary_415_family_pressure",0
+2026-05-26,C007,H-938,+520-220-415+,A bis,415_exact_side_duplicate,weaker_relevant_match,"Duplicate photo clarifies form but is not independent recurrence","secondary_duplicate_not_independent",0
+2026-05-26,C008,H-940,+520-220-415+,A,415_exact_side_control,close_external_match,"Strong clean exact-side 415 control close to target family","clean_415_family_pressure",0
+2026-05-26,C009,H-786,not local exact 415 side,A,candidate_415_side_mapping_conflict,plausible_or_next_closest_match,"Visually relevant but source/local side mapping conflict blocks exact-side use","side_mapping_gated_415_pressure",0
+2026-05-26,C010,H-941,not local exact 415 side,A,candidate_415_side_mapping_conflict,close_external_match_but_cropped_noisy,"Visually relevant but source/local side mapping conflict blocks exact-side use","side_mapping_gated_415_pressure",0
+2026-05-26,C011,M-1584,+034+,A,034_pottery_singleton_pressure,not_classifiable,"Different medium/low detail; cannot support or refute M-1206 034 class","exclude_from_positive_cohesion_count",0
+2026-05-26,C012,M-685,]034-204+,A face left,034_fragmentary_pressure,not_classifiable,"Fragmentary narrow crop; cannot support or refute M-1206 034 class","exclude_from_positive_cohesion_count",0
+2026-05-26,C013,M-685,]034-204+,a impression left,034_fragmentary_pressure,not_classifiable,"Fragmentary narrow crop; cannot support or refute M-1206 034 class","exclude_from_positive_cohesion_count",0

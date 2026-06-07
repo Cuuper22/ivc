@@ -1,0 +1,813 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_060_terminal_cap_paradigm_20260531",
+  "tier": "candidate",
+  "bet": "Sign 060 is a terminal-cap hinge: it licenses several high-support immediate successors that normally close the inscription. The strongest branches are not one suffix but a paradigm: 060-920, 060-692, 060-550, and 060-820. If this is right, 920 should be treated as the strongest cap member rather than as the whole phenomenon.",
+  "exact_collapse": {
+    "source": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\lipi\\metadata_filtered.csv",
+    "complete_rows": 3673,
+    "exact_bigram_cells": 8119,
+    "dedupe_key": [
+      "sign",
+      "next",
+      "next2",
+      "text",
+      "site",
+      "type",
+      "symbol"
+    ]
+  },
+  "thresholds": {
+    "cap_share_minimum": 0.85,
+    "large_branch_min_exact_cells": 20,
+    "medium_branch_min_exact_cells": 5
+  },
+  "target_060": {
+    "rank_by_large_cap_branch_count": 1,
+    "sign_row": {
+      "sign": "060",
+      "outgoing_exact_cells": 173,
+      "successor_branches": 33,
+      "large_cap_branch_count": 3,
+      "large_cap_exact_cells": 99,
+      "large_cap_terminal_cells": 97,
+      "large_cap_branches": "920 550 820",
+      "medium_cap_branch_count": 4,
+      "medium_cap_exact_cells": 104,
+      "medium_cap_terminal_cells": 102,
+      "medium_cap_branches": "920 550 820 201"
+    },
+    "near_large_cap_branches_at_0_80_to_0_85": [
+      {
+        "sign": "060",
+        "next": "692",
+        "exact_cells": 33,
+        "terminal_cells": 28,
+        "terminal_share": 0.8484848484848485,
+        "sites": 5,
+        "types": 4,
+        "symbols": 14,
+        "examples": [
+          "B-21:+426-003-060-692+",
+          "C-75:+740-531-060-692+",
+          "H-1138:+740-603-240-060-692+",
+          "H-423:+520-220-240-798-060-692+",
+          "H-1845:+740-642-240-060-692+",
+          "H-1975:+740-760-061-060-692+"
+        ]
+      }
+    ],
+    "branches": [
+      {
+        "sign": "060",
+        "next": "920",
+        "exact_cells": 52,
+        "terminal_cells": 51,
+        "terminal_share": 0.9807692307692307,
+        "sites": 9,
+        "types": 7,
+        "symbols": 13,
+        "examples": [
+          "C-54:+842-032-031-592-031-060-920+",
+          "C-11:+590-615-140/232-240-001-060-920+",
+          "C-12:+161-390-590-031-740-060-920+",
+          "C-16:+429-003-741-060-920+",
+          "H-1309:+156-176-741-060-920+",
+          "H-1669:+520-220-415-060-920+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "692",
+        "exact_cells": 33,
+        "terminal_cells": 28,
+        "terminal_share": 0.8484848484848485,
+        "sites": 5,
+        "types": 4,
+        "symbols": 14,
+        "examples": [
+          "B-21:+426-003-060-692+",
+          "C-75:+740-531-060-692+",
+          "H-1138:+740-603-240-060-692+",
+          "H-423:+520-220-240-798-060-692+",
+          "H-1845:+740-642-240-060-692+",
+          "H-1975:+740-760-061-060-692+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "550",
+        "exact_cells": 24,
+        "terminal_cells": 23,
+        "terminal_share": 0.9583333333333334,
+        "sites": 4,
+        "types": 6,
+        "symbols": 13,
+        "examples": [
+          "-:+060-550+",
+          "H-1893:+390-003-060-550+",
+          "H-1776:+740-390-590-060-550+",
+          "H-2040:+740-803-060-550+",
+          "H-1840:+090-740-255-705-060-550+",
+          "H-20:+740-176-690-435-255-220-032-806-060-550+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "820",
+        "exact_cells": 23,
+        "terminal_cells": 23,
+        "terminal_share": 1,
+        "sites": 5,
+        "types": 4,
+        "symbols": 10,
+        "examples": [
+          "H-2090:+869-060-820+",
+          "H-715:+526-550-060-820+",
+          "K-16:+090-740-240/060-820+",
+          "L-21:+156-142-060-820+",
+          "L-122:+527-550-740-443-060-820+",
+          "M-1760:+740-923-240-235-060-820+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "201",
+        "exact_cells": 5,
+        "terminal_cells": 5,
+        "terminal_share": 1,
+        "sites": 2,
+        "types": 2,
+        "symbols": 4,
+        "examples": [
+          "H-1824:+740-176-031-060-201+",
+          "H-17:+520-233-240-060-201+",
+          "H-61:+740-690-435-255-001-060-201+",
+          "H-386:+527-555-740-055-240-415-798-060-201+",
+          "M-1739:+740-390-590-032-060-201+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "297",
+        "exact_cells": 3,
+        "terminal_cells": 1,
+        "terminal_share": 0.3333333333333333,
+        "sites": 2,
+        "types": 1,
+        "symbols": 3,
+        "examples": [
+          "M-183:+520-233-060-297+",
+          "M-921:+550-740-220-060-297-630+",
+          "-:+520-070-495-240-060-297-368-632-032+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "368",
+        "exact_cells": 3,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 1,
+        "types": 1,
+        "symbols": 2,
+        "examples": [
+          "M-48:+390-820-463-060-368-920+",
+          "M-80:+156-003-060-368-817+",
+          "M-944:+090-740-233-060-368-817+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "690",
+        "exact_cells": 2,
+        "terminal_cells": 2,
+        "terminal_share": 1,
+        "sites": 2,
+        "types": 1,
+        "symbols": 2,
+        "examples": [
+          "H-580:+740-269-511-060-690+",
+          "-:+390-550-452-060-690+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "891",
+        "exact_cells": 2,
+        "terminal_cells": 2,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "symbols": 2,
+        "examples": [
+          "M-1793:+226-032-060-891+",
+          "M-1695:+740-337-484-031-060-891+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "111",
+        "exact_cells": 2,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 2,
+        "types": 1,
+        "symbols": 1,
+        "examples": [
+          "L-26:+740-798-240-060-111-166+",
+          "M-67:+457/740-165-900-060-111-575+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "220",
+        "exact_cells": 2,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 1,
+        "types": 1,
+        "symbols": 2,
+        "examples": [
+          "M-64:+520-033-706-060-220-004+",
+          "M-856:+740-575-017-060-220-065-374+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "013",
+        "exact_cells": 1,
+        "terminal_cells": 1,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "symbols": 1,
+        "examples": [
+          "H-351:+400-740-032-060-013+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "146",
+        "exact_cells": 1,
+        "terminal_cells": 1,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "symbols": 1,
+        "examples": [
+          "-:+740-405-590-060-146+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "190",
+        "exact_cells": 1,
+        "terminal_cells": 1,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "symbols": 1,
+        "examples": [
+          "-:+160-090-055-060-190+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "193",
+        "exact_cells": 1,
+        "terminal_cells": 1,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "symbols": 1,
+        "examples": [
+          "H-151:+407-017-060-193+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "257",
+        "exact_cells": 1,
+        "terminal_cells": 1,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "symbols": 1,
+        "examples": [
+          "Nd-1:+817-220-632-066-740-760-026-060-257+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "540",
+        "exact_cells": 1,
+        "terminal_cells": 1,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "symbols": 1,
+        "examples": [
+          "M-481:+103-740-803-060-540+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "572",
+        "exact_cells": 1,
+        "terminal_cells": 1,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "symbols": 1,
+        "examples": [
+          "M-1707:+298-350-761-032-060-572+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "573",
+        "exact_cells": 1,
+        "terminal_cells": 1,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "symbols": 1,
+        "examples": [
+          "M-742:+090-850-032-060-573+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "795",
+        "exact_cells": 1,
+        "terminal_cells": 1,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "symbols": 1,
+        "examples": [
+          "H-510:+740-390-590-060-795+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "880",
+        "exact_cells": 1,
+        "terminal_cells": 1,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "symbols": 1,
+        "examples": [
+          "M-296:+621-520-220-060-880+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "922",
+        "exact_cells": 1,
+        "terminal_cells": 1,
+        "terminal_share": 1,
+        "sites": 1,
+        "types": 1,
+        "symbols": 1,
+        "examples": [
+          "Ns-6:+520-240-060-922+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "001",
+        "exact_cells": 1,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 1,
+        "types": 1,
+        "symbols": 1,
+        "examples": [
+          "H-2089:+869-060-001-820+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "065",
+        "exact_cells": 1,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 1,
+        "types": 1,
+        "symbols": 1,
+        "examples": [
+          "L-36:+422-003-001-060-065-405-720+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "130",
+        "exact_cells": 1,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 1,
+        "types": 1,
+        "symbols": 1,
+        "examples": [
+          "-:+740-154-017-060-130-035-171+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "390",
+        "exact_cells": 1,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 1,
+        "types": 1,
+        "symbols": 1,
+        "examples": [
+          "Sktd-2:+740-060-390-803-740+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "407",
+        "exact_cells": 1,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 1,
+        "types": 1,
+        "symbols": 1,
+        "examples": [
+          "L-90:+423-003-060-407-140+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "413",
+        "exact_cells": 1,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 1,
+        "types": 1,
+        "symbols": 1,
+        "examples": [
+          "Krs-1:+215-001-480-306-813-033-060-413-346-706+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "415",
+        "exact_cells": 1,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 1,
+        "types": 1,
+        "symbols": 1,
+        "examples": [
+          "H-14:+740-772-240-060-415-056+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "575",
+        "exact_cells": 1,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 1,
+        "types": 1,
+        "symbols": 1,
+        "examples": [
+          "C-69:+390-844-060-575-717+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "740",
+        "exact_cells": 1,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 1,
+        "types": 1,
+        "symbols": 1,
+        "examples": [
+          "H-239:+390-060/740-500-091+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "825",
+        "exact_cells": 1,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 1,
+        "types": 1,
+        "symbols": 1,
+        "examples": [
+          "L-87:+740-032-840-233-220-032-060-825-002+"
+        ]
+      },
+      {
+        "sign": "060",
+        "next": "840",
+        "exact_cells": 1,
+        "terminal_cells": 0,
+        "terminal_share": 0,
+        "sites": 1,
+        "types": 1,
+        "symbols": 1,
+        "examples": [
+          "-:+740-390-590-220-003-060-840-416+"
+        ]
+      }
+    ]
+  },
+  "whole_corpus_comparator": {
+    "top_20_signs_by_large_cap_branch_count": [
+      {
+        "sign": "060",
+        "outgoing_exact_cells": 173,
+        "successor_branches": 33,
+        "large_cap_branch_count": 3,
+        "large_cap_exact_cells": 99,
+        "large_cap_terminal_cells": 97,
+        "large_cap_branches": "920 550 820",
+        "medium_cap_branch_count": 4,
+        "medium_cap_exact_cells": 104,
+        "medium_cap_terminal_cells": 102,
+        "medium_cap_branches": "920 550 820 201"
+      },
+      {
+        "sign": "002",
+        "outgoing_exact_cells": 528,
+        "successor_branches": 120,
+        "large_cap_branch_count": 2,
+        "large_cap_exact_cells": 183,
+        "large_cap_terminal_cells": 175,
+        "large_cap_branches": "817 820",
+        "medium_cap_branch_count": 3,
+        "medium_cap_exact_cells": 189,
+        "medium_cap_terminal_cells": 181,
+        "medium_cap_branches": "817 820 824"
+      },
+      {
+        "sign": "368",
+        "outgoing_exact_cells": 78,
+        "successor_branches": 41,
+        "large_cap_branch_count": 0,
+        "large_cap_exact_cells": 0,
+        "large_cap_terminal_cells": 0,
+        "large_cap_branches": "",
+        "medium_cap_branch_count": 1,
+        "medium_cap_exact_cells": 14,
+        "medium_cap_terminal_cells": 14,
+        "medium_cap_branches": "817"
+      },
+      {
+        "sign": "615",
+        "outgoing_exact_cells": 27,
+        "successor_branches": 14,
+        "large_cap_branch_count": 0,
+        "large_cap_exact_cells": 0,
+        "large_cap_terminal_cells": 0,
+        "large_cap_branches": "",
+        "medium_cap_branch_count": 1,
+        "medium_cap_exact_cells": 8,
+        "medium_cap_terminal_cells": 7,
+        "medium_cap_branches": "503"
+      },
+      {
+        "sign": "500",
+        "outgoing_exact_cells": 13,
+        "successor_branches": 7,
+        "large_cap_branch_count": 0,
+        "large_cap_exact_cells": 0,
+        "large_cap_terminal_cells": 0,
+        "large_cap_branches": "",
+        "medium_cap_branch_count": 1,
+        "medium_cap_exact_cells": 6,
+        "medium_cap_terminal_cells": 6,
+        "medium_cap_branches": "705"
+      },
+      {
+        "sign": "017",
+        "outgoing_exact_cells": 45,
+        "successor_branches": 18,
+        "large_cap_branch_count": 0,
+        "large_cap_exact_cells": 0,
+        "large_cap_terminal_cells": 0,
+        "large_cap_branches": "",
+        "medium_cap_branch_count": 1,
+        "medium_cap_exact_cells": 5,
+        "medium_cap_terminal_cells": 5,
+        "medium_cap_branches": "231"
+      },
+      {
+        "sign": "013",
+        "outgoing_exact_cells": 22,
+        "successor_branches": 13,
+        "large_cap_branch_count": 0,
+        "large_cap_exact_cells": 0,
+        "large_cap_terminal_cells": 0,
+        "large_cap_branches": "",
+        "medium_cap_branch_count": 1,
+        "medium_cap_exact_cells": 5,
+        "medium_cap_terminal_cells": 5,
+        "medium_cap_branches": "817"
+      },
+      {
+        "sign": "740",
+        "outgoing_exact_cells": 1108,
+        "successor_branches": 184,
+        "large_cap_branch_count": 0,
+        "large_cap_exact_cells": 0,
+        "large_cap_terminal_cells": 0,
+        "large_cap_branches": "",
+        "medium_cap_branch_count": 0,
+        "medium_cap_exact_cells": 0,
+        "medium_cap_terminal_cells": 0,
+        "medium_cap_branches": ""
+      },
+      {
+        "sign": "400",
+        "outgoing_exact_cells": 252,
+        "successor_branches": 68,
+        "large_cap_branch_count": 0,
+        "large_cap_exact_cells": 0,
+        "large_cap_terminal_cells": 0,
+        "large_cap_branches": "",
+        "medium_cap_branch_count": 0,
+        "medium_cap_exact_cells": 0,
+        "medium_cap_terminal_cells": 0,
+        "medium_cap_branches": ""
+      },
+      {
+        "sign": "220",
+        "outgoing_exact_cells": 229,
+        "successor_branches": 45,
+        "large_cap_branch_count": 0,
+        "large_cap_exact_cells": 0,
+        "large_cap_terminal_cells": 0,
+        "large_cap_branches": "",
+        "medium_cap_branch_count": 0,
+        "medium_cap_exact_cells": 0,
+        "medium_cap_terminal_cells": 0,
+        "medium_cap_branches": ""
+      },
+      {
+        "sign": "032",
+        "outgoing_exact_cells": 212,
+        "successor_branches": 60,
+        "large_cap_branch_count": 0,
+        "large_cap_exact_cells": 0,
+        "large_cap_terminal_cells": 0,
+        "large_cap_branches": "",
+        "medium_cap_branch_count": 0,
+        "medium_cap_exact_cells": 0,
+        "medium_cap_terminal_cells": 0,
+        "medium_cap_branches": ""
+      },
+      {
+        "sign": "520",
+        "outgoing_exact_cells": 203,
+        "successor_branches": 28,
+        "large_cap_branch_count": 0,
+        "large_cap_exact_cells": 0,
+        "large_cap_terminal_cells": 0,
+        "large_cap_branches": "",
+        "medium_cap_branch_count": 0,
+        "medium_cap_exact_cells": 0,
+        "medium_cap_terminal_cells": 0,
+        "medium_cap_branches": ""
+      },
+      {
+        "sign": "390",
+        "outgoing_exact_cells": 198,
+        "successor_branches": 57,
+        "large_cap_branch_count": 0,
+        "large_cap_exact_cells": 0,
+        "large_cap_terminal_cells": 0,
+        "large_cap_branches": "",
+        "medium_cap_branch_count": 0,
+        "medium_cap_exact_cells": 0,
+        "medium_cap_terminal_cells": 0,
+        "medium_cap_branches": ""
+      },
+      {
+        "sign": "240",
+        "outgoing_exact_cells": 163,
+        "successor_branches": 23,
+        "large_cap_branch_count": 0,
+        "large_cap_exact_cells": 0,
+        "large_cap_terminal_cells": 0,
+        "large_cap_branches": "",
+        "medium_cap_branch_count": 0,
+        "medium_cap_exact_cells": 0,
+        "medium_cap_terminal_cells": 0,
+        "medium_cap_branches": ""
+      },
+      {
+        "sign": "033",
+        "outgoing_exact_cells": 148,
+        "successor_branches": 34,
+        "large_cap_branch_count": 0,
+        "large_cap_exact_cells": 0,
+        "large_cap_terminal_cells": 0,
+        "large_cap_branches": "",
+        "medium_cap_branch_count": 0,
+        "medium_cap_exact_cells": 0,
+        "medium_cap_terminal_cells": 0,
+        "medium_cap_branches": ""
+      },
+      {
+        "sign": "741",
+        "outgoing_exact_cells": 140,
+        "successor_branches": 68,
+        "large_cap_branch_count": 0,
+        "large_cap_exact_cells": 0,
+        "large_cap_terminal_cells": 0,
+        "large_cap_branches": "",
+        "medium_cap_branch_count": 0,
+        "medium_cap_exact_cells": 0,
+        "medium_cap_terminal_cells": 0,
+        "medium_cap_branches": ""
+      },
+      {
+        "sign": "001",
+        "outgoing_exact_cells": 134,
+        "successor_branches": 53,
+        "large_cap_branch_count": 0,
+        "large_cap_exact_cells": 0,
+        "large_cap_terminal_cells": 0,
+        "large_cap_branches": "",
+        "medium_cap_branch_count": 0,
+        "medium_cap_exact_cells": 0,
+        "medium_cap_terminal_cells": 0,
+        "medium_cap_branches": ""
+      },
+      {
+        "sign": "031",
+        "outgoing_exact_cells": 109,
+        "successor_branches": 57,
+        "large_cap_branch_count": 0,
+        "large_cap_exact_cells": 0,
+        "large_cap_terminal_cells": 0,
+        "large_cap_branches": "",
+        "medium_cap_branch_count": 0,
+        "medium_cap_exact_cells": 0,
+        "medium_cap_terminal_cells": 0,
+        "medium_cap_branches": ""
+      },
+      {
+        "sign": "233",
+        "outgoing_exact_cells": 109,
+        "successor_branches": 24,
+        "large_cap_branch_count": 0,
+        "large_cap_exact_cells": 0,
+        "large_cap_terminal_cells": 0,
+        "large_cap_branches": "",
+        "medium_cap_branch_count": 0,
+        "medium_cap_exact_cells": 0,
+        "medium_cap_terminal_cells": 0,
+        "medium_cap_branches": ""
+      },
+      {
+        "sign": "590",
+        "outgoing_exact_cells": 100,
+        "successor_branches": 42,
+        "large_cap_branch_count": 0,
+        "large_cap_exact_cells": 0,
+        "large_cap_terminal_cells": 0,
+        "large_cap_branches": "",
+        "medium_cap_branch_count": 0,
+        "medium_cap_exact_cells": 0,
+        "medium_cap_terminal_cells": 0,
+        "medium_cap_branches": ""
+      }
+    ],
+    "note": "The rank is over all predecessor signs with exact-collapsed immediate-successor branches, not only signs inspected in advance."
+  },
+  "terminal_flag_shuffle_null": {
+    "iterations": 5000,
+    "preserves": "all exact-collapsed branch sizes and sign-to-branch membership; shuffles only the terminal/nonterminal outcome labels over branch cells",
+    "target_large_cap_branch_count": 3,
+    "target_large_cap_exact_cells": 99,
+    "mean_null_max_large_cap_branch_count": 0,
+    "mean_null_max_large_cap_exact_cells": 0,
+    "maxstat_p_ge_target_branch_count": 0,
+    "maxstat_p_ge_target_exact_cells": 0,
+    "fixed_sign_p_ge_target_branch_count": 0,
+    "fixed_sign_p_ge_target_exact_cells": 0
+  },
+  "live_predictions": [
+    "A source-visible unseen or weakly catalogued row containing 060 followed by 920, 692, 550, or 820 should usually end immediately after that cap sign.",
+    "Rows with 060 followed by 368 should not be forced into the cap class; current exact cells are nonterminal, so they are a built-in contrast branch.",
+    "If branch-specific icon/site conditioning appears, it should separate cap members without destroying the shared terminal behavior."
+  ],
+  "demoters": [
+    "Demote if source review shows 060 is a segmentation artefact or that 920/692/550/820 are not independent signs in the relevant rows.",
+    "Demote if a leave-one-site or source-family collapse leaves only one cap branch above the large threshold.",
+    "Demote if terminal-cap rank is common under a stricter null that preserves row length and position better than the terminal-label shuffle here."
+  ],
+  "decision": "candidate_survives_whole_corpus_first_pass; strict cap set is 920/550/820, with 692 demoted to near-cap until its five nonterminal rows are adjudicated"
+}

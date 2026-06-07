@@ -1,0 +1,22 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "packet_id": "blind_741060920_terminal_cluster_20260531",
+  "purpose": "Destructive blind test for the promoted metadata candidate that 741-060 feeds a terminal 060-920 cap.",
+  "blind_sheet": "tmp/blind_741060920_terminal_cluster_20260531/blind_741060920_terminal_cluster_sheet.jpg",
+  "manifest": "data/open_prototype/reports/blind_741060920_terminal_cluster_20260531_manifest.csv",
+  "sealed_answer_key": "data/open_prototype/reports/blind_741060920_terminal_cluster_20260531_answer_key.csv",
+  "design": {
+    "positives": 6,
+    "controls": 6,
+    "positive_class": "catalogued 741-060-920 rows across multiple sites",
+    "control_classes": [
+      "806-series rows",
+      "740-407-590 terminal/near-terminal rows",
+      "one non-741 060-920 diagnostic row"
+    ],
+    "neutralization": "Printed object labels are cropped out where visible; panels expose only neutral IDs BT001..BT012."
+  },
+  "promotion_rule": "The candidate strengthens if blind readers recover either the full 741-060-920 terminal cluster in the positive set, or the broader 060-920 cap including the non-741 diagnostic row, without object IDs or catalog strings.",
+  "failure_rule": "If readers cannot separate 060-920-bearing rows from controls, or if controls without 060-920 are read as the same terminal cluster at comparable rates, the terminal-cap candidate remains metadata-only and does not move toward acceptance."
+}

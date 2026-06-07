@@ -1,0 +1,34 @@
+{
+  "date": "2026-05-26",
+  "question": "Can H-2148 move from route-dark metadata into source-visible evidence for the 110 / Parpola sign-no.-41 branch?",
+  "result": "Yes at object and count-level side mapping. Kenoyer 2005 Figure 14.1 identifies H2001-5142, lot 11759-01, as an incised fired-steatite flat rectangular tablet from foundation rubble. The visible item has one single-sign panel and one three-sign panel, matching local H-2148 rows 481.2 +110+ and 481.1 +520-220-415+ by sign count. This upgrades H-2148 from route_dark_exact_415_plus_110_candidate to public_visual_route_count_mapped.",
+  "source": {
+    "citation_label": "Kenoyer 2005 Harappa 2000-2001",
+    "public_url": "https://www.harappa.com/sites/default/files/pdf/Kenoyer2005_Excavations%20at%20Harappa%202000-2001%20New%20insights%20on.pdf",
+    "local_pdf": "tmp/h2148_h2100_h2152_110_route/kenoyer2005_harappa_2000_2001.pdf",
+    "pdf_sha256": "8539a3cba8667dc6fbd1ec77170c16d84f644dbc6854537742edcc9060cdf44f",
+    "rendered_page": "tmp/h2148_h2100_h2152_110_route/kenoyer2005_page-17.png",
+    "printed_page": "223",
+    "figure": "Figure 14.1"
+  },
+  "local_rows": {
+    "481.1": "+520-220-415+",
+    "481.2": "+110+"
+  },
+  "accepted_claims": {
+    "object_route": "H-2148 is publicly routed through Kenoyer 2005 Figure 14.1 -> H2001-5142.",
+    "count_level_panel_mapping": "The one-sign visible panel maps to local 481.2 +110+ and the three-sign visible panel maps to local 481.1 +520-220-415+ by sign count.",
+    "status_upgrade": "H-2148 is now public_visual_route_count_mapped."
+  },
+  "not_accepted": [
+    "local 110 equals Parpola sign no. 41",
+    "phonetic value",
+    "sign meaning",
+    "language identification",
+    "translation",
+    "A/B or obverse/reverse side-label mapping",
+    "outside-control classification for H-2100, H-2152, or Kanmer 4881.1"
+  ],
+  "manifest": "data/open_prototype/reports/h2148_kenoyer2005_public_visual_route_manifest.csv",
+  "next_gate": "Use H-2148 as the cleanest count-mapped branch target. Do not compare it against H-2147 as a clean single-sign witness; H-2147 is component-level only until Figure 27.14/source-side notes are acquired. Route-check H-2100, H-2152, and Kanmer 4881.1 before any broader 110/sign-no.-41 crosswalk claim."
+}

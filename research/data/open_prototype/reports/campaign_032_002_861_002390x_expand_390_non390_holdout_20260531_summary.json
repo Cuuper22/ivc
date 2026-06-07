@@ -1,0 +1,20 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "390_non390_holdout",
+  "rows": {
+    "target_390_rows": 15,
+    "covered_by_non390_same_x": 12,
+    "holdout_pass": 12,
+    "x_distribution": "125:4;095:2;705:2;072:1;140:1;346:1;530:1;590:1;692:1;707:1"
+  },
+  "decisions": [
+    {
+      "checked_date": "2026-05-31",
+      "candidate": "EXPAND_390_RIGHT_EDGE_HOST_BY_X_SUBTYPE",
+      "decision": "survives_first_holdout",
+      "evidence": "non390 same-X covered=12/15; pass=12/12; uncovered_or_tie=M-70:692:tie;M-232:707:uncovered;-:3335.1:590:tie.",
+      "consequence": "If this holds, `390` is more likely a host environment whose continuation behavior is inherited from X subtype rather than from a `390` value."
+    }
+  ]
+}

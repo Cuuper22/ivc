@@ -1,0 +1,58 @@
+{
+  "question": "Can H-2148 / H2001-5142 one-sign panel be tied to the reverse side and Parpola 1994 sign no. 41 while preserving local row 481.2 +110+?",
+  "result": "Not yet. The chain is now narrow: Parpola 2019 says H-2148 reverse has sign no. 41; Parpola 1994 defines sign no. 41 visually; Kenoyer 2005 shows H2001-5142 with one-sign and three-sign panels; local row 481.2 is +110+. But no checked public source labels the one-sign panel as reverse/B-side or transcribes it as sign no. 41.",
+  "status": "same_side_identity_pending",
+  "checked_sources": [
+    "Gmail search newer_than:14d for H2001-5142/H-2148/11759-01/H97-3283/H95-2514",
+    "Kenoyer 2005 Fig. 14.1 local PDF/crops",
+    "Parpola 2019 OCR text lines 102-104",
+    "local Lipi rows 481.1 and 481.2",
+    "exact public web searches for H2001-5142, H-2148, and 11759-01"
+  ],
+  "acquisition_actions": [
+    {
+      "message_id": "19e63e54d47e57c9",
+      "to": "harappa@gmail.com",
+      "subject": "Source panels / side-label request for H-2145, H-2147, H-2148",
+      "status": "sent_no_reply_found_in_checked_query"
+    },
+    {
+      "message_id": "19e64642a304513b",
+      "thread_id": "19e6211289c772f3",
+      "to": "andreas.fuls@tu-berlin.de",
+      "cc": "harappa@gmail.com",
+      "subject": "Re: connect",
+      "status": "sent_targeted_h2148_same_side_request"
+    }
+  ],
+  "current_chain": [
+    "Parpola 2019: H-2148 reverse has sign no. 41",
+    "Parpola 1994 Fig. 5.1: sign no. 41 is anthropomorphic/kneeling-pot family",
+    "Kenoyer 2005 Fig. 14.1: H2001-5142 / lot 11759-01 has one-sign and three-sign panels",
+    "local row 481.2: H-2148 +110+",
+    "visual check: H-2148 one-sign panel is compatible with Parpola sign no. 41"
+  ],
+  "blocking_missing_evidence": [
+    "one-sign panel explicitly labeled reverse/B-side",
+    "one-sign panel explicitly transcribed as Parpola sign no. 41 or equivalent",
+    "source note mapping H-2148 local row 481.2 to the one-sign reverse panel"
+  ],
+  "decisions": {
+    "h2148_branch_target": "cleanest_live_target",
+    "count_level_mapping": "preserved",
+    "visual_compatibility": "preserved",
+    "same_side_identity": "not_closed",
+    "local_110_crosswalk": "unaccepted"
+  },
+  "accepted_claims": {
+    "h2148_is_cleanest_branch_target": true,
+    "one_sign_panel_count_maps_to_481_2": true,
+    "h2148_panel_compatible_with_sign41": true,
+    "one_sign_panel_is_reverse": false,
+    "one_sign_panel_is_definitively_parpola_sign41": false,
+    "local_110_equals_parpola_sign41": false,
+    "phonetic_value": false,
+    "translation": false
+  },
+  "next_gate": "Obtain HARP/CISI/ICIT/Fuls/Parpola/Wells source evidence that labels or transcribes the H2001-5142 one-sign face. Without that, keep H-2148 at same_side_identity_pending."
+}

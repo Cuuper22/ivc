@@ -1,0 +1,40 @@
+{
+  "date": "2026-05-29",
+  "rows": 7,
+  "source_ready_rows": 5,
+  "outcome_distribution": "bare_closure:5;compound_tail_255_416:1;simple_tail_603:1",
+  "source_ready_outcome_distribution": "bare_closure:3;compound_tail_255_416:1;simple_tail_603:1",
+  "status": "220032_split_survives_broad_register_and_length_attacks_terminal_space_unclosed",
+  "decisions": [
+    {
+      "test": "broad_register",
+      "decision": "fails_as_explanation",
+      "evidence": "type/shape source-ready split is SEAL:S|square:3 vs SEAL:S|square:1 vs SEAL:S|square:1",
+      "limit": "all source-ready rows are seal-square in this packet, so broad register cannot choose the tail"
+    },
+    {
+      "test": "site",
+      "decision": "fails_as_determinant",
+      "evidence": "site split is Mohenjo-daro:2;Harappa:1 vs Mohenjo-daro:1 vs Mohenjo-daro:1",
+      "limit": "Mohenjo-daro contains bare closure, simple tail, and compound tail; Harappa only contributes one source-ready bare control here"
+    },
+    {
+      "test": "total_text_length",
+      "decision": "insufficient_as_explanation",
+      "evidence": "all rows bare lengths 5,5,7,8,8 vs tailed 7,9; source-ready bare 5,5,8 vs tailed 7,9",
+      "limit": "total length partly tracks available continuation, but bare rows reach length 7/8 while tailed rows are 7/9; it is not a clean selector"
+    },
+    {
+      "test": "fine_icon_symbol",
+      "decision": "not_testable_as_general_explanation",
+      "evidence": "fine symbol labels differ across the five image rows: Bull/Bull1/Bull1:W bare, Gaur for 603, Bull1:S for 255-416",
+      "limit": "single rows per fine icon cannot distinguish icon function from row accident; broad Mohenjo seal-square already fails as determinant"
+    },
+    {
+      "test": "terminal_space",
+      "decision": "not_closed",
+      "evidence": "measured layout rows are 2 total: 0 bare and 2 tailed",
+      "limit": "bare controls were visually scored but not quantified with comparable line-width/tail-space metrics, so this remains the next recut target"
+    }
+  ]
+}

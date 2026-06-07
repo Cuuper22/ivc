@@ -1,0 +1,368 @@
+{
+  "run_date": "2026-05-31",
+  "bet_id": "V2_V4_740_407_REGISTER_OPENING_MODEL_20260531",
+  "vector": "V4 context-to-meaning without sound; V2 slot grammar",
+  "confidence_tier": "promoted candidate",
+  "risky_bet": "`740` is the broad default opener of the SEAL:R/TAB:C register. `407` is a narrower independent opener in the same register, not a strict child of 740. The stricter hierarchy bet, where 740 should consistently precede 407 when both appear, is tested separately and is killed if collision rows are mixed.",
+  "observed": "Broad opener: 740 is initial in 129/180 register occurrences, rank 1/278, Fisher=1.3511897977632278e-52, forger FPR=0. Narrow opener: 407 is initial in 34/55, rank 2/278, Fisher=6.136812829050565e-11. Collision rows: 19; 740 before 407 in 11/19, 407 before 740 in 8/19. When 407 occurs without 740, it is initial in 27/34; when both occur, 407 is initial in 7/19; Fisher=0.002612560492214921. Strict nesting verdict: killed_by_mixed_order_collision_rows.",
+  "adversarial_test": "Canonical numeric-sequence collapse; all-sign initial-position rank inside SEAL:R/TAB:C; 3000-iteration row-preserving sign-label forger preserving row lengths and exact sign frequencies; complete-only, non-poor-only, leave-Mohenjo, leave-Harappa, SEAL:R-only, TAB:C-only controls; direct collision-row test for the stricter 740-before-407 hierarchy.",
+  "false_positive_rate": 0,
+  "broad_opener_fisher_p": 1.3511897977632278e-52,
+  "narrow_opener_fisher_p": 6.136812829050565e-11,
+  "strict_nesting_tier": "wild shot",
+  "strict_nesting_verdict": "killed_by_mixed_order_collision_rows",
+  "falsifier": "If source-checked SEAL:R/TAB:C rows no longer put 740 preferentially in first position, demote the broad-opener claim. If future 740+407 collision rows strongly converge on 740 before 407, revive the strict nesting model; if they stay mixed, keep 407 as an independent/narrow opener instead.",
+  "next_prediction": "Held-out SEAL:R/TAB:C rows should overproduce 740 in first position. Rows with 407 but without 740 should often put 407 first. Rows with both 740 and 407 should not be forced into one order; mixed order is predicted under the independent-opener model.",
+  "pools": [
+    {
+      "pool": "register_all_seal_r_or_tab_c",
+      "rows": 444,
+      "occurrences": 2065,
+      "broad_opener_rank": "1/278",
+      "broad_opener_occurrences": 180,
+      "broad_opener_initial": 129,
+      "broad_opener_initial_share": 0.7166666666666667,
+      "broad_opener_fisher_p": 1.3511897977632278e-52,
+      "narrow_opener_rank": "2/278",
+      "narrow_opener_occurrences": 55,
+      "narrow_opener_initial": 34,
+      "narrow_opener_initial_share": 0.6181818181818182,
+      "narrow_opener_fisher_p": 6.136812829050565e-11
+    },
+    {
+      "pool": "register_complete_only",
+      "rows": 297,
+      "occurrences": 1456,
+      "broad_opener_rank": "1/246",
+      "broad_opener_occurrences": 138,
+      "broad_opener_initial": 100,
+      "broad_opener_initial_share": 0.7246376811594203,
+      "broad_opener_fisher_p": 6.381357934835012e-45,
+      "narrow_opener_rank": "2/246",
+      "narrow_opener_occurrences": 42,
+      "narrow_opener_initial": 25,
+      "narrow_opener_initial_share": 0.5952380952380952,
+      "narrow_opener_fisher_p": 1.9517321879587605e-8
+    },
+    {
+      "pool": "register_non_poor_only",
+      "rows": 270,
+      "occurrences": 1344,
+      "broad_opener_rank": "1/236",
+      "broad_opener_occurrences": 120,
+      "broad_opener_initial": 88,
+      "broad_opener_initial_share": 0.7333333333333333,
+      "broad_opener_fisher_p": 8.478231492196223e-41,
+      "narrow_opener_rank": "4/236",
+      "narrow_opener_occurrences": 32,
+      "narrow_opener_initial": 19,
+      "narrow_opener_initial_share": 0.59375,
+      "narrow_opener_fisher_p": 8.913859322245589e-7
+    },
+    {
+      "pool": "register_without_mohenjo_daro",
+      "rows": 159,
+      "occurrences": 729,
+      "broad_opener_rank": "1/184",
+      "broad_opener_occurrences": 53,
+      "broad_opener_initial": 35,
+      "broad_opener_initial_share": 0.660377358490566,
+      "broad_opener_fisher_p": 5.723236516095372e-13,
+      "narrow_opener_rank": "9/184",
+      "narrow_opener_occurrences": 14,
+      "narrow_opener_initial": 7,
+      "narrow_opener_initial_share": 0.5,
+      "narrow_opener_fisher_p": 0.01766650117268061
+    },
+    {
+      "pool": "register_without_harappa",
+      "rows": 363,
+      "occurrences": 1672,
+      "broad_opener_rank": "1/249",
+      "broad_opener_occurrences": 150,
+      "broad_opener_initial": 110,
+      "broad_opener_initial_share": 0.7333333333333333,
+      "broad_opener_fisher_p": 1.4558898128234663e-46,
+      "narrow_opener_rank": "3/249",
+      "narrow_opener_occurrences": 48,
+      "narrow_opener_initial": 28,
+      "narrow_opener_initial_share": 0.5833333333333334,
+      "narrow_opener_fisher_p": 2.3815909610887385e-8
+    },
+    {
+      "pool": "seal_r_only",
+      "rows": 350,
+      "occurrences": 1668,
+      "broad_opener_rank": "1/261",
+      "broad_opener_occurrences": 135,
+      "broad_opener_initial": 95,
+      "broad_opener_initial_share": 0.7037037037037037,
+      "broad_opener_fisher_p": 1.1748123878750173e-38,
+      "narrow_opener_rank": "3/261",
+      "narrow_opener_occurrences": 36,
+      "narrow_opener_initial": 22,
+      "narrow_opener_initial_share": 0.6111111111111112,
+      "narrow_opener_fisher_p": 1.385608281832502e-7
+    },
+    {
+      "pool": "tab_c_only",
+      "rows": 94,
+      "occurrences": 397,
+      "broad_opener_rank": "1/87",
+      "broad_opener_occurrences": 45,
+      "broad_opener_initial": 34,
+      "broad_opener_initial_share": 0.7555555555555555,
+      "broad_opener_fisher_p": 3.5298022280093516e-15,
+      "narrow_opener_rank": "2/87",
+      "narrow_opener_occurrences": 19,
+      "narrow_opener_initial": 12,
+      "narrow_opener_initial_share": 0.631578947368421,
+      "narrow_opener_fisher_p": 0.0001913305675839945
+    }
+  ],
+  "forger": {
+    "iterations": 3000,
+    "maxstat_fpr": 0
+  },
+  "collision_model": {
+    "rows": 444,
+    "has_broad_opener_rows": 180,
+    "has_narrow_opener_rows": 53,
+    "both_rows": 19,
+    "only_narrow_rows": 34,
+    "only_narrow_initial": 27,
+    "both_narrow_initial": 7,
+    "both_broad_before_narrow": 11,
+    "both_narrow_before_broad": 8,
+    "narrow_initial_without_broad_vs_with_broad_fisher_p": 0.002612560492214921,
+    "strict_nesting_tier": "wild shot",
+    "strict_nesting_verdict": "killed_by_mixed_order_collision_rows"
+  },
+  "top_initial_signs": [
+    {
+      "sign": "740",
+      "occurrences": 180,
+      "initial": 129,
+      "initial_share": 0.7166666666666667,
+      "background_initial": 315,
+      "background_occurrences": 1885,
+      "fisher_p": 1.3511897977632278e-52
+    },
+    {
+      "sign": "407",
+      "occurrences": 55,
+      "initial": 34,
+      "initial_share": 0.6181818181818182,
+      "background_initial": 410,
+      "background_occurrences": 2010,
+      "fisher_p": 6.136812829050565e-11
+    },
+    {
+      "sign": "617",
+      "occurrences": 17,
+      "initial": 15,
+      "initial_share": 0.8823529411764706,
+      "background_initial": 429,
+      "background_occurrences": 2048,
+      "fisher_p": 7.065408443323245e-9
+    },
+    {
+      "sign": "154",
+      "occurrences": 19,
+      "initial": 16,
+      "initial_share": 0.8421052631578947,
+      "background_initial": 428,
+      "background_occurrences": 2046,
+      "fisher_p": 8.456602554207986e-9
+    },
+    {
+      "sign": "400",
+      "occurrences": 16,
+      "initial": 13,
+      "initial_share": 0.8125,
+      "background_initial": 431,
+      "background_occurrences": 2049,
+      "fisher_p": 5.335884842658161e-7
+    },
+    {
+      "sign": "405",
+      "occurrences": 27,
+      "initial": 16,
+      "initial_share": 0.5925925925925926,
+      "background_initial": 428,
+      "background_occurrences": 2038,
+      "fisher_p": 0.000019868095099235165
+    },
+    {
+      "sign": "527",
+      "occurrences": 13,
+      "initial": 10,
+      "initial_share": 0.7692307692307693,
+      "background_initial": 434,
+      "background_occurrences": 2052,
+      "fisher_p": 0.00002943544787075795
+    },
+    {
+      "sign": "000",
+      "occurrences": 129,
+      "initial": 46,
+      "initial_share": 0.35658914728682173,
+      "background_initial": 398,
+      "background_occurrences": 1936,
+      "fisher_p": 0.00009537623156832524
+    },
+    {
+      "sign": "520",
+      "occurrences": 22,
+      "initial": 13,
+      "initial_share": 0.5909090909090909,
+      "background_initial": 431,
+      "background_occurrences": 2043,
+      "fisher_p": 0.0001298689527899115
+    },
+    {
+      "sign": "390",
+      "occurrences": 8,
+      "initial": 7,
+      "initial_share": 0.875,
+      "background_initial": 437,
+      "background_occurrences": 2057,
+      "fisher_p": 0.0001333033653444777
+    },
+    {
+      "sign": "090",
+      "occurrences": 9,
+      "initial": 7,
+      "initial_share": 0.7777777777777778,
+      "background_initial": 437,
+      "background_occurrences": 2056,
+      "fisher_p": 0.0004887677260635227
+    },
+    {
+      "sign": "679",
+      "occurrences": 4,
+      "initial": 4,
+      "initial_share": 1,
+      "background_initial": 440,
+      "background_occurrences": 2061,
+      "fisher_p": 0.002114608225860306
+    },
+    {
+      "sign": "423",
+      "occurrences": 6,
+      "initial": 5,
+      "initial_share": 0.8333333333333334,
+      "background_initial": 439,
+      "background_occurrences": 2059,
+      "fisher_p": 0.0022276387536895054
+    },
+    {
+      "sign": "409",
+      "occurrences": 3,
+      "initial": 3,
+      "initial_share": 1,
+      "background_initial": 441,
+      "background_occurrences": 2062,
+      "fisher_p": 0.009887351840656564
+    },
+    {
+      "sign": "416",
+      "occurrences": 4,
+      "initial": 3,
+      "initial_share": 0.75,
+      "background_initial": 441,
+      "background_occurrences": 2061,
+      "fisher_p": 0.033205582685037136
+    },
+    {
+      "sign": "790",
+      "occurrences": 10,
+      "initial": 5,
+      "initial_share": 0.5,
+      "background_initial": 439,
+      "background_occurrences": 2055,
+      "fisher_p": 0.04336130898841027
+    },
+    {
+      "sign": "155",
+      "occurrences": 2,
+      "initial": 2,
+      "initial_share": 1,
+      "background_initial": 442,
+      "background_occurrences": 2063,
+      "fisher_p": 0.046148431781154714
+    },
+    {
+      "sign": "158",
+      "occurrences": 2,
+      "initial": 2,
+      "initial_share": 1,
+      "background_initial": 442,
+      "background_occurrences": 2063,
+      "fisher_p": 0.046148431781154714
+    },
+    {
+      "sign": "749",
+      "occurrences": 2,
+      "initial": 2,
+      "initial_share": 1,
+      "background_initial": 442,
+      "background_occurrences": 2063,
+      "fisher_p": 0.046148431781154714
+    },
+    {
+      "sign": "064",
+      "occurrences": 5,
+      "initial": 3,
+      "initial_share": 0.6,
+      "background_initial": 441,
+      "background_occurrences": 2060,
+      "fisher_p": 0.06986306348840601
+    },
+    {
+      "sign": "422",
+      "occurrences": 3,
+      "initial": 2,
+      "initial_share": 0.6666666666666666,
+      "background_initial": 442,
+      "background_occurrences": 2062,
+      "fisher_p": 0.11867059166210932
+    },
+    {
+      "sign": "426",
+      "occurrences": 3,
+      "initial": 2,
+      "initial_share": 0.6666666666666666,
+      "background_initial": 442,
+      "background_occurrences": 2062,
+      "fisher_p": 0.11867059166210932
+    },
+    {
+      "sign": "354",
+      "occurrences": 7,
+      "initial": 3,
+      "initial_share": 0.42857142857142855,
+      "background_initial": 441,
+      "background_occurrences": 2058,
+      "fisher_p": 0.1744780531432986
+    },
+    {
+      "sign": "368",
+      "occurrences": 4,
+      "initial": 2,
+      "initial_share": 0.5,
+      "background_initial": 442,
+      "background_occurrences": 2061,
+      "fisher_p": 0.20413560063936595
+    },
+    {
+      "sign": "045",
+      "occurrences": 1,
+      "initial": 1,
+      "initial_share": 1,
+      "background_initial": 443,
+      "background_occurrences": 2064,
+      "fisher_p": 0.21501210653754216
+    }
+  ]
+}

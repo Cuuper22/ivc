@@ -1,0 +1,83 @@
+{
+  "date": "2026-05-31",
+  "status": "vector1_expanded_inventory_with_failaka_acquisition_guardrail_no_accepted_external_anchor",
+  "counts": {
+    "cuneiform_seed_attestations": 5,
+    "cuneiform_attestations_expanded": 16,
+    "cuneiform_sources_requested": 10,
+    "cuneiform_fetches_attempted": 18,
+    "cuneiform_fetches_failed": 0,
+    "cuneiform_routes": 5,
+    "external_indus_objects": 41,
+    "meluhha_indus_join_surface_rows": 25,
+    "control_toponyms": 5,
+    "failaka_kjaerum_acquisition_rows": 10,
+    "accepted_external_anchors": 0
+  },
+  "external_object_counts": {
+    "by_region": {
+      "Central Asia": 3,
+      "Persian Gulf": 16,
+      "Mesopotamia": 11,
+      "Iranian Plateau": 11
+    },
+    "by_site": {
+      "Ur": 5,
+      "Ra's al-Junayz": 4,
+      "Karzakan": 3,
+      "Failaka": 2,
+      "Kish": 2,
+      "Miri Qalat": 2,
+      "Nindowari-damb": 2,
+      "Salut": 2,
+      "Susa": 2,
+      "Altyn Depe": 1,
+      "Girsu": 1,
+      "Gonur Depe": 1,
+      "Hajar": 1,
+      "Janabiyah": 1,
+      "Kalba": 1,
+      "Luristan": 1,
+      "Murda Sang": 1,
+      "Nippur": 1,
+      "Ornach area": 1,
+      "Qala'at al-Bahrain": 1,
+      "Saar": 1,
+      "Shortughai": 1,
+      "Sibri": 1,
+      "Tell Umma": 1,
+      "Tello": 1,
+      "Tepe Yahya": 1
+    }
+  },
+  "files": {
+    "cuneiform_seed_attestations": "data/meluhha/cuneiform_seed_attestations.csv",
+    "cuneiform_attestations_expanded": "data/meluhha/cuneiform_attestations_expanded.csv",
+    "cuneiform_fetch_log": "data/meluhha/cuneiform_fetch_log.csv",
+    "meluhha_token_inventory": "data/meluhha/meluhha_token_inventory.json",
+    "meluhha_indus_join_surface": "data/meluhha/meluhha_indus_join_surface.csv",
+    "meluhha_indus_join_surface_summary": "data/meluhha/meluhha_indus_join_surface_summary.json",
+    "meluhha_join_surface_null_summary": "data/meluhha/meluhha_join_surface_null_summary.json",
+    "meluhha_join_surface_null_iterations": "data/meluhha/meluhha_join_surface_null_iterations.csv",
+    "cuneiform_source_routes": "data/meluhha/cuneiform_source_routes.csv",
+    "external_indus_objects": "data/meluhha/external_indus_objects.csv",
+    "control_toponyms": "data/meluhha/control_toponyms.csv",
+    "failaka_kjaerum_acquisition_20260531": "data/meluhha/failaka_kjaerum_acquisition_20260531.csv",
+    "failaka_kjaerum_acquisition_20260531_summary": "data/meluhha/failaka_kjaerum_acquisition_20260531_summary.json",
+    "manifest": "data/meluhha/manifest.json"
+  },
+  "source_hashes": {
+    "lipi_metadata_filtered": "b3e2a94efdf70eaa893bbbbd35fd057b53f766c82823a3efb8ee37f9365311fe",
+    "cuneiform_fetch_hashes": "See data/meluhha/cuneiform_fetch_log.csv"
+  },
+  "caveats": [
+    "The expanded cuneiform inventory is source-side evidence only and contains no accepted Indus external anchor.",
+    "The Meluhha-Indus join surface uses literal site overlaps only and does not score chronology because the external object table lacks dates.",
+    "The first join-surface forger rejects site overlap alone as evidence: random site controls exceed the observed join count at high rates.",
+    "Composite literary texts are separated as context sources; they are not treated as object-level bilinguals.",
+    "Shu-ilishu is a route seed until the primary object inscription/edition is checked.",
+    "External Indus objects come from T3 quarantined Lipi metadata and require source-image/catalogue validation.",
+    "The Failaka Kjaerum guardrail shows CDLI publication 1773730 is adjacent but not the Laursen 279/319 target bridge.",
+    "Dilmun/Magan/Marhasi/Elam/Gutium controls must be extracted and scored before any Meluhha-Indus pairing can be considered."
+  ]
+}

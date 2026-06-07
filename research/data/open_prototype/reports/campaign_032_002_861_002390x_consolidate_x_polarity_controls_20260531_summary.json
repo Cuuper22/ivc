@@ -1,0 +1,59 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "x_polarity_controls",
+  "serious_controls": 8,
+  "survived_controls": 8,
+  "weak_survivals": 0,
+  "controls": {
+    "all": {
+      "terminal_booster_rows": 84,
+      "open_operator_rows": 44,
+      "gap": "0.712",
+      "verdict": "survives"
+    },
+    "seal_s_only": {
+      "terminal_booster_rows": 52,
+      "open_operator_rows": 36,
+      "gap": "0.767",
+      "verdict": "survives"
+    },
+    "mohenjo_only": {
+      "terminal_booster_rows": 40,
+      "open_operator_rows": 28,
+      "gap": "0.771",
+      "verdict": "survives"
+    },
+    "non_mohenjo": {
+      "terminal_booster_rows": 44,
+      "open_operator_rows": 16,
+      "gap": "0.636",
+      "verdict": "survives"
+    },
+    "harappa_only": {
+      "terminal_booster_rows": 20,
+      "open_operator_rows": 8,
+      "gap": "0.700",
+      "verdict": "survives"
+    },
+    "complete_y": {
+      "terminal_booster_rows": 49,
+      "open_operator_rows": 34,
+      "gap": "0.812",
+      "verdict": "survives"
+    },
+    "good_or_fine": {
+      "terminal_booster_rows": 27,
+      "open_operator_rows": 16,
+      "gap": "0.875",
+      "verdict": "survives"
+    },
+    "cisi_named": {
+      "terminal_booster_rows": 73,
+      "open_operator_rows": 41,
+      "gap": "0.750",
+      "verdict": "survives"
+    }
+  },
+  "decision": "X_polarity_candidate_keep"
+}

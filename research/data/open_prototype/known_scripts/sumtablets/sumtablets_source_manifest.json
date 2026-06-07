@@ -1,0 +1,201 @@
+{
+  "date": "2026-05-29",
+  "generated_at_local": "2026-05-29T00:29:32-07:00",
+  "generated_at_utc": "2026-05-29T07:29:32.136Z",
+  "purpose": "Pinned glyph-only known-script administrative comparator for the Vector 2 effective-unicity instrument. Transliteration and glyph_names are intentionally excluded from local cache and scoring.",
+  "dataset": {
+    "id": "colesimmons/SumTablets",
+    "huggingface_url": "https://huggingface.co/datasets/colesimmons/SumTablets",
+    "github_url": "https://github.com/colesimmons/SumTablets",
+    "license": "cc-by-4.0",
+    "sha": "11638cd142afbed716df43c55d8810d47fb9b52c",
+    "created_at": "2024-03-11T18:40:08.000Z",
+    "last_modified": "2024-08-01T18:51:10.000Z",
+    "tags": [
+      "task_categories:translation",
+      "task_categories:text-classification",
+      "task_categories:zero-shot-classification",
+      "license:cc-by-4.0",
+      "size_categories:10K<n<100K",
+      "format:csv",
+      "modality:text",
+      "library:datasets",
+      "library:pandas",
+      "library:mlcroissant",
+      "library:polars",
+      "region:us",
+      "sumerian"
+    ],
+    "viewer_validity": {
+      "preview": true,
+      "viewer": true,
+      "search": true,
+      "filter": true,
+      "statistics": true
+    },
+    "split_metadata": {
+      "splits": [
+        {
+          "dataset": "colesimmons/SumTablets",
+          "config": "default",
+          "split": "train"
+        },
+        {
+          "dataset": "colesimmons/SumTablets",
+          "config": "default",
+          "split": "validation"
+        },
+        {
+          "dataset": "colesimmons/SumTablets",
+          "config": "default",
+          "split": "test"
+        }
+      ],
+      "pending": [],
+      "failed": []
+    },
+    "size_metadata": {
+      "size": {
+        "dataset": {
+          "dataset": "colesimmons/SumTablets",
+          "num_bytes_original_files": 117351755,
+          "num_bytes_parquet_files": 48476996,
+          "num_bytes_memory": 118450874,
+          "num_rows": 91606,
+          "estimated_num_rows": null
+        },
+        "configs": [
+          {
+            "dataset": "colesimmons/SumTablets",
+            "config": "default",
+            "num_bytes_original_files": 117351755,
+            "num_bytes_parquet_files": 48476996,
+            "num_bytes_memory": 118450874,
+            "num_rows": 91606,
+            "num_columns": 6,
+            "estimated_num_rows": null
+          }
+        ],
+        "splits": [
+          {
+            "dataset": "colesimmons/SumTablets",
+            "config": "default",
+            "split": "train",
+            "num_bytes_parquet_files": 43638150,
+            "num_bytes_memory": 106662288,
+            "num_rows": 82452,
+            "num_columns": 6,
+            "estimated_num_rows": null
+          },
+          {
+            "dataset": "colesimmons/SumTablets",
+            "config": "default",
+            "split": "validation",
+            "num_bytes_parquet_files": 2368631,
+            "num_bytes_memory": 5797774,
+            "num_rows": 4577,
+            "num_columns": 6,
+            "estimated_num_rows": null
+          },
+          {
+            "dataset": "colesimmons/SumTablets",
+            "config": "default",
+            "split": "test",
+            "num_bytes_parquet_files": 2470215,
+            "num_bytes_memory": 5990812,
+            "num_rows": 4577,
+            "num_columns": 6,
+            "estimated_num_rows": null
+          }
+        ]
+      },
+      "pending": [],
+      "failed": [],
+      "partial": false
+    },
+    "parquet_metadata": {
+      "parquet_files": [
+        {
+          "dataset": "colesimmons/SumTablets",
+          "config": "default",
+          "split": "test",
+          "url": "https://huggingface.co/datasets/colesimmons/SumTablets/resolve/refs%2Fconvert%2Fparquet/default/test/0000.parquet",
+          "filename": "0000.parquet",
+          "size": 2470215
+        },
+        {
+          "dataset": "colesimmons/SumTablets",
+          "config": "default",
+          "split": "train",
+          "url": "https://huggingface.co/datasets/colesimmons/SumTablets/resolve/refs%2Fconvert%2Fparquet/default/train/0000.parquet",
+          "filename": "0000.parquet",
+          "size": 43638150
+        },
+        {
+          "dataset": "colesimmons/SumTablets",
+          "config": "default",
+          "split": "validation",
+          "url": "https://huggingface.co/datasets/colesimmons/SumTablets/resolve/refs%2Fconvert%2Fparquet/default/validation/0000.parquet",
+          "filename": "0000.parquet",
+          "size": 2368631
+        }
+      ],
+      "pending": [],
+      "failed": [],
+      "partial": false
+    }
+  },
+  "sampling": {
+    "split": "train",
+    "config": "default",
+    "split_rows": 82452,
+    "page_count_requested": 20,
+    "rows_per_page": 100,
+    "offsets": [
+      0,
+      4334,
+      8668,
+      13002,
+      17337,
+      21671,
+      26005,
+      30340,
+      34674,
+      39008,
+      43343,
+      47677,
+      52011,
+      56346,
+      60680,
+      65014,
+      69349,
+      73683,
+      78017,
+      82352
+    ],
+    "fetched_rows": 2000,
+    "fields_retained": [
+      "id",
+      "period",
+      "genre",
+      "glyphs"
+    ],
+    "fields_intentionally_excluded": [
+      "transliteration",
+      "glyph_names"
+    ],
+    "line_filter": "visible cuneiform glyph code points only; keep line lengths 2..8 inclusive",
+    "exact_sequence_collapse": true,
+    "selection_policy_after_collapse": "stable FNV-1a hash order, cap 1798"
+  },
+  "extraction": {
+    "raw_line_records_after_length_filter": 26242,
+    "exact_unique_line_sequences": 17119,
+    "selected_line_sequences": 1798,
+    "exclusion_counts": {
+      "length_gt_8_ivc_cap": 3061,
+      "length_lt_2": 1165,
+      "structural_or_no_cuneiform_line": 7527
+    }
+  }
+}

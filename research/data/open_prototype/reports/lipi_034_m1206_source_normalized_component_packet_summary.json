@@ -1,0 +1,38 @@
+{
+  "artifact": "lipi_034_m1206_source_normalized_component_packet",
+  "date": "2026-05-26",
+  "packet_dir": "tmp/m1206_034_next_source_normalized_blind_component_control_20260526",
+  "primary_count": 12,
+  "appendix_count": 7,
+  "blind_review_rows": 12,
+  "adjudication_rows": 8,
+  "decision": "source_normalized_component_sort_preserves_bounded_034_415_visual_family_question_but_later_h938_b_probe_blocks_companion_side_as_component_support",
+  "accepted": [
+    "M-1206 A/a target terminal core is stable under blind component sorting",
+    "H-938 A/A bis remains closest clean exact-side 415 vertical-family pressure, with A bis duplicate not independent",
+    "H-940 A remains weaker secondary exact-side 415 pressure",
+    "M-37 A strict recut is a clean same-site 415 control but a distinct comb/rake-with-stem subform",
+    "H-942 A is admissible as a full source-visible singleton 016 signband control only, with side-mapping caution",
+    "M-1912 and K-150 remain excluded from clean source-normalized packet"
+  ],
+  "not_accepted": [
+    "034=415",
+    "034/415 allograph status",
+    "034 value",
+    "415 value",
+    "016 value",
+    "translation",
+    "H-942 as terminal-isolated component",
+    "M-1912 or K-150 as clean witnesses"
+  ],
+  "post_h938_b_clamp": "H-938 B component probe supersedes any use of the H-938 companion side as direct component-level 034/415 support; positive scope is limited to M-1206 versus exact-side 415 controls.",
+  "next_gate": "Acquire or create defensible source-normalized terminal crops for independent 034 witnesses or source-grade M-1912; do not continue broad packet growth without new source evidence.",
+  "files": {
+    "inputs": "data/open_prototype/reports/lipi_034_m1206_source_normalized_component_packet_inputs.csv",
+    "adjudication": "data/open_prototype/reports/lipi_034_m1206_source_normalized_component_packet_adjudication.csv",
+    "master_key": "tmp/m1206_034_next_source_normalized_blind_component_control_20260526/blind_master_key.csv",
+    "contact_sheet": "tmp/m1206_034_next_source_normalized_blind_component_control_20260526/m1206_source_normalized_component_neutral_contact_sheet.png",
+    "blind_reviews": "data/open_prototype/reports/lipi_034_m1206_source_normalized_component_packet_blind_reviews.csv"
+  },
+  "accepted_mapping_value_translation": 0
+}

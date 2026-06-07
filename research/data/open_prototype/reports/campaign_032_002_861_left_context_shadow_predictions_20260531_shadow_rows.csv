@@ -1,0 +1,46 @@
+checked_date,target_cisi,target_text,target_left,target_head,target_branch,target_tail,target_prediction,shadow_level,shadow_key,shadow_count,shadow_heads,shadow_branches,shadow_has_125,shadow_terminal,support_call,shadow_examples
+2026-05-31,H-1993,+740-000-220-004-002-390-095+,740 000 220 004,390,095,<END>,predict_neutral_qualifier_split,exact_left,740 000 220 004,0,,,0,0,no_shadow,
+2026-05-31,H-1993,+740-000-220-004-002-390-095+,740 000 220 004,390,095,<END>,predict_neutral_qualifier_split,suffix3_left,000 220 004,0,,,0,0,no_shadow,
+2026-05-31,H-1993,+740-000-220-004-002-390-095+,740 000 220 004,390,095,<END>,predict_neutral_qualifier_split,suffix2_left,220 004,0,,,0,0,no_shadow,
+2026-05-31,H-68,+090-740-220-003-002-390-072+,090 740 220 003,390,072,<END>,unpredicted_by_current_left_model,exact_left,090 740 220 003,0,,,0,0,no_shadow,
+2026-05-31,H-68,+090-740-220-003-002-390-072+,090 740 220 003,390,072,<END>,unpredicted_by_current_left_model,suffix3_left,740 220 003,0,,,0,0,no_shadow,
+2026-05-31,H-68,+090-740-220-003-002-390-072+,090 740 220 003,390,072,<END>,unpredicted_by_current_left_model,suffix2_left,220 003,0,,,0,0,no_shadow,
+2026-05-31,H-773,+740-798-803-002-390-530-741+,740 798 803,390,530,741,unpredicted_by_current_left_model,exact_left,740 798 803,0,,,0,0,no_shadow,
+2026-05-31,H-773,+740-798-803-002-390-530-741+,740 798 803,390,530,741,unpredicted_by_current_left_model,suffix3_left,740 798 803,0,,,0,0,no_shadow,
+2026-05-31,H-773,+740-798-803-002-390-530-741+,740 798 803,390,530,741,unpredicted_by_current_left_model,suffix2_left,798 803,2,031:1;861:1,603:1;892:1,0,2,untyped_shadow_at_suffix2_left,H-44:803-002-031-892-<END> | M-714:803-002-861-603-<END>
+2026-05-31,M-38,+740-690-435-255-220-032-240-235-002-390-125-632-032+,740 690 435 255 220 032 240 235,390,125,632 032,predict_rank_title,exact_left,740 690 435 255 220 032 240 235,0,,,0,0,no_shadow,
+2026-05-31,M-38,+740-690-435-255-220-032-240-235-002-390-125-632-032+,740 690 435 255 220 032 240 235,390,125,632 032,predict_rank_title,suffix3_left,032 240 235,0,,,0,0,no_shadow,
+2026-05-31,M-38,+740-690-435-255-220-032-240-235-002-390-125-632-032+,740 690 435 255 220 032 240 235,390,125,632 032,predict_rank_title,suffix2_left,240 235,3,220:1;460:1;906:1,065:1;140:1;511:1,0,2,supports_rank_trigger_head_switch_at_suffix2_left,H-426:235-002-460-511-<END> | M-24:235-002-906-140-<END> | M-46:235-002-220-065-215
+2026-05-31,M-70,+226-032-002-390-692+,226 032,390,692,<END>,predict_boundary_formula_result,exact_left,226 032,0,,,0,0,no_shadow,
+2026-05-31,M-70,+226-032-002-390-692+,226 032,390,692,<END>,predict_boundary_formula_result,suffix3_left,226 032,0,,,0,0,no_shadow,
+2026-05-31,M-70,+226-032-002-390-692+,226 032,390,692,<END>,predict_boundary_formula_result,suffix2_left,226 032,0,,,0,0,no_shadow,
+2026-05-31,M-71,+151-279-142-002-390-095+,151 279 142,390,095,<END>,unpredicted_by_current_left_model,exact_left,151 279 142,0,,,0,0,no_shadow,
+2026-05-31,M-71,+151-279-142-002-390-095+,151 279 142,390,095,<END>,unpredicted_by_current_left_model,suffix3_left,151 279 142,0,,,0,0,no_shadow,
+2026-05-31,M-71,+151-279-142-002-390-095+,151 279 142,390,095,<END>,unpredicted_by_current_left_model,suffix2_left,279 142,0,,,0,0,no_shadow,
+2026-05-31,M-119,+151-337-484-002-390-125-632-032-900-563+,151 337 484,390,125,632 032 900 563,unpredicted_by_current_left_model,exact_left,151 337 484,0,,,0,0,no_shadow,
+2026-05-31,M-119,+151-337-484-002-390-125-632-032-900-563+,151 337 484,390,125,632 032 900 563,unpredicted_by_current_left_model,suffix3_left,151 337 484,0,,,0,0,no_shadow,
+2026-05-31,M-119,+151-337-484-002-390-125-632-032-900-563+,151 337 484,390,125,632 032 900 563,unpredicted_by_current_left_model,suffix2_left,337 484,0,,,0,0,no_shadow,
+2026-05-31,M-213,+740-384-002-390-346+,740 384,390,346,<END>,unpredicted_by_current_left_model,exact_left,740 384,1,629:1,279:1,0,1,untyped_shadow_at_exact_left,-:4209.1:384-002-629-279-<END>
+2026-05-31,M-213,+740-384-002-390-346+,740 384,390,346,<END>,unpredicted_by_current_left_model,suffix3_left,740 384,1,629:1,279:1,0,1,untyped_shadow_at_suffix3_left,-:4209.1:384-002-629-279-<END>
+2026-05-31,M-213,+740-384-002-390-346+,740 384,390,346,<END>,unpredicted_by_current_left_model,suffix2_left,740 384,2,452:1;629:1,000:1;279:1,0,2,untyped_shadow_at_suffix2_left,H-461:384-002-452-000-<END> | -:4209.1:384-002-629-279-<END>
+2026-05-31,M-232,+236-002-390-707+,236,390,707,<END>,unpredicted_by_current_left_model,exact_left,236,1,308:1,072:1,0,1,untyped_shadow_at_exact_left,B-17:236-002-308-072-<END>
+2026-05-31,M-232,+236-002-390-707+,236,390,707,<END>,unpredicted_by_current_left_model,suffix3_left,236,1,308:1,072:1,0,1,untyped_shadow_at_suffix3_left,B-17:236-002-308-072-<END>
+2026-05-31,M-232,+236-002-390-707+,236,390,707,<END>,unpredicted_by_current_left_model,suffix2_left,236,1,308:1,072:1,0,1,untyped_shadow_at_suffix2_left,B-17:236-002-308-072-<END>
+2026-05-31,M-708,+740-061-002-390-140+,740 061,390,140,<END>,unpredicted_by_current_left_model,exact_left,740 061,4,400:1;455:1;575:1;703:1,000:2;420:1;703:1,0,3,untyped_shadow_at_exact_left,H-1671:061-002-455-420-032 | H-2338:061-002-575-000-<END> | M-1787:061-002-703-000-<END> | M-1135:061-002-400-703-<END>
+2026-05-31,M-708,+740-061-002-390-140+,740 061,390,140,<END>,unpredicted_by_current_left_model,suffix3_left,740 061,4,400:1;455:1;575:1;703:1,000:2;420:1;703:1,0,3,untyped_shadow_at_suffix3_left,H-1671:061-002-455-420-032 | H-2338:061-002-575-000-<END> | M-1787:061-002-703-000-<END> | M-1135:061-002-400-703-<END>
+2026-05-31,M-708,+740-061-002-390-140+,740 061,390,140,<END>,unpredicted_by_current_left_model,suffix2_left,740 061,4,400:1;455:1;575:1;703:1,000:2;420:1;703:1,0,3,untyped_shadow_at_suffix2_left,H-1671:061-002-455-420-032 | H-2338:061-002-575-000-<END> | M-1787:061-002-703-000-<END> | M-1135:061-002-400-703-<END>
+2026-05-31,M-735,+740-760-235-002-390-125-195+,740 760 235,390,125,195,predict_rank_title,exact_left,740 760 235,0,,,0,0,no_shadow,
+2026-05-31,M-735,+740-760-235-002-390-125-195+,740 760 235,390,125,195,predict_rank_title,suffix3_left,740 760 235,0,,,0,0,no_shadow,
+2026-05-31,M-735,+740-760-235-002-390-125-195+,740 760 235,390,125,195,predict_rank_title,suffix2_left,760 235,0,,,0,0,no_shadow,
+2026-05-31,-:3335.1,+740-205-032-002-390-590-032+,740 205 032,390,590,032,predict_boundary_formula_result,exact_left,740 205 032,1,252:1,840:1,0,1,supports_032_no125_context_at_exact_left,M-143:032-002-252-840-<END>
+2026-05-31,-:3335.1,+740-205-032-002-390-590-032+,740 205 032,390,590,032,predict_boundary_formula_result,suffix3_left,740 205 032,1,252:1,840:1,0,1,supports_032_no125_context_at_suffix3_left,M-143:032-002-252-840-<END>
+2026-05-31,-:3335.1,+740-205-032-002-390-590-032+,740 205 032,390,590,032,predict_boundary_formula_result,suffix2_left,205 032,1,252:1,840:1,0,1,supports_032_no125_context_at_suffix2_left,M-143:032-002-252-840-<END>
+2026-05-31,Sktd-1,+390-004-002-390-125-820+,390 004,390,125,820,predict_neutral_qualifier_split,exact_left,390 004,3,031:1;705:1;861:1,125:1;127:1;376:1,1,3,supports_004_neutral_shadow_at_exact_left,H-55:004-002-861-125-<END> | -:3884.1:004-002-705-127-<END> | M-1823:004-002-031-376-<END>
+2026-05-31,Sktd-1,+390-004-002-390-125-820+,390 004,390,125,820,predict_neutral_qualifier_split,suffix3_left,390 004,3,031:1;705:1;861:1,125:1;127:1;376:1,1,3,supports_004_neutral_shadow_at_suffix3_left,H-55:004-002-861-125-<END> | -:3884.1:004-002-705-127-<END> | M-1823:004-002-031-376-<END>
+2026-05-31,Sktd-1,+390-004-002-390-125-820+,390 004,390,125,820,predict_neutral_qualifier_split,suffix2_left,390 004,3,031:1;705:1;861:1,125:1;127:1;376:1,1,3,supports_004_neutral_shadow_at_suffix2_left,H-55:004-002-861-125-<END> | -:3884.1:004-002-705-127-<END> | M-1823:004-002-031-376-<END>
+2026-05-31,M-1825,+157-031-002-390-705+,157 031,390,705,<END>,unpredicted_by_current_left_model,exact_left,157 031,0,,,0,0,no_shadow,
+2026-05-31,M-1825,+157-031-002-390-705+,157 031,390,705,<END>,unpredicted_by_current_left_model,suffix3_left,157 031,0,,,0,0,no_shadow,
+2026-05-31,M-1825,+157-031-002-390-705+,157 031,390,705,<END>,unpredicted_by_current_left_model,suffix2_left,157 031,0,,,0,0,no_shadow,
+2026-05-31,-:4237.1,+151-032-388-002-390-705+,151 032 388,390,705,<END>,predict_boundary_formula_result,exact_left,151 032 388,0,,,0,0,no_shadow,
+2026-05-31,-:4237.1,+151-032-388-002-390-705+,151 032 388,390,705,<END>,predict_boundary_formula_result,suffix3_left,151 032 388,0,,,0,0,no_shadow,
+2026-05-31,-:4237.1,+151-032-388-002-390-705+,151 032 388,390,705,<END>,predict_boundary_formula_result,suffix2_left,032 388,0,,,0,0,no_shadow,

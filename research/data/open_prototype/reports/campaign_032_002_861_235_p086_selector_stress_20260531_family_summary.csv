@@ -1,0 +1,5 @@
+checked_date,family,rows,has125,heads,objects,tier_after_test,implication
+2026-05-31,235-002-P086(390/405),3,3,390:2;405:1,M-38:390 125 632 032;M-41:405 125 820;M-735:390 125 195,candidate_strengthened,`235` plus P086-family head selects `125`; this is not a generic `235` rule.
+2026-05-31,235-002-closure(817/820/861),22,0,861:11;817:9;820:2,C-58:861;H-1050:817;H-12:817;H-42:817;H-478:817;L-89:861;L-191:861;M-1778:861;M-1693:817;M-1842:861;M-47:861;M-314:820;M-355:861 360 520 919 140;M-653:861;M-703:817;M-897:817;M-934:861;M-1152:861;M-1343:861;-:3896.1:820;H-1048:817;-:4211.1:817,negative_control_support,Closure heads are the main negative control: `235` does not force `125` by itself.
+2026-05-31,235-002-broad_open_nonP086,4,0,031:2;220:1;374:1,H-389:031 480 625;M-46:220 065 215;M-66:374 309 350;M-1386:031 480,broad_open_rule_dead,`125` is not selected by open-head status alone.
+2026-05-31,235-002-other_heads,8,0,065:1;112:1;285:1;457:1;460:1;717:1;824:1;906:1,H-426:460 511;H-639:717 747;M-24:906 140;M-239:112;M-788:824;M-1082:065 834;-:4155.1:285;-:4244.1:457,background,Background heads do not rescue a generic `235 -> 125` rule.

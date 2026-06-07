@@ -1,0 +1,13 @@
+checked_date,left_final,n,operator_scope,x_distribution,tail_distribution,strict_count,source_classes,decision,evidence
+2026-05-31,004,2,candidate_operator,095:1;125:1,<END>:1;820:1,0,panel_permissive_not_strict:1;route_only:1,keep_neutral_split_prediction_source_blocked,H-1993:004->095-><END>:route_only | Sktd-1:004->125->820:panel_permissive_not_strict
+2026-05-31,032,2,candidate_operator,590:1;692:1,<END>:1;032:1,1,strict:1;unbound:1,keep_candidate_boundary_formula_context_source_split,M-70:032->692-><END>:strict | -:3335.1:032->590->032:unbound
+2026-05-31,235,2,candidate_operator,125:2,195:1;632 032:1,1,strict:1;unbound:1,keep_candidate_235_p086_trigger_source_thin,M-38:235->125->632 032:unbound | M-735:235->125->195:strict
+2026-05-31,003,1,row_context_only,072:1,<END>:1,0,unbound:1,background_not_operator,H-68:003->072-><END>:unbound
+2026-05-31,031,1,row_context_only,705:1,<END>:1,0,source_dark:1,background_not_operator,M-1825:031->705-><END>:source_dark
+2026-05-31,061,1,row_context_only,140:1,<END>:1,0,unbound:1,background_not_operator,M-708:061->140-><END>:unbound
+2026-05-31,142,1,row_context_only,095:1,<END>:1,1,strict:1,row_context_not_operator,M-71:142->095-><END>:strict
+2026-05-31,236,1,row_context_only,707:1,<END>:1,0,unbound:1,background_not_operator,M-232:236->707-><END>:unbound
+2026-05-31,384,1,row_context_only,346:1,<END>:1,0,unbound:1,background_not_operator,M-213:384->346-><END>:unbound
+2026-05-31,388,1,row_context_only,705:1,<END>:1,0,unbound:1,background_not_operator,-:4237.1:388->705-><END>:unbound
+2026-05-31,484,1,row_context_only,125:1,632 032 900 563:1,1,strict:1,row_context_not_operator,M-119:484->125->632 032 900 563:strict
+2026-05-31,803,1,row_context_only,530:1,741:1,0,panel_compatible_not_strict:1,background_not_operator,H-773:803->530->741:panel_compatible_not_strict

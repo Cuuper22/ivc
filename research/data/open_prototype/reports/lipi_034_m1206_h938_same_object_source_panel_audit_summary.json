@@ -1,0 +1,58 @@
+{
+  "date": "2026-05-26",
+  "artifact": "lipi_034_m1206_h938_same_object_source_panel_audit",
+  "question": "What does the source-visible H-938 A/A bis/B panel set actually support for the M-1206 034/415 branch?",
+  "object": "H-938",
+  "source": {
+    "volume": "CISI Pakistan",
+    "leaf": "n374",
+    "printed_page": "340",
+    "source_page_path": "tmp/m1206_m37_blind_visual_comparanda/cisi_pakistan_n374_h939_h940_w2000.jpg",
+    "source_page_sha256": "121ccdd225452daa000a3ab058ad44259fed39d82b62b012a1e98035e6f465eb"
+  },
+  "reports": {
+    "panel_audit": "data/open_prototype/reports/lipi_034_m1206_h938_same_object_source_panel_audit.csv"
+  },
+  "local_rows_checked": [
+    "1818.1 +520-220-415+",
+    "1818.2 +034-700+"
+  ],
+  "source_panels_checked": [
+    "H-938 A",
+    "H-938 A bis",
+    "H-938 B"
+  ],
+  "row_count": 3,
+  "decision_bins": {
+    "clean_exact_source_side_415_controls": [
+      "H-938 A",
+      "H-938 A bis"
+    ],
+    "same_side_duplicate_photos_not_independent": [
+      "H-938 A bis"
+    ],
+    "companion_side_pressure_only": [
+      "H-938 B"
+    ]
+  },
+  "comparanda_context": {
+    "M-1206": "source-visible +520-220-034+ target terminal core; not same-object evidence with 415",
+    "M-37": "source-visible same-site +520-220-415+ control, but distinct comb/rake-with-stem subform",
+    "H-940": "clean exact-side +520-220-415+ control with non-034 companion +110+",
+    "H-939": "+700-034+ / +520-220-415+ pairing exists locally but the source-panel packet did not upgrade it",
+    "H-1284": "+520-220-415+ / +700-034+ pairing exists locally but remains source-route dark in this checked layer"
+  },
+  "accepted": {
+    "h938_a_maps_to_1818_1_415": true,
+    "h938_a_bis_is_duplicate_photo_not_independent": true,
+    "h938_b_maps_to_1818_2_034_700_companion": true,
+    "same_object_034_415_proximity_pressure": true,
+    "034_equals_415": false,
+    "proven_allography": false,
+    "stable_415_fine_form": false,
+    "sign_value": false,
+    "translation": false
+  },
+  "accepted_claim_count": 0,
+  "result": "H-938 is now explicitly recorded as a source-visible same-object pressure case: A/A bis gives clean exact-side 415 control and B gives companion +034-700+. This strengthens the 034/415 sign-inventory problem but does not collapse signs or assign a value."
+}

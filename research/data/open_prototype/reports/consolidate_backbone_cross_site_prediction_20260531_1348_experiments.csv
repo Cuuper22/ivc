@@ -1,0 +1,9 @@
+train_slice,test_slice,train_rows,test_rows,learned_constraints,core_aligned,core_conflicts,extensions,observed_satisfied,observed_total,observed_share,reverse_satisfied,reverse_total,reverse_share,null_share_fpr,null_satisfied_fpr,verdict,conflicts,extensions_list
+harappa,mohenjo,1182,1532,11,9,0,2,621,649,0.9568567026194145,28,649,0.04314329738058552,0,0,survives,,400_before_806;407_before_740
+harappa,non_major_sites,1182,789,11,9,0,2,185,197,0.9390862944162437,12,197,0.06091370558375635,0,0,survives,,400_before_806;407_before_740
+mohenjo,harappa,1532,1182,12,8,0,4,211,220,0.9590909090909091,9,220,0.04090909090909091,0,0,survives,,400_before_002;740_before_806;407_before_806;407_before_002
+mohenjo,non_major_sites,1532,789,12,8,0,4,177,185,0.9567567567567568,8,185,0.043243243243243246,0,0,survives,,400_before_002;740_before_806;407_before_806;407_before_002
+non_major_sites,harappa,789,1182,8,8,0,0,285,293,0.9726962457337884,8,293,0.027303754266211604,0,0,survives,,
+non_major_sites,mohenjo,789,1532,8,8,0,0,601,619,0.9709208400646203,18,619,0.029079159935379646,0,0,survives,,
+complete_nonpoor,not_complete_or_poor,1506,1997,13,9,0,4,456,474,0.9620253164556962,18,474,0.0379746835443038,0,0,survives,,400_before_806;400_before_002;740_before_806;407_before_002
+not_complete_or_poor,complete_nonpoor,1997,1506,11,9,0,2,684,717,0.9539748953974896,33,717,0.04602510460251046,0,0,survives,,740_before_407;740_before_806

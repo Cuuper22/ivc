@@ -1,0 +1,37 @@
+{
+  "date": "2026-05-29",
+  "packet_id": "v2_neg_001",
+  "status": "failed_clean_negative_gate",
+  "reviewers": 3,
+  "catalog_token_count": 7,
+  "blind_token_counts": [
+    9,
+    13,
+    9
+  ],
+  "blind_token_count_min": 9,
+  "blind_token_count_median": 9,
+  "blind_token_count_max": 13,
+  "distinct_blind_token_counts": [
+    9,
+    13
+  ],
+  "reviewers_matching_catalog_token_count": 0,
+  "reviewers_reporting_fusion_risk": 3,
+  "all_reviewers_report_fusion_risk": true,
+  "all_reviewers_over_catalog_count": true,
+  "decision": "M-381 cannot be used as a clean negative_220_032_next_not_002 control from this crop. It remains an ambiguity stress packet, not a promoted blind negative.",
+  "skeptic_attacks_that_break_promotion": [
+    "No blind reviewer recovered the seven-token catalog segmentation from the source crop.",
+    "All blind reviewers reported skip/merge risk in crowded sign regions.",
+    "The critical question requires proving a stable intervening token between catalog 032 and catalog 002, but the blind visual segmentation is unstable before catalog alignment.",
+    "The public crop is an enhanced reproduction crop, not a fresh high-resolution source photograph."
+  ],
+  "residual_value": "The panel is useful for calibrating false-positive visual packeting and for requesting a sharper source image, but not for rehabilitating the retracted source-visible 032-002-Y method.",
+  "accepted_claims_increment": 0,
+  "files": {
+    "blind_reviews": "data/open_prototype/reports/source_box_negative_control_v2_m381_blind_reviews.csv",
+    "scored_reviews": "data/open_prototype/reports/source_box_negative_control_v2_m381_scored_reviews.csv",
+    "answer_key": "data/open_prototype/reports/source_box_negative_control_v2_m381_answer_key.csv"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_095_copper_subregister_source_peek_20260531",
+  "tier": "candidate",
+  "bet": "Sign 095 is an independent copper/TAB:C subregister marker, not only a passenger of the already-promoted 407 copper register.",
+  "statistical_screen": {
+    "source_report": "data/open_prototype/reports/risky_copper_register_subsigns_095_845_20260531.json",
+    "text_family_result": "095 has 5/14 Copper|TAB:C rows; after removing every row containing 407 it still has 3/11; 500-shuffle same-kind maxstat p=0.002.",
+    "contrast": "845 is strong in Copper|TAB:C but drops to 0/4 after removing 407 rows, so keep 845 as 407-dependent rather than independent."
+  },
+  "source_peek": [
+    {
+      "cisi": "M-519",
+      "path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-519_A.jpg",
+      "metadata": "Mohenjo-daro Copper TAB:C, Fair, Bull1:W",
+      "catalog_text": "+617-142-001-595-095-760-744+",
+      "contains_407": false,
+      "visual_status": "source-visible",
+      "role": "non-407 095 copper witness"
+    },
+    {
+      "cisi": "M-1470",
+      "path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-1470_A.jpg",
+      "metadata": "Mohenjo-daro Copper TAB:C, Poor, Bull1:W",
+      "catalog_text": "+617-142-001-595-095-717-747+",
+      "contains_407": false,
+      "visual_status": "source-visible but lower quality",
+      "role": "second non-407 095 copper witness in same opening frame as M-519"
+    },
+    {
+      "cisi": "M-599",
+      "path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-599_A.jpg",
+      "metadata": "Mohenjo-daro Copper TAB:C, Good, None",
+      "catalog_text": "+408-032-520-095-585-017-220+",
+      "contains_407": false,
+      "visual_status": "source-visible",
+      "role": "same 032-520-095-585-017-220 frame as 407 rows M-2053/M-547, but with 408 instead of 407"
+    }
+  ],
+  "risky_predictions": [
+    "A held-out or newly source-checked 095 row without 407 should be enriched for Copper|TAB:C or a close administrative tablet context, not ordinary seal iconography.",
+    "Rows with 408-032-520-095 should behave like 407-032-520-095 rows if 408 is a graphic/contextual substitute in this copper subregister.",
+    "If M-519 and M-1470 are judged a duplicate formula family after source-normalized family collapse, 095 remains live only through M-599 and the 407-containing frame, and must be demoted."
+  ],
+  "demoters": [
+    "Source-normalized duplicate collapse of M-519/M-1470 into one family plus failure of M-599 as true 095 would demote 095 to weak passenger.",
+    "If non-copper 095 rows show the same frame diversity and source quality as copper rows, the semantic claim collapses to a Mohenjo-daro copying habit."
+  ],
+  "decision": "promote_095_to_candidate_independent_copper_subregister_marker; keep_845_407_dependent"
+}

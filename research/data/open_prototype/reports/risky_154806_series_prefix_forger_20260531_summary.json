@@ -1,0 +1,148 @@
+{
+  "date": "2026-05-31",
+  "candidate_id": "risky_154806_series_prefix_forger_20260531",
+  "tier": "candidate",
+  "bet": "154-806 is a constructional series-prefix whose next slot selects a narrow 467..474 sign family; this would split 806 by construction, because the same sign also behaves as a boundary/closure pivot elsewhere.",
+  "target": {
+    "bigram": "154-806",
+    "successor_window": "467..474",
+    "raw_occurrences": 16,
+    "raw_hits_in_window": 16,
+    "raw_share": 1,
+    "exact_text_site_type_symbol_dedup_occurrences": 14,
+    "exact_dedup_hits_in_window": 14,
+    "site_breakdown": [
+      {
+        "site": "Harappa",
+        "n": 12,
+        "hits": 12
+      },
+      {
+        "site": "Mohenjo-daro",
+        "n": 3,
+        "hits": 3
+      },
+      {
+        "site": "Dholavira",
+        "n": 1,
+        "hits": 1
+      }
+    ],
+    "non_harappa_occurrences": 4,
+    "non_harappa_hits_in_window": 4
+  },
+  "all_bigram_all_window_maxstat": {
+    "competitor_bigrams_with_support_at_least_target": 91,
+    "target_rank_by_best_window_share": 4,
+    "target_best_window_hit_ranked": {
+      "bigram": "154-806",
+      "n": 16,
+      "best_window_start": "467",
+      "best_window_end": "474",
+      "best_hit": 16,
+      "best_share": 1,
+      "numeric_successors": 16
+    },
+    "top_competitors": [
+      {
+        "bigram": "741-060",
+        "n": 31,
+        "best_window_start": "913",
+        "best_window_end": "920",
+        "best_hit": 31,
+        "best_share": 1,
+        "numeric_successors": 31
+      },
+      {
+        "bigram": "752-615",
+        "n": 29,
+        "best_window_start": "496",
+        "best_window_end": "503",
+        "best_hit": 29,
+        "best_share": 1,
+        "numeric_successors": 29
+      },
+      {
+        "bigram": "740-407",
+        "n": 16,
+        "best_window_start": "583",
+        "best_window_end": "590",
+        "best_hit": 16,
+        "best_share": 1,
+        "numeric_successors": 16
+      },
+      {
+        "bigram": "154-806",
+        "n": 16,
+        "best_window_start": "467",
+        "best_window_end": "474",
+        "best_hit": 16,
+        "best_share": 1,
+        "numeric_successors": 16
+      },
+      {
+        "bigram": "740-390",
+        "n": 41,
+        "best_window_start": "583",
+        "best_window_end": "590",
+        "best_hit": 40,
+        "best_share": 0.975609756097561,
+        "numeric_successors": 40
+      },
+      {
+        "bigram": "690-435",
+        "n": 30,
+        "best_window_start": "248",
+        "best_window_end": "255",
+        "best_hit": 29,
+        "best_share": 0.9666666666666667,
+        "numeric_successors": 30
+      },
+      {
+        "bigram": "740-405",
+        "n": 22,
+        "best_window_start": "583",
+        "best_window_end": "590",
+        "best_hit": 21,
+        "best_share": 0.9545454545454546,
+        "numeric_successors": 21
+      },
+      {
+        "bigram": "407-061",
+        "n": 22,
+        "best_window_start": "838",
+        "best_window_end": "845",
+        "best_hit": 20,
+        "best_share": 0.9090909090909091,
+        "numeric_successors": 22
+      },
+      {
+        "bigram": "002-405",
+        "n": 32,
+        "best_window_start": "494",
+        "best_window_end": "501",
+        "best_hit": 29,
+        "best_share": 0.90625,
+        "numeric_successors": 32
+      },
+      {
+        "bigram": "740-840",
+        "n": 16,
+        "best_window_start": "006",
+        "best_window_end": "013",
+        "best_hit": 14,
+        "best_share": 0.875,
+        "numeric_successors": 16
+      }
+    ]
+  },
+  "successor_label_shuffle_null": {
+    "iterations": 5000,
+    "preserves": "bigram support sizes for all competitors; samples successor labels from the observed successor pool; every width-8 numeric successor window competes in every null draw",
+    "mean_null_max_share": 0.255563,
+    "mean_null_max_hit": 4.9918,
+    "p_ge_observed_share_and_hit": 0
+  },
+  "scope_warning": "Most witnesses are Harappa SEAL:R/None, but the same construction also appears on H-27/H-1999/H-1788 and four non-Harappa rows; source-image validation and exact-copy/family collapse are still required before acceptance.",
+  "decision": "candidate_survives_first_maxstat_forger"
+}

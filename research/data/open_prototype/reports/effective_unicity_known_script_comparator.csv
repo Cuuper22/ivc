@@ -1,0 +1,5 @@
+"system","experiment","rows","tokens_or_gaps","unique_signs_or_tokens","label_symmetry_log2_bits","top1","top5","mrr","median_rank","max_control_fpr_or_null_ge_observed","boundary"
+"Indus_Lipi_strict_exact_sequence_collapsed","leave_one_row_out_masked_sign","1798","8212","571","4410.970864","0.279591","0.534096","0.400077","","0","unread script; internal labels only; no source-normalized value anchor"
+"Linear_B_Series_D_IVC_length_cap","clean_masked_bidirectional_bigram","299","1755","91","465.50503","0.435897","0.698006","","","0","known script with readings hidden; scarcity comparator only"
+"Linear_B_Series_D_IVC_length_cap","source_provided_gapped_sequence_leave_one_out","299","299","91","465.50503","0.294314","0.638796","0.454842","3","","known script source gaps; exact duplicate sequences removed from training"
+"Linear_B_Series_D_IVC_length_cap","source_provided_gapped_row_leave_one_out","299","299","91","465.50503","0.304348","0.652174","0.464666","3","","known script source gaps; only target row removed from training"

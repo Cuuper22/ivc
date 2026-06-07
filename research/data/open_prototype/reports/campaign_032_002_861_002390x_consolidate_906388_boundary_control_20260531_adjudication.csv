@@ -1,0 +1,4 @@
+checked_date,test,result,effect_on_m451,effect_on_x000,decision
+2026-05-31,906388_pair_terminal_boundary,3/3_terminal_unique_prevs_3_sites_1_types_3,softens_tail_as_terminal_suffix_candidate,M451_damage_reduced_but_not_removed_because_suffix_is_site_local_and_rare,"906-388 is allowed as weak terminal boundary material, but not enough to restore clean X000 zero-complement."
+2026-05-31,906_component_lock,3/16_906_tokens_followed_by_388,906_has_independent_contexts,tail_payload_threat_stronger,"Use 906-388 as a fixed pair in the next parser, not as two independent payload signs."
+2026-05-31,388_component_lock,3/59_388_tokens_preceded_by_906,388_is_not_exclusive_to_906_so_pair_boundary_status_depends_on_the_pair_not_388_alone,does_not_repair_M451_by_itself,Do not overgeneralize from sign 388; only the exact 906-388 pair gets boundary credit.

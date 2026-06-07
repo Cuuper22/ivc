@@ -1,0 +1,18 @@
+{
+  "run_date": "2026-05-29",
+  "candidate_only_query_count": 19,
+  "candidate_artifact_rows": 70,
+  "bridge_test_rows": 23,
+  "ur_susa_failaka_bridge_test_rows": 4,
+  "object_level_bridge_count": 0,
+  "strict_pattern_only_rows_with_same_site_match": 8,
+  "strict_pattern_only_rows_with_mesopotamia_gulf_match": 19,
+  "accepted_external_anchor_count": 0,
+  "output": "data/meluhha/context_lead_external_bridge_retest.csv",
+  "decision": "No candidate-only cuneiform lead is promoted to an external Indus anchor. Same-site and same-region length/pattern matches remain rejected unless tied by object-level provenance.",
+  "caveats": [
+    "The local external object rows are T3 quarantined Lipi metadata and still need source-image/catalogue validation.",
+    "The forger value is 1.0 by construction for pattern-only matching: any synthetic cuneiform target with the same duplicate pattern would produce the same match count.",
+    "No row here contains a verified accession-level or publication-level bridge between a CDLI artifact and a specific external Indus object."
+  ]
+}

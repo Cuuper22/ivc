@@ -1,0 +1,24 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_927_060920_override_probe_20260531",
+  "tier": "wild_shot_killed",
+  "bet": "The only exact-collapsed nonterminal 060-920 row, +740-100-415-927-060-920-031+, might be explained by 927 as a continuation/override trigger.",
+  "counts_exact_text_site_type_symbol_prev_next_next2_dedup": {
+    "927_occurrences": 9,
+    "927_terminal": 3,
+    "927_followed_by_060_920": 1,
+    "observed_successor_pairs": {
+      "<END>-<END>": 3,
+      "033-817": 1,
+      "032-741": 1,
+      "240-031": 1,
+      "741-060": 1,
+      "231-060": 1,
+      "060-920": 1
+    }
+  },
+  "decision": "kill_override_model",
+  "reason": "927 has mixed successors and terminal cases. It is not a clean continuation trigger for 060-920. The +927-060-920-031 row remains a live exception/source target rather than an explained subconstruction.",
+  "next_prediction": "If the unknown row is source-bound and clean, broad 060-920 should be stated as almost-terminal rather than absolutely terminal."
+}

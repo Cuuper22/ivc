@@ -1,0 +1,60 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "125_linker_controls",
+  "x125_rows": 11,
+  "serious_controls": 8,
+  "strong_survivals": 6,
+  "weak_site_local_survivals": 1,
+  "controls": {
+    "all": {
+      "rows": 11,
+      "repeated_lanes": "032_lane;632_032_lane;820_lane",
+      "cross_site_repeated_lanes": "032_lane;820_lane",
+      "verdict": "survives"
+    },
+    "frame_002_390_only": {
+      "rows": 4,
+      "repeated_lanes": "632_032_lane",
+      "cross_site_repeated_lanes": "",
+      "verdict": "survives_only_site_local"
+    },
+    "mohenjo_only": {
+      "rows": 8,
+      "repeated_lanes": "632_032_lane",
+      "cross_site_repeated_lanes": "",
+      "verdict": "survives"
+    },
+    "non_mohenjo": {
+      "rows": 3,
+      "repeated_lanes": "",
+      "cross_site_repeated_lanes": "",
+      "verdict": "damaged_no_repeated_lanes"
+    },
+    "seal_s_only": {
+      "rows": 9,
+      "repeated_lanes": "032_lane;632_032_lane;820_lane",
+      "cross_site_repeated_lanes": "032_lane;820_lane",
+      "verdict": "survives"
+    },
+    "complete_y": {
+      "rows": 11,
+      "repeated_lanes": "032_lane;632_032_lane;820_lane",
+      "cross_site_repeated_lanes": "032_lane;820_lane",
+      "verdict": "survives"
+    },
+    "good_or_fine": {
+      "rows": 6,
+      "repeated_lanes": "632_032_lane",
+      "cross_site_repeated_lanes": "",
+      "verdict": "survives"
+    },
+    "cisi_named": {
+      "rows": 11,
+      "repeated_lanes": "032_lane;632_032_lane;820_lane",
+      "cross_site_repeated_lanes": "032_lane;820_lane",
+      "verdict": "survives"
+    }
+  },
+  "decision": "125_linker_candidate_survives_but_only_wounded; 632-032_demoted_to_site_local_formula_risk"
+}

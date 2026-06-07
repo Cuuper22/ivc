@@ -1,0 +1,69 @@
+{
+  "date": "2026-05-25",
+  "target": "M-315 +390-034-002-374-228-741+",
+  "source_csv": "data/open_prototype/lipi/metadata_filtered.csv",
+  "total_rows_with_tokens": 5679,
+  "prefix_390_x_002_count": 37,
+  "prefix_390_034_002_count": 1,
+  "prefix_390_034_count": 3,
+  "position2_034_count": 126,
+  "contains_390_034_002_count": 1,
+  "second_sign_distribution_in_390_x_002": {
+    "003": 14,
+    "004": 10,
+    "016": 4,
+    "005": 4,
+    "017": 1,
+    "415": 1,
+    "015": 1,
+    "034": 1,
+    "869": 1
+  },
+  "site_distribution_in_390_x_002": {
+    "Mohenjo-daro": 23,
+    "Harappa": 5,
+    "Dholavira": 3,
+    "Chanhu-daro": 1,
+    "Kalibangan": 1,
+    "Lothal": 1,
+    "Nausharo": 1,
+    "Surkotada": 1,
+    "Tell Umma": 1
+  },
+  "type_distribution_in_390_x_002": {
+    "SEAL:S": 31,
+    "SEAL:R": 2,
+    "TAG:L": 2,
+    "TAB:B": 1,
+    "TAG": 1
+  },
+  "prefix_390_034_objects": [
+    {
+      "cisi": "Ai-7",
+      "id": "17.1",
+      "site": "Amri",
+      "type": "POT:T:g",
+      "dir": "L/R",
+      "text": "+390-034+"
+    },
+    {
+      "cisi": "H-335",
+      "id": "1356.1",
+      "site": "Harappa",
+      "type": "TAB:I",
+      "dir": "R/L",
+      "text": "+390-034+"
+    },
+    {
+      "cisi": "M-315",
+      "id": "2833.1",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:S",
+      "dir": "R/L",
+      "text": "+390-034-002-374-228-741+"
+    }
+  ],
+  "m315_contrast_result": "singleton_exact_390_034_002_frame; 034 occurs once as second sign in 37 rows matching 390-X-002, and M-315 is the only extended 390-034-002 sequence in the filtered corpus.",
+  "accepted_mapping_count": 0,
+  "accepted_translation_count": 0
+}

@@ -1,0 +1,31 @@
+{
+  "date": "2026-05-26",
+  "question": "Do source panels show a consistent source-A target-like 415 pattern for H-786/H-941 and nearby controls?",
+  "objects_checked": [
+    "H-786",
+    "H-938",
+    "H-939",
+    "H-940",
+    "H-941"
+  ],
+  "result": "Source A carries the target-like broad three-class 415-family pattern for H-786, H-938, H-940, and H-941; source B does not. H-939 is a damaged stress case with partial A pressure but no upgrade.",
+  "accepted_exact_source_side_415_controls": [
+    "H-938 A/A bis",
+    "H-940 A"
+  ],
+  "candidate_exact_row_reconciliations_not_accepted": [
+    "H-786 A -> local 1677.2 +520-220-415+",
+    "H-941 A/A bis -> local 1821.2 +520-220-415+"
+  ],
+  "stress_cases": [
+    "H-939 A partial target-like under damage while local .1 is +700-034+; H-939 B/B bis not target-grade"
+  ],
+  "claim_status": {
+    "accepted_h786_a_to_1677_2": false,
+    "accepted_h941_a_to_1821_2": false,
+    "accepted_034_equals_415": false,
+    "accepted_sign_value": false,
+    "accepted_translation": false
+  },
+  "next_gate": "Acquire object-specific side/transcription notes linking H-786/H-941/H-939 A/B source labels to local row ids."
+}

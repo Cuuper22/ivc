@@ -1,0 +1,117 @@
+{
+  "date": "2026-05-30",
+  "status": "brahmi_independent_source_token_gate_v3_no_phonetic_anchor",
+  "input_family_rows": 83,
+  "duplicate_audit_rows": 83,
+  "source_segment_rows": 611,
+  "preflight_rule": ">=3 unique token hashes, >=3 unique CISIs, >=3 unique source paths, unanimity after duplicate collapse, unchanged modal label after collapse, original shape-null <=0.01, original label-null <=0.01",
+  "decision_counts": {
+    "blocked_before_review": 83
+  },
+  "blocked_reason_counts": {
+    "not_unanimous_after_duplicate_collapse": 53,
+    "shape_null_above_0_01": 83,
+    "label_null_above_0_01": 72,
+    "fewer_than_3_unique_cisis": 58,
+    "modal_label_changes_after_collapse": 23,
+    "fewer_than_3_unique_token_hashes": 36,
+    "fewer_than_3_unique_source_paths": 22
+  },
+  "review_packet_eligible_rows": 0,
+  "candidate_only_rows": 0,
+  "accepted_phonetic_anchors": 0,
+  "top_v2_near_misses": [
+    {
+      "sign_id": "527",
+      "orientation_policy": "visual_ltr_catalog_order",
+      "label": "ra",
+      "unique_sha256_count": 2,
+      "unique_cisi_count": 1,
+      "preflight_decision": "blocked_before_review",
+      "blocked_reasons": "fewer_than_3_unique_token_hashes;fewer_than_3_unique_cisis;shape_null_above_0_01;label_null_above_0_01"
+    },
+    {
+      "sign_id": "527",
+      "orientation_policy": "visual_ltr_catalog_reverse",
+      "label": "o",
+      "unique_sha256_count": 2,
+      "unique_cisi_count": 1,
+      "preflight_decision": "blocked_before_review",
+      "blocked_reasons": "fewer_than_3_unique_token_hashes;fewer_than_3_unique_cisis;not_unanimous_after_duplicate_collapse;shape_null_above_0_01;label_null_above_0_01"
+    },
+    {
+      "sign_id": "061",
+      "orientation_policy": "visual_ltr_catalog_order",
+      "label": "ra",
+      "unique_sha256_count": 2,
+      "unique_cisi_count": 1,
+      "preflight_decision": "blocked_before_review",
+      "blocked_reasons": "fewer_than_3_unique_token_hashes;fewer_than_3_unique_cisis;shape_null_above_0_01;label_null_above_0_01"
+    },
+    {
+      "sign_id": "061",
+      "orientation_policy": "visual_ltr_catalog_reverse",
+      "label": "o",
+      "unique_sha256_count": 2,
+      "unique_cisi_count": 1,
+      "preflight_decision": "blocked_before_review",
+      "blocked_reasons": "fewer_than_3_unique_token_hashes;fewer_than_3_unique_cisis;not_unanimous_after_duplicate_collapse;modal_label_changes_after_collapse;shape_null_above_0_01;label_null_above_0_01"
+    },
+    {
+      "sign_id": "817",
+      "orientation_policy": "visual_ltr_catalog_order",
+      "label": "dha",
+      "unique_sha256_count": 1,
+      "unique_cisi_count": 1,
+      "preflight_decision": "blocked_before_review",
+      "blocked_reasons": "fewer_than_3_unique_token_hashes;fewer_than_3_unique_cisis;fewer_than_3_unique_source_paths;shape_null_above_0_01;label_null_above_0_01"
+    },
+    {
+      "sign_id": "472",
+      "orientation_policy": "visual_ltr_catalog_reverse",
+      "label": "ra",
+      "unique_sha256_count": 1,
+      "unique_cisi_count": 1,
+      "preflight_decision": "blocked_before_review",
+      "blocked_reasons": "fewer_than_3_unique_token_hashes;fewer_than_3_unique_cisis;fewer_than_3_unique_source_paths;shape_null_above_0_01;label_null_above_0_01"
+    },
+    {
+      "sign_id": "817",
+      "orientation_policy": "visual_ltr_catalog_reverse",
+      "label": "dhya",
+      "unique_sha256_count": 1,
+      "unique_cisi_count": 1,
+      "preflight_decision": "blocked_before_review",
+      "blocked_reasons": "fewer_than_3_unique_token_hashes;fewer_than_3_unique_cisis;fewer_than_3_unique_source_paths;shape_null_above_0_01;label_null_above_0_01"
+    },
+    {
+      "sign_id": "060",
+      "orientation_policy": "visual_ltr_catalog_reverse",
+      "label": "ka",
+      "unique_sha256_count": 1,
+      "unique_cisi_count": 1,
+      "preflight_decision": "blocked_before_review",
+      "blocked_reasons": "fewer_than_3_unique_token_hashes;fewer_than_3_unique_cisis;fewer_than_3_unique_source_paths;shape_null_above_0_01;label_null_above_0_01"
+    },
+    {
+      "sign_id": "472",
+      "orientation_policy": "visual_ltr_catalog_order",
+      "label": "ra",
+      "unique_sha256_count": 1,
+      "unique_cisi_count": 1,
+      "preflight_decision": "blocked_before_review",
+      "blocked_reasons": "fewer_than_3_unique_token_hashes;fewer_than_3_unique_cisis;fewer_than_3_unique_source_paths;shape_null_above_0_01;label_null_above_0_01"
+    },
+    {
+      "sign_id": "060",
+      "orientation_policy": "visual_ltr_catalog_order",
+      "label": "ra",
+      "unique_sha256_count": 1,
+      "unique_cisi_count": 1,
+      "preflight_decision": "blocked_before_review",
+      "blocked_reasons": "fewer_than_3_unique_token_hashes;fewer_than_3_unique_cisis;fewer_than_3_unique_source_paths;shape_null_above_0_01;label_null_above_0_01"
+    }
+  ],
+  "eligible_for_future_blind_review": [],
+  "conclusion": "The independence preflight promotes no phonetic anchor. Rows that pass are only eligible for a future blind visual packet with matched Brahmi negatives; they are not candidate-only anchors."
+}

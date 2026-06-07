@@ -1,0 +1,113 @@
+{
+  "source": "filtered lipi metadata, claim columns removed",
+  "source_rows": 5679,
+  "numeric_clean_source_rows": 2887,
+  "exact_sequence_families": 1798,
+  "min_label_families": 30,
+  "min_sign_tokens": 20,
+  "iterations_per_block": 10,
+  "targets": [
+    "horizontal_bin",
+    "vertical_bin",
+    "thickness_bin",
+    "area_bin",
+    "aspect_bin"
+  ],
+  "sign_class_counts": {
+    "sparse": 494,
+    "medial": 34,
+    "initial": 10,
+    "distributed": 25,
+    "terminal": 5,
+    "edge_mixed": 3
+  },
+  "target_summaries": [
+    {
+      "target": "horizontal_bin",
+      "rows": 1682,
+      "labels": 4,
+      "observed_token_nb_accuracy": 0.444114,
+      "observed_token_nb_macro_f1": 0.314026,
+      "hardest_token_nb_null": {
+        "block": "hard_proxy",
+        "fields": "length;type;site;material;shape;direction",
+        "null_accuracy_mean": 0.434483,
+        "observed_minus_null_accuracy_mean": 0.009631,
+        "null_macro_f1_mean": 0.314479,
+        "observed_minus_null_macro_f1_mean": -0.000453,
+        "unchanged_label_share_mean": 0.591201
+      }
+    },
+    {
+      "target": "vertical_bin",
+      "rows": 1609,
+      "labels": 4,
+      "observed_token_nb_accuracy": 0.465507,
+      "observed_token_nb_macro_f1": 0.430971,
+      "hardest_token_nb_null": {
+        "block": "edge_frame",
+        "fields": "edge_frame",
+        "null_accuracy_mean": 0.449037,
+        "observed_minus_null_accuracy_mean": 0.01647,
+        "null_macro_f1_mean": 0.417261,
+        "observed_minus_null_macro_f1_mean": 0.01371,
+        "unchanged_label_share_mean": 0.864512
+      }
+    },
+    {
+      "target": "thickness_bin",
+      "rows": 844,
+      "labels": 4,
+      "observed_token_nb_accuracy": 0.482227,
+      "observed_token_nb_macro_f1": 0.310822,
+      "hardest_token_nb_null": {
+        "block": "edge_frame",
+        "fields": "edge_frame",
+        "null_accuracy_mean": 0.476896,
+        "observed_minus_null_accuracy_mean": 0.005332,
+        "null_macro_f1_mean": 0.307283,
+        "observed_minus_null_macro_f1_mean": 0.00354,
+        "unchanged_label_share_mean": 0.9
+      }
+    },
+    {
+      "target": "area_bin",
+      "rows": 1600,
+      "labels": 4,
+      "observed_token_nb_accuracy": 0.441875,
+      "observed_token_nb_macro_f1": 0.384212,
+      "hardest_token_nb_null": {
+        "block": "edge_frame",
+        "fields": "edge_frame",
+        "null_accuracy_mean": 0.433937,
+        "observed_minus_null_accuracy_mean": 0.007938,
+        "null_macro_f1_mean": 0.372801,
+        "observed_minus_null_macro_f1_mean": 0.011411,
+        "unchanged_label_share_mean": 0.86575
+      }
+    },
+    {
+      "target": "aspect_bin",
+      "rows": 1595,
+      "labels": 3,
+      "observed_token_nb_accuracy": 0.638871,
+      "observed_token_nb_macro_f1": 0.459526,
+      "hardest_token_nb_null": {
+        "block": "edge_frame",
+        "fields": "edge_frame",
+        "null_accuracy_mean": 0.633668,
+        "observed_minus_null_accuracy_mean": 0.005204,
+        "null_macro_f1_mean": 0.448933,
+        "observed_minus_null_macro_f1_mean": 0.010594,
+        "unchanged_label_share_mean": 0.899624
+      }
+    }
+  ],
+  "outputs": [
+    "data/open_prototype/reports/lipi_dimension_residue_sign_classes.csv",
+    "data/open_prototype/reports/lipi_dimension_residue_observed.csv",
+    "data/open_prototype/reports/lipi_dimension_residue_iterations.csv",
+    "data/open_prototype/reports/lipi_dimension_residue_summary.csv"
+  ],
+  "interpretation_boundary": "Dimension-residue stress scout only; dimension bins are catalog measurements from a T3 planning source and do not create metrological readings, sign meanings, semantic slots, phonetic values, language identity, or translations."
+}

@@ -1,0 +1,29 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "consolidate_095_context_contrast",
+  "rows": {
+    "all_095_occurrences": 22,
+    "xslot_095_occurrences": 3,
+    "xslot_095_terminal": 3,
+    "non_xslot_095_occurrences": 19,
+    "non_xslot_095_terminal": 5
+  },
+  "decisions": [
+    {
+      "checked_date": "2026-05-31",
+      "candidate": "X095_TERMINAL_CLASS_LABEL",
+      "decision": "keep_rank1_candidate_not_promoted",
+      "evidence": "X-slot terminal=3/3; non-X-slot terminal=5/19; X heads=390:2;812:1; X sites=Harappa:1;Lothal:1;Mohenjo-daro:1.",
+      "consequence": "`095` is better modeled as a context-bound terminal class-label than as a raw terminal sign, but the X-slot sample is still only three rows."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "candidate": "SIGN095_RAW_TERMINAL_VALUE",
+      "decision": "kill",
+      "evidence": "All 095 occurrences terminal=8/22; non-X-slot terminal=5/19.",
+      "consequence": "Do not assign `095` a free-standing terminal value or translation. The risky bet remains slot-function only."
+    }
+  ],
+  "compressed_read": "`095` remains rank 1 because terminality concentrates in the `002-H-095` slot, not because `095` has a free-standing terminal value."
+}

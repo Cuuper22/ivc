@@ -1,0 +1,289 @@
+{
+  "date": "2026-05-29",
+  "status": "external_phonetic_anchor_attempts_no_survivor",
+  "scope": {
+    "external_objects_total_with_parseable_signs": 41,
+    "focus_objects_mesopotamia_gulf_with_parseable_signs": 29,
+    "focus_sites": [
+      "Failaka",
+      "Girsu",
+      "Hajar",
+      "Janabiyah",
+      "Kalba",
+      "Karzakan",
+      "Kish",
+      "Nippur",
+      "Qala'at al-Bahrain",
+      "Ra's al-Junayz",
+      "Saar",
+      "Salut",
+      "Susa",
+      "Tell Umma",
+      "Tello",
+      "Ur"
+    ],
+    "note": "Focus rows are physically external Indus/Indus-style rows from Mesopotamia and Gulf sites in the local table. Iranian Plateau/Central Asian rows are retained as external context but not focus-lane evidence."
+  },
+  "targets": [
+    {
+      "target_id": "toponym_meluhha",
+      "label": "Meluhha toponym",
+      "units": [
+        "me",
+        "luh",
+        "ha"
+      ],
+      "pattern": "ABC",
+      "source": "ORACC/ePSD2 Meluhha GN entry and CDLI current Meluhha exports",
+      "note": "All-distinct syllable pattern; high-risk because length-only fits are expected."
+    },
+    {
+      "target_id": "ship_ma2_meluhha",
+      "label": "ma2 me-luh-ha / Meluhha ship context",
+      "units": [
+        "ma2",
+        "me",
+        "luh",
+        "ha"
+      ],
+      "pattern": "ABCD",
+      "source": "CDLI current ma2 me-luh-ha exports",
+      "note": "All-distinct four-unit target from ship context."
+    },
+    {
+      "target_id": "name_lu_sunzida",
+      "label": "lu2-sun2-zi-da / Lu-sunzida",
+      "units": [
+        "lu2",
+        "sun2",
+        "zi",
+        "da"
+      ],
+      "pattern": "ABCD",
+      "source": "CDLI P212982 adjacency and current Lu-Sunzida matched-negative export",
+      "note": "Explicitly already failed as a Meluhha diagnostic; still attempted as a phonetic string."
+    },
+    {
+      "target_id": "interpreter_shu_ilishu",
+      "label": "szu-i3-li2-su / Shu-ilishu",
+      "units": [
+        "szu",
+        "i3",
+        "li2",
+        "su"
+      ],
+      "pattern": "ABCD",
+      "source": "CDLI seals 014339 physical, line before eme-bal me-luh-ha{ki}",
+      "note": "Personal name on cuneiform interpreter seal; first and last are kept distinct because the transliteration differs."
+    },
+    {
+      "target_id": "title_emebal_meluhha_six_unit",
+      "label": "eme-bal me-luh-ha interpreter title",
+      "units": [
+        "e",
+        "me",
+        "bal",
+        "me",
+        "luh",
+        "ha"
+      ],
+      "pattern": "ABCBDE",
+      "source": "CDLI seals 014339 physical, eme-bal me-luh-ha{ki}",
+      "note": "Duplicate me pattern provides an actual shape constraint under strict one-sign-per-unit testing."
+    }
+  ],
+  "forger": {
+    "iterations_per_target": 2000,
+    "null": "synthetic phonetic targets with identical duplicate pattern and length; because strict pattern compatibility ignores phonetic identity, any target with the same pattern should recover the same candidate count.",
+    "summary": [
+      {
+        "target_id": "toponym_meluhha",
+        "target_label": "Meluhha toponym",
+        "target_units": "me-luh-ha",
+        "target_pattern": "ABC",
+        "focus_exact_candidates": 2,
+        "all_external_exact_candidates": 4,
+        "corpus_exact_candidates": 4,
+        "forger_iterations": 2000,
+        "forger_mean_focus_candidates": 2,
+        "forger_max_focus_candidates": 2,
+        "forger_ge_observed_share": 1,
+        "decision": "failed_forger_gate_length_pattern_common"
+      },
+      {
+        "target_id": "ship_ma2_meluhha",
+        "target_label": "ma2 me-luh-ha / Meluhha ship context",
+        "target_units": "ma2-me-luh-ha",
+        "target_pattern": "ABCD",
+        "focus_exact_candidates": 5,
+        "all_external_exact_candidates": 6,
+        "corpus_exact_candidates": 6,
+        "forger_iterations": 2000,
+        "forger_mean_focus_candidates": 5,
+        "forger_max_focus_candidates": 5,
+        "forger_ge_observed_share": 1,
+        "decision": "failed_forger_gate_length_pattern_common"
+      },
+      {
+        "target_id": "name_lu_sunzida",
+        "target_label": "lu2-sun2-zi-da / Lu-sunzida",
+        "target_units": "lu2-sun2-zi-da",
+        "target_pattern": "ABCD",
+        "focus_exact_candidates": 5,
+        "all_external_exact_candidates": 6,
+        "corpus_exact_candidates": 6,
+        "forger_iterations": 2000,
+        "forger_mean_focus_candidates": 5,
+        "forger_max_focus_candidates": 5,
+        "forger_ge_observed_share": 1,
+        "decision": "failed_forger_gate_length_pattern_common"
+      },
+      {
+        "target_id": "interpreter_shu_ilishu",
+        "target_label": "szu-i3-li2-su / Shu-ilishu",
+        "target_units": "szu-i3-li2-su",
+        "target_pattern": "ABCD",
+        "focus_exact_candidates": 5,
+        "all_external_exact_candidates": 6,
+        "corpus_exact_candidates": 6,
+        "forger_iterations": 2000,
+        "forger_mean_focus_candidates": 5,
+        "forger_max_focus_candidates": 5,
+        "forger_ge_observed_share": 1,
+        "decision": "failed_forger_gate_length_pattern_common"
+      },
+      {
+        "target_id": "title_emebal_meluhha_six_unit",
+        "target_label": "eme-bal me-luh-ha interpreter title",
+        "target_units": "e-me-bal-me-luh-ha",
+        "target_pattern": "ABCBDE",
+        "focus_exact_candidates": 0,
+        "all_external_exact_candidates": 0,
+        "corpus_exact_candidates": 0,
+        "forger_iterations": 2000,
+        "forger_mean_focus_candidates": 0,
+        "forger_max_focus_candidates": 0,
+        "forger_ge_observed_share": 1,
+        "decision": "no_strict_pattern_candidate"
+      }
+    ]
+  },
+  "strongest_attempts": [
+    {
+      "candidate_id": "cand_c5b412735788647e",
+      "target_id": "toponym_meluhha",
+      "target_label": "Meluhha toponym",
+      "external_row_id": "1970.1",
+      "external_site": "Kish",
+      "external_text": "+000-643-240+",
+      "candidate_values": "000=me;643=luh;240=ha",
+      "decision": "retracted_length_pattern_only"
+    },
+    {
+      "candidate_id": "cand_cd7dad0814e911a5",
+      "target_id": "toponym_meluhha",
+      "target_label": "Meluhha toponym",
+      "external_row_id": "3866.1",
+      "external_site": "Ra's al-Junayz",
+      "external_text": "]740-892-517+",
+      "candidate_values": "740=me;892=luh;517=ha",
+      "decision": "retracted_length_pattern_only"
+    },
+    {
+      "candidate_id": "cand_f2065d16be860e5d",
+      "target_id": "ship_ma2_meluhha",
+      "target_label": "ma2 me-luh-ha / Meluhha ship context",
+      "external_row_id": "147.1",
+      "external_site": "Failaka",
+      "external_text": "+317-817-000-090+",
+      "candidate_values": "317=ma2;817=me;000=luh;090=ha",
+      "decision": "retracted_length_pattern_only"
+    },
+    {
+      "candidate_id": "cand_81c637a433fbeccd",
+      "target_id": "ship_ma2_meluhha",
+      "target_label": "ma2 me-luh-ha / Meluhha ship context",
+      "external_row_id": "148.1",
+      "external_site": "Failaka",
+      "external_text": "]090-001-350-716+",
+      "candidate_values": "090=ma2;001=me;350=luh;716=ha",
+      "decision": "retracted_length_pattern_only"
+    },
+    {
+      "candidate_id": "cand_67655671db99aadb",
+      "target_id": "ship_ma2_meluhha",
+      "target_label": "ma2 me-luh-ha / Meluhha ship context",
+      "external_row_id": "3864.1",
+      "external_site": "Ra's al-Junayz",
+      "external_text": "+740-029-220-000[",
+      "candidate_values": "740=ma2;029=me;220=luh;000=ha",
+      "decision": "retracted_length_pattern_only"
+    },
+    {
+      "candidate_id": "cand_a41da9ab743651d3",
+      "target_id": "ship_ma2_meluhha",
+      "target_label": "ma2 me-luh-ha / Meluhha ship context",
+      "external_row_id": "5227.1",
+      "external_site": "Karzakan",
+      "external_text": "+220-455-031-091+",
+      "candidate_values": "220=ma2;455=me;031=luh;091=ha",
+      "decision": "retracted_length_pattern_only"
+    },
+    {
+      "candidate_id": "cand_a327bf22b35cacda",
+      "target_id": "ship_ma2_meluhha",
+      "target_label": "ma2 me-luh-ha / Meluhha ship context",
+      "external_row_id": "5228.1",
+      "external_site": "Karzakan",
+      "external_text": "+033-001-032-091+",
+      "candidate_values": "033=ma2;001=me;032=luh;091=ha",
+      "decision": "retracted_length_pattern_only"
+    },
+    {
+      "candidate_id": "cand_62a50aebe8534ac5",
+      "target_id": "name_lu_sunzida",
+      "target_label": "lu2-sun2-zi-da / Lu-sunzida",
+      "external_row_id": "147.1",
+      "external_site": "Failaka",
+      "external_text": "+317-817-000-090+",
+      "candidate_values": "317=lu2;817=sun2;000=zi;090=da",
+      "decision": "retracted_length_pattern_only"
+    },
+    {
+      "candidate_id": "cand_819f246a849a2717",
+      "target_id": "name_lu_sunzida",
+      "target_label": "lu2-sun2-zi-da / Lu-sunzida",
+      "external_row_id": "148.1",
+      "external_site": "Failaka",
+      "external_text": "]090-001-350-716+",
+      "candidate_values": "090=lu2;001=sun2;350=zi;716=da",
+      "decision": "retracted_length_pattern_only"
+    },
+    {
+      "candidate_id": "cand_ae0cf3e67d6c70d3",
+      "target_id": "name_lu_sunzida",
+      "target_label": "lu2-sun2-zi-da / Lu-sunzida",
+      "external_row_id": "3864.1",
+      "external_site": "Ra's al-Junayz",
+      "external_text": "+740-029-220-000[",
+      "candidate_values": "740=lu2;029=sun2;220=zi;000=da",
+      "decision": "retracted_length_pattern_only"
+    }
+  ],
+  "lu_sunzida_prior_gate": {
+    "hypothesis": "The cuneiform string lu2-sun2-zi-da can be used as a Meluhha diagnostic personal-name anchor.",
+    "decision": "rejected_as_meluhha_diagnostic_anchor",
+    "false_positive_artifacts_if_name_alone_marks_meluhha": 14,
+    "false_positive_rate_if_name_alone_marks_meluhha": 0.9333333333333333,
+    "non_adjacent_or_no_meluhha_rate_if_name_alone_requires_adjacent_meluhha": 0.9333333333333333,
+    "surviving_residue": "P212982 still preserves a locally real adjacency, lu2-sun2-zi-da immediately before lu2 me-luh-ha-ke4. It remains a cuneiform-side lead only, not an Indus sign-value anchor, because the name is not diagnostic across CDLI current hits and there is no paired external Indus object."
+  },
+  "decision": "No external phonetic candidate survives. All actual assignments are length/pattern-only and have forger_ge_observed_share 1 when candidates exist, or no candidate under stricter duplicate-pattern targets.",
+  "next_gate": "A candidate can only be rerun if an external Indus object is source-validated and paired to a specific cuneiform attestation by more than length, site, or desired reading: accession/publication linkage, owner/profession linkage, or independent sign-sequence repetition tied to the same cuneiform name/token.",
+  "files": {
+    "candidates": "data/meluhha/external_phonetic_anchor_candidates.csv",
+    "summary": "data/meluhha/external_phonetic_anchor_summary.json",
+    "target_summary": "data/meluhha/external_phonetic_anchor_target_summary.csv",
+    "forger_iterations": "data/meluhha/external_phonetic_anchor_forger_iterations.csv"
+  }
+}

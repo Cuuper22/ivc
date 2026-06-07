@@ -1,0 +1,39 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "h2218_h2239_group3_source_route_recheck",
+  "route_rows": 18,
+  "target_objects": [
+    "H-2237",
+    "H-2238",
+    "H-2230",
+    "H-2233"
+  ],
+  "target_harp_ids": [
+    "H96-3125/6937-16",
+    "H95-2613/6560-01",
+    "H97-3311/8040-10",
+    "H97-3341/8039-10"
+  ],
+  "source_anchor_rows": 4,
+  "catalog_note_or_route_rows": 12,
+  "public_source_grade_image_hits": 0,
+  "public_object_level_image_hits": 0,
+  "direct_archive_target_hits": 0,
+  "next_best_routes": [
+    "Harappa image-rights/contact request using exact HARP IDs",
+    "CISI 3.1 plates and end matter through library, purchase, or institutional access",
+    "HARP object/photo database route through Harappa/HARP contacts"
+  ],
+  "adversarial_gate": {
+    "kill_if": [
+      "H-number, HARP ID, Fig. 4, and CISI object identity do not align",
+      "154/156 or 033/034 diagnostic strokes are not visible or are damage/normalization artifacts",
+      "the supposed invariant sides are not source-invariant",
+      "the differing signs are not on equivalent physical side roles",
+      "group-3/workshop/copy notes explain the differences as local template drift rather than slot substitution"
+    ],
+    "best_possible_after_successful_source_pass": "source-confirmed singleton slot contrast inside one H-series batch; still not a reading"
+  },
+  "accepted_decipherment_claims": 0,
+  "research_conclusion": "The checked public/archive layer still has zero source-grade or object-level image hits for H-2237, H-2238, H-2230, and H-2233. The useful progress is route precision: exact HARP IDs are anchored, CISI 3.1 is confirmed as the likely image/end-matter source, Finna gives a library route, Finnish Academy/Harappa confirm image-rich CISI volumes, and Harappa image-rights gives a direct scholarly image-request route."
+}

@@ -1,0 +1,102 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "692_terminal_suffix_stress",
+  "hypothesis_tested": "`692` is a hard terminal selector under `002-390`, but its global behavior may be driven by a portable `060-692` suffix.",
+  "totals": {
+    "raw_rows": 5679,
+    "canonical_rows": 3503,
+    "focus_raw_occurrences": 77,
+    "focus_canonical_occurrences": 68,
+    "count_matched_baseline_signs": 22
+  },
+  "focus_summary": {
+    "checked_date": "2026-05-31",
+    "sign": "692",
+    "raw_occurrences": "77",
+    "canonical_occurrences": "68",
+    "terminal": "50",
+    "terminal_share": "0.735294",
+    "continuing": "18",
+    "prev_060": "39",
+    "prev_060_share": "0.573529",
+    "prev_060_terminal": "33",
+    "prev_060_terminal_share": "0.846154",
+    "non060_occurrences": "29",
+    "non060_terminal": "17",
+    "non060_terminal_share": "0.586207",
+    "in_002_390_frame": "1",
+    "top_prev": "060",
+    "top_prev_count": "39",
+    "top_prev_share": "0.573529",
+    "top_next": "<END>",
+    "top_next_count": "50",
+    "top_next_share": "0.735294",
+    "raw_top_exact_sequence_count": "3",
+    "raw_top_exact_sequence_share": "0.038961",
+    "top_prevs": "060:39;<START>:5;001:3;000:2;031:1;032:1;100:1;252:1",
+    "top_nexts": "<END>:50;740:3;000:2;520:2;001:1;003:1;032:1;401:1",
+    "top_raw_exact_sequences": "000 060 692:3;692:3;740 603 240 060 692:3;000 000 000 000 000 000 740 803 060 692 740 690 435 255 060 692:2;740 636 240 060 692:2"
+  },
+  "baseline_ranks_among_count_matched_plus_focus": {
+    "by_terminal_share": "1/23",
+    "by_prev_060_share": "1/23",
+    "by_top_prev_share": "4/23"
+  },
+  "family_rows": [
+    {
+      "checked_date": "2026-05-31",
+      "family": "002-390-692",
+      "rows": "1",
+      "terminal": "1",
+      "top_rows": "M-70:002-390-692-><END>",
+      "parse_implication": "`692` is strict-source local evidence for a terminal branch under `002-390`, but the family has one known row."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "family": "060-692",
+      "rows": "39",
+      "terminal": "33",
+      "top_rows": "B-21:060-692-><END>;C-75:060-692-><END>;H-1137:060-692-><END>;H-423:060-692-><END>;H-1400:060-692-><END>;M-2032:060-692-><END>;H-1901:060-692-><END>;H-237:060-692-><END>;H-1975:060-692-><END>;H-1705:060-692-><END>;H-56:060-692-><END>;H-91:060-692-><END>;H-133:060-692-><END>;H-142:060-692-><END>;H-823:060-692-><END>;H-646:060-692-><END>;H-665:060-692-><END>;H-824:060-692-><END>",
+      "parse_implication": "`060-692` is the dominant portable terminal suffix ecology; it can explain much of global 692 terminality."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "family": "non060-692",
+      "rows": "29",
+      "terminal": "17",
+      "top_rows": "001-692-><END>:3;000-692-><END>:2;<START>-692-><END>:1;<START>-692->451:1;<START>-692->687:1;<START>-692->892:1;<START>-692->904:1;031-692-><END>:1;032-692-><END>:1;100-692->491:1",
+      "parse_implication": "Even outside `060-692`, the sign remains often terminal, but much less cleanly than the dominant suffix family."
+    }
+  ],
+  "decisions": [
+    {
+      "checked_date": "2026-05-31",
+      "named_bet": "`692` is a hard terminal closure selector under `002-390`",
+      "tier_after_test": "candidate_narrowed",
+      "evidence": "Canonical 692 has 68 occurrences and 50 are terminal; the one 002-390-692 row is terminal.",
+      "adversary": "Dominant 060-692 accounts for 39/68 canonical occurrences and 33/39 are terminal, so global closure is partly a suffix-family effect.",
+      "falsifier_or_rescue": "A source-bound 002-390-692 continuation kills the local terminal selector. A second strict 002-390-692 terminal row outside the 060 family promotes the branch rule."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "named_bet": "`060-692` is a portable terminal suffix and `390-692` borrows its final closure element",
+      "tier_after_test": "candidate",
+      "evidence": "060 is the top predecessor of 692: 39/68; terminal after 060 is 33/39.",
+      "adversary": "`390-692` has no visible `060`; the borrowing/stripping story is a semantic bridge, not directly observed morphology.",
+      "falsifier_or_rescue": "If 060-692 source-normalizes to a narrow copied family, this demotes. If independent sites/forms preserve 060-692 terminality, keep it as a suffix candidate."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "named_bet": "`692` is just an ordinary sign whose terminality is accidental",
+      "tier_after_test": "demoted",
+      "evidence": "Among 23 count-matched signs including 692, it ranks 1/23 by terminal share.",
+      "adversary": "Count matching does not control for inherited formula families, so this only attacks the lazy accidental-terminal null.",
+      "falsifier_or_rescue": "If count-matched signs routinely show the same terminal share once formula-collapsed, ordinary-sign null revives."
+    }
+  ],
+  "confidence_after_test": {
+    "hard_terminal_692_under_002390": "candidate_narrowed",
+    "portable_060_692_terminal_suffix": "candidate",
+    "accidental_terminal_null": "demoted"
+  }
+}

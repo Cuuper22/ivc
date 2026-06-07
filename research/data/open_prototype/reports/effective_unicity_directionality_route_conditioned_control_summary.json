@@ -1,0 +1,362 @@
+{
+  "date": "2026-05-29",
+  "generated_at_utc": "2026-05-29T13:51:59.139Z",
+  "purpose": "Route-conditioned control for the Vector 2 directionality candidate. Tests whether public CISI route availability or page/source-convention clustering can support a source-visible directionality promotion.",
+  "inputs": {
+    "source_queue": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\effective_unicity_directionality_source_queue.csv",
+    "public_route_probe_status": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\effective_unicity_directionality_public_route_probe_status.csv",
+    "signband_pool_v2e_candidates": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\effective_unicity_directionality_signband_pool_v2e_candidates.csv"
+  },
+  "frozen_subset_definition": {
+    "route_probe_id": "directionality_public_route_probe_v1",
+    "priority_bands": [
+      "P1_acquire_high_positive_source",
+      "P1_audit_reversed_anomaly"
+    ],
+    "max_queue_rank": 80,
+    "public_route_status_rank": "public_cisi_plate_route_candidate",
+    "v2e_signband_buckets": [
+      "strong_signband_like_geometry_needs_visual_qc",
+      "possible_signband_like_geometry_needs_visual_qc"
+    ]
+  },
+  "controls": {
+    "null_iterations": 5000,
+    "route_label_nulls": [
+      "route_label_shuffle__priority_band",
+      "route_label_shuffle__priority_site",
+      "route_label_shuffle__priority_site_type",
+      "route_label_shuffle__priority_site_type_symbol_direction_lenbin"
+    ],
+    "collapses": [
+      "best_volume|best_page_index",
+      "site|type|material|symbol|direction"
+    ],
+    "fail_gates": [
+      "public route stored-win share < 0.70",
+      "page-collapsed public route stored-win share < 0.70",
+      "source-register-collapsed public route stored-win share < 0.70",
+      "source-convention-collapsed public route stored-win share < 0.70",
+      "v2e source-register-collapsed stored-win share < 0.70",
+      "v2e source-convention-collapsed stored-win share < 0.70",
+      "any matched route-label null reproduces observed route share at > 0.10"
+    ]
+  },
+  "primary_results": {
+    "all_324_harsh_major_site_rows": {
+      "subset": "all_324_harsh_major_site_rows",
+      "rows": 324,
+      "stored_higher": 274,
+      "reversed_higher": 35,
+      "ties": 15,
+      "stored_win_share": 0.845679,
+      "mean_diff_per_transition": 1.046123,
+      "route_rows": 0,
+      "no_route_rows": 324,
+      "unique_cisis": 318,
+      "source_pages": 0,
+      "sites": {
+        "Harappa": 112,
+        "Mohenjo-daro": 212
+      },
+      "directions": {
+        "L/R": 11,
+        "R/L": 313
+      },
+      "note": "Baseline source queue rows; not a route-conditioned subset."
+    },
+    "top79_public_route_probe_rows": {
+      "subset": "top79_public_route_probe_rows",
+      "rows": 79,
+      "stored_higher": 53,
+      "reversed_higher": 26,
+      "ties": 0,
+      "stored_win_share": 0.670886,
+      "mean_diff_per_transition": 1.594965,
+      "route_rows": 38,
+      "no_route_rows": 41,
+      "unique_cisis": 78,
+      "source_pages": 33,
+      "sites": {
+        "Harappa": 31,
+        "Mohenjo-daro": 48
+      },
+      "directions": {
+        "L/R": 2,
+        "R/L": 77
+      },
+      "note": "Frozen public-route probe universe."
+    },
+    "public_route_38_rows": {
+      "subset": "public_route_38_rows",
+      "rows": 38,
+      "stored_higher": 26,
+      "reversed_higher": 12,
+      "ties": 0,
+      "stored_win_share": 0.684211,
+      "mean_diff_per_transition": 1.613502,
+      "route_rows": 38,
+      "no_route_rows": 0,
+      "unique_cisis": 38,
+      "source_pages": 32,
+      "sites": {
+        "Harappa": 12,
+        "Mohenjo-daro": 26
+      },
+      "directions": {
+        "L/R": 1,
+        "R/L": 37
+      },
+      "note": "Rows with public CISI plate-route candidates inside the frozen probe universe."
+    },
+    "no_public_route_41_rows": {
+      "subset": "no_public_route_41_rows",
+      "rows": 41,
+      "stored_higher": 27,
+      "reversed_higher": 14,
+      "ties": 0,
+      "stored_win_share": 0.658537,
+      "mean_diff_per_transition": 1.577785,
+      "route_rows": 0,
+      "no_route_rows": 41,
+      "unique_cisis": 40,
+      "source_pages": 1,
+      "sites": {
+        "Harappa": 19,
+        "Mohenjo-daro": 22
+      },
+      "directions": {
+        "L/R": 1,
+        "R/L": 40
+      },
+      "note": "Rows not found in public CISI OCR layer inside the frozen probe universe."
+    },
+    "public_route_38_page_collapsed": {
+      "subset": "public_route_38_page_collapsed",
+      "rows": 32,
+      "stored_higher": 20,
+      "reversed_higher": 12,
+      "ties": 0,
+      "stored_win_share": 0.625,
+      "mean_diff_per_transition": 1.492877,
+      "route_rows": 32,
+      "no_route_rows": 0,
+      "unique_cisis": 32,
+      "source_pages": 32,
+      "sites": {
+        "Harappa": 10,
+        "Mohenjo-daro": 22
+      },
+      "directions": {
+        "L/R": 1,
+        "R/L": 31
+      },
+      "note": "One deterministic representative per public CISI source page."
+    },
+    "public_route_38_source_register_collapsed": {
+      "subset": "public_route_38_source_register_collapsed",
+      "rows": 21,
+      "stored_higher": 13,
+      "reversed_higher": 8,
+      "ties": 0,
+      "stored_win_share": 0.619048,
+      "mean_diff_per_transition": 1.430949,
+      "route_rows": 21,
+      "no_route_rows": 0,
+      "unique_cisis": 21,
+      "source_pages": 21,
+      "sites": {
+        "Harappa": 5,
+        "Mohenjo-daro": 16
+      },
+      "directions": {
+        "L/R": 1,
+        "R/L": 20
+      },
+      "note": "One deterministic representative per site/type/symbol/direction source-register key."
+    },
+    "public_route_38_source_convention_collapsed": {
+      "subset": "public_route_38_source_convention_collapsed",
+      "rows": 23,
+      "stored_higher": 15,
+      "reversed_higher": 8,
+      "ties": 0,
+      "stored_win_share": 0.652174,
+      "mean_diff_per_transition": 1.509658,
+      "route_rows": 23,
+      "no_route_rows": 0,
+      "unique_cisis": 23,
+      "source_pages": 23,
+      "sites": {
+        "Harappa": 6,
+        "Mohenjo-daro": 17
+      },
+      "directions": {
+        "L/R": 1,
+        "R/L": 22
+      },
+      "note": "One deterministic representative per metadata source-convention key."
+    },
+    "v2e_possible_or_strong_31_rows": {
+      "subset": "v2e_possible_or_strong_31_rows",
+      "rows": 31,
+      "stored_higher": 23,
+      "reversed_higher": 8,
+      "ties": 0,
+      "stored_win_share": 0.741935,
+      "mean_diff_per_transition": 1.794122,
+      "route_rows": 31,
+      "no_route_rows": 0,
+      "unique_cisis": 31,
+      "source_pages": 26,
+      "sites": {
+        "Harappa": 11,
+        "Mohenjo-daro": 20
+      },
+      "directions": {
+        "R/L": 31
+      },
+      "note": "Public-route rows that also have possible or strong signband-like v2e geometry."
+    },
+    "v2e_possible_or_strong_page_collapsed": {
+      "subset": "v2e_possible_or_strong_page_collapsed",
+      "rows": 26,
+      "stored_higher": 18,
+      "reversed_higher": 8,
+      "ties": 0,
+      "stored_win_share": 0.692308,
+      "mean_diff_per_transition": 1.697864,
+      "route_rows": 26,
+      "no_route_rows": 0,
+      "unique_cisis": 26,
+      "source_pages": 26,
+      "sites": {
+        "Harappa": 9,
+        "Mohenjo-daro": 17
+      },
+      "directions": {
+        "R/L": 26
+      },
+      "note": "v2e possible/strong rows collapsed by source page."
+    },
+    "v2e_possible_or_strong_source_register_collapsed": {
+      "subset": "v2e_possible_or_strong_source_register_collapsed",
+      "rows": 17,
+      "stored_higher": 11,
+      "reversed_higher": 6,
+      "ties": 0,
+      "stored_win_share": 0.647059,
+      "mean_diff_per_transition": 1.555348,
+      "route_rows": 17,
+      "no_route_rows": 0,
+      "unique_cisis": 17,
+      "source_pages": 17,
+      "sites": {
+        "Harappa": 5,
+        "Mohenjo-daro": 12
+      },
+      "directions": {
+        "R/L": 17
+      },
+      "note": "v2e possible/strong rows collapsed by site/type/symbol/direction source-register key."
+    },
+    "v2e_possible_or_strong_source_convention_collapsed": {
+      "subset": "v2e_possible_or_strong_source_convention_collapsed",
+      "rows": 19,
+      "stored_higher": 13,
+      "reversed_higher": 6,
+      "ties": 0,
+      "stored_win_share": 0.684211,
+      "mean_diff_per_transition": 1.637534,
+      "route_rows": 19,
+      "no_route_rows": 0,
+      "unique_cisis": 19,
+      "source_pages": 19,
+      "sites": {
+        "Harappa": 6,
+        "Mohenjo-daro": 13
+      },
+      "directions": {
+        "R/L": 19
+      },
+      "note": "v2e possible/strong rows collapsed by source-convention key."
+    }
+  },
+  "null_summary": {
+    "route_label_shuffle__priority_band": {
+      "null_label": "route_label_shuffle__priority_band",
+      "block_count": 2,
+      "rows": 79,
+      "route_rows": 38,
+      "no_route_rows": 41,
+      "observed_route_share": 0.684211,
+      "observed_no_route_share": 0.658537,
+      "observed_diff_route_minus_no_route": 0.025674,
+      "iterations": 5000,
+      "null_ge_observed_route_share": 1,
+      "null_ge_observed_diff": 1,
+      "null_ge_abs_observed_diff": 1
+    },
+    "route_label_shuffle__priority_site": {
+      "null_label": "route_label_shuffle__priority_site",
+      "block_count": 4,
+      "rows": 79,
+      "route_rows": 38,
+      "no_route_rows": 41,
+      "observed_route_share": 0.684211,
+      "observed_no_route_share": 0.658537,
+      "observed_diff_route_minus_no_route": 0.025674,
+      "iterations": 5000,
+      "null_ge_observed_route_share": 1,
+      "null_ge_observed_diff": 1,
+      "null_ge_abs_observed_diff": 1
+    },
+    "route_label_shuffle__priority_site_type": {
+      "null_label": "route_label_shuffle__priority_site_type",
+      "block_count": 19,
+      "rows": 79,
+      "route_rows": 38,
+      "no_route_rows": 41,
+      "observed_route_share": 0.684211,
+      "observed_no_route_share": 0.658537,
+      "observed_diff_route_minus_no_route": 0.025674,
+      "iterations": 5000,
+      "null_ge_observed_route_share": 1,
+      "null_ge_observed_diff": 1,
+      "null_ge_abs_observed_diff": 1
+    },
+    "route_label_shuffle__priority_site_type_symbol_direction_lenbin": {
+      "null_label": "route_label_shuffle__priority_site_type_symbol_direction_lenbin",
+      "block_count": 56,
+      "rows": 79,
+      "route_rows": 38,
+      "no_route_rows": 41,
+      "observed_route_share": 0.684211,
+      "observed_no_route_share": 0.658537,
+      "observed_diff_route_minus_no_route": 0.025674,
+      "iterations": 5000,
+      "null_ge_observed_route_share": 1,
+      "null_ge_observed_diff": 1,
+      "null_ge_abs_observed_diff": 1
+    }
+  },
+  "decision": "failed_promotion_route_conditioned_subset_not_source_normalized_evidence",
+  "fail_reasons": [
+    "public_route_stored_win_share_below_0_70",
+    "page_collapsed_public_route_share_below_0_70",
+    "source_register_collapsed_public_route_share_below_0_70",
+    "source_convention_collapsed_public_route_share_below_0_70",
+    "v2e_source_register_collapsed_share_below_0_70",
+    "v2e_source_convention_collapsed_share_below_0_70",
+    "route_label_null_reproduces_or_exceeds_observed_route_share"
+  ],
+  "interpretation_boundary": "This is a route-conditioned source-availability audit only. It does not validate physical source direction, source-normalized token order, sign identity, meaning, phonetics, language family, or translation.",
+  "accepted_claims_increment": 0,
+  "artifact_files": [
+    "data/open_prototype/tools/effective_unicity_directionality_route_conditioned_control.mjs",
+    "data/open_prototype/reports/effective_unicity_directionality_route_conditioned_control_summary.json",
+    "data/open_prototype/reports/effective_unicity_directionality_route_conditioned_control.csv",
+    "data/open_prototype/reports/effective_unicity_directionality_route_conditioned_null_summary.csv",
+    "data/open_prototype/reports/effective_unicity_directionality_route_conditioned_null_iterations.csv"
+  ]
+}

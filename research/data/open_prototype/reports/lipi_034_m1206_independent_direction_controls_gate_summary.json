@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-26",
+  "question": "Do independent source-visible +700-032+, +700-033+, or +033-700+ controls support the recorded R/L component policy used in the H-938/H-910 gate?",
+  "answer": "They support component coherence, not source-grade direction proof. In the three independent source-visible controls in hand, recorded R/L places 700 on the vertical/bar component and 032/033 on the V/leaf/loop component. H-930 and H-789 are clean two-panel controls; H-942 B is source-visible but side-mapping remains a local sign-count inference. This makes the recorded R/L policy less arbitrary, but it still needs source/corpus direction notes or stronger independent controls before becoming a source-grade direction rule.",
+  "independent_controls_checked": [
+    "H-930 B +700-032+ R/L",
+    "H-789 B +033-700+ R/L",
+    "H-942 B +033-700+ R/L"
+  ],
+  "component_coherence_under_recorded_RL": {
+    "H-930_B": "700 maps to right vertical/bar group; 032 maps to left V/leaf component",
+    "H-789_B": "700 maps to left vertical/bar group; 033 maps to right loop/oval component",
+    "H-942_B": "700 maps to left vertical/bar group; 033 maps to right V/leaf component, if the B-side local mapping holds"
+  },
+  "source_grade_direction_proof": false,
+  "recorded_RL_status": "component_coherent_working_corpus_policy_not_source_proven",
+  "effect_on_h938_h910": "The H-938/H-910 negative component result is strengthened as a conditional working result, because independent controls align 700 with the vertical/bar component under recorded R/L. If the direction policy fails, the result remains unresolved, not positive.",
+  "accepted_034_415_component_match": false,
+  "accepted_allograph_status": false,
+  "accepted_value_or_translation": false,
+  "next_gate": "Acquire source notes or source-visible panels for H-1302/H-1303/H-2146/H-319/H-1284 or an equivalent independent 034/032/033/700 control where side mapping and component visibility are both secure.",
+  "artifacts": {
+    "gate_csv": "data/open_prototype/reports/lipi_034_m1206_independent_direction_controls_gate.csv",
+    "contact_sheet": "tmp/independent_direction_controls/derived/independent_direction_controls_contact_sheet_v2.png",
+    "h930_crop": "tmp/independent_direction_controls/derived/H930_B_source_panel_v2.png",
+    "h789_crop": "tmp/independent_direction_controls/derived/H789_B_wide2.png",
+    "h942_crop": "tmp/m1206_singleton_controls/derived/h942/H942_B_panel_labeled_from_cisi_pakistan_n374.png"
+  }
+}

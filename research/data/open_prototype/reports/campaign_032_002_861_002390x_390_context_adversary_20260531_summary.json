@@ -1,0 +1,120 @@
+{
+  "run_date": "2026-05-31",
+  "input": "data/open_prototype/lipi/metadata_filtered.csv",
+  "metadata_rows": 5679,
+  "total_390_frames": 264,
+  "focus_summary": [
+    {
+      "branch_after_390": "095",
+      "rows": 3,
+      "terminal": 2,
+      "continuing": 1,
+      "in_002390_rows": 2,
+      "in_002390_terminal": 2,
+      "in_002390_continuing": 0,
+      "non_002390_rows": 1,
+      "non_002390_terminal": 0,
+      "non_002390_continuing": 1,
+      "objects": "C-40 H-1993 M-71"
+    },
+    {
+      "branch_after_390": "125",
+      "rows": 9,
+      "terminal": 3,
+      "continuing": 6,
+      "in_002390_rows": 4,
+      "in_002390_terminal": 0,
+      "in_002390_continuing": 4,
+      "non_002390_rows": 5,
+      "non_002390_terminal": 3,
+      "non_002390_continuing": 2,
+      "objects": "Ad-2 H-467 M-38 M-119 M-314 M-320 M-735 M-878 Sktd-1"
+    },
+    {
+      "branch_after_390": "530",
+      "rows": 1,
+      "terminal": 0,
+      "continuing": 1,
+      "in_002390_rows": 1,
+      "in_002390_terminal": 0,
+      "in_002390_continuing": 1,
+      "non_002390_rows": 0,
+      "non_002390_terminal": 0,
+      "non_002390_continuing": 0,
+      "objects": "H-773"
+    },
+    {
+      "branch_after_390": "590",
+      "rows": 73,
+      "terminal": 13,
+      "continuing": 60,
+      "in_002390_rows": 1,
+      "in_002390_terminal": 0,
+      "in_002390_continuing": 1,
+      "non_002390_rows": 72,
+      "non_002390_terminal": 13,
+      "non_002390_continuing": 59,
+      "objects": "Ad-1 C-2 C-12 H-1109 H-1776 H-1692 H-1801 H-1802 H-733 H-39 H-52 H-75 H-180 H-180 H-194 H-449 H-454 H-466 H-510 H-533"
+    },
+    {
+      "branch_after_390": "692",
+      "rows": 1,
+      "terminal": 1,
+      "continuing": 0,
+      "in_002390_rows": 1,
+      "in_002390_terminal": 1,
+      "in_002390_continuing": 0,
+      "non_002390_rows": 0,
+      "non_002390_terminal": 0,
+      "non_002390_continuing": 0,
+      "objects": "M-70"
+    },
+    {
+      "branch_after_390": "705",
+      "rows": 2,
+      "terminal": 2,
+      "continuing": 0,
+      "in_002390_rows": 2,
+      "in_002390_terminal": 2,
+      "in_002390_continuing": 0,
+      "non_002390_rows": 0,
+      "non_002390_terminal": 0,
+      "non_002390_continuing": 0,
+      "objects": "M-1825 -"
+    }
+  ],
+  "decisions": [
+    {
+      "decision": "390_125_not_intrinsic_continuation",
+      "evidence": "{\"branch_after_390\":\"125\",\"rows\":9,\"terminal\":3,\"continuing\":6,\"in_002390_rows\":4,\"in_002390_terminal\":0,\"in_002390_continuing\":4,\"non_002390_rows\":5,\"non_002390_terminal\":3,\"non_002390_continuing\":2,\"objects\":\"Ad-2 H-467 M-38 M-119 M-314 M-320 M-735 M-878 Sktd-1\"}",
+      "result": "390-125 has 9 rows: 4/4 continuing when preceded by 002, but outside 002 it is 3 terminal and 2 continuing",
+      "consequence": "the continuation behavior is not explained by 390-125 alone; 002-before-390 remains a live conditioning clue"
+    },
+    {
+      "decision": "390_095_context_splits",
+      "evidence": "C-40:<START>->390-095->909 005 825 776 220 016; H-1993:002->390-095-><END>; M-71:002->390-095-><END>",
+      "result": "inside 002-390, 095 is 2/2 terminal; the one non-002 390-095 row continues",
+      "consequence": "095 closure cannot be reduced to 390-095 alone, but the sample is tiny"
+    },
+    {
+      "decision": "390_705_and_692_no_non002_controls",
+      "evidence": "M-70:002->390-692-><END>; M-1825:002->390-705-><END>; -:002->390-705-><END>",
+      "result": "390-705 and 390-692 occur only in the 002-390 frame in this metadata scan",
+      "consequence": "they cannot test whether 002 is conditioning behavior outside the frame; source binding remains decisive"
+    },
+    {
+      "decision": "390_590_broad_formula_pressure",
+      "evidence": "{\"branch_after_390\":\"590\",\"rows\":73,\"terminal\":13,\"continuing\":60,\"in_002390_rows\":1,\"in_002390_terminal\":0,\"in_002390_continuing\":1,\"non_002390_rows\":72,\"non_002390_terminal\":13,\"non_002390_continuing\":59,\"objects\":\"Ad-1 C-2 C-12 H-1109 H-1776 H-1692 H-1801 H-1802 H-733 H-39 H-52 H-75 H-180 H-180 H-194 H-449 H-454 H-466 H-510 H-533\"}",
+      "result": "390-590 is broad and mostly continuing outside 002-390",
+      "consequence": "3335.1's 390-590-032 tail remains formula-family pressured"
+    }
+  ],
+  "status": "390_context_adversary_keeps_002_conditioning_live_no_values",
+  "outputs": {
+    "frames390": "data/open_prototype/reports/campaign_032_002_861_002390x_390_context_adversary_20260531_frames390.csv",
+    "branch_summary": "data/open_prototype/reports/campaign_032_002_861_002390x_390_context_adversary_20260531_branch_summary.csv",
+    "focus_rows": "data/open_prototype/reports/campaign_032_002_861_002390x_390_context_adversary_20260531_focus_rows.csv",
+    "decisions": "data/open_prototype/reports/campaign_032_002_861_002390x_390_context_adversary_20260531_decisions.csv",
+    "summary": "data/open_prototype/reports/campaign_032_002_861_002390x_390_context_adversary_20260531_summary.json"
+  }
+}

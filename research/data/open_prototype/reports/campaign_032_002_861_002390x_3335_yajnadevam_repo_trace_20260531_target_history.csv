@@ -1,0 +1,4 @@
+layer,commit,line,id,cisi,site,excavation_idno,museum_or_source,dimensions,text,bridge_interpretation
+current_head,b272ad99c253ba7fa1e4cd91f48cce31f6d02bf4,4189,3335.1,-,Unknown,-,,29 x 29 x 0,+740-205-032-002-390-590-032+,"current row still has cisi dash, unknown site, no excavation id, and no image/source field"
+schema_migration_commit,14b3421f33b1a6a38cee0d7ee54ad5669ef323dd,4190,3335.1,-,Unknown,-,,29 x 29 x 0,+740-205-032-002-390-590-032+,schema migration converted old row to current shape but did not add source bridge
+old_externalize_commit,0921d91d309621a292ba22bacce3f0f9c3ede929,2043,3335,,Unknown,,Private collection,29.0 x 29.0 x 0.0,+740-205-032-002-390-590-032+,"old source layer preserves private-collection clue but no public object id, image, or citation"

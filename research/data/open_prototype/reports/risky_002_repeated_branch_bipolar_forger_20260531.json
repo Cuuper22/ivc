@@ -1,0 +1,113 @@
+{
+  "run_date": "2026-05-31",
+  "bet_id": "V2_002_861_390_REPEATED_BRANCH_BIPOLAR_FORGER_20260531",
+  "vector": "V2 effective-unicity / solution-space degeneracy",
+  "confidence_tier": "candidate",
+  "risky_bet": "The real signal in the `002` branch-table system is repeated-branch bipolar purity: both `002-861-X` and `002-390-X` contain repeated open and repeated closed branch classes, with no mixed repeated class after exact-text collapse.",
+  "observed": "Competitive exact-text heads: 8. Observed repeated-branch bipolar-pure heads with >=8 repeated rows: 861/390. 861 repeated classes: 000:closed:2;096:closed:2;533:open:2;603:closed:3. 390 repeated classes: 095:closed:2;125:open:4;705:closed:2.",
+  "adversarial_test": "Forger shuffles terminal/continuing labels within each competitive head 100000 times, preserving head size, branch layout, and terminal count, then ignores singleton branches and asks whether repeated branches alone are bipolar-pure.",
+  "false_positive_rate": 0.00074,
+  "any_pair_false_positive_rate": 0.00285,
+  "head_861_false_positive_rate": 0.03303,
+  "head_390_false_positive_rate": 0.02332,
+  "falsifier": "A source-normalized mixed repeated branch in either head, especially 390|705 or 861|096/000, kills the repeated-branch form of the bet.",
+  "next_prediction": "New exact-text-independent repeated branches under `002-861` or `002-390` should join an all-open or all-closed branch class rather than split within the same branch sign.",
+  "heads": [
+    {
+      "head": "861",
+      "exact_rows": 28,
+      "terminal_rows": 19,
+      "continuing_rows": 9,
+      "branch_count": 23,
+      "repeated_classes": 4,
+      "repeated_rows": 9,
+      "bipolar_pure": true,
+      "class_table": "000:closed:2;096:closed:2;533:open:2;603:closed:3",
+      "examples": "Ad-8:503-002-861-000-<END>:T|H-910:<START>-002-861-416-<END>:T|H-55:004-002-861-125-<END>:T|H-129:031-002-861-244-165:C|H-446:798-002-861-216-<END>:T|H-688:233-002-861-831-165:C|K-40:031-002-861-791-440 717:C|L-39:315-002-861-626-<END>:T|L-46:176-002-861-392-<END>:T|M-2090:<START>-002-861-096-<END>:T|M-1674:231-002-861-683-<END>:T|M-2089:<START>-002-861-096-<END>:T|M-1661:219-002-861-032-520 919 140:C|M-1681:798-002-861-832-<END>:T|M-20:005-002-861-036-460 513:C|M-91:032-002-861-255-416:C|M-240:032-002-861-603-<END>:T|M-330:<START>-002-861-698-<END>:T|M-355:235-002-861-360-520 919 140:C|M-376:176-002-861-533-717:C|M-391:805-002-861-533-717:C|M-677:242-002-861-901-<END>:T|M-706:240-002-861-031-<END>:T|M-714:803-002-861-603-<END>:T|M-1273:055-002-861-603-<END>:T|M-1698:705-002-861-803-<END>:T|-:4348.1:000-002-861-390-<END>:T|-:5541.1:<START>-002-861-000-<END>:T"
+    },
+    {
+      "head": "368",
+      "exact_rows": 12,
+      "terminal_rows": 6,
+      "continuing_rows": 6,
+      "branch_count": 11,
+      "repeated_classes": 1,
+      "repeated_rows": 2,
+      "bipolar_pure": false,
+      "class_table": "260:closed:2",
+      "examples": "Blk-2:061-002-368-634-<END>:T|B-1:220-002-368-550-821:C|H-600:<START>-002-368-260-<END>:T|K-10:255-002-368-861-590 032 368:C|L-213:220-002-368-840-900:C|M-1789:455-002-368-260-<END>:T|M-12:233-002-368-202-892 371:C|M-36:032-002-368-906-329:C|M-99:215-002-368-119-<END>:T|M-253:803-002-368-518-<END>:T|M-311:401-002-368-165-<END>:T|?-3:<START>-002-368-590-900:C"
+    },
+    {
+      "head": "031",
+      "exact_rows": 15,
+      "terminal_rows": 13,
+      "continuing_rows": 2,
+      "branch_count": 11,
+      "repeated_classes": 4,
+      "repeated_rows": 8,
+      "bipolar_pure": false,
+      "class_table": "000:closed:2;480:mixed:2;575:closed:2;892:closed:2",
+      "examples": "C-6:221-002-031-500-<END>:T|H-44:803-002-031-892-<END>:T|H-389:235-002-031-480-625:C|M-1745:031-002-031-892-<END>:T|M-141:240-002-031-000-<END>:T|M-211:220-002-031-165-<END>:T|M-318:003-002-031-575-<END>:T|M-678:806-002-031-502-<END>:T|M-739:415-002-031-350-550 692:C|M-1386:235-002-031-480-<END>:T|M-1823:004-002-031-376-<END>:T|-:4164.1:423-002-031-104-<END>:T|-:4344.1:240-002-031-000-<END>:T|K-429:<START>-002-031-820-<END>:T|-:5579.1:226-002-031-575-<END>:T"
+    },
+    {
+      "head": "220",
+      "exact_rows": 11,
+      "terminal_rows": 1,
+      "continuing_rows": 10,
+      "branch_count": 5,
+      "repeated_classes": 2,
+      "repeated_rows": 8,
+      "bipolar_pure": false,
+      "class_table": "065:open:3;455:open:5",
+      "examples": "H-1874:<START>-002-220-455-000:C|H-82:017-002-220-455-741:C|H-268:803-002-220-455-920:C|H-593:240-002-220-000-<END>:T|K-25:231-002-220-065-132 082:C|M-29:806-002-220-455-503:C|M-46:235-002-220-065-215:C|M-140:336-002-220-065-440 455:C|M-147:803-002-220-455-520:C|M-655:233-002-220-880-689:C|M-1427:140-002-220-627-615 906 388:C"
+    },
+    {
+      "head": "390",
+      "exact_rows": 15,
+      "terminal_rows": 9,
+      "continuing_rows": 6,
+      "branch_count": 10,
+      "repeated_classes": 3,
+      "repeated_rows": 8,
+      "bipolar_pure": true,
+      "class_table": "095:closed:2;125:open:4;705:closed:2",
+      "examples": "H-1993:004-002-390-095-<END>:T|H-68:003-002-390-072-<END>:T|H-773:803-002-390-530-741:C|M-38:235-002-390-125-632 032:C|M-70:032-002-390-692-<END>:T|M-71:142-002-390-095-<END>:T|M-119:484-002-390-125-632 032 900 563:C|M-213:384-002-390-346-<END>:T|M-232:236-002-390-707-<END>:T|M-708:061-002-390-140-<END>:T|M-735:235-002-390-125-195:C|-:3335.1:032-002-390-590-032:C|Sktd-1:004-002-390-125-820:C|M-1825:031-002-390-705-<END>:T|-:4237.1:388-002-390-705-<END>:T"
+    },
+    {
+      "head": "817",
+      "exact_rows": 8,
+      "terminal_rows": 4,
+      "continuing_rows": 4,
+      "branch_count": 6,
+      "repeated_classes": 1,
+      "repeated_rows": 3,
+      "bipolar_pure": false,
+      "class_table": "000:closed:3",
+      "examples": "H-456:706-002-817-808-<END>:T|H-609:231-002-817-000-<END>:T|M-1662:233-002-817-192-000:C|M-644:240-002-817-090-370:C|M-692:004-002-817-000-<END>:T|M-855:590-002-817-690-544:C|M-1391:798-002-817-032-320:C|K-155:<START>-002-817-000-<END>:T"
+    },
+    {
+      "head": "000",
+      "exact_rows": 11,
+      "terminal_rows": 8,
+      "continuing_rows": 3,
+      "branch_count": 8,
+      "repeated_classes": 2,
+      "repeated_rows": 5,
+      "bipolar_pure": false,
+      "class_table": "000:closed:3;090:mixed:2",
+      "examples": "H-486:<START>-002-000-861-031:C|K-44:176-002-000-000-<END>:T|M-2005:033-002-000-031-<END>:T|M-1783:003-002-000-215-<END>:T|M-106:000-002-000-350-<END>:T|M-636:032-002-000-216-<END>:T|M-902:798-002-000-090-<END>:T|M-1995:832-002-000-000-<END>:T|-:5226.1:<START>-002-000-090-725 000:C|Ns-67:000-002-000-000-<END>:T|-:5468.1:361-002-000-317-688:C"
+    },
+    {
+      "head": "820",
+      "exact_rows": 8,
+      "terminal_rows": 6,
+      "continuing_rows": 2,
+      "branch_count": 6,
+      "repeated_classes": 2,
+      "repeated_rows": 4,
+      "bipolar_pure": false,
+      "class_table": "000:closed:2;741:closed:2",
+      "examples": "H-909:<START>-002-820-000-<END>:T|K-23:441-002-820-033-<END>:T|M-1677:032-002-820-001-440 012:C|M-86:231-002-820-700-<END>:T|M-160:031-002-820-741-<END>:T|M-1045:032-002-820-000-<END>:T|M-1119:803-002-820-741-<END>:T|M-1178:<START>-002-820-906-000:C"
+    }
+  ]
+}

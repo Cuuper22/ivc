@@ -1,0 +1,221 @@
+{
+  "date": "2026-05-29",
+  "preflight_id": "directionality_homogeneous_signband_packet_v2f_preflight",
+  "input_v2e_candidates_csv": "data/open_prototype/reports/effective_unicity_directionality_signband_pool_v2e_candidates.csv",
+  "status": "failed_preflight_no_blind_packet_promoted",
+  "accepted_claims_increment": 0,
+  "strict_can_form_fixed_packet": false,
+  "derived_can_form_acquisition_packet_before_visual_review": false,
+  "automatic_fail_gates": [
+    "strict_reuse_lane_missing_target_cisis",
+    "strict_reuse_lane_has_fewer_than_12_original_fixed_real_negatives",
+    "strict_reuse_lane_has_target_control_source_page_collisions",
+    "derived_lane_has_target_control_source_page_collisions"
+  ],
+  "strict_reuse_lane": {
+    "candidate_rows": 82,
+    "unique_cisis": 21,
+    "target_available": [
+      "H-654",
+      "M-1310",
+      "M-1320"
+    ],
+    "target_missing": [
+      "M-811"
+    ],
+    "fixed_real_negative_unique_count": 7,
+    "fixed_real_negative_available": [
+      "H-158",
+      "M-1315",
+      "M-171",
+      "M-365",
+      "M-386",
+      "M-525",
+      "M-527"
+    ],
+    "all_non_target_unique_count": 18,
+    "all_non_target_available": [
+      "H-152",
+      "H-158",
+      "H-611",
+      "H-642",
+      "H-659",
+      "H-796",
+      "H-985",
+      "M-1103",
+      "M-127",
+      "M-1314",
+      "M-1315",
+      "M-1322",
+      "M-171",
+      "M-365",
+      "M-386",
+      "M-490",
+      "M-525",
+      "M-527"
+    ],
+    "target_control_source_page_collisions": [
+      {
+        "target_cisi": "M-1310",
+        "control_cisi": "M-1315",
+        "source_page": "tmp/effective_unicity_directionality_public_route_probe_v2/pages/28_M_1315_cisi_pakistan_n202_1.jpg",
+        "source_page_sha256": "03f2d9ecf9f7c063f861c2e11e71af60d1df70073a89db45362ef059347b1bf2"
+      },
+      {
+        "target_cisi": "M-1310",
+        "control_cisi": "M-1314",
+        "source_page": "tmp/effective_unicity_directionality_public_route_probe_v2/pages/50_M_1314_cisi_pakistan_n202_1.jpg",
+        "source_page_sha256": "03f2d9ecf9f7c063f861c2e11e71af60d1df70073a89db45362ef059347b1bf2"
+      },
+      {
+        "target_cisi": "M-1320",
+        "control_cisi": "M-1322",
+        "source_page": "tmp/effective_unicity_directionality_public_route_probe_v2/pages/42_M_1322_cisi_pakistan_n203_1.jpg",
+        "source_page_sha256": "d6ba1b469bd752cac59953f9a4070a3c3f28069c50419ec4592bbdb949254e90"
+      }
+    ],
+    "exact_duplicate_hash_groups": []
+  },
+  "strict_reject_reason_counts": {
+    "aspect_outside_compact_signband_range": 80,
+    "height_outside_compact_signband_range": 7,
+    "mechanical_preflight_failed": 205,
+    "not_strong_or_possible_signband_geometry": 113,
+    "width_outside_compact_signband_range": 1
+  },
+  "derived_top_strip_lane": {
+    "candidate_rows": 44,
+    "unique_cisis": 19,
+    "target_available": [
+      "H-654",
+      "M-1310"
+    ],
+    "target_missing": [
+      "M-1320",
+      "M-811"
+    ],
+    "fixed_real_negative_unique_count": 6,
+    "fixed_real_negative_available": [
+      "H-158",
+      "H-665",
+      "M-1315",
+      "M-365",
+      "M-386",
+      "M-525"
+    ],
+    "all_non_target_unique_count": 17,
+    "all_non_target_available": [
+      "H-152",
+      "H-158",
+      "H-2",
+      "H-421",
+      "H-642",
+      "H-659",
+      "H-665",
+      "H-796",
+      "H-985",
+      "M-127",
+      "M-1315",
+      "M-1322",
+      "M-365",
+      "M-386",
+      "M-40",
+      "M-490",
+      "M-525"
+    ],
+    "target_control_source_page_collisions": [
+      {
+        "target_cisi": "M-1310",
+        "control_cisi": "M-1315",
+        "source_page": "tmp/effective_unicity_directionality_public_route_probe_v2/pages/28_M_1315_cisi_pakistan_n202_1.jpg",
+        "source_page_sha256": "03f2d9ecf9f7c063f861c2e11e71af60d1df70073a89db45362ef059347b1bf2"
+      }
+    ],
+    "exact_duplicate_hash_groups": [],
+    "attempted_source_rows": 213,
+    "mechanical_failure_counts": {
+      "aspect_outside_derived_strip_range": 45,
+      "aspect_outside_derived_strip_range;height_outside_derived_strip_range": 10,
+      "height_outside_derived_strip_range": 1,
+      "no_active_top_strip_cluster": 113
+    }
+  },
+  "output_artifacts": {
+    "strict_candidates_csv": "data/open_prototype/reports/effective_unicity_directionality_homogeneous_packet_v2f_strict_reuse_candidates.csv",
+    "derived_candidates_csv": "data/open_prototype/reports/effective_unicity_directionality_homogeneous_packet_v2f_derived_top_strip_candidates.csv",
+    "strict_contact_sheet": "tmp/effective_unicity_directionality_homogeneous_packet_v2f/directionality_homogeneous_packet_v2f_strict_reuse_contact_sheet.jpg",
+    "derived_contact_sheet": "tmp/effective_unicity_directionality_homogeneous_packet_v2f/directionality_homogeneous_packet_v2f_derived_top_strip_contact_sheet.jpg",
+    "target_contact_sheet": "tmp/effective_unicity_directionality_homogeneous_packet_v2f/directionality_homogeneous_packet_v2f_target_gate_contact_sheet.jpg"
+  },
+  "no_promotion_reason": "The strict v2e reuse lane cannot form the claimed packet because it lacks all four compact target signbands and has fewer than 12 original fixed real negatives. The derived top-strip lane is useful crop-acquisition infrastructure, but it is not a blind packet: it still requires human visual preflight, pre-registered forger/null packets, and a fresh fixed denominator before any directionality claim can be tested.",
+  "next_gate_requirements": [
+    "Human visual review must mark each selected derived strip as no label, no page-context sliver, exactly one comparable signband, and no icon/object cue dominating the crop.",
+    "A fixed denominator of at least 12 real non-target CISIs must be pre-registered before any reviewer sees randomized packets.",
+    "A matched synthetic forger set must include planted directionality, planted non-linguistic emblem/order structure, and frequency-matched noise at the same packet size.",
+    "Reviewer true-positive and false-positive rates must be reported before any accepted claim ledger increment."
+  ],
+  "minimum_future_v2f_forger_requirements": {
+    "required_blind_reviewers": 3,
+    "fixed_denominators": {
+      "real_signband_negative_unique_cisis": {
+        "minimum": 12,
+        "rule": "Fixed before review; no reserve promotion after packet creation; same crop world as targets."
+      },
+      "real_nonlinguistic_null_unique_source_crops": {
+        "minimum": 12,
+        "rule": "Source-real icon-only, animal-only, blank/damaged/non-script bands matched for dimensions, contrast, and page quality."
+      },
+      "synthetic_null_rows": {
+        "minimum": 32,
+        "families": {
+          "matched_texture_noise": 8,
+          "asemic_stroke_bands": 8,
+          "mirror_or_reversal_controls": 8,
+          "shuffled_token_or_collage_controls": 8
+        },
+        "rule": "Generated from a fixed seed and manifest before review."
+      }
+    },
+    "sentinel_rows": {
+      "denominator_inclusion": "auxiliary_only_never_denominator",
+      "families": [
+        "deliberate_label_leak_sentinels",
+        "blank_or_near_blank_sentinels",
+        "duplicate_image_sentinels"
+      ]
+    },
+    "fpr_threshold": {
+      "yes_only_false_positive_rate": 0,
+      "conservative_false_positive_or_uncertain_rate": 0,
+      "applies_to": [
+        "real_signband_negatives",
+        "real_nonlinguistic_nulls",
+        "synthetic_nulls"
+      ],
+      "note": "With these small denominators, one hard or uncertain null hit fails the apparatus."
+    },
+    "automatic_pre_review_fail_gates": [
+      "reviewer_visible_filename_manifest_contact_sheet_or_order_reveals_cisi_role_source_page_route_rank_match_text_target_status_score_or_crop_method",
+      "exact_duplicate_blind_image_hash_or_unregistered_near_duplicate_cluster",
+      "target_control_crop_world_mismatch",
+      "denominator_below_floor",
+      "reserve_row_promoted_after_packet_creation",
+      "visible_label_page_or_source_cue_in_denominator_row",
+      "target_only_source_family_or_page_style_not_balanced_by_fixed_real_negatives",
+      "synthetic_or_null_row_generated_or_selected_after_review_starts",
+      "fewer_than_three_independent_blind_reviewers"
+    ],
+    "automatic_review_fail_gates": [
+      "any_real_denominator_row_leaks_label_or_source_cue_without_downward_denominator_recalculation",
+      "any_hard_or_uncertain_target_like_or_directional_call_on_real_signband_negative",
+      "any_hard_or_uncertain_target_like_or_directional_call_on_real_nonlinguistic_null",
+      "any_hard_or_uncertain_target_like_or_directional_call_on_synthetic_null",
+      "leak_sentinels_not_flagged_by_every_reviewer",
+      "blank_or_noise_sentinels_not_rejected",
+      "targets_not_all_strictly_recovered",
+      "paired_target_views_have_nonzero_token_count_or_direction_variance",
+      "mirrored_or_reversed_controls_receive_same_claimed_directionality_as_targets",
+      "result_depends_on_choosing_orientation_after_metadata_is_visible"
+    ]
+  }
+}

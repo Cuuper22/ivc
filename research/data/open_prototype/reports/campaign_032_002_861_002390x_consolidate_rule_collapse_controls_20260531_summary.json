@@ -1,0 +1,19 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "rule_collapse_controls",
+  "strongest": [
+    "NULL_000"
+  ],
+  "fragile": [
+    "TERMINAL_095",
+    "TERMINAL_705",
+    "OPEN_530",
+    "OPEN_125"
+  ],
+  "demoted": [
+    "EXCEPTION_HOOKS"
+  ],
+  "rule_count": 6,
+  "compressed_consequence": "NULL_000 is the only rule that currently survives broad collapse controls; terminal/open layers remain live but source-gated or fragile; exception hooks stay demoted."
+}

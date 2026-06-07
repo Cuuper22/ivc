@@ -1,0 +1,6 @@
+phase,test,prediction,break_condition
+next_expand,held_out_backbone_order_prediction,"Rows containing two or more of {400,740,407,806,002,861,820,817} should obey the core partial order before metadata is inspected.",A new high-quality non-Harappa/non-Mohenjo slice repeatedly reverses 002-before-terminal or 740-before-002.
+next_expand,806_context_merge_prediction,New 806 rows in Bull1:W and rect/copper contexts should be boundary-like at comparable rates.,Bull1:W 806 becomes mostly non-boundary while rect/copper remains boundary-like.
+next_expand,non_harappa_bull1w_405806,"Non-Harappa Bull1:W square seals should carry 405/806 above square-seal background, but possibly below Harappa rate.",Additional non-Harappa Bull1:W rows lack both signs while non-Bull1:W rows continue accumulating them.
+next_expand,external_register_not_name_bridge,External Meluhha side should align better with commodity/register signs (407/400/090/091 families) than with full personal-name readings.,A source-bound object-level bridge gives a low-FPR name mapping without register signs.
+next_expand,002390_branch_holdout,New 002-390-125/530/590 rows continue; new 002-390-072/095/140/346/692/705/707 rows close.,A source-bound row flips one of these branch classes.

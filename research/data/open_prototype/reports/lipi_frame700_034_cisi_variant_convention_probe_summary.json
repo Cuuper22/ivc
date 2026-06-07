@@ -1,0 +1,22 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "lipi_frame700_034_cisi_variant_convention_probe",
+  "source_scope": "CISI vol. 1/2 introduction conventions plus target OCR/page-label evidence for H-771/H-893/H-925/H-983/H-353",
+  "rows": 9,
+  "convention_rows": 4,
+  "target_rows": 5,
+  "bis_ter_quater_reclassified_as_same_side_photos": 3,
+  "true_c_side_source_hazards": 2,
+  "object_number_labels_unresolved": 2,
+  "h353_duplicate_w1200_sha256": "5422DE7097106AA1AEF205A067924D153321F7DD91ED1A60BC7A77D2312A4AA6",
+  "target_decision_counts": {
+    "H-353 remains unusable as the clean 033 control for H-983 until the C side is accounted for": 1,
+    "H-771 remains blocked, but the blocker is same-side photo selection plus source-direction/subtype uncertainty, not physical side count": 1,
+    "H-893 cannot serve as a strict 034 target until base versus (1) mapping is resolved": 1,
+    "H-925 remains the dangerous control because it mixes base labels, unexplained numbered labels, and same-side photo variants": 1,
+    "H-983 has a genuine source-side mismatch for any two-side comparison with H-353/H-2211": 1
+  },
+  "accepted_decipherment_claims": 0,
+  "correction_to_previous_gate": "Replace blanket extra-side language with a split: bis/ter/quater are same-side photograph variants; A/B/C labels are side categories; object-number forms like H-893 (1) A and H-925 (2) B remain unreconciled.",
+  "immediate_research_consequence": "H-771 is less physically side-mismatched than first described, but still blocked by photo selection and direction/subtype uncertainty. H-983 and H-353 have genuine C-side hazards. H-893 and H-925 remain blocked by unexplained numbered labels."
+}

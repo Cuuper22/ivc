@@ -1,0 +1,68 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_154806_series_prefix_source_probe_20260531",
+  "tier": "candidate",
+  "parent_forger": "data/open_prototype/tools/risky_154806_series_prefix_forger_20260531.mjs",
+  "bet": "Source-visible rows preserve a recurring left prefix cluster corresponding to catalog 154-806, followed by a visually similar 467..474 slot family. The risky stronger form is that 154-806 may be a compound/ligatured series-prefix construction, not ordinary free adjacency.",
+  "source_sheet": "tmp/risky_154806_series_prefix_source_probe_20260531/154806_source_visible_contact_sheet_x4.png",
+  "source_checked_rows": [
+    {
+      "artifact": "H-132",
+      "catalog_text": "+154-806-471-407-845-740-233-231-798+",
+      "visual_decision": "supports_prefix_plus_family_with_boundary_unresolved",
+      "basis": "The visible band starts with a repeated complex cluster before the next major sign-family slot; exact 154/806 token boundary is not independently boxed."
+    },
+    {
+      "artifact": "H-143",
+      "catalog_text": "+154-806-469-001-740-877-032+",
+      "visual_decision": "supports_prefix_plus_family_with_boundary_unresolved",
+      "basis": "The same initial complex cluster is followed by the same oval/leaf-like successor class."
+    },
+    {
+      "artifact": "H-146",
+      "catalog_text": "+154-806-467-031+",
+      "visual_decision": "supports_prefix_plus_family_with_boundary_unresolved",
+      "basis": "Short row keeps the prefix cluster and the following oval/leaf-like sign before the final sign."
+    },
+    {
+      "artifact": "H-152",
+      "catalog_text": "+154-806-468+",
+      "visual_decision": "strong_support_for_compact_formula",
+      "basis": "Three-sign row visually compresses the candidate prefix cluster plus one 46x/47x-family successor."
+    },
+    {
+      "artifact": "H-154",
+      "catalog_text": "+154-806-467-013-817+",
+      "visual_decision": "supports_prefix_plus_family_with_boundary_unresolved",
+      "basis": "The same prefix-plus-oval/leaf family pattern appears at row start."
+    },
+    {
+      "artifact": "H-158",
+      "catalog_text": "+154-806-472-001-740-405-590+",
+      "visual_decision": "supports_prefix_plus_family_with_boundary_unresolved",
+      "basis": "The prefix cluster and successor family recur before a longer continuation."
+    },
+    {
+      "artifact": "H-160",
+      "catalog_text": "+400-154-806-468+",
+      "visual_decision": "supports_noninitial_embedding",
+      "basis": "The same 154-806 plus 46x/47x unit occurs after 400, so the construction is not limited to absolute row start."
+    },
+    {
+      "artifact": "M-371",
+      "catalog_text": "+617-142-384-032-154-806-467+",
+      "visual_decision": "supports_nonharappa_embedding_with_boundary_unresolved",
+      "basis": "The same terminal-side cluster plus 46x/47x successor appears in a non-Harappa row, but exact token boxes remain unearned."
+    }
+  ],
+  "decision_pressure": {
+    "supports": "The maxstat signal is not obviously a catalog-only artifact; multiple source-visible rows show a recurring visual construction in the expected position.",
+    "blocks_acceptance": [
+      "No blind token-box reviewer has separated 154 from 806 or boxed the 46x/47x successor family.",
+      "The construction is formulaic and may partly be a graphic compound rather than a syntactic bigram.",
+      "Most rows are Harappa rectangular seals, so a site/register template explanation remains live."
+    ],
+    "next_destructive_test": "Build a blind crop packet mixing 154-806-46x positives with 154-alone, 806-alone, and non-46x successor controls; promote only if reviewers recover the compound-plus-family contrast without catalog labels."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "lipi_h2218_h2239_variant_external_distribution",
+  "input": "data/open_prototype/lipi/metadata_filtered.csv",
+  "total_metadata_rows": 5679,
+  "rows_with_any_target_sign": 835,
+  "exact_text_counts": {
+    "+700-033+": 125,
+    "+700-034+": 109,
+    "+033-700+": 32,
+    "+034-700+": 14,
+    "+154-003+": 2,
+    "+156-003+": 31,
+    "+003-154+": 0,
+    "+003-156+": 0
+  },
+  "adjacent_pattern_counts": {
+    "700_033": 151,
+    "700_034": 116,
+    "033_700": 35,
+    "034_700": 14,
+    "154_003": 4,
+    "156_003": 36,
+    "003_154": 0,
+    "003_156": 0
+  },
+  "non_h2218_h2239_adjacent_pattern_counts": {
+    "700_033": 150,
+    "700_034": 95,
+    "033_700": 35,
+    "034_700": 14,
+    "154_003": 3,
+    "156_003": 15,
+    "003_154": 0,
+    "003_156": 0
+  },
+  "h2238_700_033_external_support": true,
+  "h2238_700_033_strict_exact_external_support": true,
+  "h2237_154_003_external_support": true,
+  "h2237_154_003_strict_exact_external_support": true,
+  "h_series_variant_rows": [
+    {
+      "cisi": "H-2238",
+      "source_row_id": "693.1",
+      "text": "+700-033+",
+      "adjacent_target_patterns": "700_033",
+      "same_cisi_texts": "+156-003+;+700-033+;+861-003+"
+    },
+    {
+      "cisi": "H-2238",
+      "source_row_id": "693.3",
+      "text": "+156-003+",
+      "adjacent_target_patterns": "156_003",
+      "same_cisi_texts": "+156-003+;+700-033+;+861-003+"
+    },
+    {
+      "cisi": "H-2237",
+      "source_row_id": "794.1",
+      "text": "+700-034+",
+      "adjacent_target_patterns": "700_034",
+      "same_cisi_texts": "+154-003+;+700-034+;+861-003+"
+    },
+    {
+      "cisi": "H-2237",
+      "source_row_id": "794.3",
+      "text": "+154-003+",
+      "adjacent_target_patterns": "154_003",
+      "same_cisi_texts": "+154-003+;+700-034+;+861-003+"
+    }
+  ],
+  "outputs": [
+    "data/open_prototype/reports/lipi_h2218_h2239_variant_external_distribution_rows.csv",
+    "data/open_prototype/reports/lipi_h2218_h2239_variant_external_distribution_contexts.csv",
+    "data/open_prototype/reports/lipi_h2218_h2239_variant_external_distribution_pairs.csv",
+    "data/open_prototype/reports/lipi_h2218_h2239_variant_external_distribution_summary.json"
+  ],
+  "interpretation_boundary": "This is external distribution evidence for variant reality and source-priority ranking. It accepts no sign reading, function, language, or translation.",
+  "accepted_decipherment_claims": 0
+}

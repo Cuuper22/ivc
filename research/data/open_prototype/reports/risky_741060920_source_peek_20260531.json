@@ -1,0 +1,24 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "candidate_id": "risky_741060920_source_peek_20260531",
+  "tier": "promoted_candidate_metadata_layer_not_source_boxed",
+  "bet_under_test": "741-060-920 is a pan-site terminal formula selected by 741-060.",
+  "source_peek_scope": "Manual visual row-level peek of available Yajnadevam trace images for six cross-site witnesses: C-16, H-89, K-4, L-28, M-113, M-247.",
+  "image_paths_checked": [
+    "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/C-16_a.jpg",
+    "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/H-89_a.jpg",
+    "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/K-4_a.jpg",
+    "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/L-28_a.jpg",
+    "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-113_a.jpg",
+    "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-247_a.jpg"
+  ],
+  "visual_result": "The sampled rows are real row-level source-visible inscriptions rather than pure table artifacts. Several show a repeated terminal-edge cluster compatible with the catalogued 741-060-920 ending. This does not independently box the three signs or prove exact token identity.",
+  "decision": "keep_promoted_metadata_candidate_require_blind_terminal_cluster_packet",
+  "why_not_accepted": [
+    "The check was visual row-level, not blind token-level segmentation.",
+    "The images come from an existing public trace cache, not a source-normalized plate packet.",
+    "No exact 741, 060, or 920 boundaries are independently boxed here."
+  ],
+  "next_destructive_test": "Build a blind sheet with 741-060-920 positives across at least five sites, matched terminal formulas that do not contain 741-060, and copied-formula controls. Ask whether the same three-unit terminal cluster is recovered without catalog labels."
+}

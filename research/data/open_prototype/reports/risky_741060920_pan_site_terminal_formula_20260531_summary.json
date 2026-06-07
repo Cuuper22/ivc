@@ -1,0 +1,76 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_741060920_pan_site_terminal_formula_20260531",
+  "tier": "promoted_candidate_metadata_layer",
+  "bet": "741-060 is a pan-site terminal stem that requires 920 as its final sign. This is a structural formula/function bet: 920 is not just common terminal filler here; it is selected by the 741-060 stem.",
+  "counts": {
+    "raw_741_060_occurrences": 31,
+    "raw_followed_by_920": 31,
+    "raw_terminal_after_920": 31,
+    "exact_text_site_type_symbol_dedup_occurrences": 30,
+    "exact_dedup_followed_by_920": 30,
+    "sites": 7,
+    "by_site": {
+      "Mohenjo-daro": 19,
+      "Harappa": 5,
+      "Dholavira": 2,
+      "Lothal": 2,
+      "Chanhu-daro": 1,
+      "Kalibangan": 1,
+      "Rakhigarhi": 1
+    },
+    "by_type": {
+      "SEAL:S": 24,
+      "TAB:I": 3,
+      "TAB:B": 2,
+      "TAG:P": 1,
+      "TAG:R": 1
+    },
+    "fisher_741060_to_920_vs_all_other_bigrams": 1.4692670982228672e-64
+  },
+  "witnesses": [
+    "C-16 Chanhu-daro SEAL:S Bull1:L +429-003-741-060-920+",
+    "H-1309 Harappa TAB:I None +156-176-741-060-920+",
+    "H-2127 Harappa TAB:I None +504-350-741-060-920+",
+    "H-2128 Harappa TAB:I None +504-350-741-060-920+",
+    "H-89 Harappa SEAL:S Elep +232-240-741-060-920+",
+    "H-175 Harappa TAB:B Anth +167-705-368-005-741-060-920+",
+    "K-4 Kalibangan SEAL:S Bull1:W +036-269-140-002-741-060-920+",
+    "L-28 Lothal SEAL:S Bull1:S +740-406-590-741-060-920+",
+    "L-217 Lothal TAB:B Mult +740-821-741-060-920+",
+    "M-1805 Mohenjo-daro SEAL:S Bull1:S +740-440-741-060-920+",
+    "M-966 Mohenjo-daro SEAL:S Bull1:J +740-042-741-060-920+",
+    "M-1757 Mohenjo-daro SEAL:S Bull1:S +504-350-240-741-060-920+",
+    "M-1790 Mohenjo-daro SEAL:S Bull1:J +592-741-060-920+",
+    "M-1902 Mohenjo-daro SEAL:S Zebu +151-390-590-741-060-920+",
+    "M-1672 Mohenjo-daro SEAL:S Bull1:W +520-220-003-741-060-920+",
+    "M-113 Mohenjo-daro SEAL:S Bull1:J +740-032-840-741-060-920+",
+    "M-247 Mohenjo-daro SEAL:S Gaur +390-017-741-060-920+",
+    "M-326 Mohenjo-daro SEAL:S Bull1:S +740-904-235-741-060-920+",
+    "M-427 Mohenjo-daro TAG:P Bull1 +740-100-415-741-060-920+",
+    "M-647 Mohenjo-daro SEAL:S Bull1:S +740-100-235-233-741-060-920+",
+    "M-755 Mohenjo-daro SEAL:S Bull1 +740-337-484-741-060-920+",
+    "M-854 Mohenjo-daro SEAL:S Bull1 +592-741-060-920+",
+    "M-870 Mohenjo-daro SEAL:S Bull1:L +740-460-741-060-920+",
+    "M-964 Mohenjo-daro SEAL:S Bull1:J +527-550-741-060-920+",
+    "M-971 Mohenjo-daro SEAL:S Bull1:J +740-416-741-060-920+",
+    "M-974 Mohenjo-daro SEAL:S Bull1:I +740-927-741-060-920+",
+    "M-1114 Mohenjo-daro SEAL:S Zebu +740-140-002-741-060-920+",
+    "M-1383 Mohenjo-daro TAG:R Bull1 +740-575-017-031-741-060-920+",
+    "Rgr-1 Rakhigarhi SEAL:S Bull1:J +740-760-335-741-060-920+",
+    "- Dholavira SEAL:S Bull1:J +368-005-741-060-920+",
+    "- Dholavira SEAL:S Bull1:W +156-142-741-060-920+"
+  ],
+  "adversarial_notes": [
+    "This emerged as the top maxstat competitor in the 154-806 successor-window scan, so it is not independent of that discovery pass.",
+    "Exact text/site/type/symbol collapse barely changes the count: 31 raw to 30 cells.",
+    "It crosses site and artifact labels, which makes a single local copy-family explanation weak but not impossible without source-level family collapse."
+  ],
+  "decision": "promote_as_metadata_layer_terminal_formula_candidate",
+  "falsifiers": [
+    "Any source-visible 741-060 not followed by 920 kills the strict stem claim.",
+    "Any source review showing 741/060/920 token boundaries are a catalog segmentation artifact demotes it.",
+    "If near-duplicate source-family collapse reduces the 30 cells to a small copy set, demote."
+  ]
+}

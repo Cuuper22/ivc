@@ -1,0 +1,65 @@
+{
+  "date": "2026-05-29",
+  "status": "join_surface_forger_control_no_claim_accepted",
+  "iterations_per_null_model": 10000,
+  "observed": {
+    "join_rows": 25,
+    "admin_or_name_join_rows": 7,
+    "distinct_join_sites": 4
+  },
+  "nulls": [
+    {
+      "null_model": "random_site_aliases_all_external_sites",
+      "iterations": 10000,
+      "means": {
+        "join_rows": 28.351,
+        "admin_or_name_join_rows": 6.3256,
+        "distinct_join_sites": 13.2584
+      },
+      "max_values": {
+        "join_rows": 59,
+        "admin_or_name_join_rows": 17,
+        "distinct_join_sites": 18
+      },
+      "null_ge_observed_share": {
+        "join_rows": 0.8151,
+        "admin_or_name_join_rows": 0.3801,
+        "distinct_join_sites": 1
+      }
+    },
+    {
+      "null_model": "random_site_aliases_mesopotamia_only",
+      "iterations": 10000,
+      "means": {
+        "join_rows": 32.8479,
+        "admin_or_name_join_rows": 7.2807,
+        "distinct_join_sites": 5.8189
+      },
+      "max_values": {
+        "join_rows": 57,
+        "admin_or_name_join_rows": 20,
+        "distinct_join_sites": 6
+      },
+      "null_ge_observed_share": {
+        "join_rows": 0.9338,
+        "admin_or_name_join_rows": 0.5246,
+        "distinct_join_sites": 1
+      }
+    },
+    {
+      "null_model": "provenance_preserving_non_meluhha_control",
+      "iterations": 1,
+      "null_ge_observed_share": {
+        "join_rows": 1,
+        "admin_or_name_join_rows": 1,
+        "distinct_join_sites": 1
+      },
+      "interpretation": "Any non-Meluhha corpus with the same cuneiform provenience distribution would reproduce the site-overlap count exactly. Site overlap is therefore infrastructure, not evidence."
+    }
+  ],
+  "files": {
+    "iterations": "data/meluhha/meluhha_join_surface_null_iterations.csv",
+    "summary": "data/meluhha/meluhha_join_surface_null_summary.json"
+  },
+  "decision": "Do not promote site-overlap rows to candidate external anchors. Add sign-sequence, object-type, date, and non-Meluhha matched controls first."
+}

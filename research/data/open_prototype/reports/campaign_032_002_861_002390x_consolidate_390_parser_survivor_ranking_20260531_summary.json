@@ -1,0 +1,26 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "390_parser_survivor_ranking",
+  "smallest_parser": "002 FRAME -> 390 STATUS/TITLE HEAD -> X terminal-classifier or linker-complement polarity",
+  "kept_candidate_pieces": [
+    "002_FRAME_LICENSE",
+    "390_STATUS_TITLE_HEAD",
+    "X_POLARITY_OPERATOR_SLOT",
+    "125_LINKER_COMPLEMENT",
+    "095_705_TERMINAL_CLASSIFIERS",
+    "000_ZERO_DAMAGED_TERMINAL"
+  ],
+  "killed_or_demoted": [
+    "705_125_GENERAL_CHAIN:killed_as_general_rule",
+    "000_AS_MERE_GLOBAL_EDGE_COPY:killed",
+    "390_COMMODITY_LABEL:demoted",
+    "LANGUAGE_FAMILY_PROMOTION_FROM_125_ORDER:blocked",
+    "590_AS_NORMAL_002_390_CLASSIFIER:demoted_to_leakage_or_mixed"
+  ],
+  "next_consolidation_tests": [
+    "source/type collapse of 002-framed 390 enrichment",
+    "source binding for H-1993/M-1825/4237.1 classifier rows",
+    "collapse 125 complement lanes by source/site"
+  ]
+}

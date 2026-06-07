@@ -1,0 +1,240 @@
+{
+  "date": "2026-05-29",
+  "packet_id": "directionality_no_overlay_packet_v2b_unique_target_controls",
+  "status": "scored_reviews_present_not_acceptance_by_itself",
+  "reviewer_count": 3,
+  "reviewer_summaries": [
+    {
+      "reviewer": "reviewer_a",
+      "review_path": "data/open_prototype/reports/effective_unicity_directionality_blind_v2b_reviews/reviewer_a.csv",
+      "target_pass": 1,
+      "target_fail": 3,
+      "target_uncertain": 0,
+      "real_negative_true_negative": 7,
+      "real_negative_hard_false_positive": 0,
+      "real_negative_uncertain_target_like": 0,
+      "real_negative_label_leak": 5,
+      "external_stress_true_negative": 1,
+      "external_stress_hard_false_positive": 2,
+      "external_stress_uncertain": 0,
+      "synthetic_leak_sentinel_pass": 2,
+      "synthetic_leak_sentinel_fail": 0,
+      "synthetic_blank_pass": 2,
+      "synthetic_blank_fail": 0,
+      "missing_rows": 0,
+      "unknown_rows": 0,
+      "duplicate_rows": 0,
+      "fixed_real_negative_denominator": 12,
+      "missing_real_negative_rows": 0,
+      "missing_target_rows": 0,
+      "missing_synthetic_leak_sentinels": 0,
+      "missing_synthetic_blank_controls": 0,
+      "yes_only_fpr_fixed_denominator": 0.0,
+      "conservative_fpr_fixed_denominator": 0.0
+    },
+    {
+      "reviewer": "reviewer_b",
+      "review_path": "data/open_prototype/reports/effective_unicity_directionality_blind_v2b_reviews/reviewer_b.csv",
+      "target_pass": 1,
+      "target_fail": 2,
+      "target_uncertain": 1,
+      "real_negative_true_negative": 7,
+      "real_negative_hard_false_positive": 0,
+      "real_negative_uncertain_target_like": 0,
+      "real_negative_label_leak": 5,
+      "external_stress_true_negative": 2,
+      "external_stress_hard_false_positive": 1,
+      "external_stress_uncertain": 0,
+      "synthetic_leak_sentinel_pass": 2,
+      "synthetic_leak_sentinel_fail": 0,
+      "synthetic_blank_pass": 2,
+      "synthetic_blank_fail": 0,
+      "missing_rows": 0,
+      "unknown_rows": 0,
+      "duplicate_rows": 0,
+      "fixed_real_negative_denominator": 12,
+      "missing_real_negative_rows": 0,
+      "missing_target_rows": 0,
+      "missing_synthetic_leak_sentinels": 0,
+      "missing_synthetic_blank_controls": 0,
+      "yes_only_fpr_fixed_denominator": 0.0,
+      "conservative_fpr_fixed_denominator": 0.0
+    },
+    {
+      "reviewer": "reviewer_c",
+      "review_path": "data/open_prototype/reports/effective_unicity_directionality_blind_v2b_reviews/reviewer_c.csv",
+      "target_pass": 0,
+      "target_fail": 2,
+      "target_uncertain": 2,
+      "real_negative_true_negative": 6,
+      "real_negative_hard_false_positive": 0,
+      "real_negative_uncertain_target_like": 2,
+      "real_negative_label_leak": 4,
+      "external_stress_true_negative": 1,
+      "external_stress_hard_false_positive": 2,
+      "external_stress_uncertain": 0,
+      "synthetic_leak_sentinel_pass": 2,
+      "synthetic_leak_sentinel_fail": 0,
+      "synthetic_blank_pass": 2,
+      "synthetic_blank_fail": 0,
+      "missing_rows": 0,
+      "unknown_rows": 0,
+      "duplicate_rows": 0,
+      "fixed_real_negative_denominator": 12,
+      "missing_real_negative_rows": 0,
+      "missing_target_rows": 0,
+      "missing_synthetic_leak_sentinels": 0,
+      "missing_synthetic_blank_controls": 0,
+      "yes_only_fpr_fixed_denominator": 0.0,
+      "conservative_fpr_fixed_denominator": 0.16666666666666666
+    }
+  ],
+  "target_counts_by_cisi": {
+    "M-1320": [
+      {
+        "reviewer": "reviewer_a",
+        "blind_id": "D2_001",
+        "review_token_count": 8,
+        "expected_token_count": 5,
+        "boxable_call": "yes",
+        "label_leak_call": "no",
+        "outcome": "target_fail"
+      },
+      {
+        "reviewer": "reviewer_b",
+        "blind_id": "D2_001",
+        "review_token_count": 8,
+        "expected_token_count": 5,
+        "boxable_call": "yes",
+        "label_leak_call": "no",
+        "outcome": "target_fail"
+      },
+      {
+        "reviewer": "reviewer_c",
+        "blind_id": "D2_001",
+        "review_token_count": 7,
+        "expected_token_count": 5,
+        "boxable_call": "yes",
+        "label_leak_call": "no",
+        "outcome": "target_fail"
+      }
+    ],
+    "M-1310": [
+      {
+        "reviewer": "reviewer_a",
+        "blind_id": "D2_004",
+        "review_token_count": 7,
+        "expected_token_count": 7,
+        "boxable_call": "yes",
+        "label_leak_call": "no",
+        "outcome": "target_count_boxable_pass"
+      },
+      {
+        "reviewer": "reviewer_b",
+        "blind_id": "D2_004",
+        "review_token_count": 7,
+        "expected_token_count": 7,
+        "boxable_call": "yes",
+        "label_leak_call": "no",
+        "outcome": "target_count_boxable_pass"
+      },
+      {
+        "reviewer": "reviewer_c",
+        "blind_id": "D2_004",
+        "review_token_count": 6,
+        "expected_token_count": 7,
+        "boxable_call": "yes",
+        "label_leak_call": "no",
+        "outcome": "target_fail"
+      }
+    ],
+    "H-654": [
+      {
+        "reviewer": "reviewer_a",
+        "blind_id": "D2_019",
+        "review_token_count": 5,
+        "expected_token_count": 4,
+        "boxable_call": "yes",
+        "label_leak_call": "no",
+        "outcome": "target_fail"
+      },
+      {
+        "reviewer": "reviewer_b",
+        "blind_id": "D2_019",
+        "review_token_count": 5,
+        "expected_token_count": 4,
+        "boxable_call": "uncertain",
+        "label_leak_call": "no",
+        "outcome": "target_uncertain"
+      },
+      {
+        "reviewer": "reviewer_c",
+        "blind_id": "D2_019",
+        "review_token_count": 5,
+        "expected_token_count": 4,
+        "boxable_call": "uncertain",
+        "label_leak_call": "no",
+        "outcome": "target_uncertain"
+      }
+    ],
+    "M-811": [
+      {
+        "reviewer": "reviewer_a",
+        "blind_id": "D2_023",
+        "review_token_count": 5,
+        "expected_token_count": 3,
+        "boxable_call": "yes",
+        "label_leak_call": "no",
+        "outcome": "target_fail"
+      },
+      {
+        "reviewer": "reviewer_b",
+        "blind_id": "D2_023",
+        "review_token_count": 6,
+        "expected_token_count": 3,
+        "boxable_call": "yes",
+        "label_leak_call": "no",
+        "outcome": "target_fail"
+      },
+      {
+        "reviewer": "reviewer_c",
+        "blind_id": "D2_023",
+        "review_token_count": 6,
+        "expected_token_count": 3,
+        "boxable_call": "uncertain",
+        "label_leak_call": "no",
+        "outcome": "target_uncertain"
+      }
+    ]
+  },
+  "target_variance_failures": {
+    "M-1320": [
+      8,
+      8,
+      7
+    ],
+    "M-1310": [
+      7,
+      7,
+      6
+    ],
+    "M-811": [
+      5,
+      6,
+      6
+    ]
+  },
+  "duplicate_review_rows": [],
+  "fixed_real_negative_denominator": 12,
+  "max_yes_only_fpr_fixed_denominator": 0.0,
+  "max_conservative_fpr_fixed_denominator": 0.16666666666666666,
+  "promotion_gate_decision": "failed_packet_gate_no_promotion",
+  "promotion_gate_failed_reasons": [
+    "real_negative_label_leak_packet_fail",
+    "real_negative_uncertain_target_like",
+    "not_all_targets_cleanly_recovered",
+    "inter_reviewer_target_count_variance_nonzero"
+  ],
+  "accepted_claims_increment": 0,
+  "interpretation_boundary": "This scorer only measures blind image boxability, target token-count stability, label leakage, and false-positive behavior under a fixed 12-real-negative denominator. It cannot assign signs, sounds, meanings, language, translation, source direction, or accepted structural status."
+}

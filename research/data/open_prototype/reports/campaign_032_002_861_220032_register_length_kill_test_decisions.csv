@@ -1,0 +1,6 @@
+test,decision,evidence,limit
+broad_register,fails_as_explanation,type/shape source-ready split is SEAL:S|square:3 vs SEAL:S|square:1 vs SEAL:S|square:1,"all source-ready rows are seal-square in this packet, so broad register cannot choose the tail"
+site,fails_as_determinant,site split is Mohenjo-daro:2;Harappa:1 vs Mohenjo-daro:1 vs Mohenjo-daro:1,"Mohenjo-daro contains bare closure, simple tail, and compound tail; Harappa only contributes one source-ready bare control here"
+total_text_length,insufficient_as_explanation,"all rows bare lengths 5,5,7,8,8 vs tailed 7,9; source-ready bare 5,5,8 vs tailed 7,9","total length partly tracks available continuation, but bare rows reach length 7/8 while tailed rows are 7/9; it is not a clean selector"
+fine_icon_symbol,not_testable_as_general_explanation,"fine symbol labels differ across the five image rows: Bull/Bull1/Bull1:W bare, Gaur for 603, Bull1:S for 255-416",single rows per fine icon cannot distinguish icon function from row accident; broad Mohenjo seal-square already fails as determinant
+terminal_space,not_closed,measured layout rows are 2 total: 0 bare and 2 tailed,"bare controls were visually scored but not quantified with comparable line-width/tail-space metrics, so this remains the next recut target"

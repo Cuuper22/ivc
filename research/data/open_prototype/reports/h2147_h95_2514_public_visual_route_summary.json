@@ -1,0 +1,28 @@
+{
+  "date": "2026-05-26",
+  "question": "Does Meadow/Kenoyer 1997 make H-2147 / H95-2514 source-visible, and does it decide local 110 versus Parpola sign no. 41?",
+  "source": {
+    "public_url": "https://www.harappa.com/sites/default/files/pdf/Kenoyer1997_Excavations%20at%20Harappa%201994-1995%20New%20Perspective.pdf",
+    "local_pdf": "tmp/h2147_source_route/kenoyer_meadow_1997_harappa.pdf",
+    "sha256": "4CE604F7ED11D247A6AB88E49DA946D00CDC1B2787B3DD2C58B327C95A7A51D3"
+  },
+  "result": "H-2147 is public_visual_route_no_local_mapping. Figure 10 item 17 is visible and the continuation table maps 10.17 to H95-2514 / 4461-04 / two-sided fired steatite tablet / Trench 11 dump. A Figure 10 / local-figure accession concordance reconciles object identity: 10.17 -> H95-2514 -> H95-2514Figure 27.14. Later raw-page recropping shows the candidate panel is multi-component, not a clean single-sign panel. The image still does not assign local row numbers or local numeric sign IDs, so no local 110 or 415 crosswalk is accepted.",
+  "stored_visual_artifacts": [
+    "tmp/h2147_source_route/p-20.png",
+    "tmp/h2147_source_route/p-21.png",
+    "tmp/h2147_source_route/h2147_h95_2514_fig10_item17_context_crop.png",
+    "tmp/h2147_source_route/h2147_h95_2514_fig10_item17_crop.png",
+    "tmp/h2147_source_route/h2147_h95_2514_fig10_17_table_row_full_crop.png",
+    "tmp/h940_higher_res_route/pdfimages_h2147_p20/p20img-000.png",
+    "tmp/h940_higher_res_route/derived/h2147_fig10_item17_raw_fullrow_recrop.png",
+    "tmp/h940_higher_res_route/derived/h2147_item17_recrop_manifest.csv"
+  ],
+  "accession_concordance": "data/open_prototype/reports/h2147_fig10_fig27_accession_concordance.csv",
+  "accepted_claims": {
+    "translations": 0,
+    "phonetic_values": 0,
+    "sign_meanings": 0,
+    "stable_language_identification": 0
+  },
+  "next_gate": "Obtain source-side labels or transcription tying visible H-2147 components/panels to local rows 673.1 and 673.2; do not treat the public Figure 10.17 panel as a clean single-sign 110 witness."
+}

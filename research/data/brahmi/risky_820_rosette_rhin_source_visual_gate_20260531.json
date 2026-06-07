@@ -1,0 +1,29 @@
+{
+  "run_date": "2026-05-31T14:21:00-07:00",
+  "tier": "candidate",
+  "vector": "V3 backward shape/descent + V4 context-to-meaning",
+  "risky_bet": "The sign currently numbered 820 in the rhinoceros terminal packet is not the forked M-381 crop implicated by the failed Brahmi ra/tha route. In source-visible rhinoceros rows, it is a wheel/rosette closure sign. Therefore any backward-descent search for 820 should target rosette/wheel morphology and context, not Brahmi ra/tha.",
+  "source_page": {
+    "local_path": "tmp/820_rhin_source_pages/Pakistan_n160_w2000.jpg",
+    "public_url": "https://archive.org/download/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan/Corpus%20of%20Indus%20Seals%20and%20Inscriptions.%20Collections%20in%20Pakistan/page/n160_w2000.jpg",
+    "page_header_visible": "MOHENJO-DARO 1136-1140 SEALS rhinoceros",
+    "ocr_route": "tmp/cisi_xml/Corpus of Indus Seals and Inscriptions. Collections in Pakistan_djvu.xml reports M-1139 labels on Pakistan_0160.djvu; the same downloaded page visibly contains M-1136, M-1137, M-1138, M-1139, and M-1140 panels."
+  },
+  "observed_visual_result": {
+    "M-1136": "source page shows rhinoceros panel and right-edge wheel/rosette sign corresponding to terminal 820 in ]740-717-240-002-820+",
+    "M-1137": "source page shows M-1137 A/a in the rhinoceros page group and a visible wheel/rosette sign corresponding to metadata-None +740-904-002-820+",
+    "M-1138": "source page shows rhinoceros/trough panel and wheel/rosette sign corresponding to +740-585-017-002-820+",
+    "M-1139": "source page shows rhinoceros panel and wheel/rosette sign corresponding to +740-416-621-002-820+"
+  },
+  "relation_to_existing_v3_forger": {
+    "old_brahmi_820_result": "data/brahmi/brahmi_real_token_impostor_forger_v3.csv gives 820->ra/tha temptations, but both fail the real-token impostor gate and are based on M-381-only token material.",
+    "interpretation": "The rosette source page makes the M-381 fork/vertical-bar token route a bad basis for 820 descent. The live positive V3 bet is rosette continuity, not phonetic ra/tha."
+  },
+  "false_positive_or_hostile_status": {
+    "source_status": "candidate source-visible page-level check, not accepted token boxing",
+    "reason_not_promoted": "The page gives strong visual identity and icon context, but no blind token boxes or independent rosette-shape null against 817/861/other wheel-like signs have been run yet."
+  },
+  "falsifier": "If token boxing on the downloaded page shows the rosette is not the terminal sign in one or more of M-1136/M-1137/M-1138/M-1139, or if many non-820 terminal signs share the same rosette morphology under blind shape comparison, demote this bet.",
+  "next_prediction": "Independent 820 rows outside the rhinoceros packet, especially M-375/M-381/source-visible 032-002-820 rows, should reveal whether rosette morphology persists or whether the numeric 820 pool is contaminated by multiple shapes.",
+  "non_claim": "No phonetic value, translation, language identification, or accepted descendant line is claimed."
+}

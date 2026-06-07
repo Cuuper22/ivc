@@ -1,0 +1,23 @@
+feature,value,target_rows,control_rows,target_cisis,control_cisis,contrast_status
+shape,cuboid-convex,2,1,M-376;M-391,M-355,hostile_shared_with_controls
+shape,rectangular,0,4,,M-1954;M-1267;M-1273;M-1973,control_only
+text_length,12,1,1,M-391,M-1954,hostile_shared_with_controls
+text_length,13,0,1,,M-355,control_only
+text_length,5,0,1,,M-1273,control_only
+text_length,7,1,2,M-376,M-1267;M-1973,hostile_shared_with_controls
+prefix_before_002_861_last1,055,0,1,,M-1273,control_only
+prefix_before_002_861_last1,175,0,1,,M-1267,control_only
+prefix_before_002_861_last1,176,1,0,M-376,,target_specific_singleton_or_pair
+prefix_before_002_861_last1,235,0,1,,M-355,control_only
+prefix_before_002_861_last1,550,0,1,,M-1973,control_only
+prefix_before_002_861_last1,798,0,1,,M-1954,control_only
+prefix_before_002_861_last1,805,1,0,M-391,,target_specific_singleton_or_pair
+prefix_before_002_861_last2,100 176,1,0,M-376,,target_specific_singleton_or_pair
+prefix_before_002_861_last2,231 235,0,1,,M-355,control_only
+prefix_before_002_861_last2,233 550,0,1,,M-1973,control_only
+prefix_before_002_861_last2,233 805,1,0,M-391,,target_specific_singleton_or_pair
+prefix_before_002_861_last2,415 798,0,1,,M-1954,control_only
+prefix_before_002_861_last2,720 175,0,1,,M-1267,control_only
+prefix_before_002_861_last2,740 055,0,1,,M-1273,control_only
+source_status,source_pending_target,0,2,,M-1954;M-1973,control_only
+source_status,source_visible,2,3,M-376;M-391,M-355;M-1267;M-1273,hostile_shared_with_controls

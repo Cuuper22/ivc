@@ -1,0 +1,34 @@
+{
+  "date": "2026-05-29",
+  "seed": 603240863,
+  "iterations": 20000,
+  "x_family_cells": 81,
+  "post861_tail_family_cells": 25,
+  "observed_bridge_candidates": 1,
+  "observed_top_sign": "603",
+  "observed_max_score": -8,
+  "observed_any_shape_pass": false,
+  "decision": {
+    "status": "no_family_cell_bridge_cluster_promoted_from_x240_post861_scan",
+    "interpretation": [
+      "At family-cell level the observed nonbackground X-before-240/post-002-861 intersection has no multi-cell bridge cluster passing the shape gate.",
+      "`603` remains the visible intersection sign, but its X-before-240 side is one family cell, so it fails the minimum recurrence rule before semantics or value can be discussed.",
+      "The max-scan null is the relevant decision adversary because the target was found by searching for bridge-like behavior across signs.",
+      "The next decipherment move is to pivot away from 603-only work unless source acquisition creates graphic identity or a second independent 603 family cell."
+    ],
+    "not_accepted": [
+      "603 value",
+      "any X-before-240 bridge value",
+      "phonetics",
+      "language identity",
+      "translation",
+      "accepted graphic identity"
+    ]
+  },
+  "within_side_p_maxT": 1.0,
+  "within_side_p_any_shape_pass": 0.0,
+  "identity_remap_p_maxT": 1.0,
+  "identity_remap_p_any_shape_pass": 0.07135,
+  "identity_remap_target_sign_universe": 27,
+  "identity_remap_tail_identity_groups": 22
+}

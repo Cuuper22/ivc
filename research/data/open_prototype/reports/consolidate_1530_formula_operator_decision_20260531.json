@@ -1,0 +1,114 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "decision_id": "consolidate_1530_formula_operator_decision_20260531",
+  "smallest_model": {
+    "model": "The current strongest metadata-layer frontier is a formula/operator grammar, not phonetic reading: (1) terminal stem selection, where fixed stems select a final complement; (2) construction-sensitive series selection, where prefixes before 806 switch 806 from boundary/closure behavior into a nonterminal series operator; (3) a separate external-route cap lead centered on 091.",
+    "not_claimed": [
+      "No sound value.",
+      "No translation.",
+      "No language identification.",
+      "No accepted sign meaning."
+    ]
+  },
+  "ranked_survivors": [
+    {
+      "rank": 1,
+      "candidate": "060-920 terminal cap, with 741-060 as the dominant feeder",
+      "tier_after_consolidation": "promoted_candidate_metadata_and_visual_blind_packet",
+      "evidence": "741-060 is 31/31 raw and 30/30 exact-collapsed followed by terminal 920 across 7 sites. Consolidation found a broader cap: 060-920 is 53 raw / 52 exact-collapsed, terminal in 52 raw / 51 exact-collapsed. Predecessor 741 accounts for 30 exact-collapsed 060-920 cells, the largest feeder by far.",
+      "main_adversary": "The over-specific claim '741-060 directly selects 920' is too narrow at the metadata layer; 060-920 is broader. A second blind packet with non-741 060-920 positives directly supports the broader visual cap, but exact token boundaries are still not independently boxed sign-by-sign.",
+      "next_test": "Blind terminal-cluster packet across C-16/H-89/K-4/L-28/M-113/M-247 plus controls, scored both for full 741-060-920 and broader 060-920 recognition.",
+      "packet_built": "tmp/blind_741060920_terminal_cluster_20260531/blind_741060920_terminal_cluster_sheet.jpg",
+      "blind_sidecar_result": "First packet: 5 of 6 741-060-920 target panels were called same-cluster at medium-low or better, but its single non-741 060-920 diagnostic was called a control. Second packet: all 6 non-741 060-920 positives were called cap-like, while 5 of 6 060-non920 controls were cleanly rejected and one was only a low-confidence possible false positive.",
+      "broad_cap_packet_built": "tmp/blind_060920_terminal_cap_20260531/blind_060920_terminal_cap_sheet.jpg",
+      "consolidated_decision": "Promote broad 060-920 as the strongest current visual+metadata structural candidate; keep 741-060 as dominant feeder/subconstruction."
+    },
+    {
+      "rank": 2,
+      "candidate": "154/158 + 806 -> 465..475 series operator, with 155/100 as held-out extension members",
+      "tier_after_consolidation": "promoted_candidate_metadata_layer",
+      "evidence": "Harappa-trained 154/158 rule: 23/23 hits versus 0/23 controls. Non-Harappa holdout: 6/6 hits versus 3/58 controls, p = 0.0000011203829020606104. Exact-collapse holdout remains 6/6 versus 3/44, p = 0.000005286110744019978. Expanded 154/155/158/100 family: 32/32 raw and 26/26 exact-collapsed hits; non-Harappa exact-collapse 9/9 versus 0/41, p = 3.9913249350800554e-10.",
+      "main_adversary": "Source-token boxing and near-family collapse can still turn this into catalog or copy-family structure. First blind sidecar read recovered only two clean target panels and missed the non-Harappa/source-holdout positives, so visual promotion is blocked.",
+      "next_test": "Blind boxes for prefix-806-successor rows, especially non-Harappa M-371/M-470/M-1419 plus available 155/100 rows.",
+      "packet_built": "tmp/blind_806_prefix_series_20260531/blind_806_prefix_series_sheet.jpg",
+      "blind_sidecar_result": "High-confidence hits BS007/BS010 were true targets and BS011 was a possible true target, but BS002/BS006/BS008 targets were missed and BS001 was a possible false hit. Keep metadata promotion only."
+    },
+    {
+      "rank": 3,
+      "candidate": "740-H-590 register family, strongest H = 390, weaker siblings 407 and 405",
+      "tier_after_consolidation": "candidate",
+      "evidence": "740-390 -> 590 has 40/41 raw, 36/37 exact-collapse hits across 7 sites including Kish and Gonur Depe; 740-407 -> 590 is 16/16 raw but 6 exact-collapse cells; 740-405 -> 590 is 21/22 raw, 15/16 exact-collapse cells.",
+      "main_adversary": "One terminal 740-390 exception and one terminal 740-405 exception mean the family is probabilistic unless source review shows truncation/damage. The 407 branch is copy-pressured.",
+      "next_test": "Source-check M-1669 (+740-390+) and C-87 (+740-405+), then compare H=390/407/405 contexts rather than treating them as one sign value."
+    },
+    {
+      "rank": 4,
+      "candidate": "091 external/circular route cap",
+      "tier_after_consolidation": "candidate_context_lead_demoted_below_formula_results",
+      "evidence": "091 occurs in 19 complete rows, terminal in 18; exact-collapse 12 cells. External SEAL:C has 5/10 with 091 versus broad background, p = 5.190932115974098e-10; Persian Gulf SEAL:C has 4/7, p = 1.774272677585312e-8. Sidecar pair stress says {090,091} ranks #1 under broad external-circular pair tests after multiple-comparison correction.",
+      "main_adversary": "Same-type controls demote the broad route claim: external/corridor circular and external circular sets are effectively the same foreground rows, and SEAL:C-vs-SEAL:C pair tests do not survive Bonferroni. Internal Kalibangan tag formula and sparse Gulf sample mean this may be a route/formula cap, not a general external sign meaning.",
+      "next_test": "Collapse Gulf circular 091 rows by source family and compare against Gulf circular non-091 rows with same icon/shape; rerun only literal shape=circular and same-type SEAL:C controls."
+    },
+    {
+      "rank": 5,
+      "candidate": "690-435 -> 255 stem",
+      "tier_after_consolidation": "candidate_low_priority",
+      "evidence": "29/30 raw, 25/26 exact-collapse hits across 3 sites.",
+      "main_adversary": "Weaker site spread and one exception; defer behind the top three.",
+      "next_test": "Only source-check after the top three survive."
+    }
+  ],
+  "demoted_or_killed": [
+    {
+      "candidate": "752-615 -> 503 broad formula",
+      "decision": "killed_as_general_structural_candidate",
+      "reason": "29/29 raw collapses to 2 exact cells, one site, one local Mohenjo-daro TAB:C formula family."
+    },
+    {
+      "candidate": "465 as terminal cap for 158-806 phyt lane",
+      "decision": "killed_as_promoted_candidate",
+      "reason": "Raw 5/5 terminal and 5/5 Phyt/TAB:B, but exact text/site/type/symbol collapse leaves one family cell; keep only as a source-family lead. Sidecar stress also demotes broader 806-suffix semantics: 806-467 is not plant-heavy after exact collapse, and 806-468 aniconic/no-symbol behavior is largely type-driven."
+    },
+    {
+      "candidate": "400 primary-face heading",
+      "decision": "killed_or_demoted",
+      "reason": "Earlier side-shuffle null p_ge = 0.175."
+    },
+    {
+      "candidate": "400 companion 700/032 content-face predictor",
+      "decision": "killed_or_demoted",
+      "reason": "Companion tests did not survive; p values around 0.20-0.25 except a weak any-700 check not strong enough."
+    }
+  ],
+  "contradictions_forced": [
+    "806 cannot be modeled as a single boundary/closure sign. Prefix context changes its role.",
+    "Raw-perfect successor formulas are not enough: 752-615-503 shows why exact/source-family collapse is mandatory.",
+    "The 740-H-590 family cannot be called mandatory until the 740-390 and 740-405 terminal exceptions are source-adjudicated.",
+    "Ranking is metric-dependent: strict exception-free grammar favors the 060/920 and 806 candidates, while raw support and site spread make 740-H-590 competitive or stronger."
+  ],
+  "strongest_null_attack_from_sidecar": {
+    "summary": "Use a row-preserving maxstat over complete local rows after exact text/site/type/symbol collapse. Let every adjacent bigram choose its best exact successor or best contiguous successor window; correct over stems/windows. Add site/type/exact-cell penalties and complete-looking exception penalties. For 806, add a subset-selection null over predecessor sets before 806 and require non-Harappa holdout survival. For 740-H, correct over all 740-X heads and over the post-hoc merged head set {390,407,405}.",
+    "ranking_after_attack": "Conservative priority survives as 1) 741-060-920 / 060-920 cap, 2) 806 prefix-series operator, 3) 740-H-590. 740-H-590 challenges rank 2 under raw support/spread but loses under strict exception-free criteria."
+  },
+  "local_maxstat_tournament": {
+    "report": "data/open_prototype/reports/consolidate_formula_operator_maxstat_20260531_summary.json",
+    "bigram_ranking": "data/open_prototype/reports/consolidate_formula_operator_maxstat_20260531_bigram_ranking.csv",
+    "prev806_ranking": "data/open_prototype/reports/consolidate_formula_operator_maxstat_20260531_prev806_window_ranking.csv",
+    "key_results": [
+      "Exact-collapsed adjacent-bigram tournament has 3270 competing bigrams over 8119 cells.",
+      "060-920 -> END ranks 4 by best-hit support: 51/52 exact cells, 9 sites, 7 types.",
+      "740-390 -> 590 ranks 5: 36/37 exact cells, 7 sites, 4 types, but has a complete-looking exception.",
+      "741-060 -> 920 ranks 6: 30/30 exact cells, 7 sites, 5 types, and remains exception-free.",
+      "Successor-shuffle null for bigrams with at least 30 exact cells had p_ge_30_of_30 = 0 across 5000 iterations.",
+      "Prev-before-806 window tournament ranks 154 first and 158 second: 154 has 14/14 exact cells in window 464..474; 158 has 9/9 in 465..475."
+    ]
+  },
+  "next_expand_predictions": [
+    "Any new source-visible 154-806 or 158-806 row should be followed by a 465..475 sign. A clean counterexample kills or narrows the series-operator claim.",
+    "Any clean non-prefix predecessor before 806 followed by 465..475 kills the exclusivity version of the 806 claim.",
+    "Any clean 741-060 row not followed by terminal 920 kills the strict terminal-stem claim.",
+    "If M-1669 +740-390+ is complete and not truncated, 740-390 becomes a high-probability stem rather than an obligatory stem.",
+    "If external/circular 091 rows collapse to one source family or match non-091 circular rows structurally, 091 demotes to sparse route-context lead."
+  ]
+}

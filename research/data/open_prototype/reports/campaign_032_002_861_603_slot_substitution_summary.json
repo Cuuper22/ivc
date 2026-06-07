@@ -1,0 +1,70 @@
+{
+  "date": "2026-05-29",
+  "strict_rows_scanned": 4011,
+  "slot_pattern": "740-X-240-060-692",
+  "slot_rows": 7,
+  "slot_x_counts": {
+    "603": 3,
+    "642": 2,
+    "636": 2
+  },
+  "slot_register_counts": "Harappa|TAB:B|None|rectangular:5;Harappa|TAB:B|None|fish:1;Harappa|TAB:I|Bult|prism:1",
+  "post_002_861_rows": 144,
+  "post_tail_initial_counts_for_slot_signs": {
+    "603": 3,
+    "636": 0,
+    "642": 0
+  },
+  "matrix_rows": [
+    {
+      "sign": "603",
+      "slot_740_x_240_060_692_rows": 3,
+      "slot_exact_text_families": 1,
+      "slot_register_cells": 1,
+      "post_002_861_tail_initial_rows": 3,
+      "post_002_861_tail_full_families": 1,
+      "slot_examples": [
+        "H-1138 +740-603-240-060-692+",
+        "H-1846 +740-603-240-060-692+",
+        "H-1137 +740-603-240-060-692+"
+      ],
+      "post_examples": [
+        "M-240 +520-240-220-032-002-861-603+",
+        "M-714 +740-585-017-033-705-233-798-803-002-861-603+",
+        "M-1273 +740-055-002-861-603+"
+      ]
+    },
+    {
+      "sign": "636",
+      "slot_740_x_240_060_692_rows": 2,
+      "slot_exact_text_families": 1,
+      "slot_register_cells": 2,
+      "post_002_861_tail_initial_rows": 0,
+      "post_002_861_tail_full_families": 0,
+      "slot_examples": [
+        "H-360 +740-636-240-060-692+",
+        "H-823 +740-636-240-060-692+"
+      ],
+      "post_examples": []
+    },
+    {
+      "sign": "642",
+      "slot_740_x_240_060_692_rows": 2,
+      "slot_exact_text_families": 1,
+      "slot_register_cells": 2,
+      "post_002_861_tail_initial_rows": 0,
+      "post_002_861_tail_full_families": 0,
+      "slot_examples": [
+        "H-1845 +740-642-240-060-692+",
+        "H-237 +740-642-240-060-692+"
+      ],
+      "post_examples": []
+    }
+  ],
+  "decision": "603_cross_slot_bridge_survives_but_is_under_template_attack",
+  "decision_basis": [
+    "603 appears in both the post-002-861 terminal tail slot and the Harappa 740-X-240-060-692 internal slot.",
+    "Other observed X-slot values should be tested as controls; if they do not occur post-861, 603 is uniquely cross-slot in this small layer.",
+    "The Harappa slot itself is still a copied/formula-family risk until source-normalized."
+  ]
+}

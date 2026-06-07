@@ -1,0 +1,5 @@
+field,testable,bare_values,tailed_values,bare_min,bare_max,tailed_min,tailed_max,range_overlap,exact_value_overlap
+text_length_all_rows,True,"5,5,7,8,8","7,9",5,8,7,9,True,True
+text_length_source_ready,True,"5,5,8","7,9",5,8,7,9,True,False
+prefix_len_all_rows,True,"3,3,5,6,6","4,5",3,6,4,5,True,True
+prefix_len_source_ready,True,"3,3,6","4,5",3,6,4,5,True,False

@@ -1,0 +1,57 @@
+scenario,prev_before_002,strict_rows,strict_branches,strict_terminal_classes,strict_objects,gate
+baseline_current_strict_core,032,1,692:1,terminal:1,M-70:032->692-><END>:terminal,strict_singleton
+baseline_current_strict_core,142,1,095:1,terminal:1,M-71:142->095-><END>:terminal,strict_singleton
+baseline_current_strict_core,235,1,125:1,continuing:1,M-735:235->125->195:continuing,strict_singleton
+baseline_current_strict_core,484,1,125:1,continuing:1,M-119:484->125->632 032 900 563:continuing,strict_singleton
+upgrade_h1993_only,004,1,095:1,terminal:1,H-1993:004->095-><END>:terminal,strict_singleton
+upgrade_h1993_only,032,1,692:1,terminal:1,M-70:032->692-><END>:terminal,strict_singleton
+upgrade_h1993_only,142,1,095:1,terminal:1,M-71:142->095-><END>:terminal,strict_singleton
+upgrade_h1993_only,235,1,125:1,continuing:1,M-735:235->125->195:continuing,strict_singleton
+upgrade_h1993_only,484,1,125:1,continuing:1,M-119:484->125->632 032 900 563:continuing,strict_singleton
+upgrade_sktd1_only,004,1,125:1,continuing:1,Sktd-1:004->125->820:continuing,strict_singleton
+upgrade_sktd1_only,032,1,692:1,terminal:1,M-70:032->692-><END>:terminal,strict_singleton
+upgrade_sktd1_only,142,1,095:1,terminal:1,M-71:142->095-><END>:terminal,strict_singleton
+upgrade_sktd1_only,235,1,125:1,continuing:1,M-735:235->125->195:continuing,strict_singleton
+upgrade_sktd1_only,484,1,125:1,continuing:1,M-119:484->125->632 032 900 563:continuing,strict_singleton
+upgrade_h1993_and_sktd1,004,2,095:1; 125:1,continuing:1; terminal:1,H-1993:004->095-><END>:terminal; Sktd-1:004->125->820:continuing,strict_matched_predecessor_branch_split
+upgrade_h1993_and_sktd1,032,1,692:1,terminal:1,M-70:032->692-><END>:terminal,strict_singleton
+upgrade_h1993_and_sktd1,142,1,095:1,terminal:1,M-71:142->095-><END>:terminal,strict_singleton
+upgrade_h1993_and_sktd1,235,1,125:1,continuing:1,M-735:235->125->195:continuing,strict_singleton
+upgrade_h1993_and_sktd1,484,1,125:1,continuing:1,M-119:484->125->632 032 900 563:continuing,strict_singleton
+upgrade_3335_1,032,2,590:1; 692:1,continuing:1; terminal:1,M-70:032->692-><END>:terminal; -:3335.1:032->590->032:continuing,strict_matched_predecessor_branch_split
+upgrade_3335_1,142,1,095:1,terminal:1,M-71:142->095-><END>:terminal,strict_singleton
+upgrade_3335_1,235,1,125:1,continuing:1,M-735:235->125->195:continuing,strict_singleton
+upgrade_3335_1,484,1,125:1,continuing:1,M-119:484->125->632 032 900 563:continuing,strict_singleton
+upgrade_m1825_only,031,1,705:1,terminal:1,M-1825:031->705-><END>:terminal,strict_singleton
+upgrade_m1825_only,032,1,692:1,terminal:1,M-70:032->692-><END>:terminal,strict_singleton
+upgrade_m1825_only,142,1,095:1,terminal:1,M-71:142->095-><END>:terminal,strict_singleton
+upgrade_m1825_only,235,1,125:1,continuing:1,M-735:235->125->195:continuing,strict_singleton
+upgrade_m1825_only,484,1,125:1,continuing:1,M-119:484->125->632 032 900 563:continuing,strict_singleton
+upgrade_dholavira_4237_1_only,032,1,692:1,terminal:1,M-70:032->692-><END>:terminal,strict_singleton
+upgrade_dholavira_4237_1_only,142,1,095:1,terminal:1,M-71:142->095-><END>:terminal,strict_singleton
+upgrade_dholavira_4237_1_only,235,1,125:1,continuing:1,M-735:235->125->195:continuing,strict_singleton
+upgrade_dholavira_4237_1_only,388,1,705:1,terminal:1,-:4237.1:388->705-><END>:terminal,strict_singleton
+upgrade_dholavira_4237_1_only,484,1,125:1,continuing:1,M-119:484->125->632 032 900 563:continuing,strict_singleton
+upgrade_m1825_and_dholavira_705_pair,031,1,705:1,terminal:1,M-1825:031->705-><END>:terminal,strict_singleton
+upgrade_m1825_and_dholavira_705_pair,032,1,692:1,terminal:1,M-70:032->692-><END>:terminal,strict_singleton
+upgrade_m1825_and_dholavira_705_pair,142,1,095:1,terminal:1,M-71:142->095-><END>:terminal,strict_singleton
+upgrade_m1825_and_dholavira_705_pair,235,1,125:1,continuing:1,M-735:235->125->195:continuing,strict_singleton
+upgrade_m1825_and_dholavira_705_pair,388,1,705:1,terminal:1,-:4237.1:388->705-><END>:terminal,strict_singleton
+upgrade_m1825_and_dholavira_705_pair,484,1,125:1,continuing:1,M-119:484->125->632 032 900 563:continuing,strict_singleton
+upgrade_m38,032,1,692:1,terminal:1,M-70:032->692-><END>:terminal,strict_singleton
+upgrade_m38,142,1,095:1,terminal:1,M-71:142->095-><END>:terminal,strict_singleton
+upgrade_m38,235,2,125:2,continuing:2,M-38:235->125->632 032:continuing; M-735:235->125->195:continuing,strict_same_branch_or_tail_split
+upgrade_m38,484,1,125:1,continuing:1,M-119:484->125->632 032 900 563:continuing,strict_singleton
+upgrade_h773,032,1,692:1,terminal:1,M-70:032->692-><END>:terminal,strict_singleton
+upgrade_h773,142,1,095:1,terminal:1,M-71:142->095-><END>:terminal,strict_singleton
+upgrade_h773,235,1,125:1,continuing:1,M-735:235->125->195:continuing,strict_singleton
+upgrade_h773,484,1,125:1,continuing:1,M-119:484->125->632 032 900 563:continuing,strict_singleton
+upgrade_h773,803,1,530:1,continuing:1,H-773:803->530->741:continuing,strict_singleton
+upgrade_all_named_blockers,004,2,095:1; 125:1,continuing:1; terminal:1,H-1993:004->095-><END>:terminal; Sktd-1:004->125->820:continuing,strict_matched_predecessor_branch_split
+upgrade_all_named_blockers,031,1,705:1,terminal:1,M-1825:031->705-><END>:terminal,strict_singleton
+upgrade_all_named_blockers,032,2,590:1; 692:1,continuing:1; terminal:1,M-70:032->692-><END>:terminal; -:3335.1:032->590->032:continuing,strict_matched_predecessor_branch_split
+upgrade_all_named_blockers,142,1,095:1,terminal:1,M-71:142->095-><END>:terminal,strict_singleton
+upgrade_all_named_blockers,235,2,125:2,continuing:2,M-38:235->125->632 032:continuing; M-735:235->125->195:continuing,strict_same_branch_or_tail_split
+upgrade_all_named_blockers,388,1,705:1,terminal:1,-:4237.1:388->705-><END>:terminal,strict_singleton
+upgrade_all_named_blockers,484,1,125:1,continuing:1,M-119:484->125->632 032 900 563:continuing,strict_singleton
+upgrade_all_named_blockers,803,1,530:1,continuing:1,H-773:803->530->741:continuing,strict_singleton

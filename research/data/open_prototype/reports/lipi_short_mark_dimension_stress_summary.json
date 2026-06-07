@@ -1,0 +1,300 @@
+{
+  "generated_at_local": "2026-05-25T06:50:11.758Z",
+  "experiment": "Lipi short-mark dimension stress audit",
+  "scope": "all_short_mark_artifacts",
+  "source": "data/open_prototype/lipi/metadata_filtered.csv",
+  "source_status": "T3 filtered lipi planning layer; claim columns removed; image/plate validation pending",
+  "artifact_level_design": "one row per CISI artifact with at least one clean multi-side short-mark row",
+  "artifact_rows": 436,
+  "artifacts_with_horizontal": 398,
+  "artifacts_with_vertical": 386,
+  "artifacts_with_thickness": 117,
+  "target_tokens": [
+    "003",
+    "032",
+    "033",
+    "034",
+    "156",
+    "400",
+    "520",
+    "690",
+    "700",
+    "740",
+    "861"
+  ],
+  "token_tests": 41,
+  "permutation_iterations_per_test": 5000,
+  "permutation_block": "type|site|shape|material|sides",
+  "corrected_flags_bh_05": [
+    {
+      "token": "003",
+      "dimension": "horizontal",
+      "permutation_p_ge_abs_diff": 0.0004,
+      "bh_q": 0.002343,
+      "present_artifacts": 29,
+      "absent_artifacts": 369,
+      "mean_present": 11.382759,
+      "mean_absent": 17.134688
+    },
+    {
+      "token": "003",
+      "dimension": "area",
+      "permutation_p_ge_abs_diff": 0.0002,
+      "bh_q": 0.001367,
+      "present_artifacts": 29,
+      "absent_artifacts": 347,
+      "mean_present": 81.448966,
+      "mean_absent": 248.637349
+    },
+    {
+      "token": "003",
+      "dimension": "aspect",
+      "permutation_p_ge_abs_diff": 0.003399,
+      "bh_q": 0.013414,
+      "present_artifacts": 29,
+      "absent_artifacts": 347,
+      "mean_present": 1.60814,
+      "mean_absent": 1.894241
+    },
+    {
+      "token": "034",
+      "dimension": "horizontal",
+      "permutation_p_ge_abs_diff": 0.004799,
+      "bh_q": 0.016397,
+      "present_artifacts": 113,
+      "absent_artifacts": 285,
+      "mean_present": 14.164602,
+      "mean_absent": 17.727018
+    },
+    {
+      "token": "034",
+      "dimension": "vertical",
+      "permutation_p_ge_abs_diff": 0.003599,
+      "bh_q": 0.013414,
+      "present_artifacts": 113,
+      "absent_artifacts": 273,
+      "mean_present": 7.630973,
+      "mean_absent": 10.369231
+    },
+    {
+      "token": "034",
+      "dimension": "area",
+      "permutation_p_ge_abs_diff": 0.0018,
+      "bh_q": 0.009225,
+      "present_artifacts": 112,
+      "absent_artifacts": 264,
+      "mean_present": 109.765,
+      "mean_absent": 289.1875
+    },
+    {
+      "token": "156",
+      "dimension": "horizontal",
+      "permutation_p_ge_abs_diff": 0.0002,
+      "bh_q": 0.001367,
+      "present_artifacts": 27,
+      "absent_artifacts": 371,
+      "mean_present": 12.492593,
+      "mean_absent": 17.022911
+    },
+    {
+      "token": "156",
+      "dimension": "vertical",
+      "permutation_p_ge_abs_diff": 0.0002,
+      "bh_q": 0.001367,
+      "present_artifacts": 26,
+      "absent_artifacts": 360,
+      "mean_present": 7.273077,
+      "mean_absent": 9.733333
+    },
+    {
+      "token": "156",
+      "dimension": "area",
+      "permutation_p_ge_abs_diff": 0.0002,
+      "bh_q": 0.001367,
+      "present_artifacts": 26,
+      "absent_artifacts": 350,
+      "mean_present": 86.110769,
+      "mean_absent": 246.858
+    },
+    {
+      "token": "156",
+      "dimension": "aspect",
+      "permutation_p_ge_abs_diff": 0.009798,
+      "bh_q": 0.030901,
+      "present_artifacts": 26,
+      "absent_artifacts": 350,
+      "mean_present": 1.608312,
+      "mean_absent": 1.891776
+    },
+    {
+      "token": "740",
+      "dimension": "aspect",
+      "permutation_p_ge_abs_diff": 0.016197,
+      "bh_q": 0.047434,
+      "present_artifacts": 10,
+      "absent_artifacts": 366,
+      "mean_present": 1.557167,
+      "mean_absent": 1.880782
+    },
+    {
+      "token": "861",
+      "dimension": "horizontal",
+      "permutation_p_ge_abs_diff": 0.0002,
+      "bh_q": 0.001367,
+      "present_artifacts": 30,
+      "absent_artifacts": 368,
+      "mean_present": 11.97,
+      "mean_absent": 17.102446
+    },
+    {
+      "token": "861",
+      "dimension": "area",
+      "permutation_p_ge_abs_diff": 0.0002,
+      "bh_q": 0.001367,
+      "present_artifacts": 30,
+      "absent_artifacts": 346,
+      "mean_present": 105.800667,
+      "mean_absent": 247.009133
+    },
+    {
+      "token": "861",
+      "dimension": "aspect",
+      "permutation_p_ge_abs_diff": 0.002999,
+      "bh_q": 0.013414,
+      "present_artifacts": 30,
+      "absent_artifacts": 346,
+      "mean_present": 1.589059,
+      "mean_absent": 1.896723
+    }
+  ],
+  "lowest_p_tests": [
+    {
+      "token": "003",
+      "dimension": "area",
+      "permutation_p_ge_abs_diff": 0.0002,
+      "bh_q": 0.001367,
+      "present_artifacts": 29,
+      "absent_artifacts": 347,
+      "mean_present": 81.448966,
+      "mean_absent": 248.637349
+    },
+    {
+      "token": "156",
+      "dimension": "area",
+      "permutation_p_ge_abs_diff": 0.0002,
+      "bh_q": 0.001367,
+      "present_artifacts": 26,
+      "absent_artifacts": 350,
+      "mean_present": 86.110769,
+      "mean_absent": 246.858
+    },
+    {
+      "token": "156",
+      "dimension": "horizontal",
+      "permutation_p_ge_abs_diff": 0.0002,
+      "bh_q": 0.001367,
+      "present_artifacts": 27,
+      "absent_artifacts": 371,
+      "mean_present": 12.492593,
+      "mean_absent": 17.022911
+    },
+    {
+      "token": "156",
+      "dimension": "vertical",
+      "permutation_p_ge_abs_diff": 0.0002,
+      "bh_q": 0.001367,
+      "present_artifacts": 26,
+      "absent_artifacts": 360,
+      "mean_present": 7.273077,
+      "mean_absent": 9.733333
+    },
+    {
+      "token": "861",
+      "dimension": "area",
+      "permutation_p_ge_abs_diff": 0.0002,
+      "bh_q": 0.001367,
+      "present_artifacts": 30,
+      "absent_artifacts": 346,
+      "mean_present": 105.800667,
+      "mean_absent": 247.009133
+    },
+    {
+      "token": "861",
+      "dimension": "horizontal",
+      "permutation_p_ge_abs_diff": 0.0002,
+      "bh_q": 0.001367,
+      "present_artifacts": 30,
+      "absent_artifacts": 368,
+      "mean_present": 11.97,
+      "mean_absent": 17.102446
+    },
+    {
+      "token": "003",
+      "dimension": "horizontal",
+      "permutation_p_ge_abs_diff": 0.0004,
+      "bh_q": 0.002343,
+      "present_artifacts": 29,
+      "absent_artifacts": 369,
+      "mean_present": 11.382759,
+      "mean_absent": 17.134688
+    },
+    {
+      "token": "034",
+      "dimension": "area",
+      "permutation_p_ge_abs_diff": 0.0018,
+      "bh_q": 0.009225,
+      "present_artifacts": 112,
+      "absent_artifacts": 264,
+      "mean_present": 109.765,
+      "mean_absent": 289.1875
+    },
+    {
+      "token": "861",
+      "dimension": "aspect",
+      "permutation_p_ge_abs_diff": 0.002999,
+      "bh_q": 0.013414,
+      "present_artifacts": 30,
+      "absent_artifacts": 346,
+      "mean_present": 1.589059,
+      "mean_absent": 1.896723
+    },
+    {
+      "token": "003",
+      "dimension": "aspect",
+      "permutation_p_ge_abs_diff": 0.003399,
+      "bh_q": 0.013414,
+      "present_artifacts": 29,
+      "absent_artifacts": 347,
+      "mean_present": 1.60814,
+      "mean_absent": 1.894241
+    },
+    {
+      "token": "034",
+      "dimension": "vertical",
+      "permutation_p_ge_abs_diff": 0.003599,
+      "bh_q": 0.013414,
+      "present_artifacts": 113,
+      "absent_artifacts": 273,
+      "mean_present": 7.630973,
+      "mean_absent": 10.369231
+    },
+    {
+      "token": "034",
+      "dimension": "horizontal",
+      "permutation_p_ge_abs_diff": 0.004799,
+      "bh_q": 0.016397,
+      "present_artifacts": 113,
+      "absent_artifacts": 285,
+      "mean_present": 14.164602,
+      "mean_absent": 17.727018
+    }
+  ],
+  "interpretation_boundary": "Artifact-level measurement stress audit only. Any surviving association is a source-validation target, not a numerical value, metrological reading, semantic reading, phonetic value, language identity, or translation.",
+  "outputs": [
+    "data/open_prototype/reports/lipi_short_mark_dimension_artifact_rows.csv",
+    "data/open_prototype/reports/lipi_short_mark_dimension_token_tests.csv",
+    "data/open_prototype/reports/lipi_short_mark_dimension_stress_summary.json",
+    "data/open_prototype/reports/lipi_short_mark_dimension_no_h_series_token_tests.csv",
+    "data/open_prototype/reports/lipi_short_mark_dimension_no_h_series_summary.json"
+  ]
+}

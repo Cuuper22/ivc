@@ -1,0 +1,17 @@
+date,blind_id,unblinded_object,local_text,source_side,role_keyed,component_keyed,blind_result,adjudication,decision_use,accepted_claim
+2026-05-26,T001,M-1206,+520-220-034+,A+E,034_terminal_candidate,R_vertical_bundle,loose_member_of_target_cluster,"Target terminal candidate, weaker because cropped/fewer visible strokes","positive_but_weaker_target_member",0
+2026-05-26,T002,M-1206,+520-220-034+,A,034_terminal_candidate,R_vertical_bundle,core_target_cluster,"Target terminal candidate, tight pair with T003","positive_core_target_member",0
+2026-05-26,T003,M-1206,+520-220-034+,a,034_terminal_candidate_mirror,R_vertical_bundle,core_target_cluster,"Target terminal candidate, tight pair with T002","positive_core_target_member",0
+2026-05-26,T004,M-37,+520-220-415+,A,415_terminal_control,R_rake_comb,secondary_or_separate_comb_like_subcluster,"Same-site 415 pressure, but adjacent curved material contaminates crop","same_site_415_pressure_not_clean_isolated_match",0
+2026-05-26,T005,M-37,+520-220-415+,a,415_terminal_control_mirror,R_rake_comb,secondary_or_separate_comb_like_subcluster,"Same-site 415 pressure, but adjacent curved material contaminates crop","same_site_415_pressure_not_clean_isolated_match",0
+2026-05-26,T006,H-938,+520-220-415+,A,415_terminal_control,R_verticals,closest_external_match,"Exact-side 415 terminal control; strongest clean external neighbor","primary_terminal_415_pressure",0
+2026-05-26,T007,H-938,+520-220-415+,A bis,415_terminal_duplicate,R_verticals,closest_external_match,"Duplicate exact-side 415 terminal control; confirms visual relation but not independent recurrence","primary_terminal_415_pressure_duplicate",0
+2026-05-26,T008,H-940,+520-220-415+,A,415_terminal_control,R_verticals,weaker_external_match,"Exact-side 415 control but weaker in blind terminal view","secondary_terminal_415_pressure",0
+2026-05-26,T009,H-786,not local exact 415 side,A,side_gated_415_terminal_candidate,R_verticals,possible_lower_confidence_match,"Side-gated 415-family candidate; cannot count as exact-side evidence yet","side_mapping_gated_terminal_pressure",0
+2026-05-26,T010,H-941,not local exact 415 side,A,side_gated_415_terminal_candidate,R_verticals,close_external_match,"Side-gated 415-family candidate; visually close but exact-side status unresolved","side_mapping_gated_terminal_pressure",0
+2026-05-26,T011,M-1206,+520-220-034+,A,prefix_or_nonterminal_distractor,T_triangular,distractor,"Triangular/prefix component; rejected from terminal cluster","distractor_control",0
+2026-05-26,T012,M-1206,+520-220-034+,A,prefix_or_nonterminal_distractor,L_split_leaf,distractor,"Split-leaf/prefix component; rejected from terminal cluster","distractor_control",0
+2026-05-26,T013,M-37,+520-220-415+,A,prefix_or_nonterminal_distractor,T_triangular,distractor,"Triangular/prefix component; rejected from terminal cluster","distractor_control",0
+2026-05-26,T014,H-938,+520-220-415+,A,prefix_or_nonterminal_distractor,T_triangular,distractor,"Triangular/prefix component; rejected from terminal cluster","distractor_control",0
+2026-05-26,T015,H-940,+520-220-415+,A,prefix_or_nonterminal_distractor,L_split_leaf,superficial_near_miss_but_outside_cluster,"Contains some upright elements but dominated by broader diagonal/split-leaf form","distractor_near_miss",0
+2026-05-26,T016,H-786,not local exact 415 side,A,prefix_or_nonterminal_distractor,T_triangular,distractor,"Triangular/prefix component; rejected from terminal cluster","distractor_control",0

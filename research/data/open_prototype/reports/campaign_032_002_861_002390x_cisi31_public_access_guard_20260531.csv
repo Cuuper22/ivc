@@ -1,0 +1,10 @@
+date,gate,target,field,value,source_or_route,status,consequence
+2026-05-31,cisi31_public_access_guard,CISI 3.1,harappa_public_pdf_pages,17,https://www.harappa.com/sites/default/files/pdf/Kenoyer-Meadow-2010-HARP.pdf,excerpt_only,"Public Harappa PDF is not the full 443-page volume."
+2026-05-31,cisi31_public_access_guard,CISI 3.1,harappa_contents_mohenjodaro_range,M-1660 to M-2134,Harappa public PDF contents,scope_pressure,"M-1825 is inside the named Mohenjo-daro photo range, but the actual photo page is absent from the excerpt."
+2026-05-31,cisi31_public_access_guard,CISI 3.1,harappa_contents_harp_range,H-1521 to H-2583,Harappa public PDF contents,scope_pressure,"H-1993 is inside the named HARP photo range, but the actual photo page is absent from the excerpt."
+2026-05-31,cisi31_public_access_guard,CISI 3.1,harappa_basic_data_pages,413-443 with Harappa data 423-441,Harappa public PDF contents,scope_pressure,"Data pages are named but absent from the excerpt."
+2026-05-31,cisi31_public_access_guard,H-1993,public_pdf_text_find,0 hits for H-1993,Harappa public PDF find,negative,"No direct H-1993 object-page/source-text binding in the public excerpt."
+2026-05-31,cisi31_public_access_guard,M-1825,public_pdf_text_find,0 hits for M-1825,Harappa public PDF find,negative,"No direct M-1825 object-page/source-text binding in the public excerpt."
+2026-05-31,cisi31_public_access_guard,CISI 3.1,finna_holding_count,9 libraries,https://www.finna.fi/Record/luc.992964283806246?lng=en-gb,access_route,"Finnish library fallback exists, but it is not immediate object evidence."
+2026-05-31,cisi31_public_access_guard,CISI 3.1,finna_physical_description,"lx, 443 pages; illustrated; maps; 31 cm",Finna record,bibliographic_confirmation,"Matches full-volume scope; no object-page inspection."
+2026-05-31,cisi31_public_access_guard,CISI 3.1,decision,status,docs/campaign_032_002_861_002390x_cisi31_public_access_guard_20260531.md,cisi31_public_excerpt_finna_holdings_no_object_pages,"Use purchase/library fallback; do not treat public excerpt or holdings metadata as H-1993/M-1825 evidence."

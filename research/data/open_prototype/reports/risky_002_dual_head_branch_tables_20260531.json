@@ -1,0 +1,105 @@
+{
+  "run_date": "2026-05-31",
+  "bet_id": "V2_002_DUAL_BRANCH_TABLES_861_390_20260531",
+  "vector": "V2 effective-unicity / slot grammar",
+  "confidence_tier": "candidate",
+  "risky_bet": "`002` introduces head-specific branch tables. The live tables are `002-861-X` and `002-390-X`: branch identity predicts whether the branch closes or licenses tail material.",
+  "observed": "Exact-text-collapsed head 861: 28 rows, 23 branches, score 28/28, p=0.04704. Head 390: 15 rows, 10 branches, score 15/15, p=0.02453. Competitive exact-text heads tested: 8.",
+  "adversarial_test": "Within each competitive 002-H-X head, terminal/continuing labels were shuffled 100000 times preserving head layout and terminal count. Multi-head nulls ask whether any two heads look as good as 861/390, and whether the specific 861+390 pair recurs by chance. This survives null pressure but is not promoted because source-stability is still incomplete.",
+  "false_positive_rate": 0.00109,
+  "specific_pair_false_positive_rate": 0.00109,
+  "at_least_two_under_005_rate": 0.00109,
+  "best_pair_product_rate": 0.00109,
+  "falsifier": "A source-normalized row that makes any repeated 861 or 390 branch mixed in terminality demotes the table; a broader scan with many comparable exact-text heads as deterministic as 861/390 demotes it to a short-row artifact.",
+  "next_prediction": "`002-861-416/096/603/698/533` should stay class-pure after source normalization, and new `002-390-125/530/590` should continue while `002-390-095/692/705` should close.",
+  "heads": [
+    {
+      "head": "390",
+      "rows": 15,
+      "branch_count": 10,
+      "terminal_rows": 9,
+      "continuing_rows": 6,
+      "observed_score": 15,
+      "sampled_p": 0.02453,
+      "branch_classes": "072:closed:1;095:closed:2;125:open:4;140:closed:1;346:closed:1;530:open:1;590:open:1;692:closed:1;705:closed:2;707:closed:1",
+      "examples": "H-1993:004-002-390-095-<END>:T|H-68:003-002-390-072-<END>:T|H-773:803-002-390-530-741:C|M-38:235-002-390-125-632 032:C|M-70:032-002-390-692-<END>:T|M-71:142-002-390-095-<END>:T|M-119:484-002-390-125-632 032 900 563:C|M-213:384-002-390-346-<END>:T|M-232:236-002-390-707-<END>:T|M-708:061-002-390-140-<END>:T|M-735:235-002-390-125-195:C|-:3335.1:032-002-390-590-032:C|Sktd-1:004-002-390-125-820:C|M-1825:031-002-390-705-<END>:T|-:4237.1:388-002-390-705-<END>:T"
+    },
+    {
+      "head": "861",
+      "rows": 28,
+      "branch_count": 23,
+      "terminal_rows": 19,
+      "continuing_rows": 9,
+      "observed_score": 28,
+      "sampled_p": 0.04704,
+      "branch_classes": "000:closed:2;031:closed:1;032:open:1;036:open:1;096:closed:2;125:closed:1;216:closed:1;244:open:1;255:open:1;360:open:1;390:closed:1;392:closed:1;416:closed:1;533:open:2;603:closed:3;626:closed:1;683:closed:1;698:closed:1;791:open:1;803:closed:1;831:open:1;832:closed:1;901:closed:1",
+      "examples": "Ad-8:503-002-861-000-<END>:T|H-910:<START>-002-861-416-<END>:T|H-55:004-002-861-125-<END>:T|H-129:031-002-861-244-165:C|H-446:798-002-861-216-<END>:T|H-688:233-002-861-831-165:C|K-40:031-002-861-791-440 717:C|L-39:315-002-861-626-<END>:T|L-46:176-002-861-392-<END>:T|M-2090:<START>-002-861-096-<END>:T|M-1674:231-002-861-683-<END>:T|M-2089:<START>-002-861-096-<END>:T|M-1661:219-002-861-032-520 919 140:C|M-1681:798-002-861-832-<END>:T|M-20:005-002-861-036-460 513:C|M-91:032-002-861-255-416:C|M-240:032-002-861-603-<END>:T|M-330:<START>-002-861-698-<END>:T|M-355:235-002-861-360-520 919 140:C|M-376:176-002-861-533-717:C|M-391:805-002-861-533-717:C|M-677:242-002-861-901-<END>:T|M-706:240-002-861-031-<END>:T|M-714:803-002-861-603-<END>:T|M-1273:055-002-861-603-<END>:T|M-1698:705-002-861-803-<END>:T|-:4348.1:000-002-861-390-<END>:T|-:5541.1:<START>-002-861-000-<END>:T"
+    },
+    {
+      "head": "817",
+      "rows": 8,
+      "branch_count": 6,
+      "terminal_rows": 4,
+      "continuing_rows": 4,
+      "observed_score": 8,
+      "sampled_p": 0.14301,
+      "branch_classes": "000:closed:3;032:open:1;090:open:1;192:open:1;690:open:1;808:closed:1",
+      "examples": "H-456:706-002-817-808-<END>:T|H-609:231-002-817-000-<END>:T|M-1662:233-002-817-192-000:C|M-644:240-002-817-090-370:C|M-692:004-002-817-000-<END>:T|M-855:590-002-817-690-544:C|M-1391:798-002-817-032-320:C|K-155:<START>-002-817-000-<END>:T"
+    },
+    {
+      "head": "220",
+      "rows": 11,
+      "branch_count": 5,
+      "terminal_rows": 1,
+      "continuing_rows": 10,
+      "observed_score": 11,
+      "sampled_p": 0.2727,
+      "branch_classes": "000:closed:1;065:open:3;455:open:5;627:open:1;880:open:1",
+      "examples": "H-1874:<START>-002-220-455-000:C|H-82:017-002-220-455-741:C|H-268:803-002-220-455-920:C|H-593:240-002-220-000-<END>:T|K-25:231-002-220-065-132 082:C|M-29:806-002-220-455-503:C|M-46:235-002-220-065-215:C|M-140:336-002-220-065-440 455:C|M-147:803-002-220-455-520:C|M-655:233-002-220-880-689:C|M-1427:140-002-220-627-615 906 388:C"
+    },
+    {
+      "head": "820",
+      "rows": 8,
+      "branch_count": 6,
+      "terminal_rows": 6,
+      "continuing_rows": 2,
+      "observed_score": 8,
+      "sampled_p": 0.2851,
+      "branch_classes": "000:closed:2;001:open:1;033:closed:1;700:closed:1;741:closed:2;906:open:1",
+      "examples": "H-909:<START>-002-820-000-<END>:T|K-23:441-002-820-033-<END>:T|M-1677:032-002-820-001-440 012:C|M-86:231-002-820-700-<END>:T|M-160:031-002-820-741-<END>:T|M-1045:032-002-820-000-<END>:T|M-1119:803-002-820-741-<END>:T|M-1178:<START>-002-820-906-000:C"
+    },
+    {
+      "head": "368",
+      "rows": 12,
+      "branch_count": 11,
+      "terminal_rows": 6,
+      "continuing_rows": 6,
+      "observed_score": 12,
+      "sampled_p": 0.45633,
+      "branch_classes": "119:closed:1;165:closed:1;202:open:1;260:closed:2;518:closed:1;550:open:1;590:open:1;634:closed:1;840:open:1;861:open:1;906:open:1",
+      "examples": "Blk-2:061-002-368-634-<END>:T|B-1:220-002-368-550-821:C|H-600:<START>-002-368-260-<END>:T|K-10:255-002-368-861-590 032 368:C|L-213:220-002-368-840-900:C|M-1789:455-002-368-260-<END>:T|M-12:233-002-368-202-892 371:C|M-36:032-002-368-906-329:C|M-99:215-002-368-119-<END>:T|M-253:803-002-368-518-<END>:T|M-311:401-002-368-165-<END>:T|?-3:<START>-002-368-590-900:C"
+    },
+    {
+      "head": "000",
+      "rows": 11,
+      "branch_count": 8,
+      "terminal_rows": 8,
+      "continuing_rows": 3,
+      "observed_score": 10,
+      "sampled_p": 0.74403,
+      "branch_classes": "000:closed:3;031:closed:1;090:mixed:2;215:closed:1;216:closed:1;317:open:1;350:closed:1;861:open:1",
+      "examples": "H-486:<START>-002-000-861-031:C|K-44:176-002-000-000-<END>:T|M-2005:033-002-000-031-<END>:T|M-1783:003-002-000-215-<END>:T|M-106:000-002-000-350-<END>:T|M-636:032-002-000-216-<END>:T|M-902:798-002-000-090-<END>:T|M-1995:832-002-000-000-<END>:T|-:5226.1:<START>-002-000-090-725 000:C|Ns-67:000-002-000-000-<END>:T|-:5468.1:361-002-000-317-688:C"
+    },
+    {
+      "head": "031",
+      "rows": 15,
+      "branch_count": 11,
+      "terminal_rows": 13,
+      "continuing_rows": 2,
+      "observed_score": 14,
+      "sampled_p": 0.77338,
+      "branch_classes": "000:closed:2;104:closed:1;165:closed:1;350:open:1;376:closed:1;480:mixed:2;500:closed:1;502:closed:1;575:closed:2;820:closed:1;892:closed:2",
+      "examples": "C-6:221-002-031-500-<END>:T|H-44:803-002-031-892-<END>:T|H-389:235-002-031-480-625:C|M-1745:031-002-031-892-<END>:T|M-141:240-002-031-000-<END>:T|M-211:220-002-031-165-<END>:T|M-318:003-002-031-575-<END>:T|M-678:806-002-031-502-<END>:T|M-739:415-002-031-350-550 692:C|M-1386:235-002-031-480-<END>:T|M-1823:004-002-031-376-<END>:T|-:4164.1:423-002-031-104-<END>:T|-:4344.1:240-002-031-000-<END>:T|K-429:<START>-002-031-820-<END>:T|-:5579.1:226-002-031-575-<END>:T"
+    }
+  ]
+}

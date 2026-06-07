@@ -1,0 +1,36 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_740390590_cross_site_stem_20260531",
+  "tier": "candidate",
+  "bet": "740-390 is a cross-site stem that normally selects 590 as its next sign. It is a sibling to 740-407-590 and may mark a 740-headed register family with interchangeable middle heads 390/407 before closure/complement 590.",
+  "counts": {
+    "raw_occurrences": 41,
+    "raw_followed_by_590": 40,
+    "exact_text_site_type_symbol_dedup_occurrences": 37,
+    "exact_dedup_followed_by_590": 36,
+    "sites": 7,
+    "by_site": {
+      "Harappa": 17,
+      "Mohenjo-daro": 17,
+      "Dholavira": 3,
+      "Allahdino": 1,
+      "Chanhu-daro": 1,
+      "Gonur Depe": 1,
+      "Kish": 1
+    },
+    "exceptions": [
+      "M-1669 Mohenjo-daro SEAL:S Bull1:W +740-390+ next=<END>"
+    ]
+  },
+  "external_contact_pressure": [
+    "- Mesopotamia Kish +740-390-590-220-003-060-840-416+",
+    "- Central Asia Gonur Depe +740-390-590-125-220-235-002-285+"
+  ],
+  "decision": "candidate_survives_exact_dedup_cross_site_probe_but_has_one_exception",
+  "falsifiers": [
+    "The one terminal 740-390 exception must be source-checked; if it is complete and not damaged/truncated, the strict stem becomes probabilistic rather than mandatory.",
+    "If 740-390-590 rows collapse into one source-transmission family after visual/source grouping, demote.",
+    "If 390 and 407 have incompatible contexts under 740, do not merge them into one sibling-head model."
+  ]
+}

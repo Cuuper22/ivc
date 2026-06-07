@@ -1,0 +1,4 @@
+decision,evidence,result,consequence
+3335_packet_ready_external_source_required,target has no CISI/site/excavation/image bridge and public exact searches are negative,"packeted acquisition target, not source-bound evidence",do not count 3335.1 in strict matched-lane proof
+m143_is_prefix_control_not_identity,M-143 shares 740-205-032-002 but has branch/tail 252-840 instead of 390-590-032,"adds source-family context, not object binding",use M-143 only as a formula/source-family control
+highest_single_object_unlock_still_blocked,strict_matched_prev_split:032; strict_non125_continuing:-:3335.1,3335.1 would unlock strict 032 only if source-bound and sequence-valid,external acquisition remains the priority over further local triangulation

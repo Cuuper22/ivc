@@ -1,0 +1,214 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "candidate_id": "risky_060920_selector_object_site_stress_20260531",
+  "tier": "promoted_candidate_strengthener",
+  "bet": "The 741/742/745 feeder alloseries selects 060-920 rather than sibling 060 caps, and this survives object/text-family collapse plus leave-site stress.",
+  "source": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\lipi\\metadata_filtered.csv",
+  "selector_set": [
+    "741",
+    "742",
+    "745"
+  ],
+  "cap_set": [
+    "920",
+    "692",
+    "550",
+    "820"
+  ],
+  "panels": [
+    {
+      "collapse": "object",
+      "leave_site": "NONE",
+      "live": {
+        "cells": 136,
+        "target_920_cells": 52,
+        "sibling_cap_cells": 84,
+        "selector_hits_in_920": 40,
+        "selector_misses_in_920": 12,
+        "selector_hits_in_siblings": 0,
+        "selector_misses_in_siblings": 84,
+        "hit_share_920": 0.7692307692307693,
+        "hit_share_siblings": 0,
+        "fisher_right_tail": 4.563673637160888e-24
+      },
+      "null": {
+        "iterations": 5000,
+        "p_selector_hits_ge_live": 0,
+        "p_sibling_leaks_le_live": 0,
+        "p_hits_and_leaks": 0,
+        "p_fisher_le_live": 0
+      },
+      "selector_examples": [
+        "C-16:741-060-920:+429-003-741-060-920+",
+        "H-1309:741-060-920:+156-176-741-060-920+",
+        "H-2127:741-060-920:+504-350-741-060-920+",
+        "H-2128:741-060-920:+504-350-741-060-920+",
+        "H-39:745-060-920:+740-390-590-231-240-235-745-060-920+",
+        "H-89:741-060-920:+232-240-741-060-920+",
+        "H-175:741-060-920:+167-705-368-005-741-060-920+",
+        "K-4:741-060-920:+036-269-140-002-741-060-920+",
+        "L-28:741-060-920:+740-406-590-741-060-920+",
+        "L-217:741-060-920:+740-821-741-060-920+"
+      ],
+      "sibling_leak_examples": []
+    },
+    {
+      "collapse": "object",
+      "leave_site": "Mohenjo-daro",
+      "live": {
+        "cells": 55,
+        "target_920_cells": 21,
+        "sibling_cap_cells": 34,
+        "selector_hits_in_920": 13,
+        "selector_misses_in_920": 8,
+        "selector_hits_in_siblings": 0,
+        "selector_misses_in_siblings": 34,
+        "hit_share_920": 0.6190476190476191,
+        "hit_share_siblings": 0,
+        "fisher_right_tail": 1.4022352885129845e-7
+      },
+      "null": null,
+      "selector_examples": [
+        "C-16:741-060-920:+429-003-741-060-920+",
+        "H-1309:741-060-920:+156-176-741-060-920+",
+        "H-2127:741-060-920:+504-350-741-060-920+",
+        "H-2128:741-060-920:+504-350-741-060-920+",
+        "H-39:745-060-920:+740-390-590-231-240-235-745-060-920+",
+        "H-89:741-060-920:+232-240-741-060-920+",
+        "H-175:741-060-920:+167-705-368-005-741-060-920+",
+        "K-4:741-060-920:+036-269-140-002-741-060-920+",
+        "L-28:741-060-920:+740-406-590-741-060-920+",
+        "L-217:741-060-920:+740-821-741-060-920+"
+      ],
+      "sibling_leak_examples": []
+    },
+    {
+      "collapse": "object",
+      "leave_site": "Harappa",
+      "live": {
+        "cells": 103,
+        "target_920_cells": 44,
+        "sibling_cap_cells": 59,
+        "selector_hits_in_920": 34,
+        "selector_misses_in_920": 10,
+        "selector_hits_in_siblings": 0,
+        "selector_misses_in_siblings": 59,
+        "hit_share_920": 0.7727272727272727,
+        "hit_share_siblings": 0,
+        "fisher_right_tail": 1.2658460337096301e-18
+      },
+      "null": null,
+      "selector_examples": [
+        "C-16:741-060-920:+429-003-741-060-920+",
+        "K-4:741-060-920:+036-269-140-002-741-060-920+",
+        "L-28:741-060-920:+740-406-590-741-060-920+",
+        "L-217:741-060-920:+740-821-741-060-920+",
+        "M-1805:741-060-920:+740-440-741-060-920+",
+        "M-966:741-060-920:+740-042-741-060-920+",
+        "M-1757:741-060-920:+504-350-240-741-060-920+",
+        "M-1790:741-060-920:+592-741-060-920+",
+        "M-1902:741-060-920:+151-390-590-741-060-920+",
+        "M-709:742-060-920:+740-100-001-440-742-060-920+"
+      ],
+      "sibling_leak_examples": []
+    },
+    {
+      "collapse": "text_family",
+      "leave_site": "NONE",
+      "live": {
+        "cells": 127,
+        "target_920_cells": 51,
+        "sibling_cap_cells": 76,
+        "selector_hits_in_920": 39,
+        "selector_misses_in_920": 12,
+        "selector_hits_in_siblings": 0,
+        "selector_misses_in_siblings": 76,
+        "hit_share_920": 0.7647058823529411,
+        "hit_share_siblings": 0,
+        "fisher_right_tail": 1.9937065447032158e-22
+      },
+      "null": {
+        "iterations": 5000,
+        "p_selector_hits_ge_live": 0,
+        "p_sibling_leaks_le_live": 0,
+        "p_hits_and_leaks": 0,
+        "p_fisher_le_live": 0
+      },
+      "selector_examples": [
+        "C-16:741-060-920:+429-003-741-060-920+",
+        "H-1309:741-060-920:+156-176-741-060-920+",
+        "H-2127:741-060-920:+504-350-741-060-920+",
+        "H-39:745-060-920:+740-390-590-231-240-235-745-060-920+",
+        "H-89:741-060-920:+232-240-741-060-920+",
+        "H-175:741-060-920:+167-705-368-005-741-060-920+",
+        "K-4:741-060-920:+036-269-140-002-741-060-920+",
+        "L-28:741-060-920:+740-406-590-741-060-920+",
+        "L-217:741-060-920:+740-821-741-060-920+",
+        "M-1805:741-060-920:+740-440-741-060-920+"
+      ],
+      "sibling_leak_examples": []
+    },
+    {
+      "collapse": "text_family",
+      "leave_site": "Mohenjo-daro",
+      "live": {
+        "cells": 51,
+        "target_920_cells": 21,
+        "sibling_cap_cells": 30,
+        "selector_hits_in_920": 13,
+        "selector_misses_in_920": 8,
+        "selector_hits_in_siblings": 0,
+        "selector_misses_in_siblings": 30,
+        "hit_share_920": 0.6190476190476191,
+        "hit_share_siblings": 0,
+        "fisher_right_tail": 4.2726646683088366e-7
+      },
+      "null": null,
+      "selector_examples": [
+        "C-16:741-060-920:+429-003-741-060-920+",
+        "H-1309:741-060-920:+156-176-741-060-920+",
+        "H-2127:741-060-920:+504-350-741-060-920+",
+        "H-39:745-060-920:+740-390-590-231-240-235-745-060-920+",
+        "H-89:741-060-920:+232-240-741-060-920+",
+        "H-175:741-060-920:+167-705-368-005-741-060-920+",
+        "K-4:741-060-920:+036-269-140-002-741-060-920+",
+        "L-28:741-060-920:+740-406-590-741-060-920+",
+        "L-217:741-060-920:+740-821-741-060-920+",
+        "Rgr-1:741-060-920:+740-760-335-741-060-920+"
+      ],
+      "sibling_leak_examples": []
+    },
+    {
+      "collapse": "text_family",
+      "leave_site": "Harappa",
+      "live": {
+        "cells": 99,
+        "target_920_cells": 44,
+        "sibling_cap_cells": 55,
+        "selector_hits_in_920": 34,
+        "selector_misses_in_920": 10,
+        "selector_hits_in_siblings": 0,
+        "selector_misses_in_siblings": 55,
+        "hit_share_920": 0.7727272727272727,
+        "hit_share_siblings": 0,
+        "fisher_right_tail": 6.473854191828191e-18
+      },
+      "null": null,
+      "selector_examples": [
+        "C-16:741-060-920:+429-003-741-060-920+",
+        "K-4:741-060-920:+036-269-140-002-741-060-920+",
+        "L-28:741-060-920:+740-406-590-741-060-920+",
+        "L-217:741-060-920:+740-821-741-060-920+",
+        "M-1805:741-060-920:+740-440-741-060-920+",
+        "M-966:741-060-920:+740-042-741-060-920+",
+        "M-1757:741-060-920:+504-350-240-741-060-920+",
+        "M-1790:741-060-920:+592-741-060-920+",
+        "M-1902:741-060-920:+151-390-590-741-060-920+",
+        "M-709:742-060-920:+740-100-001-440-742-060-920+"
+      ],
+      "sibling_leak_examples": []
+    }
+  ],
+  "decision": "selector_survives_object_text_family_and_site_stress"
+}

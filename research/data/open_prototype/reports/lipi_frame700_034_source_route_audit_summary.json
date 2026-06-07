@@ -1,0 +1,53 @@
+{
+  "checked_date": "2026-05-25",
+  "question": "Which currently visible source-acquisition route exists for each FRAME700_034 two-lane packet object?",
+  "packet_objects": 25,
+  "core_objects": 22,
+  "optional_objects": 3,
+  "route_class_counts": {
+    "cisi_3_1_library_or_purchase_request": 11,
+    "internet_archive_cisi_vol1_2_ocr_lead": 6,
+    "cisi_vol2_archive_request_no_public_ocr_hit": 3,
+    "internet_archive_cisi_vol1_2_ocr_plus_secondary_text_lead": 2,
+    "harappa_harp_public_object_lead_plus_cisi_3_1_reconcile": 1,
+    "kenoyer_1997_table2_plus_cisi_scan_lead": 1,
+    "kenoyer_1997_table2_public_lead": 1
+  },
+  "public_evidence_class_counts": {
+    "bibliographic_primary_book_route_only": 11,
+    "public_cisi_ocr_hit_only": 6,
+    "source_request_only": 3,
+    "public_cisi_ocr_hit_plus_secondary_text": 2,
+    "direct_public_object_identity_lead": 1,
+    "public_table2_identity_lead": 1,
+    "public_table2_identity_lead_plus_cisi_ocr": 1
+  },
+  "cisi_volume_target_counts": {
+    "CISI_3_1_Mohenjo-daro_and_Harappa": 12,
+    "CISI_2_Collections_in_Pakistan": 9,
+    "CISI_1_or_2_legacy_Harappa_entry": 2,
+    "CISI_2_Collections_in_Pakistan_or_later_addenda": 1,
+    "CISI_2_Collections_in_Pakistan_with_HARP_comparison": 1
+  },
+  "ia_ocr_hit_objects": 9,
+  "ia_ocr_hit_total": 27,
+  "direct_or_table_public_identity_leads": 3,
+  "secondary_textual_lead_objects": 2,
+  "source_request_only_objects": 3,
+  "accepted_decipherment_claims": 0,
+  "immediate_next_action": "Use the route audit to fill or request the 51-row two-lane source coding sheet; do not upgrade 034 until source images decide sign visibility, side order, direction, and copy pressure.",
+  "sources": {
+    "ia_metadata": "https://archive.org/metadata/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan",
+    "ia_reader": "https://archive.org/details/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan",
+    "harappa_cisi31": "https://www.harappa.com/content/corpus-indus-seals-and-inscriptions-vol-31",
+    "helsinki_cisi31": "https://researchportal.helsinki.fi/en/publications/corpus-of-indus-seals-and-inscriptions-volume-3-new-material-untr/",
+    "cisi_advertisement": "https://list.indology.info/pipermail/indology/attachments/20200116/6fb825d1/attachment.pdf",
+    "harappa_harp": "https://www.harappa.com/content/harp",
+    "harappa_inscribed_objects": "https://www.harappa.com/content/inscribed-objects-harappa-excavations-1987-2007",
+    "vats_harappa": "https://www.harappa.com/content/Excavations-at-Harappa",
+    "harappa_recent": "https://www.harappa.com/indus4/e3.html",
+    "kenoyer_1997": "https://www.harappa.com/sites/default/files/pdf/Kenoyer1997_Excavations%20at%20Harappa%201994-1995%20New%20Perspective.pdf",
+    "icit": "https://www.epigraphica.de/indus/menueindus.htm",
+    "parpola_2019": "https://tuhat.helsinki.fi/ws/portalfiles/portal/129602857/Parpola_A_2019_Inscriptions_incised_on_the_Harappan_bone_rods_Proceedings_of_EASAA_22.pdf"
+  }
+}

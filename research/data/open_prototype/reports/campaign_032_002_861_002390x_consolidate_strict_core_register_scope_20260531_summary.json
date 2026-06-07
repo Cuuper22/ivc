@@ -1,0 +1,24 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "strict_core_register_scope",
+  "strict_core_scope": {
+    "rows": 4,
+    "sites": "Mohenjo-daro:4",
+    "types": "SEAL:S:4",
+    "shapes": "square:4",
+    "materials": "Steatite:4",
+    "symbols": "Bull1:J:1;Bull1:S:1;Bull1:T:1;Bull1:U:1",
+    "cults": "SAN:2;HAF:1;SAF:1"
+  },
+  "decisions": [
+    "Demote strict core from script-wide grammar to Mohenjo-daro square seal local syntax.",
+    "Keep local syntax alive because the same register still splits by X into 125 open versus 095/692 terminal.",
+    "Require a strict outside-register 002-390-X row before widening scope again."
+  ],
+  "contradiction_results": {
+    "STRICT_CORE_IS_NOT_SCRIPT_WIDE": "pass_demote_scope",
+    "STRICT_CORE_NOT_JUST_REGISTER_POLARITY": "pass_keep_local_syntax",
+    "STRICT_CORE_SEMANTIC_SCOPE_BLOCKED": "pass_demote"
+  }
+}

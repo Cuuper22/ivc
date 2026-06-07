@@ -1,0 +1,30 @@
+{
+  "date": "2026-05-30",
+  "status": "object_level_onomastic_values_no_external_anchor",
+  "target_phrases_tested": 12,
+  "target_inventory_hints_present": 9,
+  "focus_external_objects_with_parseable_signs": 30,
+  "candidate_rows_written": 47,
+  "same_site_or_equivalent_value_attempts": 1,
+  "strict_mapped_indus_only_value_attempts": 1,
+  "accepted_external_anchors": 0,
+  "forger": {
+    "model": "shuffle target source-sites across fixed cuneiform phrase patterns; count strict mapped Indus-only object attempts that remain same-site/equivalent pattern matches",
+    "iterations": 10000,
+    "observed_strict_mapped_site_pattern_attempts": 1,
+    "null_ge_observed_share": 0.6857,
+    "max_null_candidate_count": 2,
+    "mean_null_candidate_count": 0.8414
+  },
+  "strongest_attempts": [
+    {
+      "candidate_id": "onomastic_941bac060b2efe",
+      "target_id": "ur_guna_meluhha",
+      "external_row_id": "3898.1",
+      "candidate_values": "002=ur;004=gun3;328=a;001=me;803=luh;415=ha",
+      "decision": "rejected_mapped_indus_object_has_no_readable_script_bridge",
+      "reason": "The row is object-mapped, but the mapped object is Indus-only in the current source surface. The cuneiform phrase comes from a separate text, so this is still site plus length/pattern evidence."
+    }
+  ],
+  "conclusion": "Actual candidate sign values were attempted only where source route plus row/object status justified the swing. The only strict mapped attempt is still a separate-text same-site pattern match on an Indus-only object, so it earns no phonetic value."
+}

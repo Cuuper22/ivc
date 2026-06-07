@@ -1,0 +1,23 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "390_function_bet",
+  "head390_occurrences": 15,
+  "routes": {
+    "terminal_classifier": {
+      "occurrences": 9,
+      "terminal": 9,
+      "avg_total_length": "5.556",
+      "types": "SEAL:S:8;TAB:B:1",
+      "x_values": "095:2;705:2;072:1;140:1;346:1;692:1;707:1"
+    },
+    "linker_complement": {
+      "occurrences": 6,
+      "terminal": 0,
+      "avg_total_length": "8.333",
+      "types": "SEAL:S:5;TAB:B:1",
+      "x_values": "125:4;530:1;590:1"
+    }
+  },
+  "provisional_read": "390 authority/status function survives if terminal-classifier routes stay shorter and linker routes stay complement-bearing."
+}

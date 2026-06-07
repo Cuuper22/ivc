@@ -1,0 +1,5 @@
+checked_date,check_id,result,evidence,consequence
+2026-05-31,STRICT_CORE_125_IS_ALWAYS_OPEN,pass,M-119:632 032 900 563 | M-735:195,keep 125 as strict open-branch syntax
+2026-05-31,STRICT_CORE_TERMINAL_BRANCHES_END,pass,M-70:692 | M-71:095,keep 095/692 as strict terminal syntax
+2026-05-31,STRICT_CORE_LEFT_OPERATORS_SURVIVE_ONLY_PARTLY,partial_pass,M-70:032->692 | M-71:142->095 | M-119:484->125 | M-735:235->125,"235 and 032 have one strict witness each; 004 has none, so left parser stays source-thin."
+2026-05-31,STRICT_CORE_SEMANTICS_DO_NOT_SURVIVE,pass_demote,strict core has four rows and only open/terminal contrast,"no sign value, phonetics, language identity, or translation can be promoted from strict core."

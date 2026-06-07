@@ -1,0 +1,24 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "530_one_complement_forger",
+  "rows": {
+    "raw": 5679,
+    "canonical_numeric_sequences": 3503,
+    "governed_frames": 272,
+    "target_frames": 4
+  },
+  "target": {
+    "one_complement": 4,
+    "distinct_heads": 4,
+    "distinct_sites": 4,
+    "distinct_first_tails": 4,
+    "examples": "C-57:+740-032-840-002-296-530-000+ | H-773:+740-798-803-002-390-530-741+ | M-623:+740-760-175-176-220-415-798-002-299-530-820+ | -:4182.1:+740-390-590-231-002-705-530-904+"
+  },
+  "exact_count_peers": 3,
+  "exact_count_passers": "530",
+  "count_window_peers": 49,
+  "count_window_passers": "590;530",
+  "random_one_complement_false_positive_rate": 0.0043,
+  "random_shape_false_positive_rate": 0.00031,
+  "decisions": "V2_530_ONE_COMPLEMENT_NOT_PENULTIMATE_NULL_20260531:candidate_retained_but_not_strengthened"
+}

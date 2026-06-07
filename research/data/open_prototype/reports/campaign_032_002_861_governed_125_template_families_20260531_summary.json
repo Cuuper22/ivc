@@ -1,0 +1,21 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "governed_125_template_family_probe",
+  "hypothesis_tested": "`002-H-(modifier)-125-tail` is a governed title-template grammar, not isolated `002-390-125` behavior.",
+  "key_counts": {
+    "governed_125_rows": 17,
+    "distinct_template_4": 14,
+    "repeated_template_4_families": 3,
+    "repeated_families": "297-350-125-413:2;390-125-632-032:2;610-125-032-<END>:2",
+    "promoted_template_candidates": "297-350-125-413:2;390-125-632-032:2;610-125-032-<END>:2",
+    "governed_heads": "390:4;297:2;610:2;190:1;320:1;392:1;405:1;407:1;595:1;741:1",
+    "next_after_125": "<END>:5;632:3;032:2;413:2;820:2;195:1;590:1;717:1"
+  },
+  "decisions": [
+    "`125` is promoted from a mostly 390-tail story to a broader governed title-template candidate.",
+    "`610-125-032` is a candidate repeated title template across Harappa and Mohenjo-daro.",
+    "`297-350-125-413` is a candidate repeated title template across Bala-kot and Nausharo.",
+    "`190` stays a wild sibling-head extension: it shares `125-632-032`, but only one `190` row has that tail."
+  ],
+  "next_falsifier": "If repeated governed 125 templates collapse to duplicate/copy families or if held-out governed 125 rows do not preserve head-template structure, demote the broader grammar."
+}

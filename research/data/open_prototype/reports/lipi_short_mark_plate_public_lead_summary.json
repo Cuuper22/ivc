@@ -1,0 +1,95 @@
+{
+  "source": "17-artifact short-mark plate public lead search",
+  "checked_at": "2026-05-24",
+  "input_packet": "data/open_prototype/reports/lipi_short_mark_plate_request_packet.csv",
+  "packet_artifacts": 17,
+  "source_pages_checked": 20,
+  "fixed_source_pages_checked": 3,
+  "blogger_atom_queries_checked": 17,
+  "lead_rows": 31,
+  "artifacts_with_candidate_image_leads": [
+    "H-233",
+    "H-1302",
+    "H-1303"
+  ],
+  "artifacts_with_published_direction_or_corpus_notes": [
+    "H-1302",
+    "H-1303"
+  ],
+  "artifacts_with_text_only_or_bibliographic_leads": [
+    "H-233",
+    "H-309",
+    "H-316",
+    "H-353",
+    "H-355",
+    "H-357",
+    "H-933",
+    "H-935",
+    "H-960",
+    "H-978"
+  ],
+  "artifacts_with_no_public_lead_in_checked_sources": [
+    "H-1304",
+    "H-1344",
+    "H-1345",
+    "H-1346",
+    "H-1347"
+  ],
+  "lead_kinds_by_artifact": {
+    "H-233": [
+      "artifact_mention_with_candidate_images",
+      "text_only_or_bibliographic_lead"
+    ],
+    "H-309": [
+      "text_only_or_bibliographic_lead"
+    ],
+    "H-316": [
+      "text_only_or_bibliographic_lead"
+    ],
+    "H-353": [
+      "text_only_or_bibliographic_lead"
+    ],
+    "H-355": [
+      "text_only_or_bibliographic_lead"
+    ],
+    "H-357": [
+      "text_only_or_bibliographic_lead"
+    ],
+    "H-933": [
+      "text_only_or_bibliographic_lead"
+    ],
+    "H-935": [
+      "text_only_or_bibliographic_lead"
+    ],
+    "H-960": [
+      "text_only_or_bibliographic_lead"
+    ],
+    "H-978": [
+      "text_only_or_bibliographic_lead"
+    ],
+    "H-1302": [
+      "artifact_mention_with_candidate_images",
+      "published_direction_or_corpus_note"
+    ],
+    "H-1303": [
+      "artifact_mention_with_candidate_images",
+      "published_direction_or_corpus_note"
+    ],
+    "H-1304": [],
+    "H-1344": [],
+    "H-1345": [],
+    "H-1346": [],
+    "H-1347": []
+  },
+  "fixed_source_pages": [
+    "https://indusscriptmore.blogspot.com/2012/",
+    "https://www.nature.com/articles/s41599-021-00713-0",
+    "https://bharatkalyan97.blogspot.com/2025/08/shapes-of-tablets-convey-information.html"
+  ],
+  "caveat": "Candidate image leads from claim-heavy blogs are public source-discovery pointers only. They do not validate inscription segmentation, side order, direction, allography, function, meaning, or translation.",
+  "key_observation": "The checked public sources produced secondary or candidate leads for the packet, but no source-grade object-side plate validation for any of the 17 artifacts.",
+  "outputs": [
+    "data/open_prototype/reports/lipi_short_mark_plate_public_leads.csv",
+    "data/open_prototype/reports/lipi_short_mark_plate_public_lead_pages.csv"
+  ]
+}

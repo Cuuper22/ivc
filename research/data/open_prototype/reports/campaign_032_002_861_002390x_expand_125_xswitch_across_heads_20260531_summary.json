@@ -1,0 +1,31 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "x125_switch_across_heads",
+  "same_register_scope": "Mohenjo-daro|SEAL:S|square|Steatite",
+  "xslot_125": {
+    "rows": 6,
+    "continuing_rate": "6/6",
+    "heads": "390:3;190:1;405:1;610:1",
+    "tails": "632 032:2;032:1;195:1;632 032 900 563:1;820:1"
+  },
+  "xslot_non125": {
+    "rows": 109,
+    "continuing_rate": "35/109"
+  },
+  "non_xslot_125": {
+    "rows": 17,
+    "continuing_rate": "10/17",
+    "terminal_rate": "7/17"
+  },
+  "new_bets": {
+    "X125_SUFFICIENT_CONTINUATION_SWITCH": "candidate",
+    "X125_NOT_INTRINSICALLY_OPEN": "candidate",
+    "X125_TAIL_ALLOMORPHY": "wild shot"
+  },
+  "predictions": [
+    "New same-register `002-H-125` rows should continue.",
+    "Terminal `125` remains possible outside the post-002-H-X slot.",
+    "If `002-H-125` tail fillers cluster by H or left context after source collapse, treat them as tail allomorph candidates."
+  ]
+}

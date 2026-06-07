@@ -1,0 +1,133 @@
+{
+  "generated_at_local": "2026-05-25T07:26:12.906Z",
+  "experiment": "Lipi FRAME700 subtype blocked null",
+  "question": "Does the no-H-series FRAME700 subtype dimension signal exceed subtype-label shuffles inside matched object/context blocks?",
+  "input": "data/open_prototype/reports/lipi_frame700_subtype_rows.csv",
+  "scope": "excluding_h2218_h2239",
+  "leaveout_mode": "sequence_family",
+  "target_rows": 331,
+  "iterations_per_policy": 200,
+  "block_policies": {
+    "global": [],
+    "type_sides_order": [
+      "type",
+      "sides",
+      "order"
+    ],
+    "type_sides_order_context": [
+      "type",
+      "sides",
+      "order",
+      "context_class"
+    ],
+    "type_sides_order_context_relation": [
+      "type",
+      "sides",
+      "order",
+      "context_class",
+      "side_relation"
+    ]
+  },
+  "observed": [
+    {
+      "model": "frequency",
+      "top1_accuracy": 0.410876,
+      "top2_accuracy": 0.719033,
+      "subtype_034_top1": 0,
+      "top1_gain_vs_frequency": 0
+    },
+    {
+      "model": "object",
+      "top1_accuracy": 0.371601,
+      "top2_accuracy": 0.752266,
+      "subtype_034_top1": 0,
+      "top1_gain_vs_frequency": -0.039275
+    },
+    {
+      "model": "dimensions",
+      "top1_accuracy": 0.435045,
+      "top2_accuracy": 0.806647,
+      "subtype_034_top1": 0.677419,
+      "top1_gain_vs_frequency": 0.024169
+    },
+    {
+      "model": "side_context",
+      "top1_accuracy": 0.371601,
+      "top2_accuracy": 0.758308,
+      "subtype_034_top1": 0.505376,
+      "top1_gain_vs_frequency": -0.039275
+    }
+  ],
+  "dimension_null_summary": [
+    {
+      "block_policy": "global",
+      "observed_top1": 0.435045,
+      "null_top1_mean": 0.355438,
+      "null_top1_p95": 0.422961,
+      "p_ge_observed_top1": 0.02,
+      "observed_034_top1": 0.677419,
+      "null_034_top1_mean": 0.18129,
+      "null_034_top1_p95": 0.354839,
+      "p_ge_observed_034_top1": 0,
+      "observed_top1_gain_vs_frequency": 0.024169,
+      "null_top1_gain_mean": -0.055438,
+      "null_top1_gain_p95": 0.012085,
+      "p_ge_observed_top1_gain": 0.02,
+      "moved_labels_mean": 217.17
+    },
+    {
+      "block_policy": "type_sides_order",
+      "observed_top1": 0.435045,
+      "null_top1_mean": 0.358172,
+      "null_top1_p95": 0.41994,
+      "p_ge_observed_top1": 0.015,
+      "observed_034_top1": 0.677419,
+      "null_034_top1_mean": 0.195484,
+      "null_034_top1_p95": 0.397849,
+      "p_ge_observed_034_top1": 0,
+      "observed_top1_gain_vs_frequency": 0.024169,
+      "null_top1_gain_mean": -0.052704,
+      "null_top1_gain_p95": 0.009063,
+      "p_ge_observed_top1_gain": 0.015,
+      "moved_labels_mean": 211.615
+    },
+    {
+      "block_policy": "type_sides_order_context",
+      "observed_top1": 0.435045,
+      "null_top1_mean": 0.362946,
+      "null_top1_p95": 0.416918,
+      "p_ge_observed_top1": 0.02,
+      "observed_034_top1": 0.677419,
+      "null_034_top1_mean": 0.23,
+      "null_034_top1_p95": 0.451613,
+      "p_ge_observed_034_top1": 0,
+      "observed_top1_gain_vs_frequency": 0.024169,
+      "null_top1_gain_mean": -0.047931,
+      "null_top1_gain_p95": 0.006042,
+      "p_ge_observed_top1_gain": 0.02,
+      "moved_labels_mean": 204.1
+    },
+    {
+      "block_policy": "type_sides_order_context_relation",
+      "observed_top1": 0.435045,
+      "null_top1_mean": 0.371541,
+      "null_top1_p95": 0.425982,
+      "p_ge_observed_top1": 0.04,
+      "observed_034_top1": 0.677419,
+      "null_034_top1_mean": 0.334409,
+      "null_034_top1_p95": 0.548387,
+      "p_ge_observed_034_top1": 0,
+      "observed_top1_gain_vs_frequency": 0.024169,
+      "null_top1_gain_mean": -0.039335,
+      "null_top1_gain_p95": 0.015106,
+      "p_ge_observed_top1_gain": 0.04,
+      "moved_labels_mean": 194.68
+    }
+  ],
+  "interpretation_boundary": "Blocked null for subtype-distribution evidence only. It accepts no sign meaning, numerical value, metrological reading, phonetic value, language identity, or translation.",
+  "outputs": [
+    "data/open_prototype/reports/lipi_frame700_subtype_blocked_null_iterations.csv",
+    "data/open_prototype/reports/lipi_frame700_subtype_blocked_null_summary.csv",
+    "data/open_prototype/reports/lipi_frame700_subtype_blocked_null_summary.json"
+  ]
+}

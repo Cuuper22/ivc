@@ -1,0 +1,43 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_060692_internal_restart_source_peek_20260531",
+  "tier": "candidate",
+  "parent_candidate": "data/open_prototype/reports/risky_060692_internal_restart_20260531.json",
+  "bet_tested": "The five nonterminal 060-692 rows are internal-boundary restarts. A strong version predicts visible line/phrase restart after 692; a weaker version predicts syntactic restart by opener-class tails even when the object does not physically break after 692.",
+  "source_panels_checked": {
+    "M-23": {
+      "local_source": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-23_a.jpg",
+      "catalog_text": "+842-871-192-368/740-482-060-692-520-220-235-001-920+",
+      "tail_after_692": "520",
+      "observation": "Two-line object; slash is before 740, not after 692. The 520 tail appears within the lower text segment, so this does not support a physical line break after 692."
+    },
+    "M-234": {
+      "local_source": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-234_a.jpg",
+      "catalog_text": "+842-535-099-004/740-482-060-692-520-220-235-001-920+",
+      "tail_after_692": "520",
+      "observation": "Two-line object; same pattern as M-23. Supports repeated syntactic tail, not a visible post-692 line restart."
+    },
+    "M-317": {
+      "local_source": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-317_a.jpg",
+      "catalog_text": "+255-060-692-401-920+",
+      "tail_after_692": "401",
+      "observation": "Small/damaged panel; no visible line-break support. The 401 tail remains an opener-class statistical fact only."
+    },
+    "M-626": {
+      "local_source": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-626_a.png",
+      "catalog_text": "+842-374-125/740-803-060-692-740-690-435-255-060-692+",
+      "tail_after_692": "740",
+      "observation": "Two-line object; slash is before 740, not after the first 692. The first 740 tail after 692 is in-line, while the final 060-692 is terminal."
+    },
+    "M-1127": {
+      "local_source": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-1127_a.jpg",
+      "catalog_text": "+060-692/740-269-140-002+",
+      "tail_after_692": "740",
+      "observation": "This is the only checked row where the catalog slash directly follows 060-692, supporting a physical post-692 restart."
+    }
+  },
+  "decision": "keep_internal_boundary_candidate; demote strong physical-line-restart version",
+  "model_update": "The surviving claim is syntactic/local-boundary restart: all five nonterminal tails are opener-class signs. The stronger claim that 692 visibly closes a physical line/segment is supported only by M-1127 in this peek.",
+  "prediction": "A blind/source-boxed review should test whether the post-692 520/740/401 tails are visually grouped as new subphrases even when not separated by a line break. If reviewers see ordinary continuation instead, demote 692 back to a near-cap exception class."
+}

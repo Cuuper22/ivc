@@ -1,0 +1,51 @@
+{
+  "date": "2026-05-29",
+  "status": "expanded_meluhha_cuneiform_inventory_no_accepted_external_anchor",
+  "counts": {
+    "sources_requested": 10,
+    "fetches_attempted": 18,
+    "fetches_failed": 0,
+    "cuneiform_attestations_expanded": 16,
+    "accepted_external_anchors": 0
+  },
+  "by_system": {
+    "BDTNS": 3,
+    "CDLI": 13
+  },
+  "by_token_type": {
+    "personal_name_with_origin_or_patronymic": 2,
+    "object_or_commodity_designation_with_meluhha": 1,
+    "personal_name_adjacent_to_meluhha_title": 1,
+    "ethnonym_title_or_origin": 1,
+    "toponym_in_route_list": 1,
+    "ship_or_trade_route_context": 4,
+    "commodity_route_context": 2,
+    "animal_or_object_label_with_meluhha_modifier": 1,
+    "literary_toponym_or_ship_context": 1,
+    "ethnonym_in_literary_trade_context": 1,
+    "ethnonym_group_or_title": 1
+  },
+  "by_source": {
+    "BDTNS 000128 / BM 014594": 2,
+    "BDTNS 011069 / IM U. 03884": 1,
+    "P212982 / CT 50, 076": 2,
+    "P232277 / RIME 3/1.01.07, St D witness": 1,
+    "P431881 / RIME 3/1.01.07, Cyl A composite": 3,
+    "P431882 / RIME 3/1.01.07, Cyl B composite": 1,
+    "P432309 / RIME 3/2.01.05.04 composite": 1,
+    "P469516 / CDLI Literary 000334 (Enki and World Order)": 3,
+    "P469679 / CDLI Literary 000375 (Curse of Agade)": 1,
+    "P516138 / CUSAS 40, 1354": 1
+  },
+  "files": {
+    "cuneiform_attestations_expanded": "data/meluhha/cuneiform_attestations_expanded.csv",
+    "cuneiform_fetch_log": "data/meluhha/cuneiform_fetch_log.csv",
+    "meluhha_token_inventory": "data/meluhha/meluhha_token_inventory.json"
+  },
+  "caveats": [
+    "This inventory is source-side evidence only and contains no accepted Indus external anchor.",
+    "Composite literary texts are separated as context sources; they are not treated as object-level bilinguals.",
+    "Line translations are whatever the fetched digital edition exposes; blank translation means the fetch did not expose one.",
+    "Any Meluhha-Indus pairing still requires a forger false-positive gate and skeptic review before ledger promotion."
+  ]
+}

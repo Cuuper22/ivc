@@ -1,0 +1,5 @@
+checked_date,check_id,result,evidence,consequence
+2026-05-31,SAME_REGISTER_LAYOUT_NULL_EXPLAINS_ALL,partial_fail_keep_local_frame_residual,same register target frames split: 125 is open in 3/3 metadata rows and 2/2 strict rows; 095 and 692 are terminal in their strict rows,"Do not collapse the entire parser into register layout; keep local frame-conditioned syntax, not script-wide grammar."
+2026-05-31,X_INTRINSIC_POLARITY,pass_kill_intrinsic_values,125 outside terminal=7/20; 692 outside terminal=21/30; 095 outside=0,A sign-level reading like 125=open or 692=closed is killed; behavior is frame/context conditioned.
+2026-05-31,FRAME_EFFECT_RESIDUAL,partial_candidate_125_only,125 target terminal=0/3 versus outside terminal=7/20; 692 target terminal=1/1 versus outside terminal=21/30,The strongest surviving frame effect is 002-390-125 as open/continuing; 692 terminality is partly background behavior.
+2026-05-31,SEMANTIC_READING_PRESSURE,pass_demote_semantics,same-register background is mixed and source status is metadata-level for most outside rows,No rank/title/status/result/closure translation can be promoted from this test.

@@ -1,0 +1,48 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "cisi31_access_acquisition_routes",
+  "route_rows": 14,
+  "bibliographic_or_contents_routes": 4,
+  "library_routes": 1,
+  "bookseller_or_purchase_routes": 4,
+  "sent_acquisition_requests": 1,
+  "sent_messages": [
+    {
+      "recipient": "tiedekirja@tsv.fi",
+      "message_id": "19e5f05e8752244a",
+      "thread_id": "19e5f05e8752244a",
+      "subject": "Availability/shipping question: Corpus of Indus Seals and Inscriptions 3.1 (ISBN 978-951-41-1040-5)"
+    }
+  ],
+  "core_identifiers": {
+    "isbn": "978-951-41-1040-5",
+    "oclc": "718357051",
+    "volume": "Corpus of Indus Seals and Inscriptions 3.1, Part 1: Mohenjo-daro and Harappa"
+  },
+  "status": "tiedekirja_available_invoice_requested_no_payment_made",
+  "accepted_decipherment_claims": 0,
+  "research_conclusion": "CISI 3.1 access is now a live purchase lane: public and secondary routes identify it as the Mohenjo-daro/Harappa supplement, a secondary review states its Mohenjo-daro range is m1660-m2132, Tiedekirja confirmed availability and no digital access, and an invoice/payment-link request has been sent. This does not validate any source row, sign, or reading until the volume is received and inspected.",
+  "bookseller_replies": 1,
+  "invoice_requests_sent": 1,
+  "purchase_quote": {
+    "book_eur": 70.0,
+    "ups_shipping_eur": 48.25,
+    "total_eur": 118.25,
+    "legal_digital_available": false,
+    "payment_made": false
+  },
+  "reply_messages": [
+    {
+      "sender": "tiedekirja@tsv.fi",
+      "message_id": "19e5f34b614ce407",
+      "summary": "Volume available; EUR 118.25 total with UPS shipping to USA; no digital form."
+    },
+    {
+      "recipient": "tiedekirja@tsv.fi",
+      "message_id": "19e5fbf666770e04",
+      "summary": "Invoice/payment-link request sent; no payment made."
+    }
+  ],
+  "secondary_range_routes": 1,
+  "bibliographic_no_ebook_routes": 1
+}

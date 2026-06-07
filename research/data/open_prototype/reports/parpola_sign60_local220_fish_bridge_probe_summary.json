@@ -1,0 +1,111 @@
+{
+  "date": "2026-05-26",
+  "status": "local220_sign60_candidate_strengthened_not_accepted",
+  "research_question": "Can local Lipi 220 be promoted from a fish-form candidate to Parpola 2019 article sign no. 60?",
+  "answer": "No accepted crosswalk yet. The candidate is stronger because article sign no. 60 is sourced as a plain fish, Mayig P050 is an undecorated fish namespace witness, local 220 repeatedly aligns to P050 in the current overlap layer, and M-37 gives a source-visible object row for +520-220-415+.",
+  "row_count": 10,
+  "accepted_crosswalk_count": 0,
+  "accepted_translation_count": 0,
+  "source_visuals": [
+    {
+      "path": "tmp/parpola_1994_signlist/rendered/fig5_1-089.png",
+      "width": 1805,
+      "height": 2357,
+      "sha256": "8AFCF0D1D4662FC47014FDBF6CD6CED0F85E0FF07C2799169758E2AC2FF6996B",
+      "role": "Parpola 1994 Fig. 5.1 visual anchor for article sign no. 60"
+    },
+    {
+      "path": "tmp/m1206_terminal_triad_source_recheck/derived/m37_A_signband_v2.png",
+      "width": 840,
+      "height": 280,
+      "sha256": "DD2929FF41275EF795138FA7D7B9FE058C6431C352D4D01C5A54B7D2AB23E9E5",
+      "role": "M-37 source-visible +520-220-415+ signband and strongest local 220 object candidate"
+    },
+    {
+      "path": "tmp/m1206_m37_blind_visual_comparanda/derived/verified_panel_crops/H938_A_panel.png",
+      "width": 560,
+      "height": 420,
+      "sha256": "F5C4752806A64B312E067795B15CAB9E6A415690D93A2596CACEC59C558A75AC",
+      "role": "H-938 source-visible +520-220-415+ control for future middle-component crop"
+    },
+    {
+      "path": "tmp/h940_higher_res_route/derived/h940_a_panel_from_iiif_max_gray_autocontrast.png",
+      "width": 700,
+      "height": 430,
+      "sha256": "4B81ACEC167485909C4BF19C678532CCE96DD51BC8C2C24D53E0645D625710C9",
+      "role": "H-940 source-visible +520-220-415+ control for future middle-component crop"
+    },
+    {
+      "path": "tmp/m1206_singleton_controls/derived/h942/H942_A_signband_from_cisi_pakistan_n374.png",
+      "width": 520,
+      "height": 190,
+      "sha256": "1A093A16F8E1D641736896512AB2F193C0E63B58205C6D48F3D21D52B8C37543",
+      "role": "H-942 source-visible +520-220-016+ stress/control signband for future middle-component crop"
+    }
+  ],
+  "crosswalk_pressure": {
+    "mayig_p050_description": "Fish with no other decoration",
+    "mayig_p050_parpola_graphemes": [
+      "V177",
+      "V517"
+    ],
+    "mayig_p050_wells_graphemes": [
+      "W220"
+    ],
+    "mayig_p050_mahadevan_graphemes": [
+      "M059"
+    ],
+    "local_220_to_p050_overlap_rows": 27,
+    "m37_overlap": {
+      "local": "520 220 415",
+      "mayig": "P217 P050 P092",
+      "evidence_status": "provisional_position_alignment_only"
+    }
+  },
+  "local_frame_counts": {
+    "rows_starting_520_220_x": 52,
+    "third_slot_type_count": 16,
+    "third_slot_counts": {
+      "415": 28,
+      "240": 5,
+      "002": 3,
+      "016": 3,
+      "003": 2,
+      "001": 1,
+      "004": 1,
+      "006": 1,
+      "031": 1,
+      "032": 1,
+      "034": 1,
+      "235": 1,
+      "368": 1,
+      "621": 1,
+      "742": 1,
+      "803": 1
+    },
+    "exact_three_sign_520_220_x_rows": 21,
+    "exact_three_sign_terminal_counts": {
+      "415": 17,
+      "003": 1,
+      "006": 1,
+      "016": 1,
+      "034": 1
+    }
+  },
+  "admissible_now": [
+    "Parpola article sign no. 60 is a plain fish-form target in the checked convention",
+    "Mayig P050 is the relevant undecorated-fish namespace witness, unlike rejected V060/M060 shortcuts",
+    "local 220 has repeated provisional overlap pressure to P050",
+    "M-37 is the strongest current source-visible object candidate for local 220 in the +520-220-415+ frame"
+  ],
+  "blocked_claims": [
+    "local 220 = Parpola article sign no. 60",
+    "Mayig P050 = Parpola article sign no. 60",
+    "Wells W220 = local Lipi 220",
+    "sign no. 60 semantic value",
+    "fish lexical reading",
+    "phonetic value",
+    "translation"
+  ],
+  "next_required_evidence": "A source-normalized middle-sign crop packet isolating local 220 from M-37 and other source-visible +520-220-X controls, followed by blind comparison against Parpola 1994 sign no. 60 variants and Mayig P050 examples."
+}

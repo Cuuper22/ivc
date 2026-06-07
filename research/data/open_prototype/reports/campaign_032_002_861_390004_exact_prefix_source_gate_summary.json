@@ -1,0 +1,30 @@
+{
+  "date": "2026-05-29",
+  "question": "Can the exact prefix 390-004-002-861 be promoted from catalog split to source-visible sign-system alternation?",
+  "route_decision": {
+    "H-55": "positive_witness_source_visible_but_not_token_value_accepted",
+    "M-1750": "negative_witness_acquisition_gated_no_grammar_promotion"
+  },
+  "main_result": "H-55 is source-visible as a same-line five-glyph positive witness; M-1750 is public-source-dark, so the exact-prefix split remains acquisition-gated and cannot promote grammar.",
+  "counts": {
+    "starts_390004_rows": 21,
+    "starts_390004_002_y_rows": 10,
+    "125_occurrences": 59,
+    "post_002_861_125_occurrences": 1,
+    "exact_prefix_mixed_candidates": 1
+  },
+  "branch_after_390_004_002": {
+    "031": 1,
+    "390": 1,
+    "705": 1,
+    "817": 4,
+    "820": 1,
+    "861": 2
+  },
+  "125_classes": {
+    "other_125_context": 58,
+    "post_002_861_125": 1
+  },
+  "linguistic_state": "live acquisition target, not accepted grammar; if M-1750 is later source-visible with tail-sized terminal room, the live hypotheses are closure-plus-terminal-addendum, register-conditioned subclass, and whole-template alternation.",
+  "accepted_values_translations": 0
+}

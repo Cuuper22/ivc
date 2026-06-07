@@ -1,0 +1,4 @@
+checked_date,decision,tier_change,evidence,consequence
+2026-05-31,minimal_parser_not_promoted,candidate_not_promoted,raw grammar=0.740506; raw scope_null=0.718354; pair-collapse grammar=0.640693; pair-collapse scope_null=0.645022,The hierarchy is useful but too close to scope nulls under collapse; keep it as candidate only.
+2026-05-31,h_x_pair_rule_requires_repeat_and_scope_audit,narrowed_candidate,scope-pair-tail grammar=0.700000; pair-tail grammar=0.658436,Any H-X rule must report whether it survives outside exact scope/tail families.
+2026-05-31,scope_null_remains_destructive_test,adversary_strengthened,scope-first null raw=0.718354; pair-collapse scope-first=0.645022,Future parser claims must beat a scope-first null on the same held-out/collapse split.

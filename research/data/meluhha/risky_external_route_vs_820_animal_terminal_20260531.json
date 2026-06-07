@@ -1,0 +1,442 @@
+{
+  "run_date": "2026-05-31T14:16:00-07:00",
+  "tier": "candidate, region-sensitive after hostile leaveout",
+  "risky_bet": "External-contact Indus-style rows carry a route/register signal, not the new animal-terminal signal: signs 090/091 should be enriched in the external set, especially circular seals, while terminal 002-820 should be absent.",
+  "observed": {
+    "total": 39,
+    "route_090091": 12,
+    "sign_407": 1,
+    "terminal_002_820": 0,
+    "any_820": 1,
+    "route_or_407": 12
+  },
+  "observed_readable": "External exact-text-dedup rows: 090/091 in 12/39; terminal 002-820 in 0/39; SEAL:C external 090/091 in 12/17 versus background SEAL:C 4/14.",
+  "type_matched_route_false_positive_rate": 0.00762,
+  "type_matched_route_and_no_002820_false_positive_rate": 0.00436,
+  "sealc_route_false_positive_rate": 0.00028,
+  "hostile_leaveout_20260531": {
+    "report": "data/meluhha/consolidate_external_090091_leaveout_20260531.json",
+    "decision": "demote: route signal is real but not robust to all leave-one-group cuts",
+    "observed_nulls": {
+      "type_matched_route_fpr": 0.00844,
+      "type_matched_route_and_no_002820_fpr": 0.00504,
+      "sealc_route_fpr": 0.00056
+    },
+    "worst_site": {
+      "removed": "Failaka",
+      "kept_route_090091": "10/37",
+      "type_matched_route_fpr": 0.03264,
+      "sealc_route_fpr": 0.00252
+    },
+    "worst_region": {
+      "removed": "Persian Gulf",
+      "kept_route_090091": "5/24",
+      "type_matched_route_fpr": 0.21824,
+      "sealc_route_fpr": 0.04928
+    },
+    "effect": "Do not state 090/091 as a portable all-external marker. The live version is narrower: a Gulf-weighted circular-route/register lane with Susa as a source-bound but sequence-unverified extension."
+  },
+  "failaka_source_check_20260531": {
+    "report": "data/meluhha/failaka_090091_late_emulation_source_check_20260531.json",
+    "source": "Laursen 2010 PDF lines 1753-1770 and 1883-1885",
+    "decision": "demote Failaka support: source-visible Failaka pressure exists, but at least one key object is explicitly described as later Dilmun-style pseudo-Indus/unparalleled script, and local rows 147.1/148.1 are not mapped to Kjaerum no.279/no.319.",
+    "effect": "The live 090/091 candidate is an external Gulf/Dilmun emulation-route marker, not a clean Meluhha phonetic bridge."
+  },
+  "route_position_test": {
+    "risky_bet": "If 090/091 is an external route/register marker rather than an arbitrary sign reused abroad, its external occurrences should skew toward terminal or near-terminal positions more than local occurrences.",
+    "external_090091_occurrences": 11,
+    "external_terminal": 5,
+    "external_near_terminal": 7,
+    "local_090091_occurrences": 202,
+    "local_terminal": 35,
+    "local_near_terminal": 56,
+    "terminal_fisher_greater_p": 0.03532034903412634,
+    "near_terminal_fisher_greater_p": 0.017277041386541236,
+    "interpretation": "This is weak but aligned with the route/register bet: external 090/091 is not only enriched, it is also more often at the right edge of the readable sequence. Treat as candidate pressure only, because the sample is small and catalogue-mediated."
+  },
+  "sign_407_context_test": {
+    "risky_bet": "The Susa external row +700-604-407-090-365-000+ is not random co-occurrence; 407 is a local administrative/register sign that can travel with the 090 external route lane.",
+    "observed_407_hits": 128,
+    "exact_text_dedup_407_hits": 70,
+    "observed_407_by_type_top": {
+      "TAB:C": 64,
+      "SEAL:R": 35,
+      "TAB:B": 14,
+      "SEAL:S": 10,
+      "POT:T:g": 2,
+      "SEAL:C": 1
+    },
+    "exact_text_dedup_407_by_type": {
+      "SEAL:R": 35,
+      "TAB:C": 17,
+      "SEAL:S": 9,
+      "TAB:B": 4,
+      "POT:T:g": 2,
+      "SEAL:C": 1
+    },
+    "407_with_090_or_091_rows": 1,
+    "external_407_rows": [
+      {
+        "id": "3881.1",
+        "site": "Susa",
+        "type": "SEAL:C",
+        "shape": "circular",
+        "symbol": "Gaur",
+        "text": "+700-604-407-090-365-000+"
+      }
+    ],
+    "source_check_20260531": {
+      "report": "data/meluhha/susa_3881_sb5614_source_check_20260531.json",
+      "source": "Louvre https://collections.louvre.fr/ark:/53355/cl010179441",
+      "matched_object": "SB 5614 / AS 15374, Susa circular seal, six signs above a bovid",
+      "decision": "object_source_bound_sequence_unverified",
+      "effect": "The object-level existence/context objection is killed, but the exact local sign sequence +700-604-407-090-365-000+ and the 407+090 bridge are not independently verified from the downloaded photographs."
+    },
+    "interpretation": "407 is not yet an external anchor, but it is a concrete V1 bet: Susa 3881.1 is now source-bound to Louvre SB 5614 as a real external circular bovid seal with six signs. The raw tablet-heavy 407 signal is duplicate-inflated; after exact-text dedup the better description is rectangular/no-iconography and SEAL:R-heavy, with a remaining TAB:C component. The corpus-level 407+090/091 co-occurrence is unique to Susa 3881.1 in the current metadata, but after source inspection the 407+090 claim remains catalog-dependent rather than promoted."
+  },
+  "interpretation": "This is a region-sensitive candidate search discriminator: it says the V1 external bridge should chase 090/091 especially in Gulf/Dilmun circular-route or emulation objects and test whether Susa 3881.1 is a real extension of that lane, while keeping 820/Rhin in a separate animal-icon terminal lane.",
+  "non_claim": "No sound value, language ID, translation, or object-level bilingual is claimed. The external object list is catalogue-mediated and remains source-check-gated.",
+  "falsifier": "A source-checked true-Gulf-Type batch without 090/091, multiple terminal 002-820 animal rows, or a split showing that 090/091 enrichment is carried mainly by late Dilmun/pseudo-Indus emulations kills the broad discriminator and leaves only a local imitation hypothesis.",
+  "route_rows": [
+    {
+      "id": "147.1",
+      "cisi": "-",
+      "region": "Persian Gulf",
+      "site": "Failaka",
+      "type": "SEAL:C",
+      "material": "NA",
+      "shape": "circular",
+      "symbol": "Gaur",
+      "text_length": "4",
+      "text": "+317-817-000-090+",
+      "signs": [
+        "317",
+        "817",
+        "000",
+        "090"
+      ]
+    },
+    {
+      "id": "148.1",
+      "cisi": "-",
+      "region": "Persian Gulf",
+      "site": "Failaka",
+      "type": "SEAL:C",
+      "material": "NA",
+      "shape": "circular",
+      "symbol": "NA",
+      "text_length": "4+?",
+      "text": "]090-001-350-716+",
+      "signs": [
+        "090",
+        "001",
+        "350",
+        "716"
+      ]
+    },
+    {
+      "id": "5551.1",
+      "cisi": "-",
+      "region": "Persian Gulf",
+      "site": "Kalba",
+      "type": "SEAL:C",
+      "material": "NA",
+      "shape": "NA",
+      "symbol": "NA",
+      "text_length": "1",
+      "text": "+091+",
+      "signs": [
+        "091"
+      ]
+    },
+    {
+      "id": "2153.1",
+      "cisi": "-",
+      "region": "Iranian Plateau",
+      "site": "Luristan",
+      "type": "SEAL:C",
+      "material": "NA",
+      "shape": "circular",
+      "symbol": "Gaur",
+      "text_length": "4",
+      "text": "+831-413-840-091+",
+      "signs": [
+        "831",
+        "413",
+        "840",
+        "091"
+      ]
+    },
+    {
+      "id": "3863.1",
+      "cisi": "-",
+      "region": "Persian Gulf",
+      "site": "Qala'at al-Bahrain",
+      "type": "SEAL:C",
+      "material": "Steatite",
+      "shape": "circular",
+      "symbol": "Gaur",
+      "text_length": "5",
+      "text": "+160-090-055-060-190+",
+      "signs": [
+        "160",
+        "090",
+        "055",
+        "060",
+        "190"
+      ]
+    },
+    {
+      "id": "3881.1",
+      "cisi": "-",
+      "region": "Iranian Plateau",
+      "site": "Susa",
+      "type": "SEAL:C",
+      "material": "NA",
+      "shape": "circular",
+      "symbol": "Gaur",
+      "text_length": "6",
+      "text": "+700-604-407-090-365-000+",
+      "signs": [
+        "700",
+        "604",
+        "407",
+        "090",
+        "365",
+        "000"
+      ]
+    },
+    {
+      "id": "3899.1",
+      "cisi": "-",
+      "region": "Mesopotamia",
+      "site": "Ur",
+      "type": "SEAL:C",
+      "material": "NA",
+      "shape": "circular",
+      "symbol": "Gaur",
+      "text_length": "5",
+      "text": "+000-000-004-090-350+",
+      "signs": [
+        "000",
+        "000",
+        "004",
+        "090",
+        "350"
+      ]
+    },
+    {
+      "id": "5225.1",
+      "cisi": "-",
+      "region": "Mesopotamia",
+      "site": "Ur",
+      "type": "SEAL:C",
+      "material": "NA",
+      "shape": "circular",
+      "symbol": "NA",
+      "text_length": "5+?",
+      "text": "]000-001-000-090-000[",
+      "signs": [
+        "000",
+        "001",
+        "000",
+        "090",
+        "000"
+      ]
+    },
+    {
+      "id": "5227.1",
+      "cisi": "-",
+      "region": "Persian Gulf",
+      "site": "Karzakan",
+      "type": "SEAL:C",
+      "material": "NA",
+      "shape": "circular",
+      "symbol": "Gaur",
+      "text_length": "4",
+      "text": "+220-455-031-091+",
+      "signs": [
+        "220",
+        "455",
+        "031",
+        "091"
+      ]
+    },
+    {
+      "id": "5228.1",
+      "cisi": "-",
+      "region": "Persian Gulf",
+      "site": "Karzakan",
+      "type": "SEAL:C",
+      "material": "NA",
+      "shape": "circular",
+      "symbol": "Gaur",
+      "text_length": "4",
+      "text": "+033-001-032-091+",
+      "signs": [
+        "033",
+        "001",
+        "032",
+        "091"
+      ]
+    },
+    {
+      "id": "5229.1",
+      "cisi": "-",
+      "region": "Persian Gulf",
+      "site": "Saar",
+      "type": "SEAL:C",
+      "material": "NA",
+      "shape": "circular",
+      "symbol": "NA",
+      "text_length": "6",
+      "text": "+031-093-001-091-220-055+",
+      "signs": [
+        "031",
+        "093",
+        "001",
+        "091",
+        "220",
+        "055"
+      ]
+    },
+    {
+      "id": "5231.1",
+      "cisi": "-",
+      "region": "Mesopotamia",
+      "site": "Ur",
+      "type": "SEAL:C",
+      "material": "NA",
+      "shape": "NA",
+      "symbol": "NA",
+      "text_length": "2+?",
+      "text": "]405-090[",
+      "signs": [
+        "405",
+        "090"
+      ]
+    }
+  ],
+  "any_820_rows": [
+    {
+      "id": "5405.1",
+      "cisi": "-",
+      "region": "Iranian Plateau",
+      "site": "Ornach area",
+      "type": "SEAL:S",
+      "material": "NA",
+      "shape": "NA",
+      "symbol": "Zebu",
+      "text_length": "4+?",
+      "text": "]000-374-000-820+",
+      "signs": [
+        "000",
+        "374",
+        "000",
+        "820"
+      ]
+    }
+  ],
+  "terminal_002_820_rows": [],
+  "type_summary": [
+    {
+      "type": "SEAL:C",
+      "external_total": 17,
+      "external_route_090091": 12,
+      "external_407": 1,
+      "external_002_820_terminal": 0,
+      "background_total": 14,
+      "background_route_090091": 4,
+      "background_407": 0,
+      "background_002_820_terminal": 0
+    },
+    {
+      "type": "SEAL:S",
+      "external_total": 13,
+      "external_route_090091": 0,
+      "external_407": 0,
+      "external_002_820_terminal": 0,
+      "background_total": 1532,
+      "background_route_090091": 79,
+      "background_407": 10,
+      "background_002_820_terminal": 50
+    },
+    {
+      "type": "POT:T:g",
+      "external_total": 3,
+      "external_route_090091": 0,
+      "external_407": 0,
+      "external_002_820_terminal": 0,
+      "background_total": 282,
+      "background_route_090091": 7,
+      "background_407": 2,
+      "background_002_820_terminal": 1
+    },
+    {
+      "type": "TAB:I",
+      "external_total": 1,
+      "external_route_090091": 0,
+      "external_407": 0,
+      "external_002_820_terminal": 0,
+      "background_total": 296,
+      "background_route_090091": 11,
+      "background_407": 0,
+      "background_002_820_terminal": 0
+    },
+    {
+      "type": "SEAL:CY",
+      "external_total": 1,
+      "external_route_090091": 0,
+      "external_407": 0,
+      "external_002_820_terminal": 0,
+      "background_total": 5,
+      "background_route_090091": 1,
+      "background_407": 0,
+      "background_002_820_terminal": 0
+    },
+    {
+      "type": "TAG:L",
+      "external_total": 1,
+      "external_route_090091": 0,
+      "external_407": 0,
+      "external_002_820_terminal": 0,
+      "background_total": 24,
+      "background_route_090091": 4,
+      "background_407": 0,
+      "background_002_820_terminal": 0
+    },
+    {
+      "type": "POT:T:s",
+      "external_total": 1,
+      "external_route_090091": 0,
+      "external_407": 0,
+      "external_002_820_terminal": 0,
+      "background_total": 42,
+      "background_route_090091": 0,
+      "background_407": 0,
+      "background_002_820_terminal": 0
+    },
+    {
+      "type": "TAG",
+      "external_total": 1,
+      "external_route_090091": 0,
+      "external_407": 0,
+      "external_002_820_terminal": 0,
+      "background_total": 122,
+      "background_route_090091": 5,
+      "background_407": 0,
+      "background_002_820_terminal": 4
+    },
+    {
+      "type": "SEAL",
+      "external_total": 1,
+      "external_route_090091": 0,
+      "external_407": 0,
+      "external_002_820_terminal": 0,
+      "background_total": 61,
+      "background_route_090091": 2,
+      "background_407": 0,
+      "background_002_820_terminal": 1
+    }
+  ]
+}

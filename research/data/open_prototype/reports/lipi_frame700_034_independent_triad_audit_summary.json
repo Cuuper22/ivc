@@ -1,0 +1,396 @@
+{
+  "generated_at": "2026-05-25",
+  "input_triads": 93,
+  "audited_triads": 93,
+  "archive_request_rows": 30,
+  "archive_request_triads": 10,
+  "counts_by_evidence_tier": {
+    "C_repeated_target_family_pressure": 45,
+    "B_source_ready_with_direction_or_reuse_pressure": 35,
+    "B_source_ready_needs_metadata_review": 7,
+    "A_independent_source_ready": 4,
+    "D_source_hook_gap": 2
+  },
+  "counts_by_source_gap_status": {
+    "all_three_have_source_hooks": 91,
+    "control_source_hook_missing": 1,
+    "target_source_hook_missing": 1
+  },
+  "counts_by_copy_family_pressure": {
+    "no_extra_pressure_flag": 47,
+    "repeated_target_long_set_28": 28,
+    "repeated_target_long_set_9;acquisition_sequence_family_7": 7,
+    "repeated_target_long_set_4": 4,
+    "repeated_target_long_set_5;acquisition_sequence_family_3": 3,
+    "repeated_target_long_set_5": 2,
+    "repeated_target_long_set_9": 2
+  },
+  "counts_by_source_prefix_pressure": {
+    "source_prefix_seen_35": 35,
+    "source_prefix_seen_9": 18,
+    "no_extra_pressure_flag": 12,
+    "source_prefix_seen_12": 12,
+    "source_prefix_seen_6": 12,
+    "source_prefix_seen_4": 4
+  },
+  "top_independent_triads": [
+    {
+      "independence_rank": 1,
+      "original_triad_rank": "51",
+      "target": "H-1850/+700-034+/382;400;740;760",
+      "controls": "H-1842/+033-700+; H-1772/+700-032+",
+      "evidence_tier": "A_independent_source_ready",
+      "independence_score": 150,
+      "source_gap_status": "all_three_have_source_hooks",
+      "target_source_prefix": "H2001",
+      "target_long_set_count": 1,
+      "acquisition_family_count": 1,
+      "max_control_reuse": 2,
+      "next_source_action": "request_source_images_now_first_independent_batch"
+    },
+    {
+      "independence_rank": 2,
+      "original_triad_rank": "47",
+      "target": "H-771/+700-034+/032;257;840",
+      "controls": "H-789/+033-700+; H-1123/+700-032+",
+      "evidence_tier": "A_independent_source_ready",
+      "independence_score": 145,
+      "source_gap_status": "all_three_have_source_hooks",
+      "target_source_prefix": "numeric_catalog",
+      "target_long_set_count": 1,
+      "acquisition_family_count": 1,
+      "max_control_reuse": 2,
+      "next_source_action": "request_source_images_now_first_independent_batch"
+    },
+    {
+      "independence_rank": 3,
+      "original_triad_rank": "81",
+      "target": "H-1943/+700-034+/031;384;740",
+      "controls": "H-1940/+700-033+; H-854/+700-032+",
+      "evidence_tier": "A_independent_source_ready",
+      "independence_score": 142,
+      "source_gap_status": "all_three_have_source_hooks",
+      "target_source_prefix": "H2000",
+      "target_long_set_count": 1,
+      "acquisition_family_count": 1,
+      "max_control_reuse": 2,
+      "next_source_action": "request_source_images_now_first_independent_batch"
+    },
+    {
+      "independence_rank": 4,
+      "original_triad_rank": "71",
+      "target": "H-2204/+700-034+/027;032;400;740",
+      "controls": "H-2209/+700-033+; H-2217/+700-032+",
+      "evidence_tier": "A_independent_source_ready",
+      "independence_score": 131,
+      "source_gap_status": "all_three_have_source_hooks",
+      "target_source_prefix": "H95",
+      "target_long_set_count": 2,
+      "acquisition_family_count": 1,
+      "max_control_reuse": 2,
+      "next_source_action": "request_source_images_now_first_independent_batch"
+    },
+    {
+      "independence_rank": 5,
+      "original_triad_rank": "85",
+      "target": "H-2206/+700-034+/025;032;740",
+      "controls": "H-1347/+700-033+; H-2201/+700-032+",
+      "evidence_tier": "B_source_ready_needs_metadata_review",
+      "independence_score": 140,
+      "source_gap_status": "all_three_have_source_hooks",
+      "target_source_prefix": "H97",
+      "target_long_set_count": 1,
+      "acquisition_family_count": 1,
+      "max_control_reuse": 2,
+      "next_source_action": "request_source_images_after_first_independent_batch"
+    },
+    {
+      "independence_rank": 6,
+      "original_triad_rank": "66",
+      "target": "H-1867/+700-034+/151;221;740",
+      "controls": "H-1915/+700-033+; H-1771/+700-032+",
+      "evidence_tier": "B_source_ready_needs_metadata_review",
+      "independence_score": 132,
+      "source_gap_status": "all_three_have_source_hooks",
+      "target_source_prefix": "H90",
+      "target_long_set_count": 1,
+      "acquisition_family_count": 1,
+      "max_control_reuse": 2,
+      "next_source_action": "request_source_images_after_first_independent_batch"
+    },
+    {
+      "independence_rank": 7,
+      "original_triad_rank": "79",
+      "target": "H-351/+700-034+/013;032;060;400;740",
+      "controls": "H-353/+700-033+; H-1294/+700-032+",
+      "evidence_tier": "B_source_ready_needs_metadata_review",
+      "independence_score": 130,
+      "source_gap_status": "all_three_have_source_hooks",
+      "target_source_prefix": "numeric_catalog",
+      "target_long_set_count": 1,
+      "acquisition_family_count": 1,
+      "max_control_reuse": 3,
+      "next_source_action": "request_source_images_after_first_independent_batch"
+    },
+    {
+      "independence_rank": 8,
+      "original_triad_rank": "83",
+      "target": "H-350/+700-034+/240;642;690;740",
+      "controls": "H-296/+700-033+; H-943/+700-032+",
+      "evidence_tier": "B_source_ready_needs_metadata_review",
+      "independence_score": 121,
+      "source_gap_status": "all_three_have_source_hooks",
+      "target_source_prefix": "numeric_catalog",
+      "target_long_set_count": 1,
+      "acquisition_family_count": 1,
+      "max_control_reuse": 2,
+      "next_source_action": "request_source_images_after_first_independent_batch"
+    },
+    {
+      "independence_rank": 9,
+      "original_triad_rank": "92",
+      "target": "H-2246/+700-034+/032;415;578;740;760;799;824;840",
+      "controls": "H-2214/+700-033+; H-2201/+700-032+",
+      "evidence_tier": "B_source_ready_needs_metadata_review",
+      "independence_score": 108,
+      "source_gap_status": "all_three_have_source_hooks",
+      "target_source_prefix": "H2001",
+      "target_long_set_count": 1,
+      "acquisition_family_count": 1,
+      "max_control_reuse": 2,
+      "next_source_action": "request_source_images_after_first_independent_batch"
+    },
+    {
+      "independence_rank": 10,
+      "original_triad_rank": "88",
+      "target": "H-1354/+700-034+/032;415;578;714;740;799;824;840",
+      "controls": "H-987/+700-033+; H-362/+700-032+",
+      "evidence_tier": "B_source_ready_needs_metadata_review",
+      "independence_score": 102,
+      "source_gap_status": "all_three_have_source_hooks",
+      "target_source_prefix": "numeric_catalog",
+      "target_long_set_count": 1,
+      "acquisition_family_count": 1,
+      "max_control_reuse": 2,
+      "next_source_action": "request_source_images_after_first_independent_batch"
+    },
+    {
+      "independence_rank": 11,
+      "original_triad_rank": "93",
+      "target": "H-363/+700-034+/263;565;741",
+      "controls": "H-355/+700-033+; H-362/+700-032+",
+      "evidence_tier": "B_source_ready_needs_metadata_review",
+      "independence_score": 97,
+      "source_gap_status": "all_three_have_source_hooks",
+      "target_source_prefix": "numeric_catalog",
+      "target_long_set_count": 1,
+      "acquisition_family_count": 1,
+      "max_control_reuse": 2,
+      "next_source_action": "request_source_images_after_first_independent_batch"
+    },
+    {
+      "independence_rank": 12,
+      "original_triad_rank": "24",
+      "target": "H-1937/+034-700+/255;435;690;740",
+      "controls": "H-1933/+700-033+; H-1931/+700-032+",
+      "evidence_tier": "B_source_ready_with_direction_or_reuse_pressure",
+      "independence_score": 160,
+      "source_gap_status": "all_three_have_source_hooks",
+      "target_source_prefix": "H98",
+      "target_long_set_count": 1,
+      "acquisition_family_count": 1,
+      "max_control_reuse": 1,
+      "next_source_action": "request_source_images_after_first_independent_batch"
+    },
+    {
+      "independence_rank": 13,
+      "original_triad_rank": "41",
+      "target": "H-1832/+700-034+/176;297;352;400;590;740;892",
+      "controls": "H-1839/+700-033+; H-1853/+700-032+",
+      "evidence_tier": "B_source_ready_with_direction_or_reuse_pressure",
+      "independence_score": 142,
+      "source_gap_status": "all_three_have_source_hooks",
+      "target_source_prefix": "H2000",
+      "target_long_set_count": 1,
+      "acquisition_family_count": 1,
+      "max_control_reuse": 5,
+      "next_source_action": "request_source_images_after_first_independent_batch"
+    },
+    {
+      "independence_rank": 14,
+      "original_triad_rank": "42",
+      "target": "H-1845/+700-034+/060;240;642;692;740",
+      "controls": "H-770/+700-033+; H-1853/+700-032+",
+      "evidence_tier": "B_source_ready_with_direction_or_reuse_pressure",
+      "independence_score": 142,
+      "source_gap_status": "all_three_have_source_hooks",
+      "target_source_prefix": "H2000",
+      "target_long_set_count": 1,
+      "acquisition_family_count": 1,
+      "max_control_reuse": 5,
+      "next_source_action": "request_source_images_after_first_independent_batch"
+    },
+    {
+      "independence_rank": 15,
+      "original_triad_rank": "45",
+      "target": "H-1817/+700-034+/400;525;554",
+      "controls": "H-1873/+700-033+; H-1902/+700-032+",
+      "evidence_tier": "B_source_ready_with_direction_or_reuse_pressure",
+      "independence_score": 140,
+      "source_gap_status": "all_three_have_source_hooks",
+      "target_source_prefix": "H94",
+      "target_long_set_count": 1,
+      "acquisition_family_count": 1,
+      "max_control_reuse": 5,
+      "next_source_action": "request_source_images_after_first_independent_batch"
+    }
+  ],
+  "first_archive_request_targets": [
+    {
+      "independence_rank": 1,
+      "target": "H-1850",
+      "controls": [
+        "H-1842",
+        "H-1772"
+      ],
+      "source_hooks": [
+        "H2001-5141;Figure 48.07",
+        "H95-2416;Figure 26.07",
+        "H2000-4437;Figure 39.05"
+      ],
+      "action": "request_source_images_now_first_independent_batch"
+    },
+    {
+      "independence_rank": 2,
+      "target": "H-771",
+      "controls": [
+        "H-789",
+        "H-1123"
+      ],
+      "source_hooks": [
+        "657678",
+        "12549604",
+        "9015360"
+      ],
+      "action": "request_source_images_now_first_independent_batch"
+    },
+    {
+      "independence_rank": 3,
+      "target": "H-1943",
+      "controls": [
+        "H-1940",
+        "H-854"
+      ],
+      "source_hooks": [
+        "H2000-4482;Figure 42.10",
+        "H2001-5072;Figure 44.05",
+        "10010647"
+      ],
+      "action": "request_source_images_now_first_independent_batch"
+    },
+    {
+      "independence_rank": 4,
+      "target": "H-2204",
+      "controls": [
+        "H-2209",
+        "H-2217"
+      ],
+      "source_hooks": [
+        "H95-2482;Figure 27.06",
+        "H95-2423",
+        "H95-2521;Figure 27.09"
+      ],
+      "action": "request_source_images_now_first_independent_batch"
+    },
+    {
+      "independence_rank": 5,
+      "target": "H-2206",
+      "controls": [
+        "H-1347",
+        "H-2201"
+      ],
+      "source_hooks": [
+        "H97-3334;Figure 15.05",
+        "1262896",
+        "H96-2781;Figure 20.08"
+      ],
+      "action": "request_source_images_after_first_independent_batch"
+    },
+    {
+      "independence_rank": 6,
+      "target": "H-1867",
+      "controls": [
+        "H-1915",
+        "H-1771"
+      ],
+      "source_hooks": [
+        "H90-1593;Figure 13.46 (k)",
+        "H2000-4469;Figure 42.12",
+        "H2000-4375;Figure 36.03"
+      ],
+      "action": "request_source_images_after_first_independent_batch"
+    },
+    {
+      "independence_rank": 7,
+      "target": "H-351",
+      "controls": [
+        "H-353",
+        "H-1294"
+      ],
+      "source_hooks": [
+        "2429581",
+        "1348",
+        "PII-1499"
+      ],
+      "action": "request_source_images_after_first_independent_batch"
+    },
+    {
+      "independence_rank": 8,
+      "target": "H-350",
+      "controls": [
+        "H-296",
+        "H-943"
+      ],
+      "source_hooks": [
+        "3534a576",
+        "12534457",
+        "3668461"
+      ],
+      "action": "request_source_images_after_first_independent_batch"
+    },
+    {
+      "independence_rank": 9,
+      "target": "H-2246",
+      "controls": [
+        "H-2214",
+        "H-2201"
+      ],
+      "source_hooks": [
+        "H2001-5145;Figure 47.05",
+        "H95-2498;Figure 27.03",
+        "H96-2781;Figure 20.08"
+      ],
+      "action": "request_source_images_after_first_independent_batch"
+    },
+    {
+      "independence_rank": 10,
+      "target": "H-1354",
+      "controls": [
+        "H-987",
+        "H-362"
+      ],
+      "source_hooks": [
+        "11349583",
+        "11715586",
+        "11371"
+      ],
+      "action": "request_source_images_after_first_independent_batch"
+    }
+  ],
+  "boundary": "Triad independence and archive request audit only. It ranks source-check opportunities and accepts no sign reading.",
+  "outputs": [
+    "data/open_prototype/reports/lipi_frame700_034_independent_triad_audit.csv",
+    "data/open_prototype/reports/lipi_frame700_034_independent_triad_audit_summary.json",
+    "data/open_prototype/reports/lipi_frame700_034_archive_request_batch.csv"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "date": "2026-05-26",
+  "question": "Does Mayig feature id P041 independently confirm, refute, or complicate the H-2148 local 110 / Parpola sign no. 41 branch?",
+  "result": "Mayig P041 creates an unresolved sign-system conflict and rejects a naive numeric shortcut. It does not kill the H-2148 object-specific role inference, but it blocks any attempt to accept local 110 <-> Parpola sign no. 41 through Mayig P041.",
+  "source_files": {
+    "mayig_feature_p041": {
+      "path": "tmp/p041_mayig_route/features__P041.json",
+      "sha256": "9db51b7614620dd00b82eceaf6d1850e382ab448dd889f5d3f46c87efed77028",
+      "github_blob_sha": "ecf2b5937634f8c2433914469cd115645e220fbc"
+    },
+    "mayig_corpus_m033": {
+      "path": "tmp/p041_mayig_route/corpus__m001_m099__m033.json",
+      "sha256": "297ac2881c84ae99699393217a658682c749b2eeebc5e80d26b51daa90bc666a"
+    },
+    "mayig_commit": {
+      "repository": "https://github.com/mayig/indus-valley-script-corpus",
+      "commit": "ad2f1e218a34b8c33c57de0d6cb8d99272765bbb",
+      "commit_date": "2025-04-16T11:52:42Z",
+      "checked_at": "2026-05-24T16:37:43-07:00"
+    }
+  },
+  "observations": [
+    "Mayig feature id P041 declares parpola_graphemes V141, Wells W112, and Mahadevan M034.",
+    "The Mayig P041 label therefore cannot be read as Parpola sign no. 41 by number alone.",
+    "The only current Mayig P041 occurrence is M-33A, with graphemes P324 P145 P175 P111 P058 P122 P041.",
+    "The current M-33 overlap aligns terminal Mayig P041 with local terminal 112 in local row 2561.1 +740-032-923-382-233-002-112+; crosswalk_alignment_pairs.csv marks it provisional_position_alignment_only.",
+    "Local numeric 041 is a separate Lipi token appearing in M-1151 and M-2128, not the Mayig feature id P041.",
+    "The H-2148 role chain remains: Parpola reverse sign no. 41 -> local short row 481.2 +110+ -> Kenoyer 2005 one-sign panel by count."
+  ],
+  "decision": {
+    "h2148_role_inference": "preserved_as_strong_same_role_inference",
+    "local_110_parpola41_crosswalk": "blocked_unaccepted",
+    "contradiction_status": "not_yet_a_linguistic_refutation_of_H2148; currently_a_numbering_system_collision_with_real_damage_potential",
+    "mayig_p041_as_parpola41": "rejected_as_naive_namespace_shortcut",
+    "mayig_p041_to_local_112": "single_overlap_pressure_only_not_accepted",
+    "local_041_relation": "separate_numeric_namespace_until_authoritative_bridge_exists"
+  },
+  "accepted": [
+    "Mayig P041 is an adversarial namespace and sign-list conflict against a lazy local 110 confirmation.",
+    "The current overlap places Mayig P041 against local 112 in M-33 only.",
+    "H-2148 remains the strongest object-specific role candidate for connecting Parpola sign no. 41 to local 110."
+  ],
+  "not_accepted": [
+    "local 110 equals Parpola sign no. 41",
+    "Mayig P041 equals Parpola sign no. 41",
+    "Mayig P041 equals local 112",
+    "local 041 equals Mayig P041",
+    "any sign value, phonetic value, language identity, or translation"
+  ],
+  "next_gate": "Resolve sign-list namespaces using authoritative tables for Parpola sign no. 41, Parpola V141, Wells W112, Mahadevan M034, and local 110/112/034/041; then test H-2148 same-side panel identity and outside controls."
+}

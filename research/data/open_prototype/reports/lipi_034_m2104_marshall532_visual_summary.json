@@ -1,0 +1,43 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "lipi_034_m2104_marshall532_visual_adjudication",
+  "question": "Does the public Marshall Plate CXIV no. 532 image visually support the target-side M-2104 three-stroke U/pot cluster enough to validate the 700-034/UIII hypothesis?",
+  "source_image": {
+    "source_url": "https://www.harappa.com/sites/default/files/cylinder-seals.jpg",
+    "page_url": "https://www.harappa.com/node/3576",
+    "local_path": "tmp/m2104_raw_source/marshall_plate_cxiv_529_533_originalpath.jpg",
+    "object_alias": "Marshall no. 532 / Pl. CXIV / VS 875",
+    "target": "M-2104"
+  },
+  "visual_input_rows": 6,
+  "adjudication_rows": 4,
+  "finding": "The public plate gives a genuine target-side raw image witness: a U/V- or pot-like element with an adjacent stroke group is visible for no. 532. The exact count is unresolved at this resolution. One reviewer reads three separable strokes with a possible fourth boundary; the adversarial read says four is plausible but insecure. Therefore the image keeps the M-2104 target visually testable but cannot validate 034 as the three-stroke component.",
+  "research_consequence": "The M-2104 extraction is neither killed nor accepted by the public Marshall image. It moves from source-gated to image-reachable, with the next decisive requirement narrowed to a higher-resolution Plate CXIV/CISI/Harappa source image.",
+  "pass_fail": {
+    "public_image_reaches_target_side": "pass",
+    "u_v_or_pot_like_unit_visible": "pass",
+    "adjacent_stroke_cluster_visible": "pass",
+    "exact_three_stroke_count_validated": "fail",
+    "usable_as_standalone_mapping_evidence": "fail"
+  },
+  "accepted_source_mappings": 0,
+  "accepted_token_boundaries": 0,
+  "accepted_sign_mappings": 0,
+  "accepted_numbers": 0,
+  "accepted_functions": 0,
+  "accepted_phonetic_values": 0,
+  "accepted_translations": 0,
+  "outputs": [
+    "data/open_prototype/reports/lipi_034_m2104_marshall532_visual_inputs.csv",
+    "data/open_prototype/reports/lipi_034_m2104_marshall532_visual_adjudication.csv",
+    "data/open_prototype/reports/lipi_034_m2104_marshall532_visual_summary.json",
+    "docs/lipi_034_m2104_marshall532_visual_adjudication.md"
+  ],
+  "derived_images": [
+    "tmp/m2104_raw_source/derived/m2104_marshall_532_crop_overlay.png",
+    "tmp/m2104_raw_source/derived/m2104_marshall_532_full_pair_enhanced4x.png",
+    "tmp/m2104_raw_source/derived/m2104_marshall_532_object_enhanced4x.png",
+    "tmp/m2104_raw_source/derived/m2104_marshall_532_impression_enhanced4x.png",
+    "tmp/m2104_raw_source/derived/m2104_marshall_532_inscription_lane_enhanced4x_rot270.png"
+  ]
+}

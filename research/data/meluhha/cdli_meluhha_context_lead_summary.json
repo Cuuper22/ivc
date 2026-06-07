@@ -1,0 +1,18 @@
+{
+  "run_date": "2026-05-29",
+  "input_contexts": "data/meluhha/cdli_current_line_contexts.csv",
+  "unique_line_contexts": 85,
+  "lead_count": 14,
+  "query_plan_count": 92,
+  "auto_token_lead_count": 80,
+  "outputs": {
+    "leads": "data/meluhha/cdli_meluhha_context_leads.csv",
+    "query_plan": "data/meluhha/cdli_meluhha_context_lead_query_plan.csv",
+    "auto_token_leads": "data/meluhha/cdli_meluhha_context_auto_token_leads.csv"
+  },
+  "caveats": [
+    "This is a cuneiform-side lead miner over current CDLI line-context exports; it does not claim any Indus sign value.",
+    "Seed leads are admitted only as query plans and must survive matched-negative CDLI searches before being used downstream.",
+    "Verified context counts are exact phrase/context scans over exported lines, not comprehensive Assyriological attestation counts."
+  ]
+}

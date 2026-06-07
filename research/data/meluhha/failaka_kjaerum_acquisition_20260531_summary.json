@@ -1,0 +1,48 @@
+{
+  "date": "2026-05-31",
+  "vector": "V1 diffuse Meluhha bilingual source acquisition",
+  "publication": {
+    "cdli_publication_id": 1773730,
+    "designation": "Failaka/Dilmun seals",
+    "bibtexkey": "Kjærum1983Failakaseals",
+    "title": "Failaka/Dilmun : the second millennium settlements. Vol.1:1, The stamp and cylinder seals : plates and catalogue descriptions",
+    "year": "1983",
+    "source_url": "https://cdli.earth/publications/1773730/json",
+    "cached_path": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\v1_external_acquisition_20260531\\cdli_publication_1773730_kjaerum_failaka.json",
+    "cached_sha256": "5cb73c864926a3818500b7e15a7cf0e89758b6469d98dd6d7dc8972a9dfbf71b",
+    "related_artifact_count": 4,
+    "related_artifacts_matching_laursen_279_or_319": 0
+  },
+  "bibliographic_access_routes": {
+    "routes_recorded": 3,
+    "cached_routes": 3
+  },
+  "laursen_failaka_targets": [
+    {
+      "laursen_no": "12",
+      "reference": "Kjaerum 1983 cat. no.319",
+      "site": "Failaka",
+      "current_workspace_link": "candidate local Failaka rows 147.1/148.1; exact row-to-cat unresolved",
+      "current_anchor_status": "priority source-route lead; no object-level bilingual bridge",
+      "next_gate": "obtain Kjaerum 1983 cat.319 plate/catalogue page and map to local row/image"
+    },
+    {
+      "laursen_no": "13",
+      "reference": "Kjaerum 1983 cat. no.279",
+      "site": "Failaka",
+      "current_workspace_link": "candidate local Failaka rows 147.1/148.1; exact row-to-cat unresolved",
+      "current_anchor_status": "priority source-route lead; no object-level bilingual bridge",
+      "next_gate": "obtain Kjaerum 1983 cat.279 plate/catalogue page and map to local row/image"
+    }
+  ],
+  "dainst_route": {
+    "cached_path": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\v1_external_acquisition_20260531\\dainst_gulf_indus_reference.pdf",
+    "cached_sha256": "e8a09b86c5c019bcdc525e13c7f5042424e240a1da85d17ec6f40193f13a31fe",
+    "byte_length": 4484,
+    "status": "blocked_antibot_html_not_pdf"
+  },
+  "output_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\meluhha\\failaka_kjaerum_acquisition_20260531.csv",
+  "output_csv_sha256": "bcbae68b63a0c657eb7d6feda661b9aca4736ac962c224279865f0dc94ae25db",
+  "accepted_claim_increment": 0,
+  "decision": "source acquisition tightened; Kjaerum 279/319 remain unresolved and CDLI 1773730 must not be used as a substitute object bridge"
+}

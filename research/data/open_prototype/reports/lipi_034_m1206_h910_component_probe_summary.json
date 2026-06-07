@@ -1,0 +1,22 @@
+{
+  "artifact": "lipi_034_m1206_h910_component_probe",
+  "date": "2026-05-26",
+  "source_page": "CISI Pakistan IA leaf n372 / printed p.338, HARAPPA 899-911 TABLETS incised no iconography",
+  "source_image": "tmp/h910_component_probe/cisi_pakistan_n372_w1200.jpg",
+  "source_image_sha256": "b7e45ae1441fbad5bb6ae8350c71e75a196dc6530d2801c6d4357e3a263fb610",
+  "question": "Does source-visible H-910 B (+700-034+) clarify component assignment after H-938 B (+034-700+) weakened direct 034/415 support?",
+  "observed_h910_b_components": [
+    "left loop/leaf component",
+    "right vertical/rake component"
+  ],
+  "local_order_assumption": "R/L means first local token maps to rightmost visible component",
+  "component_implication_under_RL": "H-910 +700-034+ maps 700 to the right vertical/rake component and 034 to the left loop/leaf component; this is consistent with H-938 B mapping 034 to the right loop/leaf and 700 to the left vertical/rake.",
+  "answer": "H-910 B strengthens the negative component result: in two source-visible companion sides, 034 tracks the loop/leaf component, while 700 tracks the vertical/rake component under the local R/L assumption. It does not support 034=415.",
+  "accepted_claims": 0,
+  "accepted_034_415_component_match": false,
+  "accepted_translation": false,
+  "contact_sheet": "tmp/h910_component_probe/h910_component_probe_contact_sheet.png",
+  "comparison_sheet": "tmp/h910_component_probe/h938_h910_component_order_comparison.png",
+  "adjudication_csv": "data/open_prototype/reports/lipi_034_m1206_h910_component_probe_adjudication.csv",
+  "crops_csv": "data/open_prototype/reports/lipi_034_m1206_h910_component_probe_crops.csv"
+}

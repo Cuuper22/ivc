@@ -1,0 +1,222 @@
+{
+  "generated_at": "2026-05-25",
+  "scope": "non-H FRAME700 034 rows matched against non-H 033 and 032 rows using current metadata/context fields",
+  "target_034_rows": 93,
+  "candidate_033_rows": 136,
+  "candidate_032_rows": 102,
+  "readiness_counts": {
+    "strong_two_sibling_metadata_controls": 86,
+    "strong_032_control_only": 4,
+    "partial_metadata_control": 2,
+    "strong_033_control_only": 1
+  },
+  "bucket_summary": {
+    "E_other_034_residue": {
+      "rows": 55,
+      "readiness": {
+        "strong_two_sibling_metadata_controls": 49,
+        "strong_032_control_only": 3,
+        "partial_metadata_control": 2,
+        "strong_033_control_only": 1
+      },
+      "avg_best_033_score": 32.38181818181818,
+      "avg_best_032_score": 30.927272727272726
+    },
+    "A_034_no_longer_small_object": {
+      "rows": 13,
+      "readiness": {
+        "strong_two_sibling_metadata_controls": 13
+      },
+      "avg_best_033_score": 32.38461538461539,
+      "avg_best_032_score": 29.076923076923077
+    },
+    "A_034_direction_reversal": {
+      "rows": 12,
+      "readiness": {
+        "strong_two_sibling_metadata_controls": 12
+      },
+      "avg_best_033_score": 32.333333333333336,
+      "avg_best_032_score": 30.333333333333332
+    },
+    "B_034_400_740_176_bridge": {
+      "rows": 8,
+      "readiness": {
+        "strong_two_sibling_metadata_controls": 8
+      },
+      "avg_best_033_score": 34.625,
+      "avg_best_032_score": 32.875
+    },
+    "A_034_002_861_416_companion": {
+      "rows": 5,
+      "readiness": {
+        "strong_two_sibling_metadata_controls": 4,
+        "strong_032_control_only": 1
+      },
+      "avg_best_033_score": 31,
+      "avg_best_032_score": 30.6
+    }
+  },
+  "top_source_ready_rows": [
+    {
+      "target_cisi": "H-910",
+      "target_bucket": "A_034_002_861_416_companion",
+      "best_033": "H-916/35",
+      "best_032": "H-1294/35",
+      "contrast_readiness": "strong_two_sibling_metadata_controls",
+      "source_check_status": "metadata_control_mapping_only_source_images_not_validated"
+    },
+    {
+      "target_cisi": "H-2094",
+      "target_bucket": "A_034_002_861_416_companion",
+      "best_033": "H-900/33",
+      "best_032": "H-2173/33",
+      "contrast_readiness": "strong_two_sibling_metadata_controls",
+      "source_check_status": "metadata_control_mapping_only_source_images_not_validated"
+    },
+    {
+      "target_cisi": "H-2097",
+      "target_bucket": "A_034_002_861_416_companion",
+      "best_033": "H-925/32",
+      "best_032": "H-930/32",
+      "contrast_readiness": "strong_two_sibling_metadata_controls",
+      "source_check_status": "metadata_control_mapping_only_source_images_not_validated"
+    },
+    {
+      "target_cisi": "H-2096",
+      "target_bucket": "A_034_002_861_416_companion",
+      "best_033": "H-924/28",
+      "best_032": "H-930/28",
+      "contrast_readiness": "strong_two_sibling_metadata_controls",
+      "source_check_status": "metadata_control_mapping_only_source_images_not_validated"
+    },
+    {
+      "target_cisi": "H-2095",
+      "target_bucket": "A_034_002_861_416_companion",
+      "best_033": "H-2125/27",
+      "best_032": "H-1309/25",
+      "contrast_readiness": "strong_032_control_only",
+      "source_check_status": "metadata_control_mapping_only_source_images_not_validated"
+    },
+    {
+      "target_cisi": "H-938",
+      "target_bucket": "A_034_direction_reversal",
+      "best_033": "H-925/35",
+      "best_032": "H-930/34",
+      "contrast_readiness": "strong_two_sibling_metadata_controls",
+      "source_check_status": "metadata_control_mapping_only_source_images_not_validated"
+    },
+    {
+      "target_cisi": "H-892",
+      "target_bucket": "A_034_direction_reversal",
+      "best_033": "H-1308/34",
+      "best_032": "H-321/32",
+      "contrast_readiness": "strong_two_sibling_metadata_controls",
+      "source_check_status": "metadata_control_mapping_only_source_images_not_validated"
+    },
+    {
+      "target_cisi": "H-945",
+      "target_bucket": "A_034_direction_reversal",
+      "best_033": "H-928/35",
+      "best_032": "H-1313/31",
+      "contrast_readiness": "strong_two_sibling_metadata_controls",
+      "source_check_status": "metadata_control_mapping_only_source_images_not_validated"
+    },
+    {
+      "target_cisi": "H-1877",
+      "target_bucket": "A_034_direction_reversal",
+      "best_033": "H-1872/34",
+      "best_032": "H-212/32",
+      "contrast_readiness": "strong_two_sibling_metadata_controls",
+      "source_check_status": "metadata_control_mapping_only_source_images_not_validated"
+    },
+    {
+      "target_cisi": "H-1880",
+      "target_bucket": "A_034_direction_reversal",
+      "best_033": "H-1872/34",
+      "best_032": "H-212/32",
+      "contrast_readiness": "strong_two_sibling_metadata_controls",
+      "source_check_status": "metadata_control_mapping_only_source_images_not_validated"
+    },
+    {
+      "target_cisi": "H-1937",
+      "target_bucket": "A_034_direction_reversal",
+      "best_033": "H-1933/32",
+      "best_032": "H-1931/32",
+      "contrast_readiness": "strong_two_sibling_metadata_controls",
+      "source_check_status": "metadata_control_mapping_only_source_images_not_validated"
+    },
+    {
+      "target_cisi": "H-2154",
+      "target_bucket": "A_034_direction_reversal",
+      "best_033": "H-927/33",
+      "best_032": "H-1313/30",
+      "contrast_readiness": "strong_two_sibling_metadata_controls",
+      "source_check_status": "metadata_control_mapping_only_source_images_not_validated"
+    },
+    {
+      "target_cisi": "H-2208",
+      "target_bucket": "A_034_direction_reversal",
+      "best_033": "H-2209/32",
+      "best_032": "H-2211/31",
+      "contrast_readiness": "strong_two_sibling_metadata_controls",
+      "source_check_status": "metadata_control_mapping_only_source_images_not_validated"
+    },
+    {
+      "target_cisi": "H-1876",
+      "target_bucket": "A_034_direction_reversal",
+      "best_033": "H-790/32",
+      "best_032": "H-1772/30",
+      "contrast_readiness": "strong_two_sibling_metadata_controls",
+      "source_check_status": "metadata_control_mapping_only_source_images_not_validated"
+    },
+    {
+      "target_cisi": "H-853",
+      "target_bucket": "A_034_direction_reversal",
+      "best_033": "H-846/31",
+      "best_032": "H-854/28",
+      "contrast_readiness": "strong_two_sibling_metadata_controls",
+      "source_check_status": "metadata_control_mapping_only_source_images_not_validated"
+    },
+    {
+      "target_cisi": "H-933",
+      "target_bucket": "A_034_direction_reversal",
+      "best_033": "H-924/28",
+      "best_032": "H-930/27",
+      "contrast_readiness": "strong_two_sibling_metadata_controls",
+      "source_check_status": "metadata_control_mapping_only_source_images_not_validated"
+    },
+    {
+      "target_cisi": "H-358",
+      "target_bucket": "A_034_direction_reversal",
+      "best_033": "H-355/28",
+      "best_032": "H-1294/25",
+      "contrast_readiness": "strong_two_sibling_metadata_controls",
+      "source_check_status": "metadata_control_mapping_only_source_images_not_validated"
+    },
+    {
+      "target_cisi": "H-307",
+      "target_bucket": "A_034_no_longer_small_object",
+      "best_033": "H-928/38",
+      "best_032": "H-1156/31",
+      "contrast_readiness": "strong_two_sibling_metadata_controls",
+      "source_check_status": "metadata_control_mapping_only_source_images_not_validated"
+    },
+    {
+      "target_cisi": "H-788",
+      "target_bucket": "A_034_no_longer_small_object",
+      "best_033": "H-798/34",
+      "best_032": "H-1836/34",
+      "contrast_readiness": "strong_two_sibling_metadata_controls",
+      "source_check_status": "metadata_control_mapping_only_source_images_not_validated"
+    },
+    {
+      "target_cisi": "H-2105",
+      "target_bucket": "A_034_no_longer_small_object",
+      "best_033": "H-929/34",
+      "best_032": "H-2129/33",
+      "contrast_readiness": "strong_two_sibling_metadata_controls",
+      "source_check_status": "metadata_control_mapping_only_source_images_not_validated"
+    }
+  ],
+  "source_check_boundary": "metadata-matched control probe only; source images not validated; no accepted reading or value"
+}

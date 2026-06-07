@@ -1,0 +1,92 @@
+{
+  "date": "2026-05-29",
+  "status": "cdli_current_search_exports_anchor_failure_lu_sunzida_not_meluhha_diagnostic",
+  "source_routes": {
+    "cdli_search_parameter": "atf_transliteration",
+    "cdli_format": "json",
+    "cdli_docs": "https://cdli.earth/docs/search",
+    "epsd2_meluhha_entry": "https://oracc.museum.upenn.edu/epsd2/names/cbd/qpn/x000016710.html"
+  },
+  "query_summaries": [
+    {
+      "term": "me-luh-ha",
+      "class": "meluhha_broad",
+      "artifact_count": 25,
+      "matched_line_count": 29,
+      "fetch_error": ""
+    },
+    {
+      "term": "me-luh-ha{ki}",
+      "class": "meluhha_toponym",
+      "artifact_count": 21,
+      "matched_line_count": 23,
+      "fetch_error": ""
+    },
+    {
+      "term": "lu2 me-luh-ha",
+      "class": "meluhha_person_title",
+      "artifact_count": 5,
+      "matched_line_count": 5,
+      "fetch_error": ""
+    },
+    {
+      "term": "ma2 me-luh-ha",
+      "class": "meluhha_ship_context",
+      "artifact_count": 8,
+      "matched_line_count": 4,
+      "fetch_error": ""
+    },
+    {
+      "term": "me-luh-ha-ta",
+      "class": "meluhha_ablative",
+      "artifact_count": 17,
+      "matched_line_count": 18,
+      "fetch_error": ""
+    },
+    {
+      "term": "me-luh-ha-da",
+      "class": "meluhha_comitative",
+      "artifact_count": 2,
+      "matched_line_count": 2,
+      "fetch_error": ""
+    },
+    {
+      "term": "lu2-sun2-zi-da",
+      "class": "lu_sunzida_name_test",
+      "artifact_count": 15,
+      "matched_line_count": 15,
+      "fetch_error": ""
+    }
+  ],
+  "counts": {
+    "distinct_cdli_artifacts_across_queries": 79,
+    "line_context_rows": 96,
+    "lu_sunzida_line_rows": 15,
+    "lu_sunzida_distinct_artifacts": 15,
+    "lu_sunzida_artifacts_with_any_meluhha_line": 1,
+    "lu_sunzida_artifacts_with_adjacent_meluhha_line": 1,
+    "epsd2_meluhha_instances_reported": 70,
+    "epsd2_meluhha_spellings_reported": 8
+  },
+  "lu_sunzida_detector_test": {
+    "hypothesis": "The cuneiform string lu2-sun2-zi-da can be used as a Meluhha diagnostic personal-name anchor.",
+    "decision": "rejected_as_meluhha_diagnostic_anchor",
+    "false_positive_artifacts_if_name_alone_marks_meluhha": 14,
+    "false_positive_rate_if_name_alone_marks_meluhha": 0.9333333333333333,
+    "non_adjacent_or_no_meluhha_rate_if_name_alone_requires_adjacent_meluhha": 0.9333333333333333,
+    "surviving_residue": "P212982 still preserves a locally real adjacency, lu2-sun2-zi-da immediately before lu2 me-luh-ha-ke4. It remains a cuneiform-side lead only, not an Indus sign-value anchor, because the name is not diagnostic across CDLI current hits and there is no paired external Indus object."
+  },
+  "files": {
+    "fetch_log": "data/meluhha/cdli_current_query_fetch_log.csv",
+    "artifacts": "data/meluhha/cdli_current_meluhha_artifacts.csv",
+    "line_contexts": "data/meluhha/cdli_current_line_contexts.csv",
+    "lu_sunzida_test": "data/meluhha/cdli_current_lu_sunzida_test.csv",
+    "summary": "data/meluhha/cdli_current_anchor_failure_summary.json"
+  },
+  "caveats": [
+    "This is a current CDLI/ORACC digital-source export, not a comprehensive Assyriological publication catalogue.",
+    "CDLI search behavior is treated as an empirical source route and is source-hashed in the fetch log.",
+    "The Lu-sunzida rejection concerns diagnostic use of the name alone. It does not prove that P212982 line 5 is unrelated to the Meluhha title in line 6.",
+    "No Indus phonetic value, sign meaning, language identification, or translation is accepted."
+  ]
+}

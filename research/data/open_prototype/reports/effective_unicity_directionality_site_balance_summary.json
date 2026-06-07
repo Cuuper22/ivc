@@ -1,0 +1,175 @@
+{
+  "date": "2026-05-29",
+  "generated_at_utc": "2026-05-29T08:28:47.289Z",
+  "purpose": "Site-balanced resampling control for the harsh Vector 2 directionality candidate.",
+  "source_scope": {
+    "base_scope": "top10_edge_removed_one_edit_family_collapsed",
+    "rows": 365,
+    "site_inventory": [
+      {
+        "site": "Mohenjo-daro",
+        "rows": 212
+      },
+      {
+        "site": "Harappa",
+        "rows": 112
+      },
+      {
+        "site": "Lothal",
+        "rows": 16
+      },
+      {
+        "site": "Kalibangan",
+        "rows": 7
+      },
+      {
+        "site": "Chanhu-daro",
+        "rows": 6
+      },
+      {
+        "site": "Allahdino",
+        "rows": 3
+      },
+      {
+        "site": "Nausharo",
+        "rows": 3
+      },
+      {
+        "site": "Bala-kot",
+        "rows": 2
+      },
+      {
+        "site": "Banawali",
+        "rows": 2
+      },
+      {
+        "site": "Khirsara",
+        "rows": 1
+      },
+      {
+        "site": "Unknown",
+        "rows": 1
+      }
+    ]
+  },
+  "method": {
+    "iterations": 1000,
+    "sampling": "For each design, sample an equal number of rows without replacement from each listed site, score stored order versus reversed order with leave-one-row-out bigram scoring, and compare paired null scores on the same sampled rows.",
+    "controls": [
+      "global_token_shuffle",
+      "row_internal_shuffle",
+      "position_slot_shuffle",
+      "edge_frame_shuffle",
+      "site_position_shuffle",
+      "site_edge_interior_shuffle"
+    ],
+    "interpretation_boundary": "A positive result shows the signal is not only caused by raw site imbalance in the sampled sites. It does not prove source-normalized direction or site-generalization outside the sampled sites."
+  },
+  "primary_results": {
+    "mohenjo_harappa_balanced": {
+      "design": "mohenjo_harappa_balanced",
+      "scope": "top10_edge_removed_one_edit_family_collapsed",
+      "sites": "Mohenjo-daro|Harappa",
+      "cap_per_site": 112,
+      "rows_per_iteration": 224,
+      "iterations": 1000,
+      "observed_mean": 0.804496,
+      "observed_p05": 0.776786,
+      "observed_median": 0.803571,
+      "observed_p95": 0.834821,
+      "observed_min": 0.736607,
+      "observed_max": 0.866071,
+      "mean_diff_mean": 0.885188,
+      "max_paired_null_ge_observed_share": 0.003
+    },
+    "mohenjo_harappa_lothal_balanced": {
+      "design": "mohenjo_harappa_lothal_balanced",
+      "scope": "top10_edge_removed_one_edit_family_collapsed",
+      "sites": "Mohenjo-daro|Harappa|Lothal",
+      "cap_per_site": 16,
+      "rows_per_iteration": 48,
+      "iterations": 1000,
+      "observed_mean": 0.539771,
+      "observed_p05": 0.395833,
+      "observed_median": 0.541667,
+      "observed_p95": 0.666667,
+      "observed_min": 0.270833,
+      "observed_max": 0.75,
+      "mean_diff_mean": 0.314179,
+      "max_paired_null_ge_observed_share": 0.528
+    },
+    "top5_sites_balanced": {
+      "design": "top5_sites_balanced",
+      "scope": "top10_edge_removed_one_edit_family_collapsed",
+      "sites": "Mohenjo-daro|Harappa|Lothal|Chanhu-daro|Kalibangan",
+      "cap_per_site": 6,
+      "rows_per_iteration": 30,
+      "iterations": 1000,
+      "observed_mean": 0.420667,
+      "observed_p05": 0.266667,
+      "observed_median": 0.433333,
+      "observed_p95": 0.566667,
+      "observed_min": 0.166667,
+      "observed_max": 0.766667,
+      "mean_diff_mean": 0.222839,
+      "max_paired_null_ge_observed_share": 0.616
+    }
+  },
+  "rows": [
+    {
+      "design": "mohenjo_harappa_balanced",
+      "scope": "top10_edge_removed_one_edit_family_collapsed",
+      "sites": "Mohenjo-daro|Harappa",
+      "cap_per_site": 112,
+      "rows_per_iteration": 224,
+      "iterations": 1000,
+      "observed_mean": 0.804496,
+      "observed_p05": 0.776786,
+      "observed_median": 0.803571,
+      "observed_p95": 0.834821,
+      "observed_min": 0.736607,
+      "observed_max": 0.866071,
+      "mean_diff_mean": 0.885188,
+      "max_paired_null_ge_observed_share": 0.003
+    },
+    {
+      "design": "mohenjo_harappa_lothal_balanced",
+      "scope": "top10_edge_removed_one_edit_family_collapsed",
+      "sites": "Mohenjo-daro|Harappa|Lothal",
+      "cap_per_site": 16,
+      "rows_per_iteration": 48,
+      "iterations": 1000,
+      "observed_mean": 0.539771,
+      "observed_p05": 0.395833,
+      "observed_median": 0.541667,
+      "observed_p95": 0.666667,
+      "observed_min": 0.270833,
+      "observed_max": 0.75,
+      "mean_diff_mean": 0.314179,
+      "max_paired_null_ge_observed_share": 0.528
+    },
+    {
+      "design": "top5_sites_balanced",
+      "scope": "top10_edge_removed_one_edit_family_collapsed",
+      "sites": "Mohenjo-daro|Harappa|Lothal|Chanhu-daro|Kalibangan",
+      "cap_per_site": 6,
+      "rows_per_iteration": 30,
+      "iterations": 1000,
+      "observed_mean": 0.420667,
+      "observed_p05": 0.266667,
+      "observed_median": 0.433333,
+      "observed_p95": 0.566667,
+      "observed_min": 0.166667,
+      "observed_max": 0.766667,
+      "mean_diff_mean": 0.222839,
+      "max_paired_null_ge_observed_share": 0.616
+    }
+  ],
+  "artifact_files": [
+    "data/open_prototype/tools/effective_unicity_directionality_site_balance.mjs",
+    "data/open_prototype/reports/effective_unicity_directionality_site_balance_summary.json",
+    "data/open_prototype/reports/effective_unicity_directionality_site_balance.csv",
+    "data/open_prototype/reports/effective_unicity_directionality_site_balance_iterations.csv",
+    "data/open_prototype/reports/effective_unicity_directionality_site_balance_null_summary.csv"
+  ]
+}

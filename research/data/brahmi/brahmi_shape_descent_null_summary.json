@@ -1,0 +1,165 @@
+{
+  "date": "2026-05-29",
+  "status": "brahmi_shape_descent_gate_no_survivor",
+  "source": {
+    "homepage": "https://www.indoskript.phil.uni-wuerzburg.de",
+    "manuscript_pages_scanned": 42,
+    "early_date_max": -100,
+    "early_manuscript_limit": 12,
+    "vocalizations_scanned": [
+      "a"
+    ],
+    "license_note": "Indoskript homepage states CC BY-NC-ND 4.0. Local images are cached only as provenance-backed research inputs."
+  },
+  "counts": {
+    "manuscripts_total": 399,
+    "early_manuscripts_date_le_cutoff_total": 36,
+    "early_manuscripts_used": 12,
+    "glyph_rows_parsed": 457,
+    "glyph_features": 457,
+    "indus_probe_rows": 14,
+    "indus_probe_features": 14,
+    "nearest_neighbor_rows": 140
+  },
+  "null": {
+    "iterations_per_actual_probe": 500,
+    "random_seed": 20260529,
+    "model": "Random affine, scale, threshold, dilation, and erosion perturbations of each actual Indus source probe; each evolved shape gets the same nearest-Brahmi search as the observed probe.",
+    "summary_rows": [
+      {
+        "probe_id": "indus_local220_M37_source_S009",
+        "probe_family": "local_220_source_actual",
+        "observed_nearest_distance": "0.345068",
+        "observed_nearest_brahmi_transliteration": "kaṃ",
+        "observed_nearest_letter_image_id": "63642",
+        "null_iterations": 500,
+        "null_mean_nearest_distance": "0.362705",
+        "null_p05_nearest_distance": "0.248408",
+        "null_p50_nearest_distance": "0.332961",
+        "null_p95_nearest_distance": "0.527620",
+        "null_le_observed_share": "0.576000",
+        "gate_decision": "failed_shape_null_or_family_consistency"
+      },
+      {
+        "probe_id": "indus_local220_H938_source_S010",
+        "probe_family": "local_220_source_actual",
+        "observed_nearest_distance": "0.525419",
+        "observed_nearest_brahmi_transliteration": "o",
+        "observed_nearest_letter_image_id": "41186",
+        "null_iterations": 500,
+        "null_mean_nearest_distance": "0.571878",
+        "null_p05_nearest_distance": "0.400471",
+        "null_p50_nearest_distance": "0.545896",
+        "null_p95_nearest_distance": "0.801158",
+        "null_le_observed_share": "0.438000",
+        "gate_decision": "failed_shape_null_or_family_consistency"
+      },
+      {
+        "probe_id": "indus_local220_H940_source_S011",
+        "probe_family": "local_220_source_actual",
+        "observed_nearest_distance": "0.476909",
+        "observed_nearest_brahmi_transliteration": "ka",
+        "observed_nearest_letter_image_id": "124357",
+        "null_iterations": 500,
+        "null_mean_nearest_distance": "0.468425",
+        "null_p05_nearest_distance": "0.298247",
+        "null_p50_nearest_distance": "0.439047",
+        "null_p95_nearest_distance": "0.680739",
+        "null_le_observed_share": "0.656000",
+        "gate_decision": "failed_shape_null_or_family_consistency"
+      },
+      {
+        "probe_id": "indus_local110_H2148_source",
+        "probe_family": "local_110_source_actual",
+        "observed_nearest_distance": "0.470080",
+        "observed_nearest_brahmi_transliteration": "a",
+        "observed_nearest_letter_image_id": "9713",
+        "null_iterations": 500,
+        "null_mean_nearest_distance": "0.459503",
+        "null_p05_nearest_distance": "0.351432",
+        "null_p50_nearest_distance": "0.439781",
+        "null_p95_nearest_distance": "0.622178",
+        "null_le_observed_share": "0.666000",
+        "gate_decision": "failed_shape_null_or_family_consistency"
+      }
+    ]
+  },
+  "family_consistency": {
+    "local_220_source_top1_label_counts": {
+      "kaṃ": 1,
+      "o": 1,
+      "ka": 1
+    },
+    "local_220_source_top1_rows": [
+      {
+        "probe_id": "indus_local220_M37_source_S009",
+        "probe_family": "local_220_source_actual",
+        "rank": 1,
+        "distance": "0.345068",
+        "brahmi_transliteration": "kaṃ",
+        "letter_image_id": "63642",
+        "manuscript_id": "411",
+        "manuscript_name": "Aśoka, RE Girnār",
+        "date": -252,
+        "place": "Girnar",
+        "image_url": "https://www.indoskript.phil.uni-wuerzburg.de/img/letters/63642.png",
+        "local_image_path": "data\\brahmi\\indoskript_letter_images\\63642.png"
+      },
+      {
+        "probe_id": "indus_local220_H938_source_S010",
+        "probe_family": "local_220_source_actual",
+        "rank": 1,
+        "distance": "0.525419",
+        "brahmi_transliteration": "o",
+        "letter_image_id": "41186",
+        "manuscript_id": "411",
+        "manuscript_name": "Aśoka, RE Girnār",
+        "date": -252,
+        "place": "Girnar",
+        "image_url": "https://www.indoskript.phil.uni-wuerzburg.de/img/letters/41186.png",
+        "local_image_path": "data\\brahmi\\indoskript_letter_images\\41186.png"
+      },
+      {
+        "probe_id": "indus_local220_H940_source_S011",
+        "probe_family": "local_220_source_actual",
+        "rank": 1,
+        "distance": "0.476909",
+        "brahmi_transliteration": "ka",
+        "letter_image_id": "124357",
+        "manuscript_id": "388",
+        "manuscript_name": "Aśoka MRE Maski",
+        "date": -256,
+        "place": "Maski",
+        "image_url": "https://www.indoskript.phil.uni-wuerzburg.de/img/letters/124357.png",
+        "local_image_path": "data\\brahmi\\indoskript_letter_images\\124357.png"
+      }
+    ],
+    "local_110_source_top1_rows": [
+      {
+        "probe_id": "indus_local110_H2148_source",
+        "probe_family": "local_110_source_actual",
+        "rank": 1,
+        "distance": "0.470080",
+        "brahmi_transliteration": "a",
+        "letter_image_id": "9713",
+        "manuscript_id": "622",
+        "manuscript_name": "Aśoka MRE Siddapur",
+        "date": -256,
+        "place": "Siddapura",
+        "image_url": "https://www.indoskript.phil.uni-wuerzburg.de/img/letters/9713.png",
+        "local_image_path": "data\\brahmi\\indoskript_letter_images\\9713.png"
+      }
+    ]
+  },
+  "decision": "No Brahmi descent line or phonetic anchor is accepted. Nearest-neighbor shape matches are retrieval leads only unless they beat the random shape-evolution null and converge across independent source probes on one Brahmi value.",
+  "files": {
+    "manuscripts": "data/brahmi/indoskript_brahmi_manuscripts.csv",
+    "glyphs": "data/brahmi/indoskript_brahmi_glyphs.csv",
+    "features": "data/brahmi/indoskript_brahmi_features.csv",
+    "indus_probes": "data/brahmi/indus_shape_probe_features.csv",
+    "nearest_neighbors": "data/brahmi/indus_brahmi_nearest_neighbors.csv",
+    "null_iterations": "data/brahmi/brahmi_shape_descent_null_iterations.csv",
+    "fetch_log": "data/brahmi/indoskript_brahmi_fetch_log.csv",
+    "summary": "data/brahmi/brahmi_shape_descent_null_summary.json"
+  }
+}

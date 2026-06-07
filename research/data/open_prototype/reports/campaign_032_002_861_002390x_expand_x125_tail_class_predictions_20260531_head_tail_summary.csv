@@ -1,0 +1,8 @@
+checked_date,head,rows,open_rate,tails,tail_classes,scopes,objects,prediction
+2026-05-31,390,4,4/4,195:1;632 032:1;632 032 900 563:1;820:1,632032_tail_family:2;820_terminal_cap_tail:1;single_195_tail:1,Mohenjo-daro|SEAL:S|square|Steatite:3;Surkotada|SEAL:S|square|-:1,M-38;M-119;M-735;Sktd-1,"next xslot 125 under head 390 should continue, tail may split by left/register"
+2026-05-31,610,2,2/2,032:2,single_032_tail:2,Harappa|SEAL:S|square|Steatite:1;Mohenjo-daro|SEAL:S|square|Steatite:1,H-74;M-1665,next xslot 125 under head 610 should continue with 032 tail
+2026-05-31,190,1,1/1,632 032:1,632032_tail_family:1,Mohenjo-daro|SEAL:S|square|Steatite:1,M-1692,singleton head: predict by tail class only
+2026-05-31,405,1,1/1,820:1,820_terminal_cap_tail:1,Mohenjo-daro|SEAL:S|square|Steatite:1,M-41,singleton head: predict by tail class only
+2026-05-31,407,1,1/1,590 831:1,copper_590831_tail:1,Mohenjo-daro|TAB:C|rectangular|Copper:1,M-2055,singleton head: predict by tail class only
+2026-05-31,861,1,0/1,<END>:1,terminal_125:1,Harappa|SEAL:S|square|Steatite:1,H-55,next xslot 125 under this terminal head should end
+2026-05-31,906,1,0/1,<END>:1,terminal_125:1,Mohenjo-daro|SEAL:R|cuboid-convex|Steatite:1,M-354,next xslot 125 under this terminal head should end

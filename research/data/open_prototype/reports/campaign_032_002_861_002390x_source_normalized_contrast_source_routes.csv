@@ -1,0 +1,11 @@
+cisi,object_key,normalized_source_route,normalized_source_grade,normalized_decision,strict_source_visible,permissive_public_panel,normalized_note
+M-38,M-38,public_context_low_readability_cisi_india_n055,weak_public_context_not_token_boxable,keep_as_weak_support_only,False,False,"Panel/context exists, but the source image is too faint for token-level promotion."
+M-70,M-70,public_source_visible_cisi_india_n066,strict_source_visible_non125_control,anchor_non125_692_control,True,True,Source-visible 002-390-692 control already cropped from CISI India n66.
+M-71,M-71,public_source_visible_cisi_india_n066,strict_source_visible_non125_comparator,upgrade_repeated_095_control,True,True,"M-71 A/a are visible on CISI India n66, upgrading repeated 095 from index hint."
+M-119,M-119,public_source_visible_cisi_india_n076,strict_source_visible_125_candidate,upgrade_125_from_mayig_overlap,True,True,"M-119 is visible on CISI India n76, printed p.41, panel M-119 A/a."
+M-735,M-735,public_source_visible_cisi_pakistan_n086,strict_source_visible_125_candidate,upgrade_125_from_index_hint,True,True,"M-735 is visible on CISI Pakistan n86, printed p.52, panel M-735 A/a."
+Sktd-1,Sktd-1,panel_bound_public_cisi_india_n397,panel_bound_public_candidate,upgrade_but_keep_below_strict_token_proof,False,True,"Sktd-1 is panel-bound on CISI India n397, but exact side and token sequence still need token-boxing."
+M-1825,M-1825,still_unrouted_public_source_dark,source_dark,do_not_use_as_source_normalized_705_yet,False,False,Direct CISI XML search did not locate M-1825 in the local India/Pakistan scans.
+H-1993,H-1993,harappa_route_unresolved_not_public_cisi,source_dark,do_not_use_as_source_normalized_095_yet,False,False,"Likely requires Harappa figure/acquisition route, not CISI India/Pakistan page route."
+-,-:3335.1,unresolved_non_cisi_object,source_dark,do_not_use_as_source_normalized_590_yet,False,False,No stable public label route yet.
+-,-:4237.1,dholavira_object_unresolved,source_dark,do_not_use_as_source_normalized_705_yet,False,False,No stable public label route yet.

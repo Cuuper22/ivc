@@ -1,0 +1,57 @@
+{
+  "date": "2026-05-24",
+  "artifact": "H-355",
+  "type": "TAB:I",
+  "site": "Harappa",
+  "packet_priority": "P1_033_after_with_400_740_176",
+  "acquisition_bucket": "A_double_short_side_case",
+  "public_lead_status": "text_only_or_bibliographic_public_lead",
+  "sides": 3,
+  "catalog_rows": 3,
+  "row_count_in_packet": 2,
+  "short_rows_to_check": 2,
+  "short_side_texts": [
+    "2:+700-033+",
+    "3:+700-033+"
+  ],
+  "longer_texts": [
+    "+400-740-176+"
+  ],
+  "group_signature": "1:+400-740-176+|2:+700-033+|3:+700-033+",
+  "raw_ids": [
+    "1374.1",
+    "1374.2",
+    "1374.3"
+  ],
+  "excavation_ids": [
+    "1274"
+  ],
+  "dimensions_mm": "15.5 x 5.8 x 0",
+  "public_sources_checked": [
+    "https://indusscriptmore.blogspot.com/2012/",
+    "web_search:\"H-355\" \"Indus\" \"Harappa\" tablet",
+    "web_search:\"H-355\" \"+700-033\" \"400-740-176\"",
+    "web_search:\"H-355\" \"H-352-357\" \"incised\"",
+    "web_search:site:bharatkalyan97.blogspot.com H-355 Indus",
+    "web_search:site:indusscriptmore.blogspot.com H-355",
+    "web_search:\"H-355\" \"Corpus of Indus Seals\"",
+    "web_search:\"H-355\" \"Harappa.com\" \"Indus\""
+  ],
+  "public_text_only_leads": 1,
+  "public_object_image_leads": 0,
+  "candidate_image_urls": 0,
+  "source_validation_fields_filled": 0,
+  "requires_three_side_source": true,
+  "status": "requires_CISI_HARP_three_side_source",
+  "interpretation_status": "source_acquisition_only_no_reading",
+  "boundary": [
+    "no side relation accepted",
+    "no physical side function accepted",
+    "no numerical value accepted",
+    "no metrological reading accepted",
+    "no sign meaning accepted",
+    "no phonetic value accepted",
+    "no language identity accepted",
+    "no translation accepted"
+  ]
+}

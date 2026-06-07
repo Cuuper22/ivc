@@ -1,0 +1,35 @@
+{
+  "date": "2026-05-26",
+  "question": "Can H-319 and H-1284 be source-upgraded as further exact +520-220-415+ objects with same-object 034/700 companions?",
+  "answer": "No. H-319 is confirmed as a public data-register route only; H-1284 remains route-dark in the checked CISI 1/2 public layer. Both stay acquisition targets. H-938 remains the only clean source-panel-audited same-object pressure case.",
+  "h319_register_pages_downloaded": 2,
+  "h319_register_pages_byte_identical": true,
+  "h319_register_page_sha256": "535c88465343a3c1608ea6746ff8c88f279f81fbda6f8ef21859c2a3a0650e08",
+  "h319_register_row_crop_sha256": "c748accd1b30aa2b48f742276f940d6e7913c353e728ddfc6fb428646eb337e5",
+  "h319_register_page_dimensions": "2441x3420",
+  "h319_register_row_crop_dimensions": "1040x270",
+  "focused_objects": [
+    "H-319",
+    "H-1284"
+  ],
+  "controls": [
+    "H-938",
+    "H-939"
+  ],
+  "source_upgrades": {
+    "H-1284": "no",
+    "H-319": "no",
+    "H-939": "no",
+    "H-938": "already_yes_control"
+  },
+  "accepted_interpretive_claims": 0,
+  "files": [
+    "docs/lipi_034_m1206_h319_h1284_source_route_recheck.md",
+    "data/open_prototype/reports/lipi_034_m1206_h319_h1284_source_route_recheck_sources.csv",
+    "data/open_prototype/reports/lipi_034_m1206_h319_h1284_source_route_recheck_adjudication.csv",
+    "data/open_prototype/reports/lipi_034_m1206_h319_h1284_source_route_recheck_summary.json",
+    "tmp/h319_h1284_source_route_recheck/cisi_india_n406_h319_register_w2000.jpg",
+    "tmp/h319_h1284_source_route_recheck/cisi_india_n837_h319_register_w2000.jpg",
+    "tmp/h319_h1284_source_route_recheck/cisi_india_n406_h319_register_row_crop2.png"
+  ]
+}

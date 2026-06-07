@@ -1,0 +1,11 @@
+checked_date,x,role,n,terminal_count,strict_count,source_classes,prev_contexts,tails,decision,evidence
+2026-05-31,125,open_branch_carrier_tail_conditioned,4,0,2,strict:2;panel_permissive_not_strict:1;unbound:1,235:2;004:1;484:1,195:1;632 032:1;632 032 900 563:1;820:1,keep_candidate_open_branch_syntax_only,M-38:235->125->632 032:unbound | M-119:484->125->632 032 900 563:strict | M-735:235->125->195:strict | Sktd-1:004->125->820:panel_permissive_not_strict
+2026-05-31,095,terminal_closure_family,2,2,1,route_only:1;strict:1,004:1;142:1,<END>:2,keep_terminal_syntax_semantics_wild,H-1993:004->095-><END>:route_only | M-71:142->095-><END>:strict
+2026-05-31,705,terminal_closure_family,2,2,0,source_dark:1;unbound:1,031:1;388:1,<END>:2,demote_repeated_terminal_until_source_bound,M-1825:031->705-><END>:source_dark | -:4237.1:388->705-><END>:unbound
+2026-05-31,072,singleton_terminal_filler,1,1,0,unbound:1,003:1,<END>:1,demote_to_wild_singleton_terminal_filler,H-68:003->072-><END>:unbound
+2026-05-31,140,singleton_terminal_filler,1,1,0,unbound:1,061:1,<END>:1,demote_to_wild_singleton_terminal_filler,M-708:061->140-><END>:unbound
+2026-05-31,346,singleton_terminal_filler,1,1,0,unbound:1,384:1,<END>:1,demote_to_wild_singleton_terminal_filler,M-213:384->346-><END>:unbound
+2026-05-31,530,one_complement_linker,1,0,0,panel_compatible_not_strict:1,803:1,741:1,keep_one_complement_prediction_not_load_bearing,H-773:803->530->741:panel_compatible_not_strict
+2026-05-31,590,embedded_formula_bridge,1,0,0,unbound:1,032:1,032:1,keep_bridge_prediction_source_blocked,-:3335.1:032->590->032:unbound
+2026-05-31,692,terminal_closure_family,1,1,1,strict:1,032:1,<END>:1,keep_singleton_strict_terminal_edge,M-70:032->692-><END>:strict
+2026-05-31,707,singleton_terminal_filler,1,1,0,unbound:1,236:1,<END>:1,demote_to_wild_singleton_terminal_filler,M-232:236->707-><END>:unbound

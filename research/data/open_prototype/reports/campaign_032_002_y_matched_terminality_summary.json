@@ -1,0 +1,49 @@
+{
+  "all_002_strict_dedup_rows": 499,
+  "after_032_strict_dedup_rows": 32,
+  "class_summary_path": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_y_matched_terminality_class_summary.csv",
+  "block_contrasts_path": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_y_matched_terminality_block_contrasts.csv",
+  "prediction_scores_path": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_y_matched_terminality_prediction_scores.csv",
+  "all_002_best_brier": {
+    "scope": "all_002_strict_dedup",
+    "model": "y_class",
+    "keys": "y_class",
+    "rows": 499,
+    "terminal_rows": 305,
+    "accuracy": "0.885772",
+    "brier": "0.097554",
+    "logloss": "0.331038"
+  },
+  "all_002_best_logloss": {
+    "scope": "all_002_strict_dedup",
+    "model": "y_class",
+    "keys": "y_class",
+    "rows": 499,
+    "terminal_rows": 305,
+    "accuracy": "0.885772",
+    "brier": "0.097554",
+    "logloss": "0.331038"
+  },
+  "after_032_best_brier": {
+    "scope": "after_032_strict_dedup",
+    "model": "y_class",
+    "keys": "y_class",
+    "rows": 32,
+    "terminal_rows": 19,
+    "accuracy": "0.906250",
+    "brier": "0.106698",
+    "logloss": "0.381811"
+  },
+  "after_032_best_logloss": {
+    "scope": "after_032_strict_dedup",
+    "model": "y_class",
+    "keys": "y_class",
+    "rows": 32,
+    "terminal_rows": 19,
+    "accuracy": "0.906250",
+    "brier": "0.106698",
+    "logloss": "0.381811"
+  },
+  "matched_blocks_all_002": 47,
+  "matched_blocks_after_032": 17
+}

@@ -1,0 +1,438 @@
+{
+  "generated_at_local": "2026-05-24T16:58:59-07:00",
+  "source_files": [
+    "data/open_prototype/reports/mismatch_audit.csv",
+    "data/open_prototype/reports/crosswalk_lipi_to_mayig_candidates.csv"
+  ],
+  "eligibility_rule": "status == candidate_for_pre_crosswalk_structure_tests AND lipi_dir == R/L AND flags empty",
+  "eligible_records": 136,
+  "policies": {
+    "raw_lipi_numeric": "Prefix numeric lipi signs as L###; no merges.",
+    "p385_merge_only": "Only 817 and 861 are collapsed to P385; all other signs remain L###.",
+    "provisional_high_map": "Map high-consistency positional candidates to P###; leave all others L###.",
+    "provisional_high_medium_map": "Map high and medium positional candidates to P###; leave all others L###.",
+    "mayig_observed_parpola": "Use mayig P### strings for the same eligible rows."
+  },
+  "policy_summaries": [
+    {
+      "policy": "raw_lipi_numeric",
+      "rows": 136,
+      "tokens": 739,
+      "vocab_size": 189,
+      "distinct_sequences": 136,
+      "sequence": {
+        "rows": 136,
+        "rows_length_gt_1": 136,
+        "actual_higher_than_reversed": 129,
+        "reversed_higher_than_actual": 4,
+        "ties": 3,
+        "actual_above_shuffle_mean": 127,
+        "mean_actual_minus_reversed": 5.508182,
+        "median_actual_minus_reversed": 5.46798,
+        "by_length_bucket": [
+          {
+            "bucket": "1-3",
+            "rows": 24,
+            "actual_higher": 21,
+            "reversed_higher": 2,
+            "ties": 1,
+            "actual_above_shuffle_mean": 20
+          },
+          {
+            "bucket": "4-5",
+            "rows": 50,
+            "actual_higher": 47,
+            "reversed_higher": 2,
+            "ties": 1,
+            "actual_above_shuffle_mean": 46
+          },
+          {
+            "bucket": "6-8",
+            "rows": 54,
+            "actual_higher": 53,
+            "reversed_higher": 0,
+            "ties": 1,
+            "actual_above_shuffle_mean": 53
+          },
+          {
+            "bucket": "9+",
+            "rows": 8,
+            "actual_higher": 8,
+            "reversed_higher": 0,
+            "ties": 0,
+            "actual_above_shuffle_mean": 8
+          }
+        ]
+      },
+      "masked_overall": [
+        {
+          "model": "frequency",
+          "masked_tokens": 739,
+          "top1": 73,
+          "top5": 208,
+          "mrr_sum": 144.1867519697503,
+          "top1_accuracy": 0.098782,
+          "top5_accuracy": 0.281461,
+          "mrr": 0.195111
+        },
+        {
+          "model": "position",
+          "masked_tokens": 739,
+          "top1": 117,
+          "top5": 248,
+          "mrr_sum": 180.93149718818358,
+          "top1_accuracy": 0.158322,
+          "top5_accuracy": 0.335589,
+          "mrr": 0.244833
+        },
+        {
+          "model": "bidirectional_bigram",
+          "masked_tokens": 739,
+          "top1": 208,
+          "top5": 360,
+          "mrr_sum": 278.9490766314299,
+          "top1_accuracy": 0.281461,
+          "top5_accuracy": 0.487145,
+          "mrr": 0.377468
+        }
+      ]
+    },
+    {
+      "policy": "p385_merge_only",
+      "rows": 136,
+      "tokens": 739,
+      "vocab_size": 188,
+      "distinct_sequences": 136,
+      "sequence": {
+        "rows": 136,
+        "rows_length_gt_1": 136,
+        "actual_higher_than_reversed": 129,
+        "reversed_higher_than_actual": 4,
+        "ties": 3,
+        "actual_above_shuffle_mean": 127,
+        "mean_actual_minus_reversed": 5.727164,
+        "median_actual_minus_reversed": 5.480639,
+        "by_length_bucket": [
+          {
+            "bucket": "1-3",
+            "rows": 24,
+            "actual_higher": 21,
+            "reversed_higher": 2,
+            "ties": 1,
+            "actual_above_shuffle_mean": 20
+          },
+          {
+            "bucket": "4-5",
+            "rows": 50,
+            "actual_higher": 47,
+            "reversed_higher": 2,
+            "ties": 1,
+            "actual_above_shuffle_mean": 46
+          },
+          {
+            "bucket": "6-8",
+            "rows": 54,
+            "actual_higher": 53,
+            "reversed_higher": 0,
+            "ties": 1,
+            "actual_above_shuffle_mean": 53
+          },
+          {
+            "bucket": "9+",
+            "rows": 8,
+            "actual_higher": 8,
+            "reversed_higher": 0,
+            "ties": 0,
+            "actual_above_shuffle_mean": 8
+          }
+        ]
+      },
+      "masked_overall": [
+        {
+          "model": "frequency",
+          "masked_tokens": 739,
+          "top1": 73,
+          "top5": 211,
+          "mrr_sum": 145.7083125767527,
+          "top1_accuracy": 0.098782,
+          "top5_accuracy": 0.285521,
+          "mrr": 0.19717
+        },
+        {
+          "model": "position",
+          "masked_tokens": 739,
+          "top1": 117,
+          "top5": 255,
+          "mrr_sum": 185.55249550760314,
+          "top1_accuracy": 0.158322,
+          "top5_accuracy": 0.345061,
+          "mrr": 0.251086
+        },
+        {
+          "model": "bidirectional_bigram",
+          "masked_tokens": 739,
+          "top1": 227,
+          "top5": 368,
+          "mrr_sum": 291.1084858477429,
+          "top1_accuracy": 0.307172,
+          "top5_accuracy": 0.49797,
+          "mrr": 0.393922
+        }
+      ]
+    },
+    {
+      "policy": "provisional_high_map",
+      "rows": 136,
+      "tokens": 739,
+      "vocab_size": 188,
+      "distinct_sequences": 136,
+      "sequence": {
+        "rows": 136,
+        "rows_length_gt_1": 136,
+        "actual_higher_than_reversed": 129,
+        "reversed_higher_than_actual": 4,
+        "ties": 3,
+        "actual_above_shuffle_mean": 127,
+        "mean_actual_minus_reversed": 5.727164,
+        "median_actual_minus_reversed": 5.480639,
+        "by_length_bucket": [
+          {
+            "bucket": "1-3",
+            "rows": 24,
+            "actual_higher": 21,
+            "reversed_higher": 2,
+            "ties": 1,
+            "actual_above_shuffle_mean": 20
+          },
+          {
+            "bucket": "4-5",
+            "rows": 50,
+            "actual_higher": 47,
+            "reversed_higher": 2,
+            "ties": 1,
+            "actual_above_shuffle_mean": 46
+          },
+          {
+            "bucket": "6-8",
+            "rows": 54,
+            "actual_higher": 53,
+            "reversed_higher": 0,
+            "ties": 1,
+            "actual_above_shuffle_mean": 53
+          },
+          {
+            "bucket": "9+",
+            "rows": 8,
+            "actual_higher": 8,
+            "reversed_higher": 0,
+            "ties": 0,
+            "actual_above_shuffle_mean": 8
+          }
+        ]
+      },
+      "masked_overall": [
+        {
+          "model": "frequency",
+          "masked_tokens": 739,
+          "top1": 73,
+          "top5": 211,
+          "mrr_sum": 145.52981423900508,
+          "top1_accuracy": 0.098782,
+          "top5_accuracy": 0.285521,
+          "mrr": 0.196928
+        },
+        {
+          "model": "position",
+          "masked_tokens": 739,
+          "top1": 117,
+          "top5": 255,
+          "mrr_sum": 184.10019318681745,
+          "top1_accuracy": 0.158322,
+          "top5_accuracy": 0.345061,
+          "mrr": 0.249121
+        },
+        {
+          "model": "bidirectional_bigram",
+          "masked_tokens": 739,
+          "top1": 227,
+          "top5": 368,
+          "mrr_sum": 291.10828364972303,
+          "top1_accuracy": 0.307172,
+          "top5_accuracy": 0.49797,
+          "mrr": 0.393922
+        }
+      ]
+    },
+    {
+      "policy": "provisional_high_medium_map",
+      "rows": 136,
+      "tokens": 739,
+      "vocab_size": 187,
+      "distinct_sequences": 136,
+      "sequence": {
+        "rows": 136,
+        "rows_length_gt_1": 136,
+        "actual_higher_than_reversed": 129,
+        "reversed_higher_than_actual": 4,
+        "ties": 3,
+        "actual_above_shuffle_mean": 127,
+        "mean_actual_minus_reversed": 5.786476,
+        "median_actual_minus_reversed": 5.490949,
+        "by_length_bucket": [
+          {
+            "bucket": "1-3",
+            "rows": 24,
+            "actual_higher": 21,
+            "reversed_higher": 2,
+            "ties": 1,
+            "actual_above_shuffle_mean": 20
+          },
+          {
+            "bucket": "4-5",
+            "rows": 50,
+            "actual_higher": 47,
+            "reversed_higher": 2,
+            "ties": 1,
+            "actual_above_shuffle_mean": 46
+          },
+          {
+            "bucket": "6-8",
+            "rows": 54,
+            "actual_higher": 53,
+            "reversed_higher": 0,
+            "ties": 1,
+            "actual_above_shuffle_mean": 53
+          },
+          {
+            "bucket": "9+",
+            "rows": 8,
+            "actual_higher": 8,
+            "reversed_higher": 0,
+            "ties": 0,
+            "actual_above_shuffle_mean": 8
+          }
+        ]
+      },
+      "masked_overall": [
+        {
+          "model": "frequency",
+          "masked_tokens": 739,
+          "top1": 73,
+          "top5": 211,
+          "mrr_sum": 146.01129757700488,
+          "top1_accuracy": 0.098782,
+          "top5_accuracy": 0.285521,
+          "mrr": 0.19758
+        },
+        {
+          "model": "position",
+          "masked_tokens": 739,
+          "top1": 117,
+          "top5": 252,
+          "mrr_sum": 183.29764457000218,
+          "top1_accuracy": 0.158322,
+          "top5_accuracy": 0.341001,
+          "mrr": 0.248035
+        },
+        {
+          "model": "bidirectional_bigram",
+          "masked_tokens": 739,
+          "top1": 228,
+          "top5": 369,
+          "mrr_sum": 294.1859883848318,
+          "top1_accuracy": 0.308525,
+          "top5_accuracy": 0.499323,
+          "mrr": 0.398087
+        }
+      ]
+    },
+    {
+      "policy": "mayig_observed_parpola",
+      "rows": 136,
+      "tokens": 739,
+      "vocab_size": 160,
+      "distinct_sequences": 135,
+      "sequence": {
+        "rows": 136,
+        "rows_length_gt_1": 136,
+        "actual_higher_than_reversed": 129,
+        "reversed_higher_than_actual": 5,
+        "ties": 2,
+        "actual_above_shuffle_mean": 127,
+        "mean_actual_minus_reversed": 5.98326,
+        "median_actual_minus_reversed": 5.760447,
+        "by_length_bucket": [
+          {
+            "bucket": "1-3",
+            "rows": 24,
+            "actual_higher": 21,
+            "reversed_higher": 3,
+            "ties": 0,
+            "actual_above_shuffle_mean": 20
+          },
+          {
+            "bucket": "4-5",
+            "rows": 50,
+            "actual_higher": 46,
+            "reversed_higher": 2,
+            "ties": 2,
+            "actual_above_shuffle_mean": 45
+          },
+          {
+            "bucket": "6-8",
+            "rows": 54,
+            "actual_higher": 54,
+            "reversed_higher": 0,
+            "ties": 0,
+            "actual_above_shuffle_mean": 54
+          },
+          {
+            "bucket": "9+",
+            "rows": 8,
+            "actual_higher": 8,
+            "reversed_higher": 0,
+            "ties": 0,
+            "actual_above_shuffle_mean": 8
+          }
+        ]
+      },
+      "masked_overall": [
+        {
+          "model": "frequency",
+          "masked_tokens": 739,
+          "top1": 76,
+          "top5": 216,
+          "mrr_sum": 149.93093795047466,
+          "top1_accuracy": 0.102842,
+          "top5_accuracy": 0.292287,
+          "mrr": 0.202884
+        },
+        {
+          "model": "position",
+          "masked_tokens": 739,
+          "top1": 116,
+          "top5": 249,
+          "mrr_sum": 189.97359551430523,
+          "top1_accuracy": 0.156969,
+          "top5_accuracy": 0.336942,
+          "mrr": 0.257068
+        },
+        {
+          "model": "bidirectional_bigram",
+          "masked_tokens": 739,
+          "top1": 236,
+          "top5": 381,
+          "mrr_sum": 302.0313751427169,
+          "top1_accuracy": 0.31935,
+          "top5_accuracy": 0.515562,
+          "mrr": 0.408703
+        }
+      ]
+    }
+  ],
+  "interpretation_boundary": [
+    "These are sign-policy sensitivity checks, not accepted crosswalk validations.",
+    "Improved masked prediction after merging can reflect easier labels, not truth.",
+    "A policy that collapses the order signal would be suspicious; preservation is only a structural screen."
+  ]
+}

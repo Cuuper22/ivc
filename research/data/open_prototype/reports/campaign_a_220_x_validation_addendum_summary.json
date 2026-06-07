@@ -1,0 +1,145 @@
+{
+  "generated_at": "2026-05-26T00:00:00-07:00",
+  "scope": "mechanical validation/addendum for A-220-X frame extraction",
+  "extraction_basis": "numeric tokens parsed from metadata_filtered.csv text field; damaged/open rows retained and flagged",
+  "validation": {
+    "metadata_rows": 5679,
+    "occurrence_220_count": 477,
+    "known_next_count": 390,
+    "frame_count": 89,
+    "key_prev_occurrence_count": 326,
+    "exact_triplet_occurrence_count": 59,
+    "source_hint_occurrence_count": 10,
+    "source_hint_cisi_count": 10
+  },
+  "generated_file_row_counts": {
+    "frame_profile": 89,
+    "key_frame_rows": 326,
+    "key_frame_next_summary": 106,
+    "site_type_profile": 40,
+    "exact_triplet_by_prev": 16
+  },
+  "generated_vs_validation": {
+    "frame_profile_total_occurrence_sum": 477.0,
+    "frame_profile_known_next_sum": 390.0,
+    "key_frame_rows_expected_from_key_prevs": 326,
+    "key_frame_rows_actual": 326,
+    "unit_boundary_220_occurrence_rows": 477,
+    "missing_from_unit_boundary": [],
+    "extra_in_unit_boundary": []
+  },
+  "top_validated_frames": [
+    {
+      "prev": "520",
+      "total_occurrences": 67,
+      "known_next_count": 60,
+      "damaged_or_open_count": 8,
+      "clean_closed_count": 59,
+      "dominant_next": "415",
+      "dominant_next_count": 28,
+      "exact_triplet_count": 21,
+      "source_hint_occurrence_count": 10,
+      "top_site": "Mohenjo-daro",
+      "top_type": "SEAL:S"
+    },
+    {
+      "prev": "740",
+      "total_occurrences": 52,
+      "known_next_count": 48,
+      "damaged_or_open_count": 5,
+      "clean_closed_count": 47,
+      "dominant_next": "055",
+      "dominant_next_count": 11,
+      "exact_triplet_count": 9,
+      "source_hint_occurrence_count": 0,
+      "top_site": "Mohenjo-daro",
+      "top_type": "SEAL:S"
+    },
+    {
+      "prev": "<START>",
+      "total_occurrences": 63,
+      "known_next_count": 44,
+      "damaged_or_open_count": 28,
+      "clean_closed_count": 35,
+      "dominant_next": "000",
+      "dominant_next_count": 10,
+      "exact_triplet_count": 7,
+      "source_hint_occurrence_count": 0,
+      "top_site": "Harappa",
+      "top_type": "SEAL:S"
+    },
+    {
+      "prev": "000",
+      "total_occurrences": 43,
+      "known_next_count": 32,
+      "damaged_or_open_count": 25,
+      "clean_closed_count": 18,
+      "dominant_next": "000",
+      "dominant_next_count": 6,
+      "exact_triplet_count": 3,
+      "source_hint_occurrence_count": 0,
+      "top_site": "Harappa",
+      "top_type": "SEAL:S"
+    },
+    {
+      "prev": "176",
+      "total_occurrences": 18,
+      "known_next_count": 15,
+      "damaged_or_open_count": 5,
+      "clean_closed_count": 13,
+      "dominant_next": "235",
+      "dominant_next_count": 7,
+      "exact_triplet_count": 1,
+      "source_hint_occurrence_count": 0,
+      "top_site": "Harappa",
+      "top_type": "TAB:B"
+    },
+    {
+      "prev": "240",
+      "total_occurrences": 15,
+      "known_next_count": 13,
+      "damaged_or_open_count": 1,
+      "clean_closed_count": 14,
+      "dominant_next": "032",
+      "dominant_next_count": 10,
+      "exact_triplet_count": 0,
+      "source_hint_occurrence_count": 0,
+      "top_site": "Mohenjo-daro",
+      "top_type": "SEAL:S"
+    },
+    {
+      "prev": "002",
+      "total_occurrences": 11,
+      "known_next_count": 11,
+      "damaged_or_open_count": 1,
+      "clean_closed_count": 10,
+      "dominant_next": "455",
+      "dominant_next_count": 5,
+      "exact_triplet_count": 0,
+      "source_hint_occurrence_count": 0,
+      "top_site": "Mohenjo-daro",
+      "top_type": "SEAL:S"
+    },
+    {
+      "prev": "318",
+      "total_occurrences": 11,
+      "known_next_count": 11,
+      "damaged_or_open_count": 0,
+      "clean_closed_count": 11,
+      "dominant_next": "415",
+      "dominant_next_count": 11,
+      "exact_triplet_count": 0,
+      "source_hint_occurrence_count": 0,
+      "top_site": "Harappa",
+      "top_type": "TAB:B"
+    }
+  ],
+  "accepted_mapping_value_translation": 0,
+  "outputs": [
+    "data\\open_prototype\\reports\\campaign_a_220_x_occurrence_flags_addendum.csv",
+    "data\\open_prototype\\reports\\campaign_a_220_x_frame_mechanical_addendum.csv",
+    "data\\open_prototype\\reports\\campaign_a_220_x_site_type_concentration_addendum.csv",
+    "data\\open_prototype\\reports\\campaign_a_220_x_exact_triplet_frame_addendum.csv",
+    "data\\open_prototype\\reports\\campaign_a_220_x_validation_addendum_summary.json"
+  ]
+}

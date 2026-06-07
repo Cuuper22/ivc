@@ -1,0 +1,418 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_240_low_support_terminal_governor_20260531",
+  "tier": "candidate",
+  "bet": "Penult 240 is a low-support local terminal governor with a constrained closure set dominated by 235 and 798.",
+  "source": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\lipi\\metadata_filtered.csv",
+  "target_exact_text_families": 23,
+  "final_distribution": {
+    "220": 2,
+    "235": 9,
+    "415": 1,
+    "798": 5,
+    "803": 2,
+    "806": 1,
+    "031": 3
+  },
+  "leave_site_prediction": {
+    "evaluated_rows": 23,
+    "top1_accuracy": 0.391304347826087,
+    "top3_accuracy": 0.6521739130434783,
+    "mean_true_probability": 0.2177865612648222,
+    "mean_effective_candidates": 4.925386577737421
+  },
+  "final_label_shuffle_null": {
+    "iterations": 2000,
+    "p_ge_top1_accuracy": 0.003,
+    "p_ge_top3_accuracy": 0,
+    "p_ge_mean_true_probability": 0,
+    "p_le_mean_effective_candidates": 0
+  },
+  "examples": [
+    {
+      "text": "+032-031/151-740-240-235+",
+      "final": "235",
+      "sites": [
+        "Chanhu-daro"
+      ],
+      "types": [
+        "SEAL:S"
+      ],
+      "symbols": [
+        "Bull1:II"
+      ],
+      "cisis": [
+        "C-70"
+      ]
+    },
+    {
+      "text": "+240-220+",
+      "final": "220",
+      "sites": [
+        "Farmana"
+      ],
+      "types": [
+        "SEAL:S"
+      ],
+      "symbols": [
+        "Bull1"
+      ],
+      "cisis": [
+        "-"
+      ]
+    },
+    {
+      "text": "+090-740-240-220+",
+      "final": "220",
+      "sites": [
+        "Harappa"
+      ],
+      "types": [
+        "TAB:I"
+      ],
+      "symbols": [
+        "S590"
+      ],
+      "cisis": [
+        "H-294"
+      ]
+    },
+    {
+      "text": "+520-220-415-240-803+",
+      "final": "803",
+      "sites": [
+        "Harappa"
+      ],
+      "types": [
+        "TAB:B"
+      ],
+      "symbols": [
+        "Zebu"
+      ],
+      "cisis": [
+        "H-1953"
+      ]
+    },
+    {
+      "text": "+400-740-920-320-233-240-798+",
+      "final": "798",
+      "sites": [
+        "Harappa"
+      ],
+      "types": [
+        "TAB:B"
+      ],
+      "symbols": [
+        "None"
+      ],
+      "cisis": [
+        "H-1922",
+        "H-248"
+      ]
+    },
+    {
+      "text": "+090-740-240-235+",
+      "final": "235",
+      "sites": [
+        "Harappa"
+      ],
+      "types": [
+        "TAB:I",
+        "TAB:B"
+      ],
+      "symbols": [
+        "S590",
+        "Gavi"
+      ],
+      "cisis": [
+        "H-2055",
+        "H-2054",
+        "H-2020",
+        "H-2019"
+      ]
+    },
+    {
+      "text": "+740-752-463-495-240-415+",
+      "final": "415",
+      "sites": [
+        "Harappa"
+      ],
+      "types": [
+        "TAB:B"
+      ],
+      "symbols": [
+        "Phyt"
+      ],
+      "cisis": [
+        "H-2021"
+      ]
+    },
+    {
+      "text": "+520-240-235+",
+      "final": "235",
+      "sites": [
+        "Harappa"
+      ],
+      "types": [
+        "SEAL:R"
+      ],
+      "symbols": [
+        "None"
+      ],
+      "cisis": [
+        "H-148"
+      ]
+    },
+    {
+      "text": "+090-740-240-031+",
+      "final": "031",
+      "sites": [
+        "Harappa"
+      ],
+      "types": [
+        "SEAL:S"
+      ],
+      "symbols": [
+        "Bull1:W"
+      ],
+      "cisis": [
+        "H-440"
+      ]
+    },
+    {
+      "text": "+520-095-033-706-240-798+",
+      "final": "798",
+      "sites": [
+        "Harappa"
+      ],
+      "types": [
+        "SEAL:R"
+      ],
+      "symbols": [
+        "None"
+      ],
+      "cisis": [
+        "H-660"
+      ]
+    },
+    {
+      "text": "+740-904-240-235+",
+      "final": "235",
+      "sites": [
+        "Lothal"
+      ],
+      "types": [
+        "SEAL:R"
+      ],
+      "symbols": [
+        "None"
+      ],
+      "cisis": [
+        "L-111"
+      ]
+    },
+    {
+      "text": "+151-055-240-235+",
+      "final": "235",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "SEAL:S"
+      ],
+      "symbols": [
+        "Gaur"
+      ],
+      "cisis": [
+        "M-1885"
+      ]
+    },
+    {
+      "text": "+740-100-240-031+",
+      "final": "031",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "SEAL:R"
+      ],
+      "symbols": [
+        "None"
+      ],
+      "cisis": [
+        "M-1982"
+      ]
+    },
+    {
+      "text": "+407-063-845-240-798+",
+      "final": "798",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "TAB:C"
+      ],
+      "symbols": [
+        "Unknown"
+      ],
+      "cisis": [
+        "-"
+      ]
+    },
+    {
+      "text": "+740-690-435-255-240-235+",
+      "final": "235",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "SEAL:R"
+      ],
+      "symbols": [
+        "None"
+      ],
+      "cisis": [
+        "M-377"
+      ]
+    },
+    {
+      "text": "+407-061-845-240-798+",
+      "final": "798",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "TAB:C"
+      ],
+      "symbols": [
+        "Gaur",
+        "Tigr",
+        "-",
+        "Othr"
+      ],
+      "cisis": [
+        "M-567",
+        "M-568",
+        "M-569",
+        "M-1515",
+        "M-1516",
+        "M-1517"
+      ]
+    },
+    {
+      "text": "+740-772-240-803+",
+      "final": "803",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "SEAL:S"
+      ],
+      "symbols": [
+        "Bull1:W"
+      ],
+      "cisis": [
+        "M-705"
+      ]
+    },
+    {
+      "text": "+520-240-806+",
+      "final": "806",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "SEAL"
+      ],
+      "symbols": [
+        "None"
+      ],
+      "cisis": [
+        "M-759"
+      ]
+    },
+    {
+      "text": "+740-927-240-031+",
+      "final": "031",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "SEAL:S"
+      ],
+      "symbols": [
+        "Bull1:S"
+      ],
+      "cisis": [
+        "M-951"
+      ]
+    },
+    {
+      "text": "+520-220-240-235+",
+      "final": "235",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "SEAL:S"
+      ],
+      "symbols": [
+        "Bull1:W"
+      ],
+      "cisis": [
+        "M-962"
+      ]
+    },
+    {
+      "text": "+740-455-240-235+",
+      "final": "235",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "SEAL:S"
+      ],
+      "symbols": [
+        "Gaur"
+      ],
+      "cisis": [
+        "M-1096"
+      ]
+    },
+    {
+      "text": "+520-033-706-240-235+",
+      "final": "235",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "SEAL:R"
+      ],
+      "symbols": [
+        "None"
+      ],
+      "cisis": [
+        "M-1269"
+      ]
+    },
+    {
+      "text": "+527-555-231-240-798+",
+      "final": "798",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "SEAL:R"
+      ],
+      "symbols": [
+        "None"
+      ],
+      "cisis": [
+        "M-1320"
+      ]
+    }
+  ],
+  "decision": "candidate_low_support_terminal_governor",
+  "caveat": "This candidate has only 23 exact text families and is much weaker than 002/060. It must survive source-family collapse and a context split of 235 vs 798 before promotion."
+}

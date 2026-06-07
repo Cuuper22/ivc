@@ -1,0 +1,58 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "002390_enrichment_controls",
+  "serious_controls": 7,
+  "survived_controls": 7,
+  "controls": {
+    "all": {
+      "framed_rows": 15,
+      "unframed_rows": 249,
+      "enrichment_gap": "0.420",
+      "verdict": "survives"
+    },
+    "seal_s_only": {
+      "framed_rows": 13,
+      "unframed_rows": 162,
+      "enrichment_gap": "0.390",
+      "verdict": "survives"
+    },
+    "tab_b_only": {
+      "framed_rows": 2,
+      "unframed_rows": 33,
+      "enrichment_gap": "0.424",
+      "verdict": "underpowered"
+    },
+    "mohenjo_only": {
+      "framed_rows": 9,
+      "unframed_rows": 124,
+      "enrichment_gap": "0.392",
+      "verdict": "survives"
+    },
+    "non_mohenjo": {
+      "framed_rows": 6,
+      "unframed_rows": 125,
+      "enrichment_gap": "0.481",
+      "verdict": "survives"
+    },
+    "complete_y": {
+      "framed_rows": 14,
+      "unframed_rows": 195,
+      "enrichment_gap": "0.412",
+      "verdict": "survives"
+    },
+    "good_or_fine": {
+      "framed_rows": 5,
+      "unframed_rows": 86,
+      "enrichment_gap": "0.533",
+      "verdict": "survives"
+    },
+    "cisi_named": {
+      "framed_rows": 13,
+      "unframed_rows": 225,
+      "enrichment_gap": "0.377",
+      "verdict": "survives"
+    }
+  },
+  "provisional_read": "002 frame marker survives basic site/type/source-ish controls."
+}

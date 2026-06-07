@@ -1,0 +1,51 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "lipi_h2218_h2239_slot_grammar_reconstruction",
+  "input": "data/open_prototype/reports/lipi_h2218_h2239_side_role_templates.csv",
+  "object_rows": 22,
+  "hidden_side_prediction_rows": 66,
+  "role_inventory": [
+    "role_861_003",
+    "role_700_03x",
+    "role_15x_003"
+  ],
+  "role_prediction_correct": 66,
+  "role_prediction_accuracy": 1,
+  "exact_text_prediction_correct": 64,
+  "exact_text_prediction_accuracy": 0.9696969696969697,
+  "side_index_majority_correct": 47,
+  "side_index_majority_accuracy": 0.7121212121212122,
+  "global_majority_correct": 22,
+  "global_majority_accuracy": 0.3333333333333333,
+  "failure_counts": {
+    "none": 64,
+    "singleton_exact_text_failure": 2
+  },
+  "exact_text_failures": [
+    {
+      "cisi": "H-2237",
+      "fig4_number": 17,
+      "hidden_side": 3,
+      "actual_role": "role_15x_003",
+      "actual_text": "+154-003+",
+      "predicted_text": "+156-003+",
+      "failure_type": "singleton_exact_text_failure"
+    },
+    {
+      "cisi": "H-2238",
+      "fig4_number": 18,
+      "hidden_side": 1,
+      "actual_role": "role_700_03x",
+      "actual_text": "+700-033+",
+      "predicted_text": "+700-034+",
+      "failure_type": "singleton_exact_text_failure"
+    }
+  ],
+  "interpretation_boundary": "This is a catalog-side slot grammar reconstruction only. It shows object-internal role predictability and isolates singleton variants; it accepts no physical side role, sign value, function, language, or translation without source images.",
+  "accepted_decipherment_claims": 0,
+  "outputs": [
+    "data/open_prototype/reports/lipi_h2218_h2239_slot_grammar_predictions.csv",
+    "data/open_prototype/reports/lipi_h2218_h2239_slot_grammar_failures.csv",
+    "data/open_prototype/reports/lipi_h2218_h2239_slot_grammar_summary.json"
+  ]
+}

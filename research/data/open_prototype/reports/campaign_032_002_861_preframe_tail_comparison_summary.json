@@ -1,0 +1,25 @@
+{
+  "date": "2026-05-29",
+  "rows_with_002_861": 144,
+  "focus_last2_frames": 7,
+  "focus_last1_frames": 7,
+  "target_last2_rows": {
+    "100 176": 1,
+    "233 805": 1
+  },
+  "target_last1_rows": {
+    "176": 6,
+    "805": 1
+  },
+  "decision": "target_last2_frames_are_singletons_last1_frames_are_context_clues_not_values",
+  "decision_basis": [
+    "The two target last2 frames occur as singletons in the strict 002-861 layer.",
+    "The broader last1 frames give context clues but do not isolate 533-717 as a value.",
+    "Preframe behavior should guide the next batch, not justify translation."
+  ],
+  "outputs": {
+    "rows_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_preframe_tail_comparison_rows.csv",
+    "last2_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_preframe_tail_comparison_last2.csv",
+    "last1_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_preframe_tail_comparison_last1.csv"
+  }
+}

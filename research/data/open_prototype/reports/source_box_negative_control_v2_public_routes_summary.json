@@ -1,0 +1,32 @@
+{
+  "date": "2026-05-29",
+  "status": "source_box_negative_control_v2_public_route_acquisition",
+  "counts": {
+    "target_rows": 5,
+    "route_rows": 7,
+    "public_cisi_pages_downloaded": 5,
+    "source_page_crops_needing_human_boxing": 3,
+    "secondary_catalogue_only_rows": 2,
+    "data_register_rows": 2,
+    "panel_crop_rows": 3,
+    "panel_crops_ready_for_token_box_adjudication": 1,
+    "source_status_rows": 5,
+    "accepted_crosswalk_edges": 0,
+    "accepted_sign_meanings": 0
+  },
+  "files": {
+    "routes": "data/open_prototype/reports/source_box_negative_control_v2_public_routes.csv",
+    "panel_crops": "data/open_prototype/reports/source_box_negative_control_v2_panel_crops.csv",
+    "source_status": "data/open_prototype/reports/source_box_negative_control_v2_source_status.csv",
+    "contact_sheet": "tmp/source_box_negative_control_v2/source_box_negative_control_v2_contact_sheet.jpg",
+    "panel_contact_sheet": "tmp/source_box_negative_control_v2/source_box_negative_control_v2_panel_contact_sheet.jpg",
+    "page_dir": "tmp/source_box_negative_control_v2/pages",
+    "crop_dir": "tmp/source_box_negative_control_v2/crops",
+    "panel_crop_dir": "tmp/source_box_negative_control_v2/panel_crops"
+  },
+  "caveats": [
+    "Downloaded crops are broad source-context crops around OCR labels, not token boxes.",
+    "H-601 and H-1678 remain secondary-catalogue-only in this pass.",
+    "M-38, M-124, and M-381 have public CISI routes, but still need human/token-box adjudication before entering a blind packet."
+  ]
+}

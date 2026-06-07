@@ -1,0 +1,167 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "candidate_id": "risky_terminal_governor_text_family_collapse_20260531",
+  "tier": "promoted_candidate_strengthener",
+  "bet": "The terminal-governor graph survives a harsher text-family collapse where each exact inscription text contributes at most once to an edge, regardless of object count, site, type, or symbol.",
+  "source": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\lipi\\metadata_filtered.csv",
+  "collapse_key": [
+    "edge",
+    "next2",
+    "text"
+  ],
+  "strict_rule": {
+    "min_text_families": 20,
+    "min_terminal_share": 0.85
+  },
+  "target_edges": [
+    {
+      "edge": "002-861",
+      "text_families": 120,
+      "terminal_families": 96,
+      "terminal_share": 0.8,
+      "sites": 8,
+      "types": 9,
+      "examples": [
+        "+405-844-032-840-002-861+",
+        "+740-176-032-002-861+",
+        "+032-031/740-222-235-002-861+",
+        "+125-002-861+",
+        "+244-165/740-879-220-416-803-002-861+",
+        "+740-416-002-861+",
+        "+390-016-002-861+",
+        "+151-382-031-002-861+"
+      ]
+    },
+    {
+      "edge": "002-817",
+      "text_families": 96,
+      "terminal_families": 93,
+      "terminal_share": 0.96875,
+      "sites": 10,
+      "types": 9,
+      "examples": [
+        "+002-817+",
+        "+390-003-002-817+",
+        "+740-636-240/002-817+",
+        "+520-233-803-002-817+",
+        "+520-235-803-002-817+",
+        "+740-231-220-032-002-817+",
+        "+740-904-240-002-817+",
+        "+390-004-002-817+"
+      ]
+    },
+    {
+      "edge": "002-820",
+      "text_families": 72,
+      "terminal_families": 67,
+      "terminal_share": 0.9305555555555556,
+      "sites": 7,
+      "types": 6,
+      "examples": [
+        "+236-002-820+",
+        "+740-900-005-002-820+",
+        "+382-760-382-002-820+",
+        "+002-820+",
+        "+390-003-002-820+",
+        "+526-554-002-820+",
+        "+090-740-101-002-820+",
+        "+621-740-900-003/002-820+"
+      ]
+    },
+    {
+      "edge": "060-920",
+      "text_families": 51,
+      "terminal_families": 50,
+      "terminal_share": 0.9803921568627451,
+      "sites": 9,
+      "types": 7,
+      "examples": [
+        "+842-032-031-592-031-060-920+",
+        "+590-615-140/232-240-001-060-920+",
+        "+161-390-590-031-740-060-920+",
+        "+429-003-741-060-920+",
+        "+156-176-741-060-920+",
+        "+520-220-415-060-920+",
+        "+504-350-741-060-920+",
+        "+740-390-590-231-240-235-745-060-920+"
+      ]
+    },
+    {
+      "edge": "060-692",
+      "text_families": 32,
+      "terminal_families": 27,
+      "terminal_share": 0.84375,
+      "sites": 5,
+      "types": 4,
+      "examples": [
+        "+426-003-060-692+",
+        "+740-531-060-692+",
+        "+740-603-240-060-692+",
+        "+520-220-240-798-060-692+",
+        "+740-642-240-060-692+",
+        "+740-760-061-060-692+",
+        "+740-904-231-240-798-060-692+",
+        "+740-176-060-692+"
+      ]
+    },
+    {
+      "edge": "060-820",
+      "text_families": 23,
+      "terminal_families": 23,
+      "terminal_share": 1,
+      "sites": 5,
+      "types": 4,
+      "examples": [
+        "+869-060-820+",
+        "+526-550-060-820+",
+        "+090-740-240/060-820+",
+        "+156-142-060-820+",
+        "+527-550-740-443-060-820+",
+        "+740-923-240-235-060-820+",
+        "+740-455-240-235-060-820+",
+        "+740-798-231-060-820+"
+      ]
+    },
+    {
+      "edge": "060-550",
+      "text_families": 23,
+      "terminal_families": 22,
+      "terminal_share": 0.9565217391304348,
+      "sites": 4,
+      "types": 6,
+      "examples": [
+        "+060-550+",
+        "+390-003-060-550+",
+        "+740-390-590-060-550+",
+        "+740-803-060-550+",
+        "+090-740-255-705-060-550+",
+        "+740-176-690-435-255-220-032-806-060-550+",
+        "+556-060-550+",
+        "+679-740-240-060-550+"
+      ]
+    }
+  ],
+  "live_shape": {
+    "strict_edges": [
+      "002-817:96/93",
+      "002-820:72/67",
+      "060-920:51/50",
+      "060-820:23/23",
+      "060-550:23/22"
+    ],
+    "strict_edge_count": 5,
+    "multi_governor_count": 2,
+    "shared_closure_count": 1,
+    "has_target_shape": true
+  },
+  "text_family_terminal_shuffle_null": {
+    "iterations": 5000,
+    "preserves": "text-family branch sizes and sign identities; shuffles only terminal/nonterminal outcomes",
+    "p_ge_strict_edge_count": 0,
+    "p_ge_multi_governor_count": 0,
+    "p_ge_shared_closure_count": 0,
+    "p_reproduce_target_shape": 0
+  },
+  "decision": "candidate_survives_text_family_collapse"
+}

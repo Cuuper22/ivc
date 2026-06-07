@@ -1,0 +1,33 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_740407590_fixed_formula_probe_20260531",
+  "tier": "candidate",
+  "bet": "The already strong rectangular/copper register sign 407 participates in a fixed triad 740-407-590. This is a slot-grammar bet: 740 is not merely a generic opener and 407 is not only an independent initial marker; together they license 590 as a fixed next slot.",
+  "counts": {
+    "raw_740_407_occurrences": 16,
+    "raw_next_590": 16,
+    "exact_text_site_type_symbol_dedup_occurrences": 6,
+    "sites_present": ["Harappa", "Hulas", "Lothal", "Mohenjo-daro"],
+    "types_present": ["TAB:B", "TAG:P", "SEAL:R", "TAB:C"]
+  },
+  "maxstat_context": {
+    "source": "data/open_prototype/reports/risky_154806_series_prefix_forger_20260531_summary.json",
+    "all_bigram_all_width8_window_rank": 3,
+    "note": "Under the broad width-8 successor-window scan, 740-407 ranks above 154-806 by share/hit tie-break; for this narrower fixed-successor claim, exact duplicate/copy-family pressure is the main adversary."
+  },
+  "examples": [
+    "H-278 +740-407-590-690-436-255-920-318-220-415-803+",
+    "L-114 +740-407-590-904-220-032-803-060-920+",
+    "M-1954 +740-407-590-031-752-033-705-220-415-798-002-861+",
+    "M-1310 +407-004-001-740-407-590-235+",
+    "M-1452 +740-407-590+",
+    "Hls-1 +740-407-590+"
+  ],
+  "source_probe": {
+    "contact_sheet": "tmp/risky_740407590_source_probe_20260531/740407590_source_contact_sheet_x4.png",
+    "decision": "source_visible_but_not_token_boxed",
+    "blocker": "The contact sheet shows plausible source-visible rows for H-278/L-114/M-1310 and a poor/dark M-1452 panel, but no blind token boxes yet separate 740, 407, and 590."
+  },
+  "next_destructive_test": "Collapse the Harappa H-278/H-279/H-280/H-281/H-282/H-283/H-284/H-871/H-872/H-873 exact-copy family to one unit, then blind-box L-114/M-1310/M-1452/Hls-1 against non-590 740-40x and 407-X controls."
+}

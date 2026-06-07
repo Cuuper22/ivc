@@ -1,0 +1,663 @@
+{
+  "run_date": "2026-05-31",
+  "bet_id": "V1_EXTERNAL_090091_PAIR_MAXSTAT_ADVERSARY_20260531",
+  "vector": "V1 diffuse Meluhha / Gulf external-contact bridge",
+  "confidence_tier": "candidate",
+  "risky_bet": "`090/091` is the discoverable top pair for the external circular-seal register, not just a handpicked pair. The stronger route-specific reading predicts that stricter object-shape/type comparators should not erase the signal.",
+  "observed": "Primary external_circular_vs_external_non_circular: 12/17 vs 0/24, rank 1/3081, Bonferroni=0.002413730969778851, maxstat=0. Same-type SEAL:C: 12/17 vs 4/15, p=0.015976194132701595, Bonferroni=1. External circular vs square/seal-square: 12/17 vs 0/15, p=0.000027405652012703247, Bonferroni=0.06429365962180182. Literal circular shape only: 10/15 vs 2/26, p=0.00012811295217338137.",
+  "adversarial_test": "All unordered sign-pair scan with Bonferroni; 2000-iteration max-statistic label permutation for external-row comparators; same-type SEAL:C control; external circular-vs-square control; literal-shape-circular control; site-blocked support summary.",
+  "false_positive_rate": 0,
+  "primary_bonferroni_p": 0.002413730969778851,
+  "same_type_fisher_p": 0.015976194132701595,
+  "same_type_bonferroni_p": 1,
+  "square_fisher_p": 0.000027405652012703247,
+  "square_bonferroni_p": 0.06429365962180182,
+  "literal_shape_fisher_p": 0.00012811295217338137,
+  "site_blocked_support": "8/10 external circular sites have either sign; 0 sites have both signs across site-level support.",
+  "skeptic_verdict": "The pair survives the hostile broad-pair test, but source validation and site clustering still prevent acceptance.",
+  "next_prediction": "New source-validated circular external seals should add 090 or 091 more often than square external seals. If same-type SEAL:C non-corridor rows continue to carry the pair, the route-specific reading collapses into generic circular-seal marking.",
+  "comparators": [
+    {
+      "comparator": "external_circular_vs_external_non_circular",
+      "rows_a": 17,
+      "rows_b": 24,
+      "pair_tests": 3081,
+      "target_pair": "090/091",
+      "target_a": 12,
+      "target_b": 5,
+      "target_c": 0,
+      "target_d": 24,
+      "target_both_a": 0,
+      "fisher_p": 7.83424527678952e-7,
+      "rank": "1/3081",
+      "bonferroni_p": 0.002413730969778851,
+      "maxstat_permutation_fpr": 0,
+      "target_only_permutation_fpr": 0,
+      "top_pairs": [
+        {
+          "pair": "090/091",
+          "a": 12,
+          "b": 5,
+          "c": 0,
+          "d": 24,
+          "bothA": 0,
+          "p": 7.83424527678952e-7
+        },
+        {
+          "pair": "090/093",
+          "a": 9,
+          "b": 8,
+          "c": 0,
+          "d": 24,
+          "bothA": 0,
+          "p": 0.00006938902959442135
+        },
+        {
+          "pair": "090/831",
+          "a": 9,
+          "b": 8,
+          "c": 0,
+          "d": 24,
+          "bothA": 0,
+          "p": 0.00006938902959442135
+        },
+        {
+          "pair": "001/090",
+          "a": 10,
+          "b": 7,
+          "c": 1,
+          "d": 23,
+          "bothA": 2,
+          "p": 0.0001516486050007118
+        },
+        {
+          "pair": "031/090",
+          "a": 10,
+          "b": 7,
+          "c": 1,
+          "d": 23,
+          "bothA": 0,
+          "p": 0.0001516486050007118
+        },
+        {
+          "pair": "032/090",
+          "a": 8,
+          "b": 9,
+          "c": 0,
+          "d": 24,
+          "bothA": 0,
+          "p": 0.000254426441846215
+        },
+        {
+          "pair": "033/090",
+          "a": 8,
+          "b": 9,
+          "c": 0,
+          "d": 24,
+          "bothA": 0,
+          "p": 0.000254426441846215
+        },
+        {
+          "pair": "071/090",
+          "a": 8,
+          "b": 9,
+          "c": 0,
+          "d": 24,
+          "bothA": 0,
+          "p": 0.000254426441846215
+        },
+        {
+          "pair": "090/099",
+          "a": 8,
+          "b": 9,
+          "c": 0,
+          "d": 24,
+          "bothA": 0,
+          "p": 0.000254426441846215
+        },
+        {
+          "pair": "090/121",
+          "a": 8,
+          "b": 9,
+          "c": 0,
+          "d": 24,
+          "bothA": 0,
+          "p": 0.000254426441846215
+        }
+      ]
+    },
+    {
+      "comparator": "corridor_circular_vs_other_circular",
+      "rows_a": 17,
+      "rows_b": 128,
+      "pair_tests": 6441,
+      "target_pair": "090/091",
+      "target_a": 12,
+      "target_b": 5,
+      "target_c": 8,
+      "target_d": 120,
+      "target_both_a": 0,
+      "fisher_p": 5.165310336926084e-9,
+      "rank": "1/6441",
+      "bonferroni_p": 0.00003326976388014091,
+      "maxstat_permutation_fpr": null,
+      "target_only_permutation_fpr": null,
+      "top_pairs": [
+        {
+          "pair": "090/091",
+          "a": 12,
+          "b": 5,
+          "c": 8,
+          "d": 120,
+          "bothA": 0,
+          "p": 5.165310336926084e-9
+        },
+        {
+          "pair": "090/093",
+          "a": 9,
+          "b": 8,
+          "c": 6,
+          "d": 122,
+          "bothA": 0,
+          "p": 0.0000014408976768589394
+        },
+        {
+          "pair": "090/831",
+          "a": 9,
+          "b": 8,
+          "c": 6,
+          "d": 122,
+          "bothA": 0,
+          "p": 0.0000014408976768589394
+        },
+        {
+          "pair": "031/090",
+          "a": 10,
+          "b": 7,
+          "c": 10,
+          "d": 118,
+          "bothA": 0,
+          "p": 0.0000026502981265314395
+        },
+        {
+          "pair": "004/091",
+          "a": 7,
+          "b": 10,
+          "c": 2,
+          "d": 126,
+          "bothA": 0,
+          "p": 0.000002659725017767511
+        },
+        {
+          "pair": "091/350",
+          "a": 7,
+          "b": 10,
+          "c": 2,
+          "d": 126,
+          "bothA": 0,
+          "p": 0.000002659725017767511
+        },
+        {
+          "pair": "055/090",
+          "a": 9,
+          "b": 8,
+          "c": 7,
+          "d": 121,
+          "bothA": 1,
+          "p": 0.0000031125395653157486
+        },
+        {
+          "pair": "055/091",
+          "a": 7,
+          "b": 10,
+          "c": 3,
+          "d": 125,
+          "bothA": 1,
+          "p": 0.000008297576322041353
+        },
+        {
+          "pair": "001/090",
+          "a": 10,
+          "b": 7,
+          "c": 12,
+          "d": 116,
+          "bothA": 2,
+          "p": 0.00000836306168024924
+        },
+        {
+          "pair": "004/090",
+          "a": 8,
+          "b": 9,
+          "c": 6,
+          "d": 122,
+          "bothA": 1,
+          "p": 0.000012709002258308923
+        }
+      ]
+    },
+    {
+      "comparator": "corridor_seal_c_vs_other_seal_c_same_type",
+      "rows_a": 17,
+      "rows_b": 15,
+      "pair_tests": 2016,
+      "target_pair": "090/091",
+      "target_a": 12,
+      "target_b": 5,
+      "target_c": 4,
+      "target_d": 11,
+      "target_both_a": 0,
+      "fisher_p": 0.015976194132701595,
+      "rank": "2/2016",
+      "bonferroni_p": 1,
+      "maxstat_permutation_fpr": null,
+      "target_only_permutation_fpr": null,
+      "top_pairs": [
+        {
+          "pair": "031/090",
+          "a": 10,
+          "b": 7,
+          "c": 2,
+          "d": 13,
+          "bothA": 0,
+          "p": 0.00989344037658588
+        },
+        {
+          "pair": "090/091",
+          "a": 12,
+          "b": 5,
+          "c": 4,
+          "d": 11,
+          "bothA": 0,
+          "p": 0.015976194132701595
+        },
+        {
+          "pair": "090/093",
+          "a": 9,
+          "b": 8,
+          "c": 2,
+          "d": 13,
+          "bothA": 0,
+          "p": 0.022140341119762624
+        },
+        {
+          "pair": "090/831",
+          "a": 9,
+          "b": 8,
+          "c": 2,
+          "d": 13,
+          "bothA": 0,
+          "p": 0.022140341119762624
+        },
+        {
+          "pair": "090/220",
+          "a": 10,
+          "b": 7,
+          "c": 3,
+          "d": 12,
+          "bothA": 0,
+          "p": 0.029488481565668686
+        },
+        {
+          "pair": "004/031",
+          "a": 5,
+          "b": 12,
+          "c": 0,
+          "d": 15,
+          "bothA": 0,
+          "p": 0.03072858731924384
+        },
+        {
+          "pair": "031/350",
+          "a": 5,
+          "b": 12,
+          "c": 0,
+          "d": 15,
+          "bothA": 0,
+          "p": 0.03072858731924384
+        },
+        {
+          "pair": "004/090",
+          "a": 8,
+          "b": 9,
+          "c": 2,
+          "d": 13,
+          "bothA": 1,
+          "p": 0.045520787993100546
+        },
+        {
+          "pair": "013/090",
+          "a": 8,
+          "b": 9,
+          "c": 2,
+          "d": 13,
+          "bothA": 0,
+          "p": 0.045520787993100546
+        },
+        {
+          "pair": "071/090",
+          "a": 8,
+          "b": 9,
+          "c": 2,
+          "d": 13,
+          "bothA": 0,
+          "p": 0.045520787993100546
+        }
+      ]
+    },
+    {
+      "comparator": "external_circular_vs_external_square_or_square_seal",
+      "rows_a": 17,
+      "rows_b": 15,
+      "pair_tests": 2346,
+      "target_pair": "090/091",
+      "target_a": 12,
+      "target_b": 5,
+      "target_c": 0,
+      "target_d": 15,
+      "target_both_a": 0,
+      "fisher_p": 0.000027405652012703247,
+      "rank": "1/2346",
+      "bonferroni_p": 0.06429365962180182,
+      "maxstat_permutation_fpr": 0.0005,
+      "target_only_permutation_fpr": 0.0005,
+      "top_pairs": [
+        {
+          "pair": "090/091",
+          "a": 12,
+          "b": 5,
+          "c": 0,
+          "d": 15,
+          "bothA": 0,
+          "p": 0.000027405652012703247
+        },
+        {
+          "pair": "001/090",
+          "a": 10,
+          "b": 7,
+          "c": 0,
+          "d": 15,
+          "bothA": 2,
+          "p": 0.00030146217213973737
+        },
+        {
+          "pair": "031/090",
+          "a": 10,
+          "b": 7,
+          "c": 0,
+          "d": 15,
+          "bothA": 0,
+          "p": 0.00030146217213973737
+        },
+        {
+          "pair": "055/090",
+          "a": 9,
+          "b": 8,
+          "c": 0,
+          "d": 15,
+          "bothA": 1,
+          "p": 0.0008667037449017417
+        },
+        {
+          "pair": "090/093",
+          "a": 9,
+          "b": 8,
+          "c": 0,
+          "d": 15,
+          "bothA": 0,
+          "p": 0.0008667037449017417
+        },
+        {
+          "pair": "090/831",
+          "a": 9,
+          "b": 8,
+          "c": 0,
+          "d": 15,
+          "bothA": 0,
+          "p": 0.0008667037449017417
+        },
+        {
+          "pair": "001/091",
+          "a": 8,
+          "b": 9,
+          "c": 0,
+          "d": 15,
+          "bothA": 2,
+          "p": 0.002311209986404667
+        },
+        {
+          "pair": "032/090",
+          "a": 8,
+          "b": 9,
+          "c": 0,
+          "d": 15,
+          "bothA": 0,
+          "p": 0.002311209986404667
+        },
+        {
+          "pair": "033/090",
+          "a": 8,
+          "b": 9,
+          "c": 0,
+          "d": 15,
+          "bothA": 0,
+          "p": 0.002311209986404667
+        },
+        {
+          "pair": "071/090",
+          "a": 8,
+          "b": 9,
+          "c": 0,
+          "d": 15,
+          "bothA": 0,
+          "p": 0.002311209986404667
+        }
+      ]
+    },
+    {
+      "comparator": "external_literal_shape_circular_vs_external_not_literal_shape_circular",
+      "rows_a": 15,
+      "rows_b": 26,
+      "pair_tests": 3081,
+      "target_pair": "090/091",
+      "target_a": 10,
+      "target_b": 5,
+      "target_c": 2,
+      "target_d": 24,
+      "target_both_a": 0,
+      "fisher_p": 0.00012811295217338137,
+      "rank": "1/3081",
+      "bonferroni_p": 0.394716005646188,
+      "maxstat_permutation_fpr": 0.0035,
+      "target_only_permutation_fpr": 0,
+      "top_pairs": [
+        {
+          "pair": "090/091",
+          "a": 10,
+          "b": 5,
+          "c": 2,
+          "d": 24,
+          "bothA": 0,
+          "p": 0.00012811295217338137
+        },
+        {
+          "pair": "090/093",
+          "a": 8,
+          "b": 7,
+          "c": 1,
+          "d": 25,
+          "bothA": 0,
+          "p": 0.0004918457685957519
+        },
+        {
+          "pair": "090/831",
+          "a": 8,
+          "b": 7,
+          "c": 1,
+          "d": 25,
+          "bothA": 0,
+          "p": 0.0004918457685957519
+        },
+        {
+          "pair": "001/090",
+          "a": 9,
+          "b": 6,
+          "c": 2,
+          "d": 24,
+          "bothA": 2,
+          "p": 0.0005399868766516537
+        },
+        {
+          "pair": "031/090",
+          "a": 9,
+          "b": 6,
+          "c": 2,
+          "d": 24,
+          "bothA": 0,
+          "p": 0.0005399868766516537
+        },
+        {
+          "pair": "001/031",
+          "a": 7,
+          "b": 8,
+          "c": 1,
+          "d": 25,
+          "bothA": 1,
+          "p": 0.0018184007461361851
+        },
+        {
+          "pair": "001/055",
+          "a": 7,
+          "b": 8,
+          "c": 1,
+          "d": 25,
+          "bothA": 1,
+          "p": 0.0018184007461361851
+        },
+        {
+          "pair": "001/831",
+          "a": 7,
+          "b": 8,
+          "c": 1,
+          "d": 25,
+          "bothA": 0,
+          "p": 0.0018184007461361851
+        },
+        {
+          "pair": "032/090",
+          "a": 7,
+          "b": 8,
+          "c": 1,
+          "d": 25,
+          "bothA": 0,
+          "p": 0.0018184007461361851
+        },
+        {
+          "pair": "033/090",
+          "a": 7,
+          "b": 8,
+          "c": 1,
+          "d": 25,
+          "bothA": 0,
+          "p": 0.0018184007461361851
+        }
+      ]
+    }
+  ],
+  "site_blocked": {
+    "sites": 10,
+    "either_sites": 8,
+    "both_signs_across_site": 0,
+    "rows": [
+      {
+        "site": "Failaka",
+        "rows": 2,
+        "has_090": true,
+        "has_091": false,
+        "has_either": true,
+        "has_both_any_row": false,
+        "examples": "147.1:+317-817-000-090+ | 148.1:]090-001-350-716+"
+      },
+      {
+        "site": "Girsu",
+        "rows": 1,
+        "has_090": false,
+        "has_091": false,
+        "has_either": false,
+        "has_both_any_row": false,
+        "examples": "5222.1:+740-000-744-013-255+"
+      },
+      {
+        "site": "Janabiyah",
+        "rows": 1,
+        "has_090": false,
+        "has_091": false,
+        "has_either": false,
+        "has_both_any_row": false,
+        "examples": "5232.1:+055-099-121-055-831-031-071+"
+      },
+      {
+        "site": "Kalba",
+        "rows": 1,
+        "has_090": false,
+        "has_091": true,
+        "has_either": true,
+        "has_both_any_row": false,
+        "examples": "5551.1:+091+"
+      },
+      {
+        "site": "Karzakan",
+        "rows": 3,
+        "has_090": false,
+        "has_091": true,
+        "has_either": true,
+        "has_both_any_row": false,
+        "examples": "5227.1:+220-455-031-091+ | 5228.1:+033-001-032-091+ | 5230.1:+740/740+"
+      },
+      {
+        "site": "Luristan",
+        "rows": 1,
+        "has_090": false,
+        "has_091": true,
+        "has_either": true,
+        "has_both_any_row": false,
+        "examples": "2153.1:+831-413-840-091+"
+      },
+      {
+        "site": "Qala'at al-Bahrain",
+        "rows": 1,
+        "has_090": true,
+        "has_091": false,
+        "has_either": true,
+        "has_both_any_row": false,
+        "examples": "3863.1:+160-090-055-060-190+"
+      },
+      {
+        "site": "Saar",
+        "rows": 1,
+        "has_090": false,
+        "has_091": true,
+        "has_either": true,
+        "has_both_any_row": false,
+        "examples": "5229.1:+031-093-001-091-220-055+"
+      },
+      {
+        "site": "Susa",
+        "rows": 1,
+        "has_090": true,
+        "has_091": false,
+        "has_either": true,
+        "has_both_any_row": false,
+        "examples": "3881.1:+700-604-407-090-365-000+"
+      },
+      {
+        "site": "Ur",
+        "rows": 5,
+        "has_090": true,
+        "has_091": false,
+        "has_either": true,
+        "has_both_any_row": false,
+        "examples": "3897.1:+093-340-924-220-528+ | 3898.1:+002-004-328-001-803-415+ | 3899.1:+000-000-004-090-350+ | 5225.1:]000-001-000-090-000[ | 5231.1:]405-090["
+      }
+    ]
+  }
+}

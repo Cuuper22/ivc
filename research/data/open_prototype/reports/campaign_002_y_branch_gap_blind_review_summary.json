@@ -1,0 +1,164 @@
+{
+  "date": "2026-05-29",
+  "packet_id": "branch_gap_source_box_v1",
+  "status": "stage1_tokenization_scored_no_claim_promotion",
+  "key_path": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_002_y_branch_gap_blind_answer_key.csv",
+  "review_paths": [
+    "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_002_y_branch_gap_blind_reviews\\curie_review.csv",
+    "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_002_y_branch_gap_blind_reviews\\hypatia_review.csv",
+    "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_002_y_branch_gap_blind_reviews\\noether_review.csv"
+  ],
+  "reviewer_count": 3,
+  "reviewer_summaries": [
+    {
+      "reviewer": "curie_review",
+      "review_path": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_002_y_branch_gap_blind_reviews\\curie_review.csv",
+      "rows_expected": 14,
+      "rows_reviewed": 14,
+      "exact_count_matches": 2,
+      "uncertain_count_matches": 1,
+      "count_mismatches": 11,
+      "missing_counts": 0,
+      "primary_exact_matches": 1,
+      "primary_count_rows": 3,
+      "backup_exact_matches": 0,
+      "backup_count_rows": 3,
+      "scoring_negative_hard_branch_relation_notes": 0,
+      "target_hard_branch_relation_notes": 0,
+      "missing_rows": 0,
+      "exact_count_match_rate": 0.14285714285714285,
+      "primary_strict_count_recovery_rate": 0.3333333333333333,
+      "backup_strict_count_recovery_rate": 0,
+      "scoring_negative_hard_branch_relation_note_rate": 0
+    },
+    {
+      "reviewer": "hypatia_review",
+      "review_path": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_002_y_branch_gap_blind_reviews\\hypatia_review.csv",
+      "rows_expected": 14,
+      "rows_reviewed": 14,
+      "exact_count_matches": 2,
+      "uncertain_count_matches": 2,
+      "count_mismatches": 10,
+      "missing_counts": 0,
+      "primary_exact_matches": 0,
+      "primary_count_rows": 3,
+      "backup_exact_matches": 0,
+      "backup_count_rows": 3,
+      "scoring_negative_hard_branch_relation_notes": 0,
+      "target_hard_branch_relation_notes": 0,
+      "missing_rows": 0,
+      "exact_count_match_rate": 0.14285714285714285,
+      "primary_strict_count_recovery_rate": 0,
+      "backup_strict_count_recovery_rate": 0,
+      "scoring_negative_hard_branch_relation_note_rate": 0
+    },
+    {
+      "reviewer": "noether_review",
+      "review_path": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_002_y_branch_gap_blind_reviews\\noether_review.csv",
+      "rows_expected": 14,
+      "rows_reviewed": 14,
+      "exact_count_matches": 1,
+      "uncertain_count_matches": 2,
+      "count_mismatches": 11,
+      "missing_counts": 0,
+      "primary_exact_matches": 0,
+      "primary_count_rows": 3,
+      "backup_exact_matches": 0,
+      "backup_count_rows": 3,
+      "scoring_negative_hard_branch_relation_notes": 0,
+      "target_hard_branch_relation_notes": 0,
+      "missing_rows": 0,
+      "exact_count_match_rate": 0.07142857142857142,
+      "primary_strict_count_recovery_rate": 0,
+      "backup_strict_count_recovery_rate": 0,
+      "scoring_negative_hard_branch_relation_note_rate": 0
+    }
+  ],
+  "target_stability": [
+    {
+      "blind_id": "BG001",
+      "cisi": "M-12",
+      "role_class": "primary_target",
+      "expected_token_count": 9,
+      "reviewed_numeric_counts": [
+        10,
+        10,
+        10
+      ],
+      "all_numeric_counts_same": true,
+      "all_reviewers_exact_expected_count": false
+    },
+    {
+      "blind_id": "BG002",
+      "cisi": "M-318",
+      "role_class": "primary_target",
+      "expected_token_count": 5,
+      "reviewed_numeric_counts": [
+        5,
+        6,
+        5
+      ],
+      "all_numeric_counts_same": false,
+      "all_reviewers_exact_expected_count": false
+    },
+    {
+      "blind_id": "BG003",
+      "cisi": "M-29",
+      "role_class": "primary_target",
+      "expected_token_count": 9,
+      "reviewed_numeric_counts": [
+        10,
+        9,
+        14
+      ],
+      "all_numeric_counts_same": false,
+      "all_reviewers_exact_expected_count": false
+    },
+    {
+      "blind_id": "BG004",
+      "cisi": "M-678",
+      "role_class": "backup_target",
+      "expected_token_count": 9,
+      "reviewed_numeric_counts": [
+        8,
+        9,
+        10
+      ],
+      "all_numeric_counts_same": false,
+      "all_reviewers_exact_expected_count": false
+    },
+    {
+      "blind_id": "BG005",
+      "cisi": "M-655",
+      "role_class": "backup_target",
+      "expected_token_count": 7,
+      "reviewed_numeric_counts": [
+        9,
+        11,
+        9
+      ],
+      "all_numeric_counts_same": false,
+      "all_reviewers_exact_expected_count": false
+    },
+    {
+      "blind_id": "BG006",
+      "cisi": "M-311",
+      "role_class": "backup_target",
+      "expected_token_count": 4,
+      "reviewed_numeric_counts": [
+        7,
+        12,
+        0
+      ],
+      "all_numeric_counts_same": false,
+      "all_reviewers_exact_expected_count": false
+    }
+  ],
+  "promotion_gate_decision": "not_promotable_stage1_only_no_claim_increment",
+  "promotion_gate_failed_reasons": [
+    "not_all_target_and_backup_rows_have_stable_exact_token_counts",
+    "stage1_tokenization_only_no_unblinded_alignment_or_branch_relation_scoring"
+  ],
+  "accepted_claims_increment": 0,
+  "interpretation_boundary": "This stage-1 scorer only checks blind token-count stability and hard branch-relation notes. It cannot validate source-normalized token identity, physical direction, sign meaning, phonetic value, language family, translation, or accepted structural status."
+}

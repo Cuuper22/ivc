@@ -1,0 +1,52 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "390_route_split_controls",
+  "serious_controls": 7,
+  "survived_controls": 6,
+  "controls": {
+    "all": {
+      "terminal_rows": 9,
+      "linker_rows": 6,
+      "length_gap": "2.778",
+      "verdict": "survives"
+    },
+    "seal_s_only": {
+      "terminal_rows": 8,
+      "linker_rows": 5,
+      "length_gap": "3.225",
+      "verdict": "survives"
+    },
+    "mohenjo_only": {
+      "terminal_rows": 6,
+      "linker_rows": 3,
+      "length_gap": "5.000",
+      "verdict": "survives"
+    },
+    "non_mohenjo": {
+      "terminal_rows": 3,
+      "linker_rows": 3,
+      "length_gap": "0.000",
+      "verdict": "damaged"
+    },
+    "complete_y": {
+      "terminal_rows": 8,
+      "linker_rows": 6,
+      "length_gap": "2.958",
+      "verdict": "survives"
+    },
+    "good_or_fine": {
+      "terminal_rows": 2,
+      "linker_rows": 3,
+      "length_gap": "5.000",
+      "verdict": "survives"
+    },
+    "cisi_named": {
+      "terminal_rows": 8,
+      "linker_rows": 5,
+      "length_gap": "3.100",
+      "verdict": "survives"
+    }
+  },
+  "provisional_read": "390 status/title route split survives basic controls."
+}

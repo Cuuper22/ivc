@@ -1,0 +1,49 @@
+{
+  "date": "2026-05-26",
+  "artifact": "lipi_034_m1206_034_cohesion_gate",
+  "question": "Does M-1206 provide a stable source-visible 034 graphic class after M-315 failed, or does it visually collapse toward the 415 family?",
+  "input_packet": {
+    "neutral_contact_sheet": "tmp/m1206_034_cohesion_gate/derived/m1206_034_cohesion_neutral_contact_sheet.png",
+    "input_manifest": "data/open_prototype/reports/lipi_034_m1206_034_cohesion_gate_inputs.csv",
+    "mechanic_check": "13 rows, 13 neutral crops, all hashes and dimensions match, no missing paths, no obvious source-label leak"
+  },
+  "blind_reviews": {
+    "reviewer_count": 2,
+    "consensus": [
+      "C001-C003 are internally stable under reversal/order change",
+      "C004-C005 are the strongest external matches",
+      "C008-C010 are close but cropped/noisy or side-policy-gated",
+      "C006-C007 are relevant but weaker",
+      "C011-C013 are not classifiable as meaningful comparanda"
+    ]
+  },
+  "unblinded_decision": {
+    "accepted_internal_m1206_stability": true,
+    "closest_external_family": "415",
+    "primary_external_matches": ["M-37 A", "M-37 a"],
+    "clean_exact_side_415_pressure": ["H-940 A", "H-938 A/A bis"],
+    "side_mapping_gated_415_pressure": ["H-786 A", "H-941 A"],
+    "weak_034_cases_excluded": ["M-1584", "M-685"],
+    "m315_status": "negative gate / upper-witness 004 pressure; not positive 034 evidence"
+  },
+  "accepted": {
+    "m1206_source_visible_visual_family_target": true,
+    "m1206_closest_blind_neighbors_are_415_family": true,
+    "034_415_visual_family_or_transcription_policy_question_open": true,
+    "034_415_allograph_or_transcription_policy_pressure": false,
+    "post_h938_b_clamp": "Later H-938 B component probe is negative for direct component-level 034/415 support; no allograph pressure is accepted from the H-938 companion side.",
+    "034_equals_415": false,
+    "034_has_value": false,
+    "034_415_semantic_contrast": false,
+    "translation": false
+  },
+  "next_gate": [
+    "Resolve H-786/H-941 source-local side mapping.",
+    "Acquire source-grade M-1912 for the missing +520-220-003+ same-site comparator.",
+    "Run terminal-component blind crops rather than whole three-sign bands.",
+    "Keep M-1584 and M-685 out of positive cohesion counts until better source images make them classifiable."
+  ],
+  "accepted_source_mapping_count": 0,
+  "accepted_sign_value_count": 0,
+  "accepted_translation_count": 0
+}

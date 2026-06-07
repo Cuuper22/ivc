@@ -1,0 +1,53 @@
+{
+  "run_date": "2026-05-31T14:55:00-07:00",
+  "phase": "CONSOLIDATE",
+  "candidate_under_attack": "090/091 external route/register enrichment",
+  "observed": {
+    "total": 39,
+    "route_090091": 12,
+    "route_share": 0.3076923076923077,
+    "terminal_002_820": 0,
+    "sealc_total": 17,
+    "sealc_route_090091": 12,
+    "sealc_route_share": 0.7058823529411765
+  },
+  "observed_nulls": {
+    "type_matched_route_fpr": 0.00844,
+    "type_matched_route_and_no_002820_fpr": 0.00504,
+    "sealc_route_fpr": 0.00056
+  },
+  "hostile_leaveout_result": {
+    "fragile_site_count": 8,
+    "fragile_region_count": 2,
+    "worst_site": {
+      "removed_group": "Failaka",
+      "removed_kind": "site",
+      "removed_total": 2,
+      "removed_route_090091": 2,
+      "kept_total": 37,
+      "kept_route_090091": 10,
+      "kept_route_share": "0.270270",
+      "kept_sealc_total": 15,
+      "kept_sealc_route_090091": 10,
+      "kept_sealc_route_share": "0.666667",
+      "type_matched_route_fpr": 0.03264,
+      "sealc_route_fpr": 0.00252
+    },
+    "worst_region": {
+      "removed_group": "Persian Gulf",
+      "removed_kind": "region",
+      "removed_total": 15,
+      "removed_route_090091": 7,
+      "kept_total": 24,
+      "kept_route_090091": 5,
+      "kept_route_share": "0.208333",
+      "kept_sealc_total": 8,
+      "kept_sealc_route_090091": 5,
+      "kept_sealc_route_share": "0.625000",
+      "type_matched_route_fpr": 0.21824,
+      "sealc_route_fpr": 0.04928
+    }
+  },
+  "decision": "demote: route signal is real but not robust to all leave-one-group cuts",
+  "interpretation": "This tests whether the external 090/091 signal is carried by one overfit site or region cluster rather than a portable route/register lane."
+}

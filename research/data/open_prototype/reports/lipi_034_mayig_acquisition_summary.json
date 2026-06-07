@@ -1,0 +1,130 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "lipi_034_mayig_acquisition_targets",
+  "question": "Which exact 034 rows should be acquired or crosswalked first to resolve the current Mayig/Parpola coverage gap?",
+  "inputs": [
+    "data/open_prototype/lipi/metadata_filtered.csv",
+    "data/open_prototype/mayig/records_index.csv",
+    "data/open_prototype/mayig/commit.json"
+  ],
+  "mayig_current_repo": {
+    "repository": "https://github.com/mayig/indus-valley-script-corpus",
+    "commit": "ad2f1e218a34b8c33c57de0d6cb8d99272765bbb",
+    "commit_message": "m184",
+    "current_head_checked_locally": "git ls-remote returned the same commit on 2026-05-25",
+    "indexed_records": 179
+  },
+  "exact_034_rows": 182,
+  "exact_034_unique_objects_or_rows": 182,
+  "target_rows_by_priority_lane": {
+    "P0_mohenjo_034_missing_from_current_mayig": 6,
+    "P1_frame700_034_branch": 108,
+    "P1_h_series_034_slot_controls": 21,
+    "P2_mohenjo_034_missing_cisi_or_non_m_prefix": 1,
+    "P3_other_034_source_coverage": 46
+  },
+  "target_objects_by_priority_lane": {
+    "P0_mohenjo_034_missing_from_current_mayig": 6,
+    "P1_frame700_034_branch": 108,
+    "P1_h_series_034_slot_controls": 21,
+    "P2_mohenjo_034_missing_cisi_or_non_m_prefix": 1,
+    "P3_other_034_source_coverage": 46
+  },
+  "p0_mohenjo_034_missing_objects": "M-2104;M-315;M-1206;M-685;M-1584;M-1963",
+  "p0_mohenjo_034_missing_object_count": 6,
+  "h_series_034_slot_control_objects": "H-2222;H-2223;H-2229;H-2239;H-2218;H-2219;H-2220;H-2221;H-2224;H-2225;H-2226;H-2227;H-2228;H-2230;H-2231;H-2232;H-2233;H-2234;H-2235;H-2236;H-2237",
+  "h_series_034_slot_control_object_count": 21,
+  "top_12_priority_objects": [
+    {
+      "cisi": "M-2104",
+      "lane": "P0_mohenjo_034_missing_from_current_mayig",
+      "score": 218,
+      "texts": "+151-097-700-034+",
+      "acquisition_question": "Obtain Mayig/Parpola record or authoritative sign-list mapping for this exact Mohenjo-daro 034 object."
+    },
+    {
+      "cisi": "M-315",
+      "lane": "P0_mohenjo_034_missing_from_current_mayig",
+      "score": 196,
+      "texts": "+390-034-002-374-228-741+",
+      "acquisition_question": "Obtain Mayig/Parpola record or authoritative sign-list mapping for this exact Mohenjo-daro 034 object."
+    },
+    {
+      "cisi": "M-1206",
+      "lane": "P0_mohenjo_034_missing_from_current_mayig",
+      "score": 196,
+      "texts": "+520-220-034+",
+      "acquisition_question": "Obtain Mayig/Parpola record or authoritative sign-list mapping for this exact Mohenjo-daro 034 object."
+    },
+    {
+      "cisi": "M-685",
+      "lane": "P0_mohenjo_034_missing_from_current_mayig",
+      "score": 175,
+      "texts": "]034-204+",
+      "acquisition_question": "Obtain Mayig/Parpola record or authoritative sign-list mapping for this exact Mohenjo-daro 034 object."
+    },
+    {
+      "cisi": "M-1584",
+      "lane": "P0_mohenjo_034_missing_from_current_mayig",
+      "score": 173,
+      "texts": "+034+",
+      "acquisition_question": "Obtain Mayig/Parpola record or authoritative sign-list mapping for this exact Mohenjo-daro 034 object."
+    },
+    {
+      "cisi": "H-2222",
+      "lane": "P1_h_series_034_slot_controls",
+      "score": 168,
+      "texts": "+700-034+",
+      "acquisition_question": "Use as H-series 034 slot control while H-2238 carries the paired 033 variant."
+    },
+    {
+      "cisi": "H-2223",
+      "lane": "P1_h_series_034_slot_controls",
+      "score": 168,
+      "texts": "+700-034+",
+      "acquisition_question": "Use as H-series 034 slot control while H-2238 carries the paired 033 variant."
+    },
+    {
+      "cisi": "H-2229",
+      "lane": "P1_h_series_034_slot_controls",
+      "score": 168,
+      "texts": "+700-034+",
+      "acquisition_question": "Use as H-series 034 slot control while H-2238 carries the paired 033 variant."
+    },
+    {
+      "cisi": "H-2239",
+      "lane": "P1_h_series_034_slot_controls",
+      "score": 168,
+      "texts": "+700-034+",
+      "acquisition_question": "Use as H-series 034 slot control while H-2238 carries the paired 033 variant."
+    },
+    {
+      "cisi": "H-2218",
+      "lane": "P1_h_series_034_slot_controls",
+      "score": 165,
+      "texts": "+700-034+",
+      "acquisition_question": "Use as H-series 034 slot control while H-2238 carries the paired 033 variant."
+    },
+    {
+      "cisi": "H-2219",
+      "lane": "P1_h_series_034_slot_controls",
+      "score": 165,
+      "texts": "+700-034+",
+      "acquisition_question": "Use as H-series 034 slot control while H-2238 carries the paired 033 variant."
+    },
+    {
+      "cisi": "H-2220",
+      "lane": "P1_h_series_034_slot_controls",
+      "score": 165,
+      "texts": "+700-034+",
+      "acquisition_question": "Use as H-series 034 slot control while H-2238 carries the paired 033 variant."
+    }
+  ],
+  "conclusion": "The next 034 crosswalk move is data acquisition: current upstream Mayig remains at m184/ad2f1e2 and has no M-315+ records, so Mohenjo-daro 034 objects are concrete missing Parpola/Mayig targets while H-series 034 rows remain source-image controls.",
+  "outputs": [
+    "data/open_prototype/reports/lipi_034_mayig_acquisition_targets.csv",
+    "data/open_prototype/reports/lipi_034_mayig_acquisition_priority_objects.csv",
+    "data/open_prototype/reports/lipi_034_mayig_acquisition_summary.json"
+  ],
+  "accepted_decipherment_claims": 0
+}

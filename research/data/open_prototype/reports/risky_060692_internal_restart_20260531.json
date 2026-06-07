@@ -1,0 +1,230 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_060692_internal_restart_20260531",
+  "tier": "candidate",
+  "bet": "The five nonterminal 060-692 rows are not random failures of a terminal cap. They behave like internal-boundary restarts: every sign after 060-692 in those exceptions belongs to an objective high-initial opener class, mainly 520 and 740. This promotes 692 from a failed terminal cap to a near-cap that can close a local unit inside longer inscriptions.",
+  "opener_class_definition": {
+    "occurrence_minimum": 5,
+    "initial_share_minimum": 0.5,
+    "opener_class_size": 46,
+    "relevant_tail_signs": [
+      {
+        "sign": "520",
+        "occurrences": 257,
+        "initial_occurrences": 214,
+        "initial_share": 0.8326848249027238
+      },
+      {
+        "sign": "401",
+        "occurrences": 5,
+        "initial_occurrences": 4,
+        "initial_share": 0.8
+      },
+      {
+        "sign": "740",
+        "occurrences": 1382,
+        "initial_occurrences": 938,
+        "initial_share": 0.678726483357453
+      }
+    ]
+  },
+  "target_060_692": {
+    "comparator_rank_among_branches_with_20plus_cells_3to10_nonterminal_tails_and_halfplus_terminal_share": 1,
+    "summary": {
+      "branch": "060-692",
+      "exact_cells": 33,
+      "terminal_cells": 28,
+      "terminal_share": 0.8484848484848485,
+      "nonterminal_tail_cells": 5,
+      "opener_tail_cells": 5,
+      "opener_tail_share": 1,
+      "nonterminal_tails": "520 520 401 740 740",
+      "sites": 5,
+      "types": 4,
+      "examples": [
+        "B-21:+426-003-060-692+",
+        "C-75:+740-531-060-692+",
+        "H-1138:+740-603-240-060-692+",
+        "H-423:+520-220-240-798-060-692+",
+        "H-1845:+740-642-240-060-692+",
+        "H-1975:+740-760-061-060-692+"
+      ]
+    },
+    "terminal_rows": 28,
+    "nonterminal_rows": [
+      {
+        "cisi": "M-23",
+        "text": "+842-871-192-368/740-482-060-692-520-220-235-001-920+",
+        "site": "Mohenjo-daro",
+        "type": "SEAL:S",
+        "symbol": "Bull1:W",
+        "tail_after_692": "520",
+        "tail_initial_profile": {
+          "sign": "520",
+          "occurrences": 257,
+          "initial_occurrences": 214,
+          "initial_share": 0.8326848249027238
+        }
+      },
+      {
+        "cisi": "M-234",
+        "text": "+842-535-099-004/740-482-060-692-520-220-235-001-920+",
+        "site": "Mohenjo-daro",
+        "type": "SEAL:S",
+        "symbol": "Gaur",
+        "tail_after_692": "520",
+        "tail_initial_profile": {
+          "sign": "520",
+          "occurrences": 257,
+          "initial_occurrences": 214,
+          "initial_share": 0.8326848249027238
+        }
+      },
+      {
+        "cisi": "M-317",
+        "text": "+255-060-692-401-920+",
+        "site": "Mohenjo-daro",
+        "type": "SEAL:S",
+        "symbol": "Bull1",
+        "tail_after_692": "401",
+        "tail_initial_profile": {
+          "sign": "401",
+          "occurrences": 5,
+          "initial_occurrences": 4,
+          "initial_share": 0.8
+        }
+      },
+      {
+        "cisi": "M-626",
+        "text": "+842-374-125/740-803-060-692-740-690-435-255-060-692+",
+        "site": "Mohenjo-daro",
+        "type": "SEAL:S",
+        "symbol": "Bull1:J",
+        "tail_after_692": "740",
+        "tail_initial_profile": {
+          "sign": "740",
+          "occurrences": 1382,
+          "initial_occurrences": 938,
+          "initial_share": 0.678726483357453
+        }
+      },
+      {
+        "cisi": "M-1127",
+        "text": "+060-692/740-269-140-002+",
+        "site": "Mohenjo-daro",
+        "type": "SEAL:S",
+        "symbol": "Buff",
+        "tail_after_692": "740",
+        "tail_initial_profile": {
+          "sign": "740",
+          "occurrences": 1382,
+          "initial_occurrences": 938,
+          "initial_share": 0.678726483357453
+        }
+      }
+    ]
+  },
+  "comparator": {
+    "competitor_count": 4,
+    "top_20_competitor_rows": [
+      {
+        "branch": "060-692",
+        "exact_cells": 33,
+        "terminal_cells": 28,
+        "terminal_share": 0.8484848484848485,
+        "nonterminal_tail_cells": 5,
+        "opener_tail_cells": 5,
+        "opener_tail_share": 1,
+        "nonterminal_tails": "520 520 401 740 740",
+        "sites": 5,
+        "types": 4,
+        "examples": [
+          "B-21:+426-003-060-692+",
+          "C-75:+740-531-060-692+",
+          "H-1138:+740-603-240-060-692+",
+          "H-423:+520-220-240-798-060-692+",
+          "H-1845:+740-642-240-060-692+",
+          "H-1975:+740-760-061-060-692+"
+        ]
+      },
+      {
+        "branch": "700-033",
+        "exact_cells": 25,
+        "terminal_cells": 18,
+        "terminal_share": 0.72,
+        "nonterminal_tail_cells": 7,
+        "opener_tail_cells": 2,
+        "opener_tail_share": 0.2857142857142857,
+        "nonterminal_tails": "711 171 368 400 151 137 900",
+        "sites": 2,
+        "types": 5,
+        "examples": [
+          "-:+700-033+",
+          "-:+700-033+",
+          "-:+700-033-711-335-575-413+",
+          "H-1881:+415-700-033-171+",
+          "H-1940:+700-033+",
+          "H-1921:+125-700-033+"
+        ]
+      },
+      {
+        "branch": "002-817",
+        "exact_cells": 108,
+        "terminal_cells": 105,
+        "terminal_share": 0.9722222222222222,
+        "nonterminal_tail_cells": 3,
+        "opener_tail_cells": 1,
+        "opener_tail_share": 0.3333333333333333,
+        "nonterminal_tails": "808 090 690",
+        "sites": 10,
+        "types": 9,
+        "examples": [
+          "B-5:+002-817+",
+          "B-7:+002-817+",
+          "B-15:+002-817+",
+          "C-66:+390-003-002-817+",
+          "C-78:+740-636-240/002-817+",
+          "C-67:+520-233-803-002-817+"
+        ]
+      },
+      {
+        "branch": "002-820",
+        "exact_cells": 75,
+        "terminal_cells": 70,
+        "terminal_share": 0.9333333333333333,
+        "nonterminal_tail_cells": 5,
+        "opener_tail_cells": 1,
+        "opener_tail_share": 0.2,
+        "nonterminal_tails": "033 001 700 741 741",
+        "sites": 7,
+        "types": 6,
+        "examples": [
+          "-:+236-002-820+",
+          "H-1045:+740-900-005-002-820+",
+          "H-1967:+382-760-382-002-820+",
+          "H-1882:+002-820+",
+          "H-1680:+390-003-002-820+",
+          "H-1146:+526-554-002-820+"
+        ]
+      }
+    ]
+  },
+  "tail_opener_null": {
+    "iterations": 5000,
+    "tail_pool": "all observed nonterminal next2 signs after exact-collapsed bigrams",
+    "fixed_branch_p_ge_5_of_5_opener_tails": 0,
+    "maxstat_p_any_competitor_ge_5_opener_tails": 0
+  },
+  "predictions": [
+    "Source images of the five nonterminal 060-692 rows should look compatible with a phrase or line restart after 692, especially before 520 or 740.",
+    "New or weakly sourced 060-692-X rows should preferentially have X in the high-initial opener class; random continuation tails would kill the internal-boundary reading.",
+    "060-692 should pattern visually with the strict caps 920/550/820 on the pre-692 side, not with the continuation branches 060-297 or 060-368."
+  ],
+  "demoters": [
+    "If source review shows the five nonterminal tails are cataloguing/line-division artefacts, demote.",
+    "If a stricter null preserving sign position and row length makes 5/5 opener tails common, demote.",
+    "If 520 and 740 are not valid opener signs after source-normalized initial-position collapse, demote."
+  ],
+  "decision": "candidate_survives_first_internal_restart_test"
+}

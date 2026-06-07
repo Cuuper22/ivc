@@ -1,0 +1,229 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_terminal_governor_network_20260531",
+  "tier": "candidate",
+  "bet": "The strongest terminal grammar is a small governor-closure network: 002 governs closure signs 817 and 820; 060 governs closure signs 920, 550, and 820; 820 is shared by both governors. This is a structural reading of slot function, not a phonetic reading.",
+  "thresholds": {
+    "minimum_exact_cells_per_edge": 20,
+    "minimum_terminal_share": 0.85
+  },
+  "observed_network": {
+    "live_edge_count": 5,
+    "live_edges": [
+      {
+        "governor": "002",
+        "closure": "817",
+        "edge": "002-817",
+        "exact_cells": 108,
+        "terminal_cells": 105,
+        "terminal_share": 0.9722222222222222,
+        "sites": 10,
+        "types": 9,
+        "examples": [
+          "B-5:+002-817+",
+          "B-7:+002-817+",
+          "B-15:+002-817+",
+          "C-66:+390-003-002-817+",
+          "C-78:+740-636-240/002-817+"
+        ]
+      },
+      {
+        "governor": "002",
+        "closure": "820",
+        "edge": "002-820",
+        "exact_cells": 75,
+        "terminal_cells": 70,
+        "terminal_share": 0.9333333333333333,
+        "sites": 7,
+        "types": 6,
+        "examples": [
+          "-:+236-002-820+",
+          "H-1045:+740-900-005-002-820+",
+          "H-1967:+382-760-382-002-820+",
+          "H-1882:+002-820+",
+          "H-1680:+390-003-002-820+"
+        ]
+      },
+      {
+        "governor": "060",
+        "closure": "920",
+        "edge": "060-920",
+        "exact_cells": 52,
+        "terminal_cells": 51,
+        "terminal_share": 0.9807692307692307,
+        "sites": 9,
+        "types": 7,
+        "examples": [
+          "C-54:+842-032-031-592-031-060-920+",
+          "C-11:+590-615-140/232-240-001-060-920+",
+          "C-12:+161-390-590-031-740-060-920+",
+          "C-16:+429-003-741-060-920+",
+          "H-1309:+156-176-741-060-920+"
+        ]
+      },
+      {
+        "governor": "060",
+        "closure": "550",
+        "edge": "060-550",
+        "exact_cells": 24,
+        "terminal_cells": 23,
+        "terminal_share": 0.9583333333333334,
+        "sites": 4,
+        "types": 6,
+        "examples": [
+          "-:+060-550+",
+          "H-1893:+390-003-060-550+",
+          "H-1776:+740-390-590-060-550+",
+          "H-2040:+740-803-060-550+",
+          "H-1840:+090-740-255-705-060-550+"
+        ]
+      },
+      {
+        "governor": "060",
+        "closure": "820",
+        "edge": "060-820",
+        "exact_cells": 23,
+        "terminal_cells": 23,
+        "terminal_share": 1,
+        "sites": 5,
+        "types": 4,
+        "examples": [
+          "H-2090:+869-060-820+",
+          "H-715:+526-550-060-820+",
+          "K-16:+090-740-240/060-820+",
+          "L-21:+156-142-060-820+",
+          "L-122:+527-550-740-443-060-820+"
+        ]
+      }
+    ],
+    "multi_closure_governors": [
+      {
+        "governor": "060",
+        "closure_count": 3,
+        "closure_cells": 99,
+        "closures": "920:52/51 550:24/23 820:23/23"
+      },
+      {
+        "governor": "002",
+        "closure_count": 2,
+        "closure_cells": 183,
+        "closures": "817:108/105 820:75/70"
+      }
+    ],
+    "shared_closures": [
+      {
+        "closure": "820",
+        "governor_count": 2,
+        "governor_cells": 98,
+        "governors": "002:75/70 060:23/23"
+      }
+    ],
+    "target_edges": [
+      {
+        "governor": "002",
+        "closure": "817",
+        "edge": "002-817",
+        "exact_cells": 108,
+        "terminal_cells": 105,
+        "terminal_share": 0.9722222222222222,
+        "sites": 10,
+        "types": 9,
+        "examples": [
+          "B-5:+002-817+",
+          "B-7:+002-817+",
+          "B-15:+002-817+",
+          "C-66:+390-003-002-817+",
+          "C-78:+740-636-240/002-817+"
+        ]
+      },
+      {
+        "governor": "002",
+        "closure": "820",
+        "edge": "002-820",
+        "exact_cells": 75,
+        "terminal_cells": 70,
+        "terminal_share": 0.9333333333333333,
+        "sites": 7,
+        "types": 6,
+        "examples": [
+          "-:+236-002-820+",
+          "H-1045:+740-900-005-002-820+",
+          "H-1967:+382-760-382-002-820+",
+          "H-1882:+002-820+",
+          "H-1680:+390-003-002-820+"
+        ]
+      },
+      {
+        "governor": "060",
+        "closure": "550",
+        "edge": "060-550",
+        "exact_cells": 24,
+        "terminal_cells": 23,
+        "terminal_share": 0.9583333333333334,
+        "sites": 4,
+        "types": 6,
+        "examples": [
+          "-:+060-550+",
+          "H-1893:+390-003-060-550+",
+          "H-1776:+740-390-590-060-550+",
+          "H-2040:+740-803-060-550+",
+          "H-1840:+090-740-255-705-060-550+"
+        ]
+      },
+      {
+        "governor": "060",
+        "closure": "820",
+        "edge": "060-820",
+        "exact_cells": 23,
+        "terminal_cells": 23,
+        "terminal_share": 1,
+        "sites": 5,
+        "types": 4,
+        "examples": [
+          "H-2090:+869-060-820+",
+          "H-715:+526-550-060-820+",
+          "K-16:+090-740-240/060-820+",
+          "L-21:+156-142-060-820+",
+          "L-122:+527-550-740-443-060-820+"
+        ]
+      },
+      {
+        "governor": "060",
+        "closure": "920",
+        "edge": "060-920",
+        "exact_cells": 52,
+        "terminal_cells": 51,
+        "terminal_share": 0.9807692307692307,
+        "sites": 9,
+        "types": 7,
+        "examples": [
+          "C-54:+842-032-031-592-031-060-920+",
+          "C-11:+590-615-140/232-240-001-060-920+",
+          "C-12:+161-390-590-031-740-060-920+",
+          "C-16:+429-003-741-060-920+",
+          "H-1309:+156-176-741-060-920+"
+        ]
+      }
+    ]
+  },
+  "terminal_flag_shuffle_null": {
+    "iterations": 5000,
+    "preserves": "exact-collapsed branch sizes and sign identities; shuffles only terminal/nonterminal outcomes",
+    "p_ge_live_edge_count": 0,
+    "p_ge_multi_governor_count": 0,
+    "p_ge_shared_closure_count": 0,
+    "p_reproduce_target_shape_002_multi_060_multi_and_820_shared": 0
+  },
+  "predictions": [
+    "New exact 002-817, 002-820, 060-920, 060-550, and 060-820 rows should be terminal-heavy under source-normalized review.",
+    "820 should remain the only high-support shared closure between two high-support governors unless more data add a third governor.",
+    "If 060-692 is added as near-cap/internal boundary, it should not be merged blindly into the strict terminal network until its restart rows are source-adjudicated."
+  ],
+  "demoters": [
+    "Demote if leave-site/source-family collapse removes either 002 or 060 from multi-closure status.",
+    "Demote if exact source review shows 820 is not a stable sign across 002 and 060 contexts.",
+    "Demote if a row-length/position-preserving null reproduces the target network shape at comparable rates."
+  ],
+  "decision": "candidate_survives_first_terminal_governor_network_test"
+}

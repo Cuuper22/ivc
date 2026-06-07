@@ -1,0 +1,231 @@
+import fs from 'node:fs';
+import path from 'node:path';
+
+const base = process.cwd();
+const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
+const keyPath = path.join(reportsDir, 'source_box_blind_adjudication_key.csv');
+const defaultReviewDir = path.join(reportsDir, 'source_box_blind_reviews');
+const outSummary = path.join(reportsDir, 'source_box_blind_adjudication_summary.json');
+const outRows = path.join(reportsDir, 'source_box_blind_adjudication_scored_rows.csv');
+
+const reviewArgs = process.argv.slice(2);
+const reviewPaths = reviewArgs.length
+  ? reviewArgs.map((arg) => path.resolve(base, arg))
+  : fs.existsSync(defaultReviewDir)
+    ? fs
+        .readdirSync(defaultReviewDir)
+        .filter((name) => name.toLowerCase().endsWith('.csv'))
+        .map((name) => path.join(defaultReviewDir, name))
+        .sort((a, b) => a.localeCompare(b))
+    : [];
+
+function parseCsv(text) {
+  const rows = [];
+  let row = [];
+  let field = '';
+  let inQuotes = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (inQuotes) {
+      if (c === '"') {
+        if (text[i + 1] === '"') {
+          field += '"';
+          i++;
+        } else {
+          inQuotes = false;
+        }
+      } else {
+        field += c;
+      }
+    } else if (c === '"') {
+      inQuotes = true;
+    } else if (c === ',') {
+      row.push(field);
+      field = '';
+    } else if (c === '\n') {
+      row.push(field);
+      field = '';
+      if (row.length > 1 || row[0] !== '') rows.push(row);
+      row = [];
+    } else if (c !== '\r') {
+      field += c;
+    }
+  }
+  if (field.length || row.length) {
+    row.push(field);
+    rows.push(row);
+  }
+  return rows;
+}
+
+function loadCsv(filePath) {
+  const rows = parseCsv(fs.readFileSync(filePath, 'utf8'));
+  const header = rows[0] ?? [];
+  return rows.slice(1).map((row) => Object.fromEntries(header.map((name, index) => [name, row[index] ?? ''])));
+}
+
+function toCsv(rows) {
+  return `${rows
+    .map((row) =>
+      row
+        .map((value) => {
+          const text = String(value ?? '');
+          return `"${text.replaceAll('"', '""')}"`;
+        })
+        .join(','),
+    )
+    .join('\n')}\n`;
+}
+
+function normalizeCall(value) {
+  const text = String(value ?? '').trim().toLowerCase();
+  if (['yes', 'y', 'true', 'positive', 'present', '1'].includes(text)) return 'yes';
+  if (['no', 'n', 'false', 'negative', 'absent', '0'].includes(text)) return 'no';
+  if (['uncertain', 'unknown', 'maybe', 'ambiguous', '?'].includes(text)) return 'uncertain';
+  return text || 'missing';
+}
+
+function reviewerName(filePath) {
+  return path.basename(filePath).replace(/\.csv$/i, '');
+}
+
+function rate(numerator, denominator) {
+  return denominator ? numerator / denominator : null;
+}
+
+if (!reviewPaths.length) {
+  throw new Error(`No review CSV files supplied and none found in ${defaultReviewDir}`);
+}
+
+const keyRows = loadCsv(keyPath);
+const truthByBlindId = new Map(keyRows.map((row) => [row.blind_id, row]));
+const scoredRows = [];
+const reviewerSummaries = [];
+
+for (const reviewPath of reviewPaths) {
+  const name = reviewerName(reviewPath);
+  const reviewRows = loadCsv(reviewPath);
+  const reviewIds = new Set();
+  let tp = 0;
+  let fp = 0;
+  let tn = 0;
+  let fn = 0;
+  let uncertainPositive = 0;
+  let uncertainNegative = 0;
+  let missing = 0;
+
+  for (const reviewRow of reviewRows) {
+    const blindId = reviewRow.blind_id;
+    if (!blindId) continue;
+    reviewIds.add(blindId);
+    const truth = truthByBlindId.get(blindId);
+    if (!truth) throw new Error(`Review ${name} contains unknown blind_id ${blindId}`);
+    const truthPositive = truth.truth_class === 'positive_source_visible_032_002_y';
+    const call = normalizeCall(
+      reviewRow.call_yes_no_uncertain ?? reviewRow.call ?? reviewRow.packet_call ?? reviewRow.judgment,
+    );
+
+    let outcome = '';
+    if (call === 'yes' && truthPositive) {
+      tp++;
+      outcome = 'true_positive';
+    } else if (call === 'yes' && !truthPositive) {
+      fp++;
+      outcome = 'false_positive';
+    } else if (call === 'no' && truthPositive) {
+      fn++;
+      outcome = 'false_negative';
+    } else if (call === 'no' && !truthPositive) {
+      tn++;
+      outcome = 'true_negative';
+    } else if (call === 'uncertain' && truthPositive) {
+      uncertainPositive++;
+      outcome = 'uncertain_positive';
+    } else if (call === 'uncertain' && !truthPositive) {
+      uncertainNegative++;
+      outcome = 'uncertain_negative';
+    } else {
+      missing++;
+      outcome = 'missing_or_unrecognized_call';
+    }
+
+    scoredRows.push([
+      name,
+      blindId,
+      call,
+      truth.truth_class,
+      truth.cisi,
+      truth.control_class,
+      outcome,
+      reviewRow.confidence_low_med_high ?? reviewRow.confidence ?? '',
+      reviewRow.brief_visual_rationale ?? reviewRow.false_positive_risk_note ?? reviewRow.rationale ?? '',
+    ]);
+  }
+
+  const missingIds = [...truthByBlindId.keys()].filter((blindId) => !reviewIds.has(blindId));
+  missing += missingIds.length;
+  for (const blindId of missingIds) {
+    const truth = truthByBlindId.get(blindId);
+    scoredRows.push([name, blindId, 'missing', truth.truth_class, truth.cisi, truth.control_class, 'missing_review_row', '', '']);
+  }
+
+  const negativeTotal = fp + tn + uncertainNegative;
+  const positiveTotal = tp + fn + uncertainPositive;
+  reviewerSummaries.push({
+    reviewer: name,
+    review_path: reviewPath,
+    rows_expected: truthByBlindId.size,
+    rows_reviewed: reviewIds.size,
+    true_positive: tp,
+    false_positive: fp,
+    true_negative: tn,
+    false_negative: fn,
+    uncertain_positive: uncertainPositive,
+    uncertain_negative: uncertainNegative,
+    missing,
+    yes_only_false_positive_rate: rate(fp, fp + tn),
+    conservative_false_positive_or_uncertain_negative_rate: rate(fp + uncertainNegative, negativeTotal),
+    yes_only_sensitivity: rate(tp, tp + fn),
+    conservative_positive_detection_or_uncertain_rate: rate(tp + uncertainPositive, positiveTotal),
+  });
+}
+
+const fpByReviewer = reviewerSummaries.map((row) => row.yes_only_false_positive_rate).filter((value) => value !== null);
+const conservativeByReviewer = reviewerSummaries
+  .map((row) => row.conservative_false_positive_or_uncertain_negative_rate)
+  .filter((value) => value !== null);
+
+const summary = {
+  date: '2026-05-29',
+  key_path: keyPath,
+  review_paths: reviewPaths,
+  reviewer_count: reviewerSummaries.length,
+  reviewer_summaries: reviewerSummaries,
+  max_yes_only_false_positive_rate: fpByReviewer.length ? Math.max(...fpByReviewer) : null,
+  max_conservative_false_positive_or_uncertain_negative_rate: conservativeByReviewer.length
+    ? Math.max(...conservativeByReviewer)
+    : null,
+  acceptance_note:
+    'This is a source-box visual-adjudication false-positive check, not a phonetic, semantic, or translation claim. It can only support the narrower claim that the same-line packet is not trivially generated by visually similar source images.',
+};
+
+fs.mkdirSync(path.dirname(outRows), { recursive: true });
+fs.writeFileSync(
+  outRows,
+  toCsv([
+    [
+      'reviewer',
+      'blind_id',
+      'call',
+      'truth_class',
+      'cisi',
+      'control_class',
+      'outcome',
+      'confidence',
+      'rationale',
+    ],
+    ...scoredRows,
+  ]),
+);
+fs.writeFileSync(outSummary, `${JSON.stringify(summary, null, 2)}\n`);
+console.log(JSON.stringify(summary, null, 2));

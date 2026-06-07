@@ -1,0 +1,647 @@
+{
+  "run_date": "2026-05-31",
+  "bet_id": "V2_V4_INITIAL_HEADER_REGISTER_INFORMATION_20260531",
+  "vector": "V2 effective unicity / structural constraint; V4 context-to-meaning",
+  "confidence_tier": "promoted candidate",
+  "risky_bet": "The first sign is a carrier/register header slot: its identity carries substantial information about object class, above what would be expected if sign order were arbitrary within rows or if carrier labels were unrelated to initial signs.",
+  "observed": "Canonical rows=3503; I(first sign; carrier class)=0.602323732569153 bits. Row-internal shuffle FPR=0; carrier-label shuffle FPR=0. Carrier classes: square_seal_SEALS:1545;tablet_account_TAB_BI:765;rect_copper_SEALR_TABC:444;pottery_graffiti_POT:328;other:257;tag:127;round_cylinder_seal:37. Top contributors: 400->tablet_account_TAB_BI:178 obs, lift=1.694 bits, contribution=0.0861; 740->square_seal_SEALS:510 obs, lift=0.357 bits, contribution=0.0519; 520->square_seal_SEALS:130 obs, lift=0.720 bits, contribution=0.0267; 407->rect_copper_SEALR_TABC:34 obs, lift=2.608 bits, contribution=0.0253; 700->tablet_account_TAB_BI:33 obs, lift=1.918 bits, contribution=0.0181; 000->pottery_graffiti_POT:70 obs, lift=0.874 bits, contribution=0.0175; 000->tag:39 obs, lift=1.399 bits, contribution=0.0156; 151->square_seal_SEALS:51 obs, lift=0.853 bits, contribution=0.0124; 390->square_seal_SEALS:62 obs, lift=0.535 bits, contribution=0.0095; 154->rect_copper_SEALR_TABC:16 obs, lift=2.026 bits, contribution=0.0093.",
+  "adversarial_test": "Canonical numeric-sequence collapse; mutual information between initial sign and carrier class; 3000-iteration row-internal sign shuffle preserving every row's sign multiset and length; 3000-iteration carrier-label shuffle preserving first-sign and class marginals.",
+  "false_positive_rate": 0,
+  "row_internal_shuffle_fpr": 0,
+  "class_label_shuffle_fpr": 0,
+  "observed_mi_bits": 0.602323732569153,
+  "falsifier": "If source-checked rows or expanded corpora reduce the initial-sign/carrier-class mutual information to the row-internal shuffle range, or if top contributors are mostly damaged/placeholder signs, demote this from header-slot structure to corpus/catalog artifact.",
+  "next_prediction": "Held-out object rows should retain class-specific first signs: 400 for TAB:B/I, 740 and 407 for administrative rectangular/copper rows, and separate high-contribution headers for pottery/tag/round-seal classes. This supports structural parsing but no phonetic reading.",
+  "class_counts": [
+    {
+      "carrier_class": "square_seal_SEALS",
+      "count": 1545
+    },
+    {
+      "carrier_class": "tablet_account_TAB_BI",
+      "count": 765
+    },
+    {
+      "carrier_class": "rect_copper_SEALR_TABC",
+      "count": 444
+    },
+    {
+      "carrier_class": "pottery_graffiti_POT",
+      "count": 328
+    },
+    {
+      "carrier_class": "other",
+      "count": 257
+    },
+    {
+      "carrier_class": "tag",
+      "count": 127
+    },
+    {
+      "carrier_class": "round_cylinder_seal",
+      "count": 37
+    }
+  ],
+  "top_contributions": [
+    {
+      "first_sign": "400",
+      "carrier_class": "tablet_account_TAB_BI",
+      "observed": 178,
+      "expected": 55.03282900371111,
+      "first_sign_total": 252,
+      "class_total": 765,
+      "log2_lift": 1.69351284268853,
+      "mi_contribution_bits": 0.08605346445862357
+    },
+    {
+      "first_sign": "740",
+      "carrier_class": "square_seal_SEALS",
+      "observed": 510,
+      "expected": 398.26862689123607,
+      "first_sign_total": 903,
+      "class_total": 1545,
+      "log2_lift": 0.35675540938832584,
+      "mi_contribution_bits": 0.051939839791049436
+    },
+    {
+      "first_sign": "520",
+      "carrier_class": "square_seal_SEALS",
+      "observed": 130,
+      "expected": 78.9480445332572,
+      "first_sign_total": 179,
+      "class_total": 1545,
+      "log2_lift": 0.7195361857745243,
+      "mi_contribution_bits": 0.02670274169303116
+    },
+    {
+      "first_sign": "407",
+      "carrier_class": "rect_copper_SEALR_TABC",
+      "observed": 34,
+      "expected": 5.576934056522981,
+      "first_sign_total": 44,
+      "class_total": 444,
+      "log2_lift": 2.6079906290649992,
+      "mi_contribution_bits": 0.025313069194464737
+    },
+    {
+      "first_sign": "700",
+      "carrier_class": "tablet_account_TAB_BI",
+      "observed": 33,
+      "expected": 8.735369683128747,
+      "first_sign_total": 40,
+      "class_total": 765,
+      "log2_lift": 1.9175253596931399,
+      "mi_contribution_bits": 0.01806404135594451
+    },
+    {
+      "first_sign": "000",
+      "carrier_class": "pottery_graffiti_POT",
+      "observed": 70,
+      "expected": 38.20268341421639,
+      "first_sign_total": 408,
+      "class_total": 328,
+      "log2_lift": 0.87368094315745,
+      "mi_contribution_bits": 0.017458654302318445
+    },
+    {
+      "first_sign": "000",
+      "carrier_class": "tag",
+      "observed": 39,
+      "expected": 14.791892663431344,
+      "first_sign_total": 408,
+      "class_total": 127,
+      "log2_lift": 1.3986674629206497,
+      "mi_contribution_bits": 0.015571804468714055
+    },
+    {
+      "first_sign": "151",
+      "carrier_class": "square_seal_SEALS",
+      "observed": 51,
+      "expected": 28.22723379960034,
+      "first_sign_total": 64,
+      "class_total": 1545,
+      "log2_lift": 0.8534094919818217,
+      "mi_contribution_bits": 0.012424745672587183
+    },
+    {
+      "first_sign": "390",
+      "carrier_class": "square_seal_SEALS",
+      "observed": 62,
+      "expected": 42.78190122751927,
+      "first_sign_total": 97,
+      "class_total": 1545,
+      "log2_lift": 0.5352676182100736,
+      "mi_contribution_bits": 0.009473763154160595
+    },
+    {
+      "first_sign": "154",
+      "carrier_class": "rect_copper_SEALR_TABC",
+      "observed": 16,
+      "expected": 3.9292035398230087,
+      "first_sign_total": 31,
+      "class_total": 444,
+      "log2_lift": 2.0257630960650816,
+      "mi_contribution_bits": 0.009252700410231603
+    },
+    {
+      "first_sign": "617",
+      "carrier_class": "rect_copper_SEALR_TABC",
+      "observed": 15,
+      "expected": 3.9292035398230087,
+      "first_sign_total": 31,
+      "class_total": 444,
+      "log2_lift": 1.9326536916736003,
+      "mi_contribution_bits": 0.008275708071682559
+    },
+    {
+      "first_sign": "405",
+      "carrier_class": "rect_copper_SEALR_TABC",
+      "observed": 16,
+      "expected": 4.816443048815302,
+      "first_sign_total": 38,
+      "class_total": 444,
+      "log2_lift": 1.7320318930083713,
+      "mi_contribution_bits": 0.007911079157331986
+    },
+    {
+      "first_sign": "090",
+      "carrier_class": "square_seal_SEALS",
+      "observed": 55,
+      "expected": 40.576648586925494,
+      "first_sign_total": 92,
+      "class_total": 1545,
+      "log2_lift": 0.4387819074779727,
+      "mi_contribution_bits": 0.006889239198198257
+    },
+    {
+      "first_sign": "034",
+      "carrier_class": "pottery_graffiti_POT",
+      "observed": 8,
+      "expected": 1.1236083357122466,
+      "first_sign_total": 12,
+      "class_total": 328,
+      "log2_lift": 2.831860767462823,
+      "mi_contribution_bits": 0.006467281227434366
+    },
+    {
+      "first_sign": "740",
+      "carrier_class": "rect_copper_SEALR_TABC",
+      "observed": 129,
+      "expected": 114.45389666000571,
+      "first_sign_total": 903,
+      "class_total": 444,
+      "log2_lift": 0.17260448439435283,
+      "mi_contribution_bits": 0.00635625991632073
+    },
+    {
+      "first_sign": "031",
+      "carrier_class": "pottery_graffiti_POT",
+      "observed": 11,
+      "expected": 2.9962888952326576,
+      "first_sign_total": 32,
+      "class_total": 328,
+      "log2_lift": 1.8762548868212765,
+      "mi_contribution_bits": 0.005891751000580657
+    },
+    {
+      "first_sign": "621",
+      "carrier_class": "square_seal_SEALS",
+      "observed": 17,
+      "expected": 7.497858978018841,
+      "first_sign_total": 17,
+      "class_total": 1545,
+      "log2_lift": 1.180984150010326,
+      "mi_contribution_bits": 0.005731296189030986
+    },
+    {
+      "first_sign": "000",
+      "carrier_class": "other",
+      "observed": 41,
+      "expected": 29.93320011418784,
+      "first_sign_total": 408,
+      "class_total": 257,
+      "log2_lift": 0.4538773862547729,
+      "mi_contribution_bits": 0.005312295985282812
+    },
+    {
+      "first_sign": "156",
+      "carrier_class": "square_seal_SEALS",
+      "observed": 25,
+      "expected": 14.995717956037682,
+      "first_sign_total": 34,
+      "class_total": 1545,
+      "log2_lift": 0.7373774985347112,
+      "mi_contribution_bits": 0.0052624714425828665
+    },
+    {
+      "first_sign": "690",
+      "carrier_class": "tablet_account_TAB_BI",
+      "observed": 10,
+      "expected": 2.838995147016843,
+      "first_sign_total": 13,
+      "class_total": 765,
+      "log2_lift": 1.8165477119683189,
+      "mi_contribution_bits": 0.005185691441531028
+    },
+    {
+      "first_sign": "527",
+      "carrier_class": "square_seal_SEALS",
+      "observed": 31,
+      "expected": 20.7293748215815,
+      "first_sign_total": 47,
+      "class_total": 1545,
+      "log2_lift": 0.5805916087195637,
+      "mi_contribution_bits": 0.005137978838226228
+    },
+    {
+      "first_sign": "824",
+      "carrier_class": "tablet_account_TAB_BI",
+      "observed": 7,
+      "expected": 1.5286896945475308,
+      "first_sign_total": 7,
+      "class_total": 765,
+      "log2_lift": 2.195059335222049,
+      "mi_contribution_bits": 0.004386358934214771
+    },
+    {
+      "first_sign": "368",
+      "carrier_class": "square_seal_SEALS",
+      "observed": 23,
+      "expected": 14.995717956037682,
+      "first_sign_total": 34,
+      "class_total": 1545,
+      "log2_lift": 0.6170832648169994,
+      "mi_contribution_bits": 0.004051645758147583
+    },
+    {
+      "first_sign": "423",
+      "carrier_class": "rect_copper_SEALR_TABC",
+      "observed": 5,
+      "expected": 0.7604910077076791,
+      "first_sign_total": 6,
+      "class_total": 444,
+      "log2_lift": 2.716925000618163,
+      "mi_contribution_bits": 0.003877997431655957
+    },
+    {
+      "first_sign": "167",
+      "carrier_class": "tablet_account_TAB_BI",
+      "observed": 6,
+      "expected": 1.310305452469312,
+      "first_sign_total": 6,
+      "class_total": 765,
+      "log2_lift": 2.195059335222049,
+      "mi_contribution_bits": 0.003759736229326947
+    },
+    {
+      "first_sign": "033",
+      "carrier_class": "pottery_graffiti_POT",
+      "observed": 8,
+      "expected": 2.6217527833285756,
+      "first_sign_total": 28,
+      "class_total": 328,
+      "log2_lift": 1.609468346126375,
+      "mi_contribution_bits": 0.0036756342475052816
+    },
+    {
+      "first_sign": "226",
+      "carrier_class": "square_seal_SEALS",
+      "observed": 18,
+      "expected": 11.026263202968885,
+      "first_sign_total": 25,
+      "class_total": 1545,
+      "log2_lift": 0.7070529616779135,
+      "mi_contribution_bits": 0.003633158238710375
+    },
+    {
+      "first_sign": "697",
+      "carrier_class": "pottery_graffiti_POT",
+      "observed": 4,
+      "expected": 0.46817013988010275,
+      "first_sign_total": 5,
+      "class_total": 328,
+      "log2_lift": 3.0948951732966172,
+      "mi_contribution_bits": 0.003533993917552518
+    },
+    {
+      "first_sign": "840",
+      "carrier_class": "other",
+      "observed": 4,
+      "expected": 0.5135598058806737,
+      "first_sign_total": 7,
+      "class_total": 257,
+      "log2_lift": 2.9613958015505806,
+      "mi_contribution_bits": 0.0033815538698836207
+    },
+    {
+      "first_sign": "161",
+      "carrier_class": "square_seal_SEALS",
+      "observed": 11,
+      "expected": 5.292606337425064,
+      "first_sign_total": 12,
+      "class_total": 1545,
+      "log2_lift": 1.0554532679264672,
+      "mi_contribution_bits": 0.003314298015184453
+    },
+    {
+      "first_sign": "064",
+      "carrier_class": "other",
+      "observed": 4,
+      "expected": 0.5869254924350557,
+      "first_sign_total": 8,
+      "class_total": 257,
+      "log2_lift": 2.7687507236081847,
+      "mi_contribution_bits": 0.0031615766184506823
+    },
+    {
+      "first_sign": "868",
+      "carrier_class": "tablet_account_TAB_BI",
+      "observed": 5,
+      "expected": 1.0919212103910934,
+      "first_sign_total": 5,
+      "class_total": 765,
+      "log2_lift": 2.195059335222049,
+      "mi_contribution_bits": 0.003133113524439122
+    },
+    {
+      "first_sign": "869",
+      "carrier_class": "tablet_account_TAB_BI",
+      "observed": 5,
+      "expected": 1.0919212103910934,
+      "first_sign_total": 5,
+      "class_total": 765,
+      "log2_lift": 2.195059335222049,
+      "mi_contribution_bits": 0.003133113524439122
+    },
+    {
+      "first_sign": "480",
+      "carrier_class": "pottery_graffiti_POT",
+      "observed": 3,
+      "expected": 0.28090208392806165,
+      "first_sign_total": 3,
+      "class_total": 328,
+      "log2_lift": 3.4168232681839794,
+      "mi_contribution_bits": 0.0029261974891669823
+    },
+    {
+      "first_sign": "032",
+      "carrier_class": "tablet_account_TAB_BI",
+      "observed": 12,
+      "expected": 6.769911504424779,
+      "first_sign_total": 31,
+      "class_total": 765,
+      "log2_lift": 0.8258255255563297,
+      "mi_contribution_bits": 0.0028289769645092654
+    },
+    {
+      "first_sign": "176",
+      "carrier_class": "tablet_account_TAB_BI",
+      "observed": 5,
+      "expected": 1.310305452469312,
+      "first_sign_total": 6,
+      "class_total": 765,
+      "log2_lift": 1.932024929388255,
+      "mi_contribution_bits": 0.0027576718946449546
+    },
+    {
+      "first_sign": "003",
+      "carrier_class": "other",
+      "observed": 4,
+      "expected": 0.8070225520982015,
+      "first_sign_total": 11,
+      "class_total": 257,
+      "log2_lift": 2.309319104970888,
+      "mi_contribution_bits": 0.0026369615814683276
+    },
+    {
+      "first_sign": "032",
+      "carrier_class": "pottery_graffiti_POT",
+      "observed": 7,
+      "expected": 2.9026548672566372,
+      "first_sign_total": 31,
+      "class_total": 328,
+      "log2_lift": 1.2699818798547082,
+      "mi_contribution_bits": 0.002537788512413062
+    },
+    {
+      "first_sign": "790",
+      "carrier_class": "pottery_graffiti_POT",
+      "observed": 5,
+      "expected": 1.4981444476163288,
+      "first_sign_total": 16,
+      "class_total": 328,
+      "log2_lift": 1.7387513630713416,
+      "mi_contribution_bits": 0.002481803258737285
+    },
+    {
+      "first_sign": "820",
+      "carrier_class": "other",
+      "observed": 5,
+      "expected": 1.614045104196403,
+      "first_sign_total": 22,
+      "class_total": 257,
+      "log2_lift": 1.63124719985825,
+      "mi_contribution_bits": 0.0023283574077337284
+    },
+    {
+      "first_sign": "241",
+      "carrier_class": "square_seal_SEALS",
+      "observed": 8,
+      "expected": 3.9694547530687982,
+      "first_sign_total": 9,
+      "class_total": 1545,
+      "log2_lift": 1.0110591485680136,
+      "mi_contribution_bits": 0.0023090131854250954
+    },
+    {
+      "first_sign": "679",
+      "carrier_class": "square_seal_SEALS",
+      "observed": 11,
+      "expected": 6.615757921781331,
+      "first_sign_total": 15,
+      "class_total": 1545,
+      "log2_lift": 0.7335251730391046,
+      "mi_contribution_bits": 0.002303390494841607
+    },
+    {
+      "first_sign": "411",
+      "carrier_class": "pottery_graffiti_POT",
+      "observed": 3,
+      "expected": 0.46817013988010275,
+      "first_sign_total": 5,
+      "class_total": 328,
+      "log2_lift": 2.6798576740177733,
+      "mi_contribution_bits": 0.0022950536745798803
+    },
+    {
+      "first_sign": "645",
+      "carrier_class": "pottery_graffiti_POT",
+      "observed": 3,
+      "expected": 0.46817013988010275,
+      "first_sign_total": 5,
+      "class_total": 328,
+      "log2_lift": 2.6798576740177733,
+      "mi_contribution_bits": 0.0022950536745798803
+    },
+    {
+      "first_sign": "705",
+      "carrier_class": "tablet_account_TAB_BI",
+      "observed": 6,
+      "expected": 2.4022266628604054,
+      "first_sign_total": 11,
+      "class_total": 765,
+      "log2_lift": 1.3205902173059076,
+      "mi_contribution_bits": 0.0022619301466843982
+    },
+    {
+      "first_sign": "001",
+      "carrier_class": "rect_copper_SEALR_TABC",
+      "observed": 6,
+      "expected": 2.408221524407651,
+      "first_sign_total": 19,
+      "class_total": 444,
+      "log2_lift": 1.3169943937295276,
+      "mi_contribution_bits": 0.0022557711568304785
+    },
+    {
+      "first_sign": "409",
+      "carrier_class": "rect_copper_SEALR_TABC",
+      "observed": 3,
+      "expected": 0.5069940051384527,
+      "first_sign_total": 4,
+      "class_total": 444,
+      "log2_lift": 2.564921907173113,
+      "mi_contribution_bits": 0.002196621673285567
+    },
+    {
+      "first_sign": "920",
+      "carrier_class": "other",
+      "observed": 3,
+      "expected": 0.5135598058806737,
+      "first_sign_total": 7,
+      "class_total": 257,
+      "log2_lift": 2.5463583022717367,
+      "mi_contribution_bits": 0.002180723638828207
+    },
+    {
+      "first_sign": "909",
+      "carrier_class": "other",
+      "observed": 2,
+      "expected": 0.1467313731087639,
+      "first_sign_total": 2,
+      "class_total": 257,
+      "log2_lift": 3.7687507236081847,
+      "mi_contribution_bits": 0.0021517275042010763
+    },
+    {
+      "first_sign": "556",
+      "carrier_class": "other",
+      "observed": 2,
+      "expected": 0.1467313731087639,
+      "first_sign_total": 2,
+      "class_total": 257,
+      "log2_lift": 3.7687507236081847,
+      "mi_contribution_bits": 0.0021517275042010763
+    },
+    {
+      "first_sign": "913",
+      "carrier_class": "other",
+      "observed": 2,
+      "expected": 0.1467313731087639,
+      "first_sign_total": 2,
+      "class_total": 257,
+      "log2_lift": 3.7687507236081847,
+      "mi_contribution_bits": 0.0021517275042010763
+    },
+    {
+      "first_sign": "360",
+      "carrier_class": "other",
+      "observed": 2,
+      "expected": 0.1467313731087639,
+      "first_sign_total": 2,
+      "class_total": 257,
+      "log2_lift": 3.7687507236081847,
+      "mi_contribution_bits": 0.0021517275042010763
+    },
+    {
+      "first_sign": "898",
+      "carrier_class": "other",
+      "observed": 2,
+      "expected": 0.1467313731087639,
+      "first_sign_total": 2,
+      "class_total": 257,
+      "log2_lift": 3.7687507236081847,
+      "mi_contribution_bits": 0.0021517275042010763
+    },
+    {
+      "first_sign": "527",
+      "carrier_class": "rect_copper_SEALR_TABC",
+      "observed": 10,
+      "expected": 5.95717956037682,
+      "first_sign_total": 47,
+      "class_total": 444,
+      "log2_lift": 0.7472986496616819,
+      "mi_contribution_bits": 0.0021333104472214728
+    },
+    {
+      "first_sign": "595",
+      "carrier_class": "rect_copper_SEALR_TABC",
+      "observed": 5,
+      "expected": 1.7744790179845846,
+      "first_sign_total": 14,
+      "class_total": 444,
+      "log2_lift": 1.494532579281715,
+      "mi_contribution_bits": 0.0021332180692002784
+    },
+    {
+      "first_sign": "820",
+      "carrier_class": "square_seal_SEALS",
+      "observed": 14,
+      "expected": 9.703111618612617,
+      "first_sign_total": 22,
+      "class_total": 1545,
+      "log2_lift": 0.528907453430633,
+      "mi_contribution_bits": 0.0021138179697484617
+    },
+    {
+      "first_sign": "158",
+      "carrier_class": "pottery_graffiti_POT",
+      "observed": 4,
+      "expected": 1.1236083357122466,
+      "first_sign_total": 12,
+      "class_total": 328,
+      "log2_lift": 1.8318607674628231,
+      "mi_contribution_bits": 0.002091762223765713
+    },
+    {
+      "first_sign": "365",
+      "carrier_class": "tag",
+      "observed": 2,
+      "expected": 0.1812731944047959,
+      "first_sign_total": 5,
+      "class_total": 127,
+      "log2_lift": 3.4637624911425346,
+      "mi_contribution_bits": 0.0019775977682800656
+    },
+    {
+      "first_sign": "748",
+      "carrier_class": "pottery_graffiti_POT",
+      "observed": 2,
+      "expected": 0.1872680559520411,
+      "first_sign_total": 2,
+      "class_total": 328,
+      "log2_lift": 3.4168232681839794,
+      "mi_contribution_bits": 0.0019507983261113214
+    },
+    {
+      "first_sign": "849",
+      "carrier_class": "pottery_graffiti_POT",
+      "observed": 2,
+      "expected": 0.1872680559520411,
+      "first_sign_total": 2,
+      "class_total": 328,
+      "log2_lift": 3.4168232681839794,
+      "mi_contribution_bits": 0.0019507983261113214
+    }
+  ]
+}

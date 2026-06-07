@@ -1,0 +1,65 @@
+{
+  "date": "2026-05-26",
+  "artifact": "lipi_034_m1206_allograph_decision_gate",
+  "question": "After side-policy closure, what is the admissible allograph-vs-sign-split decision state for M-1206 +520-220-034+ against clean exact-side 415 controls?",
+  "exact_520_220_x_counts": {
+    "415": {
+      "count": 17,
+      "objects": ["H-1326", "H-2148", "H-2240", "H-2146", "H-2149", "H-1992", "H-1992", "H-319", "H-346", "H-364", "H-786", "H-938", "H-939", "H-940", "H-941", "M-37", "H-1284"]
+    },
+    "003": { "count": 1, "objects": ["M-1912"] },
+    "006": { "count": 1, "objects": ["K-150"] },
+    "016": { "count": 1, "objects": ["H-942"] },
+    "034": { "count": 1, "objects": ["M-1206"] }
+  },
+  "current_decision": {
+    "m1206_terminal_stable": true,
+    "closest_clean_exact_side_415_controls": ["H-938 A", "H-938 A bis"],
+    "secondary_clean_exact_side_415_control": "H-940 A",
+    "side_gated_visual_pressure": ["H-786 A", "H-941 A", "H-941 A bis"],
+    "clean_same_site_415_control": "M37_A_terminal_strict_core_from_signband.png",
+    "same_site_415_profile": "M-37 comb/rake-with-stem subform, not closest M-1206 vertical-bundle match",
+    "m1912_status": "secondary_visual_lead_only_not_source_grade",
+    "h942_status": "source_visible_singleton_016_control_target_side_mapping_caution",
+    "k150_status": "secondary_catalogue_lead_only_not_source_grade",
+    "source_normalized_component_packet_status": "completed_strengthens_034_415_visual_family_pressure_without_allograph_or_value_claim",
+    "independent_034_support_currently_sufficient": false,
+    "allograph_status_proven": false,
+    "separate_sign_status_proven": false,
+    "source_side_artifact_proven": false,
+    "transcription_policy_split_proven": false
+  },
+  "latest_packet_result": {
+    "artifact": "lipi_034_m1206_source_normalized_component_packet",
+    "primary_blind_items": 12,
+    "appendix_or_quarantine_items": 7,
+    "blind_review_rows": 12,
+    "adjudication_rows": 8,
+    "target_core": "M-1206 A/a survives as stable parallel-vertical terminal core",
+    "closest_clean_415_pressure": "H-938 A/A bis remains nearest clean exact-side 415 pressure, with A bis duplicate not independent",
+    "secondary_415_pressure": "H-940 A remains weaker secondary exact-side 415 pressure",
+    "same_site_415_control": "M-37 A strict recut is clean but separates as comb/rake-with-stem subform",
+    "h942_result": "H-942 A is admissible as full source-visible singleton 016 signband control only, not terminal-isolated component evidence",
+    "hard_exclusions": ["M-1912", "K-150"]
+  },
+  "next_experiment": [
+    "Use M37_A_terminal_strict_core_from_signband.png as the clean same-site 415 comb/rake control, with M37_A_terminal_minimal_core_from_signband.png as an isolation check.",
+    "Keep M-1912 +520-220-003+ quarantined as secondary_visual_lead_only_not_source_grade under the M-1912 source gate; acquire CISI 3.1 or equivalent raw source before using it as the missing same-site singleton terminal control.",
+    "Use H-942 A as a source-visible singleton 016 control target with side-mapping caution; keep K-150 excluded until raw source material exists.",
+    "Keep H-938 A/A bis and H-940 A as clean exact-side vertical-bundle 415 controls; keep H-786/H-941 separate as side-gated pressure.",
+    "Add an independent 034 witness only if source imagery supports component-level blind classification.",
+    "Run a source-normalized blind component sort with predeclared target 034, exact-side 415, same-site non-034 terminal controls, and prefix/nonterminal distractors."
+  ],
+  "accepted": {
+    "034_equals_415": false,
+    "034_415_allograph": false,
+    "034_value": false,
+    "415_value": false,
+    "semantic_value": false,
+    "phonetic_value": false,
+    "translation": false
+  },
+  "accepted_source_mapping_count": 0,
+  "accepted_sign_value_count": 0,
+  "accepted_translation_count": 0
+}

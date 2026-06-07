@@ -1,0 +1,33 @@
+{
+  "date": "2026-05-26",
+  "artifact": "lipi_034_m1206_415_companion_context_inventory",
+  "question": "Across exact local +520-220-415+ rows, how often does a companion side contain 034/700, and what source grade does that pressure have?",
+  "reports": {
+    "inventory": "data/open_prototype/reports/lipi_034_m1206_415_companion_context_inventory.csv"
+  },
+  "exact_520_220_415_rows": 17,
+  "exact_520_220_415_unique_objects": 16,
+  "rows_with_any_companion": 14,
+  "rows_with_034_companion": 4,
+  "rows_with_700_034_or_034_700_companion": 4,
+  "unique_objects_with_700_034_or_034_700_companion": 4,
+  "objects_with_700_034_or_034_700_companion": [
+    "H-1284 4069.1 4069.2:+700-034+ [route_dark_in_checked_layer]",
+    "H-319 1341.1 1341.2:+700-034+ [register_only_in_checked_layer]",
+    "H-938 1818.1 1818.2:+034-700+ [source_audited_clean_exact_415_with_034_companion]",
+    "H-939 1819.2 1819.1:+700-034+ [source_visible_same_page_but_not_upgraded]"
+  ],
+  "rows_with_700_032_or_032_700_companion": 1,
+  "rows_with_700_033_or_033_700_companion": 0,
+  "source_grade_same_object_pressure_objects": [
+    "H-938"
+  ],
+  "result": "The 034/700 companion pattern is repeated locally beside +520-220-415+ (four rows/objects), but only H-938 is currently source-panel-audited as clean same-object pressure. H-939 is visible but failed upgrade; H-319 and H-1284 are acquisition targets. This supports a real sign-inventory problem, not a sign collapse or value.",
+  "accepted": {
+    "034_equals_415": false,
+    "translation": false,
+    "proven_allography": false,
+    "sign_value": false
+  },
+  "accepted_claim_count": 0
+}

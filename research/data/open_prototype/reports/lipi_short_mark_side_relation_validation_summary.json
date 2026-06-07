@@ -1,0 +1,201 @@
+{
+  "source": "Harappa TAB:B/TAB:I 033/034 side-relation validation sheet",
+  "checked_at": "2026-05-24",
+  "inputs": [
+    "data/open_prototype/reports/lipi_short_mark_companion_context_rows.csv",
+    "data/open_prototype/reports/lipi_multiside_mark_validation_queue.csv"
+  ],
+  "target_rows": 251,
+  "target_artifacts": 250,
+  "companion_counts": {
+    "033": 137,
+    "034": 114
+  },
+  "side_relation_counts": {
+    "no_longer_text": 86,
+    "short_after_all_longer": 92,
+    "short_before_all_longer": 72,
+    "short_between_longer_sides": 1
+  },
+  "priority_counts": {
+    "P1_033_after_corrected_relation": 51,
+    "P1_033_after_with_400_740_176": 16,
+    "P1_034_before_contrast_relation": 38,
+    "P1_034_before_with_400_740_176": 2,
+    "P2_033_before_exception_control": 32,
+    "P2_034_after_exception_control": 25,
+    "P2_raw_400_740_176_context": 1,
+    "P3_no_longer_text_control": 86
+  },
+  "raw_400_740_176_rows": 29,
+  "raw_400_740_176_artifacts": 28,
+  "top_priority_rows": [
+    {
+      "priority": "P1_033_after_with_400_740_176",
+      "cisi": "H-233",
+      "companion": "033",
+      "side_relation": "short_after_all_longer",
+      "short_text": "+700-033+",
+      "longer_texts": "+400-740-176+"
+    },
+    {
+      "priority": "P1_033_after_with_400_740_176",
+      "cisi": "H-309",
+      "companion": "033",
+      "side_relation": "short_after_all_longer",
+      "short_text": "+700-033+",
+      "longer_texts": "+400-740-176+"
+    },
+    {
+      "priority": "P1_033_after_with_400_740_176",
+      "cisi": "H-316",
+      "companion": "033",
+      "side_relation": "short_after_all_longer",
+      "short_text": "+700-033+",
+      "longer_texts": "+400-740-176+"
+    },
+    {
+      "priority": "P1_033_after_with_400_740_176",
+      "cisi": "H-353",
+      "companion": "033",
+      "side_relation": "short_after_all_longer",
+      "short_text": "+700-033+",
+      "longer_texts": "+400-740-176+"
+    },
+    {
+      "priority": "P1_033_after_with_400_740_176",
+      "cisi": "H-355",
+      "companion": "033",
+      "side_relation": "short_after_all_longer",
+      "short_text": "+700-033+",
+      "longer_texts": "+400-740-176+"
+    },
+    {
+      "priority": "P1_033_after_with_400_740_176",
+      "cisi": "H-355",
+      "companion": "033",
+      "side_relation": "short_after_all_longer",
+      "short_text": "+700-033+",
+      "longer_texts": "+400-740-176+"
+    },
+    {
+      "priority": "P1_033_after_with_400_740_176",
+      "cisi": "H-357",
+      "companion": "033",
+      "side_relation": "short_after_all_longer",
+      "short_text": "+700-033+",
+      "longer_texts": "+400-740-176+"
+    },
+    {
+      "priority": "P1_033_after_with_400_740_176",
+      "cisi": "H-935",
+      "companion": "033",
+      "side_relation": "short_after_all_longer",
+      "short_text": "+700-033+",
+      "longer_texts": "+400-740-176+"
+    },
+    {
+      "priority": "P1_033_after_with_400_740_176",
+      "cisi": "H-978",
+      "companion": "033",
+      "side_relation": "short_after_all_longer",
+      "short_text": "+700-033+",
+      "longer_texts": "+400-740-176+"
+    },
+    {
+      "priority": "P1_033_after_with_400_740_176",
+      "cisi": "H-1302",
+      "companion": "033",
+      "side_relation": "short_after_all_longer",
+      "short_text": "+700-033+",
+      "longer_texts": "+400-740-176+"
+    },
+    {
+      "priority": "P1_033_after_with_400_740_176",
+      "cisi": "H-1303",
+      "companion": "033",
+      "side_relation": "short_after_all_longer",
+      "short_text": "+700-033+",
+      "longer_texts": "+400-740-176+"
+    },
+    {
+      "priority": "P1_033_after_with_400_740_176",
+      "cisi": "H-1304",
+      "companion": "033",
+      "side_relation": "short_after_all_longer",
+      "short_text": "+700-033+",
+      "longer_texts": "+400-740-176+"
+    },
+    {
+      "priority": "P1_033_after_with_400_740_176",
+      "cisi": "H-1344",
+      "companion": "033",
+      "side_relation": "short_after_all_longer",
+      "short_text": "+700-033+",
+      "longer_texts": "+400-740-176+"
+    },
+    {
+      "priority": "P1_033_after_with_400_740_176",
+      "cisi": "H-1345",
+      "companion": "033",
+      "side_relation": "short_after_all_longer",
+      "short_text": "+700-033+",
+      "longer_texts": "+400-740-176+"
+    },
+    {
+      "priority": "P1_033_after_with_400_740_176",
+      "cisi": "H-1346",
+      "companion": "033",
+      "side_relation": "short_after_all_longer",
+      "short_text": "+700-033+",
+      "longer_texts": "+400-740-176+"
+    },
+    {
+      "priority": "P1_033_after_with_400_740_176",
+      "cisi": "H-1347",
+      "companion": "033",
+      "side_relation": "short_after_all_longer",
+      "short_text": "+700-033+",
+      "longer_texts": "+400-740-176+"
+    },
+    {
+      "priority": "P1_034_before_with_400_740_176",
+      "cisi": "H-933",
+      "companion": "034",
+      "side_relation": "short_before_all_longer",
+      "short_text": "+034-700+",
+      "longer_texts": "+400-740-176+"
+    },
+    {
+      "priority": "P1_034_before_with_400_740_176",
+      "cisi": "H-960",
+      "companion": "034",
+      "side_relation": "short_before_all_longer",
+      "short_text": "+700-034+",
+      "longer_texts": "+400-740-176+"
+    },
+    {
+      "priority": "P1_033_after_corrected_relation",
+      "cisi": "H-206",
+      "companion": "033",
+      "side_relation": "short_after_all_longer",
+      "short_text": "+700-033+",
+      "longer_texts": "+740-642-240-204-705-621+"
+    },
+    {
+      "priority": "P1_033_after_corrected_relation",
+      "cisi": "H-211",
+      "companion": "033",
+      "side_relation": "short_after_all_longer",
+      "short_text": "+033-700+",
+      "longer_texts": "+400-740-898-617+"
+    }
+  ],
+  "key_observation": "This sheet converts the corrected 033/034 catalog-side relation contrast into source-validation targets. It does not accept physical side order, side function, numerical value, sign meaning, or translation.",
+  "interpretation_boundary": "This is a source-validation worklist only. It accepts no physical side function, numerical value, metrological reading, sign meaning, phonetic value, language identity, or translation.",
+  "outputs": [
+    "data/open_prototype/reports/lipi_short_mark_side_relation_validation_sheet.csv",
+    "data/open_prototype/reports/lipi_short_mark_side_relation_priority_summary.csv",
+    "data/open_prototype/reports/lipi_short_mark_side_relation_validation_summary.json"
+  ]
+}

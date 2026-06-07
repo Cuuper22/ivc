@@ -1,0 +1,18 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "packet_id": "blind_060920_terminal_cap_20260531",
+  "purpose": "Destructive blind test for the refined candidate that 060-920 is a broader terminal cap, not merely a 741-060-920 visual formula.",
+  "blind_sheet": "tmp/blind_060920_terminal_cap_20260531/blind_060920_terminal_cap_sheet.jpg",
+  "manifest": "data/open_prototype/reports/blind_060920_terminal_cap_20260531_manifest.csv",
+  "sealed_answer_key": "data/open_prototype/reports/blind_060920_terminal_cap_20260531_answer_key.csv",
+  "design": {
+    "positives": 6,
+    "controls": 6,
+    "positive_class": "non-741 rows ending in catalogued 060-920",
+    "control_class": "rows with 060 followed by non-920 terminal/complement signs such as 550, 692, and 820",
+    "neutralization": "Printed labels are cropped out; panels expose only neutral IDs BC001..BC012."
+  },
+  "promotion_rule": "The broad 060-920 cap strengthens only if blind readers recover a recurring terminal visual cluster in positive panels at a higher rate than 060-non920 controls.",
+  "failure_rule": "If non-741 060-920 positives cannot be separated from 060-non920 controls, keep the source-visible result narrow around 741-060-920 rather than promoting broad 060-920 visually."
+}

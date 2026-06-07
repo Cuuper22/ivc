@@ -1,0 +1,166 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "x125_tail_class_predictions",
+  "xslot_125_rows": 11,
+  "xslot_open_rows": 9,
+  "xslot_terminal_rows": 2,
+  "head_tail_summary": [
+    {
+      "checked_date": "2026-05-31",
+      "head": "390",
+      "rows": "4",
+      "open_rate": "4/4",
+      "tails": "195:1;632 032:1;632 032 900 563:1;820:1",
+      "tail_classes": "632032_tail_family:2;820_terminal_cap_tail:1;single_195_tail:1",
+      "scopes": "Mohenjo-daro|SEAL:S|square|Steatite:3;Surkotada|SEAL:S|square|-:1",
+      "objects": "M-38;M-119;M-735;Sktd-1",
+      "prediction": "next xslot 125 under head 390 should continue, tail may split by left/register"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "head": "610",
+      "rows": "2",
+      "open_rate": "2/2",
+      "tails": "032:2",
+      "tail_classes": "single_032_tail:2",
+      "scopes": "Harappa|SEAL:S|square|Steatite:1;Mohenjo-daro|SEAL:S|square|Steatite:1",
+      "objects": "H-74;M-1665",
+      "prediction": "next xslot 125 under head 610 should continue with 032 tail"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "head": "190",
+      "rows": "1",
+      "open_rate": "1/1",
+      "tails": "632 032:1",
+      "tail_classes": "632032_tail_family:1",
+      "scopes": "Mohenjo-daro|SEAL:S|square|Steatite:1",
+      "objects": "M-1692",
+      "prediction": "singleton head: predict by tail class only"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "head": "405",
+      "rows": "1",
+      "open_rate": "1/1",
+      "tails": "820:1",
+      "tail_classes": "820_terminal_cap_tail:1",
+      "scopes": "Mohenjo-daro|SEAL:S|square|Steatite:1",
+      "objects": "M-41",
+      "prediction": "singleton head: predict by tail class only"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "head": "407",
+      "rows": "1",
+      "open_rate": "1/1",
+      "tails": "590 831:1",
+      "tail_classes": "copper_590831_tail:1",
+      "scopes": "Mohenjo-daro|TAB:C|rectangular|Copper:1",
+      "objects": "M-2055",
+      "prediction": "singleton head: predict by tail class only"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "head": "861",
+      "rows": "1",
+      "open_rate": "0/1",
+      "tails": "<END>:1",
+      "tail_classes": "terminal_125:1",
+      "scopes": "Harappa|SEAL:S|square|Steatite:1",
+      "objects": "H-55",
+      "prediction": "next xslot 125 under this terminal head should end"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "head": "906",
+      "rows": "1",
+      "open_rate": "0/1",
+      "tails": "<END>:1",
+      "tail_classes": "terminal_125:1",
+      "scopes": "Mohenjo-daro|SEAL:R|cuboid-convex|Steatite:1",
+      "objects": "M-354",
+      "prediction": "next xslot 125 under this terminal head should end"
+    }
+  ],
+  "tail_class_summary": [
+    {
+      "checked_date": "2026-05-31",
+      "tail_class": "632032_tail_family",
+      "xslot_rows": "3",
+      "xslot_open_rate": "3/3",
+      "heads": "390:2;190:1",
+      "scopes": "Mohenjo-daro|SEAL:S|square|Steatite:3",
+      "global_125_rows_same_tail_class": "4",
+      "global_roles": "xslot_125:3;non_xslot_125:1",
+      "objects": "M-1692;M-38;M-119"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "tail_class": "820_terminal_cap_tail",
+      "xslot_rows": "2",
+      "xslot_open_rate": "2/2",
+      "heads": "390:1;405:1",
+      "scopes": "Mohenjo-daro|SEAL:S|square|Steatite:1;Surkotada|SEAL:S|square|-:1",
+      "global_125_rows_same_tail_class": "2",
+      "global_roles": "xslot_125:2",
+      "objects": "M-41;Sktd-1"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "tail_class": "single_032_tail",
+      "xslot_rows": "2",
+      "xslot_open_rate": "2/2",
+      "heads": "610:2",
+      "scopes": "Harappa|SEAL:S|square|Steatite:1;Mohenjo-daro|SEAL:S|square|Steatite:1",
+      "global_125_rows_same_tail_class": "2",
+      "global_roles": "xslot_125:2",
+      "objects": "H-74;M-1665"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "tail_class": "terminal_125",
+      "xslot_rows": "2",
+      "xslot_open_rate": "0/2",
+      "heads": "861:1;906:1",
+      "scopes": "Harappa|SEAL:S|square|Steatite:1;Mohenjo-daro|SEAL:R|cuboid-convex|Steatite:1",
+      "global_125_rows_same_tail_class": "17",
+      "global_roles": "non_xslot_125:15;xslot_125:2",
+      "objects": "H-55;M-354"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "tail_class": "copper_590831_tail",
+      "xslot_rows": "1",
+      "xslot_open_rate": "1/1",
+      "heads": "407:1",
+      "scopes": "Mohenjo-daro|TAB:C|rectangular|Copper:1",
+      "global_125_rows_same_tail_class": "1",
+      "global_roles": "xslot_125:1",
+      "objects": "M-2055"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "tail_class": "single_195_tail",
+      "xslot_rows": "1",
+      "xslot_open_rate": "1/1",
+      "heads": "390:1",
+      "scopes": "Mohenjo-daro|SEAL:S|square|Steatite:1",
+      "global_125_rows_same_tail_class": "1",
+      "global_roles": "xslot_125:1",
+      "objects": "M-735"
+    }
+  ],
+  "new_bets": {
+    "X125_HEAD610_SELECTS_032_TAIL": "candidate",
+    "X125_632032_DEPENDENT_TAIL_FAMILY": "wild shot",
+    "X125_820_CAP_IS_NOT_ONE_THING": "wild shot",
+    "X125_TAILS_ARE_PARSER_FEATURES_NOT_TRANSLATIONS": "candidate"
+  },
+  "most_embarrassing_tests": [
+    "Find `002-610-125` with any tail other than `032`.",
+    "Find source-visible free non-Xslot `125-632-032` spread that ignores head/scope.",
+    "Source-bind `002-405-125-820` and Sktd-1; if either loses continuation, kill the 820 dependent-tail bet."
+  ]
+}

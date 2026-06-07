@@ -1,0 +1,6 @@
+blocker,evidence,consequence
+no_cisi_object_id,target cisi=-; artifact_id=-,cannot route to CISI plate/page by object id
+no_site_or_excavation_id,site=Unknown; excavation=-,cannot route through field catalogue without source provenance
+local_layer_quarantined,provenance=T3_quarantined_metadata,numeric sequence remains local metadata pressure only
+prefix_family_control_not_identity,M-143 shares 740-205-032-002 but diverges to 252-840,"prefix family is a control, not a bridge"
+portable_tail_family,7 rows contain 390-590-032,even a source-bound target must survive formula-family collapse

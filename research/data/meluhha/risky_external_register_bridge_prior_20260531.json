@@ -1,0 +1,266 @@
+{
+  "run_date": "2026-05-31",
+  "bet_id": "V1_EXTERNAL_REGISTER_BRIDGE_PRIOR_20260531",
+  "vector": "V1 diffuse Meluhha bilingual + V4 context-to-meaning + V2 slot grammar",
+  "confidence_tier": "candidate",
+  "risky_bet": "The most promising diffuse Meluhha bridge is not an onomastic square-seal reading. It is a commodity/account register bridge: cuneiform Meluhha attestations should weight commodity/administrative/route contexts enough that the Indus-side search should prioritize SEAL:R/TAB:C rows carrying the 740/407/806 register grammar.",
+  "observed": "Cuneiform unique rows=16. Class counts: commodity_route_object:10;ethnonym_title_origin:3;onomastic:3. Direct class counts: commodity_route_object:10;ethnonym_title_origin:3;onomastic:2. Direct commodity/register=10; direct onomastic=2. Indus side: 407 register tier=promoted candidate; 740/407 opener tier=promoted candidate; 407/806 slot split tier=promoted candidate.",
+  "adversarial_test": "Deduplicates cuneiform attestations by source/line/transliteration, bins them before looking at the Indus summaries, and requires the Indus-side register and slot-grammar bets to have already survived their own max-stat/forger controls. This is a search-prior bridge, not an object-level bilingual.",
+  "false_positive_rate": "not a phonetic-anchor FPR: the Indus components report 0 max-stat FPR in their own forgers; cuneiform class prior has no object-level pair and remains candidate-only",
+  "falsifier": "If deduplicated cuneiform review shows Meluhha is predominantly personal-name/owner context, or if future external Indus objects with readable cuneiform links are square animal seals without 740/407/806 register grammar, demote this bridge prior.",
+  "next_prediction": "For Ur/Gulf/Mesopotamian Indus-style objects with credible trade linkage, prioritize source-checking SEAL:R/TAB:C or rectangular/copper-like rows containing 740, 407, or 806 before attempting owner-name readings. A real object-level bridge would promote this; absence of such rows would kill it.",
+  "by_class": [
+    {
+      "class": "commodity_route_object",
+      "count": 10
+    },
+    {
+      "class": "ethnonym_title_origin",
+      "count": 3
+    },
+    {
+      "class": "onomastic",
+      "count": 3
+    }
+  ],
+  "direct_by_class": [
+    {
+      "class": "commodity_route_object",
+      "count": 10
+    },
+    {
+      "class": "ethnonym_title_origin",
+      "count": 3
+    },
+    {
+      "class": "onomastic",
+      "count": 2
+    }
+  ],
+  "class_rows": [
+    {
+      "class": "onomastic",
+      "directness": "direct",
+      "source_system": "BDTNS",
+      "source_id": "BDTNS 000128 / BM 014594",
+      "line_ref": "3",
+      "transliteration": "mu Ur-{d}Lamma dumu Me-luh-ha-še _3",
+      "token_type": "personal_name_with_origin_or_patronymic",
+      "meluhha_relation": "direct Meluhha-tagged personal-name/origin formula",
+      "period": "Ur III",
+      "provenience": "Ĝirsu",
+      "genre": "",
+      "source_url": "https://bdtns.cesga.es/000128"
+    },
+    {
+      "class": "onomastic",
+      "directness": "direct",
+      "source_system": "BDTNS",
+      "source_id": "BDTNS 000128 / BM 014594",
+      "line_ref": "4",
+      "transliteration": "Ur-{d}Lamma dumu Me-luh-ha",
+      "token_type": "personal_name_with_origin_or_patronymic",
+      "meluhha_relation": "direct Meluhha-tagged personal-name/origin formula",
+      "period": "Ur III",
+      "provenience": "Ĝirsu",
+      "genre": "",
+      "source_url": "https://bdtns.cesga.es/000128"
+    },
+    {
+      "class": "commodity_route_object",
+      "directness": "direct",
+      "source_system": "BDTNS",
+      "source_id": "BDTNS 011069 / IM U. 03884",
+      "line_ref": "4",
+      "transliteration": "1 dar Me-luh-ha",
+      "token_type": "object_or_commodity_designation_with_meluhha",
+      "meluhha_relation": "direct Meluhha-tagged line in administrative text",
+      "period": "Ur III",
+      "provenience": "Ur",
+      "genre": "",
+      "source_url": "https://bdtns.cesga.es/011069"
+    },
+    {
+      "class": "onomastic",
+      "directness": "adjacent",
+      "source_system": "CDLI",
+      "source_id": "P212982 / CT 50, 076",
+      "line_ref": "5",
+      "transliteration": "lu2-sun2-zi-da",
+      "token_type": "personal_name_adjacent_to_meluhha_title",
+      "meluhha_relation": "line immediately before lu2 me-luh-ha-ke4 in same text",
+      "period": "Old Akkadian (ca. 2340-2200 BC)",
+      "provenience": "",
+      "genre": "Administrative",
+      "source_url": "https://cdli.earth/P212982"
+    },
+    {
+      "class": "ethnonym_title_origin",
+      "directness": "direct",
+      "source_system": "CDLI",
+      "source_id": "P212982 / CT 50, 076",
+      "line_ref": "6",
+      "transliteration": "lu2 me-luh-ha-ke4",
+      "token_type": "ethnonym_title_or_origin",
+      "meluhha_relation": "direct Meluhha-tagged expression; adjacent line supplies a personal-name candidate",
+      "period": "Old Akkadian (ca. 2340-2200 BC)",
+      "provenience": "",
+      "genre": "Administrative",
+      "source_url": "https://cdli.earth/P212982"
+    },
+    {
+      "class": "commodity_route_object",
+      "directness": "direct",
+      "source_system": "CDLI",
+      "source_id": "P232277 / RIME 3/1.01.07, St D witness",
+      "line_ref": "8",
+      "transliteration": "me-luh-ha{ki}",
+      "token_type": "toponym_in_route_list",
+      "meluhha_relation": "direct Meluhha toponym in co-route list with Magan, Gubi, Dilmun",
+      "period": "Lagash II (ca. 2200-2100 BC)",
+      "provenience": "Girsu (mod. Tello)",
+      "genre": "Official or display",
+      "source_url": "https://cdli.earth/P232277"
+    },
+    {
+      "class": "commodity_route_object",
+      "directness": "direct",
+      "source_system": "CDLI",
+      "source_id": "P431881 / RIME 3/1.01.07, Cyl A composite",
+      "line_ref": "240",
+      "transliteration": "ma2-gan me-luh-ha kur-bi-ta im-ma-ta-e11-de3",
+      "token_type": "ship_or_trade_route_context",
+      "meluhha_relation": "direct Meluhha toponym in royal-inscription route and commodity contexts",
+      "period": "Lagash II (ca. 2200-2100 BC)",
+      "provenience": "Girsu (mod. Tello)",
+      "genre": "Official or display",
+      "source_url": "https://cdli.earth/P431881"
+    },
+    {
+      "class": "commodity_route_object",
+      "directness": "direct",
+      "source_system": "CDLI",
+      "source_id": "P431881 / RIME 3/1.01.07, Cyl A composite",
+      "line_ref": "394",
+      "transliteration": "ma2-gan me-luh-ha kur-bi-ta gu2 gesz mu-na-ab-gal2",
+      "token_type": "ship_or_trade_route_context",
+      "meluhha_relation": "direct Meluhha toponym in royal-inscription route and commodity contexts",
+      "period": "Lagash II (ca. 2200-2100 BC)",
+      "provenience": "Girsu (mod. Tello)",
+      "genre": "Official or display",
+      "source_url": "https://cdli.earth/P431881"
+    },
+    {
+      "class": "commodity_route_object",
+      "directness": "direct",
+      "source_system": "CDLI",
+      "source_id": "P431881 / RIME 3/1.01.07, Cyl A composite",
+      "line_ref": "443",
+      "transliteration": "gug gi-rin-e me-luh-ha-ta",
+      "token_type": "commodity_route_context",
+      "meluhha_relation": "direct Meluhha toponym in royal-inscription route and commodity contexts",
+      "period": "Lagash II (ca. 2200-2100 BC)",
+      "provenience": "Girsu (mod. Tello)",
+      "genre": "Official or display",
+      "source_url": "https://cdli.earth/P431881"
+    },
+    {
+      "class": "commodity_route_object",
+      "directness": "direct",
+      "source_system": "CDLI",
+      "source_id": "P431882 / RIME 3/1.01.07, Cyl B composite",
+      "line_ref": "328",
+      "transliteration": "uruda nagga lagab za-gin3-na ku3 NE gug gi-rin me-luh-ha-da",
+      "token_type": "commodity_route_context",
+      "meluhha_relation": "direct Meluhha adjective/toponym in commodity list",
+      "period": "Lagash II (ca. 2200-2100 BC)",
+      "provenience": "Girsu (mod. Tello)",
+      "genre": "Official or display",
+      "source_url": "https://cdli.earth/P431882"
+    },
+    {
+      "class": "commodity_route_object",
+      "directness": "direct",
+      "source_system": "CDLI",
+      "source_id": "P432309 / RIME 3/2.01.05.04 composite",
+      "line_ref": "9",
+      "transliteration": "ur gun3-a me-luh-ha{ki}",
+      "token_type": "animal_or_object_label_with_meluhha_modifier",
+      "meluhha_relation": "direct Meluhha modifier in tribute object/animal context",
+      "period": "Ur III (ca. 2100-2000 BC)",
+      "provenience": "Ur (mod. Tell Muqayyar)",
+      "genre": "Official or display",
+      "source_url": "https://cdli.earth/P432309"
+    },
+    {
+      "class": "commodity_route_object",
+      "directness": "direct",
+      "source_system": "CDLI",
+      "source_id": "P469516 / CDLI Literary 000334 (Enki and World Order)",
+      "line_ref": "124",
+      "transliteration": "kur me-luh-ha{ki} ma2-gan{ki} dilmun{ki}-bi",
+      "token_type": "ship_or_trade_route_context",
+      "meluhha_relation": "direct Meluhha toponym in literary trade-route and ship contexts",
+      "period": "Old Babylonian (ca. 1900-1600 BC)",
+      "provenience": "Nippur (mod. Nuffar)",
+      "genre": "Literary",
+      "source_url": "https://cdli.earth/P469516"
+    },
+    {
+      "class": "commodity_route_object",
+      "directness": "direct",
+      "source_system": "CDLI",
+      "source_id": "P469516 / CDLI Literary 000334 (Enki and World Order)",
+      "line_ref": "128",
+      "transliteration": "{gesz}ma2-gi4-lum me-luh-ha{ki}-a-ke4",
+      "token_type": "ship_or_trade_route_context",
+      "meluhha_relation": "direct Meluhha toponym in literary trade-route and ship contexts",
+      "period": "Old Babylonian (ca. 1900-1600 BC)",
+      "provenience": "Nippur (mod. Nuffar)",
+      "genre": "Literary",
+      "source_url": "https://cdli.earth/P469516"
+    },
+    {
+      "class": "commodity_route_object",
+      "directness": "direct",
+      "source_system": "CDLI",
+      "source_id": "P469516 / CDLI Literary 000334 (Enki and World Order)",
+      "line_ref": "219",
+      "transliteration": "kur me-luh-ha{ki} nam-mi-ib2-dib",
+      "token_type": "literary_toponym_or_ship_context",
+      "meluhha_relation": "direct Meluhha toponym in literary trade-route and ship contexts",
+      "period": "Old Babylonian (ca. 1900-1600 BC)",
+      "provenience": "Nippur (mod. Nuffar)",
+      "genre": "Literary",
+      "source_url": "https://cdli.earth/P469516"
+    },
+    {
+      "class": "ethnonym_title_origin",
+      "directness": "direct",
+      "source_system": "CDLI",
+      "source_id": "P469679 / CDLI Literary 000375 (Curse of Agade)",
+      "line_ref": "48",
+      "transliteration": "me-luh-ha{ki} lu2 kur ge6-ga-ke4",
+      "token_type": "ethnonym_in_literary_trade_context",
+      "meluhha_relation": "direct Meluhha ethnonym/toponym in literary import context",
+      "period": "Old Babylonian (ca. 1900-1600 BC)",
+      "provenience": "",
+      "genre": "Literary",
+      "source_url": "https://cdli.earth/P469679"
+    },
+    {
+      "class": "ethnonym_title_origin",
+      "directness": "direct",
+      "source_system": "CDLI",
+      "source_id": "P516138 / CUSAS 40, 1354",
+      "line_ref": "5",
+      "transliteration": "i3-ba lu2 me-luh-ha{ki}-me",
+      "token_type": "ethnonym_group_or_title",
+      "meluhha_relation": "direct Meluhha-tagged expression in administrative oil-ration text",
+      "period": "Ur III (ca. 2100-2000 BC)",
+      "provenience": "Irisagrig (mod. uncertain)",
+      "genre": "Administrative",
+      "source_url": "https://cdli.earth/P516138"
+    }
+  ]
+}

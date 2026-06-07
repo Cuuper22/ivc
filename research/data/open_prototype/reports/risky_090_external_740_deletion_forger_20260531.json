@@ -1,0 +1,20 @@
+{
+  "run_date": "2026-05-31T15:07:00-07:00",
+  "phase": "EXPAND",
+  "bet_id": "V1_V2_090_EXTERNAL_740_DELETION_20260531",
+  "vector": "V1 external-contact discriminator + V2 slot grammar",
+  "confidence_tier": "candidate",
+  "risky_bet": "External circular `090` rows preserve the local pre-740 register marker but drop the normal `740` continuation. This predicts a western abbreviated/copying register, not a new phonetic value.",
+  "observed": {
+    "local_090_rows": 141,
+    "local_090_with_740": 100,
+    "local_090_with_740_share": 0.7092198581560284,
+    "external_circular_090_rows": 7,
+    "external_circular_090_with_740": 0,
+    "external_circular_090_with_740_share": 0
+  },
+  "fisher_local_090_has_740_vs_external_has_740_p": 0.00027554534663316654,
+  "adversarial_test": "Canonical exact-text collapse; compare local 090 rows against external circular 090 rows; one-sided Fisher asks whether local 090 retains 740 far more than the external circular 090 branch.",
+  "falsifier": "Source-validated external circular 090 rows containing 740 at local-like rates kill the deletion model. Local source collapse that removes the 090-740 association also kills it.",
+  "next_prediction": "New source-bound external circular 090 rows should usually lack 740, while local non-external 090 rows should often keep 740 immediately or soon after 090."
+}

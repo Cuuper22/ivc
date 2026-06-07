@@ -1,0 +1,72 @@
+{
+  "date": "2026-05-29",
+  "packet_id": "m70_order_window_pilot_v1",
+  "status": "scored_reviews_present_not_acceptance_by_itself",
+  "key_path": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\effective_unicity_m70_blind_token_box_answer_key.csv",
+  "review_paths": [
+    "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\effective_unicity_m70_blind_reviews\\avicenna_review.csv",
+    "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\effective_unicity_m70_blind_reviews\\ohm_review.csv"
+  ],
+  "reviewer_count": 2,
+  "reviewer_summaries": [
+    {
+      "reviewer": "avicenna_review",
+      "review_path": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\effective_unicity_m70_blind_reviews\\avicenna_review.csv",
+      "rows_expected": 15,
+      "rows_reviewed": 15,
+      "target_yes": 2,
+      "target_no": 0,
+      "target_uncertain": 0,
+      "positive_calibrator_yes": 2,
+      "positive_calibrator_no": 0,
+      "positive_calibrator_uncertain": 1,
+      "scoring_negative_yes": 5,
+      "scoring_negative_no": 2,
+      "scoring_negative_uncertain": 2,
+      "quarantine_yes": 1,
+      "quarantine_no": 0,
+      "quarantine_uncertain": 0,
+      "missing": 0,
+      "target_recovery_rate": 1,
+      "target_strict_recovery_rate": 1,
+      "positive_calibrator_strict_recovery_rate": 0.6666666666666666,
+      "scoring_negative_yes_only_false_positive_rate": 0.7142857142857143,
+      "scoring_negative_conservative_false_positive_or_uncertain_rate": 0.7777777777777778
+    },
+    {
+      "reviewer": "ohm_review",
+      "review_path": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\effective_unicity_m70_blind_reviews\\ohm_review.csv",
+      "rows_expected": 15,
+      "rows_reviewed": 15,
+      "target_yes": 1,
+      "target_no": 0,
+      "target_uncertain": 1,
+      "positive_calibrator_yes": 1,
+      "positive_calibrator_no": 0,
+      "positive_calibrator_uncertain": 2,
+      "scoring_negative_yes": 5,
+      "scoring_negative_no": 4,
+      "scoring_negative_uncertain": 0,
+      "quarantine_yes": 0,
+      "quarantine_no": 1,
+      "quarantine_uncertain": 0,
+      "missing": 0,
+      "target_recovery_rate": 1,
+      "target_strict_recovery_rate": 0.5,
+      "positive_calibrator_strict_recovery_rate": 0.3333333333333333,
+      "scoring_negative_yes_only_false_positive_rate": 0.5555555555555556,
+      "scoring_negative_conservative_false_positive_or_uncertain_rate": 0.5555555555555556
+    }
+  ],
+  "min_target_recovery_rate": 1,
+  "min_target_strict_recovery_rate": 0.5,
+  "max_scoring_negative_yes_only_false_positive_rate": 0.7142857142857143,
+  "max_scoring_negative_conservative_false_positive_or_uncertain_rate": 0.7777777777777778,
+  "promotion_gate_decision": "failed_packet_gate_no_promotion",
+  "promotion_gate_failed_reasons": [
+    "not_all_targets_strictly_recovered",
+    "scoring_negatives_produced_hard_target_like_hits"
+  ],
+  "accepted_claims_increment": 0,
+  "interpretation_boundary": "Scoring this packet can only measure target recovery and false-positive behavior for the M-70 order-window gate. It cannot assign signs, sounds, meanings, language, translation, or accepted structural status."
+}

@@ -1,0 +1,22 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "530_one_complement_stress",
+  "rows": {
+    "raw": 5679,
+    "canonical_numeric_sequences": 3503,
+    "governed_002_h_x_frames": 272,
+    "target_002_h_530_frames": 4,
+    "target_global_occurrences": 18
+  },
+  "target": {
+    "frames": "4",
+    "heads": "296:1;299:1;390:1;705:1",
+    "sites": "Chanhu-daro:1;Dholavira:1;Harappa:1;Mohenjo-daro:1",
+    "one_complement_share": "1.000000",
+    "count_matched_rank": "1",
+    "global_continuing_share": 0.7222222222222222,
+    "global_one_complement_share": 0.5
+  },
+  "decisions": "V2_530_PORTABLE_ONE_COMPLEMENT_BRANCH_20260531:candidate_portable_one_complement_branch;V4_530_GLOBAL_CHAIN_SIGN_20260531:global_open_damaged",
+  "key_result": "`530` is clean as a governed one-complement branch in `002-H-530-Y`, but not clean as a global sign value."
+}

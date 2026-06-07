@@ -1,0 +1,1191 @@
+{
+  "run_date_time": "2026-05-31T13:42:01-07:00",
+  "phase": "CONSOLIDATE",
+  "minimal_model": {
+    "name": "carrier-conditioned role grammar with context-selected boundary/classifier signs",
+    "core": "Rows are best modeled first as carrier/register-conditioned administrative strings. Initial/header signs carry carrier information; the global partial-order backbone splits after length/carrier stress into hard-core edges, scoped edges, and soft peripheral edges. Some signs, especially 806, are not single-context labels but role signs whose use is selected by carrier/icon contexts.",
+    "strongest_path": "hard core: 740 -> 002, 002 -> {861,820}, 806 -> 002; scoped: tablet/account 400 -> 740; soft periphery: 817 terminal-partner edges and 740 -> 820 in thin tablet slices; rectangular/copper: 407 feeds the 806 boundary zone; square-seal icon layer: Bull1:W selects 405 or boundary-role 806 at candidate level.",
+    "not_in_model": "No accepted phonetic readings, no language-family ID, no fluent translations, no 861/820/817 semantic split, no 740/407 Brahmi ra value, no U17649 personal-name bridge."
+  },
+  "decisions": [
+    {
+      "id": "minimal_role_backbone",
+      "tier": "promoted candidate",
+      "action": "promote_as_current_core_model",
+      "rank": 1,
+      "claim": "The strongest current model is a split partial-order role grammar: hard-core edges 740->002, 002->{861,820}, and 806->002; carrier-scoped tablet/account edge 400->740; softer 817 terminal-partner edges; 407 as rect/copper entry into the 806 boundary zone.",
+      "basis": "Partial-order grammar: Usable constraints=9; passed=9; satisfied rows=1090/1126 (0.9680284191829485). Row-internal shuffle FPRs: passed-constraints=0, satisfied-share=0. Failed usable constraints: none.; cross-site destructive check: 8/8 train/test experiments survive strict gate. No learned constraint conflicts with the current core in any experiment. Weak/mixed experiments: none.; family-collapse destructive check: Carrier-family collapse: 9/9 constraints survive; weak=none; too-few=none. Broad-family collapse: 8/9 survive; weak=400_before_740; too-few=none.; length-strata destructive check: Length buckets: short_1_3:9/9,72/74,fpr=0; medium_4_6:9/9,695/712,fpr=0; long_7_9:7/9,271/284,fpr=0; very_long_10_plus:9/9,52/56,fpr=0. Carrier buckets: carrier_tablet_account:8/9,183/188,fpr=0; carrier_rect_copper:9/9,125/126,fpr=0; carrier_square_seal:8/9,691/715,fpr=0; carrier_round_seal:1/1,1/1,fpr=null; carrier_other:8/9,90/96,fpr=0. Weak/mixed slices: long_7_9:400_before_740:7/9;740_before_817:11/14; carrier_tablet_account:740_before_820:4/6; carrier_square_seal:400_before_740:9/18; carrier_other:400_before_740:11/14; medium_4_6_tablet_account:002_before_817:6/8; medium_4_6_square_seal:400_before_740:6/14; long_7_9_square_seal:740_before_817:9/12.; header MI=Canonical rows=3503; I(first sign; carrier class)=0.602323732569153 bits. Row-internal shuffle FPR=0; carrier-label shuffle FPR=0. Carrier classes: square_seal_SEALS:1545;tablet_account_TAB_BI:765;rect_copper_SEALR_TABC:444;pottery_graffiti_POT:328;other:257;tag:127;round_cylinder_seal:37. Top contributors: 400->tablet_account_TAB_BI:178 obs, lift=1.694 bits, contribution=0.0861; 740->square_seal_SEALS:510 obs, lift=0.357 bits, contribution=0.0519; 520->square_seal_SEALS:130 obs, lift=0.720 bits, contribution=0.0267; 407->rect_copper_SEALR_TABC:34 obs, lift=2.608 bits, contribution=0.0253; 700->tablet_account_TAB_BI:33 obs, lift=1.918 bits, contribution=0.0181; 000->pottery_graffiti_POT:70 obs, lift=0.874 bits, contribution=0.0175; 000->tag:39 obs, lift=1.399 bits, contribution=0.0156; 151->square_seal_SEALS:51 obs, lift=0.853 bits, contribution=0.0124; 390->square_seal_SEALS:62 obs, lift=0.535 bits, contribution=0.0095; 154->rect_copper_SEALR_TABC:16 obs, lift=2.026 bits, contribution=0.0093.; 400 tablet=All canonical: 187/765 TAB:B/I rows vs 100/2738 background, rank 1/714, Bonferroni=3.631762848429207e-59, maxstat=0. Complete-only Bonferroni=3.5996584251285636e-45; non-poor Bonferroni=2.424118977748434e-35; without Harappa Bonferroni=0.0010005465276657977; without Mohenjo-daro Bonferroni=8.531697568669414e-50. Inside TAB:B/I rows, 400 is initial in 178/190, rank 1/306, Bonferroni=8.44070657051313e-85, maxstat=0. Support by type: TAB:B:122;TAB:I:65;SEAL:S:56;SEAL:R:15;POT:T:g:11;ROD:8;SEAL:C:2;TAG:2;SEAL:2;MISC:1;POT:T:s:1;SEAL:CY:1;MDLN:1. Support by material: Steatite:120;Faience:69;NA:53;Clay:35;Ivory:8;Terracotta:2. Support by shape: rectangular:98;square:59;NA:31;prism:20;cylindrical:19;circular:16;cuboid:7;cuboid-convex:6;rectangular-round:5;oval:4;notched oval:4;semi-circular:2;isosceles trapezoid:2;heart:2;twisted rectangular-rounded:2;twisted rectangular:2;unusual:1;twisted cuboid:1;triangular:1;hexagonal:1;plano-convex:1;crescent:1;hare:1;conical:1. Support by site: Harappa:189;Mohenjo-daro:73;Kalibangan:7;Dholavira:5;Nausharo:3;Chanhu-daro:2;Ganweriwala:2;Rakhigarhi:1;Rajanpur:1;Lothal:1;Nindowari-damb:1;Rupar:1;Unknown:1.; 400-before-740=All canonical co-occurrence rows=140; 400 before 740=127, 740 before 400=13, binomial=5.72448125114425e-25, all-pair rank=16/195, row-shuffle maxstat=0. Account/rectangular universe: 107/108; tablet-account only: 104/105. Controls passing strict directional test=5/6.; 740 hub=All canonical: 740 rank 1/13 among precedence hubs with 26 qualified outgoing edges and 2681 total edge rows. Row-internal shuffle maxstat FPR=0. Controls passing=3/4. Top target edges: 740->002:332/333,p=1.9087889434414012e-98;740->240:147/151,p=7.491876535969406e-39;740->220:143/147,p=1.0762804016783286e-37;740->235:112/112,p=1.9259299443872444e-34;740->032:137/147,p=5.7343719733273904e-30;740->176:96/96,p=1.2621774483536262e-29;740->000:212/254,p=8.487342257368877e-29;740->760:97/98,p=3.1238891846752085e-28;740->060:100/102,p=1.0361687990078004e-27;740->861:89/89,p=1.6155871338926397e-27;740->741:91/92,p=1.878120043150177e-26;740->100:91/92,p=1.878120043150177e-26.; 002 bridge=All canonical: 002 bridge rank 1/48; in_edges=17, out_edges=3, bridge_edges=3. Immediate next terminal partners=361/725, Fisher=0. Bridge maxstat FPR=0; terminal-next FPR=0; controls passing=4/4. Incoming: 740->002:332/333;240->002:80/80;520->002:66/69;220->002:90/102;235->002:56/57;233->002:53/54;032->002:84/98;760->002:38/38;033->002:49/55;100->002:30/30. Outgoing: 002->861:149/154;002->817:124/129;002->820:96/100.; 407/806 split=In 444 canonical SEAL:R/TAB:C rows, 407 has 34/55 initial occurrences and 0/55 boundary-next occurrences; 806 has 3/51 initial occurrences and 29/51 boundary-next occurrences. Direct 407-vs-806 initial Fisher=3.7369995725383713e-10; direct 806-vs-407 boundary Fisher=1.7478476262987026e-12; composite score=21.18497338276392. Ordered-pair rank=13/2256; frequency-matched rank=2/240. Co-occurrence rows=5; 407 precedes 806 in 4/5, 806 precedes 407 in 1/5..",
+      "weakness": "No sound values, language ID, or translation; 400->002 direct edge and 407->806 direct edge are weak when isolated, so the model is backbone-level, not a complete grammar. Slice stress: without both Harappa and Mohenjo-daro 9/9 constraints pass with 184/194 rows satisfied. 400_before_740 is carrier-scoped, not universal: tablet/account 104/105, square Bull1:W 0/2, other square 9/16. Family collapse confirms this: Carrier-family collapse: 9/9 constraints survive; weak=none; too-few=none. Broad-family collapse: 8/9 survive; weak=400_before_740; too-few=none.. Length stress further demotes peripheral edges: Length buckets: short_1_3:9/9,72/74,fpr=0; medium_4_6:9/9,695/712,fpr=0; long_7_9:7/9,271/284,fpr=0; very_long_10_plus:9/9,52/56,fpr=0. Carrier buckets: carrier_tablet_account:8/9,183/188,fpr=0; carrier_rect_copper:9/9,125/126,fpr=0; carrier_square_seal:8/9,691/715,fpr=0; carrier_round_seal:1/1,1/1,fpr=null; carrier_other:8/9,90/96,fpr=0. Weak/mixed slices: long_7_9:400_before_740:7/9;740_before_817:11/14; carrier_tablet_account:740_before_820:4/6; carrier_square_seal:400_before_740:9/18; carrier_other:400_before_740:11/14; medium_4_6_tablet_account:002_before_817:6/8; medium_4_6_square_seal:400_before_740:6/14; long_7_9_square_seal:740_before_817:9/12.. Hard-core edges now mean no bad length/carrier slices, not just high global row share.",
+      "next_test": "In next EXPAND, predict held-out row order using hard-core edges first. Treat 400->740 only inside tablet/account contexts and use 817 edges only as soft predictions.",
+      "source": "risky_role_partial_order_grammar_20260531.json"
+    },
+    {
+      "id": "806_boundary_context_merge",
+      "tier": "promoted candidate",
+      "action": "merge_not_split",
+      "rank": 2,
+      "claim": "806 should be treated as a boundary/pivot role sign whose distribution is carrier/icon conditioned, not as contradictory separate discoveries.",
+      "basis": "rect/copper 806 boundary share=0.5294117647058824 (27/51); Bull1:W square 806 boundary share=0.55 (11/20); other square 806 boundary share=0.75 (3/4).",
+      "weakness": "Bull1:W enrichment of 806 is only candidate-level because leave-Harappa weakens the icon-specific claim.",
+      "next_test": "Test new 806 rows by predicting boundary position first, then carrier/icon enrichment second. A run of non-boundary 806 in Bull1:W rows breaks the merge.",
+      "source": "metadata_filtered.csv + risky_405806_bull1w_icon_subtype_forger_20260531.json"
+    },
+    {
+      "id": "405806_bull1w_subtype",
+      "tier": "candidate",
+      "action": "keep_but_demote_below_backbone",
+      "rank": 3,
+      "claim": "405/806 are a Bull1:W square-seal subtype-marker family, with 806 also participating in the backbone boundary role.",
+      "basis": "SEAL:S either 405/806: 35/374 vs 9/1171, p=6.020420199833131e-15, pair-rank=1/151525, target-label FPR=0. SEAL:S 405 alone: 19/374 vs 5/1171, rank=2/551, Bonferroni=0.000009303755079419767, maxstat=0. SEAL:S 806 alone: 20/374 vs 4/1171, rank=1/551, Bonferroni=6.941543638299855e-7, maxstat=0. Controls: square either p=7.228146492803221e-13, FPR=0; complete p=0.00007007039121420008, FPR=0; non-poor p=0.0003049036093433969, FPR=0.0002; without Mohenjo p=0.00000280502271942147, FPR=0; without Harappa p=0.026013649969892624, FPR=0.0244.",
+      "weakness": "Overall hostile FPR is 0.025 because leave-Harappa weakens; this is probably Harappa-weighted or regional unless new non-Harappa rows strengthen it.",
+      "next_test": "Next EXPAND should test whether Bull1:W rows with 405/806 have a consistent sub-icon/cult/neighbor profile, and should make a held-out prediction for non-Harappa Bull1:W rows.",
+      "source": "risky_405806_bull1w_icon_subtype_forger_20260531.json"
+    },
+    {
+      "id": "741_bull1_jl_subtype",
+      "tier": "candidate",
+      "action": "demote_from_clean_subtype_to_broad_bull_motif",
+      "rank": 4,
+      "claim": "741 remains a bull-icon motif candidate with J/L enrichment, but not a clean Bull1:J/L subtype marker.",
+      "basis": "Bull1:J/L all: 40/232 vs 158/3271, rank 1/714, Bonferroni=2.933653680332997e-8, maxstat=0. Complete fisher=1.5977678163205364e-7; non-poor fisher=0.000020389883525211686; without Mohenjo fisher=0.000004239893976276617; without Harappa fisher=5.825736954411613e-8. Same-type SEAL:S fisher=0.00012867791452414074, Bonferroni=0.07090153090280155. Bull1-variants-only fisher=0.00018448504419707663, Bonferroni=0.09132009687755294. Sub-motif 741-060-920 rows=36; Bull1:J/L rows=8/36.",
+      "weakness": "Direct icon discriminator demotes clean subtype reading: W 741=25/374; J/L 741=40/229; other Bull1 741=52/517. It also competes with broad square-seal/740 opener structure and is less central to the role backbone.",
+      "next_test": "Next EXPAND should test whether 741 predicts a neighbor motif or terminal path, not just a Bull1 variant label.",
+      "source": "risky_741_bull1_jl_icon_subtype_forger_20260531.json"
+    },
+    {
+      "id": "external_commodity_register_bridge",
+      "tier": "candidate",
+      "action": "keep_as_v1_direction",
+      "rank": 5,
+      "claim": "The external Meluhha direction currently favors commodity/register bridges over object-level personal-name readings.",
+      "basis": "Cuneiform unique rows=16. Class counts: commodity_route_object:10;ethnonym_title_origin:3;onomastic:3. Direct class counts: commodity_route_object:10;ethnonym_title_origin:3;onomastic:2. Direct commodity/register=10; direct onomastic=2. Indus side: 407 register tier=promoted candidate; 740/407 opener tier=promoted candidate; 407/806 slot split tier=promoted candidate. Indus side broad register: All canonical: 53/444 register rows vs 17/3059 background, rank 1/714, Bonferroni=1.2618252646220003e-31, maxstat=0. Complete-only: 40/297 vs 11/1887, Bonferroni=1.6000455728148496e-23. Non-poor-only: 31/270 vs 8/1463, Bonferroni=2.3490968704479956e-16. Without Mohenjo-daro: 14/159 vs 11/1812, Bonferroni=3.1639957675202756e-7. Without Harappa: 46/363 vs 7/1958, Bonferroni=2.356342611257845e-28. Support by type: SEAL:R:35;TAB:C:18;SEAL:S:10;TAB:B:3;POT:T:g:2;MISC:1;SEAL:C:1. Support by site: Mohenjo-daro:45;Harappa:17;Dholavira:3;Lothal:2;Desalpur:1;Susa:1;Nausharo:1.. Indus side copper subtype: Copper: 18/119 vs 52/3384, rank 1/714, Bonferroni=3.786700743410161e-9, maxstat=0. TAB:C: 18/94 vs 52/3409, rank 1/714, Bonferroni=5.310069742000693e-11, maxstat=0. Copper+TAB:C intersection: 18/93 vs 52/3410, p=6.100701875466996e-14. Within Mohenjo-daro only: 18/92 vs 27/1440, Bonferroni=4.968457549985734e-9, maxstat=0. Complete-only: 16/67 vs 35/2117, Bonferroni=1.9987994754088168e-10, maxstat=0. Non-poor-only stress: 6/36 vs 33/1697, Fisher=0.00010370520238690053, Bonferroni=0.06274164744407482; within-Mohenjo non-poor Fisher=0.00015127407227842745. Cuneiform side live CDLI: uruda me-luh-ha=2 artifacts (P136689|P228742); ma-na uruda me-luh-ha=1 artifact (P136689). Local CDLI negative gate for uruda me-luh-ha reports query-line false-positive 0.000000.",
+      "weakness": "No object-level bilingual, no sign sound, and CDLI/primary source binding remains decisive.",
+      "next_test": "Next EXPAND should formulate one exact commodity-register prediction from cuneiform side and test it against Indus register signs before any new source-chase.",
+      "source": "risky_external_register_bridge_prior_20260531.json + risky_407_uruda_meluhha_diffuse_bridge_20260531.json"
+    },
+    {
+      "id": "external_090091_route_split",
+      "tier": "candidate",
+      "action": "keep_separate_from_core_role_backbone",
+      "rank": 6,
+      "claim": "090/091 form a mutually exclusive external circular-seal route/register pair candidate.",
+      "basis": "External circular rows=17; 090=7; 091=5; either=12; both=0. External non-circular either=0/24. Corridor circular either=12/17; other circular either=8/128.",
+      "weakness": "Small N, site clustering, and source validation prevent promotion; it should not be blended into the 400/740/002 internal role grammar yet.",
+      "next_test": "Next EXPAND should predict which new Gulf/Mesopotamian circular rows take 090 versus 091 before checking source rows.",
+      "source": "risky_external_090091_circular_route_split_20260531.json"
+    },
+    {
+      "id": "002390_branch_class",
+      "tier": "candidate",
+      "action": "keep_as_subgrammar",
+      "rank": 7,
+      "claim": "002-390-X is a branch-class slot with open continuation versus closed terminal branches.",
+      "basis": "15/15 rows fit; non-frame-pool-complete subset 14/14; exact-text collapse 15/15; family-cell collapse 15/15; branch collapse 10/10; repeated-branch rows 8/8; strict-source-visible slice 4/4; route-pressure-or-strict slice 9/9.",
+      "weakness": "Several support rows are metadata-only or route-pressure, and branch 707 lacks a non-frame pool.",
+      "next_test": "Next EXPAND should use new 002-390-X rows as prediction tests: 125/530/590 should continue; 072/095/140/346/692/705/707 should close.",
+      "source": "risky_slot_branch_class_002390_20260531.json"
+    },
+    {
+      "id": "520_elephant_header",
+      "tier": "wild shot",
+      "action": "kill_as_candidate_keep_as_prediction_only",
+      "rank": 8,
+      "claim": "520 as elephant-icon header is not a live semantic candidate after consolidation.",
+      "basis": "All elephant any-520: 10/46 vs 214/3457, rank=1/714, Bonferroni=0.35301672004371715, maxstat=0.05366666666666667, target-FPR=0.0003333333333333333. SEAL:S any-520: 9/39 vs 142/1506, p=0.010416253972437355, target-FPR=0.007333333333333333. Mohenjo any-520: 8/29 vs 116/1503, p=0.001477750897189305, target-FPR=0.0013333333333333333. Without Mohenjo any-520: 2/17 vs 98/1954, p=0.21210817089774778, target-FPR=0.214. Initial-520 all: 7/46 vs 172/3457, p=0.007962916789978323, target-FPR=0.008666666666666666; SEAL:S initial p=0.10306106228755958.",
+      "weakness": "Same-type/square all-sign maxstats are bad and leave-Mohenjo FPR is 0.214.",
+      "next_test": "Only revive if a held-out non-Mohenjo complete elephant square seal carries 520, preferably initially.",
+      "source": "risky_520_elephant_icon_header_forger_20260531.json"
+    },
+    {
+      "id": "terminal_861_820_817_allomorphs",
+      "tier": "wild shot killed",
+      "action": "kill",
+      "rank": 9,
+      "claim": "861/820/817 after 002 do not currently encode separable context semantics.",
+      "basis": "Terminal rows=361; partner counts=861:146;820:91;817:124. Best feature=817/prev:503 with 5/124 vs 1/237, Fisher=0.019613291832013206, Bonferroni=1. Best MI feature=prev, MI=0.4819294347115892 bits. Feature max-stat FPR=0.8768; MI max-stat FPR=0.4158.",
+      "weakness": "Feature maxstat FPR is high; best apparent feature is a coincidence under null.",
+      "next_test": "Do not spend next EXPAND on terminal semantic labels unless a new, independent predictor is formulated first.",
+      "source": "risky_002_terminal_allomorph_context_split_20260531.json"
+    },
+    {
+      "id": "740407_brahmi_ra_bridge",
+      "tier": "wild shot killed",
+      "action": "kill_as_phonetic_anchor",
+      "rank": 10,
+      "claim": "740/407 should not be assigned ra-like Brahmi values.",
+      "basis": "Ra-like pressure appears for 2/2 opener signs. Best rows: 740/visual_ltr_catalog_order:modal=ra,v3=ra,shape_null=0.141538,label_null=0.074000,impostor=0.000000; 407/visual_ltr_catalog_reverse:modal=ra,v3=ra,shape_null=0.221538,label_null=0.010000,impostor=0.483000. Anchor-gate passes=0/2. Shared bridge verdict=killed_for_phonetic_anchor.",
+      "weakness": "Brahmi bridge failed preflight/null gates; structural opener status is not a phonetic value.",
+      "next_test": "Next Brahmi expansion must start with shape-evolution predictions that are independent of already-known role signs.",
+      "source": "risky_740407_brahmi_ra_opener_bridge_probe_20260531.json"
+    },
+    {
+      "id": "125_portable_governed_template",
+      "tier": "wild shot killed",
+      "action": "kill_as_candidate",
+      "rank": 11,
+      "claim": "125 as a portable governed suffix/title element is not a live candidate.",
+      "basis": "Canonical collapse rows=3503; governed 002 occurrences=699; target template-cell count=19. Target repeated template families=3, cross-site repeated=2, cross-site non-copy repeated=2. Best cross-site target templates: 297-350-125-413:2;610-125-032-<END>:2.",
+      "weakness": "Forger false-positive rates near 1 mean frequency-matched signs routinely imitate the pattern.",
+      "next_test": "Only revive 125 through a new constrained prediction inside the already surviving 002-390 branch class.",
+      "source": "risky_125_governed_crosssite_template_forger_20260531.json"
+    }
+  ],
+  "contradiction_tests": [
+    {
+      "id": "806_polyfunction_stress",
+      "question": "Does Bull1:W use of 806 contradict the existing rectangular/copper closure-pivot role?",
+      "result": "not_contradiction_under_boundary_pivot_model",
+      "evidence": "rect/copper 806 boundary share=0.5294117647058824 (27/51); Bull1:W square 806 boundary share=0.55 (11/20); other square 806 boundary share=0.75 (3/4).",
+      "decision": "Merge as one syntactic boundary/pivot sign selected by multiple carrier/icon contexts; do not split into two phonetic values."
+    },
+    {
+      "id": "405_vs_806_role_split",
+      "question": "Do 405 and 806 form one sign-pair formula in Bull1:W rows?",
+      "result": "no_strict_pair_formula",
+      "evidence": "405/806 either on Bull1:W SEAL:S is strong (35/374), but both signs co-occur in only 4 Bull1:W rows.",
+      "decision": "Keep as alternative subtype-marker family, not a fixed 405-806 formula."
+    },
+    {
+      "id": "741_clean_jl_subtype_stress",
+      "question": "Does 741 behave as a clean Bull1:J/L subtype marker when tested against the stronger 405/806 Bull1:W family?",
+      "result": "clean_jl_subtype_killed_broad_bull_motif_survives",
+      "evidence": "Bull1 variant matrix: W rows=374, 405/806=35, 741=25; J/L rows=229, 405/806=2, 741=40; other Bull1 rows=517, 405/806=4, 741=52.",
+      "decision": "Demote 741 from clean J/L subtype marker to broad Bull1 motif candidate with J/L pressure."
+    },
+    {
+      "id": "terminal_partner_semantics",
+      "question": "Can 861/820/817 after 002 be read as context-separated terminal meanings?",
+      "result": "killed",
+      "evidence": "Terminal rows=361; partner counts=861:146;820:91;817:124. Best feature=817/prev:503 with 5/124 vs 1/237, Fisher=0.019613291832013206, Bonferroni=1. Best MI feature=prev, MI=0.4819294347115892 bits. Feature max-stat FPR=0.8768; MI max-stat FPR=0.4158.",
+      "decision": "Keep only as terminal partner set after 002; do not assign semantic allomorphs."
+    },
+    {
+      "id": "external_bridge_direction",
+      "question": "Should V1 chase object-level personal names or commodity/register bridges next?",
+      "result": "commodity_register_bridge_wins_current_consolidation",
+      "evidence": "Cuneiform unique rows=16. Class counts: commodity_route_object:10;ethnonym_title_origin:3;onomastic:3. Direct class counts: commodity_route_object:10;ethnonym_title_origin:3;onomastic:2. Direct commodity/register=10; direct onomastic=2. Indus side: 407 register tier=promoted candidate; 740/407 opener tier=promoted candidate; 407/806 slot split tier=promoted candidate.; rejected U17649 onomastic attempt is already killed by high site-shuffle false-positive rate.",
+      "decision": "Next external tests should attack commodity/register predictions, not resurrect U17649-style personal-name readings."
+    }
+  ],
+  "position_profiles": {
+    "405": {
+      "square_bull1w_icon": {
+        "total": 19,
+        "roles": {
+          "initial": 9,
+          "internal": 10
+        },
+        "boundary_or_final_share": 0,
+        "internal_share": 0.5263157894736842,
+        "initial_share": 0.47368421052631576
+      },
+      "other": {
+        "total": 14,
+        "roles": {
+          "initial": 8,
+          "boundary": 2,
+          "internal": 4
+        },
+        "boundary_or_final_share": 0.14285714285714285,
+        "internal_share": 0.2857142857142857,
+        "initial_share": 0.5714285714285714
+      },
+      "rect_copper_register": {
+        "total": 27,
+        "roles": {
+          "initial": 16,
+          "internal": 11
+        },
+        "boundary_or_final_share": 0,
+        "internal_share": 0.4074074074074074,
+        "initial_share": 0.5925925925925926
+      },
+      "tablet_account": {
+        "total": 6,
+        "roles": {
+          "initial": 3,
+          "internal": 3
+        },
+        "boundary_or_final_share": 0,
+        "internal_share": 0.5,
+        "initial_share": 0.5
+      },
+      "square_other_icon": {
+        "total": 5,
+        "roles": {
+          "internal": 3,
+          "initial": 1,
+          "boundary": 1
+        },
+        "boundary_or_final_share": 0.2,
+        "internal_share": 0.6,
+        "initial_share": 0.2
+      },
+      "external_round_or_cylinder": {
+        "total": 2,
+        "roles": {
+          "internal": 1,
+          "initial": 1
+        },
+        "boundary_or_final_share": 0,
+        "internal_share": 0.5,
+        "initial_share": 0.5
+      }
+    },
+    "520": {
+      "square_other_icon": {
+        "total": 112,
+        "roles": {
+          "initial": 96,
+          "internal": 15,
+          "boundary": 1
+        },
+        "boundary_or_final_share": 0.008928571428571428,
+        "internal_share": 0.13392857142857142,
+        "initial_share": 0.8571428571428571
+      },
+      "other": {
+        "total": 24,
+        "roles": {
+          "initial": 19,
+          "internal": 3,
+          "boundary": 2
+        },
+        "boundary_or_final_share": 0.08333333333333333,
+        "internal_share": 0.125,
+        "initial_share": 0.7916666666666666
+      },
+      "rect_copper_register": {
+        "total": 22,
+        "roles": {
+          "initial": 13,
+          "internal": 9
+        },
+        "boundary_or_final_share": 0,
+        "internal_share": 0.4090909090909091,
+        "initial_share": 0.5909090909090909
+      },
+      "tablet_account": {
+        "total": 27,
+        "roles": {
+          "initial": 17,
+          "internal": 8,
+          "boundary": 2
+        },
+        "boundary_or_final_share": 0.07407407407407407,
+        "internal_share": 0.2962962962962963,
+        "initial_share": 0.6296296296296297
+      },
+      "square_bull1w_icon": {
+        "total": 40,
+        "roles": {
+          "boundary": 1,
+          "initial": 34,
+          "internal": 5
+        },
+        "boundary_or_final_share": 0.025,
+        "internal_share": 0.125,
+        "initial_share": 0.85
+      }
+    },
+    "741": {
+      "square_other_icon": {
+        "total": 132,
+        "roles": {
+          "internal": 119,
+          "boundary": 10,
+          "initial": 3
+        },
+        "boundary_or_final_share": 0.07575757575757576,
+        "internal_share": 0.9015151515151515,
+        "initial_share": 0.022727272727272728
+      },
+      "other": {
+        "total": 16,
+        "roles": {
+          "internal": 11,
+          "boundary": 2,
+          "initial": 3
+        },
+        "boundary_or_final_share": 0.125,
+        "internal_share": 0.6875,
+        "initial_share": 0.1875
+      },
+      "tablet_account": {
+        "total": 24,
+        "roles": {
+          "internal": 17,
+          "boundary": 7
+        },
+        "boundary_or_final_share": 0.2916666666666667,
+        "internal_share": 0.7083333333333334,
+        "initial_share": 0
+      },
+      "square_bull1w_icon": {
+        "total": 25,
+        "roles": {
+          "internal": 22,
+          "initial": 1,
+          "boundary": 2
+        },
+        "boundary_or_final_share": 0.08,
+        "internal_share": 0.88,
+        "initial_share": 0.04
+      },
+      "external_round_or_cylinder": {
+        "total": 2,
+        "roles": {
+          "internal": 1,
+          "boundary": 1
+        },
+        "boundary_or_final_share": 0.5,
+        "internal_share": 0.5,
+        "initial_share": 0
+      },
+      "rect_copper_register": {
+        "total": 1,
+        "roles": {
+          "internal": 1
+        },
+        "boundary_or_final_share": 0,
+        "internal_share": 1,
+        "initial_share": 0
+      }
+    },
+    "806": {
+      "rect_copper_register": {
+        "total": 51,
+        "roles": {
+          "boundary": 27,
+          "internal": 21,
+          "initial": 3
+        },
+        "boundary_or_final_share": 0.5294117647058824,
+        "internal_share": 0.4117647058823529,
+        "initial_share": 0.058823529411764705
+      },
+      "tablet_account": {
+        "total": 15,
+        "roles": {
+          "boundary": 3,
+          "internal": 12
+        },
+        "boundary_or_final_share": 0.2,
+        "internal_share": 0.8,
+        "initial_share": 0
+      },
+      "other": {
+        "total": 8,
+        "roles": {
+          "internal": 4,
+          "initial": 2,
+          "boundary": 2
+        },
+        "boundary_or_final_share": 0.25,
+        "internal_share": 0.5,
+        "initial_share": 0.25
+      },
+      "square_bull1w_icon": {
+        "total": 20,
+        "roles": {
+          "internal": 9,
+          "boundary": 11
+        },
+        "boundary_or_final_share": 0.55,
+        "internal_share": 0.45,
+        "initial_share": 0
+      },
+      "square_other_icon": {
+        "total": 4,
+        "roles": {
+          "boundary": 3,
+          "internal": 1
+        },
+        "boundary_or_final_share": 0.75,
+        "internal_share": 0.25,
+        "initial_share": 0
+      },
+      "external_round_or_cylinder": {
+        "total": 1,
+        "roles": {
+          "initial": 1
+        },
+        "boundary_or_final_share": 0,
+        "internal_share": 0,
+        "initial_share": 1
+      }
+    }
+  },
+  "icon_discriminator": {
+    "W": {
+      "rows": 374,
+      "has_405_or_806": 35,
+      "has_741": 25,
+      "has_both_marker_families": 0
+    },
+    "JL": {
+      "rows": 229,
+      "has_405_or_806": 2,
+      "has_741": 40,
+      "has_both_marker_families": 1
+    },
+    "otherBull1": {
+      "rows": 517,
+      "has_405_or_806": 4,
+      "has_741": 52,
+      "has_both_marker_families": 0
+    }
+  },
+  "edge_context_scope": {
+    "400_before_740": {
+      "square_bull1w_icon": {
+        "total": 2,
+        "left_before_right": 0,
+        "right_before_left": 2,
+        "examples": [
+          "C-15:Chanhu-daro:SEAL:S:Bull1:W:+740-400-920-031+",
+          "H-1672:Harappa:SEAL:S:Bull1:W:+740-400-142-061-033+"
+        ],
+        "left_before_share": 0
+      },
+      "tablet_account": {
+        "total": 105,
+        "left_before_right": 104,
+        "right_before_left": 1,
+        "examples": [
+          "-:156.1:Ganweriwala:TAB:B:Scene:+400-740-900[",
+          "H-740:Harappa:TAB:B:NA:+400-740-100-176-000+",
+          "H-1304:Harappa:TAB:I:NA:+400-740-176+",
+          "H-882:Harappa:TAB:I:Gavi:+400-740-760-605+",
+          "H-1102:Harappa:TAB:B:NA:+400-740-382+",
+          "H-874:Harappa:TAB:B:NA:+400-740-455+",
+          "-:298.1:Harappa:TAB:I:Bult:+400-740-000-000+",
+          "H-1192:Harappa:TAB:I:NA:+400-740-767-220-416+"
+        ],
+        "left_before_share": 0.9904761904761905
+      },
+      "other": {
+        "total": 14,
+        "left_before_right": 11,
+        "right_before_left": 3,
+        "examples": [
+          "K-411:Kalibangan:POT:T:g:NA:+400-740-000[",
+          "-:338.1:Harappa:POT:T:g:NA:+740-066-090-400[",
+          "H-2334:Harappa:POT:T:g:NA:+090-740-400-000-000[",
+          "K-98:Kalibangan:POT:T:g:NA:+400-740-411-590[",
+          "M-2113:Mohenjo-daro:ROD:NA:+400-740-760-435-690+",
+          "M-2098:Mohenjo-daro:ROD:NA:+400-740-176-140+",
+          "M-1651:Mohenjo-daro:ROD:NA:+400-740-585-838-240+",
+          "M-2107:Mohenjo-daro:ROD:NA:+400-740-840-013-240+"
+        ],
+        "left_before_share": 0.7857142857142857
+      },
+      "square_other_icon": {
+        "total": 16,
+        "left_before_right": 9,
+        "right_before_left": 7,
+        "examples": [
+          "H-1056:Harappa:SEAL:S:Bull1:+400-090-740-220-003+",
+          "H-1051:Harappa:SEAL:S:Bull1:I:+400-740-575-017-920-320-798-002-861+",
+          "M-879:Mohenjo-daro:SEAL:S:Bull1:J:+740-400-142-061+",
+          "H-471:Harappa:SEAL:S:Bull1:I:+740-400-142-061-368[",
+          "K-15:Kalibangan:SEAL:S:Bull1:II:+871-947/400-740-543-350-895-785-220-335+",
+          "M-1772:Mohenjo-daro:SEAL:S:Bull1:I:+740-400-142-061-002-798-435-255-705+",
+          "M-1891:Mohenjo-daro:SEAL:S:Gaur:+400-740-017-503-240+",
+          "M-1725:Mohenjo-daro:SEAL:S:Bull1:S:+400-740-100-140-003+"
+        ],
+        "left_before_share": 0.5625
+      },
+      "rect_copper_register": {
+        "total": 3,
+        "left_before_right": 3,
+        "right_before_left": 0,
+        "examples": [
+          "K-63:Kalibangan:SEAL:R:NA:+400-740-776-495+",
+          "M-1312:Mohenjo-daro:SEAL:R:NA:+400-740-220+",
+          "M-1438:Mohenjo-daro:SEAL:R:NA:+400-740-923-226-032+"
+        ],
+        "left_before_share": 1
+      }
+    }
+  },
+  "backbone_slice_controls": [
+    {
+      "slice": "all",
+      "usable_constraints": 9,
+      "passed_constraints": 9,
+      "satisfied_rows": 1090,
+      "total_rows": 1126,
+      "satisfied_share": 0.9680284191829485,
+      "details": [
+        {
+          "id": "400_before_740",
+          "satisfied": 127,
+          "total": 140,
+          "share": 0.9071428571428571,
+          "passed": true
+        },
+        {
+          "id": "740_before_002",
+          "satisfied": 332,
+          "total": 333,
+          "share": 0.996996996996997,
+          "passed": true
+        },
+        {
+          "id": "740_before_861",
+          "satisfied": 89,
+          "total": 89,
+          "share": 1,
+          "passed": true
+        },
+        {
+          "id": "740_before_820",
+          "satisfied": 80,
+          "total": 84,
+          "share": 0.9523809523809523,
+          "passed": true
+        },
+        {
+          "id": "740_before_817",
+          "satisfied": 70,
+          "total": 74,
+          "share": 0.9459459459459459,
+          "passed": true
+        },
+        {
+          "id": "002_before_861",
+          "satisfied": 149,
+          "total": 154,
+          "share": 0.9675324675324676,
+          "passed": true
+        },
+        {
+          "id": "002_before_820",
+          "satisfied": 96,
+          "total": 100,
+          "share": 0.96,
+          "passed": true
+        },
+        {
+          "id": "002_before_817",
+          "satisfied": 124,
+          "total": 129,
+          "share": 0.9612403100775194,
+          "passed": true
+        },
+        {
+          "id": "806_before_002",
+          "satisfied": 23,
+          "total": 23,
+          "share": 1,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "slice": "complete",
+      "usable_constraints": 9,
+      "passed_constraints": 9,
+      "satisfied_rows": 897,
+      "total_rows": 921,
+      "satisfied_share": 0.9739413680781759,
+      "details": [
+        {
+          "id": "400_before_740",
+          "satisfied": 93,
+          "total": 101,
+          "share": 0.9207920792079208,
+          "passed": true
+        },
+        {
+          "id": "740_before_002",
+          "satisfied": 276,
+          "total": 277,
+          "share": 0.9963898916967509,
+          "passed": true
+        },
+        {
+          "id": "740_before_861",
+          "satisfied": 80,
+          "total": 80,
+          "share": 1,
+          "passed": true
+        },
+        {
+          "id": "740_before_820",
+          "satisfied": 73,
+          "total": 75,
+          "share": 0.9733333333333334,
+          "passed": true
+        },
+        {
+          "id": "740_before_817",
+          "satisfied": 66,
+          "total": 70,
+          "share": 0.9428571428571428,
+          "passed": true
+        },
+        {
+          "id": "002_before_861",
+          "satisfied": 120,
+          "total": 123,
+          "share": 0.975609756097561,
+          "passed": true
+        },
+        {
+          "id": "002_before_820",
+          "satisfied": 75,
+          "total": 77,
+          "share": 0.974025974025974,
+          "passed": true
+        },
+        {
+          "id": "002_before_817",
+          "satisfied": 95,
+          "total": 99,
+          "share": 0.9595959595959596,
+          "passed": true
+        },
+        {
+          "id": "806_before_002",
+          "satisfied": 19,
+          "total": 19,
+          "share": 1,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "slice": "non_poor",
+      "usable_constraints": 9,
+      "passed_constraints": 9,
+      "satisfied_rows": 691,
+      "total_rows": 710,
+      "satisfied_share": 0.9732394366197183,
+      "details": [
+        {
+          "id": "400_before_740",
+          "satisfied": 71,
+          "total": 77,
+          "share": 0.922077922077922,
+          "passed": true
+        },
+        {
+          "id": "740_before_002",
+          "satisfied": 222,
+          "total": 223,
+          "share": 0.9955156950672646,
+          "passed": true
+        },
+        {
+          "id": "740_before_861",
+          "satisfied": 63,
+          "total": 63,
+          "share": 1,
+          "passed": true
+        },
+        {
+          "id": "740_before_820",
+          "satisfied": 50,
+          "total": 51,
+          "share": 0.9803921568627451,
+          "passed": true
+        },
+        {
+          "id": "740_before_817",
+          "satisfied": 50,
+          "total": 53,
+          "share": 0.9433962264150944,
+          "passed": true
+        },
+        {
+          "id": "002_before_861",
+          "satisfied": 97,
+          "total": 99,
+          "share": 0.9797979797979798,
+          "passed": true
+        },
+        {
+          "id": "002_before_820",
+          "satisfied": 53,
+          "total": 55,
+          "share": 0.9636363636363636,
+          "passed": true
+        },
+        {
+          "id": "002_before_817",
+          "satisfied": 74,
+          "total": 78,
+          "share": 0.9487179487179487,
+          "passed": true
+        },
+        {
+          "id": "806_before_002",
+          "satisfied": 11,
+          "total": 11,
+          "share": 1,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "slice": "without_harappa",
+      "usable_constraints": 9,
+      "passed_constraints": 8,
+      "satisfied_rows": 795,
+      "total_rows": 823,
+      "satisfied_share": 0.9659781287970839,
+      "details": [
+        {
+          "id": "400_before_740",
+          "satisfied": 29,
+          "total": 37,
+          "share": 0.7837837837837838,
+          "passed": false
+        },
+        {
+          "id": "740_before_002",
+          "satisfied": 266,
+          "total": 267,
+          "share": 0.9962546816479401,
+          "passed": true
+        },
+        {
+          "id": "740_before_861",
+          "satisfied": 71,
+          "total": 71,
+          "share": 1,
+          "passed": true
+        },
+        {
+          "id": "740_before_820",
+          "satisfied": 70,
+          "total": 73,
+          "share": 0.958904109589041,
+          "passed": true
+        },
+        {
+          "id": "740_before_817",
+          "satisfied": 53,
+          "total": 57,
+          "share": 0.9298245614035088,
+          "passed": true
+        },
+        {
+          "id": "002_before_861",
+          "satisfied": 122,
+          "total": 127,
+          "share": 0.9606299212598425,
+          "passed": true
+        },
+        {
+          "id": "002_before_820",
+          "satisfied": 75,
+          "total": 78,
+          "share": 0.9615384615384616,
+          "passed": true
+        },
+        {
+          "id": "002_before_817",
+          "satisfied": 96,
+          "total": 100,
+          "share": 0.96,
+          "passed": true
+        },
+        {
+          "id": "806_before_002",
+          "satisfied": 13,
+          "total": 13,
+          "share": 1,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "slice": "without_mohenjo",
+      "usable_constraints": 9,
+      "passed_constraints": 9,
+      "satisfied_rows": 479,
+      "total_rows": 497,
+      "satisfied_share": 0.9637826961770624,
+      "details": [
+        {
+          "id": "400_before_740",
+          "satisfied": 109,
+          "total": 116,
+          "share": 0.9396551724137931,
+          "passed": true
+        },
+        {
+          "id": "740_before_002",
+          "satisfied": 126,
+          "total": 127,
+          "share": 0.9921259842519685,
+          "passed": true
+        },
+        {
+          "id": "740_before_861",
+          "satisfied": 32,
+          "total": 32,
+          "share": 1,
+          "passed": true
+        },
+        {
+          "id": "740_before_820",
+          "satisfied": 24,
+          "total": 25,
+          "share": 0.96,
+          "passed": true
+        },
+        {
+          "id": "740_before_817",
+          "satisfied": 27,
+          "total": 29,
+          "share": 0.9310344827586207,
+          "passed": true
+        },
+        {
+          "id": "002_before_861",
+          "satisfied": 60,
+          "total": 62,
+          "share": 0.967741935483871,
+          "passed": true
+        },
+        {
+          "id": "002_before_820",
+          "satisfied": 41,
+          "total": 43,
+          "share": 0.9534883720930233,
+          "passed": true
+        },
+        {
+          "id": "002_before_817",
+          "satisfied": 47,
+          "total": 50,
+          "share": 0.94,
+          "passed": true
+        },
+        {
+          "id": "806_before_002",
+          "satisfied": 13,
+          "total": 13,
+          "share": 1,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "slice": "without_harappa_and_mohenjo",
+      "usable_constraints": 9,
+      "passed_constraints": 9,
+      "satisfied_rows": 184,
+      "total_rows": 194,
+      "satisfied_share": 0.9484536082474226,
+      "details": [
+        {
+          "id": "400_before_740",
+          "satisfied": 11,
+          "total": 13,
+          "share": 0.8461538461538461,
+          "passed": true
+        },
+        {
+          "id": "740_before_002",
+          "satisfied": 60,
+          "total": 61,
+          "share": 0.9836065573770492,
+          "passed": true
+        },
+        {
+          "id": "740_before_861",
+          "satisfied": 14,
+          "total": 14,
+          "share": 1,
+          "passed": true
+        },
+        {
+          "id": "740_before_820",
+          "satisfied": 14,
+          "total": 14,
+          "share": 1,
+          "passed": true
+        },
+        {
+          "id": "740_before_817",
+          "satisfied": 10,
+          "total": 12,
+          "share": 0.8333333333333334,
+          "passed": true
+        },
+        {
+          "id": "002_before_861",
+          "satisfied": 33,
+          "total": 35,
+          "share": 0.9428571428571428,
+          "passed": true
+        },
+        {
+          "id": "002_before_820",
+          "satisfied": 20,
+          "total": 21,
+          "share": 0.9523809523809523,
+          "passed": true
+        },
+        {
+          "id": "002_before_817",
+          "satisfied": 19,
+          "total": 21,
+          "share": 0.9047619047619048,
+          "passed": true
+        },
+        {
+          "id": "806_before_002",
+          "satisfied": 3,
+          "total": 3,
+          "share": 1,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "slice": "harappa_only",
+      "usable_constraints": 9,
+      "passed_constraints": 9,
+      "satisfied_rows": 295,
+      "total_rows": 303,
+      "satisfied_share": 0.9735973597359736,
+      "details": [
+        {
+          "id": "400_before_740",
+          "satisfied": 98,
+          "total": 103,
+          "share": 0.9514563106796117,
+          "passed": true
+        },
+        {
+          "id": "740_before_002",
+          "satisfied": 66,
+          "total": 66,
+          "share": 1,
+          "passed": true
+        },
+        {
+          "id": "740_before_861",
+          "satisfied": 18,
+          "total": 18,
+          "share": 1,
+          "passed": true
+        },
+        {
+          "id": "740_before_820",
+          "satisfied": 10,
+          "total": 11,
+          "share": 0.9090909090909091,
+          "passed": true
+        },
+        {
+          "id": "740_before_817",
+          "satisfied": 17,
+          "total": 17,
+          "share": 1,
+          "passed": true
+        },
+        {
+          "id": "002_before_861",
+          "satisfied": 27,
+          "total": 27,
+          "share": 1,
+          "passed": true
+        },
+        {
+          "id": "002_before_820",
+          "satisfied": 21,
+          "total": 22,
+          "share": 0.9545454545454546,
+          "passed": true
+        },
+        {
+          "id": "002_before_817",
+          "satisfied": 28,
+          "total": 29,
+          "share": 0.9655172413793104,
+          "passed": true
+        },
+        {
+          "id": "806_before_002",
+          "satisfied": 10,
+          "total": 10,
+          "share": 1,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "slice": "mohenjo_only",
+      "usable_constraints": 9,
+      "passed_constraints": 8,
+      "satisfied_rows": 611,
+      "total_rows": 629,
+      "satisfied_share": 0.9713831478537361,
+      "details": [
+        {
+          "id": "400_before_740",
+          "satisfied": 18,
+          "total": 24,
+          "share": 0.75,
+          "passed": false
+        },
+        {
+          "id": "740_before_002",
+          "satisfied": 206,
+          "total": 206,
+          "share": 1,
+          "passed": true
+        },
+        {
+          "id": "740_before_861",
+          "satisfied": 57,
+          "total": 57,
+          "share": 1,
+          "passed": true
+        },
+        {
+          "id": "740_before_820",
+          "satisfied": 56,
+          "total": 59,
+          "share": 0.9491525423728814,
+          "passed": true
+        },
+        {
+          "id": "740_before_817",
+          "satisfied": 43,
+          "total": 45,
+          "share": 0.9555555555555556,
+          "passed": true
+        },
+        {
+          "id": "002_before_861",
+          "satisfied": 89,
+          "total": 92,
+          "share": 0.967391304347826,
+          "passed": true
+        },
+        {
+          "id": "002_before_820",
+          "satisfied": 55,
+          "total": 57,
+          "share": 0.9649122807017544,
+          "passed": true
+        },
+        {
+          "id": "002_before_817",
+          "satisfied": 77,
+          "total": 79,
+          "share": 0.9746835443037974,
+          "passed": true
+        },
+        {
+          "id": "806_before_002",
+          "satisfied": 10,
+          "total": 10,
+          "share": 1,
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "cross_site_backbone_prediction": {
+    "conclusion": "backbone_cross_site_predictive_signal_survives_but_is_not_total_order",
+    "observed": "8/8 train/test experiments survive strict gate. No learned constraint conflicts with the current core in any experiment. Weak/mixed experiments: none.",
+    "consolidation_decision": "Keep the role backbone promoted, with explicit caveat that 400_before_740 is the least stable edge and extensions learned inside one site should not be promoted.",
+    "falsifier_for_next_phase": "A held-out source-bound slice whose learned role-sign order conflicts with 740-before-002, 002-before-terminal, or 806-before-002 would force demotion. Site-local extension edges are not enough to promote new grammar."
+  },
+  "family_collapse_backbone": {
+    "conclusion": "backbone_survives_family_collapse",
+    "observed": "Carrier-family collapse: 9/9 constraints survive; weak=none; too-few=none. Broad-family collapse: 8/9 survive; weak=400_before_740; too-few=none.",
+    "consolidation_decision": "Keep the role backbone promoted; family collapse does not expose repeated-row inflation.",
+    "mode_summaries": [
+      {
+        "mode": "carrier",
+        "surviving_constraints": 9,
+        "weak_constraints": "",
+        "too_few_family_constraints": ""
+      },
+      {
+        "mode": "site_type",
+        "surviving_constraints": 8,
+        "weak_constraints": "400_before_740",
+        "too_few_family_constraints": ""
+      },
+      {
+        "mode": "icon_type",
+        "surviving_constraints": 8,
+        "weak_constraints": "400_before_740",
+        "too_few_family_constraints": ""
+      },
+      {
+        "mode": "broad",
+        "surviving_constraints": 8,
+        "weak_constraints": "400_before_740",
+        "too_few_family_constraints": ""
+      }
+    ]
+  },
+  "length_strata_backbone": {
+    "conclusion": "backbone_needs_length_or_carrier_demotion",
+    "observed": "Length buckets: short_1_3:9/9,72/74,fpr=0; medium_4_6:9/9,695/712,fpr=0; long_7_9:7/9,271/284,fpr=0; very_long_10_plus:9/9,52/56,fpr=0. Carrier buckets: carrier_tablet_account:8/9,183/188,fpr=0; carrier_rect_copper:9/9,125/126,fpr=0; carrier_square_seal:8/9,691/715,fpr=0; carrier_round_seal:1/1,1/1,fpr=null; carrier_other:8/9,90/96,fpr=0. Weak/mixed slices: long_7_9:400_before_740:7/9;740_before_817:11/14; carrier_tablet_account:740_before_820:4/6; carrier_square_seal:400_before_740:9/18; carrier_other:400_before_740:11/14; medium_4_6_tablet_account:002_before_817:6/8; medium_4_6_square_seal:400_before_740:6/14; long_7_9_square_seal:740_before_817:9/12.",
+    "consolidation_decision": "Demote or split role backbone by length/carrier before using it for prediction."
+  },
+  "edge_status_after_consolidation": {
+    "hard_core_edges": [
+      "740_before_002",
+      "002_before_861",
+      "002_before_820",
+      "806_before_002"
+    ],
+    "scoped_edges": [
+      "400_before_740"
+    ],
+    "soft_peripheral_edges": [
+      "740_before_817",
+      "002_before_817",
+      "740_before_820"
+    ],
+    "killed_as_universal": [
+      "400_before_740_universal"
+    ]
+  },
+  "next_destructive_tests": [
+    {
+      "phase": "next_expand",
+      "test": "held_out_backbone_order_prediction",
+      "prediction": "Rows containing two or more of {400,740,407,806,002,861,820,817} should obey the core partial order before metadata is inspected.",
+      "break_condition": "A new high-quality non-Harappa/non-Mohenjo slice repeatedly reverses 002-before-terminal or 740-before-002."
+    },
+    {
+      "phase": "next_expand",
+      "test": "806_context_merge_prediction",
+      "prediction": "New 806 rows in Bull1:W and rect/copper contexts should be boundary-like at comparable rates.",
+      "break_condition": "Bull1:W 806 becomes mostly non-boundary while rect/copper remains boundary-like."
+    },
+    {
+      "phase": "next_expand",
+      "test": "non_harappa_bull1w_405806",
+      "prediction": "Non-Harappa Bull1:W square seals should carry 405/806 above square-seal background, but possibly below Harappa rate.",
+      "break_condition": "Additional non-Harappa Bull1:W rows lack both signs while non-Bull1:W rows continue accumulating them."
+    },
+    {
+      "phase": "next_expand",
+      "test": "external_register_not_name_bridge",
+      "prediction": "External Meluhha side should align better with commodity/register signs (407/400/090/091 families) than with full personal-name readings.",
+      "break_condition": "A source-bound object-level bridge gives a low-FPR name mapping without register signs."
+    },
+    {
+      "phase": "next_expand",
+      "test": "002390_branch_holdout",
+      "prediction": "New 002-390-125/530/590 rows continue; new 002-390-072/095/140/346/692/705/707 rows close.",
+      "break_condition": "A source-bound row flips one of these branch classes."
+    }
+  ]
+}

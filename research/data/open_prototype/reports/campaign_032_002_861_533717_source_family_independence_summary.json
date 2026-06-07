@@ -1,0 +1,108 @@
+{
+  "date": "2026-05-29",
+  "focus_rows": 7,
+  "source_visible_rows": 5,
+  "source_pending_rows": 2,
+  "targets": [
+    "M-376",
+    "M-391"
+  ],
+  "controls": [
+    "M-1954",
+    "M-355",
+    "M-1267",
+    "M-1273",
+    "M-1973"
+  ],
+  "tail_classes": {
+    "M-1954": "bare",
+    "M-355": "long_alt_tail",
+    "M-376": "target_533_717",
+    "M-391": "target_533_717",
+    "M-1267": "bare",
+    "M-1273": "short_alt_603",
+    "M-1973": "bare"
+  },
+  "target_compare": {
+    "same_fields": [],
+    "different_fields": [
+      {
+        "field": "source_leaf",
+        "M-376": "india_n129",
+        "M-391": "india_n131"
+      },
+      {
+        "field": "printed_page",
+        "M-376": "94",
+        "M-391": "96"
+      },
+      {
+        "field": "text",
+        "M-376": "+740-100-176-002-861-533-717+",
+        "M-391": "+405-845-686-740-793-003-233-805-002-861-533-717+"
+      },
+      {
+        "field": "text_length",
+        "M-376": "7",
+        "M-391": "12"
+      },
+      {
+        "field": "class",
+        "M-376": "IT",
+        "M-391": "LP"
+      },
+      {
+        "field": "area_section",
+        "M-376": "HRA",
+        "M-391": "DK-"
+      },
+      {
+        "field": "excavation_idno",
+        "M-376": "HR 1574426",
+        "M-391": "DK-i 60"
+      },
+      {
+        "field": "depth",
+        "M-376": "-2.5 ft",
+        "M-391": "- -"
+      },
+      {
+        "field": "boss",
+        "M-376": "P",
+        "M-391": "PN"
+      },
+      {
+        "field": "condition",
+        "M-376": "Fair",
+        "M-391": "Good"
+      },
+      {
+        "field": "horizontal_mm",
+        "M-376": "39.4",
+        "M-391": "42"
+      },
+      {
+        "field": "vertical_mm",
+        "M-376": "11.4",
+        "M-391": "10"
+      },
+      {
+        "field": "prefix_last2",
+        "M-376": "100 176",
+        "M-391": "233 805"
+      }
+    ],
+    "source_family_verdict": "not_exact_copy_family_under_current_metadata",
+    "verdict_basis": [
+      "M-376 and M-391 share broad site/type/symbol/shape/cross-section and tail.",
+      "They differ in source leaf, printed page, full text, length, class, excavation identifiers, depth, boss, dimensions, and immediate pre-002-861 context.",
+      "This rejects exact duplicate/copy collapse, but the pair remains one narrow source/register-family cell for linguistic weighting."
+    ]
+  },
+  "decision": "two_artifact_witnesses_exact_copy_rejected_one_narrow_register_family_cell_for_linguistic_weighting",
+  "next_question": "Do the target rows share a source-visible post-861 layout feature that same-register controls lack?",
+  "outputs": {
+    "rows_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_533717_source_family_independence_rows.csv",
+    "contact_sheet": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\032_002_861_533717_source_family_independence\\533717_source_family_independence_contact_sheet.png"
+  }
+}

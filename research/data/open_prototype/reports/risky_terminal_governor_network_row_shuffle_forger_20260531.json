@@ -1,0 +1,187 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_terminal_governor_network_row_shuffle_forger_20260531",
+  "tier": "candidate",
+  "bet": "The terminal-governor network depends on real order, not just row lengths and sign frequencies. If row-internal order is destroyed while preserving each inscription sign multiset, the 002/060/820 network should disappear.",
+  "observed_raw_network": {
+    "live_edge_count": 15,
+    "target_edge_count": 5,
+    "target_edges": [
+      {
+        "governor": "002",
+        "closure": "817",
+        "edge": "002-817",
+        "cells": 123,
+        "terminal": 120,
+        "terminal_share": 0.975609756097561
+      },
+      {
+        "governor": "002",
+        "closure": "820",
+        "edge": "002-820",
+        "cells": 76,
+        "terminal": 71,
+        "terminal_share": 0.9342105263157895
+      },
+      {
+        "governor": "060",
+        "closure": "920",
+        "edge": "060-920",
+        "cells": 53,
+        "terminal": 52,
+        "terminal_share": 0.9811320754716981
+      },
+      {
+        "governor": "060",
+        "closure": "550",
+        "edge": "060-550",
+        "cells": 27,
+        "terminal": 26,
+        "terminal_share": 0.9629629629629629
+      },
+      {
+        "governor": "060",
+        "closure": "820",
+        "edge": "060-820",
+        "cells": 23,
+        "terminal": 23,
+        "terminal_share": 1
+      }
+    ],
+    "live_edges": [
+      {
+        "governor": "700",
+        "closure": "033",
+        "edge": "700-033",
+        "cells": 144,
+        "terminal": 128,
+        "terminal_share": 0.8888888888888888
+      },
+      {
+        "governor": "002",
+        "closure": "817",
+        "edge": "002-817",
+        "cells": 123,
+        "terminal": 120,
+        "terminal_share": 0.975609756097561
+      },
+      {
+        "governor": "700",
+        "closure": "034",
+        "edge": "700-034",
+        "cells": 113,
+        "terminal": 110,
+        "terminal_share": 0.9734513274336283
+      },
+      {
+        "governor": "700",
+        "closure": "032",
+        "edge": "700-032",
+        "cells": 94,
+        "terminal": 89,
+        "terminal_share": 0.9468085106382979
+      },
+      {
+        "governor": "002",
+        "closure": "820",
+        "edge": "002-820",
+        "cells": 76,
+        "terminal": 71,
+        "terminal_share": 0.9342105263157895
+      },
+      {
+        "governor": "060",
+        "closure": "920",
+        "edge": "060-920",
+        "cells": 53,
+        "terminal": 52,
+        "terminal_share": 0.9811320754716981
+      },
+      {
+        "governor": "060",
+        "closure": "692",
+        "edge": "060-692",
+        "cells": 36,
+        "terminal": 31,
+        "terminal_share": 0.8611111111111112
+      },
+      {
+        "governor": "156",
+        "closure": "003",
+        "edge": "156-003",
+        "cells": 36,
+        "terminal": 31,
+        "terminal_share": 0.8611111111111112
+      },
+      {
+        "governor": "615",
+        "closure": "503",
+        "edge": "615-503",
+        "cells": 36,
+        "terminal": 35,
+        "terminal_share": 0.9722222222222222
+      },
+      {
+        "governor": "033",
+        "closure": "700",
+        "edge": "033-700",
+        "cells": 33,
+        "terminal": 32,
+        "terminal_share": 0.9696969696969697
+      },
+      {
+        "governor": "405",
+        "closure": "501",
+        "edge": "405-501",
+        "cells": 29,
+        "terminal": 29,
+        "terminal_share": 1
+      },
+      {
+        "governor": "861",
+        "closure": "003",
+        "edge": "861-003",
+        "cells": 29,
+        "terminal": 29,
+        "terminal_share": 1
+      },
+      {
+        "governor": "060",
+        "closure": "550",
+        "edge": "060-550",
+        "cells": 27,
+        "terminal": 26,
+        "terminal_share": 0.9629629629629629
+      },
+      {
+        "governor": "032",
+        "closure": "700",
+        "edge": "032-700",
+        "cells": 23,
+        "terminal": 20,
+        "terminal_share": 0.8695652173913043
+      },
+      {
+        "governor": "060",
+        "closure": "820",
+        "edge": "060-820",
+        "cells": 23,
+        "terminal": 23,
+        "terminal_share": 1
+      }
+    ],
+    "multi_governor_count": 3,
+    "shared_closure_count": 3
+  },
+  "row_internal_shuffle_forger": {
+    "iterations": 2000,
+    "preserves": "each complete row length and exact sign multiset; destroys row-internal order",
+    "p_ge_live_edge_count": 0,
+    "p_ge_target_edge_count": 0,
+    "p_ge_multi_governor_count": 0,
+    "p_ge_shared_closure_count": 0,
+    "p_reproduce_target_shape_002_multi_060_multi_and_820_shared": 0
+  },
+  "decision": "candidate_survives_row_internal_order_forger"
+}

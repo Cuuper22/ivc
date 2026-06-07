@@ -1,0 +1,288 @@
+{
+  "generated_at": "2026-05-25",
+  "input_rows": 353,
+  "selected_packet_rows": 141,
+  "selected_unique_artifacts": 140,
+  "h_series_excluded": [
+    "H-2218",
+    "H-2219",
+    "H-2220",
+    "H-2221",
+    "H-2222",
+    "H-2223",
+    "H-2224",
+    "H-2225",
+    "H-2226",
+    "H-2227",
+    "H-2228",
+    "H-2229",
+    "H-2230",
+    "H-2231",
+    "H-2232",
+    "H-2233",
+    "H-2234",
+    "H-2235",
+    "H-2236",
+    "H-2237",
+    "H-2238",
+    "H-2239"
+  ],
+  "h_series_rows_excluded": 22,
+  "frame700_subtype_counts_all": {
+    "033": 137,
+    "034": 114,
+    "032": 102
+  },
+  "frame700_subtype_counts_no_h": {
+    "033": 136,
+    "032": 102,
+    "034": 93
+  },
+  "packet_counts_by_subtype": {
+    "034": 93,
+    "032": 28,
+    "033": 20
+  },
+  "packet_counts_by_primary_label": {
+    "positive_034_residue_candidate": 93,
+    "032_control": 28,
+    "sibling_033_branch": 20
+  },
+  "no_h_034_short_text_counts": {
+    "+700-034+": 80,
+    "+034-700+": 13
+  },
+  "no_h_034_context_class_counts": {
+    "single_longer_text": 63,
+    "all_short_or_no_longer_text": 18,
+    "single_short_no_longer_text": 10,
+    "multiple_longer_texts": 2
+  },
+  "no_h_034_side_relation_counts": {
+    "short_before_all_longer": 40,
+    "no_longer_text": 28,
+    "short_after_all_longer": 25
+  },
+  "no_h_034_h_bin_counts": {
+    "h_13_16": 46,
+    "h_ge_16": 23,
+    "h_10_13": 20,
+    "h_lt_10": 2,
+    "h_missing": 2
+  },
+  "no_h_034_long_token_set_top": {
+    "NO_LONGER_TEXT": 28,
+    "176;400;740": 9,
+    "002;416;861": 5,
+    "220;415;520": 4,
+    "027;032;400;740": 2,
+    "060;240;603;692;740": 2,
+    "151;222;740": 2,
+    "176;231;565;740": 2,
+    "400;516;775": 2,
+    "001;365;400;415;740;798": 1,
+    "004;371;390;455;590;741": 1,
+    "013;032;060;400;740": 1,
+    "025;032;740": 1,
+    "031;060;176;201;740": 1,
+    "031;156;384;400": 1
+  },
+  "top_priority_rows": [
+    {
+      "rank": 1,
+      "priority_score": 199,
+      "cisi": "H-2094",
+      "subtype": "034",
+      "short_text": "+700-034+",
+      "validation_label": "positive_034_residue_candidate;duplicate_family_risk",
+      "why_prioritized": "all non-H 034 rows are included because the blocked null left 034 recall above the relation-preserving null; 034-specific companion family +002-861-416+ / edge 002...416; falls in h_10_13 bucket enriched for 034 in no-H contrasts; small-object area bucket checks whether residue is object-format only; short-before-longer side relation needs source-side validation; sequence family repeats 3 times; independence must be downweighted"
+    },
+    {
+      "rank": 2,
+      "priority_score": 197,
+      "cisi": "H-2097",
+      "subtype": "034",
+      "short_text": "+034-700+",
+      "validation_label": "positive_034_residue_candidate;allograph_direction_risk",
+      "why_prioritized": "all non-H 034 rows are included because the blocked null left 034 recall above the relation-preserving null; 034-specific companion family +002-861-416+ / edge 002...416; small-object area bucket checks whether residue is object-format only; short-before-longer side relation needs source-side validation; reversed +034-700+ / 700_last order is a direction/allograph hazard"
+    },
+    {
+      "rank": 3,
+      "priority_score": 179,
+      "cisi": "H-2096",
+      "subtype": "034",
+      "short_text": "+700-034+",
+      "validation_label": "positive_034_residue_candidate;duplicate_family_risk",
+      "why_prioritized": "all non-H 034 rows are included because the blocked null left 034 recall above the relation-preserving null; 034-specific companion family +002-861-416+ / edge 002...416; small-object area bucket checks whether residue is object-format only; short-before-longer side relation needs source-side validation; sequence family repeats 3 times; independence must be downweighted"
+    },
+    {
+      "rank": 4,
+      "priority_score": 175,
+      "cisi": "H-910",
+      "subtype": "034",
+      "short_text": "+700-034+",
+      "validation_label": "positive_034_residue_candidate",
+      "why_prioritized": "all non-H 034 rows are included because the blocked null left 034 recall above the relation-preserving null; 034-specific companion family +002-861-416+ / edge 002...416; small-object area bucket checks whether residue is object-format only"
+    },
+    {
+      "rank": 5,
+      "priority_score": 165,
+      "cisi": "H-307",
+      "subtype": "034",
+      "short_text": "+700-034+",
+      "validation_label": "positive_034_residue_candidate",
+      "why_prioritized": "all non-H 034 rows are included because the blocked null left 034 recall above the relation-preserving null; tests 034 without a longer companion row; falls in h_10_13 bucket enriched for 034 in no-H contrasts; small-object area bucket checks whether residue is object-format only"
+    },
+    {
+      "rank": 6,
+      "priority_score": 165,
+      "cisi": "H-947",
+      "subtype": "034",
+      "short_text": "+700-034+",
+      "validation_label": "positive_034_residue_candidate",
+      "why_prioritized": "all non-H 034 rows are included because the blocked null left 034 recall above the relation-preserving null; tests 034 without a longer companion row; falls in h_10_13 bucket enriched for 034 in no-H contrasts; small-object area bucket checks whether residue is object-format only"
+    },
+    {
+      "rank": 7,
+      "priority_score": 165,
+      "cisi": "H-952",
+      "subtype": "034",
+      "short_text": "+700-034+",
+      "validation_label": "positive_034_residue_candidate",
+      "why_prioritized": "all non-H 034 rows are included because the blocked null left 034 recall above the relation-preserving null; tests 034 without a longer companion row; falls in h_10_13 bucket enriched for 034 in no-H contrasts; small-object area bucket checks whether residue is object-format only"
+    },
+    {
+      "rank": 8,
+      "priority_score": 164,
+      "cisi": "H-2095",
+      "subtype": "034",
+      "short_text": "+700-034+",
+      "validation_label": "positive_034_residue_candidate;duplicate_family_risk",
+      "why_prioritized": "all non-H 034 rows are included because the blocked null left 034 recall above the relation-preserving null; 034-specific companion family +002-861-416+ / edge 002...416; short-before-longer side relation needs source-side validation; sequence family repeats 3 times; independence must be downweighted"
+    },
+    {
+      "rank": 9,
+      "priority_score": 161,
+      "cisi": "H-1828",
+      "subtype": "034",
+      "short_text": "+700-034+",
+      "validation_label": "positive_034_residue_candidate;duplicate_family_risk",
+      "why_prioritized": "all non-H 034 rows are included because the blocked null left 034 recall above the relation-preserving null; tests 034 without a longer companion row; falls in h_10_13 bucket enriched for 034 in no-H contrasts; small-object area bucket checks whether residue is object-format only; sequence family repeats 2 times; independence must be downweighted"
+    },
+    {
+      "rank": 10,
+      "priority_score": 161,
+      "cisi": "H-1829",
+      "subtype": "034",
+      "short_text": "+700-034+",
+      "validation_label": "positive_034_residue_candidate;duplicate_family_risk",
+      "why_prioritized": "all non-H 034 rows are included because the blocked null left 034 recall above the relation-preserving null; tests 034 without a longer companion row; falls in h_10_13 bucket enriched for 034 in no-H contrasts; small-object area bucket checks whether residue is object-format only; sequence family repeats 2 times; independence must be downweighted"
+    },
+    {
+      "rank": 11,
+      "priority_score": 161,
+      "cisi": "H-1830",
+      "subtype": "034",
+      "short_text": "+700-034+",
+      "validation_label": "positive_034_residue_candidate;duplicate_family_risk",
+      "why_prioritized": "all non-H 034 rows are included because the blocked null left 034 recall above the relation-preserving null; tests 034 without a longer companion row; falls in h_10_13 bucket enriched for 034 in no-H contrasts; small-object area bucket checks whether residue is object-format only; sequence family repeats 2 times; independence must be downweighted"
+    },
+    {
+      "rank": 12,
+      "priority_score": 161,
+      "cisi": "H-1831",
+      "subtype": "034",
+      "short_text": "+700-034+",
+      "validation_label": "positive_034_residue_candidate;duplicate_family_risk",
+      "why_prioritized": "all non-H 034 rows are included because the blocked null left 034 recall above the relation-preserving null; tests 034 without a longer companion row; falls in h_10_13 bucket enriched for 034 in no-H contrasts; small-object area bucket checks whether residue is object-format only; sequence family repeats 2 times; independence must be downweighted"
+    },
+    {
+      "rank": 13,
+      "priority_score": 161,
+      "cisi": "H-1907",
+      "subtype": "034",
+      "short_text": "+700-034+",
+      "validation_label": "positive_034_residue_candidate;duplicate_family_risk",
+      "why_prioritized": "all non-H 034 rows are included because the blocked null left 034 recall above the relation-preserving null; tests 034 without a longer companion row; falls in h_10_13 bucket enriched for 034 in no-H contrasts; small-object area bucket checks whether residue is object-format only; sequence family repeats 2 times; independence must be downweighted"
+    },
+    {
+      "rank": 14,
+      "priority_score": 160,
+      "cisi": "H-355",
+      "subtype": "033",
+      "short_text": "+700-033+",
+      "validation_label": "sibling_033_branch;duplicate_family_risk",
+      "why_prioritized": "matched 033 sibling branch included to test whether 033/034 are source-real contrasts; canonical 033 +400-740-176+ sibling environment; duplicate +700-033+ sides must be physical sides, not catalog duplication; has a checked public acquisition lead, but not source-grade proof; sequence family repeats 2 times; use as visual contrast before statistical independence"
+    },
+    {
+      "rank": 15,
+      "priority_score": 160,
+      "cisi": "H-355",
+      "subtype": "033",
+      "short_text": "+700-033+",
+      "validation_label": "sibling_033_branch;duplicate_family_risk",
+      "why_prioritized": "matched 033 sibling branch included to test whether 033/034 are source-real contrasts; canonical 033 +400-740-176+ sibling environment; duplicate +700-033+ sides must be physical sides, not catalog duplication; has a checked public acquisition lead, but not source-grade proof; sequence family repeats 2 times; use as visual contrast before statistical independence"
+    },
+    {
+      "rank": 16,
+      "priority_score": 160,
+      "cisi": "H-960",
+      "subtype": "034",
+      "short_text": "+700-034+",
+      "validation_label": "positive_034_residue_candidate",
+      "why_prioritized": "all non-H 034 rows are included because the blocked null left 034 recall above the relation-preserving null; falls in h_10_13 bucket enriched for 034 in no-H contrasts; small-object area bucket checks whether residue is object-format only; short-before-longer side relation needs source-side validation; shares the 400-740-176 sibling environment previously seen with 033 controls; has a checked public acquisition lead, but not source-grade proof"
+    },
+    {
+      "rank": 17,
+      "priority_score": 160,
+      "cisi": "H-1302",
+      "subtype": "033",
+      "short_text": "+700-033+",
+      "validation_label": "sibling_033_branch;duplicate_family_risk",
+      "why_prioritized": "matched 033 sibling branch included to test whether 033/034 are source-real contrasts; canonical 033 +400-740-176+ sibling environment; published direction/corpus-note lead can expose direction normalization risk; has a checked public acquisition lead, but not source-grade proof; sequence family repeats 14 times; use as visual contrast before statistical independence"
+    },
+    {
+      "rank": 18,
+      "priority_score": 160,
+      "cisi": "H-1303",
+      "subtype": "033",
+      "short_text": "+700-033+",
+      "validation_label": "sibling_033_branch;duplicate_family_risk",
+      "why_prioritized": "matched 033 sibling branch included to test whether 033/034 are source-real contrasts; canonical 033 +400-740-176+ sibling environment; published direction/corpus-note lead can expose direction normalization risk; has a checked public acquisition lead, but not source-grade proof; sequence family repeats 14 times; use as visual contrast before statistical independence"
+    },
+    {
+      "rank": 19,
+      "priority_score": 155,
+      "cisi": "H-945",
+      "subtype": "034",
+      "short_text": "+034-700+",
+      "validation_label": "positive_034_residue_candidate;allograph_direction_risk",
+      "why_prioritized": "all non-H 034 rows are included because the blocked null left 034 recall above the relation-preserving null; tests 034 without a longer companion row; small-object area bucket checks whether residue is object-format only; reversed +034-700+ / 700_last order is a direction/allograph hazard"
+    },
+    {
+      "rank": 20,
+      "priority_score": 155,
+      "cisi": "H-2154",
+      "subtype": "034",
+      "short_text": "+034-700+",
+      "validation_label": "positive_034_residue_candidate;allograph_direction_risk",
+      "why_prioritized": "all non-H 034 rows are included because the blocked null left 034 recall above the relation-preserving null; tests 034 without a longer companion row; small-object area bucket checks whether residue is object-format only; reversed +034-700+ / 700_last order is a direction/allograph hazard"
+    }
+  ],
+  "support_threshold": "Only claim a validated distributional contrast inside the FRAME700 side-mark formula if source images confirm distinct 034/033/032 signs, direction/side relation, and independence after family-risk downweighting.",
+  "kill_threshold": "Downgrade to object-format association or kill if 034 collapses into 033/032, order is direction-normalized, no-longer rows are incomplete side records, the 002...416 bucket is one copied family, or source dimensions contradict catalog bins.",
+  "live_public_source_check_2026_05_25": {
+    "checked_queries": [
+      "H-2094 Indus tablet",
+      "H-2097 Indus tablet",
+      "H-910 Indus tablet",
+      "H-307 Indus tablet",
+      "site:harappa.com H-2094/H-2097/H-910/H-307",
+      "CISI H-2094/H-2097/H-910/H-307",
+      "+002-861-416+",
+      "700-034 / 034-700 Indus"
+    ],
+    "result": "No source-grade object page, plate image, or museum/Harappa archive page surfaced for the top 034 objects; route them to CISI/HARP/plate acquisition."
+  },
+  "source_check_status": "packet_for_source_validation_only_source_images_not_validated"
+}

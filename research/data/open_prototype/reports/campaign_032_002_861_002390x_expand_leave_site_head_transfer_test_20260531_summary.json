@@ -1,0 +1,24 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "leave_site_head_transfer_test",
+  "frame_rows": 128,
+  "head_accuracy": "40/53=0.755",
+  "x_accuracy": "72/85=0.847",
+  "context_accuracy": "61/90=0.678",
+  "decision_pressure": "head_transfer_beats_context_in_this_proxy",
+  "new_bets": [
+    {
+      "bet_id": "EXPAND_LEAVE_SITE_HEAD_TRANSFER",
+      "tier": "candidate test pressure"
+    },
+    {
+      "bet_id": "EXPAND_220_CROSS_SITE_OPEN_HEAD",
+      "tier": "wild shot with strong transfer pressure"
+    },
+    {
+      "bet_id": "EXPAND_390_SLOT_OVER_HEAD_TRANSFER",
+      "tier": "wild shot damaged"
+    }
+  ]
+}

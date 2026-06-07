@@ -1,0 +1,26 @@
+{
+  "date": "2026-05-29",
+  "rows": 5,
+  "quantified_rows": 3,
+  "target_tail_start_share_range": [
+    "0.637",
+    "0.669"
+  ],
+  "target_tail_width_share_range": [
+    "0.331",
+    "0.363"
+  ],
+  "quantified_control_tail_start_shares": {
+    "M-1273": "0.815"
+  },
+  "decision": "no_unique_source_layout_discriminator_yet",
+  "decision_basis": [
+    "M-376 and M-391 both show same-line terminal-side 533-717 windows.",
+    "M-1273 also shows same-line terminal-side post-861 material, so same-line terminal placement is not unique to 533-717.",
+    "M-355 gives a source-visible cuboid-convex same-register long-tail control.",
+    "M-1267 gives a source-visible same-register bare-edge control."
+  ],
+  "outputs": {
+    "rows_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_533717_source_layout_discriminator_rows.csv"
+  }
+}

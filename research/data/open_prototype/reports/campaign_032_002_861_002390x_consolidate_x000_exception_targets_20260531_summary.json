@@ -1,0 +1,14 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "x000_exception_targets",
+  "x000_rows": 27,
+  "open_exceptions": 3,
+  "closed_controls": 24,
+  "exception_types": "M-451:zero_chain_exception;4148.1:nonzero_payload_exception;Ns-66:frame_reset_exception",
+  "highest_priority_targets": [
+    "M-451",
+    "4148.1"
+  ],
+  "conclusion": "X=000 consolidation now hinges on three open exceptions: zero-chain M-451, reset Ns-66, and nonzero-payload 4148.1."
+}

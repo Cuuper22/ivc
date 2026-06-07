@@ -1,0 +1,39 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "expand_compound_left_context_router",
+  "rows": {
+    "raw": 5679,
+    "canonical_numeric_sequences": 3503,
+    "target_002390_frames": 15,
+    "final_left_collision_groups": [
+      {
+        "key": "004",
+        "branches": "095;125"
+      },
+      {
+        "key": "032",
+        "branches": "590;692"
+      }
+    ],
+    "left_bigram_collision_groups": []
+  },
+  "bets": [
+    {
+      "bet_id": "EXPAND_COMPOUND_LEFT_CONTEXT_ROUTER",
+      "tier": "candidate_edge"
+    },
+    {
+      "bet_id": "EXPAND_235_DIRECT_TRIGGER_VS_032004_COMPOUND",
+      "tier": "candidate"
+    },
+    {
+      "bet_id": "EXPAND_004_BIGRAM_STATUS_RANK_SPLIT",
+      "tier": "candidate_edge"
+    },
+    {
+      "bet_id": "EXPAND_032_BIGRAM_RESULT_FORMULA_SPLIT",
+      "tier": "candidate_edge"
+    }
+  ]
+}

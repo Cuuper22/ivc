@@ -1,0 +1,41 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "lipi_034_m2104_visual_stroke_probe",
+  "question": "Do the first available public crops make the M-2104 700-034 versus parallel 700-004 stroke-count hypothesis visually testable?",
+  "crop_note_rows": 5,
+  "segmentation_target_rows": 15,
+  "blind_visual_adjudication_rows": 8,
+  "objects_with_crops": [
+    "M-2104",
+    "M-478",
+    "M-480",
+    "M-1425"
+  ],
+  "first_pass_result": "The visual route is now strong enough to proceed to sign-level segmentation: Parpola Fig. 1 row 12 shows the standardized UIII target, and public CISI crops for M-478/M-480/M-1425 show tablet inscription lanes with four-stroke/U-pot-like clusters. This supports image-testability, not accepted mapping.",
+  "blind_adjudication_result": "M-478 A survives as the stronger four-stroke adjacent-cluster witness. M-1425 A also survives as an independent recurrence lead, but with lower confidence because stroke boundaries are blurrier and neighboring-sign contamination remains possible.",
+  "strongest_supporting_crop": "tmp/cisi_m2104_packet/crops/m1425_a_inscription_crop.png",
+  "weakest_supporting_crop": "tmp/cisi_m2104_packet/crops/m480_a_inscription_crop.png",
+  "main_failure_condition": "If sign-level segmentation shows that local 700-004 does not correspond to the visible four-stroke U/pot cluster in M-478/M-480/M-1425, or local 700-034 does not correspond to Parpola's UIII cluster in M-2104, the live 034 extraction fails.",
+  "accepted_mappings": 0,
+  "accepted_decipherment_claims": 0,
+  "outputs": [
+    "data/open_prototype/reports/lipi_034_m2104_visual_stroke_notes.csv",
+    "data/open_prototype/reports/lipi_034_m2104_visual_stroke_summary.json",
+    "data/open_prototype/reports/lipi_034_m2104_segmentation_targets.csv",
+    "data/open_prototype/reports/lipi_034_m2104_blind_visual_adjudication.csv",
+    "data/open_prototype/reports/lipi_034_m2104_blind_visual_adjudication_summary.json",
+    "tmp/cisi_m2104_packet/crops/m2104_parpola_fig1_text12_crop.png",
+    "tmp/cisi_m2104_packet/crops/m478_a_inscription_crop.png",
+    "tmp/cisi_m2104_packet/crops/m480_a_inscription_crop.png",
+    "tmp/cisi_m2104_packet/crops/m1425_a_inscription_crop.png",
+    "tmp/cisi_m2104_packet/crops/m478_b_scene_crop.png",
+    "tmp/cisi_m2104_packet/overlays/m2104_parpola_fig1_text12_segmentation_overlay.png",
+    "tmp/cisi_m2104_packet/overlays/m478_a_segmentation_overlay.png",
+    "tmp/cisi_m2104_packet/overlays/m480_a_segmentation_overlay.png",
+    "tmp/cisi_m2104_packet/overlays/m1425_a_segmentation_overlay.png",
+    "tmp/cisi_m2104_packet/closeups/m478_a_u_count_closeup.png",
+    "tmp/cisi_m2104_packet/closeups/m1425_a_u_count_closeup.png",
+    "tmp/cisi_m2104_packet/closeups/m480_a_u_count_closeup.png",
+    "tmp/cisi_m2104_packet/closeups/m2104_parpola_u_count_closeup.png"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "x_tail_ecology_test",
+  "hypothesis_tested": "If X is a branch head in `002-390-X`, then continuing frame tails should reuse X-specific successor ecology outside the target frame more often than a copied-template null predicts.",
+  "branch_rows": 10,
+  "open_continuing_frames": 6,
+  "open_continuing_frames_with_first_tail_reuse": 5,
+  "formula_risk_branches": [],
+  "decisions": [
+    "The open/continuing tail-reuse bet is incomplete: at least one open frame tail is not seen after the same X outside the frame.",
+    "No branch has a >=0.75 nonframe top-next share; this weakens a simple formula-lock null."
+  ],
+  "confidence_after_test": {
+    "X_as_branch_head_not_filler": "candidate_mixed",
+    "125_open_title_tail": "partial_global_tail_match",
+    "530_open_title_tail": "exact_tail_reused_elsewhere",
+    "590_open_bridge_tail": "exact_tail_reused_elsewhere",
+    "closed_branches_as_frame_governed_closures": "candidate_unchanged"
+  },
+  "falsifier": "A new source-bound continuing frame whose X-tail is absent from X successor ecology, or a high-share formula tail that covers the open rows, demotes the branch-head parse toward copied-register template."
+}

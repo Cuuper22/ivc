@@ -1,0 +1,255 @@
+{
+  "source": "Harappa TAB:B/TAB:I short-mark orientation-context audit",
+  "checked_at": "2026-05-24",
+  "input": "data/open_prototype/reports/lipi_multiside_mark_rows.csv",
+  "target_rows": 353,
+  "target_type_counts": {
+    "TAB:B": 178,
+    "TAB:I": 175
+  },
+  "companion_counts": {
+    "032": 102,
+    "033": 137,
+    "034": 114
+  },
+  "order_counts": {
+    "700_first": 299,
+    "700_last": 54
+  },
+  "context_class_counts": {
+    "all_short_or_no_longer_text": 62,
+    "multiple_longer_texts": 5,
+    "single_longer_text": 233,
+    "single_short_no_longer_text": 53
+  },
+  "side_relation_counts": {
+    "no_longer_text": 115,
+    "short_after_all_longer": 132,
+    "short_before_all_longer": 105,
+    "short_between_longer_sides": 1
+  },
+  "companion_order_context": {
+    "032": {
+      "700_first": {
+        "rows": 85,
+        "context_class_counts": {
+          "all_short_or_no_longer_text": 6,
+          "single_longer_text": 60,
+          "single_short_no_longer_text": 19
+        },
+        "side_relation_counts": {
+          "no_longer_text": 25,
+          "short_after_all_longer": 33,
+          "short_before_all_longer": 27
+        },
+        "longer_token_presence_counts": {
+          "140": 3,
+          "176": 7,
+          "240": 7,
+          "368": 0,
+          "400": 29,
+          "740": 34,
+          "900": 1,
+          "031": 4,
+          "001": 4
+        },
+        "top_longer_families": [
+          "NO_LONGER_TEXT:25",
+          "2:+740-031-001-140+:3",
+          "1:+400-158-592+:2",
+          "1:+400-740-176+:2",
+          "1:+740-690-636-240+:2",
+          "1:+740-904-240-002-817+:2",
+          "1:+156-176-741-060-920+:1",
+          "1:+400-226-032+:1"
+        ]
+      },
+      "700_last": {
+        "rows": 17,
+        "context_class_counts": {
+          "all_short_or_no_longer_text": 1,
+          "single_longer_text": 13,
+          "single_short_no_longer_text": 3
+        },
+        "side_relation_counts": {
+          "no_longer_text": 4,
+          "short_after_all_longer": 7,
+          "short_before_all_longer": 6
+        },
+        "longer_token_presence_counts": {
+          "140": 0,
+          "176": 0,
+          "240": 1,
+          "368": 0,
+          "400": 7,
+          "740": 7,
+          "900": 0,
+          "031": 0,
+          "001": 0
+        },
+        "top_longer_families": [
+          "NO_LONGER_TEXT:4",
+          "1:+400-740-892-617+:2",
+          "1:+400-156-118+:1",
+          "1:+400-232-235+:1",
+          "1:+400-740-336-018+:1",
+          "1:+526-550-220+:1",
+          "1:+740-690-630-240+:1",
+          "2:+390-004-104+:1"
+        ]
+      }
+    },
+    "033": {
+      "700_first": {
+        "rows": 113,
+        "context_class_counts": {
+          "all_short_or_no_longer_text": 11,
+          "multiple_longer_texts": 3,
+          "single_longer_text": 81,
+          "single_short_no_longer_text": 18
+        },
+        "side_relation_counts": {
+          "no_longer_text": 29,
+          "short_after_all_longer": 58,
+          "short_before_all_longer": 25,
+          "short_between_longer_sides": 1
+        },
+        "longer_token_presence_counts": {
+          "140": 2,
+          "176": 22,
+          "240": 9,
+          "368": 2,
+          "400": 48,
+          "740": 65,
+          "900": 0,
+          "031": 2,
+          "001": 3
+        },
+        "top_longer_families": [
+          "NO_LONGER_TEXT:29",
+          "1:+400-740-176+:16",
+          "1:+740-840-013+:3",
+          "2:+400-740-176+:3",
+          "1:+400-740-178+:2",
+          "1:+740-390-590-240+:2",
+          "2:+740-642-240-001-692+:2",
+          "1:+032-820-100-415+:1"
+        ]
+      },
+      "700_last": {
+        "rows": 24,
+        "context_class_counts": {
+          "all_short_or_no_longer_text": 5,
+          "single_longer_text": 16,
+          "single_short_no_longer_text": 3
+        },
+        "side_relation_counts": {
+          "no_longer_text": 8,
+          "short_after_all_longer": 9,
+          "short_before_all_longer": 7
+        },
+        "longer_token_presence_counts": {
+          "140": 0,
+          "176": 1,
+          "240": 3,
+          "368": 0,
+          "400": 6,
+          "740": 10,
+          "900": 0,
+          "031": 2,
+          "001": 0
+        },
+        "top_longer_families": [
+          "NO_LONGER_TEXT:8",
+          "1:+400-154-896+:2",
+          "1:+400-520-220-016+:1",
+          "1:+400-740-390-590+:1",
+          "1:+400-740-898-617+:1",
+          "1:+520-220-016+:1",
+          "1:+710-455-220-032+:1",
+          "1:+740-100-240+:1"
+        ]
+      }
+    },
+    "034": {
+      "700_first": {
+        "rows": 101,
+        "context_class_counts": {
+          "all_short_or_no_longer_text": 37,
+          "multiple_longer_texts": 2,
+          "single_longer_text": 52,
+          "single_short_no_longer_text": 10
+        },
+        "side_relation_counts": {
+          "no_longer_text": 47,
+          "short_after_all_longer": 21,
+          "short_before_all_longer": 33
+        },
+        "longer_token_presence_counts": {
+          "140": 1,
+          "176": 14,
+          "240": 7,
+          "368": 0,
+          "400": 24,
+          "740": 39,
+          "900": 0,
+          "031": 3,
+          "001": 1
+        },
+        "top_longer_families": [
+          "NO_LONGER_TEXT:47",
+          "1:+400-740-176+:7",
+          "2:+002-861-416+:3",
+          "1:+520-220-415+:2",
+          "2:+151-740-222+:2",
+          "2:+565-740-176-231+:2",
+          "1:+002-861-416+:1",
+          "1:+032-257-840+:1"
+        ]
+      },
+      "700_last": {
+        "rows": 13,
+        "context_class_counts": {
+          "all_short_or_no_longer_text": 2,
+          "single_longer_text": 11
+        },
+        "side_relation_counts": {
+          "no_longer_text": 2,
+          "short_after_all_longer": 4,
+          "short_before_all_longer": 7
+        },
+        "longer_token_presence_counts": {
+          "140": 0,
+          "176": 2,
+          "240": 0,
+          "368": 0,
+          "400": 6,
+          "740": 5,
+          "900": 0,
+          "031": 0,
+          "001": 0
+        },
+        "top_longer_families": [
+          "2:+400-775-516+:2",
+          "NO_LONGER_TEXT:2",
+          "1:+400-156-435-255+:1",
+          "1:+400-740-336-176+:1",
+          "1:+520-220-415+:1",
+          "1:+740-177-231+:1",
+          "2:+002-861-416+:1",
+          "2:+400-740-032-027+:1"
+        ]
+      }
+    }
+  },
+  "emitted_tests": 57,
+  "corrected_context_flags": [],
+  "key_observation": "No orientation-context association survives correction in this planning-layer audit; exact order still remains a validation variable because the prior orientation audit found strong order imbalance.",
+  "interpretation_boundary": "This is an artifact-side context audit only. It accepts no physical side function, numerical value, metrological reading, sign meaning, phonetic value, language identity, or translation.",
+  "outputs": [
+    "data/open_prototype/reports/lipi_short_mark_context_orientation_rows.csv",
+    "data/open_prototype/reports/lipi_short_mark_context_orientation_families.csv",
+    "data/open_prototype/reports/lipi_short_mark_context_orientation_tests.csv",
+    "data/open_prototype/reports/lipi_short_mark_context_orientation_summary.json"
+  ]
+}

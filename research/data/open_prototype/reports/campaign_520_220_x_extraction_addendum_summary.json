@@ -1,0 +1,115 @@
+{
+  "generated_at": "2026-05-26T00:00:00-07:00",
+  "scope": "mechanical addendum for rows matching ^+520-220-X in metadata_filtered.csv",
+  "source_row_count": 52,
+  "existing_campaign_row_count": 52,
+  "missing_from_existing": [],
+  "extra_in_existing": [],
+  "object_count": 51,
+  "exact_three_count": 21,
+  "x_position_behavior_counts": [
+    {
+      "behavior": "medial_with_closed_tail",
+      "count": 27
+    },
+    {
+      "behavior": "medial_with_damaged_or_open_tail",
+      "count": 3
+    },
+    {
+      "behavior": "terminal_closed",
+      "count": 21
+    },
+    {
+      "behavior": "terminal_damaged_or_open",
+      "count": 1
+    }
+  ],
+  "tail_pattern_counts": [
+    {
+      "tail_pattern_class": "no_tail_closed_exact_three",
+      "count": 21
+    },
+    {
+      "tail_pattern_class": "no_tail_damaged_or_open",
+      "count": 1
+    },
+    {
+      "tail_pattern_class": "tail_1_closed",
+      "count": 7
+    },
+    {
+      "tail_pattern_class": "tail_1_damaged_or_open",
+      "count": 2
+    },
+    {
+      "tail_pattern_class": "tail_2_closed",
+      "count": 10
+    },
+    {
+      "tail_pattern_class": "tail_3plus_closed",
+      "count": 10
+    },
+    {
+      "tail_pattern_class": "tail_3plus_damaged_or_open",
+      "count": 1
+    }
+  ],
+  "companion_formula_class_counts": [
+    {
+      "companion_formula_class": "033_700",
+      "count": 1
+    },
+    {
+      "companion_formula_class": "034_700",
+      "count": 1
+    },
+    {
+      "companion_formula_class": "700_032",
+      "count": 1
+    },
+    {
+      "companion_formula_class": "700_033",
+      "count": 1
+    },
+    {
+      "companion_formula_class": "700_034",
+      "count": 3
+    },
+    {
+      "companion_formula_class": "700_x_pair",
+      "count": 1
+    },
+    {
+      "companion_formula_class": "longer_other",
+      "count": 5
+    },
+    {
+      "companion_formula_class": "no_companion_side",
+      "count": 33
+    },
+    {
+      "companion_formula_class": "one_sign_110",
+      "count": 2
+    },
+    {
+      "companion_formula_class": "starts_520_220",
+      "count": 2
+    },
+    {
+      "companion_formula_class": "two_sign_other",
+      "count": 2
+    }
+  ],
+  "source_hint_object_count": 10,
+  "crosswalk_x_coverage_count": 5,
+  "accepted_mapping_value_translation": 0,
+  "outputs": [
+    "data\\open_prototype\\reports\\campaign_520_220_x_extraction_addendum.csv",
+    "data\\open_prototype\\reports\\campaign_520_220_x_tail_position_summary_addendum.csv",
+    "data\\open_prototype\\reports\\campaign_520_220_x_companion_formula_summary_addendum.csv",
+    "data\\open_prototype\\reports\\campaign_520_220_x_stratification_addendum.csv",
+    "data\\open_prototype\\reports\\campaign_520_220_x_source_visibility_hints_addendum.csv",
+    "data\\open_prototype\\reports\\campaign_520_220_x_extraction_addendum_summary.json"
+  ]
+}

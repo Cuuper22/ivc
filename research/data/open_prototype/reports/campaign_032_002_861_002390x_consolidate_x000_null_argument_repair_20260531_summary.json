@@ -1,0 +1,12 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "x000_null_argument_repair",
+  "repaired_findings": {
+    "preframe_control": "demoted_as_tautological_for_terminality",
+    "x_slot_000": "24/27 vs nonzero 146/245; gap=0.293",
+    "head_slot_000": "43/54 vs nonzero 383/644; gap=0.202",
+    "post_frame_000": "8/10 vs nonzero 94/138; gap=0.119"
+  },
+  "model_consequence": "Keep X=000 zero-complement as strongest null rule; demote broad frame-proximal null from core to edge candidate until same-role nonzero contrasts and source-bound tails support it."
+}

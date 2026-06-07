@@ -1,0 +1,115 @@
+{
+  "status": "3335_yajnadevam_repo_history_private_collection_no_image_bridge_no_values",
+  "date": "2026-05-31 America/Los_Angeles",
+  "repo_head": "b272ad99c253ba7fa1e4cd91f48cce31f6d02bf4",
+  "repo_rev_count_all": 447,
+  "shallow": "no",
+  "target_current": {
+    "layer": "current_head",
+    "commit": "b272ad99c253ba7fa1e4cd91f48cce31f6d02bf4",
+    "line": "4189",
+    "id": "3335.1",
+    "cisi": "-",
+    "site": "Unknown",
+    "excavation_idno": "-",
+    "museum_or_source": "",
+    "dimensions": "29 x 29 x 0",
+    "text": "+740-205-032-002-390-590-032+",
+    "bridge_interpretation": "current row still has cisi dash, unknown site, no excavation id, and no image/source field"
+  },
+  "target_old_externalize": {
+    "layer": "old_externalize_commit",
+    "commit": "0921d91d309621a292ba22bacce3f0f9c3ede929",
+    "line": "2043",
+    "id": "3335",
+    "cisi": "",
+    "site": "Unknown",
+    "excavation_idno": "",
+    "museum_or_source": "Private collection",
+    "dimensions": "29.0 x 29.0 x 0.0",
+    "text": "+740-205-032-002-390-590-032+",
+    "bridge_interpretation": "old source layer preserves private-collection clue but no public object id, image, or citation"
+  },
+  "image_bridge": {
+    "target_images": null,
+    "dash_images": null,
+    "neighbors": {
+      "M-939": [
+        "M-939_a.jpg",
+        "M-939_1_A.jpg",
+        "M-939_2_A.jpg"
+      ],
+      "M-940": [
+        "M-940_a.jpg",
+        "M-940_a_bis.jpg"
+      ],
+      "M-941": [
+        "M-941_a.jpg"
+      ]
+    }
+  },
+  "history": {
+    "pickaxe_rows": [
+      {
+        "route": "pickaxe_old_id",
+        "search_term": "3335",
+        "commit": "14b3421f33b1a6a38cee0d7ee54ad5669ef323dd",
+        "date": "2024-09-03T20:19:27-05:00",
+        "subject": "auto-transliteration added"
+      },
+      {
+        "route": "pickaxe_old_id",
+        "search_term": "3335",
+        "commit": "0921d91d309621a292ba22bacce3f0f9c3ede929",
+        "date": "2024-09-01T01:35:05-05:00",
+        "subject": "externalize inscriptions"
+      },
+      {
+        "route": "pickaxe_exact_text",
+        "search_term": "+740-205-032-002-390-590-032+",
+        "commit": "0921d91d309621a292ba22bacce3f0f9c3ede929",
+        "date": "2024-09-01T01:35:05-05:00",
+        "subject": "externalize inscriptions"
+      },
+      {
+        "route": "current_line_blame",
+        "search_term": "3335.1",
+        "commit": "92ec6a013fccc892b5063b9eada5d21b29a2a099",
+        "date": "2026-01-10T05:44:29.000Z",
+        "subject": "L7 most"
+      }
+    ],
+    "current_line_blame": {
+      "commit": "92ec6a013fccc892b5063b9eada5d21b29a2a099",
+      "summary": "L7 most",
+      "author_time": "2026-01-10T05:44:29.000Z"
+    }
+  },
+  "no_other_occurrences_after_exclusions": true,
+  "decisions": [
+    {
+      "gate": "repo_occurrence",
+      "decision": "target only in inscriptions plus derived glossing",
+      "evidence": "occurrences=4; extra_occurrences=0",
+      "consequence": "repo search does not expose an independent source trail"
+    },
+    {
+      "gate": "image_bridge",
+      "decision": "no target image bridge",
+      "evidence": "target_images=0; dash_images=0; M-940_images=2",
+      "consequence": "row-order M-940 temptation remains rejected"
+    },
+    {
+      "gate": "history_private_collection",
+      "decision": "private-collection clue recorded",
+      "evidence": "old_commit=0921d91d309621a292ba22bacce3f0f9c3ede929; old_museum=Private collection",
+      "consequence": "use as external acquisition wording only, not as source-bound evidence"
+    },
+    {
+      "gate": "accepted_values",
+      "decision": "no values accepted",
+      "evidence": "no source image, no object id, no public citation, no strict sign-band witness",
+      "consequence": "value, phonetics, language identity, function, sign meaning, and translation remain 0"
+    }
+  ]
+}

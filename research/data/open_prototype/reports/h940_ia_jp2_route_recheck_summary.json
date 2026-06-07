@@ -1,0 +1,20 @@
+{
+  "date": "2026-05-26",
+  "question": "Does the Internet Archive JP2 derivative for CISI Pakistan page n374 improve H-940 B enough to change the local 110 / Parpola sign-no.-41 branch gate?",
+  "result": "No upgrade. The direct IA JP2 archive member has the same 3258 x 4550 pixel geometry as the checked IIIF max route. H-940 B remains low-contrast and visually split as paired/wavy vertical forms, not a clean compound branching figure comparable to H-2148.",
+  "accepted_claims": {
+    "ia_jp2_route_checked": "The IA JP2 archive-member route for CISI Pakistan page n374 is stored locally.",
+    "no_resolution_upgrade": "The JP2 route has the same page pixel dimensions as the IIIF max route.",
+    "h940_status": "H-940 B remains source-visible but visually split/non-binding at current public quality."
+  },
+  "not_accepted": [
+    "H-940 rejoins the H-2148 branch through the public JP2 route",
+    "local 110 equals Parpola sign no. 41",
+    "sign value",
+    "phonetic value",
+    "language identification",
+    "translation"
+  ],
+  "stored_report": "data/open_prototype/reports/h940_ia_jp2_route_recheck.csv",
+  "next_gate": "Do not keep spending effort on IA page derivatives for H-940 B. Acquire an independent source-grade crop, original plate/photo, HARP/CISI source note, or side-label transcription."
+}

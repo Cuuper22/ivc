@@ -1,0 +1,24 @@
+{
+  "run_date": "2026-05-31",
+  "bet_id": "V4_861096_IVORY_ROD_REGISTER_20260531",
+  "vector": "V4 context-to-meaning from branch grammar",
+  "confidence_tier": "wild shot",
+  "risky_bet": "`002-861-096` is a terminal branch for an ivory-rod register inside the `002-861` branch table.",
+  "observed": "Canonical numeric-sequence target rows: 1; ivory ROD rows: 1/1. Canonical 002-861 background: 2/146 ivory ROD rows. The prior two exact-text witnesses collapse to one numeric sequence.",
+  "adversarial_test": "Canonical numeric-sequence collapse, then shuffle inside all canonical 002-861 rows, 100000 iterations.",
+  "false_positive_rate": 0.01386,
+  "copy_family_warning": "Demoted from candidate to wild shot: M-2089/M-2090 differ by bracket/damage text but share one canonical numeric sequence.",
+  "falsifier": "A second independent source-normalized `002-861-096` row on a rod-like object revives the bet; a non-rod row kills the register reading.",
+  "next_prediction": "If more `002-861-096` witnesses are found, they should be rod-like/minimal-object contexts and terminal rather than normal seal iconography.",
+  "targets": [
+    {
+      "object": "M-2089",
+      "site": "Mohenjo-daro",
+      "type": "ROD",
+      "material": "Ivory",
+      "symbol": "NA",
+      "shape": "NA",
+      "text": "+002-861-096+"
+    }
+  ]
+}

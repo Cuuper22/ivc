@@ -1,0 +1,260 @@
+{
+  "date": "2026-05-29",
+  "status": "vector4_context_slot_candidate_not_sign_meaning",
+  "input": "data/open_prototype/reports/campaign_520_220_x_extraction_addendum.csv",
+  "iterations_per_null_model": 5000,
+  "scopes": [
+    {
+      "observed": {
+        "scope": "raw_clean_behavior",
+        "rows": 48,
+        "third_slot_counts": {
+          "235": 1,
+          "240": 5,
+          "368": 1,
+          "415": 26,
+          "621": 1,
+          "742": 1,
+          "803": 1,
+          "016": 2,
+          "006": 1,
+          "032": 1,
+          "002": 2,
+          "034": 1,
+          "003": 2,
+          "001": 1,
+          "031": 1,
+          "004": 1
+        },
+        "closure_counts": {
+          "terminal_closed": 21,
+          "continues_after_x": 27
+        },
+        "third_slot_accuracy": 0.6875,
+        "site_type_accuracy": 0.8125,
+        "gain_vs_site_type": -0.125
+      },
+      "nulls": [
+        {
+          "null_model": "closure_shuffle_global",
+          "iterations": 5000,
+          "means": {
+            "third_slot_accuracy": 0.5129833333333355,
+            "site_type_accuracy": 0.514958333333332,
+            "gain_vs_site_type": -0.0019750000000000123
+          },
+          "max_values": {
+            "third_slot_accuracy": 0.75,
+            "site_type_accuracy": 0.7708333333333334,
+            "gain_vs_site_type": 0.5208333333333334
+          },
+          "null_ge_observed_share": {
+            "third_slot_accuracy": 0.0148,
+            "gain_vs_site_type": 0.8354
+          }
+        },
+        {
+          "null_model": "closure_shuffle_within_site",
+          "iterations": 5000,
+          "means": {
+            "third_slot_accuracy": 0.6370791666666662,
+            "site_type_accuracy": 0.8155750000000347,
+            "gain_vs_site_type": -0.17849583333333335
+          },
+          "max_values": {
+            "third_slot_accuracy": 0.8125,
+            "site_type_accuracy": 0.8958333333333334,
+            "gain_vs_site_type": 0.0625
+          },
+          "null_ge_observed_share": {
+            "third_slot_accuracy": 0.2302,
+            "gain_vs_site_type": 0.2488
+          }
+        },
+        {
+          "null_model": "closure_shuffle_within_type",
+          "iterations": 5000,
+          "means": {
+            "third_slot_accuracy": 0.6832166666666696,
+            "site_type_accuracy": 0.8078249999999833,
+            "gain_vs_site_type": -0.12460833333333331
+          },
+          "max_values": {
+            "third_slot_accuracy": 0.8541666666666666,
+            "site_type_accuracy": 0.8541666666666666,
+            "gain_vs_site_type": 0.0625
+          },
+          "null_ge_observed_share": {
+            "third_slot_accuracy": 0.5286,
+            "gain_vs_site_type": 0.5606
+          }
+        },
+        {
+          "null_model": "closure_shuffle_within_site_type",
+          "iterations": 5000,
+          "means": {
+            "third_slot_accuracy": 0.6740125000000005,
+            "site_type_accuracy": 0.8125,
+            "gain_vs_site_type": -0.13848749999999974
+          },
+          "max_values": {
+            "third_slot_accuracy": 0.8125,
+            "site_type_accuracy": 0.8125,
+            "gain_vs_site_type": 0
+          },
+          "null_ge_observed_share": {
+            "third_slot_accuracy": 0.4398,
+            "gain_vs_site_type": 0.4398
+          }
+        },
+        {
+          "null_model": "closure_shuffle_within_site_type_material_shape",
+          "iterations": 5000,
+          "means": {
+            "third_slot_accuracy": 0.7018875000000095,
+            "site_type_accuracy": 0.8125,
+            "gain_vs_site_type": -0.1106125000000009
+          },
+          "max_values": {
+            "third_slot_accuracy": 0.8125,
+            "site_type_accuracy": 0.8125,
+            "gain_vs_site_type": 0
+          },
+          "null_ge_observed_share": {
+            "third_slot_accuracy": 0.7264,
+            "gain_vs_site_type": 0.7264
+          }
+        }
+      ]
+    },
+    {
+      "observed": {
+        "scope": "exact_text_collapsed_clean_behavior",
+        "rows": 32,
+        "third_slot_counts": {
+          "235": 1,
+          "240": 5,
+          "368": 1,
+          "415": 10,
+          "621": 1,
+          "742": 1,
+          "803": 1,
+          "016": 2,
+          "006": 1,
+          "032": 1,
+          "002": 2,
+          "034": 1,
+          "003": 2,
+          "001": 1,
+          "031": 1,
+          "004": 1
+        },
+        "closure_counts": {
+          "terminal_closed": 5,
+          "continues_after_x": 27
+        },
+        "third_slot_accuracy": 0.78125,
+        "site_type_accuracy": 0.90625,
+        "gain_vs_site_type": -0.125
+      },
+      "nulls": [
+        {
+          "null_model": "closure_shuffle_global",
+          "iterations": 5000,
+          "means": {
+            "third_slot_accuracy": 0.8205125,
+            "site_type_accuracy": 0.82273125,
+            "gain_vs_site_type": -0.00221875
+          },
+          "max_values": {
+            "third_slot_accuracy": 0.96875,
+            "site_type_accuracy": 0.96875,
+            "gain_vs_site_type": 0.1875
+          },
+          "null_ge_observed_share": {
+            "third_slot_accuracy": 0.9816,
+            "gain_vs_site_type": 0.9984
+          }
+        },
+        {
+          "null_model": "closure_shuffle_within_site",
+          "iterations": 5000,
+          "means": {
+            "third_slot_accuracy": 0.822725,
+            "site_type_accuracy": 0.80705,
+            "gain_vs_site_type": 0.015675
+          },
+          "max_values": {
+            "third_slot_accuracy": 0.9375,
+            "site_type_accuracy": 0.90625,
+            "gain_vs_site_type": 0.15625
+          },
+          "null_ge_observed_share": {
+            "third_slot_accuracy": 0.9898,
+            "gain_vs_site_type": 1
+          }
+        },
+        {
+          "null_model": "closure_shuffle_within_type",
+          "iterations": 5000,
+          "means": {
+            "third_slot_accuracy": 0.8101875,
+            "site_type_accuracy": 0.89996875,
+            "gain_vs_site_type": -0.08978125
+          },
+          "max_values": {
+            "third_slot_accuracy": 0.96875,
+            "site_type_accuracy": 0.96875,
+            "gain_vs_site_type": 0.0625
+          },
+          "null_ge_observed_share": {
+            "third_slot_accuracy": 0.9674,
+            "gain_vs_site_type": 0.9628
+          }
+        },
+        {
+          "null_model": "closure_shuffle_within_site_type",
+          "iterations": 5000,
+          "means": {
+            "third_slot_accuracy": 0.810675,
+            "site_type_accuracy": 0.90625,
+            "gain_vs_site_type": -0.095575
+          },
+          "max_values": {
+            "third_slot_accuracy": 0.90625,
+            "site_type_accuracy": 0.90625,
+            "gain_vs_site_type": 0
+          },
+          "null_ge_observed_share": {
+            "third_slot_accuracy": 0.9828,
+            "gain_vs_site_type": 0.9828
+          }
+        },
+        {
+          "null_model": "closure_shuffle_within_site_type_material_shape",
+          "iterations": 5000,
+          "means": {
+            "third_slot_accuracy": 0.81075,
+            "site_type_accuracy": 0.90625,
+            "gain_vs_site_type": -0.0955
+          },
+          "max_values": {
+            "third_slot_accuracy": 0.90625,
+            "site_type_accuracy": 0.90625,
+            "gain_vs_site_type": 0
+          },
+          "null_ge_observed_share": {
+            "third_slot_accuracy": 0.9802,
+            "gain_vs_site_type": 0.9802
+          }
+        }
+      ]
+    }
+  ],
+  "interpretation_boundary": "This tests closure/continuation context in the 520-220-X slot only. It is not a sign meaning, phonetic value, language identification, or translation.",
+  "files": {
+    "summary": "data/open_prototype/reports/campaign_520_220_x_context_slot_null_summary.json",
+    "iterations": "data/open_prototype/reports/campaign_520_220_x_context_slot_null_iterations.csv",
+    "scope_rows": "data/open_prototype/reports/campaign_520_220_x_context_slot_scope_rows.csv"
+  }
+}

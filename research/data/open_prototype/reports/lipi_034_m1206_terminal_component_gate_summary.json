@@ -1,0 +1,47 @@
+{
+  "date": "2026-05-26",
+  "artifact": "lipi_034_m1206_terminal_component_gate",
+  "question": "When apparent terminal components are isolated, does M-1206 local 034 remain visually separate from 415 controls or cluster with them?",
+  "input_packet": {
+    "neutral_contact_sheet": "tmp/m1206_034_terminal_component_gate/derived/m1206_034_terminal_component_neutral_contact_sheet.png",
+    "input_manifest": "data/open_prototype/reports/lipi_034_m1206_terminal_component_gate_inputs.csv",
+    "mechanic_check": "16 rows, 16 crops, all paths/hashes/dimensions valid, no duplicate IDs, no visible label leak; T004/T005 include adjacent curved material."
+  },
+  "blind_reviews": {
+    "reviewer_count": 2,
+    "consensus": [
+      "T002-T003 form the tight M-1206 target-terminal core; T001 is a weaker plausible member.",
+      "T006-T007 are the closest clean external terminal controls.",
+      "T010 and T009 are relevant but side-policy-gated.",
+      "T004-T005 are related but contaminated/separate comb-like subcluster.",
+      "T011-T016 are distractor/nonterminal classes."
+    ]
+  },
+  "unblinded_decision": {
+    "m1206_terminal_stable": true,
+    "closest_clean_external_terminal_controls": ["H-938 A", "H-938 A bis"],
+    "secondary_clean_exact_side_control": "H-940 A",
+    "side_gated_close_candidates": ["H-941 A", "H-786 A"],
+    "same_site_pressure_but_contaminated": ["M-37 A", "M-37 a"],
+    "distractors_rejected": ["T011", "T012", "T013", "T014", "T015", "T016"]
+  },
+  "accepted": {
+    "m1206_terminal_component_stability": true,
+    "terminal_level_034_415_family_pressure": true,
+    "shared_prefix_only_explains_previous_match": false,
+    "034_equals_415": false,
+    "034_value": false,
+    "415_value": false,
+    "allograph_status_proven": false,
+    "translation": false
+  },
+  "next_gate": [
+    "Resolve H-938/H-940/H-786/H-941 side-label policy.",
+    "Acquire source-grade M-1912 for +520-220-003+.",
+    "Recut M-37 terminal controls from less contaminated source images if possible.",
+    "Add independent source-visible 034 terminal targets only after component-level classification is possible."
+  ],
+  "accepted_source_mapping_count": 0,
+  "accepted_sign_value_count": 0,
+  "accepted_translation_count": 0
+}

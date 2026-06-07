@@ -1,0 +1,67 @@
+{
+  "date": "2026-05-25",
+  "experiment": "Lipi FRAME700 034 two-lane source packet",
+  "inputs": [
+    "data\\open_prototype\\reports\\lipi_frame700_034_source_triad_packet.csv",
+    "data\\open_prototype\\reports\\lipi_frame700_034_matched_contrast_stability.csv",
+    "data\\open_prototype\\lipi\\metadata_filtered.csv"
+  ],
+  "core_triads": 8,
+  "optional_triads": 1,
+  "participant_rows": 27,
+  "core_unique_objects": 22,
+  "optional_unique_objects": 3,
+  "all_unique_objects": 25,
+  "coding_rows": 51,
+  "lanes": {
+    "independent_low_copy": 12,
+    "local_contrast_stress": 12,
+    "repeated_branch_check": 3
+  },
+  "roles": {
+    "control_032": 9,
+    "control_033": 9,
+    "target_034": 9
+  },
+  "source_hook_grades": {
+    "catalog_or_archive_handle": 15,
+    "excavation_plus_figure_hook": 11,
+    "excavation_hook": 1
+  },
+  "core_object_list": [
+    "H-212",
+    "H-353",
+    "H-771",
+    "H-789",
+    "H-854",
+    "H-893",
+    "H-925",
+    "H-930",
+    "H-983",
+    "H-1123",
+    "H-1772",
+    "H-1824",
+    "H-1842",
+    "H-1850",
+    "H-1883",
+    "H-1940",
+    "H-1943",
+    "H-2137",
+    "H-2204",
+    "H-2209",
+    "H-2211",
+    "H-2217"
+  ],
+  "optional_object_list": [
+    "H-910",
+    "H-916",
+    "H-1294"
+  ],
+  "accepted_decipherment_claims": 0,
+  "status": "source_request_packet_not_validation",
+  "outputs": [
+    "data\\open_prototype\\reports\\lipi_frame700_034_two_lane_source_packet.csv",
+    "data\\open_prototype\\reports\\lipi_frame700_034_two_lane_source_coding_sheet.csv",
+    "data\\open_prototype\\reports\\lipi_frame700_034_two_lane_source_packet_summary.json"
+  ]
+}

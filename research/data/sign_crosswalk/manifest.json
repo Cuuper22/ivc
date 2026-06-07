@@ -1,0 +1,55 @@
+{
+  "date": "2026-05-29",
+  "status": "provenance_tagged_scaffold_no_accepted_crosswalk_edges",
+  "source_summary": {
+    "lipi_rows": 5679,
+    "mayig_witness_rows": 179,
+    "positional_alignment_rows": 739,
+    "lipi_to_mayig_candidate_edges": 189,
+    "mayig_feature_root_present": true,
+    "crosswalk_summary": {
+      "aligned_positions": 739,
+      "unique_lipi_signs": 189,
+      "unique_mayig_signs": 160
+    }
+  },
+  "output_counts": {
+    "sign_systems": 5,
+    "signs": 1782,
+    "artifact_witnesses": 5858,
+    "crosswalk_edges": 1085,
+    "evidence_refs": 5,
+    "namespace_gates": 4,
+    "review_events": 2,
+    "accepted_crosswalk_edges": 0
+  },
+  "files": {
+    "sign_systems": "data/sign_crosswalk/sign_systems.csv",
+    "signs": "data/sign_crosswalk/signs.csv",
+    "artifact_witnesses": "data/sign_crosswalk/artifact_witnesses.csv",
+    "crosswalk_edges": "data/sign_crosswalk/crosswalk_edges.csv",
+    "evidence_refs": "data/sign_crosswalk/evidence_refs.csv",
+    "namespace_gates": "data/sign_crosswalk/namespace_gates.csv",
+    "review_events": "data/sign_crosswalk/review_events.csv",
+    "manifest": "data/sign_crosswalk/manifest.json",
+    "audit_summary": "data/sign_crosswalk/audit_summary.json",
+    "audit_issues": "data/sign_crosswalk/audit_issues.csv",
+    "edge_pressure_summary": "data/sign_crosswalk/edge_pressure_summary.csv"
+  },
+  "caveats": [
+    "Lipi numeric data remains T3/quarantined; use metadata/sign fields only.",
+    "Mayig V/W/M links are mediated through Mayig feature metadata, not primary Parpola/Wells/Mahadevan tables.",
+    "All crosswalk edges are unaccepted until source-image or authoritative sign-list validation clears the relevant namespace gate."
+  ],
+  "audit": {
+    "date": "2026-05-29",
+    "status": "audit_passed_with_caveats",
+    "duplicate_primary_keys": 0,
+    "dangling_reference_errors": 0,
+    "evidence_hash_or_path_errors": 0,
+    "accepted_crosswalk_edges": 0,
+    "warnings": 8,
+    "warning_code": "empty_sign_sequence",
+    "human_readable_note": "docs/sign_crosswalk_audit.md"
+  }
+}

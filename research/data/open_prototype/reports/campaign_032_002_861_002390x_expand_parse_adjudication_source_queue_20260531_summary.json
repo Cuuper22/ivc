@@ -1,0 +1,20 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "parse_adjudication_source_queue",
+  "targets": 15,
+  "priority_1_targets": 6,
+  "classes": "terminal_identity_or_class_label:3;zero_complement_class:3;head610_032_tail_router:2;terminal_default_group_or_class_label:2;head_routed_extender_bait:1;head320_705_125_cap_exception:1;one_complement_associative_linker:1;terminal_default_exception_bait:1;zero_complement_exception:1",
+  "x_profile": "000:4;095:3;705:3;125:2;530:1;590:1;692:1",
+  "rows_by_priority": "2:7;1:6;3:2",
+  "bets": [
+    {
+      "bet_id": "EXPAND_SOURCE_ADJUDICATION_AS_PARSER_DESTRUCTIVE_TEST",
+      "tier": "candidate"
+    },
+    {
+      "bet_id": "EXPAND_HOLDOUT_SOURCE_BINDING_WILL_SPLIT_OPERATOR_CLASSES",
+      "tier": "wild_shot"
+    }
+  ]
+}

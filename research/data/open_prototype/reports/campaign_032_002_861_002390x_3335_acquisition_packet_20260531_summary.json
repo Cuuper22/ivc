@@ -1,0 +1,76 @@
+{
+  "run_date": "2026-05-31",
+  "inputs": {
+    "metadata": "data/open_prototype/lipi/metadata_filtered.csv",
+    "artifact_witnesses": "data/sign_crosswalk/artifact_witnesses.csv",
+    "sign_systems": "data/sign_crosswalk/sign_systems.csv",
+    "evidence_refs": "data/sign_crosswalk/evidence_refs.csv",
+    "source_upgrade_impact": "data/open_prototype/reports/campaign_032_002_861_002390x_source_upgrade_impact_audit_20260531_scenario_summary.csv"
+  },
+  "target": {
+    "id": "3335.1",
+    "object": "-:3335.1",
+    "cisi": "-",
+    "region": "Other",
+    "site": "Unknown",
+    "type": "SEAL:S",
+    "symbol": "Bull1:J",
+    "cult": "RAF",
+    "material": "-",
+    "shape": "square",
+    "excavation_idno": "-",
+    "dimensions": "29 x 29 x 0",
+    "direction": "R/L",
+    "text": "+740-205-032-002-390-590-032+",
+    "signs": "740-205-032-002-390-590-032",
+    "structural_role": "032 -> 002-390 -> 590 -> 032",
+    "strict_gate_if_bound": "strict_matched_prev_split:032; strict_non125_continuing:-:3335.1"
+  },
+  "chunk_counts": {
+    "740-205-032-002-390-590-032": 1,
+    "740-205-032-002": 2,
+    "205-032-002": 2,
+    "032-002-390": 2,
+    "002-390-590": 1,
+    "390-590-032": 7,
+    "740-205": 2
+  },
+  "m143_prefix_control_rows": 2,
+  "target_only_002390590_rows": 1,
+  "family_390590032_rows": 7,
+  "profile_distribution": {
+    "rows_with_same_symbol_cult_shape_type": 28,
+    "target_profile_sites": "Mohenjo-daro:45; Kalibangan:4; Dholavira:2; Harappa:2; Lothal:1; Nausharo:1; Nindowari-damb:1; Unknown:1"
+  },
+  "decisions": [
+    {
+      "decision": "3335_packet_ready_external_source_required",
+      "evidence": "target has no CISI/site/excavation/image bridge and public exact searches are negative",
+      "result": "packeted acquisition target, not source-bound evidence",
+      "consequence": "do not count 3335.1 in strict matched-lane proof"
+    },
+    {
+      "decision": "m143_is_prefix_control_not_identity",
+      "evidence": "M-143 shares 740-205-032-002 but has branch/tail 252-840 instead of 390-590-032",
+      "result": "adds source-family context, not object binding",
+      "consequence": "use M-143 only as a formula/source-family control"
+    },
+    {
+      "decision": "highest_single_object_unlock_still_blocked",
+      "evidence": "strict_matched_prev_split:032; strict_non125_continuing:-:3335.1",
+      "result": "3335.1 would unlock strict 032 only if source-bound and sequence-valid",
+      "consequence": "external acquisition remains the priority over further local triangulation"
+    }
+  ],
+  "status": "3335_acquisition_packet_ready_external_source_or_replacement_required_no_values",
+  "outputs": {
+    "target": "data/open_prototype/reports/campaign_032_002_861_002390x_3335_acquisition_packet_20260531_target.csv",
+    "provenance": "data/open_prototype/reports/campaign_032_002_861_002390x_3335_acquisition_packet_20260531_provenance.csv",
+    "chunk_leads": "data/open_prototype/reports/campaign_032_002_861_002390x_3335_acquisition_packet_20260531_chunk_leads.csv",
+    "routes": "data/open_prototype/reports/campaign_032_002_861_002390x_3335_acquisition_packet_20260531_routes.csv",
+    "search_queries": "data/open_prototype/reports/campaign_032_002_861_002390x_3335_acquisition_packet_20260531_search_queries.csv",
+    "blockers": "data/open_prototype/reports/campaign_032_002_861_002390x_3335_acquisition_packet_20260531_blockers.csv",
+    "decisions": "data/open_prototype/reports/campaign_032_002_861_002390x_3335_acquisition_packet_20260531_decisions.csv",
+    "summary": "data/open_prototype/reports/campaign_032_002_861_002390x_3335_acquisition_packet_20260531_summary.json"
+  }
+}

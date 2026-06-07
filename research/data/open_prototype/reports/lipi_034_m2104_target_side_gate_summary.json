@@ -1,0 +1,52 @@
+{
+  "date": "2026-05-25",
+  "packet": "lipi_034_m2104_target_side_gate_recheck",
+  "question": "Can current public raw-source evidence validate M-2104 as the exact three-stroke target side for the 700-034 versus 700-004 count-compound hypothesis?",
+  "target": {
+    "object": "M-2104",
+    "local_id": "2527.1",
+    "local_text": "+151-097-700-034+",
+    "source_hook": "VS 875CXIV:532",
+    "public_route": "Marshall Plate CXIV no. 532 / IA-IGNCA in.gov.ignca.48270 leaf 48270_0205",
+    "identity_bridge_status": "internal_lipi_bridge_only_public_external_bridge_missing",
+    "visual_status": "source_visible",
+    "exact_three_stroke_gate": false,
+    "target_side_gate_passed": false
+  },
+  "comparator_units": {
+    "naive_004_rows": 4,
+    "adjudicated_004_evidence_units": 2,
+    "units": [
+      {
+        "id": "EU_004_INDIA_478_479_480",
+        "members": ["M-478", "M-479", "M-480"],
+        "status": "one_same_plate_tablet_family_unit"
+      },
+      {
+        "id": "EU_004_PAKISTAN_1425",
+        "members": ["M-1425"],
+        "status": "one_provisional_independent_recurrence"
+      },
+      {
+        "id": "EU_034_TARGET_2104",
+        "members": ["M-2104"],
+        "status": "source_visible_target_unit_exact_count_failed"
+      }
+    ]
+  },
+  "strict_verdict": "M-2104 is source-visible but not source-validated; the public target-side image permits three-plus-boundary or four-ish readings and therefore fails exact 034 equals three.",
+  "research_status": "source_targeted_retrieval_and_segmentation_hypothesis",
+  "accepted_claims": {
+    "m2104_local_row_records_vs875cxiv532": true,
+    "parpola_2019_motivates_uiii_test": true,
+    "marshall_no532_public_route_visible": true,
+    "004_side_two_evidence_units_after_dependence_correction": true,
+    "034_equals_three": false,
+    "004_equals_four": false,
+    "700_role_or_value": false,
+    "public_external_m2104_equals_marshall532_bridge": false,
+    "local_four_token_segmentation_from_raw_image": false,
+    "sign_meaning_or_translation": false
+  },
+  "next_decisive_action": "Acquire or inspect CISI 3.1 or equivalent archive/museum source for the explicit M-2104 / VS875 / no.532 identity bridge and source-grade raw image, then rerun blind segmentation under the evidence-unit policy."
+}

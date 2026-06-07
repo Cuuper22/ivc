@@ -1,0 +1,5 @@
+test,decision,evidence,limit
+tail_window_vs_bare_margin_width,terminal_space_attack_survives,smallest tailed terminal candidate width is 120px; largest bare post-terminal margin is 38px,"the margin boxes come from the existing bare-edge source-control overlay, not a fresh source resegmentation"
+tail_window_vs_bare_margin_share,terminal_space_attack_survives,smallest tailed terminal candidate share is 0.286; largest bare post-terminal margin share is 0.063,"share compares annotated windows, not automated glyph segmentation"
+bare_controls_have_tail_sized_empty_slot,no_in_current_boxes,all three bare controls have post-terminal margin width far below both tailed terminal windows,this does not prove the margin is linguistically meaningful; it blocks grammar promotion until recut/source segmentation confirms the edge
+grammar_slot_promotion,blocked_by_terminal_space_adversary,"broad register and length failed, but terminal-space now has positive support as a layout explanation","the post-861 split remains a source-visible positional contrast, not a grammatical function or value"

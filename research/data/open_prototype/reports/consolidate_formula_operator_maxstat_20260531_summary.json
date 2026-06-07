@@ -1,0 +1,594 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "test_id": "consolidate_formula_operator_maxstat_20260531",
+  "exact_collapsed_bigram_tournament": {
+    "cells": 8119,
+    "bigrams": 3270,
+    "top_20": [
+      {
+        "bigram": "002-817",
+        "exact_cells": 108,
+        "best_next": "<END>",
+        "best_hit": 105,
+        "best_share": 0.9722222222222222,
+        "sites": 10,
+        "types": 9
+      },
+      {
+        "bigram": "002-861",
+        "exact_cells": 126,
+        "best_next": "<END>",
+        "best_hit": 102,
+        "best_share": 0.8095238095238095,
+        "sites": 8,
+        "types": 9
+      },
+      {
+        "bigram": "002-820",
+        "exact_cells": 75,
+        "best_next": "<END>",
+        "best_hit": 70,
+        "best_share": 0.9333333333333333,
+        "sites": 7,
+        "types": 6
+      },
+      {
+        "bigram": "060-920",
+        "exact_cells": 52,
+        "best_next": "<END>",
+        "best_hit": 51,
+        "best_share": 0.9807692307692307,
+        "sites": 9,
+        "types": 7
+      },
+      {
+        "bigram": "740-390",
+        "exact_cells": 37,
+        "best_next": "590",
+        "best_hit": 36,
+        "best_share": 0.972972972972973,
+        "sites": 7,
+        "types": 4
+      },
+      {
+        "bigram": "741-060",
+        "exact_cells": 30,
+        "best_next": "920",
+        "best_hit": 30,
+        "best_share": 1,
+        "sites": 7,
+        "types": 5
+      },
+      {
+        "bigram": "060-692",
+        "exact_cells": 33,
+        "best_next": "<END>",
+        "best_hit": 28,
+        "best_share": 0.8484848484848485,
+        "sites": 5,
+        "types": 4
+      },
+      {
+        "bigram": "740-100",
+        "exact_cells": 79,
+        "best_next": "415",
+        "best_hit": 27,
+        "best_share": 0.34177215189873417,
+        "sites": 8,
+        "types": 9
+      },
+      {
+        "bigram": "740-032",
+        "exact_cells": 42,
+        "best_next": "840",
+        "best_hit": 26,
+        "best_share": 0.6190476190476191,
+        "sites": 5,
+        "types": 4
+      },
+      {
+        "bigram": "520-033",
+        "exact_cells": 45,
+        "best_next": "705",
+        "best_hit": 26,
+        "best_share": 0.5777777777777777,
+        "sites": 6,
+        "types": 6
+      },
+      {
+        "bigram": "690-435",
+        "exact_cells": 26,
+        "best_next": "255",
+        "best_hit": 25,
+        "best_share": 0.9615384615384616,
+        "sites": 3,
+        "types": 4
+      },
+      {
+        "bigram": "740-690",
+        "exact_cells": 34,
+        "best_next": "435",
+        "best_hit": 24,
+        "best_share": 0.7058823529411765,
+        "sites": 4,
+        "types": 5
+      },
+      {
+        "bigram": "060-820",
+        "exact_cells": 23,
+        "best_next": "<END>",
+        "best_hit": 23,
+        "best_share": 1,
+        "sites": 5,
+        "types": 4
+      },
+      {
+        "bigram": "060-550",
+        "exact_cells": 24,
+        "best_next": "<END>",
+        "best_hit": 23,
+        "best_share": 0.9583333333333334,
+        "sites": 4,
+        "types": 6
+      },
+      {
+        "bigram": "220-032",
+        "exact_cells": 50,
+        "best_next": "002",
+        "best_hit": 20,
+        "best_share": 0.4,
+        "sites": 8,
+        "types": 6
+      },
+      {
+        "bigram": "700-033",
+        "exact_cells": 25,
+        "best_next": "<END>",
+        "best_hit": 18,
+        "best_share": 0.72,
+        "sites": 2,
+        "types": 5
+      },
+      {
+        "bigram": "740-176",
+        "exact_cells": 68,
+        "best_next": "<END>",
+        "best_hit": 17,
+        "best_share": 0.25,
+        "sites": 7,
+        "types": 7
+      },
+      {
+        "bigram": "090-740",
+        "exact_cells": 77,
+        "best_next": "220",
+        "best_hit": 17,
+        "best_share": 0.22077922077922077,
+        "sites": 9,
+        "types": 7
+      },
+      {
+        "bigram": "740-405",
+        "exact_cells": 16,
+        "best_next": "590",
+        "best_hit": 15,
+        "best_share": 0.9375,
+        "sites": 4,
+        "types": 5
+      },
+      {
+        "bigram": "700-032",
+        "exact_cells": 19,
+        "best_next": "<END>",
+        "best_hit": 15,
+        "best_share": 0.7894736842105263,
+        "sites": 3,
+        "types": 2
+      }
+    ],
+    "named": {
+      "741-060_to_920": {
+        "bigram": "741-060",
+        "requested_next": "920",
+        "rank_by_best_hit": 6,
+        "row": {
+          "bigram": "741-060",
+          "exact_cells": 30,
+          "best_next": "920",
+          "best_hit": 30,
+          "best_share": 1,
+          "sites": 7,
+          "types": 5
+        }
+      },
+      "060-920_to_END": {
+        "bigram": "060-920",
+        "requested_next": "<END>",
+        "rank_by_best_hit": 4,
+        "row": {
+          "bigram": "060-920",
+          "exact_cells": 52,
+          "best_next": "<END>",
+          "best_hit": 51,
+          "best_share": 0.9807692307692307,
+          "sites": 9,
+          "types": 7
+        }
+      },
+      "740-390_to_590": {
+        "bigram": "740-390",
+        "requested_next": "590",
+        "rank_by_best_hit": 5,
+        "row": {
+          "bigram": "740-390",
+          "exact_cells": 37,
+          "best_next": "590",
+          "best_hit": 36,
+          "best_share": 0.972972972972973,
+          "sites": 7,
+          "types": 4
+        }
+      },
+      "740-407_to_590": {
+        "bigram": "740-407",
+        "requested_next": "590",
+        "rank_by_best_hit": 61,
+        "row": {
+          "bigram": "740-407",
+          "exact_cells": 6,
+          "best_next": "590",
+          "best_hit": 6,
+          "best_share": 1,
+          "sites": 4,
+          "types": 4
+        }
+      },
+      "740-405_to_590": {
+        "bigram": "740-405",
+        "requested_next": "590",
+        "rank_by_best_hit": 19,
+        "row": {
+          "bigram": "740-405",
+          "exact_cells": 16,
+          "best_next": "590",
+          "best_hit": 15,
+          "best_share": 0.9375,
+          "sites": 4,
+          "types": 5
+        }
+      },
+      "690-435_to_255": {
+        "bigram": "690-435",
+        "requested_next": "255",
+        "rank_by_best_hit": 11,
+        "row": {
+          "bigram": "690-435",
+          "exact_cells": 26,
+          "best_next": "255",
+          "best_hit": 25,
+          "best_share": 0.9615384615384616,
+          "sites": 3,
+          "types": 4
+        }
+      },
+      "752-615_to_503": {
+        "bigram": "752-615",
+        "requested_next": "503",
+        "rank_by_best_hit": 453,
+        "row": {
+          "bigram": "752-615",
+          "exact_cells": 2,
+          "best_next": "503",
+          "best_hit": 2,
+          "best_share": 1,
+          "sites": 1,
+          "types": 1
+        }
+      }
+    },
+    "successor_shuffle_null_for_741060": {
+      "iterations": 5000,
+      "competitor_bigrams_with_exact_cells_at_least_30": 30,
+      "preserves": "exact-collapsed bigram support sizes; samples successor labels from observed exact-collapsed successor pool",
+      "mean_null_max_hit": 39.2578,
+      "mean_null_max_share": 0.330924,
+      "p_ge_30_of_30": 0
+    }
+  },
+  "prev806_window_tournament": {
+    "cells": 83,
+    "predecessors": 24,
+    "window_width": 11,
+    "top_20": [
+      {
+        "prev": "154",
+        "exact_cells": 14,
+        "best_window_start": "464",
+        "best_window_end": "474",
+        "best_hit": 14,
+        "best_share": 1,
+        "numeric_successors": 14,
+        "sites": 3,
+        "types": 3
+      },
+      {
+        "prev": "158",
+        "exact_cells": 9,
+        "best_window_start": "465",
+        "best_window_end": "475",
+        "best_hit": 9,
+        "best_share": 1,
+        "numeric_successors": 9,
+        "sites": 2,
+        "types": 2
+      },
+      {
+        "prev": "240",
+        "exact_cells": 7,
+        "best_window_start": "000",
+        "best_window_end": "010",
+        "best_hit": 6,
+        "best_share": 0.8571428571428571,
+        "numeric_successors": 6,
+        "sites": 2,
+        "types": 3
+      },
+      {
+        "prev": "231",
+        "exact_cells": 4,
+        "best_window_start": "000",
+        "best_window_end": "010",
+        "best_hit": 3,
+        "best_share": 0.75,
+        "numeric_successors": 3,
+        "sites": 2,
+        "types": 3
+      },
+      {
+        "prev": "235",
+        "exact_cells": 10,
+        "best_window_start": "000",
+        "best_window_end": "010",
+        "best_hit": 3,
+        "best_share": 0.3,
+        "numeric_successors": 3,
+        "sites": 2,
+        "types": 5
+      },
+      {
+        "prev": "236",
+        "exact_cells": 2,
+        "best_window_start": "000",
+        "best_window_end": "010",
+        "best_hit": 2,
+        "best_share": 1,
+        "numeric_successors": 2,
+        "sites": 2,
+        "types": 1
+      },
+      {
+        "prev": "155",
+        "exact_cells": 2,
+        "best_window_start": "458",
+        "best_window_end": "468",
+        "best_hit": 2,
+        "best_share": 1,
+        "numeric_successors": 2,
+        "sites": 1,
+        "types": 2
+      },
+      {
+        "prev": "415",
+        "exact_cells": 3,
+        "best_window_start": "732",
+        "best_window_end": "742",
+        "best_hit": 2,
+        "best_share": 0.6666666666666666,
+        "numeric_successors": 2,
+        "sites": 2,
+        "types": 2
+      },
+      {
+        "prev": "100",
+        "exact_cells": 1,
+        "best_window_start": "462",
+        "best_window_end": "472",
+        "best_hit": 1,
+        "best_share": 1,
+        "numeric_successors": 1,
+        "sites": 1,
+        "types": 1
+      },
+      {
+        "prev": "400",
+        "exact_cells": 1,
+        "best_window_start": "795",
+        "best_window_end": "805",
+        "best_hit": 1,
+        "best_share": 1,
+        "numeric_successors": 1,
+        "sites": 1,
+        "types": 1
+      },
+      {
+        "prev": "590",
+        "exact_cells": 1,
+        "best_window_start": "000",
+        "best_window_end": "010",
+        "best_hit": 1,
+        "best_share": 1,
+        "numeric_successors": 1,
+        "sites": 1,
+        "types": 1
+      },
+      {
+        "prev": "003",
+        "exact_cells": 2,
+        "best_window_start": "023",
+        "best_window_end": "033",
+        "best_hit": 1,
+        "best_share": 0.5,
+        "numeric_successors": 2,
+        "sites": 1,
+        "types": 1
+      },
+      {
+        "prev": "740",
+        "exact_cells": 3,
+        "best_window_start": "230",
+        "best_window_end": "240",
+        "best_hit": 1,
+        "best_share": 0.3333333333333333,
+        "numeric_successors": 1,
+        "sites": 3,
+        "types": 2
+      },
+      {
+        "prev": "032",
+        "exact_cells": 4,
+        "best_window_start": "000",
+        "best_window_end": "010",
+        "best_hit": 1,
+        "best_share": 0.25,
+        "numeric_successors": 2,
+        "sites": 2,
+        "types": 2
+      },
+      {
+        "prev": "233",
+        "exact_cells": 7,
+        "best_window_start": "000",
+        "best_window_end": "010",
+        "best_hit": 1,
+        "best_share": 0.14285714285714285,
+        "numeric_successors": 2,
+        "sites": 2,
+        "types": 3
+      },
+      {
+        "prev": "055",
+        "exact_cells": 1,
+        "best_window_start": "000",
+        "best_window_end": "010",
+        "best_hit": 0,
+        "best_share": 0,
+        "numeric_successors": 0,
+        "sites": 1,
+        "types": 1
+      },
+      {
+        "prev": "320",
+        "exact_cells": 1,
+        "best_window_start": "000",
+        "best_window_end": "010",
+        "best_hit": 0,
+        "best_share": 0,
+        "numeric_successors": 0,
+        "sites": 1,
+        "types": 1
+      },
+      {
+        "prev": "368",
+        "exact_cells": 1,
+        "best_window_start": "000",
+        "best_window_end": "010",
+        "best_hit": 0,
+        "best_share": 0,
+        "numeric_successors": 0,
+        "sites": 1,
+        "types": 1
+      },
+      {
+        "prev": "455",
+        "exact_cells": 1,
+        "best_window_start": "000",
+        "best_window_end": "010",
+        "best_hit": 0,
+        "best_share": 0,
+        "numeric_successors": 0,
+        "sites": 1,
+        "types": 1
+      },
+      {
+        "prev": "565",
+        "exact_cells": 1,
+        "best_window_start": "000",
+        "best_window_end": "010",
+        "best_hit": 0,
+        "best_share": 0,
+        "numeric_successors": 0,
+        "sites": 1,
+        "types": 1
+      }
+    ],
+    "named": {
+      "154_before_806": {
+        "prev": "154",
+        "rank_by_best_window_hit": 1,
+        "row": {
+          "prev": "154",
+          "exact_cells": 14,
+          "best_window_start": "464",
+          "best_window_end": "474",
+          "best_hit": 14,
+          "best_share": 1,
+          "numeric_successors": 14,
+          "sites": 3,
+          "types": 3
+        }
+      },
+      "158_before_806": {
+        "prev": "158",
+        "rank_by_best_window_hit": 2,
+        "row": {
+          "prev": "158",
+          "exact_cells": 9,
+          "best_window_start": "465",
+          "best_window_end": "475",
+          "best_hit": 9,
+          "best_share": 1,
+          "numeric_successors": 9,
+          "sites": 2,
+          "types": 2
+        }
+      },
+      "155_before_806": {
+        "prev": "155",
+        "rank_by_best_window_hit": 7,
+        "row": {
+          "prev": "155",
+          "exact_cells": 2,
+          "best_window_start": "458",
+          "best_window_end": "468",
+          "best_hit": 2,
+          "best_share": 1,
+          "numeric_successors": 2,
+          "sites": 1,
+          "types": 2
+        }
+      },
+      "100_before_806": {
+        "prev": "100",
+        "rank_by_best_window_hit": 9,
+        "row": {
+          "prev": "100",
+          "exact_cells": 1,
+          "best_window_start": "462",
+          "best_window_end": "472",
+          "best_hit": 1,
+          "best_share": 1,
+          "numeric_successors": 1,
+          "sites": 1,
+          "types": 1
+        }
+      }
+    }
+  },
+  "consolidation_effect": [
+    "741-060 remains a clean exception-free exact-successor formula, but exact tournament shows 060-920 is a broader terminal cap.",
+    "740-390 has more exact support than 741-060 but has a complete-looking exception, so it stays below the strict terminal formula by exception-free criteria.",
+    "The 806 series is not best represented as 154-806 alone; individual predecessor tournament keeps 154 and 158 high, while the 155/100 expansion remains post-hoc and must be separately source-bound.",
+    "752-615 is confirmed as a local copy-family mirage: perfect raw support but only two exact cells and one site/type context."
+  ]
+}

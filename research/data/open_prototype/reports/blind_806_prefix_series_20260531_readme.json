@@ -1,0 +1,18 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "packet_id": "blind_806_prefix_series_20260531",
+  "purpose": "Destructive blind test for the promoted metadata candidate that prefix-family signs before 806 produce a distinct 46x/47x series continuation, unlike nonprefix 806 rows.",
+  "blind_sheet": "tmp/blind_806_prefix_series_20260531/blind_806_prefix_series_sheet.jpg",
+  "manifest": "data/open_prototype/reports/blind_806_prefix_series_20260531_manifest.csv",
+  "sealed_answer_key": "data/open_prototype/reports/blind_806_prefix_series_20260531_answer_key.csv",
+  "design": {
+    "positives": 6,
+    "controls": 6,
+    "positive_class": "catalogued 154/158-806 followed by 467/471/473 rows",
+    "control_class": "catalogued nonprefix 806 rows, including terminal and 806-002 continuation cases",
+    "neutralization": "Printed object labels are cropped out; panels expose only neutral IDs BS001..BS012."
+  },
+  "promotion_rule": "The candidate strengthens only if blind readers recover a distinct local visual pattern for prefix-806-successor rows and do not mark nonprefix-806 controls as the same structure at comparable rates.",
+  "failure_rule": "If prefix and nonprefix 806 rows cannot be separated blind, the metadata-layer role split remains unpromoted and may be catalog/segmentation driven."
+}

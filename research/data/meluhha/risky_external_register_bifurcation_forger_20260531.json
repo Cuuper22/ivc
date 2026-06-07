@@ -1,0 +1,27 @@
+{
+  "run_date": "2026-05-31T15:10:00-07:00",
+  "phase": "EXPAND",
+  "bet_id": "V1_V4_EXTERNAL_REGISTER_BIFURCATION_20260531",
+  "vector": "V1 diffuse Meluhha bridge + V4 context-to-meaning",
+  "confidence_tier": "wild shot",
+  "risky_bet": "External Indus-style objects split into two export registers: circular western seals carry the 090/091 route-emulation pair, while non-circular external objects carry the internal administrative set 740/407/806/400.",
+  "observed": {
+    "external_circular": {
+      "rows": 17,
+      "admin_hits": 3,
+      "circular_hits": 12
+    },
+    "external_non_circular": {
+      "rows": 22,
+      "admin_hits": 7,
+      "circular_hits": 0
+    }
+  },
+  "observed_readable": "External circular: 090/091 12/17, admin-set 3/17. External non-circular: admin-set 7/22, 090/091 0/22.",
+  "circular_route_type_matched_fpr": 0.00028,
+  "non_circular_admin_type_matched_fpr": 0.82312,
+  "joint_false_positive_rate": 0.00016,
+  "adversarial_test": "Exact-text canonical collapse; split external rows by circular/SEAL:C status; sample same-type non-external background rows for each external row; require both circular 090/091 enrichment and non-circular 740/407/806/400 enrichment.",
+  "falsifier": "If non-circular external rows are not admin-sign enriched, the cuneiform register bridge prior cannot ride external objects generally. If circular rows lose 090/091 under source validation, the circular export branch also dies.",
+  "next_prediction": "New non-circular external Indus-style objects should prefer 740/407/806/400; new circular Gulf/Dilmun objects should prefer 090/091 and often omit 740."
+}

@@ -1,0 +1,4 @@
+date,packet_id,reviewer,blind_token_count,catalog_token_count,matches_catalog_token_count,fusion_risk,fusion_risk_zone,clean_negative_gate,reason,accepted_claims_increment
+2026-05-29,v2_neg_001,Helmholtz,9,7,false,true,boxes 7-8; box 8 internally fused,fail,Blind token count does not match catalog count and reviewer reports fusion risk,0
+2026-05-29,v2_neg_001,Cicero,13,7,false,true,boxes 10-12; boxes 3-7,fail,Blind token count does not match catalog count and reviewer reports fusion risk,0
+2026-05-29,v2_neg_001,Gibbs,9,7,false,true,tokens 6-8; possible token 4 dash,fail,Blind token count does not match catalog count and reviewer reports fusion risk,0

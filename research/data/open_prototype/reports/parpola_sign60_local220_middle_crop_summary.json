@@ -1,0 +1,55 @@
+{
+  "date": "2026-05-26",
+  "status": "middle_crop_broad_fish_leaf_family_supported_sign60_specific_crosswalk_not_accepted",
+  "research_question": "Do source-visible local 220 middle-component crops cluster with the Parpola fish/leaf family?",
+  "answer": "Yes at broad graphic-family level for M-37, H-938 A, and H-940 A. No article-sign-60-specific crosswalk is accepted, because nearby fish-family controls remain visually close and H-942 A is too weak.",
+  "manifest_row_count": 9,
+  "adjudication_row_count": 6,
+  "accepted_crosswalk_count": 0,
+  "accepted_translation_count": 0,
+  "contact_sheet": {
+    "path": "tmp/parpola_sign60_local220_middle_probe/neutral_packet/neutral_contact_sheet.png",
+    "width": 760,
+    "height": 436,
+    "sha256": "A6B47CF748C5978DA6C41A008AD7F4855EC8D6CC0B2A9E073CA3F3F835F1226A"
+  },
+  "positive_family_witnesses": [
+    {
+      "neutral_id": "N005",
+      "unblinded": "M-37 middle component from local +520-220-415+",
+      "confidence": "medium-high"
+    },
+    {
+      "neutral_id": "N006",
+      "unblinded": "H-938 A middle component from local +520-220-415+",
+      "confidence": "medium"
+    },
+    {
+      "neutral_id": "N007",
+      "unblinded": "H-940 A middle component from local +520-220-415+",
+      "confidence": "medium-high"
+    }
+  ],
+  "weak_or_rejected_positive_witnesses": [
+    {
+      "neutral_id": "N008",
+      "unblinded": "H-942 A middle component candidate from local +520-220-016+",
+      "confidence": "low",
+      "reason": "Blur and truncation block firm family placement."
+    }
+  ],
+  "admissible_now": [
+    "local 220 in M-37/H-938/H-940 source crops is compatible with a broad fish/leaf graphic family",
+    "M-37 is the strongest current source-visible local-220 middle-component witness",
+    "H-942 A remains weak and cannot be positive middle-component evidence"
+  ],
+  "blocked_claims": [
+    "local 220 = Parpola article sign no. 60",
+    "local 220 = Mayig P050 at source-image level",
+    "Parpola sign no. 60 versus nearby fish-family signs can be discriminated from this packet",
+    "sign value",
+    "phonetic value",
+    "translation"
+  ],
+  "next_required_evidence": "A stricter control packet separating Parpola sign no. 60 from nearby fish-family signs such as 57, 61, 66, 70, and 71, plus source-visible Mayig P050 examples."
+}

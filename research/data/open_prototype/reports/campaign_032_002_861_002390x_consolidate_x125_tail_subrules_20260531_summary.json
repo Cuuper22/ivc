@@ -1,0 +1,163 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "x125_tail_subrules",
+  "x125_rows": 11,
+  "head_rows": [
+    {
+      "checked_date": "2026-05-31",
+      "head": "390",
+      "rows": "4",
+      "tail_family_count": "3",
+      "tails": "195:1;632 032:1;632 032 900 563:1;820:1",
+      "tail_families": "632032_family:2;820_cap:1;singleton_tail:1",
+      "scopes": "Mohenjo-daro|SEAL:S|square|Steatite:3;Surkotada|SEAL:S|square|-:1",
+      "objects": "M-38;M-119;M-735;Sktd-1",
+      "decision": "head_allows_multiple_tails"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "head": "610",
+      "rows": "2",
+      "tail_family_count": "1",
+      "tails": "032:2",
+      "tail_families": "single_032:2",
+      "scopes": "Harappa|SEAL:S|square|Steatite:1;Mohenjo-daro|SEAL:S|square|Steatite:1",
+      "objects": "H-74;M-1665",
+      "decision": "clean_head_tail_subrule"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "head": "190",
+      "rows": "1",
+      "tail_family_count": "1",
+      "tails": "632 032:1",
+      "tail_families": "632032_family:1",
+      "scopes": "Mohenjo-daro|SEAL:S|square|Steatite:1",
+      "objects": "M-1692",
+      "decision": "singleton_head_tail"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "head": "405",
+      "rows": "1",
+      "tail_family_count": "1",
+      "tails": "820:1",
+      "tail_families": "820_cap:1",
+      "scopes": "Mohenjo-daro|SEAL:S|square|Steatite:1",
+      "objects": "M-41",
+      "decision": "singleton_head_tail"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "head": "407",
+      "rows": "1",
+      "tail_family_count": "1",
+      "tails": "590 831:1",
+      "tail_families": "singleton_tail:1",
+      "scopes": "Mohenjo-daro|TAB:C|rectangular|Copper:1",
+      "objects": "M-2055",
+      "decision": "singleton_head_tail"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "head": "861",
+      "rows": "1",
+      "tail_family_count": "1",
+      "tails": "<END>:1",
+      "tail_families": "terminal:1",
+      "scopes": "Harappa|SEAL:S|square|Steatite:1",
+      "objects": "H-55",
+      "decision": "singleton_head_tail"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "head": "906",
+      "rows": "1",
+      "tail_family_count": "1",
+      "tails": "<END>:1",
+      "tail_families": "terminal:1",
+      "scopes": "Mohenjo-daro|SEAL:R|cuboid-convex|Steatite:1",
+      "objects": "M-354",
+      "decision": "singleton_head_tail"
+    }
+  ],
+  "tail_family_rows": [
+    {
+      "checked_date": "2026-05-31",
+      "tail_family": "632032_family",
+      "rows": "3",
+      "heads": "390:2;190:1",
+      "scopes": "Mohenjo-daro|SEAL:S|square|Steatite:3",
+      "objects": "M-1692;M-38;M-119",
+      "decision": "multi_head_tail_family"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "tail_family": "820_cap",
+      "rows": "2",
+      "heads": "390:1;405:1",
+      "scopes": "Mohenjo-daro|SEAL:S|square|Steatite:1;Surkotada|SEAL:S|square|-:1",
+      "objects": "M-41;Sktd-1",
+      "decision": "multi_head_tail_family"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "tail_family": "single_032",
+      "rows": "2",
+      "heads": "610:2",
+      "scopes": "Harappa|SEAL:S|square|Steatite:1;Mohenjo-daro|SEAL:S|square|Steatite:1",
+      "objects": "H-74;M-1665",
+      "decision": "repeated_single_head_tail_family"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "tail_family": "singleton_tail",
+      "rows": "2",
+      "heads": "390:1;407:1",
+      "scopes": "Mohenjo-daro|SEAL:S|square|Steatite:1;Mohenjo-daro|TAB:C|rectangular|Copper:1",
+      "objects": "M-735;M-2055",
+      "decision": "multi_head_tail_family"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "tail_family": "terminal",
+      "rows": "2",
+      "heads": "861:1;906:1",
+      "scopes": "Harappa|SEAL:S|square|Steatite:1;Mohenjo-daro|SEAL:R|cuboid-convex|Steatite:1",
+      "objects": "H-55;M-354",
+      "decision": "multi_head_tail_family"
+    }
+  ],
+  "decisions": [
+    {
+      "checked_date": "2026-05-31",
+      "candidate": "X125_TAIL_FAMILY_CONSTRAINT",
+      "decision": "keep_candidate_but_make_it_small_menu_not_strict_grammar",
+      "evidence": "tail families=632032_family:3;820_cap:2;single_032:2;singleton_tail:2;terminal:2; head rows=390:head_allows_multiple_tails;610:clean_head_tail_subrule;190:singleton_head_tail;405:singleton_head_tail;407:singleton_head_tail;861:singleton_head_tail;906:singleton_head_tail",
+      "consequence": "X-slot `125` licenses a constrained tail menu, but only head `610` currently has a clean repeated tail-selection subrule."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "candidate": "X125_HEAD610_SELECTS_032_TAIL",
+      "decision": "keep_cleanest_subrule",
+      "evidence": "2 rows; 032:2; Harappa|SEAL:S|square|Steatite:1;Mohenjo-daro|SEAL:S|square|Steatite:1",
+      "consequence": "Future `002-610-125` is still predicted to take tail `032`; any other tail kills the cleanest X125 subrule."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "candidate": "X125_632032_DEPENDENT_TAIL_FAMILY",
+      "decision": "demote_to_scope_local_family",
+      "evidence": "3 rows; heads 390:2;190:1; scopes Mohenjo-daro|SEAL:S|square|Steatite:3",
+      "consequence": "`632-032` family remains plausible but not head-deterministic; it may be Mohenjo-daro square-seal formula ecology."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "candidate": "X125_820_CAP_IS_NOT_ONE_THING",
+      "decision": "keep_wild",
+      "evidence": "2 rows; heads 390:1;405:1; objects M-41;Sktd-1",
+      "consequence": "`820` after X125 is repeated but split across `405` and weak/source-sensitive `390`; do not assign a cap function yet."
+    }
+  ],
+  "compressed_read": "X-slot `125` survives as a constrained tail-menu operator. The only clean repeated head-tail subrule is `610 -> 032`; other tails are local/singleton/wild."
+}
