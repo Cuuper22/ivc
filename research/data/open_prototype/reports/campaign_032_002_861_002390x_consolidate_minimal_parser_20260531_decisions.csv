@@ -1,0 +1,8 @@
+checked_date,decision_id,action,target,reason,next_status
+2026-05-31,CONSOLIDATE_KEEP_FRAME,keep,002-H-X frame parser,It is the smallest structure that carries all live parse bets and gives continuation predictions.,candidate
+2026-05-31,CONSOLIDATE_MERGE_000_RULES,merge,X=000 zero-complement + frame-proximal null operator,"X=000 is real but too narrow: head-slot and post-frame 000 also terminalize, while pre-frame 000 never closes in the scan.",candidate
+2026-05-31,CONSOLIDATE_DEMOTE_NARROW_X000_ONLY,demote,purely X-specific 000 explanation,"The X-slot rule survives as a subclass, not as the full explanation.",demoted_to_subrule
+2026-05-31,CONSOLIDATE_KEEP_TERMINAL_CLASSES,keep,095/705 terminal class layer,They explain terminal behavior and have direct destructive source targets.,candidate_source_gated
+2026-05-31,CONSOLIDATE_KEEP_OPEN_OPERATORS,keep,530/125 open operator layer,They explain governed complements/routes and contrast with terminal classes.,candidate_formula_risk
+2026-05-31,CONSOLIDATE_DEMOTE_031_575_317,demote,031/575/317 terminal near-misses,"They are terminality pressure from the null scan, but no independent role/function bet has survived yet.",next_expand_only_not_core
+2026-05-31,CONSOLIDATE_DEMOTE_590_692_707,demote,590/692/707 exception baits,"They are useful destructive controls, not stable core grammar until source-bound.",wild_shot_adjudication_hooks

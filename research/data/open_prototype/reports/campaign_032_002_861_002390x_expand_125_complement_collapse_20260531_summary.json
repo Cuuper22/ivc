@@ -1,0 +1,45 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "125_complement_collapse",
+  "x125_occurrences": 11,
+  "lanes": {
+    "632_032_lane": {
+      "occurrences": 3,
+      "sites": "Mohenjo-daro:3",
+      "heads": "390:2;190:1",
+      "collapse_risk": "site_local_formula_risk"
+    },
+    "032_lane": {
+      "occurrences": 2,
+      "sites": "Harappa:1;Mohenjo-daro:1",
+      "heads": "610:2",
+      "collapse_risk": "cross_site_or_cross_head_candidate"
+    },
+    "820_lane": {
+      "occurrences": 2,
+      "sites": "Mohenjo-daro:1;Surkotada:1",
+      "heads": "390:1;405:1",
+      "collapse_risk": "cross_site_or_cross_head_candidate"
+    },
+    "terminal_125": {
+      "occurrences": 2,
+      "sites": "Harappa:1;Mohenjo-daro:1",
+      "heads": "861:1;906:1",
+      "collapse_risk": "cross_site_or_cross_head_candidate"
+    },
+    "195_singleton_lane": {
+      "occurrences": 1,
+      "sites": "Mohenjo-daro:1",
+      "heads": "390:1",
+      "collapse_risk": "singleton"
+    },
+    "590_singleton_lane": {
+      "occurrences": 1,
+      "sites": "Mohenjo-daro:1",
+      "heads": "407:1",
+      "collapse_risk": "singleton"
+    }
+  },
+  "provisional_read": "125 survives as a linker candidate, but 632-032 is formula-risk while 032 and 820 provide small cross-lane support."
+}

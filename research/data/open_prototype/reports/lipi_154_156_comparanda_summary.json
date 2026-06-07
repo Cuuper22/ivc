@@ -1,0 +1,82 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "lipi_154_156_comparanda_packet",
+  "inputs": [
+    "data/open_prototype/lipi/metadata_filtered.csv",
+    "data/open_prototype/reports/crosswalk_alignment_pairs.csv",
+    "data/open_prototype/reports/crosswalk_lipi_to_mayig_candidates.csv",
+    "data/open_prototype/reports/overlap_probe.csv"
+  ],
+  "packet_rows": 40,
+  "pair_counts": {
+    "154_003": 4,
+    "156_003": 36
+  },
+  "pair_scope_counts": {
+    "external_longer_154_003": 2,
+    "external_longer_156_003": 5,
+    "external_strict_154_003": 1,
+    "external_strict_156_003": 10,
+    "h_series_majority_156_003": 21,
+    "h_series_singleton_variant": 1
+  },
+  "external_154_003_objects": "H-1682;M-102;H-366",
+  "strict_external_154_003_objects": "H-366",
+  "ranked_control_rows": 40,
+  "top_control_by_154_003_target": {
+    "H-1682:+154-003-617-033+": {
+      "control": "H-81:+156-003+",
+      "score": 35.105,
+      "reasons": "same_site;same_type;same_shape;same_direction;same_id_prefix"
+    },
+    "M-102:+154-003-900-545+": {
+      "control": "M-132:+156-003-545+",
+      "score": 37.09,
+      "reasons": "same_site;same_type;same_shape;same_material;same_class;same_direction;same_id_prefix;suffix_overlap_1"
+    },
+    "H-366:+154-003+": {
+      "control": "H-2230:+156-003+",
+      "score": 41.23,
+      "reasons": "same_site;same_type;same_material;same_direction;same_sign_count;same_id_prefix;same_token_length"
+    },
+    "H-2237:+154-003+": {
+      "control": "H-2233:+156-003+",
+      "score": 111,
+      "reasons": "same_site;same_type;same_shape;same_material;same_class;same_direction;same_sign_count;same_id_prefix;same_h_series_scope;same_token_length;companion_text_overlap_2"
+    }
+  },
+  "top_non_h_series_control_by_154_003_target": {
+    "H-1682:+154-003-617-033+": {
+      "control": "H-81:+156-003+",
+      "score": 35.105,
+      "reasons": "same_site;same_type;same_shape;same_direction;same_id_prefix"
+    },
+    "M-102:+154-003-900-545+": {
+      "control": "M-132:+156-003-545+",
+      "score": 37.09,
+      "reasons": "same_site;same_type;same_shape;same_material;same_class;same_direction;same_id_prefix;suffix_overlap_1"
+    },
+    "H-366:+154-003+": {
+      "control": "H-288:+156-003+",
+      "score": 32.99,
+      "reasons": "same_site;same_type;same_direction;same_sign_count;same_id_prefix;same_token_length"
+    },
+    "H-2237:+154-003+": {
+      "control": "H-288:+156-003+",
+      "score": 41.25,
+      "reasons": "same_site;same_type;same_class;same_direction;same_sign_count;same_id_prefix;same_token_length"
+    }
+  },
+  "crosswalk_candidate_rows": 2,
+  "crosswalk_alignment_rows": 6,
+  "crosswalk_154_to_P004_alignment_rows": 1,
+  "crosswalk_156_to_P004_alignment_rows": 5,
+  "crosswalk_pressure": "The overlap layer aligns both lipi 154 and lipi 156 with Mayig/Parpola P004 in at least one row. This is allograph/crosswalk pressure, not proof of sameness; source images must decide whether H-2237 is a real visual contrast or a catalog/sign-list split.",
+  "outputs": [
+    "data/open_prototype/reports/lipi_154_156_comparanda_rows.csv",
+    "data/open_prototype/reports/lipi_154_156_ranked_controls.csv",
+    "data/open_prototype/reports/lipi_154_156_crosswalk_pressure.csv",
+    "data/open_prototype/reports/lipi_154_156_comparanda_summary.json"
+  ],
+  "accepted_decipherment_claims": 0
+}

@@ -1,0 +1,60 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "after002_open_head_classifier",
+  "hypotheses_tested": [
+    "`390` is an open selector head after `002`",
+    "low terminality after `002` by itself proves grammar",
+    "`405` is a copied/formula control rather than an open selector head",
+    "`002` opens both closure branches and open governed branches"
+  ],
+  "decisions": [
+    "`390` survives as an open selector-head candidate: n=15, terminal_share=0, next_entropy=3.106891, top_exact_text_share below the copy threshold.",
+    "The stronger `390`-unique claim dies: other heads (`031`, `368`, `220`, `595`, `297`, `365`, `374`, `900`) also behave as open selector heads.",
+    "Low terminality alone is not enough: `405` is nonterminal but formula-locked, with `501` in 29/32 frames.",
+    "`817`, `820`, `861`, `000`, `824`, and `880` are closure heads; this supports a branching `002-H-X` grammar rather than one uniform post-002 function."
+  ],
+  "confidence_after_test": {
+    "002_dependency_opener": "candidate",
+    "390_open_selector_head": "candidate",
+    "390_unique_open_head": "dead",
+    "405_open_selector_head": "dead_formula_control"
+  },
+  "key_rows": {
+    "head_390": {
+      "checked_date": "2026-05-31",
+      "head_after_002": "390",
+      "frame_count": "15",
+      "terminal_count": "0",
+      "terminal_share": "0.000000",
+      "next_entropy_bits": "3.106891",
+      "top_next_share": "0.266667",
+      "top_exact_text_share": "0.066667",
+      "top_next": "125:4;095:2;705:2;072:1;140:1;346:1;530:1;590:1;692:1;707:1",
+      "top_sites": "Mohenjo-daro:9;Harappa:3;Dholavira:1;Surkotada:1;Unknown:1",
+      "top_types": "SEAL:S:13;TAB:B:2",
+      "classifier_class": "open_selector_head",
+      "confidence_movement": "`390` stays a candidate open class head after `002`; not unique, but high-count and non-formula-locked",
+      "examples": "H-1993:+740-000-220-004-002-390-095+ | H-68:+090-740-220-003-002-390-072+ | H-773:+740-798-803-002-390-530-741+ | M-38:+740-690-435-255-220-032-240-235-002-390-125-632-032+ | M-70:+226-032-002-390-692+ | M-71:+151-279-142-002-390-095+ | M-119:+151-337-484-002-390-125-632-032-900-563+ | M-213:+740-384-002-390-346+"
+    },
+    "head_405": {
+      "checked_date": "2026-05-31",
+      "head_after_002": "405",
+      "frame_count": "32",
+      "terminal_count": "0",
+      "terminal_share": "0.000000",
+      "next_entropy_bits": "0.597455",
+      "top_next_share": "0.906250",
+      "top_exact_text_share": "0.906250",
+      "top_next": "501:29;125:1;321:1;372:1",
+      "top_sites": "Harappa:30;Mohenjo-daro:2",
+      "top_types": "TAB:B:29;SEAL:S:3",
+      "classifier_class": "formula_locked_nonterminal_head",
+      "confidence_movement": "`405` becomes the adversarial copy/formula control for nonterminal heads",
+      "examples": "H-22:+740-920-320-233-806-002-405-321+ | H-252:+520-240-002-405-501+ | H-253:+520-240-002-405-501+ | H-254:+520-240-002-405-501+ | H-255:+520-240-002-405-501+ | H-256:+520-240-002-405-501+ | H-257:+520-240-002-405-501+ | H-258:+520-240-002-405-501+"
+    },
+    "open_heads": "031:15;390:15;368:12;220:11;595:7;297:5;365:5;374:5;900:5",
+    "closure_heads": "861:174;817:156;820:102;000:58;824:9;880:5",
+    "formula_locked_heads": "405:32;056:8"
+  },
+  "next_prediction": "New `002-390-X` rows should preserve X-slot diversity and avoid exact-text domination. If `002-390` collapses toward a single high-share tail like `405-501`, demote `390` to formula-locked."
+}

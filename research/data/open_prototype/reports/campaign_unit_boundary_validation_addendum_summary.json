@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-05-26T00:00:00-07:00",
+  "scope": "mechanical validation/addendum for unit-boundary 520 vs 220 campaign",
+  "extraction_basis": "numeric tokens parsed from metadata_filtered.csv text field; damaged/open rows retained and flagged",
+  "validation": {
+    "metadata_rows": 5679,
+    "start_520_count": 263,
+    "start_520_followed_by_220": 59,
+    "start_520_top3_followers_count": 155,
+    "occurrence_220_count": 477,
+    "occurrence_220_known_next_count": 390,
+    "occurrence_220_followed_by_415": 91,
+    "occurrence_220415_with_prev520": 28,
+    "prev520_known_next_total": 60,
+    "not_prev520_known_next_total": 330,
+    "exact_520_220_415_count": 17,
+    "exact3_520_220_related_count": 90
+  },
+  "generated_file_row_counts": {
+    "start_520_rows": 263,
+    "occurrence_220_rows": 477,
+    "occurrence_220_415_rows": 91,
+    "exact3_related_rows": 90
+  },
+  "denominator_note": "p_next_415_given_220=91/390 uses known-next/non-END denominator; campaign_unit_boundary_220_next_summary.csv pct_of_220 uses all 477 occurrences.",
+  "enrichment": {
+    "prev520_next415": 28,
+    "prev520_known_next_total": 60,
+    "not_prev520_next415": 63,
+    "not_prev520_known_next_total": 330,
+    "p_prev520": 0.466667,
+    "p_not_prev520": 0.190909,
+    "odds_ratio": 3.708333,
+    "risk_ratio": 2.444444
+  },
+  "damaged_open_counts": [
+    {
+      "scope": "start_520_rows",
+      "total": 263,
+      "damaged_or_open_count": 31,
+      "clean_closed_count": 232,
+      "examples": "41.1:+520-220-002[;95.1:+520-033-705-240-798-002-000[;118.1:+520-515-255[;140.1:+520-033[;164.1:+520-001-090-000[;277.2:+520-220[;517.1:+520-220-415-000[;651.1:+520[;716.1:]520-460-495[;739.1:+520-220[;836.2:+520-072-255[;873.1:+520[;1500.1:+520-220[;2080.1:+520-070-002-000[;2110.2:+520-000[;2245.1:+520-033-705-240-235[;2326.1:+520-033-705-002-585[;3125.1:+520[;3140.1:+520-220-016-741-556-000[;3186.1:+520-920-320-220-415["
+    },
+    {
+      "scope": "start_520_second_220",
+      "total": 59,
+      "damaged_or_open_count": 7,
+      "clean_closed_count": 52,
+      "examples": "41.1:+520-220-002[;277.2:+520-220[;517.1:+520-220-415-000[;739.1:+520-220[;1500.1:+520-220[;3140.1:+520-220-016-741-556-000[;3413.1:+520-220-415-817["
+    },
+    {
+      "scope": "occurrence_220_all",
+      "total": 477,
+      "damaged_or_open_count": 110,
+      "clean_closed_count": 367,
+      "examples": "41.1:+520-220-002[;63.1:]000-220-838-033-705-240+;83.1:]176-220-415-060-920+;101.1:]000-220-032-060-766+;174.1:]590-220-003+;175.1:]220-032+;185.1:]080-388-220[;186.1:]000-000-220+;187.2:]220[;206.1:]000-220-840[;252.1:]220[;277.2:+520-220[;302.2:]220-700[;517.1:+520-220-415-000[;517.2:]000-220[;538.1:]220-032-176-000+;568.1:]220+;586.1:+590-032-220[;673.2:]220-415+;707.1:+740-463-495-220["
+    },
+    {
+      "scope": "occurrence_220_known_next",
+      "total": 390,
+      "damaged_or_open_count": 76,
+      "clean_closed_count": 314,
+      "examples": "41.1:+520-220-002[;63.1:]000-220-838-033-705-240+;83.1:]176-220-415-060-920+;101.1:]000-220-032-060-766+;174.1:]590-220-003+;175.1:]220-032+;206.1:]000-220-840[;302.2:]220-700[;517.1:+520-220-415-000[;538.1:]220-032-176-000+;673.2:]220-415+;770.2:]220-415+;795.2:]220-760[;865.2:]220-415+;928.1:+220-000-700[;947.2:]705-220-000[;1025.2:]220-415+;1078.1:]000-220-032-002-820+;1094.1:+679-220-240-803-000[;1159.1:+220-000["
+    },
+    {
+      "scope": "occurrence_220_next415",
+      "total": 91,
+      "damaged_or_open_count": 16,
+      "clean_closed_count": 75,
+      "examples": "83.1:]176-220-415-060-920+;517.1:+520-220-415-000[;673.2:]220-415+;770.2:]220-415+;865.2:]220-415+;1025.2:]220-415+;1407.1:+832-904-220-415-806-000[;2902.1:]000-220-415-832[;3082.1:]000-220-415-798-746-442-556+;3186.1:+520-920-320-220-415[;3409.1:+740-176-220-415-002-435-000[;3413.1:+520-220-415-817[;3600.1:+407-845-220-415-798-000[;3861.1:]220-416-220-415-741-000[;4009.1:]220-415+;4895.1:+354-001-405-840-626-416-220-415-798-745["
+    },
+    {
+      "scope": "exact_520_220_415",
+      "total": 17,
+      "damaged_or_open_count": 0,
+      "clean_closed_count": 17,
+      "examples": ""
+    }
+  ],
+  "accepted_mapping_value_translation": 0,
+  "outputs": [
+    "data\\open_prototype\\reports\\campaign_unit_boundary_520_second_site_type_addendum.csv",
+    "data\\open_prototype\\reports\\campaign_unit_boundary_220_next_site_type_addendum.csv",
+    "data\\open_prototype\\reports\\campaign_unit_boundary_220_next415_enrichment_addendum.csv",
+    "data\\open_prototype\\reports\\campaign_unit_boundary_damage_open_addendum.csv",
+    "data\\open_prototype\\reports\\campaign_unit_boundary_validation_addendum_summary.json"
+  ]
+}

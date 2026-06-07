@@ -1,0 +1,91 @@
+{
+  "date": "2026-05-29",
+  "triage_id": "directionality_route_visual_triage_v1",
+  "purpose": "Manual visual admissibility triage for public CISI OCR route candidates feeding the effective-unicity directionality source-normalization queue.",
+  "inputs": {
+    "status_csv": "data/open_prototype/reports/effective_unicity_directionality_public_route_probe_status.csv"
+  },
+  "counts": {
+    "target_rows": 79,
+    "public_plate_route_candidates": 38,
+    "manually_visual_reviewed": 9,
+    "immediate_blind_packet_candidates": 4,
+    "accepted_claims_increment": 0
+  },
+  "by_admissibility_tier": {
+    "tier_1_ready_for_blind_token_boxing_candidate": 4,
+    "tier_2_source_panel_visible_needs_recrop_or_quality_gate": 3,
+    "tier_3_route_only_low_legibility": 2,
+    "tier_4_plate_route_unreviewed": 29,
+    "tier_5_catalog_locator_only": 1,
+    "tier_6_no_public_route": 40
+  },
+  "by_visual_review_status": {
+    "data_or_register_route_only": 1,
+    "low_legibility_tablet_route": 2,
+    "not_found_in_public_cisi_ocr_layer": 40,
+    "not_yet_visual_reviewed": 29,
+    "source_panel_visible_but_low_legibility_complex_tablet": 1,
+    "source_panel_visible_candidate": 3,
+    "source_panel_visible_candidate_needs_no_overlay_recrop": 1,
+    "source_panel_visible_volume_mismatch_gate": 1,
+    "source_panel_visible_weak_partial": 1
+  },
+  "immediate_candidates": [
+    {
+      "queue_rank": "9",
+      "representative_cisi": "H-654",
+      "site": "Harappa",
+      "type": "SEAL:R",
+      "text": "+405-061-740-806+",
+      "diff_per_transition": "2.979214",
+      "best_volume": "cisi_pakistan",
+      "best_page_index": "342",
+      "best_local_artifact": "tmp/effective_unicity_directionality_public_route_probe/crops/9_H_654_cisi_pakistan_n342_1_context_enhanced_x2.jpg",
+      "next_gate": "Generate no-overlay source-panel crop and include as a positive in the blind token-box packet."
+    },
+    {
+      "queue_rank": "10",
+      "representative_cisi": "M-1310",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:R",
+      "text": "+407-004-001-740-407-590-235+",
+      "diff_per_transition": "2.915356",
+      "best_volume": "cisi_pakistan",
+      "best_page_index": "202",
+      "best_local_artifact": "tmp/effective_unicity_directionality_public_route_probe/crops/10_M_1310_cisi_pakistan_n202_1_context_enhanced_x2.jpg",
+      "next_gate": "Generate no-overlay source-panel crop from the page image and blind-box it with matched negatives."
+    },
+    {
+      "queue_rank": "11",
+      "representative_cisi": "M-1320",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:R",
+      "text": "+527-555-231-240-798+",
+      "diff_per_transition": "2.876525",
+      "best_volume": "cisi_pakistan",
+      "best_page_index": "203",
+      "best_local_artifact": "tmp/effective_unicity_directionality_public_route_probe/crops/11_M_1320_cisi_pakistan_n203_1_context_enhanced_x2.jpg",
+      "next_gate": "Generate no-overlay source-panel crop and include as a positive in the blind token-box packet."
+    },
+    {
+      "queue_rank": "15",
+      "representative_cisi": "M-811",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:S",
+      "text": "+226-032-803+",
+      "diff_per_transition": "2.71824",
+      "best_volume": "cisi_pakistan",
+      "best_page_index": "104",
+      "best_local_artifact": "tmp/effective_unicity_directionality_public_route_probe/crops/15_M_811_cisi_pakistan_n104_1_context_enhanced_x2.jpg",
+      "next_gate": "Generate no-overlay source-panel crop and include as a positive in the blind token-box packet."
+    }
+  ],
+  "interpretation_boundary": "Visual route triage cannot validate source-normalized token order, physical direction, sign identity, meaning, phonetic value, language family, or translation.",
+  "forger_boundary": "No forger pass has been run on visual admissibility tiers. These tiers only select candidates for the next blind token-boxing/control packet; accepted claims remain zero.",
+  "outputs": {
+    "triage_csv": "data/open_prototype/reports/effective_unicity_directionality_route_visual_triage.csv",
+    "summary_json": "data/open_prototype/reports/effective_unicity_directionality_route_visual_triage_summary.json",
+    "reviewed_contact_sheet": "tmp/effective_unicity_directionality_public_route_probe/directionality_route_visual_triage_reviewed_contact_sheet.jpg"
+  }
+}

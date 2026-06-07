@@ -1,0 +1,5 @@
+checked_date,candidate,decision,evidence,consequence
+2026-05-31,X095_TERMINAL_CLASS_LABEL,keep_candidate,X terminal 3/3; global terminal 8/30; sites Harappa:1;Lothal:1;Mohenjo-daro:1; heads 390:2;812:1,`095` is the cleaner terminal-class candidate: all current X-slot rows close and raw global terminality is low.
+2026-05-31,X705_TERMINAL_CLASS_LABEL,split_and_narrow,X terminal 4/5; global terminal 59/219; weak rows 2; tails <END>:4;125:1,"`705` becomes terminal-default-with-320-705-125-exception, not a clean terminal class equal to `095`."
+2026-05-31,X095_X705_TERMINAL_CLASS_LABELS,unbundle,095 verdict terminal_class_candidate; 705 verdict terminal_class_candidate; 692 verdict raw_terminal_prior_explains,"Do not state bundled `095/705` as one claim; carry `095` stronger, `705` narrower, and keep `692` demoted."
+2026-05-31,X692_BOUNDARY_CLOSER_NOT_390_VALUE,keep_demoted,X terminal 2/3; global terminal 59/77,"`692` remains explained by raw terminal prior, not by a useful `390` payload role."

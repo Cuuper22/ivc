@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-26",
+  "question": "Can public recropping improve H-2147 or H-940 enough to strengthen the local 110 / Parpola sign-no.-41 branch?",
+  "result": "No upgrade. H-2147 is weakened as a panel-level witness: raw PDF-image recropping shows the Figure 10.17 candidate is not a clean single-sign panel, but a multi-component panel whose right component was the earlier visual attraction. H-940 IIIF max and IA JP2 routes have the same pixel dimensions as the existing public page route and remain low-contrast/split. H-2148 remains the cleanest source-visible count-mapped 110 branch witness.",
+  "accepted_claims": {
+    "h2147_object_route": "H-2147 remains public object-visible through Figure 10.17 -> H95-2514.",
+    "h2147_visual_weight": "H-2147 may be used only as component-level visual pressure until source-side/sign notes map its visible components to local 673.1 or 673.2.",
+    "h940_public_limit": "H-940 B has no better public-resolution witness in the checked IA IIIF or JP2 routes.",
+    "h2148_status": "H-2148 remains public_visual_route_count_mapped and is the strongest current 110 branch target."
+  },
+  "not_accepted": [
+    "H-2147 lower panel is a clean single-sign panel",
+    "H-2147 right component equals local 110",
+    "H-940 rejoins the H-2148/H-2147 branch",
+    "local 110 equals Parpola sign no. 41",
+    "sign value",
+    "phonetic value",
+    "language identification",
+    "translation"
+  ],
+  "stored_report": "data/open_prototype/reports/h2147_h940_110_recrop_recheck.csv",
+  "next_gate": "Acquire H-2147 Figure 27.14/source-side notes and an independent better H-940 B source panel. Stop treating IA page derivatives as likely to solve H-940. If H-2147 stays multi-component and H-940 stays split, the branch becomes H-2148-led only until outside controls or source notes rescue it."
+}

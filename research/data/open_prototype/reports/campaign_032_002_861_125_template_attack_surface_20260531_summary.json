@@ -1,0 +1,12 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "125_template_attack_surface",
+  "rows": {
+    "raw": 5679,
+    "canonical_numeric_sequences": 3503
+  },
+  "decisions": "V2_610_RARE_GOVERNED_TITLE_HEAD_20260531:candidate_strengthened_not_promoted_610_specific_head_with_leaky_032_tail;V2_297_350_PAIR_HEAD_SELECTS_125_413_20260531:candidate_strengthened_not_promoted_pair_head_with_template_tail;V4_125_BROAD_GOVERNED_TITLE_SUFFIX_20260531:candidate_mixed_not_promoted",
+  "high_value_damage": "The broad promoted `125` grammar should be downgraded to candidate_mixed_not_promoted: the two cross-site carriers survive corpus attack, but each still depends on source-weak rows.",
+  "new_parser_move": "Parse `610` and `297-350` as head-level carriers, not as alternate X values equivalent to `125/095/692/705`; parse `125` as a tail-bearing suffix inside those carriers.",
+  "next_falsifier": "Look for `610` outside `002-610-125-032`, `297-350` outside `002-297-350-125-413`, and `125-413` outside the exact pair-head template before doing more provenance work."
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2026-05-29",
+  "status": "m381_source_visible_negative_control_packet_created",
+  "counts": {
+    "blind_items": 1,
+    "answer_key_rows": 1,
+    "review_template_rows": 1,
+    "accepted_claims_increment": 0
+  },
+  "files": {
+    "blind_manifest": "data/open_prototype/reports/source_box_negative_control_v2_m381_blind_manifest.csv",
+    "answer_key": "data/open_prototype/reports/source_box_negative_control_v2_m381_answer_key.csv",
+    "review_template": "data/open_prototype/reports/source_box_negative_control_v2_m381_review_template.csv",
+    "blind_image": "tmp/source_box_negative_control_v2/blind_packet/v2_neg_001_source_panel.jpg"
+  },
+  "boundary": [
+    "This packet does not promote a claim.",
+    "Stage 1 is blind tokenization only.",
+    "Stage 2 may compare the blind boxes to the catalog text, but only after tokenization is recorded."
+  ]
+}

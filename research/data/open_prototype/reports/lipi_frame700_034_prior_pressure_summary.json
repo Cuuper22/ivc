@@ -1,0 +1,81 @@
+{
+  "date": "2026-05-25",
+  "experiment": "Lipi FRAME700 034 prior pressure probe",
+  "question": "What do major prior-work claims force us to do to the live FRAME700 034 candidate?",
+  "inputs": [
+    "data\\open_prototype\\reports\\lipi_frame700_subtype_rows.csv",
+    "data\\open_prototype\\reports\\lipi_frame700_subtype_blocked_null_summary.json",
+    "data\\open_prototype\\reports\\lipi_frame700_034_independent_triad_audit.csv",
+    "data\\open_prototype\\reports\\lipi_frame700_034_independent_triad_audit_summary.json",
+    "data\\open_prototype\\reports\\lipi_frame700_034_independent_source_leads_summary.json"
+  ],
+  "pressure_rows": 8,
+  "frame700_rows": 353,
+  "frame700_no_h_rows": 331,
+  "no_h_034_rows": 93,
+  "harsh_block_policy": "type_sides_order_context_relation",
+  "harsh_034_observed": 0.677419,
+  "harsh_034_null_p95": 0.548387,
+  "harsh_034_p_ge": 0,
+  "harsh_overall_observed": 0.435045,
+  "harsh_overall_null_p95": 0.425982,
+  "order_by_subtype": {
+    "032": {
+      "700_first": 85,
+      "700_last": 17
+    },
+    "033": {
+      "700_first": 113,
+      "700_last": 24
+    },
+    "034": {
+      "700_first": 101,
+      "700_last": 13
+    }
+  },
+  "no_h_order_by_subtype": {
+    "032": {
+      "700_first": 85,
+      "700_last": 17
+    },
+    "033": {
+      "700_first": 112,
+      "700_last": 24
+    },
+    "034": {
+      "700_first": 80,
+      "700_last": 13
+    }
+  },
+  "no_h_034_type_counts": {
+    "TAB:I": 51,
+    "TAB:B": 42
+  },
+  "no_h_034_site_counts": {
+    "Harappa": 93
+  },
+  "no_h_034_context_counts": {
+    "single_longer_text": 63,
+    "all_short_or_no_longer_text": 18,
+    "single_short_no_longer_text": 10,
+    "multiple_longer_texts": 2
+  },
+  "triad_audit": {
+    "audited_triads": 93,
+    "tier_A_independent_source_ready": 4,
+    "tier_C_repeated_target_family_pressure": 45,
+    "h910_independence_rank": "50"
+  },
+  "source_leads": {
+    "source_grade_public_row_hits": 0,
+    "public_object_leads": 1,
+    "secondary_bibliographic_pointers": 1,
+    "objects_still_requiring_CISI_HARP_or_archive_images": 12
+  },
+  "accepted_decipherment_claims": 0,
+  "conclusion": "Prior work does not license a reading. It keeps 034 alive as a distributional residue, demotes repeated-family evidence, and forces source-side validation before any upgrade.",
+  "outputs": [
+    "data\\open_prototype\\reports\\lipi_frame700_034_prior_pressure_probe.csv",
+    "data\\open_prototype\\reports\\lipi_frame700_034_prior_pressure_summary.json"
+  ]
+}

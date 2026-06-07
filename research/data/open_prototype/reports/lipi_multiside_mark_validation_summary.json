@@ -1,0 +1,178 @@
+{
+  "source": "lipi multi-side mark stratified validation queue",
+  "target_strata": [
+    "Harappa TAB:B",
+    "Harappa TAB:I"
+  ],
+  "artifact_groups_with_short_marks": 397,
+  "priority_counts": {
+    "P1_tab_i_three_side_short_series": 22,
+    "P1_mixed_short_long_core": 205,
+    "P2_tab_b_core_short_queue": 81,
+    "P2_tab_i_core_short_queue": 70,
+    "P3_other_short_mark": 19
+  },
+  "top_sequence_families": [
+    {
+      "type": "TAB:I",
+      "sequence_signature": "1:+400-740-176+|2:+700-033+",
+      "artifact_count": 13,
+      "sample_cisi": [
+        "H-309",
+        "H-316",
+        "H-353",
+        "H-357",
+        "H-935",
+        "H-978",
+        "H-1302",
+        "H-1303",
+        "H-1304",
+        "H-1344",
+        "H-1345",
+        "H-1346"
+      ],
+      "priority_counts": {
+        "P1_mixed_short_long_core": 13
+      }
+    },
+    {
+      "type": "TAB:I",
+      "sequence_signature": "1:+861-003+|2:+700-034+|3:+156-003+",
+      "artifact_count": 13,
+      "sample_cisi": [
+        "H-2218",
+        "H-2219",
+        "H-2220",
+        "H-2222",
+        "H-2223",
+        "H-2224",
+        "H-2225",
+        "H-2229",
+        "H-2231",
+        "H-2232",
+        "H-2234",
+        "H-2236"
+      ],
+      "priority_counts": {
+        "P1_tab_i_three_side_short_series": 13
+      }
+    },
+    {
+      "type": "TAB:I",
+      "sequence_signature": "1:+400-740-176+|2:+700-034+",
+      "artifact_count": 7,
+      "sample_cisi": [
+        "H-308",
+        "H-312",
+        "H-313",
+        "H-314",
+        "H-317",
+        "H-936",
+        "H-1273"
+      ],
+      "priority_counts": {
+        "P1_mixed_short_long_core": 7
+      }
+    },
+    {
+      "type": "TAB:I",
+      "sequence_signature": "1:+700-034+|2:+861-003+|3:+156-003+",
+      "artifact_count": 7,
+      "sample_cisi": [
+        "H-2221",
+        "H-2226",
+        "H-2227",
+        "H-2228",
+        "H-2230",
+        "H-2233",
+        "H-2235"
+      ],
+      "priority_counts": {
+        "P1_tab_i_three_side_short_series": 7
+      }
+    },
+    {
+      "type": "TAB:I",
+      "sequence_signature": "1:+700-033+|2:+368-900+",
+      "artifact_count": 4,
+      "sample_cisi": [
+        "H-927",
+        "H-928",
+        "H-929",
+        "H-2131"
+      ],
+      "priority_counts": {
+        "P2_tab_i_core_short_queue": 4
+      }
+    },
+    {
+      "type": "TAB:B",
+      "sequence_signature": "1:+700-032+|2:+740-031-001-140+",
+      "artifact_count": 3,
+      "sample_cisi": [
+        "H-1771",
+        "H-1772",
+        "H-1773"
+      ],
+      "priority_counts": {
+        "P1_mixed_short_long_core": 3
+      }
+    },
+    {
+      "type": "TAB:I",
+      "sequence_signature": "1:+700-033+|2:+400-740-176+",
+      "artifact_count": 3,
+      "sample_cisi": [
+        "H-356",
+        "H-934",
+        "H-979"
+      ],
+      "priority_counts": {
+        "P1_mixed_short_long_core": 3
+      }
+    },
+    {
+      "type": "TAB:I",
+      "sequence_signature": "1:+700-034+|2:+002-861-416+",
+      "artifact_count": 3,
+      "sample_cisi": [
+        "H-2094",
+        "H-2095",
+        "H-2096"
+      ],
+      "priority_counts": {
+        "P2_tab_i_core_short_queue": 3
+      }
+    },
+    {
+      "type": "TAB:I",
+      "sequence_signature": "1:+740-840-013+|2:+700-033+",
+      "artifact_count": 3,
+      "sample_cisi": [
+        "H-326",
+        "H-924",
+        "H-925"
+      ],
+      "priority_counts": {
+        "P1_mixed_short_long_core": 3
+      }
+    },
+    {
+      "type": "TAB:B",
+      "sequence_signature": "1:+033-700+|2:+400-137+",
+      "artifact_count": 2,
+      "sample_cisi": [
+        "H-1858",
+        "H-1859"
+      ],
+      "priority_counts": {
+        "P2_tab_b_core_short_queue": 2
+      }
+    }
+  ],
+  "outputs": [
+    "data/open_prototype/reports/lipi_multiside_mark_validation_queue.csv",
+    "data/open_prototype/reports/lipi_multiside_mark_sequence_families.csv"
+  ],
+  "interpretation_boundary": "Artifact-side validation queue only; repeated short-mark families are not numerical values, metrological readings, physical side functions, sign meanings, phonetic values, language identity, or translations."
+}

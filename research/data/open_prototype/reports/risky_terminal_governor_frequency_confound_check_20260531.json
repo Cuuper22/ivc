@@ -1,0 +1,57 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "candidate_id": "risky_terminal_governor_frequency_confound_check_20260531",
+  "tier": "strengthener",
+  "bet": "The 002/060 terminal-governor unicity signal is not just a high-frequency penultimate-sign artifact.",
+  "source": "data/open_prototype/reports/risky_terminal_governor_unicity_delta_20260531_penults.csv",
+  "target_penults": [
+    {
+      "penult": "002",
+      "evaluated_rows": 313,
+      "top3_accuracy": 0.8562300319488818,
+      "mean_effective_candidates": 6.224615013582936
+    },
+    {
+      "penult": "060",
+      "evaluated_rows": 143,
+      "top3_accuracy": 0.6363636363636364,
+      "mean_effective_candidates": 6.748682739174988
+    }
+  ],
+  "high_support_non_target_penults": [
+    {
+      "penult": "740",
+      "evaluated_rows": 133,
+      "top3_accuracy": 0.09022556390977443,
+      "mean_effective_candidates": 54.06583473522742
+    },
+    {
+      "penult": "220",
+      "evaluated_rows": 56,
+      "top3_accuracy": 0.2857142857142857,
+      "mean_effective_candidates": 13.740395385786659
+    },
+    {
+      "penult": "032",
+      "evaluated_rows": 55,
+      "top3_accuracy": 0.01818181818181818,
+      "mean_effective_candidates": 20.457835577759525
+    },
+    {
+      "penult": "390",
+      "evaluated_rows": 55,
+      "top3_accuracy": 0.12727272727272726,
+      "mean_effective_candidates": 18.6933383477539
+    }
+  ],
+  "low_support_warning": {
+    "penult": "240",
+    "evaluated_rows": 23,
+    "top3_accuracy": 0.6521739130434783,
+    "mean_effective_candidates": 4.925386577737421,
+    "interpretation": "This is the nearest non-target mimic by top3/effective-candidate behavior, but it has only 23 evaluated rows and should be treated as a future EXPAND bet, not as a matched frequency confound for 002/060."
+  },
+  "decision": "frequency_confound_not_sufficient",
+  "next_test": "During the next EXPAND phase, test penult 240 as its own risky local-governor candidate instead of using it as a reason to demote 002/060."
+}

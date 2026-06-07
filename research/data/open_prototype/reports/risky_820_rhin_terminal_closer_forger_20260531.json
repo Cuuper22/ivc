@@ -1,0 +1,440 @@
+{
+  "run_date_time": "2026-05-31T14:04:00-07:00",
+  "vector": "V4 context-to-meaning",
+  "risky_bet_tier": "promoted candidate",
+  "claim": "`820` is the rhinoceros square-seal terminal closer inside the local `002 -> {817,820,861}` terminal set.",
+  "observed": "Rhin SEAL:S exact-text-collapsed terminal frames are 4/4 820; background square terminal frames=211; site-matched target=4/4; distinct target family keys=3.",
+  "target_terminal_false_positive_rate": 0.0019,
+  "site_matched_terminal_false_positive_rate": 0.002,
+  "any_symbol_any_terminal_maxstat_false_positive_rate": 0,
+  "any_symbol_820_terminal_maxstat_false_positive_rate": 0.0025,
+  "source_catalogue_prediction_check": {
+    "path": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\pdfs\\S1-IndusZoomorphicIconCatalogue_20260531.txt",
+    "pdf_path": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\pdfs\\S1-IndusZoomorphicIconCatalogue_20260531.pdf",
+    "source_url": "https://storage.googleapis.com/cahcblr-pdfs/assets/ijhs/S1-IndusZoomorphicIconCatalogue.pdf",
+    "last_write_time": "2026-05-31T21:09:10.515Z",
+    "verified_rows": [
+      {
+        "cisi": "M-1137",
+        "object": "3504.1",
+        "metadata_symbol": "NA",
+        "source_catalogue_symbol": "Rhin",
+        "terminal": "820",
+        "text": "+740-904-002-820+"
+      }
+    ]
+  },
+  "source_visual_page_check": {
+    "path": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\820_rhin_source_pages\\Pakistan_n160_w2000.jpg",
+    "source_url": "https://archive.org/download/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan/Corpus%20of%20Indus%20Seals%20and%20Inscriptions.%20Collections%20in%20Pakistan/page/n160_w2000.jpg",
+    "page_header_visible": "MOHENJO-DARO 1136-1140 SEALS rhinoceros",
+    "visual_result": "Downloaded CISI Pakistan page n160 visibly groups M-1136, M-1137, M-1138, and M-1139 under the rhinoceros page header and shows the terminal 820 as a wheel/rosette sign, including the metadata-None M-1137 row.",
+    "last_write_time": "2026-05-31T21:20:29.946Z"
+  },
+  "source_augmented_observed": "Source-augmented Rhin terminal frames are 5/5 820; verified held-out metadata-None rows=1.",
+  "source_augmented_target_false_positive_rate": 0.0001,
+  "source_augmented_any_symbol_maxstat_false_positive_rate": 0,
+  "controls": "Exact-text collapse before testing; terminal labels shuffled among all square `002->Y` terminal frames; site-matched label shuffle restricted to target-site frames; all-symbol maxstat checks whether any icon class with >=4 frames becomes equally pure for any terminal or specifically 820.",
+  "weakness": "All target frames are Mohenjo-daro rhinoceros square seals, so this is not pan-corpus semantics. It is a local icon/register candidate unless non-Mohenjo rhinoceros frames appear and keep selecting 820.",
+  "promotion_condition": "Promote only if an additional source-bound rhinoceros square frame outside the same Mohenjo-daro family also selects terminal 820, or if a currently unlabeled high-priority 002-820 square row is source-verified as rhinoceros/trough, while all-symbol maxstat remains below 0.05.",
+  "break_condition": "A source-bound rhinoceros square terminal frame selecting 817 or 861, or a maxstat null that routinely finds 4/4 icon-terminal cells, demotes the bet.",
+  "observed_target": {
+    "total": 4,
+    "hits": 4,
+    "share": 1
+  },
+  "observed_site_target": {
+    "total": 4,
+    "hits": 4,
+    "share": 1
+  },
+  "source_augmented_target": {
+    "total": 5,
+    "hits": 5,
+    "share": 1
+  },
+  "observed_symbol_rows": [
+    {
+      "symbol": "Rhin",
+      "total": 4,
+      "best_label": "820",
+      "best_hits": 4,
+      "best_share": 1,
+      "counts": "{\"817\":0,\"820\":4,\"861\":0}"
+    },
+    {
+      "symbol": "Elep",
+      "total": 9,
+      "best_label": "861",
+      "best_hits": 5,
+      "best_share": 0.5555555555555556,
+      "counts": "{\"817\":4,\"820\":0,\"861\":5}"
+    },
+    {
+      "symbol": "Bull1",
+      "total": 28,
+      "best_label": "817",
+      "best_hits": 14,
+      "best_share": 0.5,
+      "counts": "{\"817\":14,\"820\":6,\"861\":8}"
+    },
+    {
+      "symbol": "Bull1:I",
+      "total": 12,
+      "best_label": "820",
+      "best_hits": 6,
+      "best_share": 0.5,
+      "counts": "{\"817\":3,\"820\":6,\"861\":3}"
+    },
+    {
+      "symbol": "Bull1:L",
+      "total": 6,
+      "best_label": "817",
+      "best_hits": 3,
+      "best_share": 0.5,
+      "counts": "{\"817\":3,\"820\":0,\"861\":3}"
+    },
+    {
+      "symbol": "Bull1:J",
+      "total": 25,
+      "best_label": "817",
+      "best_hits": 12,
+      "best_share": 0.48,
+      "counts": "{\"817\":12,\"820\":3,\"861\":10}"
+    },
+    {
+      "symbol": "Bull1:S",
+      "total": 24,
+      "best_label": "861",
+      "best_hits": 11,
+      "best_share": 0.4583333333333333,
+      "counts": "{\"817\":10,\"820\":3,\"861\":11}"
+    },
+    {
+      "symbol": "Gaur",
+      "total": 9,
+      "best_label": "817",
+      "best_hits": 4,
+      "best_share": 0.4444444444444444,
+      "counts": "{\"817\":4,\"820\":2,\"861\":3}"
+    },
+    {
+      "symbol": "Bull1:W",
+      "total": 60,
+      "best_label": "861",
+      "best_hits": 25,
+      "best_share": 0.4166666666666667,
+      "counts": "{\"817\":19,\"820\":16,\"861\":25}"
+    },
+    {
+      "symbol": "Bull1:V",
+      "total": 5,
+      "best_label": "817",
+      "best_hits": 2,
+      "best_share": 0.4,
+      "counts": "{\"817\":2,\"820\":1,\"861\":2}"
+    },
+    {
+      "symbol": "Zebu",
+      "total": 8,
+      "best_label": "817",
+      "best_hits": 3,
+      "best_share": 0.375,
+      "counts": "{\"817\":3,\"820\":2,\"861\":3}"
+    }
+  ],
+  "target_rows": [
+    {
+      "object": "2409.1",
+      "cisi": "M-1911",
+      "site": "Mohenjo-daro",
+      "region": "Lower Indus",
+      "type": "SEAL:S",
+      "symbol": "Rhin",
+      "cult": "NA",
+      "material": "Steatite",
+      "shape": "square",
+      "condition": "Good",
+      "complete": "Y",
+      "terminal": "820",
+      "predecessor": "531",
+      "text": "+621-390-531-002-820+",
+      "signs": [
+        "621",
+        "390",
+        "531",
+        "002",
+        "820"
+      ],
+      "family_key": "Mohenjo-daro|SEAL:S|Rhin|NA|Steatite|square"
+    },
+    {
+      "object": "3503.1",
+      "cisi": "M-1136",
+      "site": "Mohenjo-daro",
+      "region": "Lower Indus",
+      "type": "SEAL:S",
+      "symbol": "Rhin",
+      "cult": "Trough",
+      "material": "NA",
+      "shape": "square",
+      "condition": "Poor",
+      "complete": "?",
+      "terminal": "820",
+      "predecessor": "240",
+      "text": "]740-717-240-002-820+",
+      "signs": [
+        "740",
+        "717",
+        "240",
+        "002",
+        "820"
+      ],
+      "family_key": "Mohenjo-daro|SEAL:S|Rhin|Trough|NA|square"
+    },
+    {
+      "object": "3505.1",
+      "cisi": "M-1138",
+      "site": "Mohenjo-daro",
+      "region": "Lower Indus",
+      "type": "SEAL:S",
+      "symbol": "Rhin",
+      "cult": "Trough",
+      "material": "Steatite",
+      "shape": "square",
+      "condition": "Fair",
+      "complete": "Y",
+      "terminal": "820",
+      "predecessor": "017",
+      "text": "+740-585-017-002-820+",
+      "signs": [
+        "740",
+        "585",
+        "017",
+        "002",
+        "820"
+      ],
+      "family_key": "Mohenjo-daro|SEAL:S|Rhin|Trough|Steatite|square"
+    },
+    {
+      "object": "3506.1",
+      "cisi": "M-1139",
+      "site": "Mohenjo-daro",
+      "region": "Lower Indus",
+      "type": "SEAL:S",
+      "symbol": "Rhin",
+      "cult": "NA",
+      "material": "Steatite",
+      "shape": "square",
+      "condition": "Poor",
+      "complete": "Y",
+      "terminal": "820",
+      "predecessor": "621",
+      "text": "+740-416-621-002-820+",
+      "signs": [
+        "740",
+        "416",
+        "621",
+        "002",
+        "820"
+      ],
+      "family_key": "Mohenjo-daro|SEAL:S|Rhin|NA|Steatite|square"
+    }
+  ],
+  "source_augmented_target_rows": [
+    {
+      "object": "2409.1",
+      "cisi": "M-1911",
+      "site": "Mohenjo-daro",
+      "region": "Lower Indus",
+      "type": "SEAL:S",
+      "symbol": "Rhin",
+      "cult": "NA",
+      "material": "Steatite",
+      "shape": "square",
+      "condition": "Good",
+      "complete": "Y",
+      "terminal": "820",
+      "predecessor": "531",
+      "text": "+621-390-531-002-820+",
+      "signs": [
+        "621",
+        "390",
+        "531",
+        "002",
+        "820"
+      ],
+      "family_key": "Mohenjo-daro|SEAL:S|Rhin|NA|Steatite|square",
+      "source_catalogue_symbol": "Rhin",
+      "augmented_symbol": "Rhin"
+    },
+    {
+      "object": "3503.1",
+      "cisi": "M-1136",
+      "site": "Mohenjo-daro",
+      "region": "Lower Indus",
+      "type": "SEAL:S",
+      "symbol": "Rhin",
+      "cult": "Trough",
+      "material": "NA",
+      "shape": "square",
+      "condition": "Poor",
+      "complete": "?",
+      "terminal": "820",
+      "predecessor": "240",
+      "text": "]740-717-240-002-820+",
+      "signs": [
+        "740",
+        "717",
+        "240",
+        "002",
+        "820"
+      ],
+      "family_key": "Mohenjo-daro|SEAL:S|Rhin|Trough|NA|square",
+      "source_catalogue_symbol": "Rhin",
+      "augmented_symbol": "Rhin"
+    },
+    {
+      "object": "3504.1",
+      "cisi": "M-1137",
+      "site": "Mohenjo-daro",
+      "region": "Lower Indus",
+      "type": "SEAL:S",
+      "symbol": "NA",
+      "cult": "NA",
+      "material": "Steatite",
+      "shape": "square",
+      "condition": "Poor",
+      "complete": "Y",
+      "terminal": "820",
+      "predecessor": "904",
+      "text": "+740-904-002-820+",
+      "signs": [
+        "740",
+        "904",
+        "002",
+        "820"
+      ],
+      "family_key": "Mohenjo-daro|SEAL:S|NA|NA|Steatite|square",
+      "source_catalogue_symbol": "Rhin",
+      "augmented_symbol": "Rhin"
+    },
+    {
+      "object": "3505.1",
+      "cisi": "M-1138",
+      "site": "Mohenjo-daro",
+      "region": "Lower Indus",
+      "type": "SEAL:S",
+      "symbol": "Rhin",
+      "cult": "Trough",
+      "material": "Steatite",
+      "shape": "square",
+      "condition": "Fair",
+      "complete": "Y",
+      "terminal": "820",
+      "predecessor": "017",
+      "text": "+740-585-017-002-820+",
+      "signs": [
+        "740",
+        "585",
+        "017",
+        "002",
+        "820"
+      ],
+      "family_key": "Mohenjo-daro|SEAL:S|Rhin|Trough|Steatite|square",
+      "source_catalogue_symbol": "Rhin",
+      "augmented_symbol": "Rhin"
+    },
+    {
+      "object": "3506.1",
+      "cisi": "M-1139",
+      "site": "Mohenjo-daro",
+      "region": "Lower Indus",
+      "type": "SEAL:S",
+      "symbol": "Rhin",
+      "cult": "NA",
+      "material": "Steatite",
+      "shape": "square",
+      "condition": "Poor",
+      "complete": "Y",
+      "terminal": "820",
+      "predecessor": "621",
+      "text": "+740-416-621-002-820+",
+      "signs": [
+        "740",
+        "416",
+        "621",
+        "002",
+        "820"
+      ],
+      "family_key": "Mohenjo-daro|SEAL:S|Rhin|NA|Steatite|square",
+      "source_catalogue_symbol": "Rhin",
+      "augmented_symbol": "Rhin"
+    }
+  ],
+  "prediction_rows": [
+    {
+      "object": "2832.1",
+      "cisi": "M-314",
+      "site": "Mohenjo-daro",
+      "region": "Lower Indus",
+      "type": "SEAL:S",
+      "symbol": "NA",
+      "cult": "NA",
+      "material": "Steatite",
+      "shape": "square",
+      "condition": "Good",
+      "complete": "Y",
+      "terminal": "820",
+      "predecessor": "235",
+      "text": "+953-817-390-125-308-809-033/740-760-706-466/520-231-240-235-002-820+",
+      "signs": [
+        "953",
+        "817",
+        "390",
+        "125",
+        "308",
+        "809",
+        "033",
+        "740",
+        "760",
+        "706",
+        "466",
+        "520",
+        "231",
+        "240",
+        "235",
+        "002",
+        "820"
+      ],
+      "family_key": "Mohenjo-daro|SEAL:S|NA|NA|Steatite|square",
+      "prediction": "weak prediction: missing/fragmentary icon should be checked for rhinoceros or other 820-selecting animal context",
+      "prediction_priority": "low"
+    },
+    {
+      "object": "3504.1",
+      "cisi": "M-1137",
+      "site": "Mohenjo-daro",
+      "region": "Lower Indus",
+      "type": "SEAL:S",
+      "symbol": "NA",
+      "cult": "NA",
+      "material": "Steatite",
+      "shape": "square",
+      "condition": "Poor",
+      "complete": "Y",
+      "terminal": "820",
+      "predecessor": "904",
+      "text": "+740-904-002-820+",
+      "signs": [
+        "740",
+        "904",
+        "002",
+        "820"
+      ],
+      "family_key": "Mohenjo-daro|SEAL:S|NA|NA|Steatite|square",
+      "prediction": "high-risk prediction: missing/fragmentary icon should be rhinoceros or rhinoceros-trough adjacent",
+      "prediction_priority": "high"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "date": "2026-05-29",
+  "strict_rows_scanned": 4011,
+  "rows_with_002_861": 144,
+  "tail_families": 23,
+  "tail_ecology_class_counts": {
+    "bare_closure_background": 1,
+    "broad_formula_or_background_control": 3,
+    "mixed_post861_and_independent": 1,
+    "restricted_repeated_cell": 1,
+    "singleton_simple_tail_source_target": 10,
+    "singleton_complex_tail_source_target": 7
+  },
+  "top_priority_tails": [
+    {
+      "tail": "603",
+      "class": "mixed_post861_and_independent",
+      "rows": 3,
+      "linguistic_weight_cells": 3
+    },
+    {
+      "tail": "533 717",
+      "class": "restricted_repeated_cell",
+      "rows": 2,
+      "linguistic_weight_cells": 1
+    },
+    {
+      "tail": "032 520 919 140",
+      "class": "singleton_complex_tail_source_target",
+      "rows": 1,
+      "linguistic_weight_cells": 1
+    },
+    {
+      "tail": "036 460 513",
+      "class": "singleton_complex_tail_source_target",
+      "rows": 1,
+      "linguistic_weight_cells": 1
+    },
+    {
+      "tail": "244 165",
+      "class": "singleton_complex_tail_source_target",
+      "rows": 1,
+      "linguistic_weight_cells": 1
+    },
+    {
+      "tail": "255 416",
+      "class": "singleton_complex_tail_source_target",
+      "rows": 1,
+      "linguistic_weight_cells": 1
+    },
+    {
+      "tail": "360 520 919 140",
+      "class": "singleton_complex_tail_source_target",
+      "rows": 1,
+      "linguistic_weight_cells": 1
+    },
+    {
+      "tail": "791 440 717",
+      "class": "singleton_complex_tail_source_target",
+      "rows": 1,
+      "linguistic_weight_cells": 1
+    },
+    {
+      "tail": "831 165",
+      "class": "singleton_complex_tail_source_target",
+      "rows": 1,
+      "linguistic_weight_cells": 1
+    },
+    {
+      "tail": "031",
+      "class": "singleton_simple_tail_source_target",
+      "rows": 1,
+      "linguistic_weight_cells": 1
+    }
+  ],
+  "decision": "post861_tail_ecology_replaces_single_tail_reading",
+  "decision_basis": [
+    "Bare 002-861 is the dominant background closure.",
+    "Post-861 continuations split into mixed independent tails, restricted repeated cells, singleton source targets, and broad/background controls.",
+    "533-717 is real but linguistically weighted as one narrow source/register-family cell.",
+    "603 is currently the best mixed tail because it has post-861 rows and independent formula life."
+  ],
+  "outputs": {
+    "rows_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_post861_tail_ecology_rows.csv",
+    "summary_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_post861_tail_ecology_summary.csv",
+    "priority_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_post861_tail_ecology_priority.csv"
+  }
+}

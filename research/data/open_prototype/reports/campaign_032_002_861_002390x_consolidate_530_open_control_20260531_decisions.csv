@@ -1,0 +1,4 @@
+checked_date,candidate,decision,evidence,consequence
+2026-05-31,X530_OPEN_OPERATOR_CONTROL,keep_but_rename_to_one_complement_linker,530 rows=4; open=4/4; one_complement_then_end=4/4; heads=296:1;299:1;390:1;705:1; first_after_x=000:1;741:1;820:1;904:1; direct_shadow_rows=1/4.,`530` is not a generic open class. In this campaign it is a one-complement linker/control: it opens exactly one slot and then closes.
+2026-05-31,X530_AS_125_PEER,kill,530 one-complement=4/4 versus 125 one-complement=5/11; 125 terminal=2/11 and has multi-sign tails.,`530` cannot be merged with `125`; it becomes the clean control that proves open X signs can have different operator subtypes.
+2026-05-31,H773_390_530_741,keep_as_subcase_only,direct 002-390-741 shadows=0; governed row H-773 has 002-390-530-741.,"H-773 supports `530` as a separable linker, but it is not a stand-alone translation claim."

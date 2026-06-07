@@ -1,0 +1,31 @@
+{
+  "date": "2026-05-26",
+  "artifact": "lipi_034_post_m315_reprioritization",
+  "trigger": "M-315 strict blind 390-X-002 sort failed to upgrade local 034 to source-validated positive evidence.",
+  "decision": {
+    "primary_next_target": "M-1206",
+    "primary_question": "Do local 034 and 415 behave as separate source-visible signs, allographs, source-side mapping artifacts, or transcription-policy splits inside the 520-220-X frame?",
+    "why_not_m315": "M-315 upper face clusters with M-984 004 in the strict blind packet, while the lower impression does not independently preserve a distinct 034 class.",
+    "why_not_m2104": "Public source crop is visible but exact three-stroke validation and external M-2104/no.532 identity bridge remain open.",
+    "why_not_m685": "Source-visible but fragmentary with leading break and iconography/source metadata conflict.",
+    "why_not_m1584_as_primary": "Source-visible but pottery/graffiti singleton; useful in a separate potmark lane, not the primary seal-side visual gate.",
+    "why_not_m1963": "No public source/object hit in checked layer."
+  },
+  "m1206_gate": {
+    "local_target": "M-1206 +520-220-034+",
+    "same_site_comparator": "M-37 +520-220-415+",
+    "missing_same_site_comparator": "M-1912 +520-220-003+",
+    "current_415_controls": ["M-37", "H-938", "H-940"],
+    "quarantined_415_visual_reconciliations": ["H-786", "H-941"],
+    "positive_result": "M-1206 terminal remains distinct from 415 controls after blind fine-form review, orientation control, and side-mapping correction.",
+    "negative_result": "M-1206 terminal clusters with exact-side 415 controls or source-side mapping explains the numeric difference better than visual form."
+  },
+  "accepted_source_mapping_count": 0,
+  "accepted_sign_value_count": 0,
+  "accepted_translation_count": 0,
+  "output_files": [
+    "docs/lipi_034_post_m315_reprioritization.md",
+    "data/open_prototype/reports/lipi_034_post_m315_reprioritization.csv",
+    "data/open_prototype/reports/lipi_034_post_m315_reprioritization_summary.json"
+  ]
+}

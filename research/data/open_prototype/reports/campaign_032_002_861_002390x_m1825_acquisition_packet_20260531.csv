@@ -1,0 +1,10 @@
+date,gate,target,field,value,source_or_route,status,consequence
+2026-05-31,m1825_acquisition_packet,M-1825,local_row,3992.1,data/open_prototype/lipi/metadata_filtered.csv,local_metadata_only,"Use as request identity, not proof."
+2026-05-31,m1825_acquisition_packet,M-1825,local_text,+157-031-002-390-705+,data/open_prototype/lipi/metadata_filtered.csv,local_metadata_only,"Target frame is 031->002-390->705 terminal."
+2026-05-31,m1825_acquisition_packet,M-1825,source_pointer,BJ25710,data/open_prototype/lipi/metadata_filtered.csv,local_source_pointer,"Must bind to source image/caption."
+2026-05-31,m1825_acquisition_packet,M-1825,dimensions,17.5 x 18.5 x 0,data/open_prototype/lipi/metadata_filtered.csv,local_metadata_only,"Request identity field only."
+2026-05-31,m1825_acquisition_packet,M-1825,ia_pakistan_ocr_xml,"No clean hit for M-1825, M 1825, 1825, BJ25710, BJ 25710, or 25710.",docs/campaign_032_002_861_002390x_m1825_source_route_recheck_20260531.md,public_ocr_route_absent,"Public IA Pakistan OCR/XML checked here does not bind the object."
+2026-05-31,m1825_acquisition_packet,M-1825,bhaskar_s1,"M-1825 listed as F2 unicorn object.",tmp/m1206_bhaskar/S1-IndusZoomorphicIconCatalogue.txt,secondary_icon_only,"Object/icon-class pressure only; no sign band."
+2026-05-31,m1825_acquisition_packet,M-1825,web_refresh,"Fresh targeted searches found no artifact image or sign-band route.",web_search_2026_05_31,no_public_image_bridge,"Next route is source volume/archive/catalogue bridge for M-1825 or BJ25710."
+2026-05-31,m1825_acquisition_packet,source_contact,gmail_message_id,[redacted-msgid],Gmail SENT,source_contact_sent,"Request sent to [harappa-project-email]; acquisition only, no evidence upgrade."
+2026-05-31,m1825_acquisition_packet,decision,status,source_contact_sent_awaiting_reply,docs/campaign_032_002_861_002390x_m1825_source_contact_20260531.md,m1825_source_contact_sent_awaiting_reply_no_values,"M-1825 remains acquisition-only and zero strict."

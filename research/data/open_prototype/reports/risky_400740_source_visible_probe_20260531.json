@@ -1,0 +1,55 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_400740_source_visible_probe_20260531",
+  "tier": "candidate",
+  "bet": "If the 400>740 hierarchy is not just catalog drift, source-visible TAB:B/I rows carrying +400-740+ should visibly place the vertical-comb/tine sign 400 before the jar sign 740 on the text face.",
+  "sign_shape_basis": {
+    "400": {
+      "crosswalk": "lipi_numeric:400 -> mayig_p:P098",
+      "shape_description": "vertical line with small horizontal lines/tines coming off one side",
+      "source": "tmp/mayig_feature_namespace_probe/repo/indus-valley-script-corpus-ad2f1e218a34b8c33c57de0d6cb8d99272765bbb/features/P098.json"
+    },
+    "740": {
+      "crosswalk": "lipi_numeric:740 -> mayig_p:P324",
+      "shape_description": "classic jar symbol with horizontal handles at the top of each arm",
+      "source": "tmp/mayig_feature_namespace_probe/repo/indus-valley-script-corpus-ad2f1e218a34b8c33c57de0d6cb8d99272765bbb/features/P324.json"
+    }
+  },
+  "witnesses": [
+    {
+      "artifact": "H-740",
+      "row_id": "1635.1",
+      "catalog_text": "+400-740-100-176-000+",
+      "catalog_quality": "Poor",
+      "image_checked": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/H-740_A.jpg",
+      "visual_decision": "supports_with_low_confidence",
+      "visual_basis": "The text face is poor, but the left-starting visible sequence is consistent with comb/tines followed by a jar-like field; not a clean promotion witness by itself."
+    },
+    {
+      "artifact": "K-68",
+      "row_id": "1926.1",
+      "catalog_text": "+400-740-263+",
+      "catalog_quality": "Poor",
+      "image_checked": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/K-68_A.jpg",
+      "visual_decision": "supports",
+      "visual_basis": "The text face visibly shows a comb/tine sign at the start of the three-sign band followed by a jar-like sign, matching 400 before 740."
+    },
+    {
+      "artifact": "M-469",
+      "row_id": "2954.1",
+      "catalog_text": "+400-740-220-415-798+",
+      "catalog_quality": "Fair",
+      "image_checked": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-469_A.jpg",
+      "visual_decision": "supports",
+      "visual_basis": "The text face visibly begins with a comb/tine sign followed by a jar-like sign, before the remaining three signs."
+    }
+  ],
+  "derived_contact_sheet": "tmp/risky_400740_source_visible_probe_20260531/400740_source_visible_contact_sheet_x4.png",
+  "decision": {
+    "new_tier": "promoted_candidate",
+    "scope": "source-visible order check only; does not by itself accept semantics or reading",
+    "reason": "Two usable source-visible rows and one poor supporting row independently match 400 before 740, so the 400>740 ordering pressure is not merely an unseen catalog sequence artifact in these sampled TAB:B witnesses.",
+    "next_destructive_test": "Blind/adversarially choose 20 +400-740+ and 20 +740-400+ or non-400 TAB:B/I rows with available images, then ask whether a label-blind reviewer can recover the comb-before-jar contrast above null."
+  }
+}

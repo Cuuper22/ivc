@@ -1,0 +1,141 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "125195_terminal_cap_test",
+  "hypothesis_tested": "`125-195` either rescues `125` as a broader title-tail family or forces a split where `195` is only a rare terminal cap.",
+  "m735_frame": {
+    "row_id": "3159.1",
+    "object": "M-735",
+    "site": "Mohenjo-daro",
+    "type": "SEAL:S",
+    "symbol": "Bull1:U",
+    "cult": "HAF",
+    "material": "Steatite",
+    "shape": "square",
+    "prev_before_002": "235",
+    "branch": "125",
+    "branch_class": "open_continue",
+    "tail": "195",
+    "terminal": "false",
+    "hit": "true",
+    "source_status": "strict_source_visible",
+    "source_bucket": "strict",
+    "exact_sequence": "740 760 235 002 390 125 195",
+    "text": "+740-760-235-002-390-125-195+"
+  },
+  "sign195": {
+    "checked_date": "2026-05-31",
+    "sign": "195",
+    "occurrences": "2",
+    "terminal_count": "2",
+    "terminal_share": "1.000000",
+    "predecessor_count": "2",
+    "successor_count": "1",
+    "site_count": "2",
+    "type_count": "2",
+    "predecessors": "125;527",
+    "successors": "<END>",
+    "sites": "Harappa;Mohenjo-daro",
+    "types": "SEAL:S;TAB:B",
+    "examples": "H-843:+400-527-195+ | M-735:+740-760-235-002-390-125-195+"
+  },
+  "after125to195_rows": 1,
+  "nonframe125to195_rows": 0,
+  "rare_terminal_null": [
+    {
+      "checked_date": "2026-05-31",
+      "max_occurrences": "2",
+      "rare_signs": "345",
+      "terminal_only_rare_signs": "148",
+      "terminal_only_share": "0.428986",
+      "cross_site_terminal_only": "18",
+      "cross_type_terminal_only": "15"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "max_occurrences": "3",
+      "rare_signs": "413",
+      "terminal_only_rare_signs": "159",
+      "terminal_only_share": "0.384988",
+      "cross_site_terminal_only": "25",
+      "cross_type_terminal_only": "23"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "max_occurrences": "5",
+      "rare_signs": "474",
+      "terminal_only_rare_signs": "162",
+      "terminal_only_share": "0.341772",
+      "cross_site_terminal_only": "28",
+      "cross_type_terminal_only": "26"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "max_occurrences": "10",
+      "rare_signs": "559",
+      "terminal_only_rare_signs": "164",
+      "terminal_only_share": "0.293381",
+      "cross_site_terminal_only": "30",
+      "cross_type_terminal_only": "27"
+    }
+  ],
+  "source_files": [
+    {
+      "checked_date": "2026-05-31",
+      "role": "m735_impression_signband",
+      "path": "tmp/002390x_source_normalization/M735_impression_a_signband.jpg",
+      "exists": "true",
+      "sha256": "9CC6539F331138B0A19A34D4A0376C478863A207C60E2B380BF2C8BFD7E8011F",
+      "width": "1035",
+      "height": "370"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "role": "m735_impression_full_panel",
+      "path": "tmp/002390x_source_normalization/M735_impression_a_full_panel.jpg",
+      "exists": "true",
+      "sha256": "5A386D9A878A18C7314EB7CA2E727E1CBB9A6EF24164402742FA909A99AE6988",
+      "width": "1035",
+      "height": "980"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "role": "m735_002390125_boxed_overlay",
+      "path": "tmp/002390x_token_boundary_adjudication/N002_M735_boxed.jpg",
+      "exists": "true",
+      "sha256": "D04BC2ED60BB00CFCD18D408B0BBF62D8A80902D7B665AC16F8BEBB091DF91B9",
+      "width": "1035",
+      "height": "370"
+    }
+  ],
+  "decisions": [
+    {
+      "checked_date": "2026-05-31",
+      "named_bet": "`125-195` is a reusable `125` title sub-tail",
+      "tier_after_test": "dead_for_now",
+      "evidence": "`195` appears after `125` only in M-735; there is no non-frame `125->195` recurrence and no second `125-195` frame.",
+      "adversary": "The broader `125` title-branch bet should not borrow support from `125-195`; keep support restricted to recurring tails such as `632-032` and candidate `820`.",
+      "falsifier_or_rescue": "A second independent source-bound `125-195` row, especially outside Mohenjo-daro square `SEAL:S`, revives this as a candidate sub-tail."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "named_bet": "`195` is a rare terminal cap that can close different heads",
+      "tier_after_test": "wild_shot_retained_not_candidate",
+      "evidence": "`195` is terminal in 2/2 canonical occurrences and has two predecessors (`125`, `527`), two sites, and two object types.",
+      "adversary": "148/345 signs with <=2 occurrences are terminal-only, so terminal-only rarity is cheap.",
+      "falsifier_or_rescue": "A nonterminal `195` kills the cap bet; a third independent terminal `195` with a new predecessor upgrades it to candidate."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "named_bet": "`125` is still an open/continuing branch under `002-390`, but its tails split into subtypes",
+      "tier_after_test": "candidate_narrowed",
+      "evidence": "All four `002-390-125` frames continue, but only `632-032` and `820` have tail-ecology support; `195` is a singleton cap-like exception.",
+      "adversary": "If `125` tails keep fragmenting into singleton terminal caps, the rank/title selector gloss is too broad.",
+      "falsifier_or_rescue": "Promote only if held-out or source-bound rows cluster into recurring `125` sub-tail families rather than one-off endings."
+    }
+  ],
+  "confidence_after_test": {
+    "125_195_reusable_subtail": "dead_for_now",
+    "195_terminal_cap": "wild_shot_retained_not_candidate",
+    "125_open_branch": "candidate_narrowed"
+  }
+}

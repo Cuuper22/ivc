@@ -1,0 +1,198 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "sign390_x_payload_classes",
+  "total_002390x_rows": 15,
+  "x_summary": [
+    {
+      "checked_date": "2026-05-31",
+      "x": "072",
+      "rows": "1",
+      "open_rate": "0/1",
+      "terminal_rate": "1/1",
+      "class": "terminal_payload",
+      "prev1s": "003:1",
+      "prev2s": "220:1",
+      "tails": "<END>:1",
+      "scopes": "Harappa|SEAL:S|square|Steatite:1",
+      "objects": "H-68"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "x": "095",
+      "rows": "2",
+      "open_rate": "0/2",
+      "terminal_rate": "2/2",
+      "class": "terminal_payload",
+      "prev1s": "004:1;142:1",
+      "prev2s": "220:1;279:1",
+      "tails": "<END>:2",
+      "scopes": "Harappa|TAB:B|rectangular|Clay:1;Mohenjo-daro|SEAL:S|square|Steatite:1",
+      "objects": "H-1993;M-71"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "x": "125",
+      "rows": "4",
+      "open_rate": "4/4",
+      "terminal_rate": "0/4",
+      "class": "open_payload",
+      "prev1s": "235:2;004:1;484:1",
+      "prev2s": "240:1;337:1;390:1;760:1",
+      "tails": "195:1;632 032:1;632 032 900 563:1;820:1",
+      "scopes": "Mohenjo-daro|SEAL:S|square|Steatite:3;Surkotada|SEAL:S|square|-:1",
+      "objects": "M-38;M-119;M-735;Sktd-1"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "x": "140",
+      "rows": "1",
+      "open_rate": "0/1",
+      "terminal_rate": "1/1",
+      "class": "terminal_payload",
+      "prev1s": "061:1",
+      "prev2s": "740:1",
+      "tails": "<END>:1",
+      "scopes": "Mohenjo-daro|SEAL:S|square|Steatite:1",
+      "objects": "M-708"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "x": "346",
+      "rows": "1",
+      "open_rate": "0/1",
+      "terminal_rate": "1/1",
+      "class": "terminal_payload",
+      "prev1s": "384:1",
+      "prev2s": "740:1",
+      "tails": "<END>:1",
+      "scopes": "Mohenjo-daro|SEAL:S|square|Steatite:1",
+      "objects": "M-213"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "x": "530",
+      "rows": "1",
+      "open_rate": "1/1",
+      "terminal_rate": "0/1",
+      "class": "open_payload",
+      "prev1s": "803:1",
+      "prev2s": "798:1",
+      "tails": "741:1",
+      "scopes": "Harappa|TAB:B|plano-convex|Faience:1",
+      "objects": "H-773"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "x": "590",
+      "rows": "1",
+      "open_rate": "1/1",
+      "terminal_rate": "0/1",
+      "class": "open_payload",
+      "prev1s": "032:1",
+      "prev2s": "205:1",
+      "tails": "032:1",
+      "scopes": "Unknown|SEAL:S|square|-:1",
+      "objects": "-"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "x": "692",
+      "rows": "1",
+      "open_rate": "0/1",
+      "terminal_rate": "1/1",
+      "class": "terminal_payload",
+      "prev1s": "032:1",
+      "prev2s": "226:1",
+      "tails": "<END>:1",
+      "scopes": "Mohenjo-daro|SEAL:S|square|Steatite:1",
+      "objects": "M-70"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "x": "705",
+      "rows": "2",
+      "open_rate": "0/2",
+      "terminal_rate": "2/2",
+      "class": "terminal_payload",
+      "prev1s": "031:1;388:1",
+      "prev2s": "032:1;157:1",
+      "tails": "<END>:2",
+      "scopes": "Dholavira|SEAL:S|square|-:1;Mohenjo-daro|SEAL:S|square|-:1",
+      "objects": "M-1825;-"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "x": "707",
+      "rows": "1",
+      "open_rate": "0/1",
+      "terminal_rate": "1/1",
+      "class": "terminal_payload",
+      "prev1s": "236:1",
+      "prev2s": "-:1",
+      "tails": "<END>:1",
+      "scopes": "Mohenjo-daro|SEAL:S|square|Steatite:1",
+      "objects": "M-232"
+    }
+  ],
+  "payload_classes": {
+    "terminal_xs": [
+      "072",
+      "095",
+      "140",
+      "346",
+      "692",
+      "705",
+      "707"
+    ],
+    "repeated_terminal_xs": [
+      "095",
+      "705"
+    ],
+    "open_xs": [
+      "125",
+      "530",
+      "590"
+    ],
+    "repeated_open_xs": [
+      "125"
+    ]
+  },
+  "split_left_contexts": [
+    {
+      "checked_date": "2026-05-31",
+      "prev1_before_002": "004",
+      "rows": "2",
+      "open_rate": "1/2",
+      "terminal_rate": "1/2",
+      "xs": "095:1;125:1",
+      "tails": "<END>:1;820:1",
+      "objects": "H-1993;Sktd-1",
+      "decision": "left_context_splits_by_x"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "prev1_before_002": "032",
+      "rows": "2",
+      "open_rate": "1/2",
+      "terminal_rate": "1/2",
+      "xs": "590:1;692:1",
+      "tails": "<END>:1;032:1",
+      "objects": "M-70;-",
+      "decision": "left_context_splits_by_x"
+    }
+  ],
+  "new_bets": {
+    "SIGN390_X_PAYLOAD_CLASSIFIER": "candidate",
+    "SIGN390_125_DEPENDENT_TAIL_PAYLOAD": "candidate",
+    "SIGN390_095705_TERMINAL_PAYLOADS": "candidate",
+    "SIGN390_530590_OPEN_EXTENDER_PAYLOADS": "wild shot",
+    "SIGN390_X_SLOT_BEATS_LEFT_CONTEXT": "candidate"
+  },
+  "predictions": [
+    "`002-390-125` should continue with a dependent tail.",
+    "`002-390-095` and `002-390-705` should terminate.",
+    "If Dholavira item 10 binds to `+151-032-388-002-390-705+`, it is evidence for terminal `705`, not for a generic 125-like branch.",
+    "`002-390-530` and `002-390-590` should continue if the open-extender wild shot is real."
+  ]
+}

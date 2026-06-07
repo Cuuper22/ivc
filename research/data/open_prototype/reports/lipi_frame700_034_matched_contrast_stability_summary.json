@@ -1,0 +1,72 @@
+{
+  "date": "2026-05-25",
+  "experiment": "Lipi FRAME700 034 matched contrast stability",
+  "question": "Which 034 matched-control triads remain local contrast candidates after requiring both 033 and 032 controls to share object, visual, and context features?",
+  "inputs": [
+    "data\\open_prototype\\reports\\lipi_frame700_034_source_triad_packet.csv",
+    "data\\open_prototype\\reports\\lipi_frame700_034_independent_triad_audit.csv"
+  ],
+  "triads": 93,
+  "grade_counts": {
+    "F_partial_or_weak": 56,
+    "D_object_plus_some_context": 21,
+    "B_visual_object_order_matched": 7,
+    "A_strict_local_minimal_contrast": 3,
+    "C_visual_object_matched": 3,
+    "E_object_only": 3
+  },
+  "copy_pressure_counts": {
+    "high_repetition_pressure": 52,
+    "moderate_repetition_pressure": 38,
+    "low_repetition_pressure": 3
+  },
+  "long_context_relation_counts": {
+    "all_three_differ": 57,
+    "same_as_both_controls": 28,
+    "same_as_033_control": 7,
+    "target_differs_controls_share": 1
+  },
+  "strong_local_contrasts": 13,
+  "low_repetition_strong_local_contrasts": 0,
+  "first_independent_batch": [
+    {
+      "target_cisi": "H-1850",
+      "independence_rank": "1",
+      "grade": "D_object_plus_some_context",
+      "shared_matches": "area_bin;context_class;cross_section;h_bin;material;period_phase;shape;side_relation;sides;site;type;v_bin",
+      "long_context_relation": "all_three_differ",
+      "copy_pressure": "low_repetition_pressure"
+    },
+    {
+      "target_cisi": "H-771",
+      "independence_rank": "2",
+      "grade": "D_object_plus_some_context",
+      "shared_matches": "area_bin;context_class;cross_section;h_bin;material;period_phase;shape;side_relation;sides;site;symbol;type",
+      "long_context_relation": "all_three_differ",
+      "copy_pressure": "low_repetition_pressure"
+    },
+    {
+      "target_cisi": "H-1943",
+      "independence_rank": "3",
+      "grade": "D_object_plus_some_context",
+      "shared_matches": "area_bin;aspect_bin;context_class;cross_section;material;order;shape;sides;site;symbol;type",
+      "long_context_relation": "all_three_differ",
+      "copy_pressure": "low_repetition_pressure"
+    },
+    {
+      "target_cisi": "H-2204",
+      "independence_rank": "4",
+      "grade": "F_partial_or_weak",
+      "shared_matches": "aspect_bin;context_class;cross_section;excavation_prefix;h_bin;material;order;period_phase;shape;side_relation;site;type",
+      "long_context_relation": "all_three_differ",
+      "copy_pressure": "moderate_repetition_pressure"
+    }
+  ],
+  "top_low_repetition_strong_targets": [],
+  "accepted_decipherment_claims": 0,
+  "conclusion": "Local matched-control strength is now separated from repetition pressure. Rows that look locally clean still require source images before any upgrade.",
+  "outputs": [
+    "data\\open_prototype\\reports\\lipi_frame700_034_matched_contrast_stability.csv",
+    "data\\open_prototype\\reports\\lipi_frame700_034_matched_contrast_stability_summary.json"
+  ]
+}

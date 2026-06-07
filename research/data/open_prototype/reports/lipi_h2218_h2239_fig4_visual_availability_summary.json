@@ -1,0 +1,27 @@
+{
+  "source": "H-2218 through H-2239 Fig. 4 visual availability audit",
+  "checked_at": "2026-05-24",
+  "visual_check": {
+    "source_pdf_url": "https://www.harappa.com/sites/default/files/pdf/Kenoyer2000_The%20Tiny%20Steatite%20Seals%20of%20Harappa.pdf",
+    "public_pdf_direct_download_status": "403_forbidden_via_shell_on_2026-05-24",
+    "public_pdf_web_visual_status": "page_14_inspected_in_web_viewer",
+    "local_image_storage_status": "no_pdf_or_figure_image_stored_in_repo",
+    "observed_figure_scope": "The public Fig. 4 image shows seal no. 1 plus tablet nos. 2-23; each tablet item appears as three side panels with a triangular/end-profile marker to the right.",
+    "legibility_limit": "The public PDF figure is coarse. It supports source coverage and plate-request targeting, but not segmentation-grade visual validation."
+  },
+  "source_rows": 22,
+  "expected_fig4_tablet_items": 22,
+  "visible_three_side_panel_rows": 22,
+  "visible_end_profile_marker_rows": 22,
+  "rows_with_object_level_public_image_leads": 1,
+  "rows_without_object_level_public_image_leads": 21,
+  "object_level_public_image_lead_objects": [
+    "H-2219"
+  ],
+  "key_observation": "The public Fig. 4 image gives coarse visual coverage for all 22 tablet items, but object-level public A/B/C image leads were found only for H-2219 in the checked RSS/blog pages.",
+  "interpretation_boundary": "This audit accepts only public visual availability and source-coverage facts. It accepts no sign segmentation, allography, stroke counts, side orientation, physical side function, numerical value, metrological reading, sign meaning, phonetic value, language identity, or translation.",
+  "outputs": [
+    "data/open_prototype/reports/lipi_h2218_h2239_fig4_visual_availability.csv",
+    "data/open_prototype/reports/lipi_h2218_h2239_fig4_visual_availability_summary.json"
+  ]
+}

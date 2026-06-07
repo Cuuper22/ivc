@@ -1,0 +1,150 @@
+{
+  "generated_at_local": "2026-05-25T06:50:11.760Z",
+  "experiment": "Lipi short-mark dimension stress audit",
+  "scope": "excluding_h2218_h2239",
+  "source": "data/open_prototype/lipi/metadata_filtered.csv",
+  "source_status": "T3 filtered lipi planning layer; claim columns removed; image/plate validation pending",
+  "artifact_level_design": "one row per CISI artifact with at least one clean multi-side short-mark row",
+  "artifact_rows": 414,
+  "artifacts_with_horizontal": 376,
+  "artifacts_with_vertical": 364,
+  "artifacts_with_thickness": 117,
+  "target_tokens": [
+    "032",
+    "033",
+    "034",
+    "400",
+    "520",
+    "690",
+    "700",
+    "740"
+  ],
+  "token_tests": 29,
+  "permutation_iterations_per_test": 5000,
+  "permutation_block": "type|site|shape|material|sides",
+  "corrected_flags_bh_05": [],
+  "lowest_p_tests": [
+    {
+      "token": "034",
+      "dimension": "area",
+      "permutation_p_ge_abs_diff": 0.003599,
+      "bh_q": 0.104371,
+      "present_artifacts": 91,
+      "absent_artifacts": 263,
+      "mean_present": 117.648791,
+      "mean_absent": 289.998479
+    },
+    {
+      "token": "034",
+      "dimension": "vertical",
+      "permutation_p_ge_abs_diff": 0.008998,
+      "bh_q": 0.130471,
+      "present_artifacts": 92,
+      "absent_artifacts": 272,
+      "mean_present": 7.803261,
+      "mean_absent": 10.381985
+    },
+    {
+      "token": "740",
+      "dimension": "aspect",
+      "permutation_p_ge_abs_diff": 0.018796,
+      "bh_q": 0.181695,
+      "present_artifacts": 10,
+      "absent_artifacts": 344,
+      "mean_present": 1.557167,
+      "mean_absent": 1.899429
+    },
+    {
+      "token": "034",
+      "dimension": "horizontal",
+      "permutation_p_ge_abs_diff": 0.026595,
+      "bh_q": 0.192814,
+      "present_artifacts": 92,
+      "absent_artifacts": 284,
+      "mean_present": 14.907609,
+      "mean_absent": 17.750704
+    },
+    {
+      "token": "400",
+      "dimension": "vertical",
+      "permutation_p_ge_abs_diff": 0.05119,
+      "bh_q": 0.296902,
+      "present_artifacts": 15,
+      "absent_artifacts": 349,
+      "mean_present": 8.193333,
+      "mean_absent": 9.796275
+    },
+    {
+      "token": "400",
+      "dimension": "horizontal",
+      "permutation_p_ge_abs_diff": 0.078784,
+      "bh_q": 0.380789,
+      "present_artifacts": 15,
+      "absent_artifacts": 361,
+      "mean_present": 14.466667,
+      "mean_absent": 17.162604
+    },
+    {
+      "token": "400",
+      "dimension": "area",
+      "permutation_p_ge_abs_diff": 0.146971,
+      "bh_q": 0.536393,
+      "present_artifacts": 15,
+      "absent_artifacts": 339,
+      "mean_present": 122.497333,
+      "mean_absent": 251.145074
+    },
+    {
+      "token": "700",
+      "dimension": "thickness",
+      "permutation_p_ge_abs_diff": 0.155369,
+      "bh_q": 0.536393,
+      "present_artifacts": 92,
+      "absent_artifacts": 25,
+      "mean_present": 3.533696,
+      "mean_absent": 5.644
+    },
+    {
+      "token": "033",
+      "dimension": "area",
+      "permutation_p_ge_abs_diff": 0.173965,
+      "bh_q": 0.536393,
+      "present_artifacts": 117,
+      "absent_artifacts": 237,
+      "mean_present": 132.445385,
+      "mean_absent": 301.601392
+    },
+    {
+      "token": "700",
+      "dimension": "aspect",
+      "permutation_p_ge_abs_diff": 0.184963,
+      "bh_q": 0.536393,
+      "present_artifacts": 303,
+      "absent_artifacts": 51,
+      "mean_present": 1.912882,
+      "mean_absent": 1.752397
+    },
+    {
+      "token": "032",
+      "dimension": "aspect",
+      "permutation_p_ge_abs_diff": 0.24955,
+      "bh_q": 0.611585,
+      "present_artifacts": 87,
+      "absent_artifacts": 267,
+      "mean_present": 1.923451,
+      "mean_absent": 1.878783
+    },
+    {
+      "token": "034",
+      "dimension": "thickness",
+      "permutation_p_ge_abs_diff": 0.280344,
+      "bh_q": 0.611585,
+      "present_artifacts": 36,
+      "absent_artifacts": 81,
+      "mean_present": 3.563889,
+      "mean_absent": 4.171605
+    }
+  ],
+  "interpretation_boundary": "Artifact-level measurement stress audit only. Any surviving association is a source-validation target, not a numerical value, metrological reading, semantic reading, phonetic value, language identity, or translation.",
+  "removed_h_series_artifacts": 22
+}

@@ -1,0 +1,7 @@
+decision,evidence,result,consequence
+h1993_alone_does_not_unlock_strict_004_split,no_new_decisive_gate,strict matched predecessor splits: 0,H-1993 binding is necessary for the 004 lane but insufficient unless Sktd-1 becomes strict or another strict 004->002-390->125 witness appears
+004_lane_needs_dual_strict_sides,004:095:1; 125:1,strict_matched_prev_split:004; expanded_strict_125_continuation_set,the 004 lane can unlock only as a dual-side strict upgrade under the current local inventory
+3335_1_is_highest_single_object_matched_gate_unlock,032:590:1; 692:1,strict_matched_prev_split:032; strict_non125_continuing:-:3335.1,"if 3335.1 were source-bound and its sequence valid, it would pair with already-strict M-70 to unlock the 032 matched-predecessor gate, though formula-family pressure would still need collapse"
+dual_705_upgrade_strengthens_ecology_not_matched_lane,M-1825 -:4237.1,repeated_strict_705_terminal_pair,"Dholavira 4237.1 plus M-1825 would create repeated strict 705 terminal ecology, but not a matched-predecessor branch split"
+h773_upgrade_would_attack_closure_polarity,H-773:530,strict_non125_continuing:H-773,"a strict H-773 target-side reading would create a strict non-125 continuing exception, useful as an adversarial polarity test rather than a matched-lane proof"
+m38_upgrade_is_tail_subframe_not_branch_split,,expanded_strict_125_continuation_set,"M-38 becoming strict would expand 125 continuation and the 235 same-branch tail split, but it would not create branch alternation"

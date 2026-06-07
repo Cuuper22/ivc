@@ -1,0 +1,51 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "candidate_id": "risky_terminal_governor_penult_final_pairing_null_20260531",
+  "tier": "promoted_candidate_strengthener",
+  "bet": "The terminal-governor network is not just common penultimate signs paired with common final signs. It depends on specific penult-final pairing.",
+  "source": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\lipi\\metadata_filtered.csv",
+  "collapse_key": [
+    "terminal inscription text"
+  ],
+  "null_model": "Preserve each terminal family penultimate sign and the multiset of final signs; shuffle final signs across penultimate slots.",
+  "terminal_text_families": 2127,
+  "live": {
+    "target_counts": [
+      {
+        "pair": "002-817",
+        "count": 93
+      },
+      {
+        "pair": "002-820",
+        "count": 67
+      },
+      {
+        "pair": "060-920",
+        "count": 50
+      },
+      {
+        "pair": "060-550",
+        "count": 22
+      },
+      {
+        "pair": "060-820",
+        "count": 23
+      }
+    ],
+    "target_hit_pairs_ge_min": 5,
+    "min_target_count": 22,
+    "multi_penult_count": 2,
+    "shared_final_count": 1,
+    "has_target_shape": true
+  },
+  "penult_final_shuffle_null": {
+    "iterations": 5000,
+    "p_target_hit_pairs_ge_live": 0,
+    "p_min_target_count_ge_live": 0,
+    "p_multi_penult_count_ge_live": 0,
+    "p_shared_820_ge_live": 0,
+    "p_reproduce_target_shape": 0
+  },
+  "decision": "pairing_survives_penult_final_independence_null"
+}

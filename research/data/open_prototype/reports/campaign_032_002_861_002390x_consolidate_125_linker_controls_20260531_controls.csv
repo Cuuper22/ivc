@@ -1,0 +1,9 @@
+checked_date,scope,rows,nonterminal_rows,terminal_rows,lanes,repeated_lanes,cross_site_repeated_lanes,cross_head_repeated_lanes,sites,heads,verdict
+2026-05-31,all,11,9,2,632_032_lane:3;032_lane:2;820_lane:2;terminal_125:2;195_singleton_lane:1;590_singleton_lane:1,032_lane;632_032_lane;820_lane,032_lane;820_lane,632_032_lane;820_lane,Mohenjo-daro:8;Harappa:2;Surkotada:1,390:4;610:2;190:1;405:1;407:1;861:1;906:1,survives
+2026-05-31,frame_002_390_only,4,4,0,632_032_lane:2;195_singleton_lane:1;820_lane:1,632_032_lane,,,Mohenjo-daro:3;Surkotada:1,390:4,survives_only_site_local
+2026-05-31,mohenjo_only,8,7,1,632_032_lane:3;032_lane:1;195_singleton_lane:1;590_singleton_lane:1;820_lane:1;terminal_125:1,632_032_lane,,632_032_lane,Mohenjo-daro:8,390:3;190:1;405:1;407:1;610:1;906:1,survives
+2026-05-31,non_mohenjo,3,2,1,032_lane:1;820_lane:1;terminal_125:1,,,,Harappa:2;Surkotada:1,390:1;610:1;861:1,damaged_no_repeated_lanes
+2026-05-31,seal_s_only,9,8,1,632_032_lane:3;032_lane:2;820_lane:2;195_singleton_lane:1;terminal_125:1,032_lane;632_032_lane;820_lane,032_lane;820_lane,632_032_lane;820_lane,Mohenjo-daro:6;Harappa:2;Surkotada:1,390:4;610:2;190:1;405:1;861:1,survives
+2026-05-31,complete_y,11,9,2,632_032_lane:3;032_lane:2;820_lane:2;terminal_125:2;195_singleton_lane:1;590_singleton_lane:1,032_lane;632_032_lane;820_lane,032_lane;820_lane,632_032_lane;820_lane,Mohenjo-daro:8;Harappa:2;Surkotada:1,390:4;610:2;190:1;405:1;407:1;861:1;906:1,survives
+2026-05-31,good_or_fine,6,5,1,632_032_lane:3;590_singleton_lane:1;820_lane:1;terminal_125:1,632_032_lane,,632_032_lane,Mohenjo-daro:6,390:2;190:1;405:1;407:1;906:1,survives
+2026-05-31,cisi_named,11,9,2,632_032_lane:3;032_lane:2;820_lane:2;terminal_125:2;195_singleton_lane:1;590_singleton_lane:1,032_lane;632_032_lane;820_lane,032_lane;820_lane,632_032_lane;820_lane,Mohenjo-daro:8;Harappa:2;Surkotada:1,390:4;610:2;190:1;405:1;407:1;861:1;906:1,survives

@@ -1,0 +1,41 @@
+{
+  "date": "2026-05-29",
+  "question": "Do matched bare terminal 002-861 controls have visible source edges for comparison against same-line tailed 002-861 rows?",
+  "control_rows": 10,
+  "source_visible_controls": 6,
+  "route_pending_controls": 4,
+  "source_visible_by_family": {
+    "220-032-002-861": [
+      "H-444",
+      "M-723",
+      "M-1044"
+    ],
+    "803-002-861": [
+      "M-77",
+      "M-118"
+    ],
+    "176-002-861": [
+      "M-15"
+    ]
+  },
+  "best_controls_now": [
+    "H-444",
+    "M-723",
+    "M-1044",
+    "M-77",
+    "M-118",
+    "M-15"
+  ],
+  "evidence_effect": "The tailed rows now have source-visible bare-edge controls in the 220-032, 803, and 176 matched lanes.",
+  "not_accepted": [
+    "exact source-normalized 861/002 boundaries for every control",
+    "addendum vs subclass vs apposition choice",
+    "sign values",
+    "phonetics",
+    "language identity",
+    "translation"
+  ],
+  "controls_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_bare_edge_source_controls_rows.csv",
+  "crops_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_bare_edge_source_controls_crops.csv",
+  "contact_sheet": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\032_002_861_bare_edge_source_controls\\032_002_861_bare_edge_source_controls_contact_sheet.png"
+}

@@ -1,0 +1,63 @@
+{
+  "date": "2026-05-25",
+  "experiment": "Lipi FRAME700 034 long context substitution",
+  "inputs": [
+    "data\\open_prototype\\reports\\lipi_frame700_034_source_triad_packet.csv",
+    "data\\open_prototype\\reports\\lipi_frame700_034_matched_contrast_stability.csv",
+    "data\\open_prototype\\reports\\lipi_frame700_034_two_lane_source_packet.csv"
+  ],
+  "iterations": 5000,
+  "scopes": {
+    "all_triads": 93,
+    "strong_local_contrasts": 13,
+    "independent_low_copy": 4,
+    "two_lane_core": 8,
+    "repeated_branch_optional": 1
+  },
+  "token_tests": 75,
+  "family_tests": 27,
+  "corrected_token_tests": 0,
+  "corrected_family_tests": 0,
+  "top_all_token": {
+    "scope": "all_triads",
+    "feature": "long_tokens",
+    "candidate": "060",
+    "triads": 93,
+    "any_triads": 7,
+    "hit_034": 6,
+    "hit_033": 0,
+    "hit_032": 1,
+    "observed_delta": 5.5,
+    "p_ge": 0.0068,
+    "null_mean": 0.0238,
+    "null_p95": 2.5,
+    "q_bh": 0.07706666666666666,
+    "status": "source_blind_substitution_only"
+  },
+  "top_all_family": {
+    "scope": "all_triads",
+    "feature": "long_family",
+    "candidate": "002;416;861",
+    "triads": 93,
+    "any_triads": 5,
+    "hit_034": 5,
+    "hit_033": 0,
+    "hit_032": 0,
+    "observed_delta": 5,
+    "p_ge": 0.0046,
+    "null_mean": 0.0377,
+    "null_p95": 2,
+    "q_bh": 0.069,
+    "status": "source_blind_substitution_only"
+  },
+  "corrected_token_candidates": [],
+  "corrected_family_candidates": [],
+  "accepted_decipherment_claims": 0,
+  "status": "source_blind_context_substitution_only",
+  "outputs": [
+    "data\\open_prototype\\reports\\lipi_frame700_034_long_context_token_tests.csv",
+    "data\\open_prototype\\reports\\lipi_frame700_034_long_context_family_tests.csv",
+    "data\\open_prototype\\reports\\lipi_frame700_034_long_context_scope_rows.csv",
+    "data\\open_prototype\\reports\\lipi_frame700_034_long_context_substitution_summary.json"
+  ]
+}

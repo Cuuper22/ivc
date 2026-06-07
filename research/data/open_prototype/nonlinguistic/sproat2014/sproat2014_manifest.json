@@ -1,0 +1,83 @@
+{
+  "date": "2026-05-29",
+  "generated_at_local": "2026-05-29T00:39:47-07:00",
+  "generated_at_utc": "2026-05-29T07:39:47.620Z",
+  "source_url": "https://rws.xoba.com/data/non-linguistic-symbols/corpora.zip",
+  "source_page": "https://rws.xoba.com/data/non-linguistic-symbols/",
+  "source_citation": "Richard Sproat (2014), A Statistical Comparison of Written Language and Nonlinguistic Symbol Systems, Language 90(2):457-481.",
+  "companion_citation": "Katherine Wu, Jennifer Solman, Ruth Linehan, and Richard Sproat (2012), Corpora of Non-Linguistic Symbol Systems.",
+  "local_zip": "data/open_prototype/nonlinguistic/sproat2014/corpora.zip",
+  "zip_sha256": "fb50ff5acb5221ba75e134cc7a36619e1d990b5680ad8681bcde5c447b6b8f73",
+  "zip_md5": "30c1284e871911f20df5513cd5157a3d",
+  "extracted_corpora": [
+    {
+      "corpus": "Pictish_stones",
+      "file": "Pictish.xml",
+      "system_class": "ambiguous_symbol_system",
+      "source_note": "University of Strathclyde Pictish Stone Database as encoded in Sproat 2014 XML bundle.",
+      "file_size_bytes": 131404,
+      "raw_documents": 283,
+      "length_capped_documents_2_to_8": 228,
+      "exact_collapsed_sequences": 187
+    },
+    {
+      "corpus": "Mesopotamian_kudurru_deity_symbols",
+      "file": "Kudurrus.xml",
+      "system_class": "known_nonwriting_pictorial_symbol_system",
+      "source_note": "Seidl 1989 kudurru deity symbols as encoded in Sproat 2014 XML bundle.",
+      "file_size_bytes": 73174,
+      "raw_documents": 69,
+      "length_capped_documents_2_to_8": 24,
+      "exact_collapsed_sequences": 24
+    },
+    {
+      "corpus": "Totem_poles",
+      "file": "TotemPoles.xml",
+      "system_class": "known_nonwriting_emblematic_symbol_system",
+      "source_note": "Barbeau, Malin, and Stewart sources as encoded in Sproat 2014 XML bundle.",
+      "file_size_bytes": 214804,
+      "raw_documents": 325,
+      "length_capped_documents_2_to_8": 255,
+      "exact_collapsed_sequences": 246
+    },
+    {
+      "corpus": "Barn_stars_hex_signs",
+      "file": "BarnStars.xml",
+      "system_class": "known_nonwriting_decorative_symbol_system",
+      "source_note": "Pennsylvania German barn stars / hex signs as encoded in Sproat 2014 XML bundle.",
+      "file_size_bytes": 106724,
+      "raw_documents": 310,
+      "length_capped_documents_2_to_8": 279,
+      "exact_collapsed_sequences": 97
+    },
+    {
+      "corpus": "Vinca_symbols",
+      "file": "Vinca.xml",
+      "system_class": "ambiguous_archaeological_symbol_system",
+      "source_note": "Winn 1981 Vinca sign corpus as encoded in Sproat 2014 XML bundle.",
+      "file_size_bytes": 128276,
+      "raw_documents": 591,
+      "length_capped_documents_2_to_8": 94,
+      "exact_collapsed_sequences": 91
+    },
+    {
+      "corpus": "Weather_icons",
+      "file": "WeatherIcons.xml",
+      "system_class": "modern_nonlinguistic_icon_sequence_system",
+      "source_note": "Weather icon sequences downloaded from Weather Underground as encoded in Sproat 2014 XML bundle.",
+      "file_size_bytes": 9026645,
+      "raw_documents": 10142,
+      "length_capped_documents_2_to_8": 10142,
+      "exact_collapsed_sequences": 4018
+    }
+  ],
+  "extraction_policy": {
+    "text_unit": "document-level symbol order from XML docText after removing alternative transcription blocks",
+    "included_symbols": "primary symbol/title tags only, including uncertain primary titles as encoded",
+    "excluded": [
+      "alternative transcription blocks",
+      "IndusBarSeals.xml"
+    ],
+    "main_scope": "length 2..8 inclusive, exact sequence collapsed"
+  }
+}

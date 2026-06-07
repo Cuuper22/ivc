@@ -1,0 +1,87 @@
+{
+  "run_date": "2026-05-31",
+  "inputs": {
+    "side_pair_recheck": "data/open_prototype/reports/campaign_032_002_861_002390x_sktd1_side_pair_recheck_20260531.csv",
+    "token_boundary_adjudication": "data/open_prototype/reports/campaign_032_002_861_002390x_token_boundary_adjudication_adjudication_rows.csv",
+    "blind_key": "data/open_prototype/reports/blind_boundary_packet_alpha_sealed_key.csv",
+    "source_upgrade_impact": "data/open_prototype/reports/campaign_032_002_861_002390x_source_upgrade_impact_audit_20260531_scenario_summary.csv"
+  },
+  "target": {
+    "object": "Sktd-1",
+    "row_id": "3875.1",
+    "local_text": "+390-004-002-390-125-820+",
+    "lane": "004 -> 002-390 -> 125 -> 820"
+  },
+  "image_count": 5,
+  "tests": [
+    {
+      "test": "object_side_pair_label_visible",
+      "criterion": "public page must visibly bind Sktd-1 A/a to the Surkotada row",
+      "evidence": "CISI India leaf n397 labels Sktd-1 A and Sktd-1 a",
+      "result": "pass",
+      "consequence": "Sktd-1 stays source-panel side-pair bound at the object/side level"
+    },
+    {
+      "test": "top_band_window_compatible",
+      "criterion": "top-band crop must preserve a plausible 002-390-125 window",
+      "evidence": "positions 3-5 = 002-390-125; approx token windows: 140-260, 260-390, 390-530",
+      "result": "pass_downweighted",
+      "consequence": "the window is useful as visual pressure but not as source-derived numeric proof"
+    },
+    {
+      "test": "single_line_full_sequence",
+      "criterion": "the local six-token row must be visible as one clean source line",
+      "evidence": "full panels show top inscription band plus separate lower-field sign",
+      "result": "fail_wrapped_layout",
+      "consequence": "the full +390-004-002-390-125-820+ order remains catalog-mediated"
+    },
+    {
+      "test": "lower_field_sign_order",
+      "criterion": "the lower-field sign must be independently ordered relative to the top band",
+      "evidence": "source panel shows the sign in a separate field, not in the top inscription band",
+      "result": "fail_catalog_mediated",
+      "consequence": "the 125->820 continuation cannot be counted as strict source-token order"
+    },
+    {
+      "test": "blind_source_window_preserved",
+      "criterion": "blind/adjudication rows must reach source-window-preserved proof",
+      "evidence": "boxed_window_compatible_downweighted; shape_match_possible_not_strict",
+      "result": "fail_boxed_compatible_only",
+      "consequence": "Sktd-1 remains below M-119/M-735 strict 125 witnesses"
+    },
+    {
+      "test": "dual_004_split_ready",
+      "criterion": "004 lane needs strict H-1993 and strict Sktd-1, or equivalent dual strict witnesses",
+      "evidence": "H-1993-only splits=0; Sktd-only splits=0; both splits=1",
+      "result": "fail_not_ready",
+      "consequence": "no strict 004 matched-predecessor split can be claimed from the current public Sktd-1 panel"
+    }
+  ],
+  "decisions": [
+    {
+      "decision": "sktd1_is_panel_bound_not_strict",
+      "evidence": "side-pair labels are visible, but the layout is wrapped",
+      "result": "Sktd-1 remains source-panel side-pair visible and token-order blocked",
+      "consequence": "do not promote Sktd-1 to strict 004->002-390->125->820 evidence"
+    },
+    {
+      "decision": "same_public_plate_is_exhausted_for_strictness",
+      "evidence": "full panels, signband crops, blind key, and adjudication all stop at boxed-window compatibility",
+      "result": "no local reclassification makes Sktd-1 strict",
+      "consequence": "future Sktd-1 promotion needs a cleaner publication/caption/plate or independent artifact description"
+    },
+    {
+      "decision": "004_lane_still_needs_dual_strict_evidence",
+      "evidence": "H-1993-only=0; Sktd-only=0; both=1",
+      "result": "current 004 lane stays blocked",
+      "consequence": "continue with H-1993 acquisition plus a stricter Sktd-1 source, or find a replacement 004 witness pair"
+    }
+  ],
+  "status": "sktd1_strictness_audit_wrapped_layout_blocks_dual004_no_values",
+  "outputs": {
+    "evidence_rows": "data/open_prototype/reports/campaign_032_002_861_002390x_sktd1_strictness_audit_20260531_evidence_rows.csv",
+    "strictness_tests": "data/open_prototype/reports/campaign_032_002_861_002390x_sktd1_strictness_audit_20260531_strictness_tests.csv",
+    "decisions": "data/open_prototype/reports/campaign_032_002_861_002390x_sktd1_strictness_audit_20260531_decisions.csv",
+    "summary": "data/open_prototype/reports/campaign_032_002_861_002390x_sktd1_strictness_audit_20260531_summary.json"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "candidate_id": "risky_741742745_visual_alloseries_audit_20260531",
+  "tier": "promoted candidate refinement",
+  "question": "Should the 741/742/745 feeder be treated as one graphic allograph family or as a syntactic alloseries of distinct catalog signs?",
+  "inspected_local_source_panels": [
+    {
+      "sign": "741",
+      "examples": [
+        {
+          "neutral_id": "BT001",
+          "cisi": "C-16",
+          "path": "tmp/blind_741060920_terminal_cluster_20260531/BT001.jpg",
+          "catalog_text": "+429-003-741-060-920+"
+        },
+        {
+          "neutral_id": "BT007",
+          "cisi": "M-113",
+          "path": "tmp/blind_741060920_terminal_cluster_20260531/BT007.jpg",
+          "catalog_text": "+740-032-840-741-060-920+"
+        },
+        {
+          "neutral_id": "BT008",
+          "cisi": "K-4",
+          "path": "tmp/blind_741060920_terminal_cluster_20260531/BT008.jpg",
+          "catalog_text": "+036-269-140-002-741-060-920+"
+        },
+        {
+          "neutral_id": "BT012",
+          "cisi": "H-89",
+          "path": "tmp/blind_741060920_terminal_cluster_20260531/BT012.jpg",
+          "catalog_text": "+232-240-741-060-920+"
+        }
+      ]
+    },
+    {
+      "sign": "742",
+      "examples": [
+        {
+          "cisi": "M-59",
+          "path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-59_a.jpg",
+          "catalog_text": "+368-003-742-060-920+"
+        },
+        {
+          "cisi": "M-68",
+          "path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-68_a.jpg",
+          "catalog_text": "+690-518/090-740-176-742-060-920+"
+        }
+      ]
+    },
+    {
+      "sign": "745",
+      "examples": [
+        {
+          "cisi": "H-39",
+          "path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/H-39_a.jpg",
+          "catalog_text": "+740-390-590-231-240-235-745-060-920+"
+        },
+        {
+          "cisi": "M-363",
+          "path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-363_a.jpg",
+          "catalog_text": "+740-100-415-745-060-920+"
+        }
+      ]
+    }
+  ],
+  "visual_decision": "Do not merge 741/742/745 as one proven graphic allograph family. The local images support the terminal environment and the source reality of the cluster, but they do not force a single-shape reading across 741, 742, and 745.",
+  "model_update": "Keep 741/742/745 as a syntactic alloseries: three catalog signs that share a distributional feeder role selecting 060-920. The distributional claim is promoted; the graphic-allograph claim is not.",
+  "effect_on_selector_claim": "Strengthens the conservative formulation. The selector result no longer depends on visual identity among 741/742/745; it only requires that clean catalog signs in the immediately-left slot overwhelmingly choose 060-920 and never sibling caps in the tested universe.",
+  "next_destructive_test": "If a future source-normalized shape classifier can cluster 741/742/745 above matched sign-neighborhood controls, reopen the allograph-family hypothesis. Until then, call it alloseries, not allograph."
+}

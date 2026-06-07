@@ -1,0 +1,60 @@
+{
+  "run_date": "2026-05-31",
+  "status": "reearned_family_collapse_demotes_subframes_no_values",
+  "inputs": {
+    "frames": "data/open_prototype/reports/campaign_032_002_861_002390x_branch_sign_ecology_20260531_002390_frames.csv",
+    "metadata": "data/open_prototype/lipi/metadata_filtered.csv",
+    "quarantined_artifact_used": false
+  },
+  "counts": {
+    "frames": 15,
+    "branches": 10,
+    "prev235_rows": 2,
+    "prev235_strict_rows": 1,
+    "tail_125632032_global_rows": 4,
+    "tail_125632032_inframe_rows": 2,
+    "tail_125632032_inframe_strict_rows": 1,
+    "branch705_rows": 2,
+    "branch705_strict_rows": 0
+  },
+  "decisions": [
+    {
+      "decision": "quarantined_artifact_not_used",
+      "evidence": "campaign_032_002_861_002390x_source_normalized_family_collapse*",
+      "result": "not imported, not read, not cited as settled",
+      "consequence": "this replacement collapse is re-earned from branch_sign_ecology frames and metadata_filtered.csv"
+    },
+    {
+      "decision": "235_002390125_subframe_demoted",
+      "evidence": "M-38:metadata_or_route_only:+740-690-435-255-220-032-240-235-002-390-125-632-032+ | M-735:strict_visible:+740-760-235-002-390-125-195+",
+      "result": "2 raw rows, 2 family cells, 1 strict rows",
+      "consequence": "one strict source-visible witness plus one weak/non-strict witness cannot promote a subframe"
+    },
+    {
+      "decision": "125_632_032_tail_family_pressure",
+      "evidence": "M-1692:no:metadata_or_route_only:+390-600-617-002-190-125-632-032+ | M-38:yes:metadata_or_route_only:+740-690-435-255-220-032-240-235-002-390-125-632-032+ | M-119:yes:strict_visible:+151-337-484-002-390-125-632-032-900-563+ | M-1188:no:metadata_or_route_only:]000/000-125-632-032/240-002-244-632+",
+      "result": "4 global rows with 125-632-032; 2 are inside 002-390-125; 1 strict in-frame rows",
+      "consequence": "tail formula pressure increases; it does not prove independent branch function"
+    },
+    {
+      "decision": "705_repeated_branch_contacts_pending_zero_strict",
+      "evidence": "M-1825:reply_or_external_source_pending:+157-031-002-390-705+ | -:4237.1:reply_or_external_source_pending:+151-032-388-002-390-705+",
+      "result": "2 raw rows, 0 strict rows",
+      "consequence": "Dholavira and M-1825 requests are pending; repeated terminal 705 remains acquisition ecology only"
+    },
+    {
+      "decision": "strict_family_core_unmatched",
+      "evidence": "M-70:032->692-><END> | M-71:142->095-><END> | M-119:484->125->632 032 900 563 | M-735:235->125->195",
+      "result": "strict rows preserve polarity but no strict same-predecessor branch split",
+      "consequence": "no grammar/function/value promotion"
+    }
+  ],
+  "accepted": {
+    "value": 0,
+    "phonetics": 0,
+    "language_identity": 0,
+    "function": 0,
+    "sign_meaning": 0,
+    "translation": 0
+  }
+}

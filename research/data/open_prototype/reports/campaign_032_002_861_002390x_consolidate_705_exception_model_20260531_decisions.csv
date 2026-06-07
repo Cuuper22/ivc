@@ -1,0 +1,4 @@
+checked_date,candidate,decision,evidence,consequence
+2026-05-31,X705_TERMINAL_DEFAULT_CLASS,keep_narrowed_below_095_and_530,X-slot terminal=4/5; X heads=390:2;033:1;320:1;940:1; tails=<END>:4;125:1; exception=M-1668:320-705-125.,`705` is a terminal-default X-slot class with a named `320-705-125` exception. It is not a clean peer of `095`.
+2026-05-31,X705_CLEAN_TERMINAL_CLASS,kill,X-slot open exceptions=1/5.,Do not bundle `705` with `095` as an equally clean terminal class.
+2026-05-31,DHOLAVIRA_390_705_PARSE_PREDICTION,define_as_destructive_prediction_not_proof,Current X-slot 390-705 rows are terminal in the deduped metadata; the unbound Dholavira candidate would matter only by testing that prediction.,"If Dholavira item 10 source-binds as `002-390-705` and closes, it supports terminal-default. If it continues after `705`, it demotes the class."

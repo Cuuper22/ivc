@@ -1,0 +1,39 @@
+{
+  "source": "H-1302/H-1303 direction-note recheck",
+  "checked_at": "2026-05-24",
+  "artifacts": [
+    "H-1302",
+    "H-1303"
+  ],
+  "packet_relation": "Both are TAB:I packet rows with local planning signature 1:+400-740-176+|2:+700-033+.",
+  "published_direction_source": {
+    "url": "https://www.nature.com/articles/s41599-021-00713-0",
+    "title": "A method of identifying allographs in undeciphered scripts and its application to the Indus Valley Script",
+    "published": "2021-02-17",
+    "source_tier": "T2 published allograph/direction lead",
+    "source_note": "The article names H-1302, H-1303, and H-1822 in a mirrored-writing / ICIT-correction discussion after comparing against CISI.",
+    "limitation": "Inline sign images are not resolved as numeric sign IDs in text extraction, so the article does not fill local source-validation fields by itself."
+  },
+  "public_image_source": {
+    "url": "https://bharatkalyan97.blogspot.com/2021/06/boustrophedon-form-of-writing-qoli.html",
+    "source_tier": "T4 public search lead only",
+    "unique_image_urls_checked": 8,
+    "unlabeled_object_panel_candidates": 2,
+    "tiny_unlabeled_crops": 2,
+    "standalone_sign_icons": 2,
+    "context_or_lexical_excerpts": 2,
+    "images_downloaded_to_temp_only": true,
+    "images_stored_in_repo": false
+  },
+  "key_observation": "The Nature article is a real direction/corpus-correction lead for H-1302/H-1303, but neither the article text extraction nor the public Blogger images can verify local side order, row segmentation, or exact sign correction for the packet.",
+  "next_required_evidence": [
+    "CISI plate or source image for H-1302 all catalog side rows",
+    "CISI plate or source image for H-1303 all catalog side rows",
+    "Caption or catalog binding for the two unlabeled public object-panel candidates",
+    "Explicit reconciliation of ICIT/Wells/Fuls direction note with local 1:+400-740-176+|2:+700-033+ packet rows"
+  ],
+  "interpretation_boundary": "This audit accepts no side relation, local sign correction, sign segmentation, physical side function, numerical value, metrological reading, sign meaning, phonetic value, language identity, or translation.",
+  "outputs": [
+    "data/open_prototype/reports/h1302_h1303_direction_note_recheck.csv"
+  ]
+}

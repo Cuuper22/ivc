@@ -1,0 +1,43 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "lipi_034_p0_public_lead_search",
+  "question": "Do the six P0 Mohenjo-daro 034 crosswalk-acquisition targets have public object/source leads?",
+  "inputs": [
+    "data/open_prototype/reports/lipi_034_mayig_acquisition_priority_objects.csv"
+  ],
+  "checked_queries": [
+    "\"M-2104\" \"Indus Script\"",
+    "\"M-2104\" \"CISI\"",
+    "\"M-315\" \"Indus Script\"",
+    "\"M-315\" \"CISI\"",
+    "\"M-1206\" \"Indus Script\"",
+    "\"M-685\" \"CISI\"",
+    "\"S1-IndusZoomorphicIconCatalogue.pdf\" \"M-685\"",
+    "\"M-1584\" \"CISI\" \"Indus\"",
+    "\"M-1963\" \"CISI\" \"Indus\""
+  ],
+  "p0_target_count": 6,
+  "public_lead_rows": 6,
+  "lead_status_counts": {
+    "no_relevant_public_hit_in_checked_queries": 1,
+    "object_level_image_lead": 4,
+    "object_level_public_hit": 1
+  },
+  "lead_grade_counts": {
+    "B_image_lead_secondary": 1,
+    "B_object_level_prior_work": 1,
+    "B_source_visible_followup": 3,
+    "D_no_public_object_hit": 1
+  },
+  "object_level_or_image_leads": "M-2104;M-315;M-1206;M-685;M-1584",
+  "extractable_prior_sign_data_objects": "M-2104",
+  "public_image_lead_objects": "M-315;M-1206;M-685;M-1584",
+  "route_or_catalogue_leads": "",
+  "no_relevant_public_hit_objects": "M-1963",
+  "conclusion": "Public search and follow-up inspection now give usable leads for M-2104, M-315, M-1206, M-685, and M-1584. None yields an accepted 034 mapping. M-1963 remains the only P0 object with no relevant public object/source hit in the checked layer.",
+  "outputs": [
+    "data/open_prototype/reports/lipi_034_p0_public_leads.csv",
+    "data/open_prototype/reports/lipi_034_p0_public_leads_summary.json"
+  ],
+  "accepted_decipherment_claims": 0
+}

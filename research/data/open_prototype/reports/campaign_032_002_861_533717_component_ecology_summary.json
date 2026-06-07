@@ -1,0 +1,36 @@
+{
+  "date": "2026-05-29",
+  "strict_rows_scanned": 4011,
+  "unit_533_717_occurrences": 2,
+  "unit_533_717_examples": "M-376 +740-100-176-002-861-533-717+;M-391 +405-845-686-740-793-003-233-805-002-861-533-717+",
+  "independent_533_occurrences": 0,
+  "independent_533_examples": "",
+  "independent_717_occurrences": 37,
+  "independent_717_examples": "Blk-2 +390-717-061-002-368-634+;C-69 +390-844-060-575-717+;C-5 +740-140-717-002-298-741+;- +154-388-717-705+;H-2174 +090-100-415-717+;H-1854 +400-740-717+;H-2136 +400-740-717+;H-1945 +400-740-388-717-705+;H-63 +740-100-717+;H-130 +409-032-845-033-705-231-806-002-595-812-125-717+;H-178 +400-740-717+;H-271 +595-420-717-745+",
+  "broad_register_key": "Mohenjo-daro|SEAL:R|None|*",
+  "broad_register_002_861_rows": 7,
+  "broad_register_tail_counts": "<END>:3;533 717:2;360 520 919 140:1;603:1",
+  "broad_register_examples": "M-1954 +740-407-590-031-752-033-705-220-415-798-002-861+;M-355 +740-877-032-033-705-231-235-002-861-360-520-919-140+;M-376 +740-100-176-002-861-533-717+;M-391 +405-845-686-740-793-003-233-805-002-861-533-717+;M-1267 +416-001-740-720-175-002-861+;M-1273 +740-055-002-861-603+;M-1973 +740-575-017-233-550-002-861+",
+  "narrow_register_key": "Mohenjo-daro|SEAL:R|None|cuboid-convex",
+  "narrow_register_002_861_rows": 3,
+  "narrow_register_tail_counts": "533 717:2;360 520 919 140:1",
+  "narrow_register_examples": "M-355 +740-877-032-033-705-231-235-002-861-360-520-919-140+;M-376 +740-100-176-002-861-533-717+;M-391 +405-845-686-740-793-003-233-805-002-861-533-717+",
+  "decision": {
+    "status": "533_717_fixed_terminal_unit_not_decomposed_value",
+    "interpretation": [
+      "`533-717` remains the only fixed-prefix repeated terminal tail after `002-861`, but this scan does not promote its internal components to independent values.",
+      "The pair should be treated as a fixed two-sign restricted-tail unit for the next grammar pass, not as separately readable `533` plus `717`.",
+      "The broad no-icon SEAL:R field still contains bare closure, `603`, and a long tail, so `533-717` is not the marker of that whole branch.",
+      "Inside the narrower cuboid-convex no-icon SEAL:R field, `533-717` competes with the long tail `360-520-919-140`; that is narrower pressure, not a value.",
+      "The next useful question is source-normalized contrast between fixed-tail units inside the post-`002-861` secondary zone, not a component-level translation of `533` or `717`."
+    ],
+    "not_accepted": [
+      "533 value",
+      "717 value",
+      "533-717 semantic value",
+      "phonetics",
+      "language identity",
+      "translation"
+    ]
+  }
+}

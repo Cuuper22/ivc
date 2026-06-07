@@ -1,0 +1,4 @@
+checked_date,candidate,decision,reason,next_test
+2026-05-31,HEAD_X_PAIR_MICROGRAMMAR,narrow_to_scope_local_candidate,raw pair accuracy 0.958678; scope-pair-tail collapse 0.913043; global pair-tail collapse 0.666667,Treat repeated H-X pairs as parser candidates only after checking whether they survive collapse outside exact scope/tail families.
+2026-05-31,X_SIGN_PREDICTOR_BEATS_SCOPE_AND_LEFT_NULLS,keep_but_require_scope_correction,raw X accuracy 0.765182; scope-pair-tail collapse X 0.700508; pair-tail collapse X 0.612121,Do not use X alone as a parser; use X plus head/scope correction until source/family collapse improves it.
+2026-05-31,VISUAL_SCOPE_NULL_STILL_LIVE,strengthen_adversary,scope+X raw 0.824818; pair-tail collapse scope+X 0.705882; scope predictors remain competitive under strict collapse,Every high-confidence parse must report whether scope-conditioned predictors explain the same row.

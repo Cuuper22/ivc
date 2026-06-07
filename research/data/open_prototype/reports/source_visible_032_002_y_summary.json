@@ -1,0 +1,84 @@
+{
+  "generated_at_local": "2026-05-29T05:50:04.111Z",
+  "route_rows": 25,
+  "source_visible_count": 8,
+  "stats": {
+    "source_visible_rows": 8,
+    "medium_token_box_rows": 4,
+    "medium_or_medium_low_token_box_rows": 6,
+    "source_visible_categories": [
+      "non240_a_220_032",
+      "outside_a_220_x_032",
+      "target_240_220_032"
+    ],
+    "source_visible_y_values": [
+      "300",
+      "817",
+      "820",
+      "861"
+    ],
+    "source_visible_sites": [
+      "Chanhu-daro",
+      "Harappa",
+      "Mohenjo-daro"
+    ],
+    "source_visible_category_counts": {
+      "non240_a_220_032": 3,
+      "outside_a_220_x_032": 3,
+      "target_240_220_032": 2
+    },
+    "source_visible_y_counts": {
+      "300": 1,
+      "817": 2,
+      "820": 1,
+      "861": 4
+    },
+    "source_visible_site_counts": {
+      "Chanhu-daro": 2,
+      "Harappa": 2,
+      "Mohenjo-daro": 4
+    },
+    "token_box_tier_counts": {
+      "lowres_candidate_token_box": 1,
+      "medium_candidate_token_box": 4,
+      "medium_low_candidate_token_box": 2,
+      "weak_token_box": 1
+    },
+    "admissibility_counts": {
+      "chanhu_daro_plate_route": 1,
+      "local_source_reference_route": 11,
+      "partial_source_object_visible_side_unresolved": 1,
+      "source_route_needed": 2,
+      "source_visible_lowres_token_box_candidate": 1,
+      "source_visible_medium_low_token_box_candidate": 2,
+      "source_visible_medium_token_box_candidate": 4,
+      "source_visible_weak_token_box_candidate": 1,
+      "source_volume_ocr_hit": 2
+    }
+  },
+  "observed_coverage_criteria": {
+    "has_all_three_categories": true,
+    "has_at_least_four_y_values": true,
+    "has_at_least_three_sites": true,
+    "has_target_and_non240_817": true,
+    "has_outside_861_multisite": true
+  },
+  "coverage_null": {
+    "interpretation_boundary": "Exploratory only: acquisition was target-driven, not random. These rates diagnose how unsurprising the coverage shape is under random row visibility, not an accepted false-positive rate for the source claim.",
+    "iterations": 10000,
+    "source_visible_count": 8,
+    "false_positive_rates": {
+      "has_all_three_categories": 0.859,
+      "has_at_least_four_y_values": 0.2724,
+      "has_at_least_three_sites": 0.6342,
+      "has_target_and_non240_817": 0.2125,
+      "has_outside_861_multisite": 0.0245
+    }
+  },
+  "accepted_boundary": "Current evidence supports a candidate source-normalized structural packet: 032-002-Y is source-visible on a same physical line across target, non-240 A-220, and outside-032 contexts. It does not support token values, phonetics, translations, language identity, or accepted sign meanings.",
+  "artifact_files": [
+    "data/open_prototype/reports/source_visible_032_002_y_witness_matrix.csv",
+    "data/open_prototype/reports/source_visible_032_002_y_coverage_null_iterations.csv",
+    "data/open_prototype/reports/source_visible_032_002_y_summary.json"
+  ]
+}

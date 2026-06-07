@@ -1,0 +1,42 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_820_portable_rosette_closure_source_peek_20260531",
+  "tier": "candidate",
+  "bet": "The structural multigovernor closure sign 820 is the same wheel/rosette-like terminal shape in both 002-820 and at least some 060-820 rows. If true, 820 is a portable closure sign with visible sign identity across governors, not a private artifact of the M-1136/M-1139 rhinoceros packet or the older M-381 Brahmi-token failure.",
+  "structural_parent": "data/open_prototype/reports/risky_820_portable_closure_sign_20260531.json",
+  "source_peek_rows": {
+    "002_820_rhinoceros_packet": {
+      "local_page": "tmp/820_rhin_source_pages/Pakistan_n160_w2000.jpg",
+      "observed": "M-1136, M-1137, M-1138, and M-1139 panels show a wheel/rosette terminal sign in rows catalogued with 002-820."
+    },
+    "060_820_M_31": {
+      "local_source": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-31_A.jpg",
+      "blind_panel": "tmp/blind_060920_terminal_cap_20260531/BC005.jpg",
+      "catalog_text": "+740-269-511-233-060-820+",
+      "observed": "The terminal sign after 060 is visibly wheel/rosette-like, matching the broad morphology seen in the 002-820 rhinoceros packet."
+    },
+    "060_820_L_21": {
+      "local_source": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/L-21_A.jpg",
+      "blind_panel": "tmp/blind_060920_terminal_cap_20260531/BC009.jpg",
+      "catalog_text": "+156-142-060-820+",
+      "observed": "The panel is dark and damaged; the terminal area is not clean enough for a strong rosette call. It was the blind reader's low-confidence possible cap-like panel."
+    }
+  },
+  "interaction_with_blind_packet": {
+    "BC005_M_31": "Blind reader called this control, so visual recognizability as the 920-like cap was not recovered, despite the source-visible rosette.",
+    "BC009_L_21": "Blind reader marked this as low-confidence possible, but the image is poor.",
+    "interpretation": "This supports 820 as a source-visible rosette/wheel sign in at least one 060-governed row, but does not promote a shared 920-like visual class. The claim is sign-identity portability for 820, not all cap signs sharing one shape."
+  },
+  "decision": "candidate_source_peek_support_for_820_rosette_portability; not accepted and not a phonetic anchor",
+  "predictions": [
+    "Additional independent 060-820 rows with readable source images should show the wheel/rosette terminal more often than not.",
+    "A blind packet focused on 820 identity, not 920 cap-likeness, should recover M-31-like 060-820 and M-1136/M-1139-like 002-820 as the same sign family above controls.",
+    "If the M-31 terminal sign boxes as something other than 820 under source-normalized review, kill the portability claim."
+  ],
+  "non_claims": [
+    "No Brahmi value is assigned.",
+    "No shared visual allography is claimed for 920, 692, 550, and 820.",
+    "No meaning is assigned beyond portable closure function."
+  ]
+}

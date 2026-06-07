@@ -1,0 +1,5266 @@
+{
+  "run_date": "2026-05-31",
+  "bet_id": "V4_091_CIRCULAR_SEAL_CONTEXT_20260531",
+  "vector": "V4 context-to-meaning without sound",
+  "confidence_tier": "candidate",
+  "risky_bet": "`091` carries circular-seal / round-seal register load. This predicts object/register context only: `091` should appear disproportionately on SEAL:C/SEAL:CY or circular-shape objects.",
+  "observed": "Canonical rows=3503; target rows=16; target circular-seal rows=7/16; background circular-seal rows=80/3487. Frequency-comparable signs >= target circular count: none.",
+  "adversarial_test": "Canonical numeric-sequence collapse; Fisher right-tail target-vs-background; random-row forger preserving target row count (100000); frequency-comparable all-sign rank.",
+  "false_positive_rate": 4.3652607101256646e-8,
+  "random_row_false_positive_rate": 0,
+  "all_sign_rank": "10/714",
+  "frequency_comparable_rank": "1/118",
+  "falsifier": "Several new source-bound non-circular 091 rows, or frequency-matched signs with equal circular concentration after source review, demote the circular-register reading.",
+  "next_prediction": "Unverified or future 091-bearing objects should skew toward circular seal, cylinder seal, or external Gulf circular registers; the result does not license a sound value.",
+  "target_stats": {
+    "sign": "091",
+    "rows": 16,
+    "circular_rows": 7,
+    "circular_share": 0.4375,
+    "examples": "-:5551.1:Kalba:SEAL:C:-:+091+ | -:2153.1:Luristan:SEAL:C:circular:+831-413-840-091+ | -:3887.1:Unknown:SEAL:C:circular:+000-603-091-190+ | -:4247.1:Dholavira:SEAL:C:circular:+806-091-001-368-255-000+ | -:5227.1:Karzakan:SEAL:C:circular:+220-455-031-091+ | -:5228.1:Karzakan:SEAL:C:circular:+033-001-032-091+ | -:5229.1:Saar:SEAL:C:circular:+031-093-001-091-220-055+"
+  },
+  "comparable_ge": [],
+  "all_ge": [
+    {
+      "sign": "000",
+      "rows": 929,
+      "circular_rows": 32,
+      "circular_share": 0.03444564047362755,
+      "examples": "C-33:Chanhu-daro:MISC:circular:+220-000-740/741-255+ | -:147.1:Failaka:SEAL:C:circular:+317-817-000-090+ | H-1725:Harappa:TAG:P:circular:]000-590-832-741-003+ | H-1921:Harappa:TAB:B:circular:]000-740-233-240+ | H-242:Harappa:TAB:B:circular:+400-740-392-000-000-000-000-255-000+ | H-246:Harappa:TAB:B:circular:+400-804-000-233-240+ | H-247:Harappa:TAB:B:circular:+400-740-335-000+ | H-837:Harappa:TAB:B:circular:+000-480-176+"
+    },
+    {
+      "sign": "740",
+      "rows": 1302,
+      "circular_rows": 27,
+      "circular_share": 0.020737327188940093,
+      "examples": "C-87:Chanhu-daro:TAG:P:circular:+740-405+ | C-33:Chanhu-daro:MISC:circular:+220-000-740/741-255+ | -:225.1:Harappa:TAB:B:circular:+804-740-219+ | H-1921:Harappa:TAB:B:circular:]000-740-233-240+ | H-1923:Harappa:TAB:B:circular:+400-740-032-840+ | H-248:Harappa:TAB:B:circular:+400-740-920-320-233-240-798+ | H-2197:Harappa:TAB:I:circular:+400-090-740-100-390-231+ | H-2198:Harappa:TAB:I:circular:+740-255-032+"
+    },
+    {
+      "sign": "400",
+      "rows": 287,
+      "circular_rows": 17,
+      "circular_share": 0.059233449477351915,
+      "examples": "C-32:Chanhu-daro:SEAL:C:circular:+375-400-390-632+ | H-1147:Harappa:TAB:B:circular:+400-142[ | H-1332:Harappa:TAB:I:circular:+400-098+ | H-1923:Harappa:TAB:B:circular:+400-740-032-840+ | H-248:Harappa:TAB:B:circular:+400-740-920-320-233-240-798+ | H-2197:Harappa:TAB:I:circular:+400-090-740-100-390-231+ | H-242:Harappa:TAB:B:circular:+400-740-392-000-000-000-000-255-000+ | H-245:Harappa:TAB:B:circular:+400-807-740-219+"
+    },
+    {
+      "sign": "090",
+      "rows": 148,
+      "circular_rows": 13,
+      "circular_share": 0.08783783783783784,
+      "examples": "-:147.1:Failaka:SEAL:C:circular:+317-817-000-090+ | -:148.1:Failaka:SEAL:C:circular:]090-001-350-716+ | H-2197:Harappa:TAB:I:circular:+400-090-740-100-390-231+ | H-345:Harappa:TAB:I:circular:+090-740-362+ | M-428:Mohenjo-daro:TAB:B:circular:+090-740-176-000-000+ | -:3863.1:Qala'at al-Bahrain:SEAL:C:circular:+160-090-055-060-190+ | -:3881.1:Susa:SEAL:C:circular:+700-604-407-090-365-000+ | -:3888.1:Unknown:SEAL:CY:cylindrical:+090-055-000-132-032+"
+    },
+    {
+      "sign": "001",
+      "rows": 187,
+      "circular_rows": 13,
+      "circular_share": 0.06951871657754011,
+      "examples": "-:148.1:Failaka:SEAL:C:circular:]090-001-350-716+ | H-241:Harappa:TAB:B:circular:+001-142+ | M-2039:Mohenjo-daro:SEAL:C:circular:+140-001-000-000+ | M-416:Mohenjo-daro:SEAL:C:circular:+324-255-001-405-016+ | -:3882.1:Susa:SEAL:CY:cylindrical:+416-150-002-055-031-319-001-924+ | -:3889.1:Unknown:SEAL:C:circular:+740-740-001-550-467+ | -:3898.1:Ur:SEAL:C:circular:+002-004-328-001-803-415+ | -:4247.1:Dholavira:SEAL:C:circular:+806-091-001-368-255-000+"
+    },
+    {
+      "sign": "002",
+      "rows": 723,
+      "circular_rows": 11,
+      "circular_share": 0.015214384508990318,
+      "examples": "H-833:Harappa:TAB:B:circular:+526-554-002-820+ | H-244:Harappa:TAB:B:circular:+104-002-820+ | H-838:Harappa:TAB:B:circular:+740-615-495-002-817+ | M-1369:Mohenjo-daro:SEAL:C:circular:]000-055-592-140-832-002-060-820[ | M-1385:Mohenjo-daro:TAG:P:circular:+740-760-032-002-817+ | -:3882.1:Susa:SEAL:CY:cylindrical:+416-150-002-055-031-319-001-924+ | -:3898.1:Ur:SEAL:C:circular:+002-004-328-001-803-415+ | M-2012:Mohenjo-daro:TAB:B:circular:+740-900-005-002-570+"
+    },
+    {
+      "sign": "031",
+      "rows": 216,
+      "circular_rows": 8,
+      "circular_share": 0.037037037037037035,
+      "examples": "H-368:Harappa:SEAL:CY:cylindrical:+400-156-384-031+ | H-369:Harappa:SEAL:CY:cylindrical:+368-033-705-031-741-390-741+ | -:3882.1:Susa:SEAL:CY:cylindrical:+416-150-002-055-031-319-001-924+ | -:3902.1:Kanmer:IMPL:circular:+136-031+ | -:3900.2:Kanmer:IMPL:circular:+413-933-031+ | -:5227.1:Karzakan:SEAL:C:circular:+220-455-031-091+ | -:5229.1:Saar:SEAL:C:circular:+031-093-001-091-220-055+ | -:5232.1:Janabiyah:SEAL:C:circular:+055-099-121-055-831-031-071+"
+    },
+    {
+      "sign": "032",
+      "rows": 339,
+      "circular_rows": 8,
+      "circular_share": 0.02359882005899705,
+      "examples": "H-1923:Harappa:TAB:B:circular:+400-740-032-840+ | H-2198:Harappa:TAB:I:circular:+740-255-032+ | H-240:Harappa:TAG:P:circular:+740-904-032-233-803+ | H-247:Harappa:TAB:B:circular:+116-032+ | M-1385:Mohenjo-daro:TAG:P:circular:+740-760-032-002-817+ | -:3888.1:Unknown:SEAL:CY:cylindrical:+090-055-000-132-032+ | -:5224.1:Unknown:SEAL:C:circular:+000-061-032-001-220-033-000+ | -:5228.1:Karzakan:SEAL:C:circular:+033-001-032-091+"
+    },
+    {
+      "sign": "033",
+      "rows": 234,
+      "circular_rows": 7,
+      "circular_share": 0.029914529914529916,
+      "examples": "H-246:Harappa:TAB:B:circular:+125-700-033+ | H-369:Harappa:SEAL:CY:cylindrical:+368-033-705-031-741-390-741+ | M-433:Mohenjo-daro:TAB:B:circular:+740-390-590-033-705-000+ | M-432:Mohenjo-daro:TAB:B:circular:+740-390-590-033-705+ | -:4301.1:Dholavira:TAG:circular:+136-033+ | -:5224.1:Unknown:SEAL:C:circular:+000-061-032-001-220-033-000+ | -:5228.1:Karzakan:SEAL:C:circular:+033-001-032-091+"
+    }
+  ],
+  "support_rows": [
+    {
+      "object": "H-1862",
+      "region": "Inter-Riverine",
+      "site": "Harappa",
+      "type": "TAB:B",
+      "shape": "rectangular",
+      "material": "NA",
+      "symbol": "NA",
+      "circular_seal_context": "false",
+      "text": "+700-033-368-091+"
+    },
+    {
+      "object": "H-1861",
+      "region": "Inter-Riverine",
+      "site": "Harappa",
+      "type": "TAB:B",
+      "shape": "rectangular",
+      "material": "Faience",
+      "symbol": "NA",
+      "circular_seal_context": "false",
+      "text": "+368-091+"
+    },
+    {
+      "object": "H-2000",
+      "region": "Inter-Riverine",
+      "site": "Harappa",
+      "type": "TAB:B",
+      "shape": "cylindrical",
+      "material": "Clay",
+      "symbol": "Gavi",
+      "circular_seal_context": "false",
+      "text": "+700-032-000-091+"
+    },
+    {
+      "object": "H-239",
+      "region": "Inter-Riverine",
+      "site": "Harappa",
+      "type": "TAB:B",
+      "shape": "triangular",
+      "material": "Faience",
+      "symbol": "NA",
+      "circular_seal_context": "false",
+      "text": "+390-060/740-500-091+"
+    },
+    {
+      "object": "-:5551.1",
+      "region": "Persian Gulf",
+      "site": "Kalba",
+      "type": "SEAL:C",
+      "shape": "NA",
+      "material": "NA",
+      "symbol": "NA",
+      "circular_seal_context": "true",
+      "text": "+091+"
+    },
+    {
+      "object": "K-156",
+      "region": "Inter-Riverine",
+      "site": "Kalibangan",
+      "type": "TAG",
+      "shape": "rectangular",
+      "material": "Terracotta",
+      "symbol": "Bull1",
+      "circular_seal_context": "false",
+      "text": "+892-890-417-002-056-091+"
+    },
+    {
+      "object": "-:2153.1",
+      "region": "Iranian Plateau",
+      "site": "Luristan",
+      "type": "SEAL:C",
+      "shape": "circular",
+      "material": "NA",
+      "symbol": "Gaur",
+      "circular_seal_context": "true",
+      "text": "+831-413-840-091+"
+    },
+    {
+      "object": "-:2180.1",
+      "region": "Gujarat/Kutch",
+      "site": "Dholavira",
+      "type": "SEAL:S",
+      "shape": "square",
+      "material": "Steatite",
+      "symbol": "Bull1:V",
+      "circular_seal_context": "false",
+      "text": "+740-840-416-240-741-500-091+"
+    },
+    {
+      "object": "M-798",
+      "region": "Lower Indus",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:S",
+      "shape": "square",
+      "material": "Steatite",
+      "symbol": "Bull1:W",
+      "circular_seal_context": "false",
+      "text": "+585-831-091+"
+    },
+    {
+      "object": "-:3887.1",
+      "region": "Other",
+      "site": "Unknown",
+      "type": "SEAL:C",
+      "shape": "circular",
+      "material": "Steatite",
+      "symbol": "Scene",
+      "circular_seal_context": "true",
+      "text": "+000-603-091-190+"
+    },
+    {
+      "object": "-:4247.1",
+      "region": "Gujarat/Kutch",
+      "site": "Dholavira",
+      "type": "SEAL:C",
+      "shape": "circular",
+      "material": "Steatite",
+      "symbol": "Gaur",
+      "circular_seal_context": "true",
+      "text": "+806-091-001-368-255-000+"
+    },
+    {
+      "object": "-:4257.1",
+      "region": "Gujarat/Kutch",
+      "site": "Dholavira",
+      "type": "SEAL:R",
+      "shape": "rectangular",
+      "material": "NA",
+      "symbol": "NA",
+      "circular_seal_context": "false",
+      "text": "]000-091+"
+    },
+    {
+      "object": "M-654",
+      "region": "Lower Indus",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:S",
+      "shape": "square",
+      "material": "Faience",
+      "symbol": "Bull1:U",
+      "circular_seal_context": "false",
+      "text": "+368-000-091-031+"
+    },
+    {
+      "object": "-:5227.1",
+      "region": "Persian Gulf",
+      "site": "Karzakan",
+      "type": "SEAL:C",
+      "shape": "circular",
+      "material": "NA",
+      "symbol": "Gaur",
+      "circular_seal_context": "true",
+      "text": "+220-455-031-091+"
+    },
+    {
+      "object": "-:5228.1",
+      "region": "Persian Gulf",
+      "site": "Karzakan",
+      "type": "SEAL:C",
+      "shape": "circular",
+      "material": "NA",
+      "symbol": "Gaur",
+      "circular_seal_context": "true",
+      "text": "+033-001-032-091+"
+    },
+    {
+      "object": "-:5229.1",
+      "region": "Persian Gulf",
+      "site": "Saar",
+      "type": "SEAL:C",
+      "shape": "circular",
+      "material": "NA",
+      "symbol": "NA",
+      "circular_seal_context": "true",
+      "text": "+031-093-001-091-220-055+"
+    }
+  ],
+  "sign_table": [
+    {
+      "sign": "000",
+      "rows": 929,
+      "circular_rows": 32,
+      "circular_share": 0.03444564047362755,
+      "examples": "C-33:Chanhu-daro:MISC:circular:+220-000-740/741-255+ | -:147.1:Failaka:SEAL:C:circular:+317-817-000-090+ | H-1725:Harappa:TAG:P:circular:]000-590-832-741-003+ | H-1921:Harappa:TAB:B:circular:]000-740-233-240+ | H-242:Harappa:TAB:B:circular:+400-740-392-000-000-000-000-255-000+ | H-246:Harappa:TAB:B:circular:+400-804-000-233-240+ | H-247:Harappa:TAB:B:circular:+400-740-335-000+ | H-837:Harappa:TAB:B:circular:+000-480-176+"
+    },
+    {
+      "sign": "740",
+      "rows": 1302,
+      "circular_rows": 27,
+      "circular_share": 0.020737327188940093,
+      "examples": "C-87:Chanhu-daro:TAG:P:circular:+740-405+ | C-33:Chanhu-daro:MISC:circular:+220-000-740/741-255+ | -:225.1:Harappa:TAB:B:circular:+804-740-219+ | H-1921:Harappa:TAB:B:circular:]000-740-233-240+ | H-1923:Harappa:TAB:B:circular:+400-740-032-840+ | H-248:Harappa:TAB:B:circular:+400-740-920-320-233-240-798+ | H-2197:Harappa:TAB:I:circular:+400-090-740-100-390-231+ | H-2198:Harappa:TAB:I:circular:+740-255-032+"
+    },
+    {
+      "sign": "400",
+      "rows": 287,
+      "circular_rows": 17,
+      "circular_share": 0.059233449477351915,
+      "examples": "C-32:Chanhu-daro:SEAL:C:circular:+375-400-390-632+ | H-1147:Harappa:TAB:B:circular:+400-142[ | H-1332:Harappa:TAB:I:circular:+400-098+ | H-1923:Harappa:TAB:B:circular:+400-740-032-840+ | H-248:Harappa:TAB:B:circular:+400-740-920-320-233-240-798+ | H-2197:Harappa:TAB:I:circular:+400-090-740-100-390-231+ | H-242:Harappa:TAB:B:circular:+400-740-392-000-000-000-000-255-000+ | H-245:Harappa:TAB:B:circular:+400-807-740-219+"
+    },
+    {
+      "sign": "090",
+      "rows": 148,
+      "circular_rows": 13,
+      "circular_share": 0.08783783783783784,
+      "examples": "-:147.1:Failaka:SEAL:C:circular:+317-817-000-090+ | -:148.1:Failaka:SEAL:C:circular:]090-001-350-716+ | H-2197:Harappa:TAB:I:circular:+400-090-740-100-390-231+ | H-345:Harappa:TAB:I:circular:+090-740-362+ | M-428:Mohenjo-daro:TAB:B:circular:+090-740-176-000-000+ | -:3863.1:Qala'at al-Bahrain:SEAL:C:circular:+160-090-055-060-190+ | -:3881.1:Susa:SEAL:C:circular:+700-604-407-090-365-000+ | -:3888.1:Unknown:SEAL:CY:cylindrical:+090-055-000-132-032+"
+    },
+    {
+      "sign": "001",
+      "rows": 187,
+      "circular_rows": 13,
+      "circular_share": 0.06951871657754011,
+      "examples": "-:148.1:Failaka:SEAL:C:circular:]090-001-350-716+ | H-241:Harappa:TAB:B:circular:+001-142+ | M-2039:Mohenjo-daro:SEAL:C:circular:+140-001-000-000+ | M-416:Mohenjo-daro:SEAL:C:circular:+324-255-001-405-016+ | -:3882.1:Susa:SEAL:CY:cylindrical:+416-150-002-055-031-319-001-924+ | -:3889.1:Unknown:SEAL:C:circular:+740-740-001-550-467+ | -:3898.1:Ur:SEAL:C:circular:+002-004-328-001-803-415+ | -:4247.1:Dholavira:SEAL:C:circular:+806-091-001-368-255-000+"
+    },
+    {
+      "sign": "002",
+      "rows": 723,
+      "circular_rows": 11,
+      "circular_share": 0.015214384508990318,
+      "examples": "H-833:Harappa:TAB:B:circular:+526-554-002-820+ | H-244:Harappa:TAB:B:circular:+104-002-820+ | H-838:Harappa:TAB:B:circular:+740-615-495-002-817+ | M-1369:Mohenjo-daro:SEAL:C:circular:]000-055-592-140-832-002-060-820[ | M-1385:Mohenjo-daro:TAG:P:circular:+740-760-032-002-817+ | -:3882.1:Susa:SEAL:CY:cylindrical:+416-150-002-055-031-319-001-924+ | -:3898.1:Ur:SEAL:C:circular:+002-004-328-001-803-415+ | M-2012:Mohenjo-daro:TAB:B:circular:+740-900-005-002-570+"
+    },
+    {
+      "sign": "031",
+      "rows": 216,
+      "circular_rows": 8,
+      "circular_share": 0.037037037037037035,
+      "examples": "H-368:Harappa:SEAL:CY:cylindrical:+400-156-384-031+ | H-369:Harappa:SEAL:CY:cylindrical:+368-033-705-031-741-390-741+ | -:3882.1:Susa:SEAL:CY:cylindrical:+416-150-002-055-031-319-001-924+ | -:3902.1:Kanmer:IMPL:circular:+136-031+ | -:3900.2:Kanmer:IMPL:circular:+413-933-031+ | -:5227.1:Karzakan:SEAL:C:circular:+220-455-031-091+ | -:5229.1:Saar:SEAL:C:circular:+031-093-001-091-220-055+ | -:5232.1:Janabiyah:SEAL:C:circular:+055-099-121-055-831-031-071+"
+    },
+    {
+      "sign": "032",
+      "rows": 339,
+      "circular_rows": 8,
+      "circular_share": 0.02359882005899705,
+      "examples": "H-1923:Harappa:TAB:B:circular:+400-740-032-840+ | H-2198:Harappa:TAB:I:circular:+740-255-032+ | H-240:Harappa:TAG:P:circular:+740-904-032-233-803+ | H-247:Harappa:TAB:B:circular:+116-032+ | M-1385:Mohenjo-daro:TAG:P:circular:+740-760-032-002-817+ | -:3888.1:Unknown:SEAL:CY:cylindrical:+090-055-000-132-032+ | -:5224.1:Unknown:SEAL:C:circular:+000-061-032-001-220-033-000+ | -:5228.1:Karzakan:SEAL:C:circular:+033-001-032-091+"
+    },
+    {
+      "sign": "091",
+      "rows": 16,
+      "circular_rows": 7,
+      "circular_share": 0.4375,
+      "examples": "-:5551.1:Kalba:SEAL:C:-:+091+ | -:2153.1:Luristan:SEAL:C:circular:+831-413-840-091+ | -:3887.1:Unknown:SEAL:C:circular:+000-603-091-190+ | -:4247.1:Dholavira:SEAL:C:circular:+806-091-001-368-255-000+ | -:5227.1:Karzakan:SEAL:C:circular:+220-455-031-091+ | -:5228.1:Karzakan:SEAL:C:circular:+033-001-032-091+ | -:5229.1:Saar:SEAL:C:circular:+031-093-001-091-220-055+"
+    },
+    {
+      "sign": "033",
+      "rows": 234,
+      "circular_rows": 7,
+      "circular_share": 0.029914529914529916,
+      "examples": "H-246:Harappa:TAB:B:circular:+125-700-033+ | H-369:Harappa:SEAL:CY:cylindrical:+368-033-705-031-741-390-741+ | M-433:Mohenjo-daro:TAB:B:circular:+740-390-590-033-705-000+ | M-432:Mohenjo-daro:TAB:B:circular:+740-390-590-033-705+ | -:4301.1:Dholavira:TAG:circular:+136-033+ | -:5224.1:Unknown:SEAL:C:circular:+000-061-032-001-220-033-000+ | -:5228.1:Karzakan:SEAL:C:circular:+033-001-032-091+"
+    },
+    {
+      "sign": "055",
+      "rows": 51,
+      "circular_rows": 6,
+      "circular_share": 0.11764705882352941,
+      "examples": "M-1369:Mohenjo-daro:SEAL:C:circular:]000-055-592-140-832-002-060-820[ | -:3863.1:Qala'at al-Bahrain:SEAL:C:circular:+160-090-055-060-190+ | -:3882.1:Susa:SEAL:CY:cylindrical:+416-150-002-055-031-319-001-924+ | -:3888.1:Unknown:SEAL:CY:cylindrical:+090-055-000-132-032+ | -:5229.1:Saar:SEAL:C:circular:+031-093-001-091-220-055+ | -:5232.1:Janabiyah:SEAL:C:circular:+055-099-121-055-831-031-071+"
+    },
+    {
+      "sign": "255",
+      "rows": 101,
+      "circular_rows": 6,
+      "circular_share": 0.0594059405940594,
+      "examples": "C-33:Chanhu-daro:MISC:circular:+220-000-740/741-255+ | H-2198:Harappa:TAB:I:circular:+740-255-032+ | H-242:Harappa:TAB:B:circular:+400-740-392-000-000-000-000-255-000+ | M-416:Mohenjo-daro:SEAL:C:circular:+324-255-001-405-016+ | -:4247.1:Dholavira:SEAL:C:circular:+806-091-001-368-255-000+ | -:5222.1:Girsu:SEAL:C:circular:+740-000-744-013-255+"
+    },
+    {
+      "sign": "390",
+      "rows": 218,
+      "circular_rows": 6,
+      "circular_share": 0.027522935779816515,
+      "examples": "C-32:Chanhu-daro:SEAL:C:circular:+375-400-390-632+ | H-2197:Harappa:TAB:I:circular:+400-090-740-100-390-231+ | H-369:Harappa:SEAL:CY:cylindrical:+368-033-705-031-741-390-741+ | M-433:Mohenjo-daro:TAB:B:circular:+740-390-590-033-705-000+ | M-432:Mohenjo-daro:TAB:B:circular:+740-390-590-033-705+ | M-436:Mohenjo-daro:TAB:B:circular:+390-370+"
+    },
+    {
+      "sign": "220",
+      "rows": 356,
+      "circular_rows": 6,
+      "circular_share": 0.016853932584269662,
+      "examples": "C-33:Chanhu-daro:MISC:circular:+220-000-740/741-255+ | M-434:Mohenjo-daro:MDLN:circular:+400-000-000-220+ | -:3897.1:Ur:SEAL:C:circular:+093-340-924-220-528+ | -:5224.1:Unknown:SEAL:C:circular:+000-061-032-001-220-033-000+ | -:5227.1:Karzakan:SEAL:C:circular:+220-455-031-091+ | -:5229.1:Saar:SEAL:C:circular:+031-093-001-091-220-055+"
+    },
+    {
+      "sign": "140",
+      "rows": 102,
+      "circular_rows": 5,
+      "circular_share": 0.049019607843137254,
+      "examples": "H-839:Harappa:TAB:B:circular:+400-140+ | M-2039:Mohenjo-daro:SEAL:C:circular:+140-001-000-000+ | M-417:Mohenjo-daro:SEAL:C:circular:]000-140+ | M-500:Mohenjo-daro:SEAL:C:circular:+400-592-140-003-900-692-003-700+ | M-1369:Mohenjo-daro:SEAL:C:circular:]000-055-592-140-832-002-060-820["
+    },
+    {
+      "sign": "003",
+      "rows": 154,
+      "circular_rows": 5,
+      "circular_share": 0.032467532467532464,
+      "examples": "H-1924:Harappa:TAB:B:circular:+550-003-435+ | H-1725:Harappa:TAG:P:circular:]000-590-832-741-003+ | M-1388:Mohenjo-daro:TAG:L:circular:+156-003+ | M-2039:Mohenjo-daro:SEAL:C:circular:+003-000-000-003+ | M-500:Mohenjo-daro:SEAL:C:circular:+400-592-140-003-900-692-003-700+"
+    },
+    {
+      "sign": "741",
+      "rows": 198,
+      "circular_rows": 5,
+      "circular_share": 0.025252525252525252,
+      "examples": "C-33:Chanhu-daro:MISC:circular:+220-000-740/741-255+ | H-1725:Harappa:TAG:P:circular:]000-590-832-741-003+ | H-369:Harappa:SEAL:CY:cylindrical:+368-033-705-031-741-390-741+ | M-427:Mohenjo-daro:TAG:P:circular:+740-100-415-741-060-920+ | -:5560.1:Rakhigarhi:TAG:circular:]000-100-415-240-741-060-920+"
+    },
+    {
+      "sign": "590",
+      "rows": 169,
+      "circular_rows": 4,
+      "circular_share": 0.023668639053254437,
+      "examples": "H-1725:Harappa:TAG:P:circular:]000-590-832-741-003+ | M-433:Mohenjo-daro:TAB:B:circular:+740-390-590-033-705-000+ | M-432:Mohenjo-daro:TAB:B:circular:+740-390-590-033-705+ | H-1144:Harappa:TAB:B:circular:+000-000-590-000-000+"
+    },
+    {
+      "sign": "233",
+      "rows": 172,
+      "circular_rows": 4,
+      "circular_share": 0.023255813953488372,
+      "examples": "H-1921:Harappa:TAB:B:circular:]000-740-233-240+ | H-248:Harappa:TAB:B:circular:+400-740-920-320-233-240-798+ | H-240:Harappa:TAG:P:circular:+740-904-032-233-803+ | H-246:Harappa:TAB:B:circular:+400-804-000-233-240+"
+    },
+    {
+      "sign": "060",
+      "rows": 208,
+      "circular_rows": 4,
+      "circular_share": 0.019230769230769232,
+      "examples": "M-427:Mohenjo-daro:TAG:P:circular:+740-100-415-741-060-920+ | M-1369:Mohenjo-daro:SEAL:C:circular:]000-055-592-140-832-002-060-820[ | -:3863.1:Qala'at al-Bahrain:SEAL:C:circular:+160-090-055-060-190+ | -:5560.1:Rakhigarhi:TAG:circular:]000-100-415-240-741-060-920+"
+    },
+    {
+      "sign": "820",
+      "rows": 210,
+      "circular_rows": 4,
+      "circular_share": 0.01904761904761905,
+      "examples": "H-833:Harappa:TAB:B:circular:+526-554-002-820+ | H-244:Harappa:TAB:B:circular:+104-002-820+ | M-1369:Mohenjo-daro:SEAL:C:circular:]000-055-592-140-832-002-060-820[ | -:5420.1:Kanmer:TAG:circular:]000-049-002-820+"
+    },
+    {
+      "sign": "240",
+      "rows": 258,
+      "circular_rows": 4,
+      "circular_share": 0.015503875968992248,
+      "examples": "H-1921:Harappa:TAB:B:circular:]000-740-233-240+ | H-248:Harappa:TAB:B:circular:+400-740-920-320-233-240-798+ | H-246:Harappa:TAB:B:circular:+400-804-000-233-240+ | -:5560.1:Rakhigarhi:TAG:circular:]000-100-415-240-741-060-920+"
+    },
+    {
+      "sign": "832",
+      "rows": 43,
+      "circular_rows": 3,
+      "circular_share": 0.06976744186046512,
+      "examples": "H-1725:Harappa:TAG:P:circular:]000-590-832-741-003+ | M-415:Mohenjo-daro:SEAL:C:circular:+256-832+ | M-1369:Mohenjo-daro:SEAL:C:circular:]000-055-592-140-832-002-060-820["
+    },
+    {
+      "sign": "405",
+      "rows": 71,
+      "circular_rows": 3,
+      "circular_share": 0.04225352112676056,
+      "examples": "C-87:Chanhu-daro:TAG:P:circular:+740-405+ | M-416:Mohenjo-daro:SEAL:C:circular:+324-255-001-405-016+ | -:5231.1:Ur:SEAL:C:-:]405-090["
+    },
+    {
+      "sign": "700",
+      "rows": 91,
+      "circular_rows": 3,
+      "circular_share": 0.03296703296703297,
+      "examples": "H-246:Harappa:TAB:B:circular:+125-700-033+ | M-500:Mohenjo-daro:SEAL:C:circular:+400-592-140-003-900-692-003-700+ | -:3881.1:Susa:SEAL:C:circular:+700-604-407-090-365-000+"
+    },
+    {
+      "sign": "550",
+      "rows": 101,
+      "circular_rows": 3,
+      "circular_share": 0.0297029702970297,
+      "examples": "H-1924:Harappa:TAB:B:circular:+550-003-435+ | M-1390:Mohenjo-daro:TAB:B:circular:+400-525-550+ | -:3889.1:Unknown:SEAL:C:circular:+740-740-001-550-467+"
+    },
+    {
+      "sign": "100",
+      "rows": 110,
+      "circular_rows": 3,
+      "circular_share": 0.02727272727272727,
+      "examples": "H-2197:Harappa:TAB:I:circular:+400-090-740-100-390-231+ | M-427:Mohenjo-daro:TAG:P:circular:+740-100-415-741-060-920+ | -:5560.1:Rakhigarhi:TAG:circular:]000-100-415-240-741-060-920+"
+    },
+    {
+      "sign": "415",
+      "rows": 125,
+      "circular_rows": 3,
+      "circular_share": 0.024,
+      "examples": "M-427:Mohenjo-daro:TAG:P:circular:+740-100-415-741-060-920+ | -:3898.1:Ur:SEAL:C:circular:+002-004-328-001-803-415+ | -:5560.1:Rakhigarhi:TAG:circular:]000-100-415-240-741-060-920+"
+    },
+    {
+      "sign": "920",
+      "rows": 132,
+      "circular_rows": 3,
+      "circular_share": 0.022727272727272728,
+      "examples": "H-248:Harappa:TAB:B:circular:+400-740-920-320-233-240-798+ | M-427:Mohenjo-daro:TAG:P:circular:+740-100-415-741-060-920+ | -:5560.1:Rakhigarhi:TAG:circular:]000-100-415-240-741-060-920+"
+    },
+    {
+      "sign": "705",
+      "rows": 164,
+      "circular_rows": 3,
+      "circular_share": 0.018292682926829267,
+      "examples": "H-369:Harappa:SEAL:CY:cylindrical:+368-033-705-031-741-390-741+ | M-433:Mohenjo-daro:TAB:B:circular:+740-390-590-033-705-000+ | M-432:Mohenjo-daro:TAB:B:circular:+740-390-590-033-705+"
+    },
+    {
+      "sign": "817",
+      "rows": 173,
+      "circular_rows": 3,
+      "circular_share": 0.017341040462427744,
+      "examples": "-:147.1:Failaka:SEAL:C:circular:+317-817-000-090+ | H-838:Harappa:TAB:B:circular:+740-615-495-002-817+ | M-1385:Mohenjo-daro:TAG:P:circular:+740-760-032-002-817+"
+    },
+    {
+      "sign": "160",
+      "rows": 5,
+      "circular_rows": 2,
+      "circular_share": 0.4,
+      "examples": "-:3863.1:Qala'at al-Bahrain:SEAL:C:circular:+160-090-055-060-190+ | -:5223.1:Unknown:SEAL:C:circular:+000-090-001-133-384-160+"
+    },
+    {
+      "sign": "219",
+      "rows": 6,
+      "circular_rows": 2,
+      "circular_share": 0.3333333333333333,
+      "examples": "-:225.1:Harappa:TAB:B:circular:+804-740-219+ | H-245:Harappa:TAB:B:circular:+400-807-740-219+"
+    },
+    {
+      "sign": "093",
+      "rows": 7,
+      "circular_rows": 2,
+      "circular_share": 0.2857142857142857,
+      "examples": "-:3897.1:Ur:SEAL:C:circular:+093-340-924-220-528+ | -:5229.1:Saar:SEAL:C:circular:+031-093-001-091-220-055+"
+    },
+    {
+      "sign": "592",
+      "rows": 7,
+      "circular_rows": 2,
+      "circular_share": 0.2857142857142857,
+      "examples": "M-500:Mohenjo-daro:SEAL:C:circular:+400-592-140-003-900-692-003-700+ | M-1369:Mohenjo-daro:SEAL:C:circular:]000-055-592-140-832-002-060-820["
+    },
+    {
+      "sign": "804",
+      "rows": 8,
+      "circular_rows": 2,
+      "circular_share": 0.25,
+      "examples": "-:225.1:Harappa:TAB:B:circular:+804-740-219+ | H-246:Harappa:TAB:B:circular:+400-804-000-233-240+"
+    },
+    {
+      "sign": "924",
+      "rows": 8,
+      "circular_rows": 2,
+      "circular_share": 0.25,
+      "examples": "-:3882.1:Susa:SEAL:CY:cylindrical:+416-150-002-055-031-319-001-924+ | -:3897.1:Ur:SEAL:C:circular:+093-340-924-220-528+"
+    },
+    {
+      "sign": "136",
+      "rows": 10,
+      "circular_rows": 2,
+      "circular_share": 0.2,
+      "examples": "-:3902.1:Kanmer:IMPL:circular:+136-031+ | -:4301.1:Dholavira:TAG:circular:+136-033+"
+    },
+    {
+      "sign": "190",
+      "rows": 11,
+      "circular_rows": 2,
+      "circular_share": 0.18181818181818182,
+      "examples": "-:3863.1:Qala'at al-Bahrain:SEAL:C:circular:+160-090-055-060-190+ | -:3887.1:Unknown:SEAL:C:circular:+000-603-091-190+"
+    },
+    {
+      "sign": "317",
+      "rows": 12,
+      "circular_rows": 2,
+      "circular_share": 0.16666666666666666,
+      "examples": "-:147.1:Failaka:SEAL:C:circular:+317-817-000-090+ | -:5468.1:Rakhigarhi:SEAL:CY:cylindrical:+361-002-000-317-688+"
+    },
+    {
+      "sign": "831",
+      "rows": 16,
+      "circular_rows": 2,
+      "circular_share": 0.125,
+      "examples": "-:2153.1:Luristan:SEAL:C:circular:+831-413-840-091+ | -:5232.1:Janabiyah:SEAL:C:circular:+055-099-121-055-831-031-071+"
+    },
+    {
+      "sign": "384",
+      "rows": 25,
+      "circular_rows": 2,
+      "circular_share": 0.08,
+      "examples": "H-368:Harappa:SEAL:CY:cylindrical:+400-156-384-031+ | -:5223.1:Unknown:SEAL:C:circular:+000-090-001-133-384-160+"
+    },
+    {
+      "sign": "413",
+      "rows": 29,
+      "circular_rows": 2,
+      "circular_share": 0.06896551724137931,
+      "examples": "-:2153.1:Luristan:SEAL:C:circular:+831-413-840-091+ | -:3900.2:Kanmer:IMPL:circular:+413-933-031+"
+    },
+    {
+      "sign": "156",
+      "rows": 43,
+      "circular_rows": 2,
+      "circular_share": 0.046511627906976744,
+      "examples": "M-1388:Mohenjo-daro:TAG:L:circular:+156-003+ | H-368:Harappa:SEAL:CY:cylindrical:+400-156-384-031+"
+    },
+    {
+      "sign": "350",
+      "rows": 47,
+      "circular_rows": 2,
+      "circular_share": 0.0425531914893617,
+      "examples": "-:148.1:Failaka:SEAL:C:circular:]090-001-350-716+ | -:3899.1:Ur:SEAL:C:circular:+000-000-004-090-350+"
+    },
+    {
+      "sign": "142",
+      "rows": 63,
+      "circular_rows": 2,
+      "circular_share": 0.031746031746031744,
+      "examples": "H-1147:Harappa:TAB:B:circular:+400-142[ | H-241:Harappa:TAB:B:circular:+001-142+"
+    },
+    {
+      "sign": "004",
+      "rows": 78,
+      "circular_rows": 2,
+      "circular_share": 0.02564102564102564,
+      "examples": "-:3898.1:Ur:SEAL:C:circular:+002-004-328-001-803-415+ | -:3899.1:Ur:SEAL:C:circular:+000-000-004-090-350+"
+    },
+    {
+      "sign": "900",
+      "rows": 83,
+      "circular_rows": 2,
+      "circular_share": 0.024096385542168676,
+      "examples": "M-500:Mohenjo-daro:SEAL:C:circular:+400-592-140-003-900-692-003-700+ | M-2012:Mohenjo-daro:TAB:B:circular:+740-900-005-002-570+"
+    },
+    {
+      "sign": "840",
+      "rows": 94,
+      "circular_rows": 2,
+      "circular_share": 0.02127659574468085,
+      "examples": "H-1923:Harappa:TAB:B:circular:+400-740-032-840+ | -:2153.1:Luristan:SEAL:C:circular:+831-413-840-091+"
+    },
+    {
+      "sign": "368",
+      "rows": 105,
+      "circular_rows": 2,
+      "circular_share": 0.01904761904761905,
+      "examples": "H-369:Harappa:SEAL:CY:cylindrical:+368-033-705-031-741-390-741+ | -:4247.1:Dholavira:SEAL:C:circular:+806-091-001-368-255-000+"
+    },
+    {
+      "sign": "803",
+      "rows": 118,
+      "circular_rows": 2,
+      "circular_share": 0.01694915254237288,
+      "examples": "H-240:Harappa:TAG:P:circular:+740-904-032-233-803+ | -:3898.1:Ur:SEAL:C:circular:+002-004-328-001-803-415+"
+    },
+    {
+      "sign": "176",
+      "rows": 122,
+      "circular_rows": 2,
+      "circular_share": 0.01639344262295082,
+      "examples": "H-837:Harappa:TAB:B:circular:+000-480-176+ | M-428:Mohenjo-daro:TAB:B:circular:+090-740-176-000-000+"
+    },
+    {
+      "sign": "861",
+      "rows": 209,
+      "circular_rows": 2,
+      "circular_share": 0.009569377990430622,
+      "examples": "H-343:Harappa:TAB:I:circular:+740-861-877+ | H-842:Harappa:TAB:B:circular:+400-740-861+"
+    },
+    {
+      "sign": "116",
+      "rows": 1,
+      "circular_rows": 1,
+      "circular_share": 1,
+      "examples": "H-247:Harappa:TAB:B:circular:+116-032+"
+    },
+    {
+      "sign": "256",
+      "rows": 1,
+      "circular_rows": 1,
+      "circular_share": 1,
+      "examples": "M-415:Mohenjo-daro:SEAL:C:circular:+256-832+"
+    },
+    {
+      "sign": "340",
+      "rows": 1,
+      "circular_rows": 1,
+      "circular_share": 1,
+      "examples": "-:3897.1:Ur:SEAL:C:circular:+093-340-924-220-528+"
+    },
+    {
+      "sign": "375",
+      "rows": 1,
+      "circular_rows": 1,
+      "circular_share": 1,
+      "examples": "C-32:Chanhu-daro:SEAL:C:circular:+375-400-390-632+"
+    },
+    {
+      "sign": "725",
+      "rows": 1,
+      "circular_rows": 1,
+      "circular_share": 1,
+      "examples": "-:5226.1:Unknown:SEAL:C:circular:+002/000-090-725-000+"
+    },
+    {
+      "sign": "099",
+      "rows": 2,
+      "circular_rows": 1,
+      "circular_share": 0.5,
+      "examples": "-:5232.1:Janabiyah:SEAL:C:circular:+055-099-121-055-831-031-071+"
+    },
+    {
+      "sign": "121",
+      "rows": 2,
+      "circular_rows": 1,
+      "circular_share": 0.5,
+      "examples": "-:5232.1:Janabiyah:SEAL:C:circular:+055-099-121-055-831-031-071+"
+    },
+    {
+      "sign": "133",
+      "rows": 2,
+      "circular_rows": 1,
+      "circular_share": 0.5,
+      "examples": "-:5223.1:Unknown:SEAL:C:circular:+000-090-001-133-384-160+"
+    },
+    {
+      "sign": "328",
+      "rows": 2,
+      "circular_rows": 1,
+      "circular_share": 0.5,
+      "examples": "-:3898.1:Ur:SEAL:C:circular:+002-004-328-001-803-415+"
+    },
+    {
+      "sign": "516",
+      "rows": 2,
+      "circular_rows": 1,
+      "circular_share": 0.5,
+      "examples": "H-1925:Harappa:TAB:B:circular:+516-775+"
+    },
+    {
+      "sign": "528",
+      "rows": 2,
+      "circular_rows": 1,
+      "circular_share": 0.5,
+      "examples": "-:3897.1:Ur:SEAL:C:circular:+093-340-924-220-528+"
+    },
+    {
+      "sign": "570",
+      "rows": 2,
+      "circular_rows": 1,
+      "circular_share": 0.5,
+      "examples": "M-2012:Mohenjo-daro:TAB:B:circular:+740-900-005-002-570+"
+    },
+    {
+      "sign": "823",
+      "rows": 2,
+      "circular_rows": 1,
+      "circular_share": 0.5,
+      "examples": "H-830:Harappa:TAG:P:circular:]823+"
+    },
+    {
+      "sign": "931",
+      "rows": 2,
+      "circular_rows": 1,
+      "circular_share": 0.5,
+      "examples": "-:3902.2:Kanmer:IMPL:circular:+931-000+"
+    },
+    {
+      "sign": "933",
+      "rows": 2,
+      "circular_rows": 1,
+      "circular_share": 0.5,
+      "examples": "-:3900.2:Kanmer:IMPL:circular:+413-933-031+"
+    },
+    {
+      "sign": "071",
+      "rows": 3,
+      "circular_rows": 1,
+      "circular_share": 0.3333333333333333,
+      "examples": "-:5232.1:Janabiyah:SEAL:C:circular:+055-099-121-055-831-031-071+"
+    },
+    {
+      "sign": "145",
+      "rows": 3,
+      "circular_rows": 1,
+      "circular_share": 0.3333333333333333,
+      "examples": "-:5557.1:Unknown:SEAL:CY:cylindrical:+145-139-000-000+"
+    },
+    {
+      "sign": "324",
+      "rows": 3,
+      "circular_rows": 1,
+      "circular_share": 0.3333333333333333,
+      "examples": "M-416:Mohenjo-daro:SEAL:C:circular:+324-255-001-405-016+"
+    },
+    {
+      "sign": "361",
+      "rows": 3,
+      "circular_rows": 1,
+      "circular_share": 0.3333333333333333,
+      "examples": "-:5468.1:Rakhigarhi:SEAL:CY:cylindrical:+361-002-000-317-688+"
+    },
+    {
+      "sign": "688",
+      "rows": 3,
+      "circular_rows": 1,
+      "circular_share": 0.3333333333333333,
+      "examples": "-:5468.1:Rakhigarhi:SEAL:CY:cylindrical:+361-002-000-317-688+"
+    },
+    {
+      "sign": "716",
+      "rows": 3,
+      "circular_rows": 1,
+      "circular_share": 0.3333333333333333,
+      "examples": "-:148.1:Failaka:SEAL:C:circular:]090-001-350-716+"
+    },
+    {
+      "sign": "775",
+      "rows": 3,
+      "circular_rows": 1,
+      "circular_share": 0.3333333333333333,
+      "examples": "H-1925:Harappa:TAB:B:circular:+516-775+"
+    },
+    {
+      "sign": "807",
+      "rows": 3,
+      "circular_rows": 1,
+      "circular_share": 0.3333333333333333,
+      "examples": "H-245:Harappa:TAB:B:circular:+400-807-740-219+"
+    },
+    {
+      "sign": "319",
+      "rows": 4,
+      "circular_rows": 1,
+      "circular_share": 0.25,
+      "examples": "-:3882.1:Susa:SEAL:CY:cylindrical:+416-150-002-055-031-319-001-924+"
+    },
+    {
+      "sign": "744",
+      "rows": 4,
+      "circular_rows": 1,
+      "circular_share": 0.25,
+      "examples": "-:5222.1:Girsu:SEAL:C:circular:+740-000-744-013-255+"
+    },
+    {
+      "sign": "049",
+      "rows": 5,
+      "circular_rows": 1,
+      "circular_share": 0.2,
+      "examples": "-:5420.1:Kanmer:TAG:circular:]000-049-002-820+"
+    },
+    {
+      "sign": "098",
+      "rows": 5,
+      "circular_rows": 1,
+      "circular_share": 0.2,
+      "examples": "H-1332:Harappa:TAB:I:circular:+400-098+"
+    },
+    {
+      "sign": "132",
+      "rows": 5,
+      "circular_rows": 1,
+      "circular_share": 0.2,
+      "examples": "-:3888.1:Unknown:SEAL:CY:cylindrical:+090-055-000-132-032+"
+    },
+    {
+      "sign": "139",
+      "rows": 5,
+      "circular_rows": 1,
+      "circular_share": 0.2,
+      "examples": "-:5557.1:Unknown:SEAL:CY:cylindrical:+145-139-000-000+"
+    },
+    {
+      "sign": "362",
+      "rows": 5,
+      "circular_rows": 1,
+      "circular_share": 0.2,
+      "examples": "H-345:Harappa:TAB:I:circular:+090-740-362+"
+    },
+    {
+      "sign": "603",
+      "rows": 5,
+      "circular_rows": 1,
+      "circular_share": 0.2,
+      "examples": "-:3887.1:Unknown:SEAL:C:circular:+000-603-091-190+"
+    },
+    {
+      "sign": "150",
+      "rows": 6,
+      "circular_rows": 1,
+      "circular_share": 0.16666666666666666,
+      "examples": "-:3882.1:Susa:SEAL:CY:cylindrical:+416-150-002-055-031-319-001-924+"
+    },
+    {
+      "sign": "392",
+      "rows": 6,
+      "circular_rows": 1,
+      "circular_share": 0.16666666666666666,
+      "examples": "H-242:Harappa:TAB:B:circular:+400-740-392-000-000-000-000-255-000+"
+    },
+    {
+      "sign": "604",
+      "rows": 6,
+      "circular_rows": 1,
+      "circular_share": 0.16666666666666666,
+      "examples": "-:3881.1:Susa:SEAL:C:circular:+700-604-407-090-365-000+"
+    },
+    {
+      "sign": "525",
+      "rows": 7,
+      "circular_rows": 1,
+      "circular_share": 0.14285714285714285,
+      "examples": "M-1390:Mohenjo-daro:TAB:B:circular:+400-525-550+"
+    },
+    {
+      "sign": "370",
+      "rows": 8,
+      "circular_rows": 1,
+      "circular_share": 0.125,
+      "examples": "M-436:Mohenjo-daro:TAB:B:circular:+390-370+"
+    },
+    {
+      "sign": "467",
+      "rows": 9,
+      "circular_rows": 1,
+      "circular_share": 0.1111111111111111,
+      "examples": "-:3889.1:Unknown:SEAL:C:circular:+740-740-001-550-467+"
+    },
+    {
+      "sign": "526",
+      "rows": 9,
+      "circular_rows": 1,
+      "circular_share": 0.1111111111111111,
+      "examples": "H-833:Harappa:TAB:B:circular:+526-554-002-820+"
+    },
+    {
+      "sign": "554",
+      "rows": 13,
+      "circular_rows": 1,
+      "circular_share": 0.07692307692307693,
+      "examples": "H-833:Harappa:TAB:B:circular:+526-554-002-820+"
+    },
+    {
+      "sign": "320",
+      "rows": 17,
+      "circular_rows": 1,
+      "circular_share": 0.058823529411764705,
+      "examples": "H-248:Harappa:TAB:B:circular:+400-740-920-320-233-240-798+"
+    },
+    {
+      "sign": "365",
+      "rows": 17,
+      "circular_rows": 1,
+      "circular_share": 0.058823529411764705,
+      "examples": "-:3881.1:Susa:SEAL:C:circular:+700-604-407-090-365-000+"
+    },
+    {
+      "sign": "104",
+      "rows": 20,
+      "circular_rows": 1,
+      "circular_share": 0.05,
+      "examples": "H-244:Harappa:TAB:B:circular:+104-002-820+"
+    },
+    {
+      "sign": "877",
+      "rows": 20,
+      "circular_rows": 1,
+      "circular_share": 0.05,
+      "examples": "H-343:Harappa:TAB:I:circular:+740-861-877+"
+    },
+    {
+      "sign": "335",
+      "rows": 26,
+      "circular_rows": 1,
+      "circular_share": 0.038461538461538464,
+      "examples": "H-247:Harappa:TAB:B:circular:+400-740-335-000+"
+    },
+    {
+      "sign": "495",
+      "rows": 26,
+      "circular_rows": 1,
+      "circular_share": 0.038461538461538464,
+      "examples": "H-838:Harappa:TAB:B:circular:+740-615-495-002-817+"
+    },
+    {
+      "sign": "632",
+      "rows": 30,
+      "circular_rows": 1,
+      "circular_share": 0.03333333333333333,
+      "examples": "C-32:Chanhu-daro:SEAL:C:circular:+375-400-390-632+"
+    },
+    {
+      "sign": "480",
+      "rows": 33,
+      "circular_rows": 1,
+      "circular_share": 0.030303030303030304,
+      "examples": "H-837:Harappa:TAB:B:circular:+000-480-176+"
+    },
+    {
+      "sign": "923",
+      "rows": 35,
+      "circular_rows": 1,
+      "circular_share": 0.02857142857142857,
+      "examples": "-:4300.1:Dholavira:TAG:circular:]923+"
+    },
+    {
+      "sign": "013",
+      "rows": 37,
+      "circular_rows": 1,
+      "circular_share": 0.02702702702702703,
+      "examples": "-:5222.1:Girsu:SEAL:C:circular:+740-000-744-013-255+"
+    },
+    {
+      "sign": "016",
+      "rows": 38,
+      "circular_rows": 1,
+      "circular_share": 0.02631578947368421,
+      "examples": "M-416:Mohenjo-daro:SEAL:C:circular:+324-255-001-405-016+"
+    },
+    {
+      "sign": "416",
+      "rows": 38,
+      "circular_rows": 1,
+      "circular_share": 0.02631578947368421,
+      "examples": "-:3882.1:Susa:SEAL:CY:cylindrical:+416-150-002-055-031-319-001-924+"
+    },
+    {
+      "sign": "005",
+      "rows": 39,
+      "circular_rows": 1,
+      "circular_share": 0.02564102564102564,
+      "examples": "M-2012:Mohenjo-daro:TAB:B:circular:+740-900-005-002-570+"
+    },
+    {
+      "sign": "615",
+      "rows": 40,
+      "circular_rows": 1,
+      "circular_share": 0.025,
+      "examples": "H-838:Harappa:TAB:B:circular:+740-615-495-002-817+"
+    },
+    {
+      "sign": "455",
+      "rows": 41,
+      "circular_rows": 1,
+      "circular_share": 0.024390243902439025,
+      "examples": "-:5227.1:Karzakan:SEAL:C:circular:+220-455-031-091+"
+    },
+    {
+      "sign": "790",
+      "rows": 43,
+      "circular_rows": 1,
+      "circular_share": 0.023255813953488372,
+      "examples": "H-1149:Harappa:TAB:B:circular:+400-740-790+"
+    },
+    {
+      "sign": "904",
+      "rows": 53,
+      "circular_rows": 1,
+      "circular_share": 0.018867924528301886,
+      "examples": "H-240:Harappa:TAG:P:circular:+740-904-032-233-803+"
+    },
+    {
+      "sign": "435",
+      "rows": 55,
+      "circular_rows": 1,
+      "circular_share": 0.01818181818181818,
+      "examples": "H-1924:Harappa:TAB:B:circular:+550-003-435+"
+    },
+    {
+      "sign": "125",
+      "rows": 56,
+      "circular_rows": 1,
+      "circular_share": 0.017857142857142856,
+      "examples": "H-246:Harappa:TAB:B:circular:+125-700-033+"
+    },
+    {
+      "sign": "061",
+      "rows": 59,
+      "circular_rows": 1,
+      "circular_share": 0.01694915254237288,
+      "examples": "-:5224.1:Unknown:SEAL:C:circular:+000-061-032-001-220-033-000+"
+    },
+    {
+      "sign": "692",
+      "rows": 66,
+      "circular_rows": 1,
+      "circular_share": 0.015151515151515152,
+      "examples": "M-500:Mohenjo-daro:SEAL:C:circular:+400-592-140-003-900-692-003-700+"
+    },
+    {
+      "sign": "407",
+      "rows": 70,
+      "circular_rows": 1,
+      "circular_share": 0.014285714285714285,
+      "examples": "-:3881.1:Susa:SEAL:C:circular:+700-604-407-090-365-000+"
+    },
+    {
+      "sign": "231",
+      "rows": 83,
+      "circular_rows": 1,
+      "circular_share": 0.012048192771084338,
+      "examples": "H-2197:Harappa:TAB:I:circular:+400-090-740-100-390-231+"
+    },
+    {
+      "sign": "806",
+      "rows": 97,
+      "circular_rows": 1,
+      "circular_share": 0.010309278350515464,
+      "examples": "-:4247.1:Dholavira:SEAL:C:circular:+806-091-001-368-255-000+"
+    },
+    {
+      "sign": "760",
+      "rows": 108,
+      "circular_rows": 1,
+      "circular_share": 0.009259259259259259,
+      "examples": "M-1385:Mohenjo-daro:TAG:P:circular:+740-760-032-002-817+"
+    },
+    {
+      "sign": "798",
+      "rows": 130,
+      "circular_rows": 1,
+      "circular_share": 0.007692307692307693,
+      "examples": "H-248:Harappa:TAB:B:circular:+400-740-920-320-233-240-798+"
+    },
+    {
+      "sign": "006",
+      "rows": 6,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "007",
+      "rows": 6,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "012",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "014",
+      "rows": 8,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "015",
+      "rows": 8,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "017",
+      "rows": 65,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "018",
+      "rows": 7,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "019",
+      "rows": 5,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "020",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "025",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "026",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "027",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "028",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "029",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "034",
+      "rows": 29,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "035",
+      "rows": 26,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "036",
+      "rows": 6,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "037",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "039",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "041",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "042",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "043",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "044",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "045",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "046",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "047",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "048",
+      "rows": 6,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "050",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "051",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "056",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "057",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "058",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "059",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "062",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "063",
+      "rows": 13,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "064",
+      "rows": 14,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "065",
+      "rows": 15,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "066",
+      "rows": 17,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "067",
+      "rows": 8,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "068",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "069",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "070",
+      "rows": 37,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "072",
+      "rows": 14,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "073",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "074",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "075",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "080",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "081",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "082",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "083",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "084",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "085",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "092",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "094",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "095",
+      "rows": 22,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "096",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "097",
+      "rows": 13,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "101",
+      "rows": 8,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "102",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "103",
+      "rows": 5,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "105",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "106",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "107",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "110",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "111",
+      "rows": 15,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "112",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "113",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "115",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "117",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "118",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "119",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "122",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "123",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "126",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "127",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "128",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "129",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "130",
+      "rows": 14,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "131",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "134",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "135",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "137",
+      "rows": 8,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "138",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "141",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "143",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "144",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "146",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "147",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "148",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "151",
+      "rows": 77,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "152",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "153",
+      "rows": 5,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "154",
+      "rows": 38,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "155",
+      "rows": 8,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "157",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "158",
+      "rows": 29,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "159",
+      "rows": 5,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "161",
+      "rows": 13,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "165",
+      "rows": 27,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "166",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "167",
+      "rows": 8,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "168",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "169",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "170",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "171",
+      "rows": 21,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "172",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "173",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "175",
+      "rows": 24,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "177",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "178",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "179",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "180",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "191",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "192",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "193",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "194",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "195",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "200",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "201",
+      "rows": 5,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "202",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "203",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "204",
+      "rows": 8,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "205",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "206",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "207",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "208",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "209",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "215",
+      "rows": 9,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "216",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "217",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "221",
+      "rows": 6,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "222",
+      "rows": 12,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "223",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "224",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "225",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "226",
+      "rows": 38,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "227",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "228",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "229",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "230",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "232",
+      "rows": 10,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "234",
+      "rows": 6,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "235",
+      "rows": 195,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "236",
+      "rows": 20,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "237",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "241",
+      "rows": 12,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "242",
+      "rows": 5,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "243",
+      "rows": 11,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "244",
+      "rows": 5,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "250",
+      "rows": 9,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "251",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "252",
+      "rows": 7,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "253",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "257",
+      "rows": 10,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "260",
+      "rows": 8,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "261",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "262",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "263",
+      "rows": 6,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "264",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "265",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "266",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "267",
+      "rows": 7,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "268",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "269",
+      "rows": 11,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "270",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "271",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "272",
+      "rows": 5,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "276",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "277",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "278",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "279",
+      "rows": 5,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "280",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "281",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "285",
+      "rows": 5,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "286",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "287",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "290",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "291",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "292",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "293",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "294",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "295",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "296",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "297",
+      "rows": 15,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "298",
+      "rows": 9,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "299",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "300",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "301",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "302",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "303",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "304",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "305",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "306",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "307",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "308",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "309",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "310",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "311",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "315",
+      "rows": 11,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "316",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "318",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "321",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "322",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "323",
+      "rows": 5,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "325",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "326",
+      "rows": 6,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "327",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "329",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "330",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "336",
+      "rows": 10,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "337",
+      "rows": 12,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "338",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "341",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "342",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "343",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "344",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "345",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "346",
+      "rows": 6,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "347",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "348",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "351",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "352",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "353",
+      "rows": 10,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "354",
+      "rows": 14,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "360",
+      "rows": 11,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "363",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "367",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "371",
+      "rows": 10,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "372",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "373",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "374",
+      "rows": 16,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "376",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "380",
+      "rows": 6,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "381",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "382",
+      "rows": 18,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "383",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "385",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "386",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "387",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "388",
+      "rows": 53,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "389",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "391",
+      "rows": 8,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "393",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "394",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "401",
+      "rows": 7,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "402",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "403",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "404",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "406",
+      "rows": 12,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "408",
+      "rows": 9,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "409",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "410",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "411",
+      "rows": 7,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "412",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "417",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "418",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "420",
+      "rows": 6,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "421",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "422",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "423",
+      "rows": 6,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "424",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "425",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "426",
+      "rows": 6,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "427",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "428",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "429",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "430",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "436",
+      "rows": 6,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "440",
+      "rows": 42,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "441",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "442",
+      "rows": 5,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "443",
+      "rows": 5,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "444",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "445",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "450",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "451",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "452",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "453",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "454",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "456",
+      "rows": 6,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "457",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "458",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "460",
+      "rows": 37,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "461",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "462",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "463",
+      "rows": 23,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "465",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "466",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "468",
+      "rows": 7,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "469",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "470",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "471",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "472",
+      "rows": 5,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "473",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "474",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "475",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "479",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "481",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "482",
+      "rows": 26,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "483",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "484",
+      "rows": 12,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "490",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "491",
+      "rows": 14,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "492",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "493",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "494",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "500",
+      "rows": 14,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "501",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "502",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "503",
+      "rows": 45,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "504",
+      "rows": 8,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "505",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "506",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "510",
+      "rows": 12,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "511",
+      "rows": 10,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "512",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "513",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "514",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "515",
+      "rows": 12,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "517",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "518",
+      "rows": 7,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "519",
+      "rows": 14,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "520",
+      "rows": 224,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "521",
+      "rows": 5,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "527",
+      "rows": 58,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "530",
+      "rows": 18,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "531",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "532",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "533",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "534",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "535",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "540",
+      "rows": 12,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "541",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "542",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "543",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "544",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "545",
+      "rows": 10,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "546",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "547",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "551",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "552",
+      "rows": 10,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "555",
+      "rows": 23,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "556",
+      "rows": 10,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "560",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "561",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "562",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "563",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "564",
+      "rows": 5,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "565",
+      "rows": 14,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "571",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "572",
+      "rows": 6,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "573",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "575",
+      "rows": 67,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "576",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "577",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "578",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "579",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "585",
+      "rows": 44,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "586",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "591",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "593",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "595",
+      "rows": 45,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "596",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "597",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "599",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "600",
+      "rows": 5,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "601",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "602",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "605",
+      "rows": 10,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "606",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "610",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "611",
+      "rows": 6,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "616",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "617",
+      "rows": 58,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "620",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "621",
+      "rows": 22,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "622",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "623",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "625",
+      "rows": 11,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "626",
+      "rows": 8,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "627",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "628",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "629",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "630",
+      "rows": 27,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "631",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "633",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "634",
+      "rows": 5,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "635",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "636",
+      "rows": 13,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "637",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "638",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "639",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "640",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "641",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "642",
+      "rows": 6,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "643",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "645",
+      "rows": 19,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "646",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "647",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "678",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "679",
+      "rows": 17,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "680",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "681",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "682",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "683",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "684",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "685",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "686",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "687",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "689",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "690",
+      "rows": 74,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "693",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "694",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "697",
+      "rows": 7,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "698",
+      "rows": 6,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "699",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "701",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "702",
+      "rows": 10,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "703",
+      "rows": 11,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "704",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "706",
+      "rows": 79,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "707",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "708",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "709",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "710",
+      "rows": 5,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "711",
+      "rows": 8,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "712",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "713",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "714",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "715",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "717",
+      "rows": 49,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "718",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "719",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "720",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "721",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "722",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "723",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "727",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "728",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "729",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "731",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "732",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "733",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "734",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "735",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "736",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "742",
+      "rows": 47,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "743",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "745",
+      "rows": 30,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "746",
+      "rows": 9,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "747",
+      "rows": 7,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "748",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "749",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "750",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "751",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "752",
+      "rows": 21,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "753",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "759",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "761",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "762",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "763",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "764",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "765",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "766",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "767",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "768",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "770",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "772",
+      "rows": 10,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "773",
+      "rows": 9,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "776",
+      "rows": 8,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "777",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "778",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "780",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "781",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "782",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "783",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "784",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "785",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "786",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "791",
+      "rows": 6,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "792",
+      "rows": 10,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "793",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "794",
+      "rows": 13,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "795",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "796",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "797",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "799",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "801",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "805",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "808",
+      "rows": 8,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "809",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "810",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "811",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "812",
+      "rows": 9,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "813",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "814",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "815",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "816",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "818",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "821",
+      "rows": 10,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "822",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "824",
+      "rows": 19,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "825",
+      "rows": 6,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "826",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "827",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "828",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "829",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "830",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "833",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "834",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "835",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "836",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "837",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "838",
+      "rows": 15,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "839",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "841",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "842",
+      "rows": 5,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "843",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "844",
+      "rows": 14,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "845",
+      "rows": 21,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "849",
+      "rows": 6,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "850",
+      "rows": 38,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "851",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "852",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "853",
+      "rows": 11,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "854",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "855",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "856",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "857",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "858",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "859",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "860",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "862",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "863",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "864",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "865",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "866",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "868",
+      "rows": 5,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "869",
+      "rows": 6,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "870",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "871",
+      "rows": 5,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "872",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "874",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "875",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "876",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "878",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "879",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "880",
+      "rows": 11,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "890",
+      "rows": 5,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "891",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "892",
+      "rows": 57,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "893",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "894",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "895",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "896",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "897",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "898",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "899",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "901",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "902",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "903",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "905",
+      "rows": 8,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "906",
+      "rows": 16,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "907",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "908",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "909",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "910",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "911",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "912",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "913",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "914",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "918",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "919",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "921",
+      "rows": 16,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "922",
+      "rows": 4,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "925",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "926",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "927",
+      "rows": 10,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "928",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "930",
+      "rows": 7,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "932",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "940",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "942",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "943",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "944",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "945",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "946",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "947",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "950",
+      "rows": 2,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "951",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "952",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "953",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "956",
+      "rows": 3,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "957",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "958",
+      "rows": 1,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    },
+    {
+      "sign": "999",
+      "rows": 15,
+      "circular_rows": 0,
+      "circular_share": 0,
+      "examples": ""
+    }
+  ]
+}

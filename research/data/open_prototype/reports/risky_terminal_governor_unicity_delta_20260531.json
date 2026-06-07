@@ -1,0 +1,645 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_terminal_governor_unicity_delta_20260531",
+  "tier": "candidate",
+  "bet": "If the 002/060 terminal-governor model is carrying real effective-unicity pressure, then final signs after 002/060 should remain more predictable under leave-site text-family prediction than final signs after ordinary penultimate signs, and the advantage should not appear after shuffling final labels across terminal families.",
+  "source": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\lipi\\metadata_filtered.csv",
+  "collapse_key": "exact text; sites are held as a set and held-out exact texts are excluded from training",
+  "evaluation": {
+    "unit_count_exact_terminal_text_families": 2127,
+    "sites": 56,
+    "min_train_rows_per_penult_for_eval": 5,
+    "target_governors": [
+      "002",
+      "060"
+    ],
+    "observed_all": {
+      "evaluated_rows": 1594,
+      "top1_accuracy": 0.1587202007528231,
+      "top3_accuracy": 0.35131744040150564,
+      "mean_true_probability": 0.09748514389791095,
+      "mean_global_true_probability": 0.01810159360245129,
+      "mean_effective_candidates": 13.044934601243293,
+      "mean_train_options": 18.779799247176914,
+      "mean_surprisal_delta_bits": 2.8572867293988744
+    },
+    "observed_target_governors": {
+      "evaluated_rows": 456,
+      "top1_accuracy": 0.31140350877192985,
+      "top3_accuracy": 0.7872807017543859,
+      "mean_true_probability": 0.2283691937354795,
+      "mean_global_true_probability": 0.03780815401033871,
+      "mean_effective_candidates": 6.38896081349448,
+      "mean_train_options": 22,
+      "mean_surprisal_delta_bits": 2.6303593190304966
+    },
+    "observed_non_target_penults": {
+      "evaluated_rows": 1138,
+      "top1_accuracy": 0.09753954305799649,
+      "top3_accuracy": 0.1766256590509666,
+      "mean_true_probability": 0.045039514086020534,
+      "mean_global_true_probability": 0.010205115969765218,
+      "mean_effective_candidates": 15.712003184031857,
+      "mean_train_options": 17.489455184534272,
+      "mean_surprisal_delta_bits": 3.1130502195378345
+    },
+    "observed_target_by_penult": {
+      "002": {
+        "evaluated_rows": 313,
+        "top1_accuracy": 0.2939297124600639,
+        "top3_accuracy": 0.8562300319488818,
+        "mean_true_probability": 0.24417669893741492,
+        "mean_global_true_probability": 0.044520227478046036,
+        "mean_effective_candidates": 6.224615013582936,
+        "mean_train_options": 25.25878594249201,
+        "mean_surprisal_delta_bits": 2.4327606974779403
+      },
+      "060": {
+        "evaluated_rows": 143,
+        "top1_accuracy": 0.34965034965034963,
+        "top3_accuracy": 0.6363636363636364,
+        "mean_true_probability": 0.19376954948229158,
+        "mean_global_true_probability": 0.02311669250409826,
+        "mean_effective_candidates": 6.748682739174988,
+        "mean_train_options": 14.867132867132867,
+        "mean_surprisal_delta_bits": 3.057723779597657
+      }
+    }
+  },
+  "final_label_shuffle_null": {
+    "iterations": 1000,
+    "preserves": "terminal text families, penultimate signs, sites, and global final-sign inventory; shuffles final labels only in training folds",
+    "p_ge_target_top1_accuracy": 0.001,
+    "p_ge_target_top3_accuracy": 0,
+    "p_ge_target_mean_true_probability": 0,
+    "p_le_target_mean_effective_candidates": 0,
+    "p_ge_target_mean_surprisal_delta_bits": 0,
+    "first_25_iterations": [
+      {
+        "iteration": 0,
+        "target_top1_accuracy": 0.20833333333333334,
+        "target_top3_accuracy": 0.5131578947368421,
+        "target_mean_true_probability": 0.037471114242846215,
+        "target_mean_effective_candidates": 58.23991141788407,
+        "target_mean_surprisal_delta_bits": -0.1016271834446062
+      },
+      {
+        "iteration": 1,
+        "target_top1_accuracy": 0.17324561403508773,
+        "target_top3_accuracy": 0.3157894736842105,
+        "target_mean_true_probability": 0.028165636093555928,
+        "target_mean_effective_candidates": 64.45745382722818,
+        "target_mean_surprisal_delta_bits": -0.35151239556185565
+      },
+      {
+        "iteration": 2,
+        "target_top1_accuracy": 0.21710526315789475,
+        "target_top3_accuracy": 0.6008771929824561,
+        "target_mean_true_probability": 0.04523619845423972,
+        "target_mean_effective_candidates": 58.21706956644372,
+        "target_mean_surprisal_delta_bits": 0.13199563723555297
+      },
+      {
+        "iteration": 3,
+        "target_top1_accuracy": 0.24780701754385964,
+        "target_top3_accuracy": 0.3815789473684211,
+        "target_mean_true_probability": 0.04102412908693474,
+        "target_mean_effective_candidates": 58.608331201639906,
+        "target_mean_surprisal_delta_bits": 0.07571348572327578
+      },
+      {
+        "iteration": 4,
+        "target_top1_accuracy": 0.19736842105263158,
+        "target_top3_accuracy": 0.4868421052631579,
+        "target_mean_true_probability": 0.04661869334427723,
+        "target_mean_effective_candidates": 56.00255729750989,
+        "target_mean_surprisal_delta_bits": 0.1902258434322429
+      },
+      {
+        "iteration": 5,
+        "target_top1_accuracy": 0.19078947368421054,
+        "target_top3_accuracy": 0.6008771929824561,
+        "target_mean_true_probability": 0.04375281378763072,
+        "target_mean_effective_candidates": 58.497580379077455,
+        "target_mean_surprisal_delta_bits": 0.1466753030604532
+      },
+      {
+        "iteration": 6,
+        "target_top1_accuracy": 0.26535087719298245,
+        "target_top3_accuracy": 0.6337719298245614,
+        "target_mean_true_probability": 0.04006203417084535,
+        "target_mean_effective_candidates": 59.05351661839944,
+        "target_mean_surprisal_delta_bits": -0.1287578959177495
+      },
+      {
+        "iteration": 7,
+        "target_top1_accuracy": 0.25877192982456143,
+        "target_top3_accuracy": 0.41228070175438597,
+        "target_mean_true_probability": 0.03606777277735473,
+        "target_mean_effective_candidates": 63.26957763588918,
+        "target_mean_surprisal_delta_bits": -0.32676797863937457
+      },
+      {
+        "iteration": 8,
+        "target_top1_accuracy": 0.24561403508771928,
+        "target_top3_accuracy": 0.5877192982456141,
+        "target_mean_true_probability": 0.051984850559658784,
+        "target_mean_effective_candidates": 53.233354153577785,
+        "target_mean_surprisal_delta_bits": 0.36959242098536094
+      },
+      {
+        "iteration": 9,
+        "target_top1_accuracy": 0.19078947368421054,
+        "target_top3_accuracy": 0.5526315789473685,
+        "target_mean_true_probability": 0.04030684794811626,
+        "target_mean_effective_candidates": 62.669603984400396,
+        "target_mean_surprisal_delta_bits": 0.0006459303039608568
+      },
+      {
+        "iteration": 10,
+        "target_top1_accuracy": 0.19517543859649122,
+        "target_top3_accuracy": 0.4692982456140351,
+        "target_mean_true_probability": 0.046240951784136786,
+        "target_mean_effective_candidates": 57.13671062599582,
+        "target_mean_surprisal_delta_bits": 0.19811359165552883
+      },
+      {
+        "iteration": 11,
+        "target_top1_accuracy": 0.22587719298245615,
+        "target_top3_accuracy": 0.38596491228070173,
+        "target_mean_true_probability": 0.04068098435838407,
+        "target_mean_effective_candidates": 60.560345676437024,
+        "target_mean_surprisal_delta_bits": -0.0031907775618366372
+      },
+      {
+        "iteration": 12,
+        "target_top1_accuracy": 0.1513157894736842,
+        "target_top3_accuracy": 0.506578947368421,
+        "target_mean_true_probability": 0.03616252592956299,
+        "target_mean_effective_candidates": 59.19455099303882,
+        "target_mean_surprisal_delta_bits": -0.0037642436425415547
+      },
+      {
+        "iteration": 13,
+        "target_top1_accuracy": 0.25877192982456143,
+        "target_top3_accuracy": 0.40789473684210525,
+        "target_mean_true_probability": 0.03955898130390586,
+        "target_mean_effective_candidates": 58.669615789233774,
+        "target_mean_surprisal_delta_bits": -0.17209081082684322
+      },
+      {
+        "iteration": 14,
+        "target_top1_accuracy": 0.1513157894736842,
+        "target_top3_accuracy": 0.4100877192982456,
+        "target_mean_true_probability": 0.04294392169495954,
+        "target_mean_effective_candidates": 58.58114543192984,
+        "target_mean_surprisal_delta_bits": 0.08083732359228332
+      },
+      {
+        "iteration": 15,
+        "target_top1_accuracy": 0.26535087719298245,
+        "target_top3_accuracy": 0.46710526315789475,
+        "target_mean_true_probability": 0.045645398430457236,
+        "target_mean_effective_candidates": 56.19041667980162,
+        "target_mean_surprisal_delta_bits": -0.01194141746148469
+      },
+      {
+        "iteration": 16,
+        "target_top1_accuracy": 0.2236842105263158,
+        "target_top3_accuracy": 0.6535087719298246,
+        "target_mean_true_probability": 0.044687777989069366,
+        "target_mean_effective_candidates": 58.371026875248816,
+        "target_mean_surprisal_delta_bits": 0.21549974516759304
+      },
+      {
+        "iteration": 17,
+        "target_top1_accuracy": 0.2149122807017544,
+        "target_top3_accuracy": 0.41885964912280704,
+        "target_mean_true_probability": 0.02962057452265054,
+        "target_mean_effective_candidates": 65.86122557725785,
+        "target_mean_surprisal_delta_bits": -0.5835791094214877
+      },
+      {
+        "iteration": 18,
+        "target_top1_accuracy": 0.21929824561403508,
+        "target_top3_accuracy": 0.5109649122807017,
+        "target_mean_true_probability": 0.04247847115132906,
+        "target_mean_effective_candidates": 61.18690836489059,
+        "target_mean_surprisal_delta_bits": 0.01221101374429541
+      },
+      {
+        "iteration": 19,
+        "target_top1_accuracy": 0.22149122807017543,
+        "target_top3_accuracy": 0.49780701754385964,
+        "target_mean_true_probability": 0.04349706125546212,
+        "target_mean_effective_candidates": 60.789939297299476,
+        "target_mean_surprisal_delta_bits": 0.21170794254325462
+      },
+      {
+        "iteration": 20,
+        "target_top1_accuracy": 0.23464912280701755,
+        "target_top3_accuracy": 0.6381578947368421,
+        "target_mean_true_probability": 0.04941295395824331,
+        "target_mean_effective_candidates": 58.362908170419814,
+        "target_mean_surprisal_delta_bits": 0.2675233858157661
+      },
+      {
+        "iteration": 21,
+        "target_top1_accuracy": 0.1513157894736842,
+        "target_top3_accuracy": 0.45614035087719296,
+        "target_mean_true_probability": 0.034304339937714964,
+        "target_mean_effective_candidates": 65.10414583284073,
+        "target_mean_surprisal_delta_bits": -0.12757067694890412
+      },
+      {
+        "iteration": 22,
+        "target_top1_accuracy": 0.18859649122807018,
+        "target_top3_accuracy": 0.6578947368421053,
+        "target_mean_true_probability": 0.05184441566432475,
+        "target_mean_effective_candidates": 53.78273078892103,
+        "target_mean_surprisal_delta_bits": 0.36625897390778983
+      },
+      {
+        "iteration": 23,
+        "target_top1_accuracy": 0.24561403508771928,
+        "target_top3_accuracy": 0.5482456140350878,
+        "target_mean_true_probability": 0.044128278418511545,
+        "target_mean_effective_candidates": 58.77761304825881,
+        "target_mean_surprisal_delta_bits": 0.08983892860035764
+      },
+      {
+        "iteration": 24,
+        "target_top1_accuracy": 0.19736842105263158,
+        "target_top3_accuracy": 0.4956140350877193,
+        "target_mean_true_probability": 0.04013673112818726,
+        "target_mean_effective_candidates": 60.26551388259758,
+        "target_mean_surprisal_delta_bits": -0.016275371720168293
+      }
+    ]
+  },
+  "strongest_penults": [
+    {
+      "penult": "002",
+      "is_target_governor": "Y",
+      "evaluated_rows": 313,
+      "top1_accuracy": 0.2939297124600639,
+      "top3_accuracy": 0.8562300319488818,
+      "mean_true_probability": 0.24417669893741492,
+      "mean_global_true_probability": 0.044520227478046036,
+      "mean_effective_candidates": 6.224615013582936,
+      "mean_train_options": 25.25878594249201,
+      "mean_surprisal_delta_bits": 2.4327606974779403
+    },
+    {
+      "penult": "060",
+      "is_target_governor": "Y",
+      "evaluated_rows": 143,
+      "top1_accuracy": 0.34965034965034963,
+      "top3_accuracy": 0.6363636363636364,
+      "mean_true_probability": 0.19376954948229158,
+      "mean_global_true_probability": 0.02311669250409826,
+      "mean_effective_candidates": 6.748682739174988,
+      "mean_train_options": 14.867132867132867,
+      "mean_surprisal_delta_bits": 3.057723779597657
+    },
+    {
+      "penult": "740",
+      "is_target_governor": "N",
+      "evaluated_rows": 133,
+      "top1_accuracy": 0.07518796992481203,
+      "top3_accuracy": 0.09022556390977443,
+      "mean_true_probability": 0.008540649542151162,
+      "mean_global_true_probability": 0.0053709813218126325,
+      "mean_effective_candidates": 54.06583473522742,
+      "mean_train_options": 59.63157894736842,
+      "mean_surprisal_delta_bits": 1.5189213473031156
+    },
+    {
+      "penult": "220",
+      "is_target_governor": "N",
+      "evaluated_rows": 56,
+      "top1_accuracy": 0.23214285714285715,
+      "top3_accuracy": 0.2857142857142857,
+      "mean_true_probability": 0.0704244851060889,
+      "mean_global_true_probability": 0.014037154611440745,
+      "mean_effective_candidates": 13.740395385786659,
+      "mean_train_options": 19.482142857142858,
+      "mean_surprisal_delta_bits": 2.356232094686322
+    },
+    {
+      "penult": "032",
+      "is_target_governor": "N",
+      "evaluated_rows": 55,
+      "top1_accuracy": 0.01818181818181818,
+      "top3_accuracy": 0.01818181818181818,
+      "mean_true_probability": 0.012917592211709858,
+      "mean_global_true_probability": 0.006644131742719232,
+      "mean_effective_candidates": 20.457835577759525,
+      "mean_train_options": 22.490909090909092,
+      "mean_surprisal_delta_bits": 2.6909748665833493
+    },
+    {
+      "penult": "390",
+      "is_target_governor": "N",
+      "evaluated_rows": 55,
+      "top1_accuracy": 0.12727272727272726,
+      "top3_accuracy": 0.12727272727272726,
+      "mean_true_probability": 0.022135884537070317,
+      "mean_global_true_probability": 0.0076491873712972525,
+      "mean_effective_candidates": 18.6933383477539,
+      "mean_train_options": 20.70909090909091,
+      "mean_surprisal_delta_bits": 2.820006280505275
+    },
+    {
+      "penult": "741",
+      "is_target_governor": "N",
+      "evaluated_rows": 43,
+      "top1_accuracy": 0,
+      "top3_accuracy": 0.023255813953488372,
+      "mean_true_probability": 0.005100842310144635,
+      "mean_global_true_probability": 0.006498938407880031,
+      "mean_effective_candidates": 21.75114676893014,
+      "mean_train_options": 22.697674418604652,
+      "mean_surprisal_delta_bits": 1.665881365169998
+    },
+    {
+      "penult": "368",
+      "is_target_governor": "N",
+      "evaluated_rows": 42,
+      "top1_accuracy": 0.2857142857142857,
+      "top3_accuracy": 0.3333333333333333,
+      "mean_true_probability": 0.08726738448909732,
+      "mean_global_true_probability": 0.024444621934579826,
+      "mean_effective_candidates": 10.589597160730754,
+      "mean_train_options": 13.976190476190476,
+      "mean_surprisal_delta_bits": 2.266741635576339
+    },
+    {
+      "penult": "001",
+      "is_target_governor": "N",
+      "evaluated_rows": 37,
+      "top1_accuracy": 0.2972972972972973,
+      "top3_accuracy": 0.40540540540540543,
+      "mean_true_probability": 0.07520377520377518,
+      "mean_global_true_probability": 0.021543872936004203,
+      "mean_effective_candidates": 12.454626890375266,
+      "mean_train_options": 15.486486486486486,
+      "mean_surprisal_delta_bits": 2.293251856577902
+    },
+    {
+      "penult": "033",
+      "is_target_governor": "N",
+      "evaluated_rows": 37,
+      "top1_accuracy": 0.02702702702702703,
+      "top3_accuracy": 0.21621621621621623,
+      "mean_true_probability": 0.02582923832923833,
+      "mean_global_true_probability": 0.00907325090824817,
+      "mean_effective_candidates": 12.214471356717008,
+      "mean_train_options": 14.837837837837839,
+      "mean_surprisal_delta_bits": 3.4338782634886957
+    },
+    {
+      "penult": "031",
+      "is_target_governor": "N",
+      "evaluated_rows": 36,
+      "top1_accuracy": 0.05555555555555555,
+      "top3_accuracy": 0.1111111111111111,
+      "mean_true_probability": 0.014786920477457563,
+      "mean_global_true_probability": 0.007290903420574392,
+      "mean_effective_candidates": 20.47559693381227,
+      "mean_train_options": 21.75,
+      "mean_surprisal_delta_bits": 3.8528688797801047
+    },
+    {
+      "penult": "705",
+      "is_target_governor": "N",
+      "evaluated_rows": 25,
+      "top1_accuracy": 0.04,
+      "top3_accuracy": 0.16,
+      "mean_true_probability": 0.04092924126172208,
+      "mean_global_true_probability": 0.01037934668222652,
+      "mean_effective_candidates": 11.742495412969342,
+      "mean_train_options": 12.44,
+      "mean_surprisal_delta_bits": 2.5967158378594357
+    },
+    {
+      "penult": "840",
+      "is_target_governor": "N",
+      "evaluated_rows": 25,
+      "top1_accuracy": 0.16,
+      "top3_accuracy": 0.4,
+      "mean_true_probability": 0.04956776556776557,
+      "mean_global_true_probability": 0.011280834996127026,
+      "mean_effective_candidates": 9.09084430516995,
+      "mean_train_options": 10.28,
+      "mean_surprisal_delta_bits": 5.3850024684974915
+    },
+    {
+      "penult": "861",
+      "is_target_governor": "N",
+      "evaluated_rows": 25,
+      "top1_accuracy": 0,
+      "top3_accuracy": 0.08,
+      "mean_true_probability": 0.011666666666666665,
+      "mean_global_true_probability": 0.005636652596967824,
+      "mean_effective_candidates": 12.128168439735347,
+      "mean_train_options": 12.8,
+      "mean_surprisal_delta_bits": 2.573787089637147
+    },
+    {
+      "penult": "003",
+      "is_target_governor": "N",
+      "evaluated_rows": 23,
+      "top1_accuracy": 0.13043478260869565,
+      "top3_accuracy": 0.21739130434782608,
+      "mean_true_probability": 0.02892469848991588,
+      "mean_global_true_probability": 0.008355200689485077,
+      "mean_effective_candidates": 12.887193360122383,
+      "mean_train_options": 13.478260869565217,
+      "mean_surprisal_delta_bits": 2.68944973451644
+    },
+    {
+      "penult": "233",
+      "is_target_governor": "N",
+      "evaluated_rows": 23,
+      "top1_accuracy": 0.2608695652173913,
+      "top3_accuracy": 0.34782608695652173,
+      "mean_true_probability": 0.1128403601229688,
+      "mean_global_true_probability": 0.01185153474038413,
+      "mean_effective_candidates": 6.256933116032422,
+      "mean_train_options": 7.304347826086956,
+      "mean_surprisal_delta_bits": 3.5017928196690944
+    },
+    {
+      "penult": "240",
+      "is_target_governor": "N",
+      "evaluated_rows": 23,
+      "top1_accuracy": 0.391304347826087,
+      "top3_accuracy": 0.6521739130434783,
+      "mean_true_probability": 0.2177865612648222,
+      "mean_global_true_probability": 0.015737814129998088,
+      "mean_effective_candidates": 4.925386577737421,
+      "mean_train_options": 6.130434782608695,
+      "mean_surprisal_delta_bits": 3.7382382864594117
+    },
+    {
+      "penult": "520",
+      "is_target_governor": "N",
+      "evaluated_rows": 23,
+      "top1_accuracy": 0,
+      "top3_accuracy": 0,
+      "mean_true_probability": 0.007246376811594202,
+      "mean_global_true_probability": 0.010849996975514822,
+      "mean_effective_candidates": 8.195301962809582,
+      "mean_train_options": 8.304347826086957,
+      "mean_surprisal_delta_bits": 3.958420896248601
+    },
+    {
+      "penult": "400",
+      "is_target_governor": "N",
+      "evaluated_rows": 22,
+      "top1_accuracy": 0,
+      "top3_accuracy": 0,
+      "mean_true_probability": 0,
+      "mean_global_true_probability": 0.0017731106418571992,
+      "mean_effective_candidates": 8.181646147520507,
+      "mean_train_options": 8.272727272727273,
+      "mean_surprisal_delta_bits": null
+    },
+    {
+      "penult": "590",
+      "is_target_governor": "N",
+      "evaluated_rows": 21,
+      "top1_accuracy": 0.09523809523809523,
+      "top3_accuracy": 0.19047619047619047,
+      "mean_true_probability": 0.03767752715121136,
+      "mean_global_true_probability": 0.010527100098599052,
+      "mean_effective_candidates": 11.018681214399745,
+      "mean_train_options": 11.857142857142858,
+      "mean_surprisal_delta_bits": 2.5535176810827007
+    },
+    {
+      "penult": "920",
+      "is_target_governor": "N",
+      "evaluated_rows": 19,
+      "top1_accuracy": 0.05263157894736842,
+      "top3_accuracy": 0.3157894736842105,
+      "mean_true_probability": 0.07819487444100447,
+      "mean_global_true_probability": 0.007151750919063938,
+      "mean_effective_candidates": 4.794036120855516,
+      "mean_train_options": 5.421052631578948,
+      "mean_surprisal_delta_bits": 3.9382401029941745
+    },
+    {
+      "penult": "125",
+      "is_target_governor": "N",
+      "evaluated_rows": 18,
+      "top1_accuracy": 0,
+      "top3_accuracy": 0.05555555555555555,
+      "mean_true_probability": 0.03555866791160909,
+      "mean_global_true_probability": 0.014460499398768796,
+      "mean_effective_candidates": 9.305733339917083,
+      "mean_train_options": 9.777777777777779,
+      "mean_surprisal_delta_bits": 2.407805860084619
+    },
+    {
+      "penult": "151",
+      "is_target_governor": "N",
+      "evaluated_rows": 18,
+      "top1_accuracy": 0,
+      "top3_accuracy": 0.05555555555555555,
+      "mean_true_probability": 0.020667989417989415,
+      "mean_global_true_probability": 0.005507200267877749,
+      "mean_effective_candidates": 7.960922104658214,
+      "mean_train_options": 8.222222222222221,
+      "mean_surprisal_delta_bits": 5.202606106969974
+    },
+    {
+      "penult": "156",
+      "is_target_governor": "N",
+      "evaluated_rows": 18,
+      "top1_accuracy": 0,
+      "top3_accuracy": 0,
+      "mean_true_probability": 0,
+      "mean_global_true_probability": 0.011409829253278624,
+      "mean_effective_candidates": 7.333333333333333,
+      "mean_train_options": 7.333333333333333,
+      "mean_surprisal_delta_bits": null
+    },
+    {
+      "penult": "900",
+      "is_target_governor": "N",
+      "evaluated_rows": 18,
+      "top1_accuracy": 0.05555555555555555,
+      "top3_accuracy": 0.2222222222222222,
+      "mean_true_probability": 0.02446072446072446,
+      "mean_global_true_probability": 0.006587866291333771,
+      "mean_effective_candidates": 8.835332500630297,
+      "mean_train_options": 9.11111111111111,
+      "mean_surprisal_delta_bits": 2.7904914626857424
+    },
+    {
+      "penult": "100",
+      "is_target_governor": "N",
+      "evaluated_rows": 17,
+      "top1_accuracy": 0,
+      "top3_accuracy": 0.47058823529411764,
+      "mean_true_probability": 0.1632798573975045,
+      "mean_global_true_probability": 0.010476259917494332,
+      "mean_effective_candidates": 4.704392052173933,
+      "mean_train_options": 5.352941176470588,
+      "mean_surprisal_delta_bits": 4.236038721551587
+    },
+    {
+      "penult": "255",
+      "is_target_governor": "N",
+      "evaluated_rows": 17,
+      "top1_accuracy": 0,
+      "top3_accuracy": 0,
+      "mean_true_probability": 0,
+      "mean_global_true_probability": 0.0066814850096583835,
+      "mean_effective_candidates": 7.468805593565077,
+      "mean_train_options": 7.823529411764706,
+      "mean_surprisal_delta_bits": null
+    },
+    {
+      "penult": "405",
+      "is_target_governor": "N",
+      "evaluated_rows": 17,
+      "top1_accuracy": 0.058823529411764705,
+      "top3_accuracy": 0.058823529411764705,
+      "mean_true_probability": 0.03361344537815126,
+      "mean_global_true_probability": 0.007028180368063891,
+      "mean_effective_candidates": 7.065431759364727,
+      "mean_train_options": 7.411764705882353,
+      "mean_surprisal_delta_bits": 3.778906599993436
+    },
+    {
+      "penult": "550",
+      "is_target_governor": "N",
+      "evaluated_rows": 17,
+      "top1_accuracy": 0.058823529411764705,
+      "top3_accuracy": 0.058823529411764705,
+      "mean_true_probability": 0.0058823529411764705,
+      "mean_global_true_probability": 0.014142289192474424,
+      "mean_effective_candidates": 6.60541033246065,
+      "mean_train_options": 6.9411764705882355,
+      "mean_surprisal_delta_bits": 2.3785116232537296
+    },
+    {
+      "penult": "706",
+      "is_target_governor": "N",
+      "evaluated_rows": 17,
+      "top1_accuracy": 0,
+      "top3_accuracy": 0.058823529411764705,
+      "mean_true_probability": 0.014705882352941176,
+      "mean_global_true_probability": 0.010383544493560945,
+      "mean_effective_candidates": 7.409395186018208,
+      "mean_train_options": 7.588235294117647,
+      "mean_surprisal_delta_bits": 3.121911557555425
+    }
+  ],
+  "decision": "candidate_effective_unicity_local_to_terminal_governors",
+  "caveat": "This is structural prediction, not decipherment. It does not assign sound, language family, or meaning; it tests whether the promoted terminal-governor bet measurably compresses held-out final-slot possibilities."
+}

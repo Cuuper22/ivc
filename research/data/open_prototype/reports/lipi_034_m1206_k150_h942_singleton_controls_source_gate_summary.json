@@ -1,0 +1,30 @@
+{
+  "date": "2026-05-26",
+  "gate": "lipi_034_m1206_k150_h942_singleton_controls_source_gate",
+  "question": "Can the +520-220-006+ and +520-220-016+ singleton controls enter the M-1206 source-normalized branch?",
+  "objects": {
+    "H-942": {
+      "local_rows": ["1822.1 +520-220-016+", "1822.2 +033-700+"],
+      "decision": "source_visible_singleton_016_control_target_side_mapping_caution",
+      "source_page": "CISI Pakistan IA leaf n374 / printed page 340",
+      "crops": 4,
+      "admissible_use": "source-visible singleton 016 control target for blind component sorting",
+      "inadmissible_use": "accepted value, side function, allograph proof, or translation"
+    },
+    "K-150": {
+      "local_rows": ["5277.1 +520-220-006+"],
+      "decision": "secondary_catalogue_lead_only_not_source_grade",
+      "source_page": null,
+      "admissible_use": "exact-frame singleton 006 acquisition target",
+      "inadmissible_use": "clean source-visible component witness"
+    }
+  },
+  "source_rows": 8,
+  "crop_rows": 4,
+  "adjudication_rows": 5,
+  "accepted_mappings": 0,
+  "accepted_values": 0,
+  "accepted_translations": 0,
+  "branch_effect": "H-942 adds one source-visible non-034/non-415 singleton terminal control. K-150 remains source-gated. The branch is better controlled but still undeciphered.",
+  "next_experiment": "Build a source-normalized blind component packet with M-1206 target, H-938/H-940/M-37 415 controls, H-942 A singleton 016 control target, and prefix/nonterminal distractors. Exclude M-1912 and K-150 until raw source material is acquired."
+}

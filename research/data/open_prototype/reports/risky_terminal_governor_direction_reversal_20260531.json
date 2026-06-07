@@ -1,0 +1,33 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_terminal_governor_direction_reversal_20260531",
+  "tier": "candidate",
+  "bet_tested": "If the 002/060/820 terminal-governor network is just a generic edge artifact, reversing every complete row should produce an equivalent target network on the opposite edge.",
+  "forward_exact_live_edges_at_20_cells_0_85_terminal": [
+    "002-817:108/105 terminal, 10 sites, 9 types",
+    "002-820:75/70 terminal, 7 sites, 6 types",
+    "060-920:52/51 terminal, 9 sites, 7 types",
+    "060-550:24/23 terminal, 4 sites, 6 types",
+    "060-820:23/23 terminal, 5 sites, 4 types"
+  ],
+  "reverse_exact_top_edges_at_same_threshold": [
+    "740-400:106/101 terminal",
+    "740-090:77/67 terminal",
+    "760-740:74/63 terminal",
+    "033-520:45/42 terminal",
+    "220-520:43/37 terminal",
+    "390-740:37/34 terminal",
+    "798-740:34/29 terminal",
+    "003-390:26/26 terminal",
+    "033-700:25/22 terminal",
+    "900-740:24/22 terminal",
+    "004-390:22/20 terminal",
+    "585-740:21/19 terminal",
+    "142-617:20/18 terminal",
+    "233-520:20/17 terminal"
+  ],
+  "decision": "target_network_not_reproduced_by_global_reversal; keep as catalog-terminal structural candidate, not physical-direction proof",
+  "interpretation": "The reverse corpus has its own strong edge/opening patterns, but not the 002/060 closure network and not shared 820. This demotes a pure edge-artifact explanation for the target network.",
+  "non_claim": "This does not prove the physical reading direction of every seal. It only says the terminal-governor candidate is asymmetric under total reversal."
+}

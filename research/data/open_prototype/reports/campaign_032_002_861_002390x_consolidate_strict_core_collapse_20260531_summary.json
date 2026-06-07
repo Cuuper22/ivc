@@ -1,0 +1,29 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "strict_core_collapse",
+  "strict_core": {
+    "rows": 4,
+    "x_distribution": "125:2;095:1;692:1",
+    "left_distribution": "032:1;142:1;235:1;484:1",
+    "survivor": "open_vs_terminal_syntax_only"
+  },
+  "kept": [
+    "125 as strict open/continuing branch syntax",
+    "095 and 692 as strict terminal branch syntax"
+  ],
+  "demoted_under_strict_core": [
+    "004 neutral split",
+    "705 repeated terminal ecology",
+    "530 one-complement linker",
+    "590-032 bridge",
+    "125-820 terminal cap",
+    "semantic/title/status/result glosses"
+  ],
+  "contradiction_results": {
+    "STRICT_CORE_125_IS_ALWAYS_OPEN": "pass",
+    "STRICT_CORE_TERMINAL_BRANCHES_END": "pass",
+    "STRICT_CORE_LEFT_OPERATORS_SURVIVE_ONLY_PARTLY": "partial_pass",
+    "STRICT_CORE_SEMANTICS_DO_NOT_SURVIVE": "pass_demote"
+  }
+}

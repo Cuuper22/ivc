@@ -1,0 +1,77 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_002_closure_selector_map_20260531",
+  "tier": "candidate_screen",
+  "bet": "If 002 has a closure paradigm parallel to 060, immediate left-neighbor signs should sometimes select 817, 820, or leaky 861.",
+  "exact_collapse": {
+    "source": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\lipi\\metadata_filtered.csv",
+    "closure_set": [
+      "817",
+      "820",
+      "861"
+    ],
+    "exact_prev_002_closure_cells": 300,
+    "dedupe_key": [
+      "prev",
+      "002",
+      "closure",
+      "next2",
+      "text",
+      "site",
+      "type",
+      "symbol"
+    ]
+  },
+  "qualifying_rule": {
+    "min_selector_cells": 4,
+    "min_purity": 0.75
+  },
+  "live_qualifying_selector_count": 1,
+  "live_best_selector_p": 0.004470304404649626,
+  "closure_label_shuffle_null": {
+    "iterations": 5000,
+    "preserves": "prev signs, number of prev-002-closure cells, and closure marginal counts; shuffles closure labels over exact cells",
+    "p_qualifying_count_ge_live": 0.8368,
+    "p_best_selector_p_le_live": 0.0892,
+    "p_both_count_and_best": 0.0892
+  },
+  "strongest_selectors": [
+    {
+      "prev": "503",
+      "target_closure": "817",
+      "selector_cells": 5,
+      "target_hits": 5,
+      "other_closure_hits": 0,
+      "purity": 1,
+      "fisher_right_tail": 0.004470304404649626,
+      "closure_counts": "817:5 820:0 861:0",
+      "examples": [
+        "H-13:503-002-817:+740-760-615-503-002-817+",
+        "M-14:503-002-817:+740-776-503-002-817+",
+        "M-58:503-002-817:+740-460-503-002-817+",
+        "M-245:503-002-817:+740-760-070-921-460-503-002-817+",
+        "M-362:503-002-817:+740-007-503-002-817+"
+      ]
+    }
+  ],
+  "risky_bets": [
+    {
+      "tier": "wild shot",
+      "bet": "503-002 predicts closure 817 (5/5 exact cells).",
+      "p_uncorrected": 0.004470304404649626,
+      "examples": [
+        "H-13:503-002-817:+740-760-615-503-002-817+",
+        "M-14:503-002-817:+740-776-503-002-817+",
+        "M-58:503-002-817:+740-460-503-002-817+",
+        "M-245:503-002-817:+740-760-070-921-460-503-002-817+",
+        "M-362:503-002-817:+740-007-503-002-817+"
+      ]
+    }
+  ],
+  "demoters": [
+    "If leave-site testing erases the selector, demote it to local workshop habit.",
+    "If exact duplicate families dominate a selector, demote until object-level dedupe is run.",
+    "If the selector count is null-common, do not parallelize the 060 feeder model to 002."
+  ]
+}

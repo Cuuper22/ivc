@@ -1,0 +1,27 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "125_tail_slot_specificity_test",
+  "hypotheses_tested": [
+    "`125` is a generic terminal closer",
+    "`125` is a governed rank/title suffix whose value depends on head+tail",
+    "`297-350` is the real head pair, not `297` or `350-125` alone",
+    "`032` is a terminal/pivot tail under `610`, not a title-specific suffix everywhere"
+  ],
+  "decisions": [
+    "Kill generic `125 = terminal closer`: governed `125` closes within two signs in 16/17 cases, but nongoverned `125` also closes within two signs in 33/42 cases.",
+    "`297-350` is the correct current unit for the Bala-kot/Nausharo template: both global `297-350` hits are `002-297-350-125-413`, while `350-125` has two adversarial non-297 continuations.",
+    "`125-413` is terminal only inside the `297-350-125-413` template; keep `413` as template-tail candidate, not independent sign value.",
+    "`610` survives as a candidate rare governed head: both `610-125-032` rows are after `002` and terminal.",
+    "`032` stays a pivot/terminal-tail candidate only under `610`; the `420-125-032-820` row blocks a title-specific `032` reading.",
+    "`632-032` and `820` remain the better tail bets than raw terminality: they recur across governed heads (`390/190` and `390/405`)."
+  ],
+  "confidence_after_test": {
+    "125_generic_terminal_closer": "dead",
+    "125_governed_rank_title_suffix": "candidate",
+    "297_350_pair_head_selecting_125_413": "candidate_with_pair_specificity_strengthened",
+    "610_rare_governed_head_selecting_125_032": "candidate",
+    "032_title_specific_tail": "dead",
+    "032_terminal_pivot_under_610": "candidate"
+  },
+  "next_prediction": "A new `297-350` row should either continue to select `125-413` or directly damage the pair-head bet; a new `610` row outside `002-610-125-032` directly damages the rare-head bet; a new governed `125` row should be scored by its specific tail class, not by whether it merely ends the line."
+}

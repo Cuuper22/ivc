@@ -1,0 +1,81 @@
+{
+  "date": "2026-05-29",
+  "source_rows": 14,
+  "quantified_rows": 14,
+  "newly_quantified_rows": [
+    "M-1267",
+    "M-355"
+  ],
+  "contact_sheet": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\032_002_861_terminal_space_recut_v2\\campaign_032_002_861_terminal_space_recut_v2_contact_sheet.png",
+  "tail_hidden_source_sheet": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\032_002_861_terminal_space_recut_v2\\campaign_032_002_861_terminal_space_recut_v2_tail_hidden_source_sheet.png",
+  "decisions": [
+    {
+      "test": "visual_only_blockers_quantified",
+      "decision": "closed_for_M355_and_M1267_with_quality_limits",
+      "evidence": "M-355 now has a measured long continuation window; M-1267 now has a measured bare terminal margin",
+      "limit": "measurements are tail-hidden manual recuts, not fully independent blind epigraphy"
+    },
+    {
+      "test": "tail_windows_vs_bare_margins_v2",
+      "decision": "terminal_space_adversary_strengthened",
+      "evidence": "tailed windows span 120-525px / share 0.177-0.433; bare margins span 28-45px / share 0.040-0.063",
+      "limit": "tail windows measure visible terminal content; bare margins measure same-line terminal edge margin"
+    },
+    {
+      "test": "bare_tail_sized_empty_slot",
+      "decision": "still_not_observed",
+      "evidence": "largest measured bare margin is 45px, below the smallest measured tailed window 120px",
+      "limit": "does not prove no physical space elsewhere on the object; it blocks same-line grammar promotion from current source windows"
+    },
+    {
+      "test": "long_continuation_adversary",
+      "decision": "upgraded_from_visual_only_to_quantified_adversary",
+      "evidence": "M-355 window 525px / share 0.395",
+      "limit": "single long-continuation row; use as adversary, not positive grammar"
+    },
+    {
+      "test": "grammar_promotion",
+      "decision": "blocked",
+      "evidence": "same-line tail attachment survives, but terminal capacity still separates tailed and bare source windows",
+      "limit": "promotion requires a bare closure with tail-sized same-line terminal opportunity or exact/near-exact formula alternation under comparable layout"
+    }
+  ],
+  "class_rows": [
+    {
+      "tail_class": "closure",
+      "rows": 7,
+      "quantified_rows": 7,
+      "tails": "<END>:7",
+      "metric_status_distribution": "quantified:6;quantified_tail_hidden_recut:1",
+      "width_or_margin_range": "margin 28-45px / share 0.040-0.063",
+      "verdict": "bare_controls_still_lack_tail_sized_same_line_terminal_margin"
+    },
+    {
+      "tail_class": "fixed_pair",
+      "rows": 3,
+      "quantified_rows": 3,
+      "tails": "255 416:1;533 717:2",
+      "metric_status_distribution": "quantified:3",
+      "width_or_margin_range": "tail-window 195-265px / share 0.331-0.433",
+      "verdict": "same_line_fixed_pair_survives_but_large_terminal_window_and_register_pressure_remain"
+    },
+    {
+      "tail_class": "long_continuation",
+      "rows": 1,
+      "quantified_rows": 1,
+      "tails": "360 520 919 140:1",
+      "metric_status_distribution": "quantified_tail_hidden_recut:1",
+      "width_or_margin_range": "tail-window 525-525px / share 0.395-0.395",
+      "verdict": "now_quantified_as_large_same_line_terminal_continuation_adversary"
+    },
+    {
+      "tail_class": "simple_single",
+      "rows": 3,
+      "quantified_rows": 3,
+      "tails": "603:3",
+      "metric_status_distribution": "quantified:3",
+      "width_or_margin_range": "tail-window 120-225px / share 0.177-0.286",
+      "verdict": "same_line_simple_tail_survives_but_terminal_space_adversary_remains"
+    }
+  ]
+}

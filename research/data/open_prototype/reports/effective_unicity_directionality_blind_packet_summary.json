@@ -1,0 +1,60 @@
+{
+  "date": "2026-05-29",
+  "packet_id": "directionality_no_overlay_packet_v1",
+  "status": "blind_packet_created_not_scored_no_claim_promotion",
+  "inputs": {
+    "route_status_csv": "data/open_prototype/reports/effective_unicity_directionality_public_route_probe_status.csv",
+    "route_visual_triage_summary": "data/open_prototype/reports/effective_unicity_directionality_route_visual_triage_summary.json",
+    "triage_id": "directionality_route_visual_triage_v1"
+  },
+  "counts": {
+    "blind_items": 15,
+    "primary_target_images": 7,
+    "primary_target_unique_cisis": 4,
+    "scoring_negative_images": 7,
+    "scoring_negative_unique_cisis": 7,
+    "quarantine_negative_images": 1,
+    "accepted_claims_increment": 0
+  },
+  "forger_control_plan": {
+    "planned_real_scoring_negative_unique_cisis": 12,
+    "current_packet_real_scoring_negative_unique_cisis": 7,
+    "promotion_denominator_floor": 10,
+    "status": "current packet is below the forger's preferred real-control denominator; it is usable for blind QA and failure discovery, not for promotion"
+  },
+  "target_cisis": [
+    "H-654",
+    "M-1310",
+    "M-1320",
+    "M-811"
+  ],
+  "scoring_negative_cisis": [
+    "H-665",
+    "M-1273",
+    "M-1458",
+    "M-1523",
+    "M-376",
+    "M-381",
+    "M-525"
+  ],
+  "quarantine_negative_cisis": [
+    "H-152"
+  ],
+  "forger_question": "Do the four visually triaged tier-1 public-route candidates remain distinguishable as clean, label-free, source-boxable signbands when mixed with weak/low-legibility/complex route controls cut by the same no-overlay procedure?",
+  "promotion_thresholds": [
+    "Two or more independent blind reviews must mark every primary-target image as label-leak-free and boxable or explicitly identify any non-comparable target view before scoring.",
+    "For any candidate object to move beyond acquisition inventory, both available paired views must have matching visual token count under blind review; H-654 has only one current public view and therefore cannot pass a paired-view promotion in this packet.",
+    "Scoring negatives must produce zero hard boxable-and-count-matching hits under the same review rubric; quarantine negatives are excluded from false-positive denominators.",
+    "Even a passing packet can promote only to source-normalized crop candidate for further sign-order adjudication, never to sign value, phonetic value, meaning, language family, translation, or an accepted structural finding."
+  ],
+  "interpretation_boundary": "This packet is a source-normalization gate only. It does not validate physical direction, token order, sign identity, sign semantics, language family, phonetic value, or translation.",
+  "outputs": {
+    "crop_manifest": "data/open_prototype/reports/effective_unicity_directionality_blind_packet_crop_manifest.csv",
+    "blind_manifest": "data/open_prototype/reports/effective_unicity_directionality_blind_packet_manifest.csv",
+    "answer_key": "data/open_prototype/reports/effective_unicity_directionality_blind_packet_answer_key.csv",
+    "review_template": "data/open_prototype/reports/effective_unicity_directionality_blind_packet_review_template.csv",
+    "summary_json": "data/open_prototype/reports/effective_unicity_directionality_blind_packet_summary.json",
+    "contact_sheet": "tmp/effective_unicity_directionality_blind_packet/directionality_no_overlay_blind_contact_sheet.png",
+    "blind_image_dir": "tmp/effective_unicity_directionality_blind_packet/blind_images"
+  }
+}

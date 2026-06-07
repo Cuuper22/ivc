@@ -1,0 +1,198 @@
+{
+  "date": "2026-05-29",
+  "strict_corpus_rows_scanned": 4011,
+  "units": [
+    "603",
+    "533 717",
+    "255 416",
+    "096",
+    "416",
+    "698"
+  ],
+  "occurrence_rows": 66,
+  "summary_rows": 10,
+  "research_decisions": {
+    "533 717": "P1 restricted post-861 target: both current occurrences are terminal after 002-861, both are Mohenjo-daro SEAL:R with no icon, and no independent occurrence appears in the strict layer.",
+    "603": "P1 mixed bridge target: three terminal post-002-861 uses on Mohenjo-daro seals, plus three repeated Harappa TAB:B independent uses in the 740-603-240-060-692 lane and one weak scene occurrence.",
+    "255 416": "P2 singleton stress: one terminal post-002-861 use in the 220-032 lane, supported by source-visible bare controls but not recurrent enough to carry the parse.",
+    "096": "control only: one post-002-861 ivory rod plus one independent terminal row.",
+    "416": "negative/broad control: many independent uses and Harappa TAB:I post-861 rows, not a restricted suffix signal.",
+    "698": "negative/broad control: terminal sign with independent uses and two post-002-861 Mohenjo-daro seal rows."
+  },
+  "unit_contexts": {
+    "603": [
+      {
+        "unit": "603",
+        "context_class": "post_002_861",
+        "rows": "3",
+        "terminal_rows": "3",
+        "source_visible_focus_rows": "3",
+        "site_counts": "Mohenjo-daro:3",
+        "type_counts": "SEAL:S:2;SEAL:R:1",
+        "symbol_counts": "Gaur:1;Bull1:W:1;None:1",
+        "shape_counts": "square:2;rectangular:1",
+        "material_counts": "Steatite:3",
+        "prev2_counts": "002 861:3",
+        "next1_counts": "<END>:3",
+        "companion_patterns": "<none>:3",
+        "examples": "M-240 +520-240-220-032-002-861-603+;M-714 +740-585-017-033-705-233-798-803-002-861-603+;M-1273 +740-055-002-861-603+"
+      },
+      {
+        "unit": "603",
+        "context_class": "independent",
+        "rows": "4",
+        "terminal_rows": "0",
+        "source_visible_focus_rows": "0",
+        "site_counts": "Harappa:3;Unknown:1",
+        "type_counts": "TAB:B:3;SEAL:C:1",
+        "symbol_counts": "None:3;Scene:1",
+        "shape_counts": "rectangular:3;circular:1",
+        "material_counts": "Faience:2;Steatite:1;-:1",
+        "prev2_counts": "740:3;000:1",
+        "next1_counts": "240:3;091:1",
+        "companion_patterns": "+700-034+:2;<none>:2",
+        "examples": "H-1138 +740-603-240-060-692+;H-1846 +740-603-240-060-692+;- +000-603-091-190+;H-1137 +740-603-240-060-692+"
+      }
+    ],
+    "533 717": [
+      {
+        "unit": "533 717",
+        "context_class": "post_002_861",
+        "rows": "2",
+        "terminal_rows": "2",
+        "source_visible_focus_rows": "2",
+        "site_counts": "Mohenjo-daro:2",
+        "type_counts": "SEAL:R:2",
+        "symbol_counts": "None:2",
+        "shape_counts": "cuboid-convex:2",
+        "material_counts": "Steatite:1;-:1",
+        "prev2_counts": "002 861:2",
+        "next1_counts": "<END>:2",
+        "companion_patterns": "<none>:2",
+        "examples": "M-376 +740-100-176-002-861-533-717+;M-391 +405-845-686-740-793-003-233-805-002-861-533-717+"
+      }
+    ],
+    "255 416": [
+      {
+        "unit": "255 416",
+        "context_class": "post_002_861",
+        "rows": "1",
+        "terminal_rows": "1",
+        "source_visible_focus_rows": "1",
+        "site_counts": "Mohenjo-daro:1",
+        "type_counts": "SEAL:S:1",
+        "symbol_counts": "Bull1:S:1",
+        "shape_counts": "square:1",
+        "material_counts": "Steatite:1",
+        "prev2_counts": "002 861:1",
+        "next1_counts": "<END>:1",
+        "companion_patterns": "<none>:1",
+        "examples": "M-91 +740-100-798-220-032-002-861-255-416+"
+      }
+    ],
+    "096": [
+      {
+        "unit": "096",
+        "context_class": "post_002_861",
+        "rows": "1",
+        "terminal_rows": "1",
+        "source_visible_focus_rows": "0",
+        "site_counts": "Mohenjo-daro:1",
+        "type_counts": "ROD:1",
+        "symbol_counts": "None:1",
+        "shape_counts": "-:1",
+        "material_counts": "Ivory:1",
+        "prev2_counts": "002 861:1",
+        "next1_counts": "<END>:1",
+        "companion_patterns": "<none>:1",
+        "examples": "M-2089 +002-861-096+"
+      },
+      {
+        "unit": "096",
+        "context_class": "independent",
+        "rows": "1",
+        "terminal_rows": "1",
+        "source_visible_focus_rows": "0",
+        "site_counts": "Mohenjo-daro:1",
+        "type_counts": "SEAL:S:1",
+        "symbol_counts": "None:1",
+        "shape_counts": "square:1",
+        "material_counts": "Steatite:1",
+        "prev2_counts": "143:1",
+        "next1_counts": "<END>:1",
+        "companion_patterns": "<none>:1",
+        "examples": "M-1193 +143-096+"
+      }
+    ],
+    "416": [
+      {
+        "unit": "416",
+        "context_class": "post_002_861",
+        "rows": "6",
+        "terminal_rows": "6",
+        "source_visible_focus_rows": "0",
+        "site_counts": "Harappa:6",
+        "type_counts": "TAB:I:6",
+        "symbol_counts": "None:6",
+        "shape_counts": "rectangular:6",
+        "material_counts": "Steatite:4;-:2",
+        "prev2_counts": "002 861:6",
+        "next1_counts": "<END>:6",
+        "companion_patterns": "+700-034+:4;+034-700+:1;<none>:1",
+        "examples": "H-2094 +002-861-416+;H-2097 +002-861-416+;H-2095 +002-861-416+;- +002-861-416+;H-2096 +002-861-416+;H-910 +002-861-416+"
+      },
+      {
+        "unit": "416",
+        "context_class": "independent",
+        "rows": "39",
+        "terminal_rows": "22",
+        "source_visible_focus_rows": "1",
+        "site_counts": "Mohenjo-daro:17;Harappa:15;Dholavira:4;Kish:1;Lothal:1;Susa:1",
+        "type_counts": "SEAL:S:23;TAB:I:7;POT:T:s:4;SEAL:R:3;TAB:B:1;SEAL:CY:1",
+        "symbol_counts": "None:14;Bull1:W:5;Bull1:S:4;Bull1:J:2;Bull1:V:2;Bull1:2;Gaur:2;Tigr:1",
+        "shape_counts": "square:23;rectangular:13;-:1;cuboid-convex:1;cylindrical:1",
+        "material_counts": "Steatite:27;-:6;Clay:4;Faience:2",
+        "prev2_counts": "<START>:12;740:7;151:3;760 220:2;740 840:2;760 840:2;767 220:1;518 220:1",
+        "next1_counts": "<END>:22;002:4;001:3;590:2;741:2;240:1;140:1;175:1",
+        "companion_patterns": "<none>:31;+220-700-004+:3;+033-255+:1;+700-220-004+:1;+255-033+:1;+861-003+:1;+700-033+:1",
+        "examples": "- +740-416-002-861+;H-911 +416-590-033+;H-1192 +400-740-767-220-416+;H-2099 +416-590-033+;H-2119 +740-416+;H-1753 +416+;- +416+;H-1751 +416+"
+      }
+    ],
+    "698": [
+      {
+        "unit": "698",
+        "context_class": "post_002_861",
+        "rows": "2",
+        "terminal_rows": "2",
+        "source_visible_focus_rows": "0",
+        "site_counts": "Mohenjo-daro:2",
+        "type_counts": "SEAL:S:2",
+        "symbol_counts": "None:2",
+        "shape_counts": "square:2",
+        "material_counts": "Steatite:2",
+        "prev2_counts": "002 861:2",
+        "next1_counts": "<END>:2",
+        "companion_patterns": "<none>:1;+156-176+:1",
+        "examples": "M-329 +002-861-698+;M-330 +002-861-698+"
+      },
+      {
+        "unit": "698",
+        "context_class": "independent",
+        "rows": "7",
+        "terminal_rows": "7",
+        "source_visible_focus_rows": "0",
+        "site_counts": "Harappa:6;Mohenjo-daro:1",
+        "type_counts": "POT:T:g:4;TAB:B:2;SEAL:S:1",
+        "symbol_counts": "None:6;Bull1:L:1",
+        "shape_counts": "-:4;rectangular:2;square:1",
+        "material_counts": "Clay:4;Faience:2;Steatite:1",
+        "prev2_counts": "<START>:3;400:1;000:1;034:1;401:1",
+        "next1_counts": "<END>:7",
+        "companion_patterns": "<none>:5;+220-000-700+:1;+740-100-176-101+:1",
+        "examples": "- +698+;H-1892 +400-698+;H-1549 +698+;- +000-698+;H-1547 +034-698+;H-210 +698+;M-1824 +401-698+"
+      }
+    ]
+  },
+  "occurrences_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_context_split_occurrences.csv",
+  "summary_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_context_split_summary.csv"
+}

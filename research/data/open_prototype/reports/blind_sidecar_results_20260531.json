@@ -1,0 +1,37 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "result_id": "blind_sidecar_results_20260531",
+  "blind_741060920_terminal_cluster": {
+    "reader_summary": "Sidecar, answer-key blind, called BT007/BT001 high, BT008 medium-high, BT006 medium, BT012 medium-low as the same terminal cluster. It called BT002/BT003/BT004/BT005/BT009/BT011 controls and BT010 low unusable/weak possible.",
+    "answer_key_check": {
+      "called_same_cluster_targets": ["BT001", "BT006", "BT007", "BT008", "BT012"],
+      "missed_target": "BT004",
+      "low_confidence_false_possible": "BT010",
+      "non741_060920_diagnostic_called_control": "BT009"
+    },
+    "decision": "strengthens_narrow_741060920_visual_candidate_more_than_broad_060920",
+    "interpretation": "Blind visual recovery is materially above chance for full 741-060-920 positives. The broader 060-920 cap is not visually established by this packet because the non-741 060-920 diagnostic panel BT009 was treated as a clean control."
+  },
+  "blind_806_prefix_series": {
+    "reader_summary": "Sidecar, answer-key blind, called BS007 and BS010 clean prefix-806-series hits, BS011 possible, BS001 possible false hit, and most other panels controls.",
+    "answer_key_check": {
+      "high_confidence_hits": ["BS007", "BS010"],
+      "possible_hit": "BS011",
+      "possible_false_hit": "BS001",
+      "missed_targets": ["BS002", "BS006", "BS008"]
+    },
+    "decision": "visual_packet_weakly_supports_only_a_subset_keep_metadata_promotion_but_no_source_visual_promotion",
+    "interpretation": "The packet recovers a visible construction for two Harappa-style positives but misses the non-Harappa/source-holdout positives. The 806 role split remains a promoted metadata candidate, not a visual/source-promoted candidate."
+  },
+  "blind_060920_terminal_cap": {
+    "reader_summary": "Sidecar, answer-key blind, called BC001/BC003/BC008/BC010/BC012 high cap-like, BC007 medium cap-like, and BC009 low-medium possible. It called BC002/BC004/BC005/BC006/BC011 controls.",
+    "answer_key_check": {
+      "called_cap_like_targets": ["BC001", "BC003", "BC007", "BC008", "BC010", "BC012"],
+      "called_controls": ["BC002", "BC004", "BC005", "BC006", "BC011"],
+      "low_confidence_false_possible": "BC009"
+    },
+    "decision": "promote_broad_060920_to_visual_candidate",
+    "interpretation": "The broad 060-920 cap survives a direct non-741 blind packet: all six non-741 positives were called cap-like, while only one 060-non920 control was a low-confidence possible false positive. This moves the strongest formulation back from narrow 741-060-920 to broad 060-920 terminal cap with 741 as dominant feeder."
+  }
+}

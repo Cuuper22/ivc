@@ -1,0 +1,268 @@
+{
+  "date": "2026-05-29",
+  "seed": 20260529,
+  "source_visible_positive_rows_with_images": 8,
+  "negative_candidate_positions": 827,
+  "negative_candidate_unique_cisi": 761,
+  "negative_candidate_positions_by_class": {
+    "negative_002_y_prev_not_032": 503,
+    "negative_032_next_not_002": 297,
+    "negative_220_032_next_not_002": 27
+  },
+  "negative_candidate_positions_by_availability_tier": {
+    "local_image_hit": 23,
+    "mayig_overlap_only": 74,
+    "metadata_only": 729,
+    "source_panel_graph": 1
+  },
+  "local_image_backed_negative_positions": 23,
+  "local_image_backed_negative_unique_cisi": 22,
+  "local_image_backed_negative_positions_by_class": {
+    "negative_002_y_prev_not_032": 19,
+    "negative_032_next_not_002": 4
+  },
+  "source_panel_graph_negative_positions": 3,
+  "source_panel_graph_negative_unique_cisi": 3,
+  "mayig_overlap_negative_positions": 78,
+  "mayig_overlap_negative_unique_cisi": 71,
+  "blind_packet": {
+    "directory": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\source_box_blind_packet_v1",
+    "packet_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\source_box_blind_adjudication_packet.csv",
+    "key_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\source_box_blind_adjudication_key.csv",
+    "rows_total": 20,
+    "positives": 8,
+    "negatives": 12,
+    "negative_truth_classes": {
+      "negative_002_y_prev_not_032": 10,
+      "negative_032_next_not_002": 2
+    },
+    "note": "The packet hides catalog text and copies images to neutral filenames, but site/type/symbol metadata remains visible for matching review. Original filenames and catalog texts are only in the key file."
+  },
+  "false_positive_rate_status": {
+    "source_box_adjudication_fpr": "not_computed",
+    "reason": "This script builds the negative-control image packet and truth key. It does not adjudicate whether a reviewer/model spuriously calls 032-002-Y in negative source images.",
+    "next_gate": "Run blind adjudication on source_box_blind_adjudication_packet.csv, then compare decisions to source_box_blind_adjudication_key.csv."
+  },
+  "top_local_image_backed_negatives": [
+    {
+      "cisi": "H-930",
+      "control_class": "negative_032_next_not_002",
+      "site": "Harappa",
+      "type": "TAB:I",
+      "symbol": "None",
+      "text": "+700-032+",
+      "match_score": 16,
+      "local_image_hit_count": 2,
+      "first_image": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\independent_direction_controls\\derived\\H930_B_source_panel_v2.png"
+    },
+    {
+      "cisi": "M-77",
+      "control_class": "negative_002_y_prev_not_032",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:S",
+      "symbol": "Bull1:W",
+      "text": "+832-390-803-002-861+",
+      "match_score": 15,
+      "local_image_hit_count": 32,
+      "first_image": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\m77_parpola_recurrence_gate\\derived\\M77_A_panel_from_cisi_india_n68.png"
+    },
+    {
+      "cisi": "H-910",
+      "control_class": "negative_002_y_prev_not_032",
+      "site": "Harappa",
+      "type": "TAB:I",
+      "symbol": "None",
+      "text": "+002-861-416+",
+      "match_score": 15,
+      "local_image_hit_count": 12,
+      "first_image": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\h910_component_probe\\H910_A_panel.png"
+    },
+    {
+      "cisi": "M-17",
+      "control_class": "negative_002_y_prev_not_032",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:S",
+      "symbol": "Bull1:W",
+      "text": "+390-016-002-814-560+",
+      "match_score": 15,
+      "local_image_hit_count": 8,
+      "first_image": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\m315_second_slot_controls\\derived\\expanded_first3_context_crops\\M-17_impression_a_390-016-002_control_good_control.png"
+    },
+    {
+      "cisi": "M-683",
+      "control_class": "negative_032_next_not_002",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:S",
+      "symbol": "Bull1",
+      "text": "+740-798-231-002-298-460-032+",
+      "match_score": 15,
+      "local_image_hit_count": 2,
+      "first_image": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\m685_cisi2\\derived\\m685_page37_m683_m686_context_gray_autocontrast.png"
+    },
+    {
+      "cisi": "M-75",
+      "control_class": "negative_002_y_prev_not_032",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:S",
+      "symbol": "Bull1:W",
+      "text": "+520-220-004-002-817+",
+      "match_score": 15,
+      "local_image_hit_count": 1,
+      "first_image": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\m77_parpola_recurrence_gate\\cisi_india_n33_m75_m79_w2000.jpg"
+    },
+    {
+      "cisi": "M-315",
+      "control_class": "negative_002_y_prev_not_032",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:S",
+      "symbol": "None",
+      "text": "+390-034-002-374-228-741+",
+      "match_score": 14,
+      "local_image_hit_count": 27,
+      "first_image": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\m315_cisi1\\derived\\m315_data_page_row_context_gray_autocontrast.png"
+    },
+    {
+      "cisi": "M-32",
+      "control_class": "negative_002_y_prev_not_032",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:S",
+      "symbol": "Bull1:J",
+      "text": "+390-003-002-817+",
+      "match_score": 14,
+      "local_image_hit_count": 8,
+      "first_image": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\m315_second_slot_controls\\derived\\expanded_first3_context_crops\\M-32_impression_a_390-003-002_control_good_control.png"
+    },
+    {
+      "cisi": "M-1273",
+      "control_class": "negative_002_y_prev_not_032",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:R",
+      "symbol": "None",
+      "text": "+740-055-002-861-603+",
+      "match_score": 14,
+      "local_image_hit_count": 3,
+      "first_image": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\032_002_861_suffix_split\\M1273_A_cisi_pakistan_n195.png"
+    },
+    {
+      "cisi": "M-376",
+      "control_class": "negative_002_y_prev_not_032",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:R",
+      "symbol": "None",
+      "text": "+740-100-176-002-861-533-717+",
+      "match_score": 14,
+      "local_image_hit_count": 3,
+      "first_image": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\032_002_861_suffix_split\\M376_A_cisi_india_n129.png"
+    },
+    {
+      "cisi": "C-1",
+      "control_class": "negative_002_y_prev_not_032",
+      "site": "Chanhu-daro",
+      "type": "SEAL:S",
+      "symbol": "Bull1",
+      "text": "+031-840-140-740-101-002-365-287-034+",
+      "match_score": 14,
+      "local_image_hit_count": 2,
+      "first_image": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\m1206_034_cohesion_gate\\derived\\C001.png"
+    },
+    {
+      "cisi": "C-3",
+      "control_class": "negative_002_y_prev_not_032",
+      "site": "Chanhu-daro",
+      "type": "SEAL:S",
+      "symbol": "Bull1:W",
+      "text": "+740-016-002-920-317+",
+      "match_score": 14,
+      "local_image_hit_count": 2,
+      "first_image": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\m1206_034_cohesion_gate\\derived\\C003.png"
+    },
+    {
+      "cisi": "M-683",
+      "control_class": "negative_002_y_prev_not_032",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:S",
+      "symbol": "Bull1",
+      "text": "+740-798-231-002-298-460-032+",
+      "match_score": 14,
+      "local_image_hit_count": 2,
+      "first_image": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\m685_cisi2\\derived\\m685_page37_m683_m686_context_gray_autocontrast.png"
+    },
+    {
+      "cisi": "M-1206",
+      "control_class": "negative_002_y_prev_not_032",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:S",
+      "symbol": "Gaur",
+      "text": "+740-690-435-255-002-861+",
+      "match_score": 13,
+      "local_image_hit_count": 26,
+      "first_image": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\m1206_034_cohesion_gate\\derived\\m1206_034_cohesion_neutral_contact_sheet.png"
+    },
+    {
+      "cisi": "M-984",
+      "control_class": "negative_002_y_prev_not_032",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:S",
+      "symbol": "Bull1",
+      "text": "+390-004-002-817+",
+      "match_score": 13,
+      "local_image_hit_count": 13,
+      "first_image": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\m315_second_slot_controls\\derived\\expanded_first3_context_crops\\M-984_face_A_390-004-002_control_damaged_control.png"
+    },
+    {
+      "cisi": "M-803",
+      "control_class": "negative_002_y_prev_not_032",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:S",
+      "symbol": "Bull1",
+      "text": "+390-005-002-817+",
+      "match_score": 13,
+      "local_image_hit_count": 8,
+      "first_image": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\m315_second_slot_controls\\derived\\expanded_first3_context_crops\\M-803_face_A_390-005-002_control_weak_control.png"
+    },
+    {
+      "cisi": "M-918",
+      "control_class": "negative_002_y_prev_not_032",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:S",
+      "symbol": "Bull1",
+      "text": "+390-869-002-861+",
+      "match_score": 13,
+      "local_image_hit_count": 8,
+      "first_image": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\m315_second_slot_controls\\derived\\expanded_first3_context_crops\\M-918_face_A_390-869-002_control_not_token2_grade.png"
+    },
+    {
+      "cisi": "M-391",
+      "control_class": "negative_002_y_prev_not_032",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:R",
+      "symbol": "None",
+      "text": "+405-845-686-740-793-003-233-805-002-861-533-717+",
+      "match_score": 13,
+      "local_image_hit_count": 3,
+      "first_image": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\032_002_861_suffix_split\\M391_A_cisi_india_n131.png"
+    },
+    {
+      "cisi": "M-714",
+      "control_class": "negative_002_y_prev_not_032",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:S",
+      "symbol": "Bull1:W",
+      "text": "+740-585-017-033-705-233-798-803-002-861-603+",
+      "match_score": 13,
+      "local_image_hit_count": 3,
+      "first_image": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\032_002_861_suffix_split\\M714_A_cisi_pakistan_n079.png"
+    },
+    {
+      "cisi": "C-4",
+      "control_class": "negative_002_y_prev_not_032",
+      "site": "Chanhu-daro",
+      "type": "SEAL:S",
+      "symbol": "Bull1:L",
+      "text": "+520-235-803-002-817+",
+      "match_score": 13,
+      "local_image_hit_count": 2,
+      "first_image": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\m1206_034_cohesion_gate\\derived\\C004.png"
+    }
+  ]
+}

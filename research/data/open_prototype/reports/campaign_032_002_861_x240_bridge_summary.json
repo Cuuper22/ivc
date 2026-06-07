@@ -1,0 +1,124 @@
+{
+  "date": "2026-05-29",
+  "strict_rows_scanned": 4011,
+  "x240_rows": 95,
+  "x240_distinct_x_signs": 28,
+  "post_002_861_rows": 144,
+  "post_002_861_non_bare_rows": 31,
+  "post_002_861_distinct_initials": 23,
+  "bridge_candidates": [
+    {
+      "sign": "603",
+      "any_occurrences": "7",
+      "x240_rows": "3",
+      "x240_register_cells": "1",
+      "x240_source_cells": "2",
+      "x240_formula_families": "1",
+      "x240_frame_counts": "740_X_240:3",
+      "exact_740_x_240_060_692_rows": "3",
+      "post_002_861_tail_initial_rows": "3",
+      "post_002_861_tail_register_cells": "3",
+      "post_002_861_tail_families": "1",
+      "bridge_candidate": "true",
+      "x240_examples": "H-1138 +740-603-240-060-692+;H-1846 +740-603-240-060-692+;H-1137 +740-603-240-060-692+",
+      "post_861_examples": "M-240 +520-240-220-032-002-861-603+;M-714 +740-585-017-033-705-233-798-803-002-861-603+;M-1273 +740-055-002-861-603+",
+      "x240_register_counts": "Harappa|TAB:B|None|rectangular:3",
+      "post_861_register_counts": "Mohenjo-daro|SEAL:S|Gaur|square:1;Mohenjo-daro|SEAL:S|Bull1:W|square:1;Mohenjo-daro|SEAL:R|None|rectangular:1"
+    },
+    {
+      "sign": "000",
+      "any_occurrences": "810",
+      "x240_rows": "2",
+      "x240_register_cells": "2",
+      "x240_source_cells": "2",
+      "x240_formula_families": "2",
+      "x240_frame_counts": "000_X_240:1;740_X_240:1",
+      "exact_740_x_240_060_692_rows": "0",
+      "post_002_861_tail_initial_rows": "1",
+      "post_002_861_tail_register_cells": "1",
+      "post_002_861_tail_families": "1",
+      "bridge_candidate": "true",
+      "x240_examples": "M-477 +840-000-000-240+;M-1231 +740-000-240+",
+      "post_861_examples": "Ad-8 +740-440-503-002-861-000+",
+      "x240_register_counts": "Mohenjo-daro|TAB:B|Mult|twisted rectangular:1;Mohenjo-daro|SEAL:S|None|square:1",
+      "post_861_register_counts": "Allahdino|MISC|Elep|square:1"
+    }
+  ],
+  "decision": {
+    "status": "603_survives_as_only_non_background_bridge_candidate_inside_larger_x240_class",
+    "raw_bridge_signs": [
+      "603",
+      "000"
+    ],
+    "non_background_bridge_signs": [
+      "603"
+    ],
+    "603_row": {
+      "sign": "603",
+      "any_occurrences": "7",
+      "x240_rows": "3",
+      "x240_register_cells": "1",
+      "x240_source_cells": "2",
+      "x240_formula_families": "1",
+      "x240_frame_counts": "740_X_240:3",
+      "exact_740_x_240_060_692_rows": "3",
+      "post_002_861_tail_initial_rows": "3",
+      "post_002_861_tail_register_cells": "3",
+      "post_002_861_tail_families": "1",
+      "bridge_candidate": "true",
+      "x240_examples": "H-1138 +740-603-240-060-692+;H-1846 +740-603-240-060-692+;H-1137 +740-603-240-060-692+",
+      "post_861_examples": "M-240 +520-240-220-032-002-861-603+;M-714 +740-585-017-033-705-233-798-803-002-861-603+;M-1273 +740-055-002-861-603+",
+      "x240_register_counts": "Harappa|TAB:B|None|rectangular:3",
+      "post_861_register_counts": "Mohenjo-daro|SEAL:S|Gaur|square:1;Mohenjo-daro|SEAL:S|Bull1:W|square:1;Mohenjo-daro|SEAL:R|None|rectangular:1"
+    },
+    "636_642_controls": [
+      {
+        "sign": "636",
+        "any_occurrences": "15",
+        "x240_rows": "15",
+        "x240_register_cells": "9",
+        "x240_source_cells": "10",
+        "x240_formula_families": "7",
+        "x240_frame_counts": "740_X_240:12;690_X_240:3",
+        "exact_740_x_240_060_692_rows": "2",
+        "post_002_861_tail_initial_rows": "0",
+        "post_002_861_tail_register_cells": "0",
+        "post_002_861_tail_families": "0",
+        "bridge_candidate": "false",
+        "x240_examples": "H-1308 +740-690-636-240+;H-298 +400-740-636-240+;H-301 +400-740-636-240-031-032-171+;H-360 +740-636-240-060-692+;H-823 +740-636-240-060-692+;H-894 +400-740-636-240+;H-905 +400-740-636-240-031-032-171+;H-919 +740-636-240+",
+        "post_861_examples": "",
+        "x240_register_counts": "Harappa|TAB:I|None|rectangular:7;Harappa|TAB:I|Bult|prism:1;Harappa|TAB:B|None|rectangular:1;Harappa|TAB:I|None|rectangular-round:1;Harappa|TAB:I|None|rectangular-rounded:1;Harappa|TAB:I|Bult|cuboid:1;Mohenjo-daro|SEAL:S|Gaur|square:1;Mohenjo-daro|SEAL:S|Bull1:W|square:1;Mohenjo-daro|SEAL:S|Bull1:J|square:1",
+        "post_861_register_counts": ""
+      },
+      {
+        "sign": "642",
+        "any_occurrences": "7",
+        "x240_rows": "7",
+        "x240_register_cells": "4",
+        "x240_source_cells": "5",
+        "x240_formula_families": "5",
+        "x240_frame_counts": "740_X_240:5;690_X_240:1;000_X_240:1",
+        "exact_740_x_240_060_692_rows": "2",
+        "post_002_861_tail_initial_rows": "0",
+        "post_002_861_tail_register_cells": "0",
+        "post_002_861_tail_families": "0",
+        "bridge_candidate": "false",
+        "x240_examples": "H-1845 +740-642-240-060-692+;H-206 +740-642-240-204-705-621+;H-237 +740-642-240-060-692+;H-350 +740-690-642-240+;H-821 +740-642-240-001-692+;H-822 +740-642-240-001-692+;M-941 +000-642-240-031-002-861+",
+        "post_861_examples": "",
+        "x240_register_counts": "Harappa|TAB:B|None|fish:3;Harappa|TAB:B|None|rectangular:2;Harappa|TAB:I|Fish|prism:1;Mohenjo-daro|SEAL:S|Bull1:S|square:1",
+        "post_861_register_counts": ""
+      }
+    ],
+    "accepted": [
+      "Raw bridge behavior is limited to 603 and 000; 000 is broad background/control material with 810 occurrences, so it is not a peer lexical/control competitor.",
+      "603 is the only low-frequency non-background X-before-240 sign that also appears as a post-002-861 tail initial in this strict layer.",
+      "Within the local 603/636/642 slot family, 636 and 642 remain X-before-240 controls while 603 bridges into post-002-861.",
+      "The next linguistic object is the X-before-240 class with 603 as the primary bridge candidate and 000 as the background control."
+    ],
+    "rejected": [
+      "Absolute uniqueness for 603 is false if 000 is counted naively.",
+      "A 603-only decipherment hypothesis is too narrow unless it explains why 636 and 642 stay inside X-before-240 while 603 can occur after 002-861.",
+      "No phonetic value, language identity, or translation follows from this bridge result."
+    ]
+  }
+}

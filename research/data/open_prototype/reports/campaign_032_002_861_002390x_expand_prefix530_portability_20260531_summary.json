@@ -1,0 +1,36 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "expand_prefix530_portability",
+  "rows": {
+    "raw": 5679,
+    "canonical_numeric_sequences": 3503,
+    "exact_740205032002_prefix_rows": 2,
+    "all_032002_rows": 47,
+    "governed_530_rows": 4,
+    "governed_530_direct_shadow_rows": 1,
+    "direct_002390741_shadow_rows": 0
+  },
+  "head_counts": {
+    "exact_740205032002": "252:1;390:1",
+    "all_032002": "820:10;861:10;817:7;000:4;390:2;<END>:1;142:1;144:1;168:1;252:1;300:1;368:1;415:1;454:1;690:1;717:1;880:1;892:1;900:1"
+  },
+  "bets": [
+    {
+      "bet_id": "EXPAND_3335_SHARED_PREFIX_ALTERNATION",
+      "tier": "candidate_edge"
+    },
+    {
+      "bet_id": "EXPAND_032002_HEAD_SWITCHBOARD",
+      "tier": "wild_shot"
+    },
+    {
+      "bet_id": "EXPAND_530_PORTABLE_LINKER_WITH_OPTIONAL_WARNING",
+      "tier": "candidate"
+    },
+    {
+      "bet_id": "EXPAND_H773_530_NOT_OPTIONAL_BEFORE_741",
+      "tier": "candidate_edge"
+    }
+  ]
+}

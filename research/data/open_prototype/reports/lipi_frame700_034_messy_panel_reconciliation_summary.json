@@ -1,0 +1,34 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "lipi_frame700_034_messy_panel_reconciliation",
+  "source_scope": "manual close-read of IA CISI page images for the messy H-771/H-893/H-925/H-983/H-353 source-gate objects",
+  "input_objects": 5,
+  "messy_reconciliation_rows": 5,
+  "objects_meeting_clean_H930_H789_standard": 0,
+  "visible_photo_or_side_label_count_exceeds_local_side_count": 5,
+  "variant_or_extra_side_failures": 5,
+  "single_B_short_candidate_visible": 2,
+  "multiple_B_candidates_visible": 3,
+  "duplicate_locator_pairs_reconciled_as_same_visual_page": 1,
+  "clean_standard_counts": {
+    "0": 5
+  },
+  "failure_mode_counts": {
+    "base_AB_plus_numbered_variant_AB": 1,
+    "extra_C_side_plus_bis_ter_variants": 1,
+    "high_copy_variant_pressure_on_shared_control": 1,
+    "multiple_A_photographs_plus_B": 1,
+    "three_source_panels_for_two_local_sides": 1
+  },
+  "decision_counts": {
+    "failed_clean_standard_extra_C_and_B_variants": 1,
+    "failed_clean_standard_numbered_variant_blocks_strict_local_target": 1,
+    "failed_clean_standard_shared_control_variant_soup": 1,
+    "failed_clean_standard_source_three_panels": 1,
+    "partial_short_candidate_visible_but_failed_clean_two_panel_standard": 1
+  },
+  "accepted_decipherment_claims": 0,
+  "upgraded_evidence": "None of the five messy objects is upgraded to clean source-control status.",
+  "negative_result": "Every checked object fails because the source page exposes extra photo labels, extra side categories, unresolved numbered labels, or same-side bis/ter/quater photographs where the local packet has two rows.",
+  "immediate_research_consequence": "H-771, H-893, H-925, H-983, and H-353 cannot inherit the H-930/H-789 calibration upgrade. The 034 residue remains live but source-unvalidated for these lanes."
+}

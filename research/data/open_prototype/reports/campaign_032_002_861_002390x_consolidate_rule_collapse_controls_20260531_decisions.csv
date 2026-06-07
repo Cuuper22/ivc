@@ -1,0 +1,7 @@
+checked_date,rule_id,action,next_status,consequence,next_destructive_test
+2026-05-31,NULL_000,rank_up_within_candidate,survives_collapse_control,"Rule becomes the strongest current parser component, still below acceptance.",Attack frame-proximal null with pre-frame terminal 000 or source-bound payload tails.
+2026-05-31,TERMINAL_095,keep_with_warning,keep_candidate_but_source_gate,Rule remains live but cannot carry the parser without source or broader controls.,Attack 095 with source-bound continuations and non-390 heads.
+2026-05-31,TERMINAL_705,keep_with_warning,keep_candidate_but_source_gate,Rule remains live but cannot carry the parser without source or broader controls.,Attack 705 with source-bound M-1825/4237.1 continuation or wrong-object binding.
+2026-05-31,OPEN_530,keep_with_warning,keep_candidate_but_source_gate,Rule remains live but cannot carry the parser without source or broader controls.,Attack 530 with complement count on H-773 and other 530 rows.
+2026-05-31,OPEN_125,keep_with_warning,keep_candidate_but_source_gate,Rule remains live but cannot carry the parser without source or broader controls.,"Attack 125 with same-head tail inconsistency, especially 610 not followed by 032."
+2026-05-31,EXCEPTION_HOOKS,demote,demote_to_destructive_hooks,Rule cannot be a core parser component in this consolidation window.,Attack exception hooks with 3335.1 source/order and M-70 terminality.

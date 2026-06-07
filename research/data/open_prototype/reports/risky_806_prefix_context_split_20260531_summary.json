@@ -1,0 +1,79 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_806_prefix_context_split_20260531",
+  "tier": "candidate",
+  "bet": "Inside the 806-series construction, 154/155/(rare 100) and 158 are not interchangeable variants. They split by context: 154/155/100 predicts a seal/reverse/no-icon lane, while 158 predicts a TAB:B and often phytographic lane. If true, the prefix before 806 carries semantic or administrative register load.",
+  "counts": {
+    "total_prefix_806_rows": 32,
+    "seal_lane_154_155_100": {
+      "n": 19,
+      "seal_rows": 17,
+      "tablet_b_rows": 2,
+      "phyt_icon_rows": 0,
+      "by_type": {
+        "SEAL:R": 15,
+        "SEAL:S": 2,
+        "TAB:B": 2
+      },
+      "by_symbol": {
+        "None": 16,
+        "Bull1:W": 2,
+        "Mult": 1
+      }
+    },
+    "tablet_phyt_lane_158": {
+      "n": 13,
+      "seal_rows": 1,
+      "tablet_b_rows": 12,
+      "phyt_icon_rows": 7,
+      "by_type": {
+        "TAB:B": 12,
+        "SEAL:S": 1
+      },
+      "by_symbol": {
+        "Phyt": 7,
+        "None": 3,
+        "-": 1,
+        "Bull1:W": 1,
+        "Othr": 1
+      }
+    }
+  },
+  "contrast_tests": {
+    "seal_lane_vs_158_for_seal_type": {
+      "table": {
+        "seal_lane_seal": 17,
+        "seal_lane_non_seal": 2,
+        "lane158_seal": 1,
+        "lane158_non_seal": 12
+      },
+      "fisher_right_tail": 0.000004755686672792613
+    },
+    "lane158_vs_seal_lane_for_tab_b": {
+      "table": {
+        "lane158_tab_b": 12,
+        "lane158_non_tab_b": 1,
+        "seal_lane_tab_b": 2,
+        "seal_lane_non_tab_b": 17
+      },
+      "fisher_right_tail": 0.000004755686672792604
+    },
+    "lane158_vs_seal_lane_for_phyt_icon": {
+      "table": {
+        "lane158_phyt": 7,
+        "lane158_non_phyt": 6,
+        "seal_lane_phyt": 0,
+        "seal_lane_non_phyt": 19
+      },
+      "fisher_right_tail": 0.000509825732295144
+    }
+  },
+  "interpretation": "This is a sign-function/context bet, not a sound or translation. It predicts that new source-visible 154/155/100-806 rows should mostly be seal-lane rows, while new 158-806 rows should mostly be TAB:B/phyt-lane rows.",
+  "demoters": [
+    "If source-family collapse reduces the 158 TAB:B/Phyt side to one repeated artifact family, demote.",
+    "If new 158-806 seal/reverse rows or new 154/155-806 TAB:B/phyt rows appear at comparable rates, demote.",
+    "If source-token review shows the 154/158 distinction is a catalog allograph of one sign, convert the claim from semantic split to allographic/context split."
+  ],
+  "decision": "candidate_survives_first_context_split_test"
+}

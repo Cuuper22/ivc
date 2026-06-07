@@ -1,0 +1,39 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "390_provisional_parser_outputs",
+  "parsed_rows": 15,
+  "lanes": {
+    "linker_complement": {
+      "occurrences": 4,
+      "x_values": "125",
+      "tier": "candidate"
+    },
+    "terminal_classifier": {
+      "occurrences": 4,
+      "x_values": "095;705",
+      "tier": "wild shot"
+    },
+    "terminal_or_underpowered_classifier": {
+      "occurrences": 4,
+      "x_values": "072;346;707;140",
+      "tier": "wild shot"
+    },
+    "global_edge_close": {
+      "occurrences": 1,
+      "x_values": "692",
+      "tier": "wild shot"
+    },
+    "mixed_open_tail": {
+      "occurrences": 1,
+      "x_values": "590",
+      "tier": "wild shot"
+    },
+    "open_linker_underpowered": {
+      "occurrences": 1,
+      "x_values": "530",
+      "tier": "wild shot"
+    }
+  },
+  "translation_system_rule": "For 002-390-X, parse 002 as frame, 390 as status/title head, X as closure classifier or linker-complement operator."
+}

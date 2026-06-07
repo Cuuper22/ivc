@@ -1,0 +1,238 @@
+{
+  "run_date_time": "2026-05-31T14:31:43-07:00",
+  "phase": "CONSOLIDATE",
+  "risky_bet": "The source-reclassified rhinoceros packet remains a real 820 terminal packet after duplicate/family hostility, but page-cluster collapse should expose whether it is one catalogue-page artifact.",
+  "tier": "candidate at object level only",
+  "object_level": {
+    "frame_count": 212,
+    "observed": {
+      "total": 5,
+      "hits": 5,
+      "share": 1
+    },
+    "observed_max": {
+      "maxHits": 25,
+      "maxShare": 0.4166666666666667,
+      "maxSymbol": "Bull1:W"
+    },
+    "target_false_positive_rate": 0.00055,
+    "any_symbol_maxstat_false_positive_rate": 0
+  },
+  "mohenjo_object_level": {
+    "frame_count": 154,
+    "observed": {
+      "total": 5,
+      "hits": 5,
+      "share": 1
+    },
+    "observed_max": {
+      "maxHits": 17,
+      "maxShare": 0.4358974358974359,
+      "maxSymbol": "Bull1:W"
+    },
+    "target_false_positive_rate": 0.0002,
+    "any_symbol_maxstat_false_positive_rate": 0
+  },
+  "family_collapsed": {
+    "frame_count": 82,
+    "observed": {
+      "total": 3,
+      "hits": 3,
+      "share": 1
+    },
+    "observed_max": {
+      "maxHits": 7,
+      "maxShare": 0.5384615384615384,
+      "maxSymbol": "Bull1:J"
+    },
+    "target_false_positive_rate": 0.02315,
+    "any_symbol_maxstat_false_positive_rate": 0.0008
+  },
+  "mohenjo_family_collapsed": {
+    "frame_count": 41,
+    "observed": {
+      "total": 3,
+      "hits": 3,
+      "share": 1
+    },
+    "observed_max": {
+      "maxHits": 5,
+      "maxShare": 0.8333333333333334,
+      "maxSymbol": "Bull1:J"
+    },
+    "target_false_positive_rate": 0.02185,
+    "any_symbol_maxstat_false_positive_rate": 0.1255
+  },
+  "page_cluster_collapsed": {
+    "frame_count": 198,
+    "observed": {
+      "total": 2,
+      "hits": 2,
+      "share": 1
+    },
+    "observed_max": {
+      "maxHits": 24,
+      "maxShare": 0.41379310344827586,
+      "maxSymbol": "Bull1:W"
+    },
+    "target_false_positive_rate": 0.0468,
+    "any_symbol_maxstat_false_positive_rate": 0
+  },
+  "source_reclassified_rows": [
+    {
+      "object": "3504.1",
+      "cisi": "M-1137",
+      "site": "Mohenjo-daro",
+      "region": "Lower Indus",
+      "type": "SEAL:S",
+      "metadata_symbol": "NA",
+      "source_catalogue_symbol": "Rhin",
+      "augmented_symbol": "Rhin",
+      "cult": "NA",
+      "material": "Steatite",
+      "shape": "square",
+      "terminal": "820",
+      "predecessor": "904",
+      "text": "+740-904-002-820+",
+      "text_key": "740 904 002 820",
+      "family_key": "Mohenjo-daro|SEAL:S|Rhin|NA|Steatite|square",
+      "page_cluster": "CISI_Pakistan_n160_M1136_M1139_rhinoceros_page"
+    }
+  ],
+  "target_rows": [
+    {
+      "object": "2409.1",
+      "cisi": "M-1911",
+      "site": "Mohenjo-daro",
+      "region": "Lower Indus",
+      "type": "SEAL:S",
+      "metadata_symbol": "Rhin",
+      "source_catalogue_symbol": "Rhin",
+      "augmented_symbol": "Rhin",
+      "cult": "NA",
+      "material": "Steatite",
+      "shape": "square",
+      "terminal": "820",
+      "predecessor": "531",
+      "text": "+621-390-531-002-820+",
+      "text_key": "621 390 531 002 820",
+      "family_key": "Mohenjo-daro|SEAL:S|Rhin|NA|Steatite|square",
+      "page_cluster": "M-1911"
+    },
+    {
+      "object": "3503.1",
+      "cisi": "M-1136",
+      "site": "Mohenjo-daro",
+      "region": "Lower Indus",
+      "type": "SEAL:S",
+      "metadata_symbol": "Rhin",
+      "source_catalogue_symbol": "Rhin",
+      "augmented_symbol": "Rhin",
+      "cult": "Trough",
+      "material": "NA",
+      "shape": "square",
+      "terminal": "820",
+      "predecessor": "240",
+      "text": "]740-717-240-002-820+",
+      "text_key": "740 717 240 002 820",
+      "family_key": "Mohenjo-daro|SEAL:S|Rhin|Trough|NA|square",
+      "page_cluster": "CISI_Pakistan_n160_M1136_M1139_rhinoceros_page"
+    },
+    {
+      "object": "3504.1",
+      "cisi": "M-1137",
+      "site": "Mohenjo-daro",
+      "region": "Lower Indus",
+      "type": "SEAL:S",
+      "metadata_symbol": "NA",
+      "source_catalogue_symbol": "Rhin",
+      "augmented_symbol": "Rhin",
+      "cult": "NA",
+      "material": "Steatite",
+      "shape": "square",
+      "terminal": "820",
+      "predecessor": "904",
+      "text": "+740-904-002-820+",
+      "text_key": "740 904 002 820",
+      "family_key": "Mohenjo-daro|SEAL:S|Rhin|NA|Steatite|square",
+      "page_cluster": "CISI_Pakistan_n160_M1136_M1139_rhinoceros_page"
+    },
+    {
+      "object": "3505.1",
+      "cisi": "M-1138",
+      "site": "Mohenjo-daro",
+      "region": "Lower Indus",
+      "type": "SEAL:S",
+      "metadata_symbol": "Rhin",
+      "source_catalogue_symbol": "Rhin",
+      "augmented_symbol": "Rhin",
+      "cult": "Trough",
+      "material": "Steatite",
+      "shape": "square",
+      "terminal": "820",
+      "predecessor": "017",
+      "text": "+740-585-017-002-820+",
+      "text_key": "740 585 017 002 820",
+      "family_key": "Mohenjo-daro|SEAL:S|Rhin|Trough|Steatite|square",
+      "page_cluster": "CISI_Pakistan_n160_M1136_M1139_rhinoceros_page"
+    },
+    {
+      "object": "3506.1",
+      "cisi": "M-1139",
+      "site": "Mohenjo-daro",
+      "region": "Lower Indus",
+      "type": "SEAL:S",
+      "metadata_symbol": "Rhin",
+      "source_catalogue_symbol": "Rhin",
+      "augmented_symbol": "Rhin",
+      "cult": "NA",
+      "material": "Steatite",
+      "shape": "square",
+      "terminal": "820",
+      "predecessor": "621",
+      "text": "+740-416-621-002-820+",
+      "text_key": "740 416 621 002 820",
+      "family_key": "Mohenjo-daro|SEAL:S|Rhin|NA|Steatite|square",
+      "page_cluster": "CISI_Pakistan_n160_M1136_M1139_rhinoceros_page"
+    }
+  ],
+  "leave_one_out": [
+    {
+      "left_out_object": "2409.1",
+      "left_out_cisi": "M-1911",
+      "kept_total": 4,
+      "kept_hits_820": 4,
+      "survives": true
+    },
+    {
+      "left_out_object": "3503.1",
+      "left_out_cisi": "M-1136",
+      "kept_total": 4,
+      "kept_hits_820": 4,
+      "survives": true
+    },
+    {
+      "left_out_object": "3504.1",
+      "left_out_cisi": "M-1137",
+      "kept_total": 4,
+      "kept_hits_820": 4,
+      "survives": true
+    },
+    {
+      "left_out_object": "3505.1",
+      "left_out_cisi": "M-1138",
+      "kept_total": 4,
+      "kept_hits_820": 4,
+      "survives": true
+    },
+    {
+      "left_out_object": "3506.1",
+      "left_out_cisi": "M-1139",
+      "kept_total": 4,
+      "kept_hits_820": 4,
+      "survives": true
+    }
+  ],
+  "consolidation_decision": "Demote 820/Rhin from promoted packet-level status to object-level candidate. Family collapse rises above the 0.01 bar and page-cluster collapse leaves only two target evidence clusters. Keep the narrower rosette/wheel closure-register bet alive; do not promote it to global semantic meaning.",
+  "next_action": "The next expansion should source-bind either an independent non-n160 rhinoceros 002-820 row or a source-visible 817/861 rhinoceros counterexample; otherwise the packet remains local."
+}

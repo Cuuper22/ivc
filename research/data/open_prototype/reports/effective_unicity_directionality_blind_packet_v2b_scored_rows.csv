@@ -1,0 +1,70 @@
+reviewer,blind_id,cisi,source_view,role,expected_token_count,review_token_count,count_match,boxable_call,label_leak_call,scored_outcome,notes
+reviewer_a,D2_001,M-1320,A_diagnostic_v1_failed,primary_target_recut,5,8,False,yes,no,target_fail,one clear signband
+reviewer_a,D2_002,H-665,cisi_pakistan_n343_label_masked_context,scoring_negative_real,4,0,False,no,yes,real_negative_label_leak_packet_fail,page layout with H-662 label
+reviewer_a,D2_003,H-158,cisi_india_n237_label_masked_context,scoring_negative_real,7,0,False,no,yes,real_negative_label_leak_packet_fail,page layout with partial labels
+reviewer_a,D2_004,M-1310,A_recut_signband,primary_target_recut,7,7,True,yes,no,target_count_boxable_pass,one clear signband
+reviewer_a,D2_005,M-534,cisi_india_n35_label_masked_context,scoring_negative_real,7,0,False,no,no,real_negative_true_negative,blank page edge
+reviewer_a,D2_006,SYN-LEAK-2,synthetic_label_leak_sentinel,synthetic_leak_sentinel_auxiliary,0,0,True,no,yes,synthetic_leak_sentinel_pass,fake leak sentinel text
+reviewer_a,D2_007,M-1523,cisi_pakistan_n253_label_masked_context,scoring_negative_real,7,0,False,no,no,real_negative_true_negative,page layout fragments
+reviewer_a,D2_008,M-567,cisi_india_n34_label_masked_context,scoring_negative_real,5,0,False,no,no,real_negative_true_negative,page edge fragment
+reviewer_a,D2_009,M-525,cisi_pakistan_n40_label_masked_context,scoring_negative_real,8,0,False,no,no,real_negative_true_negative,page layout fragments
+reviewer_a,D2_010,SYN-BLANK-1,synthetic_blank_surface_control,synthetic_blank_auxiliary,0,0,True,no,no,synthetic_blank_pass,diagonal line pattern
+reviewer_a,D2_011,SYN-BLANK-2,synthetic_blank_surface_control,synthetic_blank_auxiliary,0,0,True,no,no,synthetic_blank_pass,diagonal line pattern
+reviewer_a,D2_012,SYN-LEAK-1,synthetic_label_leak_sentinel,synthetic_leak_sentinel_auxiliary,0,0,True,no,yes,synthetic_leak_sentinel_pass,fake leak sentinel text
+reviewer_a,D2_013,M-1458,cisi_pakistan_n234_label_masked_context,scoring_negative_real,5,0,False,no,no,real_negative_true_negative,page layout fragments
+reviewer_a,D2_014,M-376,impression_a_existing_hard_negative,external_stress_control,7,7,True,yes,no,external_stress_hard_false_positive_not_denominator,one cropped signband
+reviewer_a,D2_015,M-527,cisi_india_n167_label_masked_context,scoring_negative_real,5,0,False,no,yes,real_negative_label_leak_packet_fail,page layout with partial ID
+reviewer_a,D2_016,M-1315,cisi_pakistan_n202_label_masked_context,scoring_negative_real,3,0,False,no,yes,real_negative_label_leak_packet_fail,page layout with partial labels
+reviewer_a,D2_017,M-381,panel_existing_stress_negative,external_stress_control,7,7,True,yes,no,external_stress_hard_false_positive_not_denominator,one clear signband
+reviewer_a,D2_018,M-171,cisi_india_n85_label_masked_context,scoring_negative_real,8,0,False,no,yes,real_negative_label_leak_packet_fail,page layout with M-169 labels
+reviewer_a,D2_019,H-654,A_recut_signband,primary_target_recut,4,5,False,yes,no,target_fail,one cropped signband
+reviewer_a,D2_020,M-1273,impression_a_existing_hard_negative,external_stress_control,5,4,False,yes,no,external_stress_true_negative_not_denominator,one clear signband
+reviewer_a,D2_021,M-365,cisi_india_n126_label_masked_context,scoring_negative_real,8,0,False,no,no,real_negative_true_negative,page layout fragments
+reviewer_a,D2_022,M-386,cisi_india_n130_label_masked_context,scoring_negative_real,4,0,False,no,no,real_negative_true_negative,page layout fragments
+reviewer_a,D2_023,M-811,A_diagnostic_v1_failed,primary_target_recut,3,5,False,yes,no,target_fail,one cropped signband
+reviewer_b,D2_001,M-1320,A_diagnostic_v1_failed,primary_target_recut,5,8,False,yes,no,target_fail,single clear signband
+reviewer_b,D2_002,H-665,cisi_pakistan_n343_label_masked_context,scoring_negative_real,4,0,False,no,yes,real_negative_label_leak_packet_fail,catalog page crop; H-662 visible
+reviewer_b,D2_003,H-158,cisi_india_n237_label_masked_context,scoring_negative_real,7,0,False,no,yes,real_negative_label_leak_packet_fail,catalog page layout; object label visible
+reviewer_b,D2_004,M-1310,A_recut_signband,primary_target_recut,7,7,True,yes,no,target_count_boxable_pass,single signband; left edge noisy
+reviewer_b,D2_005,M-534,cisi_india_n35_label_masked_context,scoring_negative_real,7,0,False,no,no,real_negative_true_negative,blank page-edge fragment
+reviewer_b,D2_006,SYN-LEAK-2,synthetic_label_leak_sentinel,synthetic_leak_sentinel_auxiliary,0,0,True,no,yes,synthetic_leak_sentinel_pass,fake direction label visible
+reviewer_b,D2_007,M-1523,cisi_pakistan_n253_label_masked_context,scoring_negative_real,7,0,False,no,no,real_negative_true_negative,page layout with scattered sign fragments
+reviewer_b,D2_008,M-567,cisi_india_n34_label_masked_context,scoring_negative_real,5,0,False,no,no,real_negative_true_negative,blank/sliver fragment
+reviewer_b,D2_009,M-525,cisi_pakistan_n40_label_masked_context,scoring_negative_real,8,0,False,no,no,real_negative_true_negative,page layout/object fragments
+reviewer_b,D2_010,SYN-BLANK-1,synthetic_blank_surface_control,synthetic_blank_auxiliary,0,0,True,no,no,synthetic_blank_pass,diagonal line control
+reviewer_b,D2_011,SYN-BLANK-2,synthetic_blank_surface_control,synthetic_blank_auxiliary,0,0,True,no,no,synthetic_blank_pass,diagonal line control
+reviewer_b,D2_012,SYN-LEAK-1,synthetic_label_leak_sentinel,synthetic_leak_sentinel_auxiliary,0,0,True,no,yes,synthetic_leak_sentinel_pass,fake direction label visible
+reviewer_b,D2_013,M-1458,cisi_pakistan_n234_label_masked_context,scoring_negative_real,5,0,False,no,no,real_negative_true_negative,page layout with multiple seal fragments
+reviewer_b,D2_014,M-376,impression_a_existing_hard_negative,external_stress_control,7,7,True,yes,no,external_stress_hard_false_positive_not_denominator,single signband; right edge clipped
+reviewer_b,D2_015,M-527,cisi_india_n167_label_masked_context,scoring_negative_real,5,0,False,no,yes,real_negative_label_leak_packet_fail,catalog page crop; numeric label visible
+reviewer_b,D2_016,M-1315,cisi_pakistan_n202_label_masked_context,scoring_negative_real,3,0,False,no,yes,real_negative_label_leak_packet_fail,catalog page layout; small label visible
+reviewer_b,D2_017,M-381,panel_existing_stress_negative,external_stress_control,7,8,False,yes,no,external_stress_true_negative_not_denominator,single clear signband
+reviewer_b,D2_018,M-171,cisi_india_n85_label_masked_context,scoring_negative_real,8,0,False,no,yes,real_negative_label_leak_packet_fail,catalog page layout; M-169 labels visible
+reviewer_b,D2_019,H-654,A_recut_signband,primary_target_recut,4,5,False,uncertain,no,target_uncertain,cropped partial signband
+reviewer_b,D2_020,M-1273,impression_a_existing_hard_negative,external_stress_control,5,6,False,yes,no,external_stress_true_negative_not_denominator,single signband with repeated grouped marks
+reviewer_b,D2_021,M-365,cisi_india_n126_label_masked_context,scoring_negative_real,8,0,False,no,no,real_negative_true_negative,page layout with partial sign fragments
+reviewer_b,D2_022,M-386,cisi_india_n130_label_masked_context,scoring_negative_real,4,0,False,no,no,real_negative_true_negative,page layout with multiple fragments
+reviewer_b,D2_023,M-811,A_diagnostic_v1_failed,primary_target_recut,3,6,False,yes,no,target_fail,single close-up signband; edges clipped
+reviewer_c,D2_001,M-1320,A_diagnostic_v1_failed,primary_target_recut,5,7,False,yes,no,target_fail,single clear signband
+reviewer_c,D2_002,H-665,cisi_pakistan_n343_label_masked_context,scoring_negative_real,4,5,False,uncertain,yes,real_negative_label_leak_packet_fail,page crop with H-662 label
+reviewer_c,D2_003,H-158,cisi_india_n237_label_masked_context,scoring_negative_real,7,12,False,no,yes,real_negative_label_leak_packet_fail,page mosaic with label
+reviewer_c,D2_004,M-1310,A_recut_signband,primary_target_recut,7,6,False,yes,no,target_fail,single clear signband
+reviewer_c,D2_005,M-534,cisi_india_n35_label_masked_context,scoring_negative_real,7,0,False,no,no,real_negative_true_negative,blank page edge
+reviewer_c,D2_006,SYN-LEAK-2,synthetic_label_leak_sentinel,synthetic_leak_sentinel_auxiliary,0,0,True,no,yes,synthetic_leak_sentinel_pass,fake leak sentinel
+reviewer_c,D2_007,M-1523,cisi_pakistan_n253_label_masked_context,scoring_negative_real,7,0,False,no,no,real_negative_true_negative,page layout fragment
+reviewer_c,D2_008,M-567,cisi_india_n34_label_masked_context,scoring_negative_real,5,0,False,no,no,real_negative_true_negative,blank page edge
+reviewer_c,D2_009,M-525,cisi_pakistan_n40_label_masked_context,scoring_negative_real,8,1,False,uncertain,no,real_negative_uncertain_target_like_packet_fail,partial page fragment
+reviewer_c,D2_010,SYN-BLANK-1,synthetic_blank_surface_control,synthetic_blank_auxiliary,0,0,True,no,no,synthetic_blank_pass,diagonal line control
+reviewer_c,D2_011,SYN-BLANK-2,synthetic_blank_surface_control,synthetic_blank_auxiliary,0,0,True,no,no,synthetic_blank_pass,diagonal line control
+reviewer_c,D2_012,SYN-LEAK-1,synthetic_label_leak_sentinel,synthetic_leak_sentinel_auxiliary,0,0,True,no,yes,synthetic_leak_sentinel_pass,fake leak sentinel
+reviewer_c,D2_013,M-1458,cisi_pakistan_n234_label_masked_context,scoring_negative_real,5,0,False,no,no,real_negative_true_negative,page layout fragments
+reviewer_c,D2_014,M-376,impression_a_existing_hard_negative,external_stress_control,7,7,True,yes,no,external_stress_hard_false_positive_not_denominator,single clear signband
+reviewer_c,D2_015,M-527,cisi_india_n167_label_masked_context,scoring_negative_real,5,0,False,no,yes,real_negative_label_leak_packet_fail,page crop with visible label
+reviewer_c,D2_016,M-1315,cisi_pakistan_n202_label_masked_context,scoring_negative_real,3,0,False,no,no,real_negative_true_negative,page layout fragments
+reviewer_c,D2_017,M-381,panel_existing_stress_negative,external_stress_control,7,6,False,yes,no,external_stress_true_negative_not_denominator,single clear signband
+reviewer_c,D2_018,M-171,cisi_india_n85_label_masked_context,scoring_negative_real,8,10,False,no,yes,real_negative_label_leak_packet_fail,page mosaic with M-169 labels
+reviewer_c,D2_019,H-654,A_recut_signband,primary_target_recut,4,5,False,uncertain,no,target_uncertain,cropped signband segment
+reviewer_c,D2_020,M-1273,impression_a_existing_hard_negative,external_stress_control,5,5,True,yes,no,external_stress_hard_false_positive_not_denominator,single clear signband
+reviewer_c,D2_021,M-365,cisi_india_n126_label_masked_context,scoring_negative_real,8,4,False,uncertain,no,real_negative_uncertain_target_like_packet_fail,multiple partial fragments
+reviewer_c,D2_022,M-386,cisi_india_n130_label_masked_context,scoring_negative_real,4,0,False,no,no,real_negative_true_negative,page layout fragments
+reviewer_c,D2_023,M-811,A_diagnostic_v1_failed,primary_target_recut,3,6,False,uncertain,no,target_uncertain,cropped signband segment

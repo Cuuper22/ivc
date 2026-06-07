@@ -1,0 +1,79 @@
+{
+  "source": "H-2218 through H-2239 side-order confound probe",
+  "checked_at": "2026-05-24",
+  "input": "data/open_prototype/reports/lipi_h2218_h2239_fig4_mapping.csv",
+  "source_rows": 22,
+  "canonical_a_b_rows": 20,
+  "coarse_signature_counts": {
+    "A": 13,
+    "B_side_swap": 7,
+    "variant": 2
+  },
+  "canonical_signature_counts": {
+    "A": 13,
+    "B": 7
+  },
+  "manufacturing_group_counts": {
+    "group_1": 6,
+    "group_2": 9,
+    "group_3": 7
+  },
+  "canonical_counts_by_group": {
+    "group_1": {
+      "A": 4,
+      "B": 2
+    },
+    "group_2": {
+      "A": 6,
+      "B": 3
+    },
+    "group_3": {
+      "A": 3,
+      "B": 2
+    }
+  },
+  "fig4_sequence_by_group": {
+    "group_1": "B_side_swap A A B_side_swap A A",
+    "group_2": "A B_side_swap A A B_side_swap B_side_swap A A A",
+    "group_3": "variant variant B_side_swap B_side_swap A A A"
+  },
+  "tests": {
+    "canonical_group_distribution": {
+      "statistic": 0.07326,
+      "adjacent_pair_count": null,
+      "exact_p_ge_observed": 1,
+      "permutation_space": 77520
+    },
+    "canonical_fig4_bb_adjacency": {
+      "statistic": 2,
+      "adjacent_pair_count": 18,
+      "exact_p_ge_observed": 0.683243,
+      "permutation_space": 77520
+    },
+    "canonical_within_group_bb_adjacency": {
+      "statistic": 2,
+      "adjacent_pair_count": 17,
+      "exact_p_ge_observed": 0.641447,
+      "permutation_space": 77520
+    },
+    "canonical_within_group_count_conditioned_bb_adjacency": {
+      "statistic": 2,
+      "adjacent_pair_count": 17,
+      "exact_p_ge_observed": 0.438889,
+      "permutation_space": 12600
+    },
+    "coarse_signature_within_group_blockiness": {
+      "statistic": 10,
+      "adjacent_pair_count": 19,
+      "exact_p_ge_observed": 0.173416,
+      "permutation_space": 264600
+    }
+  },
+  "key_observation": "The canonical A/B side-order split is spread across all three manufacturing groups, and the visible Fig. 4 same-label blocks are not strong under exact order nulls. This weakens manufacturing-group and published-sequence explanations, while still keeping source order as a validation layer rather than evidence for side function or meaning.",
+  "interpretation_boundary": "This is a manufacturing-group and Fig. 4 sequence-order confound probe only. It accepts no physical side function, numerical value, metrological reading, sign meaning, phonetic value, language identity, or translation.",
+  "outputs": [
+    "data/open_prototype/reports/lipi_h2218_h2239_side_order_confound.csv",
+    "data/open_prototype/reports/lipi_h2218_h2239_side_order_confound_tests.csv",
+    "data/open_prototype/reports/lipi_h2218_h2239_side_order_confound_summary.json"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "unclassified_family_bets",
+  "rows": {
+    "unclassified_rows": 231,
+    "distinct_unclassified_x": 115,
+    "top_unclassified_x": [
+      "000:27",
+      "031:8",
+      "455:8",
+      "032:7",
+      "350:7",
+      "575:6"
+    ]
+  },
+  "bets": [
+    {
+      "bet_id": "EXPAND_X000_NULL_OR_ZERO_COMPLEMENT_CLASS",
+      "tier": "candidate"
+    },
+    {
+      "bet_id": "EXPAND_X031_TERMINAL_CLASS_CANDIDATE",
+      "tier": "wild_shot"
+    },
+    {
+      "bet_id": "EXPAND_X455_OPEN_OPERATOR_CANDIDATE",
+      "tier": "wild_shot"
+    },
+    {
+      "bet_id": "EXPAND_X032_NOT_CLASS_BUT_ROUTE_MARKER",
+      "tier": "wild_shot"
+    },
+    {
+      "bet_id": "EXPAND_X350_SCOPE_FORMULA_BAIT",
+      "tier": "wild_shot"
+    }
+  ]
+}

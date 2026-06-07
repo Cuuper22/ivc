@@ -1,0 +1,17 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "530_complement_class_stress",
+  "rows": {
+    "raw": 5679,
+    "canonical_numeric_sequences": 3503,
+    "governed_frames": 272,
+    "target_530_one_complement_rows": 4
+  },
+  "complement_signs": "000;741;820;904",
+  "complement_classifications": "000:branch_terminal_class;741:branch_terminal_class;820:branch_terminal_class;904:head_terminal_class",
+  "closure_like_complements": 4,
+  "branch_terminal_complements": 3,
+  "branch_terminal_class_background_rate": 0.45098039215686275,
+  "decisions": "V3_530_SELECTS_CLOSURE_LIKE_COMPLEMENTS_20260531:candidate_closure_like_complement_class",
+  "caveat": "`904` is closure-like by head behavior (`002-904-346` terminal), not by branch behavior; that makes the complement-class bet narrower than the one-complement bet."
+}

@@ -1,0 +1,519 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "candidate_id": "risky_terminal_governor_leave_block_stress_20260531",
+  "tier": "candidate_stress_table",
+  "bet": "The terminal-governor model should not collapse when the skeptic removes Mohenjo-daro SEAL:S or other high-risk site/type blocks.",
+  "source": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\lipi\\metadata_filtered.csv",
+  "collapse_key": [
+    "edge",
+    "next2",
+    "text"
+  ],
+  "panels": [
+    {
+      "leave_block": "NONE",
+      "removed_rows": 0,
+      "target_edges": [
+        {
+          "edge": "002-817",
+          "text_families": 96,
+          "terminal_families": 93,
+          "terminal_share": 0.96875,
+          "sites": 10,
+          "types": 9
+        },
+        {
+          "edge": "002-820",
+          "text_families": 72,
+          "terminal_families": 67,
+          "terminal_share": 0.9305555555555556,
+          "sites": 7,
+          "types": 6
+        },
+        {
+          "edge": "002-861",
+          "text_families": 120,
+          "terminal_families": 96,
+          "terminal_share": 0.8,
+          "sites": 8,
+          "types": 9
+        },
+        {
+          "edge": "060-920",
+          "text_families": 51,
+          "terminal_families": 50,
+          "terminal_share": 0.9803921568627451,
+          "sites": 9,
+          "types": 7
+        },
+        {
+          "edge": "060-550",
+          "text_families": 23,
+          "terminal_families": 22,
+          "terminal_share": 0.9565217391304348,
+          "sites": 4,
+          "types": 6
+        },
+        {
+          "edge": "060-820",
+          "text_families": 23,
+          "terminal_families": 23,
+          "terminal_share": 1,
+          "sites": 5,
+          "types": 4
+        },
+        {
+          "edge": "060-692",
+          "text_families": 32,
+          "terminal_families": 27,
+          "terminal_share": 0.84375,
+          "sites": 5,
+          "types": 4
+        }
+      ],
+      "strict_survivors_min20_share085": [
+        "002-817",
+        "002-820",
+        "060-920",
+        "060-550",
+        "060-820"
+      ],
+      "near_survivors_min20_share075": [
+        "002-861",
+        "060-692"
+      ]
+    },
+    {
+      "leave_block": "Mohenjo-daro|SEAL:S",
+      "removed_rows": 852,
+      "target_edges": [
+        {
+          "edge": "002-817",
+          "text_families": 49,
+          "terminal_families": 48,
+          "terminal_share": 0.9795918367346939,
+          "sites": 10,
+          "types": 9
+        },
+        {
+          "edge": "002-820",
+          "text_families": 37,
+          "terminal_families": 36,
+          "terminal_share": 0.972972972972973,
+          "sites": 7,
+          "types": 6
+        },
+        {
+          "edge": "002-861",
+          "text_families": 57,
+          "terminal_families": 44,
+          "terminal_share": 0.7719298245614035,
+          "sites": 8,
+          "types": 9
+        },
+        {
+          "edge": "060-920",
+          "text_families": 26,
+          "terminal_families": 25,
+          "terminal_share": 0.9615384615384616,
+          "sites": 9,
+          "types": 7
+        },
+        {
+          "edge": "060-550",
+          "text_families": 14,
+          "terminal_families": 14,
+          "terminal_share": 1,
+          "sites": 4,
+          "types": 6
+        },
+        {
+          "edge": "060-820",
+          "text_families": 8,
+          "terminal_families": 8,
+          "terminal_share": 1,
+          "sites": 5,
+          "types": 4
+        },
+        {
+          "edge": "060-692",
+          "text_families": 14,
+          "terminal_families": 14,
+          "terminal_share": 1,
+          "sites": 4,
+          "types": 4
+        }
+      ],
+      "strict_survivors_min20_share085": [
+        "002-817",
+        "002-820",
+        "060-920"
+      ],
+      "near_survivors_min20_share075": [
+        "002-861"
+      ]
+    },
+    {
+      "leave_block": "Harappa|SEAL:S",
+      "removed_rows": 206,
+      "target_edges": [
+        {
+          "edge": "002-817",
+          "text_families": 84,
+          "terminal_families": 82,
+          "terminal_share": 0.9761904761904762,
+          "sites": 10,
+          "types": 9
+        },
+        {
+          "edge": "002-820",
+          "text_families": 67,
+          "terminal_families": 62,
+          "terminal_share": 0.9253731343283582,
+          "sites": 7,
+          "types": 6
+        },
+        {
+          "edge": "002-861",
+          "text_families": 110,
+          "terminal_families": 88,
+          "terminal_share": 0.8,
+          "sites": 8,
+          "types": 9
+        },
+        {
+          "edge": "060-920",
+          "text_families": 47,
+          "terminal_families": 46,
+          "terminal_share": 0.9787234042553191,
+          "sites": 9,
+          "types": 7
+        },
+        {
+          "edge": "060-550",
+          "text_families": 20,
+          "terminal_families": 19,
+          "terminal_share": 0.95,
+          "sites": 4,
+          "types": 6
+        },
+        {
+          "edge": "060-820",
+          "text_families": 23,
+          "terminal_families": 23,
+          "terminal_share": 1,
+          "sites": 5,
+          "types": 4
+        },
+        {
+          "edge": "060-692",
+          "text_families": 29,
+          "terminal_families": 24,
+          "terminal_share": 0.8275862068965517,
+          "sites": 5,
+          "types": 4
+        }
+      ],
+      "strict_survivors_min20_share085": [
+        "002-817",
+        "002-820",
+        "060-920",
+        "060-550",
+        "060-820"
+      ],
+      "near_survivors_min20_share075": [
+        "002-861",
+        "060-692"
+      ]
+    },
+    {
+      "leave_block": "all|SEAL:S",
+      "removed_rows": 1310,
+      "target_edges": [
+        {
+          "edge": "002-817",
+          "text_families": 27,
+          "terminal_families": 27,
+          "terminal_share": 1,
+          "sites": 5,
+          "types": 8
+        },
+        {
+          "edge": "002-820",
+          "text_families": 24,
+          "terminal_families": 24,
+          "terminal_share": 1,
+          "sites": 5,
+          "types": 5
+        },
+        {
+          "edge": "002-861",
+          "text_families": 34,
+          "terminal_families": 26,
+          "terminal_share": 0.7647058823529411,
+          "sites": 6,
+          "types": 8
+        },
+        {
+          "edge": "060-920",
+          "text_families": 11,
+          "terminal_families": 11,
+          "terminal_share": 1,
+          "sites": 3,
+          "types": 6
+        },
+        {
+          "edge": "060-550",
+          "text_families": 10,
+          "terminal_families": 10,
+          "terminal_share": 1,
+          "sites": 3,
+          "types": 5
+        },
+        {
+          "edge": "060-820",
+          "text_families": 5,
+          "terminal_families": 5,
+          "terminal_share": 1,
+          "sites": 3,
+          "types": 3
+        },
+        {
+          "edge": "060-692",
+          "text_families": 9,
+          "terminal_families": 9,
+          "terminal_share": 1,
+          "sites": 2,
+          "types": 3
+        }
+      ],
+      "strict_survivors_min20_share085": [
+        "002-817",
+        "002-820"
+      ],
+      "near_survivors_min20_share075": [
+        "002-861"
+      ]
+    },
+    {
+      "leave_block": "Mohenjo-daro|SEAL:R",
+      "removed_rows": 133,
+      "target_edges": [
+        {
+          "edge": "002-817",
+          "text_families": 89,
+          "terminal_families": 86,
+          "terminal_share": 0.9662921348314607,
+          "sites": 10,
+          "types": 9
+        },
+        {
+          "edge": "002-820",
+          "text_families": 64,
+          "terminal_families": 59,
+          "terminal_share": 0.921875,
+          "sites": 7,
+          "types": 6
+        },
+        {
+          "edge": "002-861",
+          "text_families": 113,
+          "terminal_families": 93,
+          "terminal_share": 0.8230088495575221,
+          "sites": 8,
+          "types": 9
+        },
+        {
+          "edge": "060-920",
+          "text_families": 48,
+          "terminal_families": 47,
+          "terminal_share": 0.9791666666666666,
+          "sites": 9,
+          "types": 7
+        },
+        {
+          "edge": "060-550",
+          "text_families": 21,
+          "terminal_families": 20,
+          "terminal_share": 0.9523809523809523,
+          "sites": 4,
+          "types": 5
+        },
+        {
+          "edge": "060-820",
+          "text_families": 21,
+          "terminal_families": 21,
+          "terminal_share": 1,
+          "sites": 5,
+          "types": 4
+        },
+        {
+          "edge": "060-692",
+          "text_families": 32,
+          "terminal_families": 27,
+          "terminal_share": 0.84375,
+          "sites": 5,
+          "types": 4
+        }
+      ],
+      "strict_survivors_min20_share085": [
+        "002-817",
+        "002-820",
+        "060-920",
+        "060-550",
+        "060-820"
+      ],
+      "near_survivors_min20_share075": [
+        "002-861",
+        "060-692"
+      ]
+    },
+    {
+      "leave_block": "Harappa|TAB",
+      "removed_rows": 1232,
+      "target_edges": [
+        {
+          "edge": "002-817",
+          "text_families": 91,
+          "terminal_families": 88,
+          "terminal_share": 0.967032967032967,
+          "sites": 10,
+          "types": 8
+        },
+        {
+          "edge": "002-820",
+          "text_families": 64,
+          "terminal_families": 59,
+          "terminal_share": 0.921875,
+          "sites": 7,
+          "types": 6
+        },
+        {
+          "edge": "002-861",
+          "text_families": 111,
+          "terminal_families": 88,
+          "terminal_share": 0.7927927927927928,
+          "sites": 8,
+          "types": 8
+        },
+        {
+          "edge": "060-920",
+          "text_families": 48,
+          "terminal_families": 47,
+          "terminal_share": 0.9791666666666666,
+          "sites": 9,
+          "types": 6
+        },
+        {
+          "edge": "060-550",
+          "text_families": 19,
+          "terminal_families": 18,
+          "terminal_share": 0.9473684210526315,
+          "sites": 4,
+          "types": 5
+        },
+        {
+          "edge": "060-820",
+          "text_families": 21,
+          "terminal_families": 21,
+          "terminal_share": 1,
+          "sites": 4,
+          "types": 2
+        },
+        {
+          "edge": "060-692",
+          "text_families": 28,
+          "terminal_families": 23,
+          "terminal_share": 0.8214285714285714,
+          "sites": 5,
+          "types": 2
+        }
+      ],
+      "strict_survivors_min20_share085": [
+        "002-817",
+        "002-820",
+        "060-920",
+        "060-820"
+      ],
+      "near_survivors_min20_share075": [
+        "002-861",
+        "060-692"
+      ]
+    },
+    {
+      "leave_block": "weak_object_identity",
+      "removed_rows": 347,
+      "target_edges": [
+        {
+          "edge": "002-817",
+          "text_families": 94,
+          "terminal_families": 91,
+          "terminal_share": 0.9680851063829787,
+          "sites": 9,
+          "types": 9
+        },
+        {
+          "edge": "002-820",
+          "text_families": 70,
+          "terminal_families": 65,
+          "terminal_share": 0.9285714285714286,
+          "sites": 6,
+          "types": 6
+        },
+        {
+          "edge": "002-861",
+          "text_families": 112,
+          "terminal_families": 88,
+          "terminal_share": 0.7857142857142857,
+          "sites": 6,
+          "types": 9
+        },
+        {
+          "edge": "060-920",
+          "text_families": 48,
+          "terminal_families": 48,
+          "terminal_share": 1,
+          "sites": 7,
+          "types": 7
+        },
+        {
+          "edge": "060-550",
+          "text_families": 21,
+          "terminal_families": 20,
+          "terminal_share": 0.9523809523809523,
+          "sites": 3,
+          "types": 6
+        },
+        {
+          "edge": "060-820",
+          "text_families": 22,
+          "terminal_families": 22,
+          "terminal_share": 1,
+          "sites": 4,
+          "types": 4
+        },
+        {
+          "edge": "060-692",
+          "text_families": 32,
+          "terminal_families": 27,
+          "terminal_share": 0.84375,
+          "sites": 5,
+          "types": 4
+        }
+      ],
+      "strict_survivors_min20_share085": [
+        "002-817",
+        "002-820",
+        "060-920",
+        "060-550",
+        "060-820"
+      ],
+      "near_survivors_min20_share075": [
+        "002-861",
+        "060-692"
+      ]
+    }
+  ],
+  "decision": "core_survives_mohenjo_daro_seal_s_removal_full_shape_support_limited"
+}

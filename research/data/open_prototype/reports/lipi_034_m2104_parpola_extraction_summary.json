@@ -1,0 +1,27 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "lipi_034_m2104_parpola_extraction",
+  "question": "Can Parpola 2019 text no. 12 and named parallels explain the local lipi M-2104 row +151-097-700-034+?",
+  "source_pdf": "https://tuhat.helsinki.fi/ws/portalfiles/portal/129602857/Parpola_A_2019_Inscriptions_incised_on_the_Harappan_bone_rods_Proceedings_of_EASAA_22.pdf",
+  "rendered_visual_check": "tmp/pdfs/parpola_2019_page2-2.png; tmp/pdfs/parpola_2019_fig1_text12_crop3.png",
+  "target": "M-2104",
+  "target_local_text": "+151-097-700-034+",
+  "named_tablet_parallel_texts": "M-478:+400-097-700-004+;M-480:+400-097-700-004+;M-1425:+400-097-700-004+",
+  "main_extraction": "M-2104 +151-097-700-034+ aligns structurally with tablet parallels +400-097-700-004+: 151 vs 400 is Parpola sign 1 vs sign 107; 097 is sign 15 candidate; 700-034 vs 700-004 is the UIII vs UIIII pot-count cluster candidate.",
+  "context_row_count": 9,
+  "hypothesis_row_count": 6,
+  "context_status_counts": {
+    "parallel_matches_target_frame_with_count_and_final_sign_swap": 3,
+    "supports_097_as_sign_15_and_151_as_sign_1_if_direction_RL": 2,
+    "supports_final_097_151_under_RL_reading": 1,
+    "target_matches_parpola_prose_under_compound_grouping": 1,
+    "unresolved_conflict_requires_source_check": 2
+  },
+  "accepted_mappings": 0,
+  "accepted_decipherment_claims": 0,
+  "outputs": [
+    "data/open_prototype/reports/lipi_034_m2104_parpola_context_rows.csv",
+    "data/open_prototype/reports/lipi_034_m2104_parpola_mapping_hypotheses.csv",
+    "data/open_prototype/reports/lipi_034_m2104_parpola_extraction_summary.json"
+  ]
+}

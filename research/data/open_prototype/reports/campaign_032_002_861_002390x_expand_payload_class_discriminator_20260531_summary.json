@@ -1,0 +1,32 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "expand_payload_class_discriminator",
+  "rows": {
+    "raw": 5679,
+    "canonical_numeric_sequences": 3503,
+    "exact_740205032002_prefix_rows": 2,
+    "governed_002252_rows": 3,
+    "governed_002390_rows": 15,
+    "chunk_252840_rows": 1,
+    "chunk_390590032_rows": 7
+  },
+  "bets": [
+    {
+      "bet_id": "EXPAND_PAYLOAD_HEAD_CLASS_ALTERNATION",
+      "tier": "candidate_edge"
+    },
+    {
+      "bet_id": "EXPAND_252840_CLOSURE_PAYLOAD",
+      "tier": "too_dirty"
+    },
+    {
+      "bet_id": "EXPAND_390_AS_OPEN_PAYLOAD_HEAD",
+      "tier": "candidate"
+    },
+    {
+      "bet_id": "EXPAND_FORMULA_PAYLOAD_VS_CLOSURE_PAYLOAD",
+      "tier": "wild_shot"
+    }
+  ]
+}

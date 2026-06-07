@@ -1,0 +1,591 @@
+{
+  "date": "2026-05-29",
+  "generated_at_utc": "2026-05-29T08:45:20.239Z",
+  "purpose": "Independent influence and concentration controls for the harsh effective-unicity directionality result.",
+  "source_scope": {
+    "input": "data/open_prototype/reports/lipi_scope_rows.csv",
+    "candidate_filter": "readiness_bucket == lipi_numeric_clean_candidate and parsed token count >= 2",
+    "reconstruction": "exact-collapse, top10 edge removal, one-edit family collapse",
+    "candidate_rows": 2883,
+    "exact_sequence_collapsed_rows": 1798,
+    "top10_edge_removed_exact_rows": 530,
+    "harsh_rows": 365,
+    "top_removed_edge_tokens": [
+      {
+        "token": "740",
+        "count": 639
+      },
+      {
+        "token": "400",
+        "count": 181
+      },
+      {
+        "token": "520",
+        "count": 131
+      },
+      {
+        "token": "820",
+        "count": 120
+      },
+      {
+        "token": "817",
+        "count": 110
+      },
+      {
+        "token": "861",
+        "count": 105
+      },
+      {
+        "token": "390",
+        "count": 74
+      },
+      {
+        "token": "090",
+        "count": 70
+      },
+      {
+        "token": "032",
+        "count": 64
+      },
+      {
+        "token": "920",
+        "count": 59
+      }
+    ]
+  },
+  "method": {
+    "scoring": "Add-alpha leave-one-row-out bigram score of stored order versus reversed order, matching the current directionality comparator family.",
+    "alpha": 0.1,
+    "row_influence": "Remove one harsh row from the scope, recompute aggregate stored-win share and mean stored-minus-reversed score, then rank by absolute delta.",
+    "family_influence": "Remove each site|type|symbol family from the scope, recompute aggregate scores, then rank by absolute delta.",
+    "interpretation_boundary": "This is a concentration diagnostic only. It does not validate source-image direction, semantics, phonetics, or accepted claims."
+  },
+  "baseline_scores": {
+    "all_harsh": {
+      "rows": 365,
+      "tokens": 1725,
+      "unique_tokens": 358,
+      "stored_higher": 307,
+      "reversed_higher": 47,
+      "ties": 11,
+      "stored_win_share": 0.841096,
+      "mean_stored_minus_reversed_per_transition": 1.052098,
+      "median_stored_minus_reversed_per_transition": 1.022315,
+      "total_stored_minus_reversed": 2313.421952
+    },
+    "Mohenjo_daro_only": {
+      "rows": 212,
+      "tokens": 1046,
+      "unique_tokens": 273,
+      "stored_higher": 173,
+      "reversed_higher": 22,
+      "ties": 17,
+      "stored_win_share": 0.816038,
+      "mean_stored_minus_reversed_per_transition": 0.986013,
+      "median_stored_minus_reversed_per_transition": 0.928393,
+      "total_stored_minus_reversed": 1285.950069
+    },
+    "Harappa_only": {
+      "rows": 112,
+      "tokens": 471,
+      "unique_tokens": 181,
+      "stored_higher": 83,
+      "reversed_higher": 16,
+      "ties": 13,
+      "stored_win_share": 0.741071,
+      "mean_stored_minus_reversed_per_transition": 0.653432,
+      "median_stored_minus_reversed_per_transition": 0.686797,
+      "total_stored_minus_reversed": 397.38412
+    },
+    "Mohenjo_daro_and_Harappa_only": {
+      "rows": 324,
+      "tokens": 1517,
+      "unique_tokens": 335,
+      "stored_higher": 274,
+      "reversed_higher": 35,
+      "ties": 15,
+      "stored_win_share": 0.845679,
+      "mean_stored_minus_reversed_per_transition": 1.046123,
+      "median_stored_minus_reversed_per_transition": 1.027718,
+      "total_stored_minus_reversed": 2020.03469
+    }
+  },
+  "concentration": {
+    "all_harsh": {
+      "score": {
+        "rows": 365,
+        "tokens": 1725,
+        "unique_tokens": 358,
+        "stored_higher": 307,
+        "reversed_higher": 47,
+        "ties": 11,
+        "stored_win_share": 0.841096,
+        "mean_stored_minus_reversed_per_transition": 1.052098,
+        "median_stored_minus_reversed_per_transition": 1.022315,
+        "total_stored_minus_reversed": 2313.421952
+      },
+      "row_influence": {
+        "tested_units": 365,
+        "baseline_rows": 365,
+        "top_supportive_delta_stored_win_share": 0.005931,
+        "top_supportive_unit": "?-3",
+        "top_adverse_delta_stored_win_share": -0.010552,
+        "top_adverse_unit": "L-115",
+        "max_absolute_delta_stored_win_share": 0.010552,
+        "max_absolute_delta_mean_diff": 0.017112,
+        "max_absolute_unit": "L-115",
+        "top_5_abs_delta_sum": 0.034276
+      },
+      "family_influence": {
+        "tested_units": 110,
+        "baseline_rows": 365,
+        "top_supportive_delta_stored_win_share": 0.028975,
+        "top_supportive_unit": "Mohenjo-daro|SEAL:R|None",
+        "top_adverse_delta_stored_win_share": -0.00932,
+        "top_adverse_unit": "Lothal|SEAL:R|None",
+        "max_absolute_delta_stored_win_share": 0.028975,
+        "max_absolute_delta_mean_diff": 0.090625,
+        "max_absolute_unit": "Mohenjo-daro|SEAL:R|None",
+        "top_5_abs_delta_sum": 0.069075
+      },
+      "largest_supportive_rows": [
+        {
+          "cisi": "?-3",
+          "site": "Unknown",
+          "type": "SEAL:S",
+          "symbol": "None",
+          "text": "+002-368-590-900+",
+          "delta_stored_win_share": 0.005931,
+          "delta_mean_diff": 0.005092
+        },
+        {
+          "cisi": "H-1706",
+          "site": "Harappa",
+          "type": "SEAL:R",
+          "symbol": "None",
+          "text": "+405-003-002-293-360+",
+          "delta_stored_win_share": 0.005931,
+          "delta_mean_diff": 0.002806
+        },
+        {
+          "cisi": "M-396",
+          "site": "Mohenjo-daro",
+          "type": "SEAL:R",
+          "symbol": "None",
+          "text": "+204-630-233-832-904-794-630-235-060-550+",
+          "delta_stored_win_share": 0.005931,
+          "delta_mean_diff": 0.002251
+        },
+        {
+          "cisi": "M-1688",
+          "site": "Mohenjo-daro",
+          "type": "SEAL:S",
+          "symbol": "Bull1:S",
+          "text": "+125-435-255-002-286-220-031-012-031-455-033-590+",
+          "delta_stored_win_share": 0.005931,
+          "delta_mean_diff": -0.002047
+        },
+        {
+          "cisi": "M-729",
+          "site": "Mohenjo-daro",
+          "type": "SEAL:S",
+          "symbol": "Bull1:I",
+          "text": "+234-415+",
+          "delta_stored_win_share": 0.005931,
+          "delta_mean_diff": 0.001374
+        }
+      ],
+      "largest_supportive_families": [
+        {
+          "family_key": "Mohenjo-daro|SEAL:R|None",
+          "rows_removed": 35,
+          "delta_stored_win_share": 0.028975,
+          "delta_mean_diff": 0.090625
+        },
+        {
+          "family_key": "Harappa|SEAL:R|None",
+          "rows_removed": 23,
+          "delta_stored_win_share": 0.013611,
+          "delta_mean_diff": 0.051551
+        },
+        {
+          "family_key": "Mohenjo-daro|SEAL:S|Bull1:W",
+          "rows_removed": 40,
+          "delta_stored_win_share": 0.010327,
+          "delta_mean_diff": 0.063608
+        },
+        {
+          "family_key": "Mohenjo-daro|SEAL:S|Bull1:I",
+          "rows_removed": 3,
+          "delta_stored_win_share": 0.006842,
+          "delta_mean_diff": 0.006391
+        },
+        {
+          "family_key": "Mohenjo-daro|SEAL:S|Bull1:S",
+          "rows_removed": 15,
+          "delta_stored_win_share": 0.00681,
+          "delta_mean_diff": 0.014733
+        }
+      ]
+    },
+    "Mohenjo_daro_only": {
+      "score": {
+        "rows": 212,
+        "tokens": 1046,
+        "unique_tokens": 273,
+        "stored_higher": 173,
+        "reversed_higher": 22,
+        "ties": 17,
+        "stored_win_share": 0.816038,
+        "mean_stored_minus_reversed_per_transition": 0.986013,
+        "median_stored_minus_reversed_per_transition": 0.928393,
+        "total_stored_minus_reversed": 1285.950069
+      },
+      "row_influence": {
+        "tested_units": 212,
+        "baseline_rows": 212,
+        "top_supportive_delta_stored_win_share": 0.010351,
+        "top_supportive_unit": "M-740",
+        "top_adverse_delta_stored_win_share": -0.013346,
+        "top_adverse_unit": "M-1341",
+        "max_absolute_delta_stored_win_share": 0.013346,
+        "max_absolute_delta_mean_diff": 0.007439,
+        "max_absolute_unit": "M-1341",
+        "top_5_abs_delta_sum": 0.053006
+      },
+      "family_influence": {
+        "tested_units": 50,
+        "baseline_rows": 212,
+        "top_supportive_delta_stored_win_share": 0.025077,
+        "top_supportive_unit": "Mohenjo-daro|SEAL:R|None",
+        "top_adverse_delta_stored_win_share": -0.007772,
+        "top_adverse_unit": "Mohenjo-daro|BNGL|None",
+        "max_absolute_delta_stored_win_share": 0.025077,
+        "max_absolute_delta_mean_diff": 0.140144,
+        "max_absolute_unit": "Mohenjo-daro|SEAL:R|None",
+        "top_5_abs_delta_sum": 0.061725
+      },
+      "largest_supportive_rows": [
+        {
+          "cisi": "M-740",
+          "site": "Mohenjo-daro",
+          "type": "SEAL:S",
+          "symbol": "Bull1:J",
+          "text": "+226-491-742-705-575+",
+          "delta_stored_win_share": 0.010351,
+          "delta_mean_diff": 0.007787
+        },
+        {
+          "cisi": "M-9",
+          "site": "Mohenjo-daro",
+          "type": "SEAL:S",
+          "symbol": "Bull1:W",
+          "text": "+031-311-745+",
+          "delta_stored_win_share": 0.010351,
+          "delta_mean_diff": -0.00154
+        },
+        {
+          "cisi": "M-1822",
+          "site": "Mohenjo-daro",
+          "type": "SEAL:S",
+          "symbol": "Bull1:W",
+          "text": "+031-032-171-745+",
+          "delta_stored_win_share": 0.010351,
+          "delta_mean_diff": -0.001285
+        },
+        {
+          "cisi": "M-1989",
+          "site": "Mohenjo-daro",
+          "type": "SEAL:R",
+          "symbol": "None",
+          "text": "+679-740-575+",
+          "delta_stored_win_share": 0.005611,
+          "delta_mean_diff": 0.015707
+        },
+        {
+          "cisi": "M-393",
+          "site": "Mohenjo-daro",
+          "type": "SEAL:R",
+          "symbol": "None",
+          "text": "+679-740-575-017-240-806-002-540+",
+          "delta_stored_win_share": 0.005611,
+          "delta_mean_diff": 0.015031
+        }
+      ],
+      "largest_supportive_families": [
+        {
+          "family_key": "Mohenjo-daro|SEAL:R|None",
+          "rows_removed": 35,
+          "delta_stored_win_share": 0.025077,
+          "delta_mean_diff": 0.140144
+        },
+        {
+          "family_key": "Mohenjo-daro|SEAL:S|Bull1:J",
+          "rows_removed": 17,
+          "delta_stored_win_share": 0.01091,
+          "delta_mean_diff": 0.049
+        },
+        {
+          "family_key": "Mohenjo-daro|SEAL:S|Gaur",
+          "rows_removed": 11,
+          "delta_stored_win_share": 0.010068,
+          "delta_mean_diff": 0.024106
+        },
+        {
+          "family_key": "Mohenjo-daro|SEAL:S|Bull1:W",
+          "rows_removed": 40,
+          "delta_stored_win_share": 0.007898,
+          "delta_mean_diff": 0.075569
+        },
+        {
+          "family_key": "Mohenjo-daro|TAB:C|Gaur",
+          "rows_removed": 3,
+          "delta_stored_win_share": 0.007425,
+          "delta_mean_diff": 0.0239
+        }
+      ]
+    },
+    "Harappa_only": {
+      "score": {
+        "rows": 112,
+        "tokens": 471,
+        "unique_tokens": 181,
+        "stored_higher": 83,
+        "reversed_higher": 16,
+        "ties": 13,
+        "stored_win_share": 0.741071,
+        "mean_stored_minus_reversed_per_transition": 0.653432,
+        "median_stored_minus_reversed_per_transition": 0.686797,
+        "total_stored_minus_reversed": 397.38412
+      },
+      "row_influence": {
+        "tested_units": 112,
+        "baseline_rows": 112,
+        "top_supportive_delta_stored_win_share": 0.02936,
+        "top_supportive_unit": "H-1767",
+        "top_adverse_delta_stored_win_share": -0.024694,
+        "top_adverse_unit": "H-2127",
+        "max_absolute_delta_stored_win_share": 0.02936,
+        "max_absolute_delta_mean_diff": 0.026853,
+        "max_absolute_unit": "H-1767",
+        "top_5_abs_delta_sum": 0.105775
+      },
+      "family_influence": {
+        "tested_units": 26,
+        "baseline_rows": 112,
+        "top_supportive_delta_stored_win_share": 0.07815,
+        "top_supportive_unit": "Harappa|SEAL:R|None",
+        "top_adverse_delta_stored_win_share": -0.029762,
+        "top_adverse_unit": "Harappa|TAB:I|None",
+        "max_absolute_delta_stored_win_share": 0.07815,
+        "max_absolute_delta_mean_diff": 0.186831,
+        "max_absolute_unit": "Harappa|SEAL:R|None",
+        "top_5_abs_delta_sum": 0.2114
+      },
+      "largest_supportive_rows": [
+        {
+          "cisi": "H-1767",
+          "site": "Harappa",
+          "type": "TAB:B",
+          "symbol": "Zebu",
+          "text": "+617-550-003+",
+          "delta_stored_win_share": 0.02936,
+          "delta_mean_diff": 0.026853
+        },
+        {
+          "cisi": "H-2020",
+          "site": "Harappa",
+          "type": "TAB:B",
+          "symbol": "Gavi",
+          "text": "+690-590-032-220+",
+          "delta_stored_win_share": 0.020351,
+          "delta_mean_diff": 0.005936
+        },
+        {
+          "cisi": "H-1046",
+          "site": "Harappa",
+          "type": "SEAL:S",
+          "symbol": "Bull1:W",
+          "text": "+151-390-590+",
+          "delta_stored_win_share": 0.011342,
+          "delta_mean_diff": 0.02606
+        },
+        {
+          "cisi": "H-1881",
+          "site": "Harappa",
+          "type": "TAB:B",
+          "symbol": "None",
+          "text": "+415-700-033-171+",
+          "delta_stored_win_share": 0.011342,
+          "delta_mean_diff": 0.017303
+        },
+        {
+          "cisi": "H-1951",
+          "site": "Harappa",
+          "type": "TAB:B",
+          "symbol": "Mult",
+          "text": "+617-550-003-790+",
+          "delta_stored_win_share": 0.011342,
+          "delta_mean_diff": 0.017132
+        }
+      ],
+      "largest_supportive_families": [
+        {
+          "family_key": "Harappa|SEAL:R|None",
+          "rows_removed": 23,
+          "delta_stored_win_share": 0.07815,
+          "delta_mean_diff": 0.186831
+        },
+        {
+          "family_key": "Harappa|SEAL:S|Bull1:W",
+          "rows_removed": 19,
+          "delta_stored_win_share": 0.042147,
+          "delta_mean_diff": 0.1538
+        },
+        {
+          "family_key": "Harappa|TAB:B|Gavi",
+          "rows_removed": 2,
+          "delta_stored_win_share": 0.031981,
+          "delta_mean_diff": 0.014582
+        },
+        {
+          "family_key": "Harappa|TAB:B|Zebu",
+          "rows_removed": 1,
+          "delta_stored_win_share": 0.02936,
+          "delta_mean_diff": 0.026853
+        },
+        {
+          "family_key": "Harappa|TAB:B|Mult",
+          "rows_removed": 2,
+          "delta_stored_win_share": 0.013799,
+          "delta_mean_diff": 0.020067
+        }
+      ]
+    },
+    "Mohenjo_daro_and_Harappa_only": {
+      "score": {
+        "rows": 324,
+        "tokens": 1517,
+        "unique_tokens": 335,
+        "stored_higher": 274,
+        "reversed_higher": 35,
+        "ties": 15,
+        "stored_win_share": 0.845679,
+        "mean_stored_minus_reversed_per_transition": 1.046123,
+        "median_stored_minus_reversed_per_transition": 1.027718,
+        "total_stored_minus_reversed": 2020.03469
+      },
+      "row_influence": {
+        "tested_units": 324,
+        "baseline_rows": 324,
+        "top_supportive_delta_stored_win_share": 0.009766,
+        "top_supportive_unit": "H-1706",
+        "top_adverse_delta_stored_win_share": -0.00881,
+        "top_adverse_unit": "H-2127",
+        "max_absolute_delta_stored_win_share": 0.009766,
+        "max_absolute_delta_mean_diff": 0.003471,
+        "max_absolute_unit": "H-1706",
+        "top_5_abs_delta_sum": 0.038586
+      },
+      "family_influence": {
+        "tested_units": 76,
+        "baseline_rows": 324,
+        "top_supportive_delta_stored_win_share": 0.042911,
+        "top_supportive_unit": "Mohenjo-daro|SEAL:R|None",
+        "top_adverse_delta_stored_win_share": -0.005253,
+        "top_adverse_unit": "Mohenjo-daro|BNGL|None",
+        "max_absolute_delta_stored_win_share": 0.042911,
+        "max_absolute_delta_mean_diff": 0.106974,
+        "max_absolute_unit": "Mohenjo-daro|SEAL:R|None",
+        "top_5_abs_delta_sum": 0.088669
+      },
+      "largest_supportive_rows": [
+        {
+          "cisi": "H-1706",
+          "site": "Harappa",
+          "type": "SEAL:R",
+          "symbol": "None",
+          "text": "+405-003-002-293-360+",
+          "delta_stored_win_share": 0.009766,
+          "delta_mean_diff": 0.003471
+        },
+        {
+          "cisi": "M-1989",
+          "site": "Mohenjo-daro",
+          "type": "SEAL:R",
+          "symbol": "None",
+          "text": "+679-740-575+",
+          "delta_stored_win_share": 0.00667,
+          "delta_mean_diff": 0.010422
+        },
+        {
+          "cisi": "M-740",
+          "site": "Mohenjo-daro",
+          "type": "SEAL:S",
+          "symbol": "Bull1:J",
+          "text": "+226-491-742-705-575+",
+          "delta_stored_win_share": 0.00667,
+          "delta_mean_diff": 0.004901
+        },
+        {
+          "cisi": "M-396",
+          "site": "Mohenjo-daro",
+          "type": "SEAL:R",
+          "symbol": "None",
+          "text": "+204-630-233-832-904-794-630-235-060-550+",
+          "delta_stored_win_share": 0.00667,
+          "delta_mean_diff": 0.002555
+        },
+        {
+          "cisi": "M-729",
+          "site": "Mohenjo-daro",
+          "type": "SEAL:S",
+          "symbol": "Bull1:I",
+          "text": "+234-415+",
+          "delta_stored_win_share": 0.00667,
+          "delta_mean_diff": 0.001566
+        }
+      ],
+      "largest_supportive_families": [
+        {
+          "family_key": "Mohenjo-daro|SEAL:R|None",
+          "rows_removed": 35,
+          "delta_stored_win_share": 0.042911,
+          "delta_mean_diff": 0.106974
+        },
+        {
+          "family_key": "Mohenjo-daro|SEAL:S|Bull1:W",
+          "rows_removed": 40,
+          "delta_stored_win_share": 0.014693,
+          "delta_mean_diff": 0.079023
+        },
+        {
+          "family_key": "Harappa|SEAL:R|None",
+          "rows_removed": 23,
+          "delta_stored_win_share": 0.011792,
+          "delta_mean_diff": 0.068704
+        },
+        {
+          "family_key": "Mohenjo-daro|SEAL:S|Bull1:S",
+          "rows_removed": 15,
+          "delta_stored_win_share": 0.010728,
+          "delta_mean_diff": 0.009458
+        },
+        {
+          "family_key": "Mohenjo-daro|SEAL:S|Bull1:J",
+          "rows_removed": 17,
+          "delta_stored_win_share": 0.008545,
+          "delta_mean_diff": 0.032739
+        }
+      ]
+    }
+  },
+  "skeptic_note": "The all-harsh score is not controlled by one row or one site|type|symbol family under this diagnostic. The largest single-family removal changes stored-win share by less than five percentage points, but this remains structural evidence only.",
+  "artifact_files": [
+    "data/open_prototype/tools/effective_unicity_directionality_influence_controls.mjs",
+    "data/open_prototype/reports/effective_unicity_directionality_influence_controls_summary.json",
+    "data/open_prototype/reports/effective_unicity_directionality_influence_rows.csv",
+    "data/open_prototype/reports/effective_unicity_directionality_influence_families.csv",
+    "docs/effective_unicity_directionality_influence_controls.md"
+  ]
+}

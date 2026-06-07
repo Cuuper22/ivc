@@ -1,0 +1,36 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "expand_125_tail_submodes",
+  "rows": {
+    "raw": 5679,
+    "canonical_numeric_sequences": 3503,
+    "governed_002_H_125_rows": 11,
+    "target_002_390_125_rows": 4,
+    "governed_125_632_032_rows": 3,
+    "governed_125_632_032_heads": [
+      "190",
+      "390"
+    ],
+    "governed_125_632_032_non235_rows": 2,
+    "all_125_632_032_occurrences": 4
+  },
+  "bets": [
+    {
+      "bet_id": "EXPAND_125_TWO_SUBMODE_SELECTOR",
+      "tier": "candidate"
+    },
+    {
+      "bet_id": "EXPAND_125632032_PORTABLE_TITLE_TAIL",
+      "tier": "candidate"
+    },
+    {
+      "bet_id": "EXPAND_235_IS_TRIGGER_NOT_WHOLE_EXPLANATION",
+      "tier": "candidate"
+    },
+    {
+      "bet_id": "EXPAND_125_TAILS_ARE_SUBTYPES_NOT_FREE_NAMES",
+      "tier": "wild_shot"
+    }
+  ]
+}

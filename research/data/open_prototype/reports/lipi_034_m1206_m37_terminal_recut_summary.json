@@ -1,0 +1,39 @@
+{
+  "date": "2026-05-26",
+  "artifact": "lipi_034_m1206_m37_terminal_recut_gate",
+  "question": "Can contaminated M-37 terminal crops T004/T005 be recut cleanly enough to promote M-37 as the clean same-site 415 terminal control for the M-1206 034/415 branch?",
+  "contact_sheet": "tmp/m1206_m37_terminal_recut_gate/derived/m37_terminal_recut_contact_sheet.png",
+  "input_manifest": "data/open_prototype/reports/lipi_034_m1206_m37_terminal_recut_inputs.csv",
+  "adjudication": "data/open_prototype/reports/lipi_034_m1206_m37_terminal_recut_adjudication.csv",
+  "preferred_recuts": [
+    "M37_A_terminal_strict_core_from_signband.png",
+    "M37_a_terminal_strict_core_from_full.png"
+  ],
+  "minimal_context_recuts": [
+    "M37_A_terminal_minimal_core_from_signband.png",
+    "M37_a_terminal_minimal_core_from_full.png"
+  ],
+  "decision": {
+    "old_contamination_reduced": true,
+    "m37_promoted_to_clean_isolated_same_site_415_control": true,
+    "m37_status_after_recut": "clean_isolated_same_site_415_control_comb_rake_subform_not_closest_m1206_match",
+    "m37_terminal_profile": "comb/rake with horizontal top bar and central stem",
+    "primary_m37_control": "M37_A_terminal_strict_core_from_signband.png",
+    "m37_is_closest_m1206_match": false,
+    "closest_m1206_vertical_bundle_controls": ["H-938 A", "H-938 A bis"],
+    "contrast_with_h938_h940": "M-37 is a clean same-site comb/rake 415 subform; H-938/H-940 remain vertical-bundle exact-side 415 controls"
+  },
+  "effect_on_allograph_gate": {
+    "h938_h940_remain_clean_controls": true,
+    "m37_remains_pressure_only": false,
+    "m37_promoted_as_same_site_control": true,
+    "local_415_internal_form_variation_pressure": true,
+    "034_equals_415": false,
+    "allograph_status_proven": false,
+    "sign_value": false,
+    "translation": false
+  },
+  "accepted_source_mapping_count": 0,
+  "accepted_sign_value_count": 0,
+  "accepted_translation_count": 0
+}

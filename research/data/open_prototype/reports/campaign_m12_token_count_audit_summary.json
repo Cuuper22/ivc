@@ -1,0 +1,126 @@
+{
+  "date": "2026-05-29",
+  "audit_id": "m12_bg001_token_count_audit_v1",
+  "status": "audit_lead_not_claim",
+  "cisi": "M-12",
+  "catalog_text": "+740-390-590-233-002-368-202-892-371+",
+  "catalog_token_count": 9,
+  "catalog_witnesses": [
+    {
+      "witness_id": "mayig:M-12A",
+      "system_id": "mayig_p",
+      "row_id": "corpus/m001_m099/m012.json",
+      "side_id": "M-12A",
+      "sequence": "P324 P086 P276 P058 P122 P202 P386 P182 P108",
+      "token_count": 9,
+      "direction": "as_encoded",
+      "provenance_tier": "T2_open_wip"
+    },
+    {
+      "witness_id": "lipi:2540.1",
+      "system_id": "lipi_numeric",
+      "row_id": "2540.1",
+      "side_id": "2540.1",
+      "sequence": "740 390 590 233 002 368 202 892 371",
+      "token_count": 9,
+      "direction": "R/L",
+      "provenance_tier": "T3_quarantined_metadata"
+    }
+  ],
+  "source_crops": [
+    {
+      "crop_id": "m12_face_A_panel",
+      "side_label": "M-12 A",
+      "crop_kind": "source_panel",
+      "source_page": "tmp/002_y_branch_gap_public_source_acquisition/pages/M_12_cisi_india_n45_2.jpg",
+      "crop_box_xyxy": "70|2140|1195|3325",
+      "crop_path": "tmp/m12_token_count_audit/m12_face_A_panel_source.png",
+      "enhanced_crop_path": "tmp/m12_token_count_audit/m12_face_A_panel_enhanced_x2.png",
+      "crop_sha256": "eb8da3622a7dfe5ede43b864ccc2b60be5d98b2ca8d5a4f589d66fd967d9c69a",
+      "enhanced_crop_sha256": "b7fb3cf726348ea90e8578774617c65e35531e0b8ad41d52edaa9c8344ddc521",
+      "note": "CISI India leaf n45 lower-left source panel labelled M-12 A."
+    },
+    {
+      "crop_id": "m12_face_A_signband",
+      "side_label": "M-12 A",
+      "crop_kind": "signband_closeup",
+      "source_page": "tmp/002_y_branch_gap_public_source_acquisition/pages/M_12_cisi_india_n45_2.jpg",
+      "crop_box_xyxy": "75|2140|1185|2680",
+      "crop_path": "tmp/m12_token_count_audit/m12_face_A_signband_source.png",
+      "enhanced_crop_path": "tmp/m12_token_count_audit/m12_face_A_signband_enhanced_x2.png",
+      "crop_sha256": "45dc9079242babf9405a3a136cb1674a238ceae01dbf73e267bdd54c3820d27c",
+      "enhanced_crop_sha256": "3995da8927370a4346c23057d553c9c39e8660e0c0159934f4cdcde03e49cf84",
+      "note": "Label-free signband crop from M-12 A."
+    },
+    {
+      "crop_id": "m12_impression_a_panel",
+      "side_label": "M-12 a",
+      "crop_kind": "source_panel",
+      "source_page": "tmp/002_y_branch_gap_public_source_acquisition/pages/M_12_cisi_india_n45_2.jpg",
+      "crop_box_xyxy": "1230|2140|2340|3325",
+      "crop_path": "tmp/m12_token_count_audit/m12_impression_a_panel_source.png",
+      "enhanced_crop_path": "tmp/m12_token_count_audit/m12_impression_a_panel_enhanced_x2.png",
+      "crop_sha256": "baa0db9a1994d5c3c18e7b66dfbbf4bdc7933ee59d4499f6ce27375085ed4e32",
+      "enhanced_crop_sha256": "2bef3cc17f81ed6200a9a72334325776fbb1deba0fef84a152e6f9eeb6f6b9ba",
+      "note": "CISI India leaf n45 lower-right source panel labelled M-12 a."
+    },
+    {
+      "crop_id": "m12_impression_a_signband",
+      "side_label": "M-12 a",
+      "crop_kind": "signband_closeup",
+      "source_page": "tmp/002_y_branch_gap_public_source_acquisition/pages/M_12_cisi_india_n45_2.jpg",
+      "crop_box_xyxy": "1240|2140|2335|2680",
+      "crop_path": "tmp/m12_token_count_audit/m12_impression_a_signband_source.png",
+      "enhanced_crop_path": "tmp/m12_token_count_audit/m12_impression_a_signband_enhanced_x2.png",
+      "crop_sha256": "48aeec79bbd231e082022fa96c925095ad8f1458785a2f1c8c494da8cc34047f",
+      "enhanced_crop_sha256": "f3058070ead1e0b3d2d8d18c112a5c4bb2993f83a12df1fe864be7f8f6958804",
+      "note": "Label-free signband crop from M-12 a; this is the source side used for BG001."
+    }
+  ],
+  "blind_count_profile_summary": {
+    "scoring_negative_rows": 6,
+    "stable_count_mismatch_scoring_negatives": 1,
+    "stable_count_mismatch_scoring_negative_rate": 0.16666666666666666,
+    "stable_mismatch_rows": [
+      {
+        "blind_id": "BG001",
+        "cisi": "M-12",
+        "role_class": "primary_target",
+        "expected_token_count": 9,
+        "reviewed_numeric_counts": [
+          10,
+          10,
+          10
+        ],
+        "all_reviewers_marked_uncertain": true
+      },
+      {
+        "blind_id": "BG009",
+        "cisi": "M-654",
+        "role_class": "scoring_negative",
+        "expected_token_count": 4,
+        "reviewed_numeric_counts": [
+          6,
+          6,
+          6
+        ],
+        "all_reviewers_marked_uncertain": true
+      }
+    ]
+  },
+  "forger_boundary": "A stable blind token-count mismatch has an observed packet false-positive control: BG009/M-654 is a scoring negative with stable 6-versus-4 over-counting. Therefore BG001/M-12 cannot be promoted as a catalog-correction or tokenization claim.",
+  "skeptic_attacks_logged": [
+    "case-insensitive output filename collision in the first ad hoc crop pass; corrected with case-safe names",
+    "same-packet scoring negative BG009 reproduces stable over-counting",
+    "all BG001 reviewers marked the token count uncertain",
+    "M-12 has both Lipi and Mayig catalog witnesses at nine tokens; neither source is source-box proof",
+    "public CISI plate has face/impression relief and animal-head overlap that can create extra visual units"
+  ],
+  "decision": "Keep BG001/M-12 as a source/catalog tokenization audit target. Do not increment any accepted claim count.",
+  "accepted_claims_increment": 0,
+  "outputs": {
+    "observations_csv": "data/open_prototype/reports/campaign_m12_token_count_audit_observations.csv",
+    "summary_json": "data/open_prototype/reports/campaign_m12_token_count_audit_summary.json",
+    "contact_sheet": "tmp/m12_token_count_audit/m12_token_count_audit_contact_sheet.png"
+  }
+}

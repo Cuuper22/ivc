@@ -1,0 +1,102 @@
+{
+  "source": "H-2218 through H-2239 dimension and side-order probe",
+  "input": "data/open_prototype/reports/lipi_h2218_h2239_fig4_mapping.csv",
+  "source_rows": 22,
+  "canonical_signature_rows": 20,
+  "local_signature_counts": {
+    "033_variant": 1,
+    "154_variant": 1,
+    "A": 13,
+    "B_side_swap": 7
+  },
+  "manufacturing_group_counts": {
+    "group_1": 6,
+    "group_2": 9,
+    "group_3": 7
+  },
+  "available_dimensions": {
+    "horizontal_mm_rows": 22,
+    "vertical_mm_rows": 22,
+    "thickness_note": "The local source has zero thickness values for this series, so thickness is excluded from this probe."
+  },
+  "exact_canonical_a_vs_b_tests": [
+    {
+      "metric": "horizontal_mm",
+      "n_a": 13,
+      "mean_a": 10.815385,
+      "n_b": 7,
+      "mean_b": 11.214286,
+      "mean_b_minus_a": 0.398901,
+      "permutation_p_two_sided": 0.506889,
+      "permutation_space": 77520
+    },
+    {
+      "metric": "vertical_mm",
+      "n_a": 13,
+      "mean_a": 6.946154,
+      "n_b": 7,
+      "mean_b": 6.8,
+      "mean_b_minus_a": -0.146154,
+      "permutation_p_two_sided": 0.666035,
+      "permutation_space": 77520
+    },
+    {
+      "metric": "area_mm2",
+      "n_a": 13,
+      "mean_a": 76.007692,
+      "n_b": 7,
+      "mean_b": 76.362857,
+      "mean_b_minus_a": 0.355165,
+      "permutation_p_two_sided": 0.959494,
+      "permutation_space": 77520
+    },
+    {
+      "metric": "aspect_h_over_v",
+      "n_a": 13,
+      "mean_a": 1.557825,
+      "n_b": 7,
+      "mean_b": 1.654008,
+      "mean_b_minus_a": 0.096183,
+      "permutation_p_two_sided": 0.116138,
+      "permutation_space": 77520
+    }
+  ],
+  "strongest_canonical_size_difference": {
+    "metric": "aspect_h_over_v",
+    "permutation_p_two_sided": 0.116138,
+    "mean_b_minus_a": 0.096183
+  },
+  "manufacturing_group_dimension_tests": [
+    {
+      "metric": "horizontal_mm",
+      "observed_f": 6.766736,
+      "permutation_p_ge_observed_f": 0.00875,
+      "iterations": 20000
+    },
+    {
+      "metric": "vertical_mm",
+      "observed_f": 1.315976,
+      "permutation_p_ge_observed_f": 0.28695,
+      "iterations": 20000
+    },
+    {
+      "metric": "area_mm2",
+      "observed_f": 4.074466,
+      "permutation_p_ge_observed_f": 0.03895,
+      "iterations": 20000
+    },
+    {
+      "metric": "aspect_h_over_v",
+      "observed_f": 3.873459,
+      "permutation_p_ge_observed_f": 0.03925,
+      "iterations": 20000
+    }
+  ],
+  "key_observation": "In this 22-object source-anchored series, the A versus side-swap side-order split is not strongly separated by the available horizontal, vertical, area, or aspect measurements.",
+  "interpretation_boundary": "This is a size and manufacturing-control probe only. It accepts no physical side function, numerical value, metrological reading, sign meaning, phonetic value, language identity, or translation.",
+  "outputs": [
+    "data/open_prototype/reports/lipi_h2218_h2239_dimension_side_order.csv",
+    "data/open_prototype/reports/lipi_h2218_h2239_dimension_side_order_class_summary.csv",
+    "data/open_prototype/reports/lipi_h2218_h2239_dimension_side_order_tests.csv"
+  ]
+}

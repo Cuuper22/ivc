@@ -1,0 +1,50 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "lipi_034_m2104_raw_source_alias",
+  "question": "Can M-2104 be moved beyond Parpola 2019 standardized Fig. 1 to a public raw or source-grade image route?",
+  "result": "Positive public route found. M-2104 aligns to the local source hook VS 875CXIV:532, which routes to Marshall no. 532 / Plate CXIV / VS 875 on Harappa's Indus Cylinder Seals page. Harappa's public Plate CXIV reproduction shows no. 532 lower left, but the resolution is still limited for confident sign-level stroke adjudication.",
+  "route_rows": 10,
+  "positive_raw_public_routes": [
+    {
+      "object_alias": "Marshall no. 532 / Pl. CXIV / VS 875",
+      "url": "https://www.harappa.com/sites/default/files/styles/galleryformatter_slide/public/cylinder-seals.jpg",
+      "note": "Public published plate reproduction of Marshall Plate CXIV nos. 529-533; no. 532 is visible lower left."
+    }
+  ],
+  "primary_catalogue_route": {
+    "url": "https://www.harappa.com/node/3576",
+    "catalogue_note": "No. 532 (Pl. CXIV, VS 875), ivory, now 2 inches long by 0.3 inches in diameter, five deeply incised characters, 12 feet below surface, in front of Room 70, House XXVII, VS Area."
+  },
+  "local_target_row": {
+    "cisi": "M-2104",
+    "site": "Mohenjo-daro",
+    "type": "ROD",
+    "material": "Ivory",
+    "direction": "R/L",
+    "class": "VX",
+    "text": "+151-097-700-034+",
+    "source_hook": "VS 875CXIV:532 | -12.0 ft"
+  },
+  "parpola_gate": "Parpola 2019 text no. 12 remains a prior-work baseline, but his Fig. 1 uses standardized signs and explicitly points to CISI photos for actual rod shapes.",
+  "what_changed": "The target side is no longer source-gated to Parpola's standardized drawing only. A public Marshall plate reproduction exists for the likely M-2104 alias, enabling a first raw-image visual check. Higher-resolution source access is still required before accepting token boundaries or mappings.",
+  "active_acquisition_messages": [
+    "gmail:[redacted-msgid]",
+    "gmail:[redacted-msgid]"
+  ],
+  "accepted_source_mappings": 0,
+  "accepted_sign_mappings": 0,
+  "accepted_numbers": 0,
+  "accepted_functions": 0,
+  "accepted_phonetic_values": 0,
+  "accepted_translations": 0,
+  "next_actions": [
+    "Run blind visual segmentation on the no. 532 plate reproduction, treating it as limited-resolution evidence.",
+    "Request or acquire a higher-resolution scan of Marshall 1931 Vol. III Plate CXIV no. 532.",
+    "Inspect CISI 3.1 or source archive data for M-2104 / VS 875 / no. 532 before accepting the 700-034 stroke-count hypothesis."
+  ],
+  "outputs": [
+    "data/open_prototype/reports/lipi_034_m2104_raw_source_alias_routes.csv",
+    "data/open_prototype/reports/lipi_034_m2104_raw_source_alias_summary.json",
+    "docs/lipi_034_m2104_raw_source_alias_route.md"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "campaign": "032_002_y_source_route_probe",
+  "generated_at": "2026-05-26T12:39:29",
+  "rows": 25,
+  "route_summary": [
+    {
+      "route_status": "chanhu_daro_plate_route",
+      "n": 3,
+      "cisis": "C-10;C-60;C-65"
+    },
+    {
+      "route_status": "local_source_reference_route",
+      "n": 11,
+      "cisis": "M-1044;M-1763;M-1788;M-720;M-723;M-91;M-1045;M-1677;M-1737;M-1728;M-240"
+    },
+    {
+      "route_status": "source_route_needed",
+      "n": 2,
+      "cisis": "K-145;H-140"
+    },
+    {
+      "route_status": "source_volume_ocr_hit",
+      "n": 9,
+      "cisis": "H-444;M-375;M-174;M-221;H-597;M-21;M-1385;M-49;M-722"
+    }
+  ],
+  "image_match_policy": "exact cisi token with non-alphanumeric boundaries, hyphen/underscore allowed",
+  "ocr_policy": "exact cisi token boundaries; source OCR counts only unique CISI India/Pakistan files in tmp/cisi_xml; Mahadevan text hits separate"
+}

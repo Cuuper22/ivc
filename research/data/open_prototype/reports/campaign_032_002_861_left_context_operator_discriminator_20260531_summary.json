@@ -1,0 +1,19 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "left_context_operator_discriminator",
+  "rows": {
+    "raw": 5679,
+    "canonical_numeric_sequences": 3503,
+    "governed_frames": 272,
+    "target_002_390_frames": 15
+  },
+  "tag_summary": "final235:13_frames:2_target390:4/13_has125:3/3_p086has125;final032_no235:13_frames:2_target390:0/13_has125:0/2_p086has125;contains032_no235:23_frames:3_target390:1/23_has125:0/3_p086has125;final004:9_frames:2_target390:2/9_has125:1/2_p086has125;contains004:9_frames:2_target390:2/9_has125:1/2_p086has125;other_left:228_frames:8_target390:10/228_has125:1/11_p086has125",
+  "local_conditions": {
+    "final235_p086_all_has_125": true,
+    "final235_closure_has_no_125": true,
+    "final032_target390_has_no_125": true,
+    "contains032_target390_has_no_125": true,
+    "final004_target390_mixed_095_125": true
+  },
+  "decisions": "V10_LEFT_CONTEXT_OPERATORS_20260531:candidate_local_left_context_operator_model"
+}

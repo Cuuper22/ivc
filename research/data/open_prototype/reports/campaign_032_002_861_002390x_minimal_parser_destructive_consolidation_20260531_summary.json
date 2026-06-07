@@ -1,0 +1,31 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "minimal_parser_destructive_consolidation",
+  "rows": {
+    "raw": 5679,
+    "canonical_numeric_sequences": 3503,
+    "governed_frames": 272,
+    "target_002_390_frames": 15
+  },
+  "destructive_failures": {
+    "final235_plus_P086_predicts_125": 0,
+    "global_032_no235_suppresses_125": 1,
+    "local_P086_032_no235_suppresses_125": 0,
+    "target_032_no235_suppresses_125": 0,
+    "target_390_125_must_continue": 0,
+    "target_closed_X_must_be_terminal": 0,
+    "target_390_530_one_complement": 0,
+    "global_390_530_one_complement": 0,
+    "target_390_590_requires_032_tail": 0,
+    "global_390_590_requires_032_tail": 51,
+    "closed_subtypes_same_left_collision": 0
+  },
+  "source_tiers": {
+    "strict": 4,
+    "panel_compatible_not_strict": 1,
+    "permissive_public_panel": 1,
+    "metadata_unbound": 7,
+    "route_or_secondary": 2
+  },
+  "decision": "minimal_parser_survives_as_candidate; global_032_no235_killed; semantics_blocked_below_promotion"
+}

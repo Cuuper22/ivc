@@ -1,0 +1,15 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "x_polarity_cross_head_transfer",
+  "rows": {
+    "raw": 5679,
+    "canonical_numeric_sequences": 3503,
+    "target_branch_frames": 41,
+    "non390_target_branch_frames": 26
+  },
+  "non390_hit_share": 0.7307692307692307,
+  "open_non390_hit_share": 0.6875,
+  "closed_non390_hit_share": 0.8,
+  "decisions": "V2_X_POLARITY_PORTABLE_ACROSS_002_HEADS_20260531:portable_slot_polarity_wild_mixed;V2_002390_HEAD_SPECIFIC_BRANCH_TABLE_20260531:retained_as_local_candidate_not_global",
+  "key_result": "This tests whether `125/530/590` and `072/095/140/346/692/705/707` carry polarity across heads, or whether `390` owns the table."
+}

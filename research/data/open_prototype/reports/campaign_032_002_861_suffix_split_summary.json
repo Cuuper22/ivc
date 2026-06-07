@@ -1,0 +1,67 @@
+{
+  "all_002_861_rows": 119,
+  "all_002_861_terminal": 95,
+  "all_002_861_continuing": 24,
+  "after_032_861_rows": 9,
+  "after_032_861_terminal": 7,
+  "after_032_861_continuing": 2,
+  "raw_all_002_861_rows": 136,
+  "raw_all_002_861_terminal": 106,
+  "raw_all_002_861_continuing": 30,
+  "raw_after_032_861_rows": 10,
+  "raw_after_032_861_terminal": 8,
+  "raw_after_032_861_continuing": 2,
+  "repeated_nonterminal_families_all_002": [
+    {
+      "tail_full": "603",
+      "rows": 3,
+      "examples": "M-240 +520-240-220-032-002-861-603+;M-714 +740-585-017-033-705-233-798-803-002-861-603+;M-1273 +740-055-002-861-603+"
+    },
+    {
+      "tail_full": "533 717",
+      "rows": 2,
+      "examples": "M-376 +740-100-176-002-861-533-717+;M-391 +405-845-686-740-793-003-233-805-002-861-533-717+"
+    }
+  ],
+  "raw_repeated_nonterminal_families_all_002": [
+    {
+      "tail_full": "416",
+      "rows": 6,
+      "examples": "H-2094 +002-861-416+;H-2097 +002-861-416+;H-2095 +002-861-416+;- +002-861-416+;H-2096 +002-861-416+;H-910 +002-861-416+"
+    },
+    {
+      "tail_full": "603",
+      "rows": 3,
+      "examples": "M-240 +520-240-220-032-002-861-603+;M-714 +740-585-017-033-705-233-798-803-002-861-603+;M-1273 +740-055-002-861-603+"
+    },
+    {
+      "tail_full": "533 717",
+      "rows": 2,
+      "examples": "M-376 +740-100-176-002-861-533-717+;M-391 +405-845-686-740-793-003-233-805-002-861-533-717+"
+    },
+    {
+      "tail_full": "698",
+      "rows": 2,
+      "examples": "M-329 +002-861-698+;M-330 +002-861-698+"
+    }
+  ],
+  "key_contrast": [
+    {
+      "scope": "after_032_strict_dedup",
+      "contrast_field": "prefix_last2",
+      "contrast_key": "220 032",
+      "terminal_rows": "4",
+      "continuing_rows": "2",
+      "terminal_examples": "H-444 +241-220-032-002-861+;M-1763 +416-001-565-740-220-032-002-861+;M-723 +740-460-510-235-220-032-002-861+;M-1044 +520-220-032-002-861+",
+      "continuing_examples": "M-91 255 416 +740-100-798-220-032-002-861-255-416+;M-240 603 +520-240-220-032-002-861-603+"
+    }
+  ],
+  "rows_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_suffix_split_rows.csv",
+  "raw_rows_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_suffix_split_raw_rows.csv",
+  "families_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_suffix_split_families.csv",
+  "raw_families_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_suffix_split_raw_families.csv",
+  "contrasts_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_suffix_split_contrasts.csv",
+  "routes_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_suffix_split_source_routes.csv",
+  "crops_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_suffix_split_source_crops.csv",
+  "contact_sheet": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\032_002_861_suffix_split\\032_002_861_suffix_split_source_contact_sheet.png"
+}

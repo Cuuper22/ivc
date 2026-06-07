@@ -1,0 +1,253 @@
+{
+  "generated_at_local": "2026-05-24T16:57:09-07:00",
+  "source_file": "data/open_prototype/reports/mismatch_audit.csv",
+  "eligibility_rule": "status == candidate_for_pre_crosswalk_structure_tests AND lipi_dir == R/L AND flags empty",
+  "eligible_records": 136,
+  "excluded_clean_records": [
+    {
+      "cisi": "M-66",
+      "lipi_dir": "BUS",
+      "flags": ""
+    },
+    {
+      "cisi": "M-137",
+      "lipi_dir": "NR",
+      "flags": ""
+    }
+  ],
+  "aligned_positions": 739,
+  "unique_lipi_signs": 189,
+  "unique_mayig_signs": 160,
+  "lipi_to_mayig_candidate_count": 189,
+  "mayig_to_lipi_candidate_count": 160,
+  "lipi_to_mayig_grade_counts": {
+    "conflicted_positional_candidate": 6,
+    "high_consistency_positional_candidate": 14,
+    "low_consistency_positional_candidate": 27,
+    "medium_consistency_positional_candidate": 21,
+    "sparse_singleton_or_doubleton": 121
+  },
+  "high_consistency_lipi_to_mayig_count": 14,
+  "conflicted_lipi_to_mayig_count": 6,
+  "high_frequency_sample": [
+    {
+      "lipi_sign": "740",
+      "top_mayig_sign": "P324",
+      "candidate_grade": "high_consistency_positional_candidate",
+      "total_aligned_positions": 73,
+      "top_share": 1,
+      "counterexamples": ""
+    },
+    {
+      "lipi_sign": "002",
+      "top_mayig_sign": "P122",
+      "candidate_grade": "high_consistency_positional_candidate",
+      "total_aligned_positions": 60,
+      "top_share": 0.95,
+      "counterexamples": "P145:2;P300:1"
+    },
+    {
+      "lipi_sign": "220",
+      "top_mayig_sign": "P050",
+      "candidate_grade": "medium_consistency_positional_candidate",
+      "total_aligned_positions": 29,
+      "top_share": 0.931034,
+      "counterexamples": "P056:1;P060:1"
+    },
+    {
+      "lipi_sign": "390",
+      "top_mayig_sign": "P086",
+      "candidate_grade": "high_consistency_positional_candidate",
+      "total_aligned_positions": 25,
+      "top_share": 1,
+      "counterexamples": ""
+    },
+    {
+      "lipi_sign": "032",
+      "top_mayig_sign": "P145",
+      "candidate_grade": "high_consistency_positional_candidate",
+      "total_aligned_positions": 21,
+      "top_share": 0.952381,
+      "counterexamples": "P122:1"
+    }
+  ],
+  "top_15_lipi_to_mayig": [
+    {
+      "lipi_sign": "740",
+      "top_mayig_sign": "P324",
+      "candidate_grade": "high_consistency_positional_candidate",
+      "total_aligned_positions": 73,
+      "top_share": 1,
+      "counterexamples": ""
+    },
+    {
+      "lipi_sign": "002",
+      "top_mayig_sign": "P122",
+      "candidate_grade": "high_consistency_positional_candidate",
+      "total_aligned_positions": 60,
+      "top_share": 0.95,
+      "counterexamples": "P145:2;P300:1"
+    },
+    {
+      "lipi_sign": "220",
+      "top_mayig_sign": "P050",
+      "candidate_grade": "medium_consistency_positional_candidate",
+      "total_aligned_positions": 29,
+      "top_share": 0.931034,
+      "counterexamples": "P056:1;P060:1"
+    },
+    {
+      "lipi_sign": "390",
+      "top_mayig_sign": "P086",
+      "candidate_grade": "high_consistency_positional_candidate",
+      "total_aligned_positions": 25,
+      "top_share": 1,
+      "counterexamples": ""
+    },
+    {
+      "lipi_sign": "032",
+      "top_mayig_sign": "P145",
+      "candidate_grade": "high_consistency_positional_candidate",
+      "total_aligned_positions": 21,
+      "top_share": 0.952381,
+      "counterexamples": "P122:1"
+    },
+    {
+      "lipi_sign": "060",
+      "top_mayig_sign": "P120",
+      "candidate_grade": "high_consistency_positional_candidate",
+      "total_aligned_positions": 17,
+      "top_share": 1,
+      "counterexamples": ""
+    },
+    {
+      "lipi_sign": "520",
+      "top_mayig_sign": "P217",
+      "candidate_grade": "high_consistency_positional_candidate",
+      "total_aligned_positions": 15,
+      "top_share": 1,
+      "counterexamples": ""
+    },
+    {
+      "lipi_sign": "240",
+      "top_mayig_sign": "P062",
+      "candidate_grade": "high_consistency_positional_candidate",
+      "total_aligned_positions": 14,
+      "top_share": 1,
+      "counterexamples": ""
+    },
+    {
+      "lipi_sign": "820",
+      "top_mayig_sign": "P378",
+      "candidate_grade": "high_consistency_positional_candidate",
+      "total_aligned_positions": 14,
+      "top_share": 1,
+      "counterexamples": ""
+    },
+    {
+      "lipi_sign": "233",
+      "top_mayig_sign": "P058",
+      "candidate_grade": "high_consistency_positional_candidate",
+      "total_aligned_positions": 13,
+      "top_share": 1,
+      "counterexamples": ""
+    },
+    {
+      "lipi_sign": "235",
+      "top_mayig_sign": "P060",
+      "candidate_grade": "high_consistency_positional_candidate",
+      "total_aligned_positions": 13,
+      "top_share": 1,
+      "counterexamples": ""
+    },
+    {
+      "lipi_sign": "741",
+      "top_mayig_sign": "P325",
+      "candidate_grade": "low_consistency_positional_candidate",
+      "total_aligned_positions": 13,
+      "top_share": 0.769231,
+      "counterexamples": "P324:3"
+    },
+    {
+      "lipi_sign": "817",
+      "top_mayig_sign": "P385",
+      "candidate_grade": "high_consistency_positional_candidate",
+      "total_aligned_positions": 12,
+      "top_share": 1,
+      "counterexamples": ""
+    },
+    {
+      "lipi_sign": "861",
+      "top_mayig_sign": "P385",
+      "candidate_grade": "high_consistency_positional_candidate",
+      "total_aligned_positions": 12,
+      "top_share": 1,
+      "counterexamples": ""
+    },
+    {
+      "lipi_sign": "003",
+      "top_mayig_sign": "P123",
+      "candidate_grade": "high_consistency_positional_candidate",
+      "total_aligned_positions": 10,
+      "top_share": 1,
+      "counterexamples": ""
+    }
+  ],
+  "interpretation_boundary": [
+    "All mappings remain uncertain because the evidence is positional alignment only.",
+    "No exact/allograph/merge/split mapping is accepted without image or authoritative sign-list validation.",
+    "The crosswalk is useful for prioritizing manual review and allograph testing, not for translation."
+  ],
+  "possible_merge_or_allograph_clusters": [
+    {
+      "mayig_sign": "P385",
+      "lipi_candidate_count": 2,
+      "total_aligned_positions": 24.0,
+      "lipi_signs": "817:12:1.000000:high_consistency_positional_candidate;861:12:1.000000:high_consistency_positional_candidate",
+      "strongest_lipi_sign": "817",
+      "strongest_grade": "high_consistency_positional_candidate",
+      "strongest_top_share": "1.000000",
+      "interpretation": "possible_merge_or_allograph_cluster_requires_manual_validation"
+    },
+    {
+      "mayig_sign": "P230",
+      "lipi_candidate_count": 2,
+      "total_aligned_positions": 18.0,
+      "lipi_signs": "798:10:0.600000:conflicted_positional_candidate;550:8:1.000000:medium_consistency_positional_candidate",
+      "strongest_lipi_sign": "798",
+      "strongest_grade": "conflicted_positional_candidate",
+      "strongest_top_share": "0.600000",
+      "interpretation": "possible_merge_or_allograph_cluster_requires_manual_validation"
+    },
+    {
+      "mayig_sign": "P364",
+      "lipi_candidate_count": 2,
+      "total_aligned_positions": 15.0,
+      "lipi_signs": "803:10:0.900000:medium_consistency_positional_candidate;806:5:1.000000:medium_consistency_positional_candidate",
+      "strongest_lipi_sign": "803",
+      "strongest_grade": "medium_consistency_positional_candidate",
+      "strongest_top_share": "0.900000",
+      "interpretation": "possible_merge_or_allograph_cluster_requires_manual_validation"
+    },
+    {
+      "mayig_sign": "P154",
+      "lipi_candidate_count": 2,
+      "total_aligned_positions": 13.0,
+      "lipi_signs": "920:7:0.571429:conflicted_positional_candidate;900:6:0.833333:low_consistency_positional_candidate",
+      "strongest_lipi_sign": "920",
+      "strongest_grade": "conflicted_positional_candidate",
+      "strongest_top_share": "0.571429",
+      "interpretation": "possible_merge_or_allograph_cluster_requires_manual_validation"
+    },
+    {
+      "mayig_sign": "P316",
+      "lipi_candidate_count": 2,
+      "total_aligned_positions": 12.0,
+      "lipi_signs": "705:9:1.000000:medium_consistency_positional_candidate;706:3:1.000000:low_consistency_positional_candidate",
+      "strongest_lipi_sign": "705",
+      "strongest_grade": "medium_consistency_positional_candidate",
+      "strongest_top_share": "1.000000",
+      "interpretation": "possible_merge_or_allograph_cluster_requires_manual_validation"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "candidate_id": "risky_806_nonharappa_bull1w_source_peek_20260531",
+  "tier": "source-compatible candidate support, not accepted",
+  "bet": "If 806 is the stronger member of the 405/806 Bull1:W square-seal subtype candidate, non-Harappa Bull1:W square-seal rows carrying 806 should not vanish under direct source-image inspection.",
+  "source_filter": {
+    "type": "SEAL:S",
+    "shape": "square",
+    "symbol": "Bull1:W",
+    "site_exclusion": "Harappa",
+    "excluded_frame": "740-X-590",
+    "sign": "806"
+  },
+  "support_rows_from_metadata": [
+    {
+      "id": "1997.1",
+      "cisi": "L-19",
+      "site": "Lothal",
+      "condition": "Poor",
+      "complete": "N",
+      "text": "+000-000-000-798-806-000[",
+      "source_status": "local image routed but poor/incomplete; not useful as positive source support"
+    },
+    {
+      "id": "2218.1",
+      "cisi": "M-1683",
+      "site": "Mohenjo-daro",
+      "condition": "Good",
+      "complete": "Y",
+      "text": "+155-806-467-001-692+",
+      "source_status": "no local image route found in checked repo image set"
+    },
+    {
+      "id": "2309.1",
+      "cisi": "M-1784",
+      "site": "Mohenjo-daro",
+      "condition": "Good",
+      "complete": "Y",
+      "text": "+740-923-806+",
+      "source_status": "no local image route found in checked repo image set"
+    },
+    {
+      "id": "2539.1",
+      "cisi": "M-10",
+      "site": "Mohenjo-daro",
+      "condition": "Fair",
+      "complete": "Y",
+      "text": "+405-061-070-032-033-706-235-806-002-267-455+",
+      "image_path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-10_a.jpg",
+      "source_status": "source-visible long row; compatible with cataloged 806 locus, but not a token-box adjudication"
+    },
+    {
+      "id": "2557.1",
+      "cisi": "M-29",
+      "site": "Mohenjo-daro",
+      "condition": "Good",
+      "complete": "Y",
+      "text": "+740-055-240-235-806-002-220-455-503+",
+      "image_path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-29_a.jpg",
+      "source_status": "source-visible; no immediate contradiction to 806-bearing row"
+    },
+    {
+      "id": "2558.1",
+      "cisi": "M-30",
+      "site": "Mohenjo-daro",
+      "condition": "Good",
+      "complete": "Y",
+      "text": "+740-752-017-503-240-235-806+",
+      "image_path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-30_a.jpg",
+      "source_status": "source-visible compact row; strongest checked source-compatible 806 witness"
+    },
+    {
+      "id": "2696.1",
+      "cisi": "M-171",
+      "site": "Mohenjo-daro",
+      "condition": "Fair",
+      "complete": "Y",
+      "text": "+407-061-740-923-233-806-060-692+",
+      "image_path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-171_a.jpg",
+      "source_status": "low-resolution but source-compatible"
+    },
+    {
+      "id": "2698.1",
+      "cisi": "M-173",
+      "site": "Mohenjo-daro",
+      "condition": "Fine",
+      "complete": "Y",
+      "text": "+740-388-900-320-806+",
+      "image_path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-173_a.jpg",
+      "source_status": "source-visible; compatible"
+    },
+    {
+      "id": "3116.1",
+      "cisi": "M-678",
+      "site": "Mohenjo-daro",
+      "condition": "Good",
+      "complete": "Y",
+      "text": "+740-752-006-503-236-806-002-031-502+",
+      "image_path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-678_a.jpg",
+      "source_status": "source-visible long row; compatible"
+    },
+    {
+      "id": "3176.1",
+      "cisi": "M-753",
+      "site": "Mohenjo-daro",
+      "condition": "Good",
+      "complete": "Y",
+      "text": "+520-033-706-806+",
+      "image_path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-753_a.jpg",
+      "source_status": "source-visible compact row; compatible"
+    }
+  ],
+  "decision": "candidate_survives_source_peek_not_source_boxed",
+  "skeptic_note": "This is not a blind source-token adjudication and cannot accept the semantic claim. It does block the immediate demotion that would follow if the non-Harappa 806 rows were catalogue ghosts or visibly mismapped.",
+  "next_test": "Create token boxes for M-30, M-753, M-29, M-173, M-678, and matched non-Bull1:W square-seal controls before any promotion beyond candidate."
+}

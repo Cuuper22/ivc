@@ -1,0 +1,34 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_terminal_governor_damage_source_peek_20260531",
+  "tier": "wild shot",
+  "parent_prediction": "data/open_prototype/reports/risky_terminal_governor_damage_predictions_20260531.json",
+  "bet_tested": "High-priority damaged terminal 002-000 rows may visually resolve to one of the 002 closure set signs: strict 817/820 or leaky 861.",
+  "known_visual_comparators_checked": {
+    "002_817_B_5": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/B-5_a.jpg",
+    "002_861_M_28": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-28_a.jpg",
+    "002_861_M_77": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-77_a.jpg",
+    "820_M_381": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-381_a.jpg",
+    "visual_summary": "861 examples show a diamond/leaf-like terminal; 820 is a spoked rosette/wheel in M-381 and the rhinoceros packet; 817 is also a terminal closure shape but needs cleaner token boxing for reliable separation from 861 in this quick peek."
+  },
+  "damaged_rows_checked": {
+    "M_1107": {
+      "local_source": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-1107_a.jpg",
+      "catalog_text": "+565-740-240-103-002-000+",
+      "peek_result": "Readable object, but terminal area is not clean enough for a confident 817/820/861 assignment from the cached panel."
+    },
+    "H_375": {
+      "local_source": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/H-375_A.jpg",
+      "catalog_text": "]000-220-002-000[",
+      "peek_result": "Scratched pottery/graffiti-like surface; not usable for this quick closure discrimination."
+    },
+    "K_2": {
+      "local_source": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/K-2_a.jpg",
+      "catalog_text": "+740-585-017-002-000+",
+      "peek_result": "Far-right damaged terminal is plausibly a closure member, but cached panel is insufficient for a confident 817/820/861 assignment."
+    }
+  },
+  "decision": "source_peek_does_not_promote_or_kill_damage_predictions",
+  "next_test": "A blind side-by-side token-box packet should compare high-priority 002-000 damaged terminals against known 817, 820, and 861 boxes. Freehand panel viewing is too weak for assignment."
+}

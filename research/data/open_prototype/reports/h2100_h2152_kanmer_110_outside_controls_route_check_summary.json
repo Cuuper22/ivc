@@ -1,0 +1,53 @@
+{
+  "date": "2026-05-26",
+  "question": "Can the outside local 110 controls H-2100, H-2152, and Kanmer 4881.1 be source-routed enough to compare with the H-940/H-2147/H-2148 Parpola branch?",
+  "result": "No source-panel upgrade yet. H-2100 and H-2152 remain route_dark_outside_control after local, exact web, Kenoyer/Meadow 2010, and Kenoyer 2000 checks. Kanmer 4881.1 has a refined bibliographic/source-holder route through the RIHN 2012 Excavation at Kanmer 2005-06--2008-09 volume, but no exact public object panel was found.",
+  "controls": {
+    "H-2100": {
+      "local_row": "817.2 +110[",
+      "local_hook": "H96-3179Figure 19.21",
+      "status": "route_dark_outside_control"
+    },
+    "H-2152": {
+      "local_row": "865.1 +110[",
+      "companion_row": "865.2 ]220-415+",
+      "local_hook": "H97-3327Figure 15.19",
+      "status": "route_dark_outside_control"
+    },
+    "Kanmer 4881.1": {
+      "local_row": "4881.1 +110[",
+      "local_hook": "RIHN-Indus project08- 1285",
+      "status": "bibliographic_route_no_object_panel",
+      "source_holder_route": "RIHN 2012 Excavation at Kanmer 2005-06--2008-09, edited by J. S. Kharakwal, Y. S. Rawat, and Toshiki Osada"
+    }
+  },
+  "downloaded_sources": {
+    "kenoyer_meadow_2010": {
+      "path": "tmp/h2148_h2100_h2152_110_route/kenoyer_meadow_2010_inscribed_objects_harappa.pdf",
+      "sha256": "7a8fea92fbc7a8810ad9d47e5740a83e4896bc46facd1ec6eb7f51c329ecf2d9"
+    },
+    "kenoyer_2000_tiny_steatite": {
+      "path": "tmp/h2148_h2100_h2152_110_route/kenoyer2000_tiny_steatite_seals_harappa.pdf",
+      "sha256": "967ebcb058e5611de4089facba852adac418108adfc36bf793d0588ba0d8b751"
+    },
+    "rihn_2007_indus_report": {
+      "path": "tmp/h2148_h2100_h2152_110_route/rihn_2007_indus_houkokusyo.pdf",
+      "sha256": "b887ae54ebda5a0ffa39c3065c9845b61a9a576c50053b36a201a90c73448433",
+      "source": "http://archives-contents.chikyu.ac.jp/1070/2007IndusHoukokusyo.pdf",
+      "result": "Kanmer/project context and pendant rows found; no exact 1285, 08-1285, or project08-1285 object route found."
+    }
+  },
+  "accepted_claims": {
+    "outside_controls_required": "H-2100, H-2152, and Kanmer 4881.1 remain mandatory outside controls for any local 110 crosswalk.",
+    "no_public_panel_upgrade": "None of the three outside controls has a checked public source panel yet."
+  },
+  "not_accepted": [
+    "outside controls prove or disprove Parpola sign no. 41",
+    "population-level local 110 identity",
+    "phonetic value",
+    "sign meaning",
+    "language identification",
+    "translation"
+  ],
+  "next_gate": "Acquire HARP/CISI/source-holder panels for H96-3179Figure 19.21 and H97-3327Figure 15.19; inspect the RIHN 2012 Kanmer volume or archive table behind RIHN-Indus project08-1285; then run a blind comparison against H-940 B, H-2147, and H-2148."
+}

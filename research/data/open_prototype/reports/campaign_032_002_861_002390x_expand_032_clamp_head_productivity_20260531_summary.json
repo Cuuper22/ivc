@@ -1,0 +1,34 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "expand_032_clamp_head_productivity",
+  "rows": {
+    "raw": 5679,
+    "canonical_numeric_sequences": 3503,
+    "target_occurrences": 376,
+    "clamp_heads_032_rows": 27,
+    "clamp_heads_032_terminal_share": "0.851852",
+    "clamp_heads_non032_rows": 334,
+    "clamp_heads_non032_terminal_share": "0.883234",
+    "non032_002861_rows": 136,
+    "preceded032_002390_rows": 2
+  },
+  "bets": [
+    {
+      "bet_id": "EXPAND_032_CLAMPS_CLOSED_HEAD_PRODUCTIVITY",
+      "tier": "wild_shot"
+    },
+    {
+      "bet_id": "EXPAND_861_PRODUCTIVE_HEAD_SUPPRESSED_BY_032",
+      "tier": "wild_shot"
+    },
+    {
+      "bet_id": "EXPAND_861_416_AND_603_ARE_REAL_DEPENDENT_TAILS",
+      "tier": "wild_shot"
+    },
+    {
+      "bet_id": "EXPAND_032_CLAMP_IS_HEAD_CONDITIONED_NOT_GLOBAL",
+      "tier": "candidate"
+    }
+  ]
+}

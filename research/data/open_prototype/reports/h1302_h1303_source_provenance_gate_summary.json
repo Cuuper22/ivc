@@ -1,0 +1,45 @@
+{
+  "source": "H-1302/H-1303 source provenance gate",
+  "checked_at": "2026-05-26",
+  "artifacts": [
+    "H-1302",
+    "H-1303"
+  ],
+  "related_article": {
+    "title": "A method of identifying allographs in undeciphered scripts and its application to the Indus Valley Script",
+    "authors": "Daggumati and Revesz",
+    "published": "2021-02-17",
+    "url": "https://www.nature.com/articles/s41599-021-00713-0",
+    "pdf_url": "https://www.nature.com/articles/s41599-021-00713-0.pdf",
+    "local_pdf": "tmp/h1302_h1303_direction_prior_work/daggumati_revesz_2021_allographs_nature_article.pdf",
+    "local_pdf_sha256": "1061899319d35477b8e4cf395993d837540f575222084b99587904a262752e0c",
+    "local_html": "tmp/h1302_h1303_direction_prior_work/daggumati_revesz_2021_allographs_nature_article.html",
+    "local_html_sha256": "0b304077ed06d3268edb11e4dbe6872438f7f5ff3fc8b871d1b0eb16faa8d1ee",
+    "bad_initial_pdf": "tmp/h1302_h1303_direction_prior_work/daggumati_revesz_2021_allographs.pdf",
+    "bad_initial_pdf_status": "blocked/challenge HTML, not source evidence"
+  },
+  "local_rows": {
+    "H-1302": [
+      "4073.1 L/R +400-740-176+",
+      "4073.2 R/L +700-033+"
+    ],
+    "H-1303": [
+      "4077.1 L/R +400-740-176+",
+      "4077.2 R/L +700-033+"
+    ]
+  },
+  "key_observation": "The published article claim is real and source-located: it names H-1302, H-1303, and H-1822 as mirrored-writing / ICIT-correction cases after CISI comparison. That upgrades the prior-work lead, not the local sign evidence.",
+  "decision": "Treat H-1302/H-1303 as correction-risk acquisition priorities. Do not treat the Nature claim, Blogger images, or local lipi rows as source validation for +700-033+, side order, direction, sign value, or translation.",
+  "derived_visual_context": [
+    "tmp/h1302_h1303_direction_prior_work/derived/pdf_pages/nature_page06_h1302_h1303_paragraph_crop.png",
+    "tmp/h1302_h1303_direction_prior_work/derived/pdf_pages/nature_page-06.png"
+  ],
+  "next_required_evidence": [
+    "CISI/HARP source image panels for all catalog sides of H-1302 and H-1303",
+    "object-specific side labels and direction basis for the two local rows on each object",
+    "ICIT/Wells/Fuls row or note showing exactly what was corrected and what sign IDs were involved",
+    "controlled crosswalk between the article inline glyphs and local numeric lipi signs",
+    "caption/source binding for any Blogger object-panel candidates before using them as evidence"
+  ],
+  "interpretation_boundary": "Accepts no local sign correction, sign segmentation, side order, physical side function, numerical/metrological value, sign meaning, phonetic value, language identity, or translation."
+}

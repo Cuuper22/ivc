@@ -1,0 +1,91 @@
+{
+  "date": "2026-05-31",
+  "run_id": "replacement_20260531",
+  "input": "data/open_prototype/reports/campaign_032_002_861_002390x_source_normalized_contrast_rows.csv",
+  "input_sha256": "f796bc663f906c83e114d207914e5b81702adb528aeedbbd191d613658f0773f",
+  "rows": 15,
+  "iterations_per_null": 50000,
+  "target_branch": "125",
+  "observed_target": {
+    "branch_after_390": "125",
+    "raw_rows": 4,
+    "objects": "M-38 M-119 M-735 Sktd-1",
+    "terminal_rows": 0,
+    "continuation_rows": 4,
+    "strict_source_visible_rows": 2,
+    "strict_source_visible_objects": "M-119 M-735",
+    "permissive_public_rows": 3,
+    "broad_register_cells": 2,
+    "strict_broad_register_cells": 1,
+    "strict_source_convention_cells": 2,
+    "tails": "195 | 632 032 | 632 032 900 563 | 820",
+    "branch_score": 424
+  },
+  "observed_flags": {
+    "target_raw_ge4_strict_ge2_continuation_only": true,
+    "target_raw_ge4_strict_ge2_continuation_only_broad_independent": false,
+    "any_raw_ge4_strict_ge2_continuation_only": true,
+    "any_raw_ge4_strict_ge2_continuation_only_broad_independent": false,
+    "max_raw_rows": 4,
+    "max_strict_source_visible_rows": 2
+  },
+  "null_rows": [
+    {
+      "null_model": "all_rows",
+      "iterations": 50000,
+      "target_event_ge_observed_share": "0.004360",
+      "target_event_broad_independent_ge_observed_share": "0.000000",
+      "discovery_event_ge_observed_share": "0.004360",
+      "discovery_event_broad_independent_ge_observed_share": "0.000000",
+      "max_raw_rows_ge_observed_share": "1.000000",
+      "max_strict_source_visible_rows_ge_observed_share": "0.379220"
+    },
+    {
+      "null_model": "terminal_status",
+      "iterations": 50000,
+      "target_event_ge_observed_share": "0.397360",
+      "target_event_broad_independent_ge_observed_share": "0.000000",
+      "discovery_event_ge_observed_share": "0.397360",
+      "discovery_event_broad_independent_ge_observed_share": "0.000000",
+      "max_raw_rows_ge_observed_share": "1.000000",
+      "max_strict_source_visible_rows_ge_observed_share": "0.431460"
+    },
+    {
+      "null_model": "source_visibility",
+      "iterations": 50000,
+      "target_event_ge_observed_share": "0.017660",
+      "target_event_broad_independent_ge_observed_share": "0.000000",
+      "discovery_event_ge_observed_share": "0.017660",
+      "discovery_event_broad_independent_ge_observed_share": "0.000000",
+      "max_raw_rows_ge_observed_share": "1.000000",
+      "max_strict_source_visible_rows_ge_observed_share": "1.000000"
+    },
+    {
+      "null_model": "site_type",
+      "iterations": 50000,
+      "target_event_ge_observed_share": "0.012460",
+      "target_event_broad_independent_ge_observed_share": "0.000000",
+      "discovery_event_ge_observed_share": "0.012460",
+      "discovery_event_broad_independent_ge_observed_share": "0.000000",
+      "max_raw_rows_ge_observed_share": "1.000000",
+      "max_strict_source_visible_rows_ge_observed_share": "0.409980"
+    },
+    {
+      "null_model": "site_type_terminal",
+      "iterations": 50000,
+      "target_event_ge_observed_share": "1.000000",
+      "target_event_broad_independent_ge_observed_share": "0.000000",
+      "discovery_event_ge_observed_share": "1.000000",
+      "discovery_event_broad_independent_ge_observed_share": "0.000000",
+      "max_raw_rows_ge_observed_share": "1.000000",
+      "max_strict_source_visible_rows_ge_observed_share": "1.000000"
+    }
+  ],
+  "skeptic_boundary": [
+    "The low all-row shuffle FPR is not enough by itself because terminal-preserving and site/type/terminal-preserving nulls are the harsher controls for a continuation-only branch.",
+    "The strict M-119/M-735 target pair shares broad site/type/shape/material register, so broad-register independence is false.",
+    "No sound, meaning, language family, translation, or sign value is inferred."
+  ],
+  "decision": "candidate_live_not_accepted",
+  "accepted_claim_increment": 0
+}

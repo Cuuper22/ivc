@@ -1,0 +1,66 @@
+{
+  "run_date": "2026-05-31",
+  "input": "data/open_prototype/reports/campaign_032_002_861_002390x_full_left_formula_controls_20260531_target_controls.csv",
+  "target_002390_frames": 15,
+  "max_left_context_radius": 8,
+  "branch_split_groups_total": 2,
+  "immediate_predecessor_branch_split_groups": 2,
+  "radius_ge_2_branch_split_groups": 0,
+  "strict_source_visible_branch_split_groups": 0,
+  "branch_split_lanes": [
+    {
+      "radius": 1,
+      "left_suffix": "004",
+      "branches": "095:1; 125:1",
+      "gate": "context_branch_split_non_strict_only",
+      "objects": "H-1993:095-><END>:route_or_metadata_pressure; Sktd-1:125->820:public_panel_downweighted"
+    },
+    {
+      "radius": 1,
+      "left_suffix": "032",
+      "branches": "590:1; 692:1",
+      "gate": "context_branch_split_partly_strict_blocked",
+      "objects": "M-70:692-><END>:strict_visible; -:590->032:metadata_or_blocked"
+    }
+  ],
+  "decisions": [
+    {
+      "decision": "branch_splits_exist_only_at_immediate_predecessor_radius",
+      "evidence": "004->095:1; 125:1:context_branch_split_non_strict_only | 032->590:1; 692:1:context_branch_split_partly_strict_blocked",
+      "result": "2 immediate-predecessor branch-split groups; 0 branch-split groups at radius >= 2",
+      "consequence": "branch alternatives vanish once the left context is widened beyond one sign"
+    },
+    {
+      "decision": "no_strict_source_visible_radius_branch_split",
+      "evidence": "",
+      "result": "0 strict source-visible branch-split groups across all radii",
+      "consequence": "the radius scan preserves the grammar/function promotion block"
+    },
+    {
+      "decision": "004_and_032_remain_the_only_live_branch_split_lanes",
+      "evidence": "004: H-1993:095-><END>:route_or_metadata_pressure; Sktd-1:125->820:public_panel_downweighted | 032: M-70:692-><END>:strict_visible; -:590->032:metadata_or_blocked",
+      "result": "the only branch-split lanes are the already-known 004 and 032 predecessor groups",
+      "consequence": "H-1993/Sktd-1 and M-70/3335.1 remain the decisive matched-predecessor tests"
+    },
+    {
+      "decision": "235_group_is_tail_split_not_branch_split",
+      "evidence": "M-38:125->632 032:metadata_or_blocked; M-735:125->195:strict_visible",
+      "result": "same_context_same_branch_tail_split",
+      "consequence": "M-38/M-735 cannot prove branch alternation because both choose branch 125"
+    },
+    {
+      "decision": "exact_and_last2_controls_do_not_rescue_branch_paradigm",
+      "evidence": "r2:branch_splits=0; r3:branch_splits=0; r4:branch_splits=0; r5:branch_splits=0; r6:branch_splits=0; r7:branch_splits=0; r8:branch_splits=0",
+      "result": "no radius >= 2 contains a branch-split group",
+      "consequence": "full-left anti-template pressure is real, but matched branch paradigms remain absent"
+    }
+  ],
+  "status": "left_context_radius_scan_immediate_splits_source_blocked_no_values",
+  "outputs": {
+    "target_radius_rows": "data/open_prototype/reports/campaign_032_002_861_002390x_left_context_radius_scan_20260531_target_radius_rows.csv",
+    "groups": "data/open_prototype/reports/campaign_032_002_861_002390x_left_context_radius_scan_20260531_groups.csv",
+    "radius_summary": "data/open_prototype/reports/campaign_032_002_861_002390x_left_context_radius_scan_20260531_radius_summary.csv",
+    "decisions": "data/open_prototype/reports/campaign_032_002_861_002390x_left_context_radius_scan_20260531_decisions.csv",
+    "summary": "data/open_prototype/reports/campaign_032_002_861_002390x_left_context_radius_scan_20260531_summary.json"
+  }
+}

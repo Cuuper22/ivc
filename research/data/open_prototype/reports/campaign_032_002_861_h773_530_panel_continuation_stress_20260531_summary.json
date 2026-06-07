@@ -1,0 +1,51 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "h773_530_panel_continuation_stress",
+  "hypothesis_tested": "`530` is an open/continuing branch in the `002-390-X` branch table.",
+  "h773_frame": {
+    "row_id": "1665.1",
+    "object": "H-773",
+    "site": "Harappa",
+    "type": "TAB:B",
+    "symbol": "NA",
+    "cult": "NA",
+    "material": "Faience",
+    "shape": "plano-convex",
+    "prev_before_002": "803",
+    "branch": "530",
+    "branch_class": "open_continue",
+    "tail": "741",
+    "terminal": "false",
+    "hit": "true",
+    "source_status": "route_pressure_panel_compatible_not_strict",
+    "source_bucket": "route_pressure",
+    "exact_sequence": "740 798 803 002 390 530 741",
+    "text": "+740-798-803-002-390-530-741+"
+  },
+  "file_checks": [
+    {
+      "checked_date": "2026-05-31",
+      "role": "source_signband_crop",
+      "path": "tmp/source_route_recheck_20260531/cisi_pakistan_n358_h773_A_signband_tight_w2400.jpg",
+      "exists": "true",
+      "sha256": "68451209E43A37EA1E7E4BAC740E7B27E462120D16FE2C2574A6073644A51BB9",
+      "width": "820",
+      "height": "260"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "role": "token_overlay",
+      "path": "tmp/source_route_recheck_20260531/cisi_pakistan_n358_h773_A_token_box_overlay_caption_w2400.jpg",
+      "exists": "true",
+      "sha256": "4D86987D31F87B4D36BE449121B537D61F65EF38386FB7991F722F573B4A85CF",
+      "width": "820",
+      "height": "355"
+    }
+  ],
+  "decision": "H-773 gains source-panel pressure for the continuation polarity of `530`, because visible source material exists after the 390 position under local R/L order. It remains below strict token evidence because `530`/`741` identities and boundaries are still catalog-mediated.",
+  "confidence_after_test": {
+    "530_open_continue": "candidate_with_panel_continuation_visible_pressure",
+    "H773_strict_token_witness": "not_earned",
+    "002390_branch_table": "candidate_unchanged_but_source_polarity_strengthened"
+  }
+}

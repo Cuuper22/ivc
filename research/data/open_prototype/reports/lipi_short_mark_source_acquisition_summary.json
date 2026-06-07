@@ -1,0 +1,116 @@
+{
+  "source": "17-artifact short-mark source acquisition queue",
+  "checked_at": "2026-05-24",
+  "input_packet": "data/open_prototype/reports/lipi_short_mark_plate_request_packet.csv",
+  "input_public_leads": "data/open_prototype/reports/lipi_short_mark_plate_public_leads.csv",
+  "queue_artifacts": 17,
+  "bucket_counts": {
+    "A_034_contrast_case": 2,
+    "A_direction_note_recheck": 2,
+    "A_double_short_side_case": 1,
+    "A_tab_b_type_control_with_public_image_lead": 1,
+    "B_source_dark_direct_cisi_or_harp": 5,
+    "C_replicate_033_after_case": 6
+  },
+  "public_lead_status_counts": {
+    "candidate_image_plus_published_direction_note": 2,
+    "candidate_public_image_or_post_lead": 1,
+    "no_public_lead_in_checked_sources": 5,
+    "text_only_or_bibliographic_public_lead": 9
+  },
+  "acquisition_buckets": {
+    "A_034_contrast_case": [
+      "H-933",
+      "H-960"
+    ],
+    "A_direction_note_recheck": [
+      "H-1302",
+      "H-1303"
+    ],
+    "A_double_short_side_case": [
+      "H-355"
+    ],
+    "A_tab_b_type_control_with_public_image_lead": [
+      "H-233"
+    ],
+    "B_source_dark_direct_cisi_or_harp": [
+      "H-1304",
+      "H-1344",
+      "H-1345",
+      "H-1346",
+      "H-1347"
+    ],
+    "C_replicate_033_after_case": [
+      "H-309",
+      "H-316",
+      "H-353",
+      "H-357",
+      "H-935",
+      "H-978"
+    ]
+  },
+  "public_lead_status_artifacts": {
+    "candidate_image_plus_published_direction_note": [
+      "H-1302",
+      "H-1303"
+    ],
+    "candidate_public_image_or_post_lead": [
+      "H-233"
+    ],
+    "no_public_lead_in_checked_sources": [
+      "H-1304",
+      "H-1344",
+      "H-1345",
+      "H-1346",
+      "H-1347"
+    ],
+    "text_only_or_bibliographic_public_lead": [
+      "H-355",
+      "H-933",
+      "H-960",
+      "H-309",
+      "H-316",
+      "H-353",
+      "H-357",
+      "H-935",
+      "H-978"
+    ]
+  },
+  "first_actions": [
+    {
+      "cisi": "H-1302",
+      "acquisition_bucket": "A_direction_note_recheck",
+      "acquisition_action": "Request plate or source image for H-1302 showing all 2 catalog side rows; verify 2:+700-033+ and +400-740-176+. Cross-check the published direction/corpus-note lead against CISI/HARP image evidence."
+    },
+    {
+      "cisi": "H-1303",
+      "acquisition_bucket": "A_direction_note_recheck",
+      "acquisition_action": "Request plate or source image for H-1303 showing all 2 catalog side rows; verify 2:+700-033+ and +400-740-176+. Cross-check the published direction/corpus-note lead against CISI/HARP image evidence."
+    },
+    {
+      "cisi": "H-355",
+      "acquisition_bucket": "A_double_short_side_case",
+      "acquisition_action": "Request plate or source image for H-355 showing all 3 catalog side rows; verify 2:+700-033+|3:+700-033+ and +400-740-176+. Confirm whether both short rows are distinct physical sides or duplicate/catalog artifacts."
+    },
+    {
+      "cisi": "H-933",
+      "acquisition_bucket": "A_034_contrast_case",
+      "acquisition_action": "Request plate or source image for H-933 showing all 2 catalog side rows; verify 1:+034-700+ and +400-740-176+. Prioritize the 034-before relation because these are the two packet contrast cases."
+    },
+    {
+      "cisi": "H-960",
+      "acquisition_bucket": "A_034_contrast_case",
+      "acquisition_action": "Request plate or source image for H-960 showing all 2 catalog side rows; verify 1:+700-034+ and +400-740-176+. Prioritize the 034-before relation because these are the two packet contrast cases."
+    },
+    {
+      "cisi": "H-233",
+      "acquisition_bucket": "A_tab_b_type_control_with_public_image_lead",
+      "acquisition_action": "Request plate or source image for H-233 showing all 2 catalog side rows; verify 2:+700-033+ and +400-740-176+. Manually inspect the public H-233 slide leads only as acquisition pointers, then verify against a plate-grade source."
+    }
+  ],
+  "key_observation": "The first acquisition queue should start with H-1302/H-1303 direction-note rechecks, H-355 double-short-side clarification, H-933/H-960 034 contrast cases, and H-233 as the TAB:B type-control with public slide leads.",
+  "interpretation_boundary": "This queue is for source acquisition only. It accepts no side relation, physical side function, numerical value, metrological reading, sign meaning, phonetic value, language identity, or translation.",
+  "outputs": [
+    "data/open_prototype/reports/lipi_short_mark_source_acquisition_queue.csv"
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "run_date": "2026-05-31",
+  "campaign": "032-002-861 / 002-390-X",
+  "input_metadata": "data/open_prototype/lipi/metadata_filtered.csv",
+  "metadata_rows": 5679,
+  "focus_signs": [
+    "095",
+    "125",
+    "692",
+    "705"
+  ],
+  "frame_002390_occurrences": 15,
+  "frame_branch_counts": {
+    "125": 4,
+    "140": 1,
+    "346": 1,
+    "530": 1,
+    "590": 1,
+    "692": 1,
+    "705": 2,
+    "707": 1,
+    "095": 2,
+    "072": 1
+  },
+  "focus_sign_summary": {
+    "125": {
+      "sign": "125",
+      "total_occurrences": 59,
+      "after_002390_occurrences": 4,
+      "after_002390_terminal": 0,
+      "after_002390_continuing": 4,
+      "non_frame_occurrences": 55,
+      "non_frame_terminal": 17,
+      "non_frame_continuing": 38,
+      "frame_objects": "M-38;M-119;M-735;Sktd-1",
+      "sites": "Allahdino;Bala-kot;Chanhu-daro;Dholavira;Ganweriwala;Gola Dhoro (Bagasra);Gonur Depe;Harappa;Kalibangan;Lohumjo-daro;Lothal;Mohenjo-daro;Nausharo;Surkotada",
+      "non_frame_terminal_examples": "H-1946;H-50;H-55;H-467;H-894;K-5;Lh-1;M-1668",
+      "non_frame_continuing_examples": "Ad-2;Blk-1;C-74;H-1921;H-1710;H-10;H-11;H-52"
+    },
+    "692": {
+      "sign": "692",
+      "total_occurrences": 77,
+      "after_002390_occurrences": 1,
+      "after_002390_terminal": 1,
+      "after_002390_continuing": 0,
+      "non_frame_occurrences": 76,
+      "non_frame_terminal": 58,
+      "non_frame_continuing": 18,
+      "frame_objects": "M-70",
+      "sites": "Banawali;Chanhu-daro;Harappa;Lothal;Mohenjo-daro;Nausharo",
+      "non_frame_terminal_examples": "B-21;C-75;H-1138;H-423;H-1400;-:201.1;H-1113;H-1900",
+      "non_frame_continuing_examples": "H-1726;H-7;H-363;H-800;H-918;L-5;M-682;M-21"
+    },
+    "705": {
+      "sign": "705",
+      "total_occurrences": 219,
+      "after_002390_occurrences": 2,
+      "after_002390_terminal": 2,
+      "after_002390_continuing": 0,
+      "non_frame_occurrences": 217,
+      "non_frame_terminal": 57,
+      "non_frame_continuing": 160,
+      "frame_objects": "M-1825;-:4237.1",
+      "sites": "Allahdino;Chandigarh;Chanhu-daro;Dholavira;Harappa;Juna Khatiya;Kalibangan;Lakhanjo-daro;Lothal;Mohenjo-daro;Rahman-deri;Rakhigarhi;Tell Umma",
+      "non_frame_terminal_examples": "Ch-1;Ch-2;-:134.1;H-1502;H-1166;-:336.1;H-1878;H-2049",
+      "non_frame_continuing_examples": "Ad-3;C-88;C-64;C-7;C-9;C-35;-:234.1;H-1156"
+    },
+    "095": {
+      "sign": "095",
+      "total_occurrences": 30,
+      "after_002390_occurrences": 2,
+      "after_002390_terminal": 2,
+      "after_002390_continuing": 0,
+      "non_frame_occurrences": 28,
+      "non_frame_terminal": 6,
+      "non_frame_continuing": 22,
+      "frame_objects": "H-1993;M-71",
+      "sites": "Chanhu-daro;Dholavira;Harappa;Kot-Diji;Lothal;Mohenjo-daro;Sibri;Tepe Yahya",
+      "non_frame_terminal_examples": "M-592;Kd-9;L-1;M-403;M-1052;Sb-4",
+      "non_frame_continuing_examples": "C-40;H-225;H-660;M-2053;H-2584;M-519;M-520;M-547"
+    }
+  },
+  "exception_counts_total": {
+    "continuing_non125_after_002390": 2,
+    "nonframe_continuing_095_692_705": 200,
+    "nonframe_terminal_125": 17
+  },
+  "exception_rows_written_with_cap_per_test": 69,
+  "source_recheck_decisions": [
+    {
+      "gate": "dholavira_4237_1_vs_bisht_page18_item10",
+      "target": "-:4237.1",
+      "local_metadata": "site=Dholavira; area=Lower Town-; period=5; dims=27.6x0x7.1 - 11.2; text=+151-032-388-002-390-705+",
+      "source_route": "Bisht 2015 public OCR mirror, Dholavira individual seals and catalogue rows",
+      "result": "route_splits: page18_item10_acc_2118_has_5_signs_and_is_a_visual_lookalike; ZA-12:2/8758/dimension_cluster_matches_metadata_but_is_not_bound_to_the_image",
+      "consequence": "do_not_count_Dholavira_705_as_strict_source_bound; require AccNo_8758_or_ZA-12_2_image_caption_bridge"
+    },
+    {
+      "gate": "m1825_bj25710_705_route",
+      "target": "M-1825 / BJ25710",
+      "local_metadata": "site=Mohenjo-daro; type=SEAL:S; excavation=BJ25710; dims=17.5x18.5x0; text=+157-031-002-390-705+",
+      "source_route": "Internet Archive CISI Pakistan djvu txt/xml plus public web search and Bhaskar S1 catalogue",
+      "result": "IA_Pakistan_OCR_XML_no_clean_M-1825_or_BJ25710_hit; visible plate map reaches about M-1658; Bhaskar S1 confirms F2 unicorn object only",
+      "consequence": "do_not_count_M-1825_as_strict_705_source_bound; require object-to-image-to-sign-band bridge"
+    },
+    {
+      "gate": "harappa_h1993_icit744",
+      "target": "H-1993 / ICIT 744",
+      "local_metadata": "excavation=H96-2769Figure 17.07; dims=29.2x10.7x6.2; text=+740-000-220-004-002-390-095+",
+      "source_route": "Harappa ESM2 PDF exposes ICIT 744 (H-1993); local metadata points to H96-2769 Figure 17.07",
+      "result": "supplement_transcription_level_only; exact web/local route checks did not locate artifact image; Figure 17.07 is not unique by itself because H-1803 also carries a Figure 17.07 hook",
+      "consequence": "usable as route pressure only; do_not_count_H-1993_as_strict_095_source_image_evidence"
+    },
+    {
+      "gate": "dholavira_4348_guard",
+      "target": "ICIT 4348 / local 4348.1",
+      "local_metadata": "site=Dholavira; type=TAG; text=]740-142-000-002-861-390[",
+      "source_route": "Harappa ESM2 names ICIT 4348 (Dholavira); local metadata row is separate from 4237.1",
+      "result": "separate_002_861_390_Dholavira_clue_not_002_390_705",
+      "consequence": "do_not_pollute_4237_1_source_binding_with_4348"
+    },
+    {
+      "gate": "h773_non125_continuation_exception",
+      "target": "H-773",
+      "local_metadata": "id=1665.1; excavation=12377351; site=Harappa; type=TAB:B; material=Faience; text=+740-798-803-002-390-530-741+",
+      "source_route": "Archive.org CISI Pakistan page n358 image acquired; H-773 A token overlay stored under tmp/source_route_recheck_20260531",
+      "result": "source_panel_acquired_for_H-773_A/B; 002-390-530-741 is boxed-window-compatible under R/L policy but exact token identity remains catalog-mediated",
+      "consequence": "upgrade_from_metadata_only_to_panel_bound_pressure; do_not_count_as_strict_anti125_exception"
+    },
+    {
+      "gate": "3335_1_non125_continuation_exception",
+      "target": "-:3335.1",
+      "local_metadata": "site=Unknown; object=-; excavation=-; type=SEAL:S; dims=29x29x0; text=+740-205-032-002-390-590-032+",
+      "source_route": "local metadata plus exact-string web search",
+      "result": "no stable CISI object ID or public source route found",
+      "consequence": "remains_object_id_blocked; do_not_use_as_source_normalized_exception"
+    }
+  ],
+  "interpretation_guardrails": [
+    "No phonetic, semantic, language, function, or translation values accepted.",
+    "Dholavira 4237.1 / 705 remains split between a page-18 lookalike and an unbound 8758 metadata cluster.",
+    "M-1825 / 705 remains secondary-icon-only in this pass; IA Pakistan OCR/XML did not bind M-1825 or BJ25710.",
+    "H-1993 has been route-triaged to supplement-only pressure; Figure 17.07 is not a unique image bridge.",
+    "H-773 is panel-bound and boxed-window-compatible, not strict token evidence.",
+    "Branch ecology supports testing a constructional slot, but does not prove linguistic value."
+  ],
+  "outputs": {
+    "occurrences": "data/open_prototype/reports/campaign_032_002_861_002390x_branch_sign_ecology_20260531_occurrences.csv",
+    "frames": "data/open_prototype/reports/campaign_032_002_861_002390x_branch_sign_ecology_20260531_002390_frames.csv",
+    "sign_summary": "data/open_prototype/reports/campaign_032_002_861_002390x_branch_sign_ecology_20260531_summary_by_sign.csv",
+    "frame_branch_summary": "data/open_prototype/reports/campaign_032_002_861_002390x_branch_sign_ecology_20260531_002390_branch_summary.csv",
+    "exceptions": "data/open_prototype/reports/campaign_032_002_861_002390x_branch_sign_ecology_20260531_exceptions.csv",
+    "source_recheck": "data/open_prototype/reports/campaign_032_002_861_002390x_branch_sign_ecology_20260531_source_binding_recheck.csv",
+    "summary": "data/open_prototype/reports/campaign_032_002_861_002390x_branch_sign_ecology_20260531_summary.json"
+  }
+}

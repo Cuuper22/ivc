@@ -1,0 +1,148 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_060920_feeder_selector_against_cap_siblings_20260531",
+  "tier": "candidate",
+  "bet": "Inside the 060 terminal-cap paradigm, 920 is the marked cap selected by a left-feeder alloseries 741/742/745. The sibling caps 692, 550, and 820 are broad caps without that feeder. This makes 741/742/745-060-920 a slot grammar, not merely a frequent trigram.",
+  "exact_collapse": {
+    "source": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\lipi\\metadata_filtered.csv",
+    "cap_set": [
+      "920",
+      "692",
+      "550",
+      "820"
+    ],
+    "exact_prev_060_cap_cells": 130,
+    "dedupe_key": [
+      "prev",
+      "060",
+      "cap",
+      "next2",
+      "text",
+      "site",
+      "type",
+      "symbol"
+    ]
+  },
+  "target_920_selector": {
+    "cap": "920",
+    "top3_prev": "741 742 745",
+    "in_exact_cells": 52,
+    "out_exact_cells": 78,
+    "in_top3_hits": 40,
+    "in_top3_misses": 12,
+    "out_top3_hits": 0,
+    "out_top3_misses": 78,
+    "fisher_right_tail": 3.8686020889224625e-23,
+    "examples": [
+      "C-16:741-060-920:+429-003-741-060-920+",
+      "H-1309:741-060-920:+156-176-741-060-920+",
+      "H-2127:741-060-920:+504-350-741-060-920+",
+      "H-39:745-060-920:+740-390-590-231-240-235-745-060-920+",
+      "H-89:741-060-920:+232-240-741-060-920+",
+      "H-175:741-060-920:+167-705-368-005-741-060-920+",
+      "K-4:741-060-920:+036-269-140-002-741-060-920+",
+      "L-28:741-060-920:+740-406-590-741-060-920+"
+    ]
+  },
+  "cap_sibling_comparator": [
+    {
+      "cap": "920",
+      "top3_prev": "741 742 745",
+      "in_exact_cells": 52,
+      "out_exact_cells": 78,
+      "in_top3_hits": 40,
+      "in_top3_misses": 12,
+      "out_top3_hits": 0,
+      "out_top3_misses": 78,
+      "fisher_right_tail": 3.8686020889224625e-23,
+      "examples": [
+        "C-16:741-060-920:+429-003-741-060-920+",
+        "H-1309:741-060-920:+156-176-741-060-920+",
+        "H-2127:741-060-920:+504-350-741-060-920+",
+        "H-39:745-060-920:+740-390-590-231-240-235-745-060-920+",
+        "H-89:741-060-920:+232-240-741-060-920+",
+        "H-175:741-060-920:+167-705-368-005-741-060-920+",
+        "K-4:741-060-920:+036-269-140-002-741-060-920+",
+        "L-28:741-060-920:+740-406-590-741-060-920+"
+      ]
+    },
+    {
+      "cap": "692",
+      "top3_prev": "240 231 798",
+      "in_exact_cells": 32,
+      "out_exact_cells": 98,
+      "in_top3_hits": 10,
+      "in_top3_misses": 22,
+      "out_top3_hits": 5,
+      "out_top3_misses": 93,
+      "fisher_right_tail": 0.0002888352948056405,
+      "examples": [
+        "H-1138:240-060-692:+740-603-240-060-692+",
+        "H-423:798-060-692:+520-220-240-798-060-692+",
+        "H-1845:240-060-692:+740-642-240-060-692+",
+        "H-1705:798-060-692:+740-904-231-240-798-060-692+",
+        "H-133:798-060-692:+740-554-220-415-798-060-692+",
+        "H-360:240-060-692:+740-636-240-060-692+",
+        "H-823:240-060-692:+740-636-240-060-692+",
+        "M-69:231-060-692:+740-803-231-060-692+"
+      ]
+    },
+    {
+      "cap": "820",
+      "top3_prev": "235 031 240",
+      "in_exact_cells": 23,
+      "out_exact_cells": 107,
+      "in_top3_hits": 7,
+      "in_top3_misses": 16,
+      "out_top3_hits": 13,
+      "out_top3_misses": 94,
+      "fisher_right_tail": 0.03558157809695631,
+      "examples": [
+        "K-16:240-060-820:+090-740-240/060-820+",
+        "M-1760:235-060-820:+740-923-240-235-060-820+",
+        "M-808:235-060-820:+740-455-240-235-060-820+",
+        "M-1906:235-060-820:+520-033-705-233-235-060-820+",
+        "M-202:031-060-820:+400-241-031-060-820+",
+        "M-875:031-060-820:+105-031-060-820+",
+        "-:240-060-820:+740-585-231-240-060-820+"
+      ]
+    },
+    {
+      "cap": "550",
+      "top3_prev": "235 690 003",
+      "in_exact_cells": 23,
+      "out_exact_cells": 107,
+      "in_top3_hits": 6,
+      "in_top3_misses": 17,
+      "out_top3_hits": 9,
+      "out_top3_misses": 98,
+      "fisher_right_tail": 0.02698606906284496,
+      "examples": [
+        "H-1893:003-060-550:+390-003-060-550+",
+        "M-2041:690-060-550:+740-690-060-550+",
+        "M-56:235-060-550:+740-877-032-235-060-550-611-840+",
+        "M-396:235-060-550:+204-630-233-832-904-794-630-235-060-550+",
+        "M-501:690-060-550:+740-690-060-550+",
+        "M-777:235-060-550:+173-520-235-060-550+"
+      ]
+    }
+  ],
+  "cap_label_shuffle_null": {
+    "iterations": 5000,
+    "preserves": "prev signs and row metadata in the prev-060-cap universe; shuffles cap labels while preserving cap counts",
+    "fixed_920_p_ge_target_hits_and_no_sibling_leak": 0,
+    "maxstat_p_any_cap_ge_target_hits_and_no_sibling_leak": 0
+  },
+  "predictions": [
+    "A new exact prev-060-920 row is much more likely than sibling cap rows to have prev in 741/742/745.",
+    "A new 741/742/745-060-cap row should overwhelmingly choose cap 920, not 692/550/820.",
+    "If source images merge 741/742/745 as allographs, the claim strengthens as one feeder sign; if they split with different contexts, the claim becomes a feeder alloseries."
+  ],
+  "demoters": [
+    "Demote if source-level sign review shows 741/742/745 are not reliable signs in the relevant rows.",
+    "Demote if sibling cap rows with 741/742/745 appear under source-normalized review.",
+    "Demote if a broader cap set makes the 741/742/745 selector leak into other caps at comparable rates."
+  ],
+  "decision": "candidate_survives_sibling_cap_selector_test"
+}

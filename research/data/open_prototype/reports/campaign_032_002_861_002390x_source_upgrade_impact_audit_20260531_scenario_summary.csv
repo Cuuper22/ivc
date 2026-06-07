@@ -1,0 +1,12 @@
+scenario,upgraded_ids,purpose,strict_rows,strict_objects,strict_matched_prev_split_count,strict_matched_prev_splits,strict_705_terminal_rows,strict_705_terminal_objects,strict_non125_continuing_rows,strict_non125_continuing_objects,strict_125_continuing_rows,unlocks
+baseline_current_strict_core,,current strict source-visible state,4,M-70 M-71 M-119 M-735,0,,0,,0,,2,no_new_decisive_gate
+upgrade_h1993_only,744.2,test whether H-1993 image binding alone unlocks the 004 split,5,H-1993 M-70 M-71 M-119 M-735,0,,0,,0,,2,no_new_decisive_gate
+upgrade_sktd1_only,3875.1,test whether Sktd-1 strict token/order alone unlocks the 004 split,5,M-70 M-71 M-119 M-735 Sktd-1,0,,0,,0,,3,expanded_strict_125_continuation_set
+upgrade_h1993_and_sktd1,744.2 3875.1,test full 004 strict split,6,H-1993 M-70 M-71 M-119 M-735 Sktd-1,1,004:095:1; 125:1,0,,0,,3,strict_matched_prev_split:004; expanded_strict_125_continuation_set
+upgrade_3335_1,3335.1,test whether the 032 split unlocks because M-70 is already strict,5,M-70 M-71 M-119 M-735 -:3335.1,1,032:590:1; 692:1,0,,1,-:3335.1:590,2,strict_matched_prev_split:032; strict_non125_continuing:-:3335.1
+upgrade_m1825_only,3992.1,test one strict 705 terminal witness,5,M-70 M-71 M-119 M-735 M-1825,0,,1,M-1825,0,,2,single_strict_705_terminal
+upgrade_dholavira_4237_1_only,4237.1,test one strict Dholavira 705 terminal witness,5,M-70 M-71 M-119 M-735 -:4237.1,0,,1,-:4237.1,0,,2,single_strict_705_terminal
+upgrade_m1825_and_dholavira_705_pair,3992.1 4237.1,test repeated strict 705 terminal ecology,6,M-70 M-71 M-119 M-735 M-1825 -:4237.1,0,,2,M-1825 -:4237.1,0,,2,repeated_strict_705_terminal_pair
+upgrade_m38,2566.1,test 235 same-branch tail split with both M-38 and M-735 strict,5,M-38 M-70 M-71 M-119 M-735,0,,0,,0,,3,expanded_strict_125_continuation_set
+upgrade_h773,1665.1,test strict non-125 continuing exception,5,H-773 M-70 M-71 M-119 M-735,0,,0,,1,H-773:530,2,strict_non125_continuing:H-773
+upgrade_all_named_blockers,744.2 3875.1 3335.1 3992.1 4237.1 2566.1 1665.1,upper-bound audit if all currently named blockers became strict,11,H-1993 H-773 M-38 M-70 M-71 M-119 M-735 -:3335.1 Sktd-1 M-1825 -:4237.1,2,004:095:1; 125:1 | 032:590:1; 692:1,2,M-1825 -:4237.1,2,H-773:530 -:3335.1:590,4,strict_matched_prev_split:004/032; repeated_strict_705_terminal_pair; strict_non125_continuing:H-773/-:3335.1; expanded_strict_125_continuation_set

@@ -1,0 +1,27 @@
+{
+  "date": "2026-05-29",
+  "rows": 7,
+  "source_ready_rows": 5,
+  "image_rows": 5,
+  "tail_distribution": "<END>:5;255 416:1;603:1",
+  "source_ready_tail_distribution": "<END>:3;255 416:1;603:1",
+  "blind_sheet": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\032_002_861_220032_source_visible_contrast_packet\\campaign_032_002_861_220032_source_visible_contrast_packet_blind_sheet.png",
+  "blind_key": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_220032_source_visible_contrast_packet_blind_key.csv",
+  "visual_score_status": "semi_blind_scored_overlay_captions_leak_labels",
+  "visual_result": "source_visible_positional_contrast_survives_as_closure_vs_simple_tail_vs_compound_tail",
+  "visual_limits": "no sign values, no phonetics, no language identity, no translations, no exact source-token boundary acceptance",
+  "source_missing_rows": [
+    {
+      "cisi": "C-65",
+      "tail": "<END>",
+      "text": "+000-100-240-220-032-002-861+",
+      "source_status": "source_pending_or_not_checked"
+    },
+    {
+      "cisi": "M-1763",
+      "tail": "<END>",
+      "text": "+416-001-565-740-220-032-002-861+",
+      "source_status": "source_pending_or_not_checked"
+    }
+  ]
+}

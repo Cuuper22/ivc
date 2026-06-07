@@ -1,0 +1,52 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "lipi_variant_crosswalk_pressure",
+  "question": "Do the H-series and FRAME700 suspected variant pairs survive or collapse under the independent Mayig/Parpola positional crosswalk layer?",
+  "inputs": [
+    "data/open_prototype/reports/crosswalk_alignment_pairs.csv",
+    "data/open_prototype/reports/crosswalk_lipi_to_mayig_candidates.csv",
+    "data/open_prototype/reports/crosswalk_mayig_to_lipi_candidates.csv",
+    "data/open_prototype/reports/overlap_probe.csv"
+  ],
+  "target_signs": [
+    "032",
+    "033",
+    "034",
+    "154",
+    "156"
+  ],
+  "alignment_rows_by_lipi_sign": {
+    "154": 1,
+    "156": 5,
+    "032": 21,
+    "033": 9,
+    "034": 0
+  },
+  "candidate_rows_by_lipi_sign": {
+    "154": 1,
+    "156": 1,
+    "032": 1,
+    "033": 1,
+    "034": 0
+  },
+  "missing_candidate_signs": [
+    "034"
+  ],
+  "pair_statuses": {
+    "154_vs_156": "collapse_pressure_active_not_proven",
+    "033_vs_034": "033_crosswalk_supported_034_unobserved_in_overlap",
+    "032_vs_033_vs_034": "frame700_crosswalk_differentiates_032_033_034_unobserved"
+  },
+  "headline_results": [
+    "154/156: collapse pressure active because both signs align to P004 in the overlap layer; source images must decide H-2237.",
+    "033/034: not the same pattern as 154/156; 033 aligns to P147, while 034 is crosswalk-dark in the clean overlap layer.",
+    "032/033/034: clean overlap differentiates 032->P145 and 033->P147, but leaves 034 unresolved."
+  ],
+  "outputs": [
+    "data/open_prototype/reports/lipi_variant_crosswalk_pressure_signs.csv",
+    "data/open_prototype/reports/lipi_variant_crosswalk_pressure_alignments.csv",
+    "data/open_prototype/reports/lipi_variant_crosswalk_pressure_pairs.csv",
+    "data/open_prototype/reports/lipi_variant_crosswalk_pressure_summary.json"
+  ],
+  "accepted_decipherment_claims": 0
+}

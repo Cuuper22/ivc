@@ -1,0 +1,2637 @@
+{
+  "schema_version": "0.1",
+  "date": "2026-05-30",
+  "purpose": "Single source of truth for Indus-script claims that can be accepted only after forger false-positive tests and skeptic attacks are recorded.",
+  "accepted_claim_counts": {
+    "translations": 0,
+    "phonetic_values": 0,
+    "sign_meanings": 0,
+    "language_identification": 0,
+    "structural_findings": 1,
+    "external_anchors": 0
+  },
+  "acceptance_rule": {
+    "forger_required": true,
+    "skeptic_required": true,
+    "source_provenance_required": true,
+    "default_status": "candidate_or_retracted",
+    "note": "A claim increments an accepted count only when the forger false-positive rate is explicitly acceptable for the claim type and the skeptic record has no unresolved fatal attack."
+  },
+  "accepted_claims": [
+    {
+      "claim_id": "accepted_struct_002_861_533_717_restricted_tail_2026_05_29",
+      "claim_type": "structural_findings",
+      "status": "accepted",
+      "claim": "Within the fixed 002-861 branch question, the two-token unit 533-717 is the only tested length-1-to-3 unit with support >= 2 whose every occurrence in strict local rows is a terminal tail after 002-861. The two witnesses are M-376 and M-391; both are source-visible as same-line terminal-side material, and current source-family review rejects exact copy-family collapse.",
+      "scope": "Strict local Lipi numeric rows, checked both raw and exact text/site/type/symbol deduplicated. The claim is fixed-prefix only: it does not say repeated terminal bigrams are rare across the whole corpus, does not accept exact source-normalized 861/533/717 token boundaries, and does not assign sound, meaning, language, or translation.",
+      "primary_evidence": [
+        {
+          "path": "data/open_prototype/reports/campaign_032_002_861_restricted_tail_forger_summary.json",
+          "summary": "In 4,135 strict raw rows and 3,074 exact text/site/type/symbol dedup rows, 533-717 is the sole length-1-to-3 candidate with total occurrences 2 and fixed-prefix terminal occurrences 2 after 002-861."
+        },
+        {
+          "path": "data/open_prototype/reports/campaign_032_002_861_restricted_tail_forger_candidates.csv",
+          "summary": "Observed candidate table: strict_raw_rows and strict_exact_text_site_type_symbol_dedup each return only unit_len 2, unit 533 717, total_occurrences 2, fixed_prefix_terminal_occurrences 2."
+        },
+        {
+          "path": "data/open_prototype/reports/campaign_032_002_861_source_token_attachment_verdicts.csv",
+          "summary": "M-376 and M-391 preserve source-visible same-line terminal-side 533-717 candidate windows; confidence medium and medium-low. Exact 861/533/717 source-token boundaries remain catalog-mediated."
+        },
+        {
+          "path": "data/open_prototype/reports/campaign_032_002_861_533717_source_family_independence_summary.json",
+          "summary": "M-376 and M-391 differ in source leaf, printed page, full text, length, class, excavation identifiers, depth, boss, dimensions, and immediate pre-002-861 context. Exact duplicate/copy collapse is rejected, but the pair remains one narrow source/register-family cell for linguistic weighting."
+        },
+        {
+          "path": "data/open_prototype/reports/campaign_032_002_861_533717_source_layout_discriminator_summary.json",
+          "summary": "No unique 533-717 source-layout discriminator is accepted: M-1273 also shows same-line terminal-side post-861 material, while M-355 and M-1267 supply same-register source-visible controls."
+        }
+      ],
+      "forger_record": {
+        "tool": "data/open_prototype/tools/campaign_032_002_861_restricted_tail_forger.mjs",
+        "context_iterations_per_context_null": 10000,
+        "token_iterations_per_token_null": 500,
+        "unit_lengths_tested": [
+          1,
+          2,
+          3
+        ],
+        "fixed_prefix": "002 861",
+        "target_unit": "533 717",
+        "null_models": [
+          "context_shuffle_global_any_n_1_3",
+          "context_shuffle_site_type_symbol_any_n_1_3",
+          "token_shuffle_global_preserve_lengths_any_n_1_3",
+          "token_shuffle_within_row_any_n_1_3"
+        ],
+        "strict_raw_rows": {
+          "rows": 4135,
+          "observed_max_support": 2,
+          "observed_candidate_count": 1,
+          "fpr_context_shuffle_global": 0.0002,
+          "fpr_context_shuffle_site_type_symbol": 0.001,
+          "fpr_token_shuffle_global": 0,
+          "fpr_token_shuffle_within_row": 0.006
+        },
+        "strict_exact_text_site_type_symbol_dedup": {
+          "rows": 3074,
+          "observed_max_support": 2,
+          "observed_candidate_count": 1,
+          "fpr_context_shuffle_global": 0.0004,
+          "fpr_context_shuffle_site_type_symbol": 0.0006,
+          "fpr_token_shuffle_global": 0,
+          "fpr_token_shuffle_within_row": 0
+        },
+        "max_recorded_fpr": 0.006,
+        "fpr_boundary": "Accepted as low enough for a narrow fixed-prefix structural finding with explicit wording limits; not acceptable for sign meaning, phonetics, translation, or language-family identification."
+      },
+      "skeptic_record": {
+        "attacks_survived": [
+          "Exact text/site/type/symbol deduplication preserves the result: M-376 and M-391 remain two rows because they are not exact duplicate strings or duplicate source/register copies.",
+          "Context-label shuffles let any length-1-to-3 unit become the discovered candidate after the fixed 002-861 prefix; the observed max support has FPR 0.0002 globally and 0.001 under site/type/symbol grouping in strict raw rows.",
+          "Token shuffles preserving row lengths and row-internal inventories fail or rarely reproduce the observed fixed-prefix restricted-tail pattern; the harshest observed FPR is 0.006.",
+          "Source-family review rejects exact copy-family collapse for M-376/M-391.",
+          "Source-layout review blocks overclaiming: same-line terminal-side placement is not unique to 533-717 because M-1273 preserves a 603 tail in comparable same-line position."
+        ],
+        "scope_limits": [
+          "A broad post-hoc prefix search finds many repeated terminal bigram cells: 96 in strict raw rows and 40 after exact text/site/type/symbol dedup. Therefore the accepted claim is fixed to the prior 002-861 branch question only.",
+          "M-376 and M-391 are one narrow Mohenjo-daro no-icon SEAL:R source/register family cell for linguistic weighting, not a demonstrated semantic class.",
+          "Exact source-normalized 861/533/717 token boundaries remain catalog-mediated.",
+          "No sign value, sign meaning, phonetic value, language family, external anchor, or translation is accepted."
+        ],
+        "decision": "Accepted only as a narrow structural finding."
+      },
+      "accepted_count_increment": {
+        "structural_findings": 1
+      }
+    }
+  ],
+  "candidate_claims": [
+    {
+      "claim_id": "retracted_meluhha_context_leads_as_external_anchors_2026_05_29",
+      "claim_type": "external_anchors",
+      "status": "retracted",
+      "retracted_date": "2026-05-29",
+      "claim": "CDLI Meluhha context leads can be promoted into Indus external anchors by contextual specificity, same-site overlap, or strict sign-count/duplicate-pattern compatibility with external Indus-style rows.",
+      "reason_retracted": "Paginated CDLI matched negatives break the standalone anchors, and source-side survivors do not connect to specific Indus objects. szu-i3-li2-su returns 207 CDLI artifacts over three pages; 175 have query-line hits, and only one query-line artifact has any Meluhha line, false-positive rate 0.994286. The external bridge retest has 23 query/site rows, 4 Ur/Susa/Failaka-focus rows, 8 same-site strict pattern matches, and zero object-level bridges. Same-site pattern matches have pattern-only forger share 1.000000 by construction.",
+      "primary_evidence": [
+        {
+          "path": "data/meluhha/cdli_meluhha_context_leads.csv",
+          "summary": "Ranked cuneiform-side context leads from current CDLI line contexts."
+        },
+        {
+          "path": "data/meluhha/cdli_context_lead_matched_negative_summary.csv",
+          "summary": "Paginated matched-negative CDLI query summary for 52 unique context-lead queries."
+        },
+        {
+          "path": "data/meluhha/cdli_context_lead_matched_negative_artifacts.csv",
+          "summary": "Artifact-level query-line and Meluhha-adjacency evidence for matched-negative queries."
+        },
+        {
+          "path": "data/meluhha/context_lead_external_bridge_retest_summary.json",
+          "summary": "External-object retest summary: zero object-level bridges and zero accepted external anchors."
+        },
+        {
+          "path": "docs/meluhha_context_lead_matched_negatives.md",
+          "summary": "Human-readable matched-negative and external-bridge decision note."
+        }
+      ],
+      "forger_record": {
+        "tools": [
+          "data/meluhha/tools/run_cdli_context_lead_matched_negatives.mjs",
+          "data/meluhha/tools/retest_context_leads_against_external_objects.mjs"
+        ],
+        "paginated_cdli_queries": 52,
+        "page_limit": 100,
+        "max_pages_per_query": 5,
+        "standout_negative_controls": [
+          {
+            "query": "szu-i3-li2-su",
+            "returned_artifacts": 207,
+            "query_line_artifacts": 175,
+            "meluhha_query_line_artifacts": 1,
+            "false_positive_rate": 0.994286
+          },
+          {
+            "query": "lu2-tukul",
+            "returned_artifacts": 46,
+            "query_line_artifacts": 42,
+            "meluhha_query_line_artifacts": 1,
+            "false_positive_rate": 0.97619
+          },
+          {
+            "query": "ur-{d}lamma",
+            "returned_artifacts": 500,
+            "query_line_artifacts": 473,
+            "meluhha_query_line_artifacts": 2,
+            "page_cap_reached": true,
+            "false_positive_rate": 0.995772
+          },
+          {
+            "query": "ur gun3-a",
+            "returned_artifacts": 4,
+            "query_line_artifacts": 4,
+            "meluhha_query_line_artifacts": 2,
+            "false_positive_rate": 0.5
+          }
+        ],
+        "external_bridge_retest": {
+          "bridge_test_rows": 23,
+          "ur_susa_failaka_bridge_test_rows": 4,
+          "same_site_strict_pattern_match_rows": 8,
+          "object_level_bridge_count": 0,
+          "pattern_only_forger_ge_observed_share": 1
+        },
+        "result": "failed_external_anchor_gate"
+      },
+      "skeptic_record": {
+        "attacks_that_broke_claim": [
+          "CDLI first-page search is capped; after pagination, szu-i3-li2-su is much less diagnostic than the first current-export count implied.",
+          "Phrases that literally contain me-luh-ha are source-side contexts, not independent Meluhha diagnostics.",
+          "The Irisagrig a-li-a-hi dam-a-ni cluster is small and has no external object bridge.",
+          "The Ur ur gun3-a me-luh-ha to row 3898.1 overlap is only same-site ABCDEF pattern compatibility with no accession, publication, owner, title, or object-level link.",
+          "Ur/Susa/Failaka catalogue routes remain acquisition targets, not anchors."
+        ],
+        "residual_value": "A reusable paginated Meluhha query harness and cleaner source-side lead surface for future object-level bridge work."
+      },
+      "accepted_count_increment": {}
+    },
+    {
+      "claim_id": "retracted_bm120573_as_external_phonetic_anchor_2026_05_30",
+      "claim_type": "external_anchors",
+      "status": "retracted",
+      "retracted_date": "2026-05-30",
+      "claim": "BM 120573 / U.7683 / 1928,1009.56 provides an object-level external phonetic anchor for local Ur Indus sign rows.",
+      "reason_retracted": "BM 120573 is verified as a real Diqdiqqah/Ur cuneiform-inscribed Indus-style stamp seal, but it is not an accepted external Indus phonetic anchor in the current workspace. The BM/Gadd source surface records a rectangular object with cuneiform/Sumerian inscription, not an Indus sign sequence. Gadd no. 1 treats the cuneiform reading as doubtful, with best provisional ASCII reading sak-ku-shi-?, and does not use it to read the Indus script. The five local Ur external rows checked against it do not map: four are circular and all five carry local Indus numeric sign sequences rather than the cuneiform-only BM object.",
+      "primary_evidence": [
+        {
+          "path": "data/meluhha/bm120573_object_bridge_audit_summary.json",
+          "summary": "Object-level route audit: BM 120573 verified, five local Ur rows checked, mapped local rows 0, accepted external anchors 0."
+        },
+        {
+          "path": "data/meluhha/bm120573_object_bridge_audit.csv",
+          "summary": "Row-level comparison of BM 120573 to local Ur external rows 3897.1, 3898.1, 3899.1, 5225.1, and 5231.1."
+        },
+        {
+          "path": "docs/bm120573_object_bridge_audit.md",
+          "summary": "Human-readable audit note and decision."
+        },
+        {
+          "path": "https://www.britishmuseum.org/collection/object/W_1928-1009-56",
+          "summary": "British Museum collection record for museum no. 120573 / registration 1928,1009.56 / excavation no. U.7683."
+        },
+        {
+          "path": "https://www.britishmuseum.org/collection/term/BIB2877",
+          "summary": "British Museum bibliography page for Gadd 1932a, listing related object 120573 and publication details."
+        }
+      ],
+      "forger_record": {
+        "tool": "data/meluhha/tools/audit_bm120573_object_bridge.mjs",
+        "gate_type": "object_identity_not_statistical_association",
+        "local_ur_rows_checked": 5,
+        "mapped_local_rows": 0,
+        "accepted_external_anchors": 0,
+        "result": "failed_no_local_indus_row_mapping_no_indus_sign_sequence_on_bm_object"
+      },
+      "skeptic_record": {
+        "attacks_that_broke_claim": [
+          "BM 120573 is rectangular while the strongest local Ur external rows are circular.",
+          "BM/Gadd expose cuneiform only; local rows are Indus numeric sign-sequence rows.",
+          "No local row gives the BM museum number, registration number, or excavation number.",
+          "Gadd treats the cuneiform reading as doubtful and explicitly does not use it to read the Indus script."
+        ],
+        "residual_value": "BM 120573 remains a verified acquisition route for Mitchell 1986 no.7 / fig.111 and Parpola 1994 p.131, but not a sign-value anchor."
+      },
+      "accepted_count_increment": {}
+    },
+    {
+      "claim_id": "retracted_gadd_ur_accession_bridge_micro_bilingual_2026_05_30",
+      "claim_type": "external_anchors",
+      "status": "retracted",
+      "retracted_date": "2026-05-30",
+      "claim": "The Gadd Ur object set provides a micro-bilingual external phonetic anchor for local Ur Indus rows.",
+      "reason_retracted": "Gadd/Penn source routes now verify object identity for 3898.1/U17649 and 3899.1/U8685, but neither object has a readable cuneiform, name, title, or Meluhha bridge. The modeled Gadd/BM/Penn surface has seven Indus-sequence-only objects and one cuneiform-only object, BM 120573 / U.7683; zero modeled objects combine an Indus sequence with readable cuneiform. Candidate mappings for 3897.1 and 5231.1 are not accession-verified and also lack cuneiform.",
+      "primary_evidence": [
+        {
+          "path": "data/meluhha/gadd_ur_accession_bridge_audit_summary.json",
+          "summary": "Decision record for the Ur/Gadd accession bridge audit: five local Ur rows checked, two verified excavation mappings, zero modeled micro-bilinguals, zero accepted external anchors."
+        },
+        {
+          "path": "data/meluhha/gadd_ur_accession_bridge_audit.csv",
+          "summary": "Row-level audit of local Ur rows 3897.1, 3898.1, 3899.1, 5225.1, and 5231.1 against modeled Gadd/BM/Penn object routes."
+        },
+        {
+          "path": "docs/gadd_ur_accession_bridge_audit.md",
+          "summary": "Human-readable audit note and decision."
+        },
+        {
+          "path": "https://ignca.gov.in/Asi_data/33779.pdf",
+          "summary": "Scanned Gadd 1932 source PDF used for object-route and plate inspection."
+        },
+        {
+          "path": "https://www.britishmuseum.org/collection/term/BIB2877",
+          "summary": "British Museum bibliography page for Gadd 1932a and related BM object routes."
+        },
+        {
+          "path": "https://www.penn.museum/sites/journal/9405/",
+          "summary": "Penn Museum Journal source route for U.17649, described as a grey steatite circular stamp seal with buffalo and Mohenjo-daro-type inscription."
+        }
+      ],
+      "forger_record": {
+        "tool": "data/meluhha/tools/audit_gadd_ur_accession_bridge.mjs",
+        "gate_type": "object_identity_micro_bilingual_gate_not_statistical_association",
+        "local_ur_rows_checked": 5,
+        "local_rows_with_verified_excavation_mapping": 2,
+        "gadd_objects_modeled": 8,
+        "gadd_micro_bilingual_objects_found": 0,
+        "accepted_external_anchors": 0,
+        "result": "failed_no_object_combines_indus_sequence_with_readable_cuneiform"
+      },
+      "skeptic_record": {
+        "attacks_that_broke_claim": [
+          "3898.1/U17649 and 3899.1/U8685 are object-mapped, but the mapped objects are Indus-only in the current source surface.",
+          "BM 120573 / U.7683 is cuneiform-only in the BM/Gadd source surface and lacks a recorded Indus sign sequence.",
+          "3897.1 and 5231.1 mappings are candidate or weak only, not accession-verified.",
+          "No owner, title, profession, Meluhha formula, or cuneiform personal name is attached to the mapped Indus objects.",
+          "Site overlap with Ur Meluhha texts remains rejected by the previous forger controls."
+        ],
+        "residual_value": "The audit improves the source-route layer for Ur rows, especially 3898.1/U17649 and 3899.1/U8685, and narrows the next acquisition target to Mitchell 1986 and unresolved fragment rows."
+      },
+      "accepted_count_increment": {}
+    },
+    {
+      "claim_id": "retracted_object_level_onomastic_value_attempts_2026_05_30",
+      "claim_type": "external_anchors",
+      "status": "retracted",
+      "retracted_date": "2026-05-30",
+      "claim": "Object-routed Meluhha onomastic and lexical phrases yield candidate phonetic values for external Indus signs.",
+      "reason_retracted": "The object-level value harness tested 12 cuneiform-side Meluhha strings against 30 Mesopotamia/Gulf external objects with parseable sign sequences and wrote 47 pattern-compatible candidate rows. Only one attempt reached the strict mapped-object lane: Ur phrase ur gun3-a me-luh-ha against local row 3898.1/U17649, proposing 002=ur;004=gun3;328=a;001=me;803=luh;415=ha. That row is object-mapped but Indus-only; the cuneiform phrase is from a separate text, not the object. A target-site shuffle forger reproduced at least the observed strict mapped same-site pattern-attempt count in 0.6857 of 10,000 iterations.",
+      "primary_evidence": [
+        {
+          "path": "data/meluhha/object_level_onomastic_value_summary.json",
+          "summary": "Summary of 12 target phrases, 30 focus external objects, 47 pattern-compatible rows, one strict mapped value attempt, zero accepted external anchors."
+        },
+        {
+          "path": "data/meluhha/object_level_onomastic_value_attempts.csv",
+          "summary": "Candidate-level proposed sign-value assignments and rejection reasons."
+        },
+        {
+          "path": "data/meluhha/object_level_onomastic_value_forger_iterations.csv",
+          "summary": "10,000 target-site shuffle forger iterations for the strict mapped same-site pattern gate."
+        },
+        {
+          "path": "docs/object_level_onomastic_value_attempts.md",
+          "summary": "Human-readable direct value-attempt note and decision."
+        }
+      ],
+      "forger_record": {
+        "tool": "data/meluhha/tools/attempt_object_level_onomastic_values.mjs",
+        "target_phrases_tested": 12,
+        "focus_external_objects_with_parseable_signs": 30,
+        "candidate_rows_written": 47,
+        "same_site_or_equivalent_value_attempts": 1,
+        "strict_mapped_indus_only_value_attempts": 1,
+        "observed_strict_mapped_site_pattern_attempts": 1,
+        "iterations": 10000,
+        "null_ge_observed_share": 0.6857,
+        "mean_null_candidate_count": 0.8414,
+        "max_null_candidate_count": 2,
+        "accepted_external_anchors": 0,
+        "result": "failed_site_pattern_forger_and_no_readable_script_object_bridge"
+      },
+      "skeptic_record": {
+        "attacks_that_broke_claim": [
+          "The only strict mapped attempt uses U17649 / row 3898.1, an Indus-only object in the current source surface.",
+          "The cuneiform phrase ur gun3-a me-luh-ha is from a separate Ur text and is not attached to U17649 by owner, seal impression, title, profession, or find-context pairing.",
+          "The proposed assignment depends on six-unit length and all-distinct pattern compatibility.",
+          "The target-site shuffle forger reproduces the observed strict mapped same-site attempt count at high rate.",
+          "Most other pattern-compatible rows are generic Meluhha context matches or site mismatches, with no object-level route."
+        ],
+        "residual_value": "The harness is now ready to retest future exact Kjaerum, Amiet, Mitchell, or Sarzec/Heuzey object bridges without laundering site overlap into phonetics."
+      },
+      "accepted_count_increment": {}
+    },
+    {
+      "claim_id": "retracted_brahmi_source_token_descent_v2_2026_05_30",
+      "claim_type": "phonetic_values",
+      "status": "retracted",
+      "retracted_date": "2026-05-30",
+      "claim": "Exact projection-gap source-token crops compared against a larger early Brahmi glyph set yield a Brahmi-descended phonetic anchor.",
+      "reason_retracted": "The expanded v2 gate retained 1,342 early Brahmi glyph features from 36 Indoskript manuscripts and 611 Indus source-token features from 61 exact projection-gap source rows. It tested 83 sign/orientation families with >= 2 samples. All 83 failed the pre-registered shape and label null gates; candidate-only rows = 0 and accepted phonetic anchors = 0. The strongest near-misses were 817=dhya, 527=ra, 472=ra, 060=ka, and 061=ra, but their shape-null or label-null rates exceeded the required 0.01 thresholds. A duplicate-collapse audit adds a separate skeptic boundary: 18 raw-unanimous families collapse below two unique token hashes, six are single-CISI only, and the top v2 near-misses are all in one of those two failure buckets.",
+      "primary_evidence": [
+        {
+          "path": "data/brahmi/source_token_brahmi_descent_v2_summary.json",
+          "summary": "Expanded Brahmi source-token gate summary: 1,342 Brahmi features, 611 source-token features, 83 families, zero candidate-only rows, zero accepted anchors."
+        },
+        {
+          "path": "data/brahmi/source_token_family_descent_summary_v2.csv",
+          "summary": "Family-level modal labels, shape-null shares, label-null shares, and gate decisions; all 83 rows fail."
+        },
+        {
+          "path": "data/brahmi/source_token_shape_null_iterations_v2.csv",
+          "summary": "Sampled random shape-evolution null iterations for token-family samples."
+        },
+        {
+          "path": "data/brahmi/source_token_label_null_iterations_v2.csv",
+          "summary": "Sampled Brahmi-label shuffle null iterations for family modal counts."
+        },
+        {
+          "path": "docs/brahmi_source_token_descent_gate_v2.md",
+          "summary": "Human-readable v2 descent gate note and decision."
+        },
+        {
+          "path": "data/open_prototype/reports/anchored_constraint_collapse_stress_summary.json",
+          "summary": "Priority C stress updated to force v2 near-misses only as rejected constraints; accepted-anchor scenario remains zero anchors."
+        },
+        {
+          "path": "data/brahmi/source_token_duplicate_collapse_audit_v2_summary.json",
+          "summary": "Duplicate-collapse summary: 18 raw-unanimous families collapse below two unique token hashes, six are single-CISI only, six survive duplicate collapse but still fail original nulls."
+        },
+        {
+          "path": "data/brahmi/source_token_duplicate_collapse_audit_v2.csv",
+          "summary": "Family-level duplicate-collapse audit by sign/orientation, token hash, and CISI object."
+        }
+      ],
+      "forger_record": {
+        "tool": "data/brahmi/tools/build_brahmi_source_token_descent_gate_v2.py",
+        "brahmi_feature_rows": 1342,
+        "source_answer_key_rows": 104,
+        "source_rows_exact_projection_count": 61,
+        "source_token_feature_records": 611,
+        "family_rows_with_ge_2_samples": 83,
+        "shape_iterations_per_token_family_sample": 200,
+        "label_null_iterations_per_family": 1000,
+        "survival_rule": ">=2 samples, 100% modal Brahmi-label agreement, shape null <=0.01, label null <=0.01; survivor would still be candidate-only pending manual visual descent review.",
+        "gate_counts": {
+          "candidate_only_rows": 0,
+          "accepted_phonetic_anchors": 0
+        },
+        "near_misses": [
+          {
+            "sign_id": "817",
+            "orientation_policy": "visual_ltr_catalog_reverse",
+            "modal_brahmi_label": "dhya",
+            "sample_count": 2,
+            "shape_null_share": 0.025,
+            "label_null_share": 1.0,
+            "decision": "failed_shape_or_label_null"
+          },
+          {
+            "sign_id": "527",
+            "orientation_policy": "visual_ltr_catalog_order",
+            "modal_brahmi_label": "ra",
+            "sample_count": 6,
+            "shape_null_share": 0.035,
+            "label_null_share": 0.031,
+            "decision": "failed_shape_or_label_null"
+          },
+          {
+            "sign_id": "472",
+            "orientation_policy": "visual_ltr_catalog_reverse",
+            "modal_brahmi_label": "ra",
+            "sample_count": 2,
+            "shape_null_share": 0.04,
+            "label_null_share": 1.0,
+            "decision": "failed_shape_or_label_null"
+          },
+          {
+            "sign_id": "060",
+            "orientation_policy": "visual_ltr_catalog_reverse",
+            "modal_brahmi_label": "ka",
+            "sample_count": 2,
+            "shape_null_share": 0.04,
+            "label_null_share": 1.0,
+            "decision": "failed_shape_or_label_null"
+          },
+          {
+            "sign_id": "061",
+            "orientation_policy": "visual_ltr_catalog_order",
+            "modal_brahmi_label": "ra",
+            "sample_count": 4,
+            "shape_null_share": 0.0475,
+            "label_null_share": 0.02,
+            "decision": "failed_shape_or_label_null"
+          }
+        ],
+        "result": "failed_no_candidate_only_rows_no_accepted_anchor",
+        "duplicate_collapse_audit": {
+          "tool": "data/brahmi/tools/audit_brahmi_v2_duplicate_collapse.py",
+          "family_rows_audited": 83,
+          "raw_unanimity_collapses_below_two_unique_hashes": 18,
+          "raw_unanimity_single_cisi_only": 6,
+          "raw_unanimity_survives_duplicate_collapse_but_original_null_failed": 6,
+          "raw_not_unanimous": 53,
+          "result": "no_anchor_promotion"
+        }
+      },
+      "skeptic_record": {
+        "attacks_that_broke_claim": [
+          "Rows were admitted only when projection-gap segmentation recovered the exact catalog token count; 42/104 rows failed before Brahmi comparison and one was too narrow.",
+          "Both visual-left-to-right catalog order and reverse policies were tested to avoid assuming direction.",
+          "All modal-label near-misses failed the shape-null or label-null threshold; none reached even candidate-only status.",
+          "Priority C stress forced the best rejected near-misses and showed only mechanical fixed-label reduction, not constraint collapse.",
+          "Duplicate-collapse audit: top near-misses 817, 472, and 060 collapse below two unique token hashes; 527 and 061 are single-CISI only."
+        ],
+        "residual_value": "Reusable source-tokenized Brahmi gate with provenance logs and measured nulls; useful negative result for descendant-script anchors."
+      },
+      "accepted_count_increment": {}
+    },
+    {
+      "claim_id": "retracted_brahmi_independent_source_token_gate_v3_2026_05_30",
+      "claim_type": "phonetic_values",
+      "status": "retracted",
+      "retracted_date": "2026-05-30",
+      "claim": "The v2 Brahmi source-token near-misses survive duplicate collapse and object-independence preflight strongly enough to become visual-review candidates.",
+      "reason_retracted": "The v3 preflight tested all 83 v2 sign/orientation families and blocked all 83 before review. The gate required at least three unique token hashes, three unique CISI objects, three unique source paths, unanimity after duplicate collapse, unchanged modal label after collapse, original shape-null <= 0.01, and original label-null <= 0.01. Review-packet eligible rows, candidate-only rows, and accepted phonetic anchors are all zero. The v2 headline near-misses are explicitly blocked: 817, 472, and 060 have only one unique token hash and one CISI; 527 and 061 have only two unique token hashes and one CISI.",
+      "primary_evidence": [
+        {
+          "path": "data/brahmi/brahmi_independent_source_token_gate_v3_summary.json",
+          "summary": "v3 preflight summary: 83 input families, 83 blocked before review, zero eligible rows, zero accepted anchors."
+        },
+        {
+          "path": "data/brahmi/brahmi_independent_source_token_gate_v3.csv",
+          "summary": "Family-level independence, duplicate-collapse, null-share, and blocked-reason table."
+        },
+        {
+          "path": "docs/brahmi_independent_source_token_gate_v3.md",
+          "summary": "Human-readable v3 independence gate note and decision."
+        }
+      ],
+      "forger_record": {
+        "tool": "data/brahmi/tools/build_brahmi_independent_source_token_gate_v3.mjs",
+        "input_family_rows": 83,
+        "blocked_before_review": 83,
+        "review_packet_eligible_rows": 0,
+        "candidate_only_rows": 0,
+        "accepted_phonetic_anchors": 0,
+        "preflight_rule": ">=3 unique token hashes, >=3 unique CISIs, >=3 unique source paths, unanimity after duplicate collapse, unchanged modal label after collapse, shape null <=0.01, label null <=0.01",
+        "blocked_reason_counts": {
+          "shape_null_above_0_01": 83,
+          "label_null_above_0_01": 72,
+          "fewer_than_3_unique_cisis": 58,
+          "not_unanimous_after_duplicate_collapse": 53,
+          "fewer_than_3_unique_token_hashes": 36,
+          "modal_label_changes_after_collapse": 23,
+          "fewer_than_3_unique_source_paths": 22
+        },
+        "result": "failed_preflight_no_visual_review_candidate"
+      },
+      "skeptic_record": {
+        "attacks_that_broke_claim": [
+          "The top v2 near-misses are not independent witness families: 817, 472, and 060 collapse to one unique token hash and one CISI; 527 and 061 have one CISI and two unique token hashes.",
+          "Every family still fails the original shape-null threshold.",
+          "Most families also fail the label-null threshold or lose unanimity after duplicate collapse.",
+          "No family is eligible for a blind visual packet, so no descendant-script phonetic value can be accepted."
+        ],
+        "residual_value": "The v3 gate is a cheap pre-review filter for future Brahmi swings; the next valid step is either more independent source-token witnesses or a real-token impostor forger."
+      },
+      "accepted_count_increment": {}
+    },
+    {
+      "claim_id": "retracted_brahmi_real_token_impostor_forger_v3_2026_05_30",
+      "claim_type": "phonetic_values",
+      "status": "retracted",
+      "retracted_date": "2026-05-30",
+      "claim": "The v2 Brahmi source-token near-misses survive a real-Indus-token impostor null strongly enough to become descendant-script phonetic anchors or visual-review candidates.",
+      "reason_retracted": "The replacement branch reran the real-token impostor forger for all 83 v2 sign/orientation families by sampling actual Indus source-token crops from other signs under the same orientation policy, excluding the same CISI, source path, exact token hash, and assigned sign. Eighty-two families had full 1,000-iteration impostor runs; one legacy isolated-token family had an insufficient impostor pool. Sixty-one families had real-token impostor null share above 0.01. The 21 families at or below 0.01 still fail after replacement low-null reaudit: all 21 fail the original shape-null threshold, 19 also fail the original label-null threshold, 21 fail v3 preflight, 11 fail minimum source-token independence, 14 fail duplicate-collapse unanimity, and zero pass both minimum independence and duplicate-collapse unanimity. Review-packet eligible rows, candidate-only rows, and accepted phonetic anchors are all zero.",
+      "primary_evidence": [
+        {
+          "path": "data/brahmi/brahmi_real_token_impostor_forger_v3_summary.json",
+          "summary": "Real-token impostor summary: 83 input families, 82 full impostor runs, 61 above the 0.01 null threshold, zero eligible rows, zero accepted anchors."
+        },
+        {
+          "path": "data/brahmi/brahmi_real_token_impostor_forger_v3.csv",
+          "summary": "Family-level real-token impostor null table with v2 modal labels, v3 CISI-collapsed labels, blocked reasons, and gate decisions."
+        },
+        {
+          "path": "data/brahmi/brahmi_real_token_impostor_forger_iterations_v3.csv",
+          "summary": "Auditable sampled impostor iterations, capped at 25 rows per family for compact review."
+        },
+        {
+          "path": "data/brahmi/brahmi_real_token_low_null_reaudit_20260531_summary.json",
+          "summary": "2026-05-31 replacement low-null reaudit: 21 rows at or below the 0.01 impostor threshold, zero shape-null survivors, two label-null survivors, 21 v3 preflight failures, ten minimum-independence survivors, seven duplicate-unanimity survivors, and zero rows passing both minimum independence and duplicate-collapse unanimity."
+        },
+        {
+          "path": "data/brahmi/brahmi_real_token_low_null_reaudit_20260531.csv",
+          "summary": "Replacement-run row-level blocker taxonomy for the 21 low real-token impostor null rows."
+        },
+        {
+          "path": "docs/brahmi_real_token_impostor_forger_v3.md",
+          "summary": "Human-readable real-token impostor forger note and decision."
+        },
+        {
+          "path": "docs/brahmi_real_token_low_null_reaudit_20260531.md",
+          "summary": "Human-readable replacement low-null reaudit note and decision."
+        }
+      ],
+      "forger_record": {
+        "tool": "data/brahmi/tools/build_brahmi_real_token_impostor_forger_v3.mjs",
+        "input_family_rows": 83,
+        "source_token_rows": 611,
+        "neighbor_rows": 6110,
+        "iterations_per_family": 1000,
+        "rows_with_full_impostor_iterations": 82,
+        "insufficient_impostor_pool_rows": 1,
+        "real_token_null_above_0_01_rows": 61,
+        "real_token_null_at_or_below_0_01_rows": 21,
+        "min_impostor_ge_observed_share": 0,
+        "max_impostor_ge_observed_share": 1,
+        "review_packet_eligible_rows": 0,
+        "candidate_only_rows": 0,
+        "accepted_phonetic_anchors": 0,
+        "result_counts": {
+          "failed_real_token_impostor_forger": 83
+        },
+        "top_v2_near_miss_null_shares": {
+          "527_order_ra": 0,
+          "527_reverse_o": 0.036,
+          "061_order_ra": 0.008,
+          "061_reverse_v2_ja_v3_o": 0.103,
+          "817_order_dha": 0.169,
+          "472_reverse_ra": 0.248,
+          "817_reverse_dhya": 0.264,
+          "060_reverse_ka": 0.367,
+          "472_order_ra": 0.53,
+          "060_order_ra": 0.701
+        },
+        "low_null_reaudit_20260531": {
+          "tool": "data/brahmi/tools/audit_brahmi_real_token_low_null_replacement_20260531.mjs",
+          "low_null_rows": 21,
+          "v3_preflight_failures": 21,
+          "shape_null_threshold_survivors": 0,
+          "label_null_threshold_survivors": 2,
+          "min_independence_survivors": 10,
+          "duplicate_unanimity_survivors": 7,
+          "modal_label_stability_failures": 5,
+          "min_independence_and_duplicate_unanimity_survivors": 0,
+          "review_packet_eligible_rows": 0
+        },
+        "result": "failed_real_token_impostor_forger_no_visual_review_candidate"
+      },
+      "skeptic_record": {
+        "attacks_that_broke_claim": [
+          "Actual Indus token crops from other signs reproduce or exceed the observed modal agreement for 61 of 82 fully simulated families at null share above 0.01.",
+          "Rows with low real-token impostor shares still fail v3 independence and original v2 acceptance; the 2026-05-31 replacement low-null reaudit shows all 21 fail shape-null, 19 fail label-null, 21 fail v3 preflight, 11 fail minimum source-token independence, 14 fail duplicate-collapse unanimity, and zero pass both minimum independence and duplicate-collapse unanimity.",
+          "The top v2 near-misses remain blocked: 817, 472, and 060 have one unique token hash and one CISI; 527 and 061 have two unique token hashes and one CISI.",
+          "The 061 reverse row demonstrates why raw v2 labels and collapsed v3 labels must be separated: its v2 modal is ja, but its CISI-collapsed v3 modal is o.",
+          "No row reaches blind visual-review eligibility, so no descendant-script phonetic value can be accepted."
+        ],
+        "residual_value": "The Brahmi back door now has a harsher real-token impostor null in addition to random shape evolution, label shuffling, duplicate collapse, and source-token independence."
+      },
+      "accepted_count_increment": {}
+    },
+    {
+      "claim_id": "retracted_anchored_constraint_collapse_from_rejected_anchors_2026_05_29",
+      "claim_type": "phonetic_values",
+      "status": "retracted",
+      "retracted_date": "2026-05-29",
+      "claim": "Injecting the current weak external and Brahmi anchors into the effective-unicity instrument yields a partial reading or sharp anchored constraint collapse.",
+      "reason_retracted": "No accepted anchors exist. Forcing rejected anchors as stress constraints still fixes too few signs to collapse the solution space. The current stress run adds the strict mapped U17649 onomastic value attempt and the Brahmi v2 near-miss set. The strongest combined rejected stress fixes 11 signs and leaves 4310.379871 bits from the 4410.970864-bit unanchored label-symmetry baseline. The stress assignments are inadmissible because the U17649 onomastic values failed the object/readable-script bridge and site-shuffle forger, while Brahmi v3 blocks all v2 near-misses before visual review.",
+      "primary_evidence": [
+        {
+          "path": "data/open_prototype/reports/anchored_constraint_collapse_stress_summary.json",
+          "summary": "Accepted-anchor scenario has zero anchors and no reduction. Strongest rejected stress fixes 11 signs and leaves 4310.379871 label-symmetry bits."
+        },
+        {
+          "path": "data/open_prototype/reports/anchored_constraint_collapse_stress.csv",
+          "summary": "Scenario table for accepted-only, rejected external, rejected Brahmi, combined rejected, and idealized independent anchors."
+        },
+        {
+          "path": "docs/anchored_constraint_collapse_stress.md",
+          "summary": "Human-readable synthesis gate: no anchored partial reading is admissible."
+        },
+        {
+          "path": "data/brahmi/source_token_brahmi_descent_v2_summary.json",
+          "summary": "Expanded Brahmi v2 source-token gate: zero candidate-only rows and zero accepted anchors."
+        },
+        {
+          "path": "docs/brahmi_source_token_descent_gate_v2.md",
+          "summary": "Human-readable v2 source-token descent gate and rejected-near-miss stress note."
+        },
+        {
+          "path": "data/meluhha/object_level_onomastic_value_summary.json",
+          "summary": "Object-level onomastic value attempt summary: one strict mapped value attempt, zero accepted external anchors, null >= observed share 0.6857."
+        },
+        {
+          "path": "data/brahmi/brahmi_independent_source_token_gate_v3_summary.json",
+          "summary": "Brahmi v3 independence gate: 83 families blocked before review, zero review-packet eligible rows."
+        }
+      ],
+      "forger_record": {
+        "tool": "data/open_prototype/tools/anchored_constraint_collapse_stress.mjs",
+        "base_unique_signs": 571,
+        "base_label_symmetry_log2_bits": 4410.970864,
+        "accepted_anchors": 0,
+        "strongest_rejected_stress": {
+          "assignments": "002=ur;004=gun3;328=a;001=me;803=luh;415=ha;817=dhya;527=ra;472=ra;060=ka;061=ra",
+          "distinct_anchored_signs": 11,
+          "residual_label_symmetry_log2_bits": 4310.379871,
+          "reduction_log2_bits": 100.590993
+        },
+        "idealized_curve": {
+          "1_anchor_residual_bits": 4401.813517,
+          "10_anchor_residual_bits": 4319.511728,
+          "50_anchor_residual_bits": 3956.292144
+        },
+        "result": "failed_no_admissible_anchor_no_collapse",
+        "brahmi_v2_rejected_stress": {
+          "top_nearmiss_assignments": "817=dhya;527=ra;472=ra;060=ka;061=ra",
+          "distinct_anchored_signs": 5,
+          "residual_label_symmetry_log2_bits": 4365.209462,
+          "candidate_only_rows": 0,
+          "accepted_phonetic_anchors": 0,
+          "result": "stress_only_rejected_anchor_not_admissible"
+        },
+        "object_level_onomastic_rejected_stress": {
+          "assignments": "002=ur;004=gun3;328=a;001=me;803=luh;415=ha",
+          "distinct_anchored_signs": 6,
+          "residual_label_symmetry_log2_bits": 4356.064804,
+          "accepted_external_anchors": 0,
+          "null_ge_observed_share": 0.6857,
+          "result": "stress_only_rejected_anchor_not_admissible"
+        },
+        "brahmi_v3_status": {
+          "review_packet_eligible_rows": 0,
+          "candidate_only_rows": 0,
+          "accepted_phonetic_anchors": 0,
+          "result": "blocked_before_review"
+        }
+      },
+      "skeptic_record": {
+        "attacks_that_broke_claim": [
+          "The new U17649 onomastic assignment is already retracted because U17649 is Indus-only, the cuneiform phrase is from a separate text, and the site-shuffle forger reproduces the observed strict mapped same-site pattern attempt.",
+          "The Brahmi v2 near-misses are blocked by v3 independence preflight before visual review.",
+          "Combining rejected anchors cannot launder them into accepted constraints.",
+          "Even an idealized handful of accepted independent anchors leaves thousands of label-symmetry bits unless independent contextual propagation is demonstrated."
+        ],
+        "residual_value": "A reusable synthesis guardrail: partial readings require accepted anchors plus propagation evidence, not merely a few visually or positionally tempting values."
+      },
+      "accepted_count_increment": {}
+    },
+    {
+      "claim_id": "retracted_brahmi_shape_descent_nearest_neighbors_2026_05_29",
+      "claim_type": "phonetic_values",
+      "status": "retracted",
+      "retracted_date": "2026-05-29",
+      "claim": "Nearest-neighbor shape matches between actual local Indus source probes and early Brahmi glyphs yield a Brahmi-descended phonetic anchor.",
+      "reason_retracted": "After repairing source-photo mask extraction, local 220 source probes do not converge on one Brahmi value: the top-1 neighbors are kaṃ, o, and ka. Random shape-evolution nulls equal or beat the observed nearest distances too often: 0.576000, 0.438000, and 0.656000 for the three local 220 probes. The local 110 source probe also fails, with top neighbor a and null <= observed share 0.666000.",
+      "primary_evidence": [
+        {
+          "path": "data/brahmi/brahmi_shape_descent_null_summary.json",
+          "summary": "Brahmi shape-descent decision record: 399 Indoskript manuscript rows parsed, first 12 early manuscripts at date <= -100 used, 457 Brahmi glyph features, 14 Indus probe features, no survivor."
+        },
+        {
+          "path": "data/brahmi/indus_brahmi_nearest_neighbors.csv",
+          "summary": "Top-10 Brahmi nearest-neighbor table for each Indus probe. Local 220 actual source probes have incompatible top-1 labels: kaṃ, o, and ka."
+        },
+        {
+          "path": "data/brahmi/brahmi_shape_descent_null_iterations.csv",
+          "summary": "500 random shape-evolution nearest-neighbor iterations per actual Indus source probe."
+        },
+        {
+          "path": "docs/brahmi_shape_descent_gate.md",
+          "summary": "Human-readable Brahmi back-door gate with source surface, Indus probes, null model, and rejection decision."
+        }
+      ],
+      "forger_record": {
+        "tool": "data/brahmi/tools/build_indoskript_brahmi_shape_gate.py",
+        "source": "Indoskript manuscript and letter-table routes",
+        "early_date_max": -100,
+        "early_manuscript_limit": 12,
+        "glyph_features": 457,
+        "indus_probe_features": 14,
+        "iterations_per_actual_probe": 500,
+        "null_model": "Random affine, scale, threshold, dilation, and erosion perturbations of each actual Indus source probe, followed by the same nearest-Brahmi retrieval.",
+        "actual_probe_results": [
+          {
+            "probe": "indus_local220_M37_source_S009",
+            "observed_nearest_brahmi": "kaṃ",
+            "observed_distance": 0.345068,
+            "null_le_observed_share": 0.576
+          },
+          {
+            "probe": "indus_local220_H938_source_S010",
+            "observed_nearest_brahmi": "o",
+            "observed_distance": 0.525419,
+            "null_le_observed_share": 0.438
+          },
+          {
+            "probe": "indus_local220_H940_source_S011",
+            "observed_nearest_brahmi": "ka",
+            "observed_distance": 0.476909,
+            "null_le_observed_share": 0.656
+          },
+          {
+            "probe": "indus_local110_H2148_source",
+            "observed_nearest_brahmi": "a",
+            "observed_distance": 0.47008,
+            "null_le_observed_share": 0.666
+          }
+        ],
+        "result": "failed_forger_gate"
+      },
+      "skeptic_record": {
+        "attacks_that_broke_claim": [
+          "The first local 220 run appeared to converge only because the source-photo threshold treated gray seal background as ink; adaptive masking removed that false convergence.",
+          "Independent local 220 source probes do not agree on one Brahmi value.",
+          "Random evolved variants of the same source probes often match Brahmi at least as well as the observed probes.",
+          "The Indus source probes are broad source-photo component crops, not hand-verified token-isolated vector glyphs.",
+          "Only the first 12 early Indoskript manuscripts were used, so even a tempting match would require a full-corpus rerun before promotion."
+        ],
+        "residual_value": "Reusable Brahmi acquisition, feature, nearest-neighbor, and null harness. A future claim needs token-isolated source crops, full early Brahmi coverage, and low null hit rates before any phonetic value is considered."
+      },
+      "accepted_count_increment": {}
+    },
+    {
+      "claim_id": "retracted_external_phonetic_anchor_length_pattern_values_2026_05_29",
+      "claim_type": "external_anchors",
+      "status": "retracted",
+      "retracted_date": "2026-05-29",
+      "claim": "Strict length and duplicate-pattern compatibility between externally attested cuneiform Meluhha-side strings and Mesopotamia/Gulf external Indus-style sign sequences yields candidate phonetic values.",
+      "reason_retracted": "The generated assignments are pure sign-count and duplicate-pattern matches. Pattern-matched synthetic targets reproduce every positive target at null >= observed share 1.000000, and the only target with a real duplicate constraint, e-me-bal-me-luh-ha, has zero strict candidates. The same four-sign external rows can be assigned to ma2-me-luh-ha, lu2-sun2-zi-da, and szu-i3-li2-su with equal formal success, so no value, sound, language, or translation is earned.",
+      "primary_evidence": [
+        {
+          "path": "data/meluhha/external_phonetic_anchor_summary.json",
+          "summary": "External phonetic-anchor attempt summary: 29 Mesopotamia/Gulf focus rows, five cuneiform targets, no surviving external phonetic anchor."
+        },
+        {
+          "path": "data/meluhha/external_phonetic_anchor_target_summary.csv",
+          "summary": "Target-level forger table: me-luh-ha has 2 focus candidates, ma2-me-luh-ha has 5, lu2-sun2-zi-da has 5, szu-i3-li2-su has 5, and e-me-bal-me-luh-ha has 0; every target has null >= observed share 1."
+        },
+        {
+          "path": "data/meluhha/external_phonetic_anchor_candidates.csv",
+          "summary": "Candidate assignments such as Kish 1970.1 000=me;643=luh;240=ha and Failaka 147.1 317=lu2;817=sun2;000=zi;090=da; all are marked retracted_length_pattern_only."
+        },
+        {
+          "path": "docs/meluhha_external_phonetic_anchor_attempts.md",
+          "summary": "Human-readable direct value-attempt note with tested targets, forger result, skeptic boundary, and decision."
+        }
+      ],
+      "forger_record": {
+        "tool": "data/meluhha/tools/attempt_external_phonetic_anchors.mjs",
+        "focus_objects_mesopotamia_gulf_with_parseable_signs": 29,
+        "external_objects_total_with_parseable_signs": 41,
+        "iterations_per_target": 2000,
+        "null_model": "Synthetic phonetic targets with the same length and duplicate pattern as each tested cuneiform target; strict matcher ignores phonetic identity and therefore should reproduce length/pattern-only matches.",
+        "target_results": [
+          {
+            "target": "me-luh-ha",
+            "pattern": "ABC",
+            "focus_exact_candidates": 2,
+            "all_external_exact_candidates": 4,
+            "forger_ge_observed_share": 1,
+            "decision": "failed_forger_gate_length_pattern_common"
+          },
+          {
+            "target": "ma2-me-luh-ha",
+            "pattern": "ABCD",
+            "focus_exact_candidates": 5,
+            "all_external_exact_candidates": 6,
+            "forger_ge_observed_share": 1,
+            "decision": "failed_forger_gate_length_pattern_common"
+          },
+          {
+            "target": "lu2-sun2-zi-da",
+            "pattern": "ABCD",
+            "focus_exact_candidates": 5,
+            "all_external_exact_candidates": 6,
+            "forger_ge_observed_share": 1,
+            "decision": "failed_forger_gate_length_pattern_common"
+          },
+          {
+            "target": "szu-i3-li2-su",
+            "pattern": "ABCD",
+            "focus_exact_candidates": 5,
+            "all_external_exact_candidates": 6,
+            "forger_ge_observed_share": 1,
+            "decision": "failed_forger_gate_length_pattern_common"
+          },
+          {
+            "target": "e-me-bal-me-luh-ha",
+            "pattern": "ABCBDE",
+            "focus_exact_candidates": 0,
+            "all_external_exact_candidates": 0,
+            "forger_ge_observed_share": 1,
+            "decision": "no_strict_pattern_candidate"
+          }
+        ],
+        "result": "failed_forger_gate"
+      },
+      "skeptic_record": {
+        "attacks_that_broke_claim": [
+          "No candidate is paired to a specific cuneiform attestation by accession, publication, owner, title, profession, or date.",
+          "The external Indus object rows remain T3_quarantined_lipi_metadata and are not source-image or catalogue validated in this workspace.",
+          "The same external four-sign rows support multiple unrelated cuneiform strings under the same formal rule.",
+          "The Lu-Sunzida prior already fails as a Meluhha detector with false-positive rate 0.933333.",
+          "The stronger duplicate-pattern interpreter-title target e-me-bal-me-luh-ha has no strict candidate."
+        ],
+        "residual_value": "This is now a reusable negative-control harness. A future candidate can be rerun only if object-level bridge evidence exists beyond length, site, and desired reading."
+      },
+      "accepted_count_increment": {}
+    },
+    {
+      "claim_id": "retracted_external_anchor_lu_sunzida_meluhha_diagnostic_2026_05_29",
+      "claim_type": "external_anchors",
+      "status": "retracted",
+      "retracted_date": "2026-05-29",
+      "claim": "The cuneiform string lu2-sun2-zi-da can be used as a Meluhha-diagnostic personal-name anchor for an Indus phonetic-value search.",
+      "reason_retracted": "Current CDLI atf_transliteration exports find lu2-sun2-zi-da in 15 distinct artifacts, but only one artifact has any Meluhha line and only that one has an adjacent Meluhha line. The name-alone detector therefore has 14 false-positive artifacts and a measured false-positive rate of 0.933333. P212982 preserves a real local adjacency, but not a diagnostic Meluhha name and not a paired Indus external anchor.",
+      "primary_evidence": [
+        {
+          "path": "data/meluhha/cdli_current_anchor_failure_summary.json",
+          "summary": "CDLI current query export summary: 79 distinct artifacts across seven Meluhha/Lu-Sunzida queries, 96 line contexts, and Lu-Sunzida detector false-positive rate 0.933333."
+        },
+        {
+          "path": "data/meluhha/cdli_current_lu_sunzida_test.csv",
+          "summary": "Matched negative table for 15 current CDLI Lu-Sunzida artifacts; only P212982 has adjacent line 6 lu2 me-luh-ha-ke4."
+        },
+        {
+          "path": "docs/meluhha_lu_sunzida_anchor_failure.md",
+          "summary": "Human-readable hard-anchor failure note with source routes, counts, forger, and skeptic boundary."
+        }
+      ],
+      "forger_record": {
+        "tool": "data/meluhha/tools/build_cdli_current_meluhha_exports.mjs",
+        "source_route": "CDLI search with atf_transliteration parameter and format=json",
+        "matched_negative_definition": "Current CDLI lu2-sun2-zi-da artifacts whose ATF has no Meluhha line.",
+        "lu_sunzida_distinct_artifacts": 15,
+        "artifacts_with_any_meluhha_line": 1,
+        "artifacts_with_adjacent_meluhha_line": 1,
+        "false_positive_artifacts_if_name_alone_marks_meluhha": 14,
+        "false_positive_rate_if_name_alone_marks_meluhha": 0.9333333333333333,
+        "result": "failed_forger_gate"
+      },
+      "skeptic_record": {
+        "attacks_that_broke_claim": [
+          "The candidate was tested against the current CDLI search export rather than the single famous seed row.",
+          "Fourteen current CDLI artifacts carry lu2-sun2-zi-da without any Meluhha line.",
+          "Most matched negatives are ordinary Ur III Puzrish-Dagan administrative contexts, so the name is not diagnostic for Meluhha.",
+          "P212982 lacks a paired external Indus object in the current local data.",
+          "The surviving adjacency does not prove the name is Meluhhan, only that it precedes a Meluhha title/origin line in one text."
+        ],
+        "residual_value": "P212982 remains a cuneiform-side onomastic lead and should stay in the Vector 1 inventory. It cannot be used as an accepted external phonetic anchor without a paired external Indus object or independent source-validated sign-sequence match."
+      },
+      "accepted_count_increment": {}
+    },
+    {
+      "claim_id": "candidate_struct_032_002_y_closure_branch_2026_05_29",
+      "claim_type": "structural_findings",
+      "status": "candidate_not_accepted",
+      "claim": "In the current Lipi-derived strict deduplicated all-002 layer, signs immediately after 002 divide into a high-terminal pole and a continuation pole. The strict post-hoc partition support is 817/820 versus 390/368/031/220; 861 remains closure-heavy but leaky in the older fixed-bin model, not part of the strict best two-pole partition.",
+      "scope": "T3 Lipi metadata/sign layer; strict complete closed rows deduplicated by text, site, type, and 002 position. Not yet source-normalized corpus-wide.",
+      "primary_evidence": [
+        {
+          "path": "data/open_prototype/reports/campaign_032_002_post_y_summary.json",
+          "summary": "All 002 strict dedup rows: 499; adjacent 032-002 strict dedup rows: 32."
+        },
+        {
+          "path": "data/open_prototype/reports/campaign_032_002_y_matched_terminality_summary.json",
+          "summary": "All 002 y_class LOO terminality accuracy 0.885772, Brier 0.097554, logloss 0.331038; adjacent 032-002 y_class accuracy 0.906250, Brier 0.106698, logloss 0.381811."
+        },
+        {
+          "path": "data/open_prototype/reports/campaign_032_002_y_forger_null_summary.json",
+          "summary": "Fixed-bin forger pass, 10,000 iterations per null model for all_002 and after_032 scopes."
+        },
+        {
+          "path": "data/open_prototype/reports/campaign_032_002_y_posthoc_partition_forger_summary.json",
+          "summary": "Post-hoc family-wise forger pass, 10,000 iterations per null model. In all_002 strict dedup, best partition is 817/820 versus 390/368/031/220 with z 13.211692, gap 0.954023, and worst FPR 0 for both z and gap. In adjacent 032-002 strict dedup, worst FPR is 0.5205 for z and 0.7552 for gap."
+        },
+        {
+          "path": "data/open_prototype/reports/campaign_002_y_partition_source_queue_summary.json",
+          "summary": "Source-normalization acquisition queue for the same strict all-002 post-hoc partition. Closure pole 817/820 has four grade >= 2 source hooks across 174 rows. After corrected supplemental public CISI route acquisition, branch pole 390/368/031/220 has 14 grade >= 2 route hooks across 43 rows: 390 has 2, 368 has 5, 031 has 4, and 220 has 3. These are route hooks only, not token-boxed or source-normalized evidence."
+        },
+        {
+          "path": "data/open_prototype/reports/campaign_032_002_861_002390x_branch_sign_ecology_20260531_summary.json",
+          "summary": "Replacement-branch recheck of the 002-390-X branch-pole ecology: 15 adjacent 002-390 frames re-derived from metadata, 125 is the largest branch and always continuing in-frame, while 095/692/705 are terminal in-frame. Promotion is blocked because non-125 continuation exceptions, source-binding gaps, and non-frame sign behavior prevent a value/function claim."
+        },
+        {
+          "path": "data/open_prototype/reports/campaign_002_y_branch_gap_public_source_summary.json",
+          "summary": "Supplemental public CISI acquisition for branch-gap signs 368/031/220: 29 target rows, 32 route rows, 12 public CISI plate-route candidates; by sign 368 has 5, 031 has 4, and 220 has 3 route candidates. The earlier H-44 hit was demoted as an OCR prefix/split-label trap from nearby H-449-style labels. Accepted claim increment remains 0."
+        },
+        {
+          "path": "data/open_prototype/reports/campaign_002_y_branch_gap_blind_packet_summary.json",
+          "summary": "Branch-gap blind source-box packet: 14 blind images, three primary targets, three backup targets, six scoring negatives, two quarantines, and accepted claim increment 0. Packet creation is a review gate only; it is not reviewed/scored evidence."
+        },
+        {
+          "path": "data/open_prototype/reports/campaign_002_y_branch_gap_blind_review_summary.json",
+          "summary": "Three stage-1 blind reviews scored for branch_gap_source_box_v1. Promotion decision is not_promotable_stage1_only_no_claim_increment: exact count matches are 2/14, 2/14, and 1/14; primary strict recovery is 1/3, 0/3, and 0/3; backups are 0/3 for all reviewers. All three reviewers counted BG001/M-12 as 10 visual tokens against a 9-token catalog string, making it a source/catalog tokenization audit lead, not accepted evidence."
+        },
+        {
+          "path": "data/open_prototype/reports/campaign_m12_token_count_audit_summary.json",
+          "summary": "M-12/BG001 manual source-side audit: Lipi 2540.1 and Mayig M-12A both preserve 9-token catalog witnesses, while BG001 has stable blind counts 10/10/10. The same packet has scoring-negative BG009/M-654 with stable 6/6/6 counts against a 4-token catalog string, so stable over-counting has observed packet false-positive control rate 1/6 = 0.166667. M-12 remains an audit target only, with accepted claim increment 0."
+        },
+        {
+          "path": "data/open_prototype/reports/campaign_032_002_y_skeptic_holdout_summary.json",
+          "summary": "Skeptic holdout: removal attacks, family-blocked LOO, matched-block contrasts, and right-edge tautology audit."
+        }
+      ],
+      "forger_record": {
+        "tool": "data/open_prototype/tools/campaign_032_002_y_forger_nulls.mjs",
+        "iterations_per_null_model": 10000,
+        "null_models": [
+          "terminal_shuffle_global",
+          "terminal_shuffle_register",
+          "y_shuffle_global",
+          "y_shuffle_register",
+          "independent_register_admin"
+        ],
+        "all_002_result": {
+          "rows": 499,
+          "observed_accuracy": 0.8857715430861723,
+          "observed_closure_minus_branch": 0.8907849829351536,
+          "max_recorded_fpr_across_nulls_and_metrics": 0
+        },
+        "after_032_result": {
+          "rows": 32,
+          "observed_accuracy": 0.90625,
+          "observed_closure_minus_branch": 0.85,
+          "max_recorded_fpr_across_nulls_and_metrics": 0.0283,
+          "limitation": "Small-N adjacent scope can be mimicked by register-preserved nulls; gap metric FPR reaches 0.0283 under y_shuffle_register."
+        },
+        "posthoc_partition_record": {
+          "tool": "data/open_prototype/tools/campaign_032_002_y_posthoc_partition_forger.mjs",
+          "iterations_per_null_model": 10000,
+          "null_models": [
+            "terminal_shuffle_global",
+            "terminal_shuffle_site_type_symbol",
+            "terminal_shuffle_site_type_symbol_prev1",
+            "y_shuffle_global",
+            "y_shuffle_site_type_symbol",
+            "register_bernoulli_terminals"
+          ],
+          "all_002_result": {
+            "rows": 499,
+            "eligible_y_signs": 7,
+            "closure_pole": "817:100/103;820:66/71",
+            "branch_pole": "390:0/14;368:0/11;031:0/9;220:0/9",
+            "observed_best_z": 13.211692,
+            "observed_best_gap": 0.954023,
+            "worst_fpr_best_z": 0,
+            "worst_fpr_best_gap": 0
+          },
+          "after_032_result": {
+            "rows": 32,
+            "observed_best_z": 1.526241,
+            "observed_best_gap": 0.272727,
+            "worst_fpr_best_z": 0.5205,
+            "worst_fpr_best_gap": 0.7552,
+            "limitation": "The adjacent 032-002 subset fails the post-hoc partition forger and must not be promoted as a standalone partition claim."
+          }
+        }
+      },
+      "skeptic_record": {
+        "attacks_survived": [
+          "Exact duplicate collapse by text/site/type/002-position in the matched-terminality script.",
+          "Register-only comparison using site/type/symbol underperforms y_class in the existing matched-terminality report.",
+          "Fixed-bin forger nulls preserving sign frequencies and register-conditioned terminal/Y distributions fail to reproduce the broad all-002 effect at 10,000 iterations per null model.",
+          "Post-hoc partition forger lets each null discover its own best high-terminal versus low-terminal Y-sign split; the broad all-002 split has worst FPR 0 for z and gap.",
+          "All-002 removal attacks preserve the y_class advantage after removing Mohenjo-daro SEAL:S, Harappa, Mohenjo-daro, SEAL:S, or unnamed CISI rows.",
+          "Family-blocked y_class prediction remains essentially unchanged in all-002 scope: accuracy 0.885772 and Brier 0.097540.",
+          "Right-edge exact matching was identified as invalid for terminality because matching text_len and idx_002 fixes the outcome; this attack is recorded as a tautology, not counted as survival evidence.",
+          "Branch-gap stage-1 blind token-count packet failed promotion; target and backup exact token counts are unstable. The follow-up M-12 audit keeps BG001/M-12 as a 10-versus-9 source/catalog audit lead only, because same-packet scoring negative BG009/M-654 reproduces stable over-counting with an observed control rate of 1/6."
+        ],
+        "unresolved_attacks": [
+          "The broad two-pole post-hoc partition now has a family-wise forger pass, but the older exact named-bin wording remains descriptive; 861 as leaky closure is not part of the strict best two-pole partition.",
+          "The strongest source-normalized tail-family evidence is not yet image/source-boxed: decisive rows are mostly needs_source_route or source_route_known_needs_image.",
+          "The partition source queue no longer has a route-inventory gap for branch signs 368, 031, and 220 after corrected supplemental public CISI acquisition, but the first branch-gap blind source-box packet failed stage-1 token-count promotion. BG001/M-12 is only a source/catalog tokenization audit lead: Lipi and Mayig agree at 9 tokens, all three blind reviewers counted 10 uncertain visual units, and same-packet scoring negative BG009/M-654 gives a stable-overcount false-positive control rate of 1/6. A source-normalized proof cannot yet be accepted.",
+          "Need source-normalized image-direction gate; the current skeptic run is still metadata-layer evidence.",
+          "Adjacent 032-002 scope becomes thin under SEAL:S removal, leaving only 5 rows and preventing acceptance for that narrower claim.",
+          "Need source-level direction/side checks for the candidate rows before any sign-function claim leaves the T3 metadata layer."
+        ],
+        "decision": "Do not increment accepted structural_findings yet."
+      }
+    },
+    {
+      "claim_id": "candidate_struct_effective_unicity_internal_degeneracy_2026_05_29",
+      "claim_type": "structural_findings",
+      "status": "candidate_not_accepted",
+      "claim": "In the strict Lipi working corpus, internal context measurably constrains local sign continuations and stored order has strong directionality, but unanchored phonetic assignments retain at least log2(571!) = 4410.970864 bits of global label-symmetry degeneracy.",
+      "scope": "T3 Lipi metadata/sign layer; readiness_bucket lipi_numeric_clean_candidate; exact numeric token-sequence collapse. Not source-normalized, not near-duplicate/source-family collapsed, and not a phonetic or language-family result.",
+      "primary_evidence": [
+        {
+          "path": "data/open_prototype/reports/effective_unicity_degeneracy_summary.json",
+          "summary": "Strict numeric-clean rows 2883; exact-collapsed rows 1798; provenance-aware sequence families 2059; full coverage has 571 unique signs, 8212 tokens, masked top-1 0.279591, top-5 0.534096, mean effective candidates 12.891819, and label-symmetry lower bound 4410.970864 bits."
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_degeneracy_curve.csv",
+          "summary": "Coverage curve from 10% to 100% exact-collapsed corpus coverage; mean effective candidates fall from 44.286775 to 12.891819 while label-symmetry bits rise with observed vocabulary."
+        },
+        {
+          "path": "docs/effective_unicity_methods_note.md",
+          "summary": "Standalone methods note framing the result as structural degeneracy, not decipherment."
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_known_script_comparator_summary.json",
+          "summary": "Known-script scarcity calibration: Indus masked top-1 0.279591/top-5 0.534096 versus Linear B Series D IVC-length-capped clean bidirectional top-1 0.435897/top-5 0.698006 and source-gapped sequence-leave-out top-1 0.294314/top-5 0.638796; Linear B source MD5 verified."
+        },
+        {
+          "path": "docs/effective_unicity_known_script_comparator.md",
+          "summary": "Human-readable Linear B Series D scarcity calibration note for the Vector 2 effective-unicity instrument."
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_sumtablets_comparator_summary.json",
+          "summary": "Known-script administrative calibration: SumTablets dataset colesimmons/SumTablets at SHA 11638cd142afbed716df43c55d8810d47fb9b52c; transliteration and glyph_names hidden; 1,798 selected glyph-only cuneiform admin line sequences; masked top-1 0.171753/top-5 0.373681; max null >= observed share 0 across five matched controls."
+        },
+        {
+          "path": "docs/effective_unicity_sumtablets_comparator.md",
+          "summary": "Human-readable SumTablets glyph-only known-script administrative calibration note for the Vector 2 effective-unicity instrument."
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_nonlinguistic_comparator_summary.json",
+          "summary": "Structured nonlinguistic comparator integration: masked top-1 survives the effective-unicity forger gate with max FPR 0, while broad bidirectional top-1 is rejected because administrative, emblem, and mixed admin/emblem generators exceed observed with null >= observed share 1."
+        },
+        {
+          "path": "docs/effective_unicity_nonlinguistic_comparator.md",
+          "summary": "Human-readable Vector 2 nonlinguistic comparator boundary: local context constraint survives narrowly, broad predictability is not language evidence."
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_realworld_nonlinguistic_comparator_summary.json",
+          "summary": "Real-world nonlinguistic and ambiguous-system comparator: Sproat 2014 XML bundle SHA-256 fb50ff5acb5221ba75e134cc7a36619e1d990b5680ad8681bcde5c447b6b8f73; Pictish stones masked top-1/top-5 0.450292/0.614035 and barn stars/hex signs 0.367123/0.673973, both above the Indus reference 0.279591/0.534096."
+        },
+        {
+          "path": "docs/effective_unicity_realworld_nonlinguistic_comparator.md",
+          "summary": "Human-readable real-world nonlinguistic and ambiguous-system calibration note for the Vector 2 effective-unicity instrument."
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_comparator_summary.json",
+          "summary": "Directionality comparator: leave-one-row-out stored-order versus reversed-order scoring. Strict Indus exact-collapsed stored-win share 0.947720; harsh top-10-edge-removed plus one-edit-family-collapsed Indus stored-win share 0.841096 with max null >= observed share 0; current real-world nonlinguistic and ambiguous comparators do not reach the harsh Indus value, while Linear B and SumTablets sit higher. Mayig P exact-collapsed pressure gives 0.943750 and harsh Mayig drops to 0.666667 over 24 rows."
+        },
+        {
+          "path": "docs/effective_unicity_directionality_comparator.md",
+          "summary": "Human-readable directionality calibration note for the Vector 2 effective-unicity instrument."
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_skeptic_controls_summary.json",
+          "summary": "Directionality skeptic controls: source-visible 861 terminal/tail probe has stored-win share 1.000000 but max null >= observed share 1; matched Lipi/Mayig overlap exact headline is not admissible support because top-10-edge-removed overlap drops to Lipi 0.363636 and Mayig 0.473684, each with max null >= observed share 1."
+        },
+        {
+          "path": "docs/effective_unicity_directionality_skeptic_controls.md",
+          "summary": "Human-readable support-lane retraction for source-visible 861 and matched Lipi/Mayig overlap."
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_block_controls_summary.json",
+          "summary": "Directionality block controls: harsh top-10-edge-removed one-edit-family-collapsed Indus directionality survives site/type/symbol holdout at stored-win share 0.827397 with max null >= observed share 0, but full leave-site-out is not clean at 0.753425 with max null >= observed share 0.100000."
+        },
+        {
+          "path": "docs/effective_unicity_directionality_block_controls.md",
+          "summary": "Human-readable block-holdout boundary for the Vector 2 directionality candidate."
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_site_balance_summary.json",
+          "summary": "Directionality site-balance control: Mohenjo-daro plus Harappa balanced samples survive at median stored-win share 0.803571 with max paired null >= observed share 0.003 over 1,000 iterations, but Lothal-inclusive and top-five-site balanced samples are null-compatible."
+        },
+        {
+          "path": "docs/effective_unicity_directionality_site_balance.md",
+          "summary": "Human-readable site-balance boundary for the Vector 2 directionality candidate."
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_site_profiles_summary.json",
+          "summary": "Directionality site profiles: Mohenjo-daro and Harappa each survive within-site controls at stored-win shares 0.816038 and 0.741071, while Lothal is null-compatible at 0.312500."
+        },
+        {
+          "path": "docs/effective_unicity_directionality_site_profiles.md",
+          "summary": "Human-readable within-site profile boundary for the Vector 2 directionality candidate."
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_policy_controls_summary.json",
+          "summary": "Directionality policy controls: the harsh scope is 354 R/L rows and 11 L/R rows; R/L-only scoring preserves the signal at 0.838983, and random row-orientation flips destroy it, but physical source direction remains unvalidated."
+        },
+        {
+          "path": "docs/effective_unicity_directionality_policy_controls.md",
+          "summary": "Human-readable recorded-direction policy boundary for the Vector 2 directionality candidate."
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_influence_controls_summary.json",
+          "summary": "Directionality influence controls: no single supportive row carries the harsh signal; largest supportive row delta is 0.005931 and largest absolute row effect is adverse, while the largest coarse site/type/symbol family effect is 0.028975."
+        },
+        {
+          "path": "docs/effective_unicity_directionality_influence_controls.md",
+          "summary": "Human-readable influence and concentration boundary for the Vector 2 directionality candidate."
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_formula_family_controls_summary.json",
+          "summary": "Directionality formula-family controls: harsh leave-source-convention-out scoring using site/type/material/symbol/cult/direction survives at stored-win share 0.832877 with max admissible null >= observed share 0.020000; harsh source-convention collapse survives at 0.805714 with max admissible null >= observed share 0.005000; harsh L/R fails with stored-win share 0 and max null >= observed share 1."
+        },
+        {
+          "path": "docs/effective_unicity_directionality_formula_family_controls.md",
+          "summary": "Human-readable metadata source-convention and formula-family boundary for the Vector 2 directionality candidate."
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_route_conditioned_control_summary.json",
+          "summary": "Route-conditioned directionality support gate: in the frozen top-79 public-route probe universe, 38 public CISI plate-route rows score stored-win share 0.684211; page collapse gives 0.625000, source-register collapse gives 0.619048, source-convention collapse gives 0.652174, and matched route-label nulls reproduce or exceed the observed route share with null >= observed share 1."
+        },
+        {
+          "path": "docs/effective_unicity_directionality_route_conditioned_control.md",
+          "summary": "Human-readable failed route-conditioned support gate for public CISI route visibility and v2e signband-like route subsets."
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_source_queue_summary.json",
+          "summary": "Directionality source queue: 324 major-site harsh rows ranked for source validation; 223 need a public route or source request, 94 have only non-source-grade catalogue hints, and five have immediate route/crop-review hooks. M-70 is row-level source-visible with a broad order-window continuation candidate, but its matched-negative blind token-box packet failed promotion."
+        },
+        {
+          "path": "docs/effective_unicity_directionality_source_queue.md",
+          "summary": "Human-readable source-validation acquisition queue for the Vector 2 directionality candidate."
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_public_route_probe_summary.json",
+          "summary": "Public CISI OCR route probe for 79 top high-pressure source-queue rows: 93 route rows, 38 public plate-route candidates, one data/register-only route, 40 not found, and accepted claim increment 0."
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_route_visual_triage_summary.json",
+          "summary": "Manual visual triage of nine top route hits: four attempted no-overlay target crops (H-654, M-1310, M-1320, M-811), accepted claim increment 0. The follow-up v1 and v2b blind packets failed promotion."
+        },
+        {
+          "path": "docs/effective_unicity_directionality_public_route_probe.md",
+          "summary": "Human-readable public CISI route probe and visual-admissibility boundary for the Vector 2 directionality source queue."
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_m70_source_pilot.csv",
+          "summary": "M-70 source pilot: public CISI face/impression pair visually checked at row level with a broad order-window continuation candidate; accepted claim increment remains zero."
+        },
+        {
+          "path": "docs/effective_unicity_directionality_m70_source_pilot.md",
+          "summary": "Human-readable M-70 source pilot from the directionality source queue."
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_public_route_probe_v2_summary.json",
+          "summary": "Corrected public CISI OCR route probe v2: same 79 high-pressure target rows, 93 route rows, 38 public plate-route candidates, one data/register-only route, 40 not found, but with the DjVu five-coordinate WORD parser fixed."
+        }
+      ],
+      "forger_record": {
+        "tool": "data/open_prototype/tools/effective_unicity_degeneracy.mjs",
+        "iterations_per_null_model": 100,
+        "null_masked_sample_limit": 1200,
+        "null_models": [
+          "global_token_shuffle",
+          "row_internal_shuffle",
+          "position_slot_shuffle",
+          "edge_frame_shuffle",
+          "register_blocked_position_shuffle",
+          "template_admin_code"
+        ],
+        "full_coverage_masked_top1": {
+          "observed": 0.2795908426692645,
+          "max_recorded_fpr_across_tested_nulls": 0,
+          "null_means": {
+            "global_token_shuffle": 0.1064,
+            "row_internal_shuffle": 0.12008333333333329,
+            "position_slot_shuffle": 0.16523333333333326,
+            "edge_frame_shuffle": 0.16502499999999998,
+            "register_blocked_position_shuffle": 0.16935833333333325,
+            "template_admin_code": 0.0878666666666667
+          }
+        },
+        "failed_metrics": [
+          "context-profile uniqueness is not accepted because noise-like controls can be more singleton-heavy.",
+          "mean effective-candidate count is not accepted because edge-frame and position/register controls often match or improve the observed ambiguity score.",
+          "broad bidirectional predictability is rejected as language or semantic evidence because structured administrative, emblem, and mixed admin/emblem nulls exceed the observed broad top-1 score in every rerun iteration."
+        ],
+        "known_script_comparator": {
+          "tool": "data/open_prototype/tools/effective_unicity_known_script_comparator.mjs",
+          "source": "Linear B Series D Samples.txt / Zenodo DOI 10.5281/zenodo.7404653",
+          "source_md5": "0c9b9190b86840c82cafdbf4f4b8c827",
+          "source_md5_verified": true,
+          "indus_masked_top1": 0.279591,
+          "indus_masked_top5": 0.534096,
+          "linear_b_ivc_length_clean_bidirectional_top1": 0.435897,
+          "linear_b_ivc_length_clean_bidirectional_top5": 0.698006,
+          "linear_b_ivc_length_gapped_sequence_loo_top1": 0.294314,
+          "linear_b_ivc_length_gapped_sequence_loo_top5": 0.638796,
+          "interpretation": "Indus local constraint is calibrated against a known readable script at Indus-like lengths, but remains below clean Linear B context recovery and carries much larger unanchored label-symmetry burden."
+        },
+        "sumtablets_known_script_comparator": {
+          "tool": "data/open_prototype/tools/effective_unicity_sumtablets_comparator.mjs",
+          "source": "Hugging Face dataset colesimmons/SumTablets",
+          "source_sha": "11638cd142afbed716df43c55d8810d47fb9b52c",
+          "license": "cc-by-4.0",
+          "retained_fields": [
+            "id",
+            "period",
+            "genre",
+            "glyphs"
+          ],
+          "hidden_fields": [
+            "transliteration",
+            "glyph_names"
+          ],
+          "fetched_train_rows": 2000,
+          "selected_exact_line_sequences": 1798,
+          "sumtablets_unique_glyphs": 358,
+          "sumtablets_masked_top1": 0.171753,
+          "sumtablets_masked_top5": 0.373681,
+          "sumtablets_masked_mrr": 0.274089,
+          "sumtablets_masked_top1_max_control_null_ge_observed_share": 0,
+          "interpretation": "SumTablets broadens known-script calibration with an administrative cuneiform corpus stripped to glyphs. It is known writing, not a real-world nonlinguistic comparator, and does not identify any Indus value."
+        },
+        "nonlinguistic_comparator": {
+          "tool": "data/open_prototype/tools/effective_unicity_nonlinguistic_comparator.mjs",
+          "synthetic_summary": "data/open_prototype/reports/lipi_synthetic_comparator_summary.json",
+          "structured_summary": "data/open_prototype/reports/lipi_structured_null_summary.json",
+          "integrated_summary": "data/open_prototype/reports/effective_unicity_nonlinguistic_comparator_summary.json",
+          "iterations_per_structured_control": 20,
+          "masked_top1_observed": 0.279591,
+          "masked_top1_max_recorded_fpr": 0,
+          "broad_bidirectional_top1_observed": 0.325865,
+          "broad_bidirectional_top1_structured_null_ge_observed_share": {
+            "administrative_register_code": 1,
+            "emblem_formula_code": 1,
+            "mixed_admin_emblem_code": 1
+          },
+          "broad_bidirectional_top1_structured_null_means": {
+            "administrative_register_code": 0.472924,
+            "emblem_formula_code": 0.443351,
+            "mixed_admin_emblem_code": 0.415069
+          },
+          "interpretation": "Simple shuffles are too weak; structured nonlinguistic generators kill broad predictability as a language diagnostic while leaving the narrower masked-sign local constraint candidate alive."
+        },
+        "realworld_nonlinguistic_comparator": {
+          "tool": "data/open_prototype/tools/effective_unicity_realworld_nonlinguistic_comparator.mjs",
+          "source": "Sproat 2014 non-linguistic symbols XML corpus bundle",
+          "source_url": "https://rws.xoba.com/data/non-linguistic-symbols/corpora.zip",
+          "source_zip_sha256": "fb50ff5acb5221ba75e134cc7a36619e1d990b5680ad8681bcde5c447b6b8f73",
+          "summary": "data/open_prototype/reports/effective_unicity_realworld_nonlinguistic_comparator_summary.json",
+          "extracted_sequences": "data/open_prototype/nonlinguistic/sproat2014/sproat2014_extracted_sequences.csv",
+          "included_corpora": [
+            "Pictish_stones",
+            "Mesopotamian_kudurru_deity_symbols",
+            "Totem_poles",
+            "Barn_stars_hex_signs",
+            "Vinca_symbols",
+            "Weather_icons"
+          ],
+          "indus_masked_top1": 0.279591,
+          "indus_masked_top5": 0.534096,
+          "comparators_at_or_above_indus_masked_top1": [
+            "Pictish_stones",
+            "Barn_stars_hex_signs"
+          ],
+          "pictish_masked_top1": 0.450292,
+          "pictish_masked_top5": 0.614035,
+          "barn_stars_masked_top1": 0.367123,
+          "barn_stars_masked_top5": 0.673973,
+          "weather_icons_masked_top1": 0.265555,
+          "weather_icons_masked_top5": 0.790543,
+          "interpretation": "Masked local predictability is not accepted as language evidence because real-world nonlinguistic or ambiguous systems can meet or exceed the Indus reference under the same instrument."
+        },
+        "directionality_comparator": {
+          "tool": "data/open_prototype/tools/effective_unicity_directionality_comparator.mjs",
+          "summary": "data/open_prototype/reports/effective_unicity_directionality_comparator_summary.json",
+          "null_iterations_per_control": 80,
+          "controls": [
+            "global_token_shuffle",
+            "row_internal_shuffle",
+            "position_slot_shuffle",
+            "edge_frame_shuffle"
+          ],
+          "indus_exact_stored_win_share": 0.94772,
+          "indus_exact_max_null_ge_observed_share": 0,
+          "indus_harsh_scope": "top10_edge_removed_one_edit_family_collapsed",
+          "indus_harsh_rows": 365,
+          "indus_harsh_tokens": 1725,
+          "indus_harsh_unique_tokens": 358,
+          "indus_harsh_stored_win_share": 0.841096,
+          "indus_harsh_max_null_ge_observed_share": 0,
+          "mayig_p_exact_stored_win_share": 0.94375,
+          "mayig_p_exact_max_null_ge_observed_share": 0.075,
+          "mayig_p_harsh_scope": "p_namespace_top10_edge_removed_one_edit_family_collapsed",
+          "mayig_p_harsh_rows": 24,
+          "mayig_p_harsh_stored_win_share": 0.666667,
+          "mayig_p_harsh_max_null_ge_observed_share": 0.05,
+          "paired_crosswalk_lipi_stored_win_share": 0.9375,
+          "paired_crosswalk_lipi_max_null_ge_observed_share": 0.0375,
+          "paired_crosswalk_mayig_stored_win_share": 0.929134,
+          "paired_crosswalk_mayig_max_null_ge_observed_share": 0.2125,
+          "skeptic_controls": {
+            "tool": "data/open_prototype/tools/effective_unicity_directionality_skeptic_controls.mjs",
+            "summary": "data/open_prototype/reports/effective_unicity_directionality_skeptic_controls_summary.json",
+            "null_iterations_per_control": 200,
+            "source_visible_861_terminal_tail_probe": {
+              "rows": 12,
+              "stored_win_share": 1,
+              "max_null_ge_observed_share": 1,
+              "decision": "retracted_as_directionality_support"
+            },
+            "matched_overlap_exact": {
+              "lipi_stored_win_share": 0.9375,
+              "lipi_max_null_ge_observed_share": 0.035,
+              "mayig_stored_win_share": 0.929134,
+              "mayig_max_null_ge_observed_share": 0.2
+            },
+            "matched_overlap_top10_edge_removed": {
+              "lipi_rows": 22,
+              "lipi_stored_win_share": 0.363636,
+              "lipi_max_null_ge_observed_share": 1,
+              "mayig_rows": 19,
+              "mayig_stored_win_share": 0.473684,
+              "mayig_max_null_ge_observed_share": 1,
+              "decision": "retracted_as_directionality_support"
+            }
+          },
+          "block_controls": {
+            "tool": "data/open_prototype/tools/effective_unicity_directionality_block_controls.mjs",
+            "summary": "data/open_prototype/reports/effective_unicity_directionality_block_controls_summary.json",
+            "null_iterations_per_control": 200,
+            "harsh_one_edit_leave_site_type_symbol_out": {
+              "rows": 365,
+              "stored_win_share": 0.827397,
+              "max_null_ge_observed_share": 0
+            },
+            "harsh_one_edit_leave_site_out": {
+              "rows": 365,
+              "stored_win_share": 0.753425,
+              "max_null_ge_observed_share": 0.1
+            },
+            "register_edge_family_leave_site_type_symbol_out": {
+              "rows": 528,
+              "stored_win_share": 0.835227,
+              "max_null_ge_observed_share": 0.005
+            },
+            "register_edge_family_leave_site_out": {
+              "rows": 528,
+              "stored_win_share": 0.774621,
+              "max_null_ge_observed_share": 0.265
+            },
+            "interpretation": "Harsh directionality survives register-block holdout but not full site holdout, so it cannot be described as site-generalized."
+          },
+          "site_balance_controls": {
+            "tool": "data/open_prototype/tools/effective_unicity_directionality_site_balance.mjs",
+            "summary": "data/open_prototype/reports/effective_unicity_directionality_site_balance_summary.json",
+            "iterations": 1000,
+            "source_scope": "top10_edge_removed_one_edit_family_collapsed",
+            "site_inventory": {
+              "Mohenjo-daro": 212,
+              "Harappa": 112,
+              "Lothal": 16,
+              "Kalibangan": 7,
+              "Chanhu-daro": 6,
+              "Allahdino": 3,
+              "Nausharo": 3,
+              "Bala-kot": 2,
+              "Banawali": 2,
+              "Khirsara": 1,
+              "Unknown": 1
+            },
+            "mohenjo_harappa_balanced": {
+              "cap_per_site": 112,
+              "rows_per_iteration": 224,
+              "observed_median": 0.803571,
+              "observed_p05": 0.776786,
+              "observed_p95": 0.834821,
+              "max_paired_null_ge_observed_share": 0.003
+            },
+            "mohenjo_harappa_lothal_balanced": {
+              "cap_per_site": 16,
+              "rows_per_iteration": 48,
+              "observed_median": 0.541667,
+              "max_paired_null_ge_observed_share": 0.528
+            },
+            "top5_sites_balanced": {
+              "cap_per_site": 6,
+              "rows_per_iteration": 30,
+              "observed_median": 0.433333,
+              "max_paired_null_ge_observed_share": 0.616
+            },
+            "interpretation": "Mohenjo-daro plus Harappa balanced resampling survives, but Lothal-inclusive and top-five-site balanced samples are null-compatible. Do not describe the result as pan-Indus."
+          },
+          "site_profile_controls": {
+            "tool": "data/open_prototype/tools/effective_unicity_directionality_site_profiles.mjs",
+            "summary": "data/open_prototype/reports/effective_unicity_directionality_site_profiles_summary.json",
+            "null_iterations_per_control": 1000,
+            "min_site_rows": 10,
+            "Mohenjo-daro": {
+              "rows": 212,
+              "stored_win_share": 0.816038,
+              "max_null_ge_observed_share": 0.002
+            },
+            "Harappa": {
+              "rows": 112,
+              "stored_win_share": 0.741071,
+              "max_null_ge_observed_share": 0.004
+            },
+            "Lothal": {
+              "rows": 16,
+              "stored_win_share": 0.3125,
+              "max_null_ge_observed_share": 0.988
+            },
+            "interpretation": "Mohenjo-daro and Harappa each carry internal directionality in the harsh Lipi T3 layer; Lothal is null-compatible in the current small harsh subset. Smaller sites are unresolved."
+          },
+          "policy_controls": {
+            "tool": "data/open_prototype/tools/effective_unicity_directionality_policy_controls.mjs",
+            "summary": "data/open_prototype/reports/effective_unicity_directionality_policy_controls_summary.json",
+            "null_iterations": 1000,
+            "direction_distribution": {
+              "R/L": 354,
+              "L/R": 11
+            },
+            "all_harsh_stored_as_is": {
+              "rows": 365,
+              "stored_win_share": 0.841096
+            },
+            "R_L_only": {
+              "rows": 354,
+              "stored_win_share": 0.838983
+            },
+            "Mohenjo_daro_R_L_only": {
+              "rows": 209,
+              "stored_win_share": 0.813397
+            },
+            "Harappa_R_L_only": {
+              "rows": 104,
+              "stored_win_share": 0.769231
+            },
+            "flip_LR_only": {
+              "flipped_rows": 11,
+              "stored_win_share": 0.813699
+            },
+            "random_row_flips_all_harsh": {
+              "null_mean": 0.471134,
+              "null_p95": 0.526027,
+              "null_ge_stored_as_is_share": 0
+            },
+            "interpretation": "The directionality signal survives R/L-only restriction and is destroyed by random row-level orientation flips, but recorded direction is too imbalanced and metadata-derived to validate physical source-image direction."
+          },
+          "influence_controls": {
+            "tool": "data/open_prototype/tools/effective_unicity_directionality_influence_controls.mjs",
+            "summary": "data/open_prototype/reports/effective_unicity_directionality_influence_controls_summary.json",
+            "all_harsh": {
+              "rows": 365,
+              "stored_win_share": 0.841096,
+              "largest_supportive_row_delta": 0.005931,
+              "largest_absolute_row_delta": 0.010552,
+              "largest_absolute_row": "L-115",
+              "largest_supportive_family": "Mohenjo-daro|SEAL:R|None",
+              "largest_supportive_family_delta": 0.028975
+            },
+            "major_sites": {
+              "rows": 324,
+              "stored_win_share": 0.845679
+            },
+            "interpretation": "The harsh directionality signal is not dependent on one row, but coarse site/type/symbol family concentration remains strong enough to require source-family and workshop-copy review."
+          },
+          "formula_family_controls": {
+            "tool": "data/open_prototype/tools/effective_unicity_directionality_formula_family_controls.mjs",
+            "summary": "data/open_prototype/reports/effective_unicity_directionality_formula_family_controls_summary.json",
+            "null_iterations_per_control": 200,
+            "source_convention_key": "site|type|material|symbol|cult|direction",
+            "null_control_policy": "Identity-preserving degenerate controls are recorded in max_all_null_ge_observed_share but excluded from max_admissible_null_ge_observed_share.",
+            "harsh_leave_source_convention": {
+              "rows": 365,
+              "holdout_blocks": 175,
+              "stored_win_share": 0.832877,
+              "mean_stored_minus_reversed_per_transition": 1.024921,
+              "median_stored_minus_reversed_per_transition": 1.007465,
+              "max_admissible_null_ge_observed_share": 0.02
+            },
+            "harsh_source_convention_collapsed": {
+              "rows": 175,
+              "stored_win_share": 0.805714,
+              "mean_stored_minus_reversed_per_transition": 0.817965,
+              "median_stored_minus_reversed_per_transition": 0.761131,
+              "max_admissible_null_ge_observed_share": 0.005,
+              "max_all_null_ge_observed_share": 1,
+              "degenerate_null_controls": "register_position_shuffle"
+            },
+            "harsh_RL_only": {
+              "rows": 354,
+              "stored_win_share": 0.830508,
+              "max_admissible_null_ge_observed_share": 0.015
+            },
+            "exact_LR_only": {
+              "rows": 83,
+              "stored_win_share": 0.771084,
+              "max_admissible_null_ge_observed_share": 0.52
+            },
+            "harsh_LR_only": {
+              "rows": 11,
+              "stored_win_share": 0,
+              "mean_stored_minus_reversed_per_transition": -0.161676,
+              "max_admissible_null_ge_observed_share": 1
+            },
+            "interpretation": "The harsh directionality signal survives source-convention holdout and collapse in the dominant R/L metadata layer, but L/R fails and the result cannot be described as physical direction, bidirectional validation, or source-image normalization."
+          },
+          "source_queue": {
+            "tool": "data/open_prototype/tools/effective_unicity_directionality_source_queue.mjs",
+            "summary": "data/open_prototype/reports/effective_unicity_directionality_source_queue_summary.json",
+            "major_site_rows": 324,
+            "major_site_stored_win_share": 0.845679,
+            "source_index_cisis_with_any_hint": 912,
+            "source_csv_files_scanned": 46,
+            "source_validation_needs": {
+              "find_public_or_request_source_route": 223,
+              "replace_non_source_grade_catalogue_hint": 94,
+              "box_direction_from_existing_public_route": 2,
+              "request_or_locate_source_image": 2,
+              "review_existing_crop_for_direction_and_token_order": 3
+            },
+            "top_immediate_route_target": {
+              "cisi": "M-70",
+              "text": "+226-032-002-390-692+",
+              "diff_per_transition": 3.008463,
+              "source_validation_need": "review_existing_crop_for_direction_and_token_order",
+              "source_status": "source_single_line:yes | pass_branch_head_continuation_candidate | confidence:medium"
+            },
+            "public_route_probe": {
+              "tool": "data/open_prototype/tools/effective_unicity_directionality_public_route_probe.py",
+              "summary": "data/open_prototype/reports/effective_unicity_directionality_public_route_probe_summary.json",
+              "target_rows": 79,
+              "route_rows": 93,
+              "targets_with_any_route": 39,
+              "targets_with_plate_route_candidate": 38,
+              "targets_with_data_route_only": 1,
+              "targets_not_found": 40,
+              "accepted_claims_increment": 0,
+              "interpretation": "Public OCR route candidates only; not source-normalized token order, physical direction, sign identity, meaning, phonetics, language family, or translation."
+            },
+            "route_conditioned_controls": {
+              "tool": "data/open_prototype/tools/effective_unicity_directionality_route_conditioned_control.mjs",
+              "summary": "data/open_prototype/reports/effective_unicity_directionality_route_conditioned_control_summary.json",
+              "null_iterations": 5000,
+              "frozen_subset": "probe_id=directionality_public_route_probe_v1; priority_band in P1_acquire_high_positive_source/P1_audit_reversed_anomaly; queue_rank<=80",
+              "top79_public_route_probe_rows": {
+                "rows": 79,
+                "stored_win_share": 0.670886,
+                "public_route_rows": 38,
+                "no_public_route_rows": 41
+              },
+              "public_route_38_rows": {
+                "rows": 38,
+                "stored_win_share": 0.684211,
+                "page_collapsed_stored_win_share": 0.625,
+                "source_register_collapsed_stored_win_share": 0.619048,
+                "source_convention_collapsed_stored_win_share": 0.652174
+              },
+              "v2e_possible_or_strong_route_rows": {
+                "rows": 31,
+                "stored_win_share": 0.741935,
+                "page_collapsed_stored_win_share": 0.692308,
+                "source_register_collapsed_stored_win_share": 0.647059,
+                "source_convention_collapsed_stored_win_share": 0.684211
+              },
+              "matched_route_label_nulls": {
+                "max_null_ge_observed_route_share": 1,
+                "max_null_ge_observed_diff": 1,
+                "max_null_ge_abs_observed_diff": 1
+              },
+              "decision": "failed_promotion_route_conditioned_subset_not_source_normalized_evidence",
+              "accepted_claims_increment": 0,
+              "interpretation": "Public route availability and v2e signband-like route visibility cannot promote the directionality candidate; the route-visible subset weakens under source/page collapse and is reproduced by matched route-label nulls."
+            },
+            "public_route_visual_triage": {
+              "tool": "data/open_prototype/tools/effective_unicity_directionality_route_visual_triage.py",
+              "summary": "data/open_prototype/reports/effective_unicity_directionality_route_visual_triage_summary.json",
+              "manually_visual_reviewed": 9,
+              "immediate_blind_packet_candidates": 4,
+              "candidate_cisis": [
+                "H-654",
+                "M-1310",
+                "M-1320",
+                "M-811"
+              ],
+              "accepted_claims_increment": 0,
+              "forger_boundary": "The follow-up no-overlay blind packet has now been run and failed; visual admissibility tiers remain candidate selectors only.",
+              "skeptic_boundary": "Visual route triage cannot validate source-normalized token order, physical direction, sign identity, meaning, phonetic value, language family, or translation."
+            },
+            "no_overlay_blind_packet": {
+              "tool": "data/open_prototype/tools/effective_unicity_directionality_blind_packet.py",
+              "scorer": "data/open_prototype/tools/score_effective_unicity_directionality_blind_reviews.py",
+              "summary": "data/open_prototype/reports/effective_unicity_directionality_blind_packet_summary.json",
+              "review_summary": "data/open_prototype/reports/effective_unicity_directionality_blind_packet_review_summary.json",
+              "packet_id": "directionality_no_overlay_packet_v1",
+              "blind_items": 15,
+              "primary_target_images": 7,
+              "primary_target_unique_cisis": 4,
+              "scoring_negative_images": 7,
+              "scoring_negative_unique_cisis": 7,
+              "quarantine_negative_images": 1,
+              "accepted_claims_increment": 0,
+              "target_cisis": [
+                "H-654",
+                "M-1310",
+                "M-1320",
+                "M-811"
+              ],
+              "scoring_negative_cisis": [
+                "H-665",
+                "M-1273",
+                "M-1458",
+                "M-1523",
+                "M-376",
+                "M-381",
+                "M-525"
+              ],
+              "forger_denominator_floor": 10,
+              "planned_real_scoring_negative_unique_cisis": 12,
+              "current_real_scoring_negative_unique_cisis": 7,
+              "review_results": {
+                "reviewer_count": 2,
+                "max_yes_only_false_positive_rate": 0.3333333333333333,
+                "max_conservative_false_positive_or_uncertain_rate": 0.6666666666666666,
+                "promotion_gate_decision": "failed_packet_gate_no_promotion",
+                "promotion_gate_failed_reasons": [
+                  "below_forger_real_negative_denominator_floor",
+                  "scoring_negatives_produced_hard_count_boxable_false_positives",
+                  "not_all_targets_cleanly_recovered"
+                ]
+              },
+              "interpretation": "The no-overlay blind packet failed its promotion gate. It does not validate source-normalized token order, physical direction, sign identity, sign meaning, phonetics, language family, translation, or an accepted structural claim."
+            },
+            "m70_source_pilot": {
+              "status": "row_level_source_visible_broad_order_window_candidate",
+              "accepted_claims_increment": 0,
+              "face_signband_sha256": "3F9E0553A46A78DDC3BFA51E03CD39F09E77485DA586B7CF346147E668211218",
+              "impression_signband_sha256": "8AECC8B6C7FC8708134FC638A95736F1D6737CCD4A9A2F07207F72B1A3D75696",
+              "token_order_overlay_sha256": "A96FB11A300EED3094D2E2B0206408F85D480CD332859F17591EB54A5334A634",
+              "token_order_verdict": "pass_branch_head_continuation_candidate",
+              "token_order_confidence": "medium"
+            },
+            "m70_blind_token_box_packet": {
+              "tool": "data/open_prototype/tools/effective_unicity_m70_blind_token_box_packet.py",
+              "scorer": "data/open_prototype/tools/score_effective_unicity_m70_blind_token_box_reviews.mjs",
+              "summary": "data/open_prototype/reports/effective_unicity_m70_blind_token_box_packet_summary.json",
+              "review_summary": "data/open_prototype/reports/effective_unicity_m70_blind_token_box_review_summary.json",
+              "packet_id": "m70_order_window_pilot_v1",
+              "blind_items": 15,
+              "primary_targets": 2,
+              "positive_calibrators": 3,
+              "scoring_negatives": 9,
+              "scoring_negative_unique_cisis": 7,
+              "quarantine_negatives": 1,
+              "accepted_claims_increment": 0,
+              "null_question": "Is M-70's broad 032-002-390-692 order window distinguishable from matched source/metadata false positives produced by the same broad-window procedure on rows with comparable site, type, length, and local-image availability but without the same catalog-slot adjacency?",
+              "review_results": {
+                "reviewer_count": 2,
+                "min_target_strict_recovery_rate": 0.5,
+                "max_scoring_negative_yes_only_false_positive_rate": 0.7142857142857143,
+                "max_scoring_negative_conservative_false_positive_or_uncertain_rate": 0.7777777777777778,
+                "promotion_gate_decision": "failed_packet_gate_no_promotion",
+                "promotion_gate_failed_reasons": [
+                  "not_all_targets_strictly_recovered",
+                  "scoring_negatives_produced_hard_target_like_hits"
+                ]
+              },
+              "interpretation": "The blind packet failed its promotion gate. It does not validate M-70 token identity, physical direction, sign meaning, phonetics, language family, translation, or an accepted structural claim."
+            },
+            "interpretation": "This is an acquisition queue only. It identifies source-normalization work needed before any physical direction or source-normalized transcription claim can be accepted. M-70 is row-level source-visible with a broad order-window continuation candidate, but its blind token-box packet failed promotion to source-boxed order-window status. The public route probe added four attempted visual target crops, but the route-conditioned control rejects public route availability itself as support. Their v1 no-overlay matched-negative packet failed promotion, and the stricter v2b packet also failed because real denominator rows leaked labels and target counts remained unstable. None of this is accepted evidence."
+          },
+          "highest_realworld_nonlinguistic_or_ambiguous_comparator": {
+            "corpus": "Pictish_stones",
+            "stored_win_share": 0.802139,
+            "max_null_ge_observed_share": 0
+          },
+          "known_script_comparators": {
+            "linear_b_series_d_stored_win_share": 0.996403,
+            "sumtablets_stored_win_share": 0.935484
+          },
+          "interpretation": "Directionality is a sharper structural discriminator than masked predictability in the current battery. Broad harsh Indus directionality remains live and survives site/type/symbol holdout, Mohenjo-daro plus Harappa balanced resampling, within-site profiles for those two major sites, R/L-only restriction, row/family influence checks, and metadata source-convention collapse. Source-visible 861 terminal/tail, matched Lipi/Mayig overlap, and public-route visibility are retracted as support lanes; full leave-site-out is not clean, Lothal is null-compatible, minor-site balanced samples are null-compatible, L/R fails harsh controls, physical source direction remains unvalidated, and the source queue shows the major-site rows are mostly source-dark despite the M-70 row-level pilot and later public route probe. The route-conditioned control shows 38 public-route rows at stored-win share 0.684211, source-register collapse at 0.619048, and matched route-label nulls reproducing the route subset score. The M-70 blind token-box packet failed promotion with high matched-negative false positives. The H-654/M-1310/M-1320/M-811 no-overlay blind packet also failed promotion with max yes-only FPR 0.333333 and max conservative FPR 0.666667. Harsh Mayig is too small, and the result remains structural-only and unaccepted until source-normalized and externally anchored."
+        }
+      },
+      "skeptic_record": {
+        "attacks_survived": [
+          "Exact numeric sequence collapse before measuring the main curve.",
+          "Leave-one-row-out masked scoring, preventing each tested row from training on itself.",
+          "Masked top-1 advantage survives global token, row-internal, length-position, edge-frame, register-blocked, and simple administrative-template forger controls at full coverage.",
+          "Known-script scarcity calibration against Linear B Series D was added; the Indus masked top-1 score is near the Linear B source-gapped sequence-leave-out top-1 under the IVC p95 length cap, but below clean Linear B bidirectional masking.",
+          "Known-script administrative calibration against SumTablets was added with Dataset Viewer provenance, pinned dataset SHA, hidden transliteration/name fields, exact line collapse, and matched controls; the glyph-only SumTablets line sample scores below Indus while still beating its own controls.",
+          "Structured nonlinguistic comparator rerun added: administrative, emblem, and mixed admin/emblem generators exceed the observed broad bidirectional top-1 score, so broad predictability is explicitly rejected as language or semantic evidence.",
+          "Real-world nonlinguistic and ambiguous-system comparator added from the Sproat 2014 XML bundle; Pictish stones and barn stars exceed the Indus masked top-1 reference, so masked local predictability is rejected as language evidence.",
+          "Directionality comparator added: in the harsh top-10-edge-removed plus one-edit-family-collapsed scope, Indus stored-order win share is 0.841096 with max null >= observed share 0, above current real-world nonlinguistic and ambiguous comparators but below known-script controls. Mayig P exact-collapsed records show stored-order asymmetry at 0.943750, while harsh Mayig drops to 0.666667 over 24 rows.",
+          "Directionality skeptic controls added: source-visible 861 terminal/tail and matched Lipi/Mayig overlap support lanes are retracted. The 861 probe has max null >= observed share 1, and top-10-edge-removed overlap drops to Lipi 0.363636 and Mayig 0.473684 with max null >= observed share 1.",
+          "Directionality block controls added: harsh top-10-edge-removed one-edit-family-collapsed directionality survives site/type/symbol holdout at 0.827397 with max null >= observed share 0; register-edge-family collapse survives the same holdout at 0.835227 with max null >= observed share 0.005000.",
+          "Directionality site-balance controls added: Mohenjo-daro plus Harappa balanced resampling survives with observed median stored-win share 0.803571 and max paired null >= observed share 0.003, but Lothal-inclusive and top-five-site balanced samples are null-compatible.",
+          "Directionality site profiles added: Mohenjo-daro and Harappa each survive within-site controls at 0.816038 and 0.741071 with max null >= observed shares 0.002 and 0.004; Lothal is null-compatible at 0.312500 with max null >= observed share 0.988.",
+          "Directionality policy controls added: 354 of 365 harsh rows are recorded R/L; R/L-only scoring preserves stored-win share at 0.838983, and random row-orientation flips destroy the signal with all-harsh null mean 0.471134 and null p95 0.526027.",
+          "Directionality influence controls added: no single row carries the harsh signal; largest supportive row delta is 0.005931 and largest absolute row effect is adverse, while the largest coarse site/type/symbol family effect is 0.028975.",
+          "Directionality formula-family controls added: harsh leave-source-convention-out scoring using site/type/material/symbol/cult/direction survives at stored-win share 0.832877 with max admissible null >= observed share 0.020000, and harsh source-convention collapse survives at 0.805714 with max admissible null >= observed share 0.005000.",
+          "Directionality route-conditioned control added: public route availability fails as a support lane. The 38 public-route rows score 0.684211, source-register collapse drops to 0.619048, and matched route-label nulls reproduce or exceed the observed route subset score."
+        ],
+        "unresolved_attacks": [
+          "The input is still the quarantined Lipi T3 metadata layer, not source-image-normalized inscriptions.",
+          "Exact-sequence dedup does not collapse physical near-duplicates, source families, workshop copies, mold/impression families, or publication-lineage families; the metadata source-convention proxy narrows this attack but does not replace source-image lineage.",
+          "Known-script scarcity coverage is still narrow: Linear B Series D and SumTablets have been rerun and integrated, but broader known-script comparator batteries remain incomplete.",
+          "No accepted discriminator yet separates Indus masked local predictability from high-predictability real-world nonlinguistic or ambiguous systems.",
+          "The directionality discriminator is not source-normalized yet and may still depend on Lipi metadata, direction conventions, or corpus curation.",
+          "Matched Lipi/Mayig overlap failed under top-edge removal and block-conditioned controls; any future overlap claim needs crosswalk-blind heldout rebuilding.",
+          "Full leave-site-out is not clean in harsh directionality scopes: one-edit collapse has max null >= observed share 0.100000 and register-edge-family collapse has max null >= observed share 0.265000.",
+          "Minor-site balanced resampling is null-compatible: Mohenjo-daro/Harappa/Lothal has max paired null >= observed share 0.528 and the top-five-site design has 0.616.",
+          "Lothal's current harsh subset is null-compatible and small; this does not prove Lothal lacks directionality in a source-normalized or broader corpus.",
+          "Recorded direction is too imbalanced and metadata-derived to validate physical source-image direction.",
+          "The L/R stratum fails harsh controls: exact L/R is null-compatible and harsh L/R has only 11 rows, stored-win share 0, and max null >= observed share 1.",
+          "The source queue is only an acquisition instrument; it does not validate physical source direction, token order, or source-normalized transcription.",
+          "The source queue, public route probe, route-conditioned control, visual triage, and no-overlay packets are acquisition/failure-discovery instruments only. Public route visibility itself fails as support: 38 public-route rows score 0.684211, source-register collapse drops to 0.619048, and matched route-label nulls reproduce or exceed the observed route subset score. The v1 no-overlay packet failed with seven packaged unique scoring negatives but only six effective scorable controls after D006/M-525 leaked a printed side annotation; yes-only denominators were 3 and 4 by reviewer, hard false positives appeared, and target counts were unstable. The v2 packet failed preflight because paired target images had duplicate hashes. The v2b packet fixed the duplicate-hash and 12-real-negative design defects but failed because real denominator rows leaked labels, reviewer C had target-like uncertainty on two real negatives, and target counts varied across reviewers. The v2f homogeneous signband-strip preflight also failed: strict reuse lacks M-811 as a compact target, has only seven original fixed real-negative CISIs under the compact-strip gate, and has target/control source-page collisions; the derived top-strip lane is acquisition-only and still misses M-1320/M-811 before visual review.",
+          "The M-70 matched-negative blind token-box packet failed promotion: max yes-only scoring-negative FPR 0.714286 and max conservative FPR 0.777778. A stricter source-box protocol is required before any M-70 promotion.",
+          "Influence controls use coarse site/type/symbol families, not physical source families, workshop copies, mold/impression families, or publication lineage.",
+          "No external phonetic or semantic anchor exists inside this Vector 2 run, so language-family priors are not accepted."
+        ],
+        "decision": "Do not increment accepted structural_findings yet. Treat as a reusable structural degeneracy instrument and a negative result against internal-only language-family likelihood."
+      },
+      "source_validation_boundary_evidence": [
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_route_conditioned_control_summary.json",
+          "summary": "Failed route-conditioned support gate: public-route rows, page/source-register/source-convention collapses, and v2e signband-like route subsets do not promote source-normalized evidence; matched route-label nulls reproduce or exceed the observed route subset score.",
+          "evidence_role": "source_validation_failure_boundary"
+        },
+        {
+          "path": "docs/effective_unicity_directionality_route_conditioned_control.md",
+          "summary": "Human-readable failed route-conditioned directionality support gate.",
+          "evidence_role": "source_validation_failure_boundary"
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_blind_packet_summary.json",
+          "summary": "Failed no-overlay blind packet v1 for the four route-probe targets: 15 blind items, seven target images, seven packaged scoring-negative images across seven unique CISI controls, one quarantine negative, accepted claim increment 0, and a forger warning that the real-control denominator was below the promotion floor.",
+          "evidence_role": "source_validation_failure_boundary"
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_blind_packet_review_summary.json",
+          "summary": "Scored no-overlay blind packet v1 reviews: two reviewers, max yes-only FPR 0.333333, max conservative FPR 0.666667, promotion gate failed because of insufficient denominator, one leaked scoring-negative label, hard scoring-negative false positives, and unstable target recovery.",
+          "evidence_role": "source_validation_failure_boundary"
+        },
+        {
+          "path": "docs/effective_unicity_directionality_blind_packet.md",
+          "summary": "Human-readable failed no-overlay blind-packet protocol and review result for H-654, M-1310, M-1320, and M-811.",
+          "evidence_role": "source_validation_failure_boundary"
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_m70_blind_token_box_packet_summary.json",
+          "summary": "M-70 matched-negative blind packet: 15 blind items, two M-70 target views, three positive calibrators, nine scoring-negative images across seven unique CISI controls, one quarantine negative, and accepted claim increment zero. Two blind reviews have now been scored and the packet failed promotion.",
+          "evidence_role": "source_validation_failure_boundary"
+        },
+        {
+          "path": "docs/effective_unicity_m70_blind_token_box_packet.md",
+          "summary": "Human-readable forger protocol for the M-70 blind token-box packet.",
+          "evidence_role": "source_validation_failure_boundary"
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_m70_blind_token_box_review_summary.json",
+          "summary": "M-70 blind token-box scorer output: reviewer count 2, min strict target recovery 0.5, max yes-only scoring-negative FPR 0.714286, max conservative FPR 0.777778, promotion gate failed, accepted claim increment 0.",
+          "evidence_role": "source_validation_failure_boundary"
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_blind_packet_v2b_summary.json",
+          "summary": "No-overlay blind packet v2b repaired the v1 denominator-size and v2 duplicate-hash defects: 23 blind items, four unique target images, 12 real routed scoring negatives, three external stress controls, four auxiliary synthetic controls, zero duplicate blind image hash groups, accepted claim increment 0.",
+          "evidence_role": "source_validation_failure_boundary"
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_blind_packet_v2b_review_summary.json",
+          "summary": "Scored no-overlay blind packet v2b reviews: three reviewers, fixed real-negative denominator 12, max yes-only FPR 0, max conservative FPR 0.166667, promotion gate failed because real denominator rows leaked labels, two real negatives were target-like uncertain for reviewer C, target recovery failed, and inter-review target count variance was nonzero.",
+          "evidence_role": "source_validation_failure_boundary"
+        },
+        {
+          "path": "docs/effective_unicity_directionality_blind_packet_v2b.md",
+          "summary": "Human-readable v2b failed packet note, including fixed-denominator policy, duplicate-hash repair, three blind reviews, real-negative leakage, and target-count instability.",
+          "evidence_role": "source_validation_failure_boundary"
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_blind_packet_v2c_summary.json",
+          "summary": "No-overlay packet v2c preflight: 23 blind items, four unique target images, 12 real routed scoring negatives, three external stress controls, four auxiliary synthetic controls, zero duplicate blind image hash groups, but failed visual preflight because page-context/catalogue cues remained after corrected OCR masking.",
+          "evidence_role": "source_validation_failure_boundary"
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_panel_crop_repair_v2_summary.json",
+          "summary": "Panel-crop repair v2 inventory: 278 object-panel/signband candidates across 22 CISIs, 182 geometry-clean by OCR/label-overlap criteria, 21 of 22 automatic best rows geometry-clean, accepted claim increment 0.",
+          "evidence_role": "source_validation_failure_boundary"
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_panel_crop_repair_v2d_manual_shortlist_clean_draft.csv",
+          "summary": "Cleaned v2d manual visual shortlist draft: 16 rows, with four targets, nine fixed real-negative candidates, and three reserves. This is not a blind packet and has no reviewed FPR.",
+          "evidence_role": "source_validation_failure_boundary"
+        },
+        {
+          "path": "data/open_prototype/tools/effective_unicity_directionality_panel_crop_shortlist_v2d.py",
+          "summary": "Reproducible emitter for the cleaned v2d manual visual shortlist draft; records 4 targets, 9 fixed real-negative candidates, and 3 reserves without creating a blind packet or claim.",
+          "evidence_role": "source_validation_failure_boundary"
+        },
+        {
+          "path": "docs/effective_unicity_directionality_visual_preflight_failures.md",
+          "summary": "Canonical visual-preflight failure note naming v2c catalogue-label leaks, v2d denominator/crop-world failures, and the over-inclusive v2e pool.",
+          "evidence_role": "source_validation_failure_boundary"
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_visual_preflight_failures.csv",
+          "summary": "Row-level visual-preflight failure annotations for v2c, v2d, and v2e.",
+          "evidence_role": "source_validation_failure_boundary"
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_signband_pool_v2e_summary.json",
+          "summary": "Widened signband-like crop pool: 488 candidate rows across 38 public plate-route CISIs; visual-QA infrastructure only, no packet and no FPR.",
+          "evidence_role": "acquisition_infrastructure"
+        },
+        {
+          "path": "data/open_prototype/reports/effective_unicity_directionality_homogeneous_packet_v2f_preflight_summary.json",
+          "summary": "v2f homogeneous signband-strip gate failed and promoted no packet: strict reuse has only H-654/M-1310/M-1320 as compact targets, misses M-811, has seven original fixed real-negative CISIs, and has target/control source-page collisions; derived top-strip acquisition still misses M-1320/M-811 before visual review.",
+          "evidence_role": "source_validation_failure_boundary"
+        },
+        {
+          "path": "docs/effective_unicity_directionality_panel_crop_repair.md",
+          "summary": "Human-readable v2c preflight retraction and panel-crop repair note; records the parser fix, failed page-context masking approach, and unreviewed crop-repair inventory.",
+          "evidence_role": "source_validation_failure_boundary"
+        }
+      ]
+    }
+  ],
+  "retracted_candidates": [
+    {
+      "claim_id": "retracted_240_220_032_selects_single_y_2026_05_28",
+      "claim_type": "structural_findings",
+      "status": "retracted",
+      "claim": "240-220-032 controls one specific Y ending after 002.",
+      "reason_retracted": "The adjacent 032-002 context campaign found strict target rows split across 300, 817, 820, and 861, with both terminal and continuing outcomes.",
+      "evidence": [
+        "data/open_prototype/reports/campaign_032_002_context_summary.json",
+        "docs/campaign_032_002_context_branch_campaign.md"
+      ]
+    },
+    {
+      "claim_id": "retracted_all_002_y_are_endings_2026_05_28",
+      "claim_type": "structural_findings",
+      "status": "retracted",
+      "claim": "All signs after 002 are endings or terminal closures.",
+      "reason_retracted": "The post-Y continuation campaign split 002-Y signs into closure-heavy and branch-head classes; 390, 368, 031, 220, 900, and 300 are continuation-heavy.",
+      "evidence": [
+        "data/open_prototype/reports/campaign_032_002_post_y_summary.json",
+        "docs/campaign_032_002_post_y_continuation_campaign.md"
+      ]
+    },
+    {
+      "claim_id": "retracted_internal_only_effective_unicity_gives_language_family_2026_05_29",
+      "claim_type": "language_identification",
+      "status": "retracted",
+      "claim": "Internal effective-unicity or masked-sign constraint can by itself choose among Dravidian, Indo-Aryan/Sanskritic, Elamite-adjacent, or unknown-language priors.",
+      "reason_retracted": "Without an external sign-to-value anchor, any phonetic labeling remains invariant under global permutation of value labels. The full strict exact-collapsed corpus has 571 observed signs, giving a lower-bound unanchored label-symmetry degeneracy of log2(571!) = 4410.970864 bits before nulls, allographs, homophony, or polyvalence are added.",
+      "evidence": [
+        "data/open_prototype/reports/effective_unicity_degeneracy_summary.json",
+        "docs/effective_unicity_methods_note.md"
+      ]
+    },
+    {
+      "claim_id": "retracted_directionality_source_visible_and_overlap_support_2026_05_29",
+      "claim_type": "structural_findings",
+      "status": "retracted",
+      "retracted_date": "2026-05-29",
+      "claim": "Source-visible 861 terminal/tail directionality and matched Lipi/Mayig overlap support the broad Vector 2 directionality candidate.",
+      "reason_retracted": "The focused skeptic controls reproduce the 861 probe and break the overlap under top-edge removal. The source-visible 861 subset has 12 target-selected rows, stored-win share 1.000000, and max null >= observed share 1. Matched overlap exact scores are Lipi 0.937500 and Mayig 0.929134, but after removing the ten most frequent edge signs the overlap drops to Lipi 0.363636 and Mayig 0.473684, each with max null >= observed share 1.",
+      "evidence": [
+        "data/open_prototype/reports/effective_unicity_directionality_skeptic_controls_summary.json",
+        "data/open_prototype/reports/effective_unicity_directionality_skeptic_null_summary.csv",
+        "docs/effective_unicity_directionality_skeptic_controls.md"
+      ],
+      "forger_record": {
+        "tool": "data/open_prototype/tools/effective_unicity_directionality_skeptic_controls.mjs",
+        "iterations_per_control": 200,
+        "source_visible_861_terminal_tail_probe": {
+          "rows": 12,
+          "stored_win_share": 1,
+          "max_null_ge_observed_share": 1
+        },
+        "matched_overlap_lipi_exact": {
+          "rows": 128,
+          "stored_win_share": 0.9375,
+          "max_null_ge_observed_share": 0.035
+        },
+        "matched_overlap_mayig_exact": {
+          "rows": 127,
+          "stored_win_share": 0.929134,
+          "max_null_ge_observed_share": 0.2
+        },
+        "matched_overlap_lipi_top10_edge_removed": {
+          "rows": 22,
+          "stored_win_share": 0.363636,
+          "max_null_ge_observed_share": 1
+        },
+        "matched_overlap_mayig_top10_edge_removed": {
+          "rows": 19,
+          "stored_win_share": 0.473684,
+          "max_null_ge_observed_share": 1
+        },
+        "result": "failed_forger_gate"
+      },
+      "skeptic_record": {
+        "attacks_that_broke_claim": [
+          "The 861 subset is target-selected and tiny, so it is only a source-visible sensitivity probe.",
+          "Nulls reproduce or exceed the perfect 861 observed stored-win share.",
+          "The matched overlap uses provisional position alignment and zero accepted crosswalk edges.",
+          "The matched overlap is concentrated in Mohenjo-daro SEAL:S rows and high-frequency edge signs.",
+          "After top-edge removal and block-conditioned edge/slot nulls, both overlap sides collapse to null-compatible values."
+        ],
+        "residual_value": "The broad harsh Indus directionality candidate remains live, but these support lanes cannot promote it. Any future overlap result needs crosswalk-blind heldout rebuilding."
+      }
+    },
+    {
+      "claim_id": "retracted_m70_source_boxed_order_window_promotion_2026_05_29",
+      "claim_type": "structural_findings",
+      "status": "retracted",
+      "retracted_date": "2026-05-29",
+      "claim": "The current M-70 blind token-box packet promotes M-70 from row-level source-visible broad order-window candidate to source-boxed order-window candidate.",
+      "reason_retracted": "The matched-negative blind packet failed its pre-set promotion gate. Two reviewers scored 15 blind items. Max yes-only false-positive rate on scoring negatives was 0.714286, max conservative false-positive-or-uncertain rate was 0.777778, and one M-70 target was only uncertain for one reviewer.",
+      "evidence": [
+        "docs/effective_unicity_directionality_m70_source_pilot.md",
+        "docs/effective_unicity_m70_blind_token_box_packet.md",
+        "data/open_prototype/reports/effective_unicity_m70_blind_token_box_answer_key.csv",
+        "data/open_prototype/reports/effective_unicity_m70_blind_reviews/avicenna_review.csv",
+        "data/open_prototype/reports/effective_unicity_m70_blind_reviews/ohm_review.csv",
+        "data/open_prototype/reports/effective_unicity_m70_blind_token_box_scored_rows.csv",
+        "data/open_prototype/reports/effective_unicity_m70_blind_token_box_review_summary.json"
+      ],
+      "forger_record": {
+        "tool": "data/open_prototype/tools/score_effective_unicity_m70_blind_token_box_reviews.mjs",
+        "packet_rows": 15,
+        "primary_targets": 2,
+        "positive_calibrators": 3,
+        "scoring_negatives": 9,
+        "scoring_negative_unique_cisis": 7,
+        "reviewers": 2,
+        "reviewer_results": [
+          {
+            "reviewer": "avicenna_review",
+            "target_yes": 2,
+            "target_uncertain": 0,
+            "scoring_negative_yes": 5,
+            "scoring_negative_no": 2,
+            "scoring_negative_uncertain": 2,
+            "yes_only_false_positive_rate": 0.7142857142857143,
+            "conservative_false_positive_or_uncertain_rate": 0.7777777777777778,
+            "target_strict_recovery_rate": 1
+          },
+          {
+            "reviewer": "ohm_review",
+            "target_yes": 1,
+            "target_uncertain": 1,
+            "scoring_negative_yes": 5,
+            "scoring_negative_no": 4,
+            "scoring_negative_uncertain": 0,
+            "yes_only_false_positive_rate": 0.5555555555555556,
+            "conservative_false_positive_or_uncertain_rate": 0.5555555555555556,
+            "target_strict_recovery_rate": 0.5
+          }
+        ],
+        "max_yes_only_false_positive_rate": 0.7142857142857143,
+        "max_conservative_false_positive_or_uncertain_rate": 0.7777777777777778,
+        "promotion_gate_decision": "failed_packet_gate_no_promotion",
+        "result": "failed_forger_gate"
+      },
+      "skeptic_record": {
+        "attacks_that_broke_claim": [
+          "Not all M-70 target views were strictly recovered; reviewer ohm_review marked the face target uncertain.",
+          "Both reviewers produced hard target-like hits on scoring negatives.",
+          "False-positive rates are far above the pre-set zero-hard-hit promotion threshold."
+        ],
+        "residual_value": "M-70 remains row-level source-visible with a broad order-window continuation candidate. It does not support a source-boxed token order, physical direction, sign identity, meaning, phonetic value, language family, or translation."
+      }
+    },
+    {
+      "claim_id": "retracted_directionality_no_overlay_source_normalized_packet_2026_05_29",
+      "claim_type": "structural_findings",
+      "status": "retracted",
+      "retracted_date": "2026-05-29",
+      "claim": "The no-overlay blind packet for H-654, M-1310, M-1320, and M-811 promotes those route candidates from acquisition inventory to source-normalized crop/token-order candidates.",
+      "reason_retracted": "The packet failed its matched-negative promotion gate. The packaged real scoring-negative denominator was seven unique CISI controls, below the forger floor of ten; after D006/M-525 leaked a printed side annotation, the effective scorable unique real-negative denominator was six. Two reviewers scored 15 blind items; max yes-only FPR was 0.333333 and max conservative FPR was 0.666667. Yes-only denominators were 3 and 4 by reviewer, conservative denominators were 6 and 6, scoring negatives produced hard false positives, and targets were mostly overcounted or uncertain.",
+      "evidence": [
+        "docs/effective_unicity_directionality_blind_packet.md",
+        "data/open_prototype/reports/effective_unicity_directionality_blind_packet_summary.json",
+        "data/open_prototype/reports/effective_unicity_directionality_blind_packet_answer_key.csv",
+        "data/open_prototype/reports/effective_unicity_directionality_blind_reviews/blind_review_a.csv",
+        "data/open_prototype/reports/effective_unicity_directionality_blind_reviews/blind_review_b.csv",
+        "data/open_prototype/reports/effective_unicity_directionality_blind_packet_scored_rows.csv",
+        "data/open_prototype/reports/effective_unicity_directionality_blind_packet_review_summary.json"
+      ],
+      "forger_record": {
+        "tool": "data/open_prototype/tools/score_effective_unicity_directionality_blind_reviews.py",
+        "packet_rows": 15,
+        "primary_target_images": 7,
+        "primary_target_unique_cisis": 4,
+        "scoring_negative_images": 7,
+        "scoring_negative_unique_cisis": 7,
+        "quarantine_negatives": 1,
+        "forger_denominator_floor": 10,
+        "planned_real_scoring_negative_unique_cisis": 12,
+        "reviewers": 2,
+        "reviewer_results": [
+          {
+            "reviewer": "blind_review_a",
+            "target_pass": 0,
+            "target_fail": 7,
+            "target_uncertain": 0,
+            "scoring_negative_true_negative": 2,
+            "scoring_negative_hard_false_positive": 1,
+            "scoring_negative_uncertain_target_like": 3,
+            "scoring_negative_label_leak_excluded": 1,
+            "yes_only_false_positive_rate": 0.3333333333333333,
+            "conservative_false_positive_or_uncertain_rate": 0.6666666666666666
+          },
+          {
+            "reviewer": "blind_review_b",
+            "target_pass": 1,
+            "target_fail": 4,
+            "target_uncertain": 2,
+            "scoring_negative_true_negative": 3,
+            "scoring_negative_hard_false_positive": 1,
+            "scoring_negative_uncertain_target_like": 2,
+            "scoring_negative_label_leak_excluded": 1,
+            "yes_only_false_positive_rate": 0.25,
+            "conservative_false_positive_or_uncertain_rate": 0.5
+          }
+        ],
+        "max_yes_only_false_positive_rate": 0.3333333333333333,
+        "max_conservative_false_positive_or_uncertain_rate": 0.6666666666666666,
+        "promotion_gate_decision": "failed_packet_gate_no_promotion",
+        "promotion_gate_failed_reasons": [
+          "below_forger_real_negative_denominator_floor",
+          "negative_label_leak_exclusion_reduced_effective_denominator",
+          "scoring_negatives_produced_hard_count_boxable_false_positives",
+          "not_all_targets_cleanly_recovered"
+        ],
+        "result": "failed_forger_gate",
+        "packeted_scoring_negative_unique_cisis": 7,
+        "effective_scorable_unique_cisis_after_label_exclusion": 6,
+        "yes_only_denominator_by_reviewer": {
+          "blind_review_a": 3,
+          "blind_review_b": 4
+        },
+        "conservative_denominator_by_reviewer": {
+          "blind_review_a": 6,
+          "blind_review_b": 6
+        }
+      },
+      "skeptic_record": {
+        "attacks_that_broke_claim": [
+          "D006/M-525 leaked a printed side annotation and had to be excluded from the scoring-negative denominator.",
+          "Scoring negatives produced hard count-boxable false positives: D015/M-381 for blind_review_a and D009/H-665 for blind_review_b.",
+          "Target views were not cleanly recovered; M-811, M-1320, and H-654 were overcounted by at least one reviewer, and M-1310 was uncertain for blind_review_b.",
+          "The real negative denominator was below the forger floor, so the packet was not promotion-capable even before false positives.",
+          "The packet did not test physical source direction or source side; it only tested blind crop boxability and token-count recovery."
+        ],
+        "residual_value": "The four objects remain acquisition and crop-QA targets. A future packet needs at least ten unique real scorable negatives after leakage checks; synthetic controls may be auxiliary only and never count toward the real-negative floor."
+      }
+    },
+    {
+      "claim_id": "retracted_source_visible_032_002_y_packet_2026_05_29",
+      "claim_type": "structural_findings",
+      "status": "retracted",
+      "retracted_date": "2026-05-29",
+      "claim": "Current source-visible row-level evidence supports 032-002-Y as a real same-signband packet across target 240-220-032, non-240 A-220-032, and outside-A-220 contexts; this weakens the claim that the packet is merely a catalog adjacency artifact.",
+      "reason_retracted": "The first blind matched-negative source-box adjudication failed: two independent blind reviewers recovered zero true positives while producing yes-only false-positive rates of 0.30 and 0.40 on negatives. Conservative negative-failure rates were 0.416667 and 0.50. The visual packeting method therefore finds plausible 032-002-Y packets in controls at unacceptable rates and cannot support an accepted source-visible packet claim.",
+      "evidence": [
+        "data/open_prototype/reports/source_visible_032_002_y_summary.json",
+        "data/open_prototype/reports/source_visible_032_002_y_witness_matrix.csv",
+        "data/open_prototype/reports/source_box_negative_control_summary.json",
+        "data/open_prototype/reports/source_box_blind_reviews/heisenberg_review.csv",
+        "data/open_prototype/reports/source_box_blind_reviews/jason_review.csv",
+        "data/open_prototype/reports/source_box_blind_adjudication_scored_rows.csv",
+        "data/open_prototype/reports/source_box_blind_adjudication_summary.json",
+        "docs/source_box_blind_adjudication_results.md",
+        "data/open_prototype/reports/source_box_negative_control_v2_m381_blind_reviews.csv",
+        "data/open_prototype/reports/source_box_negative_control_v2_m381_scored_reviews.csv",
+        "data/open_prototype/reports/source_box_negative_control_v2_m381_adjudication_summary.json",
+        "docs/source_box_negative_control_v2_m381_blind_adjudication.md"
+      ],
+      "forger_record": {
+        "packet_rows": 20,
+        "positives": 8,
+        "negatives": 12,
+        "reviewers": 2,
+        "reviewer_results": [
+          {
+            "reviewer": "heisenberg_review",
+            "true_positive": 0,
+            "false_positive": 4,
+            "true_negative": 6,
+            "false_negative": 5,
+            "uncertain_positive": 3,
+            "uncertain_negative": 2,
+            "yes_only_false_positive_rate": 0.4,
+            "conservative_false_positive_or_uncertain_negative_rate": 0.5,
+            "yes_only_sensitivity": 0
+          },
+          {
+            "reviewer": "jason_review",
+            "true_positive": 0,
+            "false_positive": 3,
+            "true_negative": 7,
+            "false_negative": 6,
+            "uncertain_positive": 2,
+            "uncertain_negative": 2,
+            "yes_only_false_positive_rate": 0.3,
+            "conservative_false_positive_or_uncertain_negative_rate": 0.4166666666666667,
+            "yes_only_sensitivity": 0
+          }
+        ],
+        "max_yes_only_false_positive_rate": 0.4,
+        "max_conservative_false_positive_or_uncertain_negative_rate": 0.5,
+        "result": "failed_forger_gate"
+      },
+      "skeptic_record": {
+        "attacks_that_broke_claim": [
+          "Blind reviewers failed to recover any source-visible positives as yes-calls.",
+          "Blind reviewers made confident yes-calls on negative controls, including M-32 and M-17 for both reviewers.",
+          "The first packet did not include local image-backed negative_220_032_next_not_002 controls, so the A-220-032 lane needed a v2 stress test.",
+          "The v2 M-381 local image-backed negative also failed clean-negative promotion: three blind reviewers returned token counts of 9, 13, and 9 against the seven-token catalog key, and all three reported skip/merge risk."
+        ],
+        "residual_value": "The witness matrix remains a useful source-route inventory, but it no longer supports an accepted or live source-visible structural claim."
+      }
+    },
+    {
+      "claim_id": "retracted_meluhha_site_overlap_as_external_anchor_2026_05_29",
+      "claim_type": "external_anchors",
+      "status": "retracted",
+      "retracted_date": "2026-05-29",
+      "claim": "Literal site overlap between Meluhha cuneiform attestations and external Indus-style objects can itself support a diffuse bilingual or external-anchor candidate.",
+      "reason_retracted": "The join-surface forger reproduced or exceeded the observed 25 join rows at high rates. Random site aliases from all external sites had null >= observed share 0.815100; Mesopotamia-only aliases had null >= observed share 0.933800; a provenance-preserving non-Meluhha control would reproduce the overlap exactly.",
+      "evidence": [
+        "data/meluhha/meluhha_indus_join_surface.csv",
+        "data/meluhha/meluhha_indus_join_surface_summary.json",
+        "data/meluhha/meluhha_join_surface_null_summary.json",
+        "data/meluhha/meluhha_join_surface_null_iterations.csv",
+        "docs/meluhha_indus_join_surface.md"
+      ],
+      "forger_record": {
+        "tool": "data/meluhha/tools/meluhha_join_surface_nulls.mjs",
+        "iterations_per_null_model": 10000,
+        "observed": {
+          "join_rows": 25,
+          "admin_or_name_join_rows": 7,
+          "distinct_join_sites": 4
+        },
+        "null_ge_observed_share": {
+          "random_site_aliases_all_external_sites": {
+            "join_rows": 0.8151,
+            "admin_or_name_join_rows": 0.3801,
+            "distinct_join_sites": 1
+          },
+          "random_site_aliases_mesopotamia_only": {
+            "join_rows": 0.9338,
+            "admin_or_name_join_rows": 0.5246,
+            "distinct_join_sites": 1
+          },
+          "provenance_preserving_non_meluhha_control": {
+            "join_rows": 1,
+            "admin_or_name_join_rows": 1,
+            "distinct_join_sites": 1
+          }
+        },
+        "result": "failed_forger_gate"
+      },
+      "skeptic_record": {
+        "attacks_that_broke_claim": [
+          "External Indus object dates are unavailable in the current external_indus_objects.csv table, so chronology cannot yet constrain the join.",
+          "Major Mesopotamian sites are common trade/archive centers; random site alias controls reproduce the observed overlap at high rates.",
+          "A non-Meluhha corpus with the same cuneiform provenance distribution would reproduce the site-overlap count exactly."
+        ],
+        "residual_value": "The join surface remains useful infrastructure for stricter matched controls with sign sequence, object type, date, and non-Meluhha source classes."
+      }
+    },
+    {
+      "claim_id": "retracted_520_220_x_closure_slot_beyond_register_2026_05_29",
+      "claim_type": "sign_meanings",
+      "status": "retracted",
+      "retracted_date": "2026-05-29",
+      "claim": "Inside the 520-220-X frame, X predicts closure versus continuation beyond site/type register, supporting a context-slot meaning.",
+      "reason_retracted": "The focused context-slot forger shows site/type does better than X. In raw clean-behavior rows, third-slot leave-one-out accuracy is 0.687500 while site|type accuracy is 0.812500. After exact-text collapse, third-slot accuracy is 0.781250 while site|type accuracy is 0.906250. Exact collapse leaves 27 continuation families and only 5 terminal-closed families, so the raw short 415 closure impression is mostly repetition/register pressure.",
+      "evidence": [
+        "data/open_prototype/reports/campaign_520_220_x_context_slot_null_summary.json",
+        "data/open_prototype/reports/campaign_520_220_x_context_slot_null_iterations.csv",
+        "data/open_prototype/reports/campaign_520_220_x_context_slot_scope_rows.csv",
+        "docs/campaign_520_220_x_context_slot_nulls.md"
+      ],
+      "forger_record": {
+        "tool": "data/open_prototype/tools/campaign_520_220_x_context_slot_nulls.mjs",
+        "iterations_per_null_model": 5000,
+        "raw_clean_behavior": {
+          "rows": 48,
+          "third_slot_accuracy": 0.6875,
+          "site_type_accuracy": 0.8125,
+          "gain_vs_site_type": -0.125,
+          "max_null_ge_observed_gain_share": 0.8354
+        },
+        "exact_text_collapsed_clean_behavior": {
+          "rows": 32,
+          "third_slot_accuracy": 0.78125,
+          "site_type_accuracy": 0.90625,
+          "gain_vs_site_type": -0.125,
+          "max_null_ge_observed_gain_share": 1
+        },
+        "result": "failed_forger_gate"
+      },
+      "skeptic_record": {
+        "attacks_that_broke_claim": [
+          "The raw closure impression is heavily driven by repeated short 520-220-415 Harappa tablet/tag rows.",
+          "After exact-text collapse, terminal-closed families fall to 5 while continuation families remain 27.",
+          "Site/type predicts closure versus continuation better than third-slot identity in both raw and exact-collapsed scopes."
+        ],
+        "residual_value": "The 520-220-X frame remains a useful source-validation target for same-stratum 415/034/003/016 contrasts, but it does not currently support a context-slot meaning."
+      }
+    },
+    {
+      "claim_id": "retracted_vector4_158_806_phyt_context_association_2026_05_29",
+      "claim_type": "sign_meanings",
+      "status": "retracted",
+      "retracted_date": "2026-05-29",
+      "claim": "The bigram 158-806 carries a defensible iconographic association with the Phyt symbol context.",
+      "reason_retracted": "The broad context-exact scan produced a tempting rank-22 association, but exact-context collapse inflated support by splitting the same inscription text across material/context variants. Under exact-text collapse the Phyt support falls below the pipeline's own minimum support threshold, and the broad family-wise null share is 1. The 2026-05-31 replacement targeted fixed-pair rerun gives low target-specific null shares for 158-806 / Phyt, but it still leaves only three text-collapsed supporting texts, below the scanner support floor, and does not replace the failed family-wise discovery gate.",
+      "evidence": [
+        "data/open_prototype/reports/vector4_context_association_summary.json",
+        "data/open_prototype/reports/vector4_context_association_candidates.csv",
+        "data/open_prototype/reports/vector4_context_association_scope_rows.csv",
+        "data/open_prototype/reports/vector4_context_association_text_only_summary.json",
+        "data/open_prototype/reports/vector4_context_association_text_only_candidates.csv",
+        "data/open_prototype/reports/vector4_context_association_text_only_scope_rows.csv",
+        "docs/vector4_context_association_scan.md",
+        "data/open_prototype/reports/vector4_targeted_context_nulls_20260531_summary.json",
+        "data/open_prototype/reports/vector4_targeted_context_nulls_20260531.csv",
+        "docs/vector4_targeted_context_nulls_20260531.md"
+      ],
+      "forger_record": {
+        "tool": "data/open_prototype/tools/vector4_context_association_scan.mjs",
+        "iterations_per_null_model": 100,
+        "context_exact_candidate": {
+          "unit": "158-806",
+          "context_field": "symbol",
+          "context_value": "Phyt",
+          "support": 5,
+          "z": 12.839621,
+          "max_null_ge_observed_share": 1
+        },
+        "text_only_collapse": {
+          "result": "falls_below_min_support",
+          "distinct_supporting_texts": 3
+        },
+        "replacement_targeted_fixed_pair_rerun_2026_05_31": {
+          "tool": "data/open_prototype/tools/vector4_targeted_context_nulls_20260531.mjs",
+          "iterations_per_null_model": 2000,
+          "context_exact_158_806_phyt": {
+            "support": 5,
+            "z": 12.839621,
+            "worst_target_specific_null_ge_observed_share": 0
+          },
+          "text_only_158_806_phyt": {
+            "support": 3,
+            "z": 8.930802,
+            "worst_target_specific_null_ge_observed_share": 0.0075,
+            "support_floor_status": "below_min_support_5"
+          },
+          "result": "source_check_queue_only_not_claim_eligible"
+        },
+        "result": "failed_forger_gate"
+      },
+      "skeptic_record": {
+        "attacks_that_broke_claim": [
+          "Three of five context-exact supporting rows are the same exact text +158-806-465+ split across context/material variants.",
+          "All supporting cases are Harappa TAB:B; leave-one-site or leave-one-type removes the signal.",
+          "No whole-scan or non-site family-wise survivor exists in either context-exact or text-only mode.",
+          "The replacement fixed-pair rerun is not a family-wise discovery test and cannot promote the association while text-only support remains three."
+        ],
+        "residual_value": "158-806 / Phyt remains a focused acquisition lead only. A future test must collapse exact text first, use matched Harappa TAB:B controls, require at least five distinct exact texts or source-verified object families, and run at least 1,000 symbol-field shuffles."
+      }
+    },
+    {
+      "claim_id": "retracted_directionality_no_overlay_v2b_source_normalized_packet_2026_05_29",
+      "claim_type": "structural_findings",
+      "status": "retracted",
+      "retracted_date": "2026-05-29",
+      "claim": "The v2b label-masked no-overlay packet for H-654, M-1310, M-1320, and M-811 promotes those route-probe targets to source-normalized crop/token-order candidates.",
+      "reason_retracted": "The v2b packet fixed the v1 denominator-size problem and the v2 duplicate-hash preflight failure, but failed its own adversarial gate. Three reviewers scored 23 blind items with a fixed 12-row real-negative denominator. Real denominator rows leaked catalogue/page labels, reviewer C produced conservative target-like uncertainty on two real negatives, targets were not cleanly recovered, and inter-review target count variance was nonzero.",
+      "evidence": [
+        "docs/effective_unicity_directionality_blind_packet_v2b.md",
+        "data/open_prototype/reports/effective_unicity_directionality_blind_packet_v2b_summary.json",
+        "data/open_prototype/reports/effective_unicity_directionality_blind_packet_v2b_answer_key.csv",
+        "data/open_prototype/reports/effective_unicity_directionality_blind_v2b_reviews/reviewer_a.csv",
+        "data/open_prototype/reports/effective_unicity_directionality_blind_v2b_reviews/reviewer_b.csv",
+        "data/open_prototype/reports/effective_unicity_directionality_blind_v2b_reviews/reviewer_c.csv",
+        "data/open_prototype/reports/effective_unicity_directionality_blind_packet_v2b_scored_rows.csv",
+        "data/open_prototype/reports/effective_unicity_directionality_blind_packet_v2b_review_summary.json"
+      ],
+      "forger_record": {
+        "tool": "data/open_prototype/tools/score_effective_unicity_directionality_blind_reviews_v2b.py",
+        "packet_rows": 23,
+        "primary_target_images": 4,
+        "primary_target_unique_cisis": 4,
+        "real_scoring_negative_images": 12,
+        "real_scoring_negative_unique_cisis": 12,
+        "external_stress_controls": 3,
+        "auxiliary_synthetic_controls": 4,
+        "duplicate_blind_image_hash_groups": 0,
+        "fixed_real_negative_denominator": 12,
+        "reviewers": 3,
+        "reviewer_results": [
+          {
+            "reviewer": "reviewer_a",
+            "target_pass": 1,
+            "target_fail": 3,
+            "target_uncertain": 0,
+            "real_negative_true_negative": 7,
+            "real_negative_hard_false_positive": 0,
+            "real_negative_uncertain_target_like": 0,
+            "real_negative_label_leak": 5,
+            "yes_only_false_positive_rate_fixed_denominator": 0,
+            "conservative_false_positive_or_uncertain_rate_fixed_denominator": 0
+          },
+          {
+            "reviewer": "reviewer_b",
+            "target_pass": 1,
+            "target_fail": 2,
+            "target_uncertain": 1,
+            "real_negative_true_negative": 7,
+            "real_negative_hard_false_positive": 0,
+            "real_negative_uncertain_target_like": 0,
+            "real_negative_label_leak": 5,
+            "yes_only_false_positive_rate_fixed_denominator": 0,
+            "conservative_false_positive_or_uncertain_rate_fixed_denominator": 0
+          },
+          {
+            "reviewer": "reviewer_c",
+            "target_pass": 0,
+            "target_fail": 2,
+            "target_uncertain": 2,
+            "real_negative_true_negative": 6,
+            "real_negative_hard_false_positive": 0,
+            "real_negative_uncertain_target_like": 2,
+            "real_negative_label_leak": 4,
+            "yes_only_false_positive_rate_fixed_denominator": 0,
+            "conservative_false_positive_or_uncertain_rate_fixed_denominator": 0.16666666666666666
+          }
+        ],
+        "max_yes_only_false_positive_rate_fixed_denominator": 0,
+        "max_conservative_false_positive_or_uncertain_rate_fixed_denominator": 0.16666666666666666,
+        "promotion_gate_decision": "failed_packet_gate_no_promotion",
+        "promotion_gate_failed_reasons": [
+          "real_negative_label_leak_packet_fail",
+          "real_negative_uncertain_target_like",
+          "not_all_targets_cleanly_recovered",
+          "inter_reviewer_target_count_variance_nonzero"
+        ],
+        "result": "failed_forger_gate"
+      },
+      "skeptic_record": {
+        "attacks_that_broke_claim": [
+          "Real denominator label leakage broke the fixed-denominator policy: H-665, H-158, M-527, M-1315, and M-171 were flagged by reviewers A and B; reviewer C flagged four of those five.",
+          "Reviewer C produced conservative target-like uncertainty on two real negatives: M-525 and M-365.",
+          "Targets were not cleanly recovered: M-1320, H-654, and M-811 failed or were uncertain across reviewers; M-1310 passed for A/B but failed for C.",
+          "Inter-review target counts varied for M-1320 (8/8/7), M-1310 (7/7/6), and M-811 (5/6/6).",
+          "The packet still did not test physical source direction or source side; it only tested blind crop boxability, leakage, and token-count recovery."
+        ],
+        "residual_value": "v2b is useful as a stricter packet generator and a documented failure mode: OCR word-box masking of route-context crops does not reliably remove neighboring catalogue labels. Future packets must use true object-panel segmentation or manual label-free crops before blind review."
+      }
+    },
+    {
+      "claim_id": "retracted_directionality_no_overlay_v2c_preflight_packet_2026_05_29",
+      "claim_type": "structural_findings",
+      "status": "retracted",
+      "retracted_date": "2026-05-29",
+      "claim": "The v2c OCR-coordinate-fix no-overlay packet repairs the v2b label-leak failure enough to proceed to blind source-normalization review for H-654, M-1310, M-1320, and M-811.",
+      "reason_retracted": "Visual preflight failed before review. The DjVu five-coordinate WORD parser was fixed and duplicate blind image hashes stayed at zero, but the routed real negatives were still page-context crops with printed catalogue/page labels or adjacent-object cues after OCR masking. Therefore no reviewer FPR is meaningful and no claim can be promoted.",
+      "evidence": [
+        "data/open_prototype/reports/effective_unicity_directionality_public_route_probe_v2_summary.json",
+        "data/open_prototype/reports/effective_unicity_directionality_public_route_probe_v2_routes.csv",
+        "data/open_prototype/reports/effective_unicity_directionality_blind_packet_v2c_summary.json",
+        "data/open_prototype/reports/effective_unicity_directionality_blind_packet_v2c_answer_key.csv",
+        "data/open_prototype/reports/effective_unicity_directionality_blind_packet_v2c_crop_manifest.csv",
+        "tmp/effective_unicity_directionality_blind_packet_v2c/directionality_no_overlay_v2c_blind_contact_sheet.png",
+        "docs/effective_unicity_directionality_panel_crop_repair.md",
+        "data/open_prototype/reports/effective_unicity_directionality_panel_crop_repair_v2_summary.json",
+        "data/open_prototype/tools/effective_unicity_directionality_panel_crop_shortlist_v2d.py",
+        "data/open_prototype/reports/effective_unicity_directionality_panel_crop_repair_v2d_manual_shortlist_clean_draft.csv",
+        "tmp/effective_unicity_directionality_panel_crop_repair/visual_qc_manual_shortlist_v2d_clean_draft.jpg",
+        "docs/effective_unicity_directionality_visual_preflight_failures.md",
+        "data/open_prototype/reports/effective_unicity_directionality_visual_preflight_failures.csv",
+        "data/open_prototype/reports/effective_unicity_directionality_signband_pool_v2e_summary.json"
+      ],
+      "forger_record": {
+        "packet_rows": 23,
+        "primary_target_images": 4,
+        "real_scoring_negative_images": 12,
+        "external_stress_controls": 3,
+        "auxiliary_synthetic_controls": 4,
+        "duplicate_blind_image_hash_groups": 0,
+        "fixed_real_negative_denominator": 12,
+        "reviewers": 0,
+        "max_yes_only_false_positive_rate_fixed_denominator": null,
+        "max_conservative_false_positive_or_uncertain_rate_fixed_denominator": null,
+        "promotion_gate_decision": "failed_visual_preflight_no_review",
+        "promotion_gate_failed_reasons": [
+          "page_context_label_leakage",
+          "crop_world_asymmetry",
+          "ocr_masking_class_cue",
+          "not_reviewer_ready"
+        ],
+        "result": "failed_preflight_before_forger_scoring"
+      },
+      "skeptic_record": {
+        "attacks_that_broke_claim": [
+          "Human visual preflight of the v2c contact sheet found remaining catalogue/page labels and neighboring object cues.",
+          "Targets remained tight recuts while real negatives were broad OCR-masked page-context crops, creating role leakage.",
+          "The corrected OCR parser fixed bogus tall masks but not the omitted mechanism: actual object-panel segmentation.",
+          "Any v2d denominator must be pre-registered before blind scoring; reserve replacement after review is forbidden."
+        ],
+        "residual_value": "v2c is useful as a parser-fix and failure record. The panel-crop repair v2 inventory, cleaned v2d shortlist, and v2e signband pool are crop-QA infrastructure only; they remain unreviewed and unpromoted."
+      }
+    },
+    {
+      "claim_id": "retracted_directionality_panel_crop_v2d_packet_readiness_2026_05_29",
+      "claim_type": "structural_findings",
+      "status": "retracted",
+      "retracted_date": "2026-05-29",
+      "claim": "The cleaned v2d panel-crop shortlist is ready to become a blind directionality source-normalization packet.",
+      "reason_retracted": "Forger review rejects the cleaned v2d shortlist as a packet. It has only 9 fixed real-negative rows because H-421, M-127, and M-1322 remain reserve_not_denominator; reserves can be promoted only in a new pre-registered manifest before review. The crop worlds also remain mixed: targets are mostly signband strips while controls include tablet/object panels and animal/icon context, creating role leakage before any token-count scoring.",
+      "evidence": [
+        "data/open_prototype/reports/effective_unicity_directionality_panel_crop_repair_v2d_manual_shortlist_clean_draft.csv",
+        "tmp/effective_unicity_directionality_panel_crop_repair/visual_qc_manual_shortlist_v2d_clean_draft.jpg",
+        "docs/effective_unicity_directionality_visual_preflight_failures.md",
+        "data/open_prototype/reports/effective_unicity_directionality_visual_preflight_failures.csv",
+        "data/open_prototype/reports/effective_unicity_directionality_signband_pool_v2e_summary.json"
+      ],
+      "forger_record": {
+        "fixed_real_negative_rows_in_clean_shortlist": 9,
+        "reserve_rows_not_denominator": [
+          "H-421",
+          "M-127",
+          "M-1322"
+        ],
+        "required_fixed_real_negative_denominator_before_review": 12,
+        "reviewer_count": 0,
+        "max_yes_only_false_positive_rate_fixed_denominator": null,
+        "max_conservative_false_positive_or_uncertain_rate_fixed_denominator": null,
+        "promotion_gate_decision": "failed_preflight_no_review",
+        "promotion_gate_failed_reasons": [
+          "fixed_real_negative_denominator_is_9_not_12",
+          "reserve_rows_not_pre_registered_as_denominator",
+          "crop_world_asymmetry",
+          "non_textual_role_cues",
+          "shared_source_page_leakage_risk"
+        ],
+        "result": "failed_preflight_before_forger_scoring"
+      },
+      "skeptic_record": {
+        "attacks_that_broke_claim": [
+          "H-421, M-127, and M-1322 remain reserve rows in the cleaned shortlist CSV, so the denominator is not 12.",
+          "Target rows are mostly signband strips, while M-1458 and M-1523 are tablet/object panels, M-171 is mostly animal/icon context, and M-527 is elephant/object context.",
+          "H-654, M-1310, M-386, and M-1322 retain adjacent page/object slivers.",
+          "M-1310 target and M-1315 negative share source page n202; M-1320 target and M-1322 reserve share n203."
+        ],
+        "residual_value": "The v2d shortlist helped identify cleaner candidate crops, and the v2e signband pool widens the next acquisition surface. Neither is a blind packet or source-normalized result."
+      }
+    },
+    {
+      "claim_id": "retracted_directionality_homogeneous_signband_v2f_packet_readiness_2026_05_29",
+      "claim_type": "structural_findings",
+      "status": "retracted",
+      "retracted_date": "2026-05-29",
+      "claim": "The v2e signband-like pool can be promoted into a homogeneous no-overlay v2f blind packet for H-654, M-1310, M-1320, and M-811 with 12 fixed real-negative controls.",
+      "reason_retracted": "Mechanical preflight and skeptic review reject packet promotion. In the strict v2e reuse lane, compact target availability is H-654, M-1310, and M-1320 only; M-811 is missing because its available crops are tall bull/object panels rather than compact signband strips. The strict lane has only seven original fixed real-negative CISIs and target/control source-page collisions. A derived top-strip acquisition lane is useful but still misses M-1320 and M-811 before visual review, has only six original fixed real-negative CISIs, and cannot be counted as a blind packet without human visual QC and pre-registered forger/null scoring.",
+      "evidence": [
+        "data/open_prototype/tools/effective_unicity_directionality_homogeneous_packet_v2f_preflight.py",
+        "data/open_prototype/reports/effective_unicity_directionality_homogeneous_packet_v2f_preflight_summary.json",
+        "data/open_prototype/reports/effective_unicity_directionality_homogeneous_packet_v2f_strict_reuse_candidates.csv",
+        "data/open_prototype/reports/effective_unicity_directionality_homogeneous_packet_v2f_derived_top_strip_candidates.csv",
+        "tmp/effective_unicity_directionality_homogeneous_packet_v2f/directionality_homogeneous_packet_v2f_strict_reuse_contact_sheet.jpg",
+        "tmp/effective_unicity_directionality_homogeneous_packet_v2f/directionality_homogeneous_packet_v2f_derived_top_strip_contact_sheet.jpg",
+        "tmp/effective_unicity_directionality_homogeneous_packet_v2f/directionality_homogeneous_packet_v2f_target_gate_contact_sheet.jpg"
+      ],
+      "forger_record": {
+        "tool": "data/open_prototype/tools/effective_unicity_directionality_homogeneous_packet_v2f_preflight.py",
+        "reviewer_count": 0,
+        "accepted_claims_increment": 0,
+        "strict_reuse_lane": {
+          "candidate_rows": 82,
+          "target_available": [
+            "H-654",
+            "M-1310",
+            "M-1320"
+          ],
+          "target_missing": [
+            "M-811"
+          ],
+          "fixed_real_negative_unique_count": 7,
+          "target_control_source_page_collision_count": 3
+        },
+        "derived_top_strip_lane": {
+          "candidate_rows": 44,
+          "target_available": [
+            "H-654",
+            "M-1310"
+          ],
+          "target_missing": [
+            "M-1320",
+            "M-811"
+          ],
+          "fixed_real_negative_unique_count": 6,
+          "target_control_source_page_collision_count": 1
+        },
+        "max_yes_only_false_positive_rate_fixed_denominator": null,
+        "max_conservative_false_positive_or_uncertain_rate_fixed_denominator": null,
+        "promotion_gate_decision": "failed_preflight_no_blind_packet_promoted",
+        "promotion_gate_failed_reasons": [
+          "strict_reuse_lane_missing_M_811_target",
+          "strict_reuse_lane_has_fewer_than_12_original_fixed_real_negatives",
+          "strict_reuse_lane_has_target_control_source_page_collisions",
+          "derived_lane_is_acquisition_only_not_blind_packet",
+          "derived_lane_missing_targets_before_visual_review"
+        ],
+        "result": "failed_preflight_before_forger_scoring"
+      },
+      "skeptic_record": {
+        "attacks_that_broke_claim": [
+          "M-811 has only possible tall bull/object-panel crops in v2e, not a compact signband-strip crop comparable to H-654, M-1310, and M-1320.",
+          "The original fixed real-negative denominator cannot reach 12 without duplicate rows, reserves, or newly introduced unplanned controls.",
+          "M-1310 shares source page n202 with M-1315 and M-1314; M-1320 shares n203 with M-1322.",
+          "Exact duplicate crop hashes do not cross CISI in v2e, but within-CISI duplicate rows are common and near-duplicate grouping is not certified.",
+          "The control pool mixes type/symbol/crop regimes: tablets, animal/icon panels, India/Pakistan pages, and signband strips."
+        ],
+        "residual_value": "v2f is a useful negative gate and crop-acquisition surface. A defensible next packet needs new eligible real negatives or a smaller design that is pre-registered before visual review, plus matched synthetic directionality, nonlinguistic emblem/order, and frequency-matched noise null packets."
+      }
+    },
+    {
+      "claim_id": "retracted_directionality_public_route_visibility_support_2026_05_29",
+      "claim_type": "structural_findings",
+      "status": "retracted",
+      "retracted_date": "2026-05-29",
+      "claim": "Public CISI route availability or the v2e signband-like route subset promotes the Vector 2 directionality candidate toward source-normalized evidence.",
+      "reason_retracted": "The route-conditioned support gate fails. In the frozen top-79 public-route probe universe, all 79 rows have stored-win share 0.670886, the 38 public-route rows have stored-win share 0.684211, page collapse drops the public-route rows to 0.625000, source-register collapse drops them to 0.619048, and source-convention collapse drops them to 0.652174. The v2e possible-or-strong route subset looks stronger at 0.741935 before collapse, but drops to 0.647059 under source-register collapse. Matched route-label nulls reproduce or exceed the route subset score with max null >= observed route share 1.",
+      "evidence": [
+        "data/open_prototype/tools/effective_unicity_directionality_route_conditioned_control.mjs",
+        "data/open_prototype/reports/effective_unicity_directionality_route_conditioned_control_summary.json",
+        "data/open_prototype/reports/effective_unicity_directionality_route_conditioned_control.csv",
+        "data/open_prototype/reports/effective_unicity_directionality_route_conditioned_null_summary.csv",
+        "data/open_prototype/reports/effective_unicity_directionality_route_conditioned_null_iterations.csv",
+        "docs/effective_unicity_directionality_route_conditioned_control.md"
+      ],
+      "forger_record": {
+        "tool": "data/open_prototype/tools/effective_unicity_directionality_route_conditioned_control.mjs",
+        "iterations_per_route_label_null": 5000,
+        "accepted_claims_increment": 0,
+        "top79_public_route_probe_rows": {
+          "rows": 79,
+          "stored_win_share": 0.670886
+        },
+        "public_route_38_rows": {
+          "rows": 38,
+          "stored_win_share": 0.684211,
+          "page_collapsed_stored_win_share": 0.625,
+          "source_register_collapsed_stored_win_share": 0.619048,
+          "source_convention_collapsed_stored_win_share": 0.652174
+        },
+        "v2e_possible_or_strong_31_rows": {
+          "rows": 31,
+          "stored_win_share": 0.741935,
+          "source_register_collapsed_stored_win_share": 0.647059,
+          "source_convention_collapsed_stored_win_share": 0.684211
+        },
+        "matched_route_label_nulls": {
+          "priority_band_null_ge_observed_route_share": 1,
+          "priority_site_null_ge_observed_route_share": 1,
+          "priority_site_type_null_ge_observed_route_share": 1,
+          "priority_site_type_symbol_direction_lenbin_null_ge_observed_route_share": 1,
+          "max_null_ge_observed_route_share": 1
+        },
+        "promotion_gate_decision": "failed_promotion_route_conditioned_subset_not_source_normalized_evidence"
+      },
+      "skeptic_record": {
+        "attacks_that_broke_claim": [
+          "The route-visible subset was selected from high-pressure queue rows, not sampled independently.",
+          "The public-route stored-win share is below the pre-registered 0.70 support threshold.",
+          "Source-page, source-register, and source-convention collapse all weaken the public-route subset.",
+          "The v2e possible-or-strong signband-like subset weakens under source-register and source-convention collapse.",
+          "Matched route-label nulls reproduce or exceed the route subset score under every tested label family.",
+          "Nearly all rows remain in the R/L-dominant metadata layer, so route visibility does not validate physical direction."
+        ],
+        "residual_value": "Public routes remain valuable acquisition hooks for source-image work. They do not support a physical direction, source-normalized order, sign identity, value, meaning, language-family, or translation claim."
+      }
+    }
+  ]
+}

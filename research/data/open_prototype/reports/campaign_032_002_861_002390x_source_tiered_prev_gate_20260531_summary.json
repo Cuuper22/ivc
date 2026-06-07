@@ -1,0 +1,86 @@
+{
+  "run_date": "2026-05-31",
+  "input": "data/open_prototype/reports/campaign_032_002_861_002390x_branch_sign_ecology_20260531_002390_frames.csv",
+  "total_frames": 15,
+  "strict_visible_rows": 4,
+  "strict_visible_objects": [
+    "M-70",
+    "M-71",
+    "M-119",
+    "M-735"
+  ],
+  "matched_prev_groups": [
+    {
+      "prev_before_002": "004",
+      "rows": 2,
+      "branches": "095 125",
+      "terminal_classes": "continuing terminal",
+      "strict_objects": "",
+      "top_tier": "public_panel_downweighted",
+      "top_tier_objects": "Sktd-1",
+      "branch_tail_source": "095-><END>:terminal:H-1993:route_or_metadata_pressure; 125->820:continuing:Sktd-1:public_panel_downweighted",
+      "gate": "matched_prev_split_non_strict_only"
+    },
+    {
+      "prev_before_002": "032",
+      "rows": 2,
+      "branches": "590 692",
+      "terminal_classes": "continuing terminal",
+      "strict_objects": "M-70",
+      "top_tier": "strict_visible",
+      "top_tier_objects": "M-70",
+      "branch_tail_source": "692-><END>:terminal:M-70:strict_visible; 590->032:continuing:-:3335.1:metadata_or_blocked",
+      "gate": "matched_prev_split_partly_strict_blocked"
+    },
+    {
+      "prev_before_002": "235",
+      "rows": 2,
+      "branches": "125",
+      "terminal_classes": "continuing",
+      "strict_objects": "M-735",
+      "top_tier": "strict_visible",
+      "top_tier_objects": "M-735",
+      "branch_tail_source": "125->632 032:continuing:M-38:metadata_or_blocked; 125->195:continuing:M-735:strict_visible",
+      "gate": "same_prev_same_branch_tail_split"
+    }
+  ],
+  "matched_prev_strict_splits": [],
+  "decisions": [
+    {
+      "decision": "strict_core_has_no_matched_predecessor_split",
+      "evidence": "M-70:032->002-390->692-><END>:terminal; M-71:142->002-390->095-><END>:terminal; M-119:484->002-390->125->632 032 900 563:continuing; M-735:235->002-390->125->195:continuing",
+      "result": "no strict source-visible predecessor group has two branch alternatives",
+      "consequence": "branch-tail polarity remains real pressure but not a matched source-controlled contrast"
+    },
+    {
+      "decision": "004_split_blocked",
+      "evidence": "095-><END>:terminal:H-1993:route_or_metadata_pressure; 125->820:continuing:Sktd-1:public_panel_downweighted",
+      "result": "matched_prev_split_non_strict_only",
+      "consequence": "H-1993 image binding and Sktd-1 side/panel strictness are both required before using the 004 split"
+    },
+    {
+      "decision": "032_split_blocked",
+      "evidence": "692-><END>:terminal:M-70:strict_visible; 590->032:continuing:-:3335.1:metadata_or_blocked",
+      "result": "matched_prev_split_partly_strict_blocked",
+      "consequence": "M-70 is strict, but 3335.1 is object-ID blocked and formula-family pressured"
+    },
+    {
+      "decision": "235_tail_split_not_branch_split",
+      "evidence": "125->632 032:continuing:M-38:metadata_or_blocked; 125->195:continuing:M-735:strict_visible",
+      "result": "same_prev_same_branch_tail_split",
+      "consequence": "M-735 is strict and M-38 is weak, but both are branch 125; this tests tail subframes, not branch alternation"
+    },
+    {
+      "decision": "h773_does_not_rescue_matched_split",
+      "evidence": "530->741:continuing:H-773:panel_bound_not_strict",
+      "result": "singleton predecessor and panel_bound_not_strict",
+      "consequence": "H-773 remains useful anti-lazy pressure but cannot be a matched strict anti-125 exception"
+    }
+  ],
+  "outputs": {
+    "rows": "data/open_prototype/reports/campaign_032_002_861_002390x_source_tiered_prev_gate_20260531_rows.csv",
+    "prev_summary": "data/open_prototype/reports/campaign_032_002_861_002390x_source_tiered_prev_gate_20260531_prev_summary.csv",
+    "decisions": "data/open_prototype/reports/campaign_032_002_861_002390x_source_tiered_prev_gate_20260531_decisions.csv",
+    "summary": "data/open_prototype/reports/campaign_032_002_861_002390x_source_tiered_prev_gate_20260531_summary.json"
+  }
+}

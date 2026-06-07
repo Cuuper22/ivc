@@ -1,0 +1,78 @@
+{
+  "date": "2026-05-25",
+  "packet": "lipi_034_m1206_terminal_triad",
+  "question": "Does M-1206 give a cleaner 034 constraint outside the failed M-2104 count-compound branch?",
+  "broad_pool": {
+    "rows_with_prefix_520_220": 52,
+    "unique_terminals_after_520_220": 16,
+    "terminal_415_rows": 28,
+    "terminal_034_rows": 1
+  },
+  "tight_triad": [
+    {
+      "object": "M-1912",
+      "local_text": "+520-220-003+",
+      "terminal": "003",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:S",
+      "material": "Steatite",
+      "shape": "square",
+      "class": "MT",
+      "signs": "3",
+      "source_status": "secondary_visual_lead_only"
+    },
+    {
+      "object": "M-1206",
+      "local_text": "+520-220-034+",
+      "terminal": "034",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:S",
+      "material": "Steatite",
+      "shape": "square",
+      "class": "MT",
+      "signs": "3",
+      "source_status": "public_CISI_derived_photo_lead_identity_conflict"
+    },
+    {
+      "object": "M-37",
+      "local_text": "+520-220-415+",
+      "terminal": "415",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:S",
+      "material": "Steatite",
+      "shape": "square",
+      "class": "MT",
+      "signs": "3",
+      "source_status": "Mayig_overlap_shadow_no_source_image_packet"
+    }
+  ],
+  "crosswalk_shadow": {
+    "520": "P217 15/15 uncertain candidate",
+    "220": "P050 27/29 uncertain candidate",
+    "003": "P123 10/10 uncertain candidate",
+    "415": "P092 5/6 uncertain candidate with P122 counterexample",
+    "034": "no clean overlap row",
+    "M-37": "+520-220-415+ -> P217 P050 P092",
+    "M-1206": "+520-220-034+ -> P217 P050 ?"
+  },
+  "strict_verdict": "M-1206 creates a clean local terminal-slot target for 034 after 520-220, especially against M-1912 and M-37, but it does not yet provide a source-grade sign mapping, function, value, or translation.",
+  "research_status": "source_gated_terminal_slot_triad",
+  "accepted_claims": {
+    "M1206_singleton_520_220_034_in_filtered_lipi": true,
+    "M1912_M1206_M37_same_stratum_terminal_triad": true,
+    "M37_crosswalk_shadow_P217_P050_P092": true,
+    "034_crosswalk_dark": true,
+    "034_value_or_function": false,
+    "003_034_415_semantic_contrast": false,
+    "animal_species_reading": false,
+    "phonetic_value": false,
+    "translation": false
+  },
+  "next_decisive_actions": [
+    "Acquire or locate source-grade M-1912, M-1206, and M-37 images/records.",
+    "Resolve M-1206 versus M-2016 in Bhaskar Fig.3.",
+    "Map M-1206 visible face to local row 3556.1 and companion row 3556.2.",
+    "Blind-classify terminal signs 003, 034, and 415 from images before using labels.",
+    "Collapse 520-220-415 rows into source-independent units and test icon-label heterogeneity."
+  ]
+}

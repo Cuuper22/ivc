@@ -1,0 +1,255 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "family_collapse_predictor",
+  "metrics": [
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "raw",
+      "predictor": "head_x_pair",
+      "rows": "316",
+      "covered": "121",
+      "coverage_rate": "0.382911",
+      "correct": "116",
+      "wrong": "5",
+      "accuracy": "0.958678"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "raw",
+      "predictor": "x_slot_sign",
+      "rows": "316",
+      "covered": "247",
+      "coverage_rate": "0.781646",
+      "correct": "189",
+      "wrong": "58",
+      "accuracy": "0.765182"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "raw",
+      "predictor": "scope_cell",
+      "rows": "316",
+      "covered": "275",
+      "coverage_rate": "0.870253",
+      "correct": "191",
+      "wrong": "84",
+      "accuracy": "0.694545"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "raw",
+      "predictor": "scope_x",
+      "rows": "316",
+      "covered": "137",
+      "coverage_rate": "0.433544",
+      "correct": "113",
+      "wrong": "24",
+      "accuracy": "0.824818"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_scope_pair_tail",
+      "predictor": "head_x_pair",
+      "rows": "270",
+      "covered": "69",
+      "coverage_rate": "0.255556",
+      "correct": "63",
+      "wrong": "6",
+      "accuracy": "0.913043"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_scope_pair_tail",
+      "predictor": "x_slot_sign",
+      "rows": "270",
+      "covered": "197",
+      "coverage_rate": "0.729630",
+      "correct": "138",
+      "wrong": "59",
+      "accuracy": "0.700508"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_scope_pair_tail",
+      "predictor": "scope_cell",
+      "rows": "270",
+      "covered": "224",
+      "coverage_rate": "0.829630",
+      "correct": "141",
+      "wrong": "83",
+      "accuracy": "0.629464"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_scope_pair_tail",
+      "predictor": "scope_x",
+      "rows": "270",
+      "covered": "78",
+      "coverage_rate": "0.288889",
+      "correct": "54",
+      "wrong": "24",
+      "accuracy": "0.692308"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_scope_pair",
+      "predictor": "head_x_pair",
+      "rows": "266",
+      "covered": "65",
+      "coverage_rate": "0.244361",
+      "correct": "59",
+      "wrong": "6",
+      "accuracy": "0.907692"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_scope_pair",
+      "predictor": "x_slot_sign",
+      "rows": "266",
+      "covered": "193",
+      "coverage_rate": "0.725564",
+      "correct": "134",
+      "wrong": "59",
+      "accuracy": "0.694301"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_scope_pair",
+      "predictor": "scope_cell",
+      "rows": "266",
+      "covered": "220",
+      "coverage_rate": "0.827068",
+      "correct": "141",
+      "wrong": "79",
+      "accuracy": "0.640909"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_scope_pair",
+      "predictor": "scope_x",
+      "rows": "266",
+      "covered": "73",
+      "coverage_rate": "0.274436",
+      "correct": "49",
+      "wrong": "24",
+      "accuracy": "0.671233"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_pair_tail",
+      "predictor": "head_x_pair",
+      "rows": "243",
+      "covered": "18",
+      "coverage_rate": "0.074074",
+      "correct": "12",
+      "wrong": "6",
+      "accuracy": "0.666667"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_pair_tail",
+      "predictor": "x_slot_sign",
+      "rows": "243",
+      "covered": "165",
+      "coverage_rate": "0.679012",
+      "correct": "101",
+      "wrong": "64",
+      "accuracy": "0.612121"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_pair_tail",
+      "predictor": "scope_cell",
+      "rows": "243",
+      "covered": "197",
+      "coverage_rate": "0.810700",
+      "correct": "126",
+      "wrong": "71",
+      "accuracy": "0.639594"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_pair_tail",
+      "predictor": "scope_x",
+      "rows": "243",
+      "covered": "68",
+      "coverage_rate": "0.279835",
+      "correct": "48",
+      "wrong": "20",
+      "accuracy": "0.705882"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_pair",
+      "predictor": "head_x_pair",
+      "rows": "231",
+      "covered": "0",
+      "coverage_rate": "0.000000",
+      "correct": "0",
+      "wrong": "0",
+      "accuracy": ""
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_pair",
+      "predictor": "x_slot_sign",
+      "rows": "231",
+      "covered": "150",
+      "coverage_rate": "0.649351",
+      "correct": "87",
+      "wrong": "63",
+      "accuracy": "0.580000"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_pair",
+      "predictor": "scope_cell",
+      "rows": "231",
+      "covered": "187",
+      "coverage_rate": "0.809524",
+      "correct": "124",
+      "wrong": "63",
+      "accuracy": "0.663102"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_pair",
+      "predictor": "scope_x",
+      "rows": "231",
+      "covered": "62",
+      "coverage_rate": "0.268398",
+      "correct": "41",
+      "wrong": "21",
+      "accuracy": "0.661290"
+    }
+  ],
+  "decisions": [
+    {
+      "checked_date": "2026-05-31",
+      "candidate": "HEAD_X_PAIR_MICROGRAMMAR",
+      "decision": "narrow_to_scope_local_candidate",
+      "reason": "raw pair accuracy 0.958678; scope-pair-tail collapse 0.913043; global pair-tail collapse 0.666667",
+      "next_test": "Treat repeated H-X pairs as parser candidates only after checking whether they survive collapse outside exact scope/tail families."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "candidate": "X_SIGN_PREDICTOR_BEATS_SCOPE_AND_LEFT_NULLS",
+      "decision": "keep_but_require_scope_correction",
+      "reason": "raw X accuracy 0.765182; scope-pair-tail collapse X 0.700508; pair-tail collapse X 0.612121",
+      "next_test": "Do not use X alone as a parser; use X plus head/scope correction until source/family collapse improves it."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "candidate": "VISUAL_SCOPE_NULL_STILL_LIVE",
+      "decision": "strengthen_adversary",
+      "reason": "scope+X raw 0.824818; pair-tail collapse scope+X 0.705882; scope predictors remain competitive under strict collapse",
+      "next_test": "Every high-confidence parse must report whether scope-conditioned predictors explain the same row."
+    }
+  ],
+  "compressed_model_change": [
+    "H-X pair accuracy is real but scope/tail-family sensitive.",
+    "X-sign prediction survives as a candidate only with scope correction.",
+    "Visual-register null gets stronger, not weaker, under consolidation."
+  ]
+}

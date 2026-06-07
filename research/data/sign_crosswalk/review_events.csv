@@ -1,0 +1,3 @@
+review_id,edge_id_or_gate_id,reviewer,check_type,result,notes,checked_date
+review_2026_05_29_crosswalk_scaffold,dataset,codex,normalization_build,created_unaccepted_scaffold,"All Lipi-Mayig candidate edges default to accepted_for_analysis=false; this is reusable infrastructure, not an accepted sign-list.",2026-05-29
+review_2026_05_29_crosswalk_audit,dataset,codex,dataset_hygiene_audit,audit_passed_with_caveats,"Counts match manifest; zero duplicate primary keys; zero dangling references; zero evidence hash/path errors; zero accepted edges; eight empty Lipi witness sequences warned.",2026-05-29

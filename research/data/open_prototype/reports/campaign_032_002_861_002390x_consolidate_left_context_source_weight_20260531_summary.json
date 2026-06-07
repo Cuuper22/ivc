@@ -1,0 +1,38 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "left_context_source_weight_consolidation",
+  "compact_left_parser": {
+    "keep": [
+      "235 -> 125 in target 002-390 as source-thin P086 trigger candidate",
+      "032 without 235 avoids 125 in target lane; strict side is M-70, continuing 590 side is 3335.1-blocked",
+      "004 neutral split survives only as H-1993/Sktd-1 prediction, not strict evidence"
+    ],
+    "demote": [
+      "235 as broad portable title trigger",
+      "032 as global no-125 value",
+      "004 as direct selector or semantic value",
+      "all non-235/032/004 left finals as operator claims"
+    ]
+  },
+  "left_summary": {
+    "142": "row_context_not_operator",
+    "235": "keep_candidate_235_p086_trigger_source_thin",
+    "236": "background_not_operator",
+    "384": "background_not_operator",
+    "388": "background_not_operator",
+    "484": "row_context_not_operator",
+    "803": "background_not_operator",
+    "004": "keep_neutral_split_prediction_source_blocked",
+    "032": "keep_candidate_boundary_formula_context_source_split",
+    "003": "background_not_operator",
+    "031": "background_not_operator",
+    "061": "background_not_operator"
+  },
+  "contradiction_results": {
+    "CONSOLIDATE_LEFT_235_TARGET_PREDICTS_125": "pass_source_thin",
+    "CONSOLIDATE_LEFT_032_AVOIDS_125": "pass_split_source_blocked",
+    "CONSOLIDATE_LEFT_004_IS_NEUTRAL_SPLIT": "partial_source_blocked",
+    "CONSOLIDATE_LEFT_OPERATORS_ARE_NOT_SIGN_VALUES": "pass_demote_semantics"
+  }
+}

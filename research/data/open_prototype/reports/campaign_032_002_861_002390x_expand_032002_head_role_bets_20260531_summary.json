@@ -1,0 +1,44 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "expand_032002_head_role_bets",
+  "rows": {
+    "raw": 5679,
+    "canonical_numeric_sequences": 3503,
+    "frame_032002_rows": 47,
+    "closed_heads": [
+      "820",
+      "861",
+      "817"
+    ],
+    "prev_220_rows": 27,
+    "prev_205_rows": 2,
+    "prev_590_rows": 3,
+    "target_390_rows": 2,
+    "peripheral_closed_heads": [
+      "000"
+    ]
+  },
+  "bets": [
+    {
+      "bet_id": "EXPAND_032002_CLOSED_HEAD_SET",
+      "tier": "candidate"
+    },
+    {
+      "bet_id": "EXPAND_220032002_TERMINAL_ENVIRONMENT",
+      "tier": "candidate"
+    },
+    {
+      "bet_id": "EXPAND_205032002_PAYLOAD_ALTERNATION",
+      "tier": "candidate_edge"
+    },
+    {
+      "bet_id": "EXPAND_390_IS_RARE_OPEN_LANE_NOT_032002_DEFAULT",
+      "tier": "candidate"
+    },
+    {
+      "bet_id": "EXPAND_590032002_TAG_PIVOT",
+      "tier": "wild_shot"
+    }
+  ]
+}

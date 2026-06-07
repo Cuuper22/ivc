@@ -1,0 +1,12 @@
+id,left,right,source,total,satisfied,violated,satisfied_share,binomial_p,passed_direction
+400_before_740,400,740,tablet-account frame before broad opener,140,127,13,0.9071428571428571,5.72448125114425e-25,true
+400_before_002,400,002,tablet-account frame before preterminal bridge,8,7,1,0.875,0.03515625,false
+740_before_002,740,002,broad opener before preterminal bridge,333,332,1,0.996996996996997,1.9087889434414012e-98,true
+740_before_861,740,861,broad opener before terminal partner,89,89,0,1,1.6155871338926397e-27,true
+740_before_820,740,820,broad opener before terminal partner,84,80,4,0.9523809523809523,1.0486354740972622e-19,true
+740_before_817,740,817,broad opener before terminal partner,74,70,4,0.9459459459459459,6.449234745011439e-17,true
+002_before_861,002,861,preterminal bridge before terminal partner,154,149,5,0.9675324675324676,3.0615557725762403e-38,true
+002_before_820,002,820,preterminal bridge before terminal partner,100,96,4,0.96,3.224844447881817e-24,true
+002_before_817,002,817,preterminal bridge before terminal partner,129,124,5,0.9612403100775194,4.211232991490693e-31,true
+407_before_806,407,806,rectangular/copper entry before closure pivot,6,5,1,0.8333333333333334,0.109375,false
+806_before_002,806,002,closure pivot before preterminal bridge when both occur,23,23,0,1,1.1920928955078122e-7,true

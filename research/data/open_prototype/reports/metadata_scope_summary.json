@@ -1,0 +1,531 @@
+{
+  "generated_at_local": "2026-05-24T17:27:33-07:00",
+  "source_records": "data/open_prototype/mayig/records_index.csv",
+  "source_formula": "data/open_prototype/reports/formula_pattern_sequences.csv",
+  "total_mayig_records": 179,
+  "description_count": 5,
+  "description_family_count": 1,
+  "description_kind_count": 1,
+  "all_description_families": [
+    "unicorn"
+  ],
+  "all_description_kinds": [
+    "seal"
+  ],
+  "description_summary": [
+    {
+      "value": "unicorn IV seal",
+      "rows": 96,
+      "examples": "M-77;M-78;M-79;M-80;M-81;M-82;M-83;M-84;M-85;M-86;M-87;M-88"
+    },
+    {
+      "value": "unicorn III seal",
+      "rows": 45,
+      "examples": "M-31;M-32;M-33;M-34;M-35;M-36;M-37;M-38;M-39;M-40;M-41;M-42"
+    },
+    {
+      "value": "unicorn II seal",
+      "rows": 19,
+      "examples": "M-12;M-13;M-14;M-15;M-16;M-17;M-18;M-19;M-20;M-21;M-22;M-23"
+    },
+    {
+      "value": "unicorn V seal",
+      "rows": 10,
+      "examples": "M-175;M-176;M-177;M-178;M-179;M-180;M-181;M-182;M-183;M-184"
+    },
+    {
+      "value": "unicorn I seal",
+      "rows": 9,
+      "examples": "M-1;M-3;M-4;M-5;M-6;M-7;M-8;M-9;M-10"
+    }
+  ],
+  "family_summary": {
+    "value": "unicorn",
+    "rows": 179,
+    "examples": "M-1;M-3;M-4;M-5;M-6;M-7;M-8;M-9;M-10;M-12;M-13;M-14"
+  },
+  "series_summary": [
+    {
+      "value": "IV",
+      "rows": 96,
+      "examples": "M-77;M-78;M-79;M-80;M-81;M-82;M-83;M-84;M-85;M-86;M-87;M-88"
+    },
+    {
+      "value": "III",
+      "rows": 45,
+      "examples": "M-31;M-32;M-33;M-34;M-35;M-36;M-37;M-38;M-39;M-40;M-41;M-42"
+    },
+    {
+      "value": "II",
+      "rows": 19,
+      "examples": "M-12;M-13;M-14;M-15;M-16;M-17;M-18;M-19;M-20;M-21;M-22;M-23"
+    },
+    {
+      "value": "V",
+      "rows": 10,
+      "examples": "M-175;M-176;M-177;M-178;M-179;M-180;M-181;M-182;M-183;M-184"
+    },
+    {
+      "value": "I",
+      "rows": 9,
+      "examples": "M-1;M-3;M-4;M-5;M-6;M-7;M-8;M-9;M-10"
+    }
+  ],
+  "analysis_set_summary": [
+    {
+      "value": "strict_formula_subset",
+      "rows": 136,
+      "examples": "M-1;M-3;M-5;M-6;M-8;M-9;M-12;M-13;M-14;M-15;M-16;M-17"
+    },
+    {
+      "value": "manual_collation_required",
+      "rows": 16,
+      "examples": "M-19;M-22;M-27;M-39;M-55;M-60;M-61;M-62;M-73;M-105;M-106;M-110"
+    },
+    {
+      "value": "manual_count_disagreement",
+      "rows": 13,
+      "examples": "M-4;M-7;M-10;M-20;M-25;M-41;M-45;M-72;M-81;M-98;M-111;M-161"
+    },
+    {
+      "value": "sensitivity_flag_subset",
+      "rows": 12,
+      "examples": "M-23;M-28;M-49;M-50;M-67;M-68;M-79;M-125;M-165;M-167;M-169;M-176"
+    },
+    {
+      "value": "clean_but_not_strict_formula_subset",
+      "rows": 2,
+      "examples": "M-66;M-137"
+    }
+  ],
+  "status_by_series": [
+    {
+      "description_series": "I",
+      "analysis_set": "manual_count_disagreement",
+      "rows": 3,
+      "examples": "M-4;M-7;M-10"
+    },
+    {
+      "description_series": "I",
+      "analysis_set": "strict_formula_subset",
+      "rows": 6,
+      "examples": "M-1;M-3;M-5;M-6;M-8;M-9"
+    },
+    {
+      "description_series": "II",
+      "analysis_set": "manual_collation_required",
+      "rows": 3,
+      "examples": "M-19;M-22;M-27"
+    },
+    {
+      "description_series": "II",
+      "analysis_set": "manual_count_disagreement",
+      "rows": 2,
+      "examples": "M-20;M-25"
+    },
+    {
+      "description_series": "II",
+      "analysis_set": "sensitivity_flag_subset",
+      "rows": 2,
+      "examples": "M-23;M-28"
+    },
+    {
+      "description_series": "II",
+      "analysis_set": "strict_formula_subset",
+      "rows": 12,
+      "examples": "M-12;M-13;M-14;M-15;M-16;M-17;M-18;M-21;M-24;M-26;M-29;M-30"
+    },
+    {
+      "description_series": "III",
+      "analysis_set": "clean_but_not_strict_formula_subset",
+      "rows": 1,
+      "examples": "M-66"
+    },
+    {
+      "description_series": "III",
+      "analysis_set": "manual_collation_required",
+      "rows": 6,
+      "examples": "M-39;M-55;M-60;M-61;M-62;M-73"
+    },
+    {
+      "description_series": "III",
+      "analysis_set": "manual_count_disagreement",
+      "rows": 3,
+      "examples": "M-41;M-45;M-72"
+    },
+    {
+      "description_series": "III",
+      "analysis_set": "sensitivity_flag_subset",
+      "rows": 4,
+      "examples": "M-49;M-50;M-67;M-68"
+    },
+    {
+      "description_series": "III",
+      "analysis_set": "strict_formula_subset",
+      "rows": 31,
+      "examples": "M-31;M-32;M-33;M-34;M-35;M-36;M-37;M-38;M-40;M-42;M-43;M-44"
+    },
+    {
+      "description_series": "IV",
+      "analysis_set": "clean_but_not_strict_formula_subset",
+      "rows": 1,
+      "examples": "M-137"
+    },
+    {
+      "description_series": "IV",
+      "analysis_set": "manual_collation_required",
+      "rows": 6,
+      "examples": "M-105;M-106;M-110;M-120;M-126;M-141"
+    },
+    {
+      "description_series": "IV",
+      "analysis_set": "manual_count_disagreement",
+      "rows": 5,
+      "examples": "M-81;M-98;M-111;M-161;M-162"
+    },
+    {
+      "description_series": "IV",
+      "analysis_set": "sensitivity_flag_subset",
+      "rows": 5,
+      "examples": "M-79;M-125;M-165;M-167;M-169"
+    },
+    {
+      "description_series": "IV",
+      "analysis_set": "strict_formula_subset",
+      "rows": 79,
+      "examples": "M-77;M-78;M-80;M-82;M-83;M-84;M-85;M-86;M-87;M-88;M-89;M-90"
+    },
+    {
+      "description_series": "V",
+      "analysis_set": "manual_collation_required",
+      "rows": 1,
+      "examples": "M-175"
+    },
+    {
+      "description_series": "V",
+      "analysis_set": "sensitivity_flag_subset",
+      "rows": 1,
+      "examples": "M-176"
+    },
+    {
+      "description_series": "V",
+      "analysis_set": "strict_formula_subset",
+      "rows": 8,
+      "examples": "M-177;M-178;M-179;M-180;M-181;M-182;M-183;M-184"
+    }
+  ],
+  "scaffold_by_series": [
+    {
+      "policy": "raw_lipi_numeric",
+      "description_series": "I",
+      "rows": 6,
+      "initial_at_start": 1,
+      "initial_at_start_share": 0.166667,
+      "terminal_at_end": 1,
+      "terminal_at_end_share": 0.166667,
+      "I_T_scaffold": 1,
+      "I_T_scaffold_share": 0.166667,
+      "strong_IMT_scaffold": 1,
+      "strong_IMT_scaffold_share": 0.166667,
+      "top_patterns": "DSMS:1;ISMMMT:1;MMTMS:1;SMS:1;STS:1",
+      "examples": "M-1;M-3;M-5;M-6;M-8;M-9"
+    },
+    {
+      "policy": "raw_lipi_numeric",
+      "description_series": "II",
+      "rows": 12,
+      "initial_at_start": 7,
+      "initial_at_start_share": 0.583333,
+      "terminal_at_end": 5,
+      "terminal_at_end_share": 0.416667,
+      "I_T_scaffold": 4,
+      "I_T_scaffold_share": 0.333333,
+      "strong_IMT_scaffold": 4,
+      "strong_IMT_scaffold_share": 0.333333,
+      "top_patterns": "DMMSS:1;DSSS:1;IDSMMMSSS:1;IIMMMST:1;IIMMT:1",
+      "examples": "M-12;M-13;M-14;M-15;M-16;M-17;M-18;M-21;M-24;M-26;M-29;M-30"
+    },
+    {
+      "policy": "raw_lipi_numeric",
+      "description_series": "III",
+      "rows": 31,
+      "initial_at_start": 20,
+      "initial_at_start_share": 0.645161,
+      "terminal_at_end": 10,
+      "terminal_at_end_share": 0.322581,
+      "I_T_scaffold": 6,
+      "I_T_scaffold_share": 0.193548,
+      "strong_IMT_scaffold": 6,
+      "strong_IMT_scaffold_share": 0.193548,
+      "top_patterns": "IMMMT:2;DDSMMW:1;DMMT:1;IDSMMMS:1;IIMMMSSWT:1",
+      "examples": "M-31;M-32;M-33;M-34;M-35;M-36;M-37;M-38;M-40;M-42;M-43;M-44"
+    },
+    {
+      "policy": "raw_lipi_numeric",
+      "description_series": "IV",
+      "rows": 79,
+      "initial_at_start": 54,
+      "initial_at_start_share": 0.683544,
+      "terminal_at_end": 17,
+      "terminal_at_end_share": 0.21519,
+      "I_T_scaffold": 11,
+      "I_T_scaffold_share": 0.139241,
+      "strong_IMT_scaffold": 11,
+      "strong_IMT_scaffold_share": 0.139241,
+      "top_patterns": "IMS:2;IS:2;SSS:2;DMISMT:1;DMMSS:1",
+      "examples": "M-77;M-78;M-80;M-82;M-83;M-84;M-85;M-86;M-87;M-88;M-89;M-90"
+    },
+    {
+      "policy": "raw_lipi_numeric",
+      "description_series": "V",
+      "rows": 8,
+      "initial_at_start": 5,
+      "initial_at_start_share": 0.625,
+      "terminal_at_end": 0,
+      "terminal_at_end_share": 0.0,
+      "I_T_scaffold": 0,
+      "I_T_scaffold_share": 0.0,
+      "strong_IMT_scaffold": 0,
+      "strong_IMT_scaffold_share": 0.0,
+      "top_patterns": "DM:2;IS:2;DMMM:1;IISS:1;IMMS:1",
+      "examples": "M-177;M-178;M-179;M-180;M-181;M-183;M-184;M-182"
+    },
+    {
+      "policy": "p385_merge_only",
+      "description_series": "I",
+      "rows": 6,
+      "initial_at_start": 1,
+      "initial_at_start_share": 0.166667,
+      "terminal_at_end": 1,
+      "terminal_at_end_share": 0.166667,
+      "I_T_scaffold": 1,
+      "I_T_scaffold_share": 0.166667,
+      "strong_IMT_scaffold": 1,
+      "strong_IMT_scaffold_share": 0.166667,
+      "top_patterns": "DSMS:1;ISMMMT:1;MMTMS:1;SMS:1;STS:1",
+      "examples": "M-1;M-3;M-5;M-6;M-8;M-9"
+    },
+    {
+      "policy": "p385_merge_only",
+      "description_series": "II",
+      "rows": 12,
+      "initial_at_start": 7,
+      "initial_at_start_share": 0.583333,
+      "terminal_at_end": 5,
+      "terminal_at_end_share": 0.416667,
+      "I_T_scaffold": 4,
+      "I_T_scaffold_share": 0.333333,
+      "strong_IMT_scaffold": 4,
+      "strong_IMT_scaffold_share": 0.333333,
+      "top_patterns": "DMMSS:1;DSSS:1;IDSMMMSSS:1;IIMMMST:1;IIMMT:1",
+      "examples": "M-12;M-13;M-14;M-15;M-16;M-17;M-18;M-21;M-24;M-26;M-29;M-30"
+    },
+    {
+      "policy": "p385_merge_only",
+      "description_series": "III",
+      "rows": 31,
+      "initial_at_start": 20,
+      "initial_at_start_share": 0.645161,
+      "terminal_at_end": 10,
+      "terminal_at_end_share": 0.322581,
+      "I_T_scaffold": 6,
+      "I_T_scaffold_share": 0.193548,
+      "strong_IMT_scaffold": 6,
+      "strong_IMT_scaffold_share": 0.193548,
+      "top_patterns": "IMMMT:2;DDSMMW:1;DMMT:1;IDSMMMS:1;IIMMMSSWT:1",
+      "examples": "M-31;M-32;M-33;M-34;M-35;M-36;M-37;M-38;M-40;M-42;M-43;M-44"
+    },
+    {
+      "policy": "p385_merge_only",
+      "description_series": "IV",
+      "rows": 79,
+      "initial_at_start": 54,
+      "initial_at_start_share": 0.683544,
+      "terminal_at_end": 17,
+      "terminal_at_end_share": 0.21519,
+      "I_T_scaffold": 11,
+      "I_T_scaffold_share": 0.139241,
+      "strong_IMT_scaffold": 11,
+      "strong_IMT_scaffold_share": 0.139241,
+      "top_patterns": "IMS:2;IS:2;SSS:2;DMISMT:1;DMMSS:1",
+      "examples": "M-77;M-78;M-80;M-82;M-83;M-84;M-85;M-86;M-87;M-88;M-89;M-90"
+    },
+    {
+      "policy": "p385_merge_only",
+      "description_series": "V",
+      "rows": 8,
+      "initial_at_start": 5,
+      "initial_at_start_share": 0.625,
+      "terminal_at_end": 0,
+      "terminal_at_end_share": 0.0,
+      "I_T_scaffold": 0,
+      "I_T_scaffold_share": 0.0,
+      "strong_IMT_scaffold": 0,
+      "strong_IMT_scaffold_share": 0.0,
+      "top_patterns": "DM:2;IS:2;DMMM:1;IISS:1;IMMS:1",
+      "examples": "M-177;M-178;M-179;M-180;M-181;M-183;M-184;M-182"
+    },
+    {
+      "policy": "mayig_observed_parpola",
+      "description_series": "I",
+      "rows": 6,
+      "initial_at_start": 1,
+      "initial_at_start_share": 0.166667,
+      "terminal_at_end": 1,
+      "terminal_at_end_share": 0.166667,
+      "I_T_scaffold": 1,
+      "I_T_scaffold_share": 0.166667,
+      "strong_IMT_scaffold": 1,
+      "strong_IMT_scaffold_share": 0.166667,
+      "top_patterns": "DSMS:1;ISMMMT:1;MMTMS:1;MTS:1;SMS:1",
+      "examples": "M-1;M-3;M-5;M-6;M-8;M-9"
+    },
+    {
+      "policy": "mayig_observed_parpola",
+      "description_series": "II",
+      "rows": 12,
+      "initial_at_start": 7,
+      "initial_at_start_share": 0.583333,
+      "terminal_at_end": 5,
+      "terminal_at_end_share": 0.416667,
+      "I_T_scaffold": 4,
+      "I_T_scaffold_share": 0.333333,
+      "strong_IMT_scaffold": 4,
+      "strong_IMT_scaffold_share": 0.333333,
+      "top_patterns": "DMMSS:1;DSSS:1;IDSMMMSSS:1;IIMMMST:1;IIMMT:1",
+      "examples": "M-12;M-13;M-14;M-15;M-16;M-17;M-18;M-21;M-24;M-26;M-29;M-30"
+    },
+    {
+      "policy": "mayig_observed_parpola",
+      "description_series": "III",
+      "rows": 31,
+      "initial_at_start": 22,
+      "initial_at_start_share": 0.709677,
+      "terminal_at_end": 10,
+      "terminal_at_end_share": 0.322581,
+      "I_T_scaffold": 7,
+      "I_T_scaffold_share": 0.225806,
+      "strong_IMT_scaffold": 7,
+      "strong_IMT_scaffold_share": 0.225806,
+      "top_patterns": "IMMMT:3;IMMMMMMS:2;DDSMMM:1;DMMT:1;IDSMMMS:1",
+      "examples": "M-31;M-32;M-33;M-34;M-35;M-36;M-37;M-38;M-40;M-42;M-43;M-44"
+    },
+    {
+      "policy": "mayig_observed_parpola",
+      "description_series": "IV",
+      "rows": 79,
+      "initial_at_start": 57,
+      "initial_at_start_share": 0.721519,
+      "terminal_at_end": 17,
+      "terminal_at_end_share": 0.21519,
+      "I_T_scaffold": 11,
+      "I_T_scaffold_share": 0.139241,
+      "strong_IMT_scaffold": 11,
+      "strong_IMT_scaffold_share": 0.139241,
+      "top_patterns": "IMS:2;IS:2;ISM:2;SSS:2;DMISMT:1",
+      "examples": "M-77;M-78;M-80;M-82;M-83;M-84;M-85;M-86;M-87;M-88;M-89;M-90"
+    },
+    {
+      "policy": "mayig_observed_parpola",
+      "description_series": "V",
+      "rows": 8,
+      "initial_at_start": 5,
+      "initial_at_start_share": 0.625,
+      "terminal_at_end": 1,
+      "terminal_at_end_share": 0.125,
+      "I_T_scaffold": 0,
+      "I_T_scaffold_share": 0.0,
+      "strong_IMT_scaffold": 0,
+      "strong_IMT_scaffold_share": 0.0,
+      "top_patterns": "DM:2;IS:2;DMMT:1;IISS:1;IMMM:1",
+      "examples": "M-177;M-178;M-179;M-180;M-181;M-183;M-184;M-182"
+    }
+  ],
+  "top_anchor_by_series": [
+    {
+      "policy": "mayig_observed_parpola",
+      "pair": "P324...P385",
+      "description_series": "II",
+      "rows": 1,
+      "examples": "M-14"
+    },
+    {
+      "policy": "mayig_observed_parpola",
+      "pair": "P324...P385",
+      "description_series": "III",
+      "rows": 2,
+      "examples": "M-47;M-58"
+    },
+    {
+      "policy": "mayig_observed_parpola",
+      "pair": "P324...P385",
+      "description_series": "IV",
+      "rows": 7,
+      "examples": "M-90;M-116;M-118;M-144;M-152;M-164;M-170"
+    },
+    {
+      "policy": "p385_merge_only",
+      "pair": "L740...P385",
+      "description_series": "II",
+      "rows": 1,
+      "examples": "M-14"
+    },
+    {
+      "policy": "p385_merge_only",
+      "pair": "L740...P385",
+      "description_series": "III",
+      "rows": 2,
+      "examples": "M-47;M-58"
+    },
+    {
+      "policy": "p385_merge_only",
+      "pair": "L740...P385",
+      "description_series": "IV",
+      "rows": 7,
+      "examples": "M-90;M-116;M-118;M-144;M-152;M-164;M-170"
+    },
+    {
+      "policy": "raw_lipi_numeric",
+      "pair": "L740...L817",
+      "description_series": "II",
+      "rows": 1,
+      "examples": "M-14"
+    },
+    {
+      "policy": "raw_lipi_numeric",
+      "pair": "L740...L817",
+      "description_series": "III",
+      "rows": 1,
+      "examples": "M-58"
+    },
+    {
+      "policy": "raw_lipi_numeric",
+      "pair": "L740...L817",
+      "description_series": "IV",
+      "rows": 4,
+      "examples": "M-90;M-116;M-144;M-164"
+    },
+    {
+      "policy": "raw_lipi_numeric",
+      "pair": "L740...L861",
+      "description_series": "III",
+      "rows": 1,
+      "examples": "M-47"
+    },
+    {
+      "policy": "raw_lipi_numeric",
+      "pair": "L740...L861",
+      "description_series": "IV",
+      "rows": 3,
+      "examples": "M-118;M-152;M-170"
+    }
+  ],
+  "artifact_files": [
+    "data/open_prototype/reports/metadata_scope_rows.csv",
+    "data/open_prototype/reports/metadata_scope_status_by_series.csv",
+    "data/open_prototype/reports/metadata_scope_scaffold_by_series.csv",
+    "data/open_prototype/reports/metadata_scope_top_anchor_by_series.csv",
+    "data/open_prototype/reports/metadata_scope_summary.json"
+  ],
+  "interpretation_boundary": "metadata scope audit only; Mayig descriptions in this open subset are all unicorn seal subseries and cannot support cross-iconography claims"
+}

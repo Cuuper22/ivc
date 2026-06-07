@@ -1,0 +1,28 @@
+{
+  "date": "2026-05-31",
+  "candidate_id": "risky_400_primary_face_heading_forger_20260531",
+  "tier": "wild_shot",
+  "bet": "400 marks the primary heading face of multi-row TAB:B/I account tablets rather than merely belonging to the tablet register.",
+  "scope": {
+    "complete_tab_b_i_rows_with_numbered_sides": 1358,
+    "multirow_artifact_groups_with_400": 184,
+    "rows_inside_scope_groups": 371,
+    "target_400_rows_inside_scope": 185
+  },
+  "observed": {
+    "primary_400_rows": 99,
+    "nonprimary_400_rows": 86,
+    "primary_non400_rows_in_same_artifacts": 85,
+    "nonprimary_non400_rows_in_same_artifacts": 101,
+    "groups_where_all_400_rows_are_primary": 98
+  },
+  "within_artifact_side_shuffle_null": {
+    "iterations": 10000,
+    "preserves": "artifact group size and number of 400-bearing rows per artifact; only side assignment is shuffled",
+    "mean_primary_400_rows": 92.0746,
+    "p_ge_observed_primary_400_rows": 0.175,
+    "mean_groups_all_400_primary": 91.0746,
+    "p_ge_observed_groups_all_400_primary": 0.175
+  },
+  "decision": "wild_shot_demoted_or_killed"
+}

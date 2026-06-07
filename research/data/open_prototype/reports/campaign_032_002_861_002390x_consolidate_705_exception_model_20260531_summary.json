@@ -1,0 +1,38 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "consolidate_705_exception_model",
+  "rows": {
+    "all_705_occurrences": 165,
+    "xslot_705_occurrences": 5,
+    "xslot_705_terminal": 4,
+    "xslot_705_open_exceptions": 1,
+    "xslot_705_exception_objects": [
+      "M-1668"
+    ]
+  },
+  "decisions": [
+    {
+      "checked_date": "2026-05-31",
+      "candidate": "X705_TERMINAL_DEFAULT_CLASS",
+      "decision": "keep_narrowed_below_095_and_530",
+      "evidence": "X-slot terminal=4/5; X heads=390:2;033:1;320:1;940:1; tails=<END>:4;125:1; exception=M-1668:320-705-125.",
+      "consequence": "`705` is a terminal-default X-slot class with a named `320-705-125` exception. It is not a clean peer of `095`."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "candidate": "X705_CLEAN_TERMINAL_CLASS",
+      "decision": "kill",
+      "evidence": "X-slot open exceptions=1/5.",
+      "consequence": "Do not bundle `705` with `095` as an equally clean terminal class."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "candidate": "DHOLAVIRA_390_705_PARSE_PREDICTION",
+      "decision": "define_as_destructive_prediction_not_proof",
+      "evidence": "Current X-slot 390-705 rows are terminal in the deduped metadata; the unbound Dholavira candidate would matter only by testing that prediction.",
+      "consequence": "If Dholavira item 10 source-binds as `002-390-705` and closes, it supports terminal-default. If it continues after `705`, it demotes the class."
+    }
+  ],
+  "compressed_read": "`705` survives only as terminal-default with a named exception. It is below `095` and `530`, and Dholavira can only test this prediction."
+}

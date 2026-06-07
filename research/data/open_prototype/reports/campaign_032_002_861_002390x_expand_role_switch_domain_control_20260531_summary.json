@@ -1,0 +1,23 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "role_switch_domain_control",
+  "rows": {
+    "role_rows": 29,
+    "domain_rows": 9,
+    "same_domain_asymmetries": [
+      "125:seal",
+      "705:seal"
+    ]
+  },
+  "bets": [
+    {
+      "bet_id": "EXPAND_125_ROLE_SWITCH_SURVIVES_SEAL_CONTROL",
+      "tier": "candidate"
+    },
+    {
+      "bet_id": "EXPAND_705_ROLE_SWITCH_PARTLY_DOMAIN_SENSITIVE",
+      "tier": "candidate_edge"
+    }
+  ]
+}

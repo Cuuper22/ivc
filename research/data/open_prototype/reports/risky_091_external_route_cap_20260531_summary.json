@@ -1,0 +1,45 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_091_external_route_cap_20260531",
+  "tier": "candidate",
+  "bet": "091 is a route/class cap: it is enriched on external circular seals, especially Persian Gulf SEAL:C, while the repeated Kalibangan tag formula is an internal route-tag analogue rather than unrelated noise.",
+  "counts": {
+    "complete_rows": 3673,
+    "rows_with_091": 19,
+    "rows_with_091_terminal": 18,
+    "exact_text_site_type_symbol_dedup_091_rows": 12,
+    "external_seal_c": {
+      "n": 10,
+      "with_091": 5,
+      "without_091": 5,
+      "fisher_vs_all_other_rows": 5.190932115974098e-10
+    },
+    "persian_gulf_seal_c": {
+      "n": 7,
+      "with_091": 4,
+      "without_091": 3,
+      "fisher_vs_all_other_rows": 1.774272677585312e-8
+    }
+  },
+  "dedup_091_rows": [
+    "499.1 H-1862 Inter-Riverine Harappa TAB:B None +700-033-368-091+",
+    "774.2 H-1861 Inter-Riverine Harappa TAB:B None +368-091+",
+    "1264.1 H-239 Inter-Riverine Harappa TAB:B None +390-060/740-500-091+",
+    "5281.1 K-156 Inter-Riverine Kalibangan TAG Bull1 +892-890-417-002-056-091+",
+    "1929.1 K-71 Inter-Riverine Kalibangan TAG None +892-890-417-002-056-091+",
+    "2153.1 - Iranian Plateau Luristan SEAL:C Gaur +831-413-840-091+",
+    "2180.1 - Gujarat/Kutch Dholavira SEAL:S Bull1:V +740-840-416-240-741-500-091+",
+    "3212.1 M-798 Lower Indus Mohenjo-daro SEAL:S Bull1:W +585-831-091+",
+    "5227.1 - Persian Gulf Karzakan SEAL:C Gaur +220-455-031-091+",
+    "5228.1 - Persian Gulf Karzakan SEAL:C Gaur +033-001-032-091+",
+    "5229.1 - Persian Gulf Saar SEAL:C None +031-093-001-091-220-055+",
+    "5551.1 - Persian Gulf Kalba SEAL:C None +091+"
+  ],
+  "decision": "candidate_survives_first_external_enrichment_test",
+  "falsifiers": [
+    "If source-family collapse shows the external 091 rows are one copied seal family, demote.",
+    "If 091 is common in non-route internal rows after exact formula collapse, demote.",
+    "If Gulf circular rows without 091 share the same icon/text structure as 091 rows, demote the route-cap claim."
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "source": "filtered lipi metadata, claim columns removed",
+  "source_rows": 5679,
+  "rows_with_cisi": 5018,
+  "cisi_groups": 4074,
+  "multiside_or_multirow_cisi_groups": 864,
+  "multiside_rows": 1808,
+  "clean_multiside_rows": 1109,
+  "short_mark_candidate_rows": 539,
+  "long_text_candidate_rows": 558,
+  "short_mark_token_total": 1078,
+  "non_short_token_total": 3022,
+  "enriched_short_mark_tokens": 19,
+  "top_short_mark_tokens": [
+    {
+      "token": "700",
+      "short_mark_token_count": 374,
+      "non_short_token_count": 65,
+      "enrichment_ratio_smoothed": 14.750415
+    },
+    {
+      "token": "033",
+      "short_mark_token_count": 146,
+      "non_short_token_count": 61,
+      "enrichment_ratio_smoothed": 6.145486
+    },
+    {
+      "token": "034",
+      "short_mark_token_count": 115,
+      "non_short_token_count": 9,
+      "enrichment_ratio_smoothed": 31.365491
+    },
+    {
+      "token": "032",
+      "short_mark_token_count": 105,
+      "non_short_token_count": 98,
+      "enrichment_ratio_smoothed": 2.763185
+    },
+    {
+      "token": "003",
+      "short_mark_token_count": 51,
+      "non_short_token_count": 19,
+      "enrichment_ratio_smoothed": 6.813438
+    },
+    {
+      "token": "861",
+      "short_mark_token_count": 30,
+      "non_short_token_count": 29,
+      "enrichment_ratio_smoothed": 2.667298
+    },
+    {
+      "token": "156",
+      "short_mark_token_count": 28,
+      "non_short_token_count": 20,
+      "enrichment_ratio_smoothed": 3.586615
+    },
+    {
+      "token": "400",
+      "short_mark_token_count": 16,
+      "non_short_token_count": 198,
+      "enrichment_ratio_smoothed": 0.214446
+    },
+    {
+      "token": "740",
+      "short_mark_token_count": 15,
+      "non_short_token_count": 367,
+      "enrichment_ratio_smoothed": 0.10881
+    },
+    {
+      "token": "520",
+      "short_mark_token_count": 11,
+      "non_short_token_count": 41,
+      "enrichment_ratio_smoothed": 0.714897
+    },
+    {
+      "token": "167",
+      "short_mark_token_count": 10,
+      "non_short_token_count": 1,
+      "enrichment_ratio_smoothed": 18.058919
+    },
+    {
+      "token": "690",
+      "short_mark_token_count": 10,
+      "non_short_token_count": 34,
+      "enrichment_ratio_smoothed": 0.78517
+    }
+  ],
+  "highest_enrichment_tokens": [
+    {
+      "token": "034",
+      "short_mark_token_count": 115,
+      "non_short_token_count": 9,
+      "enrichment_ratio_smoothed": 31.365491
+    },
+    {
+      "token": "167",
+      "short_mark_token_count": 10,
+      "non_short_token_count": 1,
+      "enrichment_ratio_smoothed": 18.058919
+    },
+    {
+      "token": "700",
+      "short_mark_token_count": 374,
+      "non_short_token_count": 65,
+      "enrichment_ratio_smoothed": 14.750415
+    },
+    {
+      "token": "003",
+      "short_mark_token_count": 51,
+      "non_short_token_count": 19,
+      "enrichment_ratio_smoothed": 6.813438
+    },
+    {
+      "token": "137",
+      "short_mark_token_count": 6,
+      "non_short_token_count": 2,
+      "enrichment_ratio_smoothed": 6.707599
+    },
+    {
+      "token": "033",
+      "short_mark_token_count": 146,
+      "non_short_token_count": 61,
+      "enrichment_ratio_smoothed": 6.145486
+    },
+    {
+      "token": "156",
+      "short_mark_token_count": 28,
+      "non_short_token_count": 20,
+      "enrichment_ratio_smoothed": 3.586615
+    },
+    {
+      "token": "032",
+      "short_mark_token_count": 105,
+      "non_short_token_count": 98,
+      "enrichment_ratio_smoothed": 2.763185
+    },
+    {
+      "token": "861",
+      "short_mark_token_count": 30,
+      "non_short_token_count": 29,
+      "enrichment_ratio_smoothed": 2.667298
+    },
+    {
+      "token": "706",
+      "short_mark_token_count": 6,
+      "non_short_token_count": 9,
+      "enrichment_ratio_smoothed": 1.765158
+    },
+    {
+      "token": "900",
+      "short_mark_token_count": 7,
+      "non_short_token_count": 14,
+      "enrichment_ratio_smoothed": 1.334403
+    },
+    {
+      "token": "368",
+      "short_mark_token_count": 9,
+      "non_short_token_count": 19,
+      "enrichment_ratio_smoothed": 1.256848
+    }
+  ],
+  "outputs": [
+    "data/open_prototype/reports/lipi_multiside_mark_rows.csv",
+    "data/open_prototype/reports/lipi_multiside_mark_token_counts.csv",
+    "data/open_prototype/reports/lipi_multiside_mark_pair_counts.csv",
+    "data/open_prototype/reports/lipi_multiside_mark_type_summary.csv"
+  ],
+  "interpretation_boundary": "Multi-side mark scope and enrichment queue only; short side marks are not numerical values, metrological readings, sign meanings, phonetic values, language identity, or translations."
+}

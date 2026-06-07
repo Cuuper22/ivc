@@ -1,0 +1,2 @@
+date,packet_id,item_id,image_path,image_sha256,review_stage,review_task,required_output,admissible_use,accepted_claims_increment
+2026-05-29,v2_neg_001,blind_item_001,tmp/source_box_negative_control_v2/blind_packet/v2_neg_001_source_panel.jpg,87d9e2295224801939023659b7186566f02b4ca34c9591957cda91ea4bdab245,stage1_blind_tokenization,Box every visible sign token in the signband in visual order without using catalogue text or object ID.,token_count; visual_order_note; token_boxes_json; direction_basis; uncertainty_notes,blind_tokenization_only,0

@@ -1,0 +1,115 @@
+{
+  "date": "2026-05-29",
+  "generated_at_utc": "2026-05-29T08:32:32.809Z",
+  "purpose": "Per-site directionality profiles for the harsh Vector 2 directionality scope.",
+  "source_scope": {
+    "base_scope": "top10_edge_removed_one_edit_family_collapsed",
+    "total_rows": 365,
+    "min_site_rows": 10,
+    "included_sites": [
+      "Mohenjo-daro",
+      "Harappa",
+      "Lothal"
+    ]
+  },
+  "method": {
+    "scoring": "Within each site, score stored order versus reversed order with leave-one-row-out bigram scoring.",
+    "null_iterations_per_control": 1000,
+    "controls": [
+      "global_token_shuffle",
+      "row_internal_shuffle",
+      "position_slot_shuffle",
+      "edge_frame_shuffle"
+    ],
+    "interpretation_boundary": "Per-site profiles test whether each site carries internal directionality. Small or excluded sites remain unresolved, not negative evidence."
+  },
+  "primary_results": {
+    "Mohenjo-daro": {
+      "site": "Mohenjo-daro",
+      "scope": "top10_edge_removed_one_edit_family_collapsed",
+      "rows": 212,
+      "tokens": 1046,
+      "unique_tokens": 273,
+      "stored_higher": 173,
+      "reversed_higher": 22,
+      "ties": 17,
+      "stored_win_share": 0.816038,
+      "mean_stored_minus_reversed_per_transition": 0.986013,
+      "max_null_ge_observed_share": 0.002
+    },
+    "Harappa": {
+      "site": "Harappa",
+      "scope": "top10_edge_removed_one_edit_family_collapsed",
+      "rows": 112,
+      "tokens": 471,
+      "unique_tokens": 181,
+      "stored_higher": 83,
+      "reversed_higher": 16,
+      "ties": 13,
+      "stored_win_share": 0.741071,
+      "mean_stored_minus_reversed_per_transition": 0.653432,
+      "max_null_ge_observed_share": 0.004
+    },
+    "Lothal": {
+      "site": "Lothal",
+      "scope": "top10_edge_removed_one_edit_family_collapsed",
+      "rows": 16,
+      "tokens": 78,
+      "unique_tokens": 58,
+      "stored_higher": 5,
+      "reversed_higher": 4,
+      "ties": 7,
+      "stored_win_share": 0.3125,
+      "mean_stored_minus_reversed_per_transition": 0.059977,
+      "max_null_ge_observed_share": 0.988
+    }
+  },
+  "rows": [
+    {
+      "site": "Mohenjo-daro",
+      "scope": "top10_edge_removed_one_edit_family_collapsed",
+      "rows": 212,
+      "tokens": 1046,
+      "unique_tokens": 273,
+      "stored_higher": 173,
+      "reversed_higher": 22,
+      "ties": 17,
+      "stored_win_share": 0.816038,
+      "mean_stored_minus_reversed_per_transition": 0.986013,
+      "max_null_ge_observed_share": 0.002
+    },
+    {
+      "site": "Harappa",
+      "scope": "top10_edge_removed_one_edit_family_collapsed",
+      "rows": 112,
+      "tokens": 471,
+      "unique_tokens": 181,
+      "stored_higher": 83,
+      "reversed_higher": 16,
+      "ties": 13,
+      "stored_win_share": 0.741071,
+      "mean_stored_minus_reversed_per_transition": 0.653432,
+      "max_null_ge_observed_share": 0.004
+    },
+    {
+      "site": "Lothal",
+      "scope": "top10_edge_removed_one_edit_family_collapsed",
+      "rows": 16,
+      "tokens": 78,
+      "unique_tokens": 58,
+      "stored_higher": 5,
+      "reversed_higher": 4,
+      "ties": 7,
+      "stored_win_share": 0.3125,
+      "mean_stored_minus_reversed_per_transition": 0.059977,
+      "max_null_ge_observed_share": 0.988
+    }
+  ],
+  "artifact_files": [
+    "data/open_prototype/tools/effective_unicity_directionality_site_profiles.mjs",
+    "data/open_prototype/reports/effective_unicity_directionality_site_profiles_summary.json",
+    "data/open_prototype/reports/effective_unicity_directionality_site_profiles.csv",
+    "data/open_prototype/reports/effective_unicity_directionality_site_profiles_null_summary.csv",
+    "data/open_prototype/reports/effective_unicity_directionality_site_profiles_null_iterations.csv"
+  ]
+}

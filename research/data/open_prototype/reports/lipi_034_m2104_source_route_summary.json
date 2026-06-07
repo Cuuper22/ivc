@@ -1,0 +1,176 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "lipi_034_m2104_source_route_probe",
+  "question": "Which public IA/CISI or Parpola source routes can visually test the M-2104 Parpola crosswalk hypothesis?",
+  "target_crosswalk_under_test": "M-2104 +151-097-700-034+ vs M-478/M-480/M-1425 +400-097-700-004+; candidate 097=Parpola sign 15, 151=sign 1, 400=sign 107, 700-034/UIII vs 700-004/UIIII.",
+  "route_hit_rows": 66,
+  "visual_note_rows": 10,
+  "exact_hit_objects": [
+    "H-543",
+    "H-544",
+    "M-478",
+    "M-480",
+    "M-915"
+  ],
+  "no_exact_hit_objects": [
+    "M-2104",
+    "M-1425",
+    "M-715",
+    "M-896"
+  ],
+  "plate_visual_confirmed_objects": [
+    "H-543",
+    "H-544",
+    "M-478",
+    "M-480",
+    "M-715",
+    "M-896",
+    "M-915",
+    "M-1425"
+  ],
+  "no_plate_visual_confirmed_objects": [
+    "M-2104"
+  ],
+  "route_counts_by_object": {
+    "M-2104": {
+      "route_rows": 1,
+      "exact_route_rows": 0,
+      "plate_candidate_route_rows": 0,
+      "visual_plate_confirmed": false,
+      "leaves": [
+        "CISI Collections in Pakistan n479"
+      ]
+    },
+    "M-478": {
+      "route_rows": 13,
+      "exact_route_rows": 2,
+      "plate_candidate_route_rows": 5,
+      "visual_plate_confirmed": true,
+      "leaves": [
+        "CISI Collections in India n19",
+        "CISI Collections in India n150",
+        "CISI Collections in India n404",
+        "CISI Collections in India n406",
+        "CISI Collections in India n450",
+        "CISI Collections in India n581",
+        "CISI Collections in India n835",
+        "CISI Collections in India n837",
+        "CISI Collections in Pakistan n316"
+      ]
+    },
+    "M-480": {
+      "route_rows": 10,
+      "exact_route_rows": 2,
+      "plate_candidate_route_rows": 3,
+      "visual_plate_confirmed": true,
+      "leaves": [
+        "CISI Collections in India n150",
+        "CISI Collections in India n402",
+        "CISI Collections in India n404",
+        "CISI Collections in India n581",
+        "CISI Collections in India n833",
+        "CISI Collections in India n835",
+        "CISI Collections in Pakistan n316",
+        "CISI Collections in Pakistan n470"
+      ]
+    },
+    "M-1425": {
+      "route_rows": 2,
+      "exact_route_rows": 0,
+      "plate_candidate_route_rows": 1,
+      "visual_plate_confirmed": true,
+      "leaves": [
+        "CISI Collections in Pakistan n227",
+        "CISI Collections in Pakistan n479"
+      ]
+    },
+    "H-543": {
+      "route_rows": 9,
+      "exact_route_rows": 1,
+      "plate_candidate_route_rows": 3,
+      "visual_plate_confirmed": true,
+      "leaves": [
+        "CISI Collections in India n34",
+        "CISI Collections in India n404",
+        "CISI Collections in India n465",
+        "CISI Collections in India n835",
+        "CISI Collections in Pakistan n324",
+        "CISI Collections in Pakistan n472",
+        "CISI Collections in Pakistan n475"
+      ]
+    },
+    "H-544": {
+      "route_rows": 12,
+      "exact_route_rows": 2,
+      "plate_candidate_route_rows": 5,
+      "visual_plate_confirmed": true,
+      "leaves": [
+        "CISI Collections in India n171",
+        "CISI Collections in India n404",
+        "CISI Collections in India n602",
+        "CISI Collections in India n835",
+        "CISI Collections in Pakistan n325",
+        "CISI Collections in Pakistan n470",
+        "CISI Collections in Pakistan n472",
+        "CISI Collections in Pakistan n475",
+        "CISI Collections in Pakistan n476"
+      ]
+    },
+    "M-915": {
+      "route_rows": 7,
+      "exact_route_rows": 1,
+      "plate_candidate_route_rows": 3,
+      "visual_plate_confirmed": true,
+      "leaves": [
+        "CISI Collections in India n403",
+        "CISI Collections in India n834",
+        "CISI Collections in Pakistan n122",
+        "CISI Collections in Pakistan n470",
+        "CISI Collections in Pakistan n478"
+      ]
+    },
+    "M-715": {
+      "route_rows": 8,
+      "exact_route_rows": 0,
+      "plate_candidate_route_rows": 2,
+      "visual_plate_confirmed": true,
+      "leaves": [
+        "CISI Collections in India n404",
+        "CISI Collections in India n406",
+        "CISI Collections in India n835",
+        "CISI Collections in India n837",
+        "CISI Collections in Pakistan n80",
+        "CISI Collections in Pakistan n471",
+        "CISI Collections in Pakistan n479"
+      ]
+    },
+    "M-896": {
+      "route_rows": 4,
+      "exact_route_rows": 0,
+      "plate_candidate_route_rows": 1,
+      "visual_plate_confirmed": true,
+      "leaves": [
+        "CISI Collections in India n403",
+        "CISI Collections in India n834",
+        "CISI Collections in Pakistan n119",
+        "CISI Collections in Pakistan n470"
+      ]
+    }
+  },
+  "strongest_positive": "M-478, M-480, and M-1425 now have public CISI plate images; H-543, H-544, M-915, M-715, and M-896 also have plate images for controls/conflicts.",
+  "strongest_negative": "IA CISI OCR did not find exact M-2104; bare 2104 is register/index noise, so M-2104 still rests on Parpola 2019 Fig. 1/prose until a CISI plate or high-resolution rod image is acquired.",
+  "immediate_falsification_test": "Crop and compare M-478/M-480/M-1425 tablet inscription clusters against Parpola Fig. 1 text no. 12: if 700-004 is not visually the four-stroke U/pot cluster in the parallels, or 700-034 is not the three-stroke counterpart in M-2104, the live 034 extraction fails.",
+  "accepted_source_mappings": 0,
+  "accepted_decipherment_claims": 0,
+  "source_files": {
+    "parpola_2019": "https://tuhat.helsinki.fi/ws/portalfiles/portal/129602857/Parpola_A_2019_Inscriptions_incised_on_the_Harappan_bone_rods_Proceedings_of_EASAA_22.pdf",
+    "ia_details": "https://archive.org/details/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan",
+    "cisi_india_xml": "https://archive.org/download/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan/Corpus%20of%20Indus%20Seals%20and%20Inscriptions.%20Collections%20in%20India_djvu.xml",
+    "cisi_pakistan_xml": "https://archive.org/download/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan/Corpus%20of%20Indus%20Seals%20and%20Inscriptions.%20Collections%20in%20Pakistan_djvu.xml"
+  },
+  "outputs": [
+    "data/open_prototype/reports/lipi_034_m2104_source_route_hits.csv",
+    "data/open_prototype/reports/lipi_034_m2104_source_visual_notes.csv",
+    "data/open_prototype/reports/lipi_034_m2104_source_route_summary.json"
+  ]
+}

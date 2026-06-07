@@ -1,0 +1,42 @@
+{
+  "run_date": "2026-05-31T15:00:00-07:00",
+  "phase": "EXPAND",
+  "bet_id": "V2_V4_400740_COLLISION_REGISTER_ORDER_20260531",
+  "vector": "V2 slot grammar + V4 context-to-meaning",
+  "confidence_tier": "wild shot",
+  "risky_bet": "`400` and `740` are competing register openers whose collision order diagnoses carrier/register class: TAB:B/I account rows should prefer 400-before-740, while SEAL:R/TAB:C rectangular/copper administrative rows should prefer 740-before-400.",
+  "observed": {
+    "tablet_total": 105,
+    "tablet_400_before_740": 104,
+    "rect_total": 3,
+    "rect_740_before_400": 0,
+    "aligned_hits": 104,
+    "aligned_total": 108
+  },
+  "observed_readable": "Focused 400+740 collision rows: tablet/account 104/105 have 400-before-740; rectangular/copper admin 0/3 have 740-before-400; aligned 104/108.",
+  "fisher_tablet_400_before_vs_rect_400_before_p": 1,
+  "label_shuffle_false_positive_rate": 1,
+  "adversarial_test": "Canonical numeric-sequence collapse; restrict to rows containing both 400 and 740; split only by pre-declared register classes TAB:B/I versus SEAL:R/TAB:C; shuffle register labels over collision rows while preserving row order/sign sequences.",
+  "falsifier": "If either class has mixed collision order after source-checking, or if the aligned-order shuffle rate rises above 0.01 under leave-site controls, this hierarchy dies and 400/740 revert to independent context openers.",
+  "next_prediction": "New TAB:B/I rows containing both 400 and 740 should usually start with 400 before 740; new SEAL:R/TAB:C rows containing both should more often put 740 before 400, except rows where 407 independently takes the opener slot.",
+  "by_class": [
+    {
+      "register_class": "tablet_account",
+      "rows": 105,
+      "order_400_before_740": 104,
+      "order_740_before_400": 1
+    },
+    {
+      "register_class": "rectangular_copper_admin",
+      "rows": 3,
+      "order_400_before_740": 3,
+      "order_740_before_400": 0
+    },
+    {
+      "register_class": "other",
+      "rows": 32,
+      "order_400_before_740": 20,
+      "order_740_before_400": 12
+    }
+  ]
+}

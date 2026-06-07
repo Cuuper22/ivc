@@ -1,0 +1,36 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "lipi_034_m2104_cisi31_bridge_route_probe",
+  "question": "Does current public/source-acquisition evidence produce an exact M-2104 to Marshall no. 532 / VS875 to CISI 3.1 bridge?",
+  "finding": "No exact public bridge yet. The route has improved materially: CISI 3.1 is confirmed as the correct Mohenjo-daro/Harappa supplement, a secondary range review says the volume includes Mohenjo-daro m1660 to m2132 so M-2104 is range-supported inside the volume, the end matter is the exact lookup target for object data, and Tiedekirja has confirmed the hardbound volume is available for EUR 118.25 shipped to the USA with no digital form. An invoice/payment-link request has been sent. Until the volume or equivalent archive metadata is inspected, M-2104 remains quarantined as a retrieval/source-acquisition target rather than accepted evidence for 034.",
+  "counts": {
+    "route_rows": 15,
+    "adjudication_rows": 9,
+    "segmentation_scenario_rows": 8,
+    "accepted_source_mappings": 0,
+    "accepted_token_boundaries": 0,
+    "accepted_sign_mappings": 0,
+    "accepted_numbers": 0,
+    "accepted_functions": 0,
+    "accepted_phonetic_values": 0,
+    "accepted_translations": 0
+  },
+  "acquisition_status": {
+    "tiedekirja_reply_message_id": "[redacted-msgid]",
+    "tiedekirja_invoice_request_message_id": "[redacted-msgid]",
+    "hardbound_volume_available": true,
+    "legal_digital_available": false,
+    "price_eur": 70.0,
+    "ups_shipping_eur": 48.25,
+    "total_eur": 118.25,
+    "payment_made": false
+  },
+  "working_status": "quarantined_source_route_pending_CISI_3_1_purchase_and_inspection",
+  "outputs": [
+    "data/open_prototype/reports/lipi_034_m2104_cisi31_bridge_routes.csv",
+    "data/open_prototype/reports/lipi_034_m2104_cisi31_bridge_adjudication.csv",
+    "data/open_prototype/reports/lipi_034_m2104_cisi31_segmentation_scenarios.csv",
+    "data/open_prototype/reports/lipi_034_m2104_cisi31_bridge_summary.json",
+    "docs/lipi_034_m2104_cisi31_bridge_route_probe.md"
+  ]
+}

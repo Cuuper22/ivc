@@ -1,0 +1,51 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_002861_leaky_closure_extension_20260531",
+  "tier": "candidate",
+  "bet": "The strict terminal-governor network should be extended with a leaky 002-861 near-closure branch. 861 is not as clean as 817 or 820, but it is the only other high-support 002 branch with strong terminal behavior and explains the main held-out misses.",
+  "evidence": {
+    "source": "data/open_prototype/reports/risky_terminal_governor_network_20260531_edges.csv",
+    "002_861": "126 exact cells, 102 terminal, terminal_share=0.8095238095238095, 8 sites, 9 types",
+    "large_bigrams_50plus_cells_context": [
+      "060-920:52/51 terminal, share=0.9807692307692307",
+      "002-817:108/105 terminal, share=0.9722222222222222",
+      "002-820:75/70 terminal, share=0.9333333333333333",
+      "002-861:126/102 terminal, share=0.8095238095238095",
+      "next best 50plus branch with terminal share above background is 220-032 at 13/50, share=0.26"
+    ],
+    "nonterminal_tail_profile": {
+      "terminal": 102,
+      "opener_class_tails": "0/24 by the same >=5 occurrences and >=0.5 initial-share opener definition used for 060-692",
+      "repeated_nonterminal_tails": [
+        "603 occurs 3 times",
+        "533 occurs 2 times and is the already accepted narrow 533-717 follow-on family"
+      ],
+      "singleton_nonterminal_tails": [
+        "125",
+        "216",
+        "244",
+        "255",
+        "360",
+        "392",
+        "416",
+        "626",
+        "683",
+        "698",
+        "791",
+        "803",
+        "831",
+        "832",
+        "901",
+        "096",
+        "032",
+        "036",
+        "031"
+      ]
+    }
+  },
+  "model_update": "Use a two-tier 002 closure set: strict={817,820}; leaky={861}. This mirrors the 060 side where strict={920,550,820} and near/internal-boundary={692}.",
+  "prediction": "Damaged 002-000 terminal rows should resolve mostly to 817/820/861, with 861 more likely in contexts that permit a following singleton tail or the 533-717/603 families.",
+  "decision": "promote_to_candidate_near_closure; keep outside strict terminal-governor network until a tail model explains the 24 nonterminal cells",
+  "non_claim": "No sound value or meaning is assigned to 861 here."
+}

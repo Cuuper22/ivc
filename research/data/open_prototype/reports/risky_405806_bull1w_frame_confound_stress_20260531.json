@@ -1,0 +1,169 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "candidate_id": "risky_405806_bull1w_frame_confound_stress_20260531",
+  "bet": "405/806 Bull1:W enrichment is not only an artifact of the 740-X-590 frame.",
+  "source": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\lipi\\metadata_filtered.csv",
+  "panels": [
+    {
+      "id": "square_seal_s_all",
+      "rows": 1721,
+      "bull1w_rows": 400,
+      "stats": {
+        "405": {
+          "a": 22,
+          "b": 378,
+          "c": 6,
+          "d": 1315,
+          "fisher_p": 6.51208138322886e-10,
+          "maxstat_fpr": 0
+        },
+        "806": {
+          "a": 20,
+          "b": 380,
+          "c": 4,
+          "d": 1317,
+          "fisher_p": 5.954330633744415e-10,
+          "maxstat_fpr": 0
+        },
+        "either": {
+          "a": 38,
+          "b": 362,
+          "c": 10,
+          "d": 1311,
+          "fisher_p": 1.2623379573230046e-16,
+          "maxstat_fpr": null
+        }
+      }
+    },
+    {
+      "id": "remove_740_405_590",
+      "rows": 1714,
+      "bull1w_rows": 394,
+      "stats": {
+        "405": {
+          "a": 16,
+          "b": 378,
+          "c": 5,
+          "d": 1315,
+          "fisher_p": 3.0107904941264754e-7,
+          "maxstat_fpr": 0
+        },
+        "806": {
+          "a": 19,
+          "b": 375,
+          "c": 4,
+          "d": 1316,
+          "fisher_p": 1.8096376793932293e-9,
+          "maxstat_fpr": 0
+        },
+        "either": {
+          "a": 32,
+          "b": 362,
+          "c": 9,
+          "d": 1311,
+          "fisher_p": 5.758757766845557e-14,
+          "maxstat_fpr": null
+        }
+      }
+    },
+    {
+      "id": "remove_any_740_x_590",
+      "rows": 1681,
+      "bull1w_rows": 387,
+      "stats": {
+        "405": {
+          "a": 16,
+          "b": 371,
+          "c": 5,
+          "d": 1289,
+          "fisher_p": 3.067612539790785e-7,
+          "maxstat_fpr": 0
+        },
+        "806": {
+          "a": 19,
+          "b": 368,
+          "c": 4,
+          "d": 1290,
+          "fisher_p": 1.8494439556998125e-9,
+          "maxstat_fpr": 0
+        },
+        "either": {
+          "a": 32,
+          "b": 355,
+          "c": 9,
+          "d": 1285,
+          "fisher_p": 5.93032111621988e-14,
+          "maxstat_fpr": null
+        }
+      }
+    },
+    {
+      "id": "remove_harappa",
+      "rows": 1413,
+      "bull1w_rows": 282,
+      "stats": {
+        "405": {
+          "a": 10,
+          "b": 272,
+          "c": 4,
+          "d": 1127,
+          "fisher_p": 0.000040655696691571014,
+          "maxstat_fpr": 0.002
+        },
+        "806": {
+          "a": 10,
+          "b": 272,
+          "c": 2,
+          "d": 1129,
+          "fisher_p": 0.0000039453292452529785,
+          "maxstat_fpr": 0
+        },
+        "either": {
+          "a": 19,
+          "b": 263,
+          "c": 6,
+          "d": 1125,
+          "fisher_p": 1.6553743963345154e-9,
+          "maxstat_fpr": null
+        }
+      }
+    },
+    {
+      "id": "remove_harappa_and_740x590",
+      "rows": 1389,
+      "bull1w_rows": 276,
+      "stats": {
+        "405": {
+          "a": 8,
+          "b": 268,
+          "c": 3,
+          "d": 1110,
+          "fisher_p": 0.00020955278949199178,
+          "maxstat_fpr": 0.014
+        },
+        "806": {
+          "a": 10,
+          "b": 266,
+          "c": 2,
+          "d": 1111,
+          "fisher_p": 0.000003773234143869313,
+          "maxstat_fpr": 0
+        },
+        "either": {
+          "a": 17,
+          "b": 259,
+          "c": 5,
+          "d": 1108,
+          "fisher_p": 7.725589935147335e-9,
+          "maxstat_fpr": null
+        }
+      }
+    }
+  ],
+  "null": {
+    "iterations": 1000,
+    "preserves": "square SEAL:S row set and Bull1:W label count; shuffles Bull1:W labels for all-sign maxstat"
+  },
+  "decision": "survives_frame_confound_as_at_least_one_sign"
+}

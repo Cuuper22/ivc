@@ -1,0 +1,37 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "candidate_id": "risky_060920_terminal_cap_refinement_20260531",
+  "refines_candidate": "risky_741060920_pan_site_terminal_formula_20260531",
+  "tier": "promoted_candidate_metadata_layer_not_source_boxed",
+  "corrected_bet": "The cleaner structural object is the terminal cap 060-920. The stem 741-060 is the dominant feeder into that cap and appears to force it, but 920-selection is not unique to predecessor 741.",
+  "counts": {
+    "060_occurrences_raw": 182,
+    "060_next_920_raw": 53,
+    "060_next_920_terminal_raw": 52,
+    "060_occurrences_exact_text_site_type_symbol_prev_next_after_dedup": 175,
+    "060_next_920_exact_dedup": 52,
+    "060_next_920_terminal_exact_dedup": 51,
+    "dedup_predecessors_before_060_920": {
+      "741": 30,
+      "742": 7,
+      "745": 3,
+      "740": 2,
+      "001": 1,
+      "003": 1,
+      "004": 1,
+      "031": 1,
+      "176": 1,
+      "235": 1,
+      "415": 1,
+      "500": 1,
+      "803": 1,
+      "927": 1
+    },
+    "only_nonterminal_060_920_exact_dedup": "Unknown +740-100-415-927-060-920-031+"
+  },
+  "decision": "demote_over_specific_wording_keep_741060920_as_subconstruction",
+  "reason": "A broader 060-920 terminal cap explains the same visual/metadata cluster with fewer assumptions. The 741-060 result remains important because 741 is the largest exact-collapsed feeder into 060-920 and 741-060 is 30/30 followed by terminal 920.",
+  "blind_packet_implication": "The 741 blind packet now has two possible success modes: separating full 741-060-920 positives from controls, or showing that BT009/L-114 clusters with positives because it also contains non-741 060-920. The second outcome would promote 060-920 over the narrower 741-060 stem.",
+  "next_destructive_test": "Score blind readers both for full 741-060-920 and for broader terminal 060-920 recognition. Add non-741 060-920 positives in the next packet if the broader cap survives."
+}

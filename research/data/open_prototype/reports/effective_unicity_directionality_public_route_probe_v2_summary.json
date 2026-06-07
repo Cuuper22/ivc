@@ -1,0 +1,215 @@
+{
+  "date": "2026-05-29",
+  "probe_id": "directionality_public_route_probe_v2_ocr_coord_fix",
+  "purpose": "Public CISI OCR/page-route probe for the top 80 harsh directionality source-queue rows.",
+  "target_selection": {
+    "source_queue": "data/open_prototype/reports/effective_unicity_directionality_source_queue.csv",
+    "top_n": 80,
+    "included_source_validation_needs": [
+      "find_public_or_request_source_route",
+      "replace_non_source_grade_catalogue_hint",
+      "box_direction_from_existing_public_route",
+      "request_or_locate_source_image"
+    ]
+  },
+  "counts": {
+    "target_rows": 79,
+    "route_rows": 93,
+    "targets_with_any_route": 39,
+    "targets_with_plate_route_candidate": 38,
+    "targets_with_data_route_only": 1,
+    "targets_not_found": 40,
+    "accepted_claims_increment": 0
+  },
+  "by_priority_band": {
+    "P1_acquire_high_positive_source": 53,
+    "P1_audit_reversed_anomaly": 26
+  },
+  "by_source_status": {
+    "not_found_in_public_cisi_ocr_layer": 40,
+    "public_cisi_plate_route_candidate": 38,
+    "public_cisi_data_route_only": 1
+  },
+  "top_plate_route_candidates": [
+    {
+      "queue_rank": "4",
+      "cisi": "H-665",
+      "site": "Harappa",
+      "type": "SEAL:R",
+      "text": "+407-004-060-692+",
+      "diff_per_transition": "3.355998",
+      "best_volume": "cisi_pakistan",
+      "best_page_index": 343,
+      "best_local_artifact": "tmp/effective_unicity_directionality_public_route_probe_v2/crops/4_H_665_cisi_pakistan_n343_1_context_enhanced_x2.jpg"
+    },
+    {
+      "queue_rank": "5",
+      "cisi": "M-1458",
+      "site": "Mohenjo-daro",
+      "type": "TAB:C",
+      "text": "+407-004-001-617-142+",
+      "diff_per_transition": "3.268213",
+      "best_volume": "cisi_pakistan",
+      "best_page_index": 234,
+      "best_local_artifact": "tmp/effective_unicity_directionality_public_route_probe_v2/crops/5_M_1458_cisi_pakistan_n234_1_context_enhanced_x2.jpg"
+    },
+    {
+      "queue_rank": "9",
+      "cisi": "H-654",
+      "site": "Harappa",
+      "type": "SEAL:R",
+      "text": "+405-061-740-806+",
+      "diff_per_transition": "2.979214",
+      "best_volume": "cisi_pakistan",
+      "best_page_index": 342,
+      "best_local_artifact": "tmp/effective_unicity_directionality_public_route_probe_v2/crops/9_H_654_cisi_pakistan_n342_1_context_enhanced_x2.jpg"
+    },
+    {
+      "queue_rank": "10",
+      "cisi": "M-1310",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:R",
+      "text": "+407-004-001-740-407-590-235+",
+      "diff_per_transition": "2.915356",
+      "best_volume": "cisi_pakistan",
+      "best_page_index": 202,
+      "best_local_artifact": "tmp/effective_unicity_directionality_public_route_probe_v2/crops/10_M_1310_cisi_pakistan_n202_1_context_enhanced_x2.jpg"
+    },
+    {
+      "queue_rank": "11",
+      "cisi": "M-1320",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:R",
+      "text": "+527-555-231-240-798+",
+      "diff_per_transition": "2.876525",
+      "best_volume": "cisi_pakistan",
+      "best_page_index": 203,
+      "best_local_artifact": "tmp/effective_unicity_directionality_public_route_probe_v2/crops/11_M_1320_cisi_pakistan_n203_1_context_enhanced_x2.jpg"
+    },
+    {
+      "queue_rank": "15",
+      "cisi": "M-811",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:S",
+      "text": "+226-032-803+",
+      "diff_per_transition": "2.71824",
+      "best_volume": "cisi_pakistan",
+      "best_page_index": 104,
+      "best_local_artifact": "tmp/effective_unicity_directionality_public_route_probe_v2/crops/15_M_811_cisi_pakistan_n104_1_context_enhanced_x2.jpg"
+    },
+    {
+      "queue_rank": "16",
+      "cisi": "M-1523",
+      "site": "Mohenjo-daro",
+      "type": "TAB:C",
+      "text": "+407-585-033-705-233-235-806+",
+      "diff_per_transition": "2.698288",
+      "best_volume": "cisi_pakistan",
+      "best_page_index": 253,
+      "best_local_artifact": "tmp/effective_unicity_directionality_public_route_probe_v2/crops/16_M_1523_cisi_pakistan_n253_1_context_enhanced_x2.jpg"
+    },
+    {
+      "queue_rank": "17",
+      "cisi": "H-152",
+      "site": "Harappa",
+      "type": "SEAL:R",
+      "text": "+154-806-468+",
+      "diff_per_transition": "2.681647",
+      "best_volume": "cisi_india",
+      "best_page_index": 237,
+      "best_local_artifact": "tmp/effective_unicity_directionality_public_route_probe_v2/crops/17_H_152_cisi_india_n237_1_context_enhanced_x2.jpg"
+    },
+    {
+      "queue_rank": "21",
+      "cisi": "M-365",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:R",
+      "text": "+527-550-033-705-220-415-060-550+",
+      "diff_per_transition": "2.581387",
+      "best_volume": "cisi_india",
+      "best_page_index": 126,
+      "best_local_artifact": "tmp/effective_unicity_directionality_public_route_probe_v2/crops/21_M_365_cisi_india_n126_1_context_enhanced_x2.jpg"
+    },
+    {
+      "queue_rank": "23",
+      "cisi": "M-527",
+      "site": "Mohenjo-daro",
+      "type": "TAB:C",
+      "text": "+001-740-923-033-706+",
+      "diff_per_transition": "2.455724",
+      "best_volume": "cisi_india",
+      "best_page_index": 167,
+      "best_local_artifact": "tmp/effective_unicity_directionality_public_route_probe_v2/crops/23_M_527_cisi_india_n167_1_context_enhanced_x2.jpg"
+    },
+    {
+      "queue_rank": "24",
+      "cisi": "M-534",
+      "site": "Mohenjo-daro",
+      "type": "TAB:C",
+      "text": "+407-321-407-845-033-705-235+",
+      "diff_per_transition": "2.4549",
+      "best_volume": "cisi_india",
+      "best_page_index": 35,
+      "best_local_artifact": "tmp/effective_unicity_directionality_public_route_probe_v2/crops/24_M_534_cisi_india_n35_1_context_enhanced_x2.jpg"
+    },
+    {
+      "queue_rank": "27",
+      "cisi": "M-525",
+      "site": "Mohenjo-daro",
+      "type": "TAB:C",
+      "text": "+423-003-001-900-740-690-435-255+",
+      "diff_per_transition": "2.409404",
+      "best_volume": "cisi_pakistan",
+      "best_page_index": 40,
+      "best_local_artifact": "tmp/effective_unicity_directionality_public_route_probe_v2/crops/27_M_525_cisi_pakistan_n40_1_context_enhanced_x2.jpg"
+    },
+    {
+      "queue_rank": "28",
+      "cisi": "M-1315",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:R",
+      "text": "+617-142-240+",
+      "diff_per_transition": "2.404709",
+      "best_volume": "cisi_pakistan",
+      "best_page_index": 202,
+      "best_local_artifact": "tmp/effective_unicity_directionality_public_route_probe_v2/crops/28_M_1315_cisi_pakistan_n202_1_context_enhanced_x2.jpg"
+    },
+    {
+      "queue_rank": "29",
+      "cisi": "M-386",
+      "site": "Mohenjo-daro",
+      "type": "SEAL:R",
+      "text": "+405-004-001-139+",
+      "diff_per_transition": "2.404551",
+      "best_volume": "cisi_india",
+      "best_page_index": 130,
+      "best_local_artifact": "tmp/effective_unicity_directionality_public_route_probe_v2/crops/29_M_386_cisi_india_n130_1_context_enhanced_x2.jpg"
+    },
+    {
+      "queue_rank": "30",
+      "cisi": "H-158",
+      "site": "Harappa",
+      "type": "SEAL:R",
+      "text": "+154-806-472-001-740-405-590+",
+      "diff_per_transition": "2.388833",
+      "best_volume": "cisi_india",
+      "best_page_index": 237,
+      "best_local_artifact": "tmp/effective_unicity_directionality_public_route_probe_v2/crops/30_H_158_cisi_india_n237_1_context_enhanced_x2.jpg"
+    }
+  ],
+  "interpretation_boundary": "These are route candidates only. They do not validate source-normalized token order, physical direction, sign identity, sign meaning, phonetic value, language family, or translation.",
+  "skeptic_notes": [
+    "Exact OCR labels reject starred partial labels and split numeric suffix traps.",
+    "Page-route crops show the OCR label context, not validated sign boxes.",
+    "Volume mismatches and late register/data pages are retained but explicitly demoted.",
+    "Every candidate still needs human visual source-panel review and matched-negative blind token-boxing."
+  ],
+  "outputs": {
+    "routes_csv": "data/open_prototype/reports/effective_unicity_directionality_public_route_probe_v2_routes.csv",
+    "status_csv": "data/open_prototype/reports/effective_unicity_directionality_public_route_probe_v2_status.csv",
+    "summary_json": "data/open_prototype/reports/effective_unicity_directionality_public_route_probe_v2_summary.json",
+    "contact_sheet": "tmp/effective_unicity_directionality_public_route_probe_v2/directionality_public_route_probe_v2_contact_sheet.jpg",
+    "page_dir": "tmp/effective_unicity_directionality_public_route_probe_v2/pages",
+    "crop_dir": "tmp/effective_unicity_directionality_public_route_probe_v2/crops"
+  }
+}

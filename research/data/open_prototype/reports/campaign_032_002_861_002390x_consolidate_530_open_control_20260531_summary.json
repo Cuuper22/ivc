@@ -1,0 +1,37 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "consolidate_530_open_control",
+  "rows": {
+    "governed_530": 4,
+    "governed_125": 11,
+    "governed_530_one_complement_then_end": 4,
+    "governed_125_one_complement_then_end": 5,
+    "governed_530_direct_shadow_rows": 1,
+    "direct_002390741_shadow_rows": 0
+  },
+  "decisions": [
+    {
+      "checked_date": "2026-05-31",
+      "candidate": "X530_OPEN_OPERATOR_CONTROL",
+      "decision": "keep_but_rename_to_one_complement_linker",
+      "evidence": "530 rows=4; open=4/4; one_complement_then_end=4/4; heads=296:1;299:1;390:1;705:1; first_after_x=000:1;741:1;820:1;904:1; direct_shadow_rows=1/4.",
+      "consequence": "`530` is not a generic open class. In this campaign it is a one-complement linker/control: it opens exactly one slot and then closes."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "candidate": "X530_AS_125_PEER",
+      "decision": "kill",
+      "evidence": "530 one-complement=4/4 versus 125 one-complement=5/11; 125 terminal=2/11 and has multi-sign tails.",
+      "consequence": "`530` cannot be merged with `125`; it becomes the clean control that proves open X signs can have different operator subtypes."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "candidate": "H773_390_530_741",
+      "decision": "keep_as_subcase_only",
+      "evidence": "direct 002-390-741 shadows=0; governed row H-773 has 002-390-530-741.",
+      "consequence": "H-773 supports `530` as a separable linker, but it is not a stand-alone translation claim."
+    }
+  ],
+  "compressed_read": "`530` survives, but only after being narrowed from open class to one-complement linker/control. It is not a peer of `125`."
+}

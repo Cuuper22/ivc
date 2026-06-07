@@ -1,0 +1,99 @@
+{
+  "checked_date": "2026-05-25",
+  "question": "Where do the IA CISI OCR-hit FRAME700_034 packet objects occur at page level?",
+  "ia_route_objects_input": 9,
+  "located_objects": 9,
+  "missing_after_positive_route": [],
+  "page_locator_rows": 11,
+  "total_hit_count": 27,
+  "by_object": {
+    "H-212": {
+      "page_rows": 2,
+      "hit_count": 4,
+      "leaves": [
+        406,
+        837
+      ],
+      "volume": "CISI Collections in India"
+    },
+    "H-353": {
+      "page_rows": 2,
+      "hit_count": 4,
+      "leaves": [
+        265,
+        696
+      ],
+      "volume": "CISI Collections in India"
+    },
+    "H-771": {
+      "page_rows": 1,
+      "hit_count": 4,
+      "leaves": [
+        358
+      ],
+      "volume": "CISI Collections in Pakistan"
+    },
+    "H-789": {
+      "page_rows": 1,
+      "hit_count": 2,
+      "leaves": [
+        359
+      ],
+      "volume": "CISI Collections in Pakistan"
+    },
+    "H-893": {
+      "page_rows": 1,
+      "hit_count": 3,
+      "leaves": [
+        371
+      ],
+      "volume": "CISI Collections in Pakistan"
+    },
+    "H-910": {
+      "page_rows": 1,
+      "hit_count": 1,
+      "leaves": [
+        372
+      ],
+      "volume": "CISI Collections in Pakistan"
+    },
+    "H-925": {
+      "page_rows": 1,
+      "hit_count": 7,
+      "leaves": [
+        373
+      ],
+      "volume": "CISI Collections in Pakistan"
+    },
+    "H-930": {
+      "page_rows": 1,
+      "hit_count": 1,
+      "leaves": [
+        374
+      ],
+      "volume": "CISI Collections in Pakistan"
+    },
+    "H-983": {
+      "page_rows": 1,
+      "hit_count": 1,
+      "leaves": [
+        377
+      ],
+      "volume": "CISI Collections in Pakistan"
+    }
+  },
+  "accepted_decipherment_claims": 0,
+  "source_boundary": "OCR page location is not sign validation. It only gives target pages for manual plate/source inspection.",
+  "immediate_next_action": "Open the located reader pages and fill source citation, plate/page ID, side count, side order, direction basis, and 032/033/034 visibility fields in the two-lane coding sheet.",
+  "internet_archive_identifier": "TheIndusScript.TextConcordanceAndTablesIravathanMahadevan",
+  "source_files": {
+    "cisi_india": {
+      "label": "CISI Collections in India",
+      "xml": "https://archive.org/download/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan/Corpus%20of%20Indus%20Seals%20and%20Inscriptions.%20Collections%20in%20India_djvu.xml"
+    },
+    "cisi_pakistan": {
+      "label": "CISI Collections in Pakistan",
+      "xml": "https://archive.org/download/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan/Corpus%20of%20Indus%20Seals%20and%20Inscriptions.%20Collections%20in%20Pakistan_djvu.xml"
+    }
+  }
+}

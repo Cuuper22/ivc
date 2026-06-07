@@ -1,0 +1,82 @@
+{
+  "run_date": "2026-05-31T14:48:00-07:00",
+  "phase": "CONSOLIDATE",
+  "candidate": "Susa 3881.1 / Louvre SB 5614 as the live external-contact bridge lead for 407+090",
+  "tier_after_check": "candidate source-bound object; catalog-dependent sign bridge",
+  "primary_source": {
+    "institution": "Louvre",
+    "url": "https://collections.louvre.fr/ark:/53355/cl010179441",
+    "title": "Cachet rond",
+    "inventory": "Sb 5614",
+    "old_numbers": [
+      "AS 15374"
+    ],
+    "source_metadata_match": {
+      "place": "Susa",
+      "date": "2300-2000 BCE per Louvre page",
+      "material": "steatite / paste per Louvre page",
+      "inscription_description": "six signs above a bull moving right"
+    }
+  },
+  "local_row_under_test": {
+    "id": "3881.1",
+    "site": "Susa",
+    "region": "Iranian Plateau",
+    "object_type": "SEAL:C",
+    "shape": "circular",
+    "iconography": "Gaur",
+    "direction": "R/L",
+    "local_text": "+700-604-407-090-365-000+",
+    "local_source": "data/open_prototype/lipi/metadata_filtered.csv"
+  },
+  "source_images": [
+    "tmp/susa_3881_source_check/SB5614_0000229537_OG.JPG",
+    "tmp/susa_3881_source_check/SB5614_0000229538_OG.JPG",
+    "tmp/susa_3881_source_check/SB5614_9538_signs_only_contrast.jpg",
+    "tmp/susa_3881_source_check/SB5614_9538_signs_only_contrast_hflip.jpg"
+  ],
+  "shape_reference_used": {
+    "090": {
+      "mayig_candidate": "P013",
+      "description": "person with two arms and two legs",
+      "reference": "tmp/mayig_feature_namespace_probe/repo/indus-valley-script-corpus-ad2f1e218a34b8c33c57de0d6cb8d99272765bbb/features/P013.json"
+    },
+    "407": {
+      "mayig_candidate": "P086",
+      "description": "simple tree with branches at the top",
+      "reference": "tmp/mayig_feature_namespace_probe/repo/indus-valley-script-corpus-ad2f1e218a34b8c33c57de0d6cb8d99272765bbb/features/P086.json"
+    },
+    "700": {
+      "mayig_candidate": "P310",
+      "description": "simple U with no other decoration",
+      "reference": "tmp/mayig_feature_namespace_probe/repo/indus-valley-script-corpus-ad2f1e218a34b8c33c57de0d6cb8d99272765bbb/features/P310.json"
+    }
+  },
+  "visual_observations": [
+    "The Louvre object visibly matches the external-contact object context: circular Susa seal/impression, bovid iconography, and a six-sign band above the animal.",
+    "A human-like sign and branched/angled signs are visible in the band, so the local row is not obviously invented or iconographically impossible.",
+    "The full local sequence +700-604-407-090-365-000+ is not independently recoverable from the downloaded photographs at this resolution. Glare, blur, edge curvature, and seal/impression mirroring leave the 407+090 order and the flanking signs unresolved.",
+    "The final 000 token is a damage/uncertain-token code in the Mayig feature namespace, and the source photo does show edge/reading uncertainty, but this does not validate the exact Lipi tokenization."
+  ],
+  "decision": {
+    "promoted": false,
+    "killed": false,
+    "status": "object_source_bound_sequence_unverified",
+    "survives": "Susa 3881.1 is very likely Louvre SB 5614, a real external circular bovid seal with six signs.",
+    "demoted": "The 407+090 administrative/register bridge remains catalog-dependent and cannot be counted as source-verified from this image check.",
+    "killed_component": "The prior limitation 'no source image/citation has been bound yet' is dead. The stronger claim 'the source image independently verifies 407+090' is not earned."
+  },
+  "next_decisive_tests": [
+    {
+      "test": "Find an independent sign drawing, catalogue transcription, or higher-resolution source for SB 5614 / AS 15374.",
+      "promotion_condition": "Independent source preserves the local R/L sequence and specifically confirms 407 adjacent to 090 in the claimed order.",
+      "kill_condition": "Independent source gives a different middle pair, reverses the pair without a defensible direction convention, or lacks one of 407/090."
+    },
+    {
+      "test": "Box the six visible signs in the Louvre image and compare each box against source-visible 090, 407/P086, and 700/P310 comparanda.",
+      "promotion_condition": "The expected 407 and 090 shapes are the best matches under both seal/impression orientation controls.",
+      "kill_condition": "The human/tree assignments attach to different local numeric signs or are no better than unrelated signs under shape-null controls."
+    }
+  ],
+  "effect_on_model": "Keep 090/091 external route/register as candidate. Keep Susa 3881.1 as the best source-bound object lead. Do not promote 407+090 or any sound/value/translation from this check."
+}

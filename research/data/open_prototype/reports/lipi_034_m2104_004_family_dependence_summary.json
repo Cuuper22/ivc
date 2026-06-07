@@ -1,0 +1,50 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "lipi_034_m2104_004_family_dependence",
+  "question": "How many independent evidence units does the +400-097-700-004 comparator side actually provide for the M-2104 count-compound hypothesis?",
+  "core_result": {
+    "naive_local_rows_on_004_side": 4,
+    "adjudicated_evidence_units_on_004_side": 2,
+    "units": {
+      "EU_004_INDIA_478_479_480": {
+        "members": ["M-478", "M-479", "M-480"],
+        "independence": "family_internal_one_unit",
+        "reason": "Same CISI India plate cluster, same type/material/direction/exact text, adjacent catalogue sequence, and M-478/M-479 are explicitly paired in the CISI introduction discussion."
+      },
+      "EU_004_PAKISTAN_1425": {
+        "members": ["M-1425"],
+        "independence": "provisional_independent_recurrence",
+        "reason": "Separate CISI Pakistan plate/range and distinct local metadata, but blur, missing confirmed data-register crop, and possible DK-neighborhood relation keep independence provisional."
+      }
+    },
+    "target_side": {
+      "EU_034_TARGET_2104": "single source-gated target; raw Plate CXIV route exists but exact stroke count and CISI 3.1 identity bridge are unresolved"
+    }
+  },
+  "source_inputs": [
+    "CISI India IA leaf n19 introduction: tablet duplicates/moulds and M-478/M-479 four-plus-U discussion",
+    "CISI India IA leaf n150 plate: M-478/M-479/M-480 visible on MOHENJO-DARO 478-481 tablet plate",
+    "CISI India IA leaf n835 data crop: M-478/M-479/M-480 register rows visible",
+    "CISI Pakistan IA leaf n227 plate: M-1425 visible on MOHENJO-DARO 1425-1428 tablet plate",
+    "data/open_prototype/lipi/metadata_filtered.csv"
+  ],
+  "adjudication": {
+    "survives_as_count_compound_target": true,
+    "downgraded_independence": true,
+    "accepted_004_equals_four": false,
+    "accepted_034_equals_three": false,
+    "accepted_translation": false,
+    "safe_claim": "The 700-004 side is source-visible but must be counted as one strong family-level India tablet unit plus one provisional Pakistan-volume recurrence, not four independent confirmations."
+  },
+  "outputs": [
+    "docs/lipi_034_m2104_004_family_dependence.md",
+    "data/open_prototype/reports/lipi_034_m2104_004_family_dependence_objects.csv",
+    "data/open_prototype/reports/lipi_034_m2104_004_family_dependence_weights.csv",
+    "data/open_prototype/reports/lipi_034_m2104_004_family_dependence_summary.json",
+    "tmp/cisi_m2104_packet/family_dependence/cisi_india_n19_tablet_duplicates_moulds_crop.png",
+    "tmp/cisi_m2104_packet/family_dependence/cisi_india_n150_m478_m480_plate_family_crop.png",
+    "tmp/cisi_m2104_packet/family_dependence/cisi_india_n835_m476_m481_data_rows_crop.png",
+    "tmp/cisi_m2104_packet/family_dependence/cisi_pakistan_n227_m1425_plate_crop.png"
+  ],
+  "accepted_decipherment_claims": 0
+}

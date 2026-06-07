@@ -1,0 +1,246 @@
+{
+  "date": "2026-05-29",
+  "seed": 20260529,
+  "context_iterations": 50000,
+  "token_iterations": 5000,
+  "fixed_prefix": "002 861",
+  "target_unit": "533 717",
+  "unit_lengths_tested": [
+    1,
+    2,
+    3
+  ],
+  "min_support": 2,
+  "purpose": "Forger for the 002-861 restricted-tail candidate: let nulls discover any unit of length 1..3 that occurs at least twice and only as a terminal tail after fixed prefix 002-861.",
+  "scopes": {
+    "strict_raw_rows": {
+      "rows": 4135,
+      "observed_max_support_any_n_1_3": 2,
+      "observed_candidate_count_any_n_1_3": 1,
+      "target_unit": "533 717",
+      "target_unit_support_in_fixed_prefix_terminal_context": 2,
+      "target_unit_is_candidate": true,
+      "observed_by_unit_length": {
+        "1": {
+          "max_support": 0,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        "2": {
+          "max_support": 2,
+          "candidate_count": 1,
+          "candidates": [
+            {
+              "unit": "533 717",
+              "total_occurrences": 2,
+              "fixed_prefix_terminal_occurrences": 2,
+              "examples": [
+                "M-376 +740-100-176-002-861-533-717+",
+                "M-391 +405-845-686-740-793-003-233-805-002-861-533-717+"
+              ]
+            }
+          ]
+        },
+        "3": {
+          "max_support": 0,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      }
+    },
+    "strict_exact_text_site_type_symbol_dedup": {
+      "rows": 3074,
+      "observed_max_support_any_n_1_3": 2,
+      "observed_candidate_count_any_n_1_3": 1,
+      "target_unit": "533 717",
+      "target_unit_support_in_fixed_prefix_terminal_context": 2,
+      "target_unit_is_candidate": true,
+      "observed_by_unit_length": {
+        "1": {
+          "max_support": 0,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        "2": {
+          "max_support": 2,
+          "candidate_count": 1,
+          "candidates": [
+            {
+              "unit": "533 717",
+              "total_occurrences": 2,
+              "fixed_prefix_terminal_occurrences": 2,
+              "examples": [
+                "M-376 +740-100-176-002-861-533-717+",
+                "M-391 +405-845-686-740-793-003-233-805-002-861-533-717+"
+              ]
+            }
+          ]
+        },
+        "3": {
+          "max_support": 0,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      }
+    }
+  },
+  "null_summary": [
+    {
+      "scope": "strict_raw_rows",
+      "null_model": "context_shuffle_global_any_n_1_3",
+      "iterations": 50000,
+      "observed_max_support": 2,
+      "observed_candidate_count": 1,
+      "null_mean_max_support": 0.00036,
+      "null_p95_max_support": 0,
+      "null_max_support": 2,
+      "fpr_max_ge_observed": 0.00018,
+      "null_mean_candidate_count": 0.00018,
+      "null_p95_candidate_count": 0,
+      "null_max_candidate_count": 1,
+      "fpr_candidate_count_ge_observed": 0.00018
+    },
+    {
+      "scope": "strict_raw_rows",
+      "null_model": "context_shuffle_site_type_symbol_any_n_1_3",
+      "iterations": 50000,
+      "observed_max_support": 2,
+      "observed_candidate_count": 1,
+      "null_mean_max_support": 0.0012,
+      "null_p95_max_support": 0,
+      "null_max_support": 2,
+      "fpr_max_ge_observed": 0.0006,
+      "null_mean_candidate_count": 0.0006,
+      "null_p95_candidate_count": 0,
+      "null_max_candidate_count": 1,
+      "fpr_candidate_count_ge_observed": 0.0006
+    },
+    {
+      "scope": "strict_raw_rows",
+      "null_model": "token_shuffle_global_preserve_lengths_any_n_1_3",
+      "iterations": 5000,
+      "observed_max_support": 2,
+      "observed_candidate_count": 1,
+      "null_mean_max_support": 0,
+      "null_p95_max_support": 0,
+      "null_max_support": 0,
+      "fpr_max_ge_observed": 0,
+      "null_mean_candidate_count": 0,
+      "null_p95_candidate_count": 0,
+      "null_max_candidate_count": 0,
+      "fpr_candidate_count_ge_observed": 0
+    },
+    {
+      "scope": "strict_raw_rows",
+      "null_model": "token_shuffle_within_row_any_n_1_3",
+      "iterations": 5000,
+      "observed_max_support": 2,
+      "observed_candidate_count": 1,
+      "null_mean_max_support": 0.0086,
+      "null_p95_max_support": 0,
+      "null_max_support": 3,
+      "fpr_max_ge_observed": 0.0042,
+      "null_mean_candidate_count": 0.0042,
+      "null_p95_candidate_count": 0,
+      "null_max_candidate_count": 1,
+      "fpr_candidate_count_ge_observed": 0.0042
+    },
+    {
+      "scope": "strict_exact_text_site_type_symbol_dedup",
+      "null_model": "context_shuffle_global_any_n_1_3",
+      "iterations": 50000,
+      "observed_max_support": 2,
+      "observed_candidate_count": 1,
+      "null_mean_max_support": 0.00076,
+      "null_p95_max_support": 0,
+      "null_max_support": 2,
+      "fpr_max_ge_observed": 0.00038,
+      "null_mean_candidate_count": 0.00038,
+      "null_p95_candidate_count": 0,
+      "null_max_candidate_count": 1,
+      "fpr_candidate_count_ge_observed": 0.00038
+    },
+    {
+      "scope": "strict_exact_text_site_type_symbol_dedup",
+      "null_model": "context_shuffle_site_type_symbol_any_n_1_3",
+      "iterations": 50000,
+      "observed_max_support": 2,
+      "observed_candidate_count": 1,
+      "null_mean_max_support": 0.00072,
+      "null_p95_max_support": 0,
+      "null_max_support": 2,
+      "fpr_max_ge_observed": 0.00036,
+      "null_mean_candidate_count": 0.00036,
+      "null_p95_candidate_count": 0,
+      "null_max_candidate_count": 1,
+      "fpr_candidate_count_ge_observed": 0.00036
+    },
+    {
+      "scope": "strict_exact_text_site_type_symbol_dedup",
+      "null_model": "token_shuffle_global_preserve_lengths_any_n_1_3",
+      "iterations": 5000,
+      "observed_max_support": 2,
+      "observed_candidate_count": 1,
+      "null_mean_max_support": 0,
+      "null_p95_max_support": 0,
+      "null_max_support": 0,
+      "fpr_max_ge_observed": 0,
+      "null_mean_candidate_count": 0,
+      "null_p95_candidate_count": 0,
+      "null_max_candidate_count": 0,
+      "fpr_candidate_count_ge_observed": 0
+    },
+    {
+      "scope": "strict_exact_text_site_type_symbol_dedup",
+      "null_model": "token_shuffle_within_row_any_n_1_3",
+      "iterations": 5000,
+      "observed_max_support": 2,
+      "observed_candidate_count": 1,
+      "null_mean_max_support": 0.002,
+      "null_p95_max_support": 0,
+      "null_max_support": 2,
+      "fpr_max_ge_observed": 0.001,
+      "null_mean_candidate_count": 0.001,
+      "null_p95_candidate_count": 0,
+      "null_max_candidate_count": 1,
+      "fpr_candidate_count_ge_observed": 0.001
+    }
+  ],
+  "worst_fpr_max_support_ge_observed": 0.0042,
+  "strict_raw_context_shuffle_worst_fpr": 0.0006,
+  "source_support": {
+    "source_visible_533_717_rows": [
+      {
+        "cisi": "M-376",
+        "text": "+740-100-176-002-861-533-717+",
+        "confidence": "medium"
+      },
+      {
+        "cisi": "M-391",
+        "text": "+405-845-686-740-793-003-233-805-002-861-533-717+",
+        "confidence": "medium_low"
+      }
+    ],
+    "source_family_independence_decision": "two_artifact_witnesses_exact_copy_rejected_one_narrow_register_family_cell_for_linguistic_weighting",
+    "source_family_independence_basis": [
+      "M-376 and M-391 share broad site/type/symbol/shape/cross-section and tail.",
+      "They differ in source leaf, printed page, full text, length, class, excavation identifiers, depth, boss, dimensions, and immediate pre-002-861 context.",
+      "This rejects exact duplicate/copy collapse, but the pair remains one narrow source/register-family cell for linguistic weighting."
+    ],
+    "source_layout_discriminator_decision": "no_unique_source_layout_discriminator_yet",
+    "source_layout_discriminator_basis": [
+      "M-376 and M-391 both show same-line terminal-side 533-717 windows.",
+      "M-1273 also shows same-line terminal-side post-861 material, so same-line terminal placement is not unique to 533-717.",
+      "M-355 gives a source-visible cuboid-convex same-register long-tail control.",
+      "M-1267 gives a source-visible same-register bare-edge control."
+    ]
+  },
+  "decision": "restricted_tail_pattern_not_promotable_under_forger",
+  "allowed_wording": "In strict local rows, the two-token unit 533-717 is the only length-1-to-3 unit with support >=2 whose every occurrence is a terminal tail after the fixed prefix 002-861; the two witnesses are M-376 and M-391, both source-visible as same-line terminal-side material and not collapsed as exact copy-family duplicates.",
+  "forbidden_wording": "Do not claim a value, phonetic reading, language identification, translation, semantic class, exact source-normalized 861/533/717 token boundary, or that 533-717 is globally unique outside the fixed 002-861 branch question.",
+  "outputs": {
+    "candidates_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_restricted_tail_forger_candidates.csv",
+    "null_summary_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_restricted_tail_forger_null_summary.csv",
+    "null_iterations_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_restricted_tail_forger_null_iterations.csv"
+  }
+}

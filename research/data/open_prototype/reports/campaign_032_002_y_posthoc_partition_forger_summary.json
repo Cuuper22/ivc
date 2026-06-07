@@ -1,0 +1,292 @@
+{
+  "date": "2026-05-29",
+  "seed": 20260529,
+  "iterations_per_null_model": 10000,
+  "purpose": "Family-wise post-hoc forger for the 002-Y closure/branch candidate: each null corpus gets to discover its own best high-terminal versus low-terminal Y-sign partition under the same support thresholds.",
+  "input": "data/open_prototype/reports/campaign_032_002_post_y_all_002_rows.csv",
+  "dedupe": "strict_complete_closed rows deduplicated by text_dedup_key + site + type + idx_002, matching campaign_032_002_y_forger_nulls.mjs",
+  "score": "Search all terminal-rate threshold pairs among eligible Y signs; require minimum signs and rows in both poles; score by two-proportion z and closure-minus-branch terminal-rate gap.",
+  "scopes": {
+    "all_002_strict_dedup": {
+      "config": {
+        "min_y_rows": 8,
+        "min_closure_rows": 50,
+        "min_branch_rows": 20,
+        "min_closure_signs": 2,
+        "min_branch_signs": 2
+      },
+      "observed": {
+        "scope": "all_002_strict_dedup",
+        "rows": 499,
+        "eligible_signs": 7,
+        "best_z": 13.211691573388162,
+        "best_gap": 0.9540229885057471,
+        "best_closure_rate": 0.9540229885057471,
+        "best_branch_rate": 0,
+        "best_closure_rows": 174,
+        "best_branch_rows": 43,
+        "best_closure_signs": 2,
+        "best_branch_signs": 4,
+        "best_high_threshold": 0.9295774647887324,
+        "best_low_threshold": 0,
+        "closure_sign_list": "817:100/103;820:66/71",
+        "branch_sign_list": "390:0/14;368:0/11;031:0/9;220:0/9"
+      },
+      "nulls": {
+        "terminal_shuffle_global": {
+          "best_z": {
+            "iterations": 10000,
+            "observed": 13.211691573388162,
+            "null_mean": 1.9166662850801348,
+            "null_p95": 3.056527489462266,
+            "null_max": 4.661262513527347,
+            "fpr_ge_observed": 0
+          },
+          "best_gap": {
+            "iterations": 10000,
+            "observed": 0.9540229885057471,
+            "null_mean": 0.14325896887330164,
+            "null_p95": 0.28498641304347827,
+            "null_max": 0.506896551724138,
+            "fpr_ge_observed": 0
+          }
+        },
+        "terminal_shuffle_site_type_symbol": {
+          "best_z": {
+            "iterations": 10000,
+            "observed": 13.211691573388162,
+            "null_mean": 4.152124966881848,
+            "null_p95": 5.488759724087534,
+            "null_max": 7.334157525701789,
+            "fpr_ge_observed": 0
+          },
+          "best_gap": {
+            "iterations": 10000,
+            "observed": 0.9540229885057471,
+            "null_mean": 0.37702436919251414,
+            "null_p95": 0.5140983606557377,
+            "null_max": 0.714367816091954,
+            "fpr_ge_observed": 0
+          }
+        },
+        "terminal_shuffle_site_type_symbol_prev1": {
+          "best_z": {
+            "iterations": 10000,
+            "observed": 13.211691573388162,
+            "null_mean": 10.826876829069036,
+            "null_p95": 11.692543205646025,
+            "null_max": 12.810047265259103,
+            "fpr_ge_observed": 0
+          },
+          "best_gap": {
+            "iterations": 10000,
+            "observed": 0.9540229885057471,
+            "null_mean": 0.81125033518443,
+            "null_p95": 0.8730286019780807,
+            "null_max": 0.9310344827586207,
+            "fpr_ge_observed": 0
+          }
+        },
+        "y_shuffle_global": {
+          "best_z": {
+            "iterations": 10000,
+            "observed": 13.211691573388162,
+            "null_mean": 1.916809224338639,
+            "null_p95": 3.0722101217667124,
+            "null_max": 4.940475812610627,
+            "fpr_ge_observed": 0
+          },
+          "best_gap": {
+            "iterations": 10000,
+            "observed": 0.9540229885057471,
+            "null_mean": 0.1431286578899399,
+            "null_p95": 0.28340517241379315,
+            "null_max": 0.5208237986270023,
+            "fpr_ge_observed": 0
+          }
+        },
+        "y_shuffle_site_type_symbol": {
+          "best_z": {
+            "iterations": 10000,
+            "observed": 13.211691573388162,
+            "null_mean": 4.152329023359539,
+            "null_p95": 5.500206592168351,
+            "null_max": 7.336879987439031,
+            "fpr_ge_observed": 0
+          },
+          "best_gap": {
+            "iterations": 10000,
+            "observed": 0.9540229885057471,
+            "null_mean": 0.3776294216464271,
+            "null_p95": 0.5178571428571429,
+            "null_max": 0.6798850574712644,
+            "fpr_ge_observed": 0
+          }
+        },
+        "register_bernoulli_terminals": {
+          "best_z": {
+            "iterations": 10000,
+            "observed": 13.211691573388162,
+            "null_mean": 4.139967587657948,
+            "null_p95": 5.454514357000669,
+            "null_max": 7.433659592782168,
+            "fpr_ge_observed": 0
+          },
+          "best_gap": {
+            "iterations": 10000,
+            "observed": 0.9540229885057471,
+            "null_mean": 0.3755640549298679,
+            "null_p95": 0.5140336808340016,
+            "null_max": 0.7303571428571429,
+            "fpr_ge_observed": 0
+          }
+        }
+      },
+      "worst_fpr_best_z": 0,
+      "worst_fpr_best_gap": 0
+    },
+    "after_032_strict_dedup": {
+      "config": {
+        "min_y_rows": 2,
+        "min_closure_rows": 8,
+        "min_branch_rows": 3,
+        "min_closure_signs": 2,
+        "min_branch_signs": 2
+      },
+      "observed": {
+        "scope": "after_032_strict_dedup",
+        "rows": 32,
+        "eligible_signs": 4,
+        "best_z": 1.526241057207505,
+        "best_gap": 0.2727272727272727,
+        "best_closure_rate": 0.9090909090909091,
+        "best_branch_rate": 0.6363636363636364,
+        "best_closure_rows": 11,
+        "best_branch_rows": 11,
+        "best_closure_signs": 2,
+        "best_branch_signs": 2,
+        "best_high_threshold": 0.8571428571428571,
+        "best_low_threshold": 0.7777777777777778,
+        "closure_sign_list": "820:6/7;817:4/4",
+        "branch_sign_list": "861:7/9;390:0/2"
+      },
+      "nulls": {
+        "terminal_shuffle_global": {
+          "best_z": {
+            "iterations": 10000,
+            "observed": 1.526241057207505,
+            "null_mean": 1.2628733573618804,
+            "null_p95": 2.3652523917058317,
+            "null_max": 4.281744192888376,
+            "fpr_ge_observed": 0.2803
+          },
+          "best_gap": {
+            "iterations": 10000,
+            "observed": 0.2727272727272727,
+            "null_mean": 0.2630575689588157,
+            "null_p95": 0.5128205128205128,
+            "null_max": 0.9090909090909091,
+            "fpr_ge_observed": 0.4643
+          }
+        },
+        "terminal_shuffle_site_type_symbol": {
+          "best_z": {
+            "iterations": 10000,
+            "observed": 1.526241057207505,
+            "null_mean": 1.5651178226788802,
+            "null_p95": 2.5437350953458417,
+            "null_max": 3.2041639575194436,
+            "fpr_ge_observed": 0.4677
+          },
+          "best_gap": {
+            "iterations": 10000,
+            "observed": 0.2727272727272727,
+            "null_mean": 0.3078303807303983,
+            "null_p95": 0.4545454545454546,
+            "null_max": 0.6363636363636364,
+            "fpr_ge_observed": 0.7268
+          }
+        },
+        "terminal_shuffle_site_type_symbol_prev1": {
+          "best_z": {
+            "iterations": 10000,
+            "observed": 1.526241057207505,
+            "null_mean": 1.5720799127696683,
+            "null_p95": 2.5437350953458417,
+            "null_max": 3.2041639575194436,
+            "fpr_ge_observed": 0.4696
+          },
+          "best_gap": {
+            "iterations": 10000,
+            "observed": 0.2727272727272727,
+            "null_mean": 0.30933123543125196,
+            "null_p95": 0.4545454545454546,
+            "null_max": 0.6363636363636364,
+            "fpr_ge_observed": 0.7364
+          }
+        },
+        "y_shuffle_global": {
+          "best_z": {
+            "iterations": 10000,
+            "observed": 1.526241057207505,
+            "null_mean": 1.2643478816790994,
+            "null_p95": 2.288688541085317,
+            "null_max": 3.8376128944009875,
+            "fpr_ge_observed": 0.2834
+          },
+          "best_gap": {
+            "iterations": 10000,
+            "observed": 0.2727272727272727,
+            "null_mean": 0.26314594794094626,
+            "null_p95": 0.5042735042735043,
+            "null_max": 0.8181818181818181,
+            "fpr_ge_observed": 0.4658
+          }
+        },
+        "y_shuffle_site_type_symbol": {
+          "best_z": {
+            "iterations": 10000,
+            "observed": 1.526241057207505,
+            "null_mean": 1.565593533107769,
+            "null_p95": 2.5437350953458417,
+            "null_max": 3.2041639575194436,
+            "fpr_ge_observed": 0.4635
+          },
+          "best_gap": {
+            "iterations": 10000,
+            "observed": 0.2727272727272727,
+            "null_mean": 0.3081600621600797,
+            "null_p95": 0.4545454545454546,
+            "null_max": 0.6363636363636364,
+            "fpr_ge_observed": 0.7312
+          }
+        },
+        "register_bernoulli_terminals": {
+          "best_z": {
+            "iterations": 10000,
+            "observed": 1.526241057207505,
+            "null_mean": 1.5728040573810131,
+            "null_p95": 2.458445859472208,
+            "null_max": 3.2041639575194436,
+            "fpr_ge_observed": 0.5205
+          },
+          "best_gap": {
+            "iterations": 10000,
+            "observed": 0.2727272727272727,
+            "null_mean": 0.3078112742812874,
+            "null_p95": 0.4545454545454546,
+            "null_max": 0.6363636363636364,
+            "fpr_ge_observed": 0.7552
+          }
+        }
+      },
+      "worst_fpr_best_z": 0.5205,
+      "worst_fpr_best_gap": 0.7552
+    }
+  },
+  "outputs": {
+    "observed_csv": "data/open_prototype/reports/campaign_032_002_y_posthoc_partition_forger_observed.csv",
+    "iterations_csv": "data/open_prototype/reports/campaign_032_002_y_posthoc_partition_forger_iterations.csv",
+    "summary_json": "data/open_prototype/reports/campaign_032_002_y_posthoc_partition_forger_summary.json"
+  }
+}

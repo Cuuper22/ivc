@@ -1,0 +1,46 @@
+{
+  "date": "2026-05-26",
+  "question": "Can H-2145/H-2147/H-2148 move from Parpola prior-work pressure into source-grade local side/sign evidence?",
+  "result": "Partly. H-2147 has a public visual route through H95-2514 in Meadow/Kenoyer 1997: Figure 10 item 17 is visible and table row 10.17 maps to H95-2514 / 4461-04 / two-sided fired steatite tablet / Trench 11 dump. A Figure 10 / local-figure accession concordance reconciles H-2147 at object level: 10.17 -> H95-2514 -> H95-2514Figure 27.14. H-2148 now also has a public visual route through Kenoyer 2005 Figure 14.1 -> H2001-5142 / 11759-01. H-2148's visible one-sign and three-sign panels match local rows 481.2 +110+ and 481.1 +520-220-415+ by sign count. H-2145 remains source-route dark in the checked public/local layer. No Parpola/local crosswalk, sign value, or translation is accepted.",
+  "source_routes": {
+    "H-2145": {
+      "status": "route_dark_with_prior_work_clue",
+      "local_hook": "H97-3283Figure 16.04"
+    },
+    "H-2147": {
+      "status": "public_visual_route_no_local_mapping",
+      "local_hook": "H95-2514Figure 27.14",
+      "public_route": "Meadow/Kenoyer 1997 Harappa PDF Figure 10.17 -> H95-2514 4461-04",
+      "visual_manifest": "data/open_prototype/reports/h2147_h95_2514_public_visual_route_manifest.csv",
+      "accession_concordance": "data/open_prototype/reports/h2147_fig10_fig27_accession_concordance.csv"
+    },
+    "H-2148": {
+      "status": "public_visual_route_count_mapped",
+      "local_hook": "H2001-5142Figure 48.01",
+      "public_route": "Kenoyer 2005 Harappa 2000-2001 Figure 14.1 -> H2001-5142 11759-01",
+      "visual_manifest": "data/open_prototype/reports/h2148_kenoyer2005_public_visual_route_manifest.csv",
+      "route_doc": "docs/h2148_kenoyer2005_public_visual_route.md"
+    }
+  },
+  "accepted_claims": {
+    "translations": 0,
+    "phonetic_values": 0,
+    "sign_meanings": 0,
+    "stable_language_identification": 0,
+    "h2148_count_level_mapping": "H-2148 source panels can be assigned to local rows by sign count only: one-sign panel -> 481.2 +110+, three-sign panel -> 481.1 +520-220-415+."
+  },
+  "not_accepted": [
+    "local 110 equals Parpola sign no. 41",
+    "H-2148 A/B or obverse/reverse mapping",
+    "H-2147 row-to-panel mapping",
+    "H-2145 source-side evidence",
+    "sign value",
+    "translation"
+  ],
+  "source_request": {
+    "gmail_message_id": "[redacted-msgid]",
+    "to": "[harappa-project-email]",
+    "date": "2026-05-26"
+  },
+  "next_gate": "Use H-2148 as the cleanest source-visible branch member; compare against H-940 B and H-2147 only after better H-940/H-2147 source panels or source-side/sign notes are acquired. Still acquire high-resolution side labels and sign-list conventions for H-2145/H-2147/H-2148 and route-check H-2100/H-2152/Kanmer outside controls."
+}

@@ -1,0 +1,107 @@
+{
+  "date": "2026-05-29",
+  "strict_rows_scanned": 4011,
+  "rows_with_002_861": 144,
+  "packet_rows": 25,
+  "tail_bucket_counts": "bare_closure:113,other_post861_tail:24,simple_603:3,fixed_533_717:2,singleton_255_416:1,long_360_520_919_140:1",
+  "focus_tail_counts": "603:3,533 717:2,255 416:1,360 520 919 140:1",
+  "contact_sheet": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\tmp\\032_002_861_source_normalized_tail_predictor_packet\\campaign_032_002_861_source_normalized_tail_predictor_contact_sheet.png",
+  "predictor_table": [
+    {
+      "predictor": "preframe_last1",
+      "groups": 56,
+      "mixed_tail_groups": 11,
+      "groups_touching_focus_tails": 6,
+      "top_focus_groups": "032 -> bare_closure:8,singleton_255_416:1,simple_603:1; 176 -> bare_closure:4,other_post861_tail:1,fixed_533_717:1; 235 -> bare_closure:7,long_360_520_919_140:1; 803 -> bare_closure:2,simple_603:1; 805 -> fixed_533_717:1; 055 -> simple_603:1",
+      "reading_relevance": "linguistic predictor candidate if it beats register/source controls"
+    },
+    {
+      "predictor": "preframe_last2",
+      "groups": 108,
+      "mixed_tail_groups": 3,
+      "groups_touching_focus_tails": 6,
+      "top_focus_groups": "220 032 -> bare_closure:5,singleton_255_416:1,simple_603:1; 231 235 -> long_360_520_919_140:1; 100 176 -> fixed_533_717:1; 233 805 -> fixed_533_717:1; 798 803 -> simple_603:1; 740 055 -> simple_603:1",
+      "reading_relevance": "linguistic predictor candidate if it beats register/source controls"
+    },
+    {
+      "predictor": "preframe_last3",
+      "groups": 120,
+      "mixed_tail_groups": 2,
+      "groups_touching_focus_tails": 7,
+      "top_focus_groups": "240 220 032 -> bare_closure:1,simple_603:1; 798 220 032 -> singleton_255_416:1; 705 231 235 -> long_360_520_919_140:1; 740 100 176 -> fixed_533_717:1; 003 233 805 -> fixed_533_717:1; 233 798 803 -> simple_603:1; 740 055 -> simple_603:1",
+      "reading_relevance": "linguistic predictor candidate if it beats register/source controls"
+    },
+    {
+      "predictor": "narrow_register",
+      "groups": 66,
+      "mixed_tail_groups": 11,
+      "groups_touching_focus_tails": 5,
+      "top_focus_groups": "Mohenjo-daro|SEAL:S|Gaur|square -> bare_closure:2,simple_603:1; Mohenjo-daro|SEAL:S|Bull1:W|square -> bare_closure:17,other_post861_tail:5,simple_603:1; Mohenjo-daro|SEAL:S|Bull1:S|square -> bare_closure:11,singleton_255_416:1; Mohenjo-daro|SEAL:R|None|rectangular -> bare_closure:3,simple_603:1; Mohenjo-daro|SEAL:R|None|cuboid-convex -> fixed_533_717:2,long_360_520_919_140:1",
+      "reading_relevance": "register/template adversary predictor"
+    },
+    {
+      "predictor": "broad_register",
+      "groups": 57,
+      "mixed_tail_groups": 10,
+      "groups_touching_focus_tails": 4,
+      "top_focus_groups": "Mohenjo-daro|SEAL:S|Gaur -> bare_closure:2,simple_603:1; Mohenjo-daro|SEAL:S|Bull1:W -> bare_closure:17,other_post861_tail:5,simple_603:1; Mohenjo-daro|SEAL:S|Bull1:S -> bare_closure:11,singleton_255_416:1; Mohenjo-daro|SEAL:R|None -> bare_closure:3,fixed_533_717:2,long_360_520_919_140:1,simple_603:1",
+      "reading_relevance": "register/template adversary predictor"
+    },
+    {
+      "predictor": "shape",
+      "groups": 11,
+      "mixed_tail_groups": 4,
+      "groups_touching_focus_tails": 3,
+      "top_focus_groups": "square -> bare_closure:77,other_post861_tail:15,simple_603:2,singleton_255_416:1; rectangular -> bare_closure:10,other_post861_tail:6,simple_603:1; cuboid-convex -> bare_closure:4,fixed_533_717:2,other_post861_tail:1,long_360_520_919_140:1",
+      "reading_relevance": "register/template adversary predictor"
+    },
+    {
+      "predictor": "site",
+      "groups": 9,
+      "mixed_tail_groups": 4,
+      "groups_touching_focus_tails": 1,
+      "top_focus_groups": "Mohenjo-daro -> bare_closure:69,other_post861_tail:10,simple_603:3,fixed_533_717:2,singleton_255_416:1",
+      "reading_relevance": "register/template adversary predictor"
+    },
+    {
+      "predictor": "no_icon_sealr",
+      "groups": 2,
+      "mixed_tail_groups": 2,
+      "groups_touching_focus_tails": 2,
+      "top_focus_groups": "False -> bare_closure:110,other_post861_tail:24,simple_603:2,singleton_255_416:1; True -> bare_closure:3,fixed_533_717:2,long_360_520_919_140:1,simple_603:1",
+      "reading_relevance": "register/template adversary predictor"
+    }
+  ],
+  "decisions": [
+    {
+      "object": "533 717",
+      "decision": "conditional_final_unit_candidate_not_morphology",
+      "reason": "two source-visible rows, independent 533 absent, but all rows stay in Mohenjo no-icon SEAL:R cuboid-convex and compete with the long tail in the same narrow field",
+      "next_discriminator": "human-score separability and copy-family similarity for M-376/M-391 against M-355/M-1267/M-1273/M-1973"
+    },
+    {
+      "object": "603",
+      "decision": "recurrent_post861_tail_stable_but_no_value",
+      "reason": "3 post-861 source-visible rows across multiple Mohenjo registers; X-before-240 bridge remains parked",
+      "next_discriminator": "separate post-861 mobility from Harappa X-before-240 source-family recurrence"
+    },
+    {
+      "object": "255 416",
+      "decision": "singleton_minimal_contrast_member",
+      "reason": "M-91 shares prefix_last2 220 032 with bare controls and M-240/603, so this is a real contrast slot but only one row",
+      "next_discriminator": "source-visible comparison of M-91 vs M-240 vs H-444/M-723/M-1044"
+    },
+    {
+      "object": "360 520 919 140",
+      "decision": "long_tail_alternative_inside_533717_register",
+      "reason": "M-355 blocks the claim that no-icon cuboid-convex SEAL:R simply equals 533-717; the same narrow field can choose a different long continuation",
+      "next_discriminator": "source-normalized long-tail layout: continuation after 861 vs second unit after closure"
+    },
+    {
+      "object": "220 032 contrast cluster",
+      "decision": "preframe_last2_not_sufficient",
+      "reason": "prefix_last2 220 032 reaches bare closure, 603, and 255-416 in source-visible/route-visible rows",
+      "next_discriminator": "test full prefix, icon/register, and layout as competing predictors for the same preframe tail split"
+    }
+  ]
+}

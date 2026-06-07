@@ -1,0 +1,31 @@
+reviewer,blind_id,cisi,source_view,role,expected_token_count,review_token_count,count_match,boxable_call,label_leak_call,scored_outcome,notes
+blind_review_a,D001,M-811,a_signband,primary_target,3,7,False,yes,no,target_fail,edge tokens partial; central vertical strokes close but separable
+blind_review_a,D002,M-376,impression_a_existing_hard_negative,scoring_negative,7,10,False,yes,no,true_negative,rightmost token cropped; several worn or merged strokes
+blind_review_a,D003,M-1320,A_signband,primary_target,5,8,False,yes,no,target_fail,right edge slightly cropped; middle forms partly merged
+blind_review_a,D004,H-152,A_signband,quarantine_negative,3,4,False,yes,no,quarantine_not_in_fpr,rightmost token partial; left token has small base strokes
+blind_review_a,D005,M-811,A_signband,primary_target,3,7,False,yes,no,target_fail,edge tokens partial; central vertical strokes close but separable
+blind_review_a,D006,M-525,B_side_panel,scoring_negative,8,0,False,no,yes,negative_label_leak_excluded,printed side annotation visible; object surface lacks clear script tokens
+blind_review_a,D007,M-1458,A_tablet_panel,scoring_negative,5,4,False,uncertain,no,uncertain_target_like_negative,image too dark and low contrast for reliable token separation
+blind_review_a,D008,M-1310,A_signband,primary_target,7,8,False,yes,no,target_fail,far-left and far-right fragments partial; main strip clear
+blind_review_a,D009,H-665,A_signband,scoring_negative,4,4,True,uncertain,no,uncertain_target_like_negative,blur and low contrast make token boundaries uncertain
+blind_review_a,D010,M-1523,A_tablet_panel,scoring_negative,7,5,False,uncertain,no,uncertain_target_like_negative,very low contrast; central glare or noise obscures boundaries
+blind_review_a,D011,M-1320,a_signband,primary_target,5,8,False,yes,no,target_fail,right edge slightly cropped; middle forms partly merged
+blind_review_a,D012,M-1310,a_signband,primary_target,7,8,False,yes,no,target_fail,far-left and far-right fragments partial; main strip clear
+blind_review_a,D013,H-654,A_signband,primary_target,4,5,False,yes,no,target_fail,rightmost token cropped; upper edge missing
+blind_review_a,D014,M-1273,impression_a_existing_hard_negative,scoring_negative,5,6,False,yes,no,true_negative,middle repeated-stroke cluster treated as three visual groups
+blind_review_a,D015,M-381,panel_existing_stress_negative,scoring_negative,7,7,True,yes,no,hard_false_positive_count_boxable_negative,middle repeated-stroke groups could be grouped differently
+blind_review_b,D001,M-811,a_signband,primary_target,3,7,False,yes,no,target_fail,central short strokes and edge fragments make count approximate
+blind_review_b,D002,M-376,impression_a_existing_hard_negative,scoring_negative,7,8,False,yes,no,true_negative,small medial marks and right-edge partial may shift count by one
+blind_review_b,D003,M-1320,A_signband,primary_target,5,7,False,yes,no,target_fail,middle signs touch and far-right edge is faint
+blind_review_b,D004,H-152,A_signband,quarantine_negative,3,4,False,yes,no,quarantine_not_in_fpr,rightmost token is partial
+blind_review_b,D005,M-811,A_signband,primary_target,3,7,False,yes,no,target_fail,central short strokes and edge fragments make count approximate
+blind_review_b,D006,M-525,B_side_panel,scoring_negative,8,0,False,no,yes,negative_label_leak_excluded,printed side annotation is visible; no script tokens discernible
+blind_review_b,D007,M-1458,A_tablet_panel,scoring_negative,5,3,False,uncertain,no,uncertain_target_like_negative,low contrast makes token boundaries unreliable
+blind_review_b,D008,M-1310,A_signband,primary_target,7,8,False,uncertain,no,target_uncertain,two small upper marks and edge fragments make count approximate
+blind_review_b,D009,H-665,A_signband,scoring_negative,4,4,True,yes,no,hard_false_positive_count_boxable_negative,blur and curvature obscure token separation
+blind_review_b,D010,M-1523,A_tablet_panel,scoring_negative,7,5,False,uncertain,no,uncertain_target_like_negative,low contrast and surface glare make several tokens doubtful
+blind_review_b,D011,M-1320,a_signband,primary_target,5,7,False,yes,no,target_fail,middle signs touch and far-right edge is faint
+blind_review_b,D012,M-1310,a_signband,primary_target,7,8,False,uncertain,no,target_uncertain,two small upper marks and edge fragments make count approximate
+blind_review_b,D013,H-654,A_signband,primary_target,4,4,True,yes,no,target_count_boxable_pass,left and right edges truncate tokens
+blind_review_b,D014,M-1273,impression_a_existing_hard_negative,scoring_negative,5,6,False,yes,no,true_negative,short-stroke rows counted as grouped visual tokens
+blind_review_b,D015,M-381,panel_existing_stress_negative,scoring_negative,7,9,False,yes,no,true_negative,short-stroke clusters and central bars counted as grouped visual tokens

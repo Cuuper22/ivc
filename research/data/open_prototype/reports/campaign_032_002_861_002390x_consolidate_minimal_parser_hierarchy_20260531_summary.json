@@ -1,0 +1,191 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "minimal_parser_hierarchy",
+  "metrics": [
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "raw",
+      "hierarchy": "grammar_pair_x_scope",
+      "rows": "316",
+      "correct": "234",
+      "wrong": "82",
+      "accuracy": "0.740506",
+      "step_counts": "x:87;global:41;scope:115;pair:73"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "raw",
+      "hierarchy": "scope_first_null",
+      "rows": "316",
+      "correct": "227",
+      "wrong": "89",
+      "accuracy": "0.718354",
+      "step_counts": "x:44;global:42;scope:151;scope_x:79"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "raw",
+      "hierarchy": "x_then_scope",
+      "rows": "316",
+      "correct": "232",
+      "wrong": "84",
+      "accuracy": "0.734177",
+      "step_counts": "x:151;global:42;scope:123"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "raw",
+      "hierarchy": "scope_only_null",
+      "rows": "316",
+      "correct": "216",
+      "wrong": "100",
+      "accuracy": "0.683544",
+      "step_counts": "global:86;scope:230"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_scope_pair_tail",
+      "hierarchy": "grammar_pair_x_scope",
+      "rows": "270",
+      "correct": "189",
+      "wrong": "81",
+      "accuracy": "0.700000",
+      "step_counts": "x:84;global:46;scope:119;pair:21"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_scope_pair_tail",
+      "hierarchy": "scope_first_null",
+      "rows": "270",
+      "correct": "183",
+      "wrong": "87",
+      "accuracy": "0.677778",
+      "step_counts": "x:38;global:46;scope:146;scope_x:40"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_scope_pair_tail",
+      "hierarchy": "x_then_scope",
+      "rows": "270",
+      "correct": "188",
+      "wrong": "82",
+      "accuracy": "0.696296",
+      "step_counts": "x:102;global:46;scope:122"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_scope_pair_tail",
+      "hierarchy": "scope_only_null",
+      "rows": "270",
+      "correct": "172",
+      "wrong": "98",
+      "accuracy": "0.637037",
+      "step_counts": "global:84;scope:186"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_pair_tail",
+      "hierarchy": "grammar_pair_x_scope",
+      "rows": "243",
+      "correct": "160",
+      "wrong": "83",
+      "accuracy": "0.658436",
+      "step_counts": "x:71;global:43;scope:117;pair:12"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_pair_tail",
+      "hierarchy": "scope_first_null",
+      "rows": "243",
+      "correct": "156",
+      "wrong": "87",
+      "accuracy": "0.641975",
+      "step_counts": "x:25;global:44;scope:138;scope_x:36"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_pair_tail",
+      "hierarchy": "x_then_scope",
+      "rows": "243",
+      "correct": "158",
+      "wrong": "85",
+      "accuracy": "0.650206",
+      "step_counts": "x:80;global:44;scope:119"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_pair_tail",
+      "hierarchy": "scope_only_null",
+      "rows": "243",
+      "correct": "148",
+      "wrong": "95",
+      "accuracy": "0.609053",
+      "step_counts": "global:69;scope:174"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_pair",
+      "hierarchy": "grammar_pair_x_scope",
+      "rows": "231",
+      "correct": "148",
+      "wrong": "83",
+      "accuracy": "0.640693",
+      "step_counts": "x:73;global:41;scope:117"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_pair",
+      "hierarchy": "scope_first_null",
+      "rows": "231",
+      "correct": "149",
+      "wrong": "82",
+      "accuracy": "0.645022",
+      "step_counts": "x:24;global:41;scope:136;scope_x:30"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_pair",
+      "hierarchy": "x_then_scope",
+      "rows": "231",
+      "correct": "148",
+      "wrong": "83",
+      "accuracy": "0.640693",
+      "step_counts": "x:73;global:41;scope:117"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "set_name": "collapse_pair",
+      "hierarchy": "scope_only_null",
+      "rows": "231",
+      "correct": "147",
+      "wrong": "84",
+      "accuracy": "0.636364",
+      "step_counts": "global:65;scope:166"
+    }
+  ],
+  "decisions": [
+    {
+      "checked_date": "2026-05-31",
+      "decision": "minimal_parser_not_promoted",
+      "tier_change": "candidate_not_promoted",
+      "evidence": "raw grammar=0.740506; raw scope_null=0.718354; pair-collapse grammar=0.640693; pair-collapse scope_null=0.645022",
+      "consequence": "The hierarchy is useful but too close to scope nulls under collapse; keep it as candidate only."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "decision": "h_x_pair_rule_requires_repeat_and_scope_audit",
+      "tier_change": "narrowed_candidate",
+      "evidence": "scope-pair-tail grammar=0.700000; pair-tail grammar=0.658436",
+      "consequence": "Any H-X rule must report whether it survives outside exact scope/tail families."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "decision": "scope_null_remains_destructive_test",
+      "tier_change": "adversary_strengthened",
+      "evidence": "scope-first null raw=0.718354; pair-collapse scope-first=0.645022",
+      "consequence": "Future parser claims must beat a scope-first null on the same held-out/collapse split."
+    }
+  ],
+  "compressed_read": "The minimal parser is real enough to guide bets, but not strong enough to promote: its edge over scope nulls is small and collapse-sensitive."
+}

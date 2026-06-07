@@ -1,0 +1,25 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "candidate_id": "risky_690435_h1842_exception_adjudication_20260531",
+  "bet_under_test": "690-435 obligatorily selects 255.",
+  "exception": {
+    "row": "631.2",
+    "cisi": "H-1842",
+    "text": "+740-690-435-176-233-803+",
+    "site": "Harappa",
+    "type": "TAB:B",
+    "material": "Faience",
+    "shape": "rectangular",
+    "metadata_condition": "Fair",
+    "metadata_complete": "Y",
+    "metadata_direction": "R/L",
+    "metadata_signs": "6",
+    "companion_side": "631.1 H-1842 +033-700+"
+  },
+  "source_search_result": "No local image was found in the available trace cache, but the metadata marks the row complete and gives a specific H95 figure route.",
+  "decision": "keep_690435255_low_priority_probabilistic_candidate",
+  "reason": "A complete-looking six-sign TAB:B exception blocks an obligatory stem claim.",
+  "surviving_claim": "690-435 selects 255 in 29/30 raw rows and 25/26 exact-collapsed cells, but the exception is strong enough to keep it below 741-060-920 and 806-series work.",
+  "next_destructive_test": "Only revisit after stronger candidates; if source image confirms H-1842 and other non-255 tails appear, demote to local formula tendency."
+}

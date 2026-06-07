@@ -1,0 +1,50 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "lipi_034_m2104_marshall_vol3_cxiv_source_adjudication",
+  "question": "Does the IA/IGNCA Marshall Vol. III Plate CXIV no. 532 image validate the M-2104 700-034/UIII three-stroke hypothesis?",
+  "best_public_source_route": {
+    "archive_item": "https://archive.org/details/in.gov.ignca.48270",
+    "page_route": "https://archive.org/details/in.gov.ignca.48270/page/n205/mode/1up",
+    "direct_jp2": "https://archive.org/download/in.gov.ignca.48270/48270_jp2.zip/48270_jp2%2F48270_0205.jp2",
+    "iiif_full_max": "https://iiif.archive.org/image/iiif/3/in.gov.ignca.48270%2F48270_jp2.zip%2F48270_jp2%2F48270_0205.jp2/full/max/0/default.jpg",
+    "local_page_image": "tmp/marshall_vol3/48270_0205.png",
+    "dimensions": "2601x3483"
+  },
+  "finding": "The IA/IGNCA route is the best public Marshall Plate CXIV witness found and materially improves the no. 532 crop over the Harappa 600x1000 gallery image. It makes the target source-visible and testable, but it does not validate exact three-stroke 034 or the local four-token M-2104 encoding.",
+  "adjudication_rows": 4,
+  "source_route_rows": 5,
+  "visual_input_rows": 14,
+  "pass_fail": {
+    "best_public_marshall_vol3_plate_route_found": "pass",
+    "plate_cxiv_no532_visible": "pass",
+    "u_v_or_pot_like_unit_visible": "pass",
+    "adjacent_stroke_cluster_visible": "pass",
+    "marshall_five_character_warning_recorded": "pass",
+    "explicit_CISI_or_Parpola_identity_cross_reference_found": "fail",
+    "exact_three_stroke_034_validated": "fail",
+    "local_four_token_segmentation_validated": "fail",
+    "usable_as_standalone_mapping_evidence": "fail"
+  },
+  "research_consequence": "M-2104 moves from a low-resolution public target to a higher-resolution public plate witness, but the decisive requirement narrows to CISI Vol. 2 or archive/museum confirmation of the no. 532/VS875/M-2104 cross-reference plus a better object photograph or source segmentation note.",
+  "next_required_evidence": [
+    "CISI Vol. 2 entry for M-2104 with old publication references and cross-references.",
+    "Explicit confirmation whether M-2104 equals Marshall no. 532 / Plate CXIV / VS 875.",
+    "Raw CISI or museum/archive photograph for the object, not just the printed Marshall plate scan.",
+    "Segmentation explanation for Marshall five characters versus local four tokens.",
+    "Independent full-object visual segmentation covering broad face, narrow face, direction, and whether the narrow face is part of the same text sequence."
+  ],
+  "accepted_source_mappings": 0,
+  "accepted_token_boundaries": 0,
+  "accepted_sign_mappings": 0,
+  "accepted_numbers": 0,
+  "accepted_functions": 0,
+  "accepted_phonetic_values": 0,
+  "accepted_translations": 0,
+  "outputs": [
+    "data/open_prototype/reports/lipi_034_m2104_marshall_vol3_cxiv_source_routes.csv",
+    "data/open_prototype/reports/lipi_034_m2104_marshall_vol3_cxiv_visual_inputs.csv",
+    "data/open_prototype/reports/lipi_034_m2104_marshall_vol3_cxiv_visual_adjudication.csv",
+    "data/open_prototype/reports/lipi_034_m2104_marshall_vol3_cxiv_summary.json",
+    "docs/lipi_034_m2104_marshall_vol3_cxiv_source_adjudication.md"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_806_predecessor_role_split_20260531",
+  "tier": "candidate",
+  "bet": "806 has at least two constructional roles. After the small prefix family 154/155/158/(rare 100), it selects a 467..474 successor slot and is nonterminal; under ordinary predecessors it behaves like the previously observed boundary/closure pivot.",
+  "counts": {
+    "806_after_154": {
+      "successor_467_474": 16,
+      "other_successor": 0,
+      "terminal": 0,
+      "fisher_vs_all_other_predecessors_for_467_474_successor": 6.512005930469226e-13
+    },
+    "806_after_prefix_family_154_155_158_100": {
+      "successor_467_474": 26,
+      "other_successor": 6,
+      "terminal": 0,
+      "fisher_vs_nonprefix_predecessors_for_467_474_successor": 1.450465976884913e-13
+    },
+    "806_after_nonprefix_predecessors": {
+      "successor_467_474": 0,
+      "other_successor": 79,
+      "terminal": 53
+    }
+  },
+  "prefix_family_breakdown": [
+    { "predecessor": "154", "n": 16, "successor_467_474": 16, "terminal": 0 },
+    { "predecessor": "158", "n": 13, "successor_467_474": 7, "terminal": 0 },
+    { "predecessor": "155", "n": 2, "successor_467_474": 2, "terminal": 0 },
+    { "predecessor": "100", "n": 1, "successor_467_474": 1, "terminal": 0 }
+  ],
+  "examples": {
+    "series_role": [
+      "H-132 +154-806-471-407-845-740-233-231-798+",
+      "H-143 +154-806-469-001-740-877-032+",
+      "H-146 +154-806-467-031+",
+      "H-152 +154-806-468+",
+      "H-160 +400-154-806-468+",
+      "M-371 +617-142-384-032-154-806-467+"
+    ],
+    "closure_or_boundary_role": [
+      "M-2054 +740-900-850-407-061-845-806+",
+      "H-204 +400-740-405-590-235-806+",
+      "H-694 +740-390-590-235-368-806+",
+      "M-392 +740-405-590-220-032-806+"
+    ]
+  },
+  "interpretation": "This does not assign sound or meaning. It is a falsifiable grammar bet: 806 is construction-sensitive, and any one-role analysis of 806 is now too small.",
+  "next_destructive_test": "Blind-box 154/155/158-806-46x positives against 806-terminal and 806-002 controls, then run exact-family collapse so repeated H/M copies cannot be the whole signal."
+}

@@ -1,0 +1,147 @@
+{
+  "date": "2026-05-24",
+  "artifacts": [
+    "H-1304",
+    "H-1344",
+    "H-1345",
+    "H-1346",
+    "H-1347"
+  ],
+  "type": "TAB:I",
+  "site": "Harappa",
+  "packet_priority": "P1_033_after_with_400_740_176",
+  "acquisition_bucket": "B_source_dark_direct_cisi_or_harp",
+  "public_lead_status": "no_public_lead_in_checked_sources",
+  "common_signature": "1:+400-740-176+|2:+700-033+",
+  "common_short_side_text": "2:+700-033+",
+  "common_short_order": "033:700_first",
+  "common_side_relation": "short_after_all_longer",
+  "common_longer_text": "+400-740-176+",
+  "artifact_context": {
+    "H-1304": {
+      "sides": 2,
+      "catalog_rows": 2,
+      "row_count_in_packet": 1,
+      "short_rows_to_check": 1,
+      "raw_ids": [
+        "5470.1",
+        "5470.2"
+      ],
+      "excavation_ids": [
+        "2480"
+      ],
+      "dimensions_mm": "14.5 x 0 x 0",
+      "material": "-",
+      "shape": "oval"
+    },
+    "H-1344": {
+      "sides": 2,
+      "catalog_rows": 2,
+      "row_count_in_packet": 1,
+      "short_rows_to_check": 1,
+      "raw_ids": [
+        "4085.1",
+        "4085.2"
+      ],
+      "excavation_ids": [
+        "-752"
+      ],
+      "dimensions_mm": "14 x 8 x 0",
+      "material": "-",
+      "shape": "prism"
+    },
+    "H-1345": {
+      "sides": 2,
+      "catalog_rows": 2,
+      "row_count_in_packet": 1,
+      "short_rows_to_check": 1,
+      "raw_ids": [
+        "4086.1",
+        "4086.2"
+      ],
+      "excavation_ids": [
+        "3509902"
+      ],
+      "dimensions_mm": "14.5 x 6.4 x 0",
+      "material": "Steatite",
+      "shape": "prism"
+    },
+    "H-1346": {
+      "sides": 2,
+      "catalog_rows": 2,
+      "row_count_in_packet": 1,
+      "short_rows_to_check": 1,
+      "raw_ids": [
+        "4087.1",
+        "4087.2"
+      ],
+      "excavation_ids": [
+        "2894900"
+      ],
+      "dimensions_mm": "10.2 x 6.4 x 0",
+      "material": "Steatite",
+      "shape": "prism"
+    },
+    "H-1347": {
+      "sides": 2,
+      "catalog_rows": 2,
+      "row_count_in_packet": 1,
+      "short_rows_to_check": 1,
+      "raw_ids": [
+        "4088.1",
+        "4088.2"
+      ],
+      "excavation_ids": [
+        "1262896"
+      ],
+      "dimensions_mm": "0 x 7.6 x 0",
+      "material": "Steatite",
+      "shape": "prism"
+    }
+  },
+  "prior_public_sources_checked": [
+    "https://indusscriptmore.blogspot.com/2012/",
+    "https://www.nature.com/articles/s41599-021-00713-0",
+    "https://bharatkalyan97.blogspot.com/2025/08/shapes-of-tablets-convey-information.html",
+    "https://bharatkalyan97.blogspot.com/feeds/posts/default?q=H-1304&max-results=25",
+    "https://bharatkalyan97.blogspot.com/feeds/posts/default?q=H-1344&max-results=25",
+    "https://bharatkalyan97.blogspot.com/feeds/posts/default?q=H-1345&max-results=25",
+    "https://bharatkalyan97.blogspot.com/feeds/posts/default?q=H-1346&max-results=25",
+    "https://bharatkalyan97.blogspot.com/feeds/posts/default?q=H-1347&max-results=25"
+  ],
+  "prior_public_endpoints_checked_in_packet_search": 20,
+  "prior_blogger_atom_queries_checked_in_packet_search": 17,
+  "fresh_public_web_searches_checked": [
+    "web_search:\"H-1304\" \"Indus\" \"Harappa\" tablet",
+    "web_search:\"H-1344\" \"Indus\" \"Harappa\" tablet",
+    "web_search:\"H-1345\" \"Indus\" \"Harappa\" tablet",
+    "web_search:\"H-1346\" \"Indus\" \"Harappa\" tablet",
+    "web_search:\"H-1347\" \"Indus\" \"Harappa\" tablet",
+    "web_search:\"H-1304\" \"+700-033\" \"400-740-176\"",
+    "web_search:\"H-1344\" \"+700-033\" \"400-740-176\"",
+    "web_search:\"H-1345\" \"+700-033\" \"400-740-176\"",
+    "web_search:\"H-1346\" \"+700-033\" \"400-740-176\"",
+    "web_search:\"H-1347\" \"+700-033\" \"400-740-176\"",
+    "web_search:site:indusscriptmore.blogspot.com \"H-1304\" \"H-1344\"",
+    "web_search:site:bharatkalyan97.blogspot.com \"H-1304\" \"H-1344\""
+  ],
+  "fresh_relevant_public_hits": 0,
+  "public_text_only_leads": 0,
+  "public_object_image_leads": 0,
+  "candidate_image_urls": 0,
+  "source_validation_fields_filled": 0,
+  "requires_direct_source_access": true,
+  "requires_two_side_source_batch": true,
+  "status": "requires_CISI_HARP_two_side_source_batch",
+  "interpretation_status": "source_acquisition_only_no_reading",
+  "boundary": [
+    "no side relation accepted",
+    "no physical side function accepted",
+    "no numerical value accepted",
+    "no metrological reading accepted",
+    "no sign meaning accepted",
+    "no phonetic value accepted",
+    "no language identity accepted",
+    "no translation accepted"
+  ]
+}

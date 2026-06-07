@@ -1,0 +1,337 @@
+{
+  "generated_at_local": "2026-05-24T16:43:53-07:00",
+  "source_overlap_csv": "data/open_prototype/reports/overlap_probe.csv",
+  "total_overlap_rows": 179,
+  "count_matches": 150,
+  "count_mismatches": 29,
+  "clean_pre_crosswalk_candidates": 138,
+  "sensitivity_flag_candidates": 12,
+  "manual_review_rows": 29,
+  "rows_with_any_flag": 28,
+  "primary_category_counts": [
+    {
+      "value": "count_match",
+      "count": 150
+    },
+    {
+      "value": "lipi_boundary_fragment",
+      "count": 4
+    },
+    {
+      "value": "lipi_compound_slash",
+      "count": 1
+    },
+    {
+      "value": "lipi_counts_more",
+      "count": 4
+    },
+    {
+      "value": "lipi_unknown_zero",
+      "count": 4
+    },
+    {
+      "value": "mayig_counts_more",
+      "count": 9
+    },
+    {
+      "value": "mayig_unknown_p000",
+      "count": 3
+    },
+    {
+      "value": "shared_unknown_zero",
+      "count": 4
+    }
+  ],
+  "status_counts": [
+    {
+      "value": "candidate_for_pre_crosswalk_structure_tests",
+      "count": 138
+    },
+    {
+      "value": "candidate_with_sensitivity_flag",
+      "count": 12
+    },
+    {
+      "value": "manual_collation_required",
+      "count": 16
+    },
+    {
+      "value": "manual_count_disagreement",
+      "count": 13
+    }
+  ],
+  "flag_counts": [
+    {
+      "flag": "lipi_boundary_fragment",
+      "count": 4
+    },
+    {
+      "flag": "lipi_unknown_zero",
+      "count": 13
+    },
+    {
+      "flag": "lipi_compound_slash",
+      "count": 7
+    },
+    {
+      "flag": "mayig_unknown_p000",
+      "count": 18
+    }
+  ],
+  "lipi_text_length_distribution": [
+    {
+      "lipi_text_length": "1",
+      "count_match": "True",
+      "count": 1
+    },
+    {
+      "lipi_text_length": "2",
+      "count_match": "False",
+      "count": 1
+    },
+    {
+      "lipi_text_length": "2",
+      "count_match": "True",
+      "count": 7
+    },
+    {
+      "lipi_text_length": "2+?",
+      "count_match": "False",
+      "count": 1
+    },
+    {
+      "lipi_text_length": "3",
+      "count_match": "False",
+      "count": 2
+    },
+    {
+      "lipi_text_length": "3",
+      "count_match": "True",
+      "count": 18
+    },
+    {
+      "lipi_text_length": "4",
+      "count_match": "False",
+      "count": 4
+    },
+    {
+      "lipi_text_length": "4",
+      "count_match": "True",
+      "count": 19
+    },
+    {
+      "lipi_text_length": "4+?",
+      "count_match": "False",
+      "count": 1
+    },
+    {
+      "lipi_text_length": "5",
+      "count_match": "False",
+      "count": 1
+    },
+    {
+      "lipi_text_length": "5",
+      "count_match": "True",
+      "count": 33
+    },
+    {
+      "lipi_text_length": "6",
+      "count_match": "False",
+      "count": 6
+    },
+    {
+      "lipi_text_length": "6",
+      "count_match": "True",
+      "count": 27
+    },
+    {
+      "lipi_text_length": "6+?",
+      "count_match": "False",
+      "count": 1
+    },
+    {
+      "lipi_text_length": "7",
+      "count_match": "False",
+      "count": 6
+    },
+    {
+      "lipi_text_length": "7",
+      "count_match": "True",
+      "count": 18
+    },
+    {
+      "lipi_text_length": "7+?",
+      "count_match": "False",
+      "count": 1
+    },
+    {
+      "lipi_text_length": "8",
+      "count_match": "True",
+      "count": 15
+    },
+    {
+      "lipi_text_length": "9",
+      "count_match": "False",
+      "count": 3
+    },
+    {
+      "lipi_text_length": "9",
+      "count_match": "True",
+      "count": 7
+    },
+    {
+      "lipi_text_length": "10",
+      "count_match": "False",
+      "count": 1
+    },
+    {
+      "lipi_text_length": "10",
+      "count_match": "True",
+      "count": 3
+    },
+    {
+      "lipi_text_length": "11",
+      "count_match": "False",
+      "count": 1
+    },
+    {
+      "lipi_text_length": "13",
+      "count_match": "True",
+      "count": 2
+    }
+  ],
+  "mismatch_examples": [
+    {
+      "cisi": "M-4",
+      "lipi_text_length": "9",
+      "lipi_signs": 9,
+      "mayig_grapheme_count": 10,
+      "count_diff_mayig_minus_lipi": 1,
+      "primary_category": "mayig_counts_more",
+      "flags": "",
+      "lipi_text": "+298-465-033-705-231-002-564-617-033+",
+      "mayig_graphemes": "P205 P186 P147 P316 P056 P122 P237 P268 P268 P147"
+    },
+    {
+      "cisi": "M-7",
+      "lipi_text_length": "9",
+      "lipi_signs": 9,
+      "mayig_grapheme_count": 11,
+      "count_diff_mayig_minus_lipi": 2,
+      "primary_category": "mayig_counts_more",
+      "flags": "",
+      "lipi_text": "+407-845-140-740-101-923-240-002-861+",
+      "mayig_graphemes": "P086 P352 P011 P324 P154 P009 P154 P175 P062 P122 P385"
+    },
+    {
+      "cisi": "M-10",
+      "lipi_text_length": "11",
+      "lipi_signs": 11,
+      "mayig_grapheme_count": 10,
+      "count_diff_mayig_minus_lipi": -1,
+      "primary_category": "lipi_counts_more",
+      "flags": "",
+      "lipi_text": "+405-061-070-032-033-706-235-806-002-267-455+",
+      "mayig_graphemes": "P086 P204 P114 P151 P316 P060 P364 P122 P067 P221"
+    },
+    {
+      "cisi": "M-19",
+      "lipi_text_length": "4+?",
+      "lipi_signs": 2,
+      "mayig_grapheme_count": 3,
+      "count_diff_mayig_minus_lipi": 1,
+      "primary_category": "lipi_boundary_fragment",
+      "flags": "lipi_boundary_fragment;lipi_unknown_zero;mayig_unknown_p000",
+      "lipi_text": "]000-000-002-861+",
+      "mayig_graphemes": "P000 P122 P385"
+    },
+    {
+      "cisi": "M-20",
+      "lipi_text_length": "7",
+      "lipi_signs": 7,
+      "mayig_grapheme_count": 8,
+      "count_diff_mayig_minus_lipi": 1,
+      "primary_category": "mayig_counts_more",
+      "flags": "",
+      "lipi_text": "+390-005-002-861-036-460-513+",
+      "mayig_graphemes": "P086 P125 P122 P385 P147 P147 P215 P275"
+    },
+    {
+      "cisi": "M-22",
+      "lipi_text_length": "7+?",
+      "lipi_signs": 6,
+      "mayig_grapheme_count": 7,
+      "count_diff_mayig_minus_lipi": 1,
+      "primary_category": "lipi_boundary_fragment",
+      "flags": "lipi_boundary_fragment;lipi_unknown_zero;mayig_unknown_p000",
+      "lipi_text": "+740-904-176-220-032-798-000[",
+      "mayig_graphemes": "P324 P172 P194 P050 P145 P230 P000"
+    },
+    {
+      "cisi": "M-25",
+      "lipi_text_length": "4",
+      "lipi_signs": 4,
+      "mayig_grapheme_count": 5,
+      "count_diff_mayig_minus_lipi": 1,
+      "primary_category": "mayig_counts_more",
+      "flags": "",
+      "lipi_text": "+617-243-706-595+",
+      "mayig_graphemes": "P268 P268 P050 P316 P276"
+    },
+    {
+      "cisi": "M-27",
+      "lipi_text_length": "7",
+      "lipi_signs": 6,
+      "mayig_grapheme_count": 7,
+      "count_diff_mayig_minus_lipi": 1,
+      "primary_category": "lipi_unknown_zero",
+      "flags": "lipi_unknown_zero",
+      "lipi_text": "+565-235-803-741-702-900-000+",
+      "mayig_graphemes": "P238 P060 P364 P325 P311 P154 P123"
+    },
+    {
+      "cisi": "M-39",
+      "lipi_text_length": "6+?",
+      "lipi_signs": 6,
+      "mayig_grapheme_count": 7,
+      "count_diff_mayig_minus_lipi": 1,
+      "primary_category": "lipi_boundary_fragment",
+      "flags": "lipi_boundary_fragment;mayig_unknown_p000",
+      "lipi_text": "]705-240-235-013-204-346+",
+      "mayig_graphemes": "P000 P316 P062 P060 P139 P083 P303"
+    },
+    {
+      "cisi": "M-41",
+      "lipi_text_length": "9",
+      "lipi_signs": 9,
+      "mayig_grapheme_count": 8,
+      "count_diff_mayig_minus_lipi": -1,
+      "primary_category": "lipi_counts_more",
+      "flags": "",
+      "lipi_text": "+740-636-240-233-235-002-405-125-820+",
+      "mayig_graphemes": "P324 P270 P062 P060 P122 P086 P035 P378"
+    },
+    {
+      "cisi": "M-45",
+      "lipi_text_length": "6",
+      "lipi_signs": 6,
+      "mayig_grapheme_count": 7,
+      "count_diff_mayig_minus_lipi": 1,
+      "primary_category": "mayig_counts_more",
+      "flags": "",
+      "lipi_text": "+617-831-013-302-840-032+",
+      "mayig_graphemes": "P268 P268 P372 P139 P205 P349 P145"
+    },
+    {
+      "cisi": "M-55",
+      "lipi_text_length": "6",
+      "lipi_signs": 5,
+      "mayig_grapheme_count": 6,
+      "count_diff_mayig_minus_lipi": 1,
+      "primary_category": "mayig_unknown_p000",
+      "flags": "mayig_unknown_p000",
+      "lipi_text": "+000-760-463-510-001-692+",
+      "mayig_graphemes": "P000 P332 P215 P275 P121 P256"
+    }
+  ]
+}

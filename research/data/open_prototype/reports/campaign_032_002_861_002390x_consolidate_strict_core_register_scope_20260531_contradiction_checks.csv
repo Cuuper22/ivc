@@ -1,0 +1,4 @@
+checked_date,check_id,result,evidence,consequence
+2026-05-31,STRICT_CORE_IS_NOT_SCRIPT_WIDE,pass_demote_scope,sites=Mohenjo-daro:4; types=SEAL:S:4; shapes=square:4,Do not call strict core script-wide grammar until a strict outside-register row joins it.
+2026-05-31,STRICT_CORE_NOT_JUST_REGISTER_POLARITY,pass_keep_local_syntax,M-70:692:True | M-71:095:True | M-119:125:False | M-735:125:False,"Within the same Mohenjo-daro seal register, X still splits open versus terminal."
+2026-05-31,STRICT_CORE_SEMANTIC_SCOPE_BLOCKED,pass_demote,All strict rows are one site/type/shape cell and only four rows.,"No semantic, language-family, phonetic, or translation claim survives this scope check."

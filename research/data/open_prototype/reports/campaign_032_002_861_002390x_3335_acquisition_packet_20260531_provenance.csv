@@ -1,0 +1,5 @@
+source_layer,evidence_path,claim,observed_value,consequence
+metadata_filtered,data/open_prototype/lipi/metadata_filtered.csv,local Lipi metadata row exists with no CISI object id,3335.1; cisi=-; site=Unknown; excavation=-,usable as local pressure only
+artifact_witnesses,data/sign_crosswalk/artifact_witnesses.csv,crosswalk marks target as lipi_numeric quarantined metadata,artifact_id=-; side_label_type=analytic_row_id; provenance_tier=T3_quarantined_metadata; image_ref_id=,no image or source witness is attached in the crosswalk
+sign_systems,data/sign_crosswalk/sign_systems.csv,lipi_numeric source layer is local T3 quarantined,; ,must not become strict evidence without independent source binding
+evidence_refs,data/sign_crosswalk/evidence_refs.csv,metadata source reference is local/quarantined,local_quarantined_csv; ; hash=b3e2a94efdf70eaa893bbbbd35fd057b53f766c82823a3efb8ee37f9365311fe,"external acquisition must bridge to a publication, archive, museum, or authoritative sign list"

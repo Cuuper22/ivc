@@ -1,0 +1,17 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "lipi_frame700_034_neighbor_family_pressure",
+  "target_objects": 9,
+  "exact_copy_family_pressure_objects": 1,
+  "high_repetition_family_pressure_objects": 1,
+  "companion_context_repetition_pressure_objects": 0,
+  "local_neighborhood_pressure_objects": 6,
+  "low_copy_or_isolated_objects": 1,
+  "lane_pressure": {
+    "independent_low_copy_H771_H789_H1123": "H-771:local_neighborhood_pressure;H-789:local_neighborhood_pressure;H-1123:low_copy_or_isolated_in_local_layer",
+    "strict_local_H893_H925_H930": "H-893:local_neighborhood_pressure;H-925:exact_copy_family_pressure;H-930:local_neighborhood_pressure",
+    "visual_local_H983_H353_H2211": "H-983:local_neighborhood_pressure;H-353:high_repetition_family_pressure;H-2211:local_neighborhood_pressure"
+  },
+  "accepted_decipherment_claims": 0,
+  "research_conclusion": "Local metadata does not rescue any source blocker. H-925 and H-353 sit inside repeated/copy-family pressure; H-771/H-789/H-893/H-930/H-983/H-2211 show local-neighborhood pressure; only H-1123 stays low-copy/isolated. These are source-request priorities, not readings."
+}

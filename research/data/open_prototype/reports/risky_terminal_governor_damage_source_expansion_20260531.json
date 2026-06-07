@@ -1,0 +1,66 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_terminal_governor_damage_source_expansion_20260531",
+  "tier": "wild shot unresolved",
+  "bet": "High-priority terminal damaged rows with 002-000 should resolve to one of the live 002 closure signs: strict 817/820 or leaky 861. A source-visible terminal sign outside that set would damage the terminal-governor model.",
+  "prediction_rule": {
+    "governor": "002",
+    "damaged_pattern": "terminal 002-000",
+    "predicted_closure_set": [
+      "817",
+      "820",
+      "861"
+    ],
+    "source_outcome_implications": {
+      "817_or_820": "supports strict 002 governor closure",
+      "861": "supports leaky 002 near-closure extension",
+      "other_visible_sign": "demotes or splits 002 terminal-governor model",
+      "unresolved_damage": "prediction remains live but unevaluated"
+    }
+  },
+  "source_peek_rows": [
+    {
+      "cisi": "K-2",
+      "catalog_text": "+740-585-017-002-000+",
+      "path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/K-2_a.jpg",
+      "condition": "Fair",
+      "outcome": "unresolved_damage",
+      "note": "Source panel is visible, but the terminal damaged slot cannot be assigned to 817/820/861 without over-reading."
+    },
+    {
+      "cisi": "L-10",
+      "catalog_text": "+520-033-705-233-240-460-491-002-000+",
+      "path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/L-10_a.jpg",
+      "condition": "Fair",
+      "outcome": "unresolved_damage",
+      "note": "Right edge/terminal zone is too abraded for a clean closure assignment."
+    },
+    {
+      "cisi": "M-827",
+      "catalog_text": "+226-240-002-000[",
+      "path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-827_A.jpg",
+      "condition": "Fair",
+      "outcome": "unresolved_damage",
+      "note": "The relevant end is damaged; source does not falsify the prediction but does not promote it."
+    },
+    {
+      "cisi": "M-1107",
+      "catalog_text": "+565-740-240-103-002-000+",
+      "path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-1107_a.jpg",
+      "condition": "Good",
+      "outcome": "unresolved_damage",
+      "note": "The row is visible, but the terminal damaged slot cannot be separated confidently enough to call a closure."
+    },
+    {
+      "cisi": "K-89",
+      "catalog_text": "+000-033-705-000-002-000+",
+      "path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/K-89_A_1-4.jpg",
+      "condition": "Fair",
+      "outcome": "unresolved_damage",
+      "note": "Multi-panel tag surface is too noisy for a defensible terminal closure call from the current local image."
+    }
+  ],
+  "decision": "risky_prediction_not_promoted_no_clean_source_adjudicator_found",
+  "effect_on_model": "No demotion: none of the inspected rows yields a visible out-of-set terminal sign. No promotion: none yields a clean in-set terminal sign."
+}

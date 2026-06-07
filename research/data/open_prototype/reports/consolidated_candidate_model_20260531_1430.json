@@ -1,0 +1,231 @@
+{
+  "date": "2026-05-31T14:30:14-07:00",
+  "phase": "CONSOLIDATE",
+  "model_tier": "candidate",
+  "smallest_surviving_model": "The strongest current model is a register-role grammar, not a phonetic decipherment. Core lane: 400 marks and usually opens the non-copper tablet/account register (TAB:B/TAB:I); 740 is the broad opener for the rectangular/copper administrative register (SEAL:R/TAB:C); 407 is an independent narrower opener/entry marker in the same rectangular/copper register; 806 is a boundary/closure pivot in that register. Secondary lane A: 002 is a preterminal bridge into a closure ecology whose strongest closers are 817, 820, and 861; 820 is a source-visible wheel/rosette terminal closer selected by a Mohenjo-daro rhinoceros square-seal packet at object level, but hostile family/page collapse demotes that packet to object-level candidate and blocks any global rhinoceros word/sign reading. Secondary lane B: 090/091 are the discoverable top pair for an external circular-seal register, not a portable all-external marker and not a phonetic bridge. Hostile leaveout makes the signal Gulf/Dilmun-weighted; pair maxstat keeps it alive inside external circular seals; Laursen's Failaka discussion shows that at least one key Failaka object is a later Dilmun-style pseudo-Indus/enigmatic emulation rather than clean Gulf Type. Susa 3881.1 is source-bound to Louvre SB 5614 as a real circular Susa bovid seal with six signs, but the exact +700-604-407-090-365-000+ sequence and 407+090 bridge remain catalog-dependent rather than source-promoted.",
+  "ranked_survivors": [
+    {
+      "rank": 1,
+      "candidate": "400 is a non-copper tablet/account register opener, especially in TAB:B/TAB:I.",
+      "tier": "promoted candidate; context/slot role only",
+      "support": [
+        "Re-run forger: 187/765 TAB:B/I rows carry 400 versus 100/2738 background; all-sign rank 1/714; Bonferroni p=3.631762848429207e-59; context maxstat FPR=0.",
+        "Inside TAB:B/I rows, 400 is initial in 178/190 occurrences; all-sign rank 1/306; Bonferroni p=8.44070657051313e-85; initial-position maxstat FPR=0.",
+        "Controls survive complete-only, non-poor-only, leave-Mohenjo-daro, and leave-Harappa, though without Harappa is weaker but still below 0.01."
+      ],
+      "limitation": "This earns carrier/register and slot role only. It does not give a sound, lexical value, or language ID."
+    },
+    {
+      "rank": 2,
+      "candidate": "740 and 407 are independent openers in the SEAL:R/TAB:C rectangular/copper administrative register.",
+      "tier": "promoted candidate; strict 740-before-407 hierarchy killed",
+      "support": [
+        "Re-run forger: 740 is initial in 129/180 register occurrences, rank 1/278, Fisher p=1.3511897977632278e-52, maxstat FPR=0.",
+        "407 is initial in 34/55 register occurrences, rank 2/278, Fisher p=6.136812829050565e-11.",
+        "Collision rows are mixed: 740 before 407 in 11/19 and 407 before 740 in 8/19, killing a strict nesting hierarchy while preserving independent-opener behavior."
+      ],
+      "limitation": "407 weakens when Mohenjo-daro is left out, so expansion should source-check non-Mohenjo rectangular rows before treating 407 as pan-regional."
+    },
+    {
+      "rank": 3,
+      "candidate": "407 and 806 split opener versus boundary/closure roles inside the same SEAL:R/TAB:C register.",
+      "tier": "promoted candidate; role grammar only",
+      "support": [
+        "Re-run forger: in 444 canonical SEAL:R/TAB:C rows, 407 has 34/55 initial occurrences and 0/55 boundary-next occurrences; 806 has 3/51 initial occurrences and 29/51 boundary-next occurrences.",
+        "Direct 407-vs-806 initial Fisher p=3.7369995725383713e-10; direct 806-vs-407 boundary Fisher p=1.7478476262987026e-12.",
+        "Ordered-pair and frequency-matched maxstat FPRs are both 0 under the row-preserving forger."
+      ],
+      "limitation": "Co-occurrence support is only five rows, with one nested counter-order row. The role split is strong at occurrence level but should be tested on held-out source-visible rows."
+    },
+    {
+      "rank": 4,
+      "candidate": "407 marks a broader rectangular/copper administrative register spanning SEAL:R and TAB:C.",
+      "tier": "promoted candidate; context only",
+      "support": [
+        "Re-run forger: 53/444 SEAL:R/TAB:C register rows carry 407 versus 17/3059 background; all-sign rank 1/714; Bonferroni p=1.2618252646220003e-31; maxstat FPR=0.",
+        "Survives complete-only, non-poor-only, leave-Mohenjo-daro, and leave-Harappa controls.",
+        "Support is not only Mohenjo-daro: Harappa, Dholavira, Lothal, Desalpur, Nausharo, and Susa all contribute at least one 407 row."
+      ],
+      "limitation": "Susa 3881.1 is the only external circular 407 row and its 407+090 sequence remains catalog-dependent, so this does not yet bridge the internal register model to Meluhha/Gulf phonetics."
+    },
+    {
+      "rank": 5,
+      "candidate": "820 is a wheel/rosette terminal closer selected by a Mohenjo-daro rhinoceros packet, not a global animal sign.",
+      "tier": "candidate after hostile family/page collapse",
+      "support": [
+        "Source-augmented rhinoceros rows are 5/5 terminal 820 in the named packet at object level.",
+        "Object-level hostile control false-positive rate is 0.00055 with all-symbol maxstat false-positive rate 0.",
+        "CISI Pakistan n160 visibly groups M-1136/M-1137/M-1138/M-1139 under a rhinoceros page header and shows terminal 820 as wheel/rosette."
+      ],
+      "limitation": "Family collapse leaves 3/3 target families at FPR 0.02315, and page-cluster collapse leaves only 2/2 evidence clusters at FPR 0.0468. M-314, M-375, and M-381 prove 820 also occurs in no-iconography/text-only contexts, so the broad semantic reading is dead."
+    },
+    {
+      "rank": 6,
+      "candidate": "M-314/M-375/M-381 force 820 into a rosette-closure/register model rather than a rhino lexeme model.",
+      "tier": "candidate constraint",
+      "support": [
+        "M-314 source page: no-iconography page, 17-sign text, terminal 002-820.",
+        "Metadata scan: 93 terminal 002-820 rows, including 26 symbol=None rows.",
+        "M-381 source page shows the old Brahmi ra/tha source object has the same rosette-like terminal 820; the forked/Brahmi-looking route is a crop/model artifact."
+      ],
+      "limitation": "The report is a source-bound contradiction, not a statistical enrichment claim, so it has no standalone forger false-positive rate."
+    },
+    {
+      "rank": 7,
+      "candidate": "090/091 are an external circular-seal register pair with Gulf/Dilmun route or emulation pressure.",
+      "tier": "candidate as circular-register pair; not accepted and not phonetic",
+      "support": [
+        "External exact-text-dedup rows: 090/091 in 12/39, terminal 002-820 in 0/39.",
+        "Type-matched route false-positive rate: 0.00762; SEAL:C route false-positive rate: 0.00028.",
+        "External 090/091 near-terminal share is 7/11 versus local 56/202, Fisher greater p=0.017277041386541236.",
+        "Pair maxstat adversary: 090/091 ranks 1/3081 for external circular versus external non-circular rows, 12/17 versus 0/24, Bonferroni p=0.002413730969778851, maxstat permutation FPR=0.",
+        "External circular site support is 8/10 sites with either sign and 0/10 sites with both signs across site-level support.",
+        "Leaveout control keeps SEAL:C signal below 0.01 after removing Failaka: 10/15 SEAL:C route rows, FPR 0.00252."
+      ],
+      "limitation": "The broad route signal is not portable across all external regions. Removing Failaka raises type-matched FPR to 0.03264, and removing the Persian Gulf raises it to 0.21824 with SEAL:C FPR 0.04928. The strict same-type SEAL:C pair scan weakens multiple-comparison status: 090/091 is only rank 2/2016, Fisher p=0.015976194132701595, Bonferroni p=1. Laursen explicitly treats Failaka Fig. 9/13 as later Dilmun-style pseudo-Indus/unparalleled script, and local rows 147.1/148.1 are not yet mapped to Kjaerum no.279/no.319."
+    },
+    {
+      "rank": 8,
+      "candidate": "Susa 3881.1 is the live V1 bridge lead: 407+090 may mark an external administrative/register packet.",
+      "tier": "candidate source-bound object; catalog-dependent sign bridge",
+      "support": [
+        "Louvre SB 5614 / AS 15374 matches Susa, circular seal/impression, bovid iconography, and six signs above the animal.",
+        "407 with 090/091 occurs in exactly one current metadata row: Susa 3881.1.",
+        "After exact-text dedup, 407 is SEAL:R-heavy with a remaining TAB:C component, fitting a register/admin lane better than an animal-label lane."
+      ],
+      "limitation": "The object is no longer source-missing, but the downloaded Louvre photographs do not independently verify the exact Lipi sequence or the 407+090 order. The bridge remains dependent on local catalog tokenization."
+    }
+  ],
+  "killed_or_demoted": [
+    {
+      "candidate": "820 is globally a rhinoceros semantic sign.",
+      "status": "killed",
+      "reason": "M-314/M-375/M-381 are source-visible no-iconography/text-only 820 terminal rows, and metadata has 26 symbol=None terminal 002-820 rows."
+    },
+    {
+      "candidate": "820 gives a Brahmi ra/tha phonetic value.",
+      "status": "killed",
+      "reason": "The only old Brahmi-token support came from M-381. Source visual check shows M-381 has the same rosette-like terminal 820, so the forked/Brahmi-looking route is a crop/model artifact."
+    },
+    {
+      "candidate": "Rhinoceros versus elephant is a broad semantic contrast discoverable by any terminal symbol.",
+      "status": "demoted",
+      "reason": "The named 820 rhino-vs-elephant foil survives, but the exploratory any-symbol-pair maxstat false-positive rate is 1.0."
+    },
+    {
+      "candidate": "090/091 are a clean exact external formula by themselves.",
+      "status": "demoted",
+      "reason": "They survive as an external route/register enrichment, but same-type controls and fragmentary support prevent an exact-formula claim."
+    },
+    {
+      "candidate": "090/091 are a portable all-external route marker independent of site or region.",
+      "status": "demoted",
+      "reason": "Hostile leaveout shows region dependence: removing Failaka raises type-matched FPR to 0.03264, and removing the Persian Gulf raises it to 0.21824."
+    },
+    {
+      "candidate": "The Failaka 090/091 rows are clean Gulf Type or Meluhha phonetic support.",
+      "status": "demoted",
+      "reason": "Laursen lines 1753-1770 and 1883-1885 make at least one key Failaka object a later Dilmun-style pseudo-Indus/enigmatic emulation, and the local 147.1/148.1 rows remain unmapped to Kjaerum no.279/no.319."
+    },
+    {
+      "candidate": "Susa 3881.1 407+090 is source-promoted by the Louvre image alone.",
+      "status": "demoted",
+      "reason": "Louvre SB 5614 source-binds the object and six-sign band, but glare/blur/curvature/mirroring prevent independent recovery of the exact +700-604-407-090-365-000+ sequence from the downloaded photographs."
+    }
+  ],
+  "contradictions_resolved": [
+    "The apparent conflict between 820 in rhinoceros seals and 820 in M-314 is resolved by shifting from a lexical animal reading to a terminal/register reading with local contextual selection.",
+    "The apparent conflict between Brahmi ra/tha labels and source-visible 820 shape is resolved by treating the Brahmi token result as a visual-model artifact."
+  ],
+  "hostile_controls_added_after_initial_consolidation": {
+    "report": "data/open_prototype/reports/consolidate_820_rhin_hostile_controls_20260531.json",
+    "object_level": {
+      "observed": "5/5 source-augmented Rhin rows end in 820",
+      "target_false_positive_rate": 0.00055,
+      "any_symbol_maxstat_false_positive_rate": 0
+    },
+    "family_collapsed": {
+      "observed": "3/3 source-augmented Rhin families end in 820",
+      "target_false_positive_rate": 0.02315,
+      "any_symbol_maxstat_false_positive_rate": 0.0008
+    },
+    "page_cluster_collapsed": {
+      "observed": "2/2 source-augmented Rhin page/object clusters end in 820",
+      "target_false_positive_rate": 0.0468,
+      "any_symbol_maxstat_false_positive_rate": 0
+    },
+    "decision": "Demote 820/Rhin from promoted packet-level claim to candidate. Keep the rosette terminal-closure model alive; require an independent non-n160 rhinoceros 002-820 source row or a hostile 817/861 counterexample hunt before any promotion."
+  },
+  "external_source_check_added_after_initial_consolidation": {
+    "report": "data/meluhha/susa_3881_sb5614_source_check_20260531.json",
+    "source": "Louvre SB 5614 / AS 15374, https://collections.louvre.fr/ark:/53355/cl010179441",
+    "decision": "Susa 3881.1 is source-bound at object level, but the 407+090 bridge is not source-verified.",
+    "model_effect": "Keep Lane B alive as 090/091 route/register plus Susa source-bound object lead; do not promote 407+090, sound, value, or translation."
+  },
+  "external_leaveout_added_after_initial_consolidation": {
+    "report": "data/meluhha/consolidate_external_090091_leaveout_20260531.json",
+    "observed_nulls": {
+      "type_matched_route_fpr": 0.00844,
+      "type_matched_route_and_no_002820_fpr": 0.00504,
+      "sealc_route_fpr": 0.00056
+    },
+    "worst_site": "Remove Failaka: kept 10/37 route rows; type-matched FPR 0.03264; SEAL:C FPR 0.00252.",
+    "worst_region": "Remove Persian Gulf: kept 5/24 route rows; type-matched FPR 0.21824; SEAL:C FPR 0.04928.",
+    "decision": "Demote 090/091 from portable all-external marker to Gulf-weighted circular-route/register candidate."
+  },
+  "external_pair_maxstat_reearned_20260531": {
+    "report": "data/meluhha/risky_external_090091_pair_maxstat_adversary_20260531.json",
+    "decision": "Keep 090/091 alive as a candidate external circular-seal register pair, but block phonetic or bilingual promotion.",
+    "primary_external_circular": "12/17 external circular rows carry 090 or 091 versus 0/24 external non-circular rows; rank 1/3081; Bonferroni p=0.002413730969778851; maxstat permutation FPR=0.",
+    "same_type_warning": "Same-type SEAL:C control is only Fisher p=0.015976194132701595 and Bonferroni p=1, so the result is context/register pressure, not an accepted external bridge."
+  },
+  "failaka_source_check_added_after_initial_consolidation": {
+    "report": "data/meluhha/failaka_090091_late_emulation_source_check_20260531.json",
+    "source": "Laursen 2010 PDF lines 1753-1770 and 1883-1885",
+    "decision": "Demote Failaka 090/091 support from clean Gulf Type/Meluhha bridge to source-unmapped Gulf/Dilmun emulation support.",
+    "model_effect": "The next expansion should split true Gulf Type, later Dilmun/pseudo-Indus, and classic external Indus-style rows before any phonetic bridge attempt."
+  },
+  "next_expand_destructive_tests": [
+    {
+      "test": "Predict held-out register rows from role grammar: 400 should open TAB:B/I, 740 or 407 should open SEAL:R/TAB:C, and 806 should avoid initial position while clustering before END or 002.",
+      "promotion_condition": "A held-out/source-visible batch preserves these three slot roles under exact-text collapse and leave-site controls.",
+      "kill_condition": "Source-visible rows frequently put 400 outside tablet/account openings, put 407 before END/002, or put 806 as a normal opener at rates comparable to the claimed role signs."
+    },
+    {
+      "test": "Attack Susa 3881.1 as the possible crossing point between the 407 internal register grammar and the 090/091 external circular branch.",
+      "promotion_condition": "Independent source transcription confirms 407 adjacent to 090 on SB 5614, and the remaining signs fit register/opening or circular-route neighbors better than local circular controls.",
+      "kill_condition": "Independent source loses 407, loses 090, changes their adjacency/order beyond direction convention, or shows a non-register visual token mis-mapped as 407."
+    },
+    {
+      "test": "Adjudicate the Susa SB 5614 sign sequence, not just the object.",
+      "promotion_condition": "An independent sign drawing, catalogue transcription, or higher-resolution source preserves the local R/L sequence and specifically confirms 407 adjacent to 090 in the claimed order.",
+      "kill_condition": "Independent source gives a different middle pair, reverses the pair without a defensible direction convention, lacks one of 407/090, or shows that local Lipi tokenization mapped the visible human/tree-like signs to different numbers."
+    },
+    {
+      "test": "Box source-visible 820 tokens from M-1136/M-1137/M-1138/M-1139, M-314, M-375, and M-381, then compare against 817/861 with a shape-null.",
+      "promotion_condition": "Rhino and no-iconography 820 tokens form one rosette/wheel cluster distinct from 817/861.",
+      "kill_condition": "The 820 tokens split into non-homologous shape families or overlap 817/861 at null-like rates."
+    },
+    {
+      "test": "Redo the 820 rhinoceros packet forger with M-1137 source-reclassified as Rhin and with exact duplicate/site-block controls visible in the report.",
+      "promotion_condition": "Packet-level 820 selection remains below 0.01 under site/type/exact-text controls.",
+      "kill_condition": "The effect becomes a Mohenjo page/duplicate artifact or rises above 0.01 under the hostile controls."
+    },
+    {
+      "test": "Split 090/091 external rows into true Gulf Type, Dilmun/pseudo-Indus emulation, and classic external Indus-style classes, then rerun same-type SEAL:C maxstat.",
+      "promotion_condition": "090/091 remain right-edge enriched inside true Gulf Type or classic external Indus-style rows after excluding late pseudo-Indus emulations.",
+      "kill_condition": "The enrichment is carried mainly by late Dilmun/pseudo-Indus emulations, several source-visible Gulf circular seals lack 090/091 in the claimed position, or local circular controls match the effect."
+    },
+    {
+      "test": "Use the next source-bound circular external seals as hard predictions for the 090/091 pair, not as retrospective support.",
+      "promotion_condition": "Kjaerum/Laursen true Gulf Type circular seals add 090 or 091 at above local circular background and preserve the current mutual exclusion pattern.",
+      "kill_condition": "Source-bound Gulf Type circular seals repeatedly lack both signs, contain both signs on one object, or show that the current 090/091 rows are mostly late pseudo-Indus/emulation artifacts."
+    }
+  ],
+  "not_claimed": [
+    "No translation.",
+    "No phonetic value.",
+    "No language-family identification.",
+    "No object-level bilingual."
+  ]
+}

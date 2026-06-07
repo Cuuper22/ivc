@@ -1,0 +1,103 @@
+{
+  "run_id": "replacement_20260531",
+  "date": "2026-05-31",
+  "cutoff_guardrail": "Does not read tmp/quarantine_bad_successor_20260531T0104 and does not read any v3b low-null artifact.",
+  "threshold": 0.01,
+  "input_hashes_sha256": {
+    "data/brahmi/brahmi_real_token_impostor_forger_v3.csv": "4cf2baebc008f167cf2ab36583b2c19411cac52626a80605dd60645a34f06ee2",
+    "data/brahmi/brahmi_real_token_impostor_forger_v3_summary.json": "fc03fb73f9193d44b9074464094be0ceb4cfc83b959be76d80e6f10f386e5ec1",
+    "data/brahmi/brahmi_independent_source_token_gate_v3.csv": "b7aa8e0b7028fb243c98808beb878ea8fff22a59d0428fdd6f00459a2a6f29be",
+    "data/brahmi/source_token_family_descent_summary_v2.csv": "22b43b8a525414f50949403bf3983fe4168885b2e23c1d181a8dc479de5e3a59"
+  },
+  "forger_checkpoint": {
+    "input_family_rows": 83,
+    "rows_with_full_impostor_iterations": 82,
+    "real_token_null_above_0_01_rows": 61,
+    "real_token_null_at_or_below_0_01_rows": 21,
+    "accepted_phonetic_anchors": 0
+  },
+  "low_null_rows": 21,
+  "low_null_fail_original_shape_null_rows": 21,
+  "low_null_fail_original_label_null_rows": 19,
+  "low_null_fail_v3_preflight_rows": 21,
+  "low_null_fail_min_independence_rows": 11,
+  "low_null_fail_duplicate_unanimity_rows": 14,
+  "low_null_fail_modal_label_stability_rows": 5,
+  "low_null_pass_min_independence_and_duplicate_unanimity_rows": 0,
+  "review_packet_eligible_low_null_rows": 0,
+  "candidate_only_rows": 0,
+  "accepted_phonetic_anchors": 0,
+  "lowest_rows": [
+    {
+      "sign_id": "002",
+      "orientation_policy": "visual_ltr_catalog_order",
+      "label": "ra",
+      "impostor_ge_observed_share": "0.000000",
+      "blocked_reasons": "original_shape_null_above_0_01;original_label_null_above_0_01;failed_v3_independence_preflight;failed_duplicate_collapse_unanimity;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "002",
+      "orientation_policy": "visual_ltr_catalog_reverse",
+      "label": "sya",
+      "impostor_ge_observed_share": "0.000000",
+      "blocked_reasons": "original_shape_null_above_0_01;original_label_null_above_0_01;failed_v3_independence_preflight;failed_duplicate_collapse_unanimity;modal_label_changes_after_collapse;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "231",
+      "orientation_policy": "visual_ltr_catalog_order",
+      "label": "ta",
+      "impostor_ge_observed_share": "0.000000",
+      "blocked_reasons": "original_shape_null_above_0_01;original_label_null_above_0_01;failed_v3_independence_preflight;failed_minimum_independence;failed_duplicate_collapse_unanimity;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "231",
+      "orientation_policy": "visual_ltr_catalog_reverse",
+      "label": "ta",
+      "impostor_ge_observed_share": "0.000000",
+      "blocked_reasons": "original_shape_null_above_0_01;original_label_null_above_0_01;failed_v3_independence_preflight;failed_minimum_independence;failed_duplicate_collapse_unanimity;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "240",
+      "orientation_policy": "visual_ltr_catalog_order",
+      "label": "tha",
+      "impostor_ge_observed_share": "0.000000",
+      "blocked_reasons": "original_shape_null_above_0_01;original_label_null_above_0_01;failed_v3_independence_preflight;failed_duplicate_collapse_unanimity;modal_label_changes_after_collapse;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "527",
+      "orientation_policy": "visual_ltr_catalog_order",
+      "label": "ra",
+      "impostor_ge_observed_share": "0.000000",
+      "blocked_reasons": "original_shape_null_above_0_01;original_label_null_above_0_01;failed_v3_independence_preflight;failed_minimum_independence;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "555",
+      "orientation_policy": "visual_ltr_catalog_order",
+      "label": "e",
+      "impostor_ge_observed_share": "0.000000",
+      "blocked_reasons": "original_shape_null_above_0_01;original_label_null_above_0_01;failed_v3_independence_preflight;failed_minimum_independence;failed_duplicate_collapse_unanimity;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "603",
+      "orientation_policy": "visual_ltr_catalog_reverse",
+      "label": "i",
+      "impostor_ge_observed_share": "0.000000",
+      "blocked_reasons": "original_shape_null_above_0_01;original_label_null_above_0_01;failed_v3_independence_preflight;failed_minimum_independence;failed_duplicate_collapse_unanimity;modal_label_changes_after_collapse;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "740",
+      "orientation_policy": "visual_ltr_catalog_order",
+      "label": "ra",
+      "impostor_ge_observed_share": "0.000000",
+      "blocked_reasons": "original_shape_null_above_0_01;original_label_null_above_0_01;failed_v3_independence_preflight;failed_duplicate_collapse_unanimity;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "740",
+      "orientation_policy": "visual_ltr_catalog_reverse",
+      "label": "ra",
+      "impostor_ge_observed_share": "0.000000",
+      "blocked_reasons": "original_shape_null_above_0_01;original_label_null_above_0_01;failed_v3_independence_preflight;failed_duplicate_collapse_unanimity;not_accepted_in_v2_gate"
+    }
+  ],
+  "conclusion": "The low real-token-null subset contains no hidden Brahmi phonetic anchor. Every low-null row fails the original shape-null threshold and the v3 preflight; most also fail label-null and/or minimum independence. Accepted phonetic anchors remain zero."
+}

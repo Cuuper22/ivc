@@ -1,0 +1,68 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "candidate_id": "risky_terminal_governor_source_spot_audit_20260531",
+  "tier": "candidate_strengthener",
+  "scope": "One locally available source image was inspected for each live governor edge where a readable witness could be found quickly. This is a spot audit, not source-normalized acceptance.",
+  "spot_checked_edges": [
+    {
+      "edge": "002-817",
+      "cisi": "B-5",
+      "catalog_text": "+002-817+",
+      "path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/B-5_a.jpg",
+      "visual_status": "compatible",
+      "note": "Short terminal cluster visible; no immediate contradiction to catalogued two-sign terminal formula."
+    },
+    {
+      "edge": "002-820",
+      "cisi": "H-45",
+      "catalog_text": "+090-740-101-002-820+",
+      "path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/H-45_a.jpg",
+      "visual_status": "compatible",
+      "note": "Terminal rosette/wheel-like sign is visible at one end of the sign row; no immediate contradiction to 002-820 terminal reading."
+    },
+    {
+      "edge": "060-920",
+      "cisi": "C-16",
+      "catalog_text": "+429-003-741-060-920+",
+      "path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/C-16_a.jpg",
+      "visual_status": "compatible",
+      "note": "Terminal 741-060-920 cluster is source-visible enough for the promoted selector claim to remain alive."
+    },
+    {
+      "edge": "060-550",
+      "cisi": "H-20",
+      "catalog_text": "+740-176-690-435-255-220-032-806-060-550+",
+      "path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/H-20_a.jpg",
+      "visual_status": "compatible",
+      "note": "Long sign row is visible; terminal segment is not obviously contradicted, but this remains lower confidence than the compact clusters."
+    },
+    {
+      "edge": "060-820",
+      "cisi": "M-31",
+      "catalog_text": "+740-269-511-233-060-820+",
+      "path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-31_a.jpg",
+      "visual_status": "compatible",
+      "note": "Terminal wheel/rosette-like 820 after the 060 environment is visible; this supports 820 portability."
+    },
+    {
+      "edge": "060-692",
+      "cisi": "B-21",
+      "catalog_text": "+426-003-060-692+",
+      "path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/B-21_a.jpg",
+      "visual_status": "compatible",
+      "note": "Compact terminal row visible; no immediate contradiction to 060-692 as a terminal/near-terminal member."
+    },
+    {
+      "edge": "002-861",
+      "cisi": "M-28",
+      "catalog_text": "+892-374-740-760-840-416-002-861+",
+      "path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-28_a.jpg",
+      "visual_status": "compatible",
+      "note": "Long source row is visible and includes a terminal diamond/leaf-like sign compatible with the catalogued 861 end; still kept leaky/near because corpus terminality is lower than strict closures."
+    }
+  ],
+  "decision": "source_spot_audit_finds_no_immediate_contradiction_for_live_edges",
+  "effect_on_model": "Strict governor edges remain promoted candidates. 820 portability gains source-peek support. 002-861 has a compatible source witness but remains leaky/near because its corpus terminality is lower than strict closures.",
+  "why_not_accepted": "A spot audit is not enough: it does not box token boundaries, does not sample every site/type stratum, and does not independently resegment signs from high-resolution plates."
+}

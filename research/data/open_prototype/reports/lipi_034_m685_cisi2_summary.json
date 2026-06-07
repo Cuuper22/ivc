@@ -1,0 +1,60 @@
+{
+  "date": "2026-05-25",
+  "object": "M-685",
+  "local_row": "3121.1 ]034-204+",
+  "source_packet": "lipi_034_m685_cisi2",
+  "routes_rows": 7,
+  "visual_input_rows": 22,
+  "adjudication_rows": 7,
+  "segmentation_scenarios": 6,
+  "contrast_report": "data/open_prototype/reports/lipi_034_m685_034_204_contrasts.csv",
+  "stored_source_files": [
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m685_cisi2/n71_w2000.jpg",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/cisi_xml/Corpus of Indus Seals and Inscriptions. Collections in Pakistan_djvu.xml",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m1206_bhaskar/S1-IndusZoomorphicIconCatalogue.pdf"
+  ],
+  "stored_visual_derivatives": [
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m685_cisi2/derived/m685_page37_header_context.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m685_cisi2/derived/m685_page37_header_context_gray_autocontrast.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m685_cisi2/derived/m685_page37_m683_m686_context.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m685_cisi2/derived/m685_page37_m683_m686_context_gray_autocontrast.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m685_cisi2/derived/m685_face_full_with_label.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m685_cisi2/derived/m685_face_full_with_label_gray_autocontrast.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m685_cisi2/derived/m685_impression_full_with_label.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m685_cisi2/derived/m685_impression_full_with_label_gray_autocontrast.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m685_cisi2/derived/m685_face_signs_close.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m685_cisi2/derived/m685_face_signs_close_gray_autocontrast.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m685_cisi2/derived/m685_impression_signs_close.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m685_cisi2/derived/m685_impression_signs_close_gray_autocontrast.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m685_cisi2/derived/m685_face_left_break_034_region.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m685_cisi2/derived/m685_face_left_break_034_region_gray_autocontrast.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m685_cisi2/derived/m685_impression_left_break_034_region.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m685_cisi2/derived/m685_impression_left_break_034_region_gray_autocontrast.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m685_cisi2/derived/m685_face_204_region.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m685_cisi2/derived/m685_face_204_region_gray_autocontrast.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m685_cisi2/derived/m685_impression_204_region.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m685_cisi2/derived/m685_impression_204_region_gray_autocontrast.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m685_cisi2/derived/m685_page37_boxes_overlay.png"
+  ],
+  "positive_result": "CISI Vol. 2 p.37 is source-visible through IA leaf n71; it labels M-685 A and M-685 a under unicorn II / SEALS / MOHENJO-DARO 683-686. Bhaskar S1 separately lists M-685 with text-present marker b and Unicorn.",
+  "adversarial_downgrade": "The object is fragmentary and poor, the local text has a leading bracket ]034-204+, no source numeric transcription is printed on the page, and the local Bull1 iconography conflicts with CISI/Bhaskar unicorn context.",
+  "contrast_result": "M-685 is the only adjacent 034-204 row and the only row containing both 034 and 204 in the filtered corpus; 204 appears in eight rows overall.",
+  "decision": "source_visible_object_binding_yes; numeric_034_204_token_mapping_pending_highres_source_transcription_and_HR4244276_data_bridge",
+  "accepted_object_visual_bindings": 1,
+  "accepted_source_mapping_claims": 0,
+  "accepted_sign_values": 0,
+  "accepted_sign_meanings": 0,
+  "accepted_translations": 0,
+  "sent_source_requests": [
+    {
+      "recipient": "[harappa-project-email]",
+      "message_id": "[redacted-msgid]",
+      "purpose": "M-685 high-resolution source image/sign transcription/iconography/data-row request"
+    }
+  ],
+  "ia_sources": {
+    "page37_reader": "https://archive.org/details/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan/Corpus%20of%20Indus%20Seals%20and%20Inscriptions.%20Collections%20in%20Pakistan/page/n71/mode/1up",
+    "page37_image": "https://archive.org/download/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan/Corpus%20of%20Indus%20Seals%20and%20Inscriptions.%20Collections%20in%20Pakistan/page/n71_w2000.jpg",
+    "djvu_xml": "https://archive.org/download/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan/Corpus%20of%20Indus%20Seals%20and%20Inscriptions.%20Collections%20in%20Pakistan_djvu.xml"
+  }
+}

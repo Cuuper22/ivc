@@ -1,0 +1,17 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "cross_site_125_template_component_probe",
+  "hypotheses_tested": [
+    "`610` as a rare governed title head selecting `125-032`",
+    "`297-350` as head+modifier selecting `125-413`",
+    "`413` as terminal title suffix in the `297-350-125` template",
+    "`032` as terminal title-tail in `610-125-032`, with adversarial non-610 row present"
+  ],
+  "decisions": [
+    "`610` becomes a candidate sign-function bet: all `610` occurrences are `002-610-125-032` across Harappa and Mohenjo-daro.",
+    "`297-350-125-413` becomes a promoted candidate cross-site title-template, but not a sign value for `297` alone because `297` has wider uses.",
+    "`413` is only a wild terminal-title suffix outside this exact template because globally it is dominated by `575-413` and `892-413` contexts.",
+    "`032` remains a candidate terminal/pivot marker, not a title-specific suffix, because `125-032` has one non-610 adversarial row."
+  ],
+  "next_falsifier": "Source/visual checks for H-74, M-1665, Blk-1, and Ns-60 should attack whether the cross-site templates are real inscriptions in comparable orientation."
+}

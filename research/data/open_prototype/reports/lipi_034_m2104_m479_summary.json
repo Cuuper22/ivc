@@ -1,0 +1,51 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "lipi_034_m2104_m479_source_probe",
+  "question": "Does M-479 materially improve the M-2104 700-034 versus 700-004 count-compound hypothesis, or only expose duplicate-family risk?",
+  "local_row": {
+    "id": "2963.1",
+    "cisi": "M-479",
+    "site": "Mohenjo-daro",
+    "region": "Lower Indus",
+    "type": "TAB:B",
+    "material": "Clay",
+    "preservation": "complete",
+    "condition": "Good",
+    "direction": "R/L",
+    "class": "VX",
+    "signs": "4",
+    "text": "+400-097-700-004+"
+  },
+  "source_result": {
+    "plate_visible": true,
+    "plate": "CISI Collections in India, IA leaf n150, printed p. 115, MOHENJO-DARO 478-481 tablets in bas-relief",
+    "inscription_crop": "tmp/cisi_m2104_packet/m479/m479_a_inscription_crop.png",
+    "scene_crop": "tmp/cisi_m2104_packet/m479/m479_b_scene_crop.png",
+    "intro_context_crop": "tmp/cisi_m2104_packet/m479/cisi_india_n19_m478_m479_pot_context_crop.png",
+    "segmentation_overlay": "tmp/cisi_m2104_packet/overlays/m479_a_segmentation_overlay.png",
+    "enhanced_closeup": "tmp/cisi_m2104_packet/closeups/m479_a_u_count_closeup_enhanced.png"
+  },
+  "adjudication": {
+    "survives_as_source_visible_comparator_candidate": true,
+    "counts_as_independent_support": false,
+    "upgraded_to_mapping": false,
+    "upgraded_to_count_value": false,
+    "upgraded_to_translation": false,
+    "strongest_support": "CISI India source imagery directly shows M-479 A/B on the M-478-481 tablet plate, and the M-479 A crop has a boxable four-stroke group adjacent to a U/pot-like cluster region matching the local +400-097-700-004+ family.",
+    "strongest_downgrade": "M-479 is same site, same type, same material, same direction, same full local text, same source plate cluster, and adjacent catalogue family as M-478/M-480. It is family-internal support, not an extra independent recurrence.",
+    "safe_claim": "M-479 has been acquired and stored as a source-visible local extra comparator for the 097-700-004 side. It keeps the M-2104 count-compound hypothesis alive as a visual target but does not license 004=four, 034=three, or any translation claim."
+  },
+  "outputs": [
+    "docs/lipi_034_m2104_m479_source_probe.md",
+    "data/open_prototype/reports/lipi_034_m2104_m479_source_notes.csv",
+    "data/open_prototype/reports/lipi_034_m2104_m479_segmentation_targets.csv",
+    "data/open_prototype/reports/lipi_034_m2104_m479_adjudication.csv",
+    "data/open_prototype/reports/lipi_034_m2104_m479_summary.json",
+    "tmp/cisi_m2104_packet/m479/m479_a_inscription_crop.png",
+    "tmp/cisi_m2104_packet/m479/m479_b_scene_crop.png",
+    "tmp/cisi_m2104_packet/m479/cisi_india_n19_m478_m479_pot_context_crop.png",
+    "tmp/cisi_m2104_packet/overlays/m479_a_segmentation_overlay.png",
+    "tmp/cisi_m2104_packet/closeups/m479_a_u_count_closeup_enhanced.png"
+  ],
+  "accepted_decipherment_claims": 0
+}

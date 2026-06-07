@@ -1,0 +1,262 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_copper_register_subsigns_095_845_20260531",
+  "tier": "candidate_screen",
+  "bet": "Within the copper TAB:C register, signs 095 and 845 are not merely passengers of 407; they are candidate subregister signs. If true, 095/845 should remain enriched in Copper|TAB:C rows and partially survive after removing rows containing 407.",
+  "source": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\lipi\\metadata_filtered.csv",
+  "collapse_key": [
+    "text"
+  ],
+  "label": "material=Copper and type=TAB:C",
+  "live_targets": [
+    {
+      "kind": "unigram",
+      "unit": "095",
+      "n_rows": 2236,
+      "unit_rows": 14,
+      "label_rows": 67,
+      "support": 5,
+      "unit_share_in_label": 0.07462686567164178,
+      "label_share_given_unit": 0.35714285714285715,
+      "baseline_label_share": 0.02996422182468694,
+      "fisher_right_tail": 0.00003377778054584062,
+      "without_407": {
+        "kind": "unigram",
+        "unit": "095",
+        "n_rows": 2185,
+        "unit_rows": 11,
+        "label_rows": 52,
+        "support": 3,
+        "unit_share_in_label": 0.057692307692307696,
+        "label_share_given_unit": 0.2727272727272727,
+        "baseline_label_share": 0.02379862700228833,
+        "fisher_right_tail": 0.0018340850336225724
+      },
+      "copper_examples": [
+        "M-2053:+407-032-520-095-585-017-220+",
+        "M-519:+617-142-001-595-095-760-744+",
+        "M-547:+407-032-520-095-585-017-231+",
+        "M-599:+408-032-520-095-585-017-220+",
+        "M-1470:+617-142-001-595-095-717-747+"
+      ]
+    },
+    {
+      "kind": "unigram",
+      "unit": "845",
+      "n_rows": 2236,
+      "unit_rows": 15,
+      "label_rows": 67,
+      "support": 6,
+      "unit_share_in_label": 0.08955223880597014,
+      "label_share_given_unit": 0.4,
+      "baseline_label_share": 0.02996422182468694,
+      "fisher_right_tail": 0.0000023401374286407958,
+      "without_407": {
+        "kind": "unigram",
+        "unit": "845",
+        "n_rows": 2185,
+        "unit_rows": 4,
+        "label_rows": 52,
+        "support": 0,
+        "unit_share_in_label": 0,
+        "label_share_given_unit": 0,
+        "baseline_label_share": 0.02379862700228833,
+        "fisher_right_tail": 0.999999999997811
+      },
+      "copper_examples": [
+        "M-2054:+740-900-850-407-061-845-806+",
+        "-:+407-063-845-240-798+",
+        "M-507:+407-845-220-415+",
+        "M-534:+407-321-407-845-033-705-235+",
+        "M-567:+407-061-845-240-798+",
+        "M-603:+740-900-850-407-845-806+"
+      ]
+    },
+    {
+      "kind": "bigram",
+      "unit": "061-845",
+      "n_rows": 2236,
+      "unit_rows": 2,
+      "label_rows": 67,
+      "support": 2,
+      "unit_share_in_label": 0.029850746268656716,
+      "label_share_given_unit": 1,
+      "baseline_label_share": 0.02996422182468694,
+      "fisher_right_tail": 0.0008848495035491269,
+      "without_407": {
+        "kind": "bigram",
+        "unit": "061-845",
+        "n_rows": 2185,
+        "unit_rows": 0,
+        "label_rows": 52,
+        "support": 0,
+        "unit_share_in_label": 0,
+        "label_share_given_unit": 0,
+        "baseline_label_share": 0.02379862700228833,
+        "fisher_right_tail": 1
+      },
+      "copper_examples": [
+        "M-2054:+740-900-850-407-061-845-806+",
+        "M-567:+407-061-845-240-798+"
+      ]
+    },
+    {
+      "kind": "bigram",
+      "unit": "407-061",
+      "n_rows": 2236,
+      "unit_rows": 4,
+      "label_rows": 67,
+      "support": 2,
+      "unit_share_in_label": 0.029850746268656716,
+      "label_share_given_unit": 0.5,
+      "baseline_label_share": 0.02996422182468694,
+      "fisher_right_tail": 0.005105347508373734,
+      "without_407": {
+        "kind": "bigram",
+        "unit": "407-061",
+        "n_rows": 2185,
+        "unit_rows": 0,
+        "label_rows": 52,
+        "support": 0,
+        "unit_share_in_label": 0,
+        "label_share_given_unit": 0,
+        "baseline_label_share": 0.02379862700228833,
+        "fisher_right_tail": 1
+      },
+      "copper_examples": [
+        "M-2054:+740-900-850-407-061-845-806+",
+        "M-567:+407-061-845-240-798+"
+      ]
+    },
+    {
+      "kind": "bigram",
+      "unit": "520-095",
+      "n_rows": 2236,
+      "unit_rows": 5,
+      "label_rows": 67,
+      "support": 3,
+      "unit_share_in_label": 0.04477611940298507,
+      "label_share_given_unit": 0.6,
+      "baseline_label_share": 0.02996422182468694,
+      "fisher_right_tail": 0.0002465106084832628,
+      "without_407": {
+        "kind": "bigram",
+        "unit": "520-095",
+        "n_rows": 2185,
+        "unit_rows": 2,
+        "label_rows": 52,
+        "support": 1,
+        "unit_share_in_label": 0.019230769230769232,
+        "label_share_given_unit": 0.5,
+        "baseline_label_share": 0.02379862700228833,
+        "fisher_right_tail": 0.047041516835557975
+      },
+      "copper_examples": [
+        "M-2053:+407-032-520-095-585-017-220+",
+        "M-547:+407-032-520-095-585-017-231+",
+        "M-599:+408-032-520-095-585-017-220+"
+      ]
+    },
+    {
+      "kind": "unigram",
+      "unit": "407",
+      "n_rows": 2236,
+      "unit_rows": 51,
+      "label_rows": 67,
+      "support": 15,
+      "unit_share_in_label": 0.22388059701492538,
+      "label_share_given_unit": 0.29411764705882354,
+      "baseline_label_share": 0.02996422182468694,
+      "fisher_right_tail": 3.874565829298922e-12,
+      "without_407": {
+        "kind": "unigram",
+        "unit": "407",
+        "n_rows": 2185,
+        "unit_rows": 0,
+        "label_rows": 52,
+        "support": 0,
+        "unit_share_in_label": 0,
+        "label_share_given_unit": 0,
+        "baseline_label_share": 0.02379862700228833,
+        "fisher_right_tail": 1
+      },
+      "copper_examples": [
+        "M-2053:+407-032-520-095-585-017-220+",
+        "M-2054:+740-900-850-407-061-845-806+",
+        "-:+407-063-845-240-798+",
+        "-:+407-585-033-705-233-235-806+",
+        "M-507:+407-845-220-415+",
+        "M-513:+407-585-233+",
+        "M-523:+407-071-032+",
+        "M-534:+407-321-407-845-033-705-235+",
+        "M-547:+407-032-520-095-585-017-231+",
+        "M-567:+407-061-845-240-798+"
+      ]
+    }
+  ],
+  "label_shuffle_nulls": {
+    "unigram:095": {
+      "iterations": 5000,
+      "fixed_p_support_and_purity_ge_live": 0,
+      "maxstat_p_any_same_kind_support_and_purity_ge_live": 0.0002
+    },
+    "unigram:845": {
+      "iterations": 5000,
+      "fixed_p_support_and_purity_ge_live": 0,
+      "maxstat_p_any_same_kind_support_and_purity_ge_live": 0
+    },
+    "bigram:061-845": {
+      "iterations": 5000,
+      "fixed_p_support_and_purity_ge_live": 0.0002,
+      "maxstat_p_any_same_kind_support_and_purity_ge_live": 0.3008
+    },
+    "bigram:407-061": {
+      "iterations": 5000,
+      "fixed_p_support_and_purity_ge_live": 0.0052,
+      "maxstat_p_any_same_kind_support_and_purity_ge_live": 0.7214
+    },
+    "bigram:520-095": {
+      "iterations": 5000,
+      "fixed_p_support_and_purity_ge_live": 0,
+      "maxstat_p_any_same_kind_support_and_purity_ge_live": 0.0292
+    },
+    "unigram:407": {
+      "iterations": 5000,
+      "fixed_p_support_and_purity_ge_live": 0,
+      "maxstat_p_any_same_kind_support_and_purity_ge_live": 0
+    }
+  },
+  "decisions": [
+    {
+      "unit": "unigram:095",
+      "tier": "candidate",
+      "reason": "5/14 labeled Copper|TAB:C; without 407 rows 3/11; maxstat p 0.0002"
+    },
+    {
+      "unit": "unigram:845",
+      "tier": "candidate_but_407_dependent",
+      "reason": "6/15 labeled Copper|TAB:C; without 407 rows 0/4; maxstat p 0"
+    },
+    {
+      "unit": "bigram:061-845",
+      "tier": "killed_or_passenger",
+      "reason": "2/2 labeled Copper|TAB:C; without 407 rows 0/0; maxstat p 0.3008"
+    },
+    {
+      "unit": "bigram:407-061",
+      "tier": "killed_or_passenger",
+      "reason": "2/4 labeled Copper|TAB:C; without 407 rows 0/0; maxstat p 0.7214"
+    },
+    {
+      "unit": "bigram:520-095",
+      "tier": "candidate_but_407_dependent",
+      "reason": "3/5 labeled Copper|TAB:C; without 407 rows 1/2; maxstat p 0.0292"
+    },
+    {
+      "unit": "unigram:407",
+      "tier": "candidate_but_407_dependent",
+      "reason": "15/51 labeled Copper|TAB:C; without 407 rows 0/0; maxstat p 0"
+    }
+  ]
+}

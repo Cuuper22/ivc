@@ -1,0 +1,29 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "lipi_034_m2104_blind_visual_adjudication",
+  "question": "Do the two strongest public tablet-parallel crops independently show a U/pot-like unit adjacent to a four-stroke vertical group?",
+  "adjudication_rows": 8,
+  "objects_adjudicated": [
+    "M-478",
+    "M-1425"
+  ],
+  "adjudicators": [
+    "Russell",
+    "Hypatia",
+    "Kuhn",
+    "local_synthesis"
+  ],
+  "consensus_result": "M-478 A survives as the stronger four-stroke adjacent-cluster witness. M-1425 A also survives as an independent recurrence lead, but with lower confidence because the crop is blurrier and the stroke boundaries are less crisp.",
+  "live_gate_status": "parallel_four_stroke_gate_passes_provisionally",
+  "main_caution": "This accepts only a visual recurrence lead. It does not accept local token boundaries, sign values, number values, semantic function, phonetics, or translation. Higher-resolution source images are still required, especially for M-1425 and raw M-2104.",
+  "accepted_mappings": 0,
+  "accepted_decipherment_claims": 0,
+  "outputs": [
+    "data/open_prototype/reports/lipi_034_m2104_blind_visual_adjudication.csv",
+    "data/open_prototype/reports/lipi_034_m2104_blind_visual_adjudication_summary.json",
+    "tmp/cisi_m2104_packet/closeups/m478_a_u_count_closeup.png",
+    "tmp/cisi_m2104_packet/closeups/m1425_a_u_count_closeup.png",
+    "tmp/cisi_m2104_packet/closeups/m480_a_u_count_closeup.png",
+    "tmp/cisi_m2104_packet/closeups/m2104_parpola_u_count_closeup.png"
+  ]
+}

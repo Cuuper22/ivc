@@ -1,0 +1,83 @@
+{
+  "run_date": "2026-05-31",
+  "bet_id": "V2_DUAL_HEAD_REPEATED_BRANCH_SOURCE_STABILITY_20260531",
+  "vector": "V2 effective-unicity / slot grammar",
+  "confidence_tier": "candidate",
+  "risky_bet": "The dual branch-table bet should survive first on repeated branches, not singleton branches. Repeated `861` and `390` branches are the source-stability battleground.",
+  "observed": "Exact-text repeated branch classes tested: 7. Current source-pressure rows: 4; still source-gated: 3. Highest-value repeated-branch kill gates are 390|705, 861|000, and 861|096; raw-repeat-only 861|416 and 861|698 are duplicate-family checks, not exact-text repeated branches.",
+  "adversarial_test": "Collapse to repeated branch classes only, then mark which branches already have source-visible pressure versus which are still catalog-mediated. Promotion is forbidden until repeated classes source-bind without mixed terminality.",
+  "falsifier": "Any exact-text repeated branch class that becomes mixed under source-normalized token order breaks the dual-head table. The fastest kills are terminal-with-tail for 390|705 or continuation after 861|000/096; raw-repeat-only 861|416/698 can only kill duplicate-family support unless a second exact-text family appears.",
+  "next_prediction": "`390|125`, `390|095`, `861|603`, and `861|533` should survive stricter source review; the source-gated repeated branches should not introduce mixed behavior.",
+  "repeated_branches": [
+    {
+      "run_date": "2026-05-31",
+      "head": "390",
+      "branch": "095",
+      "branch_class": "closed",
+      "exact_text_count": 2,
+      "source_status": "partial_strict_source_pressure",
+      "evidence": "M-71 strict source-visible; H-1993 route-only; both terminal in metadata",
+      "promotion_or_kill_action": "H-1993 source image is the promotion gate; a continuing H-1993 kills closure class"
+    },
+    {
+      "run_date": "2026-05-31",
+      "head": "390",
+      "branch": "125",
+      "branch_class": "open",
+      "exact_text_count": 4,
+      "source_status": "partial_strict_source_pressure",
+      "evidence": "M-119 and M-735 are strict source-visible pressure; M-38 weak, Sktd-1 panel-bound; all four continue",
+      "promotion_or_kill_action": "token-box M-119/M-735 and keep Sktd-1 out of strict count until side/order stable"
+    },
+    {
+      "run_date": "2026-05-31",
+      "head": "390",
+      "branch": "705",
+      "branch_class": "closed",
+      "exact_text_count": 2,
+      "source_status": "not_source_stable_yet",
+      "evidence": "M-1825 and Dholavira 4237.1 remain source-gated; both terminal in metadata",
+      "promotion_or_kill_action": "source-bind either repeated 705 row; any tail material kills closure class"
+    },
+    {
+      "run_date": "2026-05-31",
+      "head": "861",
+      "branch": "000",
+      "branch_class": "closed",
+      "exact_text_count": 2,
+      "source_status": "not_source_stable_yet",
+      "evidence": "Ad-8 and Shikarpur row differ by site/object; no strict source-token proof here",
+      "promotion_or_kill_action": "source-bind either row; any continuation after 000 breaks closure class"
+    },
+    {
+      "run_date": "2026-05-31",
+      "head": "861",
+      "branch": "096",
+      "branch_class": "closed",
+      "exact_text_count": 2,
+      "source_status": "not_source_stable_yet",
+      "evidence": "two Mohenjo-daro ivory rod rows M-2089/M-2090; no current strict token/source adjudication here",
+      "promotion_or_kill_action": "bind rod images and check both remain terminal 002-861-096"
+    },
+    {
+      "run_date": "2026-05-31",
+      "head": "861",
+      "branch": "533",
+      "branch_class": "open",
+      "exact_text_count": 2,
+      "source_status": "source_visible_pressure",
+      "evidence": "M-376/M-391 are the accepted restricted-tail structural witnesses; here they function as open branch 533 followed by 717",
+      "promotion_or_kill_action": "guard that 533-717 remains a two-token open-tail class, not a single terminal branch"
+    },
+    {
+      "run_date": "2026-05-31",
+      "head": "861",
+      "branch": "603",
+      "branch_class": "closed",
+      "exact_text_count": 3,
+      "source_status": "source_visible_pressure",
+      "evidence": "M-240/M-714/M-1273 have prior public source-visible attachment pressure as terminal post-861 rows",
+      "promotion_or_kill_action": "tighten token boundary; any 603 row with extra tail material breaks closure class"
+    }
+  ]
+}

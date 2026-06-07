@@ -1,0 +1,190 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "lipi_034_m2104_count_compound_stress",
+  "question": "Does the local corpus support or kill the M-2104 hypothesis that 700-034 corresponds to Parpola UIII while 700-004 corresponds to UIIII?",
+  "core_result": {
+    "forward_700_034_rows": 116,
+    "reversed_034_700_rows": 14,
+    "forward_700_004_rows": 9,
+    "reversed_004_700_rows": 0,
+    "exact_097_700_034_rows": [
+      {
+        "id": "2527.1",
+        "cisi": "M-2104",
+        "site": "Mohenjo-daro",
+        "region": "Lower Indus",
+        "type": "ROD",
+        "material": "Ivory",
+        "preservation": "complete",
+        "condition": "Fair",
+        "complete": "Y",
+        "direction": "R/L",
+        "class": "VX",
+        "signs": "4",
+        "text": "+151-097-700-034+"
+      }
+    ],
+    "exact_097_700_004_rows": [
+      {
+        "id": "2962.1",
+        "cisi": "M-478",
+        "site": "Mohenjo-daro",
+        "region": "Lower Indus",
+        "type": "TAB:B",
+        "material": "Clay",
+        "preservation": "complete",
+        "condition": "Good",
+        "complete": "Y",
+        "direction": "R/L",
+        "class": "VX",
+        "signs": "4",
+        "text": "+400-097-700-004+"
+      },
+      {
+        "id": "2963.1",
+        "cisi": "M-479",
+        "site": "Mohenjo-daro",
+        "region": "Lower Indus",
+        "type": "TAB:B",
+        "material": "Clay",
+        "preservation": "complete",
+        "condition": "Good",
+        "complete": "Y",
+        "direction": "R/L",
+        "class": "VX",
+        "signs": "4",
+        "text": "+400-097-700-004+"
+      },
+      {
+        "id": "2964.1",
+        "cisi": "M-480",
+        "site": "Mohenjo-daro",
+        "region": "Lower Indus",
+        "type": "TAB:B",
+        "material": "Clay",
+        "preservation": "complete",
+        "condition": "Good",
+        "complete": "Y",
+        "direction": "R/L",
+        "class": "VX",
+        "signs": "4",
+        "text": "+400-097-700-004+"
+      },
+      {
+        "id": "3710.1",
+        "cisi": "M-1425",
+        "site": "Mohenjo-daro",
+        "region": "Lower Indus",
+        "type": "TAB:B",
+        "material": "Clay",
+        "preservation": "complete",
+        "condition": "Good",
+        "complete": "Y",
+        "direction": "R/L",
+        "class": "VX",
+        "signs": "4",
+        "text": "+400-097-700-004+"
+      }
+    ],
+    "parpola_named_rows": [
+      {
+        "id": "2527.1",
+        "cisi": "M-2104",
+        "site": "Mohenjo-daro",
+        "region": "Lower Indus",
+        "type": "ROD",
+        "material": "Ivory",
+        "preservation": "complete",
+        "condition": "Fair",
+        "complete": "Y",
+        "direction": "R/L",
+        "class": "VX",
+        "signs": "4",
+        "text": "+151-097-700-034+"
+      },
+      {
+        "id": "2962.1",
+        "cisi": "M-478",
+        "site": "Mohenjo-daro",
+        "region": "Lower Indus",
+        "type": "TAB:B",
+        "material": "Clay",
+        "preservation": "complete",
+        "condition": "Good",
+        "complete": "Y",
+        "direction": "R/L",
+        "class": "VX",
+        "signs": "4",
+        "text": "+400-097-700-004+"
+      },
+      {
+        "id": "2964.1",
+        "cisi": "M-480",
+        "site": "Mohenjo-daro",
+        "region": "Lower Indus",
+        "type": "TAB:B",
+        "material": "Clay",
+        "preservation": "complete",
+        "condition": "Good",
+        "complete": "Y",
+        "direction": "R/L",
+        "class": "VX",
+        "signs": "4",
+        "text": "+400-097-700-004+"
+      },
+      {
+        "id": "3710.1",
+        "cisi": "M-1425",
+        "site": "Mohenjo-daro",
+        "region": "Lower Indus",
+        "type": "TAB:B",
+        "material": "Clay",
+        "preservation": "complete",
+        "condition": "Good",
+        "complete": "Y",
+        "direction": "R/L",
+        "class": "VX",
+        "signs": "4",
+        "text": "+400-097-700-004+"
+      }
+    ],
+    "local_extra_same_004_family": [
+      {
+        "id": "2963.1",
+        "cisi": "M-479",
+        "site": "Mohenjo-daro",
+        "region": "Lower Indus",
+        "type": "TAB:B",
+        "material": "Clay",
+        "preservation": "complete",
+        "condition": "Good",
+        "complete": "Y",
+        "direction": "R/L",
+        "class": "VX",
+        "signs": "4",
+        "text": "+400-097-700-004+"
+      }
+    ]
+  },
+  "statistical_pressure": {
+    "prev097_among_700_004": "4/9",
+    "prev097_among_700_034": "1/116",
+    "fisher_right_tail_p_for_097_enrichment_in_700_004": 0.000062857288
+  },
+  "adjudication": {
+    "survives_as_narrow_source_target": true,
+    "upgraded_to_mapping": false,
+    "upgraded_to_count_value": false,
+    "upgraded_to_translation": false,
+    "strongest_support": "The exact suffix frame 097-700-X has M-2104 as the only 034 row and four 004 rows, all Mohenjo-daro, matching Parpola 2019 prose and named parallels; M-479 adds a local unmentioned row in the same +400-097-700-004+ family.",
+    "strongest_downgrade": "The only exact full-sequence wildcard frame containing both variants is the bare +700-X+ short-mark frame, which is dominated by Harappa tablets and is not the Parpola/M-2104 frame. The 004 evidence in the 097-700-X lane collapses to one repeated exact sequence family, while the 034 side is one source-gated M-2104 target with unresolved raw-image and five-character/four-token hazards.",
+    "safe_claim": "The M-2104 count-compound hypothesis survives as the best current 034 crosswalk target, but it is not yet an accepted mapping. It demands CISI 3.1 or equivalent raw-source confirmation for M-2104 and blind segmentation of the existing 004 parallel crops."
+  },
+  "outputs": [
+    "data/open_prototype/reports/lipi_034_m2104_count_compound_contexts.csv",
+    "data/open_prototype/reports/lipi_034_m2104_count_compound_frames.csv",
+    "data/open_prototype/reports/lipi_034_m2104_count_compound_tests.csv",
+    "data/open_prototype/reports/lipi_034_m2104_count_compound_summary.json"
+  ],
+  "accepted_decipherment_claims": 0
+}

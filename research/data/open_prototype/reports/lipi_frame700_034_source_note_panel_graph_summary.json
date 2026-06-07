@@ -1,0 +1,30 @@
+{
+  "checked_date": "2026-05-25",
+  "artifact": "lipi_frame700_034_source_note_panel_graph",
+  "note_route_rows": 8,
+  "panel_graph_rows": 9,
+  "lanes": 3,
+  "lane_readiness": {
+    "independent_low_copy_H771_H789_H1123": "blocked",
+    "strict_local_H893_H925_H930": "blocked",
+    "visual_local_H983_H353_H2211": "blocked"
+  },
+  "strict_substitution_ready_lanes": 0,
+  "target_034_rows_graph_blocked": 3,
+  "object_specific_notes_found_in_accessible_ia_ocr": 0,
+  "plate_label_hits_found": 5,
+  "detailed_catalogue_route_rows": 2,
+  "bibliographic_route_rows": 1,
+  "clean_calibration_controls": 2,
+  "blocker_counts": {
+    "subtype_direction_unaccepted": 2,
+    "true_c_side_source_hazard": 2,
+    "same_side_photo_selection": 1,
+    "source_request_only": 1,
+    "source_route_pending": 1,
+    "unresolved_numbered_groups_plus_photo_witnesses": 1,
+    "unresolved_object_number_group": 1
+  },
+  "accepted_decipherment_claims": 0,
+  "research_conclusion": "Accessible IA CISI vol.1/2 OCR yields plate-label targets but zero object-specific notes for the live blockers. The source-normalized graph has 0 substitution-ready lanes; it creates the next source requests rather than a reading."
+}

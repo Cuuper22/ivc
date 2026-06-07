@@ -1,0 +1,119 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "candidate_id": "risky_terminal_governor_unicity_block_stress_20260531",
+  "bet": "The terminal-governor effective-unicity signal is not carried only by Mohenjo-daro SEAL:S or Harappa SEAL:S blocks.",
+  "source": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\lipi\\metadata_filtered.csv",
+  "panels": [
+    {
+      "id": "all_complete_exact_text",
+      "source_rows": 3673,
+      "exact_terminal_families": 2127,
+      "target": {
+        "evaluated_rows": 456,
+        "top1_accuracy": 0.31140350877192985,
+        "top3_accuracy": 0.7872807017543859,
+        "mean_true_probability": 0.2283691937354795,
+        "mean_global_true_probability": 0.03780815401033871,
+        "mean_effective_candidates": 6.38896081349448
+      },
+      "non_target": {
+        "evaluated_rows": 1138,
+        "top1_accuracy": 0.09753954305799649,
+        "top3_accuracy": 0.1766256590509666,
+        "mean_true_probability": 0.045039514086020534,
+        "mean_global_true_probability": 0.010205115969765218,
+        "mean_effective_candidates": 15.712003184031857
+      },
+      "final_label_shuffle_null": {
+        "iterations": 100,
+        "p_ge_target_top3_accuracy": 0,
+        "p_ge_target_mean_true_probability": 0,
+        "p_le_target_mean_effective_candidates": 0
+      }
+    },
+    {
+      "id": "remove_mohenjo_seal_s",
+      "source_rows": 2821,
+      "exact_terminal_families": 1395,
+      "target": {
+        "evaluated_rows": 234,
+        "top1_accuracy": 0.31196581196581197,
+        "top3_accuracy": 0.7606837606837606,
+        "mean_true_probability": 0.2158203995184478,
+        "mean_global_true_probability": 0.03270640414318165,
+        "mean_effective_candidates": 6.270818792951412
+      },
+      "non_target": {
+        "evaluated_rows": 692,
+        "top1_accuracy": 0.07658959537572255,
+        "top3_accuracy": 0.17052023121387283,
+        "mean_true_probability": 0.04209728761361216,
+        "mean_global_true_probability": 0.010373417740049296,
+        "mean_effective_candidates": 14.521432844523035
+      },
+      "final_label_shuffle_null": {
+        "iterations": 100,
+        "p_ge_target_top3_accuracy": 0,
+        "p_ge_target_mean_true_probability": 0,
+        "p_le_target_mean_effective_candidates": 0
+      }
+    },
+    {
+      "id": "remove_harappa_seal_s",
+      "source_rows": 3467,
+      "exact_terminal_families": 1960,
+      "target": {
+        "evaluated_rows": 407,
+        "top1_accuracy": 0.33415233415233414,
+        "top3_accuracy": 0.8058968058968059,
+        "mean_true_probability": 0.235399418808285,
+        "mean_global_true_probability": 0.03598110550190571,
+        "mean_effective_candidates": 5.8814452078673565
+      },
+      "non_target": {
+        "evaluated_rows": 1010,
+        "top1_accuracy": 0.08514851485148515,
+        "top3_accuracy": 0.16831683168316833,
+        "mean_true_probability": 0.04465520974834946,
+        "mean_global_true_probability": 0.009882711798954703,
+        "mean_effective_candidates": 15.73322928989383
+      },
+      "final_label_shuffle_null": {
+        "iterations": 100,
+        "p_ge_target_top3_accuracy": 0,
+        "p_ge_target_mean_true_probability": 0,
+        "p_le_target_mean_effective_candidates": 0
+      }
+    },
+    {
+      "id": "remove_mohenjo_and_harappa_seal_s",
+      "source_rows": 2615,
+      "exact_terminal_families": 1220,
+      "target": {
+        "evaluated_rows": 185,
+        "top1_accuracy": 0.2918918918918919,
+        "top3_accuracy": 0.7783783783783784,
+        "mean_true_probability": 0.2222037043285002,
+        "mean_global_true_probability": 0.032096560564146295,
+        "mean_effective_candidates": 5.849921384954632
+      },
+      "non_target": {
+        "evaluated_rows": 606,
+        "top1_accuracy": 0.07260726072607261,
+        "top3_accuracy": 0.15841584158415842,
+        "mean_true_probability": 0.039009292494497895,
+        "mean_global_true_probability": 0.010096021436333494,
+        "mean_effective_candidates": 14.804637777037405
+      },
+      "final_label_shuffle_null": {
+        "iterations": 100,
+        "p_ge_target_top3_accuracy": 0,
+        "p_ge_target_mean_true_probability": 0,
+        "p_le_target_mean_effective_candidates": 0
+      }
+    }
+  ],
+  "decision": "survives_remove_mohenjo_seal_s_unicity_stress",
+  "caveat": "This stress keeps exact-text collapse but does not perform source-image token boxing. It is structural prediction only."
+}

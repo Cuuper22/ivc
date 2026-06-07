@@ -1,0 +1,34 @@
+{
+  "source": "H-233 public slide visual lead audit",
+  "checked_at": "2026-05-24",
+  "source_url": "https://bharatkalyan97.blogspot.com/2025/08/shapes-of-tablets-convey-information.html",
+  "images_downloaded_to_temp_only": true,
+  "images_stored_in_repo": false,
+  "candidate_images_checked": 2,
+  "h233_relevant_public_slides": [
+    {
+      "slide_index": 1,
+      "width_px": 1280,
+      "height_px": 720,
+      "bytes": 324559,
+      "sha256": "241423203f395955eba360979a37dfbf8d0a5549e786f1d20a29dc2b1eb09b2f",
+      "status": "h233_relevant_public_slide"
+    }
+  ],
+  "off_target_page_images": [
+    {
+      "slide_index": 2,
+      "width_px": 1280,
+      "height_px": 720,
+      "bytes": 265038,
+      "sha256": "f19c73db96c9d98de643d21151b70b8dcb768911aad1383cce3e6bf17e60914a",
+      "status": "off_target_page_image",
+      "reason": "Visible title and object panels target H-1997, not H-233."
+    }
+  ],
+  "key_observation": "Only one of the two public image URLs captured for H-233 is visibly H-233-relevant. The other is a same-post H-1997 slide and should be treated as an image-sweep false positive for H-233.",
+  "interpretation_boundary": "The H-233 public slide can guide source acquisition only. It accepts no side order, sign segmentation, physical side function, numerical value, metrological reading, sign meaning, phonetic value, language identity, or translation.",
+  "outputs": [
+    "data/open_prototype/reports/h233_public_slide_visual_lead_audit.csv"
+  ]
+}

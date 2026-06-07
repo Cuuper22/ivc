@@ -1,0 +1,93 @@
+{
+  "date": "2026-05-29",
+  "purpose": "Known-script scarcity calibration for the Vector 2 effective-unicity instrument. This is comparator evidence, not a decipherment.",
+  "source_files": {
+    "indus_effective_unicity": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\effective_unicity_degeneracy_summary.json",
+    "indus_curve": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\effective_unicity_degeneracy_curve.csv",
+    "linear_b_scarcity": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\linear_b_series_d_scarcity_summary.json",
+    "linear_b_gapped": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\linear_b_series_d_gapped_heldout_summary.json",
+    "linear_b_controls": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\linear_b_series_d_control_summary.csv"
+  },
+  "linear_b_source": {
+    "source_file": "data/open_prototype/known_scripts/linear_b_series_d/Samples.txt",
+    "source_md5": "0c9b9190b86840c82cafdbf4f4b8c827",
+    "source_md5_verified": true,
+    "doi": "10.5281/zenodo.7404653"
+  },
+  "primary_comparison": {
+    "indus_masked_top1": 0.279591,
+    "indus_masked_top5": 0.534096,
+    "indus_unique_signs": 571,
+    "indus_label_symmetry_log2_bits": 4410.970864,
+    "linear_b_clean_ivc_cap_bidirectional_top1": 0.435897,
+    "linear_b_clean_ivc_cap_bidirectional_top5": 0.698006,
+    "linear_b_gapped_sequence_loo_top1": 0.294314,
+    "linear_b_gapped_sequence_loo_top5": 0.638796,
+    "linear_b_ivc_cap_unique_tokens": 91,
+    "linear_b_ivc_cap_label_symmetry_log2_bits": 465.50503,
+    "linear_b_bidirectional_top1_control_max_null_ge_observed": 0
+  },
+  "interpretation": {
+    "structural_calibration": "Indus masked top-1 is close to the Linear B source-gapped sequence-leave-one-out top-1 under the same IVC p95 length cap, but below the clean Linear B bidirectional masked score and with a much larger sign inventory and label-symmetry burden.",
+    "adversarial_boundary": "This improves the Vector 2 methods note by calibrating scale against a known readable script hidden from the model. It does not identify any Indus sign, sound, word, language family, or semantic field.",
+    "acceptance_status": "Comparator evidence strengthens the live structural candidate but does not increment accepted_claim_counts because the Indus side still uses the T3 Lipi metadata layer and lacks source-image normalization and an external value anchor."
+  },
+  "rows": [
+    {
+      "system": "Indus_Lipi_strict_exact_sequence_collapsed",
+      "experiment": "leave_one_row_out_masked_sign",
+      "rows": 1798,
+      "tokens_or_gaps": 8212,
+      "unique_signs_or_tokens": 571,
+      "label_symmetry_log2_bits": 4410.970864,
+      "top1": 0.279591,
+      "top5": 0.534096,
+      "mrr": 0.400077,
+      "median_rank": "",
+      "max_control_fpr_or_null_ge_observed": 0,
+      "boundary": "unread script; internal labels only; no source-normalized value anchor"
+    },
+    {
+      "system": "Linear_B_Series_D_IVC_length_cap",
+      "experiment": "clean_masked_bidirectional_bigram",
+      "rows": 299,
+      "tokens_or_gaps": 1755,
+      "unique_signs_or_tokens": 91,
+      "label_symmetry_log2_bits": 465.50503,
+      "top1": 0.435897,
+      "top5": 0.698006,
+      "mrr": "",
+      "median_rank": "",
+      "max_control_fpr_or_null_ge_observed": 0,
+      "boundary": "known script with readings hidden; scarcity comparator only"
+    },
+    {
+      "system": "Linear_B_Series_D_IVC_length_cap",
+      "experiment": "source_provided_gapped_sequence_leave_one_out",
+      "rows": 299,
+      "tokens_or_gaps": 299,
+      "unique_signs_or_tokens": 91,
+      "label_symmetry_log2_bits": 465.50503,
+      "top1": 0.294314,
+      "top5": 0.638796,
+      "mrr": 0.454842,
+      "median_rank": 3,
+      "max_control_fpr_or_null_ge_observed": "",
+      "boundary": "known script source gaps; exact duplicate sequences removed from training"
+    },
+    {
+      "system": "Linear_B_Series_D_IVC_length_cap",
+      "experiment": "source_provided_gapped_row_leave_one_out",
+      "rows": 299,
+      "tokens_or_gaps": 299,
+      "unique_signs_or_tokens": 91,
+      "label_symmetry_log2_bits": 465.50503,
+      "top1": 0.304348,
+      "top5": 0.652174,
+      "mrr": 0.464666,
+      "median_rank": 3,
+      "max_control_fpr_or_null_ge_observed": "",
+      "boundary": "known script source gaps; only target row removed from training"
+    }
+  ]
+}

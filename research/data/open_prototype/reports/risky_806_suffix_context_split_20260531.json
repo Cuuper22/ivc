@@ -1,0 +1,159 @@
+{
+  "run_date": "2026-05-31",
+  "bet_id": "V4_806_SUFFIX_CONTEXT_SPLIT_20260531",
+  "vector": "V4 context-to-meaning",
+  "confidence_tier": "wild shot",
+  "risky_bet": "`806-465` and `806-475` may be plant-context suffixes; `806-467` is not in that class. `806-468` may be an aniconic/SEAL:R register suffix rather than a generic no-symbol marker.",
+  "observed": "465/467/475 combined: 7/14 Phyt raw, 3/10 exact-text families. By suffix exact Phyt: 465=1/1; 467=1/8; 475=1/1; 468=0/7. 468: 7/10 no-symbol seal raw, 4/7 exact-text families.",
+  "adversarial_test": "Exact-text collapse and leave-one-site/type checks. The combined plant class is poisoned by 467; the 468 no-symbol signal is partly type-driven.",
+  "falsifier": "Any source-normalized expansion where 465/475 cease being plant-heavy, or where 468 fails to concentrate in aniconic SEAL:R-like contexts, kills the suffix-context bet.",
+  "next_prediction": "`806-465` and `806-475` should remain Phyt in new rows; `806-467` should behave separately; `806-468` should predict aniconic rectangular seal context better than generic no-symbol context.",
+  "summary": [
+    {
+      "suffix": "465",
+      "raw_rows": 5,
+      "raw_phyt": 5,
+      "exact_text_families": 1,
+      "exact_phyt": 1,
+      "raw_no_symbol": 0,
+      "raw_no_symbol_seal": 0,
+      "exact_no_symbol": 0,
+      "exact_no_symbol_seal": 0,
+      "sites": "Harappa",
+      "types": "TAB:B",
+      "examples": "H-190:Harappa:TAB:B:Phyt:+158-806-465+|H-724:Harappa:TAB:B:Phyt:+158-806-465+|H-726:Harappa:TAB:B:Phyt:+158-806-465+|H-1104:Harappa:TAB:B:Phyt:+158-806-465+|H-1105:Harappa:TAB:B:Phyt:+158-806-465+"
+    },
+    {
+      "suffix": "467",
+      "raw_rows": 8,
+      "raw_phyt": 1,
+      "exact_text_families": 8,
+      "exact_phyt": 1,
+      "raw_no_symbol": 5,
+      "raw_no_symbol_seal": 3,
+      "exact_no_symbol": 5,
+      "exact_no_symbol_seal": 3,
+      "sites": "Harappa;Mohenjo-daro",
+      "types": "TAB:B;SEAL:R;SEAL:S;ROD",
+      "examples": "H-1999:Harappa:TAB:B:Mult:+400-154-806-467+|H-1979:Harappa:TAB:B:Phyt:+740-158-806-467+|H-146:Harappa:SEAL:R:NA:+154-806-467-031+|H-154:Harappa:SEAL:R:NA:+154-806-467-013-817+|M-1683:Mohenjo-daro:SEAL:S:Bull1:W:+155-806-467-001-692+|M-2091:Mohenjo-daro:ROD:NA:]000-806-467+|M-371:Mohenjo-daro:SEAL:R:NA:+617-142-384-032-154-806-467+|M-1419:Mohenjo-daro:TAB:B:NA:+400-158-806-467+"
+    },
+    {
+      "suffix": "475",
+      "raw_rows": 1,
+      "raw_phyt": 1,
+      "exact_text_families": 1,
+      "exact_phyt": 1,
+      "raw_no_symbol": 0,
+      "raw_no_symbol_seal": 0,
+      "exact_no_symbol": 0,
+      "exact_no_symbol_seal": 0,
+      "sites": "Harappa",
+      "types": "TAB:B",
+      "examples": "H-1980:Harappa:TAB:B:Phyt:+400-158-806-475+"
+    },
+    {
+      "suffix": "468",
+      "raw_rows": 10,
+      "raw_phyt": 0,
+      "exact_text_families": 7,
+      "exact_phyt": 0,
+      "raw_no_symbol": 8,
+      "raw_no_symbol_seal": 7,
+      "exact_no_symbol": 5,
+      "exact_no_symbol_seal": 4,
+      "sites": "Harappa;Mohenjo-daro",
+      "types": "SEAL:S;SEAL:R;TAG:R",
+      "examples": "H-27:Harappa:SEAL:S:Bull1:W:+154-806-468-001-740-877-032+|H-58:Harappa:SEAL:S:Bull1:W:+158-806-468-740-752-231-235+|H-152:Harappa:SEAL:R:NA:+154-806-468+|H-160:Harappa:SEAL:R:NA:+400-154-806-468+|H-670:Harappa:SEAL:R:NA:+154-806-468+|H-681:Harappa:SEAL:R:NA:+154-806-468+|M-1986:Mohenjo-daro:SEAL:R:NA:+154-806-468+|H-2584:Harappa:TAG:R:NA:]806-468-520-095-033-705[|M-1334:Mohenjo-daro:SEAL:R:NA:+154-806-468-001-000[|M-1962:Mohenjo-daro:SEAL:R:NA:+155-806-468+"
+    }
+  ],
+  "leave_one_checks": [
+    {
+      "bet_component": "465_467_475_exact_phyt",
+      "left_out_field": "site",
+      "left_out_value": "Harappa",
+      "kept_rows": 4,
+      "kept_hits": 0,
+      "kept_rate": 0
+    },
+    {
+      "bet_component": "465_467_475_exact_phyt",
+      "left_out_field": "site",
+      "left_out_value": "Mohenjo-daro",
+      "kept_rows": 6,
+      "kept_hits": 3,
+      "kept_rate": 0.5
+    },
+    {
+      "bet_component": "465_467_475_exact_phyt",
+      "left_out_field": "type",
+      "left_out_value": "ROD",
+      "kept_rows": 9,
+      "kept_hits": 3,
+      "kept_rate": 0.3333333333333333
+    },
+    {
+      "bet_component": "465_467_475_exact_phyt",
+      "left_out_field": "type",
+      "left_out_value": "SEAL:R",
+      "kept_rows": 7,
+      "kept_hits": 3,
+      "kept_rate": 0.42857142857142855
+    },
+    {
+      "bet_component": "465_467_475_exact_phyt",
+      "left_out_field": "type",
+      "left_out_value": "SEAL:S",
+      "kept_rows": 9,
+      "kept_hits": 3,
+      "kept_rate": 0.3333333333333333
+    },
+    {
+      "bet_component": "465_467_475_exact_phyt",
+      "left_out_field": "type",
+      "left_out_value": "TAB:B",
+      "kept_rows": 5,
+      "kept_hits": 0,
+      "kept_rate": 0
+    },
+    {
+      "bet_component": "468_exact_no_symbol_seal",
+      "left_out_field": "site",
+      "left_out_value": "Harappa",
+      "kept_rows": 3,
+      "kept_hits": 3,
+      "kept_rate": 1
+    },
+    {
+      "bet_component": "468_exact_no_symbol_seal",
+      "left_out_field": "site",
+      "left_out_value": "Mohenjo-daro",
+      "kept_rows": 4,
+      "kept_hits": 1,
+      "kept_rate": 0.25
+    },
+    {
+      "bet_component": "468_exact_no_symbol_seal",
+      "left_out_field": "type",
+      "left_out_value": "SEAL:R",
+      "kept_rows": 3,
+      "kept_hits": 0,
+      "kept_rate": 0
+    },
+    {
+      "bet_component": "468_exact_no_symbol_seal",
+      "left_out_field": "type",
+      "left_out_value": "SEAL:S",
+      "kept_rows": 5,
+      "kept_hits": 4,
+      "kept_rate": 0.8
+    },
+    {
+      "bet_component": "468_exact_no_symbol_seal",
+      "left_out_field": "type",
+      "left_out_value": "TAG:R",
+      "kept_rows": 6,
+      "kept_hits": 4,
+      "kept_rate": 0.6666666666666666
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+checked_date,sign,same_register_total_occurrences,target_frame_occurrences,target_frame_terminal,target_frame_open,target_frame_terminal_rate,strict_target_occurrences,strict_target_terminal,strict_target_open,strict_target_terminal_rate,outside_frame_occurrences,outside_terminal,outside_open,outside_terminal_rate,decision
+2026-05-31,125,23,3,0,3,0/3,2,0,2,0/2,20,7,13,7/20,keep_125_frame_open_residual; kill_intrinsic_open_value
+2026-05-31,095,1,1,1,0,1/1,1,1,0,1/1,0,0,0,0/0,keep_m71_terminal_only; no_same_register_background_test
+2026-05-31,692,31,1,1,0,1/1,1,1,0,1/1,30,21,9,21/30,keep_weak_terminal_branch; demote_as_background_terminal_biased

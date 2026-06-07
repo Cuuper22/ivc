@@ -1,0 +1,299 @@
+{
+  "generated_at": "2026-05-25",
+  "input_packet_rows": 141,
+  "acquisition_artifacts": 140,
+  "counts_by_primary_bucket": {
+    "E_other_034_residue": 55,
+    "D_032_control": 28,
+    "C_033_400_740_176_sibling": 19,
+    "A_034_no_longer_small_object": 13,
+    "A_034_direction_reversal": 12,
+    "B_034_400_740_176_bridge": 8,
+    "A_034_002_861_416_companion": 5
+  },
+  "counts_by_source_route": {
+    "direct_CISI_HARP_plate_request": 128,
+    "use_text_lead_as_bibliographic_pointer_then_CISI_HARP_plate": 9,
+    "verify_public_direction_lead_then_CISI_HARP_plate": 2,
+    "inspect_public_image_pointer_then_CISI_HARP_plate": 1
+  },
+  "counts_by_evidence_grade_now": {
+    "no_public_lead_source_required": 128,
+    "T4_text_pointer_not_source_validated": 9,
+    "T2/T4_lead_not_source_validated": 2,
+    "T4_image_pointer_not_source_validated": 1
+  },
+  "top_acquisition_artifacts": [
+    {
+      "acquisition_rank": 1,
+      "cisi": "H-2094",
+      "primary_bucket": "A_034_002_861_416_companion",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "H2001-5134",
+      "figure_refs": "Figure 47.02",
+      "short_texts": "476.1:+700-034+",
+      "longer_texts": "+002-861-416+"
+    },
+    {
+      "acquisition_rank": 2,
+      "cisi": "H-2097",
+      "primary_bucket": "A_034_002_861_416_companion",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "H2001-5193",
+      "figure_refs": "Figure 48.02",
+      "short_texts": "488.1:+034-700+",
+      "longer_texts": "+002-861-416+"
+    },
+    {
+      "acquisition_rank": 3,
+      "cisi": "H-2096",
+      "primary_bucket": "A_034_002_861_416_companion",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "H95-2488",
+      "figure_refs": "",
+      "short_texts": "665.1:+700-034+",
+      "longer_texts": "+002-861-416+"
+    },
+    {
+      "acquisition_rank": 4,
+      "cisi": "H-910",
+      "primary_bucket": "A_034_002_861_416_companion",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "10994470",
+      "figure_refs": "",
+      "short_texts": "1792.2:+700-034+",
+      "longer_texts": "+002-861-416+"
+    },
+    {
+      "acquisition_rank": 5,
+      "cisi": "H-2095",
+      "primary_bucket": "A_034_002_861_416_companion",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "H90-1688",
+      "figure_refs": "Figure 13.44 (d)",
+      "short_texts": "518.1:+700-034+",
+      "longer_texts": "+002-861-416+"
+    },
+    {
+      "acquisition_rank": 6,
+      "cisi": "H-307",
+      "primary_bucket": "A_034_no_longer_small_object",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "1963",
+      "figure_refs": "",
+      "short_texts": "1329.2:+700-034+",
+      "longer_texts": "NO_LONGER_TEXT"
+    },
+    {
+      "acquisition_rank": 7,
+      "cisi": "H-947",
+      "primary_bucket": "A_034_no_longer_small_object",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "8650b493",
+      "figure_refs": "",
+      "short_texts": "1827.2:+700-034+",
+      "longer_texts": "NO_LONGER_TEXT"
+    },
+    {
+      "acquisition_rank": 8,
+      "cisi": "H-952",
+      "primary_bucket": "A_034_no_longer_small_object",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "G257469",
+      "figure_refs": "",
+      "short_texts": "1832.2:+700-034+",
+      "longer_texts": "NO_LONGER_TEXT"
+    },
+    {
+      "acquisition_rank": 9,
+      "cisi": "H-1828",
+      "primary_bucket": "A_034_no_longer_small_object",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "H97-3371",
+      "figure_refs": "Figure 14.12",
+      "short_texts": "895.2:+700-034+",
+      "longer_texts": "NO_LONGER_TEXT"
+    },
+    {
+      "acquisition_rank": 10,
+      "cisi": "H-1829",
+      "primary_bucket": "A_034_no_longer_small_object",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "H97-3365",
+      "figure_refs": "Figure 14.13",
+      "short_texts": "890.2:+700-034+",
+      "longer_texts": "NO_LONGER_TEXT"
+    },
+    {
+      "acquisition_rank": 11,
+      "cisi": "H-1830",
+      "primary_bucket": "A_034_no_longer_small_object",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "H96-3052",
+      "figure_refs": "Figure 21.11",
+      "short_texts": "773.1:+700-034+",
+      "longer_texts": "NO_LONGER_TEXT"
+    },
+    {
+      "acquisition_rank": 12,
+      "cisi": "H-1831",
+      "primary_bucket": "A_034_no_longer_small_object",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "H96-3051",
+      "figure_refs": "Figure 21.10",
+      "short_texts": "772.1:+700-034+",
+      "longer_texts": "NO_LONGER_TEXT"
+    },
+    {
+      "acquisition_rank": 13,
+      "cisi": "H-1907",
+      "primary_bucket": "A_034_no_longer_small_object",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "H96-2768",
+      "figure_refs": "Figure 21.07",
+      "short_texts": "743.2:+700-034+",
+      "longer_texts": "NO_LONGER_TEXT"
+    },
+    {
+      "acquisition_rank": 14,
+      "cisi": "H-2155",
+      "primary_bucket": "A_034_no_longer_small_object",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "H96-3173",
+      "figure_refs": "Figure 19.12",
+      "short_texts": "812.1:+700-034+",
+      "longer_texts": "NO_LONGER_TEXT"
+    },
+    {
+      "acquisition_rank": 15,
+      "cisi": "H-788",
+      "primary_bucket": "A_034_no_longer_small_object",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "558683",
+      "figure_refs": "",
+      "short_texts": "1679.2:+700-034+",
+      "longer_texts": "NO_LONGER_TEXT"
+    },
+    {
+      "acquisition_rank": 16,
+      "cisi": "H-953",
+      "primary_bucket": "A_034_no_longer_small_object",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "13395",
+      "figure_refs": "",
+      "short_texts": "1833.1:+700-034+",
+      "longer_texts": "NO_LONGER_TEXT"
+    },
+    {
+      "acquisition_rank": 17,
+      "cisi": "H-2105",
+      "primary_bucket": "A_034_no_longer_small_object",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "H95-2428",
+      "figure_refs": "Figure 27.13",
+      "short_texts": "642.2:+700-034+",
+      "longer_texts": "NO_LONGER_TEXT"
+    },
+    {
+      "acquisition_rank": 18,
+      "cisi": "H-285",
+      "primary_bucket": "A_034_no_longer_small_object",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "J581406",
+      "figure_refs": "",
+      "short_texts": "1307.2:+700-034+",
+      "longer_texts": "NO_LONGER_TEXT"
+    },
+    {
+      "acquisition_rank": 19,
+      "cisi": "H-945",
+      "primary_bucket": "A_034_direction_reversal",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "2698503",
+      "figure_refs": "",
+      "short_texts": "1825.2:+034-700+",
+      "longer_texts": "NO_LONGER_TEXT"
+    },
+    {
+      "acquisition_rank": 20,
+      "cisi": "H-2154",
+      "primary_bucket": "A_034_direction_reversal",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "H96-3176",
+      "figure_refs": "Figure 19.03",
+      "short_texts": "815.1:+034-700+",
+      "longer_texts": "NO_LONGER_TEXT"
+    },
+    {
+      "acquisition_rank": 21,
+      "cisi": "H-933",
+      "primary_bucket": "A_034_direction_reversal",
+      "source_route": "use_text_lead_as_bibliographic_pointer_then_CISI_HARP_plate",
+      "excavation_ids": "G252",
+      "figure_refs": "",
+      "short_texts": "1813.1:+034-700+",
+      "longer_texts": "+400-740-176+"
+    },
+    {
+      "acquisition_rank": 22,
+      "cisi": "H-1880",
+      "primary_bucket": "A_034_direction_reversal",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "H97-3289",
+      "figure_refs": "Figure 14.10",
+      "short_texts": "831.1:+034-700+",
+      "longer_texts": "+520-033-033+"
+    },
+    {
+      "acquisition_rank": 23,
+      "cisi": "H-2208",
+      "primary_bucket": "A_034_direction_reversal",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "H94-2179",
+      "figure_refs": "Figure 27.04",
+      "short_texts": "549.1:+034-700+",
+      "longer_texts": "+400-740-032-027+"
+    },
+    {
+      "acquisition_rank": 24,
+      "cisi": "H-1877",
+      "primary_bucket": "A_034_direction_reversal",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "H2000-4428",
+      "figure_refs": "Figure 41.06",
+      "short_texts": "396.1:+034-700+",
+      "longer_texts": "+400-775-516+"
+    },
+    {
+      "acquisition_rank": 25,
+      "cisi": "H-358",
+      "primary_bucket": "A_034_direction_reversal",
+      "source_route": "direct_CISI_HARP_plate_request",
+      "excavation_ids": "11390579",
+      "figure_refs": "",
+      "short_texts": "1377.2:+034-700+",
+      "longer_texts": "+400-156-435-255+"
+    }
+  ],
+  "immediate_request_batch": [
+    "H-2094: H2001-5134 Figure 47.02",
+    "H-2097: H2001-5193 Figure 48.02",
+    "H-2096: H95-2488",
+    "H-910: 10994470",
+    "H-2095: H90-1688 Figure 13.44 (d)",
+    "H-307: 1963",
+    "H-947: 8650b493",
+    "H-952: G257469",
+    "H-1828: H97-3371 Figure 14.12",
+    "H-1829: H97-3365 Figure 14.13",
+    "H-1830: H96-3052 Figure 21.11",
+    "H-1831: H96-3051 Figure 21.10",
+    "H-1907: H96-2768 Figure 21.07",
+    "H-2155: H96-3173 Figure 19.12",
+    "H-788: 558683",
+    "H-953: 13395",
+    "H-2105: H95-2428 Figure 27.13",
+    "H-285: J581406"
+  ],
+  "source_check_status": "source_acquisition_manifest_only_source_images_not_validated"
+}

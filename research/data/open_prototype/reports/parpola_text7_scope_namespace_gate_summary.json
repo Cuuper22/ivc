@@ -1,0 +1,69 @@
+{
+  "question": "Can Parpola 2019 text no. 7 bridge the H-940/H-2147/H-2148 obverse recurrence and M-77, or does it expose a sign-list/scope problem?",
+  "result": "It exposes a sign-list and scope problem. Parpola text no. 7 is source-located as M-2109/M-2111 in Figure 1 and is explicitly standardized rather than raw rod imagery. Parpola says sign no. 107 ends text no. 7, later says text no. 7 is not as such attested in seals and that M-35 is the seal form without final 107, while the earlier recurrence paragraph also names M-77. The local Lipi and Mayig layers do not line these claims up as exact strings: M-2109/M-2111 are +400-000-220-415+, H companions are +520-220-415+ or stress variants, M-35 is seven signs, and M-77 is five signs.",
+  "status": "text7_scope_namespace_unresolved",
+  "source_urls": {
+    "parpola_2019_pdf": "https://tuhat.helsinki.fi/ws/portalfiles/portal/129602857/Parpola_A_2019_Inscriptions_incised_on_the_Harappan_bone_rods_Proceedings_of_EASAA_22.pdf"
+  },
+  "source_crops": [
+    {
+      "role": "parpola_2019_figure1_text_no_7",
+      "path": "tmp/parpola_text7_scope_gate/derived/parpola2019_fig1_text_no7_m2109_m2111_crop.png",
+      "width": 720,
+      "height": 115,
+      "sha256": "499E8C9BE501380693030BB9ACF0C8EB0678F8F01D8892E52159A75E04C6BBD6"
+    }
+  ],
+  "parpola_constraints": {
+    "figure_policy": "Figure 1 uses standardized signs and not actual rod shapes; actual shapes require CISI photos.",
+    "text_no_7_ids": ["M-2109", "M-2111"],
+    "text_no_7_sequence_status": "Figure 1 row 7 gives visual standardized signs, but the prose does not provide a full explicit numeric sequence for text no. 7.",
+    "text_no_7_final": "Parpola sign no. 107 uniquely ends text no. 7.",
+    "h_controls": "Without sign no. 107, the remaining part occurs on H-938/H-939/H-1284/H-2145; H-940/H-2147/H-2148 have sign no. 41 on reverse and related obverse text.",
+    "seal_scope": "Conclusion says text no. 7 is not as such attested in seals; without the last sign it forms M-35. Earlier recurrence paragraph names M-77 in the H-obverse context."
+  },
+  "local_rows": {
+    "M-2109": ["4042.1 +400-000-220-415+"],
+    "M-2111": ["4044.1 +400-000-220-415+"],
+    "H-2148": ["481.1 +520-220-415+", "481.2 +110+"],
+    "H-940": ["1820.1 +520-220-415+", "1820.2 +110+"],
+    "H-942": ["1822.1 +520-220-016+", "1822.2 +033-700+"],
+    "H-2240": ["816.1 +520-220-415+", "816.2 +869-575+"],
+    "H-2241": ["639.1 ]415-240+", "639.2 ]000+"],
+    "M-35": ["2563.1 +740-390-590-233-231-002-107+"],
+    "M-77": ["2604.1 +832-390-803-002-861+"]
+  },
+  "mayig_overlap": {
+    "M-35A": "P324 P086 P276 P058 P056 P122 P007",
+    "M-77A": "P366 P086 P364 P122 P385"
+  },
+  "decisions": {
+    "parpola_text7_source_located": "accepted",
+    "parpola_text7_standardized_not_raw": "accepted",
+    "parpola107_equals_local107": "unaccepted",
+    "parpola189_equals_local415_or_016": "unaccepted",
+    "local_text7_equals_h_companion": "rejected_current_layer",
+    "m77_exact_h_companion": "rejected_current_layer",
+    "m35_exact_text7_minus107_by_local_numbers": "unaccepted",
+    "translation": "unaccepted"
+  },
+  "accepted_claims": {
+    "parpola_text7_figure_located": true,
+    "parpola_text7_ids_m2109_m2111": true,
+    "parpola_text7_standardized_not_raw": true,
+    "parpola_text7_ends_parpola107": true,
+    "parpola_text7_not_as_such_attested_in_seals": true,
+    "parpola_names_m35_as_without107_seal": true,
+    "parpola_names_m77_in_h_obverse_recurrence": true,
+    "local_m2109_m2111_equal_h_companion": false,
+    "local_m77_equal_h_companion": false,
+    "parpola107_equals_local107": false,
+    "parpola189_equals_local415": false,
+    "parpola189_equals_local016": false,
+    "m77_token_mapping": false,
+    "sign_value": false,
+    "phonetic_value": false,
+    "translation": false
+  },
+  "next_gate": "Acquire or locate a sign-number transcription bridge for Parpola text no. 7, M-35, M-77, and the H obverse controls. Keep H-2148 reverse sign-no.-41 same-side identity separate from this obverse recurrence scope problem."
+}

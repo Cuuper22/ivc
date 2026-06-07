@@ -1,0 +1,24 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "candidate_id": "risky_740405_c87_exception_adjudication_20260531",
+  "bet_under_test": "740-405 obligatorily selects 590 as part of the 740-H-590 sibling family.",
+  "exception": {
+    "row": "57.1",
+    "cisi": "C-87",
+    "text": "+740-405+",
+    "site": "Chanhu-daro",
+    "type": "TAG:P",
+    "shape": "circular",
+    "material": "Clay",
+    "metadata_condition": "Fair",
+    "metadata_complete": "Y",
+    "metadata_direction": "R/L",
+    "metadata_signs": "2"
+  },
+  "source_search_result": "No local image was found for C-87 in the available Yajnadevam trace cache. Metadata row explicitly marks the object complete and two-sign.",
+  "decision": "demote_740405_from_obligatory_sibling_to_probabilistic_context_branch",
+  "reason": "The C-87 exception is complete-looking in metadata and belongs to a different object class, so 740-405 may select 590 in seal/tablet contexts but not as an unconditional formula.",
+  "surviving_claim": "740-405 selects 590 in 21/22 raw rows and 15/16 exact-collapsed cells, but the exception blocks strict inclusion in the same class as 741-060-920.",
+  "next_destructive_test": "Separate 740-H rows by object type before comparing H=390/407/405; the tag/circular exception may be a context override rather than damage."
+}

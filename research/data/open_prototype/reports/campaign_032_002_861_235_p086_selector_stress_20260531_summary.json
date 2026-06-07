@@ -1,0 +1,117 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "235_p086_selector_stress",
+  "hypothesis_tested": "`235` selects `125` only in interaction with P086-family heads (`390/405`), not as a generic left-stem or generic open-head effect.",
+  "totals": {
+    "all_002_frames": 699,
+    "prev235_frames": 38,
+    "prev235_p086_frames": 3,
+    "prev235_closure_frames": 22,
+    "prev235_broad_open_nonp086_frames": 4
+  },
+  "key_contrasts": [
+    {
+      "checked_date": "2026-05-31",
+      "contrast": "within_235_p086_vs_closure",
+      "group_a_rows": "3",
+      "group_a_has125": "3",
+      "group_a_rate": "1.000000",
+      "group_b_rows": "22",
+      "group_b_has125": "0",
+      "group_b_rate": "0.000000",
+      "fisher_greater_p": "0.000435",
+      "group_a_objects": "M-38:390:125 632 032;M-41:405:125 820;M-735:390:125 195",
+      "group_b_objects": "C-58:861:<END>;H-1050:817:<END>;H-12:817:<END>;H-42:817:<END>;H-478:817:<END>;L-89:861:<END>;L-191:861:<END>;M-1778:861:<END>;M-1693:817:<END>;M-1842:861:<END>;M-47:861:<END>;M-314:820:<END>;M-355:861:360 520 919 140;M-653:861:<END>;M-703:817:<END>;M-897:817:<END>;M-934:861:<END>;M-1152:861:<END>;M-1343:861:<END>;-:3896.1:820:<END>;H-1048:817:<END>;-:4211.1:817:<END>",
+      "interpretation": "`235-002-390/405` selects `125` while `235-002-817/820/861` closes without it."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "contrast": "within_235_p086_vs_generic_broad_open",
+      "group_a_rows": "3",
+      "group_a_has125": "3",
+      "group_a_rate": "1.000000",
+      "group_b_rows": "4",
+      "group_b_has125": "0",
+      "group_b_rate": "0.000000",
+      "fisher_greater_p": "0.028571",
+      "group_a_objects": "M-38:390:125 632 032;M-41:405:125 820;M-735:390:125 195",
+      "group_b_objects": "H-389:031:480 625;M-46:220:065 215;M-66:374:309 350;M-1386:031:480",
+      "interpretation": "Kills broad open-head version: non-P086 open heads after `235-002` do not select `125` here."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "contrast": "within_p086_prev235_vs_not_prev235",
+      "group_a_rows": "3",
+      "group_a_has125": "3",
+      "group_a_rate": "1.000000",
+      "group_b_rows": "16",
+      "group_b_has125": "2",
+      "group_b_rate": "0.125000",
+      "fisher_greater_p": "0.010320",
+      "group_a_objects": "M-38:390:125 632 032;M-41:405:125 820;M-735:390:125 195",
+      "group_b_objects": "H-1993:390:095;H-22:405:321;H-68:390:072;H-1155:405:501;H-773:390:530 741;M-34:405:372 374;M-70:390:692;M-71:390:095;M-119:390:125 632 032 900 563;M-213:390:346;M-232:390:707;M-708:390:140;-:3335.1:390:590 032;Sktd-1:390:125 820;M-1825:390:705;-:4237.1:390:705",
+      "interpretation": "Tests whether `235` is doing work inside P086 heads rather than `390/405` generally selecting `125`."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "contrast": "within_p086_extension_prev235_vs_not_prev235",
+      "group_a_rows": "4",
+      "group_a_has125": "4",
+      "group_a_rate": "1.000000",
+      "group_b_rows": "16",
+      "group_b_has125": "2",
+      "group_b_rate": "0.125000",
+      "fisher_greater_p": "0.003096",
+      "group_a_objects": "Lh-1:392:590 125;M-38:390:125 632 032;M-41:405:125 820;M-735:390:125 195",
+      "group_b_objects": "H-1993:390:095;H-22:405:321;H-68:390:072;H-1155:405:501;H-773:390:530 741;M-34:405:372 374;M-70:390:692;M-71:390:095;M-119:390:125 632 032 900 563;M-213:390:346;M-232:390:707;M-708:390:140;-:3335.1:390:590 032;Sktd-1:390:125 820;M-1825:390:705;-:4237.1:390:705",
+      "interpretation": "Same contrast if `392-590-125` is allowed as a wild P086 extension."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "contrast": "within_235_p086_extension_vs_closure",
+      "group_a_rows": "4",
+      "group_a_has125": "4",
+      "group_a_rate": "1.000000",
+      "group_b_rows": "22",
+      "group_b_has125": "0",
+      "group_b_rate": "0.000000",
+      "fisher_greater_p": "0.000067",
+      "group_a_objects": "Lh-1:392:590 125;M-38:390:125 632 032;M-41:405:125 820;M-735:390:125 195",
+      "group_b_objects": "C-58:861:<END>;H-1050:817:<END>;H-12:817:<END>;H-42:817:<END>;H-478:817:<END>;L-89:861:<END>;L-191:861:<END>;M-1778:861:<END>;M-1693:817:<END>;M-1842:861:<END>;M-47:861:<END>;M-314:820:<END>;M-355:861:360 520 919 140;M-653:861:<END>;M-703:817:<END>;M-897:817:<END>;M-934:861:<END>;M-1152:861:<END>;M-1343:861:<END>;-:3896.1:820:<END>;H-1048:817:<END>;-:4211.1:817:<END>",
+      "interpretation": "The permissive family `390/405/392` remains clean against closure heads, but `392` is not promoted."
+    }
+  ],
+  "minimal_contrast": "M-47 and M-735 share `740-760-235-002`; M-47 goes to closure head `861` and closes, while M-735 goes to `390-125-195` and continues.",
+  "decisions": [
+    {
+      "checked_date": "2026-05-31",
+      "named_bet": "`235 + P086 head(390/405)` selects `125` rank/title branch",
+      "tier_after_test": "candidate",
+      "evidence": "`235-002-390/405` is 3/3 for tails containing `125`; exact-canonical `235-002-817/820/861` is 0/22; Fisher greater p=0.000435.",
+      "adversary": "`235` alone is not enough: closure heads and generic open heads after `235-002` mostly do not take `125`.",
+      "falsifier_or_rescue": "A comparable `235-002-390/405` row without `125` demotes the rule; another strict positive outside Mohenjo-daro promotes it."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "named_bet": "Any open head after `235-002` selects `125`",
+      "tier_after_test": "dead",
+      "evidence": "Non-P086 open heads after `235-002` are 0/4 for `125`: heads `031`, `220`, and `374` do not carry it.",
+      "adversary": "This blocks the lazy reading that terminality/open-headedness alone explains the `125` branch.",
+      "falsifier_or_rescue": "A future broad-open non-P086 cluster selecting `125` would revive a larger open-head rule, but current evidence kills it."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "named_bet": "`392-590-125` is part of the P086 selector family",
+      "tier_after_test": "wild_extension_only",
+      "evidence": "Allowing `392` makes `235-002-390/405/392` 4/4 for `125`, but `392` has only one row and no current P086 crosswalk support.",
+      "adversary": "`392` may simply be a separate low-count head with terminal `125`, not evidence for the same family.",
+      "falsifier_or_rescue": "A second `392` row with the same `590-125` tail or independent crosswalk evidence promotes it to candidate."
+    }
+  ],
+  "confidence_after_test": {
+    "235_p086_125_selector": "candidate_strengthened_not_promoted",
+    "235_generic_125_selector": "dead",
+    "open_head_generic_125_selector": "dead",
+    "392_p086_extension": "wild_extension_only"
+  }
+}

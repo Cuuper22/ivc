@@ -1,0 +1,95 @@
+{
+  "date": "2026-05-24",
+  "purpose": "Choose the first known-script scarcity comparator for the IVC Egyptian-grade accuracy target.",
+  "sources_checked": [
+    {
+      "name": "Coptic SCRIPTORIUM corpora",
+      "url": "https://github.com/CopticScriptorium/corpora",
+      "role": "Egyptian/Coptic continuity upper bound"
+    },
+    {
+      "name": "Coptic SCRIPTORIUM data site",
+      "url": "https://data.copticscriptorium.org/",
+      "role": "current citable Coptic data interface"
+    },
+    {
+      "name": "Mycenean Linear B sequences - series D",
+      "url": "https://zenodo.org/records/7404653",
+      "role": "first known-script scarcity comparator"
+    },
+    {
+      "name": "SumTablets GitHub",
+      "url": "https://github.com/colesimmons/SumTablets",
+      "role": "large administrative comparator"
+    },
+    {
+      "name": "SumTablets arXiv paper",
+      "url": "https://arxiv.org/abs/2602.22200",
+      "role": "large administrative comparator method/source description"
+    }
+  ],
+  "first_comparator_to_run": "Linear B Series D",
+  "first_comparator_reason": [
+    "small open dataset",
+    "known deciphered logo-syllabic administrative script",
+    "short sequence setting aligns with current IVC structural layer",
+    "clean row-range distinction between 513 real sequences, 725 augmented sequences, and 1327 duplicate rows",
+    "dataset task is masked symbol prediction, which matches current A2 structural evaluation"
+  ],
+  "linear_b_clean_policy": {
+    "source": "https://zenodo.org/records/7404653",
+    "doi": "10.5281/zenodo.7404653",
+    "version": "1.0",
+    "file": "Samples.txt",
+    "reported_file_size": "103.3 kB",
+    "reported_md5": "0c9b9190b86840c82cafdbf4f4b8c827",
+    "license": "CC-BY 4.0",
+    "reported_total_sequences": 2565,
+    "real_series_d_rows": 513,
+    "augmented_rows": 725,
+    "duplicate_rows": 1327,
+    "default_allowed_rows": "first 513 real Series D tablet sequences",
+    "default_excluded_rows": "725 augmented rows and 1327 duplicate rows unless explicitly used in stress conditions"
+  },
+  "coptic_policy": {
+    "role": "continuity upper bound",
+    "formats": [
+      "CoNLL-U",
+      "relANNIS",
+      "PAULA XML",
+      "TEI XML",
+      "TreeTagger SGML"
+    ],
+    "annotation_quality_values": [
+      "automatic",
+      "checked",
+      "gold"
+    ],
+    "main_caveat": "Coptic gives linguistic continuity and richer translation infrastructure that IVC lacks."
+  },
+  "sumtablets_policy": {
+    "role": "large administrative comparator after Linear B",
+    "reported_tablets": 91606,
+    "reported_glyphs": 6970407,
+    "fields": [
+      "id",
+      "glyphs",
+      "transliteration",
+      "glyph_names",
+      "period",
+      "genre"
+    ],
+    "main_caveat": "Transliteration labels must be hidden for IVC-like scarcity tests, and the Hugging Face dataset revision must be pinned."
+  },
+  "next_experiment": "E5.3a Linear B Series D Scarcity Baseline",
+  "source_validation_fields_filled_for_ivc": 0,
+  "interpretation_status": "comparator_acquisition_only_no_ivc_reading",
+  "boundary": [
+    "no IVC side relation accepted",
+    "no IVC sign segmentation accepted",
+    "no IVC semantic field accepted",
+    "no IVC phonetic value accepted",
+    "no IVC language identity accepted",
+    "no IVC translation accepted"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "run_date": "2026-05-31",
+  "bet_id": "V3_RA_LIKE_002_861_BRANCH_PAIR_20260531",
+  "vector": "V3 backward Brahmi / descendant morphology",
+  "confidence_tier": "wild shot",
+  "risky_bet": "`002` and `861` are a ra-like graphic pair that later converges on Brahmi `ra`, and their shared branch-grammar behavior is why both surfaced in the low-impostor descent screen.",
+  "observed": "002 best Brahmi row: modal ra/ra, impostor FPR 0.000000, shape-null 0.196304, label-null 0.024000, terminal rate 0.045. 861 best Brahmi row: modal ra/ra, impostor FPR 0.000000, shape-null 0.145556, label-null 0.074000, terminal rate 0.636, 002-head determinism p 0.003. Ra-like low-impostor rows in whole screen: 14; impostor<=0.001 rows: 16.",
+  "adversarial_test": "Positive bet is tied to the real-token impostor screen plus corpus role. It is explicitly failed by shape-null, label-null, duplicate-unanimity, and v3 preflight, so it stays below candidate.",
+  "false_positive_rate": "not_admissible_as_anchor",
+  "falsifier": "Any independent source-token rerun moving either 002 or 861 away from ra-like modal labels, or showing the branch grammar is not source-stable, kills the pair. Passing duplicate collapse and shape/label nulls would be required before promotion.",
+  "next_prediction": "If this wild shot is real, new source-normalized tokens for 002 and 861 should keep ra-like graphic nearest neighbors, while other deterministic heads such as 390 should not necessarily be ra-like.",
+  "signs": [
+    {
+      "sign": "002",
+      "modal_brahmi_label": "ra",
+      "v3_cisi_modal_label": "ra",
+      "impostor_ge_observed_share": "0.000000",
+      "original_shape_null_share": "0.196304",
+      "original_label_null_share": "0.024000",
+      "unique_cisi_count": "11",
+      "fail_duplicate_unanimity": "true",
+      "total_occurrences": 851,
+      "initial_rate": 0.07520564042303172,
+      "terminal_rate": 0.04465334900117509,
+      "after_002_head_rows": 2,
+      "head_branch_rows": "1",
+      "head_branch_count": "1",
+      "head_determinism_p": "",
+      "exact_text_head_determinism_p": ""
+    },
+    {
+      "sign": "861",
+      "modal_brahmi_label": "ra",
+      "v3_cisi_modal_label": "ra",
+      "impostor_ge_observed_share": "0.000000",
+      "original_shape_null_share": "0.145556",
+      "original_label_null_share": "0.074000",
+      "unique_cisi_count": "5",
+      "fail_duplicate_unanimity": "true",
+      "total_occurrences": 272,
+      "initial_rate": 0.17279411764705882,
+      "terminal_rate": 0.6360294117647058,
+      "after_002_head_rows": 174,
+      "head_branch_rows": "34",
+      "head_branch_count": "23",
+      "head_determinism_p": "0.003",
+      "exact_text_head_determinism_p": "0.04606"
+    }
+  ]
+}

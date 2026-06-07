@@ -1,0 +1,27 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_465_terminal_subseries_probe_20260531",
+  "tier": "wild_shot_killed_by_duplicate_pressure",
+  "bet": "Within the 806 prefix-series, successor 465 is a terminal cap specific to the 158/TAB:B/Phyt lane.",
+  "counts": {
+    "target_465_raw_n": 5,
+    "target_465_terminal": 5,
+    "target_465_prev158": 5,
+    "target_465_tab_b": 5,
+    "target_465_phyt": 5,
+    "non465_raw_n": 27,
+    "non465_terminal": 15,
+    "terminal_fisher_right_tail": 0.07699030668997342,
+    "target_exact_text_site_type_symbol_dedup_n": 1
+  },
+  "target_rows": [
+    "H-190 +158-806-465+ Harappa TAB:B Phyt",
+    "H-724 +158-806-465+ Harappa TAB:B Phyt",
+    "H-726 +158-806-465+ Harappa TAB:B Phyt",
+    "H-1104 +158-806-465+ Harappa TAB:B Phyt",
+    "H-1105 +158-806-465+ Harappa TAB:B Phyt"
+  ],
+  "decision": "kill_as_promoted_candidate_keep_as_source_family_lead",
+  "why": "Raw 465 is perfect, but exact text/site/type/symbol collapse reduces it to one family cell. It remains a wild shot source-family lead, not a general sign-function candidate."
+}

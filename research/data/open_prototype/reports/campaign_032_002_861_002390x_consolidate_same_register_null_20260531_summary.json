@@ -1,0 +1,51 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "same_register_null_against_local_parser",
+  "same_register_scope": "Mohenjo-daro|SEAL:S|square|Steatite",
+  "same_register_rows": 952,
+  "local_branch_shell": {
+    "frames": 8,
+    "x125_terminal_rate": "0/3",
+    "non125_terminal_rate": "5/5",
+    "strict_x125_terminal_rate": "0/2",
+    "strict_non125_terminal_rate": "2/2",
+    "open_rows": 3,
+    "exact_partition_probability_if_open_rows_random": "1/56",
+    "compact_rule": "local 002-390-125 continues; local 002-390-non125 terminates",
+    "tier": "125 half promoted local candidate; non125 half candidate due metadata-only singleton extension"
+  },
+  "signs": {
+    "125": {
+      "target_frame_terminal_rate": "0/3",
+      "strict_target_terminal_rate": "0/2",
+      "outside_terminal_rate": "7/20",
+      "decision": "keep_125_frame_open_residual; kill_intrinsic_open_value"
+    },
+    "692": {
+      "target_frame_terminal_rate": "1/1",
+      "strict_target_terminal_rate": "1/1",
+      "outside_terminal_rate": "21/30",
+      "decision": "keep_weak_terminal_branch; demote_as_background_terminal_biased"
+    },
+    "095": {
+      "target_frame_terminal_rate": "1/1",
+      "strict_target_terminal_rate": "1/1",
+      "outside_terminal_rate": "0/0",
+      "decision": "keep_m71_terminal_only; no_same_register_background_test"
+    }
+  },
+  "decisions": [
+    "Keep the local Mohenjo-daro square steatite 002-390-X parser as syntax, not script grammar.",
+    "Promote no semantics: same-register outside behavior is mixed and source-mixed.",
+    "Make 125 the only strong residual: 002-390-125 is open/continuing inside the target frame while outside 125 can be terminal.",
+    "Demote 692 closure from frame-specific to background-biased terminal sign behavior until stricter outside controls are source-checked.",
+    "Leave 095 as M-71-only terminal syntax because there is no same-register outside 095 comparator."
+  ],
+  "contradiction_results": {
+    "SAME_REGISTER_LAYOUT_NULL_EXPLAINS_ALL": "partial_fail_keep_local_frame_residual",
+    "X_INTRINSIC_POLARITY": "pass_kill_intrinsic_values",
+    "FRAME_EFFECT_RESIDUAL": "partial_candidate_125_only",
+    "SEMANTIC_READING_PRESSURE": "pass_demote_semantics"
+  }
+}

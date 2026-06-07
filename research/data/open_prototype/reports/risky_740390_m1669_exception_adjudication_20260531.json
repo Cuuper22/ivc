@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "candidate_id": "risky_740390_m1669_exception_adjudication_20260531",
+  "bet_under_test": "740-390 obligatorily selects 590.",
+  "exception": {
+    "row": "3907.1",
+    "cisi": "M-1669",
+    "text": "+740-390+",
+    "site": "Mohenjo-daro",
+    "type": "SEAL:S",
+    "symbol": "Bull1:W",
+    "metadata_condition": "Fair",
+    "metadata_complete": "Y",
+    "metadata_direction": "L/R",
+    "metadata_signs": "2"
+  },
+  "source_search_result": "No local Yajnadevam trace image was found for M-1669 in tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images or local report/image caches. Existing text/index hits confirm only the metadata row and secondary icon-catalog presence.",
+  "decision": "demote_strict_obligatory_740390590_to_high_probability_740390_selects_590_candidate",
+  "reason": "The exception is not marked incomplete or damaged in the metadata. Without an image showing hidden/truncated 590, the strict form cannot stand.",
+  "surviving_claim": "740-390 normally selects 590: 40/41 raw and 36/37 exact-collapsed cells, cross-site, with one complete-looking exception.",
+  "next_destructive_test": "Acquire or locate the M-1669 image. If image confirms a clean two-sign complete inscription, the model remains probabilistic. If it shows missing terminal space or hidden 590, restore strictness."
+}

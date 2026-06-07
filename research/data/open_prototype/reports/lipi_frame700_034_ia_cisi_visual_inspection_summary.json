@@ -1,0 +1,24 @@
+{
+  "checked_date": "2026-05-25",
+  "question": "What does the first manual visual pass over IA-located CISI pages establish?",
+  "inspected_objects": 9,
+  "core_objects": 8,
+  "optional_objects": 1,
+  "visual_plate_objects": 8,
+  "data_register_only_objects": 1,
+  "source_panel_count_matches_local_side_count": 3,
+  "source_panel_count_exceeds_local_side_count": 5,
+  "high_or_variant_risk_objects": 7,
+  "source_coding_decision_counts": {
+    "visual_source_found_but_variant_disambiguation_required": 2,
+    "visual_source_found_two_panel_object": 2,
+    "data_locator_only_no_visual_validation": 1,
+    "optional_visual_source_found_repeated_branch_only": 1,
+    "visual_source_found_but_disambiguation_required": 1,
+    "visual_source_found_but_high_copy_variant_risk": 1,
+    "visual_source_found_but_local_side_count_mismatch": 1
+  },
+  "accepted_decipherment_claims": 0,
+  "immediate_consequence": "H-789, H-930, and optional H-910 have two labeled source panels matching local side count; H-771, H-893, H-925, H-983, and H-353 require side-count or variant reconciliation; H-212 is a register locator only.",
+  "source_boundary": "This visual pass confirms page/panel availability and reconciliation risks only. It does not accept 032/033/034 subtype readings, direction, side function, meaning, number, language, or translation."
+}

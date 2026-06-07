@@ -1,0 +1,38 @@
+{
+  "date": "2026-05-29",
+  "status": "meluhha_indus_join_surface_no_accepted_external_anchor",
+  "counts": {
+    "cuneiform_attestation_rows": 16,
+    "external_indus_object_rows": 41,
+    "join_surface_rows": 25,
+    "accepted_external_anchors": 0
+  },
+  "by_join_type": {
+    "direct_site_overlap": 25
+  },
+  "by_external_site": {
+    "Girsu": 7,
+    "Ur": 10,
+    "Tello": 5,
+    "Nippur": 3
+  },
+  "by_cuneiform_source": {
+    "BDTNS 000128 / BM 014594": 2,
+    "BDTNS 011069 / IM U. 03884": 5,
+    "P232277 / RIME 3/1.01.07, St D witness": 2,
+    "P431881 / RIME 3/1.01.07, Cyl A composite": 6,
+    "P431882 / RIME 3/1.01.07, Cyl B composite": 2,
+    "P432309 / RIME 3/2.01.05.04 composite": 5,
+    "P469516 / CDLI Literary 000334 (Enki and World Order)": 3
+  },
+  "files": {
+    "join_surface": "data/meluhha/meluhha_indus_join_surface.csv",
+    "join_surface_summary": "data/meluhha/meluhha_indus_join_surface_summary.json"
+  },
+  "caveats": [
+    "The join uses exact external site names against explicit cuneiform provenance aliases only.",
+    "External Indus object dates are unavailable in external_indus_objects.csv, so chronology is not scored.",
+    "Rows are candidate join lanes for future controls, not evidence of bilingualism or decipherment.",
+    "No row can become an external anchor without matched controls, a measured forger false-positive rate, and skeptic review."
+  ]
+}

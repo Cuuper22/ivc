@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-05-25",
+  "artifact": "lipi_h2218_h2239_variant_localization_null",
+  "object_rows": 22,
+  "singleton_variant_objects": "H-2237;H-2238",
+  "singleton_variant_slots": "H-2237:role_15x_003;H-2238:role_700_03x",
+  "manufacturing_group_counts": {
+    "group_1": 6,
+    "group_2": 9,
+    "group_3": 7
+  },
+  "template_counts": {
+    "template_700_861_15x": 9,
+    "template_861_700_15x": 13
+  },
+  "total_unordered_variant_pair_nulls": 231,
+  "tests": {
+    "same_manufacturing_group": {
+      "observed_hit": 1,
+      "null_pair_hits": 72,
+      "exact_pair_probability": 0.311688
+    },
+    "both_in_group_3": {
+      "observed_hit": 1,
+      "null_pair_hits": 21,
+      "exact_pair_probability": 0.090909
+    },
+    "same_role_template_class": {
+      "observed_hit": 1,
+      "null_pair_hits": 114,
+      "exact_pair_probability": 0.493506
+    },
+    "both_in_template_700_861_15x": {
+      "observed_hit": 1,
+      "null_pair_hits": 36,
+      "exact_pair_probability": 0.155844
+    },
+    "both_in_group_3_template_700_861_15x": {
+      "observed_hit": 1,
+      "null_pair_hits": 6,
+      "exact_pair_probability": 0.025974
+    },
+    "adjacent_in_fig4_order": {
+      "observed_hit": 1,
+      "null_pair_hits": 21,
+      "exact_pair_probability": 0.090909
+    },
+    "adjacent_in_fig4_order_within_group_3": {
+      "observed_hit": 1,
+      "null_pair_hits": 6,
+      "exact_pair_probability": 0.025974
+    },
+    "adjacent_in_fig4_order_within_group_3_template_700_861_15x": {
+      "observed_hit": 1,
+      "null_pair_hits": 3,
+      "exact_pair_probability": 0.012987
+    }
+  },
+  "same_group_template_controls_for_variants": {
+    "H-2237": 2,
+    "H-2238": 2
+  },
+  "exact_dimension_controls_for_variants": {
+    "H-2237": 1,
+    "H-2238": 0
+  },
+  "accepted_decipherment_claims": 0,
+  "research_conclusion": "The two singleton H-series variants are both localized in group 3, the template_700_861_15x stratum, and adjacent Fig. 4 positions. This increases batch/workshop/local-template confound pressure while keeping the controlled-slot source target alive. It does not establish sign meaning, value, side function, or translation."
+}

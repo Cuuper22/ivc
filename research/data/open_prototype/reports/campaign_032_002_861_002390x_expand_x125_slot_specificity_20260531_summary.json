@@ -1,0 +1,45 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "x125_slot_specificity",
+  "group_summary": [
+    {
+      "checked_date": "2026-05-31",
+      "slot": "x_slot",
+      "rows": "11",
+      "open_rate": "9/11",
+      "terminal_rate": "2/11",
+      "tail_type_count": "7",
+      "non_end_tail_type_count": "6",
+      "top4_tail_coverage": "8/11",
+      "heads_if_x_slot": "390:4;610:2;190:1;405:1;407:1;861:1;906:1",
+      "prevs": "390:4;610:2;190:1;405:1;407:1;861:1;906:1",
+      "tails": "<END>:2;032:2;632 032:2;820:2;195:1;590 831:1;632 032 900 563:1",
+      "objects": "H-55;H-74;M-1692;M-1665;M-38;M-41;M-119;M-354;M-735;Sktd-1;M-2055"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "slot": "non_x_slot",
+      "rows": "48",
+      "open_rate": "33/48",
+      "terminal_rate": "15/48",
+      "tail_type_count": "27",
+      "non_end_tail_type_count": "26",
+      "top4_tail_coverage": "21/48",
+      "heads_if_x_slot": "-:48",
+      "prevs": "-:5;390:5;350:4;000:3;590:3;700:3;002:2;090:2;400:2;406:2;455:2;741:2;018:1;190:1;267:1;304:1;352:1;354:1;374:1;384:1;420:1;705:1;812:1;861:1;920:1",
+      "tails": "<END>:15;000:2;002 861:2;176:2;413:2;575:2;700 033:2;812 033:2;001 055 920 140:1;001 742:1;031:1;032 820 920 140:1;033:1;070:1;204:1;220 235 002 285:1;308 809 033 740 760 706 466 520 231 240 235 002 820:1;350:1;381:1;435 255 002 286 220 031 012 031 455 033 590:1;590:1;632 032 240 002 244 632:1;717:1;740 803 060 692 740 690 435 255 060 692:1;741 000 000:1;741 900 322:1;745:1",
+      "objects": "Ad-2;Blk-1;C-74;H-1921;H-1946;H-1710;H-10;H-11;H-50;H-52;H-130;H-246;H-467;H-611;H-642;H-894;K-5;Lh-1;L-193;M-1749;M-1688;M-1668;M-1903;M-1700;M-13;M-191;M-251;M-314;M-320;M-356;M-624;M-626;M-761;M-837;M-848;M-878;M-901;M-1188;M-1424;-;H-1178;-;-;-;-;-;-;Ns-60"
+    }
+  ],
+  "new_bets": {
+    "X125_OPERATOR_SIGNAL_IS_TAIL_CONSTRAINT_NOT_OPEN_RATE": "candidate",
+    "X125_TAIL_FAMILY_CONSTRAINT": "candidate",
+    "NON_X_125_NAME_OR_CONTENT_REMAINS_POSSIBLE": "wild shot"
+  },
+  "predictions": [
+    "Use tail-family constraint, not open rate alone, as the X-slot `125` operator signal.",
+    "Future X-slot `125` should reuse current tails or add small variants.",
+    "A single global meaning for `125` is disallowed by current slot split."
+  ]
+}

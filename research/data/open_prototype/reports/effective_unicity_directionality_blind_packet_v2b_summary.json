@@ -1,0 +1,86 @@
+{
+  "date": "2026-05-29",
+  "packet_id": "directionality_no_overlay_packet_v2b_unique_target_controls",
+  "status": "v2b_packet_created_not_scored_no_claim_promotion",
+  "purpose": "Repair the v2 preflight duplicate-target failure by keeping only unique primary target recuts, while retaining the fixed 12 routed real-negative denominator, label-masked raw-page context crops, and auxiliary synthetic sentinels outside the real denominator.",
+  "counts": {
+    "blind_items": 23,
+    "primary_target_recut_images": 4,
+    "primary_target_recut_unique_cisis": 4,
+    "scoring_negative_real_images": 12,
+    "scoring_negative_real_unique_cisis": 12,
+    "external_stress_control_images": 3,
+    "auxiliary_synthetic_control_images": 4,
+    "duplicate_blind_image_hash_groups": 0,
+    "accepted_claims_increment": 0
+  },
+  "forger_control_plan": {
+    "planned_real_scoring_negative_unique_cisis": 12,
+    "current_packet_real_scoring_negative_unique_cisis": 12,
+    "promotion_denominator_floor": 10,
+    "minimum_independent_reviewers": 3,
+    "denominator_policy": "the 12 routed real negatives are fixed; if any real denominator row leaks or becomes non-comparable, the packet fails instead of recalculating FPR",
+    "synthetic_controls_policy": "auxiliary only; synthetic controls never count toward the real-negative denominator",
+    "duplicate_hash_policy": "any duplicate blind image hash keeps the packet at preflight failure; v2b is generated to avoid all duplicate target-image hashes",
+    "status": "real-control denominator now meets the forger floor, but the packet is not reviewed and cannot promote anything yet"
+  },
+  "duplicate_blind_image_hash_groups": [],
+  "target_cisis": [
+    "H-654",
+    "M-1310",
+    "M-1320",
+    "M-811"
+  ],
+  "scoring_negative_real_cisis": [
+    "H-158",
+    "H-665",
+    "M-1315",
+    "M-1458",
+    "M-1523",
+    "M-171",
+    "M-365",
+    "M-386",
+    "M-525",
+    "M-527",
+    "M-534",
+    "M-567"
+  ],
+  "reserve_route_negative_cisis": [
+    "H-659",
+    "M-127",
+    "M-1322",
+    "H-421",
+    "M-915",
+    "H-611"
+  ],
+  "external_stress_control_cisis": [
+    "M-1273",
+    "M-376",
+    "M-381"
+  ],
+  "label_masking": {
+    "route_context_negatives_mask_all_ocr_word_boxes_inside_crop": true,
+    "total_masked_ocr_word_boxes": 676,
+    "visual_leakage_still_requires_blind_review": true
+  },
+  "promotion_thresholds": [
+    "At least three independent blind reviews must be present.",
+    "Every primary_target_recut image must be label-leak-free and have exactly one confidently boxable signband.",
+    "No duplicate blind image hash is permitted in the packet.",
+    "Paired target-view promotion is disabled in v2b because only unique target images are retained; any future paired-view packet must use distinct hashes and identical blind token counts.",
+    "Real routed scoring negatives must produce zero hard boxable-and-count-matching hits, zero target-like uncertainty, and zero label leaks across all 12 fixed rows.",
+    "If any real denominator row leaks, is missing, has duplicate unintended image hash, or becomes non-comparable, the packet fails; the denominator is not recalculated downward.",
+    "Synthetic leak sentinels must be flagged by every reviewer, but synthetic controls are auxiliary and never count toward the real-negative floor.",
+    "Even a passing packet can only promote a source-crop candidate for later side/direction adjudication, never a value, meaning, language, translation, or accepted structural finding."
+  ],
+  "interpretation_boundary": "This packet is a source-normalization control gate only. Creation of the packet validates no source order, physical direction, sign identity, sign semantics, language family, phonetic value, translation, or accepted claim.",
+  "outputs": {
+    "crop_manifest": "data/open_prototype/reports/effective_unicity_directionality_blind_packet_v2b_crop_manifest.csv",
+    "blind_manifest": "data/open_prototype/reports/effective_unicity_directionality_blind_packet_v2b_manifest.csv",
+    "answer_key": "data/open_prototype/reports/effective_unicity_directionality_blind_packet_v2b_answer_key.csv",
+    "review_template": "data/open_prototype/reports/effective_unicity_directionality_blind_packet_v2b_review_template.csv",
+    "summary_json": "data/open_prototype/reports/effective_unicity_directionality_blind_packet_v2b_summary.json",
+    "contact_sheet": "tmp/effective_unicity_directionality_blind_packet_v2b/directionality_no_overlay_v2b_blind_contact_sheet.png",
+    "blind_image_dir": "tmp/effective_unicity_directionality_blind_packet_v2b/blind_images"
+  }
+}

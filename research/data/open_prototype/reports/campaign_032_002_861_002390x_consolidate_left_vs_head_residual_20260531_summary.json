@@ -1,0 +1,35 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "left_vs_head_residual",
+  "same_register_scope": "Mohenjo-daro|SEAL:S|square|Steatite",
+  "same_register_002_frames": 292,
+  "final_235": {
+    "frames": 18,
+    "after_head_125_rate": "3/18",
+    "head_distribution": "861:6;817:3;390:2;065:1;112:1;220:1;374:1;405:1;820:1;906:1"
+  },
+  "final_235_head_390": {
+    "frames": 2,
+    "after_head_125_rate": "2/2"
+  },
+  "head_390_without_final235": {
+    "frames": 6,
+    "after_head_125_rate": "1/6",
+    "open_125_witnesses": [
+      "M-119"
+    ]
+  },
+  "decisions": [
+    "Kill broad 235-as-125 trigger: final 235 before 002 gives after-head 125 in only 3/18 same-register frames.",
+    "Keep narrow 235 + 002-390 pressure: both final-235 002-390 rows go to open 125.",
+    "Keep 002-390 frame residual independent of 235 because M-119 has 484-002-390-125 and continues.",
+    "Do not semanticize 235 as rank/title; it is a local precursor/context, not a value."
+  ],
+  "contradiction_results": {
+    "FINAL_235_ALONE_TRIGGERS_125": "pass_kill_broad_235_trigger",
+    "FINAL_235_PLUS_002390_SELECTS_125": "pass_source_mixed_narrow_trigger",
+    "HEAD_390_HAS_125_RESIDUAL_WITHOUT_235": "pass_keep_390_frame_residual",
+    "SEMANTIC_235_TITLE_TRIGGER": "pass_demote"
+  }
+}

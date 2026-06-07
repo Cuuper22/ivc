@@ -1,0 +1,85 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "x125_scope_split",
+  "global_x125": {
+    "rows": 11,
+    "continuing_rate": "9/11",
+    "terminal_rate": "2/11",
+    "open_heads": "390:4;610:2;190:1;405:1;407:1",
+    "terminal_heads": "861:1;906:1"
+  },
+  "scope_summary": [
+    {
+      "checked_date": "2026-05-31",
+      "scope_cell": "Mohenjo-daro|SEAL:S|square|Steatite",
+      "rows": "6",
+      "open": "6",
+      "open_rate": "6/6",
+      "terminal": "0",
+      "terminal_rate": "0/6",
+      "heads": "390:3;190:1;405:1;610:1",
+      "objects": "M-1692;M-1665;M-38;M-41;M-119;M-735",
+      "decision": "open_scope"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "scope_cell": "Harappa|SEAL:S|square|Steatite",
+      "rows": "2",
+      "open": "1",
+      "open_rate": "1/2",
+      "terminal": "1",
+      "terminal_rate": "1/2",
+      "heads": "610:1;861:1",
+      "objects": "H-55;H-74",
+      "decision": "mixed_scope"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "scope_cell": "Mohenjo-daro|SEAL:R|cuboid-convex|Steatite",
+      "rows": "1",
+      "open": "0",
+      "open_rate": "0/1",
+      "terminal": "1",
+      "terminal_rate": "1/1",
+      "heads": "906:1",
+      "objects": "M-354",
+      "decision": "terminal_scope"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "scope_cell": "Mohenjo-daro|TAB:C|rectangular|Copper",
+      "rows": "1",
+      "open": "1",
+      "open_rate": "1/1",
+      "terminal": "0",
+      "terminal_rate": "0/1",
+      "heads": "407:1",
+      "objects": "M-2055",
+      "decision": "open_scope"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "scope_cell": "Surkotada|SEAL:S|square|-",
+      "rows": "1",
+      "open": "1",
+      "open_rate": "1/1",
+      "terminal": "0",
+      "terminal_rate": "0/1",
+      "heads": "390:1",
+      "objects": "Sktd-1",
+      "decision": "open_scope"
+    }
+  ],
+  "new_bets": {
+    "X125_UNIVERSAL_SWITCH_KILLED": "killed",
+    "X125_HEAD_CONDITIONED_SWITCH": "candidate",
+    "X125_SCOPE_SPLIT_SITE_REGISTER": "wild shot",
+    "X125_TAIL_CLASS_BY_HEAD": "wild shot"
+  },
+  "predictions": [
+    "Same-register Mohenjo-daro square seal `002-H-125` should continue.",
+    "Universal X=125 sufficiency is dead unless terminal exceptions are source/corpus errors.",
+    "Head-conditioned switch survives if future 861/906 terminal and 190/390/405/407/610 open behavior repeats."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "status": "source_demoted_parser_fit",
+  "total_002390x_rows": 15,
+  "strict_countable_rows": 4,
+  "strict_countable_objects": [
+    "M-70",
+    "M-71",
+    "M-119",
+    "M-735"
+  ],
+  "source_demoted_core": "Self-fit stays 15/15 structurally, but only 4 rows are strict-countable after source demotion; parser promotion must come from those 4 plus held-out tests.",
+  "keep": [
+    "002_FRAME_LICENSE",
+    "390_STATUS_TITLE_HEAD",
+    "X_POLARITY_SLOT",
+    "125_OPEN_LINKER_SOURCE_VISIBLE_WOUNDED"
+  ],
+  "demote": [
+    "705_TERMINAL_CLASSIFIER_TO_SOURCE_BLOCKED_WILD_SHOT",
+    "095_TERMINAL_CLASSIFIER_TO_SINGLETON_WILD_SHOT"
+  ],
+  "accepted_claims": 0
+}

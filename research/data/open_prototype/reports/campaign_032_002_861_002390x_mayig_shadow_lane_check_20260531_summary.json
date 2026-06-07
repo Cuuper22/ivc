@@ -1,0 +1,84 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "mayig_shadow_exact_032_lane_no_replacement_pair_collision_guard_no_values",
+  "source_layer": "Mayig public-git P namespace plus local provisional crosswalk edges; all edges remain accepted_for_analysis=false.",
+  "exact_mayig_P145_P122_P086_count": 1,
+  "exact_lipi_032_002_390_count": 2,
+  "exact_shared_artifacts": [
+    "M-70"
+  ],
+  "exact_shadow_new_replacement_witnesses": [],
+  "broader_mayig_P122_P086_count": 6,
+  "broader_mayig_P122_P086_local_status_counts": {
+    "local_002_405_collision_not_002_390": 2,
+    "local_exact_002_390": 4
+  },
+  "mayig_next_counts_after_P122_P086": {
+    "P023": 1,
+    "P035": 3,
+    "P108": 1,
+    "P256": 1
+  },
+  "p086_reverse_edges": [
+    {
+      "lipi_sign": "390",
+      "mayig_sign": "P086",
+      "support_count": "25",
+      "counterexample_count": "0",
+      "top_share": "1.000000",
+      "confidence": "medium_low",
+      "accepted_for_analysis": "false",
+      "review_status": "needs_image_or_authoritative_sign_list_validation",
+      "example_witnesses": "M-12;M-17;M-32;M-35;M-38;M-48;M-51;M-70",
+      "accepted_decipherment_claim": "0"
+    },
+    {
+      "lipi_sign": "405",
+      "mayig_sign": "P086",
+      "support_count": "2",
+      "counterexample_count": "0",
+      "top_share": "1.000000",
+      "confidence": "very_low",
+      "accepted_for_analysis": "false",
+      "review_status": "needs_image_or_authoritative_sign_list_validation",
+      "example_witnesses": "M-34;M-172",
+      "accepted_decipherment_claim": "0"
+    },
+    {
+      "lipi_sign": "406",
+      "mayig_sign": "P086",
+      "support_count": "1",
+      "counterexample_count": "0",
+      "top_share": "1.000000",
+      "confidence": "very_low",
+      "accepted_for_analysis": "false",
+      "review_status": "needs_image_or_authoritative_sign_list_validation",
+      "example_witnesses": "M-170",
+      "accepted_decipherment_claim": "0"
+    },
+    {
+      "lipi_sign": "407",
+      "mayig_sign": "P086",
+      "support_count": "1",
+      "counterexample_count": "0",
+      "top_share": "1.000000",
+      "confidence": "very_low",
+      "accepted_for_analysis": "false",
+      "review_status": "needs_image_or_authoritative_sign_list_validation",
+      "example_witnesses": "M-171",
+      "accepted_decipherment_claim": "0"
+    }
+  ],
+  "decision": [
+    "The exact P145-P122-P086 shadow lane returns only M-70, already the known strict-visible 032-002-390-692 row.",
+    "The shadow lane adds no replacement for the blocked 3335.1 032-lane witness.",
+    "The broader Mayig P122-P086 pair is unsafe as an inflation route because M-34 and M-41 align locally to 002-405 rather than adjacent 002-390.",
+    "Use this result as a crosswalk/corpus triage guard only; it does not accept a sign mapping, grammar, value, phonetics, language identity, function, sign meaning, or translation."
+  ],
+  "accepted_value_claims": 0,
+  "accepted_phonetic_claims": 0,
+  "accepted_language_identity_claims": 0,
+  "accepted_function_claims": 0,
+  "accepted_sign_meaning_claims": 0,
+  "accepted_translation_claims": 0
+}

@@ -1,0 +1,43 @@
+radius,left_suffix,rows,branches,terminal_classes,source_tiers,strict_objects,strict_branches,objects,gate
+1,003,1,072:1,terminal:1,metadata_or_blocked:1,,,H-68:072-><END>:metadata_or_blocked,singleton_context_no_branch_test
+1,004,2,095:1; 125:1,continuing:1; terminal:1,public_panel_downweighted:1; route_or_metadata_pressure:1,,,H-1993:095-><END>:route_or_metadata_pressure; Sktd-1:125->820:public_panel_downweighted,context_branch_split_non_strict_only
+1,031,1,705:1,terminal:1,route_or_metadata_pressure:1,,,M-1825:705-><END>:route_or_metadata_pressure,singleton_context_no_branch_test
+1,032,2,590:1; 692:1,continuing:1; terminal:1,metadata_or_blocked:1; strict_visible:1,M-70,692:1,M-70:692-><END>:strict_visible; -:590->032:metadata_or_blocked,context_branch_split_partly_strict_blocked
+1,061,1,140:1,terminal:1,metadata_or_blocked:1,,,M-708:140-><END>:metadata_or_blocked,singleton_context_no_branch_test
+1,142,1,095:1,terminal:1,strict_visible:1,M-71,095:1,M-71:095-><END>:strict_visible,singleton_context_no_branch_test
+1,235,2,125:2,continuing:2,metadata_or_blocked:1; strict_visible:1,M-735,125:1,M-38:125->632 032:metadata_or_blocked; M-735:125->195:strict_visible,same_context_same_branch_tail_split
+1,236,1,707:1,terminal:1,metadata_or_blocked:1,,,M-232:707-><END>:metadata_or_blocked,singleton_context_no_branch_test
+1,384,1,346:1,terminal:1,metadata_or_blocked:1,,,M-213:346-><END>:metadata_or_blocked,singleton_context_no_branch_test
+1,388,1,705:1,terminal:1,route_or_metadata_pressure:1,,,-:705-><END>:route_or_metadata_pressure,singleton_context_no_branch_test
+1,484,1,125:1,continuing:1,strict_visible:1,M-119,125:1,M-119:125->632 032 900 563:strict_visible,singleton_context_no_branch_test
+1,803,1,530:1,continuing:1,panel_bound_not_strict:1,,,H-773:530->741:panel_bound_not_strict,singleton_context_no_branch_test
+2,032 388,1,705:1,terminal:1,route_or_metadata_pressure:1,,,-:705-><END>:route_or_metadata_pressure,singleton_context_no_branch_test
+2,157 031,1,705:1,terminal:1,route_or_metadata_pressure:1,,,M-1825:705-><END>:route_or_metadata_pressure,singleton_context_no_branch_test
+2,205 032,1,590:1,continuing:1,metadata_or_blocked:1,,,-:590->032:metadata_or_blocked,singleton_context_no_branch_test
+2,220 003,1,072:1,terminal:1,metadata_or_blocked:1,,,H-68:072-><END>:metadata_or_blocked,singleton_context_no_branch_test
+2,220 004,1,095:1,terminal:1,route_or_metadata_pressure:1,,,H-1993:095-><END>:route_or_metadata_pressure,singleton_context_no_branch_test
+2,226 032,1,692:1,terminal:1,strict_visible:1,M-70,692:1,M-70:692-><END>:strict_visible,singleton_context_no_branch_test
+2,240 235,1,125:1,continuing:1,metadata_or_blocked:1,,,M-38:125->632 032:metadata_or_blocked,singleton_context_no_branch_test
+2,279 142,1,095:1,terminal:1,strict_visible:1,M-71,095:1,M-71:095-><END>:strict_visible,singleton_context_no_branch_test
+2,337 484,1,125:1,continuing:1,strict_visible:1,M-119,125:1,M-119:125->632 032 900 563:strict_visible,singleton_context_no_branch_test
+2,390 004,1,125:1,continuing:1,public_panel_downweighted:1,,,Sktd-1:125->820:public_panel_downweighted,singleton_context_no_branch_test
+2,740 061,1,140:1,terminal:1,metadata_or_blocked:1,,,M-708:140-><END>:metadata_or_blocked,singleton_context_no_branch_test
+2,740 384,1,346:1,terminal:1,metadata_or_blocked:1,,,M-213:346-><END>:metadata_or_blocked,singleton_context_no_branch_test
+2,760 235,1,125:1,continuing:1,strict_visible:1,M-735,125:1,M-735:125->195:strict_visible,singleton_context_no_branch_test
+2,798 803,1,530:1,continuing:1,panel_bound_not_strict:1,,,H-773:530->741:panel_bound_not_strict,singleton_context_no_branch_test
+3,000 220 004,1,095:1,terminal:1,route_or_metadata_pressure:1,,,H-1993:095-><END>:route_or_metadata_pressure,singleton_context_no_branch_test
+3,032 240 235,1,125:1,continuing:1,metadata_or_blocked:1,,,M-38:125->632 032:metadata_or_blocked,singleton_context_no_branch_test
+3,151 032 388,1,705:1,terminal:1,route_or_metadata_pressure:1,,,-:705-><END>:route_or_metadata_pressure,singleton_context_no_branch_test
+3,151 279 142,1,095:1,terminal:1,strict_visible:1,M-71,095:1,M-71:095-><END>:strict_visible,singleton_context_no_branch_test
+3,151 337 484,1,125:1,continuing:1,strict_visible:1,M-119,125:1,M-119:125->632 032 900 563:strict_visible,singleton_context_no_branch_test
+3,740 205 032,1,590:1,continuing:1,metadata_or_blocked:1,,,-:590->032:metadata_or_blocked,singleton_context_no_branch_test
+3,740 220 003,1,072:1,terminal:1,metadata_or_blocked:1,,,H-68:072-><END>:metadata_or_blocked,singleton_context_no_branch_test
+3,740 760 235,1,125:1,continuing:1,strict_visible:1,M-735,125:1,M-735:125->195:strict_visible,singleton_context_no_branch_test
+3,740 798 803,1,530:1,continuing:1,panel_bound_not_strict:1,,,H-773:530->741:panel_bound_not_strict,singleton_context_no_branch_test
+4,090 740 220 003,1,072:1,terminal:1,metadata_or_blocked:1,,,H-68:072-><END>:metadata_or_blocked,singleton_context_no_branch_test
+4,220 032 240 235,1,125:1,continuing:1,metadata_or_blocked:1,,,M-38:125->632 032:metadata_or_blocked,singleton_context_no_branch_test
+4,740 000 220 004,1,095:1,terminal:1,route_or_metadata_pressure:1,,,H-1993:095-><END>:route_or_metadata_pressure,singleton_context_no_branch_test
+5,255 220 032 240 235,1,125:1,continuing:1,metadata_or_blocked:1,,,M-38:125->632 032:metadata_or_blocked,singleton_context_no_branch_test
+6,435 255 220 032 240 235,1,125:1,continuing:1,metadata_or_blocked:1,,,M-38:125->632 032:metadata_or_blocked,singleton_context_no_branch_test
+7,690 435 255 220 032 240 235,1,125:1,continuing:1,metadata_or_blocked:1,,,M-38:125->632 032:metadata_or_blocked,singleton_context_no_branch_test
+8,740 690 435 255 220 032 240 235,1,125:1,continuing:1,metadata_or_blocked:1,,,M-38:125->632 032:metadata_or_blocked,singleton_context_no_branch_test

@@ -1,0 +1,205 @@
+{
+  "source": "filtered lipi metadata, claim columns removed",
+  "source_rows": 5679,
+  "numeric_clean_source_rows": 2887,
+  "exact_sequence_families": 1798,
+  "min_label_families": 30,
+  "iterations_per_block": 100,
+  "targets": [
+    "symbol",
+    "cult",
+    "material",
+    "shape",
+    "boss",
+    "type",
+    "horizontal_bin",
+    "vertical_bin",
+    "thickness_bin",
+    "area_bin",
+    "aspect_bin"
+  ],
+  "target_summaries": [
+    {
+      "target": "symbol",
+      "rows": 952,
+      "labels": 10,
+      "observed_token_nb_accuracy": 0.276261,
+      "observed_token_nb_macro_f1": 0.093696,
+      "hardest_token_nb_null": {
+        "block": "hard_proxy",
+        "shuffle_fields": "length;type;site;shape;cult;material",
+        "null_accuracy_mean": 0.278298,
+        "observed_minus_null_accuracy_mean": -0.002038,
+        "null_macro_f1_mean": 0.079886,
+        "observed_minus_null_macro_f1_mean": 0.01381,
+        "unchanged_label_share_mean": 0.597542
+      }
+    },
+    {
+      "target": "cult",
+      "rows": 783,
+      "labels": 5,
+      "observed_token_nb_accuracy": 0.605364,
+      "observed_token_nb_macro_f1": 0.193756,
+      "hardest_token_nb_null": {
+        "block": "edge_frame",
+        "shuffle_fields": "edge_frame",
+        "null_accuracy_mean": 0.607114,
+        "observed_minus_null_accuracy_mean": -0.00175,
+        "null_macro_f1_mean": 0.197995,
+        "observed_minus_null_macro_f1_mean": -0.004238,
+        "unchanged_label_share_mean": 0.904253
+      }
+    },
+    {
+      "target": "material",
+      "rows": 1563,
+      "labels": 4,
+      "observed_token_nb_accuracy": 0.736404,
+      "observed_token_nb_macro_f1": 0.325959,
+      "hardest_token_nb_null": {
+        "block": "hard_proxy",
+        "shuffle_fields": "length;type;site;shape",
+        "null_accuracy_mean": 0.735899,
+        "observed_minus_null_accuracy_mean": 0.000505,
+        "null_macro_f1_mean": 0.320481,
+        "observed_minus_null_macro_f1_mean": 0.005478,
+        "unchanged_label_share_mean": 0.925272
+      }
+    },
+    {
+      "target": "shape",
+      "rows": 1604,
+      "labels": 6,
+      "observed_token_nb_accuracy": 0.67581,
+      "observed_token_nb_macro_f1": 0.237947,
+      "hardest_token_nb_null": {
+        "block": "edge_frame",
+        "shuffle_fields": "edge_frame",
+        "null_accuracy_mean": 0.668547,
+        "observed_minus_null_accuracy_mean": 0.007263,
+        "null_macro_f1_mean": 0.227711,
+        "observed_minus_null_macro_f1_mean": 0.010236,
+        "unchanged_label_share_mean": 0.907606
+      }
+    },
+    {
+      "target": "boss",
+      "rows": 795,
+      "labels": 4,
+      "observed_token_nb_accuracy": 0.724528,
+      "observed_token_nb_macro_f1": 0.247964,
+      "hardest_token_nb_null": {
+        "block": "shape",
+        "shuffle_fields": "shape",
+        "null_accuracy_mean": 0.733296,
+        "observed_minus_null_accuracy_mean": -0.008767,
+        "null_macro_f1_mean": 0.268901,
+        "observed_minus_null_macro_f1_mean": -0.020938,
+        "unchanged_label_share_mean": 0.71239
+      }
+    },
+    {
+      "target": "type",
+      "rows": 1710,
+      "labels": 6,
+      "observed_token_nb_accuracy": 0.621637,
+      "observed_token_nb_macro_f1": 0.305709,
+      "hardest_token_nb_null": {
+        "block": "edge_frame",
+        "shuffle_fields": "edge_frame",
+        "null_accuracy_mean": 0.620181,
+        "observed_minus_null_accuracy_mean": 0.001456,
+        "null_macro_f1_mean": 0.291324,
+        "observed_minus_null_macro_f1_mean": 0.014385,
+        "unchanged_label_share_mean": 0.899772
+      }
+    },
+    {
+      "target": "horizontal_bin",
+      "rows": 1682,
+      "labels": 4,
+      "observed_token_nb_accuracy": 0.444114,
+      "observed_token_nb_macro_f1": 0.314026,
+      "hardest_token_nb_null": {
+        "block": "edge_frame",
+        "shuffle_fields": "edge_frame",
+        "null_accuracy_mean": 0.429994,
+        "observed_minus_null_accuracy_mean": 0.01412,
+        "null_macro_f1_mean": 0.304281,
+        "observed_minus_null_macro_f1_mean": 0.009745,
+        "unchanged_label_share_mean": 0.866463
+      }
+    },
+    {
+      "target": "vertical_bin",
+      "rows": 1609,
+      "labels": 4,
+      "observed_token_nb_accuracy": 0.465507,
+      "observed_token_nb_macro_f1": 0.430971,
+      "hardest_token_nb_null": {
+        "block": "edge_frame",
+        "shuffle_fields": "edge_frame",
+        "null_accuracy_mean": 0.448341,
+        "observed_minus_null_accuracy_mean": 0.017166,
+        "null_macro_f1_mean": 0.415663,
+        "observed_minus_null_macro_f1_mean": 0.015308,
+        "unchanged_label_share_mean": 0.863903
+      }
+    },
+    {
+      "target": "thickness_bin",
+      "rows": 844,
+      "labels": 4,
+      "observed_token_nb_accuracy": 0.482227,
+      "observed_token_nb_macro_f1": 0.310822,
+      "hardest_token_nb_null": {
+        "block": "edge_frame",
+        "shuffle_fields": "edge_frame",
+        "null_accuracy_mean": 0.47814,
+        "observed_minus_null_accuracy_mean": 0.004088,
+        "null_macro_f1_mean": 0.308222,
+        "observed_minus_null_macro_f1_mean": 0.0026,
+        "unchanged_label_share_mean": 0.898211
+      }
+    },
+    {
+      "target": "area_bin",
+      "rows": 1600,
+      "labels": 4,
+      "observed_token_nb_accuracy": 0.441875,
+      "observed_token_nb_macro_f1": 0.384212,
+      "hardest_token_nb_null": {
+        "block": "edge_frame",
+        "shuffle_fields": "edge_frame",
+        "null_accuracy_mean": 0.434187,
+        "observed_minus_null_accuracy_mean": 0.007688,
+        "null_macro_f1_mean": 0.370979,
+        "observed_minus_null_macro_f1_mean": 0.013233,
+        "unchanged_label_share_mean": 0.864669
+      }
+    },
+    {
+      "target": "aspect_bin",
+      "rows": 1595,
+      "labels": 3,
+      "observed_token_nb_accuracy": 0.638871,
+      "observed_token_nb_macro_f1": 0.459526,
+      "hardest_token_nb_null": {
+        "block": "edge_frame",
+        "shuffle_fields": "edge_frame",
+        "null_accuracy_mean": 0.634552,
+        "observed_minus_null_accuracy_mean": 0.00432,
+        "null_macro_f1_mean": 0.451675,
+        "observed_minus_null_macro_f1_mean": 0.007851,
+        "unchanged_label_share_mean": 0.900226
+      }
+    }
+  ],
+  "outputs": [
+    "data/open_prototype/reports/lipi_semantic_anchor_prediction_observed.csv",
+    "data/open_prototype/reports/lipi_semantic_anchor_prediction_iterations.csv",
+    "data/open_prototype/reports/lipi_semantic_anchor_prediction_summary.csv"
+  ],
+  "interpretation_boundary": "Proxy-blocked semantic-anchor prediction scout only; metadata labels are catalog fields from a T3 planning source and do not create sign meanings, semantic slots, phonetic values, language identity, or translations."
+}

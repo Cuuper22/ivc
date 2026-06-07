@@ -1,0 +1,118 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "095_status_ecology_stress",
+  "hypothesis_tested": "`095` is a governed administrative/status marker: extended after 520/595, clipped terminal after 002-390.",
+  "totals": {
+    "raw_rows": 5679,
+    "canonical_rows": 3503,
+    "focus_raw_occurrences": 30,
+    "focus_canonical_occurrences": 22,
+    "count_matched_baseline_signs": 64
+  },
+  "focus_summary": {
+    "checked_date": "2026-05-31",
+    "sign": "095",
+    "raw_occurrences": "30",
+    "canonical_occurrences": "22",
+    "terminal": "8",
+    "terminal_share": "0.363636",
+    "continuing": "14",
+    "square_or_rect_seal": "5",
+    "outside_square_or_rect_seal": "17",
+    "outside_square_or_rect_seal_share": "0.772727",
+    "tablet_pot_tag_rod_impl": "14",
+    "tablet_pot_tag_rod_impl_share": "0.636364",
+    "prev_390": "3",
+    "prev_520": "7",
+    "prev_595": "3",
+    "prev_status_stems_390_520_595": "13",
+    "prev_status_stems_share": "0.590909",
+    "prev_520_or_595_share": "0.454545",
+    "in_002_390_frame": "2",
+    "nonframe_prev390": "1",
+    "top_prev": "520",
+    "top_prev_count": "7",
+    "top_prev_share": "0.318182",
+    "prev_entropy_bits": "3.043011",
+    "top_next": "<END>",
+    "top_next_count": "8",
+    "top_next_share": "0.363636",
+    "next_entropy_bits": "2.845351",
+    "raw_top_exact_sequence_count": "8",
+    "raw_top_exact_sequence_share": "0.266667",
+    "top_prevs": "520:7;390:3;595:3;000:2;<START>:1;001:1;002:1;033:1",
+    "top_nexts": "<END>:8;000:3;585:3;033:2;031:1;550:1;717:1;741:1",
+    "top_raw_exact_sequences": "407 032 520 095 585 017 231:8;617 142 001 595 095 760 744:2;000 000 095 550 003 002 000:1;000 095:1;002 095 000:1"
+  },
+  "baseline_ranks_among_count_matched_plus_focus": {
+    "by_prev_status_stems_share": "2/65",
+    "by_tablet_pot_tag_rod_impl_share": "5/65",
+    "by_outside_square_or_rect_seal_share": "5/65",
+    "by_top_prev_share": "38/65"
+  },
+  "family_rows": [
+    {
+      "checked_date": "2026-05-31",
+      "family": "002-390-095",
+      "rows": "2",
+      "terminal": "2",
+      "top_rows": "H-1993:002-390-095-><END>;M-71:002-390-095-><END>",
+      "parse_implication": "`095` can surface as a bare terminal status/result selector when immediately governed by `002-390`."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "family": "520-095",
+      "rows": "7",
+      "terminal": "1",
+      "top_rows": "H-660:520-095->033;M-2053:520-095->585;M-403:520-095-><END>;H-2584:520-095->033;-:5587.1:520-095->585;M-599:520-095->585;-:4263.1:520-095->000",
+      "parse_implication": "`520-095` is the dominant non-frame ecology and usually opens a longer tablet/tag trail rather than closing."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "family": "595-095",
+      "rows": "3",
+      "terminal": "1",
+      "top_rows": "M-592:595-095-><END>;M-520:595-095->760;M-1470:595-095->717",
+      "parse_implication": "`595-095` is a secondary administrative-looking ecology, mostly on Mohenjo-daro tablet rows."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "family": "raw-copy-pressure",
+      "rows": "30",
+      "terminal": "8",
+      "top_rows": "407 032 520 095 585 017 231:8;617 142 001 595 095 760 744:2;000 000 095 550 003 002 000:1;000 095:1;002 095 000:1",
+      "parse_implication": "The status-marker bet must be copy-family aware because repeated Mohenjo-daro tablet strings inflate raw `520-095` counts."
+    }
+  ],
+  "decisions": [
+    {
+      "checked_date": "2026-05-31",
+      "named_bet": "`095` is a governed administrative/status marker, not merely a terminal sign",
+      "tier_after_test": "candidate_mixed",
+      "evidence": "Canonical 095 has 22 occurrences; 13/22 follow 390/520/595, 14/22 are on tablet/pot/tag/rod/implement rows, and both 002-390-095 rows are terminal.",
+      "adversary": "Raw copy pressure is real: repeated Mohenjo-daro tablet C strings inflate the 520-095 ecology, and the H-1993 half of 002-390-095 is still route-pressure only.",
+      "falsifier_or_rescue": "A source-bound 002-390-095 continuation with a name-like tail demotes terminal-status wording; source-preserved 520/595 diversity plus a strict H-1993 terminal side promotes status-marker semantics."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "named_bet": "`095` in 002-390-095 is a personal-name/title branch like 125",
+      "tier_after_test": "demoted_to_wild_shot",
+      "evidence": "095 is not concentrated in name-like square/rectangular seal environments: 17/22 canonical occurrences are outside square/rectangular seal rows, and its dominant non-frame ecology is 520/595 before 095.",
+      "adversary": "M-71 is a square seal with a 002-390-095 terminal branch, so a title reading is not impossible; the evidence only makes it less natural than status/result.",
+      "falsifier_or_rescue": "A cluster of source-visible 002-390-095 seal rows with varied personal-tail continuations would revive a name/title analysis."
+    },
+    {
+      "checked_date": "2026-05-31",
+      "named_bet": "`002-390-095` is the clipped terminal version of the longer 520/595-095 status trails",
+      "tier_after_test": "wild_shot_retained",
+      "evidence": "The local frame strips 095 to terminal position, while the main non-frame stems 520 and 595 usually continue through 033/585/760/717-style trails.",
+      "adversary": "The governing stems are different; 390 may be selecting a homographic branch sign with a different value rather than clipping the same formula class.",
+      "falsifier_or_rescue": "A non-frame 390-095 row with an admin/status trail, or a sourced H-1993 terminal side plus comparable Sktd-1 125 continuation, would make this sharper."
+    }
+  ],
+  "confidence_after_test": {
+    "governed_095_status_marker": "candidate_mixed",
+    "name_or_title_095_branch": "demoted_to_wild_shot",
+    "clipped_status_trail_under_002390": "wild_shot_retained"
+  }
+}

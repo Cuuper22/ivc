@@ -1,0 +1,72 @@
+{
+  "date": "2026-05-29",
+  "repair_id": "directionality_panel_crop_repair_v1_object_panel_candidates",
+  "status": "candidate_panel_crops_created_for_visual_preflight_no_claim_promotion",
+  "purpose": "Repair the v2c failure mode by replacing masked page-context crops with explicit object-panel crop candidates. This is a preflight inventory, not a blind packet.",
+  "root_cause_reconstructed": [
+    "v2b leaked source labels in real negatives.",
+    "v2c fixed the DjVu five-coordinate OCR parser and padded masks, but the underlying crop was still page context.",
+    "A second route hazard remains: OCR label matches can be non-compact if words from different page positions are stitched together.",
+    "The repair therefore emits crop candidates only when their label box is excluded and records compactness/word-overlap fields for hostile review."
+  ],
+  "counts": {
+    "focus_cisis_requested": 22,
+    "focus_cisis_with_plate_routes": 22,
+    "plate_routes_used_max_three_per_cisi": 31,
+    "candidate_rows": 199,
+    "best_candidate_rows": 22,
+    "accepted_claims_increment": 0
+  },
+  "by_role": {
+    "real_route_negative_candidate": 85,
+    "reserve_route_negative_candidate": 59,
+    "primary_target_route_candidate": 55
+  },
+  "best_by_role": {
+    "real_route_negative_candidate": 12,
+    "reserve_route_negative_candidate": 6,
+    "primary_target_route_candidate": 4
+  },
+  "by_preflight_status": {
+    "candidate_requires_visual_label_leak_and_single_panel_preflight": 92,
+    "label_box_overlap_preflight_fail": 107
+  },
+  "candidate_rows_by_cisi": {
+    "H-158": 6,
+    "H-421": 14,
+    "H-611": 6,
+    "H-654": 21,
+    "H-659": 7,
+    "H-665": 13,
+    "M-127": 6,
+    "M-1310": 13,
+    "M-1315": 6,
+    "M-1320": 7,
+    "M-1322": 14,
+    "M-1458": 6,
+    "M-1523": 7,
+    "M-171": 7,
+    "M-365": 7,
+    "M-386": 7,
+    "M-525": 13,
+    "M-527": 7,
+    "M-534": 3,
+    "M-567": 3,
+    "M-811": 14,
+    "M-915": 12
+  },
+  "admissibility_gate": [
+    "No row is reviewer-ready from this script alone.",
+    "A future blind packet may use only rows whose crop visibly excludes catalogue labels and contains exactly one comparable object/signband.",
+    "The fixed real-negative denominator must remain at least 12 unique CISIs, with no duplicate image hashes, no label leak, and no target-like uncertainty.",
+    "If visual preflight cannot produce 4 targets and 12 real negatives under those constraints, the directionality packet remains retracted/preflight-failed."
+  ],
+  "outputs": {
+    "candidates_csv": "data/open_prototype/reports/effective_unicity_directionality_panel_crop_repair_candidates.csv",
+    "summary_json": "data/open_prototype/reports/effective_unicity_directionality_panel_crop_repair_summary.json",
+    "all_candidates_contact_sheet": "tmp/effective_unicity_directionality_panel_crop_repair/directionality_panel_crop_repair_all_candidates.jpg",
+    "best_candidates_contact_sheet": "tmp/effective_unicity_directionality_panel_crop_repair/directionality_panel_crop_repair_best_candidates.jpg",
+    "candidate_crop_dir": "tmp/effective_unicity_directionality_panel_crop_repair/candidates"
+  },
+  "interpretation_boundary": "The artifacts validate no source directionality, sign identity, sign meaning, language family, phonetic value, translation, or structural claim. They only expose candidate crop geometry for the forger/skeptic gate."
+}

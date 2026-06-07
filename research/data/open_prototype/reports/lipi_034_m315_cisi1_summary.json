@@ -1,0 +1,62 @@
+{
+  "date": "2026-05-25",
+  "object": "M-315",
+  "local_row": "2833.1 +390-034-002-374-228-741+",
+  "source_packet": "lipi_034_m315_cisi1",
+  "routes_rows": 10,
+  "visual_input_rows": 21,
+  "adjudication_rows": 7,
+  "segmentation_scenarios": 6,
+  "slot_contrast_report": "data/open_prototype/reports/lipi_034_m315_390_slot_contrasts.csv",
+  "stored_source_files": [
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m315_cisi1/n113_w2000.jpg",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m315_cisi1/n403_w2000.jpg",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/cisi_xml/Corpus of Indus Seals and Inscriptions. Collections in India_djvu.xml"
+  ],
+  "stored_visual_derivatives": [
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m315_cisi1/derived/m315_page78_header_context.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m315_cisi1/derived/m315_page78_header_context_gray_autocontrast.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m315_cisi1/derived/m315_upper_face_full_with_label.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m315_cisi1/derived/m315_upper_face_full_with_label_gray_autocontrast.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m315_cisi1/derived/m315_lower_impression_full_with_label.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m315_cisi1/derived/m315_lower_impression_full_with_label_gray_autocontrast.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m315_cisi1/derived/m315_upper_face_signs_close.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m315_cisi1/derived/m315_upper_face_signs_close_gray_autocontrast.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m315_cisi1/derived/m315_lower_impression_signs_close.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m315_cisi1/derived/m315_lower_impression_signs_close_gray_autocontrast.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m315_cisi1/derived/m315_upper_face_left_390_region.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m315_cisi1/derived/m315_upper_face_left_390_region_gray_autocontrast.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m315_cisi1/derived/m315_upper_face_second_034_region.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m315_cisi1/derived/m315_upper_face_second_034_region_gray_autocontrast.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m315_cisi1/derived/m315_lower_impression_right_390_region.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m315_cisi1/derived/m315_lower_impression_right_390_region_gray_autocontrast.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m315_cisi1/derived/m315_lower_impression_second_034_region.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m315_cisi1/derived/m315_lower_impression_second_034_region_gray_autocontrast.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m315_cisi1/derived/m315_page78_boxes_overlay.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m315_cisi1/derived/m315_data_page_row_context.png",
+    "C:/Users/Acer/OneDrive/Documents/ivc/tmp/m315_cisi1/derived/m315_data_page_row_context_gray_autocontrast.png"
+  ],
+  "positive_result": "CISI Vol. 1 p.78 is source-visible through IA leaf n113; it explicitly labels M-315 A and M-315 a under MOHENJO-DARO 313-317 SEALS, no iconography; silver. CISI data p.368 is also source-visible through IA leaf n403 and carries the M-315 data row.",
+  "adversarial_downgrade": "The source pages do not print the numeric six-sign transcription next to M-315. Local metadata VS 1190395 needs reconciliation with source-visible M-315 1395 VS 1190. Direction/orientation and exact token mapping remain gated.",
+  "contrast_result": "37 local rows match 390-X-002; only M-315 has 390-034-002. Only Ai-7, H-335, and M-315 begin 390-034.",
+  "decision": "source_visible_object_binding_yes; numeric_034_token_mapping_pending_blind_segmentation_and_signlist_crosscheck",
+  "accepted_object_visual_bindings": 1,
+  "accepted_source_mapping_claims": 0,
+  "accepted_sign_values": 0,
+  "accepted_sign_meanings": 0,
+  "accepted_translations": 0,
+  "ia_sources": {
+    "page78_reader": "https://archive.org/details/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan/Corpus%20of%20Indus%20Seals%20and%20Inscriptions.%20Collections%20in%20India/page/n113/mode/1up",
+    "page78_image": "https://archive.org/download/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan/Corpus%20of%20Indus%20Seals%20and%20Inscriptions.%20Collections%20in%20India/page/n113_w2000.jpg",
+    "data_page_reader": "https://archive.org/details/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan/Corpus%20of%20Indus%20Seals%20and%20Inscriptions.%20Collections%20in%20India/page/n403/mode/1up",
+    "data_page_image": "https://archive.org/download/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan/Corpus%20of%20Indus%20Seals%20and%20Inscriptions.%20Collections%20in%20India/page/n403_w2000.jpg",
+    "djvu_xml": "https://archive.org/download/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan/Corpus%20of%20Indus%20Seals%20and%20Inscriptions.%20Collections%20in%20India_djvu.xml"
+  },
+  "sent_source_requests": [
+    {
+      "recipient": "[harappa-project-email]",
+      "message_id": "[redacted-msgid]",
+      "purpose": "M-315 higher-resolution source image/sign transcription/direction request"
+    }
+  ]
+}

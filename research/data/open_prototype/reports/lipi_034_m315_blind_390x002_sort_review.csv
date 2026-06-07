@@ -1,0 +1,6 @@
+date,packet,blind_id,unblinded_object,unblinded_witness,local_code_or_sequence,reviewer_1_cluster,reviewer_2_cluster,reviewer_3_cluster,consensus,decision_use
+2026-05-26,strict_token2_from_context,S001,M-32,impression_a,003_control,A_or_short_vertical_bundle,B_or_tentative_near_S002,A_or_short_vertical_bundle,short separated vertical bundle; usable with caution,control_comparator_not_target
+2026-05-26,strict_token2_from_context,S002,M-315,lower_impression,034_candidate,A_or_short_vertical_bundle,B_singleton,A_or_short_vertical_bundle,does not join strongest S003-S005 pair; usable but not independent 034 confirmation,target_witness_failed_distinct_upgrade
+2026-05-26,strict_token2_from_context,S003,M-984,impression_a,004_control,B_or_comb_bundle,A_with_S005,B_with_S005,strongest pair with S005 across all reviewers,004_control_pressure
+2026-05-26,strict_token2_from_context,S004,M-17,impression_a,016_control,A_but_contaminated,composite_undecidable,A_but_contaminated,composite or stacked two-register sample; not clean isolated decision evidence,appendix_or_context_only
+2026-05-26,strict_token2_from_context,S005,M-315,upper_face,034_candidate,B_or_comb_bundle,A_with_S003,B_with_S003,strongest pair with S003 across all reviewers,target_upper_collapses_toward_004_control

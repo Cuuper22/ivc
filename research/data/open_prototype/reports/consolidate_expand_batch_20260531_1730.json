@@ -1,0 +1,622 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "wall_clock": "2026-05-31 17:30 America/Los_Angeles",
+  "candidate_id": "consolidate_expand_batch_20260531_1730",
+  "smallest_model": {
+    "tier": "promoted candidate cluster, not accepted",
+    "statement": "The live model is a register grammar, not a phonetic reading: 002/060 act as terminal governors whose final closures create real local unicity pressure; 095 marks a fragile independent copper TAB:C subregister; 405/806 mark a Bull1:W square-seal subtype with a Harappa-weighted distribution. The 740-X-590 frame is now demoted to repeated syntax only; its attempted semantic filler split failed.",
+    "carried_bets": [
+      "terminal_governor_unicity_pressure",
+      "095_independent_copper_subregister",
+      "405806_bull1w_square_seal_subtype",
+      "740_X_590_register_slot_frame_wild_shot"
+    ],
+    "excluded_bets": [
+      "390_external_personnel_or_title_register",
+      "055_to_brahmi_ra_descent",
+      "damaged_002000_terminal_resolution"
+    ]
+  },
+  "ranked_survivors": [
+    {
+      "rank": 1,
+      "tier": "candidate strengthening promoted terminal-governor model",
+      "bet": "002/060 terminal governors create effective-unicity pressure in the final slot.",
+      "evidence": {
+        "leave_site_text_family_rows": 456,
+        "target_top1_accuracy": 0.31140350877192985,
+        "target_top3_accuracy": 0.7872807017543859,
+        "non_target_top3_accuracy": 0.1766256590509666,
+        "target_mean_effective_candidates": 6.38896081349448,
+        "non_target_mean_effective_candidates": 15.712003184031857,
+        "final_label_shuffle": {
+          "iterations": 1000,
+          "p_ge_top1": 0.001,
+          "p_ge_top3": 0,
+          "p_le_effective_candidates": 0,
+          "p_ge_surprisal_delta": 0
+        },
+        "block_stress": {
+          "decision": "survives_remove_mohenjo_seal_s_unicity_stress",
+          "panels": [
+            {
+              "id": "all_complete_exact_text",
+              "target_rows": 456,
+              "target_top3": 0.7872807017543859,
+              "target_effective_candidates": 6.38896081349448,
+              "non_target_top3": 0.1766256590509666,
+              "null_iterations": 100,
+              "p_ge_target_top3": 0
+            },
+            {
+              "id": "remove_mohenjo_seal_s",
+              "target_rows": 234,
+              "target_top3": 0.7606837606837606,
+              "target_effective_candidates": 6.270818792951412,
+              "non_target_top3": 0.17052023121387283,
+              "null_iterations": 100,
+              "p_ge_target_top3": 0
+            },
+            {
+              "id": "remove_harappa_seal_s",
+              "target_rows": 407,
+              "target_top3": 0.8058968058968059,
+              "target_effective_candidates": 5.8814452078673565,
+              "non_target_top3": 0.16831683168316833,
+              "null_iterations": 100,
+              "p_ge_target_top3": 0
+            },
+            {
+              "id": "remove_mohenjo_and_harappa_seal_s",
+              "target_rows": 185,
+              "target_top3": 0.7783783783783784,
+              "target_effective_candidates": 5.849921384954632,
+              "non_target_top3": 0.15841584158415842,
+              "null_iterations": 100,
+              "p_ge_target_top3": 0
+            }
+          ]
+        },
+        "frequency_confound_check": {
+          "decision": "frequency_confound_not_sufficient",
+          "high_support_non_targets": [
+            {
+              "penult": "740",
+              "evaluated_rows": 133,
+              "top3_accuracy": 0.09022556390977443,
+              "mean_effective_candidates": 54.06583473522742
+            },
+            {
+              "penult": "220",
+              "evaluated_rows": 56,
+              "top3_accuracy": 0.2857142857142857,
+              "mean_effective_candidates": 13.740395385786659
+            },
+            {
+              "penult": "032",
+              "evaluated_rows": 55,
+              "top3_accuracy": 0.01818181818181818,
+              "mean_effective_candidates": 20.457835577759525
+            },
+            {
+              "penult": "390",
+              "evaluated_rows": 55,
+              "top3_accuracy": 0.12727272727272726,
+              "mean_effective_candidates": 18.6933383477539
+            }
+          ],
+          "low_support_warning": {
+            "penult": "240",
+            "evaluated_rows": 23,
+            "top3_accuracy": 0.6521739130434783,
+            "mean_effective_candidates": 4.925386577737421,
+            "interpretation": "This is the nearest non-target mimic by top3/effective-candidate behavior, but it has only 23 evaluated rows and should be treated as a future EXPAND bet, not as a matched frequency confound for 002/060."
+          }
+        }
+      },
+      "decision": "keep as live Vector 2 structural candidate; no phonetic/language-family claim",
+      "next_destructive_test": "Rerun block stress at higher iterations and add source-family collapse; demote if top3/effective-candidate advantage disappears after source-token boxing."
+    },
+    {
+      "rank": 2,
+      "tier": "candidate",
+      "bet": "095 is an independent copper TAB:C subregister sign, not merely a 407 passenger.",
+      "evidence": {
+        "total_095": 14,
+        "copper_tab_c_095": 5,
+        "without_407_support": 3,
+        "without_407_total_095": 11,
+        "source_visible_non407_witnesses": 3,
+        "family_stress": {
+          "decision": "survives_single_frame_collapse_but_fragile",
+          "non407_object_rows": 4,
+          "non407_exact_text_families": 3,
+          "non407_prefix_families": 2,
+          "non407_local_families": 3
+        },
+        "decision": "promote_095_to_candidate_independent_copper_subregister_marker; keep_845_407_dependent"
+      },
+      "decision": "keep within candidate tier but mark fragile; keep 845 as 407-dependent",
+      "next_destructive_test": "Source-family collapse of the 617-142-001-595-095 cluster; if M-519/M-520/M-1470 are one source family and M-599 is the only independent frame, demote 095 to frame-local variant."
+    },
+    {
+      "rank": 3,
+      "tier": "candidate, Harappa-weighted",
+      "bet": "405/806 mark a Bull1:W square-seal subtype/register.",
+      "evidence": {
+        "summary": "SEAL:S either 405/806: 35/374 vs 9/1171, p=6.020420199833131e-15, pair-rank=1/151525, target-label FPR=0. SEAL:S 405 alone: 19/374 vs 5/1171, rank=2/551, Bonferroni=0.000009303755079419767, maxstat=0. SEAL:S 806 alone: 20/374 vs 4/1171, rank=1/551, Bonferroni=6.941543638299855e-7, maxstat=0. Controls: square either p=7.228146492803221e-13, FPR=0; complete p=0.00007007039121420008, FPR=0; non-poor p=0.0003049036093433969, FPR=0.0002; without Mohenjo p=0.00000280502271942147, FPR=0; without Harappa p=0.026013649969892624, FPR=0.0244.",
+        "skeptic_verdict": "Survives the SEAL:S/square maxstat gate, but leave-Harappa and preservation controls are weaker; keep as a candidate, not a promoted or accepted semantic claim.",
+        "frame_confound_stress": {
+          "decision": "survives_frame_confound_as_at_least_one_sign",
+          "panels": [
+            {
+              "id": "square_seal_s_all",
+              "rows": 1721,
+              "bull1w_rows": 400,
+              "sign405": {
+                "a": 22,
+                "b": 378,
+                "c": 6,
+                "d": 1315,
+                "fisher_p": 6.51208138322886e-10,
+                "maxstat_fpr": 0
+              },
+              "sign806": {
+                "a": 20,
+                "b": 380,
+                "c": 4,
+                "d": 1317,
+                "fisher_p": 5.954330633744415e-10,
+                "maxstat_fpr": 0
+              },
+              "either": {
+                "a": 38,
+                "b": 362,
+                "c": 10,
+                "d": 1311,
+                "fisher_p": 1.2623379573230046e-16,
+                "maxstat_fpr": null
+              }
+            },
+            {
+              "id": "remove_740_405_590",
+              "rows": 1714,
+              "bull1w_rows": 394,
+              "sign405": {
+                "a": 16,
+                "b": 378,
+                "c": 5,
+                "d": 1315,
+                "fisher_p": 3.0107904941264754e-7,
+                "maxstat_fpr": 0
+              },
+              "sign806": {
+                "a": 19,
+                "b": 375,
+                "c": 4,
+                "d": 1316,
+                "fisher_p": 1.8096376793932293e-9,
+                "maxstat_fpr": 0
+              },
+              "either": {
+                "a": 32,
+                "b": 362,
+                "c": 9,
+                "d": 1311,
+                "fisher_p": 5.758757766845557e-14,
+                "maxstat_fpr": null
+              }
+            },
+            {
+              "id": "remove_any_740_x_590",
+              "rows": 1681,
+              "bull1w_rows": 387,
+              "sign405": {
+                "a": 16,
+                "b": 371,
+                "c": 5,
+                "d": 1289,
+                "fisher_p": 3.067612539790785e-7,
+                "maxstat_fpr": 0
+              },
+              "sign806": {
+                "a": 19,
+                "b": 368,
+                "c": 4,
+                "d": 1290,
+                "fisher_p": 1.8494439556998125e-9,
+                "maxstat_fpr": 0
+              },
+              "either": {
+                "a": 32,
+                "b": 355,
+                "c": 9,
+                "d": 1285,
+                "fisher_p": 5.93032111621988e-14,
+                "maxstat_fpr": null
+              }
+            },
+            {
+              "id": "remove_harappa",
+              "rows": 1413,
+              "bull1w_rows": 282,
+              "sign405": {
+                "a": 10,
+                "b": 272,
+                "c": 4,
+                "d": 1127,
+                "fisher_p": 0.000040655696691571014,
+                "maxstat_fpr": 0.002
+              },
+              "sign806": {
+                "a": 10,
+                "b": 272,
+                "c": 2,
+                "d": 1129,
+                "fisher_p": 0.0000039453292452529785,
+                "maxstat_fpr": 0
+              },
+              "either": {
+                "a": 19,
+                "b": 263,
+                "c": 6,
+                "d": 1125,
+                "fisher_p": 1.6553743963345154e-9,
+                "maxstat_fpr": null
+              }
+            },
+            {
+              "id": "remove_harappa_and_740x590",
+              "rows": 1389,
+              "bull1w_rows": 276,
+              "sign405": {
+                "a": 8,
+                "b": 268,
+                "c": 3,
+                "d": 1110,
+                "fisher_p": 0.00020955278949199178,
+                "maxstat_fpr": 0.014
+              },
+              "sign806": {
+                "a": 10,
+                "b": 266,
+                "c": 2,
+                "d": 1111,
+                "fisher_p": 0.000003773234143869313,
+                "maxstat_fpr": 0
+              },
+              "either": {
+                "a": 17,
+                "b": 259,
+                "c": 5,
+                "d": 1108,
+                "fisher_p": 7.725589935147335e-9,
+                "maxstat_fpr": null
+              }
+            }
+          ]
+        },
+        "nonharappa_806_source_peek": {
+          "decision": "candidate_survives_source_peek_not_source_boxed",
+          "checked_rows": 7,
+          "unrouted_or_unusable_rows": 3,
+          "skeptic_note": "This is not a blind source-token adjudication and cannot accept the semantic claim. It does block the immediate demotion that would follow if the non-Harappa 806 rows were catalogue ghosts or visibly mismapped."
+        }
+      },
+      "decision": "keep as candidate but split strength: 806 carries the hardest non-Harappa/frame survival; 405 remains a weaker partner",
+      "next_destructive_test": "Source-verify non-Harappa Bull1:W square seals carrying 806 and matched non-Bull1:W square controls; demote 405 first if source checks or harder controls keep it below maxstat threshold."
+    },
+    {
+      "rank": 4,
+      "tier": "wild shot demoted",
+      "bet": "740-X-590 is a repeated syntactic slot frame; the stronger claim that X cleanly selects the predicted semantic context class is not supported.",
+      "evidence": {
+        "frame_stress_decision": "demote_frame_to_frequency_pattern",
+        "exact_text_counts": [
+          {
+            "filler": "390",
+            "raw_rows": 54,
+            "exact_text_rows": 41
+          },
+          {
+            "filler": "405",
+            "raw_rows": 25,
+            "exact_text_rows": 17
+          },
+          {
+            "filler": "407",
+            "raw_rows": 17,
+            "exact_text_rows": 6
+          },
+          {
+            "filler": "406",
+            "raw_rows": 2,
+            "exact_text_rows": 2
+          }
+        ],
+        "top_390_contexts": [
+          {
+            "feature": "shape=square",
+            "a": 30,
+            "b": 11,
+            "c": 10,
+            "d": 18,
+            "fisher_p": 0.0021254332064370167,
+            "rank": 1,
+            "total_features": 90
+          },
+          {
+            "feature": "type_material=SEAL:S|Steatite",
+            "a": 27,
+            "b": 14,
+            "c": 8,
+            "d": 20,
+            "fisher_p": 0.0023835956205890845,
+            "rank": 2,
+            "total_features": 90
+          },
+          {
+            "feature": "class=IT",
+            "a": 10,
+            "b": 31,
+            "c": 0,
+            "d": 28,
+            "fisher_p": 0.0032970365334707994,
+            "rank": 3,
+            "total_features": 90
+          },
+          {
+            "feature": "type=SEAL:S",
+            "a": 29,
+            "b": 12,
+            "c": 10,
+            "d": 18,
+            "fisher_p": 0.004091866941965198,
+            "rank": 4,
+            "total_features": 90
+          },
+          {
+            "feature": "symbol=Bull1:J",
+            "a": 5,
+            "b": 36,
+            "c": 0,
+            "d": 28,
+            "fisher_p": 0.06668124154859001,
+            "rank": 5,
+            "total_features": 90
+          }
+        ],
+        "top_405_contexts": [
+          {
+            "feature": "symbol=None",
+            "a": 11,
+            "b": 6,
+            "c": 11,
+            "d": 41,
+            "fisher_p": 0.0014519772699061301,
+            "rank": 1,
+            "total_features": 41
+          },
+          {
+            "feature": "shape=cuboid-convex",
+            "a": 5,
+            "b": 12,
+            "c": 1,
+            "d": 51,
+            "fisher_p": 0.0027874461683675958,
+            "rank": 2,
+            "total_features": 41
+          },
+          {
+            "feature": "type_material=SEAL:R|Steatite",
+            "a": 6,
+            "b": 11,
+            "c": 3,
+            "d": 49,
+            "fisher_p": 0.0053039539948741025,
+            "rank": 3,
+            "total_features": 41
+          },
+          {
+            "feature": "type_symbol=SEAL:R|None",
+            "a": 6,
+            "b": 11,
+            "c": 5,
+            "d": 47,
+            "fisher_p": 0.020835662677971645,
+            "rank": 4,
+            "total_features": 41
+          },
+          {
+            "feature": "type=SEAL:R",
+            "a": 6,
+            "b": 11,
+            "c": 5,
+            "d": 47,
+            "fisher_p": 0.020835662677971645,
+            "rank": 5,
+            "total_features": 41
+          }
+        ],
+        "top_407_contexts": [
+          {
+            "feature": "type_symbol=SEAL:R|None",
+            "a": 4,
+            "b": 2,
+            "c": 7,
+            "d": 56,
+            "fisher_p": 0.004777778430296072,
+            "rank": 1,
+            "total_features": 36
+          },
+          {
+            "feature": "type=SEAL:R",
+            "a": 4,
+            "b": 2,
+            "c": 7,
+            "d": 56,
+            "fisher_p": 0.004777778430296072,
+            "rank": 2,
+            "total_features": 36
+          },
+          {
+            "feature": "symbol=None",
+            "a": 5,
+            "b": 1,
+            "c": 17,
+            "d": 46,
+            "fisher_p": 0.01094710272168559,
+            "rank": 3,
+            "total_features": 36
+          },
+          {
+            "feature": "type_material=SEAL:R|Steatite",
+            "a": 3,
+            "b": 3,
+            "c": 6,
+            "d": 57,
+            "fisher_p": 0.02590264833078752,
+            "rank": 4,
+            "total_features": 36
+          },
+          {
+            "feature": "shape=rectangular",
+            "a": 3,
+            "b": 3,
+            "c": 8,
+            "d": 55,
+            "fisher_p": 0.04724814350439544,
+            "rank": 5,
+            "total_features": 36
+          }
+        ],
+        "external_390_note": "The external-personnel version of 390 failed max-stat, so 390 may remain only as an internal frame filler until retested."
+      },
+      "decision": "demote semantic/context-sorted version; carry only as syntax-frequency wild shot",
+      "next_destructive_test": "Only reopen if a stricter syntactic test shows the frame predicts neighboring signs or terminal closures better than matched 740/590 controls."
+    }
+  ],
+  "killed_or_demoted_this_window": [
+    {
+      "bet": "390 is an external Meluhha personnel/title register marker.",
+      "prior_tier": "wild shot",
+      "decision": "killed as external bridge; optionally reusable only as an internal 740-X-590 filler",
+      "evidence": {
+        "main_390": {
+          "target": "390",
+          "kind": "signs",
+          "feature": "390",
+          "a": 5,
+          "b": 18,
+          "c": 189,
+          "d": 2663,
+          "fisher_p": 0.01645282137833582,
+          "rank": 7,
+          "total_features": 48,
+          "maxstat_fpr": 0.976
+        },
+        "leave_kish_390": {
+          "target": "390",
+          "kind": "signs",
+          "feature": "390",
+          "a": 4,
+          "b": 17,
+          "c": 189,
+          "d": 2663,
+          "fisher_p": 0.047944231554945295,
+          "rank": 12,
+          "total_features": 44,
+          "maxstat_fpr": 1
+        },
+        "leave_gonur_390": {
+          "target": "390",
+          "kind": "signs",
+          "feature": "390",
+          "a": 4,
+          "b": 18,
+          "c": 189,
+          "d": 2663,
+          "fisher_p": 0.05557135798233655,
+          "rank": 12,
+          "total_features": 45,
+          "maxstat_fpr": 1
+        },
+        "main_740390": {
+          "target": "740-390",
+          "kind": "pairs",
+          "feature": "740-390",
+          "a": 2,
+          "b": 21,
+          "c": 34,
+          "d": 2818,
+          "fisher_p": 0.03270931959739427,
+          "rank": 43,
+          "total_features": 54,
+          "maxstat_fpr": 1
+        },
+        "main_390590": {
+          "target": "390-590",
+          "kind": "pairs",
+          "feature": "390-590",
+          "a": 2,
+          "b": 21,
+          "c": 48,
+          "d": 2804,
+          "fisher_p": 0.05945932124335897,
+          "rank": 47,
+          "total_features": 54,
+          "maxstat_fpr": 1
+        }
+      },
+      "reason": "Raw enrichment loses under all-feature max-stat and leaves no robust Kish/Gonur-independent external signal."
+    },
+    {
+      "bet": "055 descends to Brahmi ra.",
+      "prior_tier": "wild shot",
+      "decision": "killed",
+      "evidence": "Subagent source audit: 11/11 nearest-neighbor ra was a high-collision vertical-stroke attractor; shape-null 0.097727 and only two object families.",
+      "reason": "Fails the <=0.01 shape-null bar and is orientation/source-support sensitive."
+    },
+    {
+      "bet": "Damaged 002-000 rows adjudicate terminal closure predictions now.",
+      "prior_tier": "wild shot unresolved",
+      "decision": "risky_prediction_not_promoted_no_clean_source_adjudicator_found",
+      "evidence": "No checked damaged source image gave a clean terminal-slot assignment without over-reading.",
+      "reason": "No promotion or demotion; keep the model unchanged."
+    },
+    {
+      "bet": "845 is an independent copper subregister marker.",
+      "prior_tier": "candidate screen",
+      "decision": "demoted to 407-dependent passenger",
+      "evidence": {
+        "total_845": 15,
+        "copper_tab_c_845": 6,
+        "without_407_support": 0,
+        "without_407_total_845": 4
+      },
+      "reason": "The signal vanishes when 407 rows are removed."
+    }
+  ],
+  "contradictions_to_resolve": [
+    {
+      "contradiction": "405 is both part of the Bull1:W subtype candidate and a filler in the 740-X-590 frame.",
+      "resolution_for_now": "Do not use the frame to support the Bull1:W candidate. The frame-internal 405 context skew is SEAL:R/None, not Bull1:W; this forces a split between standalone 405/806 icon-subtype behavior and 740-405-590 frame behavior."
+    },
+    {
+      "contradiction": "390 failed external-personnel max-stat but is the most common 740-X-590 filler.",
+      "resolution_for_now": "Kill the external/personnel semantics. The frame stress says 390 is mostly square/SEAL:S inside this frame, not a readable Meluhha title bridge."
+    },
+    {
+      "contradiction": "Terminal-governor unicity is strong but non-target penults show larger mean surprisal delta.",
+      "resolution_for_now": "Use top-k accuracy and effective-candidate collapse as the carried signal, not surprisal delta alone; rerun source-family and leave-block stress before promotion."
+    }
+  ],
+  "next_expand_tests": [
+    "Reopen 740-X-590 only with a syntactic-neighbor prediction test; the semantic filler-context version is demoted.",
+    "Rerun terminal-governor unicity block stress at higher iterations, then add source-family/source-token collapse.",
+    "Run 095 source-family collapse and duplicate-family stress over the three non-407 witnesses.",
+    "Run non-Harappa source audit for 405/806 Bull1:W square seals and matched controls."
+  ],
+  "acceptance_status": "No new accepted claim. The strongest newly promoted object is a candidate-level structural/effective-unicity result local to terminal governors."
+}

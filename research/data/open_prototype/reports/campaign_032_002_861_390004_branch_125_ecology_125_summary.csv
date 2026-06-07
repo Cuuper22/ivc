@@ -1,0 +1,9 @@
+metric,value,decision_relevance
+all_125_occurrences,59,denominator
+terminal_125,17,125 is often terminal but not mostly terminal
+immediate_after_861,2,"only two 861-125 cases, one outside 002-861"
+immediate_after_002_861,1,"H-55 singleton, not grammar"
+in_390004_frame,2,H-55 and Sktd-1 only; different branch contexts
+top_prev1,390:9;<START>:5;350:4;700:3;000:3;590:3;406:2;861:2,tests whether 125 is more tied to 390/861/other frames
+top_prev2,:5;002 390:4;700:3;741 390:3;297 350:2;000:2;390 590:2;002 610:2;400:2;090:2,002-390-125 emerges as a separate subbranch from 002-861-125
+ecology_classes,other_nonterminal_125:38;other_terminal_125:15;post_002_390_125_continuation:4;post_861_terminal_125_outside_002_861:1;singleton_post_002_861_terminal_125:1,class split used for next batch

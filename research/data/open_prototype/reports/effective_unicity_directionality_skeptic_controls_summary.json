@@ -1,0 +1,148 @@
+{
+  "date": "2026-05-29",
+  "generated_at_utc": "2026-05-29T08:11:17.442Z",
+  "purpose": "Skeptic controls for the Vector 2 directionality candidate: source-visible 861 terminal/tail sensitivity and matched-overlap block-conditioned edge/slot nulls.",
+  "method": {
+    "null_iterations_per_control": 200,
+    "source_visible_boundary": "The 861 subset is target-selected and tiny. It is a source-visible sensitivity probe only, not source-normalized directionality evidence.",
+    "matched_overlap_boundary": "The matched overlap uses provisional position alignment and zero accepted crosswalk edges. Block-conditioned nulls preserve edge signs, length-position slots, symbol/type/material block, and catalog block where specified."
+  },
+  "primary_results": {
+    "source_visible_861_terminal_tail_probe": {
+      "corpus": "source_visible_861_terminal_tail_probe",
+      "scope": "tailed_and_bare_source_visible_rows",
+      "source": "campaign_032_002_861_source_token_attachment_verdicts.csv + campaign_032_002_861_bare_edge_source_controls_rows.csv",
+      "rows": 12,
+      "tokens": 87,
+      "unique_tokens": 36,
+      "stored_higher": 12,
+      "reversed_higher": 0,
+      "ties": 0,
+      "stored_win_share": 1,
+      "mean_stored_minus_reversed_per_transition": 2.190733,
+      "max_null_ge_observed_share": 1
+    },
+    "matched_overlap_lipi_top10_edge_removed": {
+      "corpus": "matched_overlap_lipi_side",
+      "scope": "top10_edge_removed",
+      "source": "crosswalk_alignment_pairs.csv joined to lipi_scope_rows.csv",
+      "rows": 22,
+      "tokens": 96,
+      "unique_tokens": 72,
+      "stored_higher": 8,
+      "reversed_higher": 0,
+      "ties": 14,
+      "stored_win_share": 0.363636,
+      "mean_stored_minus_reversed_per_transition": 0.164963,
+      "max_null_ge_observed_share": 1
+    },
+    "matched_overlap_mayig_top10_edge_removed": {
+      "corpus": "matched_overlap_mayig_side",
+      "scope": "top10_edge_removed",
+      "source": "crosswalk_alignment_pairs.csv joined to lipi_scope_rows.csv",
+      "rows": 19,
+      "tokens": 80,
+      "unique_tokens": 58,
+      "stored_higher": 9,
+      "reversed_higher": 0,
+      "ties": 10,
+      "stored_win_share": 0.473684,
+      "mean_stored_minus_reversed_per_transition": 0.274611,
+      "max_null_ge_observed_share": 1
+    },
+    "strongest_overlap_null_attack": {
+      "corpus": "matched_overlap_lipi_side",
+      "scope": "top10_edge_removed",
+      "control": "edge_symbol_catalog_position_shuffle",
+      "metric": "stored_win_share",
+      "iterations": 200,
+      "observed": 0.363636,
+      "null_mean": 0.363636,
+      "null_p05": 0.363636,
+      "null_median": 0.363636,
+      "null_p95": 0.363636,
+      "null_max": 0.363636,
+      "null_ge_observed_share": 1
+    }
+  },
+  "rows": [
+    {
+      "corpus": "source_visible_861_terminal_tail_probe",
+      "scope": "tailed_and_bare_source_visible_rows",
+      "source": "campaign_032_002_861_source_token_attachment_verdicts.csv + campaign_032_002_861_bare_edge_source_controls_rows.csv",
+      "rows": 12,
+      "tokens": 87,
+      "unique_tokens": 36,
+      "stored_higher": 12,
+      "reversed_higher": 0,
+      "ties": 0,
+      "stored_win_share": 1,
+      "mean_stored_minus_reversed_per_transition": 2.190733,
+      "max_null_ge_observed_share": 1
+    },
+    {
+      "corpus": "matched_overlap_lipi_side",
+      "scope": "exact_collapsed",
+      "source": "crosswalk_alignment_pairs.csv joined to lipi_scope_rows.csv",
+      "rows": 128,
+      "tokens": 661,
+      "unique_tokens": 179,
+      "stored_higher": 120,
+      "reversed_higher": 3,
+      "ties": 5,
+      "stored_win_share": 0.9375,
+      "mean_stored_minus_reversed_per_transition": 1.661765,
+      "max_null_ge_observed_share": 0.035
+    },
+    {
+      "corpus": "matched_overlap_mayig_side",
+      "scope": "exact_collapsed",
+      "source": "crosswalk_alignment_pairs.csv joined to lipi_scope_rows.csv",
+      "rows": 127,
+      "tokens": 657,
+      "unique_tokens": 155,
+      "stored_higher": 118,
+      "reversed_higher": 5,
+      "ties": 4,
+      "stored_win_share": 0.929134,
+      "mean_stored_minus_reversed_per_transition": 1.737877,
+      "max_null_ge_observed_share": 0.2
+    },
+    {
+      "corpus": "matched_overlap_lipi_side",
+      "scope": "top10_edge_removed",
+      "source": "crosswalk_alignment_pairs.csv joined to lipi_scope_rows.csv",
+      "rows": 22,
+      "tokens": 96,
+      "unique_tokens": 72,
+      "stored_higher": 8,
+      "reversed_higher": 0,
+      "ties": 14,
+      "stored_win_share": 0.363636,
+      "mean_stored_minus_reversed_per_transition": 0.164963,
+      "max_null_ge_observed_share": 1
+    },
+    {
+      "corpus": "matched_overlap_mayig_side",
+      "scope": "top10_edge_removed",
+      "source": "crosswalk_alignment_pairs.csv joined to lipi_scope_rows.csv",
+      "rows": 19,
+      "tokens": 80,
+      "unique_tokens": 58,
+      "stored_higher": 9,
+      "reversed_higher": 0,
+      "ties": 10,
+      "stored_win_share": 0.473684,
+      "mean_stored_minus_reversed_per_transition": 0.274611,
+      "max_null_ge_observed_share": 1
+    }
+  ],
+  "artifact_files": [
+    "data/open_prototype/tools/effective_unicity_directionality_skeptic_controls.mjs",
+    "data/open_prototype/reports/effective_unicity_directionality_skeptic_controls_summary.json",
+    "data/open_prototype/reports/effective_unicity_directionality_skeptic_controls.csv",
+    "data/open_prototype/reports/effective_unicity_directionality_skeptic_null_summary.csv",
+    "data/open_prototype/reports/effective_unicity_directionality_skeptic_null_iterations.csv",
+    "data/open_prototype/reports/effective_unicity_directionality_source_visible_861_rows.csv"
+  ]
+}

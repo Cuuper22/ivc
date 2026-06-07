@@ -1,0 +1,32 @@
+{
+  "date": "2026-05-26",
+  "question": "Do H-940 B, the H-2147 candidate component, and H-2148 single-sign panel form one visually coherent branch for local 110 / Parpola sign no. 41?",
+  "neutral_sheet": {
+    "path": "tmp/h2148_h2100_h2152_110_route/derived/h940_h2147_h2148_110_branch_neutral_precheck_sheet_clean.png",
+    "sha256": "01e028a53abe23b419c03e9d72c4a5a38fd8a653f92b42f5ec1002c2dbd41f11"
+  },
+  "result": "Split at current source-crop quality, with a correction: H-2147 is no longer a candidate clean single-sign panel. H-2148 (S001) and the right component visible in H-2147 (S003) form only a loose visual-family candidate; H-940 B (S002) is too low-quality and graphically different enough that it cannot bind into the same class.",
+  "unblinding": {
+    "S001": "H-2148 Kenoyer 2005 Figure 14.1 single-sign panel",
+    "S002": "H-940 B source-visible local +110+ panel, label removed",
+    "S003": "H-2147 Figure 10.17 right candidate component inside a multi-component panel"
+  },
+  "accepted_claims": {
+    "h2148_h2147_loose_candidate": "S001 and the H-2147 right component are a loose visual-family candidate only.",
+    "h940_not_current_positive_bind": "S002 does not currently bind the class at available crop quality.",
+    "crosswalk_status": "local 110 <-> Parpola sign no. 41 remains unaccepted.",
+    "h2147_demoted": "Raw-page recrop demotes H-2147 from candidate single-sign panel to component-level pressure only."
+  },
+  "not_accepted": [
+    "H-2147 lower panel is a clean single-sign 110 witness",
+    "clean three-object visual match",
+    "local 110 equals Parpola sign no. 41",
+    "H-2147 row-to-panel mapping",
+    "H-940 B as decisive positive support",
+    "sign value",
+    "phonetic value",
+    "language identification",
+    "translation"
+  ],
+  "next_gate": "Acquire source-side/sign notes for H-2147 Figure 27.14 and a better H-940 B source panel; then retest H-2148 single-sign panel against H-2147 component and H-940 B under comparable source quality."
+}

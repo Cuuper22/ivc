@@ -1,0 +1,159 @@
+{
+  "date": "2026-05-29",
+  "status": "audit_passed_with_caveats",
+  "manifest_status": "provenance_tagged_scaffold_no_accepted_crosswalk_edges",
+  "counts": {
+    "sign_systems": 5,
+    "signs": 1782,
+    "artifact_witnesses": 5858,
+    "crosswalk_edges": 1085,
+    "evidence_refs": 5,
+    "namespace_gates": 4,
+    "review_events": 2
+  },
+  "manifest_counts_match_files": true,
+  "duplicate_primary_keys": 0,
+  "dangling_reference_errors": 0,
+  "evidence_hash_or_path_errors": 0,
+  "accepted_crosswalk_edges": 0,
+  "edge_status_by_accepted_for_analysis": {
+    "false": 1085
+  },
+  "edge_confidence_counts": {
+    "low": 21,
+    "medium_low": 14,
+    "source_metadata_only": 896,
+    "very_low": 154
+  },
+  "edge_review_status_counts": {
+    "needs_icit_wells_validation": 311,
+    "needs_image_or_authoritative_sign_list_validation": 189,
+    "needs_m77_validation": 200,
+    "needs_primary_sign_list_validation": 385
+  },
+  "provenance_tier_counts": {
+    "T2_open_wip": 179,
+    "T3_quarantined_metadata": 5679
+  },
+  "namespace_gate_status_counts": {
+    "blocked": 3,
+    "open_pressure_not_accepted": 1
+  },
+  "multi_edge_from_signs": 178,
+  "multi_edge_to_signs": 31,
+  "top_collision_pressure": [
+    {
+      "side": "from_sign_uid",
+      "sign_uid": "mayig_p:P205",
+      "candidate_edge_count": 20
+    },
+    {
+      "side": "from_sign_uid",
+      "sign_uid": "mayig_p:P270",
+      "candidate_edge_count": 18
+    },
+    {
+      "side": "from_sign_uid",
+      "sign_uid": "mayig_p:P086",
+      "candidate_edge_count": 15
+    },
+    {
+      "side": "from_sign_uid",
+      "sign_uid": "mayig_p:P186",
+      "candidate_edge_count": 15
+    },
+    {
+      "side": "from_sign_uid",
+      "sign_uid": "mayig_p:P355",
+      "candidate_edge_count": 12
+    },
+    {
+      "side": "from_sign_uid",
+      "sign_uid": "mayig_p:P332",
+      "candidate_edge_count": 11
+    },
+    {
+      "side": "from_sign_uid",
+      "sign_uid": "mayig_p:P043",
+      "candidate_edge_count": 10
+    },
+    {
+      "side": "from_sign_uid",
+      "sign_uid": "mayig_p:P124",
+      "candidate_edge_count": 10
+    },
+    {
+      "side": "from_sign_uid",
+      "sign_uid": "mayig_p:P275",
+      "candidate_edge_count": 10
+    },
+    {
+      "side": "from_sign_uid",
+      "sign_uid": "mayig_p:P003",
+      "candidate_edge_count": 9
+    },
+    {
+      "side": "from_sign_uid",
+      "sign_uid": "mayig_p:P091",
+      "candidate_edge_count": 9
+    },
+    {
+      "side": "from_sign_uid",
+      "sign_uid": "mayig_p:P117",
+      "candidate_edge_count": 9
+    },
+    {
+      "side": "from_sign_uid",
+      "sign_uid": "mayig_p:P121",
+      "candidate_edge_count": 9
+    },
+    {
+      "side": "from_sign_uid",
+      "sign_uid": "mayig_p:P004",
+      "candidate_edge_count": 8
+    },
+    {
+      "side": "from_sign_uid",
+      "sign_uid": "mayig_p:P067",
+      "candidate_edge_count": 8
+    },
+    {
+      "side": "from_sign_uid",
+      "sign_uid": "mayig_p:P125",
+      "candidate_edge_count": 8
+    },
+    {
+      "side": "from_sign_uid",
+      "sign_uid": "mayig_p:P126",
+      "candidate_edge_count": 8
+    },
+    {
+      "side": "from_sign_uid",
+      "sign_uid": "mayig_p:P136",
+      "candidate_edge_count": 8
+    },
+    {
+      "side": "from_sign_uid",
+      "sign_uid": "mayig_p:P268",
+      "candidate_edge_count": 8
+    },
+    {
+      "side": "from_sign_uid",
+      "sign_uid": "mayig_p:P316",
+      "candidate_edge_count": 8
+    }
+  ],
+  "high_pressure_edge_rows": 25,
+  "issue_counts_by_severity": {
+    "warning": 8
+  },
+  "issue_counts_by_code": {
+    "empty_sign_sequence": 8
+  },
+  "artifact_files": {
+    "audit_summary": "data/sign_crosswalk/audit_summary.json",
+    "audit_issues": "data/sign_crosswalk/audit_issues.csv",
+    "edge_pressure_summary": "data/sign_crosswalk/edge_pressure_summary.csv"
+  },
+  "interpretation_boundary": "This audit validates dataset hygiene and caveats only. It does not accept crosswalk mappings, allographs, phonetic values, sign meanings, or translations."
+}

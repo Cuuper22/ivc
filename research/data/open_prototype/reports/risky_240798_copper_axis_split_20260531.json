@@ -1,0 +1,668 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_240798_copper_axis_split_20260531",
+  "tier": "candidate",
+  "bet": "Within terminal 240 rows, closure 798 selects the 407/845/095 copper-administrative axis while closure 235 avoids it.",
+  "source": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\lipi\\metadata_filtered.csv",
+  "exact_text_240_rows": 23,
+  "positive_label": "final=798",
+  "target_feature": {
+    "feature": "has_407_or_845_or_095",
+    "a": 3,
+    "b": 2,
+    "c": 0,
+    "d": 18,
+    "fisher_p": 0.0056465273856577455,
+    "rank": 1,
+    "total_features": 20,
+    "maxstat_fpr": 0.0306
+  },
+  "top_context_features_for_240_798": [
+    {
+      "feature": "has_407_or_845_or_095",
+      "a": 3,
+      "b": 2,
+      "c": 0,
+      "d": 18,
+      "fisher_p": 0.0056465273856577455,
+      "rank": 1,
+      "total_features": 20
+    },
+    {
+      "feature": "copper_or_TAB_C",
+      "a": 2,
+      "b": 3,
+      "c": 0,
+      "d": 18,
+      "fisher_p": 0.03952569169960457,
+      "rank": 2,
+      "total_features": 20
+    },
+    {
+      "feature": "has_407",
+      "a": 2,
+      "b": 3,
+      "c": 0,
+      "d": 18,
+      "fisher_p": 0.03952569169960457,
+      "rank": 3,
+      "total_features": 20
+    },
+    {
+      "feature": "has_845",
+      "a": 2,
+      "b": 3,
+      "c": 0,
+      "d": 18,
+      "fisher_p": 0.03952569169960457,
+      "rank": 4,
+      "total_features": 20
+    },
+    {
+      "feature": "material=Copper",
+      "a": 2,
+      "b": 3,
+      "c": 0,
+      "d": 18,
+      "fisher_p": 0.03952569169960457,
+      "rank": 5,
+      "total_features": 20
+    },
+    {
+      "feature": "type=TAB:C",
+      "a": 2,
+      "b": 3,
+      "c": 0,
+      "d": 18,
+      "fisher_p": 0.03952569169960457,
+      "rank": 6,
+      "total_features": 20
+    },
+    {
+      "feature": "has_095",
+      "a": 1,
+      "b": 4,
+      "c": 0,
+      "d": 18,
+      "fisher_p": 0.2173913043478236,
+      "rank": 7,
+      "total_features": 20
+    },
+    {
+      "feature": "material=Faience",
+      "a": 1,
+      "b": 4,
+      "c": 0,
+      "d": 18,
+      "fisher_p": 0.2173913043478236,
+      "rank": 8,
+      "total_features": 20
+    },
+    {
+      "feature": "symbol=-",
+      "a": 1,
+      "b": 4,
+      "c": 0,
+      "d": 18,
+      "fisher_p": 0.2173913043478236,
+      "rank": 9,
+      "total_features": 20
+    },
+    {
+      "feature": "symbol=Othr",
+      "a": 1,
+      "b": 4,
+      "c": 0,
+      "d": 18,
+      "fisher_p": 0.2173913043478236,
+      "rank": 10,
+      "total_features": 20
+    },
+    {
+      "feature": "symbol=Tigr",
+      "a": 1,
+      "b": 4,
+      "c": 0,
+      "d": 18,
+      "fisher_p": 0.2173913043478236,
+      "rank": 11,
+      "total_features": 20
+    },
+    {
+      "feature": "symbol=Unknown",
+      "a": 1,
+      "b": 4,
+      "c": 0,
+      "d": 18,
+      "fisher_p": 0.2173913043478236,
+      "rank": 12,
+      "total_features": 20
+    }
+  ],
+  "rows": [
+    {
+      "text": "+032-031/151-740-240-235+",
+      "final": "235",
+      "sites": [
+        "Chanhu-daro"
+      ],
+      "types": [
+        "SEAL:S"
+      ],
+      "materials": [
+        "Steatite"
+      ],
+      "symbols": [
+        "Bull1:II"
+      ],
+      "has407": false,
+      "has845": false,
+      "has095": false,
+      "cisis": [
+        "C-70"
+      ]
+    },
+    {
+      "text": "+240-220+",
+      "final": "220",
+      "sites": [
+        "Farmana"
+      ],
+      "types": [
+        "SEAL:S"
+      ],
+      "materials": [
+        "Steatite"
+      ],
+      "symbols": [
+        "Bull1"
+      ],
+      "has407": false,
+      "has845": false,
+      "has095": false,
+      "cisis": [
+        "-"
+      ]
+    },
+    {
+      "text": "+090-740-240-220+",
+      "final": "220",
+      "sites": [
+        "Harappa"
+      ],
+      "types": [
+        "TAB:I"
+      ],
+      "materials": [
+        "Steatite"
+      ],
+      "symbols": [
+        "S590"
+      ],
+      "has407": false,
+      "has845": false,
+      "has095": false,
+      "cisis": [
+        "H-294"
+      ]
+    },
+    {
+      "text": "+520-220-415-240-803+",
+      "final": "803",
+      "sites": [
+        "Harappa"
+      ],
+      "types": [
+        "TAB:B"
+      ],
+      "materials": [
+        "Clay"
+      ],
+      "symbols": [
+        "Zebu"
+      ],
+      "has407": false,
+      "has845": false,
+      "has095": false,
+      "cisis": [
+        "H-1953"
+      ]
+    },
+    {
+      "text": "+400-740-920-320-233-240-798+",
+      "final": "798",
+      "sites": [
+        "Harappa"
+      ],
+      "types": [
+        "TAB:B"
+      ],
+      "materials": [
+        "Faience"
+      ],
+      "symbols": [
+        "None"
+      ],
+      "has407": false,
+      "has845": false,
+      "has095": false,
+      "cisis": [
+        "H-1922",
+        "H-248"
+      ]
+    },
+    {
+      "text": "+090-740-240-235+",
+      "final": "235",
+      "sites": [
+        "Harappa"
+      ],
+      "types": [
+        "TAB:I",
+        "TAB:B"
+      ],
+      "materials": [
+        "Steatite",
+        "Clay"
+      ],
+      "symbols": [
+        "S590",
+        "Gavi"
+      ],
+      "has407": false,
+      "has845": false,
+      "has095": false,
+      "cisis": [
+        "H-2055",
+        "H-2054",
+        "H-2020",
+        "H-2019"
+      ]
+    },
+    {
+      "text": "+740-752-463-495-240-415+",
+      "final": "415",
+      "sites": [
+        "Harappa"
+      ],
+      "types": [
+        "TAB:B"
+      ],
+      "materials": [
+        "Clay"
+      ],
+      "symbols": [
+        "Phyt"
+      ],
+      "has407": false,
+      "has845": false,
+      "has095": false,
+      "cisis": [
+        "H-2021"
+      ]
+    },
+    {
+      "text": "+520-240-235+",
+      "final": "235",
+      "sites": [
+        "Harappa"
+      ],
+      "types": [
+        "SEAL:R"
+      ],
+      "materials": [
+        "Steatite"
+      ],
+      "symbols": [
+        "None"
+      ],
+      "has407": false,
+      "has845": false,
+      "has095": false,
+      "cisis": [
+        "H-148"
+      ]
+    },
+    {
+      "text": "+090-740-240-031+",
+      "final": "031",
+      "sites": [
+        "Harappa"
+      ],
+      "types": [
+        "SEAL:S"
+      ],
+      "materials": [
+        "Steatite"
+      ],
+      "symbols": [
+        "Bull1:W"
+      ],
+      "has407": false,
+      "has845": false,
+      "has095": false,
+      "cisis": [
+        "H-440"
+      ]
+    },
+    {
+      "text": "+520-095-033-706-240-798+",
+      "final": "798",
+      "sites": [
+        "Harappa"
+      ],
+      "types": [
+        "SEAL:R"
+      ],
+      "materials": [
+        "-"
+      ],
+      "symbols": [
+        "None"
+      ],
+      "has407": false,
+      "has845": false,
+      "has095": true,
+      "cisis": [
+        "H-660"
+      ]
+    },
+    {
+      "text": "+740-904-240-235+",
+      "final": "235",
+      "sites": [
+        "Lothal"
+      ],
+      "types": [
+        "SEAL:R"
+      ],
+      "materials": [
+        "Shell"
+      ],
+      "symbols": [
+        "None"
+      ],
+      "has407": false,
+      "has845": false,
+      "has095": false,
+      "cisis": [
+        "L-111"
+      ]
+    },
+    {
+      "text": "+151-055-240-235+",
+      "final": "235",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "SEAL:S"
+      ],
+      "materials": [
+        "Steatite"
+      ],
+      "symbols": [
+        "Gaur"
+      ],
+      "has407": false,
+      "has845": false,
+      "has095": false,
+      "cisis": [
+        "M-1885"
+      ]
+    },
+    {
+      "text": "+740-100-240-031+",
+      "final": "031",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "SEAL:R"
+      ],
+      "materials": [
+        "Steatite"
+      ],
+      "symbols": [
+        "None"
+      ],
+      "has407": false,
+      "has845": false,
+      "has095": false,
+      "cisis": [
+        "M-1982"
+      ]
+    },
+    {
+      "text": "+407-063-845-240-798+",
+      "final": "798",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "TAB:C"
+      ],
+      "materials": [
+        "Copper"
+      ],
+      "symbols": [
+        "Unknown"
+      ],
+      "has407": true,
+      "has845": true,
+      "has095": false,
+      "cisis": [
+        "-"
+      ]
+    },
+    {
+      "text": "+740-690-435-255-240-235+",
+      "final": "235",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "SEAL:R"
+      ],
+      "materials": [
+        "-"
+      ],
+      "symbols": [
+        "None"
+      ],
+      "has407": false,
+      "has845": false,
+      "has095": false,
+      "cisis": [
+        "M-377"
+      ]
+    },
+    {
+      "text": "+407-061-845-240-798+",
+      "final": "798",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "TAB:C"
+      ],
+      "materials": [
+        "Copper"
+      ],
+      "symbols": [
+        "Gaur",
+        "Tigr",
+        "-",
+        "Othr"
+      ],
+      "has407": true,
+      "has845": true,
+      "has095": false,
+      "cisis": [
+        "M-567",
+        "M-568",
+        "M-569",
+        "M-1515",
+        "M-1516",
+        "M-1517"
+      ]
+    },
+    {
+      "text": "+740-772-240-803+",
+      "final": "803",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "SEAL:S"
+      ],
+      "materials": [
+        "Steatite"
+      ],
+      "symbols": [
+        "Bull1:W"
+      ],
+      "has407": false,
+      "has845": false,
+      "has095": false,
+      "cisis": [
+        "M-705"
+      ]
+    },
+    {
+      "text": "+520-240-806+",
+      "final": "806",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "SEAL"
+      ],
+      "materials": [
+        "Steatite"
+      ],
+      "symbols": [
+        "None"
+      ],
+      "has407": false,
+      "has845": false,
+      "has095": false,
+      "cisis": [
+        "M-759"
+      ]
+    },
+    {
+      "text": "+740-927-240-031+",
+      "final": "031",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "SEAL:S"
+      ],
+      "materials": [
+        "Steatite"
+      ],
+      "symbols": [
+        "Bull1:S"
+      ],
+      "has407": false,
+      "has845": false,
+      "has095": false,
+      "cisis": [
+        "M-951"
+      ]
+    },
+    {
+      "text": "+520-220-240-235+",
+      "final": "235",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "SEAL:S"
+      ],
+      "materials": [
+        "-"
+      ],
+      "symbols": [
+        "Bull1:W"
+      ],
+      "has407": false,
+      "has845": false,
+      "has095": false,
+      "cisis": [
+        "M-962"
+      ]
+    },
+    {
+      "text": "+740-455-240-235+",
+      "final": "235",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "SEAL:S"
+      ],
+      "materials": [
+        "Steatite"
+      ],
+      "symbols": [
+        "Gaur"
+      ],
+      "has407": false,
+      "has845": false,
+      "has095": false,
+      "cisis": [
+        "M-1096"
+      ]
+    },
+    {
+      "text": "+520-033-706-240-235+",
+      "final": "235",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "SEAL:R"
+      ],
+      "materials": [
+        "-"
+      ],
+      "symbols": [
+        "None"
+      ],
+      "has407": false,
+      "has845": false,
+      "has095": false,
+      "cisis": [
+        "M-1269"
+      ]
+    },
+    {
+      "text": "+527-555-231-240-798+",
+      "final": "798",
+      "sites": [
+        "Mohenjo-daro"
+      ],
+      "types": [
+        "SEAL:R"
+      ],
+      "materials": [
+        "Steatite"
+      ],
+      "symbols": [
+        "None"
+      ],
+      "has407": false,
+      "has845": false,
+      "has095": false,
+      "cisis": [
+        "M-1320"
+      ]
+    }
+  ],
+  "decision": "candidate_240798_copper_axis_split",
+  "caveat": "Support is very small: 5 rows have final 798 and only 3 carry 407/845/095. This is a candidate to attack, not a semantic claim."
+}

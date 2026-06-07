@@ -1,0 +1,75 @@
+{
+  "date": "2026-05-29",
+  "strict_corpus_rows_scanned": 4011,
+  "tail_units": [
+    "603",
+    "533 717",
+    "255 416",
+    "096",
+    "416",
+    "698",
+    "000"
+  ],
+  "family_rows": 7,
+  "occurrence_rows": 876,
+  "priority_units": [
+    {
+      "unit": "603",
+      "evidence_role": "mixed_tail_with_bare_controls",
+      "distribution_class": "mixed_post_002_861_and_independent",
+      "strict_tail_rows_after_002_861": "3",
+      "occurrences_anywhere": "7",
+      "source_visible_bare_prefix_last2_controls": "H-444;M-723;M-1044"
+    },
+    {
+      "unit": "533 717",
+      "evidence_role": "restricted_tail_with_bare_controls",
+      "distribution_class": "restricted_to_002_861_in_current_strict_layer",
+      "strict_tail_rows_after_002_861": "2",
+      "occurrences_anywhere": "2",
+      "source_visible_bare_prefix_last2_controls": ""
+    },
+    {
+      "unit": "255 416",
+      "evidence_role": "restricted_tail_with_bare_controls",
+      "distribution_class": "restricted_to_002_861_in_current_strict_layer",
+      "strict_tail_rows_after_002_861": "1",
+      "occurrences_anywhere": "1",
+      "source_visible_bare_prefix_last2_controls": "H-444;M-723;M-1044"
+    },
+    {
+      "unit": "096",
+      "evidence_role": "broad_or_low_priority_distribution",
+      "distribution_class": "mixed_post_002_861_and_independent",
+      "strict_tail_rows_after_002_861": "1",
+      "occurrences_anywhere": "2",
+      "source_visible_bare_prefix_last2_controls": ""
+    },
+    {
+      "unit": "416",
+      "evidence_role": "broad_or_low_priority_distribution",
+      "distribution_class": "mixed_post_002_861_and_independent",
+      "strict_tail_rows_after_002_861": "1",
+      "occurrences_anywhere": "45",
+      "source_visible_bare_prefix_last2_controls": ""
+    },
+    {
+      "unit": "698",
+      "evidence_role": "broad_or_low_priority_distribution",
+      "distribution_class": "mixed_post_002_861_and_independent",
+      "strict_tail_rows_after_002_861": "1",
+      "occurrences_anywhere": "9",
+      "source_visible_bare_prefix_last2_controls": ""
+    },
+    {
+      "unit": "000",
+      "evidence_role": "broad_or_low_priority_distribution",
+      "distribution_class": "mixed_post_002_861_and_independent",
+      "strict_tail_rows_after_002_861": "0",
+      "occurrences_anywhere": "810",
+      "source_visible_bare_prefix_last2_controls": ""
+    }
+  ],
+  "family_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_tail_family_batch_families.csv",
+  "occurrence_csv": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\reports\\campaign_032_002_861_tail_family_batch_occurrences.csv"
+}

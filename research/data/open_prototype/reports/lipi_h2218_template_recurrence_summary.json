@@ -1,0 +1,30 @@
+{
+  "source": "H-2218 through H-2239 side-role template recurrence audit",
+  "checked_at": "2026-05-24",
+  "input": "data/open_prototype/reports/lipi_multiside_mark_validation_queue.csv",
+  "validation_queue_rows": 397,
+  "h_series_rows": 22,
+  "non_h_series_rows": 375,
+  "strict_complete_h_inventory_rows": 22,
+  "strict_complete_h_inventory_non_h_rows": 0,
+  "unordered_complete_h_inventory_rows": 22,
+  "unordered_complete_h_inventory_non_h_rows": 0,
+  "strict_template_class_counts": {
+    "template_700_861_15x": 9,
+    "template_861_700_15x": 13
+  },
+  "unordered_template_class_counts": {
+    "template_700_861_15x": 9,
+    "template_861_700_15x": 13
+  },
+  "non_h_near_match_rows": 0,
+  "non_h_near_match_priority_counts": {},
+  "non_h_near_match_top_examples": [],
+  "key_observation": "In the current 397-row validation queue, the complete strict H-2218 through H-2239 three-role template occurs only inside the H-series. No non-H row has even two of the three H-series role families under the strict or unordered role checks.",
+  "interpretation_boundary": "This is a recurrence audit for a local side-role template only. It accepts no physical side function, numerical value, metrological reading, sign meaning, phonetic value, language identity, or translation.",
+  "outputs": [
+    "data/open_prototype/reports/lipi_h2218_template_recurrence_rows.csv",
+    "data/open_prototype/reports/lipi_h2218_template_recurrence_near_matches.csv",
+    "data/open_prototype/reports/lipi_h2218_template_recurrence_summary.json"
+  ]
+}

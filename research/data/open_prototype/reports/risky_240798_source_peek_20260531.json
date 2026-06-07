@@ -1,0 +1,39 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_240798_source_peek_20260531",
+  "tier": "candidate support, not promotion",
+  "bet": "The new 240-798 copper-axis split should have source-visible witnesses, especially rows carrying 095 or 407/845 before 240-798.",
+  "source_rows_checked": [
+    {
+      "cisi": "H-660",
+      "text": "+520-095-033-706-240-798+",
+      "role": "095-axis 240-798 witness",
+      "image_path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/H-660_a.jpg",
+      "source_status": "clean local image; compatible with catalog row"
+    },
+    {
+      "cisi": "M-567",
+      "text": "+407-061-845-240-798+",
+      "role": "407/845-axis 240-798 witness; duplicate family includes M-568/M-569/M-1515/M-1516",
+      "image_path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-567_A.jpg",
+      "source_status": "source visible but rough/low contrast; not promotion-grade"
+    },
+    {
+      "cisi": "M-1320",
+      "text": "+527-555-231-240-798+",
+      "role": "240-798 witness without 407/845/095 axis",
+      "image_path": "tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-1320_2_A.jpg",
+      "source_status": "visible but small fragment; compatible only"
+    },
+    {
+      "cisi": "H-1922",
+      "text": "+400-740-920-320-233-240-798+",
+      "role": "240-798 witness without 407/845/095 axis",
+      "source_status": "no local image route found in checked repo image set"
+    }
+  ],
+  "decision": "source_peek_does_not_break_candidate_but_blocks_promotion",
+  "skeptic_note": "The 407/845 support is duplicate-family-heavy and visually rough. H-660 is the cleanest independent source-compatible row, but by itself it cannot carry the semantic split.",
+  "next_test": "During consolidation, collapse the M-567/M-568/M-569/M-1515/M-1516 family to one source family and retest whether 240-798 still selects the 407/845/095 axis."
+}

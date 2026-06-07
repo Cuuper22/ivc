@@ -1,0 +1,259 @@
+{
+  "generated_at_local": "2026-05-24T17:49:45-07:00",
+  "source_file": "data/open_prototype/lipi/metadata_filtered.csv",
+  "rows": 5679,
+  "rows_with_cisi": 5018,
+  "rows_with_text": 5679,
+  "rows_with_numeric_text": 5679,
+  "rows_complete_Y": 3673,
+  "rows_directional_RL_LR_TB": 4499,
+  "rows_direction_RL": 4268,
+  "rows_direction_LR": 215,
+  "rows_direction_TB": 16,
+  "rows_lipi_numeric_clean_candidates": 2887,
+  "rows_lipi_direction_clean_candidates": 3308,
+  "rows_length_matches_parsed": 5646,
+  "rows_length_disagrees_parsed": 33,
+  "rows_complex_text": 2079,
+  "rows_with_000_unknown": 1337,
+  "rows_with_slash": 118,
+  "rows_with_question": 0,
+  "rows_with_bracket": 1438,
+  "top_types": [
+    {
+      "value": "SEAL:S",
+      "count": 1777
+    },
+    {
+      "value": "TAB:B",
+      "count": 1108
+    },
+    {
+      "value": "TAB:I",
+      "count": 952
+    },
+    {
+      "value": "POT:T:g",
+      "count": 538
+    },
+    {
+      "value": "SEAL:R",
+      "count": 388
+    },
+    {
+      "value": "TAB:C",
+      "count": 230
+    },
+    {
+      "value": "TAG",
+      "count": 172
+    },
+    {
+      "value": "SEAL",
+      "count": 82
+    },
+    {
+      "value": "MISC",
+      "count": 81
+    },
+    {
+      "value": "POT:T:s",
+      "count": 73
+    },
+    {
+      "value": "BNGL",
+      "count": 50
+    },
+    {
+      "value": "ROD",
+      "count": 42
+    },
+    {
+      "value": "TAG:L",
+      "count": 40
+    },
+    {
+      "value": "SEAL:C",
+      "count": 32
+    },
+    {
+      "value": "IMPL",
+      "count": 23
+    },
+    {
+      "value": "POT:T:p",
+      "count": 19
+    },
+    {
+      "value": "TAG:P",
+      "count": 15
+    },
+    {
+      "value": "TAG:B",
+      "count": 10
+    },
+    {
+      "value": "SEAL:CY",
+      "count": 9
+    },
+    {
+      "value": "TAG:O",
+      "count": 6
+    }
+  ],
+  "top_sites": [
+    {
+      "value": "Harappa",
+      "count": 2717
+    },
+    {
+      "value": "Mohenjo-daro",
+      "count": 1923
+    },
+    {
+      "value": "Dholavira",
+      "count": 238
+    },
+    {
+      "value": "Kalibangan",
+      "count": 212
+    },
+    {
+      "value": "Lothal",
+      "count": 208
+    },
+    {
+      "value": "Chanhu-daro",
+      "count": 74
+    },
+    {
+      "value": "Nausharo",
+      "count": 38
+    },
+    {
+      "value": "Unknown",
+      "count": 28
+    },
+    {
+      "value": "Banawali",
+      "count": 26
+    },
+    {
+      "value": "Lakhanjo-daro",
+      "count": 15
+    },
+    {
+      "value": "Rakhigarhi",
+      "count": 13
+    },
+    {
+      "value": "Allahdino",
+      "count": 12
+    },
+    {
+      "value": "Kot-Diji",
+      "count": 11
+    },
+    {
+      "value": "Kanmer",
+      "count": 10
+    },
+    {
+      "value": "Farmana",
+      "count": 8
+    },
+    {
+      "value": "Karanpura",
+      "count": 8
+    },
+    {
+      "value": "Shikarpur",
+      "count": 8
+    },
+    {
+      "value": "Bala-kot",
+      "count": 7
+    },
+    {
+      "value": "Bhirrana",
+      "count": 6
+    },
+    {
+      "value": "Gola Dhoro (Bagasra)",
+      "count": 6
+    }
+  ],
+  "top_regions": [
+    {
+      "value": "Inter-Riverine",
+      "count": 2950
+    },
+    {
+      "value": "Lower Indus",
+      "count": 2098
+    },
+    {
+      "value": "Gujarat/Kutch",
+      "count": 489
+    },
+    {
+      "value": "Eastern Headwaters",
+      "count": 65
+    },
+    {
+      "value": "Other",
+      "count": 28
+    },
+    {
+      "value": "Persian Gulf",
+      "count": 16
+    },
+    {
+      "value": "Iranian Plateau",
+      "count": 11
+    },
+    {
+      "value": "Mesopotamia",
+      "count": 11
+    },
+    {
+      "value": "Upper Indus",
+      "count": 6
+    },
+    {
+      "value": "Central Asia",
+      "count": 3
+    },
+    {
+      "value": "South India",
+      "count": 2
+    }
+  ],
+  "readiness_counts": [
+    {
+      "value": "lipi_numeric_clean_candidate",
+      "count": 2887
+    },
+    {
+      "value": "audit_or_scope_only",
+      "count": 2371
+    },
+    {
+      "value": "lipi_direction_clean_candidate",
+      "count": 421
+    }
+  ],
+  "artifact_files": [
+    "data/open_prototype/reports/lipi_scope_rows.csv",
+    "data/open_prototype/reports/lipi_scope_by_type.csv",
+    "data/open_prototype/reports/lipi_scope_by_site.csv",
+    "data/open_prototype/reports/lipi_scope_by_region.csv",
+    "data/open_prototype/reports/lipi_scope_by_type_direction.csv",
+    "data/open_prototype/reports/lipi_scope_length_by_type.csv",
+    "data/open_prototype/reports/lipi_scope_readiness_summary.csv",
+    "data/open_prototype/reports/lipi_scope_candidates_by_type.csv",
+    "data/open_prototype/reports/lipi_scope_candidates_by_site.csv",
+    "data/open_prototype/reports/lipi_scope_summary.json"
+  ],
+  "interpretation_boundary": "Claim-free scope survey only; no sign value, semantic, phonetic, or translation claim."
+}

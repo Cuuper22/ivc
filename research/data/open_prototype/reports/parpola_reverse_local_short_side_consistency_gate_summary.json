@@ -1,0 +1,31 @@
+{
+  "date": "2026-05-26",
+  "question": "Does Parpola's reverse-side clue consistently point to the local short/companion side across the checked H-938/H-939/H-1284/H-2145 and H-940/H-2147/H-2148 cluster?",
+  "result": "Yes as role consistency, not as a completed crosswalk. In all seven checked objects, Parpola's reverse-side clue aligns with the local shorter companion row rather than the longer 415 row. For H-2148 this yields a strong same-role inference: Parpola reverse sign no. 41 -> local 481.2 +110+ -> Kenoyer 2005 one-sign panel by count.",
+  "counts": {
+    "objects_checked": 7,
+    "short_side_matches": 7,
+    "explicit_same_side_source_bridges": 0,
+    "accepted_crosswalks": 0
+  },
+  "h2148_inference_chain": [
+    "Parpola says H-2148 reverse has sign no. 41",
+    "local H-2148 short companion row is 481.2 +110+",
+    "Kenoyer 2005 Figure 14.1 shows a one-sign panel and a three-sign panel",
+    "the one-sign panel is count-mapped to local 481.2 +110+"
+  ],
+  "accepted_claims": {
+    "reverse_role_consistency": "The seven-object Parpola reverse clue is locally role-consistent.",
+    "h2148_status": "H-2148 is the strongest candidate bridge between Parpola sign no. 41 and local 110.",
+    "h2148_gate": "H-2148 upgrades from generic visual pressure to strong_same_role_inference."
+  },
+  "not_accepted": [
+    "local 110 equals Parpola sign no. 41",
+    "H-2148 A/B or obverse/reverse side-label mapping",
+    "sign value",
+    "phonetic value",
+    "language identification",
+    "translation"
+  ],
+  "next_gate": "Acquire a source note, sign-list table, CISI/HARP panel label, or archive transcription explicitly tying H-2148/H2001-5142 reverse to the one-sign panel."
+}

@@ -1,0 +1,142 @@
+{
+  "date": "2026-05-29",
+  "generated_at_utc": "2026-05-29T09:15:11.009Z",
+  "purpose": "Source-normalized acquisition queue for the harsh major-site directionality candidate.",
+  "input_scope": {
+    "base_scope": "top10_edge_removed_one_edit_family_collapsed",
+    "all_harsh_rows": 365,
+    "major_site_rows": 324,
+    "mohenjo_daro_rows": 212,
+    "harappa_rows": 112
+  },
+  "baselines": {
+    "all_harsh": {
+      "rows": 365,
+      "tokens": 1725,
+      "unique_tokens": 358,
+      "stored_higher": 307,
+      "reversed_higher": 47,
+      "ties": 11,
+      "stored_win_share": 0.841096,
+      "mean_stored_minus_reversed_per_transition": 1.052098
+    },
+    "major_sites": {
+      "rows": 324,
+      "tokens": 1517,
+      "unique_tokens": 335,
+      "stored_higher": 274,
+      "reversed_higher": 35,
+      "ties": 15,
+      "stored_win_share": 0.845679,
+      "mean_stored_minus_reversed_per_transition": 1.046123
+    },
+    "mohenjo_daro": {
+      "rows": 212,
+      "tokens": 1046,
+      "unique_tokens": 273,
+      "stored_higher": 173,
+      "reversed_higher": 22,
+      "ties": 17,
+      "stored_win_share": 0.816038,
+      "mean_stored_minus_reversed_per_transition": 0.986013
+    },
+    "harappa": {
+      "rows": 112,
+      "tokens": 471,
+      "unique_tokens": 181,
+      "stored_higher": 83,
+      "reversed_higher": 16,
+      "ties": 13,
+      "stored_win_share": 0.741071,
+      "mean_stored_minus_reversed_per_transition": 0.653432
+    }
+  },
+  "source_index": {
+    "cisi_with_any_source_hint": 912,
+    "source_csv_files_scanned": 46
+  },
+  "queue_summary": {
+    "rows": 324,
+    "by_priority_band": {
+      "P0_validate_high_positive_existing_route": 1,
+      "P1_acquire_high_positive_source": 53,
+      "P1_audit_reversed_anomaly": 35,
+      "P2_validate_positive_support": 220,
+      "P3_tie_or_low_information": 15
+    },
+    "by_source_validation_need": {
+      "find_public_or_request_source_route": 223,
+      "replace_non_source_grade_catalogue_hint": 94,
+      "review_existing_crop_for_direction_and_token_order": 3,
+      "box_direction_from_existing_public_route": 2,
+      "request_or_locate_source_image": 2
+    },
+    "by_site_outcome": {
+      "Mohenjo-daro|stored_higher": 184,
+      "Harappa|stored_higher": 90,
+      "Mohenjo-daro|reversed_higher": 19,
+      "Harappa|reversed_higher": 16,
+      "Mohenjo-daro|tie": 9,
+      "Harappa|tie": 6
+    },
+    "top_25_existing_route_positive_rows": [
+      {
+        "queue_rank": 1,
+        "cisi": "M-70",
+        "site": "Mohenjo-daro",
+        "text": "+226-032-002-390-692+",
+        "diff_per_transition": 3.008463,
+        "source_validation_need": "review_existing_crop_for_direction_and_token_order",
+        "best_source_file": "campaign_032_002_branch_tail_token_order_verdicts.csv",
+        "best_status_text": "source_single_line:yes | pass_branch_head_continuation_candidate | confidence:medium | 390 branch-head family; compare next to 390->125/705 and unknown 390->590-032"
+      },
+      {
+        "queue_rank": 126,
+        "cisi": "M-49",
+        "site": "Mohenjo-daro",
+        "text": "+527-550-240-220-032-002-300-350-032-190+",
+        "diff_per_transition": 1.608944,
+        "source_validation_need": "review_existing_crop_for_direction_and_token_order",
+        "best_source_file": "campaign_032_002_branch_tail_token_order_verdicts.csv",
+        "best_status_text": "source_single_line:yes | pass_existing_token_box | confidence:medium | later 032 tail: 300-350-032-190"
+      },
+      {
+        "queue_rank": 160,
+        "cisi": "H-1287",
+        "site": "Harappa",
+        "text": "+700-033+",
+        "diff_per_transition": 1.309262,
+        "source_validation_need": "box_direction_from_existing_public_route",
+        "best_source_file": "lipi_frame700_034_source_acquisition_manifest.csv",
+        "best_status_text": "source_visible_component_probe_negative_for_direct_034_415 | source_visible_component_probe_complete_negative_for_direct_034_415"
+      },
+      {
+        "queue_rank": 212,
+        "cisi": "H-2094",
+        "site": "Harappa",
+        "text": "+002-861-416+",
+        "diff_per_transition": 0.922787,
+        "source_validation_need": "box_direction_from_existing_public_route",
+        "best_source_file": "lipi_frame700_034_source_acquisition_manifest.csv",
+        "best_status_text": "source_visible_component_probe_negative_for_direct_034_415 | source_visible_component_probe_complete_negative_for_direct_034_415"
+      },
+      {
+        "queue_rank": 253,
+        "cisi": "M-391",
+        "site": "Mohenjo-daro",
+        "text": "+405-845-686-740-793-003-233-805-002-861-533-717+",
+        "diff_per_transition": 0.609209,
+        "source_validation_need": "review_existing_crop_for_direction_and_token_order",
+        "best_source_file": "campaign_032_002_861_source_token_attachment_verdicts.csv",
+        "best_status_text": "same_line_candidate_present_long_row | confidence:medium_low"
+      }
+    ]
+  },
+  "interpretation_boundary": "This is an acquisition and adversarial review queue only. It does not validate physical source-image direction, identify a language, assign phonetic values, assign sign meanings, or increment accepted claims.",
+  "artifact_files": [
+    "data/open_prototype/tools/effective_unicity_directionality_source_queue.mjs",
+    "data/open_prototype/reports/effective_unicity_directionality_source_queue_summary.json",
+    "data/open_prototype/reports/effective_unicity_directionality_source_queue.csv",
+    "data/open_prototype/reports/effective_unicity_directionality_source_queue_source_index.csv"
+  ]
+}

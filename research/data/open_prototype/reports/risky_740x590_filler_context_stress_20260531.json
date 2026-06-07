@@ -1,0 +1,748 @@
+{
+  "date": "2026-05-31",
+  "phase": "CONSOLIDATE",
+  "candidate_id": "risky_740x590_filler_context_stress_20260531",
+  "bet": "740-X-590 is a register-slot frame whose filler X sorts context class; specifically 405 should skew Bull1:W/square-seal contexts and 407 should skew Gavi/TAB:B/admin contexts if the frame is meaningful.",
+  "source": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\lipi\\metadata_filtered.csv",
+  "counts": [
+    {
+      "filler": "390",
+      "raw_rows": 54,
+      "exact_text_rows": 41
+    },
+    {
+      "filler": "405",
+      "raw_rows": 25,
+      "exact_text_rows": 17
+    },
+    {
+      "filler": "407",
+      "raw_rows": 17,
+      "exact_text_rows": 6
+    },
+    {
+      "filler": "406",
+      "raw_rows": 2,
+      "exact_text_rows": 2
+    }
+  ],
+  "exact_text_collapsed_rows": 69,
+  "filler_context_stats": {
+    "390": [
+      {
+        "feature": "shape=square",
+        "a": 30,
+        "b": 11,
+        "c": 10,
+        "d": 18,
+        "fisher_p": 0.0021254332064370167,
+        "rank": 1,
+        "total_features": 90
+      },
+      {
+        "feature": "type_material=SEAL:S|Steatite",
+        "a": 27,
+        "b": 14,
+        "c": 8,
+        "d": 20,
+        "fisher_p": 0.0023835956205890845,
+        "rank": 2,
+        "total_features": 90
+      },
+      {
+        "feature": "class=IT",
+        "a": 10,
+        "b": 31,
+        "c": 0,
+        "d": 28,
+        "fisher_p": 0.0032970365334707994,
+        "rank": 3,
+        "total_features": 90
+      },
+      {
+        "feature": "type=SEAL:S",
+        "a": 29,
+        "b": 12,
+        "c": 10,
+        "d": 18,
+        "fisher_p": 0.004091866941965198,
+        "rank": 4,
+        "total_features": 90
+      },
+      {
+        "feature": "symbol=Bull1:J",
+        "a": 5,
+        "b": 36,
+        "c": 0,
+        "d": 28,
+        "fisher_p": 0.06668124154859001,
+        "rank": 5,
+        "total_features": 90
+      },
+      {
+        "feature": "type_symbol=SEAL:S|Bull1:J",
+        "a": 5,
+        "b": 36,
+        "c": 0,
+        "d": 28,
+        "fisher_p": 0.06668124154859001,
+        "rank": 6,
+        "total_features": 90
+      },
+      {
+        "feature": "class=??",
+        "a": 7,
+        "b": 34,
+        "c": 2,
+        "d": 26,
+        "fisher_p": 0.20334296508066468,
+        "rank": 7,
+        "total_features": 90
+      },
+      {
+        "feature": "complete=N",
+        "a": 7,
+        "b": 34,
+        "c": 2,
+        "d": 26,
+        "fisher_p": 0.20334296508066468,
+        "rank": 8,
+        "total_features": 90
+      },
+      {
+        "feature": "site=Dholavira",
+        "a": 3,
+        "b": 38,
+        "c": 0,
+        "d": 28,
+        "fisher_p": 0.20345841126846156,
+        "rank": 9,
+        "total_features": 90
+      },
+      {
+        "feature": "symbol=Bull1",
+        "a": 3,
+        "b": 38,
+        "c": 0,
+        "d": 28,
+        "fisher_p": 0.20345841126846156,
+        "rank": 10,
+        "total_features": 90
+      },
+      {
+        "feature": "symbol=Bull1:I",
+        "a": 3,
+        "b": 38,
+        "c": 0,
+        "d": 28,
+        "fisher_p": 0.20345841126846156,
+        "rank": 11,
+        "total_features": 90
+      },
+      {
+        "feature": "symbol=Elep",
+        "a": 3,
+        "b": 38,
+        "c": 0,
+        "d": 28,
+        "fisher_p": 0.20345841126846156,
+        "rank": 12,
+        "total_features": 90
+      }
+    ],
+    "405": [
+      {
+        "feature": "symbol=None",
+        "a": 11,
+        "b": 6,
+        "c": 11,
+        "d": 41,
+        "fisher_p": 0.0014519772699061301,
+        "rank": 1,
+        "total_features": 41
+      },
+      {
+        "feature": "shape=cuboid-convex",
+        "a": 5,
+        "b": 12,
+        "c": 1,
+        "d": 51,
+        "fisher_p": 0.0027874461683675958,
+        "rank": 2,
+        "total_features": 41
+      },
+      {
+        "feature": "type_material=SEAL:R|Steatite",
+        "a": 6,
+        "b": 11,
+        "c": 3,
+        "d": 49,
+        "fisher_p": 0.0053039539948741025,
+        "rank": 3,
+        "total_features": 41
+      },
+      {
+        "feature": "type_symbol=SEAL:R|None",
+        "a": 6,
+        "b": 11,
+        "c": 5,
+        "d": 47,
+        "fisher_p": 0.020835662677971645,
+        "rank": 4,
+        "total_features": 41
+      },
+      {
+        "feature": "type=SEAL:R",
+        "a": 6,
+        "b": 11,
+        "c": 5,
+        "d": 47,
+        "fisher_p": 0.020835662677971645,
+        "rank": 5,
+        "total_features": 41
+      },
+      {
+        "feature": "symbol=Bull1:W",
+        "a": 6,
+        "b": 11,
+        "c": 7,
+        "d": 45,
+        "fisher_p": 0.05489825458864085,
+        "rank": 6,
+        "total_features": 41
+      },
+      {
+        "feature": "type_symbol=SEAL:S|Bull1:W",
+        "a": 6,
+        "b": 11,
+        "c": 7,
+        "d": 45,
+        "fisher_p": 0.05489825458864085,
+        "rank": 7,
+        "total_features": 41
+      },
+      {
+        "feature": "class=MT",
+        "a": 4,
+        "b": 13,
+        "c": 3,
+        "d": 49,
+        "fisher_p": 0.05697140122837525,
+        "rank": 8,
+        "total_features": 41
+      },
+      {
+        "feature": "shape=rectangular",
+        "a": 5,
+        "b": 12,
+        "c": 6,
+        "d": 46,
+        "fisher_p": 0.08991001441269562,
+        "rank": 9,
+        "total_features": 41
+      },
+      {
+        "feature": "type_symbol=TAB:B|None",
+        "a": 3,
+        "b": 14,
+        "c": 2,
+        "d": 50,
+        "fisher_p": 0.09179399445460243,
+        "rank": 10,
+        "total_features": 41
+      },
+      {
+        "feature": "condition=Good",
+        "a": 7,
+        "b": 10,
+        "c": 12,
+        "d": 40,
+        "fisher_p": 0.1286066042100926,
+        "rank": 11,
+        "total_features": 41
+      },
+      {
+        "feature": "class=UC",
+        "a": 3,
+        "b": 14,
+        "c": 3,
+        "d": 49,
+        "fisher_p": 0.15447466226180934,
+        "rank": 12,
+        "total_features": 41
+      }
+    ],
+    "406": [
+      {
+        "feature": "class=SP",
+        "a": 2,
+        "b": 0,
+        "c": 7,
+        "d": 60,
+        "fisher_p": 0.015345268542200202,
+        "rank": 1,
+        "total_features": 16
+      },
+      {
+        "feature": "site=Lothal",
+        "a": 1,
+        "b": 1,
+        "c": 2,
+        "d": 65,
+        "fisher_p": 0.08567774936061476,
+        "rank": 2,
+        "total_features": 16
+      },
+      {
+        "feature": "type_symbol=SEAL:S|Bull1:S",
+        "a": 1,
+        "b": 1,
+        "c": 2,
+        "d": 65,
+        "fisher_p": 0.08567774936061476,
+        "rank": 3,
+        "total_features": 16
+      },
+      {
+        "feature": "symbol=Bull1:S",
+        "a": 1,
+        "b": 1,
+        "c": 3,
+        "d": 64,
+        "fisher_p": 0.1133844842284744,
+        "rank": 4,
+        "total_features": 16
+      },
+      {
+        "feature": "region=Gujarat/Kutch",
+        "a": 1,
+        "b": 1,
+        "c": 5,
+        "d": 62,
+        "fisher_p": 0.16751918158567672,
+        "rank": 5,
+        "total_features": 16
+      },
+      {
+        "feature": "type_material=SEAL:S|Steatite",
+        "a": 2,
+        "b": 0,
+        "c": 33,
+        "d": 34,
+        "fisher_p": 0.25362318840579484,
+        "rank": 6,
+        "total_features": 16
+      },
+      {
+        "feature": "type=SEAL:S",
+        "a": 2,
+        "b": 0,
+        "c": 37,
+        "d": 30,
+        "fisher_p": 0.3158567774935849,
+        "rank": 7,
+        "total_features": 16
+      },
+      {
+        "feature": "shape=square",
+        "a": 2,
+        "b": 0,
+        "c": 38,
+        "d": 29,
+        "fisher_p": 0.3324808184143133,
+        "rank": 8,
+        "total_features": 16
+      },
+      {
+        "feature": "symbol=Bull1:W",
+        "a": 1,
+        "b": 1,
+        "c": 12,
+        "d": 55,
+        "fisher_p": 0.34356351236147575,
+        "rank": 9,
+        "total_features": 16
+      },
+      {
+        "feature": "type_symbol=SEAL:S|Bull1:W",
+        "a": 1,
+        "b": 1,
+        "c": 12,
+        "d": 55,
+        "fisher_p": 0.34356351236147575,
+        "rank": 10,
+        "total_features": 16
+      },
+      {
+        "feature": "material=Steatite",
+        "a": 2,
+        "b": 0,
+        "c": 44,
+        "d": 23,
+        "fisher_p": 0.44117647058825227,
+        "rank": 11,
+        "total_features": 16
+      },
+      {
+        "feature": "condition=Poor",
+        "a": 1,
+        "b": 1,
+        "c": 23,
+        "d": 44,
+        "fisher_p": 0.5780051150894839,
+        "rank": 12,
+        "total_features": 16
+      }
+    ],
+    "407": [
+      {
+        "feature": "type_symbol=SEAL:R|None",
+        "a": 4,
+        "b": 2,
+        "c": 7,
+        "d": 56,
+        "fisher_p": 0.004777778430296072,
+        "rank": 1,
+        "total_features": 36
+      },
+      {
+        "feature": "type=SEAL:R",
+        "a": 4,
+        "b": 2,
+        "c": 7,
+        "d": 56,
+        "fisher_p": 0.004777778430296072,
+        "rank": 2,
+        "total_features": 36
+      },
+      {
+        "feature": "symbol=None",
+        "a": 5,
+        "b": 1,
+        "c": 17,
+        "d": 46,
+        "fisher_p": 0.01094710272168559,
+        "rank": 3,
+        "total_features": 36
+      },
+      {
+        "feature": "type_material=SEAL:R|Steatite",
+        "a": 3,
+        "b": 3,
+        "c": 6,
+        "d": 57,
+        "fisher_p": 0.02590264833078752,
+        "rank": 4,
+        "total_features": 36
+      },
+      {
+        "feature": "shape=rectangular",
+        "a": 3,
+        "b": 3,
+        "c": 8,
+        "d": 55,
+        "fisher_p": 0.04724814350439544,
+        "rank": 5,
+        "total_features": 36
+      },
+      {
+        "feature": "class=LT",
+        "a": 1,
+        "b": 5,
+        "c": 0,
+        "d": 63,
+        "fisher_p": 0.08695652173912999,
+        "rank": 6,
+        "total_features": 36
+      },
+      {
+        "feature": "region=Eastern Headwaters",
+        "a": 1,
+        "b": 5,
+        "c": 0,
+        "d": 63,
+        "fisher_p": 0.08695652173912999,
+        "rank": 7,
+        "total_features": 36
+      },
+      {
+        "feature": "shape=oval",
+        "a": 1,
+        "b": 5,
+        "c": 0,
+        "d": 63,
+        "fisher_p": 0.08695652173912999,
+        "rank": 8,
+        "total_features": 36
+      },
+      {
+        "feature": "site=Hulas",
+        "a": 1,
+        "b": 5,
+        "c": 0,
+        "d": 63,
+        "fisher_p": 0.08695652173912999,
+        "rank": 9,
+        "total_features": 36
+      },
+      {
+        "feature": "symbol=Gavi",
+        "a": 1,
+        "b": 5,
+        "c": 0,
+        "d": 63,
+        "fisher_p": 0.08695652173912999,
+        "rank": 10,
+        "total_features": 36
+      },
+      {
+        "feature": "type_material=TAB:B|Clay",
+        "a": 1,
+        "b": 5,
+        "c": 0,
+        "d": 63,
+        "fisher_p": 0.08695652173912999,
+        "rank": 11,
+        "total_features": 36
+      },
+      {
+        "feature": "type_material=TAG:P|-",
+        "a": 1,
+        "b": 5,
+        "c": 0,
+        "d": 63,
+        "fisher_p": 0.08695652173912999,
+        "rank": 12,
+        "total_features": 36
+      }
+    ]
+  },
+  "examples": {
+    "390": [
+      {
+        "id": "6.1",
+        "cisi": "Ad-1",
+        "site": "Allahdino",
+        "type": "SEAL:S",
+        "material": "Steatite",
+        "symbol": "Bull1",
+        "text": "+740-390-590+"
+      },
+      {
+        "id": "269.1",
+        "cisi": "H-1109",
+        "site": "Harappa",
+        "type": "TAB:B",
+        "material": "Faience",
+        "symbol": "Phyt",
+        "text": "+740-390-590["
+      },
+      {
+        "id": "378.1",
+        "cisi": "H-1776",
+        "site": "Harappa",
+        "type": "TAB:B",
+        "material": "Faience",
+        "symbol": "Elep",
+        "text": "+740-390-590-060-550+"
+      },
+      {
+        "id": "537.1",
+        "cisi": "H-1692",
+        "site": "Harappa",
+        "type": "SEAL:S",
+        "material": "Steatite",
+        "symbol": "None",
+        "text": "+740-390-590-002-861+"
+      },
+      {
+        "id": "629.1",
+        "cisi": "H-1801",
+        "site": "Harappa",
+        "type": "TAB:B",
+        "material": "Faience",
+        "symbol": "None",
+        "text": "+740-390-590-741["
+      },
+      {
+        "id": "1057.1",
+        "cisi": "H-733",
+        "site": "Harappa",
+        "type": "TAB:B",
+        "material": "Faience",
+        "symbol": "Phyt",
+        "text": "+740-390-590-240+"
+      },
+      {
+        "id": "1098.1",
+        "cisi": "H-39",
+        "site": "Harappa",
+        "type": "SEAL:S",
+        "material": "Steatite",
+        "symbol": "Bull1:W",
+        "text": "+740-390-590-231-240-235-745-060-920+"
+      },
+      {
+        "id": "1111.1",
+        "cisi": "H-52",
+        "site": "Harappa",
+        "type": "SEAL:S",
+        "material": "Steatite",
+        "symbol": "Bull1:J",
+        "text": "+740-390-590-125-741-000-000+"
+      }
+    ],
+    "405": [
+      {
+        "id": "505.1",
+        "cisi": "H-1799",
+        "site": "Harappa",
+        "type": "TAB:B",
+        "material": "Faience",
+        "symbol": "None",
+        "text": "+400-740-405-590-235-806["
+      },
+      {
+        "id": "1020.1",
+        "cisi": "H-1657",
+        "site": "Harappa",
+        "type": "SEAL:S",
+        "material": "Steatite",
+        "symbol": "Bull1:W",
+        "text": "+740-405-590-032-900-003-806-235-220-032-002-690-921+"
+      },
+      {
+        "id": "1069.1",
+        "cisi": "H-8",
+        "site": "Harappa",
+        "type": "SEAL:S",
+        "material": "Steatite",
+        "symbol": "Bull1:W",
+        "text": "+354-001-740-405-590-033-706-002-690-921+"
+      },
+      {
+        "id": "1175.1",
+        "cisi": "H-134",
+        "site": "Harappa",
+        "type": "SEAL:R",
+        "material": "Steatite",
+        "symbol": "None",
+        "text": "+740-405-590-220-003-002-861+"
+      },
+      {
+        "id": "1199.1",
+        "cisi": "H-158",
+        "site": "Harappa",
+        "type": "SEAL:R",
+        "material": "Steatite",
+        "symbol": "None",
+        "text": "+154-806-472-001-740-405-590+"
+      },
+      {
+        "id": "1235.1",
+        "cisi": "H-204",
+        "site": "Harappa",
+        "type": "TAB:B",
+        "material": "Faience",
+        "symbol": "None",
+        "text": "+400-740-405-590-235-806+"
+      },
+      {
+        "id": "1238.1",
+        "cisi": "H-207",
+        "site": "Harappa",
+        "type": "TAB:B",
+        "material": "-",
+        "symbol": "None",
+        "text": "+400-740-405-590["
+      },
+      {
+        "id": "1402.1",
+        "cisi": "H-389",
+        "site": "Harappa",
+        "type": "SEAL:S",
+        "material": "-",
+        "symbol": "Bull1:W",
+        "text": "+740-405-590-235-002-031-480-625+"
+      }
+    ],
+    "406": [
+      {
+        "id": "1109.1",
+        "cisi": "H-50",
+        "site": "Harappa",
+        "type": "SEAL:S",
+        "material": "Steatite",
+        "symbol": "Bull1:W",
+        "text": "+740-406-590-741-406-125+"
+      },
+      {
+        "id": "2005.1",
+        "cisi": "L-28",
+        "site": "Lothal",
+        "type": "SEAL:S",
+        "material": "Steatite",
+        "symbol": "Bull1:S",
+        "text": "+740-406-590-741-060-920+"
+      }
+    ],
+    "407": [
+      {
+        "id": "291.1",
+        "cisi": "-",
+        "site": "Harappa",
+        "type": "TAB:B",
+        "material": "Clay",
+        "symbol": "Gavi",
+        "text": "+740-407-590-690-436-255-920-318-220-415-803+"
+      },
+      {
+        "id": "1874.1",
+        "cisi": "Hls-1",
+        "site": "Hulas",
+        "type": "TAG:P",
+        "material": "-",
+        "symbol": "None",
+        "text": "+740-407-590+"
+      },
+      {
+        "id": "2063.1",
+        "cisi": "L-114",
+        "site": "Lothal",
+        "type": "SEAL:R",
+        "material": "Steatite",
+        "symbol": "None",
+        "text": "+740-407-590-904-220-032-803-060-920+"
+      },
+      {
+        "id": "2422.1",
+        "cisi": "M-1954",
+        "site": "Mohenjo-daro",
+        "type": "SEAL:R",
+        "material": "Steatite",
+        "symbol": "None",
+        "text": "+740-407-590-031-752-033-705-220-415-798-002-861+"
+      },
+      {
+        "id": "3606.1",
+        "cisi": "M-1301",
+        "site": "Mohenjo-daro",
+        "type": "SEAL:R",
+        "material": "-",
+        "symbol": "None",
+        "text": "+740-407-590-000["
+      },
+      {
+        "id": "3615.1",
+        "cisi": "M-1310",
+        "site": "Mohenjo-daro",
+        "type": "SEAL:R",
+        "material": "Steatite",
+        "symbol": "None",
+        "text": "+407-004-001-740-407-590-235+"
+      }
+    ]
+  },
+  "decision": "demote_frame_to_frequency_pattern",
+  "caveat": "This is a frame-internal context test only. It does not assign a value to any filler and does not rescue the killed external-personnel reading of 390."
+}

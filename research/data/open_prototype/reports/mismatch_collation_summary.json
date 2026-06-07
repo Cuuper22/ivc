@@ -1,0 +1,131 @@
+{
+  "generated_at_local": "2026-05-24T17:23:44-07:00",
+  "source_file": "data/open_prototype/reports/mismatch_audit.csv",
+  "manual_review_rows": 29,
+  "manual_count_disagreement": 13,
+  "manual_collation_required": 16,
+  "p1_source_image_required": 10,
+  "p2_standard_manual_review": 12,
+  "p3_policy_check_candidate": 7,
+  "reconciliation_class_counts": [
+    {
+      "reconciliation_class": "unflagged_mayig_extra",
+      "rows": 8,
+      "examples": "M-111;M-161;M-162;M-20;M-25;M-4;M-45;M-81"
+    },
+    {
+      "reconciliation_class": "damaged_boundary_fragment",
+      "rows": 4,
+      "examples": "M-175;M-19;M-22;M-39"
+    },
+    {
+      "reconciliation_class": "lipi_unknown_zero_explains_count",
+      "rows": 4,
+      "examples": "M-105;M-27;M-61;M-62"
+    },
+    {
+      "reconciliation_class": "unflagged_lipi_extra",
+      "rows": 4,
+      "examples": "M-10;M-41;M-72;M-98"
+    },
+    {
+      "reconciliation_class": "mayig_unknown_p000_explains_count",
+      "rows": 3,
+      "examples": "M-110;M-126;M-73"
+    },
+    {
+      "reconciliation_class": "ambiguous_unknown_policy_reconciles",
+      "rows": 2,
+      "examples": "M-55;M-60"
+    },
+    {
+      "reconciliation_class": "multi_sign_count_disagreement",
+      "rows": 2,
+      "examples": "M-141;M-7"
+    },
+    {
+      "reconciliation_class": "complex_manual_collation",
+      "rows": 1,
+      "examples": "M-106"
+    },
+    {
+      "reconciliation_class": "slash_compound_count_policy_reconciles",
+      "rows": 1,
+      "examples": "M-120"
+    }
+  ],
+  "priority_counts": [
+    {
+      "collation_priority": "P1_source_image_required",
+      "rows": 10,
+      "examples": "M-105;M-106;M-141;M-175;M-19;M-22;M-39;M-55;M-60;M-7"
+    },
+    {
+      "collation_priority": "P2_standard_manual_review",
+      "rows": 12,
+      "examples": "M-10;M-111;M-161;M-162;M-20;M-25;M-4;M-41;M-45;M-72;M-81;M-98"
+    },
+    {
+      "collation_priority": "P3_policy_check_candidate",
+      "rows": 7,
+      "examples": "M-110;M-120;M-126;M-27;M-61;M-62;M-73"
+    }
+  ],
+  "primary_category_counts": [
+    {
+      "primary_category": "mayig_counts_more",
+      "rows": 9,
+      "examples": "M-111;M-161;M-162;M-20;M-25;M-4;M-45;M-7;M-81"
+    },
+    {
+      "primary_category": "lipi_boundary_fragment",
+      "rows": 4,
+      "examples": "M-175;M-19;M-22;M-39"
+    },
+    {
+      "primary_category": "lipi_counts_more",
+      "rows": 4,
+      "examples": "M-10;M-41;M-72;M-98"
+    },
+    {
+      "primary_category": "lipi_unknown_zero",
+      "rows": 4,
+      "examples": "M-105;M-27;M-61;M-62"
+    },
+    {
+      "primary_category": "shared_unknown_zero",
+      "rows": 4,
+      "examples": "M-106;M-110;M-141;M-60"
+    },
+    {
+      "primary_category": "mayig_unknown_p000",
+      "rows": 3,
+      "examples": "M-126;M-55;M-73"
+    },
+    {
+      "primary_category": "lipi_compound_slash",
+      "rows": 1,
+      "examples": "M-120"
+    }
+  ],
+  "simple_policy_counts": [
+    {
+      "policy": "drop_mayig_P000",
+      "rows": 9
+    },
+    {
+      "policy": "count_lipi_000_as_sign",
+      "rows": 7
+    },
+    {
+      "policy": "treat_lipi_slash_compound_as_one_sign",
+      "rows": 1
+    }
+  ],
+  "artifact_files": [
+    "data/open_prototype/reports/mismatch_collation_queue.csv",
+    "data/open_prototype/reports/mismatch_collation_class_summary.csv",
+    "data/open_prototype/reports/mismatch_collation_summary.json"
+  ],
+  "interpretation_boundary": "corpus collation triage only; no sign equivalence, semantic, phonetic, or translation claim"
+}

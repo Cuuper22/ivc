@@ -1,0 +1,58 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "390_negative_head_controls",
+  "head390_route_separation_score": "1.280",
+  "dangerous_negative_controls": [],
+  "top_controls": [
+    {
+      "head": "390",
+      "score": "1.280",
+      "occurrences": 15,
+      "result": "target"
+    },
+    {
+      "head": "000",
+      "score": "0.467",
+      "occurrences": 11,
+      "result": "partial_negative_control"
+    },
+    {
+      "head": "861",
+      "score": "0.000",
+      "occurrences": 34,
+      "result": "not_comparable"
+    },
+    {
+      "head": "405",
+      "score": "0.000",
+      "occurrences": 32,
+      "result": "not_comparable"
+    },
+    {
+      "head": "031",
+      "score": "0.000",
+      "occurrences": 15,
+      "result": "not_comparable"
+    },
+    {
+      "head": "368",
+      "score": "0.000",
+      "occurrences": 12,
+      "result": "not_comparable"
+    },
+    {
+      "head": "220",
+      "score": "0.000",
+      "occurrences": 11,
+      "result": "not_comparable"
+    },
+    {
+      "head": "056",
+      "score": "0.000",
+      "occurrences": 8,
+      "result": "not_comparable"
+    }
+  ],
+  "provisional_read": "390 route split is not obviously generic among frequent heads."
+}

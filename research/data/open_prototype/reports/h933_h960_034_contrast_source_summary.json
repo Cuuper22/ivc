@@ -1,0 +1,96 @@
+{
+  "date": "2026-05-24",
+  "artifacts": [
+    "H-933",
+    "H-960"
+  ],
+  "type": "TAB:I",
+  "site": "Harappa",
+  "packet_priority": "P1_034_before_with_400_740_176",
+  "acquisition_bucket": "A_034_contrast_case",
+  "public_lead_status": "text_only_or_bibliographic_public_lead",
+  "artifact_context": {
+    "H-933": {
+      "sides": 2,
+      "catalog_rows": 2,
+      "row_count_in_packet": 1,
+      "short_rows_to_check": 1,
+      "short_side_texts": [
+        "1:+034-700+"
+      ],
+      "short_orders": [
+        "034:700_last"
+      ],
+      "side_relations": [
+        "short_before_all_longer"
+      ],
+      "longer_texts": [
+        "+400-740-176+"
+      ],
+      "group_signature": "1:+034-700+|2:+400-740-176+",
+      "raw_ids": [
+        "1813.1",
+        "1813.2"
+      ],
+      "excavation_ids": [
+        "G252"
+      ],
+      "dimensions_mm": "14 x 8 x 0"
+    },
+    "H-960": {
+      "sides": 2,
+      "catalog_rows": 2,
+      "row_count_in_packet": 1,
+      "short_rows_to_check": 1,
+      "short_side_texts": [
+        "1:+700-034+"
+      ],
+      "short_orders": [
+        "034:700_first"
+      ],
+      "side_relations": [
+        "short_before_all_longer"
+      ],
+      "longer_texts": [
+        "+400-740-176+"
+      ],
+      "group_signature": "1:+700-034+|2:+400-740-176+",
+      "raw_ids": [
+        "1837.1",
+        "1837.2"
+      ],
+      "excavation_ids": [
+        "1261543"
+      ],
+      "dimensions_mm": "10.2 x 7.6 x 0"
+    }
+  },
+  "public_sources_checked": [
+    "https://indusscriptmore.blogspot.com/2012/",
+    "web_search:\"H-933\" \"H-960\" \"Indus\" \"Harappa\" tablet",
+    "web_search:\"H-933\" \"+034-700\" \"400-740-176\"",
+    "web_search:\"H-960\" \"+700-034\" \"400-740-176\"",
+    "web_search:\"H-933\" \"H-933, 936, 960\" \"incised\"",
+    "web_search:site:indusscriptmore.blogspot.com \"H-933\" \"H-960\"",
+    "web_search:site:bharatkalyan97.blogspot.com \"H-933\" \"H-960\"",
+    "web_search:\"H-933\" \"Indus Script\"",
+    "web_search:\"H-960\" \"Indus Script\""
+  ],
+  "public_text_only_leads": 2,
+  "public_object_image_leads": 0,
+  "candidate_image_urls": 0,
+  "source_validation_fields_filled": 0,
+  "requires_paired_two_side_source": true,
+  "status": "requires_CISI_HARP_two_side_source",
+  "interpretation_status": "source_acquisition_only_no_reading",
+  "boundary": [
+    "no side relation accepted",
+    "no physical side function accepted",
+    "no numerical value accepted",
+    "no metrological reading accepted",
+    "no sign meaning accepted",
+    "no phonetic value accepted",
+    "no language identity accepted",
+    "no translation accepted"
+  ]
+}

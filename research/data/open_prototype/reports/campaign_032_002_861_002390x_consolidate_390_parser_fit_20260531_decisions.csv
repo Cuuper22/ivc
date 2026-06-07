@@ -1,0 +1,4 @@
+checked_date,decision,rows,support
+2026-05-31,core_parser_covers_repeated_classes,9,H-1993:095->terminal; H-773:530->open; M-38:125->open; M-71:095->terminal; M-119:125->open; M-735:125->open; Sktd-1:125->open; M-1825:705->terminal; -:705->terminal
+2026-05-31,weak_rows_are_singleton_or_raw_prior,6,H-68:072:singleton_terminal_payload; M-70:692:raw_boundary_closer; M-213:346:singleton_terminal_payload; M-232:707:singleton_terminal_payload; M-708:140:singleton_terminal_payload; -:590:open_extender_wild_shot
+2026-05-31,fit_is_not_validation,15,Rules were derived from this small set; next phase must break them with new/source-bound rows.

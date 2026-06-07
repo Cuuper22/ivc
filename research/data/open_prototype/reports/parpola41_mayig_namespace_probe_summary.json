@@ -1,0 +1,65 @@
+{
+  "date": "2026-05-26",
+  "question": "Within the pinned Mayig feature namespace, what do P041, V041, P110, P112, and local 110/112/041 actually refer to?",
+  "result": "The Mayig namespace separates all tempting numeric shortcuts. P041 maps to Parpola V141/Wells W112/Mahadevan M034, while Parpola V041 appears under Mayig P301, a small hatched box feature. Current overlap gives only very-low local 112 <-> Mayig P041 pressure and no local 110 confirmation.",
+  "source_files": {
+    "mayig_archive_zip": {
+      "path": "tmp/mayig_feature_namespace_probe/mayig_commit.zip",
+      "sha256": "4d0bee925b20e1c3e5539517bf30b3adbf397e24fdc130b349b990752367e42c",
+      "commit": "ad2f1e218a34b8c33c57de0d6cb8d99272765bbb"
+    },
+    "feature_count": 397,
+    "parpola_2019_text": "tmp/parpola_2019_bone_rods.txt"
+  },
+  "target_features": [
+    {
+      "mayig_id": "P034",
+      "parpola": ["V137"],
+      "wells": ["W146"],
+      "mahadevan": ["M027"],
+      "description": "Person with bow and arrow, but no bowstring"
+    },
+    {
+      "mayig_id": "P041",
+      "parpola": ["V141"],
+      "wells": ["W112"],
+      "mahadevan": ["M034"],
+      "description": "Person with U with vertical stroke inserted, stroke has a small dot at the bottom"
+    },
+    {
+      "mayig_id": "P110",
+      "parpola": ["V094", "V739"],
+      "wells": ["W388"],
+      "mahadevan": ["M327"],
+      "description": "Upside-down heart symbol with horizontal hatching, with vertical stroke coming from bottom of heart. Heart has two small decorations coming off the top center"
+    },
+    {
+      "mayig_id": "P112",
+      "parpola": ["V093", "V293"],
+      "wells": ["W384", "W385"],
+      "mahadevan": ["M326"],
+      "description": "Upside-down heart symbol, possibly with vertical stroke coming from bottom of heart, vertical stroke decoration"
+    },
+    {
+      "mayig_id": "P301",
+      "parpola": ["V041", "V479"],
+      "wells": ["W526", "W527"],
+      "mahadevan": ["M254"],
+      "description": "Small box with horizontal hatching, vertical lines coming from top left and bottom right corners"
+    }
+  ],
+  "crosswalk_candidates": [
+    "local 112 <-> Mayig P041 is uncertain, sparse_singleton_or_doubleton, one aligned terminal position, confidence very_low",
+    "local 388 <-> Mayig P110 is uncertain, low_consistency_positional_candidate, three aligned positions, confidence very_low",
+    "no current clean overlap candidate confirms local 110 through Mayig P041, P110, P112, or V041"
+  ],
+  "decision": {
+    "h2148_role_inference": "preserved_as_strong_same_role_inference",
+    "mayig_p041_as_parpola41": "rejected",
+    "mayig_v041_as_article_sign41": "unresolved_and_unsafe_without_article_sign_list_convention",
+    "local_110_crosswalk": "unaccepted",
+    "local_112_p041": "very_low_overlap_pressure_only",
+    "translation_status": "none"
+  },
+  "next_gate": "Find the actual sign-list convention behind Parpola 2019's phrase sign no. 41. Do not equate it with Mayig P041 or Mayig's Parpola V041 until the article/table source proves the convention."
+}

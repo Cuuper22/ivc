@@ -1,0 +1,57 @@
+{
+  "date": "2026-05-25",
+  "experiment": "lipi_034_m1206_m37_415_fine_form_binning",
+  "question": "Does the exact local +520-220-415+ class provide source-visible fine-form evidence beyond M-37, and does it support or weaken the M-1206/M-37 terminal-slot interpretation?",
+  "inputs": {
+    "exact_local_415_rows_total": 17,
+    "source_visible_public_cisi_1_2_candidates_checked": [
+      "M-37",
+      "H-346",
+      "H-786",
+      "H-938",
+      "H-939",
+      "H-940",
+      "H-941"
+    ],
+    "verified_panel_crops": 17,
+    "verified_panel_manifest": "tmp/m1206_m37_blind_visual_comparanda/derived/verified_panel_crops/verified_panel_crops_manifest.csv",
+    "verified_contact_sheet": "tmp/m1206_m37_blind_visual_comparanda/derived/verified_panel_crops/contact_sheet_415_verified_panels.png",
+    "verified_contact_sheet_sha256": "b8a17cc67a1f51a06a8c02a08bf4b04e163329819cbdbc0449f39263a41e3d8e",
+    "blind_review": "data/open_prototype/reports/lipi_034_m1206_m37_415_fine_form_blind_review.csv"
+  },
+  "results": {
+    "blind_target_like_panels_beyond_m37": [
+      "H786_A",
+      "H938_A/A bis",
+      "H940_A",
+      "H941_A/A bis"
+    ],
+    "weak_or_unresolved_panels": [
+      "H346_A",
+      "H939_A/B"
+    ],
+    "side_mapping_conflicts": [
+      "H786: target-like source panel is A, while local exact row is .2",
+      "H941: target-like source panel is A/A bis, while local exact row is .2 and B/B bis is not target-grade"
+    ],
+    "broad_pattern": "The candidate-object pool now has repeated source-visible broad R/L/T or T/L/R three-class patterns outside M-37.",
+    "fine_form": "Fine-form identity is not accepted. The evidence increases allograph/sign-splitting and source-side mapping pressure rather than proving 034=415."
+  },
+  "accepted": {
+    "verified_crop_packet": true,
+    "blind_review_integrated": true,
+    "broad_candidate_object_pattern_recurrence": true,
+    "exact_side_415_pattern_recurrence": false,
+    "source_local_side_mapping_settled": false,
+    "stable_fine_form_identity": false,
+    "034_equals_415": false,
+    "415_value": false,
+    "translation": false
+  },
+  "next_gate": [
+    "Resolve H786 and H941 source-side mapping against CISI data pages or explicit side policy.",
+    "Do not upgrade H939 until stronger source image or side mapping appears.",
+    "Route-dark exact 415 rows need source acquisition before distributional claims.",
+    "Repeat the blind classifier on source crops with side labels masked once side crops are normalized."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "date": "2026-05-25",
+  "target": "M-685 ]034-204+",
+  "source_csv": "data/open_prototype/lipi/metadata_filtered.csv",
+  "total_rows": 5679,
+  "contrast_rows": 33,
+  "contains_204_count": 8,
+  "contains_034_and_204_count": 1,
+  "adjacent_034_204_count": 1,
+  "clean_starts_034_204_count": 0,
+  "raw_broken_starts_034_204_count": 1,
+  "fragment_034_count": 26,
+  "mohenjo_bull_fragment_034_count": 1,
+  "before_204_distribution": {
+    "540": 1,
+    "125": 1,
+    "240": 1,
+    "595": 1,
+    "013": 1,
+    "<s>": 1,
+    "034": 1,
+    "000": 1
+  },
+  "after_204_distribution": {
+    "</s>": 2,
+    "255": 1,
+    "705": 1,
+    "920": 1,
+    "346": 1,
+    "630": 1,
+    "140": 1
+  },
+  "target_result": "M-685 is the only row with adjacent 034-204 and the only row with both tokens 034 and 204 in the filtered corpus; it is also fragmentary with a leading break, so source image validation is mandatory before token meaning/function work.",
+  "accepted_mapping_count": 0,
+  "accepted_translation_count": 0
+}

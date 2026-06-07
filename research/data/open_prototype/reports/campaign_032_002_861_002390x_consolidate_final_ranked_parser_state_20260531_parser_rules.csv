@@ -1,0 +1,6 @@
+checked_date,rule_id,condition,output,tier
+2026-05-31,R1,row contains 002-390-X,parse 002 as FRAME and 390 as STATUS/TITLE HEAD,candidate
+2026-05-31,R2,X is 095 and terminal,parse X as source-visible singleton overt terminal classifier,wild shot singleton source-visible
+2026-05-31,R3,X is 705 and terminal,parse X as structural-only source-blocked overt terminal classifier,wild shot source-blocked
+2026-05-31,R4,X is 125 and followed by tail,parse 125 as linker to complement tail,candidate wounded source-visible
+2026-05-31,R5,X is 530/590/692 or underpowered classifier,"parse as unresolved branch, not a promoted sign role",wild shot or demoted

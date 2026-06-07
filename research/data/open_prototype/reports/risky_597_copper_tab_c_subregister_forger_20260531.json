@@ -1,0 +1,271 @@
+{
+  "run_date": "2026-05-31",
+  "bet_id": "V4_597_COPPER_TAB_C_SUBREGISTER_20260531",
+  "vector": "V4 context-to-meaning without sound",
+  "confidence_tier": "candidate",
+  "risky_bet": "`597` marks a narrow copper/TAB:C subregister, usually in the `617-142-597-032-(904/905)` template. This predicts context/template membership only, not sound.",
+  "observed": "Canonical rows=3503; copper TAB:C rows=93; 597 rows=4; 597 in copper TAB:C=4/4; background=0/3410; all-sign rank=2/714; Bonferroni=0.00033284072187836166; maxstat=0.0002. Motif 617-142-597-032 rows=3, all copper TAB:C. Support condition: 4/4 poor.",
+  "adversarial_test": "Canonical numeric-sequence collapse; all-sign Fisher rank over 714 signs; Bonferroni; 5000-iteration max-stat context-label forger; exact motif check.",
+  "false_positive_rate": 0.0002,
+  "bonferroni_p": 0.00033284072187836166,
+  "fisher_p": 4.6616347602011433e-7,
+  "support_condition_warning": "4/4 support rows are marked Poor; this blocks promotion beyond candidate.",
+  "falsifier": "A single source-verified non-copper/non-TAB:C 597 row, or confirmation that the four poor 597 rows are damaged/read through a shared cataloging convention, demotes this to wild shot.",
+  "next_prediction": "Unverified rows containing 617-142-597-032 should be copper TAB:C; additional copper TAB:C rows with the 617-142 template should prefer 597 before 032 when they belong to this subregister.",
+  "support_rows": [
+    {
+      "object": "M-1532",
+      "region": "Lower Indus",
+      "site": "Mohenjo-daro",
+      "type": "TAB:C",
+      "material": "Copper",
+      "shape": "rectangular",
+      "condition": "Poor",
+      "complete": "Y",
+      "copper_tab_c_context": "true",
+      "has_617_142_597_032_motif": "true",
+      "text": "+617-142-597-032-905+"
+    },
+    {
+      "object": "M-577",
+      "region": "Lower Indus",
+      "site": "Mohenjo-daro",
+      "type": "TAB:C",
+      "material": "Copper",
+      "shape": "rectangular",
+      "condition": "Poor",
+      "complete": "Y",
+      "copper_tab_c_context": "true",
+      "has_617_142_597_032_motif": "true",
+      "text": "+617-142-597-032-905/407-004-002-365-460-495+"
+    },
+    {
+      "object": "M-1529",
+      "region": "Lower Indus",
+      "site": "Mohenjo-daro",
+      "type": "TAB:C",
+      "material": "Copper",
+      "shape": "rectangular",
+      "condition": "Poor",
+      "complete": "Y",
+      "copper_tab_c_context": "true",
+      "has_617_142_597_032_motif": "true",
+      "text": "+617-142-597-032-904+"
+    },
+    {
+      "object": "M-2049",
+      "region": "Lower Indus",
+      "site": "Mohenjo-daro",
+      "type": "TAB:C",
+      "material": "Copper",
+      "shape": "rectangular",
+      "condition": "Poor",
+      "complete": "N",
+      "copper_tab_c_context": "true",
+      "has_617_142_597_032_motif": "false",
+      "text": "+000-142-597-032-905+"
+    }
+  ],
+  "top_sign_rows": [
+    {
+      "sign": "407",
+      "context_rows": 93,
+      "a": 18,
+      "b": 75,
+      "c": 52,
+      "d": 3358,
+      "total": 70,
+      "fisher_p": 6.100701875466996e-14
+    },
+    {
+      "sign": "597",
+      "context_rows": 93,
+      "a": 4,
+      "b": 89,
+      "c": 0,
+      "d": 3410,
+      "total": 4,
+      "fisher_p": 4.6616347602011433e-7
+    },
+    {
+      "sign": "142",
+      "context_rows": 93,
+      "a": 11,
+      "b": 82,
+      "c": 52,
+      "d": 3358,
+      "total": 63,
+      "fisher_p": 5.022741935443066e-7
+    },
+    {
+      "sign": "845",
+      "context_rows": 93,
+      "a": 7,
+      "b": 86,
+      "c": 14,
+      "d": 3396,
+      "total": 21,
+      "fisher_p": 6.364490135936668e-7
+    },
+    {
+      "sign": "095",
+      "context_rows": 93,
+      "a": 6,
+      "b": 87,
+      "c": 16,
+      "d": 3394,
+      "total": 22,
+      "fisher_p": 0.00001577344596217424
+    },
+    {
+      "sign": "617",
+      "context_rows": 93,
+      "a": 9,
+      "b": 84,
+      "c": 49,
+      "d": 3361,
+      "total": 58,
+      "fisher_p": 0.00001617842665882407
+    },
+    {
+      "sign": "900",
+      "context_rows": 93,
+      "a": 9,
+      "b": 84,
+      "c": 74,
+      "d": 3336,
+      "total": 83,
+      "fisher_p": 0.0002889689105402594
+    },
+    {
+      "sign": "747",
+      "context_rows": 93,
+      "a": 3,
+      "b": 90,
+      "c": 4,
+      "d": 3406,
+      "total": 7,
+      "fisher_p": 0.0005870263670757017
+    },
+    {
+      "sign": "749",
+      "context_rows": 93,
+      "a": 2,
+      "b": 91,
+      "c": 0,
+      "d": 3410,
+      "total": 2,
+      "fisher_p": 0.0006974522775829612
+    },
+    {
+      "sign": "905",
+      "context_rows": 93,
+      "a": 3,
+      "b": 90,
+      "c": 5,
+      "d": 3405,
+      "total": 8,
+      "fisher_p": 0.0009212075318337368
+    },
+    {
+      "sign": "585",
+      "context_rows": 93,
+      "a": 6,
+      "b": 87,
+      "c": 38,
+      "d": 3372,
+      "total": 44,
+      "fisher_p": 0.0009315802895201224
+    },
+    {
+      "sign": "176",
+      "context_rows": 93,
+      "a": 10,
+      "b": 83,
+      "c": 112,
+      "d": 3298,
+      "total": 122,
+      "fisher_p": 0.0012662876234926655
+    },
+    {
+      "sign": "233",
+      "context_rows": 93,
+      "a": 12,
+      "b": 81,
+      "c": 160,
+      "d": 3250,
+      "total": 172,
+      "fisher_p": 0.0017097205531568461
+    },
+    {
+      "sign": "421",
+      "context_rows": 93,
+      "a": 2,
+      "b": 91,
+      "c": 1,
+      "d": 3409,
+      "total": 3,
+      "fisher_p": 0.00205609967351501
+    },
+    {
+      "sign": "003",
+      "context_rows": 93,
+      "a": 11,
+      "b": 82,
+      "c": 143,
+      "d": 3267,
+      "total": 154,
+      "fisher_p": 0.002227886373082921
+    },
+    {
+      "sign": "435",
+      "context_rows": 93,
+      "a": 6,
+      "b": 87,
+      "c": 49,
+      "d": 3361,
+      "total": 55,
+      "fisher_p": 0.003026173537912722
+    },
+    {
+      "sign": "690",
+      "context_rows": 93,
+      "a": 7,
+      "b": 86,
+      "c": 67,
+      "d": 3343,
+      "total": 74,
+      "fisher_p": 0.0031285187377255263
+    },
+    {
+      "sign": "222",
+      "context_rows": 93,
+      "a": 3,
+      "b": 90,
+      "c": 9,
+      "d": 3401,
+      "total": 12,
+      "fisher_p": 0.0033497104892896462
+    },
+    {
+      "sign": "422",
+      "context_rows": 93,
+      "a": 2,
+      "b": 91,
+      "c": 2,
+      "d": 3408,
+      "total": 4,
+      "fisher_p": 0.004041083518958039
+    },
+    {
+      "sign": "595",
+      "context_rows": 93,
+      "a": 5,
+      "b": 88,
+      "c": 40,
+      "d": 3370,
+      "total": 45,
+      "fisher_p": 0.006250174891052432
+    }
+  ]
+}

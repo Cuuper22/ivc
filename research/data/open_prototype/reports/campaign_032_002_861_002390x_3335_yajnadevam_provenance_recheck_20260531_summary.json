@@ -1,0 +1,93 @@
+{
+  "status": "3335_yajnadevam_pinned_provenance_recheck_no_source_bridge_no_values",
+  "date": "2026-05-31 America/Los_Angeles",
+  "target_id": "3335.1",
+  "target_text": "+740-205-032-002-390-590-032+",
+  "commit_sha": "b272ad99c253ba7fa1e4cd91f48cce31f6d02bf4",
+  "commit_url": "https://github.com/yajnadevam/lipi/commit/b272ad99c253ba7fa1e4cd91f48cce31f6d02bf4",
+  "main_raw_url": "https://raw.githubusercontent.com/yajnadevam/lipi/refs/heads/main/src/assets/data/inscriptions.csv",
+  "pinned_raw_url": "https://raw.githubusercontent.com/yajnadevam/lipi/b272ad99c253ba7fa1e4cd91f48cce31f6d02bf4/src/assets/data/inscriptions.csv",
+  "current_raw_sha256": "c02e3d7bb74cf5abb11cc94f88d8d469e6acc5d6fad4b7153c02c43428f58d98",
+  "pinned_raw_sha256": "c02e3d7bb74cf5abb11cc94f88d8d469e6acc5d6fad4b7153c02c43428f58d98",
+  "prior_raw_sha256": "c02e3d7bb74cf5abb11cc94f88d8d469e6acc5d6fad4b7153c02c43428f58d98",
+  "current_equals_pinned": true,
+  "current_equals_prior_20260526": true,
+  "rows": 5679,
+  "columns": 38,
+  "source_only_headers": [
+    "sanskrit",
+    "translation",
+    "notes"
+  ],
+  "filtered_only_headers": [],
+  "target_bridge_fields": {
+    "cisi": "-",
+    "site": "Unknown",
+    "excavation_idno": "-",
+    "image_ref_id": "",
+    "artifact_id": "-",
+    "provenance_tier": "T3_quarantined_metadata"
+  },
+  "row_order_context": [
+    {
+      "id": "3334.1",
+      "cisi": "M-939",
+      "text": "+527-550+"
+    },
+    {
+      "id": "3335.1",
+      "cisi": "-",
+      "text": "+740-205-032-002-390-590-032+"
+    },
+    {
+      "id": "3336.1",
+      "cisi": "M-941",
+      "text": "+000-642-240-031-002-861+"
+    }
+  ],
+  "chunk_counts": {
+    "740-205-032-002-390-590-032": 1,
+    "740-205-032-002": 2,
+    "032-002-390": 2,
+    "002-390-590": 1,
+    "390-590-032": 7
+  },
+  "decisions": [
+    {
+      "decision": "upstream_source_pinned",
+      "evidence": "GitHub path commit b272ad99c253ba7fa1e4cd91f48cce31f6d02bf4; pinned raw URL https://raw.githubusercontent.com/yajnadevam/lipi/b272ad99c253ba7fa1e4cd91f48cce31f6d02bf4/src/assets/data/inscriptions.csv; raw SHA-256 c02e3d7bb74cf5abb11cc94f88d8d469e6acc5d6fad4b7153c02c43428f58d98",
+      "consequence": "the recheck is reproducible and no longer depends on floating main alone",
+      "accepted_scope": "source provenance for the CSV only"
+    },
+    {
+      "decision": "raw_source_adds_no_object_bridge",
+      "evidence": "current and pinned raw rows keep cisi='-', site='Unknown', excavation-idno='-', and no image/plate/source field",
+      "consequence": "3335.1 remains unbound T3 metadata pressure, not source evidence",
+      "accepted_scope": "negative source gate"
+    },
+    {
+      "decision": "decipherment_columns_remain_quarantined",
+      "evidence": "the only raw-source columns absent from the filtered table are sanskrit, translation, and notes",
+      "consequence": "these fields are recorded as observed but are not labels, readings, values, translations, or training targets",
+      "accepted_scope": "quarantine guardrail"
+    },
+    {
+      "decision": "row_order_anomaly_no_promotion",
+      "evidence": "3335.1 sits between M-939 and M-941 in raw row order while cisi is blank",
+      "consequence": "the missing M-940-looking slot is a search clue only; it does not identify the artifact",
+      "accepted_scope": "acquisition hint, not admissible binding"
+    },
+    {
+      "decision": "matched_032_gate_still_blocked",
+      "evidence": "the target sequence is present but unbound; M-70 remains the strict source-visible 032 -> 002-390 -> 692 comparator",
+      "consequence": "no strict 032 matched-branch split is counted",
+      "accepted_scope": "campaign decision"
+    },
+    {
+      "decision": "no_reading_no_values",
+      "evidence": "no source image, authoritative sign list, object id, or independent publication bridge was gained",
+      "consequence": "accepted value, phonetics, language identity, function, sign meaning, and translation remain 0",
+      "accepted_scope": "global guardrail"
+    }
+  ]
+}

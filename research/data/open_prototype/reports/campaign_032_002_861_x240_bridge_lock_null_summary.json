@@ -1,0 +1,264 @@
+{
+  "date": "2026-05-29",
+  "seed": 603240861,
+  "iterations": 20000,
+  "x240_rows": 95,
+  "distinct_x_signs": 28,
+  "post861_tail_initial_states": 23,
+  "observed_metric": {
+    "sign603_locked": true,
+    "sign603_locked_to_060_692": true,
+    "any_nonbackground_bridge_locked": true,
+    "any_lowfreq_nonbackground_bridge_locked": true,
+    "bridge_locked_signs": "603",
+    "lowfreq_bridge_locked_signs": "603"
+  },
+  "observed_profiles": {
+    "100": {
+      "x240_rows": 8,
+      "distinct_after240": 5,
+      "locked": false,
+      "dominant_after240": "<END>",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "835": {
+      "x240_rows": 1,
+      "distinct_after240": 1,
+      "locked": true,
+      "dominant_after240": "235 031 900",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "603": {
+      "x240_rows": 3,
+      "distinct_after240": 1,
+      "locked": true,
+      "dominant_after240": "060 692",
+      "post861_initial_rows": 3,
+      "is_nonbackground_bridge": true
+    },
+    "904": {
+      "x240_rows": 7,
+      "distinct_after240": 3,
+      "locked": false,
+      "dominant_after240": "002 817",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "630": {
+      "x240_rows": 3,
+      "distinct_after240": 3,
+      "locked": false,
+      "dominant_after240": "031 032 171",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "642": {
+      "x240_rows": 7,
+      "distinct_after240": 5,
+      "locked": false,
+      "dominant_after240": "060 692",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "760": {
+      "x240_rows": 3,
+      "distinct_after240": 1,
+      "locked": true,
+      "dominant_after240": "<END>",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "482": {
+      "x240_rows": 8,
+      "distinct_after240": 2,
+      "locked": false,
+      "dominant_after240": "002 861",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "176": {
+      "x240_rows": 5,
+      "distinct_after240": 4,
+      "locked": false,
+      "dominant_after240": "<END>",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "152": {
+      "x240_rows": 1,
+      "distinct_after240": 1,
+      "locked": true,
+      "dominant_after240": "<END>",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "636": {
+      "x240_rows": 15,
+      "distinct_after240": 5,
+      "locked": false,
+      "dominant_after240": "<END>",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "772": {
+      "x240_rows": 4,
+      "distinct_after240": 4,
+      "locked": false,
+      "dominant_after240": "060 415 056",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "643": {
+      "x240_rows": 3,
+      "distinct_after240": 2,
+      "locked": false,
+      "dominant_after240": "<END>",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "233": {
+      "x240_rows": 4,
+      "distinct_after240": 2,
+      "locked": false,
+      "dominant_after240": "<END>",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "055": {
+      "x240_rows": 3,
+      "distinct_after240": 3,
+      "locked": false,
+      "dominant_after240": "415 798 060",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "440": {
+      "x240_rows": 1,
+      "distinct_after240": 1,
+      "locked": true,
+      "dominant_after240": "001 820",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "639": {
+      "x240_rows": 1,
+      "distinct_after240": 1,
+      "locked": true,
+      "dominant_after240": "002 435 255",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "235": {
+      "x240_rows": 1,
+      "distinct_after240": 1,
+      "locked": true,
+      "dominant_after240": "<END>",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "637": {
+      "x240_rows": 2,
+      "distinct_after240": 2,
+      "locked": false,
+      "dominant_after240": "<END>",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "798": {
+      "x240_rows": 2,
+      "distinct_after240": 2,
+      "locked": false,
+      "dominant_after240": "060 111 166",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "806": {
+      "x240_rows": 1,
+      "distinct_after240": 1,
+      "locked": true,
+      "dominant_after240": "002 820",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "923": {
+      "x240_rows": 3,
+      "distinct_after240": 3,
+      "locked": false,
+      "dominant_after240": "235 060 820",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "455": {
+      "x240_rows": 2,
+      "distinct_after240": 2,
+      "locked": false,
+      "dominant_after240": "235 060 820",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "773": {
+      "x240_rows": 2,
+      "distinct_after240": 2,
+      "locked": false,
+      "dominant_after240": "235 060 692",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "765": {
+      "x240_rows": 1,
+      "distinct_after240": 1,
+      "locked": true,
+      "dominant_after240": "001 368 920",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "000": {
+      "x240_rows": 2,
+      "distinct_after240": 1,
+      "locked": true,
+      "dominant_after240": "<END>",
+      "post861_initial_rows": 1,
+      "is_nonbackground_bridge": false
+    },
+    "585": {
+      "x240_rows": 1,
+      "distinct_after240": 1,
+      "locked": true,
+      "dominant_after240": "220 032 002",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    },
+    "927": {
+      "x240_rows": 1,
+      "distinct_after240": 1,
+      "locked": true,
+      "dominant_after240": "031",
+      "post861_initial_rows": 0,
+      "is_nonbackground_bridge": false
+    }
+  },
+  "null_false_positive_rates": {
+    "sign603_locked": 0.04,
+    "sign603_locked_to_060_692": 0.0004,
+    "any_nonbackground_bridge_locked": 0.04,
+    "any_lowfreq_nonbackground_bridge_locked": 0.04
+  },
+  "decision": {
+    "status": "bridge_lock_pattern_is_weak_to_moderate_distributional_support_not_a_promotion",
+    "interpretation": [
+      "The exact `603 locked to 060 692` pattern is uncommon under row-label shuffle.",
+      "The broader class of any low-frequency non-background bridge sign locked to one after-240 subframe appears at about the 4% level, so the pattern is real pressure but still small-count and model-sensitive.",
+      "Therefore this null gives weak-to-moderate support to the bridge-lock pattern without promoting `603` to value evidence.",
+      "The next promotion still depends on source graphic identity or an independent second X-before-240 context for `603`."
+    ],
+    "not_accepted": [
+      "603 value",
+      "phonetics",
+      "language identity",
+      "translation",
+      "accepted graphic identity"
+    ]
+  }
+}

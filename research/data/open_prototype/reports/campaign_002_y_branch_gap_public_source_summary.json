@@ -1,0 +1,38 @@
+{
+  "date": "2026-05-29",
+  "purpose": "Public CISI OCR/page-route acquisition for branch-pole gap signs in the broad all-002 post-hoc partition.",
+  "scope": "Rows from campaign_002_y_partition_source_queue.csv with partition_class=posthoc_branch_pole and y_after_002 in 368/031/220.",
+  "counts": {
+    "target_rows": 29,
+    "route_rows": 32,
+    "public_cisi_plate_route_candidates": 12,
+    "not_found_or_blocked": 17,
+    "accepted_claims_increment": 0
+  },
+  "by_sign": {
+    "031": {
+      "target_rows": 9,
+      "route_candidates": 4,
+      "object_id_blocked": 1
+    },
+    "220": {
+      "target_rows": 9,
+      "route_candidates": 3,
+      "object_id_blocked": 0
+    },
+    "368": {
+      "target_rows": 11,
+      "route_candidates": 5,
+      "object_id_blocked": 1
+    }
+  },
+  "interpretation_boundary": "These are source-route candidates only. They do not validate source-normalized token order, physical direction, sign identity, sign meaning, phonetic value, language family, or translation.",
+  "files": {
+    "routes_csv": "data/open_prototype/reports/campaign_002_y_branch_gap_public_routes.csv",
+    "status_csv": "data/open_prototype/reports/campaign_002_y_branch_gap_public_source_status.csv",
+    "summary_json": "data/open_prototype/reports/campaign_002_y_branch_gap_public_source_summary.json",
+    "contact_sheet": "tmp/002_y_branch_gap_public_source_acquisition/campaign_002_y_branch_gap_public_source_contact_sheet.jpg",
+    "page_dir": "tmp/002_y_branch_gap_public_source_acquisition/pages",
+    "crop_dir": "tmp/002_y_branch_gap_public_source_acquisition/crops"
+  }
+}

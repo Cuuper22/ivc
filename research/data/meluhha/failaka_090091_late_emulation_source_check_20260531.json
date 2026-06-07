@@ -1,0 +1,62 @@
+{
+  "run_date": "2026-05-31T14:44:00-07:00",
+  "phase": "CONSOLIDATE",
+  "candidate_under_attack": "Failaka rows 147.1/148.1 as clean 090/091 Gulf route/register support",
+  "tier_after_check": "demoted support; source-visible Failaka pressure but object-to-row unresolved",
+  "source": {
+    "publication": "Steffen Terp Laursen, The westward transmission of Indus Valley sealing technology",
+    "url": "https://www.harappa.com/sites/default/files/pdf/The_westward_transmission_of_Indus_Valle.pdf",
+    "local_access_attempt": "Direct shell download was blocked by Cloudflare; web PDF rendering and extracted lines were usable.",
+    "relevant_lines": [
+      "L1753-L1756: Failaka has only two reported examples exclusive of the Dilmun Type seal with pseudo-Indus script, Fig. 9/13.",
+      "L1758-L1764: Fig. 9/13 is a unique Dilmun seal with unparalleled Indus-like script and stands later than the Gulf Type seals.",
+      "L1765-L1770: Fig. 9/13 and also seal no.12 from Failaka may be replicas made from heavily curated/heirloom Indus-inscription models.",
+      "L1883-L1885: the two Failaka seals stand out morphologically, iconographically, and stylistically as late emulations."
+    ]
+  },
+  "local_rows_under_test": [
+    {
+      "id": "147.1",
+      "site": "Failaka",
+      "text": "+317-817-000-090+",
+      "local_source": "data/open_prototype/lipi/metadata_filtered.csv"
+    },
+    {
+      "id": "148.1",
+      "site": "Failaka",
+      "text": "]090-001-350-716+",
+      "local_source": "data/open_prototype/lipi/metadata_filtered.csv"
+    }
+  ],
+  "source_result": {
+    "confirms": [
+      "There are indeed two core Failaka objects in the relevant discussion, including Kjaerum 1983 no.319 and no.279 via the existing Laursen/Kjaerum queue.",
+      "At least one Failaka object in this pair is explicitly characterized by Laursen as pseudo-Indus or unparalleled Indus-like script in a later Dilmun-style context."
+    ],
+    "does_not_confirm": [
+      "The source does not map local row 147.1 to Kjaerum no.319 or no.279.",
+      "The source does not map local row 148.1 to Kjaerum no.319 or no.279.",
+      "The source does not independently verify the exact local 090-bearing sequences +317-817-000-090+ or ]090-001-350-716+."
+    ]
+  },
+  "decision": {
+    "promoted": false,
+    "killed": false,
+    "demoted": true,
+    "status": "failaka_support_is_late_emulation_or_source_unmapped",
+    "effect": "Do not let the two Failaka rows carry a clean Meluhha/Gulf Type phonetic bridge. They can support only a narrower Gulf/Dilmun emulation-route hypothesis until Kjaerum catalogue pages map the local rows and sign bands."
+  },
+  "model_update": "090/091 remains a live external-contact sign class, but the most honest current version is not 'portable Meluhha marker'. It is 'Gulf/Dilmun circular-seal route or emulation marker, possibly preserving or imitating Indus sign order'.",
+  "next_decisive_tests": [
+    {
+      "test": "Obtain Kjaerum 1983 no.319 and no.279 catalogue pages or plate images and map them to local rows 147.1/148.1.",
+      "promotion_condition": "Both local 090-bearing rows map cleanly to the source objects and the signs are not merely pseudo-Indus decorative imitation.",
+      "kill_condition": "The Kjaerum pages map one or both local rows to different signs, or the 090-bearing row is the explicitly late pseudo-Indus no.279 without a parallel Gulf Type row."
+    },
+    {
+      "test": "Split the external 090/091 route statistic into Gulf Type, Dilmun Type/pseudo-Indus, and classic Indus-style classes.",
+      "promotion_condition": "090/091 remains enriched inside true Gulf Type/classic external Indus rows after excluding late pseudo-Indus emulations.",
+      "kill_condition": "The enrichment is carried mainly by late Dilmun/pseudo-Indus emulations."
+    }
+  ]
+}

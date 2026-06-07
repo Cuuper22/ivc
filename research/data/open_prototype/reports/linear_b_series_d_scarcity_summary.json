@@ -1,0 +1,62 @@
+{
+  "generated_at_local": "2026-05-28T23:13:41-07:00",
+  "experiment": "E5.3a Linear B Series D Scarcity Baseline",
+  "source_manifest": "data/open_prototype/reports/linear_b_series_d_source_manifest.json",
+  "clean_default": {
+    "tokenization": "sign_tokens",
+    "scope": "real_series_d_513_all_lengths",
+    "rows": 513,
+    "tokens": 4202,
+    "unique_tokens": 100,
+    "exact_sequence_groups": 490,
+    "exact_duplicate_rows": 40,
+    "stored_higher_share": 0.995918,
+    "frequency_top1_accuracy": 0.09917,
+    "position_top1_accuracy": 0.127504,
+    "length_position_top1_accuracy": 0.170738,
+    "bidirectional_top1_accuracy": 0.4702,
+    "bidirectional_top5_accuracy": 0.746458
+  },
+  "ivc_like_length_cap": {
+    "source": "current lipi_numeric_clean_candidate p95 length",
+    "cap_sign_tokens": 8,
+    "ivc_numeric_clean_rows": 2883,
+    "ivc_length_mean": 4.039195,
+    "ivc_length_median": 4,
+    "ivc_length_p95": 8,
+    "tokenization": "sign_tokens",
+    "scope": "real_series_d_513_ivc_p95_length_cap",
+    "rows": 299,
+    "tokens": 1838,
+    "unique_tokens": 91,
+    "stored_higher_share": 0.992806,
+    "frequency_top1_accuracy": 0.120228,
+    "position_top1_accuracy": 0.144729,
+    "length_position_top1_accuracy": 0.156125,
+    "bidirectional_top1_accuracy": 0.435897,
+    "bidirectional_top5_accuracy": 0.698006
+  },
+  "controls": {
+    "iterations_per_control": 50,
+    "names": [
+      "length_frequency_shuffle",
+      "edge_frame_shuffle",
+      "position_slot_shuffle"
+    ],
+    "note": "Controls run for both sign_tokens and word_tokens, and for all-length plus IVC-p95-length scopes. They are structural-only nulls, not translation tests."
+  },
+  "tokenization_caveat": "The primary sign_tokens view splits hyphenated transliteration tokens into opaque sign labels while preserving logograms and composite labels such as OVIS:f as single labels. This is a scarcity comparator tokenization, not a claim about Linear B philology.",
+  "interpretation_boundary": "Known-script comparator only. Results estimate what structural methods recover when known readings are hidden. They do not validate any IVC sign, side relation, semantic field, language identity, phonetic value, or translation.",
+  "artifact_files": [
+    "data/open_prototype/known_scripts/linear_b_series_d/Samples.txt",
+    "data/open_prototype/reports/linear_b_series_d_source_manifest.json",
+    "data/open_prototype/reports/linear_b_series_d_row_inventory.csv",
+    "data/open_prototype/reports/linear_b_series_d_length_distribution.csv",
+    "data/open_prototype/reports/linear_b_series_d_sequence_summary.csv",
+    "data/open_prototype/reports/linear_b_series_d_masked_summary.csv",
+    "data/open_prototype/reports/linear_b_series_d_position_entropy.csv",
+    "data/open_prototype/reports/linear_b_series_d_control_iterations.csv",
+    "data/open_prototype/reports/linear_b_series_d_control_summary.csv",
+    "data/open_prototype/reports/linear_b_series_d_scarcity_summary.json"
+  ]
+}

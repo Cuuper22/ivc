@@ -1,0 +1,59 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "risky_parse_model_v1_tests",
+  "hypotheses_tested": [
+    "002 as dependency opener",
+    "390 as open class head under 002",
+    "235-002 branch-head family selects 125",
+    "3335.1 as governed 390-590-032 bridge"
+  ],
+  "after_002_head_390": {
+    "checked_date": "2026-05-31",
+    "head_after_002": "390",
+    "frame_count": "15",
+    "terminal_count": "0",
+    "terminal_share": "0.000000",
+    "next_entropy_bits": "3.106891",
+    "top_next": "125:4;095:2;705:2;072:1;140:1;346:1;530:1;590:1",
+    "examples": "H-1993:+740-000-220-004-002-390-095+ | H-68:+090-740-220-003-002-390-072+ | H-773:+740-798-803-002-390-530-741+ | M-38:+740-690-435-255-220-032-240-235-002-390-125-632-032+ | M-70:+226-032-002-390-692+ | M-71:+151-279-142-002-390-095+"
+  },
+  "after_002_head_405": {
+    "checked_date": "2026-05-31",
+    "head_after_002": "405",
+    "frame_count": "32",
+    "terminal_count": "0",
+    "terminal_share": "0.000000",
+    "next_entropy_bits": "0.597455",
+    "top_next": "501:29;125:1;321:1;372:1",
+    "examples": "H-22:+740-920-320-233-806-002-405-321+ | H-252:+520-240-002-405-501+ | H-253:+520-240-002-405-501+ | H-254:+520-240-002-405-501+ | H-255:+520-240-002-405-501+ | H-256:+520-240-002-405-501+"
+  },
+  "stem235_test": {
+    "cases": 39,
+    "p086_family_390_405_cases": 3,
+    "p086_family_390_405_tail_has_125": 3,
+    "branch_family_390_405_392_cases": 4,
+    "branch_family_tail_has_125": 4,
+    "broad_open_head_cases": 7,
+    "broad_open_head_tail_has_125": 2,
+    "non_branch_family_cases": 35,
+    "non_branch_family_tail_has_125": 0,
+    "closure_family_cases": 23,
+    "closure_family_tail_has_125": 0,
+    "adversarial_shrink": "The broad open-head version fails; 031/220/374/906 cases do not carry 125. The surviving promoted candidate is narrower: 235-002 plus 390/405 P086-family head selects 125. The 392 case is retained only as a wild extension.",
+    "posthoc_warning": "The 390/405 family was named from the live object and Mayig P086 pressure; treat as candidate-generating, not a confirmatory p-value."
+  },
+  "formula_bridge_390_590_032_rows": 7,
+  "formula_bridge_after_002_rows": 1,
+  "formula_bridge_before_002_rows": 3,
+  "confidence_changes": [
+    "002 dependency opener: candidate",
+    "390 open class head under 002: candidate",
+    "235-002 plus 390/405 P086-family head selecting 125: promoted candidate after local null/source-pair stress",
+    "235-002 broad open-head selecting 125: killed by 031/220/374/906 counterexamples",
+    "392-590-125 as related extension: wild shot only",
+    "125 as rank/title selector: candidate semantic interpretation of the promoted selector rule",
+    "095 administrative closure: wild shot",
+    "705 remote/transfer selector: wild shot",
+    "3335.1 390-590-032 bridge: candidate if row source-binds as transcribed"
+  ]
+}

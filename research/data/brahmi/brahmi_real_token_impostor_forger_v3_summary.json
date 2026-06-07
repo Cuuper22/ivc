@@ -1,0 +1,195 @@
+{
+  "date": "2026-05-30",
+  "status": "brahmi_real_token_impostor_forger_v3_no_phonetic_anchor",
+  "input_family_rows": 83,
+  "source_token_rows": 611,
+  "neighbor_rows": 6110,
+  "iterations_per_family": 1000,
+  "rows_with_full_impostor_iterations": 82,
+  "insufficient_impostor_pool_rows": 1,
+  "real_token_null_above_0_01_rows": 61,
+  "real_token_null_at_or_below_0_01_rows": 21,
+  "result_counts": {
+    "failed_real_token_impostor_forger": 83
+  },
+  "min_impostor_ge_observed_share": 0,
+  "max_impostor_ge_observed_share": 1,
+  "review_packet_eligible_rows": 0,
+  "candidate_only_rows": 0,
+  "accepted_phonetic_anchors": 0,
+  "top_v2_near_misses": [
+    {
+      "sign_id": "527",
+      "orientation_policy": "visual_ltr_catalog_order",
+      "v2_modal_label": "ra",
+      "v3_cisi_modal_label": "ra",
+      "impostor_ge_observed_share": "0.000000",
+      "v3_preflight_decision": "blocked_before_review",
+      "blocked_reason": "failed_v3_independence_preflight;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "527",
+      "orientation_policy": "visual_ltr_catalog_reverse",
+      "v2_modal_label": "o",
+      "v3_cisi_modal_label": "o",
+      "impostor_ge_observed_share": "0.036000",
+      "v3_preflight_decision": "blocked_before_review",
+      "blocked_reason": "real_token_impostor_null_above_0_01;failed_v3_independence_preflight;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "061",
+      "orientation_policy": "visual_ltr_catalog_order",
+      "v2_modal_label": "ra",
+      "v3_cisi_modal_label": "ra",
+      "impostor_ge_observed_share": "0.008000",
+      "v3_preflight_decision": "blocked_before_review",
+      "blocked_reason": "failed_v3_independence_preflight;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "061",
+      "orientation_policy": "visual_ltr_catalog_reverse",
+      "v2_modal_label": "ja",
+      "v3_cisi_modal_label": "o",
+      "impostor_ge_observed_share": "0.103000",
+      "v3_preflight_decision": "blocked_before_review",
+      "blocked_reason": "real_token_impostor_null_above_0_01;failed_v3_independence_preflight;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "817",
+      "orientation_policy": "visual_ltr_catalog_order",
+      "v2_modal_label": "dha",
+      "v3_cisi_modal_label": "dha",
+      "impostor_ge_observed_share": "0.169000",
+      "v3_preflight_decision": "blocked_before_review",
+      "blocked_reason": "real_token_impostor_null_above_0_01;failed_v3_independence_preflight;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "472",
+      "orientation_policy": "visual_ltr_catalog_reverse",
+      "v2_modal_label": "ra",
+      "v3_cisi_modal_label": "ra",
+      "impostor_ge_observed_share": "0.248000",
+      "v3_preflight_decision": "blocked_before_review",
+      "blocked_reason": "real_token_impostor_null_above_0_01;failed_v3_independence_preflight;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "817",
+      "orientation_policy": "visual_ltr_catalog_reverse",
+      "v2_modal_label": "dhya",
+      "v3_cisi_modal_label": "dhya",
+      "impostor_ge_observed_share": "0.264000",
+      "v3_preflight_decision": "blocked_before_review",
+      "blocked_reason": "real_token_impostor_null_above_0_01;failed_v3_independence_preflight;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "060",
+      "orientation_policy": "visual_ltr_catalog_reverse",
+      "v2_modal_label": "ka",
+      "v3_cisi_modal_label": "ka",
+      "impostor_ge_observed_share": "0.367000",
+      "v3_preflight_decision": "blocked_before_review",
+      "blocked_reason": "real_token_impostor_null_above_0_01;failed_v3_independence_preflight;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "472",
+      "orientation_policy": "visual_ltr_catalog_order",
+      "v2_modal_label": "ra",
+      "v3_cisi_modal_label": "ra",
+      "impostor_ge_observed_share": "0.530000",
+      "v3_preflight_decision": "blocked_before_review",
+      "blocked_reason": "real_token_impostor_null_above_0_01;failed_v3_independence_preflight;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "060",
+      "orientation_policy": "visual_ltr_catalog_order",
+      "v2_modal_label": "ra",
+      "v3_cisi_modal_label": "ra",
+      "impostor_ge_observed_share": "0.701000",
+      "v3_preflight_decision": "blocked_before_review",
+      "blocked_reason": "real_token_impostor_null_above_0_01;failed_v3_independence_preflight;not_accepted_in_v2_gate"
+    }
+  ],
+  "lowest_real_token_impostor_null_rows": [
+    {
+      "sign_id": "740",
+      "orientation_policy": "visual_ltr_catalog_order",
+      "v2_modal_label": "ra",
+      "v3_cisi_modal_label": "ra",
+      "impostor_ge_observed_share": "0.000000",
+      "blocked_reason": "failed_v3_independence_preflight;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "798",
+      "orientation_policy": "visual_ltr_catalog_reverse",
+      "v2_modal_label": "ra",
+      "v3_cisi_modal_label": "ra",
+      "impostor_ge_observed_share": "0.000000",
+      "blocked_reason": "failed_v3_independence_preflight;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "002",
+      "orientation_policy": "visual_ltr_catalog_order",
+      "v2_modal_label": "ra",
+      "v3_cisi_modal_label": "ra",
+      "impostor_ge_observed_share": "0.000000",
+      "blocked_reason": "failed_v3_independence_preflight;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "740",
+      "orientation_policy": "visual_ltr_catalog_reverse",
+      "v2_modal_label": "ra",
+      "v3_cisi_modal_label": "ra",
+      "impostor_ge_observed_share": "0.000000",
+      "blocked_reason": "failed_v3_independence_preflight;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "002",
+      "orientation_policy": "visual_ltr_catalog_reverse",
+      "v2_modal_label": "sya",
+      "v3_cisi_modal_label": "ra",
+      "impostor_ge_observed_share": "0.000000",
+      "blocked_reason": "failed_v3_independence_preflight;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "240",
+      "orientation_policy": "visual_ltr_catalog_order",
+      "v2_modal_label": "tha",
+      "v3_cisi_modal_label": "ra",
+      "impostor_ge_observed_share": "0.000000",
+      "blocked_reason": "failed_v3_independence_preflight;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "861",
+      "orientation_policy": "visual_ltr_catalog_order",
+      "v2_modal_label": "ra",
+      "v3_cisi_modal_label": "ra",
+      "impostor_ge_observed_share": "0.000000",
+      "blocked_reason": "failed_v3_independence_preflight;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "861",
+      "orientation_policy": "visual_ltr_catalog_reverse",
+      "v2_modal_label": "a",
+      "v3_cisi_modal_label": "a",
+      "impostor_ge_observed_share": "0.000000",
+      "blocked_reason": "failed_v3_independence_preflight;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "527",
+      "orientation_policy": "visual_ltr_catalog_order",
+      "v2_modal_label": "ra",
+      "v3_cisi_modal_label": "ra",
+      "impostor_ge_observed_share": "0.000000",
+      "blocked_reason": "failed_v3_independence_preflight;not_accepted_in_v2_gate"
+    },
+    {
+      "sign_id": "820",
+      "orientation_policy": "visual_ltr_catalog_order",
+      "v2_modal_label": "tha",
+      "v3_cisi_modal_label": "tha",
+      "impostor_ge_observed_share": "0.000000",
+      "blocked_reason": "failed_v3_independence_preflight;not_accepted_in_v2_gate"
+    }
+  ],
+  "conclusion": "No Brahmi family survives the real-token impostor forger plus v3 independence preflight. Actual Indus source-token impostors can reproduce or exceed many apparent Brahmi-like matches, and every row remains blocked before any phonetic anchor can be accepted."
+}

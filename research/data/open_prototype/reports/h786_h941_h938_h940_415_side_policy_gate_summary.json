@@ -1,0 +1,40 @@
+{
+  "date": "2026-05-26",
+  "artifact": "h786_h941_h938_h940_415_side_policy_gate",
+  "question": "Can H-786 A and H-941 A/A bis be counted as exact-source-side +520-220-415+ evidence after checking CISI and Mahadevan side policy?",
+  "policy_findings": {
+    "cisi_side_labels": "Capital A/B/C identify physical/photo sides; lowercase labels identify impressions; bis/ter/quater are additional photographs of the same side.",
+    "m77_side_numbers": "Numeric side codes are analytic text-layer ordinals; Mahadevan notes side order can be provisional and does not follow original publication order.",
+    "global_mapping_rejected": "No global local .1/.2 = CISI A/B equation is admissible."
+  },
+  "decision_bins": {
+    "clean_exact_source_side_415_controls": ["H-938 A", "H-938 A bis", "H-940 A"],
+    "clean_exact_control_independent_objects": ["H-938", "H-940"],
+    "side_policy_gated_visual_candidates": ["H-786 A", "H-941 A", "H-941 A bis"],
+    "excluded_for_now": ["H-939", "H-786 B", "H-941 B", "H-941 B bis"],
+    "side_relation_pressure_only": ["H-938 1818.2 +034-700+ companion to 1818.1 +520-220-415+"]
+  },
+  "effect_on_m1206_terminal_component_gate": {
+    "T006_T007_H938": "remain strongest clean external terminal controls",
+    "H940_A": "remains secondary exact-side control",
+    "T009_T010_H786_H941": "remain close visual pressure only, not exact-side controls"
+  },
+  "accepted": {
+    "cisi_letters_equal_local_side_numbers": false,
+    "h786_a_exact_local_1677_2": false,
+    "h941_a_exact_local_1821_2": false,
+    "h938_h940_clean_exact_side_controls_for_current_packet": true,
+    "034_equals_415": false,
+    "415_stable_fine_form": false,
+    "sign_value": false,
+    "translation": false
+  },
+  "accepted_source_mapping_count": 0,
+  "accepted_sign_value_count": 0,
+  "accepted_translation_count": 0,
+  "next_gate": [
+    "Acquire object-specific side-label/transcription notes for H-786 and H-941.",
+    "Keep H-786/H-941 as visual pressure only until A/B-to-local-row mapping is explicit.",
+    "Use H-938/H-940 as the clean external 415 controls in the next 034/415 allograph-vs-sign-split decision."
+  ]
+}

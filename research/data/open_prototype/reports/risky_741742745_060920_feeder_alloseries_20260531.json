@@ -1,0 +1,41 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_741742745_060920_feeder_alloseries_20260531",
+  "tier": "wild_shot_to_candidate",
+  "bet": "Signs 741/742/745 form a feeder alloseries into the 060-920 terminal cap. The series is not a direct value claim: it predicts that these signs share a constructional slot before 060-920, with 741 as broad/pan-site feeder and 742/745 as narrower seal-lane feeders.",
+  "counts_exact_text_site_type_symbol_sign_next_next2_dedup": {
+    "741": {
+      "total_occurrences": 157,
+      "followed_by_060_920": 30,
+      "followed_by_060_any": 30,
+      "terminal_without_060": 17,
+      "interpretation": "broad productive feeder; all exact 741-060 cases are 741-060-920"
+    },
+    "742": {
+      "total_occurrences": 30,
+      "followed_by_060_920": 7,
+      "followed_by_060_any": 7,
+      "terminal_without_060": 4,
+      "interpretation": "narrower feeder; all exact 742-060 cases are 742-060-920"
+    },
+    "745": {
+      "total_occurrences": 17,
+      "followed_by_060_920": 3,
+      "followed_by_060_any": 3,
+      "terminal_without_060": 6,
+      "interpretation": "weak feeder; all exact 745-060 cases are 745-060-920, but support is small"
+    }
+  },
+  "positive_evidence": [
+    "For each of 741, 742, and 745, every exact-collapsed occurrence followed by 060 is then followed by 920.",
+    "The three signs are numerically adjacent or near-adjacent in the Lipi sign list, making an alloseries hypothesis more plausible than arbitrary grouping.",
+    "The group covers 40 exact-collapsed 060-920 feeder cells: 741=30, 742=7, 745=3."
+  ],
+  "hostile_notes": [
+    "The alloseries is post-hoc after discovering 060-920, so it cannot be promoted without a feeder-set maxstat/null.",
+    "741/742/745 have many non-060 contexts. The claim is slot-sharing before 060-920, not that the signs mean the same thing globally.",
+    "745 support is small and could be dropped without hurting the main 060-920 cap."
+  ],
+  "next_destructive_test": "Enumerate all sign triples or contiguous sign-list neighborhoods as candidate feeders into 060-920 and ask whether 741/742/745 remains unusually compact/high-coverage after multiple-comparison correction."
+}

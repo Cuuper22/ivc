@@ -1,0 +1,96 @@
+{
+  "question": "Does source-visible M-77 close Parpola 2019's obverse-text recurrence control for the H-940/H-2147/H-2148 companion row, or does it create a source-normalization conflict?",
+  "result": "It creates a conflict. M-77 is source-visible on CISI India n68 / printed p. 33, but the local and Mayig layers both represent it as a five-sign unicorn seal string, not as the local +520-220-415+ or +520-220-X companion family. Parpola's recurrence sentence is therefore conflict-gated and cannot be used as closed support for the H-2148 companion row.",
+  "status": "obverse_recurrence_quarantined_by_m77",
+  "prior_work_anchor": "tmp/parpola_2019_bone_rods.txt lines 104-107",
+  "source_urls": {
+    "cisi_india_m77_reader": "https://archive.org/details/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan/Corpus%20of%20Indus%20Seals%20and%20Inscriptions.%20Collections%20in%20India/page/n68/mode/1up",
+    "cisi_india_m77_direct_image": "https://archive.org/download/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan/Corpus%20of%20Indus%20Seals%20and%20Inscriptions.%20Collections%20in%20India/page/n68_w1200.jpg"
+  },
+  "local_rows": {
+    "H-2148": ["481.1 +520-220-415+", "481.2 +110+"],
+    "H-940": ["1820.1 +520-220-415+", "1820.2 +110+"],
+    "H-2147": ["673.1 ]110+", "673.2 ]220-415+"],
+    "H-942": ["1822.1 +520-220-016+", "1822.2 +033-700+"],
+    "H-2240": ["816.1 +520-220-415+", "816.2 +869-575+"],
+    "H-2241": ["639.1 ]415-240+", "639.2 ]000+"],
+    "M-77": ["2604.1 +832-390-803-002-861+"]
+  },
+  "mayig_overlap": {
+    "M-77A": {
+      "description": "unicorn IV seal",
+      "grapheme_count": 5,
+      "parpola_sequence": "P366 P086 P364 P122 P385",
+      "count_match_with_local": true
+    }
+  },
+  "source_evidence": {
+    "page": {
+      "path": "tmp/m77_parpola_recurrence_gate/cisi_india_n68_w1200.jpg",
+      "width": 2398,
+      "height": 3427,
+      "sha256": "EB7A4356C5D76844301D4B1A672D76AF675D4CDBE23BA57594AD75C6E01BA027"
+    },
+    "crops": [
+      {
+        "role": "face_A_panel",
+        "path": "tmp/m77_parpola_recurrence_gate/derived/M77_face_A_panel_v3_from_cisi_india_n68.png",
+        "width": 790,
+        "height": 560,
+        "sha256": "9BE8D6598EA08B41EFA2B97629BD080AC441D681CC9D84D2DF43DB3A836C4442"
+      },
+      {
+        "role": "face_A_signband",
+        "path": "tmp/m77_parpola_recurrence_gate/derived/M77_face_A_signband_strict_from_cisi_india_n68.png",
+        "width": 720,
+        "height": 230,
+        "sha256": "308A212503B508CBB505507822FAE8E63BB2FF8DA547903D2962AE7C6F317CC2"
+      },
+      {
+        "role": "impression_a_panel",
+        "path": "tmp/m77_parpola_recurrence_gate/derived/M77_impression_a_panel_v3_from_cisi_india_n68.png",
+        "width": 820,
+        "height": 650,
+        "sha256": "68EF996CF428C79EEFF46B7210FE679BB0D3D3D73BDE8800ECCFAE4B3718BE20"
+      },
+      {
+        "role": "impression_a_signband",
+        "path": "tmp/m77_parpola_recurrence_gate/derived/M77_impression_a_signband_strict_from_cisi_india_n68.png",
+        "width": 760,
+        "height": 260,
+        "sha256": "E3ABB4E00CD3EA34AF1477F4903B7D5596DD47361E05A0C767FFD0450C5D0AA9"
+      }
+    ],
+    "wrong_leaf_rejected": "tmp/m77_parpola_recurrence_gate/cisi_india_n33_m75_m79_w2000.jpg"
+  },
+  "decisions": {
+    "m77_source_visible": "accepted",
+    "m77_five_sign_local_text": "accepted",
+    "m77_exact_match_to_520_220_family": "rejected",
+    "parpola_recurrence_as_closed_companion_support": "rejected",
+    "h2148_same_role_inference": "preserved_pending_same_side_identity",
+    "h2240_h2241_acquisition": "still_required",
+    "translation": "unaccepted"
+  },
+  "live_explanations": [
+    "The scope of Parpola text no. 7 recurrence has been misread.",
+    "Parpola's sign-list or standardized text convention does not directly map onto local Lipi strings.",
+    "Local row mapping or segmentation is incomplete for one or more controls.",
+    "Parpola's recurrence is broader formula-family recurrence rather than exact text identity.",
+    "M-77 needs source transcription/sign-number bridging before comparison."
+  ],
+  "accepted_claims": {
+    "m77_source_visible": true,
+    "m77_local_five_sign_text": true,
+    "m77_mayig_five_grapheme_text": true,
+    "m77_matches_local_520_220_family": false,
+    "parpola_recurrence_as_closed_companion_support": false,
+    "h2148_same_side_identity_accepted": false,
+    "local_415_equals_local_016": false,
+    "local_m77_tokens_map_to_h_companion_tokens": false,
+    "phonetic_value": false,
+    "sign_value": false,
+    "translation": false
+  },
+  "next_gate": "Acquire source transcription or sign-number tables for M-77 and Parpola text no. 7. Decide whether the conflict is sign-list convention, local-corpus mapping, broader formula recurrence, or prior-work overreach before using the recurrence sentence again."
+}

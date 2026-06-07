@@ -1,0 +1,12 @@
+{
+  "checked_date": "2026-05-31",
+  "status": "530_vs_590_complement_discriminator",
+  "rows": {
+    "raw": 5679,
+    "canonical_numeric_sequences": 3503,
+    "governed_frames": 272
+  },
+  "branch_summary": "530:4/4_one_complement:4/4_closure_like:0/4_terminal;590:4/7_one_complement:1/4_closure_like:3/7_terminal",
+  "complement_classes": "530-000:branch_terminal_class;530-741:branch_terminal_class;530-820:branch_terminal_class;530-904:head_terminal_class;590-032:not_terminal_class;590-125:head_terminal_class;590-032:not_terminal_class;590-900:not_terminal_class",
+  "decisions": "V5_530_BEATS_590_AS_COMPLEMENT_LINKER_20260531:candidate_530_specific_complement_linker_not_590"
+}

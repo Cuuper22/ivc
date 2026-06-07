@@ -1,0 +1,4450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<collection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="mySchema.xsd">
+   <entry>
+		<bib>
+			<author> University of Strathclyde Glasgow </author>
+		    <year>   Retrieved 6/30, 2011   </year>
+		    <title>  Pictish Stone Database.  </title>
+		    <pubInfo> from http://www.mathstat.strath.ac.uk/outreach/pictish/database.php </pubInfo>
+		</bib>
+		
+		<document type="PictishStone" region="Angus" class="I">
+		    <description>Aberlemno 1</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Serpent</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="3">
+					<symbol><title>Mirror</title></symbol>
+					<symbol><title>Comb</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="II">
+		    <description>Aberlemno 2</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Divided-Rectangle</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+					<symbol reliability="alternative transcriptions">
+						<title>Triple-Disc</title>
+						<alternative><symbolUnit>
+							<symbol><title>Triple-Disc</title></symbol>
+							<symbol><title>Bar</title></symbol>
+							<src>PSSH</src>
+						</symbolUnit></alternative>
+					</symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="II">
+		    <description>Aberlemno 3</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="3">
+					<symbol reliability="uncertain"><title>Centaur</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="IV">
+		    <description>Aberlemno 4</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Crescent</title></symbol>
+				</line>
+				<line number="2">
+					<symbol reliability="alternative transcriptions">
+						<title>Beast</title>
+						<alternative><title>Curved-Line</title><src>PSSH, RCAHMS</src></alternative>
+					</symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="I">
+		    <description>Aberlemno 5, Flemington Farm</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Horseshoe</title><description>aka Arch</description></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="I">
+		    <description>Abernethy</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Hammer</title></symbol>
+					<symbol reliability="alternative transcriptions">
+						<title>Tuning-Fork</title>
+						<description>aka Tongs</description>
+						<alternative><title>Notched-Rectangle</title><src>Jackson</src></alternative>
+						<alternativesrc>Jackson</alternativesrc>
+					</symbol>
+					<symbol reliability="uncertain"><title>Anvil</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Caithness" class="I">
+		    <description>Ackergill 1, Keiss Bay</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Salmon</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Rectangle</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Caithness" class="I">
+		    <description>Ackergill 2</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Rectangle</title>
+						<alternative><title>Nochted-Rectangle</title><src>PSSH, RCAHMS</src></alternative>
+					</symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Badenoch and Strathspey" class="I">
+		    <description>Advie</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+					<symbol><title>Mirror-Case</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="II">
+		    <description>Alyth</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Dumfries and Galloway" class="I">
+		    <description>Anwoth, Trusty's Hill</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+					<symbol reliability="uncertain"><title>Sword</title></symbol>
+					<symbol><title>Fish-Monster</title><description>aka Seahorse</description></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Ross and Cromarty" class="IV">
+		    <description>Arbirlot</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Book</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Ardiachie</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Wheel</title>
+						<alternative><title>Spoked-Wheel</title><src>RCAHMS</src></alternative>
+					</symbol>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Disc</title></symbol>
+				</line>
+				<line number="3">
+					<symbol reliability="uncertain"><title>Step</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Ross and Cromarty" class="I">
+		    <description>Ardliar, Kennethmont</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Beast</title></symbol>
+					<symbol reliability="alternative transcriptions">
+						<title>Tuning-Fork</title>
+						<alternative><title>Broken-Sword</title><src>PSSH</src></alternative>
+						<alternative><title>Notched-Rectangle</title><src>Jackson</src></alternative>
+					</symbol>
+					<symbol><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Ross and Cromarty" class="I">
+		    <description>Ardross 1</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Wolf</title>
+						<alternative><title>Bust-of-Deer</title><src>RCAHMS</src></alternative>
+					</symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Ardross 2</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Deer</title>
+						<alternative><title>Dog</title><src>RCAHMS</src></alternative>
+						<alternative><title>Wolf</title><src>RCAHMS</src></alternative>
+					</symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="I">
+		    <description>Arndilly</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Mirror-Case</title></symbol>
+					<symbolUnit>
+						<symbol reliability="alternative transcriptions">
+							<title>Notched-Rectangle</title>
+							<alternative><title>Divided-Rectange</title><src>Field Guide</src></alternative>
+							<alternative><title>Rectangle</title><src>Jakson</src></alternative>
+						</symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="IV">
+		    <description>Baggerton</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Serpent</title></symbol>
+						<symbol reliability="uncertain"><title>Z</title></symbol>
+					</symbolUnit>
+					<symbol reliability="uncertain"><title>Sceptre</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Inverness" class="IV">
+		    <description>Balblair, Monjack, Kilmorack</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Man</title></symbol>
+						<symbol reliability="alternative transcriptions">
+							<title>Cub</title>
+							<alternative><title>Sword</title><src>RCAHMS</src></alternative>
+						</symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Cupmarks</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Badenoch and Strathspey" class="I">
+		    <description>Ballintomb</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol reliability="uncertain"><title>Crescent</title></symbol>
+						<symbol reliability="uncertain"><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol reliability="uncertain">
+							<title>Divided-Rectangle</title>
+							<alternative><title>Notched-Rectangle</title><src>Jackson</src></alternative>
+						</symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="II">
+		    <description>Balluderon, St. Martin's Stone</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Beast</title></symbol>
+					<symbol reliability="uncertain"><title>Horseman</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Serpent</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Balneilan, Balnalon</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol reliability="alternative transcriptions">
+							<title>Disc</title>
+							<alternative><title>Triple-Disc</title><src>PSSH, RCAHMS</src></alternative>
+						</symbol>
+						<symbol reliability="alternative transcriptions">
+							<title>Disc</title>
+							<alternative><title>Broken-Circle</title><src>PSSH</src></alternative>
+						</symbol>
+						<description>Disc or Triple-Disc in Disc or Broken-Circle</description>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Western Isles" class="I">
+		    <description>Benbecula, Strome Shunamal</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Rectangle</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Disc</title></symbol>
+						<symbol reliability="uncertain"><title>Triple-Disc</title></symbol>
+						<description>Disc with maybe Triple-Disc</description>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="IV">
+		    <description>Benvie Church</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Horseman</title></symbol>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Horseman</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Birnie</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Eagle</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol reliability="alternative transcriptions">
+							<title>Notched-Rectangle</title>
+							<alternative><title>Divided-Rectangle</title><src>Field Guide</src></alternative>
+							<alternative><title>Rectangle</title><src>Jackson</src></alternative>
+						</symbol>
+						<symbol reliability="uncertain"><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Birse</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Beast</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Comb</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Bourtie</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="3">
+					<symbol><title>Mirror</title></symbol>
+					<symbol><title>Comb</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Brandsbutt, Inverurie</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Serpent</title></symbol>
+		    			<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+			</docText>
+		</document>
+		
+		<document type="PictishStone" region="Shetland" class="I">
+		    <description>Breck of Hillwell</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Crescent</title></symbol>
+					<symbol reliability="uncertain"><title>Rectangle</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Orkney" class="IV">
+		    <description>Broch of Burrian Bone</description>
+		    <docText>
+				<side number="A">
+					<line number="1">
+						<symbolUnit>
+							<symbol><title>Crescent</title></symbol>
+							<symbol><title>V</title></symbol>
+						</symbolUnit>
+					</line>
+				</side>
+				<side number="B">
+					<line number="1">
+						<symbolUnit reliability="alternative transcriptions">
+							<symbol><title>Disc</title></symbol>
+							<symbol><title>Notched-Rectangle</title></symbol>
+							<alternative><title>Mirror-Case</title><src>RCAHMS</src></alternative>
+						</symbolUnit>
+					</line>
+		    	</side>
+			</docText>
+		</document>
+		
+		<document type="PictishStone" region="Orkney" class="II">
+		    <description>Brodie, Rodney's Stone</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Beast</title>
+						<alternative><title>Pair-Fish-Monsters</title><src>PSSH</src></alternative>
+					</symbol>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Beast</title></symbol>
+				</line>
+				<line number="3">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Brough of Birsay</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Mirror-Case</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="3">
+					<symbol><title>Beast</title></symbol>
+				</line>
+				<line number="4">
+					<symbol><title>Eagle</title></symbol>
+				</line>
+				<line number="5">
+					<symbol reliability="uncertain"><title>Warrior</title></symbol>
+					<symbol reliability="uncertain"><title>Warrior</title></symbol>
+					<symbol reliability="uncertain"><title>Warrior</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Orkney" class="I">
+		    <description>Bruceton</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Horseshoe</title>
+						<alternative><title>Arch</title><src>PSSH</src></alternative>
+					</symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="IV">
+		    <description>Bullion, Invergowrie 2</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Horseman</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Burghead 1</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Bull</title></symbol>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Findspot</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Burghead 2</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Bull</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Burghead 3</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Bull</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Burghead 4</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Bull</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Burghead 5</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Bull</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Burghead 6</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Bull</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Orkney" class="I">
+		    <description>Burrian, Knowe of Burrian</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Eagle</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+		    		</symbolUnit>
+				</line>
+				<line number="3">
+					<symbol><title>Mirror</title></symbol>
+				</line>
+			</docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="I">
+		    <description>Cargill</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Rectangle</title></symbol>
+						<symbol reliability="uncertain"><title>Line</title></symbol>
+					</symbolUnit>
+					<symbol><title>Rectangle</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Clatt 1</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Triple-Disc</title></symbol>
+						<symbol reliability="uncertain"><title>Bar</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol reliability="uncertain"><title>Z</title></symbol>
+					</symbolUnit>
+					<symbol><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Clatt 2</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Clatt 3</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Beast</title></symbol>
+					<symbol reliability="alternative transcriptions">
+						<title>Horseshoe</title>
+						<alternative><title>Arch</title><src>PSSH, RCAHMS</src></alternative>
+					</symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Inverness" class="I">
+		    <description>Clunen Farm, Dores</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Boar</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Sutherland" class="I">
+		    <description>Clynekirkton 1</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Rectangle</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Sutherland" class="I">
+		    <description>Clynekirkton 2</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Rectangle</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+		    			<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="3">
+					<symbol><title>Mirror</title></symbol>
+				</line>
+			</docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Sutherland" class="I">
+		    <description>Clynemilton 1</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Horseshoe</title>
+						<alternative><title>Arch</title><src>PSSH</src></alternative>
+					</symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Mirror</title></symbol>
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Sutherland" class="I">
+		    <description>Clynemilton 2</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol reliability="alternative transcriptions">
+							<title>Notched-Rectangle</title>
+							<alternative><title>Divided-Rectangle</title><src>Field Guide</src></alternative>
+							<alternative><title>Rectangle</title><src>Jackson</src></alternative>
+						</symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+					<symbol><title>Mirror</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Comb</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="I">
+		    <description>Collace, Fairygreen</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Rectangle</title>
+						<alternative><title>Tuning-Fork</title><src>Field Guide</src></alternative>
+					</symbol>
+					<symbol><title>Beast</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Comb</title></symbol>
+					<symbol><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Badenoch and Strathspey" class="I">
+		    <description>Congash 1</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Horseshoe</title>
+						<alternative><title>Arch</title><src>PSSH</src></alternative>
+					</symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Badenoch and Strathspey" class="I">
+		    <description>Congash 2</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Helmet</title></symbol>
+						<symbol reliability="uncertain"><title>Arrow</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="IV">
+		    <description>Corrachree</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol reliability="uncertain"><title>Triskele</title></symbol>
+						<symbol reliability="uncertain"><title>Disc</title></symbol>
+						<description>Triskele in Disc</description>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="II">
+		    <description>Cossans, St. Orland's Stone</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Caithness" class="IV">
+		    <description>Craig of Hattel</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Greyhound</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Craigmyle, Cothill</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol reliability="alternative transcriptions">
+							<title>Notched-Rectangle</title>
+							<alternative><title>Divided-Rectangle</title><src>Field Guide</src></alternative>
+						</symbol>
+						<symbol reliability="uncertain"><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Serpent</title></symbol>
+				</line>
+				<line number="3">
+					<symbol reliability="uncertain"><title>Salmon</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Sutherland" class="I">
+		    <description>Craigton 1</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Notched-Rectangle</title>
+						<alternative><title>Divided-Rectangle</title><src>Field Guide</src></alternative>
+					</symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="3">
+					<symbol><title>Flower</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Crichie</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Beast</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol reliability="uncertain"><title>Crescent</title></symbol>
+						<symbol reliability="alternative transcriptions">
+							<title>V</title>
+							<alternative><title>V-Rod</title><src>RCAHMS</src></alternative>
+						</symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Caithness" class="I">
+		    <description>Crosskirk, Thurso Castle</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol reliability="alternative transcriptions">
+						<title>Horseshoe</title>
+						<alternative><title>Arch</title><src>PSSH</src>></alternative>
+					</symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Inverness" class="I">
+		    <description>Cullaird, Scaniport</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol reliability="alternative transcriptions">
+							<title>Divided-Rectangle</title>
+							<alternative><title>Rectangle</title><src>Jackson</src></alternative>
+						</symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+					<symbol><title>Comb</title></symbol>
+					<symbol reliability="alternative transcriptions">
+						<title>Horseshoe</title>
+						<alternative><title>Arch</title><src>PSSH</src></alternative>
+					</symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Daviot</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Mirror</title></symbol>
+					<symbol><title>Crescent</title></symbol>
+				</line>
+				<line number="3">
+					<symbol><title>Comb</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Ross and Cromarty" class="I">
+		    <description>Dingwall</description>
+		    <docText>
+				<side number="A">
+					<line number="1">
+						<symbolUnit>
+							<symbol><title>Double-Disc</title></symbol>
+							<symbol><title>Z</title></symbol>
+						</symbolUnit>
+					</line>
+					<line number="2">
+						<symbolUnit>
+							<symbol><title>Crescent</title></symbol>
+							<symbol><title>V</title></symbol>
+						</symbolUnit>
+					</line>
+					<line number="3">
+						<symbolUnit>
+							<symbol><title>Crescent</title></symbol>
+							<symbol><title>V</title></symbol>
+						</symbolUnit>
+					</line>
+				</side>
+				<side number="B">
+					<line number="1">
+						<symbol reliability="alternative transcriptions">
+							<title>Disc</title>
+							<alternative><title>Triple-Disc</title><src>Jackson</src></alternative>
+						</symbol>
+					</line>
+					<line number="2">
+						<symbolUnit>
+							<symbol><title>Crescent</title></symbol>
+							<symbol><title>V</title></symbol>
+						</symbolUnit>
+					</line>
+				</side>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Drainie 1</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="II">
+		    <description>Drainie 26, Kineddar Manse, Michael Church</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Mirror</title></symbol>
+					<symbol reliability="uncertain"><title>Comb</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Drimmies, Drummies</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Horseshoe</title>
+						<alternative><title>Broken-Arch</title><src>PSSH</src></alternative>
+					</symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Ogee</title></symbol>
+				</line>
+				<line number="3">
+					<symbol><title>Mirror</title></symbol>
+				</line>
+				<line number="4">
+					<symbol><title>Comb</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Inverness" class="I">
+		    <description>Drumbuie 1</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Serpent</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Double-Disc</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Inverness" class="I">
+		    <description>Drumbuie 2</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Salmon</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Mirror-Case</title></symbol>
+					<symbol><title>Comb</title></symbol>
+					<symbol><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="II">
+		    <description>Drumdurno, Maiden Stone</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol reliability="alternative transcriptions">
+							<title>Rectangle</title>
+							<alternative><title>Divided-Rectangle</title><src>Field Guide</src></alternative>
+							<alternative><title>Notched-Rectangle</title><src>RCAHMS</src></alternative>
+						</symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Beast</title></symbol>
+				</line>
+				<line number="3">
+					<symbol><title>Mirror</title></symbol>
+					<symbol><title>Comb</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Skye and Lochalsh" class="I">
+		    <description>Dun Osdale, Tobar na Maor</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol reliability="alternative transcriptions">
+						<title>Disc</title>
+						<alternative><title>2-Concentric-Circles</title><src>PSSH</src></alternative>
+						<alternative><title>3-Concentric-Circles</title><src>RCAHMS</src></alternative>
+					</symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Badenoch and Strathspey" class="I">
+		    <description>Dunachton</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Deer's-Head</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Argyll and Bute" class="I">
+		    <description>Dunadd</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Boar</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="II">
+		    <description>Dunfallandy</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Beast</title></symbol>
+					<symbol><title>Double-Disc</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="3">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="4">
+					<symbol><title>Beast</title></symbol>
+				</line>
+				<line number="5">
+					<symbol><title>Hammer</title></symbol>
+					<symbol><title>Anvil</title></symbol>
+					<symbol reliability="alternative transcriptions">
+						<title>Tongs</title>
+						<alternative><title>Pincers</title><src>Field Guide</src></alternative>
+					</symbol>
+				</line>
+		    </docText>
+		</document>
+			
+		<document type="PictishStone" region="Perthshire and Kinross" class="IV">
+		    <description>Dunkeld</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Horseman</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="IV">
+		    <description>Dunnicaer 1</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="IV">
+		    <description>Dunnicaer 2</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Triangle</title></symbol>
+					<symbol><title>Salmon</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="IV">
+		    <description>Dunnicaer 3</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Crescent</title></symbol>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Triangle</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="IV">
+		    <description>Dunnicaer 4</description>
+		    <docText>
+				<side number="A">
+					<line number="1">
+						<symbolUnit>
+							<symbol><title>Double-Disc</title></symbol>
+							<symbol><title>Z</title></symbol>
+						</symbolUnit>
+					</line>
+				</side>
+				<side number="B">
+					<line number="1">
+						<symbol><title>Flower</title></symbol>
+						<symbol><title>Mirror</title></symbol>
+						<symbol><title>Comb</title></symbol>
+					</line>
+				</side>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="IV">
+		    <description>Dunnicaer 5</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Double-Disc</title><description>Double-Disc with a dot in the center of each</description></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="IV">
+		    <description>Dunnicaer 6</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Disc</title></symbol>
+					<symbol reliability="alternative transcriptions">
+						<title>Z</title>
+						<alternative><title>Z-Rod</title><src>RCAHMS</src></alternative>
+					</symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="I">
+		    <description>Dinnichen</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Flower</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="3">
+					<symbol><title>Comb</title></symbol>
+					<symbol><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Sutherland" class="I">
+		    <description>Dunrobin 1</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Salmon</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Tuning-Fork</title></symbol>
+				</line>
+				<line number="3">
+					<symbol><title>Mirror</title></symbol>
+					<symbol><title>Comb</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Sutherland" class="I">
+		    <description>Dunrobin 2, Dairy Park, Princess Stone</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Comb</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Mirror</title></symbol>
+					<symbolUnit>
+						<symbol><title>Serpent</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+					<symbol><title>2-Crescent</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="City of Aberdeen" class="I">
+		    <description>Dyce 1</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Beast</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+		    		</symbolUnit>
+		    	</line>
+			</docText>
+		</document>
+		
+		<document type="PictishStone" region="City of Aberdeen" class="II">
+		    <description>Dyce 2</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+					<symbol><title>Mirror-Case</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Triple-Disc</title></symbol>
+						<symbol reliability="uncertain"><title>Bar</title></symbol>
+					</symbolUnit>
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="II">
+		    <description>Eassie</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Beast</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Double-Disc</title></symbol>
+					<symbol><title>Z</title></symbol>
+				</line>
+				<line number="3">
+					<symbol reliability="uncertain"><title>Horseshoe</title></symbol>
+				</line>
+				<line number="4">
+					<symbol reliability="uncertain"><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>East Balhalgardy</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol reliability="alternative transcriptions">
+							<title>Double-Disc</title>
+							<alternative><title>Disc</title><src>Field Guide</src></alternative>
+						</symbol>
+						<symbol reliability="uncertain"><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Fife" class="I">
+		    <description>East Lomond Hill</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Bull</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Fife" class="IV">
+		    <description>East Wemyss Caves, Dovecot</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Animal-Head</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Fife" class="IV">
+		    <description>East Wemyss Caves, Glass Cave</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Arch</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Easterton of Roseisle</description>
+		    <docText>
+				<side number="A">
+					<line number="1">
+						<symbol><title>Goose</title></symbol>
+					</line>
+					<line number="2">
+						<symbol><title>Salmon</title></symbol>
+					</line>
+				</side>
+				<side number="B">
+					<line number="1">
+						<symbol reliability="alternative transcriptions">
+							<title>Horseshoe</title>
+							<alternative><title>Crescent</title><src>PSSH</src></alternative>
+						</symbol>
+					</line>
+					<line number="2">
+					<symbol><title>Mirror</title></symbol>
+					</line>
+					<line number="3">
+						<symbolUnit>
+							<symbol><title>Crescent</title></symbol>
+							<symbol><title>V</title></symbol>
+			    		</symbolUnit>
+					</line>
+					<line number="4">
+						<symbol><title>Comb</title></symbol>
+					</line>
+				</side>
+			</docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Ross and Cromarty" class="I">
+		    <description>Edderton, Clach Biroach, Clach Charaidh</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Salmon</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="City of Edinburgh" class="I">
+		    <description>Edinburgh, Princes St. Gardens</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbolUnit reliability="alternative transcriptions">
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+						<alternative><title>Mirror</title><title>Comb</title><src>Field Guide</src></alternative>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="II">
+		    <description>Elgin Cathedral</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Crescent</title></symbol>
+					<symbol><title>V</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Fetterangus</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Triple-Disc</title></symbol>
+						<symbol reliability="uncertain"><title>Bar</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Mirror-Case</title></symbol>
+				</line>
+				<line number="3">
+					<symbolUnit>
+						<symbol reliability="uncertain"><title>Curved-Line</title></symbol>
+						<symbol reliability="uncertain"><title>Scroll</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Badenoch and Strathspey" class="I">
+		    <description>Finlarig</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol reliability="alternative transcriptions">
+							<title>Rectangle</title>
+							<alternative><title>Divided-Rectangle</title><src>Field Guide</src></alternative>
+							<alternative><title>Notched-Rectangle</title><src>RCAHMS</src></alternative>
+						</symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Crescent</title></symbol>
+					<symbol><title>V</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Orkney" class="I">
+		    <description>Firth, Redland</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Rectangle</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+		    		</symbolUnit>
+				</line>
+			</docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Skye and Lochalsh" class="I">
+		    <description>Fiscavaig</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="II">
+		    <description>Fordoun, St. Palladius Stone</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="II">
+		    <description>Formaston, Aboyne</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Forres 2</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="II">
+		    <description>Fowlis Wester</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Double-Disc</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol reliability="uncertain"><title>Double-Disc</title></symbol>
+						<symbol reliability="uncertain"><title>Z</title></symbol>
+		    		</symbolUnit>
+				</line>
+				<line number="3">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="4">
+					<symbol reliability="uncertain"><title>Eagle</title></symbol>
+				</line>
+			</docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Fyvie 1, St. Peter's Church</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Beast</title></symbol>
+				</line>
+				<line number="3">
+					<symbol><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Fyvie 2, St. Peter's Church</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol reliability="uncertain"><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Eagle</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Gairloch</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Eagle</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Salmon</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Inverness" class="I">
+		    <description>Garbeg</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="II">
+		    <description>Gask, Bore Stone, Boar Stone</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Serpent</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Dog</title></symbol>
+				</line>
+				<line number="3">
+					<symbol><title>Flower</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="II">
+		    <description>Gellyburn 2</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Roundel</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Crescent</title></symbol>
+					<symbol><title>V</title></symbol>
+				</line>
+				<line number="3">
+					<symbol><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="I/II">
+		    <description>Glamis 1, Hunters Hill</description>
+		    <docText>
+				<side number="A">
+					<line number="1">
+						<symbol reliability="uncertain"><title>Triple-Disc</title></symbol>
+					</line>
+					<line number="2">
+						<symbol reliability="uncertain"><title>Flower</title></symbol>
+					</line>
+				</side>
+				<side number="B">
+					<line number="1">
+						<symbol reliability="uncertain">
+							<title>Beast</title>
+							<alternative><title>Deer</title><src>Jackson</src></alternative>
+						</symbol>
+					</line>
+					<line number="2">
+						<symbol><title>Serpent</title></symbol>
+					</line>
+					<line number="3">
+						<symbol><title>Mirror</title></symbol>
+					</line>
+				</side>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I/II">
+		    <description>Glamis 2</description>
+		    <docText>
+				<side number="A">
+					<line number="1">
+						<symbol reliability="alternative transcriptions">
+							<title>Lion</title>
+							<alternative><title>Dog</title><src>RCAHMS</src></alternative>
+						</symbol>
+					</line>
+					<line number="2">
+						<symbol reliability="alternative transcriptions">
+							<title>Deer's-Head</title>
+							<alternative><title>Beast-Head</title><src>PSSH</src></alternative>
+						</symbol>
+					</line>
+					<line number="3">
+						<symbolUnit>
+							<symbol><title>Triple-Disc</title></symbol>
+							<symbol reliability="uncertain"><title>Bar</title></symbol>
+			    		</symbolUnit>
+					</line>
+				</side>
+				<side number="B">
+					<line number="1">
+						<symbol><title>Serpent</title></symbol>
+					</line>
+					<line number="2">
+						<symbol><title>Salmon</title></symbol>
+					</line>
+					<line number="3">
+						<symbol><title>Mirror</title></symbol>
+					</line>
+				</side>
+			</docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Glamis Manse, Glamis 4</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Triple-Oval</title>
+						<alternative><title>Diamond-Shape</title><title>Spiral</title><src>PSSH</src></alternative>
+					</symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="II">
+		    <description>Glenferness, Princess Stone</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Beast</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Crescent</title></symbol>
+					<symbol><title>V</title></symbol>
+				</line>
+				<line number="3">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+		    		</symbolUnit>
+				</line>
+				<line number="3">
+					<symbol><title>Beast</title></symbol>
+				</line>
+			</docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Golspie 2</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Beast</title></symbol>
+				</line>
+				<line number="3">
+					<symbol><title>Mirror</title></symbol>
+					<symbol><title>Comb</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="II">
+		    <description>Golspie Stone, Craigton 2</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Rectangle</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Beast</title></symbol>
+				</line>
+				<line number="3">
+					<symbolUnit>
+						<symbol reliability="uncertain"><title>Man</title></symbol>
+						<symbol reliability="uncertain"><title>Axe</title></symbol>
+					</symbolUnit>
+					<symbol reliability="alternative transcriptions">
+						<title>Dog</title>
+						<alternative><title>Wolf</title><src>RCAHMS</src></alternative>
+						<alternative><title>Lion</title><src>PSSH</src></alternative>
+					</symbol>
+				</line>
+				<line number="4">
+					<symbol><title>Salmon</title></symbol>
+				</line>
+				<line number="5">
+					<symbol><title>Flower</title></symbol>
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol reliability="uncertain"><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="6">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol reliability="uncertain"><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="7">
+					<symbol reliability="uncertain"><title>Pair-of-Serpents</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Badenoch and Strathspey" class="I">
+		    <description>Grantown</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Stag</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Rectangle</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Orkney" class="I">
+		    <description>Greens, St. Andrews</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Mirror-Case</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="3">
+					<symbol><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Orkney" class="IV">
+		    <description>Gurness, Broch of Gurness</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Rectangle</title></symbol>
+					<symbol><title>Mirror-Case</title></symbol>
+					<symbol>
+						<title>Divided-Rectangle</title>
+						<alternative><title>Rectangle-Indent</title><src>PSSH</src></alternative>
+					</symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Ross and Cromarty" class="II">
+		    <description>Hilton of Cadboll</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="3">
+					<symbol reliability="uncertain"><title>Double-Disc</title></symbol>
+				</line>
+				<line number="4">
+					<symbol reliability="uncertain"><title>Mirror</title></symbol>
+				</line>
+				<line number="5">
+					<symbol reliability="uncertain"><title>Comb</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Huntly 1</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Horseshoe</title>
+						<alternative><title>Arch</title><src>PSSH</src></alternative>
+					</symbol>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Double-Disc</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Huntly, Leys of Dummuies</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="III">
+		    <description>Inchbrayock</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Disc</title></symbol>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Disc</title></symbol>
+				</line>
+				<line number="3">
+					<symbol reliability="uncertain"><title>Horseman</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="I">
+		    <description>Inchyra</description>
+		    <docText>
+				<side number="A">
+					<line number="1">
+						<symbol><title>Serpent</title></symbol>
+					</line>
+					<line number="2">
+						<symbol><title>Salmon</title></symbol>
+					</line>
+				</side>
+				<side number="B">
+					<line number="1">
+						<symbol reliability="alternative transcriptions">
+							<title>Comb</title>
+							<alternative><title>M</title><src>PSSH</src></alternative>
+						</symbol>
+						<symbol><title>Mirror</title></symbol>
+						<symbol reliability="alternative transcriptions">
+							<title>Rectangle</title>
+							<alternative><title>Broken-Sword</title><src>PSSH</src></alternative>
+							<alternative><title>Tuning-Fork</title><src>RCAHMS</src></alternative>
+							<alternative><title>Notched-Rectangle</title><src>Jackson</src></alternative>
+						</symbol>
+						<symbol><title>Salmon</title></symbol>
+						<symbol><title>Double-Disc</title></symbol>
+					</line>
+				</side>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Badenoch and Strathspey" class="I">
+		    <description>Inverallen</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol reliability="alternative transcriptions">
+							<title>Notched-Rectangle</title>
+							<alternative><title>Divided-Rectangle</title><src>Field Guide</src></alternative>
+						</symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Inveraven 1</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Mirror-Case</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Eagle</title></symbol>
+					<symbol reliability="uncertain"><title>Half-Circle</title></symbol>
+					<symbol><title>Mirror</title></symbol>
+					<symbol><title>Comb</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Inveraven 2</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Triple-Disc</title></symbol>
+		    			<symbol reliability="uncertain"><title>Bar</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="3">
+					<symbol><title>Comb</title></symbol>
+					<symbol><title>Mirror</title></symbol>
+				</line>
+			</docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Inveraven 3</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Inveraven 4</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Inverness" class="I">
+		    <description>Invereen</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Inverurie 1</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Mirror-Case</title></symbol>
+				</line>
+				<line number="3">
+					<symbolUnit>
+						<symbol><title>Serpent</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="4">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Inverurie 2</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Mirror</title></symbol>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Arch</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Inverurie 3</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Disc</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+		    			<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+			</docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Inverurie 4</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Horse</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Shetland" class="IV">
+		    <description>Jarlshof</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="I">
+		    <description>Keillor</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Wolf</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+		    			<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="3">
+					<symbol><title>Mirror</title></symbol>
+					<symbol reliability="uncertain"><title>Comb</title></symbol>
+				</line>
+			</docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Caithness" class="I">
+		    <description>Keiss, Birkle Hills</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Triple-Disc</title>
+						<alternative><title>Mirror</title><src>RCAHMS</src></alternative>
+						<alternative><title>Mirror-Case</title><src>Jackson</src></alternative>
+					</symbol>
+					<symbol><title>Triple-Oval</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Keith Hall</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Salmon</title></symbol>
+				</line>
+				<line number="3">
+					<symbol><title>Comb</title></symbol>
+					<symbol><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="I">
+		    <description>Kinblethmont</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Beast</title></symbol>
+				</line>
+				<line number="3">
+					<symbol><title>Mirror</title></symbol>
+					<symbol reliability="uncertain"><title>Comb</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Kinellar</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol reliability="uncertain"><title>Triple-Disc</title></symbol>
+						<symbol><title>Disc</title></symbol>
+						<description>Triple-Disc in Disc</description>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="II">
+		    <description>Kingoldrum</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Mirror</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Crescent</title></symbol>
+					<symbol><title>Comb</title></symbol>
+					<symbol><title>Step</title></symbol>
+					<symbol reliability="uncertain"><title>Sheep</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Inverness" class="I">
+		    <description>Kingsmills, Inverness 1</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Bull</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="IV">
+		    <description>Kinnell</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Pair-of-Serpents</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Kintore 1, Churchyard</description>
+		    <docText>
+			<side number="A">
+				<line number="1">
+					<symbol><title>Salmon</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Triple-Disc</title></symbol>
+						<symbol reliability="uncertain"><title>Bar</title></symbol>
+					</symbolUnit>
+				</line>
+			</side>
+			<side number="B">
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+					<symbol><title>Beast</title></symbol>
+				</line>
+			</side>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Kintore 2, Castle Hill</description>
+		    <docText>
+				<side number="A">
+					<line number="1">
+						<symbol><title>Beast</title></symbol>
+					</line>
+					<line number="2">
+						<symbolUnit>
+							<symbol><title>Double-Disc</title></symbol>
+							<symbol><title>Z</title></symbol>
+						</symbolUnit>
+					</line>
+				</side>
+				<side number="B">
+					<line number="1">
+						<symbol><title>Beast</title></symbol>
+					</line>
+					<line number="2">
+						<symbol><title>Mirror</title></symbol>
+					</line>
+				</side>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Kintore 3, Castle Hill</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Tuning-Fork</title></symbol>
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Kintore 4</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Square</title>
+						<alternative><title>Double-Square</title><src>PSSH</src></alternative>
+					</symbol>
+					<symbol reliability="uncertain"><title>M</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Beast</title></symbol>
+				</line>
+				<line number="3">
+					<symbol><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Sutherland" class="I">
+		    <description>Kintradwell 1</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Ogee</title>
+						<alternative><title>S</title><src>RCAHMS</src></alternative>
+					</symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Mirror-Case</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Sutherland" class="I">
+		    <description>Kintradwell 2</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Ogee</title></symbol>
+					<symbolUnit reliability="alternative transcriptions">
+						<symbol><title>Triple-Disc</title></symbol>
+						<symbol reliability="uncertain"><title>Bar</title></symbol>
+						<alternative><title>Mirror</title><src>RCAHMS, Jackson</src></alternative>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Sutherland" class="I">
+		    <description>Kintradwell 3</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+					<symbol><title>Comb</title></symbol>
+					<symbol><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Sutherland" class="I">
+		    <description>Kintradwell 4</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Tuning-Fork</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="II">
+		    <description>Kirriemuir 1</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Mirror</title></symbol>
+					<symbol reliability="uncertain"><title>Step</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Comb</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="II">
+		    <description>Kirriemuir 2</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="IV">
+		    <description>Kirriemuir 3</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Horseman</title></symbol>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Horseman</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Sutherland" class="IV">
+		    <description>Kirtomy</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Serpent</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Knockando 1</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Disc</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol reliability="uncertain"><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Knockando 2</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Serpent</title></symbol>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Flower</title></symbol>
+				</line>
+				<line number="3">
+					<symbol reliability="uncertain"><title>Comb</title></symbol>
+					<symbol><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Inverness" class="I">
+		    <description>Knocknagael, Boar Stone, Bore Stone</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Mirror-Case</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Boar</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Sutherland" class="I">
+		    <description>Langdale</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Horseshoe</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Fife" class="II">
+		    <description>Largo, Upper Largo</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Caithness" class="II">
+		    <description>Latheron 1</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Double-Rectangle</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Eagle</title></symbol>
+				</line>
+				<line number="3">
+					<symbol><title>Salmon</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Caithness" class="I">
+		    <description>Latheron 2</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Fife" class="I">
+		    <description>Lindores, Abdie, Kaim Hill</description>
+		    <docText>
+				<side number="A">
+					<line number="1">
+						<symbolUnit>
+							<symbol><title>Triple-Disc</title></symbol>
+							<symbol reliability="uncertain"><title>Bar</title></symbol>
+						</symbolUnit>
+					</line>
+					<line number="2">
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</line>
+				</side>
+				<side number="B">
+					<symbol><title>Mirror</title></symbol>
+		    	</side>
+			</docText>
+		</document>
+		
+		<document type="PictishStone" region="City of Dundee" class="I">
+		    <description>Linlathen</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Sutherland" class="I">
+		    <description>Little Ferry Links 1</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Rectangle</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Sutherland" class="I">
+		    <description>Little Ferry Links 2</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Horseshoe</title>
+						<alternative><title>Crescent</title><src>PSSH, RCAHMS</src></alternative>
+					</symbol>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Z-Rod</title></symbol>
+					<symbolUnit>
+						<symbol reliability="uncertain"><title>Crescent</title></symbol>
+						<symbol reliability="uncertain"><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Sutherland" class="I">
+		    <description>Little Ferry Links 3</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Double-Disc</title>
+						<alternative><title>Disc</title><src>PSSH</src></alternative>
+						<alternative><title>Triple-Disc</title><src>Field Guide</src></alternative>
+					</symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Sutherland" class="I">
+		    <description>Little Ferry Links 4+4a</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol reliability="alternative transcriptions">
+						<title>Mirror</title>
+						<alternative><title>Disc</title><src>PSSH</src></alternative>
+					</symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Sutherland" class="I">
+		    <description>Lochardil</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Bull</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Logie Elphinstone 1</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>	
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Double-Disc</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Logie Elphinstone 2</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+					 	<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Double-Disc</title></symbol>
+					<symbol><title>Z</title></symbol>
+				</line>
+				<line number="3">
+					<symbol><title>Double-Disc</title></symbol>
+					<symbol reliability="uncertain"><title>Z</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Logie Elphinstone 3</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Beast</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="II">
+		    <description>Logierait 1</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Serpent</title></symbol>
+						<symbol reliability="alternative transcriptions">
+							<title>Straight-Rod</title>
+							<alternative><title>Z</title><src>Jackson</src></alternative>
+						</symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="I">
+		    <description>Longforgan</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Double-Disc</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Badenoch and Strathspey" class="I">
+		    <description>Lynchurn</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Shetland" class="IV">
+		    <description>Mail Figure Stone, Cunningsburgh</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol reliability="uncertain"><title>Wolf-Man</title></symbol>
+						<symbol reliability="uncertain"><title>Axe</title></symbol>
+						<symbol reliability="uncertain"><title>Club</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Shetland" class="IV">
+		    <description>Mail, Cunningsburgh</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Rectangle</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="II">
+		    <description>Meigle 1</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Salmon</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Beast's-Head</title></symbol>
+					<symbol reliability="uncertain"><title>Triquetra</title></symbol>
+					<symbolUnit>
+						<symbol><title>Serpent</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="3">
+					<symbol><title>Mirror</title></symbol>
+					<symbol><title>Comb</title></symbol>
+				</line>
+				<line number="4">
+					<symbol><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="IV">
+		    <description>Meigle 2</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Horseman</title></symbol>
+					<symbol reliability="uncertain"><title>Horseman</title></symbol>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Horseman</title></symbol>
+					<symbol reliability="uncertain"><title>Horseman</title></symbol>
+				</line>
+				<line number="3">
+					<symbol reliability="uncertain"><title>Centaur</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="II">
+		    <description>Meigle 3</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Double-Disc</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="II">
+		    <description>Meigle 4</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Beast</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="II">
+		    <description>Meigle 5</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Mirror-Case</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="II">
+		    <description>Meigle 6</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Double-Disc</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Crescent</title></symbol>
+				</line>
+				<line number="3">
+					<symbol reliability="uncertain"><title>Hound</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="II">
+		    <description>Meigle 7</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Mirror</title></symbol>
+					<symbol><title>Comb</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="III">
+		    <description>Meigle 8</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Disc</title></symbol>
+						<symbol reliability="uncertain"><title>2-Bars</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="IV">
+		    <description>Menmuir</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Coiled-Fish</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="II">
+		    <description>Migvie</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+					<symbolUnit>
+						<symbol><title>Horseshoe</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Shears</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Mill of Newton, Tillypronie</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol reliability="alternative transcriptions">
+							<title>Notched-Rectangle</title>
+							<alternative><title>Divided-Rectangle</title><src>Field Guide</src></alternative>
+							<alternative><title>Rectangle</title><src>Jackson</src></alternative>
+						</symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="II">
+		    <description>Monifieth 1</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Double-Disc</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Comb</title></symbol>
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="3">
+					<symbol><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="II">
+		    <description>Monifieth 2</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Deer's-Head</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol reliability="uncertain"><title>Crescent</title></symbol>
+						<symbol reliability="uncertain"><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="IV">
+		    <description>Monifieth 3</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Crescent</title></symbol>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Horseman</title></symbol>
+					<symbolUnit>
+						<symbol reliability="uncertain"><title>Stag</title></symbol>
+						<symbol reliability="uncertain"><title>Hound</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Dog</title></symbol>
+				</line>
+				<line number="3">
+					<symbol reliability="uncertain"><title>Fish-Monster</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="II">
+		    <description>Monymusk</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Step</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Triple-Disc</title></symbol>
+						<symbol reliability="uncertain"><title>Bar</title></symbol>
+		    		</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="II">
+		    <description>Mortlach 1, Battle Stone</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Fish-Monster</title></symbol>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Fish-Monster</title></symbol>
+				</line>
+				<line number="3">
+					<symbol><title>Eagle</title></symbol>
+				</line>
+				<line number="4">
+					<symbol><title>Serpent</title></symbol>
+				</line>
+				<line number="5">
+					<symbol reliability="uncertain"><title>Bull's-Head</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Mortlach 2</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Beast</title></symbol>
+				</line>
+				<line number="2">
+					<symbol reliability="alternative transcriptions">
+						<title>Ogee</title>
+						<alternative><title>Curve</title><src>PSSH</src></alternative>
+					</symbol>
+				</line>
+			</docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Myreton, Picardy Stone, Insch</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Serpent</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="3">
+					<symbol><title>Mirror</title></symbol>
+					<symbol reliability="uncertain"><title>Comb</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Sutherland" class="I">
+		    <description>Nacidale, St. Ninian's Chapel</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Triple-Disc</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Orkney" class="I">
+		    <description>Ness, Tankerness</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Fish-Monster</title>
+						<alternative><title>Seahorse</title><src>PSSH</src></alternative>
+						<alternative><title>Hippocamp</title><src>RCAHMS</src></alternative>
+					</symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Newbigging Leslie, Leith Hall</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Rectangle</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Wolf</title></symbol>
+					<symbol><title>Mirror</title></symbol>
+					<symbol><title>Comb</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Newton House</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Double-Disc</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Serpent</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Newton House 2</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Newton of Lewesk, Mill of Lewesk</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Mirror-Case</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>2-Crescent</title></symbol>
+					<symbolUnit>
+						<symbol reliability="uncertain"><title>Rectangle</title></symbol>
+						<symbol reliability="uncertain"><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Fife" class="I">
+		    <description>Newton, Collessie Farm</description>
+		    <docText>
+				<side number="A">
+					<line number="1">
+						<symbol><title>Horseshoe</title></symbol>
+					</line>
+				</side>
+				<side number="B">
+					<line number="1">
+						<symbol><title>Man</title></symbol>
+					</line>
+				</side>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Ross and Cromarty" class="II">
+		    <description>Nigg</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Eagle</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Ross and Comarty" class="IV">
+		    <description>Nonakiln, Nonikiln</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Double-Disc</title></symbol>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Double-Disc</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Fife" class="IV">
+		    <description>Norries Law</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Beast's-Head</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>North Redhill, Tillytarmont 4</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Divided-Rectangle</title>
+						<alternative><title>Notched-Rectangle</title><src>PSSH, RCAHMS</src></alternative>
+					</symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Old Deer, Deer</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Rectangle</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Shetland" class="IV">
+		    <description>Old Scatness Broch 1</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Boar</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Shetland" class="IV">
+		    <description>Old Scatness Broch 2</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol reliability="uncertain"><title>Crescent</title></symbol>
+						<symbol reliability="uncertain"><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Orkney" class="I">
+		    <description>Orphir 1</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Orkney" class="I">
+		    <description>Orphir 2</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Rectangle</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Orkney" class="I">
+		    <description>Oxtro, Broch of Oxtro</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Eagle</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Western Isles" class="I">
+		    <description>Pabbay, Barra</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Flower</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Orkney" class="IV">
+		    <description>Papa Westray</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Rectangle</title></symbol>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Cross</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Park House</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol reliability="alternative transcriptions">
+							<title>Divided-Rectangle</title>
+							<alternative><title>Notched-Rectangle</title><src>PSSH, RCAHMS</src></alternative>
+							<alternative><title>Flower</title><src>RCAHMS</src></alternative>
+							<alternative><title>Rectangle</title><src>Jackson</src></alternative>
+						</symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="3">
+					<symbol><title>Mirror</title></symbol>
+					<symbol><title>Comb</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="IV">
+		    <description>Parkhill Silver Chain (20319)</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Ogee</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Percylieu, Clatt, Leith Hill</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Salmon</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Horseshoe</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="I">
+		    <description>Peterhead Farm, Blackford</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Goose</title>
+						<alternative><title>Eagle</title><src>PSSH</src></alternative>
+					</symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Rectangle</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Orkney" class="IV">
+		    <description>Pool, Sanday</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Double-Disc</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Ross and Cromarty" class="I">
+		    <description>Poolewe, Inverewe</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Skye and Lochalsh" class="I">
+		    <description>Raasay</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Tuning-Fork</title>
+						<alternative><title>Notched-Rectangle</title><src>Jackson</src></alternative>
+					</symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="IV">
+		    <description>Redstone Hill, St. Ringan's Cairn</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Boar</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Rhynie 1, Craw Stane</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Salmon</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Rhynie 2, Plough Inn</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol reliability="uncertain"><title>Crescent</title></symbol>
+						<symbol reliability="uncertain"><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol reliability="alternative transcriptions">
+							<title>Z</title>
+							<alternative><title>V</title><src>PSSH</src></alternative>
+						</symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Rhynie 3, Plough Inn</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Man</title></symbol>
+					<symbol reliability="uncertain"><title>Horseshoe</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Rhynie 4, Mains of Rhynie</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Beast</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="3">
+					<symbol><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Rhynie 5, Old Church</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Beast's-Head</title></symbol>
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Comb</title></symbol>
+					<symbol><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Rhynie 6, Old Church</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Crescent</title></symbol>
+					<symbol><title>V</title></symbol>
+				</line>
+				<line number="3">
+					<symbol><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="IV">
+		    <description>Rhynie 7, Barflat</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol reliability="uncertain"><title>Man</title></symbol>
+						<symbol reliability="uncertain"><title>Axe</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Rhynie 8, Barflat</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Beast</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Comb</title></symbol>
+					<symbol><title>Ogee</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Borders Roxburgh" class="IV">
+		    <description>Roberton (54196)</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Salmon</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Ross and Cromarty" class="II">
+		    <description>Rosemarkie</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="3">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="4">
+					<symbolUnit>
+						<symbol reliability="uncertain"><title>Crescent</title></symbol>
+						<symbol reliability="uncertain"><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="5">
+					<symbol reliability="uncertain"><title>Mirror</title></symbol>
+					<symbol reliability="uncertain"><title>Comb</title></symbol>
+					<symbol reliability="uncertain"><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Ross and Cromarty" class="I">
+		    <description>Roskeen, Clacha' Mheirlich</description>
+		    <docText>
+				<side number="A">
+					<line number="1">
+						<symbol><title>Step</title></symbol>
+					</line>
+				</side>
+				<side number="B">
+					<line number="1">
+						<symbolUnit>
+							<symbol><title>Crescent</title></symbol>
+							<symbol reliability="uncertain"><title>V</title></symbol>
+						</symbolUnit>
+					</line>
+					<line number="2">
+						<symbol><title>Pincers</title></symbol>
+					</line>
+				</side>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="II">
+		    <description>Rossie Priory</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Rothiebrisbane</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Horseshoe</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol reliability="uncertain"><title>Triple-Disc</title></symbol>
+						<symbol reliability="uncertain"><title>Disc</title></symbol>
+						<description>Triple-Disc in Disc</description>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Shetland" class="I">
+		    <description>Sandness</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Rectangle</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Horseshoe</title></symbol>
+				</line>
+				<line number="3">
+					<symbol><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Orkney" class="I">
+		    <description>Sands of Evie, Evie</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Mirror</title></symbol>
+					<symbol reliability="uncertain"><title>Triple-Disc</title></symbol>
+					<symbol reliability="uncertain"><title>Comb</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Caithness" class="I">
+		    <description>Sandside House</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Triple-Oval</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Mirror-Case</title></symbol>
+				</line>
+				<line number="3">
+					<symbol><title>Mirror</title></symbol>
+					<symbol><title>Comb</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Fife" class="II">
+		    <description>Scoonie</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="IV">
+		    <description>Sculptor's Cave, Covesea</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Salmon</title></symbol>
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+						<symbol><title>Flower</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Ross and Cromarty" class="II">
+		    <description>Shandwick, Clach a' Charridh</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Double-Disc</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Caithness" class="II">
+		    <description>Skinnet 1, Skinnet Chapel, Halkirk</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Triple-Oval</title></symbol>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Fish-Monster</title></symbol>
+				</line>
+				<line number="3">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="II">
+		    <description>St. Madoes</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Orkney" class="I">
+		    <description>St. Peter's Church, South Ronaldsay</description>
+		    <docText>
+				<side number="A">
+					<line number="1">
+						<symbol><title>Rectangle</title></symbol>
+					</line>
+					<line number="2">
+						<symbolUnit>
+							<symbol><title>Crescent</title></symbol>
+							<symbol><title>V</title></symbol>
+						</symbolUnit>
+					</line>
+				</side>
+				<side number="B">
+					<line number="1">
+						<symbolUnit>
+							<symbol><title>Crescent</title></symbol>
+							<symbol><title>V</title></symbol>
+						</symbolUnit>
+						<symbol><title>Mirror-Case</title></symbol>
+					</line>
+				</side>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="II">
+		    <description>St. Vigeans 1</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>	
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Crescent</title></symbol>
+					<symbol><title>Comb</title></symbol>
+					<symbol><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="II">
+		    <description>St. Vigeans 2</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Mirror</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Serpent</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="3">
+					<symbol><title>Comb</title></symbol>
+					<symbol><title>Eagle</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="II">
+		    <description>St. Vigeans 3</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="II">
+		    <description>St. Vigeans 4</description>
+		    <docText>
+				<side number="A">
+					<line number="1">
+						<symbol><title>Double-Disc</title></symbol>
+					</line>
+				</side>
+				<side number="B">
+					<line number="1">
+						<symbol reliability="uncertain"><title>Triquetra</title></symbol>
+					</line>
+				</side>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="II">
+		    <description>St. Vigeans 5</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Step</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="II">
+		    <description>St. Vigeans 6</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="IV">
+		    <description>St. Ringans Cairn, Redstone Hill, Cairn o' Mount</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Boar</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="I">
+		    <description>Strathmartine 1</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="IV">
+		    <description>Strathmartine 2</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Snake</title></symbol>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Snake</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="II">
+		    <description>Strathmartine 3</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Step</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="II">
+		    <description>Strathmartine 4</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="II">
+		    <description>Strathmartine 5</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="II">
+		    <description>Strathmartine 6</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Fife" class="I">
+		    <description>Strathmiglo</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Mirror-Case</title>
+						<alternative><title>Notched-Rectangle</title><src>Jackson</src></alternative>
+					</symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Deer's-Head</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Ross and Cromarty" class="I">
+		    <description>Strathpeffer, Clach an Tionpain, Clach an Tiondian</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Horseshoe</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Eagle</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Perthshire and Kinross" class="I">
+		    <description>Struan, Strowan</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Horseshoe</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Ross and Cromarty" class="II">
+		    <description>Tarbat 1</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Tuning-Fork</title></symbol>
+				</line>
+				<line number="3">
+					<symbolUnit>
+						<symbol><title>Serpent</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="4">
+					<symbol reliability="uncertain"><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="II">
+		    <description>Tealing</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Tillytarmont 1, Goose Stone</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Goose</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Mirror</title></symbol>
+					<symbol><title>Mirror-Case</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Tillytarmont 2</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Double-Disc</title></symbol>
+					<symbol><title>Z</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Tillytarmont 3</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol reliability="uncertain"><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Double-Disc</title></symbol>
+					<symbol><title>Z</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Tillytarmont 5</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Eagle</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Beast</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Tillytarmont 6</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Serpent</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Horseshoe</title></symbol>
+					<symbol><title>Comb</title></symbol>
+					<symbol><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Tom na Heron</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Serpent</title></symbol>
+				</line>
+				<line number="2">
+					<symbol reliability="uncertain"><title>Figure</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Ross and Cromarty" class="I">
+		    <description>Torgorm</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Skye and Lochalsh" class="I">
+		    <description>Tote, Clach Ard</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Double-Disc</title></symbol>
+					<symbol><title>Z</title></symbol>
+				</line>
+				<line number="3">
+					<symbol><title>Mirror</title></symbol>
+					<symbol><title>Comb</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Tullich 1</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Beast</title></symbol>
+				</line>
+				<line number="3">
+					<symbol><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Turriff Manse</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol reliability="alternative transcriptions">
+							<title>Crescent</title>
+							<alternative><title>Double-Disc</title><src>Jackson</src></alternative>
+						</symbol>
+						<symbol reliability="alternative transcriptions">
+							<title>V</title>
+							<alternative><title>Z</title><src>Jackson</src></alternative>
+						</symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Tyrie, Tirie</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Eagle</title></symbol>
+				</line>
+				<line number="2">
+					<symbolUnit>
+						<symbol reliability="alternative transcriptions">
+							<title>Notched-Rectangle</title>
+							<alternative><title>Divided-Rectange</title><src>Field Guide</src></alternative>
+							<alternative><title>Rectangle</title><src>Jackson</src></alternative>
+						</symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Caithness" class="II">
+		    <description>Ulbster</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Serpent</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Flower</title></symbol>
+				</line>
+				<line number="1">
+					<symbol><title>Beast</title></symbol>
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+				<line number="2">
+					<symbol><title>Salmon</title></symbol>
+					<symbol><title>Beast</title></symbol>
+				</line>
+				<line number="3">
+					<symbol><title>Step</title></symbol>
+					<symbol><title>Double-Disc</title></symbol>
+				</line>
+				<line number="3">
+					<symbol><title>Fish-Monster</title></symbol>
+					<symbol><title>2-Crescent</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Moray" class="I">
+		    <description>Upper Manbeen, Upper Manbean</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Dog's-Head</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Fish-Monster</title></symbol>
+				</line>
+				<line number="3">
+					<symbol><title>Comb</title></symbol>
+					<symbol><title>Mirror</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Shetland" class="IV">
+		    <description>Uyea</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Rectangle</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Fife" class="IV">
+		    <description>Walternativeon</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Eagle</title></symbol>
+					<symbol reliability="alternative transcriptions">
+						<title>Terret</title>
+						<alternative><title>Double-Disc</title><src>Jackson</src></alternative>
+					</symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Aberdeenshire" class="I">
+		    <description>Wantonwells, Dead Man's Howe</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Caithness" class="I">
+		    <description>Watenan</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Crescent</title></symbol>
+						<symbol><title>V</title></symbol>
+					</symbolUnit>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Highland Inverness" class="I">
+		    <description>Wester Balblair, Beauly</description>
+		    <docText>
+				<line number="1">
+					
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="II">
+		    <description>Wester Denoon</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Mirror</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Comb</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="IV">
+		    <description>Westerton of Balgavies, Aberlemno</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="uncertain"><title>Man</title></symbol>
+					<symbol reliability="uncertain"><title>Cupmarks</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Fife" class="I">
+		    <description>Westfield 1, Falkland</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Double-Disc</title></symbol>
+					<symbol><title>Mirror-Case</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Fife" class="I">
+		    <description>Westfield 2, Falkland</description>
+		    <docText>
+				<line number="1">
+					<symbol reliability="alternative transcriptions">
+						<title>Notched-Rectangle</title>
+						<alternative><title>Divided-Rectangle</title><src>Field Guide</src></alternative>
+					</symbol>
+					<symbol reliability="alternative transcriptions">
+						<title>2-Concentric-Circles</title>
+						<alternative><title>Mirror</title><src>Field Guide</src></alternative>
+					</symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Lanarkshire" class="IV">
+		    <description>Whitecleuch, Drumlanrig Castle</description>
+		    <docText>
+				<line number="1">
+					<symbolUnit>
+						<symbol><title>Double-Disc</title></symbol>
+						<symbol><title>Z</title></symbol>
+					</symbolUnit>
+					<symbol><title>Notched-Rectangle</title></symbol>
+				</line>
+		    </docText>
+		</document>
+		
+		<document type="PictishStone" region="Angus" class="II">
+		    <description>Woodwray, Woodrae</description>
+		    <docText>
+				<line number="1">
+					<symbol><title>Double-Disc</title></symbol>
+				</line>
+				<line number="2">
+					<symbol><title>Step</title></symbol>
+				</line>
+				<line number="3">
+					<symbol reliability="uncertain"><title>Bull</title></symbol>
+				</line>
+		    </docText>
+		</document>
+   </entry>
+</collection>

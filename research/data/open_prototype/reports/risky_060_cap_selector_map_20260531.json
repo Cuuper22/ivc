@@ -1,0 +1,87 @@
+{
+  "date": "2026-05-31",
+  "phase": "EXPAND",
+  "candidate_id": "risky_060_cap_selector_map_20260531",
+  "tier": "wild shot_to_candidate_screen",
+  "bet": "The sign immediately before 060 is not incidental: within the terminal-cap paradigm it often selects a specific cap, giving a tiny grammar of feeder signs plus 060 plus closure.",
+  "exact_collapse": {
+    "source": "C:\\Users\\Acer\\OneDrive\\Documents\\ivc\\data\\open_prototype\\lipi\\metadata_filtered.csv",
+    "cap_set": [
+      "920",
+      "692",
+      "550",
+      "820"
+    ],
+    "exact_prev_060_cap_cells": 130,
+    "dedupe_key": [
+      "prev",
+      "060",
+      "cap",
+      "next2",
+      "text",
+      "site",
+      "type",
+      "symbol"
+    ]
+  },
+  "qualifying_rule": {
+    "min_selector_cells": 4,
+    "min_purity": 0.75
+  },
+  "live_qualifying_selector_count": 2,
+  "live_best_selector_p": 1.0356006118197786e-15,
+  "cap_label_shuffle_null": {
+    "iterations": 5000,
+    "preserves": "prev signs, number of prev-060-cap cells, and cap marginal counts; shuffles cap labels over exact cells",
+    "p_qualifying_count_ge_live": 0.2258,
+    "p_best_selector_p_le_live": 0,
+    "p_both_count_and_best": 0
+  },
+  "strongest_selectors": [
+    {
+      "prev": "741",
+      "target_cap": "920",
+      "selector_cells": 30,
+      "target_hits": 30,
+      "other_cap_hits": 0,
+      "purity": 1,
+      "fisher_right_tail": 1.0356006118197786e-15,
+      "cap_counts": "920:30 692:0 550:0 820:0",
+      "examples": [
+        "C-16:741-060-920:+429-003-741-060-920+",
+        "H-1309:741-060-920:+156-176-741-060-920+",
+        "H-2127:741-060-920:+504-350-741-060-920+",
+        "H-89:741-060-920:+232-240-741-060-920+",
+        "H-175:741-060-920:+167-705-368-005-741-060-920+",
+        "K-4:741-060-920:+036-269-140-002-741-060-920+",
+        "L-28:741-060-920:+740-406-590-741-060-920+",
+        "L-217:741-060-920:+740-821-741-060-920+"
+      ]
+    },
+    {
+      "prev": "742",
+      "target_cap": "920",
+      "selector_cells": 7,
+      "target_hits": 7,
+      "other_cap_hits": 0,
+      "purity": 1,
+      "fisher_right_tail": 0.0012664485018891885,
+      "cap_counts": "920:7 692:0 550:0 820:0",
+      "examples": [
+        "M-709:742-060-920:+740-100-001-440-742-060-920+",
+        "M-59:742-060-920:+368-003-742-060-920+",
+        "M-68:742-060-920:+690-518/090-740-176-742-060-920+",
+        "M-369:742-060-920:+740-690-435-255-240-220-415-806-742-060-920+",
+        "M-387:742-060-920:+226-032-798-742-060-920+",
+        "M-754:742-060-920:+740-760-705-742-060-920+",
+        "Ns-59:742-060-920:+520-220-742-060-920+"
+      ]
+    }
+  ],
+  "risky_new_bets": [],
+  "demoters": [
+    "If exact deduplication by object rather than text family drops the non-741/742/745 selectors below four cells, keep only the 920 feeder alloseries.",
+    "If a site-withheld test shows a selector exists only at one excavation site, demote it to local workshop habit rather than script grammar.",
+    "If source images split the apparent prev sign into unrelated graphic signs, split the bet before retesting."
+  ]
+}

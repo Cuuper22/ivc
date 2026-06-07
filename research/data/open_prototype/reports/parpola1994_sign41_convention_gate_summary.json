@@ -1,0 +1,44 @@
+{
+  "question": "What does Parpola 2019 mean by sign no. 41, and does it source the H-2148 local 110 branch?",
+  "result": "Parpola 2019's sign-list convention is sourced to Parpola 1994, pp. 70-78, Fig. 5.1. In the downloaded Parpola 1994 PDF, sign no. 41 is visible on printed p. 70 / PDF page 88 and includes the kneeling/person-with-raised-object variant matching Parpola 2019's prose. This resolves the article-convention gate but does not accept local 110 as Parpola sign no. 41.",
+  "source_url": "https://www.sindhilanguagelibrary.com/assets/documents/pdf/647f088f1fff3.pdf",
+  "downloaded_pdf": "tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+  "downloaded_pdf_sha256": "FD133822F9999C86178A32208465E847C5288B578AD14CA2CD643EFE57F0E0B6",
+  "pdf_pages": 392,
+  "rendered_witnesses": [
+    "tmp/parpola_1994_signlist/rendered/fig5_1-088.png",
+    "tmp/parpola_1994_signlist/rendered/fig5_1_p70_sign40_43_crop.png",
+    "tmp/parpola_1994_signlist/rendered/fig5_1_p70_sign41_all_variants_crop.png",
+    "tmp/parpola_1994_signlist/rendered/parpola41_h2148_visual_comparison.png",
+    "tmp/h2148_h2100_h2152_110_route/derived/h2148_fig14_item1_left_single_panel_no_label_crop.png"
+  ],
+  "page_mapping": {
+    "parpola_1994_fig_5_1_start_pdf_page": 88,
+    "printed_page": 70,
+    "sign_no_41_visible_on_page": true
+  },
+  "observations": [
+    "Parpola 2019 says the paper quotes sign numbers from Parpola 1994, pp. 70-78, Fig. 5.1.",
+    "Parpola 2019 describes the H-940/H-2147/H-2148 reverse-side sign no. 41 as a kneeling man holding a pot.",
+    "Parpola 1994 Fig. 5.1 sign no. 41 has variants a-f, including a solid kneeling/person-with-raised-object variant.",
+    "Mayig V041 maps to P301, a small hatched box, and is not visually the Parpola 1994 sign no. 41 family.",
+    "Mayig P041 maps to V141/W112/M034 and remains rejected as a numeric shortcut.",
+    "The H-2148 one-sign panel is visually compatible with the Parpola sign no. 41 family, but current public crop quality is not enough for closed identification."
+  ],
+  "decisions": {
+    "parpola2019_sign_no_41_convention": "resolved_to_Parpola_1994_fig5_1_sign_no_41",
+    "mayig_p041_as_article_sign41": "rejected",
+    "mayig_v041_as_article_sign41": "rejected_for_current_crosswalk_use",
+    "h2148_one_sign_panel": "compatible_not_decisive",
+    "local_110_crosswalk": "unaccepted"
+  },
+  "accepted_claims": {
+    "local_110_equals_parpola_sign41": false,
+    "mayig_p041_equals_parpola_sign41": false,
+    "mayig_v041_equals_parpola_sign41": false,
+    "h2148_closed_same_side_identity": false,
+    "phonetic_value": false,
+    "translation": false
+  },
+  "next_gate": "Acquire or inspect independent H-2148/H2001-5142 same-side evidence tying the one-sign panel to the reverse side and to Parpola 1994 sign no. 41, while preserving local row 481.2 +110+ as an unaccepted crosswalk candidate."
+}

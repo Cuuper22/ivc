@@ -1,0 +1,5 @@
+checked_date,check_id,result,evidence,consequence
+2026-05-31,FINAL_235_ALONE_TRIGGERS_125,pass_kill_broad_235_trigger,final235 after-head 125=3/18; heads=861:6;817:3;390:2;065:1;112:1;220:1;374:1;405:1;820:1;906:1,235 cannot be read as a general trigger for 125 after 002; the effect is head-conditioned.
+2026-05-31,FINAL_235_PLUS_002390_SELECTS_125,pass_source_mixed_narrow_trigger,M-38:+740-690-435-255-220-032-240-235-002-390-125-632-032+ | M-735:+740-760-235-002-390-125-195+,"235 remains useful only as a narrow precursor inside 002-390, not as an independent sign value."
+2026-05-31,HEAD_390_HAS_125_RESIDUAL_WITHOUT_235,pass_keep_390_frame_residual,M-119:484->125:+151-337-484-002-390-125-632-032-900-563+,M-119 prevents the 125 branch from collapsing entirely into final-235 context.
+2026-05-31,SEMANTIC_235_TITLE_TRIGGER,pass_demote,final235 has many heads and only a minority after-head 125.,No title/rank/value reading for 235 survives this consolidation.

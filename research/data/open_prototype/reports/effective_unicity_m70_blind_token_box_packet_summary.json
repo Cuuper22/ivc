@@ -1,0 +1,30 @@
+{
+  "date": "2026-05-29",
+  "packet_id": "m70_order_window_pilot_v1",
+  "status": "blind_token_box_packet_created_no_claim_promotion",
+  "counts": {
+    "blind_items": 15,
+    "primary_targets": 2,
+    "positive_calibrators": 3,
+    "scoring_negatives": 9,
+    "scoring_negative_unique_cisis": 7,
+    "quarantine_negatives": 1,
+    "accepted_claims_increment": 0
+  },
+  "null_question": "Is M-70's broad 032-002-390-692 order window distinguishable from matched source/metadata false positives produced by the same broad-window procedure on rows with comparable site, type, length, and local-image availability but without the same catalog-slot adjacency?",
+  "files": {
+    "blind_manifest": "data/open_prototype/reports/effective_unicity_m70_blind_token_box_manifest.csv",
+    "answer_key": "data/open_prototype/reports/effective_unicity_m70_blind_token_box_answer_key.csv",
+    "review_template": "data/open_prototype/reports/effective_unicity_m70_blind_token_box_review_template.csv",
+    "contact_sheet": "tmp/effective_unicity_m70_blind_packet/m70_blind_token_box_contact_sheet.png",
+    "blind_image_dir": "tmp/effective_unicity_m70_blind_packet/blind_images"
+  },
+  "promotion_thresholds": [
+    "This packet can only promote M-70 to source-boxed order-window candidate, never to a reading, value, meaning, language ID, or accepted structural claim.",
+    "Two or more independent blind reviews must recover a five-token M-70 signband on both face and impression and mark a stable adjacent-pair/order window before seeing the answer key.",
+    "At least six unique scoring-negative rows must remain reviewable after blind quality screening; otherwise M-70 stays at broad order-window status.",
+    "Controls must produce zero hard target-like hits. One soft ambiguous partial hit is allowed only if adjudicated as damage, cropping, or non-comparable source quality before unblinding.",
+    "Quarantine negatives may diagnose reviewer behavior but cannot be counted in false-positive denominators until their source crops are packet-ready."
+  ],
+  "interpretation_boundary": "No sign value, phonetic value, semantic value, physical source direction, language identification, or accepted structural claim follows from this packet."
+}

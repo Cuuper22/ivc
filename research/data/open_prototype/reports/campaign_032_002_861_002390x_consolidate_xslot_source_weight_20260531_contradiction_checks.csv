@@ -1,0 +1,7 @@
+checked_date,check_id,result,evidence,parser_consequence
+2026-05-31,CONSOLIDATE_125_MUST_BE_OPEN_CONTINUING,pass,M-38:235->125->632 032:unbound | M-119:484->125->632 032 900 563:strict | M-735:235->125->195:strict | Sktd-1:004->125->820:panel_permissive_not_strict,"125 can remain the only repeated open branch, but only carrier/tail-conditioned."
+2026-05-31,CONSOLIDATE_CLOSED_FAMILY_MUST_END,pass,H-1993:004->095-><END>:route_only | M-70:032->692-><END>:strict | M-71:142->095-><END>:strict | M-1825:031->705-><END>:source_dark | -:4237.1:388->705-><END>:unbound,095/692/705 can remain terminal closure syntax; 705 remains source-thin.
+2026-05-31,CONSOLIDATE_CLOSED_FAMILY_SOURCE_WEIGHT,partial_pass,H-1993:004->095-><END>:route_only | M-70:032->692-><END>:strict | M-71:142->095-><END>:strict | M-1825:031->705-><END>:source_dark | -:4237.1:388->705-><END>:unbound,Terminal family is real enough for syntax but not semantics; load-bearing strict rows are M-70 and M-71.
+2026-05-31,CONSOLIDATE_530_EXACTLY_ONE_COMPLEMENT,partial_pass,H-773:803->530->741:panel_compatible_not_strict,530 linker survives as a prediction only because H-773 is not token-strict.
+2026-05-31,CONSOLIDATE_590_REQUIRES_032_TAIL,partial_pass,-:3335.1:032->590->032:unbound,590 bridge survives only as source-blocked 3335.1 prediction.
+2026-05-31,CONSOLIDATE_SINGLETONS_DO_NOT_CARRY_MODEL,pass_demote,H-68:003->072-><END>:unbound | M-213:384->346-><END>:unbound | M-232:236->707-><END>:unbound | M-708:061->140-><END>:unbound,072/140/346/707 are terminal fillers until repeated or source-bound.

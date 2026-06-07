@@ -1,0 +1,89 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "heldout_predictor_null",
+  "frame_count": 316,
+  "metrics": [
+    {
+      "checked_date": "2026-05-31",
+      "predictor": "x_slot_sign",
+      "covered": "247",
+      "total": "316",
+      "coverage_rate": "0.781646",
+      "correct": "189",
+      "wrong": "58",
+      "accuracy": "0.765182"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "predictor": "head_after_002",
+      "covered": "257",
+      "total": "316",
+      "coverage_rate": "0.813291",
+      "correct": "178",
+      "wrong": "79",
+      "accuracy": "0.692607"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "predictor": "head_x_pair",
+      "covered": "121",
+      "total": "316",
+      "coverage_rate": "0.382911",
+      "correct": "116",
+      "wrong": "5",
+      "accuracy": "0.958678"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "predictor": "prev_before_002",
+      "covered": "271",
+      "total": "316",
+      "coverage_rate": "0.857595",
+      "correct": "181",
+      "wrong": "90",
+      "accuracy": "0.667897"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "predictor": "scope_cell",
+      "covered": "275",
+      "total": "316",
+      "coverage_rate": "0.870253",
+      "correct": "191",
+      "wrong": "84",
+      "accuracy": "0.694545"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "predictor": "scope_x",
+      "covered": "137",
+      "total": "316",
+      "coverage_rate": "0.433544",
+      "correct": "113",
+      "wrong": "24",
+      "accuracy": "0.824818"
+    },
+    {
+      "checked_date": "2026-05-31",
+      "predictor": "scope_head",
+      "covered": "136",
+      "total": "316",
+      "coverage_rate": "0.430380",
+      "correct": "110",
+      "wrong": "26",
+      "accuracy": "0.808824"
+    }
+  ],
+  "new_bets": {
+    "X_SIGN_PREDICTOR_BEATS_SCOPE_AND_LEFT_NULLS": "candidate",
+    "HEAD_X_PAIR_MICROGRAMMAR": "candidate",
+    "VISUAL_SCOPE_NULL_STILL_LIVE": "candidate",
+    "LEFT_CONTEXT_ROUTER_WEAKENS": "candidate"
+  },
+  "predictions": [
+    "X-sign and H-X pair predictors should keep beating broad scope and left-context baselines.",
+    "Scope-conditioned predictors staying competitive means copied visual-register null remains alive.",
+    "If head-X pair accuracy collapses under family/source checks, kill microgrammar and treat repeated pairs as formula copies."
+  ]
+}

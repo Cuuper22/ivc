@@ -1,0 +1,40 @@
+{
+  "checked_date": "2026-05-31",
+  "phase": "EXPAND",
+  "status": "sign002_valency_gate",
+  "focus_pairs": {
+    "390-125": "002_changes_pair_behavior",
+    "610-125": "002_only_currently",
+    "405-125": "002_only_currently",
+    "861-125": "no_clear_gate_effect",
+    "906-125": "002_only_currently",
+    "031-000": "002_changes_pair_behavior",
+    "031-032": "no_clear_gate_effect",
+    "220-455": "002_changes_pair_behavior"
+  },
+  "headline_contrasts": {
+    "390-125": {
+      "gated_open_rate": "4/4",
+      "ungated_open_rate": "2/5"
+    },
+    "031-000": {
+      "gated_open_rate": "0/2",
+      "ungated_open_rate": "8/9"
+    },
+    "610-125": {
+      "gated_rows": "2",
+      "ungated_rows": "0"
+    }
+  },
+  "new_bets": {
+    "SIGN002_VALENCY_GATE_NOT_GENERIC_OPENER": "candidate",
+    "SIGN002_REFUNCTIONALIZES_390125": "candidate",
+    "SIGN002_TERMINALIZES_031000": "wild shot",
+    "SIGN002_RARE_HEAD610_CONSTRUCTION": "candidate"
+  },
+  "predictions": [
+    "`002-390-125` should remain open while ungated `390-125` may terminate.",
+    "`002-031-000` should be terminal unless the terminalizing branch is wrong.",
+    "`610-125-032` should remain gated by `002` unless rare-head construction is wrong."
+  ]
+}
