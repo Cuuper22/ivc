@@ -1,0 +1,75 @@
+{
+  "items": [
+    {
+      "label": "H930_B_source_panel_v2",
+      "source_path": "tmp/m1206_m37_blind_visual_comparanda/cisi_pakistan_n374_h939_h940_w2000.jpg",
+      "output_path": "tmp/independent_direction_controls/derived/H930_B_source_panel_v2.png",
+      "crop_box": [
+        1980,
+        690,
+        2485,
+        1015
+      ],
+      "local_text": "+700-032+",
+      "local_direction": "R/L",
+      "note": "independent clean two-panel control; B short panel",
+      "width": 505,
+      "height": 325,
+      "sha256": "16f97a4d9af671ca38d24f549e2489190dfb88bc197865953b78e9acdbe0f581"
+    },
+    {
+      "label": "H789_B_source_panel_v2",
+      "source_path": "tmp/independent_direction_controls/cisi_pakistan_n359_h789_w2000.jpg",
+      "output_path": "tmp/independent_direction_controls/derived/H789_B_source_panel_v2.png",
+      "crop_box": [
+        1640,
+        3065,
+        2120,
+        3335
+      ],
+      "local_text": "+033-700+",
+      "local_direction": "R/L",
+      "note": "independent clean two-panel control; B short panel",
+      "width": 480,
+      "height": 270,
+      "sha256": "5f2fcd0d346db1e22760f6660840717755904abd517efd036c921da5c401517f"
+    },
+    {
+      "label": "H942_B_source_panel",
+      "source_path": "tmp/m1206_singleton_controls/derived/h942/H942_B_panel_labeled_from_cisi_pakistan_n374.png",
+      "output_path": "tmp/independent_direction_controls/derived/H942_B_source_panel.png",
+      "crop_box": null,
+      "local_text": "+033-700+",
+      "local_direction": "R/L",
+      "note": "independent source-visible control; side-mapping caution",
+      "width": 610,
+      "height": 440,
+      "sha256": "896f8a69af8593e2f13466e2a63f56efa884906a77e7d786c7bec53e7f1bfdfb"
+    },
+    {
+      "label": "H938_B_source_panel",
+      "source_path": "tmp/m1206_m37_blind_visual_comparanda/derived/verified_panel_crops/H938_B_panel.png",
+      "output_path": "tmp/independent_direction_controls/derived/H938_B_source_panel.png",
+      "crop_box": null,
+      "local_text": "+034-700+",
+      "local_direction": "R/L",
+      "note": "dependent existing component gate",
+      "width": 560,
+      "height": 430,
+      "sha256": "a889b8ce810c603a5eedeb7e15c0f3d1aedb9ae8c979210fc71ce8c3b15ae1c4"
+    },
+    {
+      "label": "H910_B_source_panel",
+      "source_path": "tmp/h910_component_probe/H910_B_panel.png",
+      "output_path": "tmp/independent_direction_controls/derived/H910_B_source_panel.png",
+      "crop_box": null,
+      "local_text": "+700-034+",
+      "local_direction": "R/L",
+      "note": "dependent existing component gate",
+      "width": 265,
+      "height": 140,
+      "sha256": "37b8499c780b2cd9e3b029b0a4e269cf3e6087b0db624f292be59f45ecb33294"
+    }
+  ],
+  "contact_sheet": "tmp/independent_direction_controls/derived/independent_direction_controls_contact_sheet_v2.png"
+}
