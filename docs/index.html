@@ -9,6 +9,11 @@
 <meta property="og:type" content="website" />
 <meta property="og:title" content="The Indus Script · An Excavation of Data" />
 <meta property="og:description" content="100 years undeciphered. 4,000 inscriptions. No Rosetta Stone. An interactive, honest attempt that proudly leads with five zeros and one verified brick." />
+<meta property="og:url" content="https://cuuper22.github.io/ivc/" />
+<meta property="og:image" content="https://cuuper22.github.io/ivc/og.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@400;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet" />
@@ -31,7 +36,8 @@
   </a>
   <nav class="nav-links" aria-label="Sections">
     <a href="#dig">Dig</a>
-    <a href="#structure">Structure</a>
+    <a href="#century">Century</a>
+    <a href="#graveyard">Graveyard</a>
     <a href="#proof">Proof</a>
     <a href="#play">Try it</a>
     <a href="#map">Map</a>
@@ -133,6 +139,19 @@
   </div>
 </section>
 
+<!-- TIMELINE -->
+<section class="section" id="century">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">A century of attempts</span>
+      <h2>Smart people have been failing at this since 1875.</h2>
+      <p class="lead">That is not an insult; it is the calibration. Every era brought its best tools and its best guesses. Drag through the years.</p>
+    </div>
+    <div class="tl-scroll reveal" id="timeline" aria-label="Timeline of Indus script decipherment attempts, drag to scroll"></div>
+    <p class="tl-hint reveal" aria-hidden="true">drag or scroll sideways →</p>
+  </div>
+</section>
+
 <!-- METHOD GAUNTLET -->
 <section class="section" id="method">
   <div class="wrap">
@@ -147,6 +166,19 @@
       <div class="gate"><span class="gate-n">Gate 03</span><h3>Source normalization</h3><p>Stop trusting the spreadsheet. Bind the claim to the actual artifact image: token boxes, crop checks, orientation. A photograph, not a transcription.</p></div>
       <div class="gate"><span class="gate-n">Gate 04</span><h3>Blind adjudication</h3><p>Independent reviewers count signs without knowing the hypothesis. Only then does it reach the ledger, with its surviving objections recorded beside it.</p></div>
     </div>
+  </div>
+</section>
+
+<!-- GRAVEYARD -->
+<section class="section" id="graveyard">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">The gates have a body count</span>
+      <h2>Twenty-six ideas are buried here. We dug the graves ourselves.</h2>
+      <p class="lead">Every retracted claim stays in the ledger with a written autopsy. A few of the notable dead, in plain language. Tap a stone to read how it died.</p>
+    </div>
+    <div class="graves reveal" id="graves"></div>
+    <p class="src reveal" style="margin-top:1.2rem">All 26 retractions, verbatim: <span class="mono">research/data/claim_ledger/claims.json</span> · one of them retracts the exact cryptographic-unicity logic behind a famous external decipherment claim. We killed our own copy first.</p>
   </div>
 </section>
 
@@ -237,6 +269,19 @@
   </div>
 </section>
 
+<!-- SEAL GALLERY -->
+<section class="section" id="artifacts">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">The cast</span>
+      <h2>Eight artifacts carry this whole story.</h2>
+      <p class="lead">The witnesses, the gated targets, the unprovenanced stranger, and the formula used against them as a control. Real corpus rows, real catalogue numbers.</p>
+    </div>
+    <div class="seals reveal" id="seals"></div>
+    <p class="src seal-caption reveal">Sign sequences are the project's real numeric rows. The drawn glyph shapes are illustrative stand-ins, not facsimiles of the artifacts: that distinction is the whole point of the source-binding gate.</p>
+  </div>
+</section>
+
 <!-- MAP -->
 <section class="section" id="map">
   <div class="wrap">
@@ -301,7 +346,7 @@
           <div class="fact"><dt>Accepted structural findings</dt><dd style="color:var(--patina)">1</dd></div>
           <div class="fact"><dt>Accepted readings (all kinds)</dt><dd>0</dd></div>
           <div class="fact"><dt>Evidence batches committed</dt><dd>41</dd></div>
-          <div class="fact"><dt>Claims retracted, with autopsies</dt><dd>11</dd></div>
+          <div class="fact"><dt>Claims retracted, with autopsies</dt><dd>26</dd></div>
         </dl>
       </div>
     </div>

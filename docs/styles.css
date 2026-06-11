@@ -319,3 +319,76 @@ p { text-wrap: pretty; }
 .foot-meta { margin-top: 3rem; display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center; justify-content: space-between; font-family: var(--font-mono); font-size: 0.74rem; color: var(--muted); }
 .foot-meta b { color: var(--patina-soft); font-weight: 400; }
 .foot-disclaim { max-width: 64ch; color: var(--muted); font-size: 0.9rem; margin-top: 1.3rem; }
+
+/* ---- lamp cursor --------------------------------------------------- */
+.lamp { position: fixed; top: 0; left: 0; z-index: 70; pointer-events: none; width: 36px; height: 36px; margin: -18px 0 0 -18px; border-radius: 50%; opacity: 0; transition: opacity 0.4s, width 0.25s var(--ease-quart), height 0.25s var(--ease-quart), margin 0.25s var(--ease-quart); background: radial-gradient(circle, oklch(0.83 0.12 178 / 0.16), transparent 65%); border: 1px solid oklch(0.83 0.12 178 / 0.35); }
+.lamp.on { opacity: 1; }
+.lamp.big { width: 64px; height: 64px; margin: -32px 0 0 -32px; border-color: oklch(0.83 0.12 178 / 0.6); }
+@media (pointer: coarse) { .lamp { display: none; } }
+
+/* ---- timeline ------------------------------------------------------ */
+.tl-scroll { overflow-x: auto; padding-bottom: 1.2rem; scrollbar-width: thin; scrollbar-color: var(--clay-deep) transparent; cursor: grab; }
+.tl-scroll.grab { cursor: grabbing; user-select: none; }
+.tl-track { display: flex; gap: 0; min-width: max-content; padding: 0.5rem 0.25rem 0; position: relative; }
+.tl-track::before { content: ""; position: absolute; left: 0; right: 0; top: 4.05rem; height: 1px; background: linear-gradient(90deg, var(--line-2), var(--clay-deep) 70%, var(--patina)); }
+.tl-item { width: 250px; flex: none; padding: 0 1.6rem 0 0; display: grid; gap: 0.45rem; align-content: start; }
+.tl-year { font-size: 1.5rem; color: var(--clay-bright); letter-spacing: -0.02em; }
+.tl-now .tl-year { color: var(--patina); }
+.tl-tick { width: 11px; height: 11px; border-radius: 50%; background: var(--bg-2); border: 2px solid var(--clay-deep); margin: 0.55rem 0 0.7rem; position: relative; z-index: 1; }
+.tl-now .tl-tick { border-color: var(--patina); background: oklch(0.30 0.06 182); box-shadow: 0 0 14px oklch(0.83 0.12 178 / 0.5); }
+.tl-item h3 { font-size: 1.04rem; letter-spacing: -0.015em; }
+.tl-item p { font-size: 0.88rem; color: var(--muted); max-width: 26ch; }
+.js .tl-item { opacity: 0; }
+.js .tl-scroll.drawn .tl-item { opacity: 1; transition: opacity 0.6s var(--ease-expo); transition-delay: calc(var(--i) * 80ms); }
+@media (prefers-reduced-motion: reduce) { .js .tl-item { opacity: 1; } }
+.tl-hint { font-family: var(--font-mono); font-size: 0.7rem; color: var(--faint); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 0.6rem; }
+
+/* ---- graveyard ----------------------------------------------------- */
+.graves { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+.grave { text-align: left; font: inherit; color: inherit; cursor: pointer; border: 1px solid var(--line); border-radius: 12px 12px 4px 4px; background: linear-gradient(180deg, var(--bg-3), var(--bg-2)); padding: 1.2rem 1.2rem 1rem; display: grid; gap: 0.55rem; align-content: start; position: relative; transition: border-color 0.25s, transform 0.25s var(--ease-quart); }
+.grave:hover { border-color: var(--clay-deep); transform: translateY(-2px); }
+.grave-rip { font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--clay-bright); border: 1px solid var(--clay-deep); border-radius: 999px; padding: 0.2rem 0.6rem; justify-self: start; }
+.grave h3 { font-size: 1rem; font-family: var(--font-prose); font-weight: 600; font-style: italic; color: var(--ink-soft); letter-spacing: 0; line-height: 1.3; }
+.grave-death { font-size: 0.86rem; color: var(--muted); display: none; }
+.grave.open .grave-death { display: block; }
+.grave-id { font-size: 0.6rem; color: var(--faint); word-break: break-all; display: none; }
+.grave.open .grave-id { display: block; }
+.grave::after { content: "+ autopsy"; font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--patina-soft); }
+.grave.open::after { content: "− close"; }
+.js .grave { opacity: 0; }
+.js .graves.drawn .grave { opacity: 1; transition: opacity 0.55s var(--ease-expo), border-color 0.25s, transform 0.25s var(--ease-quart); transition-delay: calc(var(--i) * 60ms), 0s, 0s; }
+@media (prefers-reduced-motion: reduce) { .js .grave { opacity: 1; } }
+
+/* ---- seal gallery -------------------------------------------------- */
+.seals { display: grid; gap: 1.3rem; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); }
+.seal { display: grid; gap: 0.8rem; perspective: 700px; outline-offset: 4px; }
+.seal-face { border-radius: 12px; border: 1px solid var(--line-2); padding: 1.1rem 1.1rem 1rem; background:
+  radial-gradient(120% 90% at 20% 0%, oklch(0.30 0.05 47), transparent 60%),
+  linear-gradient(180deg, var(--bg-3), oklch(0.22 0.03 45));
+  box-shadow: inset 0 1px 0 oklch(1 0 0 / 0.06), inset 0 -10px 24px oklch(0 0 0 / 0.35);
+  display: grid; gap: 0.7rem; transition: transform 0.25s var(--ease-quart); transform-style: preserve-3d; position: relative; }
+.seal-band { width: 100%; height: auto; max-height: 54px; }
+.seal-glyph path { fill: none; stroke: oklch(0.88 0.02 75 / 0.85); stroke-width: 3.4; stroke-linecap: round; stroke-linejoin: round; }
+.seal.is-verified .seal-glyph path { stroke: var(--patina); }
+.seal-codes { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.04em; }
+.seal-meta { display: flex; align-items: baseline; justify-content: space-between; gap: 0.8rem; }
+.seal-meta b { font-family: var(--font-display); color: var(--ink); font-size: 1.05rem; }
+.seal-meta span { font-size: 0.66rem; color: var(--faint); }
+.seal-status { position: absolute; top: 0.7rem; right: 0.8rem; font-size: 0.58rem; letter-spacing: 0.16em; text-transform: uppercase; padding: 0.18rem 0.5rem; border-radius: 999px; border: 1px solid var(--line-2); color: var(--muted); background: oklch(0.16 0.012 48 / 0.7); }
+.seal.is-verified .seal-status { color: var(--patina); border-color: var(--patina-deep); }
+.seal.is-strict .seal-status { color: var(--patina-soft); border-color: var(--patina-deep); }
+.seal.is-gated .seal-status { color: var(--clay-bright); border-color: var(--clay-deep); }
+.seal.is-open .seal-status { border-style: dashed; }
+.seal.is-verified .seal-face { border-color: var(--patina-deep); }
+.seal.is-gated .seal-face { border-color: var(--clay-deep); }
+.seal-note { font-size: 0.85rem; color: var(--muted); line-height: 1.5; }
+.js .seal { opacity: 0; }
+.js .seals.drawn .seal { opacity: 1; transition: opacity 0.55s var(--ease-expo); transition-delay: calc(var(--i) * 70ms); }
+@media (prefers-reduced-motion: reduce) { .js .seal { opacity: 1; } }
+.seal-caption { margin-top: 1.2rem; }
+
+/* ---- the DIG veil (easter egg) ------------------------------------- */
+.veil { position: fixed; inset: 0; z-index: 65; pointer-events: none; --lx: 50vw; --ly: 50vh; opacity: 0; transition: opacity 0.45s; background: radial-gradient(circle 220px at var(--lx) var(--ly), transparent 0%, oklch(0.07 0.008 48 / 0.55) 55%, oklch(0.05 0.006 48 / 0.96) 100%); }
+.veil.on { opacity: 1; }
+.veil-note { position: fixed; bottom: 1.2rem; left: 50%; transform: translateX(-50%); z-index: 66; font-size: 0.7rem; letter-spacing: 0.08em; color: var(--patina-soft); background: oklch(0.16 0.012 48 / 0.9); border: 1px solid var(--patina-deep); border-radius: 999px; padding: 0.5rem 1rem; opacity: 0; transition: opacity 0.45s; pointer-events: none; white-space: nowrap; }
+.veil-note.on { opacity: 1; }
