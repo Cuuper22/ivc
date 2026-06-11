@@ -93,9 +93,52 @@ window.IVC = (function () {
     { n: 1, label: "Structural findings", verified: true }
   ];
 
+  /* ---- A century of attempts (real events) --------------------------- */
+  var TIMELINE = [
+    { y: "1875", t: "The first seal", d: "Alexander Cunningham publishes a Harappan seal. Nobody knows what civilization it belongs to." },
+    { y: "1924", t: "A civilization announced", d: "John Marshall reveals the Indus Valley Civilization to the world. The script becomes a famous unsolved problem overnight." },
+    { y: "1953", t: "Linear B falls", d: "Ventris cracks Mycenaean Linear B, and Blegen's tripod tablet confirms it. The gold standard for proof: prediction, not assertion." },
+    { y: "1964", t: "The Soviet computers", d: "Knorozov's team runs the first computer analyses, arguing the script is structured like Dravidian. Suggestive, never proven." },
+    { y: "1977", t: "The concordance", d: "Iravatham Mahadevan publishes his 417-sign concordance, still the backbone of corpus work today." },
+    { y: "1994", t: "Parpola's synthesis", d: "Asko Parpola's 'Deciphering the Indus Script' assembles the Dravidian case. Influential, unconfirmed." },
+    { y: "2004", t: "Is it writing at all?", d: "Farmer, Sproat and Witzel argue the signs may not encode language. The field's null hypothesis gets teeth." },
+    { y: "2009", t: "Entropy fights back", d: "Rao et al. answer with conditional entropy in Science. The debate is still open today, by design." },
+    { y: "2022", t: "Linear Elamite, contested", d: "Desset's team claims its neighbor-script deciphered. Top journal, mixed reception: venue is not validation." },
+    { y: "2025", t: "The million-dollar prize", d: "Tamil Nadu announces the Iravatham Mahadevan Prize for a verified decipherment. Unclaimed." },
+    { y: "2026", t: "One brick, earned", d: "This project accepts its first structural finding after 10,000-shuffle forger tests and source-image binding. Zero readings claimed." }
+  ];
+
+  /* ---- The graveyard: real retracted claims from claims.json --------- */
+  // Plain-language cause of death for a representative set; total is 26.
+  var GRAVES = [
+    { id: "all_002_y_are_endings", title: "“Everything after 002 is an ending”", death: "Too broad. The skeptic pass found continuing rows; the clean version survives only inside one narrow branch." },
+    { id: "internal_only_effective_unicity_gives_language_family", title: "“Cryptographic unicity can name the language”", death: "Retracted in-house: internal consistency alone cannot identify a language family. The same logic underlies famous external claims." },
+    { id: "meluhha_site_overlap_as_external_anchor", title: "“Meluhha site overlap anchors the script”", death: "Geographic overlap is context, not an anchor. No object carried both readable text and bound Indus signs." },
+    { id: "gadd_ur_accession_bridge_micro_bilingual", title: "“A micro-bilingual at Ur”", death: "The museum accession chain did not bind the cuneiform context to the Indus signs. The bridge dissolved on inspection." },
+    { id: "bm120573_as_external_phonetic_anchor", title: "“BM 120573 gives a phonetic anchor”", death: "The object is real; the phonetic bridge was not. Killed at source normalization." },
+    { id: "brahmi_shape_descent_nearest_neighbors", title: "“Brahmi shapes descend from Indus signs”", death: "Nearest-neighbor shape matching could not beat impostor forgers fed with unrelated scripts." },
+    { id: "object_level_onomastic_value_attempts", title: "“We can read names off objects”", death: "Name-reading attempts failed the forger gate. No sound value survived." },
+    { id: "directionality_source_visible_and_overlap_support", title: "“Reading direction, proven from photos”", death: "Six packet versions tried. Every route stayed catalog-mediated; none earned blind source-visible support." }
+  ];
+  var GRAVES_TOTAL = 26;
+
+  /* ---- The artifact gallery: real corpus rows ------------------------ */
+  // text: real numeric sign rows from the project's metadata layer.
+  var SEALS = [
+    { obj: "M-376",  site: "Mohenjo-daro", row: "strict witness", text: ["002","861","533","717"], status: "verified", note: "One of the two source-visible witnesses behind the accepted terminal-tail finding." },
+    { obj: "M-391",  site: "Mohenjo-daro", row: "strict witness", text: ["002","861","533","717"], status: "verified", note: "The second witness. Copy-family collapse was tested and rejected: these are independent." },
+    { obj: "M-71",   site: "Mohenjo-daro", row: "strict row",     text: ["032","002","390","095"], status: "strict", note: "The one strict source-visible 095-closure row. A second witness would promote the branch." },
+    { obj: "H-1993", site: "Harappa",      row: "744.2",          text: ["740","000","220","004","002","390","095"], status: "gated", note: "The would-be second 095 witness. Its plates sit in the purchase-gated CISI 3.1 volume." },
+    { obj: "4237.1", site: "Dholavira",    row: "Acc. 8758",      text: ["151","032","388","002","390","705"], status: "gated", note: "A six-sign unicorn seal known from an OCR mirror, not yet bound to a photograph." },
+    { obj: "M-1825", site: "Mohenjo-daro", row: "BJ25710",        text: ["157","031","002","390","705"], status: "gated", note: "Above the public plate range; the same gated supplement as H-1993 should hold it." },
+    { obj: "3335.1", site: "unknown",      row: "no catalogue id", text: ["740","205","032","002","390","590","032"], status: "open", note: "Unprovenanced; an old note says only 'private collection'. Batch 041's lead: the CISI untraced-objects volumes." },
+    { obj: "29 tablets", site: "Harappa", row: "register control", text: ["520","240","002","405","501"], status: "context", note: "The repeated Harappa tablet formula used as an adversarial control: 29 of 32 rows in its lane carry this exact text." }
+  ];
+
   return {
     GLYPHS: GLYPHS, GLYPH_KEYS: GLYPH_KEYS,
     SITES: SITES, TRADE: TRADE,
-    BRANCH: BRANCH, PUZZLE: PUZZLE, LEDGER: LEDGER
+    BRANCH: BRANCH, PUZZLE: PUZZLE, LEDGER: LEDGER,
+    TIMELINE: TIMELINE, GRAVES: GRAVES, GRAVES_TOTAL: GRAVES_TOTAL, SEALS: SEALS
   };
 })();
