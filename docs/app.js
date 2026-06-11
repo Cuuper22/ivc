@@ -393,4 +393,144 @@
     }
   })();
 
+  /* ---- LAMP CURSOR (desktop, motion-allowed only) -------------------- */
+  (function () {
+    if (reduce || !window.matchMedia("(pointer: fine)").matches) return;
+    var lamp = h("div", { class: "lamp", "aria-hidden": "true" });
+    document.body.appendChild(lamp);
+    var x = innerWidth / 2, y = innerHeight / 2, tx = x, ty = y, big = false, shown = false;
+    document.addEventListener("pointermove", function (e) {
+      tx = e.clientX; ty = e.clientY;
+      if (!shown) { shown = true; lamp.classList.add("on"); }
+      var t = e.target.closest && e.target.closest("a,button,.bnode,.site,.seal,.grave,[tabindex]");
+      if (!!t !== big) { big = !!t; lamp.classList.toggle("big", big); }
+    }, { passive: true });
+    document.addEventListener("pointerleave", function () { lamp.classList.remove("on"); shown = false; });
+    (function loop() {
+      x += (tx - x) * 0.22; y += (ty - y) * 0.22;
+      lamp.style.transform = "translate(" + x + "px," + y + "px)";
+      requestAnimationFrame(loop);
+    })();
+  })();
+
+  /* ---- TIMELINE: a century of attempts ------------------------------- */
+  (function () {
+    var host = document.getElementById("timeline"); if (!host) return;
+    var track = h("div", { class: "tl-track" });
+    D.TIMELINE.forEach(function (ev, i) {
+      track.appendChild(h("article", { class: "tl-item" + (i === D.TIMELINE.length - 1 ? " tl-now" : ""), style: "--i:" + i }, [
+        h("span", { class: "tl-year mono", text: ev.y }),
+        h("span", { class: "tl-tick", "aria-hidden": "true" }),
+        h("h3", { text: ev.t }),
+        h("p", { text: ev.d })
+      ]));
+    });
+    host.appendChild(track);
+    var down = false, sx = 0, sl = 0;
+    host.addEventListener("pointerdown", function (e) { down = true; sx = e.clientX; sl = host.scrollLeft; host.classList.add("grab"); });
+    window.addEventListener("pointerup", function () { down = false; host.classList.remove("grab"); });
+    window.addEventListener("pointermove", function (e) { if (down) host.scrollLeft = sl - (e.clientX - sx); });
+    whenVisible(host, function () { host.classList.add("drawn"); }, 0.2);
+  })();
+
+  /* ---- GRAVEYARD: the retracted claims ------------------------------- */
+  (function () {
+    var host = document.getElementById("graves"); if (!host) return;
+    D.GRAVES.forEach(function (g, i) {
+      var card = h("button", { class: "grave", style: "--i:" + i, "aria-expanded": "false" }, [
+        h("span", { class: "grave-rip mono", text: "retracted" }),
+        h("h3", { text: g.title }),
+        h("p", { class: "grave-death", text: g.death }),
+        h("span", { class: "grave-id mono", text: g.id })
+      ]);
+      card.addEventListener("click", function () {
+        var open = card.classList.toggle("open");
+        card.setAttribute("aria-expanded", String(open));
+      });
+      host.appendChild(card);
+    });
+    whenVisible(host, function () { host.classList.add("drawn"); }, 0.15);
+  })();
+
+  /* ---- SEAL GALLERY: real corpus rows as tilting clay seals ---------- */
+  (function () {
+    var host = document.getElementById("seals"); if (!host) return;
+    var fine = window.matchMedia("(pointer: fine)").matches;
+    D.SEALS.forEach(function (sl, i) {
+      var band = s("svg", { viewBox: "0 0 " + (sl.text.length * 40) + " 48", class: "seal-band", "aria-hidden": "true" });
+      sl.text.forEach(function (code, j) {
+        var key = D.GLYPH_KEYS[(parseInt(code, 10) || j) % D.GLYPH_KEYS.length];
+        var g = s("g", { transform: "translate(" + (j * 40 + 4) + ",6) scale(0.56)", class: "seal-glyph" });
+        g.appendChild(s("path", { d: D.GLYPHS[key] }));
+        band.appendChild(g);
+      });
+      var card = h("article", { class: "seal is-" + sl.status, style: "--i:" + i, tabindex: "0" }, [
+        h("div", { class: "seal-face" }, [
+          band,
+          h("div", { class: "seal-codes mono", text: "+" + sl.text.join("-") + "+" }),
+          h("div", { class: "seal-meta" }, [
+            h("b", { text: sl.obj }),
+            h("span", { class: "mono", text: sl.site + " · " + sl.row })
+          ]),
+          h("span", { class: "seal-status mono", text: sl.status })
+        ]),
+        h("p", { class: "seal-note", text: sl.note })
+      ]);
+      if (fine && !reduce) {
+        var face = card.querySelector(".seal-face");
+        card.addEventListener("pointermove", function (e) {
+          var r = card.getBoundingClientRect();
+          var px = (e.clientX - r.left) / r.width - 0.5, py = (e.clientY - r.top) / r.height - 0.5;
+          face.style.transform = "rotateX(" + (-py * 9) + "deg) rotateY(" + (px * 11) + "deg)";
+        });
+        card.addEventListener("pointerleave", function () { face.style.transform = ""; });
+      }
+      host.appendChild(card);
+    });
+    whenVisible(host, function () { host.classList.add("drawn"); }, 0.12);
+  })();
+
+  /* ---- EASTER EGG: type "dig" anywhere ------------------------------- */
+  (function () {
+    if (reduce) return;
+    var buf = "", veil = null;
+    document.addEventListener("keydown", function (e) {
+      if (e.target && /input|textarea|select/i.test(e.target.tagName)) return;
+      if (e.key === "Escape" && veil) { off(); return; }
+      buf = (buf + (e.key || "").toLowerCase()).slice(-3);
+      if (buf === "dig") { veil ? off() : on(); buf = ""; }
+    });
+    function on() {
+      veil = h("div", { class: "veil", "aria-hidden": "true" });
+      var note = h("div", { class: "veil-note mono", text: "site lamp on — move to survey · type DIG or press ESC to stop digging" });
+      veil._note = note;
+      document.body.appendChild(veil);
+      document.body.appendChild(note);
+      document.addEventListener("pointermove", track, { passive: true });
+      requestAnimationFrame(function () { veil.classList.add("on"); note.classList.add("on"); });
+    }
+    function off() {
+      document.removeEventListener("pointermove", track);
+      if (veil) {
+        var v = veil, n = veil._note; veil = null;
+        v.classList.remove("on"); n.classList.remove("on");
+        setTimeout(function () { v.remove(); n.remove(); }, 450);
+      }
+    }
+    function track(e) {
+      if (veil) { veil.style.setProperty("--lx", e.clientX + "px"); veil.style.setProperty("--ly", e.clientY + "px"); }
+    }
+  })();
+
+  /* ---- console gift -------------------------------------------------- */
+  try {
+    console.log(
+      "%c  +002-861-533-717+  %c\n" +
+      "One structure earned. Zero readings claimed.\n" +
+      "Every gate, every retraction, every dead end: github.com/Cuuper22/ivc\n" +
+      "(psst - type the word 'dig' on the page.)",
+      "font-family:monospace;font-size:14px;padding:6px 10px;background:#143;color:#7fd9cb;border-radius:6px", ""
+    );
+  } catch (e) {}
+
 })();
