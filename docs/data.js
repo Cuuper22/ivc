@@ -125,9 +125,9 @@ window.IVC = (function () {
   /* ---- The artifact gallery: real corpus rows ------------------------ */
   // text: real numeric sign rows from the project's metadata layer.
   var SEALS = [
-    { obj: "M-376",  site: "Mohenjo-daro", row: "strict witness", text: ["002","861","533","717"], status: "verified", note: "One of the two source-visible witnesses behind the accepted terminal-tail finding." },
-    { obj: "M-391",  site: "Mohenjo-daro", row: "strict witness", text: ["002","861","533","717"], status: "verified", note: "The second witness. Copy-family collapse was tested and rejected: these are independent." },
-    { obj: "M-71",   site: "Mohenjo-daro", row: "strict row",     text: ["032","002","390","095"], status: "strict", note: "The one strict source-visible 095-closure row. A second witness would promote the branch." },
+    { obj: "M-376",  site: "Mohenjo-daro", row: "strict witness", text: ["740","100","176","002","861","533","717"], tail: 4, status: "verified", note: "Witness one: a seven-sign inscription. Only the glowing tail is shared with M-391; the rest is a different text entirely." },
+    { obj: "M-391",  site: "Mohenjo-daro", row: "strict witness", text: ["405","845","686","740","793","003","233","805","002","861","533","717"], tail: 4, status: "verified", note: "Witness two: twelve signs, different from M-376 in every position except the ending. Copy-family collapse was tested and rejected: different plate, length, dimensions, boss, and pre-tail context." },
+    { obj: "M-71",   site: "Mohenjo-daro", row: "strict row",     text: ["151","279","142","002","390","095"], status: "strict", note: "The one strict source-visible 095-closure row. A second witness would promote the branch." },
     { obj: "H-1993", site: "Harappa",      row: "744.2",          text: ["740","000","220","004","002","390","095"], status: "gated", note: "The would-be second 095 witness. Its plates sit in the purchase-gated CISI 3.1 volume." },
     { obj: "4237.1", site: "Dholavira",    row: "Acc. 8758",      text: ["151","032","388","002","390","705"], status: "gated", note: "A six-sign unicorn seal known from an OCR mirror, not yet bound to a photograph." },
     { obj: "M-1825", site: "Mohenjo-daro", row: "BJ25710",        text: ["157","031","002","390","705"], status: "gated", note: "Above the public plate range; the same gated supplement as H-1993 should hold it." },

@@ -457,17 +457,24 @@
     var host = document.getElementById("seals"); if (!host) return;
     var fine = window.matchMedia("(pointer: fine)").matches;
     D.SEALS.forEach(function (sl, i) {
+      var cut = sl.tail ? sl.text.length - sl.tail : -1;
       var band = s("svg", { viewBox: "0 0 " + (sl.text.length * 40) + " 48", class: "seal-band", "aria-hidden": "true" });
       sl.text.forEach(function (code, j) {
         var key = D.GLYPH_KEYS[(parseInt(code, 10) || j) % D.GLYPH_KEYS.length];
-        var g = s("g", { transform: "translate(" + (j * 40 + 4) + ",6) scale(0.56)", class: "seal-glyph" });
+        var g = s("g", { transform: "translate(" + (j * 40 + 4) + ",6) scale(0.56)", class: "seal-glyph" + (cut >= 0 && j >= cut ? " tail" : "") });
         g.appendChild(s("path", { d: D.GLYPHS[key] }));
         band.appendChild(g);
       });
+      var codes = cut >= 0
+        ? h("div", { class: "seal-codes mono" }, [
+            h("span", { text: "+" + sl.text.slice(0, cut).join("-") + "-" }),
+            h("span", { class: "tailseg", text: sl.text.slice(cut).join("-") + "+" })
+          ])
+        : h("div", { class: "seal-codes mono", text: "+" + sl.text.join("-") + "+" });
       var card = h("article", { class: "seal is-" + sl.status, style: "--i:" + i, tabindex: "0" }, [
         h("div", { class: "seal-face" }, [
           band,
-          h("div", { class: "seal-codes mono", text: "+" + sl.text.join("-") + "+" }),
+          codes,
           h("div", { class: "seal-meta" }, [
             h("b", { text: sl.obj }),
             h("span", { class: "mono", text: sl.site + " · " + sl.row })

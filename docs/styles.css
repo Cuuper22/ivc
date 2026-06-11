@@ -369,8 +369,10 @@ p { text-wrap: pretty; }
   display: grid; gap: 0.7rem; transition: transform 0.25s var(--ease-quart); transform-style: preserve-3d; position: relative; }
 .seal-band { width: 100%; height: auto; max-height: 54px; }
 .seal-glyph path { fill: none; stroke: oklch(0.88 0.02 75 / 0.85); stroke-width: 3.4; stroke-linecap: round; stroke-linejoin: round; }
-.seal.is-verified .seal-glyph path { stroke: var(--patina); }
-.seal-codes { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.04em; }
+.seal-glyph.tail path { stroke: var(--patina); }
+.seal.is-verified .seal-band { filter: drop-shadow(0 0 6px oklch(0.7 0.1 178 / 0.25)); }
+.seal-codes { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.04em; overflow-wrap: anywhere; }
+.seal-codes .tailseg { color: var(--patina); }
 .seal-meta { display: flex; align-items: baseline; justify-content: space-between; gap: 0.8rem; }
 .seal-meta b { font-family: var(--font-display); color: var(--ink); font-size: 1.05rem; }
 .seal-meta span { font-size: 0.66rem; color: var(--faint); }
