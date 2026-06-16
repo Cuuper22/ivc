@@ -1,0 +1,23 @@
+# Project policy: research intermediaries are tracked and pushed public (the built
+# db/ivc.sqlite included). PII inside files is removed by tools/redact_pii.mjs, not
+# by ignore rules. The ONLY things excluded here are credentials / tokens / keys.
+
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+id_rsa
+id_ed25519
+.netrc
+.npmrc
+**/credentials.json
+**/*.credentials
+**/service-account*.json
+aws.json
+gcp-key*.json
+
+# transient SQLite sidecars (the .sqlite itself IS committed)
+db/*.sqlite-wal
+db/*.sqlite-shm
+db/*.sqlite-journal

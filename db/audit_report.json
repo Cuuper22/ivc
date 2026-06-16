@@ -1,0 +1,69 @@
+{
+  "db": "db/ivc.sqlite",
+  "data_dir": "research/data",
+  "data_files_cataloged": 4779,
+  "counts": {
+    "sign_system": 5,
+    "sign": 1782,
+    "artifact": 4075,
+    "witness": 5858,
+    "evidence_ref": 5,
+    "crosswalk_edge": 1085,
+    "namespace_gate": 4,
+    "review_event": 2,
+    "claim": 29,
+    "claim_evidence": 203,
+    "data_file": 4779
+  },
+  "issues": [
+    {
+      "severity": "warning",
+      "code": "evidence_path_missing",
+      "obj": "evidence_ref",
+      "ref": "ref_crosswalk_alignment_pairs",
+      "message": "local_path=data/open_prototype/reports/crosswalk_alignment_pairs.csv not found"
+    },
+    {
+      "severity": "warning",
+      "code": "evidence_path_missing",
+      "obj": "evidence_ref",
+      "ref": "ref_crosswalk_lipi_to_mayig_candidates",
+      "message": "local_path=data/open_prototype/reports/crosswalk_lipi_to_mayig_candidates.csv not found"
+    },
+    {
+      "severity": "warning",
+      "code": "evidence_path_missing",
+      "obj": "evidence_ref",
+      "ref": "ref_crosswalk_mayig_to_lipi_candidates",
+      "message": "local_path=data/open_prototype/reports/crosswalk_mayig_to_lipi_candidates.csv not found"
+    },
+    {
+      "severity": "warning",
+      "code": "evidence_path_missing",
+      "obj": "evidence_ref",
+      "ref": "ref_mayig_commit",
+      "message": "local_path=data/open_prototype/mayig/commit.json not found"
+    },
+    {
+      "severity": "warning",
+      "code": "evidence_path_missing",
+      "obj": "evidence_ref",
+      "ref": "ref_lipi_metadata_filtered",
+      "message": "local_path=data/open_prototype/lipi/metadata_filtered.csv not found"
+    },
+    {
+      "severity": "warning",
+      "code": "claim_evidence_missing",
+      "obj": "claim_evidence",
+      "ref": null,
+      "message": "54 local claim-evidence path(s) do not exist on disk"
+    },
+    {
+      "severity": "info",
+      "code": "url_evidence",
+      "obj": "claim_evidence",
+      "ref": null,
+      "message": "5 claim-evidence entries are URLs (not checked)"
+    }
+  ]
+}
