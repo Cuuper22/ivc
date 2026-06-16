@@ -21,3 +21,7 @@ gcp-key*.json
 db/*.sqlite-wal
 db/*.sqlite-shm
 db/*.sqlite-journal
+
+# Python build cruft (not research data)
+__pycache__/
+*.pyc
