@@ -1,0 +1,76 @@
+{
+  "date": "2026-07-12",
+  "status": "complete_negative_calibration_result",
+  "run_id": "ivc__micro__seed20260712",
+  "run_root": "E:\\ivc_slm_runs\\ivc_from_scratch_local_integrated_20260712__20260712T204514Z",
+  "model_summary_sha256": "a8c7e320a7018fc57c1ea3540f622a90cf6c891ebd0a0cc66f5ed0f0ad11f605",
+  "input": {
+    "path": "research/data/open_prototype/lipi/metadata_filtered.csv",
+    "sha256": "b3e2a94efdf70eaa893bbbbd35fd057b53f766c82823a3efb8ee37f9365311fe",
+    "scope": "complete numeric text, no 000, length 2-14, real CISI ID, exact R/L or L/R metadata",
+    "exact_collapsed_sequences": 1796,
+    "sign_tokens": 8205,
+    "unique_signs": 571,
+    "scope_difference_from_20260524_prototype": [
+      "M-207 is excluded because +892-831 lacks the required closing plus delimiter despite its older readiness label.",
+      "H-23 is excluded because its direction field is the malformed case variant R/l rather than an allowed exact direction value."
+    ]
+  },
+  "model": {
+    "name": "micro",
+    "parameter_count": 886850,
+    "layers": 4,
+    "width": 128,
+    "heads": 4,
+    "ffn": 512,
+    "initialization": "random canonical shared body independent of vocabulary size",
+    "epochs_completed": 120,
+    "optimizer_steps": 360,
+    "masked_positions_seen": 143207,
+    "best_epoch": 120,
+    "runtime_seconds": 734.985
+  },
+  "split": {
+    "train_sequences": 663,
+    "validation_sequences": 139,
+    "ordinary_test_sequences": 139,
+    "forced_hypothesis_test_sequences": 855,
+    "forced_patterns": ["002-861", "002-390"],
+    "policy": "exact sequences, one-edit components, and catalogue objects are disjoint; any component touching a forced pattern is entirely held out"
+  },
+  "ordinary_test": {
+    "masked_positions": 739,
+    "mean_negative_log_likelihood": 4.395339656101996,
+    "perplexity": 81.07216274153765,
+    "top1": 0.19891745602165087,
+    "top5": 0.38565629228687415,
+    "multiclass_brier": 0.9112828400525415,
+    "unigram_top1": 0.09201623815967523,
+    "unigram_top5": 0.22868741542625168,
+    "bidirectional_bigram_top1": 0.2354533152909337,
+    "bidirectional_bigram_top5": 0.456021650879567,
+    "model_minus_bigram_top1": -0.03653585926928284,
+    "model_minus_bigram_top5": -0.07036535859269287
+  },
+  "forced_hypothesis_test": {
+    "masked_positions": 3047,
+    "mean_negative_log_likelihood": 4.188227714536071,
+    "top1": 0.22185756481785363,
+    "top5": 0.4171316048572366,
+    "interpretation": "descriptive only; no matched baseline or multi-seed/control result is available from the local run"
+  },
+  "secondary_metrics": {
+    "stored_order_win_share_excluding_palindromes_and_authentic_reverse_pairs": 0.8913043478260869,
+    "trained_authenticity_head_reversal_win_share": 0.9130434782608695,
+    "interpretation": "not claim-eligible without the fixed multi-seed learned controls and transfer comparisons"
+  },
+  "decision": "The micro SLM is worse than the bidirectional bigram baseline on ordinary held-out top-1 and top-5 restoration. The local run validates the instrument but adds no structural finding and cannot support a reading, sign value, meaning, or language claim.",
+  "claim_ledger_increment": {
+    "translations": 0,
+    "phonetic_values": 0,
+    "sign_meanings": 0,
+    "language_identification": 0,
+    "structural_findings": 0,
+    "external_anchors": 0
+  }
+}

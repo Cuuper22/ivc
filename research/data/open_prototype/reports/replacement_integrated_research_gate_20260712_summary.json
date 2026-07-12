@@ -1,0 +1,55 @@
+{
+  "date": "2026-07-12",
+  "status": "pass_integrated_execution_and_evidence_boundaries",
+  "substantive_operations": [
+    "closed the 158-806 / Phyt queue item by support/source/form-motif adjudication",
+    "parked the strict local-220 / Mayig-P050 bridge on unresolved source detail",
+    "trained and exhaustively evaluated one leakage-blocked random-init micro SLM"
+  ],
+  "vector4": {
+    "decision": "closed_not_claim_eligible_support_below_floor_source_independence_unresolved",
+    "exact_text_families": 3,
+    "conservative_form_motif_sensitivity_strata": 2,
+    "summary": "research/data/open_prototype/reports/vector4_158806_source_family_gate_20260712_summary.json"
+  },
+  "p050_local220": {
+    "outcome": "PARK",
+    "same_position_source_bound": 4,
+    "strict_identity_usable": 0,
+    "summary": "research/data/open_prototype/reports/replacement_p050_local220_strict_fish_family_source_gate_20260712_summary.json"
+  },
+  "local_slm": {
+    "run_root": "E:\\ivc_slm_runs\\ivc_from_scratch_local_integrated_20260712__20260712T204514Z",
+    "run_id": "ivc__micro__seed20260712",
+    "parameter_count": 886850,
+    "forced_hypothesis_holdout_records": 855,
+    "test_records": 994,
+    "test_positions": 739,
+    "masked_nll": 4.395339656101996,
+    "masked_top1": 0.19891745602165087,
+    "masked_top5": 0.38565629228687415,
+    "multiclass_brier": 0.9112828400525415,
+    "stored_order_win_share": 0.8913043478260869,
+    "authentic_over_reversed_share": 0.9130434782608695,
+    "elapsed_seconds": 734.9849999999988,
+    "estimated_compute_cost_usd": 0.0
+  },
+  "claim_ledger_increment": {
+    "translations": 0,
+    "phonetic_values": 0,
+    "sign_meanings": 0,
+    "language_identification": 0,
+    "structural_findings": 0,
+    "external_anchors": 0
+  },
+  "evidence_boundary": "Execution success validates the instrument and closes two annotations; it does not promote a model metric, crosswalk, sign meaning, or reading.",
+  "git": {
+    "commit": "211bd56205fad381e97435b31c40b7ed4c2d5595",
+    "branch": "codex/ivc-slm-exploration"
+  },
+  "output_hashes": {
+    "vector4_summary": "8d6cca17cbf4635afdbe1d18870ba8dc6d27e7d3d7eeac41f9a76a7046c485fc",
+    "p050_summary": "c4d4d8e4f3122c72dfe56cb83e49f2313618cfb9522d914b166232d693971c31",
+    "model_summary": "a8c7e320a7018fc57c1ea3540f622a90cf6c891ebd0a0cc66f5ed0f0ad11f605"
+  }
+}

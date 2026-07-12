@@ -1,0 +1,6 @@
+outcome,criterion,threshold,observed,satisfied
+PASS,same-position object-side bindings,>=3 independent artifacts,4,true
+PASS,strict source-visible P050 token boxes,>=3 independent primary-catalog boxes with isolated target and absent decoration visibly resolved,0,false
+PASS,contradictory strict witnesses,0,0,true
+PARK,source-position pressure without strict identity,">=1 same-position binding, 0 contradictions, and PASS incomplete",same_position=4; strict=0; contradictions=0,true
+FAIL,source contradiction or no source-bound target,>=1 contradiction or 0 same-position bindings,same_position=4; contradictions=0,false

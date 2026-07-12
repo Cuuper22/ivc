@@ -1,0 +1,147 @@
+{
+  "date": "2026-07-12",
+  "status": "park_p050_local220_same_position_pressure_strict_identity_not_earned",
+  "outcome": "PARK",
+  "research_question": "Do exact same-object, same-side, same-position source token boxes earn a strict local Lipi 220 = Mayig P050 crosswalk?",
+  "answer": "The pinned evidence earns repeated same-position and broad fish/leaf-family pressure, but not strict identity: every panel is a low-resolution cached derivative and the absence of internal decoration is unresolved.",
+  "feature": {
+    "path": "evidence/tmp/mayig_feature_namespace_probe/repo/indus-valley-script-corpus-ad2f1e218a34b8c33c57de0d6cb8d99272765bbb/features/P050.json",
+    "sha256": "a3fdea36408b3d287b5822c0bbe95ea82117b541f3c3f159682df752b29bbd11",
+    "id": "P050",
+    "description": "Fish with no other decoration",
+    "parpola_graphemes": [
+      "V177",
+      "V517"
+    ],
+    "wells_graphemes": [
+      "W220"
+    ],
+    "mahadevan_graphemes": [
+      "M059"
+    ],
+    "use_limit": "namespace metadata only; these mappings do not themselves prove sign identity"
+  },
+  "inputs": {
+    "lipi_metadata": {
+      "path": "research/data/open_prototype/lipi/metadata_filtered.csv",
+      "sha256": "b3e2a94efdf70eaa893bbbbd35fd057b53f766c82823a3efb8ee37f9365311fe"
+    },
+    "crosswalk_pairs": {
+      "path": "research/data/open_prototype/reports/crosswalk_alignment_pairs.csv",
+      "sha256": "935ad5b75b61ac8f7fc5e736dda109475b23a29b510aa0d61577c3ec34971473"
+    },
+    "p050_feature": {
+      "path": "evidence/tmp/mayig_feature_namespace_probe/repo/indus-valley-script-corpus-ad2f1e218a34b8c33c57de0d6cb8d99272765bbb/features/P050.json",
+      "sha256": "a3fdea36408b3d287b5822c0bbe95ea82117b541f3c3f159682df752b29bbd11"
+    },
+    "mayig_records": [
+      {
+        "path": "evidence/tmp/mayig_feature_namespace_probe/repo/indus-valley-script-corpus-ad2f1e218a34b8c33c57de0d6cb8d99272765bbb/corpus/m001_m099/m037.json",
+        "sha256": "095796a876437386c6441496f191272212d55a0476243f9f0bb73024126f8e58"
+      },
+      {
+        "path": "evidence/tmp/mayig_feature_namespace_probe/repo/indus-valley-script-corpus-ad2f1e218a34b8c33c57de0d6cb8d99272765bbb/corpus/m100_m199/m124.json",
+        "sha256": "dd559ea3f3339cf1454f9aaef9d12ca22b407db479d4861500c9acfcc3528937"
+      },
+      {
+        "path": "evidence/tmp/mayig_feature_namespace_probe/repo/indus-valley-script-corpus-ad2f1e218a34b8c33c57de0d6cb8d99272765bbb/corpus/m100_m199/m151.json",
+        "sha256": "e294c0298e82c46ddbb65717a5a7c08111f60acb0617e7b8150138756be06af6"
+      },
+      {
+        "path": "evidence/tmp/mayig_feature_namespace_probe/repo/indus-valley-script-corpus-ad2f1e218a34b8c33c57de0d6cb8d99272765bbb/corpus/m100_m199/m174.json",
+        "sha256": "bdd3fc372872618e64c86838eff5264f8909879ee172dd1b362c0da921e9bd07"
+      }
+    ],
+    "source_images": [
+      {
+        "path": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-37_a.jpg",
+        "sha256": "f496db9db2889e46848e714acbb9836b71f0dd7637496d19b54661f0211ab349"
+      },
+      {
+        "path": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-124_a.jpg",
+        "sha256": "e77930e4099d357d6cd0a25a14113f1f6777f1c4eb93e7086b1f7275656247cf"
+      },
+      {
+        "path": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-151_a.jpg",
+        "sha256": "3f6ad3cacb63c5791a188d2d019c98713ecef99ef0bf1f7486f137d796585901"
+      },
+      {
+        "path": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-174_a.jpg",
+        "sha256": "403aa87538601982f8481d2ccd5d6781ab528774d92bb1c34d7e1f4013f3388d"
+      }
+    ]
+  },
+  "counts": {
+    "candidate_witnesses": 4,
+    "same_position_source_bound": 4,
+    "distinct_same_position_artifacts": 4,
+    "broad_family_usable": 4,
+    "strict_identity_usable": 0,
+    "distinct_strict_artifacts": 0,
+    "contradictions": 0,
+    "accepted_crosswalks": 0,
+    "accepted_values": 0,
+    "accepted_phonetic_readings": 0,
+    "accepted_translations": 0
+  },
+  "criteria": [
+    {
+      "outcome": "PASS",
+      "criterion": "same-position object-side bindings",
+      "threshold": ">=3 independent artifacts",
+      "observed": 4,
+      "satisfied": "true"
+    },
+    {
+      "outcome": "PASS",
+      "criterion": "strict source-visible P050 token boxes",
+      "threshold": ">=3 independent primary-catalog boxes with isolated target and absent decoration visibly resolved",
+      "observed": 0,
+      "satisfied": "false"
+    },
+    {
+      "outcome": "PASS",
+      "criterion": "contradictory strict witnesses",
+      "threshold": "0",
+      "observed": 0,
+      "satisfied": "true"
+    },
+    {
+      "outcome": "PARK",
+      "criterion": "source-position pressure without strict identity",
+      "threshold": ">=1 same-position binding, 0 contradictions, and PASS incomplete",
+      "observed": "same_position=4; strict=0; contradictions=0",
+      "satisfied": "true"
+    },
+    {
+      "outcome": "FAIL",
+      "criterion": "source contradiction or no source-bound target",
+      "threshold": ">=1 contradiction or 0 same-position bindings",
+      "observed": "same_position=4; contradictions=0",
+      "satisfied": "false"
+    }
+  ],
+  "accepted_now": [
+    "four exact Lipi/Mayig same-object same-position 220/P050 alignments are source-panel candidates",
+    "the four pinned token boxes are compatible with the broad fish/leaf neighborhood",
+    "the cached panels contain no observed contradiction to the candidate bridge"
+  ],
+  "not_accepted": [
+    "local Lipi 220 = Mayig P050 as a strict sign identity",
+    "local Lipi 220 = Parpola article sign no. 60",
+    "Mayig P050 = Parpola article sign no. 60",
+    "Wells W220 or Mahadevan M059 identity beyond Mayig namespace metadata",
+    "fish lexical value",
+    "phonetic value",
+    "language identity",
+    "translation"
+  ],
+  "blocking_evidence_gap": "At least three independently pinned primary-catalog object-side panels with isolated target boxes where the body outline and absence of internal decoration are visibly resolved. A clearly decorated or position-inconsistent strict witness fails the bridge.",
+  "outputs": {
+    "witnesses": "research/data/open_prototype/reports/replacement_p050_local220_strict_fish_family_source_gate_20260712_witnesses.csv",
+    "criteria": "research/data/open_prototype/reports/replacement_p050_local220_strict_fish_family_source_gate_20260712_criteria.csv",
+    "summary": "research/data/open_prototype/reports/replacement_p050_local220_strict_fish_family_source_gate_20260712_summary.json",
+    "neutral_contact_sheet": "research/data/open_prototype/reports/replacement_p050_local220_strict_fish_family_source_gate_20260712_token_boxes/replacement_p050_local220_strict_fish_family_source_gate_20260712_neutral_contact_sheet.png",
+    "token_box_directory": "research/data/open_prototype/reports/replacement_p050_local220_strict_fish_family_source_gate_20260712_token_boxes"
+  }
+}

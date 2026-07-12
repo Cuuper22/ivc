@@ -1,0 +1,56 @@
+{
+  "run_date": "2026-07-12",
+  "target": "158-806 / Phyt",
+  "operation": "support_source_and_form_motif_sensitivity_adjudication_of_the_existing_text_collapsed_queue_item",
+  "reran_targeted_nulls": false,
+  "object_rows": 7,
+  "exact_text_families": 3,
+  "conservative_form_motif_sensitivity_strata": 2,
+  "source_grade_text_families_locally_validated": 0,
+  "broad_scanner_support_floor": 5,
+  "pinned_text_only_support": 3,
+  "pinned_worst_fixed_pair_null_share": 0.0075,
+  "gates": {
+    "text_family_support_at_least_5": false,
+    "conservative_form_motif_sensitivity_strata_at_least_5": false,
+    "source_grade_panel_for_every_text_family": false,
+    "matched_iconographic_negative_packet_present": false
+  },
+  "decision": "closed_not_claim_eligible_support_below_floor_source_independence_unresolved",
+  "decision_reason": "The decisive failure is exact-text support 3 below the pre-existing floor 5. All witnesses are Harappan TAB:B rows, source-grade token-box coverage and matched iconographic negatives remain absent, and source independence is unresolved. Grouping them into two form/motif strata is a conservative sensitivity analysis, not proof of a common production source.",
+  "claim_ledger_increment": {
+    "translations": 0,
+    "phonetic_values": 0,
+    "sign_meanings": 0,
+    "language_identification": 0,
+    "structural_findings": 0,
+    "external_anchors": 0
+  },
+  "evidence_boundaries": [
+    "Form/motif grouping is a sensitivity analysis, not proof of common manufacture, copying, or production source.",
+    "Phyt is inherited source metadata, not a decoded semantic label.",
+    "The previous null result was a queue trigger, never an accepted sign meaning."
+  ],
+  "inputs": {
+    "lipi_scope_rows": {
+      "path": "research/data/open_prototype/reports/lipi_scope_rows.csv",
+      "sha256": "7aa0024af1e83fa9e8591fa1203b76932b735f681a794725a2a57a44f351fd0e"
+    },
+    "targeted_nulls": {
+      "path": "research/data/open_prototype/reports/vector4_targeted_context_nulls_20260531.csv",
+      "sha256": "f0dd7bdf6e23c579716661af932c3e5e70f77830f104fc3b7da38dbbffb6a85f"
+    },
+    "parpola_extraction": {
+      "path": "evidence/tmp/parpola_2019_bone_rods.txt",
+      "sha256": "d262404354ddcfa3f48ba97b0c3f069016ec8048c825fc4c701ff9ad0c00e0ce"
+    },
+    "kenoyer_meadow_extraction": {
+      "path": "evidence/tmp/h2148_h2100_h2152_110_route/kenoyer_meadow_2010_inscribed_objects_harappa.txt",
+      "sha256": "e8185dc51c2ed6f0a89e3491624a59e5ae6c36cbae5834df0253fdb1ac9c4594"
+    }
+  },
+  "outputs": {
+    "witnesses": "research/data/open_prototype/reports/vector4_158806_source_family_gate_20260712_witnesses.csv",
+    "summary": "research/data/open_prototype/reports/vector4_158806_source_family_gate_20260712_summary.json"
+  }
+}
