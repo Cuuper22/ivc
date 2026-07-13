@@ -101,9 +101,21 @@ Decision: `CLOSED_PHYSICAL_DIRECTION_PROMOTION_RETAIN_STORED_ORDER_STRUCTURE`.
 
 Detailed decision: `research/docs/effective_unicity_directionality_physical_orientation_closure_20260712.md`.
 
+## `FRAME700 034` size-tier falsification
+
+Decision: `CLOSE_034_OBJECT_SIZE_OR_METROLOGICAL_TIER_UNDER_CURRENT_LOCAL_EVIDENCE`.
+
+- The pre-registered test used 309 measured artifacts in 216 held-out source/formula groups, with the entire H-2218 through H-2239 series held out together.
+- Dimensions predict `034` above chance: grouped AUC 0.701087, bootstrap 95% interval [0.606806, 0.789030]. Both matched administrative-format and emblem/copy-family label shuffles rarely reach the observed AUC, at 0.001500 and 0.001000.
+- The size model does not beat the administrative-format baseline by a positive bootstrap margin: AUC difference interval [-0.010581, 0.134992].
+- On the clean H-series holdout, the model calls all 22 small tablets `034`, including the one true `033`: `034` recall 1.000000, non-`034` specificity 0, AUC 0.476190.
+- The surviving association is small-tablet form factor, not a subtype-specific numerical or metrological tier. No value, unit, quantity, commodity, or meaning is accepted.
+
+Detailed decision: `research/docs/frame700_034_size_tier_heldout_decision_20260712.md`.
+
 ## Next executable order
 
-1. Test one administrative/numerical hypothesis from complete local sources as a pre-registered held-out source/object-family prediction against matched administrative and emblem nulls; close it negative if it does not beat both.
+1. Test whether local `603` is the same graphic unit across the source-visible Harappa `740-603-240-060-692` slot and Mohenjo-daro post-`002-861-603` tails; if existing public panels cannot retokenize both contexts, close the bridge and move on rather than expanding another packet.
 
 ## Parked lanes
 
