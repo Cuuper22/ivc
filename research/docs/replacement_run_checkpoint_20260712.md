@@ -71,6 +71,7 @@ Artifacts:
 | M-20 | Both CISI views show the six vertical strokes represented by Mayig P147 P147, so the repeat is not an accidental duplicate. The strokes form one evenly spaced, unenclosed run, so the source does not fix a one-sign versus two-sign boundary. | Preserve one atomicity-ambiguous six-stroke region. Keep Lipi's seven-token and Mayig's eight-grapheme representations catalogue-level; neither becomes the source structural count. |
 | M-25 | All three CISI views show five bounded units, including two separately outlined grids where Mayig has P268 P268 and Lipi begins with one 617. This independently repeats the source-visible M-161 discrepancy. | Use five source units and keep the grids separate. Classify 617 as a recurrent pair-macro-or-suppressed-repeat problem; do not use the Lipi 617-243 edge as literal sign adjacency. |
 | M-45 | Both CISI views show seven bounded units and two separately outlined initial grids, matching Mayig P268 P268 where Lipi has one initial 617. This is the third independent source-confirmed instance with no checked counterexample. | Use seven source units and expand 617 to two grid positions on M-45. Across the five overlap rows, 617-to-P268-P268 is now a strong catalogue-expansion candidate pending the two remaining source checks. |
+| M-81 | All three CISI views show seven bounded units and an internal pair of separately outlined grids followed by another sign, matching Mayig P268 P268 where Lipi has one 617. | Use seven source units and expand 617 to two grid positions on M-81. The policy is now source-supported at both initial and internal positions in 4/5 overlap cases, with no checked counterexample. |
 
 These decisions tighten the usable corpus and crosswalk without adding a translation, value, meaning, language identification, external anchor, or accepted structural claim. The detailed panels, tables, gates, and object-level decisions remain the evidence record; this checkpoint carries only the synthesis.
 
@@ -134,7 +135,7 @@ Detailed decision: `research/docs/campaign_032_002_861_603_cross_context_graphic
 
 ## Next executable order
 
-1. Adjudicate M-81, the next clean `617` overlap case: test the two-grid expansion at an internal, noninitial sequence position and advance the current 3/5 source-confirmed policy candidate.
+1. Adjudicate M-4, the fifth and final exact `617` overlap case. If its source also shows the P268 pair, promote `617 -> two grid positions` as the complete-overlap normalization policy while keeping Lipi-only rows source-pending.
 
 ## Parked lanes
 
