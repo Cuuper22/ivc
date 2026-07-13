@@ -1,33 +1,39 @@
-# M-120 slash-compound source decision
+# M-120 slash-layout source correction
 
 Date: 2026-07-12 America/Los_Angeles
 
-Decision: `SOURCE_VISIBLE_SIX_UNIT_SEQUENCE_TREATS_858_SLASH_740_AS_ONE_COMPOUND_SLOT`.
+Decision: `SOURCE_VISIBLE_SEVEN_UNITS_SLASH_IS_2D_ASSOCIATION_MAYIG_OMITS_858`.
+
+This supersedes the earlier six-unit decision in this file. That decision counted only the six signs in the main inscription line and missed the detached diamond below it.
 
 ## Direct evidence
 
-- CISI 1 PDF page 77, printed page 41, labels both `M-120 A` and `M-120 a`. The source PDF SHA-256 is `47A4DA4227CFB7BAA56D6A561E25797225499D0EC54F5A702A82C67AB4746D4D`.
-- Both the impression and seal views show six independently bounded inscription units.
-- Lipi row `2647.1` stores `+858/740-100-585-741-840-346+`. It has six hyphen-delimited slots but reports `text length=7` and `signs=7` because the first slash compound is counted as two numeric components.
-- Mayig `M-120A` stores six graphemes: `P324 P009 P288 P325 P349 P044`.
+- Lipi row `2647.1`: `+858/740-100-585-741-840-346+`, reported text length 7, signs 7, direction `R/L`.
+- Mayig `M-120A`: `P324 P009 P288 P325 P349 P044`, grapheme count 6.
+- Mayig defines `P363` as a diamond containing two adjacent boxes on a short internal stem and mediates it to Wells `W858`. It mediates the main-line jar `P324` to `W740`.
+- CISI 1 PDF page 77 / printed page 41 publishes `M-120 A` and `M-120 a`.
+- Both views show six bounded signs in the main inscription line plus the `858` diamond on a detached lower line. The diamond has clear whitespace around it and neither touches nor overlaps the `740` jar.
 
-## Object-bound concordance
+The source-visible count is seven. The Lipi slash records a two-dimensional association, not a fused one-sign ligature. Mayig omits the detached `858` position.
 
-| Source slot | Lipi | Mayig | Source decision |
-| ---: | --- | --- | --- |
-| 1 | `858/740` | `P324` | One bounded jar-family glyph. Preserve the Lipi compound token; do not split it into sequential `858`, `740` signs or reduce it to `740`. |
-| 2 | `100` | `P009` | Same-object positional match only. |
-| 3 | `585` | `P288` | Same-object positional match only. |
-| 4 | `741` | `P325` | Same-object positional match only. |
-| 5 | `840` | `P349` | Same-object positional match only. |
-| 6 | `346` | `P044` | Same-object positional match only. |
+## Object-level normalization
 
-M-120's source-visible structural count is six. The Lipi fields `text length=7` and `signs=7` are component-count metadata for this row, not a literal count of sequential source units. M-120 may enter analyses that require only source-unit count if `858/740` remains an atomic compound token. It remains excluded from analyses that require resolved numeric sign identity at slot 1.
+- Preserve the six-sign main line as `740-100-585-741-840-346`.
+- Preserve a separate detached `858` / `P363-like` unit associated spatially with `740`.
+- Do not serialize `858/740` as either one source sign or an ordinary sequential `858-740` edge. The slash carries layout information.
+- A linear-only model must either encode the detached unit and its layout relation separately or exclude M-120 from adjacency calculations; inserting it into the main line would invent an order relation.
+- Normalize the Mayig object by attaching `<MISSING_DETACHED_P363_LIKE>` to the `P324` position at analysis level. Do not edit `m120.json` or either raw corpus.
 
-This decision does not accept `858/740 = P324`, any global crosswalk edge, a sign value, meaning, reading, language identification, or translation.
+## Research consequence
 
-## Source panels
+The queue label `slash_compound_count_policy_reconciles` is rejected for M-120. Lipi's reported count of seven is source-supported, while Mayig is incomplete for a secondary line/layout element. This is the first adjudicated case here where preserving two-dimensional layout, rather than choosing a longer linear tokenization, is required to avoid a false sequence.
+
+No global `858 = P363` edge, sign value, meaning, phonetic reading, language identification, translation, or decipherment claim is accepted.
+
+## Preserved evidence
 
 - `research/data/sign_crosswalk/source_panels/m120_slash_compound/M-120_impression_A_CISI1_pdf77_print41.png`, SHA-256 `D505326F02DEE47DF46F58C17D78B0EE609B152F00A712B779C7C2BD89DD68C4`.
 - `research/data/sign_crosswalk/source_panels/m120_slash_compound/M-120_seal_a_CISI1_pdf77_print41.png`, SHA-256 `412CD6C4EFF9F3E9908412A416F86723F2AE89E3505AFA15B601BA631D6C5433`.
-
+- CISI 1 PDF SHA-256: `47A4DA4227CFB7BAA56D6A561E25797225499D0EC54F5A702A82C67AB4746D4D`.
+- Mayig `m120.json`: `88EB3E69343B04898FE6148607178681C556CDA05F861FD953D1AAFD43BF92C7`.
+- Mayig `P363.json`: `B36505090D9DCE7A2E2285DC5513DF9D7BE39030913DE56354E19397570DF5B0`.
