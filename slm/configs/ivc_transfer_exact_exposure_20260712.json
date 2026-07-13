@@ -1,0 +1,73 @@
+{
+  "experiment_name": "ivc_transfer_exact_exposure_20260712",
+  "seed": 20260712,
+  "data": {
+    "ivc_csv": "research/data/open_prototype/lipi/metadata_filtered.csv",
+    "linear_b_inventory_csv": "research/data/open_prototype/reports/linear_b_series_d_row_inventory.csv",
+    "sumtablets_csv": "research/data/open_prototype/known_scripts/sumtablets/sumtablets_line_sequences.csv",
+    "sproat_csv": "research/data/open_prototype/nonlinguistic/sproat2014/sproat2014_extracted_sequences.csv",
+    "min_length": 2,
+    "max_length": 14,
+    "exclude_tokens": ["000"],
+    "require_cisi": true,
+    "allowed_directions": ["R/L", "L/R"],
+    "forced_test_patterns": [["002", "861"], ["002", "390"]],
+    "max_comparator_sequences": 1798,
+    "split": {
+      "test_fraction": 0.15,
+      "validation_fraction": 0.15,
+      "group_policy": "one_edit_components",
+      "stratify_field": "site"
+    }
+  },
+  "models": [
+    {"name": "micro", "d_model": 128, "layers": 4, "heads": 4, "ffn": 512, "dropout": 0.15},
+    {"name": "small", "d_model": 256, "layers": 8, "heads": 8, "ffn": 1024, "dropout": 0.18},
+    {"name": "medium", "d_model": 384, "layers": 10, "heads": 8, "ffn": 1536, "dropout": 0.20}
+  ],
+  "training": {
+    "epochs": 300,
+    "batch_size": 256,
+    "learning_rate": 0.0006,
+    "min_learning_rate": 0.00002,
+    "weight_decay": 0.08,
+    "mask_probability": 0.30,
+    "random_token_probability": 0.10,
+    "keep_original_probability": 0.10,
+    "replacement_probability": 0.20,
+    "replacement_loss_weight": 0.50,
+    "authenticity_loss_weight": 0.35,
+    "label_smoothing": 0.03,
+    "gradient_clip": 1.0,
+    "patience": 35,
+    "eval_every": 5,
+    "seeds": [20260712, 20260713, 20260714, 20260715, 20260716],
+    "mixed_precision": true
+  },
+  "matrix": {
+    "corpora": ["ivc", "linear_b", "sumtablets"],
+    "controls": ["ivc_row_internal_shuffle", "ivc_position_slot_shuffle"],
+    "comparator_model": "small",
+    "control_model": "small",
+    "transfer_model": "micro",
+    "transfer_pretraining_steps": 1000,
+    "transfer_exposure_tolerance_fraction": 0.0,
+    "control_max_attrition_fraction": 0.15,
+    "transfers": ["known_writing", "nonwriting", "ivc_position_slot_shuffle"],
+    "exact_transfer_exposure": true,
+    "reference_baseline_summary": "research/data/slm/ivc_from_scratch_scaling_20260712/matrix_summary.json"
+  },
+  "probes": {
+    "continuation_prefixes": [["002", "861"], ["220", "032", "002", "861"], ["390", "004", "002", "861"]],
+    "top_k": 10,
+    "embedding_neighbors": 12
+  },
+  "runtime": {
+    "require_cuda": true,
+    "budget_usd": 14.0,
+    "planned_hourly_rate_usd": 0.957456,
+    "hard_runtime_hours": 6.0,
+    "budget_reserve_usd": 2.0,
+    "output_dir": "runs"
+  }
+}

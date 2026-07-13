@@ -83,6 +83,13 @@ def train_model(
     replacement_loss = torch.nn.BCEWithLogitsLoss(reduction="none")
     authenticity_loss = torch.nn.BCEWithLogitsLoss()
     rng = random.Random(seed)
+    if config.get("separate_training_rng_streams", False):
+        batch_rng = random.Random(seed + 1_000_003)
+        mask_rng = random.Random(seed + 2_000_033)
+        replacement_rng = random.Random(seed + 3_000_091)
+        corruption_rng = random.Random(seed + 4_000_159)
+    else:
+        batch_rng = mask_rng = replacement_rng = corruption_rng = rng
     inventory_tokens = published_authentic_inventory or {record.tokens for record in train_records}
     authentic_inventory = {tuple(vocab.encode(tokens, boundaries=False)) for tokens in inventory_tokens}
     best_nll = math.inf
@@ -100,7 +107,7 @@ def train_model(
         model.train()
         train_loss = 0.0
         masked_positions = 0
-        for records in _batches(train_records, config["batch_size"], rng):
+        for records in _batches(train_records, config["batch_size"], batch_rng):
             if deadline_monotonic is not None and time.monotonic() >= deadline_monotonic:
                 raise TimeoutError("Compute-budget deadline reached between optimizer steps")
             if global_step >= total_steps:
@@ -112,11 +119,12 @@ def train_model(
                 config["mask_probability"],
                 config["random_token_probability"],
                 config["keep_original_probability"],
-                rng,
+                mask_rng,
                 device,
+                replacement_rng,
             )
             corruptions = corruption_batch(
-                records, vocab, config["replacement_probability"], rng, device, authentic_inventory
+                records, vocab, config["replacement_probability"], corruption_rng, device, authentic_inventory
             )
             optimizer.zero_grad(set_to_none=True)
             step_learning_rate = learning_rate(global_step)

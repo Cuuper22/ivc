@@ -39,25 +39,27 @@ def masked_batch(
     mask_probability: float,
     random_token_probability: float,
     keep_original_probability: float,
-    rng: random.Random,
+    mask_rng: random.Random,
     device: torch.device,
+    replacement_rng: random.Random | None = None,
 ) -> Batch:
+    replacement_rng = replacement_rng or mask_rng
     encoded = [vocab.encode(record.tokens) for record in records]
     input_ids = pad_encoded(encoded, vocab.pad_id, device)
     labels = torch.full_like(input_ids, -100)
     sign_ids = list(range(vocab.first_sign_id, len(vocab)))
     for row_index, row in enumerate(encoded):
         candidate_positions = list(range(1, len(row) - 1))
-        chosen = [position for position in candidate_positions if rng.random() < mask_probability]
+        chosen = [position for position in candidate_positions if mask_rng.random() < mask_probability]
         if not chosen:
-            chosen = [rng.choice(candidate_positions)]
+            chosen = [mask_rng.choice(candidate_positions)]
         for position in chosen:
             labels[row_index, position] = input_ids[row_index, position]
-            draw = rng.random()
+            draw = replacement_rng.random()
             if draw < keep_original_probability:
                 continue
             if draw < keep_original_probability + random_token_probability:
-                input_ids[row_index, position] = rng.choice(sign_ids)
+                input_ids[row_index, position] = replacement_rng.choice(sign_ids)
             else:
                 input_ids[row_index, position] = vocab.mask_id
     return Batch(input_ids, labels, [record.record_id for record in records])

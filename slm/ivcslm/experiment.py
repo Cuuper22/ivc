@@ -8,7 +8,7 @@ import platform
 import subprocess
 import sys
 import time
-from collections import defaultdict
+from collections import Counter, defaultdict
 from dataclasses import asdict
 from datetime import datetime, timezone
 from importlib.metadata import version
@@ -107,6 +107,12 @@ def resolve_paths(config_path: Path, config: dict) -> dict:
     if not output.is_absolute():
         output = (project_root / "slm" / output).resolve()
     config["runtime"]["output_dir"] = str(output)
+    reference_summary = config.get("matrix", {}).get("reference_baseline_summary")
+    if reference_summary:
+        reference_path = Path(reference_summary)
+        if not reference_path.is_absolute():
+            reference_path = (project_root / reference_path).resolve()
+        config["matrix"]["reference_baseline_summary"] = str(reference_path)
     config["project_root"] = str(project_root)
     return config
 
@@ -363,6 +369,77 @@ def _shuffled_pretraining_arm(corpus: Corpus, config: dict, seed: int) -> tuple[
     return source_corpus, transformed, diagnostics
 
 
+def _exactly_match_transfer_train_splits(
+    bundles: dict[str, tuple[Corpus, Split, dict]], seed: int
+) -> dict[str, tuple[Corpus, Split, dict]]:
+    """Match unique training records, tokens, and length order across transfer sources."""
+    if not bundles:
+        raise ValueError("Exact transfer exposure matching requires at least one source bundle")
+    length_counts = {
+        name: Counter(len(record.tokens) for record in split.train)
+        for name, (_, split, _) in bundles.items()
+    }
+    lengths = sorted({length for counts in length_counts.values() for length in counts})
+    shared_histogram = {
+        length: min(counts.get(length, 0) for counts in length_counts.values())
+        for length in lengths
+    }
+    shared_histogram = {length: count for length, count in shared_histogram.items() if count > 0}
+    if not shared_histogram:
+        raise ValueError("Transfer sources have no shared training-record length support")
+
+    matched: dict[str, tuple[Corpus, Split, dict]] = {}
+    expected_records = sum(shared_histogram.values())
+    expected_tokens = sum(length * count for length, count in shared_histogram.items())
+    for name, (corpus, split, diagnostics) in bundles.items():
+        selected = []
+        for length, quota in sorted(shared_histogram.items()):
+            candidates = [record for record in split.train if len(record.tokens) == length]
+            candidates.sort(
+                key=lambda record: hashlib.sha256(
+                    f"{seed}|exact-transfer-exposure|{name}|{record.record_id}".encode("utf-8")
+                ).hexdigest()
+            )
+            selected.extend(candidates[:quota])
+        selected.sort(key=lambda record: (len(record.tokens), record.record_id))
+        if len(selected) != expected_records or sum(len(record.tokens) for record in selected) != expected_tokens:
+            raise ValueError(f"Exact transfer exposure construction failed for {name}")
+        matched_split = Split(
+            selected,
+            split.validation,
+            split.test,
+            split.group_by_record_id,
+            split.forced_test_record_ids,
+        )
+        assert_source_split_integrity(matched_split)
+        matched_diagnostics = {
+            **diagnostics,
+            "pre_match_source_policy": diagnostics.get("source_policy"),
+            "source_policy": "source_split_frozen_then_exact_train_length_histogram_match",
+            "original_train_records": len(split.train),
+            "original_train_tokens": sum(len(record.tokens) for record in split.train),
+            "selected_train_records": expected_records,
+            "selected_train_tokens": expected_tokens,
+            "shared_train_length_histogram": {
+                str(length): count for length, count in sorted(shared_histogram.items())
+            },
+            "selection_seed": seed,
+        }
+        matched[name] = (corpus, matched_split, matched_diagnostics)
+
+    signatures = {
+        (
+            len(split.train),
+            sum(len(record.tokens) for record in split.train),
+            tuple(sorted(Counter(len(record.tokens) for record in split.train).items())),
+        )
+        for _, split, _ in matched.values()
+    }
+    if len(signatures) != 1:
+        raise ValueError("Transfer source train exposures are not exactly matched")
+    return matched
+
+
 def run_one(
     corpus: Corpus,
     model_spec: ModelSpec,
@@ -388,7 +465,10 @@ def run_one(
         split = fixed_split
         assert_source_split_integrity(split)
         forced_test_patterns = config["data"].get("forced_test_patterns", []) if split.forced_test_record_ids else []
-        split_integrity_policy = "source_partitions_frozen_before_null_transform_cross_partition_null_collisions_removed"
+        if (control_diagnostics or {}).get("source_policy") == "source_split_frozen_then_exact_train_length_histogram_match":
+            split_integrity_policy = "source_partitions_frozen_then_train_exposure_length_histogram_matched"
+        else:
+            split_integrity_policy = "source_partitions_frozen_before_null_transform_cross_partition_null_collisions_removed"
     # The corpus sign inventory is publication metadata, not a learned sequence feature.
     # Exposing token identities avoids silently scoring held-out signs as [UNK] while
     # preserving all contextual and frequency information inside the training split.
@@ -775,7 +855,9 @@ def _write_matrix_analysis(run_root: Path, summaries: list[dict], config: dict) 
     return analysis
 
 
-def run_matrix(config_path: Path) -> Path:
+def run_matrix(config_path: Path, scope: str = "full") -> Path:
+    if scope not in {"full", "transfer-only"}:
+        raise ValueError(f"Unknown run scope: {scope}")
     config = load_config(config_path)
     runtime = config["runtime"]
     if os.environ.get("IVCSLM_HOURLY_RATE_USD"):
@@ -833,6 +915,7 @@ def run_matrix(config_path: Path) -> Path:
             ),
             "source_tree_sha256": os.environ.get("IVCSLM_SOURCE_TREE_SHA256", "unavailable"),
             "command": " ".join(sys.argv),
+            "run_scope": scope,
             "hardware": _hardware_manifest(device),
             "environment": {
                 key: os.environ.get(key, "")
@@ -859,11 +942,41 @@ def run_matrix(config_path: Path) -> Path:
     model_names = [item["name"] for item in config["models"]]
     matrix = config["matrix"]
     seeds = config["training"]["seeds"]
-    planned_runs = len(seeds) * (
-        len(model_names)
-        + len([name for name in matrix["corpora"] if name != "ivc"])
-        + len(matrix["controls"])
-        + 2 * len(matrix.get("transfers", []))
+    reference_summaries: list[dict] = []
+    if scope == "transfer-only":
+        reference_raw = matrix.get("reference_baseline_summary")
+        if not reference_raw:
+            raise ValueError("transfer-only scope requires matrix.reference_baseline_summary")
+        reference_path = Path(reference_raw)
+        reference_rows = json.loads(reference_path.read_text(encoding="utf-8"))
+        reference_summaries = [
+            row
+            for row in reference_rows
+            if row["arm"] == "ivc"
+            and row["model"]["name"] == matrix["transfer_model"]
+            and row["seed"] in seeds
+        ]
+        if sorted(row["seed"] for row in reference_summaries) != sorted(seeds):
+            raise ValueError("Reference baseline summary does not contain one matching IVC run per seed")
+        write_initial(
+            run_root / "reference_baselines.json",
+            {
+                "source_path": str(reference_path),
+                "source_sha256": hashlib.sha256(reference_path.read_bytes()).hexdigest(),
+                "selection": "arm=ivc;model=transfer_model;configured_seeds",
+                "summaries": reference_summaries,
+            },
+        )
+    planned_runs = (
+        len(seeds) * 2 * len(matrix.get("transfers", []))
+        if scope == "transfer-only"
+        else len(seeds)
+        * (
+            len(model_names)
+            + len([name for name in matrix["corpora"] if name != "ivc"])
+            + len(matrix["controls"])
+            + 2 * len(matrix.get("transfers", []))
+        )
     )
     spendable = runtime["budget_usd"] - runtime["budget_reserve_usd"]
     rate = runtime["planned_hourly_rate_usd"]
@@ -881,6 +994,9 @@ def run_matrix(config_path: Path) -> Path:
 
     def within_budget() -> bool:
         return time.monotonic() < deadline_monotonic
+
+    def summaries_for_analysis() -> list[dict]:
+        return [*reference_summaries, *summaries]
 
     def execute(
         corpus: Corpus,
@@ -930,30 +1046,35 @@ def run_matrix(config_path: Path) -> Path:
         summaries.append(summary)
         completed_by_key[key] = summary
         _json_write(run_root / "matrix_summary.json", summaries)
-        _write_matrix_analysis(run_root, summaries, config)
+        _write_matrix_analysis(run_root, summaries_for_analysis(), config)
         return summary
 
     transfer_model = matrix["transfer_model"]
+    transfer_names = matrix.get("transfers", [])
+    exact_transfer_exposure = bool(matrix.get("exact_transfer_exposure", False))
     # Phase 1 completes every seed of the falsifiable transfer tournament before
     # spending the remaining budget on capacity and corpus-calibration controls.
     for seed in seeds:
         shuffled_source_bundle = None
-        if "ivc_position_slot_shuffle" in matrix.get("transfers", []):
+        if "ivc_position_slot_shuffle" in transfer_names:
             shuffled_source_bundle = _shuffled_pretraining_arm(corpora["ivc"], config, seed)
             shuffled_records = len(shuffled_source_bundle[0].records)
             shuffled_tokens = sum(len(record.tokens) for record in shuffled_source_bundle[0].records)
-        if execute(corpora["ivc"], transfer_model, seed) is None:
+        if scope == "full" and execute(corpora["ivc"], transfer_model, seed) is None:
             break
-        for transfer_name in matrix.get("transfers", []):
+        source_bundles: dict[str, tuple[Corpus, Split | None, dict]] = {}
+        for transfer_name in transfer_names:
             if transfer_name == "ivc_position_slot_shuffle":
                 if shuffled_source_bundle is None:
                     raise ValueError("Shuffled transfer source bundle was not initialized")
                 source_corpus, source_split, source_diagnostics = shuffled_source_bundle
             else:
+                if shuffled_source_bundle is None:
+                    raise ValueError("Transfer source matching requires the shuffled IVC reference arm")
                 source_corpus = cap_corpus_by_grouped_exposure(
                     corpora[transfer_name], shuffled_records, shuffled_tokens, seed
                 )
-                source_split = None
+                source_split = _fresh_split(source_corpus, config, seed)[0] if exact_transfer_exposure else None
                 source_diagnostics = {
                     "source_policy": "whole_one_edit_groups_capped_to_shuffled_ivc_source_exposure",
                     "target_records": shuffled_records,
@@ -961,6 +1082,19 @@ def run_matrix(config_path: Path) -> Path:
                     "selected_records": len(source_corpus.records),
                     "selected_tokens": sum(len(record.tokens) for record in source_corpus.records),
                 }
+            source_bundles[transfer_name] = (source_corpus, source_split, source_diagnostics)
+        if exact_transfer_exposure:
+            fixed_bundles = {
+                name: (corpus, split, diagnostics)
+                for name, (corpus, split, diagnostics) in source_bundles.items()
+                if split is not None
+            }
+            if len(fixed_bundles) != len(source_bundles):
+                raise ValueError("Exact transfer exposure requires a frozen source split for every arm")
+            source_bundles = _exactly_match_transfer_train_splits(fixed_bundles, seed)
+
+        for transfer_name in transfer_names:
+            source_corpus, source_split, source_diagnostics = source_bundles[transfer_name]
             pretraining = execute(
                 source_corpus,
                 transfer_model,
@@ -971,6 +1105,7 @@ def run_matrix(config_path: Path) -> Path:
                 training_overrides={
                     "max_optimizer_steps": matrix["transfer_pretraining_steps"],
                     "patience": 1_000_000,
+                    "separate_training_rng_streams": exact_transfer_exposure,
                 },
                 published_authentic_inventory=(
                     {record.tokens for record in corpora["ivc"].records}
@@ -992,7 +1127,7 @@ def run_matrix(config_path: Path) -> Path:
         if not within_budget():
             break
     # Phase 2 is useful only after the primary paired design has had the first claim on compute.
-    if within_budget():
+    if scope == "full" and within_budget():
         for seed in seeds:
             for model_name in model_names:
                 if model_name != transfer_model and execute(corpora["ivc"], model_name, seed) is None:
@@ -1019,11 +1154,13 @@ def run_matrix(config_path: Path) -> Path:
     elapsed_hours = (time.monotonic() - wall_start) / 3600
     session_billed_hours = max(0.0, (time.time() - billed_start) / 3600) if billed_start is not None else elapsed_hours
     billed_elapsed_hours = prior_billed_hours + session_billed_hours
-    analysis = _write_matrix_analysis(run_root, summaries, config)
+    analysis = _write_matrix_analysis(run_root, summaries_for_analysis(), config)
     final = {
         "completed_at_utc": datetime.now(timezone.utc).isoformat(),
         "completed_runs": len(summaries),
         "planned_runs": planned_runs,
+        "reference_runs": len(reference_summaries),
+        "run_scope": scope,
         "elapsed_hours": elapsed_hours,
         "billed_elapsed_hours_including_reported_setup": billed_elapsed_hours,
         "setup_hours_before_runner": setup_hours,
