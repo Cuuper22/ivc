@@ -80,6 +80,7 @@ Artifacts:
 | M-7 | Both CISI views show nine compound-level clusters. Lipi uses one 101 token for the bracketed three-headed figure; Mayig decomposes it as P154 P009 P154 even though its own P010 namespace encodes the integrated compound. | Use nine compound-level units and collapse the three Mayig constituents to one P010-like cluster for sign-unit analysis. Keep eleven entries only for constituent-level work; internal bracket/person transitions are not inter-sign edges. |
 | M-120 correction | Both CISI views show six main-line signs plus a detached lower 858 diamond. The slash in 858/740 records their two-dimensional association; the signs do not touch. Mayig omits the detached diamond. | Use seven source units while preserving a six-sign main line plus one linked lower P363-like unit. Reject the prior six-unit fused-compound decision and do not invent a sequential 858-740 edge. |
 | M-106 | Both CISI views support six structural positions: four recoverable graphics (740, 760, 002, 350) and two distinct damaged sign slots separated by 002. Mayig's terminal P000 is one 70%-loss span covering positions 3-6, not a third sign. | Use six positions with two explicit unknown-sign tokens and attach P000 as span-level damage metadata. Exclude P000 from sign counts and reject the apparent P332-P000 sign adjacency. The sole complex-manual-collation row is closed. |
+| M-141 | The slash separates a three-sign lower row from a damaged upper row. Six identities and one terminal unknown are individually source-supported, but Lipi's three initial upper-row zeros occupy one continuous break and are not separately bounded. Mayig records only the upper row as P000-P122-P000, omitting the lower row, visible 240, and visible 031. | Preserve `lower [817,255,636]` and `upper [LOSS_SPAN(capacity unknown),240,002,031,UNK]`. Minimum directly located count is seven; total length remains indeterminate. Use neither Lipi 10 nor Mayig 3 as a source count, and create no cross-row or damage-token adjacency. |
 
 These decisions tighten the usable corpus and crosswalk without adding a translation, value, meaning, language identification, external anchor, or accepted structural claim. The detailed panels, tables, gates, and object-level decisions remain the evidence record; this checkpoint carries only the synthesis.
 
@@ -143,7 +144,7 @@ Detailed decision: `research/docs/campaign_032_002_861_603_cross_context_graphic
 
 ## Next executable order
 
-1. Adjudicate M-141, the remaining multi-sign zero/slash/P000 row, against CISI before any count or adjacency use.
+1. Adjudicate M-175, the first of four remaining damaged-boundary fragments, against both CISI views before count or terminality use.
 
 ## Parked lanes
 
