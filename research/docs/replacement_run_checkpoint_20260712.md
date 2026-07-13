@@ -88,9 +88,22 @@ All 65 planned runs completed across five paired seeds. Lower negative log-likel
 Interpretation: the model finds reproducible sequential structure in the IVC corpus, because authentic sequences beat both matched corruption controls. That is a structural result, not a linguistic identification. The transfer benefit is not writing-specific: nonwriting pretraining produces a statistically compatible gain, while exposure imbalance also violates the pre-registered design. The capacity curve points in the opposite direction from scaling: the 0.89M model beats the 6.54M and 18.12M models on held-out NLL in all five seeds, so a 1B run would spend compute without answering the live research question.
 
 Raw outputs are preserved in `research/data/slm/ivc_from_scratch_scaling_20260712/`: the full 65-run matrix, per-run comparison table, aggregate analysis, completion/cost record, resolved configuration, and hardware/input manifest.
+
+## Directionality closure
+
+Decision: `CLOSED_PHYSICAL_DIRECTION_PROMOTION_RETAIN_STORED_ORDER_STRUCTURE`.
+
+- Meadow and Kenoyer's matched seal/tablet case identifies `H96-2796/6876-01`, local `H-1682`, as left-to-right on the physical intaglio seal while the matching non-impressing tablets are assumed right-to-left.
+- Lipi records `R/L` for `H-1682` and for all 66 sides of H-2218 through H-2239. The field therefore does not uniformly encode physical as-pictured orientation across those media.
+- `H-1682` is inside the harsh 365-row directionality scope and favors stored order, so this is an internal semantic counterexample rather than an unrelated source objection.
+- Removing it changes stored-win share only from 0.841096 to 0.840659. The stored-order structural result survives; physical reading direction does not follow from it.
+- A larger negative-image denominator cannot fix an unlabeled orientation construct. The failed packet lane is closed rather than expanded.
+
+Detailed decision: `research/docs/effective_unicity_directionality_physical_orientation_closure_20260712.md`.
+
 ## Next executable order
 
-1. construct one homogeneous directionality denominator or close it for insufficient public panels.
+1. Test one administrative/numerical hypothesis from complete local sources as a pre-registered held-out source/object-family prediction against matched administrative and emblem nulls; close it negative if it does not beat both.
 
 ## Parked lanes
 
