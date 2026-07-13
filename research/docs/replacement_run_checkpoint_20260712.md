@@ -90,8 +90,7 @@ Interpretation: the model finds reproducible sequential structure in the IVC cor
 Raw outputs are preserved in `research/data/slm/ivc_from_scratch_scaling_20260712/`: the full 65-run matrix, per-run comparison table, aggregate analysis, completion/cost record, resolved configuration, and hardware/input manifest.
 ## Next executable order
 
-1. adjudicate the bounded M-120 slash-compound mismatch from the local CISI source;
-2. construct one homogeneous directionality denominator or close it for insufficient public panels.
+1. construct one homogeneous directionality denominator or close it for insufficient public panels.
 
 ## Parked lanes
 
