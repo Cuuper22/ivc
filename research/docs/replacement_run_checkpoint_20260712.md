@@ -143,9 +143,23 @@ Decision: `CLOSED_CROSS_CONTEXT_603_GRAPHIC_IDENTITY_NOT_SOURCE_SUPPORTED`.
 
 Detailed decision: `research/docs/campaign_032_002_861_603_cross_context_graphic_closure_20260712.md`.
 
+## `002-861` censored-control delta
+
+Decision: `NO_CLAIM_REVERSAL; CENSORED_CONTROLS_SLIGHTLY_STRENGTHEN_BARE_CLOSURE`.
+
+M-19 and M-175 enter only as distinct, source-visible left-censored artifact controls with the form `[LOSS_PREFIX] 002 861 [CLOSED_EDGE]`. They do not become complete `+002-861+` strings and contribute nothing to known-prefix, absolute-position, or complete-string counts.
+
+| Analysis lane | Complete-row baseline: bare / tailed / total | With the two censored controls | Bare-rate change |
+| --- | ---: | ---: | ---: |
+| canonical source-normalized tail field | 113 / 31 / 144 (78.472222%) | 115 / 31 / 146 (78.767123%) | +0.294901 percentage points |
+| accepted-forger strict-raw sensitivity | 115 / 31 / 146 (78.767123%) | 117 / 31 / 148 (79.054054%) | +0.286931 percentage points |
+| accepted-forger exact `text/site/type/symbol` sensitivity | 107 / 25 / 132 (81.060606%) | 109 / 25 / 134 (81.343284%) | +0.282678 percentage points |
+
+The result is small and directionally consistent: bare closure becomes about 0.28-0.29 percentage points more common, while every tailed count stays fixed. `533-717` remains supported by M-376 and M-391 only, at 2/2 observed occurrences in the fixed-prefix terminal context; among tailed rows its share is unchanged. Its share of the canonical whole field falls mechanically from 2/144 to 2/146. The historical forger nulls were not rerun and are not represented as recalculated here. The older 119-row suffix-split table is not mixed into this result because it used a legacy extractor and deduplication rule.
+
 ## Next executable order
 
-1. Re-estimate the fixed `002-861` bare-versus-tailed contrast with M-19 and M-175 admitted only as left-censored bare terminal controls; report the exact delta without rerunning the GPU matrix.
+1. Use the local Parpola/Wells/Mayig witnesses to source-normalize only the `861 | 533 | 717` boundaries on M-376 and M-391. Confirm two separately bounded terminal signs on both objects or demote the sole accepted structural finding; do not widen this into another corpus audit.
 
 ## Parked lanes
 
