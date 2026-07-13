@@ -65,6 +65,7 @@ Artifacts:
 | M-161 | Source shows four units, including two grids, versus three Lipi tokens. | Literal Lipi count rejected; 617 remains unresolved compound-or-omission policy. |
 | Lipi 000 policy: M-105, M-27, M-61, M-62 | All four flagged CISI objects show a bounded unit at every stored 000 position; Mayig independently supplies a named grapheme at each same-position slot. | Lipi 000 is a sign-bearing unknown-identity token and counts structurally. M-27's 900 is penultimate, not terminal. |
 | P000 policy: M-110, M-126, M-73 | All three flagged CISI objects show only the Lipi-counted bounded signs plus the damaged span encoded by Mayig P000. | P000 is uniformly non-sign damage metadata. M-126 and M-73 count mismatches close; M-110's complete original length remains unresolved across its lost span. |
+| Overlap policy: M-55, M-60 | A same-position Lipi 000 and Mayig P000 overlay one source-visible damaged partial sign, rather than forming two events. | Normalize one damaged unknown sign slot with attached loss metadata. M-55's 760 is not initial; M-60's 151 is not terminal. |
 
 These decisions tighten the usable corpus and crosswalk without adding a translation, value, meaning, language identification, external anchor, or accepted structural claim. The detailed panels, tables, gates, and object-level decisions remain the evidence record; this checkpoint carries only the synthesis.
 
@@ -128,7 +129,7 @@ Detailed decision: `research/docs/campaign_032_002_861_603_cross_context_graphic
 
 ## Next executable order
 
-1. Apply the now-separated Lipi `000` and Mayig `P000` policies to the two ambiguous mismatch rows, M-55 and M-60, using their CISI panels to decide whether both token types refer to one damaged sign slot or to distinct events.
+1. Adjudicate unflagged Mayig-extra row M-111 against both CISI views: test whether repeated `P378 P378` represents two bounded signs, a split compound, or a duplicated transcription.
 
 ## Parked lanes
 

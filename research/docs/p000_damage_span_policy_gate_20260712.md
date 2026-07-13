@@ -25,7 +25,8 @@ The CISI 1 PDF SHA-256 is `47A4DA4227CFB7BAA56D6A561E25797225499D0EC54F5A702A82C
 - Type `P000` as `damage_span`, not `graphic_sign`.
 - Exclude `P000` from sign counts, sign frequencies, and model token sequences.
 - Preserve its sequence position and `percent_lost` in a parallel damage/missingness layer.
-- Never map `P000` one-to-one to a Lipi `000`. On `M-110`, it aligns only to the object-level lost region represented by Lipi's `000-000` gap.
+- Do not assume a one-to-one relation from the token names. On `M-110`, `P000` aligns only to the object-level lost region represented by Lipi's `000-000` gap, not to either slot individually.
+- Where source traces and a same-position Lipi `000` independently establish one damaged sign slot (`M-55`, `M-60`), attach the `P000` damage attributes to that slot without counting `P000` separately.
 - Treat Mayig grapheme-array length as a mixed-token count whenever `P000` occurs.
 
 The queue operation `drop_mayig_P000` is therefore valid only as a derived sign-count transformation. Deleting `P000` from the source record would erase real damage evidence.

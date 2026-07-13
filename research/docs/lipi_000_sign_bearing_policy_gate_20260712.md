@@ -32,6 +32,8 @@ The CISI 1 PDF SHA-256 is `47A4DA4227CFB7BAA56D6A561E25797225499D0EC54F5A702A82C
 
 This policy is deliberately distinct from Mayig `P000`: Lipi `000` occupies a graphic sign slot, while Mayig `P000` records a non-sign damage span.
 
+The two layers can co-locate. On `M-55` and `M-60`, source-visible partial traces establish one damaged Lipi unknown-sign slot while same-position Mayig `P000` supplies its missingness attributes; the normalized slot counts once.
+
 ## Research consequence
 
 The full `lipi_unknown_zero_explains_count` class is closed at `4/4` source-inspected objects.
