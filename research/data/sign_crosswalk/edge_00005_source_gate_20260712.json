@@ -1,0 +1,76 @@
+{
+  "date": "2026-07-12",
+  "edge_id": "edge_00005",
+  "from_sign_uid": "lipi_numeric:032",
+  "to_sign_uid": "mayig_p:P145",
+  "decision": "SOURCE_VISIBLE_RECIPROCAL_INVERSION_BLOCKS_EXACT_MAPPING",
+  "mapping_state": "conflict",
+  "accepted_for_analysis": false,
+  "support_count": 20,
+  "aligned_positions": 21,
+  "counterexample_count": 1,
+  "counterexamples_by_mayig_sign": {
+    "P122": 1
+  },
+  "top_share": 0.952381,
+  "source_visible_support": [
+    {
+      "object": "M-21",
+      "position_1based": 6,
+      "lipi_sign": "032",
+      "mayig_sign": "P145",
+      "paired_position_1based": 7,
+      "paired_lipi_sign": "002",
+      "paired_mayig_sign": "P122",
+      "panel": "research/data/sign_crosswalk/source_panels/740_P324/M-21_A_CISI1_pdf49_print13.png"
+    }
+  ],
+  "source_visible_counterexamples": [
+    {
+      "object": "M-143",
+      "position_1based": 3,
+      "lipi_sign": "032",
+      "mayig_sign": "P122",
+      "paired_position_1based": 4,
+      "paired_lipi_sign": "002",
+      "paired_mayig_sign": "P145",
+      "panel": "research/data/sign_crosswalk/source_panels/002_P122_conflicts/M-143_A_CISI1_pdf81_print45.png"
+    }
+  ],
+  "source_pdf_sha256": "47A4DA4227CFB7BAA56D6A561E25797225499D0EC54F5A702A82C67AB4746D4D",
+  "alignment_table_sha256": "935AD5B75B61AC8F7FC5E736DDA109475B23A29B510AA0D61577C3EC34971473",
+  "mayig_commit": "ad2f1e218a34b8c33c57de0d6cb8d99272765bbb",
+  "evidence_ref_ids": [
+    "ref_crosswalk_alignment_pairs",
+    "ref_cisi1_local_pdf_47a4",
+    "ref_740_p324_m21_panel",
+    "ref_002_p122_m143_panel",
+    "ref_mayig_p122_feature",
+    "ref_mayig_p145_feature",
+    "ref_mayig_m021_record",
+    "ref_mayig_m143_record"
+  ],
+  "evidence_types": [
+    "same_artifact",
+    "count_matched",
+    "position_aligned",
+    "source_visible_published_plate",
+    "pinned_graphemic_feature_descriptions",
+    "source_visible_counterexample",
+    "adjacent_sign_policy_inversion"
+  ],
+  "merge_decision": {
+    "accepted": false,
+    "reason": "P145 and P122 encode distinct full-height and half-height forms; merging them with Lipi 032/002 would erase both the feature distinction and the M-143 order disagreement."
+  },
+  "revisit_requirement": "Authoritative source-side sign-list or transcription documentation, or a reproducible predeclared visual-feature rule, must reconcile M-143 without silently editing either corpus.",
+  "claim_boundaries": {
+    "exact_crosswalk": false,
+    "two_sign_merge": false,
+    "sign_meaning": false,
+    "phonetic_value": false,
+    "language_identity": false,
+    "translation": false,
+    "accepted_claim_count_increment": 0
+  }
+}

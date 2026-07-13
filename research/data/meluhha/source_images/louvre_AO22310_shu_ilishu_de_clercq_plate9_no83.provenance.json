@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-07-12T14:30:00-07:00",
+  "object_id": "Louvre AO 22310",
+  "status": "source_bound_contact_object_no_indus_bilingual_no_external_anchor",
+  "local_file": "research/data/meluhha/source_images/louvre_AO22310_shu_ilishu_de_clercq_plate9_no83.jpg",
+  "image": {
+    "width_pixels": 1552,
+    "height_pixels": 802,
+    "bytes": 678486,
+    "sha256": "7A5C7EC00DE1F01540F05A90B8F9E7752096A74391972CAB4F8CC05533D5B670",
+    "sha1": "E699D076FE1CC066B84AD9BC7C024132A2CC043C",
+    "mime_type": "image/jpeg"
+  },
+  "binary_binding": {
+    "wikimedia_url": "https://commons.wikimedia.org/wiki/File:Akkadian_cylinder_seal_with_inscription_Shu-ilishu,_interpreter_of_the_Meluhhan_language,_Louvre_Museum_AO_22310.jpg",
+    "match_basis": [
+      "width_pixels",
+      "height_pixels",
+      "bytes",
+      "sha1"
+    ],
+    "wikimedia_source_statement": "Louis de Clercq, Collection de Clercq, 1888",
+    "license": "Public Domain Mark 1.0"
+  },
+  "object_binding": {
+    "official_record": "https://collections.louvre.fr/ark:/53355/cl010147038",
+    "inventory_number": "AO 22310",
+    "holding": "Musee du Louvre, Departement des Antiquites orientales",
+    "object_type": "cylinder seal",
+    "inscription_language": "Akkadian",
+    "louvre_inscription_description": "Shilishu, the interpreter of the land of Meluhha",
+    "louvre_date_bce": "2340-2200",
+    "findspot_status": "unknown; Louvre geographic entry is attribution by style, not excavated provenience"
+  },
+  "publication_binding": {
+    "citation": "Louis de Clercq and Joachim Menant, Collection de Clercq, volume I, 1888, plate IX, no. 83",
+    "bnf_iiif_canvas": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k927127w/canvas/f310",
+    "penn_recheck": "https://www.penn.museum/sites/expedition/shu-ilishus-cylinder-seal/",
+    "penn_recheck_summary": "Steve Tinney reconfirmed the reading from a fresh impression; Possehl states that the archaeological findspot is unknown."
+  },
+  "research_decision": {
+    "accepted_external_anchor": false,
+    "accepted_bilingual": false,
+    "accepted_indus_sign_values": 0,
+    "accepted_count_increment": 0,
+    "boundary": "Contact/provenance object only; no Indus text or object-level Akkadian-Indus bridge."
+  }
+}

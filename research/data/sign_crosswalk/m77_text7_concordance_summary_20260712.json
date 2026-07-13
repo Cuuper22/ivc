@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "date": "2026-07-12",
+  "question": "Does any M-77 / Parpola text-no.-7 object or string identity survive source normalization?",
+  "decision": "The three-sign BASE_T graphic string survives, but the two seal identifiers printed by Parpola 2019 do not. CISI M-35 has seven signs and CISI M-77 has five. CISI M-37 is the source-visible three-sign seal that graphically matches text no. 7 without final sign 107, and the Lipi and Mayig machine layers concordantly encode M-37 as the same three-position string. M-37 is therefore a high-confidence intended-reference correction candidate, not an author-confirmed emendation.",
+  "parpola_standardized_strings": {
+    "figure_1_full_text7_left_to_right": ["107", "189", "60", "U"],
+    "figure_1_full_text7_reading_right_to_left": ["U", "60", "189", "107"],
+    "BASE_T_left_to_right": ["189", "60", "U"],
+    "BASE_T_reading_right_to_left": ["U", "60", "189"],
+    "U": "The first sign in reading order is visible in Figure 1 but is not numbered in the checked 2019 prose. No number is assigned here."
+  },
+  "surviving_identities": {
+    "author_explicit_full_text7_objects": ["M-2109", "M-2111"],
+    "exact_local_520_220_415_objects": ["M-37", "H-938", "H-939", "H-1284", "H-940", "H-2148", "H-2240"],
+    "object_bound_source_visual_bridge": {
+      "object": "M-37",
+      "lipi_stored_sequence": ["520", "220", "415"],
+      "mayig_sequence": ["P217", "P050", "P092"],
+      "parpola_figure_1_BASE_T_positions_left_to_right": ["189", "60", "U"],
+      "status": "accepted_object_bound_graphic_position_match_not_global_numeric_crosswalk"
+    }
+  },
+  "rejected_identities": [
+    {
+      "object": "M-35",
+      "parpola_claim": "BASE_T as complete seal text",
+      "source_result": "CISI, Lipi, and Mayig all show seven signs",
+      "status": "rejected"
+    },
+    {
+      "object": "M-77",
+      "parpola_claim": "BASE_T as sole seal text",
+      "source_result": "CISI, Lipi, and Mayig all show five signs",
+      "status": "rejected"
+    }
+  ],
+  "non_exact_controls": {
+    "one_slot_variants": ["H-2145", "H-942"],
+    "fragmentary": ["H-2147", "H-2241"],
+    "full_text7_local_rows_unreconciled_with_standardized_figure": ["M-2109", "M-2111"]
+  },
+  "namespace_decisions": {
+    "global_lipi_to_parpola_numeric_crosswalk_accepted": false,
+    "global_mayig_to_parpola_2019_numeric_crosswalk_accepted": false,
+    "local_415_equals_local_016": false,
+    "local_110_equals_parpola_41": false,
+    "m77_token_mapping_accepted": false,
+    "m35_terminal_local_107_equals_parpola_107": false,
+    "sign_values_accepted": false,
+    "phonetics_accepted": false,
+    "language_identity_accepted": false,
+    "translation_accepted": false
+  },
+  "correction_candidate": {
+    "printed_references_in_2019": ["M-77", "M-35"],
+    "source_supported_candidate": "M-37",
+    "confidence": "high",
+    "author_confirmed": false,
+    "reason": "M-37 alone is a complete three-sign seal whose CISI impression matches the standardized BASE_T graphic sequence; Lipi and Mayig agree on its three positions."
+  },
+  "remaining_source_limits": [
+    "Raw M-2109 and M-2111 rod photographs/transcriptions were not available in the checked local source set.",
+    "H-2240 and H-2241 remain source-dark in the checked public/local layer.",
+    "No erratum or author statement confirming M-37 as the intended identifier was found or sought."
+  ]
+}

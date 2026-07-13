@@ -1,0 +1,60 @@
+{
+  "date": "2026-07-12",
+  "edge_id": "edge_00002",
+  "from_sign_uid": "lipi_numeric:002",
+  "to_sign_uid": "mayig_p:P122",
+  "decision": "SOURCE_VISIBLE_COUNTEREXAMPLES_BLOCK_EXACT_MAPPING",
+  "mapping_state": "conflict",
+  "accepted_for_analysis": false,
+  "support_count": 57,
+  "aligned_positions": 60,
+  "counterexample_count": 3,
+  "counterexamples_by_mayig_sign": {
+    "P145": 2,
+    "P300": 1
+  },
+  "top_share": 0.95,
+  "source_visible_counterexamples": [
+    {
+      "object": "M-140",
+      "position_1based": 3,
+      "lipi_sign": "002",
+      "mayig_sign": "P145",
+      "panel": "research/data/sign_crosswalk/source_panels/002_P122_conflicts/M-140_A_CISI1_pdf81_print45.png"
+    },
+    {
+      "object": "M-143",
+      "position_1based": 4,
+      "lipi_sign": "002",
+      "mayig_sign": "P145",
+      "panel": "research/data/sign_crosswalk/source_panels/002_P122_conflicts/M-143_A_CISI1_pdf81_print45.png"
+    },
+    {
+      "object": "M-154",
+      "position_1based": 5,
+      "lipi_sign": "002",
+      "mayig_sign": "P300",
+      "panel": "research/data/sign_crosswalk/source_panels/002_P122_conflicts/M-154_A_CISI1_pdf83_print47.png"
+    }
+  ],
+  "source_pdf_sha256": "47A4DA4227CFB7BAA56D6A561E25797225499D0EC54F5A702A82C67AB4746D4D",
+  "alignment_table_sha256": "935AD5B75B61AC8F7FC5E736DDA109475B23A29B510AA0D61577C3EC34971473",
+  "mayig_commit": "ad2f1e218a34b8c33c57de0d6cb8d99272765bbb",
+  "evidence_types": [
+    "same_artifact",
+    "count_matched",
+    "position_aligned",
+    "source_visible_published_plate",
+    "pinned_graphemic_feature_descriptions",
+    "source_visible_counterexamples"
+  ],
+  "revisit_requirement": "Authoritative source-side sign-list documentation or a reproducible predeclared segmentation rule must reconcile M-140, M-143, and M-154 without silently editing either corpus.",
+  "claim_boundaries": {
+    "exact_crosswalk": false,
+    "sign_meaning": false,
+    "phonetic_value": false,
+    "language_identity": false,
+    "translation": false,
+    "accepted_claim_count_increment": 0
+  }
+}

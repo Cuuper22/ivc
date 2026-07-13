@@ -1,41 +1,63 @@
-# External-anchor candidate: Shu-ilishu cylinder seal (Louvre AO 22310)
+# AO 22310 Shu-ilishu source-bound contact object
 
-Date: 2026-06-11 America/Los_Angeles
+Original candidate date: 2026-06-11 America/Los_Angeles
+Source-binding decision: 2026-07-12 America/Los_Angeles
 
-Status: external-anchor *candidate* only. This does NOT earn an external-anchor claim. Accepted external anchors remain 0. It is staged for the blind/source gate, not self-accepted.
+Status: `source_bound_contact_object_no_indus_bilingual_no_external_anchor`.
 
-## Why staged
+This annotation is complete. It binds the local rollout image to Louvre accession `AO 22310` and its publication route. It does not earn an external-anchor claim. Accepted external anchors remain `0`.
 
-The project's external-anchor count is 0 and the standard is a source-visible image with readable context, not a textual mention. Among contact-era artifacts, the Shu-ilishu cylinder seal is the best-provenanced, freely-illustrated candidate that ties Mesopotamia to "the Meluhhan language." It is the strongest *starting point* for the anchor lane.
+## Exact local binary
 
-## Artifact facts (confidence HIGH)
+- Repo file: `research/data/meluhha/source_images/louvre_AO22310_shu_ilishu_de_clercq_plate9_no83.jpg`
+- Dimensions: `1552 x 802`
+- Bytes: `678486`
+- SHA-256: `7A5C7EC00DE1F01540F05A90B8F9E7752096A74391972CAB4F8CC05533D5B670`
+- SHA-1: `E699D076FE1CC066B84AD9BC7C024132A2CC043C`
+- Sidecar: `research/data/meluhha/source_images/louvre_AO22310_shu_ilishu_de_clercq_plate9_no83.provenance.json`
 
-- Object: Akkadian cylinder seal, serpentine, ~2020 BCE (late Akkadian / early post-Akkadian).
-- Holding: Musée du Louvre, Département des Antiquités Orientales, Paris. Accession `AO 22310`.
-- Cuneiform inscription: names the owner Shu-ilishu, titled an interpreter / translator "of the Meluhhan language" (EME.BAL — interpreter; Me-luh-ha — Meluhha).
-- Imagery: a rollout/impression and detail photographs are published openly (Wikimedia Commons file for AO 22310; Penn Museum *Expedition* article "Shu-ilishu's Cylinder Seal").
+The dimensions, byte count, and SHA-1 match the Wikimedia Commons original. Commons identifies the image source as Louis de Clercq's 1888 catalogue. The Louvre record independently identifies the same object as De Clercq plate IX, no. 83.
 
-Sources:
-- `https://www.penn.museum/sites/expedition/shu-ilishus-cylinder-seal/`
-- `https://commons.wikimedia.org/wiki/File:Akkadian_cylinder_seal_with_inscription_Shu-ilishu,_interpreter_of_the_Meluhhan_language,_Louvre_Museum_AO_22310.jpg`
+## Object and publication binding
 
-(Both returned HTTP 403 / allowlist block to automated fetch in this environment; the facts above are from the search-proxy result and standard published scholarship. A human or an authenticated tool can retrieve the image directly. The image must be source-bound — not corpus-mediated — before any gate use.)
+1. The Louvre collections record identifies the cylinder seal as `AO 22310`, in the Department of Near Eastern Antiquities.
+2. The Louvre describes the language as Akkadian and gives the inscription as “Shilishu, the interpreter of (the land of) Meluhha.”
+3. The same record cites Louis de Clercq and Joachim Menant, *Collection de Clercq*, volume I (1888), plate 9, no. 83.
+4. Wikimedia identifies that 1888 publication as the source of the exact local rollout image.
+5. The BnF Gallica IIIF route exposes the original plate IX at canvas `f310`.
+6. Gregory Possehl reports that Steve Tinney reconfirmed the reading from a fresh impression made from the original seal in 2004.
 
-## Hard guards (why this is NOT yet an anchor)
+Routes checked:
 
-1. **It is not a bilingual.** No Indus signs are securely read on AO 22310. It attests *contact and an interpreter*, not a Meluhha-script text with an Akkadian gloss. Treating it as a bilingual would be the exact overreach this project rejects.
-2. **Fringe claims must stay quarantined.** Some non-peer-reviewed sources (e.g. Kalyanaraman) assert the seal carries readable "Indus Script hieroglyphs" encoding a metals-trade message. That is a decipherment-style claim, not accepted scholarship; cite it only as autopsy of a claim, never as support.
-3. **No image binding achieved here.** The environment could not fetch the image; provenance is recorded, the binding is not done.
-4. **A contact anchor is not a reading.** Even fully source-bound, this artifact could at most corroborate that a "Meluhhan language" existed and was interpretable in Akkad ~2020 BCE. It supplies no sign value, phonetics, or translation.
+- Louvre: `https://collections.louvre.fr/ark:/53355/cl010147038`
+- Wikimedia original: `https://commons.wikimedia.org/wiki/File:Akkadian_cylinder_seal_with_inscription_Shu-ilishu,_interpreter_of_the_Meluhhan_language,_Louvre_Museum_AO_22310.jpg`
+- De Clercq plate IX, BnF IIIF: `https://gallica.bnf.fr/iiif/ark:/12148/bpt6k927127w/canvas/f310`
+- Penn Museum / Possehl: `https://www.penn.museum/sites/expedition/shu-ilishus-cylinder-seal/`
 
-## What would promote it
+## Chronology and provenience correction
 
-- Source-bind the Louvre AO 22310 image directly from the Louvre collections database or Wikimedia original file (not a corpus-mediated copy), with caption/accession verified.
-- Keep it classed strictly as a *contact* anchor (existence of a Meluhha language + interpreter), separate from any script-bilingual claim.
-- Even then, route it through the same blind/skeptic gates as any other claim before it touches the ledger.
+The old candidate's unqualified `~2020 BCE` is withdrawn.
+
+- Louvre catalogue date: Akkadian period, `2340-2200 BCE`.
+- Possehl/Porada stylistic discussion: Late Akkadian, `2200-2113 BCE`, possibly Ur III, `2113-2004 BCE`.
+- `ca. 2020 BCE` appears only under the low chronology cited by Possehl and is not used as the object's single fixed date here.
+
+The Louvre's `Babylonia = Sumer` entry is explicitly an attribution by style. It is not excavated provenience. Possehl states that the De Clercq collection was assembled through dealers with little or no provenience data and that AO 22310's archaeological findspot is unknown.
+
+## Hard research boundary
+
+- AO 22310 contains an Akkadian inscription about an interpreter of Meluhha.
+- It contains no securely identified Indus text.
+- It is not an Akkadian-Indus bilingual.
+- It provides no Indus sign value, phonetics, reading, language-family identification, or translation.
+- The reasonable association of Meluhha with the Greater Indus world is contact context, not an object-level script bridge.
+- Possehl explicitly treats a true Akkadian/Meluhhan bilingual as something that might exist, not something AO 22310 already supplies.
 
 ## Decision
 
-Status: `shu_ilishu_AO22310_contact_anchor_candidate_no_image_binding_no_anchor_claim`.
+Decision: `COMPLETE_SOURCE_BOUND_CONTACT_OBJECT`.
 
-Use as: the highest-priority, best-imaged starting point for the external-anchor acquisition lane. Do not use as: a bilingual, a reading, or an accepted anchor. External anchors accepted remains 0.
+Use as: a source-bound attestation that Akkadian scholarly tradition described a person as an interpreter of Meluhha.
+Do not use as: an external Indus-script anchor, bilingual, phonetic constraint, sign reading, or proof of an excavated findspot.
+
+Accepted-count changes: none.

@@ -1,0 +1,413 @@
+{
+  "aggregates": [
+    {
+      "arm": "ivc",
+      "mean_authentic_corruption_win_share": 0.9077362151199756,
+      "mean_masked_nll": 4.312010021938417,
+      "mean_masked_top1": 0.23846291852732565,
+      "mean_masked_top5": 0.4235440502913118,
+      "mean_multiclass_brier": 0.8985785000988663,
+      "mean_stored_order_win_share": 0.8876692252336239,
+      "model": "medium",
+      "runs": 5,
+      "seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ]
+    },
+    {
+      "arm": "ivc",
+      "mean_authentic_corruption_win_share": 0.8861607133730356,
+      "mean_masked_nll": 4.116507305760019,
+      "mean_masked_top1": 0.25445620629169985,
+      "mean_masked_top5": 0.4463350957095553,
+      "mean_multiclass_brier": 0.8701807643839536,
+      "mean_stored_order_win_share": 0.8948443291402685,
+      "model": "micro",
+      "runs": 5,
+      "seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ]
+    },
+    {
+      "arm": "ivc",
+      "mean_authentic_corruption_win_share": 0.8818898845118278,
+      "mean_masked_nll": 4.1946180042010734,
+      "mean_masked_top1": 0.2468386204908231,
+      "mean_masked_top5": 0.4419397590894233,
+      "mean_multiclass_brier": 0.8848872340264619,
+      "mean_stored_order_win_share": 0.8834021785129442,
+      "model": "small",
+      "runs": 5,
+      "seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ]
+    },
+    {
+      "arm": "ivc_position_slot_shuffle",
+      "mean_authentic_corruption_win_share": 0.8285925735115234,
+      "mean_masked_nll": 4.843805432244756,
+      "mean_masked_top1": 0.1182376456474793,
+      "mean_masked_top5": 0.25173427010431654,
+      "mean_multiclass_brier": 0.9608794644954773,
+      "mean_stored_order_win_share": 0.8779043772654511,
+      "model": "small",
+      "runs": 5,
+      "seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ]
+    },
+    {
+      "arm": "ivc_row_internal_shuffle",
+      "mean_authentic_corruption_win_share": 0.49390663939436685,
+      "mean_masked_nll": 4.561077638988508,
+      "mean_masked_top1": 0.18636017074451608,
+      "mean_masked_top5": 0.36094919255195046,
+      "mean_multiclass_brier": 0.9366740636057962,
+      "mean_stored_order_win_share": 0.4699797195491688,
+      "model": "small",
+      "runs": 5,
+      "seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ]
+    },
+    {
+      "arm": "ivc_transfer_ivc_position_slot_shuffle",
+      "mean_authentic_corruption_win_share": 0.8876552466466723,
+      "mean_masked_nll": 4.068496628824664,
+      "mean_masked_top1": 0.2672080635712011,
+      "mean_masked_top5": 0.45576068434139694,
+      "mean_multiclass_brier": 0.8553651538564988,
+      "mean_stored_order_win_share": 0.9121787991601604,
+      "model": "micro",
+      "runs": 5,
+      "seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ]
+    },
+    {
+      "arm": "ivc_transfer_known_writing",
+      "mean_authentic_corruption_win_share": 0.8990718422704292,
+      "mean_masked_nll": 4.025646583109883,
+      "mean_masked_top1": 0.27684040132428744,
+      "mean_masked_top5": 0.466790597547741,
+      "mean_multiclass_brier": 0.8503608485157876,
+      "mean_stored_order_win_share": 0.8935840074743273,
+      "model": "micro",
+      "runs": 5,
+      "seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ]
+    },
+    {
+      "arm": "ivc_transfer_nonwriting",
+      "mean_authentic_corruption_win_share": 0.8848457295544637,
+      "mean_masked_nll": 4.044716360907035,
+      "mean_masked_top1": 0.2720530094192359,
+      "mean_masked_top5": 0.465436013338279,
+      "mean_multiclass_brier": 0.8564264897915352,
+      "mean_stored_order_win_share": 0.9105634929396637,
+      "model": "micro",
+      "runs": 5,
+      "seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ]
+    },
+    {
+      "arm": "linear_b",
+      "mean_authentic_corruption_win_share": 0.9665505226480835,
+      "mean_masked_nll": 2.746631450738726,
+      "mean_masked_top1": 0.40021498094939345,
+      "mean_masked_top5": 0.6294893471714962,
+      "mean_multiclass_brier": 0.7527798152343022,
+      "mean_stored_order_win_share": 0.9713124274099885,
+      "model": "small",
+      "runs": 5,
+      "seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ]
+    },
+    {
+      "arm": "pretrain_ivc_position_slot_shuffle",
+      "mean_authentic_corruption_win_share": 0.8780454449821166,
+      "mean_masked_nll": 4.711255430359857,
+      "mean_masked_top1": 0.12276582921912609,
+      "mean_masked_top5": 0.27351642766772477,
+      "mean_multiclass_brier": 0.9575997089386604,
+      "mean_stored_order_win_share": 0.9215600673258993,
+      "model": "micro",
+      "runs": 5,
+      "seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ]
+    },
+    {
+      "arm": "pretrain_known_writing",
+      "mean_authentic_corruption_win_share": 0.7570205399195505,
+      "mean_masked_nll": 4.584529217122833,
+      "mean_masked_top1": 0.11680441307631113,
+      "mean_masked_top5": 0.27235886966917233,
+      "mean_multiclass_brier": 0.9592735612639753,
+      "mean_stored_order_win_share": 0.8470862505459467,
+      "model": "micro",
+      "runs": 5,
+      "seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ]
+    },
+    {
+      "arm": "pretrain_nonwriting",
+      "mean_authentic_corruption_win_share": 0.5045939342656436,
+      "mean_masked_nll": 3.109725339002261,
+      "mean_masked_top1": 0.18746242950173037,
+      "mean_masked_top5": 0.592402886706266,
+      "mean_multiclass_brier": 0.8975964835812308,
+      "mean_stored_order_win_share": 0.5830693057985432,
+      "model": "micro",
+      "runs": 5,
+      "seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ]
+    },
+    {
+      "arm": "sumtablets",
+      "mean_authentic_corruption_win_share": 0.8706427989800076,
+      "mean_masked_nll": 4.501302747043619,
+      "mean_masked_top1": 0.155007189451506,
+      "mean_masked_top5": 0.3254775144061031,
+      "mean_multiclass_brier": 0.9542379437470929,
+      "mean_stored_order_win_share": 0.87325425214712,
+      "model": "small",
+      "runs": 5,
+      "seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ]
+    }
+  ],
+  "exposure_checks": [
+    {
+      "attrition_ceiling_fraction": 0.15,
+      "complete": true,
+      "exposure_tolerance_fraction": 0.2,
+      "masked_position_relative_spread": 0.2334295240095231,
+      "maximum_null_attrition_fraction": 0.0,
+      "seed": 20260712,
+      "train_record_relative_spread": 0.11727078891257996,
+      "train_token_relative_spread": 0.27662895044869296,
+      "within_tolerance": false
+    },
+    {
+      "attrition_ceiling_fraction": 0.15,
+      "complete": true,
+      "exposure_tolerance_fraction": 0.2,
+      "masked_position_relative_spread": 0.22663784856322858,
+      "maximum_null_attrition_fraction": 0.0,
+      "seed": 20260713,
+      "train_record_relative_spread": 0.11727078891257996,
+      "train_token_relative_spread": 0.26369327073552423,
+      "within_tolerance": false
+    },
+    {
+      "attrition_ceiling_fraction": 0.15,
+      "complete": true,
+      "exposure_tolerance_fraction": 0.2,
+      "masked_position_relative_spread": 0.23325713695633807,
+      "maximum_null_attrition_fraction": 0.0,
+      "seed": 20260714,
+      "train_record_relative_spread": 0.12738853503184713,
+      "train_token_relative_spread": 0.27053328143246397,
+      "within_tolerance": false
+    },
+    {
+      "attrition_ceiling_fraction": 0.15,
+      "complete": true,
+      "exposure_tolerance_fraction": 0.2,
+      "masked_position_relative_spread": 0.24606161477862057,
+      "maximum_null_attrition_fraction": 0.0,
+      "seed": 20260715,
+      "train_record_relative_spread": 0.12101910828025478,
+      "train_token_relative_spread": 0.2900997697620875,
+      "within_tolerance": false
+    },
+    {
+      "attrition_ceiling_fraction": 0.15,
+      "complete": true,
+      "exposure_tolerance_fraction": 0.2,
+      "masked_position_relative_spread": 0.20661346357776997,
+      "maximum_null_attrition_fraction": 0.0,
+      "seed": 20260716,
+      "train_record_relative_spread": 0.09341825902335456,
+      "train_token_relative_spread": 0.2477495107632094,
+      "within_tolerance": false
+    }
+  ],
+  "gate": {
+    "criterion": "Known-writing transfer must improve ordinary held-out NLL over random-init IVC, nonwriting transfer, and position-slot-shuffled transfer, with every paired-seed bootstrap lower bound above zero and all pretraining exposures/attrition inside the configured tolerances.",
+    "exposure_checks_complete": true,
+    "exposures_within_tolerance": false,
+    "interpretation_boundary": "Passing is structural-transfer evidence, not evidence of language identity, values, or readings.",
+    "statistical_comparisons_complete": true,
+    "status": "fail"
+  },
+  "specificity": [
+    {
+      "comparison": "ivc_transfer_known_writing_vs_ivc_transfer_nonwriting",
+      "paired_seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ],
+      "positive_nll_gain_favors_known_writing": {
+        "ci95_high": 0.04437640739472727,
+        "ci95_low": -0.008672141794249822,
+        "mean": 0.01906977779715193,
+        "n": 5,
+        "note": "paired_seed_bootstrap_exploratory_with_only_five_planned_seeds"
+      }
+    },
+    {
+      "comparison": "ivc_transfer_known_writing_vs_ivc_transfer_ivc_position_slot_shuffle",
+      "paired_seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ],
+      "positive_nll_gain_favors_known_writing": {
+        "ci95_high": 0.08214549940867802,
+        "ci95_low": 0.004556681170423982,
+        "mean": 0.0428500457147817,
+        "n": 5,
+        "note": "paired_seed_bootstrap_exploratory_with_only_five_planned_seeds"
+      }
+    }
+  ],
+  "transfer_comparisons": [
+    {
+      "comparison": "ivc_transfer_known_writing_vs_random_ivc",
+      "paired_seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ],
+      "positive_nll_gain_favors_transfer": {
+        "ci95_high": 0.11586137474234111,
+        "ci95_low": 0.06586007055793246,
+        "mean": 0.09086072265013678,
+        "n": 5,
+        "note": "paired_seed_bootstrap_exploratory_with_only_five_planned_seeds"
+      },
+      "positive_top1_gain_favors_transfer": {
+        "ci95_high": 0.027024172928972322,
+        "ci95_low": 0.01774421713620291,
+        "mean": 0.022384195032587616,
+        "n": 5,
+        "note": "paired_seed_bootstrap_exploratory_with_only_five_planned_seeds"
+      }
+    },
+    {
+      "comparison": "ivc_transfer_nonwriting_vs_random_ivc",
+      "paired_seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ],
+      "positive_nll_gain_favors_transfer": {
+        "ci95_high": 0.10961506483590569,
+        "ci95_low": 0.04636087856513954,
+        "mean": 0.07179094485298484,
+        "n": 5,
+        "note": "paired_seed_bootstrap_exploratory_with_only_five_planned_seeds"
+      },
+      "positive_top1_gain_favors_transfer": {
+        "ci95_high": 0.021171556379001755,
+        "ci95_low": 0.014200002174067528,
+        "mean": 0.01759680312753605,
+        "n": 5,
+        "note": "paired_seed_bootstrap_exploratory_with_only_five_planned_seeds"
+      }
+    },
+    {
+      "comparison": "ivc_transfer_ivc_position_slot_shuffle_vs_random_ivc",
+      "paired_seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ],
+      "positive_nll_gain_favors_transfer": {
+        "ci95_high": 0.08199549933386399,
+        "ci95_low": 0.021163150987596514,
+        "mean": 0.04801067693535508,
+        "n": 5,
+        "note": "paired_seed_bootstrap_exploratory_with_only_five_planned_seeds"
+      },
+      "positive_top1_gain_favors_transfer": {
+        "ci95_high": 0.027606410517445695,
+        "ci95_low": -0.001265728092879881,
+        "mean": 0.012751857279501266,
+        "n": 5,
+        "note": "paired_seed_bootstrap_exploratory_with_only_five_planned_seeds"
+      }
+    }
+  ]
+}

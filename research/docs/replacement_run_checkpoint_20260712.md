@@ -50,35 +50,48 @@ Artifacts:
 - `research/data/open_prototype/reports/replacement_p050_local220_strict_fish_family_source_gate_20260712_summary.json`
 - `research/data/open_prototype/reports/replacement_p050_local220_strict_fish_family_source_gate_20260712_token_boxes/`
 
-## SLM calibration
+### Source annotations completed before the GPU run
 
-The one permitted local integrated execution completed in 734.985 seconds.
+| Annotation | Source-visible decision | Research consequence |
+| --- | --- | --- |
+| AO 22310 | Bound to De Clercq plate IX no. 83 and Louvre AO 22310; no Indus text and unknown findspot. | Contact object only, not a bilingual or external anchor. |
+| 740 / P324 | Exact at 73/73 aligned positions with labeled CISI panels. | Accepted only as a Lipi-to-Mayig analysis edge. |
+| 002 / P122 | Three source-visible exceptions among 60 positions. | Conflict; exact mapping rejected. |
+| {390,405,406,407} / P086 | P086 merges four visibly distinct Lipi members. | Feature-preserving Mayig-policy merge only; raw Lipi stays distinct. |
+| 032 / P145 | M-143 reverses the dominant 032 002 / P145 P122 pairing. | Conflict; exact mapping rejected. |
+| {817,861} / P385 | Both forward lanes are exact, but roundedness distinguishes members; M-177 is a local 803/P385 collision. | Feature-preserving merge only; global 803/P364 remains conflicted. |
+| P041 / Parpola 41 | Same digits refer to different signs across Parpola, Mayig, Wells, Mahadevan, and Lipi. | Namespace trap resolved; no crosswalk accepted. |
+| M-77 / text no. 7 | M-35 has seven signs and M-77 five; M-37 is the complete three-sign source match. | Printed identifiers rejected; M-37 retained as an intended-reference candidate, not an author-confirmed correction. |
+| M-161 | Source shows four units, including two grids, versus three Lipi tokens. | Literal Lipi count rejected; 617 remains unresolved compound-or-omission policy. |
+| M-105 | Source and stored text length show seven units; signs=5 excludes two real 000 positions. | Structural count is seven; both identities remain unknown and 920/P154 stays uncertain at 4:3. |
 
-- strict input: 1,796 exact sequences, 8,205 signs, 571 sign types;
-- model: 886,850 parameters, random initialization, four layers;
-- split: 663 train, 139 validation, 139 ordinary test, 855 forced hypothesis-family test;
-- ordinary test top-1: `0.1989` versus bidirectional bigram `0.2355`;
-- ordinary test top-5: `0.3857` versus bidirectional bigram `0.4560`;
-- outcome: negative calibration; zero claim increment.
+These decisions tighten the usable corpus and crosswalk without adding a translation, value, meaning, language identification, external anchor, or accepted structural claim. The detailed panels, tables, gates, and object-level decisions remain the evidence record; this checkpoint carries only the synthesis.
 
-The older 1,798-sequence prototype count includes M-207's malformed missing closing delimiter and a case-variant H-23 direction value `R/l`; the strict model loader excludes both. The huge 855-sequence forced partition shows that `002-861`/`002-390` occupy a broad one-edit-connected formula region and would leak badly under row splitting.
+## From-scratch SLM result
 
-The stored-order and trained-corruption scores are not promoted from one seed. The online matrix must complete the exposure-matched known-writing/nonwriting/shuffled transfer gate before any neural result can count even as structural evidence.
+All 65 planned runs completed across five paired seeds. Lower negative log-likelihood (NLL) is better.
 
-Artifacts:
+| Question | Five-seed result | Decision |
+| --- | --- | --- |
+| IVC capacity: micro, 886,850 parameters | NLL 4.1165; top-1 25.45% | Best IVC NLL in every paired seed. |
+| IVC capacity: small, 6,537,794 parameters | NLL 4.1946; top-1 24.68% | Worse than micro; no scale-up signal. |
+| IVC capacity: medium, 18,123,074 parameters | NLL 4.3120; top-1 23.85% | Worse again; 1B escalation is not scientifically justified. |
+| Authentic IVC vs row-internal shuffle, small | Authentic gains 0.3665 NLL and 6.05 top-1 points; stored-order win share 0.883 vs 0.470. | Real order/co-occurrence structure survives grouped holdout. |
+| Authentic IVC vs position-slot shuffle, small | Authentic gains 0.6492 NLL and 12.86 top-1 points. | Structure is not reducible to position marginals. |
+| Known-writing transfer vs random IVC | NLL gain +0.0909, 95% paired bootstrap CI [0.0659, 0.1159]. | Transfer helps. |
+| Known-writing vs nonwriting transfer | Specificity gain +0.0191, CI [-0.0087, 0.0444]. | No writing-specific advantage established. |
+| Known-writing vs position-shuffled-IVC transfer | Specificity gain +0.0429, CI [0.0046, 0.0821]. | Known writing beats this shuffled source, but not the nonwriting comparator. |
+| Exposure matching | Max record spread 12.74%; token spread 29.01%; masked-position spread 24.61%; tolerance 20%. | Exposure gate fails despite zero attrition. |
+| Known-script calibration | Linear B: NLL 2.7466, top-1 40.02%; SumTablets: NLL 4.5013, top-1 15.50%. | Calibration only; cross-corpus absolute scores do not identify language status. |
+| Pre-registered transfer gate | Statistical comparisons complete; exposure checks complete; specificity and exposure requirements not met. | **FAIL**. |
 
-- `research/docs/slm_local_integrated_result_20260712.md`
-- `research/data/open_prototype/reports/slm_local_integrated_20260712_summary.json`
-- `research/data/open_prototype/reports/replacement_integrated_research_gate_20260712_summary.json`
+Interpretation: the model finds reproducible sequential structure in the IVC corpus, because authentic sequences beat both matched corruption controls. That is a structural result, not a linguistic identification. The transfer benefit is not writing-specific: nonwriting pretraining produces a statistically compatible gain, while exposure imbalance also violates the pre-registered design. The capacity curve points in the opposite direction from scaling: the 0.89M model beats the 6.54M and 18.12M models on held-out NLL in all five seeds, so a 1B run would spend compute without answering the live research question.
 
+Raw outputs are preserved in `research/data/slm/ivc_from_scratch_scaling_20260712/`: the full 65-run matrix, per-run comparison table, aggregate analysis, completion/cost record, resolved configuration, and hardware/input manifest.
 ## Next executable order
 
-1. run the five-seed online transfer tournament under the `$14` hard cap;
-2. bind the newly local AO 22310 image to its official contact/provenance route without calling it bilingual;
-3. continue the high-frequency sign crosswalk, beginning with the parked `220/P050` evidence boundary;
-4. build the P041/Parpola-41 namespace table;
-5. build the M-77/Parpola-text-7 object concordance;
-6. construct one homogeneous directionality denominator or close it for insufficient public panels.
+1. adjudicate the bounded M-120 slash-compound mismatch from the local CISI source;
+2. construct one homogeneous directionality denominator or close it for insufficient public panels.
 
 ## Parked lanes
 

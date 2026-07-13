@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "date": "2026-07-12",
+  "gate_id": "m161_source_visible_structural_count",
+  "object_id": "M-161",
+  "decision": "source_visible_four_unit_sequence_rejects_lipi_three_token_structural_count",
+  "source_count": 4,
+  "sources": {
+    "cisi_1": {
+      "pdf_page": 84,
+      "printed_page": 48,
+      "views_checked": ["M-161 A", "M-161 a"],
+      "pdf_sha256": "47A4DA4227CFB7BAA56D6A561E25797225499D0EC54F5A702A82C67AB4746D4D",
+      "panel_manifest": "research/data/sign_crosswalk/source_panels/m161_mismatch/manifest.csv"
+    },
+    "lipi": {
+      "row_id": "2687.1",
+      "object_id": "M-161",
+      "direction": "R/L",
+      "stored_sequence": ["617", "122", "003"],
+      "stored_token_count": 3
+    },
+    "mayig": {
+      "commit": "ad2f1e218a34b8c33c57de0d6cb8d99272765bbb",
+      "side_id": "M-161A",
+      "stored_sequence": ["P268", "P268", "P037", "P123"],
+      "stored_token_count": 4,
+      "raw_record_url": "https://raw.githubusercontent.com/mayig/indus-valley-script-corpus/ad2f1e218a34b8c33c57de0d6cb8d99272765bbb/corpus/m100_m199/m161.json",
+      "raw_record_sha256": "ACA00105AC0C3B08E0A21924E6A247B2BAB7FA50906698EDAE740F3EA33AB5DC",
+      "feature_records": {
+        "P268": {
+          "description": "A grid of x by y cells",
+          "raw_url": "https://raw.githubusercontent.com/mayig/indus-valley-script-corpus/ad2f1e218a34b8c33c57de0d6cb8d99272765bbb/features/P268.json",
+          "sha256": "34248A590A6E9508C42747CDA83871240599456F6BFE78D8E98EEB5B11E3F139"
+        },
+        "P037": {
+          "description": "Person with triangular 'pincer'",
+          "raw_url": "https://raw.githubusercontent.com/mayig/indus-valley-script-corpus/ad2f1e218a34b8c33c57de0d6cb8d99272765bbb/features/P037.json",
+          "sha256": "75A0596CDAB339D4E3C55384927ECD19D1810095AB42286176319FAAC58901DB"
+        },
+        "P123": {
+          "description": "Three adjacent half-height simple vertical strokes",
+          "raw_url": "https://raw.githubusercontent.com/mayig/indus-valley-script-corpus/ad2f1e218a34b8c33c57de0d6cb8d99272765bbb/features/P123.json",
+          "sha256": "EFC16F6463949E4EC8335832495650C52AB292FE694BCFA6308BED8B661D07FC"
+        }
+      }
+    }
+  },
+  "visual_observation": {
+    "impression_A_independently_bounded_units": 4,
+    "seal_a_independently_bounded_units": 4,
+    "normalized_reading_order": [
+      "grid_unit_1",
+      "grid_unit_2",
+      "person_with_triangular_pincer",
+      "three_adjacent_half_height_vertical_strokes"
+    ],
+    "grid_units_independently_bounded": true,
+    "grid_units_indivisible_single_compound": false
+  },
+  "catalogue_decisions": {
+    "lipi_three_token_structural_count_accepted": false,
+    "local_617_classification": "unresolved_compound_or_omission_policy",
+    "local_617_to_mayig_P268_accepted": false,
+    "local_617_reason": "The three-token Lipi sequence corresponds to a four-unit source sequence beginning with two separate grids. This object cannot distinguish a two-grid compound-token policy from omitted or suppressed repetition.",
+    "local_122_to_mayig_P037_adjudicated": false
+  },
+  "object_bound_position_match": {
+    "lipi_sign": "003",
+    "lipi_stored_token_position_1based": 3,
+    "source_unit_position_1based": 4,
+    "mayig_sign": "P123",
+    "mayig_position_1based": 4,
+    "visual_form": "three_adjacent_half_height_vertical_strokes",
+    "status": "source_bound_exact_position_match_on_M-161_only",
+    "global_edge_accepted_from_this_object": false
+  },
+  "claim_boundaries": {
+    "global_617_to_P268_identity": false,
+    "global_003_to_P123_identity_from_this_gate": false,
+    "sign_meaning": false,
+    "phonetic_value": false,
+    "language_identity": false,
+    "translation": false,
+    "accepted_decipherment_claim_count_increment": 0
+  }
+}

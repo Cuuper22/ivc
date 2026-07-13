@@ -69,6 +69,14 @@ def _git_value(repo: Path, *args: str) -> str:
         return "unavailable"
 
 
+def _git_value_or_environment(repo: Path, environment_key: str, *args: str) -> str:
+    """Keep source provenance when a remote image intentionally omits `.git`."""
+    value = _git_value(repo, *args)
+    if value != "unavailable":
+        return value
+    return os.environ.get(environment_key, "unavailable")
+
+
 def _hardware_manifest(device: torch.device) -> dict:
     result = {
         "platform": platform.platform(),
@@ -731,12 +739,19 @@ def _write_matrix_analysis(run_root: Path, summaries: list[dict], config: dict) 
         [known_baseline["positive_nll_gain_favors_transfer"]] if known_baseline else []
     ) + [item["positive_nll_gain_favors_known_writing"] for item in specificity]
     statistical_complete = len(gate_inputs) == 3 and all(item["n"] == planned_seed_count for item in gate_inputs)
-    exposure_complete = (
+    exposure_checks_complete = (
         len(exposure_checks) == planned_seed_count
-        and all(item.get("complete") and item.get("within_tolerance") for item in exposure_checks)
+        and all(item.get("complete") for item in exposure_checks)
     )
-    complete = statistical_complete and exposure_complete
-    passed = complete and all(item["ci95_low"] is not None and item["ci95_low"] > 0 for item in gate_inputs)
+    exposures_within_tolerance = exposure_checks_complete and all(
+        item.get("within_tolerance") for item in exposure_checks
+    )
+    complete = statistical_complete and exposure_checks_complete
+    passed = (
+        complete
+        and exposures_within_tolerance
+        and all(item["ci95_low"] is not None and item["ci95_low"] > 0 for item in gate_inputs)
+    )
     gate = {
         "status": "pass" if passed else "fail" if complete else "incomplete",
         "criterion": (
@@ -745,7 +760,8 @@ def _write_matrix_analysis(run_root: Path, summaries: list[dict], config: dict) 
             "pretraining exposures/attrition inside the configured tolerances."
         ),
         "statistical_comparisons_complete": statistical_complete,
-        "exposure_checks_complete": exposure_complete,
+        "exposure_checks_complete": exposure_checks_complete,
+        "exposures_within_tolerance": exposures_within_tolerance,
         "interpretation_boundary": "Passing is structural-transfer evidence, not evidence of language identity, values, or readings.",
     }
     analysis = {
@@ -772,10 +788,23 @@ def run_matrix(config_path: Path) -> Path:
     if runtime.get("require_cuda", False) and device.type != "cuda":
         raise RuntimeError("This configuration requires CUDA; refusing a silent CPU fallback.")
     corpora = load_corpora(config)
-    run_root = Path(runtime["output_dir"]) / f"{config['experiment_name']}__{started_at.strftime('%Y%m%dT%H%M%SZ')}"
-    run_root.mkdir(parents=True, exist_ok=False)
+    resume_root_raw = os.environ.get("IVCSLM_RESUME_RUN_ROOT", "").strip()
+    run_root = (
+        Path(resume_root_raw)
+        if resume_root_raw
+        else Path(runtime["output_dir"]) / f"{config['experiment_name']}__{started_at.strftime('%Y%m%dT%H%M%SZ')}"
+    )
+    if resume_root_raw:
+        if not run_root.is_dir():
+            raise FileNotFoundError(f"Resume root does not exist: {run_root}")
+        stored_config = json.loads((run_root / "resolved_config.json").read_text(encoding="utf-8"))
+        if stored_config != config:
+            raise ValueError("Resume configuration differs from the immutable original configuration.")
+    else:
+        run_root.mkdir(parents=True, exist_ok=False)
+    write_initial = (lambda *_args, **_kwargs: None) if resume_root_raw else _json_write
     resolved_hash = hashlib.sha256(json.dumps(config, sort_keys=True).encode("utf-8")).hexdigest()
-    _json_write(run_root / "resolved_config.json", config)
+    write_initial(run_root / "resolved_config.json", config)
     project_root = Path(config["project_root"])
     corpus_inventory = {
         name: {
@@ -788,14 +817,21 @@ def run_matrix(config_path: Path) -> Path:
         }
         for name, corpus in corpora.items()
     }
-    _json_write(
+    write_initial(
         run_root / "run_manifest.json",
         {
             "started_at_utc": started_at.isoformat(),
             "config_sha256": resolved_hash,
-            "git_commit": _git_value(project_root, "rev-parse", "HEAD"),
-            "git_branch": _git_value(project_root, "branch", "--show-current"),
-            "git_status_porcelain": _git_value(project_root, "status", "--porcelain"),
+            "git_commit": _git_value_or_environment(
+                project_root, "IVCSLM_SOURCE_COMMIT", "rev-parse", "HEAD"
+            ),
+            "git_branch": _git_value_or_environment(
+                project_root, "IVCSLM_SOURCE_BRANCH", "branch", "--show-current"
+            ),
+            "git_status_porcelain": _git_value_or_environment(
+                project_root, "IVCSLM_SOURCE_STATUS_PORCELAIN", "status", "--porcelain"
+            ),
+            "source_tree_sha256": os.environ.get("IVCSLM_SOURCE_TREE_SHA256", "unavailable"),
             "command": " ".join(sys.argv),
             "hardware": _hardware_manifest(device),
             "environment": {
@@ -811,7 +847,15 @@ def run_matrix(config_path: Path) -> Path:
             "corpora": corpus_inventory,
         },
     )
-    summaries: list[dict] = []
+    summaries: list[dict] = (
+        json.loads((run_root / "matrix_summary.json").read_text(encoding="utf-8"))
+        if resume_root_raw
+        else []
+    )
+    completed_by_key = {
+        (summary["arm"], summary["model"]["name"], summary["seed"]): summary
+        for summary in summaries
+    }
     model_names = [item["name"] for item in config["models"]]
     matrix = config["matrix"]
     seeds = config["training"]["seeds"]
@@ -825,7 +869,9 @@ def run_matrix(config_path: Path) -> Path:
     rate = runtime["planned_hourly_rate_usd"]
     if runtime.get("require_cuda", False) and rate <= 0:
         raise ValueError("CUDA hourly rate must be positive for budget enforcement.")
-    max_hours_by_cost = spendable / rate if rate > 0 else float("inf")
+    prior_billed_hours = float(os.environ.get("IVCSLM_PRIOR_BILLED_HOURS", "0") or 0)
+    remaining_spendable = max(0.0, spendable - prior_billed_hours * rate)
+    max_hours_by_cost = remaining_spendable / rate if rate > 0 else float("inf")
     allowed_hours = min(runtime["hard_runtime_hours"], max_hours_by_cost)
     billed_start_raw = os.environ.get("IVCSLM_BILLED_START_UNIX", "")
     billed_start = float(billed_start_raw) if billed_start_raw else None
@@ -847,6 +893,9 @@ def run_matrix(config_path: Path) -> Path:
         training_overrides: dict | None = None,
         published_authentic_inventory: set[tuple[str, ...]] | None = None,
     ) -> dict | None:
+        key = (run_label or corpus.name, model_name, seed)
+        if key in completed_by_key:
+            return completed_by_key[key]
         if not within_budget():
             return None
         try:
@@ -879,6 +928,7 @@ def run_matrix(config_path: Path) -> Path:
             )
             return None
         summaries.append(summary)
+        completed_by_key[key] = summary
         _json_write(run_root / "matrix_summary.json", summaries)
         _write_matrix_analysis(run_root, summaries, config)
         return summary
@@ -967,7 +1017,8 @@ def run_matrix(config_path: Path) -> Path:
             if not within_budget():
                 break
     elapsed_hours = (time.monotonic() - wall_start) / 3600
-    billed_elapsed_hours = max(0.0, (time.time() - billed_start) / 3600) if billed_start is not None else elapsed_hours
+    session_billed_hours = max(0.0, (time.time() - billed_start) / 3600) if billed_start is not None else elapsed_hours
+    billed_elapsed_hours = prior_billed_hours + session_billed_hours
     analysis = _write_matrix_analysis(run_root, summaries, config)
     final = {
         "completed_at_utc": datetime.now(timezone.utc).isoformat(),
@@ -976,6 +1027,10 @@ def run_matrix(config_path: Path) -> Path:
         "elapsed_hours": elapsed_hours,
         "billed_elapsed_hours_including_reported_setup": billed_elapsed_hours,
         "setup_hours_before_runner": setup_hours,
+        "prior_billed_hours_conservative": prior_billed_hours,
+        "resume_session": bool(resume_root_raw),
+        "resume_source_tree_sha256": os.environ.get("IVCSLM_RESUME_SOURCE_TREE_SHA256", ""),
+        "resume_source_status_porcelain": os.environ.get("IVCSLM_RESUME_SOURCE_STATUS_PORCELAIN", ""),
         "hourly_rate_usd": rate,
         "estimated_compute_cost_usd": billed_elapsed_hours * rate,
         "budget_ceiling_usd": runtime["budget_usd"],
