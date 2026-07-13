@@ -73,6 +73,7 @@ Artifacts:
 | M-45 | Both CISI views show seven bounded units and two separately outlined initial grids, matching Mayig P268 P268 where Lipi has one initial 617. This is the third independent source-confirmed instance with no checked counterexample. | Use seven source units and expand 617 to two grid positions on M-45. Across the five overlap rows, 617-to-P268-P268 is now a strong catalogue-expansion candidate pending the two remaining source checks. |
 | M-81 | All three CISI views show seven bounded units and an internal pair of separately outlined grids followed by another sign, matching Mayig P268 P268 where Lipi has one 617. | Use seven source units and expand 617 to two grid positions on M-81. The policy is now source-supported at both initial and internal positions in 4/5 overlap cases, with no checked counterexample. |
 | M-4 / 617 overlap closure | Both M-4 inscription views show ten bounded units and two separately enclosed grids. Across all five 617 overlap rows, one Lipi 617 corresponds to Mayig P268 P268, the source shows two grids, and Mayig's count is correct; counterexamples 0/5. | Accept 617-to-two-grid structural expansion for the complete five-object overlap cluster. Keep raw catalogues unchanged and Lipi-only 617 rows source-pending. All eight unflagged-Mayig-extra rows are now adjudicated. |
+| M-10 | Both CISI inscription views show one continuous five-vertical-stroke run where Lipi splits 032 033 and Mayig uses P151. There is no missing Mayig graphic and no source-visible boundary after stroke two. | Normalize one five-stroke graphic region while retaining both catalogue tokenizations at their own levels. Neither the ten- nor eleven-unit count is source-established; exclude Lipi's internal 032-033 edge from sign-level statistics. |
 
 These decisions tighten the usable corpus and crosswalk without adding a translation, value, meaning, language identification, external anchor, or accepted structural claim. The detailed panels, tables, gates, and object-level decisions remain the evidence record; this checkpoint carries only the synthesis.
 
@@ -136,7 +137,7 @@ Detailed decision: `research/docs/campaign_032_002_861_603_cross_context_graphic
 
 ## Next executable order
 
-1. Adjudicate M-10, the first `unflagged_lipi_extra` row: identify which of Lipi's eleven tokens is not preserved in Mayig's ten-grapheme record and decide whether the source supports a Lipi split or a Mayig omission.
+1. Adjudicate M-41, the next `unflagged_lipi_extra` row: localize Lipi's ninth token against Mayig's eight graphemes and decide whether the source supports a split, omission, or catalogue compound.
 
 ## Parked lanes
 
