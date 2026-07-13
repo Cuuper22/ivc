@@ -68,6 +68,7 @@ Artifacts:
 | Overlap policy: M-55, M-60 | A same-position Lipi 000 and Mayig P000 overlay one source-visible damaged partial sign, rather than forming two events. | Normalize one damaged unknown sign slot with attached loss metadata. M-55's 760 is not initial; M-60's 151 is not terminal. |
 | M-111 | Both CISI views show seven units and two separately bounded terminal six-spoked wheels; Mayig records P378 P378 while Lipi collapses the pair into terminal 821. | Use seven source units and expand the terminal pair for sign-level analyses. Keep 821 only as an object-level macro; no global 821/P378 rule is accepted. |
 | M-162 | Both CISI views show six units; Mayig's middle P230 P234 pair is separately bounded while Lipi has only 552. M-126 carries the same Mayig pair against two Lipi positions, 520-552. | Use six source units. Treat one unit before 552 as probably omitted from Lipi on this object; the apparent 840-552 edge is not a direct sign adjacency. |
+| M-20 | Both CISI views show the six vertical strokes represented by Mayig P147 P147, so the repeat is not an accidental duplicate. The strokes form one evenly spaced, unenclosed run, so the source does not fix a one-sign versus two-sign boundary. | Preserve one atomicity-ambiguous six-stroke region. Keep Lipi's seven-token and Mayig's eight-grapheme representations catalogue-level; neither becomes the source structural count. |
 
 These decisions tighten the usable corpus and crosswalk without adding a translation, value, meaning, language identification, external anchor, or accepted structural claim. The detailed panels, tables, gates, and object-level decisions remain the evidence record; this checkpoint carries only the synthesis.
 
@@ -131,7 +132,7 @@ Detailed decision: `research/docs/campaign_032_002_861_603_cross_context_graphic
 
 ## Next executable order
 
-1. Adjudicate unflagged Mayig-extra row M-20 against both CISI views: test whether repeated `P147 P147` represents two source units collapsed by Lipi or a Mayig duplication.
+1. Adjudicate unflagged Mayig-extra row M-25 against both CISI views: test whether its repeated initial `P268 P268` supplies a second source-visible case for the Lipi `617` compound-or-omission problem already exposed by M-161.
 
 ## Parked lanes
 
