@@ -64,7 +64,7 @@ Artifacts:
 | M-77 / text no. 7 | M-35 has seven signs and M-77 five; M-37 is the complete three-sign source match. | Printed identifiers rejected; M-37 retained as an intended-reference candidate, not an author-confirmed correction. |
 | M-161 | Source shows four units, including two grids, versus three Lipi tokens. | Literal Lipi count rejected; 617 remains unresolved compound-or-omission policy. |
 | M-105 | Source and stored text length show seven units; signs=5 excludes two real 000 positions. | Structural count is seven; both identities remain unknown and 920/P154 stays uncertain at 4:3. |
-| M-110 | Source shows two identifiable signs plus a broken inscription span; Mayig defines P000 as damage/lost material, not a sign identity. | Recognized-sign count is two. Preserve P000 as a non-sign damage-span event, exclude it from sign counts, and align it only to Lipi's object-level 000-000 gap. |
+| P000 policy: M-110, M-126, M-73 | All three flagged CISI objects show only the Lipi-counted bounded signs plus the damaged span encoded by Mayig P000. | P000 is uniformly non-sign damage metadata. M-126 and M-73 count mismatches close; M-110's complete original length remains unresolved across its lost span. |
 
 These decisions tighten the usable corpus and crosswalk without adding a translation, value, meaning, language identification, external anchor, or accepted structural claim. The detailed panels, tables, gates, and object-level decisions remain the evidence record; this checkpoint carries only the synthesis.
 
@@ -128,7 +128,7 @@ Detailed decision: `research/docs/campaign_032_002_861_603_cross_context_graphic
 
 ## Next executable order
 
-1. Apply the M-110 damage-span policy to mismatch-queue object M-126 against its exact CISI panel: test whether `P000` is again non-sign missingness or whether the source shows an additional bounded unit.
+1. Adjudicate the next unresolved `lipi_unknown_zero_explains_count` object, M-27, against both CISI views: test whether its Lipi `000` is a bounded source sign, an uncertainty code, or lost material.
 
 ## Parked lanes
 
