@@ -113,9 +113,21 @@ Decision: `CLOSE_034_OBJECT_SIZE_OR_METROLOGICAL_TIER_UNDER_CURRENT_LOCAL_EVIDEN
 
 Detailed decision: `research/docs/frame700_034_size_tier_heldout_decision_20260712.md`.
 
+## `603` cross-context graphic closure
+
+Decision: `CLOSED_CROSS_CONTEXT_603_GRAPHIC_IDENTITY_NOT_SOURCE_SUPPORTED`.
+
+- M-240, M-714, and M-1273 preserve a recurrent rectangular ladder/window-like post-`861` terminal class in the source panels.
+- H-1138 and H-1846 preserve the five-unit Harappa `740-X-240-060-692` formula, but local `603` can only be visual unit 2 or 4 under forward/reversed order. Neither candidate is the Mohenjo window.
+- H-1846 has a window-like edge unit, but it maps to local `740` or `692`, not `603`, under the two linear orientations. Making it `603` would require rejecting the stored sequence/order and therefore still kills the current bridge.
+- The shared Lipi number is catalog-mediated, not source-visible cross-context identity. Keep the Mohenjo tail class and Harappa internal-slot candidate separate; do not use the Harappa rows to interpret the Mohenjo tail.
+- No raw corpus number is rewritten and no value, function, phonetic reading, language, or translation is accepted.
+
+Detailed decision: `research/docs/campaign_032_002_861_603_cross_context_graphic_closure_20260712.md`.
+
 ## Next executable order
 
-1. Test whether local `603` is the same graphic unit across the source-visible Harappa `740-603-240-060-692` slot and Mohenjo-daro post-`002-861-603` tails; if existing public panels cannot retokenize both contexts, close the bridge and move on rather than expanding another packet.
+1. Adjudicate mismatch-queue object M-110 against the local CISI 1 panel and pinned Mayig row: decide whether Mayig `P000` is a damaged/unknown sign-bearing unit or an extra placeholder, without choosing a corpus by convenience.
 
 ## Parked lanes
 
