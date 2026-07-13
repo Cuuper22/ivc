@@ -72,6 +72,7 @@ Artifacts:
 | M-25 | All three CISI views show five bounded units, including two separately outlined grids where Mayig has P268 P268 and Lipi begins with one 617. This independently repeats the source-visible M-161 discrepancy. | Use five source units and keep the grids separate. Classify 617 as a recurrent pair-macro-or-suppressed-repeat problem; do not use the Lipi 617-243 edge as literal sign adjacency. |
 | M-45 | Both CISI views show seven bounded units and two separately outlined initial grids, matching Mayig P268 P268 where Lipi has one initial 617. This is the third independent source-confirmed instance with no checked counterexample. | Use seven source units and expand 617 to two grid positions on M-45. Across the five overlap rows, 617-to-P268-P268 is now a strong catalogue-expansion candidate pending the two remaining source checks. |
 | M-81 | All three CISI views show seven bounded units and an internal pair of separately outlined grids followed by another sign, matching Mayig P268 P268 where Lipi has one 617. | Use seven source units and expand 617 to two grid positions on M-81. The policy is now source-supported at both initial and internal positions in 4/5 overlap cases, with no checked counterexample. |
+| M-4 / 617 overlap closure | Both M-4 inscription views show ten bounded units and two separately enclosed grids. Across all five 617 overlap rows, one Lipi 617 corresponds to Mayig P268 P268, the source shows two grids, and Mayig's count is correct; counterexamples 0/5. | Accept 617-to-two-grid structural expansion for the complete five-object overlap cluster. Keep raw catalogues unchanged and Lipi-only 617 rows source-pending. All eight unflagged-Mayig-extra rows are now adjudicated. |
 
 These decisions tighten the usable corpus and crosswalk without adding a translation, value, meaning, language identification, external anchor, or accepted structural claim. The detailed panels, tables, gates, and object-level decisions remain the evidence record; this checkpoint carries only the synthesis.
 
@@ -135,7 +136,7 @@ Detailed decision: `research/docs/campaign_032_002_861_603_cross_context_graphic
 
 ## Next executable order
 
-1. Adjudicate M-4, the fifth and final exact `617` overlap case. If its source also shows the P268 pair, promote `617 -> two grid positions` as the complete-overlap normalization policy while keeping Lipi-only rows source-pending.
+1. Adjudicate M-10, the first `unflagged_lipi_extra` row: identify which of Lipi's eleven tokens is not preserved in Mayig's ten-grapheme record and decide whether the source supports a Lipi split or a Mayig omission.
 
 ## Parked lanes
 
