@@ -66,6 +66,7 @@ Artifacts:
 | Lipi 000 policy: M-105, M-27, M-61, M-62 | All four flagged CISI objects show a bounded unit at every stored 000 position; Mayig independently supplies a named grapheme at each same-position slot. | Lipi 000 is a sign-bearing unknown-identity token and counts structurally. M-27's 900 is penultimate, not terminal. |
 | P000 policy: M-110, M-126, M-73 | All three flagged CISI objects show only the Lipi-counted bounded signs plus the damaged span encoded by Mayig P000. | P000 is uniformly non-sign damage metadata. M-126 and M-73 count mismatches close; M-110's complete original length remains unresolved across its lost span. |
 | Overlap policy: M-55, M-60 | A same-position Lipi 000 and Mayig P000 overlay one source-visible damaged partial sign, rather than forming two events. | Normalize one damaged unknown sign slot with attached loss metadata. M-55's 760 is not initial; M-60's 151 is not terminal. |
+| M-111 | Both CISI views show seven units and two separately bounded terminal six-spoked wheels; Mayig records P378 P378 while Lipi collapses the pair into terminal 821. | Use seven source units and expand the terminal pair for sign-level analyses. Keep 821 only as an object-level macro; no global 821/P378 rule is accepted. |
 
 These decisions tighten the usable corpus and crosswalk without adding a translation, value, meaning, language identification, external anchor, or accepted structural claim. The detailed panels, tables, gates, and object-level decisions remain the evidence record; this checkpoint carries only the synthesis.
 
@@ -129,7 +130,7 @@ Detailed decision: `research/docs/campaign_032_002_861_603_cross_context_graphic
 
 ## Next executable order
 
-1. Adjudicate unflagged Mayig-extra row M-111 against both CISI views: test whether repeated `P378 P378` represents two bounded signs, a split compound, or a duplicated transcription.
+1. Adjudicate unflagged Mayig-extra row M-162 against both CISI views, using the M-161 result as a control: decide whether its extra Mayig unit reflects a repeated bounded sign, a Lipi macro, or a transcription duplication.
 
 ## Parked lanes
 
