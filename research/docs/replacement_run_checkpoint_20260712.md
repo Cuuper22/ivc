@@ -79,6 +79,7 @@ Artifacts:
 | M-98 / Lipi-extra closure | Both CISI views show four separate units, including a terminal right parenthesis after the seven-stroke group. Mayig omits that terminal position. Across the four Lipi-extra rows, M-10 and M-72 are segmentation differences while M-41 and M-98 are true Mayig omissions. | Use four units on M-98 and insert a missing terminal P154-like position for object analysis. Do not apply a uniform longer-catalogue rule. All twelve rows in the two unflagged-extra classes are now source-adjudicated. |
 | M-7 | Both CISI views show nine compound-level clusters. Lipi uses one 101 token for the bracketed three-headed figure; Mayig decomposes it as P154 P009 P154 even though its own P010 namespace encodes the integrated compound. | Use nine compound-level units and collapse the three Mayig constituents to one P010-like cluster for sign-unit analysis. Keep eleven entries only for constituent-level work; internal bracket/person transitions are not inter-sign edges. |
 | M-120 correction | Both CISI views show six main-line signs plus a detached lower 858 diamond. The slash in 858/740 records their two-dimensional association; the signs do not touch. Mayig omits the detached diamond. | Use seven source units while preserving a six-sign main line plus one linked lower P363-like unit. Reject the prior six-unit fused-compound decision and do not invent a sequential 858-740 edge. |
+| M-106 | Both CISI views support six structural positions: four recoverable graphics (740, 760, 002, 350) and two distinct damaged sign slots separated by 002. Mayig's terminal P000 is one 70%-loss span covering positions 3-6, not a third sign. | Use six positions with two explicit unknown-sign tokens and attach P000 as span-level damage metadata. Exclude P000 from sign counts and reject the apparent P332-P000 sign adjacency. The sole complex-manual-collation row is closed. |
 
 These decisions tighten the usable corpus and crosswalk without adding a translation, value, meaning, language identification, external anchor, or accepted structural claim. The detailed panels, tables, gates, and object-level decisions remain the evidence record; this checkpoint carries only the synthesis.
 
@@ -142,7 +143,7 @@ Detailed decision: `research/docs/campaign_032_002_861_603_cross_context_graphic
 
 ## Next executable order
 
-1. Adjudicate M-106, the first remaining complex zero/damage row, against both CISI views: separate sign-bearing unknown slots from loss metadata and determine the source structural count.
+1. Adjudicate M-141, the remaining multi-sign zero/slash/P000 row, against CISI before any count or adjacency use.
 
 ## Parked lanes
 
