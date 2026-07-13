@@ -76,6 +76,7 @@ Artifacts:
 | M-10 | Both CISI inscription views show one continuous five-vertical-stroke run where Lipi splits 032 033 and Mayig uses P151. There is no missing Mayig graphic and no source-visible boundary after stroke two. | Normalize one five-stroke graphic region while retaining both catalogue tokenizations at their own levels. Neither the ten- nor eleven-unit count is source-established; exclude Lipi's internal 032-033 edge from sign-level statistics. |
 | M-41 | Both CISI views show nine bounded units and three separate fish-family signs at Lipi 240-233-235. Mayig keeps the outer P062 and P060 positions but omits the bounded middle fish. | Use nine source units. Insert a missing-Mayig middle-fish position between P062 and P060 for object-level analysis; reject their apparent direct adjacency on M-41. |
 | M-72 | Both CISI inscription views show one continuous five-short-stroke run where Lipi splits 003 002 and Mayig uses P125. No source-visible boundary separates a three-stroke sign from a two-stroke sign. | Normalize one five-stroke graphic region while retaining both catalogue tokenizations at their own levels. Neither six nor seven sign units is source-established; exclude Lipi's internal 003-002 edge from sign-level statistics. |
+| M-98 / Lipi-extra closure | Both CISI views show four separate units, including a terminal right parenthesis after the seven-stroke group. Mayig omits that terminal position. Across the four Lipi-extra rows, M-10 and M-72 are segmentation differences while M-41 and M-98 are true Mayig omissions. | Use four units on M-98 and insert a missing terminal P154-like position for object analysis. Do not apply a uniform longer-catalogue rule. All twelve rows in the two unflagged-extra classes are now source-adjudicated. |
 
 These decisions tighten the usable corpus and crosswalk without adding a translation, value, meaning, language identification, external anchor, or accepted structural claim. The detailed panels, tables, gates, and object-level decisions remain the evidence record; this checkpoint carries only the synthesis.
 
@@ -139,7 +140,7 @@ Detailed decision: `research/docs/campaign_032_002_861_603_cross_context_graphic
 
 ## Next executable order
 
-1. Adjudicate M-98, the fourth and final `unflagged_lipi_extra` row: localize Lipi's fourth token against Mayig's three graphemes and close the class as omission, segmentation, or mixed policy.
+1. Adjudicate M-7, the remaining unflagged multi-sign disagreement: localize Mayig's two extra graphemes against the nine-token Lipi row and use the source to distinguish omitted units from compound/segmentation policy.
 
 ## Parked lanes
 
