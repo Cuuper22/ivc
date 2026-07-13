@@ -63,7 +63,7 @@ Artifacts:
 | P041 / Parpola 41 | Same digits refer to different signs across Parpola, Mayig, Wells, Mahadevan, and Lipi. | Namespace trap resolved; no crosswalk accepted. |
 | M-77 / text no. 7 | M-35 has seven signs and M-77 five; M-37 is the complete three-sign source match. | Printed identifiers rejected; M-37 retained as an intended-reference candidate, not an author-confirmed correction. |
 | M-161 | Source shows four units, including two grids, versus three Lipi tokens. | Literal Lipi count rejected; 617 remains unresolved compound-or-omission policy. |
-| M-105 | Source and stored text length show seven units; signs=5 excludes two real 000 positions. | Structural count is seven; both identities remain unknown and 920/P154 stays uncertain at 4:3. |
+| Lipi 000 policy: M-105, M-27, M-61, M-62 | All four flagged CISI objects show a bounded unit at every stored 000 position; Mayig independently supplies a named grapheme at each same-position slot. | Lipi 000 is a sign-bearing unknown-identity token and counts structurally. M-27's 900 is penultimate, not terminal. |
 | P000 policy: M-110, M-126, M-73 | All three flagged CISI objects show only the Lipi-counted bounded signs plus the damaged span encoded by Mayig P000. | P000 is uniformly non-sign damage metadata. M-126 and M-73 count mismatches close; M-110's complete original length remains unresolved across its lost span. |
 
 These decisions tighten the usable corpus and crosswalk without adding a translation, value, meaning, language identification, external anchor, or accepted structural claim. The detailed panels, tables, gates, and object-level decisions remain the evidence record; this checkpoint carries only the synthesis.
@@ -128,7 +128,7 @@ Detailed decision: `research/docs/campaign_032_002_861_603_cross_context_graphic
 
 ## Next executable order
 
-1. Adjudicate the next unresolved `lipi_unknown_zero_explains_count` object, M-27, against both CISI views: test whether its Lipi `000` is a bounded source sign, an uncertainty code, or lost material.
+1. Apply the now-separated Lipi `000` and Mayig `P000` policies to the two ambiguous mismatch rows, M-55 and M-60, using their CISI panels to decide whether both token types refer to one damaged sign slot or to distinct events.
 
 ## Parked lanes
 
