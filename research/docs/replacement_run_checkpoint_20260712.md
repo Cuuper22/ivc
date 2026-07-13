@@ -81,6 +81,7 @@ Artifacts:
 | M-120 correction | Both CISI views show six main-line signs plus a detached lower 858 diamond. The slash in 858/740 records their two-dimensional association; the signs do not touch. Mayig omits the detached diamond. | Use seven source units while preserving a six-sign main line plus one linked lower P363-like unit. Reject the prior six-unit fused-compound decision and do not invent a sequential 858-740 edge. |
 | M-106 | Both CISI views support six structural positions: four recoverable graphics (740, 760, 002, 350) and two distinct damaged sign slots separated by 002. Mayig's terminal P000 is one 70%-loss span covering positions 3-6, not a third sign. | Use six positions with two explicit unknown-sign tokens and attach P000 as span-level damage metadata. Exclude P000 from sign counts and reject the apparent P332-P000 sign adjacency. The sole complex-manual-collation row is closed. |
 | M-141 | The slash separates a three-sign lower row from a damaged upper row. Six identities and one terminal unknown are individually source-supported, but Lipi's three initial upper-row zeros occupy one continuous break and are not separately bounded. Mayig records only the upper row as P000-P122-P000, omitting the lower row, visible 240, and visible 031. | Preserve `lower [817,255,636]` and `upper [LOSS_SPAN(capacity unknown),240,002,031,UNK]`. Minimum directly located count is seven; total length remains indeterminate. Use neither Lipi 10 nor Mayig 3 as a source count, and create no cross-row or damage-token adjacency. |
+| Boundary fragments: M-19, M-22, M-39, M-175 | Each Mayig count is one too high only because its grapheme array contains a P000 open-edge damage span. CISI preserves respectively 2, 6, 6, and 2 bounded signs; no lost boundary has a source-countable capacity. | Keep them as censored sequences with open loss spans, not complete strings. M-19/M-175 add left-censored bare terminal 002-861 suffix controls; M-39 adds a left-censored six-sign suffix; M-22 adds a right-censored six-sign prefix. All 29 mismatch rows are now source-adjudicated. |
 
 These decisions tighten the usable corpus and crosswalk without adding a translation, value, meaning, language identification, external anchor, or accepted structural claim. The detailed panels, tables, gates, and object-level decisions remain the evidence record; this checkpoint carries only the synthesis.
 
@@ -144,7 +145,7 @@ Detailed decision: `research/docs/campaign_032_002_861_603_cross_context_graphic
 
 ## Next executable order
 
-1. Adjudicate M-175, the first of four remaining damaged-boundary fragments, against both CISI views before count or terminality use.
+1. Re-estimate the fixed `002-861` bare-versus-tailed contrast with M-19 and M-175 admitted only as left-censored bare terminal controls; report the exact delta without rerunning the GPU matrix.
 
 ## Parked lanes
 
