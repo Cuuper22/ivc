@@ -157,9 +157,23 @@ M-19 and M-175 enter only as distinct, source-visible left-censored artifact con
 
 The result is small and directionally consistent: bare closure becomes about 0.28-0.29 percentage points more common, while every tailed count stays fixed. `533-717` remains supported by M-376 and M-391 only, at 2/2 observed occurrences in the fixed-prefix terminal context; among tailed rows its share is unchanged. Its share of the canonical whole field falls mechanically from 2/144 to 2/146. The historical forger nulls were not rerun and are not represented as recalculated here. The older 119-row suffix-split table is not mixed into this result because it used a legacy extractor and deduplication rule.
 
+## M-376/M-391 `861 | 533 | 717` boundary gate
+
+Decision: `RETAIN_FIXED_PREFIX_FINDING; PHYSICAL_BOUNDARIES_SOURCE_CONFIRMED; EXACT_NUMERIC_IDENTITY_CATALOGUE_MEDIATED`.
+
+| Witness | Direct result | Scope |
+| --- | --- | --- |
+| CISI M-376, printed p. 94 / PDF p. 130 | The seal and impression show three spatially separate terminal-side graphics compatible, in order, with Lipi `861 | 533 | 717`. | Confirms two visible boundaries and two separate post-`861` signs. |
+| CISI M-391, printed p. 96 / PDF p. 132 | The seal and impression independently show the same three separately bounded terminal-side graphics. | Replicates the physical three-position structure on the second object. |
+| Wells sign list, printed pp. 20-21 | The three visible forms match the listed forms for 861, 533, and 717. | Supports sign-form compatibility, not an artifact-level transcription. |
+| Parpola sign list, printed p. 75 / PDF p. 99 | M-376 and M-391 are both artifact examples under the shared stacked-X type corresponding to the middle 533-form. | Partial artifact-specific corroboration of the middle member only. |
+| Mayig | The pinned object corpus ends at M-184 and contains neither artifact; its P385/P228/P320 feature records crosswalk to Wells 861/533/717. | Namespace compatibility only; no independent artifact transcription. |
+
+The sole accepted fixed-prefix structural finding therefore survives at its narrow level: both source objects contain three physical positions, so `533-717` is not a fused graphic or a tokenization-only tail invented by the digital row. The stronger exact-code claim is not promoted: Lipi remains the only checked witness that assigns the complete numeric string to both artifacts. No value, reading, meaning, language, translation, or broader fixed-suffix rule follows.
+
 ## Next executable order
 
-1. Use the local Parpola/Wells/Mayig witnesses to source-normalize only the `861 | 533 | 717` boundaries on M-376 and M-391. Confirm two separately bounded terminal signs on both objects or demote the sole accepted structural finding; do not widen this into another corpus audit.
+1. Establish the complete source-visible occurrence set for the Wells 533 / Parpola 223 / Mayig P228 graphic, then test the one live structural question: whether it ever occurs without terminal 717. Stop at that occurrence-set decision; do not add semantic modeling or a general catalogue audit.
 
 ## Parked lanes
 
