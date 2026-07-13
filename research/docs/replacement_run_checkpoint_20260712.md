@@ -15,7 +15,7 @@ Authority: this checkpoint supersedes `replacement_run_checkpoint_20260531.md` f
 | external anchors | 0 |
 | structural findings | 1 |
 
-The only accepted structural finding remains the fixed `002-861 / 533-717` restricted terminal-tail result under its prior narrow wording. Nothing in this checkpoint is a reading.
+The accepted structural count remains one, but its wording is now strictly descriptive: M-376 and M-391 are two source-visible attestations of the same three-position terminal `861 | 533 | 717` allograph string after `002`. The stronger claim that `533-717` is a source-independent fixed two-sign unit is demoted below acceptance. Nothing in this checkpoint is a reading.
 
 ## Completed annotations
 
@@ -157,23 +157,23 @@ M-19 and M-175 enter only as distinct, source-visible left-censored artifact con
 
 The result is small and directionally consistent: bare closure becomes about 0.28-0.29 percentage points more common, while every tailed count stays fixed. `533-717` remains supported by M-376 and M-391 only, at 2/2 observed occurrences in the fixed-prefix terminal context; among tailed rows its share is unchanged. Its share of the canonical whole field falls mechanically from 2/144 to 2/146. The historical forger nulls were not rerun and are not represented as recalculated here. The older 119-row suffix-split table is not mixed into this result because it used a legacy extractor and deduplication rule.
 
-## M-376/M-391 `861 | 533 | 717` boundary gate
+## M-376/M-391 terminal string and graphic-family gate
 
-Decision: `RETAIN_FIXED_PREFIX_FINDING; PHYSICAL_BOUNDARIES_SOURCE_CONFIRMED; EXACT_NUMERIC_IDENTITY_CATALOGUE_MEDIATED`.
+Decision: `RETAIN_TWO_ARTIFACT_TERMINAL_STRING; DEMOTE_FIXED_UNIT_INFERENCE; EXACT_533_DEPENDENCY_TAXONOMY_SENSITIVE`.
 
-| Witness | Direct result | Scope |
+| Layer | Complete checked set | Result |
 | --- | --- | --- |
-| CISI M-376, printed p. 94 / PDF p. 130 | The seal and impression show three spatially separate terminal-side graphics compatible, in order, with Lipi `861 | 533 | 717`. | Confirms two visible boundaries and two separate post-`861` signs. |
-| CISI M-391, printed p. 96 / PDF p. 132 | The seal and impression independently show the same three separately bounded terminal-side graphics. | Replicates the physical three-position structure on the second object. |
-| Wells sign list, printed pp. 20-21 | The three visible forms match the listed forms for 861, 533, and 717. | Supports sign-form compatibility, not an artifact-level transcription. |
-| Parpola sign list, printed p. 75 / PDF p. 99 | M-376 and M-391 are both artifact examples under the shared stacked-X type corresponding to the middle 533-form. | Partial artifact-specific corroboration of the middle member only. |
-| Mayig | The pinned object corpus ends at M-184 and contains neither artifact; its P385/P228/P320 feature records crosswalk to Wells 861/533/717. | Namespace compatibility only; no independent artifact transcription. |
+| Local numeric `533` | M-376 `...861-533-717` and M-391 `...861-533-717`; no other `533` row in the 5,679-row local source | Exact local set is 2/2 followed by terminal 717. |
+| CISI plates | M-376, printed p. 94 / PDF p. 130; M-391, printed p. 96 / PDF p. 132 | Both objects independently show three spatially separate terminal-side graphics; the repeated tail is physical, not a fused or digital-only token. |
+| Parpola Figure 5.1, printed p. 75 / PDF p. 99 | The relevant group is sign 222, not 223. Its four principal variants, each illustrated with one reference, are M-17, M-26, M-376, and M-391. | M-17 and M-26 lack local 717, so the broader Parpola-222 graphic family is not fixed to 717. The figure is a variant list, not an exhaustive concordance. |
+| Mayig P228 | M-26A only: `P013 P324 P228 P120 P256`; the same position aligns to local 531. P228 metadata maps one-to-many to W531 and W533. | M-26 is a broad-family no-717 case, not an exact local-533 counterexample. Mayig has no M-376/M-391 object records. |
+| Wells Figure 2.6, printed pp. 20-21 | W531 and W533 are distinct listed forms; W717 is separately listed. | Supports the fine graphic distinction but supplies no artifact occurrence concordance. |
 
-The sole accepted fixed-prefix structural finding therefore survives at its narrow level: both source objects contain three physical positions, so `533-717` is not a fused graphic or a tokenization-only tail invented by the digital row. The stronger exact-code claim is not promoted: Lipi remains the only checked witness that assigns the complete numeric string to both artifacts. No value, reading, meaning, language, translation, or broader fixed-suffix rule follows.
+No exact local-`533` occurrence lacking 717 was found. That does not establish a source-independent dependency: the zero outside-pair count exists only under the fine local/Wells-compatible split, while Parpola 222 and Mayig P228 group related forms that occur without 717. The accepted residue is therefore the repeated three-position terminal allograph string on two artifacts, not an inseparable `533-717` unit or a general sign rule. The official ICIT occurrence database remains administrator-gated and returned HTTP 401, so global Wells-corpus completeness is not claimed and no contact is attempted. No value, reading, meaning, language, translation, or broader fixed-suffix rule follows.
 
 ## Next executable order
 
-1. Establish the complete source-visible occurrence set for the Wells 533 / Parpola 223 / Mayig P228 graphic, then test the one live structural question: whether it ever occurs without terminal 717. Stop at that occurrence-set decision; do not add semantic modeling or a general catalogue audit.
+1. Use the remaining compute budget to rerun only the three transfer-pretraining conditions with records, tokens, and masked positions exactly exposure-matched across the current five seeds. Do not rerun capacity, corruption-control, or calibration lanes; this single correction decides whether the present transfer failure is substantive or exposure-confounded.
 
 ## Parked lanes
 
