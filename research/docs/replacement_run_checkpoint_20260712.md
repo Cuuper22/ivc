@@ -1,8 +1,8 @@
 # Replacement run checkpoint
 
-Date: 2026-07-12 America/Los_Angeles
+Date: 2026-07-12 through 2026-07-13 America/Los_Angeles
 
-Authority: this checkpoint supersedes `replacement_run_checkpoint_20260531.md` for work completed on July 12 while preserving every accepted boundary from it. It does not revive any file listed in `research/data/quarantine/botched_successor_after_20260531T0104_manifest.csv`.
+Authority: this checkpoint supersedes `replacement_run_checkpoint_20260531.md` for work completed on July 12-13 while preserving every accepted boundary from it. It does not revive any file listed in `research/data/quarantine/botched_successor_after_20260531T0104_manifest.csv`.
 
 ## Accepted state
 
@@ -87,7 +87,7 @@ These decisions tighten the usable corpus and crosswalk without adding a transla
 
 ## From-scratch SLM result
 
-All 65 planned runs completed across five paired seeds. Lower negative log-likelihood (NLL) is better.
+All 65 original runs and all 30 exact-exposure transfer runs completed across five paired seeds. The correction reused the five original random-initialized IVC micro baselines rather than rerunning them. Lower negative log-likelihood (NLL) is better.
 
 | Question | Five-seed result | Decision |
 | --- | --- | --- |
@@ -96,16 +96,18 @@ All 65 planned runs completed across five paired seeds. Lower negative log-likel
 | IVC capacity: medium, 18,123,074 parameters | NLL 4.3120; top-1 23.85% | Worse again; 1B escalation is not scientifically justified. |
 | Authentic IVC vs row-internal shuffle, small | Authentic gains 0.3665 NLL and 6.05 top-1 points; stored-order win share 0.883 vs 0.470. | Real order/co-occurrence structure survives grouped holdout. |
 | Authentic IVC vs position-slot shuffle, small | Authentic gains 0.6492 NLL and 12.86 top-1 points. | Structure is not reducible to position marginals. |
-| Known-writing transfer vs random IVC | NLL gain +0.0909, 95% paired bootstrap CI [0.0659, 0.1159]. | Transfer helps. |
-| Known-writing vs nonwriting transfer | Specificity gain +0.0191, CI [-0.0087, 0.0444]. | No writing-specific advantage established. |
-| Known-writing vs position-shuffled-IVC transfer | Specificity gain +0.0429, CI [0.0046, 0.0821]. | Known writing beats this shuffled source, but not the nonwriting comparator. |
-| Exposure matching | Max record spread 12.74%; token spread 29.01%; masked-position spread 24.61%; tolerance 20%. | Exposure gate fails despite zero attrition. |
+| Exact-exposure known-writing transfer vs random IVC | NLL gain +0.0566, 95% paired bootstrap CI [0.0212, 0.0973]. | Known-writing pretraining gives a small reproducible benefit. |
+| Exact-exposure nonwriting transfer vs random IVC | NLL gain +0.0529, CI [0.0018, 0.0931]. | Nonwriting pretraining gives a statistically compatible benefit. |
+| Exact-exposure position-shuffled-IVC transfer vs random IVC | NLL gain +0.0371, CI [0.0035, 0.0716]. | Even the shuffled source gives a small benefit. |
+| Known writing vs nonwriting | Specificity gain +0.0037, CI [-0.0372, 0.0326]. | No writing-specific advantage. |
+| Known writing vs position-shuffled IVC | Specificity gain +0.0195, CI [-0.0355, 0.0814]. | No writing-specific advantage. |
+| Exact exposure matching | Record, token, and masked-position spreads are exactly 0 in every seed; null attrition is 0. | The original exposure confound is closed. |
 | Known-script calibration | Linear B: NLL 2.7466, top-1 40.02%; SumTablets: NLL 4.5013, top-1 15.50%. | Calibration only; cross-corpus absolute scores do not identify language status. |
-| Pre-registered transfer gate | Statistical comparisons complete; exposure checks complete; specificity and exposure requirements not met. | **FAIL**. |
+| Pre-registered transfer gate | Statistical comparisons and exact-exposure checks complete; both specificity intervals cross zero. | **FAIL**. |
 
-Interpretation: the model finds reproducible sequential structure in the IVC corpus, because authentic sequences beat both matched corruption controls. That is a structural result, not a linguistic identification. The transfer benefit is not writing-specific: nonwriting pretraining produces a statistically compatible gain, while exposure imbalance also violates the pre-registered design. The capacity curve points in the opposite direction from scaling: the 0.89M model beats the 6.54M and 18.12M models on held-out NLL in all five seeds, so a 1B run would spend compute without answering the live research question.
+Interpretation: the model finds reproducible sequential structure in the IVC corpus, because authentic sequences beat both matched corruption controls. That is a structural result, not a linguistic identification. Exact matching removes the original transfer-design escape hatch: known writing, nonwriting, and position-shuffled IVC all produce small gains over random initialization, while known writing has no positive lower-bound advantage over either comparator. The supported transfer conclusion is therefore source-nonspecific pretraining benefit, not writing-specific structural transfer. The capacity curve still points away from scaling: the 0.89M model beats the 6.54M and 18.12M models on held-out NLL in all five seeds, so a 1B run would spend compute without answering the live research question.
 
-Raw outputs are preserved in `research/data/slm/ivc_from_scratch_scaling_20260712/`: the full 65-run matrix, per-run comparison table, aggregate analysis, completion/cost record, resolved configuration, and hardware/input manifest.
+Original outputs remain in `research/data/slm/ivc_from_scratch_scaling_20260712/`. Corrected outputs are preserved in `research/data/slm/ivc_transfer_exact_exposure_20260712/`: all 30 new summaries, the five pinned reference baselines, comparison table, aggregate analysis, resolved configuration, provenance manifest, and completion record. The full per-run checkpoint trees remain on the immutable Modal result volume. The conservative cumulative compute estimate is $4.6687, below the $14 ceiling.
 
 ## Directionality closure
 
@@ -173,7 +175,7 @@ No exact local-`533` occurrence lacking 717 was found. That does not establish a
 
 ## Next executable order
 
-1. Use the remaining compute budget to rerun only the three transfer-pretraining conditions with records, tokens, and masked positions exactly exposure-matched across the current five seeds. Do not rerun capacity, corruption-control, or calibration lanes; this single correction decides whether the present transfer failure is substantive or exposure-confounded.
+1. Close SLM transfer escalation. Inspect every remaining complete Lipi-only `617` occurrence against its CISI panel and test whether the source-visible two-grid expansion holds outside the five overlap objects. Promote a global `617 -> grid, grid` normalization only if the source coverage is complete and counterexamples remain zero; otherwise keep the rule cluster-specific. Recompute only the structural edges directly changed by that decision.
 
 ## Parked lanes
 

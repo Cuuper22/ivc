@@ -1,0 +1,305 @@
+{
+  "aggregates": [
+    {
+      "arm": "ivc",
+      "mean_authentic_corruption_win_share": 0.8861607133730356,
+      "mean_masked_nll": 4.116507305760019,
+      "mean_masked_top1": 0.25445620629169985,
+      "mean_masked_top5": 0.4463350957095553,
+      "mean_multiclass_brier": 0.8701807643839536,
+      "mean_stored_order_win_share": 0.8948443291402685,
+      "model": "micro",
+      "runs": 5,
+      "seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ]
+    },
+    {
+      "arm": "ivc_transfer_ivc_position_slot_shuffle",
+      "mean_authentic_corruption_win_share": 0.9034842969614079,
+      "mean_masked_nll": 4.079411911481239,
+      "mean_masked_top1": 0.27340714745992195,
+      "mean_masked_top5": 0.465213307485849,
+      "mean_multiclass_brier": 0.8537783682044393,
+      "mean_stored_order_win_share": 0.8976907476576284,
+      "model": "micro",
+      "runs": 5,
+      "seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ]
+    },
+    {
+      "arm": "ivc_transfer_known_writing",
+      "mean_authentic_corruption_win_share": 0.8860425725915432,
+      "mean_masked_nll": 4.0599528358021235,
+      "mean_masked_top1": 0.27228663777466966,
+      "mean_masked_top5": 0.45936100989679957,
+      "mean_multiclass_brier": 0.8550277697391128,
+      "mean_stored_order_win_share": 0.9007235899260131,
+      "model": "micro",
+      "runs": 5,
+      "seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ]
+    },
+    {
+      "arm": "ivc_transfer_nonwriting",
+      "mean_authentic_corruption_win_share": 0.886337170672669,
+      "mean_masked_nll": 4.0636115160781,
+      "mean_masked_top1": 0.2632635813606082,
+      "mean_masked_top5": 0.4669975144547435,
+      "mean_multiclass_brier": 0.8602930791753881,
+      "mean_stored_order_win_share": 0.9105604007842318,
+      "model": "micro",
+      "runs": 5,
+      "seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ]
+    },
+    {
+      "arm": "pretrain_ivc_position_slot_shuffle",
+      "mean_authentic_corruption_win_share": 0.7540500736377025,
+      "mean_masked_nll": 4.916802601882728,
+      "mean_masked_top1": 0.1117123045905887,
+      "mean_masked_top5": 0.2306541920523469,
+      "mean_multiclass_brier": 0.9636903636861183,
+      "mean_stored_order_win_share": 0.8720299459990182,
+      "model": "micro",
+      "runs": 5,
+      "seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ]
+    },
+    {
+      "arm": "pretrain_known_writing",
+      "mean_authentic_corruption_win_share": 0.6338615996567045,
+      "mean_masked_nll": 5.030450222253624,
+      "mean_masked_top1": 0.0700951991391093,
+      "mean_masked_top5": 0.18523231862750883,
+      "mean_multiclass_brier": 0.981735108688721,
+      "mean_stored_order_win_share": 0.7771832919142956,
+      "model": "micro",
+      "runs": 5,
+      "seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ]
+    },
+    {
+      "arm": "pretrain_nonwriting",
+      "mean_authentic_corruption_win_share": 0.5124010840108402,
+      "mean_masked_nll": 3.203448291287691,
+      "mean_masked_top1": 0.17265294194912822,
+      "mean_masked_top5": 0.5768513076699413,
+      "mean_multiclass_brier": 0.9049054197142878,
+      "mean_stored_order_win_share": 0.5557345316913086,
+      "model": "micro",
+      "runs": 5,
+      "seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ]
+    }
+  ],
+  "exposure_checks": [
+    {
+      "attrition_ceiling_fraction": 0.15,
+      "complete": true,
+      "exposure_tolerance_fraction": 0.0,
+      "masked_position_relative_spread": 0.0,
+      "maximum_null_attrition_fraction": 0.0,
+      "seed": 20260712,
+      "train_record_relative_spread": 0.0,
+      "train_token_relative_spread": 0.0,
+      "within_tolerance": true
+    },
+    {
+      "attrition_ceiling_fraction": 0.15,
+      "complete": true,
+      "exposure_tolerance_fraction": 0.0,
+      "masked_position_relative_spread": 0.0,
+      "maximum_null_attrition_fraction": 0.0,
+      "seed": 20260713,
+      "train_record_relative_spread": 0.0,
+      "train_token_relative_spread": 0.0,
+      "within_tolerance": true
+    },
+    {
+      "attrition_ceiling_fraction": 0.15,
+      "complete": true,
+      "exposure_tolerance_fraction": 0.0,
+      "masked_position_relative_spread": 0.0,
+      "maximum_null_attrition_fraction": 0.0,
+      "seed": 20260714,
+      "train_record_relative_spread": 0.0,
+      "train_token_relative_spread": 0.0,
+      "within_tolerance": true
+    },
+    {
+      "attrition_ceiling_fraction": 0.15,
+      "complete": true,
+      "exposure_tolerance_fraction": 0.0,
+      "masked_position_relative_spread": 0.0,
+      "maximum_null_attrition_fraction": 0.0,
+      "seed": 20260715,
+      "train_record_relative_spread": 0.0,
+      "train_token_relative_spread": 0.0,
+      "within_tolerance": true
+    },
+    {
+      "attrition_ceiling_fraction": 0.15,
+      "complete": true,
+      "exposure_tolerance_fraction": 0.0,
+      "masked_position_relative_spread": 0.0,
+      "maximum_null_attrition_fraction": 0.0,
+      "seed": 20260716,
+      "train_record_relative_spread": 0.0,
+      "train_token_relative_spread": 0.0,
+      "within_tolerance": true
+    }
+  ],
+  "gate": {
+    "criterion": "Known-writing transfer must improve ordinary held-out NLL over random-init IVC, nonwriting transfer, and position-slot-shuffled transfer, with every paired-seed bootstrap lower bound above zero and all pretraining exposures/attrition inside the configured tolerances.",
+    "exposure_checks_complete": true,
+    "exposures_within_tolerance": true,
+    "interpretation_boundary": "Passing is structural-transfer evidence, not evidence of language identity, values, or readings.",
+    "statistical_comparisons_complete": true,
+    "status": "fail"
+  },
+  "specificity": [
+    {
+      "comparison": "ivc_transfer_known_writing_vs_ivc_transfer_nonwriting",
+      "paired_seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ],
+      "positive_nll_gain_favors_known_writing": {
+        "ci95_high": 0.032596493930131844,
+        "ci95_low": -0.03718733688158391,
+        "mean": 0.0036586802759774883,
+        "n": 5,
+        "note": "paired_seed_bootstrap_exploratory_with_only_five_planned_seeds"
+      }
+    },
+    {
+      "comparison": "ivc_transfer_known_writing_vs_ivc_transfer_ivc_position_slot_shuffle",
+      "paired_seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ],
+      "positive_nll_gain_favors_known_writing": {
+        "ci95_high": 0.08141800912097157,
+        "ci95_low": -0.03546098797816821,
+        "mean": 0.0194590756791162,
+        "n": 5,
+        "note": "paired_seed_bootstrap_exploratory_with_only_five_planned_seeds"
+      }
+    }
+  ],
+  "transfer_comparisons": [
+    {
+      "comparison": "ivc_transfer_known_writing_vs_random_ivc",
+      "paired_seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ],
+      "positive_nll_gain_favors_transfer": {
+        "ci95_high": 0.09725011509720964,
+        "ci95_low": 0.021195353312696508,
+        "mean": 0.05655446995789672,
+        "n": 5,
+        "note": "paired_seed_bootstrap_exploratory_with_only_five_planned_seeds"
+      },
+      "positive_top1_gain_favors_transfer": {
+        "ci95_high": 0.027153225806451603,
+        "ci95_low": 0.008270312716593797,
+        "mean": 0.017830431482969793,
+        "n": 5,
+        "note": "paired_seed_bootstrap_exploratory_with_only_five_planned_seeds"
+      }
+    },
+    {
+      "comparison": "ivc_transfer_nonwriting_vs_random_ivc",
+      "paired_seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ],
+      "positive_nll_gain_favors_transfer": {
+        "ci95_high": 0.09305574005198451,
+        "ci95_low": 0.0017871785253173122,
+        "mean": 0.052895789681919235,
+        "n": 5,
+        "note": "paired_seed_bootstrap_exploratory_with_only_five_planned_seeds"
+      },
+      "positive_top1_gain_favors_transfer": {
+        "ci95_high": 0.021449884473032386,
+        "ci95_low": -0.004939487007951837,
+        "mean": 0.00880737506890834,
+        "n": 5,
+        "note": "paired_seed_bootstrap_exploratory_with_only_five_planned_seeds"
+      }
+    },
+    {
+      "comparison": "ivc_transfer_ivc_position_slot_shuffle_vs_random_ivc",
+      "paired_seeds": [
+        20260712,
+        20260713,
+        20260714,
+        20260715,
+        20260716
+      ],
+      "positive_nll_gain_favors_transfer": {
+        "ci95_high": 0.07155081816836387,
+        "ci95_low": 0.0035401207590567197,
+        "mean": 0.03709539427878052,
+        "n": 5,
+        "note": "paired_seed_bootstrap_exploratory_with_only_five_planned_seeds"
+      },
+      "positive_top1_gain_favors_transfer": {
+        "ci95_high": 0.02789361403259043,
+        "ci95_low": 0.010008268303853896,
+        "mean": 0.018950941168222164,
+        "n": 5,
+        "note": "paired_seed_bootstrap_exploratory_with_only_five_planned_seeds"
+      }
+    }
+  ]
+}
