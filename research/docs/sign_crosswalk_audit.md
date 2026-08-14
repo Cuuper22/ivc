@@ -4,6 +4,8 @@ Date: 2026-05-29
 
 ## Verdict
 
+This audit checks the crosswalk dataset's own hygiene: primary keys, references, evidence hashes, and counts. Passing means the scaffold is safe to build on. It says nothing about whether any mapping is true.
+
 The provenance-tagged sign crosswalk scaffold passes dataset hygiene checks with caveats.
 
 It is usable as infrastructure. It is not an accepted sign-list mapping, allograph table, phonetic table, semantic table, or decipherment artifact.
@@ -76,7 +78,7 @@ Review status distribution:
 
 ## Highest-Pressure Edges
 
-These are the most useful review targets, not accepted mappings:
+"Pressure" here means alignment support: how often two signs line up across sources. High pressure makes an edge worth reviewing first. It does not make the mapping true. These are the most useful review targets, not accepted mappings:
 
 | Edge | Candidate mapping | Support | Counterexamples | Top share |
 | --- | --- | ---: | ---: | ---: |

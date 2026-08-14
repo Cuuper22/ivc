@@ -1,3 +1,16 @@
+// Stress-tests the risky bet that terminal sign 820 is the closer used on
+// rhinoceros square seals, within the local frame "002 then one of
+// {817,820,861}" at the end of the text. From the filtered corpus we keep
+// square seals (SEAL:S), dedupe to one row per exact sign sequence, and check
+// how often the Rhin icon class ends in 820 versus the other two terminals.
+// Nulls: 10000 shuffles of the terminal labels, run four ways — the Rhin
+// count itself, a site-matched version, and maxstat versions asking whether
+// ANY icon class gets that pure for any terminal (or for 820 specifically).
+// Metadata-poor seals are augmented from the S1 zoomorphic icon catalogue
+// text, and a downloaded CISI page image serves as a visual spot-check. The
+// tier logic promotes the bet only if source-verified held-out rows exist and
+// all false-positive rates stay under threshold. Writes a JSON report and
+// four CSVs (target rows, symbol summary, prediction rows, iterations).
 import fs from 'node:fs';
 import path from 'node:path';
 

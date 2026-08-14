@@ -1,3 +1,20 @@
+// Can the sign sequence of an inscription predict its (undefined) lipi.class
+// label, beyond what boring proxies like object type, find site, or text
+// length already predict? If yes, the class field encodes something about the
+// text itself; if no, it is probably just a metadata echo. This script tests
+// that. It collapses the clean numeric rows into exact-sequence families,
+// gives each family a majority class label (keeping labels with at least 12
+// families), and runs leave-one-out classifiers of increasing ambition:
+// majority vote, then single-feature predictors (length, type, site, and
+// combinations, plus first/last-sign edge frame), and finally a token naive
+// Bayes over the signs themselves. Each observed accuracy and macro-F1 is
+// compared to label-shuffle nulls that permute labels within blocks (global,
+// length, type, site, and combinations — the blocked shuffles preserve the
+// proxy structure), 20 iterations by default via IVC_CLASS_PROXY_ITERATIONS.
+// Two extra label filters drop classes that the field audit showed are
+// nearly pure proxies (top type/site/length share >= 0.80 or 0.65). Writes
+// observed, iteration, and summary CSVs plus a JSON summary. Even a surviving
+// signal is not semantic evidence, because class itself is unverified.
 import fs from 'node:fs';
 import path from 'node:path';
 

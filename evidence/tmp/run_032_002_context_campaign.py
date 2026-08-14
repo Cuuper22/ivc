@@ -1,3 +1,16 @@
+"""Catalog every adjacent 032-002 pair and the sign Y that follows it.
+
+This is the base context scan for the 032-002 campaign. It reads the Lipi
+metadata CSV and, for every inscription where 002 directly follows 032,
+records the sign after 002 (called Y), what precedes 032, and whether Y ends
+the inscription. Each occurrence gets a frame kind: target_240_220_032 (the
+full 240-220-032 frame), non240_a_220_032 (just 220 before 032), or
+outside_032. Three scopes are reported — all rows, strict complete-closed
+rows (complete, +-delimited, undamaged, no 000), and a deduped strict layer
+keyed by (text, site, type). Writes four CSVs: all rows, per-frame branch
+summary, Y-by-frame counts, and prev1-by-Y counts, plus a JSON summary.
+"""
+
 import csv
 import json
 import re

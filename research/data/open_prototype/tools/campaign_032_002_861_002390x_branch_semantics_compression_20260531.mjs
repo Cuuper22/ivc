@@ -1,3 +1,16 @@
+// Compresses what we are allowed to claim about each 002-390-X branch sign,
+// separating syntax from semantics. Syntax means positional behavior (does the
+// branch close the sequence, continue it, or link one complement); semantics
+// means any meaning gloss (rank/title, status/admin, result lane). This script
+// reads the 002-390 frames CSV from the branch-sign-ecology run, tags each row
+// with a source tier (strict source-visible down to metadata-unbound), groups
+// rows by branch sign, and applies hand-written per-branch rules for 125, 530,
+// 590, 095, 692, and 705; everything else is a form-only singleton. It writes
+// a branch summary CSV, a semantic-demotions CSV, and a summary JSON to
+// data/open_prototype/reports/. The headline decision: syntax survives better
+// than semantics — positional roles are kept as candidates, but most meaning
+// glosses are demoted to "wild" until stricter source evidence arrives.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

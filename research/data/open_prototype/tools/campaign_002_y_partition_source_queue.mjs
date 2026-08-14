@@ -1,3 +1,15 @@
+// Builds a prioritized source-acquisition queue for the 002-Y partition study.
+// The study asks whether the sign that follows 002 splits inscriptions into a
+// "closure pole" (817, 820) and a "branch pole" (390, 368, 031, 220), with 861
+// as a leaky background case. Before testing that on real images, we need to
+// know which catalogue rows even have a usable source image. This script reads
+// the deduplicated strict-complete 002 rows, joins them to the existing source
+// index (plus the supplemental public CISI route table if present), grades each
+// row's source coverage 0-4 (from "source dark" to "single-line source-visible
+// candidate"), sorts rows into acquisition buckets, and writes the ranked queue
+// CSV, a per-sign coverage summary CSV, and a summary JSON. It is acquisition
+// bookkeeping only — it validates no token order, direction, or reading.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

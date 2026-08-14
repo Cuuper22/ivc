@@ -6,9 +6,11 @@ Date: 2026-05-24
 
 Create the first evidence-bearing research package for IVC translation without making any translation claim.
 
-The sprint succeeds only if it produces a frozen, auditable working corpus layer and reproduces at least one structural baseline against null models. It does not succeed by producing a fluent reading.
+The success condition is deliberately modest. The sprint succeeds only if it produces a frozen, auditable working corpus layer and reproduces at least one structural baseline against null models. It does not succeed by producing a fluent reading. A fluent reading at this stage would be a warning sign, not a win.
 
 ## Sprint Boundary
+
+The boundary keeps the sprint pointed at evidence rather than at software or premature readings.
 
 In scope:
 
@@ -239,7 +241,7 @@ Next falsification:
 
 ## Stop Conditions
 
-Pause semantic work if:
+Stop conditions exist to pause interpretation, not the project. Pause semantic work if:
 
 - Corpus overlap is too poor.
 - Primary corpus access is blocked.

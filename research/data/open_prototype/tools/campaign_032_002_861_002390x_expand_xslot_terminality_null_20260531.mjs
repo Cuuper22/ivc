@@ -1,6 +1,16 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// A null test for the zero-complement claim about sign 000. Maybe ANY sign in the X slot of
+// 002-H-X tends to end the inscription, and 000 is nothing special. To check, this script
+// reads the parse-rows-plus-000 report CSV from reports/ (not the raw corpus) and computes a
+// terminal rate for every X sign — the share of its X-slot rows where nothing follows. Among
+// the frequent signs (5 or more rows) it then asks: does any other X sign terminalize as
+// strongly as 000? The single bet stays a candidate only if 000 sits alone at the terminal
+// extreme with a rate of at least 0.85; if several frequent signs match it, zero-complement
+// is probably a generic right-edge artifact. Writes the full and frequent-only terminality
+// tables and the bet as CSVs plus a summary JSON in reports/.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const parseRowsPath = path.join(

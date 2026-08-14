@@ -1,3 +1,15 @@
+// Scores stage-1 blind reviews for the 002-Y branch-gap campaign. The setup:
+// reviewers were shown seal images under blind IDs — without knowing which
+// are targets, backups, scoring negatives, or quarantined rows — and asked
+// to count visible sign tokens and note any candidate 002-Y branch relation.
+// This script joins each review CSV (passed as arguments, or found in the
+// default reviews directory) against the answer key, checks whether each
+// reviewer's token count matches the count expected from the catalog text,
+// and flags the failure mode that matters most: hard branch-relation notes
+// on scoring negatives, which would mean reviewers see the pattern where it
+// should not exist. It deliberately never promotes a claim — stage 1 checks
+// tokenization stability only. Writes a JSON summary and a scored-rows CSV;
+// if no reviews exist yet it writes a not-scored summary and exits.
 import fs from 'node:fs';
 import path from 'node:path';
 

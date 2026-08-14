@@ -1,3 +1,14 @@
+// The harshest duplicate control on the terminal-governor network: text-
+// family collapse. Every distinct inscription text counts an edge at most
+// once, no matter how many objects, sites, or seal types carry it — so a
+// popular formula stamped on fifty seals gives one vote, not fifty. We read
+// the filtered corpus metadata (complete texts only), build these text
+// families per bigram edge, and rescore the network: an edge is strict at
+// 20+ families and 85% terminal share, and we recheck the target shape
+// (002 governing 817 and 820, 060 governing 920/550/820, 820 shared). The
+// null shuffles terminal/nonterminal outcomes across families 5000 times
+// while keeping every branch's family count. Writes a JSON report and an
+// edges CSV.
 import fs from 'node:fs';
 import path from 'node:path';
 

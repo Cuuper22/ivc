@@ -8,7 +8,7 @@ Status: `3335_identity_neighborhood_no_local_bridge_external_source_required_no_
 
 The source-upgrade impact audit made `3335.1` the highest single-object matched-gate unlock: if it were source-bound and sequence-valid, it would pair with already-strict M-70 to create a strict `032 -> 002-390 -> {590,692}` branch split.
 
-This audit asks whether local metadata can triangulate `3335.1` before external acquisition: exact duplicate, row-order identity, formula-family source rows, no-object metadata siblings, `RAF` context, or same-profile source candidates.
+This audit asks a cheaper question first: can local metadata alone triangulate `3335.1` before we go hunting for an external source? It checks every local route we have — exact duplicate, row-order identity, formula-family source rows, no-object metadata siblings, `RAF` context, and same-profile source candidates.
 
 Accepted value, phonetics, language identity, function, sign meaning, and translation remain 0.
 
@@ -77,7 +77,7 @@ The seven `390-590-032` rows remain:
 | `3335.1` | unknown | Unknown | `+740-205-032-002-390-590-032+` | target |
 | `3359.1` | M-965 | Mohenjo-daro | `+740-390-590-032-741-527+` | source-visible non-frame control |
 
-This strengthens the formula-family warning. The chunk is real and portable; it cannot identify `3335.1`.
+This strengthens the formula-family warning. The chunk is real and it travels across objects and sites — which is exactly why it cannot identify `3335.1`.
 
 ## Public Refresh
 
@@ -106,7 +106,7 @@ Use `3335.1` as:
 
 ## Next Gate
 
-`3335.1` now needs external source acquisition, not more local triangulation. The useful next moves are:
+The local routes are exhausted: `3335.1` now needs external source acquisition, not more local triangulation. The useful next moves are:
 
 1. Find the source that produced cisi-less row `3335.1` or its original sign-list context.
 2. Search for a strict replacement row with `032 -> 002-390 -> non-692/non-125`.

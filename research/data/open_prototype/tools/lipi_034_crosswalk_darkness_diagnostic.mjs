@@ -1,3 +1,17 @@
+// Lipi sign 034 has no clean counterpart in the Mayig/Parpola crosswalk, and
+// we need to know why. Two very different explanations exist: either the
+// crosswalk logic actually filtered 034 out (which would mean something about
+// the sign), or the overlap corpus simply never contains a row with an 034
+// token (which means nothing — just missing coverage). This script settles it
+// by counting, for signs 032, 033, and 034, how often each appears as an
+// exact token in the Lipi metadata, in the overlap probe, in the clean
+// alignment pairs, and in the candidate table, and by classifying each sign's
+// darkness status. It also breaks metadata rows down by site, type,
+// direction, and adjacency to sign 700, and double-checks that raw text hits
+// for "034" in the overlap file are just ID strings like "M-34", not sign
+// tokens. Writes three CSVs and a JSON summary whose conclusion field states
+// the verdict: 034 is dark because of overlap coverage, not crosswalk
+// filtering. No decipherment claim is made or accepted.
 import fs from 'node:fs';
 import path from 'node:path';
 

@@ -1,3 +1,15 @@
+"""Stress-tests whether the strict 125 witnesses are really independent of each other.
+
+This script reads the source-normalized contrast rows for the 002-390-X branch and
+focuses on the four 125 witnesses (M-38, M-119, M-735, Sktd-1), with M-119 and M-735 as
+the strict source-visible pair. It asks whether the strict pair collapses into a single
+formula or source family — if two witnesses are just copies of one formula, they count
+as one piece of evidence, not two. It compares exact formulas, broad register, and the
+known bridge risks (M-38 is the shared weak hinge), then writes a summary JSON and a
+docs/ markdown note. The recorded outcome: the strict pair survives exact-formula
+collapse but still shares a broad register, so it is medium confidence, not proof.
+"""
+
 from __future__ import annotations
 
 import csv

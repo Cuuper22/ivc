@@ -1,3 +1,18 @@
+// A "risky bet" prior (2026-05-31): the best diffuse Meluhha bridge is a
+// commodity/account register, not an owner's name on a square seal. The
+// reasoning: if cuneiform Meluhha attestations are mostly about commodities,
+// routes, and administration, then the Indus-side search should prioritize
+// SEAL:R/TAB:C rows carrying the already-tested 740/407/806 register grammar
+// over owner-name readings. The script deduplicates the expanded cuneiform
+// attestations by source/line/transliteration, bins each row into a class
+// (onomastic, commodity/route/object, ethnonym/title, administrative,
+// literary) and a directness level, and compares direct commodity/register
+// counts against direct onomastic counts. It then reads three prior Indus-side
+// forger reports (407 register, 740/407 opener, 407/806 slot split) and grades
+// the bridge "candidate" only if the commodity side outweighs the onomastic
+// side AND those Indus bets already survived their own controls. This is a
+// search prior, not an object-level bilingual. Writes a JSON record, summary
+// CSV, class-count CSVs, and a per-row CSV.
 import fs from 'node:fs';
 import path from 'node:path';
 

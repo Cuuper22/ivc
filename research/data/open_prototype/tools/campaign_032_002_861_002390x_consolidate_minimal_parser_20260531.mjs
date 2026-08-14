@@ -1,3 +1,17 @@
+// Assembles "minimal parser v1" for the 002-H-X campaign: the smallest rule
+// set that still carries every live bet. It pulls support numbers from four
+// expand-phase summary JSONs (the x000 null-class run, the parse-adjudication
+// source queue, the x000 slot-specificity run, and the X-slot terminality
+// null), then writes five hand-ranked layers: the 002-H-X frame itself, a
+// frame-proximal null operator that absorbs X=000 as a subclass, the 095/705
+// terminal classes, the 530/125 open operators, and an exception layer where
+// 590/692/707 wait as destructive controls. Each layer records its current
+// support, its live contradiction, and the exact condition that would kill it;
+// separate decisions and next-tests tables spell out what was kept, merged, or
+// demoted and which source bindings could break each rule. Outputs are _model,
+// _decisions, and _next_tests CSVs plus a summary JSON under
+// data/open_prototype/reports/.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

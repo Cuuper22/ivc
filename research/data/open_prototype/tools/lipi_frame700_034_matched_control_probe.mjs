@@ -1,6 +1,19 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// For every 034-bearing frame700 row, this script hunts for the two best "control siblings":
+// the most similar object that carries 033 instead, and the most similar one that carries
+// 032. A good sibling pair turns the 034/033/032 choice into a near-minimal contrast, where
+// the subtype is the main thing that differs. It reads the frame700 subtype rows, the source
+// acquisition manifest, and the corpus metadata, excluding the H-2218..H-2239 series (that
+// batch is handled separately). Each candidate is scored by weighted field agreement --
+// object type and sides weigh 4, material and shape 3, size bins 3, context class 3, down to
+// order and aspect at 1 -- with candidates from the target's own sequence family barred.
+// Score thresholds (033 >= 28, 032 >= 24 for "strong") set a contrast-readiness label per
+// target. Output is one CSV of targets with their best 033/032 matches, match/mismatch
+// details, and readiness, plus a JSON summary. Metadata mapping only; source images are
+// not validated and no sign reading is accepted.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 const lipiDir = path.join(base, 'data', 'open_prototype', 'lipi');

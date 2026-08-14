@@ -1,3 +1,18 @@
+// Parpola reads seal M-2104 as containing a numeral compound: sign pair
+// 700-034 standing to 700-004 roughly as "three strokes" stands to "four
+// strokes" (his UIII vs UIIII). Before that idea can survive, the local
+// corpus has to be stress-tested against it. This script reads the filtered
+// Lipi metadata and pulls every adjacent occurrence of 700-034, 034-700,
+// 700-004, and 004-700 with its neighboring signs, then groups the hits into
+// frames: exact subsequences (e.g. 097-700-034), wildcard frames of the form
+// prev|700-X|next, and full sequences with the sign after 700 masked. It runs
+// six named adjudication tests, including a right-tail Fisher exact test for
+// whether 097 as left context is enriched before 700-004 relative to 700-034,
+// and records for each test how strongly it supports the count hypothesis and
+// what the skeptical reading is. Writes contexts, frames, and tests CSVs plus
+// a JSON summary. Verdict recorded in the outputs: the hypothesis survives as
+// a narrow source target but is not upgraded to a mapping, count value, or
+// translation.
 import fs from 'node:fs';
 import path from 'node:path';
 

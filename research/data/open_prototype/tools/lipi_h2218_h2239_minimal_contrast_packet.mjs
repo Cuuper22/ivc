@@ -1,6 +1,19 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Within the near-identical H-2218..H-2239 tablets, two objects deviate from the shared
+// template by exactly one sign: H-2237 writes +154-003+ where its siblings write +156-003+,
+// and H-2238 writes +700-033+ where they write +700-034+. Those are the closest things to
+// minimal pairs this series offers. This script builds the control packet for them. It reads
+// the side-role template CSV and the Fig. 4 mapping (for manufacturing group, HARP IDs, and
+// dimensions), then, for each variant, finds every control tablet from the same
+// manufacturing group and template class that differs on exactly the one contrast slot with
+// exactly the expected normal text. Controls are ranked by physical closeness (horizontal,
+// vertical, area deltas, then Fig. 4 distance), and flagged when the dimension match is
+// exact. Output is a CSV of target/control pairs with the source question and admissibility
+// rule each pair must pass, plus a JSON summary naming H-2237/H-2233 as the strongest pair.
+// These are source-validation targets, not readings.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 const templatePath = path.join(reportsDir, 'lipi_h2218_h2239_side_role_templates.csv');

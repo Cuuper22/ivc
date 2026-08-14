@@ -1,3 +1,16 @@
+// Adversarial test of a sign-collision temptation: the crosswalk maps both
+// local sign 390 and local sign 405 toward the same Mayig sign P086, so should
+// we treat 390 and 405 as one sign inside the 002-head ecology? To answer, this
+// script extracts every 002-390 and 002-405 frame from the local Lipi metadata
+// (recording the next sign, tail, terminality, and register fields), summarizes
+// each head->next pair, and pulls the unaccepted crosswalk edges pointing at
+// P086 with their support and counterexample counts. Writes the frames CSV, a
+// head-next summary CSV, the P086 edge list, and a summary JSON to
+// data/open_prototype/reports/. The recorded decision: no collapse — the
+// 002-405 field is dominated by one repeated Harappa TAB:B formula
+// (+520-240-002-405-501+), so P086 pressure is a warning label on future
+// crosswalk use, not a license to merge 390 and 405. No value is accepted.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

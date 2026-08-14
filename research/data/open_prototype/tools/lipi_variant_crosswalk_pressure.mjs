@@ -1,3 +1,23 @@
+// Variant-collapse pressure test using an independent sign list. The lipi
+// catalog treats 154/156 and 033/034 as distinct signs, but they may be
+// allographs — the same sign drawn differently. The Mayig/Parpola crosswalk
+// gives an outside check: if two lipi signs consistently align to the same
+// Parpola sign at the same positions on the same objects, the distinction is
+// under "collapse pressure".
+//
+// The script reads crosswalk_alignment_pairs.csv, the two candidate-mapping
+// CSVs (lipi-to-mayig and the reverse), and overlap_probe.csv. For each of
+// the five target signs (032, 033, 034, 154, 156) it gathers its positional
+// alignments, its top Parpola candidate in both directions, and example
+// contexts, then writes a verdict for three variant pairs. Headline: 154 and
+// 156 both point to P004 (collapse pressure active), while 033 points to P147
+// and 034 has zero clean alignments — crosswalk darkness, not collapse.
+//
+// Outputs: lipi_variant_crosswalk_pressure_signs.csv, _alignments.csv,
+// _pairs.csv, and _summary.json. Pressure means "needs source-image
+// inspection", never a visual-identity or reading claim; every row carries
+// accepted_decipherment_claim = 0.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

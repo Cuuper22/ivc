@@ -1,3 +1,13 @@
+// Classifier for every sign that appears right after 002 (the "head" slot). The question:
+// does 002 open one uniform construction, or does its behavior branch by head? We read the
+// filtered Indus inscription list (lipi/metadata_filtered.csv) and, for each head sign,
+// measure how often the frame ends right after the head (terminal share), how varied the
+// next sign is (Shannon entropy in bits), and whether one exact inscription text dominates
+// (a copy/formula signal). Fixed thresholds then sort heads into classes: closure heads,
+// open selector heads, formula-locked nonterminal heads, weak open heads, and mixed. The
+// point is to test whether 390 is a genuine open selector head and to expose 405 as a
+// formula-locked control that mimics openness. Writes head-class, class-summary, and frame
+// CSVs plus a JSON summary to data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

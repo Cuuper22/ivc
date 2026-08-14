@@ -1,3 +1,17 @@
+"""Skeptic-side audit: do the v2 Brahmi near-miss families survive duplicate collapse?
+
+Some Indus sign families looked unanimous — every token's nearest Brahmi
+neighbor carried the same label. But unanimity is cheap if the "different"
+tokens are really the same image counted twice. This script reads the v2
+source-token segments, each token's rank-1 Brahmi neighbor, and the family
+descent summary, then collapses each family two ways: keep only the first
+token per SHA-256 image hash, and keep only the first token per CISI object
+ID. For every family with 2+ tokens it records whether raw unanimity holds
+after each collapse, and writes a per-family CSV plus a JSON summary that
+highlights the five top near-miss families. The recorded decision: several
+unanimous families collapse below two unique hashes, so duplicate collapse
+adds another reason not to promote any v2 near-miss to a phonetic anchor.
+"""
 from __future__ import annotations
 
 import csv

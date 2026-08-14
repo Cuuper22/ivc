@@ -2,6 +2,20 @@ import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Seal M-735 ends 002-390-125-195, and 195 appears almost nowhere else. Is 125-195 a
+// reusable title sub-tail, or is 195 just a rare terminal cap — and is even that claim
+// cheap? This script runs the test with its own null model. It reads data/open_prototype/
+// lipi/metadata_filtered.csv (deduplicated) plus the branch-selector frames report, logs
+// every 195 occurrence and every neighbor of 125, and builds a full per-sign terminality
+// table. The null: among all signs with at most 2, 3, 5, or 10 occurrences, what share are
+// terminal-only anyway? Rare terminal-only behavior turns out to be common, so 195's 2-for-2
+// terminal record proves little. It also fingerprints the three local M-735 evidence images
+// (SHA-256 plus JPEG pixel dimensions) so the visual side is auditable. Verdicts: the
+// reusable sub-tail is dead for now, the terminal cap stays a wild shot, and the open 125
+// branch narrows to its recurring tails (632-032, 820). Writes occurrences, the sign
+// summary, the rare-terminal null, 125 frame tails, source files, and decisions as CSVs
+// plus a summary JSON in reports/.
+
 const ROOT = process.cwd();
 const META = path.join(ROOT, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const FRAMES = path.join(

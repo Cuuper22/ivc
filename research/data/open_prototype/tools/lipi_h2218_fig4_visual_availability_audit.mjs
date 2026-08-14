@@ -1,6 +1,17 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script records exactly what the public copy of Meadow and Kenoyer 2000 Fig. 4 can and
+// cannot support for the H-2218..H-2239 series. The figure was inspected in a web viewer on
+// 2026-05-24 (the direct PDF download returned 403, and no copy is stored in the repo); it
+// shows all 22 tablets as three side panels each with an end-profile marker, but at a
+// resolution too coarse for segmentation-grade validation. The script reads the Fig. 4
+// mapping CSV plus the public image-lead search summary, and writes one row per tablet
+// stating panel visibility, legibility, whether an object-level public image lead exists
+// (only H-2219 has one), and explicit admissible versus non-admissible uses of this
+// evidence. Output is a CSV and a JSON summary. The point is to fence the figure's
+// evidentiary value: good for coverage and plate-request targeting, useless for readings.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 

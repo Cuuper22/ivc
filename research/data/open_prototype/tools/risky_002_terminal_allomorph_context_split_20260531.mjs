@@ -1,3 +1,16 @@
+// Sign `002` is usually followed by one of three terminal partners: `861`, `820`, or
+// `817`. This script asks whether the choice among those three is conditioned by
+// context — are they "allomorphs" (interchangeable variants whose selection depends
+// on environment)? It reads metadata_filtered.csv, collapses duplicate sign
+// sequences, collects every `002` + terminal-partner row, and scans nine features
+// (object type, site, iconography, material, shape, condition, completeness,
+// previous sign, first sign) for a value that predicts one partner over the others,
+// scoring each cell with a right-tail Fisher test and each feature with mutual
+// information. A 5,000-iteration forger shuffles the partner labels across rows to
+// price the best Fisher p and the best MI against chance (a max-stat correction for
+// having searched many features). If nothing beats the forger, the positive bet is
+// declared killed. Writes a bet summary (JSON + CSV) plus feature, MI, row-level,
+// and forger-iteration CSVs to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

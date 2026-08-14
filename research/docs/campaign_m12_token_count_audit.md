@@ -4,13 +4,13 @@ Date: 2026-05-29
 
 ## Purpose
 
-`BG001/M-12` was the strongest residue from the first branch-gap blind source-box packet: all three blind reviewers counted 10 visible units against a 9-token catalog string.
+This note records an audit of one seal, `M-12`, known as `BG001` inside our blind review packets. It exists because `M-12` was the strongest residue — the strongest unexplained leftover — from the first branch-gap blind source-box packet. A source-box packet is a bundle of image crops scored by reviewers who cannot see the catalog answers; "blind" means exactly that. All three blind reviewers counted 10 visible units on the image, while the catalog string lists 9 tokens.
 
-This audit asks whether that is a source/catalog correction candidate or only a visual ambiguity stressor.
+The audit asks one question. Is this a candidate for correcting the source catalog, or is it only a visual ambiguity stressor — a hard image that stresses the counting process without proving the catalog wrong?
 
 ## Source-Side Artifacts
 
-The first ad hoc crop pass had a Windows-specific trap: filenames using `M12_A` and `M12_a` collided on the case-insensitive filesystem, so the second crop overwrote the first. The audit script fixes this with case-safe names and regenerates the M-12 face/impression crops from the original CISI India leaf `n45`.
+Before looking at the seal itself, we had to fix a file-handling bug. The first ad hoc crop pass had a Windows-specific trap: filenames using `M12_A` and `M12_a` collided on the case-insensitive filesystem, so the second crop overwrote the first. The audit script fixes this with case-safe names and regenerates the M-12 face/impression crops from the original CISI India leaf `n45`.
 
 Outputs:
 
@@ -22,7 +22,7 @@ Outputs:
 
 ## What The Audit Found
 
-The catalog layer is internally consistent at 9 tokens:
+First, the catalog layer agrees with itself. Two independent witnesses — separate catalog records of the same inscription — both list 9 tokens:
 
 | Witness | System | Sequence count |
 | --- | --- | ---: |
@@ -35,13 +35,13 @@ The blind packet did find a stable mismatch:
 | --- | --- | --- | ---: | --- |
 | `BG001` | `M-12` | primary target | 9 | 10, 10, 10 |
 
-But the same packet also contains an adversarial false-positive control:
+But the same packet also contains an adversarial false-positive control — a seal planted specifically to measure how often reviewers over-count when nothing is actually wrong:
 
 | Blind ID | CISI | Role | Catalog count | Blind counts |
 | --- | --- | --- | ---: | --- |
 | `BG009` | `M-654` | scoring negative | 4 | 6, 6, 6 |
 
-All three `BG001` reviewers marked the count uncertain, and all three `BG009` reviewers did too. Under the packet's own scoring negatives, the stable over-count pattern has observed false-positive rate `1/6 = 0.166667`.
+All three `BG001` reviewers marked the count uncertain, and all three `BG009` reviewers did too. That control matters: on `BG009` the reviewers stably over-counted a seal whose catalog count is not in dispute. Under the packet's own scoring negatives, the stable over-count pattern has observed false-positive rate `1/6 = 0.166667`. In plain terms, reviewers agreeing on a higher count is not rare enough to prove the catalog wrong.
 
 ## Decision
 

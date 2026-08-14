@@ -2,9 +2,9 @@
 
 Date: 2026-05-29
 
-Question: do the control-side rows `H-823`, `H-1845`, and `H-237` upgrade enough to carry the `603/636/642` slot-family contrast?
+This note records a source-routing check: for three inscriptions used as controls, can we trace a route from the transcribed row back to a published image or page? A "route" here is that chain of evidence. This is source routing and evidence weighting. It is not sign reading.
 
-This is source routing and evidence weighting. It is not sign reading.
+Question: do the control-side rows `H-823`, `H-1845`, and `H-237` upgrade enough to carry the `603/636/642` slot-family contrast? (`603`, `636`, and `642` are sign IDs competing in the same slot; the contrast needs controls with real source weight.)
 
 ## Decisions
 
@@ -23,7 +23,7 @@ This is source routing and evidence weighting. It is not sign reading.
 
 ## Consequence For The Slot-Family Contrast
 
-`636/642` controls are still weaker than `603` on source weight. `H-360` remains the only source-visible `636` control, while `H-823` is route-dark. `H-1845` remains a public-route `642` control, but `H-237` is demoted to near-zero independent weight because the local current export marks its text as `ref:424.2` and gives no excavation route.
+`636/642` controls are still weaker than `603` on source weight. `H-360` remains the only source-visible `636` control, while `H-823` is route-dark — no traceable image or page route at all. `H-1845` remains a public-route `642` control, but `H-237` is demoted to near-zero independent weight because the local current export marks its text as `ref:424.2` and gives no excavation route; it is likely a clone of the same underlying object, not a second witness.
 
 This does not kill the `240-060-692` subframe. It does narrow what can be claimed: the current source-normalized contrast is strong enough to keep `603` as the live bridge target, but not strong enough to treat `636/642` as fully source-balanced negative controls.
 

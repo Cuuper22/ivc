@@ -4,7 +4,9 @@ Date: 2026-05-25
 
 ## Question
 
-Can the `M-1912 / M-1206 / M-37` terminal triad move from local-row target to source-visible evidence?
+This note records a hunt for source images. The terminal triad is a set of three seals that share the same two-sign prefix in our local transcription rows and differ only in the terminal — the final sign. The numbers (`520`, `220`, `003`, `034`, `415`) are local numeric sign labels: transcription codes, not readings.
+
+The question: can the `M-1912 / M-1206 / M-37` terminal triad move from local-row target to source-visible evidence? A local row is an entry in our local transcription table. Source-visible means the object itself can be seen and labelled on a public source page, not just cited.
 
 Local triad under pressure:
 
@@ -20,7 +22,7 @@ All three local rows are Mohenjo-daro `SEAL:S`, steatite, square, class `MT`, th
 
 ### M-37
 
-The missing M-37 source image gate is now closed at page level.
+The missing M-37 source image gate — the checkpoint that was blocked for lack of a source image — is now closed at page level. CISI is the Corpus of Indus Seals and Inscriptions, the standard photographic corpus.
 
 - CISI Vol. 1, Collections in India, IA leaf `n54`, printed p. 19.
 - Header: `'unicorn' III / SEALS / MOHENJO-DARO 35-37`.
@@ -63,7 +65,7 @@ No equivalent raw CISI 1/2 source page was found in the current public CISI 1/2 
 - Bhaskar S1 iconographic catalogue row marker.
 - RMRL June 2025 bulletin drawing/page already stored at `tmp/m1206_bhaskar/bulletin_page15-15.png`.
 
-M-1912 is still a comparator target, not a source-grade terminal witness.
+M-1912 is still a comparator target, not a source-grade terminal witness. (A witness is an object whose inscription independently attests the sequence; source-grade means backed by a primary source image, not a secondary drawing or citation.)
 
 ## Visual Adjudication
 
@@ -76,7 +78,7 @@ What changed:
 
 What did not change:
 
-- `034` still has no clean Mayig/Parpola overlap row.
+- `034` still has no clean Mayig/Parpola overlap row (Mayig and Parpola are external catalogues with their own sign numbering; an overlap row would tie our local `034` to their codes).
 - No numeric sign value is accepted.
 - No `003/034/415` semantic contrast is accepted.
 - No animal/species value is accepted.

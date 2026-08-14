@@ -2,9 +2,13 @@
 
 Date: 2026-05-25
 
+## What This Note Is
+
+This note tracks our attempts to physically obtain CISI 3.1 — volume 3.1 of the Corpus of Indus Seals and Inscriptions, the primary published photographic record for many of the seals we study. We need the actual volume or its images to check our catalog data against the real photographs.
+
 ## Question
 
-Can the CISI 3.1 source route be made operational instead of sitting as bibliography?
+Can the CISI 3.1 source route — a concrete way to get the book or its images into our hands — be made operational instead of sitting as bibliography?
 
 ## Result
 
@@ -72,7 +76,7 @@ payment_made: no
 
 ## Research Consequence
 
-CISI 3.1 is now an active source-acquisition lane alongside the Harappa image request. The next useful evidence is one of:
+CISI 3.1 is now an active source-acquisition lane — a live workstream, not shelved bibliography — running alongside the Harappa image request. The next useful evidence is one of:
 
 ```text
 Tiedekirja sends invoice/payment link

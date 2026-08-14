@@ -1,3 +1,18 @@
+"""Scores blind reviews of the directionality packet, v2b (unique-target
+controls). The packet mixes recut target images with 12 real scoring
+negatives, external stress controls, synthetic leak sentinels, and synthetic
+blanks, all under blind IDs. Reviewers report, per image: a visual token
+count, whether a single sign band is boxable, and whether any label leaked
+into the image. This script reads each review CSV (from the CLI arguments or
+the default reviews directory), joins it to the answer key, and classifies
+every row into a pass/fail/uncertain outcome by role. The packet gate is
+strict: it fails on fewer than three reviewers, any missing or duplicate
+row, any false positive or target-like uncertainty on a real negative, any
+undetected leak sentinel, any accepted blank, or any disagreement between
+reviewers on a target's token count. Even a clean pass increments accepted
+claims by zero — this stage measures reviewer reliability, not truth. Writes
+a scored-rows CSV and a JSON summary.
+"""
 from __future__ import annotations
 
 import csv

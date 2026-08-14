@@ -1,3 +1,16 @@
+// Tests whether the bigram `154-806` is a "series prefix": a fixed opener whose next
+// slot is filled from a narrow family of signs numbered 467 through 474. If true,
+// sign 806 would need to be split by construction, since elsewhere it acts as a
+// boundary or closure pivot. The script reads metadata_filtered.csv (complete rows
+// only), gathers the sign after every `154-806` occurrence, and counts hits inside
+// the 467..474 window. To be fair to rival explanations, every bigram with at least
+// as much support competes: each gets its own best width-8 numeric successor window,
+// and 154-806 is ranked by best-window share. A 5,000-iteration null resamples
+// successors from the observed pool for every competitor and asks how often any
+// bigram-window combination matches the observed share and hit count (a max-stat
+// over bigrams and windows). Witnesses are also deduplicated and broken down by
+// site to expose Harappa dominance. Writes witness and competitor CSVs plus a JSON
+// summary to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

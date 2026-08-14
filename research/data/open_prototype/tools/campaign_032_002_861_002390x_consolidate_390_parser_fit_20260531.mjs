@@ -1,3 +1,16 @@
+// Writes the current 002-390-X mini-grammar down as an explicit parser and
+// measures how well it fits the data it came from. The parser is a lookup:
+// X=125 predicts an open (continuing) inscription as a dependent-tail operator;
+// X=095 and X=705 predict terminal as class labels; X=530 open, X=590 open
+// (wild shot), X=692 terminal (probably because 692 is raw-terminal-heavy);
+// any other X is a singleton terminal payload. The script runs this rule over
+// every 002-390-X frame in the local Lipi metadata, marks each prediction
+// right or wrong, and splits rows into candidate-tier and wild-shot-tier.
+// Writes the parse rows and decisions CSVs plus a summary JSON to
+// data/open_prototype/reports/. Key caveat, recorded as a decision: the rules
+// were derived from this same small set, so a good fit is bookkeeping, not
+// validation — the next phase must try to break them on new rows.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

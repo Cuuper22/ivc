@@ -107,7 +107,7 @@ It is one of two acquisition moves:
 1. Get fuller Mayig/Parpola data for `M-2104`, `M-315`, `M-1206`, `M-685`, `M-1584`, and `M-1963`.
 2. Get source images and side-label evidence for the H-series `+700-034+` controls and the paired `H-2238 +700-033+` singleton.
 
-Until one of those happens, `034` stays crosswalk-dark.
+Until one of those happens, `034` stays crosswalk-dark: no row links the local `034` code to the Mayig/Parpola layer.
 
 ## Boundary
 

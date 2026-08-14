@@ -46,7 +46,7 @@ The floating `main` raw CSV was pinned to the GitHub path commit before use:
 | Raw SHA-256 | `c02e3d7bb74cf5abb11cc94f88d8d469e6acc5d6fad4b7153c02c43428f58d98` |
 | Rows / columns | `5679 / 38` |
 
-The current `main` download, the pinned commit download, and the existing local `tmp/lipi_current_inscriptions_20260526.csv` snapshot have the same SHA-256. So this is a stable upstream recheck, not a changed-data rescue.
+The current `main` download, the pinned commit download, and the existing local `tmp/lipi_current_inscriptions_20260526.csv` snapshot all have the same SHA-256. In plain terms: the upstream data has not changed, so this is a stable upstream recheck, not a changed-data rescue.
 
 ## Schema Result
 
@@ -108,4 +108,4 @@ The upstream Yajnadevam source does not rescue `3335.1`. It confirms that:
 - The row-order anomaly remains acquisition pressure only.
 - The `032` matched-lane gate remains blocked.
 
-Use this result to stop looping on local Lipi provenance. The next path for `3335.1` is external source acquisition or replacement strict `032` witness discovery.
+The practical lesson: stop looping on local Lipi provenance. The next path for `3335.1` is external source acquisition or replacement strict `032` witness discovery.

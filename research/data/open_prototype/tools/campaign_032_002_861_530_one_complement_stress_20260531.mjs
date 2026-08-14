@@ -1,3 +1,13 @@
+// Stress test for the bet that sign 530, when it sits in the branch slot of a governed frame
+// (002 + head + 530 + tail), always opens exactly one complement slot: 002-H-530-Y and never
+// 002-H-530 alone or 002-H-530-Y-Z. We read the filtered Indus inscription list
+// (lipi/metadata_filtered.csv), keep one copy of each distinct sign sequence, and collect two
+// views: every governed frame for every branch sign (so 530 can be ranked against
+// count-matched peer branches), and every occurrence of 530 anywhere in any inscription (to
+// check whether the one-complement habit holds globally or only after 002-H). The script
+// scores two bets — 530 as a portable one-complement branch, and 530 as a global chain sign —
+// and writes frame, occurrence, baseline, and decision CSVs plus a JSON summary to
+// data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

@@ -1,3 +1,14 @@
+// Stress test for sign 705 as a terminal branch selector under 002-390. The worry: 705 lives
+// mostly inside the common 033-705 formula, so its two terminal 002-390-705 rows might be
+// formula leakage rather than grammar. We read the filtered Indus inscription list
+// (lipi/metadata_filtered.csv), keep one copy of each distinct sign sequence, and index every
+// 705 occurrence with its neighbors, site, region, and — when available — the source-check
+// status carried over from the earlier branch-selector forger report
+// (risky_002390_canonical_branch_selector_forger_20260531_frames.csv). We split occurrences
+// into four families (the 002-390-705 frame, the 033-705 formula, other 705 uses, and
+// non-frame 390-705, which turns out empty) and score four named bets with evidence,
+// adversary readings, and falsifiers. Outputs: occurrence, family, frame, and decision CSVs
+// plus a JSON summary in data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

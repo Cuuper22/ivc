@@ -4,12 +4,16 @@ Date: 2026-05-24
 
 ## Purpose
 
-This artifact isolates the strongest mixed short-long `TAB:I` family from the multi-side mark validation queue:
+This note isolates one specific family of tablets and turns it into a precise validation sheet — a per-artifact list of what must be checked against real images.
+
+The family: `TAB:I` is a Harappa tablet type code from the catalog. The multi-side mark validation queue tracks artifacts whose different sides carry different inscriptions. The strongest mixed short-long `TAB:I` family in that queue pairs a long inscription side with a short-mark side:
 
 ```text
 long side: +400-740-176+
 short side: +700-033+ or +700-034+
 ```
+
+Numbers like `400`, `740`, `176`, `700`, `033`, and `034` are catalog sign codes, not readings.
 
 The goal is to turn a repeated side-mark pattern into a precise validation sheet. It is not a numerical reading, metrological reading, physical side function, sign meaning, phonetic value, language identification, or translation.
 
@@ -29,7 +33,7 @@ data/open_prototype/reports/lipi_multiside_mark_validation_queue.csv
 
 ## Target Definition
 
-Rows were selected from the current T3 `lipi` planning layer when all of these were true:
+Rows were selected from the current T3 `lipi` planning layer — the exploratory, catalog-derived data this project computes from before image validation — when all of these were true:
 
 - priority is `P1_mixed_short_long_core`;
 - artifact type is `TAB:I`;
@@ -54,6 +58,8 @@ vertical_mm_positive_range: 5.8-11.9
 ```
 
 ## Context Classes
+
+CISI IDs are artifact numbers from the published Corpus of Indus Seals and Inscriptions.
 
 | Context Class | Count | CISI IDs |
 | --- | ---: | --- |
@@ -85,7 +91,7 @@ Before any functional test, each target artifact needs source or image validatio
 - whether `+400-740-176+` is stable under source-image segmentation;
 - whether H-355 and H-987 are true three-side variants or catalog-entry edge cases. The follow-on [H-355 double-short-side clarification audit](h355_double_short_side_clarification_audit.md) found no object-level public image for H-355, so its duplicate `+700-033+` short rows remain pending a three-side CISI/HARP source check.
 - whether the two `034` before-longer packet cases survive source checking. The follow-on [H-933/H-960 034 contrast source audit](h933_h960_034_contrast_source_audit.md) found no object-level public image for either H-933 or H-960, so the contrast remains pending a paired two-side CISI/HARP source check.
-- whether the five source-dark long-side-1/short-side-2 `033` replicates survive source checking. The follow-on [H-1304/H-1344/H-1347 source-dark direct request audit](h1304_h1344_h1347_source_dark_direct_request_audit.md) found no object-level image, plate, caption, or useful text-only lead for H-1304, H-1344, H-1345, H-1346, or H-1347, so they should be acquired as a direct two-side source batch.
+- whether the five source-dark long-side-1/short-side-2 `033` replicates survive source checking. ("Source-dark" means no public trace was found in the checked sources.) The follow-on [H-1304/H-1344/H-1347 source-dark direct request audit](h1304_h1344_h1347_source_dark_direct_request_audit.md) found no object-level image, plate, caption, or useful text-only lead for H-1304, H-1344, H-1345, H-1346, or H-1347, so they should be acquired as a direct two-side source batch.
 
 ## Next Test
 

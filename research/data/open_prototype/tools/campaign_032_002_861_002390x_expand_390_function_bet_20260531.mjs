@@ -1,6 +1,21 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script stakes the first functional (not just syntactic) bet on 390:
+// that 002-390-X is an authority/status formula, with 390 as a status or
+// title head — rather than a commodity label. It scans
+// lipi/metadata_filtered.csv for every 002-390-X occurrence and routes each
+// row by its X sign: terminal classifiers (095, 705, 000, 140, 692, 707,
+// 072, 346), linkers (125, 530, 590), or other. Per route it profiles counts,
+// terminal share, average text length, prefix length before the frame, and
+// the spread across sites, object types, and iconography. The function
+// reading only holds if the routes differ the predicted way: classifier
+// closures short, linker branches longer and complement-bearing, and rows
+// concentrated on seals and tablets rather than pottery or tags. Three wild-
+// shot bets with kill conditions are recorded alongside. Writes route
+// summaries, raw occurrences, and bets as CSVs plus a summary JSON to
+// data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

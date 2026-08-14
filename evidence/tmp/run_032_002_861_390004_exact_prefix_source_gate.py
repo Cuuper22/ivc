@@ -1,3 +1,16 @@
+"""Source gate for the exact prefix 390-004-002-861.
+
+This script reads the local inscription table, the tail-predictor all-rows table, and
+the OCR text layer of the CISI Pakistan volume (a djvu XML dump) to locate candidate
+plate pages. With PIL it crops, enhances, and copies candidate panels into
+tmp/032_002_861_390004_exact_prefix_source_gate. The question: can the exact prefix
+390-004-002-861 be promoted from a catalog split to a source-visible sign-system
+alternation — that is, can we actually see the alternation on artifact images rather
+than trust the transcription? It writes batch CSVs, a summary JSON, and a docs/
+markdown note. Positive witnesses are recorded as source-visible but not accepted as
+token values; negative witnesses stay acquisition-gated with no grammar promotion.
+"""
+
 from __future__ import annotations
 
 import csv

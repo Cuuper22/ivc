@@ -1,3 +1,16 @@
+"""Builds the one-item blind packet for seal M-381, the v2 negative control
+whose panel crop reached packet-ready status. M-381 is a negative because in
+its catalog text 032 is followed by 798, not directly by 002 — so a blind
+reviewer boxing sign tokens on the image should not find 032 adjacent to
+002. The script reads the v2 source-status CSV, refuses to run unless M-381
+is marked source_visible_ready_for_token_box_adjudication, copies the panel
+image to a neutral blind filename with a SHA-256 hash, and writes three
+CSVs: the blind manifest (stage-1 task: box every token without using
+catalog text), the answer key (kept separate; stage 2 aligns boxes to the
+catalog only after tokenization is recorded), and an empty review template.
+A JSON summary records the file paths and the zero accepted-claims
+increment.
+"""
 import csv
 import hashlib
 import json

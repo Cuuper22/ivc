@@ -1,3 +1,15 @@
+// A predictable symbol system is not automatically a language. Bookkeeping
+// codes and emblem sequences can look statistically ordered too. This script
+// merges three earlier reports — the effective-unicity degeneracy summary,
+// the simple synthetic shuffle comparators, and the structured nonlinguistic
+// forgers (administrative/emblem generators) — into one verdict table. It
+// splits the evidence in two: the masked-sign top-1 metric, which no tested
+// forger has matched (so it survives as a local-constraint signal), and the
+// older broad bidirectional predictability metric, which structured forgers
+// can equal or beat (so it is rejected as decipherment evidence). No new
+// computation happens here beyond picking maxima across the null controls;
+// the output is a JSON summary and CSV of per-control null rows in
+// data/open_prototype/reports/.
 import fs from 'node:fs';
 import path from 'node:path';
 

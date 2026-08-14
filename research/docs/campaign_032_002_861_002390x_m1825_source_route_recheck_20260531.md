@@ -2,6 +2,8 @@
 
 Date: 2026-05-31 America/Los_Angeles
 
+This note answers one question: can we find a public route from seal M-1825 to a real published image of its inscription? The answer, on this pass, is no. The note records where we looked, what we found, and what M-1825 may and may not be used for as a result.
+
 Status: acquisition route triaged; no source-token upgrade.
 
 ## Target
@@ -19,7 +21,7 @@ Local row:
 - Direction: `R/L`
 - Text: `+157-031-002-390-705+`
 
-The live question was whether `M-1825` can become a source-bound witness for the repeated terminal `002-390-705` branch. It cannot on the evidence found in this pass.
+The live question was whether `M-1825` can become a source-bound witness — an object tied to a real source image — for the repeated terminal `002-390-705` branch. It cannot on the evidence found in this pass.
 
 ## Sources Checked
 
@@ -57,7 +59,7 @@ Local extracted text:
 
 - `tmp/m1206_bhaskar/S1-IndusZoomorphicIconCatalogue.txt`
 
-It lists `M-1825` as an `F2` unicorn object. That confirms object/icon-class presence in a secondary catalogue, not the inscription, sign order, source plate, or token boundary.
+It lists `M-1825` as an `F2` unicorn object. That confirms the object's presence in a secondary icon-class catalogue — a list of what animal appears on the seal — not the inscription, sign order, source plate, or token boundary.
 
 ## Decision
 
@@ -65,11 +67,11 @@ It lists `M-1825` as an `F2` unicorn object. That confirms object/icon-class pre
 
 `m1825_ia_pakistan_absent_secondary_icon_only_no_signband`
 
-Use it as acquisition pressure only. Do not count it as a strict source-bound `705` witness.
+Use it as acquisition pressure only — a reason to keep hunting for a source. Do not count it as a strict source-bound `705` witness.
 
 Consequences:
 
-- Repeated `002-390-705` remains locally interesting but source-gated.
+- Repeated `002-390-705` remains locally interesting but source-gated: it cannot enter the analysis until a source image is found.
 - `705` still has zero strict source-image witnesses in this branch gate.
 - Dholavira `4237.1` / Acc. No. `8758` is now the only live repeated-`705` source-binding route in this campaign layer.
 - No value, phonetics, sign meaning, function, language identity, or translation is accepted.

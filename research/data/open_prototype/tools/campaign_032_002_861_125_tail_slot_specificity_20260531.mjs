@@ -1,6 +1,19 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Two probes into how specific the tails after sign 125 really are. First, a terminality
+// control: if 125 were a generic line-closer, governed and ungoverned 125 should differ —
+// but this script shows both close within two signs most of the time, which kills the
+// generic-closer model and forces tail-class scoring instead. Second, a motif audit: it
+// scans data/open_prototype/lipi/metadata_filtered.csv for nine exact sign motifs
+// (297-350, 350-125, 125-413, 610-125-032, 125-032, 390-125-632-032, 190-125-632-032,
+// 390-125-820, 405-125-820) and, for each hit, records its context and whether it supports
+// or breaks a named sub-hypothesis — for example, 297-350 counts as a pair head only when
+// flanked by 002 and 125, and 125-413 must be terminal inside that template. Every 125
+// occurrence is also logged with its governed head (found by walking up to four signs left
+// for a 002). Writes motif rows, motif summaries, 125 occurrences, and the governed-versus-
+// ungoverned terminality comparison as CSVs plus a summary JSON in reports/.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

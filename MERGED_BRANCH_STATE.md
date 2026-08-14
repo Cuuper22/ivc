@@ -4,7 +4,7 @@ Date: 2026-06-06 America/Los_Angeles
 
 ## What Was Merged
 
-The local workspace was on `codex/indus-frontier-replacement-20260531`, but Git had no commits and no remote. The apparent "branches" were research states encoded in files rather than normal Git branches.
+The local workspace sat on `codex/indus-frontier-replacement-20260531`, but Git had no commits and no remote. So the apparent "branches" were not Git branches at all — they were two research states encoded in the files.
 
 This export merges both research states into one organized repository:
 
@@ -20,7 +20,7 @@ This export merges both research states into one organized repository:
 
 ## Current Decision
 
-The replacement branch is the live source of truth. The quarantined branch is retained to explain the history and preserve local files, but it is autopsy-only unless a result is independently re-earned under replacement-run naming.
+The replacement branch is the live source of truth. The quarantined branch stays in the repo, but only to explain the history and preserve local files. It is autopsy-only: nothing in it counts as evidence unless the result is independently re-earned under replacement-run naming.
 
 Accepted claim counts in the live state:
 
@@ -45,13 +45,13 @@ Accepted claim counts in the live state:
 | `.codex/` | `workspace/codex/` |
 | `tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/.git/` | `evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/_git_history/` |
 
-No local project evidence files were intentionally omitted from the export. The original root `.git/` directory itself was not copied because it had no commits and is repository control metadata, not project evidence.
+No local project evidence files were intentionally left out of the export. The original root `.git/` directory was not copied, but nothing was lost by that: it had no commits, and it is repository control metadata, not project evidence.
 
 ## Practical Next Work
 
-The strongest honest project state is: one narrow structural tail formula earned, no reading earned.
+The strongest honest statement of the project state is: one narrow structural tail formula earned, no reading earned.
 
-The next useful work is source acquisition and source-image validation, especially:
+The next useful work is getting sources and validating source images, especially:
 
 - source-bind H-1993 / H96-2769 / Figure 17.07
 - source-bind Dholavira 8758 / ZA-12:2 / 4237.1

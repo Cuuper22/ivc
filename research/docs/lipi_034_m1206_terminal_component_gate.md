@@ -4,9 +4,11 @@ Date: 2026-05-26
 
 ## Question
 
-The previous M-1206 cohesion gate used whole three-sign bands. That was useful, but it could be dominated by the shared `520-220` prefix.
+This note records a blind-review gate — a decision checkpoint the evidence must pass before any claim moves forward. The numbers in strings like `520-220-034` are local numeric sign labels — transcription codes, not readings.
 
-This gate isolates the apparent terminal components. The question is narrower:
+The previous M-1206 cohesion gate used whole three-sign bands: crops of the full inscription strip. That was useful, but whole bands could match mostly because they share the `520-220` prefix, the first two signs.
+
+This gate isolates the apparent terminal components — crops of the final sign alone. The question is narrower:
 
 ```text
 Does the M-1206 terminal component visually stay separate from the 415 terminal controls, or does it cluster with them?
@@ -15,6 +17,8 @@ Does the M-1206 terminal component visually stay separate from the 415 terminal 
 This is still graphic-class research only. It is not a value, reading, function, language, or translation test.
 
 ## Inputs
+
+The neutral packet is the anonymized bundle given to blind reviewers: label-free crops plus a private key that stays hidden until adjudication.
 
 Neutral packet:
 
@@ -55,7 +59,7 @@ T004/T005 include adjacent curved material, so M-37 remains a useful same-site p
 
 ## Blind Reviewer Results
 
-Two blind reviewers classified only the anonymous terminal-component sheet.
+Two blind reviewers classified only the anonymous terminal-component sheet. Neither knew which object any crop came from.
 
 ### Reviewer A
 
@@ -79,6 +83,8 @@ T011-T016 are mostly distractors; T015 is a superficial near miss but outside th
 ```
 
 ## Unblinded Adjudication
+
+Adjudication is the judgment made after the private key is opened and the crop identities come back into view.
 
 The target terminal result:
 
@@ -144,7 +150,7 @@ After this gate:
 The isolated M-1206 terminal component still clusters closest to exact-side H-938 415 controls and side-gated H-941/H-786 415-family candidates.
 ```
 
-This is a stronger result than the whole-band gate. It moves the branch away from a clean `034` terminal contrast and toward a real sign-inventory problem:
+This is a stronger result than the whole-band gate. It moves this branch of the investigation away from a clean `034` terminal contrast and toward a real sign-inventory problem — a question about how many distinct signs there are:
 
 ```text
 034/415 may be allographs, source-side mapping variants, transcription-policy splits, or neighboring signs within one graphic family.

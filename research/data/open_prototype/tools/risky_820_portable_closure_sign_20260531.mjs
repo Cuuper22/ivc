@@ -1,3 +1,14 @@
+// Tests the bet that Indus sign 820 is a "portable closure sign": a text-final
+// sign that at least two different governors (the signs 002 and 060 that come
+// right before it) each use to close an inscription, rather than the tail of
+// one fixed formula. We read the filtered corpus metadata (complete texts
+// only), collapse to exact cells keyed by predecessor-target-next context plus
+// text/site/type/symbol, and for every target sign count how many incoming
+// branches have at least 20 cells with at least 90% ending the text. A null
+// check then shuffles the terminal/nonterminal flags 5000 times to see how
+// often any target — or 820 specifically — matches 820's observed score by
+// chance. Writes a JSON report plus two CSVs (target ranking, incoming
+// branches) to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

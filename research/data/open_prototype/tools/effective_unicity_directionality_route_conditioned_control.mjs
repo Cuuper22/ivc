@@ -1,3 +1,23 @@
+// Route-conditioned control: does having a public photo route bias the result?
+//
+// Only some directionality candidates were found in the public CISI plate
+// scans. If the rows that happen to have a public route score differently from
+// the rows that do not, any image-based follow-up would be built on a biased
+// sample. This script reads the frozen v1 route-probe status (top-80 queue
+// rows in the two P1 priority bands), splits them into rows with and without
+// a public plate-route candidate, and compares stored-win shares. It also
+// collapses the routed subset three ways (one representative per source page,
+// per site|type|symbol|direction register, per full source-convention key)
+// and repeats the check for the subset that additionally has possible/strong
+// v2e signband geometry. Four permutation nulls shuffle the has-route label
+// inside increasingly fine metadata blocks (5000 iterations by default;
+// --iterations=N overrides). Explicit fail gates apply: any subset stored-win
+// share below 0.70, or any null reproducing the observed route share more
+// than 10% of the time, fails promotion. Outputs: a JSON summary with the
+// pass/fail decision, a subset CSV, and null summary/iteration CSVs in
+// data/open_prototype/reports/. This audits source availability only — it is
+// not evidence about physical reading direction.
+
 import fs from 'fs';
 import path from 'path';
 

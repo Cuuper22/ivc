@@ -1,3 +1,21 @@
+// Do the signs of an inscription carry information about the physical size of
+// the object they sit on, beyond what the object's type, site, material, and
+// shape already explain? If bigger seals systematically carry different signs
+// even after those proxies are held fixed, that residue would be worth
+// chasing. This script measures it. From the filtered metadata it builds
+// clean numeric rows, collapses exact duplicate sequences into families, and
+// bins each object's catalog measurements into targets: horizontal, vertical,
+// and thickness bins (mm), plus area and aspect-ratio bins. It also assigns
+// every sign a provisional positional class (initial/medial/terminal/single/
+// edge-mixed/distributed, from where the sign sits in rows) to define an
+// edge-class frame feature. Leave-one-out models from majority vote up to
+// token naive Bayes predict each bin, and each observed score is compared to
+// label shuffles blocked ever more tightly — up to permuting labels only
+// within groups matched on length, type, site, material, shape, direction,
+// and edge-class frame. Iterations default to 10 (override with the
+// environment variable IVC_DIMENSION_RESIDUE_ITERATIONS). Writes sign-class,
+// observed, iteration, and summary CSVs plus a JSON summary. Catalog-
+// measurement scout only; no metrological or semantic reading follows.
 import fs from 'node:fs';
 import path from 'node:path';
 

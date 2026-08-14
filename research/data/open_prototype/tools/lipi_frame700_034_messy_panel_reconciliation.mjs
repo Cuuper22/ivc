@@ -1,6 +1,17 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script records the outcome of trying to reconcile the five "messy" objects -- H-771,
+// H-893, H-925, H-983, and H-353 -- against their CISI page scans, using the clean two-panel
+// objects H-930 and H-789 as the standard to meet. Each hard-coded row lists the panel
+// labels actually visible on the scan, the observed panel count versus the local metadata's
+// two sides, which panel could plausibly carry the short frame700 row, and exactly why the
+// mapping is blocked (four A photographs for one companion row, numbered variants like
+// H-893 (1), an extra C side, and so on). The script tallies these into a JSON summary and
+// writes the rows as a CSV. The result is deliberately negative: all five objects fail the
+// clean standard, so none of them can yet anchor the 034 substitution test. Preserving that
+// failure, with reasons, is the point.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 const outCsv = path.join(reportsDir, 'lipi_frame700_034_messy_panel_reconciliation.csv');

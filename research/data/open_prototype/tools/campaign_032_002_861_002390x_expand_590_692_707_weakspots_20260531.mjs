@@ -1,6 +1,20 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script attacks the three weakest X signs in the 002 frame — 590, 692,
+// and 707 — where the row counts are so small that any claim is fragile. It
+// reads lipi/metadata_filtered.csv, deduplicates by sign sequence, and
+// gathers two views: every occurrence of the three signs anywhere (with two
+// signs of left context and terminal status) and every 002-HEAD-X frame where
+// one of them fills the X slot. From those rows it stakes three explicitly
+// thin bets: 590 is a head-routed extender (heads 390/798 route it to 032,
+// 392 to 125, 368 to 900, while 125/540/705 close), 692 is terminal by
+// default with a single head-455-licenses-416 exception, and 707 is only
+// "terminal bait" — one X-slot row, so its sole use is a prediction about the
+// next 002-H-707. Each bet self-downgrades to "too_small" if its counts do
+// not match. Writes X-slot rows, raw occurrences, and bets as CSVs plus a
+// summary JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

@@ -4,9 +4,9 @@ Date: 2026-05-24
 
 ## Purpose
 
-This is the first controlled structural baseline on the open prototype clean subset.
+This note records the first controlled structural baseline on the open prototype clean subset — the small, quality-gated slice of Indus inscriptions we allow into early experiments.
 
-It tests whether the sign strings have recoverable order structure under frequency, position, reversed-order, shuffled-order, and edge-sign controls. It does not test meaning, language, phonetic value, or translation.
+It answers one question: do the sign strings have real order? That is, does the sequence of signs carry information beyond which signs appear and how often? We test this against frequency, position, reversed-order, shuffled-order, and edge-sign controls. The note does not test meaning, language, phonetic value, or translation, and it claims none of those.
 
 ## Local Artifacts
 
@@ -17,7 +17,7 @@ data/open_prototype/reports/direction_order_masked_predictions.csv
 data/open_prototype/reports/direction_order_masked_summary.csv
 ```
 
-Source gate:
+Source gate — the pass/fail filter that decides which rows are allowed into this test:
 
 ```text
 data/open_prototype/reports/mismatch_audit.csv
@@ -49,6 +49,8 @@ Top signs:
 This is not a representative IVC corpus. It is a gated first-pass slice.
 
 ## Experiment 1: Sequence Order Likelihood
+
+The idea: train a simple model of which sign follows which (a bigram model), always holding out the inscription being scored. If the strings have real order, an inscription should score higher in its observed direction than reversed or shuffled.
 
 Method:
 
@@ -92,6 +94,8 @@ Interpretation:
 The order signal is not only an artifact of the two highest-frequency signs. It is weaker without them, which is expected, but it survives enough to justify stronger structural work.
 
 ## Experiment 2: Masked Sign Prediction
+
+The idea: hide one sign at a time and ask each model to guess it. A model that uses surrounding context should beat one that only knows sign frequencies — if the strings have real structure.
 
 Method:
 
@@ -148,13 +152,13 @@ The result is narrow:
 - All rows are Mohenjo-daro `SEAL:S`.
 - The baseline uses `lipi` numeric signs only.
 - No primary image validation has been done.
-- No `P###` to `+###` sign crosswalk has been established.
+- No `P###` to `+###` sign crosswalk — a verified mapping between the two sign-numbering systems — has been established.
 - Terminal exact-sign prediction is still poor.
-- No nonlinguistic comparator baseline was run for this early subset in this note; later Vector 2 structured comparators show broad predictability can be mimicked by administrative/emblem forgers.
+- No nonlinguistic comparator baseline was run for this early subset in this note. A comparator is a non-language control corpus scored the same way. Later Vector 2 structured comparators show broad predictability can be mimicked by administrative/emblem forgers — synthetic generators that produce ordered strings without any language behind them.
 
 ## Interpretation Boundary
 
-This supports an A2 structural claim on the open prototype clean subset:
+This supports an A2 structural claim — our claim tier for statements about structure only, never meaning — on the open prototype clean subset:
 
 ```text
 The gated Mohenjo-daro seal subset contains ordered sign dependencies beyond frequency and simple position baselines.

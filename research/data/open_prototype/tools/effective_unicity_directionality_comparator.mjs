@@ -1,3 +1,21 @@
+// Cross-corpus directionality comparator.
+//
+// The question: is the Indus corpus's stored-vs-reversed order asymmetry
+// special, or do other symbol systems show it too? For each corpus, this
+// script scores every row with a leave-one-row-out smoothed bigram model —
+// the row's own transition counts are subtracted from the model before
+// scoring, so a sequence never helps predict itself — and counts how often
+// the stored token order beats its reversal (the "stored win share"). It runs
+// the same test on the Indus Lipi rows under several dedupe scopes, on the
+// independent Mayig transcription layer, on the Lipi/Mayig crosswalk-aligned
+// pairs, on two readable scripts (Linear B Series D and SumTablets Sumerian
+// lines), and on Sproat's 2014 real-world nonlinguistic sequences. Each cell
+// is compared against four shuffle nulls (80 iterations each by default;
+// --iterations=N overrides). Output goes to data/open_prototype/reports/:
+// a JSON summary that names any comparator matching the harsh Indus scope,
+// plus per-corpus, null-summary, and null-iteration CSVs. If a nonlinguistic
+// comparator scores as high, directionality alone is not a writing diagnostic.
+
 import fs from 'fs';
 import path from 'path';
 

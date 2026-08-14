@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script sharpens the 002-H-X parse into per-sign subrules and tests them. It reads
+// Indus inscriptions from data/open_prototype/lipi/metadata_filtered.csv, dedupes to unique
+// sign sequences, indexes every occurrence of every sign with its neighbors, and extracts all
+// 002-H-X windows. From those it probes five specific claims: that 002 converts 095 into a
+// terminal label (while plain 390-095 can continue); that head 320 licenses a 125 cap after
+// the otherwise terminal 705; that 530 selects complements which are already terminal-biased
+// signs corpus-wide; that the tail after 125 is chosen by the head class, not by 125 itself;
+// and that 390 is a right-edge host whose row closes or continues according to the X subtype
+// (each X gets a predicted class, and each 390 row is scored pass/fail against it). The five
+// bets, the classified 390 rows, the 125 head families, and the 530 complements go to CSVs in
+// reports/, plus a summary JSON.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

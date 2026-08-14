@@ -16,7 +16,7 @@ Best live positive reading:
 
 `002-390-X` is a fixed construction with a paradigmatic slot after `002-390`.
 
-That does not mean a translation is accepted. It means the branch signs should be tested as a closed-choice system that may condition syntax, semantic class, or following structure.
+That does not mean a translation is accepted. It means something narrower: the branch signs should be tested as a closed-choice system — a small fixed menu of options — that may condition syntax, semantic class, or following structure.
 
 Ranked positive hypotheses:
 
@@ -65,14 +65,14 @@ The adversarial model concedes real script behavior if the branch system survive
 
 ## Decision
 
-The positive model is worth testing because branch choice currently predicts closure/continuation in the 15-row matrix:
+The positive model earns its test because branch choice currently predicts closure/continuation in the 15-row matrix:
 
 - `125`: 4/4 continuation.
 - `095`: 2/2 closure.
 - `705`: 2/2 closure, source-gated.
 - `692`: 1/1 closure, strict visible.
 
-The adversarial model is strong because strict visual proof is partial, `705` is not bound, and terminal/layout/copy-family artifacts are live.
+The adversarial model stays strong because strict visual proof is partial, `705` is not bound, and terminal/layout/copy-family artifacts are live.
 
 ## Next Batch
 

@@ -4,7 +4,7 @@ Date: 2026-05-25
 
 ## Purpose
 
-This stores the source, linguistic, and adversarial review of the H-2237/H-2238 minimal-contrast packet.
+This note stores the team's three-way review — source, linguistic, and adversarial — of the H-2237/H-2238 minimal-contrast packet. That packet holds the two tablets in the H-2218 through H-2239 series whose inscriptions differ from their controls by exactly one sign. The review exists to state, before any images arrive, what would make the contrasts real and what would kill them.
 
 ## Linguistic Review
 
@@ -12,7 +12,7 @@ This stores the source, linguistic, and adversarial review of the H-2237/H-2238 
 
 They become usable minimal contrasts only if source validation confirms:
 
-- `H-2237`'s `154` is visually real, not damage, incomplete impression, allography of `156`, or transcription drift.
+- `H-2237`'s `154` is visually real, not damage, incomplete impression, allography of `156` (a variant way of writing the same sign), or transcription drift.
 - `H-2238`'s `033` is visually real, not allography or misreading of `034`.
 - All three sides are correctly assigned to physical or source-stable side nodes.
 - The shared template order `700|861|15x` is not just catalog or image ordering.
@@ -50,7 +50,7 @@ Controls required:
 - source-confirmed side labels and physical side positions;
 - diagnostic-stroke visibility for `154/156` and `033/034`;
 - damage and photo-quality status;
-- HARP/CISI/Fig. 4/local-row crosswalk;
+- HARP/CISI/Fig. 4/local-row crosswalk — the table that aligns all four identifier systems for each object;
 - copy/workshop hand notes if available.
 
 ## Source Request
@@ -72,7 +72,7 @@ For every H-2218 through H-2239 object, request:
 - Meadow and Kenoyer Fig. 4 item number and Kenoyer/Meadow figure number.
 - Manufacturing group assignment.
 - All plate/page/image identifiers.
-- All three side images at segmentation-grade resolution.
+- All three side images at segmentation-grade resolution — sharp enough to split each inscription into individual signs.
 - Exact printed side labels for each image.
 - Physical side order if known.
 - Published figure order, if different.

@@ -2,7 +2,7 @@
 
 Date: 2026-05-31
 
-This is the follow-up gate for the remaining low-null rows from the Brahmi real-token impostor forger. The previous v3 impostor run found 21 sign/orientation families where unrelated real Indus token crops did not reproduce the observed Brahmi modal-label match above the `0.01` threshold. This audit asks whether any of those 21 rows actually becomes a review candidate after joining the v2 shape/label nulls, the v3 independence preflight, and duplicate-collapse checks.
+This is the follow-up gate for the remaining low-null rows from the Brahmi real-token impostor forger. A "low-null" row is one the previous v3 impostor run could not fake: the run found 21 sign/orientation families where unrelated real Indus token crops did not reproduce the observed Brahmi modal-label match above the `0.01` threshold. This audit asks one question: does any of those 21 rows actually become a review candidate once we join in the v2 shape/label nulls, the v3 independence preflight, and duplicate-collapse checks?
 
 No. The low-null rows are not survivors.
 
@@ -31,7 +31,7 @@ Inputs:
 | Pass both minimum independence and duplicate-collapse unanimity | 0 |
 | Review-packet eligible rows | 0 |
 
-Every low-null row still fails the original shape-null gate. Nineteen of the 21 also fail the original label-null gate. Eleven fail minimum source-token independence. The remaining independence-pass rows are not duplicate-collapse unanimous, so they are broad-family modal artifacts, not stable sign-value candidates.
+Every low-null row still fails the original shape-null gate. Nineteen of the 21 also fail the original label-null gate. Eleven fail minimum source-token independence. The rows that do pass independence are not duplicate-collapse unanimous — which means they are broad-family modal artifacts, not stable sign-value candidates.
 
 The two rows that pass the label-null threshold still die:
 
@@ -49,6 +49,6 @@ The strongest v2 near-miss rows stay blocked:
 
 ## Decision
 
-Retracted as a descendant-script phonetic anchor. The low-null subset adds no candidate-only rows and no visual-review rows. It only says the real-token impostor forger is not the binding objection for those 21 rows; the binding objections are the original shape null, the original label null, and source-token independence/duplicate-collapse instability.
+Retracted as a descendant-script phonetic anchor. The low-null subset adds no candidate-only rows and no visual-review rows. All it establishes is that the real-token impostor forger is not the binding objection for those 21 rows; the binding objections are the original shape null, the original label null, and source-token independence/duplicate-collapse instability.
 
-Next Brahmi gate, if pursued, needs new independent source-token data before any rerun. Reusing these 21 rows cannot create a value, sound, language identification, or translation.
+Any next Brahmi gate needs new independent source-token data before a rerun. Reusing these 21 rows cannot create a value, sound, language identification, or translation.

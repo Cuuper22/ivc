@@ -1,3 +1,21 @@
+// Side-context sheet for the most focused artifact family found so far:
+// Harappa TAB:I tablets that combine the longer text +400-740-176+ with a
+// short mark of +700-033+ or +700-034+. Before comparing 033 vs. 034 tablets
+// in any way, we need to know exactly how each object's sides are laid out in
+// the catalog and which layout variants exist.
+//
+// The script reads lipi_multiside_mark_validation_queue.csv, keeps the
+// P1 mixed short-long TAB:I rows whose side signature contains the long mark
+// plus one of the two short marks, and classifies each artifact's layout:
+// canonical two-side long1-short2, reversed short1-long2, three-side with a
+// double short mark, three-side with an extra longer text, or other. Each row
+// keeps its raw ids, excavation ids, and dimensions, and carries an explicit
+// validation-need note.
+//
+// Outputs: lipi_tab_i_mixed_400_740_176_side_context.csv (consumed by the
+// dimension probe) and _summary.json. Current census: 26 artifacts, 20 of
+// them canonical. A validation sheet only — no readings are accepted.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

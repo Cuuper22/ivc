@@ -1,6 +1,19 @@
 import fs from "node:fs";
 import path from "node:path";
 
+// Can the Surkotada seal Sktd-1 (row 3875.1, local text +390-004-002-390-125-820+) be
+// promoted to a strict source-visible witness for the 004 lane? This audit gathers every
+// piece of evidence in one place and answers no. It reads four earlier report CSVs (the
+// side-pair recheck, the token-boundary adjudication, the sealed blind-packet key, and the
+// source-upgrade impact scenarios) and inspects five local image files under tmp/, parsing
+// each JPEG's header for its pixel dimensions so the inventory is verifiable. Six strictness
+// tests follow: the A/a side-pair labels pass, the top-band 002-390-125 window passes only
+// downweighted, but the wrapped two-field layout fails the single-line test — the full
+// token order stays catalog-mediated, so the 125-820 continuation is not strict. The impact
+// scenarios confirm the 004 lane unlocks only if both H-1993 and Sktd-1 become strict.
+// Writes evidence rows, strictness tests, and decisions as CSVs plus a summary JSON to
+// reports/.
+
 const root = process.cwd();
 const reportsDir = path.join(root, "data", "open_prototype", "reports");
 const prefix = "campaign_032_002_861_002390x_sktd1_strictness_audit_20260531";

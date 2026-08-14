@@ -6,7 +6,7 @@ Status: `full_left_formula_controls_break_head_determinism_but_no_branch_promoti
 
 ## Purpose
 
-This gate tests the current adversarial explanation that the `002-390-X` pattern is just a whole-left formula/template effect. The question is not whether `390-X` behaves generically after `390`; that was tested separately. The question here is whether the complete sign sequence before `002` already determines `002-390`, or whether the same left formula can feed other post-`002` heads.
+This gate tests the current adversarial explanation that the `002-390-X` pattern is just a whole-left formula/template effect. The question is not whether `390-X` behaves generically after `390`; that was tested separately. The question here is simpler: does the complete sign sequence before `002` already determine `002-390`, or can the same left formula feed other post-`002` heads?
 
 Accepted value, phonetics, language identity, function, sign meaning, and translation remain 0.
 
@@ -45,11 +45,11 @@ Seven of the fifteen target rows have exact full-left controls where the same co
 | 3335.1 | `740 205 032` | `252:1; 390:1` | Still object-ID blocked, but the left formula does not force `390`. |
 | Sktd-1 | `390 004` | `817:4; 861:2; 031:1; 390:1; 705:1; 820:1` | The `004` lane remains a real branch batch, but Sktd-1 itself is not strict. |
 
-This damages the adversarial claim that `002-390-X` is fully determined by whole-left formula templates. In these rows, the same complete left formula can choose another head after `002`.
+This damages the adversarial claim that `002-390-X` is fully determined by whole-left formula templates. In these rows, the same complete left formula demonstrably chooses another head after `002`.
 
 ## Promotion Block
 
-The same experiment found `0` exact full-left groups with multiple `002-390-X` branch alternatives. That is the decisive brake.
+The same experiment found `0` exact full-left groups with multiple `002-390-X` branch alternatives. That is the decisive brake on promotion.
 
 The gate therefore does not yet show a matched paradigm like:
 

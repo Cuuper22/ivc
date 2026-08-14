@@ -2,7 +2,7 @@
 
 Date: 2026-05-30
 
-This is the second descendant-script back-door attempt. The first gate compared a handful of local source/canonical probes against early Brahmi. This v2 gate instead tokenizes source-image crops from already-built blind-packet answer keys, compares the resulting Indus token crops to early Brahmi glyphs, and runs both shape and label nulls before allowing even a candidate-only descent line.
+This is the second descendant-script back-door attempt. The first gate compared a handful of local source/canonical probes against early Brahmi. This v2 gate works at a larger scale: it tokenizes source-image crops from already-built blind-packet answer keys, compares the resulting Indus token crops to early Brahmi glyphs, and runs both shape and label nulls before allowing even a candidate-only descent line.
 
 It produces no accepted descent line, no phonetic value, and no candidate-only row.
 
@@ -50,7 +50,7 @@ shape null <= 0.01
 label null <= 0.01
 ```
 
-Even then, a survivor would only become `candidate_only_requires_manual_visual_descent_review`, not an accepted phonetic anchor.
+Even a survivor of that rule would only become `candidate_only_requires_manual_visual_descent_review`, not an accepted phonetic anchor.
 
 ## Results
 
@@ -70,7 +70,7 @@ The closest rows fail exactly where they need to fail. Their shape-null rates ar
 
 ## Duplicate-Collapse Audit
 
-A skeptic-side duplicate audit then asked whether raw family agreement was inflated by exact token-crop reuse across answer-key packets. The answer is yes for the near-misses, and the original null failure was already enough even before this audit.
+A skeptic-side duplicate audit then asked a simple question: was the raw family agreement inflated because the same token crop was reused across answer-key packets? For the near-misses, the answer is yes — and the original null failure was already enough even before this audit.
 
 Audit outputs:
 

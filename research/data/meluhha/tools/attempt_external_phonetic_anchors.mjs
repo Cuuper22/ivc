@@ -1,3 +1,16 @@
+// An attempt (2026-05-29) to force a phonetic anchor out of external evidence,
+// run so it could fail honestly. The idea: take five cuneiform strings tied to
+// Meluhha — the toponym me-luh-ha, the ship phrase ma2 me-luh-ha, the names
+// Lu-sunzida and Shu-ilishu, and the six-unit interpreter title eme-bal
+// me-luh-ha — and ask whether any Indus-style object found in Mesopotamia or
+// the Gulf carries a sign sequence whose length and repeat pattern (e.g. ABCB)
+// matches the syllables one-to-one. It reads external_indus_objects.csv, lists
+// every pattern-compatible pairing as a candidate, then runs a 2000-iteration
+// forger per target: synthetic nonsense syllable strings with the same pattern,
+// to show that pattern matching alone recovers just as many candidates. Writes
+// a candidates CSV, per-target summary CSV, forger iterations CSV, and a JSON
+// report. Recorded decision: no candidate survives — every real match is
+// length/pattern-only and the forger matches it.
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';

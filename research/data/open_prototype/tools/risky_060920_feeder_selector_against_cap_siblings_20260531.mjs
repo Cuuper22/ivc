@@ -1,3 +1,13 @@
+// Within the `060` terminal-cap paradigm (caps 920/692/550/820), this script asks
+// whether cap 920 is the "marked" member: the one selected by a specific set of
+// left feeders (the alloseries 741/742/745), while its sibling caps take any feeder.
+// It reads metadata_filtered.csv (complete rows only), collects exact `P-060-cap`
+// cells (deduplicated on prev, cap, following sign, text, site, type, iconography),
+// and for each cap finds its top-3 feeder signs, then Fisher-tests whether those
+// feeders concentrate in that cap and stay out of the siblings. A 5,000-iteration
+// null shuffles cap labels over the cells and prices both the fixed-920 result and
+// the best any-cap result (max-stat). Writes a JSON report and a per-cap selector
+// comparator CSV to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

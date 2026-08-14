@@ -1,3 +1,15 @@
+// A "risky bet" probe (2026-05-31, weak-wild-shot tier): does sign 090 mark a
+// west-contact route/register association on circular seals? The bet is
+// deliberately modest — an association with the Gulf trade corridor, not a
+// formula slot and not a phonetic value. The script reads the lipi metadata and
+// the external objects table, splits circular seals into corridor rows (Persian
+// Gulf, Mesopotamia, Iranian Plateau) versus other regions, and counts which
+// carry 090. Two one-sided Fisher exact tests measure the enrichment: corridor
+// circular vs other circular, and external circular vs external non-circular.
+// A position scatter (initial/internal/terminal) is computed to kill any
+// stronger claim that 090 sits in a fixed formula slot. Writes a JSON bet
+// record with supporting row lists and a one-row summary CSV; the falsifier is
+// pinned to the unresolved Failaka rows 147.1/148.1 (Kjaerum cat. 279/319).
 import fs from 'node:fs';
 import path from 'node:path';
 

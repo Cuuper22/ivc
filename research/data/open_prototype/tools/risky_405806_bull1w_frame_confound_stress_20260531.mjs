@@ -1,3 +1,15 @@
+// Confound check for an earlier finding that signs `405` and `806` are enriched on
+// square seals bearing the Bull1:W icon (unicorn-style bull with standard). The
+// worry: both signs often ride inside the fixed frame `740-X-590`, so the icon link
+// might belong to the frame, not to the signs. This script reads
+// metadata_filtered.csv, restricts to square SEAL:S rows (deduplicated on text,
+// site, type, iconography, and shape), and recomputes the Fisher enrichment of 405,
+// 806, and either-of-them for Bull1:W under five panels: all rows, rows without the
+// literal `740-405-590`, rows without any `740-X-590` frame, rows outside Harappa,
+// and both removals combined. Each panel runs a 1,000-iteration Bull1:W
+// label-shuffle null whose statistic is the minimum Fisher p over all signs
+// (max-stat). The candidate survives only if 405 or 806 stays significant after
+// the frame rows are removed. Writes one JSON report to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

@@ -1,6 +1,17 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Before anyone can eyeball a tablet in the CISI photo volumes, we need to know which page
+// it is on. This script finds those pages. It reads the earlier source-route audit CSV
+// (lipi_frame700_034_source_route_audit.csv), keeps the objects that already had OCR hits in
+// the Internet Archive copy of CISI volumes 1 and 2, then downloads each volume's djvu OCR
+// XML from archive.org and scans every page for the object's CISI number (e.g. "H-771") as a
+// standalone word. For each hit it records the leaf number, a reader URL, a page-image URL,
+// the word coordinates on the page, and the surrounding OCR context, roughly classified as
+// plate, figure, table, or index. It writes one CSV of page-level hits and one JSON summary.
+// The output is strictly a locator: knowing the page says nothing yet about sign visibility,
+// side order, direction, or the 032/033/034 subtype -- that needs manual inspection.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 const routePath = path.join(reportsDir, 'lipi_frame700_034_source_route_audit.csv');

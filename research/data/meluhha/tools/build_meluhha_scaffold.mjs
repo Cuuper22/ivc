@@ -1,3 +1,16 @@
+// Seed scaffold for the Meluhha research vector, run 2026-05-29. Meluhha is the
+// Mesopotamian name for a land usually identified with the Indus civilization,
+// so the experiment's hope is a bilingual bridge: a cuneiform text about Meluhha
+// tied to an Indus-inscribed object. This script only lays the groundwork. It
+// extracts every Indus-style object from regions outside the Indus valley
+// (Mesopotamia, Persian Gulf, Iranian Plateau, Central Asia) out of the lipi
+// metadata, tagging each as tier T3 quarantined pending source validation. It
+// also hard-codes five verified cuneiform seed attestations (P212982's
+// Lu-sunzida lines, BDTNS 000128's "son of Meluhha", the Shu-ilishu interpreter
+// seal route), five source routes (CDLI, ORACC, BDTNS, ETCSL) with their access
+// status, and five control toponyms (Dilmun, Magan, Marhasi, Elam, Gutium) for
+// later false-positive testing. Writes four CSVs plus manifest.json under
+// data/meluhha/; the manifest records zero accepted external anchors.
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';

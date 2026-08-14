@@ -2,16 +2,18 @@
 
 Date: 2026-05-25
 
+This note traces two sign variants outside the tablet series that produced them. It exists to answer a simple worry: if a variant appears on only one object in the world, it is probably a typo or damage; if it appears elsewhere, it is more likely real.
+
 ## Question
 
-The H-series slot grammar isolated two singleton exact-text failures:
+The H-series slot grammar — the hidden-side reconstruction experiment — isolated two singleton exact-text failures:
 
 ```text
 H-2237: +154-003+ where the local role majority expects +156-003+
 H-2238: +700-033+ where the local role majority expects +700-034+
 ```
 
-This experiment asks whether those breaks are only local H-series oddities, or whether the same target variants have external distribution in the broader filtered `lipi` planning layer.
+This experiment asks whether those breaks are only local H-series oddities, or whether the same target variants have external distribution in the broader filtered `lipi` planning layer — the project's working transcription corpus, used for planning and not yet image-validated.
 
 This is not a decipherment claim. It is a source-priority and variant-reality test.
 

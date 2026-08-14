@@ -1,6 +1,20 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// A full ecological workup of sign 095 across the whole corpus, testing whether it behaves
+// like a governed administrative/status marker rather than a personal name or title. It
+// reads data/open_prototype/lipi/metadata_filtered.csv, indexes every sign occurrence with
+// neighbors and object context, and profiles 095 on several axes: how often it follows the
+// status stems 390/520/595, how much of it sits on tablets/pots/tags/rods/implements rather
+// than square or rectangular seals (where names would live), and how the clipped terminal
+// 002-390-095 frame contrasts with the longer 520-095 and 595-095 trails that usually
+// continue. To keep the comparison honest, 095 is ranked against every sign of similar
+// frequency (within +/-10 canonical occurrences), and raw-versus-canonical counts expose
+// copy pressure from repeated Mohenjo-daro tablet strings. Three verdicts: status-marker is
+// candidate_mixed, the name/title reading is demoted, and "002-390-095 is a clipped status
+// trail" stays a wild shot. Writes occurrences, sign baselines, family rows, and decisions
+// as CSVs plus a summary JSON in reports/.
+
 const ROOT = process.cwd();
 const META = path.join(ROOT, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const OUT_DIR = path.join(ROOT, 'data', 'open_prototype', 'reports');

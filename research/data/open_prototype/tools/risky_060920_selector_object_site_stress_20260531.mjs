@@ -1,3 +1,14 @@
+// Stress test for an already-promoted claim: the feeder signs 741/742/745 select
+// cap 920 after sign 060 and never leak into the sibling caps 692/550/820. The worry
+// is double counting — the same inscription text can appear on many objects, and one
+// prolific site could carry the whole pattern. So this script recomputes the
+// selector's hit and leak counts under two dedup schemes (per object via CISI id,
+// and per text family) crossed with three site filters (all sites, drop
+// Mohenjo-daro, drop Harappa). It reads metadata_filtered.csv (complete rows only),
+// Fisher-tests selector concentration in 920 vs siblings for each panel, and for
+// the no-site-dropped panels runs a 5,000-iteration cap-label shuffle null. The
+// claim survives only if sibling leakage stays at zero under both collapses.
+// Writes a JSON report to the reports directory and prints the panel summaries.
 import fs from 'node:fs';
 import path from 'node:path';
 

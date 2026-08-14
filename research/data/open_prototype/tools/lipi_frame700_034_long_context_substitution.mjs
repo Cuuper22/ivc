@@ -1,6 +1,20 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// The substitution question: when a two-sided tablet carries +700-034+ instead of +700-033+
+// or +700-032+, does anything on the object's long companion side co-vary with that choice?
+// If 034 tablets systematically share long-side signs that 033/032 tablets lack, the three
+// subtypes may be doing real contrastive work. This script reads the triad packet (one 034
+// target plus its 033 and 032 controls per row), the matched-contrast stability grades, and
+// the two-lane source packet. For every candidate long-side token, and separately for every
+// whole long-side token-set "family", it counts how often the candidate appears with 034
+// versus the controls and scores the difference. Significance comes from a permutation null:
+// 5,000 iterations of randomly shuffling the 034/033/032 labels within each triad (seeded
+// xorshift RNG, so runs are reproducible), with Benjamini-Hochberg correction across
+// candidates. Tests run over five nested scopes, from all triads down to the core two-lane
+// packet. Outputs: token-test CSV, family-test CSV, per-scope row CSV, and a JSON summary.
+// This is source-blind statistics on catalog transcriptions; it accepts no sign readings.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 

@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script steps back and asks: what KIND of writing system does our parser imply?
+// Unlike its siblings it does not reread the raw corpus. It consumes two earlier report CSVs
+// from reports/ — the classified 002-H-X parse rows (including the 000 null-complement class)
+// and the per-domain role-switch control rows — and distills them into four typology signals:
+// slot role changes sign behavior, a post-head operator inventory exists, classified rows sit
+// on formal seals/tablets rather than accounting objects, and an explicit zero-complement
+// class is available. Each signal records its support, what it implies, and the observation
+// that would kill it. From these it stakes three bets: the parser looks like a head-plus-
+// post-head-operator grammar, its core is identity/linkage rather than commodity accounting,
+// and any language-family comparison must wait until the grammar survives source controls.
+// Writes a signals CSV, a bets CSV, and a summary JSON to reports/.
+
 const root = process.cwd();
 const plus000Path = path.join(
   root,

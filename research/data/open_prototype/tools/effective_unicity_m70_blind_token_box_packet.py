@@ -1,3 +1,19 @@
+"""Build a blind review packet for the M-70 order-window question.
+
+We want to know whether seal M-70 really shows the sign sequence 032-002
+followed by 390-692, or whether a reviewer primed by the catalog would "see"
+that sequence anywhere. So we prepare a blind test: 15 sign-band crops
+(already sitting in tmp/ from earlier acquisition runs) get copied under
+anonymous IDs B001-B015 — two M-70 targets, three positive calibrators where
+the sequence is genuinely present, and ten negatives where 002 is preceded by
+something other than 032. Reviewers box every visible sign in visual order
+without seeing the catalog text; only afterward is the answer key opened.
+The script copies and hashes each image (trimming caption strips from two of
+them), draws a two-column contact sheet, and writes the blind manifest, the
+answer key, an empty review template, and a JSON summary with the promotion
+thresholds. By design nothing here increments accepted claims.
+"""
+
 from __future__ import annotations
 
 import csv

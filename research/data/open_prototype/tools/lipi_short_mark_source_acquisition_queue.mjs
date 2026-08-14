@@ -1,3 +1,23 @@
+// Final planning step for the 17-artifact plate packet: merge the request
+// packet with the public-lead search results and decide, artifact by
+// artifact, where to go get a usable image. The web scout showed which
+// tablets have candidate public images, which have only text mentions, and
+// which are "source dark"; that determines whether the next move is a
+// recheck, a manual image inspection, or a direct archive request.
+//
+// The script reads lipi_short_mark_plate_request_packet.csv and
+// lipi_short_mark_plate_public_leads.csv, summarizes each artifact's lead
+// status, and assigns an acquisition bucket: A-buckets for six named
+// special cases (H-1302/H-1303 direction-note rechecks, the H-355 double
+// short side, the H-933/H-960 034-contrast pair, and the H-233 TAB:B control
+// with public slide leads), B for artifacts with no public lead (go straight
+// to CISI/HARP archives), C for replicate 033-after cases. Each row carries a
+// written action, the evidence checklist needed to fill the packet, and its
+// known validation risks.
+//
+// Outputs: lipi_short_mark_source_acquisition_queue.csv (ranked) and
+// _summary.json. Acquisition planning only; nothing here reads the signs.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

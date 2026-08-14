@@ -1,3 +1,17 @@
+// Signs `407` and `806` are both enriched in the rectangular-seal/copper-tablet
+// register (types SEAL:R and TAB:C). This script tests whether they play opposite
+// roles there rather than being redundant tags: 407 as an entry/opening marker
+// (row-initial) and 806 as a boundary/closure pivot (immediately before the end of
+// the row or before sign 002). It reads metadata_filtered.csv, collapses duplicate
+// sign sequences, keeps register rows, and scores the ordered pair with two Fisher
+// tests — 407 more initial than 806, 806 more boundary-adjacent than 407 — combined
+// into a composite score (sum of -log10 p). Adversaries: a scan of every ordered
+// sign pair (and a frequency-matched subset) to rank 407/806 among rivals, and a
+// 3,000-iteration forger that shuffles sign labels over the register's occurrence
+// slots (preserving row shapes and sign frequencies) and asks how often any pair
+// matches the composite score. Six control pools rerun the direct tests. Writes a
+// bet summary (JSON + CSV) plus pool, support-row, pair-scan, and forger CSVs to
+// the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

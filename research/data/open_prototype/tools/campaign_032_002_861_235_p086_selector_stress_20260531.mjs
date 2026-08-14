@@ -1,6 +1,20 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// The claim under stress: sign 235 before a 002 frame selects a later 125 — but only when
+// the head after 002 belongs to the P086 family (390 or 405), not as a blanket 235 rule.
+// This script tests the interaction with real statistics. It reads data/open_prototype/
+// lipi/metadata_filtered.csv (deduplicated) and the open-head classifier report, tags every
+// 002 frame with its predecessor, head family (P086 390/405, the wilder 392 extension,
+// closure heads 817/820/861, or broad-open heads), and whether its tail contains 125, then
+// runs five 2x2 contrasts scored with a one-sided Fisher exact test computed from the
+// hypergeometric distribution. Key numbers: 235 + P086 head is 3/3 for 125 while 235 +
+// closure heads is 0/22 (p = 0.000435), and non-P086 open heads are 0/4 — so the generic
+// versions of the rule are dead while the interaction survives as candidate. The
+// M-47/M-735 pair, sharing the exact left context 740-760-235-002, is kept as the minimal
+// contrast. Writes all frames, 235 frames, family summaries, contrasts, minimal contrasts,
+// and decisions as CSVs plus a summary JSON in reports/.
+
 const ROOT = process.cwd();
 const META = path.join(ROOT, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const HEAD_CLASSES = path.join(

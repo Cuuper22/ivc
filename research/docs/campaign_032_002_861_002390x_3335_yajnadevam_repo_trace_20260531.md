@@ -60,7 +60,7 @@ The app imports `src/assets/data/seal_id_and_image_mapping.json` and renders ima
 | `M-940` | `M-940_a.jpg`, `M-940_a_bis.jpg` | neighbor/temptation mapped separately |
 | `M-941` | `M-941_a.jpg` | neighbor mapped |
 
-This rejects the row-order temptation again. The repository has an explicit `M-940` image key and a separate `M-940` row, so `3335.1` is not silently bridged by the missing row number between `M-939` and `M-941`.
+This rejects the row-order temptation again. The repository has an explicit `M-940` image key and a separate `M-940` row, so there is no missing row number between `M-939` and `M-941` for `3335.1` to silently fill.
 
 ## Git History
 
@@ -83,7 +83,7 @@ The old externalized row is useful because it preserved one source clue:
 | old dimensions | `29.0 x 29.0 x 0.0` |
 | old text | `+740-205-032-002-390-590-032+` |
 
-This is not a binding source. It is an acquisition clue: ask for the private-collection object/citation behind old Lipi row `3335`, not for a generic Harappa/Mohenjo-daro catalog row.
+This is not a binding source. It is an acquisition clue, and it changes what we should ask for: the private-collection object/citation behind old Lipi row `3335`, not a generic Harappa/Mohenjo-daro catalog row.
 
 ## Decision
 

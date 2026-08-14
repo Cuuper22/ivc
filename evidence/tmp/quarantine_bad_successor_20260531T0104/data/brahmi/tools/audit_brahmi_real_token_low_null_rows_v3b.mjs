@@ -1,3 +1,17 @@
+// Autopsy of the low-null rows left over from the Brahmi real-token impostor forger.
+//
+// The v3 impostor run left 21 sign/orientation rows where unrelated real Indus token
+// crops could not fake the observed Brahmi modal-label match at the 0.01 threshold.
+// This script reads four CSVs under data/brahmi — the v3 impostor rows, the v3
+// independence preflight, the v2 family-descent summary, and the v2 source-token
+// segments — and joins them per sign/orientation row. For each low-null row it
+// computes pass/fail flags against every remaining gate: the original shape and
+// label nulls, minimum source-token independence, duplicate-collapse unanimity, and
+// modal-label stability, then classifies why the row fails and whether it is
+// review-packet eligible. It writes brahmi_real_token_low_null_autopsy_v3b.csv and a
+// companion summary JSON. The experiment exists to check that "the impostor could
+// not fake it" does not quietly get read as evidence for a phonetic anchor.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

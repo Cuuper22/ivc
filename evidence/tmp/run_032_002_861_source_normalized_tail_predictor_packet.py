@@ -1,3 +1,19 @@
+"""Build the canonical source-normalized dataset of every post-002-861 row.
+
+This is the packet-builder the later tail scripts read from. It scans the
+strict corpus for every inscription containing 002-861 and extracts one row
+per occurrence with full metadata: prefix at three depths, tail and tail
+bucket, register keys, template key, and physical measurements. It then
+enriches each row from six earlier report CSVs — attachment verdicts,
+attachment boxes, bare-edge crops, register crops, register independence, and
+layout discriminator — so every row carries its source status (has the actual
+image been checked?) and pixel layout numbers where they exist. On top of
+that it builds a predictor table, a minimal-contrast list, a hand-selected
+packet of rows worth looking at (plus external 603/636/642 controls), and
+five campaign decisions. Outputs: five CSVs including the all-rows file other
+scripts consume, a JSON summary, a contact-sheet PNG, and a Markdown doc.
+"""
+
 from __future__ import annotations
 
 import csv

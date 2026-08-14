@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// The two singleton variants in the H-2218..H-2239 series, H-2237 (154 for 156) and H-2238
+// (033 for 034), might be meaningful sign choices -- or they might just be neighbors from
+// the same workshop batch. This script quantifies that suspicion. It reads the Fig. 4
+// mapping, the side-role templates, and the minimal-contrast packet, then asks: if any two
+// of the 22 tablets could have been the variants, how surprising is it that the actual pair
+// shares a manufacturing group, sits in group 3 specifically, shares a template class, and
+// occupies adjacent Fig. 4 positions? For each of eight such properties it counts the
+// qualifying pairs among all C(22,2) unordered pairs, giving an exact probability with no
+// simulation needed. It writes an object CSV, a test CSV, and a JSON summary. The recorded
+// conclusion: the variant pair is localized on every axis, which raises batch/workshop
+// confound pressure while leaving the controlled-slot source test alive.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 const mappingPath = path.join(reportsDir, 'lipi_h2218_h2239_fig4_mapping.csv');

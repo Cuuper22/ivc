@@ -1,6 +1,20 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// The working rule says X=000 in the slot after 002-HEAD means "zero
+// complement": the text should end right there. This script turns the rows
+// that violate that rule into an explicit target list for the next round of
+// destructive tests. It reads the earlier x000 parse-rows CSV, keeps rows
+// where X is 000, and splits them into closed controls (tail is <END>, the
+// rule holds) and open exceptions (something follows the 000). Each exception
+// is typed by what follows: another 000 is a zero-chain, a 002 is a possible
+// frame reset, an 033 is a nonzero payload — the most damaging kind — and each
+// gets a severity plus a statement of what a source-image check would prove
+// either way. The output ranks three targets: M-451 (zero chain), Ns-66
+// (reset), and 4148.1 (nonzero payload, the kill switch). Writes exception,
+// control, and decision CSVs plus a summary JSON to
+// data/open_prototype/reports.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const parseRowsPath = path.join(

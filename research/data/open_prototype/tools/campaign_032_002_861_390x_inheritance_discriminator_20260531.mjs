@@ -1,6 +1,20 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// When we see 002-390-X, is the X chosen by the governed frame, or did the writer simply
+// copy an ordinary 390-X pair that exists all over the corpus? This discriminator settles
+// it sign by sign. It reads data/open_prototype/lipi/metadata_filtered.csv, dedupes to
+// canonical sequences, and collects every 390-X pair, split by whether a 002 immediately
+// precedes the 390. For each X that occurs in the governed frame it compares governed
+// versus outside counts, terminal shares, and tail profiles, then classifies the X:
+// governed_only_selector (never occurs outside), governed_weighted_selector,
+// inherited_formula_pressure (outside rows dominate and repeat one tail — 590 is the
+// predicted case), or background_collocation_pressure. The overall bet — 002-390-X is a
+// governed branch table, not raw 390 inheritance — is promoted to candidate only if at
+// least 70 percent of non-590 X values are selector-like with at most one inherited-formula
+// case. Writes the branch table, governed pair rows, and the decision as CSVs plus a
+// summary JSON in reports/.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

@@ -1,3 +1,15 @@
+// Builds the "join surface" between the two halves of the Meluhha evidence:
+// cuneiform texts that mention Meluhha, and Indus-inscribed objects found
+// outside the Indus valley. A join here is deliberately weak — it only records
+// that a cuneiform attestation's provenience (via aliases like Girsu/Tello, Ur,
+// Nippur, Irisagrig) names the same site where an external Indus object was
+// found. The script reads cuneiform_attestations_expanded.csv and
+// external_indus_objects.csv, emits one row per site overlap with both sides'
+// metadata carried along, and marks every row "join_surface_not_claim" with
+// forger and skeptic gates "not_run". The point is to enumerate candidate lanes
+// for future controls, not to assert any connection. Writes
+// meluhha_indus_join_surface.csv and a JSON summary with per-site counts and
+// zero accepted anchors.
 import fs from 'node:fs';
 import path from 'node:path';
 

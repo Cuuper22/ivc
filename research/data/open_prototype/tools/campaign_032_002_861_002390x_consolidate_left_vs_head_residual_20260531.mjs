@@ -1,3 +1,17 @@
+// Untangles two competing explanations for why 125 follows 002-390: is it the
+// left context (sign 235 right before 002) doing the work, or the head 390
+// itself? To keep the comparison fair, this script restricts to one visual
+// register — Mohenjo-daro square steatite SEAL:S objects — and extracts every
+// 002 frame there. It then contrasts four slices: all final-235 frames,
+// final-235 frames whose head is 390, final-235 frames with other heads, and
+// head-390 frames without a preceding 235. Four contradiction checks are
+// scored from these counts. Writes the frames, contrast summary, and
+// contradiction-check CSVs plus a summary JSON to data/open_prototype/reports/.
+// Recorded outcome: the broad "235 triggers 125" reading is killed (only 3/18
+// final-235 frames go to 125); the narrow 235-plus-002-390 pressure and an
+// independent 390 residual (witness M-119) both survive; and 235 gets no
+// rank/title semantics.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

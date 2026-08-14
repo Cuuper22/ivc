@@ -4,7 +4,7 @@ Date: 2026-05-25
 
 ## Question
 
-The H-series slot grammar isolates `H-2237` as the only H-2218 through H-2239 object with `+154-003+` where the role majority has `+156-003+`.
+In the H-series slot grammar, `H-2237` stands alone: it is the only H-2218 through H-2239 object with `+154-003+` where the role majority has `+156-003+`.
 
 The external-distribution audit then showed that `154_003` is sparse but not unique:
 

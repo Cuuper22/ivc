@@ -1,3 +1,21 @@
+// Turns the 033/034 side-relation contrast into a prioritized source-checking
+// worklist. The companion-context audit suggested that 033 short marks tend
+// to sit after all the longer text on an object while 034 marks do not; that
+// pattern lives entirely in catalog side numbering, so each instance must be
+// checked against real photographs before it can count as evidence.
+//
+// The script reads lipi_short_mark_companion_context_rows.csv (033/034 rows
+// only) and joins lipi_multiside_mark_validation_queue.csv for raw ids,
+// excavation ids, and dimensions. Each row gets a priority class: P1 for the
+// core contrast rows (033-after / 034-before, boosted when the +400-740-176+
+// sequence is present), P2 for exception/control rows (the reversed
+// combinations), P3 for the rest — plus a written validation question saying
+// exactly what a photograph needs to settle.
+//
+// Outputs: lipi_short_mark_side_relation_validation_sheet.csv (which the
+// plate request packet script consumes), _priority_summary.csv, and
+// _validation_summary.json. A worklist only; no reading is accepted.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

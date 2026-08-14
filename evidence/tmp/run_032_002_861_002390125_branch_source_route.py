@@ -1,3 +1,16 @@
+"""One-off gate for the 002-390-X branch inside the 032-002-861 campaign.
+
+This script reads the local inscription table (tmp/lipi_current_inscriptions_20260526.csv)
+plus two report indexes: the source-queue source index and the negative-control candidates.
+For every occurrence of the sign bigram 002-390 it records the sign before 002, the sign
+after 390, and the remaining tail, then assigns each witness object a source-route tier —
+a label for how close we currently are to seeing that row on a real artifact image instead
+of only in a catalog transcription. It writes a per-row CSV, a next-after-390 distribution
+CSV, a summary JSON, and a markdown note under docs/. The experiment exists to ask whether
+125 is a meaningful continuation after 002-390 or a catalog mirage; the script accepts no
+sign value, reading, or translation.
+"""
+
 from __future__ import annotations
 
 import csv

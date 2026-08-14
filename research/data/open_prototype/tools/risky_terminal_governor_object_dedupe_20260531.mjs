@@ -1,3 +1,14 @@
+// Checks whether the terminal-governor edges survive object-level dedupe.
+// The worry: identical texts stamped on many objects (or one object listed
+// many times) could inflate an edge's counts. Here each CISI object may
+// contribute at most one count per bigram edge; if the same object shows an
+// edge both terminally and internally, the terminal witness wins. We read
+// the filtered corpus metadata (complete texts only), rebuild the per-edge
+// counts on that basis, and ask whether the seven target edges (002-817,
+// 002-820, 002-861, 060-920, 060-550, 060-820, 060-692) still clear 20
+// object cells with 85% terminal share (strict) or 75-85% (near). Five or
+// more strict survivors keeps the network candidate-tier. Writes a JSON
+// report and an edges CSV.
 import fs from 'node:fs';
 import path from 'node:path';
 

@@ -1,14 +1,14 @@
 # IVC Translation Research
 
-Organized GitHub export created on 2026-06-06 from the local workspace:
+This is an organized GitHub export, created on 2026-06-06, of the local workspace:
 
 `C:\Users\Acer\OneDrive\Documents\ivc`
 
-This is an evidence-grounded research workspace for Indus Valley Civilization script decipherment. It is not an app repo and it does not currently claim fluent translations.
+The workspace is a research project that tries to decipher the Indus Valley Civilization script, and every claim in it must be backed by evidence. It is not an app repo, and it does not currently claim fluent translations of anything.
 
 ## Current Evidence State
 
-The live replacement run has one accepted structural finding and no accepted readings:
+The live replacement run — the current, canonical line of work — has exactly one accepted structural finding and no accepted readings:
 
 | Claim class | Accepted count |
 | --- | ---: |
@@ -19,7 +19,7 @@ The live replacement run has one accepted structural finding and no accepted rea
 | external anchors | 0 |
 | structural findings | 1 |
 
-The single accepted result is the narrow fixed-branch `002-861 / 533-717` terminal-tail finding. It is structural only: no sound, sign meaning, language family, external anchor, or translation is accepted.
+The single accepted result is the narrow fixed-branch `002-861 / 533-717` terminal-tail finding. It is structural only. It says something about where signs sit in a sequence, not what they mean: no sound, sign meaning, language family, external anchor, or translation is accepted.
 
 ## Directory Layout
 
@@ -35,15 +35,15 @@ The single accepted result is the narrow fixed-branch `002-861 / 533-717` termin
 
 ## Branch Merge Policy
 
-The original local Git state had no commits and no real branch history. The meaningful branch split existed in the research files:
+The original local Git state had no commits and no real branch history. The meaningful branch split lived in the research files themselves:
 
 - live replacement branch: canonical current evidence
 - quarantined post-2026-05-31T01:04 successor branch: preserved for autopsy/history only
 
-This export keeps both, but treats the replacement branch as canonical. Quarantined artifacts must not be cited as support unless independently re-earned in replacement-named outputs.
+This export keeps both, but the replacement branch is canonical. Quarantined artifacts must not be cited as support unless a result is independently re-earned in replacement-named outputs.
 
 ## Large Files
 
-This repo does not depend on Git LFS. The only file above GitHub's normal 100 MB blob limit was split into chunks with a SHA-256 manifest; see `SPLIT_FILES.md`.
+This repo does not depend on Git LFS. Only one file exceeded GitHub's normal 100 MB blob limit. It was split into chunks with a SHA-256 manifest so nothing was lost; see `SPLIT_FILES.md`.
 
-A nested temporary repository history was preserved by renaming its internal `.git` directory to `_git_history`, because Git would otherwise ignore it during upload.
+One more quirk: a nested temporary repository had its own history, and Git would have ignored its internal `.git` directory during upload. To preserve that history, the directory was renamed to `_git_history`.

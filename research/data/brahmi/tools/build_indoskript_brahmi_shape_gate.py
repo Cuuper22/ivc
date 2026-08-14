@@ -1,3 +1,19 @@
+"""The first (v1) Indus-to-Brahmi shape gate, run 2026-05-29.
+
+The question: do a handful of hand-picked Indus sign crops look more like early
+Brahmi letters than random shapes do? The script scrapes the Indoskript
+manuscript index (42 pages), keeps the 12 earliest manuscripts dated -100 or
+before, downloads their letter images, and converts each into a 64x64 ink mask
+and a feature vector (32x32 pixels plus 8 shape scalars). It then runs 14 fixed
+Indus probes — source crops for local signs 220 and 110 plus Parpola 1994
+sign-list controls — through a 10-nearest-neighbor search over the Brahmi
+glyphs. For each "actual" source probe it also runs a 500-iteration random
+shape-evolution null (random rotation, scale, dilation, erosion, threshold) to
+ask how often a random deformation matches Brahmi at least as well. Writes the
+manuscript, glyph, feature, probe, neighbor, null, and fetch-log CSVs plus a
+JSON summary. Recorded decision: no descent line or phonetic anchor is
+accepted; nearest-neighbor hits are retrieval leads only.
+"""
 from __future__ import annotations
 
 import csv

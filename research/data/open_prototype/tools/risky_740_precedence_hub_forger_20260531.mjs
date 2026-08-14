@@ -1,3 +1,15 @@
+// Tests whether sign `740` is the corpus's main "precedence hub": the sign that
+// reliably comes before the largest number of other signs, i.e. a broad default
+// header rather than a carrier-specific semantic sign. The script reads
+// metadata_filtered.csv, collapses duplicate sign sequences, and builds a directed
+// order graph: for every sign pair sharing at least 50 rows, an edge qualifies if
+// one order dominates in at least 80% of rows with binomial p <= 0.001. Signs are
+// ranked by qualified outgoing edges, and 740's rank is checked in seven pools
+// (all rows, complete only, non-poor, leave-Harappa, leave-Mohenjo-daro, square
+// seals only, account/rectangular register only). A 1,500-iteration forger
+// shuffles the signs inside each row and asks how often any sign accumulates as
+// many outgoing edges as 740 (max-stat). Writes a bet summary (JSON + CSV) plus
+// pool, edge, hub, support-row, and forger-iteration CSVs to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

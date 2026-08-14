@@ -4,7 +4,7 @@ Date: 2026-05-28
 
 ## Question
 
-Do the apparent post-`861` tails behave like material restricted to `861`, or are they ordinary chunks that happen to follow `861` in a few rows?
+This note records a distributional scan. The signs in this corpus are numeric IDs; a "tail" is material that follows the sign `861` at the end of an inscription row. The question: do the apparent post-`861` tails behave like material restricted to `861` — appearing only there — or are they ordinary chunks that happen to follow `861` in a few rows?
 
 This campaign tests the live suffix-split tails:
 
@@ -16,7 +16,7 @@ This campaign tests the live suffix-split tails:
 698
 ```
 
-and compares them against branch-head controls from the `390` family:
+and compares them against branch-head controls from the `390` family — signs known to head branches rather than end rows, used here as a baseline:
 
 ```text
 125
@@ -33,7 +33,7 @@ data/open_prototype/reports/campaign_032_002_861_tail_attachment_summary.csv
 data/open_prototype/reports/campaign_032_002_861_tail_attachment_summary.json
 ```
 
-The scan covers 4,135 strict closed rows from `metadata_filtered.csv`.
+The scan covers 4,135 strict closed rows from `metadata_filtered.csv`. "Strict" means exact duplicate texts are collapsed to one evidence unit.
 
 ## Result
 
@@ -50,7 +50,7 @@ The scan covers 4,135 strict closed rows from `metadata_filtered.csv`.
 
 ## Distributional Consequence
 
-The scan separates the tail candidates into three evidence tiers:
+The scan separates the tail candidates into three evidence tiers.
 
 ### Restricted Post-`861` Candidates
 
@@ -59,7 +59,7 @@ The scan separates the tail candidates into three evidence tiers:
 861-255-416
 ```
 
-Both are terminal in every strict occurrence and have no non-`861` occurrences in this scan. `533-717` is the strongest repeated candidate because it appears twice; `255-416` remains a singleton.
+Both are terminal in every strict occurrence and have no non-`861` occurrences in this scan. `533-717` is the strongest repeated candidate because it appears twice; `255-416` remains a singleton — a one-row case that cannot carry weight by itself.
 
 ### Mixed Tail / Independent Unit
 
@@ -76,7 +76,7 @@ Both are terminal in every strict occurrence and have no non-`861` occurrences i
 861-698
 ```
 
-`416` and `698` are not restricted to post-`861`. `416` occurs widely and is often terminal; `698` is terminal in all 10 strict occurrences. The `002-861-416` and `002-861-698` rows matter as formula families, not as restricted post-`861` evidence.
+`416` and `698` are not restricted to post-`861`. `416` occurs widely and is often terminal; `698` is terminal in all 10 strict occurrences. The `002-861-416` and `002-861-698` rows matter as formula families — sets of near-identical repeated texts — not as restricted post-`861` evidence.
 
 ## Current Working State
 
@@ -93,7 +93,7 @@ This upgrades the suffix-split campaign from "there are tails" to "some tails ar
 
 ## Next Working Inputs
 
-Use in the next source-token pass:
+Use in the next source-token pass — the follow-up that checks physical sign separation on the published photographs:
 
 ```text
 533-717 = strongest current repeated post-861 restricted-tail candidate

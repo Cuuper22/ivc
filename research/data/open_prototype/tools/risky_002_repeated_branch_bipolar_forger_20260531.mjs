@@ -1,3 +1,15 @@
+// Looks at `002-H-X` frames (sign 002, then head H, then branch X) and asks whether
+// heads 861 and 390 show "repeated-branch bipolar purity". A branch is "repeated" if
+// the same X appears in at least two distinct texts under one head. Each repeated
+// branch is classed "open" (every occurrence continues past X), "closed" (every
+// occurrence ends at X), or "mixed". The bet: under both `002-861` and `002-390`,
+// repeated branches split cleanly into open and closed classes with no mixed class —
+// branch choice deterministically decides whether the text ends. Reads
+// metadata_filtered.csv, collapses each head's frames to unique texts, then runs a
+// 100,000-iteration forger that shuffles terminal/continuing labels within each head
+// (keeping branch layout and terminal counts) to price how often chance produces the
+// same bipolar-pure pattern in both heads at once. Writes a bet summary (JSON + CSV)
+// and a per-head table to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

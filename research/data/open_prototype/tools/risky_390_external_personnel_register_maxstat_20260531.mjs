@@ -1,3 +1,16 @@
+// Asks whether sign `390` (and the pairs `740-390` and `390-590`) is enriched on
+// Indus objects found outside the Indus area — the bet being that 390 marks a
+// personnel/title register in external Meluhha-contact contexts, motivated by
+// cuneiform records of Meluhha interpreters and officials. The script reads the
+// external-object list (data/meluhha/external_indus_objects.csv) and the main
+// corpus (metadata_filtered.csv), drops circular seals from both, restricts the
+// background to object types that also occur externally, and deduplicates rows by
+// type + shape + text. Every observed sign and every adjacent sign pair is
+// Fisher-tested for external enrichment, and a 1,000-iteration label-shuffle null
+// takes the minimum p over all features each round (max-stat), so the 390 targets
+// are priced against the full search space. Four control panels rerun the test:
+// leave-out-Kish, leave-out-Gonur-Depe, complete rows only, and square SEAL:S only.
+// Writes one JSON report to the reports directory and prints the panel targets.
 import fs from 'node:fs';
 import path from 'node:path';
 

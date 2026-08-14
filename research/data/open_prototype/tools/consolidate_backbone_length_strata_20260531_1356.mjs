@@ -1,3 +1,16 @@
+// Length- and carrier-stratified stress test for the role backbone's nine core ordering
+// constraints. The worry: an ordering rule can hold on average yet come entirely from one
+// stratum — say, long inscriptions or square seals — and fail elsewhere. We read the filtered
+// Indus inscription list (lipi/metadata_filtered.csv), keep one copy of each distinct sign
+// sequence, and cut the corpus into length buckets (1-3, 4-6, 7-9, 10+ signs), carrier
+// classes (tablet/account, rect/copper, square seal, round seal, other), and their crossed
+// combinations. Each slice re-scores all nine constraints against a within-row token-shuffle
+// null (3,000 seeded iterations, run only when the slice has 20+ constraint instances). A
+// slice survives with 3+ active constraints all passing (80%+ each when n>=5), 90%+ overall
+// share, and null FPR at or below 0.01; the known weak spot, 400-before-740 on square seals,
+// is tolerated as a scope caveat rather than a backbone failure. Writes slice-summary,
+// per-constraint detail, and null-iteration CSVs plus a JSON report to
+// data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

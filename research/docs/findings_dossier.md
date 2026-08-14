@@ -2,6 +2,8 @@
 
 Date: 2026-05-30
 
+This dossier is the project's ledger: what has actually been established, what is still live, and what was tried and killed. The vocabulary is strict. "Accepted" means a claim survived every adversarial test built against it. A "candidate" is live but unproven. "Retracted" means a claim was made and then withdrawn when a test broke it. A "forger" is a null model — a procedure that tries to fake the observed pattern by chance — and FPR is its false-positive rate, how often the fake succeeds. When rows are "collapsed" or "deduped," duplicate copies of one inscription count once.
+
 ## Accepted Claims
 
 Current ledger counts:
@@ -19,7 +21,7 @@ Current ledger counts:
 
 Claim ID: `accepted_struct_002_861_533_717_restricted_tail_2026_05_29`
 
-Claim: within the fixed `002-861` branch question, `533-717` is the only tested length-1-to-3 unit with support >= 2 whose every occurrence in strict local rows is a terminal tail after `002-861`. The two witnesses are `M-376` and `M-391`; both are source-visible as same-line terminal-side material, and source-family review rejects exact copy-family collapse.
+Claim: within the fixed `002-861` branch question, `533-717` is the only tested unit of length 1 to 3 with support >= 2 whose every occurrence in strict local rows is a terminal tail — a unit that ends the inscription — after `002-861`. The two witnesses are `M-376` and `M-391`. Both are source-visible as same-line terminal-side material, and source-family review rejects exact copy-family collapse: they are not two prints of one object.
 
 Core evidence:
 
@@ -29,13 +31,13 @@ Core evidence:
 - `data/open_prototype/reports/campaign_032_002_861_533717_source_family_independence_summary.json`: exact copy-family collapse is rejected, while linguistic weighting remains one narrow source/register-family cell.
 - `data/open_prototype/reports/campaign_032_002_861_533717_source_layout_discriminator_summary.json`: stronger layout wording is blocked because `M-1273` also has same-line terminal-side post-`861` material.
 
-Skeptic boundary: if any prefix is allowed, repeated terminal bigram cells are common: 96 in strict raw rows and 40 after exact dedup. Therefore this is not a global formula-discovery claim. It is fixed to the prior `002-861` branch question and earns no exact source-normalized token boundary, sign value, sign meaning, phonetic value, language identification, external anchor, or translation.
+Skeptic boundary: the narrowness is the point. If any prefix is allowed, repeated terminal bigram cells are common: 96 in strict raw rows and 40 after exact dedup. So this is not a global formula-discovery claim. It is fixed to the prior `002-861` branch question, and it earns no exact source-normalized token boundary, sign value, sign meaning, phonetic value, language identification, external anchor, or translation.
 
 ## Live Candidate: `002-Y` Closure/Branch
 
 Candidate ID: `candidate_struct_032_002_y_closure_branch_2026_05_29`
 
-Claim: in the strict deduplicated all-`002` layer, signs after `002` split into a high-terminal pole and a continuation pole. The strict post-hoc partition support is `817/820` versus `390/368/031/220`. In the older fixed-bin description, `861` remains closure-heavy but leaky; it is not part of the strict best two-pole partition.
+Claim: in the strict deduplicated all-`002` layer, the signs that follow `002` split into two poles: a high-terminal pole, where the inscription usually ends, and a continuation pole, where it usually goes on. The strict post-hoc partition support is `817/820` versus `390/368/031/220`. In the older fixed-bin description, `861` remains closure-heavy but leaky; it is not part of the strict best two-pole partition.
 
 Scope: T3 Lipi metadata/sign layer, strict complete closed rows deduplicated by text, site, type, and `002` position. Not yet source-normalized corpus-wide.
 
@@ -75,7 +77,7 @@ Decision: live candidate, not accepted.
 
 Candidate ID: `candidate_struct_effective_unicity_internal_degeneracy_2026_05_29`
 
-Claim: the exact-sequence-collapsed strict Lipi working corpus has measurable local context constraint, but unanchored phonetic assignments retain a very large label-symmetry lower bound. This is structural evidence about solution-space degeneracy, not a reading.
+Claim: the exact-sequence-collapsed strict Lipi working corpus has measurable local context constraint — nearby signs restrict which sign fits a slot. But unanchored phonetic assignments retain a very large label-symmetry lower bound: without an external anchor, any proposed set of sound values can be globally permuted into an equally good internal solution. This is structural evidence about solution-space degeneracy, not a reading.
 
 Scope: T3 Lipi metadata/sign layer, `readiness_bucket = lipi_numeric_clean_candidate`, exact numeric token-sequence collapse. Not source-normalized; not near-duplicate/source-family collapsed.
 
@@ -148,7 +150,7 @@ Decision: live candidate, not accepted. It is useful as a degeneracy instrument 
 
 Retracted ID: `retracted_m70_source_boxed_order_window_promotion_2026_05_29`
 
-Retracted claim: the first M-70 source pilot can be promoted from row-level source-visible broad order-window candidate to source-boxed order-window candidate using the current blind token-box packet.
+Retracted claim: the first M-70 source pilot can be promoted from row-level source-visible broad order-window candidate to source-boxed order-window candidate using the current blind token-box packet — a set of images, targets mixed with matched negative controls, that reviewers score without seeing the answer key.
 
 Scope: M-70 public CISI India face/impression pair plus matched-negative controls drawn from comparable source and metadata neighborhoods.
 
@@ -372,6 +374,8 @@ Skeptic attacks that broke the claim:
 Decision: retracted after forger failure. The source-route matrix remains useful infrastructure, but it no longer supports a live source-visible structural claim.
 
 ## Retractions
+
+Each entry below is a claim that was made, tested, and withdrawn. The failure reasons are kept on record because they are the guardrails for the next attempt.
 
 ### `retracted_meluhha_site_overlap_as_external_anchor_2026_05_29`
 
@@ -803,6 +807,8 @@ Decision: retracted as a descendant-script phonetic anchor. Residual value: v3 i
 
 ## Reusable Infrastructure Produced
 
+These artifacts survive the retractions: they are the datasets, harnesses, and audit notes the next campaigns build on.
+
 - `data/claim_ledger/claims.json`: global claim ledger.
 - `data/sign_crosswalk/`: normalized provenance-tagged crosswalk scaffold with 1,085 unaccepted candidate edges; latest audit passes with caveats, zero accepted edges, zero dangling references, and zero evidence hash/path errors.
 - `docs/sign_crosswalk_audit.md`: human-readable crosswalk audit with highest-pressure review targets and namespace caveats.
@@ -860,4 +866,12 @@ Decision: retracted as a descendant-script phonetic anchor. Residual value: v3 i
 
 ## Current Bottom Line
 
-There is a real structural vortex around broad `002-Y`: even a post-hoc partition forger cannot reproduce the `817/820` versus `390/368/031/220` split in 10,000 iterations per null model. The corrected source queue makes the bottleneck explicit: route hooks now exist for every branch-pole sign, including `368`, `031`, and `220`, and the false `H-44` route is demoted instead of laundered into evidence. The directionality source queue now has a public-route triage surface too: 38 plate-route candidates from 79 high-pressure rows, two reviewed no-overlay packets for `H-654`, `M-1310`, `M-1320`, and `M-811` have failed, and v2c failed visual preflight before review. v2b fixed the obvious denominator and duplicate-hash flaws but exposed a deeper crop-source problem: OCR word-box masking still leaves neighboring catalogue labels in real controls. The panel-crop repair inventory is now a crop-QA surface: 278 candidates across 22 CISIs, a cleaned v2d shortlist rejected as a packet because the fixed denominator is 9 and crop worlds are mixed, a widened v2e pool with 488 candidate crops across 38 public plate-route CISIs, and a v2f homogeneous gate rejected because strict reuse misses `M-811`, has seven original fixed real negatives, and collides on source pages. The first branch-gap blind packet failed stage-1 token-count promotion, while surfacing a useful `M-12` catalog/source tokenization lead; the follow-up audit keeps it unpromoted because a scoring negative reproduces stable over-counting at 1/6. Vector 2 gives a quantitative degeneracy frame for the broader corpus. The first source-box attempts at upgrading `032-002-Y`, M-70, the directionality no-overlay packets, and the branch-gap packet all failed under blind review gates, and the broad Vector 4 context scan killed its own `158-806 / Phyt` lead. None is strong enough to state as an accepted epigraphic finding yet. The honest current result is structure found, no reading earned.
+There is a real structural vortex around broad `002-Y`. Even a post-hoc partition forger — one allowed to hunt for its own best split in every null corpus — cannot reproduce the `817/820` versus `390/368/031/220` split in 10,000 iterations per null model.
+
+The corrected source queue makes the bottleneck explicit: route hooks now exist for every branch-pole sign, including `368`, `031`, and `220`, and the false `H-44` route is demoted instead of laundered into evidence.
+
+The directionality source queue now has a public-route triage surface too: 38 plate-route candidates from 79 high-pressure rows. But the source-image work keeps failing its own gates. Two reviewed no-overlay packets for `H-654`, `M-1310`, `M-1320`, and `M-811` have failed, and v2c failed visual preflight before review. v2b fixed the obvious denominator and duplicate-hash flaws but exposed a deeper crop-source problem: OCR word-box masking still leaves neighboring catalogue labels in real controls. The panel-crop repair inventory is now a crop-QA surface: 278 candidates across 22 CISIs, a cleaned v2d shortlist rejected as a packet because the fixed denominator is 9 and crop worlds are mixed, a widened v2e pool with 488 candidate crops across 38 public plate-route CISIs, and a v2f homogeneous gate rejected because strict reuse misses `M-811`, has seven original fixed real negatives, and collides on source pages.
+
+The first branch-gap blind packet failed stage-1 token-count promotion, while surfacing a useful `M-12` catalog/source tokenization lead; the follow-up audit keeps it unpromoted because a scoring negative reproduces stable over-counting at 1/6.
+
+Vector 2 gives a quantitative degeneracy frame for the broader corpus. The first source-box attempts at upgrading `032-002-Y`, M-70, the directionality no-overlay packets, and the branch-gap packet all failed under blind review gates, and the broad Vector 4 context scan killed its own `158-806 / Phyt` lead. None is strong enough to state as an accepted epigraphic finding yet. The honest current result is structure found, no reading earned.

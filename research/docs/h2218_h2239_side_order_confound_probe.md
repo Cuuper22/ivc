@@ -4,7 +4,7 @@ Date: 2026-05-24
 
 ## Purpose
 
-This probe follows the [H-2218 through H-2239 Fig. 4 mapping](h2218_h2239_fig4_mapping.md) and the [H-2218 through H-2239 dimension side-order probe](h2218_h2239_dimension_side_order_probe.md).
+This note is a probe — a narrow statistical check — for a confound: an alternative explanation that could produce the local side-order pattern without the pattern meaning anything. It follows the [H-2218 through H-2239 Fig. 4 mapping](h2218_h2239_fig4_mapping.md) and the [H-2218 through H-2239 dimension side-order probe](h2218_h2239_dimension_side_order_probe.md).
 
 It asks a narrow source-control question:
 
@@ -90,7 +90,7 @@ This weakens two easy explanations:
 1. The A/B side-order split is simply Meadow and Kenoyer manufacturing group.
 2. The A/B side-order split is simply published Fig. 4 sequence order.
 
-It does not promote side order into a physical or functional fact. It only says those two confounds do not explain the current local split in this planning layer.
+It does not promote side order into a physical or functional fact. It only says those two confounds do not explain the current local split in this planning layer — the local `lipi` transcription data, which is not yet image-validated.
 
 ## Consequence
 

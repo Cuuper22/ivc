@@ -1,3 +1,17 @@
+// Weighs the three left-context operator candidates — the signs 235, 032, and
+// 004 that appear immediately before 002 in a 002-390-X frame — by how much
+// real source evidence backs each one. The claims under test: 235 before 002
+// triggers X=125, 032 before 002 suppresses 125, and 004 splits neutrally.
+// This script reads the 002-390 frames CSV from the branch-sign-ecology run,
+// buckets each row's source status into classes (strict, panel, route-only,
+// unbound, metadata-only), summarizes the X and tail distributions per left
+// sign, and applies hand-written per-operator decision rules that demand
+// strict witnesses before promotion. Four contradiction checks record the
+// pass/fail state. Writes row-classification, left-summary, and
+// contradiction-check CSVs plus a summary JSON to data/open_prototype/reports/.
+// Bottom line: all three stay local operators, never sign values or
+// translations, and each is source-thin or source-blocked.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

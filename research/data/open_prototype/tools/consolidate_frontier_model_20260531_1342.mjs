@@ -1,3 +1,16 @@
+// Frontier-model consolidation: fold the batch of "risky_*" test reports into one current
+// best model of the script, with every bet ranked, tiered, and tied to its evidence. It
+// reads roughly twenty earlier report JSONs (role grammar, header information, per-sign
+// forgers, backbone destructive checks, external Meluhha and Brahmi bridges) and also
+// recomputes several checks directly from lipi/metadata_filtered.csv (deduplicated to
+// distinct sign sequences): position profiles for signs 806/405/741/520 by carrier context
+// and role (initial / boundary / internal), the carrier scope of the 400-before-740 edge,
+// the nine backbone constraints re-scored across eight site and quality slices, and a
+// Bull1:W versus Bull1:J/L icon discriminator for the 405/806 and 741 marker families. The
+// fixed editorial output is the minimal model (a carrier-conditioned role grammar with
+// hard-core, scoped, and soft edges), eleven ranked keep/demote/kill decisions,
+// contradiction resolutions, and next destructive tests. Writes a JSON report and six CSVs
+// to data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

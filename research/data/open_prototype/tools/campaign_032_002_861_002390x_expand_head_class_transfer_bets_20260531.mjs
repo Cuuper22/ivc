@@ -1,6 +1,21 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script tests whether the 002-H-X frame grammar transfers beyond head
+// 390 — whether it is a general construction or a 390 island. It scans
+// lipi/metadata_filtered.csv for 002-HEAD-X frames across ten focus heads
+// (390, 861, 000, 220, 405, 031, 820, 056, 920, 368), labels each X with its
+// polarity from the campaign's hand-built lists (terminal booster, open
+// operator, global edge), and computes per-head metrics: terminal rate,
+// booster close rate, operator continue rate, and X diversity. Fixed
+// thresholds then class each head as open-template (220), terminal-default
+// (031/861/920), mixed-inventory (390, 000, 368), closed-edge (405/056), or
+// underpowered. Six bets with kill conditions ride on the classes, the
+// central one being that 002-H-X is transferable grammar and that 390 is just
+// a mixed-inventory head — any status/title reading stays a wild semantic
+// gloss. Writes head metrics, frame rows, bets, and held-out predictions as
+// CSVs plus a summary JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

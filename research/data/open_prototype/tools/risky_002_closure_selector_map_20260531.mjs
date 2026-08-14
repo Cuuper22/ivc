@@ -1,3 +1,21 @@
+// Risky-bet screen (2026-05-31, EXPAND phase): does sign 002 have a "closure
+// paradigm" like the one previously suspected for sign 060? Concretely, in
+// three-sign windows prev-002-closure where the closure sign is 817, 820, or
+// 861, does the identity of the prev sign select which closure follows?
+//
+// The script reads lipi/metadata_filtered.csv (complete=Y rows only),
+// extracts every such window, and dedupes on the full context (prev, closure,
+// following sign, text, site, type, symbol) so one popular inscription cannot
+// vote twice. A "selector" is a prev sign with 4+ cells whose closures are at
+// least 75% one target; each gets a right-tail Fisher p-value. The null is
+// 5,000 shuffles of the closure labels over the cells, tracking how often
+// chance produces as many qualifying selectors, as strong a best selector,
+// and both at once.
+//
+// It writes risky_002_closure_selector_map_20260531.json (the bet card, with
+// tiered risky bets and explicit demoters) and _selectors.csv. The tier drops
+// to "wild_shot_killed" if no selector qualifies.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

@@ -1,3 +1,14 @@
+// Sign `806` often follows one of four prefixes: 154, 155, 158, or (rarely) 100.
+// This script tests whether those prefixes are interchangeable variants or split by
+// context into two lanes: 154/155/100 predicting a seal/no-icon lane, and 158
+// predicting a bas-relief tablet (TAB:B) lane that often carries the Phyt
+// (plant-icon) motif. If the split holds, the sign before 806 carries register
+// information, not free variation. The script reads metadata_filtered.csv
+// (complete rows only), collects every prefix-806 occurrence, assigns each to its
+// candidate lane, and runs three right-tail Fisher contrasts between the lanes:
+// seal-type rate, TAB:B rate, and Phyt-icon rate. The candidate survives if the
+// seal and TAB:B contrasts both reach p <= 0.01. Writes a per-row CSV and a JSON
+// summary to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

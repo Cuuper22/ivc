@@ -69,7 +69,7 @@ Derived local visual files:
 
 `M-2104` stays live only as a quarantined candidate source route. It is not an accepted `034` attestation.
 
-The actual advance is locating the compression point:
+The actual advance is locating the compression point — the place where raw-object evidence gets flattened into standardized and then local numeric layers:
 
 ```text
 raw object? -> CISI/Marshall photo and catalog note still needed

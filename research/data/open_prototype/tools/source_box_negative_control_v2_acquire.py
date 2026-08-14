@@ -1,3 +1,17 @@
+"""Acquires public source images for the v2 negative-control targets of the
+source-box program. The five targets (M-38, M-124, M-381, H-601, H-1678)
+come from a targets CSV; for each, a hand-curated route table points at
+public CISI plate pages on archive.org (or, for the two Harappa rows, only
+a secondary catalogue text, which is explicitly marked not source-grade).
+The script downloads each plate page, scales the recorded OCR label
+coordinates to the actual image size, cuts a broad context crop around the
+label with the label boxed in red, and — for three hand-specified panels —
+cuts a label-free panel crop plus an autocontrast 2x enhanced version.
+Every artifact gets a SHA-256 hash so later steps can prove provenance.
+Outputs: routes CSV, panel-crops CSV, a per-target source-status CSV that
+says what each image may currently be used for (always with accepted-claims
+increment 0), two contact sheets, and a JSON summary.
+"""
 import csv
 import hashlib
 import json
@@ -239,8 +253,9 @@ def scaled_label_box(coords, width, height):
 
 def crop_box_from_label(label_box, width, height):
     x1, y1, x2, y2 = label_box
-    # The sign/object image normally sits above or beside the OCR label. This is a broad source-context crop,
-    # not a token box; token boxing is the next human/visual-adjudication step.
+    # The seal photo usually sits above or beside its OCR label, so we grow
+    # the box generously in those directions. This is a broad context crop
+    # only; drawing token boxes is a later human adjudication step.
     left = max(0, x1 - 380)
     upper = max(0, y1 - 620)
     right = min(width, x2 + 440)

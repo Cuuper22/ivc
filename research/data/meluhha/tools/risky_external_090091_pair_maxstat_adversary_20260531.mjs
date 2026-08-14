@@ -1,3 +1,17 @@
+// Adversarial stress test (2026-05-31) for the 090/091 external circular-seal
+// pair. The cheap objection to the earlier bets is selection bias: with
+// hundreds of signs, some pair was bound to look enriched. So this script scans
+// every unordered sign pair, not just 090/091, and asks where the target pair
+// ranks. It reads the lipi metadata and external objects table and runs five
+// comparators: external circular vs non-circular (the primary), corridor
+// circular vs other circular, corridor SEAL:C vs other SEAL:C (same object
+// type), external circular vs square, and literal-shape-circular only. Each
+// gets a Fisher exact test per pair, a Bonferroni correction over all pairs,
+// and — for the external comparators — a 2000-iteration max-statistic label
+// permutation, which asks how often ANY pair beats the target's p-value under
+// shuffled labels. A site-blocked table guards against one site carrying the
+// signal. The bet self-grades candidate vs wild-shot from five thresholds;
+// writes a JSON record plus summary, comparator, and site-blocked CSVs.
 import fs from 'node:fs';
 import path from 'node:path';
 

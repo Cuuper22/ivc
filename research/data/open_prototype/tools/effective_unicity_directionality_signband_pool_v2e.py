@@ -1,12 +1,23 @@
 #!/usr/bin/env python3
-"""
-Build a wider signband-like crop pool from the corrected directionality route probe.
+"""Build a wider signband-like crop pool from the corrected route probe (v2e).
 
-This is a preflight inventory, not a blind packet. It exists because the cleaned
-v2d shortlist still mixes crop worlds: some targets are signband strips while
-some controls are full object/icon panels. The v2e pool widens the candidate
-universe so a later packet can pre-register a denominator from comparable
-signband-like crops only.
+This is a preflight inventory, not a blind packet. It exists because the
+cleaned v2d shortlist still mixed crop worlds: some targets were narrow
+signband strips while some controls were full object/icon panels, which a
+reviewer could tell apart. v2e widens the candidate universe so a later packet
+can pre-register its denominator from comparable signband-like crops only.
+
+The script imports the panel-crop-repair module directly (redirecting its
+output directory) and reruns its candidate generation over up to two plate
+routes per CISI from the v2 route probe CSV. Every generated crop then gets a
+signband-likeness score: points for clean mechanical preflight, zero label and
+OCR-word overlap, a strip-like aspect ratio of 1.9-5.5, plausible height and
+width, moderate dark-pixel fraction, and a dark-row detection method; big
+penalties for any text overlap or squarish geometry. Scores map to four
+buckets from strong (>= 9.0) down to reject (< 5.0). It writes a ranked
+candidates CSV, two contact sheets (all ranked, targets only), and a summary
+JSON. Geometry alone makes nothing reviewer-ready — human visual QC still
+gates every row, and no claim is promoted.
 """
 
 from __future__ import annotations

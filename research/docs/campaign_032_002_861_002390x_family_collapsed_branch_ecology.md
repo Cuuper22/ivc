@@ -10,7 +10,7 @@ After source route, boxed-window, and exact-family stress, what does the `PREV -
 
 `125` remains the top live branch, but only as a branch-ecology object. It is not readable.
 
-The important contrast is behavioral: all local `125` rows continue after `125`, while the current strict visible non-`125` controls `M-70(692)` and `M-71(095)` close after the branch sign. That makes `125` look continuation-bearing. The limit is that strict `125` support is still only `M-119/M-735`, both in the broad Mohenjo-daro square steatite `SEAL:S` register.
+The contrast that matters is behavioral: all local `125` rows continue after `125`, while the current strict visible non-`125` controls `M-70(692)` and `M-71(095)` close after the branch sign. That makes `125` look continuation-bearing. The limit is that strict `125` support still rests on only `M-119/M-735`, both in the broad Mohenjo-daro square steatite `SEAL:S` register.
 
 ## Branch Summary
 
@@ -51,6 +51,6 @@ The important contrast is behavioral: all local `125` rows continue after `125`,
 
 Keep `125` live as a continuation-bearing branch candidate after `002-390`. Do not promote it to a value or function.
 
-The next decisive acquisition is not another `125` argument. It is source-visible matched alternatives: route `705`, route `H-1993`, and seek same-`PREV` non-`125` rows. If non-`125` branches also continue under matched source/family conditions, the continuation-bearing reading demotes.
+The next decisive acquisition is not another `125` argument. It is source-visible matched alternatives: route `705`, route `H-1993`, and seek same-`PREV` non-`125` rows. The test cuts both ways — if non-`125` branches also continue under matched source/family conditions, the continuation-bearing reading demotes.
 
 Accepted value, phonetics, language identity, sign meaning, and translation remain `0`.

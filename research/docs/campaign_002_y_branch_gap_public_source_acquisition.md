@@ -4,9 +4,9 @@ Date: 2026-05-29
 
 ## Question
 
-The `002-Y` partition source queue originally had route-level coverage for closure signs `817/820` and branch sign `390`, but not for branch signs `368`, `031`, and `220`. That made the candidate branch pole overdepend on `390`.
+The `002-Y` partition source queue originally had route-level coverage for closure signs `817/820` and branch sign `390`, but not for branch signs `368`, `031`, and `220`. That left the candidate branch pole leaning too hard on `390` alone.
 
-This note records a supplemental public-source acquisition pass for those three branch signs. It is infrastructure only.
+This note records a supplemental public-source acquisition pass for those three branch signs — that is, a hunt for public page images that show them. It is infrastructure only.
 
 ## Method
 
@@ -19,7 +19,7 @@ y_after_002 in 368/031/220
 
 It searches public OCR from CISI India and CISI Pakistan Internet Archive page XML, constrains object IDs to the expected public CISI volume where possible, downloads the matching plate page, and crops broad context around the OCR label.
 
-The volume constraint matters. An unconstrained OCR search falsely matched `B-1` to a side label on an unrelated Pakistan page. The current script routes `B-1` to CISI India page `n379`, where Banawali `B-1` is visible.
+The volume constraint matters. Without it, the OCR search falsely matched `B-1` to a side label on an unrelated Pakistan page. The current script routes `B-1` to CISI India page `n379`, where Banawali `B-1` is visible.
 
 The label matcher also now rejects starred partial labels and split numeric suffixes. This demotes the earlier `H-44` route: the apparent hit was an OCR prefix/split-label trap from nearby `H-449`-style labels, not a clean `H-44` source route.
 
@@ -61,7 +61,7 @@ After merging these route candidates into the source queue, the branch pole has 
 
 ## Interpretation Boundary
 
-These are route candidates only. They do not validate token order, physical direction, sign identity, sign meaning, phonetic value, language family, or translation.
+These are route candidates only — pointers to where a sign can be checked, nothing more. They do not validate token order, physical direction, sign identity, sign meaning, phonetic value, language family, or translation.
 
 The next gate is source-normalized proof: visual token boxing, physical side/direction checks, matched negatives, and source-family/copy review. Accepted claim count remains zero.
 

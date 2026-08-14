@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// When a sign ends an inscription in the X slot of 002-H-X, is that the construction's
+// grammar at work, or does the sign simply end inscriptions everywhere? This script separates
+// the two. It reads data/open_prototype/lipi/metadata_filtered.csv and computes, for every
+// sign, a global terminal rate (share of all its occurrences that are inscription-final) and
+// an X-slot terminal rate (the same share, but only inside 002-H-X). The difference between
+// them, terminal_delta, classifies each X sign: a boost of +0.2 or more means the
+// construction itself makes the sign terminal; a delta near zero with high terminality means
+// the sign is just an inherited global edge marker. Special attention goes to 000: if its
+// delta is small, its "null" behavior may be edge transfer rather than grammar. Writes the
+// per-sign table, a focus-sign subset, the raw X occurrences, and three bets as CSVs plus a
+// summary JSON in reports/.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

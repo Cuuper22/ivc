@@ -1,6 +1,18 @@
 import fs from "node:fs";
 import path from "node:path";
 
+// Only two predecessor "lanes" — sign 004 or 032 immediately before a 002-390 frame — still
+// show branch alternation, and each lane has a weak side that is not strict source-visible.
+// This script scouts the local corpus for replacement witnesses before anyone spends effort
+// on external image acquisition. It reads data/open_prototype/lipi/metadata_filtered.csv and
+// the 002-390 frames report (for source_status, mapped to tiers like strict_visible), then
+// collects every 002 occurrence whose predecessor is 004 or 032. Per lane it summarizes the
+// post-002 heads, the adjacent 002-390 branches, and how many of those rows are strict, and
+// lists the rows that would need upgrading or replacing. The recorded outcome: the local
+// corpus offers no replacement witness for either lane, so H-1993 (for 004) and binding
+// 3335.1 (for 032) remain the decisive external targets. Writes lane occurrences, lane
+// summaries, replacement targets, and decisions as CSVs plus a summary JSON in reports/.
+
 const root = process.cwd();
 const dataPath = path.join(root, "data", "open_prototype", "lipi", "metadata_filtered.csv");
 const reportsDir = path.join(root, "data", "open_prototype", "reports");

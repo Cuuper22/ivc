@@ -1,3 +1,15 @@
+"""Recuts terminal space on bare 220-032-002-861 controls to test a layout adversary.
+
+The adversary says: maybe the "bare" rows lack a tail simply because the line ran out
+of room. This script reads the source-token attachment boxes and verdicts for the
+tailed rows, plus the bare-edge control crops, and recuts the terminal region of each
+bare 220-032-002-861 control with PIL into tmp/032_002_861_220032_terminal_space_recut.
+It measures whether each control has a tail-sized empty slot after the last sign. It
+writes measurement CSVs, a summary JSON, and a docs/ markdown note. The recorded
+outcomes distinguish rows where the terminal-space attack survives from rows that are
+blocked by the terminal-space adversary.
+"""
+
 from __future__ import annotations
 
 import csv

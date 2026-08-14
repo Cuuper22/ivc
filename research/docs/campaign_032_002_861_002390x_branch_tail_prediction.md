@@ -4,9 +4,9 @@ Date: 2026-05-30
 
 ## Question
 
-Treat `002-390-X` as a possible branch-choice slot. Does branch choice after `390` predict whether the inscription closes or continues?
+Treat `002-390-X` as a possible branch-choice slot. The question is one of prediction: does the branch chosen after `390` predict whether the inscription closes or continues?
 
-This is the linguistic object now. Not `125` as a heroic singleton; the whole `PREV -> 002-390 -> X -> TAIL` matrix.
+That framing changes the linguistic object. It is no longer `125` as a heroic singleton; it is the whole `PREV -> 002-390 -> X -> TAIL` matrix.
 
 ## Input
 
@@ -52,7 +52,7 @@ Best current support:
 - Strict visible non-`125` controls `M-70/M-71` close.
 - Repeated `095` and `705` are terminal in the metadata layer.
 
-This would matter for decipherment because it gives a structural contrast: not meaning, not sound, but a rule-like behavior that can constrain readings later.
+Why this would matter for decipherment: it gives a structural contrast — not meaning, not sound, but a rule-like behavior that can constrain readings later.
 
 ### H2: Formula/Register Residue
 
@@ -74,7 +74,7 @@ Best current support:
 - `125 -> 195`
 - `125 -> 820`
 
-Under this model, `125` is not "continuation-bearing" semantically. It is a branch into several fixed or semi-fixed endings.
+Under this model, `125` carries no "continuation" meaning of its own. It is simply a branch into several fixed or semi-fixed endings.
 
 ## Decision
 

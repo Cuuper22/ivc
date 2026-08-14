@@ -1,6 +1,19 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// An attack-surface audit of two template bets built around sign 125: that 610 is a rare
+// governed head which always selects the tail 125-032 (full phrase 002-610-125-032), and
+// that the pair 297-350 is a composite head selecting terminal 125-413 (full phrase
+// 297-350-125-413). The attack works by leakage: for each template, this script counts how
+// often every component motif (610-125, 125-032, 297-350, 350-125, 125-413) and every
+// component sign occurs OUTSIDE the full template in the canonical corpus, read from
+// data/open_prototype/lipi/metadata_filtered.csv. A component confined to its template
+// supports specificity; a component that leaks (like 125-032 appearing without 610)
+// weakens the tail claim while leaving the head claim intact. Explicit decision rules
+// translate the leak pattern into tiers, and a third bet demotes the broad "125 grammar" to
+// candidate_mixed_not_promoted. Writes template rows, component rows, raw hits, and
+// decisions as CSVs plus a summary JSON in reports/.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

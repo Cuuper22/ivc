@@ -1,6 +1,20 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script surfaces the source evidence behind the claim that signs 095
+// and 705 are overt terminal classifiers in the 002-HEAD-X frame. It scans
+// lipi/metadata_filtered.csv for every 002-HEAD-095 and 002-HEAD-705
+// occurrence, then attaches a hand-recorded source assessment per object:
+// H-1993 has a public Harappa supplementary-PDF transcription (route support,
+// no artifact image), the Dholavira row 4237.1 has an unbound visual
+// candidate, and everything else is structural only. It also logs the public
+// search queries that were tried and what each did or did not turn up. The
+// resulting bets keep both classifiers at "wild shot": 095 strengthened by
+// the public transcription but image-unbound, 705 structurally strong but
+// source-fragile. Writes classifier rows, per-classifier status, the search
+// log, and the bets as CSVs plus a summary JSON to
+// data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

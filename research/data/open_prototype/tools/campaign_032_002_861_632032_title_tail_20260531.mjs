@@ -1,3 +1,11 @@
+// Probe for the pair 632-032 as a "title tail": a short, transferable suffix that follows
+// sign 125, rather than a free decorative formula. We read the filtered Indus inscription
+// list (lipi/metadata_filtered.csv) and record every occurrence of sign 632 with its
+// neighbors, plus every 632-032 pair with its context: what precedes it, whether that is 125,
+// whether a governing 002 sits within six signs to the left (and under which head), and what
+// follows. The counts tell us how rare 632-032 is, how often it ends the inscription, and how
+// much of its governed evidence sits after 125. Writes the tail rows and a 632 distribution
+// as CSVs plus a JSON summary to data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

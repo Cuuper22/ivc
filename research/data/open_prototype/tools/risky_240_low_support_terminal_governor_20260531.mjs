@@ -1,3 +1,14 @@
+// Tests whether sign `240`, when it sits second-to-last, governs which sign closes
+// the inscription — a "terminal governor" with a small closure set dominated by 235
+// and 798. Support is thin (about 23 exact text families), so the test is built
+// around out-of-sample prediction: the script reads metadata_filtered.csv (complete
+// rows only), collapses rows to exact text families, and runs leave-one-site
+// cross-validation. For each held-out site, it learns the final-sign distribution
+// after penult 240 from the other sites (needing at least 5 training rows) and
+// scores top-1/top-3 accuracy, mean probability of the true final, and effective
+// candidate count on the held-out rows. A 2,000-iteration null shuffles final signs
+// across all text families and reruns the whole cross-validation to price those
+// scores. Writes a single JSON report to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

@@ -4,7 +4,7 @@ Date: 2026-05-31
 
 ## Question
 
-Do the two tempting `125` positives survive when source visibility and formula-family collapse are enforced?
+Do the two tempting `125` positives survive once we enforce source visibility and formula-family collapse?
 
 Targets:
 
@@ -44,9 +44,9 @@ The global `125-632-032` scan found four rows:
 - `M-119`: `+151-337-484-002-390-125-632-032-900-563+`
 - `M-1188`: damaged/open row `]000/000-125-632-032/240-002-244-632+`
 
-Only `M-38` and `M-119` are in the immediate `002-390-X` lane. Only `M-119` is strict source-visible right now.
+Only `M-38` and `M-119` sit in the immediate `002-390-X` lane. Only `M-119` is strict source-visible right now.
 
-This matters because `125-632-032` is not merely a private tail of `002-390-125`. It has a broader Mohenjo-daro `SEAL:S` metadata footprint. That increases formula-family pressure, not confidence.
+This matters because `125-632-032` is not merely a private tail of `002-390-125`. It has a broader Mohenjo-daro `SEAL:S` metadata footprint. A broader footprint raises formula-family pressure, not confidence.
 
 ## Decision
 

@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """embeddings/validate_recovery.py — the ethos gate for image embeddings.
 
-Tests whether image-embedding nearest-neighbors recover SAME-LABEL crops better than
-a shuffled-label null. This is the falsifiable question that decides whether the
-embeddings capture glyph identity *at all* before anything is built on them — and it
-can come back negative. Visual similarity is NOT sign identity; a positive result here
-is necessary, not sufficient (source-image validation + forger nulls still apply).
+Before anything is built on the image embeddings, this script asks one falsifiable
+question: do embedding nearest-neighbors recover SAME-LABEL crops better than a
+shuffled-label null? The null is what "chance" looks like — the same recovery rate
+computed after the labels are shuffled. If the embeddings cannot beat it, they do not
+capture glyph identity at all, and that negative answer is a legitimate outcome.
+Visual similarity is NOT sign identity; a positive result here is necessary, not
+sufficient (source-image validation + forger nulls still apply).
 
 Labels come from the Brahmi neighbor table (brahmi_local_image_path -> brahmi_label),
 which is the cleanest ground truth available. Reports recovery@k vs null.

@@ -4,9 +4,9 @@ Date: 2026-05-29
 
 ## Abstract
 
-This note computes a structural effective-unicity curve for the local Lipi-derived Indus working corpus. It does not attempt a phonetic reading. The result is useful precisely because it separates two claims that are often blurred: the corpus does contain measurable internal constraint, but unanchored internal constraint does not identify phonetic values or a language family.
+Effective unicity asks how far a corpus's own internal structure narrows the space of possible readings. This note computes a structural effective-unicity curve for the local Lipi-derived Indus working corpus. It does not attempt a phonetic reading. The result is useful precisely because it separates two claims that are often blurred: the corpus does contain measurable internal constraint, but unanchored internal constraint does not identify phonetic values or a language family.
 
-At full coverage, the exact-sequence-collapsed strict Lipi layer has 1,798 rows, 8,212 sign tokens, and 571 distinct numeric signs. A leave-one-row-out masked-sign model ranks the true sign first in 0.279591 of token positions and in the top five in 0.534096. Against 100 iterations of each of six forger controls, full-coverage masked top-1 false-positive rate is 0 for every tested control. However, the corpus still has a global phonetic label-symmetry lower bound of log2(571!) = 4,410.970864 bits before any many-to-one, one-to-many, or null-sign freedoms are added. That lower bound is not broken by internal distributional evidence.
+The measurement itself is straightforward. At full coverage, the exact-sequence-collapsed strict Lipi layer has 1,798 rows, 8,212 sign tokens, and 571 distinct numeric signs. A leave-one-row-out masked-sign model, which hides one sign and asks the rest of the corpus to guess it, ranks the true sign first in 0.279591 of token positions and in the top five in 0.534096. Against 100 iterations of each of six forger controls, full-coverage masked top-1 false-positive rate is 0 for every tested control. However, the corpus still has a global phonetic label-symmetry lower bound of log2(571!) = 4,410.970864 bits before any many-to-one, one-to-many, or null-sign freedoms are added. Label symmetry means that with no external anchor, every assignment of sound values to signs can be permuted wholesale and fit the internal evidence equally well. That lower bound is not broken by internal distributional evidence.
 
 Conclusion: internal evidence narrows structural roles and local continuations; it does not earn translations, phonetic values, sign meanings, or language-family likelihood. Those require an external anchor.
 
@@ -42,7 +42,7 @@ Attempted break: use internal context profiles and masked-sign prediction to col
 
 ## Metrics
 
-The script computes four families of metrics over increasing corpus coverage:
+The script computes four families of metrics over increasing corpus coverage. Running them as a curve, from a small slice of the corpus up to all of it, shows whether adding more corpus actually adds constraint:
 
 | Metric | Purpose |
 | --- | --- |
@@ -115,7 +115,7 @@ A route-conditioned control now closes another shortcut. In the frozen public-ro
 
 ## Known-Script Scarcity Comparator
 
-The known-script comparator battery now has two controls: Linear B Series D and SumTablets. Linear B uses the local Zenodo sample file, `data/open_prototype/known_scripts/linear_b_series_d/Samples.txt`, MD5 `0c9b9190b86840c82cafdbf4f4b8c827`, verified by the gapped-heldout script. SumTablets uses Hugging Face dataset `colesimmons/SumTablets`, dataset SHA `11638cd142afbed716df43c55d8810d47fb9b52c`, with `transliteration` and `glyph_names` intentionally excluded from local cache and scoring. These comparators hide known readings from the model; they do not use known-script philology to infer anything about Indus signs.
+A scarcity comparator takes a script we can already read, hides its readings, and cuts it down to Indus-like conditions. That gives a fair ceiling: it shows what the same instrument scores on a corpus we know is real writing. The known-script comparator battery now has two controls: Linear B Series D and SumTablets. Linear B uses the local Zenodo sample file, `data/open_prototype/known_scripts/linear_b_series_d/Samples.txt`, MD5 `0c9b9190b86840c82cafdbf4f4b8c827`, verified by the gapped-heldout script. SumTablets uses Hugging Face dataset `colesimmons/SumTablets`, dataset SHA `11638cd142afbed716df43c55d8810d47fb9b52c`, with `transliteration` and `glyph_names` intentionally excluded from local cache and scoring. These comparators hide known readings from the model; they do not use known-script philology to infer anything about Indus signs.
 
 Generated artifacts:
 
@@ -194,6 +194,8 @@ The mechanism that can break this limit is external:
 - or another independently dated bilingual or quasi-bilingual anchor.
 
 ## Skeptic Record
+
+This section is the honest scorecard: every attack the result has survived, and every attack it has failed or not yet faced.
 
 Survived:
 

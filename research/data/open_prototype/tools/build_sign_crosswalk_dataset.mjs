@@ -1,3 +1,16 @@
+// Builds the sign-crosswalk dataset: a set of seven normalized CSV tables under
+// data/sign_crosswalk/ that record how Indus sign IDs from different numbering
+// systems (the local Lipi numeric IDs, the Mayig P namespace, and the Parpola V,
+// Wells W, and Mahadevan M namespaces mediated through Mayig feature files)
+// might line up. It reads the earlier crosswalk candidate CSVs, the Mayig
+// records index, the filtered Lipi metadata, and per-sign feature JSONs, then
+// emits signs, systems, artifact witnesses, candidate edges, evidence refs
+// (with sha256 hashes), namespace gates, and review events, plus a manifest.
+// Every edge is written with accepted_for_analysis=false: this is scaffolding
+// for later adjudication, not an accepted sign concordance. The namespace gates
+// encode specific shortcuts that were tested and rejected (e.g. "P041 = Parpola
+// sign no. 41"), so downstream tools cannot silently reuse them.
+
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';

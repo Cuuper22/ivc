@@ -6,6 +6,8 @@ Date: 2026-05-29
 
 This protocol scores whether the source-visible `032-002-Y` candidate survives a visual false-positive gate.
 
+The idea is simple. If a pattern is really in the artifact photographs, blind reviewers should find it in the images that contain it and fail to find it in matched negative images that do not. Reviewers see only neutral images, with no labels and no knowledge of which rows were positive. If they "find" the pattern in negatives too, the method is generating the result, not the corpus.
+
 The task is not to read the inscriptions. It is only to decide whether a neutral source image visibly supports a same-line adjacent `032-002-Y` packet.
 
 ## Inputs
@@ -48,7 +50,7 @@ The scorer computes:
 
 ## Acceptance Boundary
 
-This gate can only support the narrow source claim that the same-line `032-002-Y` packet is not trivially produced by visually similar source images.
+Passing this gate would prove very little, and that is deliberate. This gate can only support the narrow source claim that the same-line `032-002-Y` packet is not trivially produced by visually similar source images.
 
 It cannot establish a sign meaning, phonetic value, translation, language family, or general structural finding by itself.
 

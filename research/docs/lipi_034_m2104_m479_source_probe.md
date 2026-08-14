@@ -44,7 +44,7 @@ M-480:  +400-097-700-004+
 M-1425: +400-097-700-004+
 ```
 
-M-479 is not a named Parpola 2019 parallel in the current extraction, but CISI itself discusses M-478/M-479 together as a four-plus-U case in the introduction. That gives prior-work pressure for the visual class while also warning that this is a tight tablet-family phenomenon.
+M-479 is not a named Parpola 2019 parallel in the current extraction, but CISI itself discusses M-478/M-479 together as a four-plus-U case in the introduction. That gives prior-work pressure for the visual class — earlier scholarship pushing us to test it, not proof — while also warning that this is a tight tablet-family phenomenon.
 
 ## Visual Note
 

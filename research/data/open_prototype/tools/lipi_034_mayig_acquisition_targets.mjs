@@ -1,3 +1,16 @@
+// Sign 034 is dark in the Mayig/Parpola crosswalk because the overlap corpus
+// never covers it (see the darkness diagnostic). The fix is acquisition: get
+// Mayig records or source images for the right 034-bearing objects. This
+// script builds that ranked shopping list. It finds every row in the filtered
+// Lipi metadata whose text contains an exact 034 token, checks whether the
+// pinned Mayig repo (records_index.csv + commit.json) already has the object,
+// and scores each row into priority lanes: P0 for Mohenjo-daro 034 objects
+// missing from Mayig, P1 for the H-2218..H-2239 slot-control series and for
+// rows where 034 sits next to sign 700, P2/P3 for the rest. Scoring also
+// rewards tablets, clean complete rows, and excavation-context hooks. Rows
+// are then collapsed to one line per object with the best lane and an
+// explicit acquisition question. Writes per-row and per-object CSVs plus a
+// JSON summary. A to-do list only; it accepts no mapping or reading.
 import fs from 'node:fs';
 import path from 'node:path';
 

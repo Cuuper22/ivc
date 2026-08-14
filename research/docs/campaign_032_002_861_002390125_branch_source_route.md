@@ -10,9 +10,9 @@ Does `125` look like a meaningful continuation inside the `002-390-X` branch, or
 
 `002-390-X` is now the live batch object. There are `15` local `002-390-X` rows with `10` different next signs after `390`.
 
-`125` is the largest raw next-after-`390` group at `4` rows, but it is not source-strong enough for promotion. The four rows are `M-38`, `M-119`, `M-735`, and `Sktd-1`; all are nonterminal. Two of them (`M-38`, `M-119`) continue as `125-632-032`, while `M-735` continues `125-195` and `Sktd-1` continues `125-820`.
+`125` is the largest raw next-after-`390` group at `4` rows, but that is not source-strong enough for promotion. The four rows are `M-38`, `M-119`, `M-735`, and `Sktd-1`; all are nonterminal. Two of them (`M-38`, `M-119`) continue as `125-632-032`, while `M-735` continues `125-195` and `Sktd-1` continues `125-820`.
 
-The decisive control is `M-70 +226-032-002-390-692+`: it is source-visible and shows that `002-390` can continue without `125`. So `125` is not a necessary branch marker for `002-390`.
+The decisive control is `M-70 +226-032-002-390-692+`. It is source-visible, and it shows that `002-390` can continue without `125`. So `125` is not a necessary branch marker for `002-390`.
 
 ## Source State
 

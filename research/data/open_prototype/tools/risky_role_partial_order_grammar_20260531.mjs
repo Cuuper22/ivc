@@ -1,3 +1,15 @@
+// Tests whether eleven previously found pairwise ordering facts assemble into
+// one small role grammar: frame signs (400) before openers (740), openers
+// before the bridge sign 002, 002 before the terminal partners 861/820/817,
+// and the register entry 407 before the closure pivot 806. We read the
+// filtered corpus metadata, collapse to one row per canonical numeric sign
+// sequence, and for each named constraint count how often the left sign
+// really precedes the right sign when both occur in a row. A constraint
+// passes if it has at least 10 co-occurrence rows, 80% satisfaction, and
+// binomial p <= 0.01. The null: 3000 row-internal sign shuffles, which keep
+// every row's sign multiset but scramble order — if the grammar survives
+// that, order itself carries the signal. Writes a JSON report and four CSVs
+// (bet summary, per-constraint table, supporting rows, null iterations).
 import fs from 'node:fs';
 import path from 'node:path';
 

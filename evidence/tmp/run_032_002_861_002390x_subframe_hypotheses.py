@@ -1,3 +1,15 @@
+"""Ranks structural hypotheses inside the 002-390-X branch without accepting values.
+
+This script reads the per-row table from the 002-390-125 branch source-route pass and
+regroups it four ways: by the sign before 002, by the sign after 390, by the next+tail
+frame, and by the two-sign tail prefix frame. Each grouping is a candidate "subframe" —
+a structural slice of the branch that might behave like a unit. It scores and ranks
+these hypotheses, then writes one CSV per grouping, a hypotheses CSV, a summary JSON,
+and a docs/ markdown note. The point is to decide which structural readings deserve
+source normalization next; the script promotes hypotheses for further testing and
+accepts no sign value or translation.
+"""
+
 from __future__ import annotations
 
 import csv

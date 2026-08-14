@@ -1,3 +1,18 @@
+// Rechecks the upstream provenance of blocked row 3335.1 against the Yajnadevam
+// Lipi repo on GitHub, this time pinned to a specific commit instead of floating
+// main. It expects pre-downloaded copies of inscriptions.csv (current main and
+// pinned commit) plus the GitHub commit API response under
+// tmp/002390x_3335_yajnadevam_provenance_20260531/, and compares them by SHA-256
+// to each other, to a prior 2026-05-26 snapshot, and to our filtered local
+// metadata. It verifies that the only columns the raw source adds are the
+// quarantined decipherment columns (sanskrit, translation, notes), that the
+// target row still has no object id, site, or image bridge, and that its odd
+// row-order position between M-939 and M-941 is a search clue only. Writes six
+// CSVs (source files, schema delta, target comparison, neighbors, chunk
+// matches, decisions) and a summary JSON to data/open_prototype/reports/.
+// Outcome baked into the decisions: provenance is now reproducible, but 3335.1
+// gains no source bridge and no value or reading is accepted.
+
 import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";

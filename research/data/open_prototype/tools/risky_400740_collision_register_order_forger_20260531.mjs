@@ -1,3 +1,14 @@
+// When signs `400` and `740` — two rival register openers — appear in the same
+// inscription, which one comes first? The bet: their order diagnoses the carrier
+// class. On tablet/account objects (TAB:B, TAB:I) 400 should precede 740; on
+// rectangular seals and copper tablets (SEAL:R, TAB:C) 740 should precede 400.
+// The script reads metadata_filtered.csv, collapses duplicate sign sequences, keeps
+// rows containing both signs, classifies each row into one of the two pre-declared
+// register classes (others are excluded from the test), and counts order
+// alignments. A 50,000-iteration null shuffles the register labels over the
+// collision rows and asks how often the aligned-order count is matched; a Fisher
+// test compares the 400-before-740 rates between the two classes directly. Writes
+// a JSON bet report and a per-row CSV to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

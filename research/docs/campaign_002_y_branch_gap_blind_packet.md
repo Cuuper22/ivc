@@ -4,13 +4,13 @@ Date: 2026-05-29
 
 ## Purpose
 
-The public CISI route pass found route hooks for branch-pole signs `368`, `031`, and `220`. Packet `branch_gap_source_box_v1` is the next adversarial gate: hide catalogue labels and ask whether the routed source crops can actually be tokenized before any source-normalized claim is promoted.
+The public CISI route pass found route hooks for branch-pole signs `368`, `031`, and `220`. Packet `branch_gap_source_box_v1` is the next adversarial gate. The idea is simple: hide the catalogue labels and ask whether the routed source crops can actually be tokenized — split into individual sign tokens — before any source-normalized claim is promoted.
 
 This is a packet, not a result.
 
 ## Correction Before Packeting
 
-The route matcher was tightened before this packet was built. OCR split labels like `H-449` into pieces that could match `H-44`; starred partial labels also produced false hits. The acquisition script now rejects starred partial labels and split numeric suffixes. As a result, `H-44` is demoted from a public route candidate to a route failure/quarantine example.
+The route matcher was tightened before this packet was built, because it had two ways to produce false hits: OCR split labels like `H-449` into pieces that could match `H-44`, and starred partial labels also matched wrongly. The acquisition script now rejects starred partial labels and split numeric suffixes. As a result, `H-44` is demoted from a public route candidate to a route failure/quarantine example.
 
 After regeneration, the branch pole has 14 grade >= 2 route hooks rather than 15. There is still no route-inventory gap:
 
@@ -71,7 +71,7 @@ Target and backup stability:
 | `BG005` | `M-655` | backup `220` | 7 | 9, 11, 9 |
 | `BG006` | `M-311` | backup `368` | 4 | 7, 12, 0 |
 
-This is a failed promotion gate, not a failed route inventory. The strongest useful residue is diagnostic: `BG001/M-12` is visually stable at 10 blind tokens against a 9-token catalog string, suggesting a source/catalog tokenization mismatch worth separate manual audit. That audit now exists: `docs/campaign_m12_token_count_audit.md` keeps `M-12` unpromoted because Lipi and Mayig both preserve 9-token witnesses and scoring negative `BG009/M-654` reproduces stable over-counting at 1/6. `BG002/M-318` is close but not unanimous. The rest are too unstable for source-box promotion.
+Read this as a failed promotion gate, not a failed route inventory. The strongest useful residue is diagnostic: `BG001/M-12` is visually stable at 10 blind tokens against a 9-token catalog string, suggesting a source/catalog tokenization mismatch worth separate manual audit. That audit now exists: `docs/campaign_m12_token_count_audit.md` keeps `M-12` unpromoted because Lipi and Mayig both preserve 9-token witnesses and scoring negative `BG009/M-654` reproduces stable over-counting at 1/6. `BG002/M-318` is close but not unanimous. The rest are too unstable for source-box promotion.
 
 ## Artifacts
 

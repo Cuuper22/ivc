@@ -1,6 +1,19 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script assembles everything the close-read passes established into one explicit
+// graph: nodes are the panel labels visible on CISI source pages (H-930 A, H-771 A bis, and
+// so on), and edges link local corpus text rows to their candidate source panels. It reads
+// four earlier CSVs -- the clean two-panel close-read, the messy panel reconciliation, the
+// broader visual inspection, and the source triad packet. Each node gets a side letter, a
+// panel class derived from CISI convention (base side, same-side later photo, unresolved
+// numbered form), a candidate local role, and a blocker; each object gets a source state.
+// It then scores every 034/033/032 triad against a hard gate: a substitution test needs all
+// three objects mapped to source panels with secure subtype and direction. It writes node,
+// edge, and triad-admissibility CSVs plus a JSON summary. The documented result is that
+// zero triads pass -- the 034 residue stays a source-targeted hypothesis, not a validated
+// contrast.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 

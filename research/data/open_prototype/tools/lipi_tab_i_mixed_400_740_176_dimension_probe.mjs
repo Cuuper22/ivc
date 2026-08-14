@@ -1,3 +1,23 @@
+// Dimension stress test for the TAB:I tablets that mix the +400-740-176+
+// longer text with a 700+033 or 700+034 short mark. If the 033/034 choice
+// tracked something physical, tablets in the two groups should differ in
+// size. This probe checks that before any plate validation, so a dimensional
+// confound can be caught (or ruled out) early.
+//
+// The script reads lipi_tab_i_mixed_400_740_176_side_context.csv (built by
+// the side-context sibling script), computes each artifact's horizontal,
+// vertical, derived area, and aspect values, and runs exact tests: full
+// enumeration permutation tests on the 033-vs-034 mean difference for each
+// dimension (feasible because the groups are tiny), and Fisher exact tests on
+// whether the mark class predicts the long1-short2 layout or an extra side.
+// The tests repeat on three nested subsets (all targets, two-side only,
+// canonical long1-short2 only), with Bonferroni and BH corrections across the
+// whole battery.
+//
+// Outputs: lipi_tab_i_mixed_400_740_176_dimension_probe_rows.csv, _tests.csv,
+// and _summary.json. Finding so far: weak raw splits, nothing survives
+// correction. A pre-validation stress test only — no readings accepted.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

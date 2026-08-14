@@ -1,3 +1,16 @@
+"""Scores the blind reviews of the M-381 negative-control packet — and
+records why the packet failed. Reviewers boxed sign tokens on the blind
+M-381 panel crop; this script compares each reviewer's token count to the
+catalog count (parsed from the answer key's target text) and notes whether
+they flagged fusion risk, i.e. crowded signs that might merge or split.
+The outcome is baked in: no reviewer recovered the catalog segmentation and
+all reported fusion risk, so every scored row carries clean_negative_gate =
+"fail" and the summary declares M-381 unusable as a clean negative control
+from this crop — it stays an ambiguity stress packet. The summary also
+lists the skeptic attacks that block promotion and the residual value of
+the panel. Writes a scored-reviews CSV and a JSON summary, both with an
+accepted-claims increment of zero.
+"""
 import csv
 import json
 import statistics

@@ -1,5 +1,16 @@
 #!/usr/bin/env python
-"""Source-normalized adversary for 002-390-X subframe positives."""
+"""Source-normalized adversary for 002-390-X subframe positives.
+
+This script attacks the two tempting positive subframes (235 -> 002-390 -> 125 and
+125 -> 632 032) instead of defending them. It reads the filtered corpus metadata, the
+family-collapsed branch-ecology matrix rows, and the source-route table from the
+source-normalized contrast campaign. For each pattern in its inline PATTERNS table it
+counts raw rows, then re-counts under two constraints at once: strict source
+visibility (the row must be seen on an artifact image, not just in a catalog) and
+formula-family collapse (copies of one formula count once). It writes a summary JSON
+plus collapse-tests, occurrences, and focus-rows CSVs. The recorded decision: the
+positive subframes do not survive; 002-390-X remains live as branch-tail ecology only.
+"""
 
 from __future__ import annotations
 

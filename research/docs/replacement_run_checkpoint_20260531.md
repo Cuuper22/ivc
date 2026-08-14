@@ -4,7 +4,7 @@ Date: 2026-05-31 America/Los_Angeles
 
 Status: active goal, not complete.
 
-This checkpoint replaces the contaminated post-2026-05-31T01:04 successor state for current-run orientation. It does not mark the project complete.
+A checkpoint is a trusted restart point. It states the accepted counts, the work that has been re-earned under the original scope, and the guardrails, so a new run does not inherit contaminated state. This checkpoint replaces the contaminated post-2026-05-31T01:04 successor state for current-run orientation. It does not mark the project complete.
 
 ## Accepted Claim Counts
 

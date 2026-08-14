@@ -1,6 +1,19 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Does sign 002 actually do something when it stands before 390, or is it
+// decoration? This control tests the frame-marker idea by comparing what
+// follows 390 in two contexts. The script scans every text in
+// lipi/metadata_filtered.csv for occurrences of 390, splits them into
+// "002-framed" (a 002 immediately precedes the 390) and "unframed", and
+// records each successor sign, whether it belongs to the proposed X set
+// (095, 705, 125, 530, 590, 692), and whether it ends the text. If 002 really
+// licenses the frame, framed 390 should be enriched for that X set relative
+// to unframed 390; identical successor ecologies would be the kill condition.
+// Writes successor rows, per-context comparison, and the bet definition as
+// CSVs plus a summary JSON (with the enrichment delta and a provisional
+// verdict) to data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

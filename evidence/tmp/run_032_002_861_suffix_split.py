@@ -1,3 +1,17 @@
+"""Split every 002-861 row by its suffix and fetch source pages for six seals.
+
+Two jobs in one script. First, the split: from the earlier all-002 and
+after-032 campaign row files, keep the strict complete-closed rows where 861
+directly follows 002, and record each row's prefix and tail (both deduped and
+raw scopes). Group them into tail families, and find every context field
+(full prefix, last-two, last-one) where terminal and continuing rows coexist
+— those contrasts are the interesting cases. Second, the source work: for six
+focus seals, download the CISI page scans from the Internet Archive at 2000px
+width, crop the hand-boxed seal-face and impression panels, and build a
+labeled contact sheet. Writes eight report files: row/family/contrast CSVs
+for both scopes, source-route and crop CSVs, and a JSON summary.
+"""
+
 from __future__ import annotations
 
 import csv

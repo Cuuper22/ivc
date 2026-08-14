@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script boils the 002-390-X parser down to its most defensible fragment.
+// It reads the source-visible parser-controls CSV written earlier in the
+// campaign, keeps only rows rated "strict_source_visible_token_box_ready_high"
+// (inscriptions we verified on a real image, sharp enough to draw token
+// boxes), and sorts each survivor into one of three lane classes: 125 linker,
+// 095 terminal classifier, or 692 terminal comparator. The resulting
+// "microparser" is tiny but honest: 125 keeps strict support as a continuing
+// lane, 095 closure rests on a single witness, and 705 has zero strict
+// witnesses, so the old joint 095/705 classifier lane is split. Writes strict
+// rows, per-class rollups, and decision CSVs plus a summary JSON to
+// data/open_prototype/reports.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const sourceRowsPath = path.join(

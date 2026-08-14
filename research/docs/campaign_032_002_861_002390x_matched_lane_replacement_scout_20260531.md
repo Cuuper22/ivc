@@ -2,16 +2,18 @@
 
 Date: 2026-05-31 America/Los_Angeles
 
+This note is a search report. The campaign depends on two specific objects (H-1993 and `3335.1`) that we cannot yet tie to source images. This scout asked whether any other row in our local database could stand in for either of them. The answer is no — and recording that "no" is the point, because it proves the acquisition work on those two objects is necessary, not optional.
+
 Status: `matched_lane_replacement_scout_no_local_replacement_witness_no_values`.
 
 ## Purpose
 
-The left-context radius scan narrowed the live branch question to two immediate-predecessor lanes:
+A "lane" here is a specific left-to-right sign pattern: which sign immediately precedes the pair `002-390`, and which sign follows it. The left-context radius scan narrowed the live branch question to two immediate-predecessor lanes:
 
 - `004 -> 002-390 -> {095,125}`
 - `032 -> 002-390 -> {590,692}`
 
-This scout asks whether local metadata contains any replacement witness for either lane. A replacement witness would be another adjacent `002-390-X` row with the same immediate predecessor, preferably source-visible or at least externally bindable, so the campaign is not forced to rely only on H-1993 or `3335.1`.
+This scout asks whether local metadata contains any replacement witness for either lane. A "witness" is a database row that attests a sign sequence; a replacement witness would be another adjacent `002-390-X` row with the same immediate predecessor, preferably source-visible (its source photograph can be inspected) or at least externally bindable, so the campaign is not forced to rely only on H-1993 or `3335.1`.
 
 Accepted value, phonetics, language identity, function, sign meaning, and translation remain 0.
 
@@ -41,7 +43,7 @@ There is no additional adjacent `002-390-X` row in local metadata for either liv
 
 ## Replacement Targets
 
-The remaining upgrade targets are therefore not optional clutter:
+Because no local replacement exists, the remaining upgrade targets are necessary, not optional:
 
 | Target | Lane | Current role | Required upgrade |
 |---|---|---|---|
@@ -53,12 +55,12 @@ M-70 does not need replacement for the `032` lane: it is already the strict visi
 
 ## Post-002 Head Controls Are Not Branch Replacements
 
-Both live predecessors have many local `prev -> 002` rows where the post-`002` head is not `390`:
+Both live predecessors have many local `prev -> 002` rows where the post-`002` head — the sign right after `002` — is not `390`:
 
 - `004`: `817:7; 861:5; 365:2; 390:2; 820:2; 031:1; 278:1; 705:1; 933:1`
 - `032`: `820:11; 861:11; 817:9; 000:4; 390:2; <END>:1; 142:1; 144:1; 168:1; 252:1; 300:1; 368:1; 415:1; 454:1; 690:1; 717:1; 880:1; 892:1; 900:1`
 
-Those rows help the anti-template argument at post-`002` head level. They do not replace the missing matched branch split inside adjacent `002-390-X`.
+Those rows help the anti-template argument at post-`002` head level — they show `002` is followed by many different signs, not one fixed formula. They do not replace the missing matched branch split inside adjacent `002-390-X`.
 
 ## Web Refresh
 
@@ -80,6 +82,6 @@ The next matched-lane work is:
 
 1. External acquisition for H-1993, or a new external/public row that gives strict `004 -> 002-390 -> non-125`.
 2. External/source binding for `3335.1`, or a new external/public row that gives strict `032 -> 002-390 -> non-692/non-125`.
-3. Separate repeated-`705` acquisition remains useful for branch-tail ecology, but it is not currently a matched-lane replacement because neither `4237.1` nor M-1825 shares predecessor `004` or `032`.
+3. Separate repeated-`705` acquisition remains useful for branch-tail ecology (the study of which signs appear around the branch tail), but it is not currently a matched-lane replacement because neither `4237.1` nor M-1825 shares predecessor `004` or `032`.
 
 Run-control reminder: this is campaign progress inside the original moonshot decipherment goal, not a completion condition.

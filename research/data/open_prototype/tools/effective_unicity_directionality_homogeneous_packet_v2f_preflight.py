@@ -1,11 +1,23 @@
 #!/usr/bin/env python3
-"""
-Preflight a homogeneous signband-strip packet for the no-overlay directionality test.
+"""Preflight check: can the v2e crop pool support a homogeneous blind packet?
 
-This is a gate, not a packet. v2d failed because it mixed signband strips with
-object/icon panels and because the advertised fixed denominator was 9, not 12.
-v2e widened the crop universe. v2f asks the narrower question: can v2e support a
-pre-registered, homogeneous blind packet without moving the goalposts?
+This is a gate, not a packet — it decides whether a packet could be built, and
+promotes nothing. v2d failed because it mixed signband strips with object/icon
+panels and because its advertised fixed denominator was 9 controls, not the
+promised 12. v2e widened the crop universe; v2f asks the narrower question:
+can v2e supply matched signband strips without moving the goalposts?
+
+The script reads the v2e candidate CSV and runs two lanes. The strict lane
+keeps only v2e crops that already look like compact signband strips (aspect
+ratio 2.0-5.5, height 120-520 px, width 450-1700 px, zero OCR-word and label
+overlap). The derived lane cuts a fresh top strip out of each wide crop by
+finding the darkest horizontal band in the upper 62% of the image. For each
+lane it picks the best candidate per CISI, checks the four primary targets are
+present, checks the 12 fixed real negatives are present, and flags source-page
+collisions and duplicate image hashes. It writes two candidate CSVs, three
+contact sheets, and a summary JSON whose status is hardwired to "failed
+preflight": the strict lane lacks the targets, and the derived lane is
+acquisition-only until human visual QC and pre-registered forger nulls exist.
 """
 
 from __future__ import annotations

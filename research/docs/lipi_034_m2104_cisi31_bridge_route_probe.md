@@ -4,19 +4,21 @@ Date: 2026-05-25
 
 ## Question
 
-Does the current public/source-acquisition layer produce an exact bridge from local `M-2104` to Marshall no. `532` / `VS 875`, and then to the CISI 3.1 object-data layer?
+This note tracks an identity problem, not a reading. The same physical object may sit behind three identifiers: our local row `M-2104`, Marshall's catalogue number `532` / excavation number `VS 875`, and an entry in CISI 3.1 (the third-volume supplement of the Corpus of Indus Seals and Inscriptions). A bridge is a chain of records that ties those identifiers to one another with source-grade evidence.
+
+The question: does the current public/source-acquisition layer produce an exact bridge from local `M-2104` to Marshall no. `532` / `VS 875`, and then to the CISI 3.1 object-data layer?
 
 ## Result
 
 No accepted bridge yet. But the route got materially better.
 
-The row is still quarantined for decipherment use:
+The row is still quarantined for decipherment use — held out of all decipherment work until the bridge closes:
 
 ```text
 151-097-700-034+
 ```
 
-is not yet an accepted source-grounded four-sign segmentation, and `034` is not yet an accepted three-stroke count component.
+is not yet an accepted source-grounded four-sign segmentation, and `034` is not yet an accepted three-stroke count component. (The numbers are local numeric sign labels — transcription codes, not readings. Segmentation means how the inscription divides into separate signs.)
 
 What changed is the acquisition state. Tiedekirja replied that CISI 3.1 is available as a hardbound volume for:
 

@@ -1,3 +1,17 @@
+"""Ask whether 603 is uniquely mobile between two contexts, or one of many.
+
+The two contexts: the X slot in frames like 740-X-240 (a sign sandwiched
+between a frame prefix and 240), and the first position of a tail after
+002-861. A "bridge" sign is one that appears in both. This script scans the
+strict corpus for every X-before-240 occurrence (with prefixes 740, 690, or
+000) and every post-002-861 tail initial, then intersects the two sets. The
+recorded decision: only 603 and 000 bridge, and 000 is broad background
+material (810 occurrences), so 603 survives as the only non-background
+bridge candidate — while 636 and 642 stay as X-before-240 controls. Writes
+the X-240 rows, post-861 rows, and per-sign summary CSVs, a JSON payload
+with accepted/rejected claims, and a Markdown report in docs/.
+"""
+
 from __future__ import annotations
 
 import csv

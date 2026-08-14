@@ -2,6 +2,8 @@
 
 Date: 2026-05-25
 
+This note builds a packet of minimal-contrast candidates: pairs of tablets whose three inscribed sides match exactly except for one sign in one slot. Such pairs matter because a one-sign difference between otherwise identical objects is the closest thing this corpus offers to a controlled experiment on sign function.
+
 ## Question
 
 Inside the H-2218 through H-2239 three-side tablet series, do the two single-object variants form real minimal-contrast candidates rather than loose curiosities?
@@ -57,7 +59,7 @@ H-2238 / H-2230:
 +700-034+ | +861-003+ | +156-003+
 ```
 
-If source images validate it, `033/034` becomes a batch-internal FRAME700 subtype contrast in the same side-role environment. That would strengthen the broader `034` line because it is no longer only a cross-object metadata pattern; it has a same-series, same-template, single-slot case.
+If source images validate it, `033/034` becomes a batch-internal subtype contrast within FRAME700 — the project's name for the `700-03x` sign frame — in the same side-role environment. That would strengthen the broader `034` line because it is no longer only a cross-object metadata pattern; it has a same-series, same-template, single-slot case.
 
 The team review keeps the two variants separate: `H-2237` tests `154/156` in the `15x-003` slot, while `H-2238` tests `033/034` in the `700-03x` slot. They are not one paired contrast unless source evidence gives a reason to link the two slots.
 

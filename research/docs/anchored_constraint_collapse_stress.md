@@ -2,7 +2,7 @@
 
 Date: 2026-05-30
 
-This is the Priority C synthesis gate. Because no external phonetic or Brahmi-derived phonetic anchor survived, no anchored partial reading is admissible. The only honest test left is a stress curve: if the rejected anchors were forced anyway, how much would they reduce the unanchored label-symmetry floor?
+This is the Priority C synthesis gate. An anchor here means an external fact that would fix the value of a specific sign. No external phonetic anchor and no Brahmi-derived phonetic anchor survived earlier gates, so no anchored partial reading is admissible. That leaves one honest question we can still ask: suppose we forced the rejected anchors anyway — how much would they reduce the unanchored label-symmetry floor? This note records that stress curve.
 
 ## Inputs
 
@@ -23,7 +23,7 @@ Generated files:
 
 ## Result
 
-The strict exact-sequence-collapsed Lipi working corpus has 571 observed signs. With no accepted external value anchor, the lower-bound label-symmetry degeneracy is:
+The strict exact-sequence-collapsed Lipi working corpus has 571 observed signs. With no accepted external value anchor, every way of assigning labels to those signs is equally allowed, so the lower-bound label-symmetry degeneracy is:
 
 ```text
 log2(571!) = 4410.970864 bits
@@ -67,4 +67,4 @@ Independent accepted anchors would reduce the label-symmetry floor slowly unless
 
 ## Decision
 
-No anchored constraint collapse is accepted. A partial reading is blocked because the only available anchors are retracted, mutually fragile, or contradictory. The useful result is a guardrail: even forcing the best current rejected object-level onomastic assignment together with the best rejected Brahmi near-misses does not solve the effective-unicity problem.
+No anchored constraint collapse is accepted. A partial reading stays blocked because every available anchor is retracted, mutually fragile, or contradictory. What this note buys us is a guardrail: even if we forced the best current rejected object-level onomastic assignment together with the best rejected Brahmi near-misses, the effective-unicity problem would still not be solved.

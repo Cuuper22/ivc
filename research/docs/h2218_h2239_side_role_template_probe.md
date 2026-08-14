@@ -4,7 +4,7 @@ Date: 2026-05-24
 
 ## Purpose
 
-This probe follows the [H-2218 through H-2239 series validation sheet](h2218_h2239_series_validation_sheet.md), [Fig. 4 mapping](h2218_h2239_fig4_mapping.md), and [side-order confound probe](h2218_h2239_side_order_confound_probe.md).
+This note is a probe for a template: a fixed pattern of side roles shared by all 22 tablets. A "role" here is a bookkeeping label for the kind of text a side carries (for example, the `+861-003+` side), and the "template" is the order those roles take across a tablet's three sides. The probe follows the [H-2218 through H-2239 series validation sheet](h2218_h2239_series_validation_sheet.md), [Fig. 4 mapping](h2218_h2239_fig4_mapping.md), and [side-order confound probe](h2218_h2239_side_order_confound_probe.md).
 
 It asks a narrower question than A versus side-swap:
 
@@ -87,7 +87,7 @@ Both single-object variants sit inside the `template_700_861_15x` side-role orde
 
 ## Rowwise Role-Permutation Checks
 
-If each object is treated as one `role_861_003`, one `role_700_03x`, and one `role_15x_003` side with random local side positions, then:
+These checks use a rowwise null — a chance model that shuffles each object's three roles at random across its side positions. If each object is treated as one `role_861_003`, one `role_700_03x`, and one `role_15x_003` side with random local side positions, then:
 
 | Check | Observed | Eligible N | Rowwise Null | Exact P >= Observed |
 | --- | ---: | ---: | --- | ---: |

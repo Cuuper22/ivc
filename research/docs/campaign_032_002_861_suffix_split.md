@@ -4,9 +4,9 @@ Date: 2026-05-28
 
 ## Research Question
 
-Does `861` behave like a plain ending, or like a closure-capable sign that can govern a small set of post-closure tails?
+This note asks one grammar question about the sign `861` (signs are numeric IDs; `+` marks a row boundary in our notation). Does `861` behave like a plain ending, or like a closure-capable sign — one that can end a row but can also govern a small set of tails that follow the closure?
 
-This is a grammar question:
+The four shapes under test:
 
 ```text
 ...-002-861+
@@ -32,7 +32,7 @@ data/open_prototype/reports/campaign_032_002_861_suffix_split_summary.json
 tmp/032_002_861_suffix_split/032_002_861_suffix_split_source_contact_sheet.png
 ```
 
-The strict tables treat exact repeated texts as one grammatical evidence unit. The raw tables preserve repeated formula families instead of erasing them.
+Two counting rules matter here. The strict tables treat exact repeated texts as one grammatical evidence unit — duplicates collapse to one. The raw tables preserve repeated formula families instead of erasing them.
 
 ## Corpus Result
 
@@ -50,7 +50,7 @@ Raw strict `002-861` before exact-text dedup:
 | all `002` | 136 | 106 | 30 |
 | adjacent `032-002` | 10 | 8 | 2 |
 
-Strict repeated nonterminal families:
+Strict repeated nonterminal families — tails that recur after `861` even with duplicates collapsed:
 
 | tail after `861` | rows | examples |
 |---|---:|---|
@@ -66,7 +66,7 @@ Raw repeated nonterminal families:
 | `533-717` | 2 | strict repeated family on Mohenjo-daro rectangular/no-icon rows |
 | `698` | 2 | Mohenjo-daro exact-formula pair, collapsed pressure likely |
 
-The key adjacent contrast is inside the same near frame:
+The key adjacent contrast sits inside the same near frame — the same run of signs just before `861`:
 
 ```text
 ...-220-032-002-861+
@@ -78,7 +78,7 @@ Within strict adjacent `032-002`, prefix-last2 `220 032` has 4 terminal `861` ro
 
 ## Source Routes
 
-The four missing suffix-family witnesses now have public CISI routes:
+A source route is the chain from a transcribed row back to its published photograph. The four missing suffix-family witnesses — the actual rows carrying the pattern — now have public CISI routes (CISI is the published photographic corpus of Indus inscriptions):
 
 | row | tail | route | source status |
 |---|---|---|---|
@@ -98,9 +98,11 @@ The source packet now covers all six focus rows at object level. It does not yet
 
 ## Working Linguistic Models
 
+Three rival explanations, stated so they can be broken.
+
 ### 1. Closure Plus Addendum
 
-Leading model to test against the rival analyses below.
+Leading model to test against the rival analyses below. The idea: `861` closes the text, and the tails are optional add-ons after the closure.
 
 ```text
 002-861          = compact closure
@@ -113,7 +115,7 @@ Why it fits:
 
 - `861` is terminal in 95/119 strict all-`002` rows.
 - The leaks are not formless: `603` repeats 3 times and `533-717` repeats twice under strict dedup.
-- Adjacent `032-002` gives both terminal and continuing `861` in the same `220-032` lane.
+- Adjacent `032-002` gives both terminal and continuing `861` in the same `220-032` lane — the same analysis track.
 
 Prediction:
 
@@ -123,7 +125,7 @@ Prediction:
 
 ### 2. Role Marker With Overt Subclass
 
-`861` marks a role/class. Bare `861` is the unexpanded class; `603`, `533-717`, and `255-416` are subclass labels.
+The idea: `861` marks a role/class. Bare `861` is the unexpanded class; `603`, `533-717`, and `255-416` are subclass labels.
 
 This rises if:
 
@@ -133,7 +135,7 @@ This rises if:
 
 ### 3. Boundary Marker Plus Second Phrase
 
-`861` closes a phrase; the following material is a second phrase, not a suffix.
+The idea: `861` closes a phrase, and the following material is a second phrase, not a suffix.
 
 ```text
 002-861 | 603

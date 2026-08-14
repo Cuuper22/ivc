@@ -2,7 +2,7 @@
 
 Date: 2026-05-29
 
-This note records the first direct attempt at the descendant-script back door: compare actual local Indus source/canonical shape probes against early Brahmi glyphs whose values are known, then try to kill every visual match with a random shape-evolution null.
+This note records the first direct attempt at the descendant-script back door. The idea: if Brahmi descended from the Indus script, an Indus sign shape might survive into an early Brahmi glyph whose phonetic value we know. So we compare actual local Indus source/canonical shape probes against early Brahmi glyphs, and then try to kill every visual match with a random shape-evolution null.
 
 The expanded source-token gate is recorded separately in `docs/brahmi_source_token_descent_gate_v2.md`. It scales this attempt from 457 early Brahmi glyphs and four actual source probes to 1,342 early Brahmi glyphs and 611 source-token features; it also yields zero candidate-only rows and zero accepted anchors.
 
@@ -28,7 +28,7 @@ The Indus side used 14 local probes:
 - Actual local `110` source crop: `H-2148`.
 - Parpola 1994 sign 41 canonical crop.
 
-The actual source probes are not clean vector glyphs. They are seal/source-photo crops, so the mask extraction uses background-adaptive thresholding rather than treating gray background as ink.
+Keep in mind the actual source probes are not clean vector glyphs. They are seal/source-photo crops, so the mask extraction uses background-adaptive thresholding rather than treating gray background as ink.
 
 ## Forger / Null
 
@@ -48,7 +48,7 @@ A proposed descent line must clear both gates:
 | `H-940` local `220` | `ka` | 0.476909 | 0.656000 | failed |
 | `H-2148` local `110` | `a` | 0.470080 | 0.666000 | failed |
 
-The earlier tempting behavior vanished once source-photo masking was repaired. Under the corrected mask, local `220` does not converge on one Brahmi value, and random shape evolutions equal or beat the observed nearest distances too often.
+The earlier tempting behavior vanished once the source-photo masking was repaired. Under the corrected mask, local `220` does not converge on one Brahmi value, and random shape evolutions equal or beat the observed nearest distances too often to trust any single match.
 
 ## Decision
 

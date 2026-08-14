@@ -1,3 +1,13 @@
+// Evidence-recording script for one object: seal H-773, whose frame reads 002-390-530-741.
+// The bet under stress is that sign 530 is an open, continuing branch — the inscription goes
+// on after it — rather than a terminal selector. Unlike the other campaign scripts, this one
+// does not mine the corpus; it pins down the physical evidence for a visual check already
+// made. It loads the H-773/530 frame row from the earlier branch-selector forger report
+// (risky_002390_canonical_branch_selector_forger_20260531_frames.csv), fingerprints the two
+// source photographs (SHA-256 hash plus JPEG pixel dimensions read from the file headers) so
+// the exact images the judgment rests on are on record, and writes the fixed decision: H-773
+// upgrades to "panel-continuation-visible" pressure but not strict token evidence. Outputs a
+// file-check CSV, a decision CSV, and a JSON summary in data/open_prototype/reports.
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';

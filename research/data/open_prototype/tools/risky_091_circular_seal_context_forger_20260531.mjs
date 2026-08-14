@@ -1,3 +1,14 @@
+// Tests whether sign `091` is tied to a specific object class: circular seals
+// (shape "circular" or type SEAL:C / SEAL:CY). The bet claims nothing about sound —
+// only that 091 concentrates on round-seal objects, which would mark it as a
+// register or context sign. The script reads metadata_filtered.csv, collapses
+// duplicate sign sequences, and measures the circular-seal share of rows containing
+// 091 against all other rows with a right-tail Fisher test. Two adversaries guard
+// the result: a 100,000-iteration forger that redraws the same number of rows at
+// random from the corpus and asks how often they are this circular, and a rank
+// comparison against every other sign — especially signs of comparable frequency
+// (between half and twice 091's row count). Writes a bet summary (JSON + CSV),
+// support rows, and the full per-sign circular table to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

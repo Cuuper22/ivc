@@ -1,3 +1,17 @@
+// Tests the bet that the slot after 002-390 sorts branch signs into two
+// classes: open branches (125, 530, 590) that continue the text, and closed
+// branches (072, 095, 140, 346, 692, 705, 707) that end it. We read the
+// filtered corpus metadata, find every 002-390-X frame, and check whether
+// each frame's terminal/continuing behavior matches its predicted class.
+// Nulls come from several directions: a 100000-iteration Monte Carlo that
+// resamples each branch sign's terminality from its behavior outside the
+// frame, an exact frame-internal permutation (both with the prespecified
+// class and with a post-hoc "any deterministic split" discovery version),
+// plus repeated-branch, strict-source, leave-one-site, and matched-
+// predecessor slices. Each frame also carries a hand-curated source status
+// (strict source-visible, route pressure, or metadata-only). Writes a JSON
+// report and four CSVs (bet summary, frames, per-branch table, matched
+// predecessors).
 import fs from 'node:fs';
 import path from 'node:path';
 

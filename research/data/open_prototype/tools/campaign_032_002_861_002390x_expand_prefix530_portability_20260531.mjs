@@ -1,6 +1,16 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script asks two questions about the Indus sign sequence 032-002 and the sign 530.
+// It reads data/open_prototype/lipi/metadata_filtered.csv, where each inscription is a string
+// of 3-digit sign codes, and keeps one copy of every distinct sign sequence. First it collects
+// every row containing the pair 032-002 and every row with the exact four-sign prefix
+// 740-205-032-002, to see which "head" sign follows the pair — is 390 the only head, or one
+// lane among several? Second it profiles every 002-H-530-Y context to test whether 530 works
+// as a portable linker that always takes exactly one complement, checking for "shadow" rows
+// where the same head-complement pair appears without 530. It scores four risky bets on this
+// evidence and writes three row-level CSVs, a bets CSV, and a summary JSON into reports/.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

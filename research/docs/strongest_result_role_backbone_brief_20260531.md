@@ -4,9 +4,9 @@ Date: 2026-05-31, America/Los_Angeles
 
 ## Plain Claim
 
-The current strongest result is not a translation and not a phonetic reading. It is a structural claim: a subset of Indus signs behaves like a carrier-conditioned role grammar across object classes.
+The current strongest result is not a translation and not a phonetic reading. It is a structural claim: a subset of Indus signs behaves like a role grammar — signs holding fixed positions relative to one another — and that grammar is conditioned on the carrier, meaning the class of object the inscription sits on.
 
-The minimal model is split after length/carrier stress:
+The minimal model, after stress-testing by inscription length and carrier:
 
 - Hard core: `740 -> 002`, `002 -> {861,820}`, and `806 -> 002`
 - Scoped edge: tablet/account `400 -> 740`
@@ -15,9 +15,9 @@ The minimal model is split after length/carrier stress:
 
 ## Why This Is Hard To Dismiss
 
-The role backbone is not one cherry-picked pair. It is a convergent set of independently tested constraints:
+The role backbone is not one cherry-picked pair. It is a convergent set of independently tested constraints. (FPR below means false-positive rate: how often a null model — a shuffle that destroys the structure but keeps everything else — reproduces the observed result.)
 
-- Initial sign carries carrier information: `I(first sign; carrier class)=0.6023` bits; row-internal shuffle FPR `0`, carrier-label shuffle FPR `0`.
+- The initial sign carries carrier information: `I(first sign; carrier class)=0.6023` bits; row-internal shuffle FPR `0`, carrier-label shuffle FPR `0`.
 - `400` is the tablet/account frame: `187/765` TAB:B/I rows vs `100/2738` background; Bonferroni `3.63e-59`; maxstat FPR `0`.
 - `400` precedes `740` in co-occurrence rows: `127/140`; row-shuffle maxstat FPR `0`. This edge is carrier-scoped: tablet/account rows are `104/105`, while square-seal rows are split and should not be treated as a universal `400 -> 740` rule.
 - `740` is the strongest precedence hub: rank `1/13`, with 26 qualified outgoing edges; row-internal maxstat FPR `0`.
@@ -33,9 +33,9 @@ Quality and site stress did not collapse the backbone:
 - Without Harappa: 8/9 pass, `795/823` satisfied; the weak edge is `400_before_740`.
 - Without both Harappa and Mohenjo-daro: 9/9 pass, `184/194` satisfied.
 
-A destructive cross-site prediction check also survived. Constraints learned from Harappa, Mohenjo-daro, non-major sites, and quality slices were tested on held-out slices. All 8/8 train/test experiments survived the strict gate, no learned constraint conflicted with the current core, and row-shuffle null FPR was `0` in every experiment. Reversed constraints performed at about `0.03-0.06` share while observed shares were about `0.94-0.97`.
+A destructive cross-site prediction check also survived. Constraints were learned from Harappa, Mohenjo-daro, non-major sites, and quality slices, then tested on held-out slices they had never seen. All 8/8 train/test experiments survived the strict gate, no learned constraint conflicted with the current core, and row-shuffle null FPR was `0` in every experiment. Reversed constraints performed at about `0.03-0.06` share while observed shares were about `0.94-0.97`.
 
-A family-collapse check also survived the "repeated object family" objection. When rows were collapsed by `site/type/symbol/cult/material/shape`, all 9/9 backbone constraints survived by family-majority vote, with null FPR `0` for every core constraint. Broader collapses weakened only `400_before_740`, which is exactly why that edge is now scoped to tablet/account contexts rather than claimed as universal.
+A family-collapse check answered the "repeated object family" objection — the worry that one workshop's copies inflate the counts. When rows were collapsed by `site/type/symbol/cult/material/shape`, all 9/9 backbone constraints survived by family-majority vote, with null FPR `0` for every core constraint. Broader collapses weakened only `400_before_740`, which is exactly why that edge is now scoped to tablet/account contexts rather than claimed as universal.
 
 Length and carrier stratification forced a sharper model. The hard-core edges have zero bad length/carrier slices. The weak slices are concentrated in peripheral/scoped edges: `400_before_740` fails as a universal edge in long rows and square/other carriers, `740_before_817` weakens in long square rows, `002_before_817` weakens in medium tablet/account rows, and `740_before_820` weakens in a small tablet/account slice. That does not kill the backbone; it prevents overclaiming the 817/400 periphery.
 

@@ -1,3 +1,14 @@
+"""Looks for a source-layout feature that uniquely separates the 533-717 targets.
+
+This script reads the source-token attachment boxes and the 533-717 source-family
+independence rows, plus an inline table of qualitative layout controls. It asks
+whether any measurable layout property of the visible source bands — box geometry,
+spacing, band composition — discriminates the 533-717 targets from their same-register
+controls. It writes a rows CSV and a summary JSON. The recorded decision: no unique
+source-layout discriminator yet, so layout alone cannot currently carry the 533-717
+contrast.
+"""
+
 from __future__ import annotations
 
 import csv

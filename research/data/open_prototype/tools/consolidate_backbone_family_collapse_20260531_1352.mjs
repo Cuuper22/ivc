@@ -1,3 +1,15 @@
+// Family-collapse test for the role backbone's nine core ordering constraints (e.g.
+// 740 before 002, 002 before terminals 817/820/861). The worry: row-level support could be
+// inflated by many near-identical objects — one workshop stamping the same formula. So
+// instead of letting every row vote, we let each metadata family cast one majority vote.
+// We read the filtered Indus inscription list (lipi/metadata_filtered.csv), keep one copy of
+// each distinct sign sequence, and group rows four ways, from narrow to broad: carrier
+// (site/type/symbol/cult/material/shape), site+type, icon+type, and region/type/symbol. For
+// every constraint and grouping we compare the family-majority share to a within-row
+// token-shuffle null (5,000 seeded iterations). A constraint survives with at least 5
+// families, 80%+ family share, and null FPR at or below 0.01; the carrier grouping is the
+// decisive one. Writes constraint-summary, mode-summary, family, and null-iteration CSVs
+// plus a JSON report to data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

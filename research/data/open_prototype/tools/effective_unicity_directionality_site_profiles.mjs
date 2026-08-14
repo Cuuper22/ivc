@@ -1,3 +1,19 @@
+// Per-site directionality profiles for the harsh scope.
+//
+// The site-balance control asks whether the corpus-wide signal survives when
+// sites are weighted equally; this script asks the complementary question —
+// does each individual site carry the stored-vs-reversed order asymmetry on
+// its own, using only its own rows to train the model? It rebuilds the harsh
+// scope from lipi_scope_rows.csv (exact collapse, top-10 edge removal,
+// one-edit family collapse), groups rows by site, and for every site with at
+// least 10 rows (--min-site-rows=N overrides) runs the leave-one-row-out
+// smoothed bigram test within that site alone. Each site's observed
+// stored-win share is compared against four shuffle nulls (500 iterations
+// each by default; --iterations=N overrides). Outputs in
+// data/open_prototype/reports/: a JSON summary, a per-site CSV, and null
+// summary/iteration CSVs. Sites too small to include are unresolved, not
+// negative evidence.
+
 import fs from 'fs';
 import path from 'path';
 

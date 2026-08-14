@@ -1,3 +1,15 @@
+// The acquisition-targets script flagged six P0 objects: Mohenjo-daro items
+// whose inscriptions contain sign 034 but which the current Mayig repo lacks.
+// This script records what a manual public-web search found for each of them.
+// The lead rows are hand-written from that search (the queries used are
+// listed in the summary): Parpola 2019 covers M-2104 at the object level;
+// CISI plate scans on the Internet Archive plus Kenoyer/Meadow and Bhaskar
+// 2022 give image leads for M-315, M-1206, and M-685; M-1584 and M-1963 came
+// up empty and stay direct source-request targets. The script joins these
+// leads to the P0 rows in lipi_034_mayig_acquisition_priority_objects.csv
+// (pulling in each object's text and priority score), grades every lead, and
+// writes a leads CSV and JSON summary with per-status counts. Leads only —
+// no lead here is accepted as a sign mapping.
 import fs from 'node:fs';
 import path from 'node:path';
 

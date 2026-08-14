@@ -4,6 +4,8 @@ Date: 2026-05-28
 
 ## Question
 
+This note records an image-level check on six inscriptions. We are asking a simple physical question: on the actual published photographs, does the candidate tail sit on the same line as the rest of the row? Numbers like `861` are sign IDs; a "tail" is the material after `861` at the end of a row.
+
 The corpus scan narrowed the live post-`861` candidates to:
 
 ```text
@@ -20,7 +22,7 @@ M-91:          861-255-416
 M-240 / M-714 / M-1273: 861-603
 ```
 
-The test is source-level, not translational: do the public source panels preserve a same-line terminal-side continuation candidate, or is the candidate interrupted by side split, visible fusion, or catalog-order artifact?
+The test is source-level, not translational: do the public source panels preserve a same-line terminal-side continuation candidate, or is the candidate interrupted by side split, visible fusion, or catalog-order artifact — a case where the catalog's transcription order does not match the object?
 
 ## Stored Outputs
 
@@ -32,7 +34,7 @@ data/open_prototype/reports/campaign_032_002_861_source_token_attachment_summary
 tmp/032_002_861_source_token_attachment/032_002_861_source_token_attachment_contact_sheet.png
 ```
 
-The overlay windows are broad visual windows:
+The overlay windows drawn on the images are broad visual windows:
 
 ```text
 purple = visible line
@@ -40,7 +42,7 @@ green  = pre-tail / 861-side candidate window
 orange = terminal-side tail candidate window
 ```
 
-They are not accepted exact token boxes.
+They are not accepted exact token boxes — they do not claim to mark exact sign boundaries.
 
 ## Verdict Table
 
@@ -78,7 +80,7 @@ translation
 
 ## Source Admissibility Notes
 
-The source layer is clean for page/object routing, but the icon/register layer is not equally clean:
+The source layer is clean for page/object routing — we can trace each row to its published page. But the icon/register layer (the animal icon and object-class labels attached to each seal) is not equally clean:
 
 ```text
 M-376: CISI no-iconography III, local None. No immediate icon conflict.
@@ -93,7 +95,7 @@ So `533-717` can currently be discussed as a repeated no-icon `SEAL:R` candidate
 
 ## Interpretation Inputs, Not Decisions
 
-These observations are inputs for the next linguistic campaign only.
+These observations feed the next linguistic campaign. They decide nothing by themselves.
 
 1. **Addendum input**
 
@@ -105,7 +107,7 @@ These observations are inputs for the next linguistic campaign only.
 
 3. **Boundary / second-unit input**
 
-   The packet does not show a phrase-scale visual break, but exact source-token boundaries are still catalog-mediated. A continuous second unit remains possible.
+   The packet does not show a phrase-scale visual break, but exact source-token boundaries are still catalog-mediated — they rest on the catalog transcription, not the image. A continuous second unit remains possible.
 
 4. **Compound / segmentation-artifact input**
 
@@ -113,7 +115,7 @@ These observations are inputs for the next linguistic campaign only.
 
 ## Next Test
 
-Do a matched terminal-control campaign:
+Do a matched terminal-control campaign — compare the tailed rows against rows that end bare at the same point:
 
 ```text
 terminal 002-861

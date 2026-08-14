@@ -1,3 +1,16 @@
+// The v3 "impostor forger": can random wrong Indus tokens fake a Brahmi match?
+// For each Indus sign family we observed a modal Brahmi label — the Brahmi sign
+// that most of the family's tokens land nearest to. The worry is that any pile of
+// token images might do that by chance. So for each family this script builds a
+// pool of impostor tokens (same orientation policy, different sign, no shared CISI
+// object, source path, or image hash, and where possible matched on aspect ratio
+// within 0.25 and ink density within 0.08), draws 1000 seeded random samples of
+// the family's size, and counts how often an impostor sample matches the observed
+// modal count and mean distance or better. That share is the real-token impostor
+// null. It reads the v2 family summary, segments, rank-1 neighbors, and the v3
+// preflight CSV, and writes a per-family CSV, up to 25 iteration rows per family,
+// and a JSON summary. Result baked into the outputs: no family survives; zero
+// phonetic anchors are accepted.
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';

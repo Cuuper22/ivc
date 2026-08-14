@@ -1,3 +1,18 @@
+"""Build the v1 blind review packet for the directionality experiment.
+
+A blind packet is a shuffled set of anonymized inscription images that human
+reviewers examine without knowing which seal each image is. Reviewers count the
+visible sign tokens and flag any leaked catalogue label; if their counts match
+the expected corpus counts, the crop can be promoted to a source-normalized
+candidate for later sign-order work — never to a reading or translation. This
+script cuts hand-picked crops from raw public CISI plate pages (avoiding the
+red diagnostic route overlay), mixes seven primary targets with scoring and
+quarantine negatives, shuffles them with a fixed seed, and writes the blind
+images plus a crop manifest, blind manifest, answer key, review template,
+contact sheet, and summary JSON under data/open_prototype/reports and
+tmp/effective_unicity_directionality_blind_packet.
+"""
+
 from __future__ import annotations
 
 import csv
@@ -32,9 +47,10 @@ CONTACT_SHEET = OUT_DIR / "directionality_no_overlay_blind_contact_sheet.png"
 RNG_SEED = 407004001
 
 
-# Coordinates are page-image xyxy boxes, not route-context boxes. Each was cut from
-# the raw public CISI page image, avoiding the diagnostic red route overlay and
-# visible object labels where the public scan permits it.
+# Each crop box is in raw page-image pixels (x1, y1, x2, y2), not route-context
+# coordinates. The boxes were chosen by hand on the public CISI page scans to
+# dodge the red diagnostic route overlay and, where the scan allows, the printed
+# object labels.
 CROP_SPECS = [
     {
         "cisi": "H-654",

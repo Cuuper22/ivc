@@ -1,6 +1,21 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Three inscriptions break the rule that X=000 ends a text: 4148.1 (tail
+// 267-000-033), M-451 (a 000-000-000 zero chain before 906-388), and Ns-66
+// (000 followed by a final 002). This script asks whether each exception is a
+// one-off or a member of a family that would explain it away. For each target
+// it defines a handful of probe sequences — the exact tail plus looser
+// sub-patterns like "000-033 anywhere" or "any 267-000" — then scans every
+// text in lipi/metadata_filtered.csv for those n-grams and records the
+// surrounding two signs on each side and whether the match sits at the end of
+// its text. A probe with exactly one occurrence stays a singleton the corpus
+// cannot adjudicate; repeats soften the exception into a family pattern. The
+// verdict encoded in the decisions: none of the three collapse locally, and
+// 4148.1 remains the cleanest kill switch against new null rules. Writes
+// target, sequence-summary, context, and decision CSVs plus a summary JSON to
+// data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

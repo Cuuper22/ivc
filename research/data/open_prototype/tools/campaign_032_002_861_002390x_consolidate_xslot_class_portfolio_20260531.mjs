@@ -1,6 +1,20 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script replaces one big claim with many small ones. The big claim was
+// that the X slot (the sign two after 002) carries "function classes" as an
+// umbrella system. Here we grade every X sign on its own. The script scans
+// lipi/metadata_filtered.csv for all 002-HEAD-X occurrences, keeps X signs
+// with at least 3 rows, and for each one measures: its open rate (how often
+// text continues after it), a leave-one-out test of predicting open-versus-
+// closed from the sign's other rows, and how many distinct heads, scope cells
+// (site|type|shape|material), and tails it spans. Signs that predict
+// perfectly across 2+ heads and 2+ scopes become portable open or terminal
+// classes; signs that only work under one head or one scope are flagged as
+// templates or local classes; signs at or below 34% accuracy are bad
+// predictors and killed as portable classes. Writes class-row and decision
+// CSVs plus a summary JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');

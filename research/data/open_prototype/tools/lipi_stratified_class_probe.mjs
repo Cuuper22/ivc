@@ -1,3 +1,25 @@
+// Stratified version of the class-prediction experiment. Predicting an
+// object's catalog 'class' from its sign sequence across the whole corpus can
+// succeed for a boring reason: class tracks object type and site. This probe
+// asks the sharper question — within a single type, site, or type-at-site
+// stratum, do the sequences still predict class?
+//
+// The script reads lipi_scope_rows.csv, keeps numeric-clean rows, collapses
+// duplicate sequences into families, and auto-discovers usable strata (90+
+// families, 2+ class labels with 12+ families each). Within each stratum it
+// runs four leave-one-out models: majority, length, edge frame (first/last
+// sign), and token naive Bayes.
+//
+// For the null, it generates synthetic corpora from four structured
+// nonlinguistic generators (position slots, a fake administrative register, a
+// fake emblem formula, and a mixed code), matched to observed lengths and
+// token pools, 5 seeded iterations each (IVC_STRATIFIED_CLASS_ITERATIONS
+// overrides), and scores the same models on them.
+//
+// Outputs: lipi_stratified_class_iterations.csv, _summary.csv, and
+// _summary.json. Class labels come from the T3 planning layer; nothing here
+// creates meanings or sign values.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

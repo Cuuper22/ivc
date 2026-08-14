@@ -1,3 +1,15 @@
+// The v3 "independence preflight" for the Indus-to-Brahmi descent test.
+// Before any sign family can even be considered as a phonetic anchor (an Indus
+// sign whose shape plausibly carries its sound value into Brahmi), it must show
+// its evidence is not one artifact counted many times. This script reads the v2
+// family descent summary, the v2 duplicate-collapse audit, and the v2 source-token
+// segments, then applies seven blocking rules per family: at least 3 unique image
+// hashes, 3 unique CISI objects, and 3 unique source paths; unanimity that survives
+// duplicate collapse; a modal label that does not change after collapse; and the
+// original shape-null and label-null shares both at or below 0.01. Families that
+// clear every rule are marked "review_packet_eligible_not_accepted" — eligible for
+// a future blind visual review, never auto-promoted. It writes one CSV row per
+// family plus a JSON summary; in this run zero anchors are accepted.
 import fs from 'node:fs';
 import path from 'node:path';
 

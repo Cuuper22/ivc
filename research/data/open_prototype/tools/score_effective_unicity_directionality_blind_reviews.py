@@ -1,3 +1,18 @@
+"""Scores blind reviews of the directionality packet, v1. Reviewers saw seal
+image crops under blind IDs — some primary targets, some scoring negatives,
+some quarantined — and reported a visual token count, whether a single sign
+band is boxable, and whether any identifying label leaked into the image.
+This script joins each review CSV (CLI arguments, or the default reviews
+directory) to the answer key and classifies each row: targets pass only when
+boxable with the exact expected token count and no leak; scoring negatives
+called boxable-with-matching-count are hard false positives. Per reviewer it
+computes a yes-only and a conservative (uncertainty-counting) false-positive
+rate. The packet gate fails on fewer than two reviewers, a negative
+denominator below the planned floor, any hard false positive, or any target
+not cleanly recovered — and even a pass adds zero accepted claims. Writes a
+scored-rows CSV and a JSON summary. Superseded by the v2b scorer, which adds
+synthetic sentinels and a fixed negative denominator.
+"""
 from __future__ import annotations
 
 import csv

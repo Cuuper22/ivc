@@ -1,3 +1,15 @@
+"""Slot-substitution test for sign 603 across structural slots.
+
+This script reads the filtered corpus metadata, keeps clean strict rows (bracketed by
++ with all three-digit tokens and no damage markers), and builds slot tables: which
+signs occupy the slots where 603 appears, and what follows in the post-tail position.
+The question is whether 603 substitutes into the same slots as its comparators — a
+cross-slot bridge — or whether the apparent bridge is just a shared line template
+repeating itself. It writes slot, post-tail, and matrix CSVs plus a summary JSON. The
+recorded decision: the 603 cross-slot bridge survives but is under template attack,
+so it stays a structural candidate with no value accepted.
+"""
+
 from __future__ import annotations
 
 import csv

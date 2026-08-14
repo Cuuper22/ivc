@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// One inscription, M-1668, shows the terminal classifier 705 followed by the
+// linker 125 — a "classifier-to-linker chain" that, if real, would let 705
+// keep a text open. This script asks whether that chain is a rule or a
+// one-off. It scans lipi/metadata_filtered.csv for every 705-125 bigram
+// (recording whether it sits in a 002 X slot, what follows, and whether the
+// text ends) and, separately, every 002-HEAD-705 frame with its terminal
+// status. The adjudication is a simple count: with 2+ chains the chain stays
+// live as a possible operator sequence; with only one, M-1668 is filed as an
+// exception and no parser rule may be built on it. Writes chain rows, X-slot
+// 705 rows, the adjudication, and the bet as CSVs plus a summary JSON to
+// data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

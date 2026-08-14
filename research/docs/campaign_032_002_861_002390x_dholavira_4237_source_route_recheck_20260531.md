@@ -22,12 +22,12 @@ The question is whether this row can be source-bound strongly enough to count as
 
 ## What Survived
 
-The Dholavira route is not cold. It now has two separate pieces of pressure:
+The Dholavira route is not cold. Two separate pieces of pressure now exist:
 
 - A visual page-18 image/crop that looks compatible with a reverse `R/L` reading in the neighborhood of `+151-032-388-002-390-705+`.
 - An OCR metadata cluster in the Bisht mirror that exposes `ZA-12:2`, `8758`, and the exact `27.62 x 21.31 x 7.11-11.17` dimension cluster matching the local row.
 
-Those are worth keeping. They just cannot be fused.
+Both are worth keeping. The problem is that they cannot be fused into one bound object.
 
 ## What Failed
 
@@ -68,6 +68,6 @@ The `705` branch still has two local terminal rows:
 - `M-1825`: source-dark or weak.
 - `4237.1`: Dholavira OCR cluster plus lookalike image pressure, not strict.
 
-So `705` remains the most important repeated non-`125` acquisition target, but it still contributes zero strict source-normalized counts. The positive model cannot use it as source-bound repetition yet; the adversarial model cannot erase it either, because the metadata cluster is no longer cold.
+So `705` remains the most important repeated non-`125` acquisition target, but it still contributes zero strict source-normalized counts. Neither side gets to claim it: the positive model cannot use it as source-bound repetition yet, and the adversarial model cannot erase it either, because the metadata cluster is no longer cold.
 
 Next gate: bind Acc. No. `8758` or `ZA-12:2` to an actual image/caption of the six-sign seal, or route `M-1825` as the other `002-390-705` witness.

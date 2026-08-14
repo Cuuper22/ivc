@@ -4,9 +4,11 @@ Date: 2026-05-24
 
 ## Purpose
 
-No translation system exists without a corpus. The first research job is to assemble a clean, versioned, auditable corpus without importing anyone's decipherment claims as labels.
+No translation system exists without a corpus, so the first research job is to assemble one that is clean, versioned, and auditable. The danger is subtle: many available datasets already carry someone's decipherment claims as columns. If those columns leak into the working data, the project would be "discovering" conclusions it accidentally imported. This protocol says where data may come from, how much each source may be trusted, and how claim-bearing columns are kept out.
 
 ## Trust Tiers
+
+Every source gets a trust tier: a label that says how close the source is to the physical artifact and what its data may be used for. The tier travels with the data, so a downstream experiment always knows what its inputs can and cannot prove.
 
 | Tier | Name | Description | Allowed Use |
 | --- | --- | --- | --- |
@@ -18,6 +20,8 @@ No translation system exists without a corpus. The first research job is to asse
 | T5 | Web claim or social post | Unreviewed online claim. | Hypothesis mining only, never evidence. |
 
 ## Current Source Audit
+
+Each source below is recorded with its status, what it is good for, and the next action needed to use it safely.
 
 ### M77 / IDF80 / Indus Script Web Application
 
@@ -169,7 +173,7 @@ exclusion_reason
 
 ## Corpus Freezing Rule
 
-Every experiment must name a frozen corpus build:
+A frozen corpus build is a named snapshot of the data. Every experiment must name the build it ran on:
 
 ```text
 ivc-corpus-YYYY-MM-DD-<short-hash>

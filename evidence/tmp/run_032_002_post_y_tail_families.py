@@ -1,3 +1,15 @@
+"""Group the tails after each Y sign into families and type the Y signs.
+
+Building on the post-Y campaign rows, this script gives each Y sign a working
+class — 817 is a hard closure, 820 and 861 are leaky closures (they usually
+end the text but sometimes continue), and signs like 390 or 300 are branch
+heads — and then groups the material after Y into tail families. For each Y
+it counts terminal versus continuing rows, distinct and repeated full tails,
+and the most common first tail signs, in both the all-002 and after-032
+strict deduped scopes. Writes a per-Y summary CSV, a per-instance CSV of
+every continuing row, a Y-by-first-tail-sign matrix CSV, and a JSON payload.
+"""
+
 import csv
 import json
 from collections import Counter, defaultdict

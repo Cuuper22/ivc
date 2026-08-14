@@ -1,3 +1,25 @@
+// Pre-flight audit for semantic-anchor prediction: which catalog fields are
+// even worth trying to predict from sign sequences? A field is a useful
+// "anchor" only if it has enough labeled data, more than one common label, no
+// single label that dominates, and no metadata proxy that would let a model
+// cheat (e.g. if every 'symbol' label maps almost one-to-one onto an object
+// type, predicting symbol just re-predicts type).
+//
+// The script reads lipi/metadata_filtered.csv, keeps numeric-clean rows,
+// collapses duplicate sequences into exact families, and for each of 18
+// candidate fields computes: family counts per label (labels need 30+
+// families; targets need 150+ eligible families), majority share, normalized
+// entropy, and the worst-case proxy concentration — for every label, the
+// share captured by its most common value of each other metadata field and of
+// three sign-derived features (first sign, last sign, edge frame). Each field
+// then gets a status: candidate anchor, candidate-needs-proxy-blocks,
+// majority-dominated, control field, or too sparse.
+//
+// Outputs: lipi_semantic_anchor_target_summary.csv/.json,
+// _label_proxy.csv (every label-proxy pair), and _dimension_bins.csv (the
+// mm-bin definitions and their populations). The follow-up probe
+// (lipi_semantic_anchor_prediction_probe.mjs) consumes these decisions.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

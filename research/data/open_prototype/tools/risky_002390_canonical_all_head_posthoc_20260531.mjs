@@ -1,3 +1,15 @@
+// Post-hoc skeptic check on the `002-390-X` claim. An earlier scan suggested that
+// after the pair `002-390`, the next sign X deterministically decides whether the
+// inscription ends. Because that head was picked after looking at the data, this
+// script replays the same determinism test against every head, with duplicate texts
+// removed first (canonical collapse), and asks where 390 really ranks. It reads
+// metadata_filtered.csv, builds all `002-H-X` frames from unique sign sequences, and
+// for each head with at least 6 rows and 3 branches runs a label-permutation test
+// (exact when under 300k combinations, else 100,000 Monte Carlo shuffles). It then
+// counts how many eligible and "competitive" heads (>=10 rows, >=5 branches) score
+// as well as 390 and applies Bonferroni corrections for having scanned them all.
+// Writes a bet summary (JSON + CSV), the full per-head table, and the raw frames
+// to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

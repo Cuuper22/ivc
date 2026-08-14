@@ -1,5 +1,18 @@
 #!/usr/bin/env node
 
+// The negative gate for eight named Vector 4 leads that came out of the
+// broad discovery scan looking tempting — such as 407 with copper tablets,
+// 400 with TAB:B tablets, and the 158-806 plant-icon (Phyt) lead. Where the
+// discovery scan asks "does anything associate?", this script fixes each
+// unit-context pair in advance and asks "does THIS pair survive its own
+// nulls?" It reads the clean lipi scope rows, collapses them both ways
+// (exact text-plus-context, and text only), computes each target's support,
+// lift, and finite-population z, then runs the same four null models as the
+// scan (three context shuffles, one unit shuffle) for 2000 iterations each
+// (IVC_VECTOR4_TARGET_ITERATIONS overrides), keeping the worst-case null
+// share. Every row is hard-coded claim_eligible = "no": surviving here only
+// earns a place in the source-check queue, never a promoted meaning. Writes
+// a per-target CSV, an iterations CSV, and a JSON summary.
 import fs from 'node:fs';
 import path from 'node:path';
 

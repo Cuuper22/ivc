@@ -4,9 +4,7 @@ Date: 2026-05-24
 
 ## Purpose
 
-This audit follows the [H-2218 through H-2239 side-role template probe](h2218_h2239_side_role_template_probe.md).
-
-It asks whether the H-series three-role template is isolated or part of a wider side-mark pattern:
+This note is an audit of how far a pattern reaches. The side-role template probe found that all 22 H-2218 through H-2239 tablets share one three-role side template — a fixed inventory of three kinds of side text. This audit follows the [H-2218 through H-2239 side-role template probe](h2218_h2239_side_role_template_probe.md) and asks whether that template is isolated or part of a wider side-mark pattern:
 
 ```text
 Does the complete H-2218 through H-2239 side-role template recur elsewhere in the 397-row validation queue?
@@ -93,7 +91,7 @@ This does not prove that the H-series template is nonlinguistic, copied, adminis
 The next plate/image request should keep two branches separate:
 
 1. H-2218 through H-2239: validate the isolated three-role side template.
-2. Mixed short-long and TAB:B/TAB:I core queues: validate their own side-mark structures without importing the H-series template.
+2. Mixed short-long and TAB:B/TAB:I core queues (TAB:B and TAB:I are the corpus's tablet artifact-class codes): validate their own side-mark structures without importing the H-series template.
 
 If future source data finds the same three-role template outside H-2218 through H-2239, this audit should be rerun.
 

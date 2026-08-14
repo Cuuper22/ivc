@@ -1,3 +1,15 @@
+// Tests two linked claims about sign `400`: (1) it concentrates on non-copper
+// tablet types TAB:B and TAB:I — an "account register" of carriers — and (2) inside
+// that register it prefers the opening (initial) position. Both are register/slot
+// claims; no sound value is asserted. The script reads metadata_filtered.csv,
+// collapses duplicate sign sequences, and runs two families of tests. The context
+// test Fisher-ranks every sign by TAB:B/I enrichment across seven row pools (all
+// rows, complete only, non-poor, leave-Harappa, leave-Mohenjo-daro, each big site
+// alone), each with Bonferroni correction and a 3,000-iteration max-stat forger
+// that re-picks which rows count as tablet-context. The initial-position test does
+// the same within TAB:B/I rows, shuffling sign labels over occurrence slots so the
+// initial positions stay fixed. Writes a bet summary (JSON + CSV) plus pool,
+// top-sign, and support-row CSVs to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

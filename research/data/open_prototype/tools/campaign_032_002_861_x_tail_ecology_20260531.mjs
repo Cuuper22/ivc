@@ -1,3 +1,15 @@
+// Tail-ecology test for the X slot in 002-390-X frames. If X really heads its own branch,
+// the material that follows it inside a frame should also occur after the same X outside the
+// frame — the tail should belong to X's normal successor ecology, not be a one-off template
+// filler. We load the classified frames from the earlier branch-selector forger report
+// (risky_002390_canonical_branch_selector_forger_20260531_frames.csv) and the filtered Indus
+// inscription list (lipi/metadata_filtered.csv, deduplicated to distinct sign sequences),
+// then collect every non-frame occurrence of each classified branch sign with its next one,
+// two, and four signs. For each continuing frame we check whether its exact tail or first
+// tail sign reappears in that non-frame pool, and we flag branches whose non-frame
+// successors are dominated (>=0.75 share) by a single sign — a formula-lock risk. Writes
+// branch-summary, frame-tail-check, and occurrence CSVs plus a JSON summary to
+// data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

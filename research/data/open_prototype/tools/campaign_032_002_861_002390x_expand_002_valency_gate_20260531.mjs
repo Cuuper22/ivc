@@ -1,6 +1,19 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script sharpens the 002 story into a "valency gate" hypothesis: 002
+// does not simply mean "keep going" — it sets up a frame that changes what
+// the following H-X pair does. It scans lipi/metadata_filtered.csv for eight
+// hand-picked focus pairs (390-125, 610-125, 405-125, 861-125, 906-125,
+// 031-000, 031-032, 220-455) and contrasts each pair's open rate when a 002
+// immediately precedes it versus when it does not. A side table does the same
+// for every head sign that appears before 125. From the contrasts it records
+// four bets with explicit falsifiers: 002 refunctionalizes 390-125 from mixed
+// to open, terminalizes 031-000, may license the rare 610-125-032
+// construction, and is a valency gate rather than a generic opener. Writes
+// focus-pair rows, pair contrasts, the head-before-125 summary, and the bets
+// as CSVs plus a summary JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');

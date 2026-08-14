@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script measures how much "copy pressure" surrounds each of the nine frame700 study
+// objects (H-771, H-789, H-1123, H-893, H-925, H-930, H-983, H-353, H-2211). Copy pressure
+// means the object's inscription is not unique in the corpus: other tablets carry the exact
+// same per-side text, the same texts in a different side order, the same companion-side
+// text, the same type/shape/short-sign combination, or heavy sign overlap within 5 catalog
+// H-numbers. It reads metadata_filtered.csv, groups rows into objects, computes each of
+// those family counts per target, and assigns a pressure class from
+// high_repetition_family_pressure down to low_copy_or_isolated. Each row also carries the
+// object's known source blocker and what the pressure implies for archive requests (e.g.
+// ask for group-level notes, not one object). Writes one CSV and one JSON summary. This
+// prioritizes source requests; it validates nothing and reads nothing.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 const metadataPath = path.join(base, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');

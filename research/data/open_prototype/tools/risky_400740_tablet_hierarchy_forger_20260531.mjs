@@ -1,3 +1,16 @@
+// Tests a hierarchy claim: sign `400` is a higher-level frame opener and `740` an
+// inner/default opener beneath it, so inscriptions containing both should place 400
+// before 740 — most strictly in the tablet/account register (TAB:B, TAB:I). The
+// script reads metadata_filtered.csv, collapses duplicate sign sequences, and
+// counts the 400-vs-740 order in every co-occurrence row, scoring it with a
+// right-tail binomial test. Context comes from two adversaries: a full scan of
+// every co-occurring sign pair with at least 20 shared rows (where does 400|740
+// rank among all directed pairs?), and a 2,000-iteration forger that shuffles the
+// signs inside each row and asks how often any pair achieves a binomial p as small
+// as the observed one. Six control pools (register-only, tablet-only, complete,
+// non-poor, leave-Harappa, leave-Mohenjo-daro) recheck the direction. Writes a bet
+// summary (JSON + CSV) plus pool, direction-pair, support-row, and
+// forger-iteration CSVs to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

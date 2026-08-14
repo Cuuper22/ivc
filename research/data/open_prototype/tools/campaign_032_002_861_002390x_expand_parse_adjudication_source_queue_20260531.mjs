@@ -1,6 +1,21 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script builds the source-checking work queue for the parser: fifteen
+// named objects (H-1993, M-71, L-1, H-773, M-1825, 4237.1, M-1668, H-74,
+// M-1665, 3335.1, M-70, H-609, K-44, TY-106, Ns-66) where getting a real
+// artifact image would decide a named bet. The adjudication plan is written
+// by hand here; for each target it states the current source situation and
+// spells out three futures — what an exact source match would promote, what a
+// variant tail would demote, and what outright source rejection would kill —
+// plus the single destructive question the source must answer. The script
+// joins that plan to the x000 parse-rows CSV (failing loudly if a target row
+// is missing), rolls targets up by predicted parser class, and stakes two
+// meta-bets: the parser is falsifiable through these outcomes, and the first
+// surprises should split terminal classes from open operators rather than
+// scrambling both. Writes targets, class-pressure rollups, and bets as CSVs
+// plus a summary JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const parseRowsPath = path.join(

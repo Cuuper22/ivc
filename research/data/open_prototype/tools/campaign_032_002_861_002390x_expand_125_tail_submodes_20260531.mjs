@@ -1,6 +1,21 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script splits the behavior of governed 125 into submodes: distinct
+// ways the linker gets used inside a 002 frame. It reads
+// lipi/metadata_filtered.csv, deduplicates by sign sequence, and collects two
+// row sets: every governed 002-HEAD-125 frame (with its left context, whether
+// 235 or 032 appears anywhere to the left, and its tail classed as
+// 632-032 title tail, 820 title tail, 195 terminal cap, terminal, or other)
+// and every 125-632-032 trigram anywhere, governed or not. The four bets
+// staked on these counts: target 002-390-125 has two submodes (a final-235
+// rank-trigger mode and a portable 632-032 title-tail mode), 125-632-032 is a
+// portable title tail across heads rather than a private M-38 formula, 235
+// triggers 125 but does not explain all of it, and the post-125 tails are
+// subtype choices rather than free name spellings. Writes governed rows, the
+// trigram occurrences, bucket summaries, and the bets as CSVs plus a summary
+// JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

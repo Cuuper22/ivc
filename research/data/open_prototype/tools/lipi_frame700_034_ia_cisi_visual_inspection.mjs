@@ -1,6 +1,17 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script records the first human look at the CISI pages that the page-locator step
+// found on Internet Archive. Each hard-coded row is one inspected object (H-771, H-789,
+// H-893, H-925, H-930, H-983, H-353, H-212, and optional H-910) and captures what the scan
+// actually shows: the page heading, every printed panel label (A, B, C, bis, ter, numbered
+// variants), the observed panel count versus the local metadata's side count, whether the
+// short frame700 panel is visible, and a coding decision with its reason. The script then
+// tallies these rows -- how many objects match their local side count, how many carry
+// variant risk -- and writes one CSV and one JSON summary. The finding it preserves: H-789
+// and H-930 are clean two-panel objects, while the main targets need side-count or variant
+// reconciliation first. No subtype, direction, or meaning claim is accepted from any scan.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 const outCsv = path.join(reportsDir, 'lipi_frame700_034_ia_cisi_visual_inspection.csv');

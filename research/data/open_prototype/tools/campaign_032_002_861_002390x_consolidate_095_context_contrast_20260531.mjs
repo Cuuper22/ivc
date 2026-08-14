@@ -1,3 +1,16 @@
+// Asks whether sign 095 ends inscriptions on its own, or only when it sits in
+// the X slot of a 002-H-095 frame (002, then a head sign, then 095). The
+// distinction matters: a sign that is terminal everywhere is a generic closer;
+// one that is terminal only in the slot supports the constructional-slot model.
+// This script deduplicates the local Lipi metadata by sign text, finds every
+// 095 occurrence, splits them into X-slot versus non-X-slot contexts, and
+// compares terminal rates, neighboring signs, and sites. Writes occurrences,
+// contrast, and decisions CSVs plus a summary JSON to
+// data/open_prototype/reports/. Recorded verdict: terminality concentrates in
+// the X slot (though that sample is only three rows), so the raw "095 is a
+// terminal sign" value is killed while the slot-bound class-label candidate
+// keeps its rank-1 spot without promotion.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

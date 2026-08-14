@@ -1,6 +1,22 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// An open operator that is a real linker should take a small, repeating set
+// of complements; random continuations would suggest tail residue instead.
+// This script measures that for every open-operator sign in the X slot. It
+// scans lipi/metadata_filtered.csv twice over the same pass: collecting each
+// open operator's global occurrences anywhere in a text, and its occurrences
+// as X in 002-HEAD-X frames. Per operator it reports the next-sign
+// distribution in both settings, the top-next share, the Shannon entropy of
+// the X-slot tails, and which complements repeat (2+ times) — that last field
+// drives the role label: "linker_with_repeated_complements", "open but tail-
+// residue risk", or underpowered. The focus operators are 125, 530, and 861,
+// with bets to match: 125 is a linker with repeated 632/032/820 complements
+// (candidate), 530 is open but unresolved, and X-slot 861 behaves as a
+// payload operator unlike its terminal global self. Writes operator
+// summaries, X-slot occurrences, and bets as CSVs plus a summary JSON to
+// data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

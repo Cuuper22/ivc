@@ -1,3 +1,15 @@
+// The frame `740-X-590` is common, with X usually one of 390, 405, 407, or 406.
+// This script asks whether the filler X sorts context — whether the frame is a
+// register slot rather than a mere frequency pattern. The specific expectations:
+// filler 405 should skew toward Bull1:W/square-seal contexts, and 407 toward
+// Gavi-icon/tablet/admin contexts. It reads metadata_filtered.csv, extracts every
+// `740-X-590` triple, deduplicates by filler + exact text, and for each filler
+// Fisher-tests every metadata feature (site, region, type, material, shape,
+// iconography, condition, completeness, class, plus type-symbol and type-material
+// combinations) for enrichment against the other fillers' rows. The decision keeps
+// the frame alive only if 405 links to Bull1:W or 407 links to Gavi at p <= 0.05.
+// No permutation forger here — this is a consolidation stress check. Writes one
+// JSON report to the reports directory and prints the top features per filler.
 import fs from 'node:fs';
 import path from 'node:path';
 

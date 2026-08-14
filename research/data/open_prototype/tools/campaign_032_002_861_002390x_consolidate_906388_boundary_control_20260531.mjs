@@ -1,3 +1,16 @@
+// Control study for the sign pair 906-388, the tail of the M-451 inscription
+// that damages the X=000 terminal candidate. If 906-388 after 000 is meaningful
+// payload, X=000 is not a closer; if it is a fixed terminal suffix (boundary
+// furniture), the M-451 damage softens. This script scans the local Lipi
+// metadata for every 906, every 388, and every exact 906-388 pair, recording
+// neighbors, whether each sits at the end, and whether the pair falls inside a
+// 002 frame after a 000. It then adjudicates three tests: is the pair always
+// terminal with varied preceding signs, is 906 locked to 388, and is 388
+// exclusive to 906. Writes pair occurrences, component contexts, and
+// adjudication CSVs plus a summary JSON to data/open_prototype/reports/.
+// Recorded verdict: 906-388 earns weak boundary credit as a fixed pair, which
+// slightly softens but does not repair the M-451 damage — X=000 stays wounded.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

@@ -2,7 +2,7 @@
 
 Date: 2026-05-24
 
-Use this before accepting any statement as part of the translation system.
+This checklist is the last gate before any statement enters the translation system. Find the section that matches the type of claim, answer every question, and record one of the four decisions. The questions are deliberately boring: each one closes a hole that a past decipherment attempt has fallen through.
 
 ## Corpus Claim
 
@@ -114,7 +114,7 @@ accept / revise / reject / blocked
 
 ## Automatic Rejection Conditions
 
-Reject immediately if:
+Some failures need no discussion. Reject immediately if:
 
 - It uses quarantined translation labels as evidence.
 - It assigns a language without declared priors and controls.

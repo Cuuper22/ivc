@@ -1,3 +1,23 @@
+// Risky-bet test (2026-05-31): does sign 002 introduce head-specific "branch
+// tables"? In frames 002-head-branch, the bet is that for heads 861 and 390
+// the branch sign deterministically decides whether the inscription ends
+// there (closed) or continues (open) — behavior expected of a slot grammar,
+// not of free text.
+//
+// The script reads lipi/metadata_filtered.csv, extracts every 002 frame,
+// collapses exact duplicate text strings, and keeps competitive heads (8+
+// frames, 5+ distinct branches). Each head's determinism score sums, per
+// branch, the majority terminal-or-continuing count; 100,000 label shuffles
+// per head give a sampled p-value. Four multi-head nulls then guard against
+// cherry-picking: how often would chance make any two heads look as good as
+// 861/390, the specific 861+390 pair, two heads under p=0.05, or a best-pair
+// p-product as small as observed.
+//
+// It writes risky_002_dual_head_branch_tables_20260531.json, .csv (the bet
+// card with rates, falsifier, and next predictions), and _heads.csv. The bet
+// stays "candidate", not promoted, because source-stability checks are still
+// incomplete; the canonical-collapse recheck script is its harsher sibling.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

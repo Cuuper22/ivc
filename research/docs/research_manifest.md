@@ -8,7 +8,7 @@ Build a translation system for the Indus Valley Civilization script that is as h
 
 This is academic decipherment work, not an app build, OCR build, or software-delivery exercise. Scripts and code are tools for audit, statistics, visualization, and reproducibility. They exist to assist reasoning about a lost language and script. They are not the deliverable.
 
-The system must not start by assigning words to signs. It starts by proving what can be known:
+The system must not start by assigning words to signs. That is where failed decipherments start. It starts by proving what can actually be known:
 
 - Which sign inventory is being used.
 - Which inscriptions are authentic, complete, damaged, or uncertain.
@@ -40,7 +40,7 @@ So the benchmark cannot be "produce confident English sentences." The benchmark 
 
 ## Claim Levels
 
-Every claim must be tagged:
+Every claim carries a tag that says how much weight it can bear:
 
 - `Known`: directly attested in corpus metadata, artifact context, or widely accepted epigraphic observation.
 - `Strong`: supported by multiple independent analyses and survives obvious controls.

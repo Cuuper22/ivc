@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Is sign 125 an operator only when it sits in the X slot of 002-H-X, or does it behave the
+// same everywhere? This script splits every 125 occurrence in the corpus into two groups:
+// x_slot (exactly two positions after a 002) and non_x_slot (everywhere else). It reads
+// data/open_prototype/lipi/metadata_filtered.csv and, for each group, measures the open rate
+// (how often anything follows the 125), the terminal rate, and — the more telling number —
+// how constrained the tails are: how many distinct tails exist and what share the top four
+// cover. The finding it encodes: non-X 125 is also often open, so the operator claim must
+// rest on tail constraint, not open rate; X-slot 125 draws from a small tail family while
+// non-X 125 does not, and 125 therefore cannot be given one global meaning. Writes the
+// occurrence rows, the two-group summary, and three bets as CSVs plus a summary JSON in
+// reports/.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');

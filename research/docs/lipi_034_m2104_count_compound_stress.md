@@ -90,7 +90,7 @@ This is a useful targeting signal, not a sign value. The counts are heavily stru
 
 ## Downgrades
 
-- No Parpola-like multi-token full-sequence wildcard frame contains both variants. The exact full-frame contrast is `151-097-700-034` versus `400-097-700-004`, not a same-frame minimal pair.
+- No Parpola-like multi-token full-sequence wildcard frame contains both variants. The exact full-frame contrast is `151-097-700-034` versus `400-097-700-004`, not a same-frame minimal pair — the two rows differ in two slots, not one.
 - The only full-sequence wildcard frame with both variants is bare `+700-X+`, dominated by Harappa tablet short marks. That is a different problem from the M-2104 count-compound claim.
 - `M-2104` remains source-gated. The public Marshall route is compatible, but CISI 3.1 or equivalent source metadata has not yet closed `M-2104 = Marshall no. 532 / VS 875`.
 - Marshall's five-character description remains unreconciled against the local four-token row.

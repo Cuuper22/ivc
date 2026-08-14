@@ -1,6 +1,21 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script races the grammar model against its null hypotheses on a level
+// playing field. The question: which feature best predicts whether a
+// 002-HEAD-X frame continues or ends — the X sign itself (grammar), the head,
+// the head-X pair, the sign before 002 (left context), or just where the
+// object comes from (site|type|shape|material scope, the "it's all copied
+// register formula" adversary)? It scans lipi/metadata_filtered.csv for all
+// frames, then runs the same leave-one-out majority-vote predictor for seven
+// keyings: X sign, head, head-X pair, left sign, scope cell, scope+X, and
+// scope+head. Each predictor gets coverage and accuracy; individual
+// predictions are logged. The recorded bets: X sign and head-X pairs beat
+// scope and left context, but the visual-scope null stays live because
+// scope-conditioned predictors remain competitive. Writes metrics, per-row
+// predictions, and bets as CSVs plus a summary JSON to
+// data/open_prototype/reports.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');

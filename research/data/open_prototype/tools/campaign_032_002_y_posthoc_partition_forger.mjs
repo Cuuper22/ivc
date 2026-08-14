@@ -1,3 +1,16 @@
+// Post-hoc partition forger for the 002-Y closure/branch split. The danger it measures:
+// our closure-vs-branch grouping of Y signs was chosen after looking at the data, and any
+// dataset lets you cherry-pick a high-terminal versus low-terminal partition. So this forger
+// gives every null corpus the same cherry-picking power: for each shuffled dataset it
+// searches all terminal-rate threshold pairs over the eligible Y signs, keeps the best
+// partition that meets minimum sign and row support in both poles, and scores it by a
+// two-proportion z statistic and the closure-minus-branch rate gap. We load the strict,
+// deduplicated 002 rows from campaign_032_002_post_y_all_002_rows.csv in two scopes (all
+// 002 rows, and rows where 032 precedes 002) and run six seeded nulls: terminality or Y
+// shuffles, globally and within register blocks, plus per-register Bernoulli terminals.
+// The observed partition only counts if it beats what the nulls can forge. CLI: iterations
+// (default 10000) and seed (default 20260529) as positional arguments. Writes observed and
+// per-iteration CSVs plus a JSON summary to data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

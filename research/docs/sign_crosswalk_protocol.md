@@ -4,7 +4,7 @@ Date: 2026-05-24
 
 ## Purpose
 
-The IVC translation project cannot treat sign IDs as universal. Different corpora and scholars use different inventories, allograph policies, and numbering systems. A sign crosswalk is therefore a research object, not clerical cleanup.
+A sign crosswalk is a table that says which sign in one catalogue corresponds to which sign in another. The project needs one because different corpora and scholars use different sign inventories, different numbering systems, and different allograph policies, meaning different rules for when two visually distinct marks count as the same sign. Sign IDs are not universal. Every cross-source mapping is therefore a research object with its own evidence and its own failure modes, not clerical cleanup.
 
 ## Source Sign Systems
 
@@ -68,7 +68,7 @@ Risk:
 
 ## Crosswalk States
 
-Every source-to-source mapping must be one of:
+Every source-to-source mapping must carry exactly one state, so that uncertainty is visible instead of implied:
 
 | State | Meaning |
 | --- | --- |
@@ -117,7 +117,7 @@ review_status
 
 ## Allograph Policy
 
-No single allograph policy is allowed to dominate all experiments.
+No single allograph policy is allowed to dominate all experiments, because a result that only appears under one merging scheme may be an artifact of that scheme.
 
 Every structural experiment should run at least these conditions when data permit:
 
@@ -140,7 +140,7 @@ Do not collapse feature vectors until the experiment says why.
 
 ## Direction And Mirroring
 
-Mirrored signs are dangerous because they may encode:
+Mirrored signs are dangerous because a mirror image can mean several very different things, and the data alone rarely says which:
 
 - Writing direction.
 - Intentional allograph.

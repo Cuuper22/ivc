@@ -2,7 +2,7 @@
 
 Date: 2026-05-30
 
-This is the direct Priority A swing: take cuneiform-captured Meluhha names, titles, and lexical phrases, then attempt actual sign-value assignments against the external Indus-style object rows only where the current object route makes the attempt worth testing.
+This is the direct Priority A test: take cuneiform-captured Meluhha names, titles, and lexical phrases, then attempt actual sign-value assignments against the external Indus-style object rows only where the current object route makes the attempt worth testing.
 
 No assignment survives.
 

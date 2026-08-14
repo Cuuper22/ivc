@@ -2,11 +2,13 @@
 
 Date: 2026-05-31 America/Los_Angeles
 
-Status: active source gate, not goal completion.
+This note is a formal audit of one seal, Sktd-1. Earlier work established that the object is visible on its published source page. The question now is whether that material can be pushed one tier higher — from "we can see the object" to "the photograph itself proves the sign order." The audit runs six explicit tests and concludes that it cannot.
+
+Status: active source gate, not goal completion. (A "gate" is a check that must pass before evidence is allowed into the analysis.)
 
 ## Question
 
-Can the existing public Sktd-1 material be promoted from panel-bound pressure to strict token/order evidence for the `004 -> 002-390 -> 125 -> 820` lane?
+Can the existing public Sktd-1 material be promoted from panel-bound pressure (the object is visible and labeled on the published page) to strict token/order evidence (the photograph alone fixes each sign and its order) for the `004 -> 002-390 -> 125 -> 820` lane?
 
 Local row:
 
@@ -26,7 +28,7 @@ No value, phonetics, language identity, function, sign meaning, or translation i
 - Decisions: `data/open_prototype/reports/campaign_032_002_861_002390x_sktd1_strictness_audit_20260531_decisions.csv`
 - Summary: `data/open_prototype/reports/campaign_032_002_861_002390x_sktd1_strictness_audit_20260531_summary.json`
 
-The audit consolidates the Sktd-1 side-pair recheck, the alpha blind key, token-boundary adjudication, and the source-upgrade impact scenarios. It also verifies that the five relevant image files are present and records their dimensions for reproducible visual review:
+The audit consolidates the Sktd-1 side-pair recheck, the alpha blind key, token-boundary adjudication (the process of judging sign boundaries from the image without seeing the claimed reading), and the source-upgrade impact scenarios. It also verifies that the five relevant image files are present and records their dimensions for reproducible visual review:
 
 - `tmp/002390x_source_normalization/cisi_india_n397_w2000.jpg`
 - `tmp/002390x_source_normalization/Sktd1_face_A_full_panel.jpg`
@@ -49,7 +51,7 @@ The audit consolidates the Sktd-1 side-pair recheck, the alpha blind key, token-
 
 Status: `sktd1_strictness_audit_wrapped_layout_blocks_dual004_no_values`.
 
-Sktd-1 is source-panel side-pair visible, but not strict token/order evidence. The public plate is exhausted for promotion at this tier: full panels, top-band crops, blind-key evidence, and token-boundary adjudication all stop at boxed-window compatibility.
+Sktd-1 is source-panel side-pair visible, but not strict token/order evidence. The public plate is exhausted for promotion at this tier: full panels, top-band crops, blind-key evidence, and token-boundary adjudication all stop at boxed-window compatibility. There is nothing more to squeeze from this photograph.
 
 This matters because the source-upgrade impact audit showed that H-1993 alone does not unlock the `004` lane. The `004` lane needs both H-1993 and Sktd-1 strict, or an equivalent dual strict pair. Current Sktd-1 material does not supply that second strict side.
 

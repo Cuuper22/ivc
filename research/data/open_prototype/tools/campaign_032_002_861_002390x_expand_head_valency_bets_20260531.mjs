@@ -1,6 +1,20 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script reframes the head-class results as "valency": how many
+// arguments a head takes and whether its X slot must continue or must close,
+// the way verbs differ in the arguments they demand. It reads the head
+// summary and frame CSVs from the earlier head-class discriminator run, keeps
+// heads with 3+ frames, and assigns each a valency class from exact counts:
+// open_x_head (always takes X, X always continues — head 220),
+// terminal_x_head (always takes X, X always closes — head 031),
+// mixed_x_head (both outcomes — head 390, where only X=125 opens),
+// terminal_default_head (rarely takes X at all), or mixed/low-signal. Four
+// bets follow, the sharpest being that 390 is a mixed gate and that 125 is a
+// local valency switch rather than a title — plus a list of the most
+// embarrassing single rows that would kill each class. Writes the valency
+// table and bets as CSVs plus a summary JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const headSummaryPath = path.join(reportsDir, 'campaign_032_002_861_002390x_expand_002_head_class_discriminator_20260531_head_summary.csv');

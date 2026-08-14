@@ -1,3 +1,19 @@
+"""Build the v2 blind review packet for the directionality experiment.
+
+A blind packet is a shuffled set of anonymized seal-inscription images that human
+reviewers count signs in without knowing which object each image came from. This
+script cuts crops from raw CISI plate pages (routes come from
+effective_unicity_directionality_public_route_probe_routes.csv), masks every OCR
+word box inside the negative-control crops so no catalogue label can leak, and
+mixes in four kinds of items: recut primary targets, twelve routed real scoring
+negatives, three existing hard-negative stress controls, and synthetic
+leak-sentinel and blank-surface images that never count toward the real-negative
+denominator. It writes the blind images plus a crop manifest, blind manifest,
+answer key, review template, contact sheet, and a summary JSON. v2 exists to
+repair the v1 design, whose negatives were too few and whose crops could leak
+labels; creating the packet promotes no claim about the script itself.
+"""
+
 from __future__ import annotations
 
 import csv

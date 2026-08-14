@@ -74,7 +74,7 @@ If the local encoding is right, then:
 
 ## Segmentation Targets
 
-The first overlay pass marks only visual units to test. It does not accept the posthoc local-token assignments.
+The first overlay pass marks only visual units to test. It does not accept the after-the-fact local-token assignments.
 
 | Object | Overlay | Target boxes | Immediate use |
 | --- | --- | --- | --- |

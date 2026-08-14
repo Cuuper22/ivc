@@ -4,9 +4,9 @@ Date: 2026-05-24
 
 ## Purpose
 
-This sheet isolates the H-2218 through H-2239 tablet series from the broader multi-side mark validation queue.
+This sheet is the per-object checklist for the H-2218 through H-2239 tablet series. It pulls these 22 tablets out of the broader multi-side mark validation queue so they can be checked as one batch.
 
-The purpose is source control, not interpretation. Each row ties the local `lipi` transcription to the HARP object designation, published figure reference, local dimensions, local side texts, and the exact manual checks still required before any functional experiment.
+The purpose is source control, not interpretation. Each row ties the local `lipi` transcription — `lipi` is the project's working transcription corpus — to the HARP object designation (HARP is the Harappa Archaeological Research Project), the published figure reference, local dimensions, local side texts, and the exact manual checks still required before any functional experiment.
 
 ## Local Artifacts
 
@@ -54,6 +54,8 @@ priority: P1_tab_i_three_side_short_series for all 22 rows
 
 ## Local Signature Classes
 
+A signature is the ordered set of the three side texts recorded for a tablet. Four signature classes cover all 22 objects:
+
 | Local Signature | Count | Objects |
 | --- | ---: | --- |
 | `1:+861-003+|2:+700-034+|3:+156-003+` | 13 | `H-2218`, `H-2219`, `H-2220`, `H-2222`, `H-2223`, `H-2224`, `H-2225`, `H-2229`, `H-2231`, `H-2232`, `H-2234`, `H-2236`, `H-2239` |
@@ -73,6 +75,8 @@ Follow-up side-role probe:
 - [H-2218 through H-2239 side-role template probe](h2218_h2239_side_role_template_probe.md) shows that all 22 rows fit one `+861-003+` side, one `+700-03x+` side, and one `+15x-003+` side. The `+15x-003+` role is always local side 3, while the other two roles swap across local sides 1 and 2. This sharpens the plate check without accepting physical side order or meaning.
 
 ## Plate And Figure Map
+
+`CISI` is the object's number in the Corpus of Indus Seals and Inscriptions.
 
 | CISI | HARP Object | Published Figure | Local Signature Class |
 | --- | --- | --- | --- |

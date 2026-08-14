@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """embeddings/build_embeddings.py — multimodal embedding builder (CPU, ONNX via fastembed).
 
-Builds a vector layer over the IVC corpus:
+This script turns corpus items into vectors so they can be searched by similarity:
   - image  : CLIP embeddings of sign crops (Brahmi letter images, source-token crops, Indus components)
   - text   : BGE embeddings of research docs + sign sequences + sign descriptions
 
-Stores to embeddings/store_<run>.parquet (one row per item; vector as a list<float32> column),
-joinable back to db/ivc.sqlite via item_id. No torch; models are pinned and run offline
-after first download, so embeddings are reproducible (deterministic given model + input).
+Vectors go to embeddings/store_<run>.parquet (one row per item; vector as a list<float32>
+column), joinable back to db/ivc.sqlite via item_id. No torch. Models are pinned and run
+offline after the first download, so the embeddings are reproducible: same model plus same
+input always gives the same vector.
 
 GUARDRAIL: embeddings are a candidate-generation / search layer, NOT evidence. Visual
 similarity != sign identity. Every surfaced match must still clear source-image validation,

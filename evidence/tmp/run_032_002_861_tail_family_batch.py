@@ -1,3 +1,17 @@
+"""Batch-profile every repeated tail family after 002-861 in one pass.
+
+Rather than auditing tails one at a time, this script picks its own unit
+list: every tail that appears at least twice in the strict deduped suffix
+rows, plus a fixed set of extras (255 416, 416, 698, 096, 000). For each
+unit it scans the whole strict corpus for occurrences anywhere, classifies
+its distribution (restricted to 002-861, mixed with independent uses, or
+neither), and checks whether matched bare controls exist — inscriptions that
+share the tail's preframe but end bare — including which of those controls
+are already source-visible. Each unit gets an evidence role such as
+restricted_tail_with_bare_controls. Writes a family summary CSV, an
+occurrences CSV, and a JSON summary listing the priority units.
+"""
+
 from __future__ import annotations
 
 import csv

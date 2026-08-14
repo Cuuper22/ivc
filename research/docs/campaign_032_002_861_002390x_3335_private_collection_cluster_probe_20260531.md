@@ -8,7 +8,7 @@ Status: `3335_private_collection_cluster_two_rows_no_bridge_no_values`.
 
 The Yajnadevam/Lipi repo trace found one historical clue for the `3335.1` branch-lane target: old row `3335` carried `museum = Private collection` in the first externalized CSV layer.
 
-This probe asks whether that clue is part of a larger source cluster that can identify a source holder, image route, or companion object for:
+This probe asks a follow-up question: is that clue part of a larger source cluster — other rows from the same collection — that could identify a source holder, an image route, or a companion object for:
 
 `3335.1 / +740-205-032-002-390-590-032+ / 29 x 29 / SEAL:S / Bull1:J / RAF`.
 
@@ -48,7 +48,7 @@ The only sibling row is `3118/3118.1`. It does not help bind the target:
 
 For the target itself, checked image-map keys `3335`, `3335.1`, `-:3335.1`, and `-` all have zero mapped images.
 
-Manual exact public searches for the target sequence, sibling sequence, and quarantined gloss strings produced no usable source bridge. That negative search is a guardrail only; the positive evidence still comes only from the repo-history field `museum = Private collection`.
+Manual exact public searches for the target sequence, the sibling sequence, and the quarantined gloss strings produced no usable source bridge. That negative search is a guardrail only. The one piece of positive evidence is still the repo-history field `museum = Private collection` — nothing more.
 
 ## Decision
 

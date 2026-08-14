@@ -4,16 +4,16 @@ Date: 2026-05-24
 
 ## Purpose
 
-This experiment asks whether the broad filtered `lipi` structural signal is mostly repeated formula families rather than a more general order signal.
+This note records another stress test on `lipi`, the project's filtered working corpus of Indus sign sequences. Earlier baselines found a broad structural signal: sign order beats simple baselines. The question here is whether that signal is mostly repeated formula families — near-identical inscriptions that recur across many objects — rather than a more general order signal.
 
-It follows the [Lipi high-frequency edge removal baseline](lipi_edge_removed_baseline.md). The experiment collapses exact duplicate sequences first, then applies two formula-family downweighting policies:
+It follows the [Lipi high-frequency edge removal baseline](lipi_edge_removed_baseline.md). The experiment collapses exact duplicate sequences first, then applies two formula-family downweighting policies, each of which shrinks a family of similar sequences down to one representative:
 
 - Edge-frame collapse: keep one representative per shared length, first sign, and last sign. Sequences of length 1 or 2 stay exact because their whole sequence is already edge.
 - One-edit-family collapse: union exact-collapsed sequences that share a one-position wildcard frame or a one-token deletion frame, then keep one representative per connected family.
 
 Both policies are also repeated after top-10 edge-sign removal.
 
-This is a blunt stress test. One-edit transitive families can become very large in short-inscription corpora. That is the point of the falsifier: if the signal survives even this aggressive downweighting, then simple repeated-template explanations are incomplete. It is not an epigraphic claim that collapsed rows are the same text.
+This is a blunt stress test. One-edit transitive families can become very large in short-inscription corpora, because chains of one-edit links can merge many sequences into one family. That is the point of the falsifier — a test built to destroy the signal if it can: if the signal survives even this aggressive downweighting, then simple repeated-template explanations are incomplete. It is not an epigraphic claim that collapsed rows are the same text.
 
 It does not treat `lipi` as authoritative. It does not assume accepted reading order. It does not assign meanings, sign values, phonetics, language identity, or translations.
 
@@ -108,7 +108,7 @@ The family controls do not erase the bidirectional signal. Edge removal remains 
 
 ## Leakage-Controlled Held-Out Results
 
-All rows below remove exact resulting train/test sequence overlap after the family policy is applied.
+A held-out split keeps one artifact type or site out of training and tests on it. All rows below remove exact resulting train/test sequence overlap after the family policy is applied, so the model cannot succeed by memorizing shared sequences.
 
 Selected bidirectional top-1 scores:
 
@@ -141,7 +141,7 @@ This control narrows the formula-repetition explanation:
 - One-edit formula neighborhoods are not the full explanation, though the one-edit policy is so aggressive that it should be treated as a stress test rather than a clean family model.
 - High-frequency edge signs remain the strongest identified driver so far.
 
-The residual signal is still only structural. It does not imply meaning, grammar in the linguistic sense, or translation. It says the broad filtered layer has order dependencies that survive several anti-memorization controls.
+The residual signal is still only structural. It does not imply meaning, grammar in the linguistic sense, or translation. It says the broad filtered layer has order dependencies that survive several anti-memorization controls. In the claim below, "T3 structural scout evidence" is the project's tier label for scouting results on the unverified planning layer — useful for direction, never admissible as proof.
 
 ## Result
 
@@ -165,7 +165,7 @@ It does not support:
 
 The next tests should ask:
 
-- Can nonlinguistic administrative or emblematic controls reproduce the same residual profile?
+- Can nonlinguistic administrative or emblematic controls (comparison systems that carry structure without language) reproduce the same residual profile?
 - Does terminal-class prediction remain after exact terminal signs are removed?
-- Does an authoritative M77/CISI/ICIT or image-validated corpus reproduce the same family-downweighted profile?
+- Does an authoritative M77/CISI/ICIT corpus (Mahadevan 1977, the Corpus of Indus Seals and Inscriptions, or the Interactive Corpus of Indus Texts) or an image-validated corpus reproduce the same family-downweighted profile?
 - Are the largest one-edit families real epigraphic formulae, data-entry artifacts, or artifacts of the collapse rule?

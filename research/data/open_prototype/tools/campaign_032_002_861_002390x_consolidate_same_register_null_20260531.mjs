@@ -1,3 +1,18 @@
+// Tests the local 002-390-X parser against a same-register null: hold the
+// physical register fixed (Mohenjo-daro square steatite SEAL:S seals only) and
+// ask whether the focus signs 125, 095, and 692 behave differently inside the
+// 002-390 frame than they do elsewhere on the very same kind of object. If
+// they do not, the "grammar" is just seal-layout convention. This script joins
+// the local Lipi metadata with the branch-sign-ecology frames CSV (for source
+// tiers), collects every same-register occurrence of the three signs, and
+// compares terminal rates inside the target frame, in strict source-visible
+// target rows, and outside the frame; it also summarizes the local 125-versus-
+// non-125 branch shell with an exact partition probability. Writes five CSVs
+// and a summary JSON to data/open_prototype/reports/. Recorded outcome:
+// intrinsic sign values are killed (125 can be terminal outside the frame),
+// but 002-390-125 as open/continuing survives as the one strong frame
+// residual; 692 closure is partly background bias and 095 rests on M-71 alone.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

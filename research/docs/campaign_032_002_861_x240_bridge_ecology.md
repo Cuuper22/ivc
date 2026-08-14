@@ -2,6 +2,8 @@
 
 Date: 2026-05-29
 
+This note surveys the ecology — the whole population of signs — that occupies the X slot in rows shaped `...-X-240-...` (signs are numeric IDs; "X-before-240" names that slot). A "bridge" sign is one that also appears in a second, distinct context: here, as the first sign of a tail after `002-861`. A bridge matters because it links two otherwise separate structures.
+
 Question: is `603` uniquely mobile out of the X-before-240 ecology, or is it one member of a broader bridge subset?
 
 Method: strict complete-token rows only; no bracketed or parenthesized readings; deduplicated by `(cisi, site, type, symbol, text)`.

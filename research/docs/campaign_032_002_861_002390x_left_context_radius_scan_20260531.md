@@ -13,7 +13,7 @@ The source-tiered predecessor gate tested immediate predecessor only. The full-l
 - ...
 - radius `8`: longest left suffix present in the target set
 
-The question is where branch alternatives actually exist. A decipherment-useful paradigm would be a branch split that survives source control at some matched left-context radius.
+The question is where branch alternatives actually exist. A decipherment-useful paradigm would look like this: at some matched left-context radius, the same context takes different branch signs, and that split survives source control.
 
 Accepted value, phonetics, language identity, function, sign meaning, and translation remain 0.
 
@@ -42,7 +42,7 @@ Across the `15` adjacent `002-390-X` frames:
 | 7 | 1 | 0 | 0 | 0 |
 | 8 | 1 | 0 | 0 | 0 |
 
-Branch alternatives exist only at radius `1`, the immediate predecessor before `002`. They vanish once the left context is widened to last2 or beyond.
+Branch alternatives exist only at radius `1`, the immediate predecessor before `002`. Widen the left context to last2 or beyond and they vanish.
 
 ## The Two Split Lanes
 

@@ -1,6 +1,17 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Meadow and Kenoyer 2000 published a photograph (their Fig. 4) of the tiny steatite tablets
+// behind the H-2218..H-2239 catalog series, and sorted them into three manufacturing groups.
+// This script joins that published figure to our local data. The fig4Map table transcribes,
+// by hand from the PDF, each figure position's HARP excavation number and manufacturing
+// group; the script matches those against the local series validation sheet by compact HARP
+// ID and carries over each tablet's side texts, side-order signature class (canonical A,
+// side-swapped B, or a variant), and dimensions. It writes the merged mapping CSV and a JSON
+// summary that cross-tabulates manufacturing group against signature class. The finding it
+// records: the manufacturing groups do not line up with the side-order classes -- every
+// group mixes them -- so side order is not just a batch artifact. No reading is accepted.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 

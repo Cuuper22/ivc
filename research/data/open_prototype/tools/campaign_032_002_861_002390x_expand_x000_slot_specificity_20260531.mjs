@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// If sign 000 were just a blank or a damage marker, it should behave the same everywhere in
+// an inscription. This script checks whether it instead behaves like a zero only in specific
+// slots. It reads data/open_prototype/lipi/metadata_filtered.csv, dedupes to unique sign
+// sequences, and classifies every occurrence of 000 by its position relative to the first 002
+// frame sign: X slot (two after 002), head slot (right after 002), prefix before the frame,
+// payload after the frame, or no 002 at all. For each role it measures how often the text
+// ends right after the 000. The key comparison is the terminal-rate gap between X-slot 000
+// and everything else, plus a broader frame-proximal-versus-pre-frame contrast. Two bets
+// ride on those gaps: 000 as a slot-specific zero, or as a frame-proximal null operator.
+// Writes the occurrence CSV, a per-role summary CSV, a bets CSV, and a summary JSON to
+// reports/.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

@@ -1,3 +1,15 @@
+"""Audit of a token-count discrepancy on seal M-12: blind reviewers counted 10 signs where
+the catalog says 9. This script assembles the evidence for that lead without promoting it to
+a claim. It re-crops the four M-12 panels (face A and impression a, full panel and signband)
+from the CISI India plate page, saves each with an enhanced 2x version and a SHA-256 hash so
+the crops are reproducible, and builds a labeled contact sheet next to the BG001 and BG009
+blind-packet crops. It then profiles every blind-review row: which items got stable numeric
+counts, and which stable counts disagree with the catalog. The decisive control is BG009
+(M-654), a scoring negative that shows the same stable over-counting — proof that blind
+reviewers can agree and still be wrong — so M-12 stays an audit lead, and the accepted-claims
+count increments by zero. Reads the blind answer key, scored rows, and artifact witness
+table; writes an observations CSV, a JSON summary, and the contact sheet PNG."""
+
 from __future__ import annotations
 
 import csv

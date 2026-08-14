@@ -1,3 +1,13 @@
+// Stress test for the "bridge" reading of one inscription, 3335.1, which seems to embed the
+// inherited formula chunk 390-590-032 under 032-002 governance. Two linked bets: (1) that
+// single row really is 002-390-590-032, and (2) sign 032 works as a pivot — it closes the
+// formula chunk on one side and opens a 002 dependency on the other. We read the filtered
+// Indus inscription list (lipi/metadata_filtered.csv), keep one copy of each distinct sign
+// sequence, and collect every adjacent 590-032 pair and every 390-590-032 chunk with its
+// surrounding context. A hypergeometric test asks whether "002 immediately after 590-032" is
+// enriched when 390 precedes the pair, versus all other 590-032 pairs. Four named bets are
+// scored with evidence, adversary readings, and falsifiers. Outputs: occurrence, chunk,
+// family, and decision CSVs plus a JSON summary in data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

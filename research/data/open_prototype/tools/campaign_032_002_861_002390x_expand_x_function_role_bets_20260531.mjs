@@ -1,6 +1,17 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Are the signs that fill the X slot of 002-H-X function words or a list of names?
+// This script assigns each of eight focus signs (125, 095, 692, 705, 590, 530, 140, 072) a
+// provisional functional role. It reads data/open_prototype/lipi/metadata_filtered.csv, logs
+// every sign occurrence in the whole corpus (to get each sign's global terminal rate — how
+// often it ends an inscription anywhere), and separately collects every 002-H-X window.
+// A threshold rule then labels each focus sign: dependent_tail_operator if it usually opens
+// a tail in the X slot, terminal_class_label if it reliably closes across sites,
+// raw_boundary_closer if it closes everywhere even outside the construction, open_extender,
+// or unresolved_payload. Five bets follow, the headline one being that function classes beat
+// a name-list reading. Writes a per-sign role CSV, a bets CSV, and a summary JSON to reports/.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');

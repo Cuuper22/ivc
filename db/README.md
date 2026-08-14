@@ -1,12 +1,13 @@
 # Corpus database (`db/`)
 
 A single-file SQLite database that is the **system of record** for the curated
-Indus-script corpus: sign systems, signs, artifacts, witnesses, crosswalk edges,
-namespace gates, review events, and the claim ledger.
+Indus-script corpus. It holds the sign systems, signs, artifacts, witnesses,
+crosswalk edges, namespace gates, review events, and the claim ledger.
 
-It is a **rebuildable artifact** generated from the CSV/JSON seeds under
-`research/data/`. Its job is to make the provenance/integrity rules
-*machine-enforced* instead of hand-audited — the foreign keys are the
+The database is a **rebuildable artifact**: you generate it from the CSV/JSON
+seed files under `research/data/`, and you can always throw it away and rebuild
+it. Why build it at all? Because the provenance and integrity rules become
+*machine-enforced* instead of hand-audited. The foreign keys are the
 [sign_crosswalk audit](../research/data/sign_crosswalk/README.md) done for free,
 every build.
 

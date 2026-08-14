@@ -1,6 +1,19 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// What does sign 004 actually do when it stands right before a 002 frame? The tempting
+// story is that 004 selects the branch (say, forces 125 under 002-390). This script stress-
+// tests that story and records its death. It reads data/open_prototype/lipi/
+// metadata_filtered.csv (deduplicated) plus the branch-selector frames report for source
+// status, and extracts every 002 frame with its predecessor, two-sign prefix, head, branch,
+// and tail. It then profiles four families — all 004-002 rows, the exact 004-002-390 pair,
+// the exact 390-004-002 prefix, and non-004 002-390 rows — measuring head entropy and
+// exact-text repetition per predecessor to gauge copied-formula pressure. The verdict table:
+// "004 directly selects 125" is dead (the same 004+390 context yields both 095 closure and
+// 125-820 continuation); "004 is a neutral qualifier" survives as candidate_mixed; the
+// copied-prefix-closure story is demoted. Writes frames, predecessor summary, family rows,
+// and decisions as CSVs plus a summary JSON in reports/.
+
 const ROOT = process.cwd();
 const META = path.join(ROOT, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const BRANCH_FRAMES = path.join(

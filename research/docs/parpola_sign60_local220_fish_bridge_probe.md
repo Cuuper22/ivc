@@ -50,7 +50,7 @@ status: provisional_position_alignment_only
 
 The source signband for M-37 shows the same three-part row already used in the M-1206 branch: a triangular/standard-like first sign, a fish-like middle sign, and a comb/rake terminal sign. This makes local `220` a stronger candidate bridge to article sign no. `60` than it was before the source visual check.
 
-The broader local frame is distributionally real but not decisive. In `metadata_filtered.csv`, rows starting with `+520-220-X` number 52 and cover 16 third-slot types. The exact three-sign `+520-220-X+` subset has 21 rows: `415` appears 17 times, while `003`, `006`, `016`, and `034` appear once each. This supports the usefulness of the `520-220-X` frame, but it does not make `220` a solved article sign no. `60` bridge by itself.
+The broader local frame is real as a distributional pattern, but not decisive. In `metadata_filtered.csv`, rows starting with `+520-220-X` number 52 and cover 16 third-slot types. The exact three-sign `+520-220-X+` subset has 21 rows: `415` appears 17 times, while `003`, `006`, `016`, and `034` appear once each. This supports the usefulness of the `520-220-X` frame, but it does not make `220` a solved article sign no. `60` bridge by itself.
 
 ## Decision
 

@@ -63,7 +63,7 @@ That makes the live extraction:
 700-034   vs 700-004   = UIII vs UIIII pot-count cluster candidate
 ```
 
-This is the first useful internal explanation of the P0 `034` row. It explains why local lipi has four tokens while Parpola prose has three units: Parpola groups the pot-count cluster (`UIII` / `UIIII`) as a unit, while local lipi splits it into `700-034` / `700-004`.
+This is the first useful internal explanation of the P0 (top-priority) `034` row. It explains why local lipi has four tokens while Parpola prose has three units: Parpola groups the pot-count cluster (`UIII` / `UIIII`) as a unit, while local lipi splits it into `700-034` / `700-004`.
 
 ## Hypotheses
 

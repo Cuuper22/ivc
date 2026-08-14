@@ -1,3 +1,15 @@
+// Measures how much predictive power the terminal governors 002 and 060
+// actually buy — the "unicity delta". If a text's second-to-last sign is a
+// governor, the final sign should be more predictable than after an ordinary
+// penultimate sign. We read the filtered corpus metadata (complete texts
+// only), collapse to one unit per exact text, and run leave-one-site cross-
+// validation: for each site, predict its held-out final signs from the
+// penult-to-final counts trained on the other sites (at least 5 training
+// rows per penult, and held-out texts are excluded from training). Metrics
+// per row: top-1/top-3 hit, true probability, effective candidates
+// (2^entropy), and surprisal delta in bits versus the unconditional final
+// distribution. A 1000-iteration shuffle of final labels supplies the null.
+// Writes a JSON report plus per-prediction and per-penult CSVs.
 import fs from 'node:fs';
 import path from 'node:path';
 

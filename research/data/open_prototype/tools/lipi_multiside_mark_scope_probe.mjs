@@ -1,3 +1,23 @@
+// First-pass census of "short side marks": objects with two or more inscribed
+// sides where one side carries only one or two signs. The working question is
+// whether these short marks are a distinct functional layer (labels, tallies,
+// batch marks) rather than ordinary text, so this probe maps where they occur
+// and which signs they favor.
+//
+// The script reads lipi/metadata_filtered.csv, parses each side row's sign
+// tokens (three-digit codes), grades each row as clean / usable-uncertain /
+// audit-only, and groups rows by CISI object id. Within multi-side objects it
+// splits clean rows into short-mark candidates (1-2 signs) and long-text
+// candidates (3+ signs), then computes, for each sign seen at least 5 times in
+// short marks, a smoothed enrichment ratio: how much more often the sign
+// appears in short marks than in longer text. It also tabulates each enriched
+// sign's typical object types, sites, side indexes, and binned dimensions, and
+// counts short-sign/long-sign co-occurrence pairs on the same object.
+//
+// Outputs: lipi_multiside_mark_rows.csv (per-side detail), _token_counts.csv
+// (enrichment table), _pair_counts.csv, _type_summary.csv, and _summary.json.
+// The probe only scopes the phenomenon; it assigns no values or meanings.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

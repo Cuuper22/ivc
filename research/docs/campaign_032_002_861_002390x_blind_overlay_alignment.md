@@ -40,7 +40,7 @@ The correct state is:
 
 `catalog-guided boxed windows remain plausible; blind overlay alignment is partial; source-window proof is not achieved`.
 
-This keeps the `002-390-X` branch ecology alive as a positional research object but blocks promotion of `125` as a visually source-proven branch member. The non-`125` controls are in the same partial visual class, so the next decisive evidence must come from source-bound matched alternatives, especially `H-1993` and `705`.
+This keeps the `002-390-X` branch ecology alive as a positional research object, but it blocks promotion of `125` as a visually source-proven branch member. And since the non-`125` controls sit in the same partial visual class, the next decisive evidence must come from source-bound matched alternatives, especially `H-1993` and `705`.
 
 ## Linguistic Consequence
 
@@ -49,7 +49,7 @@ The branch hypothesis now rests on a two-layer distinction:
 1. Positional ecology: `125`, `095`, `692`, and `705` remain the active branch alternatives after `002-390`.
 2. Visual proof: none of the current alpha witnesses independently proves the immediate local numeric window from source image alone.
 
-This is still a language question: does `002-390` license a branch-choice slot whose next sign conditions closure versus continuation, or are the apparent branches just formula/register/copy-family residues? The blind result removes the easy visual shortcut and forces the next campaign onto matched alternatives, especially the repeated non-`125` `705` branch and the `004 -> 002-390 -> 095/125` split.
+The underlying question is still a language question: does `002-390` license a branch-choice slot whose next sign conditions closure versus continuation, or are the apparent branches just formula/register/copy-family residues? The blind result takes away the easy visual shortcut and forces the next campaign onto matched alternatives, especially the repeated non-`125` `705` branch and the `004 -> 002-390 -> 095/125` split.
 
 Accepted: a live positional branch-choice question.
 

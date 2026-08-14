@@ -1,6 +1,18 @@
 import fs from "node:fs";
 import path from "node:path";
 
+// The strongest evidence for real grammar would be a matched-predecessor split: two 002-390
+// frames with the SAME sign before the 002 but DIFFERENT branch signs after the 390, both
+// strict source-visible. This script checks whether any predecessor group clears that bar.
+// It reads the 002-390 frames report CSV from reports/, maps each frame's source_status onto
+// a five-level tier ladder (strict_visible down to metadata_or_blocked), and groups frames
+// by their predecessor sign. Each group gets a gate label: a strict split needs two or more
+// strict rows with different branches; weaker groups are "partly strict blocked",
+// "non-strict only", tail-splits, or singletons. The recorded outcome: no strict split
+// exists anywhere — the 004 lane waits on H-1993 and Sktd-1, the 032 lane on 3335.1, and
+// the 235 group splits only in the tail, not the branch. Writes the tiered rows, the
+// per-predecessor summary, and the decisions as CSVs plus a summary JSON in reports/.
+
 const root = process.cwd();
 const reportsDir = path.join(root, "data", "open_prototype", "reports");
 const framesPath = path.join(reportsDir, "campaign_032_002_861_002390x_branch_sign_ecology_20260531_002390_frames.csv");

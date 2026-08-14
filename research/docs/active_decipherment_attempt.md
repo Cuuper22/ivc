@@ -2,6 +2,10 @@
 
 Date: 2026-05-29
 
+## What This Document Is And How To Read It
+
+This file is the running log of the project's active decipherment attempt: the live attack on what Indus sign sequences might structurally do, recorded campaign by campaign as it happened. It exists so that every move in the attempt — each hypothesis, test, promotion, and demotion — is on the record in order, with nothing cleaned up after the fact. Each "latest ..." entry below is one campaign: it names the question, states the counts and results, points to the main artifact file that holds the full work, and closes by saying exactly what remains unaccepted. Entries are evidence and are appended, never rewritten, so later entries often supersede or demote earlier ones; read the file forward and let the newest entry on a topic win. A campaign here attacks structure — sign order, frames, slots, tails — not meaning. Do not read any entry as a reading: as the entries themselves repeat, accepted values, phonetics, language identities, and translations remain 0, and a candidate or promoted structural claim is still not a translation. When an entry says a claim "survives," that means only that the tests run so far have not killed it.
+
 ## Current Target
 
 Harappa multi-side tablet short marks:

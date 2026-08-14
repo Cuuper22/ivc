@@ -1,3 +1,16 @@
+"""Tokenization gate for the Harappa bands of H-1138 and H-360.
+
+This script works on the stored Harappa source bands and tries to tokenize them —
+split the visible band into separate sign-sized windows — with PIL enhancement and
+explicit orientation policies (for right-to-left metadata, the visual rightmost sign
+is catalog-first). The question: can the bands be tokenized well enough to test
+whether the H-1138 catalog 603 matches the clean post-861 terminal on M-1273, while
+the H-360 catalog 636 stays visually different? It writes gate CSVs, hashed crops
+under tmp/032_002_861_603_h1138_h360_tokenization_gate, a summary JSON, and a docs/
+markdown note. The recorded decision: cross-context 603 graphic identity stays
+unresolved and negative-leaning; nothing is accepted.
+"""
+
 from __future__ import annotations
 
 import csv

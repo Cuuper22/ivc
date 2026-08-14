@@ -2,7 +2,7 @@
 
 Date: 2026-06-11
 
-Delta against `2026-05-24-literature-update.md`. Full synthesis with confidence tags and per-claim verification verdicts: `docs/deep_research_landscape_20260611.md` and `evidence/tmp/041_source_acquisition_20260611/`.
+This note is a delta against `2026-05-24-literature-update.md`: only what changed since then. The full synthesis, with confidence tags and per-claim verification verdicts, lives in `docs/deep_research_landscape_20260611.md` and `evidence/tmp/041_source_acquisition_20260611/`.
 
 ## Confirmed since May 24
 
@@ -21,7 +21,7 @@ Impact: keep the reproducibility flag (code "on request"). Use the 1,916 / 584 /
 
 ### CISI volume 3 series scope clarified (acquisition strategy)
 
-The four blocking objects collapse to one coordinated source action. CISI 3.1 (2010, Parpola/Pande/Koskikallio with Meadow & Kenoyer) is the gated source for H-1993 and M-1825. CISI vol. 3.2/3.3 (3.3 = 2022, Parpola & Koskikallio) is the "untraced objects / collections outside India and Pakistan" strand — the right place to chase 3335.1 (`RAF`, no CISI id) before calling its source dead. See `docs/source_route_updates_20260611.md`.
+Good news for logistics: the four blocking objects collapse to one coordinated source action. CISI 3.1 (2010, Parpola/Pande/Koskikallio with Meadow & Kenoyer) is the gated source for H-1993 and M-1825. CISI vol. 3.2/3.3 (3.3 = 2022, Parpola & Koskikallio) is the "untraced objects / collections outside India and Pakistan" strand — the right place to chase 3335.1 (`RAF`, no CISI id) before calling its source dead. See `docs/source_route_updates_20260611.md`.
 
 ### Tamil Nadu "Iravatham Mahadevan Prize"
 
@@ -36,7 +36,7 @@ US$1,000,000, announced by CM M. K. Stalin, January 2025, at the IVC-centenary C
 
 ### External-anchor candidate staged
 
-Shu-ilishu cylinder seal, Louvre AO 22310 (~2020 BCE, "interpreter of the Meluhhan language"), openly illustrated (Penn Museum *Expedition*; Wikimedia Commons). Staged as a *contact* anchor candidate, explicitly not a bilingual and not a reading. See `docs/external_anchor_shu_ilishu_AO22310_candidate_20260611.md`. Accepted external anchors remains 0.
+Shu-ilishu cylinder seal, Louvre AO 22310 (~2020 BCE, "interpreter of the Meluhhan language"), openly illustrated (Penn Museum *Expedition*; Wikimedia Commons). Staged as a *contact* anchor candidate — evidence that the two cultures talked, not of what the script says. It is explicitly not a bilingual and not a reading. See `docs/external_anchor_shu_ilishu_AO22310_candidate_20260611.md`. Accepted external anchors remains 0.
 
 ## Research decision
 

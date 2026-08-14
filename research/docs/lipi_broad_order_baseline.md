@@ -59,6 +59,8 @@ leave-one-inscription-out add-one-smoothed bigram
 score stored numeric order against reversed numeric order
 ```
 
+In plain terms: for each inscription, we train a bigram model on all the other inscriptions and ask whether the stored sign order scores higher than the same signs reversed.
+
 Overall result:
 
 | Scope | Rows | Tokens | Stored > Reversed | Reversed > Stored | Ties | Stored Win Share |
@@ -93,6 +95,8 @@ Method:
 leave-one-inscription-out exact numeric sign prediction
 models: frequency, absolute position, length-position, bidirectional context
 ```
+
+In plain terms: we hide one sign at a time and ask each model to guess it exactly.
 
 Overall result:
 

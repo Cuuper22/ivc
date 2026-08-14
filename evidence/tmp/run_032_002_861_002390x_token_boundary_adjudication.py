@@ -1,3 +1,16 @@
+"""Adjudicates whether visible source bands match the catalog 002-390-X windows.
+
+This script carries an inline witness table (stored source crops, window boxes, token
+sub-windows, and an explicit side/order policy for each object) plus plain-language
+shape descriptions of the signs involved. For each witness it draws the window box and
+approximate token separators onto the crop with PIL, writing the overlays to
+tmp/002390x_token_boundary_adjudication. The question: are the visible sign bands
+compatible with the immediate 002-390-X windows for the strict 125 targets and the
+strict non-125 controls? It writes a verdict CSV, a summary JSON, and a docs/ markdown
+note. The recorded outcome is "boxed-window compatible" — a layout compatibility
+statement, not an accepted token boundary and not a value.
+"""
+
 from __future__ import annotations
 
 import csv

@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// A worry with the Indus corpus is that its apparent word order could come from a few
+// boilerplate "edge signs" -- signs that almost always sit at the start or end of an
+// inscription. This script tests that. It reads lipi_scope_rows.csv, keeps only rows
+// bucketed as strict numeric-clean lipi candidates, and ranks every sign by how often it
+// appears in first or last position. It then strips the top 2, 5, and 10 edge signs from
+// every sequence and reruns three structure checks: does a bigram model still prefer the
+// stored reading order over its reverse, how well can four simple models guess a masked
+// sign, and do those models still work on held-out sites, regions, and object types with
+// duplicate-sequence leakage removed. It writes an edge-sign inventory CSV, three summary
+// CSVs (sequence, masked, holdout), and one JSON summary. If structure survives edge
+// removal, it is not just an artifact of formulaic openings and closings.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 const sourcePath = path.join(reportsDir, 'lipi_scope_rows.csv');

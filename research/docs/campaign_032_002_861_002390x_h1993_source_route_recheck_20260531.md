@@ -21,7 +21,7 @@ The question is whether H-1993 can be promoted from a transcription-level route 
 
 ## Route evidence
 
-The public Harappa ESM2 PDF exposes `ICIT 744 (H-1993)` in the relevant sign-string neighborhood. That is useful, but it is not an artifact image. It preserves a route to the object and supports keeping H-1993 hot for acquisition; it does not prove the sign sequence from a photograph, plate, or crop.
+The public Harappa ESM2 PDF exposes `ICIT 744 (H-1993)` in the relevant sign-string neighborhood. That is useful, but it is not an artifact image. It keeps a route to the object open and justifies keeping H-1993 hot for acquisition; it does not prove the sign sequence from a photograph, plate, or crop.
 
 The current public and local searches did not locate an artifact image for H-1993:
 
@@ -72,6 +72,6 @@ The `095` branch remains mixed:
 - `M-71` is the strict source-visible `002-390-095` comparator from the checkpoint.
 - `H-1993` is a second local `002-390-095` row, but source-route only.
 
-That means `095` can stay in the branch ecology, but only one `095` witness is strict. The H-1993 route does not yet let the positive model claim a source-normalized repeated terminal `095` branch, and it does not let the adversarial model dismiss the row as nonexistent. It is alive, but not counted.
+So `095` can stay in the branch ecology, but only one `095` witness is strict. The H-1993 route gives neither side what it wants: the positive model cannot claim a source-normalized repeated terminal `095` branch, and the adversarial model cannot dismiss the row as nonexistent. It is alive, but not counted.
 
 Next gate: find the actual H-1993 image/caption for `H96-2769Figure 17.07`, or keep H-1993 out of strict counts and move source pressure to Dholavira `4237.1` / `705`.

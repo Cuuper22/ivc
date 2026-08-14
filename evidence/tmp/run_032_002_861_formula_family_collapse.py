@@ -1,3 +1,17 @@
+"""Stress-test the post-861 tail evidence by collapsing rows into families.
+
+The danger this script attacks: repeated copies of the same local formula can
+masquerade as many independent witnesses. We read the source-normalized tail
+predictor rows and group them three ways — by exact prefix, by tail identity,
+and by tail class (closure, simple_single, fixed_pair, long_continuation).
+Each group is collapsed into strict family cells (tail + prefix + register +
+template), and a verdict function decides whether the group survives as
+evidence or gets demoted as a copy/register/template artifact. Output is four
+CSVs (exact-prefix groups, tail-identity collapse, tail-class collapse, and
+attack verdicts) plus a JSON summary. No values or readings are assigned; the
+point is to see which structural signals survive the collapse.
+"""
+
 import csv
 import json
 from collections import Counter, defaultdict

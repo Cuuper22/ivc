@@ -4,7 +4,7 @@ Date: 2026-05-26
 
 ## Question
 
-Can the contaminated `M-37` terminal-component controls from the M-1206 terminal gate be cleaned enough to promote `M-37 +520-220-415+` into a clean same-site `415` control?
+This note records one narrow image-quality fix and the decision it earned. A gate is a decision checkpoint that evidence must pass before a claim moves forward; a recut is a re-cropped image. The earlier M-1206 terminal gate left the `M-37` terminal-component crops contaminated — the crop boxes picked up neighboring relief that is not part of the sign. The question: can we recut them cleanly enough to promote `M-37 +520-220-415+` into a clean same-site `415` control? (The numbers `520`, `220`, `415`, `034` are local numeric sign labels — transcription codes, not readings. A control is a known comparison crop we measure the target against.)
 
 This matters because `M-37` is the same-site, same-object-type, same-material, same-shape comparator for `M-1206 +520-220-034+`. If `M-37` can be made clean, it becomes the best same-site `415` control. It still does not automatically become the closest visual match to M-1206; that is a separate graphic judgment.
 
@@ -63,7 +63,7 @@ The old T004/T005 contamination exaggerated the uncertainty, but the comb/rake p
 The primary recut `M37_A_terminal_strict_core_from_signband.png` is clean enough to function as the same-site isolated `415` terminal control.
 ```
 
-What remains blocking:
+What remains blocking (comparanda are simply the comparison pieces we hold the target against):
 
 ```text
 M-37 still reads as a heavier comb/rake-with-stem subform.
@@ -92,7 +92,7 @@ H-938/H-940: vertical-bundle profile
 M-37: comb/rake-with-stem profile
 ```
 
-That increases sign-inventory pressure. It can support either:
+That increases sign-inventory pressure — pressure on the question of how many distinct signs the script actually has. It can support either:
 
 ```text
 local 415 is a broad graphemic/transcription bin
@@ -110,6 +110,8 @@ any translation
 ```
 
 ## Effect On The M-1206 Allograph Decision Gate
+
+Allographs are variant written forms of one and the same sign; the allograph decision gate is the checkpoint where we would decide whether `034` and `415` are that. This recut changes the standing of the controls, not the decision itself.
 
 Keep:
 

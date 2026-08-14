@@ -1,3 +1,18 @@
+"""Measure terminal space on the actual seal images, in pixels.
+
+The terminal-space adversary says: maybe tails after 861 appear only where
+the seal had room left, and bare closures appear where it did not. To test
+that we need measurements from source images, not catalog text. This script
+takes the source-ready rows, pulls previously drawn pixel boxes — tail
+windows for tailed rows (from the token-attachment packet) and hard-coded
+bare-edge/margin boxes for six bare controls — and computes widths, area
+shares, and edge gaps for each. Rows with images but no boxes are kept as
+visual-only, unquantified. It then writes decision rows (the key one: every
+measured bare margin is smaller than the smallest measured tail window, so
+grammar promotion stays blocked), per-class summaries, a metrics CSV, a JSON
+summary, and a contact-sheet PNG of all the crops with their numbers.
+"""
+
 from __future__ import annotations
 
 import csv

@@ -1,6 +1,19 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// If the H-2218..H-2239 tablets really follow a three-slot template -- each object carrying
+// one 861-003 side, one 700-03x side, and one 15x-003 side -- then hiding any one side of
+// any tablet should let us reconstruct it from the other two. This script runs that test.
+// It reads the side-role template CSV and, for every object and every hidden side, predicts
+// the missing side two ways: the role is whichever of the three roles the visible sides do
+// not cover, and the exact text is the majority text for that role in a leave-one-out
+// training set (the object itself excluded). Two baselines -- majority text per side index
+// and one global majority -- give comparison floors. It writes every prediction, a failures
+// CSV, and a JSON summary with accuracies. The expected shape of the result: role
+// prediction succeeds everywhere, and the only exact-text failures are the two singleton
+// variants (H-2237's 154 and H-2238's 033), which stay flagged as source-validation
+// targets. Catalog-side structure only; no side function or reading is accepted.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 const inputCsv = path.join(reportsDir, 'lipi_h2218_h2239_side_role_templates.csv');

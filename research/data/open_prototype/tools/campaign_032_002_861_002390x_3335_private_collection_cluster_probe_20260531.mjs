@@ -1,3 +1,18 @@
+// Follows one provenance clue for the blocked row 3335.1: an old commit of the
+// Yajnadevam Lipi repo marked it museum="Private collection". If that put it in
+// a batch of private-collection objects with images, we might find a source
+// bridge. This script reads the already-cloned repo trace (under
+// tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo), uses git show to pull
+// the inscriptions.csv from the old and schema-change commits, and compares
+// every private-collection row across the old, schema, and current layers. It
+// checks the repo's seal-image mapping JSON for every plausible key, greps the
+// repo for the target strings, and lists the commit history that touched
+// "Private collection". Results go to five CSVs and a summary JSON under
+// data/open_prototype/reports/. The baked-in outcome: the cluster is just two
+// rows (3335 and its sibling 3118), neither has an image mapping, so "Private
+// collection" is an acquisition clue, not a source bridge, and no value or
+// reading is accepted.
+
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";

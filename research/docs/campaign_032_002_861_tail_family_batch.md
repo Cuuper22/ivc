@@ -4,7 +4,9 @@ Date: 2026-05-29
 
 ## Question
 
-The bare-edge packet made the contrast source-visible. The next question is not one row or one sign:
+This note batches several tail families through one distributional test at once. A "tail" is material that follows the sign pair `002-861` at the end of an inscription row (signs are numeric IDs); a "family" is a set of rows sharing the same tail.
+
+The bare-edge packet made the contrast source-visible — the photographs show real tailed rows and real bare rows. The next question is not one row or one sign:
 
 ```text
 Which post-861 tail families behave like restricted post-closure material,

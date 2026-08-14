@@ -1,3 +1,16 @@
+// Scores blind reviews for the M-70 order-window pilot. Reviewers judged
+// seal images under blind IDs, calling yes/no/uncertain on whether the
+// target sign relation is present. The packet mixes real targets, positive
+// calibrators (planted easy positives that competent reviewers should
+// catch), scoring negatives (where "yes" is a false positive), and
+// quarantined negatives kept out of the false-positive denominator. This
+// script joins each review CSV (CLI arguments, or the default reviews
+// directory) against the answer key, tallies outcomes per reviewer, and
+// computes target recovery rates plus yes-only and conservative false-
+// positive rates. The gate fails on fewer than two reviewers, any target
+// not strictly recovered, or any hard hit on a scoring negative — and even
+// a pass adds zero accepted claims. Writes a JSON summary and a scored-rows
+// CSV; with no reviews present it writes a not-scored summary and exits.
 import fs from 'node:fs';
 import path from 'node:path';
 

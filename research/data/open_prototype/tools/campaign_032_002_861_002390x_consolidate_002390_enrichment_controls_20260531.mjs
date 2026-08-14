@@ -1,3 +1,15 @@
+// Control battery for the enrichment claim behind the 002-390 frame: when 390
+// is preceded by 002, its successor is supposed to land in the branch set
+// {095, 705, 125, 530, 590, 692} more often than when 390 stands alone. That
+// could be an artifact of where the framed rows come from (one site, one object
+// type, damaged texts). So this script collects every 390 successor in the
+// local Lipi metadata, tags it framed or unframed, and recomputes the
+// framed-minus-unframed enrichment gap inside eight scopes: all rows, SEAL:S
+// only, TAB:B only, Mohenjo-daro only, non-Mohenjo, complete texts, good/fine
+// condition, and CISI-named objects. Each scope gets a verdict (survives, weak,
+// damaged, or underpowered when samples are too small). Writes a controls CSV
+// and a summary JSON to data/open_prototype/reports/.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

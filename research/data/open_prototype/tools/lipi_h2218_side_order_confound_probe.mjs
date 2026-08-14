@@ -1,3 +1,21 @@
+// Confound check for the H-2218..H-2239 tablet group: could the A/B side-order
+// split we see in Fig. 4 just be an artifact of how the catalog ordered the
+// objects, or of which manufacturing group each tablet belongs to?
+//
+// The script reads lipi_h2218_h2239_fig4_mapping.csv (22 tablets, each with a
+// local side-order signature such as 'A' or 'B_side_swap'). It then runs exact
+// permutation tests: it enumerates every way the observed number of B labels
+// could be scattered over the rows, and asks how often chance alone would
+// produce (1) a group-vs-label chi-square as large as observed, and (2) as many
+// adjacent B-B pairs in the Fig. 4 numbering as observed — both overall and
+// within manufacturing groups. Because the samples are tiny, the full
+// permutation space is enumerated, so the p-values are exact, not simulated.
+//
+// It writes a per-tablet detail CSV, a test-results CSV, and a JSON summary
+// (lipi_h2218_h2239_side_order_confound_*). The point is to rule confounds in
+// or out before anyone leans on the A/B split; the probe deliberately claims
+// nothing about what the sides mean or say.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

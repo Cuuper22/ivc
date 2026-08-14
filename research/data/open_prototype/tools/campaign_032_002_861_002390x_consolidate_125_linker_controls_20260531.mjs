@@ -1,3 +1,17 @@
+// Control battery for the "125 is a linker" claim: in 002-H-125 frames (002,
+// any head sign H, then 125), 125 rarely ends the inscription — it links to a
+// complement. But repeated formulas at one site could fake that. This script
+// finds every 002-H-125 frame in the local Lipi metadata, assigns what follows
+// 125 to a lane (terminal, the 632-032 lane, the 032 lane, the 820 lane, or a
+// singleton), and rechecks the pattern in eight scopes: all rows, the 002-390
+// frame only, Mohenjo-daro only, non-Mohenjo, SEAL:S only, complete texts,
+// good/fine condition, and CISI-named objects. A lane counts as real support
+// only if it repeats across sites or across head signs. Writes controls, lane,
+// and decisions CSVs plus a summary JSON to data/open_prototype/reports/.
+// Recorded verdict: the linker candidate survives wounded — the strongest
+// repeated lane (632-032) is Mohenjo-daro-local, so it is demoted to
+// site-local formula risk.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

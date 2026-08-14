@@ -1,3 +1,23 @@
+// Shuffle-based baseline for the corpus's structural statistics — the
+// simpler sibling of lipi_structured_null_comparator.mjs. Instead of
+// generating sequences from invented codes, this script permutes the real
+// corpus's own signs under four increasingly strict constraints and asks
+// which observed statistics survive.
+//
+// It reads lipi_scope_rows.csv (numeric-clean rows) and measures duplicate
+// structure, stored-vs-reversed bigram preference, and masked-token
+// prediction accuracy (frequency, position, length-position, and
+// bidirectional-bigram models). The four shuffles preserve, in order: (1) row
+// lengths and global sign frequencies; (2) plus separate first/last/interior
+// sign pools; (3) plus each row's exact first and last signs; (4) every
+// length-position slot's token multiset. 3 seeded iterations per shuffle by
+// default (IVC_SYNTHETIC_ITERATIONS overrides).
+//
+// Outputs: lipi_synthetic_comparator_iterations.csv, _summary.csv, and
+// _summary.json. If a shuffle reproduces a statistic, that statistic reflects
+// only the structure the shuffle preserved; a shuffle that fails to match
+// proves nothing about meaning.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

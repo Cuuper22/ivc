@@ -1,3 +1,16 @@
+// Collapse controls for the six named parser rules (NULL_000, TERMINAL_095,
+// TERMINAL_705, OPEN_530, OPEN_125, EXCEPTION_HOOKS). A rule can look strong
+// while all its support sits at one site or under one head sign — that is
+// concentration, not grammar. This script reads the expand-phase parse rows
+// (with their per-row prediction pass/fail) and the source-adjudication target
+// list, groups the rows by rule, and grades each rule on pass rate, distinct
+// sites and heads, and top-site/top-head concentration shares. Thresholds
+// yield a status: survives the collapse control, keep-but-source-gate, fragile
+// subrule, or demoted; each rule also gets its next destructive test. Writes
+// rules and decisions CSVs plus a summary JSON to data/open_prototype/reports/.
+// Recorded outcome: NULL_000 is the only rule that survives the broad collapse
+// control; everything else stays source-gated, fragile, or demoted.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

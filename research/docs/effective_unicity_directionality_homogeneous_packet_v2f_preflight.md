@@ -4,9 +4,13 @@ Date: 2026-05-29
 
 Status: failed preflight. Accepted claim increment: 0.
 
+## What This Note Is
+
+This note records a preflight check — the mechanical inspection a blind review packet must pass before any reviewer sees it. The packet under design was the next version (`v2f`) of the no-overlay directionality packets: bundles of seal-image crops scored by reviewers who cannot see the catalog answers. "Homogeneous" means every crop in the packet should look like the same kind of image — a signband strip, the horizontal band of signs — so that no crop's style gives away its role.
+
 ## Question
 
-Can the widened v2e signband-like pool be promoted into a homogeneous no-overlay blind packet for `H-654`, `M-1310`, `M-1320`, and `M-811`, with 12 fixed real-negative controls?
+Can the widened v2e signband-like pool — the crop collection assembled in the previous (`v2e`) acquisition pass — be promoted into a homogeneous no-overlay blind packet for `H-654`, `M-1310`, `M-1320`, and `M-811`, with 12 fixed real-negative controls?
 
 Answer: no.
 

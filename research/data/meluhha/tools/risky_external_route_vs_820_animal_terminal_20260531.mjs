@@ -1,3 +1,16 @@
+// A "risky bet" discriminator (2026-05-31): external-contact Indus objects
+// should carry the route/register signal, not the animal-terminal signal. The
+// bet makes a double prediction: signs 090/091 (and 407) should be enriched in
+// the external set — especially circular SEAL:C rows — while the newly found
+// terminal 002-820 pattern should be absent there. The script reads the lipi
+// metadata and external objects table, dedupes exact texts, scores the external
+// rows for both signals, and runs a 50000-iteration type-matched null: each
+// external row is swapped for a random non-external row of the same object
+// type, counting how often chance produces the route enrichment (alone, jointly
+// with a clean 002-820 count, and within SEAL:C). Tier is "candidate" if the
+// route false-positive rate is at or below 0.01. No sound value or bilingual is
+// claimed — this only tells the V1 search which objects to chase. Writes a JSON
+// report plus route-row, per-type-summary, and sample-iteration CSVs.
 import fs from 'node:fs';
 import path from 'node:path';
 

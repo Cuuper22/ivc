@@ -1,6 +1,20 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script re-weights every 002-390-X claim by how good its source evidence
+// is, not just how the corpus counts fall. It reads the branch-sign-ecology
+// frames CSV, maps each row's source_status string onto a tier (strict on a
+// verified image, panel-but-not-strict, route-only, unbound, source-dark,
+// metadata-only), and assigns each X sign a role (125 open-branch carrier,
+// 095/692/705 terminal closure family, 530 one-complement linker, 590 bridge,
+// or singleton filler). Only strict rows may be "load_bearing_syntax"; panel
+// rows are pressure, everything else is background. Six contradiction checks
+// then pin the surviving shape: 125 must always continue, the closed family
+// must always end, the closed family has just two strict rows (M-70, M-71),
+// 530 and 590 survive only as untested predictions, and the singleton fillers
+// carry nothing. Writes row-classification, per-X summary, and contradiction-
+// check CSVs plus a summary JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const framesPath = path.join(reportsDir, 'campaign_032_002_861_002390x_branch_sign_ecology_20260531_002390_frames.csv');

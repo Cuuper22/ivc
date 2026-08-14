@@ -1,6 +1,21 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Real grammar should travel between cities; a copied seal-workshop formula
+// should not. This script tests that by predicting each 002-HEAD-X frame's
+// open-or-terminal outcome using only rows from OTHER sites. It scans
+// lipi/metadata_filtered.csv for frames whose X is on the campaign's
+// terminal-booster or open-operator lists, then scores three cross-site
+// predictors per row (each needing 2+ training rows): majority vote over
+// same-head rows elsewhere, same-X rows elsewhere, and same
+// type/shape/material context rows elsewhere — the visual-copying proxy.
+// Comparing accuracies decides the headline bet: head transfer must beat the
+// context predictor for the grammar reading to hold. Side bets check whether
+// head 220 stays open across sites and record that 390 by itself does not
+// transfer — its behavior rides on the X slot. Writes scored rows, focus
+// rows, per-head summaries, and bets as CSVs plus a summary JSON to
+// data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

@@ -1,3 +1,17 @@
+"""Acquire public source images for three branch-tail seals and log the blocked ones.
+
+Three seals with branch tails after 002 (M-240, M-91, M-70) previously had
+only local reference routes — a catalog number but no viewable image. This
+script downloads the three CISI India page scans that show them from the
+Internet Archive at 2000px width, crops each seal's face-A and impression-a
+panels plus tighter signband crops using hand-picked pixel boxes, and builds
+a labeled contact sheet. Two further rows stay blocked and are recorded as
+such: M-1677 needs CISI volume 3.1 or an excavation archive, and object
+3335.1 cannot be routed because its corpus row has no identifying handle.
+Writes a crops CSV, a routes CSV (upgraded and blocked rows together), and a
+JSON summary.
+"""
+
 from __future__ import annotations
 
 import csv

@@ -1,3 +1,15 @@
+// Consolidation scorecard for the 002-390-X campaign: after a dozen expand-phase
+// experiments, which model pieces survived, and in what shape? This script does
+// no new analysis of inscriptions. It reads twelve earlier expand-phase summary
+// JSONs from data/open_prototype/reports/ (edge transfer, polarity tails, head
+// signatures, negative controls, chain tests, frame-marker controls, and more)
+// and hand-ranks the surviving pieces: the 002 frame license, 390 as a
+// status/title head, the X polarity slot, 125 as a wounded linker, 095/705 as
+// strengthened wild-shot terminal classifiers, and 000 as a damaged terminal.
+// It also lists the claims that were killed, demoted, or blocked, and states
+// the smallest parser that still stands. Writes model, killed, and
+// minimal-parser CSVs plus a summary JSON with the next consolidation tests.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

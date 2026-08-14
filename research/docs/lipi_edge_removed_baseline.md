@@ -4,9 +4,9 @@ Date: 2026-05-24
 
 ## Purpose
 
-This experiment asks whether the broad filtered `lipi` structural signal is mostly an artifact of high-frequency initial and terminal signs.
+This note records a stress test on `lipi`, the project's filtered working corpus of Indus sign sequences. Earlier baselines found a broad structural signal in that corpus: sign order beats simple baselines. The question here is whether that signal is mostly an artifact of high-frequency edge signs, meaning the signs that most often open or close a sequence.
 
-It follows the [Lipi deduplicated order baseline](lipi_dedup_order_baseline.md) and the [Lipi leakage-controlled held-out baseline](lipi_leakage_control_baseline.md). It ranks signs by edge count, removes the top edge signs from every strict numeric-clean sequence, drops empty rows, collapses exact duplicate resulting sequences, and reruns stored-order, masked-sign, and leakage-controlled held-out checks.
+It follows the [Lipi deduplicated order baseline](lipi_dedup_order_baseline.md) and the [Lipi leakage-controlled held-out baseline](lipi_leakage_control_baseline.md). The method is simple. Rank signs by edge count (how often a sign starts or ends a row). Remove the top edge signs from every strict numeric-clean sequence, meaning rows that pass the project's strictest parsing filters. Drop rows that become empty. Collapse exact duplicate resulting sequences into one. Then rerun three checks: stored-order (does the recorded sign order score higher than its reverse), masked-sign (hide a sign and predict it from its neighbors), and leakage-controlled held-out prediction (test on splits whose exact sequences were removed from training).
 
 This is an artificial stress test. It does not propose removing these signs from the corpus. It asks whether the remaining interior and non-top-edge structure still carries signal.
 
@@ -101,7 +101,7 @@ The bidirectional model loses about a third of its duplicate-collapsed top-1 acc
 
 ## Leakage-Controlled Held-Out Results
 
-These rows use exact duplicate collapse after edge removal and remove from training every exact resulting sequence that appears in the held-out test split.
+A held-out split keeps one artifact type or site out of training and tests on it. These rows use exact duplicate collapse after edge removal and remove from training every exact resulting sequence that appears in the held-out test split, so the model cannot succeed by memorizing shared sequences. OOV share is the fraction of test signs never seen in training.
 
 Selected top-10 edge-removal results:
 
@@ -125,10 +125,10 @@ This control separates two facts that both matter:
 - High-frequency edge signs carry a large share of the broad structural signal.
 - They do not explain all of it. Stored-order likelihood and bidirectional held-out exact-sign prediction remain above simple baselines after removing the top 10 edge signs.
 
-The remaining signal is still not a reading. It is a structural residue that now needs stricter controls:
+The remaining signal is still not a reading. It is a structural residue — a leftover signal that survives the control — and it now needs stricter controls:
 
 - terminal-class rather than exact-terminal prediction,
-- nonlinguistic administrative and emblematic comparators,
+- nonlinguistic administrative and emblematic comparators (comparison systems that carry structure without language),
 - and reproduction on authoritative or image-validated corpora.
 
 The formula-family downweighting follow-up is recorded here:
@@ -161,4 +161,4 @@ The next tests should ask:
 
 - Does terminal-class prediction remain after exact terminal signs are removed?
 - Can nonlinguistic administrative or emblematic controls reproduce the same residual profile?
-- Does an authoritative M77/CISI/ICIT or image-validated corpus reproduce the same profile?
+- Does an authoritative M77/CISI/ICIT corpus (Mahadevan 1977, the Corpus of Indus Seals and Inscriptions, or the Interactive Corpus of Indus Texts) or an image-validated corpus reproduce the same profile?

@@ -1,3 +1,16 @@
+// Asks: can we figure out which physical object Lipi row 3335.1 is, using only
+// the local metadata table? Row 3335.1 (+740-205-032-002-390-590-032+) has no
+// CISI id, so we probe every local identity route: rows within 12 positions of
+// it in file order (row order loosely tracks catalogue order), rows with the
+// exact same sign text, rows sharing the diagnostic chunks 032-002-390 and
+// 390-590-032, cisi-less rows scored by a similarity function (shared metadata
+// fields, near-identical dimensions in mm, longest common sign subsequence,
+// shared chunks), all RAF-cult rows, and rows with the same
+// type/symbol/cult/shape profile. Each probe gets its own CSV under
+// data/open_prototype/reports/, plus a decisions CSV and a summary JSON.
+// The finding baked into the decisions: no local route bridges the identity —
+// external source acquisition is still required, and 3335.1 stays inadmissible.
+
 import fs from "node:fs";
 import path from "node:path";
 

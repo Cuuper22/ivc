@@ -1,6 +1,17 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// The simple rule "after 002-H, sign 125 always means the text continues" is dead — some
+// rows end right at 125. This script performs the autopsy and looks for what conditions the
+// split. It reads data/open_prototype/lipi/metadata_filtered.csv, extracts every 002-H frame
+// with its X slot, and isolates the rows where X is 125. It then slices those rows two ways:
+// by scope cell (site|type|shape|material, e.g. Mohenjo-daro square seals versus Harappa
+// square seals) and by head sign, marking each slice as open, terminal, or mixed. The bets it
+// records: the universal-switch claim is formally killed; 125 is instead a head-conditioned
+// switch (open under heads 190/390/405/407/610, terminal under 861/906); a site/register
+// split and head-conditioned tail classes are wilder shots. Writes the 125 rows, the scope
+// and head summaries, and the bets as CSVs plus a summary JSON in reports/.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');

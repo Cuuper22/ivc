@@ -1,6 +1,19 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// A negative control for the 390 status-head bet: if the classifier-versus-
+// linker route split shows up after every frequent head, it says nothing
+// special about 390. This script scans lipi/metadata_filtered.csv for every
+// 002-HEAD-X occurrence, routes X into terminal classifiers or linkers using
+// the campaign's sign lists, and computes for each head (5+ occurrences) a
+// route-separation score: the classifier terminal rate minus the linker
+// terminal rate, plus a small bonus when linker texts run longer than
+// classifier texts, requiring at least 3 rows on each side. A non-390 head
+// scoring 1.0 or higher is a "dangerous_negative_control" — evidence the
+// split is generic. The summary reports 390's own score and whether any
+// dangerous controls exist. Writes the head-control table and the bet as
+// CSVs plus a summary JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

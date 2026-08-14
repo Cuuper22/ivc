@@ -1,6 +1,17 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// For each object in the two-lane source packet, this script answers one practical question:
+// through which door can we actually get source-grade images of it? It reads the packet CSV,
+// collapses its rows to unique CISI objects, and joins each to a hand-researched route table
+// built on 2026-05-25. Every route names a class (Internet Archive OCR hit in the scanned
+// CISI volume 1 or 2, a CISI 3.1 library-or-purchase request, a public Harappa.com or
+// Kenoyer 1997 Table 2 identity lead, or "source request only" when nothing public
+// surfaced), the target volume, a URL, OCR hit counts where applicable, and a note. Output
+// is one CSV sorted core-first and one JSON summary with route-class counts. The routes are
+// acquisition paths only -- an OCR hit locates a plate, it validates nothing about the
+// signs on it.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 const packetPath = path.join(reportsDir, 'lipi_frame700_034_two_lane_source_packet.csv');

@@ -1,3 +1,22 @@
+// Web scout for the 17-artifact plate request packet. Validating the
+// short-mark hypothesis needs photographs ("plates") of specific tablet
+// sides; before asking archives for them, this script checks whether any
+// public web page already shows or discusses the target artifacts.
+//
+// It reads lipi_short_mark_plate_request_packet.csv for the target CISI ids,
+// fetches three fixed source pages (a concordance-style blog, a published
+// Nature article with direction notes, and a claim-heavy image blog) plus one
+// Blogger Atom search feed per artifact. Each fetched page is scanned for
+// artifact-id mentions (exact, ranges like H-2218-2239, and elided lists),
+// nearby <img> tags, and claim-heavy vocabulary (rebus, decipherment, bill of
+// lading, ...), which flags how cautiously a source must be treated.
+//
+// Every hit becomes a graded lead row: image-URL match, mention with nearby
+// image, published direction note, or text-only lead. Outputs:
+// lipi_short_mark_plate_public_leads.csv, _lead_pages.csv, and _summary.json.
+// Leads are source-discovery pointers only; every row carries an explicit
+// needs-manual-check flag and a list of uses the lead cannot support.
+
 import fs from 'node:fs';
 import http from 'node:http';
 import https from 'node:https';

@@ -1,3 +1,17 @@
+"""Hunt for source routes (photos or page references) for three control seals.
+
+The 740-X-240-060-692 slot family needs its control rows — H-823, H-1845, and
+H-237 — to have real image sources before they can balance the 603 target. A
+source route is any path from an inscription ID to an actual page or photo: an
+OCR hit in the Internet Archive scans of the CISI volumes, or a mention in a
+local text file. This script downloads (or reuses) the DjVu OCR XML for the
+India and Pakistan CISI volumes, searches every page for each target's route
+terms, searches five local text files the same way, and then assigns each
+target a new status and a working source weight (a 0-1 judgment of how solid
+its route is). It writes hit CSVs, a decisions CSV, a JSON summary, and a
+Markdown report in docs/. It routes evidence; it does not read signs.
+"""
+
 from __future__ import annotations
 
 import csv

@@ -3,18 +3,24 @@
 // =================================================================
 // Build the IVC corpus SQLite database from the curated CSV/JSON seeds.
 //
+// Why this exists: the seeds under research/data/ are the source of truth,
+// but flat files cannot check their own cross-references. Loading them into
+// SQLite makes the integrity rules machine-enforced — the manual
+// sign_crosswalk audit, automated on every build.
+//
 // Runtime: Node >= 22.5 (built-in node:sqlite — no npm install, no native build).
 //
 //   node --no-warnings db/build_db.mjs                      # uses research/data/
 //   node --no-warnings db/build_db.mjs --data research/data --db db/ivc.sqlite
 //
 // Non-destructive: reads the data dir, writes only the .sqlite file and
-// db/audit_report.json. The CSV/JSON seeds remain the source of truth.
+// db/audit_report.json. The CSV/JSON seeds stay the source of truth; the
+// database is a rebuildable artifact you can delete and regenerate.
 //
-// Loads the sign_crosswalk tables + claim ledger, derives the artifact table,
-// catalogs every data file (size, sha256, csv rows), and runs an integrity audit
-// (duplicate PKs, dangling foreign keys, missing claim-evidence paths) — the
-// manual sign_crosswalk audit, automated.
+// What a build does: loads the sign_crosswalk tables + claim ledger, derives
+// the artifact table, catalogs every data file (size, sha256, csv rows), and
+// runs an integrity audit (duplicate PKs, dangling foreign keys, missing
+// claim-evidence paths).
 
 import { DatabaseSync } from 'node:sqlite';
 import { createHash } from 'node:crypto';
@@ -34,7 +40,7 @@ const issue = (severity, code, obj, ref, message) =>
 const rel = p => path.relative(ROOT, p).split(path.sep).join('/');
 const nz = v => (v === undefined || v === '') ? null : v;
 
-// ---- minimal RFC4180 CSV parser ----
+// ---- minimal CSV parser (RFC 4180: quoted fields, doubled quotes) ----
 function parseCSV(text) {
   const rows = []; let row = [], field = '', inQ = false, i = 0;
   const n = text.length;
@@ -116,7 +122,7 @@ function loadClaims() {
         let exists = null;
         if (p && !isUrl) {
           exists = fs.existsSync(path.join(ROOT, p)) ? 1 : 0;
-          // claim paths predate the data/ -> research/data/ reorg; resolve that too
+          // Older claims cite paths from before the data/ -> research/data/ reorg; check that location too.
           if (!exists && p.startsWith('data/')) exists = fs.existsSync(path.join(ROOT, DATA_DIR, p.slice(5))) ? 1 : 0;
         }
         estmt.run(c.claim_id, k, nz(p), nz(s), exists); ne++;

@@ -2,7 +2,7 @@
 
 Date: 2026-05-30
 
-This is the hostile follow-up to the Brahmi v3 independence gate. Instead of asking whether random abstract shape evolution can imitate an Indus-to-Brahmi match, it samples real Indus source-token crops from other signs as impostors. The question is narrower and nastier: can unrelated Indus token crops, matched by orientation and filtered away from the same CISI, source path, and exact token hash, reproduce the apparent Brahmi modal-label agreement?
+This is the hostile follow-up to the Brahmi v3 independence gate. Earlier nulls asked whether random abstract shape evolution could imitate an Indus-to-Brahmi match. This forger asks something narrower and nastier: it takes real Indus source-token crops from other signs and uses them as impostors. Can unrelated Indus token crops — matched by orientation, and filtered away from the same CISI, source path, and exact token hash — reproduce the apparent Brahmi modal-label agreement?
 
 Yes, often enough to block promotion. No phonetic anchor survives.
 
@@ -31,7 +31,7 @@ For each v2 sign/orientation family, the forger:
 - samples 1,000 impostor families without replacement when the pool is large enough,
 - counts an impostor as matching or beating the observed family if its modal-label count is at least the observed modal count and its mean modal distance is at most the observed mean modal distance.
 
-This forger does not accept a row by itself. A row must also survive the v3 independence preflight and the original v2 shape/label null gates before it can become a visual-review candidate.
+The forger cannot accept a row on its own. To become a visual-review candidate, a row must also survive the v3 independence preflight and the original v2 shape/label null gates.
 
 ## Result
 
@@ -80,4 +80,4 @@ The most tempting low-null rows are not promotable either. `527` order and `061`
 
 Retracted as a descendant-script phonetic anchor. The real-token impostor forger accepts zero rows and promotes zero visual-review candidates.
 
-Residual value: this closes a loophole in the Brahmi back door. Shape similarity is no longer judged only against abstract randomized shapes; it is also judged against real Indus token crops from other signs. Future Brahmi anchors must beat v2 shape/label nulls, v3 source-token independence, and this real-token impostor null before they can count as candidate phonetic evidence.
+What this run still buys us: it closes a loophole in the Brahmi back door. Shape similarity is no longer judged only against abstract randomized shapes; it is also judged against real Indus token crops from other signs. Any future Brahmi anchor must beat v2 shape/label nulls, v3 source-token independence, and this real-token impostor null before it can count as candidate phonetic evidence.

@@ -1,3 +1,18 @@
+// Maps the "ecology" of the four focus branch signs (125, 095, 692, 705): how
+// each behaves everywhere it appears in the local Lipi metadata, not just after
+// the 002-390 frame. For every occurrence it records position, the two signs on
+// each side, whether the sequence ends there, and whether it sits inside a
+// 002-390 frame; it also extracts every 002-390 frame with its branch sign and
+// tail. From these it builds per-sign summaries (terminal versus continuing,
+// inside versus outside the frame), a per-branch frame summary, and an
+// exceptions list (capped at 50 rows per test) for cases that stress the model,
+// like a terminal 125 or a continuing non-125. Each object carries a source
+// tier from the active delegation checkpoint (see CHECKPOINT_SOURCE_STATUS);
+// a hand-written source-binding recheck table records why the Dholavira,
+// M-1825, and H-1993 routes are still not strict evidence. Writes six CSVs and
+// a summary JSON to data/open_prototype/reports/. No linguistic value follows:
+// the ecology supports testing a constructional slot, nothing more.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

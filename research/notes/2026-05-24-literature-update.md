@@ -16,7 +16,7 @@ Submitted: 2026-04-20
 
 Why it matters:
 
-- It directly attacks the weak-baseline problem.
+- It directly attacks the weak-baseline problem: claims about the Indus script often look strong only because they were tested against weak alternatives.
 - It compares Indus data against synthetic heraldic and administrative systems.
 - It uses metrics central to the Farmer-Sproat-Witzel critique: brevity, repeated formulae, hapax rate, and positional rigidity.
 - It reports an intermediate result rather than a clean "language" or "not language" outcome.
@@ -25,7 +25,7 @@ Important caution:
 
 - The abstract says all code and data are publicly available.
 - The arXiv comments say code is available from the corresponding author upon request.
-- Treat this as a reproducibility flag until code/data are actually obtained.
+- Those two statements do not match. Treat this as a reproducibility flag until code/data are actually obtained.
 
 Project impact:
 

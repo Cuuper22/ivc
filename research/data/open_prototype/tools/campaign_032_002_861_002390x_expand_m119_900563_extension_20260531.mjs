@@ -1,6 +1,20 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Seal M-119 ends its 125-632-032 title tail with two extra signs: 900-563.
+// This script checks whether that ending is a real secondary extension or
+// just noise, and guards against over-reading either sign. It reads
+// lipi/metadata_filtered.csv, deduplicates by sign sequence, and collects
+// every occurrence of signs 900 and 563 with their neighbors, plus every
+// match of four nested patterns: 900-563, 032-900-563, 632-032-900-563, and
+// the full 125-632-032-900-563. The three bets are mostly negative guardrails:
+// the M-119 extension parse stays a wild-shot singleton while 900-563 appears
+// only once; 563 must not be given a sign value on one row of evidence; and
+// 900 is too productive and heterogeneous for its raw frequency to prove
+// anything — only an exact repeated 900-563 tail could promote the parse.
+// Writes sign rows, pattern rows, bucket summaries, and bets as CSVs plus a
+// summary JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

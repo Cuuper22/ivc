@@ -1,3 +1,15 @@
+// Tests whether sign `407` is tied to the copper-tablet register: objects of
+// copper material or type TAB:C. The claim is about carriers, not sound — 407
+// should recur on copper tablets at a rate no frequency-comparable sign matches.
+// The script reads metadata_filtered.csv, collapses duplicate sign sequences, and
+// runs the same enrichment machinery over eight contexts: copper material, TAB:C
+// type, their intersection, and that intersection restricted to Mohenjo-daro,
+// complete rows, non-poor rows, and the Mohenjo-daro/complete and
+// Mohenjo-daro/non-poor combinations. In each context every sign gets a right-tail
+// Fisher test, 407 is ranked among them with a Bonferroni correction, and a
+// 2,000-iteration forger redraws the context rows at random to price both 407's p
+// and the best-of-all-signs p (max-stat). Writes a bet summary (JSON + CSV) plus
+// per-context, support-row, and per-sign CSVs to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

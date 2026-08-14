@@ -2,11 +2,13 @@
 
 Date: 2026-05-31 America/Los_Angeles
 
-Status: active source gate, not goal completion.
+This note re-examines one seal, Sktd-1 from Surkotada, against its published photograph. The goal is to decide how much evidential weight the object may carry: is it merely a name in a catalogue, or can we see it — and its inscription — on a real source page? The answer lands in between, and the note records exactly where.
+
+Status: active source gate, not goal completion. (A "gate" is a check that must pass before evidence is allowed into the analysis.)
 
 ## Question
 
-Can Sktd-1 be upgraded inside the `004 -> 002-390` matched-predecessor split?
+Can Sktd-1 be upgraded inside the `004 -> 002-390` matched-predecessor split — the comparison between rows that share the sign `004` right before `002-390` but diverge after it?
 
 Local row:
 
@@ -31,17 +33,17 @@ No value, phonetics, language identity, function, sign meaning, or translation i
 
 ## Observations
 
-The source page is stronger than a generic public route. CISI India leaf `n397` / printed page `362` visibly labels the lower Surkotada row as `Sktd-1 A` and `Sktd-1 a`, under the page heading `Surkotada 1-2 seals`.
+The source page is stronger than a generic public route. CISI India leaf `n397` / printed page `362` visibly labels the lower Surkotada row as `Sktd-1 A` and `Sktd-1 a` — the seal face and its impression, the "side pair" — under the page heading `Surkotada 1-2 seals`.
 
-The object is therefore public panel-bound at the source-page side-pair level.
+The object is therefore public panel-bound at the source-page side-pair level: we can see the labeled object and its impression on the published page.
 
-The remaining problem is token order, not object reachability. Both views show a wrapped layout:
+The remaining problem is token order, not object reachability. Both views show a wrapped layout — the inscription does not sit on one line but spills into the field below:
 
 - `Sktd-1 A` has a top inscription band plus a separate lower-field sign near the left side of the animal/body field.
 - `Sktd-1 a` has the mirrored source view, with a top inscription band plus a separate lower-field sign near the right side.
 - The top-band crops are visually compatible with the central `002-390-125` window under local `R/L` policy, but the full local six-token row is not a single clean top-line band.
 
-That lower-field sign is exactly why this does not become strict token proof. The source panel supports object/side visibility and broad layout compatibility; it does not independently derive the local numeric order `390-004-002-390-125-820`.
+That lower-field sign is exactly why this does not become strict token proof. Because the layout wraps, the photograph alone does not tell us where that stray sign belongs in the reading order. The source panel supports object/side visibility and broad layout compatibility; it does not independently derive the local numeric order `390-004-002-390-125-820`.
 
 ## Decision
 
@@ -56,7 +58,7 @@ What changes:
 What does not change:
 
 - Sktd-1 remains below strict `M-119/M-735` source-visible `125` witnesses.
-- The exact `002-390-125-820` path remains catalog-mediated.
+- The exact `002-390-125-820` path remains catalog-mediated: we still take it on the catalogue's word, not the image's.
 - The `004` matched-predecessor split remains blocked because H-1993 is still route-only/no image.
 - Sktd-1 cannot be counted as strict source-controlled branch evidence.
 

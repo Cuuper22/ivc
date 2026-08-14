@@ -1,3 +1,15 @@
+// Stress-tests the "effective unicity" claim for terminal governors: given
+// that a text's second-to-last sign is 002 or 060, the final sign should be
+// nearly predictable. We read the filtered corpus metadata (complete texts
+// only), collapse to one unit per exact text, and run leave-one-site cross-
+// validation — for each site, predict its held-out finals from the
+// penultimate-to-final distribution trained on the other sites (needing at
+// least 5 training examples per penult). We report top-1/top-3 accuracy,
+// mean true probability, and effective candidate count (2^entropy), for
+// governor rows versus all other penults. Four panels repeat this after
+// removing Mohenjo-daro SEAL:S, Harappa SEAL:S, or both, to show the signal
+// is not one site-type block. A 100-iteration final-label shuffle gives the
+// null. Writes one JSON report.
 import fs from 'node:fs';
 import path from 'node:path';
 

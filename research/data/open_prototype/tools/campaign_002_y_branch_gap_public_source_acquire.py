@@ -1,3 +1,19 @@
+"""Finds public page images for the 002-Y branch-gap seals.
+
+We have catalogue rows (from campaign_002_y_partition_source_queue.csv) where sign
+002 is followed by a branch-pole sign 368, 031, or 220, but no source image to
+check them against. The public CISI volumes (Corpus of Indus Seals and
+Inscriptions, India and Pakistan) are scanned on archive.org with an OCR text
+layer. This script searches that OCR layer for each object's CISI label (e.g.
+"M-12"), downloads the matching page images, scales the OCR label box to image
+coordinates, and saves a context crop plus an autocontrast-enhanced 2x version
+with the label outlined in red. It writes a route table, a per-target status
+table, a summary JSON under data/open_prototype/reports/, and a contact sheet.
+Everything is a route candidate only: the crops locate a page, they do not
+validate token order, sign identity, or any reading, and every row carries
+accepted_claims_increment = 0.
+"""
+
 from __future__ import annotations
 
 import csv

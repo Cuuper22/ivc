@@ -4,20 +4,24 @@ Date: 2026-05-26
 
 ## Question
 
-Parpola 2019 says the obverse text of the H-940 / H-2147 / H-2148 group occurs on H-942, H-2240, H-2241, and also as the sole text of unicorn seal M-77. Does source-visible M-77 close the companion-text recurrence, or does it create a source-normalization conflict?
+This note is a gate: a recorded decision checkpoint that either lets a claim through or blocks it. The claim under test comes from published prior work.
+
+Background terms. M-77 is a unicorn seal from Mohenjo-daro; H-numbers are Harappa artifacts. "Source-visible" means we have located the object in a published plate image, not just a catalog transcription. "Lipi" is the local sign-code catalog; "Mayig" is an independent sign-code catalog (P-numbers). Parpola 2019 is a published paper whose claims we test rather than trust.
+
+Parpola 2019 says the obverse text of the H-940 / H-2147 / H-2148 group occurs on H-942, H-2240, H-2241, and also as the sole text of unicorn seal M-77. Does source-visible M-77 close the companion-text recurrence, or does it create a source-normalization conflict — a case where the published claim and the source evidence do not line up?
 
 ## Decision
 
 It creates a conflict. The recurrence sentence can no longer be used as closed support for the H-2148 companion row.
 
-The source-visible M-77 layer is a five-sign unicorn-seal text:
+Here is why. The source-visible M-77 layer is a five-sign unicorn-seal text:
 
 ```text
 local Lipi:  +832-390-803-002-861+
 Mayig:       P366 P086 P364 P122 P385
 ```
 
-That is not the local three-sign `+520-220-415+` / `+520-220-X+` companion family being tested for H-940 / H-2147 / H-2148. M-77 therefore becomes an adversarial control on the prior-work sentence, not supporting evidence for an accepted local crosswalk.
+That is not the local three-sign `+520-220-415+` / `+520-220-X+` companion family being tested for H-940 / H-2147 / H-2148. M-77 therefore becomes an adversarial control on the prior-work sentence — evidence held against the claim, to stress it — not supporting evidence for an accepted local crosswalk.
 
 ## Local Matrix
 
@@ -31,9 +35,11 @@ That is not the local three-sign `+520-220-415+` / `+520-220-X+` companion famil
 | `H-2241` | `639.1 ]415-240+`; `639.2 ]000+` | Fragmentary local pressure, source-dark in checked public layer. |
 | `M-77` | `2604.1 +832-390-803-002-861+` | Source-visible five-sign seal text; adversarial recurrence-control conflict. |
 
+("Source-dark" means no usable public image or plate was found in the checked sources.)
+
 ## Source Evidence For M-77
 
-M-77 is source-visible on CISI India IA leaf `n68` / printed p. 33 under the page header for Mohenjo-daro seals 75-79. Both the face label `M-77 A` and impression label `M-77 a` are visible.
+M-77 is source-visible on CISI India IA leaf `n68` / printed p. 33 under the page header for Mohenjo-daro seals 75-79. (CISI is the published Corpus of Indus Seals and Inscriptions.) Both the face label `M-77 A` and impression label `M-77 a` are visible.
 
 Source page:
 

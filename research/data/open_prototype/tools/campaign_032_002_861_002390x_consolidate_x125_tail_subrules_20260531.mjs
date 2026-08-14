@@ -1,6 +1,19 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// When sign 125 fills the X slot after 002-HEAD, the text keeps going — 125
+// behaves like a linker. This script asks what it links to: does each head
+// sign pick a predictable tail after 125, or can anything follow? It scans
+// every text in lipi/metadata_filtered.csv for 002-HEAD-125 occurrences,
+// records the full tail after the 125, and buckets each tail into a small
+// family: terminal, single 032, the 632-032 family, the 820 cap, or a
+// singleton. It then cross-tabulates heads against tail families. A head with
+// 2+ rows and exactly one tail family is a "clean head-tail subrule" — in
+// practice only head 610, which always takes tail 032. The other families are
+// kept but demoted: 632-032 may be Mohenjo-daro seal formula ecology, and 820
+// splits across heads. Writes row, per-head, tail-family, and decision CSVs
+// plus a summary JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');

@@ -1,6 +1,19 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script runs the provisional 390 parser over the corpus and writes out
+// what it would actually say for each inscription. For every 002-390-X frame
+// in lipi/metadata_filtered.csv it emits a structural parse string — 002 as
+// frame, 390 as status/title head, then X-specific handling: 095 and terminal
+// 705 close as classifiers, 125 opens a linker-complement, 530 is an
+// underpowered open linker, 590 a mixed tail, 692 a global edge close, and
+// anything else an underpowered residue. Each parse carries a provisional
+// gloss, an honesty tier (candidate versus wild shot), and a named
+// "next_break" — the specific evidence that would break that lane. These are
+// parser outputs for inspection, not accepted translations. Writes per-row
+// parses and lane rollups as CSVs plus a summary JSON to
+// data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

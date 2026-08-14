@@ -1,3 +1,23 @@
+// Hostile block-holdout controls for the directionality candidate.
+//
+// The candidate claim: Indus inscriptions read better in their stored token
+// order than reversed, under a smoothed bigram model (a model that scores each
+// token by how often it follows the previous one, with add-alpha smoothing).
+// The worry is that this asymmetry could come from shared provenance rather
+// than real sequence structure — near-duplicate seals from one site could let
+// a row be scored by a model trained on its own siblings. So this script reads
+// the clean numeric-candidate rows from lipi_scope_rows.csv, builds three
+// dedupe scopes (exact-sequence collapse, a harsh one-edit-family collapse
+// with the top-10 edge tokens removed, and a register+edge family collapse),
+// and rescores stored-vs-reversed under five holdout policies that exclude
+// whole blocks (row, site, site+type, site+type+symbol, register+edge family)
+// from the training counts before scoring each row. Each scope x policy cell
+// is compared against six shuffle nulls (100 iterations each by default;
+// override with --iterations=N). It writes a JSON summary plus per-cell,
+// null-summary, and null-iteration CSVs to data/open_prototype/reports/.
+// The summary itself warns this is metadata-layer evidence only, not
+// source-normalized direction evidence.
+
 import fs from 'fs';
 import path from 'path';
 

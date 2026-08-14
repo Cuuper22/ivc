@@ -1,3 +1,15 @@
+// A "risky bet" probe (2026-05-31, wild-shot tier): are signs 002 and 861 a
+// "ra"-like graphic pair? Both surfaced in the low-impostor Brahmi descent
+// screen, and both play related roles in the 002-head branch grammar — the bet
+// is that this is one shape family that later converges on Brahmi "ra". The
+// script reads the filtered Indus corpus metadata, the 2026-05-31 low-null
+// Brahmi re-audit CSV, and the 002-head branch determinism scan. For each sign
+// it computes corpus position stats (initial rate, terminal rate, how often it
+// follows an 002 head) and pulls its best (lowest-impostor) Brahmi row, then
+// writes a JSON bet record, a one-row summary CSV, and a per-sign CSV. The
+// verdict recorded in the bet: not admissible as an anchor — the pair fails
+// shape-null, label-null, duplicate-unanimity, and the v3 preflight, so it
+// stays below candidate status.
 import fs from 'node:fs';
 import path from 'node:path';
 

@@ -1,3 +1,17 @@
+// A second, stricter attempt (2026-05-30) to attach sound values to Indus signs
+// via Meluhha-related cuneiform phrases — this time demanding an object-level
+// bridge, not just a pattern match. It reads the external Indus objects table
+// and the expanded cuneiform attestation inventory, and tests 12 target phrases
+// (the Meluhha toponym, ship and ration formulae, personal names like
+// Lu-sunzida and Shu-ilishu, commodity phrases). A candidate needs three things:
+// the same length and repeat pattern of units, the same find site (with
+// Girsu/Tello treated as one site), and a modeled object route — a hand-curated
+// table here grades each external row from "verified object mapping" down to
+// "unmapped fragment". Every candidate is still rejected with an explicit
+// skeptic reason, because even the verified objects are Indus-only with no
+// readable cuneiform on the same object. A 10000-iteration forger shuffles the
+// targets' sites to show the same-site pattern hits arise by chance. Writes a
+// candidates CSV, forger iterations CSV, and a JSON summary: zero anchors.
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';

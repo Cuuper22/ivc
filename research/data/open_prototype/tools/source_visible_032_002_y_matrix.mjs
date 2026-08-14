@@ -1,3 +1,18 @@
+// Assembles the master witness matrix for the 032-002-Y source-visibility
+// campaign. Three earlier artifacts feed in: the source-route probe (which
+// objects have any route to a source image), the current source-function
+// table (is the sequence visible on the actual object, on one physical
+// line?), and the token-box scaffold (per-sign boxes drawn on source images,
+// with status and confidence). This script joins them by CISI number,
+// grades each row's admissibility from "not_source_visible" up through
+// weak/lowres/medium-low/medium token-box candidate tiers, and checks
+// whether the source-visible set covers all three structural categories,
+// 4+ Y values, and 3+ sites. An exploratory null (iterations and seed from
+// the CLI, default 10000) redraws the same number of visible rows at random
+// to show how unsurprising that coverage shape is — explicitly not an
+// accepted false-positive rate, since acquisition was target-driven.
+// Writes the witness-matrix CSV, the null-iterations CSV, and a JSON
+// summary.
 import fs from 'node:fs';
 import path from 'node:path';
 

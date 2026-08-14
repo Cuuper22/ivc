@@ -1,6 +1,18 @@
 import fs from "node:fs";
 import path from "node:path";
 
+// Before declaring the matched-predecessor evidence exhausted, this script checks whether
+// any 002-390 frames are hiding in plain sight. It reads data/open_prototype/lipi/
+// metadata_filtered.csv and collects two shapes: adjacent frames (002 immediately followed
+// by 390, the known 15) and gapped near-frames (002-X-390 with exactly one sign between),
+// flagging rows whose raw text contains brackets or question marks as damaged or open
+// readings. Both sets are grouped by the sign before the 002 to see whether any predecessor
+// group gains a new branch alternative. The recorded outcome: no rescue anywhere — the
+// adjacent set is unchanged, the only multi-row predecessor groups remain 004, 032, and 235,
+// gapped rows add no matched split, and Dholavira 4348.1 (002-861-390) is confirmed as NOT
+// an adjacent frame. Writes adjacent rows, gapped rows, both predecessor summaries, and
+// decisions as CSVs plus a summary JSON in reports/.
+
 const root = process.cwd();
 const dataPath = path.join(root, "data", "open_prototype", "lipi", "metadata_filtered.csv");
 const reportsDir = path.join(root, "data", "open_prototype", "reports");

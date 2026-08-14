@@ -1,3 +1,16 @@
+// Geographic holdout test for the `806` prefix-series rule. The rule, learned from
+// Harappa rows alone: when 806 is preceded by 154 or 158, the next sign falls in
+// the narrow series band 465..475. Non-Harappa rows are the held-out test — the
+// rule is only promoted if it transfers. The script reads metadata_filtered.csv
+// (complete rows only), collects every 806 occurrence with its predecessor and
+// successor, and Fisher-compares in-band successor rates for prefixed vs
+// unprefixed occurrences: on all sites, Harappa only, the non-Harappa holdout, and
+// after exact deduplication (text + site + type + iconography + prev + next). A
+// wider prefix family adding 155 and 100 is tracked as a candidate extension,
+// since those two prefixes appear only outside Harappa yet obey the same band.
+// Promotion requires a perfect in-band holdout (>=5 rows, all hits, p <= 0.01) and
+// zero in-band hits among non-prefix predecessors. Writes occurrence and
+// predecessor-breakdown CSVs plus a JSON summary to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

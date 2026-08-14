@@ -4,7 +4,7 @@ Date: 2026-05-24
 
 ## Purpose
 
-Some of the sources needed for a serious IVC translation system are gated, printed, or not cleanly exportable. This file keeps access requests precise and honest.
+Some of the sources a serious IVC translation system needs — corpus databases, printed plate volumes, high-resolution artifact images — are gated, printed, or not cleanly exportable. Getting them means asking specific people and institutions for specific things, and this file is the record of those requests. It exists to keep every access request precise and honest: each entry states what is being asked for, from whom, and under what terms, so a request can never quietly turn into evidence. One entry is one request or acquisition plan — a draft email, a target list, a set of actions — with its date and current state. Do not read anything here as source validation: a sent request proves only that a request was sent, and even delivered material proves nothing about any sign, side order, value, or translation until it passes the project's own gates.
 
 ## ICIT Access Request
 

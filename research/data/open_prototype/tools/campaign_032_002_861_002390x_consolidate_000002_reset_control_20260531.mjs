@@ -1,3 +1,15 @@
+// Control study for the "reset" reading of the sign pair 000-002. The seal
+// Ns-66 ends in 000-002 after an earlier 002 frame, which tempts a reading of
+// 000-002 as a frame reset — and that reading would repair the X=000 candidate
+// damaged by M-451. To test how special the Ns-66 shape really is, this script
+// finds every 000-002 pair in the local Lipi metadata and records what precedes
+// it, what follows, whether it ends the inscription, and whether an earlier 002
+// occurs before it. It then slices the counts four ways (all pairs, final
+// pairs, reset candidates, Ns-66 itself) and writes occurrence, slice-summary,
+// and adjudication CSVs plus a summary JSON to data/open_prototype/reports/.
+// The recorded verdict: the broad 000-002 ecology is real, but a final 000-002
+// after an earlier frame is too thin to rescue Ns-66 or repair X=000.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

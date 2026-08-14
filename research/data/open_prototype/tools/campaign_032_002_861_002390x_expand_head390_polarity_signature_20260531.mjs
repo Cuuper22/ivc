@@ -1,6 +1,21 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// A status or title head should accept both endings ("chief." and "chief of
+// X..."), so if 390 really is one, its X slot should show a polarity split:
+// some terminal boosters and some open operators. This script measures that
+// signature. It scans lipi/metadata_filtered.csv for every 002-HEAD-X frame,
+// labels X polarity from the campaign's hand-built booster/operator/edge
+// lists, and produces two tables: a per-head profile (3+ occurrences) of
+// terminal rate, X diversity, and polarity mix, and a per-X breakdown for
+// head 390 specifically. The status-title signature is a simple boolean —
+// does 390 draw at least one terminal booster and at least one open
+// operator? Two bets ride on it: 390 as status/title head (wild shot) and
+// 002 as a frame marker whose following head chooses its own polarity
+// profile (candidate). Writes head profiles, the 390 X breakdown, raw
+// occurrences, and bets as CSVs plus a summary JSON to
+// data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

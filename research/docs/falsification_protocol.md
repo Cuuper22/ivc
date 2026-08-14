@@ -4,7 +4,7 @@ Date: 2026-05-24
 
 ## Purpose
 
-Every proposed reading must be easy to attack. If a claim cannot fail, it cannot enter the translation system.
+A claim is only worth something if there is a way to prove it wrong. This protocol forces every proposed reading into a shape that is easy to attack: it must state its scope, its evidence, its competitors, and the exact condition under which it dies. If a claim cannot fail, it cannot enter the translation system.
 
 ## Universal Claim Template
 
@@ -25,6 +25,8 @@ Status:
 
 ## Standard Null Models
 
+A null model is a fake-data generator that knows nothing about the thing being claimed. If the fake data reproduces the claimed pattern, the pattern was never evidence. Each null in the table is tuned to kill one specific kind of self-deception.
+
 Use at least one null model for structural claims and at least two for semantic or linguistic claims.
 
 | Null | Description | Kills Claims That |
@@ -39,6 +41,8 @@ Use at least one null model for structural claims and at least two for semantic 
 | Cross-language rebus | Tests the same rebus flexibility against unrelated languages. | Overclaim a favorite language family. |
 
 ## Claim Types
+
+Claims come in seven types, C1 through C7, ordered roughly from cheapest to most expensive. Each type lists the evidence it must bring and the condition that kills it.
 
 ### C1: Direction Claim
 
@@ -151,7 +155,7 @@ Failure:
 
 ## Red-Team Questions
 
-Ask these before accepting any claim:
+Before accepting any claim, attack it yourself. Ask:
 
 - What would prove this false?
 - Did the hypothesis exist before seeing the favorite example?

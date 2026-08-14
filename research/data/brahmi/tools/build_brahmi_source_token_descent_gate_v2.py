@@ -1,3 +1,21 @@
+"""The v2 source-token descent gate: does any Indus sign shape survive into early Brahmi?
+
+This is the main v2 pipeline behind the Brahmi descent experiment. It downloads
+letter images for the earliest Brahmi manuscripts (dated -100 or earlier, up to
+36 manuscripts) from the Indoskript database at Wuerzburg, turning each glyph
+into a 64x64 binary ink mask and a normalized feature vector (32x32 pixels plus
+18 shape scalars). On the Indus side it re-reads the answer keys from earlier
+blind packets, cuts each seal photo into per-sign token crops using vertical
+projection gaps (rows whose gaps do not recover the exact catalog sign count are
+rejected), and assigns signs under two reading-order policies, left-to-right and
+reversed. Each token is matched to its 10 nearest Brahmi glyphs by cosine
+distance. Families of 2+ tokens for the same sign are then tested against two
+nulls: a shape null (200 random perturbations per token — rotate, scale, dilate,
+erode — re-matched against Brahmi) and a label null (1000 shuffles of the Brahmi
+labels). A family that is unanimous and beats both nulls at 0.01 is still only
+"candidate_only_requires_manual_visual_descent_review" — never an accepted
+anchor. Writes seven CSVs plus a JSON summary under data/brahmi/.
+"""
 from __future__ import annotations
 
 import csv

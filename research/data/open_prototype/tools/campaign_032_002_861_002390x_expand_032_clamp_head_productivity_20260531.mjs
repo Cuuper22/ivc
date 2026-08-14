@@ -1,6 +1,20 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script tests whether sign 032 acts as a "clamp": placed before a 002
+// frame, does it push otherwise-productive head signs toward closing the
+// text? It reads lipi/metadata_filtered.csv, deduplicates rows by their sign
+// sequence, and collects every 002-HEAD occurrence for the four focus heads
+// 817, 820, 861, and 390, tagging each with whether an 032 stands directly
+// before the 002. For every head-by-032 cell it reports row counts, terminal
+// share, and the Shannon entropy of the next sign — low entropy after a clamp
+// would mean the head's continuations collapse. Four bets come out, each tier
+// set by the numbers: 032 clamps 817/820/861 toward terminal readings,
+// specifically suppresses productive 861, the 861 tails 416 and 603 are real
+// dependent tails, and the clamp is head-conditioned rather than global
+// (032-002-390 can stay open). Writes target rows, the head-by-032 contrast,
+// and the bets as CSVs plus a summary JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

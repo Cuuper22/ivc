@@ -1,6 +1,6 @@
 # Split Files
 
-GitHub rejects normal Git blobs larger than 100 MB, and the account LFS budget is currently exhausted. To keep the export pushable without dropping evidence bytes, one nested Git-history pack file was split into chunks below the GitHub hard limit.
+GitHub rejects normal Git blobs larger than 100 MB, and this account's LFS budget is currently used up. One nested Git-history pack file was over that limit. Rather than drop evidence bytes, the file was split into chunks that each fit under the GitHub hard limit.
 
 Run this from the repository root to reconstruct it:
 

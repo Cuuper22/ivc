@@ -1,3 +1,17 @@
+// The corpus seems to contain "formulas with variants": inscriptions that
+// repeat almost exactly, differing by one sign swap or one insertion. Could
+// that pattern arise by chance from sign frequencies alone? This script tests
+// it. It reads the mayig_observed_parpola sequences from
+// formula_pattern_sequences.csv and counts variant structure: exact duplicate
+// groups, near pairs within edit distance 2, single-substitution pairs,
+// single insertion/deletion pairs, pairs sharing the same first-and-last-sign
+// frame, and slot-candidate groups (contexts where two signs alternate in the
+// same position). It then reruns those counts on two null models — a shuffle
+// that keeps only row lengths and global sign frequencies, and a stricter one
+// that also keeps the first-sign, last-sign, and interior multisets — for a
+// default 500 iterations (CLI arg 1; arg 2 is the seed, 20260524). Writes
+// per-iteration and summary CSVs plus a JSON summary with empirical p-values.
+// A structural screen only; it assigns no sign values or meanings.
 import fs from 'node:fs';
 import path from 'node:path';
 

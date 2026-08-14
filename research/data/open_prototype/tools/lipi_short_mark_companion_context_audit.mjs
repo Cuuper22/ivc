@@ -1,3 +1,24 @@
+// The commonest short side marks on Harappa TAB:B/TAB:I tablets are two-sign
+// pairs of sign 700 with a "companion" sign: 032, 033, or 034. This audit asks
+// whether the choice of companion is associated with what else is written on
+// the same object — do 032-tablets, say, carry different longer texts than
+// 033- or 034-tablets?
+//
+// The script reads lipi_multiside_mark_rows.csv, keeps Harappa TAB:B/TAB:I
+// short-mark rows that are exactly a 700+companion pair, and describes each
+// one's context: how many longer-text sides the object has, whether the short
+// mark's catalog side comes before/after/between them, which focus signs and
+// which recurring longer sequences (3+ objects) appear.
+//
+// For every companion-vs-rest, feature contrast it runs a two-sided Fisher
+// exact test and a blocked permutation test (5,000 shuffles of companion
+// labels within type|700-order blocks, so type and orientation imbalances
+// cannot fake an association), then applies Bonferroni and Benjamini-Hochberg
+// corrections across the whole test family.
+//
+// Outputs: lipi_short_mark_companion_context_rows.csv, _families.csv,
+// _tests.csv, and _summary.json. Association bookkeeping only — no reading.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

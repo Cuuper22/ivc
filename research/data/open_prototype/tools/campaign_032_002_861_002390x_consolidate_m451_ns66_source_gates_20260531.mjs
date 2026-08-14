@@ -1,3 +1,16 @@
+// Records the source gates on the two exceptions that wound the X=000 terminal
+// candidate: M-451 (a zero chain with tail 906-388 after 000) and Ns-66 (a
+// final 002 after 000-002 that could be a frame reset). For each, this script
+// pulls the full metadata row, carries over the matching rows from the earlier
+// x000 exception-family-collapse sequence summary, and logs the public search
+// results. The one real find, baked in here: a public Parpola SAA 2001 PDF
+// binds M-451 to object DK-B 960 and describes a single-line inscription, so
+// the 906-388 tail probably is on the same line — source-bound damage to the
+// simple zero-complement rule, though the poor photo prevents a full kill.
+// Ns-66 found no public bridge and stays a metadata-only exception. Writes
+// targets, sequence gates, public searches, and adjudication CSVs plus a
+// summary JSON (with the next destructive tests) to data/open_prototype/reports/.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

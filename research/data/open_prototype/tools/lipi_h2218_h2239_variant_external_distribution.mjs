@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// H-2237 and H-2238 each break the H-2218..H-2239 template by one sign (154 for 156, 033
+// for 034). Are those variant sign pairs real elsewhere in the corpus, or do they only
+// exist inside this one tablet batch? This script checks the whole corpus. It reads
+// metadata_filtered.csv and flags every row containing any of the four target signs (033,
+// 034, 154, 156), any of eight adjacent sign pairs (700_033, 700_034, and their reverses;
+// 154_003, 156_003, and their reverses), or an exact matching two-sign text. It writes
+// three CSVs -- the flagged rows with companion-side flags, context counts broken down by
+// site/type/shape/material, and one comparator row per target pair with counts inside and
+// outside the H-2218..H-2239 series -- plus a JSON summary that answers the key yes/no
+// questions: does +700-033+ or +154-003+ have any external support at all? External
+// distribution evidence only; it assigns no value, function, or reading to any sign.
+
 const base = process.cwd();
 const inputPath = path.join(base, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');

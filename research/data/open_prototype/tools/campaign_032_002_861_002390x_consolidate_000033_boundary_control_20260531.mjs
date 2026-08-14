@@ -1,3 +1,15 @@
+// Control study for row 4148.1, the potential kill switch against reading sign
+// 000 as a boundary marker (the X=000 hypothesis). That row contains
+// 267-000-033: if 033 there is meaningful payload governed by 000, then 000 is
+// not a clean boundary. This script scans the local Lipi metadata for every
+// 000-033 pair and every bare 033, recording neighbors and whether each sits at
+// the end of its inscription. If most 000-033 pairs are terminal, 033 looks
+// like boundary furniture and the 4148 damage softens. Writes pair occurrences,
+// a context summary, an adjudication CSV, and a summary JSON to
+// data/open_prototype/reports/. The recorded verdict: 000-033 does show
+// boundary pressure, but the exact 267-000-033 frame is a singleton with no
+// source image, so 4148 stays a source-bound kill switch — not yet fired.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

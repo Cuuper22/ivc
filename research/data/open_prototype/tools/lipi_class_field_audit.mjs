@@ -1,3 +1,17 @@
+// The upstream lipi dataset (github.com/yajnadevam/lipi) carries a "class"
+// column on every inscription, but nowhere does the repo say what the class
+// codes mean. Before we lean on that column for anything, we audit it. This
+// script does two things. First, provenance: it fetches the repo's branch
+// head, walks its file tree, downloads every plausible text file, and greps
+// for any line that might define the class codes — also noting that the raw
+// CSV carries sanskrit/translation columns (the repo's own decipherment
+// claims, which we quarantine) and that the class column is hidden from the
+// site's main table. Second, distribution: it cross-tabulates class against
+// type, site, text length, and completeness in our local filtered layer, and
+// pulls five example rows per class. Writes five CSVs and a JSON summary
+// whose boundary statement is the point: no definition was found, so
+// lipi.class must be treated as an unverified source code, not a semantic
+// label.
 import fs from 'node:fs';
 import path from 'node:path';
 

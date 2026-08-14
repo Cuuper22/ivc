@@ -1,3 +1,18 @@
+// We have a candidate claim that Indus inscriptions read better in their stored
+// order than reversed (the "Vector 2 directionality" signal). This script plays
+// the skeptic. It rebuilds the direction test on two hard subsets: the tiny
+// source-visible 861 terminal-tail rows (from the campaign 032 attachment and
+// bare-edge CSVs) and the matched lipi/mayig crosswalk overlap, then attacks
+// each with shuffle nulls — global token shuffle, within-row shuffle,
+// position-slot shuffle, and edge-preserving shuffles that keep first/last
+// signs, length, symbol/type/material block, and catalog block fixed. The
+// direction score is leave-one-out: for each row we ask whether a smoothed
+// bigram model trained on all other rows gives the stored order a higher log
+// probability than the reversed order, and report the share of rows where
+// stored wins. If a null that preserves edge structure matches the observed
+// win share, the "directionality" could just be edge-sign convention, not
+// reading order. Writes a JSON summary plus per-scope, per-control, and
+// per-iteration CSVs into data/open_prototype/reports/.
 import fs from 'fs';
 import path from 'path';
 

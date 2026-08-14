@@ -2,6 +2,20 @@ import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 
+// A permutation test: how easily could chance forge the branch-125 pattern we observe after
+// 002-390? The observed event is specific — a branch with at least 4 rows, at least 2 of
+// them strict source-visible, and zero terminal rows (every row continues). This script
+// reads the source-normalized contrast rows CSV from reports/, computes that event on the
+// real branch labels, then reshuffles the branch labels 50,000 times under five null models
+// of increasing harshness: freely across all rows, within terminal/continuing strata, within
+// source-visibility strata, within site|type cells, and within site|type|terminal cells
+// (each null preserves more of the real structure, so it is harder to fool). For each null
+// it reports the share of shuffles that reproduce the event — an empirical false-positive
+// rate. Randomness is seeded from a fixed string, so reruns are identical. The verdict
+// stays "candidate_live_not_accepted": the harsh nulls and the register overlap of the
+// strict pair (M-119/M-735) block acceptance. Writes observed branch stats and null-model
+// rates as CSVs plus a summary JSON (with input SHA-256) to reports/.
+
 const ROOT = process.cwd();
 const REPORTS = path.join(ROOT, 'data', 'open_prototype', 'reports');
 const ROWS_CSV = path.join(REPORTS, 'campaign_032_002_861_002390x_source_normalized_contrast_rows.csv');

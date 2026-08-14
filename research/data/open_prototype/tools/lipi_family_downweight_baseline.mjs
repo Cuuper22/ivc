@@ -1,6 +1,19 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Many Indus inscriptions look like near-copies of each other -- the same formula with one
+// sign swapped or dropped. If we count each copy as independent evidence, we inflate every
+// structure statistic. This script stress-tests that risk. It reads lipi_scope_rows.csv
+// (strict numeric-clean rows only) plus the top-10 edge-sign list from
+// lipi_edge_removed_summary.json, then collapses the corpus three ways: exact duplicates
+// only, "edge frames" (same length, first sign, and last sign count as one family), and
+// one-edit families (sequences that differ by a single substitution or deletion are unioned
+// into one family). Each family keeps a single deterministic representative. For all six
+// policies (three collapses, with and without top-10 edge-sign removal) it reruns the
+// stored-vs-reversed order check, masked-sign prediction, and leakage-controlled holdout
+// splits, writing four CSVs and a JSON summary. If structure survives even after whole
+// formula families are downweighted to one row, it is not just duplication.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 const sourcePath = path.join(reportsDir, 'lipi_scope_rows.csv');

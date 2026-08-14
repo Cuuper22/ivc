@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script upgrades the matched-control pairings into full "triad packets" -- one row per
+// 034 target with everything a source-image check needs about the target and both its
+// controls. It reads the matched-control probe CSV, the frame700 subtype rows, and the
+// corpus metadata, then enriches each of the three objects with its size bins, excavation
+// and figure hooks, material/shape, find context, dimensions, and every local text row to
+// reconcile. Each triad also gets a ready-to-send source-request bundle, the question the
+// triad is meant to answer, and three explicit outcome clauses: what would preserve the
+// source contrast, what would downgrade it to an object-format effect, and what would kill
+// the 034 residue outright. Triads are ranked by target bucket, contrast readiness, and
+// combined control score. Output is one wide CSV and one JSON summary. No source image has
+// been validated at this stage and no interpretive claim is encoded.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 const lipiDir = path.join(base, 'data', 'open_prototype', 'lipi');

@@ -1,6 +1,20 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Is the sign pair 060-692 a portable terminal suffix — an ending element the script can
+// attach after many different stems — or just one formula copied onto many objects? This
+// script applies the collapse stress test. It reads data/open_prototype/lipi/
+// metadata_filtered.csv, finds every 060-692 occurrence in both the raw rows and the
+// canonical set (one copy per distinct sign sequence, so exact duplicates collapse), and
+// summarizes three families: all pairs, terminal pairs, and continuing exceptions. Suffix
+// status demands breadth: many sites, object types, and left contexts (measured by entropy
+// of the three signs before 060), with no single exact sequence dominating. The verdicts:
+// portable-suffix survives (strengthened if it clears numeric thresholds like 20+ rows over
+// 4+ sites with terminal share >= 0.75); "always terminal" is dead as an absolute rule
+// because continuing 060-692-Y rows exist; and the idea that 390-692 borrows this closure
+// element stays a wild bridge. Writes occurrences, family summaries, continuing exceptions,
+// and decisions as CSVs plus a summary JSON in reports/.
+
 const ROOT = process.cwd();
 const META = path.join(ROOT, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const OUT_DIR = path.join(ROOT, 'data', 'open_prototype', 'reports');

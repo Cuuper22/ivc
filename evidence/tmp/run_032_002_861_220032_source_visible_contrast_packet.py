@@ -1,3 +1,15 @@
+"""Builds the source-visible contrast packet for the 220-032 pre-frame.
+
+This script reads the tail-predictor all-rows table and keeps the rows where 220-032
+immediately precedes 002-861. It carries hand-entered visual scores per object
+(SCORES_BY_CISI) and uses PIL to cut and hash comparison crops into
+tmp/032_002_861_220032_source_visible_contrast_packet. The question: does the post-861
+outcome behave like a real tail-choice contrast between artifacts, rather than a
+register artifact or a single-row accident? It writes packet CSVs including the visual
+scores and a blind key, a summary JSON, and a docs/ markdown note. It is an evidence
+packet for later adjudication; it accepts no value or reading.
+"""
+
 from __future__ import annotations
 
 import csv

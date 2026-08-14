@@ -1,3 +1,17 @@
+"""Profile the tails that follow 002-861 and sort them into contrast classes.
+
+We rebuild every post-002-861 occurrence from the strict corpus, attach source
+status (whether a photo or crop has actually been checked) from three earlier
+verdict/control CSVs, and then profile each focus tail: how many rows, how
+many strict family cells (tail + prefix + register + template), how many rows
+are source-visible, and how much matched bare-closure pressure exists in the
+same preframe or register. A classifier assigns each tail a contrast class —
+background closure, fixed restricted unit, recurrent simple tail, singleton
+contrast, and so on. Outputs: profiles/focus-rows/matched-controls CSVs, a
+JSON summary, and a Markdown doc in docs/. The decision block records that no
+tail values, phonetics, or translations are accepted.
+"""
+
 from __future__ import annotations
 
 import csv

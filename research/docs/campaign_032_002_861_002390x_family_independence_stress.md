@@ -8,11 +8,11 @@ Do strict `125` witnesses `M-119` and `M-735` collapse into one formula/source f
 
 ## Result
 
-They do not collapse as one exact formula. They remain two strict candidate families at medium confidence.
+They do not collapse into one exact formula. They remain two strict candidate families at medium confidence.
 
-The positive side: `M-119` and `M-735` differ by full text, previous sign before `002`, post-`125` tail, symbol/cult label, source route, and condition. `M-119` tests the `125->632 032` subframe; `M-735` tests the `235->002-390->125` subframe.
+On the positive side, `M-119` and `M-735` differ on nearly everything we can measure: full text, previous sign before `002`, post-`125` tail, symbol/cult label, source route, and condition. `M-119` tests the `125->632 032` subframe; `M-735` tests the `235->002-390->125` subframe.
 
-The negative side: both are still Mohenjo-daro square steatite `SEAL:S` rows. That shared broad register blocks any claim that `125` is independently established across the script.
+On the negative side, both are still Mohenjo-daro square steatite `SEAL:S` rows. That shared broad register blocks any claim that `125` is independently established across the script.
 
 ## Strict Pair Dimensions
 

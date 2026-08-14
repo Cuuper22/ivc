@@ -1,3 +1,16 @@
+"""Source-normalized contrast for the 002-390-X branch: does 125 stay alive?
+
+This script reads the row table from the earlier 002-390-125 branch source-route pass
+and re-scores every witness under source normalization — meaning each row only counts
+at the strength of its actual source evidence (a visible artifact crop counts; a bare
+catalog transcription does not). It carries an inline table of established source facts
+and a crop list, builds a crop packet under tmp/002390x_source_normalization with PIL,
+and contrasts the 125 continuation against the source-visible non-125 continuations
+(692, 095, 705). It writes rows, source-route, and crop CSVs, a summary JSON, and a
+docs/ markdown note. The recorded decision: source normalization upgrades 125 as a
+branch object but still accepts no value.
+"""
+
 from __future__ import annotations
 
 import csv
