@@ -1,0 +1,55 @@
+{
+  "date": "2026-07-12",
+  "edge_id": "edge_00001",
+  "from_sign_uid": "lipi_numeric:740",
+  "to_sign_uid": "mayig_p:P324",
+  "decision": "exact_namespace_edge_accepted_for_analysis",
+  "mapping_state": "exact",
+  "accepted_for_analysis": true,
+  "support_count": 73,
+  "aligned_positions": 73,
+  "counterexample_count": 0,
+  "top_share": 1.0,
+  "source_visible_witnesses": [
+    {
+      "object": "M-15",
+      "position_1based": 2,
+      "panel": "research/data/sign_crosswalk/source_panels/740_P324/M-15_A_CISI1_pdf47_print11.png"
+    },
+    {
+      "object": "M-21",
+      "position_1based": 3,
+      "panel": "research/data/sign_crosswalk/source_panels/740_P324/M-21_A_CISI1_pdf49_print13.png"
+    },
+    {
+      "object": "M-29",
+      "position_1based": 1,
+      "panel": "research/data/sign_crosswalk/source_panels/740_P324/M-29_A_CISI1_pdf52_print16.png"
+    }
+  ],
+  "source_pdf_sha256": "47A4DA4227CFB7BAA56D6A561E25797225499D0EC54F5A702A82C67AB4746D4D",
+  "alignment_table_sha256": "935AD5B75B61AC8F7FC5E736DDA109475B23A29B510AA0D61577C3EC34971473",
+  "mayig_commit": "ad2f1e218a34b8c33c57de0d6cb8d99272765bbb",
+  "mayig_p324_blob": "01932f05bc88be9edc3d26d81be33a9b70eb591c",
+  "evidence_types": [
+    "same_artifact",
+    "count_matched",
+    "position_aligned",
+    "source_visible_published_plate",
+    "pinned_graphemic_feature_description",
+    "held_out_policy_sensitivity"
+  ],
+  "namespace_exclusions": [
+    "mayig_parpola_v:V204",
+    "mayig_parpola_v:V526",
+    "mayig_wells_w:W740",
+    "mayig_mahadevan_m:M342"
+  ],
+  "claim_boundaries": {
+    "sign_meaning": false,
+    "phonetic_value": false,
+    "language_identity": false,
+    "translation": false,
+    "accepted_claim_count_increment": 0
+  }
+}

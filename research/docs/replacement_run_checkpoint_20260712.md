@@ -1,0 +1,182 @@
+# Replacement run checkpoint
+
+Date: 2026-07-12 through 2026-07-13 America/Los_Angeles
+
+Authority: this checkpoint supersedes `replacement_run_checkpoint_20260531.md` for work completed on July 12-13 while preserving every accepted boundary from it. It does not revive any file listed in `research/data/quarantine/botched_successor_after_20260531T0104_manifest.csv`.
+
+## Accepted state
+
+| Claim class | Accepted count |
+| --- | ---: |
+| translations | 0 |
+| phonetic values | 0 |
+| sign meanings | 0 |
+| language identification | 0 |
+| external anchors | 0 |
+| structural findings | 1 |
+
+The accepted structural count remains one, but its wording is now strictly descriptive: M-376 and M-391 are two source-visible attestations of the same three-position terminal `861 | 533 | 717` allograph string after `002`. The stronger claim that `533-717` is a source-independent fixed two-sign unit is demoted below acceptance. Nothing in this checkpoint is a reading.
+
+## Completed annotations
+
+### `158-806 / Phyt`
+
+Decision: `closed_not_claim_eligible_support_below_floor_source_independence_unresolved`.
+
+- Seven catalogue rows validate against the pinned planning corpus.
+- They represent only three exact text families, below the pre-existing support floor of five.
+- A two-stratum form/motif grouping is reported only as sensitivity analysis; it is not evidence of common manufacture or copying.
+- No text family has a locally validated source-grade token box, and no fixed matched-iconographic-negative packet exists.
+- The May 31 null was a queue trigger, never an accepted meaning. It is not rerun.
+
+Artifacts:
+
+- `research/docs/vector4_158806_source_family_gate_20260712.md`
+- `research/data/open_prototype/reports/vector4_158806_source_family_gate_20260712_witnesses.csv`
+- `research/data/open_prototype/reports/vector4_158806_source_family_gate_20260712_summary.json`
+
+### Local `220` / Mayig `P050`
+
+Decision: `PARK`.
+
+- Four independent CISI artifacts have exact Lipi/Mayig same-position `220/P050` bindings.
+- All four cached token boxes are compatible with the broad fish/leaf graphic neighborhood.
+- Zero boxes come from an independently pinned primary-catalog panel that visibly resolves the defining “no decoration” condition.
+- Accepted crosswalks, values, readings, and translations remain zero.
+
+Artifacts:
+
+- `research/docs/replacement_p050_local220_strict_fish_family_source_gate_20260712.md`
+- `research/data/open_prototype/reports/replacement_p050_local220_strict_fish_family_source_gate_20260712_summary.json`
+- `research/data/open_prototype/reports/replacement_p050_local220_strict_fish_family_source_gate_20260712_token_boxes/`
+
+### Source annotations completed before the GPU run
+
+| Annotation | Source-visible decision | Research consequence |
+| --- | --- | --- |
+| AO 22310 | Bound to De Clercq plate IX no. 83 and Louvre AO 22310; no Indus text and unknown findspot. | Contact object only, not a bilingual or external anchor. |
+| 740 / P324 | Exact at 73/73 aligned positions with labeled CISI panels. | Accepted only as a Lipi-to-Mayig analysis edge. |
+| 002 / P122 | Three source-visible exceptions among 60 positions. | Conflict; exact mapping rejected. |
+| {390,405,406,407} / P086 | P086 merges four visibly distinct Lipi members. | Feature-preserving Mayig-policy merge only; raw Lipi stays distinct. |
+| 032 / P145 | M-143 reverses the dominant 032 002 / P145 P122 pairing. | Conflict; exact mapping rejected. |
+| {817,861} / P385 | Both forward lanes are exact, but roundedness distinguishes members; M-177 is a local 803/P385 collision. | Feature-preserving merge only; global 803/P364 remains conflicted. |
+| P041 / Parpola 41 | Same digits refer to different signs across Parpola, Mayig, Wells, Mahadevan, and Lipi. | Namespace trap resolved; no crosswalk accepted. |
+| M-77 / text no. 7 | M-35 has seven signs and M-77 five; M-37 is the complete three-sign source match. | Printed identifiers rejected; M-37 retained as an intended-reference candidate, not an author-confirmed correction. |
+| M-161 | Source shows four units, including two grids, versus three Lipi tokens. | Literal Lipi count rejected; 617 remains unresolved compound-or-omission policy. |
+| Lipi 000 policy: M-105, M-27, M-61, M-62 | All four flagged CISI objects show a bounded unit at every stored 000 position; Mayig independently supplies a named grapheme at each same-position slot. | Lipi 000 is a sign-bearing unknown-identity token and counts structurally. M-27's 900 is penultimate, not terminal. |
+| P000 policy: M-110, M-126, M-73 | All three flagged CISI objects show only the Lipi-counted bounded signs plus the damaged span encoded by Mayig P000. | P000 is uniformly non-sign damage metadata. M-126 and M-73 count mismatches close; M-110's complete original length remains unresolved across its lost span. |
+| Overlap policy: M-55, M-60 | A same-position Lipi 000 and Mayig P000 overlay one source-visible damaged partial sign, rather than forming two events. | Normalize one damaged unknown sign slot with attached loss metadata. M-55's 760 is not initial; M-60's 151 is not terminal. |
+| M-111 | Both CISI views show seven units and two separately bounded terminal six-spoked wheels; Mayig records P378 P378 while Lipi collapses the pair into terminal 821. | Use seven source units and expand the terminal pair for sign-level analyses. Keep 821 only as an object-level macro; no global 821/P378 rule is accepted. |
+| M-162 | Both CISI views show six units; Mayig's middle P230 P234 pair is separately bounded while Lipi has only 552. M-126 carries the same Mayig pair against two Lipi positions, 520-552. | Use six source units. Treat one unit before 552 as probably omitted from Lipi on this object; the apparent 840-552 edge is not a direct sign adjacency. |
+| M-20 | Both CISI views show the six vertical strokes represented by Mayig P147 P147, so the repeat is not an accidental duplicate. The strokes form one evenly spaced, unenclosed run, so the source does not fix a one-sign versus two-sign boundary. | Preserve one atomicity-ambiguous six-stroke region. Keep Lipi's seven-token and Mayig's eight-grapheme representations catalogue-level; neither becomes the source structural count. |
+| M-25 | All three CISI views show five bounded units, including two separately outlined grids where Mayig has P268 P268 and Lipi begins with one 617. This independently repeats the source-visible M-161 discrepancy. | Use five source units and keep the grids separate. Classify 617 as a recurrent pair-macro-or-suppressed-repeat problem; do not use the Lipi 617-243 edge as literal sign adjacency. |
+| M-45 | Both CISI views show seven bounded units and two separately outlined initial grids, matching Mayig P268 P268 where Lipi has one initial 617. This is the third independent source-confirmed instance with no checked counterexample. | Use seven source units and expand 617 to two grid positions on M-45. Across the five overlap rows, 617-to-P268-P268 is now a strong catalogue-expansion candidate pending the two remaining source checks. |
+| M-81 | All three CISI views show seven bounded units and an internal pair of separately outlined grids followed by another sign, matching Mayig P268 P268 where Lipi has one 617. | Use seven source units and expand 617 to two grid positions on M-81. The policy is now source-supported at both initial and internal positions in 4/5 overlap cases, with no checked counterexample. |
+| M-4 / 617 overlap closure | Both M-4 inscription views show ten bounded units and two separately enclosed grids. Across all five 617 overlap rows, one Lipi 617 corresponds to Mayig P268 P268, the source shows two grids, and Mayig's count is correct; counterexamples 0/5. | Accept 617-to-two-grid structural expansion for the complete five-object overlap cluster. Keep raw catalogues unchanged and Lipi-only 617 rows source-pending. All eight unflagged-Mayig-extra rows are now adjudicated. |
+| M-10 | Both CISI inscription views show one continuous five-vertical-stroke run where Lipi splits 032 033 and Mayig uses P151. There is no missing Mayig graphic and no source-visible boundary after stroke two. | Normalize one five-stroke graphic region while retaining both catalogue tokenizations at their own levels. Neither the ten- nor eleven-unit count is source-established; exclude Lipi's internal 032-033 edge from sign-level statistics. |
+| M-41 | Both CISI views show nine bounded units and three separate fish-family signs at Lipi 240-233-235. Mayig keeps the outer P062 and P060 positions but omits the bounded middle fish. | Use nine source units. Insert a missing-Mayig middle-fish position between P062 and P060 for object-level analysis; reject their apparent direct adjacency on M-41. |
+| M-72 | Both CISI inscription views show one continuous five-short-stroke run where Lipi splits 003 002 and Mayig uses P125. No source-visible boundary separates a three-stroke sign from a two-stroke sign. | Normalize one five-stroke graphic region while retaining both catalogue tokenizations at their own levels. Neither six nor seven sign units is source-established; exclude Lipi's internal 003-002 edge from sign-level statistics. |
+| M-98 / Lipi-extra closure | Both CISI views show four separate units, including a terminal right parenthesis after the seven-stroke group. Mayig omits that terminal position. Across the four Lipi-extra rows, M-10 and M-72 are segmentation differences while M-41 and M-98 are true Mayig omissions. | Use four units on M-98 and insert a missing terminal P154-like position for object analysis. Do not apply a uniform longer-catalogue rule. All twelve rows in the two unflagged-extra classes are now source-adjudicated. |
+| M-7 | Both CISI views show nine compound-level clusters. Lipi uses one 101 token for the bracketed three-headed figure; Mayig decomposes it as P154 P009 P154 even though its own P010 namespace encodes the integrated compound. | Use nine compound-level units and collapse the three Mayig constituents to one P010-like cluster for sign-unit analysis. Keep eleven entries only for constituent-level work; internal bracket/person transitions are not inter-sign edges. |
+| M-120 correction | Both CISI views show six main-line signs plus a detached lower 858 diamond. The slash in 858/740 records their two-dimensional association; the signs do not touch. Mayig omits the detached diamond. | Use seven source units while preserving a six-sign main line plus one linked lower P363-like unit. Reject the prior six-unit fused-compound decision and do not invent a sequential 858-740 edge. |
+| M-106 | Both CISI views support six structural positions: four recoverable graphics (740, 760, 002, 350) and two distinct damaged sign slots separated by 002. Mayig's terminal P000 is one 70%-loss span covering positions 3-6, not a third sign. | Use six positions with two explicit unknown-sign tokens and attach P000 as span-level damage metadata. Exclude P000 from sign counts and reject the apparent P332-P000 sign adjacency. The sole complex-manual-collation row is closed. |
+| M-141 | The slash separates a three-sign lower row from a damaged upper row. Six identities and one terminal unknown are individually source-supported, but Lipi's three initial upper-row zeros occupy one continuous break and are not separately bounded. Mayig records only the upper row as P000-P122-P000, omitting the lower row, visible 240, and visible 031. | Preserve `lower [817,255,636]` and `upper [LOSS_SPAN(capacity unknown),240,002,031,UNK]`. Minimum directly located count is seven; total length remains indeterminate. Use neither Lipi 10 nor Mayig 3 as a source count, and create no cross-row or damage-token adjacency. |
+| Boundary fragments: M-19, M-22, M-39, M-175 | Each Mayig count is one too high only because its grapheme array contains a P000 open-edge damage span. CISI preserves respectively 2, 6, 6, and 2 bounded signs; no lost boundary has a source-countable capacity. | Keep them as censored sequences with open loss spans, not complete strings. M-19/M-175 add left-censored bare terminal 002-861 suffix controls; M-39 adds a left-censored six-sign suffix; M-22 adds a right-censored six-sign prefix. All 29 mismatch rows are now source-adjudicated. |
+
+These decisions tighten the usable corpus and crosswalk without adding a translation, value, meaning, language identification, external anchor, or accepted structural claim. The detailed panels, tables, gates, and object-level decisions remain the evidence record; this checkpoint carries only the synthesis.
+
+## From-scratch SLM result
+
+All 65 original runs and all 30 exact-exposure transfer runs completed across five paired seeds. The correction reused the five original random-initialized IVC micro baselines rather than rerunning them. Lower negative log-likelihood (NLL) is better.
+
+| Question | Five-seed result | Decision |
+| --- | --- | --- |
+| IVC capacity: micro, 886,850 parameters | NLL 4.1165; top-1 25.45% | Best IVC NLL in every paired seed. |
+| IVC capacity: small, 6,537,794 parameters | NLL 4.1946; top-1 24.68% | Worse than micro; no scale-up signal. |
+| IVC capacity: medium, 18,123,074 parameters | NLL 4.3120; top-1 23.85% | Worse again; 1B escalation is not scientifically justified. |
+| Authentic IVC vs row-internal shuffle, small | Authentic gains 0.3665 NLL and 6.05 top-1 points; stored-order win share 0.883 vs 0.470. | Real order/co-occurrence structure survives grouped holdout. |
+| Authentic IVC vs position-slot shuffle, small | Authentic gains 0.6492 NLL and 12.86 top-1 points. | Structure is not reducible to position marginals. |
+| Exact-exposure known-writing transfer vs random IVC | NLL gain +0.0566, 95% paired bootstrap CI [0.0212, 0.0973]. | Known-writing pretraining gives a small reproducible benefit. |
+| Exact-exposure nonwriting transfer vs random IVC | NLL gain +0.0529, CI [0.0018, 0.0931]. | Nonwriting pretraining gives a statistically compatible benefit. |
+| Exact-exposure position-shuffled-IVC transfer vs random IVC | NLL gain +0.0371, CI [0.0035, 0.0716]. | Even the shuffled source gives a small benefit. |
+| Known writing vs nonwriting | Specificity gain +0.0037, CI [-0.0372, 0.0326]. | No writing-specific advantage. |
+| Known writing vs position-shuffled IVC | Specificity gain +0.0195, CI [-0.0355, 0.0814]. | No writing-specific advantage. |
+| Exact exposure matching | Record, token, and masked-position spreads are exactly 0 in every seed; null attrition is 0. | The original exposure confound is closed. |
+| Known-script calibration | Linear B: NLL 2.7466, top-1 40.02%; SumTablets: NLL 4.5013, top-1 15.50%. | Calibration only; cross-corpus absolute scores do not identify language status. |
+| Pre-registered transfer gate | Statistical comparisons and exact-exposure checks complete; both specificity intervals cross zero. | **FAIL**. |
+
+Interpretation: the model finds reproducible sequential structure in the IVC corpus, because authentic sequences beat both matched corruption controls. That is a structural result, not a linguistic identification. Exact matching removes the original transfer-design escape hatch: known writing, nonwriting, and position-shuffled IVC all produce small gains over random initialization, while known writing has no positive lower-bound advantage over either comparator. The supported transfer conclusion is therefore source-nonspecific pretraining benefit, not writing-specific structural transfer. The capacity curve still points away from scaling: the 0.89M model beats the 6.54M and 18.12M models on held-out NLL in all five seeds, so a 1B run would spend compute without answering the live research question.
+
+Original outputs remain in `research/data/slm/ivc_from_scratch_scaling_20260712/`. Corrected outputs are preserved in `research/data/slm/ivc_transfer_exact_exposure_20260712/`: all 30 new summaries, the five pinned reference baselines, comparison table, aggregate analysis, resolved configuration, provenance manifest, and completion record. The full per-run checkpoint trees remain on the immutable Modal result volume. The conservative cumulative compute estimate is $4.6687, below the $14 ceiling.
+
+## Directionality closure
+
+Decision: `CLOSED_PHYSICAL_DIRECTION_PROMOTION_RETAIN_STORED_ORDER_STRUCTURE`.
+
+- Meadow and Kenoyer's matched seal/tablet case identifies `H96-2796/6876-01`, local `H-1682`, as left-to-right on the physical intaglio seal while the matching non-impressing tablets are assumed right-to-left.
+- Lipi records `R/L` for `H-1682` and for all 66 sides of H-2218 through H-2239. The field therefore does not uniformly encode physical as-pictured orientation across those media.
+- `H-1682` is inside the harsh 365-row directionality scope and favors stored order, so this is an internal semantic counterexample rather than an unrelated source objection.
+- Removing it changes stored-win share only from 0.841096 to 0.840659. The stored-order structural result survives; physical reading direction does not follow from it.
+- A larger negative-image denominator cannot fix an unlabeled orientation construct. The failed packet lane is closed rather than expanded.
+
+Detailed decision: `research/docs/effective_unicity_directionality_physical_orientation_closure_20260712.md`.
+
+## `FRAME700 034` size-tier falsification
+
+Decision: `CLOSE_034_OBJECT_SIZE_OR_METROLOGICAL_TIER_UNDER_CURRENT_LOCAL_EVIDENCE`.
+
+- The pre-registered test used 309 measured artifacts in 216 held-out source/formula groups, with the entire H-2218 through H-2239 series held out together.
+- Dimensions predict `034` above chance: grouped AUC 0.701087, bootstrap 95% interval [0.606806, 0.789030]. Both matched administrative-format and emblem/copy-family label shuffles rarely reach the observed AUC, at 0.001500 and 0.001000.
+- The size model does not beat the administrative-format baseline by a positive bootstrap margin: AUC difference interval [-0.010581, 0.134992].
+- On the clean H-series holdout, the model calls all 22 small tablets `034`, including the one true `033`: `034` recall 1.000000, non-`034` specificity 0, AUC 0.476190.
+- The surviving association is small-tablet form factor, not a subtype-specific numerical or metrological tier. No value, unit, quantity, commodity, or meaning is accepted.
+
+Detailed decision: `research/docs/frame700_034_size_tier_heldout_decision_20260712.md`.
+
+## `603` cross-context graphic closure
+
+Decision: `CLOSED_CROSS_CONTEXT_603_GRAPHIC_IDENTITY_NOT_SOURCE_SUPPORTED`.
+
+- M-240, M-714, and M-1273 preserve a recurrent rectangular ladder/window-like post-`861` terminal class in the source panels.
+- H-1138 and H-1846 preserve the five-unit Harappa `740-X-240-060-692` formula, but local `603` can only be visual unit 2 or 4 under forward/reversed order. Neither candidate is the Mohenjo window.
+- H-1846 has a window-like edge unit, but it maps to local `740` or `692`, not `603`, under the two linear orientations. Making it `603` would require rejecting the stored sequence/order and therefore still kills the current bridge.
+- The shared Lipi number is catalog-mediated, not source-visible cross-context identity. Keep the Mohenjo tail class and Harappa internal-slot candidate separate; do not use the Harappa rows to interpret the Mohenjo tail.
+- No raw corpus number is rewritten and no value, function, phonetic reading, language, or translation is accepted.
+
+Detailed decision: `research/docs/campaign_032_002_861_603_cross_context_graphic_closure_20260712.md`.
+
+## `002-861` censored-control delta
+
+Decision: `NO_CLAIM_REVERSAL; CENSORED_CONTROLS_SLIGHTLY_STRENGTHEN_BARE_CLOSURE`.
+
+M-19 and M-175 enter only as distinct, source-visible left-censored artifact controls with the form `[LOSS_PREFIX] 002 861 [CLOSED_EDGE]`. They do not become complete `+002-861+` strings and contribute nothing to known-prefix, absolute-position, or complete-string counts.
+
+| Analysis lane | Complete-row baseline: bare / tailed / total | With the two censored controls | Bare-rate change |
+| --- | ---: | ---: | ---: |
+| canonical source-normalized tail field | 113 / 31 / 144 (78.472222%) | 115 / 31 / 146 (78.767123%) | +0.294901 percentage points |
+| accepted-forger strict-raw sensitivity | 115 / 31 / 146 (78.767123%) | 117 / 31 / 148 (79.054054%) | +0.286931 percentage points |
+| accepted-forger exact `text/site/type/symbol` sensitivity | 107 / 25 / 132 (81.060606%) | 109 / 25 / 134 (81.343284%) | +0.282678 percentage points |
+
+The result is small and directionally consistent: bare closure becomes about 0.28-0.29 percentage points more common, while every tailed count stays fixed. `533-717` remains supported by M-376 and M-391 only, at 2/2 observed occurrences in the fixed-prefix terminal context; among tailed rows its share is unchanged. Its share of the canonical whole field falls mechanically from 2/144 to 2/146. The historical forger nulls were not rerun and are not represented as recalculated here. The older 119-row suffix-split table is not mixed into this result because it used a legacy extractor and deduplication rule.
+
+## M-376/M-391 terminal string and graphic-family gate
+
+Decision: `RETAIN_TWO_ARTIFACT_TERMINAL_STRING; DEMOTE_FIXED_UNIT_INFERENCE; EXACT_533_DEPENDENCY_TAXONOMY_SENSITIVE`.
+
+| Layer | Complete checked set | Result |
+| --- | --- | --- |
+| Local numeric `533` | M-376 `...861-533-717` and M-391 `...861-533-717`; no other `533` row in the 5,679-row local source | Exact local set is 2/2 followed by terminal 717. |
+| CISI plates | M-376, printed p. 94 / PDF p. 130; M-391, printed p. 96 / PDF p. 132 | Both objects independently show three spatially separate terminal-side graphics; the repeated tail is physical, not a fused or digital-only token. |
+| Parpola Figure 5.1, printed p. 75 / PDF p. 99 | The relevant group is sign 222, not 223. Its four principal variants, each illustrated with one reference, are M-17, M-26, M-376, and M-391. | M-17 and M-26 lack local 717, so the broader Parpola-222 graphic family is not fixed to 717. The figure is a variant list, not an exhaustive concordance. |
+| Mayig P228 | M-26A only: `P013 P324 P228 P120 P256`; the same position aligns to local 531. P228 metadata maps one-to-many to W531 and W533. | M-26 is a broad-family no-717 case, not an exact local-533 counterexample. Mayig has no M-376/M-391 object records. |
+| Wells Figure 2.6, printed pp. 20-21 | W531 and W533 are distinct listed forms; W717 is separately listed. | Supports the fine graphic distinction but supplies no artifact occurrence concordance. |
+
+No exact local-`533` occurrence lacking 717 was found. That does not establish a source-independent dependency: the zero outside-pair count exists only under the fine local/Wells-compatible split, while Parpola 222 and Mayig P228 group related forms that occur without 717. The accepted residue is therefore the repeated three-position terminal allograph string on two artifacts, not an inseparable `533-717` unit or a general sign rule. The official ICIT occurrence database remains administrator-gated and returned HTTP 401, so global Wells-corpus completeness is not claimed and no contact is attempted. No value, reading, meaning, language, translation, or broader fixed-suffix rule follows.
+
+## Next executable order
+
+1. Close SLM transfer escalation. Inspect every remaining complete Lipi-only `617` occurrence against its CISI panel and test whether the source-visible two-grid expansion holds outside the five overlap objects. Promote a global `617 -> grid, grid` normalization only if the source coverage is complete and counterexamples remain zero; otherwise keep the rule cluster-specific. Recompute only the structural edges directly changed by that decision.
+
+## Parked lanes
+
+The paid/contact/physical-source rows listed in `replacement_live_action_register_20260712.md` remain parked. No message was sent and no source was purchased. Language-family, rebus, proper-name, phonetic, and translation lanes remain closed because no bilingual or secure external reading constraint exists.

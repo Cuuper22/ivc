@@ -1,6 +1,6 @@
 {
-  "date": "2026-05-29",
-  "status": "provenance_tagged_scaffold_no_accepted_crosswalk_edges",
+  "date": "2026-07-12",
+  "status": "source_gated_crosswalk_with_one_exact_edge_two_conflicts_two_feature_preserving_merge_clusters_and_one_contextual_collision",
   "source_summary": {
     "lipi_rows": 5679,
     "mayig_witness_rows": 179,
@@ -18,10 +18,10 @@
     "signs": 1782,
     "artifact_witnesses": 5858,
     "crosswalk_edges": 1085,
-    "evidence_refs": 5,
-    "namespace_gates": 4,
-    "review_events": 2,
-    "accepted_crosswalk_edges": 0
+    "evidence_refs": 49,
+    "namespace_gates": 7,
+    "review_events": 7,
+    "accepted_crosswalk_edges": 7
   },
   "files": {
     "sign_systems": "data/sign_crosswalk/sign_systems.csv",
@@ -34,12 +34,25 @@
     "manifest": "data/sign_crosswalk/manifest.json",
     "audit_summary": "data/sign_crosswalk/audit_summary.json",
     "audit_issues": "data/sign_crosswalk/audit_issues.csv",
-    "edge_pressure_summary": "data/sign_crosswalk/edge_pressure_summary.csv"
+    "edge_pressure_summary": "data/sign_crosswalk/edge_pressure_summary.csv",
+    "edge_00001_source_gate": "data/sign_crosswalk/edge_00001_source_gate_20260712.json",
+    "edge_00001_source_panels": "data/sign_crosswalk/source_panels/740_P324/manifest.csv",
+    "edge_00002_source_gate": "data/sign_crosswalk/edge_00002_source_gate_20260712.json",
+    "edge_00002_source_panels": "data/sign_crosswalk/source_panels/002_P122_conflicts/manifest.csv",
+    "edge_00005_source_gate": "data/sign_crosswalk/edge_00005_source_gate_20260712.json",
+    "edge_00005_source_panels": "data/sign_crosswalk/source_panels/032_P145_conflict/manifest.csv",
+    "p086_merge_source_gate": "data/sign_crosswalk/edge_00004_p086_merge_gate_20260712.json",
+    "p086_merge_source_panels": "data/sign_crosswalk/source_panels/390_P086_merge/manifest.csv",
+    "p385_merge_collision_gate": "data/sign_crosswalk/p385_merge_collision_gate_20260712.json",
+    "p385_merge_collision_panels": "data/sign_crosswalk/source_panels/817_861_P385_conflict/manifest.csv"
   },
   "caveats": [
     "Lipi numeric data remains T3/quarantined; use metadata/sign fields only.",
     "Mayig V/W/M links are mediated through Mayig feature metadata, not primary Parpola/Wells/Mahadevan tables.",
-    "All crosswalk edges are unaccepted until source-image or authoritative sign-list validation clears the relevant namespace gate."
+    "Lipi 740 to Mayig P324 is analysis-grade exact. Lipi 002 to Mayig P122 and Lipi 032 to Mayig P145 are source-validated conflicts and remain unaccepted. The four observed Lipi members 390/405/406/407 to Mayig P086 and the 817/861 pair to P385 are analysis-grade only as feature-preserving merges in explicit Mayig-policy lanes. All other crosswalk edges remain unaccepted until source-image or authoritative sign-list validation clears the relevant namespace gate.",
+    "The accepted 740/P324 edge does not promote Mayig-mediated V204/V526/W740/M342 namespace links.",
+    "The accepted P086 merge does not authorize exact identity, raw Lipi collapse, or promotion of unseen local 392/408; conservative_merge excludes this cluster.",
+    "The accepted P385 merge preserves roundedness 0 for Lipi 817 and 1 for Lipi 861. M-177's local-803/P385 occurrence is a contextual collision, not a global 803/P385 mapping; 803/P364 remains conflicted and unaccepted."
   ],
   "audit": {
     "date": "2026-05-29",

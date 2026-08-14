@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0.0",
+  "date": "2026-07-12",
+  "gate_id": "m105_source_visible_unknown_zero_count_policy",
+  "object_id": "M-105",
+  "decision": "source_visible_seven_unit_sequence_corrects_structural_count_to_seven_while_both_000_identities_remain_unknown",
+  "source_count": 7,
+  "sources": {
+    "cisi_1": {
+      "pdf_page": 75,
+      "printed_page": 39,
+      "views_checked": [
+        "M-105 A",
+        "M-105 a"
+      ],
+      "pdf_sha256": "47A4DA4227CFB7BAA56D6A561E25797225499D0EC54F5A702A82C67AB4746D4D",
+      "panel_manifest": "research/data/sign_crosswalk/source_panels/m105_unknown_policy/manifest.csv"
+    },
+    "lipi": {
+      "row_id": "2632.1",
+      "object_id": "M-105",
+      "direction": "R/L",
+      "stored_sequence": [
+        "000",
+        "000",
+        "803",
+        "231",
+        "742",
+        "060",
+        "920"
+      ],
+      "stored_position_count": 7,
+      "catalogue_text_length": 7,
+      "catalogue_signs_field": 5,
+      "raw_text": "+000-000-803-231-742-060-920+"
+    },
+    "mayig": {
+      "commit": "ad2f1e218a34b8c33c57de0d6cb8d99272765bbb",
+      "side_id": "M-105A",
+      "stored_sequence": [
+        "P324",
+        "P324",
+        "P364",
+        "P056",
+        "P326",
+        "P120",
+        "P154"
+      ],
+      "stored_token_count": 7,
+      "raw_record_url": "https://raw.githubusercontent.com/mayig/indus-valley-script-corpus/ad2f1e218a34b8c33c57de0d6cb8d99272765bbb/corpus/m100_m199/m105.json",
+      "raw_record_sha256": "33D17D44BE46F313DDE9DCF4FBAE8C64C2E872E343E478C3E329CEA2BA3BBC34",
+      "feature_records": {
+        "P324": {
+          "description": "Classic jar symbol with two horizontal handles at the top of each arm pointed outward",
+          "raw_url": "https://raw.githubusercontent.com/mayig/indus-valley-script-corpus/ad2f1e218a34b8c33c57de0d6cb8d99272765bbb/features/P324.json",
+          "sha256": "11E1F2BB629EF4CB8FDE1024788574DA56FD2D0B198127FB77A24466AFB80972"
+        },
+        "P364": {
+          "description": "Leaf with tree at bottom",
+          "raw_url": "https://raw.githubusercontent.com/mayig/indus-valley-script-corpus/ad2f1e218a34b8c33c57de0d6cb8d99272765bbb/features/P364.json",
+          "sha256": "B9D8B4AC7BD0F21827ED08F04D090819C7681D54EB46504FF26D383DB24AB1CC"
+        },
+        "P056": {
+          "description": "Fish with a small vertical stroke in the body",
+          "raw_url": "https://raw.githubusercontent.com/mayig/indus-valley-script-corpus/ad2f1e218a34b8c33c57de0d6cb8d99272765bbb/features/P056.json",
+          "sha256": "E0640994759C9EADBF9B3B7DBD862C03EA3EA325B26CA6C7B97D5BC4A2FB51E2"
+        },
+        "P326": {
+          "description": "Classic jar symbol with two horizontal handles and two small vertical strokes inside the mouth",
+          "raw_url": "https://raw.githubusercontent.com/mayig/indus-valley-script-corpus/ad2f1e218a34b8c33c57de0d6cb8d99272765bbb/features/P326.json",
+          "sha256": "3F8935DBA7857259AFC9D3349C6E565CA823000F8B6E59E892ADEDB8D9188787"
+        },
+        "P120": {
+          "description": "A small vertical line beside another vertical line whose bottom half slants under the first",
+          "raw_url": "https://raw.githubusercontent.com/mayig/indus-valley-script-corpus/ad2f1e218a34b8c33c57de0d6cb8d99272765bbb/features/P120.json",
+          "sha256": "B1ED899DB409B34EC5ADEDEE03D0BC676691AC94FADF3017081A7FCF634FE6A6"
+        },
+        "P154": {
+          "description": "Right parenthesis perhaps with a backward curve at the bottom",
+          "raw_url": "https://raw.githubusercontent.com/mayig/indus-valley-script-corpus/ad2f1e218a34b8c33c57de0d6cb8d99272765bbb/features/P154.json",
+          "sha256": "203EEA79DD0D49017B4F3046DAB0CF389FDA44E8C6C03D282038EC56492279EE"
+        }
+      }
+    }
+  },
+  "visual_observation": {
+    "impression_A_independently_bounded_units": 7,
+    "seal_a_independently_bounded_units": 7,
+    "impression_A_normalized_reading_direction": "right_to_left",
+    "seal_a_physical_mirror_direction": "left_to_right",
+    "normalized_reading_order_visual_forms": [
+      "classic_jar_unit_1",
+      "classic_jar_unit_2",
+      "leaf_with_tree_at_bottom",
+      "fish_with_small_vertical_stroke",
+      "jar_with_two_small_vertical_strokes",
+      "paired_vertical_lines_with_one_lower_slant",
+      "right_parenthesis_form"
+    ],
+    "opening_pair_are_separate_genuine_sign_units": true,
+    "opening_pair_are_damage_or_non_sign_marks": false,
+    "count_affecting_damage_or_box_ambiguity": false
+  },
+  "catalogue_decisions": {
+    "lipi_catalogue_text_length_7_accepted_as_structural_count": true,
+    "lipi_catalogue_signs_field_5_accepted_as_structural_count": false,
+    "corrected_structural_count": 7,
+    "unknown_zero_count_policy": "Each 000 position counts as one source-visible sign-bearing unit while its Lipi numeric identity remains unknown.",
+    "local_000_occurrences": [
+      {
+        "normalized_position_1based": 1,
+        "source_unit_present": true,
+        "paired_mayig_grapheme": "P324",
+        "lipi_identity": "unknown"
+      },
+      {
+        "normalized_position_1based": 2,
+        "source_unit_present": true,
+        "paired_mayig_grapheme": "P324",
+        "lipi_identity": "unknown"
+      }
+    ],
+    "local_000_to_lipi_740_accepted": false,
+    "local_000_to_mayig_P324_accepted": false,
+    "rewrite_000_as_740_or_P324_permitted": false,
+    "position_concordance": "research/data/sign_crosswalk/m105_source_position_concordance_20260712.csv"
+  },
+  "preserved_crosswalk_states": [
+    {
+      "pair": "803/P364",
+      "edge_id": "edge_00018",
+      "state": "conflict",
+      "support_counterexample_counts": "9:1",
+      "accepted": false
+    },
+    {
+      "pair": "231/P056",
+      "edge_id": "edge_00036",
+      "state": "uncertain",
+      "support_counterexample_counts": "5:0",
+      "accepted": false
+    },
+    {
+      "pair": "742/P326",
+      "edge_id": "edge_00169",
+      "state": "uncertain",
+      "support_counterexample_counts": "1:0",
+      "accepted": false
+    },
+    {
+      "pair": "060/P120",
+      "edge_id": "edge_00006",
+      "state": "uncertain",
+      "support_counterexample_counts": "17:0",
+      "accepted": false
+    },
+    {
+      "pair": "920/P154",
+      "edge_id": "edge_00027",
+      "state": "uncertain",
+      "support_counterexample_counts": "4:3",
+      "accepted": false
+    }
+  ],
+  "claim_boundaries": {
+    "global_edge_accepted_by_this_gate": false,
+    "global_000_to_740_identity": false,
+    "global_000_to_P324_identity": false,
+    "sign_meaning": false,
+    "phonetic_value": false,
+    "language_identity": false,
+    "translation": false,
+    "accepted_decipherment_claim_count_increment": 0
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "command": "/root/ivc/slm/ivcslm/__main__.py run-matrix --config configs/ivc_transfer_exact_exposure_20260712.json --scope transfer-only",
+  "config_sha256": "d71255022fd30571391e56c3485bc23cc0ba0746a06e9676b9be42548892491a",
+  "corpora": {
+    "ivc": {
+      "duplicate_weight": 2885,
+      "records": 1796,
+      "source_path": "/root/ivc/research/data/open_prototype/lipi/metadata_filtered.csv",
+      "source_sha256": "b3e2a94efdf70eaa893bbbbd35fd057b53f766c82823a3efb8ee37f9365311fe",
+      "tokens": 8205,
+      "unique_tokens": 571
+    },
+    "known_writing": {
+      "duplicate_weight": 2670,
+      "records": 1798,
+      "source_path": "/root/ivc/research/data/open_prototype/reports/linear_b_series_d_row_inventory.csv",
+      "source_sha256": "d28635c42ce1fe835364f77862e876b343d952e987ce8b5a74eb922549e8c117",
+      "tokens": 9079,
+      "unique_tokens": 442
+    },
+    "linear_b": {
+      "duplicate_weight": 299,
+      "records": 278,
+      "source_path": "/root/ivc/research/data/open_prototype/reports/linear_b_series_d_row_inventory.csv",
+      "source_sha256": "eee89611794388b1794818f37923ae1b09c7ed7d7d3278cd078f297a4d73e083",
+      "tokens": 1755,
+      "unique_tokens": 91
+    },
+    "nonwriting": {
+      "duplicate_weight": 3981,
+      "records": 1798,
+      "source_path": "/root/ivc/research/data/open_prototype/nonlinguistic/sproat2014/sproat2014_extracted_sequences.csv",
+      "source_sha256": "320f3061ef641cdb1055db7b8cc7037635c1f437269842ee06850f521110cd16",
+      "tokens": 8710,
+      "unique_tokens": 312
+    },
+    "sumtablets": {
+      "duplicate_weight": 2778,
+      "records": 1798,
+      "source_path": "/root/ivc/research/data/open_prototype/known_scripts/sumtablets/sumtablets_line_sequences.csv",
+      "source_sha256": "4a5c274d49855d14faeaa1f3d3931a2eec1b199cafe9f5bdc0df57679aeb21de",
+      "tokens": 8716,
+      "unique_tokens": 358
+    }
+  },
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "IVCSLM_BILLED_START_UNIX": "1783927802.8039734",
+    "IVCSLM_HOURLY_RATE_USD": "0.957456",
+    "MODAL_TASK_ID": "ta-01KXD640EF3V45A9SSP71W54FR",
+    "RUNPOD_POD_ID": ""
+  },
+  "git_branch": "codex/ivc-slm-exploration",
+  "git_commit": "de2da948746ff78976f8dcd176b5149a58fa71c6",
+  "git_status_porcelain": "",
+  "hardware": {
+    "cuda_available": true,
+    "cuda_version": "12.6",
+    "device": "cuda",
+    "gpu_name": "NVIDIA L4",
+    "numpy": "2.2.6",
+    "platform": "Linux-4.19.0-gvisor-x86_64-with-glibc2.36",
+    "python": "3.11.12 (main, May 21 2025, 23:34:13) [GCC 12.2.0]",
+    "torch": "2.7.1",
+    "total_gpu_memory_bytes": 23659151360
+  },
+  "run_scope": "transfer-only",
+  "source_tree_sha256": "2835cae3509e40248192169e3b030c80d4df779f2316516390a4e798dc884b9a",
+  "started_at_utc": "2026-07-13T07:30:11.246236+00:00"
+}

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ivcslm"
+version = "0.1.0"
+description = "From-scratch sequence models for leakage-controlled Indus script experiments"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=2.0,<3",
+  "pillow>=10,<13",
+  "torch>=2.4,<3",
+]
+
+[project.scripts]
+ivcslm = "ivcslm.cli:main"
+
+[tool.setuptools]
+packages = ["ivcslm"]

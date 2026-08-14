@@ -1,0 +1,196 @@
+{
+  "design": {
+    "date": "2026-07-12",
+    "hypothesis": "Within Harappa multi-side TAB:B/TAB:I artifacts carrying exact 700-032, 700-033, or 700-034 short marks, subtype 034 identifies a reproducible smaller-object or administrative-size tier that generalizes beyond copied/source families.",
+    "target": "034 versus pooled 032/033",
+    "eligibility": [
+      "Rows from lipi_frame700_subtype_rows.csv",
+      "Subtype is 032, 033, or 034",
+      "Positive scalar horizontal_mm and vertical_mm are both present",
+      "One artifact vote: duplicate rows from the same CISI object and subtype collapse deterministically"
+    ],
+    "source_family_holdout": [
+      "All H-2218 through H-2239 rows form one held-out source series",
+      "Otherwise rows with a longer text are grouped by exact longer-text family, regardless of short subtype",
+      "Rows without a longer text are grouped by their complete sequence_family_key"
+    ],
+    "models": {
+      "dimension_target": "balanced-prior nearest centroid over training-standardized log horizontal and log vertical dimensions",
+      "administrative_format_baseline": "balanced-prior categorical Naive Bayes over type, sides, 700 order, context class, and side relation",
+      "emblem_formula_baseline": "balanced-prior categorical Naive Bayes over type, 700 order, longer token set, edge frames, first/last signs, and longer-text length bin"
+    },
+    "matched_nulls": {
+      "administrative_format": "Shuffle 034 labels within type|sides|700-order|context-class|side-relation blocks, retaining format and dimension composition.",
+      "emblem_copy_family": "Shuffle labels within recurrent held-out source families; singleton families are pooled by type|sides|700-order|context-class."
+    },
+    "bootstrap_iterations": 5000,
+    "null_iterations_per_policy": 2000,
+    "bootstrap_seed": 34072026,
+    "administrative_null_seed": 34072027,
+    "emblem_null_seed": 34072028,
+    "pass_gate": [
+      "Grouped-bootstrap 95% lower bound for dimension-model ROC AUC is greater than 0.50",
+      "Grouped-bootstrap 95% lower bound for dimension AUC minus administrative-format baseline AUC is greater than 0",
+      "Grouped-bootstrap 95% lower bound for dimension AUC minus emblem-formula baseline AUC is greater than 0",
+      "Dimension AUC exceeds at least 95% of each matched-null distribution",
+      "On the completely held-out H-2218 through H-2239 series, 034 recall is at least 0.80 and the one 033 control is correctly rejected"
+    ]
+  },
+  "input": {
+    "path": "research/data/open_prototype/reports/lipi_frame700_subtype_rows.csv",
+    "raw_rows": 353,
+    "positive_dimension_rows_before_artifact_collapse": 310,
+    "eligible_artifact_rows": 309,
+    "collapsed_duplicate_artifact_rows": 1,
+    "source_groups": 216,
+    "h_series_rows": 22,
+    "subtype_summary": {
+      "032": {
+        "rows": 85,
+        "median_horizontal_mm": 16.5,
+        "median_vertical_mm": 8.8,
+        "median_area_mm2": 146.85,
+        "h_series_rows": 0
+      },
+      "033": {
+        "rows": 113,
+        "median_horizontal_mm": 15.2,
+        "median_vertical_mm": 8,
+        "median_area_mm2": 117.15,
+        "h_series_rows": 1
+      },
+      "034": {
+        "rows": 111,
+        "median_horizontal_mm": 13.5,
+        "median_vertical_mm": 7.5,
+        "median_area_mm2": 101.25,
+        "h_series_rows": 21
+      }
+    }
+  },
+  "observed": {
+    "dimension": {
+      "rows": 309,
+      "positives": 111,
+      "negatives": 198,
+      "tp": 84,
+      "tn": 112,
+      "fp": 86,
+      "fn": 27,
+      "accuracy": 0.634304,
+      "balanced_accuracy": 0.661207,
+      "recall_034": 0.756757,
+      "specificity_non034": 0.565657,
+      "macro_f1": 0.631277,
+      "roc_auc": 0.701087
+    },
+    "administrative_format": {
+      "rows": 309,
+      "positives": 111,
+      "negatives": 198,
+      "tp": 54,
+      "tn": 144,
+      "fp": 54,
+      "fn": 57,
+      "accuracy": 0.640777,
+      "balanced_accuracy": 0.60688,
+      "recall_034": 0.486486,
+      "specificity_non034": 0.727273,
+      "macro_f1": 0.607478,
+      "roc_auc": 0.643416
+    },
+    "emblem_formula": {
+      "rows": 309,
+      "positives": 111,
+      "negatives": 198,
+      "tp": 86,
+      "tn": 67,
+      "fp": 131,
+      "fn": 25,
+      "accuracy": 0.495146,
+      "balanced_accuracy": 0.556579,
+      "recall_034": 0.774775,
+      "specificity_non034": 0.338384,
+      "macro_f1": 0.49323,
+      "roc_auc": 0.5182
+    }
+  },
+  "grouped_bootstrap_95ci": {
+    "iterations": 5000,
+    "dimension_auc": {
+      "low": 0.606806,
+      "median": 0.695575,
+      "high": 0.78903
+    },
+    "dimension_balanced_accuracy": {
+      "low": 0.588796,
+      "median": 0.657668,
+      "high": 0.728827
+    },
+    "dimension_minus_format_auc": {
+      "low": -0.010581,
+      "median": 0.05872,
+      "high": 0.134992
+    },
+    "dimension_minus_emblem_auc": {
+      "low": 0.057127,
+      "median": 0.174025,
+      "high": 0.293354
+    }
+  },
+  "matched_nulls": {
+    "administrative_format": {
+      "iterations": 2000,
+      "blocks": 26,
+      "mean_unchanged_label_share": 0.657916,
+      "auc_mean": 0.597158,
+      "auc_p95": 0.654323,
+      "auc_null_ge_observed_share": 0.0015,
+      "balanced_accuracy_mean": 0.592821,
+      "balanced_accuracy_p95": 0.633088,
+      "recall_034_mean": 0.668806,
+      "recall_034_p95": 0.720721
+    },
+    "emblem_copy_family": {
+      "iterations": 2000,
+      "blocks": 54,
+      "mean_unchanged_label_share": 0.718981,
+      "auc_mean": 0.616055,
+      "auc_p95": 0.662687,
+      "auc_null_ge_observed_share": 0.001,
+      "balanced_accuracy_mean": 0.593469,
+      "balanced_accuracy_p95": 0.626058,
+      "recall_034_mean": 0.67118,
+      "recall_034_p95": 0.711712
+    }
+  },
+  "h_series_complete_holdout": {
+    "rows": 22,
+    "positives": 21,
+    "negatives": 1,
+    "tp": 21,
+    "tn": 0,
+    "fp": 1,
+    "fn": 0,
+    "accuracy": 0.954545,
+    "balanced_accuracy": 0.5,
+    "recall_034": 1,
+    "specificity_non034": 0,
+    "macro_f1": 0.488372,
+    "roc_auc": 0.47619
+  },
+  "gate": {
+    "checks": {
+      "dimension_auc_ci_low_gt_chance": true,
+      "dimension_minus_format_auc_ci_low_gt_zero": false,
+      "dimension_minus_emblem_auc_ci_low_gt_zero": true,
+      "dimension_auc_beats_administrative_null_95pct": true,
+      "dimension_auc_beats_emblem_null_95pct": true,
+      "h_series_034_recall_ge_0p80": true,
+      "h_series_033_control_correct": false
+    },
+    "pass": false,
+    "decision": "CLOSE_034_OBJECT_SIZE_OR_METROLOGICAL_TIER_UNDER_CURRENT_LOCAL_EVIDENCE"
+  },
+  "interpretation": "The pre-registered held-out-family gate failed. The earlier 034 size association does not generalize strongly enough beyond source/formula families and matched administrative/emblem confounds to support a numerical, metrological, or object-size-tier interpretation."
+}

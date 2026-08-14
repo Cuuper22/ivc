@@ -128,6 +128,8 @@ Every structural experiment should run at least these conditions when data permi
 
 If a result appears only under one policy, it is a claim about that policy, not about IVC.
 
+An accepted `merge` edge is not automatically eligible for `conservative_merge`. The July 12 P086 and P385 clusters are controlling examples: `{390,405,406,407} -> P086` and `{817,861} -> P385` may be used only in explicit Mayig-policy lanes that preserve feature vectors; raw Lipi and conservative-merge runs keep those signs distinct.
+
 ## Mayig Feature Vector Handling
 
 For `mayig`, preserve:
@@ -176,7 +178,9 @@ Current first workset:
 - 136 strict `R/L` count-matched rows.
 - 739 aligned positions.
 - 189 `lipi` numeric signs and 160 `mayig` Parpola-style signs.
-- All mappings remain `uncertain`.
-- High-priority review signs: `740 -> P324`, `002 -> P122`, `220 -> P050`, `390 -> P086`, `032 -> P145`.
-- High-priority possible merge/allograph cluster: `817` and `861` both aligning to `P385`.
-- The `817`/`861 -> P385` policy preserves the order signal and improves masked-sign prediction, but remains unaccepted until visual or authoritative validation.
+- One mapping is analysis-grade `exact`: `740 -> P324`, supported by 73/73 aligned positions and three labeled CISI 1 source panels under the July 12 source gate.
+- `002 -> P122` is source-validated as a conflict: three labeled counterexamples block exactness despite 57/60 majority support.
+- `{390,405,406,407} -> P086` is source-validated as a non-injective merge for explicit Mayig-policy analysis only. The reverse lane is 25:2:1:1 and eight labeled source panels preserve the visible feature variants.
+- `032 -> P145` is source-validated as a conflict: M-143 reverses the dominant adjacent `032 002 / P145 P122` policy while Mayig preserves the full-height/half-height feature distinction.
+- `{817,861} -> P385` is source-validated as a feature-preserving merge for explicit Mayig-policy analysis only. Roundedness keeps 817 round and 861 angular; M-177's local-803/P385 occurrence remains a contextual conflict, not a global remapping.
+- Remaining high-priority review sign: `220 -> P050` (parked for inadequate defining-detail resolution).

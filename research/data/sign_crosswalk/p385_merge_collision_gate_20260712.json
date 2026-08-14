@@ -1,0 +1,54 @@
+{
+  "date": "2026-07-12",
+  "decision": "source_visible_feature_preserving_merge_with_contextual_803_collision",
+  "to_sign_uid": "mayig_p:P385",
+  "mapping_state": "merge",
+  "accepted_for_analysis": true,
+  "analysis_policy": "explicit_mayig_feature_preserving_only",
+  "raw_lipi_collapse_allowed": false,
+  "conservative_merge_eligible": false,
+  "intended_merge_members": [
+    {"edge_id": "edge_00013", "from_sign_uid": "lipi_numeric:817", "support_count": 12, "counterexample_count": 0, "roundedness": 0},
+    {"edge_id": "edge_00014", "from_sign_uid": "lipi_numeric:861", "support_count": 12, "counterexample_count": 0, "roundedness": 1}
+  ],
+  "reverse_lane": {
+    "aligned_positions": 25,
+    "lipi_counts": {"817": 12, "861": 12, "803": 1},
+    "exhaustive_reverse_identity_accepted": false
+  },
+  "contextual_collision": {
+    "object": "M-177",
+    "lipi_sign": "803",
+    "mayig_sign": "P385",
+    "position_1based": 4,
+    "global_803_to_p385_mapping_created": false,
+    "edge_00018_803_to_p364_state": "conflict",
+    "edge_00018_support": 9,
+    "edge_00018_counterexamples": {"P385": 1}
+  },
+  "source_pdf_sha256": "47A4DA4227CFB7BAA56D6A561E25797225499D0EC54F5A702A82C67AB4746D4D",
+  "alignment_table_sha256": "935AD5B75B61AC8F7FC5E736DDA109475B23A29B510AA0D61577C3EC34971473",
+  "mayig_commit": "ad2f1e218a34b8c33c57de0d6cb8d99272765bbb",
+  "p385_raw_sha256": "332D441C4F7C8DD5C932393A2FE35BE31F22EBB5474FA4BC2EDC073C2DA5B62D",
+  "p364_raw_sha256": "B9D8B4AC7BD0F21827ED08F04D090819C7681D54EB46504FF26D383DB24AB1CC",
+  "source_visible_witnesses": ["M-1", "M-14", "M-15", "M-21", "M-32", "M-148", "M-177"],
+  "evidence_types": [
+    "same_artifact",
+    "count_matched",
+    "position_aligned",
+    "source_visible_published_plate",
+    "pinned_feature_preserving_merge_metadata",
+    "source_visible_contextual_collision",
+    "held_out_policy_sensitivity"
+  ],
+  "claim_boundaries": {
+    "exact_identity": false,
+    "bidirectional_exhaustive_identity": false,
+    "global_803_to_p385_mapping": false,
+    "sign_meaning": false,
+    "phonetic_value": false,
+    "language_identity": false,
+    "translation": false,
+    "accepted_claim_count_increment": 0
+  }
+}

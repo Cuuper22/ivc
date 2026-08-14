@@ -1,0 +1,51 @@
+{
+  "date": "2026-07-12",
+  "decision": "source_visible_noninjective_namespace_merge_accepted_for_explicit_mayig_policy_only",
+  "mapping_state": "merge",
+  "to_sign_uid": "mayig_p:P086",
+  "accepted_for_analysis": true,
+  "analysis_policy": "explicit_mayig_feature_preserving_only",
+  "raw_lipi_collapse_allowed": false,
+  "conservative_merge_eligible": false,
+  "reverse_lane": {
+    "aligned_positions": 29,
+    "members": [
+      {"edge_id": "edge_00004", "from_sign_uid": "lipi_numeric:390", "support_count": 25, "share": 0.862069, "confidence": "high"},
+      {"edge_id": "edge_00076", "from_sign_uid": "lipi_numeric:405", "support_count": 2, "share": 0.068966, "confidence": "medium"},
+      {"edge_id": "edge_00141", "from_sign_uid": "lipi_numeric:406", "support_count": 1, "share": 0.034483, "confidence": "low"},
+      {"edge_id": "edge_00142", "from_sign_uid": "lipi_numeric:407", "support_count": 1, "share": 0.034483, "confidence": "low"}
+    ]
+  },
+  "source_visible_witnesses": [
+    {"object": "M-12", "lipi_sign": "390", "position_1based": 2, "panel": "research/data/sign_crosswalk/source_panels/390_P086_merge/M-12_A_CISI1_pdf46_print10.png"},
+    {"object": "M-17", "lipi_sign": "390", "position_1based": 1, "panel": "research/data/sign_crosswalk/source_panels/390_P086_merge/M-17_A_CISI1_pdf48_print12.png"},
+    {"object": "M-32", "lipi_sign": "390", "position_1based": 1, "panel": "research/data/sign_crosswalk/source_panels/390_P086_merge/M-32_A_CISI1_pdf53_print17.png"},
+    {"object": "M-82", "lipi_sign": "390", "position_1based": 6, "panel": "research/data/sign_crosswalk/source_panels/390_P086_merge/M-82_A_CISI1_pdf70_print34.png"},
+    {"object": "M-34", "lipi_sign": "405", "position_1based": 5, "panel": "research/data/sign_crosswalk/source_panels/390_P086_merge/M-34_A_CISI1_pdf54_print18.png"},
+    {"object": "M-170", "lipi_sign": "406", "position_1based": 3, "panel": "research/data/sign_crosswalk/source_panels/390_P086_merge/M-170_A_CISI1_pdf86_print50.png"},
+    {"object": "M-171", "lipi_sign": "407", "position_1based": 1, "panel": "research/data/sign_crosswalk/source_panels/390_P086_merge/M-171_A_CISI1_pdf86_print50.png"},
+    {"object": "M-172", "lipi_sign": "405", "position_1based": 1, "panel": "research/data/sign_crosswalk/source_panels/390_P086_merge/M-172_A_CISI1_pdf86_print50.png"}
+  ],
+  "source_pdf_sha256": "47A4DA4227CFB7BAA56D6A561E25797225499D0EC54F5A702A82C67AB4746D4D",
+  "alignment_table_sha256": "935AD5B75B61AC8F7FC5E736DDA109475B23A29B510AA0D61577C3EC34971473",
+  "mayig_commit": "ad2f1e218a34b8c33c57de0d6cb8d99272765bbb",
+  "mayig_p086_blob": "c1ac671a4f2c0b24bafaaac39232f6bbe21823e8",
+  "mayig_p086_raw_sha256": "08F94F74A499B49FE8DE7B02F12927D675E0E24345F3A7A85628170DB43915E6",
+  "unobserved_local_members_not_promoted": ["392", "408"],
+  "evidence_types": [
+    "same_artifact",
+    "count_matched",
+    "position_aligned",
+    "source_visible_published_plate",
+    "pinned_feature_preserving_merge_metadata",
+    "held_out_policy_sensitivity"
+  ],
+  "claim_boundaries": {
+    "exact_identity": false,
+    "sign_meaning": false,
+    "phonetic_value": false,
+    "language_identity": false,
+    "translation": false,
+    "accepted_claim_count_increment": 0
+  }
+}
