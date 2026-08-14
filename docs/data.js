@@ -1,14 +1,22 @@
 /* =========================================================================
-   IVC — data + custom artwork. Everything here is drawn or sourced by hand.
-   - GLYPHS: original geometric line-art approximations of Indus signs
-     (clean vector forms, not tracings, used as decorative iconography).
-   - SITES: real archaeological sites, approximate coordinates.
-   - BRANCH: the project's actual 002 sign-structure ecology.
-   - PUZZLES: sequences built from the project's sign codes for the game.
+   Every piece of content the page displays lives here, so the rendering code
+   in app.js never has to hold facts. Two kinds of content are mixed, and the
+   difference matters for the project's claim discipline:
+
+   REAL — SITES (archaeological sites, coordinates approximate), BRANCH (the
+   project's actual 002 sign-structure), LEDGER (accepted counts straight from
+   claims.json), TIMELINE, GRAVES (retracted claims), and the numeric sign rows
+   inside SEALS. Change these only to match the ledger.
+
+   ILLUSTRATIVE — GLYPHS are original line drawings in the spirit of Indus
+   signs, not tracings of real ones, so nobody can mistake the page's artwork
+   for evidence. PUZZLE rows are made up out of real sign codes to teach the
+   idea of a terminal tail; they are not corpus rows.
    ========================================================================= */
 window.IVC = (function () {
 
-  /* ---- Custom Indus-style glyphs (viewBox 0 0 64 64, stroke art) ----- */
+  /* ---- Decorative glyphs: SVG path data drawn on a 64x64 grid, stroked
+     rather than filled. Illustrative stand-ins, never facsimiles. ------- */
   var GLYPHS = {
     fish:    "M14 32C24 21 40 21 50 32C40 43 24 43 14 32Z M22 32H40 M50 32L57 27 M50 32L57 37",
     jar:     "M24 18H40L44 28V42C44 47 39 50 32 50C25 50 20 47 20 42V28Z M20 30H44",
@@ -29,8 +37,10 @@ window.IVC = (function () {
   };
   var GLYPH_KEYS = Object.keys(GLYPHS);
 
-  /* ---- Archaeological sites (lon, lat) ------------------------------- */
-  // Projection bounds chosen to frame Mesopotamia -> Indus together.
+  /* ---- Archaeological sites, in degrees of longitude and latitude ---- */
+  // The map's projection window (set in app.js) is wide enough to hold
+  // Mesopotamia and the Indus in one frame, because the trade link between
+  // them is the point of the map.
   var SITES = [
     { id: "harappa",     name: "Harappa",        lon: 72.86, lat: 30.63, type: "indus", note: "Source site of tablet H-1993, a frontier target for the 095 closure.", tag: "frontier" },
     { id: "mohenjo",     name: "Mohenjo-daro",   lon: 68.14, lat: 27.33, type: "indus", note: "Largest Indus city. Home of seals M-376, M-391 (the verified witnesses) and frontier seal M-1825.", tag: "verified" },
@@ -43,10 +53,14 @@ window.IVC = (function () {
     { id: "susa",        name: "Susa",           lon: 48.25, lat: 32.19, type: "meso",  note: "Elamite capital. Linear Elamite's contested decipherment is a methodological comparator.", tag: "meso" },
     { id: "failaka",     name: "Failaka",        lon: 48.33, lat: 29.43, type: "gulf",  note: "Dilmun-era Gulf island; stamp seals here carry Indus-related signs.", tag: "gulf" }
   ];
-  var TRADE = ["mohenjo", "lothal", "failaka", "ur"]; // Meluhha trade arc
+  var TRADE = ["mohenjo", "lothal", "failaka", "ur"]; // waypoints of the Meluhha trade arc, drawn in order
 
-  /* ---- The 002 branch ecology (the real research object) ------------- */
-  // x: column (0..4), y: lane. status: verified | gated | open | context | root
+  /* ---- The 002 branch: the actual object of study -------------------- */
+  // Which units can follow the sign 002, and how far each one has got
+  // through the gates. x and y place the node on the diagram: x is the
+  // column, y is the lane. status drives both the colour and the label the
+  // visitor reads, so it must use the ledger's own vocabulary --
+  // verified | gated | open | context | root.
   var BRANCH = {
     nodes: [
       { id: "002",     label: "002", x: 0, y: 2,  status: "root",    info: "The conditioning sign. What follows 002 behaves differently than the same signs elsewhere." },
@@ -66,7 +80,10 @@ window.IVC = (function () {
   };
 
   /* ---- Decipherer's game: spot the terminal tail --------------------- */
-  // Each row is a sequence of sign codes. 533-717 only ever sits at the end.
+  // Teaching rows, not corpus rows. They are built so that exactly one
+  // option, 533-717, sits at the end of every line it appears in, while the
+  // decoy options also turn up mid-line. That is the same test the project
+  // ran, shrunk to six lines a visitor can eyeball.
   var PUZZLE = {
     prompt: "One unit below only ever appears at the very END of a line. The others turn up in the middle too. Which one always closes?",
     options: ["220-004", "533-717", "390-125", "031-002"],
@@ -79,11 +96,14 @@ window.IVC = (function () {
       ["157","031","002","390","705"],
       ["002","861","603","533","717"]
     ],
-    // which trailing pair is the terminal unit per row (for the reveal)
+    // Per row, the [first, last] token index of the terminal tail, or null if
+    // that row has none. The game lights these up once the answer is found.
     tail: [ [2,3], [3,4], null, [4,5], null, [4,5] ]
   };
 
-  /* ---- Scoreboard ledger (real accepted counts) ---------------------- */
+  /* ---- The scoreboard. These are the accepted counts from the claim
+     ledger, copied exactly. Five zeros and a single structural finding is
+     the project's real position, not a placeholder to be filled in. ----- */
   var LEDGER = [
     { n: 0, label: "Translations" },
     { n: 0, label: "Phonetic values" },
@@ -93,7 +113,8 @@ window.IVC = (function () {
     { n: 1, label: "Structural findings", verified: true }
   ];
 
-  /* ---- A century of attempts (real events) --------------------------- */
+  /* ---- A century of attempts. Real, dated events, ordered oldest first;
+     app.js marks the last entry as "now". ------------------------------ */
   var TIMELINE = [
     { y: "1875", t: "The first seal", d: "Alexander Cunningham publishes a Harappan seal. Nobody knows what civilization it belongs to." },
     { y: "1924", t: "A civilization announced", d: "John Marshall reveals the Indus Valley Civilization to the world. The script becomes a famous unsolved problem overnight." },
@@ -108,8 +129,10 @@ window.IVC = (function () {
     { y: "2026", t: "One brick, earned", d: "This project accepts its first structural finding after 10,000-shuffle forger tests and source-image binding. Zero readings claimed." }
   ];
 
-  /* ---- The graveyard: real retracted claims from claims.json --------- */
-  // Plain-language cause of death for a representative set; total is 26.
+  /* ---- The graveyard: retracted claims, straight from claims.json ---- */
+  // Eight of the twenty-six retractions, chosen to show the range of ways a
+  // claim can fail, each with its cause of death in plain language. The id
+  // is the ledger's own claim id, so a reader can go find the full record.
   var GRAVES = [
     { id: "all_002_y_are_endings", title: "“Everything after 002 is an ending”", death: "Too broad. The skeptic pass found continuing rows; the clean version survives only inside one narrow branch." },
     { id: "internal_only_effective_unicity_gives_language_family", title: "“Cryptographic unicity can name the language”", death: "Retracted in-house: internal consistency alone cannot identify a language family. The same logic underlies famous external claims." },
@@ -122,8 +145,12 @@ window.IVC = (function () {
   ];
   var GRAVES_TOTAL = 26;
 
-  /* ---- The artifact gallery: real corpus rows ------------------------ */
-  // text: real numeric sign rows from the project's metadata layer.
+  /* ---- The artifact gallery ------------------------------------------ */
+  // The eight objects the whole story hangs on. "text" holds the real
+  // numeric sign row from the project's metadata layer; the glyph shapes the
+  // page draws from it are decorative. "tail" counts back from the end of
+  // the row to mark the terminal tail, and only the two verified witnesses
+  // have one.
   var SEALS = [
     { obj: "M-376",  site: "Mohenjo-daro", row: "strict witness", text: ["740","100","176","002","861","533","717"], tail: 4, status: "verified", note: "Witness one: a seven-sign inscription. Only the glowing tail is shared with M-391; the rest is a different text entirely." },
     { obj: "M-391",  site: "Mohenjo-daro", row: "strict witness", text: ["405","845","686","740","793","003","233","805","002","861","533","717"], tail: 4, status: "verified", note: "Witness two: twelve signs, different from M-376 in every position except the ending. Copy-family collapse was tested and rejected: different plate, length, dimensions, boss, and pre-tail context." },

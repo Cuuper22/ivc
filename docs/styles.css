@@ -1,7 +1,21 @@
 /* =========================================================================
-   IVC — "an excavation of data". Forensic-archaeology theme.
-   Palette: ink / clay / patina (OKLCH). Custom WebGL surface + instrument
-   readout motifs. Built with the impeccable + taste design vocabularies.
+   The look of the page: a dig site read by instruments.
+
+   Three colours carry all the meaning, and they are used consistently enough
+   that a visitor can learn them from the legend and then read the rest of
+   the page by colour alone:
+     ink     — the ground everything sits on
+     clay    — warm orange: work in progress, source-gated, not yet earned
+     patina  — cool green: accepted, earned, verified
+
+   Colours are written in OKLCH, which spaces lightness the way the eye does,
+   so a family of tints stays evenly stepped instead of clumping in the
+   middle. Every token lives on :root below; nothing further down invents its
+   own colour.
+
+   The page is dark-only on purpose (color-scheme: dark), because the WebGL
+   surface behind it is a dark eroded stone and there is no light version of
+   that idea. Anything that moves has a prefers-reduced-motion escape hatch.
    ========================================================================= */
 :root {
   --bg:      oklch(0.155 0.012 48);
@@ -57,7 +71,10 @@ body {
   overflow-x: hidden;
 }
 
-/* ---- custom WebGL surface + atmosphere --------------------------- */
+/* ---- Background surface and atmosphere -----------------------------
+   #gl is the shader canvas from gl.js, pinned behind everything. If WebGL is
+   unavailable gl.js adds .gl-fallback and the gradient below stands in, so
+   the page never drops to a flat empty backdrop. */
 #gl { position: fixed; inset: 0; width: 100%; height: 100%; z-index: var(--z-bg); display: block; }
 #gl.gl-fallback {
   background:
@@ -65,7 +82,9 @@ body {
     radial-gradient(90% 90% at 100% 110%, oklch(0.22 0.05 180 / 0.4), transparent 55%),
     var(--bg);
 }
-/* instrument scanlines — deliberate readout motif, kept very subtle */
+/* Faint horizontal scanlines, the way a measuring instrument's readout looks.
+   Kept at low opacity because it sits over every word on the page; the
+   reduced-motion rule below removes it outright. */
 .scan-overlay {
   position: fixed; inset: 0; z-index: var(--z-grain); pointer-events: none;
   background: repeating-linear-gradient(0deg, oklch(0 0 0 / 0.18) 0 1px, transparent 1px 3px);
@@ -84,7 +103,7 @@ svg { display: block; }
 h1, h2, h3 { font-family: var(--font-display); font-weight: 700; color: var(--ink); line-height: 1.02; letter-spacing: -0.03em; text-wrap: balance; }
 p { text-wrap: pretty; }
 
-/* ---- atoms -------------------------------------------------------- */
+/* ---- The small reusable pieces every section is built from --------- */
 .wrap { width: 100%; max-width: var(--maxw); margin-inline: auto; padding-inline: var(--pad-x); }
 .section { padding-block: var(--section-y); position: relative; z-index: var(--z-base); }
 .lead { font-size: clamp(1.12rem, 1rem + 0.7vw, 1.5rem); color: var(--ink-soft); max-width: 60ch; line-height: 1.5; }
@@ -110,21 +129,29 @@ p { text-wrap: pretty; }
 .btn svg { width: 1.05em; height: 1.05em; }
 :where(a, button, [tabindex]):focus-visible { outline: 2px solid var(--patina); outline-offset: 3px; border-radius: 6px; }
 
-/* glass panel used for showcase modules (purposeful, not default everywhere) */
+/* The frosted panel, reserved for the interactive modules. Backdrop blur is
+   expensive to composite, so it is spent only where a module needs to read as
+   an instrument sitting on top of the ground, never as a default card. */
 .panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); backdrop-filter: blur(8px) saturate(1.1); -webkit-backdrop-filter: blur(8px) saturate(1.1); }
 
-/* sign tokens */
+/* Sign codes shown as physical tokens. .is-verified is the accepted-status
+   colour, and it is the only thing on the page that glows. */
 .glyph { font-family: var(--font-mono); font-weight: 700; display: inline-flex; align-items: center; justify-content: center; padding: 0.5em 0.62em; border: 1px solid var(--line-2); border-radius: 10px; background: linear-gradient(180deg, var(--bg-3), var(--bg-2)); color: var(--ink); box-shadow: inset 0 1px 0 oklch(1 0 0 / 0.05); line-height: 1; }
 .glyph.is-verified { border-color: var(--patina-deep); color: var(--patina); box-shadow: inset 0 1px 0 oklch(1 0 0 / 0.06), 0 0 20px oklch(0.83 0.12 178 / 0.18); }
 .glyph-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
 .glyph-sep { color: var(--muted); font-family: var(--font-mono); }
 
-/* reveal (JS-gated so no-JS shows everything) */
+/* Scroll reveal. Every rule here is behind .js, which app.js puts on <html>
+   as it starts. That ordering matters: without JavaScript the class never
+   lands, nothing is ever hidden, and the whole page reads normally. */
 .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.7s var(--ease-expo), transform 0.7s var(--ease-expo); }
 .js .reveal.is-in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { .js .reveal { opacity: 1; transform: none; transition: none; } }
 
-/* ---- progress + nav ---------------------------------------------- */
+/* ---- Reading progress bar and the sticky header --------------------
+   The bar is full width and squashed to nothing by transform; app.js scales
+   it back up as you read. .is-stuck arrives once the page has scrolled far
+   enough that the header needs its own background to stay readable. */
 .progress { position: fixed; top: 0; left: 0; height: 2px; width: 100%; transform-origin: 0 50%; transform: scaleX(0); background: linear-gradient(90deg, var(--clay), var(--patina)); z-index: var(--z-progress); }
 .nav { position: fixed; top: 0; left: 0; right: 0; z-index: var(--z-nav); display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.8rem var(--pad-x); height: 62px; border-bottom: 1px solid transparent; transition: background 0.3s, border-color 0.3s; }
 .nav.is-stuck { background: oklch(0.155 0.012 48 / 0.78); backdrop-filter: blur(14px) saturate(1.2); -webkit-backdrop-filter: blur(14px) saturate(1.2); border-bottom-color: var(--line); }
@@ -176,7 +203,8 @@ p { text-wrap: pretty; }
 .stack-sm { display: grid; gap: 0.8rem; }
 .stack-md { display: grid; gap: 1.4rem; }
 
-/* facts ledger */
+/* The facts list: a <dl> ruled like a ledger page, term on the left and
+   number on the right, so the zeros line up and can be scanned in a column. */
 .facts { display: grid; border-top: 1px solid var(--line); }
 .fact { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 1.4rem; align-items: baseline; padding: 1.05rem 0; border-bottom: 1px solid var(--line); }
 .fact dt { color: var(--ink-soft); }
@@ -226,8 +254,10 @@ p { text-wrap: pretty; }
 .bcheck { fill: var(--patina); }
 .bnode.sel .bbox { fill: var(--bg-3); stroke-width: 2.4; }
 .bnode.is-verified.sel .bbox { fill: oklch(0.30 0.06 182); }
-/* opacity-only reveal: never CSS-transform an SVG <g> that is positioned by a
-   transform attribute, or the attribute is clobbered and the node collapses. */
+/* Fade these in with opacity only, never a transform. Each branch node is an
+   SVG <g> already positioned by its own transform attribute, and a CSS
+   transform overrides that attribute rather than adding to it, which would
+   pile every node onto the origin. */
 .js .branch-svg .bnode { opacity: 0; }
 .js .branch-svg.drawn .bnode { opacity: 1; transition: opacity 0.5s var(--ease-expo); transition-delay: calc(var(--i) * 70ms); }
 @media (prefers-reduced-motion: reduce) { .js .branch-svg .bnode { opacity: 1; } }
@@ -389,7 +419,10 @@ p { text-wrap: pretty; }
 @media (prefers-reduced-motion: reduce) { .js .seal { opacity: 1; } }
 .seal-caption { margin-top: 1.2rem; }
 
-/* ---- the DIG veil (easter egg) ------------------------------------- */
+/* ---- Dig mode ------------------------------------------------------
+   The dark overlay with a hole cut in it by a radial gradient. app.js moves
+   the hole by writing --lx and --ly, so the browser only repaints the
+   gradient and never touches layout. */
 .veil { position: fixed; inset: 0; z-index: 65; pointer-events: none; --lx: 50vw; --ly: 50vh; opacity: 0; transition: opacity 0.45s; background: radial-gradient(circle 220px at var(--lx) var(--ly), transparent 0%, oklch(0.07 0.008 48 / 0.55) 55%, oklch(0.05 0.006 48 / 0.96) 100%); }
 .veil.on { opacity: 1; }
 .veil-note { position: fixed; bottom: 1.2rem; left: 50%; transform: translateX(-50%); z-index: 66; font-size: 0.7rem; letter-spacing: 0.08em; color: var(--patina-soft); background: oklch(0.16 0.012 48 / 0.9); border: 1px solid var(--patina-deep); border-radius: 999px; padding: 0.5rem 1rem; opacity: 0; transition: opacity 0.45s; pointer-events: none; white-space: nowrap; }

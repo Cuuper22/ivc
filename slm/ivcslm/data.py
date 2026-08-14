@@ -1,3 +1,33 @@
+"""Load the corpora and split them so that held-out rows stay genuinely unseen.
+
+This is where most of the research discipline lives. A sequence model on a small
+corpus can look impressive for the wrong reason: the same string, or a string
+one sign away from it, sits on both sides of the split, and the model is really
+being tested on what it memorized.
+
+So splitting here is not a random shuffle of rows. It works in three stages:
+
+1. Collapse exact duplicates, so an identical sequence cannot appear twice.
+2. Join rows that differ by one substitution, insertion, or deletion into one
+   connected component, and join rows recorded on the same catalogue object or
+   source tablet into that component too. These components are the units that
+   get split — a whole formula family travels together.
+3. Allocate components to train/validation/test inside strata (site, by
+   default), so one dominant find-spot cannot own an entire partition.
+
+The module also builds the null-world controls. `row_internal_shuffle` keeps
+each row's signs but reorders them; `position_slot_shuffle` keeps the sign
+frequency of each position across rows but breaks the dependencies within a
+row. Both destroy sequence order while preserving something the model might
+otherwise be credited for. A control run is only meaningful if the shuffling did
+not accidentally re-create leakage, so the transformed partitions are re-checked
+and colliding rows are removed, with the attrition reported.
+
+None of this interprets the signs. The loaders read numeric sign labels and
+metadata; no field here carries a phonetic value, a meaning, or a language
+identification.
+"""
+
 from __future__ import annotations
 
 import csv
@@ -10,11 +40,26 @@ from pathlib import Path
 from typing import Iterable, Sequence
 
 
+# A canonical IVC text: three-digit sign numbers joined by hyphens, wrapped in
+# plus signs. Anything that does not match this exactly is skipped rather than
+# repaired, so a malformed row never becomes silent training evidence.
 IVC_PATTERN = re.compile(r"^\+(\d{3}(?:-\d{3})*)\+$")
 
 
 @dataclass(frozen=True)
 class Record:
+    """One sequence of signs plus the provenance needed to keep splits honest.
+
+    `artifact_ids` is the physical object (a CISI catalogue number, or a
+    comparator source tablet). Every row from the same object must land in the
+    same partition, so this field is what prevents two sides of one seal from
+    ending up on opposite sides of the split. `duplicate_weight` records how
+    many identical rows were collapsed into this one.
+
+    Equality and hashing deliberately ignore metadata and provenance: two
+    records are the same when their token sequence is the same.
+    """
+
     record_id: str
     tokens: tuple[str, ...]
     metadata: dict[str, str] = field(compare=False, hash=False)
@@ -25,6 +70,12 @@ class Record:
 
 @dataclass
 class Corpus:
+    """A loaded set of records with the hash of the file they came from.
+
+    The hash goes into every run manifest, so a reported number can always be
+    traced back to the exact input bytes that produced it.
+    """
+
     name: str
     records: list[Record]
     source_path: Path
@@ -33,6 +84,14 @@ class Corpus:
 
 @dataclass
 class Split:
+    """The three partitions, plus the bookkeeping that proves they are disjoint.
+
+    `group_by_record_id` names the one-edit component each record belongs to, so
+    the integrity checks can confirm no component straddles two partitions.
+    `forced_test_record_ids` are the records pushed into test on purpose,
+    because they contain a sequence the research questions probe directly.
+    """
+
     train: list[Record]
     validation: list[Record]
     test: list[Record]
@@ -41,6 +100,7 @@ class Split:
 
 
 def sha256_file(path: Path) -> str:
+    """Hash a file in blocks, so large inputs never have to be held in memory."""
     digest = hashlib.sha256()
     with path.open("rb") as handle:
         for block in iter(lambda: handle.read(1024 * 1024), b""):
@@ -49,6 +109,12 @@ def sha256_file(path: Path) -> str:
 
 
 def derived_corpus_hash(parent_sha256: str, records: Sequence[Record], policy: str) -> str:
+    """Hash a corpus that was derived rather than read from disk.
+
+    A capped, combined, or shuffled corpus has no file of its own. Hashing the
+    parent file's digest together with the policy string and the derived records
+    gives it an identity that changes if any of those three change.
+    """
     digest = hashlib.sha256()
     digest.update(f"parent={parent_sha256}\npolicy={policy}\n".encode("utf-8"))
     for record in sorted(records, key=lambda item: item.record_id):
@@ -64,6 +130,12 @@ def derived_corpus_hash(parent_sha256: str, records: Sequence[Record], policy: s
 
 
 def _collapse(records: Iterable[Record]) -> list[Record]:
+    """Merge records that share an identical token sequence into one record.
+
+    This runs before any split. The merged record keeps the union of the
+    metadata values, source ids, and artifact ids of every row it absorbed, so
+    collapsing loses no provenance and cannot hide a leakage link.
+    """
     grouped: dict[tuple[str, ...], list[Record]] = defaultdict(list)
     for record in records:
         grouped[record.tokens].append(record)
@@ -97,6 +169,18 @@ def load_ivc(
     require_cisi: bool = True,
     allowed_directions: set[str] | None = None,
 ) -> Corpus:
+    """Load the IVC rows that meet the canonical scope, and skip the rest.
+
+    A row is admitted only when it clears every one of these: a real CISI
+    identifier, a recorded direction, a text matching the strict sign pattern,
+    `complete == "Y"`, a length inside the configured window, no excluded sign,
+    and a stated sign count that agrees with the parsed one. The last check
+    catches rows whose recorded length disagrees with their own text, which
+    would otherwise be a silent transcription error in the training data.
+
+    The unverified source `class` field is not used as a supervised target
+    anywhere in the harness.
+    """
     records: list[Record] = []
     with path.open("r", encoding="utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle)
@@ -141,6 +225,12 @@ def load_ivc(
 
 
 def _deterministic_cap(records: list[Record], limit: int, seed: int) -> list[Record]:
+    """Keep at most `limit` records, choosing them by a seeded hash of the tokens.
+
+    Ordering by hash rather than by a random shuffle means the same seed always
+    selects the same subset, on any machine, without depending on the order the
+    file happened to be read in.
+    """
     if len(records) <= limit:
         return records
     def key(record: Record) -> str:
@@ -150,6 +240,13 @@ def _deterministic_cap(records: list[Record], limit: int, seed: int) -> list[Rec
 
 
 def load_linear_b(path: Path, min_length: int, max_length: int, limit: int, seed: int) -> Corpus:
+    """Load the audited Linear B Series D rows used as a known-writing comparator.
+
+    Only the clean audited slice is admitted, and only rows flagged as
+    length-eligible against the IVC length distribution. Linear B is the scarce
+    comparator: it contributes the rows it has and is never duplicated to look
+    larger.
+    """
     records: list[Record] = []
     with path.open("r", encoding="utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle)
@@ -181,6 +278,12 @@ def load_linear_b(path: Path, min_length: int, max_length: int, limit: int, seed
 
 
 def load_sumtablets(path: Path, min_length: int, max_length: int, limit: int, seed: int) -> Corpus:
+    """Load Sumerian tablet lines, the second known-writing comparator.
+
+    This source is much larger than the others, so it is capped deterministically
+    to keep the comparison fair. Source tablet ids are carried through as
+    artifact ids so that lines from one tablet cannot be split apart.
+    """
     records: list[Record] = []
     with path.open("r", encoding="utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle)
@@ -207,6 +310,16 @@ def load_sumtablets(path: Path, min_length: int, max_length: int, limit: int, se
 
 
 def load_sproat(path: Path, min_length: int, max_length: int, limit: int, seed: int) -> Corpus:
+    """Load nonwriting symbol sequences — the negative comparator.
+
+    These are ordered symbol systems that are not writing. They are the control
+    that keeps the transfer result honest: if a body pretrained on these helps
+    IVC just as much as one pretrained on known writing, then any transfer gain
+    is about sequence statistics in general, not about writing.
+
+    Tokens are prefixed with their originating corpus so that two different
+    systems never share a symbol id by coincidence.
+    """
     records: list[Record] = []
     with path.open("r", encoding="utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle)
@@ -230,6 +343,12 @@ def load_sproat(path: Path, min_length: int, max_length: int, limit: int, seed: 
 
 
 def combine_corpora(name: str, corpora: Sequence[Corpus], limit: int, seed: int) -> Corpus:
+    """Merge several corpora into one pool with namespaced ids and tokens.
+
+    Prefixing every token and identifier with its corpus name keeps the merged
+    vocabulary disjoint, so the model cannot treat a Linear B sign and a
+    Sumerian sign as the same symbol because they share a label.
+    """
     records: list[Record] = []
     for corpus in corpora:
         for record in corpus.records:
@@ -252,7 +371,14 @@ def combine_corpora(name: str, corpora: Sequence[Corpus], limit: int, seed: int)
 def cap_corpus_by_grouped_exposure(
     corpus: Corpus, target_records: int, target_tokens: int, seed: int
 ) -> Corpus:
-    """Cap a source pool by whole leakage groups and approximate record/token exposure."""
+    """Cap a source pool by whole leakage groups and approximate record/token exposure.
+
+    The transfer arms must see comparable amounts of data, or a transfer gain is
+    just a data-volume gain. So pools are trimmed toward a target record and
+    token count. Trimming takes whole one-edit components, never partial ones,
+    because splitting a component here would reintroduce the near-duplicate
+    leakage the components exist to prevent.
+    """
     components = one_edit_components(corpus.records)
     ranked = sorted(
         components,
@@ -287,6 +413,12 @@ def cap_corpus_by_grouped_exposure(
 
 
 class DisjointSet:
+    """Union-find: the standard structure for growing connected components.
+
+    Used to merge near-duplicate records into families without having to compare
+    every pair of records against every other pair.
+    """
+
     def __init__(self, size: int) -> None:
         self.parent = list(range(size))
         self.rank = [0] * size
@@ -309,7 +441,20 @@ class DisjointSet:
 
 
 def one_edit_components(records: Sequence[Record]) -> list[list[int]]:
-    """Connect exact-collapsed rows separated by one substitution/insertion/deletion."""
+    """Connect exact-collapsed rows separated by one substitution/insertion/deletion.
+
+    These components are the atoms of every split. Two rows land in the same
+    component when one sign can be changed, added, or dropped to turn one into
+    the other, or when they come from the same catalogue object.
+
+    Substitution neighbors are found without pairwise comparison: each row emits
+    one signature per position, with that position wildcarded, and rows sharing a
+    signature are joined. Deletion neighbors are found by dropping one sign and
+    looking the result up among the exact sequences.
+
+    Components are returned largest first, which makes the dominant formula
+    families easy to spot when the allocation is inspected.
+    """
     dsu = DisjointSet(len(records))
     substitution_signatures: dict[tuple[int, int, tuple[str, ...]], int] = {}
     exact: dict[tuple[str, ...], int] = {record.tokens: index for index, record in enumerate(records)}
@@ -340,6 +485,11 @@ def one_edit_components(records: Sequence[Record]) -> list[list[int]]:
 
 
 def _component_stratum(records: Sequence[Record], indices: Sequence[int], field: str) -> str:
+    """Label a whole component with the most common value of a metadata field.
+
+    A component can span several sites; it still needs one stratum label,
+    because the component is allocated as a unit.
+    """
     values: Counter[str] = Counter()
     for index in indices:
         for value in records[index].metadata.get(field, "").split("|"):
@@ -349,6 +499,7 @@ def _component_stratum(records: Sequence[Record], indices: Sequence[int], field:
 
 
 def _contains_pattern(tokens: tuple[str, ...], pattern: tuple[str, ...]) -> bool:
+    """Report whether a sign subsequence appears contiguously inside a record."""
     width = len(pattern)
     return width > 0 and any(tokens[start : start + width] == pattern for start in range(len(tokens) - width + 1))
 
@@ -361,6 +512,18 @@ def grouped_split(
     stratify_field: str,
     forced_test_patterns: Sequence[Sequence[str]] = (),
 ) -> Split:
+    """Allocate whole one-edit components to train/validation/test within strata.
+
+    Components matching a forced test pattern go to test first and
+    unconditionally. Any sequence the research questions probe directly must be
+    held out before the model is ever fitted, otherwise the probe is scored on
+    material the model was trained on.
+
+    The remaining components are grouped by stratum, shuffled with the run seed,
+    and handed to whichever partition is furthest below its target count. This
+    keeps each site's proportions roughly intact instead of letting one large
+    site dominate a partition.
+    """
     components = one_edit_components(records)
     rng = random.Random(seed)
     patterns = tuple(tuple(pattern) for pattern in forced_test_patterns if pattern)
@@ -402,7 +565,9 @@ def grouped_split(
                 allocations[index] = split_name
             counts[split_name] += len(component)
             stratum_counts[split_name] += len(component)
-    # Guarantee all partitions exist even when a giant component dominates.
+    # One component can be large enough to swallow a whole stratum's quota,
+    # leaving a partition empty. Move the smallest training component across so
+    # that validation and test always contain something to score.
     for required in ("validation", "test"):
         if counts[required] == 0:
             candidates = [component for component in components if allocations[component[0]] == "train"]
@@ -433,7 +598,16 @@ def grouped_split(
 
 
 def controlled_split(split: Split, control: str, seed: int, transform_test: bool = True) -> Split:
-    """Apply a null transformation independently inside each frozen partition."""
+    """Apply a null transformation independently inside each frozen partition.
+
+    The partitions are decided first and then frozen; only the sign order inside
+    them changes. Transforming each partition separately, rather than
+    transforming the corpus and re-splitting it, is what stops a held-out
+    object's signs from being redistributed into a training object.
+
+    The two assertions afterwards are the proof of that: partition membership
+    and source-artifact membership must come out identical to what went in.
+    """
     transformed = Split(
         apply_control(split.train, control, seed),
         apply_control(split.validation, control, seed + 1_000_003),
@@ -464,6 +638,12 @@ def controlled_split(split: Split, control: str, seed: int, transform_test: bool
 
 
 def control_collision_diagnostics(split: Split) -> dict[str, int | str]:
+    """Count the leakage a null transform accidentally created.
+
+    Shuffling signs can turn two rows that were different into two rows that are
+    identical or one edit apart, across partitions. This counts both kinds, and
+    is run before and after the collisions are removed.
+    """
     partitions = (split.train, split.validation, split.test)
     token_sets = [{record.tokens for record in rows} for rows in partitions]
     exact_pairs = (
@@ -495,6 +675,10 @@ def sanitize_control_split(split: Split) -> tuple[Split, dict]:
     validation rows are removed; otherwise validation rows are removed when a
     component also touches train. This makes the null weaker rather than allowing
     transformed held-out strings to leak into fitting or checkpoint selection.
+
+    Choosing to shrink the null is the conservative direction. A weaker null is a
+    less impressive control; a leaking null is a wrong result. The rows dropped
+    are counted and reported as attrition so the cost is visible.
     """
     partitions = (split.train, split.validation, split.test)
     labelled = [
@@ -546,6 +730,14 @@ def sanitize_control_split(split: Split) -> tuple[Split, dict]:
 
 
 def _nonidentity_shuffle(values: list[str], rng: random.Random) -> list[str]:
+    """Reorder a list so the result differs from the input, when that is possible.
+
+    A plain shuffle can return the original order, which would leave an
+    untransformed row inside a control arm. Random draws are tried first, then
+    rotations, then reversal. A list whose entries are all the same sign cannot
+    be reordered at all, and is returned unchanged; the run reports how many such
+    rows there were.
+    """
     if len(values) < 2 or len(set(values)) < 2:
         return list(values)
     original = list(values)
@@ -562,6 +754,17 @@ def _nonidentity_shuffle(values: list[str], rng: random.Random) -> list[str]:
 
 
 def apply_control(records: list[Record], control: str, seed: int) -> list[Record]:
+    """Build a null-world copy of the records under one named transform.
+
+    `row_internal_shuffle` reorders the signs inside each row. Each row keeps its
+    exact multiset of signs, so a model that only learned which signs co-occur
+    still does well here — and a model that learned order does not.
+
+    `position_slot_shuffle` works down the columns instead: among rows of the
+    same length, the signs in position 1 are permuted among themselves, then
+    position 2, and so on. Length and position-wise sign frequencies survive
+    untouched; only the dependency between positions inside a row is destroyed.
+    """
     rng = random.Random(seed)
     if control == "row_internal_shuffle":
         output = []
@@ -603,6 +806,12 @@ def apply_control(records: list[Record], control: str, seed: int) -> list[Record
 
 
 def assert_source_split_integrity(split: Split) -> None:
+    """Raise unless records, one-edit families, and objects are all disjoint.
+
+    Checked at every point a split is built or modified. These are hard errors,
+    not warnings: a run whose partitions overlap would report numbers that mean
+    nothing, so it must not be allowed to start.
+    """
     partitions = [split.train, split.validation, split.test]
     id_sets = [{record.record_id for record in rows} for rows in partitions]
     if id_sets[0] & id_sets[1] or id_sets[0] & id_sets[2] or id_sets[1] & id_sets[2]:
@@ -619,6 +828,11 @@ def assert_source_split_integrity(split: Split) -> None:
 
 
 def assert_split_integrity(split: Split) -> None:
+    """The full check: source integrity plus no identical sequence across partitions.
+
+    The extra condition is dropped for null-world splits, where the transform can
+    manufacture identical strings and the collisions are removed separately.
+    """
     assert_source_split_integrity(split)
     partitions = [split.train, split.validation, split.test]
     token_sets = [{record.tokens for record in rows} for rows in partitions]

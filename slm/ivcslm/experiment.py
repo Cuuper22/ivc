@@ -1,3 +1,38 @@
+"""The run matrix: which models get fitted, in what order, and under what budget.
+
+A single fit proves nothing on a corpus this small. The matrix is the actual
+experiment — the same architecture and split policy run across seeds, model
+sizes, comparator corpora, null controls, and transfer arms, so that a result
+can be read against what it should look like if there were nothing there.
+
+The arms are:
+
+- IVC at each configured model size, from random initialization;
+- the comparator corpora (Linear B, SumTablets, nonwriting symbol systems) under
+  the identical architecture and split policy;
+- null controls, which are IVC with its sign order destroyed in two different
+  ways;
+- the transfer tournament, where a Transformer body pretrained on one source is
+  handed to IVC. Every source gets the same optimizer-step budget and matched
+  data exposure, and only the body transfers — token embeddings and task heads
+  are reinitialized, because the vocabularies are unrelated.
+
+The transfer tournament is the falsifiable part, so it runs first: if the budget
+runs out, the primary comparison is the part that survives. Phase 2 spends
+whatever is left on the capacity curve and the corpus calibrations.
+
+Three things guard the results. Runs are ordered so the paired design completes
+first. A wall-clock deadline derived from the hourly rate and spending ceiling
+stops the work rather than overrunning the budget. And every run writes into an
+immutable directory holding the resolved config, input hashes, hardware and Git
+metadata, and per-row predictions, so a number can always be traced back.
+
+`_write_matrix_analysis` applies the pre-registered gate. A `pass` there is
+evidence of structural transfer between writing systems. It is not evidence of
+language identity, phonetic values, or readings, and the gate output says so in
+its own text.
+"""
+
 from __future__ import annotations
 
 import csv
@@ -47,6 +82,7 @@ from .training import seed_everything, train_model
 
 
 def _json_write(path: Path, value) -> None:
+    """Write JSON with sorted keys, so two runs produce byte-comparable files."""
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(value, indent=2, sort_keys=True, ensure_ascii=False) + "\n", encoding="utf-8")
 
@@ -63,6 +99,7 @@ def _csv_write(path: Path, rows: list[dict]) -> None:
 
 
 def _git_value(repo: Path, *args: str) -> str:
+    """Read one piece of Git provenance, or "unavailable" if Git cannot answer."""
     try:
         return subprocess.check_output(["git", *args], cwd=repo, text=True, stderr=subprocess.DEVNULL).strip()
     except (subprocess.CalledProcessError, FileNotFoundError):
@@ -70,7 +107,12 @@ def _git_value(repo: Path, *args: str) -> str:
 
 
 def _git_value_or_environment(repo: Path, environment_key: str, *args: str) -> str:
-    """Keep source provenance when a remote image intentionally omits `.git`."""
+    """Keep source provenance when a remote image intentionally omits `.git`.
+
+    The GPU container is built from copied files and has no repository inside it,
+    so the launcher reads the commit locally and passes it in through the
+    environment. Either way the run manifest records which source produced it.
+    """
     value = _git_value(repo, *args)
     if value != "unavailable":
         return value
@@ -78,6 +120,7 @@ def _git_value_or_environment(repo: Path, environment_key: str, *args: str) -> s
 
 
 def _hardware_manifest(device: torch.device) -> dict:
+    """Record the machine and library versions a run executed on."""
     result = {
         "platform": platform.platform(),
         "python": sys.version,
@@ -96,6 +139,12 @@ def _hardware_manifest(device: torch.device) -> dict:
 
 
 def resolve_paths(config_path: Path, config: dict) -> dict:
+    """Turn the config's relative paths into absolute ones, rooted at the repository.
+
+    Configs are written relative so they read the same on a laptop and in a
+    container. `IVCSLM_OUTPUT_DIR` overrides the output location, which is how
+    multi-gigabyte checkpoints are kept off the Git checkout.
+    """
     project_root = config_path.resolve().parents[2]
     for key in ("ivc_csv", "linear_b_inventory_csv", "sumtablets_csv", "sproat_csv"):
         candidate = Path(config["data"][key])
@@ -118,11 +167,17 @@ def resolve_paths(config_path: Path, config: dict) -> dict:
 
 
 def load_config(config_path: Path) -> dict:
+    """Read a run config and resolve its paths."""
     raw = json.loads(config_path.read_text(encoding="utf-8"))
     return resolve_paths(config_path, raw)
 
 
 def load_corpora(config: dict) -> dict[str, Corpus]:
+    """Load every corpus the matrix can draw on, plus the merged known-writing pool.
+
+    Linear B is loaded with a tighter length ceiling than the others, matching
+    the shape of its audited Series D rows rather than the IVC window.
+    """
     data = config["data"]
     seed = config["seed"]
     corpora = {
@@ -162,15 +217,29 @@ def load_corpora(config: dict) -> dict[str, Corpus]:
 
 
 def _run_id(arm_name: str, model_name: str, seed: int) -> str:
+    """Name a single run by the three things that identify it: arm, size, seed."""
     return f"{arm_name}__{model_name}__seed{seed}"
 
 
 def _model_spec(config: dict, name: str) -> ModelSpec:
+    """Look up one configured model size by name."""
     item = next(model for model in config["models"] if model["name"] == name)
     return ModelSpec(**item)
 
 
 def _load_shared_encoder(model: SignTransformer, checkpoint_path: Path, device: torch.device) -> dict:
+    """Copy only the Transformer body from a pretrained checkpoint into a fresh model.
+
+    Positional embeddings, the embedding norm, and the encoder stack come across.
+    Token embeddings, the tied output bias, and both task heads do not: the
+    source script and IVC share no signs, so carrying their embeddings over would
+    be meaningless, and carrying the heads over would smuggle in a task the new
+    arm is supposed to learn on its own.
+
+    A missing shared parameter raises rather than silently transferring a partial
+    body, since a half-transferred arm would look like a transfer result without
+    being one.
+    """
     state = torch.load(checkpoint_path, map_location=device, weights_only=True)["model_state"]
     current = model.state_dict()
     shared_prefixes = ("position_embedding.", "embedding_norm.", "encoder.")
@@ -200,7 +269,17 @@ def _canonicalize_random_shared_body(
     seed: int,
     device: torch.device,
 ) -> dict:
-    """Make shared-body initialization invariant to script vocabulary size."""
+    """Make shared-body initialization invariant to script vocabulary size.
+
+    Random initialization draws numbers in order, so a corpus with more signs
+    consumes more of the random stream and ends up with a different encoder than
+    a corpus with fewer signs, at the same seed. Two arms would then differ
+    before training even started.
+
+    The fix is to build a reference model with only the special tokens in its
+    vocabulary, and copy its body and auxiliary heads into every arm. All arms
+    now begin from the same body no matter how large their script vocabulary is.
+    """
     seed_everything(seed)
     reference = SignTransformer(len(SPECIAL_TOKENS), max_length, model_spec, 0).to(device)
     state = reference.state_dict()
@@ -224,6 +303,11 @@ def _canonicalize_random_shared_body(
 
 
 def _partition_manifest(records, group_by_record_id: dict[str, int]) -> list[dict]:
+    """List a partition's records with their provenance and one-edit family.
+
+    Written to disk so the split can be audited after the fact rather than taken
+    on trust.
+    """
     return [
         {
             "record_id": record.record_id,
@@ -236,6 +320,11 @@ def _partition_manifest(records, group_by_record_id: dict[str, int]) -> list[dic
 
 
 def _fresh_split(corpus: Corpus, config: dict, seed: int) -> tuple[Split, list[list[str]]]:
+    """Build and verify a leakage-controlled split for one corpus at one seed.
+
+    Forced test patterns apply to IVC only; the comparator corpora carry no
+    probed sequences.
+    """
     split_config = config["data"]["split"]
     forced_test_patterns = config["data"].get("forced_test_patterns", []) if corpus.name == "ivc" else []
     split = grouped_split(
@@ -257,6 +346,18 @@ def _best_control_split(
     transform_test: bool,
     attempts: int = 32,
 ) -> tuple[Split, dict]:
+    """Try several shuffles of a null control and keep the least damaged one.
+
+    Shuffling can create cross-partition collisions, which then have to be
+    removed, and it can leave some rows unchanged. Both weaken the control. So
+    the transform is tried up to `attempts` times with different seeds and the
+    attempt is chosen that drops the fewest rows and, as a tiebreak, leaves the
+    fewest rows unchanged. A perfect attempt — nothing dropped, nothing unchanged
+    — stops the search early.
+
+    Every attempt's diagnostics travel with the chosen split, so the reader can
+    see how much attrition the selected control actually cost.
+    """
     original_by_id = {
         record.record_id: record.tokens
         for partition in (original.train, original.validation, original.test)
@@ -309,6 +410,13 @@ def _best_control_split(
 def _controlled_ivc_arm(
     corpus: Corpus, config: dict, seed: int, control: str, name: str
 ) -> tuple[Corpus, Split, dict]:
+    """Build a Phase-2 null arm: shuffled fitting data, authentic held-out data.
+
+    `transform_test=False` is the important part. The training and validation
+    partitions are order-destroyed, but the test partition stays exactly as
+    recorded. So the arm measures how much of the authentic held-out result can
+    be reached without any real sequence order to learn from.
+    """
     original, _ = _fresh_split(corpus, config, seed)
     transformed, diagnostics = _best_control_split(original, control, seed, transform_test=False)
     controlled_corpus = Corpus(
@@ -325,7 +433,18 @@ def _controlled_ivc_arm(
 
 
 def _shuffled_pretraining_arm(corpus: Corpus, config: dict, seed: int) -> tuple[Corpus, Split, dict]:
-    """Build the shuffled transfer source exclusively from the canonical IVC training pool."""
+    """Build the shuffled transfer source exclusively from the canonical IVC training pool.
+
+    This arm asks a specific question: does a body pretrained on IVC sign
+    statistics with the order removed help IVC as much as a body pretrained on
+    real writing? It is the control that separates transfer of writing-like
+    structure from transfer of sign frequency.
+
+    The source is drawn only from the canonical IVC training partition, split
+    again inside itself. Canonical validation and test objects never reach this
+    encoder or its early stopping, and the check afterwards raises if any of them
+    did.
+    """
     canonical, _ = _fresh_split(corpus, config, seed)
     split_config = config["data"]["split"]
     nested = grouped_split(
@@ -372,7 +491,18 @@ def _shuffled_pretraining_arm(corpus: Corpus, config: dict, seed: int) -> tuple[
 def _exactly_match_transfer_train_splits(
     bundles: dict[str, tuple[Corpus, Split, dict]], seed: int
 ) -> dict[str, tuple[Corpus, Split, dict]]:
-    """Match unique training records, tokens, and length order across transfer sources."""
+    """Match unique training records, tokens, and length order across transfer sources.
+
+    Approximate exposure matching leaves an opening: one source could still get
+    more or longer sequences than another, and the transfer gain would be a data
+    advantage wearing a structural costume.
+
+    So the sources are cut to a common length histogram. For every sequence
+    length, each source contributes the same number of training records, chosen
+    by a seeded hash of the record id. The arms then differ only in what their
+    sequences are, not how many or how long. Failure to hit the target exactly
+    raises, since a silently mismatched tournament is not worth running.
+    """
     if not bundles:
         raise ValueError("Exact transfer exposure matching requires at least one source bundle")
     length_counts = {
@@ -455,6 +585,18 @@ def run_one(
     deadline_monotonic: float | None = None,
     published_authentic_inventory: set[tuple[str, ...]] | None = None,
 ) -> dict:
+    """Fit and evaluate one arm at one model size and one seed, and write it out.
+
+    This is the unit of work the whole matrix is built from. It splits (or
+    accepts a frozen split), builds the vocabulary and model, fits, then runs
+    every held-out measurement and writes the predictions, manifests, and summary
+    into one run directory.
+
+    Held-out scoring is reported three ways when forced test records exist:
+    ordinary test records alone (the primary number, uncontaminated by the
+    sequences the probes target), all test records together, and the forced
+    hypothesis families on their own.
+    """
     started = time.monotonic()
     seed_everything(seed)
     split_config = config["data"]["split"]
@@ -469,9 +611,13 @@ def run_one(
             split_integrity_policy = "source_partitions_frozen_then_train_exposure_length_histogram_matched"
         else:
             split_integrity_policy = "source_partitions_frozen_before_null_transform_cross_partition_null_collisions_removed"
-    # The corpus sign inventory is publication metadata, not a learned sequence feature.
-    # Exposing token identities avoids silently scoring held-out signs as [UNK] while
-    # preserving all contextual and frequency information inside the training split.
+    # The vocabulary covers the whole corpus, not just the training split. That
+    # is deliberate: which signs exist is published catalogue metadata, not
+    # something a model has to discover. Building the vocabulary from training
+    # rows alone would score every held-out sign the training split happened to
+    # miss as [UNK], which measures the split rather than the model. Context and
+    # frequency information still comes only from the training split, so nothing
+    # about how signs are used leaks.
     vocabulary = Vocabulary([token for record in corpus.records for token in record.tokens])
     train_token_inventory = {token for record in split.train for token in record.tokens}
     train_unseen_test = sum(token not in train_token_inventory for record in split.test for token in record.tokens)
@@ -644,7 +790,7 @@ def run_one(
         "continuation_probe_rows": len(probe_rows),
         "elapsed_seconds": time.monotonic() - started,
     }
-    # Dataclass paths are not JSON-native.
+    # Path objects cannot be serialized to JSON; store them as text.
     summary["training"]["curve_path"] = str(summary["training"]["curve_path"])
     summary["training"]["checkpoint_path"] = str(summary["training"]["checkpoint_path"])
     summary["training"]["final_checkpoint_path"] = str(summary["training"]["final_checkpoint_path"])
@@ -653,6 +799,12 @@ def run_one(
 
 
 def _matrix_row(summary: dict) -> dict:
+    """Flatten one run summary into a single comparison-table row.
+
+    `null_attrition_fraction` is carried through because a control arm that had
+    to drop many rows to stay leakage-free is a weaker control, and a reader
+    comparing arms needs to see that.
+    """
     diagnostics = summary.get("control_collision_diagnostics") or {}
     removed = diagnostics.get("removed_train_records", 0) + diagnostics.get("removed_validation_records", 0)
     fitted_pool_before_attrition = summary["records"]["train"] + summary["records"]["validation"] + removed
@@ -684,6 +836,13 @@ def _matrix_row(summary: dict) -> dict:
 
 
 def _bootstrap_mean_interval(values: list[float], seed: int, draws: int = 10_000) -> dict:
+    """Bootstrap a 95% interval around the mean of paired-seed differences.
+
+    Resample the values with replacement many times, take each resample's mean,
+    and read off the 2.5th and 97.5th percentiles. With only five planned seeds
+    this interval is exploratory, and the returned note says so, so a reader does
+    not treat it as a proper significance test.
+    """
     if not values:
         return {"n": 0, "mean": None, "ci95_low": None, "ci95_high": None}
     array = np.asarray(values, dtype=np.float64)
@@ -700,6 +859,26 @@ def _bootstrap_mean_interval(values: list[float], seed: int, draws: int = 10_000
 
 
 def _write_matrix_analysis(run_root: Path, summaries: list[dict], config: dict) -> dict:
+    """Aggregate the finished runs and apply the pre-registered gate.
+
+    Four things are produced. Per-arm averages across seeds. Transfer
+    comparisons, where each pretrained arm is compared against random-init IVC on
+    the same seed, so seed-to-seed noise cancels. Specificity comparisons, where
+    known-writing transfer is compared against nonwriting transfer and against
+    position-slot-shuffled transfer. And exposure checks, confirming that the
+    pretraining sources really did see comparable amounts of data.
+
+    The gate reports `pass` only when every one of these holds: all three
+    comparisons are complete at the planned seed count, every bootstrap lower
+    bound sits above zero, exposures are inside the configured tolerance, and no
+    control lost more rows to attrition than the ceiling allows. Otherwise it
+    reports `fail` when the evidence is complete, and `incomplete` when it is
+    not — the two are distinct, and neither is rounded into the other.
+
+    A `pass` is structural-transfer evidence. It is not evidence of language
+    identity, phonetic values, or readings, and the gate carries that boundary in
+    its own output.
+    """
     rows = [_matrix_row(summary) for summary in summaries]
     _csv_write(run_root / "research_comparison.csv", rows)
     grouped: dict[tuple[str, str], list[dict]] = defaultdict(list)
@@ -776,6 +955,7 @@ def _write_matrix_analysis(run_root: Path, summaries: list[dict], config: dict) 
     attrition_ceiling = config["matrix"].get("control_max_attrition_fraction", 0.15)
 
     def relative_spread(values: list[float]) -> float:
+        """Spread between the largest and smallest value, as a share of the largest."""
         maximum = max(values) if values else 0.0
         return (maximum - min(values)) / maximum if maximum else 0.0
 
@@ -856,6 +1036,29 @@ def _write_matrix_analysis(run_root: Path, summaries: list[dict], config: dict) 
 
 
 def run_matrix(config_path: Path, scope: str = "full") -> Path:
+    """Execute the whole matrix under a budget and return the run directory.
+
+    `scope="full"` runs everything. `scope="transfer-only"` runs just the
+    transfer tournament and reads its IVC baselines from a previous matrix
+    summary, which is how a second GPU session extends earlier work without
+    paying to refit the baselines.
+
+    Budget handling, in order: the hourly rate must be supplied explicitly
+    through the environment rather than guessed; CUDA runs refuse to fall back to
+    CPU; a deadline is computed from the rate, the spending ceiling, the hard
+    runtime hours, and any hours already billed, including setup time before the
+    runner started. Every fit and evaluation checks that deadline. When it fires,
+    the partial state is written to `runtime_guard.json` and marked as not
+    transfer-eligible, because a half-trained body would break the matched-step
+    comparison.
+
+    Application-level accounting still cannot kill a failed host process, so the
+    provider workspace must also carry its own hard cap.
+
+    Setting `IVCSLM_RESUME_RUN_ROOT` continues an existing run directory. The
+    stored config must match the current one exactly, so a resumed session cannot
+    quietly change the experiment.
+    """
     if scope not in {"full", "transfer-only"}:
         raise ValueError(f"Unknown run scope: {scope}")
     config = load_config(config_path)
@@ -993,9 +1196,11 @@ def run_matrix(config_path: Path, scope: str = "full") -> Path:
     deadline_monotonic = time.monotonic() + remaining_hours * 3600
 
     def within_budget() -> bool:
+        """True while there is still paid time left to start another run."""
         return time.monotonic() < deadline_monotonic
 
     def summaries_for_analysis() -> list[dict]:
+        """This session's runs plus any baselines imported for transfer-only scope."""
         return [*reference_summaries, *summaries]
 
     def execute(
@@ -1009,6 +1214,16 @@ def run_matrix(config_path: Path, scope: str = "full") -> Path:
         training_overrides: dict | None = None,
         published_authentic_inventory: set[tuple[str, ...]] | None = None,
     ) -> dict | None:
+        """Run one cell of the matrix, or return None if it cannot be run.
+
+        Returns None in two cases the caller treats the same way — stop this
+        sequence of runs: the budget is gone, or the deadline fired mid-run. A
+        cell already completed in a resumed session is returned from cache
+        instead of being refitted.
+
+        The matrix summary and analysis are rewritten after every completed cell,
+        so an interrupted session still leaves a readable, consistent result.
+        """
         key = (run_label or corpus.name, model_name, seed)
         if key in completed_by_key:
             return completed_by_key[key]
@@ -1054,6 +1269,12 @@ def run_matrix(config_path: Path, scope: str = "full") -> Path:
     exact_transfer_exposure = bool(matrix.get("exact_transfer_exposure", False))
     # Phase 1 completes every seed of the falsifiable transfer tournament before
     # spending the remaining budget on capacity and corpus-calibration controls.
+    # The tournament is the part that can be wrong, so it gets the compute first;
+    # if the budget runs out, what survives is the primary comparison rather than
+    # a collection of descriptive arms.
+    #
+    # The shuffled-IVC source is built first each seed because its size sets the
+    # exposure target every other pretraining pool is capped down to.
     for seed in seeds:
         shuffled_source_bundle = None
         if "ivc_position_slot_shuffle" in transfer_names:
@@ -1126,7 +1347,9 @@ def run_matrix(config_path: Path, scope: str = "full") -> Path:
                 break
         if not within_budget():
             break
-    # Phase 2 is useful only after the primary paired design has had the first claim on compute.
+    # Phase 2: the capacity curve, the comparator corpora, and the null controls.
+    # These describe and calibrate the result rather than test it, so they run
+    # only after the primary paired design has had the first claim on compute.
     if scope == "full" and within_budget():
         for seed in seeds:
             for model_name in model_names:

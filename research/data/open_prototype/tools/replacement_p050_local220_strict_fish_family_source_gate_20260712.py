@@ -1,17 +1,29 @@
 #!/usr/bin/env python3
-"""Run the replacement P050/local-220 strict source gate.
+"""Test whether pictures of real objects earn a strict local-220 = Mayig-P050 crosswalk.
 
-This runner binds exact Lipi and Mayig records to neutral token boxes cut from
-locally cached source panels.  It deliberately separates three propositions:
+Two corpora list the same inscriptions with different sign names: the local Lipi
+transcripts (sign "220") and the Mayig corpus (sign "P050", described there as
+"Fish with no other decoration"). Agreement between two transcripts is not
+evidence, because both could copy the same mistake, so this gate goes back to the
+object images. For four pinned witnesses it re-reads the Lipi metadata, the Mayig
+side record, and reports/crosswalk_alignment_pairs.csv, checks that every sequence
+and every SHA-256 hash still matches the values recorded here, then cuts the
+recorded token box out of the cached seal photograph and saves a raw crop, a
+3x autocontrast enlargement for review, and a four-cell contact sheet.
+
+It deliberately separates three propositions:
 
 1. the two corpora put local 220 and Mayig P050 at the same object-side index;
 2. the cached panel contains a broad fish/leaf-compatible glyph at that index;
 3. the glyph is specifically the undecorated P050 type.
 
-Only proposition 3 can promote a strict 220=P050 crosswalk. The pinned 2026-07-12
-panels are low-resolution derivative panels whose internal-decoration state is
-unresolved. This is a fixed adjudication snapshot whose successful execution
-records PARK; genuinely new evidence requires a new dated gate.
+Only proposition 3 can promote a strict 220=P050 crosswalk, and it needs at least
+three independent primary-catalog boxes with no contradiction. Outputs are a
+witnesses CSV, a criteria CSV, and a summary JSON under reports/. The pinned
+2026-07-12 panels are low-resolution derivative panels whose internal-decoration
+state is unresolved, so the run records PARK: same-position and broad-family
+pressure, no accepted crosswalk, value, phonetic reading, or translation. This is a
+fixed adjudication snapshot; genuinely new evidence requires a new dated gate.
 """
 
 from __future__ import annotations

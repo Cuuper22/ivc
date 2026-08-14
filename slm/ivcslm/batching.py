@@ -1,3 +1,22 @@
+"""Turn records into the tensors the training and evaluation loops consume.
+
+Three kinds of batch are built here, one per training signal:
+
+- masked batches hide some signs so the model must reconstruct them from
+  context;
+- corruption batches produce a damaged copy of each sequence plus a whole
+  sequence in an order that is not stored anywhere, for the two auxiliary
+  heads;
+- deterministic single-mask batches hide exactly one sign at a time, sweeping
+  every position of every record, so held-out scoring is exhaustive and
+  repeatable rather than sampled.
+
+One rule runs through all of them: the boundary markers are never masked or
+corrupted, so a model can never score points on positions that carry no
+evidence. Corruptions are also checked against the inventory of authentic
+sequences, so a "corrupted" string is never one that is actually attested.
+"""
+
 from __future__ import annotations
 
 import random
@@ -12,6 +31,8 @@ from .model import Vocabulary
 
 @dataclass
 class Batch:
+    """Masked inputs plus labels; `-100` marks a position with nothing to score."""
+
     input_ids: torch.Tensor
     labels: torch.Tensor
     record_ids: list[str]
@@ -19,6 +40,13 @@ class Batch:
 
 @dataclass
 class CorruptionBatch:
+    """Inputs for the two auxiliary heads.
+
+    `corrupted_ids` and `replaced_labels` train the per-position replacement
+    head. `authentic_ids` and `negative_ids` are the positive and negative
+    examples for the whole-sequence authenticity head.
+    """
+
     corrupted_ids: torch.Tensor
     replaced_labels: torch.Tensor
     authentic_ids: torch.Tensor
@@ -26,6 +54,7 @@ class CorruptionBatch:
 
 
 def pad_encoded(encoded: list[list[int]], pad_id: int, device: torch.device) -> torch.Tensor:
+    """Stack ragged id lists into one rectangle, filling the tail with padding."""
     width = max(len(row) for row in encoded)
     tensor = torch.full((len(encoded), width), pad_id, dtype=torch.long, device=device)
     for index, row in enumerate(encoded):
@@ -43,6 +72,17 @@ def masked_batch(
     device: torch.device,
     replacement_rng: random.Random | None = None,
 ) -> Batch:
+    """Hide signs at random and record what was hidden.
+
+    Each interior position is chosen with probability `mask_probability`. A
+    chosen position is then handled one of three ways: left as it is, swapped
+    for a random sign, or replaced with the mask token. The first two cases stop
+    the model from treating the mask token itself as the only cue that a
+    prediction is wanted.
+
+    Every sequence gets at least one chosen position, so no row contributes zero
+    signal on a batch where the coin flips all came up empty.
+    """
     replacement_rng = replacement_rng or mask_rng
     encoded = [vocab.encode(record.tokens) for record in records]
     input_ids = pad_encoded(encoded, vocab.pad_id, device)
@@ -73,6 +113,19 @@ def corruption_batch(
     device: torch.device,
     authentic_inventory: set[tuple[int, ...]],
 ) -> CorruptionBatch:
+    """Build damaged sequences for the replacement and authenticity heads.
+
+    Two things are produced per record. First, a copy with some interior signs
+    swapped for different signs, labelled position by position. Second, a
+    reordering of the whole sequence — reversal, interior reversal, rotation, or
+    a shuffle — to serve as a negative example.
+
+    The reordering must not appear in `authentic_inventory`, the set of
+    sequences attested in the corpus. Otherwise the model would be trained to
+    call a real sequence a fake. When no reordering clears that bar, the search
+    falls back to single-sign substitutions, and raises if even those all
+    collide.
+    """
     authentic = [vocab.encode(record.tokens) for record in records]
     corrupted = [list(row) for row in authentic]
     replacement_labels: list[list[float]] = []
@@ -144,6 +197,11 @@ def corruption_batch(
 def deterministic_single_mask_batches(
     records: Sequence[Record], vocab: Vocabulary, batch_size: int, device: torch.device
 ):
+    """Yield one example per interior position of every record, in fixed order.
+
+    Evaluation uses this instead of random masking so that two runs over the
+    same held-out records score exactly the same set of predictions.
+    """
     examples: list[tuple[list[int], int, int, Record]] = []
     for record in records:
         encoded = vocab.encode(record.tokens)

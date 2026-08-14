@@ -4,6 +4,14 @@ Date: 2026-07-12 America/Los_Angeles
 
 Authority: `replacement_run_checkpoint_20260531.md` plus specific replacement-named gates earned after that checkpoint. The broad successor backlog, broad claim ledger/state, findings dossier, source register, and strongest-result brief listed in `research/data/quarantine/botched_successor_after_20260531T0104_manifest.csv` are autopsy material only and cannot create work or claims here.
 
+## What this is and why it exists
+
+This register is the project's to-do list, written so that the list itself cannot smuggle in a claim. It says what is currently executable, what is blocked and by what, and what no amount of local effort can reach.
+
+The word replacement in the title matters. An earlier run of this project produced state that turned out to be contaminated, so that state was quarantined — held out of the evidence pool entirely — and the work was re-earned from a clean checkpoint. This register may only draw on the clean checkpoint and on gates earned after it. Quarantined material can be read as autopsy, to understand what went wrong, but it cannot put an item on this list.
+
+Each row below carries a completion condition. That is deliberate: writing down in advance what would finish an item is what stops the standard from sliding once the work is underway.
+
 ## Accepted baseline
 
 | Claim class | Count |
@@ -15,9 +23,11 @@ Authority: `replacement_run_checkpoint_20260531.md` plus specific replacement-na
 | external anchors | 0 |
 | structural findings | 1 |
 
-The one structural finding remains the fixed `002-861 / 533-717` restricted terminal-tail result under its existing narrow wording. It is not a reading.
+Those zeros are the honest state of the project, not a formality. The one structural finding remains the fixed `002-861 / 533-717` restricted terminal-tail result, under its existing narrow wording. It is a statement about which signs recur in which position. It is not a reading.
 
 ## Active execution order
+
+These are the items that can be worked on now, in priority order. The completion condition column says what would finish each one.
 
 | Priority | Annotation | Current action | Completion condition | State |
 | ---: | --- | --- | --- | --- |
@@ -35,7 +45,7 @@ The one structural finding remains the fixed `002-861 / 533-717` restricted term
 
 ## Workaround exhausted or source-blocked
 
-These items do not justify more looping under the active no-contact/no-purchase constraint. Reopen only when the named evidence becomes local and inspectable.
+These items are stuck on evidence that is not here. Each one names a specific plate, record, or caption that would unstick it. Under the active no-contact/no-purchase constraint, none of them justifies more looping: repeating an analysis cannot manufacture a source that was never inspected. Reopen an item only when its named evidence becomes local and inspectable.
 
 | Annotation | Missing decisive evidence | State |
 | --- | --- | --- |
@@ -52,7 +62,9 @@ These items do not justify more looping under the active no-contact/no-purchase 
 
 ## Genuinely absent constraints
 
-No local or public workaround can manufacture a bilingual, secure proper-name bridge, accepted phonetic anchor, or independently established language label. Language-family, rebus, proper-name, fluent-translation, and descendant-script lanes remain closed unless genuinely new external evidence appears. A model likelihood or crosswalk similarity cannot substitute for that evidence.
+The section above lists things that are merely out of reach. This section is different: these are things that do not exist to be reached.
+
+Reading an unknown script needs an outside constraint — a bilingual text, a securely identified proper name, an accepted phonetic anchor, or an independently established language label. No local or public workaround can manufacture one. So the language-family, rebus, proper-name, fluent-translation, and descendant-script lanes remain closed unless genuinely new external evidence appears. A model likelihood or a crosswalk similarity cannot substitute for that evidence; both are computed from the same corpus that needs explaining.
 
 ## Explicitly out of scope
 

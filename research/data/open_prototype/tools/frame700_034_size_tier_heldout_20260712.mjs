@@ -1,3 +1,21 @@
+// Asks whether the short mark 700-034 marks objects of a distinct physical size,
+// or whether it only looks that way because the 034 objects happen to be copies of
+// each other. It reads reports/lipi_frame700_subtype_rows.csv, keeps rows whose
+// subtype is 032, 033, or 034 and that carry positive horizontal_mm and vertical_mm,
+// and collapses duplicate rows so each CISI object votes once. Every row is then
+// assigned to a "source group" — the H-2218 through H-2239 series, or an exact
+// shared longer-text family, or its own sequence_family_key — and each group is
+// scored only by a model trained without it, so a family can never predict itself.
+// Three models compete on the same held-out scores: object dimensions (log
+// horizontal and log vertical), an administrative-format baseline, and an
+// emblem-formula baseline; the pre-registered gate in DESIGN demands that the
+// dimension model beat chance, beat both baselines, beat two matched-null label
+// shuffles, and reach 034 recall of at least 0.80 on the fully held-out H-series.
+// It writes a per-row predictions CSV, a null-iterations CSV, and a summary JSON
+// carrying the gate checks and the pass/fail decision. Even a pass supports only a
+// size/form-context association: no number, unit, commodity, sign meaning, or
+// translation is accepted.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

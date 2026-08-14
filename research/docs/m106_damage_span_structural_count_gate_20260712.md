@@ -4,13 +4,21 @@ Date: 2026-07-12 America/Los_Angeles
 
 Decision: `M106_HAS_SIX_STRUCTURAL_SLOTS; MAYIG_P000_COLLAPSES_FOUR_SLOTS_AS_DAMAGE_METADATA`.
 
+## What this is and why it exists
+
+This is a gate: a written decision that settles one specific question against the source images, so that later analysis does not have to keep guessing. This gate covers one object, `M-106`, and it is the hardest kind of case, because most of the object is broken.
+
+Two catalogues describe the same inscriptions. Lipi is the numeric catalogue that writes signs as numbers like `740`, and it uses `000` for a sign slot it can see but cannot identify. Mayig is the Parpola-style catalogue that writes signs as `P` codes like `P324`, and it uses `P000` for a damage span — one stretch of lost or ruined surface, however many signs used to sit in it. Those two zero-tokens look alike and mean different things, which is exactly the trap this gate exists to defuse.
+
+A structural count is the number of sign-sized positions the object supports. That is the number analyses need, and it is not the same as either catalogue's array length.
+
 ## Question
 
-`M-106` is the sole `complex_manual_collation` row in the mismatch queue. Lipi records six positions, including two `000` unknowns, while Mayig records two named graphemes followed by one `P000` damage token. The source question was whether the object supports six sign slots, three units, or only an unresolved damaged remainder.
+`M-106` is the sole `complex_manual_collation` row in the mismatch queue, the queue of objects whose two catalogue rows disagree. Lipi records six positions, including two `000` unknowns, while Mayig records two named graphemes followed by one `P000` damage token. The source question was whether the object supports six sign slots, three units, or only an unresolved damaged remainder.
 
 ## Source-visible alignment
 
-Both published views in CISI 1, PDF page 75 / printed page 39, preserve the same structure. The opening handled jar and decorated U are clear. Across the abraded remainder, the two-stroke `002` and terminal branched `350` remain recoverable. Two damaged sign slots are separately located on either side of `002`; their graphic identities are not recoverable.
+Both published views in CISI 1, PDF page 75 / printed page 39, preserve the same structure. The opening handled jar and decorated U are clear. Across the abraded remainder, the two-stroke `002` and terminal branched `350` remain recoverable. Two damaged sign slots are separately located on either side of `002`; their graphic identities are not recoverable. That last point is what makes the object usable at all: a surviving sign sits between the two ruined slots, so the slots can be told apart and counted separately.
 
 | Structural position | Lipi row `2633.1` | Mayig `M-106A` | CISI decision |
 | --- | --- | --- | --- |
@@ -21,11 +29,13 @@ Both published views in CISI 1, PDF page 75 / printed page 39, preserve the same
 | 5 | `000` | rowspan of terminal `P000` | Second damaged, sign-bearing slot; identity unresolved. |
 | 6 | `350` | rowspan of terminal `P000` | Recoverable terminal branched graphic. |
 
-The Lipi record is `+740-760-000-002-000-350+`, with `text length=6`, `signs=4`, `complete=N`, and `condition=Poor`. Here `signs=4` is the count of identified numeric signs, not the structural length.
+The Lipi record is `+740-760-000-002-000-350+`, with `text length=6`, `signs=4`, `complete=N`, and `condition=Poor`. Read that carefully: `signs=4` is the count of identified numeric signs, not the structural length.
 
-Mayig records `P324 P332 P000`. Its pinned `P000` definition is “a section of significant damage or lost material,” and this occurrence stores `percent_lost=70`. `P000` therefore covers the four-position damaged remainder after `P332`; it is not equivalent to either Lipi `000` and its array position is not a third sign.
+Mayig records `P324 P332 P000`. Its pinned `P000` definition is “a section of significant damage or lost material,” and this occurrence stores `percent_lost=70`. `P000` therefore covers the whole four-position damaged remainder after `P332`. It is not equivalent to either Lipi `000`, and its array position is not a third sign. Mayig's three entries are simply not three signs.
 
 ## Accepted normalization
+
+Six positions, four of them identified, with the damage carried alongside rather than counted:
 
 - Use six structural positions: four identified graphics plus two `<UNK_SIGN>` positions.
 - Keep the two unknown positions distinct because the recoverable `002` separates them.
@@ -36,11 +46,13 @@ Mayig records `P324 P332 P000`. Its pinned `P000` definition is “a section of 
 
 ## Research consequence
 
-The `complex_manual_collation` class closes at `1/1`. `M-106` can re-enter length- and order-sensitive structural analyses only with the two explicit unknown slots retained and the four-position damage span carried separately. Treating Mayig's three array entries as a sign count would erase two recoverable signs and two separately located unknown positions.
+The `complex_manual_collation` class has one member, and it is now checked against the source, so the class closes at `1/1`. `M-106` can re-enter length- and order-sensitive structural analyses only if the two explicit unknown slots are retained and the four-position damage span is carried separately. The cost of getting this wrong is concrete: treating Mayig's three array entries as a sign count would erase two recoverable signs and two separately located unknown positions.
 
 No sign value, meaning, phonetic reading, language identification, translation, or decipherment claim is added.
 
 ## Preserved evidence
+
+Each file below is listed with its SHA-256 hash, so a later reader can confirm the exact bytes this decision was made from.
 
 - CISI 1 panel: `research/data/sign_crosswalk/source_panels/m106_damage_span/M-106_A_a_CISI1_pdf75_print39.png`, SHA-256 `6A1B95E2417F0887319F5E3286EE1942712C390B01209D92BD3CD2B996F5A086`.
 - CISI 1 PDF SHA-256: `47A4DA4227CFB7BAA56D6A561E25797225499D0EC54F5A702A82C67AB4746D4D`.

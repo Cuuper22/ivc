@@ -4,6 +4,14 @@ Date: 2026-07-12 through 2026-07-13 America/Los_Angeles
 
 Authority: this checkpoint supersedes `replacement_run_checkpoint_20260531.md` for work completed on July 12-13 while preserving every accepted boundary from it. It does not revive any file listed in `research/data/quarantine/botched_successor_after_20260531T0104_manifest.csv`.
 
+## What this is and why it exists
+
+A checkpoint is a trusted restart point. It states what is accepted, what was earned since the last checkpoint, and what remains off limits, so that a later run can pick the work up without inheriting anyone's guesses. Reading this one document should be enough to know where the project stands.
+
+This checkpoint covers two days of work, July 12-13. Almost all of it was subtraction. Objects that two catalogues described differently were checked against the published plates and given one settled reading each; several tempting shortcuts were killed; and a small language model was trained from scratch and then reported as a failed gate. The accepted claim counts do not move.
+
+That is the point worth holding on to. A day where nothing gets accepted is not a wasted day, because the usable corpus gets tighter and the routes that cannot work get closed by name rather than left open to be tried again.
+
 ## Accepted state
 
 | Claim class | Accepted count |
@@ -15,7 +23,7 @@ Authority: this checkpoint supersedes `replacement_run_checkpoint_20260531.md` f
 | external anchors | 0 |
 | structural findings | 1 |
 
-The accepted structural count remains one, but its wording is now strictly descriptive: M-376 and M-391 are two source-visible attestations of the same three-position terminal `861 | 533 | 717` allograph string after `002`. The stronger claim that `533-717` is a source-independent fixed two-sign unit is demoted below acceptance. Nothing in this checkpoint is a reading.
+The accepted structural count remains one, but its wording is now strictly descriptive. What is accepted is that M-376 and M-391 are two source-visible attestations of the same three-position terminal `861 | 533 | 717` allograph string after `002` — an allograph being a different drawn shape for the same underlying sign. The stronger claim, that `533-717` is a source-independent fixed two-sign unit, is demoted below acceptance. Nothing in this checkpoint is a reading.
 
 ## Completed annotations
 
@@ -52,6 +60,8 @@ Artifacts:
 
 ### Source annotations completed before the GPU run
 
+Each row below is one object or one class of objects whose two catalogue rows disagreed. Lipi is the numeric catalogue that writes signs as numbers like `740`; Mayig is the Parpola-style catalogue that writes signs as `P` codes like `P324`; CISI is the published plate collection the disagreements were settled against. Each row states what the plates show and what analyses may now do with the object. The full reasoning stays in the individual gates; only the synthesis is carried here.
+
 | Annotation | Source-visible decision | Research consequence |
 | --- | --- | --- |
 | AO 22310 | Bound to De Clercq plate IX no. 83 and Louvre AO 22310; no Indus text and unknown findspot. | Contact object only, not a bilingual or external anchor. |
@@ -87,7 +97,13 @@ These decisions tighten the usable corpus and crosswalk without adding a transla
 
 ## From-scratch SLM result
 
-All 65 original runs and all 30 exact-exposure transfer runs completed across five paired seeds. The correction reused the five original random-initialized IVC micro baselines rather than rerunning them. Lower negative log-likelihood (NLL) is better.
+An SLM here is a small language model: a neural network trained to predict masked signs in an inscription. From-scratch means it starts from random weights and sees only the material given to it, so nothing about any known language leaks in through pretraining.
+
+Two questions were put to it. The first is scaling: does a bigger model do better on this corpus? The second is transfer: if the same network body is first trained on some other corpus and then moved to the Indus material, does that head start help, and does it help more when the other corpus is known writing than when it is not? A yes to the second, specifically for writing, would be evidence that the Indus corpus behaves like writing. Everything below is scored on held-out data — inscriptions kept out of training entirely, so that memorizing them is not an option.
+
+All 65 original runs and all 30 exact-exposure transfer runs completed across five paired seeds. Paired means every arm of a comparison is rerun under the same five random starts, so the arms differ by design rather than by luck of initialization. Exact-exposure means every pretraining source was held to identical amounts of training material, which closes the obvious escape hatch that one arm simply saw more. The correction reused the five original random-initialized IVC micro baselines rather than rerunning them.
+
+The main score is negative log-likelihood, or NLL: how surprised the model is by the correct sign, averaged over held-out positions. Lower NLL is better. Top-1 is how often its single best guess is right.
 
 | Question | Five-seed result | Decision |
 | --- | --- | --- |
@@ -105,13 +121,21 @@ All 65 original runs and all 30 exact-exposure transfer runs completed across fi
 | Known-script calibration | Linear B: NLL 2.7466, top-1 40.02%; SumTablets: NLL 4.5013, top-1 15.50%. | Calibration only; cross-corpus absolute scores do not identify language status. |
 | Pre-registered transfer gate | Statistical comparisons and exact-exposure checks complete; both specificity intervals cross zero. | **FAIL**. |
 
-Interpretation: the model finds reproducible sequential structure in the IVC corpus, because authentic sequences beat both matched corruption controls. That is a structural result, not a linguistic identification. Exact matching removes the original transfer-design escape hatch: known writing, nonwriting, and position-shuffled IVC all produce small gains over random initialization, while known writing has no positive lower-bound advantage over either comparator. The supported transfer conclusion is therefore source-nonspecific pretraining benefit, not writing-specific structural transfer. The capacity curve still points away from scaling: the 0.89M model beats the 6.54M and 18.12M models on held-out NLL in all five seeds, so a 1B run would spend compute without answering the live research question.
+Interpretation, in three parts.
+
+The model does find reproducible sequential structure in the IVC corpus. Authentic sequences beat both matched corruption controls — one that shuffles signs within a row, one that shuffles by position slot — so the corpus carries real order and co-occurrence information that survives a grouped holdout. That is a structural result. It is not a linguistic identification.
+
+The transfer question comes back negative, and the exact-exposure matching is what makes the negative trustworthy. Known writing, nonwriting, and position-shuffled IVC all give small gains over random initialization. But known writing has no positive lower-bound advantage over either comparator: both specificity intervals cross zero. So what the pretraining supplies is a source-nonspecific benefit — a warmed-up network is a little better than a cold one, whatever it was warmed up on — and not writing-specific structural transfer. That is why the pre-registered transfer gate reports **FAIL**.
+
+The capacity curve points away from scaling. The 0.89M model beats the 6.54M and 18.12M models on held-out NLL in all five seeds. Bigger is worse here, so a 1B run would spend compute without answering the live research question.
 
 Original outputs remain in `research/data/slm/ivc_from_scratch_scaling_20260712/`. Corrected outputs are preserved in `research/data/slm/ivc_transfer_exact_exposure_20260712/`: all 30 new summaries, the five pinned reference baselines, comparison table, aggregate analysis, resolved configuration, provenance manifest, and completion record. The full per-run checkpoint trees remain on the immutable Modal result volume. The conservative cumulative compute estimate is $4.6687, below the $14 ceiling.
 
 ## Directionality closure
 
 Decision: `CLOSED_PHYSICAL_DIRECTION_PROMOTION_RETAIN_STORED_ORDER_STRUCTURE`.
+
+The corpus has a real order effect: sequences as stored beat the same sequences reversed. The tempting next step is to read that as the physical writing direction of the script. This closes that step. Stored order is a property of the transcription, and the one case where the physical object can be checked against it disagrees.
 
 - Meadow and Kenoyer's matched seal/tablet case identifies `H96-2796/6876-01`, local `H-1682`, as left-to-right on the physical intaglio seal while the matching non-impressing tablets are assumed right-to-left.
 - Lipi records `R/L` for `H-1682` and for all 66 sides of H-2218 through H-2239. The field therefore does not uniformly encode physical as-pictured orientation across those media.
@@ -125,6 +149,8 @@ Detailed decision: `research/docs/effective_unicity_directionality_physical_orie
 
 Decision: `CLOSE_034_OBJECT_SIZE_OR_METROLOGICAL_TIER_UNDER_CURRENT_LOCAL_EVIDENCE`.
 
+The idea under test was that short-mark subtype `034` might mark a size or measurement tier, which would show up as `034` objects being systematically smaller. A falsification test is built to break its own hypothesis rather than to confirm it. This one broke.
+
 - The pre-registered test used 309 measured artifacts in 216 held-out source/formula groups, with the entire H-2218 through H-2239 series held out together.
 - Dimensions predict `034` above chance: grouped AUC 0.701087, bootstrap 95% interval [0.606806, 0.789030]. Both matched administrative-format and emblem/copy-family label shuffles rarely reach the observed AUC, at 0.001500 and 0.001000.
 - The size model does not beat the administrative-format baseline by a positive bootstrap margin: AUC difference interval [-0.010581, 0.134992].
@@ -136,6 +162,8 @@ Detailed decision: `research/docs/frame700_034_size_tier_heldout_decision_202607
 ## `603` cross-context graphic closure
 
 Decision: `CLOSED_CROSS_CONTEXT_603_GRAPHIC_IDENTITY_NOT_SOURCE_SUPPORTED`.
+
+Two sites, Mohenjo-daro and Harappa, both have rows carrying the local number `603`. Treating those as the same sign in two contexts would let each site interpret the other. But the shared number comes from a cataloguer, not from the objects, and when the plates are compared the shapes do not line up.
 
 - M-240, M-714, and M-1273 preserve a recurrent rectangular ladder/window-like post-`861` terminal class in the source panels.
 - H-1138 and H-1846 preserve the five-unit Harappa `740-X-240-060-692` formula, but local `603` can only be visual unit 2 or 4 under forward/reversed order. Neither candidate is the Mohenjo window.
@@ -149,7 +177,9 @@ Detailed decision: `research/docs/campaign_032_002_861_603_cross_context_graphic
 
 Decision: `NO_CLAIM_REVERSAL; CENSORED_CONTROLS_SLIGHTLY_STRENGTHEN_BARE_CLOSURE`.
 
-M-19 and M-175 enter only as distinct, source-visible left-censored artifact controls with the form `[LOSS_PREFIX] 002 861 [CLOSED_EDGE]`. They do not become complete `+002-861+` strings and contribute nothing to known-prefix, absolute-position, or complete-string counts.
+Censored here has its statistical sense: the object is broken at one end, so part of the string is missing and you know it is missing. A left-censored row preserves its ending but not its beginning.
+
+M-19 and M-175 enter only as distinct, source-visible left-censored artifact controls with the form `[LOSS_PREFIX] 002 861 [CLOSED_EDGE]`. They do not become complete `+002-861+` strings, and they contribute nothing to known-prefix, absolute-position, or complete-string counts. What they can do is test whether the terminal pattern still holds when the front of the row is gone.
 
 | Analysis lane | Complete-row baseline: bare / tailed / total | With the two censored controls | Bare-rate change |
 | --- | ---: | ---: | ---: |
@@ -163,6 +193,8 @@ The result is small and directionally consistent: bare closure becomes about 0.2
 
 Decision: `RETAIN_TWO_ARTIFACT_TERMINAL_STRING; DEMOTE_FIXED_UNIT_INFERENCE; EXACT_533_DEPENDENCY_TAXONOMY_SENSITIVE`.
 
+This is the project's one accepted finding, put under stress. Every `533` in the corpus is followed by `717`, which looks like a fixed pair. The check below asks whether that survives when the sign families are drawn differently, layer by layer.
+
 | Layer | Complete checked set | Result |
 | --- | --- | --- |
 | Local numeric `533` | M-376 `...861-533-717` and M-391 `...861-533-717`; no other `533` row in the 5,679-row local source | Exact local set is 2/2 followed by terminal 717. |
@@ -171,9 +203,11 @@ Decision: `RETAIN_TWO_ARTIFACT_TERMINAL_STRING; DEMOTE_FIXED_UNIT_INFERENCE; EXA
 | Mayig P228 | M-26A only: `P013 P324 P228 P120 P256`; the same position aligns to local 531. P228 metadata maps one-to-many to W531 and W533. | M-26 is a broad-family no-717 case, not an exact local-533 counterexample. Mayig has no M-376/M-391 object records. |
 | Wells Figure 2.6, printed pp. 20-21 | W531 and W533 are distinct listed forms; W717 is separately listed. | Supports the fine graphic distinction but supplies no artifact occurrence concordance. |
 
-No exact local-`533` occurrence lacking 717 was found. That does not establish a source-independent dependency: the zero outside-pair count exists only under the fine local/Wells-compatible split, while Parpola 222 and Mayig P228 group related forms that occur without 717. The accepted residue is therefore the repeated three-position terminal allograph string on two artifacts, not an inseparable `533-717` unit or a general sign rule. The official ICIT occurrence database remains administrator-gated and returned HTTP 401, so global Wells-corpus completeness is not claimed and no contact is attempted. No value, reading, meaning, language, translation, or broader fixed-suffix rule follows.
+No exact local-`533` occurrence lacking 717 was found. That is weaker evidence than it looks, and the reason is the last column of the table: the zero outside-pair count exists only under the fine local/Wells-compatible split. Group the shapes the way Parpola 222 and Mayig P228 do, and related forms turn up without 717. The apparent dependency is therefore sensitive to the taxonomy — to how finely the sign families are cut — rather than being a fact about the objects. The accepted residue is therefore the repeated three-position terminal allograph string on two artifacts, not an inseparable `533-717` unit or a general sign rule. The official ICIT occurrence database remains administrator-gated and returned HTTP 401, so global Wells-corpus completeness is not claimed and no contact is attempted. No value, reading, meaning, language, translation, or broader fixed-suffix rule follows.
 
 ## Next executable order
+
+One item, stated exactly, so the next run does not have to reinvent it:
 
 1. Close SLM transfer escalation. Inspect every remaining complete Lipi-only `617` occurrence against its CISI panel and test whether the source-visible two-grid expansion holds outside the five overlap objects. Promote a global `617 -> grid, grid` normalization only if the source coverage is complete and counterexamples remain zero; otherwise keep the rule cluster-specific. Recompute only the structural edges directly changed by that decision.
 

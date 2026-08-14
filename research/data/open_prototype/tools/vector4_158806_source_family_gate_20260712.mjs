@@ -1,5 +1,22 @@
 #!/usr/bin/env node
 
+// Adjudicates the queued 158-806 / Phyt item: does it have enough independent
+// support to justify a new pre-registered test, or is it closed? It reads
+// reports/lipi_scope_rows.csv and the pinned null table
+// reports/vector4_targeted_context_nulls_20260531.csv, plus two cached
+// publication extractions under evidence/tmp/ (Parpola 2019 on bone rods, and
+// Kenoyer & Meadow 2010 on inscribed objects at Harappa). Each of the seven
+// hard-coded witness objects must still match exactly one clean scope row with the
+// expected Phyt source label, Harappa site, and TAB:B type, and the pinned null row
+// must still show support 3 and a worst null tail of 0.0075; any drift throws
+// rather than reporting a stale result. The witnesses are then counted two ways —
+// by exact text family, and by a deliberately conservative form/motif stratum that
+// treats look-alike objects as one witness — and checked against a support floor of
+// 5 with a demand for a source-grade panel behind every text family. It writes a
+// witnesses CSV and a summary JSON with input SHA-256 hashes and the decision. The
+// gate fails: support 3 is below the floor, source independence is unresolved, and
+// the claim ledger increment is zero on every line.
+
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';

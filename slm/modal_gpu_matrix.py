@@ -1,3 +1,29 @@
+"""Launch the run matrix on a rented Modal GPU, once, with provenance recorded.
+
+The harness itself is provider-agnostic; this file is the one place that knows
+about Modal. It builds a container image holding the `slm` package and the four
+input CSVs plus one prior matrix summary, runs the matrix on an L4 GPU, and
+keeps the results on a persistent volume.
+
+Three properties matter more here than convenience:
+
+- **Run once.** The container is single-use, retries are off, and the function
+  refuses to start if a launcher manifest already exists in the results
+  directory. An accidental retry would spend real money and produce a second run
+  claiming the same identity.
+- **Provenance.** The image has no `.git` directory, so the local entrypoint
+  reads the commit, branch, and working-tree status and passes them in through
+  the environment. Every file shipped is also hashed into a single
+  `source_tree_sha256`, so the results state exactly which source produced them.
+- **Honest cost accounting.** The hourly rate is the actual all-in rate, and
+  hours already billed by earlier sessions are passed forward so the runner's
+  deadline accounts for them rather than restarting the clock.
+
+`resume_gpu_matrix` continues an existing run directory after an interruption.
+It returns early when the earlier run already completed every planned run, so a
+resume cannot become an accidental second full run.
+"""
+
 from __future__ import annotations
 
 import hashlib
@@ -15,10 +41,15 @@ RESULTS_VOLUME_NAME = "ivc-slm-results"
 REMOTE_REPO = PurePosixPath("/root/ivc")
 REMOTE_SLM = REMOTE_REPO / "slm"
 REMOTE_RESULTS = PurePosixPath("/results/ivc_transfer_exact_exposure_20260712")
+# The provider's actual all-in rate, and the hours already billed by earlier
+# sessions. Both feed the runner's deadline, so it stops at the real spending
+# ceiling rather than at a fresh clock.
 ALL_IN_HOURLY_RATE_USD = 0.957456
 PRIOR_BILLED_HOURS = 2.693888284034199
 
 LOCAL_REPO = Path(__file__).resolve().parents[1]
+# The exact inputs shipped into the image: the four source corpora, plus the
+# earlier matrix summary that transfer-only scope reads its IVC baselines from.
 DATA_FILES = (
     Path("research/data/open_prototype/lipi/metadata_filtered.csv"),
     Path("research/data/open_prototype/reports/linear_b_series_d_row_inventory.csv"),
@@ -29,6 +60,12 @@ DATA_FILES = (
 
 
 def _build_image() -> modal.Image:
+    """Build the container image with pinned packages and the inputs copied in.
+
+    Versions are pinned exactly so a rerun months later executes the same code
+    path. Files are copied rather than mounted so the image itself is the
+    complete, hashable record of what ran.
+    """
     image = modal.Image.debian_slim(python_version="3.11").uv_pip_install(
         "torch==2.7.1",
         "numpy==2.2.6",
@@ -52,6 +89,12 @@ app = modal.App(APP_NAME)
 
 
 def _tree_manifest() -> dict:
+    """Hash every shipped source and data file, and fold them into one digest.
+
+    Build artifacts are excluded — caches, packaging metadata, and earlier run
+    outputs — so the digest depends only on inputs and source. Paths are hashed
+    alongside contents, so moving a file changes the digest too.
+    """
     remote_repo = Path(REMOTE_REPO)
     remote_slm = Path(REMOTE_SLM)
     paths = [
@@ -90,6 +133,17 @@ def _tree_manifest() -> dict:
 def run_gpu_matrix(
     source_commit: str, source_branch: str, source_status: str, prior_billed_hours: float
 ) -> dict:
+    """Run the matrix once on a GPU and return where the results landed.
+
+    The launcher manifest doubles as a claim marker: writing it says this GPU run
+    has started, and finding it already there means something is trying to run
+    twice, which raises rather than spends more money.
+
+    The volume is committed before the work, in a `finally` after it, and again
+    at the end, so a crashed container still leaves its partial results behind.
+    Exactly one new run directory must appear; anything else means the runner did
+    not behave as expected and is treated as an error.
+    """
     remote_results = Path(REMOTE_RESULTS)
     remote_slm = Path(REMOTE_SLM)
     remote_results.mkdir(parents=True, exist_ok=True)
@@ -180,6 +234,16 @@ def resume_gpu_matrix(
     source_branch: str,
     source_status: str,
 ) -> dict:
+    """Continue an interrupted run in an existing directory, without restarting it.
+
+    `IVCSLM_RESUME_RUN_ROOT` tells the runner to reuse that directory; the runner
+    then verifies the stored config matches the current one and skips the cells
+    it already completed. If the earlier run already finished every planned run,
+    this returns immediately rather than allocating a GPU.
+
+    The run name must be a bare directory name, so a caller cannot point the
+    resume at an arbitrary path on the volume.
+    """
     if not run_name or "/" in run_name or "\\" in run_name:
         raise ValueError("Resume run name must be one existing run-directory name.")
     run_root = Path(REMOTE_RESULTS) / run_name
@@ -231,6 +295,7 @@ def resume_gpu_matrix(
 
 
 def _git(*arguments: str) -> str:
+    """Read Git provenance locally, since the container image carries no repository."""
     return subprocess.check_output(
         ["git", *arguments], cwd=LOCAL_REPO, text=True, stderr=subprocess.DEVNULL
     ).strip()
@@ -238,6 +303,11 @@ def _git(*arguments: str) -> str:
 
 @app.local_entrypoint()
 def main(resume_run_name: str = "", prior_billed_hours: float = PRIOR_BILLED_HOURS) -> None:
+    """Start a fresh GPU run, or resume one by name, and print what came back.
+
+    The working-tree status is captured for the shipped paths only, so the
+    manifest records whether the code and data that actually ran were clean.
+    """
     source_commit = _git("rev-parse", "HEAD")
     source_branch = _git("branch", "--show-current")
     source_status = _git(

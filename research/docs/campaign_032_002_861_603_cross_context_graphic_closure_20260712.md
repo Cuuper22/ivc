@@ -2,6 +2,12 @@
 
 Date: 2026-07-12 America/Los_Angeles
 
+## What this is and why it exists
+
+A catalogue number is a label somebody assigned, not a fact about the object. Two inscriptions can carry the same Lipi number and still show two different marks, if the person cataloguing them made the same call twice for different reasons. So whenever an argument leans on a number appearing in two different places, the pictures have to be checked before the argument counts.
+
+That is the situation here. Lipi, the numeric catalogue, uses the number `603` in two very different settings: at the end of Mohenjo-daro inscriptions that run `002-861-603`, and inside a five-unit Harappa tablet formula that runs `740-603-240-060-692`. An earlier argument treated those as the same sign and used the link to carry evidence from one site to the other. This note checks that link against the published images.
+
 ## Question
 
 Is local `603` the same source-visible graphic unit in the Mohenjo-daro post-`002-861-603` tails and the Harappa `740-603-240-060-692` tablet slot?
@@ -12,7 +18,7 @@ No. Close the cross-context graphic bridge.
 
 Status: `CLOSED_CROSS_CONTEXT_603_GRAPHIC_IDENTITY_NOT_SOURCE_SUPPORTED`.
 
-The earlier distributional bridge reused the same Lipi number in two contexts. The available source panels now show that the number does not bind the same visible unit under either admissible linear orientation of the Harappa row.
+The earlier bridge was built from distribution alone: the same Lipi number turned up in both contexts, so the two were assumed to be one sign. The source panels, meaning labeled crops of the published plates, now show that the number does not pick out the same visible unit. That holds under either of the two orientations the Harappa row could legitimately have.
 
 ## Source comparison
 
@@ -29,14 +35,14 @@ The Harappa local sequence is:
 740 603 240 060 692
 ```
 
-The source band has five visible units. Therefore:
+The source band has five visible units, and the stored sequence has five tokens, so the `603` token has to land on one of them. Which one depends on reading direction, and only two answers are possible:
 
 - if catalog order follows visual left-to-right, `603` is visual unit 2;
 - if recorded `R/L` means the visual row is reversed, `603` is visual unit 4.
 
-For H-1138, unit 2 is comb/rake-like and unit 4 is an angled/branching figure. Neither is the rectangular ladder/window terminal seen in M-240, M-714, and M-1273.
+Check both on H-1138. Unit 2 is comb/rake-like. Unit 4 is an angled/branching figure. Neither one is the rectangular ladder/window terminal seen in M-240, M-714, and M-1273. The bridge fails either way.
 
-H-1846 independently repeats the Harappa formula. It contains an edge window-like form, but that edge would map to local `740` under forward order or `692` under reverse order. It cannot map to local `603` without a non-linear reorder or a wrong stored sequence. Either possibility invalidates the current `603` bridge rather than supporting it.
+H-1846 repeats the Harappa formula independently, and it does contain a window-like form at one edge. But that edge maps to local `740` under forward order, or to `692` under reverse order. Getting it to map to `603` would require either shuffling the units out of linear order or accepting that the stored sequence is wrong. Both of those undercut the current `603` bridge rather than rescuing it.
 
 ## Decision
 
@@ -52,16 +58,16 @@ What does not survive:
 - The claim that one mobile sign or classifier bridges the two constructions.
 - Any sign value, administrative function, phonetic reading, language identification, or translation.
 
-For analysis, treat the two occurrences as separate unresolved source entities despite their shared Lipi number:
+In analysis, treat the two occurrences as two separate unresolved source entities, even though they share a Lipi number:
 
 ```text
 Mohenjo post-861 window class
 Harappa catalog-603 internal-slot candidate
 ```
 
-Do not rewrite the raw corpus number without an authoritative transcription. Do not use the Harappa rows as independent ecology for interpreting the Mohenjo tail.
+Do not rewrite the raw corpus number. That would take an authoritative transcription, which does not exist here. And do not treat the Harappa rows as independent surrounding evidence for interpreting the Mohenjo tail, because the link that would justify borrowing them is exactly what just failed.
 
-Reopen only if a source transcription explicitly maps Harappa `603` to the edge window-like unit or demonstrates that the current five-token sequence/order is wrong. More crops from the same formula family are not a promotion path.
+Two things would reopen this. Either a source transcription that explicitly maps Harappa `603` to the edge window-like unit, or a demonstration that the current five-token sequence or its order is wrong. Adding more crops of the same formula family will not do it; the question is not resolution, it is which unit the number names.
 
 ## Existing evidence used
 

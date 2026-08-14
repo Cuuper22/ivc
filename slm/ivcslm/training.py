@@ -1,3 +1,25 @@
+"""The fitting loop: fit a model, watch validation, keep the best checkpoint.
+
+The loop optimizes three objectives at once, weighted by the config:
+
+- masked-sign prediction, the main task;
+- per-position replacement detection, which asks whether a given sign was
+  swapped in;
+- whole-sequence authenticity, which asks whether the order is stored or
+  reordered.
+
+Two rules here matter for the research, not just for engineering. First, the
+test partition never appears — early stopping reads validation only, so the
+held-out numbers are not chosen by looking at the held-out data. Second, the
+loop can be handed a wall-clock deadline and will raise `TimeoutError` between
+optimizer steps rather than run past a paid compute budget.
+
+Two checkpoints come out. `best_model.pt` is the one with the lowest validation
+loss, used for reporting. `final_step_model.pt` is wherever training stopped,
+used as the transfer source, because transfer arms must be compared after the
+same number of optimizer steps rather than at each arm's own best epoch.
+"""
+
 from __future__ import annotations
 
 import csv
@@ -18,6 +40,13 @@ from .model import SignTransformer, Vocabulary
 
 @dataclass
 class TrainResult:
+    """What one fit produced: where it stopped, what it cost, and where it saved.
+
+    `optimizer_steps` and `masked_positions_seen` are recorded because the
+    transfer tournament compares arms at matched exposure, and matched exposure
+    only means something if the amount actually seen is reported.
+    """
+
     best_epoch: int
     best_validation_nll: float
     epochs_completed: int
@@ -30,6 +59,12 @@ class TrainResult:
 
 
 def seed_everything(seed: int) -> None:
+    """Seed Python and torch so a run is reproducible from its recorded seed.
+
+    Fully deterministic kernels are left off: they would slow the run without
+    changing any conclusion, because every claim is reported across several
+    seeds rather than resting on a single fit.
+    """
     random.seed(seed)
     torch.manual_seed(seed)
     if torch.cuda.is_available():
@@ -38,6 +73,7 @@ def seed_everything(seed: int) -> None:
 
 
 def _batches(records: Sequence[Record], batch_size: int, rng: random.Random) -> list[list[Record]]:
+    """Shuffle the records and cut them into fixed-size batches for one epoch."""
     indices = list(range(len(records)))
     rng.shuffle(indices)
     return [[records[index] for index in indices[start : start + batch_size]] for start in range(0, len(indices), batch_size)]
@@ -55,6 +91,22 @@ def train_model(
     deadline_monotonic: float | None = None,
     published_authentic_inventory: set[tuple[str, ...]] | None = None,
 ) -> TrainResult:
+    """Fit one model and return where it stopped and what it saved.
+
+    Arguments worth understanding:
+
+    - `deadline_monotonic`: a wall-clock instant after which the loop refuses to
+      take another step. This is the compute-budget guard, checked between
+      optimizer steps and inside evaluation.
+    - `published_authentic_inventory`: the sequences known to be attested. Used
+      so that a generated "corruption" is never accidentally a real sequence.
+      When omitted, the training records themselves are used.
+
+    Learning rate warms up over the first 6% of steps and then decays on a
+    cosine curve to the configured floor. Training stops at whichever comes
+    first: the epoch count, the optimizer-step cap, or `patience` consecutive
+    evaluations with no improvement in validation loss.
+    """
     seed_everything(seed)
     output_dir.mkdir(parents=True, exist_ok=True)
     optimizer = torch.optim.AdamW(
@@ -83,6 +135,10 @@ def train_model(
     replacement_loss = torch.nn.BCEWithLogitsLoss(reduction="none")
     authenticity_loss = torch.nn.BCEWithLogitsLoss()
     rng = random.Random(seed)
+    # Separate streams keep batching, masking, and corruption independent of one
+    # another. That matters for exposure-matched transfer arms, where two arms
+    # differ in record count: with one shared stream, drawing a different number
+    # of batches would also shift every later masking decision.
     if config.get("separate_training_rng_streams", False):
         batch_rng = random.Random(seed + 1_000_003)
         mask_rng = random.Random(seed + 2_000_033)
@@ -200,6 +256,8 @@ def train_model(
             break
         if reached_step_limit:
             break
+    # Saved before reloading the best checkpoint: this is the fixed-exposure
+    # endpoint that a transfer arm starts from, not the best-validation model.
     final_checkpoint_path = output_dir / "final_step_model.pt"
     torch.save(
         {
@@ -211,6 +269,8 @@ def train_model(
         },
         final_checkpoint_path,
     )
+    # Return the caller a model in its best-validation state, so evaluation never
+    # scores whatever the last step happened to leave behind.
     state = torch.load(checkpoint_path, map_location=device, weights_only=True)
     model.load_state_dict(state["model_state"])
     curve_path = output_dir / "training_curve.csv"

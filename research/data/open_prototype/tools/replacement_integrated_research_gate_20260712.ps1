@@ -1,3 +1,24 @@
+# Runs the three 2026-07-12 replacement-branch operations end to end and refuses to
+# report success unless each one landed exactly as expected. It calls the Vector-4
+# 158-806 / Phyt source-family gate (node), the P050 / local-220 strict source gate
+# (python), and one local from-scratch micro language model through
+# "ivcslm run-matrix" against slm\configs\ivc_local_integrated.json, writing model
+# runs to $ModelOutputDir (E:\ivc_slm_runs when the E: drive exists, otherwise a
+# folder under LOCALAPPDATA). It then reads the two gate summary JSONs and the model
+# run's completion.json and summary.json and throws if the Vector-4 decision is not
+# the closed/not-claim-eligible one, if the P050 outcome is not PARK, if the matrix
+# ran anything other than the one planned run, if it hit the runtime guard, if the
+# held-out evaluation produced no masked positions or no hypothesis-family holdout
+# records, or if the model did not start from random_initialization. Those checks
+# exist because a gate that silently changes its verdict, or a model that leaks its
+# answer through pretrained weights or an unheld family, would look like a clean run
+# while proving nothing. On success it writes
+# reports\replacement_integrated_research_gate_20260712_summary.json holding the two
+# decisions, the model metrics, the current git commit and branch, and SHA-256
+# hashes of the three input summaries. Passing means the instrument executed and two
+# annotations are closed; it promotes no model metric, crosswalk, sign meaning, or
+# reading, and every claim ledger increment stays 0.
+
 param(
     [string]$PythonExe = 'C:\Users\Acer\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe',
     [string]$ModelOutputDir = ''

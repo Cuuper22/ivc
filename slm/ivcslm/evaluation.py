@@ -1,3 +1,28 @@
+"""Score a fitted model on held-out records, and write every prediction down.
+
+Five measurements live here, each answering a different question:
+
+- `masked_token_evaluation`: hide one sign at a time and see whether the model
+  names it. This is the primary result.
+- `empirical_baselines`: what plain counting achieves on the same held-out
+  records — the most frequent sign, and the best guess from the immediate left
+  and right neighbours. A model that cannot beat these has shown nothing.
+- `directionality_evaluation`: does the stored order score better than the same
+  signs reversed?
+- `corruption_evaluation`: does the trained authenticity head rank a stored
+  sequence above damaged versions of it? This head was trained for exactly this,
+  so its score is generalization of a trained task, not independent evidence.
+- `continuation_probe` and `embedding_analysis`: descriptive tables of what the
+  model ranks after a fixed prefix, and which signs sit near each other in the
+  learned space.
+
+Every function writes its full per-row output to CSV, not only a summary
+number, so any reported aggregate can be recomputed and audited afterwards.
+
+A ranking here is a ranking of sign ids under a model. It is never a reading, a
+phonetic value, or a meaning.
+"""
+
 from __future__ import annotations
 
 import csv
@@ -17,6 +42,7 @@ from .model import SignTransformer, Vocabulary
 
 
 def _check_deadline(deadline_monotonic: float | None) -> None:
+    """Stop evaluation if the paid compute budget has run out."""
     if deadline_monotonic is not None and time.monotonic() >= deadline_monotonic:
         raise TimeoutError("Compute-budget deadline reached during evaluation")
 
@@ -31,6 +57,28 @@ def masked_token_evaluation(
     predictions_path: Path,
     deadline_monotonic: float | None = None,
 ) -> dict:
+    """Hide each interior sign of each record in turn and score the prediction.
+
+    The sweep is exhaustive and deterministic: every position of every record is
+    scored exactly once, so two runs on the same records compare directly.
+
+    Scoring is restricted to real signs — the special tokens are sliced off
+    before the softmax, so the model cannot be credited for predicting padding
+    or a boundary marker.
+
+    Beyond accuracy, three things are reported that accuracy alone hides:
+
+    - negative log-likelihood and its exponential, perplexity: how surprised the
+      model was, not just whether it was right;
+    - the multiclass Brier score: how well-calibrated its confidence was;
+    - prediction sets at 80%, 90%, and 95%: the smallest set of signs whose
+      probabilities reach that level, and how often the true sign was inside it.
+      A model that is right rarely but honest about it will have small sets and
+      correct coverage.
+
+    Results are also broken out by site and artifact type, because a good global
+    average can be one large find-spot carrying every other one.
+    """
     model.eval()
     rows: list[dict] = []
     top1 = top5 = total = 0
@@ -118,6 +166,7 @@ def masked_token_evaluation(
 
 
 def _counter_metrics(values: dict[str, Counter]) -> dict[str, dict]:
+    """Turn per-group hit counts into per-group rates, keeping the group size."""
     return {
         key: {
             "positions": item["total"],
@@ -129,6 +178,7 @@ def _counter_metrics(values: dict[str, Counter]) -> dict[str, dict]:
 
 
 def _write_rows(path: Path, rows: list[dict]) -> None:
+    """Write per-row output to CSV, leaving an empty file when there is nothing."""
     path.parent.mkdir(parents=True, exist_ok=True)
     if not rows:
         path.write_text("", encoding="utf-8")
@@ -143,6 +193,15 @@ def _write_rows(path: Path, rows: list[dict]) -> None:
 def sequence_pseudo_log_likelihood(
     model: SignTransformer, tokens: tuple[str, ...], vocab: Vocabulary, device: torch.device
 ) -> float:
+    """Score a whole sequence by masking each sign in turn and summing the log
+    probabilities of the true signs.
+
+    A bidirectional encoder gives no single probability for a sequence, because
+    it never predicts left to right. This pseudo-likelihood is the standard
+    substitute: mask position one and read off its score, then position two, and
+    so on. It is comparable between two orderings of the same signs, which is all
+    the directionality test needs.
+    """
     encoded = vocab.encode(tokens)
     masked_rows: list[list[int]] = []
     targets: list[int] = []
@@ -171,6 +230,20 @@ def directionality_evaluation(
     authentic_inventory: set[tuple[str, ...]],
     deadline_monotonic: float | None = None,
 ) -> dict:
+    """Compare each held-out sequence against itself reversed.
+
+    The model was trained only on stored order. If stored order carries real
+    constraint, the stored sequence should score higher than its reversal on a
+    model that has never seen either.
+
+    Two cases are removed from the win share rather than counted:
+
+    - a palindrome is identical to its own reversal, so there is nothing to
+      compare;
+    - a sequence whose reversal is itself an attested sequence is a real pair,
+      not a stored-versus-invented pair. Those rows are written out and reported,
+      but never gated on.
+    """
     model.eval()
     rows = []
     wins = ties = scored = palindromes = authentic_reverse_pairs = 0
@@ -240,6 +313,18 @@ def continuation_probe(
     output_path: Path,
     deadline_monotonic: float | None = None,
 ) -> list[dict]:
+    """Rank the signs the model puts in one blank slot after a fixed prefix.
+
+    The input is `[BOS] prefix [MASK] [EOS]`: the mask sits in the last position
+    before the end marker, so the model is being asked which sign would fill a
+    single remaining slot in a sequence of exactly that length.
+
+    This is not a continuation model and not a termination model. It cannot say
+    whether a sequence ends there, what any ranked sign means, or how it was
+    pronounced. It is a table of what the model ranks, and it is only produced
+    for prefixes whose one-edit families were forced into the test partition
+    before fitting.
+    """
     model.eval()
     rows: list[dict] = []
     for prefix in prefixes:
@@ -264,6 +349,17 @@ def continuation_probe(
 
 
 def empirical_baselines(train: Sequence[Record], test: Sequence[Record]) -> dict:
+    """Score two counting baselines on the held-out records, using train counts only.
+
+    The unigram baseline always answers with the most frequent sign. The
+    bidirectional bigram baseline adds up how often each sign followed the
+    left neighbour and preceded the right neighbour, and answers with the
+    highest total.
+
+    These are the bar the model has to clear. Neither looks at the test split to
+    build its counts, so beating them is a statement about generalization rather
+    than about sign frequency.
+    """
     unigram = Counter(token for record in train for token in record.tokens)
     most_common = unigram.most_common(1)[0][0]
     top5 = {token for token, _ in unigram.most_common(5)}
@@ -307,6 +403,17 @@ def embedding_analysis(
     output_path: Path,
     deadline_monotonic: float | None = None,
 ) -> None:
+    """Write, for each sign, its nearest neighbors in embedding space and where it sits.
+
+    Two tables in one. The neighbors are the signs whose learned vectors point
+    most nearly the same way, after normalizing to unit length so that only
+    direction counts. The position profile is how often the sign was observed
+    first, last, or in the middle of a training sequence.
+
+    This is descriptive output for inspection. Neighboring vectors indicate that
+    two signs were used in similar contexts; they say nothing about the two signs
+    sounding alike or meaning the same thing.
+    """
     embeddings = model.token_embedding.weight.detach().cpu().numpy()[vocab.first_sign_id :].copy()
     embeddings /= np.linalg.norm(embeddings, axis=1, keepdims=True).clip(min=1e-12)
     position_profiles: dict[str, Counter] = defaultdict(Counter)
@@ -349,6 +456,22 @@ def corruption_evaluation(
     authentic_inventory: set[tuple[str, ...]],
     deadline_monotonic: float | None = None,
 ) -> dict:
+    """Ask the authenticity head to rank each stored sequence above damaged copies.
+
+    Four kinds of damage are tried per record: full reversal, rotation by one,
+    reversal of the interior with the two end signs left in place, and a single
+    substitution at the first position. The interior reversal is the sharpest of
+    them, since it leaves the sequence's edges intact.
+
+    Any damaged sequence that turns out to be an attested sequence is skipped and
+    counted, never scored: it would be marking a real sequence as a fake. The
+    substitution is chosen by hashing the record id, so the same record always
+    receives the same corruption.
+
+    Read the output with care. This head was explicitly trained to separate
+    stored order from corruptions, so a high win share is generalization of a
+    trained task. It is not independent evidence about direction.
+    """
     model.eval()
     rows: list[dict] = []
     by_corruption: dict[str, Counter] = defaultdict(Counter)
