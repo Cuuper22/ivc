@@ -1,3 +1,19 @@
+"""Build the v2c blind review packet for the directionality experiment.
+
+v2c is the third repair attempt in the blind-packet series. The v2b packet
+failed because catalogue labels leaked into the routed negative crops: the DjVu
+OCR gives some WORD boxes five coordinates, and the earlier parser treated the
+fifth value as a y-coordinate, producing tall bogus masks that missed the real
+label text. This script reads routes from the corrected v2 public route probe
+CSV, parses five-value coords as x1,y1,x2,y2,baseline (fifth value ignored),
+and wipes each masked box with a much larger margin. It otherwise builds the
+same packet as v2b — recut targets, twelve routed real negatives, three stress
+controls, synthetic sentinels — and writes blind images, manifests, an answer
+key, a review template, a contact sheet, and a summary JSON. The summary
+records that human visual preflight still found label and page-context leakage,
+so v2c is marked not reviewer-ready and promotes no claim.
+"""
+
 from __future__ import annotations
 
 import csv
@@ -266,8 +282,9 @@ def mask_ocr_words(
     for box in scaled_word_boxes(page_info, image.size):
         if not overlap(box, crop_box):
             continue
-        # The public CISI OCR boxes are often baseline-tight. Use a deliberately
-        # generous wipe so side letters and broken catalogue labels do not leak.
+        # The public CISI OCR boxes hug the text baseline, so a tight wipe can
+        # leave letter tops and broken catalogue labels visible. Pad the wipe
+        # generously (52 px horizontal, 32 px vertical) so nothing leaks.
         x1 = max(0, box[0] - crop_box[0] - 52)
         y1 = max(0, box[1] - crop_box[1] - 32)
         x2 = min(crop.width, box[2] - crop_box[0] + 52)

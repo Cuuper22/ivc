@@ -2,6 +2,10 @@
 
 Date: 2026-05-25
 
+This note is a stress test. Someone proposed that on seal row `M-2104`, the sign pair `700-034` is a count compound — a unit sign plus a stroke group that says how many. We put that idea under load against the whole local corpus to see whether the corpus backs it or kills it. "Kill" is the project word for a hypothesis that the evidence rules out.
+
+The note exists so the idea cannot quietly become an assumption. Everything below is a targeting signal for where to look next, not a reading of the script.
+
 Question:
 
 ```text
@@ -26,7 +30,7 @@ Output:
 
 ## Live Claim
 
-Parpola 2019 treats `M-2104` as text no. 12, described as `UIII` plus signs 15 and 1. The named tablet parallels `M-478`, `M-480`, and `M-1425` are described as `UIIII` plus signs 15 and 107.
+The claim being tested, stated plainly. Parpola 2019 treats `M-2104` as text no. 12, described as `UIII` plus signs 15 and 1. The named tablet parallels `M-478`, `M-480`, and `M-1425` are described as `UIIII` plus signs 15 and 107.
 
 Local rows:
 
@@ -59,7 +63,7 @@ exact 097-700-034 rows: 1
 exact 097-700-004 rows: 4
 ```
 
-The narrow `097-700-X` frame is real:
+A frame is a fixed run of surrounding signs with one slot left open, so that rows sharing the frame can be compared slot by slot. The narrow `097-700-X` frame is real:
 
 ```text
 M-2104: +151-097-700-034+
@@ -69,7 +73,7 @@ M-480:  +400-097-700-004+
 M-1425: +400-097-700-004+
 ```
 
-`M-479` is not one of Parpola's named parallels in the current extraction, but the local corpus puts it in the same exact `+400-097-700-004+` family. That is useful, but it also means the `004` side is one repeated exact sequence family, not four independent substitutions.
+`M-479` is not one of Parpola's named parallels in the current extraction, but the local corpus puts it in the same exact `+400-097-700-004+` family. That is useful, but it also means the `004` side is one repeated exact sequence family — one copied formula appearing several times — not four independent substitutions.
 
 The `097` left-context enrichment is strong in the local planning layer:
 
@@ -85,21 +89,21 @@ This is a useful targeting signal, not a sign value. The counts are heavily stru
 
 - The exact suffix frame `097-700-X` contains the target `M-2104` on the `034` side and four Mohenjo-daro `004` rows on the other side.
 - The result matches the prior-work pressure from Parpola 2019: `UIII` for M-2104 and `UIIII` for the named tablet parallels.
-- Public CISI crops for `M-478` and `M-1425` already survived first-pass blind visual review as four-stroke/U-pot-like parallel witnesses.
+- Public CISI crops for `M-478` and `M-1425` already survived first-pass blind visual review — reviewers judging the image without being told the expected answer — as four-stroke/U-pot-like parallel witnesses. A witness is one independent piece of evidence for a claim.
 - Public routing has moved from prose-only to source-testable: `M-478/M-480` are on CISI India leaf `n150`, `M-1425` is on CISI Pakistan leaf `n227`, and the target has a public Marshall Plate CXIV no. 532 route.
 
 ## Downgrades
 
-- No Parpola-like multi-token full-sequence wildcard frame contains both variants. The exact full-frame contrast is `151-097-700-034` versus `400-097-700-004`, not a same-frame minimal pair.
+- No Parpola-like multi-token full-sequence wildcard frame contains both variants. The exact full-frame contrast is `151-097-700-034` versus `400-097-700-004`, not a same-frame minimal pair — the two rows differ in two slots, not one.
 - The only full-sequence wildcard frame with both variants is bare `+700-X+`, dominated by Harappa tablet short marks. That is a different problem from the M-2104 count-compound claim.
-- `M-2104` remains source-gated. The public Marshall route is compatible, but CISI 3.1 or equivalent source metadata has not yet closed `M-2104 = Marshall no. 532 / VS 875`.
+- `M-2104` remains source-gated: it cannot be used until a published source ties our row to a physical object. The public Marshall route is compatible, but CISI 3.1 or equivalent source metadata has not yet closed `M-2104 = Marshall no. 532 / VS 875`.
 - Marshall's five-character description remains unreconciled against the local four-token row.
 - The public target image keeps exact stroke count ambiguous; current reviewers allow three-plus-boundary and four-ish readings.
 - `034` outside `700-034` exists in several contexts (`M-315`, `M-685`, `M-1206`, `M-1584`, `M-1963`), so no broad `034 = three` mapping is admissible.
 
 ## Adversarial Kill Gates
 
-Hard kill if any of these fail:
+A gate is a test the claim must pass before it can advance. These are written to be hostile to the claim on purpose. Hard kill if any of these fail:
 
 1. Source bridge: CISI 3.1 or equivalent source must link `M-2104` to the target image/source route.
 2. Standardization circularity: image-first reviewers must identify the U/pot-like unit and stroke group before using Parpola/local labels.
@@ -113,13 +117,15 @@ Hard kill if any of these fail:
 
 ## Adjudication
 
+Adjudication is the ruling: what this note lets the project carry forward and what it does not.
+
 Accepted:
 
-- M-2104 remains the strongest current `034` crosswalk target.
+- M-2104 remains the strongest current `034` crosswalk target. A crosswalk is a checked link between our labels and someone else's catalogue.
 - The `097-700-X` frame gives a real local-corpus targeting signal.
 - `M-479` should be added to the source-check set as an unmentioned local member of the `+400-097-700-004+` family.
 
-Rejected or quarantined:
+Rejected or quarantined — quarantine means the item is held out of all downstream work until its problem is fixed:
 
 - No `034 = three` mapping is accepted.
 - No `004 = four` mapping is accepted.
@@ -137,14 +143,14 @@ Follow-up:
 
 `M-479` has now been source-checked on CISI India leaf `n150`. It is visible as `M-479 A/B` on the same `MOHENJO-DARO 478-481` tablet plate as `M-478/M-480`, and the CISI introduction leaf `n19` explicitly discusses `M-478/M-479` as a four-plus-U case. This upgrades M-479 from a hidden local extra to a source-visible family-internal comparator, but it also sharpens the duplicate-family warning: it cannot be counted as an independent recurrence yet.
 
-A separate family-dependence adjudication now collapses the four local `+400-097-700-004+` rows into two evidence units:
+A separate family-dependence adjudication now collapses the four local `+400-097-700-004+` rows into two evidence units — groups counted once because the rows inside them are not independent of each other:
 
 ```text
 EU_004_INDIA_478_479_480 = one same-plate tablet-family unit
 EU_004_PAKISTAN_1425     = one provisional independent recurrence
 ```
 
-It is not solved. It is also not dead. The next decisive move is raw/source-grade M-2104 evidence, then blind segmentation against `M-478`, `M-479`, and `M-1425`, with `M-480` retained as the weaker same-plate comparator.
+It is not solved. It is also not dead. The next decisive move is raw/source-grade M-2104 evidence, then blind segmentation — splitting the inscription into signs from the image alone, without the expected answer in hand — against `M-478`, `M-479`, and `M-1425`, with `M-480` retained as the weaker same-plate comparator.
 
 Target-side gate recheck:
 

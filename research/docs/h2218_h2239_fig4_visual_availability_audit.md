@@ -4,9 +4,9 @@ Date: 2026-05-24
 
 ## Purpose
 
-This artifact records what the public Meadow and Kenoyer 2000 Fig. 4 image can and cannot support for the H-2218 through H-2239 tablet series.
+This note records what the publicly available Fig. 4 image in Meadow and Kenoyer 2000 can and cannot support for the H-2218 through H-2239 tablet series. It exists so later steps do not treat a coarse published figure as if it were high-resolution evidence.
 
-This is an academic source audit. It is not OCR, not image redistribution, and not a reading.
+This is an academic source audit — a check of what a source can show. It is not OCR (machine text extraction), not image redistribution, and not a reading of any sign.
 
 ## Local Artifacts
 
@@ -46,7 +46,7 @@ Observed:
 - All 22 tablet items mapped from the local H-2218 through H-2239 sheet are present in the public figure.
 - Each tablet item appears as three side panels.
 - A triangular/end-profile marker appears to the right of the tablet side panels.
-- The figure is coarse and not segmentation-grade.
+- The figure is coarse and not segmentation-grade — not sharp enough to split the inscriptions into individual signs.
 
 ## Coverage
 
@@ -74,7 +74,7 @@ The earlier Fig. 4 mapping established that all 22 local rows can be linked to M
 The public Fig. 4 image does not support accepting:
 
 - Sign segmentation.
-- Allography.
+- Allography (which shapes count as variants of the same sign).
 - Stroke counts.
 - Side orientation.
 - Physical side function.

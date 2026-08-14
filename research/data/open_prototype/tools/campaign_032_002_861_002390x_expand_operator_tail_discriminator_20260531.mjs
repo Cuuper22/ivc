@@ -1,6 +1,21 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script builds a discriminator between two rival explanations of what
+// follows an open operator: a grammar model (the operator class picks its
+// tail) versus a visual-formula null (the object's context — site, type,
+// cult scene — picks it). It scans lipi/metadata_filtered.csv for 002-HEAD-X
+// frames whose X is a listed open operator or terminal booster, then groups
+// the open rows three ways: by X sign, by head, and by full context cell
+// (site|type|shape|material|cult|class). The key statistic is the repeated
+// tail-first share — the fraction of rows in a group whose first tail sign
+// recurs within that group. If tails repeat more inside X groups than inside
+// context groups, the operator model wins this crude round; the summary says
+// so only "weakly", and each bet carries a source-strict kill condition.
+// Sub-bets: 125 as associative linker, and 455/065 as relation operators
+// under head 220. Writes open rows, both groupings, the discriminators, and
+// bets as CSVs plus a summary JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

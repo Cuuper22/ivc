@@ -1,3 +1,14 @@
+// Tries to break (forge against) the claim that terminal sign 820 belongs to
+// rhinoceros seals specifically, by pitting it against a named foil: elephant.
+// We take square seals (SEAL:S) whose text ends 002 followed by one of the
+// three terminals 817/820/861, dedupe to one row per exact sign sequence, and
+// label each seal's animal icon from the metadata symbol column — falling back
+// to a text extraction of the S1 zoomorphic icon catalogue when metadata is
+// missing. The test: do rhinoceros frames pick 820 while elephant frames avoid
+// it? A 20000-iteration shuffle of the terminal labels measures how often that
+// exact contrast — and the looser "any two symbols show such a contrast"
+// version — appears by chance. Writes a JSON report and four CSVs (target
+// rows, symbol summary, predictions for unlabeled seals, sample iterations).
 import fs from 'node:fs';
 import path from 'node:path';
 

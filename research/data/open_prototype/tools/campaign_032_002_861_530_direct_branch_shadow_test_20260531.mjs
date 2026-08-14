@@ -1,3 +1,12 @@
+// Shadow test for sign 530: if a frame reads 002-H-530-Y, could Y just as well attach
+// directly to the head H as 002-H-Y? If such "direct shadows" exist, 530 is only an optional
+// separator; if they never occur, 530 genuinely introduces a nested complement layer.
+// We read the filtered Indus inscription list (lipi/metadata_filtered.csv), keep one copy of
+// each distinct sign sequence, and extract every governed frame (002 + head + branch + tail).
+// For each 530 frame with a one-sign tail we count same-head frames where the complement Y
+// appears as the branch itself, plus context counts for the head and the complement.
+// Outputs: a per-target shadow CSV, a decision CSV, and a JSON summary in
+// data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

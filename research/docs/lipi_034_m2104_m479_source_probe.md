@@ -2,6 +2,10 @@
 
 Date: 2026-05-25
 
+This note is a source probe: a short check on whether a published source really shows the object we think it shows. Here the object is `M-479`, a row that turned up in our own corpus inside the same four-sign sequence as the seals we were already comparing against `M-2104`.
+
+The note exists to settle one thing. Finding another matching row feels like extra evidence, but it is only extra evidence if the rows are independent of each other. Four copies of one formula on one plate are one fact, not four.
+
 Question:
 
 ```text
@@ -35,7 +39,7 @@ M-479: +400-097-700-004+
 
 Metadata: Mohenjo-daro, `TAB:B`, clay, rectangular, complete, good condition, `R/L`, class `VX`, 4 signs, excavation/source hook `DK1007890.24`.
 
-The exact comparator family now stands:
+A family is a set of rows carrying the same exact sign sequence. The exact comparator family now stands:
 
 ```text
 M-478:  +400-097-700-004+
@@ -44,11 +48,11 @@ M-480:  +400-097-700-004+
 M-1425: +400-097-700-004+
 ```
 
-M-479 is not a named Parpola 2019 parallel in the current extraction, but CISI itself discusses M-478/M-479 together as a four-plus-U case in the introduction. That gives prior-work pressure for the visual class while also warning that this is a tight tablet-family phenomenon.
+M-479 is not a named Parpola 2019 parallel in the current extraction, but CISI itself discusses M-478/M-479 together as a four-plus-U case in the introduction. That gives prior-work pressure for the visual class — earlier scholarship pushing us to test it, not proof — while also warning that this is a tight tablet-family phenomenon.
 
 ## Visual Note
 
-M-479 A shows the inscription side. The crop preserves the same broad family layout seen in M-478/M-480: a non-count sign region, a four-stroke group, a U/pot-like region, and a neighboring comb/ribbed sign region. The stored overlay marks these as visual boxes only; the boxes are not accepted local token boundaries.
+M-479 A shows the inscription side. The crop preserves the same broad family layout seen in M-478/M-480: a non-count sign region, a four-stroke group, a U/pot-like region, and a neighboring comb/ribbed sign region. The stored overlay marks these as visual boxes only; the boxes are not accepted local token boundaries — that is, not accepted decisions about where one sign ends and the next begins.
 
 M-479 B shows the companion scene side. It supports the source route for the pot/count interpretation, but it is not sign evidence.
 
@@ -67,13 +71,15 @@ It does not validate:
 
 ## Adversarial Adjudication
 
+The ruling, argued from the side that wants the claim to fail.
+
 Accepted:
 
 - M-479 is a source-visible local extra member of the exact `+400-097-700-004+` family.
 - M-479 A is usable as a segmentation target for the four-stroke/U-pot visual test.
 - M-479 B and CISI introduction leaf `n19` support the pot-count context route.
 
-Quarantined:
+Quarantined — held out of downstream use until the listed problem is resolved:
 
 - M-479 cannot currently be counted as an independent recurrence.
 - The `004` side remains a repeated exact sequence family, not four independent substitutions.
@@ -97,4 +103,4 @@ M-480:  700-004 weaker same-plate comparator
 M-1425: 700-004 independent Pakistan-volume comparator, lower visual confidence
 ```
 
-The next hard test is not another broad corpus audit. It is blind segmentation on M-478/M-479/M-1425 and raw-source closure for M-2104.
+The next hard test is not another broad corpus audit. It is blind segmentation — splitting the inscription into signs from the image alone, with the expected answer withheld — on M-478/M-479/M-1425, and raw-source closure for M-2104.

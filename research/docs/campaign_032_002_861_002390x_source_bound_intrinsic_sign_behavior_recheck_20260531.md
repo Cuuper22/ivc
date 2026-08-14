@@ -2,6 +2,8 @@
 
 Date: 2026-05-31 America/Los_Angeles
 
+This note exists to kill a tempting shortcut. Inside the `002-390-X` frame, some branch signs are always followed by more signs (continuation) and others always end the inscription (closure). The shortcut would be to conclude that those signs carry that behavior everywhere — that `125` "means" continuation and the others "mean" closure. This check looks at how the same signs behave outside the frame, using source-visible rows, and shows the shortcut is false.
+
 Status: adversarial guardrail, not goal completion.
 
 ## Question
@@ -15,7 +17,7 @@ Lazy positive model:
 095/692/705 mean/cause closure.
 ```
 
-This gate tests that shortcut directly with source-visible non-frame behavior. It does not test values, phonetics, language identity, sign meanings, or translations.
+This gate tests that shortcut directly with source-visible non-frame behavior — occurrences of the same signs outside `002-390-X`, in rows whose photographs can be inspected. It does not test values, phonetics, language identity, sign meanings, or translations.
 
 ## Result
 
@@ -35,7 +37,7 @@ The source evidence is row/order pressure, not a new accepted sign-value layer. 
 
 ## H-660 acquisition note
 
-H-660 was the missing clean `095` guardrail in this pass.
+H-660 was the missing clean `095` guardrail in this pass — until now there was no source-visible example of `095` continuing outside the frame.
 
 - Local text: `+520-095-033-706-240-798+`
 - Local role in this gate: non-frame continuing `095`
@@ -47,7 +49,7 @@ This promotes the `095` non-frame continuation guard from metadata-only pressure
 
 ## Decision
 
-`002-390-X` remains alive only as a branch-conditioned ecology:
+`002-390-X` remains alive only as a branch-conditioned ecology — the pattern belongs to the frame, not to the individual signs:
 
 ```text
 002-390-X may condition closure/continuation behavior.

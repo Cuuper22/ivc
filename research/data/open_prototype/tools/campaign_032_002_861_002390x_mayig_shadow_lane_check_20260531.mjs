@@ -1,6 +1,19 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// The corpus exists in two independent transcriptions: the local Lipi numeric encoding
+// (3-digit sign codes) and the Mayig P-namespace grapheme encoding. If the provisional
+// crosswalk 032=P145, 002=P122, 390=P086 is right, the Lipi window 032-002-390 should cast a
+// "shadow" P145-P122-P086 in Mayig — and any Mayig-only hit would be a new witness for the
+// blocked 032 lane. This script runs that check. It reads the Mayig records index, the Lipi
+// metadata, and the crosswalk edges CSV, then searches both corpora for their exact triple
+// and joins hits by artifact. It also scans the looser Mayig pair P122-P086 and checks how
+// each artifact's local Lipi text aligns (exact 002-390, a 002-405 collision, or no match),
+// because P086 is a known collision point between Lipi 390 and 405. Finding: the shadow lane
+// returns only M-70, already known, so no replacement witness; the pair route is unsafe.
+// Writes exact-triple, pair-row, and P086 collision-edge CSVs plus a summary JSON to
+// reports/, all with accepted_decipherment_claim=0.
+
 const ROOT = process.cwd();
 const REPORTS = path.join(ROOT, 'data', 'open_prototype', 'reports');
 const MAYIG = path.join(ROOT, 'data', 'open_prototype', 'mayig', 'records_index.csv');

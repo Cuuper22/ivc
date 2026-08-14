@@ -1,3 +1,16 @@
+"""Ask whether specific preframes before 002-861 predict which tail follows.
+
+A preframe is the last one or two signs that come right before the 002-861
+pair. This script scans the strict corpus for every 002-861 occurrence,
+records its preframe and its tail (bare, 533 717, 603, or other), and then
+summarizes tail choice inside seven focus last-two frames and seven focus
+last-one frames. If a preframe reliably picked one tail, that would be
+grammar-shaped evidence; the recorded decision is that the target last-two
+frames are singletons and the last-one frames are context clues, not values.
+Writes a rows CSV, a last2 summary CSV, a last1 summary CSV, and a JSON
+summary with the decision.
+"""
+
 from __future__ import annotations
 
 import csv

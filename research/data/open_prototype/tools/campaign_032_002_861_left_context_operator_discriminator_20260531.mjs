@@ -1,3 +1,13 @@
+// Discriminator for "left-context operators": do the signs sitting to the left of a governed
+// 002 frame act like operators that steer what the frame selects? The specific claims: a
+// final 235 before 002 plus a P086-family head (390 or 405) selects 125; 032 on the left
+// without 235 pushes the frame toward boundary/formula/result closure and away from 125; and
+// a final 004 is a neutral qualifier that can go either way (095 or 125). We read the
+// filtered Indus inscription list (lipi/metadata_filtered.csv), keep one copy of each
+// distinct sign sequence, extract every governed frame with its full left context, and tag
+// each frame by left pattern. Per-tag summaries then check every condition of the operator
+// model at once; the bet is only a candidate if all five hold. Writes tag-summary,
+// 390-target-row, and decision CSVs plus a JSON summary to data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

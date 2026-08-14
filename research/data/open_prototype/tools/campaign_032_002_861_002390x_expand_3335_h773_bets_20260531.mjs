@@ -1,6 +1,21 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script builds destructive bets around two awkward single objects:
+// inscription 3335.1 (which reads 032-002-390-590-032) and seal H-773 (whose
+// frame is 002-390-530-741). It reads lipi/metadata_filtered.csv,
+// deduplicates by sign sequence, and gathers the comparison sets each bet
+// needs: every 390-590-032 chunk with its neighbors, exact
+// 032-002-390-590-032 mirrors, reverse 390-590-032-002 hinges, every
+// governed 002-HEAD-530-Y row with a search for "shadow" rows that use the
+// same head and complement without the 530, and any direct 002-390-741 rows.
+// The four bets: 3335.1 uses two different 032 roles (frame-opener versus
+// formula-closer), 3335.1 imports a common formula chunk into a seal-side
+// branch slot, H-773's 530 is a one-complement linker between 390 and 741,
+// and that 530 is not optional because no direct 002-390-741 shadow exists.
+// Writes hinge rows, 530 rows, and the bets as CSVs plus a summary JSON to
+// data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

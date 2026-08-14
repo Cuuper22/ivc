@@ -1,3 +1,16 @@
+// Main test of the bet that signs `405` and `806` mark the Bull1:W icon subtype
+// (a bull-with-standard image) on seal texts — a context claim, not a phonetic one.
+// The script reads metadata_filtered.csv, collapses duplicate sign sequences, and
+// measures how strongly each target sign, and the "either 405 or 806" family,
+// concentrates in Bull1:W rows versus the background, across seven pools: all rows,
+// SEAL:S only, square-shaped only, complete only, non-poor, leave-Mohenjo-daro,
+// and leave-Harappa. Single signs are Fisher-ranked against every sign in the pool
+// and priced with a 3,000-iteration Bull1:W label-shuffle whose statistic is the
+// best p over all signs (max-stat); the two-sign family gets its own label-shuffle
+// test plus, in the SEAL:S and square pools, a rank among all sign pairs. The tier
+// is "promoted candidate" only if every control passes at FPR <= 0.01. Writes a
+// JSON report plus summary, support-row, outside-sample, top-sign, top-pair, and
+// forger-iteration CSVs to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

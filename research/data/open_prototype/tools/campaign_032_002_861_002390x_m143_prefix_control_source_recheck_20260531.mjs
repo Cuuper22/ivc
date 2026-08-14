@@ -2,6 +2,19 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 
+// A provenance audit, not a corpus scan. Seal M-143 (row 2670.1) shares the four-sign prefix
+// 740-205-032-002 with the unbound row 3335.1, which makes it the natural control for that
+// target — but only if M-143 itself can be traced to a real published image. This script
+// documents that trace. It reads metadata_filtered.csv and the artifact_witnesses.csv
+// crosswalk, lists every row starting with the shared prefix and its branch after 002, and
+// inventories the local evidence files under tmp/: the downloaded CISI India archive page
+// (leaf n80) and the panel and signband crops derived from it, each with size and SHA-256
+// hash so the audit is reproducible. The recorded decisions are deliberately narrow: the
+// M-143 source panel is found and usable as a prefix-family control; it is NOT an identity
+// bridge for 3335.1; no strict numeric-token claim and no value or translation is made.
+// Writes source-route, files, metadata, shared-prefix, witness, and decisions CSVs plus a
+// summary JSON to reports/.
+
 const root = process.cwd();
 const metadataPath = path.join(root, "data", "open_prototype", "lipi", "metadata_filtered.csv");
 const witnessesPath = path.join(root, "data", "sign_crosswalk", "artifact_witnesses.csv");

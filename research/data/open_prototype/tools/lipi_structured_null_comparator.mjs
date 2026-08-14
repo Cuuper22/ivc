@@ -1,3 +1,27 @@
+// Structured-null stress test for the corpus's "language-like" statistics.
+// Numbers like masked-sign prediction accuracy or preferred reading order are
+// often cited as evidence the script encodes language. This experiment asks:
+// can a deliberately nonlinguistic generator — a code with slots and
+// dependencies but no grammar — match those same numbers?
+//
+// The script reads lipi_scope_rows.csv (numeric-clean rows), measures the
+// observed corpus on three metric groups: duplicate structure (unique
+// sequences, duplicate groups and shares), stored-vs-reversed order (does a
+// leave-one-out bigram model score each sequence higher as stored than
+// reversed?), and masked-token prediction (top-1/top-5 accuracy for
+// frequency, position, length-position, and bidirectional-bigram models).
+//
+// It then builds four duplicate-matched synthetic corpora — independent
+// position slots, an "administrative register" code, an "emblem formula"
+// code, and a mixed code — from the observed token pools, 5 seeded iterations
+// each (IVC_STRUCTURED_NULL_ITERATIONS overrides), and scores them
+// identically.
+//
+// Outputs: lipi_structured_null_iterations.csv, _summary.csv, and
+// _summary.json. The logic is one-directional: if a null matches a metric,
+// that metric is weakened as decipherment evidence; if it fails to match,
+// that still proves nothing about meaning.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

@@ -2,6 +2,10 @@
 
 Date: 2026-05-25
 
+This note records a route: a traceable path from our internal row label to a published image of the actual object. Until such a path exists, an object is known to us only through someone else's clean redrawing of its signs, and a redrawing cannot be cross-examined.
+
+An alias is another catalogue's name for the same object. The work here is finding `M-2104`'s aliases and following them to a photograph.
+
 ## Question
 
 Can `M-2104` be moved beyond Parpola 2019 standardized Fig. 1 to a public raw/source-grade image route?
@@ -30,6 +34,8 @@ It does **not** accept the mapping. The Harappa image is a limited-resolution pu
 
 ## Evidence
 
+Every path checked, including the ones that led nowhere. Dead routes are recorded so nobody spends the same day twice.
+
 | Route | Status | Evidence | Use |
 | --- | --- | --- | --- |
 | Local `lipi_scope_rows.csv` | Positive | `M-2104`, Mohenjo-daro, `ROD`, Ivory, `R/L`, `+151-097-700-034+` | Local target string only. |
@@ -52,7 +58,7 @@ Addendum with exact Marshall alias: No. 532 / Pl. CXIV / VS 875
 
 ## Research Consequence
 
-The live falsification test changes:
+The live falsification test — the specific observation that would prove the hypothesis wrong — changes. A gate is the test a claim must pass before it can advance:
 
 ```text
 old gate:
@@ -68,6 +74,8 @@ If no. 532 does not visually show the expected three-stroke U/pot-side cluster c
 If it does, the result is still only a stronger visual hypothesis until a higher-resolution source image confirms the stroke boundaries.
 
 ## Claim Status
+
+What this note adds to the project's accepted set. Nothing:
 
 ```text
 accepted translations: 0

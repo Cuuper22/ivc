@@ -2,6 +2,10 @@
 
 Date: 2026-05-25
 
+This note is a source probe: a bounded check on whether a published source really shows the object we think it shows, at a quality we can work from.
+
+Seal `M-315` matters because of a scarcity. Across our filtered corpus it is the single row carrying the sign sequence `390-034-002`. That makes it valuable and fragile at once. A whole pattern resting on one row is a pattern resting on one transcription decision, so before it can carry any weight the object itself has to be visible in print.
+
 Question:
 
 ```text
@@ -72,7 +76,7 @@ Downloaded and cropped:
 - Lower second-sign target: `tmp/m315_cisi1/derived/m315_lower_impression_second_034_region.png`
 - Data-row crop: `tmp/m315_cisi1/derived/m315_data_page_row_context.png`
 
-Important mechanical note: Windows is case-insensitive, so early `M315_A` and `M315_a` crop names collided. The final stored evidence uses `upper_face` and `lower_impression` names to avoid overwriting the two witnesses.
+Important mechanical note: Windows is case-insensitive, so early `M315_A` and `M315_a` crop names collided. The final stored evidence uses `upper_face` and `lower_impression` names to avoid overwriting the two witnesses — the two separate images of the object, each an independent piece of evidence.
 
 ## Source Route
 
@@ -87,6 +91,8 @@ Important mechanical note: Windows is case-insensitive, so early `M315_A` and `M
 The Kenoyer/Meadow route is now corroborated as a route, not upgraded into a reading. It pointed correctly to CISI 1 p. 78, but it still supplies typological context rather than sign segmentation.
 
 ## Slot Contrast
+
+A slot is one position in the sign row. Holding the neighbours fixed and listing everything that ever appears in the open slot shows how unusual our row really is.
 
 The targeted local contrast set is stored in `data/open_prototype/reports/lipi_034_m315_390_slot_contrasts.csv`.
 
@@ -115,6 +121,8 @@ So M-315 is a high-value singleton: it is the only local `390-034-002` row. The 
 
 ## Adjudication
 
+The ruling: what this probe lets the project carry forward, and what it does not.
+
 Accepted:
 
 - CISI 1 p. 78 is source-visible and labels `M-315 A` and `M-315 a`.
@@ -123,7 +131,7 @@ Accepted:
 - The visible M-315 image has six graphic units and is testable against the local six-token row.
 - M-315 is the only `390-034-002` row in the current filtered local layer.
 
-Rejected or quarantined:
+Rejected or quarantined — quarantine means held out of downstream use until the problem is fixed:
 
 - No numeric sign mapping is accepted from the image alone.
 - No value, function, phonetic reading, language identity, or translation is accepted.
@@ -132,6 +140,8 @@ Rejected or quarantined:
 - No-animal context is retrieval/context evidence only, not sign meaning.
 
 ## Next Gate
+
+The gate is the next test this line of work must pass before it advances. It is a list of things to ask a source for, not a list of conclusions.
 
 The next decisive source check is not broad scraping. It is narrow:
 

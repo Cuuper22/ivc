@@ -2,9 +2,11 @@
 
 Date: 2026-05-26
 
+This note is a gate — a checkpoint the evidence must pass before it can be used — and it turns down an object the project badly wants. `M-1912` is the ideal control: same site, same material, same three-sign frame, different final sign. Everything about its design is right. The only problem is that no raw source image of it has been inspected, and wanting a control is not the same as having one.
+
 ## Question
 
-Can `M-1912 +520-220-003+` be admitted as a source-grade same-site terminal control for the `M-1206 +520-220-034+` branch?
+Can `M-1912 +520-220-003+` be admitted as a source-grade same-site terminal control — an object from the same site used as a comparison case — for the `M-1206 +520-220-034+` branch?
 
 ## Decision
 
@@ -60,9 +62,9 @@ Still live:
 
 What changes:
 
-- `M-37` is now clean same-site `415` control after recut.
+- `M-37` is now clean same-site `415` control after recut — a fresh, tighter crop taken from the source page.
 - `M-1912` remains the missing same-site `003` control.
-- No blind component packet may use `M-1912` as a clean witness until a source-grade crop exists.
+- No blind component packet — a bundle of label-stripped crops sorted without the reviewer knowing which is which — may use `M-1912` as a clean witness until a source-grade crop exists.
 - The next source action is precise: inspect `M-1912` in CISI 3.1 or obtain an equivalent raw object/photo/source-transcription record.
 
 ## Source Route To Close

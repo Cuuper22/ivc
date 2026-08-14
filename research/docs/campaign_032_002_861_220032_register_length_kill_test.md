@@ -2,11 +2,15 @@
 
 Date: 2026-05-29
 
+This note is a kill test: an attempt to destroy our own finding before believing it. Seven rows begin with the same signs `220-032` and continue `002-861`, yet they end differently — some stop there, some add one sign, one adds two. That looks like a choice. Before calling it a choice, this note checks whether five duller explanations account for it just as well. Four fail, and one survives as a live threat.
+
 ## Question
 
-Does broad register, fine icon label, total line length, prefix length, or measured terminal space explain the `220-032` post-`861` split before we treat it as a grammar object?
+Does broad register (the coarse class of the object: its site, type, and shape), fine icon label (which animal is carved on it), total line length, prefix length, or measured terminal space (how much blank room was left at the end of the line) explain the `220-032` post-`861` split before we treat it as a grammar object?
 
 ## Packet
+
+A "packet" here is the bundle of rows and images assembled for one test. "Source-ready" means the row has an inspectable published photograph.
 
 - Rows tested: `7`
 - Source-ready rows: `5`
@@ -39,7 +43,7 @@ Does broad register, fine icon label, total line length, prefix length, or measu
 
 The `220-032` split survives broad-register and total-length attacks in the current evidence layer: Mohenjo seal-square rows can be bare, simple-tailed, or compound-tailed, and total text length is not a clean selector.
 
-The kill test is not fully closed. Fine icon labels are singletons, and comparable terminal-space metrics do not yet exist for the bare controls. The next recut should quantify empty terminal margin and line occupancy for `H-444/M-723/M-1044` the same way `M-91/M-240` were quantified.
+The kill test is not fully closed. Fine icon labels are singletons, and comparable terminal-space metrics do not yet exist for the bare controls — the rows that stop after `861`, which serve as the comparison baseline. A "recut" is a fresh pass over the same source images with sharper measurements. The next recut should quantify empty terminal margin and line occupancy for `H-444/M-723/M-1044` the same way `M-91/M-240` were quantified.
 
 Current status: `220032_split_survives_broad_register_and_length_attacks_terminal_space_unclosed`.
 

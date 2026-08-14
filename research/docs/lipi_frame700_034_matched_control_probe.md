@@ -4,7 +4,7 @@ Date: 2026-05-25
 
 ## Question
 
-Can the live `034` rows be tested against close `033` and `032` controls under current object metadata, or is the residue still only object-format confounding?
+This note asks whether we even have the objects needed to run a fair test. FRAME700 is the project's label for short inscription rows built on sign `700`, such as `+700-034+`; the `034` work asks whether the sign codes `032`, `033`, and `034` are separate choices in the same slot. A fair test needs controls — comparison objects carrying `033` or `032` that match the `034` object in shape, size, site, and material, so the sign code is close to the only thing that differs. Without them, the `034` residue — the leftover pattern that has survived the controls run so far — could just be an object-format effect: `034` sitting on a different kind of object. The question: can the live `034` rows be tested against close `033` and `032` controls under current object metadata, or is the residue still only object-format confounding?
 
 This is not a translation experiment. It is a source-prioritization experiment:
 

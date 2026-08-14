@@ -1,6 +1,19 @@
 import fs from "node:fs";
 import path from "node:path";
 
+// Which artifact is worth chasing next? Several 002-390 frames are blocked below "strict
+// source-visible" only because their photographs have not been bound yet. This script runs
+// eleven what-if scenarios: it reads the 002-390 frames report CSV from reports/, assigns
+// each frame its current source tier, then hypothetically promotes named blockers (H-1993,
+// Sktd-1, 3335.1, M-1825, Dholavira 4237.1, M-38, H-773, alone and in combinations) to
+// strict and recomputes what each upgrade would unlock: a strict matched-predecessor branch
+// split, repeated strict 705 terminal witnesses, a strict non-125 continuing exception, or
+// an expanded 125 continuation set. The headline findings: binding 3335.1 is the only
+// single-object upgrade that unlocks a matched gate (pairing with already-strict M-70 on
+// the 032 lane), and the 004 lane needs both H-1993 and Sktd-1. Writes scenario summaries,
+// strict predecessor groups, branch summaries, and decisions as CSVs plus a summary JSON in
+// reports/.
+
 const root = process.cwd();
 const reportsDir = path.join(root, "data", "open_prototype", "reports");
 const framesPath = path.join(reportsDir, "campaign_032_002_861_002390x_branch_sign_ecology_20260531_002390_frames.csv");

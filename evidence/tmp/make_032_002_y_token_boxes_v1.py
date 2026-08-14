@@ -1,3 +1,15 @@
+"""Draws candidate token boxes on stored 032-002-Y signband crops.
+
+This script carries an inline table of eight witness rows (M-722, H-444, M-49, M-21,
+M-375, H-597, C-10, C-60), each with a stored source crop, its catalog text, and
+hand-placed pixel boxes for the 032/002/Y tail signs. It opens each crop with PIL,
+draws the colored boxes and labels plus a title bar, and saves the overlays and a
+contact sheet under tmp/032_002_y_token_box_scaffold_v1. It also writes a per-box CSV
+report and a summary JSON under data/open_prototype/reports. The output is a scaffold
+for human token adjudication: every row is a candidate with its own status and
+confidence, not an accepted token identity.
+"""
+
 from PIL import Image, ImageDraw, ImageFont
 from pathlib import Path
 import csv, json

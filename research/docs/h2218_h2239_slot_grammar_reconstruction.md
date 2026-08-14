@@ -2,11 +2,13 @@
 
 Date: 2026-05-25
 
+This note is a reconstruction experiment. It measures how formulaic the H-2218 through H-2239 tablet series is by hiding one side of each tablet at a time and asking whether the other two sides predict what the hidden side says. If the series behaves like a fixed three-slot formula, the hidden side should be recoverable.
+
 ## Question
 
 If one side of each H-series tablet is hidden, can the other two sides reconstruct the missing side role and exact side text?
 
-This is a structural experiment on the current catalog-side layer. It is not a source-image result.
+This is a structural experiment on the current catalog-side layer — the recorded transcriptions, not verified images. It is not a source-image result.
 
 ## Inputs
 
@@ -20,7 +22,7 @@ This is a structural experiment on the current catalog-side layer. It is not a s
 
 For each of the 22 H-series objects, each side was hidden once, giving 66 hidden-side rows.
 
-The role-family model used only the two visible side roles and the known three-role inventory:
+The role-family model used only the two visible side roles and the known three-role inventory (role families are bookkeeping labels for the three kinds of side text in this series):
 
 ```text
 role_861_003
@@ -64,7 +66,7 @@ That is the point: the current catalog-side layer does not make the variants dis
 
 ## Downgrade And Kill Boundaries
 
-Locke's warning matters here. This experiment can look fancier than it is if we let it.
+Locke — the team's adversarial reviewer — warns that this experiment can look fancier than it is if we let it. The warning matters here.
 
 This result is downgraded if:
 

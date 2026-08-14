@@ -6,7 +6,7 @@ Status: `h773_lipi_image_map_derivative_no_strict_upgrade`.
 
 ## Question
 
-The cloned Yajnadevam/Lipi repository contains `public/seal_images/H-773_a.jpg` and `H-773_b.jpg`. Because H-773 is the best in-frame continuing non-`125` pressure row, this route needed a guard check before treating the public CISI crop as exhausted.
+The cloned Yajnadevam/Lipi repository contains `public/seal_images/H-773_a.jpg` and `H-773_b.jpg`. H-773 is the best in-frame continuing non-`125` pressure row, so before we treat the public CISI crop as exhausted, these repo images needed a guard check: do they add anything?
 
 ## Findings
 
@@ -28,7 +28,7 @@ The existing source-page-derived CISI crop for H-773 A is larger (`820x260`) and
 
 ## Decision
 
-The Lipi image-map route confirms that H-773 has derivative A/B images in the repo, but it does not upgrade strictness. The images are lower resolution than the existing CISI crop and remain corpus-mediated; they do not independently prove `530`, `741`, or the `530 -> 741` continuation boundary.
+The answer is no. The Lipi image-map route confirms that H-773 has derivative A/B images in the repo, but it does not upgrade strictness. The images are lower resolution than the existing CISI crop and remain corpus-mediated; they do not independently prove `530`, `741`, or the `530 -> 741` continuation boundary.
 
 Current status: `h773_lipi_image_map_derivative_no_strict_upgrade`.
 

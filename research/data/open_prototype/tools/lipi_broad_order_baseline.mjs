@@ -1,3 +1,19 @@
+// This is the broad structural baseline for the Indus corpus itself: a first
+// wide sweep over lipi_scope_rows.csv measuring how much internal order the
+// inscriptions carry, before any comparator or null-model work. For the clean
+// numeric rows (plus a direction-clean sensitivity scope) it computes, per
+// group — the whole corpus and every type, site, and region with at least 50
+// rows — three things: duplicate-sequence statistics, a stored-vs-reversed
+// direction score using a leave-one-out smoothed bigram model, and masked-
+// sign prediction under four models (frequency, position, length-position,
+// bidirectional bigram). It then repeats the masked test as a true holdout:
+// train on all other types/sites/regions, test on the held-out group. Every
+// analysis runs three times with increasing strictness: raw rows; exact
+// duplicate sequences collapsed to one representative; and leakage-
+// controlled, where any training sequence identical to a held-out test
+// sequence is removed. Writes fifteen sequence/masked/holdout/group CSVs and
+// three JSON summaries. A claim-free structural scout — none of these
+// numbers are sign values, sounds, or translations.
 import fs from 'node:fs';
 import path from 'node:path';
 

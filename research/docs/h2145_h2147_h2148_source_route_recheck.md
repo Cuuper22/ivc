@@ -2,6 +2,12 @@
 
 Date: 2026-05-26
 
+## What This Note Is
+
+This note rechecks whether we can actually see three Harappa tablets: H-2145, H-2147, and H-2148. Parpola's published work points at their reverse sides, which makes them attractive targets. Attraction is not evidence.
+
+Three terms carry the note. A route is a concrete path from one of our catalog rows to a published photograph of the same object; route-dark means no such path has been found. Prior-work pressure is the pull exerted by another scholar's claim about an object — a reason to look, never a substitute for looking. Source-grade means the evidence comes from an inspected published image, not from a citation.
+
 ## Question
 
 Can the new Parpola reverse-side targets H-2145, H-2147, and H-2148 move from prior-work pressure into source-grade side/sign evidence?
@@ -16,7 +22,7 @@ Partly. The original pass improved only H-2147; the later H-2148 pass adds a sec
 - H-2145 remains route-dark in the checked local/public layer.
 - H-2148 now has a public visual route through Kenoyer 2005 Figure 14.1 -> `H2001-5142`; its one-sign and three-sign panels match local rows `481.2 +110+` and `481.1 +520-220-415+` by sign count.
 
-Accepted decipherment claims remain unchanged: no Parpola/local crosswalk, no local `110` identification, no `034=415`, no sign value, and no translation.
+Accepted decipherment claims remain unchanged: no Parpola/local crosswalk — a crosswalk being a verified mapping between two sign-numbering systems, here Parpola's and our own — no local `110` identification, no `034=415`, no sign value, and no translation.
 
 ## Local Rows And Hooks
 

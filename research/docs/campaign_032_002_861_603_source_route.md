@@ -2,9 +2,11 @@
 
 Date: 2026-05-29
 
+This note is an inventory of what we can actually look at. Seven rows contain the sign `603`, and a claim about `603` will eventually have to be settled by comparing their photographs. Before doing that comparison, this pass checks each row for a source route — a chain of pointers from our database row to a real published image — and sorts them into ready and not ready. The two sides come out badly matched, which is the finding.
+
 ## Question
 
-The `603` mobility campaign found a bridge profile. This source-route pass asks which `603` rows are actually ready for source-layout comparison.
+The `603` mobility campaign found a bridge profile: `603` appears in two unrelated settings rather than one. This source-route pass asks which `603` rows are actually ready for source-layout comparison.
 
 ```text
 post-861 side:
@@ -15,6 +17,8 @@ independent side:
 ```
 
 ## Post-`861` Source State
+
+"Source-visible" means the row can be checked against an inspectable published photograph; a "signband" crop is the strip of the object carrying the inscription; a "token-attachment overlay" is a marked-up image showing which mark was taken to be which sign.
 
 | row | route status | source |
 |---|---|---|
@@ -91,7 +95,7 @@ Do not claim a `603` value from the mobility result. First:
 ```text
 1. use the H95-2672/H-1846 Figure 11.11 crop only as source-visible object evidence until side/sign mapping is checked
 2. locate Vats Plate XCIV no. 346 for H-1138 and the similar #7537 route for H-1137
-3. decide whether H-1137/H-1138/H-1846 are one copied tablet-family evidence unit or multiple source units
+3. decide whether H-1137/H-1138/H-1846 are one copied tablet-family evidence unit, weighed once, or multiple source units
 4. only then compare the graphic and layout status of 603 across post-861 and independent contexts
 ```
 

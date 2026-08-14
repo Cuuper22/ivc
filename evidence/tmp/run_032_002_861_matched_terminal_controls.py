@@ -1,3 +1,16 @@
+"""Find matched bare-terminal controls for six focus inscriptions with tails.
+
+The focus rows (FOCUS_CISI) each carry a tail after 002-861. To know whether a
+tail means anything, we need controls: inscriptions that end bare at 861 but
+otherwise look the same. This script reads the suffix-split rows CSV and, for
+each focus row, pulls every match at four levels of strictness — same
+site/type/symbol, that plus the last prefix sign, same last-two prefix signs,
+and same last-one prefix sign. It counts how many matches are bare terminals,
+other focus tails, or other tails, and does the same per tail family (533 717,
+603, 255 416). It writes a detail CSV, a per-focus summary CSV, a per-family
+CSV, and a JSON summary with hand-picked key results.
+"""
+
 from __future__ import annotations
 
 import csv

@@ -1,3 +1,15 @@
+"""Declares which 002-390-X witnesses are ready for source-token boundary judgment.
+
+This script reads the source-normalized contrast rows and source-crop tables, and
+carries an inline readiness table: for each witness it records which crops exist, which
+catalog window is at stake, a readiness tier, the known risks, and — critically — an
+explicit demotion trigger stating what visible-band outcome would demote 125. Writing
+the demotion triggers down before boxing is what keeps the later adjudication honest.
+It writes readiness CSVs, a summary JSON, and a docs/ markdown note under
+tmp/002390x_token_boundary_readiness and the reports directory. No boundary is judged
+here and no value is accepted; this pass only defines the test.
+"""
+
 from __future__ import annotations
 
 import csv

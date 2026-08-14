@@ -1,3 +1,13 @@
+"""Register test for 533-717: is the unit conditioned on a specific register?
+
+A register, here, is a recurring combination of object type, layout, and iconography —
+the "document format" a row appears in. This script reads the filtered corpus metadata
+and checks how the 533-717 rows distribute across registers, treating M-376, M-391, and
+M-1273 as the source-visible rows. It writes row and scope CSVs plus a summary JSON.
+The recorded decision promotes 533-717 to a conditional register candidate: live as a
+register-conditioned structural object, with no value or reading accepted.
+"""
+
 from __future__ import annotations
 
 import csv

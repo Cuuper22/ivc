@@ -1,3 +1,16 @@
+// Adversarial check on the 002-390 branch story. The working hypothesis is that
+// the sign pair 002-390 conditions what comes next (the "branch" sign). The
+// adversary's counter: maybe the behavior belongs to 390 plus its branch alone,
+// and the preceding 002 is irrelevant. To test that, this script scans the local
+// Lipi metadata for every occurrence of 390 followed by anything, records the
+// sign before 390, the branch sign after it, the tail, and whether the sequence
+// ends there, then compares terminal/continuing rates for each branch inside
+// versus outside the 002-390 frame — focusing on branches 125, 095, 692, 705,
+// 530, and 590. Writes the frame rows, a per-branch summary, the focus subset,
+// a decisions CSV, and a summary JSON to data/open_prototype/reports/. The
+// recorded outcome: 002 conditioning stays a live clue (390-125 behaves
+// differently inside the frame), but samples are tiny and no value is accepted.
+
 import fs from "node:fs";
 import path from "node:path";
 

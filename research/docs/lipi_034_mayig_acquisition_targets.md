@@ -2,6 +2,10 @@
 
 Date: 2026-05-25
 
+This note is a shopping list. An earlier check found that the sign we call `034` appears nowhere in the outside dataset we compare against, so there is no way to line our label up with anyone else's. That is a gap, and a gap you can name is a gap you can go and fill.
+
+Mayig is a public corpus of Indus inscriptions we mirror locally. A crosswalk is a checked link between our sign codes and another catalogue's. A packet is a self-contained bundle of evidence and rulings; this one turns the gap into an ordered list of objects to obtain, ranked P0 for most urgent down to P3.
+
 ## Question
 
 Which exact `034` rows should be acquired or crosswalked first to resolve the current Mayig/Parpola coverage gap?
@@ -33,6 +37,8 @@ data/open_prototype/reports/lipi_034_mayig_acquisition_summary.json
 ```
 
 ## Upstream Mayig State
+
+Before blaming our own copy for the gap, check the source. Pinned means our mirror is fixed to one exact published version, recorded by commit hash.
 
 The local Mayig index is pinned to:
 
@@ -81,6 +87,8 @@ That row is P2 because it cannot be directly queried as an M-numbered Mayig arti
 
 ## H-Series Control Lane
 
+A lane is a parallel track of work with its own purpose. This one is not about filling the coverage gap at all; it answers a different question and is kept separate so the two do not get confused. A control is a comparison object used to test whether an odd case is really odd.
+
 The H-series `+700-034+` rows remain important, but they are not the first Mayig acquisition targets. They are source-image controls for the `H-2238 +700-033+` singleton:
 
 ```text
@@ -107,9 +115,11 @@ It is one of two acquisition moves:
 1. Get fuller Mayig/Parpola data for `M-2104`, `M-315`, `M-1206`, `M-685`, `M-1584`, and `M-1963`.
 2. Get source images and side-label evidence for the H-series `+700-034+` controls and the paired `H-2238 +700-033+` singleton.
 
-Until one of those happens, `034` stays crosswalk-dark.
+Until one of those happens, `034` stays crosswalk-dark — invisible from the outside catalogue's side: no row links the local `034` code to the Mayig/Parpola layer.
 
 ## Boundary
+
+The hard line between planning work and knowledge claims. Naming targets to acquire adds nothing to what the project knows.
 
 Accepted decipherment claims:
 

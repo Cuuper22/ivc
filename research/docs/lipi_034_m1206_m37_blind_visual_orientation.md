@@ -4,9 +4,9 @@ Date: 2026-05-25
 
 ## Question
 
-Now that `M-37` and `M-1206` are directly visible in public CISI pages, do the source images support a clean `520-220-X` terminal-substitution frame?
+This note records a blind visual check of two seal photographs. `M-37` and `M-1206` are two seals whose photographs are now directly visible in public pages of CISI, the Corpus of Indus Seals and Inscriptions — the standard photographic corpus for these objects. The question: do the source images support a clean `520-220-X` terminal-substitution frame? Here `520`, `220`, and `X` are local numeric sign labels — transcription codes, not readings. In that frame, the two seals would share the `520-220` prefix and differ only in the final, terminal sign — the last sign in the inscription.
 
-This probe deliberately avoids numeric sign labels while classifying the visible three-sign face inscriptions.
+The probe is blind in a specific sense: we classify the visible three-sign face inscriptions by shape alone, and we deliberately avoid the numeric sign labels while doing it.
 
 ## Inputs
 
@@ -15,7 +15,7 @@ Source pages:
 - `M-37`: CISI Vol. 1 India, IA leaf `n54`, printed p. 19, labels `M-37 A/a`.
 - `M-1206`: CISI Vol. 2 Pakistan, IA leaf `n181`, printed p. 147, labels `M-1206 A+E`, `M-1206 A`, `M-1206 a`, and long side `M-1206 e(1)`.
 
-Display-coordinate crops made with .NET image cropping are stored under:
+We cut crops in display coordinates with .NET image cropping and stored them under:
 
 ```text
 tmp/m1206_terminal_triad_source_recheck/derived/dotnet_m37_bottom_left_A.png
@@ -49,7 +49,7 @@ Source image order, left-to-right in the displayed page crop:
 
 ## Adjudication
 
-The source images do support this cautious claim:
+Adjudication is the judgment we make after the blind classification is done and the labels come back into view. The source images do support this cautious claim:
 
 ```text
 M-37 and M-1206 share a three-sign face pattern at the broad visual class level: R-L-T / T-L-R across mirrored views.
@@ -87,12 +87,12 @@ No sign value follows from either explanation.
 
 ## Next Gate
 
-Do not generalize from this two-object comparison. The next useful test is:
+A gate is a decision checkpoint: a test the evidence must pass before any claim moves forward. Do not generalize from this two-object comparison. The next useful test is:
 
 1. Pull more `520-220-415` source-visible examples and see whether the M-37 rake/comb variant is stable.
 2. Pull any additional `520-220-034` source-visible examples if public sources expose them.
 3. Ask blind reviewers to sort the outer `R` and `T` signs into fine-form bins before seeing local numeric labels.
-4. Only then decide whether `034` and `415` behave like allographs, subtypes, or separate signs.
+4. Only then decide whether `034` and `415` behave like allographs — variant written forms of one and the same sign — or subtypes, or separate signs.
 
 Accepted:
 

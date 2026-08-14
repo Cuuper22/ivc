@@ -1,3 +1,14 @@
+// Screens whether signs 095 and 845 (and a few related units) are genuine
+// markers of the copper-tablet register, or just travel with sign 407, which
+// already marks it. The label is material=Copper and type=TAB:C in the
+// filtered corpus metadata (complete texts, collapsed to one row per exact
+// text). For each target unit (unigrams like 095, bigrams like 061-845) we
+// compute its support inside the labeled rows and a right-tail Fisher exact
+// p-value, then rerun the same score after deleting every row that contains
+// 407 — a real subregister sign should keep some support. The null: 500 label
+// shuffles, scoring both the fixed unit and the maxstat "any unit of the same
+// kind does as well" version. Writes one JSON report with per-unit decisions
+// (candidate / candidate_but_407_dependent / killed_or_passenger).
 import fs from 'node:fs';
 import path from 'node:path';
 

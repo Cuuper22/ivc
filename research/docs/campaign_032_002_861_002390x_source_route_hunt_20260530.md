@@ -2,6 +2,8 @@
 
 Date: 2026-05-30
 
+This note is a hunt log. Three objects matter to the `002-390-X` branch question but are "source-dark" — we have catalogue transcriptions for them and nothing we can look at. This pass hunts for a route from each object to a real published image, and records how far each route got.
+
 ## Question
 
 Can the missing matched alternatives be moved from source-dark into usable source evidence?
@@ -27,7 +29,7 @@ Web route found: a public supplementary PDF route that contains the H-1993 / ICI
 
 Public URL checked: `https://www.harappa.com/sites/default/files/pdf/43539_2023_102_MOESM2_ESM.pdf`
 
-Extra check on 2026-05-30: the same public supplement explicitly places `ICIT 744 (H-1993)` in the relevant sign-string neighborhood. That is prior-work transcription pressure, not source-image evidence. A shell download attempt for the PDF returned `403 Forbidden`, so the usable local state is still the web-view route plus the local Lipi row.
+Extra check on 2026-05-30: the same public supplement explicitly places `ICIT 744 (H-1993)` in the relevant sign-string neighborhood. That is prior-work transcription pressure — another team's reading agrees with ours — not source-image evidence. A shell download attempt for the PDF returned `403 Forbidden`, so the usable local state is still the web-view route plus the local Lipi row.
 
 Decision: H-1993 remains unusable for strict source-normalized 095 until the actual Figure 17.07 image is obtained.
 
@@ -45,7 +47,7 @@ Local secondary route found:
 - `C:\Users\Acer\OneDrive\Documents\ivc\tmp\m1206_bhaskar\S1-IndusZoomorphicIconCatalogue.txt`
 - line 1804 lists `M-1825` as an F2 unicorn object.
 
-This confirms object/icon-class existence in the secondary catalogue, not the inscription or sign band.
+This confirms the object exists and its icon class (the animal shown on the seal) in the secondary catalogue. It says nothing about the inscription or sign band.
 
 Decision: M-1825 remains source-dark for `705` branch inference.
 
@@ -66,14 +68,14 @@ Downloaded source:
 - whole candidate crop: `C:\Users\Acer\OneDrive\Documents\ivc\tmp\source_route_hunt_20260530\dholavira_page18_item10_whole.png`
 - sign-band candidate crop: `C:\Users\Acer\OneDrive\Documents\ivc\tmp\source_route_hunt_20260530\dholavira_page18_item10_signband.png`
 
-Bisht page 18 item 10 visually matches the reverse source order expected from local `+151-032-388-002-390-705+`: a terminal complex at the left, tree-like `390`, short-stroke `002`, crossed/branch sign, short-stroke sign, and final/start sign at the right under R/L policy.
+Bisht page 18 item 10 visually matches the reverse source order expected from local `+151-032-388-002-390-705+`: a terminal complex at the left, tree-like `390`, short-stroke `002`, crossed/branch sign, short-stroke sign, and final/start sign at the right under R/L policy (the convention that the inscription reads right to left).
 
 Additional public OCR route:
 
 - `https://pdfcoffee.com/excavations-at-dholavifra-1989-2005-rs-bisht-2015-pdf-free.html`
 - The OCR around the seal catalogue table exposes the `ZA-12:2` locus and the exact dimension cluster `27.62 x (ext) 21.31 x 7.11 - 11.17 ext`, matching local Lipi `4237.1`.
 
-Decision: Dholavira `4237.1` is upgraded to `source_image_candidate_unbound_metadata_cluster_found`, not strict evidence. The visual match is alive and the metadata route is stronger, but page 18 item 10 is still not explicitly bound to Lipi row `4237.1` or the matching dimensions by a report table/plate index.
+Decision: Dholavira `4237.1` is upgraded to `source_image_candidate_unbound_metadata_cluster_found`, not strict evidence. The visual match is alive and the metadata route is stronger, but page 18 item 10 is still not explicitly bound to Lipi row `4237.1` or the matching dimensions by a report table/plate index — no printed table yet says "this photograph is that object."
 
 ### Dholavira ICIT 4348 guard
 

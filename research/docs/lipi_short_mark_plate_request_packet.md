@@ -4,7 +4,9 @@ Date: 2026-05-24
 
 ## Purpose
 
-This packet turns the [Lipi short-mark side-relation validation sheet](lipi_short_mark_side_relation_validation_sheet.md) into a first manual plate request.
+This note is a request form. It turns the [Lipi short-mark side-relation validation sheet](lipi_short_mark_side_relation_validation_sheet.md) into a first manual plate request — a concrete list of artifacts whose published photographs or plates someone must inspect by eye.
+
+Why it exists: the statistics so far come from catalog data alone. Before the project can trust the apparent contrast between signs `033` and `034` (two catalog sign codes, not readings), someone has to look at real images of the objects.
 
 The packet is deliberately narrow:
 
@@ -12,7 +14,7 @@ The packet is deliberately narrow:
 17 artifacts where the corrected 033/034 catalog-side relation contrast overlaps the raw +400-740-176+ longer-context hint.
 ```
 
-It is designed for source/image inspection. It does not ask anyone to translate the signs.
+In plain terms: these are the artifacts where the statistically corrected `033`/`034` side-relation contrast and the raw `+400-740-176+` sign-sequence hint both show up, so checking them settles the most at once. It is designed for source/image inspection. It does not ask anyone to translate the signs.
 
 ## Local Artifacts
 
@@ -30,6 +32,8 @@ data/open_prototype/reports/lipi_short_mark_side_relation_validation_sheet.csv
 
 ## Packet Scope
 
+`TAB:B` and `TAB:I` are Harappa tablet type codes from the catalog.
+
 ```text
 packet_artifacts: 17
 packet_rows_from_validation_sheet: 18
@@ -44,7 +48,7 @@ H-355 appears once as an artifact in this packet but covers two matching source 
 
 ## Artifact List
 
-`tier_1_033_after_with_400_740_176`:
+`tier_1_033_after_with_400_740_176` — artifacts where `033` appears after the longer text carrying `+400-740-176+`:
 
 ```text
 H-233
@@ -64,7 +68,7 @@ H-1346
 H-1347
 ```
 
-`tier_1_034_before_with_400_740_176`:
+`tier_1_034_before_with_400_740_176` — artifacts where `034` appears before that longer text:
 
 ```text
 H-933
@@ -91,7 +95,7 @@ validation_outcome
 notes
 ```
 
-These fields are blank because the current planning layer cannot answer them. They must be filled only from images, plates, catalog notes, or direct source records.
+These fields are blank on purpose. The current planning layer — the catalog-derived data we compute from — cannot answer them. They must be filled only from images, plates, catalog notes, or direct source records.
 
 ## Allowed Outcomes
 

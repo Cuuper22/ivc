@@ -28,7 +28,7 @@ The local corpus order places `3335.1` between:
 - `3334.1 / M-939`, text `+527-550+`
 - `3336.1 / M-941`, text `+000-642-240-031-002-861+`
 
-That made `M-940` a tempting inferred identity. The inference fails.
+Sitting between `M-939` and `M-941`, the row made `M-940` a tempting inferred identity. The inference fails.
 
 Local metadata already has a separate `M-940` row:
 
@@ -68,7 +68,7 @@ Local source-route tables also keep the row blocked:
 - `campaign_002_y_partition_source_queue.csv`: `source_hint_only`
 - `campaign_032_002_861_002390x_branch_sign_ecology_20260531_exceptions.csv`: raw continuing non-`125` exception only
 
-The `RAF` tag does not solve identity. In `metadata_filtered.csv`, `RAF` occurs in 57 rows, and only three `RAF` rows lack a CISI object id: `3335.1` plus two Dholavira rows. That makes `RAF` a source-family/context clue, not an object bridge.
+The `RAF` tag does not solve identity either. In `metadata_filtered.csv`, `RAF` occurs in 57 rows, and only three `RAF` rows lack a CISI object id: `3335.1` plus two Dholavira rows. So `RAF` is a source-family/context clue, not an object bridge.
 
 ## Decision
 
@@ -87,7 +87,7 @@ Use `3335.1` as:
 
 ## Consequence for `002-390-X`
 
-The local adversarial pressure remains: `3335.1` is a continuing non-`125` branch in the 15-row matrix. But the source-normalized pressure does not increase. For strict or source-bound model testing, `3335.1` must stay out until a real object/source bridge is found.
+The local adversarial pressure remains: `3335.1` is a continuing non-`125` branch in the 15-row matrix. But the source-normalized pressure does not increase, because nothing new binds the row to a real object. For strict or source-bound model testing, `3335.1` must stay out until a real object/source bridge is found.
 
 This leaves H-773 as the only currently image-panel-bound continuing non-`125` pressure row, and even H-773 remains boxed-compatible rather than token-strict. The positive model cannot use `3335.1` to prove a branch-conditioned exception, and the adversarial model cannot use it as a source-bound catalog artifact either. It remains live, but unbound.
 

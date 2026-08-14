@@ -2,7 +2,9 @@
 
 Date: 2026-05-30
 
-This audit tests a narrower Priority A route than the earlier site-overlap joins: whether the Gadd Ur corpus contains an object-level micro-bilingual that can tie a local external Indus row to a readable cuneiform name, title, or Meluhha-tagged formula.
+This note records an audit hunting for a bilingual. A bilingual is a single object carrying both Indus signs and a readable script; even a very short one — a micro-bilingual, a name or a title — would be the first real foothold into the script. Indus-inscribed seals turn up at Ur in Mesopotamia, where cuneiform was in daily use, so Ur is the natural place to look.
+
+The audit tests a narrower Priority A route than the earlier site-overlap joins. A route is a concrete path from one of our catalog rows to published evidence; site overlap, the weaker earlier approach, merely noted that Indus objects and Meluhha texts came from the same place. Here the question is object-level: does the Gadd Ur corpus contain a micro-bilingual that ties a local external Indus row to a readable cuneiform name, title, or Meluhha-tagged formula on the same object?
 
 It does not. It does, however, improve the object identity layer for two local Ur rows.
 
@@ -58,7 +60,7 @@ The second verified route is `3899.1 / U8685`, a circular Ur row with text `+000
 
 ## Micro-Bilingual Gate
 
-The modeled Gadd objects split the wrong way:
+A gate is a pass/fail test a result must clear before it can be promoted. The modeled Gadd objects split the wrong way:
 
 - BM `120573 / U.7683` has a readable-writing route, but it is cuneiform-only in the current source surface and lacks a recorded Indus sign sequence.
 - The mapped or candidate Indus-inscribed Ur objects lack readable cuneiform names, titles, or Meluhha formulas.
@@ -71,7 +73,7 @@ So the gate returns zero micro-bilinguals. No sign value, phonetic value, langua
 - The strongest mapped row, `3898.1/U17649`, is source-validated as Indus-style only, not cuneiform-bilingual.
 - The cuneiform route BM `120573/U.7683` has no recorded Indus sequence.
 - The remaining Ur rows rely on shape/site/length similarity or fragment plausibility.
-- Site overlap with Ur Meluhha texts remains inadmissible because the previous forger already killed site overlap as evidence.
+- Site overlap with Ur Meluhha texts remains inadmissible because the previous forger already killed site overlap as evidence. A forger is a control built to fake the signal we are hunting; that one showed site overlap alone produces the same apparent result with nothing behind it.
 
 ## Decision
 

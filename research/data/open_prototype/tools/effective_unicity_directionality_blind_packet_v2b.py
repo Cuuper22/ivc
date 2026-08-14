@@ -1,3 +1,17 @@
+"""Build the v2b blind review packet for the directionality experiment.
+
+This is the v2 packet rebuilt with one change: each primary target keeps only a
+single recut image, because the v2 preflight found duplicate target images that
+shared the same SHA-256 hash and would have let a reviewer link paired views.
+Like v2, it crops raw CISI plate pages using the public route probe CSV, masks
+all OCR word boxes inside the routed negative crops so catalogue labels cannot
+leak, and shuffles targets, twelve routed real negatives, three existing stress
+controls, and synthetic sentinels into anonymized blind images. It writes the
+blind images, crop manifest, blind manifest, answer key, review template,
+contact sheet, and a summary JSON that now also reports any duplicate blind
+image hash groups so the preflight check can fail the packet if they reappear.
+"""
+
 from __future__ import annotations
 
 import csv

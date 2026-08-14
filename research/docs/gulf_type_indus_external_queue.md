@@ -2,15 +2,17 @@
 
 Date: 2026-05-30
 
-This is a Vector 1 acquisition surface, not a claim. It turns Laursen's external Gulf Type seals with Indus text into a row-level queue for the diffuse Meluhha bilingual search.
+This note is a worklist, not a claim. It names the objects worth chasing next in the search for a bilingual: a single object carrying both Indus signs and a readable script.
 
-The queue exists because the current failures are informative: the Ur/Gadd audit shows that site overlap and Indus-only external seals do not produce phonetic anchors, while BM `120573/U.7683` shows that cuneiform-only Indus-style objects also do not help unless they share an object with an Indus sequence. The next target is therefore not "more Meluhha vibes"; it is exact object identity plus readable-writing adjacency.
+Indus-inscribed seals travelled west into the Gulf and Mesopotamia, where readable writing was in daily use. Laursen's Table 1 catalogues those external Gulf Type seals. This note turns the ones bearing Indus text into a row-level queue — one line per object, each with its source, its link to our own catalog rows, and the next test it must pass. Vector 1 is the project's standing line of attack on the diffuse Meluhha bilingual search; an acquisition surface is simply the set of places we can go looking for evidence.
+
+The queue exists because the current failures are informative: the Ur/Gadd audit shows that site overlap and Indus-only external seals do not produce phonetic anchors — external evidence that fixes what a sign sounds like — while BM `120573/U.7683` shows that cuneiform-only Indus-style objects also do not help unless they share an object with an Indus sequence. The next target is therefore not "more Meluhha vibes"; it is exact object identity plus readable-writing adjacency.
 
 ## Artifact
 
 - `data/meluhha/gulf_type_indus_external_queue.csv`
 
-The CSV records Laursen Table 1 entries `6` through `27`, the external Gulf Type rows with `INDUS` text in the table extract readable through the PDF interface. It includes source provenance lines, current workspace linkage, current anchor status, and the next gate for each row.
+The CSV records Laursen Table 1 entries `6` through `27`, the external Gulf Type rows with `INDUS` text in the table extract readable through the PDF interface. It includes source provenance lines, current workspace linkage, current anchor status, and the next gate for each row — a gate being the pass/fail test that row must clear before it counts as anything.
 
 ## Source Surface
 
@@ -43,7 +45,7 @@ Relevant source facts from Laursen:
 
 ## Forger Rule
 
-Any future candidate from this queue must clear the same gate:
+A forger is a control built to fake the very signal we are hunting. The rule below exists so that a coincidence cannot pass itself off as a bilingual. Any future candidate from this queue must clear the same gate:
 
 1. The exact object must carry or be directly paired with an Indus sign sequence.
 2. The same exact object, or a documented same-context label/seal pairing, must carry readable cuneiform or another readable-script name/title/formula.

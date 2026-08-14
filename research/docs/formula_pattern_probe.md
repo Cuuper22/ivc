@@ -4,9 +4,11 @@ Date: 2026-05-24
 
 ## Purpose
 
-This experiment asks whether the provisional structural sign classes combine into repeated inscription-level formula patterns.
+This note records a probe — a narrow, cheap experiment run to see whether a bigger question is worth pursuing.
 
-It does not assign meaning. It does not identify grammar in a linguistic sense. It does not translate. It only tests whether the strict prototype subset has repeatable class scaffolds beyond individual sign-position profiles.
+An earlier pass sorted signs into provisional structural classes by where they tend to sit in an inscription: openers, middles, closers, and so on. This probe asks the next question. Do those classes combine into repeated whole-inscription patterns — formulas, in the sense of a fixed shape reused across many objects?
+
+It does not assign meaning. It does not identify grammar in a linguistic sense. It does not translate. It only tests whether the strict prototype subset — the small, tightly filtered slice of inscriptions we allow into early experiments — has repeatable class scaffolds beyond individual sign-position profiles. A scaffold here is the pattern of class codes across a whole row, such as an opener class at the start and a closer class at the end.
 
 ## Local Artifacts
 
@@ -26,7 +28,7 @@ data/open_prototype/reports/sign_policy_sensitivity_sequences.csv
 data/open_prototype/reports/structural_sign_profiles.csv
 ```
 
-Dataset:
+Dataset. A policy here is one rule for deciding which sign shapes count as the same sign; different policies merge different variants:
 
 ```text
 records_per_policy: 136
@@ -104,7 +106,7 @@ The class scaffolds are direction-sensitive:
 - `T` signs appear at the end far more often in observed order than in reversed or shuffled controls.
 - Full `I...T` scaffolds appear in 22 to 23 rows, versus about 1.25 under within-row shuffling.
 
-This supports an A2 structural claim: the strict subset has edge-position scaffolding that is stronger than a class-abundance artifact.
+This supports an A2 structural claim — our claim tier for statements about structure only, never meaning: the strict subset has edge-position scaffolding that is stronger than a class-abundance artifact.
 
 ## Counterresult
 

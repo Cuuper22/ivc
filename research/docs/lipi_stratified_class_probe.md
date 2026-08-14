@@ -4,11 +4,13 @@ Date: 2026-05-24
 
 ## Purpose
 
-This experiment asks whether the `class` metadata signal from the [Lipi metadata prediction probe](lipi_metadata_prediction_probe.md) survives inside artifact-type and site strata.
+This note records a follow-up prediction experiment. It exists to answer one worry: an earlier result might be an artifact of mixing different kinds of objects together.
 
-The previous metadata probe found that type, site, and region prediction are confounded by artifact-type mixtures. It also found that inscription `class` prediction remained above structured nulls. This follow-up asks whether that class result is still visible after controlling for major type/site buckets.
+The setup, in plain terms. `lipi` is the filtered catalog dataset this project computes from. Each inscription row carries a catalog `class` label. The earlier [Lipi metadata prediction probe](lipi_metadata_prediction_probe.md) asked whether sign sequences predict those metadata labels better than chance. It found that type, site, and region prediction are confounded by artifact-type mixtures — the apparent signal came from which kinds of objects were in the pot. But inscription `class` prediction remained above structured nulls (comparison baselines built by shuffling or recoding the data while keeping some of its structure).
 
-This remains a T3 planning-layer scout. The `class` labels come from filtered `lipi`, not an authoritative corpus. The result does not assign meanings, sign values, phonetics, language identity, or translations.
+This experiment asks whether that class signal survives inside strata — that is, when we hold artifact type and site fixed and predict only within each bucket.
+
+This remains a T3 planning-layer scout: an exploratory pass over the catalog-derived planning layer, not accepted evidence. The `class` labels come from filtered `lipi`, not an authoritative corpus. The result does not assign meanings, sign values, phonetics, language identity, or translations.
 
 ## Local Artifacts
 
@@ -37,11 +39,11 @@ min_label_rows = 12
 iterations_per_control = 5
 ```
 
-The probe collapses exact sign sequences before prediction. Each sign-sequence family receives the majority `class`, `type`, and `site` labels from its source rows.
+The probe collapses exact sign sequences before prediction, so duplicate inscriptions count once. Each sign-sequence family receives the majority `class`, `type`, and `site` labels from its source rows.
 
 ## Eligible Strata
 
-The probe found 11 eligible strata:
+A stratum is a bucket of rows sharing a site, an artifact type, or both. Type codes like `SEAL:R`, `SEAL:S`, `TAB:B`, and `TAB:I` are catalog artifact-type codes. The probe found 11 eligible strata:
 
 ```text
 site: Harappa
@@ -57,14 +59,14 @@ type_site: TAB:B@Harappa
 type_site: TAB:I@Harappa
 ```
 
-Models:
+Models — four predictors of increasing strength:
 
 - Majority.
 - Length.
 - Edge frame.
 - Token NB.
 
-Controls:
+Controls — four structured nulls the observed result must beat:
 
 - Duplicate-matched position slots.
 - Administrative register code.

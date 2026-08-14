@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
-"""
-Emit the cleaned v2d manual shortlist draft for the directionality panel-crop repair.
+"""Emit the cleaned v2d manual shortlist for the directionality panel-crop repair.
 
-This script is intentionally conservative: it does not claim a blind-packet
-denominator. It records a transparent visual-QC draft that removes the obvious
-label/metadata leaks from the first shortlist before any blind review exists.
+After the panel-crop repair script generated hundreds of candidate crops, a
+human looked at them and hand-picked 16: 4 targets, 9 negatives, and 3
+reserves. This script simply records that choice in a reproducible form. Each
+pick is identified by (CISI, route rank, crop method, candidate rank); the
+script looks those rows up in the v2 candidates CSV, stamps them with the draft
+version and the reviewer's bucket and note, and writes a shortlist CSV plus a
+contact sheet for the next visual pass. It is deliberately conservative: it
+claims no blind-packet denominator, only a transparent visual-QC draft that
+strips the obvious label/metadata leaks before any blind review exists.
 """
 
 from __future__ import annotations

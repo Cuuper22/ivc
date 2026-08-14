@@ -1,3 +1,14 @@
+// Two-part positional bet about sign `090`. Part one: in local rows that contain
+// both 090 and 740, 090 comes before 740 — it acts as a qualifier feeding the
+// opener 740. Part two: on external circular seals (objects found outside the Indus
+// area, per data/meluhha/external_indus_objects.csv), 090 drifts to the edge of the
+// inscription (initial, terminal, or next-to-terminal position) more than it does
+// locally. The script reads metadata_filtered.csv, collapses duplicate sign
+// sequences, and splits rows into local vs external. The ordering claim is priced by
+// shuffling the signs inside each local 090+740 row 50,000 times and counting how
+// often 090 lands before 740 as strongly as observed; the edge claim by a one-sided
+// Fisher test of near-edge rates, external-circular vs local. Writes a JSON bet
+// report and a support-rows CSV to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

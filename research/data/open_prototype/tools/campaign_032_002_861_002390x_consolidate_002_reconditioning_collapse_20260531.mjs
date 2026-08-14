@@ -1,3 +1,16 @@
+// Stress-tests the claim that sign 002 "reconditions" the pair that follows it,
+// i.e. changes whether a pair like 390-125 keeps the inscription open or ends
+// it. The danger is double counting: repeated formulaic inscriptions can make a
+// weak effect look strong. So this script lists every adjacent sign pair in the
+// local Lipi metadata, marks whether it is gated by a preceding 002 and whether
+// the inscription continues after it, then recomputes the gated-versus-ungated
+// open-rate difference under four levels of duplicate collapsing (raw rows down
+// to one row per pair+gate). Six focus pairs get individual verdicts. Writes
+// focus shifts, all shifts, and decisions CSVs plus a summary JSON to
+// data/open_prototype/reports/. Recorded outcome: the 390-125 "opening" effect
+// mostly belongs to 125's own tail behavior, so 002 survives only as a weak
+// reconditioner whose cleanest effect is terminalizing zero complements.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

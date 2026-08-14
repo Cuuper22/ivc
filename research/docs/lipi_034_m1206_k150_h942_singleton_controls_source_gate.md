@@ -2,9 +2,11 @@
 
 Date: 2026-05-26
 
+This note is a gate — a checkpoint the evidence must pass before it can be used. Two objects are up for admission. Each is a singleton: the only object in the corpus carrying its particular three-sign string. Singletons are useful here as contrast shapes, because they show what else can sit in the same slot. One of the two has a usable published photograph and is admitted; the other does not and stays out.
+
 ## Question
 
-After `M-1912 +520-220-003+` failed source-grade admission, can the other exact `+520-220-X+` singleton terminals help constrain the `M-1206 +520-220-034+` branch?
+After `M-1912 +520-220-003+` failed source-grade admission, can the other exact `+520-220-X+` singleton terminals help constrain the `M-1206 +520-220-034+` branch — the open line of investigation into that object's final sign?
 
 The two relevant singleton controls are:
 
@@ -112,7 +114,7 @@ Build the next source-normalized blind component packet with:
 1. `M-1206` terminal target (`034`).
 2. Clean `415` controls: `H-938 A/A bis`, `H-940 A`, and `M37_A_terminal_strict_core_from_signband.png`.
 3. `H-942 A` as source-visible singleton `016` control target, marked side-mapping caution.
-4. Prefix/nonterminal distractors.
+4. Prefix/nonterminal distractors — decoy crops from the non-final part of the same inscription, included to catch reviewers matching on context rather than form.
 
-Do not include `M-1912` or `K-150` as clean witnesses until raw source pages or equivalent archive records are acquired.
+Do not include `M-1912` or `K-150` as clean witnesses — single source panels admitted as evidence — until raw source pages or equivalent archive records are acquired.
 

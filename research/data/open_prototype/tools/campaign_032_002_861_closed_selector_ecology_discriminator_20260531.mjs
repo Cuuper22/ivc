@@ -1,3 +1,14 @@
+// Discriminator for the seven "closed" selector signs that appear in 002-390-X frames
+// (072, 095, 140, 346, 692, 705, 707). The bet: these are not one interchangeable bucket of
+// terminal signs — each has its own ecology. 095 should track status/admin objects, 692
+// should ride the portable 060-692 terminal suffix, 705 should reuse the wider 033-705
+// formula, and the singletons should stay semantically thin. We read the filtered Indus
+// inscription list (lipi/metadata_filtered.csv), keep one copy of each distinct sign
+// sequence, and profile each X: its governed 002-390-X rows, its non-governed 390-X rows, and
+// its global occurrences (terminal share, top predecessor, share on tablet/pot/tag-like
+// "status" objects). Fixed rules assign each X a subtype classification, and the run passes
+// if at least one admin, one suffix, and one formula-reuse subtype emerge. Writes ecology,
+// target-row, and decision CSVs plus a JSON summary to data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

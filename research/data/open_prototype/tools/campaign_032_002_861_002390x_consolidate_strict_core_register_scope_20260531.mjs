@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script checks how far the "strict core" — the few 002-390-X inscriptions
+// verified against real source images — is allowed to generalize. It reads the
+// branch-sign-ecology frames CSV, classifies each row's source_status into
+// tiers (strict, panel, route-only, unbound, source-dark), and keeps only the
+// strict rows. Then it profiles those rows by site, object type, seal shape,
+// material, symbol, and cult scene: if every strict row sits in one
+// site/type/shape cell, the grammar claim must shrink from "script-wide" to
+// "Mohenjo-daro square-seal local syntax". A second check confirms the local
+// claim still has content: within that one register, X still splits into 125
+// open versus 095/692 terminal. Writes row, summary, and contradiction-check
+// CSVs plus a summary JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const framesPath = path.join(reportsDir, 'campaign_032_002_861_002390x_branch_sign_ecology_20260531_002390_frames.csv');

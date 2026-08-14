@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Two records in one script, both hand-written from a 2026-05-25 search of the accessible
+// Internet Archive OCR of CISI volumes 1 and 2. First, the note-route rows: for each blocked
+// object (H-771, H-893, H-925, H-983, H-353) they document that the OCR shows the plate
+// labels but contains no object-specific catalogue note explaining them, and that the
+// volumes route such notes to the CISI volume 3 detailed catalogue -- so that becomes the
+// retrieval target. Second, the panel-graph rows: for all nine objects across the three
+// study lanes they state the local two-row signature, the source-side node set after
+// applying CISI labeling conventions, the exact blocker type, and a substitution-readiness
+// verdict. The script tallies lane readiness (result: zero lanes ready) and writes two CSVs
+// plus a JSON summary. It exists to convert a failed note search into precise next source
+// requests instead of another blind OCR pass.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 

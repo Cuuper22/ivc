@@ -2,6 +2,10 @@
 
 Date: 2026-05-24
 
+This note is a baseline: the first broad measurement of whether sign order in the corpus carries any real structure, run before anyone tries to interpret anything. A baseline is the number every later result has to beat.
+
+Three terms recur below. `lipi` is our filtered planning dataset, rated T3, meaning third-tier: usable for generating ideas, never as authority. A holdout is a slice of data withheld from training and used only for testing, which is how you tell learning from memorizing. A gate is a test a claim must pass before the project builds on it.
+
 ## Purpose
 
 This experiment asks whether the structural order signal seen in the Mayig/Mohenjo-daro unicorn-seal subset survives in a broader claim-free `lipi` planning layer.
@@ -52,12 +56,16 @@ The sensitivity scope includes the numeric-clean rows plus direction-clean rows 
 
 ## Experiment 1: Stored Order Versus Reversed Order
 
+The simplest possible test of whether order matters: if the signs were in no particular order, running them backwards should score about as well as running them forwards.
+
 Method:
 
 ```text
 leave-one-inscription-out add-one-smoothed bigram
 score stored numeric order against reversed numeric order
 ```
+
+In plain terms: for each inscription, we train a bigram model on all the other inscriptions and ask whether the stored sign order scores higher than the same signs reversed.
 
 Overall result:
 
@@ -94,6 +102,8 @@ leave-one-inscription-out exact numeric sign prediction
 models: frequency, absolute position, length-position, bidirectional context
 ```
 
+In plain terms: we hide one sign at a time and ask each model to guess it exactly.
+
 Overall result:
 
 | Model | Top-1 Accuracy | Top-5 Accuracy | MRR |
@@ -115,7 +125,7 @@ Selected split results for bidirectional context:
 | Harappa | 1,430 | 0.452884 | 0.700267 | 0.568665 |
 | Mohenjo-daro | 1,217 | 0.394045 | 0.621800 | 0.502913 |
 
-The very high `TAB:C` within-split result is not a translation signal. `TAB:C` has 130 exact duplicate rows out of 157 rows, with a top sequence count of 25. That makes it a formula/duplication warning.
+The very high `TAB:C` within-split result is not a translation signal. `TAB:C` has 130 exact duplicate rows out of 157 rows, with a top sequence count of 25. That makes it a formula/duplication warning: a model can score well simply by having seen near-identical rows already.
 
 The exact-duplicate collapse follow-up is recorded here:
 
@@ -134,6 +144,8 @@ The formula-family downweighting follow-up is recorded here:
 [Lipi formula-family downweighting baseline](lipi_family_downweight_baseline.md)
 
 ## Experiment 3: Held-Out Type And Site Prediction
+
+The hard version. Train on everything except one artifact type or one site, then predict inside the group the model has never seen. OOV share, below, is the fraction of test signs that never appeared in training at all — signs the model had no chance to learn.
 
 Method:
 
@@ -160,7 +172,7 @@ Held-out bidirectional context remains above frequency, position, and length-pos
 
 ## Interpretation
 
-The broad `lipi` scout supports a real A2-style structural lead:
+A scout is an exploratory run meant to find where to look, not to settle anything. The broad `lipi` scout supports a real A2-style structural lead:
 
 - Stored numeric order usually scores above reversed order across the broader filtered layer.
 - Bidirectional context predicts masked signs better than frequency, position, and length-position baselines.
@@ -195,6 +207,8 @@ It does not support:
 - Translation.
 
 ## Next Falsification
+
+Falsification means the next tests are chosen for their power to break this result, not to confirm it.
 
 The next tests should ask:
 

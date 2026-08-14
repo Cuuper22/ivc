@@ -1,3 +1,17 @@
+// Hostile-controls pass for the "rhinoceros packet": every square seal with rhinoceros
+// iconography whose inscription ends in 002 + terminal sign seems to pick terminal 820
+// (rather than 817 or 861). Could that be duplicates, a shared workshop family, or literally
+// one catalogue page? We read the filtered Indus inscription list (lipi/metadata_filtered.csv),
+// fill in missing iconography labels from the zoomorphic icon catalogue text dump, and keep
+// square-seal frames that end in 002-817/820/861. The 820/Rhin association is retested at
+// five levels of hostility: all objects, Mohenjo-daro only, collapsed to one row per
+// site/type/symbol/cult/material/shape family, Mohenjo-daro family-collapsed, and collapsed
+// so the M-1136..M-1139 seals — all from CISI Pakistan page n160 — count once. Each level
+// runs a 20,000-iteration seeded label shuffle for both the target association and the best
+// association any symbol could show (a max-statistic control for cherry-picking), plus a
+// leave-one-out check. The run ends with a tier decision; in this configuration it demotes
+// the packet to object-level candidate. Writes a JSON report and a target-rows CSV to
+// data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

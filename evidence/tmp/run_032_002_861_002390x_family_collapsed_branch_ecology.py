@@ -1,3 +1,15 @@
+"""Summarizes the 002-390-X branch ecology after collapsing exact-formula families.
+
+This script reads the row table produced by the source-normalized contrast campaign
+(campaign_032_002_861_002390x_source_normalized_contrast_rows.csv). It groups the rows
+into exact-text families — rows that repeat the same full inscription count as one
+family, not as independent witnesses — and then summarizes the PREV -> 002-390 -> X ->
+TAIL ecology by branch and by previous sign. It writes matrix CSVs, a summary JSON, and
+a docs/ markdown note. The point is to see what the branch structure still says once
+copy-families can no longer inflate the counts; the recorded decision keeps 125 live
+but not readable.
+"""
+
 from __future__ import annotations
 
 import csv

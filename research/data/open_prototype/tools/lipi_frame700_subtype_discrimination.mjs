@@ -1,6 +1,20 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// The frame700 pattern is a two-sign inscription pairing sign 700 with one of three "stroke
+// mark" subtypes: 032, 033, or 034. This script asks whether anything else about the object
+// predicts which subtype it carries -- because if subtype is predictable from context, the
+// three marks are doing systematic work, not varying freely. It reads the companion-context
+// rows and the validation queue (for physical dimensions), keeps only exact two-token
+// 700+subtype rows, and derives features: object type/site/sides, five size bins, side
+// context (which side is short, order, side relation), and the companion long side's text
+// family. It then runs leave-one-out naive Bayes (alpha 0.5) for eight feature sets, under
+// two scopes (all rows, and excluding the H-2218..H-2239 series) and two leaveout modes
+// (drop the artifact, or drop its whole sequence family). It also computes per-feature-value
+// lift by subtype. Outputs: the assembled feature rows CSV (used by many later scripts),
+// per-row predictions, an accuracy summary, feature contrasts, and a JSON summary. Context
+// evidence only -- no meaning, value, or reading is claimed.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 const validationPath = path.join(reportsDir, 'lipi_multiside_mark_validation_queue.csv');

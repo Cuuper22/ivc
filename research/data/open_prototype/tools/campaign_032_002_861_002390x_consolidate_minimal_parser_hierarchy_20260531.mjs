@@ -1,3 +1,17 @@
+// Pits the minimal parser against register-based null models as backoff
+// hierarchies. A hierarchy is an ordered chain of predictors: try the most
+// specific key first (say, the exact head-X pair), and if too few training
+// rows match, back off to the next key (X alone, then the visual scope cell).
+// This script builds every 002-H-X frame from the local Lipi metadata, then
+// scores four hierarchies — grammar-first, scope-first, X-then-scope, and
+// scope-only — by leave-one-out majority vote on four collapse levels of the
+// data (raw down to one row per head-X pair). It records per-step usage counts
+// and up to 20 mistakes per combination. Writes metrics, mistakes-sample, and
+// decisions CSVs plus a summary JSON to data/open_prototype/reports/.
+// Recorded verdict: the grammar hierarchy is real enough to guide bets but its
+// edge over scope-first nulls is small and collapse-sensitive, so the minimal
+// parser stays a candidate and every future claim must beat the scope null.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

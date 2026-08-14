@@ -1,3 +1,17 @@
+// Forger for the "restricted tail" claim about the pair 533-717: in strict rows it occurs
+// only as a terminal tail right after the fixed prefix 002-861. A forger asks how easily
+// chance produces a pattern that strong. We load only strictly-parseable inscriptions from
+// lipi/metadata_filtered.csv (text of the form +NNN-NNN-...+ with no damage brackets), in
+// two scopes — raw rows, and rows deduplicated on exact text + site + type + symbol — and
+// find every unit of length 1 to 3 that occurs at least twice with every occurrence in the
+// fixed-prefix terminal context. Four seeded null models then re-run that search: shuffling
+// the context labels globally or within site/type/symbol groups (default 10,000 iterations),
+// and shuffling tokens globally or within each row (default 500). CLI flags
+// --context-iterations, --token-iterations, and --seed override the defaults. A separate
+// "any prefix" skeptic pass shows that prefix-restricted terminal bigrams are common in
+// general, which bounds what the result may claim, and earlier source-check reports are
+// folded in as supporting evidence. Outputs candidate, null-summary, and null-iteration CSVs
+// plus a JSON summary (with allowed and forbidden wording) in data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

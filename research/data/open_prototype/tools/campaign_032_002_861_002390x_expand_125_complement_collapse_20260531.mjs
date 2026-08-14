@@ -1,6 +1,19 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// If 125 in the X slot is a linker, what does it link to — and do those
+// complements hold up, or collapse into one copied formula? This script scans
+// lipi/metadata_filtered.csv for every 002-HEAD-125 occurrence and sorts each
+// one into a lane by the sign right after the 125: the 632-032 lane, the 032
+// lane, the 820 lane, terminal 125 (an exception to the linker model), or a
+// singleton lane. For each lane it counts occurrences, distinct sites, and
+// distinct heads, then assigns a collapse risk: a repeated lane confined to
+// one site is flagged "site_local_formula_risk". The recorded read: 632-032
+// is Mohenjo-daro formula risk, while the smaller 032 and 820 lanes cross
+// local formula boundaries and give the linker claim real support. Writes
+// occurrence, lane, and bet CSVs plus a summary JSON to
+// data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

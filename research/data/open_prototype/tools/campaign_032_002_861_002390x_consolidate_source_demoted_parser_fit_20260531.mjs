@@ -1,3 +1,18 @@
+// Re-scores the 002-390-X parser fit after applying source discipline. The
+// earlier parser-fit run counted every metadata row equally; this one reads
+// those parse rows plus the source-visible controls table, buckets each row by
+// how good its source really is (strict source-visible, panel-bound,
+// route-only, unbound, excluded), and demotes tiers accordingly: only
+// strict-countable rows may support promotion, everything else is pressure.
+// Each X sign gets a role (125 open linker, 095/705 terminal boosters, 692
+// comparator, 530/590 extenders, singleton payloads) and a per-role capacity
+// verdict. A destructive-tests table lists exactly which source bindings would
+// promote or kill each claim. Writes row-reclassification, role-capacity, and
+// destructive-tests CSVs plus a summary JSON to data/open_prototype/reports/.
+// Headline: the structural self-fit stays 15/15, but only 4 rows survive as
+// strict-countable — the parser must earn promotion from those 4 plus
+// held-out tests, and accepted claims remain 0.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

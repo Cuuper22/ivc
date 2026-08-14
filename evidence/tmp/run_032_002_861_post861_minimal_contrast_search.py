@@ -1,3 +1,17 @@
+"""Search the whole post-002-861 field for minimal contrasts worth chasing.
+
+A minimal contrast is two inscriptions that share the same context (same exact
+prefix, same last-two prefix signs, or same register) but choose different
+tails after 861 — the closest thing this corpus offers to a minimal pair. We
+read the 144 source-normalized tail predictor rows, find every context value
+where at least two different tails appear, and rank those contrasts by whether
+they are source-live (checked images on both sides). Each tail then gets a
+profile and a decision class — background closure, live simple-tail cluster,
+conditional fixed unit, singleton watch, or source-acquisition chore. Outputs:
+tail-profile, mixed-context, and decision CSVs, a JSON summary, and a Markdown
+report in docs/. All sign values and translations stay at 0/unaccepted.
+"""
+
 from __future__ import annotations
 
 import csv

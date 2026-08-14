@@ -2,6 +2,8 @@
 
 Date: 2026-05-26
 
+This note is a gate — a checkpoint that evidence must pass before the project may take a further step. The question it settles is whether one object, M-1206, shows a sign shape distinct enough to stand on its own, or whether it simply looks like the neighbouring shapes it was supposed to contrast with. The test was run blind: reviewers saw label-stripped crops and did not know which object was the target.
+
 ## Question
 
 After M-315 failed the strict blind upgrade, does M-1206 give a source-visible `034` graphic class, or does it collapse toward the broader `415` visual family?
@@ -9,6 +11,8 @@ After M-315 failed the strict blind upgrade, does M-1206 give a source-visible `
 This gate uses anonymous source-image crops. It is a graphic-class experiment, not a translation attempt.
 
 ## Inputs
+
+The neutral packet is the label-stripped bundle shown to reviewers, followed by the key that says which crop was which.
 
 Neutral packet:
 
@@ -46,7 +50,7 @@ Two independent blind visual reviewers classified only the anonymous contact she
 
 ### Shared Findings
 
-Both reviewers agree:
+Comparanda below are comparison pieces drawn from outside the target, used to test whether the target's shape is distinctive. Both reviewers agree:
 
 ```text
 C001-C003 form a stable visual family under reversal/order change.
@@ -69,6 +73,8 @@ C001-C003 are stable at the family/formula level, not exact duplicate level. C00
 ```
 
 ## Unblinded Adjudication
+
+Adjudication is the ruling made after the key is revealed and the blind judgements are matched back to real object names.
 
 The M-1206 target views are internally coherent:
 

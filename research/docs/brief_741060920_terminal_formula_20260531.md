@@ -5,14 +5,14 @@ Status: promoted candidate, metadata layer plus row-level source peek. Not accep
 
 ## Claim
 
-The cleanest current structural object is the terminal cap `060-920`. The sequence `741-060` is the dominant feeder into that cap: every observed `741-060` occurrence is followed by `920`, and every such `920` closes the inscription.
+The cleanest structural object we currently have is the terminal cap `060-920` — a two-sign unit that closes inscriptions. The sequence `741-060` is the dominant feeder into that cap: every observed `741-060` occurrence is followed by `920`, and every such `920` ends the inscription.
 
 This is a structural formula claim, not a decipherment. The useful reading is: `741-060` is not merely followed by a common terminal sign by chance; it appears to require `920` in this construction.
 
 ## Evidence
 
 - Raw occurrences: `31/31` `741-060` rows are followed by `920`.
-- Exact text/site/type/symbol collapse: `30/30` cells still follow with `920`.
+- Exact text/site/type/symbol collapse (so duplicate copies of one inscription count once): `30/30` cells still follow with `920`.
 - Terminality: `31/31` `741-060-920` rows end after `920`.
 - Broader cap: `060-920` has `53` raw rows and `52` exact-collapsed cells; it is terminal in `52` raw rows and `51` exact-collapsed cells.
 - Feeder pressure: in exact-collapsed `060-920` rows, predecessor `741` contributes `30` cells; the next largest feeders are `742` with `7` and `745` with `3`.
@@ -24,15 +24,15 @@ This is a structural formula claim, not a decipherment. The useful reading is: `
 
 ## Why It Is Harder To Dismiss Than A Raw Formula Count
 
-The immediate copy-family objection does not explain the current metadata pattern by itself. The exact text/site/type/symbol collapse reduces the set from `31` rows to `30`, not to a local duplicate family. The distribution crosses multiple sites and object labels.
+The obvious first objection is copying: maybe one workshop stamped the same text many times. That objection does not explain the current metadata pattern by itself. The exact text/site/type/symbol collapse reduces the set from `31` rows to `30`, not down to a local duplicate family, and the distribution crosses multiple sites and object labels.
 
-The local formula objection is also weaker than for exposed false positives. In the same pass, `752-615-503` looked perfect raw (`29/29`) but collapsed to two exact cells at one Mohenjo-daro `TAB:C` context. `741-060-920` does not have that failure shape.
+The second objection — that this is just a local formula — is also weaker here than for exposed false positives. In the same pass, `752-615-503` looked perfect raw (`29/29`) but collapsed to two exact cells at one Mohenjo-daro `TAB:C` context. `741-060-920` does not have that failure shape.
 
 ## Source Status
 
-A row-level visual peek checked six available source images: `C-16`, `H-89`, `K-4`, `L-28`, `M-113`, and `M-247`. The rows are real visible inscriptions and are compatible with the catalogued terminal cluster. This does not independently box `741`, `060`, or `920`.
+A row-level visual peek checked six available source images: `C-16`, `H-89`, `K-4`, `L-28`, `M-113`, and `M-247`. The rows are real visible inscriptions and are compatible with the catalogued terminal cluster. This does not independently box `741`, `060`, or `920` — that is, it does not confirm each sign's boundaries on the object.
 
-A blind packet has been built:
+A blind packet has been built (a set of images with the answers sealed, so a reader must judge without knowing which rows are targets):
 
 - Blind sheet: `tmp/blind_741060920_terminal_cluster_20260531/blind_741060920_terminal_cluster_sheet.jpg`
 - Manifest: `data/open_prototype/reports/blind_741060920_terminal_cluster_20260531_manifest.csv`

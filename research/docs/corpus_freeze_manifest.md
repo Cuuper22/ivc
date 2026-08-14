@@ -10,6 +10,8 @@ ivc-corpus-2026-05-24-open-prototype
 
 ## Purpose
 
+A corpus freeze is a snapshot with a name: once frozen, its inputs, versions, and filters cannot change silently, so any experiment that cites the freeze name can be rerun against exactly the same data.
+
 This is the first non-authoritative working corpus freeze. Its job is to support parser design, source overlap checks, sign-string normalization decisions, and baseline experiment planning.
 
 It is not a translation corpus. It is not authoritative. It cannot prove meaning.
@@ -130,7 +132,7 @@ Excluded use:
 
 ## Source Priority
 
-If sources disagree:
+When two sources disagree about the same artifact, the disagreement is settled by distance from the physical object:
 
 1. Primary image/publication beats all.
 2. CISI/ICIT/M77 beats open digitization.
@@ -171,9 +173,7 @@ notes
 
 ## Normalization Policy For This Freeze
 
-Sign strings are not forced into one sign list yet.
-
-Instead, each record preserves:
+The two input sources write signs in incompatible notations, and there is no evidence yet for how they map onto each other. So sign strings are not forced into one sign list. Each record preserves both notations side by side:
 
 - `raw_mayig_graphemes`: e.g. `P121 P202 P385 P073 P108`.
 - `raw_lipi_text`: e.g. `+740-540-002-820+`.
@@ -196,6 +196,8 @@ Exclude from core analysis if:
 Excluded records can remain in an audit table.
 
 ## First Freeze Questions
+
+These are the questions this freeze exists to answer:
 
 1. How many `mayig` IDs overlap with filtered `lipi`/CISI IDs?
 2. For overlaps, do sign counts agree?

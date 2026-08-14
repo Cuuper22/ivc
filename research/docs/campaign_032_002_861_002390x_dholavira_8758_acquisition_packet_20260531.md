@@ -11,7 +11,7 @@ Dholavira `4237.1` is one of the two local `002-390-705` rows:
 - `M-1825`: `031 -> 002-390 -> 705 -> <END>`, source-dark/secondary-icon-only.
 - `4237.1`: `388 -> 002-390 -> 705 -> <END>`, Dholavira metadata-cluster pressure but no image binding.
 
-If Dholavira `4237.1` can be bound to an actual source image or caption, repeated terminal `705` becomes much more useful for testing the branch-tail model. It still would not create a value or translation, but it would move `705` from acquisition pressure toward source-normalized branch evidence.
+Here is why the target matters. If Dholavira `4237.1` can be bound to an actual source image or caption, repeated terminal `705` becomes much more useful for testing the branch-tail model. It still would not create a value or translation, but it would move `705` from acquisition pressure toward source-normalized branch evidence.
 
 Accepted value, phonetics, language identity, function, sign meaning, and translation remain 0.
 

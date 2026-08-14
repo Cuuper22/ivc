@@ -4,13 +4,15 @@ Date: 2026-05-29
 
 Status: hostile metadata-layer control. Accepted claim increment: 0.
 
-This pass attacks the Vector 2 directionality candidate at the place it looked softest: source, register, and formula-family dependence. The test uses only fields already present in the Lipi working table, so it does not solve source-image normalization. It asks whether the stored-order signal survives when the corpus is grouped by a stronger metadata proxy:
+This note records a deliberately hostile control run. It attacks the Vector 2 directionality candidate — the working result that Indus inscriptions score better in their stored order than reversed — at the place it looked softest: dependence on source, register, and formula family (groups of inscriptions that repeat the same formula). The test uses only fields already present in the Lipi working table, our main catalog-derived data table, so it does not solve source-image normalization. It asks whether the stored-order signal survives when the corpus is grouped by a stronger metadata proxy:
 
 `source_convention_key = site|type|material|symbol|cult|direction`
 
-The scoring rule is the same leave-out bigram instrument used in the directionality comparator: score each stored sequence against its reversed sequence after removing the tested row, family, or source-convention block from training. Nulls are global-token shuffle, row-internal shuffle, position-slot shuffle, edge-frame shuffle, register-position shuffle, and register-edge/interior shuffle, 200 iterations per control.
+The scoring rule is the same leave-out bigram instrument used in the directionality comparator: score each stored sequence against its reversed sequence after removing the tested row, family, or source-convention block from training. Nulls — shuffled versions of the data that destroy the order under test — are global-token shuffle, row-internal shuffle, position-slot shuffle, edge-frame shuffle, register-position shuffle, and register-edge/interior shuffle, 200 iterations per control.
 
 ## Result
+
+Stored-win share is the fraction of rows where the stored order beats the reversed order. Max admissible null >= observed is the worst case across the valid null controls: the fraction of shuffled iterations that matched or beat the observed result, so small values mean the signal is hard to fake.
 
 | Scope | Rows | Stored-win share | Max admissible null >= observed | Decision |
 | --- | ---: | ---: | ---: | --- |
@@ -25,7 +27,7 @@ The scoring rule is the same leave-out bigram instrument used in the directional
 
 The result survives the useful source-convention attacks in the dominant R/L layer. The harsh source-convention-collapsed scope has 175 rows, stored-win share 0.805714, mean stored-minus-reversed per transition 0.817965, median 0.761131, and max admissible null >= observed share 0.005000.
 
-The L/R stratum blocks any stronger claim. Exact L/R has 83 rows and a positive stored-win share, but it is null-compatible at max null >= observed share 0.520000. Harsh L/R has only 11 rows, stored-win share 0, negative mean difference, and max null >= observed share 1.000000. So the admissible wording is R/L-dominant metadata-layer stored-order asymmetry, not physical bidirectionality and not validated source direction.
+The L/R stratum — the rows whose recorded reading direction is left-to-right rather than the dominant right-to-left (`R/L`) — blocks any stronger claim. Exact L/R has 83 rows and a positive stored-win share, but it is null-compatible at max null >= observed share 0.520000. Harsh L/R has only 11 rows, stored-win share 0, negative mean difference, and max null >= observed share 1.000000. So the admissible wording is R/L-dominant metadata-layer stored-order asymmetry, not physical bidirectionality and not validated source direction.
 
 ## Degenerate Controls
 

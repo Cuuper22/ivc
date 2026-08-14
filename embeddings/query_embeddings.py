@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
 """embeddings/query_embeddings.py — query the multimodal vector layer (cosine NN).
 
-Loads embeddings/store_*.parquet (built by build_embeddings.py) and supports:
+Loads embeddings/store_*.parquet (built by build_embeddings.py) and answers three kinds
+of question:
   - nearest-neighbors of an item:   --nn "img:research/data/brahmi/..."  [-k 8]
   - text search over docs/signs:     --text-search "terminal tail formula"
   - cross-modal text->image (CLIP):  --clip-search "fish sign"   (needs CLIP-text embeddings)
 
 item_id conventions: doc:<file>, wit:<witness_id>, sign:<sign_uid>, img:<repo-rel path>.
-Brute-force cosine over normalized vectors (instant at this corpus's scale).
+Similarity is brute-force cosine over normalized vectors — no index needed, because at
+this corpus's scale it is instant.
 """
 import argparse, sys
 from pathlib import Path

@@ -1,3 +1,21 @@
+// Builds the first manual "plate request packet": a worksheet for asking
+// archives or publications for photographs of specific tablets. The target is
+// the highest-value contrast found so far — objects where a 033 short mark
+// sits after the longer text, or a 034 short mark sits before it, both
+// alongside the +400-740-176+ sequence. Photographs can confirm or kill that
+// contrast; statistics alone cannot.
+//
+// The script reads lipi_short_mark_side_relation_validation_sheet.csv, keeps
+// only the two P1 priority classes, and groups the rows by artifact. Each
+// packet row is pre-filled with everything an examiner needs to locate the
+// object (catalog ids, excavation ids, dimensions, side texts) plus a block
+// of deliberately blank evidence fields (source citation, plate id, per-check
+// verdicts) and the closed list of allowed validation outcomes.
+//
+// Outputs: lipi_short_mark_plate_request_packet.csv (the worksheet, consumed
+// by the public lead search script) and _summary.json. A request packet only
+// — no reading of any sign is assumed or implied.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

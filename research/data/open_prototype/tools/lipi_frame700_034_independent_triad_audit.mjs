@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// A "triad" here is one 034-bearing target object paired with its closest 033 and 032
+// control siblings. This script audits how independent each triad really is, because a triad
+// built from copy-family duplicates or reused controls is weaker evidence than it looks. It
+// reads the triad packet CSV and the source-acquisition manifest CSV, then scores every triad
+// on concrete pressure signals: how often the target's long-side token set repeats across
+// triads, how large its acquisition sequence family is, how often each control is reused,
+// whether target and controls share material and shape, whether any source hook (catalog or
+// figure reference) is missing, and direction flags. Each triad gets an evidence tier (A
+// source-ready down to D hook-gap), an independence score, and a next action. It writes the
+// ranked audit CSV, an archive-request batch CSV for the top 10 complete triads (three rows
+// each: target, 033 control, 032 control), and a JSON summary. Ordering only -- no readings.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 

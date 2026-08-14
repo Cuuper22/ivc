@@ -1,3 +1,13 @@
+// Leave-one-site stress test for the terminal-governor edges. The worry: the
+// seven edges (002-817, 002-820, 002-861, 060-920, 060-550, 060-820,
+// 060-692) might be the habit of one site, mostly Mohenjo-daro, rather than
+// script-wide grammar. We read the filtered corpus metadata (complete texts
+// only) and rescore each edge once per excavation site, dropping that site's
+// rows each time. Scoring collapses to exact cells keyed by edge, following
+// context, text, site, type, and symbol, then counts how many cells are
+// text-final. Edges 002-861 and 060-692 are tracked as "near_leaky" rather
+// than strict closures. Writes a JSON summary with the interpretation and a
+// CSV with one row per (left-out site, edge).
 import fs from 'node:fs';
 import path from 'node:path';
 

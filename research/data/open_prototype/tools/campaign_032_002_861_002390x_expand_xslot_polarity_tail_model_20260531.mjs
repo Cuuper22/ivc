@@ -1,6 +1,19 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script builds a polarity model of the X slot: every X sign in the Indus 002-H-X
+// construction either pushes the inscription shut or holds it open. It reads
+// data/open_prototype/lipi/metadata_filtered.csv, computes each sign's global terminal rate
+// as a baseline, then classifies every X sign with at least 3 occurrences into one of four
+// polarity classes — terminal_booster (closes far more inside the frame than outside),
+// open_operator (usually continues), global_edge (terminal everywhere, so the frame adds
+// nothing), or mixed. For open signs it also measures the Shannon entropy of their tails:
+// low entropy means the continuations repeat, which looks like grammar; high entropy looks
+// like noise. Class-level rows then map polarity to rough roles (closure classifier,
+// valency/linker operator, borrowed edge sign), and three bets stake the model, with 095/705
+// as classifier candidates and 530/125 as linkers. Writes per-sign, per-class, occurrence,
+// and bets CSVs plus a summary JSON to reports/.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

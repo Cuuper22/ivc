@@ -1,3 +1,15 @@
+// Bundles three linked claims about sign `806` into one test: it is enriched on
+// rectangular seals (SEAL:R); it is a boundary pivot, preferentially followed by
+// the end of the row or by sign 002; and it sits inside the narrow template
+// `154/158-806-46x` (x in 465..475) that clusters in SEAL:R and TAB:B rows. All
+// three are slot/register claims — no sound value. The script reads
+// metadata_filtered.csv, collapses duplicate sign sequences, and runs: an all-sign
+// SEAL:R enrichment scan with Bonferroni and a 2,000-iteration max-stat forger
+// (across all-rows, complete, non-poor, leave-Mohenjo, and leave-Harappa pools);
+// an all-sign boundary-next ranking for signs with at least 20 occurrences; and an
+// exact motif census checking that at least 85% of motif rows are SEAL:R/TAB:B.
+// Writes a bet summary (JSON + CSV) plus context-pool, support-row, motif-row, and
+// boundary-ranking CSVs to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

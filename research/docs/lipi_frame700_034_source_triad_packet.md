@@ -4,7 +4,7 @@ Date: 2026-05-25
 
 ## Question
 
-For every live non-H `034` row, what exact `033` and `032` source controls should be checked beside it?
+This note pairs each object under test with the two objects it should be compared against. FRAME700 is the project's label for short inscription rows built on sign `700`, such as `+700-034+`; the `034` work asks whether the sign codes `032`, `033`, and `034` are separate choices in the same slot. A control is a comparison object that matches the target in shape, size, site, and material, so the sign code is close to the only thing that differs; a target plus its two controls is a triad. The question: for every live non-H `034` row, what exact `033` and `032` source controls should be checked beside it?
 
 The point is to make the next plate request contrastive:
 
@@ -58,6 +58,8 @@ Counts by readiness:
 ## Top Triads
 
 ### 1. Cleanest `+002-861-416+` Representative Triad
+
+A source hook is an identifier in our own records that can be searched for in an archive.
 
 | Role | CISI | Row | Text | Source hook |
 | --- | --- | --- | --- | --- |
@@ -126,7 +128,7 @@ Preserve functional contrast:
 Downgrade to object-format association:
 034 is visible, but matched 033/032 controls show the same side/context behavior once source dimensions and side coverage are corrected.
 
-Kill the residue:
+Kill the residue, meaning the leftover pattern that has survived the controls run so far:
 034 collapses into 033/032; order is direction normalization; longer rows are missegmented; no-longer status is missing imaging; or the contrast is only duplicate/copy family.
 ```
 

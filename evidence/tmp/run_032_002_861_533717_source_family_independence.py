@@ -1,3 +1,14 @@
+"""Tests whether the 533-717 witnesses are independent artifacts or one copy family.
+
+This script reads the filtered corpus metadata for seven focus objects (M-1954, M-355,
+M-376, M-391, M-1267, M-1273, M-1973), with M-376 and M-391 as the targets. It carries
+inline source routes and visual observations for each object, draws comparison
+overlays with PIL into tmp/032_002_861_533717_source_family_independence, and asks
+whether the two targets are independent witnesses or exact copies of one seal. It
+writes a rows CSV and a summary JSON. The recorded decision: two artifact witnesses,
+exact copy rejected, one narrow register family cell for linguistic weighting.
+"""
+
 from __future__ import annotations
 
 import csv

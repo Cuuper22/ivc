@@ -1,3 +1,14 @@
+"""Component ecology for the candidate two-sign unit 533-717.
+
+This script reads the filtered corpus metadata (data/open_prototype/lipi/
+metadata_filtered.csv) and studies where the signs 533 and 717 occur — together,
+separately, and in what positions. The question: does 533-717 behave like a
+decomposable phrase whose parts have independent lives elsewhere in the corpus, or
+like a fixed terminal two-sign unit after 002-861? It writes ecology CSVs, a summary
+JSON, and a docs/ markdown note under the campaign prefix. This is a structural
+census; it accepts no sign value, reading, or translation.
+"""
+
 from __future__ import annotations
 
 import csv

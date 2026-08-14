@@ -36,7 +36,7 @@ Decision: no public exact bridge for `3335.1`.
 
 ## False Leads
 
-The scout did find public private-collection and public bull/zebu comparanda, but none bind the target.
+The scout did turn up public private-collection listings and public bull/zebu comparanda — objects that look like the target's family — but none of them binds the target.
 
 | Candidate | Why It Is Not `3335.1` |
 |---|---|
@@ -46,7 +46,7 @@ The scout did find public private-collection and public bull/zebu comparanda, bu
 | Barnebys/Apollo grey stone bovine seal | Private collection but `41mm x 40mm`; no target sequence. |
 | Cleveland Museum of Art `1973.160` / Harappa zebu page | Useful zebu/bull public comparandum, but public museum accession, `3.2 x 3.2 cm`, Chanhu-darho route, not a private-collection target. |
 
-The auction/private-collection ecosystem is useful only as search terrain. It is not admissible evidence unless an object image/caption/sequence bridge matches the target.
+The auction/private-collection ecosystem is useful only as search terrain — places to keep looking. It is not admissible evidence unless an object image/caption/sequence bridge matches the target.
 
 ## Decision
 

@@ -1,3 +1,22 @@
+// Site-balanced resampling control for the directionality candidate.
+//
+// The harsh corpus is dominated by Mohenjo-daro; a smaller site contributes
+// far fewer rows. If the stored-vs-reversed order asymmetry only appears
+// because one site swamps the bigram model, it is a site artifact, not a
+// corpus property. This script rebuilds the harsh scope from
+// lipi_scope_rows.csv (exact collapse, top-10 edge removal, one-edit family
+// collapse) and runs three balanced designs: 2 sites (Mohenjo-daro +
+// Harappa), 3 sites (+ Lothal), and 5 sites (+ Chanhu-daro, Kalibangan). In
+// each of 500 iterations (default; --iterations=N overrides) it samples an
+// equal number of rows per site — capped at the smallest site's count —
+// scores stored order against reversed order with the leave-one-row-out
+// smoothed bigram test, and pairs that observed score with six shuffle nulls
+// run on the exact same sampled rows. Outputs in
+// data/open_prototype/reports/: a JSON summary with the site inventory, a
+// per-design CSV, a per-iteration CSV, and a null summary CSV. A positive
+// result rules out raw site imbalance as the sole cause; it does not prove
+// physical direction or generalization beyond the sampled sites.
+
 import fs from 'fs';
 import path from 'path';
 

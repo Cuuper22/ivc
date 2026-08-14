@@ -1,3 +1,14 @@
+"""Builds register-control crops for the 533-717 gate.
+
+This script carries two inline lists: TARGETS, the objects with locally stored page
+images that can be cropped now, and PENDING, the objects whose source images still
+need acquisition. For each target it cuts the panel and signband crops with PIL,
+hashes them, and saves them under tmp/032_002_861_533717_register_controls. It writes
+a crops CSV, a pending CSV, and a summary JSON to the reports directory. The point is
+to give the 533-717 comparison real same-register control images instead of catalog
+rows alone; no token identity or value is accepted by this script.
+"""
+
 from __future__ import annotations
 
 import csv

@@ -2,9 +2,11 @@
 
 Date: 2026-05-25
 
+This note explains an absence. When the project tried to line up its own sign numbers against published sign lists, one sign — `034` — came back with nothing. An absence can mean the sign was filtered out by a rule, or that it was never in the compared material at all. Those are very different problems, and this note works out which one it is.
+
 ## Question
 
-Why did `034` have no clean Mayig/Parpola crosswalk candidate?
+Why did `034` have no clean Mayig/Parpola crosswalk candidate? A crosswalk lines up one sign-numbering system against another, sign by sign.
 
 Possibilities:
 
@@ -111,7 +113,7 @@ The previous variant crosswalk pressure result should be read more sharply:
 - `154/156` is a real current crosswalk-collapse problem because both signs are present in the clean overlap and both align to `P004`.
 - `033/034` is not a current crosswalk-collapse problem. `033` is present and maps to `P147`; `034` is absent from the current overlap.
 
-This makes `034` a source-coverage and sign-list-acquisition problem before it is an allograph problem.
+This makes `034` a source-coverage and sign-list-acquisition problem before it is an allograph problem — a question of which shapes count as variants of the same sign.
 
 ## Boundary
 

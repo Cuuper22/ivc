@@ -1,3 +1,18 @@
+// This script turns a close reading of Parpola 2019 (his text no. 12, the
+// bone rod M-2104, and its named parallels and controls) into structured,
+// testable rows. The prose claims the rod begins with UIII (a pot sign plus
+// three strokes) followed by his signs 15 and 1, while tablets M-478, M-480,
+// and M-1425 show UIIII followed by signs 15 and 107. Our local corpus has
+// M-2104 as +151-097-700-034+ and the tablets as +400-097-700-004+, which
+// lines up sign by sign if 097 is his sign 15, 151 is sign 1, 400 is sign
+// 107, and 700-034 / 700-004 are the pot-count clusters. The script joins
+// nine hand-encoded context specs (targets, parallels, controls, and two
+// unresolved conflicts) against the filtered Lipi metadata, records each
+// object's local text in both reading directions, and writes six explicit
+// mapping hypotheses with evidence grades and the next test each one needs.
+// Outputs: context rows CSV, hypotheses CSV, and a JSON summary. Every row
+// carries accepted_mapping/accepted_decipherment_claim = 0 — these are
+// hypotheses to chase, not results.
 import fs from 'node:fs';
 import path from 'node:path';
 

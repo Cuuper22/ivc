@@ -2,6 +2,8 @@
 
 Date: 2026-05-30
 
+This note re-scores the `002-390-X` branch pattern after "source normalization" — that is, after checking which of the rows behind the pattern can actually be seen on published source photographs, rather than trusted from catalogue transcriptions alone. The question is whether the leading branch sign `125` still looks interesting once only source-visible evidence counts.
+
 ## Question
 
 After the earlier `002-390-125` branch pass, does source normalization make `125` more alive, or does it dissolve into catalog/index noise once compared against source-visible non-`125` continuations?
@@ -10,9 +12,9 @@ After the earlier `002-390-125` branch pass, does source normalization make `125
 
 `125` is upgraded, but not translated.
 
-The prior state treated `M-119` as Mayig-only and `M-735` as an index-hint. This pass upgrades both: `M-119` is visible on CISI India `n076`, and `M-735` is visible on CISI Pakistan `n086`. `Sktd-1` is also panel-bound on CISI India `n397`, though it stays below strict token proof. `M-38` remains weak: the public context exists, but the signband is too faint for token-level promotion.
+The prior state treated `M-119` as Mayig-only (attested only in the second corpus) and `M-735` as an index-hint. This pass upgrades both: `M-119` is visible on CISI India `n076`, and `M-735` is visible on CISI Pakistan `n086`. `Sktd-1` is also panel-bound on CISI India `n397` — the labeled object is visible on the page — though it stays below strict token proof. `M-38` remains weak: the public context exists, but the signband (the strip of the seal carrying the inscription) is too faint for token-level promotion.
 
-That changes the branch from "mostly source-dark" to "source-visible plurality candidate." It still does not give a sign value. The source-visible controls `M-70` (`002-390-692`) and `M-71` (`002-390-095`) show that `002-390` can continue without `125`, so `125` cannot be a necessary continuation marker.
+That changes the branch from "mostly source-dark" (no inspectable source images) to "source-visible plurality candidate." It still does not give a sign value. The source-visible controls `M-70` (`002-390-692`) and `M-71` (`002-390-095`) show that `002-390` can continue without `125`, so `125` cannot be a necessary continuation marker.
 
 Strict source-visible `125` candidates: 2 (`M-119 M-735`).
 
@@ -23,6 +25,8 @@ Strict source-visible non-`125` controls: 2 (`M-70 M-71`).
 Contact sheet: `C:\Users\Acer\OneDrive\Documents\ivc\tmp\002390x_source_normalization\campaign_032_002_861_002390x_source_normalized_contrast_contact_sheet.jpg`
 
 ## Branch Contrast
+
+Each line below is one branch sign X in `002-390-X`, with its row count and how many of those rows are source-visible:
 
 - `125`: 4 rows; strict source-visible 2 (M-119 M-735); decision: live_plurality_candidate_no_value; upgraded by M-119/M-735, still not necessary because source-visible non-125 controls exist
 - `095`: 2 rows; strict source-visible 1 (M-71); decision: source_visible_non125_control_against_125_necessity
@@ -79,7 +83,7 @@ What did not change: `125` is not necessary after `002-390`; `M-70` and `M-71` a
 
 ## Next Acquisition Targets
 
-1. Token-box `M-119`, `M-735`, `M-71`, `M-70`, and `Sktd-1` from the public plates.
+1. Token-box `M-119`, `M-735`, `M-71`, `M-70`, and `Sktd-1` from the public plates. (Token-boxing means drawing boxes around each sign on the photograph so the sign count and order can be judged from the image alone.)
 2. Route `H-1993` to test the `004->002-390` split against `Sktd-1`.
 3. Route `M-1825` and Dholavira `4237.1` to decide whether repeated `705` is a real non-`125` branch.
 4. Acquire a sharper `M-38` image before using it as anything stronger than weak formula-family support.

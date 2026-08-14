@@ -1,3 +1,16 @@
+// Asks whether 390 is a special "head" sign or just one of many. In a
+// 002-H-X frame, the head H comes right after 002 and X right after H. This
+// script collects every such frame from the local Lipi metadata, then for each
+// head seen at least 5 times computes its X inventory: how many distinct X
+// values follow it, how often they repeat, and how often the inscription stays
+// open after X. A small classifier sorts heads into types (closed template,
+// open template, mixed inventory, diffuse inventory, terminal default, open
+// default). Writes head rows and decisions CSVs plus a summary JSON to
+// data/open_prototype/reports/. Recorded verdict: 390 is a mixed inventory
+// head, but so are others — it is demoted from "special" to one member of a
+// head taxonomy, and only its repeated X classes (125, 095, 705) carry
+// candidate weight.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

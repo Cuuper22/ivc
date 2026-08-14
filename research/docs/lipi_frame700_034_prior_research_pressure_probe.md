@@ -4,7 +4,7 @@ Date: 2026-05-25
 
 ## Question
 
-What does prior work force us to do to the live `FRAME700` `034` candidate?
+This note turns published scholarship into concrete demands on our own live candidate. FRAME700 is the project's label for short inscription rows built on sign `700`, such as `+700-034+`; the `034` candidate is the idea that the sign code `034` behaves as a distinct choice in that slot. The question: what does prior work force us to do to that candidate?
 
 This is not a literature review for decoration. Each cited prior claim is converted into pressure on the current candidate: support, downgrade, kill condition, or next evidence demand.
 
@@ -44,7 +44,7 @@ overall null p95: 0.425982
 
 Interpretation:
 
-The `034` branch remains alive as a distributional residue under a harsh block policy. The overall classifier is weak, but the `034` recall is still above every tested null iteration in this local run. That is not a translation. It is a reason to keep the candidate under source validation instead of dropping it.
+A null here is a deliberately meaningless version of the data — labels shuffled within matched blocks — that shows how large an apparent effect chance alone produces. The `034` branch remains alive as a distributional residue, a leftover pattern that has survived the controls run so far, under a harsh block policy. The overall classifier is weak, but the `034` recall is still above every tested null iteration in this local run. That is not a translation. It is a reason to keep the candidate under source validation instead of dropping it.
 
 ## Pressure Outcomes
 
@@ -67,7 +67,7 @@ Before this probe, prior work was mostly background. Now it actively changes the
 2. The Farmer/Sproat/Witzel and Sproat objections are not dismissed. They demote repeated-family evidence and forbid global entropy-style confidence.
 3. Kenoyer/Meadow force the next step back to object-side source images.
 4. Daggumati/Revesz keep `+700-034+` versus `+034-700+` unresolved until direction and mirror status are source-checked.
-5. Rao 2018 gives a plausible administrative-use lane, but the current evidence cannot yet say what `034` does.
+5. Rao 2018 gives a plausible administrative-use lane — a lane being one of the separate evidence tracks the project runs, kept apart so a result in one does not lean on the other — but the current evidence cannot yet say what `034` does.
 
 ## Boundary
 

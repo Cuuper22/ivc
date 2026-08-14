@@ -2,9 +2,11 @@
 
 Date: 2026-05-31
 
-Vector: V1 diffuse Meluhha bilingual source acquisition.
+Vector: V1 diffuse Meluhha bilingual source acquisition. A vector is one of the project's standing lines of attack; V1 is the search for a bilingual text — an inscription carrying both Indus signs and a readable script — somewhere in the Gulf trade record.
 
-This is not an external-anchor claim. It is a guardrail against a tempting source-route mistake: treating any CDLI Kjaerum/Failaka record as if it were one of the two Laursen Gulf INDUS Failaka targets.
+This note records an acquisition check: an attempt to get hold of two specific published seal catalogue entries. It is not an external-anchor claim. An external anchor is evidence from outside the Indus corpus that would independently fix something about it, and we have none.
+
+The note exists as a guardrail against a tempting source-route mistake: treating any CDLI Kjaerum/Failaka record as if it were one of the two Laursen Gulf INDUS Failaka targets. CDLI is the Cuneiform Digital Library Initiative, an online catalogue of Near Eastern objects. Laursen's Table 1 lists Gulf-region seals bearing Indus text; two of them cite Kjaerum's 1983 Failaka catalogue, numbers 279 and 319. A record that merely sits near those in the same publication is not the same object.
 
 ## Artifacts
 
@@ -20,7 +22,7 @@ This is not an external-anchor claim. It is a guardrail against a tempting sourc
 
 ## What Was Re-earned
 
-Laursen Table 1 keeps two Failaka Gulf INDUS targets live:
+Re-earned means checked again from the sources rather than inherited from an earlier note. Laursen Table 1 keeps two Failaka Gulf INDUS targets live:
 
 | Laursen no. | Reference | Current local link | Status |
 | --- | --- | --- | --- |

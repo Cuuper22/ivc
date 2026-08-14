@@ -1,3 +1,15 @@
+// The pair `060-692` usually ends an inscription, but five exact-collapsed rows keep
+// going. This script asks whether those five exceptions are "internal restarts":
+// the sign right after 692 belongs to an opener class (signs that, corpus-wide,
+// start inscriptions at least half the time, with 5+ occurrences), so 692 may close
+// a local unit and hand off to a new phrase rather than fail as a cap. It reads
+// metadata_filtered.csv (complete rows only), builds the opener class objectively
+// from initial-position shares, collapses bigram cells exactly, and checks how many
+// of the 060-692 nonterminal tails land in the opener class. A 5,000-iteration null
+// draws tails from the pool of all nonterminal continuation signs, both for the
+// fixed 060-692 branch and as a max-stat over comparable branches (>=20 cells, 3-10
+// nonterminal tails, terminal share >=0.5). Writes a JSON report plus branch
+// comparator and opener-class CSVs to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

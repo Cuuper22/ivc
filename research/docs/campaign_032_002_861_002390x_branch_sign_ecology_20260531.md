@@ -6,7 +6,7 @@ Status: active campaign gate, not goal completion.
 
 ## Run control
 
-This recheck deliberately does not use the post-cutoff `source_normalized_family_collapse` artifact or any successor-era conclusion as evidence. The live source-thread checkpoint said `002-390-X` had 15 rows and 10 next signs; this run independently re-derived those 15 adjacent `002-390` frames from `data/open_prototype/lipi/metadata_filtered.csv`.
+This recheck deliberately does not use the post-cutoff `source_normalized_family_collapse` artifact or any successor-era conclusion as evidence. The live source-thread checkpoint said `002-390-X` had 15 rows and 10 next signs; rather than trust that, this run independently re-derived those 15 adjacent `002-390` frames from `data/open_prototype/lipi/metadata_filtered.csv`.
 
 No value, phonetics, language identity, function, sign meaning, or translation is accepted.
 
@@ -119,7 +119,7 @@ The basic pattern survives: in the `002-390-X` frame, `125` is still the largest
 | `692` | 77 | 1 | 58 | 18 | Closure after `002-390-692` cannot be generalized to sign `692` alone. |
 | `705` | 219 | 2 | 57 | 160 | `705` is often continuing outside the frame, so terminal `002-390-705` is a frame/local fact, not a sign-value fact. |
 
-This is the strongest result of the gate. The pattern is not reducible to raw sign behavior. The same signs behave differently outside `002-390-X`, which keeps the positive model alive as a branch-conditioned constructional ecology. It also blocks any simple claim that `125` means "continue" or that `095/692/705` mean "close".
+This is the strongest result of the gate. The pattern cannot be reduced to raw sign behavior: the same signs behave differently outside `002-390-X`. That keeps the positive model alive as a branch-conditioned constructional ecology, and it also blocks any simple claim that `125` means "continue" or that `095/692/705` mean "close".
 
 ## Adversarial checks
 
@@ -228,7 +228,7 @@ The `125-632-032` family is also not unique to `002-390-125`. Metadata rows with
 
 Decision: the positive model can keep "branch-conditioned continuation" as a structural hypothesis. It cannot claim that `125-632-032` is a unique grammatical continuation created by `002-390`.
 
-These do not kill the constructional model. They do kill a lazy version of it. The current claim cannot be "125 is the continuation sign." The only defensible claim is narrower:
+None of this kills the constructional model. It kills a lazy version of it. The current claim cannot be "125 is the continuation sign." The only defensible claim is narrower:
 
 `002-390-X` may be a branch-conditioned frame where the branch slot changes tail behavior, but this needs source-bound row-by-row confirmation and family/register collapse before it can count as linguistic structure.
 

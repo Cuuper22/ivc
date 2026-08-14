@@ -1,3 +1,16 @@
+// Pins down what kind of "open" sign 530 is, using 125 as the comparison. Both
+// appear in the X slot of 002-H-X frames and both usually continue the
+// inscription, but continuing can mean different things: 125 opens a tail menu
+// of several signs, while 530 might open exactly one slot and stop. This script
+// deduplicates the local Lipi metadata by sign text, extracts every 002-H-530
+// and 002-H-125 frame with its tail, measures how often each ends after exactly
+// one complement, and counts "direct shadows" — rows where the same head takes
+// the complement directly, without the X sign in between. Writes 530 target
+// rows, a 530-versus-125 comparison, and decisions CSVs plus a summary JSON to
+// data/open_prototype/reports/. Recorded verdict: 530 is a one-complement
+// linker, not a peer of 125 — proof that open X signs split into operator
+// subtypes. The H-773 row (002-390-530-741) stays a subcase, not a translation.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

@@ -4,7 +4,9 @@ Date: 2026-05-29
 
 ## Purpose
 
-The harsh directionality scope is site-imbalanced. After top-10 edge removal and one-edit-family collapse, the current Lipi T3 layer has 365 rows:
+This note records a control run against the directionality candidate — the working result that Indus inscriptions score better in their recorded order than reversed. It exists because that result might be nothing but an accident of where the inscriptions come from.
+
+The harsh directionality scope — "harsh" meaning the filtered slice built to make the result as hard to obtain as possible — is site-imbalanced. After top-10 edge removal (dropping rows whose first or last sign is one of the ten commonest) and one-edit-family collapse (counting near-identical inscriptions once), the current Lipi T3 layer, our catalog-derived working table, has 365 rows:
 
 | Site | Rows |
 | --- | ---: |
@@ -20,7 +22,7 @@ The harsh directionality scope is site-imbalanced. After top-10 edge removal and
 | Khirsara | 1 |
 | Unknown | 1 |
 
-This control asks whether the directionality signal is just raw site imbalance. It repeatedly samples equal row counts from selected sites, scores stored order versus reversed order, and compares paired null scores on the same sampled rows.
+This control asks whether the directionality signal is just raw site imbalance. It repeatedly samples equal row counts from selected sites, scores stored order versus reversed order, and compares paired null scores on the same sampled rows. A null is the same scoring run on deliberately scrambled data, so it shows how often chance alone would produce what we see. Stored-win share below is the fraction of rows where the stored order beats the reversed order.
 
 ## Result
 

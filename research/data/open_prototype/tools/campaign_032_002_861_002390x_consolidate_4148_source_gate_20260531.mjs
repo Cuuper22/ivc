@@ -1,3 +1,16 @@
+// Records the source gate on row 4148.1, the cleanest potential kill switch
+// against the X=000 terminal candidate. Its text +740-690-435-255-002-267-000-033+
+// would show meaningful payload (033) after 000 — but only if a source image
+// confirms the sequence is continuous on one side of the object. This script
+// pulls the target row's full metadata from the local Lipi table (no CISI id,
+// no excavation number, no dimensions), logs the exact public web searches that
+// were tried and their negative results, and writes an adjudication table
+// spelling out what each possible source outcome would do to X=000 (demote,
+// keep with warning, remove the kill switch, or leave unpromoted). Writes
+// target, searches, and adjudication CSVs plus a summary JSON to
+// data/open_prototype/reports/. Current state: no source found, so X=000 stays
+// a candidate with a robustness warning, neither promoted nor killed.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

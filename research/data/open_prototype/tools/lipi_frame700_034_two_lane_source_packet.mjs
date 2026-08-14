@@ -1,6 +1,20 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script cuts the full triad list down to a deliberate working set of nine triads in
+// three lanes, each answering a different failure mode: four "independent low copy" triads
+// (does the 034 contrast escape copy families?), four "local contrast stress" triads (does
+// it survive strict local matching?), and one optional "repeated branch check". The lanes
+// and their target objects are hard-coded in triadPlan. It reads the triad packet, the
+// matched-contrast stability grades, and the corpus metadata, then writes two worksheets:
+// a packet CSV with one row per participant (target, 033 control, 032 control -- 27 rows)
+// carrying source hooks, ready-made public search queries, and grade/downgrade/kill
+// criteria; and a coding sheet CSV with one row per catalog metadata row (51 rows) whose
+// ~30 manual fields (side order basis, direction basis, mirror status, subtype
+// separability, ...) all start as unknown/uncertain for a human to fill from source images.
+// A JSON summary counts lanes, roles, and hook grades. It is a request-and-coding packet,
+// not a validation.
+
 const base = process.cwd();
 const dataDir = path.join(base, 'data', 'open_prototype');
 const reportsDir = path.join(dataDir, 'reports');

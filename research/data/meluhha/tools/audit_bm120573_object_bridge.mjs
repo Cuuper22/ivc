@@ -1,3 +1,14 @@
+// Audit of one specific object: British Museum seal BM 120573 (U.7683, found at
+// Diqdiqqah near Ur). It is the closest thing to a dream object — an Indus-style
+// seal with a cuneiform inscription — so this script checks whether it can serve
+// as a phonetic bridge between the two scripts. The BM/Gadd facts are hard-coded
+// above: the seal shows a bull and an uncertain cuneiform reading ("sak-ku-shi-?"
+// per Gadd 1932 no.1), but no recorded Indus sign sequence. The script then reads
+// every Ur row in external_indus_objects.csv and tries to map each one to the BM
+// object, recording shape, script, and site mismatches per row. It writes an
+// audit CSV and a JSON summary. Conclusion: the object route is real, but zero
+// local rows map to it and there is no Indus text on the seal to anchor, so
+// BM 120573 is not an external phonetic anchor.
 import fs from 'node:fs';
 import path from 'node:path';
 

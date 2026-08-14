@@ -1,3 +1,15 @@
+// Null test for the third slot in 520-220-X sequences: does the sign X predict whether the
+// inscription closes right there or continues, better than knowing the site and object type
+// would? We load the extraction rows from campaign_520_220_x_extraction_addendum.csv, keep
+// only rows with a clean behavior label (terminal_closed versus medial_with_closed_tail),
+// and score a leave-one-out majority-vote predictor twice — once keyed on the third-slot
+// sign, once on site+type — in two scopes: raw rows, and rows collapsed to one per exact
+// inscription text (so copies cannot vote twice). Five seeded null models then shuffle the
+// closure labels globally or within site/type/material/shape blocks (5,000 iterations each,
+// overridable via the IVC_520_220_CONTEXT_ITERATIONS environment variable) to see how often
+// chance matches the observed accuracy and its gain over the site+type baseline. The claim
+// under test is contextual only — slot behavior, not sign meaning. Writes iteration and
+// scope-row CSVs plus a JSON summary to data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

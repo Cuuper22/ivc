@@ -2,9 +2,11 @@
 
 Date: 2026-05-25
 
+This note is a recheck of public and archive sources for four Harappa tablets. It exists because the two best minimal contrasts in the H-2218 through H-2239 series — pairs of tablets whose inscriptions differ by exactly one sign — sit in manufacturing group 3, and we still have no photographs good enough to confirm them.
+
 ## Question
 
-Can the checked public/archive layer get us any closer to source-grade evidence for the group-3 minimal contrasts, specifically `H-2237/H-2233` for `154/156` and `H-2238/H-2230/H-2233` for `033/034`?
+Can the checked public/archive layer get us any closer to source-grade evidence — images sharp and well-documented enough to verify individual signs — for the group-3 minimal contrasts, specifically `H-2237/H-2233` for `154/156` and `H-2238/H-2230/H-2233` for `033/034`?
 
 ## Inputs
 
@@ -34,7 +36,7 @@ This recheck did not find public plates for the four objects. It did sharpen the
 | Need | Route now identified |
 | --- | --- |
 | Exact object identity | Meadow/Kenoyer 2000 Fig. 4 anchors the four targets to `H96-3125/6937-16`, `H95-2613/6560-01`, `H97-3311/8040-10`, and `H97-3341/8039-10`. |
-| Source-grade images and all-side plates | CISI 3.1 is the correct Mohenjo-daro/Harappa supplement route. The Finnish Academy page reports thousands of photographs and line drawings in the volume. |
+| Source-grade images and all-side plates | CISI 3.1 — volume 3.1 of the Corpus of Indus Seals and Inscriptions — is the correct Mohenjo-daro/Harappa supplement route. The Finnish Academy page reports thousands of photographs and line drawings in the volume. |
 | End-matter/object metadata | The CISI 3.1 contents route includes basic data for illustrated Harappa objects and HARP excavations `H-1521` to `H-2583`. |
 | Library route | Finna records a hardcover CISI 3.1 copy and holdings through nine Finnish libraries. |
 | Direct image route | Harappa image-rights page says non-commercial scholarly use is usually free and directs inquiries through contact. |
@@ -42,7 +44,7 @@ This recheck did not find public plates for the four objects. It did sharpen the
 
 ## Adversarial Gate
 
-Locke's useful kill list is now part of the source request rather than a separate philosophical scold.
+Locke's kill list — the concrete findings that would kill the upgrade — is now built into the source request rather than left as a separate philosophical scold.
 
 Kill the slot-function upgrade if any of these happen:
 

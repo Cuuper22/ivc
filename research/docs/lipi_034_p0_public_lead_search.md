@@ -2,6 +2,10 @@
 
 Date: 2026-05-25
 
+This note is a lead search. A previous note produced a ranked list of objects worth acquiring; the six most urgent are labelled P0. Here each of those six is chased through the open literature to see what, if anything, is already public.
+
+The result is deliberately mundane: URLs, page numbers, plate labels, and the exact wording of what each source does and does not say. Prior work is evidence to interrogate, not authority to obey. Gated, used below, means an object is visible in a source but still barred from decipherment use until a specific missing check is done.
+
 Question:
 
 ```text
@@ -29,6 +33,8 @@ accepted decipherment claims: 0
 ```
 
 ## Object Leads
+
+One entry per P0 object: our transcription, the public source found, the exact datum extracted, and what it may be used for.
 
 ### M-2104
 
@@ -74,7 +80,7 @@ Use:
 
 - Follow-up source probe inspected the route. CISI Vol. 1 IA leaf `n113` / printed p. 78 is source-visible and labels `M-315 A` and `M-315 a` under `MOHENJO-DARO 313-317 SEALS` / `no iconography; silver`.
 - CISI Vol. 1 IA leaf `n403` / printed p. 368 is also source-visible and shows `M-315 1395 VS 1190 ASI 63.10.117 HU 318`.
-- This upgrades M-315 to source-visible object binding, but not to accepted numeric sign mapping. Exact `034` identity, direction, and source transcription convention remain gated.
+- This upgrades M-315 to source-visible object binding — a published page tying our row to a pictured object — but not to accepted numeric sign mapping. Exact `034` identity, direction, and source transcription convention remain gated.
 - Targeted local contrast: 37 rows match `390-X-002`, only one matches `390-034-002`, and only three rows begin `390-034` (`Ai-7`, `H-335`, `M-315`).
 
 ### M-1206
@@ -95,7 +101,7 @@ Use:
 
 - This is an object-level image lead.
 - It does not contain sign transcription, but it gives an image-bearing public route back to CISI.
-- Follow-up source probe rendered Fig. 3 and found a real downgrade: the caption says `M-1206`, but the running text says `M-2016 (Fig. 3)`. Treat this lead as source-gated until CISI/HARP confirms object identity and all-side row binding.
+- Follow-up source probe rendered Fig. 3 and found a real downgrade: the caption says `M-1206`, but the running text says `M-2016 (Fig. 3)`. Treat this lead as source-gated — barred from use until a published source settles it — until CISI/HARP confirms object identity and all-side row binding.
 
 ### M-685
 
@@ -160,6 +166,8 @@ Use:
 
 ## Boundary
 
+The hard line between what was gathered and what the project is allowed to claim.
+
 Accepted translations: 0
 
 Accepted phonetic values: 0
@@ -176,4 +184,4 @@ This is source data gathering. Prior work is evidence to interrogate, not author
 2. Compare the extracted sequence to `+151-097-700-034+` under all plausible tokenizations.
 3. Inspect or acquire CISI photo/record for M-2104 before accepting any sign-number alignment.
 4. For M-315, M-685, and M-1584, finish the narrow source gates: high-resolution images, image conventions, direction bases, source transcription conventions, and metadata reconciliation.
-5. Send M-1963 straight to direct CISI/HARP request lanes.
+5. Send M-1963 straight to direct CISI/HARP request lanes — the parallel track for asking archives directly rather than searching the open literature.

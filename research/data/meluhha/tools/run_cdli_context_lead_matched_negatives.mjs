@@ -1,3 +1,16 @@
+// The matched-negative gate (2026-05-29) for the mined cuneiform context leads.
+// A lead phrase is only interesting if it sticks to Meluhha; a phrase that
+// shows up everywhere is just common vocabulary. For each query from the lead
+// query plan (plus hand-added matched negatives; overly broad one-token queries
+// like "ma2" or "gug" are skipped by constant), this script searches the live
+// CDLI API — up to 5 pages of 100 artifacts — and re-parses every returned ATF
+// text locally to find query lines and Meluhha lines. Two false-positive rates
+// per query: the share of query-line artifacts with no Meluhha line anywhere,
+// and the share with no Meluhha line within one line. The gate: at least 2
+// query-line artifacts, anywhere-FPR at or below 0.2, adjacency-FPR at or
+// below 0.5 — and even passing only earns "candidate_only". Duplicate editions
+// are flagged by hashing inscriptions. Writes summary, artifact, and fetch-log
+// CSVs plus a JSON summary with zero accepted anchors.
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';

@@ -1,6 +1,17 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// A control experiment for the role-switch finding. An earlier script showed that the focus
+// signs 095, 125, 530, and 705 behave differently in the head slot (right after 002) than in
+// the X slot (right after the head). But that could be an artifact of object type: maybe seals
+// use one pattern and tablets another, and the "role switch" is really a domain switch.
+// So this script reads the same inscriptions from data/open_prototype/lipi/metadata_filtered.csv,
+// buckets each occurrence by domain (seal, tablet, pot, tag, or the raw type), and re-runs the
+// head-versus-X comparison inside each domain separately. If the asymmetry still shows up
+// within a single domain — especially seals, the largest one — it cannot be blamed on object
+// type. It scores two bets on the seal-domain results for signs 125 and 705, and writes an
+// occurrence CSV, a per-sign-per-domain CSV, a bets CSV, and a summary JSON to reports/.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

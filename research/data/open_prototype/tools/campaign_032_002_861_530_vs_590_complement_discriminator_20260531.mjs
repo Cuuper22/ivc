@@ -1,3 +1,14 @@
+// Head-to-head discriminator: is sign 530 special as a "complement linker", or does sign 590
+// behave the same way? A complement linker here means a branch sign in a governed frame
+// (002 + head + branch + tail) that always takes exactly one following complement sign, and
+// that complement is always closure-like — a sign that tends to end things elsewhere.
+// We read the filtered Indus inscription list (lipi/metadata_filtered.csv), keep one copy of
+// each distinct sign sequence, extract every governed frame, and build the same profile for
+// both branches: one-complement share, closure-like complement share, head/site spread.
+// If 530 passes the linker test and 590 fails, 530 is a specific linker; if both pass, we
+// must generalize to a linker class; if 530 fails, the bet dies. Writes branch summaries,
+// per-row complement classes, a lookup table, and a decision CSV plus a JSON summary to
+// data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

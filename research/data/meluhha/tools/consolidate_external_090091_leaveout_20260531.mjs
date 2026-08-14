@@ -1,3 +1,16 @@
+// Consolidation attack (2026-05-31) on the surviving candidate that external
+// Indus objects are enriched for signs 090/091 — the proposed "route/register"
+// markers. The worry: maybe one site or one region carries the whole signal.
+// The script reads the lipi metadata and the external-objects table, dedupes
+// texts by sign sequence, and scores the external set for 090/091 hits (overall
+// and among SEAL:C rows) plus 002-820 terminals. It then re-runs the test with
+// each site removed, and each region removed, in turn. Every cut gets its own
+// 25000-iteration type-matched null: control texts drawn from the non-external
+// background, matched on object type, to measure how often chance produces at
+// least the observed route count. Any cut with a false-positive rate above 0.01
+// marks the signal as fragile. Writes a JSON report plus leave-one-site and
+// leave-one-region CSVs, and prints the worst cuts and the survive/demote
+// decision.
 import fs from 'node:fs';
 import path from 'node:path';
 

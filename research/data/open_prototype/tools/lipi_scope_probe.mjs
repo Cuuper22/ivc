@@ -1,3 +1,21 @@
+// Corpus scoping survey: before any analysis, we need to know how much of the
+// lipi metadata is actually usable. This script reads every row of
+// lipi/metadata_filtered.csv and grades it into one of three readiness
+// buckets. A "lipi_numeric_clean_candidate" has a catalog id, a fully parsed
+// numeric sign sequence, complete=Y, an R/L or L/R direction, no uncertainty
+// markers (?, brackets, slashes, or the unknown-sign code 000), and a stated
+// text length that matches the parsed sign count. A
+// "lipi_direction_clean_candidate" relaxes completeness and some markers;
+// everything else is "audit_or_scope_only".
+//
+// It also cross-tabulates rows by object type, site, region, direction, and
+// text length, and counts every data-quality flag (length disagreements,
+// question marks, brackets, slashes, 000 signs).
+//
+// Outputs: lipi_scope_rows.csv (the per-row grading that most downstream
+// probes consume) plus nine breakdown CSVs and lipi_scope_summary.json.
+// Pure inventory work — it makes no claim about what any sign means.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

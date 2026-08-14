@@ -2,6 +2,12 @@
 
 Date: 2026-05-24
 
+This note re-runs an earlier measurement with one change, and the change matters more than it sounds.
+
+Our corpus repeats itself. Many inscriptions carry exactly the same sign sequence as other inscriptions. A model tested on such a corpus can look clever simply by having memorised a string it already saw. Strict dedup — collapsing every set of identical sequences down to a single representative row — removes that advantage. This note reports what the earlier numbers look like once it is applied.
+
+The short answer: one finding survives almost untouched, the other falls a long way. Holdout below means a slice of data withheld from training and used only for testing; leakage means the answer was quietly available in the training data; and `lipi` remains a third-tier or T3 dataset, never treated as authority.
+
 ## Purpose
 
 This experiment tests whether the broad `lipi` stored-order and masked-sign signal survives exact duplicate collapse.
@@ -37,6 +43,8 @@ data/open_prototype/reports/lipi_broad_order_summary.json
 
 ## Collapse Policy
 
+The exact rule for what counts as a duplicate and where the collapsing happens. Stating it precisely is what makes the numbers reproducible.
+
 Exact duplicate numeric sign sequences are collapsed inside each evaluated scope or split.
 
 This means:
@@ -48,6 +56,8 @@ This means:
 Cross-split exact-sequence overlap is still reported, not removed.
 
 ## Main Comparison
+
+The old numbers beside the new ones. Read the last four rows first: that is where the deduplication bites.
 
 | Metric | Duplicate-Weighted | Exact-Duplicate Collapsed |
 | --- | ---: | ---: |
@@ -93,6 +103,8 @@ Harappa loses more than half its rows under exact duplicate collapse. Mohenjo-da
 
 ## Held-Out Results After Collapse
 
+The harder test: train on everything outside a group, then predict inside it. OOV share is the fraction of test signs never seen in training at all; seen-in-train share is how often a test sequence also appears in training, which is the leakage to watch.
+
 Selected bidirectional context results:
 
 | Held-Out Split | Test Rows | Seen-In-Train Share | OOV Share | Top-1 Accuracy | Top-5 Accuracy | MRR |
@@ -128,6 +140,8 @@ In that follow-up, edge-frame collapse lowers duplicate-collapsed bidirectional 
 
 ## Interpretation
 
+The point of the whole exercise: telling apart the part of the result that was real from the part that was repetition.
+
 The duplicate collapse separates two signals:
 
 - Stored-order structure survives exact duplicate collapse.
@@ -156,6 +170,8 @@ It does not support:
 - Translation.
 
 ## Next Falsification
+
+Falsification means the next tests are chosen for their power to break this result, not to confirm it.
 
 The next tests should ask:
 

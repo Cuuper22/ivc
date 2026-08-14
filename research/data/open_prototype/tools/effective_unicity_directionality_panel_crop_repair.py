@@ -1,3 +1,23 @@
+"""Generate label-free object-panel crop candidates for the blind packet series.
+
+This is the repair step after v2c failed visual preflight: masking OCR words on
+a page-context crop was not enough, because the crop itself still showed page
+layout. The fix attempted here is to find the seal's object panel and crop only
+it, keeping catalogue labels and OCR text outside the crop box entirely rather
+than painting over them. For each focus CISI (4 primary targets, 12 fixed real
+negatives, 6 reserves), the script takes up to three plate routes from the v2
+public route probe CSV, locates the printed catalogue label via the DjVu OCR
+coordinates, and proposes crops three ways: fixed boxes above/below/around the
+label, horizontal dark-row clusters inside those boxes, and dark connected
+components found near the label (with text regions masked out of the search).
+Component crops are clipped away from any overlapping text box. Every candidate
+gets a mechanical preflight status — any label-box or OCR-word overlap is an
+automatic fail — and is written to a candidates CSV, two contact sheets, and a
+summary JSON. This is a preflight inventory only; a human must still review
+every crop before it can enter a blind packet, and nothing here promotes a
+claim.
+"""
+
 from __future__ import annotations
 
 import csv

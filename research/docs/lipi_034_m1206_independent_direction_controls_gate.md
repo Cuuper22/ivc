@@ -2,9 +2,11 @@
 
 Date: 2026-05-26
 
+An earlier note showed that a key conclusion rests on a single inherited metadata field, the reading direction `R/L`. This note tries to give that field some independent backing. It takes three other objects, not part of the argument, and checks whether the recorded direction puts the same sign code on the same drawn shape every time. It does — which is support, not proof.
+
 ## Question
 
-After tracing `R/L` to Lipi/Yajnadevam metadata, can independent source-visible short-mark controls tell us whether recorded `R/L` behaves coherently on the image?
+After tracing `R/L` to Lipi/Yajnadevam metadata, can independent source-visible short-mark controls — objects outside the argument, used as a check on it — tell us whether recorded `R/L` behaves coherently on the image? `R/L` records that an inscription is read right-to-left.
 
 ## Short Answer
 

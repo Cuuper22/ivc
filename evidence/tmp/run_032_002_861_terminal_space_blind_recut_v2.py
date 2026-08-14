@@ -1,3 +1,20 @@
+"""Recut the two visual-only rows so every source-ready row has a measurement.
+
+The first terminal-space pass left M-355 and M-1267 unquantified: they had
+checked images but no pixel boxes. This v2 script supplies hand-measured
+boxes for both (a long-continuation window for M-355, a bare edge and margin
+for M-1267), merges them into the previous metrics CSV, recomputes the
+class summaries and decisions, and draws overlays plus two contact sheets.
+One sheet is tail-hidden: crops carry only a blind ID derived from a SHA-256
+hash, with labels and tail classes stripped, and the ID-to-row key is written
+separately — a tail-hidden manual recut, not fully independent blind
+epigraphy. The headline result stays: the largest measured bare margin is
+still smaller than the smallest measured tail window, so the terminal-space
+adversary is strengthened and grammar promotion stays blocked. Writes metric,
+class-summary, decision, and blind-key CSVs, a JSON summary, and a Markdown
+doc.
+"""
+
 from __future__ import annotations
 
 import csv

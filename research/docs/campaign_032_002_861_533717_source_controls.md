@@ -2,9 +2,11 @@
 
 Date: 2026-05-29
 
+This note goes to the photographs of the seals that do not have the pattern. It is easy to get excited about two seals ending `533-717`; the honest move is to look at the same class of seals that end differently and see whether they had the same opportunity. Three such controls — comparison objects that share the setting but not the feature — are now source-visible, meaning we can inspect their published images. What they show narrows the claim rather than supporting it.
+
 ## Question
 
-The register test promoted `533-717` inside this branch:
+The register test promoted `533-717` inside this branch. A "register" is a coarse class of object defined by site, type, and shape:
 
 ```text
 Mohenjo-daro no-icon SEAL:R + 002-861
@@ -26,7 +28,7 @@ data/open_prototype/reports/campaign_032_002_861_533717_source_controls_summary.
 tmp/032_002_861_533717_register_controls/533717_register_source_controls_contact_sheet.png
 ```
 
-The crop script was corrected so `A` and `a` do not overwrite each other on Windows. Six distinct crops are now stored for three public-source controls.
+The crop script was corrected so `A` and `a` — the seal face and its impression — do not overwrite each other on Windows. Six distinct crops are now stored for three public-source controls.
 
 ## Source-Visible Controls
 
@@ -47,7 +49,7 @@ They were not located in the current public CISI India/Pakistan panel pass and r
 
 ## Research Effect
 
-This packet weakens the broad version of the hypothesis.
+This packet — the bundle of rows and crops assembled for the test — weakens the broad version of the hypothesis.
 
 The live claim is no longer:
 

@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// The residue validation packet lists rows to verify; this script rolls those rows up into
+// per-object acquisition orders. It reads the packet CSV and the corpus metadata, groups
+// packet rows by CISI object, and assigns each object to a priority bucket: the
+// +002-861-416+ companion family first, then small no-longer-text 034 objects, direction
+// reversals, the 400-740-176 bridge, 033 siblings, and 032 controls last. For each object
+// it pulls every metadata hook an archivist would need -- excavation IDs, figure references,
+// find context, material, dimensions, all local rows to reconcile -- and composes a full
+// source-request sentence plus explicit support/kill conditions for its bucket. Objects with
+// public image leads get routed through those first; the rest go straight to CISI/HARP plate
+// requests. Output is a ranked acquisition CSV and a JSON summary with bucket counts and the
+// immediate request batch. It is a shopping list for source evidence, not a validation.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 const lipiDir = path.join(base, 'data', 'open_prototype', 'lipi');

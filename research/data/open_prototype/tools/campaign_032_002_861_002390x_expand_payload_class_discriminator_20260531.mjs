@@ -1,6 +1,22 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Two inscriptions share the exact four-sign prefix 740-205-032-002 and then
+// diverge: M-143 continues with 252-840 and stops, while 3335.1 continues
+// with the portable formula 390-590-032. That is close to a minimal pair —
+// same environment, different payload — and this script asks whether the
+// difference is a real payload-class contrast (closure payload versus open
+// formula payload). It reads lipi/metadata_filtered.csv, deduplicates by
+// sign sequence, and collects three row sets: exact shared-prefix matches,
+// every 002-252 and 002-390 frame (with terminal share and next-sign
+// entropy to compare the two heads' productivity), and every occurrence of
+// the chunks 252-840, 390-590-032, and their 002-prefixed forms. Four bets
+// follow, all hinging on whether 3335.1 ever source-binds: the prefix
+// licenses alternating payload classes, 252-840 is a closure payload, 390 is
+// an open payload head, and the contrast is semantic-class-like. Writes
+// shared-prefix rows, head and chunk summaries, and bets as CSVs plus a
+// summary JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

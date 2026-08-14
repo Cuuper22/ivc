@@ -1,6 +1,19 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// If 125 is a linker (something like a genitive "of"), then word order should
+// be consistent: head 390, then linker 125, then a complement. This script
+// tests that order claim two ways. Broadly, it takes every text in
+// lipi/metadata_filtered.csv containing 390, 125, and at least one known
+// complement sign (632, 032, 820, 195, 590) and classifies the relative order
+// of the three pieces by first occurrence — head-linker-complement versus the
+// reversals and mixed cases. Locally, it collects exact 002-390-125 frames
+// and checks whether a known complement follows inside the frame tail. The
+// recorded read: frame-local rows support head-linker-complement, but the
+// broad rows are mixed, which blocks promoting the order into any language-
+// family claim. Writes comparable-row, order-count, frame-local, and bet CSVs
+// plus a summary JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

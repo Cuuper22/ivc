@@ -1,3 +1,13 @@
+// A "forger" test: can chance alone forge the shape we credit to sign 530? The observed
+// claim is that every 002-H-530 frame carries exactly one complement sign, spread across
+// several heads, sites, and complement signs. If random draws of frames often show the same
+// shape, the claim is worthless. We read the filtered Indus inscription list
+// (lipi/metadata_filtered.csv), keep one copy of each distinct sign sequence, extract every
+// governed frame (002 + head + branch + tail), and profile each branch sign. Then we compare
+// 530 against branches with matching frame counts, and draw 100,000 random frame samples of
+// the same size (seeded PRNG, so runs repeat exactly) to estimate how often chance matches
+// or beats the 530 shape. Writes branch tables, target rows, passers, and a decision CSV plus
+// a JSON summary to data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

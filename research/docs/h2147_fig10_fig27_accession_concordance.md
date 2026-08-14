@@ -2,6 +2,12 @@
 
 Date: 2026-05-26
 
+## What This Note Is
+
+This note resolves an apparent contradiction that turns out to be a bookkeeping artifact. Our catalog row for the tablet H-2147 carries a hook — a stored pointer to where the object was published — reading `H95-2514Figure 27.14`. A public paper illustrates what looks like the same tablet as Figure `10.17`. Two different figure numbers can mean two different objects, or one object published twice.
+
+The way to tell is to ignore figure numbers and compare accession numbers, the identifiers assigned at excavation. That comparison is a concordance: a row-by-row alignment of two numbering systems.
+
 ## Question
 
 Does the local hook `H95-2514Figure 27.14` contradict Meadow/Kenoyer 1997 Figure `10.17`, or are they two figure systems pointing to the same excavated object?
@@ -53,7 +59,7 @@ Still rejected:
 - Mapping the visible upper/lower panels to `673.1` and `673.2`.
 - Equating local `110` with Parpola sign no. 41.
 - Treating `]220-415+` as source-side verified in the public image.
-- Any `034/415` crosswalk, sign value, or translation.
+- Any `034/415` crosswalk — a verified mapping between two sign-numbering systems — sign value, or translation.
 
 ## Next Gate
 

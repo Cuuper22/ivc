@@ -2,6 +2,10 @@
 
 Date: 2026-05-24
 
+This note is a scope probe. Before running any experiment, you have to know how much usable material you actually have, and on what terms. That is all this note does: it counts rows, sorts them into buckets by how clean they are, and says plainly which buckets can carry an experiment.
+
+Some vocabulary. `lipi` is a dataset of Indus inscription metadata, rated T3 — third-tier, good for generating candidates, never authoritative. Quarantined columns are fields held out of all use because they contain other people's interpretive claims, which would contaminate anything built on them. A gate is a test a result must pass before the project builds on it.
+
 ## Purpose
 
 This probe asks whether the filtered `lipi` metadata can give the project a broader, claim-free working scope than the current Mayig unicorn-seal subset.
@@ -31,6 +35,8 @@ data/open_prototype/lipi/metadata_filtered.csv
 ```
 
 ## Candidate Definitions
+
+Two buckets, defined by exactly what a row must satisfy to enter. The first is strict, the second deliberately looser. Writing the rules out means anyone can reproduce the counts rather than trusting them.
 
 `lipi_numeric_clean_candidate` means:
 
@@ -106,7 +112,7 @@ Clean candidate counts by type:
 | `TAG` | 172 | 20 | 26 | 146 |
 | `ROD` | 42 | 17 | 27 | 15 |
 
-This is enough breadth to design artifact-class split experiments. It is not enough to accept the splits as authoritative, because `lipi` remains a T3 source.
+This is enough breadth to design artifact-class split experiments. It is not enough to accept the splits as authoritative, because `lipi` remains a T3 source: a source that can suggest, not settle.
 
 ## Site Breadth
 
@@ -143,7 +149,7 @@ The filtered `lipi` layer gives a much broader planning surface than the Mayig o
 - Tablets and sealings have enough rows for first artifact-class baselines.
 - Pottery marks, tags, rods, bangles, and Dholavira-style cases mostly fall into audit/scope-only buckets under strict filters.
 
-This means the next structural experiments can be designed as broad-corpus scouts, but any result must remain below the corpus-authority gate until cross-source or image validation is done.
+This means the next structural experiments can be designed as broad-corpus scouts, but any result must remain below the corpus-authority gate — the bar a finding has to clear before it may be treated as a fact about the corpus — until cross-source or image validation is done. A scout is an exploratory run meant to find where to look, not to settle anything.
 
 The first such scout is now recorded here:
 
@@ -167,6 +173,8 @@ It does not support:
 - Translation.
 
 ## Next Falsification
+
+Falsification means the next experiments are chosen for their power to break this result, not to confirm it.
 
 The next experiments should ask:
 

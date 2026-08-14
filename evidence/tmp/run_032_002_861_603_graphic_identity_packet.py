@@ -1,3 +1,16 @@
+"""Graphic-identity packet for sign 603 across two different contexts.
+
+Catalog transcriptions can call two different-looking marks by the same number, so
+"graphic identity" — same actual drawn shape — has to be checked on images. This
+script carries an inline list of source bands: the source-visible post-002-861 603
+windows and the Harappa 740-603-240-060-692 bands. With PIL it cuts each band into
+deliberately equal-width visual slices (explicitly not accepted token boxes), hashes
+the images, and assembles a comparison packet under
+tmp/032_002_861_603_graphic_identity_packet. It writes packet CSVs, a summary JSON,
+and a docs/ markdown note. The recorded decision: cross-context 603 graphic identity
+is unresolved — the bridge between the two contexts is still catalog-mediated.
+"""
+
 from __future__ import annotations
 
 import csv

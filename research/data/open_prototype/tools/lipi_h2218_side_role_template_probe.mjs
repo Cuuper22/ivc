@@ -1,3 +1,21 @@
+// Template probe for the H-2218..H-2239 three-sided tablets. Each tablet has
+// three inscribed sides, and each side's text falls into one of three "role
+// families": +861-003+, +700-03x+ (033 or 034), or +15x-003+ (154 or 156).
+// The question: do the 22 tablets all carry exactly one side of each role, and
+// is any role pinned to a fixed catalog side?
+//
+// The script reads lipi_h2218_h2239_fig4_mapping.csv, assigns each side text a
+// role family, classifies each tablet's ordered role triple into a template
+// class, and counts how often the +15x-003+ role lands on local side 3. Two
+// simple null models give exact p-values: if roles were placed at random, side
+// 3 would hold a given role with chance 1/3 per tablet, and a tablet would fit
+// one of the two attested templates with chance 2/6.
+//
+// It writes a per-tablet template CSV, a counts CSV, a tests CSV, and a JSON
+// summary (lipi_h2218_h2239_side_role_*). This is structure-only work: it
+// establishes that the side layout is templated, without claiming any reading
+// or meaning for the signs.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

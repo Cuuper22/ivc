@@ -1,3 +1,13 @@
+// Consolidation ledger for the 2026-05-31 17:30 expand batch. This script runs no new
+// analysis. It reads twelve earlier "risky_*" report JSONs from data/open_prototype/reports
+// (the terminal-governor unicity, 095 copper subregister, 405/806 Bull1:W, 740-X-590 frame,
+// 390 external-register, and related stress tests), pulls the specific numbers each verdict
+// rests on, and assembles the batch's fixed editorial decisions into one machine-readable
+// record: the smallest surviving model, four ranked survivors with their evidence and next
+// destructive test, the bets killed or demoted this window, contradictions still to resolve,
+// and next expand tests. Its value is traceability — every tier decision sits next to the
+// exact figures that justify it. Writes consolidate_expand_batch_20260531_1730.json to
+// data/open_prototype/reports and prints a condensed version.
 import fs from 'node:fs';
 import path from 'node:path';
 

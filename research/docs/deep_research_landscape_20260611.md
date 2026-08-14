@@ -6,7 +6,7 @@ Status: external landscape synthesis. No reading, value, phonetics, language ide
 
 ## Scope And Method
 
-This is the synthesis half of a deep-research pass run on 2026-06-11. Five angles were swept: (1) source-acquisition routes for the four blocking objects (H-1993, Dholavira 8758/4237.1, M-1825, 3335.1), (2) computational decipherment state of the art, (3) corpus and sign-inventory landscape, (4) decipherment validation methodology comparators, (5) external anchor candidates.
+This document is a map of the outside world: what other researchers, publishers, and museums currently offer that touches this project. It is the synthesis half of a deep-research pass run on 2026-06-11. Five angles were swept: (1) source-acquisition routes for the four blocking objects (H-1993, Dholavira 8758/4237.1, M-1825, 3335.1), (2) computational decipherment state of the art, (3) corpus and sign-inventory landscape, (4) decipherment validation methodology comparators, (5) external anchor candidates.
 
 Each claim below carries a source URL and a confidence tag. An adversarial verification pass was applied: for every "decipherment" or "binding achieved" claim, an independent source or rebuttal was sought, and the claim was kept only if it survived. Per-claim verdicts are recorded in `evidence/tmp/041_source_acquisition_20260611/claim_verification_ledger.csv`.
 
@@ -14,7 +14,7 @@ Environment constraint, recorded honestly: this run's network allowlist passes t
 
 ## 1. The four blocking objects — route state
 
-Full per-target detail is in `docs/source_route_updates_20260611.md`. Summary:
+Four physical objects currently block promotion of live candidates because their source images are not yet bound. This section records what routes to those images exist. Full per-target detail is in `docs/source_route_updates_20260611.md`. Summary:
 
 - **CISI 3.1 is the correct, still-gated shared source for H-1993 and M-1825.** The volume is *Corpus of Indus Seals and Inscriptions, Volume 3: New material, untraced objects, and collections outside India and Pakistan, Part 1: Mohenjo-daro and Harappa*, ed. Asko Parpola, B. M. Pande, Petteri Koskikallio, in collaboration with Richard H. Meadow and J. Mark Kenoyer; Suomalainen Tiedeakatemia, Helsinki, 2010; 504 pp.; Annales Academiae Scientiarum Fennicae Humaniora 359 / Memoirs of the Archaeological Survey of India no. 96; ISBN 9789514110405; contains photographs, line drawings, and tables. This independently confirms the prior run's acquisition target identity and the Meadow/Kenoyer Harappa authorship behind the `H96-2769 / Figure 17.07` material. Confidence: HIGH. Sources: harappa.com vol-3.1 page; Helsinki research portal; Cambridge JRAS review; AbeBooks ISBN listing.
 - **No free full-text download was obtained.** The academia.edu record for the volume exists but is access-gated; the harappa.com page and the Wikimedia file page returned 403 to automated fetch; the environment allowlist blocked direct pulls. This neither proves nor disproves that a scan exists elsewhere; it records that the public, frictionless route is still purchase/library-gated, matching the prior run's Tiedekirja payment-pending state. Confidence: HIGH (for "not obtained here"), MEDIUM (for "not obtainable anywhere").
@@ -38,13 +38,13 @@ Full per-target detail is in `docs/source_route_updates_20260611.md`. Summary:
 
 ## 5. External anchors — the most tractable source-visible lead
 
-The project's external-anchor count is 0 and the bar is source-visible imagery, not mention. The single most tractable, well-provenanced, freely-illustrated contact anchor is the **Shu-ilishu cylinder seal, Louvre AO 22310** (serpentine, ~2020 BCE, late Akkadian), whose cuneiform names its owner an "interpreter of the Meluhhan language." Full candidate write-up, with the explicit caveat that it is a *contact* anchor and **not** a bilingual (no Indus signs are securely read on it), is in `docs/external_anchor_shu_ilishu_AO22310_candidate_20260611.md`. It does not earn an external-anchor claim under the ledger gates; it is staged as the best-imaged starting point for that lane. Confidence: HIGH (artifact facts), HIGH (it is not a bilingual). Sources: penn.museum Expedition "Shu-ilishu's Cylinder Seal"; Wikimedia Commons File AO 22310.
+An external anchor would be an outside object that ties an Indus sign sequence to something independently readable. The project's external-anchor count is 0 and the bar is source-visible imagery, not mention. The single most tractable, well-provenanced, freely-illustrated contact anchor is the **Shu-ilishu cylinder seal, Louvre AO 22310** (serpentine, ~2020 BCE, late Akkadian), whose cuneiform names its owner an "interpreter of the Meluhhan language." Full candidate write-up, with the explicit caveat that it is a *contact* anchor and **not** a bilingual (no Indus signs are securely read on it), is in `docs/external_anchor_shu_ilishu_AO22310_candidate_20260611.md`. It does not earn an external-anchor claim under the ledger gates; it is staged as the best-imaged starting point for that lane. Confidence: HIGH (artifact facts), HIGH (it is not a bilingual). Sources: penn.museum Expedition "Shu-ilishu's Cylinder Seal"; Wikimedia Commons File AO 22310.
 
 Secondary anchor lanes worth queueing (mention-level, not yet imaged here): Gulf/Dilmun seals (Failaka, Bahrain) with Indus-related signs; Indus-style seals from Ur (Gadd 1932) in the British Museum; Meluhha personal-name onomastics in Ur III Lagash texts. These remain acquisition targets, not anchors.
 
 ## Net Effect On The Project
 
-Nothing here promotes any reading. Concretely, batch 041:
+Nothing here promotes any reading. What the pass actually bought, concretely, is this. Batch 041:
 
 1. Re-confirms (from a fresh angle) that CISI 3.1 is the right gated source for H-1993/M-1825 and that no free full image binding is reachable in this environment.
 2. Adds one genuinely new acquisition lead — CISI vol. 3.2/3.3 "untraced objects" strand — as the next place to chase 3335.1 (`RAF`) before calling its source dead.

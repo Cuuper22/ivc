@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script builds the master worksheet for the H-2218..H-2239 series: 22 three-sided
+// steatite tablets that Kenoyer and Meadow 2010 identify as one excavation series from
+// Trench 11 at Harappa. It reads the multiside-mark validation queue, keeps only rows whose
+// CISI number falls in 2218-2239, and for each object extracts the HARP excavation ID and
+// source figure reference, splits the per-side texts into side 1/2/3 columns, and classifies
+// the side-order signature: main signature A (+861-003+ / +700-034+ / +156-003+), signature
+// B with sides 1 and 2 swapped, or a variant, with extra flags for the 154-for-156 and
+// 033-for-034 substitutions. Every row also carries pending-status columns for the plate,
+// side-count, side-order, segmentation, and variant checks a human must still do. Output is
+// the validation sheet CSV (the input for the later Fig. 4 and slot-grammar scripts) and a
+// JSON summary of signature and figure coverage. No reading is admissible from this sheet.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 

@@ -2,6 +2,8 @@
 
 Date: 2026-05-26
 
+This note establishes the research object that later campaigns work on. Signs in this corpus are numeric IDs. `A-220-X` means: some sign `A`, then the sign `220`, then a variable sign `X`. "Frame selection" is the claim being tested — that `A` changes which `X` can follow. "Entropy" in the tables below measures how spread out the choices of `X` are: low entropy means one `X` dominates. A "copy family" is a set of rows repeating the same text, which really counts as one witness, not many.
+
 ## Result
 
 `A-220-X` is a real frame-selection environment in the local corpus.
@@ -188,7 +190,7 @@ Fail:
 
 ### 2. Companion-side frame test
 
-Compare companion formulas for:
+The companion side is the other inscribed face of the same object. Compare companion formulas for:
 
 - `520-220-415`
 - `520-220` singleton terminals
@@ -226,4 +228,4 @@ The A-220-X campaign shows real frame-conditioned selection. `520-220-415` remai
 A conditions the terminal distribution after 220.
 ```
 
-The most productive frames to pursue are `520-220-X`, `740-220-X`, and `240-220-X`. The most dangerous inflated frames are `318-220-415`, `740-220-055`, and `176-220-235`, because each is dominated by a single repeated text family. The next serious step is not another crosswalk guess; it is a strict deduped and companion-side A-220-X campaign.
+The most productive frames to pursue are `520-220-X`, `740-220-X`, and `240-220-X`. The most dangerous inflated frames are `318-220-415`, `740-220-055`, and `176-220-235`, because each is dominated by a single repeated text family. The next serious step is not another crosswalk guess — another attempt to map our sign numbers onto an outside catalog's signs; it is a strict deduped and companion-side A-220-X campaign.

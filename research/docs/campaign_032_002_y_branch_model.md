@@ -10,25 +10,25 @@ The working parse is:
 A-220-032 -> 002 -> Y / continuation
 ```
 
-`032` after `A-220` is not an ending. It frequently opens a tail lane. `002` is the current best tail-lane marker. The sign after `002` is not one interchangeable "ending" bucket anymore; it behaves like a branch choice.
+Read it this way. `032` after `A-220` is not an ending; it frequently opens a tail lane — a stretch of signs that finishes the inscription. `002` is the current best marker of that tail lane. And the sign after `002`, which we call Y, is no longer one interchangeable "ending" bucket. It behaves like a branch choice: which Y you get changes what can happen next.
 
 Corpus-wide context update: `campaign_032_002_context_branch_campaign.md` widens the unit to all adjacent `032-002` rows. It finds 50 adjacent rows, 34 strict complete rows, and 32 strict text/site/type dedup units. Strict `target_240_220_032` has four rows and four Y values (`300`, `817`, `820`, `861`), so `240-220-032` selects entry into the `032-002` lane but does not select one ending. The model below should now be read as branch-lane grammar, not as a compact `861/820/817` ending-only hypothesis.
 
-Post-Y continuation update: `campaign_032_002_post_y_continuation_campaign.md` tests what happens after `002-Y` across 813 all-`002` rows and 499 strict dedup units, then narrows to 32 strict dedup adjacent `032-002` units. The result splits the Y slot into closure-heavy signs and branch heads. `817` is the cleanest closure (`100/103` terminal in all strict dedup `002-Y`, `4/4` after adjacent `032-002`); `820` is closure-heavy (`66/71`, `6/7`); `861` is closure-heavy but branch-capable (`95/119`, `7/9`). By contrast, `390`, `368`, `031`, `220`, `900`, and `300` are continuation-heavy in the all-`002` baseline. The branch model is now:
+Post-Y continuation update: `campaign_032_002_post_y_continuation_campaign.md` tests what happens after `002-Y` across 813 all-`002` rows and 499 strict dedup units, then narrows to 32 strict dedup adjacent `032-002` units. The result splits the Y slot into two kinds of sign: closure-heavy signs, which end the inscription, and branch heads, which keep it going. `817` is the cleanest closure (`100/103` terminal in all strict dedup `002-Y`, `4/4` after adjacent `032-002`); `820` is closure-heavy (`66/71`, `6/7`); `861` is closure-heavy but branch-capable (`95/119`, `7/9`). By contrast, `390`, `368`, `031`, `220`, `900`, and `300` are continuation-heavy in the all-`002` baseline. The branch model is now:
 
 ```text
 [left frame]-032-002-[closure or branch head]-[optional continuation]
 ```
 
-The next falsifier is not another source audit. It is a matched register and length-position test: `Y` class must predict terminality better than site/type/symbol/text-length baselines, or the closure/branch grammar collapses into register and inscription-length behavior.
+The next falsifier is not another source audit. It is a matched register and length-position test: the Y class must predict terminality better than site/type/symbol/text-length baselines, or the closure/branch grammar collapses into register and inscription-length behavior.
 
-Matched terminality update: `campaign_032_002_y_matched_terminality.md` runs that test. In leave-one-out prediction, all-`002` `y_class` scores 0.885772 accuracy, 0.097554 Brier, and 0.331038 logloss, while `site/type/symbol` scores 0.579158, 0.248248, and 0.690585. Inside adjacent `032-002`, `y_class` scores 0.906250, 0.106698, and 0.381811, while `site/type/symbol` scores 0.531250, 0.284136, and 0.765472. Matched closure-vs-branch blocks exist in 47 all-`002` blocks and 17 adjacent `032-002` blocks. This keeps the branch grammar alive against the current register-only attack. The next falsifier is now source-normalized direction and tail-family semantics, not broad register metadata.
+Matched terminality update: `campaign_032_002_y_matched_terminality.md` runs that test. In leave-one-out prediction, all-`002` `y_class` scores 0.885772 accuracy, 0.097554 Brier, and 0.331038 logloss, while `site/type/symbol` scores 0.579158, 0.248248, and 0.690585. Inside adjacent `032-002`, `y_class` scores 0.906250, 0.106698, and 0.381811, while `site/type/symbol` scores 0.531250, 0.284136, and 0.765472. Matched closure-vs-branch blocks exist in 47 all-`002` blocks and 17 adjacent `032-002` blocks. So the Y class beats the register baseline, and the branch grammar stays alive against the current register-only attack. The next falsifier is now source-normalized direction and tail-family semantics, not broad register metadata.
 
-Tail-family update: `campaign_032_002_post_y_tail_family_campaign.md` extracts continuation content after Y. In the all-`002` field, branch-head candidates show repeated next-tail pressure: `390 -> 125/705`, `220 -> 455/065`, and leaky `861 -> 603/533-717`. In the adjacent `032-002` field, the decisive continuations are still mostly singletons: `M-240 861-603`, `M-91 861-255-416`, `M-1677 820-001-440-012`, `M-49 300-350-032-190`, and `M-70 390-692`. So the branch taxonomy has content to chase, but adjacent `032-002` semantics are not repeated enough for a value.
+Tail-family update: `campaign_032_002_post_y_tail_family_campaign.md` extracts what actually follows Y. In the all-`002` field, branch-head candidates show repeated next-tail pressure: `390 -> 125/705`, `220 -> 455/065`, and leaky `861 -> 603/533-717`. In the adjacent `032-002` field, the decisive continuations are still mostly singletons: `M-240 861-603`, `M-91 861-255-416`, `M-1677 820-001-440-012`, `M-49 300-350-032-190`, and `M-70 390-692`. So the branch taxonomy has content to chase, but adjacent `032-002` semantics are not repeated enough for a value.
 
 ## Source-Clean Evidence
 
-Rows counted here require `source_visible=yes` in the current source-function table.
+Rows counted here require `source_visible=yes` in the current source-function table — meaning a source image confirms the row at row level.
 
 | branch | source-clean rows | current behavior |
 |---|---|---|
@@ -48,7 +48,7 @@ It does not yet have source-visible target `820` or `861`. That is the main weak
 
 ## Scaffold Token-Box Gate
 
-The first token-box pass is stored in `campaign_032_002_y_token_box_scaffold_v1.md`.
+The first token-box pass — checking whether the catalog's signs are physically distinct, boxable units on the object — is stored in `campaign_032_002_y_token_box_scaffold_v1.md`.
 
 Result:
 
@@ -62,11 +62,11 @@ This means the current scaffold does not die as a catalog-adjacency artifact. It
 
 ### H1: Tail-Lane Marker Plus Closure/Branch Choice
 
-`002` is the main operator after `A-220-032`; `Y` usually closes the packet, but some Y values can open continuation branches. This best fits the current row behavior because:
+The idea: `002` is the main operator after `A-220-032`; `Y` usually closes the packet, but some Y values can open continuation branches. This best fits the current row behavior because:
 
 - non-240 A-220 has source-visible `861`, `820`, and `817`
 - outside controls have strong source-visible `861`
-- target has a source-visible extended `300` branch
+- the target has a source-visible extended `300` branch
 - terminal and extended tails both occur after `002`
 - all-`002` baseline behavior separates closure-heavy `817/820/861` from continuation-heavy `390/368/031/220/900/300`
 
@@ -85,7 +85,7 @@ Kill condition:
 
 ### H2: Grammatical Ending Class
 
-`861/820/817` are different compact endings after `002`, with `300` as a separate extended construction.
+The idea: `861/820/817` are different compact endings after `002`, with `300` as a separate extended construction.
 
 Current pressure for this model: campaign dedup rows with `032-002-Y` make `817` terminal in all counted cases, while `861` and `820` are terminal-heavy but leaky. In the broader corpus after `002`, the same signs are also heavily terminal by the current metadata layer. This supports closure behavior but does not yet prove grammar.
 
@@ -101,7 +101,7 @@ Kill condition:
 
 ### H3: Object/Register Formula
 
-The Y split may track site, object type, iconography, or administrative register rather than grammar.
+The idea: the Y split may track site, object type, iconography, or administrative register rather than grammar.
 
 Current pressure:
 
@@ -113,7 +113,7 @@ Current pressure:
 Prediction:
 
 - `Y` should correlate with object type, symbol/cult, or site after adding source-clean controls.
-- if non-iconographic `SEAL:R` rows keep selecting `820` while Bull1 square seals prefer `861/817/300`, the branch model becomes a register formula unless the same split appears within matched icon/type blocks.
+- if non-iconographic `SEAL:R` rows keep selecting `820` while Bull1 square seals prefer `861/817/300`, the branch model becomes a register formula — unless the same split appears within matched icon/type blocks.
 
 Kill condition:
 
@@ -121,7 +121,7 @@ Kill condition:
 
 ### H4: Personal Name or Title Morphology
 
-`A-220-032-002-Y` may be a name/title formula with `Y` selecting title/rank/clan/office endings.
+The idea: `A-220-032-002-Y` may be a name/title formula, with `Y` selecting title/rank/clan/office endings.
 
 Prediction:
 
@@ -139,7 +139,7 @@ Prior work gives real pressure toward administrative or metrological structure, 
 
 - `220` has fish/commodity/metrology pressure, but our current rows are seals/formula lanes rather than direct offering-pot contexts.
 - `032` and `002` have stroke/numeral/operator pressure, but the current packet is syntactic, not arithmetic.
-- `817/861` may be allographic or variant-sensitive because both collapse to `P385/M267` in the current provisional crosswalk while Wells separates them as `W817/W861`.
+- `817/861` may be allographic or variant-sensitive, because both collapse to `P385/M267` in the current provisional crosswalk while Wells separates them as `W817/W861`.
 - `820/P378` has no accepted standalone value; keep it as a distinct branch until alternation with `817/861` is source-visible.
 
 Prediction:

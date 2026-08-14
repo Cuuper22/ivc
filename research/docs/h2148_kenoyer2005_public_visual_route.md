@@ -2,6 +2,14 @@
 
 Date: 2026-05-26
 
+## What This Note Is
+
+This note records finding a published photograph of the tablet H-2148, and exactly how far that gets us.
+
+A route is a concrete path from one of our catalog rows to a published image of the same object. Route-dark means no such path had been found: we held metadata about H-2148 but had never seen it. Source-visible means we have now inspected the published image itself.
+
+H-2148 matters because it belongs to the branch — the small group of objects — used to test whether our local sign `110` matches Parpola's sign no. 41, Parpola's catalog being an external sign-numbering system.
+
 ## Question
 
 Can H-2148 move from route-dark metadata into source-visible evidence for the `110` / Parpola sign-no.-41 branch?
@@ -10,7 +18,7 @@ Can H-2148 move from route-dark metadata into source-visible evidence for the `1
 
 Yes, at object and count-level side mapping. H-2148 is no longer route-dark.
 
-Kenoyer 2005 Figure 14.1 publicly shows accession `H2001-5142`, the local hook behind H-2148. The figure table identifies it as:
+Kenoyer 2005 Figure 14.1 publicly shows accession `H2001-5142`, the local hook behind H-2148 — a hook being the pointer our catalog row stores to where the object was published. The figure table identifies it as:
 
 - Figure item: `14.1`
 - Accession: `H2001-5142`
@@ -78,7 +86,7 @@ Not accepted:
 - Any phonetic value, meaning, language identification, or translation.
 - Any proof that the visible single sign is Parpola sign no. 41 rather than only the local-catalog `110` side.
 - Any side-letter mapping, because Figure 14.1 does not label the faces as A/B or obverse/reverse.
-- Any claim about H-2100, H-2152, or Kanmer `4881.1`, which remain outside controls pending route checks.
+- Any claim about H-2100, H-2152, or Kanmer `4881.1`, which remain outside controls — objects carrying the same sign from outside this branch, kept precisely to stop the branch from generalising itself — pending route checks.
 
 ## Next Gate
 

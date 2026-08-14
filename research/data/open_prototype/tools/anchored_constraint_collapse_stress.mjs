@@ -1,3 +1,17 @@
+// Stress test: how much would the Indus sign-labeling problem shrink if we forced
+// rejected phonetic anchors back in? An "anchor" is a claim that one sign has one
+// known sound value. Every anchor candidate so far (external Meluhha matches,
+// object-level onomastic attempts, Brahmi shape-descent lanes) has been retracted,
+// so the accepted-anchor scenario is empty. This script reads those retracted
+// candidate files plus the label-symmetry degeneracy summary, then for each
+// scenario counts distinct anchored signs and computes the residual label
+// symmetry in log2 bits (log2 of (unanchored signs)! — how many ways you could
+// still permute the labels). It also plots an idealized curve for 1 to 50
+// hypothetical accepted anchors as a lower bound. Output goes to
+// anchored_constraint_collapse_stress.csv and its _summary.json under
+// data/open_prototype/reports/. The point: even forcing every rejected anchor
+// barely dents the symmetry, so no partial reading exists.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

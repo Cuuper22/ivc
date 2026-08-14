@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script freezes a set of hand-checked findings about CISI labeling conventions into a
+// machine-readable record. CISI (Corpus of Indus Seals and Inscriptions) is the photographic
+// source catalog; its plates carry labels like "A", "B bis", or "(1)" whose meanings decide
+// whether two photographs show different physical sides or the same side twice. The rows here
+// were written by hand on 2026-05-25 after reading the CISI volume introductions on Internet
+// Archive: four rows record the general conventions (original vs impression, side letters,
+// bis/ter photo repeats, numbering), and five rows apply them to the specific objects H-771,
+// H-893, H-925, H-983, and H-353 in the frame700 sign-034 study. It writes one CSV of the
+// rows and one JSON summary, and computes counts (e.g. how many bis/ter labels were
+// reclassified as same-side photos) so later scripts can cite exact numbers. No new data is
+// read; the point is to correct an earlier "extra physical sides" reading of these labels.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 const outCsv = path.join(reportsDir, 'lipi_frame700_034_cisi_variant_convention_probe.csv');

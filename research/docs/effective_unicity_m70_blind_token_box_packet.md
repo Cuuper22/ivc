@@ -2,9 +2,13 @@
 
 Date: 2026-05-29
 
-This packet is a forger gate for the M-70 source pilot. It does not promote a reading, sign value, semantic value, physical source direction, language identification, or accepted structural claim.
+This note records a blind token-box packet built for one seal, M-70. A packet is a bundle of image crops sent to reviewers; blind means those reviewers cannot see the catalog answers; token-boxing means drawing a box around each individual sign in the image.
+
+The packet is a forger gate for the M-70 source pilot. A forger is a control designed to fake the very signal we are hunting, and a gate is a pass/fail test a result must clear before it can be promoted. It exists because the source pilot found M-70's signband visible in a public plate, and we needed to know whether that visibility is real evidence or something reviewers would also "find" in seals that do not have it. It does not promote a reading, sign value, semantic value, physical source direction, language identification, or accepted structural claim.
 
 ## Null Question
+
+The null question is the sceptic's version of the question: could chance and procedure alone produce this?
 
 Can M-70's broad `032-002-390-692` order window be separated from matched source and metadata false positives produced by the same broad-window procedure on rows with comparable site, type, length, and local-image availability but without the same catalog-slot adjacency?
 
@@ -26,8 +30,8 @@ Can M-70's broad `032-002-390-692` order window be separated from matched source
 - 15 blind items total.
 - 2 primary M-70 target views: face and impression.
 - 3 positive calibration rows: M-49, M-240, M-91.
-- 9 scoring-negative images across 7 unique CISI controls: M-77, M-17, M-32, M-315, M-1273, M-376, M-381.
-- 1 quarantine negative: M-683, included to diagnose reviewer behavior but excluded from false-positive denominators until source-cropped cleanly.
+- 9 scoring-negative images across 7 unique CISI controls: M-77, M-17, M-32, M-315, M-1273, M-376, M-381. Scoring negatives are the decoy crops that should yield nothing; they set the false-positive rate.
+- 1 quarantine negative: M-683, included to diagnose reviewer behavior but excluded from false-positive denominators until source-cropped cleanly. Quarantine means the row is kept and shown but deliberately not counted.
 
 The control set implements the forger sidecar's matched-negative design: same broad site/type/source-availability neighborhood where possible, but without the target `032-002-390-692` catalog-slot adjacency. M-40 and M-1825 stay acquisition-gated because no local source image is available in the checked layer. M-75 is not included because the available local image is page-level and label/context leaking.
 
@@ -35,17 +39,17 @@ The control set implements the forger sidecar's matched-negative design: same br
 
 M-70 can move beyond broad order-window status only if all of these hold:
 
-- Two or more independent blind reviews recover a five-token M-70 signband on both face and impression before seeing the answer key.
+- Two or more independent blind reviews recover a five-token M-70 signband — the horizontal band of signs — on both face and impression before seeing the answer key.
 - Reviewers mark a stable adjacent-pair/order window for M-70 within pre-set tolerance.
 - At least six unique scoring-negative rows remain reviewable after blind quality screening.
 - Scoring negatives produce zero hard target-like hits.
-- One soft ambiguous partial hit is allowed only if it is adjudicated as damage, cropping, or non-comparable source quality before unblinding.
+- One soft ambiguous partial hit is allowed only if it is adjudicated as damage, cropping, or non-comparable source quality before unblinding. Adjudication is a recorded ruling on a disputed row, and it has to happen while the answers are still hidden.
 
 Even if those pass, the maximum promotion is `source-boxed order-window candidate`. No accepted claim count changes.
 
 ## Review Results
 
-Two independent blind reviews were scored with `data/open_prototype/tools/score_effective_unicity_m70_blind_token_box_reviews.mjs`.
+Two independent blind reviews were scored with `data/open_prototype/tools/score_effective_unicity_m70_blind_token_box_reviews.mjs`. FPR is the false-positive rate: the share of decoy rows a reviewer called target-like. The yes-only FPR counts firm calls; the conservative FPR counts firm calls plus uncertain ones.
 
 | Reviewer | Target yes | Target uncertain | Scoring-negative yes | Scoring-negative no | Scoring-negative uncertain | Yes-only FPR | Conservative FPR |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |

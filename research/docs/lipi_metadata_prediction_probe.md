@@ -4,11 +4,11 @@ Date: 2026-05-24
 
 ## Purpose
 
-This experiment asks whether the filtered `lipi` sign sequences predict independent metadata better than duplicate-calibrated structured nulls.
+This note tests whether the signs on an object can predict facts about the object itself — its type, site, material, and so on. `lipi` is the project's filtered working corpus of Indus sign sequences. A structured null is a deliberately meaningless generator built to imitate the corpus in every way except carrying real content; if such a generator scores as well as the real signs, the real result proves nothing. This experiment asks whether the filtered `lipi` sign sequences predict independent metadata better than duplicate-calibrated structured nulls.
 
 It follows the [Lipi structured null comparator](lipi_structured_null_comparator.md). That comparator showed that explicit nonlinguistic administrative and emblem formulae can beat observed bidirectional masked-sign prediction. The next question is whether observed signs carry metadata structure that those nulls do not reproduce.
 
-This is still a T3 planning-layer probe. The metadata labels are from filtered `lipi`, not an authoritative corpus. The result does not assign meanings, sign values, phonetics, language identity, or translations.
+This is still a T3 planning-layer probe — T3 being the project's tier label for scouting results on an unverified working corpus, useful for direction but never admissible as proof. The metadata labels are from filtered `lipi`, not an authoritative corpus. The result does not assign meanings, sign values, phonetics, language identity, or translations.
 
 ## Local Artifacts
 

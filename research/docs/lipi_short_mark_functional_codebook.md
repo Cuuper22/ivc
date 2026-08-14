@@ -4,13 +4,15 @@ Date: 2026-05-24
 
 ## Question
 
-Can the side-role labels on multi-side short-mark artifacts predict each other, or is the apparent structure mostly a one-series trap?
+This note makes a real attempt at decipherment, but of jobs rather than words. A short mark is a one- or two-sign row on an object that carries writing on more than one side; a side role is a guess at what each such side is doing, named from the signs that recur on it. A codebook is a table of those roles — if the sides of one object follow a system, then knowing some of an object's sides should let us predict the rest. The risk is that any apparent system comes from one repeated series of near-identical tablets. The question: can the side-role labels on multi-side short-mark artifacts predict each other, or is the apparent structure mostly a one-series trap?
 
 This is a direct decipherment attempt at the functional layer. It tries to recover a codebook of side roles, not phonetic values or prose translation.
 
 ## Analyst Labels
 
 These labels are temporary names over observed sign co-occurrence:
+
+FRAME700 is the project's label for short rows built on sign `700`, and a subtype is which second sign accompanies it.
 
 ```text
 FRAME700_SUBTYPE032 = side contains 700 and 032

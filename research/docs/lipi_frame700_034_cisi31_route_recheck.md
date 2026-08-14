@@ -4,7 +4,7 @@ Date: 2026-05-25
 
 ## Question
 
-What does the fresh public web layer actually prove about the next source route for the blocked `032/033/034` panel graph?
+This note records a recheck of the source route — the path by which the project expects to obtain trustworthy catalog evidence for a set of objects. The panel graph for the sign codes `032/033/034` — the map of which catalog rows sit on which physical sides of which objects — is blocked on unresolved catalog labels, so the next step depends on which published source can unblock it. The question: what does the fresh public web layer actually prove about that next source route?
 
 ## Stored Data
 
@@ -24,17 +24,17 @@ accepted side functions: 0
 
 ## Source Route
 
-The recheck confirms that CISI 3.1 is not decorative bibliography. It is the right next target for the current blockers because it is the Mohenjo-daro/Harappa supplement and its end matter is reported to include object-level data such as excavation number, owner/museum, and photograph source.
+The recheck confirms that CISI 3.1 — the Corpus of Indus Seals and Inscriptions, volume 3.1, the standard photographic catalog of Indus objects — is not decorative bibliography. It is the right next target for the current blockers because it is the Mohenjo-daro/Harappa supplement and its end matter is reported to include object-level data such as excavation number, owner/museum, and photograph source.
 
 That matters directly for the live cases:
 
 | Object or family | Why CISI 3.1/end matter matters |
 | --- | --- |
 | `H-893` | The accessible IA vol. 1/2 layer shows `H-893 (1) A/B`, but does not explain what `(1)` means. |
-| `H-925` plus `H-326/H-924/H-925` | Exact copy-family pressure means a single-object lookup is too weak; the family needs group-level source notes. |
+| `H-925` plus `H-326/H-924/H-925` | These objects may be a copy family — objects carrying the same inscription, possibly copies of one another — so a single-object lookup is too weak; the family needs group-level source notes. |
 | `H-983` | The source-side `C` hazard needs object-note policy before local two-row metadata can be trusted. |
 | `H-353` plus repeated `+400-740-176+ / +700-033+` family | The repeated family and source `C` side require a family/source-policy check, not an isolated visual guess. |
-| `H-2211` | Still needs source-normalized side labels before it can serve as a `032` control. |
+| `H-2211` | Still needs source-normalized side labels before it can serve as a `032` control — a comparison object used to test whether a contrast holds. |
 
 ## Prior-Work Pressure
 

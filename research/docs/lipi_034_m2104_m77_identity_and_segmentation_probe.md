@@ -2,6 +2,10 @@
 
 Date: 2026-05-25
 
+This note is a probe — a bounded check aimed at one question, not a finished result. It asks how much a printed, cleaned-up scholarly transcription can settle about a single object.
+
+The object goes by several names: our local row `M-2104`, Marshall's catalogue no. `532`, excavation number `VS 875`. `034` is one of our local numeric sign labels, a transcription code rather than a reading. Segmentation is the decision about where one sign ends and the next begins. The note exists because standardized print looks like evidence about the object and mostly is not: it is a scholar's tidy drawing of the signs, one step removed from the artifact.
+
 ## Question
 
 What does the Mahadevan/Parpola standardized text layer add to the `M-2104` / Marshall no. `532` / `VS 875` / local `034` problem?
@@ -10,7 +14,7 @@ What does the Mahadevan/Parpola standardized text layer add to the `M-2104` / Ma
 
 No decipherment upgrade. Real progress, but it cuts against overconfidence.
 
-The local `lipi` row already ties the identifiers together internally:
+The local `lipi` row already ties the identifiers together internally. That is a bridge — a chain of records linking identifiers to one another — but an internal one, built by us:
 
 ```text
 id: 2527.1
@@ -52,9 +56,11 @@ Derived local visual files:
 | Mahadevan 1977 page `0084` | Text no. `2527`, code `100901`, printed standardized sign row. | Raw object photo, CISI object note, or Marshall alias. |
 | Parpola 2019 | `M-2104` as `Text no. 12`, plus the `UIII` and signs 15/1 prior reading. | Raw shapes; Parpola explicitly points to CISI photos for those. |
 | Marshall/Harappa no. `532` | `Pl. CXIV`, `VS 875`, ivory rod, five deeply incised characters. | `M-2104` identifier and a reconciliation of five characters versus four local tokens. |
-| IA/IGNCA Plate CXIV | Best current public visual witness for no. `532`. | Secure exact three-stroke `034` or source-grade token boundaries. |
+| IA/IGNCA Plate CXIV | Best current public visual witness — independent image evidence — for no. `532`. | Secure exact three-stroke `034` or source-grade token boundaries. |
 
 ## Adjudication
+
+The ruling on each claim. Pass and fail are fixed verdicts here, not shades of opinion.
 
 | Claim | Verdict | Reason |
 | --- | --- | --- |
@@ -67,9 +73,9 @@ Derived local visual files:
 
 ## Consequence
 
-`M-2104` stays live only as a quarantined candidate source route. It is not an accepted `034` attestation.
+`M-2104` stays live only as a quarantined candidate source route — a promising path to the object that is held out of decipherment work until it closes. It is not an accepted `034` attestation.
 
-The actual advance is locating the compression point:
+The actual advance is locating the compression point — the place where raw-object evidence gets flattened into standardized and then local numeric layers:
 
 ```text
 raw object? -> CISI/Marshall photo and catalog note still needed
@@ -82,6 +88,8 @@ Follow-on CISI scope correction: the accessible CISI Pakistan Vol. 2 OCR says it
 That tells us exactly what to demand next: CISI 3.1 or later supplemental Mohenjo-daro material, or museum/archive metadata that explicitly links `M-2104`, Marshall no. `532`, and `VS 875`, plus a raw object photograph or segmentation note explaining the five-character/four-token mismatch.
 
 ## Claim Status
+
+What this packet — one self-contained bundle of evidence and rulings — is allowed to add to the project's accepted set. The answer is nothing:
 
 ```text
 accepted translations: 0

@@ -1,3 +1,15 @@
+// Runs four independent "frontier bets" — risky, falsifiable claims at the
+// edge of what the corpus supports — and scores each with its own Monte Carlo
+// null (100000 iterations). The bets: (1) 002-390-X is a polarity slot where
+// sign 125 opens continuation and 095/692/705 close the phrase; (2) the sign
+// after 806 classifies icon context (806-465 predicts plant iconography,
+// 806-468 predicts symbol-free seals); (3) sign 090 marks a west-contact
+// circular-seal route on external sites like Failaka and Susa; (4) Indus 002
+// descends into the Brahmi ra-line and behaves as a connector, checked
+// against a precomputed Brahmi low-null CSV. Reads the filtered corpus
+// metadata, assigns each bet a tier (candidate / wild shot / killed) with
+// falsifiers and next predictions, and writes one JSON detail file plus a
+// one-row-per-bet summary CSV.
 import fs from 'node:fs';
 import path from 'node:path';
 

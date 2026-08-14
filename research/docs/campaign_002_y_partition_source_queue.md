@@ -4,9 +4,9 @@ Date: 2026-05-29
 
 ## Question
 
-The post-hoc forger-resistant result says that broad all-`002` rows split into a high-terminal pole, `817/820`, and a continuation pole, `390/368/031/220`. The next admissibility question is not whether that split is statistically sharp in the Lipi-derived metadata layer. It is whether the split can be source-normalized without depending on one convenient branch sign.
+The post-hoc forger-resistant result says that broad all-`002` rows split into two poles: a high-terminal pole, `817/820`, and a continuation pole, `390/368/031/220`. The next admissibility question is not whether that split is statistically sharp in the Lipi-derived metadata layer. It is whether the split can be shown on the source images themselves — source-normalized — without depending on one convenient branch sign.
 
-This note records the acquisition queue for that gate. It is infrastructure only.
+This note records the acquisition queue for that gate: which rows we need source material for, and how good each route currently is. It is infrastructure only.
 
 ## Method
 
@@ -58,7 +58,7 @@ The initial pole-level source coverage was uneven, but the supplemental public C
 | `031` | 9 | 0 | 4 |
 | `220` | 9 | 0 | 3 |
 
-The immediate positive is that both closure-pole signs and all four branch-pole signs now have row-level or route-level hooks. The immediate problem has changed: the branch-side route gap is no longer the blocker, but none of the new `368/031/220` route candidates is token-boxed, direction-checked, or matched-negative tested.
+The good news: both closure-pole signs and all four branch-pole signs now have row-level or route-level hooks. The problem has simply moved. The branch-side route gap is no longer the blocker; instead, none of the new `368/031/220` route candidates is token-boxed, direction-checked, or matched-negative tested.
 
 Top branch acquisition targets:
 

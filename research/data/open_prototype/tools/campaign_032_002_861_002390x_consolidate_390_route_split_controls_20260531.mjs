@@ -1,3 +1,16 @@
+// Control battery for the 390 "route split": after 002-390, X signs are
+// supposed to fall into two routes — terminal classifiers (095, 705, 072, 140,
+// 346, 692, 707) that end the inscription, and linkers (125, 530, 590) that
+// continue it into longer texts. This script pulls every 002-390-X frame from
+// the local Lipi metadata, assigns X to its route, and checks in seven scopes
+// (all, SEAL:S only, Mohenjo-daro only, non-Mohenjo, complete texts, good/fine
+// condition, CISI-named) whether the split holds perfectly: terminal route 100%
+// terminal, linker route 0% terminal, and linker texts longer on average. A
+// scope with fewer than 2 rows on either route is marked underpowered. Writes
+// a controls CSV and a summary JSON to data/open_prototype/reports/, with a
+// provisional read of survives versus damaged based on the majority of
+// serious controls.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

@@ -4,7 +4,7 @@ Date: 2026-05-25
 
 ## Question
 
-The `034` residue packet names the objects. What source images or plates should be acquired first, and what exact evidence must they provide?
+This note is the ordering and wording of the actual archive requests. FRAME700 is the project's label for short inscription rows built on sign `700`, such as `+700-034+`; the `034` residue is a leftover pattern involving sign code `034` that the controls run so far have not explained. An earlier packet — a bundled list of objects to check — names the objects. The question: what source images or plates should be acquired first, and what exact evidence must they provide?
 
 ## Local Artifacts
 
@@ -55,9 +55,11 @@ Most of the 034 work cannot move through public web images.
 The next evidence layer is CISI/HARP/plate acquisition.
 ```
 
+CISI is the Corpus of Indus Seals and Inscriptions, the standard photographic catalog of Indus objects; HARP is the Harappa Archaeological Research Project archive.
+
 ## Public Lead Update: 2026-05-25
 
-Targeted public searches found one useful source lead for the original H-910/H-916/H-1294 triad:
+Targeted public searches found one useful source lead for the original H-910/H-916/H-1294 triad — a triad being a set of three objects, one per sign code, matched closely enough to compare:
 
 - `H-916`: Kenoyer 1997, [Excavations at Harappa 1994-1995](https://www.harappa.com/sites/default/files/pdf/Kenoyer1997_Excavations%20at%20Harappa%201994-1995%20New%20Perspective.pdf), Fig. `10.01`, accession `H94-2172`, table comparison to `H-916`, Vats plate `XCVI`, object `12516`. This is an image-bearing and table-bearing public lead, but it still needs reconciliation with the local hook `12516456` and row `1796.2`.
 - `H-1302` and `H-1303`: Daggumati/Revesz 2021, [allograph identification article](https://www.nature.com/articles/s41599-021-00713-0), is a real direction/allograph warning because it names those tablets as mirrored-writing correction cases. It is not a plate-grade validation for the local rows.
@@ -85,6 +87,8 @@ Exact public searches for the new independent rank-1 handles (`H-1850`, `H2001-5
 ## First Request Batch
 
 ### 034 +002-861-416 Companion Bucket
+
+A source hook is an identifier in our own records that can be searched for in an archive.
 
 | Rank | CISI | Source hook | Short row | Longer row |
 | ---: | --- | --- | --- | --- |
@@ -162,7 +166,7 @@ copy/mold/family relation notes if present
 
 ## Control Request Batch
 
-The first `033` sibling controls are:
+A control is a comparison object used to check a target. The first `033` sibling controls are:
 
 | Rank | CISI | Source hook | Short row | Companion |
 | ---: | --- | --- | --- | --- |

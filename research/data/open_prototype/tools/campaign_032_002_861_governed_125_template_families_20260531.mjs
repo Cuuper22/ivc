@@ -1,3 +1,13 @@
+// Family census of "governed 125 templates". The bet: sign 125 is not just a tail after
+// 002-390 — it sits inside a broader title-template grammar of the shape
+// 002 + head + (modifier) + 125 + tail. We read the filtered Indus inscription list
+// (lipi/metadata_filtered.csv) and find every 125 whose governing 002 sits within four signs
+// to the left. Each hit is keyed by a four-sign window (two signs before 125, 125 itself,
+// and the sign after), then grouped into template families; fixed rules label the known
+// candidates (390-125-632-032, 610-125-032, 297-350-125-413, and the 125-820 pair) and
+// everything else as singleton or background. Families that repeat, and repeat across
+// sites, are the evidence that the template grammar is real. Writes the governed rows and
+// family table as CSVs plus a JSON summary to data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

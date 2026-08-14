@@ -4,11 +4,11 @@ Date: 2026-05-29
 
 ## Purpose
 
-This experiment asks whether explicit nonlinguistic code systems can reproduce or exceed the duplicate-collapsed `lipi` structural signal.
+This note records an experiment built to attack our own evidence. It asks: can explicit nonlinguistic code systems — made-up sign systems with no language behind them — reproduce or exceed the structural signal we measured in the duplicate-collapsed `lipi` data? (`lipi` is the filtered catalog dataset this project computes from; "duplicate-collapsed" means exact repeat inscriptions are counted once.)
 
-It follows the [Lipi synthetic comparator baseline](lipi_synthetic_comparator_baseline.md). The earlier nulls preserved length, frequency, edge position, edge frames, and length-position slots. Those controls did not include explicit local dependencies. This run adds formula-like and administrative-code dependencies.
+It follows the [Lipi synthetic comparator baseline](lipi_synthetic_comparator_baseline.md). The earlier nulls — shuffled comparison baselines — preserved length, frequency, edge position, edge frames, and length-position slots. Those controls did not include explicit local dependencies, where one sign constrains its neighbor. This run adds formula-like and administrative-code dependencies.
 
-This is a hostile falsifier. If a nonlinguistic system can match a metric, that metric cannot stand alone as decipherment evidence.
+This is a hostile falsifier: an experiment designed to break our own metric. The logic is simple. If a nonlinguistic system can match a metric, that metric cannot stand alone as decipherment evidence.
 
 It does not treat `lipi` as authoritative. It does not assume accepted reading order. It does not assign meanings, sign values, phonetics, language identity, or translations.
 
@@ -37,7 +37,7 @@ iterations_per_control = 20
 seed_base = 20260524
 ```
 
-All structured nulls are duplicate calibrated:
+All structured nulls are duplicate calibrated — generated to match the observed data's duplication profile:
 
 ```text
 unique_sequences: 1798
@@ -60,6 +60,8 @@ These are not claims about what IVC is. They are deliberately strong nonlinguist
 
 ## Main Result
 
+Two metrics matter here. "Stored win share" measures stored-order asymmetry: how often the catalog's stored sign order beats its reverse under a simple order model. "Bidirectional top-1/top-5" measures masked-sign prediction: hide one sign, predict it from both neighbors, and count how often the right answer is the first guess (top-1) or in the first five (top-5).
+
 Means below are over 20 deterministic iterations per control.
 
 | Control | Stored Win Share | Bidirectional Top-1 | Bidirectional Top-5 |
@@ -72,7 +74,7 @@ Means below are over 20 deterministic iterations per control.
 
 The duplicate-matched position-slot control reproduces stored-order asymmetry but not bidirectional context. This confirms that simple positional rigidity is not enough to reproduce the context signal.
 
-The administrative, emblem, and mixed structured controls exceed observed bidirectional top-1 and top-5. That is a real falsification of bidirectional masked-sign prediction as a standalone language-like diagnostic.
+The administrative, emblem, and mixed structured controls exceed observed bidirectional top-1 and top-5. That is a real falsification of bidirectional masked-sign prediction as a standalone language-like diagnostic: a fake nonlinguistic system beat the real data on this metric.
 
 ## Simple Model Pattern
 
@@ -88,7 +90,7 @@ The structured controls are not subtle. They create stronger local dependencies 
 
 ## Interpretation
 
-This comparator changes the evidence boundary:
+This comparator changes the evidence boundary — the line between what our metrics can and cannot support:
 
 - Stored-order asymmetry is not diagnostic.
 - Length-position and frequency baselines are not enough.
@@ -114,7 +116,7 @@ It does not support:
 
 ## Limits
 
-- `lipi` remains a T3 planning source.
+- `lipi` remains a T3 planning source — an exploratory data layer, not accepted evidence.
 - The controls are artificial and deliberately strong.
 - The administrative and emblem generators are not archaeological models.
 - The current rerun uses 20 deterministic iterations per control, enough for the Vector 2 boundary note but still not a final benchmark against real-world nonlinguistic corpora.

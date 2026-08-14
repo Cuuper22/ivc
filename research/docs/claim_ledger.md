@@ -2,7 +2,9 @@
 
 Date: 2026-05-30
 
-The authoritative machine-readable ledger is `data/claim_ledger/claims.json`.
+This ledger is the project's scoreboard. It records what has been accepted as a finding, what is still being tested, and what has been retracted. A claim enters the accepted counts only after two adversaries have had their turn: the forger, a battery of null models and matched negative controls that measures how often the claimed pattern appears without the claimed cause, and the skeptic, a hostile review that hunts for unresolved fatal objections. Until both pass, a result stays a candidate, no matter how tempting it looks.
+
+The authoritative machine-readable ledger is `data/claim_ledger/claims.json`. This document is its human-readable companion.
 
 Accepted counts:
 
@@ -17,6 +19,8 @@ Accepted counts:
 
 ## Accepted Structural Finding
 
+The project has exactly one accepted finding. It is structural: a claim about where signs sit in a sequence, not about what they mean or how they sound.
+
 Claim ID: `accepted_struct_002_861_533_717_restricted_tail_2026_05_29`
 
 Accepted wording: within the fixed `002-861` branch question, `533-717` is the only tested length-1-to-3 unit with support >= 2 whose every occurrence in strict local rows is a terminal tail after `002-861`. The two witnesses are `M-376` and `M-391`; both are source-visible as same-line terminal-side material, and current source-family review rejects exact copy-family collapse.
@@ -26,6 +30,8 @@ Forger record: `data/open_prototype/reports/campaign_032_002_861_restricted_tail
 Skeptic boundary: broad post-hoc prefix search finds 96 repeated terminal bigram cells in strict raw rows and 40 after exact dedup, so the claim is fixed to the prior `002-861` branch question only. It does not accept exact source-normalized `861/533/717` token boundaries, sign value, sign meaning, phonetics, language family, external anchor, or translation.
 
 ## Live Candidates
+
+A live candidate is a result that has survived some attacks but has not yet earned acceptance. Each entry below states the evidence first, then the unresolved attacks that keep it out of the accepted counts.
 
 The strongest current candidate is structural, not phonetic: in the strict deduplicated all-`002` layer, signs after `002` split into a high-terminal pole and a continuation pole. The fixed-bin forger pass now runs 10,000 iterations per null model against five nulls and does not reproduce the 499-row all-`002` effect. A harsher post-hoc partition forger then lets every null discover its own best high-terminal versus low-terminal split. The broad all-`002` best split is `817/820` versus `390/368/031/220`, with z 13.211692, terminal-rate gap 0.954023, and worst FPR 0 for both z and gap across 10,000 iterations per null model.
 
@@ -46,6 +52,8 @@ The source-visible `032-002-Y` candidate has been retracted. The witness matrix 
 The replacement branch `002-390-X` ecology recheck is now in place at `docs/campaign_032_002_861_002390x_branch_sign_ecology_20260531.md` and `data/open_prototype/reports/campaign_032_002_861_002390x_branch_sign_ecology_20260531_summary.json`. It independently re-derives 15 adjacent `002-390` frames from `metadata_filtered.csv`: `125` is the largest branch with four rows and is always continuing in-frame, while `095`, `692`, and `705` are terminal in-frame. The adversary blocks promotion: H-773 is a continuing non-`125` pressure row but only boxed-compatible, `3335.1` remains object-ID blocked, H-1993 is supplement-route-only, Dholavira `4237.1` is not source-bound, and `125` has terminal non-frame occurrences. This keeps `002-390-X` live as a constructional ecology target, not an accepted structural claim.
 
 ## New Retraction
+
+A retraction is a candidate that failed a gate. Retractions stay in the ledger because each one records a specific way this corpus can fool us.
 
 `retracted_source_visible_032_002_y_packet_2026_05_29`: the visual packeting method finds plausible `032-002-Y` calls in negative controls at unacceptable rates. This is exactly what the forger is for. Dead candidate, useful corpse.
 
@@ -80,6 +88,8 @@ The replacement branch `002-390-X` ecology recheck is now in place at `docs/camp
 `retracted_brahmi_independent_source_token_gate_v3_2026_05_30`: the duplicate/CISI independence preflight blocks all 83 v2 sign/orientation families before visual review. Review-packet eligible rows, candidate-only rows, and accepted phonetic anchors are all zero. The v2 headline near-misses are not independent: `817`, `472`, and `060` have one unique token hash and one CISI; `527` and `061` have two unique token hashes and one CISI.
 
 ## Infrastructure Audit
+
+Infrastructure entries are tools, datasets, and acquisition queues. They make future tests possible, but they are not evidence by themselves, and none of them increments an accepted count.
 
 The sign crosswalk scaffold now has an audit. It passes hygiene checks with caveats: 1,085 candidate edges, zero accepted edges, zero duplicate primary keys, zero dangling references, and zero evidence hash/path errors. The audit explicitly keeps high-pressure edges such as `002 -> P122`, `032 -> P145`, and `817/861 -> P385` as review targets, not accepted mappings.
 

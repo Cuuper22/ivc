@@ -43,6 +43,6 @@ The message explicitly framed the request as source/provenance binding only, not
 
 ## Decision
 
-`3335.1` remains unbound until a reply/source arrives. The Mayig shadow-lane check already found no replacement witness for the `032` lane, so this direct provenance request is now the cleanest live action for the highest single-object matched-gate unlock.
+`3335.1` remains unbound until a reply/source arrives. Because the Mayig shadow-lane check already found no replacement witness for the `032` lane, this direct provenance request is now the cleanest live action for the highest single-object matched-gate unlock.
 
 Accepted value, phonetics, language identity, function, sign meaning, and translation remain `0`.

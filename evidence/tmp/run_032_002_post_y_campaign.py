@@ -1,3 +1,17 @@
+"""Track what happens after the Y sign that follows 002, in and out of the 032 lane.
+
+The earlier context scan asked which sign Y follows 002; this one asks what
+comes after Y. It reads the Lipi metadata CSV and records every 002
+occurrence with its Y, the next one and two signs, whether Y is terminal, and
+a continuation class (terminal, one-token continuation, continues with a
+later 032 or 002, or multi-token continuation). Rows where 002 follows 032
+get extra branch fields, including the frame kind and up to three signs
+before the 032. Summaries are built over the strict deduped layers, grouped
+by Y, by frame-and-Y, and by register (site, type, symbol). Writes the
+all-002 rows CSV and branch rows CSV that later 861 scripts consume, plus Y
+and register summary CSVs and a JSON summary.
+"""
+
 import csv
 import json
 import re

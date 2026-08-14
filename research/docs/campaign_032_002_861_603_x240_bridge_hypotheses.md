@@ -2,18 +2,20 @@
 
 Date: 2026-05-29
 
+This note sets the research agenda for one sign. `603` is the only low-frequency sign that appears both inside a Harappa tablet pattern and at the end of Mohenjo-daro seals after `002-861`. That is either meaningful or an accident, and this note refuses to guess. Instead it writes out four rival explanations, states in advance what evidence would kill each, and ranks the source checks that would decide between them. It is a plan, not a result.
+
 ## Research Question
 
-Does `603` behave like a meaningful sign that can move between two constructions, or is it only a copied Harappa tablet formula artifact?
+Does `603` behave like a meaningful sign that can move between two constructions, or is it only a copied Harappa tablet formula artifact — a shape repeated by rote in one stock phrase?
 
-The two constructions now under comparison:
+The two constructions now under comparison. "Ecology" means the study of which signs appear around a given position, and `X` marks the position that varies:
 
 - X-before-240 ecology: `740-X-240`, `690-X-240`, and `000-X-240`
 - post-closure tail ecology: `002-861-X`, especially terminal tails
 
 ## Corpus Result
 
-Strict layer: 4,011 deduplicated complete-token rows from `metadata_filtered.csv`.
+Strict layer — rows with complete readings, deduplicated so one object cannot be counted twice: 4,011 rows from `metadata_filtered.csv`.
 
 X-before-240 layer:
 
@@ -33,6 +35,8 @@ Target controls:
 Decision: `603` is the only low-frequency non-background member of the X-before-240 class that also appears as an immediate post-`002-861` tail initial in the strict layer. That is real decipherment-relevant structure, not a translation.
 
 ## Hypotheses
+
+Each hypothesis below carries "kill conditions": the specific findings that would rule it out, fixed in advance so the test stays honest. A "control" is a sign or row that shares the setting but not the feature under test; a "negative control" is one that should not show the pattern.
 
 ### H1: `603` Is A Mobile Class/Role Sign
 
@@ -56,7 +60,7 @@ The Harappa `+740-603-240-060-692+` lane may be one copied tablet formula family
 
 Predictions:
 
-- `H-1137/H-1138/H-1846` should collapse by source layout, shape, size, copy lineage, or transcription route.
+- `H-1137/H-1138/H-1846` should collapse — reduce to one piece of evidence rather than three — by source layout, shape, size, copy lineage, or transcription route.
 - `603` should not have source-visible independent variation in the X-before-240 ecology beyond one repeated band.
 - Controls `636/642` may show richer independent X-before-240 lives than `603`.
 
@@ -93,7 +97,7 @@ Predictions:
 Kill conditions:
 
 - Source panels preserve same-line terminal-side `603` in `M-240/M-714/M-1273`.
-- Crosswalk and source crops keep `603` stable enough against controls.
+- The crosswalk — our table of provisional links between independent sign-numbering systems — and the source crops keep `603` stable enough against controls.
 
 ## Current Working Interpretation
 

@@ -1,3 +1,17 @@
+"""Blind layout gate for the candidate final unit 533-717 (witnesses M-376/M-391).
+
+This script reads the source-token attachment verdicts and boxes, the 533-717
+register-control crops, and the tail-predictor packet rows. It rebuilds the control
+crops with PIL, masking the bottom strip where printed catalog labels sit so a judge
+scores only the signband layout, and hashes the images for the blind key. "Blind"
+means the scoring is done without knowing which crop is a target and which is a
+control. The question: do M-376 and M-391 look like a repeated final unit that
+survives same-register controls, or do they collapse into workshop/register/layout
+behavior? It writes gate CSVs, a summary JSON, images under
+tmp/032_002_861_533717_blind_layout_gate, and a docs/ markdown note. No value or
+reading is accepted here.
+"""
+
 from __future__ import annotations
 
 import csv

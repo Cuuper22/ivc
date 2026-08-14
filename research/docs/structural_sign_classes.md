@@ -4,7 +4,7 @@ Date: 2026-05-24
 
 ## Purpose
 
-This experiment converts the order signal into provisional structural sign classes.
+This experiment converts the order signal into provisional structural sign classes. A structural class is a statement about where a sign tends to sit, such as at the start of an inscription, in the middle, or at the end, and nothing more.
 
 It does not assign meaning. It does not identify phonetic values. It does not translate. It only asks which signs behave like initial operators, medial/core signs, terminal operators, distributed recurrent signs, or sparse unclassified signs in the strict prototype subset.
 
@@ -32,6 +32,8 @@ policies_analyzed: raw_lipi_numeric, p385_merge_only, mayig_observed_parpola
 ```
 
 ## Classification Rules
+
+The rules are mechanical on purpose: a sign's class follows from its position shares alone, so no human preference about meaning can leak in.
 
 Minimum evidence threshold:
 
@@ -122,7 +124,7 @@ Interpretation:
 
 ## Result
 
-The strict subset yields a first structural grammar scaffold:
+Put together, the strict subset yields a first structural grammar scaffold:
 
 - A dominant initial candidate: `740/P324`.
 - Strong medial/core candidates: `002/P122`, `220/P050`, `032/P145`.
@@ -131,7 +133,7 @@ The strict subset yields a first structural grammar scaffold:
 
 ## Counterresult
 
-The scaffold is narrow and mechanical:
+Every result here needs its counterresult stated just as plainly. The scaffold is narrow and mechanical:
 
 - It is based only on Mohenjo-daro seal rows in the strict subset.
 - It uses position only, with neighbor summaries as supporting context.

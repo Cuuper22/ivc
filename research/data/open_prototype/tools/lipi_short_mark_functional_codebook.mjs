@@ -1,3 +1,24 @@
+// First attempt at a "functional codebook" for short side marks: instead of
+// asking what the signs mean, treat each short side as playing a role, name
+// the recurring roles with analyst labels (FRAME700_SUBTYPE032,
+// FRAME003_ROLE861, and so on), and test whether the roles form a grammar —
+// that is, whether the roles on one side of an artifact predict the roles on
+// its other sides.
+//
+// The script reads lipi_multiside_mark_validation_queue.csv, assigns each
+// artifact's short sides a role label from a fixed token-pattern table, then:
+// (1) mines association rules between labels co-occurring on the same
+// artifact (3+ co-occurrences, with confidence and lift); (2) runs a
+// leave-one-artifact-out prediction game — hide one label, try to recover it
+// from the artifact's other labels using three models (global frequency,
+// type/site/sides block frequency, and a smoothed co-occurrence scorer) and
+// score top-1/top-3 accuracy. Everything is rerun with the H-2218..H-2239
+// batch excluded so that one production run cannot carry the result.
+//
+// Outputs: lipi_short_mark_functional_codebook_artifacts.csv, _rules.csv,
+// _predictions.csv, and _summary.json. The labels are analyst bookkeeping,
+// not sign meanings; success here would be functional-grammar evidence only.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

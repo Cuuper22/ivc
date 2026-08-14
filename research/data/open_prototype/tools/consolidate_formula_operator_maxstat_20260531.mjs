@@ -1,3 +1,16 @@
+// Tournament test for candidate "formula operators" — sign pairs said to force a specific
+// next sign (741-060 always followed by 920, 740-390 by 590, and so on). Rather than test
+// each pet candidate in isolation, this script ranks it against every competitor, so a
+// cherry-picked winner cannot hide. We read complete inscriptions from
+// lipi/metadata_filtered.csv and collapse them to exact cells — one row per
+// bigram + successor + exact text + site + type + symbol — so copied objects count once.
+// Tournament one ranks every bigram by how many exact cells its best single successor
+// covers. Tournament two, for sign 806, ranks each predecessor by its best 11-wide window of
+// numeric successor codes (806's partners cluster in code ranges rather than one code). A
+// 5,000-iteration successor-resampling null (unseeded Math.random) estimates how often
+// chance hands any bigram with 30+ cells a perfect 30-of-30 successor, calibrating the
+// 741-060 result. Writes both ranking CSVs plus a JSON summary with named-candidate ranks
+// to data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

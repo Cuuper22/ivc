@@ -1,3 +1,27 @@
+// Semantic-anchor prediction test with proxy controls. The earlier target
+// audit picked catalog fields (symbol, cult, material, shape, boss, type, and
+// five dimension bins) that might act as "anchors" — external labels the sign
+// sequences could carry information about. The danger is leakage: signs might
+// predict "symbol" only because both track object type or site. This probe
+// measures how much predictive power survives when each such proxy route is
+// blocked.
+//
+// It reads lipi/metadata_filtered.csv, keeps numeric-clean rows, collapses
+// duplicate sequences into families (majority label per family, labels need
+// 30+ families), and scores 11 leave-one-out models per target: majority,
+// single-proxy lookups (length, type, site, material, shape, direction,
+// edge frame), two combined lookups, and a token naive Bayes.
+//
+// The null distributions come from block-shuffles: labels are permuted only
+// within groups that share a proxy value (or, for the "hard_proxy" block, a
+// whole bundle of proxies at once), 3 seeded iterations per block by default
+// (IVC_SEMANTIC_ANCHOR_ITERATIONS overrides). If token-NB still beats the
+// hard-proxy shuffle, the sequences carry label information no proxy explains.
+//
+// Outputs: lipi_semantic_anchor_prediction_observed.csv, _iterations.csv,
+// _summary.csv, and _summary.json. No sign meanings are claimed — only
+// association strength between sequences and catalog fields.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

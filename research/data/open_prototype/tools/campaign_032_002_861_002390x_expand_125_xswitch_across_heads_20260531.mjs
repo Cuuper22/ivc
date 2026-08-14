@@ -1,6 +1,21 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Is 125 a "continuation switch" — a sign that keeps the text going whenever
+// it fills the X slot, no matter which head precedes it — or is 125 just an
+// inherently non-final sign? This script separates the two readings inside
+// the Mohenjo-daro square steatite SEAL:S register. It reads the frames CSV
+// from the head-class discriminator run plus lipi/metadata_filtered.csv, and
+// builds three contrasts: X-slot 125 after 002-HEAD (does it always
+// continue?), X-slot non-125 signs (can they continue too?), and every 125
+// occurrence outside the X slot (is 125 open on its own?). The recorded
+// result: X-slot 125 always continues across heads 190, 390, 405, and 610,
+// while non-slot 125 is often terminal — so the open behavior belongs to the
+// slot, not to the sign. A third, wilder bet treats the post-125 tails
+// (632-032, 820, 032, 195) as allomorph-like fillers. Writes X-slot rows, all
+// 125 occurrences, the three contrasts, and the bets as CSVs plus a summary
+// JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const framesPath = path.join(reportsDir, 'campaign_032_002_861_002390x_expand_002_head_class_discriminator_20260531_frames.csv');

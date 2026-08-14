@@ -2,6 +2,12 @@
 
 Date: 2026-05-29
 
+## What This Note Is
+
+This note reports what happens when we score things that are definitely not writing with the same instrument we use on the Indus corpus. Those control corpora are comparators: barn stars, weather icons, totem poles, and synthetic generators. If a decorative or bookkeeping system scores as well as the Indus data, then that score cannot be evidence of language.
+
+Two terms recur. A forger is a control built to fake the exact signal we are hunting; a forger gate is the pass/fail test where the real data has to beat those fakes. A null is one run of the instrument on deliberately scrambled or synthetic data, and "null >= observed" is the fraction of such runs that matched or beat the real score — small is good.
+
 ## Result
 
 The Vector 2 comparator now separates three things that are easy to confuse:
@@ -24,11 +30,11 @@ Generated files:
 - `data/open_prototype/reports/effective_unicity_realworld_nonlinguistic_comparator_summary.json`
 - `data/open_prototype/reports/effective_unicity_realworld_nonlinguistic_comparator.csv`
 
-The rerun uses the current strict Lipi scope: 2,883 source rows, 1,798 exact-collapsed rows, 8,212 tokens, and 571 observed signs.
+The rerun uses the current strict Lipi scope: 2,883 source rows, 1,798 exact-collapsed rows, 8,212 tokens, and 571 observed signs. Exact-collapsed is strict dedup: only byte-identical inscriptions are merged, so near-duplicates remain in the corpus.
 
 ## Surviving Narrow Metric
 
-The effective-unicity masked-sign task tests each held-out token with its row excluded from training. At full coverage:
+The effective-unicity masked-sign task hides one sign at a time and asks a model to guess it. It tests each held-out token with its row excluded from training, so the model can never have seen the answer. Top-1 is the share of hidden signs guessed exactly right; FPR is the false-positive rate, here the share of control runs that matched or beat the real score. At full coverage:
 
 | Metric | Observed | Controls | Max FPR |
 | --- | ---: | --- | ---: |
@@ -51,7 +57,7 @@ Forbidden interpretation: this identifies a sound, word, language family, or tra
 
 ## Failed Broad Metric
 
-The older broad bidirectional predictor has observed top-1 accuracy 0.325865. Simple shuffles do not reproduce it, but structured nonlinguistic generators do:
+The older broad bidirectional predictor has observed top-1 accuracy 0.325865. Simple shuffles do not reproduce it, but structured nonlinguistic generators do — programs that emit ordered strings in the style of an administrative register or an emblem system, with no language behind them:
 
 | Structured control | Null mean | Null p05 | Null p95 | Null >= observed |
 | --- | ---: | ---: | ---: | ---: |
@@ -79,6 +85,6 @@ Decision: masked top-1 predictability is retracted as language evidence. Pictish
 
 ## Boundary
 
-Simple shuffles are weak adversaries. Passing them only says the corpus is not pure shuffled noise. The stronger result is narrower and more defensible: masked-sign local constraint survives the current forger suite, while unanchored label symmetry still blocks phonetic and language-family claims.
+Simple shuffles are weak adversaries. Passing them only says the corpus is not pure shuffled noise. The stronger result is narrower and more defensible: masked-sign local constraint survives the current forger suite, while unanchored label symmetry still blocks phonetic and language-family claims. Label symmetry means that nothing in the data distinguishes one assignment of values to signs from any relabelled version of it; unanchored means we have no external source that fixes even one value.
 
 No accepted claim count changes follow from this comparator.

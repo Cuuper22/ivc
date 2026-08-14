@@ -4,7 +4,7 @@ Date: 2026-05-25
 
 ## Purpose
 
-This stores the non-code review of the 48-row CISI 3.1/end-matter request packet.
+This note stores the team's non-code review of the 48-row request packet aimed at CISI 3.1 — the Corpus of Indus Seals and Inscriptions, volume 3.1, whose end matter carries object-level notes. It exists so the request goes out with the right questions attached, and so nobody later treats the returned catalog data as more than it is. It lists what to ask for each object, what standard the answers must meet before the sign codes `032/033/034` can count as linguistic evidence, and how the request could still fail.
 
 ## Source-Research Requirements
 
@@ -32,7 +32,7 @@ Object-specific pressure:
 
 ## Linguistic Standard
 
-The current path is not yet linguistic evidence. Before `032/033/034` can become evidence for contrast, it needs:
+The current path is not yet linguistic evidence. Before `032/033/034` can become evidence for contrast — evidence that the three signs are distinct choices filling the same slot — it needs:
 
 1. Stable CISI side identity for each object.
 2. Resolved source blockers for numbered groups and `C` sides.
@@ -41,7 +41,7 @@ The current path is not yet linguistic evidence. Before `032/033/034` can become
 5. Copy-family and neighbor-family pressure controlled rather than counted as support.
 6. CISI 3.1/end-matter or equivalent object-note acquisition for the live blockers.
 
-Quarantine:
+Quarantine — claims and inputs that stay walled off from the evidence chain:
 
 - semantic, phonetic, lexical, administrative, or translation values for `032/033/034`;
 - claims that `032/033/034` form an ordered scale;
@@ -50,7 +50,7 @@ Quarantine:
 - local two-row metadata for unresolved `C`-side or numbered-panel objects;
 - repeated photos/impressions as independent attestations.
 
-The strongest admissible post-source claim would only be that `032/033/034` occupy a source-confirmed contrastive slot in a stable FRAME700 side environment. That would still not be a translation.
+The strongest admissible post-source claim would only be that `032/033/034` occupy a source-confirmed contrastive slot in a stable FRAME700 side environment — FRAME700 being the project's label for short side rows built on sign `700`, such as `+700-032+`. That would still not be a translation.
 
 ## Adversarial Failure Modes
 
@@ -63,7 +63,7 @@ The request packet can still fail if:
 - local two-row metadata suppresses source-visible `C` sides;
 - end-matter context fields correlate with publication/source route rather than inscriptional role;
 - shared controls such as `H-925` contaminate multiple triads;
-- direction and allography remain unresolved after image access;
+- direction and allography (whether two shapes are variants of one sign) remain unresolved after image access;
 - diagnostic strokes are too damaged or low-resolution to separate `032/033/034`;
 - HARP accession, figure number, CISI H-number, and local row ID do not align cleanly;
 - photograph source or museum-owner data is mistaken for sign validation.

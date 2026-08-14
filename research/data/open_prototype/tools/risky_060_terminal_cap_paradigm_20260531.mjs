@@ -1,3 +1,14 @@
+// Tests whether sign `060` is a "terminal-cap hinge": a sign whose immediate
+// successors form a paradigm of caps (920, 692, 550, 820) that normally close the
+// inscription. The script reads metadata_filtered.csv (complete rows only), collapses
+// every bigram occurrence to an exact cell (deduplicated on sign, next, following
+// sign, text, site, type, and iconography), and calls a successor branch a "cap" if
+// it has enough cells (20 for the large tier, 5 for medium) and at least 85% of them
+// are terminal. Every predecessor sign in the corpus is ranked the same way, so 060
+// competes against the whole corpus, not a hand-picked shortlist. A 5,000-iteration
+// null shuffles terminal/nonterminal labels over all branch cells (keeping branch
+// sizes) and prices both 060's cap-branch count and the corpus-wide maximum. Writes
+// a JSON report plus sign-ranking and branch CSVs to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

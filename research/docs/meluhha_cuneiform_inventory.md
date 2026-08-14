@@ -2,6 +2,10 @@
 
 Date: 2026-05-29
 
+This note records a data-gathering step: building a table of every cuneiform line we can source that mentions Meluhha. It exists so that later work has something reproducible to join against instead of hand-picked quotations.
+
+Some terms first. Meluhha is a place named in Mesopotamian cuneiform texts, widely identified with the Indus region. Vector 1 is this project's external-anchor line of work — the attempt to constrain Indus signs using evidence from outside the Indus corpus. An "external anchor" is such a fixed outside point, once accepted. CDLI is the Cuneiform Digital Library Initiative and BDTNS is the Database of Neo-Sumerian Texts; both are public cuneiform text databases.
+
 This is Vector 1 infrastructure, not an external-anchor claim.
 
 The inventory builder fetches primary digital CDLI and BDTNS source pages, extracts Meluhha-bearing cuneiform lines plus immediate context, records source metadata when exposed by the endpoint, and writes a hash log for every fetched source.
@@ -50,4 +54,4 @@ The important shift is that Meluhha no longer lives in a prose note or hand-pick
 
 No source row is treated as an Indus reading, translation, phonetic value, sign meaning, language identification, structural finding, or external anchor.
 
-Promotion rule: any proposed Meluhha-Indus pairing must first define matched controls, run through the forger with a measured false-positive rate, and survive skeptic attacks. Until then this is inventory only.
+Promotion rule: any proposed Meluhha-Indus pairing must first define matched controls, run through the forger with a measured false-positive rate, and survive skeptic attacks. The forger is this project's standard adversary test: we build fake targets that should have no real relationship and check whether they score as well as the real one. Until then this is inventory only.

@@ -2,6 +2,10 @@
 
 Date: 2026-05-31
 
+This note records a small, cheap rerun whose job is to kill leads fast.
+
+Terms first. Vector 4 (V4) is this project's line of work on context semantics: learning something about a sign from the kind of object it appears on, without guessing how it sounded. A "replacement branch" is a fresh line of inquiry opened after an earlier one was closed. A "null" is a scrambled version of the data that keeps some structure but destroys the sign-to-context link; a "fixed-pair null" tests one named sign/context pair instead of sweeping thousands, which makes it fast. "Promote" means moving a lead to a stronger status in the project's ledger, the running record of accepted findings. Numbers like `407` and `158-806` are `lipi` catalog sign codes, not readings; `TAB:B`, `TAB:C`, and `SEAL:R` are catalog artifact-type codes.
+
 This is a replacement-branch targeted rerun for V4 context semantics. It is deliberately narrower than the broad discovery scan: it tests fixed tempting unit/context pairs against fast fixed-pair nulls. A pass here cannot promote a sign meaning by itself; a fail kills a lead cheaply.
 
 ## Artifacts
@@ -36,7 +40,7 @@ The run used 2,000 iterations per null model and completed locally in about 40 s
 
 The administrative/register-looking leads die cleanly. `407`, `061-845`, and `400` are reproduced by shuffling units within site/type, so they are not sign-meaning candidates.
 
-The only live residue is `158-806 / Phyt`. It has fixed-pair null support in both collapse modes, but the harsh text-only support drops to `3`, below the broad scanner's minimum support threshold of `5`. That makes it a source-check queue item, not an accepted sign meaning. A future promotion would need source-image validation of the three text-collapsed witnesses, matched iconographic negatives, and a family-wise scan that keeps the signal after exact-text collapse.
+The only live residue — the one lead left standing after the controls — is `158-806 / Phyt`. It has fixed-pair null support in both collapse modes, but the harsh text-only support drops to `3`, below the broad scanner's minimum support threshold of `5`. That makes it a source-check queue item, not an accepted sign meaning. A future promotion would need source-image validation of the three text-collapsed witnesses, matched iconographic negatives, and a family-wise scan that keeps the signal after exact-text collapse.
 
 ## Claim-Ledger Effect
 

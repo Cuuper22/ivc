@@ -1,10 +1,12 @@
 Date: 2026-05-29
 
+This note separates the interesting endings from the ordinary ones. Various things follow `002-861`, and treating them all alike wastes effort. The test used here is simple: does the ending ever appear anywhere else in the corpus? An ending found only after `002-861` is tied to that position and worth chasing. One found all over the place is a common sign that sometimes lands there and proves nothing. That split gives the campaign its next two targets.
+
 ## Question
 
 The batch result split the post-`861` tails into restricted, mixed, and background material.
 
-This campaign asks the linguistic question directly:
+This campaign asks the linguistic question directly. An "addendum" is extra material tacked on after an otherwise complete ending; a "subclass slot" would be a position reserved for marking what kind of object or text this is:
 
 ```text
 Which post-861 tails behave like a restricted final addendum/subclass slot,
@@ -20,7 +22,7 @@ data/open_prototype/reports/campaign_032_002_861_context_split_summary.csv
 data/open_prototype/reports/campaign_032_002_861_context_split_summary.json
 ```
 
-Input layer:
+Input layer. "Strict" rows have complete readings rather than partly reconstructed ones; "dedup" collapses near-duplicate rows so one object cannot be counted twice:
 
 ```text
 data/open_prototype/lipi/metadata_filtered.csv
@@ -28,6 +30,8 @@ strict complete source strings, text/site/type/symbol dedup: 4011 rows
 ```
 
 ## Result Table
+
+"Independent behavior" counts occurrences of the same unit outside the post-`002-861` position. A "register" is a coarse class of object by site, type, and shape; a "control" is a comparison case kept on hand to check a claim against.
 
 | unit | post-`002-861` behavior | independent behavior | current read |
 |---|---|---|---|

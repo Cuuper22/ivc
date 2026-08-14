@@ -1,3 +1,18 @@
+"""Builds a blind review packet for the 002-Y "branch gap" question.
+
+The question: on Indus seals where sign 002 is followed by one of the branch-pole
+signs (368, 031, or 220), can a reviewer who sees only the image — no catalogue
+text, no object ID — still tokenize the inscription and spot the branch relation?
+A "blind packet" hides everything a reviewer could cheat with. This script takes
+14 hand-picked items (primary targets, backups, scoring negatives, and quarantine
+cases like the H-44 OCR false route), cuts label-free crops from the public CISI
+plate pages using the route table in campaign_002_y_branch_gap_public_routes.csv,
+and copies them into tmp/002_y_branch_gap_blind_packet/ under neutral BG### names.
+It writes a manifest, an answer key (kept separate from the blind images), a blank
+review template, a contact sheet for visual QA, and a summary JSON. Creating the
+packet promotes no claim: every row carries accepted_claims_increment = 0.
+"""
+
 from __future__ import annotations
 
 import csv

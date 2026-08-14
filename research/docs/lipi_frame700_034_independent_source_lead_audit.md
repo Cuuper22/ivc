@@ -4,7 +4,7 @@ Date: 2026-05-25
 
 ## Scope
 
-This file records the first public-source pass for the new independent `034` source batch:
+This note records the first attempt to find published evidence for a new batch of objects. FRAME700 is the project's label for short inscription rows built on sign `700`, such as `+700-034+`; the `034` work asks whether the sign codes `032`, `033`, and `034` are separate choices in the same slot. This batch is called independent because its objects do not overlap the earlier batch, so a result here would not lean on that one. The objects are grouped in triads — sets of three, one per sign code:
 
 ```text
 H-1850 / H-1842 / H-1772
@@ -35,7 +35,7 @@ accepted_decipherment_claims: 0
 source_coding_sheet_rows: 25
 ```
 
-The useful hit is `H-2204` via the local hook `H95-2482`.
+Source-grade means an image or plate entry good enough to check signs against, rather than a mention. The useful hit is `H-2204` via the local hook `H95-2482` — a hook being an identifier in our own records that can be searched for elsewhere.
 
 That hit is not enough to validate the local row. It is an object-level source lead and a reconciliation target.
 

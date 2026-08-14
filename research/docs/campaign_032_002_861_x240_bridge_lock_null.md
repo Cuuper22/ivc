@@ -4,18 +4,22 @@ Date: 2026-05-29
 
 ## Question
 
-Is the current `603` pattern rare enough to promote, or is it a small-count bridge-lock pattern that random X-label placement can reproduce?
+This note records a null-model test: we shuffle the data at random many times and see how often chance alone reproduces the pattern we found. The subject is the sign `603` (signs in this corpus are numeric IDs).
+
+Two facts about `603` are on trial. It sits in the X slot of rows shaped `...-X-240-...`, and the material after `240` in those rows — the "subframe" — is always the same. That is the "bridge-lock": `603` locked to one subframe, while also bridging into a second context as the first sign of a tail after `002-861`.
+
+The question: is the current `603` pattern rare enough to promote, or is it a small-count bridge-lock pattern that random X-label placement can reproduce?
 
 ## Method
 
-The 95 X-before-`240` rows keep their after-`240` subframes fixed. The observed X-sign multiset is shuffled across those rows for 20,000 iterations, preserving sign counts and after-`240` subframe sizes but breaking sign-to-subframe association. Post-`002-861` tail-initial counts stay attached to sign labels.
+The 95 X-before-`240` rows keep their after-`240` subframes fixed. The observed X-sign multiset is shuffled across those rows for 20,000 iterations, preserving sign counts and after-`240` subframe sizes but breaking sign-to-subframe association. Post-`002-861` tail-initial counts stay attached to sign labels. If shuffled data often makes a lock like this, the observed lock is cheap.
 
-This is a distributional adversary, not a source or value test.
+This is a distributional adversary — a hostile check on the numbers alone — not a source or value test.
 
 ## Observed
 
 - `603` is locked to `060 692` inside X-before-`240`.
-- `603` is a non-background post-`002-861` bridge sign.
+- `603` is a non-background post-`002-861` bridge sign — that is, not one of the very common filler signs that turn up almost everywhere.
 - `603` has 3 X-before-`240` rows and 3 post-`002-861` tail-initial rows.
 
 ## Null Results

@@ -1,3 +1,16 @@
+"""Kill test for boring explanations of the 220-032 post-861 split.
+
+A kill test tries to destroy a finding before we lean on it. Here the finding at risk
+is the split in what follows 002-861 when 220-032 immediately precedes it. This script
+reads the tail-predictor all-rows table plus the visual scores and blind key from the
+220-032 source-visible contrast packet, and asks whether any mundane variable — broad
+register, fine icon label, total line length, prefix length, or measured terminal
+space — already explains the split. If one did, the split would be a layout artifact,
+not a grammar object. It writes test CSVs, a summary JSON, and a docs/ markdown note
+under the campaign prefix. The recorded per-variable outcomes are fails-as-explanation
+or insufficient; the question is recorded as not_closed, and no value is accepted.
+"""
+
 from __future__ import annotations
 
 import csv

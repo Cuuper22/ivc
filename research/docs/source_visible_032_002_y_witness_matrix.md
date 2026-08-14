@@ -4,6 +4,10 @@ Date: 2026-05-29
 
 ## Result
 
+This note is an inventory of which real objects we can actually see a particular sign group on. It is kept as a record of what was acquired, not as evidence: the claim it was built to support has since been retracted.
+
+Terms first. A "witness" is one object that shows the pattern; the "matrix" is the table of them across contexts, sites, and image quality. "Source-visible" means the object exists in a published plate image, not just a catalog transcription. The pattern is `032-002-Y`, where `032` and `002` are Lipi catalog sign codes and `Y` stands for whatever sign follows. A "signband" is the strip of the object photograph holding the inscription; a "packet" is a group of signs claimed to sit together on the same line. A "token box" is a box drawn around one sign on the photograph. A "forger" is this project's adversary test: check whether the method finds the pattern in material that cannot contain it. "Blind" means the reviewer worked without knowing which images were targets. "Matched negatives" are control objects picked to resemble the targets in every way except the pattern. M-, H-, and C- numbers are Mohenjo-daro, Harappa, and Chanhu-daro artifacts.
+
 Status update: this candidate has been retracted after blind matched-negative source-box adjudication. Keep this file as a witness inventory, not as support for an accepted or live claim.
 
 The source-visible layer initially suggested a narrow structural candidate:
@@ -53,7 +57,7 @@ Token-box tiers among the eight source-visible rows:
 
 ## Coverage Null
 
-The script sampled 10,000 random 8-row subsets from the 25-row route manifest. This is an exploratory coverage null only, because actual acquisition was target-driven rather than random.
+A "null" here is a scrambled comparison: what the same coverage would look like if the eight visible rows had been picked at random. The script sampled 10,000 random 8-row subsets from the 25-row route manifest — the list of rows traced to a real source record. This is an exploratory coverage null only, because actual acquisition was target-driven rather than random.
 
 | Criterion | Random-subset rate |
 | --- | ---: |
@@ -67,18 +71,20 @@ Interpretation: broad context coverage is not surprising under random row visibi
 
 ## Skeptic Record
 
+A skeptic record lists the attacks made on the claim and what they did to it.
+
 Broken:
 
 - The blind source-box forger found positive-looking packets in negative controls.
 - Two blind reviewers recovered zero true positives as confident positives.
 - Yes-only false-positive rates were 0.400000 and 0.300000.
 - Conservative negative-failure rates were 0.500000 and 0.416667.
-- The packet lacked local image-backed `negative_220_032_next_not_002` controls, so the `A-220-032` lane was not even fully stressed.
+- The packet lacked local image-backed `negative_220_032_next_not_002` controls, so the `A-220-032` lane — one of the separate lines of inquiry the project keeps apart — was not even fully stressed.
 
 Residual value:
 
 - The route/source/token-box matrix still records useful acquisition state.
-- The rows remain worth recutting or rechecking with a pre-registered sign-shape guide.
+- The rows remain worth recutting — cropping the images again to a stricter standard — or rechecking with a pre-registered sign-shape guide, one written before the review rather than after.
 - The matrix cannot support a live structural claim until a rebuilt source-box method passes negative controls.
 
 ## Decision

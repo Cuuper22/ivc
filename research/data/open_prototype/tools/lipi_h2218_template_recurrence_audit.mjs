@@ -1,3 +1,20 @@
+// Does the three-role side template of the H-2218..H-2239 tablets appear
+// anywhere else in the corpus? Those 22 tablets each carry one +861-003+ side,
+// one +700-03x+ side, and one +15x-003+ side. If the same template shows up on
+// other objects, the H-series is part of a wider convention; if not, it is a
+// local production batch.
+//
+// The script reads lipi_multiside_mark_validation_queue.csv (about 397
+// multi-side objects, each with a per-side sequence signature). For every
+// object it checks the template two ways: "strict" matches the exact side
+// texts, and "unordered" matches the same sign tokens regardless of their
+// order within a side. It flags complete three-role matches and near matches
+// (non-H objects with at least two of the three role families).
+//
+// It writes a full audit CSV, a ranked near-match CSV, and a JSON summary
+// (lipi_h2218_template_recurrence_*). As with the sibling probes, this is
+// pattern bookkeeping only — no reading or meaning is claimed.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

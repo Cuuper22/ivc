@@ -4,11 +4,15 @@ Date: 2026-05-26
 
 ## Question
 
-After adding `H-942 +520-220-016+` as a source-visible singleton control and excluding `M-1912` / `K-150` as non-source-grade, does the `M-1206 +520-220-034+` terminal still behave like the same source-visible graphic family as the clean `415` controls?
+This note records one blind-review experiment and the decisions it earned. The numbers in strings like `+520-220-034+` are local numeric sign labels — transcription codes, not readings. "Source-visible" means readable directly in a published source photograph; a control is a known comparison crop we measure the target against; a singleton is a sequence attested only once.
 
-This is a sign-inventory experiment. It does not test meaning, phonetic value, grammar, or translation.
+The question: after adding `H-942 +520-220-016+` as a source-visible singleton control and excluding `M-1912` / `K-150` as non-source-grade, does the `M-1206 +520-220-034+` terminal — its final sign — still behave like the same source-visible graphic family as the clean `415` controls?
+
+This is a sign-inventory experiment: it probes how many distinct signs there are, not what any sign means. It does not test meaning, phonetic value, grammar, or translation.
 
 ## Packet
+
+A packet is the bundle handed to blind reviewers: anonymized ("neutral") crops with neutral IDs, a blank review sheet, and a master key that stays hidden until adjudication. Distractors are filler crops that should not match the target; they check that reviewers are not simply matching everything.
 
 Primary neutral packet:
 
@@ -56,7 +60,7 @@ K-150  = local metadata plus Bhaskar catalogue lead only, raw source still neede
 
 ## Blind Review Result
 
-Two independent blind visual reviews agreed on the key structure:
+Two independent blind visual reviews — each reviewer classified the anonymized crops without knowing which object any crop came from — agreed on the key structure. "Unblinds to" means what the neutral ID turned out to be once the master key was opened:
 
 | Blind result | Items | Adjudication |
 | --- | --- | --- |
@@ -94,7 +98,7 @@ translation
 
 ## Effect On The Branch
 
-This packet preserves a bounded `034/415` visual-family question, but it does not cross the allograph threshold. After the later `H-938 B` component probe, its positive scope is limited to M-1206 versus exact-side `415` controls such as `H-938 A/A bis` and `H-940 A`; it must not use the `H-938 B` companion side as component-level `034` evidence.
+This packet preserves a bounded `034/415` visual-family question, but it does not cross the allograph threshold — the point at which we would treat `034` and `415` as two written forms of one sign. After the later `H-938 B` component probe, its positive scope is limited to M-1206 versus exact-side `415` controls such as `H-938 A/A bis` and `H-940 A`; it must not use the `H-938 B` companion side as component-level `034` evidence.
 
 The active sign-inventory state is now sharper:
 

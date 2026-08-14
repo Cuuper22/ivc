@@ -1,3 +1,16 @@
+// Cross-site prediction test for the "role backbone" — the claimed ordering grammar among
+// eight role signs (400, 740, 407, 806, 002, 861, 820, 817), e.g. 740 comes before 002 and
+// 002 comes before any terminal. Real grammar should transfer: learn ordering rules at one
+// site, then test them at another. We read the filtered Indus inscription list
+// (lipi/metadata_filtered.csv), keep one copy of each distinct sign sequence, and slice the
+// corpus five ways (Harappa, Mohenjo-daro, other sites, complete-and-not-poor, the rest).
+// For each of eight train/test pairs we learn pairwise before/after constraints from the
+// train slice (at least 5 co-occurring rows, 80% directional agreement), check them against
+// the fixed core constraint list for conflicts, and score them on the test slice against a
+// within-row token-shuffle null (3,000 seeded iterations) and a reversed-constraint control.
+// An experiment survives only with 3+ constraints, zero core conflicts, 90%+ test share, and
+// null FPR at or below 0.01. Writes experiment, constraint, and null-iteration CSVs plus a
+// JSON report to data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

@@ -2,6 +2,10 @@
 
 Date: 2026-05-26
 
+This note is a re-ranking. A blind test had just failed: seal `M-315`, the object we were leaning on hardest, did not hold up. This is the record of choosing where the work goes next, written on the day the setback happened rather than reconstructed later.
+
+Some vocabulary used below. A branch is one line of investigation. A gate is a test a claim must pass before the project builds on it. A blind sort or blind review means reviewers judged images without knowing which object they came from. An allograph is a different drawn shape for the same underlying sign. Quarantined means an item is held out of the evidence pool until its problem is fixed.
+
 Supersession note, 2026-05-26: the M-1206 branch selected here has now been executed through three follow-on gates: [M-1206 cohesion gate](lipi_034_m1206_034_cohesion_gate.md), [M-1206 terminal component gate](lipi_034_m1206_terminal_component_gate.md), and [M-1206 allograph decision gate](lipi_034_m1206_allograph_decision_gate.md). Use this document for why M-1206 was chosen after M-315 failed; use the allograph decision gate for the current post-side-policy hypothesis state.
 
 ## Question
@@ -14,7 +18,7 @@ This is a sign-grounding decision, not a reading. The question is whether local 
 
 The M-315 branch no longer counts as live positive `034` evidence.
 
-The strict `390-X-002` blind packet found that the strongest pair was:
+A packet is a self-contained bundle of evidence and rulings. The strict `390-X-002` blind packet found that the strongest pair was:
 
 ```text
 S003 = M-984 impression a, local 004 control
@@ -27,11 +31,13 @@ This does not prove `M-315 = 004`. It creates upper-witness `004` pressure and r
 
 ## Re-ranked P0 Branches
 
+The six top-priority objects, reordered by what each can still do for us today. Nothing is thrown away; downgraded branches keep a defined, smaller role.
+
 | Rank | Object | Local text | Current role | Decision |
 | --- | --- | --- | --- | --- |
 | 1 | `M-1206` | `+520-220-034+` | Primary source-visible target | Use now. It has direct CISI source images, a tight `520-220-X` frame, and an existing blind comparison against `M-37 +520-220-415+`. |
 | 2 | `M-685` | `]034-204+` | Secondary damaged singleton | Keep as weak pressure only. It is source-visible, but the leading break and iconography/source metadata conflict block clean sign grounding. |
-| 3 | `M-1584` | `+034+` | Secondary pottery/graffiti singleton | Keep in a separate potmark lane. It is source-visible, but low-resolution, fragmentary, and not directly comparable to seal-side line syntax. |
+| 3 | `M-1584` | `+034+` | Secondary pottery/graffiti singleton | Keep in a separate potmark lane, a parallel track for marks on pots rather than seals. It is source-visible, but low-resolution, fragmentary, and not directly comparable to seal-side line syntax. |
 | 4 | `M-2104` | `+151-097-700-034+` | Acquisition-gated count/compound branch | Do not use until CISI 3.1 or equivalent archive evidence closes identity and segmentation. Public crop fails exact three-stroke validation. |
 | 5 | `M-315` | `+390-034-002-374-228-741+` | Downgraded source-visible target | Historical negative gate and future high-res request only. Not positive `034` evidence now. |
 | 6 | `M-1963` | `+000-034-104+` | Public-dark | Direct request lane only. No public source image in the checked layer. |
@@ -49,7 +55,7 @@ existing blind visual result
 clear falsification criteria
 ```
 
-The frame is:
+A frame is a fixed run of surrounding signs with one slot left open, so rows sharing it can be compared position by position. The frame is:
 
 ```text
 M-1912  +520-220-003+  source still gated
@@ -83,7 +89,7 @@ Are local 034 and 415 separate signs, allographs, source-side mapping artifacts,
 
 ## Current Evidence Against Easy Translation
 
-The `415` fine-form packet added public source-visible candidates beyond M-37. It found repeated target-like broad patterns at:
+The `415` fine-form packet — a study of small shape details rather than broad silhouette — added public source-visible candidates beyond M-37. It found repeated target-like broad patterns at:
 
 ```text
 H-786 A
@@ -98,9 +104,11 @@ That matters because M-1206's terminal unit can no longer be read as a clean sem
 
 ## Next Decisive Experiment
 
-Run a M-1206-centered `034` cohesion gate.
+Run a M-1206-centered `034` cohesion gate. Cohesion here means: does everything we label `034` actually look like one sign?
 
 ### Hypotheses
+
+Three rival explanations, each with the observation that would confirm it. Writing all three down at once keeps the favourite from being the only one tested.
 
 ```text
 H1: 034 is a stable source-visible sign class in this branch.
@@ -137,7 +145,7 @@ new source-visible 034 candidates split by object type rather than sign shape
 ## Immediate Work Order
 
 1. Use M-1206 as the primary target.
-2. Treat M-37, H-938, and H-940 as the cleanest current `415` controls.
+2. Treat M-37, H-938, and H-940 as the cleanest current `415` controls — comparison objects whose sign identity we are most confident about.
 3. Keep H-786 and H-941 as candidate visual reconciliations, not exact-side evidence.
 4. Keep M-315 as a negative gate result with upper-witness `004` pressure.
 5. Keep M-685 and M-1584 as separate weak source-visible pressure cases.

@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// After X-slot 125, only a handful of tails ever appear. This script names those tails and
+// turns them into testable predictions. It reads the X=125 rows produced by the scope-split
+// script (a report CSV in reports/) plus the raw corpus in data/open_prototype/lipi/
+// metadata_filtered.csv, and buckets each tail into a class: terminal, single 032, the
+// 632-032 family, an 820 cap, single 195, or the copper-tablet 590-831 tail. It then
+// summarizes tails per head — head 610 always selects tail 032, heads 861/906 end — and
+// checks how each tail class is used by 125 outside the X slot, as a control against copied
+// formulas. Four bets follow, the central one being that these tails are parser features
+// conditioned by head and scope, not translation values. The summary even lists the "most
+// embarrassing tests" that would break each claim. Writes tail rows, head-tail and
+// tail-class summaries, and bets as CSVs plus a summary JSON in reports/.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const x125RowsPath = path.join(reportsDir, 'campaign_032_002_861_002390x_expand_x125_scope_split_20260531_x125_global_rows.csv');

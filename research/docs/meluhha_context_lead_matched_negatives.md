@@ -4,6 +4,10 @@ Date: 2026-05-29
 
 ## Question
 
+This note records an attempt to find an outside handle on the Indus script, and a record of the shortcuts that attempt killed.
+
+The idea behind it: Mesopotamian cuneiform texts mention a place called Meluhha, widely identified with the Indus region. If one of those texts named a person, title, commodity, or route that we could tie to a specific Indus-inscribed object, we would have an external anchor — a fixed point outside the Indus corpus that constrains what the signs can be. CDLI is the Cuneiform Digital Library Initiative, the public database of cuneiform texts we query.
+
 Can the current CDLI Meluhha contexts produce a cuneiform-side name, title, commodity, or route phrase that is specific enough to become an external Indus bridge candidate?
 
 Answer: not yet. The run produced a useful lead map and killed several attractive shortcuts, but no external anchor is accepted.
@@ -28,9 +32,9 @@ The miner used the current CDLI line-context export and built 14 seeded lead fam
 
 The matched-negative runner queried CDLI with `format=json&limit=100` and paginated up to five pages. This matters: first-page-only CDLI searches silently cap at 25 by default. The query `szu-i3-li2-su`, for example, returns 207 deduplicated artifacts over three pages.
 
-For each query, the runner counted distinct returned artifacts, exact query-line artifacts, inscription hashes, duplicate clusters, artifacts with any Meluhha line, and artifacts where the query line is same-line or adjacent to Meluhha. A phrase only passed the source-side negative gate when it had at least two query-line artifacts and low false positives. Passing this gate does not make an Indus claim.
+For each query, the runner counted distinct returned artifacts, exact query-line artifacts, inscription hashes, duplicate clusters, artifacts with any Meluhha line, and artifacts where the query line is same-line or adjacent to Meluhha. A "matched negative" is the control step: we check how often a phrase turns up on texts that have nothing to do with Meluhha, because a phrase that is everywhere cannot point at Meluhha. A phrase only passed the source-side negative gate — the checkpoint a phrase must clear before it counts as a lead — when it had at least two query-line artifacts and low false positives. Passing this gate does not make an Indus claim.
 
-The external retest then joined source-side survivors to the local external Indus-style object table. Same-site and same-region strict length/duplicate-pattern matches were treated as forger-positive by construction: any synthetic target with the same duplicate pattern would produce the same match count.
+The external retest then joined source-side survivors to the local external Indus-style object table, our list of Indus or Indus-style objects found outside the Indus region. Same-site and same-region strict length/duplicate-pattern matches were treated as forger-positive by construction. The "forger" is our standard adversary test: we ask whether a fake target, built to have no real relationship, would score just as well. Here it would — any synthetic target with the same duplicate pattern would produce the same match count.
 
 ## Main Kills
 
@@ -57,7 +61,7 @@ Nineteen queries passed only as cuneiform-side context leads. Most literally inc
 - `ur-{d}lamma dumu me-luh-ha`
 - `ur gun3-a me-luh-ha`
 
-These are not readings. They are source-side lanes for future object-level bridge work.
+These are not readings. They are source-side lanes — separate lines of inquiry kept apart so one cannot contaminate another — for future object-level bridge work.
 
 ## External Retest
 
@@ -76,7 +80,7 @@ The other same-site matches are Girsu/Tello five-unit formulae against local Gir
 
 ## Source-Route Queue
 
-External-object source routing now has better acquisition targets, but none are anchors:
+A "route" here is the trail from a catalog row to a real, citable object record: museum number, excavation number, publication, image. External-object source routing now has better acquisition targets, but none are anchors:
 
 - Failaka rows `147.1` and `148.1`: secondary route through Laursen 2010 and Kjærum 1983; no primary public object route verified in this workspace.
 - Susa row `3882.1`: strong Louvre route via `SB 2425 / AS 41 / CCO S.299`, but no cuneiform name/title on the object.

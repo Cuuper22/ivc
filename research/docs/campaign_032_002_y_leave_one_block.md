@@ -2,6 +2,8 @@
 
 Date: 2026-05-26
 
+This note records a robustness test. One site-and-object block, Mohenjo-daro `SEAL:S`, supplies most of the rows behind a pattern. Leave-one-block means dropping that block entirely and asking whether the pattern survives on the rest. Signs in this corpus are numeric IDs; `Y` names whichever sign follows `002`. A "tail" is the material ending a row, a "lane" is an analysis track, and "dedup units" are rows collapsed so that identical texts count once.
+
 ## Result
 
 The `A-220-032 -> 002 -> Y` signal survives removing Mohenjo-daro `SEAL:S`, but the claim narrows.
@@ -174,7 +176,7 @@ Decision rule:
 
 - If source-clean target and control rows show the same `032-002-Y` packet and Y values move across frames, keep the closure-choice model.
 - If each Y value separates by site/type/iconography/neighbors, split the Y class into separate `002-Y` branches.
-- If source panels break `032-002-Y` continuity, quarantine those rows and rerun the function model.
+- If source panels break `032-002-Y` continuity, quarantine those rows — set them aside, unusable as evidence until resolved — and rerun the function model.
 
 ## Bottom Line
 

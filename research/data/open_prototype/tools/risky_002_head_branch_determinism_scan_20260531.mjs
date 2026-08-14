@@ -1,3 +1,15 @@
+// Does the sign after an `002-H` pair decide whether the inscription stops there?
+// This script reads the filtered corpus (data/open_prototype/lipi/metadata_filtered.csv),
+// finds every frame of the form `002-H-X` (sign 002, then a "head" H, then a "branch" X),
+// and asks, for each head: does knowing the branch X predict whether the text is
+// terminal (ends right after X) or continues? The "determinism score" counts how many
+// frames the best branch->terminal rule explains; a permutation test (exact when the
+// label combinations fit under 200k, otherwise 50,000 Monte Carlo shuffles) gives a
+// p-value. The point of the experiment is to check whether head 390 is special: if
+// `002-390-X` picks terminality far better than chance, and few rival heads match it,
+// then `002-390-X` behaves like a real grammatical slot, not just a frequent trigram.
+// Outputs go to data/open_prototype/reports/: a bet summary (JSON + CSV), a per-head
+// scan CSV, and the raw frames CSV.
 import fs from 'node:fs';
 import path from 'node:path';
 

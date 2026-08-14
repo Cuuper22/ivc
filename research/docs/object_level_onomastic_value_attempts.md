@@ -2,7 +2,11 @@
 
 Date: 2026-05-30
 
-This is the direct Priority A swing: take cuneiform-captured Meluhha names, titles, and lexical phrases, then attempt actual sign-value assignments against the external Indus-style object rows only where the current object route makes the attempt worth testing.
+This note records the most direct attempt the project has made to assign sounds to Indus signs, and its failure.
+
+The idea. Mesopotamian cuneiform texts mention a place called Meluhha, widely identified with the Indus region, along with names and titles attached to it. "Onomastic" means name-based. If one of those names sat on an Indus-inscribed object found in Mesopotamia, we could line the name's syllables up against the object's signs and get sound values. The "object route" is the trail from a catalog row to a real, citable object record — museum number, excavation number, publication — which is what makes an attempt worth testing at all.
+
+This is the direct Priority A test: take cuneiform-captured Meluhha names, titles, and lexical phrases, then attempt actual sign-value assignments against the external Indus-style object rows only where the current object route makes the attempt worth testing.
 
 No assignment survives.
 
@@ -56,6 +60,8 @@ Why it dies:
 
 ## Forger
 
+The forger is this project's standard adversary test: build fake versions of the claimed relationship and see whether they score as well as the real one. If they do, the real one is not evidence.
+
 The forger shuffled target source-sites across fixed cuneiform phrase patterns, then counted strict mapped Indus-only object attempts that remained same-site or Girsu/Tello-equivalent pattern matches.
 
 | Measure | Value |
@@ -72,4 +78,4 @@ This is nowhere near admissible. A forger that only gets site labels shuffled ca
 
 Retracted as an external anchor and as a phonetic-value source.
 
-Residual value: the script is now the correct place to test future exact object bridges. If Kjaerum `279/319`, Amiet `1643`, Mitchell 1986, or Sarzec/Heuzey produces a real object-level readable-script pairing, the same harness can attempt a value and measure the false-positive rate before any claim reaches the ledger.
+Residual value: the script is now the correct place to test future exact object bridges. If Kjaerum `279/319`, Amiet `1643`, Mitchell 1986, or Sarzec/Heuzey produces a real object-level readable-script pairing, the same harness can attempt a value and measure the false-positive rate before any claim reaches the ledger — the project's running record of accepted findings.

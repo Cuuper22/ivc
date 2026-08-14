@@ -2,9 +2,11 @@
 
 Date: 2026-05-26
 
+This note counts, rather than argues. One object, `H-938`, carries two inscriptions that sit suggestively close together, and an argument was being built on it. A single suggestive object is worth nothing until you check how often the same pairing occurs elsewhere. So this note inventories every local row with the same three-sign frame and lists what else is written on the same object.
+
 ## Question
 
-Is the `H-938` same-object `034/415` pressure an isolated cherry-picked fact, or does the local `+520-220-415+` frame repeatedly appear with `034/700` companion sides?
+Is the `H-938` same-object `034/415` pressure an isolated cherry-picked fact, or does the local `+520-220-415+` frame — the recurring three-sign string being tracked — repeatedly appear with `034/700` companion sides?
 
 ## Inputs
 
@@ -58,13 +60,13 @@ No exact `+520-220-415+` row in this inventory has a `033/700` companion.
 
 ## Adjudication
 
-The local `034/700` companion pattern is repeated enough to matter as acquisition pressure: four of the 17 exact `+520-220-415+` rows have same-object `+700-034+` or `+034-700+` companions. After the `H-938 B` component probe, this must not be read as component-level `034/415` support. It says the local catalog pattern is worth pursuing; it does not say the `034` component matches the `415` component.
+Adjudication is the ruling on what the counts above are allowed to support. The local `034/700` companion pattern is repeated enough to matter as acquisition pressure: four of the 17 exact `+520-220-415+` rows have same-object `+700-034+` or `+034-700+` companions. After the `H-938 B` component probe, this must not be read as component-level `034/415` support. It says the local catalog pattern is worth pursuing; it does not say the `034` component matches the `415` component.
 
 But source grade is the hard filter. Only `H-938` is currently source-panel-audited as a clean same-object pressure case. `H-939` is source-visible on the same CISI page but failed to become a secure `415` recurrence in the strict visual packet. `H-319` and `H-1284` stay acquisition targets.
 
 ## Decision
 
-This preserves the M-1206 branch as a sign-inventory problem, but only at the local/source-acquisition level:
+This preserves the M-1206 branch — one open line of investigation — as a sign-inventory problem, but only at the local/source-acquisition level:
 
 ```text
 local +520-220-415+ sometimes co-occurs on the same object with +700-034+ / +034-700+

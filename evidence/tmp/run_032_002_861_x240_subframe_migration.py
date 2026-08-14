@@ -1,3 +1,20 @@
+"""Check whether each X sign moves between after-240 subframes or stays locked.
+
+A sign that migrates across several after-240 continuations behaves like a
+mobile linguistic unit; a sign locked to one subframe in one formula family
+may be a copied tablet-slot artifact. This script re-profiles the existing
+strict X-before-240 rows: each X sign gets a migration class (singleton,
+locked duplicate family, locked single subframe, or migrates across
+subframes), together with its register cells, formula families, and its
+post-002-861 tail-initial rows. Each after-240 subframe is profiled the same
+way from the other direction. The recorded finding: 603 is locked to
+240-060-692 (3 rows, 1 register cell, 1 formula family) while controls 636
+and 642 each span 5 continuations — so 603's mobility is external only, and
+the copied-template explanation is promoted. No values, phonetics, or
+translations are accepted. Writes profile and subframe CSVs, a JSON summary,
+and a Markdown doc in docs/.
+"""
+
 from __future__ import annotations
 
 import csv

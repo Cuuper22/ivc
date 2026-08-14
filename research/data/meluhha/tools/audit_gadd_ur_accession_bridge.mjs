@@ -1,3 +1,15 @@
+// Accession-level audit of the Gadd 1932 Ur seals: can any local Indus row be
+// tied to a specific published museum object, and does any such object carry
+// both an Indus sign sequence and readable cuneiform? A hand-modeled table of
+// eight Gadd/BM/Penn objects (with museum numbers, plate references, findspots,
+// and what each surface actually shows) is checked against the Ur rows of
+// external_indus_objects.csv and the lipi metadata. Two mappings are verified by
+// excavation ID (3898.1 = U.17649, 3899.1 = U.8685); the rest are candidates or
+// unmapped fragments. The key asymmetry the audit documents: every Indus-
+// inscribed object lacks readable cuneiform, and the one cuneiform-inscribed
+// object (BM 120573) lacks any recorded Indus sequence — so no micro-bilingual
+// exists and zero external phonetic anchors are accepted. Writes an audit CSV
+// and a JSON summary with next acquisition steps.
 import fs from 'node:fs';
 import path from 'node:path';
 

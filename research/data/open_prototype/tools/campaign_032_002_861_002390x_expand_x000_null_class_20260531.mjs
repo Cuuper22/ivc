@@ -1,6 +1,17 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Can sign 000 be the parser's zero? In the 002-H-X construction, X=000 usually ends the
+// inscription, which suggests 000 marks an empty complement slot rather than carrying a word.
+// This script reads the parse-skeleton report CSV from reports/ (not the raw corpus), pulls
+// every row with X=000, and sorts each into one of four expected shapes: closed (nothing
+// follows), a 000-chain, a 002 frame reset, or the one known 033 exception under head 267.
+// Anything else counts as a prediction failure. It then rebuilds the full parse-row table
+// with 000 rows reclassified as zero_complement_class or zero_complement_exception, complete
+// with gloss skeletons like FRAME(002) HEAD(H) ZERO_COMPLEMENT(000), and measures how much
+// parser coverage this null class buys. Writes the 000 rows, the two rule summaries, the
+// upgraded parse table, and two bets as CSVs plus a summary JSON in reports/.
+
 const root = process.cwd();
 const parseRowsPath = path.join(
   root,

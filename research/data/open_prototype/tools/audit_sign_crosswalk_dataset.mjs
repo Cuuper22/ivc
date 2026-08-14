@@ -1,3 +1,15 @@
+// Hygiene audit for the sign-crosswalk dataset (the seven CSV tables under
+// data/sign_crosswalk/ that link signs across writing systems). It re-parses
+// every table and checks the boring but load-bearing things: row counts match
+// the manifest, primary keys exist and are unique, foreign keys resolve
+// (signs -> systems, edges -> signs, refs -> files), evidence files exist and
+// match their recorded sha256, and no crosswalk edge has leaked into
+// accepted_for_analysis=true. It also summarizes "pressure": signs with
+// multiple candidate edges and edges with high support or counterexamples.
+// Writes audit_summary.json, audit_issues.csv, and edge_pressure_summary.csv
+// back into the same directory. This checks data integrity only — it does not
+// accept any mapping, phonetic value, or reading.
+
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';

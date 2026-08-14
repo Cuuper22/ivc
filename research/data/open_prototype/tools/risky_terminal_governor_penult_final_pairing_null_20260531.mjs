@@ -1,3 +1,14 @@
+// Tests whether the terminal-governor network is really about pairing, or
+// just about frequency. A cheap alternative story: 002 and 060 are common
+// second-to-last signs, 817/820/861/920/550 are common last signs, so their
+// pairings pile up by coincidence. To rule that out we read the filtered
+// corpus metadata (complete texts only), collapse to one family per exact
+// text, take each family's penultimate and final sign, then shuffle the
+// final signs across the penultimate slots 5000 times. That null keeps both
+// marginal distributions and breaks only the pairing. We count how often
+// chance reproduces the five target pairs at 20+ counts each, and the full
+// target shape (002 paired with 817 and 820, 060 with 920/550/820, 820
+// shared by both governors). Writes one JSON report.
 import fs from 'node:fs';
 import path from 'node:path';
 

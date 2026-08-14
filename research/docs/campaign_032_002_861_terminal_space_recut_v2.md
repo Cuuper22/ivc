@@ -4,7 +4,9 @@ Date: 2026-05-29
 
 ## Question
 
-After quantifying the two visual-only blockers (`M-355` and `M-1267`), does any source-visible bare closure after `002-861` show tail-sized same-line terminal opportunity?
+This note records a second round of image measurement — a recut, meaning a re-measurement of the same rows under revised rules. The subject is terminal space: the physical room left at the end of an inscribed line, where a tail (material after the sign pair `002-861`) could fit.
+
+After quantifying the two visual-only blockers (`M-355` and `M-1267` — rows we could see but had not yet measured), does any source-visible bare closure after `002-861` show tail-sized same-line terminal opportunity? In plain terms: is there any bare row that had room for a tail and still chose to end?
 
 This is still a source/layout campaign. It does not assign values, phonetics, language identity, or translations.
 
@@ -18,15 +20,15 @@ This is still a source/layout campaign. It does not assign values, phonetics, la
 
 ## Result
 
-The recut strengthens the terminal-space adversary.
+The recut strengthens the terminal-space adversary — the rival explanation that tails appear simply where there is room.
 
 Tailed terminal-content windows now span `120-525px`; bare same-line post-terminal margins span `28-45px`.
 
-The largest measured bare margin is `45px`, still below the smallest measured tailed window `120px`.
+The largest measured bare margin is `45px`, still below the smallest measured tailed window `120px`. No bare row has yet shown tail-sized unused space.
 
 `M-355` is no longer just a visual note: it is a quantified long-continuation adversary. `M-1267` is now a quantified bare control, but it still does not provide tail-sized same-line empty terminal space.
 
-The source review sheet hides row labels and tail classes; the metric sheet is unblinded after measurement. This is a tail-hidden manual recut, not a claim of fully independent blind epigraphy.
+A note on blinding: the source review sheet hides row labels and tail classes; the metric sheet is unblinded after measurement. This is a tail-hidden manual recut, not a claim of fully independent blind epigraphy.
 
 ## Class State
 
@@ -39,16 +41,16 @@ The source review sheet hides row labels and tail classes; the metric sheet is u
 
 ## Decisions
 
-- `visual_only_blockers_quantified`: `closed_for_M355_and_M1267_with_quality_limits`. M-355 now has a measured long continuation window; M-1267 now has a measured bare terminal margin Limit: measurements are tail-hidden manual recuts, not fully independent blind epigraphy.
-- `tail_windows_vs_bare_margins_v2`: `terminal_space_adversary_strengthened`. tailed windows span 120-525px / share 0.177-0.433; bare margins span 28-45px / share 0.040-0.063 Limit: tail windows measure visible terminal content; bare margins measure same-line terminal edge margin.
-- `bare_tail_sized_empty_slot`: `still_not_observed`. largest measured bare margin is 45px, below the smallest measured tailed window 120px Limit: does not prove no physical space elsewhere on the object; it blocks same-line grammar promotion from current source windows.
-- `long_continuation_adversary`: `upgraded_from_visual_only_to_quantified_adversary`. M-355 window 525px / share 0.395 Limit: single long-continuation row; use as adversary, not positive grammar.
-- `grammar_promotion`: `blocked`. same-line tail attachment survives, but terminal capacity still separates tailed and bare source windows Limit: promotion requires a bare closure with tail-sized same-line terminal opportunity or exact/near-exact formula alternation under comparable layout.
+- `visual_only_blockers_quantified`: `closed_for_M355_and_M1267_with_quality_limits`. M-355 now has a measured long continuation window; M-1267 now has a measured bare terminal margin. Limit: measurements are tail-hidden manual recuts, not fully independent blind epigraphy.
+- `tail_windows_vs_bare_margins_v2`: `terminal_space_adversary_strengthened`. Tailed windows span 120-525px / share 0.177-0.433; bare margins span 28-45px / share 0.040-0.063. Limit: tail windows measure visible terminal content; bare margins measure same-line terminal edge margin.
+- `bare_tail_sized_empty_slot`: `still_not_observed`. The largest measured bare margin is 45px, below the smallest measured tailed window 120px. Limit: does not prove no physical space elsewhere on the object; it blocks same-line grammar promotion from current source windows.
+- `long_continuation_adversary`: `upgraded_from_visual_only_to_quantified_adversary`. M-355 window 525px / share 0.395. Limit: single long-continuation row; use as adversary, not positive grammar.
+- `grammar_promotion`: `blocked`. Same-line tail attachment survives, but terminal capacity still separates tailed and bare source windows. Limit: promotion requires a bare closure with tail-sized same-line terminal opportunity or exact/near-exact formula alternation under comparable layout.
 
 ## Interpretation
 
 Source-visible same-line tail attachment remains real positional evidence. But the current image layer still cannot promote a post-`861` grammar slot, because closure has not yet been observed with tail-sized same-line terminal opportunity.
 
-The next positive gate is now very concrete: find or recut a bare closure after `002-861` with at least `120px` of same-line terminal opportunity, under matched formula/register conditions, that still chooses closure.
+The next positive gate — the checkpoint that would move this forward — is now very concrete: find or recut a bare closure after `002-861` with at least `120px` of same-line terminal opportunity, under matched formula/register conditions, that still chooses closure.
 
 Accepted values, phonetics, language identity, translations, exact source-token boundaries, and sign meanings remain `0`.

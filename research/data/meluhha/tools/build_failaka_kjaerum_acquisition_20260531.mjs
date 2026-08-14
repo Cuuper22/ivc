@@ -1,5 +1,17 @@
 #!/usr/bin/env node
 
+// Source-acquisition ledger (2026-05-31) for the Failaka seal problem. Two Gulf
+// seals in Kjaerum 1983 (catalogue nos. 279 and 319, Laursen 2010 nos. 12 and
+// 13) are the best candidates for local Failaka rows 147.1/148.1, but nobody in
+// this workspace has seen the actual catalogue pages. This script records every
+// route tried to get them: the cached CDLI publication record 1773730 (each
+// related artifact checked for "No. 279/319" in its exact reference), a DAI PDF
+// download that may have been blocked by anti-bot HTML, and three bibliographic
+// routes (Aarhus University Press, CiNii, Open Library). It reads the existing
+// Gulf-type queue CSV, hashes every cached file with SHA-256, and writes one CSV
+// row per route plus a JSON summary. It makes no claim: the recorded decision
+// is that Kjaerum 279/319 stay unresolved and the CDLI record must not stand in
+// as an object bridge.
 import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";

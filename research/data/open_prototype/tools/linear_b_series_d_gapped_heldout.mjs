@@ -1,3 +1,18 @@
+// Experiment E5.3a: can simple statistical models fill gaps in a known script?
+// The Linear B Series D bundle (Samples.txt, MD5-pinned) contains 513 clean
+// sign sequences and, further down the same file, the same 513 rows each with
+// exactly one sign replaced by "*". This script aligns each gapped row to its
+// clean original, verifies the gap is the only difference, and then tries to
+// predict the missing sign with four models: raw sign frequency, position
+// frequency, length-and-position frequency, and a smoothed bidirectional
+// bigram using the left and right neighbors. Each gap is scored under two
+// holdout rules — row leave-one-out (only the target row leaves training) and
+// the stricter sequence leave-one-out (every exact duplicate of the target
+// sequence leaves too) — and within two scopes: all 513 rows, and only rows
+// no longer than the Indus corpus's 95th-percentile length, so the comparison
+// to Indus is length-matched. Writes the alignment, per-gap predictions, and
+// summary CSVs plus a JSON summary. Comparator evidence about a known script;
+// it validates nothing about any Indus sign.
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';

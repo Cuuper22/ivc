@@ -1,3 +1,21 @@
+// Recorded-direction policy controls for the directionality candidate.
+//
+// The corpus rows come with a recorded direction field (R/L or L/R) added by
+// transcribers. If those labels — or the orientation conventions behind them —
+// drove the stored-vs-reversed asymmetry, the signal would be an editorial
+// artifact, not sequence structure. This script rebuilds the harsh scope from
+// lipi_scope_rows.csv (exact collapse, top-10 edge removal, one-edit family
+// collapse) and rescores the leave-one-row-out bigram test after rewriting
+// token order under seven policies: stored as-is, reverse every row, flip only
+// L/R rows, flip only R/L rows, and three randomized flips (per row, per site,
+// per direction label; 1000 iterations each by default, --iterations=N
+// overrides). Each policy runs on four scopes: all rows, R/L only, and the
+// R/L rows of Mohenjo-daro and Harappa separately. Outputs go to
+// data/open_prototype/reports/: a JSON summary with direction distributions,
+// a per-policy CSV, and null summary/iteration CSVs. This tests sensitivity
+// to recorded direction fields only; it says nothing about the physical
+// reading direction on the objects.
+
 import fs from 'fs';
 import path from 'path';
 

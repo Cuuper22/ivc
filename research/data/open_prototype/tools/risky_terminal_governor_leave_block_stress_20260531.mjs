@@ -1,3 +1,14 @@
+// Stress-tests the terminal-governor model by deleting whole blocks of the
+// corpus and asking whether the seven target edges (002-817, 002-820,
+// 002-861, 060-920, 060-550, 060-820, 060-692) still look terminal. Each
+// block is a site/type slice a skeptic might blame for the signal — Mohenjo-
+// daro square seals, Harappa square seals, all square seals, Mohenjo-daro
+// rectangular seals, Harappa tablets, or rows with weak object identity.
+// For each leave-one-block panel we recount text families (edge + following
+// context + exact text) and mark which edges keep at least 20 families with
+// 85% terminal share (strict) or 75-85% (near). The decision hinges on
+// whether the core edges survive removing Mohenjo-daro SEAL:S. Reads the
+// filtered corpus metadata (complete texts only) and writes one JSON report.
 import fs from 'node:fs';
 import path from 'node:path';
 

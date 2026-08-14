@@ -4,6 +4,10 @@ Date: 2026-05-24
 
 ## Purpose
 
+This note is a worklist. It names the inscriptions someone has to check by hand, and says what to look for in each one.
+
+Why it exists: the project reads the same inscriptions from two independent catalogs — `lipi`, whose signs are numeric codes, and `mayig`, whose signs are Parpola-style `P###` codes. For 29 inscriptions the two catalogs disagree about how many signs are present. "Collation" is the manual act of settling such a disagreement against a source image or an authoritative catalog entry. Until that happens, those rows stay out of every experiment.
+
 This document turns the 29 count-mismatch rows from the overlap audit into a manual collation queue.
 
 It does not resolve the mismatches. It classifies the likely failure mode, records simple count-policy checks, and assigns a review priority before any row can be admitted into structural experiments.
@@ -83,7 +87,7 @@ The unflagged Mayig-extra group is the largest unresolved class:
 M-111; M-161; M-162; M-20; M-25; M-4; M-45; M-81
 ```
 
-Several of these contain repeated Mayig graphemes:
+Several of these contain repeated Mayig graphemes — the same sign code appearing twice in one inscription:
 
 ```text
 M-111: P378:2, consecutive P378

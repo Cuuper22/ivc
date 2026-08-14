@@ -28,7 +28,7 @@ Mechanic validation: PASS. The reader-facing packet uses alphabetic neutral IDs 
 
 ## Blind Result
 
-All blind readers treated the panels as partial rather than fully stable. No panel earned a clean segmentation verdict.
+Every blind reader treated the panels as partial rather than fully stable. No panel earned a clean segmentation verdict.
 
 - ALPHA / M-119: partial. Repeated vertical-bar and fork/comb neighborhoods were noticed, but left-edge smear, central touching, and a cropped right hook-loop keep it below source-window proof.
 - ECHO / M-735: partial. It shares vertical/fork/curved neighborhoods with other panels, but dense overlap and a partly off-frame sweeping curve make it unstable as a strict blind boundary witness.
@@ -42,13 +42,13 @@ The alpha blind read downgrades the visual claim from `boxed-window-compatible b
 
 `catalog-guided boxed windows remain plausible, but blind source-window proof is not achieved`.
 
-This does not kill the `002-390-X` branch hypothesis, because the family-collapsed positional ecology still shows a live branch slot with `125`, `095`, `692`, and source-dark `705` alternatives. It does kill any move that treats the visible source bands alone as independently proving the immediate numeric windows.
+This does not kill the `002-390-X` branch hypothesis: the family-collapsed positional ecology still shows a live branch slot with `125`, `095`, `692`, and source-dark `705` alternatives. What it does kill is any move that treats the visible source bands alone as independently proving the immediate numeric windows.
 
 ## Consequence For 125
 
 `125` remains live only as a positional continuation-bearing branch candidate after `002-390`, not as a source-proven visual boundary, value, sign meaning, phonetic reading, function, language identity, or translation.
 
-The next useful work is not more polishing around `125`. It is source-route acquisition for matched non-`125` alternatives, especially:
+The next useful work is not more polishing around `125`. It is going out and acquiring source routes for matched non-`125` alternatives, especially:
 
 - H-1993, because it would test the `004 -> 002-390` split against Sktd-1.
 - M-1825 and Dholavira 4237.1, because they are the repeated `705` branch needed to decide whether non-`125` alternatives are ordinary terminal branches.

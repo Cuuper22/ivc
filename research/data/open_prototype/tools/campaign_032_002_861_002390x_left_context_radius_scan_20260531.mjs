@@ -1,6 +1,19 @@
 import fs from "node:fs";
 import path from "node:path";
 
+// How much left context does it take before 002-390-X frames with the same context stop
+// disagreeing about the branch sign X? This script scans every radius. It reads the
+// target-controls report CSV produced by the full-left formula-controls script (each row is
+// one 002-390 frame with its full left prefix, branch, and source_status, which is mapped
+// to a source tier such as strict_visible). For each radius r from 1 up to the longest
+// prefix, it groups the frames by their last r left signs and marks each group: does it
+// contain more than one branch (a branch split), and is that split witnessed by at least two
+// strict source-visible rows? The recorded outcome: branch splits exist only at radius 1
+// (predecessors 004 and 032), none survive widening to radius 2, and no split is strict
+// source-visible — so the branch paradigm stays blocked. Writes per-target radius rows,
+// group rows, a per-radius summary, and a decisions table as CSVs plus a summary JSON in
+// reports/.
+
 const root = process.cwd();
 const reportsDir = path.join(root, "data", "open_prototype", "reports");
 const targetControlsPath = path.join(

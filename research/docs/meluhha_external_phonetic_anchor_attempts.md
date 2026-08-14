@@ -4,6 +4,8 @@ Date: 2026-05-29
 
 This note records the first direct attempt to turn cuneiform Meluhha-side phonetic strings into Indus sign values on physically external Indus or Indus-style objects from Mesopotamia and the Gulf.
 
+Terms first. Meluhha is a place named in Mesopotamian cuneiform texts, widely identified with the Indus region. CDLI is the Cuneiform Digital Library Initiative, the public cuneiform database we query. An "external anchor" is a fixed point from outside the Indus corpus that would constrain what Indus signs can be. A "gate" is a recorded checkpoint that either lets a claim through or blocks it. The "forger" is this project's standard adversary test: we build fake targets that should carry no real relationship and check whether they score as well as the real one; if they do, the method proves nothing.
+
 It produces no accepted phonetic value. That is the point of the gate: candidate values were generated, then tested against a pattern-matched forger and rejected.
 
 ## Inputs
@@ -20,7 +22,7 @@ The script used the local external-object table:
 
 - `data/meluhha/external_indus_objects.csv`
 
-The focus lane contains 29 parseable external rows from Mesopotamia and the Gulf. The full external context table contains 41 parseable rows.
+The focus lane — the narrow slice of rows this run is allowed to draw on — contains 29 parseable external rows from Mesopotamia and the Gulf. The full external context table contains 41 parseable rows.
 
 ## Tested Targets
 
@@ -49,7 +51,7 @@ These are not values. They are the mechanical output of length and duplicate-pat
 
 ## Forger Result
 
-The forger generated 2,000 synthetic phonetic targets per tested target with the same length and duplicate pattern. Because the matcher ignores phonetic identity and uses only pattern compatibility, a valid method should not treat any observed match as evidential unless it beats this null.
+The forger generated 2,000 synthetic phonetic targets per tested target with the same length and duplicate pattern. Because the matcher ignores phonetic identity and uses only pattern compatibility, a valid method should not treat any observed match as evidential unless it beats this null — the score distribution those fake targets produce.
 
 It did not.
 
@@ -65,10 +67,10 @@ The duplicate `me` constraint in `e-me-bal-me-luh-ha` is the only target with re
 
 ## Skeptic Boundary
 
-The skeptic breaks every candidate for the same reasons:
+The skeptic pass — a deliberate attempt to argue the result down — breaks every candidate for the same reasons:
 
 - No candidate is paired to a specific cuneiform attestation by accession, owner, title, profession, date, or object-level publication route.
-- The external Indus object rows are still `T3_quarantined_lipi_metadata`; they are useful for search, but not source-image or catalogue validated here.
+- The external Indus object rows are still `T3_quarantined_lipi_metadata` — quarantined meaning walled off from use as evidence until validated; they are useful for search, but not source-image or catalogue validated here.
 - The same four-sign external rows can be assigned to `ma2-me-luh-ha`, `lu2-sun2-zi-da`, and `szu-i3-li2-su` with equal formal success.
 - The Lu-Sunzida prior is independently failed: current CDLI exports give 15 Lu-Sunzida artifacts, only one with any Meluhha line, for a name-alone false-positive rate of `0.933333`.
 

@@ -2,9 +2,11 @@
 
 Date: 2026-05-24
 
+This note picks the first outside yardstick for the project. The idea is to take a script that has already been deciphered, hide everything that made the decipherment possible, cut it down to the small, short, label-free evidence the Indus corpus actually offers, and see how much a structural method can still recover. That number is the honest ceiling for what this project can claim. The note exists to choose which known script to try first and to say what may and may not be looked at while doing it.
+
 ## Question
 
-Which known-script comparator should be acquired first to estimate what an IVC translation system can honestly recover under Indus-like scarcity?
+Which known-script comparator — a deciphered script used as a benchmark — should be acquired first to estimate what an IVC translation system can honestly recover under Indus-like scarcity?
 
 The target is not to compare current IVC work against full Ancient Egyptian translation. That would be nonsense dressed in a lab coat. The target is to blindfold known deciphered systems until they resemble the IVC evidence condition, then measure what survives.
 
@@ -30,7 +32,7 @@ Reason:
 
 ## Blindfold Protocol
 
-For the first pass:
+The blindfold is the list of fields hidden from the method so it cannot cheat by consulting the known readings. For the first pass:
 
 ```text
 source: Zenodo Linear B Series D

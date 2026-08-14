@@ -4,7 +4,9 @@ Date: 2026-05-29
 
 ## Question
 
-Does post-`861` material behave like a real secondary inscriptional zone once source segmentation and terminal capacity are considered, or is tail/no-tail mainly layout opportunity?
+This note records a measurement campaign on the physical space at the end of inscription rows. Numbers like `861` are sign IDs; a "tail" is material that appears after `861` at the end of a row; "terminal space" is the room left on the object where a tail could physically fit. "Source-first" means we work from the published photographs, not from transcriptions.
+
+The question: does post-`861` material behave like a real secondary inscriptional zone once source segmentation and terminal capacity are considered, or is tail/no-tail mainly layout opportunity — tails appearing simply because there was room?
 
 This is a source-first class campaign. It does not assign values to `603`, `533-717`, `255-416`, or any other tail.
 
@@ -27,9 +29,9 @@ Mechanic validation: `PASS`.
 
 ## Source-First Result
 
-The typed post-`861` zone remains visible at source level, but grammar promotion is blocked.
+The typed post-`861` zone remains visible at source level, but grammar promotion is blocked. In plain terms: the photographs still show the tail zone, but we cannot yet claim it is grammar.
 
-The six quantified tailed rows all have same-line attachment verdicts. Five of six touch the marked terminal edge. That keeps source-visible positional behavior alive.
+The six quantified tailed rows all have same-line attachment verdicts — the tail sits on the same inscribed line as the rest of the row. Five of six touch the marked terminal edge. That keeps source-visible positional behavior alive.
 
 But terminal-space now generalizes beyond the narrow `220-032` packet:
 
@@ -38,9 +40,9 @@ But terminal-space now generalizes beyond the narrow `220-032` packet:
 | tailed terminal-content windows | `120-265px` | `0.177-0.433` |
 | bare post-terminal margins | `28-45px` | `0.040-0.063` |
 
-The largest measured bare post-terminal margin is `45px`, still below the smallest measured tailed terminal-content window, `120px`.
+The largest measured bare post-terminal margin is `45px`, still below the smallest measured tailed terminal-content window, `120px`. In other words: no bare row has been shown to have tail-sized empty space that went unused.
 
-That is not proof that layout explains the system. It is proof that grammar is not promotable from the current image layer. The current evidence is compatible with “tails appear when the physical terminal zone can carry them.”
+That is not proof that layout explains the system. It is proof that grammar is not promotable from the current image layer. The current evidence is compatible with "tails appear when the physical terminal zone can carry them."
 
 ## Class-Level Evidence
 
@@ -57,7 +59,7 @@ That is not proof that layout explains the system. It is proof that grammar is n
 - The typed secondary-zone model remains a live structural question: closure, simple single, fixed pair, and long continuation are visible categories.
 - `603` remains the best simple-tail probe, not a value.
 - `533-717` remains a fixed-unit comparator, not a function.
-- Long continuation remains an adversary against suffix over-reading.
+- Long continuation remains an adversary against suffix over-reading — a standing counterexample that keeps us from over-interpreting short tails.
 
 ## What Is Blocked
 
@@ -90,7 +92,7 @@ That is not proof that layout explains the system. It is proof that grammar is n
 
 ## Next Gate
 
-The next campaign must be blind recut, not another table:
+A gate is a checkpoint the work must clear before any stronger claim. The next campaign must be blind recut — re-measuring with the tail labels hidden from the scorer — not another table:
 
 - Quantify `M-355` and `M-1267` terminal windows.
 - Recut all `220-032` rows with tail labels hidden.

@@ -4,11 +4,13 @@ Date: 2026-05-29
 
 ## Question
 
+This note asks how freely signs move around inside one recurring construction. Signs in this corpus are numeric IDs. "X-before-`240`" names the slot filled by the sign X in rows shaped `...-X-240-...`; a "subframe" is the short fixed run of signs that follows `240` in such a row. A sign that appears with many different subframes is mobile; a sign stuck with one is locked.
+
 Inside the X-before-`240` construction, do X signs migrate across after-`240` continuations, or are they locked to narrow subframes? This is the next distributional question after the failed `H-1138/H-360` graphic upgrade: it asks whether `603` behaves like an internally mobile sign candidate or like a local copied tablet-slot artifact.
 
 ## Method
 
-Input is the already-built strict X-before-`240` packet: complete closed token rows, deduplicated by `(cisi, site, type, symbol, text)`. This pass adds no new source claim; it re-profiles the distributional behavior.
+Input is the already-built strict X-before-`240` packet — a fixed bundle of rows assembled for this question: complete closed token rows, deduplicated by `(cisi, site, type, symbol, text)`, so identical texts count once. This pass adds no new source claim; it re-profiles the distributional behavior.
 
 Rows: `95` X-before-`240` rows across `28` X signs.
 
@@ -17,14 +19,14 @@ Rows: `95` X-before-`240` rows across `28` X signs.
 Status: `603_bridge_survives_distributionally_but_is_not_internally_mobile_inside_x240`.
 
 Core observations:
-- `603` is locked to `240-060-692` inside X-before-240: 3 rows, 1 register cell, 1 formula family.
+- `603` is locked to `240-060-692` inside X-before-240: 3 rows, 1 register cell, 1 formula family. A register cell groups rows sharing an object class — site, seal type, icon, shape; a formula family groups near-identical repeated texts. One of each means the three rows are close to being one witness.
 - `636` and `642` are not locked the same way: `636` spans 5 after-240 continuations and `642` spans 5.
 - `482` is strongly tied to `240-002-861`, mostly one formula family; `904` splits between terminal `240` and `240-002-817`.
 - Therefore the Harappa-side `603` evidence is narrower than the controls, not broader. Its mobility is external: post-`002-861-603`, not internal to X-before-240.
 
 Interpretive shift:
 - Promote split-homograph/catalog-conflation and copied-template explanations for Harappa `603`.
-- Keep `603` as a live distributional bridge only because no other low-frequency X-before-240 sign also appears as a post-`002-861` tail initial.
+- Keep `603` as a live distributional bridge — a sign linking two otherwise separate structures — only because no other low-frequency X-before-240 sign also appears as a post-`002-861` tail initial, the first sign of the material ending a row after `002-861`.
 - Do not use the Harappa `603` packet as value evidence until `H-1846` or a better `H-1138` source route resolves graphic identity.
 
 Not accepted: `603` value, phonetics, language identity, cross-context graphic identity, or translation.

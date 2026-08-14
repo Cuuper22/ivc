@@ -1,3 +1,17 @@
+// The M-2104 crosswalk hypothesis (see lipi_034_m2104_parpola_extraction.mjs)
+// needs actual photographs to test. This script hunts for public routes to
+// those photographs. It downloads the OCR XML of two CISI volumes (India and
+// Pakistan) from the Internet Archive, splits them into per-page word chunks,
+// and searches for nine objects — the M-2104 target, its three tablet
+// parallels, four controls, and two conflict rows — using exact IDs, bare
+// numbers, and plate-header range strings. Each hit becomes a route row with
+// the IA reader URL, a page-image URL, the surrounding OCR context, and a
+// rough page classification (plate candidate, data register, discussion,
+// noise). A second, hand-curated table records what a human actually saw on
+// the promising pages: which plates show which objects, and the key negative
+// that no exact M-2104 route exists in either volume. Writes route-hits and
+// visual-notes CSVs plus a JSON summary that names the immediate
+// falsification test. Route discovery only; no mapping is accepted here.
 import fs from 'node:fs';
 import path from 'node:path';
 

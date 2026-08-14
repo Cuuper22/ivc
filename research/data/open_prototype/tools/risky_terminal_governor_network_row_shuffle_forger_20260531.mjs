@@ -1,3 +1,15 @@
+// A forger attack on the terminal-governor network: could its shape arise
+// from sign frequencies and row lengths alone, with no real ordering rule?
+// We read the filtered corpus metadata (complete texts only, rows with at
+// least 2 signs), score the raw network — edges with at least 20 cells and
+// 85% terminal share, multi-closure governors, shared closures — then run
+// 2000 iterations where each row's signs are shuffled internally. That
+// shuffle keeps every inscription's exact sign multiset and length but
+// destroys order. If the shuffled corpora rarely reproduce the live-edge
+// counts or the target shape (002 with 2+ closures, 060 with 3+, 820 shared
+// by both), the network depends on genuine sign order. Note this variant
+// counts raw occurrence cells, without the exact-collapse used elsewhere.
+// Writes one JSON report.
 import fs from 'node:fs';
 import path from 'node:path';
 

@@ -1,3 +1,17 @@
+"""Re-test the 603 bridge lock after collapsing repeated rows into family cells.
+
+The earlier row-level null gave the 603 bridge-lock pattern weak-to-moderate
+support. But repeated identical Harappa rows may be copies, not independent
+witnesses. This audit collapses the 95 X-before-240 rows into family cells
+keyed by (X sign, prefix, after-240 subframe, register, signless formula
+template), then reruns the seeded 20,000-iteration label-shuffle null at the
+cell level. The result recorded here: 603 collapses to a single family cell,
+so its Harappa-side internal evidence is not replicated, and the bridge
+pressure is demoted from support to acquisition priority. 603 stays not
+promoted; no value, phonetics, or translation is accepted. Writes cell,
+profile, and null-sample CSVs, a JSON summary, and a Markdown doc in docs/.
+"""
+
 from __future__ import annotations
 
 import csv

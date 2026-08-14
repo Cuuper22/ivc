@@ -1,3 +1,14 @@
+// Semantics probe for ten candidate "branch selector" signs (125, 095, 705, 692, 707, 140,
+// 346, 072, 530, 590) — signs proposed to fill the X slot in 002-390-X frames. For each one
+// we ask: what company does it keep globally, and does that support a semantic label such as
+// rank/title (125), administrative status (095), or hard terminal closure (692)? We read the
+// filtered Indus inscription list (lipi/metadata_filtered.csv) and profile every occurrence
+// of each selector: predecessors, successors, terminal share, object types, sites, and cult
+// imagery, plus its specific 002-390 rows. A second pass studies "left qualifiers" — the sign
+// just before 002 — to test whether signs like 235 steer which head and selector follow.
+// Class labels and confidence-movement notes are assigned by fixed rules in the code.
+// Writes selector-context, selector-row, and left-qualifier CSVs plus a JSON summary to
+// data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

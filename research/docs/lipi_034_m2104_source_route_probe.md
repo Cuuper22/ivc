@@ -2,6 +2,10 @@
 
 Date: 2026-05-25
 
+This note is a probe — a bounded check aimed at one question. The question is a plumbing one: for each object we want to compare, can we actually get to a published picture of it?
+
+That sounds mundane and is not. A crosswalk (a checked link between our labels and another catalogue's) built only on someone's prose description can never be argued with. Once a plate image is reachable, the argument becomes about a thing you can look at. This note is the record of which objects crossed that line and which did not.
+
 Question:
 
 ```text
@@ -37,6 +41,8 @@ accepted decipherment claims: 0
 
 The important change is that the tablet parallels are now visually reachable:
 
+A control here is a comparison object used to check that a pattern is not an artifact of our own transcription habits.
+
 | Object | Source route | Status | Use |
 | --- | --- | --- | --- |
 | `M-478` | CISI India IA leaf `150`, printed p. 115, `Mohenjo-Daro 478-481` | Plate visible | Test `700-004` as Parpola's `UIIII` / four-pot cluster and test `400/097`. |
@@ -47,7 +53,7 @@ The important change is that the tablet parallels are now visually reachable:
 | `M-915` | CISI Pakistan IA leaf `122`, printed p. 88 | Plate visible | Named control for signs 15 and 1 at text end. |
 | `M-715` | CISI Pakistan IA leaf `80`, printed p. 46 | Plate visible | Conflict-resolution image: Parpola names it, local row does not expose clean `151/097`. |
 | `M-896` | CISI Pakistan IA leaf `119`, printed p. 85 | Plate visible | Conflict-resolution image: local row has `151` but not `097`. |
-| `M-2104` | Parpola 2019 Fig. 1 text no. 12 | Figure/prose visible, no IA plate route found | Target remains source-gated beyond Parpola. |
+| `M-2104` | Parpola 2019 Fig. 1 text no. 12 | Figure/prose visible, no IA plate route found | Target remains source-gated beyond Parpola: unusable until a published source reaches the object itself. |
 
 ## What Changed
 
@@ -72,6 +78,8 @@ If either answer is no, the live `034` extraction fails.
 
 ## Prior-Work Pressure
 
+Prior-work pressure means earlier scholarship pushing us toward a test. It is a reason to look, never a result.
+
 The CISI India introduction page reached by the M-478 route gives useful pressure for the pot-count hypothesis. It describes a U-shaped tablet sign treated as a pot, preceded by zero to four vertical strokes, and discusses M-478/M-479 as a four-pot offering context. This supports the class of visual pattern under test, but it does not validate M-2104 or any local sign mapping by itself.
 
 ## Negative Result
@@ -79,6 +87,8 @@ The CISI India introduction page reached by the M-478 route gives useful pressur
 IA CISI OCR did not find exact `M-2104`. The bare `2104` hit appears on Pakistan leaf `479`, a register/index-like page, not a source plate for the object. So `M-2104` still depends on Parpola 2019 Fig. 1 until a direct CISI plate, rod photograph, museum image, or higher-resolution publication source is acquired.
 
 ## Boundary
+
+The hard line between what was found and what the project is allowed to claim.
 
 Accepted translations: 0
 
@@ -94,7 +104,7 @@ This artifact stores route and visual access. It does not accept `097 = sign 15`
 
 ## Next Move
 
-1. Crop `M-478`, `M-480`, `M-1425`, and Parpola Fig. 1 text no. 12 to the inscription lanes.
+1. Crop `M-478`, `M-480`, `M-1425`, and Parpola Fig. 1 text no. 12 to the inscription lanes — the narrow band of the object that carries the sign row.
 2. Compare the visible stroke/U-pot cluster against local `700-004` and `700-034`.
 3. Use `H-543`, `H-544`, and `M-915` as controls for the `097/151` signs 15/1 mapping.
 4. Use `M-715` and `M-896` as adversarial conflict rows, not exceptions to hand-wave.

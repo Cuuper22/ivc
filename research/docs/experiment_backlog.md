@@ -2,7 +2,9 @@
 
 Date: 2026-05-26
 
-The experiments are ordered to prevent premature translation. Each experiment must publish inputs, corpus version, sign list, exclusions, code or manual protocol, outputs, and failure criteria.
+## What This Document Is And How To Read It
+
+This backlog is the project's ordered queue of experiments. The order is deliberate: experiments are sequenced to prevent premature translation, so corpus-integrity work comes before structural tests, and structural tests come before anything that touches interpretation. Each experiment is written as a question with explicit pass and fail conditions, and every experiment must publish its inputs, corpus version, sign list, exclusions, code or manual protocol, outputs, and failure criteria. Many entries also carry a "current prototype result" block; that is a status note on where the work stands, with pointers to the artifact files that hold the details. Do not read a listed experiment as a finished result, and do not read a prototype result as an accepted finding — a result recorded here has only the strength its own caveats give it. Nothing in this backlog licenses a sign meaning, a phonetic value, or a translation.
 
 ## Phase 0: Corpus Integrity
 

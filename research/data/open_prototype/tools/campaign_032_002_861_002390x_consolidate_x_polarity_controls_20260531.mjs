@@ -1,6 +1,20 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script stress-tests the "X polarity" claim: that the X slot two signs
+// after 002 splits into terminal boosters (signs like 000 or 095 that tend to
+// close the text right there) and open operators (signs like 125 or 530 that
+// keep it going). The worry is confounding — maybe the split only appears
+// because of one site, one seal type, or damaged texts. So it scans every text
+// in lipi/metadata_filtered.csv, collects each 002-HEAD-X occurrence whose X
+// is on the hand-picked booster/operator/edge lists, and recomputes the
+// terminal-rate gap under eight scopes: all rows, SEAL:S only, Mohenjo-daro
+// only, non-Mohenjo, Harappa only, complete texts, good condition, and
+// CISI-named objects. A scope "survives" when the gap stays at or above 0.35
+// with at least 5 rows on each side; a per-head table repeats the check
+// within each head sign. Writes control, head-control, and decision CSVs plus
+// a summary JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

@@ -1,3 +1,22 @@
+// Orientation-context audit for the 700+companion short marks on Harappa
+// TAB:B/TAB:I tablets. A two-sign mark can be written "700 first" or "700
+// last". The earlier orientation audit showed the two orders are far from
+// balanced; the question here is whether order also co-varies with context —
+// do 700-first tablets carry different longer texts, side layouts, or focus
+// signs than 700-last tablets?
+//
+// The script reads lipi_multiside_mark_rows.csv, keeps short-mark rows that
+// are exactly a 700+032/033/034 pair, and attaches each row's object context:
+// longer-text side count, the short side's position relative to the longer
+// sides, presence of nine focus signs, and three specific recurring longer
+// sequences. It then runs two-sided Fisher exact tests of 700-first vs.
+// 700-last against each context feature — per companion and pooled — with
+// Bonferroni and Benjamini-Hochberg corrections across all tests.
+//
+// Outputs: lipi_short_mark_context_orientation_rows.csv, _families.csv,
+// _tests.csv, and _summary.json. Context association only; no reading of the
+// marks is proposed.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

@@ -1,3 +1,16 @@
+// Models how the rectangular-seal/copper-tablet register (SEAL:R, TAB:C) opens.
+// Two claims are tested separately. Claim one: `740` is the register's broad
+// default opener — the most initial-biased sign of all. Claim two (stricter): when
+// `740` and the narrower opener `407` co-occur, 740 should come first — a nesting
+// hierarchy that is killed if collision rows are mixed. The script reads
+// metadata_filtered.csv, collapses duplicate sign sequences, keeps register rows,
+// and Fisher-ranks every sign by initial-position bias. A 3,000-iteration forger
+// shuffles sign labels over occurrence slots (keeping row lengths and sign
+// frequencies) and asks how often the best sign matches 740's p. Six control pools
+// recheck the rank; the collision model counts orders in rows containing both
+// signs and compares 407's initial rate with and without 740 present. Writes a bet
+// summary (JSON + CSV) plus pool, initial-sign, support-row, and forger CSVs to
+// the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

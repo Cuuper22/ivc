@@ -11,7 +11,7 @@ H-1993 and M-1825 are both live `002-390-X` source gates:
 - `H-1993 / H96-2769 / ICIT 744 / +740-000-220-004-002-390-095+`
 - `M-1825 / BJ25710 / +157-031-002-390-705+`
 
-The question is whether public bibliographic/source routing confirms that full CISI 3.1 is the right acquisition target for both, while keeping them uncounted until actual object pages are inspected.
+The question here is narrow: does public bibliographic/source routing confirm that full CISI 3.1 is the right book to buy for both? Both rows stay uncounted until actual object pages are inspected.
 
 Accepted value, phonetics, language identity, function, sign meaning, and translation remain 0.
 
@@ -45,7 +45,7 @@ The official/library-style route is strong:
 - Antiquity/Cambridge review metadata confirms extensive plate material: `363` black-and-white plate pages and `48` colour plate pages.
 - A secondary Kalyanaraman review says Vol. 3.1 ranges include `m1660` to `m2132` and `h1020` to `h2590`, which would cover both `M-1825` and `H-1993`.
 
-The acquisition route is not yet source evidence:
+But an acquisition route is not source evidence, and this one is not yet:
 
 - No public object page for H-1993 was inspected.
 - No public object page for M-1825 was inspected.

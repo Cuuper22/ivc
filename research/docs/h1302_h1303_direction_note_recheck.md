@@ -4,7 +4,9 @@ Date: 2026-05-24
 
 ## Purpose
 
-This follows the [Lipi short-mark source acquisition queue](lipi_short_mark_source_acquisition_queue.md).
+This note rechecks what published sources actually prove about two Harappa tablets, H-1302 and H-1303. Other researchers have discussed these two in connection with mirrored writing and a correction to a sign catalog. The temptation is to treat that discussion as evidence about our own catalog rows. This note tests whether it is.
+
+It follows the [Lipi short-mark source acquisition queue](lipi_short_mark_source_acquisition_queue.md).
 
 Question:
 
@@ -12,7 +14,7 @@ Question:
 What exactly do the public direction-note and image leads prove for H-1302 and H-1303?
 ```
 
-This is a source-reconciliation audit. It is not plate validation.
+This is a source-reconciliation audit: it compares what published notes say against what our own rows record. It is not plate validation — nobody has yet inspected a published photograph of these objects.
 
 ## Local Artifacts
 
@@ -47,7 +49,7 @@ The public image URLs were downloaded to a temporary folder for inspection only.
 
 ## Packet Context
 
-Both artifacts are in the 17-object short-mark packet:
+A packet is a bundle of objects grouped for one review pass. Both artifacts are in the 17-object short-mark packet:
 
 ```text
 H-1302: TAB:I, 1:+400-740-176+|2:+700-033+
@@ -68,7 +70,7 @@ whether the catalog-side relation survives image-side checking
 
 ## Nature 2021 Lead
 
-The Nature 2021 allograph article is a real source lead. It names H-1302 and H-1303, with H-1822, in a mirrored-writing / ICIT-correction discussion after comparing against CISI.
+The Nature 2021 allograph article — an allograph being two shapes treated as the same sign — is a real source lead. It names H-1302 and H-1303, with H-1822, in a mirrored-writing / ICIT-correction discussion after comparing against CISI.
 
 Limit:
 

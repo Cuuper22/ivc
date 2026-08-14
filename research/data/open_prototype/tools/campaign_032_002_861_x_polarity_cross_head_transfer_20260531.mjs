@@ -1,3 +1,14 @@
+// Cross-head transfer test for branch "polarity". The 002-390-X work assigned each branch
+// sign a polarity: open (the inscription continues — 125, 530, 590) or closed (it ends —
+// 072, 095, 140, 346, 692, 705, 707). Question: is that polarity a property of the sign
+// itself, portable to any 002-H-X frame, or does head 390 own the table? We read the
+// filtered Indus inscription list (lipi/metadata_filtered.csv), keep one copy of each
+// distinct sign sequence, and collect every 002-H-X frame whose X is one of the ten
+// classified branches. For frames under non-390 heads we score a hit when the observed
+// behavior matches the predicted polarity; per-branch and overall hit shares then decide
+// between "portable slot polarity" and "head-specific 390 table" — two named bets scored in
+// opposite directions. Writes frame, branch-summary, and decision CSVs plus a JSON summary
+// to data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

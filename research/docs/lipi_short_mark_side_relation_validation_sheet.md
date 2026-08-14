@@ -4,7 +4,9 @@ Date: 2026-05-24
 
 ## Purpose
 
-This sheet converts the corrected `033`/`034` result from the [Lipi short-mark companion context audit](lipi_short_mark_companion_context_audit.md) into concrete source-validation targets.
+This note is an inspection queue: a ranked list of artifacts whose photographs or plates must be checked before the project trusts a statistical result. It exists because a statistic computed from catalog data can be an artifact of how the catalog was assembled, not a fact about the objects.
+
+The result in question: the corrected `033`/`034` contrast from the [Lipi short-mark companion context audit](lipi_short_mark_companion_context_audit.md). "Corrected" means it survived multiple-testing correction; `033` and `034` are catalog sign codes, not readings. The contrast is about where a short mark (a one- or two-sign catalog row) sits relative to the longer text on the same artifact.
 
 The research question is no longer just:
 
@@ -49,7 +51,7 @@ target_artifacts: 250
 
 The row count is one larger than the artifact count because H-355 has two matching short rows.
 
-Side-relation counts:
+Side-relation counts — where the short mark sits relative to the longer text on the same artifact:
 
 ```text
 short_after_all_longer: 92
@@ -58,7 +60,7 @@ no_longer_text: 86
 short_between_longer_sides: 1
 ```
 
-Rows with the raw `+400-740-176+` longer-context hint:
+Rows with the raw `+400-740-176+` longer-context hint (a specific three-sign sequence in the longer text; "raw" means the hint did not survive correction on its own):
 
 ```text
 raw_400_740_176_rows: 29
@@ -140,7 +142,7 @@ This sheet makes the next source step sharper:
 Check the 17 highest-priority unique artifacts first, then use the P1 non-400-740-176 rows and P2 exception rows as controls.
 ```
 
-The sheet does not say `033` or `034` means anything. It says the current planning layer has a corrected catalog-side relation contrast that deserves image validation.
+The sheet does not say `033` or `034` means anything. It says the current planning layer — the catalog-derived data we compute from — has a corrected catalog-side relation contrast that deserves image validation.
 
 ## Interpretation Boundary
 

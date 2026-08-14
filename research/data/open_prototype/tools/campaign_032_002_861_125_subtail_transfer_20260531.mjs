@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// If sign 125 is a title/rank suffix rather than the end of a name, the short "sub-tails"
+// that follow it (like 632-032 or 820) should transfer across different governed heads, not
+// cling to one. This script probes that. It reads data/open_prototype/lipi/
+// metadata_filtered.csv and logs every 125 occurrence, walking up to four signs leftward to
+// find whether the occurrence sits inside a 002-governed frame and, if so, under which head.
+// Each occurrence records its neighbors and its full tail; every two-sign sub-tail is then
+// summarized with global count, governed count, governed heads, and sites. The two named
+// candidates: 125-632-032 as a portable sub-tail (it appears under governed heads 190 and
+// 390), and 125-820 as a P086-family sub-tail under heads 390/405. The recorded conclusion
+// upgrades 125 from a 390-dependent selector to one use of a broader title/rank suffix
+// system. Writes the occurrence and sub-tail summary CSVs plus a summary JSON to reports/.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

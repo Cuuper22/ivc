@@ -4,9 +4,9 @@ Date: 2026-05-25
 
 ## Question
 
-What does the first manual visual pass over the IA-located CISI pages establish for the live `034` packet?
+This note records what we saw when we actually opened the catalog pages. FRAME700 is the project's label for short inscription rows built on sign `700`, such as `+700-032+`; the `034` packet is the bundle of objects gathered to test whether the sign codes `032`, `033`, and `034` are separate choices in the same slot. An earlier note located those objects page by page in the Internet Archive (IA) scans of CISI, the Corpus of Indus Seals and Inscriptions — the standard photographic catalog of Indus objects. The question: what does the first manual visual pass over those located pages establish for the live `034` packet?
 
-This pass only checks page/panel availability and reconciliation risk. It does not validate `032`/`033`/`034` as accepted visual subtypes.
+This pass only checks page/panel availability and reconciliation risk — whether the sides shown in the catalog can be squared with the sides our local records list. It does not validate `032`/`033`/`034` as accepted visual subtypes.
 
 ## Local Artifacts
 
@@ -36,7 +36,7 @@ accepted decipherment claims: 0
 
 The first IA pass did find real visual plate pages for most of the IA-hit queue.
 
-Cleanest visual locators:
+Cleanest visual locators. In the packet role column, a target is an object the test is about, and a control is a comparison object used to check the target.
 
 | Object | Packet role | Source observation | Consequence |
 | --- | --- | --- | --- |
@@ -49,7 +49,7 @@ Objects needing side-count or variant reconciliation:
 | Object | Packet role | Source observation | Consequence |
 | --- | --- | --- | --- |
 | `H-771` | `034` target | CISI Pakistan leaf `358` shows `H-771 A`, `A bis`, `A ter`, `A quater`, and `B`. | Local two-side packet cannot be used until multiple `A` impressions/panels are mapped to the catalog rows. |
-| `H-893` | `034` target | CISI Pakistan leaf `371` shows `H-893 A`, `B`, `H-893 (1) A`, and `(1) B`. | Variant `(1)` must be separated before this can upgrade the strict local contrast lane. |
+| `H-893` | `034` target | CISI Pakistan leaf `371` shows `H-893 A`, `B`, `H-893 (1) A`, and `(1) B`. | Variant `(1)` must be separated before this can upgrade the strict local contrast lane — a lane being one of the separate evidence tracks the project runs, kept apart so a result in one does not lean on the other. |
 | `H-925` | `033` control | CISI Pakistan leaf `373` shows nine H-925 panels including numbered, `bis`, and `ter` variants. | Shared control is high-risk until copy/variant status and the intended panel are resolved. |
 | `H-983` | `034` target | CISI Pakistan leaf `377` shows `A`, `A bis`, `B`, `B bis`, `B ter`, `C`, and `C bis`. | Local two-side coding suppresses visible source `C` and multiple variants; must be reconciled. |
 | `H-353` | `033` control | CISI India leaves `265`/`696` show `H-353 A`, `B`, and `C`. | Source panel count exceeds local side count; the extra `C` side blocks clean use until reconciled. |

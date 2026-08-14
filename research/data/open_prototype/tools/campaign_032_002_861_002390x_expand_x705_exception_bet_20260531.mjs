@@ -1,6 +1,16 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// A small, focused test of one sign: 705 in the X slot of the Indus 002-H-X construction.
+// The working rule is that 705 ends the inscription by default, with one live exception —
+// under head 320 it can take a following 125 cap. This script reads data/open_prototype/
+// lipi/metadata_filtered.csv, collects every 002-H-705 window with its head, tail, and
+// scope (site|type|shape|material), and splits the rows into terminal versus continuing.
+// It records three bets: terminal-default with the head-320 exception, the 125-cap reading
+// of the lone open row, and the prediction that the Dholavira 002-390-705 candidate should
+// close if its source binds — a continuing tail there would be the cleanest kill shot.
+// Writes the 705 rows and the bets as CSVs plus a summary JSON in reports/.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');

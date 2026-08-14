@@ -1,3 +1,19 @@
+"""Test whether Y-sign class predicts terminality beyond register and context.
+
+Closure-family Y signs (817, 820, 861) should end inscriptions more often
+than branch-family Y signs (390, 368, 031, 220, 900, 300) — but the same
+split could be produced by object registers or preceding context. This
+script runs two checks on the strict deduped post-Y rows. First, matched
+block contrasts: inside blocks that share site/type/symbol (and optionally
+frame or preceding signs), it compares the terminal rate of closure rows
+against branch rows in the same block. Second, leave-one-out prediction:
+add-one-smoothed models built from register keys, context keys, Y class, and
+combinations, scored by accuracy, Brier score, and log loss, so we can see
+whether adding the Y class actually improves prediction. Writes class
+summary, block contrast, and prediction score CSVs plus a JSON summary
+naming the best models.
+"""
+
 import csv
 import json
 import math

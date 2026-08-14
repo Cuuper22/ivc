@@ -1,3 +1,15 @@
+"""Metadata contrast between the 533 and 717 focus rows.
+
+This script reads the focus rows from the tail-rarity register scan and compares the
+two groups across a fixed list of metadata features (shape, text length, the last one
+and two signs before 002-861, and source status). The question is whether plain
+catalog metadata already
+separates the 533 rows from the 717 rows — if it did, the contrast would be a register
+artifact rather than a sign-choice contrast. It writes per-row and per-feature CSVs
+plus a summary JSON. The recorded decision: metadata features do not separate 533-717
+cleanly.
+"""
+
 from __future__ import annotations
 
 import csv

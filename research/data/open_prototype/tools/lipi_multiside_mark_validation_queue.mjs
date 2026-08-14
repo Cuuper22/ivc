@@ -1,3 +1,23 @@
+// Builds the human validation work queue for the short-side-mark hypothesis.
+// Statistics alone cannot tell whether a catalog "side row" is a real
+// physically separate side or a transcription artifact — someone has to look
+// at photographs and excavation records. This script decides which objects to
+// check first and what question to ask about each.
+//
+// It reads the per-side detail (lipi_multiside_mark_rows.csv) plus the raw
+// lipi/metadata_filtered.csv (for raw ids, excavation numbers, and exact
+// dimensions), keeps only Harappa TAB:B and TAB:I tablets, and groups rows by
+// object. Each object with a short-mark side gets a priority tier: P1 for
+// TAB:I three-side short series (the H-series pattern) and for objects mixing
+// core short marks with focus long-text signs; P2 for other core short marks;
+// P3 for the rest. Objects whose exact side-text signature recurs across many
+// artifacts get a score bonus, since one photo check can settle a whole family.
+//
+// Outputs: lipi_multiside_mark_validation_queue.csv (ranked queue, one
+// validation question per object), _sequence_families.csv (recurring
+// signatures), and _validation_summary.json. Downstream audits (e.g. the
+// template recurrence audit) consume the queue CSV.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

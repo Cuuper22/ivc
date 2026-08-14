@@ -1,3 +1,18 @@
+"""Rank competing hypotheses about what the post-861 tail zone is.
+
+We read the source-normalized tail predictor rows and ask three questions.
+First, which features (exact prefix, last-N prefix signs, register, site,
+shape, text length) carry the most mutual information — measured in bits —
+about whether a row has a tail, what class of tail, and which tail. Second,
+which concrete feature-value "lanes" score highest as places to look next,
+using a hand-built score that rewards source-ready non-bare rows and multiple
+family cells and punishes lanes with no checked sources or a single copy
+family. Third, we tabulate the four tail classes themselves. The output CSVs
+(feature information, ranked lanes, tail classes, hypotheses) and the JSON
+summary carry a fixed five-entry hypothesis tournament, each with its support,
+next evidence, and kill gate. No readings are proposed.
+"""
+
 import csv
 import json
 import math

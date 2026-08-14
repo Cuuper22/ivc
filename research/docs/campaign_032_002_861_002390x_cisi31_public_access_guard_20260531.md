@@ -23,7 +23,7 @@ Public routes:
 
 ## Result
 
-The Harappa PDF remains an excerpt, not the full source volume.
+The answer is no on both routes. The Harappa PDF remains an excerpt, not the full source volume.
 
 - It has 17 PDF pages.
 - Its contents page names the missing black-and-white photo section as pages `1-363`.
@@ -32,7 +32,7 @@ The Harappa PDF remains an excerpt, not the full source volume.
 - It names basic data pages `413-443`, including Harappa data on `423-441`.
 - Text search inside the public excerpt finds no `H-1993` and no `M-1825`.
 
-The Finna record is useful access metadata but not object evidence.
+The Finna record is useful access metadata — it tells us where the book lives — but it is not object evidence.
 
 - It describes the hardbound book as `lx, 443` pages, illustrated with maps, 31 cm.
 - It lists ISBN `978-951-41-1040-5`.

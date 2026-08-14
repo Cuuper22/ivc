@@ -1,3 +1,14 @@
+// Counterfactual test of the core claim that sign 002 is a "dependency opener" — that it
+// changes how the sign after it behaves. The counterfactual: compare each candidate head
+// motif (390, 405, 610, the pair 297-350, 095, 705) in two lanes, right after 002 versus
+// everywhere else. If 002 really opens a dependency, the after-002 lane should look different:
+// more diverse continuations for 390, forced terminality for 095/705, and so on. We read the
+// filtered Indus inscription list (lipi/metadata_filtered.csv), keep one copy of each
+// distinct sign sequence, find every motif hit, and compare the two lanes on next-sign
+// diversity (distinct signs and Shannon entropy), top continuation share, and terminal
+// share. Fixed rules turn each contrast into a decision, and three named bets are scored —
+// including declaring the "002 makes every head open" version dead. Writes contrast, lane,
+// hit, and decision CSVs plus a JSON summary to data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

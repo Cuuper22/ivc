@@ -2,9 +2,13 @@
 
 Date: 2026-05-26
 
+## What This Note Is
+
+This note reports a structural campaign on the Indus sign sequences. The numbers like `520`, `220`, and `415` are catalog codes for individual signs, not values or readings. The campaign asks where the unit boundary falls in sequences that contain these signs: is the reusable unit the single sign `520`, the pair `220-415`, or the pair `520-220`?
+
 ## Result
 
-The best current parse is not a single frozen reading. It is a construction:
+The best current parse is not a single frozen reading. It is a construction — a grammatical frame with slots:
 
 ```text
 520-H-C
@@ -44,9 +48,9 @@ No phonetic value, lexical value, language identity, or translation is accepted.
 
 ### 1. `520` is a broad opener with restricted heads
 
-`520` starts 263 rows, 4.63 percent of the filtered corpus.
+`520` starts 263 rows — 263 inscriptions in the filtered corpus, or 4.63 percent of it.
 
-The slot after initial `520` is concentrated:
+The slot after initial `520` is concentrated on a few signs:
 
 - `520-220`: 59 rows
 - `520-033`: 52 rows
@@ -101,7 +105,7 @@ That is the main reason `520-220` remains a real subframe. `520` changes the con
 
 ### 5. The effect is site/type conditioned
 
-The enrichment is not equally strong everywhere:
+The enrichment is not equally strong everywhere. It varies by find site (Harappa vs Mohenjo-daro) and by object type — `TAB:I` is an incised tablet class, `SEAL:S` a stamp seal class:
 
 - All known-next `220`: `0.4667` vs `0.1909`, odds ratio 3.71
 - Harappa: `0.7600` vs `0.2451`, odds ratio 9.75
@@ -210,7 +214,7 @@ Weaker now. The `520-H-C` pattern says the fish/leaf pressure on `220` cannot ca
 
 2. Direct Parpola text7 bridge
 
-Still downgraded. This campaign is local-namespace structural grammar. Parpola sign60 pressure stays a clue, not a boundary proof.
+Still downgraded. Parpola's catalog is an external sign-numbering system; this campaign works entirely in our local sign namespace and measures structure, not identity across catalogs. Parpola sign60 pressure stays a clue, not a boundary proof.
 
 ## Next Campaign
 

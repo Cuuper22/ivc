@@ -4,7 +4,7 @@ Date: 2026-05-25
 
 ## Question
 
-Does the weak `FRAME700` subtype signal from the previous experiment survive subtype-label shuffles inside matched object/context blocks?
+This note is a falsification test: it tries to reproduce a previous result using labels that carry no information. FRAME700 is the project's label for short inscription rows built on sign `700`, such as `+700-032+`; its subtypes are which sign code — `032`, `033`, or `034` — sits in that row. A previous experiment found a weak ability to predict the subtype from object features. A null model is a deliberately meaningless version of the data, here made by shuffling the subtype labels among rows that already match on object type and context, so anything the shuffled version achieves is what chance alone can produce. The question: does that weak subtype signal survive subtype-label shuffles inside matched object/context blocks?
 
 Target:
 
@@ -65,7 +65,7 @@ No-H-series, sequence-family leaveout:
 | Frequency | 0.410876 | 0.719033 | 0.000000 | 0.000000 |
 | Dimensions | 0.435045 | 0.806647 | 0.677419 | 0.024169 |
 
-The overall top-1 gain is small. The interesting residue is `034` recall.
+The overall top-1 gain is small. The interesting residue — the leftover signal the controls have not explained — is `034` recall.
 
 ## Blocked Nulls
 
@@ -101,6 +101,8 @@ Object-format or administrative-format explanation remains the default.
 033's +400-740-176+ branch stays source-validation priority, but is probably copy/family-heavy.
 032 remains unresolved and useful mainly as a sibling/control subtype.
 ```
+
+A control here is a comparison case used to check the target rather than to support it.
 
 ## Consequence
 

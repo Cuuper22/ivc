@@ -1,3 +1,17 @@
+"""Builds bare-edge source controls for terminal 002-861 rows.
+
+A "bare" row ends at 002-861 with no tail; the controls exist to answer whether those
+rows visibly end there on the artifact, with a real edge, rather than in a damaged or
+cropped region. This script carries an inline control-row table keyed to the CISI
+volumes on the Internet Archive (it records both direct-download and reader URLs, but
+it never fetches: each page scan must already exist locally under
+tmp/032_002_861_bare_edge_source_controls, or it raises FileNotFoundError). With PIL
+it crops panel and signband images, hashes them, and assembles a contact sheet. It
+writes rows and crops CSVs plus a summary JSON. The question recorded in the summary:
+do matched bare terminal 002-861 controls have visible source edges for comparison
+against same-line tailed 002-861 rows? No value or reading is accepted.
+"""
+
 from __future__ import annotations
 
 import csv

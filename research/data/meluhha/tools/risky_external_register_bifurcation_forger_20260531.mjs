@@ -1,3 +1,16 @@
+// A "risky bet" forger test (2026-05-31): do external Indus-style objects split
+// into two export registers? The bet: circular western seals carry the 090/091
+// route pair, while non-circular external objects carry the internal
+// administrative set 740/407/806/400 — two different document types leaving the
+// Indus world by two lanes. The script reads the lipi metadata and the external
+// objects table, collapses exact duplicate texts, splits external rows by
+// circular/SEAL:C status, and counts hits for each sign set. The forger: 25000
+// iterations that replace each external row with a random non-external row of
+// the same object type, measuring how often chance matches the observed
+// circular-route and non-circular-admin enrichments (separately and jointly).
+// Grades itself candidate only with 10+ hits on each side and both
+// false-positive rates at or below 0.01. Writes a JSON report and a support-row
+// CSV listing every external row's sign hits.
 import fs from 'node:fs';
 import path from 'node:path';
 

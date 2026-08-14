@@ -1,3 +1,18 @@
+"""Run a shuffle null to see how often the 603 bridge-lock pattern arises by chance.
+
+The observed pattern: 603 sits locked to the 060 692 subframe inside
+X-before-240 and also bridges into the post-002-861 tail zone. Could random
+label placement produce that? The null model keeps the 95 X-before-240 rows'
+after-240 subframes fixed, shuffles the X-sign labels across those rows for
+20,000 iterations (seeded, so the run is reproducible), and counts how often
+a shuffled world shows: 603 locked anywhere, 603 locked specifically to
+060 692, any non-background bridge sign locked, or any low-frequency one
+locked. Those counts become false-positive rates. The recorded decision:
+weak-to-moderate distributional support (~4% for the broadest pattern), which
+is real pressure but not a promotion — 603 gets no value. Writes a sample of
+iteration rows, a JSON summary, and a Markdown doc in docs/.
+"""
+
 from __future__ import annotations
 
 import csv

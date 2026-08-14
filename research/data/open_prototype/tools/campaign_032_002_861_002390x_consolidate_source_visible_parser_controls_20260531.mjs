@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script is a hand-built evidence ledger, not a computation. It records,
+// object by object (M-119, M-735, Sktd-1, and so on), whether we could actually
+// see each inscription in a source image well enough to draw token boxes —
+// "strict source-visible" — and what that does to each parser lane: the 125
+// linker, the 095 and 705 terminal classifiers, and the 692 edge-close sign.
+// The verdict encoded here: 125 keeps two strict witnesses and stays a wounded
+// candidate, 095 has exactly one strict witness, and 705 has none, so 095 and
+// 705 must be ranked separately instead of as one combined classifier claim.
+// It writes three CSVs (per-object rows, per-lane rollups, status-change
+// decisions) plus a summary JSON into data/open_prototype/reports, and prints
+// the summary so the campaign log captures it.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const prefix = 'campaign_032_002_861_002390x_consolidate_source_visible_parser_controls_20260531';

@@ -1,6 +1,17 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script records a manual close reading of two "clean" tablets, H-930 and H-789, from
+// their CISI page scans on Internet Archive. Both are two-sided tablets whose local corpus
+// rows pair a short frame700 sequence (+700-032+ or +033-700+) with a longer companion row,
+// and both show exactly the two expected panels on the scan with no confusing bis/ter or
+// numbered variants. The hard-coded rows capture what the scan does establish (object
+// identity, panel count, which printed label carries the short vs long side) and what it
+// does not (the 032/033/034 subtype strokes, reading direction, physical side order). The
+// script writes the rows as a CSV plus a JSON summary with tally counts. The point of the
+// experiment: these two objects become calibration controls for close-reading the messier
+// targets (H-771, H-893, H-925, H-983, H-353), which stay blocked.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 const outCsv = path.join(reportsDir, 'lipi_frame700_034_clean_two_panel_close_read.csv');

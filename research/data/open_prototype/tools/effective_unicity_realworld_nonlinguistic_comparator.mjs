@@ -1,3 +1,19 @@
+// Synthetic forgers are one test; real symbol systems that we know are not
+// writing are a harder one. This script runs the masked-sign instrument on six
+// real-world corpora from Sproat's 2014 nonlinguistic-symbols bundle (Pictish
+// stones, kudurru deity symbols, totem poles, barn stars, Vinca signs, weather
+// icons), which must already sit as XML files under
+// data/open_prototype/nonlinguistic/sproat2014/. For each corpus it extracts
+// document-level symbol sequences from the XML, keeps lengths 2-8, collapses
+// exact duplicates, then scores masked-token prediction (leave-one-row-out,
+// combining unigram, length-position, left-neighbor, and right-neighbor
+// evidence) and runs four shuffle nulls against it. The Indus corpus numbers
+// are pulled in as a reference row, and the summary flags any nonlinguistic
+// system that matches or beats Indus masked top-1 — if one does, that metric
+// alone cannot count as language evidence. Optional CLI args: null iterations
+// (default 40), masked sample limit (1500), seed base (20260529). Writes a
+// manifest with zip hashes, the extracted sequences CSV, and comparator +
+// null summary CSVs/JSON under reports/.
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';

@@ -2,6 +2,8 @@
 
 Date: 2026-05-26
 
+This note asks what job one sign does in one position. Signs in this corpus are numeric IDs. `A-220` means any sign followed by `220`; the question is what `032` does when it lands right after that. A row is "terminal" at a sign when nothing follows it; a "tail" is the material that ends a row. "Dedup units" collapse rows with the same frame and text, so a copied inscription counts once. A "lane" is an analysis track — one recurring sequence followed through the data.
+
 ## Result
 
 `032` after `A-220` behaves like a continuation or tail-selector position, not an ending.

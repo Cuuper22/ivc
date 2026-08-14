@@ -1,3 +1,18 @@
+"""Map the ecology of every tail that follows 002-861 in the strict corpus.
+
+Instead of studying one tail at a time, this script takes every clean
+inscription containing 002-861, extracts whatever follows the pair, and asks
+of each tail family: how often does it appear here, how often does it appear
+elsewhere in the corpus independently of 002-861, and how many distinct
+register cells (site|type|symbol|shape) does it span? Each tail gets an
+ecology class — bare closure background, mixed post-861-and-independent,
+restricted repeated cell, singleton source target, or broad control — and a
+priority rank for source acquisition. A manual override table keeps 533 717
+weighted as one linguistic cell. Outputs: per-occurrence rows, per-tail
+summary, priority ranking (three CSVs), and a JSON payload with the decision
+that tail ecology replaces any single-tail reading.
+"""
+
 from __future__ import annotations
 
 import csv

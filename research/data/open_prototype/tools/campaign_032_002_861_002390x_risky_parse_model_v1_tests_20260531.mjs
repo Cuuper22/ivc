@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Version 1 of a deliberately risky parse model for the Indus 002-390 construction, tested
+// against the whole corpus at once. It reads data/open_prototype/lipi/metadata_filtered.csv
+// and probes four hypotheses: 002 opens a dependency frame; 390 is an open class head under
+// 002 (measured by the entropy of what follows each head); the stem 235-002 with a
+// 390/405-family head selects a later 125; and unbound row 3335.1 embeds the 390-590-032
+// formula bridge. The 235 test is run adversarially: the broad "any open head" version dies
+// on 031/220/374/906 counterexamples, shrinking the survivor to the narrow 390/405 family,
+// with an explicit warning that the family was named post hoc. Each 002-390 row also gets a
+// provisional parse label (rank/title selector for 125, closure for 095, and so on) at
+// candidate or wild-shot confidence. Writes head and 390-pair summaries, row parses, the
+// 235 selector test, and bridge rows as CSVs plus a summary JSON in reports/.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

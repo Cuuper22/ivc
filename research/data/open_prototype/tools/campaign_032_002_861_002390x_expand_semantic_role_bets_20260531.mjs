@@ -1,6 +1,19 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script moves from structure to meaning. Earlier work established that in the Indus
+// 002-H-X construction the X slot holds a small set of special signs; here we ask what each
+// of the four focus X signs (095, 125, 530, 705) might actually mean. It reads inscriptions
+// from data/open_prototype/lipi/metadata_filtered.csv, keeps unique sign sequences, and pulls
+// every 002-H-X window where X is a focus sign, recording the head, the tail after X, whether
+// the text continues, and the object's domain (seal, tablet, pot, tag). It then builds one
+// profile row per X sign — which domains, sites, heads, and tails it occurs with — and stakes
+// four deliberately risky semantic bets: 095 as a right-edge identity label, 125 as a
+// dependent title chain, 530 as an associative (genitive-like) linker, 705 as a default
+// group/class label. Each bet carries a prediction that would kill it and one that would
+// promote it. Outputs: a per-sign profile CSV, an occurrence CSV, a bets CSV, and a summary
+// JSON in reports/.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

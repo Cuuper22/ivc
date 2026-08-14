@@ -4,6 +4,8 @@ Date: 2026-05-28
 
 ## Question
 
+This note widens an earlier hand-picked sample to the whole corpus, to find out whether a recurring sign sequence is really a construction. Signs in this corpus are numeric IDs. A "lane" is an analysis track — one recurring sequence followed through the data. A "register" is the object class a row sits on: site, seal type, icon, shape. `Y` names whichever sign follows `002`.
+
 Does `A-220-032 -> 002 -> Y` behave like a grammatical construction, a generic suffix lane, a register formula, or a local catalogue artifact?
 
 This campaign widens the unit from the curated 25-row source-function manifest to every adjacent `032-002` context in `metadata_filtered.csv`.
@@ -27,7 +29,7 @@ Mechanic validation: PASS.
 | strict complete closed rows | 34 |
 | strict complete closed, dedup by text/site/type | 32 |
 
-Strict complete closed means `complete=Y`, plus-delimited, no bracket damage, no slash ambiguity, and no `000` tokens.
+Strict complete closed means `complete=Y`, plus-delimited, no bracket damage, no slash ambiguity, and no `000` tokens. Dedup collapses rows with the same text, site, and type into one unit of evidence, so a copied inscription cannot count twice.
 
 ## Main Result
 
@@ -135,7 +137,7 @@ The construction may be inflated by normalized order, damaged rows, copied famil
 
 Support:
 
-- target `820` (`M-1728`) and target extended `861` (`M-240`) are not yet source-clean.
+- target `820` (`M-1728`) and target extended `861` (`M-240`) are not yet source-clean — that is, not yet checked against a published photograph.
 - outside `817/820` still depends on `H-140`, `M-1385`, `M-1737`, or `M-1677` source work.
 
 Next test:
@@ -163,7 +165,7 @@ Prior-work pressure:
 - sequence statistics justify syntax/function claims only, not readings.
 - `002` should be treated first as a positional operator, not a lexical sign.
 - stroke/numerical pressure is real but unproven because the current packet is seal-heavy.
-- `817/861` must be tested collapsed and split because provisional crosswalk pressure makes them possible allographs or variants.
+- `817/861` must be tested collapsed and split because provisional crosswalk pressure — uncertainty in the mapping between catalog sign numbers and actual graphic shapes — makes them possible allographs or variants.
 
 ## Decision
 

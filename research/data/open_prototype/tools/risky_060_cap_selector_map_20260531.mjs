@@ -1,3 +1,14 @@
+// Maps which "feeder" signs select which terminal cap after sign `060`. The frame
+// under study is `P-060-C`, where C is one of the four cap signs 920/692/550/820
+// that close inscriptions. The bet: the sign P right before 060 is not incidental —
+// specific feeders pick specific caps, a tiny selector grammar. The script reads
+// metadata_filtered.csv (complete rows only), collects every exact `P-060-cap` cell
+// (deduplicated on prev, cap, following sign, text, site, type, and iconography),
+// and scores each (P, cap) pair by purity (share of P's cells choosing that cap)
+// and a right-tail Fisher test. Selectors need at least 4 cells and 75% purity to
+// qualify. A 5,000-iteration null shuffles the cap labels over the cells to price
+// both the number of qualifying selectors and the best Fisher p. Writes a JSON
+// report plus a selectors CSV to the reports directory, and prints the summary.
 import fs from 'node:fs';
 import path from 'node:path';
 

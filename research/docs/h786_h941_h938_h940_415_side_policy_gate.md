@@ -2,11 +2,13 @@
 
 Date: 2026-05-26
 
+This note is a gate — a checkpoint that evidence must pass before it may be used further. The thing being gated is a labeling question: published sources label the sides of an object with letters, the project's own transcription labels them with numbers, and nobody has shown the two systems line up. Until they do, some otherwise promising panels cannot count as evidence.
+
 ## Question
 
-After the M-1206 terminal-component blind packet, can the close `415` terminal-family panels on `H-786 A` and `H-941 A/A bis` be counted as exact-source-side evidence for local `+520-220-415+`, or must they remain quarantined behind side policy?
+After the M-1206 terminal-component blind packet — a bundle assembled so the panels could be compared without the reviewer knowing which was the target — can the close `415` terminal-family panels on `H-786 A` and `H-941 A/A bis` be counted as exact-source-side evidence for local `+520-220-415+`, or must they remain quarantined behind side policy? To quarantine here means to set evidence aside as unusable until a specific blocker is cleared.
 
-This is a language-decipherment gate, not a software task. The point is to decide which witnesses are admissible evidence units before any claim about allography, sign splitting, or eventual translation is allowed.
+This is a language-decipherment gate, not a software task. The point is to decide which witnesses — individual source panels offered as evidence for a claim — are admissible evidence units before any claim about allography (deciding which shapes are variants of the same sign), sign splitting, or eventual translation is allowed.
 
 ## Policy Evidence
 

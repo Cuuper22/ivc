@@ -4,18 +4,22 @@ Date: 2026-05-29
 
 ## Purpose
 
-The live directionality candidate is still a metadata-layer result. The next hard gate is source-image validation: do the rows that carry the major-site stored-order signal still hold when the actual source plates, impressions, side labels, and image/impression direction are checked?
+This note is the worklist for checking the directionality result against real photographs. Directionality is the working result that Indus inscriptions score better in their recorded order than reversed.
 
-This artifact is an acquisition queue, not an accepted claim. It ranks the harsh major-site rows by directionality pressure and joins whatever local source-route hints already exist.
+That candidate is still a metadata-layer result: it comes from catalog data alone. The next hard gate — the pass/fail test it must clear — is source-image validation: do the rows that carry the major-site stored-order signal still hold when the actual source plates, impressions, side labels, and image/impression direction are checked?
 
-Scope:
+This artifact is an acquisition queue, not an accepted claim. It ranks the harsh major-site rows by directionality pressure and joins whatever local source-route hints already exist. A route is a concrete path from a catalog row to a published image.
 
-- Lipi T3 metadata/sign layer.
-- top-10 edge signs removed.
-- one-edit families collapsed.
+Scope — the filtered slice of rows the queue is drawn from, with "harsh" meaning filtered to make the result as hard to obtain as possible:
+
+- Lipi T3 metadata/sign layer, our catalog-derived working table.
+- top-10 edge signs removed, so the commonest first and last signs cannot carry the result.
+- one-edit families collapsed, so near-identical inscriptions count once.
 - Mohenjo-daro and Harappa rows only for the queue.
 
 ## Baseline
+
+Stored-win share is the fraction of rows where the stored order beats the reversed order.
 
 | Scope | Rows | Stored higher | Reversed higher | Ties | Stored win share |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -44,9 +48,9 @@ The queue has 324 major-site rows. It scans 46 local source/provenance CSV files
 | blind token-box stress from existing public route | 2 |
 | request or locate source image | 2 |
 
-The most immediate usable target is `M-70`, text `+226-032-002-390-692+`, with a high positive row score and an existing public CISI plate route. The first visual pass upgrades it to row-level source-visible with a broad order-window continuation candidate. Its matched-negative blind token-box packet has now failed promotion: two reviewers produced hard target-like hits on scoring negatives, with maximum yes-only false-positive rate 0.714286 and maximum conservative false-positive-or-uncertain rate 0.777778. That row remains a source-validation target only. It does not promote any `002-Y` or directionality claim by itself.
+The most immediate usable target is `M-70`, text `+226-032-002-390-692+`, with a high positive row score and an existing public CISI plate route. The first visual pass upgrades it to row-level source-visible with a broad order-window continuation candidate. Its matched-negative blind token-box packet has now failed promotion. That is a bundle of image crops in which reviewers who cannot see the catalog answers ("blind") draw a box around each sign, and each real target is paired with a decoy chosen to look the same. Two reviewers produced hard target-like hits on scoring negatives — the decoys, which should yield nothing — with maximum yes-only false-positive rate 0.714286 and maximum conservative false-positive-or-uncertain rate 0.777778. That row remains a source-validation target only. It does not promote any `002-Y` or directionality claim by itself.
 
-The follow-up public CISI OCR route probe tested 79 top high-pressure rows from this queue. It found 93 OCR route rows, 39 targets with any route, 38 targets with public CISI plate-route candidates, one target with data/register route only, and 40 targets still not found in the public OCR layer. A manual visual triage of nine top route hits produced four attempted no-overlay target crops: `H-654`, `M-1310`, `M-1320`, and `M-811`. The first packet failed because the real-control denominator was too small, one scoring negative leaked a printed side annotation, scoring negatives produced hard count-boxable false positives, and target token counts were mostly unstable. A stricter v2b packet reached 12 real negatives and zero duplicate image hashes, but still failed because real denominator rows leaked labels, conservative target-like uncertainty remained in two real negatives for one reviewer, and target counts varied across reviewers. This is still acquisition and failure-discovery work only. No source-normalized token order or physical direction claim is accepted.
+The follow-up public CISI OCR route probe tested 79 top high-pressure rows from this queue. It found 93 OCR route rows, 39 targets with any route, 38 targets with public CISI plate-route candidates, one target with data/register route only, and 40 targets still not found in the public OCR layer. A manual visual triage of nine top route hits produced four attempted no-overlay target crops: `H-654`, `M-1310`, `M-1320`, and `M-811`. The first packet failed because the real-control denominator — the fixed set of control crops the false-positive rate is measured against — was too small, one scoring negative leaked a printed side annotation, scoring negatives produced hard count-boxable false positives, and target token counts were mostly unstable. A stricter v2b packet reached 12 real negatives and zero duplicate image hashes, but still failed because real denominator rows leaked labels, conservative target-like uncertainty remained in two real negatives for one reviewer, and target counts varied across reviewers. This is still acquisition and failure-discovery work only. No source-normalized token order or physical direction claim is accepted.
 
 ## Method
 

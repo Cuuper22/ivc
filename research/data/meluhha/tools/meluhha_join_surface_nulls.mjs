@@ -1,3 +1,15 @@
+// Null tests for the Meluhha join surface: how impressive is it, really, that
+// cuneiform Meluhha texts and external Indus objects share find sites? This
+// script reads the expanded cuneiform attestations and the external objects
+// table, scores the observed overlap (total join rows, joins involving
+// name/admin attestations, distinct joined sites), then runs two randomized
+// nulls of 10000 iterations each (override with
+// IVC_MELUHHA_JOIN_NULL_ITERATIONS): reassign each attestation's site aliases
+// at random from all external sites, and from Mesopotamian sites only. It also
+// records the decisive thought experiment: any non-Meluhha corpus with the
+// same provenience distribution would reproduce the overlap exactly, so site
+// overlap is infrastructure, not evidence. Writes the per-iteration CSV and a
+// JSON summary whose decision is not to promote any site-overlap row.
 import fs from 'node:fs';
 import path from 'node:path';
 

@@ -1,6 +1,19 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// The subtype-discrimination step showed that object dimensions help predict which frame700
+// subtype (032, 033, or 034) a tablet carries. This script asks the harder question: does
+// that signal beat a null that already knows the objects' types and contexts? It reads
+// lipi_frame700_subtype_rows.csv, drops the H-2218..H-2239 series, and scores a naive Bayes
+// classifier (alpha 0.5) over five size-bin features with leave-one-out evaluation that also
+// excludes the test row's whole sequence family from training. It then reruns the same
+// evaluation 100 times per block policy on labels shuffled only within blocks -- from a
+// global shuffle up to blocks matched on type, sides, order, context class, and side
+// relation -- using a seeded mulberry32 RNG so results are reproducible. Observed accuracy
+// is compared to each null's mean, 95th percentile, and p-value, overall and for 034
+// recall specifically. Outputs: per-iteration CSV, summary CSV, and summary JSON. This is
+// distribution evidence only; it accepts no sign meaning or value.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 const inputPath = path.join(reportsDir, 'lipi_frame700_subtype_rows.csv');

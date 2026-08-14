@@ -1,3 +1,15 @@
+// A "risky bet" probe (2026-05-31): a diffuse, meaning-level bridge for Indus
+// sign 407. The bet joins three independent results: on the Indus side, 407 is
+// enriched in rectangular-seal "register" contexts and in a copper/TAB:C
+// subtype (two forger reports read from open_prototype/reports); on the
+// cuneiform side, the phrase "uruda me-luh-ha" (Meluhha copper) is verified
+// live against the CDLI search API, with matching lines split into
+// administrative vs lexical witnesses. If all legs hold — candidate-tier Indus
+// context, 2+ live artifacts, zero local query-line false positives, Indus FPR
+// at or below 0.01 — the bet is graded "candidate", otherwise "wild shot". The
+// claim is deliberately semantic only: 407 predicts carrier/register and
+// commodity class, never a phonetic value. Writes a JSON bet record, a summary
+// CSV, and live-CDLI artifact and line CSVs.
 import fs from 'node:fs';
 import path from 'node:path';
 

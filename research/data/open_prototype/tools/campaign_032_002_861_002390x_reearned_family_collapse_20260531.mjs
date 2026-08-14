@@ -1,6 +1,19 @@
 import fs from "node:fs";
 import path from "node:path";
 
+// An earlier "family collapse" analysis was quarantined, so this script re-earns the same
+// result from clean inputs without touching the quarantined artifact. It reads the 002-390
+// frames from the branch-sign-ecology report and the raw corpus in data/open_prototype/
+// lipi/metadata_filtered.csv, then overrides each frame's source status from a hand-checked
+// table (M-70/M-71/M-119/M-735 strict source-visible; Sktd-1, H-1993, Dholavira 4237.1,
+// M-1825, H-773, and 3335.1 in various weaker states). Each frame gets a family key
+// (site|type|symbol|cult|shape|predecessor|branch|tail) so duplicate template copies
+// collapse into one cell, and each branch is summarized by raw frames versus family cells
+// versus strict frames. Specific probes: the 235-predecessor 002-390-125 subframe (demoted —
+// only one strict witness), the 125-632-032 tail family (formula pressure, not function),
+// and branch 705 (zero strict rows, acquisitions pending). Writes frames, branch summary,
+// prev-235 rows, tail rows, and decisions as CSVs plus a summary JSON in reports/.
+
 const root = process.cwd();
 const reportsDir = path.join(root, "data", "open_prototype", "reports");
 const prefix = "campaign_032_002_861_002390x_reearned_family_collapse_20260531";

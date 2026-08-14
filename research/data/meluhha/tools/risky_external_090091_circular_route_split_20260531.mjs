@@ -1,3 +1,15 @@
+// A "risky bet" probe (2026-05-31): do signs 090 and 091 split the external
+// circular-seal corpus into two mutually exclusive route lanes? The bet, which
+// predicts context class and never sound: 090 marks the Failaka/Bahrain/Susa/Ur
+// lane, 091 a Karzakan/Saar/Kalba-plus-Luristan branch, and no seal carries
+// both. The script reads the lipi metadata and external objects table, counts
+// 090/091/either/both on external circular vs non-circular rows and on corridor
+// (Persian Gulf, Mesopotamia, Iranian Plateau) circular vs other local circular
+// rows, and builds a per-site split table. Two one-sided Fisher exact tests
+// give the enrichment false-positive rates. The bet self-grades: "candidate"
+// only if both-signs count is zero, at least 10 either-sign rows exist, and
+// both Fisher rates are at or below 0.01; otherwise "wild shot". Writes a JSON
+// bet record with row lists, a one-row summary CSV, and the by-site CSV.
 import fs from 'node:fs';
 import path from 'node:path';
 

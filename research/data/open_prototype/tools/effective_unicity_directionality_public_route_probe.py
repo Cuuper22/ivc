@@ -1,3 +1,20 @@
+"""Find public CISI plate images for the top directionality candidates (v1).
+
+The directionality result so far rests on transcribed sign sequences; to test
+it against physical objects we need photographs. This probe searches the OCR
+text layer of the two public CISI volumes (India and Pakistan, as DjVu XML from
+archive.org) for exact catalogue-label matches — for example "M-1310" — for the
+top 80 rows of the directionality source queue. For each match it downloads the
+page image from archive.org, cuts a context crop around the label, draws a red
+box on the label itself, and grades the route: plate pages (index <= 390) are
+candidates, late register/data pages are demoted, and volume mismatches are
+flagged. It writes a routes CSV, a per-target status CSV, a contact sheet, and
+a summary JSON to data/open_prototype/reports/. These are route candidates
+only — every one still needs human visual review before it can feed a blind
+packet. (The v2 script later fixed this version's handling of five-value DjVu
+WORD coordinates, which distorted some label boxes here.)
+"""
+
 from __future__ import annotations
 
 import csv

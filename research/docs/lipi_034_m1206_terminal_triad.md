@@ -2,6 +2,8 @@
 
 Date: 2026-05-25
 
+This note establishes the terminal triad: three same-format seals that share the two-sign prefix `520-220` in our local transcription rows and differ only in the terminal, the final sign. The numbers are local numeric sign labels — transcription codes, not readings. The note exists because the earlier M-2104 count-compound branch failed, and we needed a cleaner constraint on sign `034`.
+
 Question:
 
 ```text
@@ -10,7 +12,7 @@ Does M-1206 give a cleaner 034 constraint outside the failed M-2104 count-compou
 
 ## Result
 
-Yes, but only as a source-gated terminal-slot target, not as a reading.
+Yes, but only as a source-gated terminal-slot target — a candidate held back until source images confirm it — not as a reading.
 
 The broad `520-220-X` pool has:
 
@@ -42,7 +44,7 @@ R/L
 prefix 520-220
 ```
 
-This moves `034` from a broad singleton into a specific terminal-slot contrast. That is actual decipherment work: a constrained sign-function target that can be killed by source images.
+This moves `034` from a broad singleton — a sign attested only once in this pool — into a specific terminal-slot contrast. That is actual decipherment work: a constrained sign-function target that can be killed by source images.
 
 ## Stored Outputs
 
@@ -74,7 +76,7 @@ The icon labels are not stable enough to read as meaning. They are exactly why t
 
 ## Crosswalk Shadow
 
-Current overlap data gives a partial control layer:
+A crosswalk shadow is the sequence we would expect in the Mayig/Parpola layer if the current sign overlaps hold. Current overlap data gives a partial control layer:
 
 ```text
 520 -> P217: 15/15 aligned positions
@@ -101,6 +103,8 @@ crosswalk shadow: P217 P050 ?
 That is a useful missing-sign target. It is not a solved mapping. The missing terminal `?` cannot be filled from the current public Mayig layer because `034` has zero clean overlap rows.
 
 ## Source Adjudication
+
+Adjudication is the explicit weighing of each object's evidence for and against, ending in a verdict.
 
 ### M-1206
 
@@ -209,7 +213,7 @@ Rejected or quarantined:
 
 ## Next Gate
 
-Do not widen yet. The next source work is exact:
+A gate is a decision checkpoint the evidence must pass before any claim moves forward. Do not widen yet. The next source work is exact:
 
 ```text
 Get source-grade images/records for M-1912.

@@ -4,6 +4,8 @@ Date: 2026-05-28
 
 ## Question
 
+This note is an admissibility check: before running a decisive test, it asks which rows have evidence good enough to be used at all. Signs in this corpus are numeric IDs; `Y` names whichever sign follows `002`. "Terminality" is whether a row ends right after `Y`. A "register" is the object class a row sits on — site, seal type, icon, shape. A row is "source-boxed" when boxes have been drawn on its published photograph marking where each sign sits; a "source route" is the traceable chain from a transcribed row back to that published page. A "holdout" is a test kept back and run only once, on evidence set aside in advance, so it cannot be tuned.
+
 The statistical result says Y class predicts terminality better than broad register metadata. The hostile objection is still correct: terminality is corpus-order terminality until source images prove physical order and continuation.
 
 This packet asks a narrower question:

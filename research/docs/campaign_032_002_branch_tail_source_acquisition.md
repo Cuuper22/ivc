@@ -4,6 +4,8 @@ Date: 2026-05-28
 
 ## Question
 
+This note records an acquisition campaign: the work of finding published photographs for rows we previously knew only from catalog metadata. Signs in this corpus are numeric IDs. A "source route" is the traceable chain from a transcribed row back to its published page; a row is "source-visible" once that chain exists. CISI is the published photographic corpus of Indus inscriptions. A "packet" is a fixed bundle of rows assembled for one question.
+
 The prior admissibility packet had one source-backed decisive continuation row, `M-49`, and four rows still stuck in source routing. This campaign asks:
 
 ```text
@@ -63,9 +65,11 @@ to:
 multiple source-visible post-002 continuation branches requiring token-box and direction adjudication
 ```
 
+A token box is a drawn rectangle claiming the exact extent of one sign on the image; direction adjudication decides which way the row reads.
+
 ## Metadata Conflict Notes
 
-The public source-page headers expose a register warning:
+The public source-page headers expose a register warning — the register being the object class attached to a row, such as its animal icon and seal type:
 
 | row | local icon/register | CISI page header |
 |---|---|---|

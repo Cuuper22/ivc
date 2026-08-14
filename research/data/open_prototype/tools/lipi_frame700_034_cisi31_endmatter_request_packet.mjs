@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script builds a prioritized "request packet": a list of CISI catalog objects whose
+// end-matter records (excavation numbers, side labels, photo notes, copy/mold notes) we still
+// need before the frame700 sign-034 substitution test can proceed. It reads the local corpus
+// metadata (metadata_filtered.csv), groups rows by CISI object number, and starts from nine
+// hand-picked anchor objects (H-771, H-789, H-1123, H-893, H-925, H-930, H-983, H-353,
+// H-2211), each with a hard-coded blocker and admissibility rule. For the two family anchors
+// (H-925, H-353) it adds every object sharing the exact same per-side text signature; for
+// four messy anchors it adds catalog neighbors within 5 H-numbers that share at least 2 sign
+// tokens, to guard against copy-family and local-batch contamination. Output is one CSV of
+// requests sorted by priority (P0/P1/P2) and one JSON summary. It requests source evidence;
+// it makes no decipherment claim.
+
 const base = process.cwd();
 const metadataPath = path.join(base, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');

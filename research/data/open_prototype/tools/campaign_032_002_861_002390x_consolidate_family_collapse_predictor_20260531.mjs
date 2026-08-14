@@ -1,3 +1,17 @@
+// Leave-one-out predictor bake-off for the 002-H-X micro-grammar, designed to
+// expose how much of its accuracy is duplicate inflation. For every 002-H-X
+// frame in the local Lipi metadata, we try to predict whether the inscription
+// stays open after X, using four predictors: the exact head-X pair, the X sign
+// alone, the visual scope cell (site|type|shape|material — the "register" null
+// hypothesis), and scope plus X. Each predictor is scored by leave-one-out
+// majority vote on five versions of the data, from raw rows down to one row
+// per head-X pair, so repeated formula families collapse away step by step.
+// Writes a metrics CSV and a decisions CSV plus a summary JSON to
+// data/open_prototype/reports/. Recorded verdicts: head-X accuracy is real but
+// scope/tail-family sensitive, X alone needs scope correction, and the
+// visual-register null gets stronger under collapse, so it stays a live
+// adversary for every parse.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

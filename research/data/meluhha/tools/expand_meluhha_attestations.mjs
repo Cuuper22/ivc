@@ -1,3 +1,16 @@
+// Expands the Meluhha cuneiform inventory from seed rows to a line-level table,
+// run 2026-05-29. It fetches ten fixed primary digital sources — eight CDLI
+// texts (ATF transliteration plus artifact JSON metadata) and two BDTNS pages —
+// and pulls out every line containing "me-luh-ha", keeping the line number,
+// surface, English translation when the edition exposes one, two lines of
+// context on each side, and any co-route toponyms (Magan, Dilmun, Marhasi,
+// Elam, Susa, Gubi) nearby. For P212982 it also captures the adjacent
+// Lu-sunzida personal-name line, but only because it immediately precedes the
+// Meluhha title. Each row is classified by token type (toponym, commodity,
+// ship context, personal name, and so on) and every fetch is SHA-256 hashed.
+// Writes cuneiform_attestations_expanded.csv, a fetch log, and
+// meluhha_token_inventory.json. This is cuneiform-side inventory only; the
+// summary records zero accepted external anchors.
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';

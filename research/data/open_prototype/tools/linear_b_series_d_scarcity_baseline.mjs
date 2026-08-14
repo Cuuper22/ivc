@@ -1,3 +1,19 @@
+// Experiment E5.3a baseline: how much structure can our instruments recover
+// from a known script when it is as scarce as the Indus corpus? This script
+// takes the 513 clean real Linear B Series D sequences from the MD5-pinned
+// Zenodo Samples.txt (DOI 10.5281/zenodo.7404653) and runs the full Vector 2
+// battery on them: duplicate statistics, stored-versus-reversed direction
+// scoring with a leave-one-out bigram model, masked-sign prediction under
+// four models (frequency, position, length-position, bidirectional bigram),
+// and per-position entropy. Everything runs twice by tokenization (individual
+// signs after hyphen splitting, and whole words) and twice by scope (all
+// lengths, and capped at the Indus corpus's 95th-percentile row length so the
+// comparison is length-matched). Three shuffle nulls attack each observed
+// number, 50 iterations each by default (override with the environment
+// variable IVC_LINEAR_B_CONTROL_ITERATIONS). Writes a source manifest, row
+// inventory, length/entropy/masked/sequence summaries, control iterations and
+// summary CSVs, and a JSON summary. Comparator evidence only — nothing here
+// validates any Indus sign or reading.
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';

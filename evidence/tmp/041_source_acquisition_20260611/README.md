@@ -1,17 +1,17 @@
 # Evidence batch 041 — source acquisition + external landscape (2026-06-11)
 
-This directory stages the deep-research pass of 2026-06-11. It is documentation and verification, not binary source artifacts.
+This directory stages the deep-research pass of 2026-06-11. It holds documentation and verification records only — no binary source artifacts.
 
 ## Why no binary artifacts
 
-This run's network allowlist passes the approved search/fetch proxy but blocks direct artifact download. Recorded outcomes:
+The network allowlist for this run permits the approved search/fetch proxy but blocks direct artifact download. Here is what happened when we tried:
 
 - Raw `https://arxiv.org/pdf/2604.17828` -> `Host not in allowlist`.
 - Raw Wikimedia `Special:FilePath` for Louvre AO 22310 -> `Host not in allowlist`.
 - `https://www.harappa.com/content/corpus-indus-seals-and-inscriptions-vol-31` -> HTTP 403 to automated fetch.
 - Wikimedia file page for AO 22310 -> HTTP 403 to automated fetch.
 
-So this batch records confirmed routes, metadata, and verification verdicts. Binary source images (CISI plates, the AO 22310 photo) remain to be fetched by a human or an authenticated tool. No SHA-256 artifact manifest is included because no artifact was fetched; fabricating one would violate the project's source-binding standard.
+So this batch records what it could actually confirm: routes, metadata, and verification verdicts. The binary source images (CISI plates, the AO 22310 photo) still need to be fetched by a human or an authenticated tool. There is no SHA-256 artifact manifest here because no artifact was fetched; writing one anyway would fabricate evidence and violate the project's source-binding standard.
 
 ## Files
 
@@ -27,4 +27,4 @@ So this batch records confirmed routes, metadata, and verification verdicts. Bin
 
 ## Boundary
 
-No reading, value, phonetics, language identity, function, sign meaning, translation, or external anchor is accepted by this batch. The claim ledger (`research/data/claim_ledger/claims.json`, `research/docs/claim_ledger.md`) is unchanged. Accepted counts remain: translations 0, phonetic values 0, sign meanings 0, language identification 0, external anchors 0, structural findings 1.
+This batch accepts nothing: no reading, value, phonetics, language identity, function, sign meaning, translation, or external anchor. The claim ledger (`research/data/claim_ledger/claims.json`, `research/docs/claim_ledger.md`) is unchanged. Accepted counts remain: translations 0, phonetic values 0, sign meanings 0, language identification 0, external anchors 0, structural findings 1.

@@ -1,3 +1,18 @@
+// This adds a second known readable script to the calibration battery:
+// Ur III administrative cuneiform from the SumTablets dataset on Hugging Face
+// (colesimmons/SumTablets). The point is to see what masked-sign accuracy a
+// real bookkeeping script produces at Indus-like line lengths when the model
+// sees only glyphs — transliteration and glyph names are deliberately never
+// downloaded, so the script stays "unread" to the instrument. The script
+// samples pages of the train split through the datasets-server API, splits
+// tablets into lines, keeps only cuneiform code points (U+12000-U+1247F) and
+// line lengths 2-8, collapses exact duplicates, caps the set at 1798 lines by
+// stable hash order, then runs the same leave-one-row-out masked-glyph scorer
+// and five shuffle nulls used elsewhere in Vector 2. It merges the result
+// with the Indus and Linear B rows into one comparator table. CLI args (all
+// optional): page count, rows per page, line cap, null iterations, masked
+// sample limit, seed base. Writes a pinned source manifest, sampled rows
+// JSONL, line-sequence CSV, and comparator/null CSVs plus a JSON summary.
 import fs from 'node:fs';
 import path from 'node:path';
 

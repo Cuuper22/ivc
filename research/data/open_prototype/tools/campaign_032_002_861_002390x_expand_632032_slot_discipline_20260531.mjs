@@ -1,6 +1,22 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Is 632-032 a private tail that only exists after the 125 linker, or a
+// general-purpose terminal compound that the 125 slot merely borrows? This
+// script settles which framing the corpus supports. It reads
+// lipi/metadata_filtered.csv, deduplicates by sign sequence, and collects
+// every occurrence of sign 632 (with neighbors) and every 632-032 bigram,
+// tagging each chunk with whether a 125 immediately precedes it, whether that
+// 125 sits inside a governed 002 frame, what follows the chunk, and whether
+// it ends the text. Summary buckets compare after-125 chunks against
+// everything else. The four bets: 632-032 is a general terminal compound;
+// 125-632-032 is governed reuse of it, not a unique invention; a warning that
+// title-tail semantics must stay below promotion because most chunks occur
+// outside 125; and M-119's trailing 900-563 may be a second dependent tail
+// rather than proof the compound is nonterminal. Writes occurrence, chunk,
+// bucket-summary, and bet CSVs plus a summary JSON to
+// data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

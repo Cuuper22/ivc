@@ -1,6 +1,20 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script asks whether head signs after 002 fall into behavioral classes
+// within a single register: Mohenjo-daro square steatite SEAL:S seals. It
+// filters lipi/metadata_filtered.csv down to that register, collects every
+// 002-HEAD frame, and measures per head how often the frame ends immediately,
+// takes an X sign, ends right after X, or continues past X. Heads with 3+
+// frames get a class: "terminal_default_head" (ends immediately 80%+ of the
+// time, like 861, 817, 820), "branch_bearing_head" (takes X 80%+ and
+// continues at least a quarter of the time), or mixed. 390 is singled out as
+// the branch-selector candidate: it always takes X, and only X=125 continues.
+// The bets recorded here reframe the campaign — the useful unit is a local
+// head-class contrast, not a sign meaning for 390 or 125. Writes frame,
+// per-head summary, and bet CSVs plus a summary JSON to
+// data/open_prototype/reports.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');

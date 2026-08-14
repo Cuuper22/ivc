@@ -1,3 +1,15 @@
+// One-off re-audit (2026-05-31) of the "low real-token-null" Brahmi rows.
+// The v3 impostor-forger run flagged some sign families where fewer than 1% of
+// forged impostor tokens matched as well as the real tokens did — a result that
+// could look like a genuine Indus-to-Brahmi phonetic anchor. This script re-reads
+// the forger CSV/JSON, the v3 independence preflight CSV, and the v2 family
+// descent summary CSV, and checks each low-null row against the original
+// shape-null and label-null thresholds, the v3 preflight, minimum independence
+// (at least 3 unique token hashes, CISI objects, and source paths), duplicate-collapse
+// unanimity, and modal-label stability. It writes one CSV row per low-null family
+// with every failure flag spelled out, plus a JSON summary with SHA-256 hashes of
+// all inputs. The conclusion baked into the output: every low-null row fails at
+// least one gate, so no hidden phonetic anchor survives.
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';

@@ -4,6 +4,8 @@ Cutoff: `2026-05-31T01:04:00 America/Los_Angeles`
 
 Reason: replacement thread for source thread `019e5c49-7458-7ef1-9b82-014b22621131`. Artifacts created by archived successor threads after the cutoff are not accepted as campaign evidence unless independently re-earned under the original moonshot scope.
 
+What happened, in plain terms: after the cutoff time above, archived successor threads kept producing artifacts outside the original moonshot scope. Those artifacts cannot be trusted as campaign evidence, so this document draws a hard line through the repository. Everything falls into one of three buckets: hard-quarantined files (physically moved aside and barred from use as evidence), tainted summaries (kept in place as historical ledgers but not trusted for post-cutoff status), and a re-earned layer (work redone under the original scope, which may be used). "Re-earned" means the result was independently reproduced inside the trusted scope, not merely copied back.
+
 ## Hard Quarantine
 
 These files were newly created after the cutoff and have been physically moved under `tmp/quarantine_bad_successor_20260531T0104/`. They must not be imported, cited, summarized as settled, or used as evidence for `032-002-861 / 002-390-X`.
@@ -43,7 +45,7 @@ These files existed before the cutoff but were modified afterward. Leave them in
 
 ## Live Checkpoint
 
-The campaign resumes from `docs/campaign_032_002_861_002390x_competing_linguist_hypotheses.md` and the delegated checkpoint:
+This is where the campaign stands after the line is drawn. The campaign resumes from `docs/campaign_032_002_861_002390x_competing_linguist_hypotheses.md` and the delegated checkpoint:
 
 - Dholavira `4237.1` / Bisht page 18 item 10 remains `source_image_candidate_unbound_metadata_cluster_found`.
 - `705` remains acquisition-hot, not strict.

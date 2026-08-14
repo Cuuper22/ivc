@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// The H-2218..H-2239 tablets split into a canonical text arrangement ("A") and a side-swapped
+// variant ("B_side_swap"). If the side-swapped tablets were also a different physical size,
+// side order might just track a manufacturing batch rather than a writing convention. This
+// script checks that confound. It reads the Fig. 4 mapping CSV for the 22-object series and
+// computes four size metrics per tablet: horizontal mm, vertical mm, area, and aspect ratio
+// (thickness is absent from the source, so it is excluded). It compares A versus B_side_swap
+// with exact two-sided permutation tests (enumerating every group assignment), and tests the
+// three manufacturing groups with a one-way F statistic against 20,000 seeded Monte Carlo
+// label shuffles. Outputs: a per-tablet detail CSV, group summary CSV, test CSV, and JSON
+// summary whose key observation states whether any size contrast is small enough (p < 0.05)
+// to demand source validation. Size control only; no side function or reading is accepted.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 

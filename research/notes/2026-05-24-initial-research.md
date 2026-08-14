@@ -19,7 +19,7 @@ The Indus script remains undeciphered at scholarly-consensus level. The core obs
 
 ## Egyptian Benchmark
 
-Ancient Egyptian is not a fair comparator in resources. It is a fair comparator in epistemic discipline.
+Ancient Egyptian is not a fair comparator in resources. It is a fair comparator in epistemic discipline — that is, in how carefully claims were tested before being believed.
 
 Egyptian decipherment benefited from:
 
@@ -28,11 +28,11 @@ Egyptian decipherment benefited from:
 - Multiple scripts tied to the same language family.
 - Large text corpora and later lexicographic infrastructure.
 
-Therefore the IVC system must compete on calibration and reproducibility first, not on fluent translation.
+The Indus script has none of those advantages. Therefore the IVC system must compete on calibration and reproducibility first, not on fluent translation.
 
 ## First Corpus Probe
 
-I inspected the public Yajnadevam `lipi` CSV on 2026-05-24 only as a data-shape probe. It contains columns for inscription metadata, sign strings, and also columns named `sanskrit`, `translation`, and `notes`.
+I inspected the public Yajnadevam `lipi` CSV on 2026-05-24 only as a data-shape probe: what columns exist and how the data looks, nothing more. It contains columns for inscription metadata, sign strings, and also columns named `sanskrit`, `translation`, and `notes`.
 
 Important: those translation columns are not trusted labels. They are excluded from any serious research use unless the task is specifically to audit that decipherment claim.
 
@@ -58,7 +58,7 @@ Only after that layer proves predictive power do we allow candidate language rea
 
 ## Working Hypothesis
 
-The most productive starting hypothesis is a mixed administrative system:
+The most productive starting hypothesis is a mixed administrative system, meaning the signs may do several different jobs at once:
 
 - Some signs may be logographic.
 - Some may be semasiographic.

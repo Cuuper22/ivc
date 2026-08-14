@@ -1,3 +1,15 @@
+// Writes down the final state of the 002-390-X campaign as a ranked ledger.
+// This is a documentation script: it reads nothing and computes nothing — the
+// eight ranked claims and five parser rules are hand-written from the results
+// of the consolidate-phase runs, then serialized to CSV and JSON so downstream
+// tools and future sessions have one authoritative snapshot. Each claim carries
+// its tier (promoted candidate down to wild shot), the parse rule it licenses,
+// why it survived, what still damages it, and the next test that could break
+// it. The rank-1 claim is "002 licenses the 390 status/title frame"; accepted
+// decipherment claims remain 0. Outputs go to
+// data/open_prototype/reports/ as _state_rows.csv, _parser_rules.csv, and
+// _summary.json under this script's prefix.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

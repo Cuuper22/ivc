@@ -1,3 +1,15 @@
+// Asks whether sign `125` is a portable element of the phrases governed by sign
+// `002` — recurring in several different templates, across sites, and not just as
+// copies of one text. The script reads metadata_filtered.csv, collapses duplicate
+// sign sequences, and for every `002` occurrence records the 4-sign template that
+// follows it. Templates are grouped into families; a family counts for the bet only
+// if it repeats, spans more than one site, and is not dominated (>50%) by a single
+// exact text. Every sign appearing in these template cells is ranked the same way,
+// so 125 competes against the whole field and against frequency-comparable signs
+// (half to twice its cell count). A 100,000-iteration forger draws random template
+// cells (matching 125's cell count) and asks how often chance yields as many
+// repeated, cross-site, non-copy families. Writes a bet summary (JSON + CSV) plus
+// target-family and per-sign tables to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

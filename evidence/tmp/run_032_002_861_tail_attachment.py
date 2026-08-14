@@ -1,3 +1,16 @@
+"""Count how tightly eight candidate units attach to 861 across the corpus.
+
+For each unit in UNITS — tail candidates like 603, 533-717, 255-416, raw
+duplicate-family tails 416 and 698, and three 390-branch-head controls — this
+script finds every occurrence in the strict fully-numeric corpus and records
+what stands immediately before and after it. The key numbers per unit: how
+often it follows 861, how often it follows the full 002-861 pair, and how
+often it is terminal (ends the inscription). If a unit lives almost only
+after 861, it behaves like an attached tail; if it roams freely, it is a
+control or background sign. Writes an occurrences CSV, a summary CSV, and a
+JSON payload.
+"""
+
 from __future__ import annotations
 
 import csv

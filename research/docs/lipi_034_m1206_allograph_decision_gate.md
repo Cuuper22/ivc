@@ -2,9 +2,11 @@
 
 Date: 2026-05-26
 
+This note is the standing decision board for one narrow sign question. Two sign codes, `034` and `415`, appear in the same three-sign frame. Either they are two spellings of one sign, or they are two different signs that happen to look alike, or the difference is an artifact of how sources label sides or how the project transcribes. The note lays out those four possibilities side by side, records which evidence each currently has, and states exactly what would settle it. It is a gate — a checkpoint the branch cannot pass until one of those hypotheses wins.
+
 ## Question
 
-After closing the H-786/H-941 side-policy gate, what is the next admissible linguistic decision for `M-1206 +520-220-034+`?
+After closing the H-786/H-941 side-policy gate, what is the next admissible linguistic decision for `M-1206 +520-220-034+`? Allography is the question of which shapes count as variants of the same sign.
 
 The live question is not "what does 034 mean?" The live question is:
 
@@ -30,6 +32,8 @@ The exact local frame is therefore not a frequency proof. `034` is a singleton i
 
 ## Admissible Witnesses After Side Policy
 
+A witness is one source panel or crop offered as evidence for a claim. A recut is a fresh, tighter crop taken from the source page. To quarantine is to set a witness aside as unusable until a named blocker clears.
+
 | Evidence unit | Current status | Use |
 | --- | --- | --- |
 | `M-1206 A/a` terminal component | Source-visible; blind core `T002/T003`; target class stable | Positive target witness |
@@ -53,7 +57,7 @@ Current support:
 - M-1206 target terminal components are internally stable.
 - Isolated M-1206 terminal components cluster closest to exact-side `H-938 A/A bis` `415` controls.
 - `H-940 A` provides a second clean exact-side `415` control, though weaker in the isolated terminal view.
-- Prefix/nonterminal distractors were rejected, so the match is not only shared `520-220` context.
+- Prefix/nonterminal distractors — decoy crops from the non-final part of the same inscription, included to see whether reviewers match on context rather than form — were rejected, so the match is not only shared `520-220` context.
 
 Current blockers:
 

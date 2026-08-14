@@ -4,15 +4,19 @@ Date: 2026-05-29
 
 ## Question
 
-Does the `603` bridge-lock pattern survive when repeated X-before-`240` rows are collapsed into formula/register family cells?
+This note is an audit: it re-runs an earlier result under a stricter counting rule to see whether the result survives. Signs in this corpus are numeric IDs. "X-before-`240`" names the slot filled by the sign X in rows shaped `...-X-240-...`; the "subframe" is the fixed run of signs after `240`. A sign "bridges" when it appears both in that slot and as the first sign of a tail after `002-861` — the material at the end of an inscription row. The "bridge-lock" is `603` doing both while staying tied to one subframe.
+
+The stricter rule is the family cell: near-identical repeated rows are collapsed into one unit of evidence, so a copied text cannot count as several independent witnesses.
+
+The question: does the `603` bridge-lock pattern survive when repeated X-before-`240` rows are collapsed into formula/register family cells?
 
 ## Method
 
-The raw X-before-`240` packet has 95 rows. This audit collapses rows by `(X sign, prefix, after-240 subframe, register key, signless formula template)`. That keeps linguistic formula cells instead of treating repeated identical Harappa text rows as independent evidence.
+The raw X-before-`240` packet has 95 rows. This audit collapses rows by `(X sign, prefix, after-240 subframe, register key, signless formula template)` — the "register" being the object class the row sits on. That keeps linguistic formula cells instead of treating repeated identical Harappa text rows as independent evidence.
 
 Family cells: `81` from `95` raw rows across `28` X signs.
 
-A label-shuffle null then shuffles X labels across family cells for 20,000 iterations, preserving X family-cell counts and after-`240` family-cell sizes.
+A label-shuffle null then shuffles X labels across family cells for 20,000 iterations, preserving X family-cell counts and after-`240` family-cell sizes. A null model is a randomized copy of the data: if shuffling reproduces the pattern often, the pattern is cheap.
 
 ## Target Profiles
 

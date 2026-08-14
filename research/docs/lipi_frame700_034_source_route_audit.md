@@ -4,7 +4,7 @@ Date: 2026-05-25
 
 ## Question
 
-For the actual 25-object FRAME700 `034` two-lane packet, what source-acquisition route exists right now?
+This note answers a purely practical question: for each object we need to look at, where can its image actually be obtained? FRAME700 is the project's label for short inscription rows built on sign `700`, such as `+700-034+`; the `034` work asks whether the sign codes `032`, `033`, and `034` are separate choices in the same slot. The two-lane packet is the bundled list of 25 objects split across two lanes — separate evidence tracks, kept apart so a result in one does not lean on the other. A source route is the path by which a given object's published images or catalog entry can be reached. The question: for that actual 25-object packet, what source-acquisition route exists right now?
 
 This is not a decipherment claim. It is the acquisition map for the next evidence move.
 
@@ -42,7 +42,7 @@ Notes:
 - Harappa.com identifies CISI 3.1 as the Mohenjo-daro/Harappa volume and gives its bibliographic route.
 - The Helsinki record confirms the 2010 CISI 3.1 book metadata and ISBN.
 - The CISI order sheet states the corpus purpose as providing research images of Indus seals and inscriptions, and lists volumes 1, 2, and 3.1 with image counts.
-- ICIT is valuable but access-gated, so it is not a current image source.
+- ICIT, the Interactive Corpus of Indus Texts, is valuable but access-gated, so it is not a current image source.
 - Vats 1940 is an online old-excavation text/plate route for legacy Harappa material, but H-number to plate/object reconciliation must be done through CISI/Kenoyer tables before using it.
 
 ## Result
@@ -89,7 +89,7 @@ The first practical source route is:
 
 1. Use the Internet Archive CISI vol. 1/2 scans as plate locators for the nine OCR-hit objects: `H-212`, `H-353`, `H-771`, `H-789`, `H-893`, `H-925`, `H-930`, `H-983`, and optional `H-910`.
 2. Use Kenoyer 1997 public Table 2 immediately for identity reconciliation on `H-212` and optional `H-916`.
-3. Use Vats 1940 plates as a legacy route for older Harappa objects only after the CISI/Kenoyer crosswalk confirms which plate/object number belongs to the packet row.
+3. Use Vats 1940 plates as a legacy route for older Harappa objects only after the CISI/Kenoyer crosswalk — a table matching each object's identifier in one catalog to its identifier in the other — confirms which plate/object number belongs to the packet row.
 4. Use the Harappa public H95-2482 lead to reconcile `H-2204`, but do not treat it as row validation because the public object identity and local `H-2204/Fig 27.06` still need alignment.
 5. Acquire CISI 3.1 for the twelve HARP/H2000/H2001 targets: `H-1772`, `H-1824`, `H-1842`, `H-1850`, `H-1883`, `H-1940`, `H-1943`, `H-2137`, `H-2204`, `H-2209`, `H-2211`, and `H-2217`.
 6. Keep `H-854`, `H-1123`, and optional `H-1294` as direct request-only objects because exact IA OCR did not surface them in this pass.

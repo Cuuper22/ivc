@@ -1,3 +1,16 @@
+"""Split occurrences of six candidate units by what comes before them.
+
+The question: does a unit like "603" behave differently when it follows the
+002-861 pair than when it follows some other 861 or stands on its own? We read
+the strict Lipi corpus (metadata_filtered.csv), keep only clean fully-numeric
+inscriptions, and find every occurrence of the six units listed in UNITS. Each
+occurrence gets a context class — post_002_861, post_other_861, or independent
+— plus its site, artifact type, neighbors, and companion inscriptions on the
+same object. We write one CSV of raw occurrences, one CSV of per-unit
+summaries, and a JSON summary that also records the working research decision
+for each unit (which are P1 targets, which are controls).
+"""
+
 from __future__ import annotations
 
 import csv

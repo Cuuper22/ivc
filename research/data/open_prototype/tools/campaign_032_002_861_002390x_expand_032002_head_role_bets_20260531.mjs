@@ -1,6 +1,21 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script maps what happens inside the 032-002 frame: which head signs
+// the frame selects and whether the choice depends on what stands to the left
+// of the 032. It reads lipi/metadata_filtered.csv, deduplicates rows by sign
+// sequence, and collects every 032-002-HEAD occurrence with its left context,
+// tail, and terminal status. Heads are classed by their own numbers: 5+ rows
+// with 80%+ terminal share form the "closed frequent head" set; 3+ rows at
+// 70%+ are dirtier peripheral pressure; 390 is tracked separately as the open
+// target head. A second table groups the same rows by the sign before the
+// 032. From this it stakes five bets: the frequent heads are a closed-head
+// class, 220-032-002 is a terminal environment that never selects 390,
+// 205-032-002 is a two-row payload-alternation lane, 390 is a rare open lane
+// picked by special left contexts, and 590-032-002 pivots into tag-like
+// heads. Writes frame rows, head and left-context summaries, and the bets as
+// CSVs plus a summary JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

@@ -4,7 +4,7 @@ Date: 2026-05-24
 
 ## Purpose
 
-This audit follows the [Lipi short-mark plate request packet](lipi_short_mark_plate_request_packet.md).
+This note records a search of public web sources for leads on 17 specific artifacts. It exists because the [Lipi short-mark plate request packet](lipi_short_mark_plate_request_packet.md) named 17 artifacts that need image or plate validation, and the cheapest first step is to check what is already public before requesting archive access.
 
 Question:
 
@@ -12,7 +12,7 @@ Question:
 Are there public source, image, or bibliographic leads for the 17 first-pass plate-check artifacts?
 ```
 
-This is source discovery only. It is not image validation.
+This is source discovery only. It is not image validation: finding a page that mentions an artifact is not the same as confirming what is on the artifact.
 
 ## Local Artifacts
 
@@ -46,7 +46,7 @@ https://www.nature.com/articles/s41599-021-00713-0
 https://bharatkalyan97.blogspot.com/2025/08/shapes-of-tablets-convey-information.html
 ```
 
-The Blogger and RSS-derived sources are claim-heavy. They are used only as public lead discovery. Their readings and decipherment claims remain quarantined.
+A caution about these sources. The Blogger and RSS-derived pages are claim-heavy: they assert readings and decipherments. We use them only to discover public leads — pointers to images or citations. Their readings and decipherment claims remain quarantined, meaning we do not use or trust them.
 
 ## Results
 
@@ -100,6 +100,8 @@ H-1347
 
 ## Lead Classes
 
+These are the labels used in the results above. Each one is deliberately weak — it says a lead exists, not that the lead is usable evidence.
+
 `artifact_mention_with_candidate_images` means the target artifact is named on a public page or feed entry that also exposes images. It does not mean the image is a plate-grade object-side image.
 
 `published_direction_or_corpus_note` means a published source mentions the artifact in a direction, allograph, or corpus-correction context. For this pass, that applies only to H-1302 and H-1303.
@@ -108,7 +110,7 @@ H-1347
 
 ## Consequence
 
-The public search did not validate any of the 17 packet artifacts.
+The plain outcome: the public search did not validate any of the 17 packet artifacts.
 
 It did improve source targeting:
 
@@ -117,9 +119,9 @@ It did improve source targeting:
 - H-355 has only a text-range public lead covering `H-352-357 (incised)`. A follow-on clarification audit found no H-355 object-level public image in the checked searches, so both `+700-033+` short rows still require a three-side source check.
 - H-933 and H-960 have only a text-range public lead covering `H-933, 936, 960, 964, 308, and 312-314 (incised)`. A follow-on contrast audit found no object-level public image for either object, so the `034` before-longer contrast remains wholly pending source-image validation.
 - Ten artifacts have text-only or bibliographic leads in public secondary text.
-- Five artifacts remain source-dark in the checked public endpoints. A follow-on direct-request audit rechecked H-1304, H-1344, H-1345, H-1346, and H-1347 with fresh public-web searches and still found no object-level image, plate, caption, or useful text-only lead, so this batch should go straight to CISI/HARP/archive access.
+- Five artifacts remain source-dark — no public trace at all — in the checked public endpoints. A follow-on direct-request audit rechecked H-1304, H-1344, H-1345, H-1346, and H-1347 with fresh public-web searches and still found no object-level image, plate, caption, or useful text-only lead, so this batch should go straight to CISI/HARP/archive access.
 
-The plate request still needs CISI plates, HARP/Harappa source images, or direct archive access before accepting side order, segmentation, allography, direction, or the `033`/`034` contrast.
+The plate request still needs CISI plates (the published Corpus of Indus Seals and Inscriptions), HARP/Harappa source images, or direct archive access before accepting side order, segmentation, allography, direction, or the `033`/`034` contrast.
 
 Follow-on queue:
 

@@ -1,6 +1,20 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script classifies the X signs that appear after 002-390 by what they
+// do to the rest of the text — the "payload class" of each X. It scans
+// lipi/metadata_filtered.csv for every 002-390-X frame, recording the two
+// signs before the 002, the full tail after X, and whether the text continues
+// or ends there. Each X gets a class from its own rows: open_payload (always
+// continues), terminal_payload (always ends), or mixed. A companion table
+// groups the same frames by the sign immediately left of 002, to show that
+// the same left context can split by X — meaning the X slot, not the left
+// context, controls continuation. Five bets are recorded, including: 095 and
+// 705 are terminal payloads (with a named Dholavira prediction), 125 is an
+// open dependent-tail payload, and 530/590 are wild-shot open extenders.
+// Writes frame rows, per-X summary, left-context summary, and bets as CSVs
+// plus a summary JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');

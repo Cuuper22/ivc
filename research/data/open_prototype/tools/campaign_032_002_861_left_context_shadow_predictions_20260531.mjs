@@ -1,3 +1,14 @@
+// Shadow-prediction test for the left-context operator model. A "shadow" is another governed
+// frame that shares the same left context as a target frame — exactly, or by its last three
+// or last two signs. If the left side really acts like an operator, shadows should behave
+// compositionally: the same final-235 left material should select 125 under P086 heads
+// (390/405) but not under closure heads, and left contexts containing 032 without 235 should
+// keep suppressing 125. We read the filtered Indus inscription list
+// (lipi/metadata_filtered.csv), keep one copy of each distinct sign sequence, extract every
+// governed frame with its full left context, and for each 002-390 target frame collect its
+// shadows at all three match levels, scoring each as supporting, breaking, or uninformative.
+// One exact-left break is enough to demote the model. Writes shadow rows, duplicate
+// left-context groups, and a decision CSV plus a JSON summary to data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

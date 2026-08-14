@@ -1,3 +1,20 @@
+"""Scan for any real bridge cluster between X-before-240 and post-861, with nulls.
+
+The earlier work fixated on 603. This scan asks the fair version of the
+question: does any non-background sign form a family-cell bridge between the
+two ecologies? It collapses post-002-861 tail rows into family cells the same
+way the X-side audit did, scores every intersecting sign (rewarding locked
+multi-cell bridges, penalizing single-cell intersections), and applies a
+shape gate that demands at least two independent family cells on both sides.
+Because the candidate was found by searching, the decision adversary is a
+max-scan null: 20,000 seeded label shuffles within each side, plus a second
+identity-remap null that breaks the cross-side sign-identity match. The
+recorded decision: no bridge cluster passes the shape gate — 603 fails the
+minimum recurrence rule, and the campaign should pivot away from 603-only
+work. Writes tail-cell, candidate, and two null-sample CSVs, a JSON summary,
+and a Markdown doc in docs/.
+"""
+
 from __future__ import annotations
 
 import csv

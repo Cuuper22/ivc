@@ -2,11 +2,15 @@
 
 Date: 2026-05-25
 
+This note is a comparanda packet. Comparanda are the other objects you set beside your odd case to find out whether it is really odd. A packet is the self-contained bundle: the comparison rows, the ranking of which ones are fair comparisons, and the ruling.
+
+The odd case is `H-2237`. Among a tight group of objects that otherwise say the same thing, this one carries the sign `154` where its neighbours carry `156`. A single exception like that is either a real contrast worth chasing or a wobble in our own transcription. This note goes looking for other objects that could tell the two apart, and finds that the honest answer cuts against the interesting reading.
+
 ## Question
 
-The H-series slot grammar isolates `H-2237` as the only H-2218 through H-2239 object with `+154-003+` where the role majority has `+156-003+`.
+In the H-series slot grammar, `H-2237` stands alone: it is the only H-2218 through H-2239 object with `+154-003+` where the role majority has `+156-003+`.
 
-The external-distribution audit then showed that `154_003` is sparse but not unique:
+A slot is one position in the sign row, and the slot grammar is what the corpus shows can stand in each position. The external-distribution audit — a sweep of the whole corpus outside this group — then showed that `154_003` is sparse but not unique:
 
 ```text
 H-2237: +154-003+
@@ -15,7 +19,7 @@ H-1682: +154-003-617-033+
 M-102: +154-003-900-545+
 ```
 
-This packet asks what those external rows actually buy us. Do they produce real comparanda for the H-2237 slot question, or only a weak allograph/source-validation warning?
+This packet asks what those external rows actually buy us. Do they produce real comparanda for the H-2237 slot question, or only a weak allograph/source-validation warning? An allograph is a different drawn shape for the same underlying sign — the competing explanation for any apparent contrast.
 
 ## Inputs And Outputs
 
@@ -73,6 +77,8 @@ External `154_003` objects:
 
 ## Ranked Controls
 
+A control is a comparison row that matches the target in everything except the sign under test. The closer the match on site, object type, shape, material, and direction, the more the difference in sign means something.
+
 Best current `156_003` controls for each `154_003` row:
 
 | Target | Best Control | Why It Ranks |
@@ -91,6 +97,8 @@ Interpretation:
 - `H-1682` keeps the prefix-frame alive but does not currently provide a tight control.
 
 ## Crosswalk Pressure
+
+A crosswalk is a checked link between our sign codes and another catalogue's. Here it argues against us: another catalogue maps both of our signs onto its single code `P004`. That is not proof they are one sign, but it is exactly the sort of finding a hopeful reading would rather not look at.
 
 The overlap/crosswalk layer creates a serious caution:
 
@@ -130,6 +138,8 @@ accepted side functions: 0
 ```
 
 ## Next Source Questions
+
+Four questions to put to the source images. Each is written so that a clear answer either way moves the work along.
 
 1. `H-2237/H-2233`: are `154` and `156` visually distinct on the same H-series physical side role while `+700-034+` and `+861-003+` stay invariant?
 2. `H-366`: is the strict external `+154-003+` source-visible, and does it visually match the H-2237 `154` form?

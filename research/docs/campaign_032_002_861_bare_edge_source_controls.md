@@ -2,11 +2,13 @@
 
 Date: 2026-05-29
 
+This note collects photographs of the seals that end plainly. Some inscriptions stop right after `002-861`; others add a tail. To argue that the tail is a choice, we need to see the plain ones on real published images and confirm they show a clean edge — not a broken corner or a worn patch where a tail might once have been. This pass acquired six such bare controls and records which lanes they cover and which are still missing.
+
 ## Question
 
-The matched-controls campaign showed that tailed `002-861-*` rows have bare terminal `002-861` controls in comparable lanes.
+The matched-controls campaign showed that tailed `002-861-*` rows have bare terminal `002-861` controls in comparable lanes. A "control" is a comparison row sharing the setting but not the feature under test; "bare" means the inscription stops right after `002-861`; a "lane" is a specific left-to-right pattern of the signs immediately before `002-861`.
 
-This campaign asks the source-level version:
+This campaign asks the source-level version — the version answered by looking at images rather than trusting the catalogue:
 
 ```text
 visible bare 002-861 edge
@@ -14,7 +16,7 @@ vs
 visible 002-861-tail edge
 ```
 
-The output is a source-layout input to the linguistic model: it records whether comparable bare rows have visible terminal-side windows that can be compared with the already checked tailed rows.
+The output is a source-layout input to the linguistic model: it records whether comparable bare rows have visible terminal-side windows — inspectable regions at the end of the line, where a tail would sit if there were one — that can be compared with the already checked tailed rows.
 
 ## Stored Outputs
 
@@ -71,7 +73,7 @@ M-391  002-861-533-717
 M-1273 002-861-603
 ```
 
-The bare controls now record visible terminal-side windows in comparable catalog-terminal rows. That makes the post-`861` zone a concrete comparison target instead of only a suffix-table residue.
+The bare controls now record visible terminal-side windows in comparable catalog-terminal rows. That makes the post-`861` zone a concrete comparison target instead of only a suffix-table residue — the leftover material at the end of a table, noticed but never examined.
 
 ## Hypotheses To Test
 

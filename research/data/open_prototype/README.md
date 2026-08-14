@@ -2,9 +2,9 @@
 
 Date: 2026-05-24
 
-This directory contains the first local audit artifacts for `ivc-corpus-2026-05-24-open-prototype`.
+This directory holds the first local audit artifacts for `ivc-corpus-2026-05-24-open-prototype`.
 
-This is not an authoritative corpus. It is a reproducible working layer for source audit, field filtering, and cross-source overlap checks.
+It is not an authoritative corpus. It is a reproducible working layer with three jobs: audit the sources, filter their fields, and check how records overlap across sources. Everything below — the file inventory, the keyed results, and the per-run interpretation records — serves those three jobs and nothing more.
 
 ## Contents
 
@@ -431,14 +431,14 @@ tools/h2218_public_image_lead_search.mjs
 
 ## Source Rules
 
-- `mayig` data are pinned to commit `ad2f1e218a34b8c33c57de0d6cb8d99272765bbb`.
+- `mayig` data are pinned to commit `ad2f1e218a34b8c33c57de0d6cb8d99272765bbb`, so every rerun sees the same upstream bytes.
 - `lipi` data are filtered to remove `sanskrit`, `translation`, and `notes`.
 - `overlap_probe.csv` does not claim sign equivalence. It only matches artifact IDs and compares rough sign counts.
 - All rows remain blocked from semantic or linguistic claims until primary/source validation and sign crosswalk work are done.
 
 ## Current Result
 
-The first overlap probe found:
+The keyed results below accumulate across every probe run so far. The block opens with what the first overlap probe found:
 
 ```text
 mayig_records: 179
@@ -948,7 +948,7 @@ h2218_h2239_public_image_lead_search_unique_objects: H-2219
 h2218_h2239_public_image_lead_search_missing_objects: 21 of 22
 ```
 
-Interpretation:
+Interpretation — one bullet per probe or gate, each the standing decision record for that run:
 
 - The open `mayig` subset aligns cleanly by artifact ID with 179 filtered `lipi` rows.
 - Sign-count agreement is strong enough to use the overlap for crosswalk triage.

@@ -1,3 +1,14 @@
+// Looks at the sign right after `806` — the suffixes 465, 467, 475, and 468 — and
+// asks whether they sort by context. The wild-shot bet: `806-465` and `806-475`
+// go with the Phyt (plant) icon, `806-467` does not belong to that plant class,
+// and `806-468` goes with aniconic (no-symbol) seals, especially SEAL:R, rather
+// than being a generic no-icon marker. The script reads metadata_filtered.csv,
+// collects every 806+suffix occurrence with its object metadata, collapses each
+// suffix's rows to exact-text families, and tabulates Phyt and no-symbol-seal
+// rates per suffix. Robustness comes from leave-one-out tables that drop each site
+// and each object type in turn and report the surviving hit rates. No permutation
+// null is run; the output is labeled a wild shot. Writes a bet summary
+// (JSON + CSV) plus per-suffix and leave-one-out CSVs to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

@@ -1,3 +1,16 @@
+// Builds the blind adjudication packet for the 032-002-Y source-box test:
+// the positives (seals where the sequence is already source-visible) mixed
+// with matched negative controls, so a reviewer cannot score well by
+// guessing. Negatives are corpus rows whose text contains a near-miss —
+// 032 not followed by 002, or 002-Y not preceded by 032 — ranked by a match
+// score favoring rows with local images, source-panel-graph presence, and
+// the same site/type/symbol/length profile as the positives. The script
+// reads four report CSVs (lipi scope rows, source-visible witness matrix,
+// overlap probe, panel graph), scans tmp/ for candidate images, copies the
+// chosen images to neutral blind filenames (seeded shuffle; seed and
+// negative count come from the CLI), and writes the candidates CSV, the
+// blind packet CSV, the answer key CSV, and a JSON summary. It builds the
+// packet only — adjudication and scoring happen in separate scripts.
 import fs from 'node:fs';
 import path from 'node:path';
 

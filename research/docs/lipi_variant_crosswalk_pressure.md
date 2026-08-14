@@ -4,13 +4,15 @@ Date: 2026-05-25
 
 ## Question
 
-Do the candidate singleton variant pairs from the H-series survive or collapse when checked against the independent Mayig/Parpola positional crosswalk layer?
+This note records a pressure test on a handful of suspect sign pairs. Some terms first. The project uses two independent sign catalogs: the local Lipi sign codes (numbers like `032`, `154`) and the Mayig/Parpola sign codes (numbers like `P004`, `P145`). The "crosswalk" is a provisional positional alignment between the two — a mapping built by lining up the same inscriptions in both catalogs, position by position. An "allograph" is one sign written in two visual forms. "Singleton variant pairs" are sign pairs, each attested only once in the H-series, that might be variants of each other.
+
+The question: do the candidate singleton variant pairs from the H-series survive or collapse when checked against the independent Mayig/Parpola positional crosswalk layer?
 
 This is a pressure test, not a decipherment. It asks whether the current crosswalk makes the live variants look like:
 
 - distinct signs in a second sign system,
 - allographs or sign-list splits,
-- or source-dark cases where the overlap layer cannot decide.
+- or source-dark cases where the overlap layer cannot decide. ("Source-dark" means the layer has no evidence either way.)
 
 ## Inputs And Outputs
 
@@ -40,6 +42,8 @@ data/open_prototype/reports/lipi_variant_crosswalk_pressure_summary.json
 
 ## Sign-Level Result
 
+"Reverse pressure" reads the crosswalk the other way: given the Mayig/Parpola sign, which Lipi sign does it map back to, and how often?
+
 | Lipi sign | Clean aligned rows | Top Mayig/Parpola sign | Reverse pressure | Status |
 | --- | ---: | --- | --- | --- |
 | `032` | 21 | `P145` | `P145 -> 032` at 20/22, runner-up `002` | FRAME700 control |
@@ -60,7 +64,7 @@ The current overlap layer aligns both signs to `P004`:
 reverse P004 -> 156: 5/6, runner-up 154: 1/6
 ```
 
-This creates active allograph or sign-list-collapse pressure. It does not prove `154` and `156` are visually identical, but it prevents using `H-2237 +154-003+` versus `H-2233 +156-003+` as functional evidence until source images show a diagnostic visual distinction.
+Because both Lipi signs land on the same Mayig/Parpola sign, this creates active allograph or sign-list-collapse pressure — reason to suspect they may be one sign that the local list split in two. It does not prove `154` and `156` are visually identical, but it prevents using `H-2237 +154-003+` versus `H-2233 +156-003+` as functional evidence until source images show a diagnostic visual distinction.
 
 Current status:
 
@@ -85,11 +89,11 @@ Current status:
 033_crosswalk_supported_034_unobserved_in_overlap
 ```
 
-That means `034` is not currently collapsed with `033` by this layer. It is crosswalk-dark. The next question is source coverage and sign-list mapping, not a lazy allograph merge.
+That means `034` is not currently collapsed with `033` by this layer. It is crosswalk-dark: the crosswalk simply has nothing to say about it. The next question is source coverage and sign-list mapping, not a lazy allograph merge.
 
 ### `032/033/034`
 
-The FRAME700 family now has a sharper split:
+FRAME700 is the project's name for the family of short marks that pair with sign `700`. That family now has a sharper split:
 
 ```text
 032 -> P145
@@ -107,7 +111,7 @@ This supports keeping `032` and `033` separate in the clean overlap layer, while
 
 ## Research Consequence
 
-The two H-series singleton failures are no longer one generic "variant" problem.
+The two H-series singleton failures are no longer one generic "variant" problem. They are two different problems.
 
 `H-2237` asks whether `154/156` survive a strong `P004` collapse pressure. The image check must decide if `154` and `156` are source-visible diagnostic variants or only a catalog/sign-list split.
 

@@ -4,6 +4,10 @@ Date: 2026-05-24
 
 ## Purpose
 
+This note records a bookkeeping check on sign order. It exists because a later hypothesis could go badly wrong if we quietly treated two reversed sign pairs as the same thing.
+
+First, the terms. A "short mark" is a very short catalog row — one or two signs — flagged as a short-mark candidate on a Harappa tablet. `TAB:B` and `TAB:I` are two Harappa tablet type codes from the catalog. Numbers like `700`, `032`, `033`, and `034` are catalog sign codes, not readings. A "companion mark" is the other sign in a two-sign row that contains sign `700`.
+
 This audit follows the [Lipi multi-side mark stratified probe](lipi_multiside_mark_stratified_probe.md) and [multi-side mark validation queue](lipi_multiside_mark_validation_queue.md).
 
 It asks a narrow orientation-control question:
@@ -12,7 +16,7 @@ It asks a narrow orientation-control question:
 Inside Harappa TAB:B and TAB:I short marks, do two-token 700 companion marks keep a stable internal order?
 ```
 
-This matters because a future side-mark or metrological hypothesis cannot treat `+700-033+` and `+033-700+` as interchangeable until direction, mirroring, catalog order, and image orientation have been checked.
+Why this matters: a future side-mark or metrological hypothesis cannot treat `+700-033+` (sign `700` first) and `+033-700+` (sign `700` last) as interchangeable until direction, mirroring, catalog order, and image orientation have been checked.
 
 This is not a reading.
 
@@ -73,9 +77,9 @@ Core companions:
 
 ## Tests
 
-The audit emits exact tests and applies Bonferroni plus Benjamini-Hochberg correction across all emitted tests.
+The audit emits exact tests. Because it runs many tests at once, it applies two standard multiple-testing corrections across all emitted tests: Bonferroni and Benjamini-Hochberg.
 
-Corrected orientation flags:
+Corrected orientation flags — the tests that still stand after correction:
 
 ```text
 orientation_balance_binomial_700_first_vs_last: 032, 033, 034
@@ -107,7 +111,7 @@ The local short-mark queue has a strong internal-order asymmetry:
 700-companion marks are usually written with 700 first.
 ```
 
-But the reversed forms are real enough in the planning layer to block careless normalization:
+But the reversed forms are real enough in the planning layer — the catalog-derived data we work from before any image validation — to block careless normalization:
 
 ```text
 +700-033+ cannot be silently merged with +033-700+.

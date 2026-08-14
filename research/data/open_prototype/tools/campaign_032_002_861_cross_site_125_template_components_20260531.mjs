@@ -1,3 +1,13 @@
+// Probe for the parts of two suspected cross-site "title templates" built around sign 125:
+// 610-125-032 and 297-350-125-413. If these are real templates, each component should have a
+// job — 610 a rare governed title head, 297-350 a head+modifier pair, 413 and 032 terminal
+// suffixes — and the templates should recur at more than one site. We read the filtered
+// Indus inscription list (lipi/metadata_filtered.csv) and search for seven motifs (the two
+// full templates and their sub-pieces) as exact consecutive sign runs, recording each hit
+// with its site, object type, and surrounding context. A second pass profiles the six
+// component signs globally so template-only behavior can be told apart from a sign's normal
+// ecology. Writes motif-row, motif-summary, and sign-summary CSVs plus a JSON summary to
+// data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

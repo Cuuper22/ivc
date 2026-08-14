@@ -1,6 +1,16 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Does a sign mean the same thing wherever it sits, or does its position change its job?
+// This script tests that on four focus signs (095, 125, 530, 705) in Indus inscriptions read
+// from data/open_prototype/lipi/metadata_filtered.csv, deduplicated to unique sign sequences.
+// For every 002-H-X window it records each focus sign twice over: once when it is H, the
+// "head" slot right after 002, and once when it is X, the slot after the head. For each sign
+// it then compares the two roles — how often the text continues afterward, and which partner
+// signs it pairs with. If the same sign behaves differently by slot, that is evidence the
+// script must be parsed by position, not by sign identity alone. It scores three risky bets
+// and writes a per-occurrence CSV, a per-sign CSV, a bets CSV, and a summary JSON to reports/.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

@@ -1,6 +1,21 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script decomposes each 002-390-X sign's closing behavior into three
+// nested layers, to see which layer actually explains it: the sign's raw
+// global terminal rate anywhere in the corpus, its terminal rate in any
+// 002-HEAD-X slot, and its terminal rate specifically after 002-390. It scans
+// lipi/metadata_filtered.csv once to build all three populations, then
+// computes the two deltas for every X attested under 390. A gap of 0.34+
+// between the 390 rate and the general slot rate marks a "390-specific
+// residual"; the same gap between slot and global marks an "x_slot_residual";
+// smaller gaps mean the prior already explains it. The recorded bets: slot
+// behavior beats raw sign priors (so the slot is a real function), 390 itself
+// mostly just selects a slot inventory, 705 is a terminal slot class despite
+// not being terminal globally, and 692's closing may be nothing more than its
+// raw prior. Writes the residual table and bets as CSVs plus a summary JSON
+// to data/open_prototype/reports.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');

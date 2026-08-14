@@ -4,9 +4,11 @@ Date: 2026-05-24
 
 ## Purpose
 
-This experiment tests whether the formula-variant queue is stronger than simple corpus structure.
+This note records a null model built to attack our own formula-variant queue. A null model is a scrambled version of the data that keeps some properties and destroys the pattern under test; running it many times shows how often the pattern would appear by chance alone. If the real corpus does not beat its own scrambles, the pattern was never there.
 
-It does not assign sign readings, meanings, phonetics, or translations. It asks a narrower question: do near-duplicate pairs, shared edge frames, and single-slot candidates remain unusual after preserving basic properties of the 136-row strict Mayig-policy subset?
+The formula-variant queue is the review list produced by an earlier probe: near-duplicate inscriptions, shared edge frames, and rows differing in a single slot. This experiment tests whether that queue is stronger than simple corpus structure.
+
+It does not assign sign readings, meanings, phonetics, or translations. It asks a narrower question: do near-duplicate pairs, shared edge frames, and single-slot candidates remain unusual after preserving basic properties of the 136-row strict Mayig-policy subset? Mayig policy is one of our rules for deciding which sign shapes count as the same sign.
 
 ## Local Artifacts
 
@@ -53,7 +55,7 @@ This model preserves:
 - The multiset of last signs.
 - The multiset of interior tokens.
 
-This is the tougher control for edge-frame results such as `P324...P385`.
+This is the tougher control for edge-frame results such as `P324...P385`. An edge frame is a pairing of a first sign with a last sign, with anything in between.
 
 ## Key Results
 

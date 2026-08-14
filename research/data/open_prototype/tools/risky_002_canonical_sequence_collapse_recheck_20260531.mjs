@@ -1,3 +1,25 @@
+// Adversarial recheck of the "002 dual-head bipolar" risky bet, run
+// 2026-05-31. The bet: after sign 002, the heads 861 and 390 each split into
+// branch signs that are purely "open" (text continues) or purely "closed"
+// (text ends), never mixed — a switch-like pattern. Earlier support came from
+// collapsing duplicate raw text strings; this recheck collapses on the
+// canonical numeric sign sequence instead, which removes more near-duplicates
+// and is the harsher test.
+//
+// The script reads lipi/metadata_filtered.csv, keeps one row per distinct
+// sign sequence, extracts every 002-head-branch frame, and finds competitive
+// heads (8+ frames, 5+ distinct branches). "Bipolar pure" requires 8+ rows in
+// repeated branches, at least one open and one closed branch, and no mixed
+// branch. A 100,000-iteration label shuffle gives false-positive rates for
+// 861 and 390 individually, the specific pair, and any pair. A separate
+// 100,000-draw shuffle checks whether the canonical 002-861-096 rows are more
+// often ivory RODs than chance predicts.
+//
+// It writes risky_002_canonical_sequence_collapse_recheck_20260531.json,
+// .csv (the bet card with rates, falsifier, and confidence tier), and
+// _heads.csv. The tier auto-demotes to "wild shot" unless both heads pass and
+// the pair false-positive rate is at most 1%.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

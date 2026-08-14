@@ -2,11 +2,15 @@
 
 Date: 2026-05-26
 
+This note records a quick look at three image crops to see whether they show the same sign. It was run blind: the crops were stripped of their labels and shuffled into a neutral sheet, so the reviewer judged shapes without knowing which object was which. That guards against seeing a match because you expect one.
+
 ## Question
 
 After H-2148 became source-visible, do H-2148's single-sign panel, H-940 B, and the H-2147 candidate component/panel crop form one visually coherent graphic class?
 
 ## Neutral Packet
+
+The neutral packet is the label-stripped bundle shown to the reviewer, followed by the key that says which crop was which.
 
 Neutral sheet:
 

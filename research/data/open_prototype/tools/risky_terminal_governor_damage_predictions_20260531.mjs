@@ -1,3 +1,14 @@
+// Turns the terminal-governor network into checkable predictions about
+// damaged signs. In this corpus, 000 is the code for an unreadable sign. If
+// governor 002 really closes texts with 817/820 (near-closure 861), and 060
+// with 920/550/820 (near-cap 692), then a damaged row reading 002-000 or
+// 060-000 at the end should usually resolve — on physical inspection of the
+// object — to one of those closure sets. This script scans the filtered
+// corpus metadata for every governor-then-000 position, classifies it
+// (terminal unknown, damaged multi-unknown, or nonterminal), attaches the
+// predicted closure set, and flags rows in Good/Fair condition as high
+// priority for source inspection. It computes no statistics and never fills
+// in the 000s; it only writes the prediction list as a JSON report and CSV.
 import fs from 'node:fs';
 import path from 'node:path';
 

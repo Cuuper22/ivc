@@ -4,11 +4,11 @@ Date: 2026-05-24
 
 ## Purpose
 
-This contract defines what a future IVC "translation" output is allowed to say. It prevents the system from turning weak evidence into fluent nonsense.
+A contract here means a fixed output shape the system must fill in honestly. This one defines what a future IVC "translation" output is allowed to say. It exists to block the most tempting failure in decipherment work: turning weak evidence into fluent nonsense. Fluent English is easy to generate; the layered object below is not.
 
 ## Output Object
 
-Every output must be a layered object:
+Every output must be a layered object. Each field answers one question a skeptical reader would ask, and no field may be skipped:
 
 ```text
 artifact_id:
@@ -35,6 +35,8 @@ release_status:
 ```
 
 ## Required Layer Behavior
+
+The rule at every layer is the same: the `plain_english` field may say only as much as the weakest resolved layer permits. The examples below show the required behavior when each layer is the blocker.
 
 ### Corpus Layer
 

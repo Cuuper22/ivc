@@ -4,11 +4,11 @@ Date: 2026-05-24
 
 ## Purpose
 
-The phrase "as accurate as Ancient Egyptian translations" cannot mean "pretend IVC has a Rosetta Stone." It means using known deciphered systems to estimate what can and cannot be recovered under Indus-like scarcity.
+A comparator benchmark takes a script we can already read and asks: if we degrade its evidence until it looks like the Indus corpus, how much can our methods still recover? The phrase "as accurate as Ancient Egyptian translations" cannot mean "pretend IVC has a Rosetta Stone." It means using known deciphered systems to estimate what can and cannot be recovered under Indus-like scarcity.
 
 ## Benchmark Principle
 
-Use scripts/languages we can already read, then blindfold ourselves until the conditions resemble IVC:
+The principle: use scripts and languages we can already read, then blindfold ourselves until the conditions resemble IVC:
 
 - No bilingual key.
 - Very short inscriptions.

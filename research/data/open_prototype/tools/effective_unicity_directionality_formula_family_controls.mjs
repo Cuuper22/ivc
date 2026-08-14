@@ -1,3 +1,25 @@
+// Formula-family controls for the directionality candidate.
+//
+// A formula family is a cluster of near-copy inscriptions — the same seal
+// text with one sign swapped, or many seals cut under one workshop
+// convention. If the corpus is mostly such families, the stored-vs-reversed
+// order asymmetry could be a copying artifact rather than sequence
+// structure. This script reads the clean numeric rows from
+// lipi_scope_rows.csv and rescores the leave-block-out bigram test after
+// collapsing families three ways: exact-text collapse, a one-edit collapse
+// (rows joined by a one-substitution or one-deletion signature after
+// removing the top-10 edge tokens), and a source-convention collapse that
+// keeps one representative per site|type|material|symbol|cult|direction key.
+// Ten scopes x three holdout policies are each tested against six shuffle
+// nulls (200 iterations by default; --iterations=N overrides); nulls that
+// exactly preserve the observed score are flagged degenerate and dropped
+// from the admissible maximum. The summary embeds explicit fail gates (for
+// example, stored-win share below 0.70 after the harshest collapse is
+// fatal). Outputs: a JSON summary, per-cell CSV, family-membership CSV, and
+// null summary/iteration CSVs in data/open_prototype/reports/. Survival
+// narrows the formula-family objection; it proves nothing about reading
+// direction, sign identity, or language.
+
 import fs from 'fs';
 import path from 'path';
 

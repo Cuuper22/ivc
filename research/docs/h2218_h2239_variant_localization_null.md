@@ -2,6 +2,8 @@
 
 Date: 2026-05-25
 
+This note runs a null test — an exact chance calculation — on where the two variant tablets sit inside the 22-object series. The question behind it: are the variants spread out the way real sign-function evidence should be, or are they bunched in one corner of the batch, where a workshop quirk would put them?
+
 ## Question
 
 Are the two singleton H-series variants distributed like broad sign-function evidence, or are they localized in the same manufacturing/template/figure stratum?
@@ -35,7 +37,7 @@ unordered pair nulls: 231
 accepted decipherment claims: 0
 ```
 
-Exact pair-localization checks:
+Exact pair-localization checks. Each test names a property the actual `H-2237`/`H-2238` pair has, counts how many of the 231 possible pairs among the 22 tablets share it ("Null hits"), and reports that fraction as the exact probability that a random pair would land the same way.
 
 | Test | Null hits | Total pairs | Exact probability |
 | --- | ---: | ---: | ---: |

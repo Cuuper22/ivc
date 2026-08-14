@@ -4,6 +4,10 @@ Date: 2026-05-26
 
 ## Question
 
+This note records a short check with a useful negative answer. It exists because several sign catalogs number their signs, the numbers look interchangeable, and they are not.
+
+Terms first. "Mayig" is one independent sign catalog; its primary ids are `P###` "features," and each feature record also lists the equivalent codes in other catalogs — Parpola `V###`, Wells `W###`, Mahadevan `M###`. "Namespace" means one such numbering scheme. Local Lipi codes are bare numbers like `110`, `112`. Parpola 2019 is a published paper that cites signs by its own article number, as "sign no. 41" — yet another namespace. A "probe" is an exploratory pass, not accepted evidence. H-numbers are Harappa artifacts.
+
 Does the Mayig feature namespace tell us what "Parpola sign no. 41" is?
 
 ## Result
@@ -38,7 +42,7 @@ local 041 != Mayig P041
 
 ## Crosswalk Pressure
 
-The local overlap machinery agrees with the danger:
+A "crosswalk" is a mapping between two catalogs' sign codes; "pressure" is weak evidence that nudges toward one mapping without settling it. The local overlap machinery — which compares catalogs position by position on inscriptions they share — agrees with the danger:
 
 | Candidate | Status | Evidence |
 | --- | --- | --- |
@@ -51,7 +55,7 @@ There is no current clean overlap candidate confirming local `110` through Mayig
 
 Parpola 2019 line 104 describes sign no. 41 as "a [kneeling] man holding a pot" in the H-940/H-2147/H-2148 reverse cluster.
 
-That article-specific clue remains alive:
+That article-specific clue remains alive — still a live line of inquiry, not accepted:
 
 ```text
 H-2148 reverse sign no. 41
@@ -69,7 +73,7 @@ Accepted:
 - Mayig `P041` maps to `V141/W112/M034`.
 - Mayig's `V041` maps to `P301`, not `P041`.
 - Current overlap only gives very-low local `112` <-> Mayig `P041` pressure.
-- H-2148 stays `strong_same_role_inference`.
+- H-2148 stays `strong_same_role_inference`: the sides line up by the role they play, which is not the same as the signs being identified.
 
 Not accepted:
 

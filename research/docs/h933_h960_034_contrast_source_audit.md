@@ -4,7 +4,7 @@ Date: 2026-05-24
 
 ## Purpose
 
-This follows the [Lipi short-mark source acquisition queue](lipi_short_mark_source_acquisition_queue.md).
+This note checks whether public sources can settle two objects, H-933 and H-960, that are the required contrast cases for a pattern the project is testing about the signs `033` and `034`. It exists so the pattern is tested against its own counter-examples rather than only its supporting rows. It follows the [Lipi short-mark source acquisition queue](lipi_short_mark_source_acquisition_queue.md).
 
 Question:
 
@@ -23,7 +23,7 @@ data/open_prototype/reports/h933_h960_034_contrast_source_summary.json
 
 ## Packet Context
 
-H-933 and H-960 are the two `034` contrast objects in the 17-object short-mark packet.
+H-933 and H-960 are the two `034` contrast objects in the 17-object short-mark packet — the bundled list of objects whose source images the project is trying to obtain in one batch.
 
 ```text
 H-933: TAB:I, 1:+034-700+|2:+400-740-176+

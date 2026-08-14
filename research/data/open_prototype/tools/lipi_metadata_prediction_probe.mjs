@@ -1,3 +1,28 @@
+// Can the sign sequence on an object predict that object's metadata — its
+// type, site, region, material, completeness, writing direction, or class?
+// If real inscriptions predict metadata better than plausible fakes do, the
+// sequences carry information tied to context, which is worth knowing even
+// before anyone can read them.
+//
+// The script reads lipi_scope_rows.csv, keeps rows in the
+// 'lipi_numeric_clean_candidate' readiness bucket, and collapses exact
+// duplicate sequences into families (majority-voting their labels). For each
+// metadata target with at least 40 labeled rows per class, it runs four
+// leave-one-out classifiers of increasing strength: majority label, sequence
+// length, first/last-sign "edge frame", and a token naive Bayes.
+//
+// It then builds four synthetic control corpora — position-sampled slots, a
+// fake "administrative register" code, a fake "emblem formula" code, and a
+// mixed admin/emblem code — each matched to the observed lengths and token
+// pools, and scores the same classifiers on them (5 seeded iterations per
+// control by default; override with IVC_METADATA_ITERATIONS). Comparing
+// observed accuracy against these null distributions shows whether the real
+// corpus beats sequences that merely look statistically similar.
+//
+// Outputs: lipi_metadata_prediction_iterations.csv (every run),
+// lipi_metadata_prediction_summary.csv and .json (observed vs. null spread).
+// Prediction here never assigns meanings, sign values, or translations.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

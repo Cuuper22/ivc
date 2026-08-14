@@ -1,3 +1,16 @@
+// Final bridge retest (2026-05-29) for the cuneiform context leads that
+// survived the matched-negative gate as "candidate_only". For each surviving
+// query, grouped by the cuneiform site it appears at, this script asks: does
+// any external Indus object at the same site (or anywhere in Mesopotamia, the
+// Gulf, or the Iranian Plateau) carry a sign sequence with the same length and
+// repeat pattern as the query's units? It reads the matched-negative summary
+// and artifact CSVs plus external_indus_objects.csv, counts strict pattern
+// matches per site, and records that no object-level bridge (accession,
+// publication, title, or person link) exists for any row — so every row is
+// "rejected_no_object_level_bridge". The pattern-only forger share is 1.0 by
+// construction: any synthetic query with the same pattern matches just as
+// well. Writes context_lead_external_bridge_retest.csv and a JSON summary
+// with zero accepted anchors.
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';

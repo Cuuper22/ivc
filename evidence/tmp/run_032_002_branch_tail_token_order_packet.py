@@ -1,3 +1,16 @@
+"""Record token-order verdicts for four branch-tail seals as boxed overlays.
+
+The question these overlays answer: on the actual seal image, does the sign
+after 002 (861, 390, or 300) really continue into a tail on the same line,
+in the catalog's right-to-left reading order? The ROWS table holds the human
+judgments for M-49, M-240, M-91, and M-70 — each with hand-drawn pixel boxes
+marking the 032/002 transition, the Y sign, and the tail window, plus an
+order verdict (all four pass), a confidence level, and an interpretive note.
+The script draws the color-coded overlay PNGs, stacks them into a contact
+sheet, and writes the verdicts CSV and boxes CSV that later packets cite as
+the source-visible token-order evidence.
+"""
+
 from __future__ import annotations
 
 import csv

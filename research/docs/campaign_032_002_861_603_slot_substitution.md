@@ -2,9 +2,11 @@
 
 Date: 2026-05-29
 
+This note tries to destroy the `603` bridge and only half succeeds. The bridge claim is that `603` matters because it appears in two unrelated settings. The obvious objection: at Harappa it merely fills a slot in a fixed tablet formula, and other signs fill that same slot, so `603` is nothing special. This note checks the other slot-fillers. Neither of them shows up after `002-861`, so the objection does not land — but a second objection, that the Harappa side is one copied formula, is still standing.
+
 ## Question
 
-The strongest falsifier for `603` mobility is the Harappa tablet formula:
+The strongest falsifier — the finding that would kill the claim — for `603` mobility is the Harappa tablet formula, where `X` marks the position that varies:
 
 ```text
 740-X-240-060-692
@@ -22,7 +24,7 @@ data/open_prototype/reports/campaign_032_002_861_603_slot_substitution_matrix.cs
 data/open_prototype/reports/campaign_032_002_861_603_slot_substitution_summary.json
 ```
 
-Input layer:
+Input layer. "Strict" rows have complete readings rather than partly reconstructed ones; "dedup" collapses near-duplicate rows so one object cannot be counted twice:
 
 ```text
 strict complete source strings, cisi/site/type/symbol/text dedup: 4011 rows
@@ -31,6 +33,8 @@ post-002-861 rows: 144
 ```
 
 ## Slot Matrix
+
+A "formula family" is a group of rows with identical text, weighed as one piece of evidence; a "register cell" is one coarse class of object by site, type, and shape; "tail-initial" means the sign appears first in the material following `002-861`.
 
 | `X` in `740-X-240-060-692` | slot rows | exact slot formula families | slot register cells | post-`002-861` tail-initial rows |
 |---|---:|---:|---:|---:|
@@ -87,6 +91,8 @@ the 603 slot side has one exact text family
 the 636 and 642 slot rows also form exact formula families
 the Harappa side is not source-normalized yet
 ```
+
+"Source-normalized" means the rows have been rescored by what can actually be seen on published photographs, rather than trusted from catalogue transcriptions.
 
 ## Decision
 

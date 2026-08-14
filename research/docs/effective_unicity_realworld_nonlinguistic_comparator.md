@@ -2,9 +2,15 @@
 
 Date: 2026-05-29
 
+## What This Note Is
+
+This note tests our main structural instrument against real symbol systems that are known not to be writing. A comparator is a control corpus scored with the exact same instrument as the Indus data. Earlier comparators were synthetic — programs we wrote to fake structure. These are real: Pictish stones, kudurru deity symbols, totem poles, barn stars, Vinca symbols, weather icons. That matters, because a fake we designed is easier to dismiss than a genuine non-writing system that scores as well as our corpus.
+
+The instrument is the masked-symbol test: hide one symbol at a time and ask a model to guess it from its neighbours. Top-1 is the share guessed exactly right; top-5 is the share where the right answer is in the first five guesses. "Max null >= observed" is the worst case across null runs — the same test on deliberately scrambled data — giving the fraction that matched or beat the real score.
+
 ## Result
 
-The real-world comparator weakens the tempting Vector 2 overclaim. The Indus strict exact-collapsed masked top-1 score is not by itself language evidence, because two real-world nonlinguistic or ambiguous symbol corpora meet or exceed it under the same masked-symbol instrument.
+The real-world comparator weakens the tempting Vector 2 overclaim. The Indus strict exact-collapsed masked top-1 score — "exact-collapsed" meaning strict dedup, where only byte-identical inscriptions are merged — is not by itself language evidence, because two real-world nonlinguistic or ambiguous symbol corpora meet or exceed it under the same masked-symbol instrument.
 
 This does not erase the structural result. It sharpens it: the Indus working corpus has local context constraint beyond the earlier synthetic controls, but local predictability is also present in some non-writing or undeciphered emblematic systems. The surviving result is therefore an instrument and a boundary, not a decipherment.
 
@@ -46,7 +52,7 @@ Pictish stones and barn stars exceed the Indus masked top-1 reference. Weather i
 
 Retracted interpretation: masked-sign top-1 predictability, even when it beats simple synthetic controls, is language evidence.
 
-Surviving interpretation: the exact-collapsed Indus working corpus has measurable local context constraint, but the constraint is not specific to writing. Any language-family, phonetic, or sign-meaning claim still needs an external anchor or a stronger discriminator.
+Surviving interpretation: the exact-collapsed Indus working corpus has measurable local context constraint, but the constraint is not specific to writing. Any language-family, phonetic, or sign-meaning claim still needs an external anchor — an independent source that fixes what at least one sign stands for — or a stronger discriminator.
 
 No accepted claim count changes follow from this comparator.
 

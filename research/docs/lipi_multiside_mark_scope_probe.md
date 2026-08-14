@@ -4,7 +4,7 @@ Date: 2026-05-24
 
 ## Purpose
 
-This probe begins the numerical/metrological route in a safer way. Instead of guessing which signs are numerals from sign IDs, it asks whether the filtered `lipi` planning layer contains multi-side artifacts with short side marks that can become a review queue.
+This note starts the search for possible number or measure signs, but from the safe end. `lipi` is the project's filtered working corpus of Indus sign sequences; calling it a planning layer means it is unverified working data, good for deciding where to look and never usable as proof. Instead of guessing which signs are numerals from sign IDs, this probe asks whether that layer contains multi-side artifacts with short side marks that can become a review queue — a list of specific rows for a human to check against images.
 
 It does not assign numerical values. It does not identify metrological signs. It does not translate. It only separates short side-mark candidates from longer text rows and reports enrichment patterns that need manual image/source validation.
 
@@ -152,7 +152,7 @@ The result does not support:
 
 ## Consequence
 
-This is now the better E3.2 path than broad dimension-bin prediction.
+This is now the better E3.2 path — E3.2 being the project's identifier for the numerical/metrological work package — than broad dimension-bin prediction.
 
 The next numerical/metrological work should:
 

@@ -2,9 +2,9 @@
 
 Date: 2026-05-30
 
-This audits the strongest Priority A object-level route surfaced by the Meluhha context-lead work: British Museum `120573`, registration `1928,1009.56`, excavation number `U.7683`.
+This note audits the strongest Priority A object-level route the Meluhha context-lead work has surfaced: British Museum `120573`, registration `1928,1009.56`, excavation number `U.7683`. An object bridge would be a single physical object that carries both a readable cuneiform text and an Indus sign sequence — the kind of thing that could anchor a sign value.
 
-It is a real object-level cuneiform route. It is not an accepted external Indus phonetic anchor.
+To be clear up front: this is a real object-level cuneiform route. It is not an accepted external Indus phonetic anchor.
 
 ## Source Facts
 
@@ -56,7 +56,7 @@ Reasons:
 
 ## Decision
 
-BM `120573` is important, but it is not the desired external phonetic anchor in the current evidence state.
+BM `120573` matters, but in the current evidence state it is not the external phonetic anchor we were hoping for.
 
 What it earns:
 

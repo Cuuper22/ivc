@@ -1,3 +1,17 @@
+"""Attach source status and admissibility to the branch-tail evidence rows.
+
+A metadata row only becomes usable evidence when we know where its image is
+and how far its source route has been checked. This script joins the tail
+family instances against three source-tracking CSVs — the source-route probe,
+the current source-function table, and the token-box scaffold — and stamps
+each selected row with a source status and an admissibility class (from
+source_boxed_candidate down to blocked_until_object_id_resolved). It selects
+two packets: the six decisive adjacent rows (DECISIVE_CISI) and the rows
+belonging to six named Y-to-tail families such as 861-603 and 390-125.
+Writes a decisive-rows CSV, a family-rows CSV, and a JSON summary counting
+admissibility per packet.
+"""
+
 import csv
 import json
 from collections import Counter

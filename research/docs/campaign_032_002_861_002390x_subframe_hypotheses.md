@@ -2,9 +2,11 @@
 
 Date: 2026-05-29
 
+This note lists and ranks the live explanations for one observation. In our data the sign pair `002-390` is often followed by another sign, and `125` is the most common one. The note asks what that could mean, sets out four rival hypotheses, and says what would kill or promote each. It settles nothing; it exists so the next batch of work has a target list.
+
 ## Question
 
-Inside the `002-390-X` branch, is `125` behaving like a structural continuation choice, a subframe opener, or a source/register mirage?
+Inside the `002-390-X` branch, is `125` behaving like a structural continuation choice, a "subframe" opener (a smaller recurring pattern nested inside the larger one), or a source/register mirage — an artifact of which objects happen to have inspectable photographs and of the narrow class of seals they come from?
 
 ## Result
 
@@ -15,9 +17,11 @@ The new linguistic object is not `125` alone. It is the internal contrast among 
 - `235->002-390->125`: `2/2` local rows with previous sign `235` choose `125`.
 - `002-390-125-632-032`: `2` rows share the `125-632-032` continuation, both Mohenjo-daro square `SEAL:S` Bull1/SAN rows.
 
-These are real structural hypotheses, but both are source-weak. The source-visible non-`125` control remains `M-70 +226-032-002-390-692+`, so `125` cannot be treated as necessary after `002-390`.
+These are real structural hypotheses, but both are source-weak: the rows behind them cannot be checked against inspectable source photographs. A "control" is a row that shares part of the pattern and so lets us test whether `125` is required. The source-visible non-`125` control remains `M-70 +226-032-002-390-692+`, so `125` cannot be treated as necessary after `002-390`.
 
 ## Ranked Hypotheses
+
+Three terms recur below. A "formula/copy-family" accident is the rival explanation that the matching rows are copies of one stock phrase rather than evidence of productive structure. To "token-box" an object is to draw boxes around each sign on its photograph, so the sign count and order can be judged from the image alone. To "route" an object is to find a chain of pointers from our database row to a real published image of it. To "panel-bind" it is to locate the labeled object on a published plate, which is weaker than token-boxing.
 
 1. `prev-conditioned branch selection`: alive_source_weak. For: `235->002-390->125` occurs in 2/2 local rows; both are Mohenjo-daro seals and both continue after 125. Against: both rows are source-hint/context only, and two rows can be a formula/copy-family accident. Next: token-box M-38 and route M-735; then search source-visible `235-002-390-X` near-misses and non-125 controls.
 2. ``125-632-032` is a subframe after `002-390``: alive_but_source_gated. For: M-38 and M-119 share `002-390-125-632-032`; both are Mohenjo-daro square `SEAL:S` Bull1/SAN rows. Against: M-119 is Mayig-only here, M-38 is only a context crop, and M-119 has extra `900-563` after the shared material. Next: route M-119 and token-box M-38; compare against all `632-032` occurrences outside `002-390-125`.

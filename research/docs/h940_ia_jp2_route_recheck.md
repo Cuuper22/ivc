@@ -2,13 +2,15 @@
 
 Date: 2026-05-26
 
+This note records one attempt to get a sharper picture of a single object side, H-940 B, by fetching a different file format from the Internet Archive. It exists to close off that avenue in writing, so nobody spends another day chasing the same scan through a new download path.
+
 ## Question
 
-Does the Internet Archive JP2 derivative for CISI Pakistan page n374 improve H-940 B enough to change the local `110` / Parpola sign-no.-41 branch gate?
+Does the Internet Archive JP2 derivative for CISI Pakistan page n374 improve H-940 B enough to change the local `110` / Parpola sign-no.-41 branch gate? A branch is one open line of investigation; a gate is the checkpoint it must pass to advance.
 
 ## Source Route
 
-Checked IA archive-member route:
+A route is the exact path from a public archive to the image file. Checked IA archive-member route:
 
 ```text
 https://archive.org/download/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan/Corpus%20of%20Indus%20Seals%20and%20Inscriptions.%20Collections%20in%20Pakistan_jp2.zip/Corpus%20of%20Indus%20Seals%20and%20Inscriptions.%20Collections%20in%20Pakistan_jp2%2FCorpus%20of%20Indus%20Seals%20and%20Inscriptions.%20Collections%20in%20Pakistan_0374.jp2

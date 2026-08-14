@@ -2,6 +2,8 @@
 
 Date: 2026-05-25
 
+This note records a blind visual adjudication: several people looked at anonymized image crops, described what they saw without knowing the object labels or the transcription codes, and then a verdict was written down. It exists to check one narrow visual claim in the M-2104 count-compound branch — the hypothesis that certain tablet inscriptions pair a U/pot-shaped sign with a countable group of vertical strokes.
+
 Question:
 
 ```text
@@ -31,7 +33,7 @@ accepted decipherment claims: 0
 
 Consensus:
 
-`M-478 A` survives as the stronger public tablet-parallel witness. Three independent adjudicators saw a U/pot-like unit adjacent to a count-like group of four vertical strokes. The main caution is scan blur and possible stroke merging, but the four-stroke group is visible enough to carry the next gate.
+`M-478 A` survives as the stronger public tablet-parallel witness — an independent object whose image attests the pattern. Three independent adjudicators saw a U/pot-like unit adjacent to a count-like group of four vertical strokes. The main caution is scan blur and possible stroke merging, but the four-stroke group is visible enough to carry the next gate — the next decision checkpoint.
 
 `M-1425 A` also survives, but only provisionally. It appears to show the same broad arrangement, but the crop is blurrier and the stroke boundaries are less crisp. It is useful because it is an independent Pakistan-volume parallel, but it cannot carry the claim alone.
 
@@ -69,7 +71,7 @@ The live hypothesis advances one step, but only to a stricter test:
 2. Locate a raw source image for `M-2104`, because Parpola Fig. 1 is standardized.
 3. Only then compare the target cluster against the public four-stroke parallel pattern.
 
-Kill condition:
+Kill condition — the observation that would end this line outright:
 
 ```text
 If raw M-2104 does not show a discrete U/pot-like unit plus three vertical strokes in the corresponding position, the 700-034 side of this extraction fails even though M-478/M-1425 preserve the four-stroke parallel.

@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Is 125-820 a two-sign title word, or is it 125 (the title/continuation slot) plus 820
+// acting as a mere terminal cap? This script separates the two readings by looking at 820
+// on its own. It reads data/open_prototype/lipi/metadata_filtered.csv and collects three
+// row sets: every 820 occurrence with its neighbors and governed head (found by scanning
+// left for a 002 frame), every 125-820 pair, and every direct 002-H-820 frame where 820
+// fills the branch slot without 125. The key facts it records: 820 is terminal across many
+// unrelated contexts, not just after 125 — so 820 alone must not be glossed "title/rank",
+// and 125-820 survives only as a governed terminal-cap subtype at candidate-edge tier. The
+// named kill test is source-binding Sktd-1 and M-41: if either loses strict terminal
+// 125-820, the subtype collapses. Writes the three row sets and two bets as CSVs plus a
+// summary JSON in reports/.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

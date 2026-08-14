@@ -1,3 +1,17 @@
+// Lead miner over the frozen CDLI line-context export (2026-05-29): what
+// cuneiform words keep company with Meluhha, and which of them are worth
+// chasing? It works entirely on the cuneiform side — no Indus sign value is
+// claimed. Fourteen hand-seeded leads (the Shu-ilishu interpreter seal, the
+// Irisagrig ration group, ship/labor contexts, carnelian and copper commodity
+// formulae, patronymics like "dumu me-luh-ha", and so on) each carry
+// diagnostic, anchor, and control query strings; the script counts exact and
+// loose matches for every query across the deduplicated line contexts, on the
+// Meluhha line itself and on adjacent lines. It also auto-mines 1-to-3-token
+// n-grams from those contexts (minus stop tokens and Meluhha forms) and keeps
+// the top 80 by artifact spread. Each seed lead records its own predicted
+// failure mode up front. Writes leads, query-plan, and auto-token CSVs plus a
+// JSON summary; leads are query plans only until they survive matched-negative
+// searches.
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';

@@ -1,3 +1,18 @@
+"""Record the human attachment verdicts for six focus seals, with overlays.
+
+For six source-visible rows with tails after 002-861 (M-376, M-391, M-91,
+M-240, M-714, M-1273), a human has already drawn three pixel boxes on each
+seal crop — the whole sign line, the pre-tail window, and the tail candidate
+window — and judged whether the tail sits on the same line as the rest of the
+inscription. This script is the recorder: the boxes, verdicts, confidence
+levels, observations, and limits live in the ROWS table at the top. It draws
+color-coded overlay PNGs (purple line, green pre-tail, orange tail), stacks
+them into a contact sheet, hashes each source image with SHA-256 so the
+evidence is pinned to exact files, and writes the verdicts CSV and boxes CSV
+that downstream scripts treat as the attachment ground truth. Exact token
+boundaries, sign values, and translations are explicitly not accepted.
+"""
+
 from __future__ import annotations
 
 import csv

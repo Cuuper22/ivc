@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// A matched contrast is only as good as what the controls actually share with the target.
+// This script grades each 034 triad (one +700-034+ target plus its 033 and 032 control
+// tablets) by how tightly all three objects match. It reads the triad packet CSV and the
+// independent-triad audit CSV, intersects the feature-match lists of both controls, and
+// checks the shared set against three feature groups: object core (type, sides, site,
+// material, shape, cross-section), visual core (size and aspect bins), and context core
+// (context class, side relation, order). Matching all three earns grade A (strict local
+// minimal contrast); grades run down to F for weak matches. Each triad also gets a
+// repetition-pressure flag from the audit and a label for how the three long-side token
+// sets relate. Output is one graded CSV sorted by independence rank and a JSON summary.
+// This narrows which triads deserve source images; it makes no reading claims.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 

@@ -4,9 +4,9 @@ Date: 2026-05-25
 
 ## Question
 
-After the IA/CISI source checks and CISI label-convention probe, can any current `032/033/034` triad be treated as a source-normalized substitution test?
+This note asks whether any set of objects is yet clean enough to run the real linguistic test on. FRAME700 is the project's label for short inscription rows built on sign `700`, such as `+700-034+`. The test is a substitution test: whether the sign codes `032`, `033`, and `034` alternate in the same stable slot. Running it needs a triad — three objects, one per code — and a panel graph, meaning a map with one node per confirmed physical side of an object, built from the source catalog rather than from local metadata. The catalog is CISI, the Corpus of Indus Seals and Inscriptions, read here through Internet Archive (IA) scans. The question: after the IA/CISI source checks and CISI label-convention probe, can any current `032/033/034` triad be treated as a source-normalized substitution test?
 
-This is the next linguistic gate after the messy-panel reconciliation. It asks whether catalog rows can be promoted into source-panel nodes before claiming that `032`, `033`, and `034` alternate in a stable frame.
+This is the next linguistic gate — a checkpoint the evidence must pass before the next step is allowed — after the messy-panel reconciliation. It asks whether catalog rows can be promoted into source-panel nodes before claiming that `032`, `033`, and `034` alternate in a stable frame.
 
 ## Outputs
 
@@ -53,7 +53,7 @@ Triad admissibility:
 
 ## What The Graph Establishes
 
-`H-930` and `H-789` are clean calibration controls at the panel level:
+`H-930` and `H-789` are clean calibration controls at the panel level — known-clean examples that set the visual standard the harder objects must meet:
 
 | Object | Source panel mapping supported | Still not accepted |
 | --- | --- | --- |
@@ -78,7 +78,7 @@ This is not another vague source request. It is a direct substitution gate, and 
 No current FRAME700 `034/033/032` triad can be used as a source-normalized sign-function contrast.
 ```
 
-That does not kill the `034` residue. It kills the upgrade from distributional residue to source-normalized sign-function evidence under the current source state.
+That does not kill the `034` residue — the leftover pattern that has survived the controls run so far. It kills the upgrade from distributional residue to source-normalized sign-function evidence under the current source state.
 
 Research/adversarial critique agrees on the dangerous confounds:
 
@@ -90,7 +90,7 @@ So the next decisive experiment is a source-resolved cross-family substitution t
 The next source target is therefore precise:
 
 1. Get or inspect source panels for one full triad, not isolated objects.
-2. For the `H-771/H-789/H-1123` independent lane, resolve `H-771` A-photo selection and acquire `H-1123`.
+2. For the `H-771/H-789/H-1123` independent lane — a lane being one of the separate evidence tracks the project runs, kept apart so a result in one does not lean on the other — resolve `H-771` A-photo selection and acquire `H-1123`.
 3. For the `H-893/H-925/H-930` strict local lane, resolve `H-893 (1)` and `H-925 (1)/(2)` before using `H-930`.
 4. For the `H-910/H-916/H-1294` repeated-branch lane, close-read `H-910` and acquire `H-916/H-1294`, but keep repetition pressure marked.
 

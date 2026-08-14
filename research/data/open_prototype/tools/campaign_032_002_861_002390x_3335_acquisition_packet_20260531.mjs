@@ -1,3 +1,17 @@
+// Builds an acquisition packet for one inscription: Lipi row 3335.1, text
+// +740-205-032-002-390-590-032+. This row matters because, per the earlier
+// source-upgrade impact audit, binding it to a real object would unlock the
+// strict 032 matched-predecessor test in the 002-390 branch study. The problem
+// is that the row has no CISI object id, no site, and no excavation number —
+// it exists only in the quarantined local Lipi metadata. This script gathers
+// everything known about it: the target row itself, its provenance trail
+// through the crosswalk tables, every local row sharing its sign chunks (the
+// M-143 prefix family, the portable 390-590-032 tail family), the tried public
+// search queries (all negative), the concrete blockers, and the resulting
+// decisions. It writes seven CSVs plus a summary JSON under
+// data/open_prototype/reports/ so an external source hunt can pick up from
+// here. Nothing in the packet is evidence; 3335.1 stays out of strict proofs.
+
 import fs from "node:fs";
 import path from "node:path";
 

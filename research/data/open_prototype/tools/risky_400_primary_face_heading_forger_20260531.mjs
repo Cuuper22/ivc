@@ -1,3 +1,14 @@
+// Many bas-relief and incised tablets (types TAB:B and TAB:I) carry text on
+// several faces, recorded as row ids like `1234.1`, `1234.2` — the suffix is the
+// face number. The bet: sign `400` marks the primary heading face (face 1), not
+// just tablet inscriptions in general. The script reads metadata_filtered.csv,
+// keeps complete TAB:B/TAB:I rows with numbered faces, groups them by physical
+// object, and keeps multi-face objects where at least one face carries 400. It then
+// counts how often the 400-bearing faces are face 1. The null keeps each object's
+// face count and its number of 400-bearing faces fixed, and shuffles which faces
+// carry 400, 10,000 times — pricing both the total primary-face hits and the number
+// of objects where every 400 face is primary. Writes a witnesses CSV and a JSON
+// summary to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

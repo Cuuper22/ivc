@@ -1,6 +1,19 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// A holdout test that deliberately ignores 390. If the open-or-closed
+// behavior of a 002-390-X frame can be predicted from how the same X behaves
+// under every other head, then 390 contributes nothing of its own — it is a
+// host environment, and the X subtype carries the behavior. The script reads
+// lipi/metadata_filtered.csv, deduplicates by sign sequence, and collects all
+// 002-HEAD-X frames. For each 390 row it takes the non-390 rows sharing the
+// same X as training data, predicts open versus closed by majority vote, and
+// scores the prediction against what the 390 row actually does (ties and
+// uncovered X values are left blank rather than guessed). The claim
+// "survives_first_holdout" only if every covered row passes and at least 6
+// do. Writes the per-row holdout table and the decision as CSVs plus a
+// summary JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

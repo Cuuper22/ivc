@@ -4,16 +4,16 @@ Date: 2026-05-29
 
 ## Purpose
 
-This experiment asks whether the broad filtered `lipi` structural results can be reproduced by strong nonlinguistic synthetic controls.
+This note records a baseline stress test. It asks: can strong nonlinguistic synthetic controls — made-up datasets with no language behind them — reproduce the broad structural results we measured in the filtered `lipi` data? (`lipi` is the filtered catalog dataset this project computes from.)
 
-The control systems are intentionally hostile. They preserve the obvious confounds before asking whether the observed `lipi_numeric_clean_candidate` layer still has extra structure:
+The idea is to be our own toughest critic. Each control system deliberately preserves an obvious confound — a mundane property that could fake a "language-like" signal — and then we ask whether the observed `lipi_numeric_clean_candidate` layer still has extra structure beyond it:
 
 - Length-frequency shuffle: preserves row lengths and global numeric sign frequencies.
 - Edge-position shuffle: preserves row lengths, singleton signs, first-sign pool, last-sign pool, and interior-sign pool.
 - Edge-frame template shuffle: preserves each row length plus exact first and last signs; only interiors are shuffled.
 - Position-slot shuffle: preserves each row length and every length-position token multiset.
 
-This is a comparator scout, not a decipherment. It does not treat `lipi` as authoritative. It does not assume accepted reading order. It does not assign meanings, sign values, phonetics, language identity, or translations.
+This is a comparator scout — an exploratory comparison pass — not a decipherment. It does not treat `lipi` as authoritative. It does not assume accepted reading order. It does not assign meanings, sign values, phonetics, language identity, or translations.
 
 ## Local Artifacts
 
@@ -40,7 +40,7 @@ iterations_per_control = 20
 seed_base = 20260524
 ```
 
-The masked-sign evaluation uses exact duplicate collapse before scoring. It reports top-1 and top-5 accuracy for frequency, position, length-position, and bidirectional context.
+The masked-sign evaluation hides one sign at a time and tries to predict it. It uses exact duplicate collapse before scoring, so repeated inscriptions count once. It reports top-1 accuracy (right answer is the first guess) and top-5 accuracy (right answer is in the first five guesses) for four predictors: frequency, position, length-position, and bidirectional context (predicting from both neighbors).
 
 ## Observed Baseline
 
@@ -60,6 +60,8 @@ length_position_top1: 0.154652
 bidirectional_top1: 0.325865
 bidirectional_top5: 0.567828
 ```
+
+`stored_higher_share` measures stored-order asymmetry: how often the catalog's stored sign order scores higher than its reverse.
 
 ## Synthetic Null Results
 
@@ -87,7 +89,7 @@ The same controls do not reproduce bidirectional masked-sign prediction. The str
 | edge-frame template shuffle | 0.113770 | 0.127205 | 0.134435 | 0.126095 |
 | position-slot shuffle | 0.108443 | 0.146333 | 0.173527 | 0.144034 |
 
-The position-slot null beats the observed layer on length-position top-1. That is the expected warning label: simple positional predictability is not enough. The current residual worth testing is specifically contextual prediction after exact-duplicate collapse, edge removal, formula-family downweighting, and synthetic nonlinguistic controls.
+The position-slot null beats the observed layer on length-position top-1. That is the expected warning label: simple positional predictability is not enough. The current residual worth testing — the signal left over after everything mundane is stripped away — is specifically contextual prediction after exact-duplicate collapse, edge removal, formula-family downweighting, and synthetic nonlinguistic controls.
 
 ## Interpretation
 
@@ -116,7 +118,7 @@ It does not support:
 
 ## Limits
 
-- `lipi` remains a T3 planning source.
+- `lipi` remains a T3 planning source — an exploratory data layer, not accepted evidence.
 - The current run uses 20 deterministic iterations per control, enough for the simple-shuffle boundary but not a final benchmark.
 - The controls are statistical generators, not archaeologically realistic emblem or administrative systems.
 - No image-level validation is present.

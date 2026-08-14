@@ -4,9 +4,7 @@ Date: 2026-05-24
 
 ## Purpose
 
-This file records the first materialized corpus-audit result for the IVC translation research project.
-
-The result is intentionally modest: source shape, filtered fields, and artifact-ID overlap. It does not decode or translate anything.
+This file records the first materialized corpus-audit results for the IVC translation research project. It exists to pin down exactly what the earliest concrete work used and found — pinned repository commits, filter rules, row counts, and artifact-ID overlap — so later work has a fixed, checkable starting point. The results are intentionally modest: source shape, filtered fields, and artifact-ID overlap. Each section below names a frozen input or probe, lists the local artifact files it produced, and states the exact counts observed. Do not read any of this as decipherment: this file does not decode or translate anything, and a clean overlap or a strong order statistic is a fact about a dataset, not about meaning.
 
 ## Frozen Inputs
 

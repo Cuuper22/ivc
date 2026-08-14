@@ -1,3 +1,13 @@
+// Compares how sign `090` behaves at home versus abroad. Locally (inside the Indus
+// area), inscriptions containing 090 usually also contain `740`. On external
+// circular seals — objects found outside the Indus area, listed in
+// data/meluhha/external_indus_objects.csv — the bet is that 090 keeps its place but
+// the expected 740 is dropped, suggesting an abbreviated western register of the
+// same formula rather than a different reading. The script reads
+// metadata_filtered.csv, collapses duplicate sign sequences, splits 090-bearing rows
+// into local vs external-circular, and runs a one-sided Fisher test on
+// contains-740 rates between the two groups. Writes a JSON bet report and a
+// support-rows CSV (every 090 row with its has_740 flag) to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

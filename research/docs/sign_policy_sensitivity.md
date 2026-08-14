@@ -4,6 +4,10 @@ Date: 2026-05-24
 
 ## Purpose
 
+This note records a robustness check. Every structural result so far depends on a choice nobody has proved yet: which marks count as the same sign. This experiment asks how much the results move when that choice is changed.
+
+Terms first. A "sign-inventory policy" is one such choice, applied to the whole corpus. `lipi` and `mayig` are the two independent sign catalogs the project reads, with numeric and `P###` codes respectively; a "crosswalk" is a mapping between them. An "allograph" is one sign written in two visual forms, so an allograph decision "merges" two codes into one. The two signals under test are the order signal — whether inscriptions read better forwards than backwards — and masked-sign prediction, where one sign is hidden and a model must guess it from its neighbors.
+
 This experiment tests whether the structural signal survives different provisional sign-inventory policies.
 
 It is not a sign validation step. It asks a narrower question: if provisional crosswalk or allograph choices are applied, does the order/masked-sign signal collapse, stay stable, or change in suspicious ways?
@@ -54,6 +58,8 @@ tokens: 739
 One-to-one renaming is not meaningful by itself. It should not change structural behavior. The important changes are merges and splits, especially `817`/`861 -> P385`.
 
 ## Sequence Order Result
+
+"Reversed" and "shuffle" below are the controls: each inscription scored backwards, and scored after its signs are randomly reordered.
 
 | Policy | Vocab size | Distinct sequences | Rows >1 | Observed > reversed | Reversed > observed | Ties | Observed > shuffle mean |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |

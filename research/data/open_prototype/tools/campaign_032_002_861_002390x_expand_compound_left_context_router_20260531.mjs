@@ -1,6 +1,22 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// The sign directly left of a 002-390 frame does not reliably predict which
+// branch X gets selected — the same final sign can precede different
+// branches. This script tests whether widening the window to two signs (the
+// "left bigram") removes those collisions, making branch selection a
+// compound-left routing rule. It reads lipi/metadata_filtered.csv,
+// deduplicates by sign sequence, collects every 002-390-X frame with its left
+// bigram and a branch-shape label (rank-continue 125, one-complement 530,
+// formula payload 590-032, terminal selectors, other), and summarizes branch
+// diversity per final-left sign and per left bigram. If finals collide but
+// bigrams do not, the router bet earns "candidate_edge". Three narrower bets
+// ride along: 235 as a direct rank trigger while 032/004 need compound
+// disambiguation, 004 routed by its previous sign (220-004 closes via 095,
+// 390-004 continues via 125), and 032 routed likewise (226-032 to 692,
+// 205-032 to 590-032). Writes frames, both summaries, and bets as CSVs plus a
+// summary JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

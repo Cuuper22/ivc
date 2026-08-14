@@ -1,3 +1,15 @@
+// Follow-up to the penult-240 terminal-governor result: within inscriptions ending
+// `240-X`, does the choice of X=798 (over the rival closure 235) track a
+// copper-administrative context? The proposed context axis is the presence of signs
+// 407, 845, or 095 anywhere in the text, or copper material / TAB:C object type.
+// The script reads metadata_filtered.csv (complete rows only), collapses rows whose
+// second-to-last sign is 240 into exact text families, labels each family by
+// whether its final sign is 798, and Fisher-tests every context feature (site,
+// type, material, iconography values, and the 407/845/095 flags). A 5,000-iteration
+// null shuffles the 798 labels and takes the minimum Fisher p over all features
+// each time (max-stat), pricing the target feature against the whole search.
+// Support is tiny (5 positive rows), so the output is framed as a candidate to
+// attack. Writes a single JSON report to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

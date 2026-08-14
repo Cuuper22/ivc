@@ -1,3 +1,19 @@
+// Follow-up to lipi_multiside_mark_scope_probe.mjs. The corpus-wide short-mark
+// enrichment numbers could be driven by a few dominant site/type combinations,
+// so this probe reruns the same analysis inside two homogeneous strata:
+// Harappa TAB:B tablets and Harappa TAB:I tablets. If a sign is genuinely a
+// short-mark sign, its enrichment should survive within a single stratum.
+//
+// The script reads lipi_multiside_mark_rows.csv (the per-side detail written
+// by the scope probe), filters to each stratum, and recomputes per-sign
+// short-mark vs. long-text counts, smoothed enrichment ratios (signs need at
+// least 5 short-mark occurrences), side-index placement, binned dimensions,
+// and same-object short/long sign pairs (pairs kept at 3+ objects).
+//
+// Outputs: lipi_multiside_mark_stratified_token_counts.csv, _pair_counts.csv,
+// _side_index.csv, and _summary.json. Descriptive stratified counts only —
+// no sign values or readings are proposed.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

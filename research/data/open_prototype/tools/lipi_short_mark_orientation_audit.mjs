@@ -1,3 +1,22 @@
+// Orientation audit for two-sign short marks on Harappa TAB:B/TAB:I tablets.
+// Most of these marks pair sign 700 with a companion (032, 033, 034, or
+// others). If the pair were a fixed formula we would expect one order; if the
+// order flips freely, order carries no signal. This audit measures which.
+//
+// The script reads lipi_multiside_mark_rows.csv, keeps Harappa TAB:B/TAB:I
+// short-mark rows, classifies each as 700-first, 700-last, or non-700, and
+// tabulates the split per companion, per type, and per catalog side index.
+// Three exact test families check: (1) is each companion's 700-first/700-last
+// split consistent with a fair coin (two-sided binomial, companions with 5+
+// rows); (2) does orientation differ between TAB:I and TAB:B (Fisher exact,
+// core companions with 10+ rows); (3) does orientation differ between catalog
+// sides 1 and 2 within a type (Fisher exact). Bonferroni and BH corrections
+// apply across all tests.
+//
+// Outputs: lipi_short_mark_orientation_rows.csv, _companions.csv, _tests.csv,
+// and _summary.json. Finding: marks are strongly 700-first but reversed forms
+// exist, so orientation is a validation variable — not a value or reading.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

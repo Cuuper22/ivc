@@ -1,3 +1,14 @@
+"""External ecology census for signs 603, 636, and 642.
+
+This script reads the filtered corpus metadata (metadata_filtered.csv), keeps only
+clean strict rows — inscriptions bracketed by + with no damage markers and all
+three-digit sign tokens — and maps where 603, 636, and 642 occur across the whole
+corpus, outside the 032-002-861 frame as well as inside it. The point is ecology:
+before treating any of these signs as a meaningful tail choice, we need to know how
+each behaves everywhere else. It writes a rows CSV, a summary CSV, a summary JSON,
+and a docs/ markdown note. No sign value or reading is accepted.
+"""
+
 from __future__ import annotations
 
 import csv

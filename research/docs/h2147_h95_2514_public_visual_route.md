@@ -2,6 +2,14 @@
 
 Date: 2026-05-26
 
+## What This Note Is
+
+This note records the first time we could actually look at the tablet H-2147 in a published photograph, and what that did and did not settle.
+
+The project grades evidence for an object in steps. Route-only means we know where it was published but have not seen the image. Source-visible means we have inspected the published image itself. The step above that, source-grade side mapping, means we can say which physical side of the object corresponds to which row in our catalog — and this note does not reach it.
+
+The open question behind the effort is whether our local sign `110` is the same as Parpola's sign no. 41, Parpola's catalog being an external sign-numbering system.
+
 ## Question
 
 Does the Meadow/Kenoyer 1997 public PDF provide enough visual evidence to upgrade H-2147 from route-only to source-visible, and does that decide the Parpola sign no. 41 / local `110` question?
@@ -40,7 +48,7 @@ Correction from the later raw-page recrop:
 - The lower visible item 17 panel is not a clean single-sign panel.
 - It has at least a left vertical/U-like component plus a right branching/figure-like component.
 - The visual similarity to H-2148 comes from that right component only.
-- Therefore H-2147 is component-level pressure, not a panel-level `110` witness.
+- Therefore H-2147 is component-level pressure, not a panel-level `110` witness — a witness being one published record of an object that can be cited as evidence for what it shows.
 
 See [H-2147 / H-940 `110` recrop recheck](h2147_h940_110_recrop_recheck.md).
 
@@ -96,4 +104,4 @@ Ask Harappa/CISI/HARP source holders to reconcile:
 - Which visible panel is obverse/reverse.
 - Which visible panel corresponds to `673.1 ]110+` and `673.2 ]220-415+`.
 - Whether the right branching/figure-like component, rather than the whole panel, is the source basis for Parpola sign no. 41.
-- Whether the fragmentary signs are complete enough for any crosswalk use.
+- Whether the fragmentary signs are complete enough for any crosswalk use — a crosswalk being a verified mapping between two sign-numbering systems.

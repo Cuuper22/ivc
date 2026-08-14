@@ -8,7 +8,7 @@ Status: structural candidate, not decipherment
 
 Do the Indus signs `002` and `060` reduce final-slot uncertainty in a way that survives held-out prediction and adversarial nulls?
 
-This reframes effective unicity away from whole-inscription translation. The test asks whether a local part of the corpus behaves like a constrained sign-role system: a penultimate governor predicts its terminal closure better than frequency, site, duplicate texts, or major excavation blocks can explain.
+A terminal governor is a next-to-last sign that constrains which sign can close the inscription. This reframes effective unicity away from whole-inscription translation. Instead of asking "can we read the texts?", the test asks whether one local part of the corpus behaves like a constrained sign-role system: a penultimate governor predicts its terminal closure better than frequency, site, duplicate texts, or major excavation blocks can explain.
 
 ## Corpus Unit
 
@@ -24,7 +24,7 @@ For every exact text with at least two signs:
 
 ## Held-Out Prediction
 
-For each site, the model holds out all terminal text families attested at that site. It trains on terminal families not attested at that site and excludes exact texts that also occur in the holdout. For each held-out row, it uses the training distribution `P(final | penult)` if that penult has at least 5 training examples.
+Held-out prediction means the model must predict rows it never trained on. For each site, the model holds out all terminal text families attested at that site. It trains on terminal families not attested at that site and excludes exact texts that also occur in the holdout. For each held-out row, it uses the training distribution `P(final | penult)` if that penult has at least 5 training examples.
 
 Reported metrics:
 
@@ -35,7 +35,7 @@ Reported metrics:
 
 ## Null
 
-The null preserves:
+The null model is built to keep everything about the data except the one thing being claimed. It preserves:
 
 - terminal text families
 - penultimate signs
@@ -69,7 +69,7 @@ Final-label shuffle null:
 
 ## Block Stress
 
-The same test was rerun after removing major square-seal blocks:
+A result carried by one big block of similar objects would not be a corpus property. So the same test was rerun after removing major square-seal blocks:
 
 | Panel | Target rows | Top-3 | Effective candidates | Null p for top-3 |
 |---|---:|---:|---:|---:|
@@ -82,7 +82,7 @@ The 100-shuffle stress is a consolidation falsifier, not the final null. It is s
 
 ## Frequency Confound Check
 
-High-frequency non-target penults do not reproduce the target behavior:
+Maybe `002` and `060` look special only because they are common. They do not: high-frequency non-target penults fail to reproduce the target behavior:
 
 | Penult | Rows | Top-3 | Effective candidates |
 |---|---:|---:|---:|

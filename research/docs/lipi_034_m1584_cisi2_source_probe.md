@@ -2,6 +2,8 @@
 
 Date: 2026-05-25
 
+This note records a source probe: a targeted search of a published corpus for an image of one object. The object is `M-1584`, whose local transcription row is the single sign `+034+` (the `+` marks mean the row is bounded — nothing before or after; `034` is a local numeric sign label, a transcription code, not a reading). Before this probe, M-1584 was public-dark: no public source image of it had been located. CISI is the Corpus of Indus Seals and Inscriptions, the standard photographic corpus.
+
 Question:
 
 ```text
@@ -103,7 +105,7 @@ LF?
 D&K, p. 567-N5
 ```
 
-This confirms a source-row route but should not be overcoded. The local `lipi` row has no excavation ID, so the source-data row is a reconciliation target rather than a solved bridge.
+This confirms a source-row route, but do not read more fields into it than the blur allows. The local `lipi` row has no excavation ID, so the source-data row is a reconciliation target rather than a solved bridge.
 
 ## Single-Sign Contrast
 
@@ -130,9 +132,11 @@ Exact bounded singleton controls:
 002: 12 exact bounded rows
 ```
 
-M-1584 is one of two Lower Indus exact `+034+` rows, the other being `Ns-72` at Nausharo. Most exact `+034+` rows are pottery/clay and `NR/NU`, so the immediate pressure is potmark/graffiti behavior, not line-text syntax.
+M-1584 is one of two Lower Indus exact `+034+` rows, the other being `Ns-72` at Nausharo. Most exact `+034+` rows are pottery/clay and `NR/NU`, so the immediate pressure is potmark/graffiti behavior — isolated marks scratched on pots — not line-text syntax.
 
 ## Adjudication
+
+Adjudication is the explicit sort of what this probe earned into accepted and rejected/quarantined claims.
 
 Accepted:
 

@@ -1,3 +1,14 @@
+// A "risky bet" probe (2026-05-31, wild-shot tier): does the surviving 002-390
+// branch-selector frame have a "ra"-like bridge into Brahmi? The idea being
+// tested is that sign 390 (the frame head) and the branch signs 125/530/590
+// (open-continue) and 095/692/705/707 (close-terminal) might show consistent
+// pressure toward the Brahmi letter "ra". The script reads the v3 impostor-forger
+// CSV, keeps only these eight signs, tags each row with its branch role and
+// whether its modal Brahmi label is "ra", and checks whether any row clears both
+// the impostor null and the original shape null at 0.01. It writes a JSON bet
+// record, a one-row summary CSV, and a per-probe CSV, all prefixed
+// risky_002390_brahmi_ra_bridge_probe_20260531. The recorded outcome: no row
+// passes both thresholds, so the ra bridge stays non-evidential.
 import fs from 'node:fs';
 import path from 'node:path';
 

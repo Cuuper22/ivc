@@ -4,7 +4,9 @@ Date: 2026-05-29
 
 ## Purpose
 
-The public route probe produced four route-probe targets selected for a failed attempted source-normalization gate: `H-654`, `M-1310`, `M-1320`, and `M-811`. This packet tested whether those routed source panels remained cleanly boxable after removing route overlays and mixing them with real source controls.
+This note reports a blind review packet from the effective-unicity directionality campaign — the workstream that checks whether our seal images and sign counts hold up before any reading-direction claim is made. A packet is a bundle of image crops sent to reviewers who cannot see the catalog answers; "blind" means exactly that.
+
+The earlier public route probe produced four route-probe targets selected for a failed attempted source-normalization gate: `H-654`, `M-1310`, `M-1320`, and `M-811`. A source-normalization gate is a pass/fail checkpoint asking whether our crops and token counts faithfully match the physical source images. This packet tested whether those routed source panels remained cleanly boxable — meaning each visible sign can be enclosed in an unambiguous box — after removing route overlays and mixing them with real source controls.
 
 This is a source-normalization gate only. It does not validate physical reading direction, token order, sign identity, sign meaning, language family, phonetic value, or translation.
 
@@ -32,13 +34,13 @@ Targets:
 | `M-1320` | `+527-555-231-240-798+` |
 | `M-811` | `+226-032-803+` |
 
-Scoring negatives: `H-665`, `M-1273`, `M-1458`, `M-1523`, `M-376`, `M-381`, `M-525`.
+Scoring negatives — control seals mixed in to measure false alarms — were `H-665`, `M-1273`, `M-1458`, `M-1523`, `M-376`, `M-381`, `M-525`.
 
-Quarantine negative: `H-152`.
+Quarantine negative: `H-152`. A quarantined control is packaged but held out of scoring.
 
 ## Forger Boundary
 
-The forger target was stricter than this packet achieved: 12 unique real controls were planned, with a promotion floor of 10. The packet packaged seven unique real controls, and after the `D006/M-525` label leak only six unique controls were effectively scorable. It was underpowered for promotion before review began. It can still expose leakage, overcounting, and false-positive behavior.
+The forger is the adversarial standard a packet must survive — the bar set as if a hostile skeptic designed the test. The forger target was stricter than this packet achieved: 12 unique real controls were planned, with a promotion floor of 10 (promotion means the targets advance to the next evidence tier). The packet packaged seven unique real controls, and after the `D006/M-525` label leak — a printed annotation visible in the crop that gives away the seal's identity — only six unique controls were effectively scorable. It was underpowered for promotion before review began. It can still expose leakage, overcounting, and false-positive behavior.
 
 Promotion thresholds before review:
 
@@ -55,7 +57,7 @@ Promotion thresholds before review:
 
 Two blind reviews were scored.
 
-Denominator accounting is deliberately explicit: the packet contained seven unique scoring-negative CISI controls, but `D006/M-525` leaked a printed side annotation and is not scorable. The effective unique real-negative denominator after label exclusion is six. Yes-only denominators were 3 for `blind_review_a` and 4 for `blind_review_b`; conservative denominators were 6 for each reviewer.
+Denominator accounting is deliberately explicit. The denominator is the count of negatives a false-positive rate (FPR) is measured against. The packet contained seven unique scoring-negative CISI controls, but `D006/M-525` leaked a printed side annotation and is not scorable. The effective unique real-negative denominator after label exclusion is six. Yes-only denominators were 3 for `blind_review_a` and 4 for `blind_review_b`; conservative denominators were 6 for each reviewer.
 
 | Reviewer | Target pass | Target fail | Target uncertain | True negatives | Hard false positives | Uncertain negative hits | Label-leak negatives excluded | Yes-only FPR | Conservative FPR |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |

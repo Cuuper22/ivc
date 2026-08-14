@@ -2,6 +2,8 @@
 
 Date: 2026-05-26
 
+This note is a probe — a quick, bounded check — using one object as a mirror of another. `H-938 B` carries two signs in one order; `H-910 B` carries the same two signs in the opposite order. Comparing them tells you which drawn shape belongs to which sign code, because the shapes should swap sides if the codes do. That is a stronger test than looking at either object alone.
+
 ## Question
 
 Does the source-visible `H-910 B` side:
@@ -60,7 +62,7 @@ The local row is:
 +700-034+
 ```
 
-Under the local `R/L` assumption, the first token maps to the rightmost visible component. That gives:
+Under the local `R/L` assumption — the corpus field recording that the inscription is read right-to-left — the first token maps to the rightmost visible component. That gives:
 
 | Object | Local row | Visible component assignment under `R/L` |
 | --- | --- | --- |
@@ -102,7 +104,7 @@ translation
 
 ## Next Research Move
 
-The next useful witness is not another broad `034` scrape. It is a source-visible object that can test one of these two possibilities:
+The next useful witness — a single source panel offered as evidence — is not another broad `034` scrape. It is a source-visible object that can test one of these two possibilities:
 
 1. The local `R/L` mapping is correct, in which case `034` is probably not the vertical `415`-like component in FRAME700 companion sides.
 2. The local direction/order mapping fails for these panels, in which case the sign equation is unresolved until source transcription notes decide the side/order convention.

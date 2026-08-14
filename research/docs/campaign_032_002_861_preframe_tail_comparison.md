@@ -2,11 +2,13 @@
 
 Date: 2026-05-29
 
+This note tests one more possible explanation and rules it out on sample size. If what follows `002-861` were selected by what comes before it, we would see the same preceding signs pulling the same endings. This pass tabulates the preceding one and two signs for the relevant rows. Almost every combination occurs exactly once, which means the table cannot decide anything either way. The honest conclusion is that this line of attack is exhausted and the campaign should widen.
+
 ## Question
 
-Since source layout did not uniquely separate `533-717`, this campaign asks whether the immediately preceding frame before `002-861` explains the tail split.
+Since source layout did not uniquely separate `533-717`, this campaign asks whether the immediately preceding frame before `002-861` — the "preframe" — explains the tail split.
 
-Focus frames from the seven-row same-register set:
+Focus frames from the seven-row same-register set, "same-register" meaning drawn from one coarse class of object by site, type, and shape:
 
 ```text
 100-176 -> 533-717
@@ -81,7 +83,7 @@ It does not yet have a demonstrated selector, value, or layout function.
 
 ## Next Campaign
 
-The next productive unit should be broader than `533-717`:
+The next productive unit should be broader than `533-717`. "Ecology" below means the study of which endings occur, how often, and in what company:
 
 ```text
 post-861 tail ecology:

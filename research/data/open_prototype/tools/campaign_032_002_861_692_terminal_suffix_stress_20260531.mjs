@@ -1,3 +1,13 @@
+// Stress test for sign 692, which looks like a hard terminal closer under 002-390 — but is
+// that its own property, or borrowed from the very common 060-692 suffix? We read the
+// filtered Indus inscription list (lipi/metadata_filtered.csv), keep one copy of each
+// distinct sign sequence, and index every sign occurrence with its neighbors. For 692 we
+// split occurrences into three families — the single 002-390-692 frame, the dominant 060-692
+// suffix, and everything else — and compare 692's terminal share against every sign with a
+// similar occurrence count (within +/-20). Three named bets get scored: hard terminal
+// selector, portable 060-692 suffix, and the null that 692's terminality is accidental.
+// Outputs: occurrence, baseline, family, and decision CSVs plus a JSON summary in
+// data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

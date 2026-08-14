@@ -1,3 +1,18 @@
+"""Map what follows 240 inside the X-before-240 frames.
+
+If 740-X-240 is a real frame, what comes after the 240 matters: a recurring
+continuation like 240-060-692 would be an internal subframe, and the signs
+allowed in the X slot before it would form a slot family. This script scans
+the strict corpus for every X-before-240 occurrence (prefixes 740, 690, 000)
+and records the first one, two, and three signs after 240. It then summarizes
+the field two ways — by after-240 subframe (which X signs feed it) and by X
+sign (which subframes it reaches). The recorded decision: 240-060-692 is a
+compact subframe that in this strict layer contains only 603, 636, and 642,
+which makes the slot-family contrast count-supported without making any X
+readable. Writes rows and two summary CSVs, a JSON payload, and a Markdown
+report in docs/.
+"""
+
 from __future__ import annotations
 
 import csv

@@ -2,6 +2,8 @@
 
 Date: 2026-05-25
 
+This note exists to stop us over-counting our own evidence. The M-2104 count-compound hypothesis asks whether the sign pairs `700-034` and `700-004` differ as written counts (with `034` on the three-stroke side and `004` on the four side); the numbers are local numeric sign labels — transcription codes, not readings. The `+400-097-700-004+` comparator side is the set of objects carrying the `004` version. An evidence unit is a group of objects that must be counted once because they are not independent of each other — duplicates, mould-siblings, or one plate family.
+
 Question:
 
 ```text
@@ -10,7 +12,7 @@ How many independent evidence units does the +400-097-700-004 comparator side ac
 
 ## Result
 
-The `004` side is source-visible, but the naive count of four rows is wrong.
+The `004` side is source-visible — its objects can be seen on public source pages — but the naive count of four rows is wrong.
 
 ```text
 Naive rows:       M-478, M-479, M-480, M-1425 = 4
@@ -91,7 +93,7 @@ Rejected or quarantined:
 
 ## Next Gate
 
-The next actual test is a blinded segmentation/weighting pass with this unit policy:
+A gate is a decision checkpoint the evidence must pass before the hypothesis moves forward. The next actual test is a blinded segmentation/weighting pass — reviewers segment the sign strokes without seeing the object labels — with this unit policy:
 
 ```text
 EU_004_INDIA_478_479_480 = 1 family-level unit

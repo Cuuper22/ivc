@@ -1,3 +1,13 @@
+// Builds a source-stability matrix for the dual-head branch-table bet: the
+// claim that heads 861 and 390 each govern a table of branches after sign
+// 002. This script does no statistics. It reads the heads CSV produced by the
+// earlier risky_002_dual_head_branch_tables run, keeps only branches attested
+// more than once in exact text, and stamps each with a hand-curated source
+// status (source-visible pressure, partial strict pressure, or still gated on
+// catalog images) plus the concrete action that would promote or kill it.
+// The point: promotion of the dual-head bet must wait until the repeated
+// branches survive source-normalized review, and this matrix names the exact
+// gates. Writes a JSON report and two CSVs (bet summary, per-branch matrix).
 import fs from 'node:fs';
 import path from 'node:path';
 

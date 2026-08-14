@@ -4,7 +4,7 @@ Date: 2026-05-29
 
 ## Purpose
 
-This is the first source-image pass from the directionality source queue. It checks queue rank 1, M-70, without promoting any sign reading.
+This note records the first source-image pass from the directionality source queue — the ranked list of seals whose published photographs we want to inspect before any reading-direction claim is allowed to stand. Up to this point the directionality work lived entirely in catalog metadata. This pass checks the top-ranked seal, queue rank 1, M-70, against its actual published plate. It promotes no sign reading.
 
 Queue row:
 
@@ -19,9 +19,9 @@ Queue row:
 
 ## Source Material
 
-Route:
+Route — the concrete path from our catalog row to a published image:
 
-- CISI India IA leaf `n66`, printed page 31, Mohenjo-daro 70-72 seals.
+- CISI India IA leaf `n66`, printed page 31, Mohenjo-daro 70-72 seals. CISI is the Corpus of Indus Seals and Inscriptions, the primary published photographic record; IA is the Internet Archive scan of it.
 
 Local crops inspected:
 
@@ -35,11 +35,11 @@ Local crops inspected:
 
 ## Human Visual Read
 
-The public CISI crop visibly contains a single signband above the animal on the seal face and a matching band on the impression. The face and impression are mirror counterparts, as expected for a seal and its impression.
+The public CISI crop visibly contains a single signband — the horizontal strip of signs — above the animal on the seal face, and a matching band on the impression. The face and impression are mirror counterparts, as expected for a seal and its impression.
 
-The existing broad order-window packet marks the `032-002-390-692` span and records `pass_branch_head_continuation_candidate` at medium confidence. That is stronger than route-only visibility, but weaker than exact token boxing.
+The existing broad order-window packet — a bundle of crops in which reviewers mark where a span of signs sits — marks the `032-002-390-692` span and records `pass_branch_head_continuation_candidate` at medium confidence. Branch head here means the sign that opens this branch of the sequence grammar. That is stronger than route-only visibility, but weaker than exact token boxing: drawing a box around each individual sign.
 
-The band was suitable for a blind token-boxing stress test, and that test has now been scored. The matched-negative packet failed its promotion gate: two independent reviewers recovered target-like structure in M-70, but they also produced hard target-like hits on scoring negatives. The maximum yes-only false-positive rate was 0.714286, and the maximum conservative false-positive-or-uncertain rate was 0.777778.
+The band was suitable for a blind token-boxing stress test — blind meaning the reviewers cannot see the catalog answers — and that test has now been scored. The matched-negative packet failed its promotion gate. A matched-negative packet plants decoy crops that should yield nothing, and the gate is the pass/fail rule the packet has to clear. Two independent reviewers recovered target-like structure in M-70, but they also produced hard target-like hits on scoring negatives, the planted decoys. The maximum yes-only false-positive rate was 0.714286, and the maximum conservative false-positive-or-uncertain rate was 0.777778.
 
 ## Decision
 

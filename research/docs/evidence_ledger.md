@@ -2,7 +2,9 @@
 
 Date: 2026-05-26
 
-This ledger records what has been checked, what it proves, and what it cannot prove.
+## What This Document Is And How To Read It
+
+This ledger is the project's memory of what has actually been checked. Each table row and each bullet below records one piece of evidence: the source or result we examined, when we examined it, what we found, and the exact limits of what the finding can support. The ledger exists because decipherment efforts usually fail the same way — a suggestive result quietly hardens into a claim — so every entry states both what it can prove and what it cannot prove, and the "cannot prove" side binds just as hard as the "can prove" side. Sources carry trust tiers (T0 through T4) and a current status; together these are usage rules that say how each source may be entered into an argument. A structural result in this ledger is a statement about sign order and distribution in a dataset, never a reading of any sign. Do not conclude from anything below that a sign has a meaning, a phonetic value, or a translation: the ledger's own evidence-limits section states that no translation claim is currently admissible. Entries are evidence; they are appended over time and are not rewritten.
 
 ## Corpus And Data Sources
 

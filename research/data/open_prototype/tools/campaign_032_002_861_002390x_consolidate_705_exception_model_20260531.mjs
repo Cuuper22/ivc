@@ -1,3 +1,16 @@
+// Models sign 705 as "terminal by default, with a named exception" instead of a
+// clean terminal class. Like 095, sign 705 usually ends inscriptions when it
+// occupies the X slot of a 002-H-705 frame — but unlike 095 it has at least one
+// X-slot row that keeps going (the 320-705-125 shape). This script deduplicates
+// the local Lipi metadata by sign text, collects every 705 occurrence with its
+// neighbors and X-slot status, contrasts X-slot rows against all occurrences,
+// and names each open exception explicitly. Writes occurrences, contrast, and
+// decisions CSVs plus a summary JSON to data/open_prototype/reports/. Recorded
+// verdicts: keep 705 as a terminal-default class ranked below 095 and 530;
+// kill the "clean terminal peer of 095" bundling; and register the unbound
+// Dholavira 002-390-705 candidate as a destructive prediction — if it ever
+// source-binds and continues after 705, the class is demoted.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

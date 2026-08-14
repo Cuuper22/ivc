@@ -2,16 +2,18 @@
 
 Date: 2026-05-31 America/Los_Angeles
 
+This note is a planning exercise. Several seals in the campaign are blocked because we have no photograph of them. Chasing them all costs time, so this audit asks, one seal at a time: if we did get that photograph tomorrow, what would it actually buy us? The answer reorders the acquisition queue, and it is not the order the backlog suggests.
+
 Status: `source_upgrade_impact_audit_3335_single_unlock_004_dual_upgrade_705_ecology_no_values`.
 
 ## Purpose
 
-The matched-lane replacement scout showed that the surviving local matched lanes have no backup witness:
+A "lane" is a specific left-to-right pattern: which sign comes right before `002-390`, and which sign follows it. A "matched" lane is one where two rows share that preceding sign, so their branches can be compared fairly. A "witness" is a database row that attests a sign sequence. The matched-lane replacement scout showed that the surviving local matched lanes have no backup witness:
 
 - `004`: H-1993 / Sktd-1
 - `032`: M-70 / `3335.1`
 
-This audit asks what would actually change if a blocked row became strict source-visible. It is a counterfactual acquisition-priority gate, not evidence that any row has been upgraded.
+This audit asks what would actually change if a blocked row became strict source-visible — that is, if its reading could be checked against an inspectable source photograph. It is a counterfactual acquisition-priority gate (a "gate" being a check that must pass before evidence enters the analysis), not evidence that any row has been upgraded.
 
 Accepted value, phonetics, language identity, function, sign meaning, and translation remain 0.
 
@@ -27,7 +29,7 @@ Accepted value, phonetics, language identity, function, sign meaning, and transl
 
 ## Main Result
 
-The acquisition priority is not what a simple reading of the backlog suggests.
+The acquisition priority is not what a simple reading of the backlog suggests. In the table below, "ecology" means the study of which signs appear around the branch point — useful background pressure, but weaker than a matched split.
 
 | Hypothetical source upgrade | Strict matched predecessor split unlocked? | Other effect | Decision |
 |---|---:|---|---|

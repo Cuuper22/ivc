@@ -1,3 +1,12 @@
+// Fragility check for the claim that sign `095` marks a copper-tablet subregister
+// (material Copper, type TAB:C) on its own, independent of sign `407` which often
+// travels with it. The danger: after dropping the 407 rows, the remaining 095
+// witnesses might all be copies of one text. The script reads metadata_filtered.csv
+// (complete rows only), keeps copper TAB:C rows containing 095 but not 407, and
+// collapses them three ways — by exact text, by the sign prefix up to 095, and by a
+// local window of three signs on each side of 095. If fewer than two distinct
+// prefix families remain, 095 is demoted to a single-frame artifact. Writes a
+// single JSON report to the reports directory and prints the decision.
 import fs from 'node:fs';
 import path from 'node:path';
 

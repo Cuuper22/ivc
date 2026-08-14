@@ -4,13 +4,17 @@ Date: 2026-05-26
 
 ## Question
 
+This note is a gate: a recorded decision checkpoint that either lets a claim through or blocks it. It kills a shortcut that looks free — assuming that when two sign catalogs print the same number, they mean the same sign.
+
+Terms first. Several independent sign catalogs are in play, each with its own numbering: local Lipi codes (bare numbers like `220`, `415`), Mayig feature ids (`P###`) with an alternate Parpola layer (`V###`), Mahadevan (`M###`), and Wells (`W###`). Parpola 2019 cites signs by article number ("sign no. 60"), which points into the Parpola 1994 Fig. 5.1 sign list — a sixth numbering. A "namespace" is one such numbering scheme; a "bridge" is a proposed link between two of them. M- and H-numbers are Mohenjo-daro and Harappa artifacts, and "recurrence" means the same inscription appearing on several of them.
+
 Can Parpola text no. 7 and the H-obverse recurrence be bridged by taking the article's sign numbers `60`, `107`, and `189` as Mayig `V060/V107/V189`, Mahadevan `M060/M107/M189`, or local Lipi tokens with the same Arabic numerals?
 
 ## Decision
 
 No.
 
-The next bridge is not numeric label matching. It has to be object-side source transcription or a sign-list concordance that explicitly ties Parpola 1994 Fig. 5.1 sign numbers to the local Lipi rows and Mayig feature IDs.
+The next bridge is not numeric label matching. It has to be object-side source transcription or a sign-list concordance — a published table stating which sign in one list equals which in another — that explicitly ties Parpola 1994 Fig. 5.1 sign numbers to the local Lipi rows and Mayig feature IDs.
 
 This gate does add something useful: Parpola 2019's article sign numbers can be visually anchored in Parpola 1994 Fig. 5.1, and the Mayig feature metadata blocks the obvious false shortcut through Mayig `V###` and Mahadevan `M###` labels.
 
@@ -34,7 +38,7 @@ fig5_1-092.png 1231x1607 SHA256 3EF658B0D255988184F55ADB8883B97FDFC7661DEE12DF41
 
 ## Mayig Feature Metadata Check
 
-Mayig's README says its primary `P###` IDs use Parpola's inclusive allograph scheme while `V###` is an alternate Parpola numbering layer. That makes Mayig useful as a namespace witness, but not as an automatic bridge into Parpola 2019 article sign numbers.
+Mayig's README says its primary `P###` IDs use Parpola's inclusive allograph scheme while `V###` is an alternate Parpola numbering layer. That makes Mayig useful as a namespace witness — an independent record of what each label refers to — but not as an automatic bridge into Parpola 2019 article sign numbers.
 
 The feature files show the trap:
 
@@ -49,7 +53,7 @@ The feature files show the trap:
 | Mahadevan `M189` | `P305`, long horizontal with verticals, Parpola `V058/V716`, Wells `W420` | Not article sign no. 189 by numeric shortcut. |
 | M-77 local terminal `861` | current overlap aligns it to `P385`, diamond/leaf, Parpola `V162/V420/V421/V510`, Mahadevan `M267`, Wells `W817/W861` | M-77 terminal cannot be mapped to article sign no. 189 by number. |
 | M-37 local terminal `415` | current overlap aligns it to `P092`, pitchfork, Parpola `V042/V182`, Mahadevan `M171`, Wells `W415` | Local `415` cannot be mapped to article sign no. 189 by number. |
-| local `016` controls | current M-17/M-178 overlap aligns local `016` to `P126`, six short strokes, Parpola `V006/V018/V670/V723`, Mahadevan `M108/M109`, Wells `W006/W016` | H-942's local `016` remains a stress/control, not article sign no. 189. |
+| local `016` controls, rows kept as comparison cases rather than targets | current M-17/M-178 overlap aligns local `016` to `P126`, six short strokes, Parpola `V006/V018/V670/V723`, Mahadevan `M108/M109`, Wells `W006/W016` | H-942's local `016` remains a stress/control, not article sign no. 189. |
 
 One live positive clue remains bounded:
 

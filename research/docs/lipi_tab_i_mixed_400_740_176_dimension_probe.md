@@ -4,7 +4,9 @@ Date: 2026-05-24
 
 ## Purpose
 
-This probe tests the mixed `TAB:I` side-context sheet before image validation.
+This note records a statistical stress test run before any images have been checked. It exists to find out, cheaply, whether an apparent sign contrast lines up with anything physically measurable — so that later, expensive image validation knows what to look for.
+
+The setting: `TAB:I` is a Harappa tablet type code from the catalog. The "mixed family" is a group of tablets whose long side carries the sign sequence `+400-740-176+` and whose short side carries a short mark — either `+700-033+` or `+700-034+`. Numbers like `400`, `740`, `176`, `700`, `033`, and `034` are catalog sign codes, not readings. The mixed `TAB:I` side-context sheet is the earlier note that isolated this family.
 
 Question:
 
@@ -12,7 +14,7 @@ Question:
 Within the +400-740-176+ mixed family, does short mark +700-033+ versus +700-034+ track side placement or dimensions?
 ```
 
-This is a pre-validation stress test on the T3 `lipi` planning layer. It is not a numerical reading, metrological reading, physical side function, sign meaning, phonetic value, language identification, or translation.
+This is a pre-validation stress test on the T3 `lipi` planning layer — the exploratory, catalog-derived data this project computes from before image validation. It is not a numerical reading, metrological reading, physical side function, sign meaning, phonetic value, language identification, or translation.
 
 ## Local Artifacts
 
@@ -94,7 +96,7 @@ Robustness checks:
 | canonical long1-short2 only | horizontal mean difference | 19 | 0.254366 |
 | canonical long1-short2 only | aspect mean difference | 18 | 0.239348 |
 
-Multiple-test correction:
+Multiple-test correction (Bonferroni and Benjamini-Hochberg, applied because many tests ran at once):
 
 ```text
 raw_p_lte_005_tests: all_target:horizontal_value; all_target:aspect_value

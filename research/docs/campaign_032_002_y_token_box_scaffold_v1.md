@@ -2,11 +2,13 @@
 
 Date: 2026-05-28
 
+This note records a first attempt at drawing sign boundaries on published photographs. A "token box" is a rectangle claiming the extent of one sign on the image; "scaffold" means these boxes are provisional working guesses, meant to be replaced, not final identifications. Signs in this corpus are numeric IDs; `Y` names whichever sign follows `002`. A row is "source-visible" once its published photograph shows it; the "signband" is the inscribed strip carrying the row. A "recut" is a re-measurement of the same row under revised rules.
+
 ## Result
 
 The first token-box pass tests the hostile failure condition: whether `032`, `002`, and Y are physically distinct, adjacent signs on the same source-visible signband.
 
-This pass uses provisional local-to-Mayig shape anchors:
+This pass uses provisional local-to-Mayig shape anchors — links from our numeric sign IDs to described graphic shapes:
 
 | local token | provisional shape anchor | visual cue used |
 |---|---|---|

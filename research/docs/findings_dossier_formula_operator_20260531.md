@@ -8,11 +8,11 @@ Status: candidate-level frontier output. No accepted phonetics, translation, lan
 
 **Tier:** promoted candidate, metadata plus blind visual packet. Not accepted.
 
-**Claim:** `060-920` is a portable terminal cap. `741-060` is the dominant feeder into this cap, not the whole phenomenon.
+**Claim:** `060-920` is a portable terminal cap — a two-sign unit that closes inscriptions across sites and object types. `741-060` is the dominant feeder into this cap, not the whole phenomenon.
 
 **Evidence:**
 
-- `060-920`: `53` raw rows, `52` exact-collapsed cells.
+- `060-920`: `53` raw rows, `52` exact-collapsed cells (duplicate copies of one inscription counted once).
 - Terminal after `920`: `52/53` raw, `51/52` exact-collapsed.
 - Exact-collapsed all-bigram tournament: `060-920 -> END` ranks `4/3270` by best successor support.
 - `741-060 -> 920`: `31/31` raw and `30/30` exact-collapsed, across `7` sites.
@@ -29,8 +29,8 @@ Status: candidate-level frontier output. No accepted phonetics, translation, lan
 
 **Still vulnerable:**
 
-- Exact token boundaries are not independently boxed sign-by-sign.
-- Blind read is one sidecar reader, not a multi-reader adjudication.
+- Exact token boundaries are not independently boxed sign-by-sign on the objects.
+- The blind read is one sidecar reader, not a multi-reader adjudication.
 - Source images are public trace-cache images, not a fully source-normalized plate edition.
 - One exact-collapsed `060-920` row continues after `920`: `Unknown +740-100-415-927-060-920-031+`.
 
@@ -44,7 +44,7 @@ Status: candidate-level frontier output. No accepted phonetics, translation, lan
 
 **Tier:** promoted metadata candidate; visual/source promotion blocked.
 
-**Claim:** `806` has a prefix-conditioned nonterminal role. With prefix `154` or `158`, it selects a `465..475` successor band. `155` and `100` are possible extension members but remain lower-confidence.
+**Claim:** `806` has a prefix-conditioned nonterminal role: what comes before it changes what comes after it. With prefix `154` or `158`, it selects a successor in the `465..475` band. `155` and `100` are possible extension members but remain lower-confidence.
 
 **Evidence:**
 
@@ -62,7 +62,7 @@ Status: candidate-level frontier output. No accepted phonetics, translation, lan
 
 **Demotion from visual packet:**
 
-- Blind packet recovered clean visual construction only for `BS007` and `BS010`; `BS011` possible.
+- The blind packet recovered a clean visual construction only for `BS007` and `BS010`; `BS011` possible.
 - It missed non-Harappa/source-holdout positives `BS002`, `BS006`, and `BS008`.
 - Therefore this remains a promoted metadata candidate, not a visual/source-promoted candidate.
 
@@ -70,7 +70,7 @@ Status: candidate-level frontier output. No accepted phonetics, translation, lan
 
 **Tier:** candidate, probabilistic.
 
-**Claim:** `740` forms a register family where middle heads such as `390`, `407`, and `405` often select `590`.
+**Claim:** `740` forms a register family: a middle head such as `390`, `407`, or `405` sits between `740` and `590`, and that middle head often selects `590`.
 
 **Evidence:**
 
@@ -95,14 +95,14 @@ Status: candidate-level frontier output. No accepted phonetics, translation, lan
 
 **Demoters:**
 
-- Broad external/circular and corridor/circular tests use effectively the same foreground rows.
+- Broad external/circular and corridor/circular tests use effectively the same foreground rows, so they are not independent confirmations.
 - Same-type `SEAL:C` controls do not survive pairwise Bonferroni.
 - Support is sparse, fragmentary, and source validation remains unresolved.
 
 ## Retracted Or Demoted Candidates
 
-- `752-615 -> 503` broad formula: killed as general structural candidate. Raw `29/29`, but exact-collapse leaves `2` cells at one Mohenjo-daro `TAB:C` context.
-- `465` terminal/plant suffix inside the `806` series: killed as promoted candidate. Raw `5/5`, but exact-collapse leaves one family cell; broader plant/no-symbol semantics fail hostile sidecar checks.
+- `752-615 -> 503` broad formula: killed as a general structural candidate. Raw `29/29`, but exact-collapse leaves `2` cells at one Mohenjo-daro `TAB:C` context — the perfect raw count was repetition, not grammar.
+- `465` terminal/plant suffix inside the `806` series: killed as a promoted candidate. Raw `5/5`, but exact-collapse leaves one family cell; broader plant/no-symbol semantics fail hostile sidecar checks.
 - `400` primary-face heading: demoted/killed by side-shuffle null at `p_ge = 0.175`.
 - `400` companion `700/032` predictor: demoted/killed; companion tests did not survive.
 

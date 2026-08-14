@@ -4,7 +4,7 @@ Date: 2026-05-24
 
 ## Purpose
 
-This audit widens the [H-2219 public image lead audit](h2219_public_image_lead_audit.md) to the full H-2218 through H-2239 tablet series.
+This note is a search for public photographs of the H-2218 through H-2239 tablets. It widens the earlier [H-2219 public image lead audit](h2219_public_image_lead_audit.md) to the full 22-object series. An "image lead" is a public URL that appears to show a specific object; "A/B/C" labels the three inscribed sides of a tablet.
 
 Question:
 
@@ -12,7 +12,7 @@ Question:
 Are there public object-level A/B/C image leads for more than H-2219?
 ```
 
-This is source discovery only. It is not image validation.
+This is source discovery only — finding where images might live. It is not image validation.
 
 ## Local Artifacts
 
@@ -101,7 +101,7 @@ Examples from the page summaries:
 | `all_p304.html` | 230 | 5 | 21 |
 | `all_p305.html` | 325 | 12 | 15 |
 
-These counts are not used as archaeological evidence. They explain why the pages are T4 source leads only.
+These counts are not used as archaeological evidence. They explain why the pages sit at tier T4 in the project's source-trust ranking: usable only as pointers to images, never as evidence.
 
 ## Consequence
 

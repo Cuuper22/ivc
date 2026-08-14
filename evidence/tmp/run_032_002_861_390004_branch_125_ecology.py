@@ -1,3 +1,15 @@
+"""Maps the 390-004 branch family and its 125 ecology for the 032-002-861 campaign.
+
+This script reads the local inscription table (tmp/lipi_current_inscriptions_20260526.csv)
+plus the source-queue source index and the negative-control candidates, with a small set
+of hand-coded source-fact overrides carried over from earlier campaign packets. It scans
+for the 390-004 prefix family, records the surrounding signs and tails, and asks the
+summary question: does the 390-004-002-Y branch family make 125 or post-861 behavior
+translation-relevant? It writes row and distribution CSVs, a summary JSON, and a docs/
+markdown note. The recorded decision promotes the branch-tail ecology as a live research
+object with no values accepted.
+"""
+
 from __future__ import annotations
 
 import csv

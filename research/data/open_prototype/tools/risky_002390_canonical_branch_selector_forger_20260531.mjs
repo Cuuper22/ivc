@@ -1,3 +1,18 @@
+// Stress-tests a pre-specified branch table for the `002-390-X` frame: branches
+// 125/530/590 are claimed to be "open" (the text continues after X) and
+// 072/095/140/346/692/705/707 "closed" (the text ends at X). The script reads
+// metadata_filtered.csv, collapses duplicate sign sequences, extracts every sign X
+// that follows `002-390`, and checks how many frames the table predicts correctly.
+// Three nulls attack the claim. First, a 100,000-iteration forger replaces each
+// frame's terminal label with one sampled from the same sign's behavior outside the
+// frame — this prices the chance that each branch just carries its ordinary
+// terminality into the frame. Second, an exact frame-internal permutation of
+// terminal labels prices both the pre-specified table and any branch-deterministic
+// table a data-dredger could have discovered. Third, leave-one-site and
+// matched-predecessor tables check the pattern is not one site's or one template's
+// artifact. Each frame is also tagged by how well its reading is source-verified
+// (strict image, route pressure, or metadata only). Writes a bet summary
+// (JSON + CSV) plus frame, per-branch, and matched-predecessor CSVs to reports/.
 import fs from 'node:fs';
 import path from 'node:path';
 

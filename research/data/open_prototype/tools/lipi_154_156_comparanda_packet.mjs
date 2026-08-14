@@ -1,3 +1,18 @@
+// Are Lipi signs 154 and 156 two different signs, or one sign split by the
+// catalog (allographs)? The sharpest test case is the H-2218..H-2239 tablet
+// series, where most objects read +156-003+ but H-2237 alone reads +154-003+.
+// This script assembles the comparison packet. From the filtered metadata it
+// pulls every row containing the adjacent pair 154-003 or 156-003, labels
+// each by scope (H-series singleton vs majority, strict two-sign texts vs
+// longer texts), and assigns a source priority. For every 154-003 target it
+// ranks the ten best 156-003 comparison objects using a similarity score over
+// site, type, shape, material, class, direction, sign count, physical
+// dimensions in mm, shared suffixes after 003, and companion texts on the
+// same object. It also gathers crosswalk pressure: rows where the overlap
+// layer aligns 154 or 156 with the same Mayig sign P004, which would favor
+// the allograph reading. Writes packet rows, ranked controls, and crosswalk
+// pressure CSVs plus a JSON summary. Planning material only — source images
+// must decide the question; nothing is accepted here.
 import fs from 'node:fs';
 import path from 'node:path';
 

@@ -4,7 +4,7 @@ Date: 2026-05-29
 
 ## Purpose
 
-This note records the hostile follow-up controls for the Vector 2 directionality candidate. It does not replace the broad directionality comparator. It tests two tempting support lanes that could easily mislead the analysis:
+This note records hostile controls — tests built to break our own result — aimed at the Vector 2 directionality candidate, the working result that Indus inscriptions score better in their stored order than reversed. It does not replace the broad directionality comparator, the battery of control corpora scored with the same instrument. It tests two tempting support lanes — separate lines of supporting evidence — that could easily mislead the analysis:
 
 - a tiny source-visible `861` terminal/tail subset,
 - the provisional matched Lipi/Mayig overlap rows.
@@ -13,7 +13,7 @@ Both are support-lane tests, not decipherment tests. No phonetic value, translat
 
 ## Result
 
-The tiny source-visible `861` probe is killed as directionality evidence. The observed stored-win share is 1.000000 over 12 target-selected rows, but the strongest null reproduces or exceeds that score with `null >= observed` share 1. It remains a source-visible sensitivity inventory only.
+The tiny source-visible `861` probe is killed as directionality evidence. Stored-win share is the fraction of rows where the stored order beats the reversed order; a null is the same scoring run on deliberately scrambled data, showing how often chance alone matches the real score. The observed stored-win share is 1.000000 over 12 target-selected rows, but the strongest null reproduces or exceeds that score with `null >= observed` share 1. It remains a source-visible sensitivity inventory only.
 
 The matched-overlap result is also not admissible support for the directionality candidate. In the exact-collapsed overlap, the Lipi side remains high at 0.937500 with max null >= observed share 0.035000, but the Mayig side is already soft at 0.929134 with max null >= observed share 0.200000. After removing the ten most frequent edge signs, both overlap sides collapse: Lipi side 0.363636 and Mayig side 0.473684, each with max null >= observed share 1.
 
@@ -59,7 +59,7 @@ Retract these support lanes:
 - source-visible `861` terminal/tail directionality as evidence,
 - matched Lipi/Mayig overlap as independent support for the directionality candidate.
 
-Keep the broader harsh Indus directionality candidate live but unaccepted. It still needs source-normalized direction validation, stronger near-duplicate/source-family collapse, and crosswalk-blind heldout rebuilding before it can promote anything in the claim ledger.
+Keep the broader harsh Indus directionality candidate live but unaccepted. It still needs source-normalized direction validation, stronger near-duplicate/source-family collapse, and crosswalk-blind heldout rebuilding before it can promote anything in the claim ledger. A crosswalk is a verified mapping between two sign-numbering systems; a heldout is data kept out of the model and scored afterwards.
 
 ## Artifacts
 

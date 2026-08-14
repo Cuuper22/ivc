@@ -1,3 +1,14 @@
+"""Mobility scan for sign 603: where does it sit, and does position vary?
+
+This script reads the filtered corpus metadata, keeps clean strict rows (bracketed by
++ with all three-digit tokens and no damage markers), and records every position in
+which 603 appears, treating M-240, M-714, and M-1273 as the source-visible witnesses.
+"Mobility" means the sign shows up in more than one structural slot rather than being
+frozen to a single formula position. It writes a rows CSV, a summary CSV, and a
+summary JSON. The recorded decision: 603 mobility is live but not yet a value — the
+positional behavior is a real research object, but no reading is accepted.
+"""
+
 from __future__ import annotations
 
 import csv

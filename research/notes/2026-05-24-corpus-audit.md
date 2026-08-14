@@ -4,7 +4,7 @@ Date: 2026-05-24
 
 ## Why This Audit Exists
 
-The corpus layer is the main failure point for any IVC translation attempt. If a dataset imports somebody's claimed Sanskrit, Dravidian, or other decipherment as labels, the model can learn the claim and then appear to "confirm" it. That is circular.
+The corpus layer is the main failure point for any IVC translation attempt. Here is the trap: if a dataset imports somebody's claimed Sanskrit, Dravidian, or other decipherment as labels, a model can learn the claim and then appear to "confirm" it. The model is just echoing its own training labels back. That is circular, so every source gets audited before use.
 
 ## Open Source: `mayig/indus-valley-script-corpus`
 
@@ -83,6 +83,8 @@ Assessment:
 
 ## Comparator Sources
 
+These are corpora of other ancient scripts. We use them as yardsticks: they show what a real, deciphered writing system looks like under similar conditions.
+
 ### Coptic Scriptorium
 
 The Coptic Scriptorium GitHub repository provides corpora in formats including CoNLL-U, relANNIS, PAULA XML, TEI XML, and TreeTagger SGML. It also reports annotation quality levels such as automatic, checked, and gold.
@@ -110,7 +112,7 @@ Use:
 
 ## Immediate Corpus Decision
 
-The first local corpus should not be a single imported dataset. It should be a layered corpus:
+The first local corpus should not be a single imported dataset. No single source is trustworthy enough. It should be a layered corpus:
 
 1. `open_mayig_probe`: open WIP JSON, pinned by commit.
 2. `lipi_metadata_filtered`: filtered metadata/sign table with decipherment columns removed.

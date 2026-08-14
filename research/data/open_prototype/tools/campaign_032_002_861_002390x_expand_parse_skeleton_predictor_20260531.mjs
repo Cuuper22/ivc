@@ -1,6 +1,22 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script assembles all surviving subrules into one runnable "parse
+// skeleton" and grades it against the corpus. It reads
+// lipi/metadata_filtered.csv, deduplicates by sign sequence, and for every
+// 002-HEAD-X frame assigns: a predicted class (095 identity label, 530
+// one-complement linker, 125 routers and chains by head, 705 default class
+// with the 320-125 cap exception, 590/692/707 bait classes), an expected
+// continuation for that class (closed, one complement, open to a specific
+// sign, or open to a tail menu), a pass/fail against what the text actually
+// does, a structural gloss skeleton like "FRAME(002) HEAD(390)
+// IDENTITY_CLASS(095)", and a named failure hook — the observation that would
+// break that rule. Per-class rollups report coverage and pass rates. The two
+// bets: this non-lexical skeleton earns "candidate" only at a 90%+ pass rate,
+// and grammar-layer glosses are allowed before any lexical values. Writes
+// parse rows, rule rollups, and bets as CSVs plus a summary JSON to
+// data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

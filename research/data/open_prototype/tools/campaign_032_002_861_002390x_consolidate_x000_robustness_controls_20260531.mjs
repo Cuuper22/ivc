@@ -1,6 +1,19 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script checks whether the X=000 zero-complement rule — that a 000 in
+// the X slot after 002-HEAD closes the text — is robust, or an artifact of
+// one site, one object type, or a few repeated formulas. It reads the earlier
+// x000 parse-rows CSV and re-runs the same contrast (terminal rate of X=000
+// rows versus all other X rows) under many controls: baseline, seal-only,
+// non-seal, leave-one-site-out for every site that has an X=000 row, leave-
+// one-type-out likewise, and two collapse controls that first merge duplicate
+// evidence by x+head and by x+site so repeated formulas count once. A control
+// survives when the X=000 terminal rate stays at or above 0.8 (0.75 for the
+// collapsed versions) with a gap of 0.2+ (0.15 collapsed) over non-000 rows
+// and at least 5 X=000 rows. Writes control, collapsed-group, and decision
+// CSVs plus a summary JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const parseRowsPath = path.join(

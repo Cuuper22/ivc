@@ -2,7 +2,7 @@
 
 Date: 2026-05-30
 
-This matrix checks the active goal against current artifacts. It is not a completion claim.
+This matrix checks the active goal against current artifacts, one requirement at a time. Read each row as three questions: what does the goal demand, what actually exists today, and how large is the remaining gap? It is not a completion claim.
 
 | Requirement | Current evidence | Status |
 | --- | --- | --- |
@@ -43,7 +43,7 @@ Brahmi real-token low-null autopsy added on 2026-05-31: the 21 rows with real-to
 
 ## Current Completion Judgment
 
-The final artifact set is largely present, and the central success condition has a narrow accepted hit: `accepted_struct_002_861_533_717_restricted_tail_2026_05_29`. The strongest honest output is now “one structural tail formula earned, no reading earned.” Vector 2 remains the most defensible corpus-level instrument, and broad `002-Y` remains the strongest larger grammar candidate still awaiting source normalization.
+In one sentence: the final artifact set is largely present, and the central success condition has a narrow accepted hit: `accepted_struct_002_861_533_717_restricted_tail_2026_05_29`. The strongest honest output is now “one structural tail formula earned, no reading earned.” Vector 2 remains the most defensible corpus-level instrument, and broad `002-Y` remains the strongest larger grammar candidate still awaiting source normalization.
 
 Next best moves:
 

@@ -4,7 +4,7 @@ Date: 2026-05-25
 
 ## Purpose
 
-This matrix defines what source-image observations would kill, downgrade, or upgrade the current `034` residue. It is deliberately stricter than the local statistical packet.
+This note writes down, in advance, what would change our minds. FRAME700 is the project's label for short inscription rows built on sign `700`, such as `+700-034+`; the `034` residue is a leftover pattern involving sign code `034` that the controls run so far have not explained. The matrix defines what source-image observations would kill, downgrade, or upgrade that residue. It is deliberately stricter than the local statistical packet — the bundled list of objects assembled from our own records. Writing the kill conditions before looking at the images is what stops the images from being read to fit.
 
 The live claim before source validation is only:
 
@@ -15,6 +15,8 @@ The live claim before source validation is only:
 It is not a reading.
 
 ## Matrix
+
+Controls are comparison objects carrying `033` or `032` that match the `034` object closely; a triad is one such set of three, one object per sign code. A copy family is a set of objects carrying the same inscription that may be copies of one another.
 
 | Source observation | Impact | Required evidence |
 | --- | --- | --- |

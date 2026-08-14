@@ -4,11 +4,11 @@ Date: 2026-05-25
 
 ## Question
 
-Do the CISI volume conventions explain the messy labels that blocked `H-771`, `H-893`, `H-925`, `H-983`, and `H-353`?
+This note checks the labeling conventions of CISI, the Corpus of Indus Seals and Inscriptions — the standard photographic catalog of Indus objects. Five objects (`H-771`, `H-893`, `H-925`, `H-983`, `H-353`) were blocked in earlier passes because their catalog pages show more photo and side labels than the local corpus records for them. The question: do the CISI volume conventions, as stated in the volumes' own introductions, explain those messy labels?
 
 ## Inputs
 
-- IA bundle: <https://archive.org/details/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan>
+- IA (Internet Archive) bundle: <https://archive.org/details/TheIndusScript.TextConcordanceAndTablesIravathanMahadevan>
 - CISI India OCR: `Corpus of Indus Seals and Inscriptions. Collections in India_djvu.txt`
 - CISI Pakistan OCR: `Corpus of Indus Seals and Inscriptions. Collections in Pakistan_djvu.txt`
 - Script: `data/open_prototype/tools/lipi_frame700_034_cisi_variant_convention_probe.mjs`
@@ -40,7 +40,7 @@ The CISI introduction gives four rules that matter here:
 
 ## Correction To Previous Gate
 
-The previous messy-panel result stays negative, but the failure language needs tightening:
+A gate is a checkpoint the evidence must pass before the next step is allowed. The previous messy-panel gate result stays negative, but the failure language needs tightening:
 
 ```text
 Not all excess visible labels are excess physical sides.
@@ -57,7 +57,7 @@ That means:
 
 ## Consequence For Decipherment
 
-The next linguistic experiment is still blocked. A valid `032/033/034` substitution test needs source-normalized panel nodes:
+The next linguistic experiment is still blocked. That experiment is a substitution test: checking whether the sign codes `032`, `033`, and `034` alternate in the same stable slot next to sign `700`. A valid `032/033/034` substitution test needs source-normalized panel nodes — one graph node per confirmed physical side of an object, built from the source catalog rather than from local metadata:
 
 1. One node per confirmed physical side.
 2. Same-side photo variants attached to that node with preservation/quality notes.

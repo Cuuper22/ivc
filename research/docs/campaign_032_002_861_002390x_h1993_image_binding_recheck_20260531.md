@@ -20,7 +20,7 @@ The question for this gate was narrower than the older source-route note: can th
 
 ## New route tightening
 
-The useful new fact is not an image. It is a sharper acquisition target.
+The useful new fact is not an image. It is a sharper answer to where the image should be.
 
 The public Harappa page for Kenoyer and Meadow's `Inscribed Objects from Harappa Excavations 1986-2007` identifies the piece as part of `Corpus of Indus Seals and Inscriptions`, Volume 3, Part 1. The linked public PDF is only a 17-page essay excerpt, but its table of contents shows where the missing plate/data evidence would sit in the full volume:
 
@@ -30,7 +30,7 @@ The public Harappa page for Kenoyer and Meadow's `Inscribed Objects from Harappa
 
 H-1993 falls inside `H-1521` to `H-2583`, so the likely decisive source is the full CISI 3.1 HARP photograph/data section, not the public essay excerpt alone.
 
-The essay also explains that HARP object photographs were cataloged and sent for the volume, and that many HARP color images were scanned into a photo database. That is provenance for where the image should exist, but it is still not a public object image for H-1993.
+The essay also explains that HARP object photographs were cataloged and sent for the volume, and that many HARP color images were scanned into a photo database. That tells us where the image should exist. It is still not a public object image for H-1993.
 
 ## Failed binding checks
 

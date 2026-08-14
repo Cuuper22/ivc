@@ -4,11 +4,13 @@ Date: 2026-05-24
 
 ## Purpose
 
-The goal is a translation system whose reliability can eventually stand beside mature Ancient Egyptian translation. Because the evidence conditions are radically worse for IVC, "accuracy" must be split into layers. A system can be highly accurate at sign normalization and still have no right to emit a sentence in English.
+"Accuracy" for a decipherment system is not one number. It has to be split into layers, because a system can be highly accurate at one job, say sign normalization, and still have no right to emit a sentence in English. The goal is a translation system whose reliability can eventually stand beside mature Ancient Egyptian translation, but the evidence conditions for the IVC script are radically worse, so each layer below asks one question and states what must be shown before output can climb to the next layer.
 
 This framework measures decipherment progress, not software maturity. Code may assist the work, but an app, OCR pipeline, test suite, deployment setup, or clean engineering pipeline is not evidence that the script has been understood.
 
 ## Accuracy Layers
+
+The layers run from A0, "are we even reading the right object?", to A5, "can a human use this as a translation?". A higher layer means nothing while a lower layer is unresolved.
 
 ### A0: Corpus Accuracy
 
@@ -119,7 +121,7 @@ Pass gate:
 
 Question: Is there evidence that a sign or sequence maps to a language?
 
-Candidate language readings are downstream. They require:
+Candidate language readings sit downstream of everything above. Before any matching starts, the ground rules must be fixed, so the match cannot quietly bend the language to fit the signs. They require:
 
 - Pre-declared language prior.
 - Phonological constraints fixed before matching.
@@ -151,7 +153,7 @@ Pass gate:
 
 ## Egyptian Comparator
 
-Ancient Egyptian translation accuracy rests on evidence IVC does not have:
+Egyptian is the benchmark, but it is important to see why it worked. Ancient Egyptian translation accuracy rests on evidence IVC does not have:
 
 - Parallel text support, especially the Rosetta Stone.
 - Readable Greek in the same decree.
@@ -186,7 +188,7 @@ Current comparator acquisition status:
 
 ## Release Rule
 
-Any public-facing output must show the lowest confidence layer that remains unresolved. If corpus validity is uncertain, the system cannot hide that under a polished semantic reading.
+Any public-facing output must show the lowest confidence layer that remains unresolved. The weakest link is the one the reader must see. If corpus validity is uncertain, the system cannot hide that under a polished semantic reading.
 
 Operational checks:
 

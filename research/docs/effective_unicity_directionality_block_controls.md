@@ -4,7 +4,9 @@ Date: 2026-05-29
 
 ## Purpose
 
-This is a hostile follow-up to the Vector 2 directionality candidate. The earlier directionality comparator removed each tested row from the model. This run removes whole provenance/register blocks before scoring each row, then asks whether stored order still beats reversed order.
+This note is a hostile follow-up to the Vector 2 directionality candidate — the working result that Indus inscriptions, as stored in the catalog, read better in their recorded order than reversed. It exists to try to break that result.
+
+The earlier directionality comparator (the scoring instrument that compares stored order against reversed order) removed only the tested row from the model before scoring it. This run is harsher. It removes whole provenance/register blocks — for example, everything from the same site, object type, or iconographic group — before scoring each row, then asks whether stored order still beats reversed order.
 
 The target failure mode is simple: the directionality signal might be only a site, object-type, iconography, or edge-family habit rather than a corpus-level ordering constraint.
 
@@ -12,7 +14,9 @@ The target failure mode is simple: the directionality signal might be only a sit
 
 The result is mixed in a useful way.
 
-In the harsh scope already used by the main comparator, top-10 edge signs removed plus one-edit families collapsed, directionality survives `site|type|symbol` block holdout:
+Two numbers matter in what follows. Stored-win share is the fraction of rows where the stored order scores higher than the reversed order. Max null >= observed share is the worst case across the shuffle-based null controls: the fraction of shuffled iterations that matched or beat the observed result. Small values mean the signal is hard to fake by shuffling.
+
+In the harsh scope already used by the main comparator — rows starting or ending with the ten most frequent edge signs removed, and near-duplicate one-edit families collapsed to single rows — directionality survives `site|type|symbol` block holdout:
 
 - rows: 365
 - stored-win share: 0.827397
@@ -20,7 +24,7 @@ In the harsh scope already used by the main comparator, top-10 edge signs remove
 - median held-out transitions: 67
 - max null >= observed share: 0 across 200 iterations per control
 
-The same harsh scope does not cleanly survive full leave-site-out:
+The same harsh scope does not cleanly survive full leave-site-out — holding out an entire site's rows at once:
 
 - rows: 365
 - stored-win share: 0.753425
@@ -50,7 +54,7 @@ The register-edge-family collapsed scope gives the same boundary. It survives `s
 
 ## Controls
 
-The run uses 200 iterations for each null control:
+A null control is a shuffled version of the data that destroys the structure under test while preserving as much else as possible. The run uses 200 iterations for each null control:
 
 - global token shuffle,
 - row-internal shuffle,
@@ -65,7 +69,7 @@ The last two controls preserve more provenance structure by keeping tokens insid
 
 Promote as a narrower live support fact, not an accepted claim:
 
-> In the current Lipi T3 layer, harsh Indus stored-order directionality survives `site|type|symbol` block holdout and register-edge-family collapse, but it weakens under full leave-site-out.
+> In the current Lipi T3 layer (our working transcription layer of the Lipi catalog), harsh Indus stored-order directionality survives `site|type|symbol` block holdout and register-edge-family collapse, but it weakens under full leave-site-out.
 
 Forbidden wording:
 

@@ -14,7 +14,7 @@ X       = terminal/class/closure slot
 415     = default terminal in that slot
 ```
 
-No lexical translation is accepted. The progress is that the research object moved from `local 220` alone to a recurrent formula family with a measurable substitution slot.
+No lexical translation is accepted. The progress is that the research object moved: we are no longer studying `local 220` alone, but a recurrent formula family with a measurable substitution slot — a position where different signs can be swapped in.
 
 ## Data Stored
 
@@ -53,7 +53,7 @@ No lexical translation is accepted. The progress is that the research object mov
 
 1. `520-220` is a real opening formula candidate.
 
-   In the filtered corpus, `520` occurs 321 times and starts 263 rows. `220` occurs 477 times. The bigram `520-220` occurs 67 times, 59 of them at inscription start. As an opening bigram it ranks among the top recurrent openers in the corpus, not as random adjacency.
+   In the filtered corpus, `520` occurs 321 times and starts 263 rows. `220` occurs 477 times. The bigram `520-220` occurs 67 times, 59 of them at inscription start. As an opening bigram it ranks among the top recurrent openers in the corpus. This is not random adjacency.
 
 2. `+520-220-415+` is a major exact formula.
 
@@ -70,7 +70,7 @@ No lexical translation is accepted. The progress is that the research object mov
 
    Three additional rows are damaged/open after `+520-220[`. This makes `520-220` itself a candidate complete stem, with `X` as an optional or environment-conditioned terminal.
 
-4. The `X` slot is real but stratified.
+4. The `X` slot is real but stratified — its contents differ by site and object type.
 
    Broad `^+520-220-X` rows: 52 rows, 51 objects, 16 third-slot values.
 
@@ -120,7 +120,7 @@ No lexical translation is accepted. The progress is that the research object mov
    - two-sign tail: 10
    - three-plus-sign tail: 11
 
-   This sharpens the syntax question: `X` sometimes closes the whole formula and sometimes opens an expansion tail. That makes `X` less likely to be a mere decoration and more likely to be a boundary/slot element, unless source checks collapse the singleton terminals.
+   This sharpens the syntax question. `X` sometimes closes the whole formula and sometimes opens an expansion tail. That makes `X` less likely to be mere decoration and more likely to be a boundary/slot element — unless source checks collapse the singleton terminals.
 
 7. Companion-side behavior is present but sparse.
 
@@ -150,7 +150,7 @@ No lexical translation is accepted. The progress is that the research object mov
 
 ### 1. Formula stem plus terminal class slot
 
-`520-220` is a fixed stem. `X` is a terminal class/closure/status slot. `415` is the default terminal.
+The idea: `520-220` is a fixed stem. `X` is a terminal class/closure/status slot. `415` is the default terminal.
 
 Why it leads:
 
@@ -166,7 +166,7 @@ Fast discriminator:
 
 ### 2. Institutional or title formula
 
-`520-220-X` may be a title, office, house, or issuing-authority formula.
+The idea: `520-220-X` may be a title, office, house, or issuing-authority formula.
 
 Working assignment:
 
@@ -186,7 +186,7 @@ Fast discriminator:
 
 ### 3. Seal-owner or identity formula
 
-`520-220-X` may be a fixed identity formula used across owner, clan, workshop, or office seals.
+The idea: `520-220-X` may be a fixed identity formula used across owner, clan, workshop, or office seals.
 
 Why it stays alive:
 
@@ -200,7 +200,7 @@ Fast discriminator:
 
 ### 4. Commodity or administrative label
 
-`520-220-X` may encode a commodity, offering, batch, or authorized administrative class.
+The idea: `520-220-X` may encode a commodity, offering, batch, or authorized administrative class.
 
 Why it is lower but live:
 
@@ -218,7 +218,7 @@ Fast discriminator:
 
 ### 5. Allograph or transcription-policy split in `X`
 
-Some `X` values may be visual variants, source-side artifacts, or catalog policy splits rather than morphemes.
+The idea: some `X` values may not be morphemes at all — just visual variants, source-side artifacts, or catalog policy splits.
 
 Why it stays live:
 
@@ -278,4 +278,4 @@ Fast discriminator:
 
 The current best working statement is:
 
-`520-220` is a recurrent formula stem. `415` is its default closing/class terminal. The stem can appear bare as `+520-220+`. Harappa strongly standardizes the `415` closure; Mohenjo-daro preserves or produces more terminal variation. The semantic field is most likely institutional/title/identity before commodity/offering, but that semantic call must be made by the next `520-*` and `*-220-*` campaigns, not by the fish-sign bridge alone.
+`520-220` is a recurrent formula stem. `415` is its default closing/class terminal. The stem can appear bare as `+520-220+`. Harappa strongly standardizes the `415` closure; Mohenjo-daro preserves or produces more terminal variation. The semantic field is most likely institutional/title/identity before commodity/offering — but that semantic call must be made by the next `520-*` and `*-220-*` campaigns, not by the fish-sign bridge alone.

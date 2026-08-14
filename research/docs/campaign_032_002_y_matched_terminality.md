@@ -4,6 +4,8 @@ Date: 2026-05-28
 
 ## Question
 
+This note pits our explanation against the most obvious rival one. Signs in this corpus are numeric IDs; `Y` names whichever sign follows `002`. "Terminality" is whether a row ends right after `Y`. A "register" is the object class a row sits on — site, seal type, icon, shape — and the rival explanation is that register, not grammar, decides where rows stop. "Matched" means the comparison is made inside blocks of rows that share the same register, so register cannot do the explaining.
+
 The post-Y campaign found a strong split:
 
 ```text
@@ -63,6 +65,8 @@ The test uses two approaches:
 Important limitation: terminality is partly a right-edge property by definition. This test does not prove semantics. It tests whether Y class carries more signal than register metadata.
 
 ## Prediction Scores
+
+Leave-one-out means each row is predicted by a model fitted without that row, so a model cannot score well by memorizing. Accuracy is the share predicted correctly; Brier and logloss measure how well-calibrated the predicted probabilities are, and lower is better for both.
 
 Leave-one-out scores:
 
@@ -130,7 +134,7 @@ Still live:
 - Source-normalized direction can still overturn "terminal" if catalog order is wrong.
 - `Y class` was hand-defined from the same terminality pattern being tested, so the next pass must learn classes without prelabeling or use held-out signs/blocks.
 - Sparse adjacent `032-002` cells make the narrow result fragile.
-- Register metadata may be too coarse; a real plate/workshop/copy family could still explain part of the split.
+- Register metadata may be too coarse; a real plate/workshop/copy family — a set of near-identical objects that really count as one witness — could still explain part of the split.
 - Text length and `002` position are not independent of terminality; this campaign only beats register baselines, not all right-edge artifacts.
 - Strict dedup by text/site/type does not collapse all copy families, near-duplicate formula neighborhoods, or physical source-family repetitions.
 
@@ -150,7 +154,7 @@ Rejected:
 
 ## Next Campaign
 
-Run the hard holdout first, then the semantic test.
+Run the hard holdout first, then the semantic test. A holdout is a test run once on evidence set aside in advance, so it cannot be tuned to pass.
 
 Hard holdout:
 

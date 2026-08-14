@@ -1,3 +1,19 @@
+"""Record the manual visual triage of the v1 public route candidates.
+
+After the v1 route probe found candidate CISI plate pages, a human looked at
+nine of the route crops and judged each one: is the seal's source panel
+actually visible, is the signband legible, and is the crop clean enough to
+feed a blind token-boxing packet? This script encodes those judgments (keyed
+by queue rank in MANUAL_REVIEWS) and merges them with the probe's status CSV.
+Every row gets an admissibility tier from tier 1 (ready as a blind-packet
+candidate — H-654, M-1310, M-1320, M-811) down to tier 6 (no public route at
+all); routes not manually reviewed default to tier 4 unreviewed. It writes a
+triage CSV, a summary JSON with tier counts and the immediate candidates, and
+a contact sheet of the reviewed crops with the reviewer's notes. The triage
+selects candidates only; it validates no token order, direction, or meaning,
+and the accepted-claims counter stays at zero.
+"""
+
 from __future__ import annotations
 
 import csv

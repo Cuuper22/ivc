@@ -1,3 +1,15 @@
+// The core terminal-governor network test. The bet: text endings are ruled
+// by a small governor-closure network — sign 002 governs the closure signs
+// 817 and 820, sign 060 governs 920, 550, and 820, and 820 is shared by both
+// governors. We read the filtered corpus metadata (complete texts only),
+// collapse bigrams to exact cells keyed by governor, closure, following
+// context, text, site, type, and symbol, and call an edge "live" if it has
+// at least 20 cells with at least 85% ending the text. From the live edges
+// we derive multi-closure governors and shared closures. The null: 5000
+// shuffles of the terminal/nonterminal flags, asking how often chance
+// reproduces the live-edge count, the governor/closure structure, or the
+// exact target shape (002 with 2+ closures, 060 with 3+, 820 shared).
+// Writes a JSON report and an edges CSV.
 import fs from 'node:fs';
 import path from 'node:path';
 

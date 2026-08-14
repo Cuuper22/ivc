@@ -2,7 +2,9 @@
 
 Date: 2026-05-31
 
-This is intentionally below the accepted bar. The point is to make falsifiable bets that can be broken.
+## What This Document Is And How To Read It
+
+This file is a deliberately risky working model: a cumulative research log of parse bets on the `002-390-X` construction. It sits, on purpose, below the accepted bar — nothing in it is accepted evidence. The point is to make bets falsifiable so they can be broken: a precise guess that fails teaches more than a vague one that survives. Each section below records a bet, the data behind it, and its current confidence tier; "candidate" marks a live bet, "wild" marks a long shot recorded so it can be tested, and "damaged" marks a bet that has already been hit. Because this is a cumulative log, earlier sections keep their original risky wording, and the current-tier override table in the first section supersedes them wherever confidence changed — when old and new wording disagree, the override table wins. Do not read the working glosses or semantic labels here as readings: the file makes no language-identity or phonetic claim, and no sign value, phonetic value, or translation is accepted anywhere in it.
 
 ## Core Parse Bet
 

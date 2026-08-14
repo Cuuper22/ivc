@@ -1,3 +1,14 @@
+// Scope test for the whole parser: turn every rule accumulated so far into explicit,
+// row-level forecasts, then count where they break. The rules cover the left side (final 235
+// plus a P086 head predicts a 125 rank tail; 032 on the left without 235 suppresses 125;
+// final 004 splits between 095 and 125) and the X slot (125 must continue, 530 takes exactly
+// one complement, 590 requires an 032 tail, the closed branches must be terminal). We read
+// the filtered Indus inscription list (lipi/metadata_filtered.csv), keep one copy of each
+// distinct sign sequence, extract every governed frame, attach forecasts and violations to
+// each, and run seven scope bets at widening scopes — target 002-390 only, P086 heads, all
+// governed frames — to find where each rule stops holding. The point is to declare honest
+// boundaries: a rule may be a local parser cue without being a global sign value. Writes
+// forecast, scope-test, and decision CSVs plus a JSON summary to data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

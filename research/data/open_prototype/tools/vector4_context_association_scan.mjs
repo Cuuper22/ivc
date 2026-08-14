@@ -1,3 +1,18 @@
+// Vector 4 discovery scan: which sign units go with which object contexts?
+// A unit is a unigram, bigram, first sign, or last sign of an inscription;
+// a context label is a metadata value like type, material, symbol, cult, or
+// a combination (type|symbol, site|type, ...). We read the clean lipi scope
+// rows (complete, no damage/bracket/slash marks), collapse duplicates by
+// exact text plus context — or by text only, when IVC_VECTOR4_COLLAPSE_MODE
+// is text_only — and score every unit-context pair by lift and a
+// finite-population z, subject to minimum support thresholds (all tunable
+// via IVC_VECTOR4_* environment variables). Because the scan tries
+// thousands of pairs, significance is family-wise: four null models
+// (context shuffles — global, within site, within token count — and a unit
+// shuffle within site-type) each run 500 iterations, and every candidate is
+// annotated with the worst-case share of null maxima beating its z, overall
+// and per context field. Writes candidates, null-iterations, and scope-rows
+// CSVs plus a JSON summary; explicitly a candidate screen, not promotion.
 import fs from 'node:fs';
 import path from 'node:path';
 

@@ -1,3 +1,14 @@
+// Repetition controls for the governed-template story. The trap this script guards against:
+// "this four-sign template repeats, so it must be grammar." Copied inscriptions and local
+// register formulas also repeat. We read the filtered Indus inscription list
+// (lipi/metadata_filtered.csv) and take every occurrence of 002, keying it by the four signs
+// that follow (the template_4 window). Every repeated template — with or without 125 — is
+// then scored on the tells that separate grammar from copying: does one exact inscription
+// text dominate the family, is it stuck at one site, does one left-context sign dominate?
+// Fixed rules issue a verdict per family, with 405-501 hard-coded as the known copy-template
+// control. The 125 templates only earn credit if they repeat across sites without exact-text
+// domination. Writes the governed rows and template-family table as CSVs plus a JSON summary
+// to data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

@@ -4,6 +4,12 @@ Date: 2026-05-29
 
 Status: preflight inventory only. Accepted claim increment: 0.
 
+## What This Note Is
+
+This note records a repair effort on the image crops used by the directionality campaign — the workstream that tests whether Indus inscriptions really read in their recorded order. That campaign cannot advance without a blind packet: a bundle of seal-image crops shown to reviewers who cannot see the catalog answers. Several packet versions in a row (`v2b`, `v2c`, `v2d`, `v2e`, `v2f`) failed before review because the crops themselves gave the game away. This note explains why, and inventories the rebuilt crop pools.
+
+Two terms recur below. The denominator is the fixed set of control crops — rows that should yield nothing — against which a reviewer's false-positive rate is measured; it is fixed before review and must never be shrunk afterwards. A crop world is the visual kind of a crop: a signband strip (the horizontal band of signs), an object panel, an animal/icon panel. Targets and controls must share one crop world, or their appearance alone tells a reviewer which is which.
+
 ## Root Cause
 
 The v2b directionality packet failed after blind review because real denominator rows leaked catalogue/page labels. v2c fixed a concrete DjVu OCR parser bug: five-value `WORD coords` are `x1,y1,x2,y2,baseline`, not polygon points. The old parser treated the fifth value as a y-coordinate, creating tall bogus OCR boxes and unreliable masks.
@@ -33,9 +39,9 @@ The repair produced candidate crop inventories, not a result. The cleaned v2d sh
 
 The cleaned shortlist still fails packet preflight. The fixed denominator is 9, not 12, because reserve rows remain excluded until a new manifest promotes them before review. It also mixes crop worlds: target rows are mostly signband strips, while some controls are tablet/object panels or animal/icon panels. `data/open_prototype/tools/effective_unicity_directionality_signband_pool_v2e.py` widens the pool to find comparable signband-like rows, but that pool is also only a visual-QA surface.
 
-The v2f homogeneous gate tests whether the widened v2e pool can honestly become a same-crop-world packet. It cannot. The strict reuse lane finds compact target strips for `H-654`, `M-1310`, and `M-1320`, but not `M-811`; under the same gate it has only seven original fixed real-negative CISIs and source-page collisions between `M-1310`/`M-1315`/`M-1314` on `n202` and `M-1320`/`M-1322` on `n203`. A derived top-strip lane is acquisition infrastructure only: it still misses `M-1320` and `M-811` before visual review, has six original fixed real-negative CISIs, and cannot produce an FPR without a new blind packet.
+The v2f homogeneous gate tests whether the widened v2e pool can honestly become a same-crop-world packet. It cannot. The strict reuse lane finds compact target strips for `H-654`, `M-1310`, and `M-1320`, but not `M-811`; under the same gate it has only seven original fixed real-negative CISIs and source-page collisions between `M-1310`/`M-1315`/`M-1314` on `n202` and `M-1320`/`M-1322` on `n203`. A derived top-strip lane is acquisition infrastructure only: it still misses `M-1320` and `M-811` before visual review, has six original fixed real-negative CISIs, and cannot produce an FPR — a false-positive rate — without a new blind packet.
 
-The future v2f standard is now explicit: at least 12 fixed real signband-negative CISIs, at least 12 source-real nonlinguistic null crops, at least 32 fixed-seed synthetic nulls across matched texture/noise, asemic stroke, mirror/reversal, and shuffled/collage families, plus auxiliary sentinels that never count in the denominator. Any hard or uncertain target-like/directional call on a denominator row fails the apparatus.
+The future v2f standard is now explicit: at least 12 fixed real signband-negative CISIs, at least 12 source-real nonlinguistic null crops, at least 32 fixed-seed synthetic nulls across matched texture/noise, asemic stroke, mirror/reversal, and shuffled/collage families, plus auxiliary sentinels that never count in the denominator. A null crop is a control image with no real inscription structure in it; a sentinel is a check row included to watch reviewer behaviour, never to prop up the denominator. Any hard or uncertain target-like/directional call on a denominator row fails the apparatus.
 
 The next packet must not mix target signband strips with negative page panels. Every target and negative must share the same `crop_kind`, `crop_stage`, enhancement protocol, and comparable geometry. Any visible label, page-context cue, duplicate image hash, non-comparable crop, or target-like uncertainty in the fixed denominator fails the whole packet instead of shrinking the denominator.
 

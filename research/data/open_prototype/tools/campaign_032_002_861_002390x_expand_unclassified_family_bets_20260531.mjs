@@ -1,6 +1,17 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// The 002-H-X parser classifies some X-slot signs (095, 125, 530, 705...) but leaves a
+// residue it cannot name. This script studies that residue. It reads the parse-skeleton
+// report CSV from reports/ (not the raw corpus), keeps only rows whose predicted_class is
+// 'unclassified_x_slot', and groups them by the X sign. For each unclassified X it profiles
+// how many rows exist, how often the text continues after X, and which heads, sites, object
+// types, and first tail signs it occurs with. On the biggest families it stakes five bets:
+// 000 as a null/zero-complement class, 031 as a weak terminal-class candidate, 455 as an
+// open operator that may just be 220-formula residue, 032 as a route/boundary marker rather
+// than a class, and 350 as scope-formula bait. Writes a per-family CSV, a bets CSV, and a
+// summary JSON to reports/.
+
 const root = process.cwd();
 const parseRowsPath = path.join(
   root,

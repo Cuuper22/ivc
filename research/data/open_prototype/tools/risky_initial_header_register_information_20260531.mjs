@@ -1,3 +1,13 @@
+// Tests whether the first sign of an inscription works as a register header:
+// a slot whose identity tells you what kind of object carries the text. We
+// read the filtered corpus metadata, collapse to one row per canonical
+// numeric sign sequence, bucket each object into a carrier class (tablets,
+// rectangular/copper, square seals, pottery graffiti, round/cylinder seals,
+// tags, other), and measure the mutual information in bits between the first
+// sign and that class. Two 3000-iteration nulls guard the result: shuffling
+// signs within each row (does position matter?) and shuffling carrier labels
+// across rows (does the pairing matter?). Writes a JSON report and four CSVs
+// (bet summary, class counts, top MI contributions, null iterations).
 import fs from 'node:fs';
 import path from 'node:path';
 

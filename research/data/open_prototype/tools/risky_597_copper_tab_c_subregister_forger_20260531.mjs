@@ -1,3 +1,14 @@
+// Tests whether the rare sign `597` belongs exclusively to the copper-tablet
+// subregister (material Copper, type TAB:C), usually inside the fixed template
+// `617-142-597-032-(904/905)`. A context/template claim, not a sound value. The
+// script reads metadata_filtered.csv, collapses duplicate sign sequences, and
+// Fisher-tests every sign for copper-TAB:C enrichment so 597 gets an all-sign rank
+// and a Bonferroni-corrected p. A 5,000-iteration forger redraws the context rows
+// at random and takes the best p over all signs (max-stat). It also checks that
+// every row carrying the literal 617-142-597-032 motif is copper TAB:C, and counts
+// how many support rows are in Poor condition — a warning that caps the tier at
+// candidate. Writes a bet summary (JSON + CSV) plus support-row and top-sign CSVs
+// to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

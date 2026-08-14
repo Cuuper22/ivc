@@ -2,9 +2,11 @@
 
 Date: 2026-05-25
 
+This note is a probe — a quick, bounded check — of what the public web can do for the two minimal-contrast targets, `H-2237` and `H-2238` (tablets that differ from their controls by exactly one sign). It exists to settle whether public sources can validate the contrasts directly, or whether they can only sharpen the formal request to archives.
+
 ## Question
 
-Can the public/source web layer validate the `H-2237/H-2238` minimal-contrast targets, or does it only sharpen the next archive/CISI/HARP request?
+Can the public/source web layer validate the `H-2237/H-2238` minimal-contrast targets, or does it only sharpen the next archive/CISI/HARP request? (CISI is the Corpus of Indus Seals and Inscriptions; HARP is the Harappa Archaeological Research Project.)
 
 ## Inputs
 
@@ -26,7 +28,7 @@ accepted readings: 0
 
 ## What Was Found
 
-The exact HARP IDs route back to the Meadow/Kenoyer 2000 Harappa PDF:
+The exact HARP IDs route back to the Meadow/Kenoyer 2000 Harappa PDF. A "source anchor hit" below means the object could be tied to a specific published reference, not that any image of it was found.
 
 | Fig. 4 no. | Object | HARP/source ID | Public source result |
 | ---: | --- | --- | --- |

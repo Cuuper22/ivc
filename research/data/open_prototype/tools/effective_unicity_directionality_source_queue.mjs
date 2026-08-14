@@ -1,3 +1,17 @@
+// The directionality candidate rests on transliterated corpus rows, not on
+// photographs of the actual objects. Before we trust it, each supporting row
+// needs a source image check. This script builds that work queue. It takes the
+// harshest corpus scope (lipi_numeric_clean_candidate rows, exact-collapsed,
+// top-10 edge signs removed, one-edit families merged), keeps Mohenjo-daro and
+// Harappa rows, and scores each row with the leave-one-out bigram direction
+// test (stored vs reversed log probability). It then scans every reports CSV
+// whose name hints at source material (source/route/crop/witness/adjudication/
+// manifest/token_order) and ranks the best source hint per CISI number on a
+// 0-85 scale. Each queue row gets a priority band (P0-P3) from its direction
+// signal and source availability, plus leave-one-out deltas showing how much
+// the site-level win share depends on that single row. Writes a JSON summary,
+// the ranked queue CSV, and the per-CISI source index CSV. This is an
+// acquisition queue only — it proves nothing about reading direction itself.
 import fs from 'fs';
 import path from 'path';
 

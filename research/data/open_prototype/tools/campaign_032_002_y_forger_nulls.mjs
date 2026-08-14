@@ -1,3 +1,15 @@
+// Null-model forger for the Y-class terminality claim: the sign Y right after 002 predicts
+// whether the inscription ends there, with fixed classes (817 hard closure, 820/861 leaky
+// closure, 390/368/031/220/900/300 branch heads, a small-n closure-like set, other). The
+// observed model is a leave-one-out predictor: each row's terminality is predicted from the
+// terminal rate of the other rows sharing its Y class, and scored by accuracy, Brier score,
+// and log loss, plus the closure-minus-branch terminal-rate gap. We load the strict,
+// deduplicated 002 rows from two earlier report CSVs (all 002 rows, and 002-after-032 rows)
+// and rerun the same scoring under five nulls: shuffling terminality or Y globally, shuffling
+// either within site/type/symbol register blocks, and an independent per-register generator.
+// The fraction of null runs that match or beat the observed scores is the false-positive
+// rate. CLI: iterations (default 2000) and seed (default 20260529) as positional arguments.
+// Writes a per-iteration CSV and a JSON summary to data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

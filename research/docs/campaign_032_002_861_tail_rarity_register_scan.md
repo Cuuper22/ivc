@@ -4,7 +4,9 @@ Date: 2026-05-29
 
 ## Question
 
-After `533-717` looked restricted, the danger was selection bias:
+This note records a self-check against selection bias. A "tail" is material after the sign pair `002-861` at the end of an inscription row (signs are numeric IDs); a "register" is the object class the row sits on — site, seal type, icon, shape.
+
+After `533-717` looked restricted, the danger was:
 
 ```text
 pick a rare tail after seeing it, then call its tiny cell meaningful
@@ -41,7 +43,7 @@ bare 002-861: 113
 small perfect register cells: 20
 ```
 
-Main tail counts:
+Main tail counts (`<END>` means the row ends bare, with no tail):
 
 | tail after `002-861` | rows | source-visible rows | Mohenjo no-icon `SEAL:R` rows | status |
 |---|---:|---:|---:|---|
@@ -78,7 +80,7 @@ Still live:
 inside Mohenjo-daro no-icon SEAL:R + 002-861.
 ```
 
-Why:
+Why: the same register does not always take `533-717`:
 
 ```text
 M-355 is cuboid-convex and same-register but takes a different long tail.
@@ -87,7 +89,7 @@ M-1273 is same-register and source-visible but takes 603.
 M-1954/M-1973 are same-register bare controls but remain source-pending.
 ```
 
-The scan also found 20 small perfect-looking register cells. That means rarity plus tidy conditioning is not enough. `533-717` needs source-visible and family-blocked contrast, not just a low count.
+The scan also found 20 small perfect-looking register cells — tiny groups that look tidy purely by chance. That means rarity plus tidy conditioning is not enough. `533-717` needs source-visible and family-blocked contrast — comparisons that control for copy-families of near-identical objects — not just a low count.
 
 ## Next Test
 

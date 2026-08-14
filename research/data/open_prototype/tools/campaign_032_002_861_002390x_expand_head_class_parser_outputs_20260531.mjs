@@ -1,6 +1,19 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script turns the head-class transfer results into readable parser
+// output, so we can see what the current model would actually claim for real
+// inscriptions. It reads the two CSVs written by the head-class transfer-bets
+// run (per-head metrics and per-frame rows), picks the frames worth showing —
+// head 220, head 390 with X in 125/095/692/705, and the terminal-default and
+// closed-edge heads 031, 861, 920, 405, 056 — and emits for each a structural
+// parse string like "FRAME(002) + head gloss + X gloss + TAIL(...)", a
+// provisional semantic gloss, a confidence tier, and a testable prediction
+// (should close, or should keep its tail). The summary carries an explicit
+// warning: these are structural glosses, not translations. Writes parse rows
+// and three lane-level bets as CSVs plus a summary JSON to
+// data/open_prototype/reports.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const checkedDate = '2026-05-31';

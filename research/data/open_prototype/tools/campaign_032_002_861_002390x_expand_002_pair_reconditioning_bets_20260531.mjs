@@ -1,6 +1,19 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script tests whether sign 002 changes how the pair that follows it
+// behaves. For every adjacent sign pair H-X in every text of
+// lipi/metadata_filtered.csv, it records whether the pair is "gated" (a 002
+// immediately precedes H) and whether the text continues after X. Pairs with
+// at least 2 gated and 2 ungated rows get an open-rate delta: gated open rate
+// minus ungated open rate. A shift of +0.5 or more means "002 opens this
+// pair"; -0.5 or less means "002 terminalizes it"; anything between is weak.
+// The bets recorded from the result: 002 is a pair-reconditioner, not a
+// universal opener — it opens 390-125, closes zero-complement pairs like
+// 031-000 and 817-000, and leaves pairs such as 220-455 untouched. Writes the
+// pair-shift table, the raw rows for the top shifted pairs, and the bets as
+// CSVs plus a summary JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');

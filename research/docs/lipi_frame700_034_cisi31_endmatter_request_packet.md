@@ -4,9 +4,9 @@ Date: 2026-05-25
 
 ## Question
 
-What exactly should be requested from CISI 3.1/end matter, HARP, or archive notes before the current `032/033/034` panel graph can be used as linguistic evidence?
+This note is a shopping list for source evidence. It exists because the current panel graph for the sign codes `032/033/034` — the map of which catalog rows sit on which physical sides of which objects — is blocked on unresolved catalog labels. The question: what exactly should be requested from CISI 3.1 (the Corpus of Indus Seals and Inscriptions, volume 3.1, whose end matter carries object-level notes), from HARP (the Harappa Archaeological Research Project archive), or from other archive notes, before that panel graph can be used as linguistic evidence?
 
-This is a source-acquisition packet. It is not a decipherment claim.
+This is a source-acquisition packet — a bundled request list. It is not a decipherment claim.
 
 ## Inputs
 
@@ -34,6 +34,8 @@ accepted readings: 0
 
 ## P0 Core Requests
 
+P0, P1, and P2 are priority ranks: P0 rows must be answered first, P1 next, P2 last.
+
 | Object | Why it is P0 |
 | --- | --- |
 | `H-771` | Needs `A/A bis/A ter/A quater` same-side photo selection plus `B` resolved. |
@@ -48,7 +50,7 @@ accepted readings: 0
 
 ## Family Rows
 
-Exact-family comparanda are now explicit request rows, not prose:
+Comparanda are comparison objects. Exact-family comparanda share the same inscription family as a target and could be copies of one another; local-neighborhood comparanda are catalog neighbors that share tokens. Both are now explicit request rows, not prose:
 
 ```text
 H-925 exact family comparanda: H-326; H-924
@@ -85,7 +87,7 @@ findspot/period/phase/stratum/depth
 
 ## Decision Rule
 
-A row can enter a source-normalized substitution test only after the source evidence answers the specific blocker for that row. Family and neighborhood rows do not create evidence by repetition; they are contamination controls.
+A row can enter a source-normalized substitution test — the check of whether `032`, `033`, and `034` alternate in the same stable slot on source-confirmed sides — only after the source evidence answers the specific blocker for that row. Family and neighborhood rows do not create evidence by repetition; they are contamination controls.
 
 If the source material shows that a local two-row packet suppresses a side, mixes a copy family, or collapses non-comparable source panels, the relevant `032/033/034` contrast must be downgraded or killed.
 

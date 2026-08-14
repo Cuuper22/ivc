@@ -10,7 +10,7 @@ After source normalization, what is the actual linguistic question for `002-390-
 
 The live object is the `002-390-X` branch slot, not `125` by itself.
 
-`125` is the strongest current branch member because `M-119` and `M-735` are strict public source-visible witnesses, with `Sktd-1` as a weaker panel-bound candidate. But `M-70` and `M-71` are strict source-visible non-`125` continuations, so `125` is not required after `002-390`.
+`125` is the strongest current branch member because `M-119` and `M-735` are strict public source-visible witnesses, with `Sktd-1` as a weaker panel-bound candidate. But `M-70` and `M-71` are strict source-visible non-`125` continuations — so `125` is one option after `002-390`, not a requirement.
 
 The branch contrast is therefore:
 
@@ -55,4 +55,4 @@ No value, phonetic reading, language identity, or translation is accepted.
 
 Run token-boundary adjudication on `M-119`, `M-735`, `M-70`, and `M-71`, with `Sktd-1` downweighted and `M-38` excluded unless a sharper source appears.
 
-The required output is not a reading. The required output is whether source-visible inscriptions preserve a real branch slot after `002-390`, and whether `125` survives as an independent branch member after side/order and formula-family collapse.
+The required output is not a reading. It is an answer to two questions: do source-visible inscriptions preserve a real branch slot after `002-390`, and does `125` survive as an independent branch member after side/order and formula-family collapse?

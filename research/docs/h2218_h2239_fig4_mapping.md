@@ -4,15 +4,13 @@ Date: 2026-05-24
 
 ## Purpose
 
-This artifact maps the local H-2218 through H-2239 validation sheet to Meadow and Kenoyer 2000, Fig. 4.
+This note ties our local validation sheet for the H-2218 through H-2239 tablets to a published figure: Fig. 4 of Meadow and Kenoyer 2000. It exists because three different numbering systems describe the same 22 objects, and they are easy to confuse:
 
-The goal is to separate three things that are easy to confuse:
+- local side-order signatures from `lipi`, the project's working transcription corpus — the recorded order of the inscribed sides of each tablet;
+- published Fig. 4 item numbers;
+- Meadow and Kenoyer's manufacturing groups — their grouping of the tablets by how they were made.
 
-- local `lipi` side-order signatures,
-- published Fig. 4 item numbers,
-- Meadow and Kenoyer's manufacturing groups.
-
-This is source control only. It is not a reading.
+This is source control only — bookkeeping that ties local rows to published object identities. It is not a reading of any sign.
 
 ## Local Artifacts
 
@@ -57,6 +55,8 @@ missing_fig4_items: 0
 
 ## Fig. 4 Mapping
 
+In this table, `CISI` is the object's number in the Corpus of Indus Seals and Inscriptions, and `HARP Object` is its excavation designation from the Harappa Archaeological Research Project. `Local Signature` is the side-order class from the local validation sheet: `A` is the majority side order, `B side swap` means local sides 1 and 2 appear in swapped order, and the `154` and `033` variants are the two tablets whose signature differs by one sign (`154` for `156`, and `033` for `034`).
+
 | Fig. 4 No. | Manufacturing Group | CISI | HARP Object | Local Signature |
 | ---: | --- | --- | --- | --- |
 | 2 | group 1 | `H-2221` | `H97-3304/8040-01` | B side swap |
@@ -98,7 +98,7 @@ That is an important constraint. It blocks the easy story that side-order variat
 
 The public Meadow and Kenoyer 2000 PDF includes a coarse Fig. 4 image and a readable legend. This is enough to map local rows to published figure numbers and manufacturing groups.
 
-It is not enough to accept detailed sign segmentation, allography, or side orientation. Detailed validation still needs higher-resolution plates, original CISI plates, or direct image access.
+It is not enough to accept detailed sign segmentation (splitting an inscription into individual signs), allography (deciding which shapes are variants of the same sign), or side orientation. Detailed validation still needs higher-resolution plates, original CISI plates, or direct image access.
 
 Follow-up visual availability audit:
 

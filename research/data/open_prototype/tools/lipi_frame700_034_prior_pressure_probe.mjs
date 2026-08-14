@@ -1,6 +1,17 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script confronts the live 034 finding with the published literature. Each of its
+// eight hard-coded rows pairs one prior claim -- Rao et al.'s Markov structure results, the
+// Farmer/Sproat/Witzel short-text skepticism, Kenoyer and Meadow's context requirements,
+// allograph and admin-use hypotheses, and others -- with the local test that answers it and
+// the actual numbers from our own reports. To fill in those numbers it reads the frame700
+// subtype rows CSV, the blocked-null summary JSON, the independent triad audit CSV and its
+// summary, and the source-leads summary JSON. It writes one CSV (one row per pressure, with
+// claim, local result, effect on 034, and next action) and one JSON summary. The shared
+// verdict it documents: prior work keeps 034 alive as a distributional residue but licenses
+// no reading, and every path forward runs through source-image validation.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 

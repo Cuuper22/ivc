@@ -1,3 +1,14 @@
+// A "risky bet" probe (2026-05-31, wild-shot tier): is sign 820 a shape-stable
+// bridge candidate into a descendant script, distinct from its terminal partners
+// 817 and 861? The script reads the v2 source-token segments and the v3
+// impostor-forger rows for sign 820, then summarizes each of the three signs'
+// tokens: how many crops, how many distinct CISI objects and image hashes,
+// and the spread of aspect ratio and ink density. The killing observation is
+// independence: all of 820's token crops come from a single CISI object (M-381),
+// so the apparent Brahmi ra/tha agreement could be one object counted many
+// times. It writes a single JSON report recording the verdict — not promotable
+// until at least 3 independently boxed 820 tokens exist — and claims no
+// phonetic value for 820.
 import fs from 'node:fs';
 import path from 'node:path';
 

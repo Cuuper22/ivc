@@ -2,6 +2,12 @@
 
 Date: 2026-05-26
 
+## What This Note Is
+
+This note asks whether looking harder at the same published pictures helps. A recut, or recrop, means going back to the highest-resolution version of a source page we can obtain and cutting a fresh, tighter image of the object, rather than reusing an earlier low-resolution crop. It is the cheapest possible upgrade: no new source, no new permission, just better pixels.
+
+The branch under test is the proposal that our local sign `110` corresponds to Parpola's sign no. 41 — Parpola's catalog being an external sign-numbering system. Two objects, H-2147 and H-940, are the weak links in that branch, so the question is whether better crops of them settle anything.
+
 ## Question
 
 Can public recropping improve H-2147 or H-940 enough to strengthen the local `110` / Parpola sign-no.-41 branch?
@@ -73,7 +79,7 @@ Accepted:
 
 - H-2147 remains public object-visible through `Figure 10.17 -> H95-2514`.
 - H-2147 must be demoted from "candidate single-sign panel" to "candidate component within a multi-component panel."
-- H-940 has no better public-resolution witness in the checked IA IIIF or JP2 routes.
+- H-940 has no better public-resolution witness in the checked IA IIIF or JP2 routes. A witness is one published record of an object; several witnesses of the same object can disagree.
 - H-2148 remains the cleanest current source-visible/count-mapped `110` branch witness.
 
 Rejected:

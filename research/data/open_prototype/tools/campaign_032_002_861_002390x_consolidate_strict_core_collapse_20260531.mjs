@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script asks: if we throw away every inscription that is not "strict" —
+// not verified against a source image good enough for token boxes — what is
+// left of the 002-390-X parser? It reads the two earlier source-weight CSVs
+// (the X-slot rows and the left-context rows), keeps only rows whose
+// source_class is "strict", joins them by object, and labels each surviving
+// row as open-branch core (X = 125) or terminal-branch core (X = 095 or 692).
+// It then runs four contradiction checks — 125 must never be terminal, 095/692
+// must always be terminal, and so on — and records that only the open-versus-
+// terminal syntax contrast survives; every semantic gloss is demoted.
+// Outputs: three CSVs (rows, bucket summaries, contradiction checks) and a
+// summary JSON in data/open_prototype/reports, with the summary printed.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const xRowsPath = path.join(

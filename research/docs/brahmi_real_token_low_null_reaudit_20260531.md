@@ -2,7 +2,7 @@
 
 Date: 2026-05-31 America/Los_Angeles.
 
-This note re-earns the stopped Brahmi checkpoint without reading the quarantined `v3b` artifacts. It is a negative gate, not a phonetic result.
+The `v3b` artifacts are quarantined, so this note re-earns the stopped Brahmi checkpoint from scratch, without reading them. It is a negative gate, not a phonetic result.
 
 ## Guardrail
 
@@ -48,7 +48,7 @@ Low-null reaudit:
 | Review-packet eligible low-null rows | 0 |
 | Accepted phonetic anchors | 0 |
 
-Interpretation: the low real-token-null subset contains no hidden Brahmi phonetic anchor. Even the rows where real Indus token impostors do not frequently reproduce the apparent match are blocked by the original shape nulls and the independent-source preflight. The strongest-looking low-null rows are therefore failure diagnostics, not candidate values.
+What this means: the low real-token-null subset hides no Brahmi phonetic anchor. Even the rows where real Indus token impostors rarely reproduce the apparent match are still blocked by the original shape nulls and the independent-source preflight. So the strongest-looking low-null rows are failure diagnostics, not candidate values.
 
 ## Input Hashes
 

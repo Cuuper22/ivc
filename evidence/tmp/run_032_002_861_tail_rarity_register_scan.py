@@ -1,3 +1,18 @@
+"""Test whether rare tails after 002-861 are just artifacts of narrow registers.
+
+The worry: a tail that always appears on one kind of object (say, Mohenjo-daro
+no-icon SEAL:R seals) may mark the object class, not the language. This script
+extracts every post-002-861 occurrence from the strict corpus, tags each with
+its register (site, type, symbol, shape) and a family key, and flags "perfect
+small register cells" — tails with three or fewer rows all in a single
+register, which look clean but prove nothing. It then zooms in on the
+Mohenjo-daro no-icon SEAL:R focus register to show it splits into bare,
+533-717, 603, and a long tail. Writes occurrence and tail-summary CSVs for
+the full field and the focus register, plus a JSON payload recording the
+decision that 533-717 is a subclass/apposition candidate, not a whole-register
+marker.
+"""
+
 from __future__ import annotations
 
 import csv

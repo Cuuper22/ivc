@@ -2,6 +2,8 @@
 
 Date: 2026-05-26
 
+This note tests whether one sign steers the choice of another two positions later. Signs in this corpus are numeric IDs. `A-220-X` means: some sign `A`, then `220`, then a variable sign `X`. The question is whether `A` selects `X`. "Strict dedup" collapses rows with the same frame and text into one unit of evidence, so a copied inscription cannot count twice. A "block" is a group of rows matched on site and object type, used so those cannot do the explaining. "Companion side" is the other inscribed face of the same object.
+
 ## Result
 
 `240-220` strongly favors `032` in strict deduped data.

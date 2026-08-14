@@ -2,9 +2,11 @@
 
 Date: 2026-05-25
 
+This note records an email request for source images, actually sent. The four target tablets sit in manufacturing group 3 of Meadow and Kenoyer 2000, Fig. 4, and they carry the sign contrasts (`154/156` and `033/034`) that can only be checked against real photographs. Earlier notes identified the request as needed; this note is the record that it was written and sent.
+
 ## Question
 
-Can the exact Harappa/HARP image route be converted from "we should request this" into an actual sent acquisition step?
+Can the exact Harappa/HARP image route (HARP is the Harappa Archaeological Research Project) be converted from "we should request this" into an actual sent acquisition step?
 
 ## Action
 

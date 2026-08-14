@@ -2,6 +2,14 @@
 
 Date: 2026-05-26
 
+## What This Note Is
+
+This note is about a small gap that blocks a large claim.
+
+The tablet H-2148 has two inscribed faces. A published photograph shows one face carrying a single sign. Parpola states that the reverse of this tablet carries his sign no. 41. Our own catalog records one of its rows as `+110+`. It is tempting to line all three up and conclude that our `110` is Parpola's 41.
+
+The obstacle is the same-side identity problem: nothing published so far says which physical face is the reverse. Until the photographed one-sign face and Parpola's reverse are demonstrably the same side, the three facts cannot be joined. This gate — a pass/fail test a claim must clear — states exactly what would close that gap.
+
 ## Question
 
 Can we tie the H-2148 / H2001-5142 one-sign panel to the reverse side and to Parpola 1994 sign no. 41, while preserving local row `481.2 +110+`?
@@ -20,7 +28,7 @@ Local Lipi row 481.2: H-2148 short side is +110+.
 Visual check: the one-sign H-2148 panel is compatible with Parpola sign no. 41.
 ```
 
-But the current public layer still does not label the one-sign panel as reverse, B-side, or Parpola sign no. 41. Therefore the crosswalk remains unaccepted.
+But the current public layer still does not label the one-sign panel as reverse, B-side, or Parpola sign no. 41. Therefore the crosswalk — a verified mapping between two sign-numbering systems — remains unaccepted.
 
 ## Checked Evidence
 
@@ -84,7 +92,7 @@ This is count-level source mapping only.
 Accepted for current research use:
 
 ```text
-H-2148 is the cleanest live branch target.
+H-2148 is the cleanest live branch target. (The branch is the small group of objects used to test the local `110` / Parpola 41 question.)
 The sign-list convention is resolved to Parpola 1994 sign no. 41.
 The one-sign H-2148 panel is visually compatible with Parpola sign no. 41.
 The same-side identity question is now exactly defined.

@@ -2,6 +2,10 @@
 
 Date: 2026-05-25
 
+This note is an adjudication: a written ruling on what one image proves. The image is the public reproduction of Marshall's Plate CXIV, object no. 532, which we believe is the same object as our row `M-2104`.
+
+Everything turns on a count. If the stroke group on the object holds exactly three strokes, one hypothesis about the sign labelled `034` stays alive. If the image cannot force that count, the hypothesis gets no support from here — however suggestive the picture looks.
+
 ## Question
 
 Does the public Marshall Plate CXIV no. 532 image validate the `M-2104` target-side three-stroke U/pot cluster?
@@ -12,7 +16,7 @@ No. It makes the target side image-reachable, but it does not settle the count.
 
 The public Harappa/Marshall image does show no. 532, and the crop shows a U/V- or pot-like element with an adjacent stroke group. That is real progress: `M-2104` is no longer dependent only on Parpola's standardized drawing.
 
-But the crop is too low-resolution for the exact count. One visual review sees three separable strokes and an insecure possible fourth. The adversarial review says four is plausible but not secure. So this image cannot validate `034` as the three-stroke component.
+But the crop is too low-resolution for the exact count. One visual review sees three separable strokes and an insecure possible fourth. The adversarial review — a reviewer whose job is to argue the claim down — says four is plausible but not secure. So this image cannot validate `034` as the three-stroke component.
 
 ## Stored Outputs
 
@@ -30,6 +34,8 @@ Derived local visual files:
 
 ## Adjudication
 
+Four independent reads of the same crop. Hypatia and Kuhn are the project's two standing adversarial reviewers.
+
 | Reviewer | Stroke Read | Verdict | Risk |
 | --- | --- | --- | --- |
 | Local direct inspection | At least 3; possible 4 | Raw target-side lead only | Curvature, contrast blowout, and boundary ambiguity. |
@@ -38,6 +44,8 @@ Derived local visual files:
 | Local synthesis | 3-to-4 ambiguous | Image-reachable, count unresolved | Higher-resolution source required. |
 
 ## Pass / Fail
+
+Each line is a separate test with a fixed verdict.
 
 ```text
 public image reaches target side: pass
@@ -64,6 +72,8 @@ Follow-up status:
 ```
 
 ## Claim Status
+
+What this note adds to the project's accepted set. Nothing:
 
 ```text
 accepted translations: 0

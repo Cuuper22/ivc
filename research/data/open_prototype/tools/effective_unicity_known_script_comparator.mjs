@@ -1,3 +1,15 @@
+// How good is our masked-sign predictor, really? A raw accuracy number on an
+// unread script means little without a yardstick. This script builds that
+// yardstick by lining up the Indus effective-unicity results against Linear B
+// Series D — a known, readable script whose readings we hid from the model —
+// under the same IVC p95 length cap. It reads five earlier report files (the
+// Indus degeneracy summary and curve, the Linear B scarcity, gapped-heldout,
+// and control outputs), pulls the top-1/top-5/MRR numbers from each, and adds
+// a label-symmetry cost (log2 of the factorial of the sign inventory size —
+// the bits needed to pin down which sign is which). It writes one comparison
+// table as both CSV and JSON to data/open_prototype/reports/. This is
+// calibration only: it says how the Indus numbers compare to a known script
+// under matched scarcity, not what any Indus sign means.
 import fs from 'node:fs';
 import path from 'node:path';
 

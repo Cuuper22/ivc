@@ -1,3 +1,15 @@
+// Hostile follow-up to the 240-798 copper-axis result. That result rested on a few
+// texts ending `240-798` that also carry signs 407/845/095. If those texts are
+// really variants of one original, the evidence is one witness, not several. This
+// script reruns the Fisher/max-stat test under three increasingly harsh grouping
+// policies: exact text (each unique text counts once), axis_family (all 798-final
+// texts with both 407 and 845 merge into a single family), and
+// source_semantic_family (additionally merging the 095-bearing 798-final texts).
+// For each policy it reads metadata_filtered.csv (complete rows only), collapses
+// penult-240 rows into families, Fisher-tests the four axis flags against
+// final=798, and runs a 5,000-iteration label-shuffle max-stat null. The claim
+// survives only if the axis feature stays significant under the axis_family
+// collapse with at least two positive families. Writes one JSON report to reports/.
 import fs from 'node:fs';
 import path from 'node:path';
 

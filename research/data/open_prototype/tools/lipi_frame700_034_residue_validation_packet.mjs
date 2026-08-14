@@ -1,6 +1,21 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// The blocked-null test left a statistical residue: 034 rows are more predictable than
+// chance even under harsh shuffles. This script turns that residue into a concrete
+// validation worklist. It reads the frame700 subtype rows CSV plus any checked public
+// source leads, excludes the H-2218..H-2239 series, and selects three groups: every
+// remaining 034 row (the candidates), hand-defined 033 sibling rows (e.g. the +400-740-176+
+// companion family), and 032 control rows (so the test cannot overfit to a two-way 033/034
+// contrast). Each row gets a priority score built from explicit bonuses -- the 034-specific
+// +002-861-416+ companion family adds 60, no-longer-text contexts 30, the enriched h_10_13
+// size bin 20, and so on -- with a penalty for repeated sequence families. Each row also
+// carries the source questions to answer, the exact outcomes that would support or kill the
+// claim, and empty manual fields for a human to fill during source checking. Output is a
+// ranked CSV worksheet and a JSON summary including thresholds and a log of the public
+// searches that came up empty. Nothing here validates anything; it defines what validation
+// would take.
+
 const base = process.cwd();
 const reportsDir = path.join(base, 'data', 'open_prototype', 'reports');
 

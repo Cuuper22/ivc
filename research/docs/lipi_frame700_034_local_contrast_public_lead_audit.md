@@ -4,7 +4,7 @@ Date: 2026-05-25
 
 ## Question
 
-Does the public web contain source-grade evidence for the local contrast stress batch?
+This note records a search of the open web for images and plates covering a specific set of objects. FRAME700 is the project's label for short inscription rows built on sign `700`, such as `+700-034+`; the `034` work asks whether the sign codes `032`, `033`, and `034` are separate choices in the same slot. The local contrast stress batch is the group of objects whose local records put those codes closest together, so it is the group most likely to break the idea. Source-grade means an image or plate entry good enough to check signs against, rather than a mention. The question: does the public web contain source-grade evidence for that batch?
 
 ## Outputs
 
@@ -59,13 +59,13 @@ This is not source-grade validation. The same paper states that actual shapes re
 
 ## Consequence
 
-The local contrast lane is not publicly solvable from the checked web layer. It should go straight to CISI, HARP, Harappa archive images, library plates, or direct archive access.
+The local contrast lane — one of the separate evidence tracks the project runs, kept apart so a result in one does not lean on the other — is not publicly solvable from the checked web layer. It should go straight to CISI (the Corpus of Indus Seals and Inscriptions, the standard photographic catalog), HARP (the Harappa Archaeological Research Project archive), Harappa archive images, library plates, or direct archive access.
 
 The two secondary mentions are useful only for request wording:
 
 ```text
 H-353: ask for all prism sides and check whether the local H-983/H-353/H-2211 contrast survives.
-H-925: ask for source image and side data because H-925 is reused as a control for H-893 and H-2137.
+H-925: ask for source image and side data because H-925 is reused as a control, a comparison object, for H-893 and H-2137.
 ```
 
 No source image, side order, sign separation, or row assignment is accepted from the public layer.

@@ -1,3 +1,15 @@
+// Tests whether sign `741` marks the Bull1:J / Bull1:L iconographic subtypes
+// specifically, rather than bull imagery in general — an icon-class claim with no
+// sound value. The script reads metadata_filtered.csv, collapses duplicate sign
+// sequences, and Fisher-tests every sign for Bull1:J/L enrichment in seven pools:
+// all rows, complete only, non-poor, leave-Mohenjo-daro, leave-Harappa, SEAL:S
+// only, and — the sharpest control — rows restricted to Bull1 variants only, so
+// 741 must separate J/L from its sibling bull subtypes. Each pool applies
+// Bonferroni over all signs and a 3,000-iteration max-stat forger that redraws the
+// context rows at random. It also checks how tightly the sub-motif `741-060-920`
+// stays inside Bull1:J/L rows. Candidate status requires every pool's test to pass
+// at 0.01. Writes a bet summary (JSON + CSV) plus pool, support-row, motif-row,
+// and top-sign CSVs to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

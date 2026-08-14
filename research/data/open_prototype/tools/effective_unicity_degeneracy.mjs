@@ -1,3 +1,19 @@
+// Measures how much the corpus itself pins down each sign — "effective unicity" — and how
+// much stays degenerate: interchangeable under relabeling. Two complementary measurements.
+// First, label symmetry: signs whose full context profiles (counts, positions, neighbors)
+// are identical could swap labels with no observable difference; we count those equivalence
+// classes and their log2(n!) bits of residual freedom. Second, a masked-sign test: hide one
+// sign at a time and ask a leave-one-row-out predictor (unigram + length-position + left and
+// right neighbor scores, softmax-combined) to guess it, reporting top-1/top-5 accuracy,
+// entropy, and the effective number of candidates. Both are traced across coverage
+// fractions (10% to 100% of the exact-deduplicated clean Lipi rows from lipi_scope_rows.csv)
+// and compared to six seeded forgeries — token shuffles, position-slot nulls, an
+// edge-preserving shuffle, a register-blocked null, and a deliberately nonlinguistic
+// administrative template — to see which metrics real structure beats. CLI positional args:
+// iterations per control (default 100), seed (default 20260529), masked-sample limit for
+// nulls (default 1200). The summary states the hard boundary: no external anchor means no
+// phonetic values and no language ID, only structural constraint. Writes curve, null
+// iteration, and null summary CSVs plus a JSON summary to data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

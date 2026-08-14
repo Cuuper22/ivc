@@ -1,3 +1,16 @@
+// Writes "repaired minimal parser v2", the successor to minimal parser v1
+// after two later runs exposed a flaw. The rule-collapse controls and the x000
+// null-argument repair (whose summary JSONs this script reads) showed that the
+// broad "frame-proximal null" claim rested on a tautological pre-frame control,
+// so v2 demotes it to evidence and narrows the core null rule back to X=000 as
+// a clean zero-complement operator — now the strongest surviving subrule, the
+// only one that beat both the collapse controls and the repaired terminality
+// null. The rest of the ranking is hand-written: the 002-H-X frame stays core,
+// head-slot 000 becomes an edge candidate, 095/705 and 530/125 stay live but
+// not load-bearing, and 590/692/707 remain destructive hooks. Writes _model
+// and _decisions CSVs plus a summary JSON to data/open_prototype/reports/;
+// the recorded next step is to attack X=000 first.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

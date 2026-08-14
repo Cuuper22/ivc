@@ -1,3 +1,17 @@
+// Traces blocked row 3335.1 through the full git history of the Yajnadevam Lipi
+// repo, looking for any source trail the current CSV no longer shows. Working
+// in a pre-cloned copy under tmp/002390x_3335_yajnadevam_repo_trace_20260531/,
+// it pulls the target row from three layers (current HEAD, the schema-migration
+// commit, and the old "externalize" commit where the row was id 3335 and the
+// museum field said "Private collection"), runs git pickaxe and blame to find
+// every commit that touched the row, greps the whole tree for the target id and
+// sign string, and checks the seal-image mapping JSON plus the frontend code
+// path that renders images (keyed by CISI id, which this row lacks). Writes
+// seven CSVs and a summary JSON to data/open_prototype/reports/. Outcome: the
+// row appears only in inscriptions.csv and the derived (quarantined) glossing
+// file, has no image bridge in any commit, and the private-collection clue is
+// the only lead — no value or reading is accepted.
+
 import crypto from "node:crypto";
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";

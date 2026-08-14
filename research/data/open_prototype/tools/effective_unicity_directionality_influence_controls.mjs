@@ -1,3 +1,20 @@
+// Influence and concentration controls for the directionality result.
+//
+// The question: is the stored-vs-reversed order asymmetry spread across the
+// corpus, or carried by a handful of rows or one provenance family? A result
+// that collapses when a single seal is removed is fragile, not structural.
+// This script rebuilds the harsh directionality scope from lipi_scope_rows.csv
+// (exact-sequence collapse, top-10 edge-token removal, one-edit family
+// collapse), scores it with the same leave-one-row-out smoothed bigram test
+// used by the comparator, then performs jackknife removals: drop each row in
+// turn, and drop each site|type|symbol family in turn, remeasuring the
+// stored-win share each time. It repeats this for four site scopes (all,
+// Mohenjo-daro only, Harappa only, both). Deltas are ranked by absolute size
+// and written to two CSVs plus a JSON summary in data/open_prototype/reports/.
+// The summary's skeptic note flips wording at a 0.05 threshold: if removing
+// any one family moves stored-win share by 5 percentage points or more, the
+// result is labeled concentrated rather than distributed.
+
 import fs from 'fs';
 import path from 'path';
 

@@ -2,7 +2,7 @@
 
 Date: 2026-05-30
 
-This gate tests the most basic skeptic objection to the v2 Brahmi back-door run: before any visual descent claim is shown to reviewers, does the apparent family agreement survive duplicate collapse and object independence?
+This gate tests the most basic skeptic objection to the v2 Brahmi back-door run. The objection is simple: an apparent family agreement means little if it comes from the same crop counted twice or from a single object. So before any visual descent claim is shown to reviewers, we ask whether the agreement survives duplicate collapse and object independence.
 
 It does not. All 83 v2 families are blocked before review.
 
@@ -30,7 +30,7 @@ A sign/orientation family is eligible for a future blind visual packet only if i
 - original shape-null share <= 0.01,
 - original label-null share <= 0.01.
 
-Passing this gate would not accept a phonetic value. It would only permit a future blind panel with matched Brahmi negatives from the same date/manuscript band and comparable image geometry.
+Note what passing would mean: not an accepted phonetic value, only permission to build a future blind panel with matched Brahmi negatives from the same date/manuscript band and comparable image geometry.
 
 ## Result
 
@@ -68,4 +68,4 @@ The v2 headline near-misses are all blocked:
 
 Retracted as a descendant-script phonetic anchor. The v3 gate promotes no candidate to visual review and accepts no phonetic value.
 
-Residual value: v3 prevents repeated crops and one-object clusters from becoming visual-descent stories. The next valid Brahmi swing must acquire more independent source-token witnesses or move to a real-token impostor forger that samples matched Indus token crops from other signs.
+What the gate still buys us: v3 stops repeated crops and one-object clusters from turning into visual-descent stories. The next valid Brahmi swing must either acquire more independent source-token witnesses or move to a real-token impostor forger that samples matched Indus token crops from other signs.

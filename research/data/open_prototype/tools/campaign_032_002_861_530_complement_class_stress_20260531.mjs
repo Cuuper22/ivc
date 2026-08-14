@@ -1,3 +1,13 @@
+// Stress test for one parse bet: does sign 530 pick its one-sign complement from a
+// "closure-like" class — signs that tend to end things — rather than from arbitrary signs?
+// We read the filtered Indus inscription list (lipi/metadata_filtered.csv), keep one copy of
+// each distinct sign sequence, and pull out every "governed frame": a spot where sign 002 is
+// followed by a head sign, a branch sign, and a tail. For frames whose branch is 530 with
+// exactly one tail sign, we ask how that complement sign behaves everywhere else — how often
+// it ends a full inscription, ends a frame when it is itself the branch, or ends a frame when
+// it is the head — and classify it as terminal-like or not. The script writes the target rows,
+// the per-complement profiles, and a promote/break decision as CSVs plus a JSON summary to
+// data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

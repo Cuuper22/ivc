@@ -1,3 +1,14 @@
+// QUARANTINE GUARD. Everything listed in the quarantine manifest is quarantined
+// material — artifacts produced by a botched successor run after the
+// 2026-05-31T01:04 cutoff — and must not be cited as support for any claim.
+// This script enforces that rule. It reads the quarantine manifest CSV
+// (data/quarantine/botched_successor_after_20260531T0104_manifest.csv) and the
+// claim ledger (data/claim_ledger/claims.json), walks every string field of
+// every accepted claim, and checks whether any of them contains a quarantined
+// path (with backslashes normalized to forward slashes). If any accepted claim
+// cites a quarantined artifact, it prints the offending claim/path pairs to
+// stderr and exits 1; otherwise it prints a clean JSON status. Run it as a
+// check after ledger changes.
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';

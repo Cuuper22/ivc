@@ -1,6 +1,21 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script repairs a broken argument. An earlier claim used "000 before a
+// 002 frame is never text-final" as evidence for a null operator — but that is
+// circular: any token counted before a later 002 has tokens after it by
+// definition, so a 0/147 terminal rate proves nothing. To rebuild the case
+// fairly, this script deduplicates the corpus by text, tags every single sign
+// occurrence with a positional role relative to the 002 frame (X slot after
+// 002-HEAD, head slot right after 002, post-frame payload, pre-frame prefix,
+// or no 002 at all), and within each role compares how often 000 ends the
+// text versus how often nonzero signs in the same role do. Only a role with
+// 10+ zero rows and a terminal-rate gap of 0.2+ counts as support. Result:
+// the pre-frame control is formally demoted, X=000 zero-complement survives
+// as the clean subrule, and the broad frame-proximal null shrinks to an edge
+// candidate. Writes role-contrast and decision CSVs plus a summary JSON to
+// data/open_prototype/reports.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

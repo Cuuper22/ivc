@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Does the frame sign 002 change what the pair 390-125 means? The bet under test says yes:
+// a bare 390-125 is inherited raw material, but 002 "refunctionalizes" it into an open
+// selector that must continue. This script reads data/open_prototype/lipi/
+// metadata_filtered.csv, dedupes to canonical sign sequences, finds every 390-125 pair, and
+// splits the rows into two lanes by whether a 002 immediately precedes the 390. For each
+// lane it measures the continuing share, how often the tail starts with 632-032 (the
+// rank/title-like tail), and how many exact tails the lanes share. The decision rule is
+// explicit: candidate status requires the post-002 lane to always continue, beat the raw
+// lane's continuing share by at least 0.5, and share zero exact tails with it; weaker
+// contrasts leave the bet a wild shot. Writes the pair rows, both lane summaries, and the
+// single decision as CSVs plus a summary JSON in reports/.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');

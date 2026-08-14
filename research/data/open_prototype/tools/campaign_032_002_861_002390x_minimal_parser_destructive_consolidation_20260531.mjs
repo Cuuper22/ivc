@@ -1,6 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script tries to break the minimal 002-390-X parser, on purpose. Each surviving claim
+// is phrased as a destructive test: a rule plus the exact rows that would falsify it. It
+// reads the corpus from data/open_prototype/lipi/metadata_filtered.csv (deduplicated) and
+// the 15 target 002-390 frames from the branch-sign-ecology report, then runs eleven tests —
+// among them: a final 235 before a P086 head (390/405) predicts branch 125; an earlier 032
+// without 235 suppresses 125 (tested globally, locally, and on targets); 125 must continue;
+// the closed branches (072/095/140/346/692/705/707) must be terminal; 530 takes exactly one
+// complement; 390-590 requires an 032 tail; and closed subtypes must not swap under the same
+// left context. Every test records its checked count, failures, and a verdict. Survivors,
+// demotions (the global 032-suppression rule dies here), and per-source-tier rows go to
+// CSVs in reports/, plus a summary JSON.
+
 const root = process.cwd();
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');
 const targetFramesPath = path.join(

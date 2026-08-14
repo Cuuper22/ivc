@@ -1,3 +1,15 @@
+// Tests whether sign `520` is linked to the elephant icon ("Elep" in the corpus
+// iconography field) — a header/classifier for elephant-seal texts, possibly a
+// mostly-Mohenjo-daro convention rather than a pan-corpus one. This is a context
+// claim only; no sound value. The script reads metadata_filtered.csv, collapses
+// duplicate sign sequences, and Fisher-tests 520-presence against elephant rows in
+// eight pools (all, SEAL:S, square, complete, non-poor, leave-Mohenjo,
+// leave-Harappa, Mohenjo only) plus two initial-position-only variants (does the
+// row *start* with 520?). Every pool runs a 3,000-iteration null that redraws the
+// elephant rows at random, scoring both the exact 520 test and the best p over all
+// signs (max-stat). The tier ladder — wild shot, candidate, promoted candidate —
+// depends on which controls pass. Writes a JSON report plus summary, support-row,
+// elephant-without-520, top-sign, and forger-iteration CSVs to reports/.
 import fs from 'node:fs';
 import path from 'node:path';
 

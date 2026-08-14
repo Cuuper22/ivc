@@ -2,7 +2,9 @@
 
 Date: 2026-05-26
 
-This register separates corpus sources, structural scholarship, adversarial critiques, and Egyptian benchmark material.
+## What This Document Is And How To Read It
+
+This register is the project's catalog of sources: every dataset, book, paper, image lead, and contact route the work depends on, with what each may be used for and what status it currently holds. It exists so that no source can enter an argument with more strength than it has earned; it separates corpus sources, structural scholarship, adversarial critiques, and Egyptian benchmark material. One entry is one checked source or source action. Read the "Use" and "Status" columns together: they are usage rules, and the restrictions in them bind. Many entries end by listing what does not follow from the source — no reading, no sign value, no translation — and those closing clauses are the point of the entry, not boilerplate. Trust tiers such as T1 through T4 mark how far a source may be used before independent validation. Do not read any entry as evidence for a reading: registering, requesting, or even acquiring a source proves nothing about what any sign means.
 
 ## Core Corpus And Dataset Leads
 

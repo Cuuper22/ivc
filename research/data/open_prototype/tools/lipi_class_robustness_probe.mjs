@@ -1,3 +1,19 @@
+// A follow-up hardness test for the token-to-class signal: does the ability
+// of an inscription's signs to predict its lipi.class label survive when we
+// squeeze out duplication and edge-sign shortcuts? This script re-runs the
+// leave-one-out classifiers (majority, length, first/last-sign edge frame,
+// token naive Bayes) under six corpus-shrinking policies: exact-sequence
+// collapse; edge-frame collapse (rows sharing length plus first and last
+// sign become one family); one-edit-neighborhood collapse (rows within a
+// single substitution or deletion merge, via union-find); and all three
+// again after stripping the top 10 edge signs identified in
+// lipi_edge_removed_summary.json. Each policy is evaluated overall and
+// within every site/type/type-at-site stratum with at least 90 rows and two
+// class labels of 12+ families. If accuracy collapses under the harsher
+// policies, the earlier signal was riding on repeated formulas or edge-sign
+// conventions. Writes an inventory CSV (family counts per policy), a results
+// CSV, and a JSON summary. Structural scout only; class labels stay
+// unverified planning data.
 import fs from 'node:fs';
 import path from 'node:path';
 

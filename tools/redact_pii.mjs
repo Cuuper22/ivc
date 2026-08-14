@@ -1,19 +1,23 @@
 #!/usr/bin/env node
 // tools/redact_pii.mjs
 // =================================================================
-// Redact third-party PII (contact email addresses + private Gmail thread/message
-// IDs) from the workspace before publishing. Structure-agnostic: scans the whole
-// repo (skipping .git, _git_history, node_modules).
+// Remove third-party PII (personally identifiable information — here, contact
+// email addresses and private Gmail thread/message IDs) from the workspace
+// before publishing. It does not care about repo structure: it scans every
+// text file in the repo, skipping only .git, _git_history, and node_modules.
 //
 //   node tools/redact_pii.mjs            # DRY RUN: report only, writes nothing
 //   node tools/redact_pii.mjs --apply    # apply edits in place
 //
-// Emails: known research contacts get role placeholders; ANY other address (except
-// the maintainer's own) is redacted by default to [redacted-email]. Scholars' names
-// are left intact (normal citation); only addresses + mailbox IDs are removed.
+// How emails are handled: known research contacts get role placeholders, so the
+// text still says who was contacted without exposing the address. ANY other
+// address (except the maintainer's own) becomes [redacted-email] by default.
+// Scholars' names stay intact — that is normal citation; only addresses and
+// mailbox IDs are removed.
 //
-// NOTE: this repo's git history was scrubbed with git-filter-repo using the same
-// rules; this tool keeps the working tree clean for future additions.
+// NOTE: this repo's git history was already scrubbed with git-filter-repo using
+// the same rules. This tool exists to keep the working tree clean as new files
+// are added.
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -34,11 +38,12 @@ const EMAIL_MAP = {
   'carl@media.org':                        '[archive-uploader-email]',
   'rmrl@rmrl.in':                          '[rmrl-email]',
 };
-const KEEP = new Set(['cuuper225@gmail.com']); // maintainer's own; GitHub noreply also kept (no '@' literal redaction below touches it because it's allow-listed here)
+const KEEP = new Set(['cuuper225@gmail.com']); // The maintainer's own address is never redacted. The GitHub noreply identity is also kept — it is allow-listed below, so the generic email redaction never touches it.
 const GENERIC_EMAIL = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g;
 const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-// Gmail message/thread IDs: 16-char hex, 2026-epoch prefix "19e"; lookarounds (not \b)
-// so it ignores hex glued to '_' and never matches data IDs like tok_19b6...
+// Gmail message/thread IDs are 16-char hex strings; ones from the 2026 epoch start with "19e".
+// The pattern uses lookarounds instead of \b so hex glued to '_' is ignored — it must never
+// match data IDs like tok_19b6...
 const MSGID = /(?<![0-9a-f])19e[0-9a-f]{13}(?![0-9a-f])/g;
 
 function walk(dir) {
@@ -52,7 +57,7 @@ function walk(dir) {
 
 let totFiles = 0, totEmail = 0, totMsgid = 0;
 const genericEmails = new Set();
-KEEP.add('Cuuper22@users.noreply.github.com'); // keep maintainer GitHub identity if present in content
+KEEP.add('Cuuper22@users.noreply.github.com'); // Keep the maintainer's GitHub identity wherever it appears in content.
 
 for (const fp of walk(ROOT)) {
   let txt; try { txt = fs.readFileSync(fp, 'utf8'); } catch { continue; }

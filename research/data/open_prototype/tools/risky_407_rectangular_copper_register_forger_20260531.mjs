@@ -1,3 +1,15 @@
+// Widens the `407` copper-tablet claim: instead of copper/TAB:C alone, the bet is
+// that 407 marks a rectangular/copper administrative register spanning both
+// rectangular seals (SEAL:R) and copper tablets (TAB:C). Again a carrier-class
+// claim, with no sound value asserted. The script reads metadata_filtered.csv,
+// collapses duplicate sign sequences, and Fisher-ranks every sign for SEAL:R/TAB:C
+// enrichment across seven pools: all rows, complete only, non-poor, leave-Mohenjo,
+// leave-Harappa, and each big site alone. Each pool applies a Bonferroni correction
+// over all signs and a 3,000-iteration max-stat forger that redraws the register
+// rows at random and takes the best p over all signs. The tier is promoted only if
+// the main pool and all four preservation/site controls stay under Bonferroni 0.01.
+// Writes a bet summary (JSON + CSV) plus pool, support-row, and top-sign CSVs to
+// the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

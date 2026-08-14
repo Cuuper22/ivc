@@ -2,6 +2,8 @@
 
 Date: 2026-05-25
 
+This note sorts source photographs into bins by how a sign is actually drawn — its fine form — rather than by the number the corpus assigns it. The point is to find out whether the code `415` names one consistent shape or a mixed bag. The sorting was done blind, with crops stripped of labels, and it caught something worth having: the panel that looks like the target is often not the side the local row order would have predicted.
+
 ## Question
 
 The M-37/M-1206 source probe found a real broad visual recurrence but blocked the lazy conclusion:
@@ -42,7 +44,7 @@ tmp/m1206_m37_blind_visual_comparanda/derived/verified_panel_crops/contact_sheet
 
 The earlier rough crop packet is not used for adjudication because several crops were partial or mislabeled. The verified contact sheet was visually checked before this packet was written.
 
-After the first pass, a blind visual review was added:
+After the first pass, a blind visual review — crops judged with their object labels removed — was added:
 
 ```text
 data/open_prototype/reports/lipi_034_m1206_m37_415_fine_form_blind_review.csv
@@ -79,6 +81,8 @@ Explicit side-mapping conflicts:
 
 ## Adjudication
 
+Adjudication is the ruling on what the bins above are allowed to support.
+
 Accepted cautiously:
 
 ```text
@@ -108,7 +112,7 @@ If `415` were a single stable fine form and local row sides mapped directly to s
 
 The relevant prior-work lesson here is not "believe a sign list." It is the opposite: sign-list comparability, allography, mirroring, and segmentation have to be treated as live variables.
 
-Local crosswalk pressure still makes the frame worth studying:
+A crosswalk lines up one sign-numbering system against another, sign by sign. Local crosswalk pressure still makes the frame worth studying:
 
 ```text
 520 -> P217 is consistent in the current overlap layer.

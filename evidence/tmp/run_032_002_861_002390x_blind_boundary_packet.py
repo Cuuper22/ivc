@@ -1,3 +1,15 @@
+"""Builds the blind adjudication packet for 002-390-X token boundaries.
+
+The script takes the stored source crops of five witness objects (listed inline as
+WITNESSES) and re-issues them under neutral IDs (ALPHA through ECHO, shuffled with a
+fixed seed) with object IDs, target/control roles, and expected sign numbers stripped.
+"Blind" here means the person judging the panels cannot know which object or which
+expected reading they are looking at. It writes the blind panels and a separated
+overlay key under tmp/blind_boundary_packet_alpha, plus a summary JSON and a docs/
+markdown note. The packet exists to test whether the visible sign-band segmentation
+survives without labels; it is an adjudication instrument, not a decipherment result.
+"""
+
 from __future__ import annotations
 
 import csv

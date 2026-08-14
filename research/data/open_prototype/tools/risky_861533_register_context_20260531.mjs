@@ -1,3 +1,13 @@
+// Tests the bet that the sign sequence 002-861-533-717 marks an aniconic
+// register: inscriptions on rectangular seals (SEAL:R) that carry no animal
+// symbol, inside the wider 002-861 branch table. We read the filtered corpus
+// metadata, collapse rows to one per exact text, find every row containing
+// the full four-sign sequence, and count how many are symbol-free rectangular
+// seals (and how many are symbol-free at all). The null: draw the same number
+// of rows at random from all exact-collapsed 002-861 rows, 100000 times, and
+// see how often those counts appear by chance. The bet stays wild-shot tier
+// by construction; the report records falsifiers and predictions. Writes a
+// JSON report and two CSVs (bet summary, target rows).
 import fs from 'node:fs';
 import path from 'node:path';
 

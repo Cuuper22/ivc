@@ -2,11 +2,15 @@
 
 Date: 2026-05-24
 
+This note is a field audit. Earlier work found that a column in our dataset called `class` was strikingly predictable from the signs themselves, which looked exciting. This note stops and asks the question that should have come first: what is that column, and where did its values come from?
+
+The answer changes the meaning of the earlier result. Some vocabulary: `lipi` is a third-tier or T3 dataset — usable for generating candidates, never as authority. Quarantined columns are fields held out of all use because they carry other people's interpretive claims. A proxy is a field that merely restates something you already know, such as a label that is really just "length 1". Circularity is the trap of discovering a pattern that you or your source put into the data.
+
 ## Purpose
 
 This audit checks whether the filtered `lipi` `class` field can be treated as independent metadata for decipherment research.
 
-The prior metadata probes found that `class` was the strongest remaining metadata scout target. The robustness probe then showed that the signal weakens under edge-sign and formula-family controls. This source audit asks the simpler question: what is this field, and is it defined well enough to support semantic interpretation?
+The prior metadata probes found that `class` was the strongest remaining metadata scout target — a scout being an exploratory run meant to find where to look. The robustness probe then showed that the signal weakens under edge-sign and formula-family controls. This source audit asks the simpler question: what is this field, and is it defined well enough to support semantic interpretation?
 
 Answer: no. It is still useful as a stress-test target, but it must not be treated as an independent semantic label.
 
@@ -40,6 +44,8 @@ scanned_text_files: 67
 ```
 
 ## Source Context
+
+Where the data comes from, and why that matters. Upstream means the public repository we copied the dataset from; the branch head is the exact published version we checked, recorded by hash.
 
 The upstream repository is not a neutral corpus source. Its README presents a decipherment claim, and the raw `inscriptions.csv` includes `sanskrit`, `translation`, and `notes` columns. Those three columns remain quarantined.
 
@@ -81,7 +87,7 @@ Top class values:
 | LP | 212 | 197 | 1.000000 | SEAL:S | 0.768868 | Mohenjo-daro | 0.627358 | 7 | 0.457547 |
 | TS | 168 | 0 | 1.000000 | SEAL:S | 0.208333 | Mohenjo-daro | 0.357143 | 1 | 0.988095 |
 
-Several labels are heavily shaped by simple metadata:
+Several labels are heavily shaped by simple metadata. Each line below shows a class code that is close to a restatement of something we already know about the row:
 
 - `TS`: 98.8095 percent length 1.
 - `VN`: 98.5915 percent Harappa and 94.6479 percent length 2.
@@ -128,10 +134,12 @@ The later [Lipi class proxy-control probe](lipi_class_proxy_control_probe.md) co
 
 ## Next Falsification
 
+Falsification means the next steps are chosen for their power to break this result, not to confirm it.
+
 Next steps:
 
 - Find an external definition for the class abbreviations, if one exists in CISI, ICIT, Mahadevan, or another catalog source.
 - Remove labels that are near-pure length/site/type proxies and rerun class prediction.
-- Treat `class` as a candidate leakage field in future metadata tests.
+- Treat `class` as a candidate leakage field in future metadata tests. Leakage is when the answer is already hidden inside the inputs, so a model looks clever without learning anything.
 - Repeat metadata prediction on fields with clearer provenance: site, material, dimensions, iconography, and artifact type.
 - Prefer image-validated or authoritative catalog layers before using any field as semantic evidence.

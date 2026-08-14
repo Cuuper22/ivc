@@ -1,3 +1,14 @@
+// We need photographs of Harappa tablets H-2218 through H-2239, and some may
+// already be sitting on public blog pages. This script checks. It downloads
+// five specific pages (four rssing.com mirrors and one blogspot post), scans
+// each for side labels like "h2219A" (sides A/B/C of each object), and looks
+// in a window of nearby HTML for an <img> URL that contains the same label.
+// Every label-plus-image hit becomes one lead row, graded "T4 image lead
+// only" — good for targeting plate requests, never for reading signs. As a
+// side check it counts decipherment-claim vocabulary ("rebus", "bill of
+// lading", etc.) on each page, since these pages mix images with speculative
+// readings we must not absorb. Writes the lead CSV and a JSON summary that
+// also lists which of the 22 target objects still have no public image lead.
 import fs from 'node:fs';
 import https from 'node:https';
 import path from 'node:path';

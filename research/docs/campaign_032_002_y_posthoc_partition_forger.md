@@ -4,6 +4,8 @@ Date: 2026-05-29
 
 ## Question
 
+This note charges an earlier result for a hidden advantage. The forger is our adversarial tool: it builds randomized fake corpora and runs our own method on them, so we can see how often the method finds a pattern in nothing. The advantage being charged for is post-hoc grouping — we sorted the signs into bins after seeing how they behaved, which is easy to do in any data. Signs in this corpus are numeric IDs; `Y` names whichever sign follows `002`; "terminality" is whether a row ends right after `Y`. A "closure" sign ends a row, a "branch head" opens further material.
+
 The earlier `002-Y` terminality result used named bins: `817` as hard closure, `820/861` as leaky closure, and `390/368/031/220/900/300` as branch heads. That is useful descriptively, but the skeptic objection is fair: if the bins were named after looking at terminal behavior, fixed-bin nulls do not measure the false-positive rate of discovering such a split.
 
 This run asks the stricter question: if every null corpus is allowed to discover its own best high-terminal versus low-terminal partition among Y signs, does the real broad `002-Y` layer still stand out?
@@ -24,7 +26,9 @@ For each scope, the script:
 4. Scores the best partition by two-proportion z and closure-minus-branch terminal-rate gap.
 5. Gives every null corpus the same search privilege.
 
-Null models:
+Point 5 is the whole idea: each null corpus may go hunting for its own best split, exactly as we did.
+
+Null models — randomized copies of the data, each destroying a different kind of structure:
 
 - `terminal_shuffle_global`
 - `terminal_shuffle_site_type_symbol`

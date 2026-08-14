@@ -2,6 +2,12 @@
 
 Date: 2026-05-24
 
+## What This Note Is
+
+This note decides how to chase images for five Harappa tablets that the open web does not show. Source-dark means exactly that: we have catalog rows for the object, but no published photograph we can reach. Until an object has a picture, its catalog row cannot be checked against reality.
+
+The five sit in the same packet — a bundle of objects grouped for one review pass — because they carry the same two-row inscription. The note asks whether more web searching is worth the effort, or whether the batch should go straight to the institutions that hold the plates.
+
 ## Question
 
 For the five source-dark `033` packet objects H-1304, H-1344, H-1345, H-1346, and H-1347, is there enough public evidence to keep searching the open web, or should the batch go straight to CISI, HARP, Harappa image archives, library plates, or direct archive access?
@@ -44,7 +50,7 @@ That negative result is limited to the checked public-web layer. It is not evide
 
 ## Why This Batch Matters
 
-These five objects are not valuable because public leads exist. They are valuable because they are repeated source-dark instances of the same local `TAB:I` packet:
+These five objects are not valuable because public leads exist. They are valuable because they are repeated source-dark instances of the same local `TAB:I` packet, `TAB:I` being an incised tablet class:
 
 ```text
 1:+400-740-176+

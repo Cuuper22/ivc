@@ -1,3 +1,27 @@
+// Do particular short-mark signs sit on physically different tablets? If a
+// sign like 034 appears mostly on thicker or larger objects, the marks may
+// track something about the object itself. The catch is that dimensions
+// mostly follow type, site, shape, and material, so a naive comparison would
+// only rediscover those groupings.
+//
+// The script reads lipi/metadata_filtered.csv, builds one row per artifact
+// that has at least one clean multi-side short-mark side, and records its
+// millimeter dimensions (horizontal, vertical, thickness, plus derived area
+// and aspect). For each short-mark sign present on 10+ artifacts and absent
+// from 10+ (both overridable via env vars), it compares mean dimensions for
+// artifacts with vs. without the sign and gets a p-value from a blocked
+// permutation test: presence flags are shuffled only within
+// type|site|shape|material|sides blocks (5,000 iterations by default,
+// IVC_SHORT_MARK_DIMENSION_ITERATIONS overrides), with Benjamini-Hochberg
+// correction across all sign-dimension tests.
+//
+// The whole analysis is then repeated with the H-2218..H-2239 batch removed,
+// since those 22 near-identical tablets could dominate any signal.
+//
+// Outputs: lipi_short_mark_dimension_artifact_rows.csv, _token_tests.csv,
+// _stress_summary.json, and the _no_h_series ablation pair. Any surviving
+// association is a validation target, not a measurement or meaning claim.
+
 import fs from 'node:fs';
 import path from 'node:path';
 

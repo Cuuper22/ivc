@@ -2,15 +2,17 @@
 
 Date: 2026-05-31 America/Los_Angeles
 
-Status: active campaign gate, not goal completion.
+This note sorts the 15 rows that contain the sign pair `002-390` by how good their evidence is, then asks one question: do any two rows that share the sign before `002` disagree about the sign after `390`, with both rows backed by a real photograph? That would be a source-controlled contrast, the kind of thing that could support a structural claim. The answer is no, and this note records why.
+
+Status: active campaign gate, not goal completion. (A "gate" is a check that must pass before evidence is allowed into the analysis.)
 
 ## Run control
 
-This gate starts from the replacement branch-sign ecology frame file:
+This gate starts from the replacement branch-sign ecology frame file. "Ecology" here means the study of which signs appear around a given point in the sequence:
 
 - `data/open_prototype/reports/campaign_032_002_861_002390x_branch_sign_ecology_20260531_002390_frames.csv`
 
-It does not use the quarantined post-cutoff `source_normalized_family_collapse` artifact as evidence. The question is whether the apparent `002-390-X` branch-tail pattern contains a source-controlled same-predecessor contrast, or whether the strict rows only show polarity across unmatched frames.
+It does not use the quarantined post-cutoff `source_normalized_family_collapse` artifact as evidence — that artifact was sealed off and may not be cited. The question is whether the apparent `002-390-X` branch-tail pattern contains a source-controlled same-predecessor contrast, or whether the strict rows only show polarity across unmatched frames. "Strict" means the row's reading is backed by an inspectable source photograph; "polarity" means the observed split where `125` rows continue and non-`125` rows end.
 
 No value, phonetics, language identity, function, sign meaning, or translation is accepted.
 
@@ -24,7 +26,7 @@ No value, phonetics, language identity, function, sign meaning, or translation i
 
 ## Source tiers
 
-The 15 local `002-390-X` frames were tiered as follows:
+A "frame" is one occurrence of `002-390` plus its neighboring signs. The 15 local `002-390-X` frames were sorted into five evidence tiers:
 
 | Tier | Meaning in this gate |
 |---|---|
@@ -71,7 +73,7 @@ Decision: strict polarity is not the same thing as grammar promotion. The live c
 
 ## Matched predecessor groups
 
-Only three predecessor groups have more than one local row:
+A "matched" group is a set of rows that share the same sign before `002`, so their branches can be compared fairly. Only three predecessor groups have more than one local row:
 
 | Prev before `002` | Local split | Gate result | Consequence |
 |---|---|---|---|

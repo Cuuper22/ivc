@@ -1,3 +1,15 @@
+// Fetches the current Meluhha evidence from CDLI (the Cuneiform Digital Library
+// Initiative) and freezes it into local CSVs, run 2026-05-29. It queries the
+// CDLI search API for seven transliteration strings — me-luh-ha and its case
+// variants, lu2 me-luh-ha, ma2 me-luh-ha, and the personal name lu2-sun2-zi-da —
+// plus the ORACC/ePSD2 Meluhha name entry. Every ATF text is parsed line by
+// line so each hit keeps its surface, line number, and neighboring lines, and
+// every fetch is SHA-256 hashed into a log. The Lu-sunzida rows double as a
+// detector test: if the name alone marked Meluhha, artifacts carrying the name
+// without any Meluhha line would be false positives — and most are, so the name
+// is rejected as a diagnostic anchor (its one real adjacency on P212982 stays a
+// cuneiform-side lead only). Writes artifact, line-context, Lu-sunzida-test, and
+// fetch-log CSVs plus cdli_current_anchor_failure_summary.json.
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';

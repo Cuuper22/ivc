@@ -4,7 +4,9 @@ Date: 2026-05-29
 
 Status: failure ledger. Accepted claim increment: 0.
 
-This note records why the v2c/v2d directionality source-normalization path still cannot be reviewed or scored as a blind packet.
+This note is a failure ledger: a running record of why each attempt failed, kept so the same mistakes are not repeated. It covers the v2c/v2d directionality source-normalization path — the effort to check the directionality result (that Indus inscriptions score better in their recorded order than reversed) against real photographs rather than catalog data.
+
+That check needs a blind packet: a bundle of seal-image crops shown to reviewers who cannot see the catalog answers. Every version so far has failed preflight, the mechanical and visual inspection a packet must pass before any reviewer sees it. Two recurring failure modes appear below. A crop world is the visual kind of a crop — a signband strip, meaning the horizontal band of signs, versus an object or animal panel; targets and controls must share one, or their look alone reveals which is which. The denominator is the fixed set of control crops against which a reviewer's false-positive rate is measured.
 
 ## v2c
 
@@ -34,7 +36,7 @@ Decision: keep as a manual crop-QA draft only. It cannot produce a false-positiv
 - Strict v2e reuse has compact signband targets for `H-654`, `M-1310`, and `M-1320`, but not `M-811`.
 - Strict reuse has only seven original fixed real-negative CISIs: `H-158`, `M-1315`, `M-171`, `M-365`, `M-386`, `M-525`, and `M-527`.
 - Target/control source-page collisions remain: `M-1310` shares page `n202` with `M-1315` and `M-1314`; `M-1320` shares page `n203` with `M-1322`.
-- The derived top-strip lane is acquisition only. It still misses `M-1320` and `M-811` before visual review, and it cannot create a false-positive denominator without a new fixed manifest and forger packet.
+- The derived top-strip lane is acquisition only. It still misses `M-1320` and `M-811` before visual review, and it cannot create a false-positive denominator without a new fixed manifest and forger packet — a packet stocked with controls designed to fake the signal we are hunting.
 
 Decision: reject as a blind packet. Keep only as crop-acquisition and gate-failure evidence.
 

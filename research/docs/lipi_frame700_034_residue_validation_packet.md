@@ -4,13 +4,15 @@ Date: 2026-05-25
 
 ## Question
 
-The blocked null left one live residue:
+This note is a shopping list of objects to check against source images. FRAME700 is the project's label for short inscription rows built on sign `700`, such as `+700-034+`. An earlier test shuffled labels within matched blocks of similar objects — a null model, meaning a deliberately meaningless version of the data that shows how large an apparent effect chance alone produces. Most candidate effects died against it. One residue survived — a leftover pattern the controls did not explain:
 
 ```text
 700-034+ / +034-700+ behaves differently inside FRAME700 after H-2218 through H-2239 are removed.
 ```
 
-What exact objects should be source-checked to decide whether this is a real sign/function contrast, an object-format association, or a transcription artifact?
+The question: what exact objects should be source-checked to decide whether this is a real sign/function contrast, an object-format association, or a transcription artifact?
+
+The result is a packet: a bundled list of objects with the specific evidence each one must supply.
 
 ## Local Artifacts
 
@@ -49,7 +51,7 @@ Subtype counts after removing H-2218 through H-2239:
 | `032` | 102 |
 | `034` | 93 |
 
-The packet includes every non-H `034` row, then adds targeted `033` and `032` comparator rows.
+The packet includes every non-H `034` row, then adds targeted `033` and `032` comparator rows. A control below is a comparison object used to check a target.
 
 ## Top 034 Validation Targets
 
@@ -236,7 +238,7 @@ Ruhan Khanna and Louie Merriam, "A Computational Analysis of the Indus Script: I
 URL: https://www.ijcaonline.org/archives/volume187/number64/khanna-2025-ijca-926075.pdf
 ```
 
-Quarantine:
+Quarantine — the paper is walled off from the evidence chain and may not be cited as support:
 
 ```text
 Useful only as a literature-search pointer that 700-034 has been noticed.

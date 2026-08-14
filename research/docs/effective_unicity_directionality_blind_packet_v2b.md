@@ -4,9 +4,11 @@ Date: 2026-05-29
 
 ## Purpose
 
-The first no-overlay packet failed because it had too few real controls, one leaked negative label, hard false positives, and unstable target token counts. A second packet (`v2`) repaired the denominator but failed preflight because paired target views were byte-identical. This `v2b` packet removes duplicate target images and keeps the fixed 12-row real-negative denominator.
+This note reports the third attempt (`v2b`) at a blind no-overlay review packet in the effective-unicity directionality campaign — the workstream that checks whether our seal crops and sign counts hold up before any reading-direction claim is made. A packet is a bundle of image crops scored by reviewers who cannot see the catalog answers.
 
-This is still a source-normalization gate only. It does not validate physical reading direction, token order, sign identity, sign meaning, language family, phonetic value, or translation.
+The first no-overlay packet failed because it had too few real controls, one leaked negative label, hard false positives, and unstable target token counts. A second packet (`v2`) repaired the denominator — the fixed set of negative controls that false-positive rates are measured against — but failed preflight because paired target views were byte-identical. This `v2b` packet removes duplicate target images and keeps the fixed 12-row real-negative denominator.
+
+This is still a source-normalization gate only — a pass/fail checkpoint on whether crops and counts match the physical source. It does not validate physical reading direction, token order, sign identity, sign meaning, language family, phonetic value, or translation.
 
 ## Packet
 
@@ -24,17 +26,17 @@ Packet ID: `directionality_no_overlay_packet_v2b_unique_target_controls`
 | Duplicate blind image hash groups | 0 |
 | Accepted claim increment | 0 |
 
-Primary target recuts: `H-654`, `M-1310`, `M-1320`, and `M-811`.
+Primary target recuts — fresh crops of the four seals under test: `H-654`, `M-1310`, `M-1320`, and `M-811`.
 
 Fixed real-negative denominator: `H-158`, `H-665`, `M-1315`, `M-1458`, `M-1523`, `M-171`, `M-365`, `M-386`, `M-525`, `M-527`, `M-534`, and `M-567`.
 
-External stress controls: `M-1273`, `M-376`, and `M-381`.
+External stress controls — deliberately hard images meant to stress the reviewers: `M-1273`, `M-376`, and `M-381`.
 
-Auxiliary synthetic controls: two deliberate label-leak sentinels and two blank/non-script controls. They never count toward the real-negative denominator.
+Auxiliary synthetic controls: two deliberate label-leak sentinels (images that intentionally show identifying labels, to prove reviewers report leaks) and two blank/non-script controls. They never count toward the real-negative denominator.
 
 ## Forger Boundary
 
-The packet met the mechanical preflight that v1 and v2 missed:
+The forger is the adversarial standard a packet must survive — the bar set as if a hostile skeptic designed the test. The packet met the mechanical preflight that v1 and v2 missed:
 
 | Gate | Status |
 | --- | --- |
@@ -49,11 +51,11 @@ The packet met the mechanical preflight that v1 and v2 missed:
 | All targets cleanly recovered with zero variance | Failed |
 | Accepted claim increment | 0 |
 
-The fixed-denominator policy matters: real-negative leaks are not denominator exclusions. They fail the packet.
+The fixed-denominator policy matters: when a real negative leaks its label, we do not quietly drop it from the denominator. The leak fails the whole packet.
 
 ## Blind Review Result
 
-Three blind reviews were scored against the fixed 12-row real-negative denominator.
+Three blind reviews were scored against the fixed 12-row real-negative denominator. FPR is false-positive rate.
 
 | Reviewer | Target pass | Target fail | Target uncertain | Real true negatives | Real hard false positives | Real uncertain target-like | Real label leaks | Yes-only FPR / 12 | Conservative FPR / 12 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |

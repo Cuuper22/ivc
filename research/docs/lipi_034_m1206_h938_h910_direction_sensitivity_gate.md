@@ -2,9 +2,11 @@
 
 Date: 2026-05-26
 
+This note is a gate — a checkpoint the evidence must pass before the project may take a further step. It shows that a promising result is only as good as one metadata field. Two objects carry the same pair of signs in opposite orders, which ought to pin each sign to a shape. It does, but only if the recorded reading direction is right. Flip that field and the conclusion flips with it. The note records the result as conditional for exactly that reason.
+
 ## Question
 
-Does the `H-938 B` / `H-910 B` mirror-order pair decide whether local `034` is the vertical/rake `415`-like component?
+Does the `H-938 B` / `H-910 B` mirror-order pair decide whether local `034` is the vertical/rake `415`-like component? The recorded direction field `R/L` means the inscription is read right-to-left.
 
 ## Inputs
 

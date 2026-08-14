@@ -1,3 +1,15 @@
+// A "risky bet" probe (2026-05-31, wild-shot tier): are the two register-opener
+// signs 740 and 407 one "ra"-like family? The V2/V4 slot-grammar tests treat 740
+// and 407 as independent register openers; this bet asks whether both also lean
+// toward the Brahmi letter "ra", which would suggest a shared graphic/phonetic
+// bridge rather than two unrelated administrative signs. The script reads the v3
+// impostor-forger CSV and the v2 family descent summary for just these two signs,
+// flags each row as ra-like if any of its modal labels is "ra", and tests the
+// full anchor gate: shape null, label null, and impostor null all at or below
+// 0.01, preflight not blocked, and anchor accepted. It writes a JSON bet record,
+// a one-row summary CSV, and a per-probe CSV. Recorded verdict: ra-like pressure
+// exists but no sign passes the gate, so the shared bridge is killed as a
+// phonetic anchor and survives only as a search prior.
 import fs from 'node:fs';
 import path from 'node:path';
 

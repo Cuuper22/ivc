@@ -2,6 +2,8 @@
 
 Date: 2026-05-29
 
+This note tests a tempting claim and finds it fails. Signs in this corpus are numeric IDs. The `520-220-X` frame is rows whose signs run `520`, `220`, then a variable third sign X. "Closure" means the row ends there; "continuation" means more follows. A "register" is the object class a row sits on — site, seal type, material, shape — and it is the rival explanation here: rows may stop where they do because of what kind of object they are on, not because of grammar.
+
 Question:
 
 ```text
@@ -21,11 +23,13 @@ This is a Vector 4 context-slot test. It is not a sign meaning, phonetic value, 
 
 The tempting claim fails.
 
-In raw clean-behavior rows, `third_slot` predicts closure/continuation at 0.687500 leave-one-out accuracy, but `site|type` predicts it at 0.812500.
+In raw clean-behavior rows, `third_slot` predicts closure/continuation at 0.687500 leave-one-out accuracy, but `site|type` predicts it at 0.812500. Leave-one-out means each row is predicted by a model fitted without it, so nothing scores well by memorizing.
 
 After exact-text collapse, `third_slot` predicts closure/continuation at 0.781250, but `site|type` predicts it at 0.906250. The exact collapse is decisive because most short closed `415` rows are exact repetitions; once collapsed, the data are 27 continuation families and only 5 terminal-closed families.
 
 ## Forger
+
+The forger is our adversarial tool: it builds randomized copies of the data — null models — and runs the same method on them, to see how often chance alone produces what we observed. High numbers in the columns below mean the nulls matched or beat the real result, which is bad for the real result.
 
 5000 iterations per null model.
 

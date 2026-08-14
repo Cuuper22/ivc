@@ -1,3 +1,13 @@
+// Tests the bet that the sign sequence 002-861-096 marks an ivory-rod
+// register: a class of inscription found on ivory ROD objects rather than
+// ordinary seals. We read the filtered corpus metadata, collapse rows to one
+// per canonical numeric sign sequence (so exact copies count once), then find
+// every row containing 002-861-096 and count how many are ivory rods. The
+// null: draw the same number of rows at random from all canonical 002-861
+// rows, 100000 times, and see how often that many ivory rods appear by
+// chance. The bet was demoted to wild shot because the two witnesses
+// (M-2089/M-2090) collapse to a single canonical sequence. Writes a JSON
+// report and two CSVs (bet summary, target rows) to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

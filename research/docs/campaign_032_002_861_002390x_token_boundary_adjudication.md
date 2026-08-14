@@ -2,9 +2,11 @@
 
 Date: 2026-05-30
 
+This note records a visual check. Our sign sequences come from catalogue transcriptions. This pass goes back to the published photographs and asks whether the inscription strips actually show separable signs in the claimed places — the process called token-boundary adjudication. It is a compatibility test, not a reading: it can show the boxes fit, never what the signs say.
+
 ## Question
 
-Are the visible source bands compatible with the immediate `002-390-X` windows for strict `125` targets and strict non-`125` controls under explicit side/order policy?
+Are the visible source bands (the strips of the seal carrying the inscription) compatible with the immediate `002-390-X` windows for strict `125` targets and strict non-`125` controls under explicit side/order policy? "Strict" means the row's reading can be checked against an inspectable source photograph; a "control" is a row that shares part of the pattern but takes a different branch; "side/order policy" is the stated convention for which face is being read and in which direction.
 
 ## Shape Reference
 
@@ -20,7 +22,7 @@ This pass compares visible bands against sign-shape descriptions, not only catal
 
 The strict source-visible `125` targets `M-119` and `M-735` are compatible with separable boxed windows for `002-390-125` under explicit side/order policy. The strict non-`125` controls `M-70` and `M-71` are also compatible with boxed windows for `002-390-692` and `002-390-095`.
 
-This upgrades the live object to a boxed-window-compatible `002-390-X` branch contrast. It is not yet a blind source-preserved branch proof. It still does not accept a numeric value, phonetic reading, language identity, sign meaning, or translation.
+This upgrades the live object to a boxed-window-compatible `002-390-X` branch contrast. It is not yet a blind source-preserved branch proof — "blind" meaning the boundaries were judged from the image without the analyst seeing the claimed reading first. It still does not accept a numeric value, phonetic reading, language identity, sign meaning, or translation.
 
 Boxed contact sheet: `C:\Users\Acer\OneDrive\Documents\ivc\tmp\002390x_token_boundary_adjudication\campaign_032_002_861_002390x_token_boundary_adjudication_boxed_contact_sheet.jpg`
 
@@ -34,6 +36,8 @@ Boxed contact sheet: `C:\Users\Acer\OneDrive\Documents\ivc\tmp\002390x_token_bou
 
 ## Active Adversaries
 
+An "adversary" is a rival explanation that would account for the same evidence without any structure. Each witness below carries one:
+
 - `M-119`: side/order and local numeric identity remain catalog/Mayig mediated; source image itself supplies separability, not a standalone reading
 - `M-735`: no Mayig independent row found; side/order and exact identity depend on local/corpus alignment
 - `M-70`: single-branch control only; does not by itself establish repeated non-125 ecology
@@ -44,6 +48,6 @@ Boxed contact sheet: `C:\Users\Acer\OneDrive\Documents\ivc\tmp\002390x_token_bou
 
 `125` survives the immediate boxed-window compatibility gate. It is not demoted by this visual pass alone.
 
-The next danger is side/order blindness, independence, and formula-family collapse. If blind adjudication rejects the boundaries, if `M-119` and `M-735` reduce to one family/source habit, or if `125` occurs only inside closed longer formulas, then `125` demotes even though the current boxes are visually plausible.
+The next danger is side/order blindness, independence, and formula-family collapse — the rival account in which the matching rows are copies of one stock phrase rather than productive structure. If blind adjudication rejects the boundaries, if `M-119` and `M-735` reduce to one family/source habit, or if `125` occurs only inside closed longer formulas, then `125` demotes even though the current boxes are visually plausible.
 
 Current status: `002-390-X` is a boxed-window-compatible branch contrast. `125` is a live branch member, not a reading.

@@ -4,6 +4,10 @@ Date: 2026-05-26
 
 ## Question
 
+This note is a gate: a recorded decision checkpoint that either lets a claim through or blocks it. It tests whether a published statement that "the same text appears on these objects" can be taken over into our own data as an exact match.
+
+Terms first. Parpola 2019 is a published paper whose claims we test rather than trust; it numbers its texts ("text no. 7") and its signs ("sign no. 107") in its own scheme. That scheme is a separate namespace from the local Lipi sign codes (bare numbers like `220`, `415`) and from the Mayig catalog's `P###` feature ids. M- and H-numbers are Mohenjo-daro and Harappa artifacts. "Recurrence" means the same inscription turning up on more than one object. "Obverse" and "reverse" are the two faces of a tablet; the "companion" row is the other side of the same object in our catalog. "Source-dark" means no usable published image exists.
+
 Can Parpola 2019 text no. 7 be used as the sign-number bridge explaining the H-940 / H-2147 / H-2148 obverse recurrence and M-77, or does it expose a broader sign-list and scope problem?
 
 ## Decision
@@ -18,7 +22,7 @@ Lipi / Mahadevan-style local numeric rows
 Mayig Parpola-feature IDs
 ```
 
-Until those are bridged object by object, Parpola text no. 7 cannot be used as a local-string identity key.
+Until those are bridged object by object, Parpola text no. 7 cannot be used as a local-string identity key — a way of asserting that a published text and one of our catalog rows are the same string.
 
 ## Source Facts
 

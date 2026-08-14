@@ -4,7 +4,7 @@ Date: 2026-05-24
 
 ## Purpose
 
-This experiment asks whether the duplicate-collapsed broad `lipi` held-out signal survives when exact sequence leakage is removed across the train/test boundary.
+This note records a stress test on `lipi`, the project's filtered working corpus of Indus sign sequences. Earlier baselines predicted signs in a held-out split — a group of rows, such as one artifact type or one site, kept out of training and used only for testing. The worry is leakage: if the same exact sequence appears on both sides of that boundary, the model can score well by memorizing rather than by learning structure. This experiment asks whether the duplicate-collapsed broad `lipi` held-out signal survives when exact sequence leakage is removed across the train/test boundary.
 
 It follows the [Lipi deduplicated order baseline](lipi_dedup_order_baseline.md). For each held-out artifact type, site, or region, exact duplicate numeric sign sequences are collapsed, then any training row whose exact numeric sign sequence appears in the held-out test split is removed from training.
 
@@ -103,7 +103,7 @@ This control narrows the leakage explanation:
 
 - Exact cross-split sequence overlap is not the main reason the held-out bidirectional scores beat frequency, position, and length-position baselines.
 - Duplicate and formula effects are still real, especially in tablet classes, because exact duplicate collapse already lowered within-split prediction substantially.
-- The result remains source-tier limited: `lipi` is a filtered T3 planning layer, not an authoritative corpus.
+- The result remains source-tier limited: `lipi` is a filtered T3 planning layer — the project's tier label for an unverified working corpus, useful for direction but never admissible as proof — not an authoritative corpus.
 - The experiment predicts exact stored numeric signs, not sign meanings or linguistic readings.
 
 ## Result
@@ -142,5 +142,5 @@ That follow-up keeps selected held-out scores above simple baselines after edge-
 
 The next tests should ask:
 
-- Does an authoritative M77/CISI/ICIT or image-validated corpus reproduce the same profile?
-- Can nonlinguistic administrative and emblematic controls produce the same stored-order and held-out masked-sign profile?
+- Does an authoritative M77/CISI/ICIT corpus (Mahadevan 1977, the Corpus of Indus Seals and Inscriptions, or the Interactive Corpus of Indus Texts) or an image-validated corpus reproduce the same profile?
+- Can nonlinguistic administrative and emblematic controls (comparison systems that carry structure without language) produce the same stored-order and held-out masked-sign profile?

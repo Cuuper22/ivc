@@ -1,3 +1,16 @@
+// Skeptic's battery for the 002-Y closure/branch claim, run after the forger pass. The claim:
+// the fixed Y-sign classes (hard closure 817, leaky closure 820/861, branch heads
+// 390/368/031/220/900/300, plus a small-n closure-like set) predict whether an inscription
+// ends right after 002-Y. This script attacks that from four angles. (1) Model comparison:
+// leave-one-out terminality prediction from Y class versus register (site/type/symbol)
+// baselines, including variants that exclude the test row's own register or prefix family
+// from training. (2) Matched contrasts: closure-vs-branch terminal-rate gaps inside blocks
+// matched on register, left context, position, and length. (3) Removal attacks: rerun the
+// comparison with Mohenjo-daro, Harappa, SEAL:S, or unnamed-CISI rows dropped. (4) A
+// right-edge audit that flags matchings which are tautological — where matching on length
+// and 002 position already fixes the terminal outcome. Reads the strict, deduplicated rows
+// from the campaign_032_002_post_y report CSVs; writes model, contrast, removal, and audit
+// CSVs plus a JSON summary to data/open_prototype/reports.
 import fs from 'node:fs';
 import path from 'node:path';
 

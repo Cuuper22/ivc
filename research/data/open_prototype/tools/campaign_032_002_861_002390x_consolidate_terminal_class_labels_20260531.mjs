@@ -1,6 +1,20 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// This script tests which signs really deserve a "terminal class" label — a
+// sign that closes an inscription when it fills the X slot after 002-HEAD —
+// versus signs that just look terminal because they end texts everywhere.
+// It reads the full corpus (lipi/metadata_filtered.csv), splits each text into
+// 3-digit sign codes, and for seven focus signs (095, 705, 140, 072, 692, 125,
+// 530) compares two rates: how often the sign is text-final anywhere in the
+// corpus (the global prior) versus how often it is final specifically in the
+// X slot. A sign earns "terminal_class_candidate" only with at least 3 X-slot
+// rows, an X-slot terminal rate of 0.8+, a lift of 0.3+ over its global rate,
+// and witnesses at 2+ sites. Verdicts here unbundle the old 095/705 claim:
+// 095 stays a candidate, 705 narrows to terminal-default-with-exception, and
+// 692 is explained by the raw prior. Writes class-row and decision CSVs plus a
+// summary JSON to data/open_prototype/reports.
+
 const root = process.cwd();
 const reportsDir = path.join(root, 'data', 'open_prototype', 'reports');
 const metadataPath = path.join(root, 'data', 'open_prototype', 'lipi', 'metadata_filtered.csv');

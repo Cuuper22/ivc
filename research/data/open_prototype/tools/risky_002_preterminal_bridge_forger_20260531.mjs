@@ -1,3 +1,16 @@
+// Tests the bet that sign `002` is a "pre-terminal bridge": a sign that many other
+// signs feed into, and that itself feeds the terminal partners `861`, `820`, and `817`
+// right before the end of an inscription. The script reads the filtered corpus
+// (metadata_filtered.csv), collapses rows to unique sign sequences, and builds a
+// directed graph of sign pairs whose order is consistent (at least 30 shared rows,
+// dominant order in at least 75% of them, binomial p <= 0.001). A sign's "bridge"
+// strength is the smaller of its incoming and outgoing edge counts. A Fisher test
+// checks whether the sign right after 002 is a terminal partner more often than for
+// other signs. The "forger" null shuffles the signs inside each row 1,500 times to
+// ask how often chance alone produces an equally strong bridge or an equally small
+// Fisher p. Controls rerun the stats on complete-only, non-poor, leave-one-site-out,
+// and square-seal subsets. Writes a bet summary (JSON + CSV) plus per-pool, edge,
+// next-sign, support-row, and forger-iteration CSVs to the reports directory.
 import fs from 'node:fs';
 import path from 'node:path';
 

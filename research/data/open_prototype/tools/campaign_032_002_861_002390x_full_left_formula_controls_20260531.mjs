@@ -1,6 +1,19 @@
 import fs from "node:fs";
 import path from "node:path";
 
+// Could the 002-390 pattern be nothing but a copied formula, where everything to the left of
+// the 002 fully determines what comes after it? This script runs that control. It reads the
+// corpus from data/open_prototype/lipi/metadata_filtered.csv plus the 002-390 frames report
+// (for each frame's source_status), and records every 002 occurrence with three left
+// contexts: the full prefix before the 002, just the last two signs, and just the last one.
+// For each 002-390 target frame it then gathers all other 002 rows sharing the same left
+// context at each width and asks whether the post-002 head still varies. If rows with an
+// identical full left prefix choose different heads, the left formula alone cannot be
+// forcing 002-390 — determinism breaks. It also flags formula-residue risk (same left, same
+// branch repeated) and singletons that prove nothing either way. Writes all 002 occurrences,
+// per-target control verdicts, full-left groups, and a decisions table as CSVs plus a
+// summary JSON in reports/.
+
 const root = process.cwd();
 const dataPath = path.join(root, "data", "open_prototype", "lipi", "metadata_filtered.csv");
 const reportsDir = path.join(root, "data", "open_prototype", "reports");

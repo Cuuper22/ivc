@@ -4,6 +4,8 @@ Date: 2026-05-29
 
 ## Question
 
+This note runs the skeptic's attacks against a surviving result. Each attack tries to explain the pattern away with something other than grammar. Signs in this corpus are numeric IDs; `Y` names whichever sign follows `002`. A "closure" sign ends a row, a "branch" sign opens further material. A "register" is the object class a row sits on — site, seal type, icon, shape. "Family-blocked" means near-identical copies are collapsed so they cannot count as separate witnesses. The forger, referenced below, is the adversarial tool that runs our method on randomized fake corpora.
+
 After the forger pass, does the `002-Y` closure/branch result survive hostile attacks that try to explain it as register, duplicate-family, site/type, or terminal-position artifact?
 
 ## Inputs
@@ -13,6 +15,8 @@ After the forger pass, does the `002-Y` closure/branch result survive hostile at
 - `data/open_prototype/tools/campaign_032_002_y_skeptic_holdout.mjs`
 
 ## Results
+
+LOO is leave-one-out: each row is predicted by a model fitted without it, so nothing scores well by memorizing. Brier measures how well-calibrated the predicted probabilities are, and lower is better.
 
 All-`002` strict dedup scope:
 
@@ -37,6 +41,6 @@ Exact right-edge matching by `text_len` and `idx_002` is invalid for terminality
 
 ## Decision
 
-The broad all-`002` closure/branch structure survives the current skeptic pass and forger pass. It is still not accepted because the remaining gate is source-normalized: source boxes, side/direction checks, and family-blocked image-level rows must show the same closure/branch behavior outside the quarantined T3 metadata layer.
+The broad all-`002` closure/branch structure survives the current skeptic pass and forger pass. It is still not accepted because the remaining gate — the checkpoint before any stronger claim — is source-normalized: source boxes drawn on published photographs, side/direction checks, and family-blocked image-level rows must show the same closure/branch behavior outside the quarantined T3 metadata layer, the transcription tier set aside as unusable on its own.
 
 The narrower adjacent `032-002` claim remains a live target but is not accepted. It is small-N and too dependent on rows still needing source acquisition.
