@@ -4,7 +4,9 @@ Date: 2026-05-29
 
 ## Purpose
 
-This pass probes the public CISI India/Pakistan OCR layers for the top high-pressure directionality rows after the M-70 blind packet failed promotion. It is a source-acquisition/admissibility artifact, not a direction, token, sign, meaning, language, or translation claim.
+This note records a route probe: a search for concrete paths from our catalog rows to published photographs of the same seals. It exists because the directionality campaign — the workstream testing whether Indus inscriptions really read in their recorded order — cannot go further on catalog data alone, and its first attempt at image review, the M-70 blind packet, failed promotion. Blind means the reviewers scoring the images cannot see the catalog answers.
+
+The probe searches the public CISI India and Pakistan volumes (CISI is the Corpus of Indus Seals and Inscriptions, the primary published photographic record) through their OCR text layers. It is a source-acquisition/admissibility artifact, not a direction, token, sign, meaning, language, or translation claim.
 
 Scope:
 
@@ -59,9 +61,11 @@ Visual triage counts:
 
 ## Adversarial Boundary
 
+A forger here is a control designed to fake the signal we are hunting; a forger boundary states what the fakes already proved we cannot claim.
+
 Forger boundary:
 
-> The first follow-up no-overlay blind packet failed promotion: seven packaged unique real scoring negatives were below the forger denominator floor of ten, `D006/M-525` leaked a printed side annotation, scoring negatives produced hard count-boxable false positives, and the target views were mostly overcounted or uncertain. A stricter v2b packet reached 12 real negatives and zero duplicate blind image hashes, but it also failed because real denominator rows leaked labels, reviewer C had target-like uncertainty on two real negatives, and target counts were unstable. Accepted claims remain zero.
+> The first follow-up no-overlay blind packet failed promotion: seven packaged unique real scoring negatives — control crops that should yield nothing — were below the forger denominator floor of ten, `D006/M-525` leaked a printed side annotation, scoring negatives produced hard count-boxable false positives, and the target views were mostly overcounted or uncertain. A stricter v2b packet reached 12 real negatives and zero duplicate blind image hashes, but it also failed because real denominator rows leaked labels, reviewer C had target-like uncertainty on two real negatives, and target counts were unstable. Accepted claims remain zero.
 
 Skeptic boundary:
 
@@ -69,7 +73,7 @@ Skeptic boundary:
 
 Known failure pressure:
 
-- The previous M-70 source pilot looked plausible but failed a matched-negative blind packet with max yes-only FPR 0.714286 and max conservative FPR 0.777778.
+- The previous M-70 source pilot looked plausible but failed a matched-negative blind packet with max yes-only FPR 0.714286 and max conservative FPR 0.777778. FPR is the false-positive rate; a matched-negative packet pairs each target with a decoy chosen to look the same.
 - The branch-gap blind packet also failed token-count promotion and exposed stable over-counting in a scoring negative.
 - Therefore, route visibility is not enough; the first such packet included a no-overlay/matched-negative gate and failed. Any future packet must include label-free source panels, a fixed adequate real-negative denominator, duplicate-hash checks, and matched negatives before any source-normalized directionality statement is admissible.
 

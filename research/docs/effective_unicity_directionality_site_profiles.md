@@ -4,16 +4,20 @@ Date: 2026-05-29
 
 ## Purpose
 
+This note breaks the directionality result apart by excavation site. Directionality is the working result that Indus inscriptions score better in their recorded order than reversed.
+
 The site-balanced control showed that Mohenjo-daro plus Harappa survives balanced resampling, while Lothal-inclusive and top-five-site balanced designs do not. This profile asks the direct follow-up question: does each adequately sized site carry internal directionality on its own?
 
-The scope is the harsh directionality layer:
+The scope is the harsh directionality layer — "harsh" meaning the slice filtered to make the result as hard to obtain as possible:
 
-- top-10 edge signs removed,
-- one-edit families collapsed,
-- Lipi T3 metadata/sign layer,
+- top-10 edge signs removed, so the commonest first and last signs cannot carry the result,
+- one-edit families collapsed, so near-identical inscriptions count once,
+- Lipi T3 metadata/sign layer, our catalog-derived working table,
 - minimum included site size: 10 rows.
 
 ## Result
+
+Stored-win share is the fraction of rows where the stored order beats the reversed order. Max null >= observed is the worst case across the null controls — runs on deliberately scrambled data — giving the fraction of scrambled runs that matched or beat the real score. Small values mean the signal is hard to fake.
 
 | Site | Rows | Stored win share | Max null >= observed |
 | --- | ---: | ---: | ---: |

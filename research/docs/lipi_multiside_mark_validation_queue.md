@@ -4,7 +4,7 @@ Date: 2026-05-24
 
 ## Purpose
 
-This queue turns the stratified short-mark result into artifact-level validation work.
+This note turns a statistical result into a to-do list of objects. A short mark is a one- or two-sign row on an object that carries writing on more than one side; an earlier probe found such marks recurring inside fixed groups of site and object type. This queue turns that stratified short-mark result into artifact-level validation work.
 
 The question is no longer only whether short marks recur statistically. The question is which specific artifacts should be checked first against images, plates, excavation notes, or stronger catalog side metadata.
 
@@ -117,7 +117,7 @@ Focused follow-up:
 The validation queue supports three research moves:
 
 1. Treat H-2218 through H-2239 as a named three-side duplicate/copy series requiring image/source validation before any interpretation.
-2. Split the E3.2 queue into all-short three-side tablets and mixed short-long tablets instead of treating all short marks as one phenomenon.
+2. Split the E3.2 queue — E3.2 is the project's identifier for the numerical/metrological work package — into all-short three-side tablets and mixed short-long tablets instead of treating all short marks as one phenomenon.
 3. Prioritize repeated sequence families over isolated examples.
 4. Preserve exact short-mark orientation. `+700-033+` and `+033-700+` are not interchangeable before direction and image validation.
 5. Preserve companion-specific side relation. The `033`/`034` contrast should be checked against physical side order rather than collapsed into a generic `03x` class.

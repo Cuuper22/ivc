@@ -4,6 +4,8 @@ Date: 2026-05-24
 
 ## Purpose
 
+This note asks whether three signs that share a slot keep different company elsewhere on the same object. A short mark is a one- or two-sign row on an object that carries writing on more than one side; when the mark has two tokens and one of them is sign `700`, the other is its companion. Most such companions are `032`, `033`, or `034`. The longer row on another side of the same object is its context.
+
 This audit follows the [Lipi short-mark orientation audit](lipi_short_mark_orientation_audit.md) and [Lipi short-mark context orientation audit](lipi_short_mark_context_orientation_audit.md).
 
 It asks:
@@ -68,7 +70,7 @@ short_between_longer_sides: 1
 The audit uses two association layers:
 
 1. One-vs-rest Fisher exact tests for each companion and context feature.
-2. A deterministic blocked permutation test that shuffles companion labels within `type|700_order` blocks.
+2. A deterministic blocked permutation test that shuffles companion labels within `type|700_order` blocks. That shuffle is the null model: a deliberately meaningless version of the data showing how large an apparent association chance alone produces once the blocked features are held fixed.
 
 The blocked layer asks whether a companion-context association survives after preserving two easy confounds:
 
@@ -131,7 +133,7 @@ These are not readings. They are source-validation queues.
 This audit strengthens one narrow point:
 
 ```text
-The 033/034 contrast is not only a raw companion difference. It also has a corrected catalog-side relation difference in the current planning layer.
+The 033/034 contrast is not only a raw companion difference. It also has a corrected catalog-side relation difference in the current planning layer, meaning the project's unverified working data.
 ```
 
 That means future plate checks should not only ask whether `033` and `034` are visually distinct. They should also ask whether the apparent `short_after_all_longer` versus `short_before_all_longer` pattern is a real physical side/order feature or a catalog artifact.

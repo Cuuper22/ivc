@@ -4,6 +4,10 @@ Date: 2026-05-26
 
 ## Question
 
+This note is a gate: a recorded decision checkpoint that either lets a claim through or blocks it. Its job is narrow and unglamorous — find out which sign list a published paper is counting in, before anyone builds on its sign numbers.
+
+Terms first. Parpola 2019 is a published paper whose claims we test rather than trust; it cites signs by article number, as "sign no. 41." Those numbers belong to their own namespace, separate from the local Lipi sign codes (bare numbers like `110`) and from the Mayig catalog's `P###` and `V###` ids. A "crosswalk" is an accepted mapping between two such namespaces. H-numbers are Harappa artifacts; "reverse" is the back face of a tablet. A "branch" is a live line of inquiry in the project's ledger.
+
 What does Parpola 2019 mean by "sign no. 41" in the H-940 / H-2147 / H-2148 reverse cluster, and does that source the H-2148 local `110` branch?
 
 ## Result

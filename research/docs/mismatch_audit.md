@@ -4,6 +4,10 @@ Date: 2026-05-24
 
 ## Purpose
 
+This note records a data-hygiene check. It exists because the project reads the same inscriptions from two independent catalogs, and where those two catalogs disagree about how many signs an inscription has, we cannot safely treat the row as known.
+
+Terms first. The two catalogs are `lipi`, whose signs are numeric codes written `+###+`, and `mayig`, whose signs are Parpola-style codes written `P###`. The "overlap" is the set of inscriptions present in both. A "crosswalk" is a mapping between the two catalogs' sign codes; "pre-crosswalk" means before any such mapping is assumed. "Collation" is the manual act of checking a row against a source image or authoritative catalog entry.
+
 This audit classifies the 29 sign-count mismatches found in the first open prototype overlap probe.
 
 It does not resolve sign equivalence. It only decides which overlap rows are safe enough for pre-crosswalk structural tests and which rows need manual collation against source images or authoritative catalog entries.
@@ -36,7 +40,7 @@ manual_review_rows: 29
 rows_with_any_flag: 28
 ```
 
-The key change from the earlier overlap headline is that not all 150 count matches are equally clean. Twelve count-matching rows still contain sensitivity flags such as unknown signs or compound/divided signs. They can be used only in sensitivity runs, not in the clean first-pass baseline.
+The key change from the earlier overlap headline is that not all 150 count matches are equally clean. Twelve count-matching rows still contain sensitivity flags — markers that something about the row could swing a result — such as unknown signs or compound/divided signs. They can be used only in sensitivity runs, not in the clean first-pass baseline.
 
 ## Primary Categories
 
@@ -106,6 +110,8 @@ Flags can overlap.
 | M-175 | 2+? | 2 | 3 | 1 | `lipi_boundary_fragment` | `manual_collation_required` |
 
 ## Gate For Next Experiments
+
+This is the gate — the checkpoint rows must clear before any later experiment may touch them.
 
 The first direction/order baseline may use only the 138 rows marked:
 

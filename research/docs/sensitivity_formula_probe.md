@@ -4,6 +4,10 @@ Date: 2026-05-24
 
 ## Purpose
 
+This note records a check on the project's own exclusion rule. Twelve inscriptions were kept out of the clean working set. The question here is whether keeping them out was worth doing, or merely cautious.
+
+Terms first. The "scaffold" is the observed tendency for certain signs to sit at the start of a row (`I`, initial) and others at the end (`T`, terminal), giving an `I...T` frame. "Sensitivity flags" mark rows with something that could swing a result: an unknown or damaged sign, or a compound sign written with a slash. The "strict subset" is the flag-free working set. `lipi` and `mayig` are the two independent sign catalogs the project reads; a "policy" is a chosen rule for turning a catalog row into a sequence of sign tokens.
+
 This experiment stress-tests the structural and formula scaffold against the 12 count-matching rows that were excluded from the strict subset because they carry sensitivity flags.
 
 It does not try to rescue those rows into the clean baseline. It asks whether their behavior is compatible with the strict-row scaffold, and which flags damage the scaffold most.
@@ -50,7 +54,7 @@ This means Lipi and Mayig rows are not being forced into the same behavior. The 
 | `p385_merge_only` | 12 | 84 | 8 | 0.130952 | 4 | 2 | 0 | 0 |
 | `mayig_observed_parpola` | 12 | 84 | 11 | 0.190476 | 8 | 2 | 1 | 0 |
 
-Null controls:
+Null controls — what the same counts look like after the signs are shuffled, so any real scaffold has to beat them:
 
 ```text
 raw_lipi_numeric_I_at_start_shuffle_mean: 2.22
@@ -130,7 +134,7 @@ The 12 sensitivity rows are useful as a stress test, but they do not strengthen 
 They support this claim:
 
 ```text
-The strict gating is doing real work: sensitivity-flag rows introduce missing profiles, cross-source class disagreement, and no recurrent exact formula patterns.
+The strict gating — the rule that admits only flag-free rows — is doing real work: sensitivity-flag rows introduce missing profiles, cross-source class disagreement, and no recurrent exact formula patterns.
 ```
 
 They do not support:

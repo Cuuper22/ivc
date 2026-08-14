@@ -4,9 +4,11 @@ Date: 2026-05-25
 
 ## Question
 
-Do the five messy IA CISI source objects survive the same clean close-read standard used for `H-930` and `H-789`?
+This note applies a standard set earlier by two easy cases to five hard ones. FRAME700 is the project's label for short inscription rows built on sign `700`, such as `+700-034+`; the `034` work asks whether the sign codes `032`, `033`, and `034` are separate choices in the same slot. Two objects, `H-930` and `H-789`, were already close-read in the Internet Archive (IA) scans of CISI, the Corpus of Indus Seals and Inscriptions — the standard photographic catalog of Indus objects — and passed as clean. Five others are messy: their catalog pages show more panels, meaning labeled photographs of object sides, than our local records list. The question: do those five survive the same clean close-read standard?
 
 ## Inputs
+
+A gate is a checkpoint the evidence must pass before the next step is allowed.
 
 - Prior gate: [Lipi FRAME700 034 IA CISI visual inspection](lipi_frame700_034_ia_cisi_visual_inspection.md)
 - Calibration gate: [Lipi FRAME700 034 clean two-panel close-read](lipi_frame700_034_clean_two_panel_close_read.md)
@@ -29,6 +31,8 @@ accepted decipherment claims: 0
 ```
 
 ## Object-Level Decisions
+
+A lane is one of the separate evidence tracks the project runs, kept apart so a result in one does not lean on the other. In the lane role column, a target is an object the test is about, and a control is a comparison object used to check it.
 
 | Object | Lane role | Source panels visible | Local sides | Decision |
 | --- | --- | ---: | ---: | --- |
@@ -55,7 +59,7 @@ Inference, not accepted reading:
 
 ## Consequence
 
-This is a real negative source result. `H-771`, `H-893`, `H-925`, `H-983`, and `H-353` cannot inherit the `H-930`/`H-789` calibration upgrade. The current `034` residue is still live as a distributional and source-targeting problem, but these five source objects remain unvalidated until panel identity and variant status are reconciled.
+This is a real negative source result. `H-771`, `H-893`, `H-925`, `H-983`, and `H-353` cannot inherit the `H-930`/`H-789` calibration upgrade. The current `034` residue — the leftover pattern that has survived the controls run so far — is still live as a distributional and source-targeting problem, but these five source objects remain unvalidated until panel identity and variant status are reconciled.
 
 The next useful move is narrower than another broad audit:
 

@@ -2,6 +2,12 @@
 
 Date: 2026-05-26
 
+## What This Note Is
+
+This note is a gate — a pass/fail test a piece of evidence must clear before it counts. The evidence under test is a published paper, Daggumati and Revesz 2021, which names two Harappa tablets we care about, H-1302 and H-1303, in a discussion of mirrored writing and allographs (two shapes treated as the same sign).
+
+The distinction the gate enforces is easy to blur. A published paper mentioning our objects can be usable source evidence, meaning it settles something about our rows, or it can be merely a source-acquisition lead, meaning it tells us where to look next. Treating the second as the first is how a project quietly accumulates claims it never earned.
+
 ## Question
 
 ```text
@@ -48,7 +54,7 @@ H-1303
 4077.2 R/L +700-033+
 ```
 
-Both are `TAB:I` two-row packet objects in the short-mark source acquisition queue.
+Both are `TAB:I` — an incised tablet class — two-row objects in the short-mark source acquisition queue, the list of objects awaiting published images. A packet is a bundle of objects grouped for one review pass; these two sit in the same one.
 
 ## Published Source Check
 
@@ -91,7 +97,7 @@ The next gate is exact source reconciliation:
 1. CISI/HARP source panels for all catalog sides of both objects.
 2. Object-specific side labels and image-direction basis.
 3. ICIT/Wells/Fuls row or note showing exactly what was corrected.
-4. A controlled crosswalk between the article inline glyphs and local numeric lipi signs.
+4. A controlled crosswalk between the article inline glyphs and local numeric lipi signs. A crosswalk is a verified mapping between two sign-numbering systems.
 5. Caption/source binding for the public Blogger object-panel candidates before using them as object evidence.
 
 This exact request has now been sent to Harappa:

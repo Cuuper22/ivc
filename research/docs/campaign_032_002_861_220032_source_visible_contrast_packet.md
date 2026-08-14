@@ -2,11 +2,15 @@
 
 Date: 2026-05-29
 
+This note assembles and scores a packet — a bundle of rows and images gathered for one judgment. Seven rows share the run `220-032-002-861`, and they do not all end the same way. The point of the packet is to look at the actual photographs and check that the difference is really on the seals, not just in the catalogue. It is a looking exercise: it can confirm a contrast exists, never say what it means.
+
 ## Question
 
-When `220-032` immediately precedes `002-861`, does the post-`861` outcome behave like a real tail-choice contrast rather than a register artifact or a single-row accident?
+When `220-032` immediately precedes `002-861`, does the post-`861` outcome behave like a real tail-choice contrast rather than a register artifact — an effect of the coarse class of object, its site, type, and shape — or a single-row accident?
 
 ## Packet
+
+"Source-ready" means the row has an inspectable published photograph. A "blind sheet" is a contact sheet of those images stripped of labels, so a viewer scores what is visible without knowing the claimed reading; the "blind key" is the separate file that says which image is which.
 
 - Rows with `prefix_last2=220 032`: `7`
 - Source-ready rows: `5`
@@ -19,12 +23,12 @@ When `220-032` immediately precedes `002-861`, does the post-`861` outcome behav
 ## Pre-Review Decision
 
 - This is the best current source-visible minimal-contrast packet in the post-`861` field.
-- It already blocks a binary reading of `220-032-002-861` as simply terminal or simply selecting `603`: the same last-two preframe reaches bare closure, `603`, and `255-416`.
+- It already blocks a binary reading of `220-032-002-861` as simply terminal or simply selecting `603`: the same last-two preframe — the two signs immediately before `002-861` — reaches bare closure, `603`, and `255-416`.
 - The packet is not allowed to produce sign values. It can only score visible behavior: closure, simple tail, compound tail, same-line continuity, and whether the source images actually support the catalog split.
 
 ## Human Visual Score
 
-The sheet is semi-blind, not fully blind, because the existing overlay captions leak object/tail labels. It still supports the layout question.
+The sheet is semi-blind, not fully blind, because the existing overlay captions leak object/tail labels — the scorer can partly tell what each image is meant to show. It still supports the layout question. In the scores below, "signband" is the strip of the seal carrying the inscription.
 
 - `B0B5F50 / M-1044 / <END>`: bare closure, medium confidence. Blurred, but the checked terminal-side window has no visible post-`861` addendum.
 - `B1730A3 / M-91 / 255-416`: tailed continuation, high confidence. Same-line terminal-side material is visible as a longer compound tail.

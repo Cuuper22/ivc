@@ -2,6 +2,10 @@
 
 Date: 2026-05-26
 
+This note is a decision gate. A gate is a test a claim must pass before the project will build on it; writing the gate down in advance is what stops the standard from sliding once results come in.
+
+The claim under test concerns seal `M-315`. Our transcription gives it the sign `034` in its second slot — a slot being one position in the sign row — inside the frame `390-X-002`, where a frame is a fixed run of surrounding signs with one position left open for comparison. If that is right, `M-315` is the only object in the corpus with that particular contrast. If it is wrong, the contrast does not exist at all.
+
 Question:
 
 ```text
@@ -77,6 +81,8 @@ M-315 is a singleton in the exact extended frame. If the second visible unit is 
 
 ## Control Packet
 
+A control is a comparison object whose sign we are reasonably sure of. A packet is the bundle of crops and records assembled for one test. These controls exist so a reviewer's judgement can be checked against known cases.
+
 The decision controls are stored in:
 
 ```text
@@ -96,7 +102,7 @@ M-17_face_A_* / M-17_impression_a_*
 M-32_face_A_* / M-32_impression_a_*
 ```
 
-These crops are useful only as control comparanda. They support a blind graphic sort of M-315's second visible unit against non-034 second-position shapes; they do not validate M-315's second slot as numeric `034`.
+These crops are useful only as control comparanda — comparison material set beside the target, nothing more. They support a blind graphic sort of M-315's second visible unit against non-034 second-position shapes; they do not validate M-315's second slot as numeric `034`.
 
 Expanded public control crops acquired on 2026-05-26:
 
@@ -142,9 +148,11 @@ M-32 local: 390 003 002 817
 M-32 Mayig/Parpola: P086 P123 P122 P385
 ```
 
-That supports the broad `390 -> P086` and `002 -> P122` bridge in public-overlap controls, but it does not validate `M-315 034`, because current Mayig coverage stops before M-315.
+That supports the broad `390 -> P086` and `002 -> P122` bridge — a checked link between our sign codes and another catalogue's — in public-overlap controls, but it does not validate `M-315 034`, because current Mayig coverage stops before M-315.
 
 ## Decision Tree
+
+Six gates in order, each with its own pass condition and its own way of failing. Each carries a status word: PASS, OPEN meaning not yet decided, or FAILED.
 
 Gate 1: object binding.
 
@@ -192,6 +200,8 @@ Fail condition: either source check shows 034 is a local transcription artifact.
 ```
 
 ## Blind Sort Executed
+
+Blind means the reviewers grouped the crops without being told which object each came from or what our labels said. The protocol below is written out step by step because the order of the steps is the safeguard: labels come off before judging and go back on only afterward.
 
 The blind source-panel classification was run as:
 

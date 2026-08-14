@@ -4,13 +4,17 @@ Date: 2026-05-26
 
 ## Question
 
+This note is a gate: a recorded decision checkpoint that either lets a claim through or blocks it. What it blocks here is a tempting shortcut — treating two sign codes as the same sign because they carry the same number.
+
+Terms first. The project uses several independent sign catalogs, each with its own numbering: local Lipi codes (bare numbers like `110`, `112`), Mayig feature ids (`P041`), Parpola graphemes (`V141`), Wells (`W112`), and Mahadevan (`M034`). Parpola 2019 also cites signs by article number, as "sign no. 41," which is a sixth numbering. A "crosswalk" is a mapping between two of these catalogs. H-2148 is a Harappa artifact. "Falsification" means the gate is designed to break the claim, not support it.
+
 Does Mayig feature id `P041` independently confirm the H-2148 local `110` / Parpola sign no. 41 branch?
 
 ## Result
 
-No. It does the opposite of a shortcut: it exposes a sign-system namespace conflict.
+No. It does the opposite of a shortcut: it exposes a sign-system namespace conflict — two catalogs using the same number for different signs.
 
-The H-2148 role inference remains alive, but Mayig `P041` cannot be used as confirmation that local `110` equals Parpola sign no. 41.
+The H-2148 role inference remains alive — still a live line of inquiry, not accepted — but Mayig `P041` cannot be used as confirmation that local `110` equals Parpola sign no. 41.
 
 ## Evidence
 
@@ -39,7 +43,7 @@ That is the trap. The label `P041` looks numerically tempting, but the feature m
 
 ## Current Overlap Check
 
-The current Mayig index has only one `P041` occurrence:
+"Positional pressure" below means the two catalogs put the sign in the same slot of the same inscription, which is suggestive but not proof. The current Mayig index has only one `P041` occurrence:
 
 | Mayig side | Mayig graphemes | Local row | Local text | Positional pressure |
 | --- | --- | --- | --- | --- |

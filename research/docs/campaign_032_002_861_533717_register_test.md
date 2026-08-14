@@ -1,10 +1,12 @@
 Date: 2026-05-29
 
+This note tests whether a rare ending is rare everywhere or only rare in the wrong place to look. The pair `533-717` follows `002-861` on just 2 of 144 seals — negligible. But narrow the field to one physical class of object and the same 2 rows become 2 of 3. The note works through those slices and records what the concentration does and does not license.
+
 ## Question
 
-The context split made `533-717` the P1 restricted post-`861` target.
+The context split — the earlier pass that sorted post-`861` endings by how restricted their context is — made `533-717` the P1 restricted post-`861` target, the highest-priority one.
 
-This campaign asks the next linguistic question:
+This campaign asks the next linguistic question. A "register" is a coarse class of object defined by site, type, and shape; an "addendum" is an extra sign or signs tacked on after an otherwise complete ending:
 
 ```text
 Is 533-717 behaving like a conditional register/subclass marker
@@ -21,7 +23,7 @@ data/open_prototype/reports/campaign_032_002_861_533717_register_test_scopes.csv
 data/open_prototype/reports/campaign_032_002_861_533717_register_test_summary.json
 ```
 
-Input layer:
+Input layer. "Strict dedup" means near-duplicate rows are collapsed on text, site, type, and symbol so one object cannot be counted twice:
 
 ```text
 data/open_prototype/lipi/metadata_filtered.csv
@@ -96,7 +98,7 @@ What class of object/text is being marked when no-icon SEAL:R + 002-861 takes 53
 
 ## Next Test
 
-Source-route the five non-`533-717` no-icon `SEAL:R` `002-861` controls:
+Source-route the five non-`533-717` no-icon `SEAL:R` `002-861` controls — that is, find for each a chain of pointers from our database row to a real published image:
 
 ```text
 M-1954 bare

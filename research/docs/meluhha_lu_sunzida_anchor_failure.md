@@ -2,6 +2,10 @@
 
 Date: 2026-05-29
 
+This note records the test of one attractive shortcut, and its failure. The shortcut: a personal name in Mesopotamian records that people often cite as belonging to a Meluhhan, which — if it really marked Meluhha — could be matched against Indus signs to get sound values.
+
+Terms first. Meluhha is a place named in Mesopotamian cuneiform texts, widely identified with the Indus region. Vector 1 is this project's external-anchor line of work: constraining Indus signs using evidence from outside the Indus corpus. An "anchor" is a fixed outside point strong enough to constrain sign values. CDLI is the Cuneiform Digital Library Initiative, the public cuneiform database; ATF is its transliteration format.
+
 This is Vector 1 hard-anchor work. It is not a decipherment claim.
 
 ## Question
@@ -45,6 +49,8 @@ Across the seven current CDLI queries, the export has 79 distinct artifacts and 
 
 ## Forger / Matched Negative
 
+The forger is this project's standard adversary test: check whether the claim would score just as well when the real relationship is absent. Here that takes the form of matched negatives — texts that carry the name but have nothing to do with Meluhha.
+
 Hypothesis tested: `lu2-sun2-zi-da` is a Meluhha-diagnostic personal-name anchor.
 
 Matched negative definition: every current CDLI `atf_transliteration=lu2-sun2-zi-da` artifact where the same ATF text has no Meluhha line.
@@ -69,6 +75,8 @@ But the name itself appears in 14 current CDLI artifacts without any Meluhha lin
 
 ## Skeptic Attacks
 
+A skeptic pass is a deliberate attempt to argue the result down. These are the attacks it survived and the ones that killed it.
+
 Survived:
 
 - Exact CDLI `atf_transliteration` export rather than a hand-picked seed.
@@ -88,4 +96,4 @@ Retract the shortcut.
 
 `Lu-sunzida` remains a cuneiform-side lead for a named Meluhha-adjacent administrative text, but it is not an accepted external phonetic anchor. No Indus sign value, phonetic value, sign meaning, language-family claim, or translation is earned.
 
-The useful frontier movement is negative and concrete: the famous name lead is now measured against current CDLI matched negatives, and it fails hard enough that future bilingual searches must require more than onomastic adjacency. The next admissible gate is a paired external object or a source-validated sign-sequence match, not site overlap and not name citation.
+The useful frontier movement is negative and concrete: the famous name lead is now measured against current CDLI matched negatives, and it fails hard enough that future bilingual searches must require more than onomastic adjacency — two personal names sitting next to each other on the tablet. The next admissible gate — the checkpoint a claim must clear before it can advance — is a paired external object or a source-validated sign-sequence match, not site overlap and not name citation.

@@ -2,11 +2,15 @@
 
 Date: 2026-05-29
 
+This note sorts a backlog. Twenty-three different things follow `002-861` across 144 rows, and most of them appear exactly once with no photograph behind them. Working on those is a waste. This note ranks every ending by how much it can currently support and marks the rest as acquisition chores. Its purpose is to point the next campaign at the one cluster where the evidence is already in hand.
+
 ## Question
 
-Across the whole 144-row post-`002-861` field, which tails gain real decipherment pressure from repetition, minimal contrast, and source-visible context, and which are just metadata/source-acquisition chores?
+Across the whole 144-row post-`002-861` field, which tails gain real decipherment pressure from repetition, minimal contrast — two rows alike in every way but one — and source-visible context, meaning an inspectable published photograph, and which are just metadata/source-acquisition chores?
 
 ## Corpus Slice
+
+"Source-ready" rows have an inspectable image. An "exact-prefix mixed group" is a set of rows with an identical run of signs before `002-861` that nonetheless end differently — the cleanest kind of contrast, and the rarest.
 
 - Input rows: `144` from `C:\Users\Acer\OneDrive\Documents\ivc\data\open_prototype\reports\campaign_032_002_861_source_normalized_tail_predictor_all_rows.csv`
 - Non-bare tail rows: `31`
@@ -27,6 +31,8 @@ Across the whole 144-row post-`002-861` field, which tails gain real deciphermen
 - `empty-prefix 416/698/096 cluster`: `repeated_but_not_interpretable_before_source_images`. Evidence: 416:6;698:2;096:1. Next: quarantine as object/type/formula acquisition, not grammar, until source panels show comparable signbands.
 
 ## Ranked Tail Objects
+
+"Family cells" counts groups of near-identical rows weighed as one piece of evidence, so six copies of one formula may be worth a single cell.
 
 - `603`: `top_live_simple_tail_cluster`; rows `3`, family cells `3`, source-ready `3`. three source-ready post-861 rows, participates in the source-ready 220-032 split, and is not explained by one exact prefix
 - `533 717`: `conditional_fixed_final_unit`; rows `2`, family cells `2`, source-ready `2`. two source-ready rows and a fixed pair, but no exact-prefix or same-last2 contrast; lives mainly in a register split
@@ -52,6 +58,8 @@ Across the whole 144-row post-`002-861` field, which tails gain real deciphermen
 - `626`: `metadata_singleton_watch`; rows `1`, family cells `1`, source-ready `0`. single metadata row; source-route before interpretation
 
 ## Strongest Mixed Contexts
+
+A "mixed context" is a slice of the corpus that contains both bare rows and tailed rows, so a comparison is possible inside it. A "register key" names a coarse class of object by site, type, icon, and shape; "source-live" means the slice contains rows with inspectable images.
 
 - `broad_register_key=Mohenjo-daro|SEAL:R|None` (source-live): rows `7`, tails `<END>:3;533 717:2;360 520 919 140:1;603:1`, source-ready `5`.
 - `prefix_last1=032` (source-live): rows `10`, tails `<END>:8;255 416:1;603:1`, source-ready `5`.

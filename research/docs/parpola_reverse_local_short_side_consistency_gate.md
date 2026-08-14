@@ -4,6 +4,10 @@ Date: 2026-05-26
 
 ## Question
 
+This note is a gate: a recorded decision checkpoint that either lets a claim through or blocks it. What it tests is whether a published description of these tablets lines up with our own catalog rows well enough to say which physical side is which.
+
+Terms first. H-numbers are Harappa artifacts, here small inscribed tablets with writing on both faces. Parpola 2019 is a published paper whose claims we test rather than trust. "Lipi" is the local sign-code catalog; numbers like `110`, `415`, `700` are its sign codes, not readings. Each artifact appears in Lipi as several rows, one per inscribed side; the "companion" row is the other side of the same object. Parpola cites signs by his own article numbering, as "sign no. 41," which is a different namespace from the Lipi numbers.
+
 Does Parpola's reverse-side clue consistently point to the local short/companion side across the checked H-938/H-939/H-1284/H-2145 and H-940/H-2147/H-2148 cluster?
 
 ## Source
@@ -12,7 +16,7 @@ Parpola 2019, local extracted text `tmp/parpola_2019_bone_rods.txt`, lines 87-10
 
 Parpola states that H-938, H-939, H-1284, and H-2145 have `VIIII` on the reverse, while H-940, H-2147, and H-2148 have sign no. 41 on the reverse. He also notes that both sides read left-to-right in this tablet category, with H-2145's obverse as an exception.
 
-This is a prior-work side-role clue. It is not a local numeric sign crosswalk by itself.
+This is a prior-work side-role clue: it tells us which side plays which role, not what any sign means. It is not a local numeric sign crosswalk — a mapping between Parpola's sign numbers and the Lipi ones — by itself.
 
 ## Check
 

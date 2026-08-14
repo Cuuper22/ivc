@@ -4,7 +4,9 @@ Date: 2026-05-29
 
 Status: failed promotion. Accepted claim increment: 0.
 
-This gate tests whether the Vector 2 directionality candidate gets stronger when restricted to rows that have public CISI plate routes. It uses the frozen public-route probe universe rather than the later manual crop triage:
+This note records a gate — a pass/fail test a result must clear before it can be promoted. The gate asks a tempting question: does the Vector 2 directionality candidate, the working result that Indus inscriptions score better in their stored order than reversed, get stronger when we keep only the rows we can actually see published photographs of? A route is a concrete path from a catalog row to a published image; here, a plate in the public CISI volumes (the Corpus of Indus Seals and Inscriptions, the primary published photographic record).
+
+The gate uses the frozen public-route probe universe rather than the later manual crop triage:
 
 ```text
 probe_id = directionality_public_route_probe_v1
@@ -15,6 +17,8 @@ queue_rank <= 80
 That universe has 79 rows: 38 public CISI plate-route candidates and 41 rows not found in the public CISI OCR layer. This is still not source-normalized token evidence; it is a route-availability audit.
 
 ## Result
+
+Stored-win share is the fraction of rows where the stored order scores higher than the reversed order.
 
 | Subset | Rows | Stored wins | Reversed wins | Stored-win share |
 | --- | ---: | ---: | ---: | ---: |
@@ -34,7 +38,7 @@ Route availability does not rescue the source-normalization objection. The route
 
 ## Nulls
 
-The route-label null shuffles which rows are treated as public-route rows while preserving labels inside matched blocks. Four blocking policies were run for 5,000 iterations:
+A null is a run on deliberately scrambled data, used to see how often chance alone reproduces the observed result. The route-label null shuffles which rows are treated as public-route rows while preserving labels inside matched blocks. Four blocking policies were run for 5,000 iterations:
 
 - `priority_band`
 - `priority_band|site`

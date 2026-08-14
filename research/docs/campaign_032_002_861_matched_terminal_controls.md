@@ -2,9 +2,11 @@
 
 Date: 2026-05-28
 
+This note checks that our interesting rows have something to be compared against. A seal that adds signs after `002-861` only tells us something if there are similar seals that do not — otherwise the addition might be normal for that kind of object and we would never know. This pass searches, for each row with a tail, for nearby rows that stop bare. Every one of them has some. That does not explain the tails; it makes them countable.
+
 ## Question
 
-After the source-token attachment pass, the next control is whether the tail rows have nearby bare terminal `002-861` controls.
+After the source-token attachment pass — the earlier work matching marks on photographs to claimed signs — the next control is whether the tail rows have nearby bare terminal `002-861` controls. "Bare" means the inscription stops right after `002-861`; a "control" is a comparison row sharing the setting but not the feature under test.
 
 This is not a translation test. It asks whether the current tail rows are contrastive against comparable terminal rows, or whether they sit in uninformative isolated contexts.
 
@@ -18,7 +20,7 @@ data/open_prototype/reports/campaign_032_002_861_matched_terminal_controls_famil
 data/open_prototype/reports/campaign_032_002_861_matched_terminal_controls_summary.json
 ```
 
-Input layer:
+Input layer. "Strict dedup" means near-duplicate rows are collapsed so one object cannot be counted twice:
 
 ```text
 data/open_prototype/reports/campaign_032_002_861_suffix_split_rows.csv
@@ -27,6 +29,8 @@ rows = 119
 ```
 
 ## Key Control Results
+
+"Match level" is how the comparison block was drawn: by the last sign or last two signs before `002-861`, or by the object's site, type, and icon. A "lane" is a specific left-to-right pattern of those preceding signs.
 
 | focus | match level | matched rows | bare terminal `002-861` controls | tail rows in block | result |
 |---|---|---:|---:|---:|---|

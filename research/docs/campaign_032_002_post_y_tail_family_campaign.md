@@ -4,6 +4,8 @@ Date: 2026-05-28
 
 ## Question
 
+This note tests a prediction made by the previous campaign. Signs in this corpus are numeric IDs; `Y` names whichever sign follows `002`. A "branch head" is a sign that opens further material rather than ending the row; a "closure" sign ends it. A "tail" is the material that follows `Y`; a "tail family" is a tail that recurs across independent rows rather than appearing once. "Strict dedup" means identical texts collapse to one unit of evidence, so copies cannot count twice.
+
 If the post-`002` split is grammatical, branch-head signs should license patterned continuation material. This campaign asks whether the material after Y forms tail families or just random leftover row material.
 
 ## Inputs
@@ -145,7 +147,7 @@ Run a source-normalized branch-tail expansion:
 
 Pass:
 
-- Tail families recur across independent objects and predict metadata or frame behavior better than copy-family controls.
+- Tail families recur across independent objects and predict metadata or frame behavior better than copy-family controls — a copy family being a set of near-identical objects that really count as one witness.
 
 Fail:
 

@@ -2,6 +2,8 @@
 
 Date: 2026-05-28
 
+This note is the standing working model for one family of inscription endings. It gathers what the branch-tail campaigns have established so far, ranks the rival explanations, and lists what would break each one. Signs in this corpus are numeric IDs. A "tail" is the material that ends a row; a "branch head" is a sign that opens further material rather than ending the row; a "closure" sign ends it.
+
 ## Current Parse
 
 The strongest working parse after the source acquisition is:
@@ -16,6 +18,8 @@ This is a syntactic-value model, not a translation.
 
 ## Role Table
 
+Two terms recur below. "Strict dedup" means identical texts are collapsed to one unit of evidence, so a copied inscription cannot count twice. "Source-visible" means the row can be checked against a published photograph, not just a transcription.
+
 | sign | current role | why it matters |
 |---|---|---|
 | `817` | strongest closure | all-`002` strict dedup has `817` terminal in 100/103; adjacent `032-002` has 4/4 terminal |
@@ -26,6 +30,8 @@ This is a syntactic-value model, not a translation.
 | post-`002` `220` | branch head | all-`002` rows show recurring `220->455` and `220->065`; this is not the same role as pre-`032` `220` |
 
 ## Ranked Hypotheses
+
+Each hypothesis carries a falsifier: the observation that would kill it. "Register" below means the object class a row sits on — site, seal type, icon, shape.
 
 1. **Branch-selecting morphology**
 

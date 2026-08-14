@@ -4,7 +4,7 @@ Date: 2026-05-24
 
 ## Purpose
 
-This follows the [Lipi short-mark source acquisition queue](lipi_short_mark_source_acquisition_queue.md).
+This note asks whether one object, H-355, really carries the same short inscription twice on two different physical sides, or whether the local catalog simply recorded one side twice. It exists because that single bookkeeping question decides whether H-355 counts as evidence for deliberate repeated marking or has to be dropped from the comparison entirely. It follows the [Lipi short-mark source acquisition queue](lipi_short_mark_source_acquisition_queue.md).
 
 Question:
 
@@ -23,7 +23,7 @@ data/open_prototype/reports/h355_double_short_side_clarification_summary.json
 
 ## Packet Context
 
-H-355 is the only double-short-side case in the first 17-object short-mark source acquisition packet.
+H-355 is the only double-short-side case in the first 17-object short-mark source acquisition packet — the bundled list of objects whose source images the project is trying to obtain in one batch.
 
 ```text
 artifact: H-355

@@ -2,11 +2,13 @@
 
 Date: 2026-05-29
 
+This note asks how many real objects are behind a pattern. Three database rows carry the Harappa formula with `603` in the variable slot. Three rows is not three objects: rows can be duplicate catalogue entries for one thing, or copies of one another. This pass chases each row back to a published photograph or figure and scores what survives. Two of the three turn out to be genuinely distinct objects from different publications. That kills one objection and leaves another alive.
+
 ## Research Question
 
-Does the Harappa `740-X-240-060-692` family make `603` a real cross-slot bridge, or is the independent Harappa side just one copied/formulaic tablet family?
+Does the Harappa `740-X-240-060-692` family — where `X` is the position that varies — make `603` a real cross-slot bridge, a sign that carries over into a different construction, or is the independent Harappa side just one copied/formulaic tablet family?
 
-This is a source-normalization pass, not a value claim. It asks how much independent physical weight each X-slot witness deserves before using the slot linguistically.
+This is a source-normalization pass — a rescoring of the rows by what can actually be seen on published images rather than trusted from catalogue transcriptions — not a value claim. It asks how much independent physical weight each X-slot witness deserves before using the slot linguistically. A "witness" is a database row that attests a sign sequence.
 
 ## Inputs
 
@@ -41,7 +43,7 @@ Raw slot result: only `603` among observed X-slot values also appears as a post-
 - Local crop:
   - `tmp/032_002_861_603_slot_source_normalization/H1846_H95_2672_Figure11_11_crop_v3.png`
 
-`H-1137` remains route-only:
+`H-1137` remains route-only — a chain of pointers exists, but it does not end at an image we can look at:
 
 - Vats text p. 166 describes no. 7537 as similar to no. 346 in Plate XCIV.
 - Local metadata maps `H-1137` to `7537824`.
@@ -77,7 +79,7 @@ Raw slot result: only `603` among observed X-slot values also appears as a post-
 - No excavation-idno in the local metadata.
 - It is a fish-shaped TAB:B object with `L/R` direction and companion `+700-033+`.
 - The current local export marks its SP text as `ref:424.2`, the same reference pressure attached to the `642` Harappa route.
-- Until a source image or independent excavation route is found, it counts as clone-pressure on `H-1845`, not as an independent `642` source witness.
+- Until a source image or independent excavation route is found, it counts as clone-pressure on `H-1845` — reason to suspect it is the same object recorded twice — not as an independent `642` source witness.
 
 ## Normalized Witness Weights
 

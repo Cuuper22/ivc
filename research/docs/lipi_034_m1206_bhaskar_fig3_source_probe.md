@@ -2,6 +2,8 @@
 
 Date: 2026-05-25
 
+This note is a probe — a quick, bounded check — of one published figure that appears to show the seal M-1206. It exists because M-1206 is the only object in the local corpus carrying a particular three-sign string, and a lone object cannot be trusted until a real photograph is found. The figure turned out to be a usable lead, and also to contain a contradiction about which object it shows.
+
 Question:
 
 ```text
@@ -84,9 +86,11 @@ terminal 415 rows: 28
 terminal 034 rows: 1
 ```
 
-That means M-1206 is a singleton `520-220-034` terminal-slot target in the filtered local planning layer. This is useful because it tests `034` outside the `700-034` FRAME700 branch. It is also dangerous: singleton status makes source-image confirmation mandatory, since one bad segmentation can create the entire signal.
+That means M-1206 is a singleton `520-220-034` terminal-slot target in the filtered local planning layer. This is useful because it tests `034` outside the `700-034` FRAME700 branch — the separate line of investigation into the project's `700-03x` sign frame. It is also dangerous: singleton status makes source-image confirmation mandatory, since one bad segmentation can create the entire signal.
 
 ## Adjudication
+
+Adjudication is the ruling on what the evidence above is allowed to support. To quarantine a point is to set it aside as unusable until a named blocker clears.
 
 Accepted:
 

@@ -2,6 +2,10 @@
 
 Date: 2026-05-25
 
+This note is a source probe: a bounded check on whether a published volume actually shows the object we have been tracking on paper only.
+
+The object is seal `M-685`, and it is broken. Our transcription reads `]034-204+`, where the bracket marks a break in the object — the text is missing whatever came before. A broken row is worth chasing and dangerous to lean on: the sign we care about sits right at the fracture, so we cannot know it was the first sign, or even that it survived whole.
+
 Question:
 
 ```text
@@ -60,7 +64,7 @@ MOHENJO-DARO 683-686
 
 The page visibly labels both `M-685 A` and `M-685 a`.
 
-This upgrades M-685 from catalogue lead to source-visible object binding. It does not validate the numeric transcription. The local row is fragmentary, starts with a leading bracket, and the source page does not print numeric sign codes beside the image.
+This upgrades M-685 from catalogue lead to source-visible object binding — meaning a published page now ties our row to a pictured object. It does not validate the numeric transcription. The local row is fragmentary, starts with a leading bracket, and the source page does not print numeric sign codes beside the image.
 
 ## Visual Evidence
 
@@ -88,6 +92,8 @@ The OCR locator is useful but not decisive: `Pakistan_0071.djvu` has an `M-685` 
 
 ## Iconography Conflict
 
+Iconography here means the animal figure carved on the seal beside the text. Three records disagree about which animal it is. That disagreement is recorded rather than resolved, because it shows our own metadata is not error-free.
+
 The source route exposes a metadata conflict:
 
 ```text
@@ -99,6 +105,8 @@ Local lipi: symbol Bull1
 That conflict matters because local iconography metadata cannot be used as if it were source-perfect. It does not change the inscription target, but it blocks any iconography-conditioned interpretation until the source data row or a higher-resolution catalogue note explains the discrepancy.
 
 ## 034-204 Contrast
+
+How rare this pairing is in the corpus, counted plainly.
 
 The targeted local contrast set is stored in `data/open_prototype/reports/lipi_034_m685_034_204_contrasts.csv`.
 
@@ -116,6 +124,8 @@ M-685 is the only row with adjacent `034-204`, and the only row containing both 
 
 ## Adjudication
 
+The ruling: what this probe lets the project carry forward, and what it does not.
+
 Accepted:
 
 - CISI Vol. 2 p. 37 is source-visible and labels `M-685 A` and `M-685 a`.
@@ -123,7 +133,7 @@ Accepted:
 - The source page and Bhaskar S1 agree on Unicorn context.
 - M-685 is the only `034-204` row in the filtered local layer.
 
-Rejected or quarantined:
+Rejected or quarantined — quarantine means held out of downstream use until the problem is fixed:
 
 - No numeric sign mapping is accepted from the image alone.
 - No value, function, phonetic reading, language identity, or translation is accepted.
@@ -132,6 +142,8 @@ Rejected or quarantined:
 - No source data row connecting `M-685` to `HR 4244276` was found in the current OCR pass.
 
 ## Next Gate
+
+The gate is the next test this line of work must pass. It is a list of things to demand from a source, not a list of conclusions.
 
 The narrow source gate is:
 

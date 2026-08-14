@@ -4,6 +4,8 @@ Date: 2026-05-28
 
 ## Question
 
+This note asks what kind of thing the sign after `002` is. Signs in this corpus are numeric IDs; `Y` names whichever sign follows `002`. A row is "terminal" when it ends right after `Y`, and "continuing" when more signs follow. A "branch head" is a sign that opens further material; a "closure" sign ends the row. A "register" is the object class a row sits on — site, seal type, icon, shape. "Strict dedup" means identical texts collapse to one unit of evidence, so copies cannot count twice.
+
 After `032-002-Y`, does `Y` behave like:
 
 - an ending/closure class,

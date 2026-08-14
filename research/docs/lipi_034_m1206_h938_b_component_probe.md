@@ -2,9 +2,11 @@
 
 Date: 2026-05-26
 
+This note is a probe — a quick, bounded check — that takes an argument one step further than the previous audit and finds it breaks. It was already known that one object carries both signs of interest, one on each side. That only shows the two signs sit near each other. This note asks the harder question: is the actual drawn shape behind the code `034` the same shape as the `415` controls? The answer is no.
+
 ## Question
 
-Does the source-visible `H-938 B` companion side give component-level visual support for `034/415` allography?
+Does the source-visible `H-938 B` companion side give component-level visual support for `034/415` allography — the claim that two codes are variants of one sign?
 
 `H-938` is the clean same-object pressure case:
 
@@ -57,7 +59,7 @@ The result is negative for a direct component-level `034/415` match.
 
 The left vertical component is the one that visually resembles the M-1206 target terminal and the `H-938 A/A bis` exact-side `415` controls.
 
-But under the local row's `R/L` order assumption for:
+But under the local row's `R/L` order assumption — the corpus field recording that the inscription is read right-to-left — for:
 
 ```text
 +034-700+
@@ -66,6 +68,8 @@ But under the local row's `R/L` order assumption for:
 the first local token, `034`, should be the rightmost visible component, not the left one. Under that assumption, the candidate `034` is the right loop/cross component, which is not close to the vertical `415` family.
 
 ## Adjudication
+
+Adjudication is the ruling on what each observed component is allowed to support.
 
 | Component | Visual relation to `415` family | Local-order implication | Status |
 | --- | --- | --- | --- |

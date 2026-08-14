@@ -2,6 +2,10 @@
 
 Date: 2026-05-29
 
+This note sets up a test on a single object, M-381, and states the rules the reviewer must follow.
+
+Terms first. A "source-box" is a box drawn on a published object photograph around each sign a reviewer can see; a "token box" is one such box around one sign. A "negative control" is an object chosen because its catalog text does not contain the pattern under test, so any reviewer who finds the pattern there is producing a false positive. A "packet" is the bundle of images and instructions handed to the reviewer. "Blind" means the reviewer works without the catalog text or object identity. "Adjudication" is the scored decision that follows. A "route" is the trail from a catalog row to a real, citable source record. Numbers like `032`, `002`, and `798` are Lipi catalog sign codes, not readings. M- numbers are Mohenjo-daro artifacts.
+
 This packet upgrades one v2 negative-control target from route inventory to adjudication queue. It does not promote a claim.
 
 Result after blind review: failed clean-negative gate. See `docs/source_box_negative_control_v2_m381_blind_adjudication.md`.
@@ -16,7 +20,7 @@ Result after blind review: failed clean-negative gate. See `docs/source_box_nega
 
 ## Boundary
 
-The source-status gate says M-381 is `source_visible_ready_for_token_box_adjudication`, not source-confirmed. The crop is visually usable, but the claim remains unearned until token boxes and a stage-separated review are recorded.
+The source-status gate — the checkpoint that decides how far an object's evidence goes — says M-381 is `source_visible_ready_for_token_box_adjudication`, meaning a usable published image exists, not source-confirmed. The crop is visually usable, but the claim remains unearned until token boxes and a stage-separated review are recorded.
 
 Accepted-claim increments: zero.
 

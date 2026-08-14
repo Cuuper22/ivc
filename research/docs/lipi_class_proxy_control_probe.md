@@ -2,6 +2,12 @@
 
 Date: 2026-05-24
 
+This note is a control probe. It exists to attack a result we already have, by removing every boring explanation for it and seeing what is left standing.
+
+The result under attack: a column in our dataset called `class` can be predicted from the signs on the object. The boring explanation is that `class` is really just a restatement of the object's length, site, or type — what we call a proxy. So this note strips out the labels that are mostly proxies, then shuffles the remaining labels within matched blocks of rows to build a null model. A null model is a deliberately meaningless version of the data; if your real result cannot beat it, your result was noise.
+
+Note where this lands. The finding survives, and surviving makes it more worrying rather than less, because the most likely remaining explanation is circularity: the class codes may have been derived from the inscriptions in the first place.
+
 ## Purpose
 
 This experiment follows the [Lipi class field audit](lipi_class_field_audit.md). That audit downgraded `lipi.class` from metadata scout target to unverified source-code field because no upstream definition-like text was found for the class abbreviations, and several class values are near-proxies for length, site, type, or completeness.
@@ -43,6 +49,8 @@ iterations_per_shuffle_block = 20
 
 ## Label Filters
 
+Three versions of the data: everything eligible, then two progressively harsher versions with proxy-heavy labels stripped out.
+
 The probe uses three label filters:
 
 | Filter | Rows | Labels | Removed Labels |
@@ -54,6 +62,8 @@ The probe uses three label filters:
 The removed labels are based on the source-field audit. A class label is removed when its highest source-audit share across type, site, or length reaches the threshold.
 
 ## Observed Predictors
+
+Five models per filter, from a dumb one that always guesses the commonest label up to one that reads the sign tokens. Leave-one-out means each row is predicted by a model trained on every row but itself.
 
 Observed leave-one-out results:
 
@@ -74,6 +84,8 @@ Observed leave-one-out results:
 Removing proxy-heavy labels does not weaken token prediction. It strengthens it, which is a warning sign: the remaining `class` labels are likely closer to sign-internal source coding.
 
 ## Metadata-Block Label Shuffles
+
+This is the null model. Labels are scrambled among rows that already match on length, type, and site, while the sign strings stay put. Any score the shuffled data still reaches is a score the real result had to beat to mean anything.
 
 The probe shuffles labels inside blocks while preserving sign strings. This tests whether token prediction is only recovering metadata block structure.
 
@@ -104,7 +116,7 @@ The result survives the simple row-metadata proxy explanation:
 Within the filtered `lipi` numeric-clean planning layer, `class` labels are recoverable from exact sign tokens even after high-purity proxy labels are removed and labels are shuffled within length/type/site blocks.
 ```
 
-But this is not semantic evidence. Because the class codes are undefined and may have been produced from the inscriptions themselves, the residual is likely source-internal coding, not external metadata.
+But this is not semantic evidence. Because the class codes are undefined and may have been produced from the inscriptions themselves, the residual — the part of the signal left after every controlled explanation is removed — is likely source-internal coding, not external metadata.
 
 The upgraded interpretation is:
 
@@ -133,9 +145,11 @@ The next stronger target is not more `class` modeling. It is a clearer-provenanc
 - Artifact type, with stronger artifact-type nulls.
 - Site only after site/type/period entanglement is explicitly modeled.
 
-The first gate for those targets is now recorded in [Lipi semantic anchor target audit](lipi_semantic_anchor_target_audit.md).
+The first gate — the test each candidate target must pass before it is used — is now recorded in [Lipi semantic anchor target audit](lipi_semantic_anchor_target_audit.md).
 
 ## Next Falsification
+
+Falsification means the next tests are chosen for their power to break this result, not to confirm it. The last item is the sharpest: build a script where we know the labels were made from the signs, and see how easily a model "rediscovers" them.
 
 Next tests:
 

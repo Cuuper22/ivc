@@ -4,13 +4,13 @@ Date: 2026-05-29
 
 ## Purpose
 
-This is an adversarial control for the recorded direction field. The live directionality candidate might be an artifact of a corpus direction convention rather than source-image direction. This test asks what the metadata layer can and cannot prove.
+This note records an adversarial control — a test built to break our own result — aimed at the recorded direction field in the catalog. The live directionality candidate is the working result that Indus inscriptions score better in their stored order than reversed. That candidate might be an artifact of a corpus direction convention, meaning a cataloguing habit about which way to write the signs down, rather than evidence about the direction on the actual seal. This test asks what the metadata layer, the catalog data alone, can and cannot prove.
 
-Scope:
+Scope — the filtered slice of rows this test runs on:
 
-- top-10 edge signs removed,
-- one-edit families collapsed,
-- Lipi T3 metadata/sign layer,
+- top-10 edge signs removed, so the most common first and last signs cannot carry the result,
+- one-edit families collapsed, so near-identical inscriptions count once,
+- Lipi T3 metadata/sign layer, our catalog-derived working table,
 - 365 rows.
 
 ## Direction Distribution
@@ -24,7 +24,7 @@ The direction field is too imbalanced to validate a physical direction policy. A
 
 ## Result
 
-The directionality signal is not driven by the 11 `L/R` rows:
+The directionality signal is not driven by the 11 `L/R` rows. Stored-win share below is the fraction of rows where the stored order scores higher than the reversed order:
 
 | Scope / policy | Rows | Stored win share |
 | --- | ---: | ---: |
@@ -35,7 +35,7 @@ The directionality signal is not driven by the 11 `L/R` rows:
 | all harsh, flip only `L/R` rows | 365 | 0.813699 |
 | all harsh, flip only `R/L` rows | 365 | 0.813699 |
 
-Random row flips kill the signal:
+Random row flips kill the signal. The null columns come from a null model — repeated runs on data deliberately scrambled to destroy the effect under test, here by flipping each row's orientation at random:
 
 | Scope | Random policy | Null mean | Null p95 | Null >= stored as-is |
 | --- | --- | ---: | ---: | ---: |

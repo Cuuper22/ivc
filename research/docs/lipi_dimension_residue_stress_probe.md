@@ -2,6 +2,14 @@
 
 Date: 2026-05-24
 
+This note puts a small, tempting result under load until it breaks.
+
+The tempting result: object measurements — how tall, how wide, how thick — looked slightly predictable from the signs carved on the object. If that held up, it would hint that some signs record quantities. A residue is what is left of a signal after the obvious explanations are subtracted, and this residue was already tiny.
+
+A stressor is a control designed to be hostile: a rival model that uses only dull information, or a null model built by shuffling the labels so the data means nothing. If the dull rival scores higher than the sign-based model, the sign-based story is dead. That is what happens here.
+
+`lipi` is a third-tier or T3 dataset: catalogue metadata, useful for planning, never authority.
+
 ## Purpose
 
 This probe follows the [Lipi semantic anchor prediction probe](lipi_semantic_anchor_prediction_probe.md). That probe left only tiny dimension-bin residues, especially `vertical_bin`, after blocked semantic-anchor nulls.
@@ -40,6 +48,8 @@ iterations_per_block: 10
 
 ## Broad Sign Classes
 
+Signs grouped purely by where they tend to sit in an inscription — first, last, in the middle, alone. Nothing here is about meaning; these groupings exist only so position can be controlled for.
+
 Unlike the earlier structural-class work on the narrow Mayig overlap, this probe derives fresh broad sign classes from the 1,798 exact-sequence-collapsed `lipi` families.
 
 Sign classes are positional only:
@@ -66,6 +76,8 @@ Observed broad class counts:
 These classes are not semantic. They are controls for broad sign-position behavior.
 
 ## Models And Blocks
+
+What is being predicted, what does the predicting, and how the null models are built. A shortcut model uses only dull metadata such as material and shape; a block is the set of matched rows within which labels get shuffled to make the null.
 
 Targets:
 
@@ -98,6 +110,8 @@ Label-shuffle blocks:
 
 ## Observed Shortcut Results
 
+The decisive table. Compare the last column, which uses the signs, against the dull metadata columns beside it.
+
 | Target | Majority | Length+Type+Site | Material+Shape | Edge-Class Frame | Hard Proxy | Token NB |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | `horizontal_bin` | 0.398930 | 0.485731 | 0.471463 | 0.477408 | 0.488704 | 0.444114 |
@@ -109,6 +123,8 @@ Label-shuffle blocks:
 Plain metadata shortcuts beat Token NB for every dimension target. That blocks any metrological interpretation from the current T3 metadata layer.
 
 ## Hardest Token NB Nulls
+
+For each target, the shuffle block that came closest to matching the real score. The gap is how far the real result beat meaningless data — and these gaps are very small.
 
 | Target | Hardest Block | Observed Token NB | Null Mean | Gap | Macro-F1 Gap | Unchanged Label Share |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
@@ -149,6 +165,8 @@ It does not support:
 - Translation.
 
 ## Next Falsification
+
+Falsification means the next tests are chosen for their power to break a result, not to confirm it. Here the recommendation is to stop widening this question and ask a narrower one.
 
 The next path should not be more broad dimension-bin prediction. Better next tests:
 

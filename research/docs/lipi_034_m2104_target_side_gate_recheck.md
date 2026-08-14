@@ -2,6 +2,10 @@
 
 Date: 2026-05-25
 
+This note is a recheck. An earlier pass judged the target object, `M-2104`, under looser rules. Since then the project tightened how it counts evidence, so the same object gets rerun through the stricter test and the outcome is written down again from scratch.
+
+A gate is a test a claim must pass before it can advance. The target side is the object carrying the sign we care about; the comparator side is the set of other objects we measure it against. This note is only about the target side.
+
 Question:
 
 ```text
@@ -46,6 +50,8 @@ That is not "exactly three." It is a live target, not a proof.
 
 ## Source Ladder
 
+The rungs between our transcription and the physical object, weakest at the top. Each rung says what it gives and where it stops. A bridge is a chain of records tying identifiers to one another.
+
 | Step | Status | Evidence | Limit |
 | --- | --- | --- | --- |
 | Local row `2527.1` | internal bridge | `M-2104`, `VS 875CXIV:532`, `+151-097-700-034+`, ivory rod, depth `-12.0 ft` | Local dataset bridge only. |
@@ -56,7 +62,7 @@ That is not "exactly three." It is a live target, not a proof.
 | IA/IGNCA Marshall Vol. III Plate CXIV `48270_0205` | best public raw witness | 2601 x 3483 scan; no. 532 region visible | Count remains 3-to-4 ambiguous; five-character warning remains active. |
 | CISI 3.1 | required acquisition target | Secondary range places `M-2104` inside `m1660-m2132`; hardbound purchase route exists | Not inspected yet, so identity/image/segmentation bridge is still open. |
 
-Public source links already used by the packet:
+Public source links already used by this packet — one self-contained bundle of evidence and rulings:
 
 - Internet Archive/IGNCA Marshall Vol. III item: `https://archive.org/details/in.gov.ignca.48270`
 - Plate CXIV page: `https://archive.org/details/in.gov.ignca.48270/page/n205/mode/1up`
@@ -69,7 +75,7 @@ Public source links already used by the packet:
 
 The target-side public source was rechecked against the stricter comparator policy from the family-dependence packet.
 
-The comparator side is no longer counted as four rows:
+The comparator side is no longer counted as four rows. Copies of one formula on one plate are one fact, so they collapse into a single evidence unit:
 
 ```text
 EU_004_INDIA_478_479_480 = one same-plate tablet-family evidence unit
@@ -90,6 +96,8 @@ This changes the evidentiary posture:
 ```
 
 ## Kill Gates Applied
+
+Seven tests written to be hostile to the claim. A kill gate is one whose failure ends the claim rather than weakening it.
 
 1. Explicit source bridge: fails in the public layer. The local row links `M-2104` to `VS 875CXIV:532`; checked public sources split the legs.
 2. CISI 3.1 bridge: open. The expected volume route exists, but the source has not been inspected.
@@ -126,7 +134,7 @@ Accepted:
 - The no. 532 region is visually inspectable enough to show a U/V-like unit plus adjacent stroke group.
 - The `004` comparator side is two evidence units after dependence correction, not four independent rows.
 
-Rejected or quarantined:
+Rejected or quarantined — quarantine means held out of all downstream work until the blocking problem is fixed:
 
 - No accepted `034 = three`.
 - No accepted `004 = four`.
@@ -137,7 +145,7 @@ Rejected or quarantined:
 
 ## Next Move
 
-Stop widening the frame here. The next decisive action is source acquisition, not another broad audit:
+Stop widening the frame here — the frame being the run of surrounding signs used for comparison. The next decisive action is source acquisition, not another broad audit:
 
 ```text
 Acquire or inspect CISI 3.1 / archive / museum material for M-2104.

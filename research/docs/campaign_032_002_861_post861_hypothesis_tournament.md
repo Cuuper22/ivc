@@ -2,11 +2,13 @@
 
 Date: 2026-05-29
 
+This note runs a tournament between explanations. Five different accounts of what happens after `002-861` are all consistent with the data so far — one says it is grammar, others say it is layout, stock phrases, object labelling, or a cataloguing mistake. Rather than argue, this note gives each a fair statement, names the evidence that would raise its odds, and names the evidence that would kill it. It also ranks which parts of the corpus are worth working on next. It decides nothing; it makes the next decision cheaper.
+
 ## Question
 
 What is the post-`861` field doing as a language system?
 
-The unit is no longer one sign. The unit is the whole strict `002-861` continuation field: closure, simple single-sign tails, fixed pairs, and longer continuations. The aim is to increase reading probability by ranking competing linguistic hypotheses and their kill gates, not by proving one catalog crosswalk.
+The unit is no longer one sign. The unit is the whole strict `002-861` continuation field: closure, simple single-sign tails, fixed pairs, and longer continuations. The aim is to increase reading probability by ranking competing linguistic hypotheses and their kill gates — the findings fixed in advance that would rule each hypothesis out — not by proving one catalog crosswalk.
 
 ## Inputs
 
@@ -24,7 +26,7 @@ The unit is no longer one sign. The unit is the whole strict `002-861` continuat
 
 ## Tail-Class Field
 
-The post-`861` zone is not one suffix candidate.
+The post-`861` zone is not one suffix candidate. "Family cells" counts groups of near-identical rows weighed as one piece of evidence; "source-ready" means the row has an inspectable published image.
 
 | Class | Rows | Family cells | Source-ready | Tail distribution |
 |---|---:|---:|---:|---|
@@ -37,7 +39,7 @@ The live claim is a typed secondary-zone model: `002-861` is closure-capable, bu
 
 ## Predictor Pressure
 
-Feature information says preframe is carrying more signal than broad artifact metadata.
+Feature information says the preframe — the run of signs immediately before `002-861` — is carrying more signal than broad artifact metadata. "MI" is mutual information: how much knowing the feature tells you about the outcome, in bits. Higher means more predictive.
 
 | Feature | Non-bare MI | Tail-class MI | Tail-identity MI |
 |---|---:|---:|---:|
@@ -51,6 +53,8 @@ Feature information says preframe is carrying more signal than broad artifact me
 This does not prove grammar, because exact-prefix contrasts are still scarce and terminal-space is a live adversary. It does decide where to work: preframe lanes are the ranked research targets; register stays as an adversarial predictor and control layer, not as the target object.
 
 ## Ranked Research Lanes
+
+A "lane" is a slice of the corpus defined by a specific pattern of preceding signs. Each entry names why the lane is worth work and what would end it.
 
 1. `prefix_last1=032` and `prefix_last2=220 032`
    - `032`: `10` rows, tail split `<END>:8;255 416:1;603:1`.
@@ -67,7 +71,7 @@ This does not prove grammar, because exact-prefix contrasts are still scarce and
 3. Empty-prefix `002-861-X`
    - `9` rows, all non-bare: `416:6;698:2;096:1`.
    - Research value: possible special construction, not comparable to full-prefix post-`861` tails until source images exist.
-   - Kill gate: if source routing collapses these into Harappa TAB:I and Mohenjo no-icon copy/template pockets, quarantine as object/register templates.
+   - Kill gate: if source routing collapses these into Harappa TAB:I and Mohenjo no-icon copy/template pockets, quarantine — set aside as uncitable — as object/register templates.
 
 4. `prefix_last1=235`
    - `8` rows, tail split `<END>:7;360 520 919 140:1`.
@@ -86,7 +90,7 @@ This does not prove grammar, because exact-prefix contrasts are still scarce and
 
 ## Adversarial Context Fields
 
-Register fields are not ranked as target lanes, but they are required controls.
+A "register" field is a coarse class of object defined by site, type, icon, and shape. Register fields are not ranked as target lanes, but they are required controls: if they predict the outcome better than sign context does, the grammar story fails.
 
 - `Mohenjo-daro|SEAL:S|Bull1:W|square`: `23` rows, tail split `<END>:17;032 520 919 140:1;832:1;036 460 513:1;031:1;603:1;803:1`.
 - `Mohenjo-daro|SEAL:R|None`: `7` rows, `5` source-ready, tail split `<END>:3;533 717:2;360 520 919 140:1;603:1`.

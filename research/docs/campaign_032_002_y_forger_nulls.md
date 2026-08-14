@@ -4,6 +4,8 @@ Date: 2026-05-29
 
 ## Question
 
+This note records an adversarial test. The forger is our hostile tool: it builds fake corpora that keep the real corpus's surface statistics, then runs our own method on them. If the method finds the same pattern in forged data, the pattern is worthless. Signs in this corpus are numeric IDs; `Y` names whichever sign follows `002`. A "closure" sign ends a row, a "branch" sign opens further material, and a "register" is the object class a row sits on — site, seal type, icon, shape. Each forger model is a null model: a randomized copy of the data used as a baseline.
+
 Does the `002-Y` closure/branch signal survive synthetic corpora that preserve sign frequencies and register structure, or does the same method find a comparable pattern in forged data?
 
 ## Inputs
@@ -26,6 +28,8 @@ The tool `data/open_prototype/tools/campaign_032_002_y_forger_nulls.mjs` ran 2,0
 
 ## Result
 
+FPR below is the false-positive rate: the share of forged runs that matched or beat the real result. Lower is better for the real pattern.
+
 All-`002` strict dedup scope:
 
 - Rows: 499.
@@ -46,6 +50,6 @@ Adjacent `032-002` strict dedup scope:
 
 ## Decision
 
-This forger pass strengthens the structural candidate but does not accept it. The live skeptic objection is overfitting: the fixed Y-class bins were chosen from observed terminal behavior. The next admissibility gate is a source-boxed, family-blocked, right-edge-matched holdout that tests whether the Y class still predicts closure when repeated formula families and edge position are denied easy wins.
+This forger pass strengthens the structural candidate but does not accept it. The live skeptic objection is overfitting: the fixed Y-class bins were chosen from observed terminal behavior. The next admissibility gate — the checkpoint this work must clear before any stronger claim — is a source-boxed, family-blocked, right-edge-matched holdout. A holdout is a test run once on evidence set aside in advance, so it cannot be tuned. It tests whether the Y class still predicts closure when repeated formula families and edge position are denied easy wins.
 
 Accepted translations, phonetic values, sign meanings, language identification, and structural findings remain zero in `data/claim_ledger/claims.json`.

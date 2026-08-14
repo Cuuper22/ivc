@@ -2,9 +2,13 @@
 
 Date: 2026-05-29
 
+## What This Note Is
+
+This note adds a second yardstick to our structural instrument. A comparator is a control corpus scored with the exact same instrument as the Indus data, so a bare Indus number gets a scale to sit on. Until now the only known-script yardstick was Linear B, and a single yardstick can mislead. SumTablets is a published corpus of Sumerian cuneiform administrative tablets — a writing system people can read, used for bookkeeping much as the Indus seals may have been.
+
 ## Result
 
-SumTablets is now integrated as a pinned known-script administrative comparator for Vector 2. This is calibration, not Indus evidence. It asks whether the same glyph-only masked-sign instrument can recover local structure in a known readable cuneiform administrative corpus when transliteration and sign-name fields are hidden.
+SumTablets is now integrated as a pinned known-script administrative comparator for Vector 2. Pinned means the dataset version is fixed by hash, so the comparison stays reproducible. This is calibration, not Indus evidence. It asks whether the same glyph-only masked-sign instrument — hide one sign at a time, ask a model to guess it from its neighbours — can recover local structure in a known readable cuneiform administrative corpus when transliteration and sign-name fields are hidden. Hiding those fields is what puts the cuneiform corpus in the same position as the Indus corpus: shapes only, no readings.
 
 ## Provenance
 
@@ -46,6 +50,8 @@ Extraction counts:
 
 ## Primary Comparison
 
+Top-1 is the share of hidden signs guessed exactly right; top-5 is the share where the right sign is in the model's first five guesses. Label bits measures how much information a full assignment of values to signs would take — the size of the unanchored solution space.
+
 | System / test | Rows | Tokens or gaps | Signs/tokens | Label bits | Top-1 | Top-5 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Indus strict exact-collapsed masked signs | 1,798 | 8,212 | 571 | 4,410.970864 | 0.279591 | 0.534096 |
@@ -55,7 +61,7 @@ Extraction counts:
 
 ## Forger Controls
 
-SumTablets observed top-1 is lower than Indus in this line-level glyph-only setup, but it still cleanly beats its own matched controls. Forty iterations were run for each control, scoring 1,500 masked positions per null iteration.
+A forger is a control built to fake the signal we are hunting; these controls scramble the SumTablets lines in different ways so we can see how much of its score is real structure. SumTablets observed top-1 is lower than Indus in this line-level glyph-only setup, but it still cleanly beats its own matched controls. Forty iterations were run for each control, scoring 1,500 masked positions per null iteration. "Null >= observed" is the fraction of scrambled runs that matched or beat the real score, so 0 means none did.
 
 | Control | Null mean top-1 | Null p95 | Null max | Null >= observed |
 | --- | ---: | ---: | ---: | ---: |

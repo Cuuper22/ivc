@@ -2,11 +2,13 @@
 
 Date: 2026-05-26
 
+This note is an adjudication — a ruling on a disputed point of evidence. The dispute is whether two objects, `H-786` and `H-941`, actually contradict the project's local transcription, or whether the apparent contradiction came from a bad assumption about how two different labeling systems line up. The ruling matters because it decides whether those two objects can be used as evidence at all.
+
 ## Question
 
-Do the source labels for `H-786` and `H-941` really conflict with the local exact `+520-220-415+` rows, or is the conflict an artifact of assuming local `.1/.2` row order equals CISI `A/B` side labels?
+Do the source labels for `H-786` and `H-941` really conflict with the local exact `+520-220-415+` rows, or is the conflict an artifact of assuming local `.1/.2` row order equals CISI `A/B` side labels? (CISI is the Corpus of Indus Seals and Inscriptions; its `A/B` letters label the sides of an object as published, while the local `.1/.2` numbers are the project's own row order.)
 
-This matters for the live `M-1206 / M-37 / 520-220-X` terminal-family branch. The previous fine-form packet found target-like source panels on `H-786 A` and `H-941 A/A bis`, while the local exact rows are `.2`:
+This matters for the live `M-1206 / M-37 / 520-220-X` terminal-family branch — an open line of investigation the project is still working, as opposed to one already closed. The previous fine-form packet found target-like source panels on `H-786 A` and `H-941 A/A bis`, while the local exact rows are `.2`:
 
 ```text
 H-786  1677.2  +520-220-415+
@@ -156,7 +158,7 @@ H-938 A/A bis
 H-940 A
 ```
 
-Now candidate exact-row reconciliations, still quarantined behind side policy:
+Now candidate exact-row reconciliations, still quarantined behind side policy — held aside as unusable evidence until the side-labeling question is settled:
 
 ```text
 H-786 A
@@ -183,7 +185,7 @@ data/open_prototype/reports/h786_h941_source_a_pattern_recheck_summary.json
 
 That recheck strengthens the visual side of the result: `H-786 A` and `H-941 A/A bis` sit in the same source-A target-like pattern as clean controls `H-938 A/A bis` and `H-940 A`, while source `B` panels do not. It still does not accept exact local row mapping for `H-786` or `H-941`.
 
-Until that source-policy gate is closed, use these bins:
+Until that source-policy gate — the checkpoint that must be passed before the branch may advance — is closed, use these bins:
 
 ```text
 accepted exact-source-side: H-938 A/A bis, H-940 A

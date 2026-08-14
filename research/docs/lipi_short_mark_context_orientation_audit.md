@@ -4,6 +4,8 @@ Date: 2026-05-24
 
 ## Purpose
 
+This note tests whether writing a two-sign mark backwards goes with anything else changing. A short mark is a one- or two-sign row on an object that carries writing on more than one side; when the mark has two tokens and one is sign `700`, the other is its companion. The same mark appears in both orders — `+700-033+` and `+033-700+` — and an earlier audit found the orders are far from balanced. If the reversed form also went with a different longer row elsewhere on the object, reversal would be a real contrast worth chasing. If not, it stays a question about direction conventions.
+
 This audit follows the [Lipi short-mark orientation audit](lipi_short_mark_orientation_audit.md).
 
 It asks a narrower falsification question:
@@ -82,7 +84,7 @@ Core summaries:
 | `034` | `700_first` | 101 | 54 | 47 |
 | `034` | `700_last` | 13 | 11 | 2 |
 
-The strongest repeated longer-row families remain planning targets, not interpretations:
+The strongest repeated longer-row families — groups of objects sharing the same longer sequence — remain planning targets, not interpretations:
 
 | Companion | Order | Longer Side Text | Rows |
 | --- | --- | --- | ---: |

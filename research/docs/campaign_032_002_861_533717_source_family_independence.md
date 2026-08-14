@@ -2,16 +2,18 @@
 
 Date: 2026-05-29
 
+This note asks whether two pieces of evidence are really two. M-376 and M-391 both end `002-861-533-717`. If they turned out to be near-copies of one another — the same object twice, or one workshop repeating itself — they would count as one observation, not two. This pass lines up everything we know about each: where each was found, how big it is, what else is written on it. They differ on almost every count, so exact copy collapse is rejected. But for the purpose of weighing evidence they still sit in one narrow corner of the corpus, and the note says so plainly.
+
 ## Question
 
-The focus contrast left one live question:
+The focus contrast left one live question. A "witness" is a database row that attests a sign sequence; a "copy-family cell" is a group of near-identical rows that must be counted as one piece of evidence rather than several:
 
 ```text
 Are M-376/M-391 two independent witnesses for 002-861-533-717,
 or one tiny source/copy-family cell?
 ```
 
-This campaign tests exact copy-family collapse using current metadata, source routes, and the existing source-layout packet.
+This campaign tests exact copy-family collapse using current metadata, source routes — the chains of pointers from database rows to published images — and the existing source-layout packet.
 
 ## Stored Outputs
 
@@ -39,7 +41,7 @@ tmp/032_002_861_533717_source_family_independence/533717_source_family_independe
 
 ## Source Layout
 
-Existing source-token attachment verdicts:
+Existing source-token attachment verdicts. A "same-line candidate" means the tail appears to sit on the same line of the inscription strip as the rest of the row, rather than wrapping into the field below:
 
 ```text
 M-376: same-line candidate present, medium confidence

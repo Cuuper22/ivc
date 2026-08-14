@@ -4,11 +4,17 @@ Date: 2026-05-26
 
 ## Question
 
+This note records an eyeball test done under blinding. It cuts the middle sign out of several inscriptions, mixes those crops in with published line drawings, and asks a reviewer which ones look like the same family of sign.
+
+Terms first. Local `220`, `520`, and `415` are Lipi catalog sign codes, not readings. "Source-visible" means we have the object in a published plate image, not just a catalog transcription. Parpola cites signs by his own article numbering, as "sign no. 60"; a "crosswalk" would be an accepted mapping between that numbering and the local one. A "probe" is an exploratory pass, not accepted evidence. M- and H-numbers are Mohenjo-daro and Harappa artifacts.
+
 When local `220` is isolated from source-visible `+520-220-X` rows, does the middle component visually behave like the Parpola plain-fish / fish-leaf family?
 
 This is a graphic-family probe. It does not accept a sign-number crosswalk or a reading.
 
 ## Packet
+
+A "packet" is a bundle of image crops prepared for review. It is "neutral" because the crops carry only meaningless IDs, so the reviewer cannot tell targets from controls.
 
 Neutral packet:
 
@@ -36,7 +42,7 @@ The packet was intentionally not used to infer meaning. It tests visual compatib
 
 ## Blind Visual Result
 
-The blind visual review clustered `N001-N004` as one line-drawing fish/leaf family: central oval or leaf body, side strokes/fins, and a lower fork/tail or stem split.
+"Blind" means the reviewer worked from the neutral IDs alone, without knowing which crop was which. The blind visual review clustered `N001-N004` as one line-drawing fish/leaf family: central oval or leaf body, side strokes/fins, and a lower fork/tail or stem split.
 
 For the photographic candidate crops:
 
@@ -78,7 +84,7 @@ translation
 
 This is real progress, but it is not the win condition. The local source crops now survive a broad fish/leaf-family test. They do not yet isolate the article's specific sign no. `60`, because the top-row controls themselves show neighboring fish-family signs that are visually close.
 
-The next useful gate is stricter:
+The next useful gate — the checkpoint this candidate must clear before it can advance — is stricter:
 
 1. Build a line-drawing control panel separating Parpola sign no. `60` from nearby fish-family signs such as `57`, `61`, `66`, `70`, and `71`.
 2. Add source-visible Mayig `P050` examples where the object identity and side are clean.

@@ -4,11 +4,17 @@ Date: 2026-05-26
 
 ## Question
 
+This note is a gate: a recorded decision checkpoint that either lets a claim through or blocks it. It tightens an earlier eyeball test by adding lookalike controls, because a crop that matches one sign is worthless if it matches five neighboring signs equally well.
+
+Terms first. Local `220`, `520`, `415`, and `016` are Lipi catalog sign codes, not readings. Parpola cites signs by his own article numbering, as "sign no. 60," drawn from the Parpola 1994 Fig. 5.1 sign list; a "crosswalk" would be an accepted mapping between that numbering and the local one. "Mayig" is a second independent sign catalog with `P###` feature ids. "Source crops" are cut-outs from published plate photographs of real objects. M- and H-numbers are Mohenjo-daro and Harappa artifacts.
+
 After adding nearby Parpola fish-family controls, do local `220` source crops specifically match article sign no. `60`, or only the broader fish/leaf neighborhood?
 
 This gate tests sign-list discrimination, not meaning.
 
 ## Packet
+
+A "packet" is a bundle of image crops prepared for review. It is "neutral" because each crop carries only a meaningless ID, so a reviewer cannot tell targets from controls.
 
 Neutral contact sheet:
 
@@ -46,7 +52,7 @@ Three visual reads were used:
 | --- | --- |
 | `R1` | `S009-S011` give sign-specific visual support for the plain target `S001-S002`, with `S012` unusable. |
 | `R2` | `S009-S011` support broad fish/leaf-family compatibility only; `S012` unusable. |
-| `R3` | Adversarial tiebreak: `S009-S011` do not cross sign-specific threshold; broad neighborhood only; `S012` unusable. |
+| `R3` | Adversarial tiebreak, a third read run specifically to try to break the positive call: `S009-S011` do not cross sign-specific threshold; broad neighborhood only; `S012` unusable. |
 
 The decisive point is not whether local `220` is fish/leaf-like. That already survived. The decisive point is whether damaged source-photo crops can discriminate plain sign no. `60` from nearby plain-ish or decorated fish-family controls. Two of three reviewers say no, and the dissenting reviewer still blocks exact crosswalk identity.
 
@@ -79,7 +85,7 @@ translation
 
 ## Consequence
 
-This is a downgrade relative to the tempting reading. Local `220` survives as a real fish/leaf-family candidate, but it does not yet become article sign no. `60`.
+A "downgrade" moves a candidate to a weaker status in the project's ledger. This is a downgrade relative to the tempting reading. Local `220` survives as a real fish/leaf-family candidate, but it does not yet become article sign no. `60`.
 
 The next useful evidence must be stronger than this packet:
 

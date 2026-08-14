@@ -4,9 +4,9 @@ Date: 2026-05-25
 
 ## Question
 
-Did the accessible CISI vol. 1/2 OCR contain object-specific notes that resolve the live `034` blockers, and if not, what is the source-normalized panel graph allowed to say?
+This note asks whether the catalog text we can already read answers the questions blocking us, and then states how much the resulting map of object sides is allowed to claim. FRAME700 is the project's label for short inscription rows built on sign `700`, such as `+700-034+`; the `034` work asks whether the sign codes `032`, `033`, and `034` are separate choices in the same slot. A panel graph is that map: one node per confirmed physical side of an object, with catalog photographs attached to the side they show. CISI is the Corpus of Indus Seals and Inscriptions, the standard photographic catalog of Indus objects, and its volumes 1 and 2 are available as scanned text through the Internet Archive (IA). The question: did the accessible CISI vol. 1/2 OCR contain object-specific notes that resolve the live `034` blockers, and if not, what is the source-normalized panel graph allowed to say?
 
-This is not a translation attempt. It is a gate before translation: if the source panel graph is unstable, substitution claims are fake precision.
+This is not a translation attempt. It is a gate before translation — a checkpoint the evidence must pass before the next step is allowed. If the source panel graph is unstable, substitution claims are fake precision.
 
 ## Inputs
 
@@ -59,7 +59,7 @@ External route links:
 
 ## Panel Graph
 
-The graph now separates side nodes, photo witnesses, unresolved numbered groups, and source-route absences:
+The graph now separates side nodes, photo witnesses — individual catalog photographs, each standing as one piece of testimony about a side rather than as a side of its own — unresolved numbered groups, and source-route absences. Each lane below is one of the separate evidence tracks the project runs, kept apart so a result in one does not lean on the other:
 
 | Lane | Objects | Current graph status |
 | --- | --- | --- |

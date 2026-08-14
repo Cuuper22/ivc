@@ -2,9 +2,11 @@
 
 Date: 2026-05-29
 
+This note is the count table behind a structural claim. Signs in this corpus are numeric IDs. "X-before-240" names the slot filled by the sign X in rows shaped `...-X-240-...`. A "subframe" is a short fixed run of signs that recurs after `240` inside those rows. A "slot family" is the set of signs that compete for the same slot.
+
 Question: inside X-before-240, is `240-060-692` a real subframe and does it isolate the `603/636/642` slot family?
 
-Method: strict complete-token rows only; no bracketed or parenthesized readings; deduplicated by `(cisi, site, type, symbol, text)`.
+Method: strict complete-token rows only — no bracketed or parenthesized readings, which are uncertain transcriptions; deduplicated by `(cisi, site, type, symbol, text)`, so identical texts count once.
 
 X-before-240 rows: `95`.
 `240-060-692` rows: `7`.
@@ -14,6 +16,8 @@ X-before-240 rows: `95`.
 `240-060-692` is a compact subframe of X-before-240. In this strict layer it contains only `603`, `636`, and `642`, making the original slot-family contrast a count-supported subframe object. This does not make any X value readable.
 
 ## After-240 Subframes
+
+The tables below are the raw evidence. `<END>` means the row ends right after `240`. A "register" is the object class a row sits on — site, seal type, icon, shape; a "formula family" is a group of near-identical repeated texts.
 
 | after 240 | rows | X signs | prefixes | registers | formula families | examples |
 |---|---:|---|---|---:|---:|---|

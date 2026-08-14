@@ -2,9 +2,11 @@
 
 Date: 2026-05-29
 
+This note is the eyeball pass over an existing image bundle. A previous campaign assembled a contact sheet — a single page of source crops, one per row — for everything that follows `002-861`. This note goes through that sheet and writes down what each image actually shows. The scoring supports a set of tail types. It supports no readings, and the note says so.
+
 ## Question
 
-When the source/contact packet is read visually, do the post-`861` tails look like attached terminal material, second units, register/workshop addenda, or bare closure controls?
+When the source/contact packet is read visually, do the post-`861` tails look like attached terminal material, second units, register/workshop addenda — extra marks explained by the class of object or the habits of one workshop — or bare closure controls, rows that simply stop and serve as the comparison baseline?
 
 ## Input
 
@@ -13,6 +15,8 @@ When the source/contact packet is read visually, do the post-`861` tails look li
 - Parent packet: `docs/campaign_032_002_861_source_normalized_tail_predictor_packet.md`
 
 ## Visual Decisions
+
+A "witness" below is a database row backed by an image; "same-line" means the tail sits on the same line of the inscription strip rather than wrapping below; an "adversary" is a rival explanation that would account for the pattern without any grammar.
 
 - `603`: survives as a recurrent post-`861` tail class on the Mohenjo side. `M-1273` is the cleanest witness; `M-240` supports the class but is blurrier; `M-714` is same-line but crowded and downweighted for fine-form identity. This is not a value and does not revive the Harappa bridge.
 - `533-717`: survives as a fixed restricted-tail candidate. `M-376` and `M-391` both preserve same-line terminal-side material, but the pair remains one narrow final-unit candidate, not a solved compound or morphology.
@@ -33,4 +37,4 @@ The visual pass supports a typed post-`861` secondary zone:
 - singleton contrast (`255-416`);
 - long continuation/second-unit adversary (`360-520-919-140`).
 
-It does not support phonetics, language identity, translations, exact sign values, or exact source-normalized `861|tail` token boundaries. The next promotion gate is not another metadata count: it is blind/semi-blind scoring of layout and copy-family similarity for `M-376/M-391` against `M-355/M-1267/M-1273` and the bare controls.
+It does not support phonetics, language identity, translations, exact sign values, or exact source-normalized `861|tail` token boundaries. The next promotion gate is not another metadata count: it is blind/semi-blind scoring — judging the images without seeing the claimed reading first — of layout and copy-family similarity, the test of whether matching rows are copies of one stock phrase, for `M-376/M-391` against `M-355/M-1267/M-1273` and the bare controls.

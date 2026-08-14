@@ -2,6 +2,10 @@
 
 Date: 2026-05-29
 
+This note is a design spec. It defines the table that future Meluhha-Indus tests must fill in before any of them is allowed to count as evidence.
+
+Why it exists: an earlier check tried to use plain site overlap — a cuneiform text and an Indus-style object coming from the same place — as support for pairing them. That check failed, because scrambled controls reproduced the overlap just as well. Terms: Meluhha is a place named in Mesopotamian cuneiform texts, widely identified with the Indus region; Vector 1 is this project's external-anchor line of work, constraining Indus signs from outside the Indus corpus; a "gate" is a recorded checkpoint that either lets a claim through or blocks it; "matched controls" are comparison rows built to be alike in every respect except the one under test.
+
 The site-overlap gate failed, so Vector 1 now needs pairwise matched controls. Raw site overlap is a blocking stratum, not evidence.
 
 ## Row Model
@@ -83,7 +87,7 @@ notes
 
 - Cuneiform identity, line, transliteration, token type, period/date strings, provenience, source class proxies, and source hashes: `data/meluhha/cuneiform_attestations_expanded.csv`
 - Target join IDs and external object fields: `data/meluhha/meluhha_indus_join_surface.csv`
-- External object pool, still T3/quarantined and undated: `data/meluhha/external_indus_objects.csv`
+- External object pool, still T3/quarantined — walled off from use as evidence until validated — and undated: `data/meluhha/external_indus_objects.csv`
 - Control toponym seeds: `data/meluhha/control_toponyms.csv`
 - Fetch routes/status: `data/meluhha/cuneiform_source_routes.csv`
 - Null failure baseline: `data/meluhha/meluhha_join_surface_null_summary.json`
@@ -102,6 +106,6 @@ P0 fetch/acquisition needs:
 
 ## Scoring Rule
 
-The target is conditional enrichment inside matched strata. Meluhha rows must beat non-Meluhha controls after matching on site/provenience, date, cuneiform source class, external object context, and sign-sequence family.
+The target is conditional enrichment inside matched strata: Meluhha rows must show more of the effect than lookalike rows drawn from the same bucket. Meluhha rows must beat non-Meluhha controls after matching on site/provenience, date, cuneiform source class, external object context, and sign-sequence family.
 
-No matched-control row can become an external anchor until it has a measured forger false-positive rate and a skeptic pass.
+No matched-control row can become an external anchor — a fixed outside point that constrains Indus sign values — until it has a measured forger false-positive rate and a skeptic pass. The forger is this project's adversary test: fake targets built to carry no real relationship, scored the same way. A skeptic pass is a deliberate attempt to argue the result down.

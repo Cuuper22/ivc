@@ -2,6 +2,10 @@
 
 Date: 2026-05-26
 
+This note records a blind sort. Reviewers were handed small image crops with the object names and our numeric labels stripped off, and asked only to group the ones that look like the same sign. Blind means exactly that: the reviewer cannot know which answer would please anyone.
+
+The design matters because the thing being tested is whether a sign on seal `M-315` is genuinely its own shape, or whether we have been seeing a distinction that only exists in our own transcription. If you already know which crop is supposed to be different, you will find it different. So the labels come off first, and the key comes out afterward.
+
 ## Question
 
 ```text
@@ -14,7 +18,7 @@ Does the visible M-315 local token-2 candidate survive a blind graphic sort as a
 No upgrade.
 ```
 
-The strict blind sort does not validate M-315 as source-visible numeric `034`. The upper M-315 witness clusters with the clean M-984 `004` control, while the lower M-315 witness does not securely join that same pair. This blocks the required condition that both M-315 witnesses independently preserve a distinct local `034` class.
+The strict blind sort does not validate M-315 as source-visible numeric `034`. A witness is one independent piece of evidence — here, one image of one face of the object. A control is a comparison crop whose identity we are confident about, included to check the reviewers. The upper M-315 witness clusters with the clean M-984 `004` control, while the lower M-315 witness does not securely join that same pair. This blocks the required condition that both M-315 witnesses independently preserve a distinct local `034` class.
 
 This is not proof that M-315 is `004`. It is proof that the current public crops do not support the cleaner claim:
 
@@ -24,13 +28,15 @@ M-315 visibly validates a unique 034 second slot in 390-034-002.
 
 ## Packet
 
+A packet is the self-contained bundle of crops handed to reviewers, plus the key that reveals what they were.
+
 Neutral blind packet:
 
 ```text
 tmp/m315_second_slot_controls/blind_390x002_sort_20260526/
 ```
 
-The first reviewer packet hid object IDs and local numeric labels. It exposed one problem: some token-focus crops still contained neighboring context. Therefore the decisive packet was recut as strict token-2 crops from the first-three context images.
+The first reviewer packet hid object IDs and local numeric labels. It exposed one problem: some token-focus crops still contained neighboring context. Therefore the decisive packet was recut — the crops were redrawn tighter and the review rerun — as strict token-2 crops from the first-three context images. A token is one sign slot in the transcribed row.
 
 Strict packet and key:
 
@@ -46,6 +52,8 @@ data/open_prototype/reports/lipi_034_m315_blind_390x002_sort_review.csv
 ```
 
 ## Unblinded Strict Key
+
+What each anonymous crop actually was, revealed only after the sorting was finished and recorded.
 
 | Blind ID | Object | Witness | Local label | Decision note |
 | --- | --- | --- | --- | --- |
@@ -79,6 +87,8 @@ S002 = M-315 lower impression
 did not reliably cluster with `S003-S005`. Reviewers placed it with the short/separated vertical-bundle group or treated it as a separate/nearby sample. `S004` was repeatedly flagged as composite or not cleanly isolated.
 
 ## Decision Gate
+
+The gate is the test set in advance: the specific outcome that would have let the claim advance.
 
 Required upgrade condition:
 
@@ -138,4 +148,4 @@ to:
 source-visible singleton with failed blind upgrade and upper-witness 004-pressure
 ```
 
-The branch is not dead, but it now requires stronger source evidence: higher-resolution M-315 images, independent source transcription, or a cleaner face/impression orientation and segmentation basis. It cannot be used as positive `034` evidence for translation work.
+The branch — this whole line of investigation — is not dead, but it now requires stronger source evidence: higher-resolution M-315 images, independent source transcription, or a cleaner face/impression orientation and segmentation basis. It cannot be used as positive `034` evidence for translation work.

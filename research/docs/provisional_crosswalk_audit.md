@@ -4,9 +4,13 @@ Date: 2026-05-24
 
 ## Purpose
 
+This note records a first attempt to line up two sign catalogs against each other. It exists so later work has a ranked shortlist to check by hand, rather than a whole corpus to stare at.
+
+Terms first. The project reads the same inscriptions from two independent catalogs: `lipi`, whose signs are bare numbers like `740`, and `mayig`, whose signs are Parpola-style codes like `P324`. A "crosswalk" is a mapping between the two. It is "provisional" and "positional" because it is built only by lining the same inscription up in both catalogs and pairing signs slot by slot — no one has yet compared the shapes. An "allograph" is one sign written in two visual forms; a "merge" would be a decision that two catalog codes are really one sign.
+
 This audit derives provisional candidates between `lipi` numeric signs such as `740` and `mayig` Parpola-style signs such as `P324`.
 
-It is a graphemic triage artifact. It is not an accepted sign crosswalk. It does not settle exact signs, allographs, merges, splits, phonetic values, meanings, or translations.
+It is a graphemic triage artifact — a first sort by sign shape and position, meant to set priorities. It is not an accepted sign crosswalk. It does not settle exact signs, allographs, merges, splits, phonetic values, meanings, or translations.
 
 ## Local Artifacts
 
@@ -21,7 +25,7 @@ data/open_prototype/reports/crosswalk_summary.json
 
 ## Eligibility Rule
 
-Only strict rows were allowed into the positional alignment:
+Only strict rows — rows that passed the earlier cleanliness checks with no warning flags — were allowed into the positional alignment:
 
 ```text
 status == candidate_for_pre_crosswalk_structure_tests

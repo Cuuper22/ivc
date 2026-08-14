@@ -2,6 +2,14 @@
 
 Date: 2026-05-26
 
+## What This Note Is
+
+This note takes a published claim that appears to help us, and pushes on it hard enough to see what breaks.
+
+Parpola 2019 states that the text on one face of H-940, H-2147, and H-2148 recurs on three further tablets: H-942, H-2240, and H-2241. If true, that is welcome support for our own reading of that face. A stress gate is a pass/fail test applied to evidence that looks favourable, precisely because favourable evidence is the kind least likely to be checked. A stressor is whatever the test turns up that does not fit.
+
+The obverse is one face of a two-sided tablet; the companion row is the catalog row for the other face of the same object.
+
 ## Question
 
 Does Parpola 2019's claim that the H-940 / H-2147 / H-2148 obverse text recurs on H-942, H-2240, and H-2241 support the local `+520-220-415+` companion row, or does it expose a sign-inventory problem?
@@ -10,7 +18,7 @@ Does Parpola 2019's claim that the H-940 / H-2147 / H-2148 obverse text recurs o
 
 It does both.
 
-The recurrence supports the idea that the H-2148 three-sign companion row belongs to the same prior-work text family, because H-2240 has the exact local row `+520-220-415+` and H-2241 preserves a fragment ending in `415-240`.
+The recurrence supports the idea that the H-2148 three-sign companion row belongs to the same prior-work text family — a group of objects carrying what a previous scholar treats as the same text — because H-2240 has the exact local row `+520-220-415+` and H-2241 preserves a fragment ending in `415-240`.
 
 But H-942, explicitly named by Parpola as part of the same obverse-text recurrence, is locally `+520-220-016+`, not `+520-220-415+`. That creates a real stressor:
 

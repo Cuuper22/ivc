@@ -2,13 +2,15 @@
 
 Date: 2026-05-26
 
+This note traces one field back to its origin. Several conclusions in this branch depend on reading two inscriptions right-to-left, and that reading comes from a `R/L` column in the corpus file. Before anything is built on it, someone has to ask where that column got its values. The short answer is that it was inherited, not measured from the photographs — which changes how much weight it can carry.
+
 ## Question
 
-Where do the `R/L` fields for `H-938 B` and `H-910 B` come from, and can they be treated as source-grade direction evidence?
+Where do the `R/L` fields for `H-938 B` and `H-910 B` come from, and can they be treated as source-grade direction evidence? `R/L` records that an inscription is read right-to-left.
 
 ## Answer
 
-They come from the Lipi corpus metadata field `dir.`.
+They come from the Lipi corpus metadata field `dir.`. Lipi is the project's working transcription corpus, inherited from the Yajnadevam dataset.
 
 The local source-image/component work does not derive `R/L` from the CISI panels. It consumes the recorded field and tests what follows from it.
 
@@ -22,6 +24,8 @@ if recorded R/L fails = unresolved, not positive.
 ```
 
 ## Provenance Chain
+
+A provenance chain is the step-by-step record of where a value came from and what touched it on the way.
 
 | Step | Evidence | Result |
 | --- | --- | --- |

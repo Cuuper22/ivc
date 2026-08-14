@@ -2,6 +2,8 @@
 
 Date: 2026-05-29
 
+This note deliberately widens the field of view. Several campaigns in a row had been squeezing one two-sign ending, `533-717`, for evidence it could not give. This note steps back and surveys everything that follows `002-861` at once — all 23 endings — then reweights them so that six copies of one stock phrase no longer outvote three genuinely different objects. The survey changes the campaign's priority: `603`, not `533-717`, is the target worth chasing. "Ecology" here means the study of which endings occur, how often, and in what company.
+
 ## Question
 
 The previous `533-717` campaigns prevented a fake exact match, but they also made the research unit too small. This campaign resets the object:
@@ -10,7 +12,7 @@ The previous `533-717` campaigns prevented a fake exact match, but they also mad
 What does the full post-002-861 tail field do?
 ```
 
-The target is not one sign or one pair. The target is the ecology of closures, addenda, subclass markers, second phrases, and source-family cells after `002-861`.
+The target is not one sign or one pair. The target is the ecology of closures, addenda — extra material tacked on after an otherwise complete ending — subclass markers, second phrases, and source-family cells, groups of near-identical rows weighed as one piece of evidence, after `002-861`.
 
 ## Stored Outputs
 
@@ -22,7 +24,7 @@ data/open_prototype/reports/campaign_032_002_861_post861_tail_ecology_priority.c
 data/open_prototype/reports/campaign_032_002_861_post861_tail_ecology_summary.json
 ```
 
-Input layer:
+Input layer. "Strict" rows have complete readings rather than partly reconstructed ones; "dedup" collapses near-duplicate rows so one object cannot be counted twice:
 
 ```text
 strict complete source strings, cisi/site/type/symbol/text dedup: 4011 rows
@@ -42,6 +44,8 @@ post-002-861 tail families: 23
 | singleton complex tail source target | 7 | phrase-like singletons, not suffix evidence yet |
 
 ## Main Tail Field
+
+"Weighted cells" is the row count after near-identical rows are merged: it is the number that should carry argumentative weight, and it is often far below the raw row count.
 
 | tail after `002-861` | rows | weighted cells | class | read |
 |---|---:|---:|---|---|
@@ -128,7 +132,7 @@ Current ranking:
 
 ## Falsifiers
 
-The linguistic-structure claim dies if these jointly hold:
+A "falsifier" is a finding fixed in advance that would kill the claim. The linguistic-structure claim dies if these jointly hold:
 
 ```text
 tail choice is predicted by register/source family

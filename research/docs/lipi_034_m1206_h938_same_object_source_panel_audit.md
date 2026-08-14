@@ -2,6 +2,8 @@
 
 Date: 2026-05-26
 
+This note audits one tablet, `H-938`, that had become the load-bearing object in an argument. The tablet carries the sign string of interest on one side and the other sign of interest on the reverse. That is suggestive, and easy to overread. The note sets out exactly how much the published photographs support and where the argument stops.
+
 ## Question
 
 What does `H-938` actually support for the M-1206 `034/415` branch once the source panels are kept separate from local row numbers?
@@ -34,7 +36,7 @@ data/open_prototype/reports/lipi_034_m1206_h938_same_object_source_panel_audit_s
 
 ## Adjudication
 
-`H-938 A/A bis` remains the strongest clean external `415` terminal pressure for the M-1206 branch. The `bis` label is another photograph of side `A`, so it improves visibility but does not create an independent witness.
+Adjudication is the ruling on what these panels are allowed to support. `H-938 A/A bis` remains the strongest clean external `415` terminal pressure for the M-1206 branch. The `bis` label is another photograph of side `A`, so it improves visibility but does not create an independent witness.
 
 `H-938 B` matters for a different reason: it is the same object's companion side and carries local `+034-700+`. That creates source-visible within-object `034/415` proximity pressure:
 
@@ -62,6 +64,8 @@ The pressure is real, but it is not identity. The two rows have different local 
 - Treating `+034-700+` versus `+700-034+` order as meaningful before direction and side-policy closure.
 
 ## Comparanda Weighting
+
+Comparanda are comparison objects drawn from outside the target, used to test whether a pattern is special or ordinary.
 
 `H-940` is the key negative companion check: it has clean exact-side `+520-220-415+`, but its companion is `+110+`, not `+034-700+`. So `415` does not automatically imply a `034/700` partner.
 

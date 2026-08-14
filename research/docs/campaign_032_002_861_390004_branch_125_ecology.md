@@ -2,9 +2,11 @@
 
 Date: 2026-05-29
 
+This note resizes the research target. Earlier work leaned on one row, H-55, where the sign `125` follows `002-861`. That is a single row and a single row proves nothing. This pass counts every local occurrence of `125` to see where it really lives, and finds the interesting pattern is somewhere else: `125` after `002-390`. The point of the note is to move the campaign off a weak claim and onto a better-supported one.
+
 ## Question
 
-Does the `390-004-002-Y` branch family make `125` or post-`861` continuation behavior look translation-relevant, or is the apparent H-55/M-1750 contrast still only source acquisition pressure?
+Does the `390-004-002-Y` branch family make `125` or post-`861` continuation behavior look translation-relevant, or is the apparent H-55/M-1750 contrast still only source acquisition pressure — a reason to go hunting for images rather than an argument? Here `Y` stands for whichever sign follows `390-004-002`, and "ecology" means the study of which signs appear around a given sign.
 
 This is a decipherment campaign. It treats signs as possible members of a branch/continuation system, not as software artifacts and not as accepted readings.
 
@@ -20,9 +22,11 @@ The stronger new clue is different: `125` appears after `002-390` in `4` rows, i
 
 ## Branch State
 
+Below, a "control" is a row that shares part of the pattern and so lets us test a claim; "source-visible" means the row can be checked against an inspectable published photograph, and "source-dark" means it cannot; "panel-bound" means the labeled object itself is visible on a published plate.
+
 - `817` is the closure-pole candidate: four `390-004-002-817` rows close, but they collapse to one exact text formula. `M-984` is the only strong public source-visible control in the current packet.
 - `861` is the exact-prefix split: H-55 is source-visible with terminal material, while M-1750 is public-source-dark. This remains acquisition-gated.
-- `820` closes in M-103, but M-103 is Mayig-overlap only here; public CISI OCR hits are suffix-contaminated false positives.
+- `820` closes in M-103, but M-103 is Mayig-overlap only here — attested only through the second, independent corpus; public CISI OCR hits are suffix-contaminated false positives.
 - `390` continues as `125-820` in Sktd-1. The public CISI route reaches the Surkotada 1-2 plate page but is not panel-bound to Sktd-1 in this pass.
 - `031` and `705` are singleton tailed branches and remain source-needed.
 
@@ -37,6 +41,6 @@ Promote the research object, not the reading:
 1. Source-route `002-390-125-X`: `M-38`, `M-119`, `M-735`, and `Sktd-1`, with exact comparison to `002-390` rows that do not take `125`.
 2. Acquire M-1750 or an equivalent exact-prefix bare `390-004-002-861+` control, then measure terminal room.
 3. Upgrade branch controls: M-984 is usable now; M-103, M-1844, M-1823, Sktd-1, H-2003, Dholavira `951.1`, and Tell Umma `3884.1` need source-grade object routes before they can carry branch grammar.
-4. Keep `416/698/096` and long continuations as negative controls for all tail/addendum claims.
+4. Keep `416/698/096` and long continuations as negative controls — cases that should not show the pattern, kept on hand so a claim can be checked against them — for all tail/addendum claims.
 
 Accepted values, phonetics, language identity, translations, exact source-token boundaries, and sign meanings remain `0`.

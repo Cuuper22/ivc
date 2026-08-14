@@ -2,6 +2,12 @@
 
 Date: 2026-05-26
 
+## What This Note Is
+
+This note records a route check on two Harappa objects, H-1302 and H-1303. A route is a concrete path from one of our catalog rows to a published photograph of the same object; a route check asks whether a particular published volume actually contains that photograph, before anyone spends time reading it.
+
+The volume tested is the public Internet Archive scan of CISI Pakistan — CISI being the Corpus of Indus Seals and Inscriptions, the primary published photographic record. A source panel is the plate image of the object itself, the thing we need in order to check our catalog row against reality.
+
 ## Question
 
 ```text
@@ -61,7 +67,7 @@ recipient: [harappa-project-email]
 subject: Source image request: H-1302 and H-1303 Harappa tablets
 ```
 
-The request asks for source panels, plate/catalog references, side labels, side-order basis, row-convention basis, direction/orientation basis, the bridge from the Daggumati/Revesz correction note to local `+700-033+`, and damage/copy/family notes.
+The request asks for source panels, plate/catalog references, side labels, side-order basis, row-convention basis, direction/orientation basis, the bridge from the Daggumati/Revesz correction note to local `+700-033+`, and damage/copy/family notes. A copy family is a group of objects carrying the same inscription, which matters because a repeated text can otherwise look like independent evidence.
 
 ## Boundary
 

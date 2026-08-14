@@ -2,6 +2,8 @@
 
 Date: 2026-05-26
 
+This note records where a campaign on inscription endings landed. Signs in this corpus are numeric IDs. A "tail" is the material that ends a row; a "lane" is an analysis track — one recurring sequence followed through the data; `Y` names whichever sign follows `002`. A row is "terminal" when nothing follows the sign in question. "Dedup" collapses rows with the same frame and text into one unit of evidence, so a copied inscription cannot count twice.
+
 ## Result
 
 The live construction is:
@@ -192,7 +194,7 @@ Decision rule:
 
 - If `A-220` still elevates `032-002` and compact core terminal tails after removing Mohenjo-daro `SEAL:S`, promote `A-220-032-002-Y` to a real formulaic continuation/closure packet.
 - If only `032 -> 002` survives, keep `002` as the live function and demote `861/820/817` to preferred fillers.
-- If source images break the segmentation or line order, quarantine the affected rows before any function claim.
+- If source images break the segmentation or line order, quarantine the affected rows — set them aside, unusable as evidence until resolved — before any function claim.
 
 ## Bottom Line
 

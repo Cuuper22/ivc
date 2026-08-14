@@ -2,9 +2,11 @@
 
 Date: 2026-05-29
 
+This note is the hardest attack the campaign has run on its own model. The model says something interesting happens after `002-861`. The attack says: nothing does — what looks like variety is really a handful of stock inscriptions repeated, and once you refuse to count the same stock inscription twice, the variety disappears. This pass reruns every count with near-identical rows collapsed into single cells. Two claims survive that treatment in a bounded form; several are demoted outright.
+
 ## Question
 
-Does the post-`861` secondary-zone model survive the strongest current adversary: whole-left-formula templates and source/register family collapse?
+Does the post-`861` secondary-zone model survive the strongest current adversary — the rival explanation that most threatens it: whole-left-formula templates and source/register family collapse? "Collapse" means refusing to count near-identical rows separately: rows that share a stock phrase, an object class, or a publication route are merged into one piece of evidence.
 
 This is not a tail-value campaign. It asks whether the apparent post-`861` continuation field is productive enough to remain a language question, or whether it collapses into repeated formula pockets, object/register labels, and source-family artifacts.
 
@@ -22,7 +24,7 @@ This is not a tail-value campaign. It asks whether the apparent post-`861` conti
   - `data/open_prototype/reports/campaign_032_002_861_formula_family_collapse_attack_verdicts.csv`
   - `data/open_prototype/reports/campaign_032_002_861_formula_family_collapse_summary.json`
 
-Mechanic constraints used:
+Mechanic constraints used. A "family cell" is one group of rows treated as a single piece of evidence; the keys below define what counts as the same cell:
 
 - Blank full prefix is normalized as `<START>`.
 - Source-ready means `source_status` is not blank or `source_pending_or_not_checked`, or `display_image` is present.
@@ -39,7 +41,7 @@ The formula/template adversary is now the main blocker. Complete left formula ca
 |---|---:|---|---:|---|
 | `390 004` | 2 | `125:1;<END>:1` | 0 | source-pending exact-prefix split |
 
-This means most visible variation is being created by pooling different full formulas under looser last-k preframes. That can still be real grammar, but formula templates have not been beaten.
+A "preframe" is the run of signs immediately before `002-861`, and "last-k" means only the final k of them are compared. This means most visible variation is being created by pooling different full formulas under looser last-k preframes. That can still be real grammar, but formula templates have not been beaten.
 
 ## Tail-Class Collapse
 
@@ -139,6 +141,6 @@ Run the terminal-space and source-first segmentation attack across all source-re
 - `603`: use the three source-ready post-`861` rows as simple-tail witnesses, not as values.
 - `533-717`: score only as fixed-unit comparator against same-register controls.
 - Long tails: source-route and segment `K-40`, `M-1661`, `M-20`, and `M-355`; count them only if they are continuous post-`861` signs.
-- Empty-prefix rows: quarantine until source panels exist.
+- Empty-prefix rows: quarantine — set aside, uncitable as evidence — until source panels exist.
 
 Accepted values, phonetics, language identity, translations, exact source-token boundaries, and sign meanings remain `0`.

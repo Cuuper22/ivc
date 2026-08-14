@@ -2,6 +2,8 @@
 
 Date: 2026-05-26
 
+This note rechecks the source routes — the paths from a public archive to an actual photograph — for two objects that would strengthen an argument if only their pictures could be found. Neither route worked. The note records the failure so the two objects stay on the acquisition list and are never quietly counted as evidence.
+
 ## Question
 
 The companion-context inventory found four local exact `+520-220-415+` objects with same-object `034/700` companions:
@@ -67,7 +69,7 @@ That is all.
 This recheck does not support:
 
 - `034 = 415`.
-- stable allography.
+- stable allography, meaning a settled decision about which shapes are variants of the same sign.
 - a `415` value.
 - a `034` value.
 - a `700` role.

@@ -2,17 +2,23 @@
 
 Date: 2026-05-29
 
+This note is a recut — a fresh pass over source images we have already looked at, this time measuring instead of eyeballing. It closes the one attack the earlier kill test left open. Some `220-032-002-861` rows stop after `861` and some carry on. The dull explanation is that the ones that stopped simply ran out of room on the seal. This pass measures the leftover space in pixels, and the dull explanation gets stronger, not weaker.
+
 ## Question
 
-Do the source-visible bare `220-032-002-861` controls have a tail-sized empty terminal slot, or is terminal space a serious layout explanation for why they are bare?
+Do the source-visible bare `220-032-002-861` controls — the rows that stop after `861`, which serve as the comparison baseline — have a tail-sized empty terminal slot, or is terminal space (the blank room left at the end of the line) a serious layout explanation for why they are bare?
 
 ## Packet
+
+A "packet" here is the bundle of rows and images assembled for one test.
 
 - Tailed rows measured: `2`
 - Bare controls measured: `3`
 - Comparison sheet: `C:\Users\Acer\OneDrive\Documents\ivc\tmp\032_002_861_220032_terminal_space_recut\campaign_032_002_861_220032_terminal_space_recut_comparison_sheet.png`
 
 ## Decisions
+
+An "adversary" below is a rival explanation that would account for the same evidence without any grammar. Where a decision says the attack "survives", the rival explanation is still standing.
 
 - `tail_window_vs_bare_margin_width`: `terminal_space_attack_survives`. smallest tailed terminal candidate width is 120px; largest bare post-terminal margin is 38px Limit: the margin boxes come from the existing bare-edge source-control overlay, not a fresh source resegmentation.
 - `tail_window_vs_bare_margin_share`: `terminal_space_attack_survives`. smallest tailed terminal candidate share is 0.286; largest bare post-terminal margin share is 0.063 Limit: share compares annotated windows, not automated glyph segmentation.

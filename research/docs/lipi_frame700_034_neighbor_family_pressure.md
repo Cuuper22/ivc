@@ -4,14 +4,14 @@ Date: 2026-05-25
 
 ## Question
 
-Do the current `032/033/034` blocker objects look isolated in the local corpus layer, or are they sitting inside repeated/copy-family neighborhoods that make source contamination more likely?
+This note checks the company each blocked object keeps. FRAME700 is the project's label for short inscription rows built on sign `700`, such as `+700-034+`; the `034` work asks whether the sign codes `032`, `033`, and `034` are separate choices in the same slot. Several objects in that test are blocked on unresolved catalog labels. If a blocked object also sits among near-identical inscriptions, a mistake in mapping it to a catalog page would spread. A copy family is a set of objects carrying the same inscription that may be copies of one another; a neighborhood is the set of catalog-adjacent objects sharing tokens with it. The question: do the current `032/033/034` blocker objects look isolated in the local corpus layer, or are they sitting inside repeated/copy-family neighborhoods that make source contamination more likely?
 
-This is a local-corpus pressure test, not source validation. It does not replace CISI 3.1 or archive-object notes.
+This is a local-corpus pressure test, not source validation. It does not replace CISI 3.1 — the Corpus of Indus Seals and Inscriptions, volume 3.1 — or archive-object notes.
 
 ## Inputs
 
 - Local filtered metadata: `data/open_prototype/lipi/metadata_filtered.csv`
-- Prior source gate: `docs/lipi_frame700_034_source_note_panel_graph.md`
+- Prior source gate, a gate being a checkpoint the evidence must pass before the next step is allowed: `docs/lipi_frame700_034_source_note_panel_graph.md`
 - Script: `data/open_prototype/tools/lipi_frame700_034_neighbor_family_pressure.mjs`
 - CSV: `data/open_prototype/reports/lipi_frame700_034_neighbor_family_pressure.csv`
 - Summary: `data/open_prototype/reports/lipi_frame700_034_neighbor_family_pressure_summary.json`
@@ -29,6 +29,8 @@ accepted readings: 0
 ```
 
 ## Object Pressure
+
+A control here is a comparison object used to check a target, and a triad is a set of three objects, one per sign code.
 
 | Object | Local pressure | Consequence |
 | --- | --- | --- |

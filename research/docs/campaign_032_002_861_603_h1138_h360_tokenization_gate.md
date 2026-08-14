@@ -2,11 +2,13 @@
 
 Date: 2026-05-29
 
+This note runs the test the previous packet asked for, and the test fails to deliver. The claim under examination is that the sign the catalogue calls `603` on a Harappa tablet is the same carved shape as the sign it calls `603` at the end of a Mohenjo-daro seal. To check that, we have to know which mark on the Harappa photograph is `603` — which means tokenizing the band, cutting the inscription strip into individual signs. The public image is not good enough to do that cleanly, and neither candidate slot matches. The bridge is not killed, but it is weakened.
+
 ## Question
 
-Can the source-visible Harappa bands be tokenized enough to test whether `H-1138` catalog `603` matches the clean post-`861` `M-1273` terminal, while `H-360` catalog `636` stays visually different?
+Can the source-visible Harappa bands — the strips of the object carrying the inscription — be tokenized enough to test whether `H-1138` catalog `603` matches the clean post-`861` `M-1273` terminal, while `H-360` catalog `636` stays visually different?
 
-This is a candidate tokenization gate. It does not accept a source-derived sign value or translation.
+This is a candidate tokenization gate; a "gate" is a check that must pass before evidence enters the analysis. It does not accept a source-derived sign value or translation.
 
 ## Artifacts
 
@@ -16,7 +18,7 @@ This is a candidate tokenization gate. It does not accept a source-derived sign 
 
 ## Orientation Alternatives
 
-Both source rows are locally recorded as `R/L`. Therefore two policies are kept explicit:
+Which visual position holds which catalogue sign depends on reading direction, and that is not settled. Both source rows are locally recorded as `R/L`, meaning right to left. Therefore two policies are kept explicit and every result is reported under both:
 
 1. `visual_ltr_equals_catalog_order`: leftmost visual slot maps to the first catalog token.
 2. `recorded_RL_means_visual_rightmost_catalog_first`: rightmost visual slot maps to the first catalog token.
@@ -54,7 +56,7 @@ Linguistic update:
 
 - The distributional bridge is unchanged: `603` still bridges the Harappa X-before-`240` class and post-`002-861` terminal position while `636/642` do not.
 - The graphic bridge is weakened: candidate `H-1138` X under both orientation policies fails to confirm the `M-1273` match.
-- Split-homograph/catalog-conflation and Harappa tablet-template explanations are now promoted as live competitors.
+- Split-homograph/catalog-conflation — the possibility that two different carved shapes share one catalogue number — and Harappa tablet-template explanations are now promoted as live competitors.
 
 Allowed hostile claim:
 

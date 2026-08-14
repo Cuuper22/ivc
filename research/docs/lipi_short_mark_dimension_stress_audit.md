@@ -4,7 +4,7 @@ Date: 2026-05-24
 
 ## Question
 
-Do recurrent multi-side short-mark tokens track object measurements after blocking obvious catalog shortcuts?
+This note tests one of the few ideas about the script that physical objects can settle directly: if a sign records a size or a quantity, objects carrying it should measure differently. A short mark is a one- or two-sign row on an object that carries writing on more than one side. Blocking means the comparison is run only inside groups of objects that already match on type, site, shape, material, and side count, so that an apparent size effect cannot come from those shortcuts. The question: do recurrent multi-side short-mark tokens track object measurements after blocking obvious catalog shortcuts?
 
 This is a direct pressure test on a possible semantic crack: short side marks could be administrative, numerical, metrological, form-factor labels, or merely catalog/type artifacts. The point is not to assign values. The point is to see whether the strongest short-mark tokens touch physical measurements strongly enough to deserve plate/source validation.
 
@@ -23,6 +23,8 @@ T3 filtered lipi planning layer
 claim columns removed
 image/plate validation pending
 ```
+
+`lipi` is the project's filtered working corpus of Indus sign sequences; T3 planning layer is its tier label for unverified working data, useful for direction but never admissible as proof.
 
 Design:
 
@@ -100,7 +102,7 @@ So the dimension signal is not a broad metrological result. It is mainly the H-s
 
 ## Immediate Consequence
 
-This is real movement toward the problem, but at A2/A3 boundary only:
+This is real movement toward the problem, but at A2/A3 boundary only — A2 and A3 being the project's evidence-strength grades, well below anything admissible as proof:
 
 - `003`, `156`, `861`, and `034` should move up the source-validation queue.
 - The next plate/image check should ask whether these marks really occupy the recorded sides and whether the dimensions are object-level measurements for the same artifacts.

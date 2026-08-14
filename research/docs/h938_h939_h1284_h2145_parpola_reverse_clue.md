@@ -2,9 +2,11 @@
 
 Date: 2026-05-26
 
+This note weighs a clue found in someone else's published work. Parpola 2019 says something about the reverse sides of four Harappa tablets the project is already investigating. The note exists to record exactly how much that outside statement is allowed to settle — which turns out to be less than it first appears.
+
 ## Question
 
-Does Parpola 2019 decide the H-938/H-939/H-1284/H-2145 side or sign mapping, or does it only add prior-work pressure to the current `034/415` source-gated branch?
+Does Parpola 2019 decide the H-938/H-939/H-1284/H-2145 side or sign mapping, or does it only add prior-work pressure to the current `034/415` source-gated branch? A branch here is one open line of investigation; source-gated means it cannot advance until better source images arrive.
 
 ## Source
 
@@ -39,7 +41,7 @@ Parpola's note supports a real prior-work reverse-side clue for the same branch 
 
 - H-938/H-939/H-1284 are already local same-object `+520-220-415+` plus `034/700` companion cases.
 - H-2145 adds a nearby `+220-415+` long-side object with the same `+700-034+` companion pattern, but it is not an exact `+520-220-415+` row.
-- H-940/H-2147/H-2148 create a separate control lane because Parpola assigns their reverse to sign no. 41 while the local companion side is `+110+` or fragmentary `]110+`.
+- H-940/H-2147/H-2148 create a separate control lane — a parallel track of objects kept apart so they can act as a check on the first set — because Parpola assigns their reverse to sign no. 41 while the local companion side is `+110+` or fragmentary `]110+`.
 
 Accepted claims remain unchanged:
 
@@ -52,6 +54,6 @@ Accepted claims remain unchanged:
 ## Next Gate
 
 1. Acquire or inspect source notes for H-2145, H-2147, and H-2148.
-2. Crosswalk Parpola `VIIII` and sign no. 41 against local `+700-034+` and `+110+` only after source-side images and sign-list conventions are in hand.
+2. Crosswalk — line up one sign-numbering system against another, sign by sign — Parpola `VIIII` and sign no. 41 against local `+700-034+` and `+110+` only after source-side images and sign-list conventions are in hand.
 3. Keep H-938/H-939/H-1284/H-2145 as reverse-side prior-work pressure, not as a decoded value.
 4. Keep H-940/H-2147/H-2148 as a sign no. 41 control branch, not as evidence that local `110` has been identified.

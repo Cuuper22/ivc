@@ -2,6 +2,8 @@
 
 Date: 2026-05-26
 
+This note records the first batch of image checks for a pattern found in transcriptions. Signs in this corpus are numeric IDs; `Y` names whichever sign follows `002`. A "source route" is the traceable chain from a transcribed row back to its published photograph; a row is "source-visible" once the photograph shows it. A "lane" is an analysis track — here, the Pakistan source volumes we can actually reach. "Target" rows carry the pattern; "control" rows are comparison rows that should not.
+
 ## Result
 
 First source-function batch from the reachable Pakistan source-volume lane:

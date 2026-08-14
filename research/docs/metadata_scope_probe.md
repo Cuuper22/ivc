@@ -4,6 +4,10 @@ Date: 2026-05-24
 
 ## Purpose
 
+This note records a scope check on our own data. It exists because a structural finding is only as broad as the material it came from, and it is easy to forget how narrow that material is.
+
+Terms first. A "probe" here is an exploratory pass, not accepted evidence. The "open prototype" is the small openly-licensed dataset the project computes from before touching restricted corpora. "Mayig" is one of the independent sign catalogs the project uses, and its records carry a free-text description field naming the seal's iconography.
+
 This probe asks whether the current open prototype has enough metadata diversity to support broad structural claims.
 
 It does not test meaning. It does not test iconographic semantics. It only checks what the local Mayig description field can and cannot support.
@@ -55,6 +59,8 @@ This means every current structural result from the open Mayig subset is inside 
 
 ## Gate Behavior By Series
 
+Each row has to pass gates — recorded checkpoints that admit or block it — before it can be used. This table shows where rows of each unicorn series ended up.
+
 | Series | Strict Formula | Sensitivity | Manual Collation | Manual Count Disagreement | Other |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | `I` | 6 | 0 | 0 | 3 | 0 |
@@ -72,6 +78,8 @@ unicorn_IV_strict_rows: 79 of 136
 That concentration does not prove a special `unicorn IV` structure. It mainly reflects the underlying Mayig prototype distribution, where `unicorn IV seal` has 96 of 179 rows.
 
 ## Scaffold By Series
+
+The "scaffold" is the observed tendency for certain signs to sit at the start of a row (initial) and others at the end (terminal), giving an `I...T` frame. These counts are per sign-inventory policy — the rule chosen for deciding which sign codes count as the same sign.
 
 For the `mayig_observed_parpola` policy:
 
@@ -97,7 +105,7 @@ The edge scaffold is not confined to one subseries, but `unicorn IV` contributes
 
 ## Top Anchor Pair By Series
 
-The strongest edge anchor from the formula-pattern probe is distributed like this:
+An "edge anchor" is a specific pair of signs that recurs as the first and last sign of a row. The strongest edge anchor from the formula-pattern probe is distributed like this:
 
 ```text
 mayig P324...P385:

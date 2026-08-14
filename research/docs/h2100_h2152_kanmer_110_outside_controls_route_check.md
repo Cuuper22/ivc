@@ -2,6 +2,12 @@
 
 Date: 2026-05-26
 
+## What This Note Is
+
+This note checks whether three control objects can be seen. Outside controls are objects that carry the sign under study but sit outside the branch we are testing; they exist to stop us from generalising a pattern found in a handful of hand-picked cases. Here the sign is our local `110`, and the branch is the H-940 / H-2147 / H-2148 group that has been proposed to match Parpola's sign no. 41 — Parpola's catalog being an external sign-numbering system.
+
+A route is a concrete path from a catalog row to a published photograph; route-dark means we have not found one. A source panel is the plate image of the object itself. Without panels, the controls cannot do their job.
+
 ## Question
 
 After correcting local `110` scope from three rows to six rows, can the outside controls H-2100, H-2152, and Kanmer `4881.1` be source-routed enough to compare with the H-940/H-2147/H-2148 Parpola sign-no.-41 branch?
@@ -63,7 +69,7 @@ Current state:
 
 Accepted:
 
-- H-2100, H-2152, and Kanmer `4881.1` are mandatory outside controls for any local `110` crosswalk.
+- H-2100, H-2152, and Kanmer `4881.1` are mandatory outside controls for any local `110` crosswalk. A crosswalk is a verified mapping between two sign-numbering systems.
 - No checked public source panel currently upgrades those outside controls.
 - H-2152 is especially important because its companion row is `]220-415+`, close to the H-2147/H-2148 branch structure.
 
@@ -77,4 +83,4 @@ Rejected:
 
 1. Search or request HARP/CISI source panels for `H96-3179Figure 19.21` and `H97-3327Figure 15.19`.
 2. Inspect the RIHN 2012 *Excavation at Kanmer: 2005-06--2008-09* volume or archive table behind `RIHN-Indus project08- 1285`.
-3. Once source panels exist, blind-compare outside-control `110` forms against H-940 B, H-2147's right candidate component or source-mapped panel, and H-2148's single-sign panel.
+3. Once source panels exist, blind-compare — with the reviewers unable to see which object is which — outside-control `110` forms against H-940 B, H-2147's right candidate component or source-mapped panel, and H-2148's single-sign panel.

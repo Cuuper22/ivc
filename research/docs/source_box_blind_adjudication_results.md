@@ -4,6 +4,10 @@ Date: 2026-05-29
 
 ## Verdict
 
+This note records the scoring of a blind test, and the death of a candidate claim.
+
+Terms first. A "source-box" is a box drawn on a published object photograph around the signs a reviewer thinks they see. "Blind" means the reviewers were not told which images were expected to contain the target and which were controls. "Adjudication" is the scored decision that follows. A "packet" here is both the bundle of images given to reviewers and, in the claim itself, the sign group `032-002-Y` — `032` and `002` are Lipi catalog sign codes and `Y` stands for whatever sign follows. "Source-visible" means the object exists in a published plate image, not just a catalog transcription. The "catalog-adjacency objection" is the standing criticism that two signs may look adjacent only because of how the catalog lays rows out, not because they sit together on the object.
+
 The blind source-box adjudication failed the `032-002-Y` source-visible packet candidate.
 
 This does not disprove every catalog-level `032-002-Y` pattern. It does invalidate the current visual packeting method as support for the claim that the source-visible rows are secure enough to weaken the catalog-adjacency objection.
@@ -49,7 +53,7 @@ Additional false positives:
 
 ## Claim Consequence
 
-The ledger must not accept the source-visible `032-002-Y` packet claim.
+The ledger is the project's running record of accepted findings. It must not accept the source-visible `032-002-Y` packet claim.
 
 The honest conclusion is:
 

@@ -2,6 +2,8 @@
 
 Date: 2026-05-26
 
+This note records the second batch of image checks for a pattern found in transcriptions. Signs in this corpus are numeric IDs; `Y` names whichever sign follows `002`. A "witness" is an actual inscription row carrying the pattern; a row is "source-visible" once its published photograph shows it. A "source route" is the traceable chain from row to published page. "Target" rows carry the pattern; "control" rows are comparison rows that should not.
+
 ## Result
 
 Second source-volume batch adds four usable row-level witnesses and rejects two false source-image upgrades.

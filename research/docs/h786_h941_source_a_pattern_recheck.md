@@ -2,13 +2,15 @@
 
 Date: 2026-05-26
 
+This note goes back to the actual published photographs and asks a simple thing: when the same inscription pattern shows up across several objects, does it always sit on the side the source labels `A`? If it does, the earlier worry about `H-786` and `H-941` was bookkeeping noise rather than a real conflict in the evidence.
+
 ## Question
 
 ```text
 Do the actual source panels show a consistent side-label pattern for the target-like 415 terminal family, or is H-786/H-941 only a bookkeeping ambiguity?
 ```
 
-This follows the H-786/H-941 side-mapping adjudication. The point is linguistic/source-critical: decide how much weight the source-visible panels can carry in the `034/415` terminal-family branch.
+This follows the H-786/H-941 side-mapping adjudication — the earlier ruling on that disputed side mapping. The point is linguistic/source-critical: decide how much weight the source-visible panels can carry in the `034/415` terminal-family branch, the open line of investigation these objects feed.
 
 ## Evidence Checked
 
@@ -66,7 +68,7 @@ H-940 B
 H-941 B / B bis
 ```
 
-`H-939` is the stress case. Its local exact `+520-220-415+` row is `.2`, but `H-939 B/B bis` is not target-grade. `H-939 A` has a partial target-like pattern under damage/occlusion, while local `.1` is `+700-034+`. This prevents upgrading H-939, but it also shows why row number cannot be treated as source side.
+`H-939` is the stress case — the object that puts the most strain on the pattern. Its local exact `+520-220-415+` row is `.2`, but `H-939 B/B bis` is not target-grade. `H-939 A` has a partial target-like pattern under damage/occlusion, while local `.1` is `+700-034+`. This prevents upgrading H-939, but it also shows why row number cannot be treated as source side.
 
 ## Decision
 
@@ -127,4 +129,4 @@ H-941 A/B -> 1821.1 / 1821.2
 H-939 A/B -> 1819.1 / 1819.2
 ```
 
-Until then, H-786 and H-941 are stronger source-side visual pressure, not accepted exact-side witnesses.
+Until then, H-786 and H-941 are stronger source-side visual pressure, not accepted exact-side witnesses — individual panels admitted as evidence for a specific claim.

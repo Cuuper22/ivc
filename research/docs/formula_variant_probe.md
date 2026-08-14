@@ -4,7 +4,9 @@ Date: 2026-05-24
 
 ## Purpose
 
-This experiment looks for near-duplicate inscriptions, repeated edge frames, and single-slot variants inside the strict formula subset.
+This note records a probe — a narrow, cheap experiment run to see whether a bigger question is worth pursuing. The bigger question is whether Indus inscriptions come in families: a shared shape with one part swapped, the way a form letter varies only in the name.
+
+The probe looks for three things inside the strict formula subset, our tightly filtered slice of inscriptions: near-duplicate inscriptions, repeated edge frames (the same first sign paired with the same last sign, whatever sits between), and single-slot variants (two rows identical except at one position).
 
 It does not assign sign values. It does not identify morphemes. It does not translate. It only creates a structural review queue for possible formula families and variable slots.
 
@@ -36,7 +38,7 @@ scope: Mohenjo-daro unicorn seal rows
 
 ## Method
 
-For every pair of strict Mayig-policy sequences:
+For every pair of strict Mayig-policy sequences — Mayig policy being one of our rules for deciding which sign shapes count as the same sign:
 
 1. Compute token-level edit distance.
 2. Keep pairs with edit distance <= 2.
@@ -44,7 +46,7 @@ For every pair of strict Mayig-policy sequences:
 4. For same-length pairs differing in exactly one sign, record the variable slot and its left/right context.
 5. Group rows by shared first and last sign to identify edge-frame families.
 
-This is a discovery queue. A first null-model screen has now been run separately:
+This is a discovery queue. A first null-model screen has now been run separately. A null model is a scrambled version of the data that keeps some properties and destroys the pattern under test, so we can see how much of the queue chance alone would produce:
 
 [Formula variant null model](formula_variant_null_model.md)
 
@@ -93,7 +95,7 @@ The `P324...P385` frame remains the strongest formula-family candidate. It spans
 | `P086 _ </s>` | 1 | `P123;P126` | 1 | `M-178~M-179` |
 | `P324 _ P210` | 1 | `P117;P215` | 1 | `M-14~M-58` |
 
-These are not allograph claims. They are candidate variable slots for future testing.
+These are not allograph claims — an allograph being two shapes treated as the same sign. They are candidate variable slots for future testing.
 
 ## Counterresult
 

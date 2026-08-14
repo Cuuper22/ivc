@@ -4,7 +4,7 @@ Date: 2026-05-25
 
 ## Question
 
-The previous triad packet ranked the best local metadata matches for every non-H-series `034` row. This audit asks a harder source-acquisition question:
+This note decides which objects to request from image archives first, and in what order. FRAME700 is the project's label for short inscription rows built on sign `700`, such as `+700-034+`; the `034` work asks whether the sign codes `032`, `033`, and `034` are separate choices in the same slot. Testing that needs triads — sets of three objects, one carrying each sign code, matched closely enough to compare. The previous triad packet, a bundled list of candidate triads, ranked the best local metadata matches for every non-H-series `034` row. This audit asks a harder source-acquisition question:
 
 ```text
 Which 034 triads are most independent, least copy-family-heavy, and worth requesting first from image/plate sources?
@@ -27,9 +27,9 @@ data/open_prototype/reports/lipi_frame700_034_archive_request_batch.csv
 
 ## Method
 
-Each of the 93 source triads is scored for:
+A copy family is a set of objects carrying the same inscription that may be copies of one another, so counting them as separate evidence would double-count one act of writing. Each of the 93 source triads is scored for:
 
-- source-hook coverage for target, `033` control, and `032` control
+- source-hook coverage for target, `033` control, and `032` control — a source hook is an identifier in our own records that can be searched for in an archive; the target is the object the test is about, and a control is a comparison object used to check it
 - repeated target longer-side token set
 - acquisition-manifest sequence-family count
 - repeated use of the same `033` or `032` control
@@ -72,7 +72,7 @@ Copy-family pressure:
 
 ## First Independent Source Batch
 
-These are now the first four source requests if the goal is independent pressure on the `034` residue rather than confirming the `+002-861-416+` branch first:
+These are now the first four source requests if the goal is independent pressure on the `034` residue — the leftover signal that has survived the controls run so far — rather than confirming the `+002-861-416+` branch first:
 
 | Independence rank | Target | `033` control | `032` control | Why first |
 | ---: | --- | --- | --- | --- |

@@ -2,11 +2,13 @@
 
 Date: 2026-05-29
 
+This note tests one pair of seals. H-55 and M-1750 begin with exactly the same four signs, `390-004-002-861`, but H-55 adds one more sign and M-1750 stops. If both could be checked against real photographs, that pair would be a clean minimal contrast: identical run, different ending. The gate — a check that must pass before evidence enters the analysis — asks whether both halves can be seen. Only one can, so the pair is not promoted.
+
 ## Question
 
-Can the exact catalog split `390-004-002-861` be upgraded into source-visible sign-system evidence, or is it still only an acquisition target?
+Can the exact catalog split `390-004-002-861` be upgraded into source-visible sign-system evidence — evidence checked against inspectable published photographs — or is it still only an acquisition target, a seal we must go and find an image of?
 
-This is a decipherment campaign, not a software task. It tests whether the same visible stem can close bare or take terminal material under comparable source conditions. No values, phonetics, language identity, or translations are accepted.
+This is a decipherment campaign, not a software task. It tests whether the same visible stem can close bare or take terminal material under comparable source conditions. "Bare" means the inscription ends right after the shared run; "terminal material" means one or more extra signs after it. No values, phonetics, language identity, or translations are accepted.
 
 ## Inputs
 
@@ -21,7 +23,7 @@ This is a decipherment campaign, not a software task. It tests whether the same 
 
 ## Main Result
 
-H-55 is now source-visible. CISI India leaf `n217` / printed page 182 has both `H-55 A` and `H-55 a`; the cleaner `a` impression shows a same-line five-glyph signband. That supports the catalog claim that the row has terminal material after the `390-004-002-861` stem, but it does not independently accept the numeric identity or value of `125`.
+H-55 is now source-visible. CISI India leaf `n217` / printed page 182 has both `H-55 A` and `H-55 a` — the seal face and its impression; the cleaner `a` impression shows a same-line five-glyph signband, meaning all five signs sit on one line of the inscription strip. That supports the catalog claim that the row has terminal material after the `390-004-002-861` stem, but it does not independently accept the numeric identity or value of `125`.
 
 M-1750 is not source-visible in the current public/local source layer. Direct searches for `M-1750`, `M1750`, `HR 3506246`, and OCR variants failed in the public CISI Pakistan XML. The public visible Mohenjo-daro plate sequence in that volume reaches the `M-1657/M-1658` area, while M-1750 is later and remains gated. Bhaskar local supplemental material confirms icon class only, not the inscription text.
 
@@ -33,9 +35,11 @@ Therefore the exact-prefix split is not promoted. The correct status is:
 
 If M-1750 later becomes source-visible and has tail-sized same-line terminal opportunity while still closing bare, then `390-004-002-861` becomes the cleanest test of a closure-capable stem with optional or conditioned terminal material.
 
-Right now it cannot carry that weight. The terminal-space recut set a concrete bar: bare closures currently show only `28-45px` post-terminal margins, while tailed rows use `120-525px` terminal windows. Since M-1750 cannot yet be measured, it cannot defeat the layout-capacity adversary.
+Right now it cannot carry that weight. The terminal-space recut — a measuring pass over the source images that quantified how much blank room each line had left — set a concrete bar: bare closures currently show only `28-45px` post-terminal margins, while tailed rows use `120-525px` terminal windows. Since M-1750 cannot yet be measured, it cannot defeat the layout-capacity adversary, the rival explanation that rows end early simply because they ran out of room.
 
 ## Linguistic Hypotheses Held Alive
+
+"Register" below means the coarse class of the object: its site, icon subtype, and cult marking.
 
 1. Closure plus terminal addendum
    - `002-861` can close, but some stems allow bounded terminal material.

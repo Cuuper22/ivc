@@ -2,13 +2,17 @@
 
 Date: 2026-05-29
 
-Question: do the Harappa `740-X-240-060-692` slot signs behave like a live sign class, a narrow template artifact, or a bridge into the post-`002-861` construction?
+This note counts where three signs live. At Harappa there is a recurring pattern, `740-X-240-060-692`, where the slot `X` is filled by `603`, `636`, or `642`. The question is whether those three signs are interchangeable members of one class or whether one of them behaves differently outside the pattern. One of them does: `603` also turns up far away, at the end of Mohenjo-daro seals after `002-861`. That is the whole finding, and the note is careful to say it is a distribution, not a meaning. Here "ecology" means the study of which contexts a sign appears in.
 
-Method: strict complete-token rows only; no bracketed or parenthesized readings; deduplicated by `(cisi, site, type, symbol, text)`.
+Question: do the Harappa `740-X-240-060-692` slot signs behave like a live sign class, a narrow template artifact — a fixed phrase repeated by rote — or a bridge into the post-`002-861` construction?
+
+Method: strict complete-token rows only, meaning rows whose readings are complete rather than partly reconstructed; no bracketed or parenthesized readings; deduplicated by `(cisi, site, type, symbol, text)` so one object cannot be counted twice.
 
 Strict corpus rows scanned: `4011`.
 
 ## Summary
+
+In this table a "register" is a coarse class of object defined by site, type, symbol, and shape; "frame" means one occurrence of a sign plus its neighbours; "tail initial" means the first sign of the material that follows `002-861`.
 
 | sign | occ. | registers | exact 740-X-240-060-692 | all X-240 templates | outside exact | non-X240 outside | post-002-861 tail initial | frame counts |
 |---|---:|---:|---:|---:|---:|---:|---:|---|

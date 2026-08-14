@@ -2,9 +2,11 @@
 
 Date: 2026-05-29
 
+This note asks whether one sign gets around. Most signs in the corpus sit inside a single recurring phrase and never leave it, which makes them hard to learn anything from. `603` is different: it ends Mohenjo-daro seals after `002-861` and it also fills a slot in a Harappa tablet formula. A sign that appears in two unrelated settings is worth more than one that does not — unless the two settings just happen to reuse the same shape. This note lays out both possibilities and the evidence for each.
+
 ## Question
 
-The tail ecology campaign promoted `603` above `533-717` as the first translation-relevant post-`861` target. This campaign asks the actual linguistic question:
+The tail ecology campaign — the pass that surveyed what follows `002-861` — promoted `603` above `533-717` as the first translation-relevant post-`861` target. This campaign asks the actual linguistic question. "Register" below means the coarse class of object: site, type, symbol, and shape:
 
 ```text
 Is 603 a mobile sign/function with a stable life across contexts,
@@ -20,7 +22,7 @@ data/open_prototype/reports/campaign_032_002_861_603_mobility_summary.csv
 data/open_prototype/reports/campaign_032_002_861_603_mobility_summary.json
 ```
 
-Input layer:
+Input layer. "Strict" rows have complete readings rather than partly reconstructed ones; "dedup" collapses near-duplicate rows so one object cannot be counted twice:
 
 ```text
 strict complete source strings, cisi/site/type/symbol/text dedup: 4011 rows
@@ -61,7 +63,7 @@ Mohenjo-daro seal register
 | `H-1846` | `+740-603-240-060-692+` | Harappa `TAB:B`, no icon, rectangular |
 | unknown | `+000-603-091-190+` | Unknown `SEAL:C`, Scene, circular |
 
-The independent side is not four equal votes. It is:
+The independent side is not four equal votes. Three of the four rows carry identical text, which makes them one "formula family" — a group of near-identical rows that must be weighed as a single piece of evidence. So the tally is:
 
 ```text
 one repeated Harappa TAB:B formula family

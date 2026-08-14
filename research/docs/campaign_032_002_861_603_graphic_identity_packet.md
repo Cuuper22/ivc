@@ -2,9 +2,11 @@
 
 Date: 2026-05-29
 
+This note assembles images so a claim can be checked by eye. The catalogue says the sign numbered `603` appears both at Harappa, inside a tablet formula, and at Mohenjo-daro, at the end of seals after `002-861`. That would be a bridge between two very different contexts. But so far we have only the catalogue's word that the two are the same carved shape. This packet — a bundle of crops gathered for one judgment — puts the two sides side by side to see whether the images agree.
+
 ## Question
 
-Do the source-visible post-`002-861` `603` windows and the Harappa `740-603-240-060-692` source bands currently support the same graphic sign, or is the bridge still catalog-mediated?
+Do the source-visible post-`002-861` `603` windows and the Harappa `740-603-240-060-692` source bands currently support the same graphic sign, or is the bridge still catalog-mediated — believed only because the catalogue assigns both the same number? A "band" is the strip of the object carrying the inscription; a "window" is the region of that strip where a given sign should sit.
 
 This packet is visual source comparison. It is not a sign value, phonetic reading, language identity claim, or translation.
 
@@ -52,9 +54,9 @@ Linguistic ranking:
 1. Post-`861` terminal addendum/classifier candidate: best supported by the current packet.
 2. Cross-context lexical/classifier bridge: live but not yet source-proven.
 3. Harappa tablet-template explanation plus separate Mohenjo tail: very live until Harappa tokenization is solved.
-4. Graphic conflation/catalog homography: live hostile explanation.
+4. Graphic conflation/catalog homography — the possibility that two different carved shapes were given one catalogue number: live hostile explanation.
 
-Adversarial kill path:
+Adversarial kill path — the specific findings that would destroy the bridge, written down in advance:
 
 - The bridge dies if source-tokenized `H-1138` assigns catalog `603` to a graphic that is not the ladder/window-shaped terminal sign visible in `M-1273`.
 - The bridge also dies if source-tokenized `H-360/636` is as close or closer to the `M-1273` terminal window than the alleged Harappa `603` token.

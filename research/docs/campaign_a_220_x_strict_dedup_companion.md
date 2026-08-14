@@ -2,6 +2,8 @@
 
 Date: 2026-05-26
 
+This note re-runs an earlier result under a stricter counting rule, and the ranking changes. Signs in this corpus are numeric IDs. `A-220-X` means: some sign `A`, then `220`, then a variable sign `X`. "Strict dedup" collapses rows repeating the same text into one unit of evidence, so a copied inscription cannot pose as many witnesses; that is what shifts the ranking here. The "companion" is the other inscribed face of the same object. A "copy family" or "formula family" is a set of such near-identical rows.
+
 ## Result
 
 The strict pass keeps `A-220-X` alive, but changes the ranking.

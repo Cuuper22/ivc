@@ -4,9 +4,9 @@ Date: 2026-05-25
 
 ## Question
 
-The route audit found nine FRAME700 `034` packet objects with Internet Archive CISI OCR hits. Where are those hits at page level?
+This note is a lookup table telling us which catalog page to open for each object under study. FRAME700 is the project's label for short inscription rows built on sign `700`, such as `+700-032+`; the `034` packet is the bundle of objects gathered to test whether the sign codes `032`, `033`, and `034` are separate choices in the same slot. An earlier route audit — a check of which published sources actually reach each object — found nine of those packet objects with OCR hits in the Internet Archive (IA) scans of CISI, the Corpus of Indus Seals and Inscriptions, the standard photographic catalog of Indus objects. The question: where are those hits at page level?
 
-This is a source-acquisition artifact, not a source-image validation artifact.
+This is a source-acquisition artifact, not a source-image validation artifact. It says where to look, not what the images show.
 
 ## Local Artifacts
 
@@ -40,7 +40,7 @@ total OCR hits: 27
 accepted decipherment claims: 0
 ```
 
-Located objects:
+Located objects. In the packet role column, a target is an object the test is about, and a control is a comparison object used to check the target.
 
 | Object | Priority | Packet role | IA volume | Leaves | Hit count | Immediate use |
 | --- | --- | --- | --- | --- | ---: | --- |
@@ -81,6 +81,8 @@ H-771 / H-789 can be inspected as the first independent low-copy IA pair.
 H-893 / H-925 / H-930 can be inspected as the first local minimal-contrast IA triad.
 H-983 / H-353 can start the second visual-object local lane, with H-2211 still on CISI 3.1 route.
 ```
+
+A lane is one of the separate evidence tracks the project runs, kept apart so a result in one does not lean on the other.
 
 This creates the first page-addressable source inspection queue for `034`.
 

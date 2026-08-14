@@ -2,9 +2,13 @@
 
 Date: 2026-05-25
 
+This note is an extraction: it takes a published scholar's reading of one object and lines it up against our own transcription of the same object, sign by sign, to see whether the two explain each other. Read it as a record of where a hypothesis came from, not as a result.
+
+The read it draws on is Parpola 2019. Our side is the local `lipi` row — our own numeric transcription, where each three-digit code is a label for a sign shape, not a reading of it.
+
 ## Supersession Note
 
-This is a hypothesis artifact, not an accepted mapping. It is superseded by the later target-side gate: the target is source-visible, but exact three-stroke `034`, the public `M-2104 = Marshall no. 532 / VS 875` identity bridge, and the local four-token segmentation all fail acceptance in the public evidence layer.
+This is a hypothesis artifact, not an accepted mapping. It is superseded by the later target-side gate — a gate being a test a claim must pass before it can advance: the target is source-visible, but exact three-stroke `034`, the public `M-2104 = Marshall no. 532 / VS 875` identity bridge, and the local four-token segmentation all fail acceptance in the public evidence layer.
 
 Question:
 
@@ -67,6 +71,8 @@ This is the first useful internal explanation of the P0 (top-priority) `034` row
 
 ## Hypotheses
 
+Each row is a guess to be tested, graded B or C for strength. None is accepted.
+
 | Local sign/group | Parpola candidate | Grade | Status |
 | --- | --- | --- | --- |
 | `151` | sign 1 | B | Supported by M-2104, H-543, H-544, M-915; source images still required. |
@@ -78,6 +84,8 @@ This is the first useful internal explanation of the P0 (top-priority) `034` row
 
 ## Conflicts
 
+Rows that should fit the pattern and do not. They are written down rather than dropped, because a hypothesis that quietly discards its misfits cannot be tested.
+
 Parpola also names M-715 and M-896 in the surrounding discussion of the signs 15 and 1 sequence. The current local rows do not cleanly expose the expected `151/097` pair:
 
 ```text
@@ -88,6 +96,8 @@ M-896: +151-031-090-032-001-505+
 Those are not discarded. They become source-check conflicts. If source photos, variant notes, or catalog corrections explain them, they can support or kill the `151/097` extraction.
 
 ## Boundary
+
+The hard line between what was found and what the project is allowed to claim.
 
 Accepted translations: 0
 
@@ -105,5 +115,5 @@ The extraction is strong enough to prioritize source inspection, not strong enou
 
 1. Get or inspect CISI images for M-2104, M-478, M-480, and M-1425.
 2. Verify whether `034` and `004` are actually three-stroke and four-stroke count components in the same pot-count cluster.
-3. Inspect H-543, H-544, and M-915 for the `097-151` R/L control.
+3. Inspect H-543, H-544, and M-915 for the `097-151` R/L control — a comparison case used to check that the pattern is not an artifact of reading direction.
 4. Resolve M-715 and M-896 as conflicts, not exceptions to ignore.

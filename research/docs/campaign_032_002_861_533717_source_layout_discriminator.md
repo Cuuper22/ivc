@@ -2,9 +2,11 @@
 
 Date: 2026-05-29
 
+This note looks for a physical fingerprint and does not find one. If M-376 and M-391 laid out their `533-717` ending in some measurable way that other seals of the same class never do, that would be evidence the ending is a real unit. This pass measures where the tail sits on the line and how wide it is, then checks the controls. A control does the same thing, so the fingerprint is not unique. The note ends by telling the campaign to stop working this small group and look elsewhere.
+
 ## Question
 
-After exact copy-family collapse was rejected, the next promotion gate was:
+After exact copy-family collapse was rejected — the earlier finding that the two rows are not near-copies of one another — the next promotion gate was:
 
 ```text
 Do M-376/M-391 share a visible post-861 layout behavior that same-register controls lack?
@@ -20,13 +22,15 @@ data/open_prototype/reports/campaign_032_002_861_533717_source_layout_discrimina
 
 ## Quantified Existing Overlay Rows
 
+Measurements are in pixels on the marked-up source crops. "Tail start share" is how far along the line the tail begins, as a fraction of line width; "tail width share" is the fraction of the line the tail occupies.
+
 | row | tail | line width | tail width | tail start share | tail width share |
 |---|---|---:|---:|---:|---:|
 | `M-376` | `533-717` | 730 | 265 | 0.637 | 0.363 |
 | `M-391` | `533-717` | 800 | 265 | 0.669 | 0.331 |
 | `M-1273` | `603` | 1190 | 220 | 0.815 | 0.185 |
 
-Qualitative controls:
+Qualitative controls — same-class comparison rows judged by eye rather than measured. "Same-register" means the same coarse class of object by site, type, and shape:
 
 ```text
 M-355: source-visible cuboid-convex same-register row with long post-861 tail.

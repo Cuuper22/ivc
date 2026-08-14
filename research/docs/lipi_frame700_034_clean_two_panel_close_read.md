@@ -4,7 +4,7 @@ Date: 2026-05-25
 
 ## Question
 
-Do the two cleanest IA CISI page locators, `H-930` and `H-789`, survive a closer source-image read strongly enough to serve as calibration controls for the next `034` source attack?
+This note records a close look at two catalog pages. FRAME700 is the project's label for short inscription rows built on sign `700`, such as `+700-032+`; the `034` work asks whether the sign codes `032`, `033`, and `034` are separate choices in the same slot. Testing that needs source images, and the two easiest pages to read are the ones for objects `H-930` and `H-789` in the Internet Archive (IA) scans of CISI, the Corpus of Indus Seals and Inscriptions — the standard photographic catalog of Indus objects. The question: do those two page locators survive a closer source-image read strongly enough to serve as calibration controls — known-clean examples that set the visual standard the harder objects must then meet?
 
 ## Inputs
 
@@ -28,7 +28,7 @@ accepted decipherment claims: 0
 | Object | Role | Source page | Close-read result |
 | --- | --- | --- | --- |
 | `H-930` | `032` control | CISI Pakistan leaf `374`, `HARAPPA 927-942 TABLETS incised no iconography` | Best current calibration control. `H-930 A` is compatible with the longer companion row `+740-900-004+`; `H-930 B` is compatible with the short row `+700-032+`. The scan supports object identity, two panels, and short-vs-long split, not independent subtype or direction. |
-| `H-789` | `033` control | CISI Pakistan leaf `359`, `HARAPPA 778-793 TABLETS in bas-relief no iconography` | Independent-lane clean control. `H-789 A` is compatible with longer companion `+400-520-220-016+`; `H-789 B` is compatible with short row `+033-700+`. Stroke confidence is lower than `H-930`, so it stays a control, not subtype validation. |
+| `H-789` | `033` control | CISI Pakistan leaf `359`, `HARAPPA 778-793 TABLETS in bas-relief no iconography` | Clean control for the independent lane — a lane being one of the separate evidence tracks the project runs so a result in one does not lean on the other. `H-789 A` is compatible with longer companion `+400-520-220-016+`; `H-789 B` is compatible with short row `+033-700+`. Stroke confidence is lower than `H-930`, so it stays a control, not subtype validation. |
 
 ## What This Actually Adds
 
@@ -54,7 +54,7 @@ They cannot be used for:
 
 `H-789` is now the calibration object for the independent lane. It can be paired against `H-771` only after `H-771`'s multiple `A` impressions are disambiguated.
 
-The close-read changes the next source-gate from "find images" to "prove the messy targets can meet the standard set by these two controls."
+The close-read changes the next source-gate — the checkpoint the evidence must pass before the next step is allowed — from "find images" to "prove the messy targets can meet the standard set by these two controls."
 
 That gate has now been run in [Lipi FRAME700 034 messy panel reconciliation](lipi_frame700_034_messy_panel_reconciliation.md). `H-771`, `H-893`, `H-925`, `H-983`, and `H-353` all fail clean upgrade until source-side variants and extra panels are reconciled.
 

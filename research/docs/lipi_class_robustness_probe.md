@@ -2,6 +2,12 @@
 
 Date: 2026-05-24
 
+This note is a robustness probe: an attempt to break our own best result before anyone else does.
+
+The result being attacked is that a dataset column called `class` can be predicted from the signs on an object. Two dull explanations could account for that, and both are tested here. First, edge signs — the very common signs at the start and end of inscriptions — might be doing all the work. Second, formula families: groups of near-identical inscriptions that let a model score well by recognising a template it has already seen. Collapsing a family means counting the whole group once instead of once per row.
+
+The result survives, in weakened form. Note what that does and does not license: `lipi` is a third-tier or T3 dataset, and macro-F1 below is an accuracy measure that treats rare labels as seriously as common ones.
+
 ## Purpose
 
 This experiment directly attacks the strongest current metadata scout result: `class` prediction in the broad filtered `lipi` planning layer.
@@ -46,6 +52,8 @@ The top-10 edge signs removed in the edge-removal policies are:
 
 ## Policies
 
+Six ways of processing the data, from untouched to harshest. Each combines a transform (remove the common edge signs, or not) with a rule for collapsing near-identical rows into families.
+
 The probe evaluates six policy layers:
 
 | Policy | Transform | Family collapse |
@@ -65,6 +73,8 @@ Each family receives the majority `class`, `site`, and `type` labels from its so
 - Token NB.
 
 ## Inventory
+
+How much data each policy leaves standing. The harsher the policy, the fewer families remain and the larger those families get.
 
 | Policy | Families | Tokens | Unique Signs | Source Weight | Largest Family Records | Largest Source Weight |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -93,9 +103,11 @@ Overall `class` prediction:
 The result has two parts:
 
 - Edge-sign removal alone does not erase the class signal. Token NB remains around 0.474 to 0.477 accuracy after top-10 edge removal.
-- The harshest combined policy downgrades the result. Token NB remains above majority, but its raw accuracy no longer beats the length and edge-frame controls. Its macro-F1 remains higher than those controls, which means the residual signal is not only majority-class guessing.
+- The harshest combined policy downgrades the result. Token NB remains above majority, but its raw accuracy no longer beats the length and edge-frame controls. Its macro-F1 remains higher than those controls, which means the residual signal — what is left after the controls remove every dull explanation — is not only majority-class guessing.
 
 ## Stratified Stress Results
+
+A stratum is one slice of the data — a single site, a single artifact type, or a combination. Breaking the result down by stratum shows where it holds and where it thins out.
 
 Selected harsh-control rows under `top10_edge_removed_one_edit_family_collapsed`:
 
@@ -142,6 +154,8 @@ Class remains useful as a source-field stress target, but it is not clean enough
 ```
 
 ## Next Falsification
+
+Falsification means the next tests are chosen for their power to break this result, not to confirm it.
 
 Next tests:
 

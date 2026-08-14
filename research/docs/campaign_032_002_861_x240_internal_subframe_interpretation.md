@@ -2,9 +2,11 @@
 
 Date: 2026-05-29
 
+This note collects rival interpretations of one small recurring pattern, so that later work can break them. Signs in this corpus are numeric IDs. A "subframe" is a short fixed run of signs that recurs inside a longer row; here the run is `740-X-240-060-692`, with X standing for whichever sign fills that one variable slot. A "tail" is material at the end of an inscription row, after the sign pair `002-861`.
+
 Question: what can the compact `740-X-240-060-692` subframe mean as a linguistic object, given that `603` also appears after `002-861` while `636` and `642` do not?
 
-This is not a sign value and not a translation. It is the next distributional object that can generate linguistic hypotheses.
+This is not a sign value and not a translation. It is the next distributional object — a pattern in the counts — that can generate linguistic hypotheses.
 
 ## Evidence State
 
@@ -63,7 +65,7 @@ Parse: `060-692` is the frame-defining continuation, while `X` names a subtype o
 
 What it explains:
 
-- `642` also appears with `240-001-692`, keeping `692` in its ecology.
+- `642` also appears with `240-001-692`, keeping `692` in its ecology — the set of neighbours a sign is normally found with.
 - `636` appears with terminal `240` and `240-031-032-171`, suggesting it has a broader X-before-240 role.
 - `603` is narrower inside X-before-240 but mobile outside it.
 
@@ -138,7 +140,7 @@ The bridge claim weakens if any of these explanations starts fitting better than
 - Slot mismatch: Harappa `603` is medial in `740-603-240-060-692`, while post-`861` `603` is terminal after a closure edge.
 - Register/material split: Harappa tablet ecology and Mohenjo seal-tail ecology explain the distribution better than sign syntax.
 - Control weakness: `636/642` exact rows downgrade under source checking or are not comparable to `603`.
-- Homograph/crosswalk error: Harappa `603` and post-`861` `603` split visually under blind source review.
+- Homograph/crosswalk error — the crosswalk being the mapping between catalog sign numbers and actual graphic shapes: Harappa `603` and post-`861` `603` split visually under blind source review.
 
 The bridge claim dies if the evidence resolves to one Harappa tablet X-slot formula family plus three Mohenjo terminal addenda, with no shared source layout and no shared substitution ecology.
 

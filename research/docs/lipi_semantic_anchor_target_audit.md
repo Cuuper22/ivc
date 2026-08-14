@@ -4,9 +4,9 @@ Date: 2026-05-24
 
 ## Purpose
 
-This audit asks which `lipi` metadata fields can safely become the next semantic-anchor prediction targets after the `class` field was downgraded.
+This note picks the next thing to test, and lists what must be controlled before the test is allowed to count. `lipi` is the project's filtered working corpus of Indus sign sequences. A semantic anchor is a metadata field whose values might plausibly be tied to what an inscription says — iconography, material, object shape — so that predicting it from signs would be a first foothold toward meaning. The `class` field was an earlier candidate and was downgraded. This audit asks which `lipi` metadata fields can safely become the next semantic-anchor prediction targets.
 
-It does not test meaning. It does not assign sign values. It does not treat `lipi` as authoritative. It only decides which catalog labels have enough coverage and which proxy controls must be built before any semantic-anchor experiment is allowed.
+It does not test meaning. It does not assign sign values. It does not treat `lipi` as authoritative. It only decides which catalog labels have enough coverage and which proxy controls must be built before any semantic-anchor experiment is allowed. A proxy is another field that stands in for the target closely enough to predict it without any sign information.
 
 ## Local Artifacts
 
@@ -36,7 +36,7 @@ min_target_families: 150
 
 ## Method
 
-The audit uses the same strict `lipi_numeric_clean_candidate` gate used in the broad structural work:
+The audit uses the same strict `lipi_numeric_clean_candidate` gate used in the broad structural work. A gate here is a set of conditions a row must pass before it is allowed into the experiment:
 
 - CISI-style ID is present.
 - Numeric text is present.
@@ -122,7 +122,7 @@ The audit gives a better next path than the downgraded `class` field:
 The result supports only this claim:
 
 ```text
-In the filtered `lipi` T3 planning layer, several clearer-provenance catalog fields have enough exact-sequence-collapsed label coverage to support proxy-blocked semantic-anchor prediction experiments.
+In the filtered `lipi` T3 planning layer — the project's tier label for unverified working data, useful for direction but never admissible as proof — several clearer-provenance catalog fields have enough exact-sequence-collapsed label coverage to support proxy-blocked semantic-anchor prediction experiments.
 ```
 
 It does not support:

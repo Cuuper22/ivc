@@ -2,6 +2,10 @@
 
 Date: 2026-05-25
 
+This note is a probe — a bounded first look, not a verdict. It asks a modest question: now that we have image crops of the relevant objects, is the stroke-count idea something a person can actually check by eye?
+
+A hypothesis that cannot be checked is not yet science. The whole value of this note is that it moves the idea from untestable to testable, and says nothing more than that.
+
 Question:
 
 ```text
@@ -41,7 +45,7 @@ accepted decipherment claims: 0
 
 First-pass result:
 
-The hypothesis is now visually testable, not accepted. Parpola Fig. 1 row 12 shows the standardized `M-2104` target with the `UIII` cluster. Public CISI crops for `M-478`, `M-480`, and `M-1425` show tablet inscription lanes with visible four-stroke/U-pot-like cluster regions. `M-478` and `M-1425` are the strongest immediate crops; `M-480` is usable but lower contrast.
+The hypothesis is now visually testable, not accepted. Parpola Fig. 1 row 12 shows the standardized `M-2104` target with the `UIII` cluster. Public CISI crops for `M-478`, `M-480`, and `M-1425` show tablet inscription lanes — the narrow bands carrying the sign rows — with visible four-stroke/U-pot-like cluster regions. `M-478` and `M-1425` are the strongest immediate crops; `M-480` is usable but lower contrast.
 
 ## Live Hypothesis
 
@@ -74,6 +78,8 @@ If the local encoding is right, then:
 
 ## Segmentation Targets
 
+Segmentation is the decision about where one sign ends and the next begins. These are the places on each image where that decision has to be made.
+
 The first overlay pass marks only visual units to test. It does not accept the after-the-fact local-token assignments.
 
 | Object | Overlay | Target boxes | Immediate use |
@@ -90,6 +96,8 @@ data/open_prototype/reports/lipi_034_m2104_segmentation_targets.csv
 ```
 
 ## Blind Adjudication
+
+Blind means the reviewers judged the images without being told which object they were looking at or what answer was expected. Adjudication is the ruling that follows.
 
 Independent visual adjudication of the two strongest public tablet parallels gives this status:
 
@@ -110,6 +118,8 @@ docs/lipi_034_m2104_blind_visual_adjudication.md
 
 ## Kill Conditions
 
+Written in advance, on purpose. These are the observations that would end the hypothesis, listed before we go looking, so the standard cannot drift once results arrive.
+
 The current extraction fails if any of these happen under sign-level segmentation:
 
 - `700-004` does not correspond to the visible four-stroke U/pot cluster in the tablet parallels.
@@ -119,6 +129,8 @@ The current extraction fails if any of these happen under sign-level segmentatio
 - The apparent match is caused by direction normalization, drawing regularization, or derivative sign-list circularity.
 
 ## Boundary
+
+The hard line between what was found and what the project is allowed to claim.
 
 Accepted translations: 0
 

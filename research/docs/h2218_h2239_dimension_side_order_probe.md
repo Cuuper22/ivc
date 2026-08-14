@@ -4,6 +4,10 @@ Date: 2026-05-24
 
 ## Purpose
 
+This note records a probe — a narrow, cheap experiment run to rule out a boring explanation before anyone entertains an interesting one.
+
+A group of small Harappa tablets, H-2218 through H-2239, carry inscriptions on more than one side. Our catalog records the order of those sides, and the objects fall into two side-order signatures: a canonical pattern, called A, and a swapped one. The interesting hypothesis is that the difference means something. The boring explanation is that it tracks how big the tablets are or how they were made.
+
 This probe follows the [H-2218 through H-2239 Fig. 4 mapping](h2218_h2239_fig4_mapping.md).
 
 It asks a narrow control question:
@@ -54,7 +58,7 @@ The probe computes:
 - Area as horizontal times vertical.
 - Aspect as horizontal divided by vertical.
 
-For the canonical A versus side-swap comparison, it uses exact two-sided permutation tests over all 77,520 assignments preserving group sizes.
+For the canonical A versus side-swap comparison, it uses exact two-sided permutation tests over all 77,520 assignments preserving group sizes. A permutation test reshuffles the group labels every possible way and asks how often chance alone produces a gap as large as the observed one.
 
 For the three Meadow and Kenoyer manufacturing groups, it uses a deterministic 20,000-iteration label permutation over one-way F statistics. This is a descriptive size-control check, not a population claim.
 
@@ -82,7 +86,7 @@ This does not prove that side order is functional. It only blocks the easy size-
 
 The manufacturing groups do show measurement structure, especially horizontal size, area, and aspect.
 
-That matters because the size-control is not blind. It can see source-level physical clustering where the published manufacturing groups suggest it should. The same measurements do not explain the A versus side-swap split.
+That matters because the size-control is not blind — blind here meaning unable to detect real structure at all. It can see source-level physical clustering where the published manufacturing groups suggest it should. The same measurements do not explain the A versus side-swap split.
 
 ## Interpretation
 

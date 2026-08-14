@@ -4,6 +4,8 @@ Date: 2026-05-28
 
 ## Question
 
+This note records an adjudication pass on published photographs: for four rows, we look at the image and decide what the physical layout will and will not support. Signs in this corpus are numeric IDs. A "branch tail" is the material that follows the branch sign Y in rows shaped `032-002-Y(-tail)`. A "token box" is a rectangle claiming the exact extent of one sign on the image; the broad "order windows" used here claim only sequence, not boundaries. A row is "source-visible" when it can be checked against a published photograph.
+
 The source acquisition upgraded `M-240`, `M-91`, and `M-70` to public source-panel rows. This campaign asks the next linguistic question:
 
 ```text

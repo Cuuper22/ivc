@@ -2,6 +2,8 @@
 
 Date: 2026-05-28
 
+This note records the third batch of image checks, this time from the Chanhu-daro excavation report. Signs in this corpus are numeric IDs; `Y` names whichever sign follows `002`. A "witness" is an actual inscription row carrying the pattern; a row is "source-visible" once its published photograph shows it, and a "source route" is the traceable chain from row to published plate. "Target" rows carry the pattern; "control" rows are comparison rows that should not. Chanhu-daro matters because it is a third site: it tests whether the pattern travels.
+
 ## Result
 
 Mackay's public `Chanhu-Daro Excavations, 1935-36` scan gives two usable row-level witnesses and one provenance-only target.

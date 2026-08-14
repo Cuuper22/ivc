@@ -4,9 +4,9 @@ Date: 2026-05-24
 
 ## Purpose
 
-This probe follows the [Lipi semantic anchor target audit](lipi_semantic_anchor_target_audit.md). It asks whether candidate semantic-anchor metadata fields are predicted by signs after preserving obvious catalog shortcuts with blocked label-shuffle nulls.
+This note tests the most tempting shortcut to meaning and reports that it fails. A semantic anchor is a metadata field whose values might plausibly be tied to what an inscription says — the object's iconography, material, or shape — so that predicting it from signs would be a first foothold. The danger is that such a field is predictable for boring reasons, such as long inscriptions sitting on big objects. To guard against that, each test is compared against a blocked label-shuffle null: the labels are shuffled among rows that already match on the suspect shortcut, so anything the shuffled version achieves is what the shortcut alone can produce. This probe follows the [Lipi semantic anchor target audit](lipi_semantic_anchor_target_audit.md). It asks whether candidate semantic-anchor metadata fields are predicted by signs after preserving obvious catalog shortcuts with those nulls.
 
-This is not a semantic reading. It does not assign meanings, sign values, phonetics, language identity, or translations. The labels are still `lipi` catalog metadata from a T3 planning source.
+This is not a semantic reading. It does not assign meanings, sign values, phonetics, language identity, or translations. The labels are still `lipi` catalog metadata — `lipi` being the project's filtered working corpus — from a T3 planning source, meaning unverified data useful for direction but never admissible as proof.
 
 ## Local Artifacts
 
@@ -85,7 +85,7 @@ Blocked label-shuffle nulls:
 - Edge frame.
 - Target-specific hard proxy block.
 
-The hard proxy blocks preserve the strongest obvious catalog tangles for each target. For example, `symbol` preserves length, type, site, shape, cult field, and material.
+A proxy is another field that stands in for the target closely enough to predict it without any sign information. The hard proxy blocks preserve the strongest obvious catalog tangles for each target. For example, `symbol` preserves length, type, site, shape, cult field, and material.
 
 ## Observed Shortcut Models
 

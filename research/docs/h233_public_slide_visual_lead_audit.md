@@ -4,7 +4,7 @@ Date: 2026-05-24
 
 ## Purpose
 
-This follows the [Lipi short-mark source acquisition queue](lipi_short_mark_source_acquisition_queue.md).
+This note checks two public images that an automated sweep had flagged as pictures of the object H-233. It exists because a lead — a public URL that appears to show a specific object — is only worth keeping if a human actually looks at the image and confirms the object is there. It follows the [Lipi short-mark source acquisition queue](lipi_short_mark_source_acquisition_queue.md).
 
 Question:
 
@@ -74,7 +74,7 @@ The H-233 public-image lead should be narrowed:
 
 - Keep Slide 1 as a low-grade visual acquisition pointer for H-233.
 - Do not count Slide 2 as an H-233 image lead.
-- Keep both under T4 source-discovery status because the source page is secondary and claim-heavy.
+- Keep both under T4 source-discovery status — the project's lowest source-trust tier, usable only as a pointer to an image, never as evidence — because the source page is secondary and claim-heavy.
 - Continue to require CISI plates, HARP/Harappa images, or archive access before filling the H-233 manual packet fields.
 
 This also gives a correction rule for later public-image sweeps: page-level image extraction must be followed by object-level visual relevance checks.

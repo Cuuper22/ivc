@@ -4,6 +4,10 @@ Date: 2026-05-26
 
 ## Question
 
+This note records an attempt to connect one sign in our local catalog to the same sign in a published sign list. It is bookkeeping about identity, not about meaning: the question is whether two catalogs are talking about the same mark.
+
+Terms first. "Lipi" is the local sign-code catalog, whose signs are bare numbers like `220`, `520`, `415`. "Mayig" is a second independent catalog, with `P###` feature ids. Parpola cites signs by his own article numbering, as "sign no. 60," and Parpola 1994 Fig. 5.1 is the published sign list that numbering refers to. A "bridge" is a proposed link between two of these namespaces; a "probe" is an exploratory pass, not accepted evidence. "Promoted" means moved to a stronger status in the project's ledger. M- and H-numbers are Mohenjo-daro and Harappa artifacts.
+
 Can local Lipi `220` be promoted from a bounded fish-form candidate to Parpola 2019 article sign no. `60`, the "plain fish" sign used in the text no. 7 recurrence discussion?
 
 This is a sign-list/source bridge question. It is not a translation attempt.
@@ -39,7 +43,7 @@ sha256 8AFCF0D1D4662FC47014FDBF6CD6CED0F85E0FF07C2799169758E2AC2FF6996B
 
 Mayig feature `P050` is described as `Fish with no other decoration` and maps to Parpola `V177/V517`, Wells `W220`, and Mahadevan `M059`. This is not the same as the rejected shortcut `V060`, but it is the relevant fish-form namespace witness.
 
-The current overlap layer has 27 rows where local Lipi `220` aligns positionally to Mayig `P050`. The clean object-level row for the live branch is:
+The current overlap layer — inscriptions present in both catalogs — has 27 rows where local Lipi `220` aligns positionally to Mayig `P050`. The clean object-level row for the live branch, meaning the line of inquiry currently open, is:
 
 ```text
 M-37 2565.1 M-37A R/L +520-220-415+
@@ -48,7 +52,7 @@ Mayig: P217 P050 P092
 status: provisional_position_alignment_only
 ```
 
-The source signband for M-37 shows the same three-part row already used in the M-1206 branch: a triangular/standard-like first sign, a fish-like middle sign, and a comb/rake terminal sign. This makes local `220` a stronger candidate bridge to article sign no. `60` than it was before the source visual check.
+The source signband — the strip of the object photograph holding the inscription — for M-37 shows the same three-part row already used in the M-1206 branch: a triangular/standard-like first sign, a fish-like middle sign, and a comb/rake terminal sign. This makes local `220` a stronger candidate bridge to article sign no. `60` than it was before the source visual check.
 
 The broader local frame is real as a distributional pattern, but not decisive. In `metadata_filtered.csv`, rows starting with `+520-220-X` number 52 and cover 16 third-slot types. The exact three-sign `+520-220-X+` subset has 21 rows: `415` appears 17 times, while `003`, `006`, `016`, and `034` appear once each. This supports the usefulness of the `520-220-X` frame, but it does not make `220` a solved article sign no. `60` bridge by itself.
 
@@ -83,10 +87,10 @@ translation
 
 ## Next Gate
 
-The next useful test is not another broad corpus scrape. It is a source-normalized middle-sign crop packet:
+The next gate is the checkpoint this candidate must clear before it can advance. The next useful test is not another broad corpus scrape. It is a source-normalized middle-sign crop packet — a set of image crops cut to a common standard so they can be compared fairly:
 
 1. Crop the middle `220` component from source-visible `+520-220-X` rows where the side mapping is already usable: M-37 first, then H-938/H-940/H-942 if their middle component can be isolated without label or neighbor contamination.
-2. Compare those middle components blind against Parpola 1994 sign no. `60` variants and Mayig `P050` source examples.
+2. Compare those middle components blind — the reviewer not knowing which crop is the target — against Parpola 1994 sign no. `60` variants and Mayig `P050` source examples.
 3. Accept a bridge only if the same object-side source, local token position, and sign-list convention all align.
 
 Until that happens, local `220` is a P0 candidate bridge for article sign no. `60`, not a crosswalk.

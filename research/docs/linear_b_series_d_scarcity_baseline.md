@@ -2,11 +2,13 @@
 
 Date: 2026-05-24
 
+This note reports the first run of the outside yardstick. Linear B is already deciphered, so we know the right answers. Here the answers are hidden, the tablets are cut down to the short lengths the Indus corpus actually offers, and a plain structural method is asked to guess a missing sign. Whatever it scores is the honest ceiling for the same method on Indus material — a target, not a claim about Indus signs.
+
 ## Question
 
 What can a structural method recover from a known deciphered administrative script when the known readings are hidden and the inscription lengths are forced toward the current IVC planning layer?
 
-This is the first execution of `E5.3a Linear B Series D Scarcity Baseline`. It is a known-script comparator, not an IVC reading experiment.
+This is the first execution of `E5.3a Linear B Series D Scarcity Baseline`. It is a known-script comparator — a deciphered script used as a benchmark — not an IVC reading experiment.
 
 ## Source Manifest
 
@@ -76,7 +78,7 @@ The all-length hidden-reading condition gives bidirectional masked-sign top-1 ac
 
 ## Control Results
 
-Each structural control ran 50 deterministic iterations for both tokenizations and both scopes.
+A null model is a deliberately dumb chance model: it keeps some shallow property of the data, such as sign frequency or position, and throws the rest away. If the real method cannot beat it, the method has found nothing. Each structural control ran 50 deterministic iterations for both tokenizations and both scopes.
 
 Primary `sign_tokens` bidirectional top-1 controls:
 
@@ -114,7 +116,7 @@ ivc_p95_length_cap_gapped_rows: 299
 target_rows_from_exact_duplicate_sequences: 40 all lengths; 36 under p95 cap
 ```
 
-This is stricter than the leave-one-token score above because the missing position is source-provided and evaluated as a held-out gap. Two policies were run:
+This is stricter than the leave-one-token score above because the missing position is source-provided and evaluated as a held-out gap. A holdout is data kept out of training so the method must genuinely predict it rather than recall it. Two policies were run:
 
 ```text
 row_leave_one_out: removes only the target row from training

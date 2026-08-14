@@ -2,9 +2,11 @@
 
 Date: 2026-05-26
 
+This note is a source-acquisition packet: a written shopping list of exactly what evidence must be obtained about two objects, and exactly what would count as getting it. Writing the conditions down before the images arrive is the point. It stops the project from lowering the bar once something turns up that is almost good enough.
+
 ## Question
 
-What exact source evidence is needed before `H-319` and `H-1284` can upgrade the M-1206 `034/415` branch?
+What exact source evidence is needed before `H-319` and `H-1284` can upgrade the M-1206 `034/415` branch — the open line of investigation into whether those two sign codes are one sign or two?
 
 ## Current State
 
@@ -36,7 +38,7 @@ Secondary context:
 
 ## Required Evidence
 
-The packet requires five bridges before any source upgrade:
+A bridge below is a documented link that connects two labelling systems, so a claim can travel from one to the other without guesswork. The packet requires five bridges before any source upgrade:
 
 1. Object bridge: source label, source hook, or catalogue row must identify the object as `H-319 / 10060544` or `H-1284 / -458`.
 2. Side bridge: source side labels must be object-specific. Do not infer local `.1/.2` from source `A/B`.

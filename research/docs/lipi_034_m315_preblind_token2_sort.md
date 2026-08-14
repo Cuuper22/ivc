@@ -2,6 +2,12 @@
 
 Date: 2026-05-26
 
+This note is the preparation step before a blind test. Preblind means the crops are still labelled and we still know which is which — we are choosing the panel of images, not judging them. Doing that honestly now is what makes the later blind sort worth anything.
+
+Two terms used throughout. A token is one sign slot in the transcribed row, so token 2 is the second sign. A control is a comparison object whose sign we are confident about, included to see whether a reviewer can tell our target apart from things it should differ from.
+
+The note also fixes a real mistake, described in the next section: earlier crops of `M-315` were taken in page order rather than reading order, which is not the same sign.
+
 Question:
 
 ```text
@@ -15,6 +21,8 @@ No clean collapse yet. M-315 stays live as a distinct stroke-bundle candidate, b
 ```
 
 ## Correction
+
+`M-315` reads right to left, marked `R/L` in our records. A crop taken second from the left of the page is therefore not token 2. Both witnesses also have to be handled separately, since the impression is a mirror of the face.
 
 The earlier M-315 files named `m315_*_second_034_region*` are page-order crops. They show the second visible unit on the page, not necessarily token 2 in the local `R/L` transcription.
 
@@ -53,6 +61,8 @@ tmp/m315_second_slot_controls/derived/expanded_first3_context_crops/expanded_fir
 ```
 
 ## Visual Sort
+
+An eyes-open first pass over the panel, one object at a time. Two terms appear below: a frame is a fixed run of surrounding signs with one slot left open for comparison, and an allograph is a different drawn shape for the same underlying sign.
 
 M-315 corrected token-2 candidate:
 
@@ -104,6 +114,8 @@ local code is 869, not 034
 
 ## Decision
 
+What the eyes-open pass settles, and the one thing the later blind sort changed.
+
 M-315 does not currently collapse into the M-32 `003` control or the M-17 `016` control at the coarse source-crop level. The newly acquired M-984 `004` control became the strongest public same-frame stroke-bundle comparator and was therefore included in the strict blind sort.
 
 That strict blind sort changed the status:
@@ -126,6 +138,8 @@ that stroke-bundle candidate equals numeric Lipi 034.
 ```
 
 ## Next Gate
+
+The gate is the test that decides whether this line of work advances. Both the pass condition and the fail condition are written out in advance, so the standard cannot move once results arrive.
 
 The first blind stroke-bundle/count/allograph sort is now executed and recorded in:
 

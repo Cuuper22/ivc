@@ -4,6 +4,10 @@ Date: 2026-05-24
 
 ## Purpose
 
+This note records a go/no-go check. Before spending effort on serious order experiments, we ask a cheap question: does this data have any order structure at all worth attacking?
+
+Terms first. A "probe" is an exploratory pass, not accepted evidence. The "overlap subset" is the set of inscriptions present in both of the project's independent sign catalogs — `lipi`, whose signs are bare numbers written `+###+`, and `mayig`, whose signs are `P###` codes; "clean" means the rows carry no warning flags. A "crosswalk" is a mapping between the two catalogs' codes, so "pre-crosswalk" means no such mapping is assumed here. A "null model" or "baseline" is a scrambled version of the data — reversed or shuffled — that a real signal has to beat. "Held-out" means the row being scored was excluded from what the model learned from.
+
 This probe asks whether the clean overlap subset is ready for first-pass direction/order experiments.
 
 It does not test meaning. It does not test language. It does not test sign equivalence between `P###` and `+###`. It only tests whether the `lipi` numeric sign strings in the clean subset contain enough ordered structure to justify the next controlled baseline.
@@ -16,7 +20,7 @@ data/open_prototype/reports/order_probe_scores.csv
 data/open_prototype/reports/structural_readiness_summary.json
 ```
 
-Source gate:
+Source gate — the checkpoint a row had to pass to be included here:
 
 ```text
 data/open_prototype/reports/mismatch_audit.csv
@@ -149,7 +153,7 @@ That is not a decipherment signal. It is a structural-readiness signal. The resu
 Run `S1.3 Direction/Order Baseline` with:
 
 - Clean 138-row subset as the primary set.
-- The 12 sensitivity-flag count matches as a separate inclusion/exclusion set.
+- The 12 sensitivity-flag count matches — rows flagged because an unknown or compound sign could swing the result — as a separate inclusion/exclusion set.
 - The 29 mismatch rows excluded.
 - Reversed-order, shuffled-order, position-only, and frequency-only baselines.
 - A held-out split that reports results by length bucket.

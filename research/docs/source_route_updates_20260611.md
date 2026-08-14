@@ -2,6 +2,10 @@
 
 Date: 2026-06-11 America/Los_Angeles
 
+This note records one round of hunting for published images of four objects that are currently blocking other work. It exists so that the next person does not repeat the same dead ends.
+
+Terms first. A "route" is the trail from a catalog row to a real, citable source record — a volume, plate, page, accession number, or museum entry. An object is "blocking" when a count or claim elsewhere cannot be finalized until its image is seen. "Strict counts" are the tallies the project will stand behind, which admit only source-verified objects. A "gate" is a recorded checkpoint that either lets a claim through or blocks it. A "bridge" is a verified link between two records — for instance between a figure number and a specific object; a "guard" is a noted lookalike that could produce a false bridge. The "signband" is the strip of an object photograph holding the inscription. A "branch" is a live line of inquiry. CISI is the published Corpus of Indus Seals and Inscriptions; HARP is the Harappa Archaeological Research Project; ASI is the Archaeological Survey of India. H-, M-, and numeric row IDs are catalog identifiers; numbers like `095`, `705`, `032` are Lipi catalog sign codes, not readings.
+
 Status: acquisition-route recheck from a fresh external sweep. No evidence-tier change. No value, phonetics, language identity, function, sign meaning, or translation is accepted. This extends — does not contradict — the 2026-05-31 per-target docs and `campaign_032_002_861_002390x_current_decision_state_20260531.md`.
 
 Environment note: this run's network allowlist passes the approved search proxy but blocks direct artifact download (`Host not in allowlist` on raw arxiv/wikimedia pulls; HTTP 403 on harappa.com and the Wikimedia file page to automated fetch). Routes and metadata were confirmable; binary source images were not fetchable here.

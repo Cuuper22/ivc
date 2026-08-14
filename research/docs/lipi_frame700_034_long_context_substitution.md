@@ -4,9 +4,9 @@ Date: 2026-05-25
 
 ## Question
 
-Does `034` carry a stable longer-side context signal against its matched `033` and `032` controls?
+This note tries to break a tempting idea. FRAME700 is the project's label for short inscription rows built on sign `700`, such as `+700-034+`. Objects carrying such a short row usually also carry a longer row on another side. The tempting idea is that the sign code `034` keeps particular company on that longer side. The question: does `034` carry a stable longer-side context signal against its matched `033` and `032` controls — the closely comparable objects carrying the other two codes?
 
-This attack is deliberately source-blind and adversarial. Inside each matched triad, it shuffles the three longer-side contexts across the `034`, `033`, and `032` labels. If a longer-side token or exact family is really attached to `034` in the current planning layer, it should survive this within-triad substitution pressure.
+This attack is deliberately source-blind and adversarial. Inside each matched triad — a set of three objects, one per sign code — it shuffles the three longer-side contexts across the `034`, `033`, and `032` labels. That shuffle is the null model: a deliberately meaningless version of the data that shows how large an apparent effect chance alone produces. If a longer-side token or exact family is really attached to `034` in the current planning layer, it should survive this within-triad substitution pressure.
 
 ## Outputs
 
@@ -119,13 +119,13 @@ H-351
 H-823
 ```
 
-Only `H-1824` is already in the two-lane core packet. That makes `060` a source-check note for the local contrast lane, not a new claim.
+Only `H-1824` is already in the two-lane core packet. That makes `060` a source-check note for the local contrast lane — a lane being one of the separate evidence tracks the project runs, kept apart so a result in one does not lean on the other — not a new claim.
 
 ## Consequence
 
 This is another useful negative result. The current data do not support saying that `034` has a stable longer-side token or exact-family association.
 
-Future long-context evidence has to pass all four gates:
+Future long-context evidence has to pass all four gates. A gate is a checkpoint the evidence must pass before the next step is allowed:
 
 | Gate | Requirement |
 | --- | --- |
@@ -149,6 +149,8 @@ The live state is narrower:
 ```text
 034 remains a source-targeted distributional residue inside the FRAME700 tablet side-mark system.
 ```
+
+A residue here is a leftover pattern that has survived the controls run so far, without being explained.
 
 The next evidence must come from source images filling the two-lane coding sheet, not from broadening the long-context story.
 

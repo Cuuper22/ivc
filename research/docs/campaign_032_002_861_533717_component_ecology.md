@@ -2,11 +2,15 @@
 
 Date: 2026-05-29
 
+This note asks whether the two-sign ending `533-717` is one thing or two. If `533` and `717` each led their own lives elsewhere in the corpus, the pair would look like a phrase built from parts. If they only ever appear together, it is more likely a single frozen unit. The counting is simple and the answer is lopsided, so the note tells the next pass to stop trying to read the halves separately.
+
 ## Question
 
-Does `533-717` behave like a decomposable phrase with independent component ecology, or like a fixed terminal two-sign unit after `002-861`?
+Does `533-717` behave like a decomposable phrase with independent component ecology — each sign appearing on its own elsewhere, in its own range of contexts — or like a fixed terminal two-sign unit after `002-861`?
 
 ## Result
+
+"Strict" rows are those with complete source strings after deduplication. Counts follow:
 
 - Strict rows scanned: `4011`
 - `533-717` adjacent occurrences: `2`
@@ -16,6 +20,8 @@ Does `533-717` behave like a decomposable phrase with independent component ecol
 - Narrow cuboid-convex no-icon `SEAL:R` `002-861` rows checked: `3`
 
 ## Register Tail Fields
+
+A "register" is a coarse class of object defined by site, type, and shape; the "tail field" is the set of endings that class actually takes.
 
 - Broad no-icon `SEAL:R`: `<END>:3;533 717:2;360 520 919 140:1;603:1`
 - Narrow cuboid-convex no-icon `SEAL:R`: `533 717:2;360 520 919 140:1`

@@ -2,9 +2,11 @@
 
 Date: 2026-05-25
 
+This note is a scout: it goes looking for comparanda — other objects carrying the same inscription, which can be compared against the one in hand. Until now the sign `415` in this frame rested on a single Mohenjo-daro seal, and one object cannot tell you whether a shape is stable or idiosyncratic. The scout finds where public source pages exist for the rest. It sorts nothing and settles nothing; it only builds the input list for the next test.
+
 ## Question
 
-The M-1206/M-37 blind visual probe showed broad pattern recurrence but fine-form uncertainty. Is M-37's local `415` side a one-off source form, or can we build a source-visible fine-form bin?
+The M-1206/M-37 blind visual probe — a comparison run with the crops label-stripped so the reviewer could not know which object was the target — showed broad pattern recurrence but fine-form uncertainty. Is M-37's local `415` side a one-off source form, or can we build a source-visible fine-form bin?
 
 This scout searches exact local rows:
 
@@ -49,7 +51,7 @@ This creates the first real way to test whether the M-37 rake/stemmed-triangle p
 
 ## Quarantine
 
-No inference is accepted from this scout:
+To quarantine is to hold findings aside as unusable evidence. No inference is accepted from this scout:
 
 - No `034 = 415`.
 - No `415` value.

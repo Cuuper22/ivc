@@ -2,6 +2,8 @@
 
 Date: 2026-05-26
 
+This note is a plan, not a finding. Before we can check rows against photographs, we have to know how to reach each photograph. A "source route" is that chain: from a transcribed row to a published page or plate. This probe sorts 25 rows by which kind of route they need, so the acquisition work can proceed in order instead of by guesswork. Signs in this corpus are numeric IDs; `Y` names whichever sign follows `002`; a "lane" is one such analysis track. CISI is the published photographic corpus of Indus inscriptions.
+
 ## Result
 
 The 25-row `032-002-Y` source-function manifest now has a concrete acquisition route split.

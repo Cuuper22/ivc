@@ -4,7 +4,7 @@ Date: 2026-05-24
 
 ## Question
 
-Inside short-side `+700-032+`, `+700-033+`, and `+700-034+` contexts, are `032`, `033`, and `034` interchangeable fillers, or do they occupy different object/context environments?
+This note tests whether three sign codes that appear in the same short row are doing the same job or different ones. FRAME700 is the project's label for short inscription rows built on sign `700`, such as `+700-032+`. If `032`, `033`, and `034` were interchangeable, the objects carrying each of them should look alike; if they are different choices, the objects should differ in kind, size, or context. The question: inside short-side `+700-032+`, `+700-033+`, and `+700-034+` contexts, are `032`, `033`, and `034` interchangeable fillers, or do they occupy different object/context environments?
 
 This is a direct functional-distributional attack. It is not a phonetic reading, sign meaning, number, measure, commodity, or translation.
 
@@ -66,7 +66,7 @@ The script preserves exact short-side order as a feature:
 +700-033+ is not silently merged with +033-700+
 ```
 
-Prediction is leave-one-artifact-out by `cisi`, with a stricter sequence-family leaveout that also removes training rows sharing the same current sequence-family key. Models are simple categorical naive Bayes so the failure modes are inspectable:
+Prediction is leave-one-artifact-out by `cisi` — each object is predicted by a model trained without it. A stricter sequence-family leaveout also removes training rows sharing the same current sequence-family key, so the model cannot succeed by memorizing a near-identical inscription. Models are simple categorical naive Bayes so the failure modes are inspectable:
 
 | Model | Features |
 | --- | --- |
@@ -115,7 +115,7 @@ After removing H-2218 through H-2239:
 | vertical bin | `v_ge_10` | `032` | 30/102 | 29/229 | 2.322515 |
 | context class | `all_short_or_no_longer_text` | `034` | 18/93 | 22/238 | 2.093842 |
 
-This does not establish a three-way grammar. It says `034` still behaves differently enough to stay alive as a broader functional subtype candidate after the H-series is removed. `033` has a repeated `+400-740-176+` longer-text association, but exact long-family prediction collapses under sequence-family leaveout, so that branch is probably copy/family-heavy until source validation says otherwise. `032` remains weaker and may be a control/residual branch rather than a positive function.
+This does not establish a three-way grammar. It says `034` still behaves differently enough to stay alive as a broader functional subtype candidate after the H-series is removed. `033` has a repeated `+400-740-176+` longer-text association, but exact long-family prediction collapses under sequence-family leaveout, so that branch is probably copy/family-heavy until source validation says otherwise. `032` remains weaker and may be a control/residual branch — useful as a comparison case rather than a positive function.
 
 ## Current Read
 
@@ -137,7 +137,7 @@ The best surviving predictor is object dimension bins, so object/form-factor exp
 - `+700-X+` versus `+X-700+` turns out to be only catalog/image direction convention.
 - The `034` dimension/context split vanishes after source-validated side checks.
 - The `033` association with `+400-740-176+` is fully explained by duplicate/copy family.
-- A blocked permutation preserving type, sides, `700` order, and sequence family matches the dimension-model gain.
+- A blocked permutation preserving type, sides, `700` order, and sequence family matches the dimension-model gain. Such a permutation is a null model: a deliberately meaningless version of the data that shows how much apparent skill chance alone produces.
 
 Blocked-null status: executed in [Lipi FRAME700 subtype blocked null](lipi_frame700_subtype_blocked_null.md). The overall dimension-model gain is weak and nearly matched by the harshest relation-preserving null, but the `034` recall residue survives the tested blocked shuffles.
 

@@ -2,6 +2,10 @@
 
 Date: 2026-05-25
 
+This note is an adjudication: a written ruling on what one piece of evidence does and does not establish. The evidence here is a scanned photographic plate from 1931. The question is whether it can settle how many strokes are cut into one small object.
+
+Two short definitions, used throughout. A witness is one independent piece of evidence for a claim. A crosswalk is a checked link between our identifier for an object and someone else's catalogue number for it.
+
 ## Question
 
 Does the higher-resolution public Internet Archive/IGNCA scan of Marshall Vol. III, Plate CXIV, no. 532 validate the `M-2104` target-side `700-034` / `UIII` three-stroke hypothesis?
@@ -46,6 +50,8 @@ This is better than the Harappa `600 x 1000` plate image, but it is still a scan
 
 ## Adjudication
 
+Four independent reads of the same crop. Hypatia and Kuhn are the project's two standing adversarial reviewers.
+
 | Reviewer | Count Read | Verdict | Risk |
 | --- | --- | --- | --- |
 | Local direct inspection | 3-vs-4 ambiguous; four plausible depending on boundary treatment | Source witness upgraded, no count validation | Print/scan blur, cylinder curvature, and absent CISI cross-reference. |
@@ -54,6 +60,8 @@ This is better than the Harappa `600 x 1000` plate image, but it is still a scan
 | Local synthesis | Exact three-stroke `034` fails; three-plus-boundary and four remain live | Best public witness found, no decipherment upgrade | CISI/local crosswalk and source segmentation remain required. |
 
 ## Pass / Fail
+
+Each line is a separate test with a fixed verdict. Note how many pass: the source work went well. Note which fail: every test that would license a reading.
 
 ```text
 best public Marshall Vol. III Plate CXIV route found: pass
@@ -69,7 +77,7 @@ usable as standalone mapping evidence: fail
 
 ## Consequence
 
-The `M-2104` branch is stronger as a source-acquisition target and weaker as an already-clean extraction. We now know exactly where the best public Marshall witness is, and the visual target is real. We also now have a sharper adversarial problem: if the object is five Marshall characters but four local tokens, then either later tokenization merged/excluded something, the crosswalk is incomplete, or the local row is over-normalized.
+A branch is one line of investigation the project is pursuing. The `M-2104` branch is stronger as a source-acquisition target and weaker as an already-clean extraction. We now know exactly where the best public Marshall witness is, and the visual target is real. We also now have a sharper adversarial problem: if the object is five Marshall characters but four local tokens, then either later tokenization merged/excluded something, the crosswalk is incomplete, or the local row is over-normalized.
 
 The next decisive evidence is not another broad web search. It is:
 
@@ -80,6 +88,8 @@ The next decisive evidence is not another broad web search. It is:
 5. Independent full-object segmentation covering broad face, narrow face, direction, and whether the narrow face belongs to the same text sequence.
 
 ## Claim Status
+
+The running tally of what this note adds to the project's accepted set. It stays at zero:
 
 ```text
 accepted translations: 0

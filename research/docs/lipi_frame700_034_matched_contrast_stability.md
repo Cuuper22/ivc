@@ -4,7 +4,7 @@ Date: 2026-05-25
 
 ## Question
 
-Which `034` matched-control triads remain local contrast candidates after requiring both `033` and `032` controls to share object, visual, and context features?
+This note sorts candidate comparison sets by how well matched they actually are. FRAME700 is the project's label for short inscription rows built on sign `700`, such as `+700-034+`; the `034` work asks whether the sign codes `032`, `033`, and `034` are separate choices in the same slot. Testing that needs triads — sets of three objects, one carrying each code, where the two non-`034` objects act as controls, meaning comparison objects that should differ from the target only in the code itself. The question: which `034` matched-control triads remain local contrast candidates after requiring both the `033` and `032` controls to share object, visual, and context features?
 
 This probe separates two things that had been getting blurred:
 
@@ -51,7 +51,7 @@ Grades:
 | `E_object_only` | object core matches only |
 | `F_partial_or_weak` | object core does not fully match |
 
-Copy pressure is inherited from the independent triad audit:
+Copy pressure is the risk that objects in a set are copies of one another, so that counting them separately would double-count one act of writing. It is inherited from the independent triad audit:
 
 ```text
 low repetition: Tier A, target long-set count <= 1, acquisition-family count <= 1
@@ -109,11 +109,11 @@ The first low-copy archive batch remains useful, but it is not locally strict:
 
 Consequence:
 
-This batch tests whether the `034` residue survives away from repeated long-text families. It does not test the cleanest local minimal contrasts.
+This batch tests whether the `034` residue — the leftover pattern that has survived the controls run so far — persists away from repeated long-text families. It does not test the cleanest local minimal contrasts.
 
 ## Strong Local Contrast Rows
 
-The strict/local lane is stronger on object and visual matching, but it is repetition pressured:
+The strict/local lane — a lane being one of the separate evidence tracks the project runs, kept apart so a result in one does not lean on the other — is stronger on object and visual matching, but it is repetition pressured:
 
 | Target | Rank | Grade | Copy pressure | Controls | Long context |
 | --- | ---: | --- | --- | --- | --- |

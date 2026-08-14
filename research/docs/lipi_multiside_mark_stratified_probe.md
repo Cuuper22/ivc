@@ -4,7 +4,7 @@ Date: 2026-05-24
 
 ## Purpose
 
-This probe follows the broad multi-side mark scope test by splitting the dominant queue into two controlled strata:
+This note checks whether an earlier finding is just an accident of what the corpus mostly contains. The earlier scope probe found a queue of short side marks — one- or two-sign rows on objects that carry writing on more than one side — but most of them came from Harappa tablets. Splitting the queue into strata, meaning groups defined so that site and object type are held fixed inside each one, tests whether the pattern is only that concentration. The two strata are:
 
 - Harappa `TAB:B`
 - Harappa `TAB:I`
@@ -111,7 +111,7 @@ The broad short-mark queue survives the first serious type-site split:
 Harappa TAB:B and Harappa TAB:I both contain recurrent clean short-mark rows dominated by tokens 700, 034, and 033, with TAB:I adding a sharper side-index-3 queue around 003 and 156.
 ```
 
-This supports a better E3.2 manual validation target than broad dimension-bin prediction.
+This supports a better manual validation target for E3.2 — the project's identifier for the numerical/metrological work package — than broad dimension-bin prediction.
 
 The result does not support:
 
