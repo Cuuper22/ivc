@@ -6,6 +6,22 @@ This is an organized GitHub export, created on 2026-06-06, of the local workspac
 
 The workspace is a research project that tries to decipher the Indus Valley Civilization script, and every claim in it must be backed by evidence. It is not an app repo, and it does not currently claim fluent translations of anything.
 
+## Latest Research — 2026-09-05
+
+[Paired-face constraints on numerical readings](research/docs/mahadevan_crossface_constraints_20260905.md) adds a frozen public Mahadevan 1977 concordance: 2,906 catalogued objects, 3,573 nonempty inscription lines, and 417 signs. Six published-census checks match exactly. This is an independent transcription system, not an independent archaeological sample.
+
+The strict paired-tablet set contains 85 objects. Four unchanged front inscriptions each occur with cup-plus-two, cup-plus-three, and cup-plus-four long-stroke reverses, covering 34 objects. The resulting conditional counterexamples constrain any interpretation that treats both faces as equivalent scalar amounts under fixed units. An original Vats plate was inspected; exact fine allograph identity remains catalogue-dependent. No lexical or phonetic reading is promoted.
+
+The [frozen evidence packet](research/data/mahadevan_20260905/README.md) includes raw records, normalized rows, exclusion reasons, complete paired-object witnesses, explicit counterexample assumptions, source figures, and hashes. Reproduce the research with Python 3.10+ and no third-party packages:
+
+```sh
+python research/tools/mahadevan_constraint_audit.py \
+  --input research/data/mahadevan_20260905/concordance_documents.json.gz \
+  --output /tmp/ivc-mahadevan-audit
+```
+
+This new catalogue-level study is separate from the accepted-claim ledger below. Scholarly priority has not been established.
+
 ## Current Evidence State
 
 The live replacement run — the current, canonical line of work — has exactly one accepted structural finding and no accepted readings:
@@ -19,7 +35,7 @@ The live replacement run — the current, canonical line of work — has exactly
 | external anchors | 0 |
 | structural findings | 1 |
 
-The single accepted result is the narrow fixed-branch `002-861 / 533-717` terminal-tail finding. It is structural only. It says something about where signs sit in a sequence, not what they mean: no sound, sign meaning, language family, external anchor, or translation is accepted.
+Following the [2026-07-12 replacement checkpoint](research/docs/replacement_run_checkpoint_20260712.md), the accepted observation is strictly descriptive: M-376 and M-391 are source-visible attestations of the same three-position terminal `861 | 533 | 717` string after `002`. The stronger source-independent fixed two-sign `533-717` unit claim was demoted. No sound, sign meaning, language family, external anchor, or translation is accepted.
 
 ## Directory Layout
 
