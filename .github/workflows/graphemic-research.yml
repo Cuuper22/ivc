@@ -10,35 +10,32 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Retrieve public research data and its linked vessel documentation
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            research/tools
+          persist-credentials: false
+      - name: Retrieve narrowly selected original repository images
         run: |
           python - <<'PY'
           from pathlib import Path
-          import urllib.request,urllib.parse,re,json,hashlib,concurrent.futures,html
-          out=Path('/tmp/indus-external-input');out.mkdir()
+          import subprocess,json,hashlib
+          out=Path('/tmp/indus-candidate-witnesses');out.mkdir()
+          names=['H-1014','H-1785','M-1063','M-1384','M-2118','M-2121','M-1892','H-380','H-381','C-94','M-2093','M-2094','M-2095','M-2096']
+          entries=subprocess.check_output(['git','ls-tree','-r','HEAD'],text=True).splitlines()
+          paths=[x.split('\t',1)[1] for x in entries]
+          selected=[p for p in paths if '/seal_images/' in p and any(Path(p).name.startswith(n+'_') for n in names)]
           manifest=[]
-          def get(url,name):
-              try:
-                  req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 (scholarly data research)'})
-                  with urllib.request.urlopen(req,timeout=35) as r:b=r.read(25000001);ct=r.headers.get('Content-Type','')
-                  if len(b)>25000000:raise ValueError('Per-file size limit exceeded')
-                  (out/name).write_bytes(b);manifest.append(dict(url=url,file=name,content_type=ct,bytes=len(b),sha256=hashlib.sha256(b).hexdigest()))
-                  return b
-              except Exception as e:manifest.append(dict(url=url,file=name,error=str(e)));return b''
-          pages=[('dataset','https://www.repository.cam.ac.uk/items/2a3c9cb0-5a81-49ac-afb2-0c567f9024ea'),('article','https://www.repository.cam.ac.uk/items/7a73223e-aa56-49d6-b0b9-cdaf44313b91')]
-          urls=set()
-          for name,url in pages:
-              text=get(url,name+'.html').decode('utf-8',errors='replace')
-              for u in re.findall(r'(?:https://[^\s\"<>]+)?/bitstreams/[a-f0-9-]+/download',html.unescape(text)):
-                  urls.add(urllib.parse.urljoin(url,u))
-          def grab(pair):
-              i,u=pair;get(u,f'resource_{i:02d}.bin')
-          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:list(pool.map(grab,enumerate(sorted(urls)[:16])))
-          get('https://helda.helsinki.fi/server/api/core/bitstreams/5994c972-f2c5-4520-954d-8a9b63d27b25/content','parpola_ivory.pdf')
-          (out/'manifest.json').write_text(json.dumps(manifest,indent=2));print(json.dumps(manifest,indent=2))
+          for p in selected:
+              b=subprocess.check_output(['git','show','HEAD:'+p],timeout=50)
+              name=Path(p).name;(out/name).write_bytes(b)
+              manifest.append({'file':name,'repository_path':p,'sha256':hashlib.sha256(b).hexdigest(),'bytes':len(b)})
+          (out/'manifest.json').write_text(json.dumps(manifest,indent=2))
+          print('Retrieved',len(manifest),'candidate witnesses')
           PY
       - uses: actions/upload-artifact@v4
         with:
-          name: indus-external-input
-          path: /tmp/indus-external-input/
+          name: indus-candidate-witnesses
+          path: /tmp/indus-candidate-witnesses/
           retention-days: 7
