@@ -16,9 +16,9 @@ jobs:
           sparse-checkout: |
             research/tools
           persist-credentials: false
-      - run: python research/tools/acquire_mahadevan_corpus.py
+      - run: python research/tools/acquire_numerical_witnesses.py
       - uses: actions/upload-artifact@v4
         with:
-          name: ivc-mahadevan
-          path: /tmp/ivc-mahadevan/
+          name: ivc-numerical-witnesses
+          path: /tmp/ivc-numerical-witnesses/
           retention-days: 3
