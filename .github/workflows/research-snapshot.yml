@@ -5,11 +5,16 @@ on:
     paths: ['.github/workflows/research-snapshot.yml']
 permissions:
   contents: read
+  actions: write
 jobs:
   snapshot:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
     steps:
+      - name: Stop superseded acquisition
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST repos/Cuuper22/ivc/actions/runs/33954802292/cancel || true
       - uses: actions/checkout@v4
         with:
           filter: blob:none
