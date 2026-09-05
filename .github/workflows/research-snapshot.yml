@@ -4,7 +4,8 @@ on:
   push:
     paths: ['.github/workflows/research-snapshot.yml']
 permissions:
-  contents: read
+  contents: write
+  actions: read
 jobs:
   snapshot:
     runs-on: ubuntu-latest
@@ -14,10 +15,91 @@ jobs:
         with:
           filter: blob:none
           sparse-checkout: |
-            evidence/tmp/032_002_861_603_slot_source_normalization
-          persist-credentials: false
-      - uses: actions/upload-artifact@v4
+            research/tools
+            research/docs/mahadevan_crossface_constraints_20260905.md
+            research/data/mahadevan_20260905
+          sparse-checkout-cone-mode: false
+      - uses: actions/download-artifact@v4
+        with:
+          name: ivc-mahadevan
+          run-id: 33954644518
+          github-token: ${{ github.token }}
+          path: /tmp/ivc-mahadevan
+      - uses: actions/download-artifact@v4
         with:
           name: ivc-vats-original
-          path: evidence/tmp/032_002_861_603_slot_source_normalization/vats_excavations_at_harappa_vol2_plates.pdf
-          retention-days: 3
+          run-id: 33955536249
+          github-token: ${{ github.token }}
+          path: /tmp/ivc-vats-original
+      - uses: actions/download-artifact@v4
+        with:
+          name: ivc-numerical-witnesses
+          run-id: 33954933202
+          github-token: ${{ github.token }}
+          path: /tmp/ivc-numerical-witnesses
+      - uses: actions/download-artifact@v4
+        with:
+          name: ivc-source-packet
+          run-id: 33955057736
+          github-token: ${{ github.token }}
+          path: /tmp/ivc-source-packet
+      - name: Recompute the research from the frozen input
+        run: |
+          python research/tools/mahadevan_constraint_audit.py --input /tmp/ivc-mahadevan/concordance_documents.json --output research/data/mahadevan_20260905
+          cp /tmp/ivc-mahadevan/acquisition_manifest.json research/data/mahadevan_20260905/
+          python -m pip install --quiet pymupdf==1.26.7
+      - name: Preserve limited figure witnesses and explicit provenance
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import collections,hashlib,json,shutil,fitz
+          data=Path('research/data/mahadevan_20260905')
+          out=data/'source_witnesses';out.mkdir(exist_ok=True)
+          pdf=next(Path('/tmp/ivc-vats-original').glob('*.pdf'))
+          source_sha=hashlib.sha256(pdf.read_bytes()).hexdigest()
+          doc=fitz.open(pdf)
+          clip=fitz.Rect(395/3,1640/3,935/3,1895/3)
+          doc[201].get_pixmap(matrix=fitz.Matrix(6,6),clip=clip).save(out/'vats_553_555.png')
+          manifest=[{'file':'vats_553_555.png','source_repository_path':'evidence/tmp/032_002_861_603_slot_source_normalization/vats_excavations_at_harappa_vol2_plates.pdf','source_sha256':source_sha,'pdf_page_index':201,'printed_plate':'XCVII','objects':[553,554,555],'clip_points':list(clip),'render_scale':6,'renderer':'PyMuPDF '+fitz.VersionBind,'limitation':'Original low-resolution scan; enlargement does not establish fine allograph identity.'}]
+          glyphdir=Path('/tmp/ivc-numerical-witnesses')
+          gm=json.loads((glyphdir/'glyph_manifest.json').read_text())
+          wanted={f'Mahadevan_{i:03d}.png' for i in [86,87,89,95,96,103,328,342,403]}
+          for x in gm:
+              if x.get('file') in wanted:
+                  if 'error' in x:raise RuntimeError(x)
+                  shutil.copy2(glyphdir/x['file'],out/x['file']);manifest.append(x)
+          source=Path('/tmp/ivc-source-packet')
+          for x in json.loads((source/'manifest.json').read_text()):
+              if x['file'] in ['H-306_A.jpg','H-306_B.jpg']:
+                  shutil.copy2(source/x['file'],out/x['file']);manifest.append(x)
+          for x in manifest:x['sha256']=hashlib.sha256((out/x['file']).read_bytes()).hexdigest()
+          (out/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
+          families=json.loads((data/'front_families.json').read_text())
+          pairs=sum(len(f['objects_by_long_stroke_count']) for f in families)
+          best=sum(max(map(len,f['objects_by_long_stroke_count'].values())) for f in families)
+          count=sum(f['object_count'] for f in families)
+          bound={'status':'exact_finite_data_bound_not_heldout_accuracy','distinct_fronts':len(families),'distinct_front_reverse_pairs':pairs,'maximum_pairs_fit_by_deterministic_front_only_lookup':len(families),'catalogued_objects':count,'maximum_objects_fit_by_deterministic_front_only_lookup':best,'minimum_object_exceptions':count-best}
+          assert (pairs,best,count)==(51,63,85)
+          (data/'deterministic_lookup_bound.json').write_text(json.dumps(bound,indent=2)+'\n')
+          hashes={str(p.relative_to(data)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(data.rglob('*')) if p.is_file() and p.name!='snapshot.sha256.json'}
+          (data/'snapshot.sha256.json').write_text(json.dumps(hashes,indent=2)+'\n')
+          print(json.dumps(bound,indent=2))
+          PY
+      - name: Commit the frozen evidence packet
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/data/mahadevan_20260905
+          if ! git diff --cached --quiet; then
+            git commit -m 'research: preserve complete Mahadevan snapshot and paired-face constraint certificates'
+            git push origin HEAD:main
+          fi
+          git rev-parse HEAD
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ivc-research-result-20260905
+          path: |
+            research/data/mahadevan_20260905/
+            research/docs/mahadevan_crossface_constraints_20260905.md
+            research/tools/mahadevan_constraint_audit.py
+          retention-days: 30
