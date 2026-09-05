@@ -5,25 +5,20 @@ on:
     paths: ['.github/workflows/research-snapshot.yml']
 permissions:
   contents: read
-  actions: write
 jobs:
   snapshot:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Stop superseded acquisition
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh api -X POST repos/Cuuper22/ivc/actions/runs/33954802292/cancel || true
       - uses: actions/checkout@v4
         with:
           filter: blob:none
           sparse-checkout: |
             research/tools
           persist-credentials: false
-      - run: python research/tools/acquire_numerical_witnesses.py
+      - run: python research/tools/acquire_numerical_source_packet.py
       - uses: actions/upload-artifact@v4
         with:
-          name: ivc-numerical-witnesses
-          path: /tmp/ivc-numerical-witnesses/
+          name: ivc-source-packet
+          path: /tmp/ivc-source-packet/
           retention-days: 3
