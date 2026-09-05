@@ -1,0 +1,35 @@
+name: Graphemic research input
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/graphemic-research.yml']
+permissions:
+  contents: read
+jobs:
+  input:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Retrieve published Mahadevan sign illustrations
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import urllib.request,concurrent.futures,hashlib,json
+          out=Path('/tmp/indus-signs');out.mkdir()
+          def get(i):
+              url=f'https://indusscript.in/assets/images/{i}.png';name=f'{i:03d}.png'
+              try:
+                  with urllib.request.urlopen(url,timeout=20) as f:b=f.read(2000000)
+                  if not b.startswith(b'\x89PNG'):raise ValueError('Not PNG')
+                  (out/name).write_bytes(b)
+                  return dict(sign=i,url=url,file=name,sha256=hashlib.sha256(b).hexdigest())
+              except Exception as e:return dict(sign=i,url=url,error=str(e))
+          with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:manifest=list(pool.map(get,range(1,418)))
+          (out/'manifest.json').write_text(json.dumps(manifest,indent=2))
+          print('Retrieved',sum('error' not in r for r in manifest),'of 417 published sign forms')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: indus-graphemic-input
+          path: /tmp/indus-signs/
+          retention-days: 7
