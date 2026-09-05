@@ -1,0 +1,44 @@
+name: Research snapshot
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/research-snapshot.yml']
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            db
+            research
+            embeddings
+            slm
+          persist-credentials: false
+      - name: Package research text and corpus
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json, zipfile, hashlib
+          roots = ['db','research','embeddings','slm']
+          extensions = {'.md','.txt','.csv','.tsv','.json','.jsonl','.py','.sql','.sqlite','.mjs','.toml','.yml'}
+          manifest = []
+          with zipfile.ZipFile('/tmp/ivc-research-snapshot.zip','w',zipfile.ZIP_DEFLATED) as z:
+              for root in roots:
+                  for p in sorted(Path(root).rglob('*')):
+                      if p.is_file() and p.suffix in extensions and p.stat().st_size < 12000000:
+                          b = p.read_bytes()
+                          z.writestr(str(p), b)
+                          manifest.append({'path':str(p),'size':len(b),'sha256':hashlib.sha256(b).hexdigest()})
+              z.writestr('SNAPSHOT_MANIFEST.json',json.dumps(manifest,indent=2))
+          print('Packaged',len(manifest),'files;',Path('/tmp/ivc-research-snapshot.zip').stat().st_size,'compressed bytes')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ivc-research-snapshot
+          path: /tmp/ivc-research-snapshot.zip
+          retention-days: 3
