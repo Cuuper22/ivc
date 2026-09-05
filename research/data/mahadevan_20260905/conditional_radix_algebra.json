@@ -1,0 +1,39 @@
+{
+  "status": "conditional_arithmetic_not_a_decipherment",
+  "prior_hypothesis": "Andreas Fuls (2020), numerical-value proposal",
+  "equations": [
+    "v=2*S-L",
+    "v*L+1=7*S+5"
+  ],
+  "derivation": "S*(2L-7)=L^2+4. Positive S requires d=2L-7>0. Then 4S=d+14+65/d, hence d divides 65.",
+  "all_positive_integer_solutions": [
+    {
+      "L": 4,
+      "S": 20,
+      "v": 36
+    },
+    {
+      "L": 6,
+      "S": 8,
+      "v": 10
+    },
+    {
+      "L": 10,
+      "S": 8,
+      "v": 6
+    },
+    {
+      "L": 36,
+      "S": 20,
+      "v": 4
+    }
+  ],
+  "with_assumed_bangle_bound_15_le_7_plus_L_le_20": [
+    {
+      "L": 10,
+      "S": 8,
+      "v": 6
+    }
+  ],
+  "evidence_warning": "The face-equality, additive, place-value, and bangle-count assumptions are not proved by this algebra."
+}

@@ -1,0 +1,35 @@
+{
+  "input_sha256": "6a0c597986783c5da8fbcb0afc3268a2c6a9f042a9b81746ebc4f89158efbd01",
+  "corpus": "Public indusscript.in / RMRL Mahadevan 1977 concordance",
+  "snapshot_date_utc": "2026-09-05",
+  "records": 3916,
+  "empty_surface_records": 343,
+  "published_census": {
+    "catalogued_objects": 2906,
+    "nonempty_lines": 3573,
+    "legible_sign_occurrences_including_doubtful": 13372,
+    "sign_inventory_including_doubtful": 417,
+    "sign_342_frequency_including_doubtful": 1395,
+    "sign_99_frequency_including_doubtful": 649
+  },
+  "all_six_published_census_checks_pass": true,
+  "strict_rows": 2575,
+  "strict_unique_strings": 1659,
+  "strict_unique_string_tokens": 7409,
+  "strict_sign_inventory": 390,
+  "exclusion_reason_counts_overlapping": {
+    "lost_or_illegible_passage": 712,
+    "not_all_undoubted_1_to_417": 982,
+    "position_or_legible_count_mismatch": 712,
+    "doubtful_sign": 437,
+    "direction_not_in_strict_set": 517,
+    "no_text": 343
+  },
+  "strict_two_face_cup_long_stroke_objects": 85,
+  "distinct_front_strings": 39,
+  "front_strings_with_variable_reverse_count": 8,
+  "front_strings_observed_at_all_of_2_3_4": 4,
+  "core_grid_object_count": 34,
+  "independence_warning": "Independent transcription, not an independent archaeological sample.",
+  "novelty_warning": "New to this repository; scholarly priority is not established."
+}
