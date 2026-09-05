@@ -14,35 +14,11 @@ jobs:
         with:
           filter: blob:none
           sparse-checkout: |
-            research/data/sign_crosswalk
+            research/tools
           persist-credentials: false
-      - name: Collect numerical-source inventory
-        run: |
-          python - <<'PY'
-          import subprocess, pathlib, json, urllib.request, zipfile, hashlib
-          out=pathlib.Path('/tmp/ivc-numerical-sources');out.mkdir()
-          tree=subprocess.check_output(['git','ls-tree','-r','-l','HEAD'],text=True)
-          (out/'repository_tree.txt').write_text(tree)
-          log=[]
-          urls={
-          'fuls_figure16.png':'https://www.researchgate.net/profile/Andreas-Fuls/publication/361812318/figure/fig9/AS:1175133871980555@1657185156416/Numerical-relationships-between-Sign-700-and-Sign-840-The-bases-of-long-and-stacked.png',
-          'fuls_figure18.png':'https://www.researchgate.net/profile/Andreas-Fuls/publication/361812318/figure/fig12/AS:1175133871964179@1657185156566/Positional-notation-on-a-four-sided-seal-with-bases-8-and-10-of-counted-items-Side-1.png',
-          'fuls_article.html':'https://www.researchgate.net/publication/361812318_Ancient_Writing_and_Modern_Technologies_-_Structural_Analysis_of_Numerical_Indus_Inscriptions'}
-          for name,url in urls.items():
-              try:
-                  req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'})
-                  with urllib.request.urlopen(req,timeout=40) as f:
-                      b=f.read();ctype=f.headers.get('Content-Type')
-                  (out/name).write_bytes(b)
-                  log.append({'name':name,'url':url,'bytes':len(b),'content_type':ctype,'sha256':hashlib.sha256(b).hexdigest()})
-              except Exception as e:log.append({'name':name,'url':url,'error':str(e)})
-          (out/'acquisition.json').write_text(json.dumps(log,indent=2))
-          print(json.dumps(log,indent=2))
-          with zipfile.ZipFile('/tmp/ivc-numerical-sources.zip','w',zipfile.ZIP_DEFLATED) as z:
-              for p in out.iterdir():z.write(p,p.name)
-          PY
+      - run: python research/tools/acquire_indusscript_public.py
       - uses: actions/upload-artifact@v4
         with:
-          name: ivc-numerical-sources
-          path: /tmp/ivc-numerical-sources.zip
+          name: ivc-public-corpus
+          path: /tmp/ivc-public-corpus/
           retention-days: 3
