@@ -16,9 +16,9 @@ jobs:
           sparse-checkout: |
             research/tools
           persist-credentials: false
-      - run: python research/tools/acquire_indusscript_public.py
+      - run: python research/tools/acquire_mahadevan_corpus.py
       - uses: actions/upload-artifact@v4
         with:
-          name: ivc-public-corpus
-          path: /tmp/ivc-public-corpus/
+          name: ivc-mahadevan
+          path: /tmp/ivc-mahadevan/
           retention-days: 3
