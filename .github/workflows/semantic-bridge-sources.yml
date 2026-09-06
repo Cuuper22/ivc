@@ -1,0 +1,38 @@
+name: Semantic bridge source acquisition
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/semantic-bridge-sources.yml']
+permissions:
+  contents: read
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Retrieve published glyphs and copper-tablet study
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import concurrent.futures,hashlib,json,subprocess
+          out=Path('/tmp/ivc-semantic-sources');out.mkdir()
+          resources=[(f'glyph_{i:03d}.png',f'https://indusscript.in/assets/images/{i}.png') for i in range(1,418)]
+          resources.append(('Parpola_2008_copper.pdf','https://tuhat.helsinki.fi/ws/portalfiles/portal/127257447/Parpola_A_2008._Copper_tablets_from_Mohenjo_daro._ECL_During_Caspers_Vol.pdf'))
+          def get(item):
+              name,url=item;p=out/name
+              try:
+                  subprocess.run(['curl','-fLsS','--max-time','18','--retry','0',url,'-o',str(p)],check=True,capture_output=True,timeout=22)
+                  b=p.read_bytes()
+                  if not b.startswith(b'\x89PNG' if name.endswith('.png') else b'%PDF'):raise ValueError('Unexpected content format')
+                  return {'file':name,'url':url,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+              except Exception as e:
+                  p.unlink(missing_ok=True);return {'file':name,'url':url,'error':str(e)}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:records=list(ex.map(get,resources))
+          (out/'manifest.json').write_text(json.dumps(records,indent=2))
+          print('Downloaded',sum('error' not in x for x in records),'of',len(records))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ivc-semantic-sources
+          path: /tmp/ivc-semantic-sources/
+          retention-days: 7
