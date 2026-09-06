@@ -1,0 +1,48 @@
+name: Paired-script catalogue acquisition
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/paired-script-books.yml']
+permissions:
+  contents: read
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - run: python -m pip install --quiet pymupdf
+      - name: Retrieve publicly downloadable source catalogues
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import urllib.request,urllib.parse,json,hashlib,subprocess,concurrent.futures,fitz
+          out=Path('/tmp/ivc-paired-script-books');out.mkdir()
+          ids=['tdl.062969-inscribed-potsherds-of-tamil-nadu-graffiti-and-tamili-vol-1','tdl.062968-inscribed-potsherds-of-tamil-nadu-graffiti-and-tamili-vol-2']
+          def acquire(pair):
+              number,item=pair;log=[]
+              try:
+                  with urllib.request.urlopen('https://archive.org/metadata/'+item,timeout=30) as f:m=json.load(f)
+                  (out/f'volume_{number}_metadata.json').write_text(json.dumps(m,ensure_ascii=False,indent=2))
+                  files=[x for x in m.get('files',[]) if x['name'].lower().endswith('.pdf') and x.get('source')=='original' and not x.get('private')]
+                  if len(files)!=1:raise RuntimeError('Expected one publicly listed original PDF: '+str(files))
+                  x=files[0]
+                  if int(x.get('size',0))>300000000:raise RuntimeError('Source exceeds bounded size')
+                  url='https://archive.org/download/'+item+'/'+urllib.parse.quote(x['name'])
+                  p=out/f'volume_{number}.pdf'
+                  subprocess.run(['curl','-fLsS','--max-time','210',url,'-o',str(p)],check=True,capture_output=True,timeout=220)
+                  b=p.read_bytes()
+                  if not b.startswith(b'%PDF'):raise ValueError('Not a PDF')
+                  doc=fitz.open(p)
+                  texts=[{'page_index':i,'text':page.get_text()} for i,page in enumerate(doc)]
+                  (out/f'volume_{number}_pages.json').write_text(json.dumps(texts,ensure_ascii=False))
+                  log.append({'item':item,'url':url,'file':p.name,'source_name':x['name'],'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'pages':len(doc),'extracted_text_chars':sum(len(x['text']) for x in texts)})
+              except Exception as e:log.append({'item':item,'error':str(e)})
+              return log
+          with concurrent.futures.ThreadPoolExecutor(max_workers=2) as ex:logs=sum(ex.map(acquire,enumerate(ids,1)),[])
+          (out/'manifest.json').write_text(json.dumps(logs,indent=2));print(json.dumps(logs,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ivc-paired-script-books
+          path: /tmp/ivc-paired-script-books/
+          retention-days: 7
