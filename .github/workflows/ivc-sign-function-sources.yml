@@ -1,0 +1,41 @@
+name: Sign-function research sources
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/ivc-sign-function-sources.yml']
+permissions:
+  contents: read
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Retrieve public scholarly figures and publisher glyphs
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from concurrent.futures import ThreadPoolExecutor
+          import urllib.request,hashlib,json,time
+          out=Path('/tmp/ivc-sign-function-sources');out.mkdir()
+          items=[('sign_design.pdf','https://www.harappa.com/sites/default/files/pdf/Indus-sign-design.pdf'),('copper_parpola_2008.pdf','https://tuhat.helsinki.fi/ws/portalfiles/portal/127257447/Parpola_A_2008._Copper_tablets_from_Mohenjo_daro._ECL_During_Caspers_Vol.pdf')]
+          items += [(f'glyphs/Mahadevan_{i:03d}.png',f'https://indusscript.in/assets/images/{i}.png') for i in range(1,418)]
+          def fetch(item):
+              name,url=item;p=out/name;p.parent.mkdir(exist_ok=True)
+              try:
+                  req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 (public scholarly research)'})
+                  with urllib.request.urlopen(req,timeout=25) as f:b=f.read(12000000);ctype=f.headers.get('Content-Type')
+                  if name.endswith('.png') and not b.startswith(b'\x89PNG'):raise ValueError('Expected PNG')
+                  if name.endswith('.pdf') and not b.startswith(b'%PDF'):raise ValueError('Expected PDF')
+                  p.write_bytes(b);time.sleep(.08)
+                  return {'file':name,'url':url,'bytes':len(b),'content_type':ctype,'sha256':hashlib.sha256(b).hexdigest()}
+              except Exception as e:return {'file':name,'url':url,'error':str(e)}
+          with ThreadPoolExecutor(max_workers=5) as ex:manifest=list(ex.map(fetch,items))
+          (out/'manifest.json').write_text(json.dumps(manifest,indent=2))
+          print('Downloaded',sum('sha256' in x for x in manifest),'of',len(items))
+          print([x for x in manifest if 'error' in x])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ivc-sign-function-sources
+          path: /tmp/ivc-sign-function-sources/
+          retention-days: 7
