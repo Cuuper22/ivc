@@ -1,38 +1,64 @@
-name: Semantic bridge source acquisition
+name: Compositional reading search
 on:
   workflow_dispatch:
   push:
     paths: ['.github/workflows/semantic-bridge-sources.yml']
 permissions:
-  contents: read
+  contents: write
+  actions: read
 jobs:
-  acquire:
+  search:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 4
     steps:
-      - name: Retrieve published glyphs and copper-tablet study
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            /research/tools/
+            /research/data/mahadevan_20260905/
+            /research/data/semantic_search_20260906/
+            /research/docs/semantic_reading_search_20260906.md
+          sparse-checkout-cone-mode: false
+      - uses: actions/download-artifact@v4
+        with:
+          name: ivc-semantic-sources
+          run-id: 34016513429
+          github-token: ${{ github.token }}
+          path: /tmp/ivc-semantic-sources
+      - name: Run reading-mechanism searches
+        run: |
+          python research/tools/semantic_transducer_search.py \
+            --input research/data/mahadevan_20260905/concordance_documents.json.gz \
+            --output research/data/semantic_search_20260906
+      - name: Preserve source and execution provenance
         run: |
           python - <<'PY'
           from pathlib import Path
-          import concurrent.futures,hashlib,json,subprocess
-          out=Path('/tmp/ivc-semantic-sources');out.mkdir()
-          resources=[(f'glyph_{i:03d}.png',f'https://indusscript.in/assets/images/{i}.png') for i in range(1,418)]
-          resources.append(('Parpola_2008_copper.pdf','https://tuhat.helsinki.fi/ws/portalfiles/portal/127257447/Parpola_A_2008._Copper_tablets_from_Mohenjo_daro._ECL_During_Caspers_Vol.pdf'))
-          def get(item):
-              name,url=item;p=out/name
-              try:
-                  subprocess.run(['curl','-fLsS','--max-time','18','--retry','0',url,'-o',str(p)],check=True,capture_output=True,timeout=22)
-                  b=p.read_bytes()
-                  if not b.startswith(b'\x89PNG' if name.endswith('.png') else b'%PDF'):raise ValueError('Unexpected content format')
-                  return {'file':name,'url':url,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
-              except Exception as e:
-                  p.unlink(missing_ok=True);return {'file':name,'url':url,'error':str(e)}
-          with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:records=list(ex.map(get,resources))
-          (out/'manifest.json').write_text(json.dumps(records,indent=2))
-          print('Downloaded',sum('error' not in x for x in records),'of',len(records))
+          import hashlib,json,platform,shutil,subprocess
+          out=Path('research/data/semantic_search_20260906')
+          shutil.copy2('/tmp/ivc-semantic-sources/manifest.json',out/'source_acquisition.json')
+          script=Path('research/tools/semantic_transducer_search.py')
+          meta={'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),'python':platform.python_version(),'script_sha256':hashlib.sha256(script.read_bytes()).hexdigest(),'status':'unfinished_reading_search_no_decipherment','source_materials':'Public glyph illustrations and Parpola 2008; acquisition URLs/hashes retained, binaries not duplicated.'}
+          (out/'execution.json').write_text(json.dumps(meta,indent=2)+'\n')
+          hashes={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(out.iterdir()) if p.is_file() and p.name!='files.sha256.json'}
+          (out/'files.sha256.json').write_text(json.dumps(hashes,indent=2)+'\n')
           PY
+      - name: Save research outputs on main
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/data/semantic_search_20260906
+          if ! git diff --cached --quiet; then
+            git commit -m 'research: preserve compositional-search candidates and unresolved results'
+            git push origin HEAD:main
+          fi
+          git rev-parse HEAD
       - uses: actions/upload-artifact@v4
         with:
-          name: ivc-semantic-sources
-          path: /tmp/ivc-semantic-sources/
-          retention-days: 7
+          name: ivc-semantic-search-20260906
+          path: |
+            research/data/semantic_search_20260906/
+            research/tools/semantic_transducer_search.py
+            research/docs/semantic_reading_search_20260906.md
+          retention-days: 30
