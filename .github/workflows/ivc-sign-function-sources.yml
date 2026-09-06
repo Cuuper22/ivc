@@ -10,22 +10,22 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Download publisher open-access research volume
+      - name: Download public research slides
         run: |
           python - <<'PY'
           import urllib.request, pathlib, hashlib, json
-          out=pathlib.Path('/tmp/ivc-susa-edition');out.mkdir()
-          url='https://www.orientlab.net/download/588/?tmstv=1785922356'
+          out=pathlib.Path('/tmp/ivc-contact-slides');out.mkdir()
+          url='https://www.antichecivilta.it/wp-content/uploads/2023/11/PERCHE_STUDIARE_LA_TRADIZIONE_DELLA_VALL.pdf'
           req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'})
           with urllib.request.urlopen(req,timeout=90) as response:
               data=response.read()
-          if not data.startswith(b'%PDF'):raise ValueError('The publisher did not return a PDF')
-          p=out/'linear_elamite_susa_2026.pdf';p.write_bytes(data)
+          if not data.startswith(b'%PDF'):raise ValueError('Expected a PDF')
+          p=out/'frenez_2023_slides.pdf';p.write_bytes(data)
           (out/'manifest.json').write_text(json.dumps({'url':url,'file':p.name,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()},indent=2))
           print('Retrieved',len(data),'bytes')
           PY
       - uses: actions/upload-artifact@v4
         with:
-          name: ivc-susa-edition
-          path: /tmp/ivc-susa-edition/
+          name: ivc-contact-slides
+          path: /tmp/ivc-contact-slides/
           retention-days: 7
