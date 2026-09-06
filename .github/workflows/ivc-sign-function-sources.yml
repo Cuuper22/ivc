@@ -10,22 +10,26 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Download public research slides
-        run: |
-          python - <<'PY'
-          import urllib.request, pathlib, hashlib, json
-          out=pathlib.Path('/tmp/ivc-contact-slides');out.mkdir()
-          url='https://www.antichecivilta.it/wp-content/uploads/2023/11/PERCHE_STUDIARE_LA_TRADIZIONE_DELLA_VALL.pdf'
-          req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'})
-          with urllib.request.urlopen(req,timeout=90) as response:
-              data=response.read()
-          if not data.startswith(b'%PDF'):raise ValueError('Expected a PDF')
-          p=out/'frenez_2023_slides.pdf';p.write_bytes(data)
-          (out/'manifest.json').write_text(json.dumps({'url':url,'file':p.name,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()},indent=2))
-          print('Retrieved',len(data),'bytes')
-          PY
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/H-148_a.jpg
+            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/H-243_A.jpg
+            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/H-243_B.jpg
+            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/H-888_A.jpg
+            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/H-945_A.jpg
+            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/K-33_a.jpg
+            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-1086_a.jpg
+            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-1086_a_bis.jpg
+            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-1148_A_bis.jpg
+            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-1148_A_ter.jpg
+            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-1148_a.jpg
+            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-729_a.jpg
       - uses: actions/upload-artifact@v4
         with:
-          name: ivc-contact-slides
-          path: /tmp/ivc-contact-slides/
+          name: ivc-modifier-photographs
+          path: evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/
           retention-days: 7
