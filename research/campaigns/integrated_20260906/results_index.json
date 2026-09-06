@@ -1,0 +1,1034 @@
+{
+  "route_summaries": {
+    "route_a": {
+      "input_sha256": "6a0c597986783c5da8fbcb0afc3268a2c6a9f042a9b81746ebc4f89158efbd01",
+      "namespace": "Mahadevan1977",
+      "strict_lines": 2575,
+      "unique_texts": 1659,
+      "structured_search": {
+        "max_residual_edits": 1,
+        "min_exact_context_anchors": 2,
+        "anchor_rule": "prefix and suffix aligned independently around the graphical base; no cross-base reordering"
+      },
+      "fish211": {
+        "alignments": 11,
+        "distinct_text_pairs": 11,
+        "compact_texts": 4,
+        "expanded_texts": 10,
+        "bases": [
+          59,
+          65,
+          72
+        ],
+        "residual_edits": {
+          "1": 10,
+          "0": 1
+        },
+        "placements": {
+          "adjacent_after": 10,
+          "nonadjacent_after": 1
+        },
+        "source_objects": [
+          "1019",
+          "1235",
+          "1551",
+          "2504",
+          "2523",
+          "2590",
+          "4056",
+          "4112",
+          "4232",
+          "6206",
+          "6211",
+          "6217",
+          "7247",
+          "7249",
+          "7251",
+          "7255",
+          "7267",
+          "7269",
+          "8025"
+        ]
+      },
+      "fish_categorical_no_extra": {
+        "alignments": 4,
+        "distinct_text_pairs": 4,
+        "compact_texts": 4,
+        "expanded_texts": 4,
+        "bases": [
+          59,
+          65
+        ],
+        "residual_edits": {
+          "1": 4
+        },
+        "placements": {
+          "no_extra_unit": 4
+        },
+        "source_objects": [
+          "1125",
+          "1531",
+          "1551",
+          "4117",
+          "4578",
+          "6211",
+          "7249",
+          "7251",
+          "7255",
+          "7267",
+          "7269",
+          "9021"
+        ]
+      },
+      "all_family211": {
+        "alignments": 15,
+        "distinct_text_pairs": 15,
+        "compact_texts": 6,
+        "expanded_texts": 11,
+        "bases": [
+          59,
+          65,
+          72
+        ],
+        "residual_edits": {
+          "1": 14,
+          "0": 1
+        },
+        "placements": {
+          "adjacent_after": 12,
+          "nonadjacent_after": 3
+        },
+        "source_objects": [
+          "1019",
+          "1235",
+          "1551",
+          "1554",
+          "2504",
+          "2523",
+          "2590",
+          "4056",
+          "4112",
+          "4117",
+          "4232",
+          "6206",
+          "6211",
+          "6217",
+          "7247",
+          "7249",
+          "7251",
+          "7255",
+          "7267",
+          "7269",
+          "8025"
+        ]
+      },
+      "partial_marked_occurrences": 9,
+      "partial_occurrences_with_exact_observed_expansion": 0,
+      "fish_exclusivity_counterexamples": 1,
+      "literal_structured_matches": 0,
+      "literal_matching_composites": [],
+      "roof_on_marked_fish_matches": 3,
+      "boundary_prediction_total_bits": {
+        "bare_base": 323.09808980627895,
+        "base_then211": 135.17116167959824,
+        "all211": 146.11091795515173,
+        "marked_other_base": 145.21315127552086,
+        "terminal_category": 141.52363779509446,
+        "marked_objectclass": 168.1491971769737,
+        "marked_catalogue_prefix": 157.38236567860466
+      },
+      "spelling_search_fold_winners": {
+        "59": "12",
+        "65": "12",
+        "67": "388",
+        "70": "12",
+        "72": "12"
+      },
+      "spelling_search_exact_form_reach": 0,
+      "complete_roof_tick_lattices": 1,
+      "composed_normal_form_classes": {
+        "fish211": 6,
+        "roof87": 4,
+        "roof102": 3,
+        "fish211_roof87": 10,
+        "fish211_roof102": 8
+      },
+      "status": "competing writing-operation hypotheses; no sign meanings or sounds established"
+    },
+    "route_b": {
+      "faces": 3788,
+      "strict_faces": 2461,
+      "strict_multiline_faces": 70,
+      "same_object_face_pairs": 1023,
+      "short_long_object_pairs": 251,
+      "distinct_short_long_pairs": 170,
+      "same_complete_text_different_raw_motif_groups": 51,
+      "copper_objects": 135,
+      "copper_text_picture_edges": 98,
+      "matched_component_contrast_types": 429,
+      "358_defining_complete_copper_objects": 18,
+      "358_non_copper_picture_bearing_constructions": 6,
+      "358_complete_block_extension_targets": 1,
+      "source_sha256": "6a0c597986783c5da8fbcb0afc3268a2c6a9f042a9b81746ebc4f89158efbd01",
+      "motif_scores": {
+        "metadata": {
+          "observed_target_types": 1081,
+          "correct": 740,
+          "log_loss_bits": 2186.957884925702,
+          "mean_log_loss_bits": 2.02308777513941,
+          "nominal_parameters_per_fold": [
+            896,
+            896,
+            896,
+            896,
+            896
+          ],
+          "parameter_penalty_bits_per_fold": [
+            4515.011561865123,
+            4515.011561865123,
+            4515.011561865123,
+            4515.011561865123,
+            4515.011561865123
+          ],
+          "penalty_status": "BIC-style nominal upper complexity accounting; shrinkage effective dimension not claimed"
+        },
+        "components": {
+          "observed_target_types": 1081,
+          "correct": 718,
+          "log_loss_bits": 2498.462364430463,
+          "mean_log_loss_bits": 2.3112510309254977,
+          "nominal_parameters_per_fold": [
+            223200,
+            223200,
+            223200,
+            223200,
+            223200
+          ],
+          "parameter_penalty_bits_per_fold": [
+            1124721.630143187,
+            1124721.630143187,
+            1124721.630143187,
+            1124721.630143187,
+            1124721.630143187
+          ],
+          "penalty_status": "BIC-style nominal upper complexity accounting; shrinkage effective dimension not claimed"
+        },
+        "combined": {
+          "observed_target_types": 1081,
+          "correct": 747,
+          "log_loss_bits": 2219.4624260802702,
+          "mean_log_loss_bits": 2.0531567308790657,
+          "nominal_parameters_per_fold": [
+            224032,
+            224032,
+            224032,
+            224032,
+            224032
+          ],
+          "parameter_penalty_bits_per_fold": [
+            1128914.1408792045,
+            1128914.1408792045,
+            1128914.1408792045,
+            1128914.1408792045,
+            1128914.1408792045
+          ],
+          "penalty_status": "BIC-style nominal upper complexity accounting; shrinkage effective dimension not claimed"
+        }
+      },
+      "component_candidates_with_three_expression_types": 989,
+      "lexical_anchors_established": 0,
+      "phonetic_anchors_established": 0,
+      "prior_exposure": "Retrospective constrained search; source corpus and defining examples already exposed.",
+      "published_copper_type_nodes": 46,
+      "published_copper_relation_edges": 19,
+      "shape_reverse_channel_types_correct": 37,
+      "shape_reverse_channel_types_scored": 44
+    },
+    "route_c": {
+      "source": "research/data/mahadevan_20260905/concordance_rows.csv",
+      "source_sha256": "64448bc756c467c4bfa085b176208ecec06aef1c192c6e90548c15115c20e5d0",
+      "rows": 3916,
+      "visible_or_doubtful_long_stroke_occurrences": 878,
+      "explicit_multiple_face_objects": 772,
+      "single_count_face_pairs": 29,
+      "cup_other_face_records": 267,
+      "partial_or_multiface_cup_records": 113,
+      "strict_one_count_templates": 330,
+      "templates_with_more_than_one_count": 4,
+      "compression": {
+        "eligible_repeated_runs": 98,
+        "candidate_alignments": 1,
+        "exact_cardinal_hits": 1,
+        "cardinal_hits_with_one_edit": 1,
+        "cardinal_distinct_bases": 1,
+        "permutations_tested": 120,
+        "permutations_at_least_as_many_hits": 24,
+        "warning": "A repeat/marker match is not established equivalence. Same object or formula copies remain one observed alignment."
+      },
+      "controls": {
+        "constructed_multiplier_recovered": true,
+        "fitted_multiplier": 2.0,
+        "not_indus_evidence": true,
+        "category_gauge": "Any bijection of anonymous count classes and corresponding lookup outputs leaves categorical predictions invariant.",
+        "unit_gauge": "All U values multiplied by a common positive constant preserve within-component equal-quantity equations."
+      },
+      "grouping_program_scores": {
+        "sum": {
+          "correct": 3,
+          "n": 12,
+          "fitted_parameters": 0
+        },
+        "product": {
+          "correct": 4,
+          "n": 12,
+          "fitted_parameters": 0
+        },
+        "maximum": {
+          "correct": 4,
+          "n": 12,
+          "fitted_parameters": 0
+        },
+        "first_stored_group": {
+          "correct": 3,
+          "n": 12,
+          "fitted_parameters": 0
+        },
+        "last_stored_group": {
+          "correct": 4,
+          "n": 12,
+          "fitted_parameters": 0
+        },
+        "nonnumerical_constant_three": {
+          "correct": 6,
+          "n": 12,
+          "fitted_parameters": 0
+        }
+      },
+      "partial_field_rows_with_complete_compatibles": 8,
+      "strict_multiline_stroke_faces_tested": 16,
+      "multiline_inline_correspondences": 1,
+      "roof_count_scope_programs": {
+        "exact_roof_pairs": 4,
+        "core_spellings_with_witnesses": 6,
+        "orthographic_normal_forms": 1,
+        "literal_duplication_normal_forms": 2
+      },
+      "affine_result_interpretation": "Slope zero discards front count; no arithmetic discovery.",
+      "evaluation": "program_comparison.json",
+      "no_new_meaning_accepted": true,
+      "steps_executed": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    "route_d": {
+      "namespace": "Mahadevan1977",
+      "source_pairs": 6,
+      "base_families": 4,
+      "mw_search": [
+        {
+          "language": "Sanskrit_dictionary_conditional",
+          "orientation": "append",
+          "semantic_prior": "none",
+          "distinct_base_readings": true,
+          "compatible_markers": 13814,
+          "compatible_systems_exact": 640372456145280,
+          "minimum_description_cost": 10,
+          "cost_definition": "one unit per stored source-transliteration character +5 reusable assignments; fixed graphic grammar cost omitted equally",
+          "phonetic_correctness_targets": 0
+        },
+        {
+          "language": "Sanskrit_dictionary_conditional",
+          "orientation": "append",
+          "semantic_prior": "base59_fish",
+          "distinct_base_readings": true,
+          "compatible_markers": 589,
+          "compatible_systems_exact": 3976191215670,
+          "minimum_description_cost": 13,
+          "cost_definition": "one unit per stored source-transliteration character +5 reusable assignments; fixed graphic grammar cost omitted equally",
+          "phonetic_correctness_targets": 0
+        },
+        {
+          "language": "Sanskrit_dictionary_conditional",
+          "orientation": "append",
+          "semantic_prior": "all_four_fish",
+          "distinct_base_readings": true,
+          "compatible_markers": 25,
+          "compatible_systems_exact": 1012704,
+          "minimum_description_cost": 23,
+          "cost_definition": "one unit per stored source-transliteration character +5 reusable assignments; fixed graphic grammar cost omitted equally",
+          "phonetic_correctness_targets": 0
+        },
+        {
+          "language": "Sanskrit_dictionary_conditional",
+          "orientation": "append",
+          "semantic_prior": "all_eight_fish",
+          "distinct_base_readings": true,
+          "compatible_markers": 1,
+          "compatible_systems_exact": 360,
+          "minimum_description_cost": 33,
+          "cost_definition": "one unit per stored source-transliteration character +5 reusable assignments; fixed graphic grammar cost omitted equally",
+          "phonetic_correctness_targets": 0
+        },
+        {
+          "language": "Sanskrit_dictionary_conditional",
+          "orientation": "append",
+          "semantic_prior": "all_eight_fish_homophony",
+          "distinct_base_readings": false,
+          "compatible_markers": 22,
+          "compatible_systems_exact": 1317,
+          "minimum_description_cost": 23,
+          "cost_definition": "one unit per stored source-transliteration character +5 reusable assignments; fixed graphic grammar cost omitted equally",
+          "phonetic_correctness_targets": 0
+        },
+        {
+          "language": "Sanskrit_dictionary_conditional",
+          "orientation": "prepend",
+          "semantic_prior": "none",
+          "distinct_base_readings": true,
+          "compatible_markers": 17580,
+          "compatible_systems_exact": 280368192473592,
+          "minimum_description_cost": 10,
+          "cost_definition": "one unit per stored source-transliteration character +5 reusable assignments; fixed graphic grammar cost omitted equally",
+          "phonetic_correctness_targets": 0
+        },
+        {
+          "language": "Sanskrit_dictionary_conditional",
+          "orientation": "prepend",
+          "semantic_prior": "base59_fish",
+          "distinct_base_readings": true,
+          "compatible_markers": 508,
+          "compatible_systems_exact": 844448311818,
+          "minimum_description_cost": 13,
+          "cost_definition": "one unit per stored source-transliteration character +5 reusable assignments; fixed graphic grammar cost omitted equally",
+          "phonetic_correctness_targets": 0
+        },
+        {
+          "language": "Sanskrit_dictionary_conditional",
+          "orientation": "prepend",
+          "semantic_prior": "all_four_fish",
+          "distinct_base_readings": true,
+          "compatible_markers": 19,
+          "compatible_systems_exact": 126504,
+          "minimum_description_cost": 23,
+          "cost_definition": "one unit per stored source-transliteration character +5 reusable assignments; fixed graphic grammar cost omitted equally",
+          "phonetic_correctness_targets": 0
+        },
+        {
+          "language": "Sanskrit_dictionary_conditional",
+          "orientation": "prepend",
+          "semantic_prior": "all_eight_fish",
+          "distinct_base_readings": true,
+          "compatible_markers": 0,
+          "compatible_systems_exact": 0,
+          "minimum_description_cost": null,
+          "cost_definition": "one unit per stored source-transliteration character +5 reusable assignments; fixed graphic grammar cost omitted equally",
+          "phonetic_correctness_targets": 0
+        },
+        {
+          "language": "Sanskrit_dictionary_conditional",
+          "orientation": "prepend",
+          "semantic_prior": "all_eight_fish_homophony",
+          "distinct_base_readings": false,
+          "compatible_markers": 14,
+          "compatible_systems_exact": 14,
+          "minimum_description_cost": 25,
+          "cost_definition": "one unit per stored source-transliteration character +5 reusable assignments; fixed graphic grammar cost omitted equally",
+          "phonetic_correctness_targets": 0
+        }
+      ],
+      "tamil_anchor_ablations": [
+        {
+          "prior": "none",
+          "remaining_systems": 6
+        },
+        {
+          "prior": "fish",
+          "remaining_systems": 3
+        },
+        {
+          "prior": "star",
+          "remaining_systems": 3
+        }
+      ],
+      "representative_systems_applied": 13,
+      "candidate_partial_reading_rows": 9698,
+      "bound_core_fish_only_contradictions": 49,
+      "independent_sound_values_accepted": 0,
+      "new_language_identifications": 0,
+      "semantic_anchor_status": "B has no independently identified lexical referent; all named attachments are priors",
+      "historical_sound_correspondences": "none introduced; modern/lexical forms kept explicit and conditional",
+      "prior_exposure": "retrospective; sources and all six candidate pairs previously inspected",
+      "plan_execution": {
+        "D31": "executed:192k-scale independent Sanskrit lexicon; source-verified Tamil comparative forms; unresolved language retained",
+        "D32": "executed:roots/logograms, fused signs, phonetic211, silent classifier rival and C stroke-role exclusion",
+        "D33": "executed:all root/extension splits, both orders, shared marker, repeated global mappings; exact segmentation CSP control",
+        "D34": "executed:zero/one/four fish-gloss priors; Tamil fish/star priors. B supplies exclusions but no lexical anchor",
+        "D35": "executed:two named linguistic systems, anonymous and nonphonetic rivals; full lexical sound-relabel control",
+        "D36": "executed candidate propagation; independent phonetic correctness evaluation blocked by zero target pronunciations. Six equal forms are assumed premises, not heldout validation",
+        "D37": "executed:explicit mappings, semantic/orthographic prerequisites, exact source citations and unread spans exported"
+      }
+    },
+    "integration": {
+      "source_sha256": "6a0c597986783c5da8fbcb0afc3268a2c6a9f042a9b81746ebc4f89158efbd01",
+      "models": {
+        "categorical_identity": {
+          "pairs": [],
+          "marker": null,
+          "rule_bits": 0
+        },
+        "fish211": {
+          "pairs": [
+            [
+              59,
+              60
+            ],
+            [
+              65,
+              66
+            ],
+            [
+              67,
+              68
+            ],
+            [
+              70,
+              71
+            ],
+            [
+              72,
+              73
+            ]
+          ],
+          "marker": "211",
+          "rule_bits": 11
+        },
+        "all_four_stroke211": {
+          "pairs": [
+            [
+              59,
+              60
+            ],
+            [
+              65,
+              66
+            ],
+            [
+              67,
+              68
+            ],
+            [
+              70,
+              71
+            ],
+            [
+              72,
+              73
+            ],
+            [
+              89,
+              88
+            ],
+            [
+              141,
+              143
+            ],
+            [
+              162,
+              164
+            ],
+            [
+              178,
+              179
+            ],
+            [
+              204,
+              207
+            ],
+            [
+              219,
+              220
+            ],
+            [
+              249,
+              250
+            ],
+            [
+              277,
+              278
+            ],
+            [
+              280,
+              281
+            ],
+            [
+              284,
+              285
+            ],
+            [
+              287,
+              289
+            ],
+            [
+              290,
+              291
+            ],
+            [
+              307,
+              308
+            ],
+            [
+              387,
+              388
+            ],
+            [
+              389,
+              390
+            ],
+            [
+              391,
+              392
+            ],
+            [
+              403,
+              404
+            ]
+          ],
+          "marker": "211",
+          "rule_bits": 12
+        },
+        "fish342": {
+          "pairs": [
+            [
+              59,
+              60
+            ],
+            [
+              65,
+              66
+            ],
+            [
+              67,
+              68
+            ],
+            [
+              70,
+              71
+            ],
+            [
+              72,
+              73
+            ]
+          ],
+          "marker": "342",
+          "rule_bits": 11
+        },
+        "fish_unmarked_category": {
+          "pairs": [
+            [
+              59,
+              60
+            ],
+            [
+              65,
+              66
+            ],
+            [
+              67,
+              68
+            ],
+            [
+              70,
+              71
+            ],
+            [
+              72,
+              73
+            ]
+          ],
+          "marker": null,
+          "rule_bits": 2
+        },
+        "fish_roof87": {
+          "pairs": [],
+          "marker": null,
+          "rule_bits": 11,
+          "overrides": {
+            "65": [
+              "87",
+              "59"
+            ],
+            "66": [
+              "87",
+              "60"
+            ]
+          }
+        },
+        "fish_roof87_tick211": {
+          "pairs": [
+            [
+              59,
+              60
+            ],
+            [
+              65,
+              66
+            ],
+            [
+              67,
+              68
+            ],
+            [
+              70,
+              71
+            ],
+            [
+              72,
+              73
+            ]
+          ],
+          "marker": "211",
+          "rule_bits": 22,
+          "overrides": {
+            "65": [
+              "87",
+              "59"
+            ],
+            "66": [
+              "87",
+              "59",
+              "211"
+            ]
+          }
+        },
+        "fish_roof102_tick211": {
+          "pairs": [
+            [
+              59,
+              60
+            ],
+            [
+              65,
+              66
+            ],
+            [
+              67,
+              68
+            ],
+            [
+              70,
+              71
+            ],
+            [
+              72,
+              73
+            ]
+          ],
+          "marker": "211",
+          "rule_bits": 22,
+          "overrides": {
+            "65": [
+              "102",
+              "59"
+            ],
+            "66": [
+              "102",
+              "59",
+              "211"
+            ]
+          }
+        }
+      },
+      "summaries": [
+        {
+          "model": "categorical_identity",
+          "channel": "field_symbol_code",
+          "objects_or_faces": 1175,
+          "distinct_expression_target_context_types": 1077,
+          "object_weighted_nll_bits": 3648.453067498132,
+          "type_weighted_nll_bits": 3087.2044205799484,
+          "rule_bits": 0,
+          "type_weighted_total_bits": 3087.2044205799484,
+          "cross_spelling_predictions": 0,
+          "correct": 737
+        },
+        {
+          "model": "categorical_identity",
+          "channel": "companion_cup_strokes",
+          "objects_or_faces": 85,
+          "distinct_expression_target_context_types": 51,
+          "object_weighted_nll_bits": 135.36546260166824,
+          "type_weighted_nll_bits": 82.37050698585641,
+          "rule_bits": 0,
+          "type_weighted_total_bits": 82.37050698585641,
+          "cross_spelling_predictions": 0,
+          "correct": 35
+        },
+        {
+          "model": "fish211",
+          "channel": "field_symbol_code",
+          "objects_or_faces": 1175,
+          "distinct_expression_target_context_types": 1077,
+          "object_weighted_nll_bits": 3643.118165227216,
+          "type_weighted_nll_bits": 3084.084694676985,
+          "rule_bits": 11,
+          "type_weighted_total_bits": 3095.084694676985,
+          "cross_spelling_predictions": 12,
+          "correct": 739
+        },
+        {
+          "model": "fish211",
+          "channel": "companion_cup_strokes",
+          "objects_or_faces": 85,
+          "distinct_expression_target_context_types": 51,
+          "object_weighted_nll_bits": 135.36546260166824,
+          "type_weighted_nll_bits": 82.37050698585641,
+          "rule_bits": 11,
+          "type_weighted_total_bits": 93.37050698585641,
+          "cross_spelling_predictions": 0,
+          "correct": 35
+        },
+        {
+          "model": "all_four_stroke211",
+          "channel": "field_symbol_code",
+          "objects_or_faces": 1175,
+          "distinct_expression_target_context_types": 1077,
+          "object_weighted_nll_bits": 3643.118165227216,
+          "type_weighted_nll_bits": 3084.084694676985,
+          "rule_bits": 12,
+          "type_weighted_total_bits": 3096.084694676985,
+          "cross_spelling_predictions": 12,
+          "correct": 739
+        },
+        {
+          "model": "all_four_stroke211",
+          "channel": "companion_cup_strokes",
+          "objects_or_faces": 85,
+          "distinct_expression_target_context_types": 51,
+          "object_weighted_nll_bits": 135.36546260166824,
+          "type_weighted_nll_bits": 82.37050698585641,
+          "rule_bits": 12,
+          "type_weighted_total_bits": 94.37050698585641,
+          "cross_spelling_predictions": 0,
+          "correct": 35
+        },
+        {
+          "model": "fish342",
+          "channel": "field_symbol_code",
+          "objects_or_faces": 1175,
+          "distinct_expression_target_context_types": 1077,
+          "object_weighted_nll_bits": 3648.453067498132,
+          "type_weighted_nll_bits": 3087.2044205799484,
+          "rule_bits": 11,
+          "type_weighted_total_bits": 3098.2044205799484,
+          "cross_spelling_predictions": 0,
+          "correct": 737
+        },
+        {
+          "model": "fish342",
+          "channel": "companion_cup_strokes",
+          "objects_or_faces": 85,
+          "distinct_expression_target_context_types": 51,
+          "object_weighted_nll_bits": 135.36546260166824,
+          "type_weighted_nll_bits": 82.37050698585641,
+          "rule_bits": 11,
+          "type_weighted_total_bits": 93.37050698585641,
+          "cross_spelling_predictions": 0,
+          "correct": 35
+        },
+        {
+          "model": "fish_unmarked_category",
+          "channel": "field_symbol_code",
+          "objects_or_faces": 1175,
+          "distinct_expression_target_context_types": 1077,
+          "object_weighted_nll_bits": 3652.3778800017376,
+          "type_weighted_nll_bits": 3091.1292330835545,
+          "rule_bits": 2,
+          "type_weighted_total_bits": 3093.1292330835545,
+          "cross_spelling_predictions": 5,
+          "correct": 737
+        },
+        {
+          "model": "fish_unmarked_category",
+          "channel": "companion_cup_strokes",
+          "objects_or_faces": 85,
+          "distinct_expression_target_context_types": 51,
+          "object_weighted_nll_bits": 135.36546260166824,
+          "type_weighted_nll_bits": 82.37050698585641,
+          "rule_bits": 2,
+          "type_weighted_total_bits": 84.37050698585641,
+          "cross_spelling_predictions": 0,
+          "correct": 35
+        },
+        {
+          "model": "fish_roof87",
+          "channel": "field_symbol_code",
+          "objects_or_faces": 1175,
+          "distinct_expression_target_context_types": 1077,
+          "object_weighted_nll_bits": 3648.453067498132,
+          "type_weighted_nll_bits": 3087.2044205799484,
+          "rule_bits": 11,
+          "type_weighted_total_bits": 3098.2044205799484,
+          "cross_spelling_predictions": 0,
+          "correct": 737
+        },
+        {
+          "model": "fish_roof87",
+          "channel": "companion_cup_strokes",
+          "objects_or_faces": 85,
+          "distinct_expression_target_context_types": 51,
+          "object_weighted_nll_bits": 136.53538760311056,
+          "type_weighted_nll_bits": 83.54043198729872,
+          "rule_bits": 11,
+          "type_weighted_total_bits": 94.54043198729872,
+          "cross_spelling_predictions": 2,
+          "correct": 35
+        },
+        {
+          "model": "fish_roof87_tick211",
+          "channel": "field_symbol_code",
+          "objects_or_faces": 1175,
+          "distinct_expression_target_context_types": 1077,
+          "object_weighted_nll_bits": 3647.042977730822,
+          "type_weighted_nll_bits": 3087.4245446798695,
+          "rule_bits": 22,
+          "type_weighted_total_bits": 3109.4245446798695,
+          "cross_spelling_predictions": 18,
+          "correct": 739
+        },
+        {
+          "model": "fish_roof87_tick211",
+          "channel": "companion_cup_strokes",
+          "objects_or_faces": 85,
+          "distinct_expression_target_context_types": 51,
+          "object_weighted_nll_bits": 136.53538760311056,
+          "type_weighted_nll_bits": 83.54043198729872,
+          "rule_bits": 22,
+          "type_weighted_total_bits": 105.54043198729872,
+          "cross_spelling_predictions": 2,
+          "correct": 35
+        },
+        {
+          "model": "fish_roof102_tick211",
+          "channel": "field_symbol_code",
+          "objects_or_faces": 1175,
+          "distinct_expression_target_context_types": 1077,
+          "object_weighted_nll_bits": 3645.3632777250527,
+          "type_weighted_nll_bits": 3085.9147696755426,
+          "rule_bits": 22,
+          "type_weighted_total_bits": 3107.9147696755426,
+          "cross_spelling_predictions": 13,
+          "correct": 739
+        },
+        {
+          "model": "fish_roof102_tick211",
+          "channel": "companion_cup_strokes",
+          "objects_or_faces": 85,
+          "distinct_expression_target_context_types": 51,
+          "object_weighted_nll_bits": 135.36546260166824,
+          "type_weighted_nll_bits": 82.37050698585641,
+          "rule_bits": 22,
+          "type_weighted_total_bits": 104.37050698585641,
+          "cross_spelling_predictions": 0,
+          "correct": 35
+        }
+      ],
+      "joint": [
+        {
+          "model": "categorical_identity",
+          "channel_data_bits": {
+            "field_symbol_code": 3087.2044205799484,
+            "companion_cup_strokes": 82.37050698585641
+          },
+          "rule_bits_once": 0,
+          "total_bits": 3169.574927565805,
+          "interpretation": "conditional composite descriptive score; channels may share production causes, not independent confirmation"
+        },
+        {
+          "model": "fish211",
+          "channel_data_bits": {
+            "field_symbol_code": 3084.084694676985,
+            "companion_cup_strokes": 82.37050698585641
+          },
+          "rule_bits_once": 11,
+          "total_bits": 3177.4552016628413,
+          "interpretation": "conditional composite descriptive score; channels may share production causes, not independent confirmation"
+        },
+        {
+          "model": "all_four_stroke211",
+          "channel_data_bits": {
+            "field_symbol_code": 3084.084694676985,
+            "companion_cup_strokes": 82.37050698585641
+          },
+          "rule_bits_once": 12,
+          "total_bits": 3178.4552016628413,
+          "interpretation": "conditional composite descriptive score; channels may share production causes, not independent confirmation"
+        },
+        {
+          "model": "fish342",
+          "channel_data_bits": {
+            "field_symbol_code": 3087.2044205799484,
+            "companion_cup_strokes": 82.37050698585641
+          },
+          "rule_bits_once": 11,
+          "total_bits": 3180.574927565805,
+          "interpretation": "conditional composite descriptive score; channels may share production causes, not independent confirmation"
+        },
+        {
+          "model": "fish_unmarked_category",
+          "channel_data_bits": {
+            "field_symbol_code": 3091.1292330835545,
+            "companion_cup_strokes": 82.37050698585641
+          },
+          "rule_bits_once": 2,
+          "total_bits": 3175.499740069411,
+          "interpretation": "conditional composite descriptive score; channels may share production causes, not independent confirmation"
+        },
+        {
+          "model": "fish_roof87",
+          "channel_data_bits": {
+            "field_symbol_code": 3087.2044205799484,
+            "companion_cup_strokes": 83.54043198729872
+          },
+          "rule_bits_once": 11,
+          "total_bits": 3181.744852567247,
+          "interpretation": "conditional composite descriptive score; channels may share production causes, not independent confirmation"
+        },
+        {
+          "model": "fish_roof87_tick211",
+          "channel_data_bits": {
+            "field_symbol_code": 3087.4245446798695,
+            "companion_cup_strokes": 83.54043198729872
+          },
+          "rule_bits_once": 22,
+          "total_bits": 3192.9649766671682,
+          "interpretation": "conditional composite descriptive score; channels may share production causes, not independent confirmation"
+        },
+        {
+          "model": "fish_roof102_tick211",
+          "channel_data_bits": {
+            "field_symbol_code": 3085.9147696755426,
+            "companion_cup_strokes": 82.37050698585641
+          },
+          "rule_bits_once": 22,
+          "total_bits": 3190.285276661399,
+          "interpretation": "conditional composite descriptive score; channels may share production causes, not independent confirmation"
+        }
+      ],
+      "evaluation": "leave-complete-expression and all aliases/objects out; metadata background",
+      "prior_exposure": "retrospective; no new blind discovery test",
+      "decoding_scope": "no target word, pronunciation, or absolute unit is supplied by this test",
+      "code_costs": "relative descriptive costs for fixed prior graphical families, not calibrated Bayes factors",
+      "field_symbols": "raw catalogue field codes include motifs, uncertain animals and symbolic object shapes; no literal lexical labels inferred"
+    }
+  },
+  "candidate_count": 40,
+  "new_accepted_translations": 0,
+  "new_accepted_sound_values": 0,
+  "new_accepted_language_identifications": 0,
+  "new_accepted_numerical_values": 0
+}

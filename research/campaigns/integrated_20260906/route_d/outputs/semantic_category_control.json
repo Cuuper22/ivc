@@ -1,0 +1,872 @@
+{
+  "same_test": "four distinct base roots; root and expanded form both in named semantic category; shared nonempty211; both orientations; same cost",
+  "source_path": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+  "category_sizes": {
+    "fish": 259,
+    "bird": 451,
+    "tree": 542,
+    "animal": 203
+  },
+  "filter_rules": {
+    "fish": "\\ban?\\s+(?:(?:kind|species|sort)\\s+of\\s+)?fish\\b",
+    "bird": "\\ban?\\s+(?:(?:kind|species|sort)\\s+of\\s+)?bird\\b",
+    "tree": "\\ban?\\s+(?:(?:kind|species|sort)\\s+of\\s+)?tree\\b",
+    "animal": "\\ban?\\s+(?:(?:kind|species|sort)\\s+of\\s+)?animal\\b"
+  },
+  "runs": [
+    {
+      "category": "fish",
+      "mode": "full_category",
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 1,
+          "compatible_systems_exact": 360,
+          "markers": [
+            {
+              "marker": "ka",
+              "distinct_roots": 6,
+              "root_assignments": 360,
+              "minimum_same_description_cost": 33,
+              "roots": [
+                "cezwa",
+                "rAjIva",
+                "pallava",
+                "trikaRwa",
+                "daRqapAla",
+                "siMhatuRqa"
+              ]
+            }
+          ]
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "bird",
+      "mode": "full_category",
+      "headword_count": 451,
+      "search": {
+        "append": {
+          "eligible_markers": 1,
+          "compatible_systems_exact": 840,
+          "markers": [
+            {
+              "marker": "ka",
+              "distinct_roots": 7,
+              "root_assignments": 840,
+              "minimum_same_description_cost": 30,
+              "roots": [
+                "nIqa",
+                "SArNga",
+                "Sakuna",
+                "durbali",
+                "vaYjula",
+                "pariqIna",
+                "pratyulUka"
+              ]
+            }
+          ]
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "bird",
+      "mode": "fish_size_matched",
+      "seed": 20260906,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "bird",
+      "mode": "fish_size_matched",
+      "seed": 20260907,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "bird",
+      "mode": "fish_size_matched",
+      "seed": 20260908,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "bird",
+      "mode": "fish_size_matched",
+      "seed": 20260909,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 1,
+          "compatible_systems_exact": 120,
+          "markers": [
+            {
+              "marker": "ka",
+              "distinct_roots": 5,
+              "root_assignments": 120,
+              "minimum_same_description_cost": 33,
+              "roots": [
+                "SArNga",
+                "Sakuna",
+                "durbali",
+                "vaYjula",
+                "pariqIna"
+              ]
+            }
+          ]
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "bird",
+      "mode": "fish_size_matched",
+      "seed": 20260910,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "bird",
+      "mode": "fish_size_matched",
+      "seed": 20260911,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "bird",
+      "mode": "fish_size_matched",
+      "seed": 20260912,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 1,
+          "compatible_systems_exact": 24,
+          "markers": [
+            {
+              "marker": "ka",
+              "distinct_roots": 4,
+              "root_assignments": 24,
+              "minimum_same_description_cost": 34,
+              "roots": [
+                "SArNga",
+                "Sakuna",
+                "durbali",
+                "pariqIna"
+              ]
+            }
+          ]
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "bird",
+      "mode": "fish_size_matched",
+      "seed": 20260913,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "bird",
+      "mode": "fish_size_matched",
+      "seed": 20260914,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 1,
+          "compatible_systems_exact": 24,
+          "markers": [
+            {
+              "marker": "ka",
+              "distinct_roots": 4,
+              "root_assignments": 24,
+              "minimum_same_description_cost": 35,
+              "roots": [
+                "nIqa",
+                "SArNga",
+                "pariqIna",
+                "pratyulUka"
+              ]
+            }
+          ]
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "bird",
+      "mode": "fish_size_matched",
+      "seed": 20260915,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "bird",
+      "mode": "fish_size_matched",
+      "seed": 20260916,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "bird",
+      "mode": "fish_size_matched",
+      "seed": 20260917,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "bird",
+      "mode": "fish_size_matched",
+      "seed": 20260918,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 1,
+          "compatible_systems_exact": 24,
+          "markers": [
+            {
+              "marker": "ka",
+              "distinct_roots": 4,
+              "root_assignments": 24,
+              "minimum_same_description_cost": 36,
+              "roots": [
+                "nIqa",
+                "vaYjula",
+                "pariqIna",
+                "pratyulUka"
+              ]
+            }
+          ]
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "bird",
+      "mode": "fish_size_matched",
+      "seed": 20260919,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "bird",
+      "mode": "fish_size_matched",
+      "seed": 20260920,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 1,
+          "compatible_systems_exact": 24,
+          "markers": [
+            {
+              "marker": "ka",
+              "distinct_roots": 4,
+              "root_assignments": 24,
+              "minimum_same_description_cost": 35,
+              "roots": [
+                "nIqa",
+                "Sakuna",
+                "pariqIna",
+                "pratyulUka"
+              ]
+            }
+          ]
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "bird",
+      "mode": "fish_size_matched",
+      "seed": 20260921,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "tree",
+      "mode": "full_category",
+      "headword_count": 542,
+      "search": {
+        "append": {
+          "eligible_markers": 3,
+          "compatible_systems_exact": 11928,
+          "markers": [
+            {
+              "marker": "ka",
+              "distinct_roots": 12,
+              "root_assignments": 11880,
+              "minimum_same_description_cost": 24,
+              "roots": [
+                "kuwa",
+                "pIlu",
+                "pilu",
+                "muRqa",
+                "pUrRa",
+                "siDra",
+                "vaNga",
+                "rohita",
+                "viwapa",
+                "girimAla",
+                "vasuhawwa",
+                "SvetamandAra"
+              ]
+            },
+            {
+              "marker": "ja",
+              "distinct_roots": 4,
+              "root_assignments": 24,
+              "minimum_same_description_cost": 25,
+              "roots": [
+                "aga",
+                "taru",
+                "vfkza",
+                "skanDa"
+              ]
+            },
+            {
+              "marker": "pa",
+              "distinct_roots": 4,
+              "root_assignments": 24,
+              "minimum_same_description_cost": 27,
+              "roots": [
+                "pAda",
+                "aMhri",
+                "aNGri",
+                "caraRa"
+              ]
+            }
+          ]
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "tree",
+      "mode": "fish_size_matched",
+      "seed": 20260906,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "tree",
+      "mode": "fish_size_matched",
+      "seed": 20260907,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "tree",
+      "mode": "fish_size_matched",
+      "seed": 20260908,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 1,
+          "compatible_systems_exact": 24,
+          "markers": [
+            {
+              "marker": "ka",
+              "distinct_roots": 4,
+              "root_assignments": 24,
+              "minimum_same_description_cost": 26,
+              "roots": [
+                "pIlu",
+                "pilu",
+                "pUrRa",
+                "viwapa"
+              ]
+            }
+          ]
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "tree",
+      "mode": "fish_size_matched",
+      "seed": 20260909,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "tree",
+      "mode": "fish_size_matched",
+      "seed": 20260910,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "tree",
+      "mode": "fish_size_matched",
+      "seed": 20260911,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 1,
+          "compatible_systems_exact": 24,
+          "markers": [
+            {
+              "marker": "ka",
+              "distinct_roots": 4,
+              "root_assignments": 24,
+              "minimum_same_description_cost": 27,
+              "roots": [
+                "pilu",
+                "siDra",
+                "vaNga",
+                "rohita"
+              ]
+            }
+          ]
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "tree",
+      "mode": "fish_size_matched",
+      "seed": 20260912,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "tree",
+      "mode": "fish_size_matched",
+      "seed": 20260913,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 1,
+          "compatible_systems_exact": 24,
+          "markers": [
+            {
+              "marker": "ka",
+              "distinct_roots": 4,
+              "root_assignments": 24,
+              "minimum_same_description_cost": 30,
+              "roots": [
+                "kuwa",
+                "muRqa",
+                "rohita",
+                "girimAla"
+              ]
+            }
+          ]
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "tree",
+      "mode": "fish_size_matched",
+      "seed": 20260914,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "tree",
+      "mode": "fish_size_matched",
+      "seed": 20260915,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "tree",
+      "mode": "fish_size_matched",
+      "seed": 20260916,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 1,
+          "compatible_systems_exact": 120,
+          "markers": [
+            {
+              "marker": "ka",
+              "distinct_roots": 5,
+              "root_assignments": 120,
+              "minimum_same_description_cost": 30,
+              "roots": [
+                "pIlu",
+                "pilu",
+                "rohita",
+                "vasuhawwa",
+                "SvetamandAra"
+              ]
+            }
+          ]
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "tree",
+      "mode": "fish_size_matched",
+      "seed": 20260917,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "tree",
+      "mode": "fish_size_matched",
+      "seed": 20260918,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "tree",
+      "mode": "fish_size_matched",
+      "seed": 20260919,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "tree",
+      "mode": "fish_size_matched",
+      "seed": 20260920,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 1,
+          "compatible_systems_exact": 24,
+          "markers": [
+            {
+              "marker": "ka",
+              "distinct_roots": 4,
+              "root_assignments": 24,
+              "minimum_same_description_cost": 30,
+              "roots": [
+                "pilu",
+                "muRqa",
+                "pUrRa",
+                "vasuhawwa"
+              ]
+            }
+          ]
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "tree",
+      "mode": "fish_size_matched",
+      "seed": 20260921,
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "animal",
+      "mode": "full_category",
+      "headword_count": 203,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    }
+  ],
+  "interpretation": "A rival category admitting ka shows ka is not fish-specific in this lexical membership test. Size-matched draws retain semantic category but do not preserve extension-edge degree.",
+  "limits": "No category is an independently grounded Indus meaning; these are matched selection diagnostics, not language tests or phonetic correctness scores."
+}

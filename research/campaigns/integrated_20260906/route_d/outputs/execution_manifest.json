@@ -1,0 +1,53 @@
+{
+  "run_command": "python research/campaigns/integrated_20260906/route_d/run_all.py",
+  "executed_programs": [
+    "run_route_d.py",
+    "search_modifier_lattice.py",
+    "semantic_category_control.py",
+    "tamil_joint_search.py",
+    "test_counted_fish_composition.py",
+    "finalize_route_d.py"
+  ],
+  "results": {
+    "conditional_candidate_records": 18,
+    "independent_phonetic_values_accepted": 0,
+    "full_tamil_distinct_mixed_systems": 4
+  },
+  "files": {
+    "category_control_stdout.json": "e392c67f7b8e4f6ce1f615db3a75c219efb15c1e03781dcad2c816aefa331754",
+    "counted_fish_stdout.json": "98bfe853d0aa2efdacb52dd1a537c5f35c7331bdc71857b8248596c9f0152d7a",
+    "execution_stdout.json": "969b052b1cc1c97649e9fe1941743a8885673b4cadb9a2084c533a4d308d98b2",
+    "finalize_route_d.py": "7b175deb98f7a592820296a7e2713616e34647186615b995118eb35cb923f34f",
+    "finalize_route_d_stdout.json": "ed7da63b0a68363e61c6f06a40f69f4f2e53c70c3ed076ce17c07509da24daba",
+    "lattice_stdout.json": "f2a69074e89465c2fe471c67196461be5bdc500ce6053ff69767ea5efd479cda",
+    "outputs/bound_marker_scope_test.json": "f137b577759365ef6708a6e6bc1a67ff12e25952c10790e5f0dce94c4365af49",
+    "outputs/candidate_partial_readings.jsonl": "9e50e08e09f081fe0734c63df608379338e99db5721710b3a8853e3f09648c32",
+    "outputs/candidates.json": "fa9be34e071a3d8ffc4a5acb24433c24c0260d70972f812e493ffbe230002cce",
+    "outputs/controls.json": "43d36df1cd4551ac17f75ff66d53cc4f31f785591ab04d50f96b6dfda791298c",
+    "outputs/counted_fish_composition.json": "552fb32b03c4ac8cfdf710fcef27950888393ff0f9de8ea95325b975159f2aff",
+    "outputs/coverage_not_accuracy.json": "143de247e1f8ef809d2ae4aa4c0a9bfd5538d14bd8f2772aab0f79dbcd67f91b",
+    "outputs/explicit_systems.json": "69f2cf88b84e4797f29dbb9edd3c558ff15046eb89d4f830c107e2291ae2ca9b",
+    "outputs/linguistic_inventory.json": "28985d2ab7a7d7b72b68b1f56a02efed629f549d2ed64db976525e91f7bcd022",
+    "outputs/mw_extension_counts.json": "de663989a391bd9b44550f684b12fee26761ff9e97beb645228e15850cdf6895",
+    "outputs/new_fish_family_propagation.json": "dbdf64e5db909e439b1927f6fb8020cd4f55dd35a9c6eb8d94262a8255b7ef6e",
+    "outputs/pair_dependencies.json": "291f9b70a58091fe282ed5eb17c45def6fdbc4faad5dd549456cf8c5df119960",
+    "outputs/semantic_category_control.json": "32863a4100e1853f94f569258136cde599b9d5613978eb54148bd129d06f565d",
+    "outputs/semantic_category_source_entries.json": "8a783fe92c03aa6091a8e8ca581acd1caf60316e965f504975c0d0c7200f56f3",
+    "outputs/summary.json": "bad140c52fec759602df8dced6328303742f53538c8dd05db6c52aaaa7fd93c8",
+    "outputs/tamil_full_joint_search.json": "88de20b2f72b1f0dea220cdc70afe01c015ff38751c289cd6f9de2c9800c3212",
+    "outputs/tamil_joint_worked_readings.json": "3b49a90019e3901bbf9f6a148642a72db259f67b2b61c1a32e0eaca5553dbcd9",
+    "outputs/two_modifier_lattice.json": "5c244d20d004958f84aabbc833ae4fce18194e86fa8ac0d9fd0efc5969543d43",
+    "run_all.py": "2b754eb7ae458be91635e9b1651d26307f1892ca22569f845d5145d35e858033",
+    "run_route_d.py": "b99a74dd17acdff773b311b5dc31ba854a70ae724429946815fc777c517be5f1",
+    "run_route_d_stdout.json": "969b052b1cc1c97649e9fe1941743a8885673b4cadb9a2084c533a4d308d98b2",
+    "search_modifier_lattice.py": "45aa7a17f8567c97d8b146c72b3844e0130f369eda691b939dbf896e77c13554",
+    "search_modifier_lattice_stdout.json": "f2a69074e89465c2fe471c67196461be5bdc500ce6053ff69767ea5efd479cda",
+    "semantic_category_control.py": "e700fbf3b0911774923c16e8224562ff6efa79e18b9704dfc5bc71e26d713530",
+    "semantic_category_control_stdout.json": "e392c67f7b8e4f6ce1f615db3a75c219efb15c1e03781dcad2c816aefa331754",
+    "tamil_joint_search.py": "29cb9d8c430d159c7d288e671a48a7a6e5d1fc71dfb7d9c4b6042ed7db363518",
+    "tamil_joint_search_stdout.json": "8ccfc12c5b35f81ed9c020c8df7df81758a78b29c17137807c088e723f52d025",
+    "tamil_joint_stdout.json": "8ccfc12c5b35f81ed9c020c8df7df81758a78b29c17137807c088e723f52d025",
+    "test_counted_fish_composition.py": "f9528d9968078d75fbe2562abc63441962f584eb00b5d694d575769c8db65d80"
+  },
+  "next_experiment": "Use existing2275/1008roof relation and retained67–336–89–211suffix to test local-root versus whole-field scope for87/211. Keep7283/4019doubtful IDs in a separate sensitivity lane. Counted-fish composition has already failed to obtain support outside267–99under exact, one-edit and partial tests."
+}

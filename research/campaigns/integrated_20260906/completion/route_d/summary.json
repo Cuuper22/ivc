@@ -1,0 +1,96 @@
+{
+  "provenance": "newly executed reconstruction, not recovered old output",
+  "systems": 8,
+  "retained_fully_optimized_phonetic_rivals": 3,
+  "phonetic_frozen_predictions": 18,
+  "all_converged": true,
+  "training_rows": 2524,
+  "excluded_target_objects": 32,
+  "whole_pattern_alias_mask": true,
+  "frozen_predictions": 48,
+  "independent_accepted_sound_values": 0,
+  "language_identifications": 0,
+  "unread_70": true,
+  "lexicons": {
+    "tamil": 88,
+    "sanskrit": 192482
+  },
+  "control_results": {
+    "constructed": {
+      "evidence_class": "constructed_control_not_Indus",
+      "training": [
+        [
+          [
+            "A",
+            "B"
+          ],
+          "kami"
+        ],
+        [
+          [
+            "A",
+            "C"
+          ],
+          "katu"
+        ],
+        [
+          [
+            "D",
+            "B"
+          ],
+          "sami"
+        ]
+      ],
+      "unanchored_segmentations": [
+        {
+          "A": "k",
+          "B": "ami",
+          "C": "atu",
+          "D": "s"
+        },
+        {
+          "A": "ka",
+          "B": "mi",
+          "C": "tu",
+          "D": "sa"
+        }
+      ],
+      "independent_A_ka_anchor": [
+        {
+          "A": "ka",
+          "B": "mi",
+          "C": "tu",
+          "D": "sa"
+        }
+      ],
+      "mixed_classifier_control": [
+        {
+          "N": "",
+          "A": "ka",
+          "B": "mi",
+          "C": "tu",
+          "D": "sa"
+        }
+      ],
+      "withheld_D_C_predictions": [
+        "satu"
+      ],
+      "withheld_D_C_true": "satu",
+      "incompatible_D_C_sata_solutions": 0
+    },
+    "alphabet_renaming": {
+      "tamil": {
+        "all_vocabulary_items_checked": 88,
+        "bijection_preserves_membership_and_length": true,
+        "objective_invariant": true,
+        "independent_sound_targets": 0
+      },
+      "sanskrit": {
+        "all_vocabulary_items_checked": 192482,
+        "bijection_preserves_membership_and_length": true,
+        "objective_invariant": true,
+        "independent_sound_targets": 0
+      }
+    }
+  }
+}

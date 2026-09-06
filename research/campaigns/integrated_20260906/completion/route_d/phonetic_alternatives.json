@@ -1,0 +1,236 @@
+[
+  {
+    "schema": "ivc.reconstructed.linguistic.v1",
+    "language": "tamil",
+    "orientation": "prepend",
+    "char_bits": 4.700439718141092,
+    "boundary_bits": 1.0,
+    "fusion_bits": 0.0,
+    "roots": {
+      "59": "mīṉ",
+      "65": "mīṉ",
+      "67": "mīṉ",
+      "72": "mīṉ"
+    },
+    "marker": "aim",
+    "marker_role": "phonetic",
+    "mapping": {
+      "59": "mīṉ",
+      "65": "mīṉ",
+      "67": "mīṉ",
+      "72": "mīṉ",
+      "211": "aim",
+      "60": "aimmīṉ",
+      "66": "aimmīṉ",
+      "68": "aimmīṉ",
+      "73": "aimmīṉ"
+    },
+    "trace": [
+      {
+        "iteration": 0,
+        "objective_bits": 26452.586094615537,
+        "step": "initial reusable sound mapping"
+      },
+      {
+        "iteration": 1,
+        "objective_bits": 16299.636303430778,
+        "step": "segmentation -> full root/affix coordinate scan -> segmentation",
+        "marker_candidates": 95,
+        "marker_role": "phonetic",
+        "role_alternatives": [
+          [
+            16299.636303430778,
+            "phonetic"
+          ]
+        ],
+        "changed": true
+      },
+      {
+        "iteration": 2,
+        "objective_bits": 16299.636303430778,
+        "step": "segmentation -> full root/affix coordinate scan -> segmentation",
+        "marker_candidates": 95,
+        "marker_role": "phonetic",
+        "role_alternatives": [
+          [
+            16299.636303430778,
+            "phonetic"
+          ]
+        ],
+        "changed": false
+      }
+    ],
+    "train_rows": 2524,
+    "train_digest": "c895bcd739130e0951bf27a570a20946ee342344e23b5a24a09b0593efd4256c",
+    "factor_type": "conditional_lexical_prior_not_text_likelihood",
+    "independent_Indus_sound_targets": 0,
+    "sources": [
+      "shared/observations.jsonl",
+      "evidence_inventory/tamil_compounds.json"
+    ],
+    "scope": "four graphical fish bases; unknown signs including70 stay unread; retrospective",
+    "limitations": "finite coordinate optimum, conditional graphic expansion, no historical sound changes or ancient language identification",
+    "converged": true,
+    "parameter_bits": 83.50659577211638,
+    "role_search": "global phonetic-versus-classifier optimization; retained phonetic alternative where supported",
+    "vocabulary_size": 88,
+    "marker_candidates": 95,
+    "id": "tamil_prepend_phonetic"
+  },
+  {
+    "schema": "ivc.reconstructed.linguistic.v1",
+    "language": "sanskrit",
+    "orientation": "append",
+    "char_bits": 5.643856189774724,
+    "boundary_bits": 1.0,
+    "fusion_bits": 0.0,
+    "roots": {
+      "59": "A",
+      "65": "A",
+      "67": "A",
+      "72": "A"
+    },
+    "marker": "f",
+    "marker_role": "phonetic",
+    "mapping": {
+      "59": "A",
+      "65": "A",
+      "67": "A",
+      "72": "A",
+      "211": "f",
+      "60": "Af",
+      "66": "Af",
+      "68": "Af",
+      "73": "Af"
+    },
+    "trace": [
+      {
+        "iteration": 0,
+        "objective_bits": 74403.0994900506,
+        "step": "initial reusable sound mapping"
+      },
+      {
+        "iteration": 1,
+        "objective_bits": 6616.226320241795,
+        "step": "segmentation -> full root/affix coordinate scan -> segmentation",
+        "marker_candidates": 239691,
+        "marker_role": "phonetic",
+        "role_alternatives": [
+          [
+            6616.226320241795,
+            "phonetic"
+          ]
+        ],
+        "changed": true
+      },
+      {
+        "iteration": 2,
+        "objective_bits": 6616.226320241795,
+        "step": "segmentation -> full root/affix coordinate scan -> segmentation",
+        "marker_candidates": 239691,
+        "marker_role": "phonetic",
+        "role_alternatives": [
+          [
+            6616.226320241795,
+            "phonetic"
+          ]
+        ],
+        "changed": false
+      }
+    ],
+    "train_rows": 2524,
+    "train_digest": "c895bcd739130e0951bf27a570a20946ee342344e23b5a24a09b0593efd4256c",
+    "factor_type": "conditional_lexical_prior_not_text_likelihood",
+    "independent_Indus_sound_targets": 0,
+    "sources": [
+      "shared/observations.jsonl",
+      "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml"
+    ],
+    "scope": "four graphical fish bases; unknown signs including70 stay unread; retrospective",
+    "limitations": "finite coordinate optimum, conditional graphic expansion, no historical sound changes or ancient language identification",
+    "converged": true,
+    "parameter_bits": 41.21928094887362,
+    "role_search": "global phonetic-versus-classifier optimization; retained phonetic alternative where supported",
+    "vocabulary_size": 192482,
+    "marker_candidates": 239691,
+    "id": "sanskrit_append_phonetic"
+  },
+  {
+    "schema": "ivc.reconstructed.linguistic.v1",
+    "language": "sanskrit",
+    "orientation": "prepend",
+    "char_bits": 5.643856189774724,
+    "boundary_bits": 1.0,
+    "fusion_bits": 0.0,
+    "roots": {
+      "59": "f",
+      "65": "f",
+      "67": "f",
+      "72": "f"
+    },
+    "marker": "A",
+    "marker_role": "phonetic",
+    "mapping": {
+      "59": "f",
+      "65": "f",
+      "67": "f",
+      "72": "f",
+      "211": "A",
+      "60": "Af",
+      "66": "Af",
+      "68": "Af",
+      "73": "Af"
+    },
+    "trace": [
+      {
+        "iteration": 0,
+        "objective_bits": 71124.0190437915,
+        "step": "initial reusable sound mapping"
+      },
+      {
+        "iteration": 1,
+        "objective_bits": 6616.226320241795,
+        "step": "segmentation -> full root/affix coordinate scan -> segmentation",
+        "marker_candidates": 409732,
+        "marker_role": "phonetic",
+        "role_alternatives": [
+          [
+            6616.226320241795,
+            "phonetic"
+          ]
+        ],
+        "changed": true
+      },
+      {
+        "iteration": 2,
+        "objective_bits": 6616.226320241795,
+        "step": "segmentation -> full root/affix coordinate scan -> segmentation",
+        "marker_candidates": 409732,
+        "marker_role": "phonetic",
+        "role_alternatives": [
+          [
+            6616.226320241795,
+            "phonetic"
+          ]
+        ],
+        "changed": false
+      }
+    ],
+    "train_rows": 2524,
+    "train_digest": "c895bcd739130e0951bf27a570a20946ee342344e23b5a24a09b0593efd4256c",
+    "factor_type": "conditional_lexical_prior_not_text_likelihood",
+    "independent_Indus_sound_targets": 0,
+    "sources": [
+      "shared/observations.jsonl",
+      "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml"
+    ],
+    "scope": "four graphical fish bases; unknown signs including70 stay unread; retrospective",
+    "limitations": "finite coordinate optimum, conditional graphic expansion, no historical sound changes or ancient language identification",
+    "converged": true,
+    "parameter_bits": 41.21928094887362,
+    "role_search": "global phonetic-versus-classifier optimization; retained phonetic alternative where supported",
+    "vocabulary_size": 192482,
+    "marker_candidates": 409732,
+    "id": "sanskrit_prepend_phonetic"
+  }
+]

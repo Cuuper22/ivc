@@ -1,0 +1,155 @@
+{
+  "input_sha256": "6a0c597986783c5da8fbcb0afc3268a2c6a9f042a9b81746ebc4f89158efbd01",
+  "namespace": "Mahadevan1977",
+  "strict_lines": 2575,
+  "unique_texts": 1659,
+  "structured_search": {
+    "max_residual_edits": 1,
+    "min_exact_context_anchors": 2,
+    "anchor_rule": "prefix and suffix aligned independently around the graphical base; no cross-base reordering"
+  },
+  "fish211": {
+    "alignments": 11,
+    "distinct_text_pairs": 11,
+    "compact_texts": 4,
+    "expanded_texts": 10,
+    "bases": [
+      59,
+      65,
+      72
+    ],
+    "residual_edits": {
+      "1": 10,
+      "0": 1
+    },
+    "placements": {
+      "adjacent_after": 10,
+      "nonadjacent_after": 1
+    },
+    "source_objects": [
+      "1019",
+      "1235",
+      "1551",
+      "2504",
+      "2523",
+      "2590",
+      "4056",
+      "4112",
+      "4232",
+      "6206",
+      "6211",
+      "6217",
+      "7247",
+      "7249",
+      "7251",
+      "7255",
+      "7267",
+      "7269",
+      "8025"
+    ]
+  },
+  "fish_categorical_no_extra": {
+    "alignments": 4,
+    "distinct_text_pairs": 4,
+    "compact_texts": 4,
+    "expanded_texts": 4,
+    "bases": [
+      59,
+      65
+    ],
+    "residual_edits": {
+      "1": 4
+    },
+    "placements": {
+      "no_extra_unit": 4
+    },
+    "source_objects": [
+      "1125",
+      "1531",
+      "1551",
+      "4117",
+      "4578",
+      "6211",
+      "7249",
+      "7251",
+      "7255",
+      "7267",
+      "7269",
+      "9021"
+    ]
+  },
+  "all_family211": {
+    "alignments": 15,
+    "distinct_text_pairs": 15,
+    "compact_texts": 6,
+    "expanded_texts": 11,
+    "bases": [
+      59,
+      65,
+      72
+    ],
+    "residual_edits": {
+      "1": 14,
+      "0": 1
+    },
+    "placements": {
+      "adjacent_after": 12,
+      "nonadjacent_after": 3
+    },
+    "source_objects": [
+      "1019",
+      "1235",
+      "1551",
+      "1554",
+      "2504",
+      "2523",
+      "2590",
+      "4056",
+      "4112",
+      "4117",
+      "4232",
+      "6206",
+      "6211",
+      "6217",
+      "7247",
+      "7249",
+      "7251",
+      "7255",
+      "7267",
+      "7269",
+      "8025"
+    ]
+  },
+  "partial_marked_occurrences": 9,
+  "partial_occurrences_with_exact_observed_expansion": 0,
+  "fish_exclusivity_counterexamples": 1,
+  "literal_structured_matches": 0,
+  "literal_matching_composites": [],
+  "roof_on_marked_fish_matches": 3,
+  "boundary_prediction_total_bits": {
+    "bare_base": 323.09808980627895,
+    "base_then211": 135.17116167959824,
+    "all211": 146.11091795515173,
+    "marked_other_base": 145.21315127552086,
+    "terminal_category": 141.52363779509446,
+    "marked_objectclass": 168.1491971769737,
+    "marked_catalogue_prefix": 157.38236567860466
+  },
+  "spelling_search_fold_winners": {
+    "59": "12",
+    "65": "12",
+    "67": "388",
+    "70": "12",
+    "72": "12"
+  },
+  "spelling_search_exact_form_reach": 0,
+  "complete_roof_tick_lattices": 1,
+  "composed_normal_form_classes": {
+    "fish211": 6,
+    "roof87": 4,
+    "roof102": 3,
+    "fish211_roof87": 10,
+    "fish211_roof102": 8
+  },
+  "status": "competing writing-operation hypotheses; no sign meanings or sounds established"
+}

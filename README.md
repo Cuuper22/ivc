@@ -6,7 +6,14 @@ This is an organized GitHub export, created on 2026-06-06, of the local workspac
 
 The workspace is a research project that tries to decipher the Indus Valley Civilization script, and every claim in it must be backed by evidence. It is not an app repo, and it does not currently claim fluent translations of anything.
 
-## Latest Research — 2026-09-05
+## Latest Research — 2026-09-06
+
+[Reconstructed completion pass](research/campaigns/integrated_20260906/completion/README.md) now contains the rebuilt four-route execution, frozen joint systems, source adjudication, and full recovery provenance. No new reading is accepted.
+
+
+[Integrated four-route campaign](research/campaigns/integrated_20260906/README.md) executes writing-operation, semantic, numerical and phonetic searches over the existing evidence. Its strongest new candidate composes a roof/87 operation with a surrounding-marks/211 operation and connects another fish family under an explicit held-family comparison. Numerical scope, contextual and linguistic alternatives remain unresolved; no reading is accepted. The campaign includes runnable searches, source-linked candidates, executed cross-route predictions and a precise continuation state.
+
+## Paired-face Research — 2026-09-05
 
 [Paired-face constraints on numerical readings](research/docs/mahadevan_crossface_constraints_20260905.md) adds a frozen public Mahadevan 1977 concordance: 2,906 catalogued objects, 3,573 nonempty inscription lines, and 417 signs. Six published-census checks match exactly. This is an independent transcription system, not an independent archaeological sample.
 

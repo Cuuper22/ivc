@@ -1,0 +1,1890 @@
+{
+  "status": "executed_reconstructed_rerun",
+  "task": "recombination_1",
+  "language": "tamil",
+  "selected": "tick388-after__r1",
+  "baseline_abc_selected": "tick388-after__r1",
+  "trace": [
+    {
+      "iteration": 0,
+      "from": "tick388-after",
+      "to": "tick388-after",
+      "previous_objective": 50119.46327869194,
+      "trial_objective": 50119.46327869194,
+      "accepted": false
+    }
+  ],
+  "train_objective_with_lexical_prior": 50119.46327869194,
+  "held_original_channel_bits": {
+    "text": 11175.308837065999,
+    "motif": 960.1643874517144,
+    "cup": 243.67367753566478
+  },
+  "held_original_data_gain_vs_abc": 0.0,
+  "held_lexical_prior_bits": 2265.1978731634913,
+  "linguistic_model": {
+    "schema": "ivc.reconstructed.linguistic.v1",
+    "language": "tamil",
+    "orientation": "append",
+    "char_bits": 4.700439718141092,
+    "boundary_bits": 1.0,
+    "fusion_bits": 0.0,
+    "roots": {
+      "59": "mīṉ",
+      "65": "mīṉ",
+      "67": "mīṉ",
+      "72": "mīṉ"
+    },
+    "marker": "",
+    "marker_role": "classifier",
+    "mapping": {
+      "59": "mīṉ",
+      "65": "mīṉ",
+      "67": "mīṉ",
+      "72": "mīṉ",
+      "211": "",
+      "60": "mīṉ",
+      "66": "mīṉ",
+      "68": "mīṉ",
+      "73": "mīṉ"
+    },
+    "trace": [
+      {
+        "iteration": 0,
+        "objective_bits": 40889.39846928472,
+        "step": "initial reusable sound mapping"
+      },
+      {
+        "iteration": 1,
+        "objective_bits": 8941.879620264157,
+        "step": "segmentation -> full root/affix coordinate scan -> segmentation",
+        "marker_candidates": 1,
+        "marker_role": "classifier",
+        "role_alternatives": [
+          [
+            8941.879620264157,
+            "classifier"
+          ]
+        ],
+        "changed": true
+      },
+      {
+        "iteration": 2,
+        "objective_bits": 8941.879620264157,
+        "step": "segmentation -> full root/affix coordinate scan -> segmentation",
+        "marker_candidates": 1,
+        "marker_role": "classifier",
+        "role_alternatives": [
+          [
+            8941.879620264157,
+            "classifier"
+          ]
+        ],
+        "changed": false
+      }
+    ],
+    "train_rows": 1729,
+    "train_digest": "dfe6fc5e45199a4013dbccb459e07e5dec91f20af7a65e1d83ab06defe31cf30",
+    "factor_type": "conditional_lexical_prior_not_text_likelihood",
+    "independent_Indus_sound_targets": 0,
+    "sources": [
+      "shared/observations.jsonl",
+      "evidence_inventory/tamil_compounds.json"
+    ],
+    "scope": "four graphical fish bases; unknown signs including70 stay unread; retrospective",
+    "limitations": "finite coordinate optimum, conditional graphic expansion, no historical sound changes or ancient language identification",
+    "converged": true,
+    "parameter_bits": 77.4052766176931,
+    "role_search": "global phonetic-versus-classifier optimization; retained phonetic alternative where supported",
+    "vocabulary_size": 88,
+    "marker_candidates": 1
+  },
+  "frozen_model_digest": "f662c6a60004e432ba9933b0a31c2a611b988ddfffcbc018497b4dc372da3356",
+  "post_evaluation_model_digest": "f662c6a60004e432ba9933b0a31c2a611b988ddfffcbc018497b4dc372da3356",
+  "mask_digest": "7b08751fb16903505cc681fdefd70b03d8c71c409b5ee2ad3b3d79feca101c31",
+  "no_held_refit": true,
+  "evidence_statement": "D is a conditional lexical prior. Its code cost is neither another text observation nor independent sound correctness. Tamil/Sanskrit dictionary coverage differs.",
+  "worked_decodings": [
+    {
+      "raw": [
+        "37",
+        "342",
+        "98",
+        "86",
+        "67",
+        "211"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "37"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:37>"
+        },
+        {
+          "source_signs": [
+            "342"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:342>"
+        },
+        {
+          "source_signs": [
+            "98"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:98>"
+        },
+        {
+          "source_signs": [
+            "86"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:86>"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "41",
+        "137",
+        "249",
+        "65",
+        "67",
+        "342",
+        "1"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "41"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:41>"
+        },
+        {
+          "source_signs": [
+            "137"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:137>"
+        },
+        {
+          "source_signs": [
+            "249"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:249>"
+        },
+        {
+          "source_signs": [
+            "65"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "342"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:342>"
+        },
+        {
+          "source_signs": [
+            "1"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:1>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "43",
+        "180",
+        "99",
+        "66"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "43"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:43>"
+        },
+        {
+          "source_signs": [
+            "180"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:180>"
+        },
+        {
+          "source_signs": [
+            "99"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:99>"
+        },
+        {
+          "source_signs": [
+            "65"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "388"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:388>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "48",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "48"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:48>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "53",
+        "171",
+        "59",
+        "48",
+        "342"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "53"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:53>"
+        },
+        {
+          "source_signs": [
+            "171"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:171>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "48"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:48>"
+        },
+        {
+          "source_signs": [
+            "342"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:342>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "53",
+        "171",
+        "59",
+        "342",
+        "176"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "53"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:53>"
+        },
+        {
+          "source_signs": [
+            "171"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:171>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "342"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:342>"
+        },
+        {
+          "source_signs": [
+            "176"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:176>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "54",
+        "28",
+        "162",
+        "100",
+        "65",
+        "347",
+        "342"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "54"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:54>"
+        },
+        {
+          "source_signs": [
+            "28"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:28>"
+        },
+        {
+          "source_signs": [
+            "162"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:162>"
+        },
+        {
+          "source_signs": [
+            "100"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:100>"
+        },
+        {
+          "source_signs": [
+            "65"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "347"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:347>"
+        },
+        {
+          "source_signs": [
+            "342"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:342>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "59",
+        "59",
+        "155",
+        "211"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "155"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:155>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "59",
+        "112",
+        "194",
+        "18",
+        "211",
+        "87",
+        "169"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "112"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:112>"
+        },
+        {
+          "source_signs": [
+            "194"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:194>"
+        },
+        {
+          "source_signs": [
+            "18"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:18>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "169"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:169>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "59",
+        "194",
+        "342"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "194"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:194>"
+        },
+        {
+          "source_signs": [
+            "342"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:342>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "59",
+        "209",
+        "211",
+        "100",
+        "273",
+        "87"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "209"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:209>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        },
+        {
+          "source_signs": [
+            "100"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:100>"
+        },
+        {
+          "source_signs": [
+            "273"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:273>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "59",
+        "341",
+        "342"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "341"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:341>"
+        },
+        {
+          "source_signs": [
+            "342"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:342>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "65",
+        "8",
+        "342",
+        "176"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "65"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "8"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:8>"
+        },
+        {
+          "source_signs": [
+            "342"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:342>"
+        },
+        {
+          "source_signs": [
+            "176"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:176>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "65",
+        "48",
+        "342"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "65"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "48"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:48>"
+        },
+        {
+          "source_signs": [
+            "342"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:342>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "65",
+        "59",
+        "48",
+        "342"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "65"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "48"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:48>"
+        },
+        {
+          "source_signs": [
+            "342"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:342>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "65",
+        "67",
+        "121",
+        "12"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "65"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "121"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:121>"
+        },
+        {
+          "source_signs": [
+            "12"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:12>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "65",
+        "67",
+        "211"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "65"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "65",
+        "67",
+        "342",
+        "1"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "65"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "342"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:342>"
+        },
+        {
+          "source_signs": [
+            "1"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:1>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "65",
+        "71",
+        "176"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "65"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "388"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:388>"
+        },
+        {
+          "source_signs": [
+            "176"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:176>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "65",
+        "72",
+        "222",
+        "254",
+        "176"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "65"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "72"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "222"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:222>"
+        },
+        {
+          "source_signs": [
+            "254"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:254>"
+        },
+        {
+          "source_signs": [
+            "176"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:176>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "65",
+        "87",
+        "332",
+        "58",
+        "342"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "65"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "332"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:332>"
+        },
+        {
+          "source_signs": [
+            "58"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:58>"
+        },
+        {
+          "source_signs": [
+            "342"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:342>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "65",
+        "327",
+        "342"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "65"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "327"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:327>"
+        },
+        {
+          "source_signs": [
+            "342"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:342>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "67",
+        "204",
+        "155",
+        "211"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "204"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:204>"
+        },
+        {
+          "source_signs": [
+            "155"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:155>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "67",
+        "301",
+        "155",
+        "211"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "301"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:301>"
+        },
+        {
+          "source_signs": [
+            "155"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:155>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "70",
+        "327",
+        "128",
+        "124",
+        "169"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "327"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:327>"
+        },
+        {
+          "source_signs": [
+            "128"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:128>"
+        },
+        {
+          "source_signs": [
+            "124"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:124>"
+        },
+        {
+          "source_signs": [
+            "169"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:169>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "70",
+        "342",
+        "12"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "342"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:342>"
+        },
+        {
+          "source_signs": [
+            "12"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:12>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "72",
+        "71",
+        "121",
+        "342"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "72"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "388"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:388>"
+        },
+        {
+          "source_signs": [
+            "121"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:121>"
+        },
+        {
+          "source_signs": [
+            "342"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:342>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "72",
+        "211"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "72"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "72",
+        "336",
+        "89",
+        "211",
+        "176"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "72"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        },
+        {
+          "source_signs": [
+            "176"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:176>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "76",
+        "402",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "76"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:76>"
+        },
+        {
+          "source_signs": [
+            "402"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:402>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "84",
+        "59",
+        "160",
+        "343",
+        "387",
+        "67",
+        "87",
+        "59",
+        "155",
+        "211"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "84"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:84>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "160"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:160>"
+        },
+        {
+          "source_signs": [
+            "343"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:343>"
+        },
+        {
+          "source_signs": [
+            "387"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:387>"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "155"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:155>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "86",
+        "230",
+        "211"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "86"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:86>"
+        },
+        {
+          "source_signs": [
+            "230"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:230>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "86",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "86"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:86>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "87",
+        "19",
+        "54",
+        "99",
+        "65",
+        "59",
+        "211"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "19"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:19>"
+        },
+        {
+          "source_signs": [
+            "54"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:54>"
+        },
+        {
+          "source_signs": [
+            "99"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:99>"
+        },
+        {
+          "source_signs": [
+            "65"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "87",
+        "28",
+        "257",
+        "99",
+        "67",
+        "70",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "28"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:28>"
+        },
+        {
+          "source_signs": [
+            "257"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:257>"
+        },
+        {
+          "source_signs": [
+            "99"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:99>"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "87",
+        "59",
+        "72",
+        "341",
+        "342"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "72"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "341"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:341>"
+        },
+        {
+          "source_signs": [
+            "342"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:342>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "87",
+        "59",
+        "296",
+        "342"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "296"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:296>"
+        },
+        {
+          "source_signs": [
+            "342"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:342>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "87",
+        "59",
+        "342"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "342"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:342>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "87",
+        "59",
+        "342",
+        "1"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "342"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:342>"
+        },
+        {
+          "source_signs": [
+            "1"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:1>"
+        }
+      ]
+    },
+    {
+      "raw": [
+        "87",
+        "230",
+        "180",
+        "99",
+        "70",
+        "53",
+        "342"
+      ],
+      "conditional": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "230"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:230>"
+        },
+        {
+          "source_signs": [
+            "180"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:180>"
+        },
+        {
+          "source_signs": [
+            "99"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:99>"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "53"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:53>"
+        },
+        {
+          "source_signs": [
+            "342"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:342>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "source": "research/data/mahadevan_20260905/concordance_rows.csv",
+  "source_sha256": "64448bc756c467c4bfa085b176208ecec06aef1c192c6e90548c15115c20e5d0",
+  "rows": 3916,
+  "visible_or_doubtful_long_stroke_occurrences": 878,
+  "explicit_multiple_face_objects": 772,
+  "single_count_face_pairs": 29,
+  "cup_other_face_records": 267,
+  "partial_or_multiface_cup_records": 113,
+  "strict_one_count_templates": 330,
+  "templates_with_more_than_one_count": 4,
+  "compression": {
+    "eligible_repeated_runs": 98,
+    "candidate_alignments": 1,
+    "exact_cardinal_hits": 1,
+    "cardinal_hits_with_one_edit": 1,
+    "cardinal_distinct_bases": 1,
+    "permutations_tested": 120,
+    "permutations_at_least_as_many_hits": 24,
+    "warning": "A repeat/marker match is not established equivalence. Same object or formula copies remain one observed alignment."
+  },
+  "controls": {
+    "constructed_multiplier_recovered": true,
+    "fitted_multiplier": 2.0,
+    "not_indus_evidence": true,
+    "category_gauge": "Any bijection of anonymous count classes and corresponding lookup outputs leaves categorical predictions invariant.",
+    "unit_gauge": "All U values multiplied by a common positive constant preserve within-component equal-quantity equations."
+  },
+  "grouping_program_scores": {
+    "sum": {
+      "correct": 3,
+      "n": 12,
+      "fitted_parameters": 0
+    },
+    "product": {
+      "correct": 4,
+      "n": 12,
+      "fitted_parameters": 0
+    },
+    "maximum": {
+      "correct": 4,
+      "n": 12,
+      "fitted_parameters": 0
+    },
+    "first_stored_group": {
+      "correct": 3,
+      "n": 12,
+      "fitted_parameters": 0
+    },
+    "last_stored_group": {
+      "correct": 4,
+      "n": 12,
+      "fitted_parameters": 0
+    },
+    "nonnumerical_constant_three": {
+      "correct": 6,
+      "n": 12,
+      "fitted_parameters": 0
+    }
+  },
+  "partial_field_rows_with_complete_compatibles": 8,
+  "strict_multiline_stroke_faces_tested": 16,
+  "multiline_inline_correspondences": 1,
+  "roof_count_scope_programs": {
+    "exact_roof_pairs": 4,
+    "core_spellings_with_witnesses": 6,
+    "orthographic_normal_forms": 1,
+    "literal_duplication_normal_forms": 2
+  },
+  "affine_result_interpretation": "Slope zero discards front count; no arithmetic discovery.",
+  "evaluation": "program_comparison.json",
+  "no_new_meaning_accepted": true,
+  "steps_executed": [
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ]
+}

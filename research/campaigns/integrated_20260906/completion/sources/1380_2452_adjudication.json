@@ -1,0 +1,127 @@
+{
+  "status": "reconstructed_source_adjudication_executed",
+  "objects": [
+    {
+      "object_id": "M77:1380",
+      "frozen_row": {
+        "index": "380",
+        "textnum": "1380",
+        "dockey": "1380",
+        "sideline": "0",
+        "locus": "17",
+        "level": "-6",
+        "inscobj": "1",
+        "fs80": "251",
+        "dir": "1",
+        "posnum": "3",
+        "signnum": "3",
+        "S1": "65",
+        "S2": "70",
+        "S3": "211",
+        "S4": "",
+        "S5": "",
+        "S6": "",
+        "S7": "",
+        "S8": "",
+        "S9": "",
+        "S10": "",
+        "S11": "",
+        "S12": "",
+        "S13": "",
+        "S14": "",
+        "strict": "1",
+        "exclusion_reasons": ""
+      },
+      "raw_sequence": [
+        "65",
+        "70",
+        "211"
+      ],
+      "conditional_normalized_sequence": [
+        "87",
+        "59",
+        "70",
+        "211"
+      ],
+      "original_text_page_index": 60,
+      "original_printed_page": 50,
+      "original_field_symbol_code": "25",
+      "field_description": "fabulous_composite_animal",
+      "verification": "Visually inspected original text entry and original codebook page image. Object photo itself is not reproduced in these text entries.",
+      "image": "page_60.png"
+    },
+    {
+      "object_id": "M77:2452",
+      "frozen_row": {
+        "index": "1080",
+        "textnum": "2452",
+        "dockey": "2452",
+        "sideline": "0",
+        "locus": "31",
+        "level": "-13",
+        "inscobj": "1",
+        "fs80": "13",
+        "dir": "1",
+        "posnum": "3",
+        "signnum": "3",
+        "S1": "87",
+        "S2": "59",
+        "S3": "71",
+        "S4": "",
+        "S5": "",
+        "S6": "",
+        "S7": "",
+        "S8": "",
+        "S9": "",
+        "S10": "",
+        "S11": "",
+        "S12": "",
+        "S13": "",
+        "S14": "",
+        "strict": "1",
+        "exclusion_reasons": ""
+      },
+      "raw_sequence": [
+        "87",
+        "59",
+        "71"
+      ],
+      "conditional_normalized_sequence": [
+        "87",
+        "59",
+        "70",
+        "211"
+      ],
+      "original_text_page_index": 82,
+      "original_printed_page": 72,
+      "original_field_symbol_code": "01",
+      "field_description": "unicorn",
+      "verification": "Visually inspected original text entry and original codebook page image. Object photo itself is not reproduced in these text entries.",
+      "image": "page_82.png"
+    }
+  ],
+  "codebook": [
+    {
+      "code": "01",
+      "pdf_page_index": 801,
+      "printed_page": 793,
+      "description": "Unicorn, generally facing a special cult object."
+    },
+    {
+      "code": "25",
+      "pdf_page_index": 802,
+      "printed_page": 794,
+      "description": "Composite fabulous animal combining ram body, bull horns, elephant trunk, tiger hindlegs and raised serpent-like tail."
+    }
+  ],
+  "raw_fs80_policy": "251 and13 remain unchanged in frozen input. The original printed object entries establish field-symbol codes25 and01 directly; no universal arithmetic decode of the modern fs80 column is asserted.",
+  "raw_sequences_equal": false,
+  "conditional_normalized_sequences_equal": true,
+  "prerequisites": [
+    "65 expands to87,59",
+    "71 expands to70,211",
+    "Expanded spelling identity represents the same linguistic expression"
+  ],
+  "conclusion": "Conditional on these spelling equivalences, the entire expression cannot universally name the literal pictured species: the original source codes different animals. This is a negative lexical constraint, not a translation.",
+  "namespace_warning": "Mahadevan1380 and2452 are not equated with CISI M-1380/M-2452 by number."
+}

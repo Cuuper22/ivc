@@ -1,0 +1,291 @@
+[
+  {
+    "id": "B-COFACE-363",
+    "route": "B",
+    "status": "underdetermined",
+    "claim_type": "structural_constraint",
+    "rule": "The short363 is paired with two long expression families. Their picture-linked copies involve different raw codes139 and520; do not equate each pairing with a specific pictured referent.",
+    "namespace": "Mahadevan1977",
+    "context": "Copper tablets; whole faces; exact catalogue readings",
+    "prerequisites": [
+      "Catalogue distinction362/363",
+      "Paired faces correctly assigned",
+      "Raw motif families139 and520 actually pictorially distinct"
+    ],
+    "support": [
+      "M77:2901:10",
+      "M77:2901:20",
+      "M77:3360:10",
+      "M77:3360:20",
+      "M77:3414:10",
+      "M77:3414:20",
+      "M77:3373:10",
+      "M77:3373:29",
+      "M77:2914:10",
+      "M77:2914:29"
+    ],
+    "contradictions": [],
+    "alternatives": [
+      "Broad shared referent",
+      "Shared category or authority plus variable description",
+      "Production grouping",
+      "One questionable catalogue short sign"
+    ],
+    "parameters": 2,
+    "complexity": {
+      "lookup_entries": 2
+    },
+    "predictions": [
+      "A universal363=one specific depicted species predicts equal species across the two long families and fails under distinct-species decoding."
+    ],
+    "source_paths": [
+      "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "research/campaigns/integrated_20260906/shared/observations.jsonl",
+      "research/campaigns/integrated_20260906/evidence_inventory/recovered/Parpola_2008_copper.pdf"
+    ],
+    "prior_exposure": "Retrospective constrained search; source corpus and defining examples already exposed."
+  },
+  {
+    "id": "B-358-LITERAL",
+    "route": "B",
+    "status": "rejected",
+    "claim_type": "lexical_meaning",
+    "rule": "Universal358=the copper145/147 pictorial category, preserved in every construction.",
+    "namespace": "Mahadevan1977",
+    "context": "All containing inscriptions, including copper-to-seal transfer",
+    "prerequisites": [
+      "Direct literal text-picture relation",
+      "145/147 represent a common category distinct from13"
+    ],
+    "support": [
+      "M77:1708:10",
+      "M77:1712:10",
+      "M77:1804:10",
+      "M77:1806:10",
+      "M77:2909:10",
+      "M77:2915:10",
+      "M77:3306:10",
+      "M77:3314:10",
+      "M77:3339:10",
+      "M77:3341:10",
+      "M77:3342:10",
+      "M77:3353:10",
+      "M77:3359:10",
+      "M77:3361:10",
+      "M77:3371:10",
+      "M77:3379:10",
+      "M77:3386:10",
+      "M77:3404:10"
+    ],
+    "contradictions": [
+      "M77:1066:0",
+      "M77:2396:0",
+      "M77:3154:0",
+      "M77:4030:0",
+      "M77:4105:0",
+      "M77:7244:0"
+    ],
+    "alternatives": [
+      "Copper-specific label",
+      "Documentary field unrelated to animal",
+      "Same designation accompanied by different emblems"
+    ],
+    "parameters": 1,
+    "complexity": {
+      "lookup_entries": 1
+    },
+    "predictions": [
+      {
+        "target": "M77:7244:0",
+        "predicted_raw_fs80": [
+          145,
+          147
+        ],
+        "observed_raw_fs80": 13
+      }
+    ],
+    "source_paths": [
+      "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "research/campaigns/integrated_20260906/shared/observations.jsonl"
+    ],
+    "prior_exposure": "Retrospective constrained search; source corpus and defining examples already exposed."
+  },
+  {
+    "id": "B-LATENT-CATEGORY",
+    "route": "B",
+    "status": "underdetermined",
+    "claim_type": "structural_constraint",
+    "rule": "A fitted anonymous category linking text families to pictures can be renamed as a production-group category with identical likelihood and parameter count.",
+    "namespace": "Mahadevan1977",
+    "context": "Latent categorical models with no independent documented production-group observations",
+    "prerequisites": [],
+    "support": [
+      "copper_referent_competition.json"
+    ],
+    "contradictions": [],
+    "alternatives": [
+      "Literal/category meaning",
+      "Production context",
+      "Complementary documentary fields"
+    ],
+    "parameters": 0,
+    "complexity": {
+      "lookup_entries": 0
+    },
+    "predictions": [
+      "An independent production indicator or transferable component relation is required to distinguish these particular rivals."
+    ],
+    "source_paths": [
+      "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "research/campaigns/integrated_20260906/shared/observations.jsonl"
+    ],
+    "prior_exposure": "Retrospective constrained search; source corpus and defining examples already exposed."
+  },
+  {
+    "id": "B-COPPER-LITERAL-PICTURE",
+    "route": "B",
+    "status": "rejected",
+    "claim_type": "lexical_meaning",
+    "rule": "Every complete copper text names exactly the animal species depicted on its object.",
+    "namespace": "Mahadevan1977",
+    "context": "Literal species model, not a broader deity/category designation",
+    "prerequisites": [
+      "Literal species naming",
+      "Parpola2008 B6/B12 text identity and different pictorial species"
+    ],
+    "support": [
+      "M77:3328:10",
+      "M77:3336:10",
+      "M77:3368:10"
+    ],
+    "contradictions": [
+      "M77:1704:20"
+    ],
+    "alternatives": [
+      "The same deity or category represented in multiple forms",
+      "Complementary fields",
+      "Production context"
+    ],
+    "parameters": 1,
+    "complexity": {
+      "lookup_entries": 1
+    },
+    "predictions": [
+      {
+        "target": "M77:1704:20",
+        "text_stored": [
+          "336",
+          "89",
+          "296",
+          "342",
+          "98"
+        ],
+        "predicted": "elephant",
+        "observed": "horned tiger; text appears on the same face as the animal"
+      }
+    ],
+    "source_paths": [
+      "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "research/campaigns/integrated_20260906/shared/observations.jsonl",
+      "research/campaigns/integrated_20260906/evidence_inventory/recovered/Parpola_2008_copper.pdf"
+    ],
+    "prior_exposure": "Retrospective constrained search; source corpus and defining examples already exposed."
+  },
+  {
+    "id": "B-REPRESENTATION-CHANNEL",
+    "route": "B",
+    "status": "supported_scope_limited",
+    "claim_type": "structural_constraint",
+    "rule": "In the published typology, shape classB predicts picture-only reverse, classesA/C text-only reverse:37 of44 legible reconstructed types fit; same long fields link alternative reverse channels.",
+    "namespace": "Mahadevan1977",
+    "context": "Parpola2008 reconstructed copper types only; descriptive contextual prediction, not new semantic decipherment",
+    "prerequisites": [
+      "Only shape-level A/B/C variables used; full type labels would leak text and pictures",
+      "Author reconstructed types correctly grouped"
+    ],
+    "support": [
+      "Parpola2008:A2",
+      "Parpola2008:C4a",
+      "Parpola2008:B5",
+      "Parpola2008:A11",
+      "Parpola2008:B19",
+      "Parpola2008:C6"
+    ],
+    "contradictions": [
+      "Parpola2008:A1a",
+      "Parpola2008:A1b",
+      "Parpola2008:A2",
+      "Parpola2008:A3a",
+      "Parpola2008:A3b",
+      "Parpola2008:B12",
+      "Parpola2008:C1"
+    ],
+    "alternatives": [
+      "Production conventions",
+      "Semantically related alternative representations",
+      "Complementary documentary fields"
+    ],
+    "parameters": 3,
+    "complexity": {
+      "lookup_entries": 3
+    },
+    "predictions": [
+      {
+        "rule": {
+          "A": "text",
+          "B": "picture",
+          "C": "text"
+        },
+        "correct_types": 37,
+        "scored_types": 44,
+        "constant_baseline_correct": 26
+      }
+    ],
+    "source_paths": [
+      "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "research/campaigns/integrated_20260906/shared/observations.jsonl",
+      "research/campaigns/integrated_20260906/evidence_inventory/recovered/Parpola_2008_copper.pdf"
+    ],
+    "prior_exposure": "Retrospective constrained search; source corpus and defining examples already exposed."
+  },
+  {
+    "id": "B-THREE-FIELDS",
+    "route": "B",
+    "status": "conditional",
+    "claim_type": "structural_constraint",
+    "rule": "Objects4581 and4591 preserve the same four-stroke cup face and same doubtful middle expression while their short first faces differ137 versus59.",
+    "namespace": "Mahadevan1977",
+    "context": "Two three-faced miniature tablets; doubtful119 retained",
+    "prerequisites": [
+      "Doubtful middle119 does not conceal a semantic difference",
+      "Catalogue face assignments"
+    ],
+    "support": [
+      "M77:4581:10",
+      "M77:4581:20",
+      "M77:4581:30",
+      "M77:4591:10",
+      "M77:4591:20",
+      "M77:4591:30"
+    ],
+    "contradictions": [],
+    "alternatives": [
+      "Complementary category selector",
+      "Two spellings",
+      "Distinct quantities with missing units",
+      "Production context"
+    ],
+    "parameters": 0,
+    "complexity": {
+      "lookup_entries": 0
+    },
+    "predictions": [
+      "Any deterministic middle+cup\u2192short model needs an exception or another observed variable."
+    ],
+    "source_paths": [
+      "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "research/campaigns/integrated_20260906/shared/observations.jsonl"
+    ],
+    "prior_exposure": "Retrospective constrained search; source corpus and defining examples already exposed."
+  }
+]

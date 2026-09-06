@@ -1,0 +1,24 @@
+{
+  "status": "reconstructed research actions executed; decipherment unresolved",
+  "active_models": "joint/*/selected.json and joint/linguistic_coupling/*.json",
+  "next_experiment": {
+    "id": "NEXT-ORDER-SCOPE",
+    "question": "Does a scope boundary supported by a multi-role grammar improve predicting the retained suffix around roof-expanded fish beyond whole-expression categorical models?",
+    "source_rows": [
+      "M77:2275",
+      "M77:1008",
+      "M77:1147"
+    ],
+    "alternatives": [
+      "local graphical spelling change",
+      "larger anonymous field",
+      "numerical field with independently unanchored scope"
+    ],
+    "completed_precursor": "route_c/retained_suffix_experiment.json",
+    "next_executable": "python completion/next_order_comparison.py",
+    "reason": "The retained suffix alone does not identify scope; reconstructed latent grammar can disagree with the earlier proposed boundary.",
+    "status": "next experiment preserved; not executed in this reconstruction"
+  },
+  "work_continues_unattended": false,
+  "new_accepted_readings": 0
+}

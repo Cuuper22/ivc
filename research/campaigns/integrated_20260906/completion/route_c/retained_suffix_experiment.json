@@ -1,0 +1,156 @@
+{
+  "status": "executed_reconstructed_rerun",
+  "rows": [
+    {
+      "object_id": "M77:2275",
+      "raw": [
+        "0",
+        "65",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "expanded_conditional_roof87": [
+        "0",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "strict": false,
+      "exclusion_reasons": "lost_or_illegible_passage|not_all_undoubted_1_to_417|position_or_legible_count_mismatch",
+      "unknowns_preserved": true,
+      "lane": "primary_retained_suffix"
+    },
+    {
+      "object_id": "M77:1008",
+      "raw": [
+        "76",
+        "402",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "expanded_conditional_roof87": [
+        "76",
+        "402",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "strict": true,
+      "exclusion_reasons": "",
+      "unknowns_preserved": true,
+      "lane": "primary_retained_suffix"
+    },
+    {
+      "object_id": "M77:7283",
+      "raw": [
+        "*293",
+        "123",
+        "*343",
+        "65",
+        "51",
+        "130",
+        "149",
+        "0"
+      ],
+      "expanded_conditional_roof87": [
+        "*293",
+        "123",
+        "*343",
+        "87",
+        "59",
+        "51",
+        "130",
+        "149",
+        "0"
+      ],
+      "strict": false,
+      "exclusion_reasons": "lost_or_illegible_passage|doubtful_sign|not_all_undoubted_1_to_417|position_or_legible_count_mismatch",
+      "unknowns_preserved": true,
+      "lane": "doubtful_sensitivity"
+    },
+    {
+      "object_id": "M77:4019",
+      "raw": [
+        "216",
+        "123",
+        "389",
+        "87",
+        "59",
+        "51",
+        "130",
+        "149",
+        "48",
+        "342"
+      ],
+      "expanded_conditional_roof87": [
+        "216",
+        "123",
+        "389",
+        "87",
+        "59",
+        "51",
+        "130",
+        "149",
+        "48",
+        "342"
+      ],
+      "strict": true,
+      "exclusion_reasons": "",
+      "unknowns_preserved": true,
+      "lane": "doubtful_sensitivity"
+    }
+  ],
+  "primary_suffix": [
+    "67",
+    "336",
+    "89",
+    "211"
+  ],
+  "suffix_retained_in_both": true,
+  "expanded_local_pair_in_both": true,
+  "programs": [
+    {
+      "scope": "local_fish_root",
+      "predicted_primary_suffix": [
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "matches_observed": true
+    },
+    {
+      "scope": "larger_field_categorical",
+      "predicted_primary_suffix": [
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "matches_observed": true
+    },
+    {
+      "scope": "larger_field_numeric",
+      "predicted_primary_suffix": [
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "matches_observed": true
+    }
+  ],
+  "conclusion": "The retained suffix confirms a conditional local spelling alignment. No independent field meaning or boundary distinguishes local root from larger field scope; the unknown prefix in2275 is neither completed nor equated to76,402. Sensitivity7283 contains doubtful IDs and an unknown ending; it is not an additional strict equivalence."
+}

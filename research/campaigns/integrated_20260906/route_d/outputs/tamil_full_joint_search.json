@@ -1,0 +1,1638 @@
+{
+  "source_path": "research/campaigns/integrated_20260906/evidence_inventory/tamil_compounds.json",
+  "source_claimed_counts": {
+    "star_compounds": 34,
+    "fish_compounds": 65
+  },
+  "source_rows": 93,
+  "exact_eligible_rows": 89,
+  "mīṉ_final_exact_rows": 88,
+  "uncertain_excluded": 4,
+  "single_modifier_ablations": [
+    {
+      "semantic_prior": "unrestricted",
+      "lexical_rows": 88,
+      "distinct_qualifier_surfaces": 86,
+      "qualifier_source_rows": [
+        "tamil_app_279_02",
+        "tamil_app_280_01",
+        "tamil_app_280_02",
+        "tamil_app_280_03",
+        "tamil_app_280_04",
+        "tamil_app_280_05",
+        "tamil_app_280_06",
+        "tamil_app_280_07",
+        "tamil_app_280_08",
+        "tamil_app_280_09",
+        "tamil_app_280_10",
+        "tamil_app_280_12",
+        "tamil_app_280_13",
+        "tamil_app_280_14",
+        "tamil_app_280_15",
+        "tamil_app_280_16",
+        "tamil_app_280_17",
+        "tamil_app_280_18",
+        "tamil_app_280_19",
+        "tamil_app_280_20",
+        "tamil_app_280_21",
+        "tamil_app_280_22",
+        "tamil_app_280_23",
+        "tamil_app_280_24",
+        "tamil_app_280_25",
+        "tamil_app_280_26",
+        "tamil_app_281_01",
+        "tamil_app_281_02",
+        "tamil_app_281_03",
+        "tamil_app_281_04",
+        "tamil_app_281_05",
+        "tamil_app_281_07",
+        "tamil_app_281_08",
+        "tamil_app_281_09",
+        "tamil_app_281_10",
+        "tamil_app_281_11",
+        "tamil_app_281_12",
+        "tamil_app_281_13",
+        "tamil_app_281_14",
+        "tamil_app_281_15",
+        "tamil_app_281_16",
+        "tamil_app_281_17",
+        "tamil_app_281_18",
+        "tamil_app_281_20",
+        "tamil_app_281_21",
+        "tamil_app_281_22",
+        "tamil_app_281_23",
+        "tamil_app_281_24",
+        "tamil_app_281_25",
+        "tamil_app_281_26",
+        "tamil_app_281_27",
+        "tamil_app_282_01",
+        "tamil_app_282_02",
+        "tamil_app_282_03",
+        "tamil_app_282_04",
+        "tamil_app_282_05",
+        "tamil_app_282_06",
+        "tamil_app_282_08",
+        "tamil_app_282_09",
+        "tamil_app_282_10",
+        "tamil_app_282_11",
+        "tamil_app_282_12",
+        "tamil_app_282_13",
+        "tamil_app_282_14",
+        "tamil_app_282_15",
+        "tamil_app_282_16",
+        "tamil_app_282_17",
+        "tamil_app_282_18",
+        "tamil_app_282_19",
+        "tamil_app_282_20",
+        "tamil_app_282_21",
+        "tamil_app_282_22",
+        "tamil_app_282_23",
+        "tamil_app_282_24",
+        "tamil_app_283_01",
+        "tamil_app_283_02",
+        "tamil_app_283_03",
+        "tamil_app_283_04",
+        "tamil_app_283_05",
+        "tamil_app_283_06",
+        "tamil_app_283_07",
+        "tamil_app_283_08",
+        "tamil_app_283_09",
+        "tamil_app_283_10",
+        "tamil_app_283_11",
+        "tamil_app_283_12",
+        "tamil_app_283_13",
+        "tamil_app_283_14"
+      ]
+    },
+    {
+      "semantic_prior": "fish",
+      "lexical_rows": 62,
+      "distinct_qualifier_surfaces": 62,
+      "qualifier_source_rows": [
+        "tamil_app_280_03",
+        "tamil_app_280_04",
+        "tamil_app_280_05",
+        "tamil_app_280_07",
+        "tamil_app_280_10",
+        "tamil_app_280_12",
+        "tamil_app_280_13",
+        "tamil_app_280_15",
+        "tamil_app_280_16",
+        "tamil_app_280_17",
+        "tamil_app_280_18",
+        "tamil_app_280_19",
+        "tamil_app_280_20",
+        "tamil_app_280_21",
+        "tamil_app_280_22",
+        "tamil_app_280_24",
+        "tamil_app_280_26",
+        "tamil_app_281_02",
+        "tamil_app_281_03",
+        "tamil_app_281_04",
+        "tamil_app_281_05",
+        "tamil_app_281_07",
+        "tamil_app_281_08",
+        "tamil_app_281_09",
+        "tamil_app_281_10",
+        "tamil_app_281_11",
+        "tamil_app_281_12",
+        "tamil_app_281_13",
+        "tamil_app_281_14",
+        "tamil_app_281_15",
+        "tamil_app_281_16",
+        "tamil_app_281_17",
+        "tamil_app_281_18",
+        "tamil_app_281_20",
+        "tamil_app_281_21",
+        "tamil_app_281_23",
+        "tamil_app_281_24",
+        "tamil_app_281_25",
+        "tamil_app_281_26",
+        "tamil_app_281_27",
+        "tamil_app_282_01",
+        "tamil_app_282_02",
+        "tamil_app_282_03",
+        "tamil_app_282_04",
+        "tamil_app_282_05",
+        "tamil_app_282_06",
+        "tamil_app_282_08",
+        "tamil_app_282_09",
+        "tamil_app_282_10",
+        "tamil_app_282_11",
+        "tamil_app_282_12",
+        "tamil_app_282_13",
+        "tamil_app_282_14",
+        "tamil_app_282_15",
+        "tamil_app_282_16",
+        "tamil_app_282_20",
+        "tamil_app_282_21",
+        "tamil_app_282_24",
+        "tamil_app_283_01",
+        "tamil_app_283_03",
+        "tamil_app_283_09",
+        "tamil_app_283_13"
+      ]
+    },
+    {
+      "semantic_prior": "star",
+      "lexical_rows": 29,
+      "distinct_qualifier_surfaces": 28,
+      "qualifier_source_rows": [
+        "tamil_app_279_02",
+        "tamil_app_280_01",
+        "tamil_app_280_02",
+        "tamil_app_280_06",
+        "tamil_app_280_08",
+        "tamil_app_280_09",
+        "tamil_app_280_14",
+        "tamil_app_280_23",
+        "tamil_app_280_25",
+        "tamil_app_281_01",
+        "tamil_app_281_10",
+        "tamil_app_281_12",
+        "tamil_app_281_21",
+        "tamil_app_281_22",
+        "tamil_app_282_17",
+        "tamil_app_282_18",
+        "tamil_app_282_19",
+        "tamil_app_282_22",
+        "tamil_app_282_23",
+        "tamil_app_283_02",
+        "tamil_app_283_04",
+        "tamil_app_283_05",
+        "tamil_app_283_06",
+        "tamil_app_283_07",
+        "tamil_app_283_08",
+        "tamil_app_283_10",
+        "tamil_app_283_11",
+        "tamil_app_283_12",
+        "tamil_app_283_14"
+      ]
+    }
+  ],
+  "exact_concatenative_two_modifier_systems": 0,
+  "exact_concatenative_solutions": [],
+  "strict_linear_87_59_211_solutions": 0,
+  "contextual_morphology_source_triangles": 3,
+  "distinct_lexical_surface_triangles": 2,
+  "distinct_mixed_phonetic_systems": 4,
+  "explicit_mixed_systems": [
+    {
+      "id": "D-TAMIL-JOINT-00",
+      "mapping": {
+        "59": "mīṉ",
+        "65": "kaṉmīṉ",
+        "60": "kōḻimīṉ",
+        "66": "kallukkōḻimīṉ",
+        "87": "kal",
+        "211": "kōḻi"
+      },
+      "morphological_operations": {
+        "87": "add ROOF modifier to fish expression",
+        "211": "add TICK modifier to fish expression",
+        "canonical_order": [
+          "STONE",
+          "kōḻi"
+        ]
+      },
+      "source_lexical_records": {
+        "modifier_keys": [
+          "STONE",
+          "kōḻi"
+        ],
+        "double": {
+          "entry_id": "tamil_app_280_15",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "F",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "fish"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "kallu-k-kōḻi-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "kallu",
+            "k",
+            "kōḻi",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "blue sea fish, Holocanthus imperator",
+          "printed_lexical_notes_ocr": [
+            "kallu ‘stone’, DEDR 1298; köli ‘cock, \nfowl’, D ED R 2248",
+            "Cf. koli-mi!J,."
+          ],
+          "dedr_references_ocr": [
+            "DEDR 1298",
+            "DEDR 2248"
+          ],
+          "raw_entry_text_ocr": "kallu-k-köli-m m  [kallu ‘stone’, DEDR 1298; köli ‘cock, \nfowl’, D ED R 2248] ‘a sea-fish, bluish, Holocanthus \nimperator; katal-m itt-vakai? [Cf. koli-mi!J,.]",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 297,
+              "printed_page": 280,
+              "column": 1,
+              "bbox_pdf_points": [
+                330,
+                137.14,
+                565,
+                172.54
+              ],
+              "raw_text": "kallu-k-köli-m m  [kallu ‘stone’, DEDR 1298; köli ‘cock, \nfowl’, D ED R 2248] ‘a sea-fish, bluish, Holocanthus \nimperator; katal-m itt-vakai? [Cf. koli-mi!J,.]"
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "kallu",
+            "k",
+            "kōḻi",
+            "mīṉ"
+          ]
+        },
+        "first": {
+          "entry_id": "tamil_app_280_17",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "F",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "fish"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "kaṉ-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "kaṉ",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "bride-fish, Lutjanus marginatus",
+          "printed_lexical_notes_ocr": [
+            "J [kal ‘stone’, DEDR 1298",
+            "‘one kind of sea-fish’"
+          ],
+          "dedr_references_ocr": [
+            "DEDR 1298"
+          ],
+          "raw_entry_text_ocr": "ka'!}-mi'[J [kal ‘stone’, DEDR 1298] ‘bride-fish, purplish- \nyellow, attaining 16 inches in length, Lutjanus marginatus; \noru -vakai-k katal-m in [‘one kind of sea-fish’]’.",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 297,
+              "printed_page": 280,
+              "column": 1,
+              "bbox_pdf_points": [
+                330,
+                194.39,
+                565,
+                229.79
+              ],
+              "raw_text": "ka'!}-mi'[J [kal ‘stone’, DEDR 1298] ‘bride-fish, purplish- \nyellow, attaining 16 inches in length, Lutjanus marginatus; \noru -vakai-k katal-m in [‘one kind of sea-fish’]’."
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "kaṉ",
+            "mīṉ"
+          ]
+        },
+        "second": {
+          "entry_id": "tamil_app_281_07",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "F",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "fish"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "kōḻi-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "kōḻi",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "sturgeon, Achanthurus gahm as source spells it",
+          "printed_lexical_notes_ocr": [
+            "köli ‘cock, \nfowl’, \nD E D R  2248",
+            "Cf. kallu-k-köli-m iy; m ancat-köli-m iy."
+          ],
+          "dedr_references_ocr": [
+            "DEDR  2248"
+          ],
+          "raw_entry_text_ocr": "köli-m iy \n[köli ‘cock, \nfowl’, \nD E D R  2248] ‘sturgeon, \nblackish-brown, attaining 18 inches in length, Achanthurus \ngahm; p a tiyett’ atikula nifamum karu-niram um  ulla katal- \nm iy- va k a i'. [Cf. kallu-k-köli-m iy; m ancat-köli-m iy.]",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 298,
+              "printed_page": 281,
+              "column": 0,
+              "bbox_pdf_points": [
+                52,
+                422.09,
+                280,
+                468.64
+              ],
+              "raw_text": "köli-m iy \n[köli ‘cock, \nfowl’, \nD E D R  2248] ‘sturgeon, \nblackish-brown, attaining 18 inches in length, Achanthurus \ngahm; p a tiyett’ atikula nifamum karu-niram um  ulla katal- \nm iy- va k a i'. [Cf. kallu-k-köli-m iy; m ancat-köli-m iy.]"
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "kōḻi",
+            "mīṉ"
+          ]
+        },
+        "source_supported_lemma_relation": "STONE via DEDR1298 source brackets",
+        "boundary_segment_analysis": "printed single m/k/v segments treated as candidate context-dependent linkers; no productive law asserted"
+      },
+      "repair_cost": {
+        "fixed_modifier_order_rule": 1,
+        "link_segment_context_rules": 1,
+        "stone_family_context_realization_rule": 1
+      },
+      "strict_linear_phonetic_87_59_211": "kalmīṉkōḻi",
+      "correctness_independently_scorable": false,
+      "four_spellings": [
+        {
+          "stored_sequence": [
+            "66"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "66"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "kallukkōḻimīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "87",
+            "60"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "87",
+                "60"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "kallukkōḻimīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "65",
+            "211"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "65",
+                "211"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "kallukkōḻimīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "87",
+            "59",
+            "211"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "87",
+                "59",
+                "211"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "kallukkōḻimīṉ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D-TAMIL-JOINT-01",
+      "mapping": {
+        "59": "mīṉ",
+        "65": "kōḻimīṉ",
+        "60": "kaṉmīṉ",
+        "66": "kallukkōḻimīṉ",
+        "87": "kōḻi",
+        "211": "kal"
+      },
+      "morphological_operations": {
+        "87": "add ROOF modifier to fish expression",
+        "211": "add TICK modifier to fish expression",
+        "canonical_order": [
+          "STONE",
+          "kōḻi"
+        ]
+      },
+      "source_lexical_records": {
+        "modifier_keys": [
+          "STONE",
+          "kōḻi"
+        ],
+        "double": {
+          "entry_id": "tamil_app_280_15",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "F",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "fish"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "kallu-k-kōḻi-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "kallu",
+            "k",
+            "kōḻi",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "blue sea fish, Holocanthus imperator",
+          "printed_lexical_notes_ocr": [
+            "kallu ‘stone’, DEDR 1298; köli ‘cock, \nfowl’, D ED R 2248",
+            "Cf. koli-mi!J,."
+          ],
+          "dedr_references_ocr": [
+            "DEDR 1298",
+            "DEDR 2248"
+          ],
+          "raw_entry_text_ocr": "kallu-k-köli-m m  [kallu ‘stone’, DEDR 1298; köli ‘cock, \nfowl’, D ED R 2248] ‘a sea-fish, bluish, Holocanthus \nimperator; katal-m itt-vakai? [Cf. koli-mi!J,.]",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 297,
+              "printed_page": 280,
+              "column": 1,
+              "bbox_pdf_points": [
+                330,
+                137.14,
+                565,
+                172.54
+              ],
+              "raw_text": "kallu-k-köli-m m  [kallu ‘stone’, DEDR 1298; köli ‘cock, \nfowl’, D ED R 2248] ‘a sea-fish, bluish, Holocanthus \nimperator; katal-m itt-vakai? [Cf. koli-mi!J,.]"
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "kallu",
+            "k",
+            "kōḻi",
+            "mīṉ"
+          ]
+        },
+        "first": {
+          "entry_id": "tamil_app_280_17",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "F",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "fish"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "kaṉ-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "kaṉ",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "bride-fish, Lutjanus marginatus",
+          "printed_lexical_notes_ocr": [
+            "J [kal ‘stone’, DEDR 1298",
+            "‘one kind of sea-fish’"
+          ],
+          "dedr_references_ocr": [
+            "DEDR 1298"
+          ],
+          "raw_entry_text_ocr": "ka'!}-mi'[J [kal ‘stone’, DEDR 1298] ‘bride-fish, purplish- \nyellow, attaining 16 inches in length, Lutjanus marginatus; \noru -vakai-k katal-m in [‘one kind of sea-fish’]’.",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 297,
+              "printed_page": 280,
+              "column": 1,
+              "bbox_pdf_points": [
+                330,
+                194.39,
+                565,
+                229.79
+              ],
+              "raw_text": "ka'!}-mi'[J [kal ‘stone’, DEDR 1298] ‘bride-fish, purplish- \nyellow, attaining 16 inches in length, Lutjanus marginatus; \noru -vakai-k katal-m in [‘one kind of sea-fish’]’."
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "kaṉ",
+            "mīṉ"
+          ]
+        },
+        "second": {
+          "entry_id": "tamil_app_281_07",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "F",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "fish"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "kōḻi-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "kōḻi",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "sturgeon, Achanthurus gahm as source spells it",
+          "printed_lexical_notes_ocr": [
+            "köli ‘cock, \nfowl’, \nD E D R  2248",
+            "Cf. kallu-k-köli-m iy; m ancat-köli-m iy."
+          ],
+          "dedr_references_ocr": [
+            "DEDR  2248"
+          ],
+          "raw_entry_text_ocr": "köli-m iy \n[köli ‘cock, \nfowl’, \nD E D R  2248] ‘sturgeon, \nblackish-brown, attaining 18 inches in length, Achanthurus \ngahm; p a tiyett’ atikula nifamum karu-niram um  ulla katal- \nm iy- va k a i'. [Cf. kallu-k-köli-m iy; m ancat-köli-m iy.]",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 298,
+              "printed_page": 281,
+              "column": 0,
+              "bbox_pdf_points": [
+                52,
+                422.09,
+                280,
+                468.64
+              ],
+              "raw_text": "köli-m iy \n[köli ‘cock, \nfowl’, \nD E D R  2248] ‘sturgeon, \nblackish-brown, attaining 18 inches in length, Achanthurus \ngahm; p a tiyett’ atikula nifamum karu-niram um  ulla katal- \nm iy- va k a i'. [Cf. kallu-k-köli-m iy; m ancat-köli-m iy.]"
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "kōḻi",
+            "mīṉ"
+          ]
+        },
+        "source_supported_lemma_relation": "STONE via DEDR1298 source brackets",
+        "boundary_segment_analysis": "printed single m/k/v segments treated as candidate context-dependent linkers; no productive law asserted"
+      },
+      "repair_cost": {
+        "fixed_modifier_order_rule": 1,
+        "link_segment_context_rules": 1,
+        "stone_family_context_realization_rule": 1
+      },
+      "strict_linear_phonetic_87_59_211": "kōḻimīṉkal",
+      "correctness_independently_scorable": false,
+      "four_spellings": [
+        {
+          "stored_sequence": [
+            "66"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "66"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "kallukkōḻimīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "87",
+            "60"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "87",
+                "60"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "kallukkōḻimīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "65",
+            "211"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "65",
+                "211"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "kallukkōḻimīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "87",
+            "59",
+            "211"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "87",
+                "59",
+                "211"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "kallukkōḻimīṉ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D-TAMIL-JOINT-02",
+      "mapping": {
+        "59": "mīṉ",
+        "65": "neymmīṉ",
+        "60": "vāṉmīṉ",
+        "66": "neyvāṉmīṉ",
+        "87": "ney",
+        "211": "vāṉ"
+      },
+      "morphological_operations": {
+        "87": "add ROOF modifier to fish expression",
+        "211": "add TICK modifier to fish expression",
+        "canonical_order": [
+          "ney",
+          "vāṉ"
+        ]
+      },
+      "source_lexical_records": {
+        "modifier_keys": [
+          "ney",
+          "vāṉ"
+        ],
+        "double": {
+          "entry_id": "tamil_app_281_22",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "S",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "star"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "ney-vāṉ-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "ney",
+            "vāṉ",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "fourteenth nakshatra",
+          "printed_lexical_notes_ocr": [
+            "ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381",
+            "<Sanskrit \ncitrii"
+          ],
+          "dedr_references_ocr": [
+            "DEDR  3746",
+            "DEDR  \n5381"
+          ],
+          "raw_entry_text_ocr": "ney-viiy-m iy [ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381] ‘the fourteenth naksatra; cittirai-niif [<Sanskrit \ncitrii]' (Cëntan Tivakaran).",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 298,
+              "printed_page": 281,
+              "column": 1,
+              "bbox_pdf_points": [
+                310,
+                444.79,
+                562,
+                480.14
+              ],
+              "raw_text": "ney-viiy-m iy [ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381] ‘the fourteenth naksatra; cittirai-niif [<Sanskrit \ncitrii]' (Cëntan Tivakaran)."
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "ney",
+            "vāṉ",
+            "mīṉ"
+          ]
+        },
+        "first": {
+          "entry_id": "tamil_app_281_21",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "SF",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "fish",
+            "star"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "ney-m-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "ney",
+            "m",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "fourteenth nakshatra by synonym; white prawn",
+          "printed_lexical_notes_ocr": [
+            "ney ‘oil, ghee, fat’, D E D R  3746"
+          ],
+          "dedr_references_ocr": [
+            "DEDR  3746"
+          ],
+          "raw_entry_text_ocr": "ney-m -m iy [ney ‘oil, ghee, fat’, D E D R  3746] (i) =  ney-vii!J- \nm iy (Pinkala-nikantu); \n(2) \n‘white \nprawn; \nve l-l-iru f, \n(Winslow.)",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 298,
+              "printed_page": 281,
+              "column": 1,
+              "bbox_pdf_points": [
+                310,
+                410.39,
+                562,
+                445.79
+              ],
+              "raw_text": "ney-m -m iy [ney ‘oil, ghee, fat’, D E D R  3746] (i) =  ney-vii!J- \nm iy (Pinkala-nikantu); \n(2) \n‘white \nprawn; \nve l-l-iru f, \n(Winslow.)"
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "ney",
+            "m",
+            "mīṉ"
+          ]
+        },
+        "second": {
+          "entry_id": "tamil_app_283_04",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "S",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "star"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "vāṉ-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "vāṉ",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "star",
+          "printed_lexical_notes_ocr": [
+            "viiy ‘sky’, D E D R  5381"
+          ],
+          "dedr_references_ocr": [
+            "DEDR  5381"
+          ],
+          "raw_entry_text_ocr": "(1) viiy-m iy [viiy ‘sky’, D E D R  5381] ‘star; nafcattiram ’ \n(Purananiiru Arum.). Cf. ney-viiy-m tn.",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 300,
+              "printed_page": 283,
+              "column": 0,
+              "bbox_pdf_points": [
+                52,
+                168.34,
+                280,
+                192.39
+              ],
+              "raw_text": "(1) viiy-m iy [viiy ‘sky’, D E D R  5381] ‘star; nafcattiram ’ \n(Purananiiru Arum.). Cf. ney-viiy-m tn."
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "vāṉ",
+            "mīṉ"
+          ]
+        },
+        "source_supported_lemma_relation": null,
+        "boundary_segment_analysis": "printed single m/k/v segments treated as candidate context-dependent linkers; no productive law asserted"
+      },
+      "repair_cost": {
+        "fixed_modifier_order_rule": 1,
+        "link_segment_context_rules": 1,
+        "stone_family_context_realization_rule": 0
+      },
+      "strict_linear_phonetic_87_59_211": "neymīṉvāṉ",
+      "correctness_independently_scorable": false,
+      "four_spellings": [
+        {
+          "stored_sequence": [
+            "66"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "66"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "neyvāṉmīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "87",
+            "60"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "87",
+                "60"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "neyvāṉmīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "65",
+            "211"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "65",
+                "211"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "neyvāṉmīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "87",
+            "59",
+            "211"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "87",
+                "59",
+                "211"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "neyvāṉmīṉ"
+            }
+          ]
+        }
+      ],
+      "alternative_source_lexical_records": [
+        {
+          "modifier_keys": [
+            "ney",
+            "vāṉ"
+          ],
+          "double": {
+            "entry_id": "tamil_app_281_22",
+            "language": "Tamil",
+            "entry_type": "category_marked_lexical_entry",
+            "source_category_code": "S",
+            "source_category_code_origin": "embedded_pdf_ocr",
+            "compound_senses": [
+              "star"
+            ],
+            "first_component_only_star_sense": false,
+            "printed_form_transcription": "ney-vāṉ-mīṉ",
+            "form_status": "visually_transcribed",
+            "form_uncertainty": null,
+            "segmentation_as_printed": [
+              "ney",
+              "vāṉ",
+              "mīṉ"
+            ],
+            "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+            "gloss_summary": "fourteenth nakshatra",
+            "printed_lexical_notes_ocr": [
+              "ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381",
+              "<Sanskrit \ncitrii"
+            ],
+            "dedr_references_ocr": [
+              "DEDR  3746",
+              "DEDR  \n5381"
+            ],
+            "raw_entry_text_ocr": "ney-viiy-m iy [ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381] ‘the fourteenth naksatra; cittirai-niif [<Sanskrit \ncitrii]' (Cëntan Tivakaran).",
+            "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+            "source_regions": [
+              {
+                "pdf_page_index": 298,
+                "printed_page": 281,
+                "column": 1,
+                "bbox_pdf_points": [
+                  310,
+                  444.79,
+                  562,
+                  480.14
+                ],
+                "raw_text": "ney-viiy-m iy [ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381] ‘the fourteenth naksatra; cittirai-niif [<Sanskrit \ncitrii]' (Cëntan Tivakaran)."
+              }
+            ],
+            "phonology_test_eligible": true,
+            "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+            "indus_assignment": null,
+            "segmentation_for_search": [
+              "ney",
+              "vāṉ",
+              "mīṉ"
+            ]
+          },
+          "first": {
+            "entry_id": "tamil_app_281_21",
+            "language": "Tamil",
+            "entry_type": "category_marked_lexical_entry",
+            "source_category_code": "SF",
+            "source_category_code_origin": "embedded_pdf_ocr",
+            "compound_senses": [
+              "fish",
+              "star"
+            ],
+            "first_component_only_star_sense": false,
+            "printed_form_transcription": "ney-m-mīṉ",
+            "form_status": "visually_transcribed",
+            "form_uncertainty": null,
+            "segmentation_as_printed": [
+              "ney",
+              "m",
+              "mīṉ"
+            ],
+            "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+            "gloss_summary": "fourteenth nakshatra by synonym; white prawn",
+            "printed_lexical_notes_ocr": [
+              "ney ‘oil, ghee, fat’, D E D R  3746"
+            ],
+            "dedr_references_ocr": [
+              "DEDR  3746"
+            ],
+            "raw_entry_text_ocr": "ney-m -m iy [ney ‘oil, ghee, fat’, D E D R  3746] (i) =  ney-vii!J- \nm iy (Pinkala-nikantu); \n(2) \n‘white \nprawn; \nve l-l-iru f, \n(Winslow.)",
+            "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+            "source_regions": [
+              {
+                "pdf_page_index": 298,
+                "printed_page": 281,
+                "column": 1,
+                "bbox_pdf_points": [
+                  310,
+                  410.39,
+                  562,
+                  445.79
+                ],
+                "raw_text": "ney-m -m iy [ney ‘oil, ghee, fat’, D E D R  3746] (i) =  ney-vii!J- \nm iy (Pinkala-nikantu); \n(2) \n‘white \nprawn; \nve l-l-iru f, \n(Winslow.)"
+              }
+            ],
+            "phonology_test_eligible": true,
+            "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+            "indus_assignment": null,
+            "segmentation_for_search": [
+              "ney",
+              "m",
+              "mīṉ"
+            ]
+          },
+          "second": {
+            "entry_id": "tamil_app_283_05",
+            "language": "Tamil",
+            "entry_type": "category_marked_lexical_entry",
+            "source_category_code": "S",
+            "source_category_code_origin": "embedded_pdf_ocr",
+            "compound_senses": [
+              "star"
+            ],
+            "first_component_only_star_sense": false,
+            "printed_form_transcription": "vāṉ-mīṉ",
+            "form_status": "visually_transcribed",
+            "form_uncertainty": null,
+            "segmentation_as_printed": [
+              "vāṉ",
+              "mīṉ"
+            ],
+            "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+            "gloss_summary": "comet",
+            "printed_lexical_notes_ocr": [
+              "viil ‘tail’ < Sanskrit viila- ‘hair, tail’, D E D R  \nApp. 57"
+            ],
+            "dedr_references_ocr": [
+              "DEDR  \nApp. 57"
+            ],
+            "raw_entry_text_ocr": "(2) viiy-m iy [viil ‘tail’ < Sanskrit viila- ‘hair, tail’, D E D R  \nApp. 57] ‘comet’ =  viil-m iy (Pinkala-nikantu).",
+            "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+            "source_regions": [
+              {
+                "pdf_page_index": 300,
+                "printed_page": 283,
+                "column": 0,
+                "bbox_pdf_points": [
+                  52,
+                  191.39,
+                  280,
+                  215.44
+                ],
+                "raw_text": "(2) viiy-m iy [viil ‘tail’ < Sanskrit viila- ‘hair, tail’, D E D R  \nApp. 57] ‘comet’ =  viil-m iy (Pinkala-nikantu)."
+              }
+            ],
+            "phonology_test_eligible": true,
+            "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+            "indus_assignment": null,
+            "segmentation_for_search": [
+              "vāṉ",
+              "mīṉ"
+            ]
+          },
+          "source_supported_lemma_relation": null,
+          "boundary_segment_analysis": "printed single m/k/v segments treated as candidate context-dependent linkers; no productive law asserted"
+        }
+      ]
+    },
+    {
+      "id": "D-TAMIL-JOINT-03",
+      "mapping": {
+        "59": "mīṉ",
+        "65": "vāṉmīṉ",
+        "60": "neymmīṉ",
+        "66": "neyvāṉmīṉ",
+        "87": "vāṉ",
+        "211": "ney"
+      },
+      "morphological_operations": {
+        "87": "add ROOF modifier to fish expression",
+        "211": "add TICK modifier to fish expression",
+        "canonical_order": [
+          "ney",
+          "vāṉ"
+        ]
+      },
+      "source_lexical_records": {
+        "modifier_keys": [
+          "ney",
+          "vāṉ"
+        ],
+        "double": {
+          "entry_id": "tamil_app_281_22",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "S",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "star"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "ney-vāṉ-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "ney",
+            "vāṉ",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "fourteenth nakshatra",
+          "printed_lexical_notes_ocr": [
+            "ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381",
+            "<Sanskrit \ncitrii"
+          ],
+          "dedr_references_ocr": [
+            "DEDR  3746",
+            "DEDR  \n5381"
+          ],
+          "raw_entry_text_ocr": "ney-viiy-m iy [ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381] ‘the fourteenth naksatra; cittirai-niif [<Sanskrit \ncitrii]' (Cëntan Tivakaran).",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 298,
+              "printed_page": 281,
+              "column": 1,
+              "bbox_pdf_points": [
+                310,
+                444.79,
+                562,
+                480.14
+              ],
+              "raw_text": "ney-viiy-m iy [ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381] ‘the fourteenth naksatra; cittirai-niif [<Sanskrit \ncitrii]' (Cëntan Tivakaran)."
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "ney",
+            "vāṉ",
+            "mīṉ"
+          ]
+        },
+        "first": {
+          "entry_id": "tamil_app_281_21",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "SF",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "fish",
+            "star"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "ney-m-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "ney",
+            "m",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "fourteenth nakshatra by synonym; white prawn",
+          "printed_lexical_notes_ocr": [
+            "ney ‘oil, ghee, fat’, D E D R  3746"
+          ],
+          "dedr_references_ocr": [
+            "DEDR  3746"
+          ],
+          "raw_entry_text_ocr": "ney-m -m iy [ney ‘oil, ghee, fat’, D E D R  3746] (i) =  ney-vii!J- \nm iy (Pinkala-nikantu); \n(2) \n‘white \nprawn; \nve l-l-iru f, \n(Winslow.)",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 298,
+              "printed_page": 281,
+              "column": 1,
+              "bbox_pdf_points": [
+                310,
+                410.39,
+                562,
+                445.79
+              ],
+              "raw_text": "ney-m -m iy [ney ‘oil, ghee, fat’, D E D R  3746] (i) =  ney-vii!J- \nm iy (Pinkala-nikantu); \n(2) \n‘white \nprawn; \nve l-l-iru f, \n(Winslow.)"
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "ney",
+            "m",
+            "mīṉ"
+          ]
+        },
+        "second": {
+          "entry_id": "tamil_app_283_04",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "S",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "star"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "vāṉ-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "vāṉ",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "star",
+          "printed_lexical_notes_ocr": [
+            "viiy ‘sky’, D E D R  5381"
+          ],
+          "dedr_references_ocr": [
+            "DEDR  5381"
+          ],
+          "raw_entry_text_ocr": "(1) viiy-m iy [viiy ‘sky’, D E D R  5381] ‘star; nafcattiram ’ \n(Purananiiru Arum.). Cf. ney-viiy-m tn.",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 300,
+              "printed_page": 283,
+              "column": 0,
+              "bbox_pdf_points": [
+                52,
+                168.34,
+                280,
+                192.39
+              ],
+              "raw_text": "(1) viiy-m iy [viiy ‘sky’, D E D R  5381] ‘star; nafcattiram ’ \n(Purananiiru Arum.). Cf. ney-viiy-m tn."
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "vāṉ",
+            "mīṉ"
+          ]
+        },
+        "source_supported_lemma_relation": null,
+        "boundary_segment_analysis": "printed single m/k/v segments treated as candidate context-dependent linkers; no productive law asserted"
+      },
+      "repair_cost": {
+        "fixed_modifier_order_rule": 1,
+        "link_segment_context_rules": 1,
+        "stone_family_context_realization_rule": 0
+      },
+      "strict_linear_phonetic_87_59_211": "vāṉmīṉney",
+      "correctness_independently_scorable": false,
+      "four_spellings": [
+        {
+          "stored_sequence": [
+            "66"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "66"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "neyvāṉmīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "87",
+            "60"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "87",
+                "60"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "neyvāṉmīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "65",
+            "211"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "65",
+                "211"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "neyvāṉmīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "87",
+            "59",
+            "211"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "87",
+                "59",
+                "211"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "neyvāṉmīṉ"
+            }
+          ]
+        }
+      ],
+      "alternative_source_lexical_records": [
+        {
+          "modifier_keys": [
+            "ney",
+            "vāṉ"
+          ],
+          "double": {
+            "entry_id": "tamil_app_281_22",
+            "language": "Tamil",
+            "entry_type": "category_marked_lexical_entry",
+            "source_category_code": "S",
+            "source_category_code_origin": "embedded_pdf_ocr",
+            "compound_senses": [
+              "star"
+            ],
+            "first_component_only_star_sense": false,
+            "printed_form_transcription": "ney-vāṉ-mīṉ",
+            "form_status": "visually_transcribed",
+            "form_uncertainty": null,
+            "segmentation_as_printed": [
+              "ney",
+              "vāṉ",
+              "mīṉ"
+            ],
+            "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+            "gloss_summary": "fourteenth nakshatra",
+            "printed_lexical_notes_ocr": [
+              "ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381",
+              "<Sanskrit \ncitrii"
+            ],
+            "dedr_references_ocr": [
+              "DEDR  3746",
+              "DEDR  \n5381"
+            ],
+            "raw_entry_text_ocr": "ney-viiy-m iy [ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381] ‘the fourteenth naksatra; cittirai-niif [<Sanskrit \ncitrii]' (Cëntan Tivakaran).",
+            "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+            "source_regions": [
+              {
+                "pdf_page_index": 298,
+                "printed_page": 281,
+                "column": 1,
+                "bbox_pdf_points": [
+                  310,
+                  444.79,
+                  562,
+                  480.14
+                ],
+                "raw_text": "ney-viiy-m iy [ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381] ‘the fourteenth naksatra; cittirai-niif [<Sanskrit \ncitrii]' (Cëntan Tivakaran)."
+              }
+            ],
+            "phonology_test_eligible": true,
+            "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+            "indus_assignment": null,
+            "segmentation_for_search": [
+              "ney",
+              "vāṉ",
+              "mīṉ"
+            ]
+          },
+          "first": {
+            "entry_id": "tamil_app_281_21",
+            "language": "Tamil",
+            "entry_type": "category_marked_lexical_entry",
+            "source_category_code": "SF",
+            "source_category_code_origin": "embedded_pdf_ocr",
+            "compound_senses": [
+              "fish",
+              "star"
+            ],
+            "first_component_only_star_sense": false,
+            "printed_form_transcription": "ney-m-mīṉ",
+            "form_status": "visually_transcribed",
+            "form_uncertainty": null,
+            "segmentation_as_printed": [
+              "ney",
+              "m",
+              "mīṉ"
+            ],
+            "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+            "gloss_summary": "fourteenth nakshatra by synonym; white prawn",
+            "printed_lexical_notes_ocr": [
+              "ney ‘oil, ghee, fat’, D E D R  3746"
+            ],
+            "dedr_references_ocr": [
+              "DEDR  3746"
+            ],
+            "raw_entry_text_ocr": "ney-m -m iy [ney ‘oil, ghee, fat’, D E D R  3746] (i) =  ney-vii!J- \nm iy (Pinkala-nikantu); \n(2) \n‘white \nprawn; \nve l-l-iru f, \n(Winslow.)",
+            "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+            "source_regions": [
+              {
+                "pdf_page_index": 298,
+                "printed_page": 281,
+                "column": 1,
+                "bbox_pdf_points": [
+                  310,
+                  410.39,
+                  562,
+                  445.79
+                ],
+                "raw_text": "ney-m -m iy [ney ‘oil, ghee, fat’, D E D R  3746] (i) =  ney-vii!J- \nm iy (Pinkala-nikantu); \n(2) \n‘white \nprawn; \nve l-l-iru f, \n(Winslow.)"
+              }
+            ],
+            "phonology_test_eligible": true,
+            "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+            "indus_assignment": null,
+            "segmentation_for_search": [
+              "ney",
+              "m",
+              "mīṉ"
+            ]
+          },
+          "second": {
+            "entry_id": "tamil_app_283_05",
+            "language": "Tamil",
+            "entry_type": "category_marked_lexical_entry",
+            "source_category_code": "S",
+            "source_category_code_origin": "embedded_pdf_ocr",
+            "compound_senses": [
+              "star"
+            ],
+            "first_component_only_star_sense": false,
+            "printed_form_transcription": "vāṉ-mīṉ",
+            "form_status": "visually_transcribed",
+            "form_uncertainty": null,
+            "segmentation_as_printed": [
+              "vāṉ",
+              "mīṉ"
+            ],
+            "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+            "gloss_summary": "comet",
+            "printed_lexical_notes_ocr": [
+              "viil ‘tail’ < Sanskrit viila- ‘hair, tail’, D E D R  \nApp. 57"
+            ],
+            "dedr_references_ocr": [
+              "DEDR  \nApp. 57"
+            ],
+            "raw_entry_text_ocr": "(2) viiy-m iy [viil ‘tail’ < Sanskrit viila- ‘hair, tail’, D E D R  \nApp. 57] ‘comet’ =  viil-m iy (Pinkala-nikantu).",
+            "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+            "source_regions": [
+              {
+                "pdf_page_index": 300,
+                "printed_page": 283,
+                "column": 0,
+                "bbox_pdf_points": [
+                  52,
+                  191.39,
+                  280,
+                  215.44
+                ],
+                "raw_text": "(2) viiy-m iy [viil ‘tail’ < Sanskrit viila- ‘hair, tail’, D E D R  \nApp. 57] ‘comet’ =  viil-m iy (Pinkala-nikantu)."
+              }
+            ],
+            "phonology_test_eligible": true,
+            "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+            "indus_assignment": null,
+            "segmentation_for_search": [
+              "vāṉ",
+              "mīṉ"
+            ]
+          },
+          "source_supported_lemma_relation": null,
+          "boundary_segment_analysis": "printed single m/k/v segments treated as candidate context-dependent linkers; no productive law asserted"
+        }
+      ]
+    }
+  ],
+  "not_independent_confirmation": "All spelling equality is a consequence of A operations and chosen lexical states. No source object is independently named stone/cock/fish, ghee/sky/star, or mīṉ.",
+  "rivals": [
+    "87=two-long-stroke quantity in a context-specific counting construction;211 unknown nonphonetic operator",
+    "87 and211 are anonymous classifiers on fish-like base, with no pronunciation",
+    "roof and ticks are graphical distinctions not productive phonetic additions"
+  ],
+  "scope": "Only59/65/60/66 lattice. Bases67/68/72/73 remain unread unless separately constrained."
+}

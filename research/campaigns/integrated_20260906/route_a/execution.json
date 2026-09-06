@@ -1,0 +1,30 @@
+{
+  "commands": [
+    "python research/campaigns/integrated_20260906/route_a/run_route_a.py",
+    "python research/campaigns/integrated_20260906/route_a/adjudicate_composition.py",
+    "python research/campaigns/integrated_20260906/route_a/build_report.py"
+  ],
+  "source_sha256": "6a0c597986783c5da8fbcb0afc3268a2c6a9f042a9b81746ebc4f89158efbd01",
+  "script_sha256": {
+    "adjudicate_composition.py": "5640dbcdd3b9ca9a28218b4bc4263b435a020023283b4da27a9a5f197b93f55e",
+    "build_report.py": "82515c2c441b0ff0b0058f2d3becb6b342ffd8ff9bfb488783ef4b25e62a5a71",
+    "run_route_a.py": "3d549fb9e382f77ee393af1f0ef4078b47f26ecbd307d426371ae2ad99e3e0f2"
+  },
+  "executed_outputs": [
+    "summary.json",
+    "composition_adjudication.json",
+    "roof_lattice_predictions.json",
+    "boundary_predictions.json",
+    "candidates.json",
+    "REPORT.md"
+  ],
+  "task_steps": {
+    "13": "executed; interpretation unresolved where stated",
+    "14": "executed; interpretation unresolved where stated",
+    "15": "executed; interpretation unresolved where stated",
+    "16": "executed; interpretation unresolved where stated",
+    "17": "executed; interpretation unresolved where stated",
+    "18": "executed; interpretation unresolved where stated"
+  },
+  "accepted_readings_added": 0
+}

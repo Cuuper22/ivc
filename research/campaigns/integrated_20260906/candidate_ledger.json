@@ -1,0 +1,3461 @@
+{
+  "accepted_readings_added": 0,
+  "candidates": [
+    {
+      "route": "A",
+      "namespace": "Mahadevan1977",
+      "context": "Source stored sign order; strict expressions collapsed; raw observations never rewritten",
+      "prerequisites": [
+        "Frozen Mahadevan1977 source",
+        "Declared graphical feature hypotheses"
+      ],
+      "support": {
+        "old_exact_context_pairs": 6,
+        "one_edit_pairs_with_two_anchors": 10,
+        "structured_compact_texts": 4,
+        "structured_distinct_bases": [
+          59,
+          65,
+          72
+        ],
+        "predictions": "boundary_predictions.json"
+      },
+      "contradictions": [
+        "No referent-equivalence observation independently validates this operation",
+        "Whole-line mark/211 exclusion has a direct counterexample, which does not refute a local operation"
+      ],
+      "alternatives": [
+        "Unrelated expressions sharing a conventional slot",
+        "Contextual category rather than synonymy",
+        "Phonetic or meaning-bearing operation not identified"
+      ],
+      "parameters": {},
+      "complexity": {
+        "operations": 1,
+        "marker_selection_bits": 8.703903573444663,
+        "operation_opcode_bits": 2,
+        "graphical_mapping": "five already declared pairs; no free per-object exception"
+      },
+      "predictions": [
+        "Expand marked fish to corresponding base followed by211; then test target continuation or independently supplied referential field."
+      ],
+      "source_paths": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/data/semantic_search_20260906/graphic_hypotheses.json"
+      ],
+      "prior_exposure": "Retrospective. Corpus and prior exact relations exposed; new composed pair noticed after running frozen operations.",
+      "id": "A-FISH211",
+      "status": "conditional",
+      "claim_type": "graphical_equivalence",
+      "rule": {
+        "executable": "run_route_a.normalize_sequence(sequence, model=\"fish211\")",
+        "mapping": {
+          "60": [
+            "59",
+            "211"
+          ],
+          "66": [
+            "65",
+            "211"
+          ],
+          "68": [
+            "67",
+            "211"
+          ],
+          "71": [
+            "70",
+            "211"
+          ],
+          "73": [
+            "72",
+            "211"
+          ]
+        }
+      },
+      "record_file": "research/campaigns/integrated_20260906/route_a/candidates.json",
+      "source_paths_resolved": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/data/semantic_search_20260906/graphic_hypotheses.json"
+      ]
+    },
+    {
+      "route": "A",
+      "namespace": "Mahadevan1977",
+      "context": "Source stored sign order; strict expressions collapsed; raw observations never rewritten",
+      "prerequisites": [
+        "Frozen Mahadevan1977 source",
+        "Declared graphical feature hypotheses"
+      ],
+      "support": {
+        "declared_graphical_pairs": 22
+      },
+      "contradictions": [
+        "No structured211 match outside fish;342 has16 pairs across6 bases versus21111 pairs across3 fish bases"
+      ],
+      "alternatives": [
+        "Unrelated expressions sharing a conventional slot",
+        "Contextual category rather than synonymy",
+        "Phonetic or meaning-bearing operation not identified"
+      ],
+      "parameters": {},
+      "complexity": {
+        "operations": 1,
+        "applicability_pairs": 22
+      },
+      "predictions": [
+        "Same expansion must explain nonfish applications if broad scope is claimed."
+      ],
+      "source_paths": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/data/semantic_search_20260906/graphic_hypotheses.json"
+      ],
+      "prior_exposure": "Retrospective. Corpus and prior exact relations exposed; new composed pair noticed after running frozen operations.",
+      "id": "A-GLOBAL211",
+      "status": "underdetermined",
+      "claim_type": "graphical_equivalence",
+      "rule": {
+        "executable": "run_route_a.normalize_sequence(sequence, model=\"global211\")"
+      },
+      "record_file": "research/campaigns/integrated_20260906/route_a/candidates.json",
+      "source_paths_resolved": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/data/semantic_search_20260906/graphic_hypotheses.json"
+      ]
+    },
+    {
+      "route": "A",
+      "namespace": "Mahadevan1977",
+      "context": "Source stored sign order; strict expressions collapsed; raw observations never rewritten",
+      "prerequisites": [
+        "Frozen Mahadevan1977 source",
+        "Declared graphical feature hypotheses"
+      ],
+      "support": {
+        "target_occurrences": 50,
+        "weighted_target_mass": 44.333333333333336,
+        "predictive_bits": {
+          "bare_base": 323.09808980627895,
+          "base_then211": 135.17116167959824,
+          "all211": 146.11091795515173,
+          "marked_other_base": 145.21315127552086,
+          "terminal_category": 141.52363779509446,
+          "marked_objectclass": 168.1491971769737,
+          "marked_catalogue_prefix": 157.38236567860466
+        }
+      },
+      "contradictions": [],
+      "alternatives": [
+        "Unrelated expressions sharing a conventional slot",
+        "Contextual category rather than synonymy",
+        "Phonetic or meaning-bearing operation not identified"
+      ],
+      "parameters": {},
+      "complexity": {
+        "ending_category_parameters": 1,
+        "training_background": "shared, train-only"
+      },
+      "predictions": [
+        "Continuation distribution transfers across some fish graphical bases; do not infer that every line ends at a marked sign."
+      ],
+      "source_paths": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/data/semantic_search_20260906/graphic_hypotheses.json"
+      ],
+      "prior_exposure": "Retrospective. Corpus and prior exact relations exposed; new composed pair noticed after running frozen operations.",
+      "id": "A-BOUNDARY211",
+      "status": "supported_scope_limited",
+      "claim_type": "structural_constraint",
+      "rule": "Marked fish have continuation behavior closer to an ending class than to the corresponding bare fish; no synonymy is asserted.",
+      "record_file": "research/campaigns/integrated_20260906/route_a/candidates.json",
+      "source_paths_resolved": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/data/semantic_search_20260906/graphic_hypotheses.json"
+      ]
+    },
+    {
+      "route": "A",
+      "namespace": "Mahadevan1977",
+      "context": "Source stored sign order; strict expressions collapsed; raw observations never rewritten",
+      "prerequisites": [
+        "Frozen Mahadevan1977 source",
+        "Declared graphical feature hypotheses"
+      ],
+      "support": [],
+      "contradictions": [
+        {
+          "row_id": "M77:1147:0",
+          "sequence": [
+            "387",
+            "66",
+            "336",
+            "89",
+            "211"
+          ]
+        }
+      ],
+      "alternatives": [
+        "Unrelated expressions sharing a conventional slot",
+        "Contextual category rather than synonymy",
+        "Phonetic or meaning-bearing operation not identified"
+      ],
+      "parameters": {},
+      "complexity": {
+        "operations": 1
+      },
+      "predictions": [],
+      "source_paths": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/data/semantic_search_20260906/graphic_hypotheses.json"
+      ],
+      "prior_exposure": "Retrospective. Corpus and prior exact relations exposed; new composed pair noticed after running frozen operations.",
+      "id": "A-211-EXCLUSION",
+      "status": "rejected",
+      "claim_type": "structural_constraint",
+      "rule": "Marked fish and separate211 never coexist within a line.",
+      "record_file": "research/campaigns/integrated_20260906/route_a/candidates.json",
+      "source_paths_resolved": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/data/semantic_search_20260906/graphic_hypotheses.json"
+      ]
+    },
+    {
+      "route": "A",
+      "namespace": "Mahadevan1977",
+      "context": "Source stored sign order; strict expressions collapsed; raw observations never rewritten",
+      "prerequisites": [
+        "Frozen Mahadevan1977 source",
+        "Declared graphical feature hypotheses"
+      ],
+      "support": {
+        "old_two_anchor_contexts": 2,
+        "new_marked_fish_two_anchor_contexts": 1,
+        "all_exact_expression_classes": 4,
+        "source_ids": [
+          "M77:1374",
+          "M77:2913",
+          "M77:2821",
+          "M77:2905",
+          "M77:2906",
+          "M77:7249",
+          "M77:7251",
+          "M77:7255",
+          "M77:7267",
+          "M77:7269",
+          "M77:6211",
+          "M77:4493",
+          "M77:4806",
+          "M77:4556"
+        ],
+        "selected_marker_alternatives": "roof_lattice_predictions.json"
+      },
+      "contradictions": [
+        "102-before has the same two old long-context supports; unobserved new102 counterpart is unknown",
+        "Original two roof87 pairs confound object medium; new tests do not independently prove equal referent"
+      ],
+      "alternatives": [
+        "Unrelated expressions sharing a conventional slot",
+        "Contextual category rather than synonymy",
+        "Phonetic or meaning-bearing operation not identified"
+      ],
+      "parameters": {},
+      "complexity": {
+        "operations": 1,
+        "marker_selection_bits": 8.703903573444663,
+        "placement_bits": 1
+      },
+      "predictions": [
+        "The roof addition becomes87 before the corresponding unroofed fish, including60/66 graphical lattice."
+      ],
+      "source_paths": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/data/semantic_search_20260906/graphic_hypotheses.json"
+      ],
+      "prior_exposure": "Retrospective. Corpus and prior exact relations exposed; new composed pair noticed after running frozen operations.",
+      "id": "A-ROOF87",
+      "status": "conditional",
+      "claim_type": "graphical_equivalence",
+      "rule": {
+        "executable": "run_route_a.normalize_sequence(sequence, model=\"roof87\")",
+        "mapping": {
+          "65": [
+            "87",
+            "59"
+          ],
+          "66": [
+            "87",
+            "60"
+          ]
+        }
+      },
+      "record_file": "research/campaigns/integrated_20260906/route_a/candidates.json",
+      "source_paths_resolved": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/data/semantic_search_20260906/graphic_hypotheses.json"
+      ]
+    },
+    {
+      "route": "A",
+      "namespace": "Mahadevan1977",
+      "context": "Source stored sign order; strict expressions collapsed; raw observations never rewritten",
+      "prerequisites": [
+        "A-FISH211",
+        "A-ROOF87",
+        "Publisher graphical square59/60/65/66"
+      ],
+      "support": {
+        "classes": 10,
+        "distinct_raw_expressions": 21,
+        "pairwise_relations": 12,
+        "cross_operation_pairs": 2,
+        "exclusively_cross_operation_classes": 1,
+        "new_pair_ids": [
+          "M77:1380:0",
+          "M77:2452:0"
+        ],
+        "selected_program_rank": 1,
+        "leave70_family_rank": 1,
+        "candidate_programs": 234,
+        "comparison": "composition_adjudication.json"
+      },
+      "contradictions": [
+        "Raw motif codes differ251/13 for1380/2452 although site and medium match; this is not a lexical anchor",
+        "Under additional equal-face scalar assumption,4493 and4556 have conflicting cup-count outputs4/2; complementary fields remain possible"
+      ],
+      "alternatives": [
+        "A-ROOF102-TICK211",
+        "Roof109-before/tick211-after gives8 classes",
+        "Categorical field substitution without equal referent"
+      ],
+      "parameters": {},
+      "complexity": {
+        "operations": 2,
+        "marker_selection_bits": 17.407807146889326,
+        "placement_bits": 2,
+        "rewriting_priority": "tick then roof; no object-specific exception"
+      },
+      "predictions": [
+        {
+          "source_ids": [
+            "M77:1380:0",
+            "M77:2452:0"
+          ],
+          "left": [
+            "65",
+            "70",
+            "211"
+          ],
+          "right": [
+            "87",
+            "59",
+            "71"
+          ],
+          "common_form": [
+            "87",
+            "59",
+            "70",
+            "211"
+          ],
+          "phonetic_value_for70": null
+        },
+        {
+          "source_ids": [
+            "M77:7249",
+            "M77:6211",
+            "M77:1551"
+          ],
+          "common_form": [
+            "267",
+            "99",
+            "87",
+            "59",
+            "211"
+          ]
+        }
+      ],
+      "source_paths": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/data/semantic_search_20260906/graphic_hypotheses.json"
+      ],
+      "prior_exposure": "Retrospective. Corpus and prior exact relations exposed; new composed pair noticed after running frozen operations.",
+      "id": "A-ROOF87-TICK211",
+      "status": "conditional",
+      "claim_type": "graphical_equivalence",
+      "rule": {
+        "executable": "run_route_a.normalize_sequence(sequence, model=\"fish211_roof87\")",
+        "mapping": {
+          "60": [
+            "59",
+            "211"
+          ],
+          "65": [
+            "87",
+            "59"
+          ],
+          "66": [
+            "87",
+            "59",
+            "211"
+          ],
+          "68": [
+            "67",
+            "211"
+          ],
+          "71": [
+            "70",
+            "211"
+          ],
+          "73": [
+            "72",
+            "211"
+          ]
+        }
+      },
+      "record_file": "research/campaigns/integrated_20260906/route_a/candidates.json",
+      "source_paths_resolved": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/data/semantic_search_20260906/graphic_hypotheses.json"
+      ]
+    },
+    {
+      "route": "A",
+      "namespace": "Mahadevan1977",
+      "context": "Source stored sign order; strict expressions collapsed; raw observations never rewritten",
+      "prerequisites": [
+        "Frozen Mahadevan1977 source",
+        "Declared graphical feature hypotheses"
+      ],
+      "support": {
+        "normal_form_classes": 8,
+        "old_roof102_two_anchor_contexts": 2
+      },
+      "contradictions": [
+        "Does not connect1380/2452 under same program; this does not disprove it as a separate local convention"
+      ],
+      "alternatives": [
+        "Unrelated expressions sharing a conventional slot",
+        "Contextual category rather than synonymy",
+        "Phonetic or meaning-bearing operation not identified"
+      ],
+      "parameters": {},
+      "complexity": {
+        "operations": 2,
+        "marker_selection_bits": 17.407807146889326,
+        "placement_bits": 2
+      },
+      "predictions": [
+        "Compete on independently anchored contexts that distinguish87 and102 outputs."
+      ],
+      "source_paths": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/data/semantic_search_20260906/graphic_hypotheses.json"
+      ],
+      "prior_exposure": "Retrospective. Corpus and prior exact relations exposed; new composed pair noticed after running frozen operations.",
+      "id": "A-ROOF102-TICK211",
+      "status": "conditional",
+      "claim_type": "graphical_equivalence",
+      "rule": {
+        "executable": "run_route_a.normalize_sequence(sequence, model=\"fish211_roof102\")"
+      },
+      "record_file": "research/campaigns/integrated_20260906/route_a/candidates.json",
+      "source_paths_resolved": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/data/semantic_search_20260906/graphic_hypotheses.json"
+      ]
+    },
+    {
+      "route": "A",
+      "namespace": "Mahadevan1977",
+      "context": "Source stored sign order; strict expressions collapsed; raw observations never rewritten",
+      "prerequisites": [
+        "Frozen Mahadevan1977 source",
+        "Declared graphical feature hypotheses"
+      ],
+      "support": {
+        "suffix_unique_texts": 34,
+        "suffix_objects": 38,
+        "standalone_suffix_objects": [
+          "M77:2575",
+          "M77:5089",
+          "M77:7279",
+          "M77:2015"
+        ]
+      },
+      "contradictions": [
+        "387–66 lacks a standalone witness",
+        "No strict211–336 adjacency observed; missing sequence is not a falsifier"
+      ],
+      "alternatives": [
+        "Unrelated expressions sharing a conventional slot",
+        "Contextual category rather than synonymy",
+        "Phonetic or meaning-bearing operation not identified"
+      ],
+      "parameters": {},
+      "complexity": {
+        "new_segmentation_rules": 1
+      },
+      "predictions": [
+        "Test whether336–89 field continuations transfer across linked faces and object classes."
+      ],
+      "source_paths": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/data/semantic_search_20260906/graphic_hypotheses.json"
+      ],
+      "prior_exposure": "Retrospective. Corpus and prior exact relations exposed; new composed pair noticed after running frozen operations.",
+      "id": "A-LOCAL-SUFFIX336",
+      "status": "underdetermined",
+      "claim_type": "structural_constraint",
+      "rule": {
+        "candidate_segmentation": [
+          [
+            "387",
+            "66"
+          ],
+          [
+            "336",
+            "89",
+            "211"
+          ]
+        ]
+      },
+      "record_file": "research/campaigns/integrated_20260906/route_a/candidates.json",
+      "source_paths_resolved": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/data/semantic_search_20260906/graphic_hypotheses.json"
+      ]
+    },
+    {
+      "id": "B-COFACE-363",
+      "route": "B",
+      "status": "underdetermined",
+      "claim_type": "structural_constraint",
+      "rule": "The short363 is paired with two long expression families. Their picture-linked copies involve different raw codes139 and520; do not equate each pairing with a specific pictured referent.",
+      "namespace": "Mahadevan1977",
+      "context": "Copper tablets; whole faces; exact catalogue readings",
+      "prerequisites": [
+        "Catalogue distinction362/363",
+        "Paired faces correctly assigned",
+        "Raw motif families139 and520 actually pictorially distinct"
+      ],
+      "support": [
+        "M77:2901:10",
+        "M77:2901:20",
+        "M77:3360:10",
+        "M77:3360:20",
+        "M77:3414:10",
+        "M77:3414:20",
+        "M77:3373:10",
+        "M77:3373:29",
+        "M77:2914:10",
+        "M77:2914:29"
+      ],
+      "contradictions": [],
+      "alternatives": [
+        "Broad shared referent",
+        "Shared category or authority plus variable description",
+        "Production grouping",
+        "One questionable catalogue short sign"
+      ],
+      "parameters": 2,
+      "complexity": {
+        "lookup_entries": 2
+      },
+      "predictions": [
+        "A universal363=one specific depicted species predicts equal species across the two long families and fails under distinct-species decoding."
+      ],
+      "source_paths": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl",
+        "research/campaigns/integrated_20260906/evidence_inventory/recovered/Parpola_2008_copper.pdf"
+      ],
+      "prior_exposure": "Retrospective constrained search; source corpus and defining examples already exposed.",
+      "record_file": "research/campaigns/integrated_20260906/route_b/candidates.json",
+      "source_paths_resolved": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl",
+        "research/campaigns/integrated_20260906/evidence_inventory/recovered/Parpola_2008_copper.pdf"
+      ]
+    },
+    {
+      "id": "B-358-LITERAL",
+      "route": "B",
+      "status": "rejected",
+      "claim_type": "lexical_meaning",
+      "rule": "Universal358=the copper145/147 pictorial category, preserved in every construction.",
+      "namespace": "Mahadevan1977",
+      "context": "All containing inscriptions, including copper-to-seal transfer",
+      "prerequisites": [
+        "Direct literal text-picture relation",
+        "145/147 represent a common category distinct from13"
+      ],
+      "support": [
+        "M77:1708:10",
+        "M77:1712:10",
+        "M77:1804:10",
+        "M77:1806:10",
+        "M77:2909:10",
+        "M77:2915:10",
+        "M77:3306:10",
+        "M77:3314:10",
+        "M77:3339:10",
+        "M77:3341:10",
+        "M77:3342:10",
+        "M77:3353:10",
+        "M77:3359:10",
+        "M77:3361:10",
+        "M77:3371:10",
+        "M77:3379:10",
+        "M77:3386:10",
+        "M77:3404:10"
+      ],
+      "contradictions": [
+        "M77:1066:0",
+        "M77:2396:0",
+        "M77:3154:0",
+        "M77:4030:0",
+        "M77:4105:0",
+        "M77:7244:0"
+      ],
+      "alternatives": [
+        "Copper-specific label",
+        "Documentary field unrelated to animal",
+        "Same designation accompanied by different emblems"
+      ],
+      "parameters": 1,
+      "complexity": {
+        "lookup_entries": 1
+      },
+      "predictions": [
+        {
+          "target": "M77:7244:0",
+          "predicted_raw_fs80": [
+            145,
+            147
+          ],
+          "observed_raw_fs80": 13
+        }
+      ],
+      "source_paths": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ],
+      "prior_exposure": "Retrospective constrained search; source corpus and defining examples already exposed.",
+      "record_file": "research/campaigns/integrated_20260906/route_b/candidates.json",
+      "source_paths_resolved": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ]
+    },
+    {
+      "id": "B-LATENT-CATEGORY",
+      "route": "B",
+      "status": "underdetermined",
+      "claim_type": "structural_constraint",
+      "rule": "A fitted anonymous category linking text families to pictures can be renamed as a production-group category with identical likelihood and parameter count.",
+      "namespace": "Mahadevan1977",
+      "context": "Latent categorical models with no independent documented production-group observations",
+      "prerequisites": [],
+      "support": [
+        "copper_referent_competition.json"
+      ],
+      "contradictions": [],
+      "alternatives": [
+        "Literal/category meaning",
+        "Production context",
+        "Complementary documentary fields"
+      ],
+      "parameters": 0,
+      "complexity": {
+        "lookup_entries": 0
+      },
+      "predictions": [
+        "An independent production indicator or transferable component relation is required to distinguish these particular rivals."
+      ],
+      "source_paths": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ],
+      "prior_exposure": "Retrospective constrained search; source corpus and defining examples already exposed.",
+      "record_file": "research/campaigns/integrated_20260906/route_b/candidates.json",
+      "source_paths_resolved": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ]
+    },
+    {
+      "id": "B-COPPER-LITERAL-PICTURE",
+      "route": "B",
+      "status": "rejected",
+      "claim_type": "lexical_meaning",
+      "rule": "Every complete copper text names exactly the animal species depicted on its object.",
+      "namespace": "Mahadevan1977",
+      "context": "Literal species model, not a broader deity/category designation",
+      "prerequisites": [
+        "Literal species naming",
+        "Parpola2008 B6/B12 text identity and different pictorial species"
+      ],
+      "support": [
+        "M77:3328:10",
+        "M77:3336:10",
+        "M77:3368:10"
+      ],
+      "contradictions": [
+        "M77:1704:20"
+      ],
+      "alternatives": [
+        "The same deity or category represented in multiple forms",
+        "Complementary fields",
+        "Production context"
+      ],
+      "parameters": 1,
+      "complexity": {
+        "lookup_entries": 1
+      },
+      "predictions": [
+        {
+          "target": "M77:1704:20",
+          "text_stored": [
+            "336",
+            "89",
+            "296",
+            "342",
+            "98"
+          ],
+          "predicted": "elephant",
+          "observed": "horned tiger; text appears on the same face as the animal"
+        }
+      ],
+      "source_paths": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl",
+        "research/campaigns/integrated_20260906/evidence_inventory/recovered/Parpola_2008_copper.pdf"
+      ],
+      "prior_exposure": "Retrospective constrained search; source corpus and defining examples already exposed.",
+      "record_file": "research/campaigns/integrated_20260906/route_b/candidates.json",
+      "source_paths_resolved": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl",
+        "research/campaigns/integrated_20260906/evidence_inventory/recovered/Parpola_2008_copper.pdf"
+      ]
+    },
+    {
+      "id": "B-REPRESENTATION-CHANNEL",
+      "route": "B",
+      "status": "supported_scope_limited",
+      "claim_type": "structural_constraint",
+      "rule": "In the published typology, shape classB predicts picture-only reverse, classesA/C text-only reverse:37 of44 legible reconstructed types fit; same long fields link alternative reverse channels.",
+      "namespace": "Mahadevan1977",
+      "context": "Parpola2008 reconstructed copper types only; descriptive contextual prediction, not new semantic decipherment",
+      "prerequisites": [
+        "Only shape-level A/B/C variables used; full type labels would leak text and pictures",
+        "Author reconstructed types correctly grouped"
+      ],
+      "support": [
+        "Parpola2008:A2",
+        "Parpola2008:C4a",
+        "Parpola2008:B5",
+        "Parpola2008:A11",
+        "Parpola2008:B19",
+        "Parpola2008:C6"
+      ],
+      "contradictions": [
+        "Parpola2008:A1a",
+        "Parpola2008:A1b",
+        "Parpola2008:A2",
+        "Parpola2008:A3a",
+        "Parpola2008:A3b",
+        "Parpola2008:B12",
+        "Parpola2008:C1"
+      ],
+      "alternatives": [
+        "Production conventions",
+        "Semantically related alternative representations",
+        "Complementary documentary fields"
+      ],
+      "parameters": 3,
+      "complexity": {
+        "lookup_entries": 3
+      },
+      "predictions": [
+        {
+          "rule": {
+            "A": "text",
+            "B": "picture",
+            "C": "text"
+          },
+          "correct_types": 37,
+          "scored_types": 44,
+          "constant_baseline_correct": 26
+        }
+      ],
+      "source_paths": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl",
+        "research/campaigns/integrated_20260906/evidence_inventory/recovered/Parpola_2008_copper.pdf"
+      ],
+      "prior_exposure": "Retrospective constrained search; source corpus and defining examples already exposed.",
+      "record_file": "research/campaigns/integrated_20260906/route_b/candidates.json",
+      "source_paths_resolved": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl",
+        "research/campaigns/integrated_20260906/evidence_inventory/recovered/Parpola_2008_copper.pdf"
+      ]
+    },
+    {
+      "id": "B-THREE-FIELDS",
+      "route": "B",
+      "status": "conditional",
+      "claim_type": "structural_constraint",
+      "rule": "Objects4581 and4591 preserve the same four-stroke cup face and same doubtful middle expression while their short first faces differ137 versus59.",
+      "namespace": "Mahadevan1977",
+      "context": "Two three-faced miniature tablets; doubtful119 retained",
+      "prerequisites": [
+        "Doubtful middle119 does not conceal a semantic difference",
+        "Catalogue face assignments"
+      ],
+      "support": [
+        "M77:4581:10",
+        "M77:4581:20",
+        "M77:4581:30",
+        "M77:4591:10",
+        "M77:4591:20",
+        "M77:4591:30"
+      ],
+      "contradictions": [],
+      "alternatives": [
+        "Complementary category selector",
+        "Two spellings",
+        "Distinct quantities with missing units",
+        "Production context"
+      ],
+      "parameters": 0,
+      "complexity": {
+        "lookup_entries": 0
+      },
+      "predictions": [
+        "Any deterministic middle+cup→short model needs an exception or another observed variable."
+      ],
+      "source_paths": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ],
+      "prior_exposure": "Retrospective constrained search; source corpus and defining examples already exposed.",
+      "record_file": "research/campaigns/integrated_20260906/route_b/candidates.json",
+      "source_paths_resolved": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ]
+    },
+    {
+      "id": "C_LONG_FIELD_LOCALITY",
+      "route": "C",
+      "status": "supported_scope_limited",
+      "claim_type": "structural_constraint",
+      "rule": "Among 330 strict exact one-long-group templates, count substitution occurs in four: bare N and three cup-containing templates.",
+      "namespace": "Mahadevan1977",
+      "context": "Strict exact full-line contexts; no inferred synonymy or absent-combination negatives.",
+      "prerequisites": [],
+      "support": [
+        "one_group_templates.json: 330 templates; four variable"
+      ],
+      "contradictions": [],
+      "alternatives": [
+        "Larger contexts may hide productive substitution; nominal categories may be count-fixed."
+      ],
+      "parameters": 0,
+      "complexity": "See executable program, explicit parameter counts and approximate-complexity warning; no ledger promotion from fit.",
+      "predictions": [
+        "A global count-substitution rule requires additional evidence beyond these four frames."
+      ],
+      "source_base": "repository_root",
+      "source_paths": [
+        "research/campaigns/integrated_20260906/route_c/one_group_templates.json",
+        "research/campaigns/integrated_20260906/route_c/numerical_observations.json"
+      ],
+      "prior_exposure": "Entire frozen corpus previously exposed; evaluations and controls retrospective.",
+      "record_file": "research/campaigns/integrated_20260906/route_c/candidates.json",
+      "source_paths_resolved": [
+        "research/campaigns/integrated_20260906/route_c/one_group_templates.json",
+        "research/campaigns/integrated_20260906/route_c/numerical_observations.json"
+      ]
+    },
+    {
+      "id": "C_CUP_CARDINAL_VS_CATEGORY",
+      "route": "C",
+      "status": "underdetermined",
+      "claim_type": "operational_meaning",
+      "rule": "Parse cup 328 plus long-stroke group as an independently variable field; cardinal/ordinal/nominal interpretations remain observational alternatives.",
+      "namespace": "Mahadevan1977",
+      "context": "267 cup/other-face records, including partial and third-face observations.",
+      "prerequisites": [],
+      "support": [
+        "cup_field_records.json",
+        "Prior 85-paired-object census reused"
+      ],
+      "contradictions": [],
+      "alternatives": [
+        "Cardinal amount",
+        "Ordinal category",
+        "Nominal class",
+        "Complementary administrative field"
+      ],
+      "parameters": {
+        "count_classes": 5,
+        "absolute_unit": null
+      },
+      "complexity": "See executable program, explicit parameter counts and approximate-complexity warning; no ledger promotion from fit.",
+      "predictions": [
+        "No pronunciation, physical unit or count arithmetic follows from class labels."
+      ],
+      "source_base": "repository_root",
+      "source_paths": [
+        "research/campaigns/integrated_20260906/route_c/cup_field_records.json",
+        "research/docs/mahadevan_crossface_constraints_20260905.md"
+      ],
+      "prior_exposure": "Entire frozen corpus previously exposed; evaluations and controls retrospective.",
+      "record_file": "research/campaigns/integrated_20260906/route_c/candidates.json",
+      "source_paths_resolved": [
+        "research/campaigns/integrated_20260906/route_c/cup_field_records.json",
+        "research/docs/mahadevan_crossface_constraints_20260905.md"
+      ]
+    },
+    {
+      "id": "C_DESCRIPTOR_UNIT_CONVERSION",
+      "route": "C",
+      "status": "rejected",
+      "claim_type": "operational_meaning",
+      "rule": "Each descriptor has one fixed positive unit, and linked single-count faces express equal quantities.",
+      "namespace": "Mahadevan1977",
+      "context": "29 strict single-count face-pairs; 24 unique global equations.",
+      "prerequisites": [
+        "Each visible count has cardinal value n times its descriptor unit.",
+        "Face equality applies."
+      ],
+      "support": [
+        "Conditional graph has 31 descriptor units and 12 arbitrary scales."
+      ],
+      "contradictions": [
+        "M77:4444 and M77:4456 require Ucup/U119frame=2/3; M77:5498 requires 1; object-class conditioning retains the conflict."
+      ],
+      "alternatives": [
+        "Complementary fields",
+        "Locus-specific lookup units",
+        "Unobserved context",
+        "Nonnumerical strokes"
+      ],
+      "parameters": {
+        "global_descriptor_units": 31,
+        "global_free_component_scales": 12,
+        "locus_conditioned_units": 47,
+        "locus_conditioned_free_scales": 24
+      },
+      "complexity": "See executable program, explicit parameter counts and approximate-complexity warning; no ledger promotion from fit.",
+      "predictions": [
+        "Locus repair removes contradiction while increasing independent scales; it does not independently establish arithmetic."
+      ],
+      "source_base": "repository_root",
+      "source_paths": [
+        "research/campaigns/integrated_20260906/route_c/relative_unit_graphs.json",
+        "research/campaigns/integrated_20260906/route_c/single_count_crossface_constraints.json"
+      ],
+      "prior_exposure": "Entire frozen corpus previously exposed; evaluations and controls retrospective.",
+      "record_file": "research/campaigns/integrated_20260906/route_c/candidates.json",
+      "source_paths_resolved": [
+        "research/campaigns/integrated_20260906/route_c/relative_unit_graphs.json",
+        "research/campaigns/integrated_20260906/route_c/single_count_crossface_constraints.json"
+      ]
+    },
+    {
+      "id": "C_FRONT_TO_CUP_ARITHMETIC",
+      "route": "C",
+      "status": "rejected",
+      "claim_type": "operational_meaning",
+      "rule": "Predict cup count using a shared multiplier or affine transform of the front long-stroke count.",
+      "namespace": "Mahadevan1977",
+      "context": "11 distinct strict single-count noncup/cup records, whole target objects and exact paired copies excluded per fold.",
+      "prerequisites": [],
+      "support": [
+        "The intended multiplier is recoverable on a compact constructed control."
+      ],
+      "contradictions": [
+        "Fold-refit constant NLL 1.182 beats multiplier 1.918 and affine 1.274 on both retrospective tasks; affine full fit has zero slope."
+      ],
+      "alternatives": [
+        "Independent count field",
+        "Conditional category model"
+      ],
+      "parameters": {
+        "multipliers_searched": 8,
+        "affine_programs_searched": 81,
+        "constant_programs_searched": 9
+      },
+      "complexity": "See executable program, explicit parameter counts and approximate-complexity warning; no ledger promotion from fit.",
+      "predictions": [
+        "No shared arithmetic relation identified; grouped sums/products similarly fail to distinguish numerical meaning."
+      ],
+      "source_base": "repository_root",
+      "source_paths": [
+        "research/campaigns/integrated_20260906/route_c/program_comparison.json",
+        "research/campaigns/integrated_20260906/route_c/program_predictions.json",
+        "research/campaigns/integrated_20260906/route_c/grouping_programs.json"
+      ],
+      "prior_exposure": "Entire frozen corpus previously exposed; evaluations and controls retrospective.",
+      "record_file": "research/campaigns/integrated_20260906/route_c/candidates.json",
+      "source_paths_resolved": [
+        "research/campaigns/integrated_20260906/route_c/program_comparison.json",
+        "research/campaigns/integrated_20260906/route_c/program_predictions.json",
+        "research/campaigns/integrated_20260906/route_c/grouping_programs.json"
+      ]
+    },
+    {
+      "id": "C_REPEAT_FISH_87",
+      "route": "C",
+      "status": "conditional",
+      "claim_type": "operational_meaning",
+      "rule": "Two repeated 59 signs may be written 87+59 in the stored 267–99…211 frame.",
+      "namespace": "Mahadevan1977",
+      "context": "All 98 repeated non-long-sign runs searched; at least two context tokens; exact or one context edit.",
+      "prerequisites": [
+        "The two expressions encode the same operation/referent, which is not independently established."
+      ],
+      "support": [
+        "M77:4232:0 has267–99–59–59–211;M77:1551:0 has267–99–87–59–211."
+      ],
+      "contradictions": [],
+      "alternatives": [
+        "Count-class/category substitution",
+        "Unrelated fish expression",
+        "Family-specific writing operation"
+      ],
+      "parameters": {
+        "graphical_numbers": 5,
+        "label_permutations": 120
+      },
+      "complexity": "See executable program, explicit parameter counts and approximate-complexity warning; no ledger promotion from fit.",
+      "predictions": [
+        "One base and one frame only; 24 of 120 number-label permutations have at least the same hit count."
+      ],
+      "source_base": "repository_root",
+      "source_paths": [
+        "research/campaigns/integrated_20260906/route_c/repeat_compression_candidates.json",
+        "research/campaigns/integrated_20260906/route_c/repeat_compression_label_controls.json"
+      ],
+      "prior_exposure": "Entire frozen corpus previously exposed; evaluations and controls retrospective.",
+      "record_file": "research/campaigns/integrated_20260906/route_c/candidates.json",
+      "source_paths_resolved": [
+        "research/campaigns/integrated_20260906/route_c/repeat_compression_candidates.json",
+        "research/campaigns/integrated_20260906/route_c/repeat_compression_label_controls.json"
+      ]
+    },
+    {
+      "id": "C_MULTILINE_2516",
+      "route": "C",
+      "status": "provisional",
+      "claim_type": "graphical_equivalence",
+      "rule": "Catalogue-order lines [86]/[211] may form the same grouped record as inline [86,211].",
+      "namespace": "Mahadevan1977",
+      "context": "16 strict multiline stroke-bearing faces; two globally declared line-order programs.",
+      "prerequisites": [],
+      "support": [
+        "M77:2516:1 and M77:2516:2; inline witnesses M77:4474:20 and M77:4518:20."
+      ],
+      "contradictions": [],
+      "alternatives": [
+        "Separate complementary fields happen to share signs",
+        "Independent category formula"
+      ],
+      "parameters": 0,
+      "complexity": "See executable program, explicit parameter counts and approximate-complexity warning; no ledger promotion from fit.",
+      "predictions": [
+        "If independently shown to encode the same record, this supports a line-break spelling operation, not a numerical pronunciation."
+      ],
+      "source_base": "repository_root",
+      "source_paths": [
+        "research/campaigns/integrated_20260906/route_c/multiline_grouping_programs.json"
+      ],
+      "prior_exposure": "Entire frozen corpus previously exposed; evaluations and controls retrospective.",
+      "record_file": "research/campaigns/integrated_20260906/route_c/candidates.json",
+      "source_paths_resolved": [
+        "research/campaigns/integrated_20260906/route_c/multiline_grouping_programs.json"
+      ]
+    },
+    {
+      "id": "C_PARTIAL_119_THIRD_FIELD",
+      "route": "C",
+      "status": "conditional",
+      "claim_type": "structural_constraint",
+      "rule": "If doubtful 119 is confirmed, the 176–342–87–119 family has reverse counts 2, 3 and 4, with additional third fields 137 or 59 on the count-4 examples.",
+      "namespace": "Mahadevan1977",
+      "context": "Partial compatibility preserves unknown spans and doubtful identities; no imputed training data.",
+      "prerequisites": [
+        "Doubtful 119 reading and catalogue face assignments are correct."
+      ],
+      "support": [
+        "M77:4581:20 and M77:4591:20 uniquely match this complete family among existing cup fronts."
+      ],
+      "contradictions": [],
+      "alternatives": [
+        "Doubtful sign is not 119",
+        "Third field changes referent",
+        "Independent production/category effect"
+      ],
+      "parameters": 0,
+      "complexity": "See executable program, explicit parameter counts and approximate-complexity warning; no ledger promotion from fit.",
+      "predictions": [
+        "Inspect held sources for 4581/4591 exactly at doubtful 119 and face assignment; preserve both third labels."
+      ],
+      "source_base": "repository_root",
+      "source_paths": [
+        "research/campaigns/integrated_20260906/route_c/partial_field_compatibility.json"
+      ],
+      "prior_exposure": "Entire frozen corpus previously exposed; evaluations and controls retrospective.",
+      "record_file": "research/campaigns/integrated_20260906/route_c/candidates.json",
+      "source_paths_resolved": [
+        "research/campaigns/integrated_20260906/route_c/partial_field_compatibility.json"
+      ]
+    },
+    {
+      "id": "C_ROOF_COUNT_SCOPE",
+      "route": "C",
+      "status": "conditional",
+      "claim_type": "operational_meaning",
+      "rule": "Treat roof/prefix87 as a factor2 over a fish field and ticks/suffix211 as a field-scoped operatorQ. Compare literal glyph duplication and an anonymous categoricalR/Q spelling grammar.",
+      "namespace": "Mahadevan1977",
+      "context": "Four exact roof pairs and six observed267–99 fish-frame spellings.",
+      "prerequisites": [
+        "A roof65->87,59",
+        "A proposed roof66->87,60",
+        "A tick60->59,211 and66->65,211",
+        "C proposed87 duplication or factor2",
+        "Within-field scope and same-referent assumptions remain hypotheses"
+      ],
+      "support": [
+        "The four orthographic rewrites converge at87,59,211. Four core spellings permit the same field features:two written59 items andoneQ."
+      ],
+      "contradictions": [
+        "Literal87 glyph duplication makes the roof/tick diamond nonconfluent:59,59,211 versus59,211,59,211.",
+        "Treating same-frame65,59,211 as the same two-item record also conflicts with roof65 contributingtwo written items unless a new boundary or meaning rule is supplied.",
+        "New paired roof witnesses4493 and4556 have cup counts4 and2; equal-face fixed-unit scalar models contradict their assumed front equivalence."
+      ],
+      "alternatives": [
+        "Commuting categoricalR/Q writing operations",
+        "Different referents in superficially matching frames",
+        "A scope or boundary grammar that permits alternate literal normal forms"
+      ],
+      "parameters": {
+        "orthographic_rules": 4,
+        "numeric_factor": 2,
+        "field_scope_rule": 1
+      },
+      "complexity": "Factor2 and common counted referent are additional semantic assumptions over the anonymous categorical operation; no likelihood advantage has been established.",
+      "predictions": [
+        "The other two exact roof65/87,59 contexts conditionally predict repeated59,59 spellings; no such full-string witness is currently present, so these are unknown rather than failures.",
+        "An existing independently linked87,60 versus59,211,59,211 or59,59,211 pair would discriminate literal-glyph from field-scoped duplication.",
+        "A count change2->3 or a second repeated base with the same scope would discriminate productive arithmetic from the local categoricalR convention."
+      ],
+      "source_base": "repository_root",
+      "source_paths": [
+        "research/campaigns/integrated_20260906/route_c/roof_count_scope_programs.json",
+        "research/data/mahadevan_20260905/concordance_rows.csv"
+      ],
+      "prior_exposure": "Retrospective integration of previously examined corpus and currentA hypotheses; no blind test.",
+      "record_file": "research/campaigns/integrated_20260906/route_c/candidates.json",
+      "source_paths_resolved": [
+        "research/campaigns/integrated_20260906/route_c/roof_count_scope_programs.json",
+        "research/data/mahadevan_20260905/concordance_rows.csv"
+      ]
+    },
+    {
+      "id": "D-MW-append-none-000",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "mapping": {
+          "59": "I",
+          "65": "i",
+          "67": "o",
+          "72": "u",
+          "211": "K",
+          "60": "IK",
+          "66": "iK",
+          "68": "oK",
+          "73": "uK"
+        },
+        "orientation": "append",
+        "decoder": "run_route_d.py:read_block"
+      },
+      "namespace": "Mahadevan1977",
+      "context": "four fish bases and marked forms;211 reusable phonetic component",
+      "prerequisites": [
+        "A fish expansion conjecture",
+        "Indus words realize MW headword spellings without historical sound changes",
+        "four fish bases have distinct lexical values",
+        "dictionary membership is relevant despite different chronology"
+      ],
+      "support": {
+        "independent_lexical_forms": true,
+        "independent_sign_sound_pairs": 0
+      },
+      "contradictions": [
+        "no known target pronunciation permits direct correctness test",
+        "allographs/homophony and compound boundaries not independently established"
+      ],
+      "alternatives": [
+        "other emitted lexical systems",
+        "anonymous operation",
+        "nonphonetic classifier"
+      ],
+      "parameters": {
+        "59": "I",
+        "65": "i",
+        "67": "o",
+        "72": "u",
+        "211": "K",
+        "60": "IK",
+        "66": "iK",
+        "68": "oK",
+        "73": "uK"
+      },
+      "complexity": 10,
+      "predictions": [
+        "fixed repeated form readings in candidate_partial_readings.jsonl",
+        "new fish family70/71 needs root reading; operation alone predicts no sound"
+      ],
+      "source_paths": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ],
+      "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy",
+      "record_file": "research/campaigns/integrated_20260906/route_d/outputs/candidates.json",
+      "source_paths_resolved": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ]
+    },
+    {
+      "id": "D-MW-append-all_four_fish-016",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "mapping": {
+          "59": "SAla",
+          "65": "loha",
+          "67": "manu",
+          "72": "timi",
+          "211": "ja",
+          "60": "SAlaja",
+          "66": "lohaja",
+          "68": "manuja",
+          "73": "timija"
+        },
+        "orientation": "append",
+        "decoder": "run_route_d.py:read_block"
+      },
+      "namespace": "Mahadevan1977",
+      "context": "four fish bases and marked forms;211 reusable phonetic component",
+      "prerequisites": [
+        "A fish expansion conjecture",
+        "Indus words realize MW headword spellings without historical sound changes",
+        "four fish bases have distinct lexical values",
+        "dictionary membership is relevant despite different chronology"
+      ],
+      "support": {
+        "independent_lexical_forms": true,
+        "independent_sign_sound_pairs": 0
+      },
+      "contradictions": [
+        "no known target pronunciation permits direct correctness test",
+        "allographs/homophony and compound boundaries not independently established"
+      ],
+      "alternatives": [
+        "other emitted lexical systems",
+        "anonymous operation",
+        "nonphonetic classifier"
+      ],
+      "parameters": {
+        "59": "SAla",
+        "65": "loha",
+        "67": "manu",
+        "72": "timi",
+        "211": "ja",
+        "60": "SAlaja",
+        "66": "lohaja",
+        "68": "manuja",
+        "73": "timija"
+      },
+      "complexity": 23,
+      "predictions": [
+        "fixed repeated form readings in candidate_partial_readings.jsonl",
+        "new fish family70/71 needs root reading; operation alone predicts no sound"
+      ],
+      "source_paths": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ],
+      "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy",
+      "record_file": "research/campaigns/integrated_20260906/route_d/outputs/candidates.json",
+      "source_paths_resolved": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ]
+    },
+    {
+      "id": "D-MW-prepend-none-033",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "mapping": {
+          "59": "A",
+          "65": "F",
+          "67": "I",
+          "72": "U",
+          "211": "B",
+          "60": "BA",
+          "66": "BF",
+          "68": "BI",
+          "73": "BU"
+        },
+        "orientation": "prepend",
+        "decoder": "run_route_d.py:read_block"
+      },
+      "namespace": "Mahadevan1977",
+      "context": "four fish bases and marked forms;211 reusable phonetic component",
+      "prerequisites": [
+        "A fish expansion conjecture",
+        "Indus words realize MW headword spellings without historical sound changes",
+        "four fish bases have distinct lexical values",
+        "dictionary membership is relevant despite different chronology"
+      ],
+      "support": {
+        "independent_lexical_forms": true,
+        "independent_sign_sound_pairs": 0
+      },
+      "contradictions": [
+        "no known target pronunciation permits direct correctness test",
+        "allographs/homophony and compound boundaries not independently established"
+      ],
+      "alternatives": [
+        "other emitted lexical systems",
+        "anonymous operation",
+        "nonphonetic classifier"
+      ],
+      "parameters": {
+        "59": "A",
+        "65": "F",
+        "67": "I",
+        "72": "U",
+        "211": "B",
+        "60": "BA",
+        "66": "BF",
+        "68": "BI",
+        "73": "BU"
+      },
+      "complexity": 10,
+      "predictions": [
+        "fixed repeated form readings in candidate_partial_readings.jsonl",
+        "new fish family70/71 needs root reading; operation alone predicts no sound"
+      ],
+      "source_paths": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ],
+      "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy",
+      "record_file": "research/campaigns/integrated_20260906/route_d/outputs/candidates.json",
+      "source_paths_resolved": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ]
+    },
+    {
+      "id": "D-MW-prepend-all_four_fish-049",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "mapping": {
+          "59": "Seva",
+          "65": "kfSa",
+          "67": "loha",
+          "72": "cezwa",
+          "211": "a",
+          "60": "aSeva",
+          "66": "akfSa",
+          "68": "aloha",
+          "73": "acezwa"
+        },
+        "orientation": "prepend",
+        "decoder": "run_route_d.py:read_block"
+      },
+      "namespace": "Mahadevan1977",
+      "context": "four fish bases and marked forms;211 reusable phonetic component",
+      "prerequisites": [
+        "A fish expansion conjecture",
+        "Indus words realize MW headword spellings without historical sound changes",
+        "four fish bases have distinct lexical values",
+        "dictionary membership is relevant despite different chronology"
+      ],
+      "support": {
+        "independent_lexical_forms": true,
+        "independent_sign_sound_pairs": 0
+      },
+      "contradictions": [
+        "no known target pronunciation permits direct correctness test",
+        "allographs/homophony and compound boundaries not independently established"
+      ],
+      "alternatives": [
+        "other emitted lexical systems",
+        "anonymous operation",
+        "nonphonetic classifier"
+      ],
+      "parameters": {
+        "59": "Seva",
+        "65": "kfSa",
+        "67": "loha",
+        "72": "cezwa",
+        "211": "a",
+        "60": "aSeva",
+        "66": "akfSa",
+        "68": "aloha",
+        "73": "acezwa"
+      },
+      "complexity": 23,
+      "predictions": [
+        "fixed repeated form readings in candidate_partial_readings.jsonl",
+        "new fish family70/71 needs root reading; operation alone predicts no sound"
+      ],
+      "source_paths": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ],
+      "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy",
+      "record_file": "research/campaigns/integrated_20260906/route_d/outputs/candidates.json",
+      "source_paths_resolved": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ]
+    },
+    {
+      "id": "D-TAMIL-00",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "mapping": {
+          "59": "mīṉ",
+          "65": "mīṉ",
+          "67": "mīṉ",
+          "72": "mīṉ",
+          "211": "āti",
+          "60": "ātimīṉ",
+          "66": "ātimīṉ",
+          "68": "ātimīṉ",
+          "73": "ātimīṉ"
+        },
+        "orientation": "prepend",
+        "decoder": "run_route_d.py:read_block"
+      },
+      "namespace": "Mahadevan1977",
+      "context": "four fish bases and marked forms;211 reusable phonetic component",
+      "prerequisites": [
+        "A fish expansion conjecture",
+        "base fish signs read Tamil mīṉ",
+        "all four fish variants share a lexical pronunciation",
+        "source stored order base–211 realized as qualifier–root within word",
+        "Tamil compound is chronologically relevant to Indus"
+      ],
+      "support": {
+        "independent_lexical_forms": true,
+        "independent_sign_sound_pairs": 0
+      },
+      "contradictions": [
+        "no known target pronunciation permits direct correctness test",
+        "allographs/homophony and compound boundaries not independently established"
+      ],
+      "alternatives": [
+        "other emitted lexical systems",
+        "anonymous operation",
+        "nonphonetic classifier"
+      ],
+      "parameters": {
+        "59": "mīṉ",
+        "65": "mīṉ",
+        "67": "mīṉ",
+        "72": "mīṉ",
+        "211": "āti",
+        "60": "ātimīṉ",
+        "66": "ātimīṉ",
+        "68": "ātimīṉ",
+        "73": "ātimīṉ"
+      },
+      "complexity": 12,
+      "predictions": [
+        "fixed repeated form readings in candidate_partial_readings.jsonl",
+        "new fish family70/71 needs root reading; operation alone predicts no sound"
+      ],
+      "source_paths": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ],
+      "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy",
+      "record_file": "research/campaigns/integrated_20260906/route_d/outputs/candidates.json",
+      "source_paths_resolved": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ]
+    },
+    {
+      "id": "D-TAMIL-01",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "mapping": {
+          "59": "mīṉ",
+          "65": "mīṉ",
+          "67": "mīṉ",
+          "72": "mīṉ",
+          "211": "uttara",
+          "60": "uttaramīṉ",
+          "66": "uttaramīṉ",
+          "68": "uttaramīṉ",
+          "73": "uttaramīṉ"
+        },
+        "orientation": "prepend",
+        "decoder": "run_route_d.py:read_block"
+      },
+      "namespace": "Mahadevan1977",
+      "context": "four fish bases and marked forms;211 reusable phonetic component",
+      "prerequisites": [
+        "A fish expansion conjecture",
+        "base fish signs read Tamil mīṉ",
+        "all four fish variants share a lexical pronunciation",
+        "source stored order base–211 realized as qualifier–root within word",
+        "Tamil compound is chronologically relevant to Indus"
+      ],
+      "support": {
+        "independent_lexical_forms": true,
+        "independent_sign_sound_pairs": 0
+      },
+      "contradictions": [
+        "no known target pronunciation permits direct correctness test",
+        "allographs/homophony and compound boundaries not independently established"
+      ],
+      "alternatives": [
+        "other emitted lexical systems",
+        "anonymous operation",
+        "nonphonetic classifier"
+      ],
+      "parameters": {
+        "59": "mīṉ",
+        "65": "mīṉ",
+        "67": "mīṉ",
+        "72": "mīṉ",
+        "211": "uttara",
+        "60": "uttaramīṉ",
+        "66": "uttaramīṉ",
+        "68": "uttaramīṉ",
+        "73": "uttaramīṉ"
+      },
+      "complexity": 15,
+      "predictions": [
+        "fixed repeated form readings in candidate_partial_readings.jsonl",
+        "new fish family70/71 needs root reading; operation alone predicts no sound"
+      ],
+      "source_paths": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ],
+      "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy",
+      "record_file": "research/campaigns/integrated_20260906/route_d/outputs/candidates.json",
+      "source_paths_resolved": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ]
+    },
+    {
+      "id": "D-TAMIL-02",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "mapping": {
+          "59": "mīṉ",
+          "65": "mīṉ",
+          "67": "mīṉ",
+          "72": "mīṉ",
+          "211": "etir",
+          "60": "etirmīṉ",
+          "66": "etirmīṉ",
+          "68": "etirmīṉ",
+          "73": "etirmīṉ"
+        },
+        "orientation": "prepend",
+        "decoder": "run_route_d.py:read_block"
+      },
+      "namespace": "Mahadevan1977",
+      "context": "four fish bases and marked forms;211 reusable phonetic component",
+      "prerequisites": [
+        "A fish expansion conjecture",
+        "base fish signs read Tamil mīṉ",
+        "all four fish variants share a lexical pronunciation",
+        "source stored order base–211 realized as qualifier–root within word",
+        "Tamil compound is chronologically relevant to Indus"
+      ],
+      "support": {
+        "independent_lexical_forms": true,
+        "independent_sign_sound_pairs": 0
+      },
+      "contradictions": [
+        "no known target pronunciation permits direct correctness test",
+        "allographs/homophony and compound boundaries not independently established"
+      ],
+      "alternatives": [
+        "other emitted lexical systems",
+        "anonymous operation",
+        "nonphonetic classifier"
+      ],
+      "parameters": {
+        "59": "mīṉ",
+        "65": "mīṉ",
+        "67": "mīṉ",
+        "72": "mīṉ",
+        "211": "etir",
+        "60": "etirmīṉ",
+        "66": "etirmīṉ",
+        "68": "etirmīṉ",
+        "73": "etirmīṉ"
+      },
+      "complexity": 13,
+      "predictions": [
+        "fixed repeated form readings in candidate_partial_readings.jsonl",
+        "new fish family70/71 needs root reading; operation alone predicts no sound"
+      ],
+      "source_paths": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ],
+      "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy",
+      "record_file": "research/campaigns/integrated_20260906/route_d/outputs/candidates.json",
+      "source_paths_resolved": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ]
+    },
+    {
+      "id": "D-TAMIL-03",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "mapping": {
+          "59": "mīṉ",
+          "65": "mīṉ",
+          "67": "mīṉ",
+          "72": "mīṉ",
+          "211": "ai",
+          "60": "aimmīṉ",
+          "66": "aimmīṉ",
+          "68": "aimmīṉ",
+          "73": "aimmīṉ"
+        },
+        "orientation": "prepend",
+        "decoder": "run_route_d.py:read_block"
+      },
+      "namespace": "Mahadevan1977",
+      "context": "four fish bases and marked forms;211 reusable phonetic component",
+      "prerequisites": [
+        "A fish expansion conjecture",
+        "base fish signs read Tamil mīṉ",
+        "all four fish variants share a lexical pronunciation",
+        "source stored order base–211 realized as qualifier–root within word",
+        "Tamil compound is chronologically relevant to Indus"
+      ],
+      "support": {
+        "independent_lexical_forms": true,
+        "independent_sign_sound_pairs": 0
+      },
+      "contradictions": [
+        "no known target pronunciation permits direct correctness test",
+        "allographs/homophony and compound boundaries not independently established"
+      ],
+      "alternatives": [
+        "other emitted lexical systems",
+        "anonymous operation",
+        "nonphonetic classifier"
+      ],
+      "parameters": {
+        "59": "mīṉ",
+        "65": "mīṉ",
+        "67": "mīṉ",
+        "72": "mīṉ",
+        "211": "ai",
+        "60": "aimmīṉ",
+        "66": "aimmīṉ",
+        "68": "aimmīṉ",
+        "73": "aimmīṉ"
+      },
+      "complexity": 13,
+      "predictions": [
+        "fixed repeated form readings in candidate_partial_readings.jsonl",
+        "new fish family70/71 needs root reading; operation alone predicts no sound"
+      ],
+      "source_paths": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ],
+      "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy",
+      "record_file": "research/campaigns/integrated_20260906/route_d/outputs/candidates.json",
+      "source_paths_resolved": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ]
+    },
+    {
+      "id": "D-TAMIL-04",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "mapping": {
+          "59": "mīṉ",
+          "65": "mīṉ",
+          "67": "mīṉ",
+          "72": "mīṉ",
+          "211": "kutirai",
+          "60": "kutiraimīṉ",
+          "66": "kutiraimīṉ",
+          "68": "kutiraimīṉ",
+          "73": "kutiraimīṉ"
+        },
+        "orientation": "prepend",
+        "decoder": "run_route_d.py:read_block"
+      },
+      "namespace": "Mahadevan1977",
+      "context": "four fish bases and marked forms;211 reusable phonetic component",
+      "prerequisites": [
+        "A fish expansion conjecture",
+        "base fish signs read Tamil mīṉ",
+        "all four fish variants share a lexical pronunciation",
+        "source stored order base–211 realized as qualifier–root within word",
+        "Tamil compound is chronologically relevant to Indus"
+      ],
+      "support": {
+        "independent_lexical_forms": true,
+        "independent_sign_sound_pairs": 0
+      },
+      "contradictions": [
+        "no known target pronunciation permits direct correctness test",
+        "allographs/homophony and compound boundaries not independently established"
+      ],
+      "alternatives": [
+        "other emitted lexical systems",
+        "anonymous operation",
+        "nonphonetic classifier"
+      ],
+      "parameters": {
+        "59": "mīṉ",
+        "65": "mīṉ",
+        "67": "mīṉ",
+        "72": "mīṉ",
+        "211": "kutirai",
+        "60": "kutiraimīṉ",
+        "66": "kutiraimīṉ",
+        "68": "kutiraimīṉ",
+        "73": "kutiraimīṉ"
+      },
+      "complexity": 16,
+      "predictions": [
+        "fixed repeated form readings in candidate_partial_readings.jsonl",
+        "new fish family70/71 needs root reading; operation alone predicts no sound"
+      ],
+      "source_paths": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ],
+      "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy",
+      "record_file": "research/campaigns/integrated_20260906/route_d/outputs/candidates.json",
+      "source_paths_resolved": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ]
+    },
+    {
+      "id": "D-TAMIL-05",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "mapping": {
+          "59": "mīṉ",
+          "65": "mīṉ",
+          "67": "mīṉ",
+          "72": "mīṉ",
+          "211": "kuṟu",
+          "60": "kuṟumīṉ",
+          "66": "kuṟumīṉ",
+          "68": "kuṟumīṉ",
+          "73": "kuṟumīṉ"
+        },
+        "orientation": "prepend",
+        "decoder": "run_route_d.py:read_block"
+      },
+      "namespace": "Mahadevan1977",
+      "context": "four fish bases and marked forms;211 reusable phonetic component",
+      "prerequisites": [
+        "A fish expansion conjecture",
+        "base fish signs read Tamil mīṉ",
+        "all four fish variants share a lexical pronunciation",
+        "source stored order base–211 realized as qualifier–root within word",
+        "Tamil compound is chronologically relevant to Indus"
+      ],
+      "support": {
+        "independent_lexical_forms": true,
+        "independent_sign_sound_pairs": 0
+      },
+      "contradictions": [
+        "no known target pronunciation permits direct correctness test",
+        "allographs/homophony and compound boundaries not independently established"
+      ],
+      "alternatives": [
+        "other emitted lexical systems",
+        "anonymous operation",
+        "nonphonetic classifier"
+      ],
+      "parameters": {
+        "59": "mīṉ",
+        "65": "mīṉ",
+        "67": "mīṉ",
+        "72": "mīṉ",
+        "211": "kuṟu",
+        "60": "kuṟumīṉ",
+        "66": "kuṟumīṉ",
+        "68": "kuṟumīṉ",
+        "73": "kuṟumīṉ"
+      },
+      "complexity": 13,
+      "predictions": [
+        "fixed repeated form readings in candidate_partial_readings.jsonl",
+        "new fish family70/71 needs root reading; operation alone predicts no sound"
+      ],
+      "source_paths": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ],
+      "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy",
+      "record_file": "research/campaigns/integrated_20260906/route_d/outputs/candidates.json",
+      "source_paths_resolved": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ]
+    },
+    {
+      "id": "D-MW-append-all_eight_fish-024",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "mapping": {
+          "59": "cezwa",
+          "65": "rAjIva",
+          "67": "pallava",
+          "72": "trikaRwa",
+          "211": "ka",
+          "60": "cezwaka",
+          "66": "rAjIvaka",
+          "68": "pallavaka",
+          "73": "trikaRwaka"
+        },
+        "orientation": "append",
+        "decoder": "run_route_d.py:read_block"
+      },
+      "namespace": "Mahadevan1977",
+      "context": "four fish bases and marked forms;211 reusable phonetic component",
+      "prerequisites": [
+        "A fish expansion conjecture",
+        "Indus words realize MW headword spellings without historical sound changes",
+        "four fish bases have distinct lexical values",
+        "dictionary membership is relevant despite different chronology"
+      ],
+      "support": {
+        "independent_lexical_forms": true,
+        "independent_sign_sound_pairs": 0
+      },
+      "contradictions": [
+        "no known target pronunciation permits direct correctness test",
+        "allographs/homophony and compound boundaries not independently established"
+      ],
+      "alternatives": [
+        "other emitted lexical systems",
+        "anonymous operation",
+        "nonphonetic classifier"
+      ],
+      "parameters": {
+        "59": "cezwa",
+        "65": "rAjIva",
+        "67": "pallava",
+        "72": "trikaRwa",
+        "211": "ka",
+        "60": "cezwaka",
+        "66": "rAjIvaka",
+        "68": "pallavaka",
+        "73": "trikaRwaka"
+      },
+      "complexity": 33,
+      "predictions": [
+        "fixed repeated form readings in candidate_partial_readings.jsonl",
+        "new fish family70/71 needs root reading; operation alone predicts no sound"
+      ],
+      "source_paths": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ],
+      "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy",
+      "record_file": "research/campaigns/integrated_20260906/route_d/outputs/candidates.json",
+      "source_paths_resolved": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ]
+    },
+    {
+      "id": "D-MW-append-all_eight_fish_homophony-025",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "mapping": {
+          "59": "SAla",
+          "65": "SAla",
+          "67": "SAla",
+          "72": "SAla",
+          "211": "ja",
+          "60": "SAlaja",
+          "66": "SAlaja",
+          "68": "SAlaja",
+          "73": "SAlaja"
+        },
+        "orientation": "append",
+        "decoder": "run_route_d.py:read_block"
+      },
+      "namespace": "Mahadevan1977",
+      "context": "four fish bases and marked forms;211 reusable phonetic component",
+      "prerequisites": [
+        "A fish expansion conjecture",
+        "Indus words realize MW headword spellings without historical sound changes",
+        "four fish bases may be homophones with separate anonymous classes",
+        "dictionary membership is relevant despite different chronology"
+      ],
+      "support": {
+        "independent_lexical_forms": true,
+        "independent_sign_sound_pairs": 0
+      },
+      "contradictions": [
+        "no known target pronunciation permits direct correctness test",
+        "allographs/homophony and compound boundaries not independently established"
+      ],
+      "alternatives": [
+        "other emitted lexical systems",
+        "anonymous operation",
+        "nonphonetic classifier"
+      ],
+      "parameters": {
+        "59": "SAla",
+        "65": "SAla",
+        "67": "SAla",
+        "72": "SAla",
+        "211": "ja",
+        "60": "SAlaja",
+        "66": "SAlaja",
+        "68": "SAlaja",
+        "73": "SAlaja"
+      },
+      "complexity": 23,
+      "predictions": [
+        "fixed repeated form readings in candidate_partial_readings.jsonl",
+        "new fish family70/71 needs root reading; operation alone predicts no sound"
+      ],
+      "source_paths": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ],
+      "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy",
+      "record_file": "research/campaigns/integrated_20260906/route_d/outputs/candidates.json",
+      "source_paths_resolved": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ]
+    },
+    {
+      "id": "D-MW-prepend-all_eight_fish_homophony-057",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "mapping": {
+          "59": "mIna",
+          "65": "mIna",
+          "67": "mIna",
+          "72": "mIna",
+          "211": "nala",
+          "60": "nalamIna",
+          "66": "nalamIna",
+          "68": "nalamIna",
+          "73": "nalamIna"
+        },
+        "orientation": "prepend",
+        "decoder": "run_route_d.py:read_block"
+      },
+      "namespace": "Mahadevan1977",
+      "context": "four fish bases and marked forms;211 reusable phonetic component",
+      "prerequisites": [
+        "A fish expansion conjecture",
+        "Indus words realize MW headword spellings without historical sound changes",
+        "four fish bases may be homophones with separate anonymous classes",
+        "dictionary membership is relevant despite different chronology"
+      ],
+      "support": {
+        "independent_lexical_forms": true,
+        "independent_sign_sound_pairs": 0
+      },
+      "contradictions": [
+        "no known target pronunciation permits direct correctness test",
+        "allographs/homophony and compound boundaries not independently established"
+      ],
+      "alternatives": [
+        "other emitted lexical systems",
+        "anonymous operation",
+        "nonphonetic classifier"
+      ],
+      "parameters": {
+        "59": "mIna",
+        "65": "mIna",
+        "67": "mIna",
+        "72": "mIna",
+        "211": "nala",
+        "60": "nalamIna",
+        "66": "nalamIna",
+        "68": "nalamIna",
+        "73": "nalamIna"
+      },
+      "complexity": 25,
+      "predictions": [
+        "fixed repeated form readings in candidate_partial_readings.jsonl",
+        "new fish family70/71 needs root reading; operation alone predicts no sound"
+      ],
+      "source_paths": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ],
+      "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy",
+      "record_file": "research/campaigns/integrated_20260906/route_d/outputs/candidates.json",
+      "source_paths_resolved": [
+        "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+        "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+        "research/data/semantic_search_20260906/modifier_context_pairs.json",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ]
+    },
+    {
+      "id": "D-KA-CONDITIONAL",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "211": "ka",
+        "base_59_65_67_72": {
+          "choose_distinct_from": [
+            "cezwa",
+            "rAjIva",
+            "pallava",
+            "trikaRwa",
+            "daRqapAla",
+            "siMhatuRqa"
+          ]
+        },
+        "marked_60_66_68_73": "base_reading + ka"
+      },
+      "namespace": "Mahadevan1977",
+      "context": "four fish-base/marked pairs, postposed211 spelling hypothesis",
+      "prerequisites": [
+        "all8Indus signs name lexical fish categories",
+        "the four base signs have distinct lexical pronunciations",
+        "literal identity with a MW alphabetic headword is permitted",
+        "productive211 append operation from RouteA is valid"
+      ],
+      "support": {
+        "MW_fish_root_pairs": 6,
+        "root_assignments": 360,
+        "permitted_marker_strings": [
+          "ka"
+        ]
+      },
+      "contradictions": [
+        "No independent Indus fish-name anchors",
+        "Bird-control search also uniquely selects ka",
+        "Allowing homophony admits22marker strings",
+        "adding independent concatenative roof operation leaves0fullfish lexical squares"
+      ],
+      "alternatives": [
+        "generic Sanskrit lexical extension",
+        "homophonic mixed script",
+        "Tamil contextual morphology",
+        "anonymous classifier"
+      ],
+      "parameters": {
+        "marker": 1,
+        "distinct_root_assignments": 4
+      },
+      "complexity": "5shared assignments; no object exceptions",
+      "predictions": [
+        "fixed ka on every claimed211 within licensed fish construction; not a pronunciation correctness test"
+      ],
+      "source_paths": [
+        "outputs/mw_extension_counts.json",
+        "outputs/semantic_category_control.json",
+        "outputs/semantic_category_source_entries.json"
+      ],
+      "prior_exposure": "retrospective, A pairs define hypothesis; all semantic filters declared priors",
+      "record_file": "research/campaigns/integrated_20260906/route_d/outputs/candidates.json",
+      "source_paths_resolved": [
+        "research/campaigns/integrated_20260906/route_d/outputs/mw_extension_counts.json",
+        "research/campaigns/integrated_20260906/route_d/outputs/semantic_category_control.json",
+        "research/campaigns/integrated_20260906/route_d/outputs/semantic_category_source_entries.json"
+      ]
+    },
+    {
+      "id": "D-TAMIL-JOINT-00",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "mapping": {
+          "59": "mīṉ",
+          "65": "kaṉmīṉ",
+          "60": "kōḻimīṉ",
+          "66": "kallukkōḻimīṉ",
+          "87": "kal",
+          "211": "kōḻi"
+        },
+        "decoder": "tamil_joint_search.py:decode_lattice",
+        "operations": {
+          "87": "add ROOF modifier to fish expression",
+          "211": "add TICK modifier to fish expression",
+          "canonical_order": [
+            "STONE",
+            "kōḻi"
+          ]
+        }
+      },
+      "namespace": "Mahadevan1977",
+      "context": "59/65/60/66 lattice, separate roof87 andticks211;70/71only anonymous structure",
+      "prerequisites": [
+        "A roof87 andticks211 operational equivalences",
+        "fish glyph59 reads comparative Tamil mīṉ",
+        "qualifier meanings selected from the source lexical triangle",
+        "one canonical qualifier order across all spellings",
+        "source-conditioned boundary/allomorph realization; no productive historical law established"
+      ],
+      "support": {
+        "source_lexical_triangle": {
+          "modifier_keys": [
+            "STONE",
+            "kōḻi"
+          ],
+          "double": {
+            "entry_id": "tamil_app_280_15",
+            "language": "Tamil",
+            "entry_type": "category_marked_lexical_entry",
+            "source_category_code": "F",
+            "source_category_code_origin": "embedded_pdf_ocr",
+            "compound_senses": [
+              "fish"
+            ],
+            "first_component_only_star_sense": false,
+            "printed_form_transcription": "kallu-k-kōḻi-mīṉ",
+            "form_status": "visually_transcribed",
+            "form_uncertainty": null,
+            "segmentation_as_printed": [
+              "kallu",
+              "k",
+              "kōḻi",
+              "mīṉ"
+            ],
+            "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+            "gloss_summary": "blue sea fish, Holocanthus imperator",
+            "printed_lexical_notes_ocr": [
+              "kallu ‘stone’, DEDR 1298; köli ‘cock, \nfowl’, D ED R 2248",
+              "Cf. koli-mi!J,."
+            ],
+            "dedr_references_ocr": [
+              "DEDR 1298",
+              "DEDR 2248"
+            ],
+            "raw_entry_text_ocr": "kallu-k-köli-m m  [kallu ‘stone’, DEDR 1298; köli ‘cock, \nfowl’, D ED R 2248] ‘a sea-fish, bluish, Holocanthus \nimperator; katal-m itt-vakai? [Cf. koli-mi!J,.]",
+            "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+            "source_regions": [
+              {
+                "pdf_page_index": 297,
+                "printed_page": 280,
+                "column": 1,
+                "bbox_pdf_points": [
+                  330,
+                  137.14,
+                  565,
+                  172.54
+                ],
+                "raw_text": "kallu-k-köli-m m  [kallu ‘stone’, DEDR 1298; köli ‘cock, \nfowl’, D ED R 2248] ‘a sea-fish, bluish, Holocanthus \nimperator; katal-m itt-vakai? [Cf. koli-mi!J,.]"
+              }
+            ],
+            "phonology_test_eligible": true,
+            "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+            "indus_assignment": null,
+            "segmentation_for_search": [
+              "kallu",
+              "k",
+              "kōḻi",
+              "mīṉ"
+            ]
+          },
+          "first": {
+            "entry_id": "tamil_app_280_17",
+            "language": "Tamil",
+            "entry_type": "category_marked_lexical_entry",
+            "source_category_code": "F",
+            "source_category_code_origin": "embedded_pdf_ocr",
+            "compound_senses": [
+              "fish"
+            ],
+            "first_component_only_star_sense": false,
+            "printed_form_transcription": "kaṉ-mīṉ",
+            "form_status": "visually_transcribed",
+            "form_uncertainty": null,
+            "segmentation_as_printed": [
+              "kaṉ",
+              "mīṉ"
+            ],
+            "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+            "gloss_summary": "bride-fish, Lutjanus marginatus",
+            "printed_lexical_notes_ocr": [
+              "J [kal ‘stone’, DEDR 1298",
+              "‘one kind of sea-fish’"
+            ],
+            "dedr_references_ocr": [
+              "DEDR 1298"
+            ],
+            "raw_entry_text_ocr": "ka'!}-mi'[J [kal ‘stone’, DEDR 1298] ‘bride-fish, purplish- \nyellow, attaining 16 inches in length, Lutjanus marginatus; \noru -vakai-k katal-m in [‘one kind of sea-fish’]’.",
+            "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+            "source_regions": [
+              {
+                "pdf_page_index": 297,
+                "printed_page": 280,
+                "column": 1,
+                "bbox_pdf_points": [
+                  330,
+                  194.39,
+                  565,
+                  229.79
+                ],
+                "raw_text": "ka'!}-mi'[J [kal ‘stone’, DEDR 1298] ‘bride-fish, purplish- \nyellow, attaining 16 inches in length, Lutjanus marginatus; \noru -vakai-k katal-m in [‘one kind of sea-fish’]’."
+              }
+            ],
+            "phonology_test_eligible": true,
+            "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+            "indus_assignment": null,
+            "segmentation_for_search": [
+              "kaṉ",
+              "mīṉ"
+            ]
+          },
+          "second": {
+            "entry_id": "tamil_app_281_07",
+            "language": "Tamil",
+            "entry_type": "category_marked_lexical_entry",
+            "source_category_code": "F",
+            "source_category_code_origin": "embedded_pdf_ocr",
+            "compound_senses": [
+              "fish"
+            ],
+            "first_component_only_star_sense": false,
+            "printed_form_transcription": "kōḻi-mīṉ",
+            "form_status": "visually_transcribed",
+            "form_uncertainty": null,
+            "segmentation_as_printed": [
+              "kōḻi",
+              "mīṉ"
+            ],
+            "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+            "gloss_summary": "sturgeon, Achanthurus gahm as source spells it",
+            "printed_lexical_notes_ocr": [
+              "köli ‘cock, \nfowl’, \nD E D R  2248",
+              "Cf. kallu-k-köli-m iy; m ancat-köli-m iy."
+            ],
+            "dedr_references_ocr": [
+              "DEDR  2248"
+            ],
+            "raw_entry_text_ocr": "köli-m iy \n[köli ‘cock, \nfowl’, \nD E D R  2248] ‘sturgeon, \nblackish-brown, attaining 18 inches in length, Achanthurus \ngahm; p a tiyett’ atikula nifamum karu-niram um  ulla katal- \nm iy- va k a i'. [Cf. kallu-k-köli-m iy; m ancat-köli-m iy.]",
+            "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+            "source_regions": [
+              {
+                "pdf_page_index": 298,
+                "printed_page": 281,
+                "column": 0,
+                "bbox_pdf_points": [
+                  52,
+                  422.09,
+                  280,
+                  468.64
+                ],
+                "raw_text": "köli-m iy \n[köli ‘cock, \nfowl’, \nD E D R  2248] ‘sturgeon, \nblackish-brown, attaining 18 inches in length, Achanthurus \ngahm; p a tiyett’ atikula nifamum karu-niram um  ulla katal- \nm iy- va k a i'. [Cf. kallu-k-köli-m iy; m ancat-köli-m iy.]"
+              }
+            ],
+            "phonology_test_eligible": true,
+            "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+            "indus_assignment": null,
+            "segmentation_for_search": [
+              "kōḻi",
+              "mīṉ"
+            ]
+          },
+          "source_supported_lemma_relation": "STONE via DEDR1298 source brackets",
+          "boundary_segment_analysis": "printed single m/k/v segments treated as candidate context-dependent linkers; no productive law asserted"
+        },
+        "executed_spelling_forms": [
+          {
+            "stored_sequence": [
+              "66"
+            ],
+            "executed_parse": [
+              {
+                "source_signs": [
+                  "66"
+                ],
+                "root": "mīṉ",
+                "operators": [
+                  "ROOF",
+                  "TICK"
+                ],
+                "candidate_surface": "kallukkōḻimīṉ"
+              }
+            ]
+          },
+          {
+            "stored_sequence": [
+              "87",
+              "60"
+            ],
+            "executed_parse": [
+              {
+                "source_signs": [
+                  "87",
+                  "60"
+                ],
+                "root": "mīṉ",
+                "operators": [
+                  "ROOF",
+                  "TICK"
+                ],
+                "candidate_surface": "kallukkōḻimīṉ"
+              }
+            ]
+          },
+          {
+            "stored_sequence": [
+              "65",
+              "211"
+            ],
+            "executed_parse": [
+              {
+                "source_signs": [
+                  "65",
+                  "211"
+                ],
+                "root": "mīṉ",
+                "operators": [
+                  "ROOF",
+                  "TICK"
+                ],
+                "candidate_surface": "kallukkōḻimīṉ"
+              }
+            ]
+          },
+          {
+            "stored_sequence": [
+              "87",
+              "59",
+              "211"
+            ],
+            "executed_parse": [
+              {
+                "source_signs": [
+                  "87",
+                  "59",
+                  "211"
+                ],
+                "root": "mīṉ",
+                "operators": [
+                  "ROOF",
+                  "TICK"
+                ],
+                "candidate_surface": "kallukkōḻimīṉ"
+              }
+            ]
+          }
+        ],
+        "independent_phonetic_targets": 0
+      },
+      "contradictions": [
+        "strict sound-by-sign linear concatenation fails",
+        "swapping87/211modifier identities produces another compatible system",
+        "no generalization of lexical surface rules beyond supplied words yet"
+      ],
+      "alternatives": [
+        "other emitted Tamil systems",
+        "87quantity+fish with211nonphonetic role",
+        "anonymous operators"
+      ],
+      "parameters": {
+        "59": "mīṉ",
+        "65": "kaṉmīṉ",
+        "60": "kōḻimīṉ",
+        "66": "kallukkōḻimīṉ",
+        "87": "kal",
+        "211": "kōḻi"
+      },
+      "complexity": {
+        "fixed_modifier_order_rule": 1,
+        "link_segment_context_rules": 1,
+        "stone_family_context_realization_rule": 1
+      },
+      "predictions": [
+        "worked267–99compound parses",
+        "1380/2452equivalent abstract parses with root70 unread"
+      ],
+      "source_paths": [
+        "outputs/tamil_full_joint_search.json",
+        "outputs/tamil_joint_worked_readings.json",
+        "outputs/new_fish_family_propagation.json"
+      ],
+      "prior_exposure": "retrospective, A observations and semantic priors are not independent confirmations",
+      "record_file": "research/campaigns/integrated_20260906/route_d/outputs/candidates.json",
+      "source_paths_resolved": [
+        "research/campaigns/integrated_20260906/route_d/outputs/tamil_full_joint_search.json",
+        "research/campaigns/integrated_20260906/route_d/outputs/tamil_joint_worked_readings.json",
+        "research/campaigns/integrated_20260906/route_d/outputs/new_fish_family_propagation.json"
+      ]
+    },
+    {
+      "id": "D-TAMIL-JOINT-01",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "mapping": {
+          "59": "mīṉ",
+          "65": "kōḻimīṉ",
+          "60": "kaṉmīṉ",
+          "66": "kallukkōḻimīṉ",
+          "87": "kōḻi",
+          "211": "kal"
+        },
+        "decoder": "tamil_joint_search.py:decode_lattice",
+        "operations": {
+          "87": "add ROOF modifier to fish expression",
+          "211": "add TICK modifier to fish expression",
+          "canonical_order": [
+            "STONE",
+            "kōḻi"
+          ]
+        }
+      },
+      "namespace": "Mahadevan1977",
+      "context": "59/65/60/66 lattice, separate roof87 andticks211;70/71only anonymous structure",
+      "prerequisites": [
+        "A roof87 andticks211 operational equivalences",
+        "fish glyph59 reads comparative Tamil mīṉ",
+        "qualifier meanings selected from the source lexical triangle",
+        "one canonical qualifier order across all spellings",
+        "source-conditioned boundary/allomorph realization; no productive historical law established"
+      ],
+      "support": {
+        "source_lexical_triangle": {
+          "modifier_keys": [
+            "STONE",
+            "kōḻi"
+          ],
+          "double": {
+            "entry_id": "tamil_app_280_15",
+            "language": "Tamil",
+            "entry_type": "category_marked_lexical_entry",
+            "source_category_code": "F",
+            "source_category_code_origin": "embedded_pdf_ocr",
+            "compound_senses": [
+              "fish"
+            ],
+            "first_component_only_star_sense": false,
+            "printed_form_transcription": "kallu-k-kōḻi-mīṉ",
+            "form_status": "visually_transcribed",
+            "form_uncertainty": null,
+            "segmentation_as_printed": [
+              "kallu",
+              "k",
+              "kōḻi",
+              "mīṉ"
+            ],
+            "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+            "gloss_summary": "blue sea fish, Holocanthus imperator",
+            "printed_lexical_notes_ocr": [
+              "kallu ‘stone’, DEDR 1298; köli ‘cock, \nfowl’, D ED R 2248",
+              "Cf. koli-mi!J,."
+            ],
+            "dedr_references_ocr": [
+              "DEDR 1298",
+              "DEDR 2248"
+            ],
+            "raw_entry_text_ocr": "kallu-k-köli-m m  [kallu ‘stone’, DEDR 1298; köli ‘cock, \nfowl’, D ED R 2248] ‘a sea-fish, bluish, Holocanthus \nimperator; katal-m itt-vakai? [Cf. koli-mi!J,.]",
+            "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+            "source_regions": [
+              {
+                "pdf_page_index": 297,
+                "printed_page": 280,
+                "column": 1,
+                "bbox_pdf_points": [
+                  330,
+                  137.14,
+                  565,
+                  172.54
+                ],
+                "raw_text": "kallu-k-köli-m m  [kallu ‘stone’, DEDR 1298; köli ‘cock, \nfowl’, D ED R 2248] ‘a sea-fish, bluish, Holocanthus \nimperator; katal-m itt-vakai? [Cf. koli-mi!J,.]"
+              }
+            ],
+            "phonology_test_eligible": true,
+            "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+            "indus_assignment": null,
+            "segmentation_for_search": [
+              "kallu",
+              "k",
+              "kōḻi",
+              "mīṉ"
+            ]
+          },
+          "first": {
+            "entry_id": "tamil_app_280_17",
+            "language": "Tamil",
+            "entry_type": "category_marked_lexical_entry",
+            "source_category_code": "F",
+            "source_category_code_origin": "embedded_pdf_ocr",
+            "compound_senses": [
+              "fish"
+            ],
+            "first_component_only_star_sense": false,
+            "printed_form_transcription": "kaṉ-mīṉ",
+            "form_status": "visually_transcribed",
+            "form_uncertainty": null,
+            "segmentation_as_printed": [
+              "kaṉ",
+              "mīṉ"
+            ],
+            "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+            "gloss_summary": "bride-fish, Lutjanus marginatus",
+            "printed_lexical_notes_ocr": [
+              "J [kal ‘stone’, DEDR 1298",
+              "‘one kind of sea-fish’"
+            ],
+            "dedr_references_ocr": [
+              "DEDR 1298"
+            ],
+            "raw_entry_text_ocr": "ka'!}-mi'[J [kal ‘stone’, DEDR 1298] ‘bride-fish, purplish- \nyellow, attaining 16 inches in length, Lutjanus marginatus; \noru -vakai-k katal-m in [‘one kind of sea-fish’]’.",
+            "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+            "source_regions": [
+              {
+                "pdf_page_index": 297,
+                "printed_page": 280,
+                "column": 1,
+                "bbox_pdf_points": [
+                  330,
+                  194.39,
+                  565,
+                  229.79
+                ],
+                "raw_text": "ka'!}-mi'[J [kal ‘stone’, DEDR 1298] ‘bride-fish, purplish- \nyellow, attaining 16 inches in length, Lutjanus marginatus; \noru -vakai-k katal-m in [‘one kind of sea-fish’]’."
+              }
+            ],
+            "phonology_test_eligible": true,
+            "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+            "indus_assignment": null,
+            "segmentation_for_search": [
+              "kaṉ",
+              "mīṉ"
+            ]
+          },
+          "second": {
+            "entry_id": "tamil_app_281_07",
+            "language": "Tamil",
+            "entry_type": "category_marked_lexical_entry",
+            "source_category_code": "F",
+            "source_category_code_origin": "embedded_pdf_ocr",
+            "compound_senses": [
+              "fish"
+            ],
+            "first_component_only_star_sense": false,
+            "printed_form_transcription": "kōḻi-mīṉ",
+            "form_status": "visually_transcribed",
+            "form_uncertainty": null,
+            "segmentation_as_printed": [
+              "kōḻi",
+              "mīṉ"
+            ],
+            "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+            "gloss_summary": "sturgeon, Achanthurus gahm as source spells it",
+            "printed_lexical_notes_ocr": [
+              "köli ‘cock, \nfowl’, \nD E D R  2248",
+              "Cf. kallu-k-köli-m iy; m ancat-köli-m iy."
+            ],
+            "dedr_references_ocr": [
+              "DEDR  2248"
+            ],
+            "raw_entry_text_ocr": "köli-m iy \n[köli ‘cock, \nfowl’, \nD E D R  2248] ‘sturgeon, \nblackish-brown, attaining 18 inches in length, Achanthurus \ngahm; p a tiyett’ atikula nifamum karu-niram um  ulla katal- \nm iy- va k a i'. [Cf. kallu-k-köli-m iy; m ancat-köli-m iy.]",
+            "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+            "source_regions": [
+              {
+                "pdf_page_index": 298,
+                "printed_page": 281,
+                "column": 0,
+                "bbox_pdf_points": [
+                  52,
+                  422.09,
+                  280,
+                  468.64
+                ],
+                "raw_text": "köli-m iy \n[köli ‘cock, \nfowl’, \nD E D R  2248] ‘sturgeon, \nblackish-brown, attaining 18 inches in length, Achanthurus \ngahm; p a tiyett’ atikula nifamum karu-niram um  ulla katal- \nm iy- va k a i'. [Cf. kallu-k-köli-m iy; m ancat-köli-m iy.]"
+              }
+            ],
+            "phonology_test_eligible": true,
+            "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+            "indus_assignment": null,
+            "segmentation_for_search": [
+              "kōḻi",
+              "mīṉ"
+            ]
+          },
+          "source_supported_lemma_relation": "STONE via DEDR1298 source brackets",
+          "boundary_segment_analysis": "printed single m/k/v segments treated as candidate context-dependent linkers; no productive law asserted"
+        },
+        "executed_spelling_forms": [
+          {
+            "stored_sequence": [
+              "66"
+            ],
+            "executed_parse": [
+              {
+                "source_signs": [
+                  "66"
+                ],
+                "root": "mīṉ",
+                "operators": [
+                  "ROOF",
+                  "TICK"
+                ],
+                "candidate_surface": "kallukkōḻimīṉ"
+              }
+            ]
+          },
+          {
+            "stored_sequence": [
+              "87",
+              "60"
+            ],
+            "executed_parse": [
+              {
+                "source_signs": [
+                  "87",
+                  "60"
+                ],
+                "root": "mīṉ",
+                "operators": [
+                  "ROOF",
+                  "TICK"
+                ],
+                "candidate_surface": "kallukkōḻimīṉ"
+              }
+            ]
+          },
+          {
+            "stored_sequence": [
+              "65",
+              "211"
+            ],
+            "executed_parse": [
+              {
+                "source_signs": [
+                  "65",
+                  "211"
+                ],
+                "root": "mīṉ",
+                "operators": [
+                  "ROOF",
+                  "TICK"
+                ],
+                "candidate_surface": "kallukkōḻimīṉ"
+              }
+            ]
+          },
+          {
+            "stored_sequence": [
+              "87",
+              "59",
+              "211"
+            ],
+            "executed_parse": [
+              {
+                "source_signs": [
+                  "87",
+                  "59",
+                  "211"
+                ],
+                "root": "mīṉ",
+                "operators": [
+                  "ROOF",
+                  "TICK"
+                ],
+                "candidate_surface": "kallukkōḻimīṉ"
+              }
+            ]
+          }
+        ],
+        "independent_phonetic_targets": 0
+      },
+      "contradictions": [
+        "strict sound-by-sign linear concatenation fails",
+        "swapping87/211modifier identities produces another compatible system",
+        "no generalization of lexical surface rules beyond supplied words yet"
+      ],
+      "alternatives": [
+        "other emitted Tamil systems",
+        "87quantity+fish with211nonphonetic role",
+        "anonymous operators"
+      ],
+      "parameters": {
+        "59": "mīṉ",
+        "65": "kōḻimīṉ",
+        "60": "kaṉmīṉ",
+        "66": "kallukkōḻimīṉ",
+        "87": "kōḻi",
+        "211": "kal"
+      },
+      "complexity": {
+        "fixed_modifier_order_rule": 1,
+        "link_segment_context_rules": 1,
+        "stone_family_context_realization_rule": 1
+      },
+      "predictions": [
+        "worked267–99compound parses",
+        "1380/2452equivalent abstract parses with root70 unread"
+      ],
+      "source_paths": [
+        "outputs/tamil_full_joint_search.json",
+        "outputs/tamil_joint_worked_readings.json",
+        "outputs/new_fish_family_propagation.json"
+      ],
+      "prior_exposure": "retrospective, A observations and semantic priors are not independent confirmations",
+      "record_file": "research/campaigns/integrated_20260906/route_d/outputs/candidates.json",
+      "source_paths_resolved": [
+        "research/campaigns/integrated_20260906/route_d/outputs/tamil_full_joint_search.json",
+        "research/campaigns/integrated_20260906/route_d/outputs/tamil_joint_worked_readings.json",
+        "research/campaigns/integrated_20260906/route_d/outputs/new_fish_family_propagation.json"
+      ]
+    },
+    {
+      "id": "D-TAMIL-JOINT-02",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "mapping": {
+          "59": "mīṉ",
+          "65": "neymmīṉ",
+          "60": "vāṉmīṉ",
+          "66": "neyvāṉmīṉ",
+          "87": "ney",
+          "211": "vāṉ"
+        },
+        "decoder": "tamil_joint_search.py:decode_lattice",
+        "operations": {
+          "87": "add ROOF modifier to fish expression",
+          "211": "add TICK modifier to fish expression",
+          "canonical_order": [
+            "ney",
+            "vāṉ"
+          ]
+        }
+      },
+      "namespace": "Mahadevan1977",
+      "context": "59/65/60/66 lattice, separate roof87 andticks211;70/71only anonymous structure",
+      "prerequisites": [
+        "A roof87 andticks211 operational equivalences",
+        "fish glyph59 reads comparative Tamil mīṉ",
+        "qualifier meanings selected from the source lexical triangle",
+        "one canonical qualifier order across all spellings",
+        "source-conditioned boundary/allomorph realization; no productive historical law established"
+      ],
+      "support": {
+        "source_lexical_triangle": {
+          "modifier_keys": [
+            "ney",
+            "vāṉ"
+          ],
+          "double": {
+            "entry_id": "tamil_app_281_22",
+            "language": "Tamil",
+            "entry_type": "category_marked_lexical_entry",
+            "source_category_code": "S",
+            "source_category_code_origin": "embedded_pdf_ocr",
+            "compound_senses": [
+              "star"
+            ],
+            "first_component_only_star_sense": false,
+            "printed_form_transcription": "ney-vāṉ-mīṉ",
+            "form_status": "visually_transcribed",
+            "form_uncertainty": null,
+            "segmentation_as_printed": [
+              "ney",
+              "vāṉ",
+              "mīṉ"
+            ],
+            "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+            "gloss_summary": "fourteenth nakshatra",
+            "printed_lexical_notes_ocr": [
+              "ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381",
+              "<Sanskrit \ncitrii"
+            ],
+            "dedr_references_ocr": [
+              "DEDR  3746",
+              "DEDR  \n5381"
+            ],
+            "raw_entry_text_ocr": "ney-viiy-m iy [ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381] ‘the fourteenth naksatra; cittirai-niif [<Sanskrit \ncitrii]' (Cëntan Tivakaran).",
+            "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+            "source_regions": [
+              {
+                "pdf_page_index": 298,
+                "printed_page": 281,
+                "column": 1,
+                "bbox_pdf_points": [
+                  310,
+                  444.79,
+                  562,
+                  480.14
+                ],
+                "raw_text": "ney-viiy-m iy [ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381] ‘the fourteenth naksatra; cittirai-niif [<Sanskrit \ncitrii]' (Cëntan Tivakaran)."
+              }
+            ],
+            "phonology_test_eligible": true,
+            "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+            "indus_assignment": null,
+            "segmentation_for_search": [
+              "ney",
+              "vāṉ",
+              "mīṉ"
+            ]
+          },
+          "first": {
+            "entry_id": "tamil_app_281_21",
+            "language": "Tamil",
+            "entry_type": "category_marked_lexical_entry",
+            "source_category_code": "SF",
+            "source_category_code_origin": "embedded_pdf_ocr",
+            "compound_senses": [
+              "fish",
+              "star"
+            ],
+            "first_component_only_star_sense": false,
+            "printed_form_transcription": "ney-m-mīṉ",
+            "form_status": "visually_transcribed",
+            "form_uncertainty": null,
+            "segmentation_as_printed": [
+              "ney",
+              "m",
+              "mīṉ"
+            ],
+            "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+            "gloss_summary": "fourteenth nakshatra by synonym; white prawn",
+            "printed_lexical_notes_ocr": [
+              "ney ‘oil, ghee, fat’, D E D R  3746"
+            ],
+            "dedr_references_ocr": [
+              "DEDR  3746"
+            ],
+            "raw_entry_text_ocr": "ney-m -m iy [ney ‘oil, ghee, fat’, D E D R  3746] (i) =  ney-vii!J- \nm iy (Pinkala-nikantu); \n(2) \n‘white \nprawn; \nve l-l-iru f, \n(Winslow.)",
+            "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+            "source_regions": [
+              {
+                "pdf_page_index": 298,
+                "printed_page": 281,
+                "column": 1,
+                "bbox_pdf_points": [
+                  310,
+                  410.39,
+                  562,
+                  445.79
+                ],
+                "raw_text": "ney-m -m iy [ney ‘oil, ghee, fat’, D E D R  3746] (i) =  ney-vii!J- \nm iy (Pinkala-nikantu); \n(2) \n‘white \nprawn; \nve l-l-iru f, \n(Winslow.)"
+              }
+            ],
+            "phonology_test_eligible": true,
+            "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+            "indus_assignment": null,
+            "segmentation_for_search": [
+              "ney",
+              "m",
+              "mīṉ"
+            ]
+          },
+          "second": {
+            "entry_id": "tamil_app_283_04",
+            "language": "Tamil",
+            "entry_type": "category_marked_lexical_entry",
+            "source_category_code": "S",
+            "source_category_code_origin": "embedded_pdf_ocr",
+            "compound_senses": [
+              "star"
+            ],
+            "first_component_only_star_sense": false,
+            "printed_form_transcription": "vāṉ-mīṉ",
+            "form_status": "visually_transcribed",
+            "form_uncertainty": null,
+            "segmentation_as_printed": [
+              "vāṉ",
+              "mīṉ"
+            ],
+            "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+            "gloss_summary": "star",
+            "printed_lexical_notes_ocr": [
+              "viiy ‘sky’, D E D R  5381"
+            ],
+            "dedr_references_ocr": [
+              "DEDR  5381"
+            ],
+            "raw_entry_text_ocr": "(1) viiy-m iy [viiy ‘sky’, D E D R  5381] ‘star; nafcattiram ’ \n(Purananiiru Arum.). Cf. ney-viiy-m tn.",
+            "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+            "source_regions": [
+              {
+                "pdf_page_index": 300,
+                "printed_page": 283,
+                "column": 0,
+                "bbox_pdf_points": [
+                  52,
+                  168.34,
+                  280,
+                  192.39
+                ],
+                "raw_text": "(1) viiy-m iy [viiy ‘sky’, D E D R  5381] ‘star; nafcattiram ’ \n(Purananiiru Arum.). Cf. ney-viiy-m tn."
+              }
+            ],
+            "phonology_test_eligible": true,
+            "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+            "indus_assignment": null,
+            "segmentation_for_search": [
+              "vāṉ",
+              "mīṉ"
+            ]
+          },
+          "source_supported_lemma_relation": null,
+          "boundary_segment_analysis": "printed single m/k/v segments treated as candidate context-dependent linkers; no productive law asserted"
+        },
+        "executed_spelling_forms": [
+          {
+            "stored_sequence": [
+              "66"
+            ],
+            "executed_parse": [
+              {
+                "source_signs": [
+                  "66"
+                ],
+                "root": "mīṉ",
+                "operators": [
+                  "ROOF",
+                  "TICK"
+                ],
+                "candidate_surface": "neyvāṉmīṉ"
+              }
+            ]
+          },
+          {
+            "stored_sequence": [
+              "87",
+              "60"
+            ],
+            "executed_parse": [
+              {
+                "source_signs": [
+                  "87",
+                  "60"
+                ],
+                "root": "mīṉ",
+                "operators": [
+                  "ROOF",
+                  "TICK"
+                ],
+                "candidate_surface": "neyvāṉmīṉ"
+              }
+            ]
+          },
+          {
+            "stored_sequence": [
+              "65",
+              "211"
+            ],
+            "executed_parse": [
+              {
+                "source_signs": [
+                  "65",
+                  "211"
+                ],
+                "root": "mīṉ",
+                "operators": [
+                  "ROOF",
+                  "TICK"
+                ],
+                "candidate_surface": "neyvāṉmīṉ"
+              }
+            ]
+          },
+          {
+            "stored_sequence": [
+              "87",
+              "59",
+              "211"
+            ],
+            "executed_parse": [
+              {
+                "source_signs": [
+                  "87",
+                  "59",
+                  "211"
+                ],
+                "root": "mīṉ",
+                "operators": [
+                  "ROOF",
+                  "TICK"
+                ],
+                "candidate_surface": "neyvāṉmīṉ"
+              }
+            ]
+          }
+        ],
+        "independent_phonetic_targets": 0
+      },
+      "contradictions": [
+        "strict sound-by-sign linear concatenation fails",
+        "swapping87/211modifier identities produces another compatible system",
+        "no generalization of lexical surface rules beyond supplied words yet"
+      ],
+      "alternatives": [
+        "other emitted Tamil systems",
+        "87quantity+fish with211nonphonetic role",
+        "anonymous operators"
+      ],
+      "parameters": {
+        "59": "mīṉ",
+        "65": "neymmīṉ",
+        "60": "vāṉmīṉ",
+        "66": "neyvāṉmīṉ",
+        "87": "ney",
+        "211": "vāṉ"
+      },
+      "complexity": {
+        "fixed_modifier_order_rule": 1,
+        "link_segment_context_rules": 1,
+        "stone_family_context_realization_rule": 0
+      },
+      "predictions": [
+        "worked267–99compound parses",
+        "1380/2452equivalent abstract parses with root70 unread"
+      ],
+      "source_paths": [
+        "outputs/tamil_full_joint_search.json",
+        "outputs/tamil_joint_worked_readings.json",
+        "outputs/new_fish_family_propagation.json"
+      ],
+      "prior_exposure": "retrospective, A observations and semantic priors are not independent confirmations",
+      "record_file": "research/campaigns/integrated_20260906/route_d/outputs/candidates.json",
+      "source_paths_resolved": [
+        "research/campaigns/integrated_20260906/route_d/outputs/tamil_full_joint_search.json",
+        "research/campaigns/integrated_20260906/route_d/outputs/tamil_joint_worked_readings.json",
+        "research/campaigns/integrated_20260906/route_d/outputs/new_fish_family_propagation.json"
+      ]
+    },
+    {
+      "id": "D-TAMIL-JOINT-03",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "mapping": {
+          "59": "mīṉ",
+          "65": "vāṉmīṉ",
+          "60": "neymmīṉ",
+          "66": "neyvāṉmīṉ",
+          "87": "vāṉ",
+          "211": "ney"
+        },
+        "decoder": "tamil_joint_search.py:decode_lattice",
+        "operations": {
+          "87": "add ROOF modifier to fish expression",
+          "211": "add TICK modifier to fish expression",
+          "canonical_order": [
+            "ney",
+            "vāṉ"
+          ]
+        }
+      },
+      "namespace": "Mahadevan1977",
+      "context": "59/65/60/66 lattice, separate roof87 andticks211;70/71only anonymous structure",
+      "prerequisites": [
+        "A roof87 andticks211 operational equivalences",
+        "fish glyph59 reads comparative Tamil mīṉ",
+        "qualifier meanings selected from the source lexical triangle",
+        "one canonical qualifier order across all spellings",
+        "source-conditioned boundary/allomorph realization; no productive historical law established"
+      ],
+      "support": {
+        "source_lexical_triangle": {
+          "modifier_keys": [
+            "ney",
+            "vāṉ"
+          ],
+          "double": {
+            "entry_id": "tamil_app_281_22",
+            "language": "Tamil",
+            "entry_type": "category_marked_lexical_entry",
+            "source_category_code": "S",
+            "source_category_code_origin": "embedded_pdf_ocr",
+            "compound_senses": [
+              "star"
+            ],
+            "first_component_only_star_sense": false,
+            "printed_form_transcription": "ney-vāṉ-mīṉ",
+            "form_status": "visually_transcribed",
+            "form_uncertainty": null,
+            "segmentation_as_printed": [
+              "ney",
+              "vāṉ",
+              "mīṉ"
+            ],
+            "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+            "gloss_summary": "fourteenth nakshatra",
+            "printed_lexical_notes_ocr": [
+              "ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381",
+              "<Sanskrit \ncitrii"
+            ],
+            "dedr_references_ocr": [
+              "DEDR  3746",
+              "DEDR  \n5381"
+            ],
+            "raw_entry_text_ocr": "ney-viiy-m iy [ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381] ‘the fourteenth naksatra; cittirai-niif [<Sanskrit \ncitrii]' (Cëntan Tivakaran).",
+            "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+            "source_regions": [
+              {
+                "pdf_page_index": 298,
+                "printed_page": 281,
+                "column": 1,
+                "bbox_pdf_points": [
+                  310,
+                  444.79,
+                  562,
+                  480.14
+                ],
+                "raw_text": "ney-viiy-m iy [ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381] ‘the fourteenth naksatra; cittirai-niif [<Sanskrit \ncitrii]' (Cëntan Tivakaran)."
+              }
+            ],
+            "phonology_test_eligible": true,
+            "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+            "indus_assignment": null,
+            "segmentation_for_search": [
+              "ney",
+              "vāṉ",
+              "mīṉ"
+            ]
+          },
+          "first": {
+            "entry_id": "tamil_app_281_21",
+            "language": "Tamil",
+            "entry_type": "category_marked_lexical_entry",
+            "source_category_code": "SF",
+            "source_category_code_origin": "embedded_pdf_ocr",
+            "compound_senses": [
+              "fish",
+              "star"
+            ],
+            "first_component_only_star_sense": false,
+            "printed_form_transcription": "ney-m-mīṉ",
+            "form_status": "visually_transcribed",
+            "form_uncertainty": null,
+            "segmentation_as_printed": [
+              "ney",
+              "m",
+              "mīṉ"
+            ],
+            "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+            "gloss_summary": "fourteenth nakshatra by synonym; white prawn",
+            "printed_lexical_notes_ocr": [
+              "ney ‘oil, ghee, fat’, D E D R  3746"
+            ],
+            "dedr_references_ocr": [
+              "DEDR  3746"
+            ],
+            "raw_entry_text_ocr": "ney-m -m iy [ney ‘oil, ghee, fat’, D E D R  3746] (i) =  ney-vii!J- \nm iy (Pinkala-nikantu); \n(2) \n‘white \nprawn; \nve l-l-iru f, \n(Winslow.)",
+            "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+            "source_regions": [
+              {
+                "pdf_page_index": 298,
+                "printed_page": 281,
+                "column": 1,
+                "bbox_pdf_points": [
+                  310,
+                  410.39,
+                  562,
+                  445.79
+                ],
+                "raw_text": "ney-m -m iy [ney ‘oil, ghee, fat’, D E D R  3746] (i) =  ney-vii!J- \nm iy (Pinkala-nikantu); \n(2) \n‘white \nprawn; \nve l-l-iru f, \n(Winslow.)"
+              }
+            ],
+            "phonology_test_eligible": true,
+            "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+            "indus_assignment": null,
+            "segmentation_for_search": [
+              "ney",
+              "m",
+              "mīṉ"
+            ]
+          },
+          "second": {
+            "entry_id": "tamil_app_283_04",
+            "language": "Tamil",
+            "entry_type": "category_marked_lexical_entry",
+            "source_category_code": "S",
+            "source_category_code_origin": "embedded_pdf_ocr",
+            "compound_senses": [
+              "star"
+            ],
+            "first_component_only_star_sense": false,
+            "printed_form_transcription": "vāṉ-mīṉ",
+            "form_status": "visually_transcribed",
+            "form_uncertainty": null,
+            "segmentation_as_printed": [
+              "vāṉ",
+              "mīṉ"
+            ],
+            "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+            "gloss_summary": "star",
+            "printed_lexical_notes_ocr": [
+              "viiy ‘sky’, D E D R  5381"
+            ],
+            "dedr_references_ocr": [
+              "DEDR  5381"
+            ],
+            "raw_entry_text_ocr": "(1) viiy-m iy [viiy ‘sky’, D E D R  5381] ‘star; nafcattiram ’ \n(Purananiiru Arum.). Cf. ney-viiy-m tn.",
+            "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+            "source_regions": [
+              {
+                "pdf_page_index": 300,
+                "printed_page": 283,
+                "column": 0,
+                "bbox_pdf_points": [
+                  52,
+                  168.34,
+                  280,
+                  192.39
+                ],
+                "raw_text": "(1) viiy-m iy [viiy ‘sky’, D E D R  5381] ‘star; nafcattiram ’ \n(Purananiiru Arum.). Cf. ney-viiy-m tn."
+              }
+            ],
+            "phonology_test_eligible": true,
+            "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+            "indus_assignment": null,
+            "segmentation_for_search": [
+              "vāṉ",
+              "mīṉ"
+            ]
+          },
+          "source_supported_lemma_relation": null,
+          "boundary_segment_analysis": "printed single m/k/v segments treated as candidate context-dependent linkers; no productive law asserted"
+        },
+        "executed_spelling_forms": [
+          {
+            "stored_sequence": [
+              "66"
+            ],
+            "executed_parse": [
+              {
+                "source_signs": [
+                  "66"
+                ],
+                "root": "mīṉ",
+                "operators": [
+                  "ROOF",
+                  "TICK"
+                ],
+                "candidate_surface": "neyvāṉmīṉ"
+              }
+            ]
+          },
+          {
+            "stored_sequence": [
+              "87",
+              "60"
+            ],
+            "executed_parse": [
+              {
+                "source_signs": [
+                  "87",
+                  "60"
+                ],
+                "root": "mīṉ",
+                "operators": [
+                  "ROOF",
+                  "TICK"
+                ],
+                "candidate_surface": "neyvāṉmīṉ"
+              }
+            ]
+          },
+          {
+            "stored_sequence": [
+              "65",
+              "211"
+            ],
+            "executed_parse": [
+              {
+                "source_signs": [
+                  "65",
+                  "211"
+                ],
+                "root": "mīṉ",
+                "operators": [
+                  "ROOF",
+                  "TICK"
+                ],
+                "candidate_surface": "neyvāṉmīṉ"
+              }
+            ]
+          },
+          {
+            "stored_sequence": [
+              "87",
+              "59",
+              "211"
+            ],
+            "executed_parse": [
+              {
+                "source_signs": [
+                  "87",
+                  "59",
+                  "211"
+                ],
+                "root": "mīṉ",
+                "operators": [
+                  "ROOF",
+                  "TICK"
+                ],
+                "candidate_surface": "neyvāṉmīṉ"
+              }
+            ]
+          }
+        ],
+        "independent_phonetic_targets": 0
+      },
+      "contradictions": [
+        "strict sound-by-sign linear concatenation fails",
+        "swapping87/211modifier identities produces another compatible system",
+        "no generalization of lexical surface rules beyond supplied words yet"
+      ],
+      "alternatives": [
+        "other emitted Tamil systems",
+        "87quantity+fish with211nonphonetic role",
+        "anonymous operators"
+      ],
+      "parameters": {
+        "59": "mīṉ",
+        "65": "vāṉmīṉ",
+        "60": "neymmīṉ",
+        "66": "neyvāṉmīṉ",
+        "87": "vāṉ",
+        "211": "ney"
+      },
+      "complexity": {
+        "fixed_modifier_order_rule": 1,
+        "link_segment_context_rules": 1,
+        "stone_family_context_realization_rule": 0
+      },
+      "predictions": [
+        "worked267–99compound parses",
+        "1380/2452equivalent abstract parses with root70 unread"
+      ],
+      "source_paths": [
+        "outputs/tamil_full_joint_search.json",
+        "outputs/tamil_joint_worked_readings.json",
+        "outputs/new_fish_family_propagation.json"
+      ],
+      "prior_exposure": "retrospective, A observations and semantic priors are not independent confirmations",
+      "record_file": "research/campaigns/integrated_20260906/route_d/outputs/candidates.json",
+      "source_paths_resolved": [
+        "research/campaigns/integrated_20260906/route_d/outputs/tamil_full_joint_search.json",
+        "research/campaigns/integrated_20260906/route_d/outputs/tamil_joint_worked_readings.json",
+        "research/campaigns/integrated_20260906/route_d/outputs/new_fish_family_propagation.json"
+      ]
+    }
+  ],
+  "status_note": "supported_scope_limited denotes a route-local observation, not accepted decipherment",
+  "contract_issues": []
+}

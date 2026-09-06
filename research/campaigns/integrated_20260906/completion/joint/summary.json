@@ -1,0 +1,169 @@
+{
+  "status": "executed_reconstructed_rerun",
+  "tasks": [
+    {
+      "task": "recombination_0",
+      "fitted_candidates": 27,
+      "selected": "tick388-after__r1",
+      "a_only_selected": "tick388-after__r1",
+      "held_channel_bits": {
+        "text": 9636.3596532962,
+        "motif": 1071.453969479868,
+        "cup": 556.7225389452635
+      },
+      "held_data_bits": 11264.536161721331,
+      "baseline_held_data_bits": 11259.875355922548,
+      "gain_bits": -4.660805798783258,
+      "mask_sizes": {
+        "text_train": 2668,
+        "text_target": 702,
+        "motif_train": 894,
+        "motif_target": 256,
+        "cup_train": 23,
+        "cup_target": 105
+      },
+      "all_grammar_fits_converged": true
+    },
+    {
+      "task": "recombination_1",
+      "fitted_candidates": 27,
+      "selected": "tick388-after__r1",
+      "a_only_selected": "tick388-after__r1",
+      "held_channel_bits": {
+        "text": 11175.308837065999,
+        "motif": 960.1643874517144,
+        "cup": 243.67367753566478
+      },
+      "held_data_bits": 12379.146902053379,
+      "baseline_held_data_bits": 12378.168329707643,
+      "gain_bits": -0.9785723457353015,
+      "mask_sizes": {
+        "text_train": 2780,
+        "text_target": 685,
+        "motif_train": 892,
+        "motif_target": 258,
+        "cup_train": 73,
+        "cup_target": 55
+      },
+      "all_grammar_fits_converged": true
+    },
+    {
+      "task": "recombination_2",
+      "fitted_candidates": 27,
+      "selected": "tick388-after__r1",
+      "a_only_selected": "tick388-after__r1",
+      "held_channel_bits": {
+        "text": 10521.129861956459,
+        "motif": 982.0152468276821,
+        "cup": 45.0984630653379
+      },
+      "held_data_bits": 11548.243571849478,
+      "baseline_held_data_bits": 11543.59088039768,
+      "gain_bits": -4.652691451798091,
+      "mask_sizes": {
+        "text_train": 2886,
+        "text_target": 644,
+        "motif_train": 893,
+        "motif_target": 257,
+        "cup_train": 100,
+        "cup_target": 28
+      },
+      "all_grammar_fits_converged": true
+    },
+    {
+      "task": "recombination_3",
+      "fitted_candidates": 27,
+      "selected": "tick388-after__r1",
+      "a_only_selected": "tick388-after__r1",
+      "held_channel_bits": {
+        "text": 9501.858017355436,
+        "motif": 785.3613341094422,
+        "cup": 17.590149711475586
+      },
+      "held_data_bits": 10304.809501176354,
+      "baseline_held_data_bits": 10303.34424165558,
+      "gain_bits": -1.465259520773543,
+      "mask_sizes": {
+        "text_train": 2836,
+        "text_target": 661,
+        "motif_train": 914,
+        "motif_target": 236,
+        "cup_train": 116,
+        "cup_target": 12
+      },
+      "all_grammar_fits_converged": true
+    },
+    {
+      "task": "recombination_4",
+      "fitted_candidates": 27,
+      "selected": "tick388-after__r1",
+      "a_only_selected": "tick388-after__r1",
+      "held_channel_bits": {
+        "text": 9796.625294110843,
+        "motif": 781.9880452819023,
+        "cup": 56.96039785925997
+      },
+      "held_data_bits": 10635.573737252005,
+      "baseline_held_data_bits": 10640.152295084818,
+      "gain_bits": 4.578557832812294,
+      "mask_sizes": {
+        "text_train": 2771,
+        "text_target": 695,
+        "motif_train": 904,
+        "motif_target": 246,
+        "cup_train": 92,
+        "cup_target": 36
+      },
+      "all_grammar_fits_converged": true
+    },
+    {
+      "task": "unseen_family_70_71",
+      "fitted_candidates": 27,
+      "selected": "tick388-after__r1",
+      "a_only_selected": "tick388-after__r1",
+      "held_channel_bits": {
+        "text": 2570.5331855733484,
+        "motif": 147.6080815717453,
+        "cup": 3.620811408827219
+      },
+      "held_data_bits": 2721.762078553921,
+      "baseline_held_data_bits": 2686.119003445017,
+      "gain_bits": -35.64307510890421,
+      "mask_sizes": {
+        "text_train": 3632,
+        "text_target": 79,
+        "motif_train": 1107,
+        "motif_target": 43,
+        "cup_train": 126,
+        "cup_target": 2
+      },
+      "all_grammar_fits_converged": true
+    },
+    {
+      "task": "medium_3",
+      "fitted_candidates": 27,
+      "selected": "identity__r1",
+      "a_only_selected": "identity__r1",
+      "held_channel_bits": {
+        "text": 2763.288692231532,
+        "motif": 303.6492201464065,
+        "cup": 177.22386273565846
+      },
+      "held_data_bits": 3244.161775113597,
+      "baseline_held_data_bits": 3244.161775113597,
+      "gain_bits": 0.0,
+      "mask_sizes": {
+        "text_train": 2928,
+        "text_target": 391,
+        "motif_train": 1067,
+        "motif_target": 29,
+        "cup_train": 0,
+        "cup_target": 66
+      },
+      "all_grammar_fits_converged": true
+    }
+  ],
+  "fitted_candidates": 189,
+  "new_accepted_readings": 0,
+  "factorization": "conditional raw text, motif, and cup likelihoods; observed count source lines removed from text channel; shared spelling selection on joint original observations"
+}

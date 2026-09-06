@@ -1,0 +1,37 @@
+{
+  "required_fields": [
+    "id",
+    "route",
+    "status",
+    "claim_type",
+    "rule",
+    "namespace",
+    "context",
+    "prerequisites",
+    "support",
+    "contradictions",
+    "alternatives",
+    "parameters",
+    "complexity",
+    "predictions",
+    "source_paths",
+    "prior_exposure"
+  ],
+  "claim_types": [
+    "graphical_equivalence",
+    "grammatical_function",
+    "operational_meaning",
+    "lexical_meaning",
+    "sound_assignment",
+    "language_identification",
+    "structural_constraint"
+  ],
+  "statuses": [
+    "provisional",
+    "conditional",
+    "underdetermined",
+    "rejected",
+    "supported_scope_limited"
+  ],
+  "accepted_ledger": "coordinator only; no promotion from predictive fit alone"
+}

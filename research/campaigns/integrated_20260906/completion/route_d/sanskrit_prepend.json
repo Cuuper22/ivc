@@ -1,0 +1,159 @@
+{
+  "schema": "ivc.reconstructed.linguistic.v1",
+  "language": "sanskrit",
+  "orientation": "prepend",
+  "char_bits": 5.643856189774724,
+  "boundary_bits": 1.0,
+  "fusion_bits": 0.0,
+  "roots": {
+    "59": "A",
+    "65": "A",
+    "67": "A",
+    "72": "A"
+  },
+  "marker": "",
+  "marker_role": "classifier",
+  "mapping": {
+    "59": "A",
+    "65": "A",
+    "67": "A",
+    "72": "A",
+    "211": "",
+    "60": "A",
+    "66": "A",
+    "68": "A",
+    "73": "A"
+  },
+  "trace": [
+    {
+      "iteration": 0,
+      "objective_bits": 71124.0190437915,
+      "step": "initial reusable sound mapping"
+    },
+    {
+      "iteration": 1,
+      "objective_bits": 5312.153383250455,
+      "step": "segmentation -> full root/affix coordinate scan -> segmentation",
+      "marker_candidates": 409732,
+      "marker_role": "classifier",
+      "role_alternatives": [
+        [
+          6616.226320241795,
+          "phonetic"
+        ],
+        [
+          5312.153383250455,
+          "classifier"
+        ]
+      ],
+      "changed": true
+    },
+    {
+      "iteration": 2,
+      "objective_bits": 5312.153383250455,
+      "step": "segmentation -> full root/affix coordinate scan -> segmentation",
+      "marker_candidates": 1,
+      "marker_role": "classifier",
+      "role_alternatives": [
+        [
+          5312.153383250455,
+          "classifier"
+        ]
+      ],
+      "changed": false
+    }
+  ],
+  "train_rows": 2524,
+  "train_digest": "c895bcd739130e0951bf27a570a20946ee342344e23b5a24a09b0593efd4256c",
+  "factor_type": "conditional_lexical_prior_not_text_likelihood",
+  "independent_Indus_sound_targets": 0,
+  "sources": [
+    "shared/observations.jsonl",
+    "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml"
+  ],
+  "scope": "four graphical fish bases; unknown signs including70 stay unread; retrospective",
+  "limitations": "finite coordinate optimum, conditional graphic expansion, no historical sound changes or ancient language identification",
+  "phonetic_alternative": {
+    "schema": "ivc.reconstructed.linguistic.v1",
+    "language": "sanskrit",
+    "orientation": "prepend",
+    "char_bits": 5.643856189774724,
+    "boundary_bits": 1.0,
+    "fusion_bits": 0.0,
+    "roots": {
+      "59": "f",
+      "65": "f",
+      "67": "f",
+      "72": "f"
+    },
+    "marker": "A",
+    "marker_role": "phonetic",
+    "mapping": {
+      "59": "f",
+      "65": "f",
+      "67": "f",
+      "72": "f",
+      "211": "A",
+      "60": "Af",
+      "66": "Af",
+      "68": "Af",
+      "73": "Af"
+    },
+    "trace": [
+      {
+        "iteration": 0,
+        "objective_bits": 71124.0190437915,
+        "step": "initial reusable sound mapping"
+      },
+      {
+        "iteration": 1,
+        "objective_bits": 6616.226320241795,
+        "step": "segmentation -> full root/affix coordinate scan -> segmentation",
+        "marker_candidates": 409732,
+        "marker_role": "phonetic",
+        "role_alternatives": [
+          [
+            6616.226320241795,
+            "phonetic"
+          ]
+        ],
+        "changed": true
+      },
+      {
+        "iteration": 2,
+        "objective_bits": 6616.226320241795,
+        "step": "segmentation -> full root/affix coordinate scan -> segmentation",
+        "marker_candidates": 409732,
+        "marker_role": "phonetic",
+        "role_alternatives": [
+          [
+            6616.226320241795,
+            "phonetic"
+          ]
+        ],
+        "changed": false
+      }
+    ],
+    "train_rows": 2524,
+    "train_digest": "c895bcd739130e0951bf27a570a20946ee342344e23b5a24a09b0593efd4256c",
+    "factor_type": "conditional_lexical_prior_not_text_likelihood",
+    "independent_Indus_sound_targets": 0,
+    "sources": [
+      "shared/observations.jsonl",
+      "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml"
+    ],
+    "scope": "four graphical fish bases; unknown signs including70 stay unread; retrospective",
+    "limitations": "finite coordinate optimum, conditional graphic expansion, no historical sound changes or ancient language identification",
+    "converged": true,
+    "parameter_bits": 41.21928094887362,
+    "role_search": "global phonetic-versus-classifier optimization; retained phonetic alternative where supported",
+    "vocabulary_size": 192482,
+    "marker_candidates": 409732
+  },
+  "converged": true,
+  "parameter_bits": 43.575424759098894,
+  "role_search": "global phonetic-versus-classifier optimization; retained phonetic alternative where supported",
+  "vocabulary_size": 192482,
+  "marker_candidates": 409732,
+  "id": "sanskrit_prepend"
+}

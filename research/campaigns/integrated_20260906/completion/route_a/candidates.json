@@ -1,0 +1,198 @@
+[
+  {
+    "id": "RA-identity",
+    "route": "A",
+    "status": "provisional",
+    "claim_type": "structural_constraint",
+    "rule": {
+      "executable": "grammar.transform",
+      "program": "identity",
+      "grammar": "grammar.fit",
+      "roles": 1
+    },
+    "namespace": "Mahadevan1977",
+    "context": "stored source order; raw signs normalized; expression-family weight1",
+    "prerequisites": [
+      "declared graphical pairs are proposed correspondences, not accepted readings"
+    ],
+    "support": {
+      "new_training_data_bits": 49739.03949028434,
+      "new_training_total_bits": 52412.89261890481,
+      "prior_alignment_evidence": "../../route_a/structured_alignments.json"
+    },
+    "contradictions": [
+      "No independent semantic anchor validates equal readings",
+      "Scope of before/after marker remains conditional"
+    ],
+    "alternatives": [
+      "independent raw signs",
+      "categorical slot convention",
+      "semantic distinction",
+      "phonetic addition",
+      "grammar operation with unanchored meaning"
+    ],
+    "parameters": {
+      "roles": 1,
+      "model": "full_models.json"
+    },
+    "complexity": {
+      "parameter_bits": 2673.853128620466,
+      "rule_bits": 0
+    },
+    "predictions": [
+      "Transform modified signs using one shared named program; compare exact retained alignment evidence and frozen joint predictions."
+    ],
+    "source_paths": [
+      "../../shared/observations.jsonl",
+      "../../shared/graphical_hypotheses.json"
+    ],
+    "prior_exposure": "retrospective frozen corpus previously inspected; newly reconstructed fitting, not recovered exact lost results"
+  },
+  {
+    "id": "RA-tick388-after",
+    "route": "A",
+    "status": "conditional",
+    "claim_type": "graphical_equivalence",
+    "rule": {
+      "executable": "grammar.transform",
+      "program": "tick388-after",
+      "grammar": "grammar.fit",
+      "roles": 1
+    },
+    "namespace": "Mahadevan1977",
+    "context": "stored source order; raw signs normalized; expression-family weight1",
+    "prerequisites": [
+      "declared graphical pairs are proposed correspondences, not accepted readings"
+    ],
+    "support": {
+      "new_training_data_bits": 49760.76012676657,
+      "new_training_total_bits": 52413.17950116455,
+      "prior_alignment_evidence": "../../route_a/structured_alignments.json"
+    },
+    "contradictions": [
+      "No independent semantic anchor validates equal readings",
+      "Scope of before/after marker remains conditional"
+    ],
+    "alternatives": [
+      "independent raw signs",
+      "categorical slot convention",
+      "semantic distinction",
+      "phonetic addition",
+      "grammar operation with unanchored meaning"
+    ],
+    "parameters": {
+      "roles": 1,
+      "model": "full_models.json"
+    },
+    "complexity": {
+      "parameter_bits": 2641.7154708245466,
+      "rule_bits": 10.703903573444663
+    },
+    "predictions": [
+      "Transform modified signs using one shared named program; compare exact retained alignment evidence and frozen joint predictions."
+    ],
+    "source_paths": [
+      "../../shared/observations.jsonl",
+      "../../shared/graphical_hypotheses.json"
+    ],
+    "prior_exposure": "retrospective frozen corpus previously inspected; newly reconstructed fitting, not recovered exact lost results"
+  },
+  {
+    "id": "RA-roof87_tick211",
+    "route": "A",
+    "status": "conditional",
+    "claim_type": "graphical_equivalence",
+    "rule": {
+      "executable": "grammar.transform",
+      "program": "roof87_tick211",
+      "grammar": "grammar.fit",
+      "roles": 1
+    },
+    "namespace": "Mahadevan1977",
+    "context": "stored source order; raw signs normalized; expression-family weight1",
+    "prerequisites": [
+      "declared graphical pairs are proposed correspondences, not accepted readings"
+    ],
+    "support": {
+      "new_training_data_bits": 49866.02903781813,
+      "new_training_total_bits": 52522.724784230384,
+      "prior_alignment_evidence": "../../route_a/structured_alignments.json"
+    },
+    "contradictions": [
+      "No independent semantic anchor validates equal readings",
+      "Scope of before/after marker remains conditional"
+    ],
+    "alternatives": [
+      "independent raw signs",
+      "categorical slot convention",
+      "semantic distinction",
+      "phonetic addition",
+      "grammar operation with unanchored meaning"
+    ],
+    "parameters": {
+      "roles": 1,
+      "model": "full_models.json"
+    },
+    "complexity": {
+      "parameter_bits": 2635.287939265363,
+      "rule_bits": 21.407807146889326
+    },
+    "predictions": [
+      "Transform modified signs using one shared named program; compare exact retained alignment evidence and frozen joint predictions."
+    ],
+    "source_paths": [
+      "../../shared/observations.jsonl",
+      "../../shared/graphical_hypotheses.json"
+    ],
+    "prior_exposure": "retrospective frozen corpus previously inspected; newly reconstructed fitting, not recovered exact lost results"
+  },
+  {
+    "id": "RA-tick211-before",
+    "route": "A",
+    "status": "conditional",
+    "claim_type": "graphical_equivalence",
+    "rule": {
+      "executable": "grammar.transform",
+      "program": "tick211-before",
+      "grammar": "grammar.fit",
+      "roles": 1
+    },
+    "namespace": "Mahadevan1977",
+    "context": "stored source order; raw signs normalized; expression-family weight1",
+    "prerequisites": [
+      "declared graphical pairs are proposed correspondences, not accepted readings"
+    ],
+    "support": {
+      "new_training_data_bits": 49874.7692569631,
+      "new_training_total_bits": 52527.18863136109,
+      "prior_alignment_evidence": "../../route_a/structured_alignments.json"
+    },
+    "contradictions": [
+      "No independent semantic anchor validates equal readings",
+      "Scope of before/after marker remains conditional"
+    ],
+    "alternatives": [
+      "independent raw signs",
+      "categorical slot convention",
+      "semantic distinction",
+      "phonetic addition",
+      "grammar operation with unanchored meaning"
+    ],
+    "parameters": {
+      "roles": 1,
+      "model": "full_models.json"
+    },
+    "complexity": {
+      "parameter_bits": 2641.7154708245466,
+      "rule_bits": 10.703903573444663
+    },
+    "predictions": [
+      "Transform modified signs using one shared named program; compare exact retained alignment evidence and frozen joint predictions."
+    ],
+    "source_paths": [
+      "../../shared/observations.jsonl",
+      "../../shared/graphical_hypotheses.json"
+    ],
+    "prior_exposure": "retrospective frozen corpus previously inspected; newly reconstructed fitting, not recovered exact lost results"
+  }
+]

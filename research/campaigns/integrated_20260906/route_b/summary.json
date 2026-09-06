@@ -1,0 +1,89 @@
+{
+  "faces": 3788,
+  "strict_faces": 2461,
+  "strict_multiline_faces": 70,
+  "same_object_face_pairs": 1023,
+  "short_long_object_pairs": 251,
+  "distinct_short_long_pairs": 170,
+  "same_complete_text_different_raw_motif_groups": 51,
+  "copper_objects": 135,
+  "copper_text_picture_edges": 98,
+  "matched_component_contrast_types": 429,
+  "358_defining_complete_copper_objects": 18,
+  "358_non_copper_picture_bearing_constructions": 6,
+  "358_complete_block_extension_targets": 1,
+  "source_sha256": "6a0c597986783c5da8fbcb0afc3268a2c6a9f042a9b81746ebc4f89158efbd01",
+  "motif_scores": {
+    "metadata": {
+      "observed_target_types": 1081,
+      "correct": 740,
+      "log_loss_bits": 2186.957884925702,
+      "mean_log_loss_bits": 2.02308777513941,
+      "nominal_parameters_per_fold": [
+        896,
+        896,
+        896,
+        896,
+        896
+      ],
+      "parameter_penalty_bits_per_fold": [
+        4515.011561865123,
+        4515.011561865123,
+        4515.011561865123,
+        4515.011561865123,
+        4515.011561865123
+      ],
+      "penalty_status": "BIC-style nominal upper complexity accounting; shrinkage effective dimension not claimed"
+    },
+    "components": {
+      "observed_target_types": 1081,
+      "correct": 718,
+      "log_loss_bits": 2498.462364430463,
+      "mean_log_loss_bits": 2.3112510309254977,
+      "nominal_parameters_per_fold": [
+        223200,
+        223200,
+        223200,
+        223200,
+        223200
+      ],
+      "parameter_penalty_bits_per_fold": [
+        1124721.630143187,
+        1124721.630143187,
+        1124721.630143187,
+        1124721.630143187,
+        1124721.630143187
+      ],
+      "penalty_status": "BIC-style nominal upper complexity accounting; shrinkage effective dimension not claimed"
+    },
+    "combined": {
+      "observed_target_types": 1081,
+      "correct": 747,
+      "log_loss_bits": 2219.4624260802702,
+      "mean_log_loss_bits": 2.0531567308790657,
+      "nominal_parameters_per_fold": [
+        224032,
+        224032,
+        224032,
+        224032,
+        224032
+      ],
+      "parameter_penalty_bits_per_fold": [
+        1128914.1408792045,
+        1128914.1408792045,
+        1128914.1408792045,
+        1128914.1408792045,
+        1128914.1408792045
+      ],
+      "penalty_status": "BIC-style nominal upper complexity accounting; shrinkage effective dimension not claimed"
+    }
+  },
+  "component_candidates_with_three_expression_types": 989,
+  "lexical_anchors_established": 0,
+  "phonetic_anchors_established": 0,
+  "prior_exposure": "Retrospective constrained search; source corpus and defining examples already exposed.",
+  "published_copper_type_nodes": 46,
+  "published_copper_relation_edges": 19,
+  "shape_reverse_channel_types_correct": 37,
+  "shape_reverse_channel_types_scored": 44
+}

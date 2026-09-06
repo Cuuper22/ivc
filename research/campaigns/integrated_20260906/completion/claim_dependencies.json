@@ -1,0 +1,276 @@
+{
+  "nodes": [
+    {
+      "id": "OBS",
+      "kind": "original observations"
+    },
+    {
+      "id": "LEX",
+      "kind": "held comparative lexicons"
+    },
+    {
+      "id": "SRC",
+      "kind": "original source entries"
+    },
+    {
+      "id": "REC-RA-identity",
+      "kind": "conditional candidate"
+    },
+    {
+      "id": "REC-RA-tick388-after",
+      "kind": "conditional candidate"
+    },
+    {
+      "id": "REC-RA-roof87_tick211",
+      "kind": "conditional candidate"
+    },
+    {
+      "id": "REC-RA-tick211-before",
+      "kind": "conditional candidate"
+    },
+    {
+      "id": "REC-B-COFACE-363",
+      "kind": "conditional candidate"
+    },
+    {
+      "id": "REC-B-358-LITERAL",
+      "kind": "conditional candidate"
+    },
+    {
+      "id": "REC-B-LATENT-CATEGORY",
+      "kind": "conditional candidate"
+    },
+    {
+      "id": "REC-B-COPPER-LITERAL-PICTURE",
+      "kind": "conditional candidate"
+    },
+    {
+      "id": "REC-B-REPRESENTATION-CHANNEL",
+      "kind": "conditional candidate"
+    },
+    {
+      "id": "REC-B-THREE-FIELDS",
+      "kind": "conditional candidate"
+    },
+    {
+      "id": "REC-C-PROGRAM-FAMILY",
+      "kind": "conditional candidate"
+    },
+    {
+      "id": "REC-C-SUFFIX-SCOPE",
+      "kind": "conditional candidate"
+    },
+    {
+      "id": "REC-D-tamil-append",
+      "kind": "conditional candidate"
+    },
+    {
+      "id": "REC-D-tamil-prepend",
+      "kind": "conditional candidate"
+    },
+    {
+      "id": "REC-D-sanskrit-append",
+      "kind": "conditional candidate"
+    },
+    {
+      "id": "REC-D-sanskrit-prepend",
+      "kind": "conditional candidate"
+    },
+    {
+      "id": "REC-D-anonymous-append",
+      "kind": "conditional candidate"
+    },
+    {
+      "id": "REC-D-anonymous-prepend",
+      "kind": "conditional candidate"
+    },
+    {
+      "id": "REC-D-nonphonetic-append",
+      "kind": "conditional candidate"
+    },
+    {
+      "id": "REC-D-nonphonetic-prepend",
+      "kind": "conditional candidate"
+    },
+    {
+      "id": "REC-B-SPECIES-EXCLUSION",
+      "kind": "conditional candidate"
+    },
+    {
+      "id": "ABC",
+      "kind": "joint original-observation model"
+    },
+    {
+      "id": "ABCD",
+      "kind": "conditional linguistic prior coupling"
+    }
+  ],
+  "edges": [
+    {
+      "from": "OBS",
+      "to": "REC-RA-identity",
+      "kind": "uses same original evidence"
+    },
+    {
+      "from": "OBS",
+      "to": "REC-RA-tick388-after",
+      "kind": "uses same original evidence"
+    },
+    {
+      "from": "OBS",
+      "to": "REC-RA-roof87_tick211",
+      "kind": "uses same original evidence"
+    },
+    {
+      "from": "OBS",
+      "to": "REC-RA-tick211-before",
+      "kind": "uses same original evidence"
+    },
+    {
+      "from": "OBS",
+      "to": "REC-B-COFACE-363",
+      "kind": "uses same original evidence"
+    },
+    {
+      "from": "OBS",
+      "to": "REC-B-358-LITERAL",
+      "kind": "uses same original evidence"
+    },
+    {
+      "from": "OBS",
+      "to": "REC-B-LATENT-CATEGORY",
+      "kind": "uses same original evidence"
+    },
+    {
+      "from": "OBS",
+      "to": "REC-B-COPPER-LITERAL-PICTURE",
+      "kind": "uses same original evidence"
+    },
+    {
+      "from": "OBS",
+      "to": "REC-B-REPRESENTATION-CHANNEL",
+      "kind": "uses same original evidence"
+    },
+    {
+      "from": "OBS",
+      "to": "REC-B-THREE-FIELDS",
+      "kind": "uses same original evidence"
+    },
+    {
+      "from": "OBS",
+      "to": "REC-C-PROGRAM-FAMILY",
+      "kind": "uses same original evidence"
+    },
+    {
+      "from": "OBS",
+      "to": "REC-C-SUFFIX-SCOPE",
+      "kind": "uses same original evidence"
+    },
+    {
+      "from": "OBS",
+      "to": "REC-D-tamil-append",
+      "kind": "uses same original evidence"
+    },
+    {
+      "from": "OBS",
+      "to": "REC-D-tamil-prepend",
+      "kind": "uses same original evidence"
+    },
+    {
+      "from": "OBS",
+      "to": "REC-D-sanskrit-append",
+      "kind": "uses same original evidence"
+    },
+    {
+      "from": "OBS",
+      "to": "REC-D-sanskrit-prepend",
+      "kind": "uses same original evidence"
+    },
+    {
+      "from": "OBS",
+      "to": "REC-D-anonymous-append",
+      "kind": "uses same original evidence"
+    },
+    {
+      "from": "OBS",
+      "to": "REC-D-anonymous-prepend",
+      "kind": "uses same original evidence"
+    },
+    {
+      "from": "OBS",
+      "to": "REC-D-nonphonetic-append",
+      "kind": "uses same original evidence"
+    },
+    {
+      "from": "OBS",
+      "to": "REC-D-nonphonetic-prepend",
+      "kind": "uses same original evidence"
+    },
+    {
+      "from": "OBS",
+      "to": "REC-B-SPECIES-EXCLUSION",
+      "kind": "uses same original evidence"
+    },
+    {
+      "from": "LEX",
+      "to": "REC-D-tamil-append",
+      "kind": "conditional vocabulary"
+    },
+    {
+      "from": "LEX",
+      "to": "REC-D-tamil-prepend",
+      "kind": "conditional vocabulary"
+    },
+    {
+      "from": "LEX",
+      "to": "REC-D-sanskrit-append",
+      "kind": "conditional vocabulary"
+    },
+    {
+      "from": "LEX",
+      "to": "REC-D-sanskrit-prepend",
+      "kind": "conditional vocabulary"
+    },
+    {
+      "from": "LEX",
+      "to": "REC-D-anonymous-append",
+      "kind": "conditional vocabulary"
+    },
+    {
+      "from": "LEX",
+      "to": "REC-D-anonymous-prepend",
+      "kind": "conditional vocabulary"
+    },
+    {
+      "from": "LEX",
+      "to": "REC-D-nonphonetic-append",
+      "kind": "conditional vocabulary"
+    },
+    {
+      "from": "LEX",
+      "to": "REC-D-nonphonetic-prepend",
+      "kind": "conditional vocabulary"
+    },
+    {
+      "from": "SRC",
+      "to": "REC-B-SPECIES-EXCLUSION",
+      "kind": "source code distinction"
+    },
+    {
+      "from": "OBS",
+      "to": "ABC",
+      "kind": "one raw likelihood per declared channel"
+    },
+    {
+      "from": "ABC",
+      "to": "ABCD",
+      "kind": "shared model alternative"
+    },
+    {
+      "from": "LEX",
+      "to": "ABCD",
+      "kind": "lexical prior, not additional text likelihood"
+    }
+  ],
+  "evidence_policy": "Shared-source descendants do not constitute independent confirmation. B exclusions supply no positive lexical anchor; conditional outputs never return as new observed facts."
+}

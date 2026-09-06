@@ -1,0 +1,1753 @@
+{
+  "question": "Can observed site, medium, picture or production context explain A roof/tick composition?",
+  "source_paths": [
+    "research/data/semantic_search_20260906/modifier_context_pairs.json",
+    "research/campaigns/integrated_20260906/route_a/structured_alignments.json",
+    "research/campaigns/integrated_20260906/shared/observations.jsonl"
+  ],
+  "candidate_dependency": "A supplied operations and exact target sequences; these are not independently rediscovered semantic anchors.",
+  "contrasts": [
+    {
+      "contrast_id": "roof87_frame348",
+      "candidate_operation": "roof65\u219287\u201359; defining exact frame",
+      "left_sequence": [
+        "65",
+        "348",
+        "342"
+      ],
+      "right_sequence": [
+        "87",
+        "59",
+        "348",
+        "342"
+      ],
+      "left_witnesses": [
+        {
+          "row_id": "M77:1374:0",
+          "object_id": "M77:1374",
+          "sequence_stored": [
+            "65",
+            "348",
+            "342"
+          ],
+          "site": "Mohenjo-daro",
+          "object_class_raw": "1",
+          "object_class_label": "seal",
+          "locus_raw": "17",
+          "level_raw": "-2",
+          "direction_raw": "1",
+          "face_raw_fs80": 71,
+          "complete_single_line_face": true,
+          "other_observations": [],
+          "exact_whole_object_text_key": "c9066fb43ce6f89f7ded0f39e44b05d1be3d99032dbb16ad544723e3e85b112c",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/377"
+        }
+      ],
+      "right_witnesses": [
+        {
+          "row_id": "M77:2913:10",
+          "object_id": "M77:2913",
+          "sequence_stored": [
+            "87",
+            "59",
+            "348",
+            "342"
+          ],
+          "site": "Mohenjo-daro",
+          "object_class_raw": "5",
+          "object_class_label": "copper tablet",
+          "locus_raw": "31",
+          "level_raw": "-6",
+          "direction_raw": "1",
+          "face_raw_fs80": 0,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:2913:29",
+              "tokens_stored": [],
+              "strict": false,
+              "raw_fs80": 251
+            }
+          ],
+          "exact_whole_object_text_key": "d5fbdd0dc0ed893e34d495950ad00c1d666fc0251387023db120b1eca31b81bf",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/1490"
+        }
+      ],
+      "comparisons": [
+        {
+          "left_row_id": "M77:1374:0",
+          "right_row_id": "M77:2913:10",
+          "same_site": true,
+          "same_medium": false,
+          "same_site_medium": false,
+          "same_site_locus": false,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": true,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        }
+      ],
+      "matched_masks_with_at_least_one_witness_pair": [
+        "same_site",
+        "same_catalogue_direction"
+      ],
+      "independence": "one selected expression-pair contrast; object-pair cross-products are not independent replications"
+    },
+    {
+      "contrast_id": "roof87_frame48",
+      "candidate_operation": "roof65\u219287\u201359; defining exact frame",
+      "left_sequence": [
+        "65",
+        "48",
+        "342"
+      ],
+      "right_sequence": [
+        "87",
+        "59",
+        "48",
+        "342"
+      ],
+      "left_witnesses": [
+        {
+          "row_id": "M77:2821:10",
+          "object_id": "M77:2821",
+          "sequence_stored": [
+            "65",
+            "48",
+            "342"
+          ],
+          "site": "Mohenjo-daro",
+          "object_class_raw": "2",
+          "object_class_label": "sealing",
+          "locus_raw": "31",
+          "level_raw": "-10",
+          "direction_raw": "1",
+          "face_raw_fs80": 0,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:2821:29",
+              "tokens_stored": [],
+              "strict": false,
+              "raw_fs80": 13
+            }
+          ],
+          "exact_whole_object_text_key": "23a51bd98b1b59edcd717cd5a81a2b60c1fab67543f5ba05e1406cb092f72658",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/1387"
+        }
+      ],
+      "right_witnesses": [
+        {
+          "row_id": "M77:2905:20",
+          "object_id": "M77:2905",
+          "sequence_stored": [
+            "87",
+            "59",
+            "48",
+            "342"
+          ],
+          "site": "Mohenjo-daro",
+          "object_class_raw": "5",
+          "object_class_label": "copper tablet",
+          "locus_raw": "31",
+          "level_raw": "-12",
+          "direction_raw": "1",
+          "face_raw_fs80": 0,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:2905:10",
+              "tokens_stored": [
+                "89",
+                "328",
+                "287",
+                "319"
+              ],
+              "strict": true,
+              "raw_fs80": 0
+            }
+          ],
+          "exact_whole_object_text_key": "a1459aad56d62e870564d0021fca1ee5bbfeb31eb12eb04ddc942035bc38ac03",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/1475"
+        },
+        {
+          "row_id": "M77:2906:20",
+          "object_id": "M77:2906",
+          "sequence_stored": [
+            "87",
+            "59",
+            "48",
+            "342"
+          ],
+          "site": "Mohenjo-daro",
+          "object_class_raw": "5",
+          "object_class_label": "copper tablet",
+          "locus_raw": "31",
+          "level_raw": "-10",
+          "direction_raw": "1",
+          "face_raw_fs80": 0,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:2906:10",
+              "tokens_stored": [
+                "89",
+                "328",
+                "287",
+                "319"
+              ],
+              "strict": true,
+              "raw_fs80": 0
+            }
+          ],
+          "exact_whole_object_text_key": "a1459aad56d62e870564d0021fca1ee5bbfeb31eb12eb04ddc942035bc38ac03",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/1477"
+        }
+      ],
+      "comparisons": [
+        {
+          "left_row_id": "M77:2821:10",
+          "right_row_id": "M77:2905:20",
+          "same_site": true,
+          "same_medium": false,
+          "same_site_medium": false,
+          "same_site_locus": true,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": true,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        },
+        {
+          "left_row_id": "M77:2821:10",
+          "right_row_id": "M77:2906:20",
+          "same_site": true,
+          "same_medium": false,
+          "same_site_medium": false,
+          "same_site_locus": true,
+          "same_site_locus_known_level": true,
+          "same_catalogue_direction": true,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        }
+      ],
+      "matched_masks_with_at_least_one_witness_pair": [
+        "same_site",
+        "same_site_locus",
+        "same_site_locus_known_level",
+        "same_catalogue_direction"
+      ],
+      "independence": "one selected expression-pair contrast; object-pair cross-products are not independent replications"
+    },
+    {
+      "contrast_id": "tick211_frame171",
+      "candidate_operation": "tick60\u219259\u2013211; defining exact frame",
+      "left_sequence": [
+        "171",
+        "60"
+      ],
+      "right_sequence": [
+        "171",
+        "59",
+        "211"
+      ],
+      "left_witnesses": [
+        {
+          "row_id": "M77:1177:0",
+          "object_id": "M77:1177",
+          "sequence_stored": [
+            "171",
+            "60"
+          ],
+          "site": "Mohenjo-daro",
+          "object_class_raw": "1",
+          "object_class_label": "seal",
+          "locus_raw": "20",
+          "level_raw": "-5",
+          "direction_raw": "1",
+          "face_raw_fs80": 13,
+          "complete_single_line_face": true,
+          "other_observations": [],
+          "exact_whole_object_text_key": "8145779221ea52b7c44e9988538f8370da7e13c9199e652b2b91f95f8345fb0e",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/182"
+        }
+      ],
+      "right_witnesses": [
+        {
+          "row_id": "M77:3103:0",
+          "object_id": "M77:3103",
+          "sequence_stored": [
+            "171",
+            "59",
+            "211"
+          ],
+          "site": "Mohenjo-daro",
+          "object_class_raw": "1",
+          "object_class_label": "seal",
+          "locus_raw": "35",
+          "level_raw": "0",
+          "direction_raw": "1",
+          "face_raw_fs80": 13,
+          "complete_single_line_face": true,
+          "other_observations": [],
+          "exact_whole_object_text_key": "d6bafcade7a1f44f1299f2d4ae0fd7569c12e75632fa21518523d2b20fe2ce54",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/1615"
+        },
+        {
+          "row_id": "M77:4408:10",
+          "object_id": "M77:4408",
+          "sequence_stored": [
+            "171",
+            "59",
+            "211"
+          ],
+          "site": "Harappa",
+          "object_class_raw": "3",
+          "object_class_label": "miniature tablet",
+          "locus_raw": "44",
+          "level_raw": "-8",
+          "direction_raw": "1",
+          "face_raw_fs80": 920,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:4408:29",
+              "tokens_stored": [],
+              "strict": false,
+              "raw_fs80": 831
+            }
+          ],
+          "exact_whole_object_text_key": "a992023baa0b426789fdd0fbeda42cb676d8f7298ff3204eff7a7192bc42b570",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/2339"
+        },
+        {
+          "row_id": "M77:4412:10",
+          "object_id": "M77:4412",
+          "sequence_stored": [
+            "171",
+            "59",
+            "211"
+          ],
+          "site": "Harappa",
+          "object_class_raw": "3",
+          "object_class_label": "miniature tablet",
+          "locus_raw": "41",
+          "level_raw": "-14",
+          "direction_raw": "1",
+          "face_raw_fs80": 0,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:4412:20",
+              "tokens_stored": [
+                "44"
+              ],
+              "strict": true,
+              "raw_fs80": 0
+            }
+          ],
+          "exact_whole_object_text_key": "8f455d79236c6cd36a4f5e879050bb46af5f0cb2b505fc8a9327c040e6831057",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/2346"
+        },
+        {
+          "row_id": "M77:4418:10",
+          "object_id": "M77:4418",
+          "sequence_stored": [
+            "171",
+            "59",
+            "211"
+          ],
+          "site": "Harappa",
+          "object_class_raw": "3",
+          "object_class_label": "miniature tablet",
+          "locus_raw": "41",
+          "level_raw": "-14",
+          "direction_raw": "2",
+          "face_raw_fs80": 900,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:4418:29",
+              "tokens_stored": [],
+              "strict": false,
+              "raw_fs80": 831
+            }
+          ],
+          "exact_whole_object_text_key": "a992023baa0b426789fdd0fbeda42cb676d8f7298ff3204eff7a7192bc42b570",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/2357"
+        },
+        {
+          "row_id": "M77:4453:10",
+          "object_id": "M77:4453",
+          "sequence_stored": [
+            "171",
+            "59",
+            "211"
+          ],
+          "site": "Harappa",
+          "object_class_raw": "3",
+          "object_class_label": "miniature tablet",
+          "locus_raw": "40",
+          "level_raw": "-11",
+          "direction_raw": "1",
+          "face_raw_fs80": 0,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:4453:20",
+              "tokens_stored": [
+                "44"
+              ],
+              "strict": true,
+              "raw_fs80": 0
+            }
+          ],
+          "exact_whole_object_text_key": "8f455d79236c6cd36a4f5e879050bb46af5f0cb2b505fc8a9327c040e6831057",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/2424"
+        },
+        {
+          "row_id": "M77:4458:10",
+          "object_id": "M77:4458",
+          "sequence_stored": [
+            "171",
+            "59",
+            "211"
+          ],
+          "site": "Harappa",
+          "object_class_raw": "3",
+          "object_class_label": "miniature tablet",
+          "locus_raw": "45",
+          "level_raw": "-6",
+          "direction_raw": "2",
+          "face_raw_fs80": 0,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:4458:20",
+              "tokens_stored": [
+                "95",
+                "328"
+              ],
+              "strict": true,
+              "raw_fs80": 0
+            }
+          ],
+          "exact_whole_object_text_key": "650e1c4d332f3ab57310f2e9b53922cf3f5f78aa14dbe059a42e7a6cc4818223",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/2434"
+        },
+        {
+          "row_id": "M77:4464:20",
+          "object_id": "M77:4464",
+          "sequence_stored": [
+            "171",
+            "59",
+            "211"
+          ],
+          "site": "Harappa",
+          "object_class_raw": "3",
+          "object_class_label": "miniature tablet",
+          "locus_raw": "40",
+          "level_raw": "-15",
+          "direction_raw": "1",
+          "face_raw_fs80": 0,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:4464:10",
+              "tokens_stored": [
+                "102",
+                "137",
+                "87",
+                "249"
+              ],
+              "strict": true,
+              "raw_fs80": 0
+            }
+          ],
+          "exact_whole_object_text_key": "ed7aae4e4b3880a5ca594deac56ba50b05ad6b5e124f20a1faeffe83f86e864c",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/2447"
+        },
+        {
+          "row_id": "M77:4544:10",
+          "object_id": "M77:4544",
+          "sequence_stored": [
+            "171",
+            "59",
+            "211"
+          ],
+          "site": "Harappa",
+          "object_class_raw": "3",
+          "object_class_label": "miniature tablet",
+          "locus_raw": "41",
+          "level_raw": "-6",
+          "direction_raw": "1",
+          "face_raw_fs80": 0,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:4544:20",
+              "tokens_stored": [
+                "95",
+                "328"
+              ],
+              "strict": true,
+              "raw_fs80": 0
+            }
+          ],
+          "exact_whole_object_text_key": "650e1c4d332f3ab57310f2e9b53922cf3f5f78aa14dbe059a42e7a6cc4818223",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/2587"
+        },
+        {
+          "row_id": "M77:4635:20",
+          "object_id": "M77:4635",
+          "sequence_stored": [
+            "171",
+            "59",
+            "211"
+          ],
+          "site": "Harappa",
+          "object_class_raw": "3",
+          "object_class_label": "miniature tablet",
+          "locus_raw": "42",
+          "level_raw": "-18",
+          "direction_raw": "1",
+          "face_raw_fs80": 0,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:4635:10",
+              "tokens_stored": [
+                "59"
+              ],
+              "strict": true,
+              "raw_fs80": 0
+            },
+            {
+              "row_id": "M77:4635:39",
+              "tokens_stored": [],
+              "strict": false,
+              "raw_fs80": 831
+            }
+          ],
+          "exact_whole_object_text_key": "99436b830b66c58eea493f6f731a0731f1bbbd90d9b60628c71ca6be5e7d6e06",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/2744"
+        },
+        {
+          "row_id": "M77:5320:20",
+          "object_id": "M77:5320",
+          "sequence_stored": [
+            "171",
+            "59",
+            "211"
+          ],
+          "site": "Harappa",
+          "object_class_raw": "2",
+          "object_class_label": "sealing",
+          "locus_raw": "59",
+          "level_raw": "0",
+          "direction_raw": "1",
+          "face_raw_fs80": 0,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:5320:10",
+              "tokens_stored": [
+                "177",
+                "307",
+                "284"
+              ],
+              "strict": true,
+              "raw_fs80": 0
+            }
+          ],
+          "exact_whole_object_text_key": "954f6d230ed777b78adf0c9ba4f3a769037cd63cde681b5cd8be3ae172b1e83b",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/3201"
+        },
+        {
+          "row_id": "M77:5450:10",
+          "object_id": "M77:5450",
+          "sequence_stored": [
+            "171",
+            "59",
+            "211"
+          ],
+          "site": "Harappa",
+          "object_class_raw": "3",
+          "object_class_label": "miniature tablet",
+          "locus_raw": "42",
+          "level_raw": "-12",
+          "direction_raw": "1",
+          "face_raw_fs80": 0,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:5450:20",
+              "tokens_stored": [
+                "95",
+                "328"
+              ],
+              "strict": true,
+              "raw_fs80": 0
+            }
+          ],
+          "exact_whole_object_text_key": "650e1c4d332f3ab57310f2e9b53922cf3f5f78aa14dbe059a42e7a6cc4818223",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/3334"
+        }
+      ],
+      "comparisons": [
+        {
+          "left_row_id": "M77:1177:0",
+          "right_row_id": "M77:3103:0",
+          "same_site": true,
+          "same_medium": true,
+          "same_site_medium": true,
+          "same_site_locus": false,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": true,
+          "same_known_raw_picture": true,
+          "same_site_medium_known_picture": true
+        },
+        {
+          "left_row_id": "M77:1177:0",
+          "right_row_id": "M77:4408:10",
+          "same_site": false,
+          "same_medium": false,
+          "same_site_medium": false,
+          "same_site_locus": false,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": true,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        },
+        {
+          "left_row_id": "M77:1177:0",
+          "right_row_id": "M77:4412:10",
+          "same_site": false,
+          "same_medium": false,
+          "same_site_medium": false,
+          "same_site_locus": false,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": true,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        },
+        {
+          "left_row_id": "M77:1177:0",
+          "right_row_id": "M77:4418:10",
+          "same_site": false,
+          "same_medium": false,
+          "same_site_medium": false,
+          "same_site_locus": false,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": false,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        },
+        {
+          "left_row_id": "M77:1177:0",
+          "right_row_id": "M77:4453:10",
+          "same_site": false,
+          "same_medium": false,
+          "same_site_medium": false,
+          "same_site_locus": false,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": true,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        },
+        {
+          "left_row_id": "M77:1177:0",
+          "right_row_id": "M77:4458:10",
+          "same_site": false,
+          "same_medium": false,
+          "same_site_medium": false,
+          "same_site_locus": false,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": false,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        },
+        {
+          "left_row_id": "M77:1177:0",
+          "right_row_id": "M77:4464:20",
+          "same_site": false,
+          "same_medium": false,
+          "same_site_medium": false,
+          "same_site_locus": false,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": true,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        },
+        {
+          "left_row_id": "M77:1177:0",
+          "right_row_id": "M77:4544:10",
+          "same_site": false,
+          "same_medium": false,
+          "same_site_medium": false,
+          "same_site_locus": false,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": true,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        },
+        {
+          "left_row_id": "M77:1177:0",
+          "right_row_id": "M77:4635:20",
+          "same_site": false,
+          "same_medium": false,
+          "same_site_medium": false,
+          "same_site_locus": false,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": true,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        },
+        {
+          "left_row_id": "M77:1177:0",
+          "right_row_id": "M77:5320:20",
+          "same_site": false,
+          "same_medium": false,
+          "same_site_medium": false,
+          "same_site_locus": false,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": true,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        },
+        {
+          "left_row_id": "M77:1177:0",
+          "right_row_id": "M77:5450:10",
+          "same_site": false,
+          "same_medium": false,
+          "same_site_medium": false,
+          "same_site_locus": false,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": true,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        }
+      ],
+      "matched_masks_with_at_least_one_witness_pair": [
+        "same_site",
+        "same_medium",
+        "same_site_medium",
+        "same_catalogue_direction",
+        "same_known_raw_picture",
+        "same_site_medium_known_picture"
+      ],
+      "independence": "one selected expression-pair contrast; object-pair cross-products are not independent replications"
+    },
+    {
+      "contrast_id": "tick211_frame2679987",
+      "candidate_operation": "tick60\u219259\u2013211; defining exact frame",
+      "left_sequence": [
+        "267",
+        "99",
+        "87",
+        "60"
+      ],
+      "right_sequence": [
+        "267",
+        "99",
+        "87",
+        "59",
+        "211"
+      ],
+      "left_witnesses": [
+        {
+          "row_id": "M77:6211:0",
+          "object_id": "M77:6211",
+          "sequence_stored": [
+            "267",
+            "99",
+            "87",
+            "60"
+          ],
+          "site": "Chanhudaro",
+          "object_class_raw": "1",
+          "object_class_label": "seal",
+          "locus_raw": "62",
+          "level_raw": "7",
+          "direction_raw": "1",
+          "face_raw_fs80": 0,
+          "complete_single_line_face": true,
+          "other_observations": [],
+          "exact_whole_object_text_key": "a2bdb85434ef9b07aa8650ae3435653a35a7d00b0315554f07f0c58f619d74e4",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/3497"
+        }
+      ],
+      "right_witnesses": [
+        {
+          "row_id": "M77:1551:0",
+          "object_id": "M77:1551",
+          "sequence_stored": [
+            "267",
+            "99",
+            "87",
+            "59",
+            "211"
+          ],
+          "site": "Mohenjo-daro",
+          "object_class_raw": "1",
+          "object_class_label": "seal",
+          "locus_raw": "17",
+          "level_raw": "-3",
+          "direction_raw": "1",
+          "face_raw_fs80": 351,
+          "complete_single_line_face": true,
+          "other_observations": [],
+          "exact_whole_object_text_key": "ec65e4bcbd89a93b014a6651e0bde0c95dd1a3d1fcf9190d906c79b8c70f2b41",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/526"
+        }
+      ],
+      "comparisons": [
+        {
+          "left_row_id": "M77:6211:0",
+          "right_row_id": "M77:1551:0",
+          "same_site": false,
+          "same_medium": true,
+          "same_site_medium": false,
+          "same_site_locus": false,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": true,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        }
+      ],
+      "matched_masks_with_at_least_one_witness_pair": [
+        "same_medium",
+        "same_catalogue_direction"
+      ],
+      "independence": "one selected expression-pair contrast; object-pair cross-products are not independent replications"
+    },
+    {
+      "contrast_id": "roof87_marked_transfer",
+      "candidate_operation": "implied roof66\u219287\u201360; marked-family transfer",
+      "left_sequence": [
+        "267",
+        "99",
+        "66"
+      ],
+      "right_sequence": [
+        "267",
+        "99",
+        "87",
+        "60"
+      ],
+      "left_witnesses": [
+        {
+          "row_id": "M77:7249:20",
+          "object_id": "M77:7249",
+          "sequence_stored": [
+            "267",
+            "99",
+            "66"
+          ],
+          "site": "Lothal",
+          "object_class_raw": "2",
+          "object_class_label": "sealing",
+          "locus_raw": "79",
+          "level_raw": "0",
+          "direction_raw": "1",
+          "face_raw_fs80": 13,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:7249:10",
+              "tokens_stored": [
+                "336",
+                "209",
+                "343",
+                "98",
+                "121",
+                "59",
+                "342",
+                "1"
+              ],
+              "strict": true,
+              "raw_fs80": 11
+            }
+          ],
+          "exact_whole_object_text_key": "97a132b423721de8169087580841e4578a80a352b29bc708eddb4b9e4df7fff9",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/3694"
+        },
+        {
+          "row_id": "M77:7251:20",
+          "object_id": "M77:7251",
+          "sequence_stored": [
+            "267",
+            "99",
+            "66"
+          ],
+          "site": "Lothal",
+          "object_class_raw": "2",
+          "object_class_label": "sealing",
+          "locus_raw": "79",
+          "level_raw": "0",
+          "direction_raw": "1",
+          "face_raw_fs80": 0,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:7251:10",
+              "tokens_stored": [
+                "186",
+                "293",
+                "99",
+                "0"
+              ],
+              "strict": false,
+              "raw_fs80": 0
+            }
+          ],
+          "exact_whole_object_text_key": "845b1800d0e45e2df5d8dc30e12711e7f324b14e3fca6081389c268d983c773b",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/3696"
+        },
+        {
+          "row_id": "M77:7255:0",
+          "object_id": "M77:7255",
+          "sequence_stored": [
+            "267",
+            "99",
+            "66"
+          ],
+          "site": "Lothal",
+          "object_class_raw": "2",
+          "object_class_label": "sealing",
+          "locus_raw": "79",
+          "level_raw": "0",
+          "direction_raw": "1",
+          "face_raw_fs80": 11,
+          "complete_single_line_face": true,
+          "other_observations": [],
+          "exact_whole_object_text_key": "573a58d102c514cb76f159cc88a9fcc491688884358508f78a2e6e43d5cce530",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/3701"
+        },
+        {
+          "row_id": "M77:7267:20",
+          "object_id": "M77:7267",
+          "sequence_stored": [
+            "267",
+            "99",
+            "66"
+          ],
+          "site": "Lothal",
+          "object_class_raw": "2",
+          "object_class_label": "sealing",
+          "locus_raw": "79",
+          "level_raw": "0",
+          "direction_raw": "1",
+          "face_raw_fs80": 11,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:7267:10",
+              "tokens_stored": [
+                "72",
+                "249",
+                "*169",
+                "*342"
+              ],
+              "strict": false,
+              "raw_fs80": 0
+            }
+          ],
+          "exact_whole_object_text_key": "593e44644c6d74f999f048763ef76b07fdf80625fece7aa171db7724177a5dfe",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/3715"
+        },
+        {
+          "row_id": "M77:7269:0",
+          "object_id": "M77:7269",
+          "sequence_stored": [
+            "267",
+            "99",
+            "66"
+          ],
+          "site": "Lothal",
+          "object_class_raw": "2",
+          "object_class_label": "sealing",
+          "locus_raw": "79",
+          "level_raw": "0",
+          "direction_raw": "1",
+          "face_raw_fs80": 0,
+          "complete_single_line_face": true,
+          "other_observations": [],
+          "exact_whole_object_text_key": "573a58d102c514cb76f159cc88a9fcc491688884358508f78a2e6e43d5cce530",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/3717"
+        }
+      ],
+      "right_witnesses": [
+        {
+          "row_id": "M77:6211:0",
+          "object_id": "M77:6211",
+          "sequence_stored": [
+            "267",
+            "99",
+            "87",
+            "60"
+          ],
+          "site": "Chanhudaro",
+          "object_class_raw": "1",
+          "object_class_label": "seal",
+          "locus_raw": "62",
+          "level_raw": "7",
+          "direction_raw": "1",
+          "face_raw_fs80": 0,
+          "complete_single_line_face": true,
+          "other_observations": [],
+          "exact_whole_object_text_key": "a2bdb85434ef9b07aa8650ae3435653a35a7d00b0315554f07f0c58f619d74e4",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/3497"
+        }
+      ],
+      "comparisons": [
+        {
+          "left_row_id": "M77:7249:20",
+          "right_row_id": "M77:6211:0",
+          "same_site": false,
+          "same_medium": false,
+          "same_site_medium": false,
+          "same_site_locus": false,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": true,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        },
+        {
+          "left_row_id": "M77:7251:20",
+          "right_row_id": "M77:6211:0",
+          "same_site": false,
+          "same_medium": false,
+          "same_site_medium": false,
+          "same_site_locus": false,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": true,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        },
+        {
+          "left_row_id": "M77:7255:0",
+          "right_row_id": "M77:6211:0",
+          "same_site": false,
+          "same_medium": false,
+          "same_site_medium": false,
+          "same_site_locus": false,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": true,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        },
+        {
+          "left_row_id": "M77:7267:20",
+          "right_row_id": "M77:6211:0",
+          "same_site": false,
+          "same_medium": false,
+          "same_site_medium": false,
+          "same_site_locus": false,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": true,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        },
+        {
+          "left_row_id": "M77:7269:0",
+          "right_row_id": "M77:6211:0",
+          "same_site": false,
+          "same_medium": false,
+          "same_site_medium": false,
+          "same_site_locus": false,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": true,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        }
+      ],
+      "matched_masks_with_at_least_one_witness_pair": [
+        "same_catalogue_direction"
+      ],
+      "independence": "one selected expression-pair contrast; object-pair cross-products are not independent replications"
+    },
+    {
+      "contrast_id": "joint_base70_transfer",
+      "candidate_operation": "joint roof65\u219287\u201359 and tick71\u219270\u2013211; same proposed normal form",
+      "left_sequence": [
+        "65",
+        "70",
+        "211"
+      ],
+      "right_sequence": [
+        "87",
+        "59",
+        "71"
+      ],
+      "left_witnesses": [
+        {
+          "row_id": "M77:1380:0",
+          "object_id": "M77:1380",
+          "sequence_stored": [
+            "65",
+            "70",
+            "211"
+          ],
+          "site": "Mohenjo-daro",
+          "object_class_raw": "1",
+          "object_class_label": "seal",
+          "locus_raw": "17",
+          "level_raw": "-6",
+          "direction_raw": "1",
+          "face_raw_fs80": 251,
+          "complete_single_line_face": true,
+          "other_observations": [],
+          "exact_whole_object_text_key": "818359e05d04311364aca7a2be219b2ebe2d32c46c4da85e8c43fa3415c3bd48",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/380"
+        }
+      ],
+      "right_witnesses": [
+        {
+          "row_id": "M77:2452:0",
+          "object_id": "M77:2452",
+          "sequence_stored": [
+            "87",
+            "59",
+            "71"
+          ],
+          "site": "Mohenjo-daro",
+          "object_class_raw": "1",
+          "object_class_label": "seal",
+          "locus_raw": "31",
+          "level_raw": "-13",
+          "direction_raw": "1",
+          "face_raw_fs80": 13,
+          "complete_single_line_face": true,
+          "other_observations": [],
+          "exact_whole_object_text_key": "3a590c977b95d80771e27f8a07ef2796067a70d0027b905d018dd7d68616c05a",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/1080"
+        }
+      ],
+      "comparisons": [
+        {
+          "left_row_id": "M77:1380:0",
+          "right_row_id": "M77:2452:0",
+          "same_site": true,
+          "same_medium": true,
+          "same_site_medium": true,
+          "same_site_locus": false,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": true,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        }
+      ],
+      "matched_masks_with_at_least_one_witness_pair": [
+        "same_site",
+        "same_medium",
+        "same_site_medium",
+        "same_catalogue_direction"
+      ],
+      "independence": "one selected expression-pair contrast; object-pair cross-products are not independent replications"
+    },
+    {
+      "contrast_id": "roof102_rival_frame162",
+      "candidate_operation": "alternative roof65\u2192102\u201359",
+      "left_sequence": [
+        "65",
+        "249",
+        "162",
+        "342"
+      ],
+      "right_sequence": [
+        "102",
+        "59",
+        "249",
+        "162",
+        "342"
+      ],
+      "left_witnesses": [
+        {
+          "row_id": "M77:5222:10",
+          "object_id": "M77:5222",
+          "sequence_stored": [
+            "65",
+            "249",
+            "162",
+            "342"
+          ],
+          "site": "Harappa",
+          "object_class_raw": "2",
+          "object_class_label": "sealing",
+          "locus_raw": "53",
+          "level_raw": "-3",
+          "direction_raw": "1",
+          "face_raw_fs80": 0,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:5222:20",
+              "tokens_stored": [
+                "89",
+                "328"
+              ],
+              "strict": true,
+              "raw_fs80": 441
+            }
+          ],
+          "exact_whole_object_text_key": "bc188726c1e3c3ead06b968de7f251ee1ebd76a2edd7caac6c88cdca269ce9d8",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/3052"
+        },
+        {
+          "row_id": "M77:5223:10",
+          "object_id": "M77:5223",
+          "sequence_stored": [
+            "65",
+            "249",
+            "162",
+            "342"
+          ],
+          "site": "Harappa",
+          "object_class_raw": "2",
+          "object_class_label": "sealing",
+          "locus_raw": "42",
+          "level_raw": "-13",
+          "direction_raw": "1",
+          "face_raw_fs80": 0,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:5223:20",
+              "tokens_stored": [
+                "89",
+                "328"
+              ],
+              "strict": true,
+              "raw_fs80": 441
+            }
+          ],
+          "exact_whole_object_text_key": "bc188726c1e3c3ead06b968de7f251ee1ebd76a2edd7caac6c88cdca269ce9d8",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/3054"
+        },
+        {
+          "row_id": "M77:5286:10",
+          "object_id": "M77:5286",
+          "sequence_stored": [
+            "65",
+            "249",
+            "162",
+            "342"
+          ],
+          "site": "Harappa",
+          "object_class_raw": "2",
+          "object_class_label": "sealing",
+          "locus_raw": "59",
+          "level_raw": "0",
+          "direction_raw": "1",
+          "face_raw_fs80": 0,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:5286:20",
+              "tokens_stored": [
+                "89",
+                "328"
+              ],
+              "strict": true,
+              "raw_fs80": 441
+            }
+          ],
+          "exact_whole_object_text_key": "bc188726c1e3c3ead06b968de7f251ee1ebd76a2edd7caac6c88cdca269ce9d8",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/3153"
+        }
+      ],
+      "right_witnesses": [
+        {
+          "row_id": "M77:2594:0",
+          "object_id": "M77:2594",
+          "sequence_stored": [
+            "102",
+            "59",
+            "249",
+            "162",
+            "342"
+          ],
+          "site": "Mohenjo-daro",
+          "object_class_raw": "1",
+          "object_class_label": "seal",
+          "locus_raw": "31",
+          "level_raw": "-18",
+          "direction_raw": "1",
+          "face_raw_fs80": 13,
+          "complete_single_line_face": true,
+          "other_observations": [],
+          "exact_whole_object_text_key": "5c7f0e7693ce15b2ab54cd32ff30d55701e5e8dcb02b7f95eac888fb6172e267",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/1228"
+        }
+      ],
+      "comparisons": [
+        {
+          "left_row_id": "M77:5222:10",
+          "right_row_id": "M77:2594:0",
+          "same_site": false,
+          "same_medium": false,
+          "same_site_medium": false,
+          "same_site_locus": false,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": true,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        },
+        {
+          "left_row_id": "M77:5223:10",
+          "right_row_id": "M77:2594:0",
+          "same_site": false,
+          "same_medium": false,
+          "same_site_medium": false,
+          "same_site_locus": false,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": true,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        },
+        {
+          "left_row_id": "M77:5286:10",
+          "right_row_id": "M77:2594:0",
+          "same_site": false,
+          "same_medium": false,
+          "same_site_medium": false,
+          "same_site_locus": false,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": true,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        }
+      ],
+      "matched_masks_with_at_least_one_witness_pair": [
+        "same_catalogue_direction"
+      ],
+      "independence": "one selected expression-pair contrast; object-pair cross-products are not independent replications"
+    },
+    {
+      "contrast_id": "roof102_rival_frame169",
+      "candidate_operation": "alternative roof65\u2192102\u201359",
+      "left_sequence": [
+        "65",
+        "249",
+        "169",
+        "342"
+      ],
+      "right_sequence": [
+        "102",
+        "59",
+        "249",
+        "169",
+        "342"
+      ],
+      "left_witnesses": [
+        {
+          "row_id": "M77:1040:0",
+          "object_id": "M77:1040",
+          "sequence_stored": [
+            "65",
+            "249",
+            "169",
+            "342"
+          ],
+          "site": "Mohenjo-daro",
+          "object_class_raw": "1",
+          "object_class_label": "seal",
+          "locus_raw": "26",
+          "level_raw": "-4",
+          "direction_raw": "1",
+          "face_raw_fs80": 13,
+          "complete_single_line_face": true,
+          "other_observations": [],
+          "exact_whole_object_text_key": "1d4bbfaf382d870e962a692cfc547b2e4bfbd01792a998f1f9042a38ac539320",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/42"
+        }
+      ],
+      "right_witnesses": [
+        {
+          "row_id": "M77:2902:20",
+          "object_id": "M77:2902",
+          "sequence_stored": [
+            "102",
+            "59",
+            "249",
+            "169",
+            "342"
+          ],
+          "site": "Mohenjo-daro",
+          "object_class_raw": "5",
+          "object_class_label": "copper tablet",
+          "locus_raw": "31",
+          "level_raw": "-11",
+          "direction_raw": "1",
+          "face_raw_fs80": 0,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:2902:10",
+              "tokens_stored": [
+                "405"
+              ],
+              "strict": true,
+              "raw_fs80": 0
+            }
+          ],
+          "exact_whole_object_text_key": "44a6ad3ec3fa2ab8e1c5c95aeeb161954bf00f1afb052b0126dc1d6d6c57d872",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/1468"
+        }
+      ],
+      "comparisons": [
+        {
+          "left_row_id": "M77:1040:0",
+          "right_row_id": "M77:2902:20",
+          "same_site": true,
+          "same_medium": false,
+          "same_site_medium": false,
+          "same_site_locus": false,
+          "same_site_locus_known_level": false,
+          "same_catalogue_direction": true,
+          "same_known_raw_picture": false,
+          "same_site_medium_known_picture": false
+        }
+      ],
+      "matched_masks_with_at_least_one_witness_pair": [
+        "same_site",
+        "same_catalogue_direction"
+      ],
+      "independence": "one selected expression-pair contrast; object-pair cross-products are not independent replications"
+    }
+  ],
+  "26799_construction": [
+    {
+      "form": "both_modifications_fused",
+      "sequence": [
+        "267",
+        "99",
+        "66"
+      ],
+      "witnesses": [
+        {
+          "row_id": "M77:7249:20",
+          "object_id": "M77:7249",
+          "sequence_stored": [
+            "267",
+            "99",
+            "66"
+          ],
+          "site": "Lothal",
+          "object_class_raw": "2",
+          "object_class_label": "sealing",
+          "locus_raw": "79",
+          "level_raw": "0",
+          "direction_raw": "1",
+          "face_raw_fs80": 13,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:7249:10",
+              "tokens_stored": [
+                "336",
+                "209",
+                "343",
+                "98",
+                "121",
+                "59",
+                "342",
+                "1"
+              ],
+              "strict": true,
+              "raw_fs80": 11
+            }
+          ],
+          "exact_whole_object_text_key": "97a132b423721de8169087580841e4578a80a352b29bc708eddb4b9e4df7fff9",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/3694"
+        },
+        {
+          "row_id": "M77:7251:20",
+          "object_id": "M77:7251",
+          "sequence_stored": [
+            "267",
+            "99",
+            "66"
+          ],
+          "site": "Lothal",
+          "object_class_raw": "2",
+          "object_class_label": "sealing",
+          "locus_raw": "79",
+          "level_raw": "0",
+          "direction_raw": "1",
+          "face_raw_fs80": 0,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:7251:10",
+              "tokens_stored": [
+                "186",
+                "293",
+                "99",
+                "0"
+              ],
+              "strict": false,
+              "raw_fs80": 0
+            }
+          ],
+          "exact_whole_object_text_key": "845b1800d0e45e2df5d8dc30e12711e7f324b14e3fca6081389c268d983c773b",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/3696"
+        },
+        {
+          "row_id": "M77:7255:0",
+          "object_id": "M77:7255",
+          "sequence_stored": [
+            "267",
+            "99",
+            "66"
+          ],
+          "site": "Lothal",
+          "object_class_raw": "2",
+          "object_class_label": "sealing",
+          "locus_raw": "79",
+          "level_raw": "0",
+          "direction_raw": "1",
+          "face_raw_fs80": 11,
+          "complete_single_line_face": true,
+          "other_observations": [],
+          "exact_whole_object_text_key": "573a58d102c514cb76f159cc88a9fcc491688884358508f78a2e6e43d5cce530",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/3701"
+        },
+        {
+          "row_id": "M77:7267:20",
+          "object_id": "M77:7267",
+          "sequence_stored": [
+            "267",
+            "99",
+            "66"
+          ],
+          "site": "Lothal",
+          "object_class_raw": "2",
+          "object_class_label": "sealing",
+          "locus_raw": "79",
+          "level_raw": "0",
+          "direction_raw": "1",
+          "face_raw_fs80": 11,
+          "complete_single_line_face": true,
+          "other_observations": [
+            {
+              "row_id": "M77:7267:10",
+              "tokens_stored": [
+                "72",
+                "249",
+                "*169",
+                "*342"
+              ],
+              "strict": false,
+              "raw_fs80": 0
+            }
+          ],
+          "exact_whole_object_text_key": "593e44644c6d74f999f048763ef76b07fdf80625fece7aa171db7724177a5dfe",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/3715"
+        },
+        {
+          "row_id": "M77:7269:0",
+          "object_id": "M77:7269",
+          "sequence_stored": [
+            "267",
+            "99",
+            "66"
+          ],
+          "site": "Lothal",
+          "object_class_raw": "2",
+          "object_class_label": "sealing",
+          "locus_raw": "79",
+          "level_raw": "0",
+          "direction_raw": "1",
+          "face_raw_fs80": 0,
+          "complete_single_line_face": true,
+          "other_observations": [],
+          "exact_whole_object_text_key": "573a58d102c514cb76f159cc88a9fcc491688884358508f78a2e6e43d5cce530",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/3717"
+        }
+      ],
+      "object_count": 5,
+      "whole_object_text_groups": 4,
+      "expression_type_count": 1,
+      "site_medium_strata": [
+        [
+          "Lothal",
+          "sealing"
+        ]
+      ]
+    },
+    {
+      "form": "roof_expanded_tick_fused",
+      "sequence": [
+        "267",
+        "99",
+        "87",
+        "60"
+      ],
+      "witnesses": [
+        {
+          "row_id": "M77:6211:0",
+          "object_id": "M77:6211",
+          "sequence_stored": [
+            "267",
+            "99",
+            "87",
+            "60"
+          ],
+          "site": "Chanhudaro",
+          "object_class_raw": "1",
+          "object_class_label": "seal",
+          "locus_raw": "62",
+          "level_raw": "7",
+          "direction_raw": "1",
+          "face_raw_fs80": 0,
+          "complete_single_line_face": true,
+          "other_observations": [],
+          "exact_whole_object_text_key": "a2bdb85434ef9b07aa8650ae3435653a35a7d00b0315554f07f0c58f619d74e4",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/3497"
+        }
+      ],
+      "object_count": 1,
+      "whole_object_text_groups": 1,
+      "expression_type_count": 1,
+      "site_medium_strata": [
+        [
+          "Chanhudaro",
+          "seal"
+        ]
+      ]
+    },
+    {
+      "form": "both_expanded",
+      "sequence": [
+        "267",
+        "99",
+        "87",
+        "59",
+        "211"
+      ],
+      "witnesses": [
+        {
+          "row_id": "M77:1551:0",
+          "object_id": "M77:1551",
+          "sequence_stored": [
+            "267",
+            "99",
+            "87",
+            "59",
+            "211"
+          ],
+          "site": "Mohenjo-daro",
+          "object_class_raw": "1",
+          "object_class_label": "seal",
+          "locus_raw": "17",
+          "level_raw": "-3",
+          "direction_raw": "1",
+          "face_raw_fs80": 351,
+          "complete_single_line_face": true,
+          "other_observations": [],
+          "exact_whole_object_text_key": "ec65e4bcbd89a93b014a6651e0bde0c95dd1a3d1fcf9190d906c79b8c70f2b41",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/526"
+        }
+      ],
+      "object_count": 1,
+      "whole_object_text_groups": 1,
+      "expression_type_count": 1,
+      "site_medium_strata": [
+        [
+          "Mohenjo-daro",
+          "seal"
+        ]
+      ]
+    },
+    {
+      "form": "repeated_fish_rival",
+      "sequence": [
+        "267",
+        "99",
+        "59",
+        "59",
+        "211"
+      ],
+      "witnesses": [
+        {
+          "row_id": "M77:4232:0",
+          "object_id": "M77:4232",
+          "sequence_stored": [
+            "267",
+            "99",
+            "59",
+            "59",
+            "211"
+          ],
+          "site": "Harappa",
+          "object_class_raw": "1",
+          "object_class_label": "seal",
+          "locus_raw": "51",
+          "level_raw": "0",
+          "direction_raw": "1",
+          "face_raw_fs80": 31,
+          "complete_single_line_face": true,
+          "other_observations": [],
+          "exact_whole_object_text_key": "9e26ded8a7b7b64ebe3611713ca76c330e014c69113a71d584c75395e471d904",
+          "source_record": "projects/theindusscript/databases/(default)/documents/indusarray/2101"
+        }
+      ],
+      "object_count": 1,
+      "whole_object_text_groups": 1,
+      "expression_type_count": 1,
+      "site_medium_strata": [
+        [
+          "Harappa",
+          "seal"
+        ]
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "hypothesis": "Roof87 spelling difference in its two original exact frames is independent of object medium.",
+      "decision": "unsupported",
+      "reason": "Both original expanded forms are copper tablets; compact forms are seal/sealing. The closer2821/2906 pair shares locus31 and level\u221210 but differs medium."
+    },
+    {
+      "hypothesis": "Explicit roof87 occurs only on copper tablets.",
+      "decision": "rejected_in_transfer",
+      "counterexamples": [
+        "M77:6211:0",
+        "M77:1551:0",
+        "M77:2452:0"
+      ]
+    },
+    {
+      "hypothesis": "The entire26799 composition is demonstrated within a fixed site.",
+      "decision": "false",
+      "reason": "Fused, partly expanded, fully expanded and repeated-fish forms occupy Lothal, Chanhudaro, Mohenjo-daro and Harappa respectively."
+    },
+    {
+      "hypothesis": "Tick211 fusion is determined by city, broad medium or raw picture code.",
+      "decision": "rejected_for_the171_frame",
+      "counterexample": [
+        "M77:1177:0",
+        "M77:3103:0"
+      ],
+      "reason": "Both are Mohenjo-daro seals, direction1,raw picture13. Locus and level differ, leaving local production or phase confounding."
+    },
+    {
+      "hypothesis": "Joint roof/tick alternation is determined by site, broad medium or catalogue direction.",
+      "decision": "rejected_for_the_base70_pair",
+      "counterexample": [
+        "M77:1380:0",
+        "M77:2452:0"
+      ],
+      "reason": "Both are Mohenjo-daro seals,direction1; loci and levels differ. Raw pictures251 versus13 differ, so motif invariance is not supported."
+    },
+    {
+      "hypothesis": "The operation is proved semantic/grammatical rather than local production convention.",
+      "decision": "underdetermined",
+      "reason": "There are no documented workshop identities. Coarse metadata explanations fail in selected contrasts, but locality/phase remains uncontrolled and matched orthography does not entail synonymy."
+    }
+  ],
+  "scope": "Exact catalogue expressions; no free reversals, no line concatenation, no imputation of companion faces.",
+  "prior_exposure": "Retrospective bounded adjudication of A-selected candidates. No classifier refit or new dataset."
+}

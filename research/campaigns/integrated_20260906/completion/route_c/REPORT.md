@@ -1,0 +1,51 @@
+# Route C reconstructed execution
+
+Fresh execution from recovered held observations; not recovered original output.
+
+{
+  "status": "executed_reconstructed_rerun",
+  "records": 128,
+  "programs": 815,
+  "best_model": {
+    "program": {
+      "kind": "independent"
+    },
+    "fallback": [
+      0.0038314176245210726,
+      0.3563218390804598,
+      0.40229885057471265,
+      0.23371647509578544,
+      0.0038314176245210726
+    ],
+    "training_records": 128,
+    "complexity_bits": 23.67065624911844,
+    "train_bits": 199.7077752044508,
+    "objective_bits": 223.37843145356925
+  },
+  "equal_front_different_count_families": 14,
+  "held_tasks": {
+    "pair_recombination": {
+      "targets": 128,
+      "selected_bits": 202.33770165090442,
+      "independent_bits": 202.33770165090442,
+      "arithmetic_bits": 275.0289367171115
+    },
+    "unseen_front_family": {
+      "targets": 128,
+      "selected_bits": 202.33770165090442,
+      "independent_bits": 202.33770165090442,
+      "arithmetic_bits": 275.0289367171115
+    }
+  },
+  "identifiability": {
+    "absolute_unit": false,
+    "physical_quantity": false,
+    "phonetics": false,
+    "scale_gauge": "Multiplying all hidden descriptor units by one common positive factor leaves ratios unchanged. Existing conditional ratio graph retained in route_c/relative_unit_graphs.json.",
+    "field_role_names": "Latent descriptor/authority/allocation labels are interchangeable without independent referents.",
+    "equal_face": "Identical fronts with distinct reverse counts defeat a deterministic front-to-cup equality model in those observed contexts.",
+    "complexity": "Finite program selection code plus BIC parameter sensitivity; not a universal MDL proof."
+  },
+  "scope_experiment": "retained_suffix_experiment.json",
+  "new_accepted_readings": 0
+}

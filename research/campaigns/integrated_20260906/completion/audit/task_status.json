@@ -1,0 +1,3477 @@
+{
+  "audit_status": "final_scientific_audit_executed",
+  "tasks": [
+    {
+      "task": 1,
+      "title": "Resume from the actual research state.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Retained starting-state record plus explicit reconstruction provenance; no claim lost commits were recovered.",
+      "evidence": [
+        {
+          "path": "shared/snapshot.json",
+          "exists": true,
+          "origin": "retained_checkpoint"
+        },
+        {
+          "path": "evidence_inventory/source_manifest.json",
+          "exists": true,
+          "origin": "retained_checkpoint"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Read the current checkpoint and relevant portions of `MERGED_BRANCH_STATE.md`, `research/docs/mahadevan_crossface_constraints_20260905.md`, `research/docs/semantic_reading_search_20260906.md`, and the corresponding tools and outputs.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/snapshot.json",
+            "evidence_inventory/source_manifest.json"
+          ],
+          "assessment": "Retained starting-state record plus explicit reconstruction provenance; no claim lost commits were recovered."
+        },
+        {
+          "clause": 2,
+          "text": "Inspect `db/schema.sql` before adding another representation.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/snapshot.json",
+            "evidence_inventory/source_manifest.json"
+          ],
+          "assessment": "Retained starting-state record plus explicit reconstruction provenance; no claim lost commits were recovered."
+        },
+        {
+          "clause": 3,
+          "text": "Record the starting commit and existing uncommitted changes.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/snapshot.json",
+            "evidence_inventory/source_manifest.json"
+          ],
+          "assessment": "Retained starting-state record plus explicit reconstruction provenance; no claim lost commits were recovered."
+        },
+        {
+          "clause": 4,
+          "text": "Do not reread the entire research history or rerun completed campaigns by default.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/snapshot.json",
+            "evidence_inventory/source_manifest.json"
+          ],
+          "assessment": "Retained starting-state record plus explicit reconstruction provenance; no claim lost commits were recovered."
+        }
+      ]
+    },
+    {
+      "task": 2,
+      "title": "Locate and classify the existing inputs.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Held inputs inventoried and documentary source recovered; no new archaeological samples.",
+      "evidence": [
+        {
+          "path": "evidence_inventory/source_manifest.json",
+          "exists": true,
+          "origin": "retained_checkpoint"
+        },
+        {
+          "path": "completion/sources/summary.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Inventory the frozen Mahadevan corpus, other transcription systems, source photographs, glyph illustrations, copper-tablet material, source codebooks, contextual metadata, and comparative-language resources already held.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "evidence_inventory/source_manifest.json",
+            "completion/sources/summary.json"
+          ],
+          "assessment": "Held inputs inventoried and documentary source recovered; no new archaeological samples."
+        },
+        {
+          "clause": 2,
+          "text": "Separate observations, published interpretations, derived tables, and model-generated proposals.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "evidence_inventory/source_manifest.json",
+            "completion/sources/summary.json"
+          ],
+          "assessment": "Held inputs inventoried and documentary source recovered; no new archaeological samples."
+        },
+        {
+          "clause": 3,
+          "text": "Resolve existing filenames and paths rather than assuming that a README description proves an input exists.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "evidence_inventory/source_manifest.json",
+            "completion/sources/summary.json"
+          ],
+          "assessment": "Held inputs inventoried and documentary source recovered; no new archaeological samples."
+        },
+        {
+          "clause": 4,
+          "text": "Record unavailable inputs without blocking work that does not need them.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "evidence_inventory/source_manifest.json",
+            "completion/sources/summary.json"
+          ],
+          "assessment": "Held inputs inventoried and documentary source recovered; no new archaeological samples."
+        }
+      ]
+    },
+    {
+      "task": 3,
+      "title": "Build a lossless object-centered observation layer.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Raw object/face/line observations retained; witnesses supplement provenance.",
+      "evidence": [
+        {
+          "path": "shared/observations.jsonl",
+          "exists": true,
+          "origin": "retained_checkpoint"
+        },
+        {
+          "path": "shared/foundation.py",
+          "exists": true,
+          "origin": "retained_checkpoint"
+        },
+        {
+          "path": "completion/sources/summary.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Extend existing loaders and tables where practical.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/observations.jsonl",
+            "shared/foundation.py",
+            "completion/sources/summary.json"
+          ],
+          "assessment": "Raw object/face/line observations retained; witnesses supplement provenance."
+        },
+        {
+          "clause": 2,
+          "text": "Represent physical objects, faces, lines, sign occurrences, catalogue-specific sign IDs, image regions, motifs, and source references separately.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/observations.jsonl",
+            "shared/foundation.py",
+            "completion/sources/summary.json"
+          ],
+          "assessment": "Raw object/face/line observations retained; witnesses supplement provenance."
+        },
+        {
+          "clause": 3,
+          "text": "Preserve raw spellings, numeric formatting, direction codes, line boundaries, damage flags, and uncertainties.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/observations.jsonl",
+            "shared/foundation.py",
+            "completion/sources/summary.json"
+          ],
+          "assessment": "Raw object/face/line observations retained; witnesses supplement provenance."
+        },
+        {
+          "clause": 4,
+          "text": "Normalize identifiers reversibly.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/observations.jsonl",
+            "shared/foundation.py",
+            "completion/sources/summary.json"
+          ],
+          "assessment": "Raw object/face/line observations retained; witnesses supplement provenance."
+        },
+        {
+          "clause": 5,
+          "text": "Do not confuse a face with a line, concatenate unordered lines, or convert an unknown span into a sign meaning zero.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/observations.jsonl",
+            "shared/foundation.py",
+            "completion/sources/summary.json"
+          ],
+          "assessment": "Raw object/face/line observations retained; witnesses supplement provenance."
+        }
+      ]
+    },
+    {
+      "task": 4,
+      "title": "Resolve identity without inventing independence.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Secure source namespaces retained; repeated texts do not prove physical copies.",
+      "evidence": [
+        {
+          "path": "shared/identity_groups.json",
+          "exists": true,
+          "origin": "retained_checkpoint"
+        },
+        {
+          "path": "completion/sources/summary.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Distinguish the same object in different catalogues, multiple photographs of one surface, repeated impressions, exact textual copies, and merely similar formulas.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/identity_groups.json",
+            "completion/sources/summary.json"
+          ],
+          "assessment": "Secure source namespaces retained; repeated texts do not prove physical copies."
+        },
+        {
+          "clause": 2,
+          "text": "Store secure identity links separately from proposed alignments and possible allographs.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/identity_groups.json",
+            "completion/sources/summary.json"
+          ],
+          "assessment": "Secure source namespaces retained; repeated texts do not prove physical copies."
+        },
+        {
+          "clause": 3,
+          "text": "Allow unresolved and many-to-many mappings.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/identity_groups.json",
+            "completion/sources/summary.json"
+          ],
+          "assessment": "Secure source namespaces retained; repeated texts do not prove physical copies."
+        },
+        {
+          "clause": 4,
+          "text": "Treat another transcription of the same object as another observation of that object, not another archaeological sample.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/identity_groups.json",
+            "completion/sources/summary.json"
+          ],
+          "assessment": "Secure source namespaces retained; repeated texts do not prove physical copies."
+        },
+        {
+          "clause": 5,
+          "text": "Make family-based versus object-based weighting available.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/identity_groups.json",
+            "completion/sources/summary.json"
+          ],
+          "assessment": "Secure source namespaces retained; repeated texts do not prove physical copies."
+        }
+      ]
+    },
+    {
+      "task": 5,
+      "title": "Support both complete and partial observations.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Retained permissive compatibility search is explicitly not a likelihood; new strict grammar does not silently impute partials.",
+      "evidence": [
+        {
+          "path": "shared/foundation.py",
+          "exists": true,
+          "origin": "retained_checkpoint"
+        },
+        {
+          "path": "route_a/partial_observation_predictions.json",
+          "exists": true,
+          "origin": "retained_checkpoint"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Keep the existing strict view, but add a view that uses visible portions of incomplete inscriptions.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/foundation.py",
+            "route_a/partial_observation_predictions.json"
+          ],
+          "assessment": "Retained permissive compatibility search is explicitly not a likelihood; new strict grammar does not silently impute partials."
+        },
+        {
+          "clause": 2,
+          "text": "Retain uncertain signs as alternatives and unknown spans as spans, including uncertain span length where necessary.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/foundation.py",
+            "route_a/partial_observation_predictions.json"
+          ],
+          "assessment": "Retained permissive compatibility search is explicitly not a likelihood; new strict grammar does not silently impute partials."
+        },
+        {
+          "clause": 3,
+          "text": "Marginalize over compatible readings or use explicitly described search approximations.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/foundation.py",
+            "route_a/partial_observation_predictions.json"
+          ],
+          "assessment": "Retained permissive compatibility search is explicitly not a likelihood; new strict grammar does not silently impute partials."
+        },
+        {
+          "clause": 4,
+          "text": "Never train on an imputed reconstruction as though it were observed.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/foundation.py",
+            "route_a/partial_observation_predictions.json"
+          ],
+          "assessment": "Retained permissive compatibility search is explicitly not a likelihood; new strict grammar does not silently impute partials."
+        },
+        {
+          "clause": 5,
+          "text": "Preserve alternate direction and line-order hypotheses when unresolved; do not allow free reversals for every troublesome example.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/foundation.py",
+            "route_a/partial_observation_predictions.json"
+          ],
+          "assessment": "Retained permissive compatibility search is explicitly not a likelihood; new strict grammar does not silently impute partials."
+        }
+      ]
+    },
+    {
+      "task": 6,
+      "title": "Attach graphical and contextual features.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Original drawings and codebook distinctions source-linked and reexamined.",
+      "evidence": [
+        {
+          "path": "shared/graphical_hypotheses.json",
+          "exists": true,
+          "origin": "retained_checkpoint"
+        },
+        {
+          "path": "completion/sources/REPORT.md",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "From already-acquired illustrations and photographs, record candidate bases, additions, enclosures, repeated elements, stroke arrangements, and spatial relationships.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/graphical_hypotheses.json",
+            "completion/sources/REPORT.md"
+          ],
+          "assessment": "Original drawings and codebook distinctions source-linked and reexamined."
+        },
+        {
+          "clause": 2,
+          "text": "Annotate motifs and their attributes independently of proposed readings.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/graphical_hypotheses.json",
+            "completion/sources/REPORT.md"
+          ],
+          "assessment": "Original drawings and codebook distinctions source-linked and reexamined."
+        },
+        {
+          "clause": 3,
+          "text": "Preserve picture, object, and publication references for each feature.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/graphical_hypotheses.json",
+            "completion/sources/REPORT.md"
+          ],
+          "assessment": "Original drawings and codebook distinctions source-linked and reexamined."
+        },
+        {
+          "clause": 4,
+          "text": "Keep catalogue drawings distinct from individual artifact appearances.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/graphical_hypotheses.json",
+            "completion/sources/REPORT.md"
+          ],
+          "assessment": "Original drawings and codebook distinctions source-linked and reexamined."
+        },
+        {
+          "clause": 5,
+          "text": "Use existing text extraction and direct image inspection; use OCR only where necessary.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/graphical_hypotheses.json",
+            "completion/sources/REPORT.md"
+          ],
+          "assessment": "Original drawings and codebook distinctions source-linked and reexamined."
+        },
+        {
+          "clause": 6,
+          "text": "Missing or illegible imagery is not evidence that a motif is absent.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/graphical_hypotheses.json",
+            "completion/sources/REPORT.md"
+          ],
+          "assessment": "Original drawings and codebook distinctions source-linked and reexamined."
+        }
+      ]
+    },
+    {
+      "task": 7,
+      "title": "Prepare the linguistic interface and research priorities.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Held comparative forms retained; Tamil fish/star selection limits language competition.",
+      "evidence": [
+        {
+          "path": "route_d/outputs/linguistic_inventory.json",
+          "exists": true,
+          "origin": "retained_checkpoint"
+        },
+        {
+          "path": "completion/route_d/summary.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Normalize only the comparative material already available, preserving attested forms, reconstructions, phonetic conventions, and uncertain analyses.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "route_d/outputs/linguistic_inventory.json",
+            "completion/route_d/summary.json"
+          ],
+          "assessment": "Held comparative forms retained; Tamil fish/star selection limits language competition."
+        },
+        {
+          "clause": 2,
+          "text": "Keep published Indus readings separate from independent linguistic evidence.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "route_d/outputs/linguistic_inventory.json",
+            "completion/route_d/summary.json"
+          ],
+          "assessment": "Held comparative forms retained; Tamil fish/star selection limits language competition."
+        },
+        {
+          "clause": 3,
+          "text": "Identify frequent signs and recurring constructions connected to graphical variants, linked faces, or motifs, while retaining rare signs that connect otherwise separate candidate groups.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "route_d/outputs/linguistic_inventory.json",
+            "completion/route_d/summary.json"
+          ],
+          "assessment": "Held comparative forms retained; Tamil fish/star selection limits language competition."
+        },
+        {
+          "clause": 4,
+          "text": "Prioritize these connected targets rather than imposing an arbitrary vocabulary cutoff.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "route_d/outputs/linguistic_inventory.json",
+            "completion/route_d/summary.json"
+          ],
+          "assessment": "Held comparative forms retained; Tamil fish/star selection limits language competition."
+        }
+      ]
+    },
+    {
+      "task": 8,
+      "title": "Define what each prediction may see.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Whole objects and raw aliases excluded, including uncertain raw patterns; retrospective exposure explicit.",
+      "evidence": [
+        {
+          "path": "completion/shared/common.py",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/shared/masks.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Create task-specific input/output masks.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/shared/common.py",
+            "completion/shared/masks.json"
+          ],
+          "assessment": "Whole objects and raw aliases excluded, including uncertain raw patterns; retrospective exposure explicit."
+        },
+        {
+          "clause": 2,
+          "text": "Specify whether a prediction receives a prefix, another face, a motif, metadata, or a candidate language, and exactly what it must predict.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/shared/common.py",
+            "completion/shared/masks.json"
+          ],
+          "assessment": "Whole objects and raw aliases excluded, including uncertain raw patterns; retrospective exposure explicit."
+        },
+        {
+          "clause": 3,
+          "text": "Prevent scored evidence from reentering through another catalogue, companion face, generated annotation, or another agent's output.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/shared/common.py",
+            "completion/shared/masks.json"
+          ],
+          "assessment": "Whole objects and raw aliases excluded, including uncertain raw patterns; retrospective exposure explicit."
+        },
+        {
+          "clause": 4,
+          "text": "Record prior exposure: retrospective repartitioning of previously inspected material does not create a genuinely blind discovery test.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/shared/common.py",
+            "completion/shared/masks.json"
+          ],
+          "assessment": "Whole objects and raw aliases excluded, including uncertain raw patterns; retrospective exposure explicit."
+        }
+      ]
+    },
+    {
+      "task": 9,
+      "title": "Separate two generalization questions.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Five recombination masks, explicit70/71-family mask, medium transfer; route-local evaluations separate.",
+      "evidence": [
+        {
+          "path": "completion/shared/masks.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_b/verification.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Build a recombination evaluation that withholds complete combinations and their copies while allowing their components to be learned elsewhere.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/shared/masks.json",
+            "completion/route_b/verification.json"
+          ],
+          "assessment": "Five recombination masks, explicit70/71-family mask, medium transfer; route-local evaluations separate."
+        },
+        {
+          "clause": 2,
+          "text": "Separately build an unseen-family evaluation that withholds related expression families.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/shared/masks.json",
+            "completion/route_b/verification.json"
+          ],
+          "assessment": "Five recombination masks, explicit70/71-family mask, medium transfer; route-local evaluations separate."
+        },
+        {
+          "clause": 3,
+          "text": "Group confirmed same-object and copy links appropriately; do not join the entire corpus merely because strings form a transitive chain of small edits.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/shared/masks.json",
+            "completion/route_b/verification.json"
+          ],
+          "assessment": "Five recombination masks, explicit70/71-family mask, medium transfer; route-local evaluations separate."
+        },
+        {
+          "clause": 4,
+          "text": "Add site or medium transfer tests when a claim asserts that scope.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/shared/masks.json",
+            "completion/route_b/verification.json"
+          ],
+          "assessment": "Five recombination masks, explicit70/71-family mask, medium transfer; route-local evaluations separate."
+        },
+        {
+          "clause": 5,
+          "text": "Report these tasks separately.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/shared/masks.json",
+            "completion/route_b/verification.json"
+          ],
+          "assessment": "Five recombination masks, explicit70/71-family mask, medium transfer; route-local evaluations separate."
+        }
+      ]
+    },
+    {
+      "task": 10,
+      "title": "Implement a shared candidate record.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Reconstructed candidates consolidated against retained shared contract; dependency validation passed.",
+      "evidence": [
+        {
+          "path": "shared/candidate_contract.json",
+          "exists": true,
+          "origin": "retained_checkpoint"
+        },
+        {
+          "path": "completion/candidate_ledger.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/claim_dependencies.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Each hypothesis must carry an ID, rule or executable interpretation, sign namespace, applicable context, prerequisites, supporting observations, contradictions, alternative explanations, parameters, complexity, and predictions.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/candidate_contract.json",
+            "completion/candidate_ledger.json",
+            "completion/claim_dependencies.json"
+          ],
+          "assessment": "Reconstructed candidates consolidated against retained shared contract; dependency validation passed."
+        },
+        {
+          "clause": 2,
+          "text": "Distinguish graphical equivalence, grammatical function, operational meaning, lexical meaning, sound assignment, and language identification.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/candidate_contract.json",
+            "completion/candidate_ledger.json",
+            "completion/claim_dependencies.json"
+          ],
+          "assessment": "Reconstructed candidates consolidated against retained shared contract; dependency validation passed."
+        },
+        {
+          "clause": 3,
+          "text": "Record which evidence and upstream hypotheses produced it.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/candidate_contract.json",
+            "completion/candidate_ledger.json",
+            "completion/claim_dependencies.json"
+          ],
+          "assessment": "Reconstructed candidates consolidated against retained shared contract; dependency validation passed."
+        },
+        {
+          "clause": 4,
+          "text": "Use machine-readable records alongside concise explanations.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "shared/candidate_contract.json",
+            "completion/candidate_ledger.json",
+            "completion/claim_dependencies.json"
+          ],
+          "assessment": "Reconstructed candidates consolidated against retained shared contract; dependency validation passed."
+        }
+      ]
+    },
+    {
+      "task": 11,
+      "title": "Define comparable scoring without rewarding flexibility.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "189 fitted systems use normalized original channels once, with parameter/program costs separate; seven verification checks passed.",
+      "evidence": [
+        {
+          "path": "completion/run_joint.py",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/joint/summary.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/verification.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Compare candidates on the same observed targets using predictive fit and an explicit penalty for parameters, exceptions, and rule complexity.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/run_joint.py",
+            "completion/joint/summary.json",
+            "completion/verification.json"
+          ],
+          "assessment": "189 fitted systems use normalized original channels once, with parameter/program costs separate; seven verification checks passed."
+        },
+        {
+          "clause": 2,
+          "text": "Keep graphical, textual, contextual, numerical, and phonetic performance visible separately.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/run_joint.py",
+            "completion/joint/summary.json",
+            "completion/verification.json"
+          ],
+          "assessment": "189 fitted systems use normalized original channels once, with parameter/program costs separate; seven verification checks passed."
+        },
+        {
+          "clause": 3,
+          "text": "Account for dependent observations rather than multiplying repeated descriptions of one fact.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/run_joint.py",
+            "completion/joint/summary.json",
+            "completion/verification.json"
+          ],
+          "assessment": "189 fitted systems use normalized original channels once, with parameter/program costs separate; seven verification checks passed."
+        },
+        {
+          "clause": 4,
+          "text": "Preserve unresolved alternatives when the evidence does not distinguish them.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/run_joint.py",
+            "completion/joint/summary.json",
+            "completion/verification.json"
+          ],
+          "assessment": "189 fitted systems use normalized original channels once, with parameter/program costs separate; seven verification checks passed."
+        },
+        {
+          "clause": 5,
+          "text": "A clean interpretation must compete against simpler categorical and nonlinguistic explanations, not only against random signs.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/run_joint.py",
+            "completion/joint/summary.json",
+            "completion/verification.json"
+          ],
+          "assessment": "189 fitted systems use normalized original channels once, with parameter/program costs separate; seven verification checks passed."
+        }
+      ]
+    },
+    {
+      "task": 12,
+      "title": "Reuse controls and test the new mechanisms narrowly.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Constructed mechanism diagnostics, held LinearB diagnostics and renaming checks executed.",
+      "evidence": [
+        {
+          "path": "completion/route_a/mechanism_diagnostic.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_d/controls.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Reuse relevant frequency, neighboring-sign, positional, metadata-only, and memorization baselines where their inputs and evaluation tasks match.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/mechanism_diagnostic.json",
+            "completion/route_d/controls.json"
+          ],
+          "assessment": "Constructed mechanism diagnostics, held LinearB diagnostics and renaming checks executed."
+        },
+        {
+          "clause": 2,
+          "text": "Add compact constructed examples and already-held deciphered-script controls to determine whether the new search can recover its intended rules or detect underdetermination.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/mechanism_diagnostic.json",
+            "completion/route_d/controls.json"
+          ],
+          "assessment": "Constructed mechanism diagnostics, held LinearB diagnostics and renaming checks executed."
+        },
+        {
+          "clause": 3,
+          "text": "These are development diagnostics, not evidence about Indus.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/mechanism_diagnostic.json",
+            "completion/route_d/controls.json"
+          ],
+          "assessment": "Constructed mechanism diagnostics, held LinearB diagnostics and renaming checks executed."
+        },
+        {
+          "clause": 4,
+          "text": "Fix mechanism-breaking errors, then proceed to the actual corpus; do not build an unrelated benchmark project.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/mechanism_diagnostic.json",
+            "completion/route_d/controls.json"
+          ],
+          "assessment": "Constructed mechanism diagnostics, held LinearB diagnostics and renaming checks executed."
+        }
+      ]
+    },
+    {
+      "task": 13,
+      "title": "Generate competing explanations for graphical variation.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Multiple graphical operations and identity rivals retained; no forced mergers.",
+      "evidence": [
+        {
+          "path": "completion/route_a/candidates.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "route_a/composition_all_candidates.json",
+          "exists": true,
+          "origin": "retained_checkpoint"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "For candidate base/modified pairs and compounds, consider alternate spellings, grammatical operations, semantic distinctions, phonetic additions, and unrelated signs.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/candidates.json",
+            "route_a/composition_all_candidates.json"
+          ],
+          "assessment": "Multiple graphical operations and identity rivals retained; no forced mergers."
+        },
+        {
+          "clause": 2,
+          "text": "Include the existing marked-fish/separate-211 candidate without privileging it.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/candidates.json",
+            "route_a/composition_all_candidates.json"
+          ],
+          "assessment": "Multiple graphical operations and identity rivals retained; no forced mergers."
+        },
+        {
+          "clause": 3,
+          "text": "Search for shared operations across sign families, but also allow well-supported family-specific operations.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/candidates.json",
+            "route_a/composition_all_candidates.json"
+          ],
+          "assessment": "Multiple graphical operations and identity rivals retained; no forced mergers."
+        },
+        {
+          "clause": 4,
+          "text": "Graphical resemblance alone must not force sign mergers.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/candidates.json",
+            "route_a/composition_all_candidates.json"
+          ],
+          "assessment": "Multiple graphical operations and identity rivals retained; no forced mergers."
+        }
+      ]
+    },
+    {
+      "task": 14,
+      "title": "Fit a compact spelling-and-grammar model.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Joint latent role/transitions and graphical emission fit; boundaries mean role changes, not identified words.",
+      "evidence": [
+        {
+          "path": "completion/route_a/grammar.py",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_a/winner.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Begin with an interpretable transducer or equivalent constrained rule system.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/grammar.py",
+            "completion/route_a/winner.json"
+          ],
+          "assessment": "Joint latent role/transitions and graphical emission fit; boundaries mean role changes, not identified words."
+        },
+        {
+          "clause": 2,
+          "text": "Jointly infer expression boundaries, component roles, and permitted transformations.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/grammar.py",
+            "completion/route_a/winner.json"
+          ],
+          "assessment": "Joint latent role/transitions and graphical emission fit; boundaries mean role changes, not identified words."
+        },
+        {
+          "clause": 3,
+          "text": "Allow a graphical change to correspond to an added or omitted written unit, a changed boundary, or a systematic change in surrounding signs.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/grammar.py",
+            "completion/route_a/winner.json"
+          ],
+          "assessment": "Joint latent role/transitions and graphical emission fit; boundaries mean role changes, not identified words."
+        },
+        {
+          "clause": 4,
+          "text": "Charge for each additional operation and exception.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/grammar.py",
+            "completion/route_a/winner.json"
+          ],
+          "assessment": "Joint latent role/transitions and graphical emission fit; boundaries mean role changes, not identified words."
+        },
+        {
+          "clause": 5,
+          "text": "Use restricted local context before introducing more elaborate dependencies.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/grammar.py",
+            "completion/route_a/winner.json"
+          ],
+          "assessment": "Joint latent role/transitions and graphical emission fit; boundaries mean role changes, not identified words."
+        }
+      ]
+    },
+    {
+      "task": 15,
+      "title": "Replace exact-string replacement with structured alignment.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Structured alignments and partial compatibility retained beside fresh latent analyses.",
+      "evidence": [
+        {
+          "path": "route_a/structured_alignments.json",
+          "exists": true,
+          "origin": "retained_checkpoint"
+        },
+        {
+          "path": "route_a/partial_observation_predictions.json",
+          "exists": true,
+          "origin": "retained_checkpoint"
+        },
+        {
+          "path": "completion/route_a/latent_segmentation_alternatives.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Search beyond cases where everything around a substitution is identical.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "route_a/structured_alignments.json",
+            "route_a/partial_observation_predictions.json",
+            "completion/route_a/latent_segmentation_alternatives.json"
+          ],
+          "assessment": "Structured alignments and partial compatibility retained beside fresh latent analyses."
+        },
+        {
+          "clause": 2,
+          "text": "Align candidate constructions while preserving plausible shared components and allowing rule-governed changes.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "route_a/structured_alignments.json",
+            "route_a/partial_observation_predictions.json",
+            "completion/route_a/latent_segmentation_alternatives.json"
+          ],
+          "assessment": "Structured alignments and partial compatibility retained beside fresh latent analyses."
+        },
+        {
+          "clause": 3,
+          "text": "Incorporate partial observations without completing them opportunistically.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "route_a/structured_alignments.json",
+            "route_a/partial_observation_predictions.json",
+            "completion/route_a/latent_segmentation_alternatives.json"
+          ],
+          "assessment": "Structured alignments and partial compatibility retained beside fresh latent analyses."
+        },
+        {
+          "clause": 4,
+          "text": "Compare a shared transformation against separate memorized expressions and unrelated slot substitutions.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "route_a/structured_alignments.json",
+            "route_a/partial_observation_predictions.json",
+            "completion/route_a/latent_segmentation_alternatives.json"
+          ],
+          "assessment": "Structured alignments and partial compatibility retained beside fresh latent analyses."
+        },
+        {
+          "clause": 5,
+          "text": "Do not treat matching contexts as proof of synonymy.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "route_a/structured_alignments.json",
+            "route_a/partial_observation_predictions.json",
+            "completion/route_a/latent_segmentation_alternatives.json"
+          ],
+          "assessment": "Structured alignments and partial compatibility retained beside fresh latent analyses."
+        }
+      ]
+    },
+    {
+      "task": 16,
+      "title": "Distinguish productive rules from local conventions.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Retained context-conditioned competition complements new global latent grammar; do not claim fresh context fit if not rerun.",
+      "evidence": [
+        {
+          "path": "route_a/operation_context_profiles.json",
+          "exists": true,
+          "origin": "retained_checkpoint"
+        },
+        {
+          "path": "route_a/graphical_family_transfer.json",
+          "exists": true,
+          "origin": "retained_checkpoint"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Test shared operations against alternatives conditioned on artifact class, site, or other observed context.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "route_a/operation_context_profiles.json",
+            "route_a/graphical_family_transfer.json"
+          ],
+          "assessment": "Retained context-conditioned competition complements new global latent grammar; do not claim fresh context fit if not rerun."
+        },
+        {
+          "clause": 2,
+          "text": "Require a proposed conditioning variable to explain more than an individual exception.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "route_a/operation_context_profiles.json",
+            "route_a/graphical_family_transfer.json"
+          ],
+          "assessment": "Retained context-conditioned competition complements new global latent grammar; do not claim fresh context fit if not rerun."
+        },
+        {
+          "clause": 3,
+          "text": "Keep global and local models in competition.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "route_a/operation_context_profiles.json",
+            "route_a/graphical_family_transfer.json"
+          ],
+          "assessment": "Retained context-conditioned competition complements new global latent grammar; do not claim fresh context fit if not rerun."
+        },
+        {
+          "clause": 4,
+          "text": "Do not force all inscriptions into one grammar, but do not create a separate grammar for each object either.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "route_a/operation_context_profiles.json",
+            "route_a/graphical_family_transfer.json"
+          ],
+          "assessment": "Retained context-conditioned competition complements new global latent grammar; do not claim fresh context fit if not rerun."
+        }
+      ]
+    },
+    {
+      "task": 17,
+      "title": "Predict unseen applications of candidate rules.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Operation and family application predictions survive; common joint evaluation pending separately.",
+      "evidence": [
+        {
+          "path": "completion/route_a/evaluations.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "route_a/graphical_family_transfer.json",
+          "exists": true,
+          "origin": "retained_checkpoint"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Freeze candidate operations and test the withheld combinations defined earlier.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/evaluations.json",
+            "route_a/graphical_family_transfer.json"
+          ],
+          "assessment": "Operation and family application predictions survive; common joint evaluation pending separately."
+        },
+        {
+          "clause": 2,
+          "text": "Check whether the operation predicts both the changed form and its permitted context, rather than merely ranking a common sign highly.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/evaluations.json",
+            "route_a/graphical_family_transfer.json"
+          ],
+          "assessment": "Operation and family application predictions survive; common joint evaluation pending separately."
+        },
+        {
+          "clause": 3,
+          "text": "Then evaluate extension to other families where the model claims it.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/evaluations.json",
+            "route_a/graphical_family_transfer.json"
+          ],
+          "assessment": "Operation and family application predictions survive; common joint evaluation pending separately."
+        },
+        {
+          "clause": 4,
+          "text": "Report unsupported applicability explicitly instead of silently narrowing the rule after seeing every failure.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/evaluations.json",
+            "route_a/graphical_family_transfer.json"
+          ],
+          "assessment": "Operation and family application predictions survive; common joint evaluation pending separately."
+        }
+      ]
+    },
+    {
+      "task": 18,
+      "title": "Publish operations and unresolved equivalences.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Executable transforms and neutral latent roles, counterexamples and alternative segmentations available.",
+      "evidence": [
+        {
+          "path": "completion/route_a/grammar.py",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_a/latent_segmentation_alternatives.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_a/INTERPRETATION.md",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Export candidate decompositions, grammatical features, segmentation alternatives, and counterexamples.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/grammar.py",
+            "completion/route_a/latent_segmentation_alternatives.json",
+            "completion/route_a/INTERPRETATION.md"
+          ],
+          "assessment": "Executable transforms and neutral latent roles, counterexamples and alternative segmentations available."
+        },
+        {
+          "clause": 2,
+          "text": "Describe unanchored operations with neutral labels rather than naming them plural, genitive, or another grammatical category without evidence.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/grammar.py",
+            "completion/route_a/latent_segmentation_alternatives.json",
+            "completion/route_a/INTERPRETATION.md"
+          ],
+          "assessment": "Executable transforms and neutral latent roles, counterexamples and alternative segmentations available."
+        },
+        {
+          "clause": 3,
+          "text": "Make the outputs directly usable by B's semantic aligner, C's field parser, and D's spelling model.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/grammar.py",
+            "completion/route_a/latent_segmentation_alternatives.json",
+            "completion/route_a/INTERPRETATION.md"
+          ],
+          "assessment": "Executable transforms and neutral latent roles, counterexamples and alternative segmentations available."
+        },
+        {
+          "clause": 4,
+          "text": "Keep raw transcriptions unchanged.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/grammar.py",
+            "completion/route_a/latent_segmentation_alternatives.json",
+            "completion/route_a/INTERPRETATION.md"
+          ],
+          "assessment": "Executable transforms and neutral latent roles, counterexamples and alternative segmentations available."
+        }
+      ]
+    },
+    {
+      "task": 19,
+      "title": "Construct the complete available correspondence network.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Reexecuted full M77 network plus held copper typology and namespace-preserving witness layer.",
+      "evidence": [
+        {
+          "path": "completion/route_b/correspondence_network.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_b/published_copper_type_network.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/sources/summary.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Link long texts, short texts, pictures, faces, and objects using existing evidence.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/correspondence_network.json",
+            "completion/route_b/published_copper_type_network.json",
+            "completion/sources/summary.json"
+          ],
+          "assessment": "Reexecuted full M77 network plus held copper typology and namespace-preserving witness layer."
+        },
+        {
+          "clause": 2,
+          "text": "Include both repeated-text/different-picture and repeated-picture/different-text cases.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/correspondence_network.json",
+            "completion/route_b/published_copper_type_network.json",
+            "completion/sources/summary.json"
+          ],
+          "assessment": "Reexecuted full M77 network plus held copper typology and namespace-preserving witness layer."
+        },
+        {
+          "clause": 3,
+          "text": "Preserve multiline structure and uncertainty.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/correspondence_network.json",
+            "completion/route_b/published_copper_type_network.json",
+            "completion/sources/summary.json"
+          ],
+          "assessment": "Reexecuted full M77 network plus held copper typology and namespace-preserving witness layer."
+        },
+        {
+          "clause": 4,
+          "text": "Treat same-object pairing, repeated inscription, pictorial similarity, and suspected abbreviation as different relationship types.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/correspondence_network.json",
+            "completion/route_b/published_copper_type_network.json",
+            "completion/sources/summary.json"
+          ],
+          "assessment": "Reexecuted full M77 network plus held copper typology and namespace-preserving witness layer."
+        },
+        {
+          "clause": 5,
+          "text": "Do not convert co-occurrence into equivalence by construction.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/correspondence_network.json",
+            "completion/route_b/published_copper_type_network.json",
+            "completion/sources/summary.json"
+          ],
+          "assessment": "Reexecuted full M77 network plus held copper typology and namespace-preserving witness layer."
+        }
+      ]
+    },
+    {
+      "task": 20,
+      "title": "Fit competing referent models.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Literal lookup, anonymous/production mixture, complementary/context rivals fitted; latent labels are nonidentifiable.",
+      "evidence": [
+        {
+          "path": "completion/route_b/competition.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_b/copper_referent_competition.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Test whether connected expressions encode the same referent, related categories, complementary documentary fields, or merely shared production context.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/competition.json",
+            "completion/route_b/copper_referent_competition.json"
+          ],
+          "assessment": "Literal lookup, anonymous/production mixture, complementary/context rivals fitted; latent labels are nonidentifiable."
+        },
+        {
+          "clause": 2,
+          "text": "Consider literal depiction, shared attributes, and role/category labels as alternatives.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/competition.json",
+            "completion/route_b/copper_referent_competition.json"
+          ],
+          "assessment": "Literal lookup, anonymous/production mixture, complementary/context rivals fitted; latent labels are nonidentifiable."
+        },
+        {
+          "clause": 3,
+          "text": "Keep anonymous latent categories anonymous unless the evidence identifies their meaning.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/competition.json",
+            "completion/route_b/copper_referent_competition.json"
+          ],
+          "assessment": "Literal lookup, anonymous/production mixture, complementary/context rivals fitted; latent labels are nonidentifiable."
+        },
+        {
+          "clause": 4,
+          "text": "A cluster that could be an institution, commodity, or person is not yet any of those things.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/competition.json",
+            "completion/route_b/copper_referent_competition.json"
+          ],
+          "assessment": "Literal lookup, anonymous/production mixture, complementary/context rivals fitted; latent labels are nonidentifiable."
+        }
+      ]
+    },
+    {
+      "task": 21,
+      "title": "Isolate semantic contributions through contrasts.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "429 independent-expression contrasts and source-grounded conditional1380/2452 argument; segmentation dependency explicit.",
+      "evidence": [
+        {
+          "path": "completion/route_b/matched_component_contrasts.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/sources/REPORT.md",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "route_a/structured_alignments.json",
+          "exists": true,
+          "origin": "retained_checkpoint"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Find networks where a component is retained or changes while paired evidence changes in a distinguishable way.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/matched_component_contrasts.json",
+            "completion/sources/REPORT.md",
+            "route_a/structured_alignments.json"
+          ],
+          "assessment": "429 independent-expression contrasts and source-grounded conditional1380/2452 argument; segmentation dependency explicit."
+        },
+        {
+          "clause": 2,
+          "text": "Use A's candidate alignments to examine nonidentical expressions, but also retain analyses that do not depend on A.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/matched_component_contrasts.json",
+            "completion/sources/REPORT.md",
+            "route_a/structured_alignments.json"
+          ],
+          "assessment": "429 independent-expression contrasts and source-grounded conditional1380/2452 argument; segmentation dependency explicit."
+        },
+        {
+          "clause": 3,
+          "text": "Seek constraints supported across connected relationships, rather than interpreting an entire inscription from one image.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/matched_component_contrasts.json",
+            "completion/sources/REPORT.md",
+            "route_a/structured_alignments.json"
+          ],
+          "assessment": "429 independent-expression contrasts and source-grounded conditional1380/2452 argument; segmentation dependency explicit."
+        },
+        {
+          "clause": 4,
+          "text": "Preserve every alternative segmentation that changes the semantic conclusion.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/matched_component_contrasts.json",
+            "completion/sources/REPORT.md",
+            "route_a/structured_alignments.json"
+          ],
+          "assessment": "429 independent-expression contrasts and source-grounded conditional1380/2452 argument; segmentation dependency explicit."
+        }
+      ]
+    },
+    {
+      "task": 22,
+      "title": "Challenge the production-context explanation directly.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Observed metadata and object-form competition executed; no documented workshop identifier exists, latent relabeling acknowledged.",
+      "evidence": [
+        {
+          "path": "completion/route_b/competition.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_b/published_copper_type_network.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Compare semantic models against object-form, site, documented production-group, and other available contextual explanations.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/competition.json",
+            "completion/route_b/published_copper_type_network.json"
+          ],
+          "assessment": "Observed metadata and object-form competition executed; no documented workshop identifier exists, latent relabeling acknowledged."
+        },
+        {
+          "clause": 2,
+          "text": "Distinguish documented relationships from inferred ones.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/competition.json",
+            "completion/route_b/published_copper_type_network.json"
+          ],
+          "assessment": "Observed metadata and object-form competition executed; no documented workshop identifier exists, latent relabeling acknowledged."
+        },
+        {
+          "clause": 3,
+          "text": "Test matched contrasts where possible.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/competition.json",
+            "completion/route_b/published_copper_type_network.json"
+          ],
+          "assessment": "Observed metadata and object-form competition executed; no documented workshop identifier exists, latent relabeling acknowledged."
+        },
+        {
+          "clause": 4,
+          "text": "Avoid treating success at predicting a motif from a whole inscription as sufficient: identify what the proposed semantic model explains that a workshop or provenance label does not.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/competition.json",
+            "completion/route_b/published_copper_type_network.json"
+          ],
+          "assessment": "Observed metadata and object-form competition executed; no documented workshop identifier exists, latent relabeling acknowledged."
+        }
+      ]
+    },
+    {
+      "task": 23,
+      "title": "Transfer candidate meanings beyond their defining examples.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Frozen component transfer plus family/medium predictions; no supported lexical transfer.",
+      "evidence": [
+        {
+          "path": "completion/route_b/frozen_358_transfer.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_b/predictions.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Freeze a semantic hypothesis and predict allowed text\u2013picture or text\u2013text relationships elsewhere in the existing corpus under the designated evaluation masks.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/frozen_358_transfer.json",
+            "completion/route_b/predictions.json"
+          ],
+          "assessment": "Frozen component transfer plus family/medium predictions; no supported lexical transfer."
+        },
+        {
+          "clause": 2,
+          "text": "Test whether its component-level interpretation travels through another construction.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/frozen_358_transfer.json",
+            "completion/route_b/predictions.json"
+          ],
+          "assessment": "Frozen component transfer plus family/medium predictions; no supported lexical transfer."
+        },
+        {
+          "clause": 3,
+          "text": "Distinguish broad category identification from a specific lexical reading.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/frozen_358_transfer.json",
+            "completion/route_b/predictions.json"
+          ],
+          "assessment": "Frozen component transfer plus family/medium predictions; no supported lexical transfer."
+        },
+        {
+          "clause": 4,
+          "text": "Record when the candidate only reproduces the associations used to invent it.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/frozen_358_transfer.json",
+            "completion/route_b/predictions.json"
+          ],
+          "assessment": "Frozen component transfer plus family/medium predictions; no supported lexical transfer."
+        }
+      ]
+    },
+    {
+      "task": 24,
+      "title": "Export semantic anchors at the precision actually supported.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Empty positive lexical/sound anchor set; conditional exclusions and anonymous relationships exported.",
+      "evidence": [
+        {
+          "path": "completion/route_b/semantic_anchors.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_b/candidates.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Publish candidate meanings, semantic exclusions, same-referent relations, and unresolved category labels with their exact dependencies.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/semantic_anchors.json",
+            "completion/route_b/candidates.json"
+          ],
+          "assessment": "Empty positive lexical/sound anchor set; conditional exclusions and anonymous relationships exported."
+        },
+        {
+          "clause": 2,
+          "text": "Supply D with anchors that can constrain lexical candidates and A/C with constraints on field roles.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/semantic_anchors.json",
+            "completion/route_b/candidates.json"
+          ],
+          "assessment": "Empty positive lexical/sound anchor set; conditional exclusions and anonymous relationships exported."
+        },
+        {
+          "clause": 3,
+          "text": "Carry published interpretations as labeled priors or rival models, never as independently observed translations.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/semantic_anchors.json",
+            "completion/route_b/candidates.json"
+          ],
+          "assessment": "Empty positive lexical/sound anchor set; conditional exclusions and anonymous relationships exported."
+        }
+      ]
+    },
+    {
+      "task": 25,
+      "title": "Represent candidate numerical observations neutrally.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Neutral stroke systems and opposite-face observations retained; no assumed physical units.",
+      "evidence": [
+        {
+          "path": "route_c/cup_field_records.json",
+          "exists": true,
+          "origin": "retained_checkpoint"
+        },
+        {
+          "path": "completion/route_c/records.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Record visible stroke groups, their arrangements, repetitions, neighboring signs, and cross-face combinations.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "route_c/cup_field_records.json",
+            "completion/route_c/records.json"
+          ],
+          "assessment": "Neutral stroke systems and opposite-face observations retained; no assumed physical units."
+        },
+        {
+          "clause": 2,
+          "text": "Keep distinct graphical counting systems separate.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "route_c/cup_field_records.json",
+            "completion/route_c/records.json"
+          ],
+          "assessment": "Neutral stroke systems and opposite-face observations retained; no assumed physical units."
+        },
+        {
+          "clause": 3,
+          "text": "Model cardinal quantities, ordinal/category labels, and nonnumerical alternatives.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "route_c/cup_field_records.json",
+            "completion/route_c/records.json"
+          ],
+          "assessment": "Neutral stroke systems and opposite-face observations retained; no assumed physical units."
+        },
+        {
+          "clause": 4,
+          "text": "Do not assume that similar-looking marks share a unit, or that opposite faces express equal quantities.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "route_c/cup_field_records.json",
+            "completion/route_c/records.json"
+          ],
+          "assessment": "Neutral stroke systems and opposite-face observations retained; no assumed physical units."
+        }
+      ]
+    },
+    {
+      "task": 26,
+      "title": "Define a compact language of record programs.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "815 finite field/value/arithmetic/categorical programs executed.",
+      "evidence": [
+        {
+          "path": "completion/route_c/run.py",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_c/program_search.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Allow explicit fields such as descriptor, quantity, denomination, authority, and allocation, initially as candidate roles.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/run.py",
+            "completion/route_c/program_search.json"
+          ],
+          "assessment": "815 finite field/value/arithmetic/categorical programs executed."
+        },
+        {
+          "clause": 2,
+          "text": "Permit constrained operations including addition, multiplication, grouping, and relative-unit conversion when they have observable consequences.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/run.py",
+            "completion/route_c/program_search.json"
+          ],
+          "assessment": "815 finite field/value/arithmetic/categorical programs executed."
+        },
+        {
+          "clause": 3,
+          "text": "Include categorical lookup and complementary-field models.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/run.py",
+            "completion/route_c/program_search.json"
+          ],
+          "assessment": "815 finite field/value/arithmetic/categorical programs executed."
+        },
+        {
+          "clause": 4,
+          "text": "Begin with the simplest programs; increase complexity only to address a specific unexplained pattern.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/run.py",
+            "completion/route_c/program_search.json"
+          ],
+          "assessment": "815 finite field/value/arithmetic/categorical programs executed."
+        }
+      ]
+    },
+    {
+      "task": 27,
+      "title": "Infer fields, values, and operations jointly.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Field/value/operation candidates selected jointly; front-identity failures preserved; A-expanded field alternative included.",
+      "evidence": [
+        {
+          "path": "completion/route_c/program_search.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_c/equal_face_counterexamples.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Search for programs that explain linked records and variant inscriptions with shared parameters.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/program_search.json",
+            "completion/route_c/equal_face_counterexamples.json"
+          ],
+          "assessment": "Field/value/operation candidates selected jointly; front-identity failures preserved; A-expanded field alternative included."
+        },
+        {
+          "clause": 2,
+          "text": "Use A's boundaries and B's possible referents as alternative constraints, not fixed truths.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/program_search.json",
+            "completion/route_c/equal_face_counterexamples.json"
+          ],
+          "assessment": "Field/value/operation candidates selected jointly; front-identity failures preserved; A-expanded field alternative included."
+        },
+        {
+          "clause": 3,
+          "text": "Evaluate equal-face models only in the contexts they actually claim.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/program_search.json",
+            "completion/route_c/equal_face_counterexamples.json"
+          ],
+          "assessment": "Field/value/operation candidates selected jointly; front-identity failures preserved; A-expanded field alternative included."
+        },
+        {
+          "clause": 4,
+          "text": "Include the existing identical-front/different-reverse counterexamples.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/program_search.json",
+            "completion/route_c/equal_face_counterexamples.json"
+          ],
+          "assessment": "Field/value/operation candidates selected jointly; front-identity failures preserved; A-expanded field alternative included."
+        },
+        {
+          "clause": 5,
+          "text": "Do not rescue a model with a freely invented unit, multiplier, or meaning for each object.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/program_search.json",
+            "completion/route_c/equal_face_counterexamples.json"
+          ],
+          "assessment": "Field/value/operation candidates selected jointly; front-identity failures preserved; A-expanded field alternative included."
+        }
+      ]
+    },
+    {
+      "task": 28,
+      "title": "Determine what is identifiable.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Equivalent predictions grouped; scale gauge and anonymous roles remain unanchored.",
+      "evidence": [
+        {
+          "path": "completion/route_c/observational_equivalence_classes.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "route_c/relative_unit_graphs.json",
+          "exists": true,
+          "origin": "retained_checkpoint"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Separate observable ratios and operational distinctions from arbitrary choices of scale, base representation, field names, or hidden labels.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/observational_equivalence_classes.json",
+            "route_c/relative_unit_graphs.json"
+          ],
+          "assessment": "Equivalent predictions grouped; scale gauge and anonymous roles remain unanchored."
+        },
+        {
+          "clause": 2,
+          "text": "Report equivalent solutions together.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/observational_equivalence_classes.json",
+            "route_c/relative_unit_graphs.json"
+          ],
+          "assessment": "Equivalent predictions grouped; scale gauge and anonymous roles remain unanchored."
+        },
+        {
+          "clause": 3,
+          "text": "Check whether the observed records genuinely distinguish arithmetic from an equally compact categorical program.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/observational_equivalence_classes.json",
+            "route_c/relative_unit_graphs.json"
+          ],
+          "assessment": "Equivalent predictions grouped; scale gauge and anonymous roles remain unanchored."
+        },
+        {
+          "clause": 4,
+          "text": "Algebraic consistency of equations derived from guessed readings does not independently validate those readings.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/observational_equivalence_classes.json",
+            "route_c/relative_unit_graphs.json"
+          ],
+          "assessment": "Equivalent predictions grouped; scale gauge and anonymous roles remain unanchored."
+        }
+      ]
+    },
+    {
+      "task": 29,
+      "title": "Predict another representation or field.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Held-pair and held-front comparisons executed; identical losses reflect alias masks, not two independent confirmations.",
+      "evidence": [
+        {
+          "path": "completion/route_c/frozen_predictions.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_c/summary.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Freeze the program and predict a withheld observed count, valid combination, or alternative notation from the permitted fields.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/frozen_predictions.json",
+            "completion/route_c/summary.json"
+          ],
+          "assessment": "Held-pair and held-front comparisons executed; identical losses reflect alias masks, not two independent confirmations."
+        },
+        {
+          "clause": 2,
+          "text": "Seek cases where competing arithmetic and categorical programs disagree.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/frozen_predictions.json",
+            "completion/route_c/summary.json"
+          ],
+          "assessment": "Held-pair and held-front comparisons executed; identical losses reflect alias masks, not two independent confirmations."
+        },
+        {
+          "clause": 3,
+          "text": "Exercise the program across different expressions and relevant object contexts.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/frozen_predictions.json",
+            "completion/route_c/summary.json"
+          ],
+          "assessment": "Held-pair and held-front comparisons executed; identical losses reflect alias masks, not two independent confirmations."
+        },
+        {
+          "clause": 4,
+          "text": "Retain open or absent combinations as unknown unless the corpus provides a reason they should have occurred.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/frozen_predictions.json",
+            "completion/route_c/summary.json"
+          ],
+          "assessment": "Held-pair and held-front comparisons executed; identical losses reflect alias masks, not two independent confirmations."
+        }
+      ]
+    },
+    {
+      "task": 30,
+      "title": "Export operational meanings and constraints.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Executable numerical rivals exported and explicitly consumed by35 conditional C-to-D comparisons; no numerical meaning promoted.",
+      "evidence": [
+        {
+          "path": "completion/route_c/run.py",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/cross_route_predictions.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Publish executable parsers, operators, relative-value relationships, applicable contexts, and explicit failures.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/run.py",
+            "completion/cross_route_predictions.json"
+          ],
+          "assessment": "Executable numerical rivals exported and explicitly consumed by35 conditional C-to-D comparisons; no numerical meaning promoted."
+        },
+        {
+          "clause": 2,
+          "text": "Feed quantity-field and unit-class constraints to A and B, and possible lexical roles to D.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/run.py",
+            "completion/cross_route_predictions.json"
+          ],
+          "assessment": "Executable numerical rivals exported and explicitly consumed by35 conditional C-to-D comparisons; no numerical meaning promoted."
+        },
+        {
+          "clause": 3,
+          "text": "Do not assign absolute physical units or pronunciations without an independent basis already present in the evidence.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/run.py",
+            "completion/cross_route_predictions.json"
+          ],
+          "assessment": "Executable numerical rivals exported and explicitly consumed by35 conditional C-to-D comparisons; no numerical meaning promoted."
+        }
+      ]
+    },
+    {
+      "task": 31,
+      "title": "Build the competing linguistic hypothesis space.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Tamil/Sanskrit and anonymous/nonphonetic rivals use held forms; unequal lexicon coverage explicit.",
+      "evidence": [
+        {
+          "path": "completion/route_d/run_completion_d.py",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_d/summary.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Use the comparative forms and analyses actually available.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_d/run_completion_d.py",
+            "completion/route_d/summary.json"
+          ],
+          "assessment": "Tamil/Sanskrit and anonymous/nonphonetic rivals use held forms; unequal lexicon coverage explicit."
+        },
+        {
+          "clause": 2,
+          "text": "Include uncertainty in reconstructions, historical relationships, and morphology.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_d/run_completion_d.py",
+            "completion/route_d/summary.json"
+          ],
+          "assessment": "Tamil/Sanskrit and anonymous/nonphonetic rivals use held forms; unequal lexicon coverage explicit."
+        },
+        {
+          "clause": 3,
+          "text": "Allow an unresolved-language alternative and analyses not tied to a named family.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_d/run_completion_d.py",
+            "completion/route_d/summary.json"
+          ],
+          "assessment": "Tamil/Sanskrit and anonymous/nonphonetic rivals use held forms; unequal lexicon coverage explicit."
+        },
+        {
+          "clause": 4,
+          "text": "Where independent phonetic evidence is absent, distinguish anonymous sound-like classes from identified sounds; do not manufacture anchors from model memory or a favored published Indus reading.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_d/run_completion_d.py",
+            "completion/route_d/summary.json"
+          ],
+          "assessment": "Tamil/Sanskrit and anonymous/nonphonetic rivals use held forms; unequal lexicon coverage explicit."
+        }
+      ]
+    },
+    {
+      "task": 32,
+      "title": "Support mixed writing systems.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Root/affix segmentation and phonetic/classifier alternatives executed;35 frozen numeric-role alternatives now consumed, with unread spans preserved.",
+      "evidence": [
+        {
+          "path": "completion/route_d/phonetic_alternatives.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/cross_route_predictions.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Allow signs to function as phonetic units, meaning-bearing signs, classifiers, or numerical signs, with context-dependent roles only where justified.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_d/phonetic_alternatives.json",
+            "completion/cross_route_predictions.json"
+          ],
+          "assessment": "Root/affix segmentation and phonetic/classifier alternatives executed;35 frozen numeric-role alternatives now consumed, with unread spans preserved."
+        },
+        {
+          "clause": 2,
+          "text": "Model multiple spellings and restricted polyphony without making every occurrence freely interpretable.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_d/phonetic_alternatives.json",
+            "completion/cross_route_predictions.json"
+          ],
+          "assessment": "Root/affix segmentation and phonetic/classifier alternatives executed;35 frozen numeric-role alternatives now consumed, with unread spans preserved."
+        },
+        {
+          "clause": 3,
+          "text": "Incorporate A's spelling operations and C's numerical distinctions as competing candidate configurations.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_d/phonetic_alternatives.json",
+            "completion/cross_route_predictions.json"
+          ],
+          "assessment": "Root/affix segmentation and phonetic/classifier alternatives executed;35 frozen numeric-role alternatives now consumed, with unread spans preserved."
+        },
+        {
+          "clause": 4,
+          "text": "Do not force an alphabetic substitution model onto every sign.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_d/phonetic_alternatives.json",
+            "completion/cross_route_predictions.json"
+          ],
+          "assessment": "Root/affix segmentation and phonetic/classifier alternatives executed;35 frozen numeric-role alternatives now consumed, with unread spans preserved."
+        }
+      ]
+    },
+    {
+      "task": 33,
+      "title": "Search sounds, segmentation, and morphology together.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Actual alternating full root/affix scan and segmentation; named mappings conditional, no accepted sound assignments.",
+      "evidence": [
+        {
+          "path": "completion/route_d/summary.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_d/phonetic_alternatives.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Alternate constrained search over sign-to-sound mappings, expression boundaries, candidate morphemes, and regular correspondences to the available linguistic material.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_d/summary.json",
+            "completion/route_d/phonetic_alternatives.json"
+          ],
+          "assessment": "Actual alternating full root/affix scan and segmentation; named mappings conditional, no accepted sound assignments."
+        },
+        {
+          "clause": 2,
+          "text": "Use interpretable constraints and retained alternative solutions.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_d/summary.json",
+            "completion/route_d/phonetic_alternatives.json"
+          ],
+          "assessment": "Actual alternating full root/affix scan and segmentation; named mappings conditional, no accepted sound assignments."
+        },
+        {
+          "clause": 3,
+          "text": "Penalize special sound changes and object-specific translations.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_d/summary.json",
+            "completion/route_d/phonetic_alternatives.json"
+          ],
+          "assessment": "Actual alternating full root/affix scan and segmentation; named mappings conditional, no accepted sound assignments."
+        },
+        {
+          "clause": 4,
+          "text": "A proposed correspondence must recur consistently; isolated dictionary resemblances cannot determine the solution.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_d/summary.json",
+            "completion/route_d/phonetic_alternatives.json"
+          ],
+          "assessment": "Actual alternating full root/affix scan and segmentation; named mappings conditional, no accepted sound assignments."
+        }
+      ]
+    },
+    {
+      "task": 34,
+      "title": "Couple semantic anchors without circular confirmation.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "No admissible positive B anchor exists; unanchored linguistic competition appropriate. Published fish readings cannot become independent anchors.",
+      "evidence": [
+        {
+          "path": "completion/route_b/semantic_anchors.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_d/REPORT.md",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Use B's candidate meanings to restrict lexical possibilities, tracking exactly which clues they depend on.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/semantic_anchors.json",
+            "completion/route_d/REPORT.md"
+          ],
+          "assessment": "No admissible positive B anchor exists; unanchored linguistic competition appropriate. Published fish readings cannot become independent anchors."
+        },
+        {
+          "clause": 2,
+          "text": "Allow phonetic predictions to suggest new semantic distinctions, but mark these as downstream consequences, not independent confirmation of their own premises.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/semantic_anchors.json",
+            "completion/route_d/REPORT.md"
+          ],
+          "assessment": "No admissible positive B anchor exists; unanchored linguistic competition appropriate. Published fish readings cannot become independent anchors."
+        },
+        {
+          "clause": 3,
+          "text": "Compare anchored, partially anchored, and unanchored runs where the distinction matters.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_b/semantic_anchors.json",
+            "completion/route_d/REPORT.md"
+          ],
+          "assessment": "No admissible positive B anchor exists; unanchored linguistic competition appropriate. Published fish readings cannot become independent anchors."
+        }
+      ]
+    },
+    {
+      "task": 35,
+      "title": "Compete against plausible rival systems.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Two named languages, anonymous/nonphonetic rivals, two orders and held-script diagnostics executed.",
+      "evidence": [
+        {
+          "path": "completion/route_d/controls.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_d/summary.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Compare alternative languages, segmentations, mixed-script assignments, anonymous phonological models, and nonphonetic explanations under matched flexibility.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_d/controls.json",
+            "completion/route_d/summary.json"
+          ],
+          "assessment": "Two named languages, anonymous/nonphonetic rivals, two orders and held-script diagnostics executed."
+        },
+        {
+          "clause": 2,
+          "text": "Use already-held deciphered-script controls and constructed cases to diagnose whether the decoder prefers a supplied language regardless of the input.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_d/controls.json",
+            "completion/route_d/summary.json"
+          ],
+          "assessment": "Two named languages, anonymous/nonphonetic rivals, two orders and held-script diagnostics executed."
+        },
+        {
+          "clause": 3,
+          "text": "Do not substitute a larger masked-sign model for this phonetic search.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_d/controls.json",
+            "completion/route_d/summary.json"
+          ],
+          "assessment": "Two named languages, anonymous/nonphonetic rivals, two orders and held-script diagnostics executed."
+        }
+      ]
+    },
+    {
+      "task": 36,
+      "title": "Predict recurring forms and partially read withheld inscriptions.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Mappings frozen before excluded pair analysis; unread70 remains unread; consistency is not sound accuracy.",
+      "evidence": [
+        {
+          "path": "completion/route_d/frozen_predictions.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_d/phonetic_alternatives.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Freeze the mapping and grammatical rules before evaluating the designated targets.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_d/frozen_predictions.json",
+            "completion/route_d/phonetic_alternatives.json"
+          ],
+          "assessment": "Mappings frozen before excluded pair analysis; unread70 remains unread; consistency is not sound accuracy."
+        },
+        {
+          "clause": 2,
+          "text": "Require the same assignments to explain repeated forms, independently supplied semantic relationships, and new combinations.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_d/frozen_predictions.json",
+            "completion/route_d/phonetic_alternatives.json"
+          ],
+          "assessment": "Mappings frozen before excluded pair analysis; unread70 remains unread; consistency is not sound accuracy."
+        },
+        {
+          "clause": 3,
+          "text": "Preserve unread portions and ambiguous alternatives.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_d/frozen_predictions.json",
+            "completion/route_d/phonetic_alternatives.json"
+          ],
+          "assessment": "Mappings frozen before excluded pair analysis; unread70 remains unread; consistency is not sound accuracy."
+        },
+        {
+          "clause": 4,
+          "text": "Evaluate complete candidate analyses as well as individual sign predictions; shared easy signs must not conceal contradictory readings elsewhere.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_d/frozen_predictions.json",
+            "completion/route_d/phonetic_alternatives.json"
+          ],
+          "assessment": "Mappings frozen before excluded pair analysis; unread70 remains unread; consistency is not sound accuracy."
+        }
+      ]
+    },
+    {
+      "task": 37,
+      "title": "Export sound assignments with explicit dependencies.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Explicit mappings, role alternatives and dependencies exported; no pronunciation promotion.",
+      "evidence": [
+        {
+          "path": "completion/route_d/phonetic_alternatives.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_d/REPORT.md",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Publish each candidate sound correspondence, its orthographic conditions, linguistic assumptions, semantic prerequisites, and competing assignments.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_d/phonetic_alternatives.json",
+            "completion/route_d/REPORT.md"
+          ],
+          "assessment": "Explicit mappings, role alternatives and dependencies exported; no pronunciation promotion."
+        },
+        {
+          "clause": 2,
+          "text": "Separate genuine pronunciation claims from arbitrary renaming of latent classes.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_d/phonetic_alternatives.json",
+            "completion/route_d/REPORT.md"
+          ],
+          "assessment": "Explicit mappings, role alternatives and dependencies exported; no pronunciation promotion."
+        },
+        {
+          "clause": 3,
+          "text": "Return spelling and segmentation contradictions to A, semantic conflicts to B, and numerical/nonphonetic role conflicts to C.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_d/phonetic_alternatives.json",
+            "completion/route_d/REPORT.md"
+          ],
+          "assessment": "Explicit mappings, role alternatives and dependencies exported; no pronunciation promotion."
+        }
+      ]
+    },
+    {
+      "task": 38,
+      "title": "Construct the dependency graph of candidate claims.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Actual reconstructed candidate dependencies consolidated; acyclicity and unsupported-promotion gate passed.",
+      "evidence": [
+        {
+          "path": "completion/claim_dependencies.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/candidate_ledger.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/verification.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Join compatible operations, referents, fields, and sounds through shared observations and explicit prerequisites.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/claim_dependencies.json",
+            "completion/candidate_ledger.json",
+            "completion/verification.json"
+          ],
+          "assessment": "Actual reconstructed candidate dependencies consolidated; acyclicity and unsupported-promotion gate passed."
+        },
+        {
+          "clause": 2,
+          "text": "Separate directly observed facts from inferred claims.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/claim_dependencies.json",
+            "completion/candidate_ledger.json",
+            "completion/verification.json"
+          ],
+          "assessment": "Actual reconstructed candidate dependencies consolidated; acyclicity and unsupported-promotion gate passed."
+        },
+        {
+          "clause": 3,
+          "text": "Detect contradictions and circular justifications.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/claim_dependencies.json",
+            "completion/candidate_ledger.json",
+            "completion/verification.json"
+          ],
+          "assessment": "Actual reconstructed candidate dependencies consolidated; acyclicity and unsupported-promotion gate passed."
+        },
+        {
+          "clause": 4,
+          "text": "Multiple routes explaining the same observation do not create multiple independent pieces of evidence.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/claim_dependencies.json",
+            "completion/candidate_ledger.json",
+            "completion/verification.json"
+          ],
+          "assessment": "Actual reconstructed candidate dependencies consolidated; acyclicity and unsupported-promotion gate passed."
+        },
+        {
+          "clause": 5,
+          "text": "Keep alternative connected systems rather than accepting each route's local winner independently.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/claim_dependencies.json",
+            "completion/candidate_ledger.json",
+            "completion/verification.json"
+          ],
+          "assessment": "Actual reconstructed candidate dependencies consolidated; acyclicity and unsupported-promotion gate passed."
+        }
+      ]
+    },
+    {
+      "task": 39,
+      "title": "Execute cross-route prediction tasks.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "A-to-B/C fitted transformations; explicit35 C-to-D role comparisons; empty admissible B anchor set;14 D-to-A prior-conditioned systems executed. These are dependent consequences, not independent confirmations.",
+      "evidence": [
+        {
+          "path": "completion/cross_route_predictions.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/joint/summary.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/joint/linguistic_coupling/summary.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Use A to predict where an operation should alter B's referential relationships or C's numerical fields.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/cross_route_predictions.json",
+            "completion/joint/summary.json",
+            "completion/joint/linguistic_coupling/summary.json"
+          ],
+          "assessment": "A-to-B/C fitted transformations; explicit35 C-to-D role comparisons; empty admissible B anchor set;14 D-to-A prior-conditioned systems executed. These are dependent consequences, not independent confirmations."
+        },
+        {
+          "clause": 2,
+          "text": "Use B to narrow D's lexical alternatives.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/cross_route_predictions.json",
+            "completion/joint/summary.json",
+            "completion/joint/linguistic_coupling/summary.json"
+          ],
+          "assessment": "A-to-B/C fitted transformations; explicit35 C-to-D role comparisons; empty admissible B anchor set;14 D-to-A prior-conditioned systems executed. These are dependent consequences, not independent confirmations."
+        },
+        {
+          "clause": 3,
+          "text": "Use C to identify expressions D should not treat as ordinary phonetic words.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/cross_route_predictions.json",
+            "completion/joint/summary.json",
+            "completion/joint/linguistic_coupling/summary.json"
+          ],
+          "assessment": "A-to-B/C fitted transformations; explicit35 C-to-D role comparisons; empty admissible B anchor set;14 D-to-A prior-conditioned systems executed. These are dependent consequences, not independent confirmations."
+        },
+        {
+          "clause": 4,
+          "text": "Use D to predict alternate spellings and morphological contrasts for A.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/cross_route_predictions.json",
+            "completion/joint/summary.json",
+            "completion/joint/linguistic_coupling/summary.json"
+          ],
+          "assessment": "A-to-B/C fitted transformations; explicit35 C-to-D role comparisons; empty admissible B anchor set;14 D-to-A prior-conditioned systems executed. These are dependent consequences, not independent confirmations."
+        },
+        {
+          "clause": 5,
+          "text": "Each exchange must produce a specific testable consequence, not merely a higher confidence label.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/cross_route_predictions.json",
+            "completion/joint/summary.json",
+            "completion/joint/linguistic_coupling/summary.json"
+          ],
+          "assessment": "A-to-B/C fitted transformations; explicit35 C-to-D role comparisons; empty admissible B anchor set;14 D-to-A prior-conditioned systems executed. These are dependent consequences, not independent confirmations."
+        }
+      ]
+    },
+    {
+      "task": 40,
+      "title": "Fit compatible systems jointly.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "189 ABC fits across seven frozen tasks jointly select shared spelling and channel models; original observations counted once.",
+      "evidence": [
+        {
+          "path": "completion/run_joint.py",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/joint/summary.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Optimize the shared interpretation against the original observations, with shared parameters and explicit channel dependencies.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/run_joint.py",
+            "completion/joint/summary.json"
+          ],
+          "assessment": "189 ABC fits across seven frozen tasks jointly select shared spelling and channel models; original observations counted once."
+        },
+        {
+          "clause": 2,
+          "text": "Do not multiply route scores as though each came from independent data.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/run_joint.py",
+            "completion/joint/summary.json"
+          ],
+          "assessment": "189 ABC fits across seven frozen tasks jointly select shared spelling and channel models; original observations counted once."
+        },
+        {
+          "clause": 3,
+          "text": "Permit a weaker local model to win when it explains more of the combined evidence with fewer exceptions.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/run_joint.py",
+            "completion/joint/summary.json"
+          ],
+          "assessment": "189 ABC fits across seven frozen tasks jointly select shared spelling and channel models; original observations counted once."
+        },
+        {
+          "clause": 4,
+          "text": "Implement a larger joint solver only where actual candidate interactions require it.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/run_joint.py",
+            "completion/joint/summary.json"
+          ],
+          "assessment": "189 ABC fits across seven frozen tasks jointly select shared spelling and channel models; original observations counted once."
+        }
+      ]
+    },
+    {
+      "task": 41,
+      "title": "Propagate assignments into additional constructions.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Seven held construction/family/medium tasks and14 linguistic counterparts executed, including explicit unread portions.",
+      "evidence": [
+        {
+          "path": "completion/joint/summary.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/joint/linguistic_coupling/summary.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Follow recurring components, graphical variants, linked expressions, and candidate grammatical transformations outward from the connected core.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/joint/summary.json",
+            "completion/joint/linguistic_coupling/summary.json"
+          ],
+          "assessment": "Seven held construction/family/medium tasks and14 linguistic counterparts executed, including explicit unread portions."
+        },
+        {
+          "clause": 2,
+          "text": "Predict what the combined system implies before inspecting its designated evaluation outputs.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/joint/summary.json",
+            "completion/joint/linguistic_coupling/summary.json"
+          ],
+          "assessment": "Seven held construction/family/medium tasks and14 linguistic counterparts executed, including explicit unread portions."
+        },
+        {
+          "clause": 3,
+          "text": "Preserve original uncertain observations.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/joint/summary.json",
+            "completion/joint/linguistic_coupling/summary.json"
+          ],
+          "assessment": "Seven held construction/family/medium tasks and14 linguistic counterparts executed, including explicit unread portions."
+        },
+        {
+          "clause": 4,
+          "text": "Expand to less frequent signs when existing rules constrain them, rather than inventing standalone meanings for coverage.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/joint/summary.json",
+            "completion/joint/linguistic_coupling/summary.json"
+          ],
+          "assessment": "Seven held construction/family/medium tasks and14 linguistic counterparts executed, including explicit unread portions."
+        }
+      ]
+    },
+    {
+      "task": 42,
+      "title": "Test competing causes of apparent agreement.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Six full graphical-selection controls plus anonymous/nonphonetic and language-prior alternatives executed; no independent reading emerges.",
+      "evidence": [
+        {
+          "path": "completion/route_a/matched_controls.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_d/controls.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/joint/linguistic_coupling/summary.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Remove or replace pivotal anchors, graphical assumptions, metadata associations, or language priors and determine which conclusions survive.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/matched_controls.json",
+            "completion/route_d/controls.json",
+            "completion/joint/linguistic_coupling/summary.json"
+          ],
+          "assessment": "Six full graphical-selection controls plus anonymous/nonphonetic and language-prior alternatives executed; no independent reading emerges."
+        },
+        {
+          "clause": 2,
+          "text": "Repeat only the comparisons needed to resolve an active claim.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/matched_controls.json",
+            "completion/route_d/controls.json",
+            "completion/joint/linguistic_coupling/summary.json"
+          ],
+          "assessment": "Six full graphical-selection controls plus anonymous/nonphonetic and language-prior alternatives executed; no independent reading emerges."
+        },
+        {
+          "clause": 3,
+          "text": "If the entire reading collapses when one uncertain premise changes, retain that dependency in the claim rather than presenting the cascade as independent confirmations.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/matched_controls.json",
+            "completion/route_d/controls.json",
+            "completion/joint/linguistic_coupling/summary.json"
+          ],
+          "assessment": "Six full graphical-selection controls plus anonymous/nonphonetic and language-prior alternatives executed; no independent reading emerges."
+        }
+      ]
+    },
+    {
+      "task": 43,
+      "title": "Investigate contradictions by cause.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Source distinction and disputed local boundary/scope inspected; fresh fits contradict unsupported repair rather than silently repairing source.",
+      "evidence": [
+        {
+          "path": "completion/sources/REPORT.md",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_a/INTERPRETATION.md",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_c/retained_suffix_experiment.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Distinguish source-reading uncertainty, mistaken object alignment, alternative sign identity, an incorrect grammar, a numerical-field error, and a false semantic or phonetic anchor.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/sources/REPORT.md",
+            "completion/route_a/INTERPRETATION.md",
+            "completion/route_c/retained_suffix_experiment.json"
+          ],
+          "assessment": "Source distinction and disputed local boundary/scope inspected; fresh fits contradict unsupported repair rather than silently repairing source."
+        },
+        {
+          "clause": 2,
+          "text": "Check the exact existing source when that distinction can change the decision.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/sources/REPORT.md",
+            "completion/route_a/INTERPRETATION.md",
+            "completion/route_c/retained_suffix_experiment.json"
+          ],
+          "assessment": "Source distinction and disputed local boundary/scope inspected; fresh fits contradict unsupported repair rather than silently repairing source."
+        },
+        {
+          "clause": 3,
+          "text": "Penalize any repair or exception in subsequent model comparison.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/sources/REPORT.md",
+            "completion/route_a/INTERPRETATION.md",
+            "completion/route_c/retained_suffix_experiment.json"
+          ],
+          "assessment": "Source distinction and disputed local boundary/scope inspected; fresh fits contradict unsupported repair rather than silently repairing source."
+        },
+        {
+          "clause": 4,
+          "text": "Refit the affected portion; do not restart unrelated completed work.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/sources/REPORT.md",
+            "completion/route_a/INTERPRETATION.md",
+            "completion/route_c/retained_suffix_experiment.json"
+          ],
+          "assessment": "Source distinction and disputed local boundary/scope inspected; fresh fits contradict unsupported repair rather than silently repairing source."
+        }
+      ]
+    },
+    {
+      "task": 44,
+      "title": "Maintain a discriminating experiment queue.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Reconstructed rival-sensitive queue selects exact next scope experiment; previously queued retained-suffix experiment executed. Next further experiment explicitly unexecuted.",
+      "evidence": [
+        {
+          "path": "completion/experiment_queue.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/continuation.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/next_order_comparison.py",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "For each unresolved competition, identify the observation or inference over existing evidence that best separates the rivals.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/experiment_queue.json",
+            "completion/continuation.json",
+            "completion/next_order_comparison.py"
+          ],
+          "assessment": "Reconstructed rival-sensitive queue selects exact next scope experiment; previously queued retained-suffix experiment executed. Next further experiment explicitly unexecuted."
+        },
+        {
+          "clause": 2,
+          "text": "Assign it to the appropriate route or specialist.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/experiment_queue.json",
+            "completion/continuation.json",
+            "completion/next_order_comparison.py"
+          ],
+          "assessment": "Reconstructed rival-sensitive queue selects exact next scope experiment; previously queued retained-suffix experiment executed. Next further experiment explicitly unexecuted."
+        },
+        {
+          "clause": 3,
+          "text": "Record why a rejected candidate failed and what changed assumption could legitimately reopen it.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/experiment_queue.json",
+            "completion/continuation.json",
+            "completion/next_order_comparison.py"
+          ],
+          "assessment": "Reconstructed rival-sensitive queue selects exact next scope experiment; previously queued retained-suffix experiment executed. Next further experiment explicitly unexecuted."
+        },
+        {
+          "clause": 4,
+          "text": "Continue alternative mechanisms when one fails; do not repeat the same search with cosmetic changes or leave a route dormant because another currently looks stronger.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/experiment_queue.json",
+            "completion/continuation.json",
+            "completion/next_order_comparison.py"
+          ],
+          "assessment": "Reconstructed rival-sensitive queue selects exact next scope experiment; previously queued retained-suffix experiment executed. Next further experiment explicitly unexecuted."
+        }
+      ]
+    },
+    {
+      "task": 45,
+      "title": "Freeze the claim before its decisive test.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Seven masks frozen before fitting;189 ABC artifacts and14 linguistic pre/post fingerprints verified; retrospective exposure stated.",
+      "evidence": [
+        {
+          "path": "completion/shared/masks.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/run_joint.py",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/verification.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Write its precise meaning, scope, required assumptions, allowed inputs, predicted outputs, and strongest rival explanation.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/shared/masks.json",
+            "completion/run_joint.py",
+            "completion/verification.json"
+          ],
+          "assessment": "Seven masks frozen before fitting;189 ABC artifacts and14 linguistic pre/post fingerprints verified; retrospective exposure stated."
+        },
+        {
+          "clause": 2,
+          "text": "Freeze the relevant model and search settings.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/shared/masks.json",
+            "completion/run_joint.py",
+            "completion/verification.json"
+          ],
+          "assessment": "Seven masks frozen before fitting;189 ABC artifacts and14 linguistic pre/post fingerprints verified; retrospective exposure stated."
+        },
+        {
+          "clause": 3,
+          "text": "Identify which cases were already exposed during hypothesis development.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/shared/masks.json",
+            "completion/run_joint.py",
+            "completion/verification.json"
+          ],
+          "assessment": "Seven masks frozen before fitting;189 ABC artifacts and14 linguistic pre/post fingerprints verified; retrospective exposure stated."
+        },
+        {
+          "clause": 4,
+          "text": "Keep a prediction separate from an explanation constructed after seeing the target.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/shared/masks.json",
+            "completion/run_joint.py",
+            "completion/verification.json"
+          ],
+          "assessment": "Seven masks frozen before fitting;189 ABC artifacts and14 linguistic pre/post fingerprints verified; retrospective exposure stated."
+        }
+      ]
+    },
+    {
+      "task": 46,
+      "title": "Run selection-aware comparisons.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Six complete graphical selection controls and executed recombination/family/medium tasks; no unsearched-noise comparison promoted.",
+      "evidence": [
+        {
+          "path": "completion/route_a/matched_controls.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/joint/summary.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_b/verification.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Evaluate the frozen candidates on the agreed recombination, new-family, and applicable contextual-transfer tasks.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/matched_controls.json",
+            "completion/joint/summary.json",
+            "completion/route_b/verification.json"
+          ],
+          "assessment": "Six complete graphical selection controls and executed recombination/family/medium tasks; no unsearched-noise comparison promoted."
+        },
+        {
+          "clause": 2,
+          "text": "Where discovery depended on searching many alternatives, reproduce the relevant selection procedure in a matched control rather than comparing only the winning candidate with unsearched noise.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/matched_controls.json",
+            "completion/joint/summary.json",
+            "completion/route_b/verification.json"
+          ],
+          "assessment": "Six complete graphical selection controls and executed recombination/family/medium tasks; no unsearched-noise comparison promoted."
+        },
+        {
+          "clause": 3,
+          "text": "Match the control to the claim: preserve the plausible nuisance structure instead of destroying everything indiscriminately.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_a/matched_controls.json",
+            "completion/joint/summary.json",
+            "completion/route_b/verification.json"
+          ],
+          "assessment": "Six complete graphical selection controls and executed recombination/family/medium tasks; no unsearched-noise comparison promoted."
+        }
+      ]
+    },
+    {
+      "task": 47,
+      "title": "Check the load-bearing source observations.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Load-bearing original source text and codebook reexamined; no global corpus reread substituted for inference.",
+      "evidence": [
+        {
+          "path": "completion/sources/REPORT.md",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/sources/summary.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Inspect the exact already-acquired images or source entries on which the claimed interpretation depends.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/sources/REPORT.md",
+            "completion/sources/summary.json"
+          ],
+          "assessment": "Load-bearing original source text and codebook reexamined; no global corpus reread substituted for inference."
+        },
+        {
+          "clause": 2,
+          "text": "Verify only distinctions capable of changing that interpretation: sign identity, stroke grouping, orientation, side assignment, or motif feature.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/sources/REPORT.md",
+            "completion/sources/summary.json"
+          ],
+          "assessment": "Load-bearing original source text and codebook reexamined; no global corpus reread substituted for inference."
+        },
+        {
+          "clause": 3,
+          "text": "Record unresolved details rather than treating image enlargement or a modern glyph drawing as new physical evidence.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/sources/REPORT.md",
+            "completion/sources/summary.json"
+          ],
+          "assessment": "Load-bearing original source text and codebook reexamined; no global corpus reread substituted for inference."
+        },
+        {
+          "clause": 4,
+          "text": "Do not expand this into a corpus-wide re-audit.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/sources/REPORT.md",
+            "completion/sources/summary.json"
+          ],
+          "assessment": "Load-bearing original source text and codebook reexamined; no global corpus reread substituted for inference."
+        }
+      ]
+    },
+    {
+      "task": 48,
+      "title": "Establish what is new and what is inferred.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Prior scholarship, preserved formalizations and reconstructed results separated; novelty priority unresolved, no new translation or sound correspondence claimed.",
+      "evidence": [
+        {
+          "path": "completion/novelty.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "adjudication/scientific_review.md",
+          "exists": true,
+          "origin": "retained_checkpoint"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Compare surviving claims with the scholarship already held.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/novelty.json",
+            "adjudication/scientific_review.md"
+          ],
+          "assessment": "Prior scholarship, preserved formalizations and reconstructed results separated; novelty priority unresolved, no new translation or sound correspondence claimed."
+        },
+        {
+          "clause": 2,
+          "text": "Separate reproduction, new formalization, a new operational or lexical reading, and a newly identified sound correspondence.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/novelty.json",
+            "adjudication/scientific_review.md"
+          ],
+          "assessment": "Prior scholarship, preserved formalizations and reconstructed results separated; novelty priority unresolved, no new translation or sound correspondence claimed."
+        },
+        {
+          "clause": 3,
+          "text": "Clearly describe novelty as unresolved when the existing literature coverage cannot settle priority.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/novelty.json",
+            "adjudication/scientific_review.md"
+          ],
+          "assessment": "Prior scholarship, preserved formalizations and reconstructed results separated; novelty priority unresolved, no new translation or sound correspondence claimed."
+        },
+        {
+          "clause": 4,
+          "text": "Neither prior publication nor internal model agreement automatically validates a reading.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/novelty.json",
+            "adjudication/scientific_review.md"
+          ],
+          "assessment": "Prior scholarship, preserved formalizations and reconstructed results separated; novelty priority unresolved, no new translation or sound correspondence claimed."
+        }
+      ]
+    },
+    {
+      "task": 49,
+      "title": "Promote only the supported claim.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Accepted ledger preserved; zero new readings, conditional/rejected rivals accessible. Prediction is not translation coverage.",
+      "evidence": [
+        {
+          "path": "accepted_claims.json",
+          "exists": true,
+          "origin": "retained_checkpoint"
+        },
+        {
+          "path": "completion/candidate_ledger.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/novelty.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/verification.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Update the accepted-claim ledger only with the interpretation actually warranted, its scope, sources, and unresolved dependencies.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "accepted_claims.json",
+            "completion/candidate_ledger.json",
+            "completion/novelty.json",
+            "completion/verification.json"
+          ],
+          "assessment": "Accepted ledger preserved; zero new readings, conditional/rejected rivals accessible. Prediction is not translation coverage."
+        },
+        {
+          "clause": 2,
+          "text": "Keep conditional, ambiguous, and rejected proposals accessible without conflating them with accepted readings.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "accepted_claims.json",
+            "completion/candidate_ledger.json",
+            "completion/novelty.json",
+            "completion/verification.json"
+          ],
+          "assessment": "Accepted ledger preserved; zero new readings, conditional/rejected rivals accessible. Prediction is not translation coverage."
+        },
+        {
+          "clause": 3,
+          "text": "Report observed predictive reach separately from legible-text coverage or translation coverage.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "accepted_claims.json",
+            "completion/candidate_ledger.json",
+            "completion/novelty.json",
+            "completion/verification.json"
+          ],
+          "assessment": "Accepted ledger preserved; zero new readings, conditional/rejected rivals accessible. Prediction is not translation coverage."
+        },
+        {
+          "clause": 4,
+          "text": "Do not count renamed latent states, recovered known patterns, or infrastructure as decipherment.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "accepted_claims.json",
+            "completion/candidate_ledger.json",
+            "completion/novelty.json",
+            "completion/verification.json"
+          ],
+          "assessment": "Accepted ledger preserved; zero new readings, conditional/rejected rivals accessible. Prediction is not translation coverage."
+        }
+      ]
+    },
+    {
+      "task": 50,
+      "title": "Consolidate runnable artifacts.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Route and joint runners, original observations, fitted systems, settings, dependencies and verification consolidated; persistence/merge tracked in52.",
+      "evidence": [
+        {
+          "path": "completion/run_completion.py",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/README.md",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/verification.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Reuse the current research layout.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/run_completion.py",
+            "completion/README.md",
+            "completion/verification.json"
+          ],
+          "assessment": "Route and joint runners, original observations, fitted systems, settings, dependencies and verification consolidated; persistence/merge tracked in52."
+        },
+        {
+          "clause": 2,
+          "text": "Add a campaign area containing the source manifest, observations or references to them, evaluation masks, route outputs, joint models, prediction records, and claim dependencies.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/run_completion.py",
+            "completion/README.md",
+            "completion/verification.json"
+          ],
+          "assessment": "Route and joint runners, original observations, fitted systems, settings, dependencies and verification consolidated; persistence/merge tracked in52."
+        },
+        {
+          "clause": 3,
+          "text": "Provide executable entry points for each route and the integration runner.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/run_completion.py",
+            "completion/README.md",
+            "completion/verification.json"
+          ],
+          "assessment": "Route and joint runners, original observations, fitted systems, settings, dependencies and verification consolidated; persistence/merge tracked in52."
+        },
+        {
+          "clause": 4,
+          "text": "Preserve meaningful experiment settings and seeds; omit disposable checkpoints and redundant data copies unless necessary to reproduce a result.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/run_completion.py",
+            "completion/README.md",
+            "completion/verification.json"
+          ],
+          "assessment": "Route and joint runners, original observations, fitted systems, settings, dependencies and verification consolidated; persistence/merge tracked in52."
+        }
+      ]
+    },
+    {
+      "task": 51,
+      "title": "Deliver worked decoding examples.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Worked raw/expanded spelling, suffix, count and conditional-language cases show retained unknowns, dependencies and strongest rivals; detailed parses linked.",
+      "evidence": [
+        {
+          "path": "completion/WORKED_EXAMPLES.md",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_a/latent_segmentation_alternatives.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/route_d/frozen_predictions.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "For each substantive supported interpretation, show the source observation, original sign sequence, proposed segmentation, applied operations, semantic or phonetic assignments, resulting reading, and unresolved portions.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/WORKED_EXAMPLES.md",
+            "completion/route_a/latent_segmentation_alternatives.json",
+            "completion/route_d/frozen_predictions.json"
+          ],
+          "assessment": "Worked raw/expanded spelling, suffix, count and conditional-language cases show retained unknowns, dependencies and strongest rivals; detailed parses linked."
+        },
+        {
+          "clause": 2,
+          "text": "Include the strongest counterexample or competing analysis.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/WORKED_EXAMPLES.md",
+            "completion/route_a/latent_segmentation_alternatives.json",
+            "completion/route_d/frozen_predictions.json"
+          ],
+          "assessment": "Worked raw/expanded spelling, suffix, count and conditional-language cases show retained unknowns, dependencies and strongest rivals; detailed parses linked."
+        },
+        {
+          "clause": 3,
+          "text": "For unsuccessful routes, document the exact tested mechanism and failure, not a claim that the whole route is impossible.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/WORKED_EXAMPLES.md",
+            "completion/route_a/latent_segmentation_alternatives.json",
+            "completion/route_d/frozen_predictions.json"
+          ],
+          "assessment": "Worked raw/expanded spelling, suffix, count and conditional-language cases show retained unknowns, dependencies and strongest rivals; detailed parses linked."
+        }
+      ]
+    },
+    {
+      "task": 52,
+      "title": "Close the orchestration state cleanly.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Scientific consolidation and shared-contract checks complete. Local research commit7bad5368 merged at3a3184ef; completed recovery branch deleted. Remote publication is separately tracked.",
+      "evidence": [
+        {
+          "path": "completion/README.md",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/audit/task_status.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/verification.json",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Merge useful research changes, resolve shared-contract mismatches, and remove finished temporary worktrees or branches.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/README.md",
+            "completion/audit/task_status.json",
+            "completion/verification.json"
+          ],
+          "assessment": "Scientific consolidation and shared-contract checks complete. Local research commit7bad5368 merged at3a3184ef; completed recovery branch deleted. Remote publication is separately tracked."
+        },
+        {
+          "clause": 2,
+          "text": "Preserve unrelated user work and the immutable source observations.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/README.md",
+            "completion/audit/task_status.json",
+            "completion/verification.json"
+          ],
+          "assessment": "Scientific consolidation and shared-contract checks complete. Local research commit7bad5368 merged at3a3184ef; completed recovery branch deleted. Remote publication is separately tracked."
+        },
+        {
+          "clause": 3,
+          "text": "Maintain one current campaign document linking to the evidence and code, with each task marked executed, unresolved, or blocked by a specific unavailable input.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/README.md",
+            "completion/audit/task_status.json",
+            "completion/verification.json"
+          ],
+          "assessment": "Scientific consolidation and shared-contract checks complete. Local research commit7bad5368 merged at3a3184ef; completed recovery branch deleted. Remote publication is separately tracked."
+        },
+        {
+          "clause": 4,
+          "text": "Do not claim a run occurred merely because its code exists.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/README.md",
+            "completion/audit/task_status.json",
+            "completion/verification.json"
+          ],
+          "assessment": "Scientific consolidation and shared-contract checks complete. Local research commit7bad5368 merged at3a3184ef; completed recovery branch deleted. Remote publication is separately tracked."
+        }
+      ]
+    },
+    {
+      "task": 53,
+      "title": "Continue from the strongest unresolved scientific question.",
+      "status": "executed_with_scientific_limits",
+      "assessment": "Selected retained-suffix experiment executed, active fitted models preserved, exact next executable scope diagnostic saved. Decipherment unresolved; no unattended work implied.",
+      "evidence": [
+        {
+          "path": "completion/route_c/retained_suffix_experiment.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/continuation.json",
+          "exists": true,
+          "origin": "reconstructed"
+        },
+        {
+          "path": "completion/next_order_comparison.py",
+          "exists": true,
+          "origin": "reconstructed"
+        }
+      ],
+      "clauses": [
+        {
+          "clause": 1,
+          "text": "Select the next discriminating experiment from Step 44 and keep all routes supplied with relevant findings.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/retained_suffix_experiment.json",
+            "completion/continuation.json",
+            "completion/next_order_comparison.py"
+          ],
+          "assessment": "Selected retained-suffix experiment executed, active fitted models preserved, exact next executable scope diagnostic saved. Decipherment unresolved; no unattended work implied."
+        },
+        {
+          "clause": 2,
+          "text": "A failed candidate ends that candidate, not the campaign.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/retained_suffix_experiment.json",
+            "completion/continuation.json",
+            "completion/next_order_comparison.py"
+          ],
+          "assessment": "Selected retained-suffix experiment executed, active fitted models preserved, exact next executable scope diagnostic saved. Decipherment unresolved; no unattended work implied."
+        },
+        {
+          "clause": 3,
+          "text": "Infrastructure completion is not scientific completion.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/retained_suffix_experiment.json",
+            "completion/continuation.json",
+            "completion/next_order_comparison.py"
+          ],
+          "assessment": "Selected retained-suffix experiment executed, active fitted models preserved, exact next executable scope diagnostic saved. Decipherment unresolved; no unattended work implied."
+        },
+        {
+          "clause": 4,
+          "text": "If execution must pause, save the exact active models, remaining alternatives, and next executable task without describing the decipherment as complete or implying that work continues unattended.",
+          "status": "executed_within_stated_scope",
+          "evidence_paths": [
+            "completion/route_c/retained_suffix_experiment.json",
+            "completion/continuation.json",
+            "completion/next_order_comparison.py"
+          ],
+          "assessment": "Selected retained-suffix experiment executed, active fitted models preserved, exact next executable scope diagnostic saved. Decipherment unresolved; no unattended work implied."
+        }
+      ]
+    }
+  ],
+  "task_count": 53,
+  "clause_count": 217,
+  "executed_tasks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53
+  ],
+  "pending_tasks": [],
+  "important": "Completion means listed finite research actions, not decipherment. Reconstructed executions are not exact recovery of lost bytes. Zero new readings were accepted; remote publication remains separately tracked."
+}

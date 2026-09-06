@@ -1,0 +1,7 @@
+# Reconstructed linguistic completion
+
+Eight systems were executed: Tamil, Sanskrit, anonymous language, and nonphonetic rivals, each in two orders. Named systems alternate latent word boundaries with a full reusable root/affix search across held dictionary extension edges. Root logograms, phonetic affixes, compound signs, and externally supplied numeric/classifier roles coexist. The global211 role is optimized against a silent-classifier alternative, whose extra8-bit code is explicit. Named models choose silent classifiers under this objective; supported phonetic alternatives are retained separately rather than discarded. Unknown signs remain unread, including70.
+
+The emitted factor is a conditional lexical prior, not a second likelihood for corpus text. The character code and dictionary membership penalty are explicit modeling choices; they do not identify an ancient language. Tamil source coverage is fish/star-selected and dramatically smaller than Sanskrit. No sound, lexical translation, or language identification was accepted.
+
+All six compact/expanded pairs and their whole-object companions were excluded before fitting. Frozen pair consistency is exported, not represented as phonetic accuracy. Constructed sound controls and held deciphered Linear B word-type diagnostics execute separately. Full lexical alphabet renaming confirms underdetermination of this objective. These are newly reconstructed outputs; old numerical results were not copied as if regenerated.

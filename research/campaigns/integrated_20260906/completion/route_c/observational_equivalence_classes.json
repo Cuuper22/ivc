@@ -1,0 +1,7108 @@
+{
+  "meaning": "Identical predictive distributions on held existing records only; not a claim of global mathematical equivalence.",
+  "classes": [
+    [
+      {
+        "kind": "independent"
+      }
+    ],
+    [
+      {
+        "kind": "categorical",
+        "field": "inscobj"
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "categorical",
+        "field": "count_pattern"
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "strokes",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_adjacent",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "strokes",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "strokes",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "categorical",
+        "field": "fish_pattern"
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "strokes",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "strokes",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "strokes",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "all",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "first_line",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "last_line",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "strokes",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      },
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "ordinal_shift",
+        "a": 0.5,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "roof_expanded",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 1,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "last",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "maximum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "sum",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": -1
+      }
+    ],
+    [
+      {
+        "kind": "categorical",
+        "field": "front"
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 0
+      }
+    ],
+    [
+      {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "product",
+        "value": "reverse_ordinal",
+        "a": 2,
+        "b": 1
+      }
+    ]
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "category_sizes": {
+    "fish": 259,
+    "bird": 451,
+    "tree": 542,
+    "animal": 203
+  },
+  "full_category_searches": [
+    {
+      "category": "fish",
+      "mode": "full_category",
+      "headword_count": 259,
+      "search": {
+        "append": {
+          "eligible_markers": 1,
+          "compatible_systems_exact": 360,
+          "markers": [
+            {
+              "marker": "ka",
+              "distinct_roots": 6,
+              "root_assignments": 360,
+              "minimum_same_description_cost": 33,
+              "roots": [
+                "cezwa",
+                "rAjIva",
+                "pallava",
+                "trikaRwa",
+                "daRqapAla",
+                "siMhatuRqa"
+              ]
+            }
+          ]
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "bird",
+      "mode": "full_category",
+      "headword_count": 451,
+      "search": {
+        "append": {
+          "eligible_markers": 1,
+          "compatible_systems_exact": 840,
+          "markers": [
+            {
+              "marker": "ka",
+              "distinct_roots": 7,
+              "root_assignments": 840,
+              "minimum_same_description_cost": 30,
+              "roots": [
+                "nIqa",
+                "SArNga",
+                "Sakuna",
+                "durbali",
+                "vaYjula",
+                "pariqIna",
+                "pratyulUka"
+              ]
+            }
+          ]
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "tree",
+      "mode": "full_category",
+      "headword_count": 542,
+      "search": {
+        "append": {
+          "eligible_markers": 3,
+          "compatible_systems_exact": 11928,
+          "markers": [
+            {
+              "marker": "ka",
+              "distinct_roots": 12,
+              "root_assignments": 11880,
+              "minimum_same_description_cost": 24,
+              "roots": [
+                "kuwa",
+                "pIlu",
+                "pilu",
+                "muRqa",
+                "pUrRa",
+                "siDra",
+                "vaNga",
+                "rohita",
+                "viwapa",
+                "girimAla",
+                "vasuhawwa",
+                "SvetamandAra"
+              ]
+            },
+            {
+              "marker": "ja",
+              "distinct_roots": 4,
+              "root_assignments": 24,
+              "minimum_same_description_cost": 25,
+              "roots": [
+                "aga",
+                "taru",
+                "vfkza",
+                "skanDa"
+              ]
+            },
+            {
+              "marker": "pa",
+              "distinct_roots": 4,
+              "root_assignments": 24,
+              "minimum_same_description_cost": 27,
+              "roots": [
+                "pAda",
+                "aMhri",
+                "aNGri",
+                "caraRa"
+              ]
+            }
+          ]
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    },
+    {
+      "category": "animal",
+      "mode": "full_category",
+      "headword_count": 203,
+      "search": {
+        "append": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        },
+        "prepend": {
+          "eligible_markers": 0,
+          "compatible_systems_exact": 0,
+          "markers": []
+        }
+      }
+    }
+  ],
+  "matched_summary": {
+    "bird": {
+      "runs": 16,
+      "runs_with_append_ka": 5
+    },
+    "tree": {
+      "runs": 16,
+      "runs_with_append_ka": 5
+    },
+    "animal": {
+      "runs": 0,
+      "runs_with_append_ka": 0
+    }
+  }
+}

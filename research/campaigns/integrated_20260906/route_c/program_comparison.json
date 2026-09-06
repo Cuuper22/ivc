@@ -1,0 +1,176 @@
+[
+  {
+    "program": "nonnumerical_constant_three",
+    "observations": 11,
+    "parameters": 0,
+    "fit_nll_nats": 13.007384439930867,
+    "approximate_bic_sensitivity_nats": 13.007384439930867,
+    "complexity_warning": "Approximate NLL+k*log(n)/2 sensitivity only; finite grid/rule selection costs are not a matched MDL code. No promotion uses this score.",
+    "a": 0.0,
+    "b": 3.0,
+    "interpretation": "Post-hoc fixed3 comparator, chosen to expose zero-slope affine equivalence; not a prospectively selected baseline win.",
+    "pair_recombination": {
+      "correct": 5,
+      "n": 11,
+      "mean_nll_nats": 1.18248949453917
+    },
+    "unseen_descriptor_family": {
+      "correct": 5,
+      "n": 11,
+      "mean_nll_nats": 1.18248949453917
+    }
+  },
+  {
+    "program": "nonnumerical_fitted_constant",
+    "observations": 11,
+    "parameters": 1,
+    "fit_nll_nats": 13.007384439930867,
+    "approximate_bic_sensitivity_nats": 14.206332076330053,
+    "complexity_warning": "Approximate NLL+k*log(n)/2 sensitivity only; finite grid/rule selection costs are not a matched MDL code. No promotion uses this score.",
+    "a": 0.0,
+    "b": 3.0,
+    "pair_recombination": {
+      "correct": 5,
+      "n": 11,
+      "mean_nll_nats": 1.18248949453917
+    },
+    "unseen_descriptor_family": {
+      "correct": 5,
+      "n": 11,
+      "mean_nll_nats": 1.18248949453917
+    }
+  },
+  {
+    "program": "arithmetic_equal",
+    "observations": 11,
+    "parameters": 0,
+    "fit_nll_nats": 21.103443936462355,
+    "approximate_bic_sensitivity_nats": 21.103443936462355,
+    "complexity_warning": "Approximate NLL+k*log(n)/2 sensitivity only; finite grid/rule selection costs are not a matched MDL code. No promotion uses this score.",
+    "a": 1.0,
+    "b": 0.0,
+    "pair_recombination": {
+      "correct": 3,
+      "n": 11,
+      "mean_nll_nats": 1.9184949033147596
+    },
+    "unseen_descriptor_family": {
+      "correct": 3,
+      "n": 11,
+      "mean_nll_nats": 1.9184949033147596
+    }
+  },
+  {
+    "program": "arithmetic_multiplier",
+    "observations": 11,
+    "parameters": 1,
+    "fit_nll_nats": 21.103443936462355,
+    "approximate_bic_sensitivity_nats": 22.30239157286154,
+    "complexity_warning": "Approximate NLL+k*log(n)/2 sensitivity only; finite grid/rule selection costs are not a matched MDL code. No promotion uses this score.",
+    "a": 1.0,
+    "b": 0.0,
+    "pair_recombination": {
+      "correct": 3,
+      "n": 11,
+      "mean_nll_nats": 1.9184949033147596
+    },
+    "unseen_descriptor_family": {
+      "correct": 3,
+      "n": 11,
+      "mean_nll_nats": 1.9184949033147596
+    }
+  },
+  {
+    "program": "arithmetic_affine",
+    "observations": 11,
+    "parameters": 2,
+    "fit_nll_nats": 13.007384439930867,
+    "approximate_bic_sensitivity_nats": 15.405279712729238,
+    "complexity_warning": "Approximate NLL+k*log(n)/2 sensitivity only; finite grid/rule selection costs are not a matched MDL code. No promotion uses this score.",
+    "a": 0.0,
+    "b": 3.0,
+    "interpretation": "Fitted slope zero: input-independent smooth category prediction, no inferred arithmetic relation.",
+    "pair_recombination": {
+      "correct": 5,
+      "n": 11,
+      "mean_nll_nats": 1.2739126058767083
+    },
+    "unseen_descriptor_family": {
+      "correct": 5,
+      "n": 11,
+      "mean_nll_nats": 1.2739126058767083
+    }
+  },
+  {
+    "program": "categorical_global",
+    "observations": 11,
+    "parameters": 4,
+    "fit_nll_nats": 12.25695502784269,
+    "approximate_bic_sensitivity_nats": 17.05274557343943,
+    "complexity_warning": "Approximate NLL+k*log(n)/2 sensitivity only; finite grid/rule selection costs are not a matched MDL code. No promotion uses this score.",
+    "pair_recombination": {
+      "correct": 0,
+      "n": 11,
+      "mean_nll_nats": 1.312786001210149
+    },
+    "unseen_descriptor_family": {
+      "correct": 1,
+      "n": 11,
+      "mean_nll_nats": 1.2976257086757759
+    }
+  },
+  {
+    "program": "categorical_count",
+    "observations": 11,
+    "parameters": 16,
+    "fit_nll_nats": 10.70716872174374,
+    "approximate_bic_sensitivity_nats": 29.890330904130707,
+    "complexity_warning": "Approximate NLL+k*log(n)/2 sensitivity only; finite grid/rule selection costs are not a matched MDL code. No promotion uses this score.",
+    "pair_recombination": {
+      "correct": 2,
+      "n": 11,
+      "mean_nll_nats": 1.3876082605978453
+    },
+    "unseen_descriptor_family": {
+      "correct": 3,
+      "n": 11,
+      "mean_nll_nats": 1.3648513255152988
+    }
+  },
+  {
+    "program": "categorical_class_count",
+    "observations": 11,
+    "parameters": 20,
+    "fit_nll_nats": 9.041286080971267,
+    "approximate_bic_sensitivity_nats": 33.02023880895497,
+    "complexity_warning": "Approximate NLL+k*log(n)/2 sensitivity only; finite grid/rule selection costs are not a matched MDL code. No promotion uses this score.",
+    "pair_recombination": {
+      "correct": 2,
+      "n": 11,
+      "mean_nll_nats": 1.2545238364541942
+    },
+    "unseen_descriptor_family": {
+      "correct": 3,
+      "n": 11,
+      "mean_nll_nats": 1.2285055012467991
+    }
+  },
+  {
+    "program": "categorical_front",
+    "observations": 11,
+    "parameters": 40,
+    "fit_nll_nats": 9.822905320821052,
+    "approximate_bic_sensitivity_nats": 57.780810776788464,
+    "complexity_warning": "Approximate NLL+k*log(n)/2 sensitivity only; finite grid/rule selection costs are not a matched MDL code. No promotion uses this score.",
+    "pair_recombination": {
+      "correct": 0,
+      "n": 11,
+      "mean_nll_nats": 1.457986308007036
+    },
+    "unseen_descriptor_family": {
+      "correct": 1,
+      "n": 11,
+      "mean_nll_nats": 1.2976257086757759
+    }
+  }
+]

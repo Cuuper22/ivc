@@ -1,0 +1,980 @@
+{
+  "status": "reconstructed; no promotion",
+  "candidates": [
+    {
+      "id": "REC-RA-identity",
+      "route": "A",
+      "status": "provisional",
+      "claim_type": "structural_constraint",
+      "rule": {
+        "executable": "grammar.transform",
+        "program": "identity",
+        "grammar": "grammar.fit",
+        "roles": 1
+      },
+      "namespace": "Mahadevan1977",
+      "context": "stored source order; raw signs normalized; expression-family weight1",
+      "prerequisites": [
+        "declared graphical pairs are proposed correspondences, not accepted readings"
+      ],
+      "support": {
+        "new_training_data_bits": 49739.03949028434,
+        "new_training_total_bits": 52412.89261890481,
+        "prior_alignment_evidence": "../../route_a/structured_alignments.json"
+      },
+      "contradictions": [
+        "No independent semantic anchor validates equal readings",
+        "Scope of before/after marker remains conditional"
+      ],
+      "alternatives": [
+        "independent raw signs",
+        "categorical slot convention",
+        "semantic distinction",
+        "phonetic addition",
+        "grammar operation with unanchored meaning"
+      ],
+      "parameters": {
+        "roles": 1,
+        "model": "full_models.json"
+      },
+      "complexity": {
+        "parameter_bits": 2673.853128620466,
+        "rule_bits": 0
+      },
+      "predictions": [
+        "Transform modified signs using one shared named program; compare exact retained alignment evidence and frozen joint predictions."
+      ],
+      "source_paths": [
+        "../../shared/observations.jsonl",
+        "../../shared/graphical_hypotheses.json"
+      ],
+      "prior_exposure": "retrospective frozen corpus previously inspected; newly reconstructed fitting, not recovered exact lost results",
+      "reconstruction_origin": "rerun or explicitly retained prior conditional hypothesis"
+    },
+    {
+      "id": "REC-RA-tick388-after",
+      "route": "A",
+      "status": "conditional",
+      "claim_type": "graphical_equivalence",
+      "rule": {
+        "executable": "grammar.transform",
+        "program": "tick388-after",
+        "grammar": "grammar.fit",
+        "roles": 1
+      },
+      "namespace": "Mahadevan1977",
+      "context": "stored source order; raw signs normalized; expression-family weight1",
+      "prerequisites": [
+        "declared graphical pairs are proposed correspondences, not accepted readings"
+      ],
+      "support": {
+        "new_training_data_bits": 49760.76012676657,
+        "new_training_total_bits": 52413.17950116455,
+        "prior_alignment_evidence": "../../route_a/structured_alignments.json"
+      },
+      "contradictions": [
+        "No independent semantic anchor validates equal readings",
+        "Scope of before/after marker remains conditional"
+      ],
+      "alternatives": [
+        "independent raw signs",
+        "categorical slot convention",
+        "semantic distinction",
+        "phonetic addition",
+        "grammar operation with unanchored meaning"
+      ],
+      "parameters": {
+        "roles": 1,
+        "model": "full_models.json"
+      },
+      "complexity": {
+        "parameter_bits": 2641.7154708245466,
+        "rule_bits": 10.703903573444663
+      },
+      "predictions": [
+        "Transform modified signs using one shared named program; compare exact retained alignment evidence and frozen joint predictions."
+      ],
+      "source_paths": [
+        "../../shared/observations.jsonl",
+        "../../shared/graphical_hypotheses.json"
+      ],
+      "prior_exposure": "retrospective frozen corpus previously inspected; newly reconstructed fitting, not recovered exact lost results",
+      "reconstruction_origin": "rerun or explicitly retained prior conditional hypothesis"
+    },
+    {
+      "id": "REC-RA-roof87_tick211",
+      "route": "A",
+      "status": "conditional",
+      "claim_type": "graphical_equivalence",
+      "rule": {
+        "executable": "grammar.transform",
+        "program": "roof87_tick211",
+        "grammar": "grammar.fit",
+        "roles": 1
+      },
+      "namespace": "Mahadevan1977",
+      "context": "stored source order; raw signs normalized; expression-family weight1",
+      "prerequisites": [
+        "declared graphical pairs are proposed correspondences, not accepted readings"
+      ],
+      "support": {
+        "new_training_data_bits": 49866.02903781813,
+        "new_training_total_bits": 52522.724784230384,
+        "prior_alignment_evidence": "../../route_a/structured_alignments.json"
+      },
+      "contradictions": [
+        "No independent semantic anchor validates equal readings",
+        "Scope of before/after marker remains conditional"
+      ],
+      "alternatives": [
+        "independent raw signs",
+        "categorical slot convention",
+        "semantic distinction",
+        "phonetic addition",
+        "grammar operation with unanchored meaning"
+      ],
+      "parameters": {
+        "roles": 1,
+        "model": "full_models.json"
+      },
+      "complexity": {
+        "parameter_bits": 2635.287939265363,
+        "rule_bits": 21.407807146889326
+      },
+      "predictions": [
+        "Transform modified signs using one shared named program; compare exact retained alignment evidence and frozen joint predictions."
+      ],
+      "source_paths": [
+        "../../shared/observations.jsonl",
+        "../../shared/graphical_hypotheses.json"
+      ],
+      "prior_exposure": "retrospective frozen corpus previously inspected; newly reconstructed fitting, not recovered exact lost results",
+      "reconstruction_origin": "rerun or explicitly retained prior conditional hypothesis"
+    },
+    {
+      "id": "REC-RA-tick211-before",
+      "route": "A",
+      "status": "conditional",
+      "claim_type": "graphical_equivalence",
+      "rule": {
+        "executable": "grammar.transform",
+        "program": "tick211-before",
+        "grammar": "grammar.fit",
+        "roles": 1
+      },
+      "namespace": "Mahadevan1977",
+      "context": "stored source order; raw signs normalized; expression-family weight1",
+      "prerequisites": [
+        "declared graphical pairs are proposed correspondences, not accepted readings"
+      ],
+      "support": {
+        "new_training_data_bits": 49874.7692569631,
+        "new_training_total_bits": 52527.18863136109,
+        "prior_alignment_evidence": "../../route_a/structured_alignments.json"
+      },
+      "contradictions": [
+        "No independent semantic anchor validates equal readings",
+        "Scope of before/after marker remains conditional"
+      ],
+      "alternatives": [
+        "independent raw signs",
+        "categorical slot convention",
+        "semantic distinction",
+        "phonetic addition",
+        "grammar operation with unanchored meaning"
+      ],
+      "parameters": {
+        "roles": 1,
+        "model": "full_models.json"
+      },
+      "complexity": {
+        "parameter_bits": 2641.7154708245466,
+        "rule_bits": 10.703903573444663
+      },
+      "predictions": [
+        "Transform modified signs using one shared named program; compare exact retained alignment evidence and frozen joint predictions."
+      ],
+      "source_paths": [
+        "../../shared/observations.jsonl",
+        "../../shared/graphical_hypotheses.json"
+      ],
+      "prior_exposure": "retrospective frozen corpus previously inspected; newly reconstructed fitting, not recovered exact lost results",
+      "reconstruction_origin": "rerun or explicitly retained prior conditional hypothesis"
+    },
+    {
+      "id": "REC-B-COFACE-363",
+      "route": "B",
+      "status": "underdetermined",
+      "claim_type": "structural_constraint",
+      "rule": "The short363 is paired with two long expression families. Their picture-linked copies involve different raw codes139 and520; do not equate each pairing with a specific pictured referent.",
+      "namespace": "Mahadevan1977",
+      "context": "Copper tablets; whole faces; exact catalogue readings",
+      "prerequisites": [
+        "Catalogue distinction362/363",
+        "Paired faces correctly assigned",
+        "Raw motif families139 and520 actually pictorially distinct"
+      ],
+      "support": [
+        "M77:2901:10",
+        "M77:2901:20",
+        "M77:3360:10",
+        "M77:3360:20",
+        "M77:3414:10",
+        "M77:3414:20",
+        "M77:3373:10",
+        "M77:3373:29",
+        "M77:2914:10",
+        "M77:2914:29"
+      ],
+      "contradictions": [],
+      "alternatives": [
+        "Broad shared referent",
+        "Shared category or authority plus variable description",
+        "Production grouping",
+        "One questionable catalogue short sign"
+      ],
+      "parameters": 2,
+      "complexity": {
+        "lookup_entries": 2
+      },
+      "predictions": [
+        "A universal363=one specific depicted species predicts equal species across the two long families and fails under distinct-species decoding."
+      ],
+      "source_paths": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl",
+        "research/campaigns/integrated_20260906/evidence_inventory/recovered/Parpola_2008_copper.pdf"
+      ],
+      "prior_exposure": "Retrospective constrained search; source corpus and defining examples already exposed.",
+      "reconstruction_origin": "rerun or explicitly retained prior conditional hypothesis"
+    },
+    {
+      "id": "REC-B-358-LITERAL",
+      "route": "B",
+      "status": "rejected",
+      "claim_type": "lexical_meaning",
+      "rule": "Universal358=the copper145/147 pictorial category, preserved in every construction.",
+      "namespace": "Mahadevan1977",
+      "context": "All containing inscriptions, including copper-to-seal transfer",
+      "prerequisites": [
+        "Direct literal text-picture relation",
+        "145/147 represent a common category distinct from13"
+      ],
+      "support": [
+        "M77:1708:10",
+        "M77:1712:10",
+        "M77:1804:10",
+        "M77:1806:10",
+        "M77:2909:10",
+        "M77:2915:10",
+        "M77:3306:10",
+        "M77:3314:10",
+        "M77:3339:10",
+        "M77:3341:10",
+        "M77:3342:10",
+        "M77:3353:10",
+        "M77:3359:10",
+        "M77:3361:10",
+        "M77:3371:10",
+        "M77:3379:10",
+        "M77:3386:10",
+        "M77:3404:10"
+      ],
+      "contradictions": [
+        "M77:1066:0",
+        "M77:2396:0",
+        "M77:3154:0",
+        "M77:4030:0",
+        "M77:4105:0",
+        "M77:7244:0"
+      ],
+      "alternatives": [
+        "Copper-specific label",
+        "Documentary field unrelated to animal",
+        "Same designation accompanied by different emblems"
+      ],
+      "parameters": 1,
+      "complexity": {
+        "lookup_entries": 1
+      },
+      "predictions": [
+        {
+          "target": "M77:7244:0",
+          "predicted_raw_fs80": [
+            145,
+            147
+          ],
+          "observed_raw_fs80": 13
+        }
+      ],
+      "source_paths": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ],
+      "prior_exposure": "Retrospective constrained search; source corpus and defining examples already exposed.",
+      "reconstruction_origin": "rerun or explicitly retained prior conditional hypothesis"
+    },
+    {
+      "id": "REC-B-LATENT-CATEGORY",
+      "route": "B",
+      "status": "underdetermined",
+      "claim_type": "structural_constraint",
+      "rule": "A fitted anonymous category linking text families to pictures can be renamed as a production-group category with identical likelihood and parameter count.",
+      "namespace": "Mahadevan1977",
+      "context": "Latent categorical models with no independent documented production-group observations",
+      "prerequisites": [],
+      "support": [
+        "copper_referent_competition.json"
+      ],
+      "contradictions": [],
+      "alternatives": [
+        "Literal/category meaning",
+        "Production context",
+        "Complementary documentary fields"
+      ],
+      "parameters": 0,
+      "complexity": {
+        "lookup_entries": 0
+      },
+      "predictions": [
+        "An independent production indicator or transferable component relation is required to distinguish these particular rivals."
+      ],
+      "source_paths": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ],
+      "prior_exposure": "Retrospective constrained search; source corpus and defining examples already exposed.",
+      "reconstruction_origin": "rerun or explicitly retained prior conditional hypothesis"
+    },
+    {
+      "id": "REC-B-COPPER-LITERAL-PICTURE",
+      "route": "B",
+      "status": "rejected",
+      "claim_type": "lexical_meaning",
+      "rule": "Every complete copper text names exactly the animal species depicted on its object.",
+      "namespace": "Mahadevan1977",
+      "context": "Literal species model, not a broader deity/category designation",
+      "prerequisites": [
+        "Literal species naming",
+        "Parpola2008 B6/B12 text identity and different pictorial species"
+      ],
+      "support": [
+        "M77:3328:10",
+        "M77:3336:10",
+        "M77:3368:10"
+      ],
+      "contradictions": [
+        "M77:1704:20"
+      ],
+      "alternatives": [
+        "The same deity or category represented in multiple forms",
+        "Complementary fields",
+        "Production context"
+      ],
+      "parameters": 1,
+      "complexity": {
+        "lookup_entries": 1
+      },
+      "predictions": [
+        {
+          "target": "M77:1704:20",
+          "text_stored": [
+            "336",
+            "89",
+            "296",
+            "342",
+            "98"
+          ],
+          "predicted": "elephant",
+          "observed": "horned tiger; text appears on the same face as the animal"
+        }
+      ],
+      "source_paths": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl",
+        "research/campaigns/integrated_20260906/evidence_inventory/recovered/Parpola_2008_copper.pdf"
+      ],
+      "prior_exposure": "Retrospective constrained search; source corpus and defining examples already exposed.",
+      "reconstruction_origin": "rerun or explicitly retained prior conditional hypothesis"
+    },
+    {
+      "id": "REC-B-REPRESENTATION-CHANNEL",
+      "route": "B",
+      "status": "supported_scope_limited",
+      "claim_type": "structural_constraint",
+      "rule": "In the published typology, shape classB predicts picture-only reverse, classesA/C text-only reverse:37 of44 legible reconstructed types fit; same long fields link alternative reverse channels.",
+      "namespace": "Mahadevan1977",
+      "context": "Parpola2008 reconstructed copper types only; descriptive contextual prediction, not new semantic decipherment",
+      "prerequisites": [
+        "Only shape-level A/B/C variables used; full type labels would leak text and pictures",
+        "Author reconstructed types correctly grouped"
+      ],
+      "support": [
+        "Parpola2008:A2",
+        "Parpola2008:C4a",
+        "Parpola2008:B5",
+        "Parpola2008:A11",
+        "Parpola2008:B19",
+        "Parpola2008:C6"
+      ],
+      "contradictions": [
+        "Parpola2008:A1a",
+        "Parpola2008:A1b",
+        "Parpola2008:A2",
+        "Parpola2008:A3a",
+        "Parpola2008:A3b",
+        "Parpola2008:B12",
+        "Parpola2008:C1"
+      ],
+      "alternatives": [
+        "Production conventions",
+        "Semantically related alternative representations",
+        "Complementary documentary fields"
+      ],
+      "parameters": 3,
+      "complexity": {
+        "lookup_entries": 3
+      },
+      "predictions": [
+        {
+          "rule": {
+            "A": "text",
+            "B": "picture",
+            "C": "text"
+          },
+          "correct_types": 37,
+          "scored_types": 44,
+          "constant_baseline_correct": 26
+        }
+      ],
+      "source_paths": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl",
+        "research/campaigns/integrated_20260906/evidence_inventory/recovered/Parpola_2008_copper.pdf"
+      ],
+      "prior_exposure": "Retrospective constrained search; source corpus and defining examples already exposed.",
+      "reconstruction_origin": "rerun or explicitly retained prior conditional hypothesis"
+    },
+    {
+      "id": "REC-B-THREE-FIELDS",
+      "route": "B",
+      "status": "conditional",
+      "claim_type": "structural_constraint",
+      "rule": "Objects4581 and4591 preserve the same four-stroke cup face and same doubtful middle expression while their short first faces differ137 versus59.",
+      "namespace": "Mahadevan1977",
+      "context": "Two three-faced miniature tablets; doubtful119 retained",
+      "prerequisites": [
+        "Doubtful middle119 does not conceal a semantic difference",
+        "Catalogue face assignments"
+      ],
+      "support": [
+        "M77:4581:10",
+        "M77:4581:20",
+        "M77:4581:30",
+        "M77:4591:10",
+        "M77:4591:20",
+        "M77:4591:30"
+      ],
+      "contradictions": [],
+      "alternatives": [
+        "Complementary category selector",
+        "Two spellings",
+        "Distinct quantities with missing units",
+        "Production context"
+      ],
+      "parameters": 0,
+      "complexity": {
+        "lookup_entries": 0
+      },
+      "predictions": [
+        "Any deterministic middle+cup→short model needs an exception or another observed variable."
+      ],
+      "source_paths": [
+        "research/data/mahadevan_20260905/concordance_documents.json.gz",
+        "research/campaigns/integrated_20260906/shared/observations.jsonl"
+      ],
+      "prior_exposure": "Retrospective constrained search; source corpus and defining examples already exposed.",
+      "reconstruction_origin": "rerun or explicitly retained prior conditional hypothesis"
+    },
+    {
+      "id": "REC-C-PROGRAM-FAMILY",
+      "route": "C",
+      "status": "conditional",
+      "claim_type": "operational_meaning",
+      "rule": "Finite joint field/value/operator program family; each parameter setting and outcome retained in program_search.json",
+      "namespace": "Mahadevan1977",
+      "context": "Retrospective frozen catalogue; object/copy exclusions; separate source namespaces",
+      "prerequisites": [
+        "candidate numerical field and value interpretation"
+      ],
+      "support": [
+        "completion/route_c/program_search.json",
+        "completion/route_c/frozen_predictions.json",
+        "completion/route_c/observational_equivalence_classes.json"
+      ],
+      "contradictions": [
+        "Independent reverse-count distribution wins reconstructed comparison; no physical unit or number meaning identified"
+      ],
+      "alternatives": [
+        "independent categorical description",
+        "unanchored latent class relabeling"
+      ],
+      "parameters": {
+        "programs": 815
+      },
+      "complexity": "Explicit parameter and finite program penalties retained in source models",
+      "predictions": [
+        "completion/route_c/program_search.json",
+        "completion/route_c/frozen_predictions.json",
+        "completion/route_c/observational_equivalence_classes.json"
+      ],
+      "source_paths": [
+        "completion/route_c/program_search.json",
+        "completion/route_c/frozen_predictions.json",
+        "completion/route_c/observational_equivalence_classes.json"
+      ],
+      "prior_exposure": "entire corpus and earlier results already inspected; no pristine blind claim"
+    },
+    {
+      "id": "REC-C-SUFFIX-SCOPE",
+      "route": "C",
+      "status": "conditional",
+      "claim_type": "structural_constraint",
+      "rule": "Retained suffix remains compatible with local and larger-field scope",
+      "namespace": "Mahadevan1977",
+      "context": "Retrospective frozen catalogue; object/copy exclusions; separate source namespaces",
+      "prerequisites": [
+        "conditional roof87 graphical operation"
+      ],
+      "support": [
+        "completion/route_c/retained_suffix_experiment.json"
+      ],
+      "contradictions": [
+        "unknown prefix in2275 cannot be completed; no independently identified scope"
+      ],
+      "alternatives": [
+        "independent categorical description",
+        "unanchored latent class relabeling"
+      ],
+      "parameters": {},
+      "complexity": "Explicit parameter and finite program penalties retained in source models",
+      "predictions": [
+        "completion/route_c/retained_suffix_experiment.json"
+      ],
+      "source_paths": [
+        "completion/route_c/retained_suffix_experiment.json"
+      ],
+      "prior_exposure": "entire corpus and earlier results already inspected; no pristine blind claim"
+    },
+    {
+      "id": "REC-D-tamil-append",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "language": "tamil",
+        "orientation": "append",
+        "executable": "completion/route_d/run_completion_d.py"
+      },
+      "namespace": "Mahadevan1977",
+      "context": "Retrospective frozen catalogue; object/copy exclusions; separate source namespaces",
+      "prerequisites": [
+        "conditional graphical pairs",
+        "available comparative vocabulary",
+        "no positive independent semantic anchor"
+      ],
+      "support": [
+        "completion/route_d/tamil_append.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "contradictions": [
+        "symbol renaming does not identify sounds",
+        "silent classifier role can beat phonetic role",
+        "unread70 remains unresolved"
+      ],
+      "alternatives": [
+        "independent categorical description",
+        "unanchored latent class relabeling"
+      ],
+      "parameters": {
+        "59": "mīṉ",
+        "65": "mīṉ",
+        "67": "mīṉ",
+        "72": "mīṉ",
+        "211": "",
+        "60": "mīṉ",
+        "66": "mīṉ",
+        "68": "mīṉ",
+        "73": "mīṉ"
+      },
+      "complexity": "Explicit parameter and finite program penalties retained in source models",
+      "predictions": [
+        "completion/route_d/tamil_append.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "source_paths": [
+        "completion/route_d/tamil_append.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "prior_exposure": "entire corpus and earlier results already inspected; no pristine blind claim"
+    },
+    {
+      "id": "REC-D-tamil-prepend",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "language": "tamil",
+        "orientation": "prepend",
+        "executable": "completion/route_d/run_completion_d.py"
+      },
+      "namespace": "Mahadevan1977",
+      "context": "Retrospective frozen catalogue; object/copy exclusions; separate source namespaces",
+      "prerequisites": [
+        "conditional graphical pairs",
+        "available comparative vocabulary",
+        "no positive independent semantic anchor"
+      ],
+      "support": [
+        "completion/route_d/tamil_prepend.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "contradictions": [
+        "symbol renaming does not identify sounds",
+        "silent classifier role can beat phonetic role",
+        "unread70 remains unresolved"
+      ],
+      "alternatives": [
+        "independent categorical description",
+        "unanchored latent class relabeling"
+      ],
+      "parameters": {
+        "59": "mīṉ",
+        "65": "mīṉ",
+        "67": "mīṉ",
+        "72": "mīṉ",
+        "211": "",
+        "60": "mīṉ",
+        "66": "mīṉ",
+        "68": "mīṉ",
+        "73": "mīṉ"
+      },
+      "complexity": "Explicit parameter and finite program penalties retained in source models",
+      "predictions": [
+        "completion/route_d/tamil_prepend.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "source_paths": [
+        "completion/route_d/tamil_prepend.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "prior_exposure": "entire corpus and earlier results already inspected; no pristine blind claim"
+    },
+    {
+      "id": "REC-D-sanskrit-append",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "language": "sanskrit",
+        "orientation": "append",
+        "executable": "completion/route_d/run_completion_d.py"
+      },
+      "namespace": "Mahadevan1977",
+      "context": "Retrospective frozen catalogue; object/copy exclusions; separate source namespaces",
+      "prerequisites": [
+        "conditional graphical pairs",
+        "available comparative vocabulary",
+        "no positive independent semantic anchor"
+      ],
+      "support": [
+        "completion/route_d/sanskrit_append.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "contradictions": [
+        "symbol renaming does not identify sounds",
+        "silent classifier role can beat phonetic role",
+        "unread70 remains unresolved"
+      ],
+      "alternatives": [
+        "independent categorical description",
+        "unanchored latent class relabeling"
+      ],
+      "parameters": {
+        "59": "A",
+        "65": "A",
+        "67": "A",
+        "72": "A",
+        "211": "",
+        "60": "A",
+        "66": "A",
+        "68": "A",
+        "73": "A"
+      },
+      "complexity": "Explicit parameter and finite program penalties retained in source models",
+      "predictions": [
+        "completion/route_d/sanskrit_append.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "source_paths": [
+        "completion/route_d/sanskrit_append.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "prior_exposure": "entire corpus and earlier results already inspected; no pristine blind claim"
+    },
+    {
+      "id": "REC-D-sanskrit-prepend",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "language": "sanskrit",
+        "orientation": "prepend",
+        "executable": "completion/route_d/run_completion_d.py"
+      },
+      "namespace": "Mahadevan1977",
+      "context": "Retrospective frozen catalogue; object/copy exclusions; separate source namespaces",
+      "prerequisites": [
+        "conditional graphical pairs",
+        "available comparative vocabulary",
+        "no positive independent semantic anchor"
+      ],
+      "support": [
+        "completion/route_d/sanskrit_prepend.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "contradictions": [
+        "symbol renaming does not identify sounds",
+        "silent classifier role can beat phonetic role",
+        "unread70 remains unresolved"
+      ],
+      "alternatives": [
+        "independent categorical description",
+        "unanchored latent class relabeling"
+      ],
+      "parameters": {
+        "59": "A",
+        "65": "A",
+        "67": "A",
+        "72": "A",
+        "211": "",
+        "60": "A",
+        "66": "A",
+        "68": "A",
+        "73": "A"
+      },
+      "complexity": "Explicit parameter and finite program penalties retained in source models",
+      "predictions": [
+        "completion/route_d/sanskrit_prepend.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "source_paths": [
+        "completion/route_d/sanskrit_prepend.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "prior_exposure": "entire corpus and earlier results already inspected; no pristine blind claim"
+    },
+    {
+      "id": "REC-D-anonymous-append",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "language": "anonymous",
+        "orientation": "append",
+        "executable": "completion/route_d/run_completion_d.py"
+      },
+      "namespace": "Mahadevan1977",
+      "context": "Retrospective frozen catalogue; object/copy exclusions; separate source namespaces",
+      "prerequisites": [
+        "conditional graphical pairs",
+        "available comparative vocabulary",
+        "no positive independent semantic anchor"
+      ],
+      "support": [
+        "completion/route_d/anonymous_append.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "contradictions": [
+        "symbol renaming does not identify sounds",
+        "silent classifier role can beat phonetic role",
+        "unread70 remains unresolved"
+      ],
+      "alternatives": [
+        "independent categorical description",
+        "unanchored latent class relabeling"
+      ],
+      "parameters": {},
+      "complexity": "Explicit parameter and finite program penalties retained in source models",
+      "predictions": [
+        "completion/route_d/anonymous_append.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "source_paths": [
+        "completion/route_d/anonymous_append.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "prior_exposure": "entire corpus and earlier results already inspected; no pristine blind claim"
+    },
+    {
+      "id": "REC-D-anonymous-prepend",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "language": "anonymous",
+        "orientation": "prepend",
+        "executable": "completion/route_d/run_completion_d.py"
+      },
+      "namespace": "Mahadevan1977",
+      "context": "Retrospective frozen catalogue; object/copy exclusions; separate source namespaces",
+      "prerequisites": [
+        "conditional graphical pairs",
+        "available comparative vocabulary",
+        "no positive independent semantic anchor"
+      ],
+      "support": [
+        "completion/route_d/anonymous_prepend.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "contradictions": [
+        "symbol renaming does not identify sounds",
+        "silent classifier role can beat phonetic role",
+        "unread70 remains unresolved"
+      ],
+      "alternatives": [
+        "independent categorical description",
+        "unanchored latent class relabeling"
+      ],
+      "parameters": {},
+      "complexity": "Explicit parameter and finite program penalties retained in source models",
+      "predictions": [
+        "completion/route_d/anonymous_prepend.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "source_paths": [
+        "completion/route_d/anonymous_prepend.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "prior_exposure": "entire corpus and earlier results already inspected; no pristine blind claim"
+    },
+    {
+      "id": "REC-D-nonphonetic-append",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "language": "nonphonetic",
+        "orientation": "append",
+        "executable": "completion/route_d/run_completion_d.py"
+      },
+      "namespace": "Mahadevan1977",
+      "context": "Retrospective frozen catalogue; object/copy exclusions; separate source namespaces",
+      "prerequisites": [
+        "conditional graphical pairs",
+        "available comparative vocabulary",
+        "no positive independent semantic anchor"
+      ],
+      "support": [
+        "completion/route_d/nonphonetic_append.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "contradictions": [
+        "symbol renaming does not identify sounds",
+        "silent classifier role can beat phonetic role",
+        "unread70 remains unresolved"
+      ],
+      "alternatives": [
+        "independent categorical description",
+        "unanchored latent class relabeling"
+      ],
+      "parameters": {},
+      "complexity": "Explicit parameter and finite program penalties retained in source models",
+      "predictions": [
+        "completion/route_d/nonphonetic_append.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "source_paths": [
+        "completion/route_d/nonphonetic_append.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "prior_exposure": "entire corpus and earlier results already inspected; no pristine blind claim"
+    },
+    {
+      "id": "REC-D-nonphonetic-prepend",
+      "route": "D",
+      "status": "conditional",
+      "claim_type": "sound_assignment",
+      "rule": {
+        "language": "nonphonetic",
+        "orientation": "prepend",
+        "executable": "completion/route_d/run_completion_d.py"
+      },
+      "namespace": "Mahadevan1977",
+      "context": "Retrospective frozen catalogue; object/copy exclusions; separate source namespaces",
+      "prerequisites": [
+        "conditional graphical pairs",
+        "available comparative vocabulary",
+        "no positive independent semantic anchor"
+      ],
+      "support": [
+        "completion/route_d/nonphonetic_prepend.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "contradictions": [
+        "symbol renaming does not identify sounds",
+        "silent classifier role can beat phonetic role",
+        "unread70 remains unresolved"
+      ],
+      "alternatives": [
+        "independent categorical description",
+        "unanchored latent class relabeling"
+      ],
+      "parameters": {},
+      "complexity": "Explicit parameter and finite program penalties retained in source models",
+      "predictions": [
+        "completion/route_d/nonphonetic_prepend.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "source_paths": [
+        "completion/route_d/nonphonetic_prepend.json",
+        "completion/route_d/frozen_predictions.json"
+      ],
+      "prior_exposure": "entire corpus and earlier results already inspected; no pristine blind claim"
+    },
+    {
+      "id": "REC-B-SPECIES-EXCLUSION",
+      "route": "B",
+      "status": "conditional",
+      "claim_type": "structural_constraint",
+      "rule": "Conditionally equal complete expanded spellings cannot universally name the literal pictured animal species",
+      "namespace": "Mahadevan1977",
+      "context": "Retrospective frozen catalogue; object/copy exclusions; separate source namespaces",
+      "prerequisites": [
+        "65→87,59",
+        "71→70,211",
+        "normal-form equality is linguistic identity"
+      ],
+      "support": [
+        "completion/sources/1380_2452_adjudication.json"
+      ],
+      "contradictions": [
+        "raw spellings differ; category, institution, person or production role remain possible"
+      ],
+      "alternatives": [
+        "independent categorical description",
+        "unanchored latent class relabeling"
+      ],
+      "parameters": {},
+      "complexity": "Explicit parameter and finite program penalties retained in source models",
+      "predictions": [
+        "completion/sources/1380_2452_adjudication.json"
+      ],
+      "source_paths": [
+        "completion/sources/1380_2452_adjudication.json"
+      ],
+      "prior_exposure": "entire corpus and earlier results already inspected; no pristine blind claim"
+    }
+  ],
+  "new_accepted_readings": 0
+}

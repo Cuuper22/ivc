@@ -1,0 +1,125 @@
+{
+  "segmentation": {
+    "evidence_class": "constructed_control_not_Indus",
+    "training": [
+      [
+        [
+          "A",
+          "B"
+        ],
+        "kami"
+      ],
+      [
+        [
+          "A",
+          "C"
+        ],
+        "katu"
+      ],
+      [
+        [
+          "D",
+          "B"
+        ],
+        "sami"
+      ]
+    ],
+    "unanchored_segmentations": [
+      {
+        "A": "k",
+        "B": "ami",
+        "C": "atu",
+        "D": "s"
+      },
+      {
+        "A": "ka",
+        "B": "mi",
+        "C": "tu",
+        "D": "sa"
+      }
+    ],
+    "independent_A_ka_anchor": [
+      {
+        "A": "ka",
+        "B": "mi",
+        "C": "tu",
+        "D": "sa"
+      }
+    ],
+    "mixed_classifier_control": [
+      {
+        "N": "",
+        "A": "ka",
+        "B": "mi",
+        "C": "tu",
+        "D": "sa"
+      }
+    ],
+    "withheld_D_C_predictions": [
+      "satu"
+    ],
+    "withheld_D_C_true": "satu",
+    "incompatible_D_C_sata_solutions": 0
+  },
+  "full_lexicon_sound_relabeling": {
+    "alphabet_size": 50,
+    "same_root_counts_for_every_marker": true,
+    "original_marker_counts": {
+      "append": 239691,
+      "prepend": 409732
+    },
+    "relabeling": {
+      "A": "B",
+      "B": "C",
+      "C": "D",
+      "D": "E",
+      "E": "F",
+      "F": "G",
+      "G": "H",
+      "H": "I",
+      "I": "J",
+      "J": "K",
+      "K": "L",
+      "L": "M",
+      "M": "N",
+      "N": "O",
+      "O": "P",
+      "P": "Q",
+      "Q": "R",
+      "R": "S",
+      "S": "T",
+      "T": "U",
+      "U": "W",
+      "W": "X",
+      "X": "Y",
+      "Y": "a",
+      "a": "b",
+      "b": "c",
+      "c": "d",
+      "d": "e",
+      "e": "f",
+      "f": "g",
+      "g": "h",
+      "h": "i",
+      "i": "j",
+      "j": "k",
+      "k": "l",
+      "l": "m",
+      "m": "n",
+      "n": "o",
+      "o": "p",
+      "p": "q",
+      "q": "r",
+      "r": "s",
+      "s": "t",
+      "t": "u",
+      "u": "v",
+      "v": "w",
+      "w": "x",
+      "x": "y",
+      "y": "z",
+      "z": "A"
+    },
+    "interpretation": "Exact symmetry for THIS extension/membership objective with renamed lexicon. Does not claim all linguistic evidence is invariant."
+  }
+}

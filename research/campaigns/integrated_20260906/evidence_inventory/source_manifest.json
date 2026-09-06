@@ -1,0 +1,574 @@
+{
+  "schema": "ivc.source_inventory.v1",
+  "campaign": "integrated_20260906",
+  "scope": "Existing repository evidence and exact-hash recovery of previously acquired files only.",
+  "resources": [
+    {
+      "id": "mahadevan_frozen",
+      "evidence_class": "published_catalogue_observation",
+      "files": [
+        {
+          "path": "research/data/mahadevan_20260905/concordance_documents.json.gz",
+          "available": true,
+          "bytes": 293386,
+          "sha256": "bb178b9b188a757630ae2909edf8e9e678308126f55c259fc86b8b6f0acfe989"
+        }
+      ],
+      "description": "3916 original Firestore surface/line records; 2906 objects; raw keys and typed values retained.",
+      "limits": "Independent transcription system; overlapping archaeological samples. Unknown zero, doubtful * prefix, face/line direction and raw numeric formatting must remain distinct.",
+      "sign_namespace": "Mahadevan1977 1–417",
+      "relationships": []
+    },
+    {
+      "id": "mahadevan_decoded",
+      "evidence_class": "derived_table",
+      "files": [
+        {
+          "path": "research/data/mahadevan_20260905/concordance_rows.csv",
+          "available": true,
+          "bytes": 331914,
+          "sha256": "64448bc756c467c4bfa085b176208ecec06aef1c192c6e90548c15115c20e5d0"
+        },
+        {
+          "path": "research/data/mahadevan_20260905/paired_objects.json",
+          "available": true,
+          "bytes": 72538,
+          "sha256": "ab20ec0b74f70d6fcc4f252f1bc8e2541690f887bfc5d5f62d2be64d08179d15"
+        },
+        {
+          "path": "research/data/mahadevan_20260905/front_families.json",
+          "available": true,
+          "bytes": 10586,
+          "sha256": "0bfad99cd2fa0ec1cf7ce7f36f8cd9b563c3c214f51a5f833330f80fb0b80a6f"
+        }
+      ],
+      "description": "Convenient decoded corpus and strict cross-face witness set.",
+      "limits": "Strict85 object subset excludes partial records and should not define all usable observations.",
+      "sign_namespace": "Mahadevan1977 1–417",
+      "relationships": [
+        "derived_from:mahadevan_frozen"
+      ]
+    },
+    {
+      "id": "mahadevan_codebook",
+      "evidence_class": "published_source_text_with_ocr",
+      "files": [
+        {
+          "path": "evidence/tmp/cisi_xml/The Indus Script. Text, Concordance and Tables -Iravathan Mahadevan_djvu.txt",
+          "available": true,
+          "bytes": 673943,
+          "sha256": "11441e38286784a1f4215f73d91cbba8acd153b7e5b30daed9252f9f7b77304a"
+        },
+        {
+          "path": "evidence/tmp/cisi_xml/The Indus Script. Text, Concordance and Tables -Iravathan Mahadevan_djvu.xml",
+          "available": true,
+          "bytes": 15060252,
+          "sha256": "17873c62055f86f6df603fdee9722718c6e6405573f0ac018637977a160214bf"
+        }
+      ],
+      "description": "Held source1977 codebook text: AppendixII starts around text line160980.",
+      "limits": "OCR can misread codes.1977 two-digit field-symbol code not demonstrated equivalent to raw digital fs80 variant values; preserve latter.",
+      "sign_namespace": "Mahadevan1977",
+      "relationships": []
+    },
+    {
+      "id": "lipi_metadata",
+      "evidence_class": "published_corpus_mediated_by_export",
+      "files": [
+        {
+          "path": "evidence/tmp/lipi_current_inscriptions_20260526.csv",
+          "available": true,
+          "bytes": 1204144,
+          "sha256": "c02e3d7bb74cf5abb11cc94f88d8d469e6acc5d6fad4b7153c02c43428f58d98"
+        },
+        {
+          "path": "research/data/open_prototype/lipi/metadata_filtered.csv",
+          "available": true,
+          "bytes": 1473157,
+          "sha256": "b3e2a94efdf70eaa893bbbbd35fd057b53f766c82823a3efb8ee37f9365311fe"
+        }
+      ],
+      "description": "5679 rows each; text, sides, object types, dimensions, site, excavation IDs, cisi identifiers, symbol and cult motif labels.",
+      "limits": "same underlying corpus represented twice; motif labels are catalogue annotations, not fresh visual measurements.",
+      "sign_namespace": "Lipi/Wells-local",
+      "relationships": []
+    },
+    {
+      "id": "mayig_index",
+      "evidence_class": "derived_index",
+      "files": [
+        {
+          "path": "research/data/open_prototype/mayig/records_index.csv",
+          "available": true,
+          "bytes": 17634,
+          "sha256": "695587d7be8597316b3f0bf82030840270913f6f39d798073979a189c3e87a67"
+        },
+        {
+          "path": "research/data/open_prototype/mayig/tree_manifest.csv",
+          "available": true,
+          "bytes": 121805,
+          "sha256": "0921aa46df9eec92cd330b97e94e93cb643823736efa2d84224088a5fb8184d6"
+        },
+        {
+          "path": "research/data/open_prototype/mayig/sample_record.json",
+          "available": true,
+          "bytes": 1194,
+          "sha256": "cf295e26015df437d345853e1e0817a2cc7f39c4801b4f92852f216930d41dfb"
+        }
+      ],
+      "description": "179 Mayig text records indexed; raw tree under evidence/tmp/mayig_feature_namespace_probe/repo/.",
+      "limits": "Another observation layer for shared objects. Sign namespace and selected export extent matter.",
+      "sign_namespace": "Mayig/Parpola mediated",
+      "relationships": []
+    },
+    {
+      "id": "crosswalk",
+      "evidence_class": "derived_identity_and_mapping_candidates",
+      "files": [
+        {
+          "path": "research/data/sign_crosswalk/artifact_witnesses.csv",
+          "available": true,
+          "bytes": 835393,
+          "sha256": "e56d9a501c5b41a1b0106d371085cfc4ec56e7d1a76f84efc45b4cfab7b2ef8b"
+        },
+        {
+          "path": "research/data/sign_crosswalk/crosswalk_edges.csv",
+          "available": true,
+          "bytes": 172914,
+          "sha256": "4f5d6bed5d8fea9d2c5f416135ae9185f6aa2999fcef2583acb3e83a75af78a8"
+        },
+        {
+          "path": "research/data/sign_crosswalk/namespace_gates.csv",
+          "available": true,
+          "bytes": 5167,
+          "sha256": "669de7dd56e2a20251c2f62b98f005bae3eeae840d5b3eb47fd1a3fad751cf30"
+        },
+        {
+          "path": "research/data/sign_crosswalk/evidence_refs.csv",
+          "available": true,
+          "bytes": 17580,
+          "sha256": "f8a71c7274857eb785368b991d325bbb30ceba7461172985d9e0dc283c67ba68"
+        }
+      ],
+      "description": "5858 witness rows and source-tagged sign correspondence candidates.",
+      "limits": "Do not promote positional alignments to secure allography; namespace gates and per-edge status govern use.",
+      "sign_namespace": "mixed explicitly tagged",
+      "relationships": []
+    },
+    {
+      "id": "cisi_pakistan",
+      "evidence_class": "published_source_reproduction",
+      "files": [
+        {
+          "path": "evidence/tmp/cisi_pakistan_pages/cisi_pakistan.pdf",
+          "available": true,
+          "bytes": 35870617,
+          "sha256": "727132579a485ee626e48a64c663148a85fbc0811fb523818fd615231f8a327d"
+        }
+      ],
+      "description": "Local whole-source Pakistan catalogue PDF.",
+      "limits": "Photographs, impressions and catalogue drawings represent observations of shared physical objects; count securely identified objects, not pixels.",
+      "sign_namespace": "CISI object IDs",
+      "relationships": []
+    },
+    {
+      "id": "vats_plates",
+      "evidence_class": "published_source_reproduction",
+      "files": [
+        {
+          "path": "evidence/tmp/032_002_861_603_slot_source_normalization/vats_excavations_at_harappa_vol2_plates.pdf",
+          "available": true,
+          "bytes": 17325993,
+          "sha256": "ab14c5c3a25588d3178789f83ae724eecf7cd873fb28c0a2c639a4dee21b8b18"
+        },
+        {
+          "path": "research/data/mahadevan_20260905/source_witnesses/manifest.json",
+          "available": true,
+          "bytes": 3059,
+          "sha256": "55812fd6447c0fd75d43f23313b23fbea8ee856a01a74efb357073e50bd7dc95"
+        },
+        {
+          "path": "research/data/mahadevan_20260905/source_witnesses/vats_553_555.png",
+          "available": true,
+          "bytes": 56677,
+          "sha256": "365a64e1cc1fdb0f5e9495fe65f2e8bf1b17012db1b7a585b8062e19c7a21561"
+        }
+      ],
+      "description": "Source plates and exact crop provenance for Harappa553–555; PDFindex201, plateXCVII.",
+      "limits": "Low resolution limits fine-allograph discrimination. Enlarged crop does not increase independent evidence.",
+      "sign_namespace": "Vats object IDs; candidate Mahadevan joins",
+      "relationships": []
+    },
+    {
+      "id": "parpola1994",
+      "evidence_class": "published_scholarship_mixed",
+      "files": [
+        {
+          "path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "available": true,
+          "bytes": 18998517,
+          "sha256": "fd133822f9999c86178a32208465e847c5288b578ad14ca2cd643efe57f0e0b6"
+        }
+      ],
+      "description": "392-page held volume; glyph signlist, archaeological figures, proposed readings, comparative-language tables and lexicon appendix.",
+      "limits": "Separate illustrated observation from author reconstruction/decipherment interpretation.",
+      "sign_namespace": "Parpola IDs in signlist",
+      "relationships": []
+    },
+    {
+      "id": "parpola2008_recovered",
+      "evidence_class": "published_analytical_reconstruction",
+      "files": [
+        {
+          "path": "research/campaigns/integrated_20260906/evidence_inventory/recovered/Parpola_2008_copper.pdf",
+          "available": true,
+          "bytes": 552079,
+          "sha256": "1e68a8c2cf64bece75855987572c73133d215315e8432ad3f6f61db278f41cf1"
+        }
+      ],
+      "description": "Copper tablets Figures1a/b PDFindices2–3:46 classes, paired text-picture types and cross-type links. Prior source bytes recovered exactly by adding ?download=1 to manifest URL.",
+      "limits": "Types are aggregated analytical reconstructions; broken lines tentative. They are not46 new physical samples. Individual table members and original photos need linking.",
+      "sign_namespace": "Parpola copper-type labels, drawings",
+      "relationships": [
+        "matches_prior_hash:research/data/semantic_search_20260906/source_acquisition.json"
+      ]
+    },
+    {
+      "id": "parpola2019",
+      "evidence_class": "published_scholarship_mixed",
+      "files": [
+        {
+          "path": "evidence/tmp/pdfs/parpola_2019_bone_rods.pdf",
+          "available": true,
+          "bytes": 343086,
+          "sha256": "e22312306a7ce0e2cd54ba77251d65b01254f91e35f5f0a2cfe8f0fc545affcc"
+        },
+        {
+          "path": "evidence/tmp/parpola_2019_bone_rods.txt",
+          "available": true,
+          "bytes": 23131,
+          "sha256": "d262404354ddcfa3f48ba97b0c3f069016ec8048c825fc4c701ff9ad0c00e0ce"
+        },
+        {
+          "path": "research/data/sign_crosswalk/source_panels/m77_text7_concordance/parpola2019_fig1_text7_m2109_m2111.png",
+          "available": true,
+          "bytes": 7149,
+          "sha256": "499e8c9be501380693030bb9acf0c8eb0678f8f01d8892e52159a75e04c6bbd6"
+        }
+      ],
+      "description": "Bone-rod and copper-tablet text relations plus named CISI figure crops.",
+      "limits": "Earlier textual relations and interpretation, not independent new corpus.",
+      "sign_namespace": "Parpola/CISI; distinguish text numbers from object IDs",
+      "relationships": []
+    },
+    {
+      "id": "glyph_recovery",
+      "evidence_class": "published_catalogue_glyph_drawing",
+      "files": [
+        {
+          "path": "research/campaigns/integrated_20260906/evidence_inventory/recovered/glyph_059.png",
+          "available": true,
+          "bytes": 2304,
+          "sha256": "51227a071c2a39e9a0f5c58efee3327b87a8460075251646a186b5ce55a82bb8"
+        },
+        {
+          "path": "research/campaigns/integrated_20260906/evidence_inventory/recovered/glyph_060.png",
+          "available": true,
+          "bytes": 2477,
+          "sha256": "dfac14407ff19a394e9977c7d5fef0952ae535935240d0c36c73533d37a9adc4"
+        },
+        {
+          "path": "research/campaigns/integrated_20260906/evidence_inventory/recovered/glyph_065.png",
+          "available": true,
+          "bytes": 2420,
+          "sha256": "ae24082914b98c3ddeb21c5e3e819ef50eba0a213980318990eea43e2023d917"
+        },
+        {
+          "path": "research/campaigns/integrated_20260906/evidence_inventory/recovered/glyph_066.png",
+          "available": true,
+          "bytes": 2737,
+          "sha256": "0e9ab19be05a73e1e35022219095879dd71c1cc3065316d03ffe387e31954844"
+        },
+        {
+          "path": "research/campaigns/integrated_20260906/evidence_inventory/recovered/glyph_067.png",
+          "available": true,
+          "bytes": 2519,
+          "sha256": "22d3e4ccfb6f9eb09ab5d397f0687094d644c842fa5b257fd1a248fc5f17186d"
+        },
+        {
+          "path": "research/campaigns/integrated_20260906/evidence_inventory/recovered/glyph_068.png",
+          "available": true,
+          "bytes": 2807,
+          "sha256": "4799a76df0d9fab49efb6cc613216ebe604b7ec64fc554c1daa9b61938d87425"
+        },
+        {
+          "path": "research/campaigns/integrated_20260906/evidence_inventory/recovered/glyph_069.png",
+          "available": true,
+          "bytes": 2747,
+          "sha256": "15a2b54a869bdd9b87653dde57b6df64e2e2717bbef64c6855a92443f2b54822"
+        },
+        {
+          "path": "research/campaigns/integrated_20260906/evidence_inventory/recovered/glyph_070.png",
+          "available": true,
+          "bytes": 2360,
+          "sha256": "3587c3cdf2236ba26a7f5a930cd191b7ea13eafe0e1bee2dbff58580a0794572"
+        },
+        {
+          "path": "research/campaigns/integrated_20260906/evidence_inventory/recovered/glyph_071.png",
+          "available": true,
+          "bytes": 2535,
+          "sha256": "b243fe83bee8a680f9c6dae7b42504cccbf28d574a6fd999e8084c163723cf46"
+        },
+        {
+          "path": "research/campaigns/integrated_20260906/evidence_inventory/recovered/glyph_072.png",
+          "available": true,
+          "bytes": 2480,
+          "sha256": "763ff6e402d04eb6da4c5e1c878c4548709420dbf50ff10d2c988f367d23565d"
+        },
+        {
+          "path": "research/campaigns/integrated_20260906/evidence_inventory/recovered/glyph_073.png",
+          "available": true,
+          "bytes": 2682,
+          "sha256": "a80351bf83cf9257ccccb87c0a6937b076388d0008490dd2f9d0448f3b38d0f9"
+        },
+        {
+          "path": "research/campaigns/integrated_20260906/evidence_inventory/recovered/glyph_211.png",
+          "available": true,
+          "bytes": 1302,
+          "sha256": "1985aec4c7780c9e00c4ab715345a595d17b37fabbc85c519352065362db1e49"
+        }
+      ],
+      "description": "12 source glyphs recovered with exact original manifest hashes.",
+      "limits": "Catalogue drawings do not certify appearances on individual artifacts. Remaining405 original glyph files not present initially.",
+      "sign_namespace": "Mahadevan1977 1–417",
+      "relationships": [
+        "matches_prior_hash:research/data/semantic_search_20260906/source_acquisition.json"
+      ]
+    },
+    {
+      "id": "graphic_search_prior",
+      "evidence_class": "model_generated_proposal",
+      "files": [
+        {
+          "path": "research/data/semantic_search_20260906/graphic_hypotheses.json",
+          "available": true,
+          "bytes": 2130,
+          "sha256": "a210927bfeb2808dbebc0bbb0d39e4777afcde32e1cf24f73727984621e90722"
+        },
+        {
+          "path": "research/data/semantic_search_20260906/modifier_context_pairs.json",
+          "available": true,
+          "bytes": 86177,
+          "sha256": "edb174b0c587ee046a3ff92cccfecadf1903ecd9424ccd706c4f475d29e5101c"
+        },
+        {
+          "path": "research/data/semantic_search_20260906/coface_candidates.json",
+          "available": true,
+          "bytes": 38231,
+          "sha256": "adb835666dfa66f93639d60fde8340a60304d4f32b2abf4570cbaf62b9118f45"
+        }
+      ],
+      "description": "30 base-modified pairs and21 literal decompositions proposed from drawings;167 corrected coface candidates.",
+      "limits": "Inputs to hypothesis search, not independently established graphical equivalences, semantics or segmentation.",
+      "sign_namespace": "Mahadevan1977",
+      "relationships": []
+    },
+    {
+      "id": "mw_lexicon",
+      "evidence_class": "independent_comparative_dictionary",
+      "files": [
+        {
+          "path": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+          "available": true,
+          "bytes": 67574805,
+          "sha256": "6448eef7402d11da02bfccd91d31a96cd20943c4294e29028a207b75ceedb088"
+        }
+      ],
+      "description": "Monier-Williams XML:67574805 bytes;286539 key1 entries; Cologne2013 copyright header; headword/body/page/L IDs.",
+      "limits": "Saved as dependency of an Indus-reading implementation, but dictionary content is separable. Lexical evidence does not identify Indus language. Preserve source transliteration and textual attestations/reconstructions. No separate DTD held.",
+      "sign_namespace": "Sanskrit source transliteration",
+      "relationships": []
+    },
+    {
+      "id": "dhatu_lexicon",
+      "evidence_class": "independent_comparative_lexical_compilation",
+      "files": [
+        {
+          "path": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/data.json",
+          "available": true,
+          "bytes": 2504666,
+          "sha256": "c218da531767a247898a11f0fa6769fbf74e1ce1b497dbfb324e159f41818a90"
+        }
+      ],
+      "description": "2259 Sanskrit root rows with Devanagari, artha_english, class and other lexical fields.",
+      "limits": "Source metadata limited to held software dependency; modern compilation and grammatical analysis must not become Indus observations.",
+      "sign_namespace": null,
+      "relationships": []
+    },
+    {
+      "id": "generated_forms",
+      "evidence_class": "generated_linguistic_forms",
+      "files": [
+        {
+          "path": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/dhatuforms_vidyut_shuddha_kartari.json",
+          "available": true,
+          "bytes": 9685758,
+          "sha256": "22416f3e5370180a21f956f37676fe86413ff73ddaf8f8569e2f60c3bea34039"
+        },
+        {
+          "path": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/dhatuforms_vidyut_shuddha_krut.json",
+          "available": true,
+          "bytes": 6484008,
+          "sha256": "f7db1a4e5197d5c806c3ff8e79d2ff99d58afc961c44977c46147f57364f753c"
+        }
+      ],
+      "description": "Vidyut inflection/derivation outputs.",
+      "limits": "Generated forms, not all independently attested ancient forms. Distinguish grammar search tool from evidence.",
+      "sign_namespace": null,
+      "relationships": []
+    },
+    {
+      "id": "selected_glosses",
+      "evidence_class": "published_reading_selected_supplement",
+      "files": [
+        {
+          "path": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/src/assets/data/lexicons.json",
+          "available": true,
+          "bytes": 617,
+          "sha256": "4538110e00143df9934a73b0740da4cd162546d6bdfa33d07090cf91d8b49e59"
+        }
+      ],
+      "description": "9 supplementary gloss entries in reading-site implementation.",
+      "limits": "Hand-selected for proposed readings; must not stand in for an unbiased comparative lexicon.",
+      "sign_namespace": null,
+      "relationships": []
+    },
+    {
+      "id": "dravidian_lexical_examples",
+      "evidence_class": "source_linked_lexical_extraction",
+      "files": [
+        {
+          "path": "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+          "available": true,
+          "bytes": 6153,
+          "sha256": "97e9f2288e7bbd864743a51323a5274be37500283f49b1d9c1f5155a2fe8b1d4"
+        }
+      ],
+      "description": "8 visually checked lexical records: Tamil fish/star mīṉ and6 compounds with explicit segmentations/glosses. Table10.1 p182; Appendix p280. Broader Appendixpp279–283 contains34 star and65 fish compounds.",
+      "limits": "Language forms are independent of Indus assignments, but source selection is enriched for fish/star hypothesis. No complete DEDR or Tamil Lexicon dataset found. OCR loses macrons and consonant distinctions; only exported rows visually adjudicated.",
+      "sign_namespace": "Tamil transcription",
+      "relationships": [
+        "derived_from:parpola1994"
+      ]
+    },
+    {
+      "id": "meluhha_cuneiform",
+      "evidence_class": "source_linked_independent_language_attestations",
+      "files": [
+        {
+          "path": "research/data/meluhha/cuneiform_attestations_expanded.csv",
+          "available": true,
+          "bytes": 14940,
+          "sha256": "5669796838f528bf99e4f220fb2bdd6d73e574c7a206fadd688080374f4704bc"
+        },
+        {
+          "path": "research/data/meluhha/cdli_current_line_contexts.csv",
+          "available": true,
+          "bytes": 34966,
+          "sha256": "7305ff527a3b7c06cf660c3333c63af82075b1cd39997485b7c1eeeb20f7d776"
+        },
+        {
+          "path": "research/data/meluhha/external_indus_objects.csv",
+          "available": true,
+          "bytes": 12107,
+          "sha256": "b82759c30b50e4c467e57798c715dfe53c31b0ed6df3f53db361d98914a97511"
+        }
+      ],
+      "description": "16 expanded cuneiform source rows;96 current line-context rows; external Indus-object metadata separately.",
+      "limits": "Same-site and string-pattern matches do not establish shared object or translation. Existing external micro-bilingual joins are absent.",
+      "sign_namespace": "CDLI/BDTNS transliteration vs Lipi signs",
+      "relationships": []
+    },
+    {
+      "id": "brahmi_comparanda",
+      "evidence_class": "published_letter_forms_and_derived_features",
+      "files": [
+        {
+          "path": "research/data/brahmi/indoskript_brahmi_glyphs.csv",
+          "available": true,
+          "bytes": 128665,
+          "sha256": "fc378b3f8ec1dcc360c5a03b23059a7008c7376cf1c3cda9101d8a5ddf921672"
+        },
+        {
+          "path": "research/data/brahmi/indoskript_brahmi_features_v2.csv",
+          "available": true,
+          "bytes": 565581,
+          "sha256": "d8303e1bf9fc3b785c6661fb8047e15191948166a1a1a75874a7510951358620"
+        }
+      ],
+      "description": "457 first-pass glyph records;1342 cached v2 letter images with independently known Brahmi labels.",
+      "limits": "Known Brahmi labels do not imply inherited Indus values; source tokens and copies require collapse.",
+      "sign_namespace": "Brahmi known letter labels",
+      "relationships": []
+    },
+    {
+      "id": "sumtablets_control",
+      "evidence_class": "deciphered_script_development_control",
+      "files": [
+        {
+          "path": "research/data/open_prototype/known_scripts/sumtablets/sumtablets_source_manifest.json",
+          "available": true,
+          "bytes": 5788,
+          "sha256": "4e3cf518cdd1ced7a326461a1eac1e89f9fe4153cfe98c276893b4d2b0aeb7ab"
+        },
+        {
+          "path": "research/data/open_prototype/known_scripts/sumtablets/sumtablets_line_sequences.csv",
+          "available": true,
+          "bytes": 257514,
+          "sha256": "4a5c274d49855d14faeaa1f3d3931a2eec1b199cafe9f5bdc0df57679aeb21de"
+        }
+      ],
+      "description": "Already-held readable-script control suitable for mechanism diagnostics.",
+      "limits": "Control results are not Indus evidence.",
+      "sign_namespace": "Sumerian",
+      "relationships": []
+    }
+  ],
+  "collections": [
+    {
+      "id": "seal_images",
+      "path_prefix": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/",
+      "file_count": 6870,
+      "bytes": 196623286,
+      "evidence_class": "published_images_mediated_by_repository",
+      "limits": "CISI-style filenames; source binding varies; alternate impressions and faces not independent objects."
+    },
+    {
+      "id": "source_panels",
+      "path_prefix": "research/data/sign_crosswalk/source_panels/",
+      "file_count": 63,
+      "bytes": 49999788,
+      "evidence_class": "derived_source_crops",
+      "limits": "63 files including manifests; exact crops and source adjudication."
+    },
+    {
+      "id": "brahmi_images",
+      "path_prefix": "research/data/brahmi/indoskript_letter_images_v2/",
+      "file_count": 1342,
+      "bytes": 20199498,
+      "evidence_class": "published_letter_images",
+      "limits": "1342 files; avoid counting duplicate tokens as separate witnesses."
+    }
+  ],
+  "excluded": [
+    "evidence/tmp/quarantine_bad_successor_20260531T0104/",
+    "Quarantine-manifest autopsy outputs as claim support; canonical replacement outputs must independently re-earn results."
+  ],
+  "unresolved": [
+    "Digital fs80 codebook/variant decoder not found.1977 AppendixII alone does not establish full digital codes.",
+    "No independently named bilingual Indus object located.",
+    "No complete independent Dravidian etymological dictionary found; source-bound comparison snippets do exist.",
+    "Remaining405 publisher glyph files absent in initial repository; recovery would use existing manifest hashes."
+  ],
+  "prior_exposure": "All source material and prior campaign outputs are already-held or inspected; this inventory creates no blind evaluation."
+}

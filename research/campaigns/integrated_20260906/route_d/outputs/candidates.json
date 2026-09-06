@@ -1,0 +1,2172 @@
+[
+  {
+    "id": "D-MW-append-none-000",
+    "route": "D",
+    "status": "conditional",
+    "claim_type": "sound_assignment",
+    "rule": {
+      "mapping": {
+        "59": "I",
+        "65": "i",
+        "67": "o",
+        "72": "u",
+        "211": "K",
+        "60": "IK",
+        "66": "iK",
+        "68": "oK",
+        "73": "uK"
+      },
+      "orientation": "append",
+      "decoder": "run_route_d.py:read_block"
+    },
+    "namespace": "Mahadevan1977",
+    "context": "four fish bases and marked forms;211 reusable phonetic component",
+    "prerequisites": [
+      "A fish expansion conjecture",
+      "Indus words realize MW headword spellings without historical sound changes",
+      "four fish bases have distinct lexical values",
+      "dictionary membership is relevant despite different chronology"
+    ],
+    "support": {
+      "independent_lexical_forms": true,
+      "independent_sign_sound_pairs": 0
+    },
+    "contradictions": [
+      "no known target pronunciation permits direct correctness test",
+      "allographs/homophony and compound boundaries not independently established"
+    ],
+    "alternatives": [
+      "other emitted lexical systems",
+      "anonymous operation",
+      "nonphonetic classifier"
+    ],
+    "parameters": {
+      "59": "I",
+      "65": "i",
+      "67": "o",
+      "72": "u",
+      "211": "K",
+      "60": "IK",
+      "66": "iK",
+      "68": "oK",
+      "73": "uK"
+    },
+    "complexity": 10,
+    "predictions": [
+      "fixed repeated form readings in candidate_partial_readings.jsonl",
+      "new fish family70/71 needs root reading; operation alone predicts no sound"
+    ],
+    "source_paths": [
+      "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "research/campaigns/integrated_20260906/shared/observations.jsonl"
+    ],
+    "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy"
+  },
+  {
+    "id": "D-MW-append-all_four_fish-016",
+    "route": "D",
+    "status": "conditional",
+    "claim_type": "sound_assignment",
+    "rule": {
+      "mapping": {
+        "59": "SAla",
+        "65": "loha",
+        "67": "manu",
+        "72": "timi",
+        "211": "ja",
+        "60": "SAlaja",
+        "66": "lohaja",
+        "68": "manuja",
+        "73": "timija"
+      },
+      "orientation": "append",
+      "decoder": "run_route_d.py:read_block"
+    },
+    "namespace": "Mahadevan1977",
+    "context": "four fish bases and marked forms;211 reusable phonetic component",
+    "prerequisites": [
+      "A fish expansion conjecture",
+      "Indus words realize MW headword spellings without historical sound changes",
+      "four fish bases have distinct lexical values",
+      "dictionary membership is relevant despite different chronology"
+    ],
+    "support": {
+      "independent_lexical_forms": true,
+      "independent_sign_sound_pairs": 0
+    },
+    "contradictions": [
+      "no known target pronunciation permits direct correctness test",
+      "allographs/homophony and compound boundaries not independently established"
+    ],
+    "alternatives": [
+      "other emitted lexical systems",
+      "anonymous operation",
+      "nonphonetic classifier"
+    ],
+    "parameters": {
+      "59": "SAla",
+      "65": "loha",
+      "67": "manu",
+      "72": "timi",
+      "211": "ja",
+      "60": "SAlaja",
+      "66": "lohaja",
+      "68": "manuja",
+      "73": "timija"
+    },
+    "complexity": 23,
+    "predictions": [
+      "fixed repeated form readings in candidate_partial_readings.jsonl",
+      "new fish family70/71 needs root reading; operation alone predicts no sound"
+    ],
+    "source_paths": [
+      "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "research/campaigns/integrated_20260906/shared/observations.jsonl"
+    ],
+    "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy"
+  },
+  {
+    "id": "D-MW-prepend-none-033",
+    "route": "D",
+    "status": "conditional",
+    "claim_type": "sound_assignment",
+    "rule": {
+      "mapping": {
+        "59": "A",
+        "65": "F",
+        "67": "I",
+        "72": "U",
+        "211": "B",
+        "60": "BA",
+        "66": "BF",
+        "68": "BI",
+        "73": "BU"
+      },
+      "orientation": "prepend",
+      "decoder": "run_route_d.py:read_block"
+    },
+    "namespace": "Mahadevan1977",
+    "context": "four fish bases and marked forms;211 reusable phonetic component",
+    "prerequisites": [
+      "A fish expansion conjecture",
+      "Indus words realize MW headword spellings without historical sound changes",
+      "four fish bases have distinct lexical values",
+      "dictionary membership is relevant despite different chronology"
+    ],
+    "support": {
+      "independent_lexical_forms": true,
+      "independent_sign_sound_pairs": 0
+    },
+    "contradictions": [
+      "no known target pronunciation permits direct correctness test",
+      "allographs/homophony and compound boundaries not independently established"
+    ],
+    "alternatives": [
+      "other emitted lexical systems",
+      "anonymous operation",
+      "nonphonetic classifier"
+    ],
+    "parameters": {
+      "59": "A",
+      "65": "F",
+      "67": "I",
+      "72": "U",
+      "211": "B",
+      "60": "BA",
+      "66": "BF",
+      "68": "BI",
+      "73": "BU"
+    },
+    "complexity": 10,
+    "predictions": [
+      "fixed repeated form readings in candidate_partial_readings.jsonl",
+      "new fish family70/71 needs root reading; operation alone predicts no sound"
+    ],
+    "source_paths": [
+      "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "research/campaigns/integrated_20260906/shared/observations.jsonl"
+    ],
+    "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy"
+  },
+  {
+    "id": "D-MW-prepend-all_four_fish-049",
+    "route": "D",
+    "status": "conditional",
+    "claim_type": "sound_assignment",
+    "rule": {
+      "mapping": {
+        "59": "Seva",
+        "65": "kfSa",
+        "67": "loha",
+        "72": "cezwa",
+        "211": "a",
+        "60": "aSeva",
+        "66": "akfSa",
+        "68": "aloha",
+        "73": "acezwa"
+      },
+      "orientation": "prepend",
+      "decoder": "run_route_d.py:read_block"
+    },
+    "namespace": "Mahadevan1977",
+    "context": "four fish bases and marked forms;211 reusable phonetic component",
+    "prerequisites": [
+      "A fish expansion conjecture",
+      "Indus words realize MW headword spellings without historical sound changes",
+      "four fish bases have distinct lexical values",
+      "dictionary membership is relevant despite different chronology"
+    ],
+    "support": {
+      "independent_lexical_forms": true,
+      "independent_sign_sound_pairs": 0
+    },
+    "contradictions": [
+      "no known target pronunciation permits direct correctness test",
+      "allographs/homophony and compound boundaries not independently established"
+    ],
+    "alternatives": [
+      "other emitted lexical systems",
+      "anonymous operation",
+      "nonphonetic classifier"
+    ],
+    "parameters": {
+      "59": "Seva",
+      "65": "kfSa",
+      "67": "loha",
+      "72": "cezwa",
+      "211": "a",
+      "60": "aSeva",
+      "66": "akfSa",
+      "68": "aloha",
+      "73": "acezwa"
+    },
+    "complexity": 23,
+    "predictions": [
+      "fixed repeated form readings in candidate_partial_readings.jsonl",
+      "new fish family70/71 needs root reading; operation alone predicts no sound"
+    ],
+    "source_paths": [
+      "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "research/campaigns/integrated_20260906/shared/observations.jsonl"
+    ],
+    "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy"
+  },
+  {
+    "id": "D-TAMIL-00",
+    "route": "D",
+    "status": "conditional",
+    "claim_type": "sound_assignment",
+    "rule": {
+      "mapping": {
+        "59": "mīṉ",
+        "65": "mīṉ",
+        "67": "mīṉ",
+        "72": "mīṉ",
+        "211": "āti",
+        "60": "ātimīṉ",
+        "66": "ātimīṉ",
+        "68": "ātimīṉ",
+        "73": "ātimīṉ"
+      },
+      "orientation": "prepend",
+      "decoder": "run_route_d.py:read_block"
+    },
+    "namespace": "Mahadevan1977",
+    "context": "four fish bases and marked forms;211 reusable phonetic component",
+    "prerequisites": [
+      "A fish expansion conjecture",
+      "base fish signs read Tamil mīṉ",
+      "all four fish variants share a lexical pronunciation",
+      "source stored order base–211 realized as qualifier–root within word",
+      "Tamil compound is chronologically relevant to Indus"
+    ],
+    "support": {
+      "independent_lexical_forms": true,
+      "independent_sign_sound_pairs": 0
+    },
+    "contradictions": [
+      "no known target pronunciation permits direct correctness test",
+      "allographs/homophony and compound boundaries not independently established"
+    ],
+    "alternatives": [
+      "other emitted lexical systems",
+      "anonymous operation",
+      "nonphonetic classifier"
+    ],
+    "parameters": {
+      "59": "mīṉ",
+      "65": "mīṉ",
+      "67": "mīṉ",
+      "72": "mīṉ",
+      "211": "āti",
+      "60": "ātimīṉ",
+      "66": "ātimīṉ",
+      "68": "ātimīṉ",
+      "73": "ātimīṉ"
+    },
+    "complexity": 12,
+    "predictions": [
+      "fixed repeated form readings in candidate_partial_readings.jsonl",
+      "new fish family70/71 needs root reading; operation alone predicts no sound"
+    ],
+    "source_paths": [
+      "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "research/campaigns/integrated_20260906/shared/observations.jsonl"
+    ],
+    "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy"
+  },
+  {
+    "id": "D-TAMIL-01",
+    "route": "D",
+    "status": "conditional",
+    "claim_type": "sound_assignment",
+    "rule": {
+      "mapping": {
+        "59": "mīṉ",
+        "65": "mīṉ",
+        "67": "mīṉ",
+        "72": "mīṉ",
+        "211": "uttara",
+        "60": "uttaramīṉ",
+        "66": "uttaramīṉ",
+        "68": "uttaramīṉ",
+        "73": "uttaramīṉ"
+      },
+      "orientation": "prepend",
+      "decoder": "run_route_d.py:read_block"
+    },
+    "namespace": "Mahadevan1977",
+    "context": "four fish bases and marked forms;211 reusable phonetic component",
+    "prerequisites": [
+      "A fish expansion conjecture",
+      "base fish signs read Tamil mīṉ",
+      "all four fish variants share a lexical pronunciation",
+      "source stored order base–211 realized as qualifier–root within word",
+      "Tamil compound is chronologically relevant to Indus"
+    ],
+    "support": {
+      "independent_lexical_forms": true,
+      "independent_sign_sound_pairs": 0
+    },
+    "contradictions": [
+      "no known target pronunciation permits direct correctness test",
+      "allographs/homophony and compound boundaries not independently established"
+    ],
+    "alternatives": [
+      "other emitted lexical systems",
+      "anonymous operation",
+      "nonphonetic classifier"
+    ],
+    "parameters": {
+      "59": "mīṉ",
+      "65": "mīṉ",
+      "67": "mīṉ",
+      "72": "mīṉ",
+      "211": "uttara",
+      "60": "uttaramīṉ",
+      "66": "uttaramīṉ",
+      "68": "uttaramīṉ",
+      "73": "uttaramīṉ"
+    },
+    "complexity": 15,
+    "predictions": [
+      "fixed repeated form readings in candidate_partial_readings.jsonl",
+      "new fish family70/71 needs root reading; operation alone predicts no sound"
+    ],
+    "source_paths": [
+      "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "research/campaigns/integrated_20260906/shared/observations.jsonl"
+    ],
+    "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy"
+  },
+  {
+    "id": "D-TAMIL-02",
+    "route": "D",
+    "status": "conditional",
+    "claim_type": "sound_assignment",
+    "rule": {
+      "mapping": {
+        "59": "mīṉ",
+        "65": "mīṉ",
+        "67": "mīṉ",
+        "72": "mīṉ",
+        "211": "etir",
+        "60": "etirmīṉ",
+        "66": "etirmīṉ",
+        "68": "etirmīṉ",
+        "73": "etirmīṉ"
+      },
+      "orientation": "prepend",
+      "decoder": "run_route_d.py:read_block"
+    },
+    "namespace": "Mahadevan1977",
+    "context": "four fish bases and marked forms;211 reusable phonetic component",
+    "prerequisites": [
+      "A fish expansion conjecture",
+      "base fish signs read Tamil mīṉ",
+      "all four fish variants share a lexical pronunciation",
+      "source stored order base–211 realized as qualifier–root within word",
+      "Tamil compound is chronologically relevant to Indus"
+    ],
+    "support": {
+      "independent_lexical_forms": true,
+      "independent_sign_sound_pairs": 0
+    },
+    "contradictions": [
+      "no known target pronunciation permits direct correctness test",
+      "allographs/homophony and compound boundaries not independently established"
+    ],
+    "alternatives": [
+      "other emitted lexical systems",
+      "anonymous operation",
+      "nonphonetic classifier"
+    ],
+    "parameters": {
+      "59": "mīṉ",
+      "65": "mīṉ",
+      "67": "mīṉ",
+      "72": "mīṉ",
+      "211": "etir",
+      "60": "etirmīṉ",
+      "66": "etirmīṉ",
+      "68": "etirmīṉ",
+      "73": "etirmīṉ"
+    },
+    "complexity": 13,
+    "predictions": [
+      "fixed repeated form readings in candidate_partial_readings.jsonl",
+      "new fish family70/71 needs root reading; operation alone predicts no sound"
+    ],
+    "source_paths": [
+      "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "research/campaigns/integrated_20260906/shared/observations.jsonl"
+    ],
+    "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy"
+  },
+  {
+    "id": "D-TAMIL-03",
+    "route": "D",
+    "status": "conditional",
+    "claim_type": "sound_assignment",
+    "rule": {
+      "mapping": {
+        "59": "mīṉ",
+        "65": "mīṉ",
+        "67": "mīṉ",
+        "72": "mīṉ",
+        "211": "ai",
+        "60": "aimmīṉ",
+        "66": "aimmīṉ",
+        "68": "aimmīṉ",
+        "73": "aimmīṉ"
+      },
+      "orientation": "prepend",
+      "decoder": "run_route_d.py:read_block"
+    },
+    "namespace": "Mahadevan1977",
+    "context": "four fish bases and marked forms;211 reusable phonetic component",
+    "prerequisites": [
+      "A fish expansion conjecture",
+      "base fish signs read Tamil mīṉ",
+      "all four fish variants share a lexical pronunciation",
+      "source stored order base–211 realized as qualifier–root within word",
+      "Tamil compound is chronologically relevant to Indus"
+    ],
+    "support": {
+      "independent_lexical_forms": true,
+      "independent_sign_sound_pairs": 0
+    },
+    "contradictions": [
+      "no known target pronunciation permits direct correctness test",
+      "allographs/homophony and compound boundaries not independently established"
+    ],
+    "alternatives": [
+      "other emitted lexical systems",
+      "anonymous operation",
+      "nonphonetic classifier"
+    ],
+    "parameters": {
+      "59": "mīṉ",
+      "65": "mīṉ",
+      "67": "mīṉ",
+      "72": "mīṉ",
+      "211": "ai",
+      "60": "aimmīṉ",
+      "66": "aimmīṉ",
+      "68": "aimmīṉ",
+      "73": "aimmīṉ"
+    },
+    "complexity": 13,
+    "predictions": [
+      "fixed repeated form readings in candidate_partial_readings.jsonl",
+      "new fish family70/71 needs root reading; operation alone predicts no sound"
+    ],
+    "source_paths": [
+      "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "research/campaigns/integrated_20260906/shared/observations.jsonl"
+    ],
+    "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy"
+  },
+  {
+    "id": "D-TAMIL-04",
+    "route": "D",
+    "status": "conditional",
+    "claim_type": "sound_assignment",
+    "rule": {
+      "mapping": {
+        "59": "mīṉ",
+        "65": "mīṉ",
+        "67": "mīṉ",
+        "72": "mīṉ",
+        "211": "kutirai",
+        "60": "kutiraimīṉ",
+        "66": "kutiraimīṉ",
+        "68": "kutiraimīṉ",
+        "73": "kutiraimīṉ"
+      },
+      "orientation": "prepend",
+      "decoder": "run_route_d.py:read_block"
+    },
+    "namespace": "Mahadevan1977",
+    "context": "four fish bases and marked forms;211 reusable phonetic component",
+    "prerequisites": [
+      "A fish expansion conjecture",
+      "base fish signs read Tamil mīṉ",
+      "all four fish variants share a lexical pronunciation",
+      "source stored order base–211 realized as qualifier–root within word",
+      "Tamil compound is chronologically relevant to Indus"
+    ],
+    "support": {
+      "independent_lexical_forms": true,
+      "independent_sign_sound_pairs": 0
+    },
+    "contradictions": [
+      "no known target pronunciation permits direct correctness test",
+      "allographs/homophony and compound boundaries not independently established"
+    ],
+    "alternatives": [
+      "other emitted lexical systems",
+      "anonymous operation",
+      "nonphonetic classifier"
+    ],
+    "parameters": {
+      "59": "mīṉ",
+      "65": "mīṉ",
+      "67": "mīṉ",
+      "72": "mīṉ",
+      "211": "kutirai",
+      "60": "kutiraimīṉ",
+      "66": "kutiraimīṉ",
+      "68": "kutiraimīṉ",
+      "73": "kutiraimīṉ"
+    },
+    "complexity": 16,
+    "predictions": [
+      "fixed repeated form readings in candidate_partial_readings.jsonl",
+      "new fish family70/71 needs root reading; operation alone predicts no sound"
+    ],
+    "source_paths": [
+      "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "research/campaigns/integrated_20260906/shared/observations.jsonl"
+    ],
+    "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy"
+  },
+  {
+    "id": "D-TAMIL-05",
+    "route": "D",
+    "status": "conditional",
+    "claim_type": "sound_assignment",
+    "rule": {
+      "mapping": {
+        "59": "mīṉ",
+        "65": "mīṉ",
+        "67": "mīṉ",
+        "72": "mīṉ",
+        "211": "kuṟu",
+        "60": "kuṟumīṉ",
+        "66": "kuṟumīṉ",
+        "68": "kuṟumīṉ",
+        "73": "kuṟumīṉ"
+      },
+      "orientation": "prepend",
+      "decoder": "run_route_d.py:read_block"
+    },
+    "namespace": "Mahadevan1977",
+    "context": "four fish bases and marked forms;211 reusable phonetic component",
+    "prerequisites": [
+      "A fish expansion conjecture",
+      "base fish signs read Tamil mīṉ",
+      "all four fish variants share a lexical pronunciation",
+      "source stored order base–211 realized as qualifier–root within word",
+      "Tamil compound is chronologically relevant to Indus"
+    ],
+    "support": {
+      "independent_lexical_forms": true,
+      "independent_sign_sound_pairs": 0
+    },
+    "contradictions": [
+      "no known target pronunciation permits direct correctness test",
+      "allographs/homophony and compound boundaries not independently established"
+    ],
+    "alternatives": [
+      "other emitted lexical systems",
+      "anonymous operation",
+      "nonphonetic classifier"
+    ],
+    "parameters": {
+      "59": "mīṉ",
+      "65": "mīṉ",
+      "67": "mīṉ",
+      "72": "mīṉ",
+      "211": "kuṟu",
+      "60": "kuṟumīṉ",
+      "66": "kuṟumīṉ",
+      "68": "kuṟumīṉ",
+      "73": "kuṟumīṉ"
+    },
+    "complexity": 13,
+    "predictions": [
+      "fixed repeated form readings in candidate_partial_readings.jsonl",
+      "new fish family70/71 needs root reading; operation alone predicts no sound"
+    ],
+    "source_paths": [
+      "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "research/campaigns/integrated_20260906/shared/observations.jsonl"
+    ],
+    "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy"
+  },
+  {
+    "id": "D-MW-append-all_eight_fish-024",
+    "route": "D",
+    "status": "conditional",
+    "claim_type": "sound_assignment",
+    "rule": {
+      "mapping": {
+        "59": "cezwa",
+        "65": "rAjIva",
+        "67": "pallava",
+        "72": "trikaRwa",
+        "211": "ka",
+        "60": "cezwaka",
+        "66": "rAjIvaka",
+        "68": "pallavaka",
+        "73": "trikaRwaka"
+      },
+      "orientation": "append",
+      "decoder": "run_route_d.py:read_block"
+    },
+    "namespace": "Mahadevan1977",
+    "context": "four fish bases and marked forms;211 reusable phonetic component",
+    "prerequisites": [
+      "A fish expansion conjecture",
+      "Indus words realize MW headword spellings without historical sound changes",
+      "four fish bases have distinct lexical values",
+      "dictionary membership is relevant despite different chronology"
+    ],
+    "support": {
+      "independent_lexical_forms": true,
+      "independent_sign_sound_pairs": 0
+    },
+    "contradictions": [
+      "no known target pronunciation permits direct correctness test",
+      "allographs/homophony and compound boundaries not independently established"
+    ],
+    "alternatives": [
+      "other emitted lexical systems",
+      "anonymous operation",
+      "nonphonetic classifier"
+    ],
+    "parameters": {
+      "59": "cezwa",
+      "65": "rAjIva",
+      "67": "pallava",
+      "72": "trikaRwa",
+      "211": "ka",
+      "60": "cezwaka",
+      "66": "rAjIvaka",
+      "68": "pallavaka",
+      "73": "trikaRwaka"
+    },
+    "complexity": 33,
+    "predictions": [
+      "fixed repeated form readings in candidate_partial_readings.jsonl",
+      "new fish family70/71 needs root reading; operation alone predicts no sound"
+    ],
+    "source_paths": [
+      "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "research/campaigns/integrated_20260906/shared/observations.jsonl"
+    ],
+    "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy"
+  },
+  {
+    "id": "D-MW-append-all_eight_fish_homophony-025",
+    "route": "D",
+    "status": "conditional",
+    "claim_type": "sound_assignment",
+    "rule": {
+      "mapping": {
+        "59": "SAla",
+        "65": "SAla",
+        "67": "SAla",
+        "72": "SAla",
+        "211": "ja",
+        "60": "SAlaja",
+        "66": "SAlaja",
+        "68": "SAlaja",
+        "73": "SAlaja"
+      },
+      "orientation": "append",
+      "decoder": "run_route_d.py:read_block"
+    },
+    "namespace": "Mahadevan1977",
+    "context": "four fish bases and marked forms;211 reusable phonetic component",
+    "prerequisites": [
+      "A fish expansion conjecture",
+      "Indus words realize MW headword spellings without historical sound changes",
+      "four fish bases may be homophones with separate anonymous classes",
+      "dictionary membership is relevant despite different chronology"
+    ],
+    "support": {
+      "independent_lexical_forms": true,
+      "independent_sign_sound_pairs": 0
+    },
+    "contradictions": [
+      "no known target pronunciation permits direct correctness test",
+      "allographs/homophony and compound boundaries not independently established"
+    ],
+    "alternatives": [
+      "other emitted lexical systems",
+      "anonymous operation",
+      "nonphonetic classifier"
+    ],
+    "parameters": {
+      "59": "SAla",
+      "65": "SAla",
+      "67": "SAla",
+      "72": "SAla",
+      "211": "ja",
+      "60": "SAlaja",
+      "66": "SAlaja",
+      "68": "SAlaja",
+      "73": "SAlaja"
+    },
+    "complexity": 23,
+    "predictions": [
+      "fixed repeated form readings in candidate_partial_readings.jsonl",
+      "new fish family70/71 needs root reading; operation alone predicts no sound"
+    ],
+    "source_paths": [
+      "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "research/campaigns/integrated_20260906/shared/observations.jsonl"
+    ],
+    "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy"
+  },
+  {
+    "id": "D-MW-prepend-all_eight_fish_homophony-057",
+    "route": "D",
+    "status": "conditional",
+    "claim_type": "sound_assignment",
+    "rule": {
+      "mapping": {
+        "59": "mIna",
+        "65": "mIna",
+        "67": "mIna",
+        "72": "mIna",
+        "211": "nala",
+        "60": "nalamIna",
+        "66": "nalamIna",
+        "68": "nalamIna",
+        "73": "nalamIna"
+      },
+      "orientation": "prepend",
+      "decoder": "run_route_d.py:read_block"
+    },
+    "namespace": "Mahadevan1977",
+    "context": "four fish bases and marked forms;211 reusable phonetic component",
+    "prerequisites": [
+      "A fish expansion conjecture",
+      "Indus words realize MW headword spellings without historical sound changes",
+      "four fish bases may be homophones with separate anonymous classes",
+      "dictionary membership is relevant despite different chronology"
+    ],
+    "support": {
+      "independent_lexical_forms": true,
+      "independent_sign_sound_pairs": 0
+    },
+    "contradictions": [
+      "no known target pronunciation permits direct correctness test",
+      "allographs/homophony and compound boundaries not independently established"
+    ],
+    "alternatives": [
+      "other emitted lexical systems",
+      "anonymous operation",
+      "nonphonetic classifier"
+    ],
+    "parameters": {
+      "59": "mIna",
+      "65": "mIna",
+      "67": "mIna",
+      "72": "mIna",
+      "211": "nala",
+      "60": "nalamIna",
+      "66": "nalamIna",
+      "68": "nalamIna",
+      "73": "nalamIna"
+    },
+    "complexity": 25,
+    "predictions": [
+      "fixed repeated form readings in candidate_partial_readings.jsonl",
+      "new fish family70/71 needs root reading; operation alone predicts no sound"
+    ],
+    "source_paths": [
+      "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "research/campaigns/integrated_20260906/shared/observations.jsonl"
+    ],
+    "prior_exposure": "retrospective, hypothesis-defining pairs excluded from independent accuracy"
+  },
+  {
+    "id": "D-KA-CONDITIONAL",
+    "route": "D",
+    "status": "conditional",
+    "claim_type": "sound_assignment",
+    "rule": {
+      "211": "ka",
+      "base_59_65_67_72": {
+        "choose_distinct_from": [
+          "cezwa",
+          "rAjIva",
+          "pallava",
+          "trikaRwa",
+          "daRqapAla",
+          "siMhatuRqa"
+        ]
+      },
+      "marked_60_66_68_73": "base_reading + ka"
+    },
+    "namespace": "Mahadevan1977",
+    "context": "four fish-base/marked pairs, postposed211 spelling hypothesis",
+    "prerequisites": [
+      "all8Indus signs name lexical fish categories",
+      "the four base signs have distinct lexical pronunciations",
+      "literal identity with a MW alphabetic headword is permitted",
+      "productive211 append operation from RouteA is valid"
+    ],
+    "support": {
+      "MW_fish_root_pairs": 6,
+      "root_assignments": 360,
+      "permitted_marker_strings": [
+        "ka"
+      ]
+    },
+    "contradictions": [
+      "No independent Indus fish-name anchors",
+      "Bird-control search also uniquely selects ka",
+      "Allowing homophony admits22marker strings",
+      "adding independent concatenative roof operation leaves0fullfish lexical squares"
+    ],
+    "alternatives": [
+      "generic Sanskrit lexical extension",
+      "homophonic mixed script",
+      "Tamil contextual morphology",
+      "anonymous classifier"
+    ],
+    "parameters": {
+      "marker": 1,
+      "distinct_root_assignments": 4
+    },
+    "complexity": "5shared assignments; no object exceptions",
+    "predictions": [
+      "fixed ka on every claimed211 within licensed fish construction; not a pronunciation correctness test"
+    ],
+    "source_paths": [
+      "outputs/mw_extension_counts.json",
+      "outputs/semantic_category_control.json",
+      "outputs/semantic_category_source_entries.json"
+    ],
+    "prior_exposure": "retrospective, A pairs define hypothesis; all semantic filters declared priors"
+  },
+  {
+    "id": "D-TAMIL-JOINT-00",
+    "route": "D",
+    "status": "conditional",
+    "claim_type": "sound_assignment",
+    "rule": {
+      "mapping": {
+        "59": "mīṉ",
+        "65": "kaṉmīṉ",
+        "60": "kōḻimīṉ",
+        "66": "kallukkōḻimīṉ",
+        "87": "kal",
+        "211": "kōḻi"
+      },
+      "decoder": "tamil_joint_search.py:decode_lattice",
+      "operations": {
+        "87": "add ROOF modifier to fish expression",
+        "211": "add TICK modifier to fish expression",
+        "canonical_order": [
+          "STONE",
+          "kōḻi"
+        ]
+      }
+    },
+    "namespace": "Mahadevan1977",
+    "context": "59/65/60/66 lattice, separate roof87 andticks211;70/71only anonymous structure",
+    "prerequisites": [
+      "A roof87 andticks211 operational equivalences",
+      "fish glyph59 reads comparative Tamil mīṉ",
+      "qualifier meanings selected from the source lexical triangle",
+      "one canonical qualifier order across all spellings",
+      "source-conditioned boundary/allomorph realization; no productive historical law established"
+    ],
+    "support": {
+      "source_lexical_triangle": {
+        "modifier_keys": [
+          "STONE",
+          "kōḻi"
+        ],
+        "double": {
+          "entry_id": "tamil_app_280_15",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "F",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "fish"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "kallu-k-kōḻi-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "kallu",
+            "k",
+            "kōḻi",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "blue sea fish, Holocanthus imperator",
+          "printed_lexical_notes_ocr": [
+            "kallu ‘stone’, DEDR 1298; köli ‘cock, \nfowl’, D ED R 2248",
+            "Cf. koli-mi!J,."
+          ],
+          "dedr_references_ocr": [
+            "DEDR 1298",
+            "DEDR 2248"
+          ],
+          "raw_entry_text_ocr": "kallu-k-köli-m m  [kallu ‘stone’, DEDR 1298; köli ‘cock, \nfowl’, D ED R 2248] ‘a sea-fish, bluish, Holocanthus \nimperator; katal-m itt-vakai? [Cf. koli-mi!J,.]",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 297,
+              "printed_page": 280,
+              "column": 1,
+              "bbox_pdf_points": [
+                330,
+                137.14,
+                565,
+                172.54
+              ],
+              "raw_text": "kallu-k-köli-m m  [kallu ‘stone’, DEDR 1298; köli ‘cock, \nfowl’, D ED R 2248] ‘a sea-fish, bluish, Holocanthus \nimperator; katal-m itt-vakai? [Cf. koli-mi!J,.]"
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "kallu",
+            "k",
+            "kōḻi",
+            "mīṉ"
+          ]
+        },
+        "first": {
+          "entry_id": "tamil_app_280_17",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "F",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "fish"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "kaṉ-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "kaṉ",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "bride-fish, Lutjanus marginatus",
+          "printed_lexical_notes_ocr": [
+            "J [kal ‘stone’, DEDR 1298",
+            "‘one kind of sea-fish’"
+          ],
+          "dedr_references_ocr": [
+            "DEDR 1298"
+          ],
+          "raw_entry_text_ocr": "ka'!}-mi'[J [kal ‘stone’, DEDR 1298] ‘bride-fish, purplish- \nyellow, attaining 16 inches in length, Lutjanus marginatus; \noru -vakai-k katal-m in [‘one kind of sea-fish’]’.",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 297,
+              "printed_page": 280,
+              "column": 1,
+              "bbox_pdf_points": [
+                330,
+                194.39,
+                565,
+                229.79
+              ],
+              "raw_text": "ka'!}-mi'[J [kal ‘stone’, DEDR 1298] ‘bride-fish, purplish- \nyellow, attaining 16 inches in length, Lutjanus marginatus; \noru -vakai-k katal-m in [‘one kind of sea-fish’]’."
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "kaṉ",
+            "mīṉ"
+          ]
+        },
+        "second": {
+          "entry_id": "tamil_app_281_07",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "F",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "fish"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "kōḻi-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "kōḻi",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "sturgeon, Achanthurus gahm as source spells it",
+          "printed_lexical_notes_ocr": [
+            "köli ‘cock, \nfowl’, \nD E D R  2248",
+            "Cf. kallu-k-köli-m iy; m ancat-köli-m iy."
+          ],
+          "dedr_references_ocr": [
+            "DEDR  2248"
+          ],
+          "raw_entry_text_ocr": "köli-m iy \n[köli ‘cock, \nfowl’, \nD E D R  2248] ‘sturgeon, \nblackish-brown, attaining 18 inches in length, Achanthurus \ngahm; p a tiyett’ atikula nifamum karu-niram um  ulla katal- \nm iy- va k a i'. [Cf. kallu-k-köli-m iy; m ancat-köli-m iy.]",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 298,
+              "printed_page": 281,
+              "column": 0,
+              "bbox_pdf_points": [
+                52,
+                422.09,
+                280,
+                468.64
+              ],
+              "raw_text": "köli-m iy \n[köli ‘cock, \nfowl’, \nD E D R  2248] ‘sturgeon, \nblackish-brown, attaining 18 inches in length, Achanthurus \ngahm; p a tiyett’ atikula nifamum karu-niram um  ulla katal- \nm iy- va k a i'. [Cf. kallu-k-köli-m iy; m ancat-köli-m iy.]"
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "kōḻi",
+            "mīṉ"
+          ]
+        },
+        "source_supported_lemma_relation": "STONE via DEDR1298 source brackets",
+        "boundary_segment_analysis": "printed single m/k/v segments treated as candidate context-dependent linkers; no productive law asserted"
+      },
+      "executed_spelling_forms": [
+        {
+          "stored_sequence": [
+            "66"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "66"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "kallukkōḻimīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "87",
+            "60"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "87",
+                "60"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "kallukkōḻimīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "65",
+            "211"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "65",
+                "211"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "kallukkōḻimīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "87",
+            "59",
+            "211"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "87",
+                "59",
+                "211"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "kallukkōḻimīṉ"
+            }
+          ]
+        }
+      ],
+      "independent_phonetic_targets": 0
+    },
+    "contradictions": [
+      "strict sound-by-sign linear concatenation fails",
+      "swapping87/211modifier identities produces another compatible system",
+      "no generalization of lexical surface rules beyond supplied words yet"
+    ],
+    "alternatives": [
+      "other emitted Tamil systems",
+      "87quantity+fish with211nonphonetic role",
+      "anonymous operators"
+    ],
+    "parameters": {
+      "59": "mīṉ",
+      "65": "kaṉmīṉ",
+      "60": "kōḻimīṉ",
+      "66": "kallukkōḻimīṉ",
+      "87": "kal",
+      "211": "kōḻi"
+    },
+    "complexity": {
+      "fixed_modifier_order_rule": 1,
+      "link_segment_context_rules": 1,
+      "stone_family_context_realization_rule": 1
+    },
+    "predictions": [
+      "worked267–99compound parses",
+      "1380/2452equivalent abstract parses with root70 unread"
+    ],
+    "source_paths": [
+      "outputs/tamil_full_joint_search.json",
+      "outputs/tamil_joint_worked_readings.json",
+      "outputs/new_fish_family_propagation.json"
+    ],
+    "prior_exposure": "retrospective, A observations and semantic priors are not independent confirmations"
+  },
+  {
+    "id": "D-TAMIL-JOINT-01",
+    "route": "D",
+    "status": "conditional",
+    "claim_type": "sound_assignment",
+    "rule": {
+      "mapping": {
+        "59": "mīṉ",
+        "65": "kōḻimīṉ",
+        "60": "kaṉmīṉ",
+        "66": "kallukkōḻimīṉ",
+        "87": "kōḻi",
+        "211": "kal"
+      },
+      "decoder": "tamil_joint_search.py:decode_lattice",
+      "operations": {
+        "87": "add ROOF modifier to fish expression",
+        "211": "add TICK modifier to fish expression",
+        "canonical_order": [
+          "STONE",
+          "kōḻi"
+        ]
+      }
+    },
+    "namespace": "Mahadevan1977",
+    "context": "59/65/60/66 lattice, separate roof87 andticks211;70/71only anonymous structure",
+    "prerequisites": [
+      "A roof87 andticks211 operational equivalences",
+      "fish glyph59 reads comparative Tamil mīṉ",
+      "qualifier meanings selected from the source lexical triangle",
+      "one canonical qualifier order across all spellings",
+      "source-conditioned boundary/allomorph realization; no productive historical law established"
+    ],
+    "support": {
+      "source_lexical_triangle": {
+        "modifier_keys": [
+          "STONE",
+          "kōḻi"
+        ],
+        "double": {
+          "entry_id": "tamil_app_280_15",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "F",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "fish"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "kallu-k-kōḻi-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "kallu",
+            "k",
+            "kōḻi",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "blue sea fish, Holocanthus imperator",
+          "printed_lexical_notes_ocr": [
+            "kallu ‘stone’, DEDR 1298; köli ‘cock, \nfowl’, D ED R 2248",
+            "Cf. koli-mi!J,."
+          ],
+          "dedr_references_ocr": [
+            "DEDR 1298",
+            "DEDR 2248"
+          ],
+          "raw_entry_text_ocr": "kallu-k-köli-m m  [kallu ‘stone’, DEDR 1298; köli ‘cock, \nfowl’, D ED R 2248] ‘a sea-fish, bluish, Holocanthus \nimperator; katal-m itt-vakai? [Cf. koli-mi!J,.]",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 297,
+              "printed_page": 280,
+              "column": 1,
+              "bbox_pdf_points": [
+                330,
+                137.14,
+                565,
+                172.54
+              ],
+              "raw_text": "kallu-k-köli-m m  [kallu ‘stone’, DEDR 1298; köli ‘cock, \nfowl’, D ED R 2248] ‘a sea-fish, bluish, Holocanthus \nimperator; katal-m itt-vakai? [Cf. koli-mi!J,.]"
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "kallu",
+            "k",
+            "kōḻi",
+            "mīṉ"
+          ]
+        },
+        "first": {
+          "entry_id": "tamil_app_280_17",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "F",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "fish"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "kaṉ-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "kaṉ",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "bride-fish, Lutjanus marginatus",
+          "printed_lexical_notes_ocr": [
+            "J [kal ‘stone’, DEDR 1298",
+            "‘one kind of sea-fish’"
+          ],
+          "dedr_references_ocr": [
+            "DEDR 1298"
+          ],
+          "raw_entry_text_ocr": "ka'!}-mi'[J [kal ‘stone’, DEDR 1298] ‘bride-fish, purplish- \nyellow, attaining 16 inches in length, Lutjanus marginatus; \noru -vakai-k katal-m in [‘one kind of sea-fish’]’.",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 297,
+              "printed_page": 280,
+              "column": 1,
+              "bbox_pdf_points": [
+                330,
+                194.39,
+                565,
+                229.79
+              ],
+              "raw_text": "ka'!}-mi'[J [kal ‘stone’, DEDR 1298] ‘bride-fish, purplish- \nyellow, attaining 16 inches in length, Lutjanus marginatus; \noru -vakai-k katal-m in [‘one kind of sea-fish’]’."
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "kaṉ",
+            "mīṉ"
+          ]
+        },
+        "second": {
+          "entry_id": "tamil_app_281_07",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "F",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "fish"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "kōḻi-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "kōḻi",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "sturgeon, Achanthurus gahm as source spells it",
+          "printed_lexical_notes_ocr": [
+            "köli ‘cock, \nfowl’, \nD E D R  2248",
+            "Cf. kallu-k-köli-m iy; m ancat-köli-m iy."
+          ],
+          "dedr_references_ocr": [
+            "DEDR  2248"
+          ],
+          "raw_entry_text_ocr": "köli-m iy \n[köli ‘cock, \nfowl’, \nD E D R  2248] ‘sturgeon, \nblackish-brown, attaining 18 inches in length, Achanthurus \ngahm; p a tiyett’ atikula nifamum karu-niram um  ulla katal- \nm iy- va k a i'. [Cf. kallu-k-köli-m iy; m ancat-köli-m iy.]",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 298,
+              "printed_page": 281,
+              "column": 0,
+              "bbox_pdf_points": [
+                52,
+                422.09,
+                280,
+                468.64
+              ],
+              "raw_text": "köli-m iy \n[köli ‘cock, \nfowl’, \nD E D R  2248] ‘sturgeon, \nblackish-brown, attaining 18 inches in length, Achanthurus \ngahm; p a tiyett’ atikula nifamum karu-niram um  ulla katal- \nm iy- va k a i'. [Cf. kallu-k-köli-m iy; m ancat-köli-m iy.]"
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "kōḻi",
+            "mīṉ"
+          ]
+        },
+        "source_supported_lemma_relation": "STONE via DEDR1298 source brackets",
+        "boundary_segment_analysis": "printed single m/k/v segments treated as candidate context-dependent linkers; no productive law asserted"
+      },
+      "executed_spelling_forms": [
+        {
+          "stored_sequence": [
+            "66"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "66"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "kallukkōḻimīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "87",
+            "60"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "87",
+                "60"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "kallukkōḻimīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "65",
+            "211"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "65",
+                "211"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "kallukkōḻimīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "87",
+            "59",
+            "211"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "87",
+                "59",
+                "211"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "kallukkōḻimīṉ"
+            }
+          ]
+        }
+      ],
+      "independent_phonetic_targets": 0
+    },
+    "contradictions": [
+      "strict sound-by-sign linear concatenation fails",
+      "swapping87/211modifier identities produces another compatible system",
+      "no generalization of lexical surface rules beyond supplied words yet"
+    ],
+    "alternatives": [
+      "other emitted Tamil systems",
+      "87quantity+fish with211nonphonetic role",
+      "anonymous operators"
+    ],
+    "parameters": {
+      "59": "mīṉ",
+      "65": "kōḻimīṉ",
+      "60": "kaṉmīṉ",
+      "66": "kallukkōḻimīṉ",
+      "87": "kōḻi",
+      "211": "kal"
+    },
+    "complexity": {
+      "fixed_modifier_order_rule": 1,
+      "link_segment_context_rules": 1,
+      "stone_family_context_realization_rule": 1
+    },
+    "predictions": [
+      "worked267–99compound parses",
+      "1380/2452equivalent abstract parses with root70 unread"
+    ],
+    "source_paths": [
+      "outputs/tamil_full_joint_search.json",
+      "outputs/tamil_joint_worked_readings.json",
+      "outputs/new_fish_family_propagation.json"
+    ],
+    "prior_exposure": "retrospective, A observations and semantic priors are not independent confirmations"
+  },
+  {
+    "id": "D-TAMIL-JOINT-02",
+    "route": "D",
+    "status": "conditional",
+    "claim_type": "sound_assignment",
+    "rule": {
+      "mapping": {
+        "59": "mīṉ",
+        "65": "neymmīṉ",
+        "60": "vāṉmīṉ",
+        "66": "neyvāṉmīṉ",
+        "87": "ney",
+        "211": "vāṉ"
+      },
+      "decoder": "tamil_joint_search.py:decode_lattice",
+      "operations": {
+        "87": "add ROOF modifier to fish expression",
+        "211": "add TICK modifier to fish expression",
+        "canonical_order": [
+          "ney",
+          "vāṉ"
+        ]
+      }
+    },
+    "namespace": "Mahadevan1977",
+    "context": "59/65/60/66 lattice, separate roof87 andticks211;70/71only anonymous structure",
+    "prerequisites": [
+      "A roof87 andticks211 operational equivalences",
+      "fish glyph59 reads comparative Tamil mīṉ",
+      "qualifier meanings selected from the source lexical triangle",
+      "one canonical qualifier order across all spellings",
+      "source-conditioned boundary/allomorph realization; no productive historical law established"
+    ],
+    "support": {
+      "source_lexical_triangle": {
+        "modifier_keys": [
+          "ney",
+          "vāṉ"
+        ],
+        "double": {
+          "entry_id": "tamil_app_281_22",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "S",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "star"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "ney-vāṉ-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "ney",
+            "vāṉ",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "fourteenth nakshatra",
+          "printed_lexical_notes_ocr": [
+            "ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381",
+            "<Sanskrit \ncitrii"
+          ],
+          "dedr_references_ocr": [
+            "DEDR  3746",
+            "DEDR  \n5381"
+          ],
+          "raw_entry_text_ocr": "ney-viiy-m iy [ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381] ‘the fourteenth naksatra; cittirai-niif [<Sanskrit \ncitrii]' (Cëntan Tivakaran).",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 298,
+              "printed_page": 281,
+              "column": 1,
+              "bbox_pdf_points": [
+                310,
+                444.79,
+                562,
+                480.14
+              ],
+              "raw_text": "ney-viiy-m iy [ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381] ‘the fourteenth naksatra; cittirai-niif [<Sanskrit \ncitrii]' (Cëntan Tivakaran)."
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "ney",
+            "vāṉ",
+            "mīṉ"
+          ]
+        },
+        "first": {
+          "entry_id": "tamil_app_281_21",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "SF",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "fish",
+            "star"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "ney-m-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "ney",
+            "m",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "fourteenth nakshatra by synonym; white prawn",
+          "printed_lexical_notes_ocr": [
+            "ney ‘oil, ghee, fat’, D E D R  3746"
+          ],
+          "dedr_references_ocr": [
+            "DEDR  3746"
+          ],
+          "raw_entry_text_ocr": "ney-m -m iy [ney ‘oil, ghee, fat’, D E D R  3746] (i) =  ney-vii!J- \nm iy (Pinkala-nikantu); \n(2) \n‘white \nprawn; \nve l-l-iru f, \n(Winslow.)",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 298,
+              "printed_page": 281,
+              "column": 1,
+              "bbox_pdf_points": [
+                310,
+                410.39,
+                562,
+                445.79
+              ],
+              "raw_text": "ney-m -m iy [ney ‘oil, ghee, fat’, D E D R  3746] (i) =  ney-vii!J- \nm iy (Pinkala-nikantu); \n(2) \n‘white \nprawn; \nve l-l-iru f, \n(Winslow.)"
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "ney",
+            "m",
+            "mīṉ"
+          ]
+        },
+        "second": {
+          "entry_id": "tamil_app_283_04",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "S",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "star"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "vāṉ-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "vāṉ",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "star",
+          "printed_lexical_notes_ocr": [
+            "viiy ‘sky’, D E D R  5381"
+          ],
+          "dedr_references_ocr": [
+            "DEDR  5381"
+          ],
+          "raw_entry_text_ocr": "(1) viiy-m iy [viiy ‘sky’, D E D R  5381] ‘star; nafcattiram ’ \n(Purananiiru Arum.). Cf. ney-viiy-m tn.",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 300,
+              "printed_page": 283,
+              "column": 0,
+              "bbox_pdf_points": [
+                52,
+                168.34,
+                280,
+                192.39
+              ],
+              "raw_text": "(1) viiy-m iy [viiy ‘sky’, D E D R  5381] ‘star; nafcattiram ’ \n(Purananiiru Arum.). Cf. ney-viiy-m tn."
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "vāṉ",
+            "mīṉ"
+          ]
+        },
+        "source_supported_lemma_relation": null,
+        "boundary_segment_analysis": "printed single m/k/v segments treated as candidate context-dependent linkers; no productive law asserted"
+      },
+      "executed_spelling_forms": [
+        {
+          "stored_sequence": [
+            "66"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "66"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "neyvāṉmīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "87",
+            "60"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "87",
+                "60"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "neyvāṉmīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "65",
+            "211"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "65",
+                "211"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "neyvāṉmīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "87",
+            "59",
+            "211"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "87",
+                "59",
+                "211"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "neyvāṉmīṉ"
+            }
+          ]
+        }
+      ],
+      "independent_phonetic_targets": 0
+    },
+    "contradictions": [
+      "strict sound-by-sign linear concatenation fails",
+      "swapping87/211modifier identities produces another compatible system",
+      "no generalization of lexical surface rules beyond supplied words yet"
+    ],
+    "alternatives": [
+      "other emitted Tamil systems",
+      "87quantity+fish with211nonphonetic role",
+      "anonymous operators"
+    ],
+    "parameters": {
+      "59": "mīṉ",
+      "65": "neymmīṉ",
+      "60": "vāṉmīṉ",
+      "66": "neyvāṉmīṉ",
+      "87": "ney",
+      "211": "vāṉ"
+    },
+    "complexity": {
+      "fixed_modifier_order_rule": 1,
+      "link_segment_context_rules": 1,
+      "stone_family_context_realization_rule": 0
+    },
+    "predictions": [
+      "worked267–99compound parses",
+      "1380/2452equivalent abstract parses with root70 unread"
+    ],
+    "source_paths": [
+      "outputs/tamil_full_joint_search.json",
+      "outputs/tamil_joint_worked_readings.json",
+      "outputs/new_fish_family_propagation.json"
+    ],
+    "prior_exposure": "retrospective, A observations and semantic priors are not independent confirmations"
+  },
+  {
+    "id": "D-TAMIL-JOINT-03",
+    "route": "D",
+    "status": "conditional",
+    "claim_type": "sound_assignment",
+    "rule": {
+      "mapping": {
+        "59": "mīṉ",
+        "65": "vāṉmīṉ",
+        "60": "neymmīṉ",
+        "66": "neyvāṉmīṉ",
+        "87": "vāṉ",
+        "211": "ney"
+      },
+      "decoder": "tamil_joint_search.py:decode_lattice",
+      "operations": {
+        "87": "add ROOF modifier to fish expression",
+        "211": "add TICK modifier to fish expression",
+        "canonical_order": [
+          "ney",
+          "vāṉ"
+        ]
+      }
+    },
+    "namespace": "Mahadevan1977",
+    "context": "59/65/60/66 lattice, separate roof87 andticks211;70/71only anonymous structure",
+    "prerequisites": [
+      "A roof87 andticks211 operational equivalences",
+      "fish glyph59 reads comparative Tamil mīṉ",
+      "qualifier meanings selected from the source lexical triangle",
+      "one canonical qualifier order across all spellings",
+      "source-conditioned boundary/allomorph realization; no productive historical law established"
+    ],
+    "support": {
+      "source_lexical_triangle": {
+        "modifier_keys": [
+          "ney",
+          "vāṉ"
+        ],
+        "double": {
+          "entry_id": "tamil_app_281_22",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "S",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "star"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "ney-vāṉ-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "ney",
+            "vāṉ",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "fourteenth nakshatra",
+          "printed_lexical_notes_ocr": [
+            "ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381",
+            "<Sanskrit \ncitrii"
+          ],
+          "dedr_references_ocr": [
+            "DEDR  3746",
+            "DEDR  \n5381"
+          ],
+          "raw_entry_text_ocr": "ney-viiy-m iy [ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381] ‘the fourteenth naksatra; cittirai-niif [<Sanskrit \ncitrii]' (Cëntan Tivakaran).",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 298,
+              "printed_page": 281,
+              "column": 1,
+              "bbox_pdf_points": [
+                310,
+                444.79,
+                562,
+                480.14
+              ],
+              "raw_text": "ney-viiy-m iy [ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381] ‘the fourteenth naksatra; cittirai-niif [<Sanskrit \ncitrii]' (Cëntan Tivakaran)."
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "ney",
+            "vāṉ",
+            "mīṉ"
+          ]
+        },
+        "first": {
+          "entry_id": "tamil_app_281_21",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "SF",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "fish",
+            "star"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "ney-m-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "ney",
+            "m",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "fourteenth nakshatra by synonym; white prawn",
+          "printed_lexical_notes_ocr": [
+            "ney ‘oil, ghee, fat’, D E D R  3746"
+          ],
+          "dedr_references_ocr": [
+            "DEDR  3746"
+          ],
+          "raw_entry_text_ocr": "ney-m -m iy [ney ‘oil, ghee, fat’, D E D R  3746] (i) =  ney-vii!J- \nm iy (Pinkala-nikantu); \n(2) \n‘white \nprawn; \nve l-l-iru f, \n(Winslow.)",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 298,
+              "printed_page": 281,
+              "column": 1,
+              "bbox_pdf_points": [
+                310,
+                410.39,
+                562,
+                445.79
+              ],
+              "raw_text": "ney-m -m iy [ney ‘oil, ghee, fat’, D E D R  3746] (i) =  ney-vii!J- \nm iy (Pinkala-nikantu); \n(2) \n‘white \nprawn; \nve l-l-iru f, \n(Winslow.)"
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "ney",
+            "m",
+            "mīṉ"
+          ]
+        },
+        "second": {
+          "entry_id": "tamil_app_283_04",
+          "language": "Tamil",
+          "entry_type": "category_marked_lexical_entry",
+          "source_category_code": "S",
+          "source_category_code_origin": "embedded_pdf_ocr",
+          "compound_senses": [
+            "star"
+          ],
+          "first_component_only_star_sense": false,
+          "printed_form_transcription": "vāṉ-mīṉ",
+          "form_status": "visually_transcribed",
+          "form_uncertainty": null,
+          "segmentation_as_printed": [
+            "vāṉ",
+            "mīṉ"
+          ],
+          "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+          "gloss_summary": "star",
+          "printed_lexical_notes_ocr": [
+            "viiy ‘sky’, D E D R  5381"
+          ],
+          "dedr_references_ocr": [
+            "DEDR  5381"
+          ],
+          "raw_entry_text_ocr": "(1) viiy-m iy [viiy ‘sky’, D E D R  5381] ‘star; nafcattiram ’ \n(Purananiiru Arum.). Cf. ney-viiy-m tn.",
+          "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+          "source_regions": [
+            {
+              "pdf_page_index": 300,
+              "printed_page": 283,
+              "column": 0,
+              "bbox_pdf_points": [
+                52,
+                168.34,
+                280,
+                192.39
+              ],
+              "raw_text": "(1) viiy-m iy [viiy ‘sky’, D E D R  5381] ‘star; nafcattiram ’ \n(Purananiiru Arum.). Cf. ney-viiy-m tn."
+            }
+          ],
+          "phonology_test_eligible": true,
+          "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+          "indus_assignment": null,
+          "segmentation_for_search": [
+            "vāṉ",
+            "mīṉ"
+          ]
+        },
+        "source_supported_lemma_relation": null,
+        "boundary_segment_analysis": "printed single m/k/v segments treated as candidate context-dependent linkers; no productive law asserted"
+      },
+      "executed_spelling_forms": [
+        {
+          "stored_sequence": [
+            "66"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "66"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "neyvāṉmīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "87",
+            "60"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "87",
+                "60"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "neyvāṉmīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "65",
+            "211"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "65",
+                "211"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "neyvāṉmīṉ"
+            }
+          ]
+        },
+        {
+          "stored_sequence": [
+            "87",
+            "59",
+            "211"
+          ],
+          "executed_parse": [
+            {
+              "source_signs": [
+                "87",
+                "59",
+                "211"
+              ],
+              "root": "mīṉ",
+              "operators": [
+                "ROOF",
+                "TICK"
+              ],
+              "candidate_surface": "neyvāṉmīṉ"
+            }
+          ]
+        }
+      ],
+      "independent_phonetic_targets": 0
+    },
+    "contradictions": [
+      "strict sound-by-sign linear concatenation fails",
+      "swapping87/211modifier identities produces another compatible system",
+      "no generalization of lexical surface rules beyond supplied words yet"
+    ],
+    "alternatives": [
+      "other emitted Tamil systems",
+      "87quantity+fish with211nonphonetic role",
+      "anonymous operators"
+    ],
+    "parameters": {
+      "59": "mīṉ",
+      "65": "vāṉmīṉ",
+      "60": "neymmīṉ",
+      "66": "neyvāṉmīṉ",
+      "87": "vāṉ",
+      "211": "ney"
+    },
+    "complexity": {
+      "fixed_modifier_order_rule": 1,
+      "link_segment_context_rules": 1,
+      "stone_family_context_realization_rule": 0
+    },
+    "predictions": [
+      "worked267–99compound parses",
+      "1380/2452equivalent abstract parses with root70 unread"
+    ],
+    "source_paths": [
+      "outputs/tamil_full_joint_search.json",
+      "outputs/tamil_joint_worked_readings.json",
+      "outputs/new_fish_family_propagation.json"
+    ],
+    "prior_exposure": "retrospective, A observations and semantic priors are not independent confirmations"
+  }
+]

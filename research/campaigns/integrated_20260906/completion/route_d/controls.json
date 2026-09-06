@@ -1,0 +1,1022 @@
+{
+  "constructed": {
+    "evidence_class": "constructed_control_not_Indus",
+    "training": [
+      [
+        [
+          "A",
+          "B"
+        ],
+        "kami"
+      ],
+      [
+        [
+          "A",
+          "C"
+        ],
+        "katu"
+      ],
+      [
+        [
+          "D",
+          "B"
+        ],
+        "sami"
+      ]
+    ],
+    "unanchored_segmentations": [
+      {
+        "A": "k",
+        "B": "ami",
+        "C": "atu",
+        "D": "s"
+      },
+      {
+        "A": "ka",
+        "B": "mi",
+        "C": "tu",
+        "D": "sa"
+      }
+    ],
+    "independent_A_ka_anchor": [
+      {
+        "A": "ka",
+        "B": "mi",
+        "C": "tu",
+        "D": "sa"
+      }
+    ],
+    "mixed_classifier_control": [
+      {
+        "N": "",
+        "A": "ka",
+        "B": "mi",
+        "C": "tu",
+        "D": "sa"
+      }
+    ],
+    "withheld_D_C_predictions": [
+      "satu"
+    ],
+    "withheld_D_C_true": "satu",
+    "incompatible_D_C_sata_solutions": 0
+  },
+  "held_linear_b": {
+    "evidence_class": "already_held_transliterated_LinearB_diagnostic",
+    "source": "research/data/open_prototype/known_scripts/linear_b_series_d/Samples.txt",
+    "source_sha256": "b535abc5be2e77cb2ac6af60a87341e4091b975c9132e02af0f2b0fb2aa90837",
+    "supplied_training_symbol_mapping": {
+      "S0": "a",
+      "S6": "di",
+      "S12": "je",
+      "S64": "wo",
+      "S45": "ri",
+      "S13": "jo",
+      "S8": "du",
+      "S48": "ru",
+      "S34": "po",
+      "S58": "to",
+      "S14": "ka",
+      "S15": "ke",
+      "S9": "e",
+      "S60": "u",
+      "S17": "ko",
+      "S10": "i",
+      "S4": "da",
+      "S46": "ro",
+      "S22": "mo",
+      "S41": "qo",
+      "S18": "ku",
+      "S21": "mi",
+      "S26": "ni",
+      "S51": "si",
+      "S11": "ja",
+      "S24": "na",
+      "S16": "ki",
+      "S57": "ti",
+      "S27": "no",
+      "S62": "we",
+      "S28": "nu",
+      "S31": "pa",
+      "S33": "pi",
+      "S54": "ta",
+      "S40": "qi",
+      "S42": "ra",
+      "S44": "re",
+      "S50": "se",
+      "S63": "wi",
+      "S56": "te",
+      "S59": "tu",
+      "S61": "wa",
+      "S52": "so",
+      "S66": "ze",
+      "S30": "o",
+      "S2": "a3",
+      "S3": "au",
+      "S55": "ta2",
+      "S29": "nwa",
+      "S23": "mu",
+      "S5": "de",
+      "S65": "za",
+      "S7": "do",
+      "S37": "pu2",
+      "S67": "zo",
+      "S20": "me",
+      "S19": "ma",
+      "S1": "a2",
+      "S25": "ne",
+      "S32": "pe",
+      "S35": "pte",
+      "S49": "sa",
+      "S53": "su",
+      "S38": "qa",
+      "S36": "pu",
+      "S43": "ra2",
+      "S39": "qe",
+      "S47": "ro2"
+    },
+    "training_word_types": 304,
+    "held_word_types": 76,
+    "predictions": [
+      {
+        "encoded": [
+          "S0",
+          "S4",
+          "S42",
+          "S46"
+        ],
+        "prediction": "adararo",
+        "target": "adararo",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S0",
+          "S14",
+          "S10",
+          "S13"
+        ],
+        "prediction": "akaijo",
+        "target": "akaijo",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S0",
+          "S17",
+          "S22",
+          "S26",
+          "S13"
+        ],
+        "prediction": "akomonijo",
+        "target": "akomonijo",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S0",
+          "S20",
+          "S0"
+        ],
+        "prediction": "amea",
+        "target": "amea",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S0",
+          "S27",
+          "S41",
+          "S54"
+        ],
+        "prediction": "anoqota",
+        "target": "anoqota",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S0",
+          "S39",
+          "S22"
+        ],
+        "prediction": "aqemo",
+        "target": "aqemo",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S0",
+          "S44",
+          "S55"
+        ],
+        "prediction": "areta2",
+        "target": "areta2",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S0",
+          "S56",
+          "S22"
+        ],
+        "prediction": "atemo",
+        "target": "atemo",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S0",
+          "S64",
+          "S10",
+          "S13"
+        ],
+        "prediction": "awoijo",
+        "target": "awoijo",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S2",
+          "S15",
+          "S61",
+          "S54"
+        ],
+        "prediction": "a3kewata",
+        "target": "a3kewata",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S2",
+          "S58"
+        ],
+        "prediction": "a3to",
+        "target": "a3to",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S4",
+          "S10",
+          "S54",
+          "S42",
+          "S46"
+        ],
+        "prediction": "daitararo",
+        "target": "daitararo",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S4",
+          "S24",
+          "S46"
+        ],
+        "prediction": "danaro",
+        "target": "danaro",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S4",
+          "S54",
+          "S11",
+          "S46"
+        ],
+        "prediction": "datajaro",
+        "target": "datajaro",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S4",
+          "S64"
+        ],
+        "prediction": "dawo",
+        "target": "dawo",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S6",
+          "S14",
+          "S54",
+          "S46"
+        ],
+        "prediction": "dikataro",
+        "target": "dikataro",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S6",
+          "S54",
+          "S14",
+          "S52"
+        ],
+        "prediction": "ditakaso",
+        "target": "ditakaso",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S7",
+          "S57",
+          "S13"
+        ],
+        "prediction": "dotijo",
+        "target": "dotijo",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S8",
+          "S58"
+        ],
+        "prediction": "duto",
+        "target": "duto",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S9",
+          "S17",
+          "S52"
+        ],
+        "prediction": "ekoso",
+        "target": "ekoso",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S9",
+          "S38",
+          "S46"
+        ],
+        "prediction": "eqaro",
+        "target": "eqaro",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S9",
+          "S48",
+          "S58",
+          "S46"
+        ],
+        "prediction": "erutoro",
+        "target": "erutoro",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S9",
+          "S60",
+          "S22"
+        ],
+        "prediction": "eumo",
+        "target": "eumo",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S10",
+          "S15",
+          "S50",
+          "S42"
+        ],
+        "prediction": "ikesera",
+        "target": "ikesera",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S10",
+          "S57",
+          "S28",
+          "S45"
+        ],
+        "prediction": "itinuri",
+        "target": "itinuri",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S14",
+          "S4",
+          "S27"
+        ],
+        "prediction": "kadano",
+        "target": "kadano",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S14",
+          "S25",
+          "S60",
+          "S54"
+        ],
+        "prediction": "kaneuta",
+        "target": "kaneuta",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S14",
+          "S54",
+          "S64"
+        ],
+        "prediction": "katawo",
+        "target": "katawo",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S15",
+          "S20",
+          "S60"
+        ],
+        "prediction": "kemeu",
+        "target": "kemeu",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S16",
+          "S23",
+          "S17"
+        ],
+        "prediction": "kimuko",
+        "target": "kimuko",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S16",
+          "S54",
+          "S25",
+          "S58"
+        ],
+        "prediction": "kitaneto",
+        "target": "kitaneto",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S17",
+          "S27",
+          "S51",
+          "S11"
+        ],
+        "prediction": "konosija",
+        "target": "konosija",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S17",
+          "S57"
+        ],
+        "prediction": "koti",
+        "target": "koti",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S18",
+          "S13"
+        ],
+        "prediction": "kujo",
+        "target": "kujo",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S18",
+          "S21",
+          "S52"
+        ],
+        "prediction": "kumiso",
+        "target": "kumiso",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S18",
+          "S54",
+          "S51",
+          "S13"
+        ],
+        "prediction": "kutasijo",
+        "target": "kutasijo",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S19",
+          "S42",
+          "S33",
+          "S13"
+        ],
+        "prediction": "marapijo",
+        "target": "marapijo",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S20",
+          "S45",
+          "S61",
+          "S54"
+        ],
+        "prediction": "meriwata",
+        "target": "meriwata",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S22",
+          "S26",
+          "S17"
+        ],
+        "prediction": "moniko",
+        "target": "moniko",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S24",
+          "S63",
+          "S46"
+        ],
+        "prediction": "nawiro",
+        "target": "nawiro",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S30",
+          "S18"
+        ],
+        "prediction": "oku",
+        "target": "oku",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S30",
+          "S31"
+        ],
+        "prediction": "opa",
+        "target": "opa",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S30",
+          "S58",
+          "S46",
+          "S38"
+        ],
+        "prediction": "otoroqa",
+        "target": "otoroqa",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S31",
+          "S42",
+          "S58"
+        ],
+        "prediction": "parato",
+        "target": "parato",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S32",
+          "S17"
+        ],
+        "prediction": "peko",
+        "target": "peko",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S32",
+          "S48",
+          "S51",
+          "S29"
+        ],
+        "prediction": "perusinwa",
+        "target": "perusinwa",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S34",
+          "S14",
+          "S46"
+        ],
+        "prediction": "pokaro",
+        "target": "pokaro",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S34",
+          "S48",
+          "S41",
+          "S58"
+        ],
+        "prediction": "poruqoto",
+        "target": "poruqoto",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S34",
+          "S58"
+        ],
+        "prediction": "poto",
+        "target": "poto",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S36",
+          "S52"
+        ],
+        "prediction": "puso",
+        "target": "puso",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S38",
+          "S24",
+          "S27",
+          "S58"
+        ],
+        "prediction": "qananoto",
+        "target": "qananoto",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S38",
+          "S43",
+          "S46"
+        ],
+        "prediction": "qara2ro",
+        "target": "qara2ro",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S39",
+          "S4",
+          "S7",
+          "S46"
+        ],
+        "prediction": "qedadoro",
+        "target": "qedadoro",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S40",
+          "S26",
+          "S56",
+          "S62"
+        ],
+        "prediction": "qinitewe",
+        "target": "qinitewe",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S41",
+          "S56",
+          "S46"
+        ],
+        "prediction": "qotero",
+        "target": "qotero",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S42",
+          "S60",
+          "S42",
+          "S54"
+        ],
+        "prediction": "raurata",
+        "target": "raurata",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S45",
+          "S63",
+          "S52"
+        ],
+        "prediction": "riwiso",
+        "target": "riwiso",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S48",
+          "S19",
+          "S27"
+        ],
+        "prediction": "rumano",
+        "target": "rumano",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S49",
+          "S19",
+          "S45",
+          "S61",
+          "S54"
+        ],
+        "prediction": "samariwata",
+        "target": "samariwata",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S49",
+          "S67"
+        ],
+        "prediction": "sazo",
+        "target": "sazo",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S51",
+          "S4",
+          "S13"
+        ],
+        "prediction": "sidajo",
+        "target": "sidajo",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S51",
+          "S45",
+          "S33",
+          "S13"
+        ],
+        "prediction": "siripijo",
+        "target": "siripijo",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S53",
+          "S19",
+          "S27"
+        ],
+        "prediction": "sumano",
+        "target": "sumano",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S53",
+          "S54",
+          "S27"
+        ],
+        "prediction": "sutano",
+        "target": "sutano",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S54",
+          "S24",
+          "S34",
+          "S52"
+        ],
+        "prediction": "tanaposo",
+        "target": "tanaposo",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S54",
+          "S60",
+          "S24",
+          "S52"
+        ],
+        "prediction": "taunaso",
+        "target": "taunaso",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S56",
+          "S16",
+          "S45",
+          "S25",
+          "S58"
+        ],
+        "prediction": "tekirineto",
+        "target": "tekirineto",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S56",
+          "S48",
+          "S49"
+        ],
+        "prediction": "terusa",
+        "target": "terusa",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S57",
+          "S45",
+          "S58"
+        ],
+        "prediction": "tirito",
+        "target": "tirito",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S58",
+          "S63",
+          "S27"
+        ],
+        "prediction": "towino",
+        "target": "towino",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S59",
+          "S45",
+          "S52"
+        ],
+        "prediction": "turiso",
+        "target": "turiso",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S60",
+          "S54",
+          "S13",
+          "S13"
+        ],
+        "prediction": "utajojo",
+        "target": "utajojo",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S62",
+          "S42",
+          "S58"
+        ],
+        "prediction": "werato",
+        "target": "werato",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S63",
+          "S4",
+          "S19",
+          "S46"
+        ],
+        "prediction": "widamaro",
+        "target": "widamaro",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S63",
+          "S13",
+          "S41",
+          "S54"
+        ],
+        "prediction": "wijoqota",
+        "target": "wijoqota",
+        "all_syllables_seen": true,
+        "correct": true
+      },
+      {
+        "encoded": [
+          "S63",
+          "S53",
+          "S46"
+        ],
+        "prediction": "wisuro",
+        "target": "wisuro",
+        "all_syllables_seen": true,
+        "correct": true
+      }
+    ],
+    "correct": 76,
+    "limitation": "Syllable boundaries and training readings supplied by deciphered source; not blind recovery."
+  },
+  "alphabet_renaming": {
+    "tamil": {
+      "all_vocabulary_items_checked": 88,
+      "bijection_preserves_membership_and_length": true,
+      "objective_invariant": true,
+      "independent_sound_targets": 0
+    },
+    "sanskrit": {
+      "all_vocabulary_items_checked": 192482,
+      "bijection_preserves_membership_and_length": true,
+      "objective_invariant": true,
+      "independent_sound_targets": 0
+    }
+  }
+}

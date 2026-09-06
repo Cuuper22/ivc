@@ -1,0 +1,31 @@
+{
+  "schema": "ivc.reconstructed.linguistic.v1",
+  "language": "anonymous",
+  "orientation": "append",
+  "char_bits": 1.0,
+  "boundary_bits": 1.0,
+  "fusion_bits": 0.0,
+  "roots": {},
+  "marker": "",
+  "marker_role": "phonetic",
+  "mapping": {},
+  "trace": [
+    {
+      "iteration": 0,
+      "objective_bits": 899.0,
+      "step": "anonymous labels or silent classifiers; no sound search applicable"
+    }
+  ],
+  "train_rows": 2524,
+  "train_digest": "c895bcd739130e0951bf27a570a20946ee342344e23b5a24a09b0593efd4256c",
+  "factor_type": "conditional_lexical_prior_not_text_likelihood",
+  "independent_Indus_sound_targets": 0,
+  "sources": [
+    "shared/observations.jsonl",
+    "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml"
+  ],
+  "scope": "four graphical fish bases; unknown signs including70 stay unread; retrospective",
+  "limitations": "finite coordinate optimum, conditional graphic expansion, no historical sound changes or ancient language identification",
+  "converged": true,
+  "id": "anonymous_append"
+}

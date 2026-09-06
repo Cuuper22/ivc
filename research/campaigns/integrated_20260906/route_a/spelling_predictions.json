@@ -1,0 +1,3325 @@
+{
+  "task": "Select a separate written unit from other graphical bases; predict expanded form and observed continuation of target base",
+  "folds": [
+    {
+      "withheld_base": "59",
+      "winner": "12",
+      "training_top5": [
+        {
+          "marker": "12",
+          "training_bits": 89.05057841390531,
+          "base_marker_examples": 5
+        },
+        {
+          "marker": "388",
+          "training_bits": 89.05057841390531,
+          "base_marker_examples": 5
+        },
+        {
+          "marker": "68",
+          "training_bits": 96.60889607309856,
+          "base_marker_examples": 1
+        },
+        {
+          "marker": "73",
+          "training_bits": 96.60889607309856,
+          "base_marker_examples": 1
+        },
+        {
+          "marker": "138",
+          "training_bits": 96.60889607309856,
+          "base_marker_examples": 1
+        }
+      ],
+      "target_occurrences": 21,
+      "heldout_continuation_bits": 38.941606936794095,
+      "exact_predicted_forms_observed": 0,
+      "excluded_object_ids": [
+        "M77:1004",
+        "M77:1008",
+        "M77:1014",
+        "M77:1019",
+        "M77:1032",
+        "M77:1041",
+        "M77:1048",
+        "M77:1066",
+        "M77:1068",
+        "M77:1071",
+        "M77:1079",
+        "M77:1087",
+        "M77:1088",
+        "M77:1094",
+        "M77:1103",
+        "M77:1105",
+        "M77:1110",
+        "M77:1114",
+        "M77:1117",
+        "M77:1120",
+        "M77:1125",
+        "M77:1130",
+        "M77:1134",
+        "M77:1151",
+        "M77:1155",
+        "M77:1172",
+        "M77:1177",
+        "M77:1190",
+        "M77:1198",
+        "M77:1211",
+        "M77:1214",
+        "M77:1237",
+        "M77:1277",
+        "M77:1314",
+        "M77:1321",
+        "M77:1324",
+        "M77:1330",
+        "M77:1348",
+        "M77:1365",
+        "M77:1376",
+        "M77:1387",
+        "M77:1429",
+        "M77:1450",
+        "M77:1468",
+        "M77:1474",
+        "M77:1531",
+        "M77:1540",
+        "M77:1543",
+        "M77:1551",
+        "M77:1554",
+        "M77:1556",
+        "M77:1628",
+        "M77:1805",
+        "M77:2004",
+        "M77:2033",
+        "M77:2041",
+        "M77:2046",
+        "M77:2052",
+        "M77:2054",
+        "M77:2069",
+        "M77:2075",
+        "M77:2098",
+        "M77:2099",
+        "M77:2109",
+        "M77:2128",
+        "M77:2133",
+        "M77:2143",
+        "M77:2162",
+        "M77:2164",
+        "M77:2171",
+        "M77:2175",
+        "M77:2183",
+        "M77:2205",
+        "M77:2207",
+        "M77:2211",
+        "M77:2227",
+        "M77:2229",
+        "M77:2231",
+        "M77:2232",
+        "M77:2233",
+        "M77:2260",
+        "M77:2273",
+        "M77:2282",
+        "M77:2285",
+        "M77:2291",
+        "M77:2316",
+        "M77:2318",
+        "M77:2323",
+        "M77:2325",
+        "M77:2335",
+        "M77:2340",
+        "M77:2366",
+        "M77:2373",
+        "M77:2374",
+        "M77:2398",
+        "M77:2420",
+        "M77:2429",
+        "M77:2432",
+        "M77:2434",
+        "M77:2436",
+        "M77:2440",
+        "M77:2452",
+        "M77:2455",
+        "M77:2456",
+        "M77:2460",
+        "M77:2480",
+        "M77:2489",
+        "M77:2519",
+        "M77:2522",
+        "M77:2523",
+        "M77:2524",
+        "M77:2537",
+        "M77:2541",
+        "M77:2552",
+        "M77:2563",
+        "M77:2567",
+        "M77:2574",
+        "M77:2585",
+        "M77:2590",
+        "M77:2592",
+        "M77:2594",
+        "M77:2599",
+        "M77:2605",
+        "M77:2614",
+        "M77:2645",
+        "M77:2675",
+        "M77:2826",
+        "M77:2830",
+        "M77:2860",
+        "M77:2901",
+        "M77:2902",
+        "M77:2904",
+        "M77:2905",
+        "M77:2906",
+        "M77:2913",
+        "M77:3067",
+        "M77:3074",
+        "M77:3089",
+        "M77:3097",
+        "M77:3100",
+        "M77:3103",
+        "M77:3104",
+        "M77:3112",
+        "M77:3132",
+        "M77:3145",
+        "M77:3157",
+        "M77:3161",
+        "M77:3164",
+        "M77:3213",
+        "M77:3218",
+        "M77:3246",
+        "M77:3248",
+        "M77:3249",
+        "M77:3350",
+        "M77:3351",
+        "M77:3352",
+        "M77:3360",
+        "M77:3373",
+        "M77:4005",
+        "M77:4009",
+        "M77:4015",
+        "M77:4019",
+        "M77:4020",
+        "M77:4025",
+        "M77:4036",
+        "M77:4044",
+        "M77:4046",
+        "M77:4073",
+        "M77:4101",
+        "M77:4116",
+        "M77:4141",
+        "M77:4143",
+        "M77:4164",
+        "M77:4171",
+        "M77:4229",
+        "M77:4232",
+        "M77:4238",
+        "M77:4254",
+        "M77:4256",
+        "M77:4261",
+        "M77:4263",
+        "M77:4264",
+        "M77:4269",
+        "M77:4289",
+        "M77:4324",
+        "M77:4327",
+        "M77:4335",
+        "M77:4343",
+        "M77:4352",
+        "M77:4356",
+        "M77:4363",
+        "M77:4408",
+        "M77:4411",
+        "M77:4412",
+        "M77:4418",
+        "M77:4437",
+        "M77:4438",
+        "M77:4448",
+        "M77:4452",
+        "M77:4453",
+        "M77:4458",
+        "M77:4464",
+        "M77:4490",
+        "M77:4521",
+        "M77:4544",
+        "M77:4556",
+        "M77:4576",
+        "M77:4578",
+        "M77:4588",
+        "M77:4590",
+        "M77:4591",
+        "M77:4604",
+        "M77:4635",
+        "M77:4642",
+        "M77:4644",
+        "M77:4645",
+        "M77:4654",
+        "M77:4693",
+        "M77:4873",
+        "M77:4880",
+        "M77:5081",
+        "M77:5226",
+        "M77:5230",
+        "M77:5236",
+        "M77:5237",
+        "M77:5238",
+        "M77:5239",
+        "M77:5240",
+        "M77:5250",
+        "M77:5253",
+        "M77:5256",
+        "M77:5320",
+        "M77:5321",
+        "M77:5450",
+        "M77:5460",
+        "M77:5461",
+        "M77:5463",
+        "M77:5475",
+        "M77:5477",
+        "M77:5484",
+        "M77:6116",
+        "M77:6129",
+        "M77:6211",
+        "M77:6306",
+        "M77:7013",
+        "M77:7025",
+        "M77:7048",
+        "M77:7082",
+        "M77:7105",
+        "M77:7107",
+        "M77:7220",
+        "M77:7236",
+        "M77:7249",
+        "M77:7252",
+        "M77:7253",
+        "M77:7265",
+        "M77:7274",
+        "M77:8021",
+        "M77:8037",
+        "M77:8042",
+        "M77:8043",
+        "M77:8052",
+        "M77:8056",
+        "M77:8062",
+        "M77:9021",
+        "M77:9101",
+        "M77:9822",
+        "M77:9905"
+      ]
+    },
+    {
+      "withheld_base": "65",
+      "winner": "12",
+      "training_top5": [
+        {
+          "marker": "12",
+          "training_bits": 69.91302285362686,
+          "base_marker_examples": 6
+        },
+        {
+          "marker": "388",
+          "training_bits": 71.06184326860637,
+          "base_marker_examples": 4
+        },
+        {
+          "marker": "211",
+          "training_bits": 71.95482902439647,
+          "base_marker_examples": 56
+        },
+        {
+          "marker": "14",
+          "training_bits": 88.9090408617052,
+          "base_marker_examples": 1
+        },
+        {
+          "marker": "86",
+          "training_bits": 88.9090408617052,
+          "base_marker_examples": 1
+        }
+      ],
+      "target_occurrences": 12,
+      "heldout_continuation_bits": 60.08493062696732,
+      "exact_predicted_forms_observed": 0,
+      "excluded_object_ids": [
+        "M77:1006",
+        "M77:1021",
+        "M77:1024",
+        "M77:1040",
+        "M77:1044",
+        "M77:1060",
+        "M77:1087",
+        "M77:1098",
+        "M77:1109",
+        "M77:1119",
+        "M77:1147",
+        "M77:1158",
+        "M77:1199",
+        "M77:1213",
+        "M77:1235",
+        "M77:1269",
+        "M77:1277",
+        "M77:1283",
+        "M77:1306",
+        "M77:1316",
+        "M77:1320",
+        "M77:1321",
+        "M77:1326",
+        "M77:1345",
+        "M77:1350",
+        "M77:1369",
+        "M77:1374",
+        "M77:1380",
+        "M77:1400",
+        "M77:1403",
+        "M77:1404",
+        "M77:1414",
+        "M77:1418",
+        "M77:1420",
+        "M77:1421",
+        "M77:1425",
+        "M77:1433",
+        "M77:1470",
+        "M77:1540",
+        "M77:1555",
+        "M77:1615",
+        "M77:1625",
+        "M77:1705",
+        "M77:1706",
+        "M77:1802",
+        "M77:2033",
+        "M77:2054",
+        "M77:2084",
+        "M77:2129",
+        "M77:2142",
+        "M77:2146",
+        "M77:2185",
+        "M77:2186",
+        "M77:2193",
+        "M77:2221",
+        "M77:2232",
+        "M77:2234",
+        "M77:2238",
+        "M77:2271",
+        "M77:2307",
+        "M77:2324",
+        "M77:2325",
+        "M77:2326",
+        "M77:2327",
+        "M77:2344",
+        "M77:2396",
+        "M77:2398",
+        "M77:2405",
+        "M77:2406",
+        "M77:2410",
+        "M77:2426",
+        "M77:2469",
+        "M77:2507",
+        "M77:2520",
+        "M77:2523",
+        "M77:2536",
+        "M77:2545",
+        "M77:2574",
+        "M77:2583",
+        "M77:2608",
+        "M77:2643",
+        "M77:2654",
+        "M77:2675",
+        "M77:2694",
+        "M77:2818",
+        "M77:2820",
+        "M77:2821",
+        "M77:2825",
+        "M77:2839",
+        "M77:2852",
+        "M77:3016",
+        "M77:3070",
+        "M77:3074",
+        "M77:3089",
+        "M77:3102",
+        "M77:3116",
+        "M77:3120",
+        "M77:3156",
+        "M77:3206",
+        "M77:3216",
+        "M77:3220",
+        "M77:3222",
+        "M77:3304",
+        "M77:3312",
+        "M77:3317",
+        "M77:3318",
+        "M77:3331",
+        "M77:3337",
+        "M77:3355",
+        "M77:3381",
+        "M77:3384",
+        "M77:3415",
+        "M77:4005",
+        "M77:4022",
+        "M77:4028",
+        "M77:4057",
+        "M77:4072",
+        "M77:4076",
+        "M77:4081",
+        "M77:4088",
+        "M77:4104",
+        "M77:4105",
+        "M77:4117",
+        "M77:4241",
+        "M77:4269",
+        "M77:4274",
+        "M77:4275",
+        "M77:4285",
+        "M77:4342",
+        "M77:4343",
+        "M77:4358",
+        "M77:4415",
+        "M77:4440",
+        "M77:4442",
+        "M77:4467",
+        "M77:4493",
+        "M77:4646",
+        "M77:4806",
+        "M77:5064",
+        "M77:5086",
+        "M77:5090",
+        "M77:5211",
+        "M77:5222",
+        "M77:5223",
+        "M77:5231",
+        "M77:5232",
+        "M77:5237",
+        "M77:5238",
+        "M77:5239",
+        "M77:5240",
+        "M77:5275",
+        "M77:5276",
+        "M77:5286",
+        "M77:5321",
+        "M77:5323",
+        "M77:6124",
+        "M77:6202",
+        "M77:6204",
+        "M77:6206",
+        "M77:6226",
+        "M77:7028",
+        "M77:7043",
+        "M77:7056",
+        "M77:7057",
+        "M77:7080",
+        "M77:7090",
+        "M77:7249",
+        "M77:7251",
+        "M77:7255",
+        "M77:7267",
+        "M77:7269",
+        "M77:9011",
+        "M77:9022",
+        "M77:9031",
+        "M77:9201"
+      ]
+    },
+    {
+      "withheld_base": "67",
+      "winner": "388",
+      "training_top5": [
+        {
+          "marker": "388",
+          "training_bits": 116.31491467625101,
+          "base_marker_examples": 5
+        },
+        {
+          "marker": "71",
+          "training_bits": 121.22507760498532,
+          "base_marker_examples": 4
+        },
+        {
+          "marker": "211",
+          "training_bits": 133.11243111940473,
+          "base_marker_examples": 45
+        },
+        {
+          "marker": "14",
+          "training_bits": 136.7008293205253,
+          "base_marker_examples": 1
+        },
+        {
+          "marker": "86",
+          "training_bits": 136.7008293205253,
+          "base_marker_examples": 1
+        }
+      ],
+      "target_occurrences": 7,
+      "heldout_continuation_bits": 15.263482727082655,
+      "exact_predicted_forms_observed": 0,
+      "excluded_object_ids": [
+        "M77:1008",
+        "M77:1011",
+        "M77:1014",
+        "M77:1021",
+        "M77:1036",
+        "M77:1049",
+        "M77:1053",
+        "M77:1065",
+        "M77:1079",
+        "M77:1080",
+        "M77:1087",
+        "M77:1088",
+        "M77:1093",
+        "M77:1096",
+        "M77:1108",
+        "M77:1109",
+        "M77:1155",
+        "M77:1180",
+        "M77:1198",
+        "M77:1235",
+        "M77:1263",
+        "M77:1320",
+        "M77:1324",
+        "M77:1347",
+        "M77:1351",
+        "M77:1367",
+        "M77:1373",
+        "M77:1388",
+        "M77:1400",
+        "M77:1401",
+        "M77:1404",
+        "M77:1431",
+        "M77:1447",
+        "M77:1529",
+        "M77:1530",
+        "M77:1534",
+        "M77:1535",
+        "M77:1550",
+        "M77:1553",
+        "M77:1616",
+        "M77:1629",
+        "M77:1709",
+        "M77:2026",
+        "M77:2033",
+        "M77:2047",
+        "M77:2048",
+        "M77:2052",
+        "M77:2079",
+        "M77:2081",
+        "M77:2083",
+        "M77:2120",
+        "M77:2123",
+        "M77:2146",
+        "M77:2161",
+        "M77:2184",
+        "M77:2186",
+        "M77:2193",
+        "M77:2199",
+        "M77:2221",
+        "M77:2224",
+        "M77:2227",
+        "M77:2260",
+        "M77:2271",
+        "M77:2272",
+        "M77:2280",
+        "M77:2281",
+        "M77:2297",
+        "M77:2305",
+        "M77:2307",
+        "M77:2326",
+        "M77:2327",
+        "M77:2334",
+        "M77:2338",
+        "M77:2344",
+        "M77:2345",
+        "M77:2348",
+        "M77:2384",
+        "M77:2396",
+        "M77:2402",
+        "M77:2410",
+        "M77:2414",
+        "M77:2417",
+        "M77:2426",
+        "M77:2457",
+        "M77:2502",
+        "M77:2526",
+        "M77:2537",
+        "M77:2564",
+        "M77:2614",
+        "M77:2618",
+        "M77:2625",
+        "M77:2641",
+        "M77:2647",
+        "M77:2685",
+        "M77:2694",
+        "M77:2818",
+        "M77:2820",
+        "M77:2825",
+        "M77:2835",
+        "M77:2839",
+        "M77:2848",
+        "M77:2863",
+        "M77:2910",
+        "M77:2946",
+        "M77:2947",
+        "M77:3016",
+        "M77:3070",
+        "M77:3074",
+        "M77:3089",
+        "M77:3106",
+        "M77:3120",
+        "M77:3121",
+        "M77:3165",
+        "M77:3206",
+        "M77:3216",
+        "M77:3220",
+        "M77:3222",
+        "M77:3320",
+        "M77:3322",
+        "M77:3332",
+        "M77:3372",
+        "M77:3374",
+        "M77:4005",
+        "M77:4016",
+        "M77:4026",
+        "M77:4052",
+        "M77:4056",
+        "M77:4078",
+        "M77:4079",
+        "M77:4082",
+        "M77:4084",
+        "M77:4090",
+        "M77:4103",
+        "M77:4104",
+        "M77:4106",
+        "M77:4125",
+        "M77:4140",
+        "M77:4241",
+        "M77:4263",
+        "M77:4285",
+        "M77:4314",
+        "M77:4315",
+        "M77:4321",
+        "M77:4343",
+        "M77:4345",
+        "M77:4346",
+        "M77:4362",
+        "M77:4371",
+        "M77:4373",
+        "M77:4442",
+        "M77:4445",
+        "M77:4449",
+        "M77:4450",
+        "M77:4467",
+        "M77:4471",
+        "M77:4479",
+        "M77:4485",
+        "M77:4487",
+        "M77:4489",
+        "M77:4497",
+        "M77:4562",
+        "M77:4573",
+        "M77:4576",
+        "M77:4582",
+        "M77:4584",
+        "M77:4585",
+        "M77:4587",
+        "M77:4615",
+        "M77:4670",
+        "M77:4672",
+        "M77:4673",
+        "M77:4702",
+        "M77:4805",
+        "M77:4832",
+        "M77:5056",
+        "M77:5073",
+        "M77:5114",
+        "M77:5207",
+        "M77:5208",
+        "M77:5209",
+        "M77:5210",
+        "M77:5212",
+        "M77:5213",
+        "M77:5214",
+        "M77:5215",
+        "M77:5216",
+        "M77:5217",
+        "M77:5218",
+        "M77:5219",
+        "M77:5220",
+        "M77:5237",
+        "M77:5238",
+        "M77:5239",
+        "M77:5240",
+        "M77:5252",
+        "M77:5261",
+        "M77:5262",
+        "M77:5264",
+        "M77:5283",
+        "M77:5289",
+        "M77:5302",
+        "M77:5337",
+        "M77:5402",
+        "M77:5473",
+        "M77:5479",
+        "M77:5481",
+        "M77:5494",
+        "M77:6112",
+        "M77:6127",
+        "M77:6202",
+        "M77:6207",
+        "M77:6228",
+        "M77:7009",
+        "M77:7024",
+        "M77:7053",
+        "M77:7056",
+        "M77:7220",
+        "M77:7247",
+        "M77:7252",
+        "M77:8017",
+        "M77:8044",
+        "M77:9071"
+      ]
+    },
+    {
+      "withheld_base": "70",
+      "winner": "12",
+      "training_top5": [
+        {
+          "marker": "12",
+          "training_bits": 118.1029627944632,
+          "base_marker_examples": 6
+        },
+        {
+          "marker": "388",
+          "training_bits": 118.41681135545318,
+          "base_marker_examples": 3
+        },
+        {
+          "marker": "66",
+          "training_bits": 135.32473226737386,
+          "base_marker_examples": 3
+        },
+        {
+          "marker": "211",
+          "training_bits": 138.25049040217772,
+          "base_marker_examples": 61
+        },
+        {
+          "marker": "14",
+          "training_bits": 138.44160030447193,
+          "base_marker_examples": 1
+        }
+      ],
+      "target_occurrences": 6,
+      "heldout_continuation_bits": 15.571180413685514,
+      "exact_predicted_forms_observed": 0,
+      "excluded_object_ids": [
+        "M77:1065",
+        "M77:1095",
+        "M77:1156",
+        "M77:1170",
+        "M77:1308",
+        "M77:1327",
+        "M77:1342",
+        "M77:1380",
+        "M77:1400",
+        "M77:1447",
+        "M77:1534",
+        "M77:1803",
+        "M77:2024",
+        "M77:2067",
+        "M77:2068",
+        "M77:2118",
+        "M77:2132",
+        "M77:2171",
+        "M77:2174",
+        "M77:2208",
+        "M77:2222",
+        "M77:2333",
+        "M77:2375",
+        "M77:2452",
+        "M77:2480",
+        "M77:2498",
+        "M77:2584",
+        "M77:2637",
+        "M77:2654",
+        "M77:2911",
+        "M77:2918",
+        "M77:3097",
+        "M77:3109",
+        "M77:3160",
+        "M77:3303",
+        "M77:4012",
+        "M77:4016",
+        "M77:4092",
+        "M77:4101",
+        "M77:4104",
+        "M77:4105",
+        "M77:4270",
+        "M77:4312",
+        "M77:4471",
+        "M77:4617",
+        "M77:5052",
+        "M77:5062",
+        "M77:5087",
+        "M77:5096",
+        "M77:5277",
+        "M77:5288",
+        "M77:5323",
+        "M77:6129",
+        "M77:7088",
+        "M77:7105",
+        "M77:7277",
+        "M77:8037",
+        "M77:8048",
+        "M77:8062"
+      ]
+    },
+    {
+      "withheld_base": "72",
+      "winner": "12",
+      "training_top5": [
+        {
+          "marker": "12",
+          "training_bits": 107.6135980725958,
+          "base_marker_examples": 6
+        },
+        {
+          "marker": "71",
+          "training_bits": 109.14802599871744,
+          "base_marker_examples": 3
+        },
+        {
+          "marker": "66",
+          "training_bits": 116.87292173737251,
+          "base_marker_examples": 2
+        },
+        {
+          "marker": "211",
+          "training_bits": 126.13417010754638,
+          "base_marker_examples": 52
+        },
+        {
+          "marker": "388",
+          "training_bits": 129.8407919400841,
+          "base_marker_examples": 2
+        }
+      ],
+      "target_occurrences": 4,
+      "heldout_continuation_bits": 4.050410044277681,
+      "exact_predicted_forms_observed": 0,
+      "excluded_object_ids": [
+        "M77:1024",
+        "M77:1033",
+        "M77:1042",
+        "M77:1053",
+        "M77:1075",
+        "M77:1104",
+        "M77:1107",
+        "M77:1142",
+        "M77:1149",
+        "M77:1156",
+        "M77:1173",
+        "M77:1188",
+        "M77:1208",
+        "M77:1235",
+        "M77:1251",
+        "M77:1254",
+        "M77:1261",
+        "M77:1295",
+        "M77:1306",
+        "M77:1308",
+        "M77:1326",
+        "M77:1328",
+        "M77:1332",
+        "M77:1345",
+        "M77:1350",
+        "M77:1370",
+        "M77:1415",
+        "M77:1421",
+        "M77:1431",
+        "M77:1456",
+        "M77:1467",
+        "M77:1468",
+        "M77:1470",
+        "M77:1701",
+        "M77:1801",
+        "M77:1802",
+        "M77:2022",
+        "M77:2081",
+        "M77:2083",
+        "M77:2087",
+        "M77:2098",
+        "M77:2123",
+        "M77:2129",
+        "M77:2138",
+        "M77:2193",
+        "M77:2196",
+        "M77:2226",
+        "M77:2271",
+        "M77:2315",
+        "M77:2333",
+        "M77:2335",
+        "M77:2365",
+        "M77:2378",
+        "M77:2409",
+        "M77:2419",
+        "M77:2446",
+        "M77:2504",
+        "M77:2507",
+        "M77:2534",
+        "M77:2539",
+        "M77:2555",
+        "M77:2576",
+        "M77:2588",
+        "M77:2593",
+        "M77:2617",
+        "M77:2655",
+        "M77:2912",
+        "M77:3031",
+        "M77:3090",
+        "M77:3091",
+        "M77:3096",
+        "M77:3107",
+        "M77:3113",
+        "M77:3151",
+        "M77:3160",
+        "M77:3302",
+        "M77:3313",
+        "M77:3317",
+        "M77:3318",
+        "M77:3323",
+        "M77:3335",
+        "M77:3343",
+        "M77:3345",
+        "M77:3346",
+        "M77:3364",
+        "M77:3405",
+        "M77:3415",
+        "M77:4013",
+        "M77:4022",
+        "M77:4023",
+        "M77:4036",
+        "M77:4044",
+        "M77:4052",
+        "M77:4056",
+        "M77:4112",
+        "M77:4113",
+        "M77:4140",
+        "M77:4262",
+        "M77:4274",
+        "M77:4358",
+        "M77:4360",
+        "M77:4362",
+        "M77:4371",
+        "M77:4373",
+        "M77:4374",
+        "M77:4410",
+        "M77:4428",
+        "M77:4466",
+        "M77:4499",
+        "M77:4501",
+        "M77:4503",
+        "M77:4551",
+        "M77:4580",
+        "M77:4657",
+        "M77:4659",
+        "M77:4661",
+        "M77:4664",
+        "M77:4673",
+        "M77:4676",
+        "M77:4702",
+        "M77:5052",
+        "M77:5058",
+        "M77:5283",
+        "M77:5406",
+        "M77:5469",
+        "M77:5478",
+        "M77:5487",
+        "M77:5496",
+        "M77:6127",
+        "M77:6217",
+        "M77:6227",
+        "M77:7009",
+        "M77:7015",
+        "M77:7028",
+        "M77:7031",
+        "M77:7057",
+        "M77:7066",
+        "M77:7101",
+        "M77:7106",
+        "M77:7220",
+        "M77:7247",
+        "M77:7252",
+        "M77:8017",
+        "M77:8023",
+        "M77:8025",
+        "M77:9001",
+        "M77:9071"
+      ]
+    }
+  ],
+  "predictions": [
+    {
+      "source": [
+        "100",
+        "17",
+        "60"
+      ],
+      "source_witnesses": [
+        {
+          "index": 1285,
+          "textnum": "2645",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "31",
+          "level": "-20",
+          "dir": "1",
+          "sequence": [
+            "100",
+            "17",
+            "60"
+          ],
+          "row_id": "M77:2645:0",
+          "object_id": "M77:2645"
+        }
+      ],
+      "withheld_base": "59",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "100",
+        "17",
+        "59",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7031170288746047,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "150",
+        "162",
+        "100",
+        "87",
+        "60"
+      ],
+      "source_witnesses": [
+        {
+          "index": 50,
+          "textnum": "1048",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "18",
+          "level": "-3",
+          "dir": "1",
+          "sequence": [
+            "150",
+            "162",
+            "100",
+            "87",
+            "60"
+          ],
+          "row_id": "M77:1048:0",
+          "object_id": "M77:1048"
+        }
+      ],
+      "withheld_base": "59",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "150",
+        "162",
+        "100",
+        "87",
+        "59",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7031170288746047,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "152",
+        "99",
+        "53",
+        "59",
+        "87",
+        "60"
+      ],
+      "source_witnesses": [
+        {
+          "index": 956,
+          "textnum": "2340",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "31",
+          "level": "-11",
+          "dir": "1",
+          "sequence": [
+            "152",
+            "99",
+            "53",
+            "59",
+            "87",
+            "60"
+          ],
+          "row_id": "M77:2340:0",
+          "object_id": "M77:2340"
+        }
+      ],
+      "withheld_base": "59",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "152",
+        "99",
+        "53",
+        "59",
+        "87",
+        "59",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7031170288746047,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "162",
+        "343",
+        "87",
+        "60"
+      ],
+      "source_witnesses": [
+        {
+          "index": 3557,
+          "textnum": "7025",
+          "sideline": "1",
+          "inscobj": "1",
+          "locus": "79",
+          "level": "0",
+          "dir": "1",
+          "sequence": [
+            "162",
+            "343",
+            "87",
+            "60"
+          ],
+          "row_id": "M77:7025:1",
+          "object_id": "M77:7025"
+        }
+      ],
+      "withheld_base": "59",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "162",
+        "343",
+        "87",
+        "59",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7031170288746047,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "17",
+        "293",
+        "197",
+        "60"
+      ],
+      "source_witnesses": [
+        {
+          "index": 358,
+          "textnum": "1348",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "22",
+          "level": "-4",
+          "dir": "1",
+          "sequence": [
+            "17",
+            "293",
+            "197",
+            "60"
+          ],
+          "row_id": "M77:1348:0",
+          "object_id": "M77:1348"
+        }
+      ],
+      "withheld_base": "59",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "17",
+        "293",
+        "197",
+        "59",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7031170288746047,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "171",
+        "60"
+      ],
+      "source_witnesses": [
+        {
+          "index": 182,
+          "textnum": "1177",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "20",
+          "level": "-5",
+          "dir": "1",
+          "sequence": [
+            "171",
+            "60"
+          ],
+          "row_id": "M77:1177:0",
+          "object_id": "M77:1177"
+        }
+      ],
+      "withheld_base": "59",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "171",
+        "59",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7031170288746047,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "171",
+        "60",
+        "176"
+      ],
+      "source_witnesses": [
+        {
+          "index": 3859,
+          "textnum": "9021",
+          "sideline": "10",
+          "inscobj": "1",
+          "locus": "91",
+          "level": "0",
+          "dir": "2",
+          "sequence": [
+            "171",
+            "60",
+            "176"
+          ],
+          "row_id": "M77:9021:10",
+          "object_id": "M77:9021"
+        }
+      ],
+      "withheld_base": "59",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "171",
+        "59",
+        "12",
+        "176"
+      ],
+      "observed_continuation": "176",
+      "continuation_probability": 0.17036526885011735,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "210",
+        "86",
+        "99",
+        "389",
+        "60",
+        "204",
+        "108",
+        "358",
+        "342"
+      ],
+      "source_witnesses": [
+        {
+          "index": 66,
+          "textnum": "1066",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "20",
+          "level": "-4",
+          "dir": "1",
+          "sequence": [
+            "210",
+            "86",
+            "99",
+            "389",
+            "60",
+            "204",
+            "108",
+            "358",
+            "342"
+          ],
+          "row_id": "M77:1066:0",
+          "object_id": "M77:1066"
+        }
+      ],
+      "withheld_base": "59",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "210",
+        "86",
+        "99",
+        "389",
+        "59",
+        "12",
+        "204",
+        "108",
+        "358",
+        "342"
+      ],
+      "observed_continuation": "204",
+      "continuation_probability": 0.0003826140189776553,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "218",
+        "343",
+        "87",
+        "60"
+      ],
+      "source_witnesses": [
+        {
+          "index": 1626,
+          "textnum": "3112",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "36",
+          "level": "0",
+          "dir": "1",
+          "sequence": [
+            "218",
+            "343",
+            "87",
+            "60"
+          ],
+          "row_id": "M77:3112:0",
+          "object_id": "M77:3112"
+        }
+      ],
+      "withheld_base": "59",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "218",
+        "343",
+        "87",
+        "59",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7031170288746047,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "258",
+        "342",
+        "87",
+        "60"
+      ],
+      "source_witnesses": [
+        {
+          "index": 1083,
+          "textnum": "2456",
+          "sideline": "1",
+          "inscobj": "1",
+          "locus": "31",
+          "level": "-14",
+          "dir": "1",
+          "sequence": [
+            "258",
+            "342",
+            "87",
+            "60"
+          ],
+          "row_id": "M77:2456:1",
+          "object_id": "M77:2456"
+        }
+      ],
+      "withheld_base": "59",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "258",
+        "342",
+        "87",
+        "59",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7031170288746047,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "261",
+        "134",
+        "98",
+        "99",
+        "87",
+        "60"
+      ],
+      "source_witnesses": [
+        {
+          "index": 3463,
+          "textnum": "6116",
+          "sideline": "1",
+          "inscobj": "1",
+          "locus": "62",
+          "level": "7",
+          "dir": "1",
+          "sequence": [
+            "261",
+            "134",
+            "98",
+            "99",
+            "87",
+            "60"
+          ],
+          "row_id": "M77:6116:1",
+          "object_id": "M77:6116"
+        }
+      ],
+      "withheld_base": "59",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "261",
+        "134",
+        "98",
+        "99",
+        "87",
+        "59",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7031170288746047,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "267",
+        "99",
+        "87",
+        "60"
+      ],
+      "source_witnesses": [
+        {
+          "index": 3497,
+          "textnum": "6211",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "62",
+          "level": "7",
+          "dir": "1",
+          "sequence": [
+            "267",
+            "99",
+            "87",
+            "60"
+          ],
+          "row_id": "M77:6211:0",
+          "object_id": "M77:6211"
+        }
+      ],
+      "withheld_base": "59",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "267",
+        "99",
+        "87",
+        "59",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7031170288746047,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "293",
+        "123",
+        "344",
+        "53",
+        "87",
+        "60"
+      ],
+      "source_witnesses": [
+        {
+          "index": 662,
+          "textnum": "2041",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "32",
+          "level": "-5",
+          "dir": "1",
+          "sequence": [
+            "293",
+            "123",
+            "344",
+            "53",
+            "87",
+            "60"
+          ],
+          "row_id": "M77:2041:0",
+          "object_id": "M77:2041"
+        }
+      ],
+      "withheld_base": "59",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "293",
+        "123",
+        "344",
+        "53",
+        "87",
+        "59",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7031170288746047,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "305",
+        "123",
+        "87",
+        "60"
+      ],
+      "source_witnesses": [
+        {
+          "index": 932,
+          "textnum": "2316",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "31",
+          "level": "-11",
+          "dir": "1",
+          "sequence": [
+            "305",
+            "123",
+            "87",
+            "60"
+          ],
+          "row_id": "M77:2316:0",
+          "object_id": "M77:2316"
+        }
+      ],
+      "withheld_base": "59",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "305",
+        "123",
+        "87",
+        "59",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7031170288746047,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "350",
+        "99",
+        "341",
+        "387",
+        "60"
+      ],
+      "source_witnesses": [
+        {
+          "index": 1060,
+          "textnum": "2432",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "31",
+          "level": "-13",
+          "dir": "1",
+          "sequence": [
+            "350",
+            "99",
+            "341",
+            "387",
+            "60"
+          ],
+          "row_id": "M77:2432:0",
+          "object_id": "M77:2432"
+        }
+      ],
+      "withheld_base": "59",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "350",
+        "99",
+        "341",
+        "387",
+        "59",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7031170288746047,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "387",
+        "87",
+        "60"
+      ],
+      "source_witnesses": [
+        {
+          "index": 826,
+          "textnum": "2211",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "31",
+          "level": "-8",
+          "dir": "1",
+          "sequence": [
+            "387",
+            "87",
+            "60"
+          ],
+          "row_id": "M77:2211:0",
+          "object_id": "M77:2211"
+        }
+      ],
+      "withheld_base": "59",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "387",
+        "87",
+        "59",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7031170288746047,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "48",
+        "342",
+        "375",
+        "60"
+      ],
+      "source_witnesses": [
+        {
+          "index": 129,
+          "textnum": "1125",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "27",
+          "level": "-5",
+          "dir": "1",
+          "sequence": [
+            "48",
+            "342",
+            "375",
+            "60"
+          ],
+          "row_id": "M77:1125:0",
+          "object_id": "M77:1125"
+        }
+      ],
+      "withheld_base": "59",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "48",
+        "342",
+        "375",
+        "59",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7031170288746047,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "60"
+      ],
+      "source_witnesses": [
+        {
+          "index": 1649,
+          "textnum": "3157",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "38",
+          "level": "0",
+          "dir": "3",
+          "sequence": [
+            "60"
+          ],
+          "row_id": "M77:3157:0",
+          "object_id": "M77:3157"
+        }
+      ],
+      "withheld_base": "59",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "59",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7031170288746047,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "60",
+        "176"
+      ],
+      "source_witnesses": [
+        {
+          "index": 3387,
+          "textnum": "5477",
+          "sideline": "10",
+          "inscobj": "3",
+          "locus": "59",
+          "level": "0",
+          "dir": "2",
+          "sequence": [
+            "60",
+            "176"
+          ],
+          "row_id": "M77:5477:10",
+          "object_id": "M77:5477"
+        }
+      ],
+      "withheld_base": "59",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "59",
+        "12",
+        "176"
+      ],
+      "observed_continuation": "176",
+      "continuation_probability": 0.17036526885011735,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "60",
+        "242"
+      ],
+      "source_witnesses": [
+        {
+          "index": 1218,
+          "textnum": "2585",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "31",
+          "level": "-18",
+          "dir": "1",
+          "sequence": [
+            "60",
+            "242"
+          ],
+          "row_id": "M77:2585:0",
+          "object_id": "M77:2585"
+        }
+      ],
+      "withheld_base": "59",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "59",
+        "12",
+        "242"
+      ],
+      "observed_continuation": "242",
+      "continuation_probability": 0.0002805836139169472,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "87",
+        "60",
+        "176"
+      ],
+      "source_witnesses": [
+        {
+          "index": 2610,
+          "textnum": "4556",
+          "sideline": "10",
+          "inscobj": "3",
+          "locus": "40",
+          "level": "-5",
+          "dir": "1",
+          "sequence": [
+            "87",
+            "60",
+            "176"
+          ],
+          "row_id": "M77:4556:10",
+          "object_id": "M77:4556"
+        }
+      ],
+      "withheld_base": "59",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "87",
+        "59",
+        "12",
+        "176"
+      ],
+      "observed_continuation": "176",
+      "continuation_probability": 0.17036526885011735,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "203",
+        "344",
+        "66",
+        "375",
+        "89"
+      ],
+      "source_witnesses": [
+        {
+          "index": 802,
+          "textnum": "2185",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "31",
+          "level": "-8",
+          "dir": "1",
+          "sequence": [
+            "203",
+            "344",
+            "66",
+            "375",
+            "89"
+          ],
+          "row_id": "M77:2185:0",
+          "object_id": "M77:2185"
+        }
+      ],
+      "withheld_base": "65",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "203",
+        "344",
+        "65",
+        "12",
+        "375",
+        "89"
+      ],
+      "observed_continuation": "375",
+      "continuation_probability": 0.0004697904326157114,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "244",
+        "343",
+        "72",
+        "66",
+        "127",
+        "168"
+      ],
+      "source_witnesses": [
+        {
+          "index": 3561,
+          "textnum": "7028",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "79",
+          "level": "0",
+          "dir": "1",
+          "sequence": [
+            "244",
+            "343",
+            "72",
+            "66",
+            "127",
+            "168"
+          ],
+          "row_id": "M77:7028:0",
+          "object_id": "M77:7028"
+        }
+      ],
+      "withheld_base": "65",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "244",
+        "343",
+        "72",
+        "65",
+        "12",
+        "127",
+        "168"
+      ],
+      "observed_continuation": "127",
+      "continuation_probability": 0.0004697904326157114,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "267",
+        "99",
+        "66"
+      ],
+      "source_witnesses": [
+        {
+          "index": 3694,
+          "textnum": "7249",
+          "sideline": "20",
+          "inscobj": "2",
+          "locus": "79",
+          "level": "0",
+          "dir": "1",
+          "sequence": [
+            "267",
+            "99",
+            "66"
+          ],
+          "row_id": "M77:7249:20",
+          "object_id": "M77:7249"
+        },
+        {
+          "index": 3696,
+          "textnum": "7251",
+          "sideline": "20",
+          "inscobj": "2",
+          "locus": "79",
+          "level": "0",
+          "dir": "1",
+          "sequence": [
+            "267",
+            "99",
+            "66"
+          ],
+          "row_id": "M77:7251:20",
+          "object_id": "M77:7251"
+        },
+        {
+          "index": 3701,
+          "textnum": "7255",
+          "sideline": "0",
+          "inscobj": "2",
+          "locus": "79",
+          "level": "0",
+          "dir": "1",
+          "sequence": [
+            "267",
+            "99",
+            "66"
+          ],
+          "row_id": "M77:7255:0",
+          "object_id": "M77:7255"
+        },
+        {
+          "index": 3715,
+          "textnum": "7267",
+          "sideline": "20",
+          "inscobj": "2",
+          "locus": "79",
+          "level": "0",
+          "dir": "1",
+          "sequence": [
+            "267",
+            "99",
+            "66"
+          ],
+          "row_id": "M77:7267:20",
+          "object_id": "M77:7267"
+        },
+        {
+          "index": 3717,
+          "textnum": "7269",
+          "sideline": "0",
+          "inscobj": "2",
+          "locus": "79",
+          "level": "0",
+          "dir": "1",
+          "sequence": [
+            "267",
+            "99",
+            "66"
+          ],
+          "row_id": "M77:7269:0",
+          "object_id": "M77:7269"
+        }
+      ],
+      "withheld_base": "65",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "267",
+        "99",
+        "65",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7451693288124515,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "28",
+        "303",
+        "100",
+        "66",
+        "407",
+        "169",
+        "334",
+        "342"
+      ],
+      "source_witnesses": [
+        {
+          "index": 406,
+          "textnum": "1403",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "26",
+          "level": "0",
+          "dir": "1",
+          "sequence": [
+            "28",
+            "303",
+            "100",
+            "66",
+            "407",
+            "169",
+            "334",
+            "342"
+          ],
+          "row_id": "M77:1403:0",
+          "object_id": "M77:1403"
+        }
+      ],
+      "withheld_base": "65",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "28",
+        "303",
+        "100",
+        "65",
+        "12",
+        "407",
+        "169",
+        "334",
+        "342"
+      ],
+      "observed_continuation": "407",
+      "continuation_probability": 0.0002451080517995016,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "336",
+        "162",
+        "100",
+        "66"
+      ],
+      "source_witnesses": [
+        {
+          "index": 850,
+          "textnum": "2234",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "31",
+          "level": "-9",
+          "dir": "1",
+          "sequence": [
+            "336",
+            "162",
+            "100",
+            "66"
+          ],
+          "row_id": "M77:2234:0",
+          "object_id": "M77:2234"
+        }
+      ],
+      "withheld_base": "65",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "336",
+        "162",
+        "100",
+        "65",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7451693288124515,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "387",
+        "66",
+        "336",
+        "89",
+        "211"
+      ],
+      "source_witnesses": [
+        {
+          "index": 153,
+          "textnum": "1147",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "25",
+          "level": "-3",
+          "dir": "1",
+          "sequence": [
+            "387",
+            "66",
+            "336",
+            "89",
+            "211"
+          ],
+          "row_id": "M77:1147:0",
+          "object_id": "M77:1147"
+        }
+      ],
+      "withheld_base": "65",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "387",
+        "65",
+        "12",
+        "336",
+        "89",
+        "211"
+      ],
+      "observed_continuation": "336",
+      "continuation_probability": 0.001756607704563095,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "391",
+        "99",
+        "53",
+        "336",
+        "89",
+        "67",
+        "66"
+      ],
+      "source_witnesses": [
+        {
+          "index": 922,
+          "textnum": "2307",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "31",
+          "level": "-10",
+          "dir": "1",
+          "sequence": [
+            "391",
+            "99",
+            "53",
+            "336",
+            "89",
+            "67",
+            "66"
+          ],
+          "row_id": "M77:2307:0",
+          "object_id": "M77:2307"
+        }
+      ],
+      "withheld_base": "65",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "391",
+        "99",
+        "53",
+        "336",
+        "89",
+        "67",
+        "65",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7451693288124515,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "43",
+        "180",
+        "99",
+        "66"
+      ],
+      "source_witnesses": [
+        {
+          "index": 3887,
+          "textnum": "9201",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "91",
+          "level": "0",
+          "dir": "1",
+          "sequence": [
+            "43",
+            "180",
+            "99",
+            "66"
+          ],
+          "row_id": "M77:9201:0",
+          "object_id": "M77:9201"
+        }
+      ],
+      "withheld_base": "65",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "43",
+        "180",
+        "99",
+        "65",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7451693288124515,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "59",
+        "66",
+        "176"
+      ],
+      "source_witnesses": [
+        {
+          "index": 3202,
+          "textnum": "5321",
+          "sideline": "10",
+          "inscobj": "2",
+          "locus": "59",
+          "level": "0",
+          "dir": "1",
+          "sequence": [
+            "59",
+            "66",
+            "176"
+          ],
+          "row_id": "M77:5321:10",
+          "object_id": "M77:5321"
+        }
+      ],
+      "withheld_base": "65",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "59",
+        "65",
+        "12",
+        "176"
+      ],
+      "observed_continuation": "176",
+      "continuation_probability": 0.1460231218595531,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "66"
+      ],
+      "source_witnesses": [
+        {
+          "index": 319,
+          "textnum": "1316",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "14",
+          "level": "-4",
+          "dir": "3",
+          "sequence": [
+            "66"
+          ],
+          "row_id": "M77:1316:0",
+          "object_id": "M77:1316"
+        }
+      ],
+      "withheld_base": "65",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "65",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7451693288124515,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "66",
+        "176"
+      ],
+      "source_witnesses": [
+        {
+          "index": 2503,
+          "textnum": "4493",
+          "sideline": "10",
+          "inscobj": "3",
+          "locus": "45",
+          "level": "-6",
+          "dir": "1",
+          "sequence": [
+            "66",
+            "176"
+          ],
+          "row_id": "M77:4493:10",
+          "object_id": "M77:4493"
+        },
+        {
+          "index": 2886,
+          "textnum": "4806",
+          "sideline": "0",
+          "inscobj": "4",
+          "locus": "59",
+          "level": "0",
+          "dir": "1",
+          "sequence": [
+            "66",
+            "176"
+          ],
+          "row_id": "M77:4806:0",
+          "object_id": "M77:4806"
+        }
+      ],
+      "withheld_base": "65",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "65",
+        "12",
+        "176"
+      ],
+      "observed_continuation": "176",
+      "continuation_probability": 0.1460231218595531,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "66",
+        "336",
+        "89",
+        "124",
+        "169"
+      ],
+      "source_witnesses": [
+        {
+          "index": 428,
+          "textnum": "1425",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "18",
+          "level": "-6",
+          "dir": "1",
+          "sequence": [
+            "66",
+            "336",
+            "89",
+            "124",
+            "169"
+          ],
+          "row_id": "M77:1425:0",
+          "object_id": "M77:1425"
+        }
+      ],
+      "withheld_base": "65",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "65",
+        "12",
+        "336",
+        "89",
+        "124",
+        "169"
+      ],
+      "observed_continuation": "336",
+      "continuation_probability": 0.001756607704563095,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "205",
+        "261",
+        "99",
+        "387",
+        "68"
+      ],
+      "source_witnesses": [
+        {
+          "index": 1618,
+          "textnum": "3106",
+          "sideline": "10",
+          "inscobj": "1",
+          "locus": "36",
+          "level": "0",
+          "dir": "1",
+          "sequence": [
+            "205",
+            "261",
+            "99",
+            "387",
+            "68"
+          ],
+          "row_id": "M77:3106:10",
+          "object_id": "M77:3106"
+        },
+        {
+          "index": 1619,
+          "textnum": "3106",
+          "sideline": "20",
+          "inscobj": "1",
+          "locus": "36",
+          "level": "0",
+          "dir": "1",
+          "sequence": [
+            "205",
+            "261",
+            "99",
+            "387",
+            "68"
+          ],
+          "row_id": "M77:3106:20",
+          "object_id": "M77:3106"
+        }
+      ],
+      "withheld_base": "67",
+      "predicted_marker": "388",
+      "predicted_sequence": [
+        "205",
+        "261",
+        "99",
+        "387",
+        "67",
+        "388"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7026575660760964,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "234",
+        "287",
+        "162",
+        "343",
+        "68"
+      ],
+      "source_witnesses": [
+        {
+          "index": 1041,
+          "textnum": "2417",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "31",
+          "level": "-13",
+          "dir": "1",
+          "sequence": [
+            "234",
+            "287",
+            "162",
+            "343",
+            "68"
+          ],
+          "row_id": "M77:2417:0",
+          "object_id": "M77:2417"
+        }
+      ],
+      "withheld_base": "67",
+      "predicted_marker": "388",
+      "predicted_sequence": [
+        "234",
+        "287",
+        "162",
+        "343",
+        "67",
+        "388"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7026575660760964,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "286",
+        "99",
+        "68"
+      ],
+      "source_witnesses": [
+        {
+          "index": 815,
+          "textnum": "2199",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "31",
+          "level": "-8",
+          "dir": "1",
+          "sequence": [
+            "286",
+            "99",
+            "68"
+          ],
+          "row_id": "M77:2199:0",
+          "object_id": "M77:2199"
+        }
+      ],
+      "withheld_base": "67",
+      "predicted_marker": "388",
+      "predicted_sequence": [
+        "286",
+        "99",
+        "67",
+        "388"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7026575660760964,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "391",
+        "123",
+        "86",
+        "68",
+        "176"
+      ],
+      "source_witnesses": [
+        {
+          "index": 1263,
+          "textnum": "2625",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "31",
+          "level": "-19",
+          "dir": "1",
+          "sequence": [
+            "391",
+            "123",
+            "86",
+            "68",
+            "176"
+          ],
+          "row_id": "M77:2625:0",
+          "object_id": "M77:2625"
+        }
+      ],
+      "withheld_base": "67",
+      "predicted_marker": "388",
+      "predicted_sequence": [
+        "391",
+        "123",
+        "86",
+        "67",
+        "388",
+        "176"
+      ],
+      "observed_continuation": "176",
+      "continuation_probability": 0.17034562881208248,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "65",
+        "68"
+      ],
+      "source_witnesses": [
+        {
+          "index": 1587,
+          "textnum": "3070",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "33",
+          "level": "0",
+          "dir": "1",
+          "sequence": [
+            "65",
+            "68"
+          ],
+          "row_id": "M77:3070:0",
+          "object_id": "M77:3070"
+        }
+      ],
+      "withheld_base": "67",
+      "predicted_marker": "388",
+      "predicted_sequence": [
+        "65",
+        "67",
+        "388"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7026575660760964,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "76",
+        "402",
+        "68",
+        "287",
+        "267"
+      ],
+      "source_witnesses": [
+        {
+          "index": 38,
+          "textnum": "1036",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "29",
+          "level": "-6",
+          "dir": "1",
+          "sequence": [
+            "76",
+            "402",
+            "68",
+            "287",
+            "267"
+          ],
+          "row_id": "M77:1036:0",
+          "object_id": "M77:1036"
+        }
+      ],
+      "withheld_base": "67",
+      "predicted_marker": "388",
+      "predicted_sequence": [
+        "76",
+        "402",
+        "67",
+        "388",
+        "287",
+        "267"
+      ],
+      "observed_continuation": "287",
+      "continuation_probability": 0.0008713331397037467,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "86",
+        "124",
+        "344",
+        "68"
+      ],
+      "source_witnesses": [
+        {
+          "index": 510,
+          "textnum": "1535",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "20",
+          "level": "-3",
+          "dir": "1",
+          "sequence": [
+            "86",
+            "124",
+            "344",
+            "68"
+          ],
+          "row_id": "M77:1535:0",
+          "object_id": "M77:1535"
+        }
+      ],
+      "withheld_base": "67",
+      "predicted_marker": "388",
+      "predicted_sequence": [
+        "86",
+        "124",
+        "344",
+        "67",
+        "388"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7026575660760964,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "153",
+        "233",
+        "59",
+        "99",
+        "387",
+        "71"
+      ],
+      "source_witnesses": [
+        {
+          "index": 1610,
+          "textnum": "3097",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "35",
+          "level": "0",
+          "dir": "1",
+          "sequence": [
+            "153",
+            "233",
+            "59",
+            "99",
+            "387",
+            "71"
+          ],
+          "row_id": "M77:3097:0",
+          "object_id": "M77:3097"
+        }
+      ],
+      "withheld_base": "70",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "153",
+        "233",
+        "59",
+        "99",
+        "387",
+        "70",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7448421694321148,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "245",
+        "245",
+        "127",
+        "345",
+        "48",
+        "342",
+        "71"
+      ],
+      "source_witnesses": [
+        {
+          "index": 1917,
+          "textnum": "4012",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "40",
+          "level": "-9",
+          "dir": "1",
+          "sequence": [
+            "245",
+            "245",
+            "127",
+            "345",
+            "48",
+            "342",
+            "71"
+          ],
+          "row_id": "M77:4012:0",
+          "object_id": "M77:4012"
+        }
+      ],
+      "withheld_base": "70",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "245",
+        "245",
+        "127",
+        "345",
+        "48",
+        "342",
+        "70",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7448421694321148,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "65",
+        "71",
+        "176"
+      ],
+      "source_witnesses": [
+        {
+          "index": 3206,
+          "textnum": "5323",
+          "sideline": "10",
+          "inscobj": "2",
+          "locus": "59",
+          "level": "0",
+          "dir": "1",
+          "sequence": [
+            "65",
+            "71",
+            "176"
+          ],
+          "row_id": "M77:5323:10",
+          "object_id": "M77:5323"
+        }
+      ],
+      "withheld_base": "70",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "65",
+        "70",
+        "12",
+        "176"
+      ],
+      "observed_continuation": "176",
+      "continuation_probability": 0.14596231878536184,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "72",
+        "71",
+        "121",
+        "342"
+      ],
+      "source_witnesses": [
+        {
+          "index": 160,
+          "textnum": "1156",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "16",
+          "level": "-13",
+          "dir": "1",
+          "sequence": [
+            "72",
+            "71",
+            "121",
+            "342"
+          ],
+          "row_id": "M77:1156:0",
+          "object_id": "M77:1156"
+        }
+      ],
+      "withheld_base": "70",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "72",
+        "70",
+        "12",
+        "121",
+        "342"
+      ],
+      "observed_continuation": "121",
+      "continuation_probability": 0.0004572038176518774,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "87",
+        "322",
+        "99",
+        "87",
+        "59",
+        "71"
+      ],
+      "source_witnesses": [
+        {
+          "index": 789,
+          "textnum": "2171",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "32",
+          "level": "-8",
+          "dir": "1",
+          "sequence": [
+            "87",
+            "322",
+            "99",
+            "87",
+            "59",
+            "71"
+          ],
+          "row_id": "M77:2171:0",
+          "object_id": "M77:2171"
+        }
+      ],
+      "withheld_base": "70",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "87",
+        "322",
+        "99",
+        "87",
+        "59",
+        "70",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7448421694321148,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "87",
+        "59",
+        "71"
+      ],
+      "source_witnesses": [
+        {
+          "index": 1080,
+          "textnum": "2452",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "31",
+          "level": "-13",
+          "dir": "1",
+          "sequence": [
+            "87",
+            "59",
+            "71"
+          ],
+          "row_id": "M77:2452:0",
+          "object_id": "M77:2452"
+        }
+      ],
+      "withheld_base": "70",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "87",
+        "59",
+        "70",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7448421694321148,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "150",
+        "123",
+        "65",
+        "67",
+        "73"
+      ],
+      "source_witnesses": [
+        {
+          "index": 239,
+          "textnum": "1235",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "28",
+          "level": "-7",
+          "dir": "1",
+          "sequence": [
+            "150",
+            "123",
+            "65",
+            "67",
+            "73"
+          ],
+          "row_id": "M77:1235:0",
+          "object_id": "M77:1235"
+        }
+      ],
+      "withheld_base": "72",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "150",
+        "123",
+        "65",
+        "67",
+        "72",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7450352338244715,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "267",
+        "99",
+        "73"
+      ],
+      "source_witnesses": [
+        {
+          "index": 3761,
+          "textnum": "8025",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "82",
+          "level": "0",
+          "dir": "1",
+          "sequence": [
+            "267",
+            "99",
+            "73"
+          ],
+          "row_id": "M77:8025:0",
+          "object_id": "M77:8025"
+        }
+      ],
+      "withheld_base": "72",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "267",
+        "99",
+        "72",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7450352338244715,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "73"
+      ],
+      "source_witnesses": [
+        {
+          "index": 839,
+          "textnum": "2226",
+          "sideline": "0",
+          "inscobj": "1",
+          "locus": "31",
+          "level": "-8",
+          "dir": "3",
+          "sequence": [
+            "73"
+          ],
+          "row_id": "M77:2226:0",
+          "object_id": "M77:2226"
+        }
+      ],
+      "withheld_base": "72",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "72",
+        "12"
+      ],
+      "observed_continuation": "$",
+      "continuation_probability": 0.7450352338244715,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    },
+    {
+      "source": [
+        "73",
+        "176"
+      ],
+      "source_witnesses": [
+        {
+          "index": 2450,
+          "textnum": "4466",
+          "sideline": "10",
+          "inscobj": "3",
+          "locus": "41",
+          "level": "-7",
+          "dir": "1",
+          "sequence": [
+            "73",
+            "176"
+          ],
+          "row_id": "M77:4466:10",
+          "object_id": "M77:4466"
+        },
+        {
+          "index": 2515,
+          "textnum": "4501",
+          "sideline": "10",
+          "inscobj": "3",
+          "locus": "42",
+          "level": "-16",
+          "dir": "1",
+          "sequence": [
+            "73",
+            "176"
+          ],
+          "row_id": "M77:4501:10",
+          "object_id": "M77:4501"
+        },
+        {
+          "index": 2519,
+          "textnum": "4503",
+          "sideline": "10",
+          "inscobj": "3",
+          "locus": "42",
+          "level": "-17",
+          "dir": "1",
+          "sequence": [
+            "73",
+            "176"
+          ],
+          "row_id": "M77:4503:10",
+          "object_id": "M77:4503"
+        },
+        {
+          "index": 3245,
+          "textnum": "5406",
+          "sideline": "10",
+          "inscobj": "3",
+          "locus": "59",
+          "level": "0",
+          "dir": "1",
+          "sequence": [
+            "73",
+            "176"
+          ],
+          "row_id": "M77:5406:10",
+          "object_id": "M77:5406"
+        }
+      ],
+      "withheld_base": "72",
+      "predicted_marker": "12",
+      "predicted_sequence": [
+        "72",
+        "12",
+        "176"
+      ],
+      "observed_continuation": "176",
+      "continuation_probability": 0.14594010249839845,
+      "exact_prediction_observed": false,
+      "prediction_witnesses": [],
+      "absent_prediction_policy": "Unobserved combinations are unknown, never counted false",
+      "exposure": "retrospective; any six old exact pairs are not new discoveries"
+    }
+  ],
+  "complexity": {
+    "marker_selection_bits": 8.703903573444663,
+    "symbolic_expansion_rule_bits": 2,
+    "fish_subset_selection_bits_if_not_prespecified": 14.6846390555808,
+    "pair_mapping_cost": "shared declared graphical pairs are conditioning evidence; raw identity not merged"
+  },
+  "status": "full-form reach and continuation prediction; equivalence remains a hypothesis"
+}

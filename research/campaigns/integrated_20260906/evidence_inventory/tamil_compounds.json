@@ -1,0 +1,4374 @@
+{
+  "schema": "ivc.tamil_compound_inventory.v1",
+  "source_sha256": "fd133822f9999c86178a32208465e847c5288b578ad14ca2cd643efe57f0e0b6",
+  "source_pages": [
+    279,
+    280,
+    281,
+    282,
+    283
+  ],
+  "source_claimed_counts": {
+    "star_compounds": 34,
+    "fish_compounds": 65
+  },
+  "category_marked_entries_extracted": 93,
+  "category_code_counts": {
+    "F": 58,
+    "S": 28,
+    "F(S)": 4,
+    "SF": 3
+  },
+  "visible_category_row_coverage": "Every category-marked entry on all five source pages was included. Two OCR-absent F labels on p281 were restored from source image.",
+  "count_reconciliation": {
+    "fish_bearing_headword_rows": 65,
+    "star_bearing_headword_rows": 31,
+    "source_reported_star_compounds": 34,
+    "possible_reconciliation": "ai-m-mīṉ has two star senses and cem-mīṉ has three; counting their additional senses adds three, reaching34. This is an inference about counting, not a verified authorial convention.",
+    "overlap_policy": "F(S) means fish compound with a star sense only for its first component; do not assign the whole compound to star. SF has both compound senses."
+  },
+  "standalone_secondary_compounds": [
+    "aṟu-mīṉ-kātalaṉ",
+    "āṟā-mīṉ-aṟa-v-ōṭṭu",
+    "cem-mīṉ-vayiṟam"
+  ],
+  "secondary_compound_coverage": "Text and sources retained within parent raw entries; not separately counted as marked fish/star headwords.",
+  "missing_category_rows": [],
+  "normalization_limits": "Form transcription visually checked from held scan, not a new dictionary. Four uncertain forms marked ineligible for exact phonology; raw OCR of definitions/references may remain noisy. Conventional scholarly diacritics are retained; source forms are not translated into Indus values.",
+  "selection_bias": "This is Parpola's fish/star-centered comparative appendix, not a random or complete Tamil vocabulary.",
+  "source_supported_relations": [
+    {
+      "relation_id": "stone_cock_fish_lattice",
+      "forms": {
+        "single_stone": "kaṉ-mīṉ",
+        "single_cock": "kōḻi-mīṉ",
+        "double": "kallu-k-kōḻi-mīṉ"
+      },
+      "source_lexical_equations": [
+        {
+          "surface_component": "kaṉ",
+          "lemma_printed": "kal",
+          "gloss": "stone",
+          "dedr": "1298",
+          "status": "source_headword_with_explicit_lemma_in_brackets",
+          "printed_page": 280
+        },
+        {
+          "surface_component": "kallu",
+          "lemma_printed": "kallu",
+          "gloss": "stone",
+          "dedr": "1298",
+          "status": "source_component_explicitly_glossed",
+          "printed_page": 280
+        },
+        {
+          "surface_component": "kōḻi",
+          "lemma_printed": "kōḻi",
+          "gloss": "cock, fowl",
+          "dedr": "2248",
+          "status": "source_component_explicitly_glossed",
+          "printed_pages": [
+            280,
+            281
+          ]
+        }
+      ],
+      "linking_segment": "k",
+      "linking_segment_status": "visible_hyphenated_component_in_double_compound; identifying_its_grammatical_function_is_analysis",
+      "permitted_candidate_inference": "Treat kal/kaṉ/kallu as one proposed lexical family with separately charged context-conditioned realization.",
+      "not_source_established": "A general productive sandhi rule or any mapping from Indus59/60/65/66/211 to these forms."
+    }
+  ],
+  "records": [
+    {
+      "entry_id": "tamil_app_279_01",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "arakkulā-mīṉ",
+      "form_status": "tentative_transcription",
+      "form_uncertainty": "Headword internal l/ḷ and initial r/ṟ are not fully resolved from this scan; raw crop retained, exclude from exact-phonology tests.",
+      "segmentation_as_printed": [
+        "arakkulā",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "seer-fish",
+      "printed_lexical_notes_ocr": [
+        "‘kind of sea-fish’"
+      ],
+      "dedr_references_ocr": [],
+      "raw_entry_text_ocr": "arakkulii-m i!} =  arkku lii ‘seer-fish’, bluish above, silvery \nbelow, attaining 4 inches in length, Cybium commersonii; \nkafal-m t!}-vakai [‘kind of sea-fish’].",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 296,
+          "printed_page": 279,
+          "column": 1,
+          "bbox_pdf_points": [
+            311,
+            644.74,
+            570,
+            679.59
+          ],
+          "raw_text": "arakkulii-m i!} =  arkku lii ‘seer-fish’, bluish above, silvery \nbelow, attaining 4 inches in length, Cybium commersonii; \nkafal-m t!}-vakai [‘kind of sea-fish’]."
+        }
+      ],
+      "phonology_test_eligible": false,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_279_02",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "aṟu-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "aṟu",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "Pleiades, six stars",
+      "printed_lexical_notes_ocr": [
+        "aru - ‘6’, DEDR 2485",
+        "See § 10.4.",
+        "J-kätala'[J ‘Skanda, being one brought up by the \ngoddesses \nof the \nPleiades; \nm uruka-k-katavul \n[‘god \nMurukan’",
+        "Cf. § 13.1"
+      ],
+      "dedr_references_ocr": [
+        "DEDR 2485"
+      ],
+      "raw_entry_text_ocr": "aru-mi!} [aru - ‘6’, DEDR 2485] ‘Pleiades, as containing six\nstars; k iirttik a i (Piilkala-nikantu). [See § 10.4.]\n\naru-mi'[J-kätala'[J ‘Skanda, being one brought up by the \ngoddesses \nof the \nPleiades; \nm uruka-k-katavul \n[‘god \nMurukan’]’ (Centan Tivakaran). [Cf. § 13.1]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 296,
+          "printed_page": 279,
+          "column": 1,
+          "bbox_pdf_points": [
+            311,
+            678.59,
+            570,
+            714
+          ],
+          "raw_text": "aru-mi!} [aru - ‘6’, DEDR 2485] ‘Pleiades, as containing six\nstars; k iirttik a i (Piilkala-nikantu). [See § 10.4.]"
+        },
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 0,
+          "bbox_pdf_points": [
+            70,
+            68,
+            291,
+            103
+          ],
+          "raw_text": "aru-mi'[J-kätala'[J ‘Skanda, being one brought up by the \ngoddesses \nof the \nPleiades; \nm uruka-k-katavul \n[‘god \nMurukan’]’ (Centan Tivakaran). [Cf. § 13.1]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_01",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "āti-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "āti",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "first nakshatra, Ashvini",
+      "printed_lexical_notes_ocr": [
+        "äti <Sanskrit iid i ‘beginning’"
+      ],
+      "dedr_references_ocr": [],
+      "raw_entry_text_ocr": "iiti-mi'f.l [äti <Sanskrit iid i ‘beginning’] ‘the first naksatra; \nacuvini (<Sanskrit a svin i]: äti-mi'!J rötz.i ytru (Cetu- \npuranam by Nirampavalakiya Tecikar, Kantama. 17).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 0,
+          "bbox_pdf_points": [
+            70,
+            102.86,
+            291,
+            138.21
+          ],
+          "raw_text": "iiti-mi'f.l [äti <Sanskrit iid i ‘beginning’] ‘the first naksatra; \nacuvini (<Sanskrit a svin i]: äti-mi'!J rötz.i ytru (Cetu- \npuranam by Nirampavalakiya Tecikar, Kantama. 17)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_02",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "āṟā-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "āṟā",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "Pleiades, six stars",
+      "printed_lexical_notes_ocr": [
+        "äru ‘six’, D EDR 2485; ä ‘to be(come)’, DEDR \n333",
+        "‘the time of the\nsun’s entering the Pleiades’",
+        "hereafter\nsimply Winslow"
+      ],
+      "dedr_references_ocr": [
+        "DEDR 2485",
+        "DEDR \n333"
+      ],
+      "raw_entry_text_ocr": "ärä-mitt, [äru ‘six’, D EDR 2485; ä ‘to be(come)’, DEDR \n333] ‘Pleiades, as containing six stars; kärttikai'. \närä-m iti-ara-v-öttu ‘passage of the sun through the\nsegment of the zodiac occupied by Pleiades, regarded by\nseamen as a period when rough weather is to be anticipated; \nkärttikaiyil cüriyan piravecikkun kälam [‘the time of the\nsun’s entering the Pleiades’]’ (Winslow 1862 [hereafter\nsimply Winslow]).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 0,
+          "bbox_pdf_points": [
+            70,
+            137.21,
+            291,
+            230.14
+          ],
+          "raw_text": "ärä-mitt, [äru ‘six’, D EDR 2485; ä ‘to be(come)’, DEDR \n333] ‘Pleiades, as containing six stars; kärttikai'. \närä-m iti-ara-v-öttu ‘passage of the sun through the\nsegment of the zodiac occupied by Pleiades, regarded by\nseamen as a period when rough weather is to be anticipated; \nkärttikaiyil cüriyan piravecikkun kälam [‘the time of the\nsun’s entering the Pleiades’]’ (Winslow 1862 [hereafter\nsimply Winslow])."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_03",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "āṟṟu-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "āṟṟu",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "fresh-water fish",
+      "printed_lexical_notes_ocr": [
+        "iiru ‘river’, DEDR 5159"
+      ],
+      "dedr_references_ocr": [
+        "DEDR 5159"
+      ],
+      "raw_entry_text_ocr": "drru-mitt [iiru ‘river’, DEDR 5159] ‘fresh-water fish’: as\nTamil gloss on noy-m-mi'[J.",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 0,
+          "bbox_pdf_points": [
+            70,
+            229.14,
+            291,
+            252.99
+          ],
+          "raw_text": "drru-mitt [iiru ‘river’, DEDR 5159] ‘fresh-water fish’: as\nTamil gloss on noy-m-mi'[J."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_04",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "āṉai-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "āṉai",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "huge fish",
+      "printed_lexical_notes_ocr": [
+        "Jai-mi'[J [ii'!Jai ‘elephant’, DEDR 5i6 i",
+        " =yä'!Jai-m i'!J, q.v.",
+        "‘a kind o f large fish’",
+        "Cf. ä m i-y-a rk k u lä ‘a marine fish’\n(local usage)."
+      ],
+      "dedr_references_ocr": [
+        "DEDR 5i"
+      ],
+      "raw_entry_text_ocr": "ii'[Jai-mi'[J [ii'!Jai ‘elephant’, DEDR 5i6 i][ =yä'!Jai-m i'!J, q.v.]\n‘a huge fish; peru-m i'!}-vakai [‘a kind o f large fish’]’ \n(Cütämam-nikaQ.tu). [Cf. ä m i-y-a rk k u lä ‘a marine fish’\n(local usage).]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 0,
+          "bbox_pdf_points": [
+            70,
+            251.99,
+            291,
+            299.09
+          ],
+          "raw_text": "ii'[Jai-mi'[J [ii'!Jai ‘elephant’, DEDR 5i6 i][ =yä'!Jai-m i'!J, q.v.]\n‘a huge fish; peru-m i'!}-vakai [‘a kind o f large fish’]’ \n(Cütämam-nikaQ.tu). [Cf. ä m i-y-a rk k u lä ‘a marine fish’\n(local usage).]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_05",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "iṭi-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "iṭi",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "a fish",
+      "printed_lexical_notes_ocr": [
+        "‘a kind of fish’",
+        "TL, Suppl."
+      ],
+      "dedr_references_ocr": [],
+      "raw_entry_text_ocr": "iti-m in ‘a fish’; m i'!J-vakai [‘a kind of fish’] (Pondicherry\nusage). [TL, Suppl.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 0,
+          "bbox_pdf_points": [
+            70,
+            298.09,
+            291,
+            321.81
+          ],
+          "raw_text": "iti-m in ‘a fish’; m i'!J-vakai [‘a kind of fish’] (Pondicherry\nusage). [TL, Suppl.]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_06",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "uttara-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "uttara",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "Arundhati star",
+      "printed_lexical_notes_ocr": [
+        "J [uttara- <Sanskrit uttara- ‘northern’",
+        "the very late Tamil word uttara-mi'!J is a\nsynonym of Old Tamil vata-m fn, with Sanskrit uttara\n‘northern’ for Tamil vata ‘northern’; note that uttara- in\nthe meaning ‘northern’ is not known to the Sanskrit\ndictionaries ofBohtlingk and Roth; Monier Williams, etc.,\nin star names; cf. § 14. 1"
+      ],
+      "dedr_references_ocr": [],
+      "raw_entry_text_ocr": "uttara-mi'[J [uttara- <Sanskrit uttara- ‘northern’] ‘the star\nArundhatï in Ursa Major, the smaller of the two in Mizar,\nthe central star in the tail; aruntati natcattiram : uttara-\nmini'!J konkatz. (Cetu-puraQ.am by Nirampavalakiya Tecikar,\nTuttama. 6) [the very late Tamil word uttara-mi'!J is a\nsynonym of Old Tamil vata-m fn, with Sanskrit uttara\n‘northern’ for Tamil vata ‘northern’; note that uttara- in\nthe meaning ‘northern’ is not known to the Sanskrit\ndictionaries ofBohtlingk and Roth; Monier Williams, etc.,\nin star names; cf. § 14. 1].'",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 0,
+          "bbox_pdf_points": [
+            70,
+            320.81,
+            291,
+            436.59
+          ],
+          "raw_text": "uttara-mi'[J [uttara- <Sanskrit uttara- ‘northern’] ‘the star\nArundhatï in Ursa Major, the smaller of the two in Mizar,\nthe central star in the tail; aruntati natcattiram : uttara-\nmini'!J konkatz. (Cetu-puraQ.am by Nirampavalakiya Tecikar,\nTuttama. 6) [the very late Tamil word uttara-mi'!J is a\nsynonym of Old Tamil vata-m fn, with Sanskrit uttara\n‘northern’ for Tamil vata ‘northern’; note that uttara- in\nthe meaning ‘northern’ is not known to the Sanskrit\ndictionaries ofBohtlingk and Roth; Monier Williams, etc.,\nin star names; cf. § 14. 1].'"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_07",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "etir-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "etir",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "fish that goes against the current",
+      "printed_lexical_notes_ocr": [
+        "etir ‘to oppose; that which is opposite or contrary’,\nD ED R 795"
+      ],
+      "dedr_references_ocr": [
+        "DEDR 795"
+      ],
+      "raw_entry_text_ocr": "etir-m in [etir ‘to oppose; that which is opposite or contrary’,\nD ED R 795] ‘fish that goes against the current; n ir-p-päy-c-\ncalai etirttu-c cellum mi'!}'.",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 0,
+          "bbox_pdf_points": [
+            70,
+            435.59,
+            291,
+            470.86
+          ],
+          "raw_text": "etir-m in [etir ‘to oppose; that which is opposite or contrary’,\nD ED R 795] ‘fish that goes against the current; n ir-p-päy-c-\ncalai etirttu-c cellum mi'!}'."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_08",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "eḻu-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "eḻu",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "seven principal stars of Ursa Major",
+      "printed_lexical_notes_ocr": [
+        "elu- ‘seven’, D EDR 910",
+        "‘the\nsphere of the Seven Sages’",
+        "See § 10.4."
+      ],
+      "dedr_references_ocr": [
+        "DEDR 910"
+      ],
+      "raw_entry_text_ocr": "elu-mitt [elu- ‘seven’, D EDR 910] ‘the seven principal stars\nof Ursa Major, Charles’s Wain; capta-ri#-matz,talam [‘the\nsphere of the Seven Sages’]’: kai-tolu m arapin elu-mitt pöla\n(Naginai 231). [See § 10.4.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 0,
+          "bbox_pdf_points": [
+            70,
+            469.86,
+            291,
+            516.76
+          ],
+          "raw_text": "elu-mitt [elu- ‘seven’, D EDR 910] ‘the seven principal stars\nof Ursa Major, Charles’s Wain; capta-ri#-matz,talam [‘the\nsphere of the Seven Sages’]’: kai-tolu m arapin elu-mitt pöla\n(Naginai 231). [See § 10.4.]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_09",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "ai-m-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "ai",
+        "m",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "thirteenth nakshatra; also fourth nakshatra",
+      "printed_lexical_notes_ocr": [
+        "ai- ‘five’ <Proto-Drav. *cay-, D ED R 2826,\npossibly<  < * k a y  / *key ‘hand’, D ED R 2023",
+        " <  Sanskrit hasta- ‘hand’",
+        "cf. \nkai-m-mi'f.l",
+        "<Sanskrit rohitz,i-"
+      ],
+      "dedr_references_ocr": [
+        "DEDR 2826",
+        "DEDR 2023"
+      ],
+      "raw_entry_text_ocr": "ai-m-mi'!J [ai- ‘five’ <Proto-Drav. *cay-, D ED R 2826,\npossibly<  < * k a y  / *key ‘hand’, D ED R 2023] (1) ‘the\nthirteenth naksatra, so called because of its five principal\nstars; attaf!Z [ <  Sanskrit hasta- ‘hand’]’ (Pinkala-nikaQ.tu)\n[cf. \nkai-m-mi'f.l]; \n(2) \n‘the \nfourth \nnaksatra; \nurökini\n[<Sanskrit rohitz,i-] (Vïmëcura-v-ullamutaiyân, Madras\n1917).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 0,
+          "bbox_pdf_points": [
+            70,
+            515.76,
+            291,
+            597.14
+          ],
+          "raw_text": "ai-m-mi'!J [ai- ‘five’ <Proto-Drav. *cay-, D ED R 2826,\npossibly<  < * k a y  / *key ‘hand’, D ED R 2023] (1) ‘the\nthirteenth naksatra, so called because of its five principal\nstars; attaf!Z [ <  Sanskrit hasta- ‘hand’]’ (Pinkala-nikaQ.tu)\n[cf. \nkai-m-mi'f.l]; \n(2) \n‘the \nfourth \nnaksatra; \nurökini\n[<Sanskrit rohitz,i-] (Vïmëcura-v-ullamutaiyân, Madras\n1917)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_10",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "ōṭṭu-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "ōṭṭu",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "crustacean, shellfish",
+      "printed_lexical_notes_ocr": [
+        "ötu ‘shell’, DEDR 1042"
+      ],
+      "dedr_references_ocr": [
+        "DEDR 1042"
+      ],
+      "raw_entry_text_ocr": ")\nöttu-mm [ötu ‘shell’, DEDR 1042] ‘crustacean; shellfish;\nm iti-vakai'.",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 0,
+          "bbox_pdf_points": [
+            70,
+            596.14,
+            291,
+            619.99
+          ],
+          "raw_text": ")\nöttu-mm [ötu ‘shell’, DEDR 1042] ‘crustacean; shellfish;\nm iti-vakai'."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_11",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "kaṭanākku-mīṉ",
+      "form_status": "tentative_transcription",
+      "form_uncertainty": "Printed first component appears contracted kaṭanākku; source explicitly analyses kaṭal+nākku. Exact sandhi form needs finer reading.",
+      "segmentation_as_printed": [
+        "kaṭanākku",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "flat fish",
+      "printed_lexical_notes_ocr": [
+        "katal ‘sea’, D ED R in 8 ; näkku ‘tongue’,\nD ED R 3633",
+        "Cf. näkku-mi'!J."
+      ],
+      "dedr_references_ocr": [
+        "DEDR 3633"
+      ],
+      "raw_entry_text_ocr": "katam kku-m i!l [katal ‘sea’, D ED R in 8 ; näkku ‘tongue’,\nD ED R 3633] ‘flat fish, brownish or purplish black,\nattaining at least 16 inches in length, Pleuronecter erum ei;\nerum ai näkkum iti'. [Cf. näkku-mi'!J.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 0,
+          "bbox_pdf_points": [
+            70,
+            618.99,
+            291,
+            665.74
+          ],
+          "raw_text": "katam kku-m i!l [katal ‘sea’, D ED R in 8 ; näkku ‘tongue’,\nD ED R 3633] ‘flat fish, brownish or purplish black,\nattaining at least 16 inches in length, Pleuronecter erum ei;\nerum ai näkkum iti'. [Cf. näkku-mi'!J.]"
+        }
+      ],
+      "phonology_test_eligible": false,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_12",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "kaṭiccai-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "kaṭiccai",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "a sea fish",
+      "printed_lexical_notes_ocr": [
+        "k a tfca i, \n? <  kati \n‘speed, \nsharpness,\npungency’, D ED R 1135"
+      ],
+      "dedr_references_ocr": [
+        "DEDR 1135"
+      ],
+      "raw_entry_text_ocr": "katiccai-m in \n[k a tfca i, \n? <  kati \n‘speed, \nsharpness,\npungency’, D ED R 1135] ‘a sea-fish, greyish, with black\nbloches on its sides, attaining 16 inches in length,\nPristipom a maculatum; katal-m i[J-vakai\\ (Winslow.)",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 0,
+          "bbox_pdf_points": [
+            70,
+            664.74,
+            291,
+            714
+          ],
+          "raw_text": "katiccai-m in \n[k a tfca i, \n? <  kati \n‘speed, \nsharpness,\npungency’, D ED R 1135] ‘a sea-fish, greyish, with black\nbloches on its sides, attaining 16 inches in length,\nPristipom a maculatum; katal-m i[J-vakai\\ (Winslow.)"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_13",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "kaṭu-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "kaṭu",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "ferocious fish, such as shark",
+      "printed_lexical_notes_ocr": [
+        "katu ‘severe, cruel, harsh’, D ED R 1135",
+        "‘shark, etc.’"
+      ],
+      "dedr_references_ocr": [
+        "DEDR 1135"
+      ],
+      "raw_entry_text_ocr": "katu-mm  \n[katu ‘severe, cruel, harsh’, D ED R 1135] \n‘ferocious fish, as shark; curä-m utaliyana [‘shark, etc.’]’: \nkatu-m m  kalippinum (Akananiiru 50).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 1,
+          "bbox_pdf_points": [
+            330,
+            68.19,
+            565,
+            103.51
+          ],
+          "raw_text": "katu-mm  \n[katu ‘severe, cruel, harsh’, D ED R 1135] \n‘ferocious fish, as shark; curä-m utaliyana [‘shark, etc.’]’: \nkatu-m m  kalippinum (Akananiiru 50)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_14",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "kaṭai-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "kaṭai",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "twenty-seventh and final nakshatra",
+      "printed_lexical_notes_ocr": [
+        "katai ‘end, limit’, D EDR 1109",
+        "<Sanskrit re v a ti"
+      ],
+      "dedr_references_ocr": [
+        "DEDR 1109"
+      ],
+      "raw_entry_text_ocr": "katai-mi!J, [katai ‘end, limit’, D EDR 1109] ‘the twenty- \nseventh naksatra, i.e. the last of the asterisms, the end-star; \nirevati [<Sanskrit re v a ti] (Centan Tivakaran).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 1,
+          "bbox_pdf_points": [
+            330,
+            102.51,
+            565,
+            138.14
+          ],
+          "raw_text": "katai-mi!J, [katai ‘end, limit’, D EDR 1109] ‘the twenty- \nseventh naksatra, i.e. the last of the asterisms, the end-star; \nirevati [<Sanskrit re v a ti] (Centan Tivakaran)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_15",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "kallu-k-kōḻi-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "kallu",
+        "k",
+        "kōḻi",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "blue sea fish, Holocanthus imperator",
+      "printed_lexical_notes_ocr": [
+        "kallu ‘stone’, DEDR 1298; köli ‘cock, \nfowl’, D ED R 2248",
+        "Cf. koli-mi!J,."
+      ],
+      "dedr_references_ocr": [
+        "DEDR 1298",
+        "DEDR 2248"
+      ],
+      "raw_entry_text_ocr": "kallu-k-köli-m m  [kallu ‘stone’, DEDR 1298; köli ‘cock, \nfowl’, D ED R 2248] ‘a sea-fish, bluish, Holocanthus \nimperator; katal-m itt-vakai? [Cf. koli-mi!J,.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 1,
+          "bbox_pdf_points": [
+            330,
+            137.14,
+            565,
+            172.54
+          ],
+          "raw_text": "kallu-k-köli-m m  [kallu ‘stone’, DEDR 1298; köli ‘cock, \nfowl’, D ED R 2248] ‘a sea-fish, bluish, Holocanthus \nimperator; katal-m itt-vakai? [Cf. koli-mi!J,.]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_16",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "kaḻi-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "kaḻi",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "salt-water fish",
+      "printed_lexical_notes_ocr": [
+        "kali ‘backwater, shallow sea-waters, salt river’, \nD ED R 1359"
+      ],
+      "dedr_references_ocr": [
+        "DEDR 1359"
+      ],
+      "raw_entry_text_ocr": "kali-mitt [kali ‘backwater, shallow sea-waters, salt river’, \nD ED R 1359] ‘salt-water fish’: as Tamil gloss on kolu-mitt.",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 1,
+          "bbox_pdf_points": [
+            330,
+            171.54,
+            565,
+            195.39
+          ],
+          "raw_text": "kali-mitt [kali ‘backwater, shallow sea-waters, salt river’, \nD ED R 1359] ‘salt-water fish’: as Tamil gloss on kolu-mitt."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_17",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "kaṉ-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "kaṉ",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "bride-fish, Lutjanus marginatus",
+      "printed_lexical_notes_ocr": [
+        "J [kal ‘stone’, DEDR 1298",
+        "‘one kind of sea-fish’"
+      ],
+      "dedr_references_ocr": [
+        "DEDR 1298"
+      ],
+      "raw_entry_text_ocr": "ka'!}-mi'[J [kal ‘stone’, DEDR 1298] ‘bride-fish, purplish- \nyellow, attaining 16 inches in length, Lutjanus marginatus; \noru -vakai-k katal-m in [‘one kind of sea-fish’]’.",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 1,
+          "bbox_pdf_points": [
+            330,
+            194.39,
+            565,
+            229.79
+          ],
+          "raw_text": "ka'!}-mi'[J [kal ‘stone’, DEDR 1298] ‘bride-fish, purplish- \nyellow, attaining 16 inches in length, Lutjanus marginatus; \noru -vakai-k katal-m in [‘one kind of sea-fish’]’."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_18",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "kākkāy-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "kākkāy",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "a kind of fish",
+      "printed_lexical_notes_ocr": [
+        "käkkäy ‘crow’, DEDR 1425"
+      ],
+      "dedr_references_ocr": [
+        "DEDR 1425"
+      ],
+      "raw_entry_text_ocr": "käkkäy-mitt [käkkäy ‘crow’, DEDR 1425] ‘a kind o f fish; \nm i'!}-vakai\\",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 1,
+          "bbox_pdf_points": [
+            330,
+            228.79,
+            565,
+            252.79
+          ],
+          "raw_text": "käkkäy-mitt [käkkäy ‘crow’, DEDR 1425] ‘a kind o f fish; \nm i'!}-vakai\\"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_19",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "kiḷi-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "kiḷi",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "green sea fish",
+      "printed_lexical_notes_ocr": [
+        "kili ‘parrot’, D EDR 1548"
+      ],
+      "dedr_references_ocr": [
+        "DEDR 1548"
+      ],
+      "raw_entry_text_ocr": "kili-mitt [kili ‘parrot’, D EDR 1548] ‘a sea-fish, green, \nPseudoscarus chrysopoma; katal-m i'[J-vakai\\",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 1,
+          "bbox_pdf_points": [
+            330,
+            251.79,
+            565,
+            275.84
+          ],
+          "raw_text": "kili-mitt [kili ‘parrot’, D EDR 1548] ‘a sea-fish, green, \nPseudoscarus chrysopoma; katal-m i'[J-vakai\\"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_20",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "kīrai-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "kīrai",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "small kind of fish",
+      "printed_lexical_notes_ocr": [
+        "J [kirai ‘greens, pot-herbs, vegetables’, DEDR \n1617"
+      ],
+      "dedr_references_ocr": [
+        "DEDR \n1617"
+      ],
+      "raw_entry_text_ocr": "kirai-mi'[J [kirai ‘greens, pot-herbs, vegetables’, DEDR \n1617] ‘a small kind of fish; oru-vakai ciriya mitt,'.",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 1,
+          "bbox_pdf_points": [
+            330,
+            274.84,
+            565,
+            298.89
+          ],
+          "raw_text": "kirai-mi'[J [kirai ‘greens, pot-herbs, vegetables’, DEDR \n1617] ‘a small kind of fish; oru-vakai ciriya mitt,'."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_21",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "kuttuvā-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "kuttuvā",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "a herring",
+      "printed_lexical_notes_ocr": [
+        "kuttuvii ‘herring’"
+      ],
+      "dedr_references_ocr": [],
+      "raw_entry_text_ocr": "kuttuvd-mrn [kuttuvii ‘herring’] ‘a herring, golden, glossed \nwith purple, Pellona brachysoma; katal-m itt-vakai.",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 1,
+          "bbox_pdf_points": [
+            330,
+            297.89,
+            565,
+            321.74
+          ],
+          "raw_text": "kuttuvd-mrn [kuttuvii ‘herring’] ‘a herring, golden, glossed \nwith purple, Pellona brachysoma; katal-m itt-vakai."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_22",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "kutirai-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "kutirai",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "a kind of fish",
+      "printed_lexical_notes_ocr": [
+        "J [kutirai ‘horse’, D ED R 1711a"
+      ],
+      "dedr_references_ocr": [
+        "DEDR 1711a"
+      ],
+      "raw_entry_text_ocr": "kutirai-mi'[J [kutirai ‘horse’, D ED R 1711a] ‘a kind of fish; \nm itt-vakai': ku tirai-m im t' am i-m itt (KurukiirppaHu by \nCatakopa-p Pulavar, p. 7). (TL, Suppl.)",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 1,
+          "bbox_pdf_points": [
+            330,
+            320.74,
+            565,
+            356.01
+          ],
+          "raw_text": "kutirai-mi'[J [kutirai ‘horse’, D ED R 1711a] ‘a kind of fish; \nm itt-vakai': ku tirai-m im t' am i-m itt (KurukiirppaHu by \nCatakopa-p Pulavar, p. 7). (TL, Suppl.)"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_23",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "kula-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "kula",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "Arundhati",
+      "printed_lexical_notes_ocr": [
+        "J \n[kulam <Sanskrit \nkula- \n‘(noble) \nfamily’",
+        "J arukiya karpum (Kallatam \n73,r). \n[Cf. \nSanskrit \nkula-naksatra \n‘an \nasterism \ndistinguished above others’, including RohiQ.ï, Pusya, \nMagha, \nUttaraphalgunï, \nCitra, \nViSakha, \nJyestha, \nPürväsädhä, Sravanä, Uttarabhadrapada and Bharam: thus \nRadhakanta’s Sabdakalpadruma, quoting a verse from \nTantrasara: värutßrdräbhijinm ülam  kuliikulam  udiihr,tam / \nkuliini samadhisthyani sesiini cäkuliini ca //; cf. Bohtlingk \nand Roth 1858: 11, 353."
+      ],
+      "dedr_references_ocr": [],
+      "raw_entry_text_ocr": "kula-mi'[J \n[kulam <Sanskrit \nkula- \n‘(noble) \nfamily’] \n‘Arundhatï; aruntati': kula-mi'[J arukiya karpum (Kallatam \n73,r). \n[Cf. \nSanskrit \nkula-naksatra \n‘an \nasterism \ndistinguished above others’, including RohiQ.ï, Pusya, \nMagha, \nUttaraphalgunï, \nCitra, \nViSakha, \nJyestha, \nPürväsädhä, Sravanä, Uttarabhadrapada and Bharam: thus \nRadhakanta’s Sabdakalpadruma, quoting a verse from \nTantrasara: värutßrdräbhijinm ülam  kuliikulam  udiihr,tam / \nkuliini samadhisthyani sesiini cäkuliini ca //; cf. Bohtlingk \nand Roth 1858: 11, 353.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 1,
+          "bbox_pdf_points": [
+            330,
+            355.01,
+            565,
+            470.99
+          ],
+          "raw_text": "kula-mi'[J \n[kulam <Sanskrit \nkula- \n‘(noble) \nfamily’] \n‘Arundhatï; aruntati': kula-mi'[J arukiya karpum (Kallatam \n73,r). \n[Cf. \nSanskrit \nkula-naksatra \n‘an \nasterism \ndistinguished above others’, including RohiQ.ï, Pusya, \nMagha, \nUttaraphalgunï, \nCitra, \nViSakha, \nJyestha, \nPürväsädhä, Sravanä, Uttarabhadrapada and Bharam: thus \nRadhakanta’s Sabdakalpadruma, quoting a verse from \nTantrasara: värutßrdräbhijinm ülam  kuliikulam  udiihr,tam / \nkuliini samadhisthyani sesiini cäkuliini ca //; cf. Bohtlingk \nand Roth 1858: 11, 353.]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_24",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "kuḻi-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "kuḻi",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "conger eel",
+      "printed_lexical_notes_ocr": [
+        "J [kuli ‘hole, hollow’, DEDR 1818"
+      ],
+      "dedr_references_ocr": [
+        "DEDR 1818"
+      ],
+      "raw_entry_text_ocr": "kuli-mi'[J [kuli ‘hole, hollow’, DEDR 1818] ‘conger eel, \nolive, attaining more than 10 feet in length, M uraenesox \ntalabon; päm pu-vati-v-ä'!}a m '[J-vakai\\",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 1,
+          "bbox_pdf_points": [
+            330,
+            469.99,
+            565,
+            505.26
+          ],
+          "raw_text": "kuli-mi'[J [kuli ‘hole, hollow’, DEDR 1818] ‘conger eel, \nolive, attaining more than 10 feet in length, M uraenesox \ntalabon; päm pu-vati-v-ä'!}a m '[J-vakai\\"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_25",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "kuḷa-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "kuḷa",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "a certain star; identification disputed in source",
+      "printed_lexical_notes_ocr": [
+        "kulam ‘tank, pond, lake’, DEDR 1828",
+        "probably the twentieth (Sanskrit pürväsädhä) or the \ntwenty-first naksatra (Sanskrit uttariisädhä) called in Tamil \nm ur-kulam ‘first tank’ or utai-kulam ‘breached tank’ and \nkatai-k-kulam  ‘last tank’ respectively; note that the \nDigambara Jaina explanation of the shape of the latter \nasterism as being like that of a breached tank (bhagna-väpi, \nkhiita-väpi) agrees with the Tamil name utai-kulam of the \nformer, while according to the Svetambara Jainas, the \ntwenty-second naksatra sravam  has the shape of a tank \n(käsära); cf. Kirfel 1920; N. Subrahmanian (1966a: 302) \nidentifies kula-mi'[J with the kärttikai star, the third \nnaksatra, Hart (1975: 73—4) with the seventh naksatra, \nSanskrit \npunarvasu",
+        "quoted in T L m: 1855a s.v. t ä l (n ) \n‘comet’"
+      ],
+      "dedr_references_ocr": [
+        "DEDR 1828"
+      ],
+      "raw_entry_text_ocr": "kula-m in [kulam ‘tank, pond, lake’, DEDR 1828] ‘a certain \nstar’ [probably the twentieth (Sanskrit pürväsädhä) or the \ntwenty-first naksatra (Sanskrit uttariisädhä) called in Tamil \nm ur-kulam ‘first tank’ or utai-kulam ‘breached tank’ and \nkatai-k-kulam  ‘last tank’ respectively; note that the \nDigambara Jaina explanation of the shape of the latter \nasterism as being like that of a breached tank (bhagna-väpi, \nkhiita-väpi) agrees with the Tamil name utai-kulam of the \nformer, while according to the Svetambara Jainas, the \ntwenty-second naksatra sravam  has the shape of a tank \n(käsära); cf. Kirfel 1920; N. Subrahmanian (1966a: 302) \nidentifies kula-mi'[J with the kärttikai star, the third \nnaksatra, Hart (1975: 73—4) with the seventh naksatra, \nSanskrit \npunarvasu]: \nkula-mi'!}otun \ntät \npukaiyinum\n(Purananiiru 395,35) [quoted in T L m: 1855a s.v. t ä l (n ) \n‘comet’].",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 1,
+          "bbox_pdf_points": [
+            330,
+            504.26,
+            565,
+            688.59
+          ],
+          "raw_text": "kula-m in [kulam ‘tank, pond, lake’, DEDR 1828] ‘a certain \nstar’ [probably the twentieth (Sanskrit pürväsädhä) or the \ntwenty-first naksatra (Sanskrit uttariisädhä) called in Tamil \nm ur-kulam ‘first tank’ or utai-kulam ‘breached tank’ and \nkatai-k-kulam  ‘last tank’ respectively; note that the \nDigambara Jaina explanation of the shape of the latter \nasterism as being like that of a breached tank (bhagna-väpi, \nkhiita-väpi) agrees with the Tamil name utai-kulam of the \nformer, while according to the Svetambara Jainas, the \ntwenty-second naksatra sravam  has the shape of a tank \n(käsära); cf. Kirfel 1920; N. Subrahmanian (1966a: 302) \nidentifies kula-mi'[J with the kärttikai star, the third \nnaksatra, Hart (1975: 73—4) with the seventh naksatra, \nSanskrit \npunarvasu]: \nkula-mi'!}otun \ntät \npukaiyinum\n(Purananiiru 395,35) [quoted in T L m: 1855a s.v. t ä l (n ) \n‘comet’]."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_280_26",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "kuṟu-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "kuṟu",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "a kind of fish",
+      "printed_lexical_notes_ocr": [
+        "kuru ‘short, small’, DEDR 1851"
+      ],
+      "dedr_references_ocr": [
+        "DEDR 1851"
+      ],
+      "raw_entry_text_ocr": "kuru-mitt [kuru ‘short, small’, DEDR 1851] ‘a kind of fish; \nm i'!}-vakai. (Winslow.)",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 297,
+          "printed_page": 280,
+          "column": 1,
+          "bbox_pdf_points": [
+            330,
+            687.59,
+            565,
+            714
+          ],
+          "raw_text": "kuru-mitt [kuru ‘short, small’, DEDR 1851] ‘a kind of fish; \nm i'!}-vakai. (Winslow.)"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_01",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "kai-m-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "kai",
+        "m",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "thirteenth nakshatra",
+      "printed_lexical_notes_ocr": [
+        "kai ‘hand’, D E D R  2023",
+        " <  Sanskrit hasta- ‘hand’",
+        "Cf. ai-m -m iy."
+      ],
+      "dedr_references_ocr": [
+        "DEDR  2023"
+      ],
+      "raw_entry_text_ocr": "kai-m -m iy [kai ‘hand’, D E D R  2023] ‘the thirteenth \nnaksatra; \nattam [ <  Sanskrit hasta- ‘hand’]’ (Cëntan \nTivakaran). [Cf. ai-m -m iy.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 0,
+          "bbox_pdf_points": [
+            52,
+            66.04,
+            280,
+            101.44
+          ],
+          "raw_text": "kai-m -m iy [kai ‘hand’, D E D R  2023] ‘the thirteenth \nnaksatra; \nattam [ <  Sanskrit hasta- ‘hand’]’ (Cëntan \nTivakaran). [Cf. ai-m -m iy.]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_02",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F(S)",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": true,
+      "printed_form_transcription": "kokku-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "kokku",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "long-nosed marine fish",
+      "printed_lexical_notes_ocr": [
+        "kokku ‘crane, stork’, \nD E D R  2125; ‘the \nnineteenth \nlunar \nasterism, \nmülam': \nkokku-c-cöti\n(Vitänamälai by Näräyanacuvämika",
+        "‘needle-necked’"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  2125"
+      ],
+      "raw_entry_text_ocr": "kokku-m iy \n[kokku ‘crane, stork’, \nD E D R  2125; ‘the \nnineteenth \nlunar \nasterism, \nmülam': \nkokku-c-cöti\n(Vitänamälai by Näräyanacuvämika], Kunäkuna. 12.)] ‘a \nlong-nosed \nmarine \nfish, \nyellowish \ngreen, \nBelone \nstrongylura; \nüci-k-kalutti \n[‘needle-necked’]’ \n(Maclean \n1893: 203a).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 0,
+          "bbox_pdf_points": [
+            52,
+            100.44,
+            280,
+            169.99
+          ],
+          "raw_text": "kokku-m iy \n[kokku ‘crane, stork’, \nD E D R  2125; ‘the \nnineteenth \nlunar \nasterism, \nmülam': \nkokku-c-cöti\n(Vitänamälai by Näräyanacuvämika], Kunäkuna. 12.)] ‘a \nlong-nosed \nmarine \nfish, \nyellowish \ngreen, \nBelone \nstrongylura; \nüci-k-kalutti \n[‘needle-necked’]’ \n(Maclean \n1893: 203a)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_03",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "koy-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "koy",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "a kind of fresh-water fish",
+      "printed_lexical_notes_ocr": [
+        " =  koy ‘a fresh-water fish, rifle-green, attaining 8.5\ninches in length, A nabas scandens; ettarai ankulam nifam \nullatum n a y-yiril viilvatum  paciya nirattatum ana m iy- \nvakai': cem puyal koyyanaittun kotzarum (Tëvaram 196,3)",
+        "Cf. Turner 1966 \nno. 2959 (and Watt 1890: Ill, 370): Sanskrit kavayi-, \nkavikii- f. ‘the fish Cojus cobojus' lex., Assamese kiiw ai \n(Watt: koi) ‘the fish Anabus’, Bengali kai\\ kai, kayi, koi ‘the \nclimbing fish’, Oriya kai\\ kaii (Watt: koi) ‘the fish Anabus \nscandens' (Watt: Singhalese kavaya)."
+      ],
+      "dedr_references_ocr": [],
+      "raw_entry_text_ocr": "koy-m in [ =  koy ‘a fresh-water fish, rifle-green, attaining 8.5\ninches in length, A nabas scandens; ettarai ankulam nifam \nullatum n a y-yiril viilvatum  paciya nirattatum ana m iy- \nvakai': cem puyal koyyanaittun kotzarum (Tëvaram 196,3)] ‘a \nkindoffish; m iy -v a k a i: koy-m in ceppali (Kurucürppallu by \nCatakopa-p Pulavar, p. 20). (T L , Suppl.) [Cf. Turner 1966 \nno. 2959 (and Watt 1890: Ill, 370): Sanskrit kavayi-, \nkavikii- f. ‘the fish Cojus cobojus' lex., Assamese kiiw ai \n(Watt: koi) ‘the fish Anabus’, Bengali kai\\ kai, kayi, koi ‘the \nclimbing fish’, Oriya kai\\ kaii (Watt: koi) ‘the fish Anabus \nscandens' (Watt: Singhalese kavaya).]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 0,
+          "bbox_pdf_points": [
+            52,
+            168.99,
+            280,
+            296.74
+          ],
+          "raw_text": "koy-m in [ =  koy ‘a fresh-water fish, rifle-green, attaining 8.5\ninches in length, A nabas scandens; ettarai ankulam nifam \nullatum n a y-yiril viilvatum  paciya nirattatum ana m iy- \nvakai': cem puyal koyyanaittun kotzarum (Tëvaram 196,3)] ‘a \nkindoffish; m iy -v a k a i: koy-m in ceppali (Kurucürppallu by \nCatakopa-p Pulavar, p. 20). (T L , Suppl.) [Cf. Turner 1966 \nno. 2959 (and Watt 1890: Ill, 370): Sanskrit kavayi-, \nkavikii- f. ‘the fish Cojus cobojus' lex., Assamese kiiw ai \n(Watt: koi) ‘the fish Anabus’, Bengali kai\\ kai, kayi, koi ‘the \nclimbing fish’, Oriya kai\\ kaii (Watt: koi) ‘the fish Anabus \nscandens' (Watt: Singhalese kavaya).]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_04",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "koḻu-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "koḻu",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "salt-water fish",
+      "printed_lexical_notes_ocr": [
+        "cf. Malayalam kolu-min ‘porpoise’ (Gundert \n1871: 1, 312b); kolu ‘fat’, D E D R  2146"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  2146"
+      ],
+      "raw_entry_text_ocr": "kolu-min [cf. Malayalam kolu-min ‘porpoise’ (Gundert \n1871: 1, 312b); kolu ‘fat’, D E D R  2146] ‘a salt-water fish; \nkali-m iy-vakai': irun-kaliviiyk kolu-min unta vayyankafe \n(Tirukkovaiyar by Mänikkaväcakar, 188).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 0,
+          "bbox_pdf_points": [
+            52,
+            295.74,
+            280,
+            342.44
+          ],
+          "raw_text": "kolu-min [cf. Malayalam kolu-min ‘porpoise’ (Gundert \n1871: 1, 312b); kolu ‘fat’, D E D R  2146] ‘a salt-water fish; \nkali-m iy-vakai': irun-kaliviiyk kolu-min unta vayyankafe \n(Tirukkovaiyar by Mänikkaväcakar, 188)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_05",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "kōṭṭu-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "kōṭṭu",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "shark",
+      "printed_lexical_notes_ocr": [
+        "kötu ‘horn, tusk’, D E D R  2200",
+        "Cf. m akara- \nm iy, and see § 10.3."
+      ],
+      "dedr_references_ocr": [
+        "DEDR  2200"
+      ],
+      "raw_entry_text_ocr": "köttu-m iy [kötu ‘horn, tusk’, D E D R  2200] ‘shark; curii': \nköttu-m iy erinta v-u vakaiyiir (Narrinai 49). [Cf. m akara- \nm iy, and see § 10.3.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 0,
+          "bbox_pdf_points": [
+            52,
+            341.44,
+            280,
+            376.84
+          ],
+          "raw_text": "köttu-m iy [kötu ‘horn, tusk’, D E D R  2200] ‘shark; curii': \nköttu-m iy erinta v-u vakaiyiir (Narrinai 49). [Cf. m akara- \nm iy, and see § 10.3.]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_06",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "kōṉ-mīṉ",
+      "form_status": "tentative_transcription",
+      "form_uncertainty": "Printed nasal appears alveolar ṉ; source lemma is kōḷ. Do not apply general sandhi rules solely from this row.",
+      "segmentation_as_printed": [
+        "kōṉ",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "planet",
+      "printed_lexical_notes_ocr": [
+        "köf ‘seizure’, D E D R  2151",
+        "<Sanskrit graha \n‘seizure; \nplanet’",
+        "See § 13.3."
+      ],
+      "dedr_references_ocr": [
+        "DEDR  2151"
+      ],
+      "raw_entry_text_ocr": "kön-m iy [köf ‘seizure’, D E D R  2151]: ‘planet, distinguished \nfrom \nniitz-miy; \nkirakam  [<Sanskrit graha \n‘seizure; \nplanet’]’: v iiy  ira vicum pir kön-m iy (Cirupänärruppatai \n242). [See § 13.3.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 0,
+          "bbox_pdf_points": [
+            52,
+            375.84,
+            280,
+            423.09
+          ],
+          "raw_text": "kön-m iy [köf ‘seizure’, D E D R  2151]: ‘planet, distinguished \nfrom \nniitz-miy; \nkirakam  [<Sanskrit graha \n‘seizure; \nplanet’]’: v iiy  ira vicum pir kön-m iy (Cirupänärruppatai \n242). [See § 13.3.]"
+        }
+      ],
+      "phonology_test_eligible": false,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_07",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "kōḻi-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "kōḻi",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "sturgeon, Achanthurus gahm as source spells it",
+      "printed_lexical_notes_ocr": [
+        "köli ‘cock, \nfowl’, \nD E D R  2248",
+        "Cf. kallu-k-köli-m iy; m ancat-köli-m iy."
+      ],
+      "dedr_references_ocr": [
+        "DEDR  2248"
+      ],
+      "raw_entry_text_ocr": "köli-m iy \n[köli ‘cock, \nfowl’, \nD E D R  2248] ‘sturgeon, \nblackish-brown, attaining 18 inches in length, Achanthurus \ngahm; p a tiyett’ atikula nifamum karu-niram um  ulla katal- \nm iy- va k a i'. [Cf. kallu-k-köli-m iy; m ancat-köli-m iy.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 0,
+          "bbox_pdf_points": [
+            52,
+            422.09,
+            280,
+            468.64
+          ],
+          "raw_text": "köli-m iy \n[köli ‘cock, \nfowl’, \nD E D R  2248] ‘sturgeon, \nblackish-brown, attaining 18 inches in length, Achanthurus \ngahm; p a tiyett’ atikula nifamum karu-niram um  ulla katal- \nm iy- va k a i'. [Cf. kallu-k-köli-m iy; m ancat-köli-m iy.]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_08",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "cippi-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "cippi",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "oyster, cockle, shellfish",
+      "printed_lexical_notes_ocr": [
+        "cippi ‘shell’, D ED R_ 2535"
+      ],
+      "dedr_references_ocr": [],
+      "raw_entry_text_ocr": "cippi-m in [cippi ‘shell’, D ED R_ 2535] ‘oyster, cockle, \nshellfish’ (as the Tamil gloss on matti: see m atti-m iy).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 0,
+          "bbox_pdf_points": [
+            52,
+            467.64,
+            280,
+            491.84
+          ],
+          "raw_text": "cippi-m in [cippi ‘shell’, D ED R_ 2535] ‘oyster, cockle, \nshellfish’ (as the Tamil gloss on matti: see m atti-m iy)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_09",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "ciṟaki-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "ciṟaki",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "flying fish",
+      "printed_lexical_notes_ocr": [
+        "ciraki ‘common teal; k ifu v a i; ciraku ‘wing’, \nD E D R  2591",
+        "‘bird- \nfish’"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  2591"
+      ],
+      "raw_entry_text_ocr": "ciraki-m iy [ciraki ‘common teal; k ifu v a i; ciraku ‘wing’, \nD E D R  2591] ‘a flying fish, Exocoetus; p aravai-m iy [‘bird- \nfish’]’. (Winslow.)",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 0,
+          "bbox_pdf_points": [
+            52,
+            490.84,
+            280,
+            526.39
+          ],
+          "raw_text": "ciraki-m iy [ciraki ‘common teal; k ifu v a i; ciraku ‘wing’, \nD E D R  2591] ‘a flying fish, Exocoetus; p aravai-m iy [‘bird- \nfish’]’. (Winslow.)"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_10",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "SF",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish",
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "ciṟu-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "ciṟu",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "Arundhati; loach",
+      "printed_lexical_notes_ocr": [
+        "ciru ‘small’, D E D R  1594"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  1594"
+      ],
+      "raw_entry_text_ocr": "ciru-m iy [ciru ‘small’, D E D R  1594] (1) ‘the . star ArundhatI; \naruntati': \ncirumiy \npuraiyun \nkarpiy \narunutal\n(Perumpänärruppatai 303); (2) - ‘loach, sandy colour, \nCobitio thermalis; ayirai (Pinkala-nikantu), noy-m -m in'. Cf. \nalso the Tamil gloss on pittafai-k-kiicu-m iy.",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 0,
+          "bbox_pdf_points": [
+            52,
+            525.39,
+            280,
+            583.49
+          ],
+          "raw_text": "ciru-m iy [ciru ‘small’, D E D R  1594] (1) ‘the . star ArundhatI; \naruntati': \ncirumiy \npuraiyun \nkarpiy \narunutal\n(Perumpänärruppatai 303); (2) - ‘loach, sandy colour, \nCobitio thermalis; ayirai (Pinkala-nikantu), noy-m -m in'. Cf. \nalso the Tamil gloss on pittafai-k-kiicu-m iy."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_11",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "curumpu-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "curumpu",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "lead-coloured sea fish",
+      "printed_lexical_notes_ocr": [
+        "curumpu ‘bee’, D E D R  2689"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  2689"
+      ],
+      "raw_entry_text_ocr": "curumpu-miy [curumpu ‘bee’, D E D R  2689] ‘sea-fish, lead \ncolour, attaining 10 inches in length, Lactarius delicatulus; \nciimpayiramum^ io-a n ku la nifamum utaiya katal-m iy-vakai'.",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 0,
+          "bbox_pdf_points": [
+            52,
+            582.49,
+            280,
+            617.69
+          ],
+          "raw_text": "curumpu-miy [curumpu ‘bee’, D E D R  2689] ‘sea-fish, lead \ncolour, attaining 10 inches in length, Lactarius delicatulus; \nciimpayiramum^ io-a n ku la nifamum utaiya katal-m iy-vakai'."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_12",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "SF",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish",
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "cem-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "cem",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "Arundhati; Mars; sixth nakshatra; sperm whale",
+      "printed_lexical_notes_ocr": [
+        "ce(m)- ‘red’, D E D R  1931",
+        "<Sanskrit iird rii",
+        "Cf. rökita-m iy:, Hart 1975: 76; and \nsee §§ 14 .1 and 14.4.",
+        "cemmiy \nvayirrir \nkiitzappatuvatu"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  1931"
+      ],
+      "raw_entry_text_ocr": "cem-miy [ce(m)- ‘red’, D E D R  1931] (1) ‘the star ArundhatI; \na ru n ta ticem m iy a yaiya n iyroyya ka r-c celvi (Patirruppattu \n31,28); (2) ‘Mars; cevviiy': cemmiy imaikkum iika vicum piy \n(Puranänöru 60,2); (3) ‘the sixth naksatra; tiruviitirai \n[<Sanskrit iird rii] (P^anänüru 60,2, urai); (4) ‘sperm \nwhale, Euphysetes macrocephalus; peruntalai-t tim inkilam ' \n(Maclean 1893: 345). [Cf. rökita-m iy:, Hart 1975: 76; and \nsee §§ 14 .1 and 14.4.]\n\ncem -m iy-vayiram  ‘ambergis, as found in the intestines of \nthe \nsperm \nwhale; \n[cemmiy \nvayirrir \nkiitzappatuvatu] \nm inampar eyrum m aruntu-p ipantam '. (Winslow.)",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 0,
+          "bbox_pdf_points": [
+            52,
+            616.69,
+            280,
+            714
+          ],
+          "raw_text": "cem-miy [ce(m)- ‘red’, D E D R  1931] (1) ‘the star ArundhatI; \na ru n ta ticem m iy a yaiya n iyroyya ka r-c celvi (Patirruppattu \n31,28); (2) ‘Mars; cevviiy': cemmiy imaikkum iika vicum piy \n(Puranänöru 60,2); (3) ‘the sixth naksatra; tiruviitirai \n[<Sanskrit iird rii] (P^anänüru 60,2, urai); (4) ‘sperm \nwhale, Euphysetes macrocephalus; peruntalai-t tim inkilam ' \n(Maclean 1893: 345). [Cf. rökita-m iy:, Hart 1975: 76; and \nsee §§ 14 .1 and 14.4.]"
+        },
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 1,
+          "bbox_pdf_points": [
+            310,
+            66,
+            562,
+            101
+          ],
+          "raw_text": "cem -m iy-vayiram  ‘ambergis, as found in the intestines of \nthe \nsperm \nwhale; \n[cemmiy \nvayirrir \nkiitzappatuvatu] \nm inampar eyrum m aruntu-p ipantam '. (Winslow.)"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_13",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "talappaṟṟu-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "talappaṟṟu",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "a kind of sea fish",
+      "printed_lexical_notes_ocr": [
+        "talapparru ( <Sanskrit tiila-pattra) ‘palm \nleaf"
+      ],
+      "dedr_references_ocr": [],
+      "raw_entry_text_ocr": "talapparru-m iy [talapparru ( <Sanskrit tiila-pattra) ‘palm \nleaf] ‘a kind of sea-fish; katal-m iy-vakai' (Yä.lppänattu \nMänippäyakaräti by Cantiracëkarap Pulavar).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 1,
+          "bbox_pdf_points": [
+            310,
+            100.44,
+            562,
+            135.64
+          ],
+          "raw_text": "talapparru-m iy [talapparru ( <Sanskrit tiila-pattra) ‘palm \nleaf] ‘a kind of sea-fish; katal-m iy-vakai' (Yä.lppänattu \nMänippäyakaräti by Cantiracëkarap Pulavar)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_14",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "tūḷ-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "tūḷ",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "small fish",
+      "printed_lexical_notes_ocr": [
+        "tül ‘dust, \npowder, particle; anything small \ncollectively, as f,ish, stones, roots, etc., D E D R  3283"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  3283"
+      ],
+      "raw_entry_text_ocr": "tüf-m iy \n[tül ‘dust, \npowder, particle; anything small \ncollectively, as f,ish, stones, roots, etc., D E D R  3283] ‘small \nfish; poti-m iy' Qaffna usage).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 1,
+          "bbox_pdf_points": [
+            310,
+            134.64,
+            562,
+            170.19
+          ],
+          "raw_text": "tüf-m iy \n[tül ‘dust, \npowder, particle; anything small \ncollectively, as f,ish, stones, roots, etc., D E D R  3283] ‘small \nfish; poti-m iy' Qaffna usage)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_15",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "tūru-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "tūru",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "a kind of fish",
+      "printed_lexical_notes_ocr": [],
+      "dedr_references_ocr": [],
+      "raw_entry_text_ocr": "türu-m iy ‘a kind of fish; m iy-va k a i’ (Periyamättuväkatam \n101). ( T L , Suppl.)",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 1,
+          "bbox_pdf_points": [
+            310,
+            169.19,
+            562,
+            193.04
+          ],
+          "raw_text": "türu-m iy ‘a kind of fish; m iy-va k a i’ (Periyamättuväkatam \n101). ( T L , Suppl.)"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_16",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "nakara-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "nakara",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "fish-shaped ring worn on little toe",
+      "printed_lexical_notes_ocr": [
+        "nakara <Sanskrit nakhara ‘nail, talon, claw’"
+      ],
+      "dedr_references_ocr": [],
+      "raw_entry_text_ocr": "nakara-m iy [nakara <Sanskrit nakhara ‘nail, talon, claw’] \n‘ring worn on the little toe by Parava women, one of \nai-vartzam, q.v.; parava-m akafiratu ai-varna-v-aniyu f kiiliy \nkantu-viralir pützum an i-vakai' (Parava usage). Cf. m iy-pfli \n‘fish-shaped ring worn on the little toe; kiir ciru-viralil \natziyum m iy-uru-v-iiya m ötiram'. (Winslow.)",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 1,
+          "bbox_pdf_points": [
+            310,
+            192.04,
+            562,
+            261.79
+          ],
+          "raw_text": "nakara-m iy [nakara <Sanskrit nakhara ‘nail, talon, claw’] \n‘ring worn on the little toe by Parava women, one of \nai-vartzam, q.v.; parava-m akafiratu ai-varna-v-aniyu f kiiliy \nkantu-viralir pützum an i-vakai' (Parava usage). Cf. m iy-pfli \n‘fish-shaped ring worn on the little toe; kiir ciru-viralil \natziyum m iy-uru-v-iiya m ötiram'. (Winslow.)"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_17",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "naṉ-ṉīr-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "naṉ",
+        "ṉīr",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "fresh-water fish",
+      "printed_lexical_notes_ocr": [
+        "nal ‘good’, D E D R  3610; nir ‘water’, D E D R  \n3690a"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  3610",
+        "DEDR  \n3690a"
+      ],
+      "raw_entry_text_ocr": "nay-yir-m iy [nal ‘good’, D E D R  3610; nir ‘water’, D E D R  \n3690a] ‘fresh-water fish’: as Tamil gloss on payai-m iy.",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 1,
+          "bbox_pdf_points": [
+            310,
+            260.79,
+            562,
+            285.04
+          ],
+          "raw_text": "nay-yir-m iy [nal ‘good’, D E D R  3610; nir ‘water’, D E D R  \n3690a] ‘fresh-water fish’: as Tamil gloss on payai-m iy."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_18",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "nākku-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "nākku",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "Indian sole; flat fish",
+      "printed_lexical_notes_ocr": [
+        "niikku ‘tongue’, D E D R  3633",
+        " =  Malayalam \nniikku-m in, Telugu niiluka cipa"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  3633"
+      ],
+      "raw_entry_text_ocr": "niikku-m iy [niikku ‘tongue’, D E D R  3633] [ =  Malayalam \nniikku-m in, Telugu niiluka cipa] (1) ‘Indian sole, Pleuro- \nnectidae solea; katalm iy vak ai'; (2) ‘flat fish, brownish and \npurplish black, attaining 16 inches in length, Psettodes \nerumier; patiyiiru ankulam vafarvatum  karu-niram  ullatum \niiya viirai y-eyyum  m iy-vakai'.",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 1,
+          "bbox_pdf_points": [
+            310,
+            284.04,
+            562,
+            353.99
+          ],
+          "raw_text": "niikku-m iy [niikku ‘tongue’, D E D R  3633] [ =  Malayalam \nniikku-m in, Telugu niiluka cipa] (1) ‘Indian sole, Pleuro- \nnectidae solea; katalm iy vak ai'; (2) ‘flat fish, brownish and \npurplish black, attaining 16 inches in length, Psettodes \nerumier; patiyiiru ankulam vafarvatum  karu-niram  ullatum \niiya viirai y-eyyum  m iy-vakai'."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_19",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "nāṉ-mīṉ",
+      "form_status": "tentative_transcription",
+      "form_uncertainty": "The nasal in the printed first component is visually less clear than source lemma nāḷ; preserve as tentative nāṉ rather than silently equating.",
+      "segmentation_as_printed": [
+        "nāṉ",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "lunar asterism",
+      "printed_lexical_notes_ocr": [
+        "niif ‘day, early dawn’, D E D R  3656",
+        "<Sanskrit as'vini"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  3656"
+      ],
+      "raw_entry_text_ocr": "niitz-.miy [niif ‘day, early dawn’, D E D R  3656] ‘the lunar \nasterism; acuvati [<Sanskrit as'vini] m utaliya natcattirap- \npotu: niitz-miy viiy cülnta m ati p ö l (Kalittokai 104,27).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 1,
+          "bbox_pdf_points": [
+            310,
+            352.99,
+            562,
+            388.54
+          ],
+          "raw_text": "niitz-.miy [niif ‘day, early dawn’, D E D R  3656] ‘the lunar \nasterism; acuvati [<Sanskrit as'vini] m utaliya natcattirap- \npotu: niitz-miy viiy cülnta m ati p ö l (Kalittokai 104,27)."
+        }
+      ],
+      "phonology_test_eligible": false,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_20",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "nāy-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "nāy",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "parrot wrasse",
+      "printed_lexical_notes_ocr": [
+        "niiy \n‘dog’, \nD E D R  \n3650"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  \n3650"
+      ],
+      "raw_entry_text_ocr": "niiy-m iy \n[niiy \n‘dog’, \nD E D R  \n3650] \n‘parrot \nwrasse, \nolivaceous, Pseudoscarus aeruginosus; katal-m iy-vakai'.",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 1,
+          "bbox_pdf_points": [
+            310,
+            387.54,
+            562,
+            411.39
+          ],
+          "raw_text": "niiy-m iy \n[niiy \n‘dog’, \nD E D R  \n3650] \n‘parrot \nwrasse, \nolivaceous, Pseudoscarus aeruginosus; katal-m iy-vakai'."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_21",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "SF",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish",
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "ney-m-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "ney",
+        "m",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "fourteenth nakshatra by synonym; white prawn",
+      "printed_lexical_notes_ocr": [
+        "ney ‘oil, ghee, fat’, D E D R  3746"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  3746"
+      ],
+      "raw_entry_text_ocr": "ney-m -m iy [ney ‘oil, ghee, fat’, D E D R  3746] (i) =  ney-vii!J- \nm iy (Pinkala-nikantu); \n(2) \n‘white \nprawn; \nve l-l-iru f, \n(Winslow.)",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 1,
+          "bbox_pdf_points": [
+            310,
+            410.39,
+            562,
+            445.79
+          ],
+          "raw_text": "ney-m -m iy [ney ‘oil, ghee, fat’, D E D R  3746] (i) =  ney-vii!J- \nm iy (Pinkala-nikantu); \n(2) \n‘white \nprawn; \nve l-l-iru f, \n(Winslow.)"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_22",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "ney-vāṉ-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "ney",
+        "vāṉ",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "fourteenth nakshatra",
+      "printed_lexical_notes_ocr": [
+        "ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381",
+        "<Sanskrit \ncitrii"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  3746",
+        "DEDR  \n5381"
+      ],
+      "raw_entry_text_ocr": "ney-viiy-m iy [ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381] ‘the fourteenth naksatra; cittirai-niif [<Sanskrit \ncitrii]' (Cëntan Tivakaran).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 1,
+          "bbox_pdf_points": [
+            310,
+            444.79,
+            562,
+            480.14
+          ],
+          "raw_text": "ney-viiy-m iy [ney ‘oil, fat’, D E D R  3746; viiy ‘sky’, D E D R  \n5381] ‘the fourteenth naksatra; cittirai-niif [<Sanskrit \ncitrii]' (Cëntan Tivakaran)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_23",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "noy-m-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "noy",
+        "m",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "small fresh-water fish",
+      "printed_lexical_notes_ocr": [
+        "noy ‘grits, smallness, minuteness’, D E D R  \n3779"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  \n3779"
+      ],
+      "raw_entry_text_ocr": "noy-m -m iy [noy ‘grits, smallness, minuteness’, D E D R  \n3779] \n‘fresh-water \nfish, \nsandy \nin \ncolour, \nLepido \ncephalichthys thermalis; matzal-niram ulla iirru-m iy-vakai' \n(Pinkala-nika:r,tu). Cf. ciru-m iy (2).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 1,
+          "bbox_pdf_points": [
+            310,
+            479.14,
+            562,
+            526.04
+          ],
+          "raw_text": "noy-m -m iy [noy ‘grits, smallness, minuteness’, D E D R  \n3779] \n‘fresh-water \nfish, \nsandy \nin \ncolour, \nLepido \ncephalichthys thermalis; matzal-niram ulla iirru-m iy-vakai' \n(Pinkala-nika:r,tu). Cf. ciru-m iy (2)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_24",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "pacu-v-ā-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "pacu",
+        "v",
+        "ā",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "rose-coloured sea fish",
+      "printed_lexical_notes_ocr": [
+        "pacu ‘green, greenish, yellow, yellow, \ngolden’, D E D R  3821; ii ‘to be(come)’, D E D R  333",
+        "Cf. § 10.5."
+      ],
+      "dedr_references_ocr": [
+        "DEDR  3821",
+        "DEDR  333"
+      ],
+      "raw_entry_text_ocr": "(\n)\n( )\npacu-v-ii-m in \n[pacu ‘green, greenish, yellow, yellow, \ngolden’, D E D R  3821; ii ‘to be(come)’, D E D R  333] ‘a \nsea-fish, rose-coloured, Priacanthus holocentrum; röjii- \nniram ulla katal-m iy-vak a i'.- [Cf. § 10.5.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 1,
+          "bbox_pdf_points": [
+            310,
+            525.04,
+            562,
+            571.9
+          ],
+          "raw_text": "(\n)\n( )\npacu-v-ii-m in \n[pacu ‘green, greenish, yellow, yellow, \ngolden’, D E D R  3821; ii ‘to be(come)’, D E D R  333] ‘a \nsea-fish, rose-coloured, Priacanthus holocentrum; röjii- \nniram ulla katal-m iy-vak a i'.- [Cf. § 10.5.]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_25",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "visually_restored_label_missing_from_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "para-veṭṭi-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "para",
+        "veṭṭi",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "mud-skipper",
+      "printed_lexical_notes_ocr": [],
+      "dedr_references_ocr": [],
+      "raw_entry_text_ocr": "para-vetti-m iy ‘mud-skipper, brownish, attaining 9 inches \nin length, Periophthalm us schlosseri; ney-vetti'.",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 1,
+          "bbox_pdf_points": [
+            310,
+            570.9,
+            562,
+            594.9
+          ],
+          "raw_text": "para-vetti-m iy ‘mud-skipper, brownish, attaining 9 inches \nin length, Periophthalm us schlosseri; ney-vetti'."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_26",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "visually_restored_label_missing_from_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "paṟavai-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "paṟavai",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "flying fish",
+      "printed_lexical_notes_ocr": [
+        "paravai ‘bird’, D E D R  4020"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  4020"
+      ],
+      "raw_entry_text_ocr": "paravai-m iy [paravai ‘bird’, D E D R  4020] ‘a flying fish, \nExocoetus' (as Tam il gloss on ciraki-m iy).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 1,
+          "bbox_pdf_points": [
+            310,
+            593.9,
+            562,
+            617.84
+          ],
+          "raw_text": "paravai-m iy [paravai ‘bird’, D E D R  4020] ‘a flying fish, \nExocoetus' (as Tam il gloss on ciraki-m iy)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_281_27",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "paṉṟi-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "paṉṟi",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "several large sea fish species",
+      "printed_lexical_notes_ocr": [
+        "payri ‘pig, hog’, D E D R  4039",
+        "cf. Kannada \npandi-m in ‘a sort of fish’ (Kittel 1970: Ill, 994b, quoting \nRäjasekharavijäsa 5, 115)"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  4039"
+      ],
+      "raw_entry_text_ocr": "payri-m iy [payri ‘pig, hog’, D E D R  4039] [cf. Kannada \npandi-m in ‘a sort of fish’ (Kittel 1970: Ill, 994b, quoting \nRäjasekharavijäsa 5, 115)] ( 1) ‘cock-up, greyish, attaining 2 \nfeet in length, Cromileptes altivelis; payri-c-cëttay'; (2) \n‘cock-up, grey, attaining 5 feet in length, Lates calcarifer; \np a yri-c-citta n '; (3) ‘sea-fish, yellowish, attaining a large \nsize, Serranus lanceolatus; m aiicaf-niram  iiyatum netitiiy \nvaf-aruvatum  iiya katal-m iy-vakai'; (4) ‘sea-fish, brownish,\n\nattaining 7 feet in length and weighing 300 pounds, \nSerranus \npantherinus; \npaluppu-niram  \nullatum \nel \nati \nvafarvatum  ii!}a katal-m iri-vakai\\",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 298,
+          "printed_page": 281,
+          "column": 1,
+          "bbox_pdf_points": [
+            310,
+            616.84,
+            562,
+            714
+          ],
+          "raw_text": "payri-m iy [payri ‘pig, hog’, D E D R  4039] [cf. Kannada \npandi-m in ‘a sort of fish’ (Kittel 1970: Ill, 994b, quoting \nRäjasekharavijäsa 5, 115)] ( 1) ‘cock-up, greyish, attaining 2 \nfeet in length, Cromileptes altivelis; payri-c-cëttay'; (2) \n‘cock-up, grey, attaining 5 feet in length, Lates calcarifer; \np a yri-c-citta n '; (3) ‘sea-fish, yellowish, attaining a large \nsize, Serranus lanceolatus; m aiicaf-niram  iiyatum netitiiy \nvaf-aruvatum  iiya katal-m iy-vakai'; (4) ‘sea-fish, brownish,"
+        },
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 0,
+          "bbox_pdf_points": [
+            68,
+            68,
+            293,
+            101
+          ],
+          "raw_text": "attaining 7 feet in length and weighing 300 pounds, \nSerranus \npantherinus; \npaluppu-niram  \nullatum \nel \nati \nvafarvatum  ii!}a katal-m iri-vakai\\"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_01",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F(S)",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": true,
+      "printed_form_transcription": "paṉai-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "paṉai",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "fresh-water fish; climbing fish",
+      "printed_lexical_notes_ocr": [
+        "panai ‘palmyra palm’, D E D R  4037; ‘the seven­\nteenth naksatra; anutam (Sanskrit anurädhä)': orikum panai \ntularik’ o li purattäti (Ilakkana vijakkam by Vaittiyanata \nTëcikar, 791); cf. also Hart 1975: 74"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  4037"
+      ],
+      "raw_entry_text_ocr": "patJai-m i!J [panai ‘palmyra palm’, D E D R  4037; ‘the seven­\nteenth naksatra; anutam (Sanskrit anurädhä)': orikum panai \ntularik’ o li purattäti (Ilakkana vijakkam by Vaittiyanata \nTëcikar, 791); cf. also Hart 1975: 74] (1) ‘a fresh-water fish, \nrifle-green, attaining 3 inches in length, Polyacanthus \ncupanus; mûrir ’ arikulam valarvatum  karuppu-niram  ullatum \näna \nnan-nir-m m -vakai': \ncunaiyir patJai-m i!J (Kampa- \nRâmâyanam kataravu. 50); (2) ‘climbing fish, rifle-green, \nattaining 8.5 inches in length, Anabas scandens; ett’ arai \narikula \nvafarcciyum  karuppu-niram um  ulla m ii[l-vakai\\ \npa!}ai-m i!J valankum  valaim ey parappi!J (Maturaikkänci \n375).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 0,
+          "bbox_pdf_points": [
+            68,
+            100.09,
+            293,
+            238.79
+          ],
+          "raw_text": "patJai-m i!J [panai ‘palmyra palm’, D E D R  4037; ‘the seven­\nteenth naksatra; anutam (Sanskrit anurädhä)': orikum panai \ntularik’ o li purattäti (Ilakkana vijakkam by Vaittiyanata \nTëcikar, 791); cf. also Hart 1975: 74] (1) ‘a fresh-water fish, \nrifle-green, attaining 3 inches in length, Polyacanthus \ncupanus; mûrir ’ arikulam valarvatum  karuppu-niram  ullatum \näna \nnan-nir-m m -vakai': \ncunaiyir patJai-m i!J (Kampa- \nRâmâyanam kataravu. 50); (2) ‘climbing fish, rifle-green, \nattaining 8.5 inches in length, Anabas scandens; ett’ arai \narikula \nvafarcciyum  karuppu-niram um  ulla m ii[l-vakai\\ \npa!}ai-m i!J valankum  valaim ey parappi!J (Maturaikkänci \n375)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_02",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "pāl-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "pāl",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "milk-fish",
+      "printed_lexical_notes_ocr": [
+        "päl ‘milk’, D E D R  4096"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  4096"
+      ],
+      "raw_entry_text_ocr": ")\npäl-m i!J [päl ‘milk’, D E D R  4096] ‘milk-fish, brilliant glossy \nblue, attaining 3 feet in length, Chanos salmoneus; nila-  \nniram ullatum  munru ati vafarvatum  ä!}a vellai-m i!}-vakai\\ \n(Winslow.)",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 0,
+          "bbox_pdf_points": [
+            68,
+            237.79,
+            293,
+            285.19
+          ],
+          "raw_text": ")\npäl-m i!J [päl ‘milk’, D E D R  4096] ‘milk-fish, brilliant glossy \nblue, attaining 3 feet in length, Chanos salmoneus; nila-  \nniram ullatum  munru ati vafarvatum  ä!}a vellai-m i!}-vakai\\ \n(Winslow.)"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_03",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "pittaḷai-k-kācu-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "pittaḷai",
+        "k",
+        "kācu",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "small fresh-water fish",
+      "printed_lexical_notes_ocr": [
+        "pittalai <  Sanskrit pittala ‘brass, cop­\nper’; ' käcu ‘coin’, D E D R  1431"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  1431"
+      ],
+      "raw_entry_text_ocr": "pittafai-k-käcu-m i}J [pittalai <  Sanskrit pittala ‘brass, cop­\nper’; ' käcu ‘coin’, D E D R  1431] ‘a small fresh-water fish, \nEtroplus maculatus; na!}-!}iril välum  ciru-m i!}-vakai\\",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 0,
+          "bbox_pdf_points": [
+            68,
+            284.19,
+            293,
+            319.39
+          ],
+          "raw_text": "pittafai-k-käcu-m i}J [pittalai <  Sanskrit pittala ‘brass, cop­\nper’; ' käcu ‘coin’, D E D R  1431] ‘a small fresh-water fish, \nEtroplus maculatus; na!}-!}iril välum  ciru-m i!}-vakai\\"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_04",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "puṇar-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "puṇar",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "pair of carp in gold or silver, an auspicious object",
+      "printed_lexical_notes_ocr": [
+        "put;ar ‘to join, unite, copulate’, D E D R  4160b",
+        "<Sanskrit asta-marigalam ‘eight auspicious \nobjects’",
+        "See § 10.2."
+      ],
+      "dedr_references_ocr": [
+        "DEDR  4160b"
+      ],
+      "raw_entry_text_ocr": "put;ar-m i!J [put;ar ‘to join, unite, copulate’, D E D R  4160b] \n‘brace of carp in gold or silver, an auspicious object carried \nbefore kings or other great personages, one of atta- \nmarikalam [<Sanskrit asta-marigalam ‘eight auspicious \nobjects’]; \nin a i-k -k a ya f \n(Cütâmam-nikal)tu \nby\nMal).talapurutan). [See § 10.2.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 0,
+          "bbox_pdf_points": [
+            68,
+            318.39,
+            293,
+            388.34
+          ],
+          "raw_text": "put;ar-m i!J [put;ar ‘to join, unite, copulate’, D E D R  4160b] \n‘brace of carp in gold or silver, an auspicious object carried \nbefore kings or other great personages, one of atta- \nmarikalam [<Sanskrit asta-marigalam ‘eight auspicious \nobjects’]; \nin a i-k -k a ya f \n(Cütâmam-nikal)tu \nby\nMal).talapurutan). [See § 10.2.]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_05",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "puḷi-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "puḷi",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "fish soured with tamarind juice",
+      "printed_lexical_notes_ocr": [
+        "pu li ‘sour, acid; tamarind’, D E D R  4322"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  4322"
+      ],
+      "raw_entry_text_ocr": "pufi-m i!J [pu li ‘sour, acid; tamarind’, D E D R  4322] ‘fish \nsoured with tamarind juice and eaten as a relish; p u li-y-itta \nmiri k a r i. (Winslow.)",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 0,
+          "bbox_pdf_points": [
+            68,
+            387.34,
+            293,
+            422.74
+          ],
+          "raw_text": "pufi-m i!J [pu li ‘sour, acid; tamarind’, D E D R  4322] ‘fish \nsoured with tamarind juice and eaten as a relish; p u li-y-itta \nmiri k a r i. (Winslow.)"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_06",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "puḷi-vār-iṭṭa mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "puḷi",
+        "vār",
+        "iṭṭa",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "fish soured with tamarind juice",
+      "printed_lexical_notes_ocr": [
+        "pu li ‘sour; tamarind’, D E D R  4322; vär \n‘to pour’, D E D R  5356; itu ‘to put’, D E D R  442"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  4322",
+        "DEDR  5356",
+        "DEDR  442"
+      ],
+      "raw_entry_text_ocr": "p u fi-vä r-itta mi!J [pu li ‘sour; tamarind’, D E D R  4322; vär \n‘to pour’, D E D R  5356; itu ‘to put’, D E D R  442] =  puli-m m . \n(Winslow.)",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 0,
+          "bbox_pdf_points": [
+            68,
+            421.74,
+            293,
+            457.09
+          ],
+          "raw_text": "p u fi-vä r-itta mi!J [pu li ‘sour; tamarind’, D E D R  4322; vär \n‘to pour’, D E D R  5356; itu ‘to put’, D E D R  442] =  puli-m m . \n(Winslow.)"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_07",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "pū-mīṉ-keṇṭai",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "pū",
+        "mīṉ",
+        "keṇṭai"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "mahsir",
+      "printed_lexical_notes_ocr": [
+        "pû ‘flower’, D E D R  4345; ‘gill of a fish; mi!Ji!J\nk u väcakkaru vi; ket;tai ‘carp fish’, D E D R  1947",
+        "See also po!}-mi!J."
+      ],
+      "dedr_references_ocr": [
+        "DEDR  4345",
+        "DEDR  1947"
+      ],
+      "raw_entry_text_ocr": "pû-m i!}-ket;tai [pû ‘flower’, D E D R  4345; ‘gill of a fish; mi!Ji!J\nk u väcakkaru vi; ket;tai ‘carp fish’, D E D R  1947] ‘mahsir, \nsilvery, weighing 100 to 150 pounds, Barbus tor, the great \nfresh-water game-fish of India; na!}-!Jiril välum  peru-m i!J- \nvakai'. [See also po!}-mi!J.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 0,
+          "bbox_pdf_points": [
+            68,
+            456.09,
+            293,
+            514.54
+          ],
+          "raw_text": "pû-m i!}-ket;tai [pû ‘flower’, D E D R  4345; ‘gill of a fish; mi!Ji!J\nk u väcakkaru vi; ket;tai ‘carp fish’, D E D R  1947] ‘mahsir, \nsilvery, weighing 100 to 150 pounds, Barbus tor, the great \nfresh-water game-fish of India; na!}-!Jiril välum  peru-m i!J- \nvakai'. [See also po!}-mi!J.]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_08",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "peru-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "peru",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "large fish",
+      "printed_lexical_notes_ocr": [
+        "peru ‘big’, D E D R  4411"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  4411"
+      ],
+      "raw_entry_text_ocr": "peru-mitJ [peru ‘big’, D E D R  4411] ‘a kind of large fish; \nyän ai-m in ' (Cëntan Tivakaran).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 0,
+          "bbox_pdf_points": [
+            68,
+            513.54,
+            293,
+            537.39
+          ],
+          "raw_text": "peru-mitJ [peru ‘big’, D E D R  4411] ‘a kind of large fish; \nyän ai-m in ' (Cëntan Tivakaran)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_09",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "poṭi-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "poṭi",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "small fish",
+      "printed_lexical_notes_ocr": [
+        "poti ‘dust, powder, particle’, D E D R  4481"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  4481"
+      ],
+      "raw_entry_text_ocr": "poti-m i!J [poti ‘dust, powder, particle’, D E D R  4481] ‘small \nfish’ (as the Tamil gloss on tuf-mitJ, see above).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 0,
+          "bbox_pdf_points": [
+            68,
+            536.39,
+            293,
+            560.44
+          ],
+          "raw_text": "poti-m i!J [poti ‘dust, powder, particle’, D E D R  4481] ‘small \nfish’ (as the Tamil gloss on tuf-mitJ, see above)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_10",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F(S)",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": true,
+      "printed_form_transcription": "poṉ-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "poṉ",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "mahsir",
+      "printed_lexical_notes_ocr": [
+        "po!J ‘gold’, D E D R  4570; ‘planet Jupiter; viyälan: \npo!J!Jotu velliyum  ... irukkai y iy a v e  (Kampa-Ramayal)am \nMarica. 16)"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  4570"
+      ],
+      "raw_entry_text_ocr": "potJ-mi!J [po!J ‘gold’, D E D R  4570; ‘planet Jupiter; viyälan: \npo!J!Jotu velliyum  ... irukkai y iy a v e  (Kampa-Ramayal)am \nMarica. 16)] ‘mahsir; pû-m i!}-ket;tai' (local usage).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 0,
+          "bbox_pdf_points": [
+            68,
+            559.44,
+            293,
+            594.99
+          ],
+          "raw_text": "potJ-mi!J [po!J ‘gold’, D E D R  4570; ‘planet Jupiter; viyälan: \npo!J!Jotu velliyum  ... irukkai y iy a v e  (Kampa-Ramayal)am \nMarica. 16)] ‘mahsir; pû-m i!}-ket;tai' (local usage)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_11",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "makara-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "makara",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "shark",
+      "printed_lexical_notes_ocr": [
+        "m akaram \n‘shark, \ncrocodile’ <Sanskrit \nm akara- ‘water monster, crocodile’",
+        "See also köttu-miri and § 10.2."
+      ],
+      "dedr_references_ocr": [],
+      "raw_entry_text_ocr": "m akara-m i!J \n[m akaram \n‘shark, \ncrocodile’ <Sanskrit \nm akara- ‘water monster, crocodile’] ‘shark; c u rä (Pinkala- \nnikal).tu). [See also köttu-miri and § 10.2.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 0,
+          "bbox_pdf_points": [
+            68,
+            593.99,
+            293,
+            629.19
+          ],
+          "raw_text": "m akara-m i!J \n[m akaram \n‘shark, \ncrocodile’ <Sanskrit \nm akara- ‘water monster, crocodile’] ‘shark; c u rä (Pinkala- \nnikal).tu). [See also köttu-miri and § 10.2.]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_12",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "mañcaṭ-kōḻi-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "mañcaṭ",
+        "kōḻi",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "buff vertically banded sea fish",
+      "printed_lexical_notes_ocr": [
+        "m afical ‘yellow; turmeric’, D E D R  4635; \nköli ‘cock, fowl’, D E D R  2248",
+        "Cf. \nkallu-k-köli-m iri; köli\\miri."
+      ],
+      "dedr_references_ocr": [
+        "DEDR  4635",
+        "DEDR  2248"
+      ],
+      "raw_entry_text_ocr": "mancat-köli-mitJ [m afical ‘yellow; turmeric’, D E D R  4635; \nköli ‘cock, fowl’, D E D R  2248] ‘a sea-fish, buff, vertically \nbanded, Chaetodon octofasciatus; katal-m i}J-vakai\\ [Cf. \nkallu-k-köli-m iri; köli\\miri.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 0,
+          "bbox_pdf_points": [
+            68,
+            628.19,
+            293,
+            675.09
+          ],
+          "raw_text": "mancat-köli-mitJ [m afical ‘yellow; turmeric’, D E D R  4635; \nköli ‘cock, fowl’, D E D R  2248] ‘a sea-fish, buff, vertically \nbanded, Chaetodon octofasciatus; katal-m i}J-vakai\\ [Cf. \nkallu-k-köli-m iri; köli\\miri.]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_13",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "matti-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "matti",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "a kind of fish",
+      "printed_lexical_notes_ocr": [
+        "m atti ‘oyster, cockle, shellfish; cippi-m in' (Win­\nslow); m atti-c-cippi ‘oyster shell; cippi-m i!}-ötu' (Winslow); \nm atti-väy (1) ‘gaping mouth; tiran t’ akanra v ä y '; (2) ‘a\n\nsea-fish, silvery grey, attaining 18 inches in length, \nChrysophrys datnia; patinett’ arikulam vafarvatum  cdmpa- \nniram ullatum ana katal-m i!}-vakai; (3) ‘a sea-fish, pale dull \nred, attaining one foot in length, Scolopsis vosm erii; \nmarikiya civappu-niram  ullatum ör ati vafarvatum  äna \nkatal-m in-vakaV; matti-vtiyatz (1) ‘one who has a gaping \nmouth; tirant’ akatzra viiyai y-u taiyavatz; (2) ‘black rock- \ncod, silvery grey, attaining 30 inches in length, Sparus \nberda; muppatu arikulam vafarak kûtiyatum cäm pal-niram  \nullatum ana m fri-vakai'; (3) =  m atti-väy (2)"
+      ],
+      "dedr_references_ocr": [],
+      "raw_entry_text_ocr": "matti-miri [m atti ‘oyster, cockle, shellfish; cippi-m in' (Win­\nslow); m atti-c-cippi ‘oyster shell; cippi-m i!}-ötu' (Winslow); \nm atti-väy (1) ‘gaping mouth; tiran t’ akanra v ä y '; (2) ‘a\n\nsea-fish, silvery grey, attaining 18 inches in length, \nChrysophrys datnia; patinett’ arikulam vafarvatum  cdmpa- \nniram ullatum ana katal-m i!}-vakai; (3) ‘a sea-fish, pale dull \nred, attaining one foot in length, Scolopsis vosm erii; \nmarikiya civappu-niram  ullatum ör ati vafarvatum  äna \nkatal-m in-vakaV; matti-vtiyatz (1) ‘one who has a gaping \nmouth; tirant’ akatzra viiyai y-u taiyavatz; (2) ‘black rock- \ncod, silvery grey, attaining 30 inches in length, Sparus \nberda; muppatu arikulam vafarak kûtiyatum cäm pal-niram  \nullatum ana m fri-vakai'; (3) =  m atti-väy (2)] ‘a kind of fish; \nm itz-vakai: \nparuntu-viiyatz \nm atti-min \npiira-k-ket;tai\n(Paräjaivinäyakar pallu by C. V. Jampulinkam Pillai, 15).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 0,
+          "bbox_pdf_points": [
+            68,
+            674.09,
+            293,
+            714
+          ],
+          "raw_text": "matti-miri [m atti ‘oyster, cockle, shellfish; cippi-m in' (Win­\nslow); m atti-c-cippi ‘oyster shell; cippi-m i!}-ötu' (Winslow); \nm atti-väy (1) ‘gaping mouth; tiran t’ akanra v ä y '; (2) ‘a"
+        },
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 1,
+          "bbox_pdf_points": [
+            327,
+            68,
+            565,
+            204
+          ],
+          "raw_text": "sea-fish, silvery grey, attaining 18 inches in length, \nChrysophrys datnia; patinett’ arikulam vafarvatum  cdmpa- \nniram ullatum ana katal-m i!}-vakai; (3) ‘a sea-fish, pale dull \nred, attaining one foot in length, Scolopsis vosm erii; \nmarikiya civappu-niram  ullatum ör ati vafarvatum  äna \nkatal-m in-vakaV; matti-vtiyatz (1) ‘one who has a gaping \nmouth; tirant’ akatzra viiyai y-u taiyavatz; (2) ‘black rock- \ncod, silvery grey, attaining 30 inches in length, Sparus \nberda; muppatu arikulam vafarak kûtiyatum cäm pal-niram  \nullatum ana m fri-vakai'; (3) =  m atti-väy (2)] ‘a kind of fish; \nm itz-vakai: \nparuntu-viiyatz \nm atti-min \npiira-k-ket;tai\n(Paräjaivinäyakar pallu by C. V. Jampulinkam Pillai, 15)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_14",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "maṭavā-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "maṭavā",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "grey mullet",
+      "printed_lexical_notes_ocr": [],
+      "dedr_references_ocr": [],
+      "raw_entry_text_ocr": "m atavä-m iri ‘grey mullet, silvery, M u gil oligolepe; vet;-\nt;iram  u lla mitz-vakai' (Yälppäl)attu mänippäyakaräti, by \nCantiracëkarap Pulavar, Jaffna \n1842) =  m atavai (this \nmeaning in Patarttakul)a cintämani 932); the latter word \nalso means ‘post; oar, paddle; whirling-nut’. Cf. also \nm atavai-k-ket;tai ‘a species of carp; m i!}-vakai' (Yal. aka.).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 1,
+          "bbox_pdf_points": [
+            327,
+            203.59,
+            565,
+            273.49
+          ],
+          "raw_text": "m atavä-m iri ‘grey mullet, silvery, M u gil oligolepe; vet;-\nt;iram  u lla mitz-vakai' (Yälppäl)attu mänippäyakaräti, by \nCantiracëkarap Pulavar, Jaffna \n1842) =  m atavai (this \nmeaning in Patarttakul)a cintämani 932); the latter word \nalso means ‘post; oar, paddle; whirling-nut’. Cf. also \nm atavai-k-ket;tai ‘a species of carp; m i!}-vakai' (Yal. aka.)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_15",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "maṇalai-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "maṇalai",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "purple-red sea fish",
+      "printed_lexical_notes_ocr": [
+        "marial ‘sand’, D E D R  4666b",
+        "kal ‘stone, gravel’, D E D R  \n1298; navarai ‘red mullet, Upeneoides sulphurens'"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  4666b",
+        "DEDR  \n1298"
+      ],
+      "raw_entry_text_ocr": "mat;alai-mitz =  m analai [marial ‘sand’, D E D R  4666b] ‘a\nsea-fish, purple-red, attaining at least 16 inches in length, \nUpeneus indicus; k a l-n a v a ra i [kal ‘stone, gravel’, D E D R  \n1298; navarai ‘red mullet, Upeneoides sulphurens'] (Win­\nslow.)",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 1,
+          "bbox_pdf_points": [
+            327,
+            272.49,
+            565,
+            330.94
+          ],
+          "raw_text": "mat;alai-mitz =  m analai [marial ‘sand’, D E D R  4666b] ‘a\nsea-fish, purple-red, attaining at least 16 inches in length, \nUpeneus indicus; k a l-n a v a ra i [kal ‘stone, gravel’, D E D R  \n1298; navarai ‘red mullet, Upeneoides sulphurens'] (Win­\nslow.)"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_16",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "mayil-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "mayil",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "sail-fish; peacock-fish",
+      "printed_lexical_notes_ocr": [
+        "m ayil ‘peacock’, D E D R  4642"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  4642"
+      ],
+      "raw_entry_text_ocr": "m ayil-m i!J [m ayil ‘peacock’, D E D R  4642] ( 1) ‘sail-fish, \nbluish grey, attaining 9 feet in length, Histiophorus gladius; \notzpat’ a ti nifam vafarvatum  marikitza nila-niram  utaiyatum \nätza katal-m i!}-vakai; (2) ‘peacock-fish, grey, Histiophorus \nimmaculatus; em ail-kölä' ( =  iyam ari-kölä ‘flying fish of \nYama, the god of death’, Maclean 1893: 672).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 1,
+          "bbox_pdf_points": [
+            327,
+            329.94,
+            565,
+            400.04
+          ],
+          "raw_text": "m ayil-m i!J [m ayil ‘peacock’, D E D R  4642] ( 1) ‘sail-fish, \nbluish grey, attaining 9 feet in length, Histiophorus gladius; \notzpat’ a ti nifam vafarvatum  marikitza nila-niram  utaiyatum \nätza katal-m i!}-vakai; (2) ‘peacock-fish, grey, Histiophorus \nimmaculatus; em ail-kölä' ( =  iyam ari-kölä ‘flying fish of \nYama, the god of death’, Maclean 1893: 672)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_17",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "mu-m-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "mu",
+        "m",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "fifth nakshatra",
+      "printed_lexical_notes_ocr": [
+        "mu- ‘three’, D E D R  5052",
+        "See § 10.4."
+      ],
+      "dedr_references_ocr": [
+        "DEDR  5052"
+      ],
+      "raw_entry_text_ocr": "mu-m-mi!J [mu- ‘three’, D E D R  5052] ‘the fifth naksatra; \nm irukacirisam (<Sanskrit mçgasirsa) (Pinkala-nikaIJtu). \n[See § 10.4.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 1,
+          "bbox_pdf_points": [
+            327,
+            399.04,
+            565,
+            434.24
+          ],
+          "raw_text": "mu-m-mi!J [mu- ‘three’, D E D R  5052] ‘the fifth naksatra; \nm irukacirisam (<Sanskrit mçgasirsa) (Pinkala-nikaIJtu). \n[See § 10.4.]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_18",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "mai-m-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "mai",
+        "m",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "Saturn",
+      "printed_lexical_notes_ocr": [
+        "m ai ‘black, dark’, D E D R  5101",
+        "Cf. Hart 1975: 76; see § 10.5."
+      ],
+      "dedr_references_ocr": [
+        "DEDR  5101"
+      ],
+      "raw_entry_text_ocr": "mai-m-mitJ [m ai ‘black, dark’, D E D R  5101] ‘the planet \nSaturn, as black in colour; catzi: maimmiri pukaiyinum  \n(Purananiiru 117). [Cf. Hart 1975: 76; see § 10.5.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 1,
+          "bbox_pdf_points": [
+            327,
+            433.24,
+            565,
+            468.79
+          ],
+          "raw_text": "mai-m-mitJ [m ai ‘black, dark’, D E D R  5101] ‘the planet \nSaturn, as black in colour; catzi: maimmiri pukaiyinum  \n(Purananiiru 117). [Cf. Hart 1975: 76; see § 10.5.]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_19",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "mōṭṭu-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "mōṭṭu",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "star",
+      "printed_lexical_notes_ocr": [
+        "mötu <  mukatu ‘height, high position, hill, \neminence, top of house, etc.’, \nD E D R  4888"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  4888"
+      ],
+      "raw_entry_text_ocr": "möttu-mi}J [mötu <  mukatu ‘height, high position, hill, \neminence, top of house, etc.’, \nD E D R  4888] ‘star; \nnatcattiram ': möttu-mitJ kulättitz (Gvakacintâmal)i 2325).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 1,
+          "bbox_pdf_points": [
+            327,
+            467.79,
+            565,
+            503.19
+          ],
+          "raw_text": "möttu-mi}J [mötu <  mukatu ‘height, high position, hill, \neminence, top of house, etc.’, \nD E D R  4888] ‘star; \nnatcattiram ': möttu-mitJ kulättitz (Gvakacintâmal)i 2325)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_20",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "yāṉai-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "yāṉai",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "very large fish; whale",
+      "printed_lexical_notes_ocr": [
+        "yärn i ‘elephant’, D E D R  5161",
+        " =  am i-m i!}, \nq.v.",
+        "See also peru-m i}J."
+      ],
+      "dedr_references_ocr": [
+        "DEDR  5161"
+      ],
+      "raw_entry_text_ocr": "ya!}ai-m i}J [yärn i ‘elephant’, D E D R  5161] [ =  am i-m i!}, \nq.v.] (1) ‘a very large fish; peru-m in-vakai' (Pinkala- \nnikal)tu); \n(2) \n‘a \nkind \nof \nwhale; \ntim irikila-vakai \n(Takkayakaparal)i 384, urai). [See also peru-m i}J.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 1,
+          "bbox_pdf_points": [
+            327,
+            502.19,
+            565,
+            549.29
+          ],
+          "raw_text": "ya!}ai-m i}J [yärn i ‘elephant’, D E D R  5161] [ =  am i-m i!}, \nq.v.] (1) ‘a very large fish; peru-m in-vakai' (Pinkala- \nnikal)tu); \n(2) \n‘a \nkind \nof \nwhale; \ntim irikila-vakai \n(Takkayakaparal)i 384, urai). [See also peru-m i}J.]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_21",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F(S)",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": true,
+      "printed_form_transcription": "rōkita-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "rōkita",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "a kind of fish",
+      "printed_lexical_notes_ocr": [
+        "rökita <Sanskrit rohita ‘red; carp with reddish \nscales, Labeo rohita'",
+        "Cf. \ncem-mitJ, and see § 14.4."
+      ],
+      "dedr_references_ocr": [],
+      "raw_entry_text_ocr": "rökita-mitz [rökita <Sanskrit rohita ‘red; carp with reddish \nscales, Labeo rohita'] ‘a kind of fish; oru -vakai miri'. [Cf. \ncem-mitJ, and see § 14.4.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 1,
+          "bbox_pdf_points": [
+            327,
+            548.29,
+            565,
+            583.64
+          ],
+          "raw_text": "rökita-mitz [rökita <Sanskrit rohita ‘red; carp with reddish \nscales, Labeo rohita'] ‘a kind of fish; oru -vakai miri'. [Cf. \ncem-mitJ, and see § 14.4.]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_22",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "vaṭa-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "vaṭa",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "Alcor/Arundhati; Arundhati personification",
+      "printed_lexical_notes_ocr": [
+        "vata ‘northern’, D E D R  5218",
+        "Cf. uttara-m i!J; Hart 1975: 76; and \nsee § 14.1."
+      ],
+      "dedr_references_ocr": [
+        "DEDR  5218"
+      ],
+      "raw_entry_text_ocr": "vata-m itJ [vata ‘northern’, D E D R  5218] (1) ‘the scarcely \nvisible star Alcor of the Great Bear, supposed to be \nArundhatI transformed; aruntati natcattiram ’; (2) ‘Arun- \ndhatl, the wife of Vasistha, considered a paragon of \nchastity; vacistar matzaivi\\ vata-mi}} puraiyuri karpi!J m ata- \nm oli(Purananiiru 122). [Cf. uttara-m i!J; Hart 1975: 76; and \nsee § 14.1.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 1,
+          "bbox_pdf_points": [
+            327,
+            582.64,
+            565,
+            663.94
+          ],
+          "raw_text": "vata-m itJ [vata ‘northern’, D E D R  5218] (1) ‘the scarcely \nvisible star Alcor of the Great Bear, supposed to be \nArundhatI transformed; aruntati natcattiram ’; (2) ‘Arun- \ndhatl, the wife of Vasistha, considered a paragon of \nchastity; vacistar matzaivi\\ vata-mi}} puraiyuri karpi!J m ata- \nm oli(Purananiiru 122). [Cf. uttara-m i!J; Hart 1975: 76; and \nsee § 14.1.]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_23",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "vaya-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "vaya",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "fourth nakshatra",
+      "printed_lexical_notes_ocr": [
+        "T L : probably vayam  ‘state of subjugation’ <  \nSanskrit vasa ‘power, control’",
+        "<Sanskrit rohit;i",
+        "Cf. § 14.4."
+      ],
+      "dedr_references_ocr": [],
+      "raw_entry_text_ocr": "vaya-m i!J [T L : probably vayam  ‘state of subjugation’ <  \nSanskrit vasa ‘power, control’] ‘the fourth naksatra; urökini \n[<Sanskrit rohit;i]\\ [Cf. § 14.4.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 1,
+          "bbox_pdf_points": [
+            327,
+            662.94,
+            565,
+            698.29
+          ],
+          "raw_text": "vaya-m i!J [T L : probably vayam  ‘state of subjugation’ <  \nSanskrit vasa ‘power, control’] ‘the fourth naksatra; urökini \n[<Sanskrit rohit;i]\\ [Cf. § 14.4.]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_282_24",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "vavvāl-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "vavvāl",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "pomfret",
+      "printed_lexical_notes_ocr": [
+        "va vvä l ( < v ä v a l) ‘bat’, D E D R  5370; in Tamil\n\nalso =  vavviil-m iy"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  5370"
+      ],
+      "raw_entry_text_ocr": "vavväl-miitJ [va vvä l ( < v ä v a l) ‘bat’, D E D R  5370; in Tamil\n\nalso =  vavviil-m iy] ‘pomfret, sea-fish, Strom ateus paru; \nm in-vakai’ (Yäl. aka., by Cantiracekarap Pulavar, Jaffna \n1842).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 299,
+          "printed_page": 282,
+          "column": 1,
+          "bbox_pdf_points": [
+            327,
+            697.29,
+            565,
+            714
+          ],
+          "raw_text": "vavväl-miitJ [va vvä l ( < v ä v a l) ‘bat’, D E D R  5370; in Tamil"
+        },
+        {
+          "pdf_page_index": 300,
+          "printed_page": 283,
+          "column": 0,
+          "bbox_pdf_points": [
+            52,
+            66,
+            280,
+            100
+          ],
+          "raw_text": "also =  vavviil-m iy] ‘pomfret, sea-fish, Strom ateus paru; \nm in-vakai’ (Yäl. aka., by Cantiracekarap Pulavar, Jaffna \n1842)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_283_01",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "vaṉ-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "vaṉ",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "crocodile",
+      "printed_lexical_notes_ocr": [
+        " < v a l ‘strong, powerful’, D E D R  5276"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  5276"
+      ],
+      "raw_entry_text_ocr": "vay-m iy [ < v a l ‘strong, powerful’, D E D R  5276] ‘crocodile;\nm u ta la i (Pinkala-nikantu): m ifaintu vaym iy uyir kavara \n(Piramöttirakkiintam, by Varatuilkaramapantiyan, 6,35).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 300,
+          "printed_page": 283,
+          "column": 0,
+          "bbox_pdf_points": [
+            52,
+            99.69,
+            280,
+            135.04
+          ],
+          "raw_text": "vay-m iy [ < v a l ‘strong, powerful’, D E D R  5276] ‘crocodile;\nm u ta la i (Pinkala-nikantu): m ifaintu vaym iy uyir kavara \n(Piramöttirakkiintam, by Varatuilkaramapantiyan, 6,35)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_283_02",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "vāl-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "vāl",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "comet",
+      "printed_lexical_notes_ocr": [
+        "va l ‘tail’ <  Sanskrit va ia - ‘tail, hair’, D E D R  App. \n57"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  App. \n57"
+      ],
+      "raw_entry_text_ocr": "viil-m iy [va l ‘tail’ <  Sanskrit va ia - ‘tail, hair’, D E D R  App. \n57] ‘comet; viil-natcattiram ’ (Winslow).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 300,
+          "printed_page": 283,
+          "column": 0,
+          "bbox_pdf_points": [
+            52,
+            134.04,
+            280,
+            158.09
+          ],
+          "raw_text": "viil-m iy [va l ‘tail’ <  Sanskrit va ia - ‘tail, hair’, D E D R  App. \n57] ‘comet; viil-natcattiram ’ (Winslow)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_283_03",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "vāḷ-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "vāḷ",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "swordfish",
+      "printed_lexical_notes_ocr": [
+        "vii/ ‘sword’, D E D R  5376"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  5376"
+      ],
+      "raw_entry_text_ocr": "viil-m iy [vii/ ‘sword’, D E D R  5376] ‘swordfish; em an-kölii'.",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 300,
+          "printed_page": 283,
+          "column": 0,
+          "bbox_pdf_points": [
+            52,
+            157.09,
+            280,
+            169.34
+          ],
+          "raw_text": "viil-m iy [vii/ ‘sword’, D E D R  5376] ‘swordfish; em an-kölii'."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_283_04",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "vāṉ-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "vāṉ",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "star",
+      "printed_lexical_notes_ocr": [
+        "viiy ‘sky’, D E D R  5381"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  5381"
+      ],
+      "raw_entry_text_ocr": "(1) viiy-m iy [viiy ‘sky’, D E D R  5381] ‘star; nafcattiram ’ \n(Purananiiru Arum.). Cf. ney-viiy-m tn.",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 300,
+          "printed_page": 283,
+          "column": 0,
+          "bbox_pdf_points": [
+            52,
+            168.34,
+            280,
+            192.39
+          ],
+          "raw_text": "(1) viiy-m iy [viiy ‘sky’, D E D R  5381] ‘star; nafcattiram ’ \n(Purananiiru Arum.). Cf. ney-viiy-m tn."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_283_05",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "vāṉ-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "vāṉ",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "comet",
+      "printed_lexical_notes_ocr": [
+        "viil ‘tail’ < Sanskrit viila- ‘hair, tail’, D E D R  \nApp. 57"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  \nApp. 57"
+      ],
+      "raw_entry_text_ocr": "(2) viiy-m iy [viil ‘tail’ < Sanskrit viila- ‘hair, tail’, D E D R  \nApp. 57] ‘comet’ =  viil-m iy (Pinkala-nikantu).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 300,
+          "printed_page": 283,
+          "column": 0,
+          "bbox_pdf_points": [
+            52,
+            191.39,
+            280,
+            215.44
+          ],
+          "raw_text": "(2) viiy-m iy [viil ‘tail’ < Sanskrit viila- ‘hair, tail’, D E D R  \nApp. 57] ‘comet’ =  viil-m iy (Pinkala-nikantu)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_283_06",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "viṭi-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "viṭi",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "Venus, morning star",
+      "printed_lexical_notes_ocr": [
+        "viti ‘to dawn, break as the day’, D E D R  5475"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  5475"
+      ],
+      "raw_entry_text_ocr": "vifi-m iy [viti ‘to dawn, break as the day’, D E D R  5475] \n‘Venus, as the morning star; v iti-v e lli (Winslow): viti- \nmiy mulaitta tiilam (Kallatam 17,12).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 300,
+          "printed_page": 283,
+          "column": 0,
+          "bbox_pdf_points": [
+            52,
+            214.44,
+            280,
+            249.74
+          ],
+          "raw_text": "vifi-m iy [viti ‘to dawn, break as the day’, D E D R  5475] \n‘Venus, as the morning star; v iti-v e lli (Winslow): viti- \nmiy mulaitta tiilam (Kallatam 17,12)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_283_07",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "viṇ-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "viṇ",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "star",
+      "printed_lexical_notes_ocr": [
+        "vin ‘sky’, \nD E D R  5396"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  5396"
+      ],
+      "raw_entry_text_ocr": "vin-m iy \n[vin ‘sky’, \nD E D R  5396] ‘star; nafcattiram ’ \n(CiitamaQ.i). See § 13.2.",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 300,
+          "printed_page": 283,
+          "column": 0,
+          "bbox_pdf_points": [
+            52,
+            248.74,
+            280,
+            714
+          ],
+          "raw_text": "vin-m iy \n[vin ‘sky’, \nD E D R  5396] ‘star; nafcattiram ’ \n(CiitamaQ.i). See § 13.2."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_283_08",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "viḻu-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "viḻu",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "meteor",
+      "printed_lexical_notes_ocr": [
+        "viju ‘to fall’, D E D R  5430",
+        " =  vi"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  5430"
+      ],
+      "raw_entry_text_ocr": "(1) viiju-min [viju ‘to fall’, D E D R  5430] ‘meteor; vin -vij- \nk o lli. [ =  vi]-m iy. Cf. § 14.1.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 300,
+          "printed_page": 283,
+          "column": 1,
+          "bbox_pdf_points": [
+            312,
+            65.39,
+            562,
+            89.19
+          ],
+          "raw_text": "(1) viiju-min [viju ‘to fall’, D E D R  5430] ‘meteor; vin -vij- \nk o lli. [ =  vi]-m iy. Cf. § 14.1.]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_283_09",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "viḻu-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "viḻu",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "hilsa",
+      "printed_lexical_notes_ocr": [],
+      "dedr_references_ocr": [],
+      "raw_entry_text_ocr": "(2) vilu-m in ‘hilsa, silvery shot with gold and purple, \nClupea ilisha; ullam ’ .",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 300,
+          "printed_page": 283,
+          "column": 1,
+          "bbox_pdf_points": [
+            312,
+            88.19,
+            562,
+            112.49
+          ],
+          "raw_text": "(2) vilu-m in ‘hilsa, silvery shot with gold and purple, \nClupea ilisha; ullam ’ ."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_283_10",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "vīḻmīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": null,
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "meteor",
+      "printed_lexical_notes_ocr": [
+        "vtl ‘to fall’, D E D R  5430",
+        " = vilu -m iy . Cf. \n§ I P  •"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  5430"
+      ],
+      "raw_entry_text_ocr": "vtlm iy [vtl ‘to fall’, D E D R  5430] ‘meteor; vin -vtl-k o lli\n(Tolkiippiyam, PoruJatikaram 91, urai). [ = vilu -m iy . Cf. \n§ I P  •]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 300,
+          "printed_page": 283,
+          "column": 1,
+          "bbox_pdf_points": [
+            312,
+            111.49,
+            562,
+            146.79
+          ],
+          "raw_text": "vtlm iy [vtl ‘to fall’, D E D R  5430] ‘meteor; vin -vtl-k o lli\n(Tolkiippiyam, PoruJatikaram 91, urai). [ = vilu -m iy . Cf. \n§ I P  •]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_283_11",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "veṇ-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "veṇ",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "Venus",
+      "printed_lexical_notes_ocr": [
+        "vel ‘white, bright’, D E D R  5496a",
+        " =  velli-m in. See § 13.2."
+      ],
+      "dedr_references_ocr": [
+        "DEDR  5496a"
+      ],
+      "raw_entry_text_ocr": "§\n]\nven-m iy [vel ‘white, bright’, D E D R  5496a] ‘Venus; \ncukkiray’ : ven-m iy ticai tiruntu terk ’ ekinum (Pattinappalai \n14). [ =  velli-m in. See § 13.2.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 300,
+          "printed_page": 283,
+          "column": 1,
+          "bbox_pdf_points": [
+            312,
+            145.79,
+            562,
+            181.34
+          ],
+          "raw_text": "§\n]\nven-m iy [vel ‘white, bright’, D E D R  5496a] ‘Venus; \ncukkiray’ : ven-m iy ticai tiruntu terk ’ ekinum (Pattinappalai \n14). [ =  velli-m in. See § 13.2.]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_283_12",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "veḷḷi-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "veḷḷi",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "Venus",
+      "printed_lexical_notes_ocr": [
+        "velli ‘silver; Venus’, D E D R  5496a",
+        " =  ven-m iy. See § 13.2."
+      ],
+      "dedr_references_ocr": [
+        "DEDR  5496a"
+      ],
+      "raw_entry_text_ocr": "velli-m iy [velli ‘silver; Venus’, D E D R  5496a] ‘Venus;\ncukkiray’ : velli-m iyaiy-oru kaikku tpitittu (KoQ.tal vitu tiitu \n191). [ =  ven-m iy. See § 13.2.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 300,
+          "printed_page": 283,
+          "column": 1,
+          "bbox_pdf_points": [
+            312,
+            180.34,
+            562,
+            215.89
+          ],
+          "raw_text": "velli-m iy [velli ‘silver; Venus’, D E D R  5496a] ‘Venus;\ncukkiray’ : velli-m iyaiy-oru kaikku tpitittu (KoQ.tal vitu tiitu \n191). [ =  ven-m iy. See § 13.2.]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_283_13",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "F",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "fish"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "veḷḷai-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "veḷḷai",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "white fish",
+      "printed_lexical_notes_ocr": [
+        "vettai ‘whiteness’, D E D R  5496a"
+      ],
+      "dedr_references_ocr": [
+        "DEDR  5496a"
+      ],
+      "raw_entry_text_ocr": "vellai-m iy [vettai ‘whiteness’, D E D R  5496a] ‘white fish’ (as\nthe Tamil gloss on piil-m iy, see above).",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 300,
+          "printed_page": 283,
+          "column": 1,
+          "bbox_pdf_points": [
+            312,
+            214.89,
+            562,
+            238.69
+          ],
+          "raw_text": "vellai-m iy [vettai ‘whiteness’, D E D R  5496a] ‘white fish’ (as\nthe Tamil gloss on piil-m iy, see above)."
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    },
+    {
+      "entry_id": "tamil_app_283_14",
+      "language": "Tamil",
+      "entry_type": "category_marked_lexical_entry",
+      "source_category_code": "S",
+      "source_category_code_origin": "embedded_pdf_ocr",
+      "compound_senses": [
+        "star"
+      ],
+      "first_component_only_star_sense": false,
+      "printed_form_transcription": "vaikuṟu-mīṉ",
+      "form_status": "visually_transcribed",
+      "form_uncertainty": null,
+      "segmentation_as_printed": [
+        "vaikuṟu",
+        "mīṉ"
+      ],
+      "segmentation_status": "hyphenation_and_spaces_preserved_not_a_new_morphological_analysis",
+      "gloss_summary": "morning star",
+      "printed_lexical_notes_ocr": [
+        "vaikuru ‘daybreak’, D E D R  5554",
+        "See\n§§ I 1.3; 14.4."
+      ],
+      "dedr_references_ocr": [
+        "DEDR  5554"
+      ],
+      "raw_entry_text_ocr": "vaikuru-m in [vaikuru ‘daybreak’, D E D R  5554] ‘morning \nstar; v iti-v e lli: vaikuru-m iyir rönrum (Akananiiru 17). [See\n§§ I 1.3; 14.4.]",
+      "source_path": "evidence/tmp/parpola_1994_signlist/parpola_1994_deciphering_sindhilanguagelibrary.pdf",
+      "source_regions": [
+        {
+          "pdf_page_index": 300,
+          "printed_page": 283,
+          "column": 1,
+          "bbox_pdf_points": [
+            312,
+            237.69,
+            562,
+            714
+          ],
+          "raw_text": "vaikuru-m in [vaikuru ‘daybreak’, D E D R  5554] ‘morning \nstar; v iti-v e lli: vaikuru-m iyir rönrum (Akananiiru 17). [See\n§§ I 1.3; 14.4.]"
+        }
+      ],
+      "phonology_test_eligible": true,
+      "evidence_class": "language_lexical_information_quoted_in_published_indus_scholarship",
+      "indus_assignment": null
+    }
+  ]
+}

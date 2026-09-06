@@ -1,0 +1,105 @@
+{
+  "scores": {
+    "metadata": {
+      "observed_target_types": 1081,
+      "correct": 740,
+      "log_loss_bits": 2186.957884925702,
+      "mean_log_loss_bits": 2.02308777513941,
+      "nominal_parameters_per_fold": [
+        896,
+        896,
+        896,
+        896,
+        896
+      ],
+      "parameter_penalty_bits_per_fold": [
+        4515.011561865123,
+        4515.011561865123,
+        4515.011561865123,
+        4515.011561865123,
+        4515.011561865123
+      ],
+      "penalty_status": "BIC-style nominal upper complexity accounting; shrinkage effective dimension not claimed"
+    },
+    "components": {
+      "observed_target_types": 1081,
+      "correct": 718,
+      "log_loss_bits": 2498.462364430463,
+      "mean_log_loss_bits": 2.3112510309254977,
+      "nominal_parameters_per_fold": [
+        223200,
+        223200,
+        223200,
+        223200,
+        223200
+      ],
+      "parameter_penalty_bits_per_fold": [
+        1124721.630143187,
+        1124721.630143187,
+        1124721.630143187,
+        1124721.630143187,
+        1124721.630143187
+      ],
+      "penalty_status": "BIC-style nominal upper complexity accounting; shrinkage effective dimension not claimed"
+    },
+    "combined": {
+      "observed_target_types": 1081,
+      "correct": 747,
+      "log_loss_bits": 2219.4624260802702,
+      "mean_log_loss_bits": 2.0531567308790657,
+      "nominal_parameters_per_fold": [
+        224032,
+        224032,
+        224032,
+        224032,
+        224032
+      ],
+      "parameter_penalty_bits_per_fold": [
+        1128914.1408792045,
+        1128914.1408792045,
+        1128914.1408792045,
+        1128914.1408792045,
+        1128914.1408792045
+      ],
+      "penalty_status": "BIC-style nominal upper complexity accounting; shrinkage effective dimension not claimed"
+    }
+  },
+  "classes": [
+    11,
+    12,
+    13,
+    14,
+    23,
+    31,
+    41,
+    45,
+    61,
+    65,
+    71,
+    75,
+    95,
+    101,
+    111,
+    112,
+    113,
+    131,
+    135,
+    137,
+    139,
+    251,
+    290,
+    361,
+    441,
+    442,
+    690,
+    730,
+    831,
+    851,
+    981,
+    984
+  ],
+  "evaluation": "recombination: exact complete face expression held out; repeated copies collapsed by expression/motif/site/medium; one longest face per object; all other faces hidden",
+  "permitted_inputs": "sign presence, within-line 1..3-sign components and their initial/terminal position; site and medium where selected",
+  "not_established": "Predictive information about a raw motif code does not identify a sign meaning or distinguish a latent workshop category.",
+  "prior_exposure": "Retrospective constrained search; source corpus and defining examples already exposed."
+}

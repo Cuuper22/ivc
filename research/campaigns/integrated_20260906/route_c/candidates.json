@@ -1,0 +1,282 @@
+[
+  {
+    "id": "C_LONG_FIELD_LOCALITY",
+    "route": "C",
+    "status": "supported_scope_limited",
+    "claim_type": "structural_constraint",
+    "rule": "Among 330 strict exact one-long-group templates, count substitution occurs in four: bare N and three cup-containing templates.",
+    "namespace": "Mahadevan1977",
+    "context": "Strict exact full-line contexts; no inferred synonymy or absent-combination negatives.",
+    "prerequisites": [],
+    "support": [
+      "one_group_templates.json: 330 templates; four variable"
+    ],
+    "contradictions": [],
+    "alternatives": [
+      "Larger contexts may hide productive substitution; nominal categories may be count-fixed."
+    ],
+    "parameters": 0,
+    "complexity": "See executable program, explicit parameter counts and approximate-complexity warning; no ledger promotion from fit.",
+    "predictions": [
+      "A global count-substitution rule requires additional evidence beyond these four frames."
+    ],
+    "source_base": "repository_root",
+    "source_paths": [
+      "research/campaigns/integrated_20260906/route_c/one_group_templates.json",
+      "research/campaigns/integrated_20260906/route_c/numerical_observations.json"
+    ],
+    "prior_exposure": "Entire frozen corpus previously exposed; evaluations and controls retrospective."
+  },
+  {
+    "id": "C_CUP_CARDINAL_VS_CATEGORY",
+    "route": "C",
+    "status": "underdetermined",
+    "claim_type": "operational_meaning",
+    "rule": "Parse cup 328 plus long-stroke group as an independently variable field; cardinal/ordinal/nominal interpretations remain observational alternatives.",
+    "namespace": "Mahadevan1977",
+    "context": "267 cup/other-face records, including partial and third-face observations.",
+    "prerequisites": [],
+    "support": [
+      "cup_field_records.json",
+      "Prior 85-paired-object census reused"
+    ],
+    "contradictions": [],
+    "alternatives": [
+      "Cardinal amount",
+      "Ordinal category",
+      "Nominal class",
+      "Complementary administrative field"
+    ],
+    "parameters": {
+      "count_classes": 5,
+      "absolute_unit": null
+    },
+    "complexity": "See executable program, explicit parameter counts and approximate-complexity warning; no ledger promotion from fit.",
+    "predictions": [
+      "No pronunciation, physical unit or count arithmetic follows from class labels."
+    ],
+    "source_base": "repository_root",
+    "source_paths": [
+      "research/campaigns/integrated_20260906/route_c/cup_field_records.json",
+      "research/docs/mahadevan_crossface_constraints_20260905.md"
+    ],
+    "prior_exposure": "Entire frozen corpus previously exposed; evaluations and controls retrospective."
+  },
+  {
+    "id": "C_DESCRIPTOR_UNIT_CONVERSION",
+    "route": "C",
+    "status": "rejected",
+    "claim_type": "operational_meaning",
+    "rule": "Each descriptor has one fixed positive unit, and linked single-count faces express equal quantities.",
+    "namespace": "Mahadevan1977",
+    "context": "29 strict single-count face-pairs; 24 unique global equations.",
+    "prerequisites": [
+      "Each visible count has cardinal value n times its descriptor unit.",
+      "Face equality applies."
+    ],
+    "support": [
+      "Conditional graph has 31 descriptor units and 12 arbitrary scales."
+    ],
+    "contradictions": [
+      "M77:4444 and M77:4456 require Ucup/U119frame=2/3; M77:5498 requires 1; object-class conditioning retains the conflict."
+    ],
+    "alternatives": [
+      "Complementary fields",
+      "Locus-specific lookup units",
+      "Unobserved context",
+      "Nonnumerical strokes"
+    ],
+    "parameters": {
+      "global_descriptor_units": 31,
+      "global_free_component_scales": 12,
+      "locus_conditioned_units": 47,
+      "locus_conditioned_free_scales": 24
+    },
+    "complexity": "See executable program, explicit parameter counts and approximate-complexity warning; no ledger promotion from fit.",
+    "predictions": [
+      "Locus repair removes contradiction while increasing independent scales; it does not independently establish arithmetic."
+    ],
+    "source_base": "repository_root",
+    "source_paths": [
+      "research/campaigns/integrated_20260906/route_c/relative_unit_graphs.json",
+      "research/campaigns/integrated_20260906/route_c/single_count_crossface_constraints.json"
+    ],
+    "prior_exposure": "Entire frozen corpus previously exposed; evaluations and controls retrospective."
+  },
+  {
+    "id": "C_FRONT_TO_CUP_ARITHMETIC",
+    "route": "C",
+    "status": "rejected",
+    "claim_type": "operational_meaning",
+    "rule": "Predict cup count using a shared multiplier or affine transform of the front long-stroke count.",
+    "namespace": "Mahadevan1977",
+    "context": "11 distinct strict single-count noncup/cup records, whole target objects and exact paired copies excluded per fold.",
+    "prerequisites": [],
+    "support": [
+      "The intended multiplier is recoverable on a compact constructed control."
+    ],
+    "contradictions": [
+      "Fold-refit constant NLL 1.182 beats multiplier 1.918 and affine 1.274 on both retrospective tasks; affine full fit has zero slope."
+    ],
+    "alternatives": [
+      "Independent count field",
+      "Conditional category model"
+    ],
+    "parameters": {
+      "multipliers_searched": 8,
+      "affine_programs_searched": 81,
+      "constant_programs_searched": 9
+    },
+    "complexity": "See executable program, explicit parameter counts and approximate-complexity warning; no ledger promotion from fit.",
+    "predictions": [
+      "No shared arithmetic relation identified; grouped sums/products similarly fail to distinguish numerical meaning."
+    ],
+    "source_base": "repository_root",
+    "source_paths": [
+      "research/campaigns/integrated_20260906/route_c/program_comparison.json",
+      "research/campaigns/integrated_20260906/route_c/program_predictions.json",
+      "research/campaigns/integrated_20260906/route_c/grouping_programs.json"
+    ],
+    "prior_exposure": "Entire frozen corpus previously exposed; evaluations and controls retrospective."
+  },
+  {
+    "id": "C_REPEAT_FISH_87",
+    "route": "C",
+    "status": "conditional",
+    "claim_type": "operational_meaning",
+    "rule": "Two repeated 59 signs may be written 87+59 in the stored 267–99…211 frame.",
+    "namespace": "Mahadevan1977",
+    "context": "All 98 repeated non-long-sign runs searched; at least two context tokens; exact or one context edit.",
+    "prerequisites": [
+      "The two expressions encode the same operation/referent, which is not independently established."
+    ],
+    "support": [
+      "M77:4232:0 has267–99–59–59–211;M77:1551:0 has267–99–87–59–211."
+    ],
+    "contradictions": [],
+    "alternatives": [
+      "Count-class/category substitution",
+      "Unrelated fish expression",
+      "Family-specific writing operation"
+    ],
+    "parameters": {
+      "graphical_numbers": 5,
+      "label_permutations": 120
+    },
+    "complexity": "See executable program, explicit parameter counts and approximate-complexity warning; no ledger promotion from fit.",
+    "predictions": [
+      "One base and one frame only; 24 of 120 number-label permutations have at least the same hit count."
+    ],
+    "source_base": "repository_root",
+    "source_paths": [
+      "research/campaigns/integrated_20260906/route_c/repeat_compression_candidates.json",
+      "research/campaigns/integrated_20260906/route_c/repeat_compression_label_controls.json"
+    ],
+    "prior_exposure": "Entire frozen corpus previously exposed; evaluations and controls retrospective."
+  },
+  {
+    "id": "C_MULTILINE_2516",
+    "route": "C",
+    "status": "provisional",
+    "claim_type": "graphical_equivalence",
+    "rule": "Catalogue-order lines [86]/[211] may form the same grouped record as inline [86,211].",
+    "namespace": "Mahadevan1977",
+    "context": "16 strict multiline stroke-bearing faces; two globally declared line-order programs.",
+    "prerequisites": [],
+    "support": [
+      "M77:2516:1 and M77:2516:2; inline witnesses M77:4474:20 and M77:4518:20."
+    ],
+    "contradictions": [],
+    "alternatives": [
+      "Separate complementary fields happen to share signs",
+      "Independent category formula"
+    ],
+    "parameters": 0,
+    "complexity": "See executable program, explicit parameter counts and approximate-complexity warning; no ledger promotion from fit.",
+    "predictions": [
+      "If independently shown to encode the same record, this supports a line-break spelling operation, not a numerical pronunciation."
+    ],
+    "source_base": "repository_root",
+    "source_paths": [
+      "research/campaigns/integrated_20260906/route_c/multiline_grouping_programs.json"
+    ],
+    "prior_exposure": "Entire frozen corpus previously exposed; evaluations and controls retrospective."
+  },
+  {
+    "id": "C_PARTIAL_119_THIRD_FIELD",
+    "route": "C",
+    "status": "conditional",
+    "claim_type": "structural_constraint",
+    "rule": "If doubtful 119 is confirmed, the 176–342–87–119 family has reverse counts 2, 3 and 4, with additional third fields 137 or 59 on the count-4 examples.",
+    "namespace": "Mahadevan1977",
+    "context": "Partial compatibility preserves unknown spans and doubtful identities; no imputed training data.",
+    "prerequisites": [
+      "Doubtful 119 reading and catalogue face assignments are correct."
+    ],
+    "support": [
+      "M77:4581:20 and M77:4591:20 uniquely match this complete family among existing cup fronts."
+    ],
+    "contradictions": [],
+    "alternatives": [
+      "Doubtful sign is not 119",
+      "Third field changes referent",
+      "Independent production/category effect"
+    ],
+    "parameters": 0,
+    "complexity": "See executable program, explicit parameter counts and approximate-complexity warning; no ledger promotion from fit.",
+    "predictions": [
+      "Inspect held sources for 4581/4591 exactly at doubtful 119 and face assignment; preserve both third labels."
+    ],
+    "source_base": "repository_root",
+    "source_paths": [
+      "research/campaigns/integrated_20260906/route_c/partial_field_compatibility.json"
+    ],
+    "prior_exposure": "Entire frozen corpus previously exposed; evaluations and controls retrospective."
+  },
+  {
+    "id": "C_ROOF_COUNT_SCOPE",
+    "route": "C",
+    "status": "conditional",
+    "claim_type": "operational_meaning",
+    "rule": "Treat roof/prefix87 as a factor2 over a fish field and ticks/suffix211 as a field-scoped operatorQ. Compare literal glyph duplication and an anonymous categoricalR/Q spelling grammar.",
+    "namespace": "Mahadevan1977",
+    "context": "Four exact roof pairs and six observed267–99 fish-frame spellings.",
+    "prerequisites": [
+      "A roof65->87,59",
+      "A proposed roof66->87,60",
+      "A tick60->59,211 and66->65,211",
+      "C proposed87 duplication or factor2",
+      "Within-field scope and same-referent assumptions remain hypotheses"
+    ],
+    "support": [
+      "The four orthographic rewrites converge at87,59,211. Four core spellings permit the same field features:two written59 items andoneQ."
+    ],
+    "contradictions": [
+      "Literal87 glyph duplication makes the roof/tick diamond nonconfluent:59,59,211 versus59,211,59,211.",
+      "Treating same-frame65,59,211 as the same two-item record also conflicts with roof65 contributingtwo written items unless a new boundary or meaning rule is supplied.",
+      "New paired roof witnesses4493 and4556 have cup counts4 and2; equal-face fixed-unit scalar models contradict their assumed front equivalence."
+    ],
+    "alternatives": [
+      "Commuting categoricalR/Q writing operations",
+      "Different referents in superficially matching frames",
+      "A scope or boundary grammar that permits alternate literal normal forms"
+    ],
+    "parameters": {
+      "orthographic_rules": 4,
+      "numeric_factor": 2,
+      "field_scope_rule": 1
+    },
+    "complexity": "Factor2 and common counted referent are additional semantic assumptions over the anonymous categorical operation; no likelihood advantage has been established.",
+    "predictions": [
+      "The other two exact roof65/87,59 contexts conditionally predict repeated59,59 spellings; no such full-string witness is currently present, so these are unknown rather than failures.",
+      "An existing independently linked87,60 versus59,211,59,211 or59,59,211 pair would discriminate literal-glyph from field-scoped duplication.",
+      "A count change2->3 or a second repeated base with the same scope would discriminate productive arithmetic from the local categoricalR convention."
+    ],
+    "source_base": "repository_root",
+    "source_paths": [
+      "research/campaigns/integrated_20260906/route_c/roof_count_scope_programs.json",
+      "research/data/mahadevan_20260905/concordance_rows.csv"
+    ],
+    "prior_exposure": "Retrospective integration of previously examined corpus and currentA hypotheses; no blind test."
+  }
+]

@@ -1,0 +1,135 @@
+{
+  "status": "paused_after_executed_four_route_campaign; decipherment_not_complete",
+  "starting_commit": "fcb6686c6439b1ad6fe33eafa63e99ed659a284b",
+  "current_source_sha256": "6a0c597986783c5da8fbcb0afc3268a2c6a9f042a9b81746ebc4f89158efbd01",
+  "accepted_readings_added": 0,
+  "active_models": [
+    {
+      "id": "A-ROOF87-TICK211",
+      "rules_stored": {
+        "65": [
+          "87",
+          "59"
+        ],
+        "66": [
+          "87",
+          "59",
+          "211"
+        ],
+        "60": [
+          "59",
+          "211"
+        ],
+        "68": [
+          "67",
+          "211"
+        ],
+        "71": [
+          "70",
+          "211"
+        ],
+        "73": [
+          "72",
+          "211"
+        ]
+      },
+      "status": "best restricted collision candidate; equivalence unproved"
+    },
+    {
+      "id": "A-ROOF102-TICK211",
+      "status": "weaker local collision rival; somewhat lower joint contextual loss than87/211, still worse charged total than identity"
+    },
+    {
+      "id": "C_ROOF_COUNT_SCOPE",
+      "status": "field-scoped R/Q versus literal duplication; no numerical meaning forced"
+    },
+    {
+      "id": "D-TAMIL-JOINT-00..03",
+      "status": "explicit source-compound realizations requiring ordering/boundary assumptions; swapped87/211 assignments unresolved"
+    },
+    {
+      "id": "categorical_identity",
+      "status": "lowest declared joint contextual/cup score; not a decipherment theory"
+    }
+  ],
+  "completed_discriminating_tests": [
+    "290 previously supported roof/tick marker-order programs;234 acyclic;70/71 family+objects+aliases withheld",
+    "Eight exact context contrasts, including1380/2452 and1177/3103",
+    "Literal duplication nonconfluence and field-scope repair",
+    "Full-context written repetition transfer outside195 defining-frame objects and aliases",
+    "Sanskrit fish/bird/tree lexical-selection controls and full Tamil two-modifier search",
+    "Eight joint contextual/cup candidate models with whole-object and expression-alias masks"
+  ],
+  "next_task": {
+    "question": "Do87 and211 act on one fish root or a larger independently delimited field?",
+    "priority_reason": "Composition survives restricted marker competition, but its operational scope remains the obstacle to a nontrivial reading.",
+    "strict_or_primary_partial_case": {
+      "objects": [
+        "M77:2275",
+        "M77:1008"
+      ],
+      "retained_suffix": [
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "uncertainty": "2275 has unknown prefix; do not complete it"
+    },
+    "sensitivity_case": {
+      "objects": [
+        "M77:7283",
+        "M77:4019"
+      ],
+      "uncertainty": "match requires setting aside two doubtful sign IDs; cannot count as the primary lane"
+    },
+    "input_paths": [
+      "route_d/outputs/counted_fish_composition.json",
+      "route_a/local_boundary_repair.json",
+      "route_c/multiline_grouping_programs.json",
+      "shared/observations.jsonl"
+    ],
+    "execute_in_order": [
+      "Extract these observations and every already-held occurrence of the retained suffix, preserving faces, line boundaries, damage and all exact-expression aliases.",
+      "Freeze two explicit parses:87 modifies only the immediately following root, or87 scopes over the larger field ending at211. Include the categorical R/Q realization with matched flexibility.",
+      "Declare an observed target that differs between the parses using source-supported boundaries or companion-field information. If no such target exists, record exact observational equivalence instead of treating parser agreement as confirmation.",
+      "Exclude whole defining objects and all aliases, then compare only the genuinely differing source-grounded predictions. Retain7283/4019 separately.",
+      "Use the result to constrain the four Tamil mixed systems and categorical/count rivals; do not replace unread70 with a guessed word."
+    ],
+    "implementation_state": "Exact next research action specified; new scope comparison not claimed executed. Existing counted-fish and layout searches are complete and need not be rerun."
+  },
+  "parallel_source_question": {
+    "objects": [
+      "M77:1380",
+      "M77:2452"
+    ],
+    "inspect": "Already-held source evidence for the exact65/70 versus87/59/71 graphical identities and picture-code251/13 distinction.",
+    "purpose": "Distinguish catalogue normalization or contextual difference from genuine spelling variation.",
+    "constraint": "Do not infer a CISI alias from equal digits; bind via existing source references."
+  },
+  "fixed_failures_and_reopening_conditions": [
+    {
+      "mechanism": "global fixed-unit equal-face conversion",
+      "failure": "existing fixed-front variable reverses and roof-linked4493/4556",
+      "reopen_only_if": "independently justified field/quantity scope changes; not arbitrary object-specific units"
+    },
+    {
+      "mechanism": "literal87 duplicates the following glyph",
+      "failure": "two terminal strings in the roof/tick rewrite diamond",
+      "reopen_only_if": "a declared field-scoping or distribution law with a distinct observed prediction"
+    },
+    {
+      "mechanism": "211=ka is fish-specific",
+      "failure": "identical dictionary test selectska for birds too",
+      "reopen_only_if": "a separate source-grounded sign-to-sound or semantic consequence discriminates the alternatives"
+    },
+    {
+      "mechanism": "all cofaces or matching contexts are synonymous",
+      "failure": "copper referent contrasts and65/87/104 alternatives",
+      "reopen_only_if": "a specific contextual relation independently licenses equality"
+    }
+  ],
+  "reproduction_entrypoint": "python research/campaigns/integrated_20260906/run_campaign.py --route all",
+  "reproduction_note": "The command reproduces completed work; it is not the unimplemented next scope comparison.",
+  "unattended_processes": false
+}

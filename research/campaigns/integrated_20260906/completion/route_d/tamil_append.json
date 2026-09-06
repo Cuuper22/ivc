@@ -1,0 +1,78 @@
+{
+  "schema": "ivc.reconstructed.linguistic.v1",
+  "language": "tamil",
+  "orientation": "append",
+  "char_bits": 4.700439718141092,
+  "boundary_bits": 1.0,
+  "fusion_bits": 0.0,
+  "roots": {
+    "59": "mīṉ",
+    "65": "mīṉ",
+    "67": "mīṉ",
+    "72": "mīṉ"
+  },
+  "marker": "",
+  "marker_role": "classifier",
+  "mapping": {
+    "59": "mīṉ",
+    "65": "mīṉ",
+    "67": "mīṉ",
+    "72": "mīṉ",
+    "211": "",
+    "60": "mīṉ",
+    "66": "mīṉ",
+    "68": "mīṉ",
+    "73": "mīṉ"
+  },
+  "trace": [
+    {
+      "iteration": 0,
+      "objective_bits": 55313.28596400184,
+      "step": "initial reusable sound mapping"
+    },
+    {
+      "iteration": 1,
+      "objective_bits": 12052.751366075352,
+      "step": "segmentation -> full root/affix coordinate scan -> segmentation",
+      "marker_candidates": 1,
+      "marker_role": "classifier",
+      "role_alternatives": [
+        [
+          12052.751366075352,
+          "classifier"
+        ]
+      ],
+      "changed": true
+    },
+    {
+      "iteration": 2,
+      "objective_bits": 12052.751366075352,
+      "step": "segmentation -> full root/affix coordinate scan -> segmentation",
+      "marker_candidates": 1,
+      "marker_role": "classifier",
+      "role_alternatives": [
+        [
+          12052.751366075352,
+          "classifier"
+        ]
+      ],
+      "changed": false
+    }
+  ],
+  "train_rows": 2524,
+  "train_digest": "c895bcd739130e0951bf27a570a20946ee342344e23b5a24a09b0593efd4256c",
+  "factor_type": "conditional_lexical_prior_not_text_likelihood",
+  "independent_Indus_sound_targets": 0,
+  "sources": [
+    "shared/observations.jsonl",
+    "evidence_inventory/tamil_compounds.json"
+  ],
+  "scope": "four graphical fish bases; unknown signs including70 stay unread; retrospective",
+  "limitations": "finite coordinate optimum, conditional graphic expansion, no historical sound changes or ancient language identification",
+  "converged": true,
+  "parameter_bits": 77.4052766176931,
+  "role_search": "global phonetic-versus-classifier optimization; retained phonetic alternative where supported",
+  "vocabulary_size": 88,
+  "marker_candidates": 1,
+  "id": "tamil_append"
+}

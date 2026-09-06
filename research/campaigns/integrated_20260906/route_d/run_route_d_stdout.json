@@ -1,0 +1,133 @@
+{
+  "mw_headwords": 192482,
+  "fish_prior_headwords": 259,
+  "mw_search": [
+    {
+      "language": "Sanskrit_dictionary_conditional",
+      "orientation": "append",
+      "semantic_prior": "none",
+      "distinct_base_readings": true,
+      "compatible_markers": 13814,
+      "compatible_systems_exact": 640372456145280,
+      "minimum_description_cost": 10,
+      "cost_definition": "one unit per stored source-transliteration character +5 reusable assignments; fixed graphic grammar cost omitted equally",
+      "phonetic_correctness_targets": 0
+    },
+    {
+      "language": "Sanskrit_dictionary_conditional",
+      "orientation": "append",
+      "semantic_prior": "base59_fish",
+      "distinct_base_readings": true,
+      "compatible_markers": 589,
+      "compatible_systems_exact": 3976191215670,
+      "minimum_description_cost": 13,
+      "cost_definition": "one unit per stored source-transliteration character +5 reusable assignments; fixed graphic grammar cost omitted equally",
+      "phonetic_correctness_targets": 0
+    },
+    {
+      "language": "Sanskrit_dictionary_conditional",
+      "orientation": "append",
+      "semantic_prior": "all_four_fish",
+      "distinct_base_readings": true,
+      "compatible_markers": 25,
+      "compatible_systems_exact": 1012704,
+      "minimum_description_cost": 23,
+      "cost_definition": "one unit per stored source-transliteration character +5 reusable assignments; fixed graphic grammar cost omitted equally",
+      "phonetic_correctness_targets": 0
+    },
+    {
+      "language": "Sanskrit_dictionary_conditional",
+      "orientation": "append",
+      "semantic_prior": "all_eight_fish",
+      "distinct_base_readings": true,
+      "compatible_markers": 1,
+      "compatible_systems_exact": 360,
+      "minimum_description_cost": 33,
+      "cost_definition": "one unit per stored source-transliteration character +5 reusable assignments; fixed graphic grammar cost omitted equally",
+      "phonetic_correctness_targets": 0
+    },
+    {
+      "language": "Sanskrit_dictionary_conditional",
+      "orientation": "append",
+      "semantic_prior": "all_eight_fish_homophony",
+      "distinct_base_readings": false,
+      "compatible_markers": 22,
+      "compatible_systems_exact": 1317,
+      "minimum_description_cost": 23,
+      "cost_definition": "one unit per stored source-transliteration character +5 reusable assignments; fixed graphic grammar cost omitted equally",
+      "phonetic_correctness_targets": 0
+    },
+    {
+      "language": "Sanskrit_dictionary_conditional",
+      "orientation": "prepend",
+      "semantic_prior": "none",
+      "distinct_base_readings": true,
+      "compatible_markers": 17580,
+      "compatible_systems_exact": 280368192473592,
+      "minimum_description_cost": 10,
+      "cost_definition": "one unit per stored source-transliteration character +5 reusable assignments; fixed graphic grammar cost omitted equally",
+      "phonetic_correctness_targets": 0
+    },
+    {
+      "language": "Sanskrit_dictionary_conditional",
+      "orientation": "prepend",
+      "semantic_prior": "base59_fish",
+      "distinct_base_readings": true,
+      "compatible_markers": 508,
+      "compatible_systems_exact": 844448311818,
+      "minimum_description_cost": 13,
+      "cost_definition": "one unit per stored source-transliteration character +5 reusable assignments; fixed graphic grammar cost omitted equally",
+      "phonetic_correctness_targets": 0
+    },
+    {
+      "language": "Sanskrit_dictionary_conditional",
+      "orientation": "prepend",
+      "semantic_prior": "all_four_fish",
+      "distinct_base_readings": true,
+      "compatible_markers": 19,
+      "compatible_systems_exact": 126504,
+      "minimum_description_cost": 23,
+      "cost_definition": "one unit per stored source-transliteration character +5 reusable assignments; fixed graphic grammar cost omitted equally",
+      "phonetic_correctness_targets": 0
+    },
+    {
+      "language": "Sanskrit_dictionary_conditional",
+      "orientation": "prepend",
+      "semantic_prior": "all_eight_fish",
+      "distinct_base_readings": true,
+      "compatible_markers": 0,
+      "compatible_systems_exact": 0,
+      "minimum_description_cost": null,
+      "cost_definition": "one unit per stored source-transliteration character +5 reusable assignments; fixed graphic grammar cost omitted equally",
+      "phonetic_correctness_targets": 0
+    },
+    {
+      "language": "Sanskrit_dictionary_conditional",
+      "orientation": "prepend",
+      "semantic_prior": "all_eight_fish_homophony",
+      "distinct_base_readings": false,
+      "compatible_markers": 14,
+      "compatible_systems_exact": 14,
+      "minimum_description_cost": 25,
+      "cost_definition": "one unit per stored source-transliteration character +5 reusable assignments; fixed graphic grammar cost omitted equally",
+      "phonetic_correctness_targets": 0
+    }
+  ],
+  "tamil_ablations": [
+    {
+      "prior": "none",
+      "remaining_systems": 6
+    },
+    {
+      "prior": "fish",
+      "remaining_systems": 3
+    },
+    {
+      "prior": "star",
+      "remaining_systems": 3
+    }
+  ],
+  "applied_systems": 13,
+  "partial_reading_rows": 9698,
+  "sound_values_accepted": 0
+}

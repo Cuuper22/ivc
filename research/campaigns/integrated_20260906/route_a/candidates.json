@@ -1,0 +1,484 @@
+[
+  {
+    "route": "A",
+    "namespace": "Mahadevan1977",
+    "context": "Source stored sign order; strict expressions collapsed; raw observations never rewritten",
+    "prerequisites": [
+      "Frozen Mahadevan1977 source",
+      "Declared graphical feature hypotheses"
+    ],
+    "support": {
+      "old_exact_context_pairs": 6,
+      "one_edit_pairs_with_two_anchors": 10,
+      "structured_compact_texts": 4,
+      "structured_distinct_bases": [
+        59,
+        65,
+        72
+      ],
+      "predictions": "boundary_predictions.json"
+    },
+    "contradictions": [
+      "No referent-equivalence observation independently validates this operation",
+      "Whole-line mark/211 exclusion has a direct counterexample, which does not refute a local operation"
+    ],
+    "alternatives": [
+      "Unrelated expressions sharing a conventional slot",
+      "Contextual category rather than synonymy",
+      "Phonetic or meaning-bearing operation not identified"
+    ],
+    "parameters": {},
+    "complexity": {
+      "operations": 1,
+      "marker_selection_bits": 8.703903573444663,
+      "operation_opcode_bits": 2,
+      "graphical_mapping": "five already declared pairs; no free per-object exception"
+    },
+    "predictions": [
+      "Expand marked fish to corresponding base followed by211; then test target continuation or independently supplied referential field."
+    ],
+    "source_paths": [
+      "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "research/data/semantic_search_20260906/graphic_hypotheses.json"
+    ],
+    "prior_exposure": "Retrospective. Corpus and prior exact relations exposed; new composed pair noticed after running frozen operations.",
+    "id": "A-FISH211",
+    "status": "conditional",
+    "claim_type": "graphical_equivalence",
+    "rule": {
+      "executable": "run_route_a.normalize_sequence(sequence, model=\"fish211\")",
+      "mapping": {
+        "60": [
+          "59",
+          "211"
+        ],
+        "66": [
+          "65",
+          "211"
+        ],
+        "68": [
+          "67",
+          "211"
+        ],
+        "71": [
+          "70",
+          "211"
+        ],
+        "73": [
+          "72",
+          "211"
+        ]
+      }
+    }
+  },
+  {
+    "route": "A",
+    "namespace": "Mahadevan1977",
+    "context": "Source stored sign order; strict expressions collapsed; raw observations never rewritten",
+    "prerequisites": [
+      "Frozen Mahadevan1977 source",
+      "Declared graphical feature hypotheses"
+    ],
+    "support": {
+      "declared_graphical_pairs": 22
+    },
+    "contradictions": [
+      "No structured211 match outside fish;342 has16 pairs across6 bases versus21111 pairs across3 fish bases"
+    ],
+    "alternatives": [
+      "Unrelated expressions sharing a conventional slot",
+      "Contextual category rather than synonymy",
+      "Phonetic or meaning-bearing operation not identified"
+    ],
+    "parameters": {},
+    "complexity": {
+      "operations": 1,
+      "applicability_pairs": 22
+    },
+    "predictions": [
+      "Same expansion must explain nonfish applications if broad scope is claimed."
+    ],
+    "source_paths": [
+      "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "research/data/semantic_search_20260906/graphic_hypotheses.json"
+    ],
+    "prior_exposure": "Retrospective. Corpus and prior exact relations exposed; new composed pair noticed after running frozen operations.",
+    "id": "A-GLOBAL211",
+    "status": "underdetermined",
+    "claim_type": "graphical_equivalence",
+    "rule": {
+      "executable": "run_route_a.normalize_sequence(sequence, model=\"global211\")"
+    }
+  },
+  {
+    "route": "A",
+    "namespace": "Mahadevan1977",
+    "context": "Source stored sign order; strict expressions collapsed; raw observations never rewritten",
+    "prerequisites": [
+      "Frozen Mahadevan1977 source",
+      "Declared graphical feature hypotheses"
+    ],
+    "support": {
+      "target_occurrences": 50,
+      "weighted_target_mass": 44.333333333333336,
+      "predictive_bits": {
+        "bare_base": 323.09808980627895,
+        "base_then211": 135.17116167959824,
+        "all211": 146.11091795515173,
+        "marked_other_base": 145.21315127552086,
+        "terminal_category": 141.52363779509446,
+        "marked_objectclass": 168.1491971769737,
+        "marked_catalogue_prefix": 157.38236567860466
+      }
+    },
+    "contradictions": [],
+    "alternatives": [
+      "Unrelated expressions sharing a conventional slot",
+      "Contextual category rather than synonymy",
+      "Phonetic or meaning-bearing operation not identified"
+    ],
+    "parameters": {},
+    "complexity": {
+      "ending_category_parameters": 1,
+      "training_background": "shared, train-only"
+    },
+    "predictions": [
+      "Continuation distribution transfers across some fish graphical bases; do not infer that every line ends at a marked sign."
+    ],
+    "source_paths": [
+      "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "research/data/semantic_search_20260906/graphic_hypotheses.json"
+    ],
+    "prior_exposure": "Retrospective. Corpus and prior exact relations exposed; new composed pair noticed after running frozen operations.",
+    "id": "A-BOUNDARY211",
+    "status": "supported_scope_limited",
+    "claim_type": "structural_constraint",
+    "rule": "Marked fish have continuation behavior closer to an ending class than to the corresponding bare fish; no synonymy is asserted."
+  },
+  {
+    "route": "A",
+    "namespace": "Mahadevan1977",
+    "context": "Source stored sign order; strict expressions collapsed; raw observations never rewritten",
+    "prerequisites": [
+      "Frozen Mahadevan1977 source",
+      "Declared graphical feature hypotheses"
+    ],
+    "support": [],
+    "contradictions": [
+      {
+        "row_id": "M77:1147:0",
+        "sequence": [
+          "387",
+          "66",
+          "336",
+          "89",
+          "211"
+        ]
+      }
+    ],
+    "alternatives": [
+      "Unrelated expressions sharing a conventional slot",
+      "Contextual category rather than synonymy",
+      "Phonetic or meaning-bearing operation not identified"
+    ],
+    "parameters": {},
+    "complexity": {
+      "operations": 1
+    },
+    "predictions": [],
+    "source_paths": [
+      "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "research/data/semantic_search_20260906/graphic_hypotheses.json"
+    ],
+    "prior_exposure": "Retrospective. Corpus and prior exact relations exposed; new composed pair noticed after running frozen operations.",
+    "id": "A-211-EXCLUSION",
+    "status": "rejected",
+    "claim_type": "structural_constraint",
+    "rule": "Marked fish and separate211 never coexist within a line."
+  },
+  {
+    "route": "A",
+    "namespace": "Mahadevan1977",
+    "context": "Source stored sign order; strict expressions collapsed; raw observations never rewritten",
+    "prerequisites": [
+      "Frozen Mahadevan1977 source",
+      "Declared graphical feature hypotheses"
+    ],
+    "support": {
+      "old_two_anchor_contexts": 2,
+      "new_marked_fish_two_anchor_contexts": 1,
+      "all_exact_expression_classes": 4,
+      "source_ids": [
+        "M77:1374",
+        "M77:2913",
+        "M77:2821",
+        "M77:2905",
+        "M77:2906",
+        "M77:7249",
+        "M77:7251",
+        "M77:7255",
+        "M77:7267",
+        "M77:7269",
+        "M77:6211",
+        "M77:4493",
+        "M77:4806",
+        "M77:4556"
+      ],
+      "selected_marker_alternatives": "roof_lattice_predictions.json"
+    },
+    "contradictions": [
+      "102-before has the same two old long-context supports; unobserved new102 counterpart is unknown",
+      "Original two roof87 pairs confound object medium; new tests do not independently prove equal referent"
+    ],
+    "alternatives": [
+      "Unrelated expressions sharing a conventional slot",
+      "Contextual category rather than synonymy",
+      "Phonetic or meaning-bearing operation not identified"
+    ],
+    "parameters": {},
+    "complexity": {
+      "operations": 1,
+      "marker_selection_bits": 8.703903573444663,
+      "placement_bits": 1
+    },
+    "predictions": [
+      "The roof addition becomes87 before the corresponding unroofed fish, including60/66 graphical lattice."
+    ],
+    "source_paths": [
+      "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "research/data/semantic_search_20260906/graphic_hypotheses.json"
+    ],
+    "prior_exposure": "Retrospective. Corpus and prior exact relations exposed; new composed pair noticed after running frozen operations.",
+    "id": "A-ROOF87",
+    "status": "conditional",
+    "claim_type": "graphical_equivalence",
+    "rule": {
+      "executable": "run_route_a.normalize_sequence(sequence, model=\"roof87\")",
+      "mapping": {
+        "65": [
+          "87",
+          "59"
+        ],
+        "66": [
+          "87",
+          "60"
+        ]
+      }
+    }
+  },
+  {
+    "route": "A",
+    "namespace": "Mahadevan1977",
+    "context": "Source stored sign order; strict expressions collapsed; raw observations never rewritten",
+    "prerequisites": [
+      "A-FISH211",
+      "A-ROOF87",
+      "Publisher graphical square59/60/65/66"
+    ],
+    "support": {
+      "classes": 10,
+      "distinct_raw_expressions": 21,
+      "pairwise_relations": 12,
+      "cross_operation_pairs": 2,
+      "exclusively_cross_operation_classes": 1,
+      "new_pair_ids": [
+        "M77:1380:0",
+        "M77:2452:0"
+      ],
+      "selected_program_rank": 1,
+      "leave70_family_rank": 1,
+      "candidate_programs": 234,
+      "comparison": "composition_adjudication.json"
+    },
+    "contradictions": [
+      "Raw motif codes differ251/13 for1380/2452 although site and medium match; this is not a lexical anchor",
+      "Under additional equal-face scalar assumption,4493 and4556 have conflicting cup-count outputs4/2; complementary fields remain possible"
+    ],
+    "alternatives": [
+      "A-ROOF102-TICK211",
+      "Roof109-before/tick211-after gives8 classes",
+      "Categorical field substitution without equal referent"
+    ],
+    "parameters": {},
+    "complexity": {
+      "operations": 2,
+      "marker_selection_bits": 17.407807146889326,
+      "placement_bits": 2,
+      "rewriting_priority": "tick then roof; no object-specific exception"
+    },
+    "predictions": [
+      {
+        "source_ids": [
+          "M77:1380:0",
+          "M77:2452:0"
+        ],
+        "left": [
+          "65",
+          "70",
+          "211"
+        ],
+        "right": [
+          "87",
+          "59",
+          "71"
+        ],
+        "common_form": [
+          "87",
+          "59",
+          "70",
+          "211"
+        ],
+        "phonetic_value_for70": null
+      },
+      {
+        "source_ids": [
+          "M77:7249",
+          "M77:6211",
+          "M77:1551"
+        ],
+        "common_form": [
+          "267",
+          "99",
+          "87",
+          "59",
+          "211"
+        ]
+      }
+    ],
+    "source_paths": [
+      "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "research/data/semantic_search_20260906/graphic_hypotheses.json"
+    ],
+    "prior_exposure": "Retrospective. Corpus and prior exact relations exposed; new composed pair noticed after running frozen operations.",
+    "id": "A-ROOF87-TICK211",
+    "status": "conditional",
+    "claim_type": "graphical_equivalence",
+    "rule": {
+      "executable": "run_route_a.normalize_sequence(sequence, model=\"fish211_roof87\")",
+      "mapping": {
+        "60": [
+          "59",
+          "211"
+        ],
+        "65": [
+          "87",
+          "59"
+        ],
+        "66": [
+          "87",
+          "59",
+          "211"
+        ],
+        "68": [
+          "67",
+          "211"
+        ],
+        "71": [
+          "70",
+          "211"
+        ],
+        "73": [
+          "72",
+          "211"
+        ]
+      }
+    }
+  },
+  {
+    "route": "A",
+    "namespace": "Mahadevan1977",
+    "context": "Source stored sign order; strict expressions collapsed; raw observations never rewritten",
+    "prerequisites": [
+      "Frozen Mahadevan1977 source",
+      "Declared graphical feature hypotheses"
+    ],
+    "support": {
+      "normal_form_classes": 8,
+      "old_roof102_two_anchor_contexts": 2
+    },
+    "contradictions": [
+      "Does not connect1380/2452 under same program; this does not disprove it as a separate local convention"
+    ],
+    "alternatives": [
+      "Unrelated expressions sharing a conventional slot",
+      "Contextual category rather than synonymy",
+      "Phonetic or meaning-bearing operation not identified"
+    ],
+    "parameters": {},
+    "complexity": {
+      "operations": 2,
+      "marker_selection_bits": 17.407807146889326,
+      "placement_bits": 2
+    },
+    "predictions": [
+      "Compete on independently anchored contexts that distinguish87 and102 outputs."
+    ],
+    "source_paths": [
+      "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "research/data/semantic_search_20260906/graphic_hypotheses.json"
+    ],
+    "prior_exposure": "Retrospective. Corpus and prior exact relations exposed; new composed pair noticed after running frozen operations.",
+    "id": "A-ROOF102-TICK211",
+    "status": "conditional",
+    "claim_type": "graphical_equivalence",
+    "rule": {
+      "executable": "run_route_a.normalize_sequence(sequence, model=\"fish211_roof102\")"
+    }
+  },
+  {
+    "route": "A",
+    "namespace": "Mahadevan1977",
+    "context": "Source stored sign order; strict expressions collapsed; raw observations never rewritten",
+    "prerequisites": [
+      "Frozen Mahadevan1977 source",
+      "Declared graphical feature hypotheses"
+    ],
+    "support": {
+      "suffix_unique_texts": 34,
+      "suffix_objects": 38,
+      "standalone_suffix_objects": [
+        "M77:2575",
+        "M77:5089",
+        "M77:7279",
+        "M77:2015"
+      ]
+    },
+    "contradictions": [
+      "387–66 lacks a standalone witness",
+      "No strict211–336 adjacency observed; missing sequence is not a falsifier"
+    ],
+    "alternatives": [
+      "Unrelated expressions sharing a conventional slot",
+      "Contextual category rather than synonymy",
+      "Phonetic or meaning-bearing operation not identified"
+    ],
+    "parameters": {},
+    "complexity": {
+      "new_segmentation_rules": 1
+    },
+    "predictions": [
+      "Test whether336–89 field continuations transfer across linked faces and object classes."
+    ],
+    "source_paths": [
+      "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "research/data/semantic_search_20260906/graphic_hypotheses.json"
+    ],
+    "prior_exposure": "Retrospective. Corpus and prior exact relations exposed; new composed pair noticed after running frozen operations.",
+    "id": "A-LOCAL-SUFFIX336",
+    "status": "underdetermined",
+    "claim_type": "structural_constraint",
+    "rule": {
+      "candidate_segmentation": [
+        [
+          "387",
+          "66"
+        ],
+        [
+          "336",
+          "89",
+          "211"
+        ]
+      ]
+    }
+  }
+]

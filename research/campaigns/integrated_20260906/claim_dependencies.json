@@ -1,0 +1,910 @@
+{
+  "candidate_nodes": [
+    "A-FISH211",
+    "A-GLOBAL211",
+    "A-BOUNDARY211",
+    "A-211-EXCLUSION",
+    "A-ROOF87",
+    "A-ROOF87-TICK211",
+    "A-ROOF102-TICK211",
+    "A-LOCAL-SUFFIX336",
+    "B-COFACE-363",
+    "B-358-LITERAL",
+    "B-LATENT-CATEGORY",
+    "B-COPPER-LITERAL-PICTURE",
+    "B-REPRESENTATION-CHANNEL",
+    "B-THREE-FIELDS",
+    "C_LONG_FIELD_LOCALITY",
+    "C_CUP_CARDINAL_VS_CATEGORY",
+    "C_DESCRIPTOR_UNIT_CONVERSION",
+    "C_FRONT_TO_CUP_ARITHMETIC",
+    "C_REPEAT_FISH_87",
+    "C_MULTILINE_2516",
+    "C_PARTIAL_119_THIRD_FIELD",
+    "C_ROOF_COUNT_SCOPE",
+    "D-MW-append-none-000",
+    "D-MW-append-all_four_fish-016",
+    "D-MW-prepend-none-033",
+    "D-MW-prepend-all_four_fish-049",
+    "D-TAMIL-00",
+    "D-TAMIL-01",
+    "D-TAMIL-02",
+    "D-TAMIL-03",
+    "D-TAMIL-04",
+    "D-TAMIL-05",
+    "D-MW-append-all_eight_fish-024",
+    "D-MW-append-all_eight_fish_homophony-025",
+    "D-MW-prepend-all_eight_fish_homophony-057",
+    "D-KA-CONDITIONAL",
+    "D-TAMIL-JOINT-00",
+    "D-TAMIL-JOINT-01",
+    "D-TAMIL-JOINT-02",
+    "D-TAMIL-JOINT-03"
+  ],
+  "edges": [
+    {
+      "from": "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "to": "A-FISH211",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/semantic_search_20260906/graphic_hypotheses.json",
+      "to": "A-FISH211",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "to": "A-GLOBAL211",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/semantic_search_20260906/graphic_hypotheses.json",
+      "to": "A-GLOBAL211",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "to": "A-BOUNDARY211",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/semantic_search_20260906/graphic_hypotheses.json",
+      "to": "A-BOUNDARY211",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "to": "A-211-EXCLUSION",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/semantic_search_20260906/graphic_hypotheses.json",
+      "to": "A-211-EXCLUSION",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "to": "A-ROOF87",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/semantic_search_20260906/graphic_hypotheses.json",
+      "to": "A-ROOF87",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "to": "A-ROOF87-TICK211",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/semantic_search_20260906/graphic_hypotheses.json",
+      "to": "A-ROOF87-TICK211",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "to": "A-ROOF102-TICK211",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/semantic_search_20260906/graphic_hypotheses.json",
+      "to": "A-ROOF102-TICK211",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "to": "A-LOCAL-SUFFIX336",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/semantic_search_20260906/graphic_hypotheses.json",
+      "to": "A-LOCAL-SUFFIX336",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "to": "B-COFACE-363",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/shared/observations.jsonl",
+      "to": "B-COFACE-363",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/evidence_inventory/recovered/Parpola_2008_copper.pdf",
+      "to": "B-COFACE-363",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "to": "B-358-LITERAL",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/shared/observations.jsonl",
+      "to": "B-358-LITERAL",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "to": "B-LATENT-CATEGORY",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/shared/observations.jsonl",
+      "to": "B-LATENT-CATEGORY",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "to": "B-COPPER-LITERAL-PICTURE",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/shared/observations.jsonl",
+      "to": "B-COPPER-LITERAL-PICTURE",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/evidence_inventory/recovered/Parpola_2008_copper.pdf",
+      "to": "B-COPPER-LITERAL-PICTURE",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "to": "B-REPRESENTATION-CHANNEL",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/shared/observations.jsonl",
+      "to": "B-REPRESENTATION-CHANNEL",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/evidence_inventory/recovered/Parpola_2008_copper.pdf",
+      "to": "B-REPRESENTATION-CHANNEL",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/mahadevan_20260905/concordance_documents.json.gz",
+      "to": "B-THREE-FIELDS",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/shared/observations.jsonl",
+      "to": "B-THREE-FIELDS",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_c/one_group_templates.json",
+      "to": "C_LONG_FIELD_LOCALITY",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_c/numerical_observations.json",
+      "to": "C_LONG_FIELD_LOCALITY",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_c/cup_field_records.json",
+      "to": "C_CUP_CARDINAL_VS_CATEGORY",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/docs/mahadevan_crossface_constraints_20260905.md",
+      "to": "C_CUP_CARDINAL_VS_CATEGORY",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_c/relative_unit_graphs.json",
+      "to": "C_DESCRIPTOR_UNIT_CONVERSION",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_c/single_count_crossface_constraints.json",
+      "to": "C_DESCRIPTOR_UNIT_CONVERSION",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_c/program_comparison.json",
+      "to": "C_FRONT_TO_CUP_ARITHMETIC",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_c/program_predictions.json",
+      "to": "C_FRONT_TO_CUP_ARITHMETIC",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_c/grouping_programs.json",
+      "to": "C_FRONT_TO_CUP_ARITHMETIC",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_c/repeat_compression_candidates.json",
+      "to": "C_REPEAT_FISH_87",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_c/repeat_compression_label_controls.json",
+      "to": "C_REPEAT_FISH_87",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_c/multiline_grouping_programs.json",
+      "to": "C_MULTILINE_2516",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_c/partial_field_compatibility.json",
+      "to": "C_PARTIAL_119_THIRD_FIELD",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_c/roof_count_scope_programs.json",
+      "to": "C_ROOF_COUNT_SCOPE",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/mahadevan_20260905/concordance_rows.csv",
+      "to": "C_ROOF_COUNT_SCOPE",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "to": "D-MW-append-none-000",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "to": "D-MW-append-none-000",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "to": "D-MW-append-none-000",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/shared/observations.jsonl",
+      "to": "D-MW-append-none-000",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "A-FISH211",
+      "to": "D-MW-append-none-000",
+      "type": "conditional_orthographic_prerequisite",
+      "independence": "dictionary membership cannot validate its own assumed spelling equations"
+    },
+    {
+      "from": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "to": "D-MW-append-all_four_fish-016",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "to": "D-MW-append-all_four_fish-016",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "to": "D-MW-append-all_four_fish-016",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/shared/observations.jsonl",
+      "to": "D-MW-append-all_four_fish-016",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "A-FISH211",
+      "to": "D-MW-append-all_four_fish-016",
+      "type": "conditional_orthographic_prerequisite",
+      "independence": "dictionary membership cannot validate its own assumed spelling equations"
+    },
+    {
+      "from": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "to": "D-MW-prepend-none-033",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "to": "D-MW-prepend-none-033",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "to": "D-MW-prepend-none-033",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/shared/observations.jsonl",
+      "to": "D-MW-prepend-none-033",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "A-FISH211",
+      "to": "D-MW-prepend-none-033",
+      "type": "conditional_orthographic_prerequisite",
+      "independence": "dictionary membership cannot validate its own assumed spelling equations"
+    },
+    {
+      "from": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "to": "D-MW-prepend-all_four_fish-049",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "to": "D-MW-prepend-all_four_fish-049",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "to": "D-MW-prepend-all_four_fish-049",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/shared/observations.jsonl",
+      "to": "D-MW-prepend-all_four_fish-049",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "A-FISH211",
+      "to": "D-MW-prepend-all_four_fish-049",
+      "type": "conditional_orthographic_prerequisite",
+      "independence": "dictionary membership cannot validate its own assumed spelling equations"
+    },
+    {
+      "from": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "to": "D-TAMIL-00",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "to": "D-TAMIL-00",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "to": "D-TAMIL-00",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/shared/observations.jsonl",
+      "to": "D-TAMIL-00",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "A-FISH211",
+      "to": "D-TAMIL-00",
+      "type": "conditional_orthographic_prerequisite",
+      "independence": "dictionary membership cannot validate its own assumed spelling equations"
+    },
+    {
+      "from": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "to": "D-TAMIL-01",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "to": "D-TAMIL-01",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "to": "D-TAMIL-01",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/shared/observations.jsonl",
+      "to": "D-TAMIL-01",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "A-FISH211",
+      "to": "D-TAMIL-01",
+      "type": "conditional_orthographic_prerequisite",
+      "independence": "dictionary membership cannot validate its own assumed spelling equations"
+    },
+    {
+      "from": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "to": "D-TAMIL-02",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "to": "D-TAMIL-02",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "to": "D-TAMIL-02",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/shared/observations.jsonl",
+      "to": "D-TAMIL-02",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "A-FISH211",
+      "to": "D-TAMIL-02",
+      "type": "conditional_orthographic_prerequisite",
+      "independence": "dictionary membership cannot validate its own assumed spelling equations"
+    },
+    {
+      "from": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "to": "D-TAMIL-03",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "to": "D-TAMIL-03",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "to": "D-TAMIL-03",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/shared/observations.jsonl",
+      "to": "D-TAMIL-03",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "A-FISH211",
+      "to": "D-TAMIL-03",
+      "type": "conditional_orthographic_prerequisite",
+      "independence": "dictionary membership cannot validate its own assumed spelling equations"
+    },
+    {
+      "from": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "to": "D-TAMIL-04",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "to": "D-TAMIL-04",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "to": "D-TAMIL-04",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/shared/observations.jsonl",
+      "to": "D-TAMIL-04",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "A-FISH211",
+      "to": "D-TAMIL-04",
+      "type": "conditional_orthographic_prerequisite",
+      "independence": "dictionary membership cannot validate its own assumed spelling equations"
+    },
+    {
+      "from": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "to": "D-TAMIL-05",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "to": "D-TAMIL-05",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "to": "D-TAMIL-05",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/shared/observations.jsonl",
+      "to": "D-TAMIL-05",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "A-FISH211",
+      "to": "D-TAMIL-05",
+      "type": "conditional_orthographic_prerequisite",
+      "independence": "dictionary membership cannot validate its own assumed spelling equations"
+    },
+    {
+      "from": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "to": "D-MW-append-all_eight_fish-024",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "to": "D-MW-append-all_eight_fish-024",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "to": "D-MW-append-all_eight_fish-024",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/shared/observations.jsonl",
+      "to": "D-MW-append-all_eight_fish-024",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "A-FISH211",
+      "to": "D-MW-append-all_eight_fish-024",
+      "type": "conditional_orthographic_prerequisite",
+      "independence": "dictionary membership cannot validate its own assumed spelling equations"
+    },
+    {
+      "from": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "to": "D-MW-append-all_eight_fish_homophony-025",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "to": "D-MW-append-all_eight_fish_homophony-025",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "to": "D-MW-append-all_eight_fish_homophony-025",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/shared/observations.jsonl",
+      "to": "D-MW-append-all_eight_fish_homophony-025",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "A-FISH211",
+      "to": "D-MW-append-all_eight_fish_homophony-025",
+      "type": "conditional_orthographic_prerequisite",
+      "independence": "dictionary membership cannot validate its own assumed spelling equations"
+    },
+    {
+      "from": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+      "to": "D-MW-prepend-all_eight_fish_homophony-057",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/evidence_inventory/dravidian_lexical_examples.json",
+      "to": "D-MW-prepend-all_eight_fish_homophony-057",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/data/semantic_search_20260906/modifier_context_pairs.json",
+      "to": "D-MW-prepend-all_eight_fish_homophony-057",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/shared/observations.jsonl",
+      "to": "D-MW-prepend-all_eight_fish_homophony-057",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "A-FISH211",
+      "to": "D-MW-prepend-all_eight_fish_homophony-057",
+      "type": "conditional_orthographic_prerequisite",
+      "independence": "dictionary membership cannot validate its own assumed spelling equations"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_d/outputs/mw_extension_counts.json",
+      "to": "D-KA-CONDITIONAL",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_d/outputs/semantic_category_control.json",
+      "to": "D-KA-CONDITIONAL",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_d/outputs/semantic_category_source_entries.json",
+      "to": "D-KA-CONDITIONAL",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "A-FISH211",
+      "to": "D-KA-CONDITIONAL",
+      "type": "conditional_orthographic_prerequisite",
+      "independence": "dictionary membership cannot validate its own assumed spelling equations"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_d/outputs/tamil_full_joint_search.json",
+      "to": "D-TAMIL-JOINT-00",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_d/outputs/tamil_joint_worked_readings.json",
+      "to": "D-TAMIL-JOINT-00",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_d/outputs/new_fish_family_propagation.json",
+      "to": "D-TAMIL-JOINT-00",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "A-FISH211",
+      "to": "D-TAMIL-JOINT-00",
+      "type": "conditional_orthographic_prerequisite",
+      "independence": "dictionary membership cannot validate its own assumed spelling equations"
+    },
+    {
+      "from": "A-ROOF87",
+      "to": "D-TAMIL-JOINT-00",
+      "type": "conditional_orthographic_prerequisite",
+      "independence": "source lexical compounds do not independently establish the sign-to-modifier attachment"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_d/outputs/tamil_full_joint_search.json",
+      "to": "D-TAMIL-JOINT-01",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_d/outputs/tamil_joint_worked_readings.json",
+      "to": "D-TAMIL-JOINT-01",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_d/outputs/new_fish_family_propagation.json",
+      "to": "D-TAMIL-JOINT-01",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "A-FISH211",
+      "to": "D-TAMIL-JOINT-01",
+      "type": "conditional_orthographic_prerequisite",
+      "independence": "dictionary membership cannot validate its own assumed spelling equations"
+    },
+    {
+      "from": "A-ROOF87",
+      "to": "D-TAMIL-JOINT-01",
+      "type": "conditional_orthographic_prerequisite",
+      "independence": "source lexical compounds do not independently establish the sign-to-modifier attachment"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_d/outputs/tamil_full_joint_search.json",
+      "to": "D-TAMIL-JOINT-02",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_d/outputs/tamil_joint_worked_readings.json",
+      "to": "D-TAMIL-JOINT-02",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_d/outputs/new_fish_family_propagation.json",
+      "to": "D-TAMIL-JOINT-02",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "A-FISH211",
+      "to": "D-TAMIL-JOINT-02",
+      "type": "conditional_orthographic_prerequisite",
+      "independence": "dictionary membership cannot validate its own assumed spelling equations"
+    },
+    {
+      "from": "A-ROOF87",
+      "to": "D-TAMIL-JOINT-02",
+      "type": "conditional_orthographic_prerequisite",
+      "independence": "source lexical compounds do not independently establish the sign-to-modifier attachment"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_d/outputs/tamil_full_joint_search.json",
+      "to": "D-TAMIL-JOINT-03",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_d/outputs/tamil_joint_worked_readings.json",
+      "to": "D-TAMIL-JOINT-03",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "research/campaigns/integrated_20260906/route_d/outputs/new_fish_family_propagation.json",
+      "to": "D-TAMIL-JOINT-03",
+      "type": "source_or_derived_input",
+      "independence": "not an additional independent observation when another route reuses it"
+    },
+    {
+      "from": "A-FISH211",
+      "to": "D-TAMIL-JOINT-03",
+      "type": "conditional_orthographic_prerequisite",
+      "independence": "dictionary membership cannot validate its own assumed spelling equations"
+    },
+    {
+      "from": "A-ROOF87",
+      "to": "D-TAMIL-JOINT-03",
+      "type": "conditional_orthographic_prerequisite",
+      "independence": "source lexical compounds do not independently establish the sign-to-modifier attachment"
+    }
+  ],
+  "cross_route_tasks": [
+    {
+      "id": "I-PICTURE",
+      "from": [
+        "A-FISH211"
+      ],
+      "to": "raw field-symbol targets",
+      "output": "integration/cross_route_predictions.json",
+      "role": "predict under a specified spelling model"
+    },
+    {
+      "id": "I-CUP",
+      "from": [
+        "A-FISH211",
+        "A-ROOF87"
+      ],
+      "to": "observed companion cup counts",
+      "output": "integration/cross_route_predictions.json",
+      "role": "test joint field/equivalence assumptions"
+    },
+    {
+      "id": "I-SCOPE",
+      "from": [
+        "A-FISH211",
+        "A-ROOF87",
+        "C_REPEAT_FISH_87"
+      ],
+      "to": "C_ROOF_COUNT_SCOPE",
+      "output": "route_c/roof_count_scope_programs.json",
+      "role": "test literal duplication versus one modifier on the whole field"
+    },
+    {
+      "id": "I-PHONETIC-LATTICE",
+      "from": [
+        "A-FISH211",
+        "A-ROOF87"
+      ],
+      "to": "conditional two-modifier lexical systems",
+      "output": "route_d/outputs/two_modifier_lattice.json",
+      "role": "enforce one global sequence order and shared modifiers"
+    },
+    {
+      "id": "I-ANCHOR-EXCLUSION",
+      "from": [
+        "B-358-LITERAL",
+        "B-COFACE-363"
+      ],
+      "to": "D lexical prior policy",
+      "output": "route_b/semantic_anchors.json",
+      "role": "exclude automatic literal animal-name anchors; no accepted sound anchor supplied"
+    }
+  ],
+  "feedback_policy": "proposals may flow back; a consequence never supplies independent confirmation of its premise",
+  "shared_witness": "M77:1551:0 appears in tick, roof/count and lexical chains; count it once per observed target"
+}

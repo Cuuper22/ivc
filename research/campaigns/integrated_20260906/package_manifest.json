@@ -1,0 +1,38 @@
+{
+  "starting_commit": "fcb6686c6439b1ad6fe33eafa63e99ed659a284b",
+  "source_snapshot": "6a0c597986783c5da8fbcb0afc3268a2c6a9f042a9b81746ebc4f89158efbd01",
+  "entrypoints": {
+    "research/campaigns/integrated_20260906/consolidate.py": "680cca8609fa274cd40928f6a49559aada951c96e3d450f092992a8d1d10a416",
+    "research/campaigns/integrated_20260906/evidence_inventory/extract_tamil_compounds.py": "27e44a3b27c43ffc12166db7abbe32f2c3350c8960b5a519d5cc8709352eed76",
+    "research/campaigns/integrated_20260906/route_a/adjudicate_composition.py": "5640dbcdd3b9ca9a28218b4bc4263b435a020023283b4da27a9a5f197b93f55e",
+    "research/campaigns/integrated_20260906/route_a/build_report.py": "82515c2c441b0ff0b0058f2d3becb6b342ffd8ff9bfb488783ef4b25e62a5a71",
+    "research/campaigns/integrated_20260906/route_a/run_route_a.py": "3d549fb9e382f77ee393af1f0ef4078b47f26ecbd307d426371ae2ad99e3e0f2",
+    "research/campaigns/integrated_20260906/route_b/run_route_b.py": "5f9b4608ace6808768851cc7a07e77ac123423101c205e088b7aa35704b45c92",
+    "research/campaigns/integrated_20260906/route_b/stratify_fish_composition.py": "f2f7297729f1fb4d9eff3c50dab138be12cf3eaeff6e0d7386a1c25f32f29887",
+    "research/campaigns/integrated_20260906/route_c/run_numerical_programs.py": "98388d2575833fd3d30600ecf25aef022672acee3d1a5a4a12c6877e14ecf25e",
+    "research/campaigns/integrated_20260906/route_c/run_roof_count_program.py": "c9c3cff679564beaf41cd8dc354a71040508e6a7747f600a1065ed4aebd5c507",
+    "research/campaigns/integrated_20260906/route_d/finalize_route_d.py": "7b175deb98f7a592820296a7e2713616e34647186615b995118eb35cb923f34f",
+    "research/campaigns/integrated_20260906/route_d/run_all.py": "2b754eb7ae458be91635e9b1651d26307f1892ca22569f845d5145d35e858033",
+    "research/campaigns/integrated_20260906/route_d/run_route_d.py": "b99a74dd17acdff773b311b5dc31ba854a70ae724429946815fc777c517be5f1",
+    "research/campaigns/integrated_20260906/route_d/search_modifier_lattice.py": "45aa7a17f8567c97d8b146c72b3844e0130f369eda691b939dbf896e77c13554",
+    "research/campaigns/integrated_20260906/route_d/semantic_category_control.py": "e700fbf3b0911774923c16e8224562ff6efa79e18b9704dfc5bc71e26d713530",
+    "research/campaigns/integrated_20260906/route_d/tamil_joint_search.py": "29cb9d8c430d159c7d288e671a48a7a6e5d1fc71dfb7d9c4b6042ed7db363518",
+    "research/campaigns/integrated_20260906/route_d/test_counted_fish_composition.py": "f9528d9968078d75fbe2562abc63441962f584eb00b5d694d575769c8db65d80",
+    "research/campaigns/integrated_20260906/run_campaign.py": "d2316bdff7419e7f7e2ba4afea623ab9a531f1447ee92c7774bd0a381cc9b896",
+    "research/campaigns/integrated_20260906/run_integration.py": "dabb59f5c200cfea60b308ef98bd79c8c9d17c66e53641d6036b5598018b1324",
+    "research/campaigns/integrated_20260906/shared/foundation.py": "7461c34f897ba2ba8730235e1ec139b5bf46d64c7fdab402cd8cb2cfb71a9629"
+  },
+  "records": {
+    "shared/snapshot.json": "bcd83e09d09573daa91a8a56447e731b43f53d6ab94d967104fb8387455452c9",
+    "evidence_inventory/source_manifest.json": "5f52923fa47db6056f103408afe88746fcdc693b793bf5023ddda0e877d6d279",
+    "evidence_inventory/recovery_manifest.json": "8de78d7cc6046c31ee9754d1bef7395c466a1ec99a08dfba6ebf4cdbb155fcd7",
+    "candidate_ledger.json": "00ce087fe8395424d55f95c4d2c620f9060c0cc06d9f883408a19c6bcba3d427",
+    "results_index.json": "dcee176b190f4d44aa396eab176b540e4a41e84c5cf66f2c516d8e7cbfddc8cd",
+    "claim_dependencies.json": "2cac21bfa51ade29c72fc0a55223e24d3fff9e8d29689403985b7820dd5a3250",
+    "accepted_claims.json": "f01907fbbb1f9a8d9f1955649161bcb6d7a30c184917cc2e672f99bffce9461f",
+    "task_status.json": "e46007c1465e831b93354bc63ec5f624bf222f5b6b64fb45863f1d120bffe3cf",
+    "continuation.json": "f06fcbee987318e003c822ce3e2059031e0a0edf53de800da97a663d68d4f071"
+  },
+  "execution_note": "Route outputs were executed individually during this session. consolidate.py only packages them; run_campaign.py is the reproduction wrapper.",
+  "provenance_issues": []
+}

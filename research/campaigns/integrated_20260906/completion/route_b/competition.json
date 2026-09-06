@@ -1,0 +1,713 @@
+{
+  "independent": {
+    "folds": [
+      {
+        "fold": 0,
+        "targets": 249,
+        "data_bits": 843.0684310340597,
+        "parameter_bits": 412.24609842416857,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 1,
+        "targets": 217,
+        "data_bits": 889.1172896825943,
+        "parameter_bits": 389.6964641986445,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 2,
+        "targets": 238,
+        "data_bits": 766.4961862894835,
+        "parameter_bits": 427.73071561616626,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 3,
+        "targets": 216,
+        "data_bits": 769.1228848309389,
+        "parameter_bits": 394.69114958838645,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 4,
+        "targets": 230,
+        "data_bits": 693.907803737431,
+        "parameter_bits": 428.27881721608037,
+        "rule_bits": 3.169925001442312
+      }
+    ],
+    "family_holdout_bits": 3961.7125955745073,
+    "medium_transfer": [
+      {
+        "medium": "1",
+        "targets": 988,
+        "training": 142,
+        "data_bits": 4920.560368698518
+      },
+      {
+        "medium": "2",
+        "targets": 93,
+        "training": 1036,
+        "data_bits": 1027.5765286145918
+      },
+      {
+        "medium": "3",
+        "targets": 29,
+        "training": 1106,
+        "data_bits": 256.57399264867576
+      },
+      {
+        "medium": "4",
+        "targets": 1,
+        "training": 1149,
+        "data_bits": 10.166068138611468
+      },
+      {
+        "medium": "5",
+        "targets": 31,
+        "training": 1117,
+        "data_bits": 448.23720441757104
+      },
+      {
+        "medium": "7",
+        "targets": 8,
+        "training": 1139,
+        "data_bits": 125.08217524704459
+      }
+    ],
+    "full_parameter_bits": 482.95236192700753
+  },
+  "literal_string": {
+    "folds": [
+      {
+        "fold": 0,
+        "targets": 249,
+        "data_bits": 843.0684310340597,
+        "parameter_bits": 343813.24608575663,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 1,
+        "targets": 217,
+        "data_bits": 889.1172896825943,
+        "parameter_bits": 337087.4415318275,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 2,
+        "targets": 238,
+        "data_bits": 766.4961862894835,
+        "parameter_bits": 359293.8011175796,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 3,
+        "targets": 216,
+        "data_bits": 769.1228848309389,
+        "parameter_bits": 338250.3151972472,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 4,
+        "targets": 230,
+        "data_bits": 693.907803737431,
+        "parameter_bits": 366606.66753696476,
+        "rule_bits": 3.169925001442312
+      }
+    ],
+    "family_holdout_bits": 3961.7125955745073,
+    "medium_transfer": [
+      {
+        "medium": "1",
+        "targets": 988,
+        "training": 142,
+        "data_bits": 4920.560368698518
+      },
+      {
+        "medium": "2",
+        "targets": 93,
+        "training": 1036,
+        "data_bits": 1027.5765286145918
+      },
+      {
+        "medium": "3",
+        "targets": 29,
+        "training": 1106,
+        "data_bits": 256.57399264867576
+      },
+      {
+        "medium": "4",
+        "targets": 1,
+        "training": 1149,
+        "data_bits": 10.166068138611468
+      },
+      {
+        "medium": "5",
+        "targets": 31,
+        "training": 1117,
+        "data_bits": 448.23720441757104
+      },
+      {
+        "medium": "7",
+        "targets": 8,
+        "training": 1139,
+        "data_bits": 125.08217524704459
+      }
+    ],
+    "full_parameter_bits": 513378.360728409
+  },
+  "anonymous_category": {
+    "folds": [
+      {
+        "fold": 0,
+        "targets": 249,
+        "data_bits": 875.5392335304932,
+        "parameter_bits": 37332.81036562679,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 1,
+        "targets": 217,
+        "data_bits": 916.821226327117,
+        "parameter_bits": 37899.214359977035,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 2,
+        "targets": 238,
+        "data_bits": 762.1113185014165,
+        "parameter_bits": 36789.75798799738,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 3,
+        "targets": 216,
+        "data_bits": 749.0701293925081,
+        "parameter_bits": 36957.892519582536,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 4,
+        "targets": 230,
+        "data_bits": 759.1530749491194,
+        "parameter_bits": 38057.74179192549,
+        "rule_bits": 3.169925001442312
+      }
+    ],
+    "family_holdout_bits": 4062.6949827006542,
+    "medium_transfer": [
+      {
+        "medium": "1",
+        "targets": 988,
+        "training": 142,
+        "data_bits": 5050.977456507453
+      },
+      {
+        "medium": "2",
+        "targets": 93,
+        "training": 1036,
+        "data_bits": 1017.3958096598345
+      },
+      {
+        "medium": "3",
+        "targets": 29,
+        "training": 1106,
+        "data_bits": 303.8471685948799
+      },
+      {
+        "medium": "4",
+        "targets": 1,
+        "training": 1149,
+        "data_bits": 16.200528561806866
+      },
+      {
+        "medium": "5",
+        "targets": 31,
+        "training": 1117,
+        "data_bits": 445.25049802179973
+      },
+      {
+        "medium": "7",
+        "targets": 8,
+        "training": 1139,
+        "data_bits": 134.4085260063706
+      }
+    ],
+    "full_parameter_bits": 44324.85940675346
+  },
+  "production_latent": {
+    "folds": [
+      {
+        "fold": 0,
+        "targets": 249,
+        "data_bits": 875.5392335304932,
+        "parameter_bits": 37332.81036562679,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 1,
+        "targets": 217,
+        "data_bits": 916.821226327117,
+        "parameter_bits": 37899.214359977035,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 2,
+        "targets": 238,
+        "data_bits": 762.1113185014165,
+        "parameter_bits": 36789.75798799738,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 3,
+        "targets": 216,
+        "data_bits": 749.0701293925081,
+        "parameter_bits": 36957.892519582536,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 4,
+        "targets": 230,
+        "data_bits": 759.1530749491194,
+        "parameter_bits": 38057.74179192549,
+        "rule_bits": 3.169925001442312
+      }
+    ],
+    "family_holdout_bits": 4062.6949827006542,
+    "medium_transfer": [
+      {
+        "medium": "1",
+        "targets": 988,
+        "training": 142,
+        "data_bits": 5050.977456507453
+      },
+      {
+        "medium": "2",
+        "targets": 93,
+        "training": 1036,
+        "data_bits": 1017.3958096598345
+      },
+      {
+        "medium": "3",
+        "targets": 29,
+        "training": 1106,
+        "data_bits": 303.8471685948799
+      },
+      {
+        "medium": "4",
+        "targets": 1,
+        "training": 1149,
+        "data_bits": 16.200528561806866
+      },
+      {
+        "medium": "5",
+        "targets": 31,
+        "training": 1117,
+        "data_bits": 445.25049802179973
+      },
+      {
+        "medium": "7",
+        "targets": 8,
+        "training": 1139,
+        "data_bits": 134.4085260063706
+      }
+    ],
+    "full_parameter_bits": 44324.85940675346
+  },
+  "complementary_fields": {
+    "folds": [
+      {
+        "fold": 0,
+        "targets": 249,
+        "data_bits": 1040.6772631023862,
+        "parameter_bits": 62985.31460923547,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 1,
+        "targets": 217,
+        "data_bits": 1185.4386216076996,
+        "parameter_bits": 58005.57876597292,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 2,
+        "targets": 238,
+        "data_bits": 961.962096460251,
+        "parameter_bits": 64459.51048785696,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 3,
+        "targets": 216,
+        "data_bits": 925.4949792364719,
+        "parameter_bits": 60338.40949332458,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 4,
+        "targets": 230,
+        "data_bits": 819.2340260011766,
+        "parameter_bits": 64108.9084667243,
+        "rule_bits": 3.169925001442312
+      }
+    ],
+    "family_holdout_bits": 4932.806986407985,
+    "medium_transfer": [
+      {
+        "medium": "1",
+        "targets": 988,
+        "training": 142,
+        "data_bits": 4880.585674355897
+      },
+      {
+        "medium": "2",
+        "targets": 93,
+        "training": 1036,
+        "data_bits": 1358.5084748337079
+      },
+      {
+        "medium": "3",
+        "targets": 29,
+        "training": 1106,
+        "data_bits": 286.13485679344467
+      },
+      {
+        "medium": "4",
+        "targets": 1,
+        "training": 1149,
+        "data_bits": 20.526937804350588
+      },
+      {
+        "medium": "5",
+        "targets": 31,
+        "training": 1117,
+        "data_bits": 707.2991577827884
+      },
+      {
+        "medium": "7",
+        "targets": 8,
+        "training": 1139,
+        "data_bits": 200.66916224476202
+      }
+    ],
+    "full_parameter_bits": 75152.47122491528
+  },
+  "site": {
+    "folds": [
+      {
+        "fold": 0,
+        "targets": 249,
+        "data_bits": 898.3517032321395,
+        "parameter_bits": 2473.4765905450117,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 1,
+        "targets": 217,
+        "data_bits": 1008.1895621022334,
+        "parameter_bits": 2338.178785191867,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 2,
+        "targets": 238,
+        "data_bits": 797.03463091048,
+        "parameter_bits": 2566.3842936969977,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 3,
+        "targets": 216,
+        "data_bits": 862.0967376124604,
+        "parameter_bits": 2368.1468975303187,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 4,
+        "targets": 230,
+        "data_bits": 737.1683624085294,
+        "parameter_bits": 2569.672903296482,
+        "rule_bits": 3.169925001442312
+      }
+    ],
+    "family_holdout_bits": 4302.8409962658425,
+    "medium_transfer": [
+      {
+        "medium": "1",
+        "targets": 988,
+        "training": 142,
+        "data_bits": 5728.751747896356
+      },
+      {
+        "medium": "2",
+        "targets": 93,
+        "training": 1036,
+        "data_bits": 1254.4237184406447
+      },
+      {
+        "medium": "3",
+        "targets": 29,
+        "training": 1106,
+        "data_bits": 219.11172923074417
+      },
+      {
+        "medium": "4",
+        "targets": 1,
+        "training": 1149,
+        "data_bits": 17.77154765667314
+      },
+      {
+        "medium": "5",
+        "targets": 31,
+        "training": 1117,
+        "data_bits": 572.2925746085973
+      },
+      {
+        "medium": "7",
+        "targets": 8,
+        "training": 1139,
+        "data_bits": 153.17278937973919
+      }
+    ],
+    "full_parameter_bits": 2897.714171562045
+  },
+  "medium": {
+    "folds": [
+      {
+        "fold": 0,
+        "targets": 249,
+        "data_bits": 858.1025886663809,
+        "parameter_bits": 2473.4765905450117,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 1,
+        "targets": 217,
+        "data_bits": 924.709319261817,
+        "parameter_bits": 2338.178785191867,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 2,
+        "targets": 238,
+        "data_bits": 733.3265386136313,
+        "parameter_bits": 2566.3842936969977,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 3,
+        "targets": 216,
+        "data_bits": 794.2930381563497,
+        "parameter_bits": 1973.4557479419323,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 4,
+        "targets": 230,
+        "data_bits": 696.9874799997021,
+        "parameter_bits": 2569.672903296482,
+        "rule_bits": 3.169925001442312
+      }
+    ],
+    "family_holdout_bits": 4007.418964697881,
+    "medium_transfer": [
+      {
+        "medium": "1",
+        "targets": 988,
+        "training": 142,
+        "data_bits": 4920.560368698518
+      },
+      {
+        "medium": "2",
+        "targets": 93,
+        "training": 1036,
+        "data_bits": 1027.5765286145918
+      },
+      {
+        "medium": "3",
+        "targets": 29,
+        "training": 1106,
+        "data_bits": 256.57399264867576
+      },
+      {
+        "medium": "4",
+        "targets": 1,
+        "training": 1149,
+        "data_bits": 10.166068138611468
+      },
+      {
+        "medium": "5",
+        "targets": 31,
+        "training": 1117,
+        "data_bits": 448.23720441757104
+      },
+      {
+        "medium": "7",
+        "targets": 8,
+        "training": 1139,
+        "data_bits": 125.08217524704459
+      }
+    ],
+    "full_parameter_bits": 2897.714171562045
+  },
+  "context": {
+    "folds": [
+      {
+        "fold": 0,
+        "targets": 249,
+        "data_bits": 954.6962247076418,
+        "parameter_bits": 57145.16154822642,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 1,
+        "targets": 217,
+        "data_bits": 1057.526377379323,
+        "parameter_bits": 52480.76813429593,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 2,
+        "targets": 238,
+        "data_bits": 881.0441419747794,
+        "parameter_bits": 58402.45023913148,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 3,
+        "targets": 216,
+        "data_bits": 806.0576389801452,
+        "parameter_bits": 54743.6624479092,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 4,
+        "targets": 230,
+        "data_bits": 739.6728134917744,
+        "parameter_bits": 58044.08659534257,
+        "rule_bits": 3.169925001442312
+      }
+    ],
+    "family_holdout_bits": 4438.997196533664,
+    "medium_transfer": [
+      {
+        "medium": "1",
+        "targets": 988,
+        "training": 142,
+        "data_bits": 5202.718198586668
+      },
+      {
+        "medium": "2",
+        "targets": 93,
+        "training": 1036,
+        "data_bits": 1148.212172646659
+      },
+      {
+        "medium": "3",
+        "targets": 29,
+        "training": 1106,
+        "data_bits": 223.1672850227074
+      },
+      {
+        "medium": "4",
+        "targets": 1,
+        "training": 1149,
+        "data_bits": 17.737613832299015
+      },
+      {
+        "medium": "5",
+        "targets": 31,
+        "training": 1117,
+        "data_bits": 593.8225597684453
+      },
+      {
+        "medium": "7",
+        "targets": 8,
+        "training": 1139,
+        "data_bits": 163.9043777985454
+      }
+    ],
+    "full_parameter_bits": 68319.96623091635
+  },
+  "components_context": {
+    "folds": [
+      {
+        "fold": 0,
+        "targets": 249,
+        "data_bits": 2044.767401451765,
+        "parameter_bits": 815530.7518992594,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 1,
+        "targets": 217,
+        "data_bits": 2177.7639815383263,
+        "parameter_bits": 779387.9955306535,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 2,
+        "targets": 238,
+        "data_bits": 1991.616654040097,
+        "parameter_bits": 830244.984791007,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 3,
+        "targets": 216,
+        "data_bits": 1635.4294637458634,
+        "parameter_bits": 771270.9090500359,
+        "rule_bits": 3.169925001442312
+      },
+      {
+        "fold": 4,
+        "targets": 230,
+        "data_bits": 1576.6198186445556,
+        "parameter_bits": 857734.1704932485,
+        "rule_bits": 3.169925001442312
+      }
+    ],
+    "family_holdout_bits": 9426.197319420608,
+    "medium_transfer": [
+      {
+        "medium": "1",
+        "targets": 988,
+        "training": 142,
+        "data_bits": 4805.123995746314
+      },
+      {
+        "medium": "2",
+        "targets": 93,
+        "training": 1036,
+        "data_bits": 2255.3373107091297
+      },
+      {
+        "medium": "3",
+        "targets": 29,
+        "training": 1106,
+        "data_bits": 575.8332331170044
+      },
+      {
+        "medium": "4",
+        "targets": 1,
+        "training": 1149,
+        "data_bits": 23.30122436157673
+      },
+      {
+        "medium": "5",
+        "targets": 31,
+        "training": 1117,
+        "data_bits": 1156.2246754414837
+      },
+      {
+        "medium": "7",
+        "targets": 8,
+        "training": 1139,
+        "data_bits": 294.5067812931275
+      }
+    ],
+    "full_parameter_bits": 1085875.1742657567
+  }
+}

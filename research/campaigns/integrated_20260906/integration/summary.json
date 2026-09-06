@@ -1,0 +1,552 @@
+{
+  "source_sha256": "6a0c597986783c5da8fbcb0afc3268a2c6a9f042a9b81746ebc4f89158efbd01",
+  "models": {
+    "categorical_identity": {
+      "pairs": [],
+      "marker": null,
+      "rule_bits": 0
+    },
+    "fish211": {
+      "pairs": [
+        [
+          59,
+          60
+        ],
+        [
+          65,
+          66
+        ],
+        [
+          67,
+          68
+        ],
+        [
+          70,
+          71
+        ],
+        [
+          72,
+          73
+        ]
+      ],
+      "marker": "211",
+      "rule_bits": 11
+    },
+    "all_four_stroke211": {
+      "pairs": [
+        [
+          59,
+          60
+        ],
+        [
+          65,
+          66
+        ],
+        [
+          67,
+          68
+        ],
+        [
+          70,
+          71
+        ],
+        [
+          72,
+          73
+        ],
+        [
+          89,
+          88
+        ],
+        [
+          141,
+          143
+        ],
+        [
+          162,
+          164
+        ],
+        [
+          178,
+          179
+        ],
+        [
+          204,
+          207
+        ],
+        [
+          219,
+          220
+        ],
+        [
+          249,
+          250
+        ],
+        [
+          277,
+          278
+        ],
+        [
+          280,
+          281
+        ],
+        [
+          284,
+          285
+        ],
+        [
+          287,
+          289
+        ],
+        [
+          290,
+          291
+        ],
+        [
+          307,
+          308
+        ],
+        [
+          387,
+          388
+        ],
+        [
+          389,
+          390
+        ],
+        [
+          391,
+          392
+        ],
+        [
+          403,
+          404
+        ]
+      ],
+      "marker": "211",
+      "rule_bits": 12
+    },
+    "fish342": {
+      "pairs": [
+        [
+          59,
+          60
+        ],
+        [
+          65,
+          66
+        ],
+        [
+          67,
+          68
+        ],
+        [
+          70,
+          71
+        ],
+        [
+          72,
+          73
+        ]
+      ],
+      "marker": "342",
+      "rule_bits": 11
+    },
+    "fish_unmarked_category": {
+      "pairs": [
+        [
+          59,
+          60
+        ],
+        [
+          65,
+          66
+        ],
+        [
+          67,
+          68
+        ],
+        [
+          70,
+          71
+        ],
+        [
+          72,
+          73
+        ]
+      ],
+      "marker": null,
+      "rule_bits": 2
+    },
+    "fish_roof87": {
+      "pairs": [],
+      "marker": null,
+      "rule_bits": 11,
+      "overrides": {
+        "65": [
+          "87",
+          "59"
+        ],
+        "66": [
+          "87",
+          "60"
+        ]
+      }
+    },
+    "fish_roof87_tick211": {
+      "pairs": [
+        [
+          59,
+          60
+        ],
+        [
+          65,
+          66
+        ],
+        [
+          67,
+          68
+        ],
+        [
+          70,
+          71
+        ],
+        [
+          72,
+          73
+        ]
+      ],
+      "marker": "211",
+      "rule_bits": 22,
+      "overrides": {
+        "65": [
+          "87",
+          "59"
+        ],
+        "66": [
+          "87",
+          "59",
+          "211"
+        ]
+      }
+    },
+    "fish_roof102_tick211": {
+      "pairs": [
+        [
+          59,
+          60
+        ],
+        [
+          65,
+          66
+        ],
+        [
+          67,
+          68
+        ],
+        [
+          70,
+          71
+        ],
+        [
+          72,
+          73
+        ]
+      ],
+      "marker": "211",
+      "rule_bits": 22,
+      "overrides": {
+        "65": [
+          "102",
+          "59"
+        ],
+        "66": [
+          "102",
+          "59",
+          "211"
+        ]
+      }
+    }
+  },
+  "summaries": [
+    {
+      "model": "categorical_identity",
+      "channel": "field_symbol_code",
+      "objects_or_faces": 1175,
+      "distinct_expression_target_context_types": 1077,
+      "object_weighted_nll_bits": 3648.453067498132,
+      "type_weighted_nll_bits": 3087.2044205799484,
+      "rule_bits": 0,
+      "type_weighted_total_bits": 3087.2044205799484,
+      "cross_spelling_predictions": 0,
+      "correct": 737
+    },
+    {
+      "model": "categorical_identity",
+      "channel": "companion_cup_strokes",
+      "objects_or_faces": 85,
+      "distinct_expression_target_context_types": 51,
+      "object_weighted_nll_bits": 135.36546260166824,
+      "type_weighted_nll_bits": 82.37050698585641,
+      "rule_bits": 0,
+      "type_weighted_total_bits": 82.37050698585641,
+      "cross_spelling_predictions": 0,
+      "correct": 35
+    },
+    {
+      "model": "fish211",
+      "channel": "field_symbol_code",
+      "objects_or_faces": 1175,
+      "distinct_expression_target_context_types": 1077,
+      "object_weighted_nll_bits": 3643.118165227216,
+      "type_weighted_nll_bits": 3084.084694676985,
+      "rule_bits": 11,
+      "type_weighted_total_bits": 3095.084694676985,
+      "cross_spelling_predictions": 12,
+      "correct": 739
+    },
+    {
+      "model": "fish211",
+      "channel": "companion_cup_strokes",
+      "objects_or_faces": 85,
+      "distinct_expression_target_context_types": 51,
+      "object_weighted_nll_bits": 135.36546260166824,
+      "type_weighted_nll_bits": 82.37050698585641,
+      "rule_bits": 11,
+      "type_weighted_total_bits": 93.37050698585641,
+      "cross_spelling_predictions": 0,
+      "correct": 35
+    },
+    {
+      "model": "all_four_stroke211",
+      "channel": "field_symbol_code",
+      "objects_or_faces": 1175,
+      "distinct_expression_target_context_types": 1077,
+      "object_weighted_nll_bits": 3643.118165227216,
+      "type_weighted_nll_bits": 3084.084694676985,
+      "rule_bits": 12,
+      "type_weighted_total_bits": 3096.084694676985,
+      "cross_spelling_predictions": 12,
+      "correct": 739
+    },
+    {
+      "model": "all_four_stroke211",
+      "channel": "companion_cup_strokes",
+      "objects_or_faces": 85,
+      "distinct_expression_target_context_types": 51,
+      "object_weighted_nll_bits": 135.36546260166824,
+      "type_weighted_nll_bits": 82.37050698585641,
+      "rule_bits": 12,
+      "type_weighted_total_bits": 94.37050698585641,
+      "cross_spelling_predictions": 0,
+      "correct": 35
+    },
+    {
+      "model": "fish342",
+      "channel": "field_symbol_code",
+      "objects_or_faces": 1175,
+      "distinct_expression_target_context_types": 1077,
+      "object_weighted_nll_bits": 3648.453067498132,
+      "type_weighted_nll_bits": 3087.2044205799484,
+      "rule_bits": 11,
+      "type_weighted_total_bits": 3098.2044205799484,
+      "cross_spelling_predictions": 0,
+      "correct": 737
+    },
+    {
+      "model": "fish342",
+      "channel": "companion_cup_strokes",
+      "objects_or_faces": 85,
+      "distinct_expression_target_context_types": 51,
+      "object_weighted_nll_bits": 135.36546260166824,
+      "type_weighted_nll_bits": 82.37050698585641,
+      "rule_bits": 11,
+      "type_weighted_total_bits": 93.37050698585641,
+      "cross_spelling_predictions": 0,
+      "correct": 35
+    },
+    {
+      "model": "fish_unmarked_category",
+      "channel": "field_symbol_code",
+      "objects_or_faces": 1175,
+      "distinct_expression_target_context_types": 1077,
+      "object_weighted_nll_bits": 3652.3778800017376,
+      "type_weighted_nll_bits": 3091.1292330835545,
+      "rule_bits": 2,
+      "type_weighted_total_bits": 3093.1292330835545,
+      "cross_spelling_predictions": 5,
+      "correct": 737
+    },
+    {
+      "model": "fish_unmarked_category",
+      "channel": "companion_cup_strokes",
+      "objects_or_faces": 85,
+      "distinct_expression_target_context_types": 51,
+      "object_weighted_nll_bits": 135.36546260166824,
+      "type_weighted_nll_bits": 82.37050698585641,
+      "rule_bits": 2,
+      "type_weighted_total_bits": 84.37050698585641,
+      "cross_spelling_predictions": 0,
+      "correct": 35
+    },
+    {
+      "model": "fish_roof87",
+      "channel": "field_symbol_code",
+      "objects_or_faces": 1175,
+      "distinct_expression_target_context_types": 1077,
+      "object_weighted_nll_bits": 3648.453067498132,
+      "type_weighted_nll_bits": 3087.2044205799484,
+      "rule_bits": 11,
+      "type_weighted_total_bits": 3098.2044205799484,
+      "cross_spelling_predictions": 0,
+      "correct": 737
+    },
+    {
+      "model": "fish_roof87",
+      "channel": "companion_cup_strokes",
+      "objects_or_faces": 85,
+      "distinct_expression_target_context_types": 51,
+      "object_weighted_nll_bits": 136.53538760311056,
+      "type_weighted_nll_bits": 83.54043198729872,
+      "rule_bits": 11,
+      "type_weighted_total_bits": 94.54043198729872,
+      "cross_spelling_predictions": 2,
+      "correct": 35
+    },
+    {
+      "model": "fish_roof87_tick211",
+      "channel": "field_symbol_code",
+      "objects_or_faces": 1175,
+      "distinct_expression_target_context_types": 1077,
+      "object_weighted_nll_bits": 3647.042977730822,
+      "type_weighted_nll_bits": 3087.4245446798695,
+      "rule_bits": 22,
+      "type_weighted_total_bits": 3109.4245446798695,
+      "cross_spelling_predictions": 18,
+      "correct": 739
+    },
+    {
+      "model": "fish_roof87_tick211",
+      "channel": "companion_cup_strokes",
+      "objects_or_faces": 85,
+      "distinct_expression_target_context_types": 51,
+      "object_weighted_nll_bits": 136.53538760311056,
+      "type_weighted_nll_bits": 83.54043198729872,
+      "rule_bits": 22,
+      "type_weighted_total_bits": 105.54043198729872,
+      "cross_spelling_predictions": 2,
+      "correct": 35
+    },
+    {
+      "model": "fish_roof102_tick211",
+      "channel": "field_symbol_code",
+      "objects_or_faces": 1175,
+      "distinct_expression_target_context_types": 1077,
+      "object_weighted_nll_bits": 3645.3632777250527,
+      "type_weighted_nll_bits": 3085.9147696755426,
+      "rule_bits": 22,
+      "type_weighted_total_bits": 3107.9147696755426,
+      "cross_spelling_predictions": 13,
+      "correct": 739
+    },
+    {
+      "model": "fish_roof102_tick211",
+      "channel": "companion_cup_strokes",
+      "objects_or_faces": 85,
+      "distinct_expression_target_context_types": 51,
+      "object_weighted_nll_bits": 135.36546260166824,
+      "type_weighted_nll_bits": 82.37050698585641,
+      "rule_bits": 22,
+      "type_weighted_total_bits": 104.37050698585641,
+      "cross_spelling_predictions": 0,
+      "correct": 35
+    }
+  ],
+  "joint": [
+    {
+      "model": "categorical_identity",
+      "channel_data_bits": {
+        "field_symbol_code": 3087.2044205799484,
+        "companion_cup_strokes": 82.37050698585641
+      },
+      "rule_bits_once": 0,
+      "total_bits": 3169.574927565805,
+      "interpretation": "conditional composite descriptive score; channels may share production causes, not independent confirmation"
+    },
+    {
+      "model": "fish211",
+      "channel_data_bits": {
+        "field_symbol_code": 3084.084694676985,
+        "companion_cup_strokes": 82.37050698585641
+      },
+      "rule_bits_once": 11,
+      "total_bits": 3177.4552016628413,
+      "interpretation": "conditional composite descriptive score; channels may share production causes, not independent confirmation"
+    },
+    {
+      "model": "all_four_stroke211",
+      "channel_data_bits": {
+        "field_symbol_code": 3084.084694676985,
+        "companion_cup_strokes": 82.37050698585641
+      },
+      "rule_bits_once": 12,
+      "total_bits": 3178.4552016628413,
+      "interpretation": "conditional composite descriptive score; channels may share production causes, not independent confirmation"
+    },
+    {
+      "model": "fish342",
+      "channel_data_bits": {
+        "field_symbol_code": 3087.2044205799484,
+        "companion_cup_strokes": 82.37050698585641
+      },
+      "rule_bits_once": 11,
+      "total_bits": 3180.574927565805,
+      "interpretation": "conditional composite descriptive score; channels may share production causes, not independent confirmation"
+    },
+    {
+      "model": "fish_unmarked_category",
+      "channel_data_bits": {
+        "field_symbol_code": 3091.1292330835545,
+        "companion_cup_strokes": 82.37050698585641
+      },
+      "rule_bits_once": 2,
+      "total_bits": 3175.499740069411,
+      "interpretation": "conditional composite descriptive score; channels may share production causes, not independent confirmation"
+    },
+    {
+      "model": "fish_roof87",
+      "channel_data_bits": {
+        "field_symbol_code": 3087.2044205799484,
+        "companion_cup_strokes": 83.54043198729872
+      },
+      "rule_bits_once": 11,
+      "total_bits": 3181.744852567247,
+      "interpretation": "conditional composite descriptive score; channels may share production causes, not independent confirmation"
+    },
+    {
+      "model": "fish_roof87_tick211",
+      "channel_data_bits": {
+        "field_symbol_code": 3087.4245446798695,
+        "companion_cup_strokes": 83.54043198729872
+      },
+      "rule_bits_once": 22,
+      "total_bits": 3192.9649766671682,
+      "interpretation": "conditional composite descriptive score; channels may share production causes, not independent confirmation"
+    },
+    {
+      "model": "fish_roof102_tick211",
+      "channel_data_bits": {
+        "field_symbol_code": 3085.9147696755426,
+        "companion_cup_strokes": 82.37050698585641
+      },
+      "rule_bits_once": 22,
+      "total_bits": 3190.285276661399,
+      "interpretation": "conditional composite descriptive score; channels may share production causes, not independent confirmation"
+    }
+  ],
+  "evaluation": "leave-complete-expression and all aliases/objects out; metadata background",
+  "prior_exposure": "retrospective; no new blind discovery test",
+  "decoding_scope": "no target word, pronunciation, or absolute unit is supplied by this test",
+  "code_costs": "relative descriptive costs for fixed prior graphical families, not calibrated Bayes factors",
+  "field_symbols": "raw catalogue field codes include motifs, uncertain animals and symbolic object shapes; no literal lexical labels inferred"
+}

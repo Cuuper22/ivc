@@ -1,0 +1,3827 @@
+{
+  "declared_graphical_lattices": [
+    {
+      "base": 59,
+      "roof": 65,
+      "tick": 60,
+      "roof_tick": 66,
+      "implied_roof_pair": [
+        60,
+        66
+      ]
+    }
+  ],
+  "incomplete_lattices": [
+    {
+      "base": 137,
+      "roof": 138,
+      "missing_declared_edges": [
+        "ticks(137)",
+        "ticks(138)"
+      ]
+    },
+    {
+      "base": 141,
+      "roof": 142,
+      "missing_declared_edges": [
+        "ticks(142)"
+      ]
+    },
+    {
+      "base": 158,
+      "roof": 159,
+      "missing_declared_edges": [
+        "ticks(158)",
+        "ticks(159)"
+      ]
+    },
+    {
+      "base": 162,
+      "roof": 163,
+      "missing_declared_edges": [
+        "ticks(163)"
+      ]
+    },
+    {
+      "base": 204,
+      "roof": 206,
+      "missing_declared_edges": [
+        "ticks(206)"
+      ]
+    },
+    {
+      "base": 328,
+      "roof": 334,
+      "missing_declared_edges": [
+        "ticks(328)",
+        "ticks(334)"
+      ]
+    },
+    {
+      "base": 410,
+      "roof": 411,
+      "missing_declared_edges": [
+        "ticks(410)",
+        "ticks(411)"
+      ]
+    }
+  ],
+  "folds": [
+    {
+      "lattice": {
+        "base": 59,
+        "roof": 65,
+        "tick": 60,
+        "roof_tick": 66,
+        "implied_roof_pair": [
+          60,
+          66
+        ]
+      },
+      "marker_order_trials": 834,
+      "training_min_context_signs": 2,
+      "prior_exposure": "Both target strings had already appeared separately in this campaign. Lattice hypothesis was proposed before dedicated pair search; test is retrospective.",
+      "alternatives": [
+        {
+          "marker": 53,
+          "side": "after",
+          "training_exact_contexts": 1,
+          "training_context_signs": 2,
+          "training_witness_pairs": [
+            {
+              "compact": [
+                "65",
+                "216",
+                "254"
+              ],
+              "expanded": [
+                "59",
+                "53",
+                "216",
+                "254"
+              ],
+              "compact_witnesses": [
+                {
+                  "index": 271,
+                  "textnum": "1269",
+                  "sideline": "0",
+                  "inscobj": "1",
+                  "locus": "24",
+                  "level": "-16",
+                  "dir": "1",
+                  "sequence": [
+                    "65",
+                    "216",
+                    "254"
+                  ]
+                }
+              ],
+              "expanded_witnesses": [
+                {
+                  "index": 578,
+                  "textnum": "1628",
+                  "sideline": "20",
+                  "inscobj": "2",
+                  "locus": "16",
+                  "level": "-6",
+                  "dir": "1",
+                  "sequence": [
+                    "59",
+                    "53",
+                    "216",
+                    "254"
+                  ]
+                }
+              ],
+              "family": "roof",
+              "base": 59,
+              "modified": 65,
+              "extra": 53,
+              "side": "after",
+              "unchanged_context_length": 2,
+              "position": 0
+            }
+          ],
+          "target_observed_exact_pairs": [],
+          "target_not_observed_status": "unknown; not negative"
+        },
+        {
+          "marker": 65,
+          "side": "before",
+          "training_exact_contexts": 1,
+          "training_context_signs": 2,
+          "training_witness_pairs": [
+            {
+              "compact": [
+                "65",
+                "48",
+                "342"
+              ],
+              "expanded": [
+                "65",
+                "59",
+                "48",
+                "342"
+              ],
+              "compact_witnesses": [
+                {
+                  "index": 1387,
+                  "textnum": "2821",
+                  "sideline": "10",
+                  "inscobj": "2",
+                  "locus": "31",
+                  "level": "-10",
+                  "dir": "1",
+                  "sequence": [
+                    "65",
+                    "48",
+                    "342"
+                  ]
+                }
+              ],
+              "expanded_witnesses": [
+                {
+                  "index": 2244,
+                  "textnum": "4343",
+                  "sideline": "20",
+                  "inscobj": "2",
+                  "locus": "42",
+                  "level": "-9",
+                  "dir": "1",
+                  "sequence": [
+                    "65",
+                    "59",
+                    "48",
+                    "342"
+                  ]
+                },
+                {
+                  "index": 3073,
+                  "textnum": "5237",
+                  "sideline": "20",
+                  "inscobj": "2",
+                  "locus": "42",
+                  "level": "-9",
+                  "dir": "1",
+                  "sequence": [
+                    "65",
+                    "59",
+                    "48",
+                    "342"
+                  ]
+                },
+                {
+                  "index": 3075,
+                  "textnum": "5238",
+                  "sideline": "20",
+                  "inscobj": "2",
+                  "locus": "42",
+                  "level": "-9",
+                  "dir": "1",
+                  "sequence": [
+                    "65",
+                    "59",
+                    "48",
+                    "342"
+                  ]
+                },
+                {
+                  "index": 3077,
+                  "textnum": "5239",
+                  "sideline": "20",
+                  "inscobj": "2",
+                  "locus": "42",
+                  "level": "-9",
+                  "dir": "1",
+                  "sequence": [
+                    "65",
+                    "59",
+                    "48",
+                    "342"
+                  ]
+                },
+                {
+                  "index": 3079,
+                  "textnum": "5240",
+                  "sideline": "20",
+                  "inscobj": "2",
+                  "locus": "42",
+                  "level": "-9",
+                  "dir": "1",
+                  "sequence": [
+                    "65",
+                    "59",
+                    "48",
+                    "342"
+                  ]
+                }
+              ],
+              "family": "roof",
+              "base": 59,
+              "modified": 65,
+              "extra": 65,
+              "side": "before",
+              "unchanged_context_length": 2,
+              "position": 0
+            }
+          ],
+          "target_observed_exact_pairs": [],
+          "target_not_observed_status": "unknown; not negative"
+        },
+        {
+          "marker": 87,
+          "side": "before",
+          "training_exact_contexts": 2,
+          "training_context_signs": 4,
+          "training_witness_pairs": [
+            {
+              "compact": [
+                "65",
+                "348",
+                "342"
+              ],
+              "expanded": [
+                "87",
+                "59",
+                "348",
+                "342"
+              ],
+              "compact_witnesses": [
+                {
+                  "index": 377,
+                  "textnum": "1374",
+                  "sideline": "0",
+                  "inscobj": "1",
+                  "locus": "17",
+                  "level": "-2",
+                  "dir": "1",
+                  "sequence": [
+                    "65",
+                    "348",
+                    "342"
+                  ]
+                }
+              ],
+              "expanded_witnesses": [
+                {
+                  "index": 1490,
+                  "textnum": "2913",
+                  "sideline": "10",
+                  "inscobj": "5",
+                  "locus": "31",
+                  "level": "-6",
+                  "dir": "1",
+                  "sequence": [
+                    "87",
+                    "59",
+                    "348",
+                    "342"
+                  ]
+                }
+              ],
+              "family": "roof",
+              "base": 59,
+              "modified": 65,
+              "extra": 87,
+              "side": "before",
+              "unchanged_context_length": 2,
+              "position": 0
+            },
+            {
+              "compact": [
+                "65",
+                "48",
+                "342"
+              ],
+              "expanded": [
+                "87",
+                "59",
+                "48",
+                "342"
+              ],
+              "compact_witnesses": [
+                {
+                  "index": 1387,
+                  "textnum": "2821",
+                  "sideline": "10",
+                  "inscobj": "2",
+                  "locus": "31",
+                  "level": "-10",
+                  "dir": "1",
+                  "sequence": [
+                    "65",
+                    "48",
+                    "342"
+                  ]
+                }
+              ],
+              "expanded_witnesses": [
+                {
+                  "index": 1475,
+                  "textnum": "2905",
+                  "sideline": "20",
+                  "inscobj": "5",
+                  "locus": "31",
+                  "level": "-12",
+                  "dir": "1",
+                  "sequence": [
+                    "87",
+                    "59",
+                    "48",
+                    "342"
+                  ]
+                },
+                {
+                  "index": 1477,
+                  "textnum": "2906",
+                  "sideline": "20",
+                  "inscobj": "5",
+                  "locus": "31",
+                  "level": "-10",
+                  "dir": "1",
+                  "sequence": [
+                    "87",
+                    "59",
+                    "48",
+                    "342"
+                  ]
+                }
+              ],
+              "family": "roof",
+              "base": 59,
+              "modified": 65,
+              "extra": 87,
+              "side": "before",
+              "unchanged_context_length": 2,
+              "position": 0
+            }
+          ],
+          "target_observed_exact_pairs": [
+            {
+              "compact": [
+                "267",
+                "99",
+                "66"
+              ],
+              "expanded": [
+                "267",
+                "99",
+                "87",
+                "60"
+              ],
+              "compact_witnesses": [
+                {
+                  "index": 3694,
+                  "textnum": "7249",
+                  "sideline": "20",
+                  "inscobj": "2",
+                  "locus": "79",
+                  "level": "0",
+                  "dir": "1",
+                  "sequence": [
+                    "267",
+                    "99",
+                    "66"
+                  ],
+                  "row_id": "M77:7249:20",
+                  "object_id": "M77:7249"
+                },
+                {
+                  "index": 3696,
+                  "textnum": "7251",
+                  "sideline": "20",
+                  "inscobj": "2",
+                  "locus": "79",
+                  "level": "0",
+                  "dir": "1",
+                  "sequence": [
+                    "267",
+                    "99",
+                    "66"
+                  ],
+                  "row_id": "M77:7251:20",
+                  "object_id": "M77:7251"
+                },
+                {
+                  "index": 3701,
+                  "textnum": "7255",
+                  "sideline": "0",
+                  "inscobj": "2",
+                  "locus": "79",
+                  "level": "0",
+                  "dir": "1",
+                  "sequence": [
+                    "267",
+                    "99",
+                    "66"
+                  ],
+                  "row_id": "M77:7255:0",
+                  "object_id": "M77:7255"
+                },
+                {
+                  "index": 3715,
+                  "textnum": "7267",
+                  "sideline": "20",
+                  "inscobj": "2",
+                  "locus": "79",
+                  "level": "0",
+                  "dir": "1",
+                  "sequence": [
+                    "267",
+                    "99",
+                    "66"
+                  ],
+                  "row_id": "M77:7267:20",
+                  "object_id": "M77:7267"
+                },
+                {
+                  "index": 3717,
+                  "textnum": "7269",
+                  "sideline": "0",
+                  "inscobj": "2",
+                  "locus": "79",
+                  "level": "0",
+                  "dir": "1",
+                  "sequence": [
+                    "267",
+                    "99",
+                    "66"
+                  ],
+                  "row_id": "M77:7269:0",
+                  "object_id": "M77:7269"
+                }
+              ],
+              "expanded_witnesses": [
+                {
+                  "index": 3497,
+                  "textnum": "6211",
+                  "sideline": "0",
+                  "inscobj": "1",
+                  "locus": "62",
+                  "level": "7",
+                  "dir": "1",
+                  "sequence": [
+                    "267",
+                    "99",
+                    "87",
+                    "60"
+                  ],
+                  "row_id": "M77:6211:0",
+                  "object_id": "M77:6211"
+                }
+              ],
+              "unchanged_context": 2
+            }
+          ],
+          "target_not_observed_status": "unknown; not negative"
+        },
+        {
+          "marker": 102,
+          "side": "before",
+          "training_exact_contexts": 2,
+          "training_context_signs": 6,
+          "training_witness_pairs": [
+            {
+              "compact": [
+                "65",
+                "249",
+                "162",
+                "342"
+              ],
+              "expanded": [
+                "102",
+                "59",
+                "249",
+                "162",
+                "342"
+              ],
+              "compact_witnesses": [
+                {
+                  "index": 3052,
+                  "textnum": "5222",
+                  "sideline": "10",
+                  "inscobj": "2",
+                  "locus": "53",
+                  "level": "-3",
+                  "dir": "1",
+                  "sequence": [
+                    "65",
+                    "249",
+                    "162",
+                    "342"
+                  ]
+                },
+                {
+                  "index": 3054,
+                  "textnum": "5223",
+                  "sideline": "10",
+                  "inscobj": "2",
+                  "locus": "42",
+                  "level": "-13",
+                  "dir": "1",
+                  "sequence": [
+                    "65",
+                    "249",
+                    "162",
+                    "342"
+                  ]
+                },
+                {
+                  "index": 3153,
+                  "textnum": "5286",
+                  "sideline": "10",
+                  "inscobj": "2",
+                  "locus": "59",
+                  "level": "0",
+                  "dir": "1",
+                  "sequence": [
+                    "65",
+                    "249",
+                    "162",
+                    "342"
+                  ]
+                }
+              ],
+              "expanded_witnesses": [
+                {
+                  "index": 1228,
+                  "textnum": "2594",
+                  "sideline": "0",
+                  "inscobj": "1",
+                  "locus": "31",
+                  "level": "-18",
+                  "dir": "1",
+                  "sequence": [
+                    "102",
+                    "59",
+                    "249",
+                    "162",
+                    "342"
+                  ]
+                }
+              ],
+              "family": "roof",
+              "base": 59,
+              "modified": 65,
+              "extra": 102,
+              "side": "before",
+              "unchanged_context_length": 3,
+              "position": 0
+            },
+            {
+              "compact": [
+                "65",
+                "249",
+                "169",
+                "342"
+              ],
+              "expanded": [
+                "102",
+                "59",
+                "249",
+                "169",
+                "342"
+              ],
+              "compact_witnesses": [
+                {
+                  "index": 42,
+                  "textnum": "1040",
+                  "sideline": "0",
+                  "inscobj": "1",
+                  "locus": "26",
+                  "level": "-4",
+                  "dir": "1",
+                  "sequence": [
+                    "65",
+                    "249",
+                    "169",
+                    "342"
+                  ]
+                }
+              ],
+              "expanded_witnesses": [
+                {
+                  "index": 1468,
+                  "textnum": "2902",
+                  "sideline": "20",
+                  "inscobj": "5",
+                  "locus": "31",
+                  "level": "-11",
+                  "dir": "1",
+                  "sequence": [
+                    "102",
+                    "59",
+                    "249",
+                    "169",
+                    "342"
+                  ]
+                }
+              ],
+              "family": "roof",
+              "base": 59,
+              "modified": 65,
+              "extra": 102,
+              "side": "before",
+              "unchanged_context_length": 3,
+              "position": 0
+            }
+          ],
+          "target_observed_exact_pairs": [],
+          "target_not_observed_status": "unknown; not negative"
+        }
+      ],
+      "excluded_object_ids": [
+        "M77:1048",
+        "M77:1066",
+        "M77:1125",
+        "M77:1147",
+        "M77:1177",
+        "M77:1316",
+        "M77:1348",
+        "M77:1403",
+        "M77:1425",
+        "M77:2041",
+        "M77:2185",
+        "M77:2211",
+        "M77:2234",
+        "M77:2307",
+        "M77:2316",
+        "M77:2340",
+        "M77:2432",
+        "M77:2456",
+        "M77:2585",
+        "M77:2645",
+        "M77:3112",
+        "M77:3157",
+        "M77:4493",
+        "M77:4556",
+        "M77:4806",
+        "M77:5321",
+        "M77:5477",
+        "M77:6116",
+        "M77:6211",
+        "M77:7025",
+        "M77:7028",
+        "M77:7249",
+        "M77:7251",
+        "M77:7255",
+        "M77:7267",
+        "M77:7269",
+        "M77:9021",
+        "M77:9201"
+      ],
+      "conclusion": "87 and102 each have two old exact training contexts. Only87 has an observed exact counterpart in the withheld marked lattice; unobserved102 alternative is not falsified."
+    }
+  ],
+  "candidate_normal_form_classes": {
+    "fish211": [
+      {
+        "normal_form": [
+          "171",
+          "59",
+          "211"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "171",
+              "59",
+              "211"
+            ],
+            "witnesses": [
+              {
+                "index": 1615,
+                "textnum": "3103",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "35",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:3103:0",
+                "object_id": "M77:3103"
+              },
+              {
+                "index": 2339,
+                "textnum": "4408",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "44",
+                "level": "-8",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4408:10",
+                "object_id": "M77:4408"
+              },
+              {
+                "index": 2346,
+                "textnum": "4412",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "41",
+                "level": "-14",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4412:10",
+                "object_id": "M77:4412"
+              },
+              {
+                "index": 2357,
+                "textnum": "4418",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "41",
+                "level": "-14",
+                "dir": "2",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4418:10",
+                "object_id": "M77:4418"
+              },
+              {
+                "index": 2424,
+                "textnum": "4453",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "40",
+                "level": "-11",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4453:10",
+                "object_id": "M77:4453"
+              },
+              {
+                "index": 2434,
+                "textnum": "4458",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "45",
+                "level": "-6",
+                "dir": "2",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4458:10",
+                "object_id": "M77:4458"
+              },
+              {
+                "index": 2447,
+                "textnum": "4464",
+                "sideline": "20",
+                "inscobj": "3",
+                "locus": "40",
+                "level": "-15",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4464:20",
+                "object_id": "M77:4464"
+              },
+              {
+                "index": 2587,
+                "textnum": "4544",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "41",
+                "level": "-6",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4544:10",
+                "object_id": "M77:4544"
+              },
+              {
+                "index": 2744,
+                "textnum": "4635",
+                "sideline": "20",
+                "inscobj": "3",
+                "locus": "42",
+                "level": "-18",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4635:20",
+                "object_id": "M77:4635"
+              },
+              {
+                "index": 3201,
+                "textnum": "5320",
+                "sideline": "20",
+                "inscobj": "2",
+                "locus": "59",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:5320:20",
+                "object_id": "M77:5320"
+              },
+              {
+                "index": 3334,
+                "textnum": "5450",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "42",
+                "level": "-12",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:5450:10",
+                "object_id": "M77:5450"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "171",
+              "60"
+            ],
+            "witnesses": [
+              {
+                "index": 182,
+                "textnum": "1177",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "20",
+                "level": "-5",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "60"
+                ],
+                "row_id": "M77:1177:0",
+                "object_id": "M77:1177"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "267",
+          "99",
+          "87",
+          "59",
+          "211"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "267",
+              "99",
+              "87",
+              "59",
+              "211"
+            ],
+            "witnesses": [
+              {
+                "index": 526,
+                "textnum": "1551",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "17",
+                "level": "-3",
+                "dir": "1",
+                "sequence": [
+                  "267",
+                  "99",
+                  "87",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:1551:0",
+                "object_id": "M77:1551"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "267",
+              "99",
+              "87",
+              "60"
+            ],
+            "witnesses": [
+              {
+                "index": 3497,
+                "textnum": "6211",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "62",
+                "level": "7",
+                "dir": "1",
+                "sequence": [
+                  "267",
+                  "99",
+                  "87",
+                  "60"
+                ],
+                "row_id": "M77:6211:0",
+                "object_id": "M77:6211"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "65",
+          "211"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "65",
+              "211"
+            ],
+            "witnesses": [
+              {
+                "index": 1431,
+                "textnum": "2852",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "31",
+                "level": "-19",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "211"
+                ],
+                "row_id": "M77:2852:10",
+                "object_id": "M77:2852"
+              },
+              {
+                "index": 572,
+                "textnum": "1625",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "17",
+                "level": "-10",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "211"
+                ],
+                "row_id": "M77:1625:10",
+                "object_id": "M77:1625"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "66"
+            ],
+            "witnesses": [
+              {
+                "index": 319,
+                "textnum": "1316",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "14",
+                "level": "-4",
+                "dir": "3",
+                "sequence": [
+                  "66"
+                ],
+                "row_id": "M77:1316:0",
+                "object_id": "M77:1316"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "65",
+          "67",
+          "211"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "65",
+              "67",
+              "211"
+            ],
+            "witnesses": [
+              {
+                "index": 2149,
+                "textnum": "4285",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "43",
+                "level": "-8",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "67",
+                  "211"
+                ],
+                "row_id": "M77:4285:0",
+                "object_id": "M77:4285"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "65",
+              "68"
+            ],
+            "witnesses": [
+              {
+                "index": 1587,
+                "textnum": "3070",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "33",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "68"
+                ],
+                "row_id": "M77:3070:0",
+                "object_id": "M77:3070"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "72",
+          "211"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "72",
+              "211"
+            ],
+            "witnesses": [
+              {
+                "index": 2300,
+                "textnum": "4374",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "44",
+                "level": "-6",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211"
+                ],
+                "row_id": "M77:4374:10",
+                "object_id": "M77:4374"
+              },
+              {
+                "index": 2372,
+                "textnum": "4428",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "41",
+                "level": "-10",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211"
+                ],
+                "row_id": "M77:4428:10",
+                "object_id": "M77:4428"
+              },
+              {
+                "index": 260,
+                "textnum": "1254",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "25",
+                "level": "-5",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211"
+                ],
+                "row_id": "M77:1254:0",
+                "object_id": "M77:1254"
+              },
+              {
+                "index": 2600,
+                "textnum": "4551",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "42",
+                "level": "-10",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211"
+                ],
+                "row_id": "M77:4551:10",
+                "object_id": "M77:4551"
+              },
+              {
+                "index": 264,
+                "textnum": "1261",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "28",
+                "level": "-6",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211"
+                ],
+                "row_id": "M77:1261:0",
+                "object_id": "M77:1261"
+              },
+              {
+                "index": 3422,
+                "textnum": "5496",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "59",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211"
+                ],
+                "row_id": "M77:5496:10",
+                "object_id": "M77:5496"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "73"
+            ],
+            "witnesses": [
+              {
+                "index": 839,
+                "textnum": "2226",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "31",
+                "level": "-8",
+                "dir": "3",
+                "sequence": [
+                  "73"
+                ],
+                "row_id": "M77:2226:0",
+                "object_id": "M77:2226"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "72",
+          "211",
+          "176"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "72",
+              "211",
+              "176"
+            ],
+            "witnesses": [
+              {
+                "index": 2788,
+                "textnum": "4659",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "41",
+                "level": "-12",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211",
+                  "176"
+                ],
+                "row_id": "M77:4659:10",
+                "object_id": "M77:4659"
+              },
+              {
+                "index": 2796,
+                "textnum": "4664",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "41",
+                "level": "-6",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211",
+                  "176"
+                ],
+                "row_id": "M77:4664:10",
+                "object_id": "M77:4664"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "73",
+              "176"
+            ],
+            "witnesses": [
+              {
+                "index": 2450,
+                "textnum": "4466",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "41",
+                "level": "-7",
+                "dir": "1",
+                "sequence": [
+                  "73",
+                  "176"
+                ],
+                "row_id": "M77:4466:10",
+                "object_id": "M77:4466"
+              },
+              {
+                "index": 2515,
+                "textnum": "4501",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "42",
+                "level": "-16",
+                "dir": "1",
+                "sequence": [
+                  "73",
+                  "176"
+                ],
+                "row_id": "M77:4501:10",
+                "object_id": "M77:4501"
+              },
+              {
+                "index": 2519,
+                "textnum": "4503",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "42",
+                "level": "-17",
+                "dir": "1",
+                "sequence": [
+                  "73",
+                  "176"
+                ],
+                "row_id": "M77:4503:10",
+                "object_id": "M77:4503"
+              },
+              {
+                "index": 3245,
+                "textnum": "5406",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "59",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "73",
+                  "176"
+                ],
+                "row_id": "M77:5406:10",
+                "object_id": "M77:5406"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "roof87": [
+      {
+        "normal_form": [
+          "267",
+          "99",
+          "87",
+          "60"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "267",
+              "99",
+              "66"
+            ],
+            "witnesses": [
+              {
+                "index": 3694,
+                "textnum": "7249",
+                "sideline": "20",
+                "inscobj": "2",
+                "locus": "79",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "267",
+                  "99",
+                  "66"
+                ],
+                "row_id": "M77:7249:20",
+                "object_id": "M77:7249"
+              },
+              {
+                "index": 3696,
+                "textnum": "7251",
+                "sideline": "20",
+                "inscobj": "2",
+                "locus": "79",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "267",
+                  "99",
+                  "66"
+                ],
+                "row_id": "M77:7251:20",
+                "object_id": "M77:7251"
+              },
+              {
+                "index": 3701,
+                "textnum": "7255",
+                "sideline": "0",
+                "inscobj": "2",
+                "locus": "79",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "267",
+                  "99",
+                  "66"
+                ],
+                "row_id": "M77:7255:0",
+                "object_id": "M77:7255"
+              },
+              {
+                "index": 3715,
+                "textnum": "7267",
+                "sideline": "20",
+                "inscobj": "2",
+                "locus": "79",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "267",
+                  "99",
+                  "66"
+                ],
+                "row_id": "M77:7267:20",
+                "object_id": "M77:7267"
+              },
+              {
+                "index": 3717,
+                "textnum": "7269",
+                "sideline": "0",
+                "inscobj": "2",
+                "locus": "79",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "267",
+                  "99",
+                  "66"
+                ],
+                "row_id": "M77:7269:0",
+                "object_id": "M77:7269"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "267",
+              "99",
+              "87",
+              "60"
+            ],
+            "witnesses": [
+              {
+                "index": 3497,
+                "textnum": "6211",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "62",
+                "level": "7",
+                "dir": "1",
+                "sequence": [
+                  "267",
+                  "99",
+                  "87",
+                  "60"
+                ],
+                "row_id": "M77:6211:0",
+                "object_id": "M77:6211"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "87",
+          "59",
+          "348",
+          "342"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "65",
+              "348",
+              "342"
+            ],
+            "witnesses": [
+              {
+                "index": 377,
+                "textnum": "1374",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "17",
+                "level": "-2",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "348",
+                  "342"
+                ],
+                "row_id": "M77:1374:0",
+                "object_id": "M77:1374"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "87",
+              "59",
+              "348",
+              "342"
+            ],
+            "witnesses": [
+              {
+                "index": 1490,
+                "textnum": "2913",
+                "sideline": "10",
+                "inscobj": "5",
+                "locus": "31",
+                "level": "-6",
+                "dir": "1",
+                "sequence": [
+                  "87",
+                  "59",
+                  "348",
+                  "342"
+                ],
+                "row_id": "M77:2913:10",
+                "object_id": "M77:2913"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "87",
+          "59",
+          "48",
+          "342"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "65",
+              "48",
+              "342"
+            ],
+            "witnesses": [
+              {
+                "index": 1387,
+                "textnum": "2821",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "31",
+                "level": "-10",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "48",
+                  "342"
+                ],
+                "row_id": "M77:2821:10",
+                "object_id": "M77:2821"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "87",
+              "59",
+              "48",
+              "342"
+            ],
+            "witnesses": [
+              {
+                "index": 1475,
+                "textnum": "2905",
+                "sideline": "20",
+                "inscobj": "5",
+                "locus": "31",
+                "level": "-12",
+                "dir": "1",
+                "sequence": [
+                  "87",
+                  "59",
+                  "48",
+                  "342"
+                ],
+                "row_id": "M77:2905:20",
+                "object_id": "M77:2905"
+              },
+              {
+                "index": 1477,
+                "textnum": "2906",
+                "sideline": "20",
+                "inscobj": "5",
+                "locus": "31",
+                "level": "-10",
+                "dir": "1",
+                "sequence": [
+                  "87",
+                  "59",
+                  "48",
+                  "342"
+                ],
+                "row_id": "M77:2906:20",
+                "object_id": "M77:2906"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "87",
+          "60",
+          "176"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "66",
+              "176"
+            ],
+            "witnesses": [
+              {
+                "index": 2503,
+                "textnum": "4493",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "45",
+                "level": "-6",
+                "dir": "1",
+                "sequence": [
+                  "66",
+                  "176"
+                ],
+                "row_id": "M77:4493:10",
+                "object_id": "M77:4493"
+              },
+              {
+                "index": 2886,
+                "textnum": "4806",
+                "sideline": "0",
+                "inscobj": "4",
+                "locus": "59",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "66",
+                  "176"
+                ],
+                "row_id": "M77:4806:0",
+                "object_id": "M77:4806"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "87",
+              "60",
+              "176"
+            ],
+            "witnesses": [
+              {
+                "index": 2610,
+                "textnum": "4556",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "40",
+                "level": "-5",
+                "dir": "1",
+                "sequence": [
+                  "87",
+                  "60",
+                  "176"
+                ],
+                "row_id": "M77:4556:10",
+                "object_id": "M77:4556"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "roof102": [
+      {
+        "normal_form": [
+          "102",
+          "59",
+          "211"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "102",
+              "59",
+              "211"
+            ],
+            "witnesses": [
+              {
+                "index": 369,
+                "textnum": "1365",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "17",
+                "level": "-3",
+                "dir": "1",
+                "sequence": [
+                  "102",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:1365:0",
+                "object_id": "M77:1365"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "65",
+              "211"
+            ],
+            "witnesses": [
+              {
+                "index": 1431,
+                "textnum": "2852",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "31",
+                "level": "-19",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "211"
+                ],
+                "row_id": "M77:2852:10",
+                "object_id": "M77:2852"
+              },
+              {
+                "index": 572,
+                "textnum": "1625",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "17",
+                "level": "-10",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "211"
+                ],
+                "row_id": "M77:1625:10",
+                "object_id": "M77:1625"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "102",
+          "59",
+          "249",
+          "162",
+          "342"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "102",
+              "59",
+              "249",
+              "162",
+              "342"
+            ],
+            "witnesses": [
+              {
+                "index": 1228,
+                "textnum": "2594",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "31",
+                "level": "-18",
+                "dir": "1",
+                "sequence": [
+                  "102",
+                  "59",
+                  "249",
+                  "162",
+                  "342"
+                ],
+                "row_id": "M77:2594:0",
+                "object_id": "M77:2594"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "65",
+              "249",
+              "162",
+              "342"
+            ],
+            "witnesses": [
+              {
+                "index": 3052,
+                "textnum": "5222",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "53",
+                "level": "-3",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "249",
+                  "162",
+                  "342"
+                ],
+                "row_id": "M77:5222:10",
+                "object_id": "M77:5222"
+              },
+              {
+                "index": 3054,
+                "textnum": "5223",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "42",
+                "level": "-13",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "249",
+                  "162",
+                  "342"
+                ],
+                "row_id": "M77:5223:10",
+                "object_id": "M77:5223"
+              },
+              {
+                "index": 3153,
+                "textnum": "5286",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "59",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "249",
+                  "162",
+                  "342"
+                ],
+                "row_id": "M77:5286:10",
+                "object_id": "M77:5286"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "102",
+          "59",
+          "249",
+          "169",
+          "342"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "102",
+              "59",
+              "249",
+              "169",
+              "342"
+            ],
+            "witnesses": [
+              {
+                "index": 1468,
+                "textnum": "2902",
+                "sideline": "20",
+                "inscobj": "5",
+                "locus": "31",
+                "level": "-11",
+                "dir": "1",
+                "sequence": [
+                  "102",
+                  "59",
+                  "249",
+                  "169",
+                  "342"
+                ],
+                "row_id": "M77:2902:20",
+                "object_id": "M77:2902"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "65",
+              "249",
+              "169",
+              "342"
+            ],
+            "witnesses": [
+              {
+                "index": 42,
+                "textnum": "1040",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "26",
+                "level": "-4",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "249",
+                  "169",
+                  "342"
+                ],
+                "row_id": "M77:1040:0",
+                "object_id": "M77:1040"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "fish211_roof87": [
+      {
+        "normal_form": [
+          "171",
+          "59",
+          "211"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "171",
+              "59",
+              "211"
+            ],
+            "witnesses": [
+              {
+                "index": 1615,
+                "textnum": "3103",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "35",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:3103:0",
+                "object_id": "M77:3103"
+              },
+              {
+                "index": 2339,
+                "textnum": "4408",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "44",
+                "level": "-8",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4408:10",
+                "object_id": "M77:4408"
+              },
+              {
+                "index": 2346,
+                "textnum": "4412",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "41",
+                "level": "-14",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4412:10",
+                "object_id": "M77:4412"
+              },
+              {
+                "index": 2357,
+                "textnum": "4418",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "41",
+                "level": "-14",
+                "dir": "2",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4418:10",
+                "object_id": "M77:4418"
+              },
+              {
+                "index": 2424,
+                "textnum": "4453",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "40",
+                "level": "-11",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4453:10",
+                "object_id": "M77:4453"
+              },
+              {
+                "index": 2434,
+                "textnum": "4458",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "45",
+                "level": "-6",
+                "dir": "2",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4458:10",
+                "object_id": "M77:4458"
+              },
+              {
+                "index": 2447,
+                "textnum": "4464",
+                "sideline": "20",
+                "inscobj": "3",
+                "locus": "40",
+                "level": "-15",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4464:20",
+                "object_id": "M77:4464"
+              },
+              {
+                "index": 2587,
+                "textnum": "4544",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "41",
+                "level": "-6",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4544:10",
+                "object_id": "M77:4544"
+              },
+              {
+                "index": 2744,
+                "textnum": "4635",
+                "sideline": "20",
+                "inscobj": "3",
+                "locus": "42",
+                "level": "-18",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4635:20",
+                "object_id": "M77:4635"
+              },
+              {
+                "index": 3201,
+                "textnum": "5320",
+                "sideline": "20",
+                "inscobj": "2",
+                "locus": "59",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:5320:20",
+                "object_id": "M77:5320"
+              },
+              {
+                "index": 3334,
+                "textnum": "5450",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "42",
+                "level": "-12",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:5450:10",
+                "object_id": "M77:5450"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "171",
+              "60"
+            ],
+            "witnesses": [
+              {
+                "index": 182,
+                "textnum": "1177",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "20",
+                "level": "-5",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "60"
+                ],
+                "row_id": "M77:1177:0",
+                "object_id": "M77:1177"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "267",
+          "99",
+          "87",
+          "59",
+          "211"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "267",
+              "99",
+              "66"
+            ],
+            "witnesses": [
+              {
+                "index": 3694,
+                "textnum": "7249",
+                "sideline": "20",
+                "inscobj": "2",
+                "locus": "79",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "267",
+                  "99",
+                  "66"
+                ],
+                "row_id": "M77:7249:20",
+                "object_id": "M77:7249"
+              },
+              {
+                "index": 3696,
+                "textnum": "7251",
+                "sideline": "20",
+                "inscobj": "2",
+                "locus": "79",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "267",
+                  "99",
+                  "66"
+                ],
+                "row_id": "M77:7251:20",
+                "object_id": "M77:7251"
+              },
+              {
+                "index": 3701,
+                "textnum": "7255",
+                "sideline": "0",
+                "inscobj": "2",
+                "locus": "79",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "267",
+                  "99",
+                  "66"
+                ],
+                "row_id": "M77:7255:0",
+                "object_id": "M77:7255"
+              },
+              {
+                "index": 3715,
+                "textnum": "7267",
+                "sideline": "20",
+                "inscobj": "2",
+                "locus": "79",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "267",
+                  "99",
+                  "66"
+                ],
+                "row_id": "M77:7267:20",
+                "object_id": "M77:7267"
+              },
+              {
+                "index": 3717,
+                "textnum": "7269",
+                "sideline": "0",
+                "inscobj": "2",
+                "locus": "79",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "267",
+                  "99",
+                  "66"
+                ],
+                "row_id": "M77:7269:0",
+                "object_id": "M77:7269"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "267",
+              "99",
+              "87",
+              "59",
+              "211"
+            ],
+            "witnesses": [
+              {
+                "index": 526,
+                "textnum": "1551",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "17",
+                "level": "-3",
+                "dir": "1",
+                "sequence": [
+                  "267",
+                  "99",
+                  "87",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:1551:0",
+                "object_id": "M77:1551"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "267",
+              "99",
+              "87",
+              "60"
+            ],
+            "witnesses": [
+              {
+                "index": 3497,
+                "textnum": "6211",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "62",
+                "level": "7",
+                "dir": "1",
+                "sequence": [
+                  "267",
+                  "99",
+                  "87",
+                  "60"
+                ],
+                "row_id": "M77:6211:0",
+                "object_id": "M77:6211"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "72",
+          "211"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "72",
+              "211"
+            ],
+            "witnesses": [
+              {
+                "index": 2300,
+                "textnum": "4374",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "44",
+                "level": "-6",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211"
+                ],
+                "row_id": "M77:4374:10",
+                "object_id": "M77:4374"
+              },
+              {
+                "index": 2372,
+                "textnum": "4428",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "41",
+                "level": "-10",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211"
+                ],
+                "row_id": "M77:4428:10",
+                "object_id": "M77:4428"
+              },
+              {
+                "index": 260,
+                "textnum": "1254",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "25",
+                "level": "-5",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211"
+                ],
+                "row_id": "M77:1254:0",
+                "object_id": "M77:1254"
+              },
+              {
+                "index": 2600,
+                "textnum": "4551",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "42",
+                "level": "-10",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211"
+                ],
+                "row_id": "M77:4551:10",
+                "object_id": "M77:4551"
+              },
+              {
+                "index": 264,
+                "textnum": "1261",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "28",
+                "level": "-6",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211"
+                ],
+                "row_id": "M77:1261:0",
+                "object_id": "M77:1261"
+              },
+              {
+                "index": 3422,
+                "textnum": "5496",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "59",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211"
+                ],
+                "row_id": "M77:5496:10",
+                "object_id": "M77:5496"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "73"
+            ],
+            "witnesses": [
+              {
+                "index": 839,
+                "textnum": "2226",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "31",
+                "level": "-8",
+                "dir": "3",
+                "sequence": [
+                  "73"
+                ],
+                "row_id": "M77:2226:0",
+                "object_id": "M77:2226"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "72",
+          "211",
+          "176"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "72",
+              "211",
+              "176"
+            ],
+            "witnesses": [
+              {
+                "index": 2788,
+                "textnum": "4659",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "41",
+                "level": "-12",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211",
+                  "176"
+                ],
+                "row_id": "M77:4659:10",
+                "object_id": "M77:4659"
+              },
+              {
+                "index": 2796,
+                "textnum": "4664",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "41",
+                "level": "-6",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211",
+                  "176"
+                ],
+                "row_id": "M77:4664:10",
+                "object_id": "M77:4664"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "73",
+              "176"
+            ],
+            "witnesses": [
+              {
+                "index": 2450,
+                "textnum": "4466",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "41",
+                "level": "-7",
+                "dir": "1",
+                "sequence": [
+                  "73",
+                  "176"
+                ],
+                "row_id": "M77:4466:10",
+                "object_id": "M77:4466"
+              },
+              {
+                "index": 2515,
+                "textnum": "4501",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "42",
+                "level": "-16",
+                "dir": "1",
+                "sequence": [
+                  "73",
+                  "176"
+                ],
+                "row_id": "M77:4501:10",
+                "object_id": "M77:4501"
+              },
+              {
+                "index": 2519,
+                "textnum": "4503",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "42",
+                "level": "-17",
+                "dir": "1",
+                "sequence": [
+                  "73",
+                  "176"
+                ],
+                "row_id": "M77:4503:10",
+                "object_id": "M77:4503"
+              },
+              {
+                "index": 3245,
+                "textnum": "5406",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "59",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "73",
+                  "176"
+                ],
+                "row_id": "M77:5406:10",
+                "object_id": "M77:5406"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "87",
+          "59",
+          "211"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "65",
+              "211"
+            ],
+            "witnesses": [
+              {
+                "index": 1431,
+                "textnum": "2852",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "31",
+                "level": "-19",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "211"
+                ],
+                "row_id": "M77:2852:10",
+                "object_id": "M77:2852"
+              },
+              {
+                "index": 572,
+                "textnum": "1625",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "17",
+                "level": "-10",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "211"
+                ],
+                "row_id": "M77:1625:10",
+                "object_id": "M77:1625"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "66"
+            ],
+            "witnesses": [
+              {
+                "index": 319,
+                "textnum": "1316",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "14",
+                "level": "-4",
+                "dir": "3",
+                "sequence": [
+                  "66"
+                ],
+                "row_id": "M77:1316:0",
+                "object_id": "M77:1316"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "87",
+          "59",
+          "211",
+          "176"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "66",
+              "176"
+            ],
+            "witnesses": [
+              {
+                "index": 2503,
+                "textnum": "4493",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "45",
+                "level": "-6",
+                "dir": "1",
+                "sequence": [
+                  "66",
+                  "176"
+                ],
+                "row_id": "M77:4493:10",
+                "object_id": "M77:4493"
+              },
+              {
+                "index": 2886,
+                "textnum": "4806",
+                "sideline": "0",
+                "inscobj": "4",
+                "locus": "59",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "66",
+                  "176"
+                ],
+                "row_id": "M77:4806:0",
+                "object_id": "M77:4806"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "87",
+              "60",
+              "176"
+            ],
+            "witnesses": [
+              {
+                "index": 2610,
+                "textnum": "4556",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "40",
+                "level": "-5",
+                "dir": "1",
+                "sequence": [
+                  "87",
+                  "60",
+                  "176"
+                ],
+                "row_id": "M77:4556:10",
+                "object_id": "M77:4556"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "87",
+          "59",
+          "348",
+          "342"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "65",
+              "348",
+              "342"
+            ],
+            "witnesses": [
+              {
+                "index": 377,
+                "textnum": "1374",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "17",
+                "level": "-2",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "348",
+                  "342"
+                ],
+                "row_id": "M77:1374:0",
+                "object_id": "M77:1374"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "87",
+              "59",
+              "348",
+              "342"
+            ],
+            "witnesses": [
+              {
+                "index": 1490,
+                "textnum": "2913",
+                "sideline": "10",
+                "inscobj": "5",
+                "locus": "31",
+                "level": "-6",
+                "dir": "1",
+                "sequence": [
+                  "87",
+                  "59",
+                  "348",
+                  "342"
+                ],
+                "row_id": "M77:2913:10",
+                "object_id": "M77:2913"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "87",
+          "59",
+          "48",
+          "342"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "65",
+              "48",
+              "342"
+            ],
+            "witnesses": [
+              {
+                "index": 1387,
+                "textnum": "2821",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "31",
+                "level": "-10",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "48",
+                  "342"
+                ],
+                "row_id": "M77:2821:10",
+                "object_id": "M77:2821"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "87",
+              "59",
+              "48",
+              "342"
+            ],
+            "witnesses": [
+              {
+                "index": 1475,
+                "textnum": "2905",
+                "sideline": "20",
+                "inscobj": "5",
+                "locus": "31",
+                "level": "-12",
+                "dir": "1",
+                "sequence": [
+                  "87",
+                  "59",
+                  "48",
+                  "342"
+                ],
+                "row_id": "M77:2905:20",
+                "object_id": "M77:2905"
+              },
+              {
+                "index": 1477,
+                "textnum": "2906",
+                "sideline": "20",
+                "inscobj": "5",
+                "locus": "31",
+                "level": "-10",
+                "dir": "1",
+                "sequence": [
+                  "87",
+                  "59",
+                  "48",
+                  "342"
+                ],
+                "row_id": "M77:2906:20",
+                "object_id": "M77:2906"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "87",
+          "59",
+          "67",
+          "211"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "65",
+              "67",
+              "211"
+            ],
+            "witnesses": [
+              {
+                "index": 2149,
+                "textnum": "4285",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "43",
+                "level": "-8",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "67",
+                  "211"
+                ],
+                "row_id": "M77:4285:0",
+                "object_id": "M77:4285"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "65",
+              "68"
+            ],
+            "witnesses": [
+              {
+                "index": 1587,
+                "textnum": "3070",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "33",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "68"
+                ],
+                "row_id": "M77:3070:0",
+                "object_id": "M77:3070"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "87",
+          "59",
+          "70",
+          "211"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "65",
+              "70",
+              "211"
+            ],
+            "witnesses": [
+              {
+                "index": 380,
+                "textnum": "1380",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "17",
+                "level": "-6",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "70",
+                  "211"
+                ],
+                "row_id": "M77:1380:0",
+                "object_id": "M77:1380"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "87",
+              "59",
+              "71"
+            ],
+            "witnesses": [
+              {
+                "index": 1080,
+                "textnum": "2452",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "31",
+                "level": "-13",
+                "dir": "1",
+                "sequence": [
+                  "87",
+                  "59",
+                  "71"
+                ],
+                "row_id": "M77:2452:0",
+                "object_id": "M77:2452"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "fish211_roof102": [
+      {
+        "normal_form": [
+          "102",
+          "59",
+          "211"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "102",
+              "59",
+              "211"
+            ],
+            "witnesses": [
+              {
+                "index": 369,
+                "textnum": "1365",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "17",
+                "level": "-3",
+                "dir": "1",
+                "sequence": [
+                  "102",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:1365:0",
+                "object_id": "M77:1365"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "65",
+              "211"
+            ],
+            "witnesses": [
+              {
+                "index": 1431,
+                "textnum": "2852",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "31",
+                "level": "-19",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "211"
+                ],
+                "row_id": "M77:2852:10",
+                "object_id": "M77:2852"
+              },
+              {
+                "index": 572,
+                "textnum": "1625",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "17",
+                "level": "-10",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "211"
+                ],
+                "row_id": "M77:1625:10",
+                "object_id": "M77:1625"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "66"
+            ],
+            "witnesses": [
+              {
+                "index": 319,
+                "textnum": "1316",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "14",
+                "level": "-4",
+                "dir": "3",
+                "sequence": [
+                  "66"
+                ],
+                "row_id": "M77:1316:0",
+                "object_id": "M77:1316"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "102",
+          "59",
+          "249",
+          "162",
+          "342"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "102",
+              "59",
+              "249",
+              "162",
+              "342"
+            ],
+            "witnesses": [
+              {
+                "index": 1228,
+                "textnum": "2594",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "31",
+                "level": "-18",
+                "dir": "1",
+                "sequence": [
+                  "102",
+                  "59",
+                  "249",
+                  "162",
+                  "342"
+                ],
+                "row_id": "M77:2594:0",
+                "object_id": "M77:2594"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "65",
+              "249",
+              "162",
+              "342"
+            ],
+            "witnesses": [
+              {
+                "index": 3052,
+                "textnum": "5222",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "53",
+                "level": "-3",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "249",
+                  "162",
+                  "342"
+                ],
+                "row_id": "M77:5222:10",
+                "object_id": "M77:5222"
+              },
+              {
+                "index": 3054,
+                "textnum": "5223",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "42",
+                "level": "-13",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "249",
+                  "162",
+                  "342"
+                ],
+                "row_id": "M77:5223:10",
+                "object_id": "M77:5223"
+              },
+              {
+                "index": 3153,
+                "textnum": "5286",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "59",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "249",
+                  "162",
+                  "342"
+                ],
+                "row_id": "M77:5286:10",
+                "object_id": "M77:5286"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "102",
+          "59",
+          "249",
+          "169",
+          "342"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "102",
+              "59",
+              "249",
+              "169",
+              "342"
+            ],
+            "witnesses": [
+              {
+                "index": 1468,
+                "textnum": "2902",
+                "sideline": "20",
+                "inscobj": "5",
+                "locus": "31",
+                "level": "-11",
+                "dir": "1",
+                "sequence": [
+                  "102",
+                  "59",
+                  "249",
+                  "169",
+                  "342"
+                ],
+                "row_id": "M77:2902:20",
+                "object_id": "M77:2902"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "65",
+              "249",
+              "169",
+              "342"
+            ],
+            "witnesses": [
+              {
+                "index": 42,
+                "textnum": "1040",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "26",
+                "level": "-4",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "249",
+                  "169",
+                  "342"
+                ],
+                "row_id": "M77:1040:0",
+                "object_id": "M77:1040"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "102",
+          "59",
+          "67",
+          "211"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "65",
+              "67",
+              "211"
+            ],
+            "witnesses": [
+              {
+                "index": 2149,
+                "textnum": "4285",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "43",
+                "level": "-8",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "67",
+                  "211"
+                ],
+                "row_id": "M77:4285:0",
+                "object_id": "M77:4285"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "65",
+              "68"
+            ],
+            "witnesses": [
+              {
+                "index": 1587,
+                "textnum": "3070",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "33",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "65",
+                  "68"
+                ],
+                "row_id": "M77:3070:0",
+                "object_id": "M77:3070"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "171",
+          "59",
+          "211"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "171",
+              "59",
+              "211"
+            ],
+            "witnesses": [
+              {
+                "index": 1615,
+                "textnum": "3103",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "35",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:3103:0",
+                "object_id": "M77:3103"
+              },
+              {
+                "index": 2339,
+                "textnum": "4408",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "44",
+                "level": "-8",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4408:10",
+                "object_id": "M77:4408"
+              },
+              {
+                "index": 2346,
+                "textnum": "4412",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "41",
+                "level": "-14",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4412:10",
+                "object_id": "M77:4412"
+              },
+              {
+                "index": 2357,
+                "textnum": "4418",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "41",
+                "level": "-14",
+                "dir": "2",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4418:10",
+                "object_id": "M77:4418"
+              },
+              {
+                "index": 2424,
+                "textnum": "4453",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "40",
+                "level": "-11",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4453:10",
+                "object_id": "M77:4453"
+              },
+              {
+                "index": 2434,
+                "textnum": "4458",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "45",
+                "level": "-6",
+                "dir": "2",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4458:10",
+                "object_id": "M77:4458"
+              },
+              {
+                "index": 2447,
+                "textnum": "4464",
+                "sideline": "20",
+                "inscobj": "3",
+                "locus": "40",
+                "level": "-15",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4464:20",
+                "object_id": "M77:4464"
+              },
+              {
+                "index": 2587,
+                "textnum": "4544",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "41",
+                "level": "-6",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4544:10",
+                "object_id": "M77:4544"
+              },
+              {
+                "index": 2744,
+                "textnum": "4635",
+                "sideline": "20",
+                "inscobj": "3",
+                "locus": "42",
+                "level": "-18",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:4635:20",
+                "object_id": "M77:4635"
+              },
+              {
+                "index": 3201,
+                "textnum": "5320",
+                "sideline": "20",
+                "inscobj": "2",
+                "locus": "59",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:5320:20",
+                "object_id": "M77:5320"
+              },
+              {
+                "index": 3334,
+                "textnum": "5450",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "42",
+                "level": "-12",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:5450:10",
+                "object_id": "M77:5450"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "171",
+              "60"
+            ],
+            "witnesses": [
+              {
+                "index": 182,
+                "textnum": "1177",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "20",
+                "level": "-5",
+                "dir": "1",
+                "sequence": [
+                  "171",
+                  "60"
+                ],
+                "row_id": "M77:1177:0",
+                "object_id": "M77:1177"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "267",
+          "99",
+          "87",
+          "59",
+          "211"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "267",
+              "99",
+              "87",
+              "59",
+              "211"
+            ],
+            "witnesses": [
+              {
+                "index": 526,
+                "textnum": "1551",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "17",
+                "level": "-3",
+                "dir": "1",
+                "sequence": [
+                  "267",
+                  "99",
+                  "87",
+                  "59",
+                  "211"
+                ],
+                "row_id": "M77:1551:0",
+                "object_id": "M77:1551"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "267",
+              "99",
+              "87",
+              "60"
+            ],
+            "witnesses": [
+              {
+                "index": 3497,
+                "textnum": "6211",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "62",
+                "level": "7",
+                "dir": "1",
+                "sequence": [
+                  "267",
+                  "99",
+                  "87",
+                  "60"
+                ],
+                "row_id": "M77:6211:0",
+                "object_id": "M77:6211"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "72",
+          "211"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "72",
+              "211"
+            ],
+            "witnesses": [
+              {
+                "index": 2300,
+                "textnum": "4374",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "44",
+                "level": "-6",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211"
+                ],
+                "row_id": "M77:4374:10",
+                "object_id": "M77:4374"
+              },
+              {
+                "index": 2372,
+                "textnum": "4428",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "41",
+                "level": "-10",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211"
+                ],
+                "row_id": "M77:4428:10",
+                "object_id": "M77:4428"
+              },
+              {
+                "index": 260,
+                "textnum": "1254",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "25",
+                "level": "-5",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211"
+                ],
+                "row_id": "M77:1254:0",
+                "object_id": "M77:1254"
+              },
+              {
+                "index": 2600,
+                "textnum": "4551",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "42",
+                "level": "-10",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211"
+                ],
+                "row_id": "M77:4551:10",
+                "object_id": "M77:4551"
+              },
+              {
+                "index": 264,
+                "textnum": "1261",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "28",
+                "level": "-6",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211"
+                ],
+                "row_id": "M77:1261:0",
+                "object_id": "M77:1261"
+              },
+              {
+                "index": 3422,
+                "textnum": "5496",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "59",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211"
+                ],
+                "row_id": "M77:5496:10",
+                "object_id": "M77:5496"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "73"
+            ],
+            "witnesses": [
+              {
+                "index": 839,
+                "textnum": "2226",
+                "sideline": "0",
+                "inscobj": "1",
+                "locus": "31",
+                "level": "-8",
+                "dir": "3",
+                "sequence": [
+                  "73"
+                ],
+                "row_id": "M77:2226:0",
+                "object_id": "M77:2226"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "normal_form": [
+          "72",
+          "211",
+          "176"
+        ],
+        "members": [
+          {
+            "sequence": [
+              "72",
+              "211",
+              "176"
+            ],
+            "witnesses": [
+              {
+                "index": 2788,
+                "textnum": "4659",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "41",
+                "level": "-12",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211",
+                  "176"
+                ],
+                "row_id": "M77:4659:10",
+                "object_id": "M77:4659"
+              },
+              {
+                "index": 2796,
+                "textnum": "4664",
+                "sideline": "10",
+                "inscobj": "2",
+                "locus": "41",
+                "level": "-6",
+                "dir": "1",
+                "sequence": [
+                  "72",
+                  "211",
+                  "176"
+                ],
+                "row_id": "M77:4664:10",
+                "object_id": "M77:4664"
+              }
+            ]
+          },
+          {
+            "sequence": [
+              "73",
+              "176"
+            ],
+            "witnesses": [
+              {
+                "index": 2450,
+                "textnum": "4466",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "41",
+                "level": "-7",
+                "dir": "1",
+                "sequence": [
+                  "73",
+                  "176"
+                ],
+                "row_id": "M77:4466:10",
+                "object_id": "M77:4466"
+              },
+              {
+                "index": 2515,
+                "textnum": "4501",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "42",
+                "level": "-16",
+                "dir": "1",
+                "sequence": [
+                  "73",
+                  "176"
+                ],
+                "row_id": "M77:4501:10",
+                "object_id": "M77:4501"
+              },
+              {
+                "index": 2519,
+                "textnum": "4503",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "42",
+                "level": "-17",
+                "dir": "1",
+                "sequence": [
+                  "73",
+                  "176"
+                ],
+                "row_id": "M77:4503:10",
+                "object_id": "M77:4503"
+              },
+              {
+                "index": 3245,
+                "textnum": "5406",
+                "sideline": "10",
+                "inscobj": "3",
+                "locus": "59",
+                "level": "0",
+                "dir": "1",
+                "sequence": [
+                  "73",
+                  "176"
+                ],
+                "row_id": "M77:5406:10",
+                "object_id": "M77:5406"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "interpretation": "Normal-form classes are conditional outputs of the proposed operations, not observed synonymy or arithmetic equality."
+}

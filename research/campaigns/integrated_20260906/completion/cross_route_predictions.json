@@ -1,0 +1,4733 @@
+{
+  "status": "executed_reconstructed_rerun",
+  "C_to_D": [
+    {
+      "row_id": "M77:2452:0",
+      "raw": [
+        "87",
+        "59",
+        "71"
+      ],
+      "conditional_spelling": [
+        "87",
+        "59",
+        "70",
+        "211"
+      ],
+      "language": "tamil",
+      "orientation": "append",
+      "marker_role": "classifier",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 15.101319154423276,
+      "conditioned_lexical_prior_bits": 0,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "5a5ed072cfc3e57ec45c706aa5dd5c3686d13ba74a1bae9bdb71de13dd6a5e30",
+      "frozen_model_after": "5a5ed072cfc3e57ec45c706aa5dd5c3686d13ba74a1bae9bdb71de13dd6a5e30"
+    },
+    {
+      "row_id": "M77:1147:0",
+      "raw": [
+        "387",
+        "66",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional_spelling": [
+        "387",
+        "87",
+        "59",
+        "211",
+        "336",
+        "89",
+        "211"
+      ],
+      "language": "tamil",
+      "orientation": "append",
+      "marker_role": "classifier",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "387"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:387>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "387"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:387>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 15.101319154423276,
+      "conditioned_lexical_prior_bits": 0,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "5a5ed072cfc3e57ec45c706aa5dd5c3686d13ba74a1bae9bdb71de13dd6a5e30",
+      "frozen_model_after": "5a5ed072cfc3e57ec45c706aa5dd5c3686d13ba74a1bae9bdb71de13dd6a5e30"
+    },
+    {
+      "row_id": "M77:1380:0",
+      "raw": [
+        "65",
+        "70",
+        "211"
+      ],
+      "conditional_spelling": [
+        "87",
+        "59",
+        "70",
+        "211"
+      ],
+      "language": "tamil",
+      "orientation": "append",
+      "marker_role": "classifier",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 15.101319154423276,
+      "conditioned_lexical_prior_bits": 0,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "5a5ed072cfc3e57ec45c706aa5dd5c3686d13ba74a1bae9bdb71de13dd6a5e30",
+      "frozen_model_after": "5a5ed072cfc3e57ec45c706aa5dd5c3686d13ba74a1bae9bdb71de13dd6a5e30"
+    },
+    {
+      "row_id": "M77:1008:0",
+      "raw": [
+        "76",
+        "402",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional_spelling": [
+        "76",
+        "402",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "language": "tamil",
+      "orientation": "append",
+      "marker_role": "classifier",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "76"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:76>"
+        },
+        {
+          "source_signs": [
+            "402"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:402>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "76"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:76>"
+        },
+        {
+          "source_signs": [
+            "402"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:402>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:67>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 30.202638308846552,
+      "conditioned_lexical_prior_bits": 0,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "5a5ed072cfc3e57ec45c706aa5dd5c3686d13ba74a1bae9bdb71de13dd6a5e30",
+      "frozen_model_after": "5a5ed072cfc3e57ec45c706aa5dd5c3686d13ba74a1bae9bdb71de13dd6a5e30"
+    },
+    {
+      "row_id": "M77:2275:0",
+      "raw": [
+        "0",
+        "65",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional_spelling": [
+        "0",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "language": "tamil",
+      "orientation": "append",
+      "marker_role": "classifier",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "0"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:0>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "0"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:0>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:67>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 30.202638308846552,
+      "conditioned_lexical_prior_bits": 0,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "5a5ed072cfc3e57ec45c706aa5dd5c3686d13ba74a1bae9bdb71de13dd6a5e30",
+      "frozen_model_after": "5a5ed072cfc3e57ec45c706aa5dd5c3686d13ba74a1bae9bdb71de13dd6a5e30"
+    },
+    {
+      "row_id": "M77:2452:0",
+      "raw": [
+        "87",
+        "59",
+        "71"
+      ],
+      "conditional_spelling": [
+        "87",
+        "59",
+        "70",
+        "211"
+      ],
+      "language": "tamil",
+      "orientation": "prepend",
+      "marker_role": "classifier",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 15.101319154423276,
+      "conditioned_lexical_prior_bits": 0,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "6d8e9db5e1c6f0dd8a9479d72e9a1f9d0c1f159bca0c92819ae075f30d27dbd9",
+      "frozen_model_after": "6d8e9db5e1c6f0dd8a9479d72e9a1f9d0c1f159bca0c92819ae075f30d27dbd9"
+    },
+    {
+      "row_id": "M77:1147:0",
+      "raw": [
+        "387",
+        "66",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional_spelling": [
+        "387",
+        "87",
+        "59",
+        "211",
+        "336",
+        "89",
+        "211"
+      ],
+      "language": "tamil",
+      "orientation": "prepend",
+      "marker_role": "classifier",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "387"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:387>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "387"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:387>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 15.101319154423276,
+      "conditioned_lexical_prior_bits": 0,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "6d8e9db5e1c6f0dd8a9479d72e9a1f9d0c1f159bca0c92819ae075f30d27dbd9",
+      "frozen_model_after": "6d8e9db5e1c6f0dd8a9479d72e9a1f9d0c1f159bca0c92819ae075f30d27dbd9"
+    },
+    {
+      "row_id": "M77:1380:0",
+      "raw": [
+        "65",
+        "70",
+        "211"
+      ],
+      "conditional_spelling": [
+        "87",
+        "59",
+        "70",
+        "211"
+      ],
+      "language": "tamil",
+      "orientation": "prepend",
+      "marker_role": "classifier",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 15.101319154423276,
+      "conditioned_lexical_prior_bits": 0,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "6d8e9db5e1c6f0dd8a9479d72e9a1f9d0c1f159bca0c92819ae075f30d27dbd9",
+      "frozen_model_after": "6d8e9db5e1c6f0dd8a9479d72e9a1f9d0c1f159bca0c92819ae075f30d27dbd9"
+    },
+    {
+      "row_id": "M77:1008:0",
+      "raw": [
+        "76",
+        "402",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional_spelling": [
+        "76",
+        "402",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "language": "tamil",
+      "orientation": "prepend",
+      "marker_role": "classifier",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "76"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:76>"
+        },
+        {
+          "source_signs": [
+            "402"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:402>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "76"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:76>"
+        },
+        {
+          "source_signs": [
+            "402"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:402>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:67>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 30.202638308846552,
+      "conditioned_lexical_prior_bits": 0,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "6d8e9db5e1c6f0dd8a9479d72e9a1f9d0c1f159bca0c92819ae075f30d27dbd9",
+      "frozen_model_after": "6d8e9db5e1c6f0dd8a9479d72e9a1f9d0c1f159bca0c92819ae075f30d27dbd9"
+    },
+    {
+      "row_id": "M77:2275:0",
+      "raw": [
+        "0",
+        "65",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional_spelling": [
+        "0",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "language": "tamil",
+      "orientation": "prepend",
+      "marker_role": "classifier",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "0"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:0>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "0"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:0>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:67>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 30.202638308846552,
+      "conditioned_lexical_prior_bits": 0,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "6d8e9db5e1c6f0dd8a9479d72e9a1f9d0c1f159bca0c92819ae075f30d27dbd9",
+      "frozen_model_after": "6d8e9db5e1c6f0dd8a9479d72e9a1f9d0c1f159bca0c92819ae075f30d27dbd9"
+    },
+    {
+      "row_id": "M77:2452:0",
+      "raw": [
+        "87",
+        "59",
+        "71"
+      ],
+      "conditional_spelling": [
+        "87",
+        "59",
+        "70",
+        "211"
+      ],
+      "language": "sanskrit",
+      "orientation": "append",
+      "marker_role": "classifier",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "A"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 6.643856189774724,
+      "conditioned_lexical_prior_bits": 0,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "483a0282ea629a92590832dcff86a5b414c15c072d8f48b97702bea276becc71",
+      "frozen_model_after": "483a0282ea629a92590832dcff86a5b414c15c072d8f48b97702bea276becc71"
+    },
+    {
+      "row_id": "M77:1147:0",
+      "raw": [
+        "387",
+        "66",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional_spelling": [
+        "387",
+        "87",
+        "59",
+        "211",
+        "336",
+        "89",
+        "211"
+      ],
+      "language": "sanskrit",
+      "orientation": "append",
+      "marker_role": "classifier",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "387"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:387>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "A"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "387"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:387>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 6.643856189774724,
+      "conditioned_lexical_prior_bits": 0,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "483a0282ea629a92590832dcff86a5b414c15c072d8f48b97702bea276becc71",
+      "frozen_model_after": "483a0282ea629a92590832dcff86a5b414c15c072d8f48b97702bea276becc71"
+    },
+    {
+      "row_id": "M77:1380:0",
+      "raw": [
+        "65",
+        "70",
+        "211"
+      ],
+      "conditional_spelling": [
+        "87",
+        "59",
+        "70",
+        "211"
+      ],
+      "language": "sanskrit",
+      "orientation": "append",
+      "marker_role": "classifier",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "A"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 6.643856189774724,
+      "conditioned_lexical_prior_bits": 0,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "483a0282ea629a92590832dcff86a5b414c15c072d8f48b97702bea276becc71",
+      "frozen_model_after": "483a0282ea629a92590832dcff86a5b414c15c072d8f48b97702bea276becc71"
+    },
+    {
+      "row_id": "M77:1008:0",
+      "raw": [
+        "76",
+        "402",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional_spelling": [
+        "76",
+        "402",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "language": "sanskrit",
+      "orientation": "append",
+      "marker_role": "classifier",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "76"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:76>"
+        },
+        {
+          "source_signs": [
+            "402"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:402>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "A"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "A"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "76"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:76>"
+        },
+        {
+          "source_signs": [
+            "402"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:402>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:67>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 13.287712379549449,
+      "conditioned_lexical_prior_bits": 0,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "483a0282ea629a92590832dcff86a5b414c15c072d8f48b97702bea276becc71",
+      "frozen_model_after": "483a0282ea629a92590832dcff86a5b414c15c072d8f48b97702bea276becc71"
+    },
+    {
+      "row_id": "M77:2275:0",
+      "raw": [
+        "0",
+        "65",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional_spelling": [
+        "0",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "language": "sanskrit",
+      "orientation": "append",
+      "marker_role": "classifier",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "0"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:0>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "A"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "A"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "0"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:0>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:67>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 13.287712379549449,
+      "conditioned_lexical_prior_bits": 0,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "483a0282ea629a92590832dcff86a5b414c15c072d8f48b97702bea276becc71",
+      "frozen_model_after": "483a0282ea629a92590832dcff86a5b414c15c072d8f48b97702bea276becc71"
+    },
+    {
+      "row_id": "M77:2452:0",
+      "raw": [
+        "87",
+        "59",
+        "71"
+      ],
+      "conditional_spelling": [
+        "87",
+        "59",
+        "70",
+        "211"
+      ],
+      "language": "sanskrit",
+      "orientation": "prepend",
+      "marker_role": "classifier",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "A"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 6.643856189774724,
+      "conditioned_lexical_prior_bits": 0,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "080620ea1966bfe7001e761e4e8b13d2a341655abc2320503de5d865fa0fdca9",
+      "frozen_model_after": "080620ea1966bfe7001e761e4e8b13d2a341655abc2320503de5d865fa0fdca9"
+    },
+    {
+      "row_id": "M77:1147:0",
+      "raw": [
+        "387",
+        "66",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional_spelling": [
+        "387",
+        "87",
+        "59",
+        "211",
+        "336",
+        "89",
+        "211"
+      ],
+      "language": "sanskrit",
+      "orientation": "prepend",
+      "marker_role": "classifier",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "387"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:387>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "A"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "387"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:387>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 6.643856189774724,
+      "conditioned_lexical_prior_bits": 0,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "080620ea1966bfe7001e761e4e8b13d2a341655abc2320503de5d865fa0fdca9",
+      "frozen_model_after": "080620ea1966bfe7001e761e4e8b13d2a341655abc2320503de5d865fa0fdca9"
+    },
+    {
+      "row_id": "M77:1380:0",
+      "raw": [
+        "65",
+        "70",
+        "211"
+      ],
+      "conditional_spelling": [
+        "87",
+        "59",
+        "70",
+        "211"
+      ],
+      "language": "sanskrit",
+      "orientation": "prepend",
+      "marker_role": "classifier",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "A"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 6.643856189774724,
+      "conditioned_lexical_prior_bits": 0,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "080620ea1966bfe7001e761e4e8b13d2a341655abc2320503de5d865fa0fdca9",
+      "frozen_model_after": "080620ea1966bfe7001e761e4e8b13d2a341655abc2320503de5d865fa0fdca9"
+    },
+    {
+      "row_id": "M77:1008:0",
+      "raw": [
+        "76",
+        "402",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional_spelling": [
+        "76",
+        "402",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "language": "sanskrit",
+      "orientation": "prepend",
+      "marker_role": "classifier",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "76"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:76>"
+        },
+        {
+          "source_signs": [
+            "402"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:402>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "A"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "A"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "76"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:76>"
+        },
+        {
+          "source_signs": [
+            "402"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:402>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:67>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 13.287712379549449,
+      "conditioned_lexical_prior_bits": 0,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "080620ea1966bfe7001e761e4e8b13d2a341655abc2320503de5d865fa0fdca9",
+      "frozen_model_after": "080620ea1966bfe7001e761e4e8b13d2a341655abc2320503de5d865fa0fdca9"
+    },
+    {
+      "row_id": "M77:2275:0",
+      "raw": [
+        "0",
+        "65",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional_spelling": [
+        "0",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "language": "sanskrit",
+      "orientation": "prepend",
+      "marker_role": "classifier",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "0"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:0>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "A"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "A"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "0"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:0>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:67>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "nonphonetic_classifier",
+          "unread": "<CLASS:211>"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 13.287712379549449,
+      "conditioned_lexical_prior_bits": 0,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "080620ea1966bfe7001e761e4e8b13d2a341655abc2320503de5d865fa0fdca9",
+      "frozen_model_after": "080620ea1966bfe7001e761e4e8b13d2a341655abc2320503de5d865fa0fdca9"
+    },
+    {
+      "row_id": "M77:2452:0",
+      "raw": [
+        "87",
+        "59",
+        "71"
+      ],
+      "conditional_spelling": [
+        "87",
+        "59",
+        "70",
+        "211"
+      ],
+      "language": "tamil",
+      "orientation": "prepend",
+      "marker_role": "phonetic",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "aim"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "aim"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 42.20263830884655,
+      "conditioned_lexical_prior_bits": 27.101319154423276,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "90f2ee2c15e4b600d33d379316f0fc682e1e37ee007211ec3554fe55e3e6dfb7",
+      "frozen_model_after": "90f2ee2c15e4b600d33d379316f0fc682e1e37ee007211ec3554fe55e3e6dfb7"
+    },
+    {
+      "row_id": "M77:1147:0",
+      "raw": [
+        "387",
+        "66",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional_spelling": [
+        "387",
+        "87",
+        "59",
+        "211",
+        "336",
+        "89",
+        "211"
+      ],
+      "language": "tamil",
+      "orientation": "prepend",
+      "marker_role": "phonetic",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "387"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:387>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59",
+            "211"
+          ],
+          "role": "root_plus_bound_morpheme",
+          "candidate_sound": "aimmīṉ"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "aim"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "387"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:387>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "aim"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "aim"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 56.303957463269825,
+      "conditioned_lexical_prior_bits": 54.20263830884655,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "90f2ee2c15e4b600d33d379316f0fc682e1e37ee007211ec3554fe55e3e6dfb7",
+      "frozen_model_after": "90f2ee2c15e4b600d33d379316f0fc682e1e37ee007211ec3554fe55e3e6dfb7"
+    },
+    {
+      "row_id": "M77:1380:0",
+      "raw": [
+        "65",
+        "70",
+        "211"
+      ],
+      "conditional_spelling": [
+        "87",
+        "59",
+        "70",
+        "211"
+      ],
+      "language": "tamil",
+      "orientation": "prepend",
+      "marker_role": "phonetic",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "aim"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "aim"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 42.20263830884655,
+      "conditioned_lexical_prior_bits": 27.101319154423276,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "90f2ee2c15e4b600d33d379316f0fc682e1e37ee007211ec3554fe55e3e6dfb7",
+      "frozen_model_after": "90f2ee2c15e4b600d33d379316f0fc682e1e37ee007211ec3554fe55e3e6dfb7"
+    },
+    {
+      "row_id": "M77:1008:0",
+      "raw": [
+        "76",
+        "402",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional_spelling": [
+        "76",
+        "402",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "language": "tamil",
+      "orientation": "prepend",
+      "marker_role": "phonetic",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "76"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:76>"
+        },
+        {
+          "source_signs": [
+            "402"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:402>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "aim"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "76"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:76>"
+        },
+        {
+          "source_signs": [
+            "402"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:402>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:67>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "aim"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 57.303957463269825,
+      "conditioned_lexical_prior_bits": 27.101319154423276,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "90f2ee2c15e4b600d33d379316f0fc682e1e37ee007211ec3554fe55e3e6dfb7",
+      "frozen_model_after": "90f2ee2c15e4b600d33d379316f0fc682e1e37ee007211ec3554fe55e3e6dfb7"
+    },
+    {
+      "row_id": "M77:2275:0",
+      "raw": [
+        "0",
+        "65",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional_spelling": [
+        "0",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "language": "tamil",
+      "orientation": "prepend",
+      "marker_role": "phonetic",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "0"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:0>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "mīṉ"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "aim"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "0"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:0>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:67>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "aim"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 57.303957463269825,
+      "conditioned_lexical_prior_bits": 27.101319154423276,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "90f2ee2c15e4b600d33d379316f0fc682e1e37ee007211ec3554fe55e3e6dfb7",
+      "frozen_model_after": "90f2ee2c15e4b600d33d379316f0fc682e1e37ee007211ec3554fe55e3e6dfb7"
+    },
+    {
+      "row_id": "M77:2452:0",
+      "raw": [
+        "87",
+        "59",
+        "71"
+      ],
+      "conditional_spelling": [
+        "87",
+        "59",
+        "70",
+        "211"
+      ],
+      "language": "sanskrit",
+      "orientation": "append",
+      "marker_role": "phonetic",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "A"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "f"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "f"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 13.287712379549449,
+      "conditioned_lexical_prior_bits": 6.643856189774724,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "e4fc5da3f79dd3f1acbe1a7e85d33582f9642f2036e3cf6b4e8a8546d73dfd08",
+      "frozen_model_after": "e4fc5da3f79dd3f1acbe1a7e85d33582f9642f2036e3cf6b4e8a8546d73dfd08"
+    },
+    {
+      "row_id": "M77:1147:0",
+      "raw": [
+        "387",
+        "66",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional_spelling": [
+        "387",
+        "87",
+        "59",
+        "211",
+        "336",
+        "89",
+        "211"
+      ],
+      "language": "sanskrit",
+      "orientation": "append",
+      "marker_role": "phonetic",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "387"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:387>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59",
+            "211"
+          ],
+          "role": "root_plus_bound_morpheme",
+          "candidate_sound": "Af"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "f"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "387"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:387>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "f"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "f"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 18.931568569324174,
+      "conditioned_lexical_prior_bits": 13.287712379549449,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "e4fc5da3f79dd3f1acbe1a7e85d33582f9642f2036e3cf6b4e8a8546d73dfd08",
+      "frozen_model_after": "e4fc5da3f79dd3f1acbe1a7e85d33582f9642f2036e3cf6b4e8a8546d73dfd08"
+    },
+    {
+      "row_id": "M77:1380:0",
+      "raw": [
+        "65",
+        "70",
+        "211"
+      ],
+      "conditional_spelling": [
+        "87",
+        "59",
+        "70",
+        "211"
+      ],
+      "language": "sanskrit",
+      "orientation": "append",
+      "marker_role": "phonetic",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "A"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "f"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "f"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 13.287712379549449,
+      "conditioned_lexical_prior_bits": 6.643856189774724,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "e4fc5da3f79dd3f1acbe1a7e85d33582f9642f2036e3cf6b4e8a8546d73dfd08",
+      "frozen_model_after": "e4fc5da3f79dd3f1acbe1a7e85d33582f9642f2036e3cf6b4e8a8546d73dfd08"
+    },
+    {
+      "row_id": "M77:1008:0",
+      "raw": [
+        "76",
+        "402",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional_spelling": [
+        "76",
+        "402",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "language": "sanskrit",
+      "orientation": "append",
+      "marker_role": "phonetic",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "76"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:76>"
+        },
+        {
+          "source_signs": [
+            "402"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:402>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "A"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "A"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "f"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "76"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:76>"
+        },
+        {
+          "source_signs": [
+            "402"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:402>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:67>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "f"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 19.931568569324174,
+      "conditioned_lexical_prior_bits": 6.643856189774724,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "e4fc5da3f79dd3f1acbe1a7e85d33582f9642f2036e3cf6b4e8a8546d73dfd08",
+      "frozen_model_after": "e4fc5da3f79dd3f1acbe1a7e85d33582f9642f2036e3cf6b4e8a8546d73dfd08"
+    },
+    {
+      "row_id": "M77:2275:0",
+      "raw": [
+        "0",
+        "65",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional_spelling": [
+        "0",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "language": "sanskrit",
+      "orientation": "append",
+      "marker_role": "phonetic",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "0"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:0>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "A"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "A"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "f"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "0"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:0>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:67>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "f"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 19.931568569324174,
+      "conditioned_lexical_prior_bits": 6.643856189774724,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "e4fc5da3f79dd3f1acbe1a7e85d33582f9642f2036e3cf6b4e8a8546d73dfd08",
+      "frozen_model_after": "e4fc5da3f79dd3f1acbe1a7e85d33582f9642f2036e3cf6b4e8a8546d73dfd08"
+    },
+    {
+      "row_id": "M77:2452:0",
+      "raw": [
+        "87",
+        "59",
+        "71"
+      ],
+      "conditional_spelling": [
+        "87",
+        "59",
+        "70",
+        "211"
+      ],
+      "language": "sanskrit",
+      "orientation": "prepend",
+      "marker_role": "phonetic",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "f"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "A"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "A"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 13.287712379549449,
+      "conditioned_lexical_prior_bits": 6.643856189774724,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "99c46401940310bd49b00161f5b7db30b3f72c2e4820667e1e6c7124753faaff",
+      "frozen_model_after": "99c46401940310bd49b00161f5b7db30b3f72c2e4820667e1e6c7124753faaff"
+    },
+    {
+      "row_id": "M77:1147:0",
+      "raw": [
+        "387",
+        "66",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional_spelling": [
+        "387",
+        "87",
+        "59",
+        "211",
+        "336",
+        "89",
+        "211"
+      ],
+      "language": "sanskrit",
+      "orientation": "prepend",
+      "marker_role": "phonetic",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "387"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:387>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59",
+            "211"
+          ],
+          "role": "root_plus_bound_morpheme",
+          "candidate_sound": "Af"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "A"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "387"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:387>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "A"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "A"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 18.931568569324174,
+      "conditioned_lexical_prior_bits": 13.287712379549449,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "99c46401940310bd49b00161f5b7db30b3f72c2e4820667e1e6c7124753faaff",
+      "frozen_model_after": "99c46401940310bd49b00161f5b7db30b3f72c2e4820667e1e6c7124753faaff"
+    },
+    {
+      "row_id": "M77:1380:0",
+      "raw": [
+        "65",
+        "70",
+        "211"
+      ],
+      "conditional_spelling": [
+        "87",
+        "59",
+        "70",
+        "211"
+      ],
+      "language": "sanskrit",
+      "orientation": "prepend",
+      "marker_role": "phonetic",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "f"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "A"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "70"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:70>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "A"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 13.287712379549449,
+      "conditioned_lexical_prior_bits": 6.643856189774724,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "99c46401940310bd49b00161f5b7db30b3f72c2e4820667e1e6c7124753faaff",
+      "frozen_model_after": "99c46401940310bd49b00161f5b7db30b3f72c2e4820667e1e6c7124753faaff"
+    },
+    {
+      "row_id": "M77:1008:0",
+      "raw": [
+        "76",
+        "402",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional_spelling": [
+        "76",
+        "402",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "language": "sanskrit",
+      "orientation": "prepend",
+      "marker_role": "phonetic",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "76"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:76>"
+        },
+        {
+          "source_signs": [
+            "402"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:402>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "f"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "f"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "A"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "76"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:76>"
+        },
+        {
+          "source_signs": [
+            "402"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:402>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:67>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "A"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 19.931568569324174,
+      "conditioned_lexical_prior_bits": 6.643856189774724,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "99c46401940310bd49b00161f5b7db30b3f72c2e4820667e1e6c7124753faaff",
+      "frozen_model_after": "99c46401940310bd49b00161f5b7db30b3f72c2e4820667e1e6c7124753faaff"
+    },
+    {
+      "row_id": "M77:2275:0",
+      "raw": [
+        "0",
+        "65",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "conditional_spelling": [
+        "0",
+        "87",
+        "59",
+        "67",
+        "336",
+        "89",
+        "211"
+      ],
+      "language": "sanskrit",
+      "orientation": "prepend",
+      "marker_role": "phonetic",
+      "C_program": {
+        "kind": "arithmetic",
+        "field": "fish_items",
+        "operation": "first",
+        "value": "reverse_ordinal",
+        "a": 0.5,
+        "b": 1
+      },
+      "C_status": "conditional losing rival; fish marks as numerical items is not established",
+      "role_assignments": {
+        "67": "numeric",
+        "71": "numeric",
+        "73": "numeric",
+        "60": "numeric",
+        "68": "numeric",
+        "66": "numeric",
+        "70": "numeric",
+        "59": "numeric",
+        "72": "numeric",
+        "65": "numeric"
+      },
+      "ordinary": [
+        {
+          "source_signs": [
+            "0"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:0>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "f"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "logophonetic",
+          "candidate_sound": "f"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "A"
+        }
+      ],
+      "C_conditioned": [
+        {
+          "source_signs": [
+            "0"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:0>"
+        },
+        {
+          "source_signs": [
+            "87"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:87>"
+        },
+        {
+          "source_signs": [
+            "59"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:59>"
+        },
+        {
+          "source_signs": [
+            "67"
+          ],
+          "role": "external_nonphonetic",
+          "unread": "<M77:67>"
+        },
+        {
+          "source_signs": [
+            "336"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:336>"
+        },
+        {
+          "source_signs": [
+            "89"
+          ],
+          "role": "unresolved",
+          "unread": "<M77:89>"
+        },
+        {
+          "source_signs": [
+            "211"
+          ],
+          "role": "phonetic_marker",
+          "candidate_sound": "A"
+        }
+      ],
+      "ordinary_lexical_prior_bits": 19.931568569324174,
+      "conditioned_lexical_prior_bits": 6.643856189774724,
+      "unread_spans_preserved": true,
+      "frozen_model_before": "99c46401940310bd49b00161f5b7db30b3f72c2e4820667e1e6c7124753faaff",
+      "frozen_model_after": "99c46401940310bd49b00161f5b7db30b3f72c2e4820667e1e6c7124753faaff"
+    }
+  ],
+  "C_role_model_train_objective": 284.69959296622994,
+  "C_independent_train_objective": 223.37843145356925,
+  "changed_decodings": 35,
+  "B_to_D": {
+    "source": "sources/1380_2452_adjudication.json",
+    "universal_whole_expression_literal_species_allowed": false,
+    "conditional_on": [
+      "65 expands to87,59",
+      "71 expands to70,211",
+      "Expanded spelling identity represents the same linguistic expression"
+    ],
+    "positive_lexical_anchors": [],
+    "effect": "No whole-expression species anchor may be supplied as independent supervision. Fish-root dictionary hypotheses remain conditional, and are not whole-inscription translations."
+  },
+  "A_to_C": {
+    "execution": "joint/* candidate fits use original count targets conditioned on each candidate expanded front; role/field/operator alternatives remain in route_c/program_search.json"
+  },
+  "D_to_A": {
+    "execution": "joint/linguistic_coupling/* optimizes shared spelling program under frozen conditional linguistic priors and scores raw held channels separately"
+  },
+  "evidence_counting": "These are alternative interpretations of shared observations, not additional independent confirmations."
+}
