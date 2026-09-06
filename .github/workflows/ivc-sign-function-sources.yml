@@ -8,28 +8,35 @@ permissions:
 jobs:
   acquire:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 4
     steps:
-      - uses: actions/checkout@v4
-        with:
-          filter: blob:none
-          persist-credentials: false
-          sparse-checkout-cone-mode: false
-          sparse-checkout: |
-            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/H-148_a.jpg
-            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/H-243_A.jpg
-            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/H-243_B.jpg
-            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/H-888_A.jpg
-            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/H-945_A.jpg
-            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/K-33_a.jpg
-            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-1086_a.jpg
-            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-1086_a_bis.jpg
-            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-1148_A_bis.jpg
-            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-1148_A_ter.jpg
-            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-1148_a.jpg
-            /evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/M-729_a.jpg
+      - name: Retrieve public primary measurement sources
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from concurrent.futures import ThreadPoolExecutor
+          import subprocess,hashlib,json
+          out=Path('/tmp/ivc-measured-weights');out.mkdir()
+          sources=[
+            ('ascalone_2022.pdf','https://iris.unisalento.it/retrieve/c39309c8-8dae-4dba-b990-86171612edf6/E.%20Ascalone%2C%20Bronze%20Age%20Weights%20from%20Mesopotamia%2C%20Iran%20and%20Greater%20Indus%20Valley_compressed.pdf'),
+            ('pettersson_1999.pdf','https://insa.nic.in/writereaddata/UpLoadedFiles/IJHS/Vol34_2_1_JSPettersson.pdf'),
+            ('pettersson_errata.pdf','https://kau.diva-portal.org/smash/get/diva2%3A593951/ERRATA01.pdf')]
+          def fetch(item):
+              name,url=item;p=out/name
+              try:
+                  subprocess.run(['curl','-fLsS','--max-time','90','--max-filesize','100000000',url,'-o',str(p)],capture_output=True,check=True,timeout=95)
+                  b=p.read_bytes()
+                  if not b.startswith(b'%PDF'):raise ValueError('Response is not a PDF')
+                  return {'file':name,'url':url,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}
+              except Exception as e:
+                  p.unlink(missing_ok=True)
+                  return {'file':name,'url':url,'error':str(e)}
+          with ThreadPoolExecutor(max_workers=3) as ex:manifest=list(ex.map(fetch,sources))
+          (out/'manifest.json').write_text(json.dumps(manifest,indent=2))
+          print(json.dumps(manifest,indent=2))
+          PY
       - uses: actions/upload-artifact@v4
         with:
-          name: ivc-modifier-photographs
-          path: evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/
+          name: ivc-measured-weights
+          path: /tmp/ivc-measured-weights/
           retention-days: 7
