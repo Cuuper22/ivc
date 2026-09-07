@@ -1,0 +1,119 @@
+{
+  "research_date": "2026-09-07",
+  "status": "exploratory_research_no_new_accepted_reading",
+  "report": "research/docs/decoding_followup_20260907.md",
+  "linguistic_source": {
+    "repository_path": "evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml",
+    "records": 283809,
+    "distinct_headwords": 192482,
+    "role": "Independent lexical evidence. Generated strings and their dictionary glosses are NOT translations."
+  },
+  "phonetic_experiment_scope": {
+    "eligible_distinct_seal_lines": 202,
+    "length_range": [2, 10],
+    "coverage_filter": "forty most frequent strict-seal signs plus fish family",
+    "key": "shared injective elementary phonetic-unit assignments",
+    "strong_assumption": "One eligible inscription corresponds to one dictionary headword.",
+    "search": "finite heuristic; not exhaustive",
+    "evaluation": "retrospective held-expression partitions, not independent archaeological samples or a blind discovery test",
+    "metric": "exact syllabified dictionary-headword matches; not sound or translation accuracy"
+  },
+  "completed_runs": [
+    {
+      "model": "whole_syllables_identity_stored",
+      "restarts": 16,
+      "proposals_per_restart": 60000,
+      "training_types": 146,
+      "training_dictionary_matches": 54,
+      "held_types": 56,
+      "held_dictionary_matches": 4
+    },
+    {
+      "model": "whole_syllables_expanded_stored",
+      "restarts": 16,
+      "proposals_per_restart": 60000,
+      "training_types": 149,
+      "training_dictionary_matches": 48,
+      "held_types": 49,
+      "held_dictionary_matches": 7
+    },
+    {
+      "model": "vowel_a_i_roof_length_stored",
+      "restarts": 12,
+      "proposals_per_restart": 80000,
+      "training_types": 166,
+      "training_dictionary_matches": 62,
+      "held_types": 36,
+      "held_dictionary_matches": 3
+    },
+    {
+      "model": "vowel_a_i_roof_quality_stored",
+      "restarts": 12,
+      "proposals_per_restart": 80000,
+      "training_types": 166,
+      "training_dictionary_matches": 59,
+      "held_types": 36,
+      "held_dictionary_matches": 4
+    },
+    {
+      "model": "vowel_a_u_roof_length_stored",
+      "restarts": 12,
+      "proposals_per_restart": 80000,
+      "training_types": 166,
+      "training_dictionary_matches": 54,
+      "held_types": 36,
+      "held_dictionary_matches": 3
+    },
+    {
+      "model": "vowel_a_u_roof_quality_stored",
+      "restarts": 12,
+      "proposals_per_restart": 80000,
+      "training_types": 166,
+      "training_dictionary_matches": 57,
+      "held_types": 36,
+      "held_dictionary_matches": 4
+    }
+  ],
+  "comparability": {
+    "first_two_runs": "Different partitions; do not report their difference as a controlled improvement.",
+    "four_vowel_runs": "Same training and held parse-equivalence partition.",
+    "not_completed_or_superseded": ["reverse-order pilot", "earlier letter-key pilot"]
+  },
+  "new_model_hypothesis": {
+    "idea": "The graphical fish square may encode vowel quality and vowel quantity rather than two fish-name modifiers.",
+    "illustration_only": ["Ca", "Caa", "Ci", "Cii"],
+    "important_limit": "No example vowel, onset, sound assignment, syllabary, linguistic identity, or script ancestry is established."
+  },
+  "nonfish_candidate": {
+    "relation": "15 versus149-342 after51-130, with or without176",
+    "compact_examples": ["2549:0", "4649:10", "4447:20", "4577:10"],
+    "expanded_examples": ["1013:0", "1619:10", "2091:0", "4666:10"],
+    "status": "contextual alternation; synonymy and literal graphical decomposition unproved",
+    "limit": "Both contexts share one phrase family; not independent lexical confirmations."
+  },
+  "counterfield_observation": {
+    "namespace": "Mahadevan1977, stored catalogue order",
+    "records": [
+      {"object": "4448", "main_face": [173,59,347,342,176], "counter_face": [95,328,59]},
+      {"object": "4452", "main_face": [173,59,347,342,176], "counter_face": [95,59,328]},
+      {"object": "5461", "main_face": [173,59,347,342,176], "counter_face": [95,328,59]}
+    ],
+    "source_checked": "Vats, Excavations at Harappa, volumeII, plateXCVI, objects448/452; held PDF index199.",
+    "observed": "Cup and fish-shaped sign switch positions relative to the four strokes. Not a global reversal of the three catalogue signs.",
+    "second_catalogue": {
+      "H-912_and_H-1191": {"excavation_reference": "8650c448", "main": "+400-740-760-220-416+", "counter": "+220-700-004+"},
+      "H-1192": {"excavation_reference": "8650c452", "main": "+400-740-767-220-416+", "counter": "+700-220-004+"}
+    },
+    "limits": [
+      "H-912/H-1191 share an excavation reference; not independent samples.",
+      "Lipi distinguishes760/767 on main faces. Physical identity of main text and equality of meanings are unproved.",
+      "Low-resolution source cannot settle fine variants or possible edge traces.",
+      "The qualifier/unit/quantity interpretation is a hypothesis, not an accepted semantic assignment."
+    ]
+  },
+  "new_accepted_translations": 0,
+  "new_accepted_phonetic_values": 0,
+  "new_accepted_semantic_values": 0,
+  "scholarly_priority": "not established",
+  "background_execution": false
+}
