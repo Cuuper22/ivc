@@ -1,0 +1,36 @@
+name: Export existing integrated research
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/research-continuation-export.yml']
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            research/campaigns/integrated_20260906
+          persist-credentials: false
+      - run: python research/campaigns/integrated_20260906/restore_payload.py
+      - name: Package existing observations and language resources
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import zipfile
+          root=Path('research/campaigns/integrated_20260906')
+          with zipfile.ZipFile('/tmp/ivc-integrated-existing.zip','w',zipfile.ZIP_DEFLATED) as z:
+              for p in sorted(root.rglob('*')):
+                  if p.is_file() and 'payload' not in p.parts and '__pycache__' not in p.parts:
+                      z.write(p,str(p.relative_to(root)))
+          print(Path('/tmp/ivc-integrated-existing.zip').stat().st_size)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ivc-integrated-existing
+          path: /tmp/ivc-integrated-existing.zip
+          retention-days: 7
