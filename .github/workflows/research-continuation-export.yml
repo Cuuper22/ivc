@@ -1,4 +1,4 @@
-name: Export existing integrated research
+name: Export existing lexical evidence
 on:
   workflow_dispatch:
   push:
@@ -14,23 +14,31 @@ jobs:
         with:
           filter: blob:none
           sparse-checkout: |
-            research/campaigns/integrated_20260906
+            evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml
+          sparse-checkout-cone-mode: false
           persist-credentials: false
-      - run: python research/campaigns/integrated_20260906/restore_payload.py
-      - name: Package existing observations and language resources
+      - name: Extract existing dictionary headwords and source references
         run: |
           python - <<'PY'
           from pathlib import Path
-          import zipfile
-          root=Path('research/campaigns/integrated_20260906')
-          with zipfile.ZipFile('/tmp/ivc-integrated-existing.zip','w',zipfile.ZIP_DEFLATED) as z:
-              for p in sorted(root.rglob('*')):
-                  if p.is_file() and 'payload' not in p.parts and '__pycache__' not in p.parts:
-                      z.write(p,str(p.relative_to(root)))
-          print(Path('/tmp/ivc-integrated-existing.zip').stat().st_size)
+          import xml.etree.ElementTree as ET,re,json,gzip,hashlib
+          p=Path('evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml')
+          out=Path('/tmp/ivc-lexical-evidence');out.mkdir()
+          records=[]
+          for _,e in ET.iterparse(p,events=['end']):
+              if not re.fullmatch(r'H[1-4][AB]?',e.tag):continue
+              w=e.findtext('./h/key1')
+              if w and re.fullmatch('[A-Za-z]+',w):
+                  b=e.find('body');text=' '.join(b.itertext()) if b is not None else ''
+                  records.append({'word':w,'entry_id':e.findtext('./tail/L'),'page_column':e.findtext('./tail/pc'),'gloss':text})
+              e.clear()
+          raw=json.dumps(records,ensure_ascii=False).encode()
+          (out/'mw_headwords.json.gz').write_bytes(gzip.compress(raw,mtime=0))
+          (out/'manifest.json').write_text(json.dumps({'source_repository_path':str(p),'source_sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'records':len(records),'unique_words':len({r['word'] for r in records}),'output_sha256':hashlib.sha256(raw).hexdigest()},indent=2))
+          print('Entries',len(records),'words',len({r['word'] for r in records}))
           PY
       - uses: actions/upload-artifact@v4
         with:
-          name: ivc-integrated-existing
-          path: /tmp/ivc-integrated-existing.zip
+          name: ivc-lexical-evidence
+          path: /tmp/ivc-lexical-evidence/
           retention-days: 7
