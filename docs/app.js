@@ -14,7 +14,8 @@
    scroll reveals, the expertise dials, the scoreboard count-up, the
    excavation torch (canvas), the site map (SVG), the 002 branch (SVG), the
    null-distribution chart (SVG), the decipherer's game, the lamp cursor, the
-   timeline, the graveyard, the seal gallery, and a hidden "dig" mode.
+   timeline, the graveyard, the October test cards, the seal gallery, and a
+   hidden "dig" mode.
    ========================================================================= */
 (function () {
   "use strict";
@@ -401,69 +402,11 @@
     }, 0.25);
   })();
 
-  /* ---- Null-distribution chart (SVG) ---------------------------------
-     What the forger test looks like. The bars are the spread of pattern
-     strength across ten thousand randomized shuffles; the marker is where
-     the observed pattern actually landed, far out in the right tail.
-
-     Read this as a diagram, not as plotted data. The bell curve below is
-     generated from a normal formula for shape only. The two things that are
-     real, and that must match the ledger, are the labels: 10,000 shuffles
-     and p = 0.0002. */
-  (function () {
-    var host = document.getElementById("nulls"); if (!host) return;
-    var VB = { w: 760, h: 320 }, pad = { l: 28, r: 20, t: 20, b: 40 };
-    var n = 46, bars = [];
-    // Centre and width of the drawn bell, as fractions of the bar count.
-    var mu = n * 0.42, sd = n * 0.12, peak = 0;
-    for (var i = 0; i < n; i++) { var v = Math.exp(-0.5 * Math.pow((i - mu) / sd, 2)); bars.push(v); peak = Math.max(peak, v); }
-    var bw = (VB.w - pad.l - pad.r) / n;
-    var svg = s("svg", { viewBox: "0 0 " + VB.w + " " + VB.h, class: "nulls-svg", role: "img", "aria-label": "Distribution of the pattern's strength across 10,000 randomized shuffles, with the observed value far in the tail" });
-    svg.appendChild(s("line", { x1: pad.l, y1: VB.h - pad.b, x2: VB.w - pad.r, y2: VB.h - pad.b, class: "axis" }));
-    // Bars start flat on the baseline with zero height; the reveal below
-    // grows them to the height stashed in data-h.
-    var gB = s("g", {});
-    bars.forEach(function (v, i) {
-      var hgt = (v / peak) * (VB.h - pad.t - pad.b);
-      var x = pad.l + i * bw, y = VB.h - pad.b - hgt;
-      gB.appendChild(s("rect", { x: x + 1, y: VB.h - pad.b, width: Math.max(1, bw - 2), height: 0, class: "nbar", "data-h": hgt, "data-y": y, style: "--i:" + i }));
-    });
-    svg.appendChild(gB);
-    // The observed value, parked near the right edge of the plot. Its
-    // distance from the bulk of the bars is the whole message: randomness
-    // almost never reaches this far.
-    var ox = pad.l + (n - 2.5) * bw;
-    var marker = s("g", { class: "nmark" });
-    marker.appendChild(s("line", { x1: ox, y1: pad.t, x2: ox, y2: VB.h - pad.b, class: "nmark-line" }));
-    marker.appendChild(s("circle", { cx: ox, cy: pad.t + 6, r: 5, class: "nmark-dot" }));
-    marker.appendChild(s("text", { x: ox - 8, y: pad.t + 4, class: "nmark-lab", "text-anchor": "end", text: "observed" }));
-    marker.appendChild(s("text", { x: ox - 8, y: pad.t + 22, class: "nmark-sub", "text-anchor": "end", text: "p = 0.0002" }));
-    svg.appendChild(marker);
-    svg.appendChild(s("text", { x: pad.l, y: VB.h - 10, class: "naxis-lab", text: "pattern strength across 10,000 random shuffles  ->" }));
-    host.appendChild(svg);
-    whenVisible(svg, function () {
-      svg.classList.add("drawn");
-      [].slice.call(gB.querySelectorAll(".nbar")).forEach(function (b) {
-        var hgt = +b.getAttribute("data-h"), y = +b.getAttribute("data-y");
-        if (reduce) { b.setAttribute("height", hgt); b.setAttribute("y", y); return; }
-        // Stagger each bar 14ms behind the last, so the distribution sweeps
-        // in from the left instead of popping up all at once.
-        var i = +b.style.getPropertyValue("--i"), t0 = performance.now() + i * 14;
-        (function step(now) {
-          if (now < t0) { requestAnimationFrame(step); return; }
-          var t = clamp((now - t0) / 500, 0, 1), e = 1 - Math.pow(1 - t, 3);
-          b.setAttribute("height", hgt * e); b.setAttribute("y", (VB.h - pad.b) - hgt * e);
-          if (t < 1) requestAnimationFrame(step);
-        })(t0);
-      });
-    }, 0.3);
-  })();
-
   /* ---- Decipherer's game ---------------------------------------------
-     Let the visitor run the terminal-tail test by eye. Six rows of sign
-     codes, four candidate units, and only one of them closes every line it
-     appears in. Getting it right lights up the tail in each row, which is
-     the same evidence the accepted finding rests on, at toy scale. */
+     Let the visitor run a terminal-tail test by eye. Six INVENTED rows of
+     sign codes (not corpus rows; the page says so), four candidate units,
+     and only one of them closes every line it appears in. Getting it right
+     lights up the tail in each row. */
   (function () {
     var host = document.getElementById("game"); if (!host) return;
     var P = D.PUZZLE;
@@ -512,7 +455,7 @@
         if (last && tail) last.classList.add("ends");
       });
       feedback.className = "game-feedback hit";
-      feedback.innerHTML = "Exactly. <b>533-717</b> closes every line it appears in, and never sits in the middle. That is the project's one accepted finding: a position, not a meaning. You just did epigraphy.";
+      feedback.innerHTML = "Right, in these invented rows. <b>151-279</b> is always last. Real inscriptions are never this tidy, and the one real observation the project accepts is about two seals, not a rule. A position test like this is where such an observation starts.";
     }
   })();
 
@@ -564,7 +507,7 @@
     // scroll space. Release is watched on the window, not the track, so
     // letting go outside the strip still ends the drag.
     var down = false, sx = 0, sl = 0;
-    host.addEventListener("pointerdown", function (e) { down = true; sx = e.clientX; sl = host.scrollLeft; host.classList.add("grab"); });
+    host.addEventListener("pointerdown", function (e) { if (e.pointerType === "touch") return; /* touch scrolls natively */ down = true; sx = e.clientX; sl = host.scrollLeft; host.classList.add("grab"); });
     window.addEventListener("pointerup", function () { down = false; host.classList.remove("grab"); });
     window.addEventListener("pointermove", function (e) { if (down) host.scrollLeft = sl - (e.clientX - sx); });
     whenVisible(host, function () { host.classList.add("drawn"); }, 0.2);
@@ -579,7 +522,7 @@
     var host = document.getElementById("graves"); if (!host) return;
     D.GRAVES.forEach(function (g, i) {
       var card = h("button", { class: "grave", style: "--i:" + i, "aria-expanded": "false" }, [
-        h("span", { class: "grave-rip mono", text: "retracted" }),
+        h("span", { class: "grave-rip mono", text: g.rip || "retracted" }),
         h("h3", { text: g.title }),
         h("p", { class: "grave-death", text: g.death }),
         h("span", { class: "grave-id mono", text: g.id })
@@ -591,6 +534,28 @@
       host.appendChild(card);
     });
     whenVisible(host, function () { host.classList.add("drawn"); }, 0.15);
+  })();
+
+  /* ---- October tests --------------------------------------------------
+     One card per extension study, built from D.TESTS. The tag colour reuses
+     the frontier card's status pill: patina for a result that holds up, clay
+     for one that did not. The card is plain static markup once built, so
+     reduced motion needs nothing special; it fades in with the .reveal host. */
+  (function () {
+    var host = document.getElementById("tests-grid"); if (!host || !D.TESTS) return;
+    D.TESTS.forEach(function (t) {
+      host.appendChild(h("article", { class: "target" }, [
+        h("div", { class: "target-top" }, [
+          h("h3", { text: t.name }),
+          h("span", { class: "status " + t.kind, text: t.label })
+        ]),
+        h("p", { class: "target-q", text: t.q }),
+        h("p", { text: t.a }),
+        h("span", { class: "target-path" }, [
+          h("a", { href: D.TESTS_BASE + t.dir + "/", target: "_blank", rel: "noopener", text: "research/extensions_20261001/" + t.dir + "/" })
+        ])
+      ]));
+    });
   })();
 
   /* ---- Seal gallery --------------------------------------------------

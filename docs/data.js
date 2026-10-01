@@ -5,13 +5,16 @@
 
    REAL — SITES (archaeological sites, coordinates approximate), BRANCH (the
    project's actual 002 sign-structure), LEDGER (accepted counts straight from
-   claims.json), TIMELINE, GRAVES (retracted claims), and the numeric sign rows
-   inside SEALS. Change these only to match the ledger.
+   claims.json), TIMELINE, GRAVES (retracted claims), TESTS (the five October
+   2026 extension studies, one per REPORT.md), and the numeric sign rows
+   inside SEALS. Change these only to match the ledger and the reports.
 
    ILLUSTRATIVE — GLYPHS are original line drawings in the spirit of Indus
    signs, not tracings of real ones, so nobody can mistake the page's artwork
    for evidence. PUZZLE rows are made up out of real sign codes to teach the
-   idea of a terminal tail; they are not corpus rows.
+   idea of a position test; they are not corpus rows, and the unit the game
+   asks for is not a unit anyone has found in the corpus. The page says so
+   next to the game.
    ========================================================================= */
 window.IVC = (function () {
 
@@ -64,9 +67,9 @@ window.IVC = (function () {
   var BRANCH = {
     nodes: [
       { id: "002",     label: "002", x: 0, y: 2,  status: "root",    info: "The conditioning sign. What follows 002 behaves differently than the same signs elsewhere." },
-      { id: "861",     label: "861", x: 1, y: 1,  status: "context", info: "The fixed branch context 002-861. Inside it, one tail is provably regular." },
+      { id: "861",     label: "861", x: 1, y: 1,  status: "context", info: "The branch context 002-861. Two seals continue it with the same three signs, 861-533-717." },
       { id: "390",     label: "390", x: 1, y: 3,  status: "context", info: "The adjacent branch 002-390. A live ecology of competing tails; the current frontier." },
-      { id: "533717",  label: "533-717", x: 2, y: 1, status: "verified", info: "ACCEPTED. The only short unit whose every strict occurrence after 002-861 is a terminal tail. Witnesses M-376, M-391. Forger FPR 0.0002." },
+      { id: "533717",  label: "533-717", x: 2, y: 1, status: "verified", info: "ACCEPTED as a description only. Seals M-376 and M-391 share the string 861-533-717 after 002, at the stored end (Lipi order), which is the reading-initial end. Sign 533 occurs on no other seal. Not a rule; the fixed-unit inference is demoted." },
       { id: "125",     label: "125", x: 2, y: 2.4, status: "open",  info: "Inside 002-390, sign 125 tends to continue the sequence (4/4 in strict rows). Structural pressure, not a reading." },
       { id: "095",     label: "095", x: 2, y: 3.2, status: "gated", info: "A closure branch. Second witness H-1993 is source-gated in CISI 3.1. One strict witness (M-71) so far." },
       { id: "705",     label: "705", x: 2, y: 4.0, status: "gated", info: "A repeated closure. Witnesses Dholavira 8758 and M-1825 are both source-gated. Zero strict witnesses yet." },
@@ -79,22 +82,23 @@ window.IVC = (function () {
     ]
   };
 
-  /* ---- Decipherer's game: spot the terminal tail --------------------- */
-  // Teaching rows, not corpus rows. They are built so that exactly one
-  // option, 533-717, sits at the end of every line it appears in, while the
-  // decoy options also turn up mid-line. That is the same test the project
-  // ran, shrunk to six lines a visitor can eyeball.
+  /* ---- Decipherer's game: spot the unit that always ends a line ------ */
+  // INVENTED teaching rows, not corpus rows. They are built so that exactly
+  // one option, 151-279, sits at the end of every line it appears in, while
+  // the decoy options also turn up mid-line. This shows what a position test
+  // looks like. 151-279 is a made-up unit, chosen so that the game does not
+  // restate the one real observation (861-533-717 on M-376 and M-391).
   var PUZZLE = {
     prompt: "One unit below only ever appears at the very END of a line. The others turn up in the middle too. Which one always closes?",
-    options: ["220-004", "533-717", "390-125", "031-002"],
-    answer: "533-717",
+    options: ["220-004", "151-279", "390-125", "031-002"],
+    answer: "151-279",
     rows: [
-      ["002","861","533","717"],
-      ["740","002","861","533","717"],
+      ["002","861","151","279"],
+      ["740","002","861","151","279"],
       ["031","002","390","125","632"],
-      ["220","004","002","861","533","717"],
+      ["220","004","002","861","151","279"],
       ["157","031","002","390","705"],
-      ["002","861","603","533","717"]
+      ["002","861","603","151","279"]
     ],
     // Per row, the [first, last] token index of the terminal tail, or null if
     // that row has none. The game lights these up once the answer is found.
@@ -126,13 +130,14 @@ window.IVC = (function () {
     { y: "2009", t: "Entropy fights back", d: "Rao et al. answer with conditional entropy in Science. The debate is still open today, by design." },
     { y: "2022", t: "Linear Elamite, contested", d: "Desset's team claims its neighbor-script deciphered. Top journal, mixed reception: venue is not validation." },
     { y: "2025", t: "The million-dollar prize", d: "Tamil Nadu announces the Iravatham Mahadevan Prize for a verified decipherment. Unclaimed." },
-    { y: "2026", t: "One brick, earned", d: "This project accepts its first structural finding after 10,000-shuffle forger tests and source-image binding. Zero readings claimed." }
+    { y: "2026", t: "One small observation", d: "This project records one descriptive observation: two seals share a three-sign string. It is not a rule, and zero readings are claimed." }
   ];
 
   /* ---- The graveyard: retracted claims, straight from claims.json ---- */
-  // Eight of the twenty-six retractions, chosen to show the range of ways a
-  // claim can fail, each with its cause of death in plain language. The id
-  // is the ledger's own claim id, so a reader can go find the full record.
+  // Seven of the eighteen retractions, plus one instrument failure marked with
+  // its own label (rip), chosen to show the range of ways a claim can fail,
+  // each with its cause of death in plain language. The id is the ledger's
+  // own claim id, so a reader can go find the full record.
   var GRAVES = [
     { id: "all_002_y_are_endings", title: "“Everything after 002 is an ending”", death: "Too broad. The skeptic pass found continuing rows; the clean version survives only inside one narrow branch." },
     { id: "internal_only_effective_unicity_gives_language_family", title: "“Cryptographic unicity can name the language”", death: "Retracted in-house: internal consistency alone cannot identify a language family. The same logic underlies famous external claims." },
@@ -141,9 +146,33 @@ window.IVC = (function () {
     { id: "bm120573_as_external_phonetic_anchor", title: "“BM 120573 gives a phonetic anchor”", death: "The object is real; the phonetic bridge was not. Killed at source normalization." },
     { id: "brahmi_shape_descent_nearest_neighbors", title: "“Brahmi shapes descend from Indus signs”", death: "Nearest-neighbor shape matching could not beat impostor forgers fed with unrelated scripts." },
     { id: "object_level_onomastic_value_attempts", title: "“We can read names off objects”", death: "Name-reading attempts failed the forger gate. No sound value survived." },
-    { id: "directionality_source_visible_and_overlap_support", title: "“Reading direction, proven from photos”", death: "Six packet versions tried. Every route stayed catalog-mediated; none earned blind source-visible support." }
+    { id: "directionality_no_overlay_source_normalized_packet", rip: "instrument failed", title: "“Reading direction, proven from photos”", death: "Not a retraction: six blind-packet versions were tried and the review instrument itself failed (too few negatives, label leaks, failed preflight). They never tested direction. Direction from sequence statistics is already published (Yadav et al. 2010)." }
   ];
-  var GRAVES_TOTAL = 26;
+  var GRAVES_TOTAL = 18;
+
+  /* ---- What the October 2026 tests show ------------------------------
+     One entry per study in research/extensions_20261001/, worded to be no
+     stronger than that study's REPORT.md. kind "live" (patina) = the result
+     holds up as described; "gated" (clay) = it did not hold up. label is the
+     exact tag the visitor reads. */
+  var TESTS = [
+    { name: "Front vs. stroke count", kind: "live", label: "holds up, as batches", dir: "front_count",
+      q: "Does the text on the front of a two-sided tablet predict the cup-and-strokes count on its back?",
+      a: "Yes, within a catalogue. But it looks like tablets made together in batches, not a rule: on newer, held-out tablets it does no better than always guessing three." },
+    { name: "034 tablets are smaller", kind: "live", label: "holds up", dir: "size_034",
+      q: "Are tablets carrying sign 034 smaller than 032 and 033 tablets of the same format?",
+      a: "About 14% smaller in area, counting each copied family once (about 10% once the excavation area is allowed for). A real size difference, not a tier and not a meaning." },
+    { name: "The 002 end effect", kind: "gated", label: "holds up, but already known", dir: "context_002",
+      q: "After sign 002, do some signs sit at the stored end more often than their own habits predict?",
+      a: "Yes for 861, 817 and 820, and it replicates in Mahadevan. But in Mahadevan's numbering these are the well-known text openers 267-99 and 391-99, already listed by Yadav et al. (2010). Only the baseline-adjusted test is new." },
+    { name: "The proposed rewrites", kind: "gated", label: "did not hold up", dir: "alternation_null",
+      q: "Do the roof/87 and surrounding-marks/211 \u201cwriting operations\u201d beat look-alike decoys?",
+      a: "Only if you ignore how they were picked. About 94 other swap types recur as often, and the lead candidate ranks last of eight models in the project\u2019s own joint test." },
+    { name: "Sanskrit dictionary fits", kind: "gated", label: "did not hold up", dir: "phonetic_null",
+      q: "Do keys that turn sign strings into Sanskrit dictionary words beat chance?",
+      a: "No. They do no better than random text that keeps the same local repetition, and the original optimizer is not in the repository." }
+  ];
+  var TESTS_BASE = "https://github.com/Cuuper22/ivc/tree/main/research/extensions_20261001/";
 
   /* ---- The artifact gallery ------------------------------------------ */
   // The eight objects the whole story hangs on. "text" holds the real
@@ -166,6 +195,6 @@ window.IVC = (function () {
     GLYPHS: GLYPHS, GLYPH_KEYS: GLYPH_KEYS,
     SITES: SITES, TRADE: TRADE,
     BRANCH: BRANCH, PUZZLE: PUZZLE, LEDGER: LEDGER,
-    TIMELINE: TIMELINE, GRAVES: GRAVES, GRAVES_TOTAL: GRAVES_TOTAL, SEALS: SEALS
+    TIMELINE: TIMELINE, GRAVES: GRAVES, GRAVES_TOTAL: GRAVES_TOTAL, TESTS: TESTS, TESTS_BASE: TESTS_BASE, SEALS: SEALS
   };
 })();

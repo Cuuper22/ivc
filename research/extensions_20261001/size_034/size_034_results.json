@@ -1,0 +1,362 @@
+{
+ "complete_or_chipped_only": {
+  "area_ratio": 0.864,
+  "area_ratio_ci95_family_bootstrap": [
+   0.791,
+   0.945
+  ],
+  "cells": 223,
+  "cells_034": 68,
+  "cells_other": 155,
+  "families": 212,
+  "label": "preservation complete/chipped only",
+  "log_area_diff": -0.1457,
+  "objects": 303,
+  "perm_p_one_sided_034_smaller": 0.0008,
+  "perm_p_two_sided": 0.0019,
+  "permutation_strata": 4
+ },
+ "data": {
+  "families_in_309": 216,
+  "frozen_309_by_era": {
+   "harp": 132,
+   "old": 177
+  },
+  "frozen_309_by_subtype": {
+   "032": 85,
+   "033": 113,
+   "034": 111
+  },
+  "frozen_309_populated": {
+   "area_section_not_dash": 255,
+   "material_steatite_or_faience": 256,
+   "period_not_dash": 126,
+   "phase_not_dash": 217
+  },
+  "lipi_tablet_objects_with_short_700_03x_face": 379,
+  "of_which_in_frozen_309": 309,
+  "with_positive_dimensions": 328
+ },
+ "dim_logH": {
+  "ratio": 0.927
+ },
+ "dim_logV": {
+  "ratio": 0.928
+ },
+ "family_level_034_vs_032": {
+  "area_ratio": 0.841,
+  "area_ratio_ci95_family_bootstrap": [
+   0.753,
+   0.943
+  ],
+  "cells": 147,
+  "cells_034": 69,
+  "cells_other": 78,
+  "families": 143,
+  "label": "034 vs 032 only",
+  "log_area_diff": -0.173,
+  "objects": 196,
+  "perm_p_one_sided_034_smaller": 0.001,
+  "perm_p_two_sided": 0.0024,
+  "permutation_strata": 4
+ },
+ "family_level_034_vs_033": {
+  "area_ratio": 0.874,
+  "area_ratio_ci95_family_bootstrap": [
+   0.798,
+   0.957
+  ],
+  "cells": 159,
+  "cells_034": 69,
+  "cells_other": 90,
+  "families": 151,
+  "label": "034 vs 033 only",
+  "log_area_diff": -0.1349,
+  "objects": 224,
+  "perm_p_one_sided_034_smaller": 0.0019,
+  "perm_p_two_sided": 0.0044,
+  "permutation_strata": 4
+ },
+ "family_level_pooled_by_format": {
+  "area_ratio": 0.861,
+  "area_ratio_ci95_family_bootstrap": [
+   0.791,
+   0.934
+  ],
+  "cells": 228,
+  "cells_034": 69,
+  "cells_other": 159,
+  "families": 216,
+  "label": "034 vs 032/033, family-collapsed, strata=format",
+  "log_area_diff": -0.1498,
+  "objects": 309,
+  "perm_p_one_sided_034_smaller": 0.0005,
+  "perm_p_two_sided": 0.0012,
+  "permutation_strata": 4
+ },
+ "harp_era_only": {
+  "area_ratio": 0.871,
+  "area_ratio_ci95_family_bootstrap": [
+   0.771,
+   0.988
+  ],
+  "cells": 99,
+  "cells_034": 40,
+  "cells_other": 59,
+  "families": 95,
+  "label": "HARP era only",
+  "log_area_diff": -0.1385,
+  "objects": 132,
+  "perm_p_one_sided_034_smaller": 0.0166,
+  "perm_p_two_sided": 0.0345,
+  "permutation_strata": 4
+ },
+ "nboot": 5000,
+ "nperm": 20000,
+ "object_level_one_vote_per_object": {
+  "area_ratio": 0.857,
+  "area_ratio_ci95_family_bootstrap": [
+   0.795,
+   0.927
+  ],
+  "cells": 309,
+  "cells_034": 111,
+  "cells_other": 198,
+  "families": 309,
+  "label": "one vote per object (NOT family-collapsed)",
+  "log_area_diff": -0.1541,
+  "objects": 309,
+  "perm_p_one_sided_034_smaller": 0.0,
+  "perm_p_two_sided": 0.0001,
+  "permutation_strata": 4
+ },
+ "old_era_only": {
+  "area_ratio": 0.903,
+  "area_ratio_ci95_family_bootstrap": [
+   0.795,
+   1.021
+  ],
+  "cells": 137,
+  "cells_034": 31,
+  "cells_other": 106,
+  "families": 134,
+  "label": "old (H<1500) era only",
+  "log_area_diff": -0.1015,
+  "objects": 177,
+  "perm_p_one_sided_034_smaller": 0.0661,
+  "perm_p_two_sided": 0.1271,
+  "permutation_strata": 4
+ },
+ "ols_cell_level": {
+  "format": {
+   "area_ratio": 0.861,
+   "ci95_ratio": [
+    0.791,
+    0.938
+   ],
+   "coef_is034": -0.1498,
+   "n_cells": 228,
+   "n_families": 216,
+   "n_params": 5,
+   "se_cluster_family": 0.0435,
+   "z": -3.44
+  },
+  "format+era": {
+   "area_ratio": 0.876,
+   "ci95_ratio": [
+    0.802,
+    0.956
+   ],
+   "coef_is034": -0.1327,
+   "n_cells": 228,
+   "n_families": 216,
+   "n_params": 6,
+   "se_cluster_family": 0.0449,
+   "z": -2.96
+  },
+  "format+era+material": {
+   "area_ratio": 0.872,
+   "ci95_ratio": [
+    0.799,
+    0.951
+   ],
+   "coef_is034": -0.1374,
+   "n_cells": 228,
+   "n_families": 216,
+   "n_params": 8,
+   "se_cluster_family": 0.0442,
+   "z": -3.11
+  },
+  "format+era+material+area_section": {
+   "area_ratio": 0.904,
+   "ci95_ratio": [
+    0.82,
+    0.997
+   ],
+   "coef_is034": -0.1013,
+   "n_cells": 228,
+   "n_families": 216,
+   "n_params": 33,
+   "se_cluster_family": 0.0499,
+   "z": -2.03
+  },
+  "format+era+material+area_section+phase": {
+   "area_ratio": 0.904,
+   "ci95_ratio": [
+    0.816,
+    1.001
+   ],
+   "coef_is034": -0.1014,
+   "n_cells": 228,
+   "n_families": 216,
+   "n_params": 43,
+   "se_cluster_family": 0.0522,
+   "z": -1.94
+  }
+ },
+ "perm_within_format_x_area": {
+  "area_ratio": 0.861,
+  "area_ratio_ci95_family_bootstrap": [
+   0.792,
+   0.938
+  ],
+  "cells": 228,
+  "cells_034": 69,
+  "cells_other": 159,
+  "families": 216,
+  "label": "perm within format x area-section",
+  "log_area_diff": -0.1498,
+  "objects": 309,
+  "perm_p_one_sided_034_smaller": 0.0861,
+  "perm_p_two_sided": 0.0861,
+  "permutation_strata": 50
+ },
+ "perm_within_format_x_era": {
+  "area_ratio": 0.861,
+  "area_ratio_ci95_family_bootstrap": [
+   0.788,
+   0.937
+  ],
+  "cells": 228,
+  "cells_034": 69,
+  "cells_other": 159,
+  "families": 216,
+  "label": "perm within format x era",
+  "log_area_diff": -0.1498,
+  "objects": 309,
+  "perm_p_one_sided_034_smaller": 0.0025,
+  "perm_p_two_sided": 0.0026,
+  "permutation_strata": 8
+ },
+ "perm_within_format_x_era_x_area": {
+  "area_ratio": 0.861,
+  "area_ratio_ci95_family_bootstrap": [
+   0.791,
+   0.939
+  ],
+  "cells": 228,
+  "cells_034": 69,
+  "cells_other": 159,
+  "families": 216,
+  "label": "perm within format x era x area-section",
+  "log_area_diff": -0.1498,
+  "objects": 309,
+  "perm_p_one_sided_034_smaller": 0.0728,
+  "perm_p_two_sided": 0.0728,
+  "permutation_strata": 53
+ },
+ "perm_within_format_x_era_x_material": {
+  "area_ratio": 0.861,
+  "area_ratio_ci95_family_bootstrap": [
+   0.793,
+   0.935
+  ],
+  "cells": 228,
+  "cells_034": 69,
+  "cells_other": 159,
+  "families": 216,
+  "label": "perm within format x era x material",
+  "log_area_diff": -0.1498,
+  "objects": 309,
+  "perm_p_one_sided_034_smaller": 0.0022,
+  "perm_p_two_sided": 0.0022,
+  "permutation_strata": 15
+ },
+ "phase_populated_only_perm_within_format_x_phase": {
+  "area_ratio": 0.836,
+  "area_ratio_ci95_family_bootstrap": [
+   0.759,
+   0.923
+  ],
+  "cells": 168,
+  "cells_034": 52,
+  "cells_other": 116,
+  "families": 160,
+  "label": "phase populated only, perm within format x phase",
+  "log_area_diff": -0.1796,
+  "objects": 217,
+  "perm_p_one_sided_034_smaller": 0.0047,
+  "perm_p_two_sided": 0.0047,
+  "permutation_strata": 27
+ },
+ "seed": 20261002,
+ "within_family_pairs": {
+  "area_ratio": 0.877,
+  "family_format_pairs": 10,
+  "mean_log_diff": -0.1309,
+  "n_034_larger": 2,
+  "n_034_smaller": 8,
+  "sign_flip_perm_p_034_smaller": 0.0699
+ },
+ "without_H2218_2239_series": {
+  "area_ratio": 0.861,
+  "area_ratio_ci95_family_bootstrap": [
+   0.791,
+   0.944
+  ],
+  "cells": 226,
+  "cells_034": 68,
+  "cells_other": 158,
+  "families": 215,
+  "label": "excluding the H-2218..H-2239 series family",
+  "log_area_diff": -0.1497,
+  "objects": 287,
+  "perm_p_one_sided_034_smaller": 0.0004,
+  "perm_p_two_sided": 0.0012,
+  "permutation_strata": 4
+ },
+ "without_cup_last": {
+  "area_ratio": 0.857,
+  "area_ratio_ci95_family_bootstrap": [
+   0.781,
+   0.941
+  ],
+  "cells": 189,
+  "cells_034": 61,
+  "cells_other": 128,
+  "families": 179,
+  "label": "700-first order only",
+  "log_area_diff": -0.1544,
+  "objects": 261,
+  "perm_p_one_sided_034_smaller": 0.0012,
+  "perm_p_two_sided": 0.0028,
+  "permutation_strata": 4
+ },
+ "without_two_largest_families": {
+  "area_ratio": 0.86,
+  "area_ratio_ci95_family_bootstrap": [
+   0.786,
+   0.94
+  ],
+  "cells": 223,
+  "cells_034": 67,
+  "cells_other": 156,
+  "families": 214,
+  "label": "excluding two largest families ['long:+400-740-176+', 'series:H-2218-H-2239']",
+  "log_area_diff": -0.1512,
+  "objects": 261,
+  "perm_p_one_sided_034_smaller": 0.001,
+  "perm_p_two_sided": 0.0018,
+  "permutation_strata": 4
+ }
+}

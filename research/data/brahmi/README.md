@@ -40,7 +40,7 @@ The second gate widened both sides of the comparison and produced these files:
 - `source_token_descent_fetch_log_v2.csv`: URL/status/byte/hash fetch log.
 - `indoskript_letter_images_v2/` and `source_token_crops_v2/`: local research caches for provenance-backed reruns.
 
-V2 result: no candidate-only row and no accepted phonetic anchor. The closest rows (`817=dhya`, `527=ra`, `472=ra`, `060=ka`, `061=ra`) all fail the pre-registered null gates. A duplicate-collapse audit adds another skeptic boundary: `817`, `472`, and `060` collapse below two unique token hashes, while `527` and `061` are single-CISI only — their apparent repetitions are copies, not independent witnesses. See `docs/brahmi_source_token_descent_gate_v2.md`.
+V2 result: no candidate-only row and no accepted phonetic anchor. The closest rows (`817=dhya`, `527=ra`, `472=ra`, `060=ka`, `061=ra`) all fail the pre-registered null gates. A duplicate-collapse audit adds another skeptic boundary: `817`, `472`, and `060` collapse below two unique token hashes, while `527` and `061` are single-CISI only — their apparent repetitions are copies, not independent witnesses. See `research/docs/archive/brahmi_source_token_descent_gate_v2.md`.
 
 The third gate turned that skeptic boundary into a hard filter and produced these files:
 
@@ -48,7 +48,7 @@ The third gate turned that skeptic boundary into a hard filter and produced thes
 - `brahmi_independent_source_token_gate_v3.csv`: family-level independence and blocked-reason table.
 - `brahmi_independent_source_token_gate_v3_summary.json`: decision record.
 
-V3 result: all 83 v2 families are blocked before review. Review-packet eligible rows = 0, candidate-only rows = 0, accepted phonetic anchors = 0. The v2 near-misses are stopped at the independence floor: `817`, `472`, and `060` have one unique token hash and one CISI; `527` and `061` have two unique token hashes and one CISI. A family built from copies of one token is one witness, not several. See `docs/brahmi_independent_source_token_gate_v3.md`.
+V3 result: all 83 v2 families are blocked before review. Review-packet eligible rows = 0, candidate-only rows = 0, accepted phonetic anchors = 0. The v2 near-misses are stopped at the independence floor: `817`, `472`, and `060` have one unique token hash and one CISI; `527` and `061` have two unique token hashes and one CISI. A family built from copies of one token is one witness, not several. See `research/docs/archive/brahmi_independent_source_token_gate_v3.md`.
 
 The real-token impostor forger asks a sharper null question — how often do families built from real Indus tokens of *other* signs match Brahmi just as well? It produced these files:
 
@@ -60,6 +60,6 @@ The real-token impostor forger asks a sharper null question — how often do fam
 - `brahmi_real_token_low_null_reaudit_20260531.csv`: row-level low-null blocker taxonomy from the replacement run.
 - `brahmi_real_token_low_null_reaudit_20260531_summary.json`: decision record for the 21 low-null rows from the replacement run.
 
-Real-token result: no candidate-only row and no accepted phonetic anchor. Of 83 v2 families, 82 had full 1,000-iteration impostor runs, 61 had a real-token impostor null share above `0.01`, 21 had a null share at or below `0.01` but still failed v3 independence and v2 acceptance, and one legacy isolated-token family had an insufficient impostor pool. See `docs/brahmi_real_token_impostor_forger_v3.md`.
+Real-token result: no candidate-only row and no accepted phonetic anchor. Of 83 v2 families, 82 had full 1,000-iteration impostor runs, 61 had a real-token impostor null share above `0.01`, 21 had a null share at or below `0.01` but still failed v3 independence and v2 acceptance, and one legacy isolated-token family had an insufficient impostor pool. See `research/docs/archive/brahmi_real_token_impostor_forger_v3.md`.
 
-Replacement low-null reaudit result: the 21 low-null rows contain no hidden survivors. All 21 fail the original shape-null threshold, 19 also fail the label-null threshold, 21 fail v3 preflight, 11 fail minimum source-token independence, 14 fail duplicate-collapse unanimity, and no row passes both minimum independence and duplicate-collapse unanimity. See `docs/brahmi_real_token_low_null_reaudit_20260531.md`.
+Replacement low-null reaudit result: the 21 low-null rows contain no hidden survivors. All 21 fail the original shape-null threshold, 19 also fail the label-null threshold, 21 fail v3 preflight, 11 fail minimum source-token independence, 14 fail duplicate-collapse unanimity, and no row passes both minimum independence and duplicate-collapse unanimity. See `research/docs/archive/brahmi_real_token_low_null_reaudit_20260531.md`.

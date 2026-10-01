@@ -32,4 +32,4 @@ Status: `audit_passed_with_caveats`.
 
 The audit found zero duplicate primary keys, zero dangling reference errors, zero evidence hash/path errors, and zero accepted crosswalk edges. It found eight empty Lipi witness sequences, recorded as warnings. The highest-pressure review targets are candidate edges such as `740 -> P324`, `002 -> P122`, `032 -> P145`, and the unresolved `817/861 -> P385` pressure pair.
 
-Human-readable note: `docs/sign_crosswalk_audit.md`.
+Human-readable note: `research/docs/archive/sign_crosswalk_audit.md`.

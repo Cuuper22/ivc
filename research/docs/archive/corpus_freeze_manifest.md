@@ -213,7 +213,7 @@ Status: first audit artifacts materialized locally.
 
 Local artifacts:
 
-- [Open prototype corpus artifacts](../data/open_prototype/README.md)
+- [Open prototype corpus artifacts](../../data/open_prototype/README.md)
 - [Open prototype results](open_prototype_results.md)
 
 Current limitation:

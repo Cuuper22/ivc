@@ -1,0 +1,80 @@
+name: Reproduce
+
+# Syntax checks, the Mahadevan audit, the full campaign, the verification stage and the SQLite
+# build, then a check that the headline numbers (census counts, paired-face counts, joint model
+# scores and ranking) come out the same. Float noise in report files is ignored.
+on:
+  push:
+    paths:
+      - "research/**"
+      - "db/**"
+      - "docs/**"
+      - "requirements*.txt"
+      - "Makefile"
+      - ".github/workflows/reproduce.yml"
+  pull_request:
+    paths:
+      - "research/**"
+      - "db/**"
+      - "docs/**"
+      - "requirements*.txt"
+      - "Makefile"
+      - ".github/workflows/reproduce.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: reproduce-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      # The repo is 2 GB+ (mostly evidence/). Check out only what the make targets read.
+      # Top-level files come with cone mode. Evidence-path warnings from `make db` for the
+      # skipped evidence/ images are expected; build errors fail the job.
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout: |
+            research
+            db
+            docs
+            slm
+            embeddings
+            tools
+            evidence/tmp/mayig_feature_namespace_probe
+            evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets
+          persist-credentials: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - run: python -m pip install -r requirements.txt
+
+      - name: make check audit verify db campaign
+        run: make check audit verify db campaign
+
+      # Compare the numbers the conclusions rest on, not file bytes.
+      - name: Headline numbers unchanged
+        run: python research/tools/check_headline_numbers.py
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reproduce-build
+          path: build/
+          retention-days: 7

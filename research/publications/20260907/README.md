@@ -1,3 +1,7 @@
+> **Status (2026-10-01).** Paper 2's lead candidate (roof/87 and surrounding-marks/211 as connected writing operations) does not survive: it ranks last of 8 models in the repo's joint test and its alternations are selection-sensitive ([report](../../extensions_20261001/alternation_null/REPORT.md)). Its phonetic section is not reproducible: the optimizer is missing and the dictionary fits do not beat Markov controls ([report](../../extensions_20261001/phonetic_null/REPORT.md)).
+> Paper 1 (the LLM research-process paper) is unaffected and is the stronger paper.
+> **Paper 2 draft 0.2 (2026-10-01)** rebuilds the paper around what survived testing: [PAPER_2_v0.2.md](../20261001/PAPER_2_v0.2.md) (also in the Drive folder).
+
 # Publication drafts and next research program — 7 September 2026
 
 Author: **Cúper (Yousef) Anas**, independent researcher, San Francisco. Research snapshot: `36d23c1a9af103524da68b89aeb5a5847aac588b`. Manuscript version: **author draft 0.1**.

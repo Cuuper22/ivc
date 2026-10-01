@@ -1,0 +1,633 @@
+{
+ "Y_set": [
+  "031",
+  "220",
+  "365",
+  "368",
+  "390",
+  "595",
+  "817",
+  "820",
+  "824",
+  "861"
+ ],
+ "data": {
+  "distinct_texts_used": 2536,
+  "occurrences_after_002": 592,
+  "occurrences_with_legible_predecessor": 8103,
+  "rows_RL": 4266,
+  "rows_RL_right_end_intact": 3684,
+  "rows_total": 5679
+ },
+ "leave_one_Y_out_pooled_OR": {
+  "031": 2.82,
+  "220": 2.33,
+  "365": 2.11,
+  "368": 2.24,
+  "390": 2.32,
+  "595": 2.24,
+  "817": 1.73,
+  "820": 1.56,
+  "824": 2.11,
+  "861": 1.62
+ },
+ "mahadevan_replication": {
+  "direct_edges_lipi_to_mahadevan_namespace": 0,
+  "edges_from_lipi_002": [
+   {
+    "accepted_for_analysis": "false",
+    "edge_id": "edge_00002",
+    "mapping_state": "conflict",
+    "review_status": "source_visible_counterexamples_block_exact_mapping",
+    "to": "mayig_p:P122"
+   }
+  ],
+  "exact_edges_in_whole_crosswalk": [
+   {
+    "edge_id": "edge_00001",
+    "from": "lipi_numeric:740",
+    "to": "mayig_p:P324"
+   }
+  ],
+  "verdict": "no exact Lipi 002 -> Mahadevan mapping; Mahadevan replication not run"
+ },
+ "min_after_002": 5,
+ "nperm": 20000,
+ "per_Y": [
+  {
+   "P_final_after_X": 0.825,
+   "P_final_otherwise": 0.541,
+   "Y": "861",
+   "after_X_final": 113,
+   "after_X_n": 137,
+   "ci95": [
+    1.83,
+    8.57
+   ],
+   "fisher_p_two_sided": 0.00077,
+   "holm_p": 0.00693,
+   "odds_ratio_haldane": 3.95,
+   "other_final": 20,
+   "other_n": 37
+  },
+  {
+   "P_final_after_X": 0.942,
+   "P_final_otherwise": 0.719,
+   "Y": "817",
+   "after_X_final": 114,
+   "after_X_n": 121,
+   "ci95": [
+    2.15,
+    17.73
+   ],
+   "fisher_p_two_sided": 0.00107,
+   "holm_p": 0.00856,
+   "odds_ratio_haldane": 6.17,
+   "other_final": 23,
+   "other_n": 32
+  },
+  {
+   "P_final_after_X": 0.93,
+   "P_final_otherwise": 0.718,
+   "Y": "820",
+   "after_X_final": 80,
+   "after_X_n": 86,
+   "ci95": [
+    1.95,
+    12.46
+   ],
+   "fisher_p_two_sided": 0.000254,
+   "holm_p": 0.00254,
+   "odds_ratio_haldane": 4.93,
+   "other_final": 61,
+   "other_n": 85
+  },
+  {
+   "P_final_after_X": 0.0,
+   "P_final_otherwise": 0.09,
+   "Y": "390",
+   "after_X_final": 0,
+   "after_X_n": 15,
+   "ci95": [
+    0.02,
+    5.64
+   ],
+   "fisher_p_two_sided": 0.599,
+   "holm_p": 1.0,
+   "odds_ratio_haldane": 0.31,
+   "other_final": 8,
+   "other_n": 89
+  },
+  {
+   "P_final_after_X": 0.0,
+   "P_final_otherwise": 0.375,
+   "Y": "031",
+   "after_X_final": 0,
+   "after_X_n": 11,
+   "ci95": [
+    0.0,
+    1.25
+   ],
+   "fisher_p_two_sided": 0.00874,
+   "holm_p": 0.06117,
+   "odds_ratio_haldane": 0.07,
+   "other_final": 51,
+   "other_n": 136
+  },
+  {
+   "P_final_after_X": 0.0,
+   "P_final_otherwise": 0.085,
+   "Y": "368",
+   "after_X_final": 0,
+   "after_X_n": 11,
+   "ci95": [
+    0.02,
+    8.38
+   ],
+   "fisher_p_two_sided": 1.0,
+   "holm_p": 1.0,
+   "odds_ratio_haldane": 0.42,
+   "other_final": 4,
+   "other_n": 47
+  },
+  {
+   "P_final_after_X": 0.0,
+   "P_final_otherwise": 0.118,
+   "Y": "220",
+   "after_X_final": 0,
+   "after_X_n": 10,
+   "ci95": [
+    0.02,
+    6.15
+   ],
+   "fisher_p_two_sided": 0.609,
+   "holm_p": 1.0,
+   "odds_ratio_haldane": 0.35,
+   "other_final": 27,
+   "other_n": 229
+  },
+  {
+   "P_final_after_X": 0.0,
+   "P_final_otherwise": 0.167,
+   "Y": "595",
+   "after_X_final": 0,
+   "after_X_n": 7,
+   "ci95": [
+    0.01,
+    6.48
+   ],
+   "fisher_p_two_sided": 0.534,
+   "holm_p": 1.0,
+   "odds_ratio_haldane": 0.3,
+   "other_final": 3,
+   "other_n": 18
+  },
+  {
+   "P_final_after_X": 1.0,
+   "P_final_otherwise": 1.0,
+   "Y": "824",
+   "after_X_final": 7,
+   "after_X_n": 7,
+   "ci95": [
+    0.07,
+    366.35
+   ],
+   "fisher_p_two_sided": 1.0,
+   "holm_p": 1.0,
+   "odds_ratio_haldane": 5.0,
+   "other_final": 1,
+   "other_n": 1
+  },
+  {
+   "P_final_after_X": 0.0,
+   "P_final_otherwise": 0.0,
+   "Y": "365",
+   "after_X_final": 0,
+   "after_X_n": 5,
+   "ci95": [
+    0.01,
+    50.03
+   ],
+   "fisher_p_two_sided": 1.0,
+   "holm_p": 1.0,
+   "odds_ratio_haldane": 0.82,
+   "other_final": 0,
+   "other_n": 4
+  }
+ ],
+ "placebo_other_predecessors": [
+  {
+   "X": "740",
+   "ci95": [
+    0.14,
+    0.27
+   ],
+   "n_Y": 48,
+   "n_after_X": 807,
+   "odds_ratio": 0.19,
+   "perm_p_one_sided": 0.10004
+  },
+  {
+   "X": "002",
+   "ci95": [
+    1.38,
+    3.21
+   ],
+   "n_Y": 10,
+   "n_after_X": 410,
+   "odds_ratio": 2.11,
+   "perm_p_one_sided": 5e-05
+  },
+  {
+   "X": "220",
+   "ci95": [
+    0.5,
+    1.14
+   ],
+   "n_Y": 11,
+   "n_after_X": 185,
+   "odds_ratio": 0.76,
+   "perm_p_one_sided": 0.09305
+  },
+  {
+   "X": "400",
+   "ci95": [
+    0.11,
+    1.29
+   ],
+   "n_Y": 7,
+   "n_after_X": 136,
+   "odds_ratio": 0.38,
+   "perm_p_one_sided": 0.0967
+  },
+  {
+   "X": "032",
+   "ci95": [
+    0.26,
+    1.12
+   ],
+   "n_Y": 9,
+   "n_after_X": 116,
+   "odds_ratio": 0.54,
+   "perm_p_one_sided": 0.0975
+  },
+  {
+   "X": "060",
+   "ci95": [
+    12.92,
+    71.08
+   ],
+   "n_Y": 4,
+   "n_after_X": 143,
+   "odds_ratio": 30.3,
+   "perm_p_one_sided": 5e-05
+  },
+  {
+   "X": "520",
+   "ci95": [
+    0.07,
+    0.41
+   ],
+   "n_Y": 8,
+   "n_after_X": 139,
+   "odds_ratio": 0.17,
+   "perm_p_one_sided": 0.10004
+  },
+  {
+   "X": "390",
+   "ci95": [
+    0.19,
+    0.61
+   ],
+   "n_Y": 7,
+   "n_after_X": 108,
+   "odds_ratio": 0.34,
+   "perm_p_one_sided": 0.10004
+  },
+  {
+   "X": "240",
+   "ci95": [
+    0.54,
+    1.53
+   ],
+   "n_Y": 9,
+   "n_after_X": 142,
+   "odds_ratio": 0.91,
+   "perm_p_one_sided": 0.06895
+  },
+  {
+   "X": "741",
+   "ci95": [
+    0.03,
+    1.71
+   ],
+   "n_Y": 4,
+   "n_after_X": 55,
+   "odds_ratio": 0.21,
+   "perm_p_one_sided": 0.09875
+  },
+  {
+   "X": "001",
+   "ci95": [
+    0.2,
+    0.99
+   ],
+   "n_Y": 8,
+   "n_after_X": 74,
+   "odds_ratio": 0.44,
+   "perm_p_one_sided": 0.0987
+  },
+  {
+   "X": "033",
+   "ci95": [
+    0.14,
+    0.62
+   ],
+   "n_Y": 3,
+   "n_after_X": 103,
+   "odds_ratio": 0.29,
+   "perm_p_one_sided": 0.1
+  },
+  {
+   "X": "233",
+   "ci95": [
+    0.71,
+    2.03
+   ],
+   "n_Y": 9,
+   "n_after_X": 104,
+   "odds_ratio": 1.2,
+   "perm_p_one_sided": 0.03075
+  },
+  {
+   "X": "031",
+   "ci95": [
+    0.17,
+    3.49
+   ],
+   "n_Y": 4,
+   "n_after_X": 39,
+   "odds_ratio": 0.76,
+   "perm_p_one_sided": 0.07565
+  },
+  {
+   "X": "235",
+   "ci95": [
+    0.68,
+    3.0
+   ],
+   "n_Y": 7,
+   "n_after_X": 86,
+   "odds_ratio": 1.43,
+   "perm_p_one_sided": 0.0213
+  },
+  {
+   "X": "590",
+   "ci95": [
+    0.43,
+    1.97
+   ],
+   "n_Y": 7,
+   "n_after_X": 54,
+   "odds_ratio": 0.92,
+   "perm_p_one_sided": 0.06405
+  },
+  {
+   "X": "705",
+   "ci95": [
+    0.59,
+    2.61
+   ],
+   "n_Y": 6,
+   "n_after_X": 52,
+   "odds_ratio": 1.24,
+   "perm_p_one_sided": 0.03505
+  },
+  {
+   "X": "100",
+   "ci95": [
+    0.44,
+    1.87
+   ],
+   "n_Y": 3,
+   "n_after_X": 57,
+   "odds_ratio": 0.9,
+   "perm_p_one_sided": 0.06825
+  },
+  {
+   "X": "798",
+   "ci95": [
+    0.15,
+    3.4
+   ],
+   "n_Y": 5,
+   "n_after_X": 38,
+   "odds_ratio": 0.72,
+   "perm_p_one_sided": 0.07585
+  },
+  {
+   "X": "368",
+   "ci95": [
+    0.17,
+    1.16
+   ],
+   "n_Y": 2,
+   "n_after_X": 25,
+   "odds_ratio": 0.45,
+   "perm_p_one_sided": 0.09655
+  },
+  {
+   "X": "760",
+   "ci95": null,
+   "n_Y": 2,
+   "n_after_X": 11,
+   "odds_ratio": null,
+   "perm_p_one_sided": 0.10004
+  },
+  {
+   "X": "415",
+   "ci95": [
+    0.79,
+    3.93
+   ],
+   "n_Y": 4,
+   "n_after_X": 43,
+   "odds_ratio": 1.77,
+   "perm_p_one_sided": 0.0126
+  },
+  {
+   "X": "003",
+   "ci95": null,
+   "n_Y": 4,
+   "n_after_X": 38,
+   "odds_ratio": null,
+   "perm_p_one_sided": 0.10004
+  },
+  {
+   "X": "176",
+   "ci95": [
+    0.21,
+    4.25
+   ],
+   "n_Y": 3,
+   "n_after_X": 26,
+   "odds_ratio": 0.93,
+   "perm_p_one_sided": 0.06305
+  }
+ ],
+ "pooled_length_ge_3_only": {
+  "ci95": [
+   1.55,
+   3.66
+  ],
+  "expected_final_after_X_under_per_Y_baseline": 292.8,
+  "logistic_beta": 0.867,
+  "mantel_haenszel_or": 2.41,
+  "n_after_X": 406,
+  "n_after_X_final": 310,
+  "n_occurrences": 1061,
+  "odds_ratio": 2.38,
+  "perm_p_one_sided": 0.0001,
+  "wald_z": 3.96
+ },
+ "pooled_per_Y_intercept": {
+  "ci95": [
+   1.38,
+   3.21
+  ],
+  "expected_final_after_X_under_per_Y_baseline": 298.7,
+  "logistic_beta": 0.744,
+  "mantel_haenszel_or": 2.12,
+  "n_after_X": 410,
+  "n_after_X_final": 314,
+  "n_occurrences": 1088,
+  "odds_ratio": 2.11,
+  "perm_p_one_sided": 0.0003,
+  "wald_z": 3.47
+ },
+ "pooled_plus_length_dummies": {
+  "ci95": [
+   2.04,
+   5.07
+  ],
+  "expected_final_after_X_under_per_Y_baseline": 298.71,
+  "logistic_beta": 1.167,
+  "mantel_haenszel_or": 2.12,
+  "n_after_X": 410,
+  "n_after_X_final": 314,
+  "n_occurrences": 1088,
+  "odds_ratio": 3.21,
+  "perm_p_one_sided": 0.0005,
+  "wald_z": 5.02
+ },
+ "seed": 20261003,
+ "sensitivity_include_text_initial_tokens": {
+  "per_Y": {
+   "031": {
+    "OR": 0.09,
+    "P_final_otherwise": 0.331,
+    "ci95": [
+     0.01,
+     1.51
+    ],
+    "holm_p": 0.13015
+   },
+   "220": {
+    "OR": 0.38,
+    "P_final_otherwise": 0.111,
+    "ci95": [
+     0.02,
+     6.61
+    ],
+    "holm_p": 1.0
+   },
+   "365": {
+    "OR": 1.0,
+    "P_final_otherwise": 0.0,
+    "ci95": [
+     0.02,
+     60.0
+    ],
+    "holm_p": 1.0
+   },
+   "368": {
+    "OR": 0.67,
+    "P_final_otherwise": 0.055,
+    "ci95": [
+     0.03,
+     13.32
+    ],
+    "holm_p": 1.0
+   },
+   "390": {
+    "OR": 0.6,
+    "P_final_otherwise": 0.048,
+    "ci95": [
+     0.03,
+     10.86
+    ],
+    "holm_p": 1.0
+   },
+   "595": {
+    "OR": 0.47,
+    "P_final_otherwise": 0.111,
+    "ci95": [
+     0.02,
+     10.09
+    ],
+    "holm_p": 1.0
+   },
+   "817": {
+    "OR": 10.07,
+    "P_final_otherwise": 0.605,
+    "ci95": [
+     3.79,
+     26.78
+    ],
+    "holm_p": 2e-05
+   },
+   "820": {
+    "OR": 7.75,
+    "P_final_otherwise": 0.616,
+    "ci95": [
+     3.17,
+     18.97
+    ],
+    "holm_p": 0.0
+   },
+   "824": {
+    "OR": 35.0,
+    "P_final_otherwise": 0.25,
+    "ci95": [
+     1.12,
+     1094.8
+    ],
+    "holm_p": 0.14545
+   },
+   "861": {
+    "OR": 5.76,
+    "P_final_otherwise": 0.444,
+    "ci95": [
+     2.79,
+     11.92
+    ],
+    "holm_p": 3e-05
+   }
+  },
+  "pooled": {
+   "ci95": [
+    2.46,
+    5.32
+   ],
+   "expected_final_after_X_under_per_Y_baseline": 281.3,
+   "logistic_beta": 1.287,
+   "mantel_haenszel_or": 3.75,
+   "n_after_X": 410,
+   "n_after_X_final": 314,
+   "n_occurrences": 1264,
+   "odds_ratio": 3.62,
+   "perm_p_one_sided": 5e-05,
+   "wald_z": 6.55
+  }
+ }
+}

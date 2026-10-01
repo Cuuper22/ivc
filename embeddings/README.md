@@ -52,7 +52,7 @@ py embeddings/validate_recovery.py        # THE GATE: do image-NN recover same B
 | Modality | Source | Use |
 |---|---|---|
 | image | sign crops (Brahmi letter images, source-token crops, Indus component crops) | crosswalk / allograph **candidate generation** — the project's manual bottleneck |
-| text  | `research/docs/*.md` | semantic search over the lab notebook |
+| text  | `research/docs/**/*.md` | semantic search over the lab notebook |
 | text  | witness `sign_sequence`, sign descriptions | cluster/search formulae and signs |
 
 ## Validate before trusting (the honest first move)

@@ -8,7 +8,7 @@
 <meta name="color-scheme" content="dark" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="The Indus Script · An Excavation of Data" />
-<meta property="og:description" content="100 years undeciphered. 4,000 inscriptions. No Rosetta Stone. An interactive, honest attempt that proudly leads with five zeros and one verified brick." />
+<meta property="og:description" content="100 years undeciphered. 4,000 inscriptions. No Rosetta Stone. An interactive, honest attempt that proudly leads with five zeros and one small descriptive observation." />
 <meta property="og:url" content="https://cuuper22.github.io/ivc/" />
 <meta property="og:image" content="https://cuuper22.github.io/ivc/og.png" />
 <meta property="og:image:width" content="1200" />
@@ -39,10 +39,11 @@
     <a href="#century">Century</a>
     <a href="#graveyard">Graveyard</a>
     <a href="#proof">Proof</a>
+    <a href="#tests">Tests</a>
     <a href="#play">Try it</a>
     <a href="#map">Map</a>
   </nav>
-  <a class="btn btn-ghost" href="https://github.com/Cuuper22/ivc" target="_blank" rel="noopener">
+  <a class="btn btn-ghost" href="https://github.com/Cuuper22/ivc" target="_blank" rel="noopener" aria-label="Repository on GitHub">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
     Repository
   </a>
@@ -69,7 +70,7 @@
         <span class="glyph is-verified">533</span><span class="glyph-sep">·</span>
         <span class="glyph is-verified">717</span>
       </div>
-      <span class="hero-seal-cap">The one accepted finding so far, and it is about position only: after <b>002-861</b>, the unit <b class="patina">533-717</b> always closes the line and never continues it. Witnesses M-376, M-391.</span>
+      <span class="hero-seal-cap">The one accepted item is a description, not a rule: two seals, M-376 and M-391, share the same three-sign string <b class="patina">861-533-717</b> after <b>002</b>, at the reading-initial end (stored-final in the Lipi catalogue). Sign 533 occurs on no other seal.</span>
     </div>
   </div>
   <div class="scrollhint" aria-hidden="true">scroll<span></span></div>
@@ -161,7 +162,7 @@
       <p class="lead">Nothing is accepted because it looks right. A candidate has to pass every gate below, in order, and most die at gate one. These four gates are the whole reason the ledger can be trusted.</p>
     </div>
     <div class="gauntlet reveal">
-      <div class="gate"><span class="gate-n">Gate 01</span><h3>Forger &amp; null models</h3><p>Shuffle the data ten thousand ways and hunt for the pattern in the shuffles. If randomized text produces it just as strongly, the pattern is noise. Whatever survives carries a measured false-positive rate.</p></div>
+      <div class="gate"><span class="gate-n">Gate 01</span><h3>Forger &amp; null models</h3><p>Shuffle the data ten thousand ways and hunt for the pattern in the shuffles. If randomized text produces it just as strongly, the pattern is noise. The rate is only meaningful if the pattern was fixed before looking at the data.</p></div>
       <div class="gate"><span class="gate-n">Gate 02</span><h3>The skeptic pass</h3><p>Now attack the survivor on purpose. Drop the rows it leans on hardest, block copy-families (near-identical texts that inflate a count on their own), and let the attacker choose its own best alternative split.</p></div>
       <div class="gate"><span class="gate-n">Gate 03</span><h3>Source normalization</h3><p>Stop trusting the spreadsheet. Bind the claim to the artifact image itself: token boxes, crop checks, orientation. A photograph, not somebody's transcription.</p></div>
       <div class="gate"><span class="gate-n">Gate 04</span><h3>Blind adjudication</h3><p>Independent reviewers count the signs blind, without being told what the hypothesis is. Only after that does a claim reach the ledger, and every objection that survived is written down beside it.</p></div>
@@ -174,11 +175,11 @@
   <div class="wrap">
     <div class="section-head reveal">
       <span class="kicker">The gates have a body count</span>
-      <h2>Twenty-six ideas are buried here. We dug the graves ourselves.</h2>
+      <h2>Eighteen ideas are buried here. We dug the graves ourselves.</h2>
       <p class="lead">Every retracted claim stays in the ledger with a written autopsy: what it asserted, and which gate killed it. Nothing is quietly deleted. Here are a few of the notable dead, in plain language. Tap a stone to read the cause of death.</p>
     </div>
     <div class="graves reveal" id="graves"></div>
-    <p class="src reveal" style="margin-top:1.2rem">All 26 retractions, verbatim: <span class="mono">research/data/claim_ledger/claims.json</span> · one of them retracts the same cryptographic-unicity logic that a famous external decipherment claim rests on. We built our own copy of that argument and killed it first.</p>
+    <p class="src reveal" style="margin-top:1.2rem">All 18 retractions, verbatim: <span class="mono">research/data/claim_ledger/claims.json</span> (eight more entries were test instruments that failed, and are listed separately, not counted as retractions) · one of them retracts the same cryptographic-unicity logic that a famous external decipherment claim rests on. We built our own copy of that argument and killed it first.</p>
   </div>
 </section>
 
@@ -188,7 +189,7 @@
     <div class="finding reveal">
       <div class="split is-1-1" style="align-items:center">
         <div class="stack-md">
-          <span class="badge"><span class="dot"></span> Accepted · structural only</span>
+          <span class="badge"><span class="dot"></span> Accepted · descriptive only</span>
           <h2 style="font-size:clamp(1.7rem,1.2rem+2vw,2.6rem)">The single thing we are willing to call true.</h2>
           <div class="dial" data-dial="b" role="group" aria-label="Choose explanation depth for the finding">
             <button data-level="1" aria-pressed="true">Curious</button>
@@ -196,21 +197,21 @@
             <button data-level="3" aria-pressed="false">Specialist</button>
           </div>
           <div class="levels" data-for="b">
-            <div class="level is-active" data-level="1"><p>Think of grammar without meaning. One two-sign unit always behaves the same way: in this one setting it shows up only at the very end of a line, never in the middle. We do not know what it says, how it sounded, or what language it belongs to. We know where it sits. That is one solid brick, and the wall around it is still missing.</p></div>
-            <div class="level" data-level="2"><p>Inside the fixed context that begins <b class="mono">002-861</b>, the two-sign unit <b class="mono patina">533-717</b> is the only short unit — length 1 to 3, appearing at least twice — whose every occurrence in strict, source-visible rows is a terminal tail. A terminal tail closes the sequence and never continues it. This is a regularity of position, not a reading.</p></div>
-            <div class="level" data-level="3"><p>Claim <span class="mono">accepted_struct_002_861_533_717_restricted_tail</span>: within the prior <b class="mono">002-861</b> branch question, <b class="mono">533-717</b> is the unique tested length-1–3 unit with support ≥ 2 whose every occurrence in strict local rows is a terminal tail after <b class="mono">002-861</b>. Worst-case forger false-positive rate 0.006; strongest context shuffle 0.0002. It asserts no token boundary, no sign value, no meaning, no language family, no anchor, and no translation.</p></div>
+            <div class="level is-active" data-level="1"><p>Two different seals share the same three signs at one end of their inscriptions (the start, if you read them the usual way), and one of those signs appears on no other seal in the catalogue. That is all. We do not know what the signs say, how they sounded, or what language they belong to, and two seals are too few to call it a rule. It is a small, checked observation, and the wall around it is still missing.</p></div>
+            <div class="level" data-level="2"><p>Seals <b class="mono">M-376</b> and <b class="mono">M-391</b> both carry the string <b class="mono patina">861-533-717</b> immediately after <b class="mono">002</b>, at the end of the row as the Lipi catalogue stores it. The Lipi catalogue lists signs in the reverse of the usual reading order, so under the conventional reading this is the <em>beginning</em> of the text. Sign <b class="mono">533</b> appears on these two seals only. Whether <b class="mono">533-717</b> is a fixed unit is not established: related sign shapes in other catalogues occur without <b class="mono">717</b>. This is a description of two objects, not a reading and not a rule.</p></div>
+            <div class="level" data-level="3"><p>Claim <span class="mono">accepted_struct_002_861_533_717_restricted_tail</span> (2026-07-12 checkpoint wording): M-376 and M-391 are two source-visible attestations of the same three-position terminal string <b class="mono">861 | 533 | 717</b> after <b class="mono">002</b>; terminal means stored-final in Lipi, i.e. reading-initial under the Mahadevan convention. The fixed-unit inference is demoted, and the exact 533→717 dependency is taxonomy-sensitive (Parpola 222 / Mayig P228 forms occur without 717). The earlier false-positive rates were computed for a prefix chosen after looking at the data and are not valid; a post-hoc prefix scan finds many comparable repeated terminal cells. It asserts no token boundary, no sign value, no meaning, no language family, no anchor, and no translation.</p></div>
           </div>
         </div>
         <div class="stack-sm">
           <div class="glyph-row" style="font-size:clamp(1rem,0.8rem+1vw,1.5rem)" aria-hidden="true">
             <span class="glyph">002</span><span class="glyph-sep">·</span><span class="glyph">861</span><span class="glyph-sep">→</span>
             <span class="glyph is-verified">533</span><span class="glyph-sep">·</span><span class="glyph is-verified">717</span><span class="glyph-sep">·</span>
-            <span class="glyph" style="border-style:dashed;color:var(--muted)">END</span>
+            <span class="glyph" style="border-style:dashed;color:var(--muted)">END (stored)</span>
           </div>
-          <p class="witness">Structural role: <span class="mono">002-861 → 533-717 → ⟨end⟩</span></p>
+          <p class="witness">Shared string: <span class="mono">002 · 861-533-717</span>, at the stored end of each row</p>
           <p class="witness">Source-visible witnesses: <span class="mono ink">M-376</span>, <span class="mono ink">M-391</span></p>
           <hr class="divider" style="margin:0.6rem 0" />
-          <p class="src">Both witnesses were checked against the artifact itself, not a transcription. Copy-family collapse was tested and rejected. This is everything the project accepts, and it contains no sound, no meaning, and no translation.</p>
+          <p class="src">Both seals were checked against the plates, not only a transcription, and copy-family collapse was tested and rejected. The catalogue lists signs against the usual reading direction, so the glowing string is stored last but would be read first. This is everything the project accepts, and it contains no sound, no meaning, and no translation.</p>
         </div>
       </div>
     </div>
@@ -223,7 +224,7 @@
     <div class="section-head reveal">
       <span class="kicker">The structure, explorable</span>
       <h2>One sign changes what comes next. Explore the branch.</h2>
-      <p class="lead">This is the actual object of study: how the sign <span class="mono">002</span> changes which units can follow it. Hover or tap a node to read its status. Patina green marks the one accepted node. Clay orange marks a source-gated target, where the pattern is visible but no artifact image has been bound to it yet. A dashed outline marks an open lead.</p>
+      <p class="lead">This is the actual object of study: how the sign <span class="mono">002</span> changes which units can follow it. Hover or tap a node to read its status. Patina green marks the one accepted node. Clay orange marks a source-gated target, where the pattern is visible but no artifact image has been bound to it yet. A dashed outline marks an open lead. In this diagram "end" means the end of the row as the Lipi catalogue stores it, which is the beginning of the text under the usual reading direction.</p>
     </div>
     <div class="split is-5-7 reveal">
       <div class="panel branch-info" id="branchInfo" style="padding:1.5rem"></div>
@@ -238,17 +239,28 @@
   </div>
 </section>
 
-<!-- NULL DISTRIBUTION -->
+<!-- HOW SURE -->
 <section class="section" id="howsure">
   <div class="wrap">
-    <div class="split is-7-5">
-      <div class="stack-md">
-        <div class="section-head" style="margin:0"><span class="kicker reveal">How sure is sure?</span><h2 class="reveal">A pattern is only real if randomness cannot fake it.</h2></div>
-        <p class="reveal" style="color:var(--muted)">To test the finding, the corpus was reshuffled ten thousand times. Each bar counts how many shuffles produced the terminal-tail pattern at a given strength. The pattern actually observed sits far out to the right of all of them: a false-positive rate of <b class="patina">0.0002</b>. Randomness lands there about twice in ten thousand tries.</p>
-        <p class="src reveal">Forger record: <span class="mono">campaign_032_002_861_restricted_tail_forger_summary.json</span></p>
-      </div>
-      <div class="panel reveal" id="nulls" style="padding:1.4rem"></div>
+    <div class="stack-md" style="max-width:46rem">
+      <div class="section-head" style="margin:0"><span class="kicker reveal">How sure is sure?</span><h2 class="reveal">Honest about what a shuffle test can and cannot say.</h2></div>
+      <p class="reveal" style="color:var(--muted)">An earlier version of this page showed a shuffle chart and a very small false-positive rate for this pattern. That number was computed for a prefix, <span class="mono">002-861</span>, picked after looking at the data. It is not a valid false-positive rate, so the chart and the number are gone. Scanning every possible prefix turns up dozens of comparable repeated endings, so this one is not special by that measure.</p>
+      <p class="reveal" style="color:var(--muted)">What remains is a plain observation: two seals share one three-sign string. Nothing here says it is more than a coincidence, and nothing says it is not.</p>
+      <p class="src reveal">Details: <span class="mono">research/docs/claim_ledger.md</span></p>
     </div>
+  </div>
+</section>
+
+<!-- OCTOBER TESTS -->
+<section class="section" id="tests">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Five new tests</span>
+      <h2>What the tests show (October 2026)</h2>
+      <p class="lead">After the summer's work, five open questions got one script each, with fixed seeds and a one-page report. Two results hold up in modest form, one holds up but turns out to be already published, and two do not. None of them says what a sign means.</p>
+    </div>
+    <div class="frontier tests reveal" id="tests-grid"></div>
+    <p class="src reveal" style="margin-top:1.1rem">Scripts, outputs and reports: <span class="mono">research/extensions_20261001/</span> · every card links to its folder.</p>
   </div>
 </section>
 
@@ -258,9 +270,10 @@
     <div class="section-head reveal">
       <span class="kicker">Your turn</span>
       <h2>Be the decipherer for thirty seconds.</h2>
-      <p class="lead">Below are six short sequences written in the project's real sign codes. One unit hides in plain sight: it only ever appears at the very end of a line. Find it the way the project did, by position alone, with no idea what any sign means.</p>
+      <p class="lead">Below are six short sequences, <b>invented teaching examples, not rows from the corpus</b>. They reuse real sign numbers so the codes look familiar, but the lines themselves were made up. One unit hides in plain sight: it only ever appears at the very end of a line. Find it by position alone, with no idea what any sign means.</p>
     </div>
     <div class="panel reveal" id="game" style="padding:clamp(1.4rem,3vw,2.2rem)">
+      <p class="src" style="margin-bottom:0.6rem"><b>Invented examples, not corpus rows.</b> The unit you are looking for is made up too; nothing here is evidence about the real script.</p>
       <p style="color:var(--muted);margin-bottom:0.4rem" data-prompt>One unit below only ever appears at the very END of a line. The others turn up in the middle too. Which one always closes?</p>
       <div class="game-rows" data-rows></div>
       <div class="game-options" data-options></div>
@@ -278,7 +291,7 @@
       <p class="lead">The two witnesses, the source-gated targets, the unprovenanced stranger with no catalogue number, and a repeated tablet formula used against them as a control. Real corpus rows, real catalogue numbers.</p>
     </div>
     <div class="seals reveal" id="seals"></div>
-    <p class="src seal-caption reveal">Look closely at the two verified witnesses: they are <em>not</em> the same text. One runs seven signs, the other twelve, and they differ in every position except the patina-lit ending. That non-identity was itself tested: exact copy-family collapse was rejected on different plates, lengths, dimensions, and boss. Two independent inscriptions landing on the same closing tail is the finding. The sign sequences shown are the project's real numeric rows; the drawn glyph shapes are illustrative stand-ins, not facsimiles of the originals. Keeping those two things apart is the whole point of the source-binding gate.</p>
+    <p class="src seal-caption reveal">Look closely at the two verified witnesses: they are <em>not</em> the same text. One runs seven signs, the other twelve, and they differ in every position except the patina-lit ending. That non-identity was itself tested: exact copy-family collapse was rejected on different plates, lengths, dimensions, and boss. Two independent inscriptions sharing the same string is the observation, and it is only that. Rows are shown in Lipi catalogue order, which runs against the usual reading direction, so the highlighted string sits at the stored end but at the start of the text when read the conventional way. The sign sequences shown are the project's real numeric rows; the drawn glyph shapes are illustrative stand-ins, not facsimiles of the originals. Keeping those two things apart is the whole point of the source-binding gate.</p>
   </div>
 </section>
 
@@ -339,14 +352,14 @@
           </a>
           <a class="btn btn-ghost" href="https://github.com/Cuuper22/ivc/tree/main/research/docs" target="_blank" rel="noopener">Browse the campaign docs</a>
         </div>
-        <p class="foot-disclaim">This is a research workspace, not a finished decipherment. It claims exactly one accepted structural finding and no readings of any kind: no phonetic values, no sign meanings, no language identification, no external anchors, no translations. Every number on this page comes from the project's claim ledger and batch 041.</p>
+        <p class="foot-disclaim">This is a research workspace, not a finished decipherment. It records exactly one accepted structural item, a descriptive observation about two seals, and no readings of any kind: no phonetic values, no sign meanings, no language identification, no external anchors, no translations. Every number on this page comes from the project's claim ledger and batch 041.</p>
       </div>
       <div class="stack-sm reveal">
         <dl class="facts">
           <div class="fact"><dt>Accepted structural findings</dt><dd style="color:var(--patina)">1</dd></div>
           <div class="fact"><dt>Accepted readings (all kinds)</dt><dd>0</dd></div>
           <div class="fact"><dt>Evidence batches committed</dt><dd>41</dd></div>
-          <div class="fact"><dt>Claims retracted, with autopsies</dt><dd>26</dd></div>
+          <div class="fact"><dt>Claims retracted, with autopsies</dt><dd>18</dd></div>
         </dl>
       </div>
     </div>

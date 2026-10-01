@@ -9,13 +9,13 @@ The local workspace sat on `codex/indus-frontier-replacement-20260531`, but Git 
 This export merges both research states into one organized repository:
 
 1. **Replacement branch, canonical live state.**
-   - Main checkpoint: `research/docs/replacement_run_checkpoint_20260531.md`
-   - Current 002-390-X state: `research/docs/campaign_032_002_861_002390x_current_decision_state_20260531.md`
+   - Main checkpoint: `research/docs/archive/replacement_run_checkpoint_20260531.md`
+   - Current 002-390-X state: `research/docs/archive/campaign_032_002_861_002390x_current_decision_state_20260531.md`
    - Claim ledger: `research/docs/claim_ledger.md` and `research/data/claim_ledger/claims.json`
 
 2. **Quarantined successor branch, preserved but not evidence.**
    - Quarantine policy: `research/data/quarantine/README.md`
-   - Bad-successor quarantine note: `research/docs/quarantine_bad_successor_20260531.md`
+   - Bad-successor quarantine note: `research/docs/archive/quarantine_bad_successor_20260531.md`
    - Quarantined files: `evidence/tmp/quarantine_bad_successor_20260531T0104/`
 
 ## Current Decision

@@ -59,4 +59,4 @@ The Failaka source-acquisition guardrail cached and parsed CDLI publication `177
 
 The object-level onomastic value attempt tested 12 cuneiform-side Meluhha strings against 30 external Mesopotamia/Gulf rows with parseable signs. The only strict mapped-object attempt is `ur gun3-a me-luh-ha` against `3898.1/U17649`, proposing `002=ur;004=gun3;328=a;001=me;803=luh;415=ha`. It is rejected for two reasons: `U17649` is Indus-only, and the cuneiform phrase comes from a separate text. And the forger seals it: target-site shuffled nulls reproduce at least one strict mapped same-site pattern attempt in 0.6857 of iterations.
 
-Next schema artifact: `docs/meluhha_matched_control_schema.md`.
+Next schema artifact: `research/docs/archive/meluhha_matched_control_schema.md`.
