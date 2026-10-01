@@ -20,7 +20,7 @@ New tests are in `../extensions_20261001/` (one script, JSON output and a one-pa
 | --- | --- | --- |
 | Does the front inscription predict the cup + N-stroke count? | Yes within a catalogue; looks like production batches, not a portable rule. | `front_count/` |
 | Are 034 tablets smaller than 032/033? | About 14% smaller in area (same format, one vote per source family). Reopens the July closure as a size difference, not a tier. | `size_034/` |
-| Is there a 002-specific end effect? | Real for 861, 817, 820; five other signs never end after 002. Lipi only; not unique to 002. | `context_002/` |
+| Is there a 002-specific end effect? | Real for 861, 817, 820 and replicates in Mahadevan, where these are the known text-opening pairs 267-99 and 391-99 (Yadav et al. 2010). Not unique to 002. | `context_002/` |
 | Do the roof/87 and 211 rewrites beat matched decoys? | Only selection-sensitively (1-9%); 94 other swap types recur as often. The candidate ranks last of 8 models in the campaign's joint test. | `alternation_null/` |
 | Do the Sept-7 Sanskrit dictionary fits beat chance? | No. The optimizer is missing; a re-implementation does no better than Markov text with the same local repetition. | `phonetic_null/` |
 

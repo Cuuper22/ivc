@@ -1,0 +1,136 @@
+{
+ "mapped_signs": 167,
+ "mapping": {
+  "700": "328",
+  "740": "342",
+  "032": "87",
+  "033": "89",
+  "034": "95",
+  "840": "403",
+  "002": "99",
+  "861": "267",
+  "817": "267",
+  "820": "391"
+ },
+ "support": {
+  "002": {
+   "mapped_to": "99",
+   "unique_alignment_strings": 156,
+   "rows": 206,
+   "ambiguous_strings_skipped": 7,
+   "mahadevan_sign_counts": {
+    "99": 202,
+    "100": 3,
+    "103": 1
+   }
+  },
+  "861": {
+   "mapped_to": "267",
+   "unique_alignment_strings": 52,
+   "rows": 65,
+   "ambiguous_strings_skipped": 9,
+   "mahadevan_sign_counts": {
+    "267": 62,
+    "391": 2,
+    "416": 1
+   }
+  },
+  "817": {
+   "mapped_to": "267",
+   "unique_alignment_strings": 53,
+   "rows": 62,
+   "ambiguous_strings_skipped": 9,
+   "mahadevan_sign_counts": {
+    "267": 59,
+    "112": 2,
+    "391": 1
+   }
+  },
+  "820": {
+   "mapped_to": "391",
+   "unique_alignment_strings": 43,
+   "rows": 44,
+   "ambiguous_strings_skipped": 13,
+   "mahadevan_sign_counts": {
+    "391": 42,
+    "342": 1,
+    "267": 1
+   }
+  }
+ },
+ "mahadevan_replication": {
+  "all_lines": {
+   "267": {
+    "before_99_initial": 196,
+    "before_99_n": 222,
+    "other_initial": 28,
+    "other_n": 50,
+    "haldane_OR": 5.85,
+    "fisher_p": 8.15e-07
+   },
+   "391": {
+    "before_99_initial": 58,
+    "before_99_n": 64,
+    "other_initial": 45,
+    "other_n": 70,
+    "haldane_OR": 5.04,
+    "fisher_p": 0.000385
+   },
+   "293": {
+    "before_99_initial": 0,
+    "before_99_n": 2,
+    "other_initial": 59,
+    "other_n": 96,
+    "haldane_OR": 0.13,
+    "fisher_p": 0.156
+   },
+   "59": {
+    "before_99_initial": 1,
+    "before_99_n": 10,
+    "other_initial": 21,
+    "other_n": 218,
+    "haldane_OR": 1.45,
+    "fisher_p": 1.0
+   }
+  },
+  "distinct_strings": {
+   "267": {
+    "before_99_initial": 148,
+    "before_99_n": 172,
+    "other_initial": 21,
+    "other_n": 40,
+    "haldane_OR": 5.5,
+    "fisher_p": 1.15e-05
+   },
+   "391": {
+    "before_99_initial": 55,
+    "before_99_n": 61,
+    "other_initial": 41,
+    "other_n": 62,
+    "haldane_OR": 4.42,
+    "fisher_p": 0.00194
+   },
+   "293": {
+    "before_99_initial": 0,
+    "before_99_n": 2,
+    "other_initial": 57,
+    "other_n": 89,
+    "haldane_OR": 0.11,
+    "fisher_p": 0.137
+   },
+   "59": {
+    "before_99_initial": 1,
+    "before_99_n": 10,
+    "other_initial": 19,
+    "other_n": 177,
+    "haldane_OR": 1.28,
+    "fisher_p": 1.0
+   }
+  }
+ },
+ "slot_order_pair_counts": {
+  "267,99": 222,
+  "391,99": 64,
+  "99,267": 0
+ }
+}
