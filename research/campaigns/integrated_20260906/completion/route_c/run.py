@@ -2,7 +2,7 @@
 """Reconstructed rerun, frozen held observations; no semantic readings asserted.
 API: load_records, candidates, features, fit, predict, score. Scores in bits.
 """
-import collections,csv,itertools,json,math
+import collections,csv,itertools,json,math,os
 from pathlib import Path
 import numpy as np
 OUT=Path(__file__).resolve().parent
@@ -70,8 +70,9 @@ def predict(m,r):
 def score(m,records):return sum(-math.log2(max(1e-300,predict(m,r)[r['y']-1])) for r in records)
 
 def scope_experiment():
-    paths=[CAM.parents[1]/'data/mahadevan_20260905/concordance_rows.csv',Path('/workspace/scratch/f9a6bdbd6310/ivc/research/data/mahadevan_20260905/concordance_rows.csv')]
-    source=next(p for p in paths if p.exists());rows=list(csv.DictReader(source.open()));out=[]
+    source=Path(os.environ.get('IVC_REPO_ROOT',str(CAM.parents[2]))).resolve()/'research/data/mahadevan_20260905/concordance_rows.csv'
+    if not source.exists():raise SystemExit(f'{source} not found; run from a full checkout or set IVC_REPO_ROOT')
+    rows=list(csv.DictReader(source.open()));out=[]
     for oid in ['2275','1008','7283','4019']:
         r=next(r for r in rows if r['textnum']==oid);s=[r['S'+str(i)] for i in range(1,15) if r['S'+str(i)]]
         expanded=[u for t in s for u in (['87','59'] if t=='65' else [t])]

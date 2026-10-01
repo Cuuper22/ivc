@@ -4,6 +4,10 @@ import hashlib,json
 from pathlib import Path
 from run_route_d import HERE,ROOT
 
+# run_all.py redirects this script's stdout into finalize_route_d_stdout.json, which is still
+# open (empty) while the manifest is hashed. The manifest also cannot hash itself. Exclude both.
+SELF_OUTPUTS={'execution_manifest.json',Path(__file__).stem+'_stdout.json'}
+
 def main():
     out=HERE/'outputs';candidates=json.loads((out/'candidates.json').read_text())
     candidates=[c for c in candidates if c['id']!='D-KA-CONDITIONAL' and not c['id'].startswith('D-TAMIL-JOINT')]
@@ -56,7 +60,8 @@ def main():
         'results':{'conditional_candidate_records':len(candidates),'independent_phonetic_values_accepted':0,
             'full_tamil_distinct_mixed_systems':full['distinct_mixed_phonetic_systems']},
         'files':{str(p.relative_to(HERE)):hashlib.sha256(p.read_bytes()).hexdigest()
-            for p in sorted(HERE.rglob('*')) if p.is_file() and p.suffix in ('.py','.json','.jsonl') and p.name!='execution_manifest.json'},
+            for p in sorted(HERE.rglob('*')) if p.is_file() and p.suffix in ('.py','.json','.jsonl') and p.name not in SELF_OUTPUTS},
+        'files_not_hashed':sorted(SELF_OUTPUTS),
         'next_experiment':'Use existing2275/1008roof relation and retained67–336–89–211suffix to test local-root versus whole-field scope for87/211. Keep7283/4019doubtful IDs in a separate sensitivity lane. Counted-fish composition has already failed to obtain support outside267–99under exact, one-edit and partial tests.'}
     (out/'execution_manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps(manifest['results']))

@@ -12,9 +12,12 @@
 //
 //   node --no-warnings db/build_db.mjs                      # uses research/data/
 //   node --no-warnings db/build_db.mjs --data research/data --db db/ivc.sqlite
+//   node --no-warnings db/build_db.mjs --db build/ivc.sqlite          # report goes to build/audit_report.json
+//   node --no-warnings db/build_db.mjs --db build/x.sqlite --report build/x_report.json
 //
-// Non-destructive: reads the data dir, writes only the .sqlite file and
-// db/audit_report.json. The CSV/JSON seeds stay the source of truth; the
+// Non-destructive: reads the data dir, writes only the .sqlite file and the
+// audit report. The report goes next to the --db target (audit_report.json in the
+// same directory) unless --report is given. The CSV/JSON seeds stay the source of truth; the
 // database is a rebuildable artifact you can delete and regenerate.
 //
 // What a build does: loads the sign_crosswalk tables + claim ledger, derives
@@ -33,12 +36,39 @@ const ROOT = path.resolve(opt('--root', '.'));
 const DATA_DIR = opt('--data', 'research/data');           // relative to ROOT
 const DB_PATH = path.resolve(opt('--db', path.join(ROOT, 'db', 'ivc.sqlite')));
 const SCHEMA_PATH = path.join(ROOT, 'db', 'schema.sql');
+const REPORT_PATH = path.resolve(opt('--report', path.join(path.dirname(DB_PATH), 'audit_report.json')));
 
 const issues = [];
 const issue = (severity, code, obj, ref, message) =>
   issues.push({ severity, code, obj, ref: ref == null ? null : String(ref), message });
 const rel = p => path.relative(ROOT, p).split(path.sep).join('/');
 const nz = v => (v === undefined || v === '') ? null : v;
+
+// Evidence paths in the seeds and the claim ledger predate several repo reorganisations.
+// Resolve a recorded path to a file that exists now, trying (in order): as written, then the
+// legacy prefix maps below, then inside any vendored Mayig corpus checkout (for crop paths
+// like features/P324.json that are relative to that repo). Returns the resolved path or null.
+const LEGACY_PREFIXES = [
+  ['data/', DATA_DIR + '/'],          // pre-research/ layout
+  ['docs/', 'research/docs/'],        // long-form notes moved out of docs/ (now the website)
+  ['tmp/', 'evidence/tmp/'],          // scratch evidence moved under evidence/
+];
+function mayigRoots() {
+  const base = path.join(ROOT, 'evidence', 'tmp', 'mayig_feature_namespace_probe', 'repo');
+  try { return fs.readdirSync(base, { withFileTypes: true }).filter(e => e.isDirectory()).map(e => path.join(base, e.name)); }
+  catch { return []; }
+}
+let _mayig = null;
+function resolveEvidencePath(p) {
+  const candidates = [p];
+  for (const [from, to] of LEGACY_PREFIXES) if (p.startsWith(from)) candidates.push(to + p.slice(from.length));
+  for (const c of candidates) if (fs.existsSync(path.join(ROOT, c))) return c;
+  if (/^(features|corpus)\//.test(p)) {
+    _mayig ??= mayigRoots();
+    for (const r of _mayig) if (fs.existsSync(path.join(r, p))) return rel(path.join(r, p));
+  }
+  return null;
+}
 
 // ---- minimal CSV parser (RFC 4180: quoted fields, doubled quotes) ----
 function parseCSV(text) {
@@ -121,9 +151,7 @@ function loadClaims() {
         const isUrl = p ? /^[a-z][a-z0-9+.-]*:\/\//i.test(p) : false;
         let exists = null;
         if (p && !isUrl) {
-          exists = fs.existsSync(path.join(ROOT, p)) ? 1 : 0;
-          // Older claims cite paths from before the data/ -> research/data/ reorg; check that location too.
-          if (!exists && p.startsWith('data/')) exists = fs.existsSync(path.join(ROOT, DATA_DIR, p.slice(5))) ? 1 : 0;
+          exists = resolveEvidencePath(p) ? 1 : 0;
         }
         estmt.run(c.claim_id, k, nz(p), nz(s), exists); ne++;
       });
@@ -185,7 +213,7 @@ for (const [col, tbl] of [['image_ref_id', 'witness'], ['visual_ref_id', 'sign']
 }
 for (const r of db.prepare(`SELECT ref_id, local_path, crop_path FROM evidence_ref`).all())
   for (const [f, val] of [['local_path', r.local_path], ['crop_path', r.crop_path]])
-    if (val && !fs.existsSync(path.join(ROOT, val))) issue('warning', 'evidence_path_missing', 'evidence_ref', r.ref_id, `${f}=${val} not found`);
+    if (val && !resolveEvidencePath(val)) issue('warning', 'evidence_path_missing', 'evidence_ref', r.ref_id, `${f}=${val} not found`);
 const missEv = db.prepare(`SELECT COUNT(*) n FROM claim_evidence WHERE path_exists = 0`).get().n;
 if (missEv) issue('warning', 'claim_evidence_missing', 'claim_evidence', null, `${missEv} local claim-evidence path(s) do not exist on disk`);
 const urlEv = db.prepare(`SELECT COUNT(*) n FROM claim_evidence WHERE path LIKE 'http%://%'`).get().n;
@@ -202,6 +230,8 @@ for (const t of tables) console.log(`  ${t.padEnd(16)} ${String(counts[t]).padSt
 const errs = issues.filter(i => i.severity === 'error'), warns = issues.filter(i => i.severity === 'warning');
 console.log(`\nAudit: ${errs.length} error(s), ${warns.length} warning(s), ${issues.length - errs.length - warns.length} info`);
 for (const it of [...errs, ...warns].slice(0, 20)) console.log(`  [${it.severity}] ${it.code} ${it.obj ?? ''} ${it.ref ?? ''} — ${it.message}`);
-fs.writeFileSync(path.join(ROOT, 'db', 'audit_report.json'), JSON.stringify({ db: rel(DB_PATH), data_dir: DATA_DIR, data_files_cataloged: nfiles, counts, issues }, null, 2));
+fs.mkdirSync(path.dirname(REPORT_PATH), { recursive: true });
+fs.writeFileSync(REPORT_PATH, JSON.stringify({ db: rel(DB_PATH), data_dir: DATA_DIR, data_files_cataloged: nfiles, counts, issues }, null, 2));
 db.close();
-console.log(`\nWrote ${rel(DB_PATH)} and db/audit_report.json`);
+if (errs.length) process.exitCode = 1;   // integrity errors fail the build (warnings do not)
+console.log(`\nWrote ${rel(DB_PATH)} and ${rel(REPORT_PATH)}`);

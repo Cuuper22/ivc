@@ -19,7 +19,7 @@ Requires **Node ≥ 22.5** (built-in `node:sqlite`; no `npm install`).
 node --no-warnings db/build_db.mjs            # reads research/data/ by default
 ```
 
-Outputs `db/ivc.sqlite` and `db/audit_report.json`. A clean build prints
+Outputs `db/ivc.sqlite` and `db/audit_report.json` (the report is written next to the `--db` target, or to `--report PATH`; `make db` builds to `build/` and leaves the committed `db/ivc.sqlite` alone). A clean build prints
 `0 error(s), 0 warning(s)`.
 
 ## Query

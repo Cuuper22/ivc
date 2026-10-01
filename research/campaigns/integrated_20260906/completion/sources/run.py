@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Rebuild held source overlay. Never infer a cross-catalogue object join."""
-import csv,hashlib,json,re,xml.etree.ElementTree as ET
+import csv,hashlib,json,os,re,xml.etree.ElementTree as ET
 from pathlib import Path
 OUT=Path(__file__).resolve().parent
-ROOT=OUT.parents[4]
-if not (ROOT/'evidence/tmp/cisi_xml').exists():ROOT=Path('/workspace/scratch/f9a6bdbd6310/ivc')
+ROOT=Path(os.environ.get('IVC_REPO_ROOT',str(OUT.parents[4]))).resolve()
+if not (ROOT/'evidence/tmp/cisi_xml').exists():raise SystemExit(f'IVC repo root not found at {ROOT} (no evidence/tmp/cisi_xml); run from a full checkout or set IVC_REPO_ROOT')
 def dump(n,x):(OUT/n).write_text(json.dumps(x,indent=2)+'\n')
 def main():
     base=ROOT/'research/data/sign_crosswalk';refs=list(csv.DictReader((base/'evidence_refs.csv').open()));w=list(csv.DictReader((base/'artifact_witnesses.csv').open()));byid={r['ref_id']:r for r in refs}

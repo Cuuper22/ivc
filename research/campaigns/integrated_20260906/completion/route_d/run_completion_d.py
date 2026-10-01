@@ -9,8 +9,8 @@ from functools import lru_cache
 import hashlib, json, math, os, re, xml.etree.ElementTree as ET
 HERE=Path(__file__).resolve().parent
 CAM=HERE.parents[1]
-ROOT=Path(os.environ.get('IVC_REPO_ROOT',str(CAM.parents[2])))
-if not (ROOT/'evidence').exists():ROOT=Path('/workspace/scratch/f9a6bdbd6310/ivc')
+ROOT=Path(os.environ.get('IVC_REPO_ROOT',str(CAM.parents[2]))).resolve()
+if not (ROOT/'evidence').exists():raise SystemExit(f'IVC repo root not found at {ROOT} (no evidence/ directory); run from a full checkout or set IVC_REPO_ROOT')
 FISH={'59':'60','65':'66','67':'68','72':'73'}
 REV={v:k for k,v in FISH.items()}
 BASES=list(FISH)

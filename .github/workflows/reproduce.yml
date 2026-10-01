@@ -1,0 +1,90 @@
+name: Reproduce
+
+# Syntax checks, the deterministic Mahadevan audit, the campaign verification stage, and the
+# SQLite build. Mirrors `make check audit verify db`. The full campaign (`make campaign`) is not
+# run here: its outputs drift in the last float digits across BLAS builds.
+on:
+  push:
+    paths:
+      - "research/**"
+      - "db/**"
+      - "docs/**"
+      - "requirements*.txt"
+      - "Makefile"
+      - ".github/workflows/reproduce.yml"
+  pull_request:
+    paths:
+      - "research/**"
+      - "db/**"
+      - "docs/**"
+      - "requirements*.txt"
+      - "Makefile"
+      - ".github/workflows/reproduce.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: reproduce-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      # The repo is 2 GB+ (mostly evidence/). Check out only what the make targets read.
+      # Top-level files come with cone mode. Evidence-path warnings from `make db` for the
+      # skipped evidence/ images are expected; build errors fail the job.
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout: |
+            research
+            db
+            docs
+            slm
+            embeddings
+            tools
+            evidence/tmp/mayig_feature_namespace_probe
+          persist-credentials: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - run: python -m pip install -r requirements.txt
+
+      - name: make check audit verify db
+        run: make check audit verify db
+
+      - name: Audit output must match the committed Mahadevan snapshot byte for byte
+        run: |
+          status=0
+          for f in build/audit/*; do
+            name=$(basename "$f")
+            [ "$name" = files.sha256.json ] && continue
+            if ! cmp -s "$f" "research/data/mahadevan_20260905/$name"; then
+              echo "DRIFT: $name"; status=1
+            fi
+          done
+          exit $status
+
+      - name: Tracked files must be unchanged after the run
+        run: git diff --exit-code
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reproduce-build
+          path: build/
+          retention-days: 7

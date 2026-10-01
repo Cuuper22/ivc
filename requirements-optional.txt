@@ -1,0 +1,13 @@
+# Optional dependencies. Not needed for `make check audit campaign verify db`.
+#
+#   python -m pip install -r requirements.txt -r requirements-optional.txt
+#
+# Python >=3.11 is required for the slm/ package (slm/pyproject.toml).
+
+pyarrow>=14.0        # embeddings/*.py (parquet vectors)
+PyMuPDF>=1.23        # research/tools/verify_vats_numerical_plate.py, campaign evidence_inventory/extract_tamil_compounds.py (imported as fitz)
+
+# Heavy / GPU
+torch>=2.4,<3        # slm/ (from-scratch sequence models); see slm/pyproject.toml for the full pin set
+fastembed>=0.3       # embeddings/build_embeddings.py, query_embeddings.py (downloads ONNX models on first use)
+modal>=0.64          # slm/modal_gpu_matrix.py only (remote GPU runs; needs a Modal account)
