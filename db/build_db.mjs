@@ -62,6 +62,11 @@ let _mayig = null;
 function resolveEvidencePath(p) {
   const candidates = [p];
   for (const [from, to] of LEGACY_PREFIXES) if (p.startsWith(from)) candidates.push(to + p.slice(from.length));
+  // Most long-form notes now live in research/docs/archive/; try there when a docs path is missing.
+  for (const c of candidates.slice()) {
+    const m = /^research\/docs\/([^/]+)$/.exec(c);
+    if (m) candidates.push('research/docs/archive/' + m[1]);
+  }
   for (const c of candidates) if (fs.existsSync(path.join(ROOT, c))) return c;
   if (/^(features|corpus)\//.test(p)) {
     _mayig ??= mayigRoots();

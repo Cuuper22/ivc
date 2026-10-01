@@ -2,7 +2,7 @@
 
 Date: 2026-07-12 through 2026-07-13 America/Los_Angeles
 
-Authority: this checkpoint supersedes `replacement_run_checkpoint_20260531.md` for work completed on July 12-13 while preserving every accepted boundary from it. It does not revive any file listed in `research/data/quarantine/botched_successor_after_20260531T0104_manifest.csv`.
+Authority: this checkpoint supersedes `archive/replacement_run_checkpoint_20260531.md` for work completed on July 12-13 while preserving every accepted boundary from it. It does not revive any file listed in `research/data/quarantine/botched_successor_after_20260531T0104_manifest.csv`.
 
 ## What this is and why it exists
 
@@ -39,7 +39,7 @@ Decision: `closed_not_claim_eligible_support_below_floor_source_independence_unr
 
 Artifacts:
 
-- `research/docs/vector4_158806_source_family_gate_20260712.md`
+- `research/docs/archive/vector4_158806_source_family_gate_20260712.md`
 - `research/data/open_prototype/reports/vector4_158806_source_family_gate_20260712_witnesses.csv`
 - `research/data/open_prototype/reports/vector4_158806_source_family_gate_20260712_summary.json`
 
@@ -54,7 +54,7 @@ Decision: `PARK`.
 
 Artifacts:
 
-- `research/docs/replacement_p050_local220_strict_fish_family_source_gate_20260712.md`
+- `research/docs/archive/replacement_p050_local220_strict_fish_family_source_gate_20260712.md`
 - `research/data/open_prototype/reports/replacement_p050_local220_strict_fish_family_source_gate_20260712_summary.json`
 - `research/data/open_prototype/reports/replacement_p050_local220_strict_fish_family_source_gate_20260712_token_boxes/`
 
@@ -143,7 +143,7 @@ The corpus has a real order effect: sequences as stored beat the same sequences 
 - Removing it changes stored-win share only from 0.841096 to 0.840659. The stored-order structural result survives; physical reading direction does not follow from it.
 - A larger negative-image denominator cannot fix an unlabeled orientation construct. The failed packet lane is closed rather than expanded.
 
-Detailed decision: `research/docs/effective_unicity_directionality_physical_orientation_closure_20260712.md`.
+Detailed decision: `research/docs/archive/effective_unicity_directionality_physical_orientation_closure_20260712.md`.
 
 ## `FRAME700 034` size-tier falsification
 
@@ -157,7 +157,7 @@ The idea under test was that short-mark subtype `034` might mark a size or measu
 - On the clean H-series holdout, the model calls all 22 small tablets `034`, including the one true `033`: `034` recall 1.000000, non-`034` specificity 0, AUC 0.476190.
 - The surviving association is small-tablet form factor, not a subtype-specific numerical or metrological tier. No value, unit, quantity, commodity, or meaning is accepted.
 
-Detailed decision: `research/docs/frame700_034_size_tier_heldout_decision_20260712.md`.
+Detailed decision: `research/docs/archive/frame700_034_size_tier_heldout_decision_20260712.md`.
 
 ## `603` cross-context graphic closure
 
@@ -171,7 +171,7 @@ Two sites, Mohenjo-daro and Harappa, both have rows carrying the local number `6
 - The shared Lipi number is catalog-mediated, not source-visible cross-context identity. Keep the Mohenjo tail class and Harappa internal-slot candidate separate; do not use the Harappa rows to interpret the Mohenjo tail.
 - No raw corpus number is rewritten and no value, function, phonetic reading, language, or translation is accepted.
 
-Detailed decision: `research/docs/campaign_032_002_861_603_cross_context_graphic_closure_20260712.md`.
+Detailed decision: `research/docs/archive/campaign_032_002_861_603_cross_context_graphic_closure_20260712.md`.
 
 ## `002-861` censored-control delta
 
@@ -213,4 +213,4 @@ One item, stated exactly, so the next run does not have to reinvent it:
 
 ## Parked lanes
 
-The paid/contact/physical-source rows listed in `replacement_live_action_register_20260712.md` remain parked. No message was sent and no source was purchased. Language-family, rebus, proper-name, phonetic, and translation lanes remain closed because no bilingual or secure external reading constraint exists.
+The paid/contact/physical-source rows listed in `archive/replacement_live_action_register_20260712.md` remain parked. No message was sent and no source was purchased. Language-family, rebus, proper-name, phonetic, and translation lanes remain closed because no bilingual or secure external reading constraint exists.

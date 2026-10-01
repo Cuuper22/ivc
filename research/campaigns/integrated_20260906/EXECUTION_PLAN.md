@@ -28,7 +28,7 @@ Steps within each route are ordered. The four route sections run concurrently. P
 
 **Owner: coordinator and evidence specialists. All route leads prepare their candidate models in parallel.**
 
-- [ ] **01. Resume from the actual research state.** Read the current checkpoint and relevant portions of `MERGED_BRANCH_STATE.md`, `research/docs/mahadevan_crossface_constraints_20260905.md`, `research/docs/semantic_reading_search_20260906.md`, and the corresponding tools and outputs. Inspect `db/schema.sql` before adding another representation. Record the starting commit and existing uncommitted changes. Do not reread the entire research history or rerun completed campaigns by default.
+- [ ] **01. Resume from the actual research state.** Read the current checkpoint and relevant portions of `MERGED_BRANCH_STATE.md`, `research/docs/mahadevan_crossface_constraints_20260905.md`, `research/docs/archive/semantic_reading_search_20260906.md`, and the corresponding tools and outputs. Inspect `db/schema.sql` before adding another representation. Record the starting commit and existing uncommitted changes. Do not reread the entire research history or rerun completed campaigns by default.
 
 - [ ] **02. Locate and classify the existing inputs.** Inventory the frozen Mahadevan corpus, other transcription systems, source photographs, glyph illustrations, copper-tablet material, source codebooks, contextual metadata, and comparative-language resources already held. Separate observations, published interpretations, derived tables, and model-generated proposals. Resolve existing filenames and paths rather than assuming that a README description proves an input exists. Record unavailable inputs without blocking work that does not need them.
 

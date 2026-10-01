@@ -1,3 +1,6 @@
+> **Status (2026-10-01).** The headline candidate here (roof/87 plus surrounding-marks/211 as connected writing operations) ranks last of 8 models in this campaign's own joint test: 3192.96 bits against 3169.57 for the plain categorical baseline (`integration/summary.json`, `joint`). Its alternations are supported only when the selection the campaign made is ignored; see [../../extensions_20261001/alternation_null/REPORT.md](../../extensions_20261001/alternation_null/REPORT.md).
+> Kept as a historical record. Current status of every claim: [../../docs/claim_ledger.md](../../docs/claim_ledger.md).
+
 # Current campaign: reconstructed completion
 
 Large artifacts are stored losslessly in `payload/` to support the publication transport. The completion runner restores them automatically. For direct access after cloning, run `python research/campaigns/integrated_20260906/restore_payload.py` once. The manifest retains every original file path and checksum.

@@ -1,6 +1,6 @@
 # phonetic_null: do the Sanskrit-dictionary key fits beat chance?
 
-**Question.** Do the whole-inscription dictionary fits in `research/docs/decoding_followup_20260907.md` §1 beat chance? Those fits report, for example, 54/146 training and 4/56 held-out matches for the unexpanded run.
+**Question.** Do the whole-inscription dictionary fits in `research/docs/archive/decoding_followup_20260907.md` §1 beat chance? Those fits report, for example, 54/146 training and 4/56 held-out matches for the unexpanded run.
 
 **Blocker.** The optimizer that produced those numbers is not in the repo, in the working tree or anywhere in git history. The report says it lives in a "downloadable research packet" that was never committed. Only the report and `research/data/decoding_followup_20260907/summary.json` exist. **The September 7 phonetic results therefore cannot be reproduced from this repository.** The dictionary itself is present: Monier-Williams, 192,482 headwords, matching the report.
 
