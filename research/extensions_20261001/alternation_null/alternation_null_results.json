@@ -1,0 +1,1498 @@
+{
+ "census": {
+  "instances_ge2_shared_distinct_line_pairs": 1702,
+  "proposed_context_counts_ge2": {
+   "marked fish 66 -> 87-60": 1,
+   "non-fish 15 -> 149-342": 2,
+   "roof 65 -> 87-59": 2,
+   "surrounding marks 60 -> 59-211": 1
+  },
+  "proposed_in_recurring": {
+   "marked fish 66 -> 87-60": false,
+   "non-fish 15 -> 149-342": true,
+   "roof 65 -> 87-59": true,
+   "surrounding marks 60 -> 59-211": false
+  },
+  "swap_instances_any_shared": 24037,
+  "swap_instances_ge2_shared": 1747,
+  "swap_types_any_shared": 23245,
+  "swap_types_any_shared_with_ge2_contexts": 349,
+  "swap_types_any_shared_with_ge2_pairs": 349,
+  "swap_types_ge2_shared": 1612,
+  "top_recurring": [
+   {
+    "A": 342,
+    "B": 342,
+    "C": 176,
+    "contexts": 16
+   },
+   {
+    "A": 342,
+    "B": 342,
+    "C": 1,
+    "contexts": 9
+   },
+   {
+    "A": 65,
+    "B": 267,
+    "C": 99,
+    "contexts": 6
+   },
+   {
+    "A": 86,
+    "B": 267,
+    "C": 99,
+    "contexts": 5
+   },
+   {
+    "A": 65,
+    "B": 391,
+    "C": 99,
+    "contexts": 4
+   },
+   {
+    "A": 294,
+    "B": 171,
+    "C": 8,
+    "contexts": 4
+   },
+   {
+    "A": 8,
+    "B": 249,
+    "C": 169,
+    "contexts": 3
+   },
+   {
+    "A": 48,
+    "B": 67,
+    "C": 244,
+    "contexts": 3
+   },
+   {
+    "A": 48,
+    "B": 67,
+    "C": 294,
+    "contexts": 3
+   },
+   {
+    "A": 48,
+    "B": 171,
+    "C": 8,
+    "contexts": 3
+   },
+   {
+    "A": 65,
+    "B": 391,
+    "C": 123,
+    "contexts": 3
+   },
+   {
+    "A": 67,
+    "B": 86,
+    "C": 67,
+    "contexts": 3
+   },
+   {
+    "A": 72,
+    "B": 267,
+    "C": 99,
+    "contexts": 3
+   },
+   {
+    "A": 171,
+    "B": 67,
+    "C": 171,
+    "contexts": 3
+   },
+   {
+    "A": 249,
+    "B": 65,
+    "C": 249,
+    "contexts": 3
+   }
+  ],
+  "types_ge2_shared_recurring_ge2_contexts": 94,
+  "types_ge2_shared_recurring_ge2_nonoverlapping_contexts": 29
+ },
+ "data": {
+  "distinct_signs": 390,
+  "unique_strict_lines": 1659
+ },
+ "family_search_null": [
+  {
+   "family": "four_surrounding_strokes",
+   "max_bases": {
+    "decoy_max": 6,
+    "decoy_mean": 1.9685,
+    "decoys_ge_observed": 155,
+    "frac_ge": 0.0775,
+    "observed": 4
+   },
+   "max_contexts": {
+    "decoy_max": 5,
+    "decoy_mean": 1.3,
+    "decoys_ge_observed": 5,
+    "frac_ge": 0.0025,
+    "observed": 5
+   },
+   "max_pairs": {
+    "decoy_max": 8,
+    "decoy_mean": 2.111,
+    "decoys_ge_observed": 7,
+    "frac_ge": 0.0035,
+    "observed": 6
+   },
+   "max_pairs2": {
+    "decoy_max": 4,
+    "decoy_mean": 0.4595,
+    "decoys_ge_observed": 876,
+    "frac_ge": 0.438,
+    "observed": 1
+   },
+   "n_candidate_extras": 834,
+   "n_decoy_families": 2000,
+   "n_pairs": 22,
+   "observed": {
+    "max_bases": 4,
+    "max_contexts": 5,
+    "max_pairs": 6,
+    "max_pairs2": 1,
+    "top": [
+     4,
+     1,
+     6
+    ]
+   },
+   "reproduces_repo_ranking_exactly": true,
+   "top_key_lexicographic": {
+    "decoys_ge_observed": 22,
+    "frac_ge": 0.011,
+    "observed": [
+     4,
+     1,
+     6
+    ]
+   },
+   "top_rows": [
+    {
+     "base_count": 4,
+     "distinct_contexts": 5,
+     "extra": 211,
+     "pairs": 6,
+     "pairs_with_two_unchanged_signs": 1,
+     "side": "after"
+    },
+    {
+     "base_count": 2,
+     "distinct_contexts": 2,
+     "extra": 388,
+     "pairs": 2,
+     "pairs_with_two_unchanged_signs": 1,
+     "side": "after"
+    },
+    {
+     "base_count": 1,
+     "distinct_contexts": 2,
+     "extra": 106,
+     "pairs": 2,
+     "pairs_with_two_unchanged_signs": 1,
+     "side": "before"
+    },
+    {
+     "base_count": 1,
+     "distinct_contexts": 1,
+     "extra": 342,
+     "pairs": 1,
+     "pairs_with_two_unchanged_signs": 1,
+     "side": "after"
+    },
+    {
+     "base_count": 1,
+     "distinct_contexts": 1,
+     "extra": 12,
+     "pairs": 1,
+     "pairs_with_two_unchanged_signs": 0,
+     "side": "after"
+    },
+    {
+     "base_count": 1,
+     "distinct_contexts": 1,
+     "extra": 35,
+     "pairs": 1,
+     "pairs_with_two_unchanged_signs": 0,
+     "side": "after"
+    }
+   ]
+  },
+  {
+   "family": "roof",
+   "max_bases": {
+    "decoy_max": 3,
+    "decoy_mean": 0.9195,
+    "decoys_ge_observed": 107,
+    "frac_ge": 0.0535,
+    "observed": 2
+   },
+   "max_contexts": {
+    "decoy_max": 4,
+    "decoy_mean": 1.0415,
+    "decoys_ge_observed": 38,
+    "frac_ge": 0.019,
+    "observed": 3
+   },
+   "max_pairs": {
+    "decoy_max": 4,
+    "decoy_mean": 1.0795,
+    "decoys_ge_observed": 52,
+    "frac_ge": 0.026,
+    "observed": 3
+   },
+   "max_pairs2": {
+    "decoy_max": 3,
+    "decoy_mean": 0.2425,
+    "decoys_ge_observed": 40,
+    "frac_ge": 0.02,
+    "observed": 2
+   },
+   "n_candidate_extras": 834,
+   "n_decoy_families": 2000,
+   "n_pairs": 8,
+   "observed": {
+    "max_bases": 2,
+    "max_contexts": 3,
+    "max_pairs": 3,
+    "max_pairs2": 2,
+    "top": [
+     2,
+     1,
+     2
+    ]
+   },
+   "reproduces_repo_ranking_exactly": true,
+   "top_key_lexicographic": {
+    "decoys_ge_observed": 15,
+    "frac_ge": 0.0075,
+    "observed": [
+     2,
+     1,
+     2
+    ]
+   },
+   "top_rows": [
+    {
+     "base_count": 2,
+     "distinct_contexts": 2,
+     "extra": 53,
+     "pairs": 2,
+     "pairs_with_two_unchanged_signs": 1,
+     "side": "after"
+    },
+    {
+     "base_count": 1,
+     "distinct_contexts": 3,
+     "extra": 102,
+     "pairs": 3,
+     "pairs_with_two_unchanged_signs": 2,
+     "side": "before"
+    },
+    {
+     "base_count": 1,
+     "distinct_contexts": 2,
+     "extra": 87,
+     "pairs": 2,
+     "pairs_with_two_unchanged_signs": 2,
+     "side": "before"
+    },
+    {
+     "base_count": 1,
+     "distinct_contexts": 1,
+     "extra": 65,
+     "pairs": 1,
+     "pairs_with_two_unchanged_signs": 1,
+     "side": "before"
+    },
+    {
+     "base_count": 1,
+     "distinct_contexts": 2,
+     "extra": 109,
+     "pairs": 2,
+     "pairs_with_two_unchanged_signs": 0,
+     "side": "before"
+    },
+    {
+     "base_count": 1,
+     "distinct_contexts": 1,
+     "extra": 104,
+     "pairs": 1,
+     "pairs_with_two_unchanged_signs": 0,
+     "side": "before"
+    }
+   ]
+  }
+ ],
+ "k_main": 25,
+ "k_wide": 50,
+ "matching": {
+  "distance": "|log2 freq diff| + 2*(|d initial share| + |d final share|); shares over lines of length>=2; frequency = occurrences in unique strict lines",
+  "excluded_from_decoy_pools": "every sign in TICK_PAIRS, ROOF_PAIRS, PARTS or the four proposed rewrites"
+ },
+ "n_family_decoys": 2000,
+ "n_wide": 20000,
+ "proposed_rule_profiles": {
+  "marked fish 66 -> 87-60": {
+   "60": {
+    "count": 21,
+    "p_final": 0.75,
+    "p_initial": 0.1
+   },
+   "66": {
+    "count": 12,
+    "p_final": 0.364,
+    "p_initial": 0.182
+   },
+   "87": {
+    "count": 178,
+    "p_final": 0.068,
+    "p_initial": 0.26
+   }
+  },
+  "non-fish 15 -> 149-342": {
+   "149": {
+    "count": 38,
+    "p_final": 0.189,
+    "p_initial": 0.054
+   },
+   "15": {
+    "count": 63,
+    "p_final": 0.758,
+    "p_initial": 0.016
+   },
+   "342": {
+    "count": 758,
+    "p_final": 0.728,
+    "p_initial": 0.0
+   }
+  },
+  "roof 65 -> 87-59": {
+   "59": {
+    "count": 200,
+    "p_final": 0.06,
+    "p_initial": 0.101
+   },
+   "65": {
+    "count": 123,
+    "p_final": 0.0,
+    "p_initial": 0.361
+   },
+   "87": {
+    "count": 178,
+    "p_final": 0.068,
+    "p_initial": 0.26
+   }
+  },
+  "surrounding marks 60 -> 59-211": {
+   "211": {
+    "count": 142,
+    "p_final": 0.83,
+    "p_initial": 0.0
+   },
+   "59": {
+    "count": 200,
+    "p_final": 0.06,
+    "p_initial": 0.101
+   },
+   "60": {
+    "count": 21,
+    "p_final": 0.75,
+    "p_initial": 0.1
+   }
+  }
+ },
+ "rules": {
+  "marked fish 66 -> 87-60": {
+   "A": 66,
+   "B": 87,
+   "C": 60,
+   "all_BC_for_same_A": {
+    "BC_rewrites_with_support_ge_observed": 3,
+    "best_support_for_A": 2,
+    "distinct_BC_rewrites_with_any_support": 254,
+    "of_possible_BC": 173472
+   },
+   "best_rewrite_of_matched_A": {
+    "decoy_best_values": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     2,
+     2,
+     2,
+     2,
+     3,
+     3
+    ],
+    "decoy_signs_whose_best_rewrite_ge_observed": 6,
+    "n_decoy_signs": 25,
+    "observed": 2
+   },
+   "null_given_expansion_bigram_exists": {
+    "contexts_ge1": {
+     "decoy_max": 2,
+     "decoy_mean": 0.013256006628003313,
+     "decoys_ge_observed": 2,
+     "expected_ge_in_2000_draws": 3.3140016570008286,
+     "frac_ge": 0.0016570008285004142,
+     "n_decoys": 1207,
+     "observed": 2,
+     "percentile_midrank": 99.91714995857498
+    },
+    "objects": {
+     "decoy_max": 6,
+     "decoy_mean": 0.03396851698425849,
+     "decoys_ge_observed": 0,
+     "expected_ge_in_2000_draws": 0.0,
+     "frac_ge": 0.0,
+     "n_decoys": 1207,
+     "observed": 9,
+     "percentile_midrank": 100.0
+    },
+    "pairs_ge1": {
+     "decoy_max": 2,
+     "decoy_mean": 0.013256006628003313,
+     "decoys_ge_observed": 2,
+     "expected_ge_in_2000_draws": 3.3140016570008286,
+     "frac_ge": 0.0016570008285004142,
+     "n_decoys": 1207,
+     "observed": 2,
+     "percentile_midrank": 99.91714995857498
+    },
+    "pairs_ge2": {
+     "decoy_max": 1,
+     "decoy_mean": 0.004971002485501243,
+     "decoys_ge_observed": 6,
+     "expected_ge_in_2000_draws": 9.942004971002486,
+     "frac_ge": 0.004971002485501243,
+     "n_decoys": 1207,
+     "observed": 1,
+     "percentile_midrank": 99.75144987572494
+    }
+   },
+   "null_main": {
+    "contexts_ge1": {
+     "decoy_max": 2,
+     "decoy_mean": 0.001038961038961039,
+     "decoys_ge_observed": 2,
+     "expected_ge_in_2000_draws": 0.2597402597402597,
+     "frac_ge": 0.00012987012987012987,
+     "n_decoys": 15400,
+     "observed": 2,
+     "percentile_midrank": 99.99350649350649
+    },
+    "objects": {
+     "decoy_max": 6,
+     "decoy_mean": 0.0026623376623376624,
+     "decoys_ge_observed": 0,
+     "expected_ge_in_2000_draws": 0.0,
+     "frac_ge": 0.0,
+     "n_decoys": 15400,
+     "observed": 9,
+     "percentile_midrank": 100.0
+    },
+    "pairs_ge1": {
+     "decoy_max": 2,
+     "decoy_mean": 0.001038961038961039,
+     "decoys_ge_observed": 2,
+     "expected_ge_in_2000_draws": 0.2597402597402597,
+     "frac_ge": 0.00012987012987012987,
+     "n_decoys": 15400,
+     "observed": 2,
+     "percentile_midrank": 99.99350649350649
+    },
+    "pairs_ge2": {
+     "decoy_max": 1,
+     "decoy_mean": 0.0003896103896103896,
+     "decoys_ge_observed": 6,
+     "expected_ge_in_2000_draws": 0.7792207792207793,
+     "frac_ge": 0.0003896103896103896,
+     "n_decoys": 15400,
+     "observed": 1,
+     "percentile_midrank": 99.98051948051948
+    }
+   },
+   "null_wide_k50_sampled": {
+    "contexts_ge1": {
+     "decoy_max": 2,
+     "decoy_mean": 0.00025,
+     "decoys_ge_observed": 1,
+     "expected_ge_in_2000_draws": 0.1,
+     "frac_ge": 5e-05,
+     "n_decoys": 20000,
+     "observed": 2,
+     "percentile_midrank": 99.9975
+    },
+    "objects": {
+     "decoy_max": 6,
+     "decoy_mean": 0.00065,
+     "decoys_ge_observed": 0,
+     "expected_ge_in_2000_draws": 0.0,
+     "frac_ge": 0.0,
+     "n_decoys": 20000,
+     "observed": 9,
+     "percentile_midrank": 100.0
+    },
+    "pairs_ge1": {
+     "decoy_max": 2,
+     "decoy_mean": 0.00025,
+     "decoys_ge_observed": 1,
+     "expected_ge_in_2000_draws": 0.1,
+     "frac_ge": 5e-05,
+     "n_decoys": 20000,
+     "observed": 2,
+     "percentile_midrank": 99.9975
+    },
+    "pairs_ge2": {
+     "decoy_max": 1,
+     "decoy_mean": 5e-05,
+     "decoys_ge_observed": 1,
+     "expected_ge_in_2000_draws": 0.1,
+     "frac_ge": 5e-05,
+     "n_decoys": 20000,
+     "observed": 1,
+     "percentile_midrank": 99.9975
+    }
+   },
+   "observed": {
+    "contexts_ge1": 2,
+    "objects": 9,
+    "pairs_ge1": 2,
+    "pairs_ge2": 1
+   },
+   "pools": {
+    "A": [
+     96,
+     302,
+     406,
+     81,
+     94,
+     224,
+     135,
+     192,
+     75,
+     136,
+     381,
+     400,
+     253,
+     125,
+     348,
+     319,
+     326,
+     358,
+     153,
+     9,
+     301,
+     252,
+     222,
+     233,
+     214
+    ],
+    "B": [
+     336,
+     123,
+     267,
+     245,
+     53,
+     48,
+     293,
+     17,
+     347,
+     8,
+     216,
+     176,
+     98,
+     402,
+     169,
+     244,
+     104,
+     112,
+     121,
+     124,
+     28,
+     341,
+     175,
+     127,
+     197
+    ],
+    "C": [
+     242,
+     190,
+     224,
+     252,
+     14,
+     139,
+     254,
+     296,
+     327,
+     12,
+     319,
+     326,
+     180,
+     233,
+     193,
+     182,
+     96,
+     194,
+     186,
+     302,
+     130,
+     375,
+     294,
+     222,
+     81
+    ]
+   },
+   "rule": "marked fish 66 -> 87-60",
+   "search_over_extra": {
+    "base": 60,
+    "decoy_best_pairs_ge1_mean": 0.11363636363636363,
+    "decoy_searches_with_best_pairs_ge1_ge_proposed": 7,
+    "decoy_searches_with_best_pairs_ge2_ge_proposed_ge2": 15,
+    "frac_decoy_searches_ge2": 0.024350649350649352,
+    "frac_decoy_searches_ge_proposed": 0.011363636363636364,
+    "n_decoy_searches": 616,
+    "observed_best_pairs_ge1": 2,
+    "observed_best_pairs_ge2": 1,
+    "proposed_rule_pairs_ge1": 2
+   }
+  },
+  "non-fish 15 -> 149-342": {
+   "A": 15,
+   "B": 149,
+   "C": 342,
+   "all_BC_for_same_A": {
+    "BC_rewrites_with_support_ge_observed": 5,
+    "best_support_for_A": 3,
+    "distinct_BC_rewrites_with_any_support": 237,
+    "of_possible_BC": 173472
+   },
+   "best_rewrite_of_matched_A": {
+    "decoy_best_values": [
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     2,
+     2,
+     2,
+     2,
+     2,
+     3,
+     3,
+     3,
+     4,
+     4,
+     4
+    ],
+    "decoy_signs_whose_best_rewrite_ge_observed": 11,
+    "n_decoy_signs": 25,
+    "observed": 2
+   },
+   "null_given_expansion_bigram_exists": {
+    "contexts_ge1": {
+     "decoy_max": 2,
+     "decoy_mean": 0.034777956126270736,
+     "decoys_ge_observed": 3,
+     "expected_ge_in_2000_draws": 3.2102728731942216,
+     "frac_ge": 0.0016051364365971107,
+     "n_decoys": 1869,
+     "observed": 2,
+     "percentile_midrank": 99.91974317817015
+    },
+    "objects": {
+     "decoy_max": 13,
+     "decoy_mean": 0.11289459604066346,
+     "decoys_ge_observed": 1,
+     "expected_ge_in_2000_draws": 1.0700909577314073,
+     "frac_ge": 0.0005350454788657035,
+     "n_decoys": 1869,
+     "observed": 11,
+     "percentile_midrank": 99.94649545211342
+    },
+    "pairs_ge1": {
+     "decoy_max": 2,
+     "decoy_mean": 0.034777956126270736,
+     "decoys_ge_observed": 3,
+     "expected_ge_in_2000_draws": 3.2102728731942216,
+     "frac_ge": 0.0016051364365971107,
+     "n_decoys": 1869,
+     "observed": 2,
+     "percentile_midrank": 99.91974317817015
+    },
+    "pairs_ge2": {
+     "decoy_max": 2,
+     "decoy_mean": 0.00749063670411985,
+     "decoys_ge_observed": 1,
+     "expected_ge_in_2000_draws": 1.0700909577314073,
+     "frac_ge": 0.0005350454788657035,
+     "n_decoys": 1869,
+     "observed": 2,
+     "percentile_midrank": 99.97324772605671
+    }
+   },
+   "null_main": {
+    "contexts_ge1": {
+     "decoy_max": 2,
+     "decoy_mean": 0.004498581216693197,
+     "decoys_ge_observed": 3,
+     "expected_ge_in_2000_draws": 0.4152536507716797,
+     "frac_ge": 0.00020762682538583984,
+     "n_decoys": 14449,
+     "observed": 2,
+     "percentile_midrank": 99.9896186587307
+    },
+    "objects": {
+     "decoy_max": 13,
+     "decoy_mean": 0.01460308671880407,
+     "decoys_ge_observed": 1,
+     "expected_ge_in_2000_draws": 0.1384178835905599,
+     "frac_ge": 6.920894179527995e-05,
+     "n_decoys": 14449,
+     "observed": 11,
+     "percentile_midrank": 99.99307910582047
+    },
+    "pairs_ge1": {
+     "decoy_max": 2,
+     "decoy_mean": 0.004498581216693197,
+     "decoys_ge_observed": 3,
+     "expected_ge_in_2000_draws": 0.4152536507716797,
+     "frac_ge": 0.00020762682538583984,
+     "n_decoys": 14449,
+     "observed": 2,
+     "percentile_midrank": 99.9896186587307
+    },
+    "pairs_ge2": {
+     "decoy_max": 2,
+     "decoy_mean": 0.0009689251851339193,
+     "decoys_ge_observed": 1,
+     "expected_ge_in_2000_draws": 0.1384178835905599,
+     "frac_ge": 6.920894179527995e-05,
+     "n_decoys": 14449,
+     "observed": 2,
+     "percentile_midrank": 99.99653955291024
+    }
+   },
+   "null_wide_k50_sampled": {
+    "contexts_ge1": {
+     "decoy_max": 2,
+     "decoy_mean": 0.0031,
+     "decoys_ge_observed": 4,
+     "expected_ge_in_2000_draws": 0.4,
+     "frac_ge": 0.0002,
+     "n_decoys": 20000,
+     "observed": 2,
+     "percentile_midrank": 99.99
+    },
+    "objects": {
+     "decoy_max": 8,
+     "decoy_mean": 0.0095,
+     "decoys_ge_observed": 0,
+     "expected_ge_in_2000_draws": 0.0,
+     "frac_ge": 0.0,
+     "n_decoys": 20000,
+     "observed": 11,
+     "percentile_midrank": 100.0
+    },
+    "pairs_ge1": {
+     "decoy_max": 2,
+     "decoy_mean": 0.0031,
+     "decoys_ge_observed": 4,
+     "expected_ge_in_2000_draws": 0.4,
+     "frac_ge": 0.0002,
+     "n_decoys": 20000,
+     "observed": 2,
+     "percentile_midrank": 99.99
+    },
+    "pairs_ge2": {
+     "decoy_max": 1,
+     "decoy_mean": 0.00075,
+     "decoys_ge_observed": 0,
+     "expected_ge_in_2000_draws": 0.0,
+     "frac_ge": 0.0,
+     "n_decoys": 20000,
+     "observed": 2,
+     "percentile_midrank": 100.0
+    }
+   },
+   "observed": {
+    "contexts_ge1": 2,
+    "objects": 11,
+    "pairs_ge1": 2,
+    "pairs_ge2": 2
+   },
+   "pools": {
+    "A": [
+     254,
+     12,
+     169,
+     402,
+     347,
+     98,
+     8,
+     176,
+     245,
+     48,
+     53,
+     180,
+     252,
+     130,
+     17,
+     242,
+     230,
+     375,
+     216,
+     194,
+     190,
+     123,
+     112,
+     127,
+     244
+    ],
+    "B": [
+     180,
+     130,
+     230,
+     194,
+     112,
+     98,
+     127,
+     375,
+     28,
+     155,
+     294,
+     341,
+     121,
+     124,
+     104,
+     252,
+     175,
+     244,
+     402,
+     296,
+     197,
+     347,
+     8,
+     327,
+     216
+    ],
+    "C": [
+     176,
+     169,
+     123,
+     254,
+     12,
+     245,
+     336,
+     402,
+     267,
+     347,
+     8,
+     98,
+     53,
+     48,
+     293,
+     180,
+     130,
+     252,
+     230,
+     17,
+     242,
+     375,
+     216,
+     194,
+     112
+    ]
+   },
+   "rule": "non-fish 15 -> 149-342",
+   "search_over_extra": {
+    "base": 342,
+    "decoy_best_pairs_ge1_mean": 0.4593698175787728,
+    "decoy_searches_with_best_pairs_ge1_ge_proposed": 29,
+    "decoy_searches_with_best_pairs_ge2_ge_proposed_ge2": 9,
+    "frac_decoy_searches_ge2": 0.014925373134328358,
+    "frac_decoy_searches_ge_proposed": 0.04809286898839138,
+    "n_decoy_searches": 603,
+    "observed_best_pairs_ge1": 2,
+    "observed_best_pairs_ge2": 2,
+    "proposed_rule_pairs_ge1": 2
+   }
+  },
+  "roof 65 -> 87-59": {
+   "A": 65,
+   "B": 87,
+   "C": 59,
+   "all_BC_for_same_A": {
+    "BC_rewrites_with_support_ge_observed": 9,
+    "best_support_for_A": 6,
+    "distinct_BC_rewrites_with_any_support": 250,
+    "of_possible_BC": 173472
+   },
+   "best_rewrite_of_matched_A": {
+    "decoy_best_values": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     3,
+     3,
+     3,
+     4,
+     4,
+     4
+    ],
+    "decoy_signs_whose_best_rewrite_ge_observed": 14,
+    "n_decoy_signs": 25,
+    "observed": 2
+   },
+   "null_given_expansion_bigram_exists": {
+    "contexts_ge1": {
+     "decoy_max": 2,
+     "decoy_mean": 0.04970645792563601,
+     "decoys_ge_observed": 5,
+     "expected_ge_in_2000_draws": 3.9138943248532287,
+     "frac_ge": 0.0019569471624266144,
+     "n_decoys": 2555,
+     "observed": 2,
+     "percentile_midrank": 99.90215264187867
+    },
+    "objects": {
+     "decoy_max": 13,
+     "decoy_mean": 0.1522504892367906,
+     "decoys_ge_observed": 20,
+     "expected_ge_in_2000_draws": 15.655577299412915,
+     "frac_ge": 0.007827788649706457,
+     "n_decoys": 2555,
+     "observed": 5,
+     "percentile_midrank": 99.23679060665361
+    },
+    "pairs_ge1": {
+     "decoy_max": 2,
+     "decoy_mean": 0.04970645792563601,
+     "decoys_ge_observed": 5,
+     "expected_ge_in_2000_draws": 3.9138943248532287,
+     "frac_ge": 0.0019569471624266144,
+     "n_decoys": 2555,
+     "observed": 2,
+     "percentile_midrank": 99.90215264187867
+    },
+    "pairs_ge2": {
+     "decoy_max": 2,
+     "decoy_mean": 0.0062622309197651665,
+     "decoys_ge_observed": 1,
+     "expected_ge_in_2000_draws": 0.7827788649706457,
+     "frac_ge": 0.0003913894324853229,
+     "n_decoys": 2555,
+     "observed": 2,
+     "percentile_midrank": 99.98043052837573
+    }
+   },
+   "null_main": {
+    "contexts_ge1": {
+     "decoy_max": 2,
+     "decoy_mean": 0.009030790016354973,
+     "decoys_ge_observed": 5,
+     "expected_ge_in_2000_draws": 0.7110858280594468,
+     "frac_ge": 0.00035554291402972336,
+     "n_decoys": 14063,
+     "observed": 2,
+     "percentile_midrank": 99.98222285429851
+    },
+    "objects": {
+     "decoy_max": 13,
+     "decoy_mean": 0.02766123871151248,
+     "decoys_ge_observed": 20,
+     "expected_ge_in_2000_draws": 2.844343312237787,
+     "frac_ge": 0.0014221716561188934,
+     "n_decoys": 14063,
+     "observed": 5,
+     "percentile_midrank": 99.86133826352841
+    },
+    "pairs_ge1": {
+     "decoy_max": 2,
+     "decoy_mean": 0.009030790016354973,
+     "decoys_ge_observed": 5,
+     "expected_ge_in_2000_draws": 0.7110858280594468,
+     "frac_ge": 0.00035554291402972336,
+     "n_decoys": 14063,
+     "observed": 2,
+     "percentile_midrank": 99.98222285429851
+    },
+    "pairs_ge2": {
+     "decoy_max": 2,
+     "decoy_mean": 0.001137737324895115,
+     "decoys_ge_observed": 1,
+     "expected_ge_in_2000_draws": 0.14221716561188935,
+     "frac_ge": 7.110858280594468e-05,
+     "n_decoys": 14063,
+     "observed": 2,
+     "percentile_midrank": 99.99644457085971
+    }
+   },
+   "null_wide_k50_sampled": {
+    "contexts_ge1": {
+     "decoy_max": 2,
+     "decoy_mean": 0.00335,
+     "decoys_ge_observed": 2,
+     "expected_ge_in_2000_draws": 0.2,
+     "frac_ge": 0.0001,
+     "n_decoys": 20000,
+     "observed": 2,
+     "percentile_midrank": 99.995
+    },
+    "objects": {
+     "decoy_max": 8,
+     "decoy_mean": 0.01005,
+     "decoys_ge_observed": 8,
+     "expected_ge_in_2000_draws": 0.8,
+     "frac_ge": 0.0004,
+     "n_decoys": 20000,
+     "observed": 5,
+     "percentile_midrank": 99.965
+    },
+    "pairs_ge1": {
+     "decoy_max": 2,
+     "decoy_mean": 0.00335,
+     "decoys_ge_observed": 2,
+     "expected_ge_in_2000_draws": 0.2,
+     "frac_ge": 0.0001,
+     "n_decoys": 20000,
+     "observed": 2,
+     "percentile_midrank": 99.995
+    },
+    "pairs_ge2": {
+     "decoy_max": 1,
+     "decoy_mean": 0.00075,
+     "decoys_ge_observed": 0,
+     "expected_ge_in_2000_draws": 0.0,
+     "frac_ge": 0.0,
+     "n_decoys": 20000,
+     "observed": 2,
+     "percentile_midrank": 100.0
+    }
+   },
+   "observed": {
+    "contexts_ge1": 2,
+    "objects": 5,
+    "pairs_ge1": 2,
+    "pairs_ge2": 2
+   },
+   "pools": {
+    "A": [
+     336,
+     293,
+     123,
+     53,
+     48,
+     245,
+     17,
+     216,
+     8,
+     347,
+     244,
+     267,
+     104,
+     28,
+     124,
+     197,
+     98,
+     112,
+     121,
+     402,
+     169,
+     341,
+     175,
+     155,
+     106
+    ],
+    "B": [
+     336,
+     123,
+     267,
+     245,
+     53,
+     48,
+     293,
+     17,
+     347,
+     8,
+     216,
+     176,
+     98,
+     402,
+     169,
+     244,
+     104,
+     112,
+     121,
+     124,
+     28,
+     341,
+     175,
+     127,
+     197
+    ],
+    "C": [
+     123,
+     336,
+     245,
+     267,
+     53,
+     48,
+     347,
+     8,
+     176,
+     98,
+     402,
+     169,
+     293,
+     17,
+     216,
+     112,
+     244,
+     230,
+     194,
+     155,
+     127,
+     104,
+     121,
+     124,
+     180
+    ]
+   },
+   "rule": "roof 65 -> 87-59",
+   "search_over_extra": {
+    "base": 59,
+    "decoy_best_pairs_ge1_mean": 0.6611570247933884,
+    "decoy_searches_with_best_pairs_ge1_ge_proposed": 52,
+    "decoy_searches_with_best_pairs_ge2_ge_proposed_ge2": 12,
+    "frac_decoy_searches_ge2": 0.019834710743801654,
+    "frac_decoy_searches_ge_proposed": 0.0859504132231405,
+    "n_decoy_searches": 605,
+    "observed_best_pairs_ge1": 3,
+    "observed_best_pairs_ge2": 2,
+    "proposed_rule_pairs_ge1": 2
+   }
+  },
+  "surrounding marks 60 -> 59-211": {
+   "A": 60,
+   "B": 59,
+   "C": 211,
+   "all_BC_for_same_A": {
+    "BC_rewrites_with_support_ge_observed": 4,
+    "best_support_for_A": 3,
+    "distinct_BC_rewrites_with_any_support": 241,
+    "of_possible_BC": 173472
+   },
+   "best_rewrite_of_matched_A": {
+    "decoy_best_values": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     3,
+     3,
+     3,
+     5
+    ],
+    "decoy_signs_whose_best_rewrite_ge_observed": 10,
+    "n_decoy_signs": 25,
+    "observed": 2
+   },
+   "null_given_expansion_bigram_exists": {
+    "contexts_ge1": {
+     "decoy_max": 1,
+     "decoy_mean": 0.01768550557477893,
+     "decoys_ge_observed": 0,
+     "expected_ge_in_2000_draws": 0.0,
+     "frac_ge": 0.0,
+     "n_decoys": 2601,
+     "observed": 2,
+     "percentile_midrank": 100.0
+    },
+    "objects": {
+     "decoy_max": 9,
+     "decoy_mean": 0.04767397154940407,
+     "decoys_ge_observed": 0,
+     "expected_ge_in_2000_draws": 0.0,
+     "frac_ge": 0.0,
+     "n_decoys": 2601,
+     "observed": 14,
+     "percentile_midrank": 100.0
+    },
+    "pairs_ge1": {
+     "decoy_max": 1,
+     "decoy_mean": 0.01768550557477893,
+     "decoys_ge_observed": 0,
+     "expected_ge_in_2000_draws": 0.0,
+     "frac_ge": 0.0,
+     "n_decoys": 2601,
+     "observed": 2,
+     "percentile_midrank": 100.0
+    },
+    "pairs_ge2": {
+     "decoy_max": 1,
+     "decoy_mean": 0.0038446751249519417,
+     "decoys_ge_observed": 10,
+     "expected_ge_in_2000_draws": 7.6893502499038835,
+     "frac_ge": 0.0038446751249519417,
+     "n_decoys": 2601,
+     "observed": 1,
+     "percentile_midrank": 99.8077662437524
+    }
+   },
+   "null_main": {
+    "contexts_ge1": {
+     "decoy_max": 1,
+     "decoy_mean": 0.0030816640986132513,
+     "decoys_ge_observed": 0,
+     "expected_ge_in_2000_draws": 0.0,
+     "frac_ge": 0.0,
+     "n_decoys": 14927,
+     "observed": 2,
+     "percentile_midrank": 100.0
+    },
+    "objects": {
+     "decoy_max": 9,
+     "decoy_mean": 0.00830709452669659,
+     "decoys_ge_observed": 0,
+     "expected_ge_in_2000_draws": 0.0,
+     "frac_ge": 0.0,
+     "n_decoys": 14927,
+     "observed": 14,
+     "percentile_midrank": 100.0
+    },
+    "pairs_ge1": {
+     "decoy_max": 1,
+     "decoy_mean": 0.0030816640986132513,
+     "decoys_ge_observed": 0,
+     "expected_ge_in_2000_draws": 0.0,
+     "frac_ge": 0.0,
+     "n_decoys": 14927,
+     "observed": 2,
+     "percentile_midrank": 100.0
+    },
+    "pairs_ge2": {
+     "decoy_max": 1,
+     "decoy_mean": 0.0006699269779594024,
+     "decoys_ge_observed": 10,
+     "expected_ge_in_2000_draws": 1.3398539559188047,
+     "frac_ge": 0.0006699269779594024,
+     "n_decoys": 14927,
+     "observed": 1,
+     "percentile_midrank": 99.96650365110203
+    }
+   },
+   "null_wide_k50_sampled": {
+    "contexts_ge1": {
+     "decoy_max": 2,
+     "decoy_mean": 0.00265,
+     "decoys_ge_observed": 4,
+     "expected_ge_in_2000_draws": 0.4,
+     "frac_ge": 0.0002,
+     "n_decoys": 20000,
+     "observed": 2,
+     "percentile_midrank": 99.99
+    },
+    "objects": {
+     "decoy_max": 9,
+     "decoy_mean": 0.0074,
+     "decoys_ge_observed": 0,
+     "expected_ge_in_2000_draws": 0.0,
+     "frac_ge": 0.0,
+     "n_decoys": 20000,
+     "observed": 14,
+     "percentile_midrank": 100.0
+    },
+    "pairs_ge1": {
+     "decoy_max": 2,
+     "decoy_mean": 0.00265,
+     "decoys_ge_observed": 4,
+     "expected_ge_in_2000_draws": 0.4,
+     "frac_ge": 0.0002,
+     "n_decoys": 20000,
+     "observed": 2,
+     "percentile_midrank": 99.99
+    },
+    "pairs_ge2": {
+     "decoy_max": 1,
+     "decoy_mean": 0.00095,
+     "decoys_ge_observed": 19,
+     "expected_ge_in_2000_draws": 1.9,
+     "frac_ge": 0.00095,
+     "n_decoys": 20000,
+     "observed": 1,
+     "percentile_midrank": 99.9525
+    }
+   },
+   "observed": {
+    "contexts_ge1": 2,
+    "objects": 14,
+    "pairs_ge1": 2,
+    "pairs_ge2": 1
+   },
+   "pools": {
+    "A": [
+     242,
+     190,
+     224,
+     252,
+     14,
+     139,
+     254,
+     296,
+     327,
+     12,
+     319,
+     326,
+     180,
+     233,
+     193,
+     182,
+     96,
+     194,
+     186,
+     302,
+     130,
+     375,
+     294,
+     222,
+     81
+    ],
+    "B": [
+     123,
+     336,
+     245,
+     267,
+     53,
+     48,
+     347,
+     8,
+     176,
+     98,
+     402,
+     169,
+     293,
+     17,
+     216,
+     112,
+     244,
+     230,
+     194,
+     155,
+     127,
+     104,
+     121,
+     124,
+     180
+    ],
+    "C": [
+     176,
+     169,
+     12,
+     123,
+     254,
+     245,
+     336,
+     402,
+     347,
+     8,
+     98,
+     53,
+     48,
+     293,
+     242,
+     180,
+     130,
+     252,
+     190,
+     230,
+     17,
+     267,
+     14,
+     375,
+     216
+    ]
+   },
+   "rule": "surrounding marks 60 -> 59-211",
+   "search_over_extra": {
+    "base": 59,
+    "decoy_best_pairs_ge1_mean": 0.3563402889245586,
+    "decoy_searches_with_best_pairs_ge1_ge_proposed": 21,
+    "decoy_searches_with_best_pairs_ge2_ge_proposed_ge2": 77,
+    "frac_decoy_searches_ge2": 0.12359550561797752,
+    "frac_decoy_searches_ge_proposed": 0.033707865168539325,
+    "n_decoy_searches": 623,
+    "observed_best_pairs_ge1": 2,
+    "observed_best_pairs_ge2": 1,
+    "proposed_rule_pairs_ge1": 2
+   }
+  }
+ },
+ "seed": 20261001
+}
