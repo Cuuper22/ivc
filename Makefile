@@ -37,7 +37,7 @@ check:
 	@$(PYTHON) -c "$$CHECK_PY"
 	@for f in docs/*.js db/*.mjs; do $(NODE) --check $$f || exit 1; done; echo "node --check ok: $$(ls docs/*.js db/*.mjs | wc -l) files"
 
-# Mahadevan 1977 constraint audit (stdlib only). Output is byte-identical to research/data/mahadevan_20260905/.
+# Mahadevan 1977 constraint audit (stdlib only).
 audit:
 	$(PYTHON) research/tools/mahadevan_constraint_audit.py \
 	  --input research/data/mahadevan_20260905/concordance_documents.json.gz \

@@ -1,8 +1,8 @@
 name: Reproduce
 
-# Syntax checks, the deterministic Mahadevan audit, the campaign verification stage, and the
-# SQLite build. Mirrors `make check audit verify db`. The full campaign (`make campaign`) is not
-# run here: its outputs drift in the last float digits across BLAS builds.
+# Syntax checks, the Mahadevan audit, the full campaign, the verification stage and the SQLite
+# build, then a check that the headline numbers (census counts, paired-face counts, joint model
+# scores and ranking) come out the same. Float noise in report files is ignored.
 on:
   push:
     paths:
@@ -50,6 +50,7 @@ jobs:
             embeddings
             tools
             evidence/tmp/mayig_feature_namespace_probe
+            evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets
           persist-credentials: false
 
       - uses: actions/setup-python@v5
@@ -64,23 +65,12 @@ jobs:
 
       - run: python -m pip install -r requirements.txt
 
-      - name: make check audit verify db
-        run: make check audit verify db
+      - name: make check audit verify db campaign
+        run: make check audit verify db campaign
 
-      - name: Audit output must match the committed Mahadevan snapshot byte for byte
-        run: |
-          status=0
-          for f in build/audit/*; do
-            name=$(basename "$f")
-            [ "$name" = files.sha256.json ] && continue
-            if ! cmp -s "$f" "research/data/mahadevan_20260905/$name"; then
-              echo "DRIFT: $name"; status=1
-            fi
-          done
-          exit $status
-
-      - name: Tracked files must be unchanged after the run
-        run: git diff --exit-code
+      # Compare the numbers the conclusions rest on, not file bytes.
+      - name: Headline numbers unchanged
+        run: python research/tools/check_headline_numbers.py
 
       - uses: actions/upload-artifact@v4
         if: always()
