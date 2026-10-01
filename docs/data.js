@@ -11,7 +11,8 @@
    ILLUSTRATIVE — GLYPHS are original line drawings in the spirit of Indus
    signs, not tracings of real ones, so nobody can mistake the page's artwork
    for evidence. PUZZLE rows are made up out of real sign codes to teach the
-   idea of a terminal tail; they are not corpus rows.
+   idea of a terminal tail; they are not corpus rows, and the page says so
+   next to the game.
    ========================================================================= */
 window.IVC = (function () {
 
@@ -64,9 +65,9 @@ window.IVC = (function () {
   var BRANCH = {
     nodes: [
       { id: "002",     label: "002", x: 0, y: 2,  status: "root",    info: "The conditioning sign. What follows 002 behaves differently than the same signs elsewhere." },
-      { id: "861",     label: "861", x: 1, y: 1,  status: "context", info: "The fixed branch context 002-861. Inside it, one tail is provably regular." },
+      { id: "861",     label: "861", x: 1, y: 1,  status: "context", info: "The branch context 002-861. Two seals continue it with the same three signs, 861-533-717." },
       { id: "390",     label: "390", x: 1, y: 3,  status: "context", info: "The adjacent branch 002-390. A live ecology of competing tails; the current frontier." },
-      { id: "533717",  label: "533-717", x: 2, y: 1, status: "verified", info: "ACCEPTED. The only short unit whose every strict occurrence after 002-861 is a terminal tail. Witnesses M-376, M-391. Forger FPR 0.0002." },
+      { id: "533717",  label: "533-717", x: 2, y: 1, status: "verified", info: "ACCEPTED as a description only. Seals M-376 and M-391 share the string 861-533-717 after 002, at the stored end (Lipi order), which is the reading-initial end. Sign 533 occurs on no other seal. Not a rule; the fixed-unit inference is demoted." },
       { id: "125",     label: "125", x: 2, y: 2.4, status: "open",  info: "Inside 002-390, sign 125 tends to continue the sequence (4/4 in strict rows). Structural pressure, not a reading." },
       { id: "095",     label: "095", x: 2, y: 3.2, status: "gated", info: "A closure branch. Second witness H-1993 is source-gated in CISI 3.1. One strict witness (M-71) so far." },
       { id: "705",     label: "705", x: 2, y: 4.0, status: "gated", info: "A repeated closure. Witnesses Dholavira 8758 and M-1825 are both source-gated. Zero strict witnesses yet." },
@@ -80,10 +81,11 @@ window.IVC = (function () {
   };
 
   /* ---- Decipherer's game: spot the terminal tail --------------------- */
-  // Teaching rows, not corpus rows. They are built so that exactly one
-  // option, 533-717, sits at the end of every line it appears in, while the
-  // decoy options also turn up mid-line. That is the same test the project
-  // ran, shrunk to six lines a visitor can eyeball.
+  // INVENTED teaching rows, not corpus rows. They are built so that exactly
+  // one option, 533-717, sits at the end of every line it appears in, while
+  // the decoy options also turn up mid-line. This illustrates what "a unit
+  // that only ever ends a line" would look like; in the real corpus 533-717
+  // appears on two seals only. The page labels the rows as invented.
   var PUZZLE = {
     prompt: "One unit below only ever appears at the very END of a line. The others turn up in the middle too. Which one always closes?",
     options: ["220-004", "533-717", "390-125", "031-002"],
@@ -126,13 +128,14 @@ window.IVC = (function () {
     { y: "2009", t: "Entropy fights back", d: "Rao et al. answer with conditional entropy in Science. The debate is still open today, by design." },
     { y: "2022", t: "Linear Elamite, contested", d: "Desset's team claims its neighbor-script deciphered. Top journal, mixed reception: venue is not validation." },
     { y: "2025", t: "The million-dollar prize", d: "Tamil Nadu announces the Iravatham Mahadevan Prize for a verified decipherment. Unclaimed." },
-    { y: "2026", t: "One brick, earned", d: "This project accepts its first structural finding after 10,000-shuffle forger tests and source-image binding. Zero readings claimed." }
+    { y: "2026", t: "One small observation", d: "This project records one descriptive observation: two seals share a three-sign string. It is not a rule, and zero readings are claimed." }
   ];
 
   /* ---- The graveyard: retracted claims, straight from claims.json ---- */
-  // Eight of the twenty-six retractions, chosen to show the range of ways a
-  // claim can fail, each with its cause of death in plain language. The id
-  // is the ledger's own claim id, so a reader can go find the full record.
+  // Seven of the eighteen retractions, plus one instrument failure marked with
+  // its own label (rip), chosen to show the range of ways a claim can fail,
+  // each with its cause of death in plain language. The id is the ledger's
+  // own claim id, so a reader can go find the full record.
   var GRAVES = [
     { id: "all_002_y_are_endings", title: "“Everything after 002 is an ending”", death: "Too broad. The skeptic pass found continuing rows; the clean version survives only inside one narrow branch." },
     { id: "internal_only_effective_unicity_gives_language_family", title: "“Cryptographic unicity can name the language”", death: "Retracted in-house: internal consistency alone cannot identify a language family. The same logic underlies famous external claims." },
@@ -141,9 +144,9 @@ window.IVC = (function () {
     { id: "bm120573_as_external_phonetic_anchor", title: "“BM 120573 gives a phonetic anchor”", death: "The object is real; the phonetic bridge was not. Killed at source normalization." },
     { id: "brahmi_shape_descent_nearest_neighbors", title: "“Brahmi shapes descend from Indus signs”", death: "Nearest-neighbor shape matching could not beat impostor forgers fed with unrelated scripts." },
     { id: "object_level_onomastic_value_attempts", title: "“We can read names off objects”", death: "Name-reading attempts failed the forger gate. No sound value survived." },
-    { id: "directionality_source_visible_and_overlap_support", title: "“Reading direction, proven from photos”", death: "Six packet versions tried. Every route stayed catalog-mediated; none earned blind source-visible support." }
+    { id: "directionality_no_overlay_source_normalized_packet", rip: "instrument failed", title: "“Reading direction, proven from photos”", death: "Not a retraction: six blind-packet versions were tried and the review instrument itself failed (too few negatives, label leaks, failed preflight). They never tested direction. Direction from sequence statistics is already published (Yadav et al. 2010)." }
   ];
-  var GRAVES_TOTAL = 26;
+  var GRAVES_TOTAL = 18;
 
   /* ---- The artifact gallery ------------------------------------------ */
   // The eight objects the whole story hangs on. "text" holds the real

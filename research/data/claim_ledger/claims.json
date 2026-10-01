@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "date": "2026-05-30",
+  "date": "2026-10-01",
   "purpose": "Single source of truth for Indus-script claims that can be accepted only after forger false-positive tests and skeptic attacks are recorded.",
   "accepted_claim_counts": {
     "translations": 0,
@@ -22,8 +22,8 @@
       "claim_id": "accepted_struct_002_861_533_717_restricted_tail_2026_05_29",
       "claim_type": "structural_findings",
       "status": "accepted",
-      "claim": "Within the fixed 002-861 branch question, the two-token unit 533-717 is the only tested length-1-to-3 unit with support >= 2 whose every occurrence in strict local rows is a terminal tail after 002-861. The two witnesses are M-376 and M-391; both are source-visible as same-line terminal-side material, and current source-family review rejects exact copy-family collapse.",
-      "scope": "Strict local Lipi numeric rows, checked both raw and exact text/site/type/symbol deduplicated. The claim is fixed-prefix only: it does not say repeated terminal bigrams are rare across the whole corpus, does not accept exact source-normalized 861/533/717 token boundaries, and does not assign sound, meaning, language, or translation.",
+      "claim": "M-376 and M-391 are two source-visible attestations of the same three-position terminal string 861 | 533 | 717 (allographs; catalogue-mediated token boundaries) after 002. 'Terminal' means stored-final in the Lipi catalogue, which is reading-initial under the conventional reading (research/docs/reading_direction_note.md). Sign 533 occurs only on these two seals in the 5,679-row Lipi source. This is a descriptive observation about two artifacts, not a rule. The inference that 533-717 is a source-independent fixed two-sign unit is demoted below acceptance.",
+      "scope": "Strict local Lipi numeric rows. Descriptive of two artifacts only. It does not say repeated terminal bigrams are rare across the corpus, does not accept exact source-normalized 861/533/717 token boundaries, does not establish a fixed unit or rule, and does not assign sound, meaning, language, or translation. The exact 533 dependency on 717 is taxonomy-sensitive: under Parpola group 222 and Mayig P228, related forms (M-17, M-26) occur without 717.",
       "primary_evidence": [
         {
           "path": "data/open_prototype/reports/campaign_032_002_861_restricted_tail_forger_summary.json",
@@ -44,6 +44,14 @@
         {
           "path": "data/open_prototype/reports/campaign_032_002_861_533717_source_layout_discriminator_summary.json",
           "summary": "No unique 533-717 source-layout discriminator is accepted: M-1273 also shows same-line terminal-side post-861 material, while M-355 and M-1267 supply same-register source-visible controls."
+        },
+        {
+          "path": "research/docs/replacement_run_checkpoint_20260712.md",
+          "summary": "2026-07-12 checkpoint: accepted wording is descriptive (two artifacts, one three-position string); fixed-unit inference demoted; 533 dependency sensitive to sign taxonomy."
+        },
+        {
+          "path": "research/docs/reading_direction_note.md",
+          "summary": "2026-10-01: Lipi stored-final is reading-initial under the conventional (Mahadevan) reading."
         }
       ],
       "forger_record": {
@@ -82,27 +90,33 @@
           "fpr_token_shuffle_within_row": 0
         },
         "max_recorded_fpr": 0.006,
-        "fpr_boundary": "Accepted as low enough for a narrow fixed-prefix structural finding with explicit wording limits; not acceptable for sign meaning, phonetics, translation, or language-family identification."
+        "fpr_boundary": "Superseded 2026-10-01: the recorded rates were computed on a post-hoc prefix and are not an acceptance basis. The finding is accepted only as a descriptive observation of two artifacts.",
+        "validity_2026_10_01": "The false-positive rates recorded here (0.0002, 0.001, 0.006 and the dedup variants) were computed for a prefix, 002-861, chosen after looking at the data. They are not valid false-positive rates for the finding and are retained only as a record of what the tool printed. The accepted statement does not rely on them. A scan over all prefixes finds many comparable repeated terminal cells (96 in strict raw rows, 40 after exact dedup per the earlier skeptic pass; 37 prefix+terminal-bigram cells in a 2026-10-01 rerun on damage-free deduplicated rows).",
+        "posthoc_prefix_fpr_do_not_cite": true,
+        "max_recorded_fpr_note": "max_recorded_fpr is computed on a post-hoc prefix; not a valid false-positive rate."
       },
       "skeptic_record": {
         "attacks_survived": [
           "Exact text/site/type/symbol deduplication preserves the result: M-376 and M-391 remain two rows because they are not exact duplicate strings or duplicate source/register copies.",
-          "Context-label shuffles let any length-1-to-3 unit become the discovered candidate after the fixed 002-861 prefix; the observed max support has FPR 0.0002 globally and 0.001 under site/type/symbol grouping in strict raw rows.",
-          "Token shuffles preserving row lengths and row-internal inventories fail or rarely reproduce the observed fixed-prefix restricted-tail pattern; the harshest observed FPR is 0.006.",
           "Source-family review rejects exact copy-family collapse for M-376/M-391.",
-          "Source-layout review blocks overclaiming: same-line terminal-side placement is not unique to 533-717 because M-1273 preserves a 603 tail in comparable same-line position."
+          "Source-layout review blocks overclaiming: same-line terminal-side placement is not unique to 533-717 because M-1273 preserves a 603 tail in comparable same-line position.",
+          "Context-label and token shuffles were run for the 002-861 prefix; because that prefix was chosen post hoc the resulting rates are not used (see forger_record.validity_2026_10_01)."
         ],
         "scope_limits": [
           "A broad post-hoc prefix search finds many repeated terminal bigram cells: 96 in strict raw rows and 40 after exact text/site/type/symbol dedup. Therefore the accepted claim is fixed to the prior 002-861 branch question only.",
           "M-376 and M-391 are one narrow Mohenjo-daro no-icon SEAL:R source/register family cell for linguistic weighting, not a demonstrated semantic class.",
           "Exact source-normalized 861/533/717 token boundaries remain catalog-mediated.",
-          "No sign value, sign meaning, phonetic value, language family, external anchor, or translation is accepted."
+          "No sign value, sign meaning, phonetic value, language family, external anchor, or translation is accepted.",
+          "Fixed-unit inference (533-717 as a source-independent two-sign unit) is demoted below acceptance (2026-07-12 checkpoint).",
+          "Reading direction: stored-final (Lipi) = reading-initial under the conventional reading; see research/docs/reading_direction_note.md."
         ],
-        "decision": "Accepted only as a narrow structural finding."
+        "decision": "Accepted only as a descriptive observation of two artifacts (2026-07-12 wording); no inferential claim."
       },
       "accepted_count_increment": {
         "structural_findings": 1
-      }
+      },
+      "claim_id_note": "ID kept for stable references; the ID's 'restricted_tail' wording is superseded by the claim text below (2026-07-12 checkpoint, 2026-10-01 ledger revision).",
+      "accepted_wording_source": "research/docs/replacement_run_checkpoint_20260712.md (decision RETAIN_TWO_ARTIFACT_TERMINAL_STRING; DEMOTE_FIXED_UNIT_INFERENCE; EXACT_533_DEPENDENCY_TAXONOMY_SENSITIVE)"
     }
   ],
   "candidate_claims": [
@@ -1038,7 +1052,8 @@
           "Need source-level direction/side checks for the candidate rows before any sign-function claim leaves the T3 metadata layer."
         ],
         "decision": "Do not increment accepted structural_findings yet."
-      }
+      },
+      "reassessment_2026_10_01": "Under-tested rather than closed. 'Terminal' means Lipi stored-final = reading-initial. A baseline check (2026-10-01 rerun, damage-free deduplicated rows of 2+ signs, non-initial positions): 817 is stored-final in 0.91 of its occurrences overall and 820 in 0.80, while 390 (0.10) and 368 (0.07) rarely are, so part of the 817/820 versus 390/368 split is a sign-level baseline the repo's nulls ignore. The 002-specific effect beyond that baseline has not been separated in this ledger."
     },
     {
       "claim_id": "candidate_struct_effective_unicity_internal_degeneracy_2026_05_29",
@@ -1390,7 +1405,7 @@
               "stored_win_share": 0.774621,
               "max_null_ge_observed_share": 0.265
             },
-            "interpretation": "Harsh directionality survives register-block holdout but not full site holdout, so it cannot be described as site-generalized."
+            "interpretation": "Harsh directionality survives register-block holdout; the full leave-site-out figure (0.753) is depressed by ties counted as losses and small training sets (see reassessment_2026_10_01)."
           },
           "site_balance_controls": {
             "tool": "data/open_prototype/tools/effective_unicity_directionality_site_balance.mjs",
@@ -1430,7 +1445,7 @@
               "observed_median": 0.433333,
               "max_paired_null_ge_observed_share": 0.616
             },
-            "interpretation": "Mohenjo-daro plus Harappa balanced resampling survives, but Lothal-inclusive and top-five-site balanced samples are null-compatible. Do not describe the result as pan-Indus."
+            "interpretation": "Mohenjo-daro plus Harappa balanced resampling survives. Equal-weight balancing with tiny sites is under-powered; this is not evidence against directionality at other sites."
           },
           "site_profile_controls": {
             "tool": "data/open_prototype/tools/effective_unicity_directionality_site_profiles.mjs",
@@ -1452,7 +1467,7 @@
               "stored_win_share": 0.3125,
               "max_null_ge_observed_share": 0.988
             },
-            "interpretation": "Mohenjo-daro and Harappa each carry internal directionality in the harsh Lipi T3 layer; Lothal is null-compatible in the current small harsh subset. Smaller sites are unresolved."
+            "interpretation": "Mohenjo-daro and Harappa each carry internal directionality. Lothal's within-site result (16 harsh rows, ties as losses) is a power artifact; trained on all other sites Lothal scores 54/58 on the exact scope."
           },
           "policy_controls": {
             "tool": "data/open_prototype/tools/effective_unicity_directionality_policy_controls.mjs",
@@ -1546,7 +1561,7 @@
               "mean_stored_minus_reversed_per_transition": -0.161676,
               "max_admissible_null_ge_observed_share": 1
             },
-            "interpretation": "The harsh directionality signal survives source-convention holdout and collapse in the dominant R/L metadata layer, but L/R fails and the result cannot be described as physical direction, bidirectional validation, or source-image normalization."
+            "interpretation": "The harsh directionality signal survives source-convention holdout and collapse in the R/L metadata layer. The harsh L/R stratum has 11 rows and cannot test anything; the exact L/R rows score 77/83 when trained on R/L. Not physical direction."
           },
           "source_queue": {
             "tool": "data/open_prototype/tools/effective_unicity_directionality_source_queue.mjs",
@@ -1736,8 +1751,8 @@
           "Directionality comparator added: in the harsh top-10-edge-removed plus one-edit-family-collapsed scope, Indus stored-order win share is 0.841096 with max null >= observed share 0, above current real-world nonlinguistic and ambiguous comparators but below known-script controls. Mayig P exact-collapsed records show stored-order asymmetry at 0.943750, while harsh Mayig drops to 0.666667 over 24 rows.",
           "Directionality skeptic controls added: source-visible 861 terminal/tail and matched Lipi/Mayig overlap support lanes are retracted. The 861 probe has max null >= observed share 1, and top-10-edge-removed overlap drops to Lipi 0.363636 and Mayig 0.473684 with max null >= observed share 1.",
           "Directionality block controls added: harsh top-10-edge-removed one-edit-family-collapsed directionality survives site/type/symbol holdout at 0.827397 with max null >= observed share 0; register-edge-family collapse survives the same holdout at 0.835227 with max null >= observed share 0.005000.",
-          "Directionality site-balance controls added: Mohenjo-daro plus Harappa balanced resampling survives with observed median stored-win share 0.803571 and max paired null >= observed share 0.003, but Lothal-inclusive and top-five-site balanced samples are null-compatible.",
-          "Directionality site profiles added: Mohenjo-daro and Harappa each survive within-site controls at 0.816038 and 0.741071 with max null >= observed shares 0.002 and 0.004; Lothal is null-compatible at 0.312500 with max null >= observed share 0.988.",
+          "Directionality site-balance controls added: Mohenjo-daro plus Harappa balanced resampling survives with observed median stored-win share 0.803571 and max paired null >= observed share 0.003, but equal-weight Lothal-inclusive and top-five-site samples are under-powered (see reassessment_2026_10_01).",
+          "Directionality site profiles added: Mohenjo-daro and Harappa each survive within-site controls at 0.816038 and 0.741071 with max null >= observed shares 0.002 and 0.004; Lothal's within-site 16-row harsh subset is null-compatible (0.312500; a power artifact, see reassessment_2026_10_01).",
           "Directionality policy controls added: 354 of 365 harsh rows are recorded R/L; R/L-only scoring preserves stored-win share at 0.838983, and random row-orientation flips destroy the signal with all-harsh null mean 0.471134 and null p95 0.526027.",
           "Directionality influence controls added: no single row carries the harsh signal; largest supportive row delta is 0.005931 and largest absolute row effect is adverse, while the largest coarse site/type/symbol family effect is 0.028975.",
           "Directionality formula-family controls added: harsh leave-source-convention-out scoring using site/type/material/symbol/cult/direction survives at stored-win share 0.832877 with max admissible null >= observed share 0.020000, and harsh source-convention collapse survives at 0.805714 with max admissible null >= observed share 0.005000.",
@@ -1749,12 +1764,12 @@
           "Known-script scarcity coverage is still narrow: Linear B Series D and SumTablets have been rerun and integrated, but broader known-script comparator batteries remain incomplete.",
           "No accepted discriminator yet separates Indus masked local predictability from high-predictability real-world nonlinguistic or ambiguous systems.",
           "The directionality discriminator is not source-normalized yet and may still depend on Lipi metadata, direction conventions, or corpus curation.",
-          "Matched Lipi/Mayig overlap failed under top-edge removal and block-conditioned controls; any future overlap claim needs crosswalk-blind heldout rebuilding.",
-          "Full leave-site-out is not clean in harsh directionality scopes: one-edit collapse has max null >= observed share 0.100000 and register-edge-family collapse has max null >= observed share 0.265000.",
-          "Minor-site balanced resampling is null-compatible: Mohenjo-daro/Harappa/Lothal has max paired null >= observed share 0.528 and the top-five-site design has 0.616.",
-          "Lothal's current harsh subset is null-compatible and small; this does not prove Lothal lacks directionality in a source-normalized or broader corpus.",
+          "[reassessed 2026-10-01] Power artifact, not a failure: with ties counted as losses and tiny training sets the repo's design under-powers small strata. Rerun with training on all other sites: exact Lothal 54/58 stored wins (0.931), exact leave-site-out pooled 1670 wins / 110 losses / 18 ties, harsh leave-site-out 275 wins / 54 losses / 36 ties, exact R/L-trained scoring of L/R rows 77/83. Directionality is known (Yadav et al. 2010).",
+          "[reassessed 2026-10-01] Power artifact, not a failure: with ties counted as losses and tiny training sets the repo's design under-powers small strata. Rerun with training on all other sites: exact Lothal 54/58 stored wins (0.931), exact leave-site-out pooled 1670 wins / 110 losses / 18 ties, harsh leave-site-out 275 wins / 54 losses / 36 ties, exact R/L-trained scoring of L/R rows 77/83. Directionality is known (Yadav et al. 2010).",
+          "[reassessed 2026-10-01] Power artifact, not a failure: with ties counted as losses and tiny training sets the repo's design under-powers small strata. Rerun with training on all other sites: exact Lothal 54/58 stored wins (0.931), exact leave-site-out pooled 1670 wins / 110 losses / 18 ties, harsh leave-site-out 275 wins / 54 losses / 36 ties, exact R/L-trained scoring of L/R rows 77/83. Directionality is known (Yadav et al. 2010).",
+          "[reassessed 2026-10-01] Power artifact, not a failure: with ties counted as losses and tiny training sets the repo's design under-powers small strata. Rerun with training on all other sites: exact Lothal 54/58 stored wins (0.931), exact leave-site-out pooled 1670 wins / 110 losses / 18 ties, harsh leave-site-out 275 wins / 54 losses / 36 ties, exact R/L-trained scoring of L/R rows 77/83. Directionality is known (Yadav et al. 2010).",
           "Recorded direction is too imbalanced and metadata-derived to validate physical source-image direction.",
-          "The L/R stratum fails harsh controls: exact L/R is null-compatible and harsh L/R has only 11 rows, stored-win share 0, and max null >= observed share 1.",
+          "[reassessed 2026-10-01] Power artifact, not a failure: with ties counted as losses and tiny training sets the repo's design under-powers small strata. Rerun with training on all other sites: exact Lothal 54/58 stored wins (0.931), exact leave-site-out pooled 1670 wins / 110 losses / 18 ties, harsh leave-site-out 275 wins / 54 losses / 36 ties, exact R/L-trained scoring of L/R rows 77/83. Directionality is known (Yadav et al. 2010).",
           "The source queue is only an acquisition instrument; it does not validate physical source direction, token order, or source-normalized transcription.",
           "The source queue, public route probe, route-conditioned control, visual triage, and no-overlay packets are acquisition/failure-discovery instruments only. Public route visibility itself fails as support: 38 public-route rows score 0.684211, source-register collapse drops to 0.619048, and matched route-label nulls reproduce or exceed the observed route subset score. The v1 no-overlay packet failed with seven packaged unique scoring negatives but only six effective scorable controls after D006/M-525 leaked a printed side annotation; yes-only denominators were 3 and 4 by reviewer, hard false positives appeared, and target counts were unstable. The v2 packet failed preflight because paired target images had duplicate hashes. The v2b packet fixed the duplicate-hash and 12-real-negative design defects but failed because real denominator rows leaked labels, reviewer C had target-like uncertainty on two real negatives, and target counts varied across reviewers. The v2f homogeneous signband-strip preflight also failed: strict reuse lacks M-811 as a compact target, has only seven original fixed real-negative CISIs under the compact-strip gate, and has target/control source-page collisions; the derived top-strip lane is acquisition-only and still misses M-1320/M-811 before visual review.",
           "The M-70 matched-negative blind token-box packet failed promotion: max yes-only scoring-negative FPR 0.714286 and max conservative FPR 0.777778. A stricter source-box protocol is required before any M-70 promotion.",
@@ -1864,7 +1879,21 @@
           "summary": "Human-readable v2c preflight retraction and panel-crop repair note; records the parser fix, failed page-context masking approach, and unreviewed crop-repair inventory.",
           "evidence_role": "source_validation_failure_boundary"
         }
-      ]
+      ],
+      "prior_work": [
+        {
+          "cite": "Yadav, N., Joglekar, H., Rao, R. P. N., Vahia, M. N., Adhikari, R., Mahadevan, I. (2010). Statistical Analysis of the Indus Script Using n-Grams. PLoS ONE 5(3): e9506.",
+          "doi": "10.1371/journal.pone.0009506",
+          "covers": "n-gram models, directionality of the script, ordered sign groups, missing-sign prediction"
+        },
+        {
+          "cite": "Rao, R. P. N., Yadav, N., Vahia, M. N., Joglekar, H., Adhikari, R., Mahadevan, I. (2009). Entropic Evidence for Linguistic Structure in the Indus Script. Science 324, 1165.",
+          "doi": "10.1126/science.1170391",
+          "covers": "conditional-entropy / sequence dependency; prediction of missing signs"
+        }
+      ],
+      "prior_work_note": "Stored-order directionality and masked/missing-sign prediction are known results (Yadav et al. 2010; Rao et al. 2009); this repo's versions are not findings. The log2(571!) label-symmetry figure is a counting identity. Note also that 'stored order' here is Lipi order, the reverse of the conventional reading (research/docs/reading_direction_note.md); physical direction per object is not established.",
+      "reassessment_2026_10_01": "Directionality is known (Yadav et al. 2010): cite and cut. The 'failed' strata above (full leave-site-out 0.753, Lothal 0.3125, harsh L/R, Lipi/Mayig overlap) are power artifacts; see unresolved_attacks. Broad masked predictability is already rejected here as language evidence."
     }
   ],
   "retracted_candidates": [
@@ -1952,12 +1981,20 @@
           "After top-edge removal and block-conditioned edge/slot nulls, both overlap sides collapse to null-compatible values."
         ],
         "residual_value": "The broad harsh Indus directionality candidate remains live, but these support lanes cannot promote it. Any future overlap result needs crosswalk-blind heldout rebuilding."
-      }
+      },
+      "reassessment_2026_10_01": "The 861 probe (12 target-selected rows) stays retracted. The Lipi/Mayig overlap 'failure' (0.36/0.47 after top-10 edge removal) came from a bigram model trained on 11-48 rows with ties counted as losses; it is a power artifact, not evidence against directionality. Directionality is a published result (Yadav et al. 2010), so no further work is carried in this repo.",
+      "prior_work": [
+        {
+          "cite": "Yadav, N., Joglekar, H., Rao, R. P. N., Vahia, M. N., Adhikari, R., Mahadevan, I. (2010). Statistical Analysis of the Indus Script Using n-Grams. PLoS ONE 5(3): e9506.",
+          "doi": "10.1371/journal.pone.0009506",
+          "covers": "n-gram models, directionality of the script, ordered sign groups, missing-sign prediction"
+        }
+      ]
     },
     {
       "claim_id": "retracted_m70_source_boxed_order_window_promotion_2026_05_29",
       "claim_type": "structural_findings",
-      "status": "retracted",
+      "status": "instrument_failed",
       "retracted_date": "2026-05-29",
       "claim": "The current M-70 blind token-box packet promotes M-70 from row-level source-visible broad order-window candidate to source-boxed order-window candidate.",
       "reason_retracted": "The matched-negative blind packet failed its pre-set promotion gate. Two reviewers scored 15 blind items. Max yes-only false-positive rate on scoring negatives was 0.714286, max conservative false-positive-or-uncertain rate was 0.777778, and one M-70 target was only uncertain for one reviewer.",
@@ -2014,12 +2051,15 @@
           "False-positive rates are far above the pre-set zero-hard-hit promotion threshold."
         ],
         "residual_value": "M-70 remains row-level source-visible with a broad order-window continuation candidate. It does not support a source-boxed token order, physical direction, sign identity, meaning, phonetic value, language family, or translation."
-      }
+      },
+      "original_status": "retracted",
+      "status_reason": "The blind packet's reviewers called 5 of 9 scoring negatives positive (yes-only FPR on negatives up to 0.714), so the reviewing instrument could not discriminate; it says nothing about M-70.",
+      "reclassified_date": "2026-10-01"
     },
     {
       "claim_id": "retracted_directionality_no_overlay_source_normalized_packet_2026_05_29",
       "claim_type": "structural_findings",
-      "status": "retracted",
+      "status": "instrument_failed",
       "retracted_date": "2026-05-29",
       "claim": "The no-overlay blind packet for H-654, M-1310, M-1320, and M-811 promotes those route candidates from acquisition inventory to source-normalized crop/token-order candidates.",
       "reason_retracted": "The packet failed its matched-negative promotion gate. The packaged real scoring-negative denominator was seven unique CISI controls, below the forger floor of ten; after D006/M-525 leaked a printed side annotation, the effective scorable unique real-negative denominator was six. Two reviewers scored 15 blind items; max yes-only FPR was 0.333333 and max conservative FPR was 0.666667. Yes-only denominators were 3 and 4 by reviewer, conservative denominators were 6 and 6, scoring negatives produced hard false positives, and targets were mostly overcounted or uncertain.",
@@ -2099,12 +2139,15 @@
           "The packet did not test physical source direction or source side; it only tested blind crop boxability and token-count recovery."
         ],
         "residual_value": "The four objects remain acquisition and crop-QA targets. A future packet needs at least ten unique real scorable negatives after leakage checks; synthetic controls may be auxiliary only and never count toward the real-negative floor."
-      }
+      },
+      "original_status": "retracted",
+      "status_reason": "Blind packet v1 had 7 real negatives (below the pre-set floor of 10), one label leak (D006/M-525) and unstable target counts; the instrument was underpowered and leaky.",
+      "reclassified_date": "2026-10-01"
     },
     {
       "claim_id": "retracted_source_visible_032_002_y_packet_2026_05_29",
       "claim_type": "structural_findings",
-      "status": "retracted",
+      "status": "instrument_failed",
       "retracted_date": "2026-05-29",
       "claim": "Current source-visible row-level evidence supports 032-002-Y as a real same-signband packet across target 240-220-032, non-240 A-220-032, and outside-A-220 contexts; this weakens the claim that the packet is merely a catalog adjacency artifact.",
       "reason_retracted": "The first blind matched-negative source-box adjudication failed: two independent blind reviewers recovered zero true positives while producing yes-only false-positive rates of 0.30 and 0.40 on negatives. Conservative negative-failure rates were 0.416667 and 0.50. The visual packeting method therefore finds plausible 032-002-Y packets in controls at unacceptable rates and cannot support an accepted source-visible packet claim.",
@@ -2165,7 +2208,10 @@
           "The v2 M-381 local image-backed negative also failed clean-negative promotion: three blind reviewers returned token counts of 9, 13, and 9 against the seven-token catalog key, and all three reported skip/merge risk."
         ],
         "residual_value": "The witness matrix remains a useful source-route inventory, but it no longer supports an accepted or live source-visible structural claim."
-      }
+      },
+      "original_status": "retracted",
+      "status_reason": "Two blind reviewers confidently recovered 0 of 8 positive rows while calling 3-4 negatives positive (yes-only FPR 0.30-0.40); the visual packeting instrument failed, which does not test whether 032-002-Y is real.",
+      "reclassified_date": "2026-10-01"
     },
     {
       "claim_id": "retracted_meluhha_site_overlap_as_external_anchor_2026_05_29",
@@ -2323,7 +2369,7 @@
     {
       "claim_id": "retracted_directionality_no_overlay_v2b_source_normalized_packet_2026_05_29",
       "claim_type": "structural_findings",
-      "status": "retracted",
+      "status": "instrument_failed",
       "retracted_date": "2026-05-29",
       "claim": "The v2b label-masked no-overlay packet for H-654, M-1310, M-1320, and M-811 promotes those route-probe targets to source-normalized crop/token-order candidates.",
       "reason_retracted": "The v2b packet fixed the v1 denominator-size problem and the v2 duplicate-hash preflight failure, but failed its own adversarial gate. Three reviewers scored 23 blind items with a fixed 12-row real-negative denominator. Real denominator rows leaked catalogue/page labels, reviewer C produced conservative target-like uncertainty on two real negatives, targets were not cleanly recovered, and inter-review target count variance was nonzero.",
@@ -2407,12 +2453,15 @@
           "The packet still did not test physical source direction or source side; it only tested blind crop boxability, leakage, and token-count recovery."
         ],
         "residual_value": "v2b is useful as a stricter packet generator and a documented failure mode: OCR word-box masking of route-context crops does not reliably remove neighboring catalogue labels. Future packets must use true object-panel segmentation or manual label-free crops before blind review."
-      }
+      },
+      "original_status": "retracted",
+      "status_reason": "Blind packet v2b leaked catalogue/page labels on 5 of 12 real negatives and gave unstable target counts; the instrument failed its own validity checks.",
+      "reclassified_date": "2026-10-01"
     },
     {
       "claim_id": "retracted_directionality_no_overlay_v2c_preflight_packet_2026_05_29",
       "claim_type": "structural_findings",
-      "status": "retracted",
+      "status": "protocol_not_executed",
       "retracted_date": "2026-05-29",
       "claim": "The v2c OCR-coordinate-fix no-overlay packet repairs the v2b label-leak failure enough to proceed to blind source-normalization review for H-654, M-1310, M-1320, and M-811.",
       "reason_retracted": "Visual preflight failed before review. The DjVu five-coordinate WORD parser was fixed and duplicate blind image hashes stayed at zero, but the routed real negatives were still page-context crops with printed catalogue/page labels or adjacent-object cues after OCR masking. Therefore no reviewer FPR is meaningful and no claim can be promoted.",
@@ -2460,12 +2509,15 @@
           "Any v2d denominator must be pre-registered before blind scoring; reserve replacement after review is forbidden."
         ],
         "residual_value": "v2c is useful as a parser-fix and failure record. The panel-crop repair v2 inventory, cleaned v2d shortlist, and v2e signband pool are crop-QA infrastructure only; they remain unreviewed and unpromoted."
-      }
+      },
+      "original_status": "retracted",
+      "status_reason": "v2c failed visual preflight (page-context crops with catalogue cues) before any blind review; never scored.",
+      "reclassified_date": "2026-10-01"
     },
     {
       "claim_id": "retracted_directionality_panel_crop_v2d_packet_readiness_2026_05_29",
       "claim_type": "structural_findings",
-      "status": "retracted",
+      "status": "protocol_not_executed",
       "retracted_date": "2026-05-29",
       "claim": "The cleaned v2d panel-crop shortlist is ready to become a blind directionality source-normalization packet.",
       "reason_retracted": "Forger review rejects the cleaned v2d shortlist as a packet. It has only 9 fixed real-negative rows because H-421, M-127, and M-1322 remain reserve_not_denominator; reserves can be promoted only in a new pre-registered manifest before review. The crop worlds also remain mixed: targets are mostly signband strips while controls include tablet/object panels and animal/icon context, creating role leakage before any token-count scoring.",
@@ -2505,12 +2557,15 @@
           "M-1310 target and M-1315 negative share source page n202; M-1320 target and M-1322 reserve share n203."
         ],
         "residual_value": "The v2d shortlist helped identify cleaner candidate crops, and the v2e signband pool widens the next acquisition surface. Neither is a blind packet or source-normalized result."
-      }
+      },
+      "original_status": "retracted",
+      "status_reason": "v2d shortlist had 9 of the required 12 real negatives and mixed crop types; never reviewed or scored.",
+      "reclassified_date": "2026-10-01"
     },
     {
       "claim_id": "retracted_directionality_homogeneous_signband_v2f_packet_readiness_2026_05_29",
       "claim_type": "structural_findings",
-      "status": "retracted",
+      "status": "protocol_not_executed",
       "retracted_date": "2026-05-29",
       "claim": "The v2e signband-like pool can be promoted into a homogeneous no-overlay v2f blind packet for H-654, M-1310, M-1320, and M-811 with 12 fixed real-negative controls.",
       "reason_retracted": "Mechanical preflight and skeptic review reject packet promotion. In the strict v2e reuse lane, compact target availability is H-654, M-1310, and M-1320 only; M-811 is missing because its available crops are tall bull/object panels rather than compact signband strips. The strict lane has only seven original fixed real-negative CISIs and target/control source-page collisions. A derived top-strip acquisition lane is useful but still misses M-1320 and M-811 before visual review, has only six original fixed real-negative CISIs, and cannot be counted as a blind packet without human visual QC and pre-registered forger/null scoring.",
@@ -2574,12 +2629,15 @@
           "The control pool mixes type/symbol/crop regimes: tablets, animal/icon panels, India/Pakistan pages, and signband strips."
         ],
         "residual_value": "v2f is a useful negative gate and crop-acquisition surface. A defensible next packet needs new eligible real negatives or a smaller design that is pre-registered before visual review, plus matched synthetic directionality, nonlinguistic emblem/order, and frequency-matched noise null packets."
-      }
+      },
+      "original_status": "retracted",
+      "status_reason": "v2f failed mechanical preflight (M-811 target crop missing, 7 real negatives, source-page collisions); never reviewed or scored.",
+      "reclassified_date": "2026-10-01"
     },
     {
       "claim_id": "retracted_directionality_public_route_visibility_support_2026_05_29",
       "claim_type": "structural_findings",
-      "status": "retracted",
+      "status": "not_a_claim",
       "retracted_date": "2026-05-29",
       "claim": "Public CISI route availability or the v2e signband-like route subset promotes the Vector 2 directionality candidate toward source-normalized evidence.",
       "reason_retracted": "The route-conditioned support gate fails. In the frozen top-79 public-route probe universe, all 79 rows have stored-win share 0.670886, the 38 public-route rows have stored-win share 0.684211, page collapse drops the public-route rows to 0.625000, source-register collapse drops them to 0.619048, and source-convention collapse drops them to 0.652174. The v2e possible-or-strong route subset looks stronger at 0.741935 before collapse, but drops to 0.647059 under source-register collapse. Matched route-label nulls reproduce or exceed the route subset score with max null >= observed route share 1.",
@@ -2631,7 +2689,63 @@
           "Nearly all rows remain in the R/L-dominant metadata layer, so route visibility does not validate physical direction."
         ],
         "residual_value": "Public routes remain valuable acquisition hooks for source-image work. They do not support a physical direction, source-normalized order, sign identity, value, meaning, language-family, or translation claim."
-      }
+      },
+      "original_status": "retracted",
+      "status_reason": "The test asked whether public-plate availability is evidence for directionality, which nobody asserted; the result (route subset 0.684 vs null) is a valid control, not a retracted claim.",
+      "reclassified_date": "2026-10-01"
+    }
+  ],
+  "reading_direction_correction": {
+    "date": "2026-10-01",
+    "statement": "Lipi stores inscriptions in the reverse of the conventional (Mahadevan) reading order. Every Lipi-based 'terminal', 'tail', 'closure' or 'line end' in this ledger means stored-final, which is the reading-initial end under the conventional reading.",
+    "note": "research/docs/reading_direction_note.md",
+    "caveat": "Physical writing direction per object is not established (replacement_run_checkpoint_20260712.md, Directionality closure)."
+  },
+  "status_vocabulary": {
+    "accepted": "passed the acceptance rule",
+    "candidate_not_accepted": "live, not accepted",
+    "retracted": "a substantive claim tested and found unsupported",
+    "instrument_failed": "the test instrument (blind review packet) failed its own validity checks, so it says nothing about the claim; not a refutation",
+    "protocol_not_executed": "the protocol failed preflight and was never scored; not a refutation",
+    "not_a_claim": "tested a proposition nobody asserted; kept as a control result"
+  },
+  "entry_status_counts": {
+    "retracted": 18,
+    "instrument_failed": 4,
+    "protocol_not_executed": 3,
+    "not_a_claim": 1,
+    "candidate_not_accepted": 2,
+    "accepted": 1,
+    "note": "Before 2026-10-01 the ledger counted 26 retractions; 8 of them are instrument or protocol failures and are no longer counted as retractions."
+  },
+  "prior_work_register": [
+    {
+      "topic": "directionality; ordered sign groups; n-gram models; missing-sign prediction",
+      "cite": "Yadav, N., Joglekar, H., Rao, R. P. N., Vahia, M. N., Adhikari, R., Mahadevan, I. (2010). Statistical Analysis of the Indus Script Using n-Grams. PLoS ONE 5(3): e9506.",
+      "doi": "10.1371/journal.pone.0009506",
+      "status_in_repo": "known; cite and cut"
+    },
+    {
+      "topic": "conditional entropy; sequence dependency; hidden-sign prediction",
+      "cite": "Rao, R. P. N., Yadav, N., Vahia, M. N., Joglekar, H., Adhikari, R., Mahadevan, I. (2009). Entropic Evidence for Linguistic Structure in the Indus Script. Science 324, 1165.",
+      "doi": "10.1126/science.1170391",
+      "status_in_repo": "known; cite and cut"
+    },
+    {
+      "topic": "same-front, different-reverse seals and tablets",
+      "cite": "Priyanka, B. (2003). New Iconographic Evidence for the Religious Nature of Indus Seals and Inscriptions. East and West 53, 31-66; and Mukhopadhyay, B. A. (2023). Semantic scope of Indus inscriptions comprising taxation, trade and craft licensing, commodity control and access control. Humanities and Social Sciences Communications.",
+      "doi": "10.1057/s41599-023-02320-7",
+      "status_in_repo": "known; credited in research/docs/mahadevan_crossface_constraints_20260905.md"
+    },
+    {
+      "topic": "sign list; positional behaviour of fish-form and other signs; pictorial readings",
+      "cite": "Parpola, A. (1994). Deciphering the Indus Script. Cambridge University Press.",
+      "status_in_repo": "known; cite and cut"
+    },
+    {
+      "topic": "numerical-model appendix and sign segmentation",
+      "cite": "Wells, B. K. and Fuls, A., Interactive Corpus of Indus Texts (ICIT), and Fuls's publications on numerical inscriptions, as listed in research/docs/source_register.md",
+      "status_in_repo": "known; cite and cut"
     }
   ]
 }

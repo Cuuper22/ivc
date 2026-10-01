@@ -1,4 +1,20 @@
-# Strongest Current Result
+# Strongest result: current status
+
+Date: 2026-10-01. Authoritative sources: `claim_ledger.md` and `research/data/claim_ledger/claims.json` (ledger), `reading_direction_note.md`, `replacement_run_checkpoint_20260712.md`.
+
+- **The one accepted item is descriptive.** Two seals, M-376 and M-391, share the same three-sign string `861-533-717` after `002`, at the stored-final end in the Lipi catalogue. Sign `533` occurs only on these two seals. It is not a rule, and the "fixed two-sign unit" inference is demoted. The old false-positive rates (0.0002, 0.006) were computed for a prefix chosen after looking at the data and are not valid.
+- **Reading direction.** Lipi stores inscriptions in reverse of the conventional reading order, so Lipi "terminal" or "closure" means reading-initial. Details: `reading_direction_note.md`. Physical writing direction per object is not established.
+- **Directionality is a known result** (Yadav et al. 2010, PLoS ONE 5:e9506): cited and cut. The earlier statements that it "fails" leave-site-out, at Lothal, on the L/R stratum or in the Lipi/Mayig overlap were power artifacts and are withdrawn.
+- **Instrument failures are not retractions.** Eight blind-packet and preflight entries now carry `instrument_failed`, `protocol_not_executed` or `not_a_claim`; the ledger counts 18 retractions, not 26.
+- **Zero** accepted translations, phonetic values, sign meanings, language identifications or external anchors.
+
+---
+
+## Superseded history (written 2026-05-30)
+
+Everything below predates the 2026-07-12 checkpoint and the 2026-10-01 audit. Its accepted-claim wording, false-positive rates and directionality "failure" statements are superseded. Read the block above and `claim_ledger.md` instead; this text is kept as a record only.
+
+### Strongest Current Result (2026-05-30 text)
 
 Date: 2026-05-30
 
