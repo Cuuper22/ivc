@@ -427,3 +427,9 @@ p { text-wrap: pretty; }
 .veil.on { opacity: 1; }
 .veil-note { position: fixed; bottom: 1.2rem; left: 50%; transform: translateX(-50%); z-index: 66; font-size: 0.7rem; letter-spacing: 0.08em; color: var(--patina-soft); background: oklch(0.16 0.012 48 / 0.9); border: 1px solid var(--patina-deep); border-radius: 999px; padding: 0.5rem 1rem; opacity: 0; transition: opacity 0.45s; pointer-events: none; white-space: nowrap; }
 .veil-note.on { opacity: 1; }
+
+/* October tests: reuse the frontier cards, add a question line, a repo path and a 3-up grid. */
+.tests .target-q { color: var(--ink-soft); }
+.tests .target-path { font-family: var(--font-mono); font-size: 0.7rem; color: var(--faint); word-break: break-all; }
+.tests .target-path a { color: var(--patina-soft); border-bottom: 1px solid var(--patina-deep); }
+@media (min-width: 1080px) { .tests { grid-template-columns: repeat(3, 1fr); } }

@@ -39,6 +39,7 @@
     <a href="#century">Century</a>
     <a href="#graveyard">Graveyard</a>
     <a href="#proof">Proof</a>
+    <a href="#tests">Tests</a>
     <a href="#play">Try it</a>
     <a href="#map">Map</a>
   </nav>
@@ -198,7 +199,7 @@
           <div class="levels" data-for="b">
             <div class="level is-active" data-level="1"><p>Two different seals share the same three signs at one end of their inscriptions (the start, if you read them the usual way), and one of those signs appears on no other seal in the catalogue. That is all. We do not know what the signs say, how they sounded, or what language they belong to, and two seals are too few to call it a rule. It is a small, checked observation, and the wall around it is still missing.</p></div>
             <div class="level" data-level="2"><p>Seals <b class="mono">M-376</b> and <b class="mono">M-391</b> both carry the string <b class="mono patina">861-533-717</b> immediately after <b class="mono">002</b>, at the end of the row as the Lipi catalogue stores it. The Lipi catalogue lists signs in the reverse of the usual reading order, so under the conventional reading this is the <em>beginning</em> of the text. Sign <b class="mono">533</b> appears on these two seals only. Whether <b class="mono">533-717</b> is a fixed unit is not established: related sign shapes in other catalogues occur without <b class="mono">717</b>. This is a description of two objects, not a reading and not a rule.</p></div>
-            <div class="level" data-level="3"><p>Claim <span class="mono">accepted_struct_002_861_533_717_restricted_tail</span> (2026-07-12 checkpoint wording): M-376 and M-391 are two source-visible attestations of the same three-position terminal string <b class="mono">861 | 533 | 717</b> after <b class="mono">002</b>; terminal means stored-final in Lipi, i.e. reading-initial under the Mahadevan convention. The fixed-unit inference is demoted, and the exact 533→717 dependency is taxonomy-sensitive (Parpola 222 / Mayig P228 forms occur without 717). The earlier false-positive rates (0.0002, 0.006) were computed for a prefix chosen after looking at the data and are not valid; a post-hoc prefix scan finds many comparable repeated terminal cells. It asserts no token boundary, no sign value, no meaning, no language family, no anchor, and no translation.</p></div>
+            <div class="level" data-level="3"><p>Claim <span class="mono">accepted_struct_002_861_533_717_restricted_tail</span> (2026-07-12 checkpoint wording): M-376 and M-391 are two source-visible attestations of the same three-position terminal string <b class="mono">861 | 533 | 717</b> after <b class="mono">002</b>; terminal means stored-final in Lipi, i.e. reading-initial under the Mahadevan convention. The fixed-unit inference is demoted, and the exact 533→717 dependency is taxonomy-sensitive (Parpola 222 / Mayig P228 forms occur without 717). The earlier false-positive rates were computed for a prefix chosen after looking at the data and are not valid; a post-hoc prefix scan finds many comparable repeated terminal cells. It asserts no token boundary, no sign value, no meaning, no language family, no anchor, and no translation.</p></div>
           </div>
         </div>
         <div class="stack-sm">
@@ -243,10 +244,23 @@
   <div class="wrap">
     <div class="stack-md" style="max-width:46rem">
       <div class="section-head" style="margin:0"><span class="kicker reveal">How sure is sure?</span><h2 class="reveal">Honest about what a shuffle test can and cannot say.</h2></div>
-      <p class="reveal" style="color:var(--muted)">An earlier version of this page showed a shuffle chart and a false-positive rate of 0.0002 for this pattern. That number was computed for a prefix, <span class="mono">002-861</span>, picked after looking at the data. It is not a valid false-positive rate, so the chart and the number are gone. Scanning every possible prefix turns up dozens of comparable repeated endings, so this one is not special by that measure.</p>
+      <p class="reveal" style="color:var(--muted)">An earlier version of this page showed a shuffle chart and a very small false-positive rate for this pattern. That number was computed for a prefix, <span class="mono">002-861</span>, picked after looking at the data. It is not a valid false-positive rate, so the chart and the number are gone. Scanning every possible prefix turns up dozens of comparable repeated endings, so this one is not special by that measure.</p>
       <p class="reveal" style="color:var(--muted)">What remains is a plain observation: two seals share one three-sign string. Nothing here says it is more than a coincidence, and nothing says it is not.</p>
       <p class="src reveal">Details: <span class="mono">research/docs/claim_ledger.md</span></p>
     </div>
+  </div>
+</section>
+
+<!-- OCTOBER TESTS -->
+<section class="section" id="tests">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Five new tests</span>
+      <h2>What the tests show (October 2026)</h2>
+      <p class="lead">After the summer's work, five open questions got one script each, with fixed seeds and a one-page report. Three results hold up in modest form. Two do not. None of them says what a sign means.</p>
+    </div>
+    <div class="frontier tests reveal" id="tests-grid"></div>
+    <p class="src reveal" style="margin-top:1.1rem">Scripts, outputs and reports: <span class="mono">research/extensions_20261001/</span> · every card links to its folder.</p>
   </div>
 </section>
 
@@ -259,7 +273,7 @@
       <p class="lead">Below are six short sequences, <b>invented teaching examples, not rows from the corpus</b>. They reuse real sign numbers so the codes look familiar, but the lines themselves were made up. One unit hides in plain sight: it only ever appears at the very end of a line. Find it by position alone, with no idea what any sign means.</p>
     </div>
     <div class="panel reveal" id="game" style="padding:clamp(1.4rem,3vw,2.2rem)">
-      <p class="src" style="margin-bottom:0.6rem"><b>Invented examples, not corpus rows.</b> In the real catalogue the string 533-717 appears on only two seals.</p>
+      <p class="src" style="margin-bottom:0.6rem"><b>Invented examples, not corpus rows.</b> The unit you are looking for is made up too; nothing here is evidence about the real script.</p>
       <p style="color:var(--muted);margin-bottom:0.4rem" data-prompt>One unit below only ever appears at the very END of a line. The others turn up in the middle too. Which one always closes?</p>
       <div class="game-rows" data-rows></div>
       <div class="game-options" data-options></div>

@@ -5,13 +5,15 @@
 
    REAL — SITES (archaeological sites, coordinates approximate), BRANCH (the
    project's actual 002 sign-structure), LEDGER (accepted counts straight from
-   claims.json), TIMELINE, GRAVES (retracted claims), and the numeric sign rows
-   inside SEALS. Change these only to match the ledger.
+   claims.json), TIMELINE, GRAVES (retracted claims), TESTS (the five October
+   2026 extension studies, one per REPORT.md), and the numeric sign rows
+   inside SEALS. Change these only to match the ledger and the reports.
 
    ILLUSTRATIVE — GLYPHS are original line drawings in the spirit of Indus
    signs, not tracings of real ones, so nobody can mistake the page's artwork
    for evidence. PUZZLE rows are made up out of real sign codes to teach the
-   idea of a terminal tail; they are not corpus rows, and the page says so
+   idea of a position test; they are not corpus rows, and the unit the game
+   asks for is not a unit anyone has found in the corpus. The page says so
    next to the game.
    ========================================================================= */
 window.IVC = (function () {
@@ -80,23 +82,23 @@ window.IVC = (function () {
     ]
   };
 
-  /* ---- Decipherer's game: spot the terminal tail --------------------- */
+  /* ---- Decipherer's game: spot the unit that always ends a line ------ */
   // INVENTED teaching rows, not corpus rows. They are built so that exactly
-  // one option, 533-717, sits at the end of every line it appears in, while
-  // the decoy options also turn up mid-line. This illustrates what "a unit
-  // that only ever ends a line" would look like; in the real corpus 533-717
-  // appears on two seals only. The page labels the rows as invented.
+  // one option, 151-279, sits at the end of every line it appears in, while
+  // the decoy options also turn up mid-line. This shows what a position test
+  // looks like. 151-279 is a made-up unit, chosen so that the game does not
+  // restate the one real observation (861-533-717 on M-376 and M-391).
   var PUZZLE = {
     prompt: "One unit below only ever appears at the very END of a line. The others turn up in the middle too. Which one always closes?",
-    options: ["220-004", "533-717", "390-125", "031-002"],
-    answer: "533-717",
+    options: ["220-004", "151-279", "390-125", "031-002"],
+    answer: "151-279",
     rows: [
-      ["002","861","533","717"],
-      ["740","002","861","533","717"],
+      ["002","861","151","279"],
+      ["740","002","861","151","279"],
       ["031","002","390","125","632"],
-      ["220","004","002","861","533","717"],
+      ["220","004","002","861","151","279"],
       ["157","031","002","390","705"],
-      ["002","861","603","533","717"]
+      ["002","861","603","151","279"]
     ],
     // Per row, the [first, last] token index of the terminal tail, or null if
     // that row has none. The game lights these up once the answer is found.
@@ -148,6 +150,30 @@ window.IVC = (function () {
   ];
   var GRAVES_TOTAL = 18;
 
+  /* ---- What the October 2026 tests show ------------------------------
+     One entry per study in research/extensions_20261001/, worded to be no
+     stronger than that study's REPORT.md. kind "live" (patina) = the result
+     holds up as described; "gated" (clay) = it did not hold up. label is the
+     exact tag the visitor reads. */
+  var TESTS = [
+    { name: "Front vs. stroke count", kind: "live", label: "holds up, as batches", dir: "front_count",
+      q: "Does the text on the front of a two-sided tablet predict the cup-and-strokes count on its back?",
+      a: "Yes, within a catalogue. But it looks like tablets made together in batches, not a rule: on newer, held-out tablets it does no better than always guessing three." },
+    { name: "034 tablets are smaller", kind: "live", label: "holds up", dir: "size_034",
+      q: "Are tablets carrying sign 034 smaller than 032 and 033 tablets of the same format?",
+      a: "About 14% smaller in area, counting each copied family once (about 10% once the excavation area is allowed for). A real size difference, not a tier and not a meaning." },
+    { name: "The 002 end effect", kind: "live", label: "holds up, for 3 signs", dir: "context_002",
+      q: "After sign 002, do some signs sit at the stored end more often than their own habits predict?",
+      a: "Yes for 861, 817 and 820; five other signs never do. The stored end is the reading start, and 002 is not unique: other signs show similar pairings." },
+    { name: "The proposed rewrites", kind: "gated", label: "did not hold up", dir: "alternation_null",
+      q: "Do the roof/87 and surrounding-marks/211 \u201cwriting operations\u201d beat look-alike decoys?",
+      a: "Only if you ignore how they were picked. About 94 other swap types recur as often, and the lead candidate ranks last of eight models in the project\u2019s own joint test." },
+    { name: "Sanskrit dictionary fits", kind: "gated", label: "did not hold up", dir: "phonetic_null",
+      q: "Do keys that turn sign strings into Sanskrit dictionary words beat chance?",
+      a: "No. They do no better than random text that keeps the same local repetition, and the original optimizer is not in the repository." }
+  ];
+  var TESTS_BASE = "https://github.com/Cuuper22/ivc/tree/main/research/extensions_20261001/";
+
   /* ---- The artifact gallery ------------------------------------------ */
   // The eight objects the whole story hangs on. "text" holds the real
   // numeric sign row from the project's metadata layer; the glyph shapes the
@@ -169,6 +195,6 @@ window.IVC = (function () {
     GLYPHS: GLYPHS, GLYPH_KEYS: GLYPH_KEYS,
     SITES: SITES, TRADE: TRADE,
     BRANCH: BRANCH, PUZZLE: PUZZLE, LEDGER: LEDGER,
-    TIMELINE: TIMELINE, GRAVES: GRAVES, GRAVES_TOTAL: GRAVES_TOTAL, SEALS: SEALS
+    TIMELINE: TIMELINE, GRAVES: GRAVES, GRAVES_TOTAL: GRAVES_TOTAL, TESTS: TESTS, TESTS_BASE: TESTS_BASE, SEALS: SEALS
   };
 })();

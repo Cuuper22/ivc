@@ -14,7 +14,8 @@
    scroll reveals, the expertise dials, the scoreboard count-up, the
    excavation torch (canvas), the site map (SVG), the 002 branch (SVG), the
    null-distribution chart (SVG), the decipherer's game, the lamp cursor, the
-   timeline, the graveyard, the seal gallery, and a hidden "dig" mode.
+   timeline, the graveyard, the October test cards, the seal gallery, and a
+   hidden "dig" mode.
    ========================================================================= */
 (function () {
   "use strict";
@@ -454,7 +455,7 @@
         if (last && tail) last.classList.add("ends");
       });
       feedback.className = "game-feedback hit";
-      feedback.innerHTML = "Right, in these invented rows. <b>533-717</b> is always last. In the real catalogue the same string appears on only two seals, so it is an observation about two objects, not a rule. Spotting it by position is how the project found it.";
+      feedback.innerHTML = "Right, in these invented rows. <b>151-279</b> is always last. Real inscriptions are never this tidy, and the one real observation the project accepts is about two seals, not a rule. A position test like this is where such an observation starts.";
     }
   })();
 
@@ -533,6 +534,28 @@
       host.appendChild(card);
     });
     whenVisible(host, function () { host.classList.add("drawn"); }, 0.15);
+  })();
+
+  /* ---- October tests --------------------------------------------------
+     One card per extension study, built from D.TESTS. The tag colour reuses
+     the frontier card's status pill: patina for a result that holds up, clay
+     for one that did not. The card is plain static markup once built, so
+     reduced motion needs nothing special; it fades in with the .reveal host. */
+  (function () {
+    var host = document.getElementById("tests-grid"); if (!host || !D.TESTS) return;
+    D.TESTS.forEach(function (t) {
+      host.appendChild(h("article", { class: "target" }, [
+        h("div", { class: "target-top" }, [
+          h("h3", { text: t.name }),
+          h("span", { class: "status " + t.kind, text: t.label })
+        ]),
+        h("p", { class: "target-q", text: t.q }),
+        h("p", { text: t.a }),
+        h("span", { class: "target-path" }, [
+          h("a", { href: D.TESTS_BASE + t.dir + "/", target: "_blank", rel: "noopener", text: "research/extensions_20261001/" + t.dir + "/" })
+        ])
+      ]));
+    });
   })();
 
   /* ---- Seal gallery --------------------------------------------------
