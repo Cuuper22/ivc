@@ -507,7 +507,7 @@
     // scroll space. Release is watched on the window, not the track, so
     // letting go outside the strip still ends the drag.
     var down = false, sx = 0, sl = 0;
-    host.addEventListener("pointerdown", function (e) { down = true; sx = e.clientX; sl = host.scrollLeft; host.classList.add("grab"); });
+    host.addEventListener("pointerdown", function (e) { if (e.pointerType === "touch") return; /* touch scrolls natively */ down = true; sx = e.clientX; sl = host.scrollLeft; host.classList.add("grab"); });
     window.addEventListener("pointerup", function () { down = false; host.classList.remove("grab"); });
     window.addEventListener("pointermove", function (e) { if (down) host.scrollLeft = sl - (e.clientX - sx); });
     whenVisible(host, function () { host.classList.add("drawn"); }, 0.2);
