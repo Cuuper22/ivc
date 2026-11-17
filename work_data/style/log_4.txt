@@ -1,0 +1,127 @@
+== Style table (all coded stones)
+city  CH  HA  KA  LO   MD  OT  All
+sty                               
+       3  18   3  10   27   3   64
+S1     7  39  11   6   57   6  126
+S2     1  16   3   3   42   4   69
+S3     3   9   5   6    9   6   38
+S4     2  11   2   4   11   0   30
+S5     3   3   1   6   14   3   30
+S6     1   2   0   0    2   0    5
+S7     0   0   0   0    1   0    1
+S8     0   0   0   0    1   1    2
+All   20  98  25  35  164  23  365
+
+== Style x catalogue letter
+letter   I   J   L   S   W  All
+sty                            
+S1      29  23  14  22  12  100
+S2       3  16   6  15  24   64
+S3       6  11   2   0   5   24
+S4       1   2   0   4  22   29
+S5       1   7   2   3   7   20
+All     40  59  24  44  70  237
+style x letter, letters shuffled within city: V 0.279 against 0.129 shuffled (P 0.0000)
+style x city, cities shuffled within size third: V 0.186 against 0.131 shuffled (P 0.0072)
+style x size: between-style variance 0.0679 against 0.0039 (P 0.0000)
+median face mm2 by style: S1 524 (n 120), S2 713 (n 67), S3 656 (n 35), S4 1123 (n 28), S5 748 (n 30)
+
+== Style x time bin
+sty          S1  S2  S3  S4  S5
+city bin                       
+HA   early    0   0   0   1   0
+     late     8   3   1   3   1
+     middle  23   9   7   4   1
+KA   early    2   0   2   0   0
+     middle   6   3   3   1   1
+MD   early    2   7   1   2   2
+     late    22  11   2   5   7
+     middle  21  15   2   2   5
+OT   early    1   0   0   0   0
+     middle   0   0   1   0   0
+style x bin inside MD: V 0.191 against 0.189 shuffled (P 0.4686)
+style x bin inside HA: V 0.272 against 0.246 shuffled (P 0.3140)
+style x bin, all cities, bins shuffled within city: V 0.160 against 0.152 shuffled (P 0.4074)
+
+== Style x text kind
+kind  bare name  count line  front formula  name + closer  name + closer + title  name + title  other  All
+sty                                                                                                       
+S1           19           8             29             53                      5             7      5  126
+S2           11           6             19             29                      2             2      0   69
+S3            8           0              9             16                      2             0      3   38
+S4            6           1             11             10                      0             1      1   30
+S5            9           1              4             10                      3             1      2   30
+All          53          16             72            118                     12            11     11  293
+style x text kind, style shuffled within city: V 0.143 against 0.144 shuffled (P 0.5104)
+phrases on >= 5 coded stones: 25, cells 125, P<0.05: 0 (expected 6.2), q<0.1: 0
+     phrase style  stones_with_phrase  real  dealt     p   q
+    032-220    S1                   6     0  2.628 0.066 1.0
+    740-090    S5                  13     4  1.334 0.078 1.0
+705-033-520    S3                   5     2  0.529 0.144 1.0
+    817-002    S5                  25     0  2.265 0.152 1.0
+    920-060    S4                  11     3  1.126 0.186 1.0
+    220-520    S1                   5     4  2.141 0.188 1.0
+    861-002    S3                  16     4  1.935 0.198 1.0
+    706-033    S4                   5     2  0.609 0.214 1.0
+
+== Style shares by city (main styles)
+sty     S1    S2    S3    S4    S5
+city                              
+CH    0.44  0.06  0.19  0.12  0.19
+HA    0.50  0.21  0.12  0.14  0.04
+KA    0.50  0.14  0.23  0.09  0.05
+LO    0.24  0.12  0.24  0.16  0.24
+MD    0.43  0.32  0.07  0.08  0.11
+OT    0.32  0.21  0.32  0.00  0.16
+travelled stones: 1 of 293 styled (0.3%)
+cisi city sty style_city letter                   signs          kind
+C-10   CH  S2         MD      W 817-002-032-220-231-740 front formula
+text pull toward the style city: travelled 1.561 against 1.199 for stay-at-home stones of the same homes (P 0.3252)
+  C-10 CH->MD score +1.561
+[crest][jar][man] (ends 740-090): travelled 0/1 against stay 13/292 (Fisher P 1.000)
+front formula: travelled 1/1 against stay 71/292 (Fisher P 0.246)
+count line: travelled 0/1 against stay 16/292 (Fisher P 1.000)
+twin pairs same style: 3 of 19 (16%) against 25% dealt within city (P 0.9120)
+near pairs same style: 18 of 44 (41%) against 34% dealt within city (P 0.2002)
+all pairs same style: 21 of 63 (33%) against 31% dealt within city (P 0.4160)
+
+== Other animals: coded per city
+c3                 HA  MD  other
+animal                          
+elephant            6  10      1
+rhinoceros          1  10      3
+short-horned bull  10  10      5
+tiger               1   8      1
+zebu                3  10      1
+neck   bands  folds  plain
+c3                        
+HA         1     10      6
+MD         0     27     15
+other      0      8      1
+other animals neck x city, city shuffled within species: V 0.198 against 0.132 shuffled (P 0.2018)
+shoulder  outlined  plain
+c3                       
+HA               5     10
+MD              15     25
+other            4      4
+other animals shoulder x city, city shuffled within species: V 0.100 against 0.120 shuffled (P 0.7660)
+sign_cut  broad  thin
+c3                   
+HA           17     3
+MD           33    13
+other         7     3
+other animals sign_cut x city, city shuffled within species: V 0.139 against 0.153 shuffled (P 0.6772)
+spacing  gap  tight
+c3                 
+HA         8      9
+MD        22     18
+other      5      4
+other animals spacing x city, city shuffled within species: V 0.071 against 0.160 shuffled (P 0.8950)
+sign_cut  broad  thin
+city                 
+CH           12     7
+HA           73    15
+KA           14     8
+LO           12    17
+MD          128    31
+OT           10    12

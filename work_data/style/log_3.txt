@@ -1,0 +1,113 @@
+kept features: ['neck', 'shoulder', 'horn', 'tail', 'hoof', 'stand_top', 'stand_bowl', 'shaft', 'sign_cut', 'frame', 'spacing']
+stones: 365, core (>=6 read): 261
+k=3 silhouette=0.231 sizes=[np.int64(204), np.int64(56), np.int64(1)]
+k=4 silhouette=0.219 sizes=[np.int64(169), np.int64(56), np.int64(35), np.int64(1)]
+k=5 silhouette=0.197 sizes=[np.int64(166), np.int64(56), np.int64(35), np.int64(3), np.int64(1)]
+k=6 silhouette=0.180 sizes=[np.int64(166), np.int64(56), np.int64(34), np.int64(3), np.int64(1), np.int64(1)]
+k=7 silhouette=0.190 sizes=[np.int64(166), np.int64(34), np.int64(29), np.int64(27), np.int64(3), np.int64(1), np.int64(1)]
+k=8 silhouette=0.294 sizes=[np.int64(105), np.int64(61), np.int64(34), np.int64(29), np.int64(27), np.int64(3), np.int64(1), np.int64(1)]
+chosen k=8
+
+S1: 126 stones (105 core)
+  neck: folds 0.76, plain 0.24
+  shoulder: plain 0.9, outlined 0.1
+  horn: single 0.99, double 0.01
+  tail: down 1.0
+  hoof: plain 0.98, marked 0.02
+  stand_top: box 0.54, round 0.25, cage 0.15, none 0.06
+  stand_bowl: patterned 0.66, plain 0.27, box 0.06
+  shaft: plain 1.0
+  sign_cut: broad 0.99, thin 0.01
+  frame: no 1.0
+  spacing: tight 0.85, gap 0.15
+
+S2: 69 stones (61 core)
+  neck: plain 0.52, bands 0.48
+  shoulder: outlined 0.89, heart 0.11
+  horn: single 0.96, double 0.04
+  tail: down 1.0
+  hoof: plain 0.98, marked 0.02
+  stand_top: box 0.78, cage 0.2, round 0.02
+  stand_bowl: patterned 0.74, plain 0.19, box 0.06
+  shaft: plain 0.92, marked 0.08
+  sign_cut: broad 1.0
+  frame: no 1.0
+  spacing: tight 0.72, gap 0.28
+
+S3: 38 stones (34 core)
+  neck: folds 1.0
+  shoulder: plain 0.66, outlined 0.34
+  horn: single 0.95, double 0.05
+  tail: down 0.96, up 0.04
+  hoof: plain 0.97, marked 0.03
+  stand_top: round 0.56, box 0.37, cage 0.07
+  stand_bowl: patterned 0.55, plain 0.45
+  shaft: plain 0.94, marked 0.06
+  sign_cut: thin 0.95, broad 0.05
+  frame: no 1.0
+  spacing: tight 0.63, gap 0.37
+
+S4: 30 stones (29 core)
+  neck: bands 0.97, plain 0.03
+  shoulder: outlined 0.55, heart 0.45
+  horn: single 0.81, double 0.15, ribbed 0.04
+  tail: down 1.0
+  hoof: plain 0.96, marked 0.04
+  stand_top: cage 0.78, box 0.19, round 0.04
+  stand_bowl: patterned 0.85, plain 0.15
+  shaft: plain 1.0
+  sign_cut: thin 0.53, broad 0.47
+  frame: no 1.0
+  spacing: gap 0.93, tight 0.07
+
+S5: 30 stones (27 core)
+  neck: plain 1.0
+  shoulder: outlined 0.71, plain 0.29
+  horn: single 1.0
+  tail: down 1.0
+  hoof: plain 1.0
+  stand_top: box 0.73, cage 0.12, none 0.12, round 0.04
+  stand_bowl: patterned 0.67, plain 0.27, box 0.07
+  shaft: plain 1.0
+  sign_cut: thin 1.0
+  frame: no 1.0
+  spacing: gap 0.87, tight 0.13
+
+S6: 5 stones (3 core)
+  neck: plain 0.67, folds 0.33
+  shoulder: heart 1.0
+  horn: double 1.0
+  tail: down 1.0
+  hoof: plain 1.0
+  stand_top: box 1.0
+  stand_bowl: plain 0.5, patterned 0.5
+  shaft: plain 1.0
+  sign_cut: broad 1.0
+  frame: no 1.0
+  spacing: gap 0.75, tight 0.25
+
+S7: 1 stones (1 core)
+  neck: folds 1.0
+  shoulder: plain 1.0
+  horn: double 1.0
+  tail: down 1.0
+  hoof: plain 1.0
+  stand_top: box 1.0
+  stand_bowl: plain 1.0
+  shaft: plain 1.0
+  sign_cut: thin 1.0
+  frame: yes 1.0
+  spacing: gap 1.0
+
+S8: 2 stones (1 core)
+  neck: plain 1.0
+  shoulder: plain 1.0
+  horn: single 1.0
+  tail: down 1.0
+  hoof: plain 1.0
+  stand_top: none 1.0
+  stand_bowl: 
+  shaft: 
+  sign_cut: broad 1.0
+  frame: yes 1.0
+  spacing: gap 0.5, tight 0.5

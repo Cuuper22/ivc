@@ -1,0 +1,127 @@
+== (a) single features x city (unicorns, all coded stones, city shuffled within size third)
+neck: n 293 V 0.163 against 0.128 (P 0.1160)
+   neck  bands  folds  plain
+   city                     
+   CH     0.19   0.44   0.38
+   HA     0.22   0.56   0.22
+   KA     0.13   0.70   0.17
+   LO     0.20   0.40   0.40
+   MD     0.23   0.38   0.39
+   OT     0.11   0.61   0.28
+shoulder: n 256 V 0.198 against 0.134 (P 0.0250)
+   shoulder  heart  outlined  plain
+   city                            
+   CH         0.00      0.38   0.62
+   HA         0.18      0.26   0.56
+   KA         0.05      0.55   0.40
+   LO         0.05      0.58   0.37
+   MD         0.07      0.48   0.45
+   OT         0.00      0.53   0.47
+stand_top: n 247 V 0.237 against 0.140 (P 0.0010)
+   stand_top   box  cage  none  round
+   city                              
+   CH         0.64  0.09  0.18   0.09
+   HA         0.52  0.29  0.02   0.18
+   KA         0.25  0.20  0.00   0.55
+   LO         0.70  0.15  0.05   0.10
+   MD         0.66  0.18  0.04   0.11
+   OT         0.29  0.36  0.07   0.29
+stand_bowl: n 175 V 0.187 against 0.164 (P 0.2495)
+   stand_bowl   box  patterned  plain
+   city                              
+   CH          0.20       0.60   0.20
+   HA          0.04       0.63   0.33
+   KA          0.00       0.57   0.43
+   LO          0.07       0.53   0.40
+   MD          0.05       0.78   0.17
+   OT          0.00       0.67   0.33
+sign_cut: n 339 V 0.319 against 0.120 (P 0.0000)
+   sign_cut  broad  thin
+   city                 
+   CH         0.63  0.37
+   HA         0.83  0.17
+   KA         0.64  0.36
+   LO         0.41  0.59
+   MD         0.81  0.19
+   OT         0.45  0.55
+spacing: n 299 V 0.119 against 0.126 (P 0.5460)
+   spacing   gap  tight
+   city                
+   CH       0.50   0.50
+   HA       0.31   0.69
+   KA       0.33   0.67
+   LO       0.50   0.50
+   MD       0.36   0.64
+   OT       0.32   0.68
+
+== (b) thin cutting by size third and city
+third         big  middle  small
+cg                              
+HA           0.20    0.26   0.08
+MD           0.31    0.26   0.04
+small towns  0.55    0.50   0.19
+third        big  middle  small
+cg                             
+HA            30      27     25
+MD            48      47     55
+small towns   31      32     21
+
+== (c) drawing-home score against text-home score (Harappa vs Mohenjo-daro)
+inside MD: n 134 rho +0.064 (P 0.2334)
+inside HA: n 77 rho -0.097 (P 0.8030)
+pooled within-city ranks: rho +0.007 (P 0.4544)
+MD stones with the most Harappa-like drawing (top tenth, n 13): mean text-home -0.459 against -0.630 for all MD
+ cisi sty letter  draw_home  text_home                       signs
+M-741  S1      I      1.216     -1.173                     416-151
+M-143  S1      J      1.216     -0.731     840-252-002-032-205-740
+  M-3  S4      W      1.175     -0.320                 521-032-717
+  M-8  S4      W      1.175     -0.154                 632-140-706
+ M-14  S4      W      1.175     -0.186         817-002-503-776-740
+M-152  S1      J      1.129     -1.126             861-002-772-740
+M-173  S1      W      1.114     -0.114         806-320-900-388-740
+M-327  S1      J      1.003     -0.309             861-002-519-740
+M-971  S1      J      1.003     -1.288         920-060-741-416-740
+M-145  S1      -      1.003     -0.349             880-142-400-740
+M-879  S1      J      1.003      0.344             061-142-400-740
+M-140  S1      S      1.003     -0.597 455-440-065-220-002-336-740
+M-969  S1      S      0.954      0.031                     243-151
+HA stones with the most Mohenjo-daro-like drawing (top tenth, n 7): mean text-home -0.458 against -0.583 for all HA
+ cisi sty letter  draw_home  text_home                   signs
+H-410  S2      L     -1.852     -0.181     861-002-830-840-368
+ H-37  S2      S     -1.852     -0.515                 531-740
+H-478  S2      W     -1.852     -0.494     817-002-235-770-740
+H-598  S2      W     -1.623      0.520                     822
+ H-73  S5      I     -1.307     -0.293                 231-151
+H-408  S5      W     -1.236     -0.609 503-702-002-240-176-740
+ H-32  S2      W     -1.120     -1.635                 923-740
+
+== (d) stand-job Harappa-like-text Mohenjo-daro stones that were coded
+coded flagged stones: 9: M-190 S2, M-34 S2, M-173 S1, M-197 S1, M-747 S1, M-3 S4, M-946 S2, M-672 S2, M-14 S4
+style mix flagged: {'S2': 4, 'S1': 3, 'S4': 2} | other MD: {'S1': 54, 'S2': 38, 'S5': 14, 'S3': 9, 'S4': 9}
+HA mix: {'S1': 39, 'S2': 16, 'S4': 11, 'S3': 9, 'S5': 3}
+
+== (e) style mix inside letter W (and J), by city
+letter W:
+sty   S1  S2  S3  S4  S5
+city                    
+HA     5   7   1   9   1
+MD     5  12   0   7   4
+  V 0.277 against 0.272 (P 0.4265)
+letter J:
+sty   S1  S2  S3  S4  S5
+city                    
+HA    11   3   2   1   0
+MD     8  10   4   0   5
+  V 0.455 against 0.293 (P 0.0475)
+letter S:
+sty   S1  S2  S4  S5
+city                
+HA     5   3   1   0
+MD    12  11   2   3
+  V 0.194 against 0.270 (P 0.7270)
+letter I:
+sty   S1  S2  S3  S4  S5
+city                    
+HA    12   1   2   0   1
+MD    11   2   1   1   0
+  V 0.294 against 0.357 (P 1.0000)
