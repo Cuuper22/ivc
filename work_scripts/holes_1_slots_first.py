@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Slot profile of each of the eight signs: every slot, neighbours, object kinds, sites, findspots, counts after/before."""
+"""Slot summary of each of the eight signs: every slot, neighbours, object kinds, sites, findspots, counts after/before."""
 import sys, collections
 sys.path.insert(0, '/home/claude/ivc/work_scripts')
 from holes_common import *
@@ -26,5 +26,5 @@ for sg in EIGHT + ['705', '706', '435']:
     out.append('kinds : ' + ', '.join(f'{k} {v} (exp {base_kind[k]*n/nl:.1f})' for k, v in K.most_common(8)))
     out.append('sites : ' + ', '.join(f'{k} {v}' for k, v in S.most_common(10)))
     out.append('animal: ' + ', '.join(f'{k} {v}' for k, v in A.most_common(6)))
-open(f'{HOLES}/profile_eight.txt', 'w').write('\n'.join(out))
+open(f'{HOLES}/slots_first_look.txt', 'w').write('\n'.join(out))
 print('\n'.join(out))

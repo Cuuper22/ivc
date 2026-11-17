@@ -1,0 +1,188 @@
+[v2_common] loading Lipi faces and parsing ...
+[v2_common] loading the second catalogue ...
+
+===== catalogue L (objects): number units 2014 (deduped 2005), before a fish 284 =====
+  count_named  n   56  values {1: 3, 2: 39, 3: 9, 4: 1, 6: 4}  styles {'short': 42, 'tall': 11, 'stacked': 3}
+  count_pure   n   29  values {1: 1, 2: 17, 3: 8, 4: 1, 6: 2}  styles {'stacked': 2, 'short': 13, 'tall': 14}
+  name         n  194  values {1: 19, 2: 136, 3: 20, 4: 5, 5: 2, 6: 11, 7: 1}  styles {'short': 97, 'stacked': 15, 'tall': 82}
+  sealx        n    5  values {1: 5}  styles {'tall': 2, 'short': 3}
+P1 {3,6,7} share: NAME 32/194 = 16%  COUNT 23/85 = 27%  odds 0.53  P 0.985
+P2 {1,4,5,8} share: NAME 26/194 = 13%  COUNT 6/85 = 7%  P(name fewer) 0.963
+P3 distance (half the summed difference) from the ordinary goods-count mix (n 903): NAME 0.46  COUNT 0.42
+   ordinary goods mix {1: np.float64(0.09), 2: np.float64(0.29), 3: np.float64(0.37), 4: np.float64(0.16), 5: np.float64(0.03), 6: np.float64(0.02), 7: np.float64(0.04), 8: np.float64(0.0)}
+P4 style by slot
+ style       short  stacked  tall
+slot2                           
+COUNT          55        5    25
+NAME           97       15    82
+seal-other      3        0     2
+   stacked: NAME 15/194  COUNT 5/85  P 0.393
+   tall: NAME 82/194  COUNT 25/85  P 0.986
+  value + fish by slot:
+    COUNT      1 + 235: 2  styles {'tall': 1, 'short': 1}  e.g. ['C-40', 'M-2061']
+    COUNT      1 + 240: 2  styles {'short': 2}  e.g. ['H-821', 'H-822']
+    COUNT      2 + 220: 15  styles {'short': 5, 'tall': 10}  e.g. ['B-23', 'H-1418', 'H-2343']
+    COUNT      2 + 226: 3  styles {'tall': 3}  e.g. ['H-1321', 'L-219', 'H-1350']
+    COUNT      2 + 235: 2  styles {'short': 2}  e.g. ['M-1386', '-']
+    COUNT      2 + 240: 35  styles {'short': 34, 'tall': 1}  e.g. ['H-252', 'H-253', 'H-254']
+    COUNT      3 + 220: 8  styles {'short': 5, 'tall': 3}  e.g. ['H-1394', 'H-1737', 'H-1736']
+    COUNT      3 + 240: 5  styles {'tall': 5}  e.g. ['H-2192', 'H-2244', 'H-301']
+    COUNT      4 + 220: 2  styles {'short': 2}  e.g. ['H-1192', 'L-143']
+    COUNT      6 + 220: 6  styles {'stacked': 5, 'short': 1}  e.g. ['C-40', 'H-1086', 'H-1121']
+    NAME       1 + 220: 7  styles {'tall': 5, 'short': 2}  e.g. ['H-129', 'M-1688', 'M-1741']
+    NAME       1 + 233: 3  styles {'short': 2, 'tall': 1}  e.g. ['M-111', 'M-840', 'M-1161']
+    NAME       1 + 235: 1  styles {'short': 1}  e.g. ['H-40']
+    NAME       1 + 240: 6  styles {'short': 2, 'tall': 4}  e.g. ['C-11', 'H-440', 'M-1982']
+    NAME       1 + 241: 1  styles {'tall': 1}  e.g. ['M-202']
+    NAME       1 + 243: 1  styles {'tall': 1}  e.g. ['M-160']
+    NAME       2 + 220: 62  styles {'short': 5, 'tall': 57}  e.g. ['B-1', 'C-65', 'C-10']
+    NAME       2 + 222: 1  styles {'short': 1}  e.g. ['M-82']
+    NAME       2 + 226: 10  styles {'short': 2, 'tall': 8}  e.g. ['H-561', 'M-1793', 'M-57']
+    NAME       2 + 231: 10  styles {'short': 10}  e.g. ['H-609', 'K-25', 'L-82']
+    NAME       2 + 233: 12  styles {'short': 12}  e.g. ['H-688', 'L-1', 'L-4']
+    NAME       2 + 235: 16  styles {'short': 16}  e.g. ['H-389', 'H-426', 'H-639']
+    NAME       2 + 236: 3  styles {'short': 3}  e.g. ['B-17', 'M-232', 'M-354']
+    NAME       2 + 240: 19  styles {'short': 18, 'tall': 1}  e.g. ['H-1670', 'H-31', 'H-272']
+    NAME       2 + 241: 2  styles {'short': 2}  e.g. ['M-225', 'M-305']
+    NAME       2 + 242: 1  styles {'short': 1}  e.g. ['M-677']
+    NAME       3 + 220: 15  styles {'short': 14, 'tall': 1}  e.g. ['H-1056', 'H-1043', 'H-134']
+    NAME       3 + 231: 1  styles {'short': 1}  e.g. ['H-310']
+    NAME       3 + 233: 1  styles {'stacked': 1}  e.g. ['M-266']
+    NAME       3 + 235: 1  styles {'stacked': 1}  e.g. ['M-39']
+    NAME       3 + 240: 2  styles {'tall': 2}  e.g. ['H-131', 'M-54']
+    NAME       4 + 220: 5  styles {'stacked': 2, 'short': 2, 'tall': 1}  e.g. ['B-3', 'M-64', 'M-75']
+    NAME       5 + 220: 1  styles {'short': 1}  e.g. ['H-68']
+    NAME       5 + 226: 1  styles {'short': 1}  e.g. ['Blk-1']
+    NAME       6 + 220: 11  styles {'stacked': 10, 'short': 1}  e.g. ['H-1028', 'H-98', 'H-514']
+    NAME       7 + 220: 1  styles {'stacked': 1}  e.g. ['H-9']
+    seal-other 1 + 235: 2  styles {'short': 2}  e.g. ['M-23', 'M-234']
+    seal-other 1 + 243: 2  styles {'tall': 1, 'short': 1}  e.g. ['M-1714', 'M-1276']
+
+===== catalogue L (distinct texts): number units 2014 (deduped 1348), before a fish 243 =====
+  count_named  n   21  values {1: 2, 2: 10, 3: 5, 4: 1, 6: 3}  styles {'short': 11, 'tall': 8, 'stacked': 2}
+  count_pure   n   26  values {1: 1, 2: 15, 3: 7, 4: 1, 6: 2}  styles {'stacked': 2, 'short': 13, 'tall': 11}
+  name         n  191  values {1: 19, 2: 136, 3: 18, 4: 5, 5: 2, 6: 10, 7: 1}  styles {'short': 95, 'stacked': 14, 'tall': 82}
+  sealx        n    5  values {1: 5}  styles {'tall': 2, 'short': 3}
+P1 {3,6,7} share: NAME 29/191 = 15%  COUNT 17/47 = 36%  odds 0.32  P 0.999
+P2 {1,4,5,8} share: NAME 26/191 = 14%  COUNT 5/47 = 11%  P(name fewer) 0.779
+P3 distance (half the summed difference) from the ordinary goods-count mix (n 357): NAME 0.40  COUNT 0.27
+   ordinary goods mix {1: np.float64(0.16), 2: np.float64(0.33), 3: np.float64(0.27), 4: np.float64(0.08), 5: np.float64(0.06), 6: np.float64(0.03), 7: np.float64(0.06), 8: np.float64(0.01)}
+P4 style by slot
+ style       short  stacked  tall
+slot2                           
+COUNT          24        4    19
+NAME           95       14    82
+seal-other      3        0     2
+   stacked: NAME 14/191  COUNT 4/47  P 0.731
+   tall: NAME 82/191  COUNT 19/47  P 0.681
+  value + fish by slot:
+    COUNT      1 + 235: 2  styles {'tall': 1, 'short': 1}  e.g. ['C-40', 'M-2061']
+    COUNT      2 + 220: 12  styles {'short': 5, 'tall': 7}  e.g. ['B-23', 'H-2343', 'H-375']
+    COUNT      2 + 226: 3  styles {'tall': 3}  e.g. ['H-1321', 'L-219', 'H-1350']
+    COUNT      2 + 235: 2  styles {'short': 2}  e.g. ['M-1386', '-']
+    COUNT      2 + 240: 7  styles {'short': 6, 'tall': 1}  e.g. ['H-252', 'H-701', 'K-121']
+    COUNT      3 + 220: 5  styles {'short': 3, 'tall': 2}  e.g. ['H-1394', 'H-1737', 'M-605']
+    COUNT      3 + 240: 3  styles {'tall': 3}  e.g. ['H-2192', 'H-2244', 'H-301']
+    COUNT      4 + 220: 2  styles {'short': 2}  e.g. ['H-1192', 'L-143']
+    COUNT      6 + 220: 5  styles {'stacked': 4, 'short': 1}  e.g. ['C-40', 'H-1086', 'H-1121']
+    NAME       1 + 220: 7  styles {'tall': 5, 'short': 2}  e.g. ['H-129', 'M-1688', 'M-1741']
+    NAME       1 + 233: 3  styles {'short': 2, 'tall': 1}  e.g. ['M-111', 'M-840', 'M-1161']
+    NAME       1 + 235: 1  styles {'short': 1}  e.g. ['H-40']
+    NAME       1 + 240: 6  styles {'short': 2, 'tall': 4}  e.g. ['C-11', 'H-440', 'M-1982']
+    NAME       1 + 241: 1  styles {'tall': 1}  e.g. ['M-202']
+    NAME       1 + 243: 1  styles {'tall': 1}  e.g. ['M-160']
+    NAME       2 + 220: 62  styles {'short': 5, 'tall': 57}  e.g. ['B-1', 'C-65', 'C-10']
+    NAME       2 + 222: 1  styles {'short': 1}  e.g. ['M-82']
+    NAME       2 + 226: 10  styles {'short': 2, 'tall': 8}  e.g. ['H-561', 'M-1793', 'M-57']
+    NAME       2 + 231: 10  styles {'short': 10}  e.g. ['H-609', 'K-25', 'L-82']
+    NAME       2 + 233: 12  styles {'short': 12}  e.g. ['H-688', 'L-1', 'L-4']
+    NAME       2 + 235: 16  styles {'short': 16}  e.g. ['H-389', 'H-426', 'H-639']
+    NAME       2 + 236: 3  styles {'short': 3}  e.g. ['B-17', 'M-232', 'M-354']
+    NAME       2 + 240: 19  styles {'short': 18, 'tall': 1}  e.g. ['H-1670', 'H-31', 'H-272']
+    NAME       2 + 241: 2  styles {'short': 2}  e.g. ['M-225', 'M-305']
+    NAME       2 + 242: 1  styles {'short': 1}  e.g. ['M-677']
+    NAME       3 + 220: 13  styles {'short': 12, 'tall': 1}  e.g. ['H-1056', 'H-1043', 'H-134']
+    NAME       3 + 231: 1  styles {'short': 1}  e.g. ['H-310']
+    NAME       3 + 233: 1  styles {'stacked': 1}  e.g. ['M-266']
+    NAME       3 + 235: 1  styles {'stacked': 1}  e.g. ['M-39']
+    NAME       3 + 240: 2  styles {'tall': 2}  e.g. ['H-131', 'M-54']
+    NAME       4 + 220: 5  styles {'stacked': 2, 'short': 2, 'tall': 1}  e.g. ['B-3', 'M-64', 'M-75']
+    NAME       5 + 220: 1  styles {'short': 1}  e.g. ['H-68']
+    NAME       5 + 226: 1  styles {'short': 1}  e.g. ['Blk-1']
+    NAME       6 + 220: 10  styles {'stacked': 9, 'short': 1}  e.g. ['H-98', 'H-514', 'M-1884']
+    NAME       7 + 220: 1  styles {'stacked': 1}  e.g. ['H-9']
+    seal-other 1 + 235: 2  styles {'short': 2}  e.g. ['M-23', 'M-234']
+    seal-other 1 + 243: 2  styles {'tall': 1, 'short': 1}  e.g. ['M-1714', 'M-1276']
+
+===== catalogue Mu (objects): number units 326 (deduped 326), before a fish 62 =====
+  count_named  n    6  values {1: 1, 2: 4, 3: 1}  styles {'tall': 1, 'short': 5}
+  count_pure   n    9  values {1: 2, 2: 6, 3: 1}  styles {'tall': 4, 'short': 5}
+  name         n   43  values {1: 6, 2: 33, 3: 2, 6: 2}  styles {'short': 23, 'tall': 18, 'stacked': 2}
+  sealx        n    4  values {1: 3, 2: 1}  styles {'short': 2, 'tall': 2}
+P1 {3,6,7} share: NAME 4/43 = 9%  COUNT 2/15 = 13%  odds 0.67  P 0.828
+P2 {1,4,5,8} share: NAME 6/43 = 14%  COUNT 3/15 = 20%  P(name fewer) 0.425
+P3 distance (half the summed difference) from the ordinary goods-count mix (n 87): NAME 0.45  COUNT 0.34
+   ordinary goods mix {1: np.float64(0.34), 2: np.float64(0.32), 3: np.float64(0.16), 4: np.float64(0.06), 5: np.float64(0.0), 6: np.float64(0.08), 7: np.float64(0.03), 8: np.float64(0.0)}
+P4 style by slot
+ style       short  stacked  tall
+slot2                           
+COUNT          10        0     5
+NAME           23        2    18
+seal-other      2        0     2
+   stacked: NAME 2/43  COUNT 0/15  P 0.546
+   tall: NAME 18/43  COUNT 5/15  P 0.812
+  value + fish by slot:
+    COUNT      1 + 235: 2  styles {'tall': 1, 'short': 1}  e.g. ['M2936', 'M8219']
+    COUNT      2 + 220: 3  styles {'tall': 2, 'short': 1}  e.g. ['M2844', 'M4849', 'M7277']
+    COUNT      2 + 240: 4  styles {'short': 4}  e.g. ['M7219', 'M7220', 'M7247']
+    COUNT      3 + 220: 2  styles {'short': 2}  e.g. ['M3246', 'M4803']
+    NAME       1 + 220: 3  styles {'tall': 3}  e.g. ['M2109', 'M2667', 'M4121']
+    NAME       1 + 233: 1  styles {'short': 1}  e.g. ['M2029']
+    NAME       1 + 240: 2  styles {'short': 2}  e.g. ['M2513', 'M6220']
+    NAME       2 + 220: 13  styles {'tall': 11, 'short': 2}  e.g. ['M1491', 'M2024', 'M2034']
+    NAME       2 + 226: 3  styles {'tall': 3}  e.g. ['M3112', 'M6211', 'M7025']
+    NAME       2 + 231: 2  styles {'short': 2}  e.g. ['M3109', 'M4060']
+    NAME       2 + 233: 1  styles {'short': 1}  e.g. ['M1165']
+    NAME       2 + 235: 9  styles {'short': 9}  e.g. ['M1052', 'M1349', 'M1396']
+    NAME       2 + 240: 4  styles {'short': 4}  e.g. ['M1180', 'M2228', 'M2543']
+    NAME       2 + 241: 1  styles {'short': 1}  e.g. ['M2235']
+    NAME       3 + 235: 1  styles {'short': 1}  e.g. ['M1544']
+    NAME       3 + 240: 1  styles {'tall': 1}  e.g. ['M4271']
+    NAME       6 + 220: 2  styles {'stacked': 2}  e.g. ['M2681', 'M3114']
+    seal-other 1 + 235: 2  styles {'short': 2}  e.g. ['M1321', 'M2398']
+
+===== catalogue Mu (distinct texts): number units 326 (deduped 293), before a fish 59 =====
+  count_named  n    5  values {1: 1, 2: 3, 3: 1}  styles {'tall': 1, 'short': 4}
+  count_pure   n    8  values {1: 2, 2: 5, 3: 1}  styles {'tall': 4, 'short': 4}
+  name         n   43  values {1: 6, 2: 33, 3: 2, 6: 2}  styles {'short': 23, 'tall': 18, 'stacked': 2}
+  sealx        n    3  values {1: 2, 2: 1}  styles {'short': 1, 'tall': 2}
+P1 {3,6,7} share: NAME 4/43 = 9%  COUNT 2/13 = 15%  odds 0.56  P 0.87
+P2 {1,4,5,8} share: NAME 6/43 = 14%  COUNT 3/13 = 23%  P(name fewer) 0.345
+P3 distance (half the summed difference) from the ordinary goods-count mix (n 60): NAME 0.42  COUNT 0.27
+   ordinary goods mix {1: np.float64(0.28), 2: np.float64(0.35), 3: np.float64(0.17), 4: np.float64(0.05), 5: np.float64(0.0), 6: np.float64(0.1), 7: np.float64(0.05), 8: np.float64(0.0)}
+P4 style by slot
+ style       short  stacked  tall
+slot2                           
+COUNT           8        0     5
+NAME           23        2    18
+seal-other      1        0     2
+   stacked: NAME 2/43  COUNT 0/13  P 0.586
+   tall: NAME 18/43  COUNT 5/13  P 0.702
+  value + fish by slot:
+    COUNT      1 + 235: 2  styles {'tall': 1, 'short': 1}  e.g. ['M2936', 'M8219']
+    COUNT      2 + 220: 3  styles {'tall': 2, 'short': 1}  e.g. ['M2844', 'M4849', 'M7277']
+    COUNT      2 + 240: 2  styles {'short': 2}  e.g. ['M7219', 'M7220']
+    COUNT      3 + 220: 2  styles {'short': 2}  e.g. ['M3246', 'M4803']
+    NAME       1 + 220: 3  styles {'tall': 3}  e.g. ['M2109', 'M2667', 'M4121']
+    NAME       1 + 233: 1  styles {'short': 1}  e.g. ['M2029']
+    NAME       1 + 240: 2  styles {'short': 2}  e.g. ['M2513', 'M6220']
+    NAME       2 + 220: 13  styles {'tall': 11, 'short': 2}  e.g. ['M1491', 'M2024', 'M2034']
+    NAME       2 + 226: 3  styles {'tall': 3}  e.g. ['M3112', 'M6211', 'M7025']
+    NAME       2 + 231: 2  styles {'short': 2}  e.g. ['M3109', 'M4060']
+    NAME       2 + 233: 1  styles {'short': 1}  e.g. ['M1165']
+    NAME       2 + 235: 9  styles {'short': 9}  e.g. ['M1052', 'M1349', 'M1396']
+    NAME       2 + 240: 4  styles {'short': 4}  e.g. ['M1180', 'M2228', 'M2543']
+    NAME       2 + 241: 1  styles {'short': 1}  e.g. ['M2235']
+    NAME       3 + 235: 1  styles {'short': 1}  e.g. ['M1544']
+    NAME       3 + 240: 1  styles {'tall': 1}  e.g. ['M4271']
+    NAME       6 + 220: 2  styles {'stacked': 2}  e.g. ['M2681', 'M3114']

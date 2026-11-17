@@ -1,0 +1,44 @@
+[v2_common] loading Lipi faces and parsing ...
+[v2_common] loading the second catalogue ...
+
+== L distinct texts: name 189, count 46, ordinary goods counts 347
+R1 name-minus-count distance from ordinary counts +0.14; shuffled mean -0.00; P 0.0290
+R2 NAME: commonest form per fish covers 126/186 = 68%   [('220', 97, ('tall2', 57)), ('226', 11, ('tall2', 8)), ('231', 11, ('short2', 10)), ('233', 16, ('short2', 12)), ('235', 18, ('short2', 16)), ('236', 3, ('short2', 3)), ('240', 27, ('short2', 18)), ('241', 3, ('short2', 2))]
+R2 COUNT: commonest form per fish covers 17/43 = 40%   [('220', 24, ('tall2', 7)), ('226', 3, ('tall2', 2)), ('235', 5, ('short2', 2)), ('240', 11, ('short2', 6))]
+R3 NAME: plain/caged fish two tall 65, short 8 | marked fish two tall 1, short 62 | odds 503.8 P 1.6e-28
+R3 COUNT: plain/caged fish two tall 9, short 5 | marked fish two tall 1, short 9 | odds 16.2 P 0.013
+R4 six + fish, every face:
+    C-40     tool  Chanhu-daro  016-220-776-825-005-909-095-390          after the unit: 776-825-005-909-095-390  closer=END
+    H-1086   pot   Harappa      016-220                                  after the unit: (nothing)  closer=END
+    H-1121   mtab  Harappa      016-220-520-400                          after the unit: 520-400  closer=ending
+    H-1993   mtab  Harappa      095-390-002-004-220-000-740              after the unit: 000-740  closer=poss
+    H-98     seal  Harappa      016-220-ALT-861                          after the unit: ALT-861  closer=END
+    H-514    seal  Harappa      820-002-016-220-151                      after the unit: 151  closer=ending
+    H-942    mtab  Harappa      016-220-520                              after the unit: 520  closer=ending
+    M-1884   seal  Mohenjo-daro 000-416-002-016-220-520                  after the unit: 520  closer=ending
+    M-53     seal  Mohenjo-daro 140-920-190-297-002-016-220-740-090      after the unit: 740-090  closer=poss
+    M-112    seal  Mohenjo-daro 684-572-741-382-016-220-760-740          after the unit: 760-740  closer=poss
+    M-136    seal  Mohenjo-daro 545-908-031-016-220-740-090              after the unit: 740-090  closer=poss
+    M-237    seal  Mohenjo-daro 000-016-220-626-740-565                  after the unit: 626-740-565  closer=poss
+    M-715    seal  Mohenjo-daro 000-556-741-016-220-520                  after the unit: 520  closer=ending
+    Ns-5     seal  Nausharo     820-002-016-220-740-090                  after the unit: 740-090  closer=poss
+    K-150    seal  Kalibangan   006-220-520                              after the unit: 520  closer=ending
+
+== Mu distinct texts: name 43, count 13, ordinary goods counts 59
+R1 name-minus-count distance from ordinary counts +0.15; shuffled mean -0.01; P 0.1480
+R2 NAME: commonest form per fish covers 27/38 = 71%   [('220', 18, ('tall2', 11)), ('226', 3, ('tall2', 3)), ('235', 10, ('short2', 9)), ('240', 7, ('short2', 4))]
+R2 COUNT: commonest form per fish covers 3/9 = 33%   [('220', 6, ('tall2', 2)), ('235', 3, ('tall1', 1))]
+R3 NAME: plain/caged fish two tall 14, short 2 | marked fish two tall 0, short 17 | odds inf P 1.5e-07
+R3 COUNT: plain/caged fish two tall 3, short 1 | marked fish two tall 0, short 4 | odds inf P 0.14
+R4 six + fish, every face:
+    M2681    seal  Mohenjo-daro 000-560-741-016-220-520                  after the unit: 520  closer=ending
+    M3114    seal  Mohenjo-daro 000-016-220-626-740-565                  after the unit: 626-740-565  closer=poss
+
+R5 house-mates share the compound (Mohenjo-daro seals; chance = shuffled within area and 3-ft band)
+   tall2 + 220: (False, 0.9440279860069966, 'same-house pairs 1 against 2.62 (Mohenjo-daro seals, 28 carry it, shuffled within area and 3-ft band)')
+   short2 + 235: (False, 1.0, 'same-house pairs 0 against 0.23 (Mohenjo-daro seals, 9 carry it, shuffled within area and 3-ft band)')
+   short2 + 240: (False, 1.0, 'same-house pairs 0 against 0.60 (Mohenjo-daro seals, 10 carry it, shuffled within area and 3-ft band)')
+   short2 + 233: (False, 1.0, 'same-house pairs 0 against 0.04 (Mohenjo-daro seals, 7 carry it, shuffled within area and 3-ft band)')
+   short2 + 231: (False, 1.0, 'same-house pairs 0 against 0.12 (Mohenjo-daro seals, 5 carry it, shuffled within area and 3-ft band)')
+   short3 + 220: (False, 1.0, 'same-house pairs 0 against 0.00 (Mohenjo-daro seals, 4 carry it, shuffled within area and 3-ft band)')
+   stacked6 + 220: (False, 1.0, 'same-house pairs 0 against 0.09 (Mohenjo-daro seals, 5 carry it, shuffled within area and 3-ft band)')

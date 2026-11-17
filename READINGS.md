@@ -472,3 +472,167 @@ Added by `work_scripts/sound_v3_readings.py` (third list: `jobs/out/sound_list_v
 - Sound: *mīn koḷ kā ciṟ*
 - Word by word: `220` mīn "star" · `440` koḷ "received, bought" · `154` kā "keeper" · `400` ciṟ "junior"
 
+## Twenty more: texts that became readable in the fourth pass
+
+Added by `work_scripts/sound_v4_readings.py` (fourth list: `jobs/out/sound_list_v4.md`). None of these texts read start to finish before this pass. New words they rest on: kalam "grain measure" (705/706), kōl "staff" (435), maruppu "crescent horn" (923), vēḷāḷaṉ "cultivator" (137), kutir "granary" (605), turumpu "threshed heap" (416), vāy "gate" (550), -iṉ "of" (060), tiṅkaḷ "month" (900), aracu "pipal, royal" (384/388), aṭimai "bondsman" (097), aṭi "servant" (717), kāval "guard" (527), vāḷai "scabbard-fish" (233), tiṉai "millet" (831), mīmīn "High-star" (240). A double dagger (‡) marks a word whose prediction came true on a fact that had been visible while the word was chosen. Reading order = stored order reversed. Object id, site and findspot are from the first catalogue (Lipi).
+
+## 61. Stock of the kindred, two: High-star the chief. A store chit in 29 copies.
+
+- Object: H-252; 29 objects carry this exact text (TAB:B - 28, TAB:B Clay 1)
+- Site and findspot: Harappa (--) x28, Harappa (G-) x1
+- Signs: `501-405-002-240-520`
+- Sound: *kumi kiḷai iru mīmīn vēḷ*
+- Word by word: `501` kumi "heap, stock" · `405` kiḷai "kindred" · `002` iru "two" · `240` mīmīn‡ "High-star (house crest)" · `520` vēḷ "chief"
+
+## 62. Junior keeper of the chief staff (mutal kōl kā): an office chit in 10 copies.
+
+- Object: Lipi row 234.2; 10 objects carry this exact text (TAB:I Steatite 7, TAB:I - 2, TAB:B - 1)
+- Site and findspot: Harappa (--) x3, Harappa (ETrench 10W/11) x2, Harappa (FTrench VI) x2, Harappa (FTrench IV+V) x1
+- Signs: `255-435-156-400`
+- Sound: *mutal kōl kā ciṟ*
+- Word by word: `255` mutal "chief, first" · `435` kōl‡ "rod, sceptre: mutal kōl "chief staff", an office" · `156` kā "keeper" · `400` ciṟ "junior"
+
+## 63. Three kalam, the crescent-horn: of the house. Seven copper tablets.
+
+- Object: M-1482; 7 objects carry this exact text (TAB:C Copper 7)
+- Site and findspot: Mohenjo-daro (DK-) x5, Mohenjo-daro (VSA) x2
+- Signs: `706-033-923-740`
+- Sound: *kalam mū maruppu kuṭi*
+- Word by word: `706` kalam "grain measure (variant of 705)" · `033` mū "three" · `923` maruppu‡ "horn of the crescent (a counted thing before the jar)" · `740` kuṭi "house of"
+
+## 64. The cultivator, junior hand: a ration chit in 7 copies.
+
+- Object: H-1858; 7 objects carry this exact text (TAB:B Faience 3, TAB:I Steatite 2, TAB:B - 2)
+- Site and findspot: Harappa (--) x2, Harappa (ETrench 54) x1, Harappa (ETTrench 19) x1, Harappa (ETrench 10W/11) x1
+- Signs: `137-400`
+- Sound: *vēḷāḷaṉ ciṟ*
+- Word by word: `137` vēḷāḷaṉ "cultivator" · `400` ciṟ "junior"
+
+## 65. Junior hand of the house of the heir of the Granary (kutir maka kuṭi).
+
+- Object: H-1158; 6 objects carry this exact text (TAB:I Steatite 4, TAB:B Steatite 1, TAB:I - 1)
+- Site and findspot: Harappa (FTrench I) x5, Harappa (F-) x1
+- Signs: `605-760-740-400`
+- Sound: *kutir maka kuṭi ciṟ*
+- Word by word: `605` kutir "grain bin, granary" · `760` maka "child of" · `740` kuṭi "house of" · `400` ciṟ "junior"
+
+## 66. Threshed heap: two shares.
+
+- Object: H-2094; 6 objects carry this exact text (TAB:I Steatite 4, TAB:I - 2)
+- Site and findspot: Harappa (ETrench 11) x2, Harappa (EC) x1, Harappa (ETrench 10W/11) x1, Harappa (--) x1
+- Signs: `416-861-002`
+- Sound: *turumpu kāṇi iru*
+- Word by word: `416` turumpu "heap of threshed grain" · `861` kāṇi "share, holding (a "hand")" · `002` iru "two"
+
+## 67. Of the allied house of the Gate (vāy-iṉ piṇai kuṭi).
+
+- Object: M-2041; 5 objects carry this exact text (TAB:I Steatite 4, SEAL:R Steatite 1)
+- Site and findspot: Mohenjo-daro (DKG. (S)) x3, Mohenjo-daro (DKG) x1, Mohenjo-daro (DKE) x1
+- Signs: `550-060-690-740`
+- Sound: *vāy -iṉ piṇai kuṭi*
+- Word by word: `550` vāy‡ "gate" · `060` -iṉ‡ "of (joiner after an opener)" · `690` piṇai "bound, allied" · `740` kuṭi "house of"
+
+## 68. Five months: of the house.
+
+- Object: H-512; 4 objects carry this exact text (SEAL:S Steatite 2, SEAL:R Steatite 1, SEAL:S - 1)
+- Site and findspot: Harappa (F-) x1, Mohenjo-daro (DKG. (S)) x1, Mohenjo-daro (VSA) x1, Mohenjo-daro (--) x1
+- Signs: `005-900-740`
+- Sound: *ai tiṅkaḷ kuṭi*
+- Word by word: `005` ai "five" · `900` tiṅkaḷ "month (counted)" · `740` kuṭi "house of"
+
+## 69. Of the Royal (Pipal) house.
+
+- Object: M-1430; 4 objects carry this exact text (TAB:B Clay 3, SEAL:S - 1)
+- Site and findspot: Mohenjo-daro (DKG. (S)) x3, Mohenjo-daro (--) x1
+- Signs: `384-740`
+- Sound: *aracu kuṭi*
+- Word by word: `384` aracu "pipal; royal (house name)" · `740` kuṭi "house of"
+
+## 70. Four cups: the bondsman, junior hand. A ration issue in 4 copies.
+
+- Object: M-478; 4 objects carry this exact text (TAB:B Clay 4)
+- Site and findspot: Mohenjo-daro (DKG. (N)) x2, Mohenjo-daro (DK-) x2
+- Signs: `004-700-097-400`
+- Sound: *nāl nāḻi? aṭimai ciṟ*
+- Word by word: `004` nāl "four" · `700` nāḻi? "cup measure" · `097` aṭimai‡ "bondsman, servant (a ration receiver)" · `400` ciṟ "junior"
+
+## 71. Of the Royal house of the Seven Maidens (on copper tablets).
+
+- Object: M-578; 4 objects carry this exact text (TAB:C Copper 4)
+- Site and findspot: Mohenjo-daro (DK-) x2, Mohenjo-daro (DKG. (S)) x1, Mohenjo-daro (VSA) x1
+- Signs: `017-585-388-740`
+- Sound: *ēḻu kaṉṉi? aracu kuṭi*
+- Word by word: `017` ēḻu "seven" · `585` kaṉṉi? "maiden (of the Seven)" · `388` aracu‡ "pipal; royal (house name)" · `740` kuṭi "house of"
+
+## 72. Junior hand of the Servant house.
+
+- Object: H-1854; 3 objects carry this exact text (TAB:B Faience 1, TAB:I Steatite 1, TAB:B Clay 1)
+- Site and findspot: Harappa (ETrench 55) x1, Harappa (ETrench 11) x1, Harappa (FGranary) x1
+- Signs: `717-740-400`
+- Sound: *aṭi kuṭi ciṟ*
+- Word by word: `717` aṭi "foot; servant (aṭiyāṉ)" · `740` kuṭi "house of" · `400` ciṟ "junior"
+
+## 73. The three-kalam chief.
+
+- Object: L-146; 3 objects carry this exact text (TAG:O Clay 1, SEAL:S Steatite 1, SEAL Steatite 1)
+- Site and findspot: Lothal (SRG 3L 5) x1, Mohenjo-daro (DKG. (N)) x1, Mohenjo-daro (DKG. (S)) x1
+- Signs: `705-033-520`
+- Sound: *kalam mū vēḷ*
+- Word by word: `705` kalam "grain measure (a kalam); ship where it stands uncounted before the sail 500" · `033` mū "three" · `520` vēḷ "chief"
+
+## 74. Five kalam (on copper tablets).
+
+- Object: M-513; 3 objects carry this exact text (TAB:C Copper 3)
+- Site and findspot: Mohenjo-daro (DKE) x1, Mohenjo-daro (DKC) x1, Mohenjo-daro (DK-) x1
+- Signs: `005-706`
+- Sound: *ai kalam*
+- Word by word: `005` ai "five" · `706` kalam "grain measure (variant of 705)"
+
+## 75. Gate-guard (vāy kāval).
+
+- Object: L-52; 3 objects carry this exact text (SEAL:S Steatite 2, SEAL:S Clay 1)
+- Site and findspot: Mohenjo-daro (DKG. (S)) x2, Lothal (SRG 3FX 10) x1
+- Signs: `550-527`
+- Sound: *vāy kāval*
+- Word by word: `550` vāy‡ "gate" · `527` kāval "guard (vāy kāval "gate-guard")"
+
+## 76. Produce, scabbard-fish: of the Royal house (on copper tablets).
+
+- Object: M-504; 3 objects carry this exact text (TAB:C Copper 3)
+- Site and findspot: Mohenjo-daro (DK-) x3
+- Signs: `806-233-384-740`
+- Sound: *viḷai vāḷai aracu kuṭi*
+- Word by word: `806` viḷai "produce, ripened crop" · `233` vāḷai‡ "scabbard-fish (a counted fish good; also a crest "Bright-star" vāḷmīn)" · `384` aracu "pipal; royal (house name)" · `740` kuṭi "house of"
+
+## 77. Millet: sale. Junior hand.
+
+- Object: H-1133; 2 objects carry this exact text (TAB:B Faience 2)
+- Site and findspot: Harappa (FTrench I) x1, Harappa (ETrench 11) x1
+- Signs: `831-892-400`
+- Sound: *tiṉai vil ciṟ*
+- Word by word: `831` tiṉai‡ "Italian millet" · `892` vil "sale, price" · `400` ciṟ "junior"
+
+## 78. Descendant of First-star: three kalam, two months; of the Elder house (on copper tablets).
+
+- Object: M-606; 2 objects carry this exact text (TAB:C Copper 2)
+- Site and findspot: Mohenjo-daro (DKG. (S)) x1, Mohenjo-daro (DK-) x1
+- Signs: `798-231-705-033-904-100-740`
+- Sound: *maru- orumīn kalam mū irutiṅkaḷ mutu kuṭi*
+- Word by word: `798` maru- "descendant, clan member" · `231` orumīn "First-star" · `705` kalam "grain measure (a kalam); ship where it stands uncounted before the sail 500" · `033` mū "three" · `904` irutiṅkaḷ "two months" · `100` mutu "elder" · `740` kuṭi "house of"
+
+## 79. Descendant of the High-star house, fish: monthly allowance; of the house, junior hand.
+
+- Object: H-1922; 2 objects carry this exact text (TAB:B Faience 2)
+- Site and findspot: Harappa (ETTrench 27) x1, Harappa (FTrench I) x1
+- Signs: `798-240-233-320-920-740-400`
+- Sound: *maru- mīmīn vāḷai paṭi tiṅkaḷ? kuṭi ciṟ*
+- Word by word: `798` maru- "descendant, clan member" · `240` mīmīn‡ "High-star (house crest)" · `233` vāḷai‡ "scabbard-fish (a counted fish good; also a crest "Bright-star" vāḷmīn)" · `320` paṭi "ration measure, daily allowance" · `920` tiṅkaḷ? "month (head of a date formula)" · `740` kuṭi "house of" · `400` ciṟ "junior"
+
+## 80. Three chests: threshed heap.
+
+- Object: H-911; 2 objects carry this exact text (TAB:I Steatite 2)
+- Site and findspot: Harappa (F-) x2
+- Signs: `033-590-416`
+- Sound: *mū peṭṭi turumpu*
+- Word by word: `033` mū "three" · `590` peṭṭi "chest" · `416` turumpu "heap of threshed grain"
+

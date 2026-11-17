@@ -126,4 +126,16 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `measured` Went against: animal as clan, ward or rank; the catalogue's cult-stand code as a house mark (1.04).
 - Photo check of the animal column: 23 of 30 clear matches, 6 too broken, 1 doubtful, 0 wrong.
 
+## Fourth pass: kalam, and the 25 most useful signs (from `jobs/out/sound_list_v4.md`)
+"Strict" counts only values whose came-true fact had not been seen while the word was chosen; "wide" also counts values that came true on new-text facts glimpsed in sign profiles during choosing.
+- `measured` Fully read complete faces: strict 1,418 of 3,600 (608 distinct texts), wide 1,861 (931 distinct). Was 1,222 (477). New-text lines read whole: 233 of 627 (strict 178), was 134. Value list 98: wide 82 building / 11 testing / 5 paused; strict 69 / 24 / 5.
+- `measured` 705 on new texts: a count follows in 28 of 64 uses against 14.1% (P 8e-9), all 28 in tall strokes (P 1e-13). Before the sail 500 it is never counted. Of 384 faces with 705/706: 243 measure clues only, 30 ship clues only (14 are the Lothal tag), 16 both, 95 neither.
+- `guess` 705 = *kalam*: the grain measure when counted (Tamil Lexicon p. 778 sense 10; 1 kalam = 12 marakkāl = 96 paṭi), the ship in *kalam pāy* before the sail. Both earlier readings stand under one word.
+- `measured` On seals the count after 705 is three 115 of 118 times; chief sign 520 follows "three kalam" 54 of 172 against 2.0%; those seals are 1.11 times bigger at equal length (P 0.064).
+- `guess` 705-033-520 = "the three-kalam chief", a rank named by its grain allowance.
+- `measured` Fresh results at Harappa: 413 in mound E 22 of 44 against 25%; 416 and 605 in granary mound F; 137 in mound E; 900 counted with short strokes 61 to 6.
+- `guess` 413 *nel* grain; 416 *turumpu* threshed heap; 605 *kutir* granary bin; 137 *vēḷāḷaṉ* cultivator; 900 *tiṅkaḷ* month; 226 *kūṭumīn* crate of fish; 527 *kāval* guard (550-527 "gate-guard"); 717 *aṭi* servant; 384 *aracu*.
+- `measured` Went against the measure: 705 not on tablets/pots more than chance on new texts (5 of 66 against 21%); not in Harappa mound F (30 of 90 against 34%); 1 of 384 faces abroad.
+- Open: 167 closes only kalam tablets; 407 and 048 are missing from new texts and need a crosswalk link to be tested.
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.
