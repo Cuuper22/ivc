@@ -43,6 +43,8 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `measured` Picture-and-slot puns work in Dravidian for 7 of 9 picture words against 0.97 by chance; 9 of 12 pairs work fully only there. Sumerian and Elamite word order does not fit the measured order.
 - `guess` SOUNDS (first list, early Dravidian): jar = -kuṭi "house of"; man = āḷ "manager of a house"; fish = mīn "star"; spear = vēḷ "chief"; comb = ciṟ "junior"; load-carrier = kā "keeper"; person with staff = kō "king". `[crest] jar man` = "[crest]-kuṭi āḷ", head of the [crest] house. The jar ending and the house crest are the same fact seen twice: the crest names the house, the jar says "house".
 
+- `measured` The readings carry to the second catalogue (Mahadevan 1977, separate transcription): load tag 14 of 14, man after jar 74%, spear after jar 0 of 156, cup never five (0 of 206); the parser gives every sign a role in 89.3% of its texts and 85.4% of the 383 texts that have no partner in the first catalogue. A crosswalk of 366 sign pairs now links the two numberings.
+
 ## Live leads, in order
 
 1. Name slot. `guess` The slot right before the closing jar holds a house or family name. Next: build the list of pre-jar signs and pre-jar pairs with the houses they belong to; check whether one house keeps one pre-jar sign across depth (a family over generations); check the same slot before the other closing signs.

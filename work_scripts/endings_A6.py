@@ -73,7 +73,7 @@ rows=[]
 for k in multi:
     v=h[h.house==k]; rows.append(dict(house=k,n=len(v),endings=dict(collections.Counter(v.E)),cisi=' '.join(v.cisi)))
 H=pd.DataFrame(rows).sort_values('n',ascending=False); H.to_csv(f'{R}/work_data/endings/A6_houses.csv',index=False)
-print(H[H.endings.map(lambda e:len([k for k in e if k!='jar']) and True)].head(40).to_string(index=False))
+print(H[H.endings.map(lambda e: len([k for k in e if k!='jar'])>0).astype(bool)].head(40).to_string(index=False))
 # house size (seals in the house, from all seals, not only ending) vs ending share
 allh=d[d.house!=''].groupby('house').size()
 h['housesize']=h.house.map(allh)
