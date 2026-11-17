@@ -41,7 +41,7 @@ for t in T:
         reason = ''
         if breaks: reason = 'word-pair that the corpus avoids: ' + ', '.join(b[2] for b in breaks)
         if mark != 'unread' and any(a in p for a in ('705', '706')):
-            mark = 'nonsense'; reason = 'old value kaḷam "threshing floor" with a fixed "three" after it'
+            mark = 'nonsense'; reason = 'old value kaḷam "threshing floor" (usually with a fixed "three" after it)'
         elif '435' in p:
             mark = 'nonsense'; reason = 'old value miṉ "flash" inside a title block'
         elif potjar:

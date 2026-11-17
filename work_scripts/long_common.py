@@ -64,7 +64,7 @@ def gloss_en(s):
 
 
 def slot_desc(s):
-    """What kind of word an unvalued sign must be, from its measured slot (profile.csv)."""
+    """What kind of word an unvalued sign must be, from its measured slot (the slot table)."""
     if s in ('000', 'ALT'): return 'lost sign'
     if s not in PROF.index: return 'rare sign, slot unmeasured'
     r = PROF.loc[s]

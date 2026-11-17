@@ -80,4 +80,12 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `guess` Sign 838 is *eḷ* sesame or *eḷumpu* bone (DEDR 839): 4 of 42 ivory/bone rods carry it (28 times chance); both stay alive.
 - `measured` Went against: 838 on tags/pots (1 of 19); crop 806 with the cup (0 of 133); fish 220 as a coast sign. No bead, carnelian or cotton sign found yet.
 
+## Long texts (from `jobs/out/long_texts.md`)
+- `measured` The 40 longest texts plus the Dholavira signboard split into 186 phrases: 76 read as sense, 73 partly, 8 unread, 29 nonsense. 430 of 537 signs have a sound.
+- `measured` A long text is a who-phrase plus a what-phrase and one of the two repeats across copies (four Lothal tags share one agent face; M-23 and M-234 share a 9-sign first line; grain line `413-575-335-711-033-700` on 6 Harappa tablets). 98 of 157 long objects have exactly one jar.
+- `measured` Signs 705/706 take their count after them in tall strokes 86%/82% against 35% baseline, with a fixed three (65 of 69, 30 of 30). Sign 413 starts a line 44 of 57 times. Sign 060 has the head sign on its left in 132 of 177 uses.
+- `guess` 705/706 = *paṭi* "measure, ration" (DEDR 3849); this clears the nonsense in the 15 phrases that use them. 435 = *taṭi* "rod" (DEDR 3030); pair 255-435 marks bigger seals (838 against 605 mm2 median). 413 = commodity header (grain). 060 = joiner, maybe genitive *-iṉ* (slot only).
+- `guess` Dholavira signboard: *kāl [611] aracu · kāl kaṇ [645] oru · kāl maru-*, "the quarters of King [611], and of the Maru clan". Wheel = *kāl* starts each of three phrases (wheel is text-initial 187 of 244). Lipi records 9 signs; the 10-sign string in print traces to one blog comment.
+- Open: 060, 335, 711, 525, 692, 842, 611, 645 have no sound yet.
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.

@@ -106,3 +106,31 @@ def run(tag, sign, word, pred, fn):
         out = ('yes' if ok and p <= 0.1 else 'direction only' if ok else 'no', p, txt)
     print(f'[{tag}] {sign} {word}: {pred}\n      -> {out[0]}: {out[2]}, P {out[1]:.3g}', flush=True)
     return dict(stage=tag, sign=sign, word=word, prediction=pred, outcome=out[0], p=out[1], result=out[2])
+
+
+def frame_swap(a, b, cat='LM'):
+    """a and b stand in the same frames (same sign before and after) more than b and signs of b's frequency do."""
+    ctx = collections.defaultdict(set); use = collections.Counter(); seen = set()
+    for x, P, st, g in faces_all(cat):
+        if x in seen: continue
+        seen.add(x); y = ('^',) + tuple(x) + ('$',)
+        for i in range(1, len(y) - 1):
+            ctx[y[i]].add((y[i - 1], y[i + 1])); use[y[i]] += 1
+    bs = set(b) if not isinstance(b, str) else {b}
+    cb = set().union(*[ctx[s] for s in bs]); nb = sum(use[s] for s in bs)
+    if use[a] < 3 or nb < 3: return None
+    obs = len(ctx[a] & cb)
+    peers = [len(ctx[a] & ctx[s]) for s in use if s not in bs and s != a and 0.5 * nb <= use[s] <= 2 * nb]
+    k = sum(v >= obs for v in peers)
+    return res(obs > np.median(peers), (k + 1) / (len(peers) + 1), f'{obs} shared frames with {sorted(bs)} against median {np.median(peers):.0f} for {len(peers)} signs of the same frequency ({cat}, distinct texts)')
+
+
+def no_jar(s, cat='L'):
+    """faces with s carry the jar 740 less often than faces overall (a title or goods word in place of the possessive)."""
+    rows = faces_all(cat)
+    allm = np.array(['740' in x for x, P, st, g in rows]); sub = np.array(['740' in x for x, P, st, g in rows if s in x])
+    return share_less(allm, sub, f'faces with the jar ({cat})') if len(sub) >= 3 else None
+
+
+def prev_count(s, cat='Mu'): return adjacent(s, set(VAL), 'prev', cat)
+def next_count(s, cat='Mu'): return adjacent(s, set(VAL), 'next', cat)

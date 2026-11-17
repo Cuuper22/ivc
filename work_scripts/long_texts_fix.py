@@ -96,7 +96,7 @@ for l in LL:
     for i, a in enumerate(l[:-2]):
         if a in HEAD and l[i + 1] == '060': afterhead[a][l[i + 2]] += 1
 for h, cc in afterhead.items(): print(f'   {h} 060 -> next:', cc.most_common(6), 'n', sum(cc.values()))
-# ---------- D. 435 against staff signs: neighbour-profile cosine
+# ---------- D. 435 against staff signs: neighbour-context cosine
 def vec(s):
     v = collections.Counter()
     for l in LL:
