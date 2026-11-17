@@ -1,0 +1,182 @@
+
+ward variants 920-060-*: carriers per member {'920-060-741': 38, '920-060-742': 9, '920-060-745': 3}
+  by city: chi2 4.8, shuffle mean 10.2, P 0.8418
+    col_0        Dholavira  Harappa  Kalibangan  Lothal  Mohenjo-daro  other
+    row_0                                                                   
+    920-060-741          2        6           1       2            24      3
+    920-060-742          0        0           0       0             8      1
+    920-060-745          0        1           0       0             2      0
+  by kind: chi2 3.5, shuffle mean 4.1, P 0.4723
+    col_0        mtab  seal  tag
+    row_0                       
+    920-060-741     6    29    3
+    920-060-742     0     9    0
+    920-060-745     0     3    0
+  by bin2: chi2 4.1, shuffle mean 6.2, P 0.7185
+    col_0        early  late  middle  undated
+    row_0                                    
+    920-060-741      5     6      14       13
+    920-060-742      2     3       2        2
+    920-060-745      1     1       1        0
+  by animal3: chi2 3.4, shuffle mean 4.2, P 0.5029
+    col_0        none  other  unicorn
+    row_0                            
+    920-060-741     5      9       24
+    920-060-742     3      1        5
+    920-060-745     1      0        2
+
+front words *-002: carriers per member {'861-002': 171, '817-002': 150, '820-002': 98}
+  by city: chi2 6.5, shuffle mean 10.1, P 0.7930
+    col_0    Dholavira  Harappa  Kalibangan  Lothal  Mohenjo-daro  other
+    row_0                                                               
+    817-002          7       37           2      14            80     10
+    820-002          3       24           6       5            54      6
+    861-002          9       38           7      13            94     10
+  by kind: chi2 14.6, shuffle mean 12.0, P 0.2418
+    col_0    mtab  other  pot  rod  seal  tag  tool
+    row_0                                          
+    817-002    15      0    2    0   118   14     1
+    820-002    12      0    1    0    78    7     0
+    861-002    23      2    7    3   124   12     0
+  by bin2: chi2 9.5, shuffle mean 6.0, P 0.1548
+    col_0    early  late  middle  undated
+    row_0                                
+    817-002     16    39      46       49
+    820-002     12    16      45       25
+    861-002     17    43      53       58
+  by animal3: chi2 8.0, shuffle mean 3.9, P 0.0848
+    col_0    none  other  unicorn
+    row_0                        
+    817-002    31     36       83
+    820-002    32     15       51
+    861-002    55     29       87
+
+after-jar titles 740-*: carriers per member {'740-400': 245, '740-090': 116, '740-679': 9, '740-565': 8}
+  by city: chi2 147.7, shuffle mean 14.9, P 0.0002
+    col_0    Dholavira  Harappa  Kalibangan  Lothal  Mohenjo-daro  other
+    row_0                                                               
+    740-090          3       41           4      15            49      4
+    740-400          1      213           7       0            21      3
+    740-565          0        2           0       0             6      0
+    740-679          0        1           0       0             8      0
+  by kind: chi2 188.7, shuffle mean 12.0, P 0.0002
+    col_0    mtab  pot  rod  seal  tag
+    row_0                             
+    740-090    41    2    1    56   16
+    740-400   219    6    9    11    0
+    740-565     2    0    0     6    0
+    740-679     0    0    0     9    0
+  by bin2: chi2 48.1, shuffle mean 9.0, P 0.0002
+    col_0    early  late  middle  undated
+    row_0                                
+    740-090     14    20      36       46
+    740-400     20    21     136       68
+    740-565      1     0       6        1
+    740-679      0     6       1        2
+  by animal3: chi2 123.6, shuffle mean 6.0, P 0.0002
+    col_0    none  other  unicorn
+    row_0                        
+    740-090    27     43       46
+    740-400   171     68        6
+    740-565     2      3        3
+    740-679     3      0        6
+
+measure variants *-033: carriers per member {'705-033': 102, '706-033': 45}
+  by city: chi2 4.1, shuffle mean 5.0, P 0.5653
+    col_0    Dholavira  Harappa  Kalibangan  Lothal  Mohenjo-daro  other
+    row_0                                                               
+    705-033          2       22           1       2            71      4
+    706-033          2       12           0       0            31      0
+  by kind: chi2 11.4, shuffle mean 5.0, P 0.0266
+    col_0    ctab  mtab  other  pot  seal  tag
+    row_0                                     
+    705-033    20    17      1    1    60    3
+    706-033    11     0      0    0    34    0
+  by bin2: chi2 3.0, shuffle mean 3.0, P 0.3993
+    col_0    early  late  middle  undated
+    row_0                                
+    705-033     14    21      28       39
+    706-033      2    11      12       20
+  by animal3: chi2 1.7, shuffle mean 2.0, P 0.4393
+    col_0    none  other  unicorn
+    row_0                        
+    705-033    41     24       37
+    706-033    13     13       19
+
+tree signs 590-*-740: carriers per member {'590-390-740': 52, '590-405-740': 25, '590-407-740': 17}
+  by city: chi2 7.3, shuffle mean 8.1, P 0.5081
+    col_0        Dholavira  Harappa  Lothal  Mohenjo-daro  other
+    row_0                                                       
+    590-390-740          3       23       1            21      4
+    590-405-740          0       16       0             8      1
+    590-407-740          0       11       1             4      1
+  by kind: chi2 11.5, shuffle mean 8.1, P 0.1582
+    col_0        ctab  mtab  pot  seal  tag
+    row_0                                  
+    590-390-740     0    17    1    32    2
+    590-405-740     1    11    0    13    0
+    590-407-740     1    11    0     4    1
+  by bin2: chi2 5.0, shuffle mean 6.1, P 0.5677
+    col_0        early  late  middle  undated
+    row_0                                    
+    590-390-740      8     8      18       18
+    590-405-740      1     5       8       11
+    590-407-740      1     4       8        4
+  by animal3: chi2 42.8, shuffle mean 4.1, P 0.0002
+    col_0        none  other  unicorn
+    row_0                            
+    590-390-740    14     11       27
+    590-405-740    19      0        6
+    590-407-740     5     12        0
+
+A-comb counts *-806: carriers per member {'467-806': 8, '468-806': 10, '472-806': 5}
+  by city: chi2 4.8, shuffle mean 4.2, P 0.2995
+    col_0    Dholavira  Harappa  Mohenjo-daro
+    row_0                                    
+    467-806          0        4             4
+    468-806          0        7             3
+    472-806          1        3             1
+  by kind: chi2 8.1, shuffle mean 6.3, P 0.2052
+    col_0    mtab  rod  seal  tag
+    row_0                        
+    467-806     3    1     4    0
+    468-806     0    0     9    1
+    472-806     2    0     3    0
+  by bin2: chi2 13.3, shuffle mean 6.3, P 0.0244
+    col_0    early  late  middle  undated
+    row_0                                
+    467-806      0     3       5        0
+    468-806      0     5       2        3
+    472-806      1     1       0        3
+  by animal3: chi2 5.3, shuffle mean 4.2, P 0.2440
+    col_0    none  other  unicorn
+    row_0                        
+    467-806     5      2        1
+    468-806     8      0        2
+    472-806     5      0        0
+
+star numbers *-220: carriers per member {'032-220': 67, '003-220': 19, '016-220': 15}
+  by city: chi2 11.5, shuffle mean 10.0, P 0.2977
+    col_0    Dholavira  Harappa  Kalibangan  Lothal  Mohenjo-daro  other
+    row_0                                                               
+    003-220          0        5           2       0            11      1
+    016-220          0        7           0       0             6      2
+    032-220          2       15           1       3            41      5
+  by kind: chi2 12.3, shuffle mean 10.1, P 0.2829
+    col_0    ctab  mtab  pot  seal  tag  tool
+    row_0                                    
+    003-220     1     3    1    14    0     0
+    016-220     0     3    1    10    0     1
+    032-220     3     3    3    57    1     0
+  by bin2: chi2 5.4, shuffle mean 6.0, P 0.4935
+    col_0    early  late  middle  undated
+    row_0                                
+    003-220      2     2       9        6
+    016-220      1     3       6        5
+    032-220      4    21      18       24
+  by animal3: chi2 1.7, shuffle mean 4.0, P 0.7964
+    col_0    none  other  unicorn
+    row_0                        
+    003-220     7      3        9
+    016-220     6      2        7
+    032-220    21      6       40

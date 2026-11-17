@@ -1,0 +1,66 @@
+distinct first-catalogue texts 3499
+windows {2: 9267, 3: 6169, 4: 3872} sign tokens 12994
+passing (1)-(3): 136 {2: 99, 3: 36, 4: 1}
+shuffle 700 {'seed': 700, 'passing': 0, 'pairs': 0, 'triples': 0, 'fours': 0, 'max_count': 0}
+shuffle 701 {'seed': 701, 'passing': 1, 'pairs': 1, 'triples': 0, 'fours': 0, 'max_count': 9}
+shuffle 702 {'seed': 702, 'passing': 0, 'pairs': 0, 'triples': 0, 'fours': 0, 'max_count': 0}
+shuffle 703 {'seed': 703, 'passing': 0, 'pairs': 0, 'triples': 0, 'fours': 0, 'max_count': 0}
+shuffle 704 {'seed': 704, 'passing': 0, 'pairs': 0, 'triples': 0, 'fours': 0, 'max_count': 0}
+shuffle 705 {'seed': 705, 'passing': 1, 'pairs': 1, 'triples': 0, 'fours': 0, 'max_count': 9}
+shuffle 706 {'seed': 706, 'passing': 0, 'pairs': 0, 'triples': 0, 'fours': 0, 'max_count': 0}
+shuffle 707 {'seed': 707, 'passing': 2, 'pairs': 2, 'triples': 0, 'fours': 0, 'max_count': 9}
+shuffle 708 {'seed': 708, 'passing': 0, 'pairs': 0, 'triples': 0, 'fours': 0, 'max_count': 0}
+shuffle 709 {'seed': 709, 'passing': 0, 'pairs': 0, 'triples': 0, 'fours': 0, 'max_count': 0}
+shuffle 710 {'seed': 710, 'passing': 1, 'pairs': 1, 'triples': 0, 'fours': 0, 'max_count': 9}
+shuffle 711 {'seed': 711, 'passing': 0, 'pairs': 0, 'triples': 0, 'fours': 0, 'max_count': 0}
+shuffle 712 {'seed': 712, 'passing': 0, 'pairs': 0, 'triples': 0, 'fours': 0, 'max_count': 0}
+shuffle 713 {'seed': 713, 'passing': 0, 'pairs': 0, 'triples': 0, 'fours': 0, 'max_count': 0}
+shuffle 714 {'seed': 714, 'passing': 0, 'pairs': 0, 'triples': 0, 'fours': 0, 'max_count': 0}
+shuffle 715 {'seed': 715, 'passing': 0, 'pairs': 0, 'triples': 0, 'fours': 0, 'max_count': 0}
+shuffle 716 {'seed': 716, 'passing': 1, 'pairs': 1, 'triples': 0, 'fours': 0, 'max_count': 9}
+shuffle 717 {'seed': 717, 'passing': 0, 'pairs': 0, 'triples': 0, 'fours': 0, 'max_count': 0}
+shuffle 718 {'seed': 718, 'passing': 1, 'pairs': 1, 'triples': 0, 'fours': 0, 'max_count': 10}
+shuffle 719 {'seed': 719, 'passing': 2, 'pairs': 2, 'triples': 0, 'fours': 0, 'max_count': 10}
+shuffle mean passing 0.45 max 2
+distinct new texts 889
+TOTAL passing 136  by length {2: 99, 3: 36, 4: 1}
+new-text status {'confirmed': 79, 'untestable': 37, 'not confirmed': 20}  by length:
+new_status  confirmed  not confirmed  untestable
+length                                          
+2                  56             17          26
+3                  22              3          11
+4                   1              0           0
+groups (all) {'name': 42, 'front': 39, 'ending': 28, 'count line': 27}  groups (non-nested) {'name': 40, 'front': 37, 'ending': 28, 'count line': 24}
+nested 7 non-nested 129
+testable 99 confirmed share 0.798
+         phrase  n_texts  in_order     lift  new_n     new_status       group    nested_in
+0       861-002      145     0.993     17.6     49      confirmed       front             
+1       817-002      123     1.000     18.1      0     untestable       front             
+2       740-400      114     0.905      5.6     19      confirmed      ending             
+3       760-740       95     0.990     12.5     23      confirmed      ending             
+4       820-002       90     0.989     10.7     18      confirmed       front             
+5       100-740       84     1.000     10.8     18      confirmed      ending             
+6       740-090       84     0.977      8.3     16      confirmed      ending             
+7       705-033       77     1.000     35.3     26      confirmed  count line             
+8       176-740       65     1.000      7.5     11  not confirmed      ending             
+9       032-220       64     0.928      9.4     13      confirmed        name             
+10      920-060       63     0.984     41.7     14      confirmed       front             
+11      590-390       58     0.967     27.7      8      confirmed        name             
+12      415-220       52     1.000     21.1     15      confirmed        name             
+13      033-520       48     1.000     16.4      6      confirmed  count line             
+14      220-520       43     0.977      9.9      8      confirmed      ending             
+15      255-435       42     1.000    137.8     12      confirmed        name             
+16  590-390-740       39     1.000    282.4      5      confirmed        name             
+17      690-740       39     1.000      7.6      7      confirmed      ending             
+18      002-235       39     1.000      5.1     13      confirmed       front             
+19  920-060-741       36     1.000   2336.9      7      confirmed       front             
+20      692-060       36     1.000     48.0      8      confirmed       front             
+21      415-100       36     1.000     47.7      7      confirmed        name             
+22      060-741       36     1.000     15.9      7      confirmed       front  920-060-741
+23      706-033       35     1.000     33.8      0     untestable  count line             
+24      002-803       32     0.970      6.9      2  not confirmed       front             
+25      435-690       30     0.968    136.1      7      confirmed        name  435-690-740
+26  705-033-520       29     1.000   1175.9      6      confirmed  count line             
+27      923-740       29     1.000     11.7      2      confirmed      ending             
+28  255-435-690       27     1.000  23679.4      6      confirmed        name             
+29  435-690-740       27     1.000   1859.7      3      confirmed        name             

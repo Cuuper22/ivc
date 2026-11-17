@@ -1,0 +1,24 @@
+minor phrases (4-7 texts, order>=90%, lift>=5, not inside a main phrase): 277 {2: 122, 3: 130, 4: 25}
+control A: minor phrases passing in shuffled corpora: mean 13.05 max 18
+tested (5+ carriers with a building): 74  P<=0.05: 1 (chance 3.7 ) P<=0.01: 0 (chance 0.7 )
+pooled count line: phrases 23, shared 0, expected 1.3, Z -1.15, P 0.8739
+pooled ending: phrases 6, shared 1, expected 0.3, Z 1.43, P 0.0758
+pooled front: phrases 13, shared 2, expected 0.9, Z 1.11, P 0.1344
+pooled name: phrases 32, shared 2, expected 3.2, Z -0.67, P 0.7496
+pooled ALL: phrases 74, shared 5, expected 5.6, Z -0.28, P 0.6085
+         phrase      group  n_texts  n_objects  n_after_copies  n_bld_known  shared  null_mean        P  cities                                                                                                                buildings
+        048-740     ending        5         17              17            6       1      0.037 0.037962       3                                                     DKG. (S)|12I; DKG. (S)|7I; D|S30/1; FGranery|J9/24; FTrench I|M12/11
+861-002-032-220      front        7          7               7            5       1      0.075 0.074925       3                                                                     DKG. (N)|16II; DKG. (S)|1I; DKG. (S)|9VII; HRB|5XXIX
+    176-740-400       name        7         46              35           19       2      0.829 0.190809       2 DKG. (S)|7V; FTrench III|N9/10; FTrench IV+V|I13/21; FTrench IV+V|K12/10; FTrench I|M/11/18; FTrench I|M10/15; FTrench I
+    002-003-390      front        7         14              14           11       1      0.278 0.244755       5 DKB|4IX; DKB|5 5; DKG. (S)|11III; DKG. (S)|7II; DKG. (S)|8III; DKG. (S)|9VII; DKG. (S)|Long Lane10A/11; DKG|First Street
+        892-400     ending        5          8               8            5       0      0.045 1.000000       3                                   DKG. (N)|18; FTrench III|N9/3; FTrench IV+V|I11/15; FTrench I|M11/17; FTrench I|M12/18
+        605-760       name        4          9               7            5       0      0.022 1.000000       3                                      DKG. (N)|19; DKG|First Street; FTrench I|M11/11; FTrench I|M11/13; FTrench I|M11/25
+        156-400     ending        4         14              14            6       0      0.055 1.000000       1             FTrench IV+V|I13/11; FTrench I|M11/18; FTrench I|M11/6; FTrench VI|O9/19; FTrench VI|P10/5; FTrench VI|P11/5
+        233-706       name        5          5               5            5       0      0.038 1.000000       2                                                      Castle|XE 22; DKG. (S)|10III; DKG. (S)|4; DKG. (S)|6III; VSA|4XXVII
+        140-100       name        5          7               7            6       0      0.023 1.000000       3                                          AB|P24/16; AB|P24/8; DKB|4XIV; DKG. (S)|Loop Lane; HRB|8LIX; SDStupa|StupaCourt
+        575-335       name        7         21              21            5       0      0.053 1.000000       1                                                 D|Q31/13; D|S30/1; FGranery|J9/24; FTrench IV+V|I14/22; FTrench I|M12/11
+        097-151     ending        7         10              10            7       0      0.057 1.000000       2        DKG. (N)|18; DKG. (S)|10IV; DKG. (S)|Long Lane betw. 10A/12; FGranery|I9/19; FTrench III|N9/7; VSA|1I; VSA|4XXVII
+        171-032 count line        5          7               7            5       0      0.031 1.000000       2                                       DKG. (S)|1I; DKG. (S)|6I; FTrench IV+V|I13/17; FTrench I|M11/20; FTrench VI|O10/22
+        840-760       name        6          8               8            5       0      0.049 1.000000       2                                            DKG. (S)|12I; DKG. (S)|9VIII; DKG. (S)|Long Lane; DKG. (S)|Low Lane; F|Q28/11
+        463-798       name        7          9               9            7       0      0.037 1.000000       2                             DKG. (S)|7II; D|S30/1; D|S30/6; FTrench IV+V|I13/12; FTrench VI|O10/16; HRA|3VII; HRB|4XVIII
+        255-436       name        4         15              13            8       0      0.175 1.000000       2 D|S30/9; FGranery|I8/22; FGranery|J9/19; FGranery|J9/24; FGranery|J9/25; FGranery|K8/5; FTrench I|M11/11; FTrench I|M12/

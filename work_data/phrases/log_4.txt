@@ -1,0 +1,76 @@
+sites 76 large: {'Harappa': 1921, 'Mohenjo-daro': 1795, 'Dholavira': 230, 'Kalibangan': 197, 'Lothal': 182}
+base rates: abroad objects 0.0088  Gaur among seals 0.0447
+
+T1 one-city phrases (8+ carriers): 1
+  032-740-400    city Harappa        objects  19 city is small: False; random same-kind draw all in one city 0.0843, all in small sites 0.0003
+
+phrases with 90%+ in one city (8+ carriers, 2+ cities): 1      phrase      top_city  top_share                      cities
+86  845-407  Mohenjo-daro   0.923077  Mohenjo-daro 24; Harappa 2
+
+phrases whose carriers are mostly (50%+) at small sites (8+ carriers): 0 Empty DataFrame
+Columns: [phrase, n_objects, small_city_objects, cities]
+Index: []
+
+T2 many-city phrases (5+ cities): 39 of 136  in top 100: 36
+  pooled many-city: Gaur seals 57 of 1378 seal-carriers (within-site expectation 57.7), P 0.6123
+  pooled fewer than 5 cities: Gaur seals 43 of 1030 seal-carriers (within-site expectation 41.5), P 0.4073
+  one by one (many-city), Gaur seals / seals, expected, P:
+    861-002        5/124  expected 5.12  P 0.5912  cities 11  abroad 0
+    817-002        4/118  expected 4.72  P 0.7036  cities 9  abroad 0
+    740-400        1/11  expected 0.39  P 0.3268  cities 7  abroad 0
+    760-740        4/79  expected 3.10  P 0.3683  cities 10  abroad 1
+    820-002        2/78  expected 3.23  P 0.8441  cities 9  abroad 0
+    100-740        5/61  expected 2.57  P 0.1154  cities 8  abroad 0
+    740-090        2/56  expected 2.17  P 0.6417  cities 8  abroad 0
+    705-033        2/60  expected 2.52  P 0.7241  cities 7  abroad 0
+    176-740        3/44  expected 1.75  P 0.2624  cities 8  abroad 0
+    032-220        1/57  expected 2.26  P 0.9030  cities 8  abroad 0
+    920-060        1/54  expected 2.38  P 0.9105  cities 8  abroad 0
+    590-390        1/45  expected 1.61  P 0.8151  cities 8  abroad 2
+    415-220        1/44  expected 1.80  P 0.8326  cities 6  abroad 0
+    033-520        3/46  expected 1.82  P 0.2729  cities 6  abroad 0
+    220-520        5/39  expected 1.70  P 0.0190  cities 7  abroad 0
+    255-435        2/28  expected 1.19  P 0.3388  cities 5  abroad 0
+    590-390-740    0/32  expected 1.07  P 1.0000  cities 8  abroad 2
+    690-740        1/25  expected 1.06  P 0.6677  cities 5  abroad 0
+    002-235        1/36  expected 1.41  P 0.7736  cities 7  abroad 1
+    920-060-741    1/29  expected 1.22  P 0.7246  cities 7  abroad 0
+    692-060        1/29  expected 1.13  P 0.6937  cities 5  abroad 0
+    060-741        1/29  expected 1.26  P 0.7271  cities 7  abroad 0
+    002-803        1/29  expected 1.26  P 0.7271  cities 6  abroad 0
+    705-033-520    2/29  expected 1.26  P 0.3613  cities 5  abroad 0
+    585-740        0/19  expected 0.77  P 1.0000  cities 5  abroad 0
+    840-032-740    1/17  expected 0.63  P 0.4718  cities 5  abroad 0
+    004-390        0/17  expected 0.63  P 1.0000  cities 8  abroad 1
+    233-520        0/16  expected 0.64  P 1.0000  cities 6  abroad 0
+    002-004        1/15  expected 1.55  P 1.0000  cities 6  abroad 2
+    384-740        1/11  expected 0.49  P 0.3893  cities 5  abroad 0
+    220-740-090    0/13  expected 0.46  P 1.0000  cities 5  abroad 0
+    003-390        1/23  expected 0.93  P 0.6222  cities 8  abroad 0
+    100-740-090    0/8  expected 0.30  P 1.0000  cities 5  abroad 0
+    002-016        1/12  expected 0.50  P 0.4058  cities 6  abroad 0
+    455-220        2/10  expected 1.38  P 0.3258  cities 5  abroad 1
+    013-840        0/9  expected 0.28  P 1.0000  cities 5  abroad 0
+    480-001        0/3  expected 0.09  P 1.0000  cities 5  abroad 0
+    002-004-390    0/9  expected 0.36  P 1.0000  cities 5  abroad 1
+    016-390        0/14  expected 0.53  P 1.0000  cities 5  abroad 0
+
+T3 abroad objects by phrase (binomial vs base rate of the whole catalogue):
+        phrase  n_objects  abroad  expected         P       group
+5      002-004         22       2      0.19  0.015865       front
+2  590-390-740         52       2      0.46  0.076707        name
+7      455-220         11       1      0.10  0.092501        name
+8  002-004-390         11       1      0.10  0.092501       front
+1      590-390         70       2      0.61  0.126281        name
+6      003-220         19       1      0.17  0.154354  count line
+4      004-390         23       1      0.20  0.183681  count line
+3      002-235         39       1      0.34  0.291165       front
+0      760-740        118       1      1.04  0.646976      ending
+total abroad objects in catalogue 41  abroad carriers of any listed phrase: 6
+phrase    9
+obj       6
+
+T4 Spearman(cities, Gaur share) over 96 phrases: rho 0.250; shuffled (Gaur counts mixed within carrier-count band) mean 0.148, P(rho >= obs) 0.0824
+
+City-count table over all 136: {1: 1, 2: 24, 3: 44, 4: 28, 5: 14, 6: 6, 7: 6, 8: 9, 9: 2, 10: 1, 11: 1}
+top 100 city-count table: {1: 1, 2: 10, 3: 31, 4: 22, 5: 12, 6: 6, 7: 5, 8: 9, 9: 2, 10: 1, 11: 1}

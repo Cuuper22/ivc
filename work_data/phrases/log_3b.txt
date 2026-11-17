@@ -1,0 +1,40 @@
+     group    level        version  phrases  observed  expected     Z       P
+count line building            raw       18         9       9.8 -0.28 0.61115
+count line building copies removed       18         6       9.6 -1.23 0.89108
+count line    block            raw       18        26      32.2 -1.27 0.89784
+count line    block copies removed       18        23      32.0 -1.85 0.96809
+    ending building            raw       22        67      45.5  3.73 0.00010
+    ending building copies removed       22        37      39.2 -0.39 0.65304
+    ending    block            raw       22       182     170.1  1.59 0.05554
+    ending    block copies removed       22       152     148.3  0.49 0.31104
+     front building            raw       30        45      45.4 -0.06 0.52463
+     front building copies removed       30        45      45.4 -0.07 0.52709
+     front    block            raw       30       105     118.8 -1.72 0.95751
+     front    block copies removed       30       105     118.7 -1.73 0.95843
+      name building            raw       30        25      17.3  1.93 0.02697
+      name building copies removed       30        20      16.9  0.80 0.21297
+      name    block            raw       30        72      70.5  0.22 0.41198
+      name    block copies removed       30        67      69.0 -0.29 0.61464
+       ALL building            raw      100       146     118.0  2.91 0.00183
+       ALL building copies removed      100       108     111.1 -0.33 0.62768
+       ALL    block            raw      100       385     391.5 -0.47 0.68228
+       ALL    block copies removed      100       347     368.0 -1.53 0.93735
+house (min building/block): phrases 100; P<=0.05 9 (chance 5.0); P<=0.005 4 (chance 0.50)
+city: phrases 100; P<=0.05 23 (chance 5.0); P<=0.005 6 (chance 0.50)
+goods: phrases 100; P<=0.05 11 (chance 5.0); P<=0.005 6 (chance 0.50)
+PLACE_P (P_city <= 0.005):      phrase      group     top_city  top_city_share  null_city_share   P_city  n_obj
+    705-033 count line Mohenjo-daro           0.696         0.568240 0.001000    102
+    690-740     ending Mohenjo-daro           0.610         0.478686 0.001000     59
+    415-100       name Mohenjo-daro           0.683         0.454317 0.001000     41
+    923-740     ending Mohenjo-daro           0.897         0.706667 0.003498     39
+415-100-740       name Mohenjo-daro           0.774         0.463565 0.000500     31
+    142-617       name Mohenjo-daro           0.897         0.717293 0.003498     29
+GOODS_P (P_goods <= 0.005):      phrase      group  nonseal_share  null_nonseal_share  P_goods  n_obj     top_city
+    740-400     ending          0.955            0.731010 0.000500    245      Harappa
+    176-740     ending          0.690            0.592919 0.003998    142      Harappa
+    752-740     ending          0.820            0.387520 0.000500     50 Mohenjo-daro
+    142-617       name          0.621            0.304224 0.001999     29 Mohenjo-daro
+235-705-033 count line          0.739            0.390239 0.000500     23 Mohenjo-daro
+    845-407       name          0.731            0.302750 0.000500     26 Mohenjo-daro
+mound tie P_area <= 0.005:  phrase            top_area  top_area_share   P_area  n_area_known
+740-400 FTrench I @ Harappa            0.24 0.001999           192

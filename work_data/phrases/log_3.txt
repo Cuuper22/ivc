@@ -1,0 +1,12 @@
+TOP 100 primary kinds {'OFFICE': 51, 'UNSORTED': 41, 'HOUSE': 3, 'GOODS': 3, 'PLACE': 1, 'GOODS+PLACE': 1}
+flags (top 100): {'HOUSE': 3, 'PLACE': 2, 'GOODS': 6, 'OFFICE': 52}
+random sets kind-matched flag rates on the top-100 phrases: {'HOUSE': np.float64(0.002), 'PLACE': np.float64(0.001), 'GOODS': np.float64(0.054), 'OFFICE': np.float64(0.763)}
+random sets unmatched flag rates on the top-100 phrases: {'HOUSE': np.float64(0.001), 'PLACE': np.float64(0.001), 'GOODS': np.float64(0.0), 'OFFICE': np.float64(0.826)}
+HOUSE_DEDUP flags (top 100): 0 []
+SPREAD_WIDE (fewer shared buildings than chance, power ok): 0 []  phrases with power: 13
+primary     GOODS  GOODS+PLACE  HOUSE  OFFICE  PLACE  UNSORTED
+group                                                         
+count line      1            0      0      11      0         6
+ending          1            0      2       9      1         9
+front           0            0      0      15      0        15
+name            1            1      1      16      0        11
