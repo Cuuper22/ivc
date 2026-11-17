@@ -70,3 +70,12 @@ What we currently act on, the live leads in order, and what each one says we sho
 4. Load tags. `guess` 806 is a crop. Next: every other sign that takes a count before it and a carrier after it is another commodity; list them. Tick counts on the A against the stroke count written before the phrase on seals.
 5. Endings grammar from the sweep: two signs that govern how a text closes (78.7% top-3 on held-back texts against 17.7%), the closing cap `060-920` (64 of 65 at the end), closing versus open signs after the two-stroke opener (22 of 23 against 0 of 12).
 6. The rest of `sweep/LEADS.md`.
+
+## Goods (from `jobs/out/goods.md`)
+- `measured` 27 of 37 goods checks came true. Each class of object has its own signs: tags (500, 417, 056, 890, 048, 055, 892), bangles (two-leaf 840, 7.9 times chance), pots (440, 480), ivory rods (comb 400 ends 29% of rods against 2.7% of seals).
+- `measured` Eye signs 790/832/850 sit on copper objects 4.1 times chance (28 of 147 faces).
+- `measured` Box 590 sits in the Harappa granary area 3.8 times chance; grain ear 413 rides with the cup; comb 400 rides with the cup on 183 of 493 objects.
+- `measured` Pots carry an amount (91 of 122 single-count pots use tall strokes), owner on 9%. Tools carry kind and amount. Bangles carry a kind word and no owner. Rods carry owner house plus comb.
+- `guess` Eye = *kaṇ*, punning *kaṉ* "copper" (DEDR 1402). Sign 055 = dozen, 048 = seven (on the Lothal wooden-box sealings), 892 = "sale".
+- `guess` Sign 838 is *eḷ* sesame or *eḷumpu* bone (DEDR 839): 4 of 42 ivory/bone rods carry it (28 times chance); both stay alive.
+- `measured` Went against: 838 on tags/pots (1 of 19); crop 806 with the cup (0 of 133); fish 220 as a coast sign. No bead, carnelian or cotton sign found yet.

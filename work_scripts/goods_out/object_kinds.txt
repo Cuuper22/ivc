@@ -1,0 +1,46 @@
+
+## impl  faces 23  objects 14  broken 1
+{'thing+count': 12, 'other signs': 5, 'one sign': 3, 'name+jar+count': 1, 'count only': 1, 'name+ending': 1}
+with jar 740: 1  ends in jar: 1  ends in comb 400: 0  has count sign: 15
+mean signs 3.65 median 3.0
+top signs: [('031', 5), ('ALT', 4), ('005', 3), ('632', 3), ('930', 3), ('391', 3), ('595', 3), ('850', 3), ('480', 3), ('001', 3), ('821', 3), ('136', 3), ('900', 2), ('920', 2)]
+sites: {'Mohenjo-daro': 10, 'Kanmer': 5, 'Harappa': 4, 'Chanhu-daro': 2, 'Kalibangan': 2}  material: {'copper': 16, 'terracotta': 5, 'gold': 2}
+
+## bngl  faces 50  objects 35  broken 4
+{'other signs': 21, 'one sign': 18, 'thing+count': 6, 'count only': 4, 'name+jar (owner)': 1}
+with jar 740: 2  ends in jar: 2  ends in comb 400: 0  has count sign: 10
+mean signs 1.98 median 2.0
+top signs: [('840', 9), ('790', 6), ('002', 5), ('140', 3), ('064', 3), ('511', 3), ('130', 3), ('920', 3), ('032', 3), ('405', 3), ('740', 2), ('706', 2), ('630', 2), ('252', 2)]
+sites: {'Mohenjo-daro': 41, 'Harappa': 7, 'Bala-kot': 1, 'Kalibangan': 1}  material: {'stoneware': 40, '-': 5, 'clay': 2, 'steatite': 1}
+
+## rod  faces 42  objects 39  broken 8
+{'thing+count': 9, 'name+jar (owner)': 8, 'other signs': 7, 'count only': 5, 'name+ending': 5, 'one sign': 4, 'name+jar+count': 4}
+with jar 740: 14  ends in jar: 3  ends in comb 400: 12  has count sign: 20
+mean signs 3.6 median 3.0
+top signs: [('740', 14), ('400', 12), ('002', 6), ('240', 5), ('031', 4), ('032', 4), ('838', 4), ('390', 4), ('550', 3), ('861', 3), ('760', 3), ('415', 3), ('540', 2), ('034', 2)]
+sites: {'Mohenjo-daro': 32, 'Harappa': 7, 'Kalibangan': 2, 'Chanhu-daro': 1}  material: {'ivory': 35, 'bone': 4, 'copper': 3}
+
+## pot  faces 635  objects 443  broken 278
+{'one sign': 218, 'count only': 154, 'thing+count': 121, 'other signs': 63, 'name+jar (owner)': 43, 'name+ending': 14, 'name+jar+count': 12, 'lost': 10}
+with jar 740: 102  ends in jar: 83  ends in comb 400: 13  has count sign: 288
+mean signs 2.07 median 2.0
+top signs: [('740', 102), ('032', 67), ('033', 66), ('002', 44), ('031', 40), ('220', 32), ('034', 28), ('003', 25), ('700', 24), ('390', 20), ('400', 18), ('480', 17), ('001', 15), ('004', 14)]
+sites: {'Harappa': 349, 'Kalibangan': 90, 'Mohenjo-daro': 72, 'Nausharo': 21, 'Lothal': 18, 'Kot-Diji': 11}  material: {'clay': 558, '-': 49, 'ceramic': 15, 'terracotta': 7}
+
+## tag  faces 262  objects 127  broken 149
+{'thing+count': 66, 'one sign': 50, 'name+jar+count': 42, 'other signs': 37, 'name+jar (owner)': 22, 'lost': 20, 'count only': 14, 'name+ending': 11}
+with jar 740: 83  ends in jar: 57  ends in comb 400: 1  has count sign: 131
+mean signs 3.67 median 4.0
+top signs: [('740', 83), ('002', 73), ('220', 33), ('032', 31), ('705', 23), ('090', 20), ('817', 18), ('741', 17), ('001', 16), ('055', 15), ('520', 14), ('861', 14), ('820', 13), ('892', 12)]
+sites: {'Lothal': 91, 'Dholavira': 76, 'Kalibangan': 28, 'Mohenjo-daro': 23, 'Harappa': 19, 'Lakhanjo-daro': 5}  material: {'clay': 155, '-': 72, 'terracotta': 29, 'faience': 4}
+
+seals for comparison: with jar 0.397 ends in jar 0.317 has count 0.53 mean signs 4.38
+
+POT single-count pots by series: Counter({'F': 91, 'S': 26, 'T': 5})
+POT whole-text single non-count signs: [('740', 17), ('440', 12), ('700', 7), ('220', 6), ('416', 5), ('515', 5), ('390', 4), ('820', 4), ('540', 4), ('090', 3), ('ALT', 3), ('698', 3), ('892', 3), ('748', 2)]
+POT texts with a name-and-jar: 55 of 635
+POT sites: {'Harappa': 349, 'Kalibangan': 90, 'Mohenjo-daro': 72, 'Nausharo': 21, 'Lothal': 18, 'Kot-Diji': 11, 'Shikarpur': 7, 'Banawali': 6}
+POT type g/s/p: {'POT:T:g': 538, 'POT:T:s': 73, 'POT:T:p': 19, 'POT:M': 3, 'POT:T:S': 1, 'POT:D': 1}
+POT:T:g 538 count-only 147 owner(name+jar) 47 one sign 174
+POT:T:s 73 count-only 6 owner(name+jar) 7 one sign 28
+POT:T:p 19 count-only 0 owner(name+jar) 1 one sign 13
