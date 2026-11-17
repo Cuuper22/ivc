@@ -56,6 +56,9 @@ What we currently act on, the live leads in order, and what each one says we sho
 
 - `measured` Rivals on the same pun test with full dictionaries: Dravidian 7 of 9 (1.02 expected), Munda 0 of 9, Sumerian 1 of 8, Sanskrit at chance. Burushaski and Elamite word lists were too small to run.
 
+- `measured` The box + tree pair is on 71 objects in 21 different Mohenjo-daro houses and is over-represented abroad; the tree sign is on 5 of 14 foreign square seals against 9.8% at home. A one-sign sesame tag at Lothal.
+- `guess` Box + tree is a trade title or a commodity word, tied to timber (Mesopotamian texts list Meluhha woods). The sesame sign reads *eḷ*, the word Akkadian borrowed as *ellu*. The seven-city opening is an office run from Mohenjo-daro.
+
 ## Live leads, in order
 
 1. Name slot. `guess` The slot right before the closing jar holds a house or family name. Next: build the list of pre-jar signs and pre-jar pairs with the houses they belong to; check whether one house keeps one pre-jar sign across depth (a family over generations); check the same slot before the other closing signs.
