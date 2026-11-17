@@ -109,6 +109,9 @@ Odd or nonsense, with the sign I think is to blame:
 
 Pattern: the odd ones are number or measure words standing inside house names (055, 900, 904, 824, 840, 806, 501) and 060 away from an opener. Those are the next signs to look at: they read as goods words, and the parser puts them in the name slot.
 
-## 6. Notes on what the corpus rules do not cover
+## 6. Star-name rule added (from `star_names.md`)
+A number written right before a fish sign inside a name is a spelled word, so the builder (rule 2b in `corpus_build.py`) writes it as one hyphenated word: `003-220-740-090-400` reads "Manager of the Three-Star house; Junior", and a face that is only number + fish reads "Two-Star". On a goods count the same signs stay a count ("Four Star; Cup" for `004-220-700`). Grade totals did not move (2,190 / 1,276 / 2,079 / 134). None of the 40 drawn lines contains number + fish, so the 40-draw tally is unchanged; the lines were re-printed after the rule and are identical.
+
+## 7. Notes on what the corpus rules do not cover
 - Multi-face tablets are read face by face, not as one record.
 - Copies are counted once in the book and as many times as they occur in the csv and in the draw.

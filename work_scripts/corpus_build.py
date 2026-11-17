@@ -12,7 +12,7 @@ HOW THE ENGLISH IS BUILT (rules; the same signs always give the same English)
     Child-of rule: the child-of sign (752/760) after a name sign gives "child of <that sign>"  (335 760 -> "Child of town").
  2b. STAR WORD (star_names.md): a number written right before a fish sign (220 226 231 233 235 236 240 241) INSIDE a name phrase
     (one that ends in a jar or an ending) is a spelled word, not a count: <Number>-<fish>, e.g. 002 220 740 -> "Of the Two-Star house".
-    Outside a name (a goods count) it stays a count: "two stars".
+    A face that is only number + fish is a name too. Outside a name (a goods count) it stays a count: "two stars".
  3. COUNT PHRASE = the count run (digits add up: 003 = three; the A-comb 465-475 = "n") placed BEFORE the thing counted,
     wherever the thing stands in the text:  705 033 -> "three kalam". Plural -s (-y becomes -ies) when the number is above one and the word is a
     plain lower-case noun (not a unit: kalam, dozen).
@@ -139,6 +139,7 @@ def build(x, r):
         elif ro == 'ending': seg.append(('end', eng(x[k]))); k += 1
         elif ro == 'tail': seg.append(('tail', eng(x[k]))); k += 1
         else: k += 1
+    if len(seg) == 1 and seg[0][0] == 'np' and '\x00' in seg[0][1]: seg = [('name', seg[0][1].split('\x00')[1])]   # rule 2b: a face that is only a star word
     # rule 6: merge runs of name / np pieces that sit right before a jar or an ending
     mg = []; i = 0
     while i < len(seg):

@@ -163,4 +163,11 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `measured` No match yet in cuneiform: no Meluhha-tagged cloth word in 202 CDLI Meluhha texts; no cotton word in Sumerian; no object with both scripts; loan candidates weak (word-shape test 196 against 139 by shuffle, P 0.07). The Meluhha village at Guabba sits in the weaving district (Vermaak 2008); Ur-Lamma "son of Meluhha" is in a Girsu wool text.
 - Next way in: a Guabba or Girsu wool tablet carrying a non-cuneiform seal impression; the Ashmolean photo (Tosi counts six signs, the catalogue five). Not reached: ePSD2 and ORACC (blocked from the workspace), Parpola-Parpola-Brunswig 1977 (JSTOR), Laursen and Steinkeller 2017.
 
+## Clashes and the English corpus (from `jobs/out/corpus_english.md`)
+- `measured` 527 (with 525, 526): last sign of the text 52 of 63 against 29%; jar on the same face 7 of 63 against 33%; a count beside it 3 of 63; on new texts last sign 7 of 9 against 28%. `guess` 527 = *kāval* "guard" (DEDR 1416); "door" set aside.
+- `measured` 335: a jar or "child of" follows in 16 of 26 distinct texts against 9.7% (new texts 4 of 6); never counted with tall strokes (0 of 26). `guess` 335 = *ūr* "town"; "bin" kept as second word for the one Harappa grain formula.
+- `measured` `work_data/values_master.csv`: 149 signs (116 strict incl. number signs, 18 wide, 11 testing, 4 paused). `CORPUS.md` + `work_data/corpus_english.csv`: all 5,679 faces read by rule: whole 2,190, part 1,276, damaged 2,079, none 134. (Whole is above the fourth-pass 1,861 because it counts 264 one-sign faces and 65 faces opened by the eight-signs values.)
+- `measured` Seeded draw of 40 whole faces read by eye: 25 sense, 13 odd, 2 nonsense. Odd ones are mostly number or measure words inside house names. Signs blamed: 904, 900, 824, 840, 055, 690, 806, 501, 368, keeper counts, 861, and 060 away from an opener.
+- Open: multi-face tablets are read face by face, not as one record; some counts attach to the wrong neighbour.
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.
