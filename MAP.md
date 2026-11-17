@@ -88,4 +88,15 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `guess` Dholavira signboard: *kāl [611] aracu · kāl kaṇ [645] oru · kāl maru-*, "the quarters of King [611], and of the Maru clan". Wheel = *kāl* starts each of three phrases (wheel is text-initial 187 of 244). Lipi records 9 signs; the 10-sign string in print traces to one blog comment.
 - Open: 060, 335, 711, 525, 692, 842, 611, 645 have no sound yet.
 
+## Cotton, sesame, beads (from `jobs/out/beads_cotton.md`)
+- `measured` Tree sign 390 is the whole text of 5 terracotta objects from Karanpura, where harappa.com says the inscribed objects are weavers' spindle whorls (one site). 390 is counted in lots: 86 of 90 counted uses have a count of 3 or more (median for other counted nouns 33%). It is 2.8 times chance on seals abroad, 2.5 at Chanhu-daro, 2.0 in the Mohenjo-daro dyers' quarter; box + 390 is 4.9 times chance in the Harappa granary.
+- `guess` 390 = cotton, *parutti* (DEDR 3976). Then the nine-city pair 590-390 is "chest of cotton", a cotton-bale trading house. This stands beside "Chest-guard"; both stay alive until a test splits them. Signs 405 and 407 are the same tree drawing: next fibre and cloth leads.
+- `measured` Jar-dot 741 stands directly before 838 on 3 of its 19 faces (P 0.0009); a bone rod and an ivory rod carry the identical text, so 838 is not a material label; 838 sits in the name slot.
+- `guess` 838 = sesame *eḷ*, read as a dealer's word ("sesame man"). Bone reading alive for rods only.
+- `measured` Dozen 055 is 10.3 times chance on seals abroad and 5.0 at Lothal plus Chanhu-daro; 048 is 16.7 times chance at Lothal, on the 10 wooden-box sealings.
+- `guess` 048 = a string of seven beads, *kōvai*.
+- Paused after three ways in: a bead noun. Next leads 500 and 741 on Lothal tags.
+- `measured` Went against: 390 on ivory rods (1.0 times chance); whorl check came in at P 0.011 where below 1e-6 was predicted (one site only).
+- Paid/blocked: cloth-impression lists need the Lothal sealing catalogue (Frenez; Joshi and Parpola); no free copy found.
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.
