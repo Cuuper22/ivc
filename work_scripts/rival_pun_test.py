@@ -36,7 +36,7 @@ PICT = {
             fish=r"^(?:an? |the )?(?:big |large |small )?fish\b(?!-)(?! (?:hawk|eagle|net|trap))", seven=r"^(?:the )?(?:numeral )?seven\b",
             comb=r"^(?:an? |the )?(?:[\w-]+ ){0,1}comb\b(?!ing)", spear=r"^(?:an? |the )?(?:[\w-]+ ){0,1}(?:spear|lance|javelin|pike|trident)\b",
             staff=r"^(?:an? |the )?(?:[\w-]+ ){0,1}(?:staff|rod|stick|sceptre|scepter|cane|cudgel)\b",
-            carrier=r"(?:carrying[- ]pole|shoulder[- ]pole|pole (?:for|to|with) carry|carrying[- ]yoke|yoke|palanquin|palkee)", tree=r"^(?:an? |the )?tree\b(?! of| for)"),
+            carrier=r"(?:carrying[- ]pole|shoulder[- ]pole|\bpole\b[^;]{0,70}\bcarr(?:y|ying)|\byoke\b|palanquin|palkee)", tree=r"^(?:an? |the )?tree\b(?! of| for)"),
  'de': dict(jar=r"^(?:ein |der |das |die )?(?:krug|topf|gefäß|gefäss|kanne|wasserkrug)\b", man=r"^(?:ein |der )?(?:mann|mensch|gatte|ehemann)\b", fish=r"^(?:ein |der )?fisch\b",
             seven=r"^(?:die )?(?:zahl )?(?:sieben|7)\b", comb=r"^(?:ein |der )?kamm\b", spear=r"^(?:ein |der |die )?(?:speer|lanze)\b",
             staff=r"^(?:ein |der )?(?:stab|stock|szepter|zepter)\b", carrier=r"(?:tragstange|tragjoch|joch|tragholz)", tree=r"^(?:ein |der )?baum\b")}
@@ -107,7 +107,7 @@ def size_matched(rows, lang, need, L, size, core, draws=30, seed=5):
     for s_ in SLOTS:
         P = re.compile(PICT[lang][s_]); allpic |= {i for i, (_, g, _) in enumerate(rows) if core_ok(lang, s_, g) or (not core and P.search(g))}
     rest = [i for i in range(len(rows)) if i not in allpic]
-    if len(rest) + len(allpic) <= size: return None
+    if len(rest) + len(allpic) <= size or len(allpic) >= size * 0.8: return None
     for _ in range(draws):
         keep = sorted(allpic | set(rnd.sample(rest, size - len(allpic))))
         sm = summarize(analyse([rows[i] for i in keep], lang, need, L, None, core))

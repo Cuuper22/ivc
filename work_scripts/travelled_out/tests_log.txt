@@ -1,0 +1,87 @@
+
+== A. site mix (objects) ==
+site | 590-390 | share | corpus share | expected
+Mohenjo-daro 31 0.437 0.382 27.2
+Harappa 26 0.366 0.409 29.1
+Lothal 4 0.056 0.039 2.8
+Dholavira 4 0.056 0.049 3.5
+Chanhu-daro 2 0.028 0.015 1.1
+Allahdino 1 0.014 0.003 0.2
+Kish 1 0.014 0.000 0.0
+Unknown 1 0.014 0.006 0.4
+Gonur Depe 1 0.014 0.000 0.0
+total variation distance of site mix from corpus: 0.139; random 71-object draws give mean 0.132, 95th pct 0.195; P(draw >= observed) = 0.374
+named sites carrying it: 8; random draws of 71 objects reach 9.3 on average, 13 at the 95th percentile
+
+== B. abroad, ports, gateways ==
+abroad objects: 2 of 71 against corpus rate 41/4694 = 0.0087; binomial P(>= 2) = 0.128
+square seals abroad: 14; with 590-390: 2  (Kish 1971.1, Gonur 4155.1)
+590-390 rate on all square seals: 0.0253; chance of >= 2 of 14 abroad = 0.0478
+Altyn Depe text: ['415-390']
+coast+Kutch gateways (Lothal, Dholavira, Allahdino, Balakot, Gola Dhoro): 9 of 71 = 0.127 against corpus 0.093; binomial P(>= 9) = 0.213
+Mohenjo-daro + Harappa: 57 of 71 = 0.803 against corpus 0.792
+
+== C. object type ==
+group | 590-390 | share | corpus share
+seal 46 0.648 0.477
+tablet 19 0.268 0.263
+tag 5 0.070 0.045
+pot 1 0.014 0.134
+tags: 5 of 71; binomial P(>= 5) = 0.220
+Lothal: 4 of 182 objects carry it, all tags: 4; Lothal tags are 0.396 of Lothal objects; P(all 4 are tags) = 0.0245
+sign right before 590-390 (faces): [(None, 13), ('002', 9), ('741', 7), ('032', 7), ('235', 6), ('033', 5), ('240', 4), ('233', 4), ('220', 4), ('060', 2), ('231', 2), ('125', 2), ('070', 2), ('000', 2)]
+faces with a count stroke right before it: 22 of 73 (tall strokes 13); tall strokes are 7 two-strokes
+590 not followed by 390: 155 faces; tall-stroke count right before it: 20 (0.129) against 0.178 for 590-390
+Lothal tags with 590-390:  cisi  reading_order_text
+L-139 880-002-032-590-390
+L-196 000-002-032-590-390
+L-198         000-000-055
+L-202     220-590-390-000
+tall-stroke count before 590-390 by group: {'pot': (np.int64(0), 1), 'seal': (np.int64(5), 47), 'tablet': (np.int64(5), 20), 'tag': (np.int64(3), 5)}
+
+== D. one house, one era? ==
+Mohenjo-daro seals with a house recorded: 1024; with 590-390: 22 in 21 distinct houses
+same-house pairs: 1 observed against 1.84 for random draws of the same size (P(draw >= obs) = 0.832)
+houses: ['DKG. (S)|11III', 'HRA|2V', 'DKG. (S)|2I', 'HRB|7LV', 'DKG. (S)|7VIII', 'DKG. (S)|10II', 'DKC|8-', 'DKG. (S)|Fore Lane1(V)/10', 'DKC|10-', 'DKB|2IV', 'DKG. (S)|7IX', 'DKG. (S)|1III', 'DKG. (S)|7I', 'DKG. (S)|10IV', 'DKG. (S)|Crooked Lane-', 'DKG. (N)|18-', 'HRB|8LXIV', 'DKG. (N)|18-', 'DKG|Central Street-', 'DKE|Trench E-', 'VS-|5XXIX', 'HRB|3XIV']
+Mohenjo-daro 590-390 areas: {'DKG. (S)': 10, 'HRB': 3, 'DKC': 2, 'DKG. (N)': 2, 'HRA': 1, 'DKB': 1, 'DKG': 1, 'DKE': 1, 'VS-': 1} | all MD seals with house: {'DKG. (S)': 471, 'DKG. (N)': 112, 'DKC': 88, 'HRB': 71, 'VSA': 63, 'DKE': 49}
+Mohenjo-daro period period 590-390: {'Intermediate': 10, '-': 16, 'Late': 4, 'Early': 1} | corpus: {'-': 1048, 'Intermediate': 385, 'Late': 315, 'Early': 45, 'Late ': 2}
+Harappa period phase 590-390: {'Stratum VI': 1, 'B/C': 2, 'B': 1, 'C': 1, 'Stratum III': 2, 'Stratum II': 5, 'Stratum V': 2, 'Stratum IV': 3, 'Stratum VII': 1, '-': 8} | corpus: {'-': 855, 'B/C': 241, 'Stratum IV': 124, 'C': 123, 'Stratum III': 106, 'B': 105, 'Stratum II': 103, 'Stratum VI': 97}
+Mohenjo-daro dated (Early/Intermediate/Late) corpus: {'Intermediate': 385, 'Late': 315, 'Early': 45} | 590-390: {'Intermediate': 10, 'Late': 4, 'Early': 1}
+Mohenjo-daro depth ft (abs) 590-390: n 25 range 2.0 21.1 median 10.0 | corpus n 1300 median 7.3 range of middle 90% 2.0 19.609999999999992
+Harappa depth ft (abs) 590-390: n 14 range 2.58 24.0 median 7.5 | corpus n 702 median 8.0 range of middle 90% 2.0040000000000004 16.892499999999988
+
+== E. how varied is the company it keeps, against other recurring pairs? ==
+pairs with >= 15 objects and no jar / count / lost sign: 59
+   pair  objects  sites    tv  beforeDistinctPerFace  afterDistinctPerFace  topBefore   tag  abroad  mdshare  hshare
+415-220       90      6 0.185                  0.154                 0.297      0.385 0.011       0    0.478   0.478
+590-390       71      9 0.139                  0.247                 0.151      0.178 0.070       2    0.437   0.366
+220-520       65      7 0.149                  0.273                 0.076      0.424 0.031       0    0.492   0.431
+920-060       65      9 0.362                  0.031                 0.231      0.985 0.062       0    0.615   0.138
+255-435       61      5 0.173                  0.295                 0.197      0.443 0.016       0    0.508   0.443
+240-520       46      3 0.365                  0.217                 0.043      0.630 0.000       0    0.217   0.761
+235-240       45      4 0.358                  0.244                 0.467      0.333 0.000       0    0.711   0.222
+415-100       42      5 0.346                  0.372                 0.140      0.302 0.048       0    0.667   0.262
+692-060       42      5 0.179                  0.071                 0.571      0.929 0.000       0    0.452   0.476
+060-741       38      7 0.328                  0.026                 0.711      1.000 0.079       0    0.632   0.158
+435-690       38      4 0.352                  0.105                 0.105      0.895 0.026       0    0.711   0.237
+503-615       37      2 0.564                  0.054                 0.162      0.973 0.000       0    0.946   0.054
+142-617       29      3 0.514                  0.276                 0.069      0.310 0.000       0    0.897   0.069
+615-752       29      1 0.618                  0.034                 0.034      1.000 0.000       0    1.000   0.000
+501-405       29      1 0.591                  0.034                 0.034      1.000 0.000       0    0.000   1.000
+550-060       28      4 0.189                  0.107                 0.750      0.929 0.000       0    0.571   0.357
+590-405       28      3 0.205                  0.321                 0.143      0.393 0.000       0    0.393   0.571
+845-407       26      2 0.541                  0.269                 0.192      0.538 0.000       0    0.923   0.077
+550-527       26      3 0.387                  0.462                 0.077      0.192 0.038       0    0.654   0.192
+061-407       25      2 0.578                  0.160                 0.080      0.840 0.000       0    0.960   0.040
+240-233       24      6 0.212                  0.542                 0.417      0.333 0.000       0    0.292   0.542
+820-060       24      4 0.448                  0.042                 0.833      1.000 0.042       0    0.708   0.125
+235-705       23      4 0.354                  0.292                 0.042      0.708 0.000       0    0.696   0.217
+235-233       23      3 0.400                  0.435                 0.435      0.348 0.000       0    0.783   0.174
+798-415       23      3 0.356                  0.435                 0.217      0.391 0.000       0    0.696   0.261
+objects: 590-390 = 71.000; rank 2 of 59 (1 = highest)
+sites: 590-390 = 9.000; rank 1 of 59 (1 = highest)
+tv: 590-390 = 0.139; rank 58 of 59 (1 = highest)
+beforeDistinctPerFace: 590-390 = 0.247; rank 32 of 59 (1 = highest)
+afterDistinctPerFace: 590-390 = 0.151; rank 36 of 59 (1 = highest)
+tag: 590-390 = 0.070; rank 4 of 59 (1 = highest)
+abroad: 590-390 = 2.000; rank 1 of 59 (1 = highest)

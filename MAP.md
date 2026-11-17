@@ -52,6 +52,8 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `measured` The masters in "X's man" are fish-named (18 of 50 against 7 of 602 for owners). Goods tags are stamped by agents three times as often as seals are agents' (20% against 7%). One three-sign prefix stamps 38 objects in 7 cities; one name is on 71 objects in 9 cities, two of them abroad.
 - `guess` The fish (star) houses are the great houses: they keep agents, and agents do the sealing of goods. The seven-city prefix is an office of the whole civilisation; the nine-city name is a trading house with a branch in Mesopotamia and one in Central Asia.
 
+- `measured` Rivals on the same pun test with full dictionaries: Dravidian 7 of 9 (1.02 expected), Munda 0 of 9, Sumerian 1 of 8, Sanskrit at chance. Burushaski and Elamite word lists were too small to run.
+
 ## Live leads, in order
 
 1. Name slot. `guess` The slot right before the closing jar holds a house or family name. Next: build the list of pre-jar signs and pre-jar pairs with the houses they belong to; check whether one house keeps one pre-jar sign across depth (a family over generations); check the same slot before the other closing signs.
