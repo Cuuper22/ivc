@@ -1,0 +1,21 @@
+060 uses 217 in 215 objects
+left class  : {'HEAD': 159, 'OTHER': 45, 'END': 4, 'NUM': 4, 'LOST': 3, 'FISH': 2}
+right class : {'OTHER': 71, 'WARD': 49, 'FISH': 40, 'NUM': 36, 'LOST': 9, 'END': 6, 'JAR': 3, 'HEAD': 3}
+a. share of all signs that are HEAD signs 0.033; share of 060-left that are HEAD 0.733 (x22.5)
+b. both sides classed: 99; same class on both sides 3 (0.03)
+   left->right class table: {'HEAD>OTHER': 51, 'HEAD>WARD': 48, 'HEAD>FISH': 29, 'OTHER>NUM': 17, 'HEAD>NUM': 16, 'OTHER>OTHER': 15, 'OTHER>FISH': 11, 'HEAD>END': 6, 'HEAD>LOST': 5, 'HEAD>JAR': 2, 'END>OTHER': 2, 'LOST>LOST': 2}
+c. lines with 1,2,3 060: {1: 213, 2: 2}
+d. A-060-B tokens 207; the reversed B-060-A tokens 2
+e. object kinds: SEAL 175 (share 0.81 vs 0.47 of all lines), TAB 30 (share 0.14 vs 0.37 of all lines), TAG 6 (share 0.03 vs 0.04 of all lines), POT 3 (share 0.01 vs 0.08 of all lines), MISC 2 (share 0.01 vs 0.01 of all lines)
+f. position {'inner': 207, 'first': 4, 'last': 6}
+g. count immediately left 4, right 36 of 217
+h. after 920-060 comes: {'WARD': 48, 'NUM': 4, 'JAR': 2, 'LOST': 2, 'OTHER:415': 2, 'FISH': 1, 'OTHER:803': 1, 'OTHER:176': 1}
+h. after 550-060 comes: {'FISH': 7, 'OTHER:690': 3, 'NUM': 3, 'OTHER:806': 1, 'OTHER:556': 1, 'OTHER:165': 1, 'OTHER:679': 1, 'OTHER:555': 1}
+h. after 692-060 comes: {'FISH': 13, 'NUM': 5, 'OTHER:798': 3, 'OTHER:255': 3, 'OTHER:803': 2, 'LOST': 2, 'OTHER:482': 2, 'OTHER:531': 2}
+h. after 820-060 comes: {'FISH': 8, 'NUM': 4, 'HEAD': 1, 'OTHER:142': 1, 'OTHER:443': 1, 'LOST': 1, 'OTHER:415': 1, 'OTHER:705': 1}
+i. non-head left neighbours: 201[?] 5, 368[koṭi] 5, 000[?] 3, 297[?] 3, 690[piṇai] 2, 390[maṟam] 2, 111[?] 2, 891[?] 2, 220[mīn] 2, 001[oru] 2, 766[?] 1, 415[kavar] 1, 193[?] 1, 013[mū] 1
+j. head 550: followed by 060 26, by something else 74: 527[?] 22, 525[?] 8, 000[?] 8, 526[?] 5, 617[ūḻiyaṉ] 4, 740[kuṭi] 3
+j. head 692: followed by 060 44, by something else 24: 001[oru] 3, 000[?] 2, 100[mutu] 1, 575[kōṭṭai] 1, 440[koḷ] 1, 368[koṭi] 1
+j. head 820: followed by 060 26, by something else 173: 002[iru] 94, 001[oru] 19, 032[iru] 10, 000[?] 6, 595[peṭṭi] 5, 013[mū] 4
+j. head 920: followed by 060 63, by something else 65: 740[kuṭi] 13, 002[iru] 5, 032[iru] 3, 001[oru] 3, 000[?] 2, 455[ampu] 2
+k. Mahadevan 123 (=060): 193 uses; left [(293, 54), (150, 44), (391, 24), (216, 23), (402, 6), (412, 4)]; right [(343, 30), (65, 11), (67, 11), (87, 9), (344, 8), (86, 8), (102, 7), ('$', 7)]

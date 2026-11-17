@@ -1,0 +1,58 @@
+
+== sign 390: faces 279; counted places 90 (series {'F': 7, 'S': 62, 'T': 21}); count>=3 share 0.96; median count 4; max 8; right after the box 73
+   by object class: {'seal': np.int64(192), 'tabB': np.int64(36), 'pot': np.int64(18), 'tabI': np.int64(12), 'tag': np.int64(11), 'other': np.int64(7), 'rod': np.int64(2), 'impl': np.int64(1)}
+   dyers quarter (Mohenjo-daro VS): 10/102 -> 2.00x, P 0.0274
+   Chanhu-daro: 9/74 -> 2.48x, P 0.00978
+   abroad: 5/36 -> 2.83x, P 0.0298
+   Harappa granary: 8/112 -> 1.45x, P 0.184
+   Lothal: 14/208 -> 1.37x, P 0.142
+   copper tablets: 2/237 -> 0.17x, P 1
+   Kalibangan: 12/212 -> 1.15x, P 0.348
+   Dholavira: 12/238 -> 1.03x, P 0.507
+
+== sign 405: faces 116; counted places 26 (series {'T': 6, 'S': 18, 'F': 2}); count>=3 share 0.92; median count 4; max 8; right after the box 28
+   by object class: {'seal': np.int64(54), 'tabB': np.int64(44), 'pot': np.int64(7), 'tabC': np.int64(4), 'tag': np.int64(3), 'bngl': np.int64(3), 'rod': np.int64(1)}
+   dyers quarter (Mohenjo-daro VS): 0/102 -> 0.00x, P 1
+   Chanhu-daro: 1/74 -> 0.66x, P 0.785
+   abroad: 2/36 -> 2.72x, P 0.167
+   Harappa granary: 1/112 -> 0.44x, P 0.903
+   Lothal: 2/208 -> 0.47x, P 0.931
+   copper tablets: 4/237 -> 0.83x, P 0.721
+   Kalibangan: 2/212 -> 0.46x, P 0.935
+   Dholavira: 1/238 -> 0.21x, P 0.993
+
+== sign 407: faces 127; counted places 28 (series {'S': 15, 'F': 10, 'T': 3}); count>=3 share 0.68; median count 4; max 7; right after the box 19
+   by object class: {'tabC': np.int64(63), 'seal': np.int64(46), 'tabB': np.int64(14), 'pot': np.int64(2), 'other': np.int64(1), 'tag': np.int64(1)}
+   dyers quarter (Mohenjo-daro VS): 7/102 -> 3.07x, P 0.00754
+   Chanhu-daro: 0/74 -> 0.00x, P 1
+   abroad: 1/36 -> 1.24x, P 0.558
+   Harappa granary: 9/112 -> 3.59x, P 0.00083
+   Lothal: 2/208 -> 0.43x, P 0.951
+   copper tablets: 63/237 -> 11.89x, P 3.23e-55
+   Kalibangan: 0/212 -> 0.00x, P 1
+   Dholavira: 3/238 -> 0.56x, P 0.907
+
+== co-occurrence and order (same face)
+   390 & 405 on one face: 0 (chance 5.7); 390 before 405: 0, after: 0 (P that first is earlier nan)
+      same object (any face): 0 (chance 6.8)
+   390 & 407 on one face: 0 (chance 6.2); 390 before 407: 0, after: 0 (P that first is earlier nan)
+      same object (any face): 0 (chance 7.4)
+   405 & 407 on one face: 0 (chance 2.6); 405 before 407: 0, after: 0 (P that first is earlier nan)
+      same object (any face): 1 (chance 3.1)
+
+copper tablets carrying 407: 63; commonest co-signs: [('407', 63), ('845', 41), ('061', 21), ('806', 18), ('740', 17), ('235', 17), ('705', 17), ('900', 16), ('585', 15), ('850', 15), ('321', 14), ('520', 9)]
+   sample texts: 000-000-000-407-000-900-740 | 220-017-585-095-520-032-407 | 806-845-061-407-850-900-740 | 798-240-845-063-407 | 806-235-233-705-033-585-407 | 415-220-845-407 | 415-220-845-407 | 233-585-407
+
+dyers-quarter scan: 32 signs with >=4 faces there; top by ratio (sign, in quarter, all faces, x, P):
+   745: 5/36 7.73x P 0.00041
+   503: 8/82 5.43x P 9.78e-05
+   350: 4/47 4.74x P 0.00968
+   585: 5/60 4.64x P 0.00423
+   615: 6/73 4.58x P 0.00186
+   752: 4/53 4.2x P 0.0147
+   706: 6/101 3.31x P 0.00928
+   407: 7/127 3.07x P 0.00754
+   140: 6/109 3.06x P 0.0132
+   151: 5/93 2.99x P 0.0253
+   920: 8/150 2.97x P 0.00529
+   575: 4/80 2.78x P 0.055

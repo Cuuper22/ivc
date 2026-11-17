@@ -51,4 +51,4 @@ def uses(sign, ls):
 def mah_lines():
     sys.path.insert(0, ROOT + '/work_scripts')
     import mah_common as M
-    return M.load_mah()
+    return M.load_mah().to_dict('records')

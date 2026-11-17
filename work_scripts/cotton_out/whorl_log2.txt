@@ -1,0 +1,27 @@
+terracotta (not Karanpura) n 87: 390 on 5 (0.057) vs 0.049 elsewhere: 1.17x, P 0.426
+terracotta (not Karanpura) n 87: 405 on 0 (0.000) vs 0.021 elsewhere: 0.00x, P 1
+terracotta (not Karanpura) n 87: 407 on 0 (0.000) vs 0.023 elsewhere: 0.00x, P 1
+all fired/unfired clay (not Karanpura) n 1068: 390 on 39: 0.74x P 0.988
+seals: terracotta 4/11 vs steatite 154/1798 carry 390: (4.163406214039125, np.float64(0.011352458761151225))
+seals: terracotta 0/11 vs steatite 44/1798 carry 405: (0.0, np.float64(1.0))
+seals: terracotta 0/11 vs steatite 33/1798 carry 407: (0.0, np.float64(1.0))
+terracotta faces with 390: 276.1|Karanpura|MISC|390; 1757.1|Karanpura|MISC|390; K-39|Kalibangan|SEAL:S|390-590; K-60|Kalibangan|SEAL:R|033-143-390; K-78|Kalibangan|TAB:B|820-002-390-817-740; 5251.1|Nuhato|SEAL:S|390-000; Ns-46|Nausharo|SEAL|790-390; 5568.1|Karanpura|MISC|390; 5569.1|Karanpura|MISC|390; 5570.1|Karanpura|MISC|390
+whole-text 390: 11 faces; by site {'Karanpura': np.int64(5), 'Kalibangan': np.int64(3), 'Harappa': np.int64(2), 'Mohenjo-daro': np.int64(1)}; by type {'MISC': np.int64(6), 'POT:T:g': np.int64(4), 'ROD': np.int64(1)}; materials {'terracotta': np.int64(5), 'clay': np.int64(4), 'ivory': np.int64(1), '-': np.int64(1)}
+    id 276.1 Karanpura MISC terracotta - --
+    id 766.1 Harappa POT:T:g Clay - ABTrench 39N
+    id 1757.1 Karanpura MISC terracotta - --
+    id 4037.1 Mohenjo-daro ROD Ivory - HR-
+    id 4141.1 Harappa MISC - amorph --
+    id 5306.1 Kalibangan POT:T:g Clay - KLB-2-
+    id 5307.1 Kalibangan POT:T:g Clay - --
+    id 5345.1 Kalibangan POT:T:g Clay - KLB-1-
+    id 5568.1 Karanpura MISC terracotta - --
+    id 5569.1 Karanpura MISC terracotta - --
+    id 5570.1 Karanpura MISC terracotta - --
+whole-text 405: 2 faces; by site {'Harappa': np.int64(1), 'Mohenjo-daro': np.int64(1)}; by type {'SEAL:S': np.int64(1), 'BNGL': np.int64(1)}; materials {'steatite': np.int64(1), 'stoneware': np.int64(1)}
+whole-text 407: 0 faces; by site {}; by type {}; materials {}
+--- region test: Kalibangan + Karanpura + Nuhato + Nausharo (Ghaggar-Hakra/Rajasthan terracotta belt) for 390
+Kalibangan 212 12 (1.152160681679854, np.float64(0.34803771531977823))
+Rajasthan belt without Karanpura 265 17 (1.3057821059038346, np.float64(0.15514080976081518))
+whole 390 on pots 4 of 635 ; Kalibangan pots 3 of 90
+(5.291666666666667, np.float64(0.009921627937239438))

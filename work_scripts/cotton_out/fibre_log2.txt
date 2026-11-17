@@ -1,0 +1,37 @@
+405 site/class/area scan (enriched groups, n>=40 faces)
+== 405
+  cls=tabB: 44/1108 1.94x P 2.5e-06
+== 407
+  site=Mohenjo-daro: 90/1923 2.09x P 8.23e-18
+  cls=tabC: 63/230 12.25x P 3.9e-56
+  region=Lower Indus: 91/2098 1.94x P 1e-15
+  Mohenjo-daro area --: 17/181 4.20x P 4.25e-07
+  Mohenjo-daro area DK-: 22/298 3.30x P 5.24e-07
+  Mohenjo-daro area DKC: 7/99 3.16x P 0.00642
+  Mohenjo-daro area HR-: 8/75 4.77x P 0.000241
+  Mohenjo-daro area VSA: 7/89 3.52x P 0.00357
+== 390
+  site=Chanhu-daro: 9/74 2.48x P 0.00978
+  period=Early: 6/49 2.49x P 0.0316
+  Mohenjo-daro area DKE: 9/70 2.62x P 0.00682
+  Mohenjo-daro area HR-: 9/75 2.44x P 0.0106
+  Mohenjo-daro area VSA: 9/89 2.06x P 0.0298
+--- left and right neighbours (non-count, non-lost, not box/jar) for each sign
+390 left [('125', 9), ('844', 9), ('390', 4), ('790', 3), ('ALT', 3), ('095', 3), ('415', 2), ('371', 2)] right [('002', 15), ('741', 13), ('151', 7), ('368', 4), ('390', 4), ('400', 3), ('621', 3), ('832', 3)]
+405 left [('501', 29), ('061', 6), ('090', 4), ('326', 2), ('240', 2), ('631', 2), ('844', 1), ('321', 1)] right [('002', 32), ('090', 2), ('798', 2), ('001', 2), ('893', 1), ('176', 1), ('065', 1), ('100', 1)]
+407 left [('845', 26), ('061', 25), ('321', 14), ('585', 6), ('063', 5), ('790', 4), ('575', 2), ('071', 2)] right [('850', 15), ('321', 14), ('590', 3), ('001', 2), ('100', 1), ('471', 1), ('746', 1), ('060', 1)]
+{'Harappa': 43, 'Mohenjo-daro': 1} tabB sites overall {'Harappa': 939, 'Mohenjo-daro': 144, 'Kalibangan': 6}
+390 on tabB 36 of 1108  tabB with box pair share 0.5555555555555556
+405 on tabB 44 of 1108  tabB with box pair share 0.25
+407 on tabB 14 of 1108  tabB with box pair share 0.8571428571428571
+[('H-1996', '005-405'), ('H-1942', '861-002-035-405'), ('H-1983', '817-013-004-405'), ('H-252', '501-405-002-240-520'), ('H-253', '501-405-002-240-520'), ('H-254', '501-405-002-240-520'), ('H-255', '501-405-002-240-520'), ('H-256', '501-405-002-240-520'), ('H-257', '501-405-002-240-520'), ('H-258', '501-405-002-240-520')]
+390 faces 279 distinct texts 217
+405 faces 116 distinct texts 71
+407 faces 127 distinct texts 69
+405 tabB faces 44 distinct 7 {'501-405-002-240-520': 29, '806-235-590-405-740-400': 9, '590-405-740-400': 2, '005-405': 1, '861-002-035-405': 1, '817-013-004-405': 1}
+distinct texts: 405 on tabB 7 of 495 (0.6969127898705364, np.float64(0.8934870586850693))
+distinct texts with 501 and 405 1 ['501-405-002-240-520']
+407 distinct on copper tablets 16 of 97 (8.364559988047214, np.float64(2.0024182482821003e-11))
+390 distinct texts in dyers quarter 8 of 73 (1.7670601603434126, np.float64(0.08004685079171794))
+407 distinct texts in dyers quarter 2 of 73 (1.3893190391105816, np.float64(0.42476117413399517))
+405 distinct texts in dyers quarter 0 of 73 (0.0, np.float64(1.0))

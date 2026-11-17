@@ -110,4 +110,12 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `guess` Tag words: 890 *koṭu* "given" (7 of 9 on sealings), 892 *vil* "sale", 055 *paṉṉiru* "dozen". Measures: 575 *kōṭṭai*, 171 *niṟai*, 540 *paṟai*; 335 = *ūr* "town". Kin: 760 *maka* "child of" (jar follows 25 of 29), 690 *piṇai*, 803 *il*, 140 *ammai*, 840 *iṇai* "pair".
 - `measured` Went against: eye = copper for 790 (0 of 20 on new-text copper) and 832; the copper excess is 850 alone. 838 = bone (0 of 5 new-text rods). Paused: 167, 233, 832.
 
+## Cotton house (from `jobs/out/cotton_house.md`)
+- `measured` Box-tree pair 590-390 sits in the name slot: jar follows on 53 of 73 faces; 17 of 17 who-phrases in long texts. Tree 390 alone is a goods word: jar after it 4 of 216 (P 3e-36 against the pair), counted on 42% of places, 96% of counts 3 or more. Box + a tree sign is 123 of 209 box places (2.9% by chance); box + keeper sign is 2 of 209.
+- `guess` 590-390 = *peṭṭi-parutti* "boxed cotton": a house named after its trade. "Chest-guard" is retired by the box + keeper count (2 of 209).
+- `measured` Tree signs 390, 405, 407 never share an object (0 against about 7 expected) and share neighbour frames 3 to 4 times chance: they are alternatives in one slot. 407 is 8.4 times chance on distinct copper-tablet texts.
+- `guess` 390 raw cotton *parutti*, 407 cloth *tuṇi* (DEDR 3307), 405 thread *nūl* (DEDR 3726, weakest: failed 2 of 4).
+- `measured` Went against: no second whorl site (2 of 71 clay/stone objects outside Karanpura; 5 whorl-shaped objects with photos carry no 390). Rescues that came true: 390 on terracotta seals 4 of 11 against 154 of 1,798 steatite; 390 as whole pot text at Kalibangan 3 of 90 against 1 of 545. No dye sign found. Count before the box is mostly 2, not big lots.
+- Unopened: the Kenoyer and Meadow inscribed-objects PDF may list other inscribed whorls.
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.
