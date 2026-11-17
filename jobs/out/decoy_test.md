@@ -24,3 +24,6 @@ Same mixed list. Tester (Opus, `work_scripts/decoy_replay_A.py`, outcomes `work_
 What it means. Went against, a second time and with the full method. The procedure passes about six words in ten whether the word is the accepted one or one moved from another sign of the same job. The exact words on the signs have no support from the prediction tallies. The second replay tester's file will be added when it lands; the reading of the result does not wait on it.
 
 Decision. The project is re-based on what is measured without words (the frame, the accounts, the houses, the measures, the history). Every word-level claim is relabelled `guess` with "job supported, word not". Any later pass on words carries decoys mixed in as a standing control and reports real against decoy pass rates, never a bare "came true" count.
+
+Second replay tester (Sonnet, `work_scripts/decoy_replay_B.py`, `work_data/decoy/replay_B.csv`):
+- `measured` First prediction came true: real 10 of 25, decoy 9 of 26. After the one redesign: real 11 of 28, decoy 17 of 28.

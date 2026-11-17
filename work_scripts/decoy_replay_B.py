@@ -231,3 +231,93 @@ if __name__ == '__main__' and len(sys.argv) > 1 and sys.argv[1] == 'stage1':
         print(f'[stage1] item {i} sign {SIGN[i]} -> {out} | {obs} vs {base} | P={p}', flush=True)
         json.dump(results, open('/home/claude/ivc/work_data/decoy/replay_B_stage1.json', 'w'))
     print('[stage1] done', flush=True)
+
+
+# =====================================================================================================
+# PART 4: SECOND PREDICTIONS (Step 4 redesign), written after seeing the first outcomes, only for items that did not come true.
+# (Stage-1 outcomes: 19 came true, 15 right direction only, 17 against, 9 too few.)  Each is a different test of the same word.
+# =====================================================================================================
+STAR_PICS = {'Bult', 'Cros', 'Xcrs', 'Swas', 'Tri4', 'Xhch', 'Crs'}
+GRAIN = {'752', '416', '845', '806', '501'}
+SECOND = {
+ 1: ('A_AREA', ('Harappa', ['FGranery']), G, 'Cultivator delivers grain: Harappa objects with it come from the Granary area more than other Harappa objects.'),
+ 2: ('P_PIC', STAR_PICS, G, 'Star: the picture on its object is a star-like motif (dotted circles, crosses, swastika) more than on other pictured objects.'),
+ 4: ('A_AREA', ('Mohenjo-daro', ['DKG']), G, 'House: Mohenjo-daro objects with it come from the big residential block DK-G more than other Mohenjo-daro objects.'),
+ 5: ('T_BIN', {'middle'}, G, 'Ward (urban quarter): dated objects with it sit in the middle (mature urban) bin more than other dated objects.'),
+ 6: ('M_SITE', 'Lothal', G, 'Bought/received (trade): new-text faces come from the port Lothal more than faces in general.'),
+ 8: ('M_COUNT', 'short', G, 'Two months: counts next to it on new texts are short-stroke more than short share among all counts (as with the month sign).'),
+ 9: ('A_AREA', ('Harappa', ['FGranery']), G, 'Ration measure (issued from stores): Harappa objects with it come from the Granary area more than other Harappa objects.'),
+ 10: ('A_AREA', ('Mohenjo-daro', ['VS']), G, 'Assembly: Mohenjo-daro objects with it come from the citadel VS area more than other Mohenjo-daro objects.'),
+ 11: ('M_KIND', {'ctab'}, G, 'Maiden: new-text faces sit on copper tablets more than faces in general.'),
+ 13: ('M_CO', {'255'}, G, 'Rod/sceptre with banner: shares a face with koṭi (255) on new texts more than faces in general.'),
+ 14: ('M_COUNT', 'tall', G, 'Tax (large recurring sums): counts next to it on new texts are tall-stroke more than tall share among all counts.'),
+ 15: ('A_AREA', ('Mohenjo-daro', ['DKG']), G, 'First ward: Mohenjo-daro objects with it come from DK-G more than other Mohenjo-daro objects.'),
+ 18: ('M_KIND', {'mtab'}, G, 'Town: new-text faces sit on moulded tablets more than faces in general.'),
+ 19: ('M_KIND', {'tag', 'pot'}, G, 'Crate of fish (trade goods): new-text faces sit on tags or pots more than faces in general.'),
+ 21: ('M_CO', {'435'}, G, 'Banner with rod: shares a face with kōl (435) on new texts more than faces in general.'),
+ 22: ('T_BIN', {'middle'}, G, 'Third ward: dated objects with it sit in the middle bin more than other dated objects.'),
+ 24: ('P_PIC', {'Gaur', 'Stag', 'Goat', 'Tigr', 'Elep', 'Rhin', 'Hare'}, G, 'Three-peaks (hill country): picture is a wild hill/forest beast more than on other pictured objects.'),
+ 27: ('M_KIND', {'seal'}, G, 'Half-share: new-text faces sit on seals more than faces in general.'),
+ 28: ('M_POS', 'first', G, 'Weight/full measure: text-initial on new texts more than the average sign.'),
+ 29: ('P_PIC', {'Bull1'}, G, 'Horn: the picture is the one-horned bull (unicorn) more than on other pictured objects.'),
+ 30: ('P_PIC', {'Phyt'}, G, 'Spindle (cotton): the picture is a plant more than on other pictured objects.'),
+ 33: ('P_PIC', {'Scene', 'Mult', 'Anth', 'Archer'}, G, 'Proclamation (to a crowd): the picture shows people/a scene more than on other pictured objects.'),
+ 34: ('M_CO', {'335'}, G, 'Child of the town: shares a face with ūr (335) on new texts more than faces in general.'),
+ 35: ('M_POS', 'first', G, 'Bamboo-star (asterism name): text-initial on new texts more than the average sign.'),
+ 36: ('M_POS', 'first', G, 'Given (donor first): text-initial on new texts more than the average sign.'),
+ 37: ('A_AREA', ('Harappa', ['FGranery']), G, 'Grain measure: Harappa objects with it come from the Granary area more than other Harappa objects.'),
+ 40: ('T_BIN', {'late'}, G, 'Goldsmith (specialised craft): dated objects with it sit in the late bin more than other dated objects.'),
+ 41: ('M_KIND', {'ctab'}, G, 'Royal: new-text faces sit on copper tablets more than faces in general.'),
+ 42: ('M_KIND', {'ctab'}, G, 'Arrow (weapon, official): new-text faces sit on copper tablets more than faces in general.'),
+ 43: ('A_AREA', ('Harappa', ['FGranery']), G, 'Heap/stock: Harappa objects with it come from the Granary area more than other Harappa objects.'),
+ 44: ('P_PIC', STAR_PICS, G, 'First-star: the picture is a star-like motif more than on other pictured objects.'),
+ 45: ('P_PIC', {'Elep', 'Tigr', 'Rhin', 'Scene', 'Anth'}, G, 'King: the picture is a royal beast or a figure/scene more than on other pictured objects.'),
+ 48: ('M_CO', GRAIN, G, 'Produce: shares a face with other grain signs (752/416/845/501) on new texts more than faces in general.'),
+ 49: ('M_CO', GRAIN, G, 'Paddy field: shares a face with grain signs on new texts more than faces in general.'),
+ 50: ('M_CO', GRAIN, G, 'Heap of threshed grain: shares a face with other grain signs on new texts more than faces in general.'),
+ 52: ('M_KIND', {'tag'}, G, 'Partners: new-text faces sit on tags more than faces in general.'),
+ 53: ('M_CO', {'235'}, G, 'Servant of the house: shares a face with il (235) on new texts more than faces in general.'),
+ 54: ('M_CO', {'632', '140', '220', '407'}, G, 'Fish: shares a face with the other fish/star-name signs (632/140/220/407) on new texts more than faces in general.'),
+ 57: ('M_POS', 'last', G, 'Warrior (person title): text-final on new texts more than the average sign.'),
+ 58: ('M_KIND', {'ctab'}, G, 'Chest: new-text faces sit on copper tablets more than faces in general.'),
+ 60: ('T_BIN', {'middle'}, G, 'Dozen: dated objects with it sit in the middle bin more than other dated objects.'),
+}
+NEED2 = None  # set at run time: every item whose first outcome was not 'came true'
+
+if __name__ == '__main__' and len(sys.argv) > 1 and sys.argv[1] == 'stage2':
+    import json
+    st = json.load(open('/home/claude/ivc/work_data/decoy/replay_B_stage1.json'))
+    need = sorted(int(i) for i, v in st.items() if v['out'] != 'came true')
+    assert need == sorted(SECOND), (set(need) ^ set(SECOND))
+    r2 = {}
+    for i in need:
+        obs, base, p, out = run_spec(i, SECOND[i])
+        r2[i] = dict(obs=obs, base=base, p=p, out=out)
+        print(f'[stage2] item {i} sign {SIGN[i]} -> {out} | {obs} vs {base} | P={p}', flush=True)
+        json.dump(r2, open('/home/claude/ivc/work_data/decoy/replay_B_stage2.json', 'w'))
+    print('[stage2] done', flush=True)
+
+
+# =====================================================================================================
+# PART 5: WRITE replay_B.csv.  final = 'came true' if either stage came true, else the better of the two outcomes
+# with the order  right direction only > too few > against  (too few is no evidence, against is evidence the other way).
+# =====================================================================================================
+if __name__ == '__main__' and len(sys.argv) > 1 and sys.argv[1] == 'write':
+    import json, csv
+    s1 = json.load(open('/home/claude/ivc/work_data/decoy/replay_B_stage1.json'))
+    s2 = json.load(open('/home/claude/ivc/work_data/decoy/replay_B_stage2.json'))
+    RANK = {'came true': 3, 'right direction only': 2, 'too few': 1, 'against': 0}
+    fmt = lambda p: '' if p is None else f'{p:.4g}'
+    with open('/home/claude/ivc/work_data/decoy/replay_B.csv', 'w', newline='') as f:
+        w = csv.writer(f)
+        w.writerow(['item', 'sign', 'word', 'first_prediction', 'first_base', 'first_observed', 'first_P', 'first_outcome',
+                    'second_prediction', 'second_base', 'second_observed', 'second_P', 'second_outcome', 'final'])
+        for i in range(1, 61):
+            a = s1[str(i)]; b = s2.get(str(i))
+            word = f'{TL.iloc[i-1].sound} ({TL.iloc[i-1].english})'
+            if b is None: fin = a['out']
+            else: fin = max([a['out'], b['out']], key=lambda o: RANK[o])
+            w.writerow([i, SIGN[i], word, FIRST[i][3], a['base'], a['obs'], fmt(a['p']), a['out'],
+                        SECOND[i][3] if b else '', b['base'] if b else '', b['obs'] if b else '', fmt(b['p']) if b else '', b['out'] if b else '', fin])
+    df = pd.read_csv('/home/claude/ivc/work_data/decoy/replay_B.csv')
+    print('first_outcome', df.first_outcome.value_counts().to_dict()); print('final', df.final.value_counts().to_dict())
