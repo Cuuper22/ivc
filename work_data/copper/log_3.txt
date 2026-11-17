@@ -1,0 +1,69 @@
+text kinds on copper (distinct complete texts, union copies):
+             texts  copies  share_texts  share_copies
+kind                                                 
+name            17      39        0.266         0.196
+name+closer     26      93        0.406         0.467
+name+count       8      32        0.125         0.161
+one sign         5       5        0.078         0.025
+record           8      30        0.125         0.151
+copies by kind x picture group:
+pgroup       animal  animal, some copies a sign  figure, some copies a sign  motif  picture-face sign  text both faces  unknown
+kind                                                                                                                           
+name             18                           0                           0      5                  1                5       10
+name+closer      55                           9                          15      0                  3                7        4
+name+count       11                          14                           0      0                  0                4        3
+one sign          0                           0                           0      0                  0                0        5
+record           13                           8                           0      0                  7                2        0
+texts by kind x picture group:
+pgroup       animal  animal, some copies a sign  figure, some copies a sign  motif  picture-face sign  text both faces  unknown
+kind                                                                                                                           
+name              6                           0                           0      2                  1                2        6
+name+closer      12                           2                           1      0                  3                5        3
+name+count        3                           1                           0      0                  0                3        1
+one sign          0                           0                           0      0                  0                0        5
+record            2                           1                           0      0                  3                2        0
+P3.3 texts with a count: sign-or-text on the other face 10 of 16; without a count 14 of 48; Fisher P (more) 0.0193
+Mohenjo-daro copper tablets (text faces): distinct texts 64, with a count 17 (0.266); counted things: [('705', 5), ('407', 5), ('706', 2), ('408', 2), ('905', 1), ('700', 1), ('071', 1)]
+Mohenjo-daro copper tablets (all faces): distinct texts 75, with a count 17 (0.227); counted things: [('407', 5), ('705', 4), ('706', 3), ('408', 2), ('700', 1), ('071', 1), ('905', 1)]
+Harappa clay tablets (faces): distinct texts 551, with a count 72 (0.131); counted things: [('700', 32), ('390', 10), ('705', 6), ('405', 5), ('171', 4), ('480', 3), ('156', 2), ('059', 2), ('407', 2), ('706', 1), ('116', 1), ('783', 1)]
+Mohenjo-daro clay tablets (faces): distinct texts 69, with a count 4 (0.058); counted things: [('700', 2), ('705', 2)]
+Mohenjo-daro seals (faces): distinct texts 1047, with a count 179 (0.171); counted things: [('705', 49), ('390', 47), ('706', 20), ('156', 12), ('407', 11), ('171', 9), ('405', 9), ('480', 3), ('700', 3), ('112', 2), ('426', 2), ('905', 2)]
+counted things side by side (share = of faces with a count):
+sign     job  copper_faces  copper_share  harappa_tab  harappa_share  md_clay_tab  md_seal
+ 700   THING             1         0.059           32          0.444            2        3
+ 390   THING             0         0.000           10          0.139            0       47
+ 705 MEASURE             4         0.235            6          0.083            2       49
+ 407   THING             5         0.294            2          0.028            0       11
+ 405   THING             0         0.000            5          0.069            0        9
+ 706 MEASURE             3         0.176            1          0.014            0       20
+ 171 MEASURE             0         0.000            4          0.056            0        9
+ 480 MEASURE             0         0.000            3          0.042            0        3
+ 408 MEASURE             2         0.118            0          0.000            0        1
+ 156   THING             0         0.000            2          0.028            0       12
+ 059 MEASURE             0         0.000            2          0.028            0        0
+ 071   THING             1         0.059            0          0.000            0        0
+ 116   THING             0         0.000            1          0.014            0        0
+ 785   THING             0         0.000            1          0.014            0        0
+ 783   THING             0         0.000            1          0.014            0        0
+ 876   THING             0         0.000            1          0.014            0        0
+ 854   THING             0         0.000            1          0.014            0        0
+ 578 MEASURE             0         0.000            1          0.014            0        0
+ 905 MEASURE             1         0.059            0          0.000            0        2
+ 205   THING             0         0.000            0          0.000            0        1
+--- per object face (every copy counted):
+Mohenjo-daro copper tablets, all faces, every copy: distinct texts 204, with a count 58 (0.284); counted things: [('705', 20), ('706', 14), ('407', 12), ('905', 6), ('700', 2), ('071', 2), ('408', 2)]
+Harappa clay tablets, every face: distinct texts 1483, with a count 530 (0.357); counted things: [('700', 430), ('405', 33), ('156', 23), ('390', 10), ('705', 10), ('171', 7), ('578', 4), ('480', 3), ('783', 2), ('059', 2), ('407', 2), ('706', 1)]
+  sign 700: copper 2/58 faces with a count, Harappa tablets 430/530, Fisher P 1.1e-33
+  sign 705: copper 20/58 faces with a count, Harappa tablets 10/530, Fisher P 4e-15
+  sign 706: copper 14/58 faces with a count, Harappa tablets 1/530, Fisher P 2.4e-14
+  sign 407: copper 12/58 faces with a count, Harappa tablets 2/530, Fisher P 2.2e-11
+  sign 390: copper 0/58 faces with a count, Harappa tablets 10/530, Fisher P 0.61
+  sign 156: copper 0/58 faces with a count, Harappa tablets 23/530, Fisher P 0.15
+--- per distinct text:
+  sign 700: copper 1/17, Harappa tablets 32/72, Fisher P two-sided 0.004
+  sign 705: copper 4/17, Harappa tablets 6/72, Fisher P two-sided 0.093
+  sign 706: copper 3/17, Harappa tablets 1/72, Fisher P two-sided 0.021
+  sign 390: copper 0/17, Harappa tablets 10/72, Fisher P two-sided 0.2
+  sign 405: copper 0/17, Harappa tablets 5/72, Fisher P two-sided 0.58
+  sign 407: copper 5/17, Harappa tablets 2/72, Fisher P two-sided 0.0024
+  sign 156: copper 0/17, Harappa tablets 2/72, Fisher P two-sided 1

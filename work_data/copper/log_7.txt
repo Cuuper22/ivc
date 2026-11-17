@@ -1,0 +1,35 @@
+loading objects (chits loader)
+loaded
+
+                                                     0                                       1                                                           2
+group                      Mohenjo-daro copper tablets                    Harappa clay tablets                                   Mohenjo-daro clay tablets
+objects                                            189                                    1083                                                         112
+complete_objects                                   164                                     772                                                          82
+distinct_texts                                      66                                     533                                                          54
+copies_per_text                                   2.48                                    1.45                                                        1.52
+with_count                                       0.307                                   0.454                                                       0.107
+with_jar_name                                    0.614                                   0.486                                                       0.652
+distinct_jar_names                                  29                                     190                                                          34
+names_on_city_seals                                  4                                      16                                                          12
+share_on_seals                                   0.138                                   0.084                                                       0.353
+seal_random_recur                                0.207                                   0.227                                                       0.299
+seals_with_those_names                               9                                      22                                                          45
+seal_endings               {'other': 2, 'jar only': 7}  {'jar only': 16, '400': 3, 'other': 3}  {'other': 6, 'jar only': 33, '090': 4, '400': 1, '161': 1}
+seal_size_residual_median                        0.214                                     0.0                                                      -0.056
+n_sizes                                              6                                      17                                                          37
+copper names found on Mohenjo-daro seals:
+                      group        name  n_tablets  n_seals                seal_endings                            seal_cisi
+Mohenjo-daro copper tablets 255-435-690          6        6 {'other': 2, 'jar only': 4} M-682 M-626 M-816 M-857 M-950 M-1206
+Mohenjo-daro copper tablets     503-615          3        1             {'jar only': 1}                               M-1803
+Mohenjo-daro copper tablets 705-033-923          1        1             {'jar only': 1}                               M-1715
+Mohenjo-daro copper tablets         773          1        1             {'jar only': 1}                                M-750
+dated copper tablets 50 of 190; by period string: {'Period 4': 5, 'Period 3C-2': 5, 'Period 3B/C': 3, '-': 30, 'Period 3C-1': 3, 'Period 3C-4': 3, 'Period 3C-3': 1}
+copper by bin against other dated objects of the same areas:
+   bin  copper  expected  P_high  P_low
+ early       7     11.00  0.9587 0.0920
+middle      23     20.91  0.3052 0.7941
+  late      20     18.10  0.3342 0.7702
+sets with dated copies: 003-421-176-100-740-790 {'early': 1, 'middle': 1}; 003-700-900-165 {'middle': 2}; 017-585-388-740 {'late': 1, 'middle': 1}; 233-585-407 {'middle': 2}; 235-705-033-845-407-321-407 {'early': 2}; 503-615-752-740 {'late': 4, 'middle': 4, 'early': 1}; 706-033-923-740 {'middle': 1, 'late': 1}; 706-033-923-740-001 {'late': 1, 'early': 1}; 806-235-233-705-033-585-407 {'late': 1, 'middle': 1}; 806-845-061-407-850-900-740 {'middle': 1, 'late': 4}
+redesign (a): copper text faces of 3+ signs found whole inside a Mohenjo-daro seal face: 4 of 55: ['233-798-740', '415-220-845-407', '503-615-740', '590-407-740']
+   control: Mohenjo-daro clay tablet faces of 3+ signs found whole inside a Mohenjo-daro seal face: 7 of 45
+new idea (b): copper jar names on a seal of any city: 5 of 29
