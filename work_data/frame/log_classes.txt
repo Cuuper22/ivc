@@ -1,0 +1,46 @@
+[v2_common] loading Lipi faces and parsing ...
+[v2_common] loading the second catalogue ...
+[    1.3s] training: 3499 distinct texts, 708 signs, 12995 sign uses; signs with 10+ uses: 166
+[   11.5s] HMM K=6: best log-likelihood -61091.0 (nats) over 10 starts
+[   26.2s] HMM K=8: best log-likelihood -59902.5 (nats) over 10 starts
+[   45.6s] HMM K=10: best log-likelihood -58778.4 (nats) over 10 starts
+[   70.3s] HMM K=12: best log-likelihood -58059.5 (nats) over 10 starts
+[   70.3s] building sign vectors for k-means ...
+[   71.2s] k-means K=6 done
+[   71.2s] k-means K=8 done
+[   71.3s] k-means K=10 done
+[   71.4s] k-means K=12 done
+[   72.9s] exchange K=6: class-bigram log-likelihood -60160.6
+[   75.1s] exchange K=8: class-bigram log-likelihood -59108.8
+[   78.1s] exchange K=10: class-bigram log-likelihood -58079.9
+[   81.8s] exchange K=12: class-bigram log-likelihood -56985.6
+[   86.4s] hidden-state model K=6: ARI 0.032 (shuffled 0.000, band-dealt -0.000) | NMI 0.229 (shuffled 0.096, max 0.147; band 0.099) | token-weighted ARI 0.246 NMI 0.435
+[   90.9s] hidden-state model K=8: ARI 0.030 (shuffled -0.000, band-dealt -0.002) | NMI 0.249 (shuffled 0.114, max 0.182; band 0.118) | token-weighted ARI 0.259 NMI 0.473
+[   95.4s] hidden-state model K=10: ARI 0.042 (shuffled 0.000, band-dealt 0.003) | NMI 0.266 (shuffled 0.134, max 0.200; band 0.139) | token-weighted ARI 0.279 NMI 0.486
+[   99.9s] hidden-state model K=12: ARI 0.030 (shuffled -0.000, band-dealt 0.007) | NMI 0.264 (shuffled 0.146, max 0.193; band 0.156) | token-weighted ARI 0.219 NMI 0.469
+[  104.4s] k-means on neighbour vectors K=6: ARI -0.086 (shuffled -0.000, band-dealt -0.068) | NMI 0.154 (shuffled 0.095, max 0.154; band 0.095) | token-weighted ARI 0.036 NMI 0.210
+[  109.0s] k-means on neighbour vectors K=8: ARI -0.079 (shuffled 0.000, band-dealt -0.095) | NMI 0.145 (shuffled 0.118, max 0.182; band 0.114) | token-weighted ARI 0.044 NMI 0.217
+[  113.6s] k-means on neighbour vectors K=10: ARI -0.114 (shuffled 0.001, band-dealt -0.112) | NMI 0.154 (shuffled 0.131, max 0.186; band 0.121) | token-weighted ARI 0.031 NMI 0.218
+[  118.2s] k-means on neighbour vectors K=12: ARI -0.051 (shuffled 0.000, band-dealt -0.048) | NMI 0.157 (shuffled 0.141, max 0.215; band 0.127) | token-weighted ARI 0.086 NMI 0.274
+[  122.7s] exchange clustering K=6: ARI 0.033 (shuffled 0.000, band-dealt 0.010) | NMI 0.234 (shuffled 0.098, max 0.153; band 0.101) | token-weighted ARI 0.275 NMI 0.445
+[  127.4s] exchange clustering K=8: ARI 0.054 (shuffled -0.000, band-dealt 0.010) | NMI 0.253 (shuffled 0.119, max 0.176; band 0.124) | token-weighted ARI 0.271 NMI 0.449
+[  132.5s] exchange clustering K=10: ARI 0.052 (shuffled -0.000, band-dealt 0.012) | NMI 0.298 (shuffled 0.135, max 0.195; band 0.141) | token-weighted ARI 0.328 NMI 0.532
+[  137.4s] exchange clustering K=12: ARI 0.041 (shuffled 0.000, band-dealt 0.010) | NMI 0.307 (shuffled 0.149, max 0.210; band 0.154) | token-weighted ARI 0.334 NMI 0.546
+[  137.4s] machine vs machine K=6: HMM-kmeans NMI 0.134, HMM-exchange NMI 0.535
+[  137.4s] machine vs machine K=8: HMM-kmeans NMI 0.129, HMM-exchange NMI 0.418
+[  137.4s] machine vs machine K=10: HMM-kmeans NMI 0.169, HMM-exchange NMI 0.482
+[  137.4s] machine vs machine K=12: HMM-kmeans NMI 0.257, HMM-exchange NMI 0.569
+[  140.8s] token level (all 17848 Lipi tokens, HMM K=10 state vs parser job): ARI 0.170 NMI 0.326 (shuffled NMI mean 0.0010 max 0.0015)
+[  140.8s]   H10_0: 1762 uses, hand jobs by uses END 94%, PERSONAL 6%, THING 0% | top signs 740 520 151 154 158 555 236 161 241 232 155 804 381 080
+[  140.8s]   H10_1: 770 uses, hand jobs by uses PERSONAL 64%, MEASURE 24%, NUMBER 8%, PLACE 3% | top signs 590 705 706 017 435 440 171 845 382 320 921 703 605 711
+[  140.8s]   H10_2: 1772 uses, hand jobs by uses PERSONAL 53%, NUMBER 35%, CREST 6%, PLACE 3% | top signs 031 003 140 004 575 142 061 125 892 717 350 455 005 790
+[  140.8s]   H10_3: 1022 uses, hand jobs by uses PERSONAL 49%, TAG 29%, THING 16%, PLACE 5% | top signs 390 700 405 407 617 595 156 226 165 066 906 111 297 064
+[  140.8s]   H10_4: 897 uses, hand jobs by uses PERSONAL 64%, PLACE 19%, TAG 15%, THING 1% | top signs 176 100 900 904 055 388 460 923 335 482 384 877 222 337
+[  140.8s]   H10_5: 1596 uses, hand jobs by uses NUMBER 59%, PERSONAL 28%, JOINER 13%, MEASURE 0% | top signs 002 060 741 001 368 742 013 365 746 626 150 572 611 192
+[  140.8s]   H10_6: 2466 uses, hand jobs by uses PERSONAL 65%, CREST 17%, NUMBER 15%, PLACE 2% | top signs 220 032 240 235 233 798 415 803 255 806 840 231 503 832
+[  140.8s]   H10_7: 686 uses, hand jobs by uses NUMBER 35%, TAG 29%, PERSONAL 23%, THING 6% | top signs 033 760 690 585 615 070 630 752 072 794 406 443 868 797
+[  140.8s]   H10_8: 687 uses, hand jobs by uses END 68%, PERSONAL 31%, THING 0% | top signs 400 090 527 621 679 565 215 411 526 137 093 401 525 869
+[  140.8s]   H10_9: 1337 uses, hand jobs by uses OPENER 59%, PERSONAL 39%, MEASURE 1%, PLACE 0% | top signs 820 861 817 920 550 692 413 824 091 540 317 360 880 545
+[  140.8s] disagreements (signs with 10+ uses): 63 of 166; data backs machine 18, hand 45
+[  141.7s] signs whose own hand job is already the likelihood-best job: 27 of 166
+[  141.7s] wrote /home/claude/ivc/work_data/frame/classes.csv /home/claude/ivc/work_data/frame/agreement.csv /home/claude/ivc/work_data/frame/disagreements_hmm10.csv

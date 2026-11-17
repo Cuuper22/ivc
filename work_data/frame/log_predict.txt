@@ -1,0 +1,37 @@
+[v2_common] loading Lipi faces and parsing ...
+[v2_common] loading the second catalogue ...
+[    1.0s] STEP 2: training on all distinct first-catalogue texts ...
+[    1.2s] vocabulary 708 signs; models: ['unigram', 'sign bigram', 'class grammar: hand jobs', 'class grammar: hmm10', 'class grammar: kmeans10', 'class grammar: exchange10', 'class grammar: hmm6', 'class grammar: hmm8', 'class grammar: hmm12', 'mix: bigram + hand jobs', 'mix: bigram + hmm10'] + 20 decoy frames
+[    1.2s] new texts: 1183 lines; complete with every sign mapped 482; every sign seen in training 482 (scored); distinct 357
+[    1.2s]   unigram                            real 7.849 bits/sign | order shuffled 7.849 | same-frequency signs 8.447 | no end 7.170
+[    1.2s]   sign bigram                        real 6.892 bits/sign | order shuffled 8.761 | same-frequency signs 9.811 | no end 6.299
+[    1.3s]   class grammar: hand jobs           real 7.661 bits/sign | order shuffled 8.506 | same-frequency signs 8.955 | no end 6.981
+[    1.3s]   class grammar: hmm10               real 7.576 bits/sign | order shuffled 8.729 | same-frequency signs 9.274 | no end 6.873
+[    1.4s]   class grammar: kmeans10            real 7.802 bits/sign | order shuffled 7.951 | same-frequency signs 8.541 | no end 7.113
+[    1.4s]   class grammar: exchange10          real 7.532 bits/sign | order shuffled 8.744 | same-frequency signs 9.372 | no end 6.879
+[    1.4s]   class grammar: hmm6                real 7.687 bits/sign | order shuffled 8.571 | same-frequency signs 9.241 | no end 6.975
+[    1.5s]   class grammar: hmm8                real 7.607 bits/sign | order shuffled 8.646 | same-frequency signs 9.224 | no end 6.885
+[    1.5s]   class grammar: hmm12               real 7.533 bits/sign | order shuffled 8.630 | same-frequency signs 9.285 | no end 6.866
+[    1.6s]   mix: bigram + hand jobs            real 6.918 bits/sign | order shuffled 8.373 | same-frequency signs 9.104 | no end 6.302
+[    1.6s]   mix: bigram + hmm10                real 6.937 bits/sign | order shuffled 8.534 | same-frequency signs 9.308 | no end 6.305
+[    1.7s]   hidden-state model K=10 (soft)     real 7.574 | order shuffled 9.052 | same-frequency 9.762
+[    1.9s]   decoy class grammars: mean 7.824, best 7.739, worst 7.889 bits/sign; real hand-job grammar 7.661
+[    1.9s]   share of the bigram gain captured by class grammar: hand jobs: 19.6%
+[    1.9s]   share of the bigram gain captured by class grammar: hmm10: 28.5%
+[    1.9s]   share of the bigram gain captured by class grammar: kmeans10: 4.9%
+[    1.9s]   share of the bigram gain captured by class grammar: exchange10: 33.1%
+[    1.9s]   share captured by the decoy frame (mean): 2.6%
+[    1.9s]   by kind: seal n=269: uni 7.78 big 6.74 hand 7.54 hmm 7.39 decoy 7.74 | tag n=89: uni 7.75 big 6.62 hand 7.50 hmm 7.39 decoy 7.68 | mtab n=50: uni 8.08 big 8.17 hand 8.05 hmm 8.42 decoy 8.21 | ctab n=22: uni 8.24 big 6.98 hand 8.17 hmm 8.25 decoy 8.28 | pot n=41: uni 8.18 big 7.98 hand 8.39 hmm 8.38 decoy 8.24
+[    1.9s] STEP 3: building the gap-test items from the crosswalk pairs ...
+[    1.9s]   gap items main: 77 distinct (Lipi lost, second catalogue complete: 57, second catalogue lost, Lipi complete: 20)
+[    1.9s]   gap items one_mismatch: 157 distinct (Lipi lost, second catalogue complete: 110, second catalogue lost, Lipi complete: 47)
+[    1.9s]   gap-test training leaves out 515 Lipi faces; 3328 distinct texts remain
+[   19.2s]   gap-test HMM refitted
+[   22.6s]   [main] unigram: 16%/27%/35% | sign bigram: 25%/57%/69% | class grammar: hand jobs: 18%/45%/60% | class grammar: hmm10: 23%/40%/48% | class grammar: kmeans10: 16%/34%/44% | class grammar: exchange10: 26%/44%/51% | mix: bigram + hand jobs: 32%/55%/70% | mix: bigram + hmm10: 31%/56%/64% | hidden-state model K=10 (soft): 19%/48%/56% | frequency only: 16%/27%/35% | DECOY class grammar, mean of 20: 17%/33%/43% | DECOY class grammar, best of 20 (by top-5): 16%/36%/45%
+[   22.6s]   [main] job accuracy: class grammar: hand jobs: 55% (base 29%) | class grammar: hmm10: 45% (base 23%) | class grammar: kmeans10: 73% (base 73%) | class grammar: exchange10: 47% (base 21%) | sign bigram read as hand job: 56% (base nan%) | DECOY mean of 20: 56% (base 50%)
+[   30.5s]   [one_mismatch] unigram: 13%/28%/39% | sign bigram: 24%/48%/57% | class grammar: hand jobs: 15%/39%/49% | class grammar: hmm10: 18%/38%/45% | class grammar: kmeans10: 13%/33%/46% | class grammar: exchange10: 20%/39%/48% | mix: bigram + hand jobs: 26%/48%/59% | mix: bigram + hmm10: 25%/50%/57% | hidden-state model K=10 (soft): 17%/39%/51% | frequency only: 13%/28%/39% | DECOY class grammar, mean of 20: 15%/31%/41% | DECOY class grammar, best of 20 (by top-5): 18%/35%/45%
+[   30.5s]   [one_mismatch] job accuracy: class grammar: hand jobs: 48% (base 31%) | class grammar: hmm10: 41% (base 22%) | class grammar: kmeans10: 72% (base 72%) | class grammar: exchange10: 42% (base 22%) | sign bigram read as hand job: 51% (base nan%) | DECOY mean of 20: 52% (base 51%)
+[   30.5s] restorations: model with the best top-5 on the main gap set = sign bigram
+[   35.0s] restorations: 1971 lost / unclear signs on 1417 faces (of 2079 damaged faces; the rest are broken at an edge with no lost sign inside)
+[   35.0s]   predicted jobs: personal name part 1569, ending or title 277, number 74, opener 51
+[   35.0s]   share with top candidate at p >= 0.5: 7.6%

@@ -1,0 +1,237 @@
+[v2_common] loading Lipi faces and parsing ...
+[v2_common] loading the second catalogue ...
+[    1.4s] H10_0 (END 94%, PERSONAL 6%; signs 740 520 151 154 158 555)
+[    1.4s] H10_1 (PERSONAL 64%, MEASURE 24%; signs 590 705 706 017 435 440)
+[    1.4s] H10_2 (PERSONAL 53%, NUMBER 35%; signs 031 003 140 004 575 142)
+[    1.4s] H10_3 (PERSONAL 49%, TAG 29%; signs 390 700 405 407 617 595)
+[    1.4s] H10_4 (PERSONAL 64%, PLACE 19%; signs 176 100 900 904 055 388)
+[    1.4s] H10_5 (NUMBER 59%, PERSONAL 28%; signs 002 060 741 001 368 742)
+[    1.4s] H10_6 (PERSONAL 65%, CREST 17%; signs 220 032 240 235 233 798)
+[    1.4s] H10_7 (NUMBER 35%, TAG 29%; signs 033 760 690 585 615 070)
+[    1.4s] H10_8 (END 68%, PERSONAL 31%; signs 400 090 527 621 679 565)
+[    1.4s] H10_9 (OPENER 59%, PERSONAL 39%; signs 820 861 817 920 550 692)
+
+=== seals: 1419 distinct clean texts, mean length 4.70 ===
+starts: H10_9 38%, H10_2 21%, H10_6 19%, H10_1 5%, H10_4 5%
+  after H10_6 (n=1262): H10_6 33% (417), H10_0 20% (249), H10_4 13% (165), H10_1 11% (144)
+  after H10_0 (n=947): END 79% (748), H10_8 12% (113)
+  after H10_5 (n=930): H10_6 41% (383), H10_2 21% (197)
+  after H10_2 (n=856): H10_3 30% (259), H10_2 14% (124), H10_6 11% (90)
+  after H10_9 (n=748): H10_5 66% (491)
+  after H10_3 (n=527): END 44% (232), H10_5 23% (122), H10_0 11% (58)
+  after H10_4 (n=429): H10_0 64% (275)
+  after H10_1 (n=381): H10_7 38% (143), H10_3 21% (79), H10_2 10% (40)
+  after H10_7 (n=318): H10_0 57% (180)
+  after H10_8 (n=275): END 77% (212)
+commonest whole sequences:
+    34 (2.4%)  2 3   e.g. 004-390 | 230-156
+    33 (2.3%)  9 5 2 3   e.g. 692-060-003-426 | 817-002-003-390
+    22 (1.6%)  6 4 0   e.g. 235-482-740 | 495-460-520
+    22 (1.6%)  9 5 6 4 0   e.g. 861-002-032-176-740 | 861-002-240-643-740
+    20 (1.4%)  6 0   e.g. 803-740 | 231-151
+    19 (1.3%)  9 5 6 6 0   e.g. 817-002-803-233-520 | 817-002-803-235-520
+    19 (1.3%)  6 6 0   e.g. 470-838-158 | 028-032-740
+    18 (1.3%)  8   e.g. 411 | 679
+    17 (1.2%)  9 5 4 0   e.g. 692-060-531-740 | 692-060-176-740
+    15 (1.1%)  4 0   e.g. 055-161 | 100-740
+hand template [opener][crest+personal+tag][ending] fits 571 of 1419 (40%)
+texts the hand template misses, commonest machine sequences:
+    34  2 3   e.g. 004-390 | 230-156 | 142-617
+    33  9 5 2 3   e.g. 692-060-003-426 | 817-002-003-390 | 861-002-016-390
+    16  8   e.g. 411 | 047 | 147
+    11  2 2 3   e.g. 003-003-390 | 104-004-405 | 640-140-595
+    10  9 5 6 6 0   e.g. 817-002-803-235-520 | 201-060-240-233-520 | 817-013-467-806-154
+     9  2   e.g. 006 | 117 | 230
+     8  6 6 0   e.g. 028-032-740 | 468-806-154 | 235-803-740
+     7  9 5 6 0 8   e.g. 550-060-240-740-679 | 817-002-231-555-527 | 861-002-235-555-527
+same, as hand-job strings:
+    38  PERSONAL
+    34  PERSONAL PERSONAL
+    18  PERSONAL PERSONAL PERSONAL
+    11  NUMBER PERSONAL
+    11  OPENER NUMBER NUMBER TAG
+     9  NUMBER TAG
+     9  NUMBER THING
+     8  OPENER NUMBER PERSONAL
+
+=== tablets: 508 distinct clean texts, mean length 3.54 ===
+starts: H10_6 31%, H10_9 20%, H10_2 20%, H10_4 7%, H10_7 6%
+  after H10_6 (n=335): H10_6 26% (88), H10_0 23% (77), H10_4 17% (57)
+  after H10_0 (n=299): END 54% (160), H10_8 39% (116)
+  after H10_2 (n=211): H10_3 22% (47), END 11% (24), H10_0 11% (24), H10_2 11% (24), H10_4 11% (24), H10_6 10% (22)
+  after H10_8 (n=197): END 86% (169)
+  after H10_9 (n=154): H10_5 42% (64), END 14% (22), H10_8 12% (18)
+  after H10_4 (n=152): H10_0 64% (97)
+  after H10_3 (n=127): END 55% (70), H10_8 12% (15)
+  after H10_5 (n=113): H10_6 28% (32), H10_2 19% (22), H10_4 11% (12)
+  after H10_7 (n=111): H10_0 46% (51), END 18% (20)
+  after H10_1 (n=98): H10_7 31% (30), H10_3 15% (15), H10_2 13% (13)
+commonest whole sequences:
+    17 (3.3%)  2 3   e.g. 117-617 | 034-700
+    15 (3.0%)  6 6 0 8   e.g. 220-240-740-090 | 028-032-740-400
+    12 (2.4%)  6 4 0 8   e.g. 231-176-740-565 | 240-100-740-400
+    10 (2.0%)  6 4 0   e.g. 240-904-740 | 415-100-740
+     9 (1.8%)  6 0 8   e.g. 235-555-526 | 233-520-400
+     9 (1.8%)  7 0 8   e.g. 141-740-400 | 690-154-400
+     8 (1.6%)  6 6 0   e.g. 415-220-520 | 240-233-520
+     7 (1.4%)  9   e.g. 413 | 692
+     7 (1.4%)  2 4 0   e.g. 004-785-740 | 126-515-740
+     6 (1.2%)  9 5 2 3   e.g. 550-060-003-390 | 817-002-004-390
+hand template [opener][crest+personal+tag][ending] fits 234 of 508 (46%)
+texts the hand template misses, commonest machine sequences:
+    17  2 3   e.g. 117-617 | 034-700 | 035-390
+    10  6 6 0 8   e.g. 028-032-740-400 | 027-032-740-400 | 467-806-154-400
+     7  9   e.g. 413 | 692 | 144
+     6  9 5 2 3   e.g. 550-060-003-390 | 817-002-004-390 | 861-002-035-405
+     4  6 3   e.g. 032-700 | 745-700 | 032-116
+     4  6 9 8   e.g. 220-550-525 | 233-550-526 | 233-550-527
+     4  9 5   e.g. 820-002 | 091-368 | 817-002
+     4  8   e.g. 110 | 137 | 098
+same, as hand-job strings:
+    20  PERSONAL PERSONAL
+    14  PERSONAL
+    10  NUMBER THING
+    10  PERSONAL PERSONAL PERSONAL
+     7  NUMBER CREST END END
+     5  NUMBER TAG
+     5  PERSONAL PERSONAL PERSONAL PERSONAL
+     5  PERSONAL TAG
+
+=== tags and sealings: 42 distinct clean texts, mean length 4.19 ===
+starts: H10_9 38%, H10_6 17%, H10_1 17%, H10_2 10%, H10_3 7%
+  after H10_6 (n=28): H10_6 25% (7), H10_0 18% (5), H10_4 18% (5), H10_3 14% (4), END 14% (4)
+  after H10_2 (n=26): H10_3 27% (7), H10_5 19% (5), H10_6 15% (4), END 12% (3), H10_2 12% (3)
+  after H10_0 (n=25): END 88% (22)
+  after H10_5 (n=25): H10_6 28% (7), H10_2 24% (6), H10_4 24% (6), H10_5 12% (3)
+  after H10_3 (n=18): END 44% (8), H10_0 17% (3)
+  after H10_9 (n=18): H10_5 72% (13), H10_2 17% (3)
+  after H10_4 (n=14): H10_0 50% (7), H10_2 21% (3)
+  after H10_1 (n=11): H10_7 27% (3), H10_2 27% (3)
+  after H10_7 (n=7): H10_0 71% (5)
+commonest whole sequences:
+     3 (7.1%)  1 7 0   e.g. 445-760-740 | 705-033-520
+     2 (4.8%)  6 0   e.g. 235-740 | 220-740
+     2 (4.8%)  9 5 4 0   e.g. 817-002-048-740 | 820-002-482-740
+     2 (4.8%)  2 3   e.g. 003-390 | 003-156
+     1 (2.4%)  3 0   e.g. 405-740
+     1 (2.4%)  0 2 5 6 3   e.g. 740-892-002-032-394
+     1 (2.4%)  6   e.g. 032
+     1 (2.4%)  9 2 6   e.g. 861-370-240
+     1 (2.4%)  6 6 6 4 0   e.g. 803-233-032-904-740
+     1 (2.4%)  1 3 0   e.g. 590-407-740
+hand template [opener][crest+personal+tag][ending] fits 19 of 42 (45%)
+texts the hand template misses, commonest machine sequences:
+     2  2 3   e.g. 003-390 | 003-156
+     1  0 2 5 6 3   e.g. 740-892-002-032-394
+     1  6   e.g. 032
+     1  9 2 6   e.g. 861-370-240
+     1  9 2 5 6 4 2   e.g. 091-056-002-417-890-892
+     1  9 5 2 3   e.g. 861-002-003-390
+     1  1 2 5 5 4 6 0 8   e.g. 705-500-741-001-055-220-740-090
+     1  9 5 0   e.g. 861-002-236
+same, as hand-job strings:
+     2  OPENER NUMBER PERSONAL
+     1  END PERSONAL NUMBER NUMBER THING
+     1  NUMBER
+     1  OPENER PERSONAL PERSONAL
+     1  PERSONAL PERSONAL NUMBER THING PERSONAL PERSONAL
+     1  OPENER NUMBER NUMBER TAG
+     1  MEASURE PERSONAL PERSONAL NUMBER PERSONAL PERSONAL END END
+     1  OPENER NUMBER NUMBER NUMBER CREST
+
+=== pots: 154 distinct clean texts, mean length 2.05 ===
+starts: H10_2 34%, H10_6 14%, H10_9 12%, H10_7 8%, H10_1 8%
+  after H10_2 (n=94): END 39% (37), H10_2 19% (18), H10_3 13% (12)
+  after H10_6 (n=44): END 36% (16), H10_2 18% (8), H10_0 16% (7), H10_6 14% (6)
+  after H10_3 (n=34): END 79% (27), H10_2 12% (4)
+  after H10_0 (n=33): END 88% (29)
+  after H10_9 (n=28): END 39% (11), H10_5 18% (5), H10_0 11% (3)
+  after H10_7 (n=22): END 23% (5), H10_6 18% (4), H10_0 14% (3), H10_3 14% (3)
+  after H10_5 (n=20): END 45% (9), H10_2 25% (5)
+  after H10_8 (n=17): END 82% (14)
+  after H10_1 (n=14): H10_3 29% (4), END 21% (3)
+  after H10_4 (n=10): H10_0 60% (6), END 30% (3)
+commonest whole sequences:
+    13 (8.4%)  2   e.g. 031 | 034
+     9 (5.8%)  2 3   e.g. 034-390 | 722-697
+     7 (4.5%)  6   e.g. 840 | 032
+     7 (4.5%)  8   e.g. 090 | 039
+     6 (3.9%)  3   e.g. 156 | 700
+     5 (3.2%)  9   e.g. 692 | 550
+     5 (3.2%)  2 2 2   e.g. 645-999-645 | 408-004-747
+     4 (2.6%)  1 3   e.g. 017-410 | 017-405
+     4 (2.6%)  2 2   e.g. 408-003 | 005-031
+     3 (1.9%)  2 0   e.g. 142-740 | 005-740
+hand template [opener][crest+personal+tag][ending] fits 25 of 154 (16%)
+texts the hand template misses, commonest machine sequences:
+    13  2   e.g. 031 | 034 | 004
+     9  2 3   e.g. 034-390 | 722-697 | 036-700
+     7  6   e.g. 840 | 032 | 416
+     6  3   e.g. 156 | 700 | 226
+     6  8   e.g. 039 | 145 | 037
+     5  9   e.g. 692 | 550 | 698
+     5  2 2 2   e.g. 645-999-645 | 408-004-747 | 034-999-034
+     4  1 3   e.g. 017-410 | 017-405 | 590-697
+same, as hand-job strings:
+    25  PERSONAL
+    12  NUMBER
+    10  NUMBER PERSONAL
+    10  PERSONAL PERSONAL
+     6  NUMBER TAG
+     6  NUMBER NUMBER
+     4  PERSONAL PERSONAL PERSONAL
+     4  NUMBER PERSONAL NUMBER
+
+=== copper tablets: 68 distinct clean texts, mean length 4.07 ===
+starts: H10_6 43%, H10_2 19%, H10_8 13%, H10_1 10%, H10_9 6%
+  after H10_6 (n=54): H10_1 33% (18), H10_6 28% (15), H10_4 20% (11)
+  after H10_2 (n=40): H10_3 55% (22), END 12% (5)
+  after H10_3 (n=36): END 67% (24), H10_5 11% (4)
+  after H10_0 (n=35): END 69% (24), H10_6 11% (4)
+  after H10_4 (n=33): H10_0 64% (21)
+  after H10_1 (n=28): H10_7 54% (15), H10_2 21% (6), H10_3 21% (6)
+  after H10_7 (n=23): H10_0 30% (7), H10_4 22% (5), H10_2 17% (4), H10_7 13% (3), H10_3 13% (3)
+  after H10_5 (n=14): H10_2 50% (7), END 21% (3)
+  after H10_8 (n=10): END 100% (10)
+commonest whole sequences:
+     9 (13.2%)  8   e.g. 782 | 780
+     7 (10.3%)  6 6 4 0   e.g. 806-233-176-740 | 806-233-384-740
+     2 (2.9%)  6 1 7 2 0 6 3   e.g. 220-017-585-095-520-032-407 | 231-017-585-095-520-032-407
+     2 (2.9%)  6 6 1 2 3   e.g. 798-240-845-063-407 | 798-240-845-061-407
+     2 (2.9%)  1 7 4 0 5   e.g. 705-033-923-740-001 | 706-033-923-740-001
+     2 (2.9%)  6 1 7 0 4 5 2 3   e.g. 255-435-690-740-900-001-003-423 | 255-435-690-740-900-001-003-424
+     2 (2.9%)  2 6 4 0   e.g. 003-233-100-740 | 831-233-176-740
+     2 (2.9%)  1 7 4 0   e.g. 017-585-388-740 | 706-033-923-740
+     2 (2.9%)  2   e.g. 354 | 035
+     1 (1.5%)  6 7 7 0   e.g. 503-615-752-740
+hand template [opener][crest+personal+tag][ending] fits 23 of 68 (34%)
+texts the hand template misses, commonest machine sequences:
+     9  8   e.g. 782 | 780 | 341
+     2  6 1 7 2 0 6 3   e.g. 220-017-585-095-520-032-407 | 231-017-585-095-520-032-407
+     2  6 6 1 2 3   e.g. 798-240-845-063-407 | 798-240-845-061-407
+     2  1 7 4 0 5   e.g. 705-033-923-740-001 | 706-033-923-740-001
+     2  6 1 7 0 4 5 2 3   e.g. 255-435-690-740-900-001-003-423 | 255-435-690-740-900-001-003-424
+     2  2   e.g. 354 | 035
+     1  9 8   e.g. 479-749
+     1  2 3   e.g. 003-422
+same, as hand-job strings:
+    10  PERSONAL
+     2  PERSONAL NUMBER THING PERSONAL END NUMBER PERSONAL
+     2  PERSONAL PERSONAL TAG END PLACE NUMBER NUMBER PLACE
+     1  PERSONAL PERSONAL
+     1  PERSONAL PERSONAL PLACE PERSONAL PERSONAL
+     1  NUMBER PLACE
+     1  MEASURE NUMBER PERSONAL END NUMBER
+     1  CREST CREST PERSONAL MEASURE NUMBER THING PERSONAL
+
+class names:
+  H10_0 (END 94%, PERSONAL 6%; signs 740 520 151 154 158 555)
+  H10_1 (PERSONAL 64%, MEASURE 24%; signs 590 705 706 017 435 440)
+  H10_2 (PERSONAL 53%, NUMBER 35%; signs 031 003 140 004 575 142)
+  H10_3 (PERSONAL 49%, TAG 29%; signs 390 700 405 407 617 595)
+  H10_4 (PERSONAL 64%, PLACE 19%; signs 176 100 900 904 055 388)
+  H10_5 (NUMBER 59%, PERSONAL 28%; signs 002 060 741 001 368 742)
+  H10_6 (PERSONAL 65%, CREST 17%; signs 220 032 240 235 233 798)
+  H10_7 (NUMBER 35%, TAG 29%; signs 033 760 690 585 615 070)
+  H10_8 (END 68%, PERSONAL 31%; signs 400 090 527 621 679 565)
+  H10_9 (OPENER 59%, PERSONAL 39%; signs 820 861 817 920 550 692)
