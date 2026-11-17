@@ -33,7 +33,8 @@ def dedr():
         m = re.match(r"^(\d+[a-z]?) Ta\. ([^\s,;(]+)\s+([^.]*)", nfc(line))
         if m and len(m.group(2)) >= 2 and m.group(3) and m.group(1) not in seen:
             seen.add(m.group(1)); rows.append((m.group(2), m.group(3).lower()))
-    rows.append(('āḷ', 'man, servant')); rows.append(('maram', 'tree'))   # the two entries lang_pun_chance.py adds by hand
+    save('dravidian_tamil_dedr_nohand', rows)
+    rows.append(('āḷ', 'man, servant')); rows.append(('maram', 'tree'))   # the two entries lang_pun_chance.py adds by hand (the parse misses them)
     save('dravidian_tamil_dedr', rows)
 
 # --- Santali: Campbell 1899 (Santali-English), "Headword.  Gloss" at line start
@@ -113,17 +114,20 @@ def barken():
 
 # --- Burushaski (Yasin): Lorimer's Werchikwar-English Vocabulary 1962 (re-OCR by rival_ocr_werchikwar.py)
 def werchikwar(f):
-    L = read_lines(f); rows = []; cur = None; buf = []
-    def flush():
-        if cur: rows.append((cur, first_gloss(' '.join(buf))))
-    for l in L:
-        l = nfc(l).strip()
-        if not l: continue
-        # entry: headword (possibly with a leading star or number), then a comma or class mark, then English
-        m = re.match(r"^(?:\d+\.\s*)?\*?([a-zA-Zɛɔṭḍṇśṣḥ’'\-]{2,18})(?:\s*,\s*[^.]{0,40}?)?\s*,?\s*\b(n|v\.t|v\.i|v|adj|adv|s)\.(?:\s*[a-z]+\.)?,?\s+(.+)$", l)
-        if m: flush(); cur = m.group(1).lower(); buf = [m.group(3)]
-        elif cur: buf.append(l)
-    flush(); save('burushaski_werchikwar_yasin', rows)
+    """paragraphs of the OCR text; an entry paragraph starts with the headword, then a comma, then class marks and an English gloss.
+    Entries marked as loans (Ar. = Arabic, Pr. = Persian) are left out."""
+    T = nfc(open(f, encoding='utf8').read()); rows = []
+    CL = r"(?:(?:v\.t|v\.i|v|adj|adv|n|pl|x|y|h|m|f|hm|hf|s|sg|pn|postp|prep|part|conj|interj|num|pron)\.?[,;]?\s+)*"
+    for para in re.split(r'\n\s*\n', T):
+        t = re.sub(r'\s+', ' ', para).strip()
+        t = re.sub(r'(\w)- (\w)', r'\1\2', t)
+        m = re.match(r"^[“\"'‘’*\d.\s-]{0,4}([A-Za-z][A-Za-z'’‘\-]{1,16})[,:]\s+(?:[-*][\w'’‘\-.]+[,:]?\s+)?(?:pl\.\s+[^,]{1,18},\s+)?(" + CL + r")(\S.*)$", t)
+        if not m or re.search(r'\bAr\.|\bPr\.|Werchikwar-English', t[:300]): continue
+        h = re.sub(r"[’‘'\-]", '', m.group(1)).lower()
+        if h in ('cp', 'sg', 'pl', 'see', 'the', 'and', 'for', 'with', 'ib', 'idem', 'ete') or not m.group(3)[:3].isalpha() or m.group(3)[0].isupper(): continue
+        g = first_gloss(m.group(3))
+        if len(g) >= 3: rows.append((h, g))
+    save('burushaski_werchikwar_yasin', rows)
 
 # --- Sumerian: Halloran's Sumerian Lexicon v3 (English). "reading, reading: n., gloss" then "v., gloss" lines for the same word
 def halloran():

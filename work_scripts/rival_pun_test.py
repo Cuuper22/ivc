@@ -40,6 +40,15 @@ PICT = {
  'de': dict(jar=r"^(?:ein |der |das |die )?(?:krug|topf|gefäß|gefäss|kanne|wasserkrug)\b", man=r"^(?:ein |der )?(?:mann|mensch|gatte|ehemann)\b", fish=r"^(?:ein |der )?fisch\b",
             seven=r"^(?:die )?(?:zahl )?(?:sieben|7)\b", comb=r"^(?:ein |der )?kamm\b", spear=r"^(?:ein |der |die )?(?:speer|lanze)\b",
             staff=r"^(?:ein |der )?(?:stab|stock|szepter|zepter)\b", carrier=r"(?:tragstange|tragjoch|joch|tragholz)", tree=r"^(?:ein |der )?baum\b")}
+# CORE picture words: the first sense is just the plain noun ("a pot", "tree, ...", "man; ..."), no longer description
+CORE = {'en': dict(jar=r"(?:an? |the )?(?:big |large |small |earthen |clay |water-?|brass |copper )?(?:pot|jar|pitcher|vessel|jug)(?: for (?:water|holding water))?",
+                   man=r"(?:an? |the )?(?:man|male|husband|male person|human being)", fish=r"(?:an? |the )?(?:big |large |small )?fish",
+                   seven=r"(?:the )?(?:numeral )?seven", comb=r"(?:an? |the )?(?:[\w-]+ )?comb", spear=r"(?:an? |the )?(?:[\w-]+ )?(?:spear|lance|javelin|pike|trident)",
+                   staff=r"(?:an? |the )?(?:[\w-]+ )?(?:staff|rod|stick|sceptre|scepter|cane|cudgel)", carrier=r".*", tree=r"(?:an? |the )?tree"),
+        'de': dict(jar=r".*", man=r".*", fish=r".*", seven=r".*", comb=r".*", spear=r".*", staff=r".*", carrier=r".*", tree=r".*")}
+def core_ok(lang, s, g):
+    items = [x.strip() for x in re.split(r'[,;(]', g)[:3]]          # the plain noun must be one of the first three terms of the gloss
+    return any(re.fullmatch(CORE[lang][s], x) for x in items)
 def load(names, lang):
     rows = []
     for n in names:
@@ -49,7 +58,7 @@ def load(names, lang):
             if len(k) >= 2: rows.append((h, g, k))
     return rows
 def keyf(k, L): return k if L == 0 else k[:L]       # L=0 means whole word
-def analyse(rows, lang, need='narrow', L=3, extra_pic=None):
+def analyse(rows, lang, need='narrow', L=3, extra_pic=None, core=False):
     """per slot: picture words found, whether any has a slot-right look-alike, chance (all lengths / same key length), the look-alikes"""
     N = len(rows); NE = NEED[lang][need]; out = {}
     kc = [keyf(k, L) for _, _, k in rows]
@@ -66,7 +75,7 @@ def analyse(rows, lang, need='narrow', L=3, extra_pic=None):
         p_all = allp / N
         pics = collections.OrderedDict()                      # picture word (headword) -> its rows
         for i in range(N):
-            if P.search(rows[i][1]) or (extra_pic and rows[i][0] in extra_pic.get(s, ())): pics.setdefault(rows[i][0], []).append(i)
+            if P.search(rows[i][1]) and (not core or core_ok(lang, s, rows[i][1])): pics.setdefault(rows[i][0], []).append(i)
         q_all = q_len = 1.0; hit_words = []; looks = {}
         for hw, ids in pics.items():
             la = [(rows[j][0], rows[j][1]) for i in ids for j in idx.get(kc[i], ()) if j != i]
@@ -88,24 +97,25 @@ def summarize(res):
     e_all = sum(r['p_all'] for r in present); e_len = sum(r['p_len'] for r in present)
     return dict(slots_with_picture_word=len(present), hits=got, expected_all=round(e_all, 2), expected_len=round(e_len, 2),
                 P_all=pb_tail([r['p_all'] for r in present], got), P_len=pb_tail([r['p_len'] for r in present], got))
-def size_matched(rows, lang, need, L, size, draws=20, extra_pic=None, seed=5):
-    """cut the dictionary to `size` entries (picture entries always kept) and rerun; mean over draws"""
-    rnd = random.Random(seed); H = []; E = []; EL = []
+def size_matched(rows, lang, need, L, size, core, draws=30, seed=5):
+    """cut the dictionary to `size` entries (all picture-word entries stay in) and rerun; mean hits, mean chance, median P over draws"""
+    rnd = random.Random(seed); H = []; E = []; PS = []; nslots = []
     allpic = set()
-    for s in SLOTS:
-        P = re.compile(PICT[lang][s]); allpic |= {i for i, (_, g, _) in enumerate(rows) if P.search(g)}
+    for s_ in SLOTS:
+        P = re.compile(PICT[lang][s_]); allpic |= {i for i, (_, g, _) in enumerate(rows) if P.search(g) and (not core or core_ok(lang, s_, g))}
     rest = [i for i in range(len(rows)) if i not in allpic]
     if len(rest) + len(allpic) <= size: return None
     for _ in range(draws):
         keep = sorted(allpic | set(rnd.sample(rest, size - len(allpic))))
-        sub = [rows[i] for i in keep]
-        sm = summarize(analyse(sub, lang, need, L, extra_pic))
-        H.append(sm['hits']); E.append(sm['expected_all']); EL.append(sm['expected_len'])
-    return dict(hits=round(sum(H) / len(H), 2), expected_all=round(sum(E) / len(E), 2), expected_len=round(sum(EL) / len(EL), 2), size=size)
+        sm = summarize(analyse([rows[i] for i in keep], lang, need, L, None, core))
+        H.append(sm['hits']); E.append(sm['expected_len']); PS.append(sm['P_len']); nslots.append(sm['slots_with_picture_word'])
+    PS.sort()
+    return dict(size=size, draws=draws, slots=round(sum(nslots) / len(nslots), 1), hits=round(sum(H) / len(H), 2), expected=round(sum(E) / len(E), 2), P_median=PS[len(PS) // 2])
 
 # ---- the languages and what to run -------------------------------------------------------------------------------
 GROUPS = collections.OrderedDict([   # label -> (dictionaries pooled, gloss language)
  ('Dravidian (Tamil side of DEDR)',          (['dravidian_tamil_dedr'], 'en')),
+ ('Dravidian, DEDR without the 2 hand-added rows', (['dravidian_tamil_dedr_nohand'], 'en')),
  ('Santali, Campbell 1899',                  (['santali_campbell'], 'en')),
  ('Santali, Bodding vol 5 (R-end)',          (['santali_bodding_v5'], 'en')),
  ('Santali, Wiktionary',                     (['santali_wiktionary'], 'en')),
@@ -113,6 +123,7 @@ GROUPS = collections.OrderedDict([   # label -> (dictionaries pooled, gloss lang
  ('Munda pooled (Santali x3 + Mundari)',     (['santali_campbell', 'santali_bodding_v5', 'santali_wiktionary', 'mundari_bhadra'], 'en')),
  ('Burushaski, Lorimer Werchikwar 1962',     (['burushaski_werchikwar_yasin'], 'en')),
  ('Burushaski, Barken (Hunza, A-B only)',    (['burushaski_barken_hunza'], 'en')),
+ ('Burushaski pooled (Yasin + Hunza)',       (['burushaski_werchikwar_yasin', 'burushaski_barken_hunza'], 'en')),
  ('Sumerian, Halloran lexicon',              (['sumerian_halloran'], 'en')),
  ('Sumerian, Wiktionary',                    (['sumerian_wiktionary'], 'en')),
  ('Sumerian pooled',                         (['sumerian_halloran', 'sumerian_wiktionary'], 'en')),
@@ -122,17 +133,18 @@ GROUPS = collections.OrderedDict([   # label -> (dictionaries pooled, gloss lang
  ('Indo-Aryan pooled (Turner + MW)',         (['indoaryan_turner', 'sanskrit_monier_williams'], 'en')),
 ])
 # the picture words the earlier run chose by hand (Dravidian) and the Sanskrit run (IAST), added to the regex-found set
-HAND = {'Dravidian (Tamil side of DEDR)': dict(jar=['kuṭam'], man=['āḷ'], fish=['mīṉ'], seven=['ēr̤u'], comb=['cīppu'], spear=['vēl'], staff=['kōl'], carrier=['kā'], tree=['maram'])}
+HAND = {}
 if __name__ == '__main__':
     import os
-    only = sys.argv[2:] ; res_all = {}
+    MODE = os.environ.get('MODE', 'core'); SIZE = int(os.environ.get('SIZE', 3000)); only = sys.argv[2:] ; res_all = {}
     for label, (names, lang) in GROUPS.items():
         if not all(os.path.exists(f'{TSV}/{n}.tsv') for n in names): print('skip (missing)', label); continue
         if only and not any(o.lower() in label.lower() for o in only): continue
         rows = load(names, lang); res_all[label] = {'n': len(rows)}
         for need in ('narrow', 'broad'):
             for L in (3, 2, 4, 0):
-                r = analyse(rows, lang, need, L, HAND.get(label)); sm = summarize(r)
+                r = analyse(rows, lang, need, L, None, MODE == 'core'); sm = summarize(r)
                 res_all[label][f'{need}_L{L}'] = dict(summary=sm, slots={k: {kk: vv for kk, vv in v.items() if kk != 'looks'} for k, v in r.items()}, looks={k: v['looks'] for k, v in r.items()})
+        res_all[label]['sized'] = {f'L{L}': size_matched(rows, lang, 'narrow', L, SIZE, MODE == 'core') for L in (3, 4, 0)}
         print(f"{label:42s} n={len(rows):7d} narrow L3 hits {res_all[label]['narrow_L3']['summary']['hits']} exp {res_all[label]['narrow_L3']['summary']['expected_all']}/{res_all[label]['narrow_L3']['summary']['expected_len']}", flush=True)
     json.dump(res_all, open(sys.argv[1] if len(sys.argv) > 1 else '/tmp/rival_pun_results.json', 'w'), ensure_ascii=False, indent=1)

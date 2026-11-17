@@ -46,6 +46,9 @@ What we currently act on, the live leads in order, and what each one says we sho
 
 - `measured` The readings carry to the second catalogue (Mahadevan 1977, separate transcription): load tag 14 of 14, man after jar 74%, spear after jar 0 of 156, cup never five (0 of 206); the parser gives every sign a role in 89.3% of its texts and 85.4% of the 383 texts that have no partner in the first catalogue. A crosswalk of 366 sign pairs now links the two numberings.
 
+- `measured` A marked fish is a mark plus the plain fish: scribes sometimes wrote it out as two signs (second sign is the plain fish in 40 of 528 swaps against 133 of 3,332). The barred fish = branch sign 415 + plain fish in 7 name frames.
+- `guess` SOUNDS, second list (89 signs, `jobs/out/sound_list.md`): building on the ones whose checks came true (176 iṟai "tax", 415 kavar "branch", 255 mutal "chief", 679 kaṭṭil "throne", diamond kāṇi "share", marked fish as "[mark]-mīn" star names); testing the 17 that pointed the right way; the 38 that went against each get their rescue try from the report.
+
 ## Live leads, in order
 
 1. Name slot. `guess` The slot right before the closing jar holds a house or family name. Next: build the list of pre-jar signs and pre-jar pairs with the houses they belong to; check whether one house keeps one pre-jar sign across depth (a family over generations); check the same slot before the other closing signs.
