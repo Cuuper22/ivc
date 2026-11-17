@@ -187,4 +187,9 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `guess` Rations as grain: one *paṭi* a day for a month = 3.75 cups, about 0.9 kg a day, the 3 to 4 cup band on the chits. Three kalam a year = about 0.7 kg a day, one person's grain for a year; so "three-kalam" is a one-man yearly allowance.
 - `measured` Went against: total lines (one number = sum of the others 10 of 70 against 14.9 by chance); batch totals in whole kalam (0 of 16); ration size following rank (bondsman 4 cups, three-kalam holder 3). The paṭi size rests on the Tamil Lexicon (the sign is counted 3 times).
 
+## Outside match, second way in (appended to `jobs/out/outside_match.md`)
+- `measured` Went against: of 585 CDLI tablets from Girsu, Lagash and Umma naming Guabba or Meluhha, 33 are sealed, 13 are Meluhha or textile texts, and all 13 seal legends are cuneiform. Foreign texts are not more lot-like than home texts (49% against 45%). Sesame sign 838 is on 0 of 69 foreign objects; sesame is first attested at Adab about 2280 to 2240 BC as a local crop and is not on the Meluhha goods lists.
+- `measured` The jar ending is dropped abroad: 11 of 57 foreign seals, 2 of 25 on cylinders (P 0.005).
+- Open: 24 CDLI seal records with no transcription need their photographs; the Ashmolean sealing photo (five or six signs) was not reachable from the workspace. Fix made: `values_master.csv` had 390 as "warrior"; set to *parutti* "cotton" with the old word as second.
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.
