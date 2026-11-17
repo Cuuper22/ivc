@@ -1,0 +1,35 @@
+test,what,k,n,share,base,P,points_to,strength,catalogue,unit
+K1,count sign right before/after,4,43,9%,24.3%,0.012,ur town,P<=0.1,L,faces
+K1,count sign right before/after,4,26,15%,25.8%,0.16,ur town,direction only,L,distinct
+K1,count sign right before/after,1,6,17%,20.8%,0.64,ur town,direction only,Mu,faces
+K1,count sign right before/after,1,6,17%,21.8%,0.61,ur town,direction only,Mu,distinct
+K2,tall-stroke count right before/after,0,43,0%,10.3%,0.0093,ur town,P<=0.1,L,faces
+K2,tall-stroke count right before/after,0,26,0%,9.5%,0.074,ur town,P<=0.1,L,distinct
+K2,tall-stroke count right before/after,0,6,0%,6.8%,0.65,ur town,direction only,Mu,faces
+K2,tall-stroke count right before/after,0,6,0%,7.5%,0.63,ur town,direction only,Mu,distinct
+K3,face is a tablet,29,43,67%,40.3%,0.0003,kuTu bin,P<=0.1,L,faces
+K3,face is a tablet,13,26,50%,25.8%,0.007,kuTu bin,P<=0.1,L,distinct
+K3,face is a tablet,1,6,17%,13.6%,0.58,kuTu bin,direction only,Mu,faces
+K3,face is a tablet,1,6,17%,9.8%,0.46,kuTu bin,direction only,Mu,distinct
+K4,grain header 413 on the face,21,43,49%,1.0%,6.4e-31,kuTu bin,P<=0.1,L,faces
+K4,grain header 413 on the face,7,26,27%,0.8%,1.2e-09,kuTu bin,P<=0.1,L,distinct
+K4,grain header 413 on the face,1,6,17%,0.5%,0.03,kuTu bin,P<=0.1,Mu,faces
+K4,grain header 413 on the face,1,6,17%,0.7%,0.04,kuTu bin,P<=0.1,Mu,distinct
+K5,cup/pot/measure word on the face,21,43,49%,16.9%,1.4e-06,kuTu bin,P<=0.1,L,faces
+K5,cup/pot/measure word on the face,7,26,27%,10.8%,0.018,kuTu bin,P<=0.1,L,distinct
+K5,cup/pot/measure word on the face,1,6,17%,9.5%,0.45,kuTu bin,direction only,Mu,faces
+K5,cup/pot/measure word on the face,1,6,17%,10.3%,0.48,kuTu bin,direction only,Mu,distinct
+K6,trade/price/tax word on the face,3,43,7%,7.2%,0.62,kuTu bin,direction only,L,faces
+K6,trade/price/tax word on the face,2,26,8%,7.6%,0.6,ur town,direction only,L,distinct
+K6,trade/price/tax word on the face,0,6,0%,7.4%,0.63,kuTu bin,direction only,Mu,faces
+K6,trade/price/tax word on the face,0,6,0%,7.6%,0.62,kuTu bin,direction only,Mu,distinct
+K7,jar or maka right after,20,43,47%,10.1%,1.1e-09,ur town,P<=0.1,L,faces
+K7,jar or maka right after,16,26,62%,9.7%,1.3e-10,ur town,P<=0.1,L,distinct
+K7,jar or maka right after,4,6,67%,8.1%,0.00056,ur town,P<=0.1,Mu,faces
+K7,jar or maka right after,4,6,67%,7.9%,0.00052,ur town,P<=0.1,Mu,distinct
+K8,Mohenjo-daro house-mates share it,,,,,1,ur town (no repeat),"same-house pairs 0 against 0.08 (Mohenjo-daro objects, 7 carry it, shuffled within area and 3-ft band)",L,objects
+K9,Harappa faces from mound F,8,29,28%,34.2%,0.3,ur town,direction only,L,faces
+K9-E,"Harappa faces from mound E (reported, no side)",12,29,41%,29.3%,0.11,kuTu bin,direction only,L,faces
+K9-AB,"Harappa faces from mound AB (reported, no side)",0,29,0%,6.2%,0.16,ur town,direction only,L,faces
+K10,slot after 575: place-class vs container-class fillers (distinct texts),23,34,23/34,,,ur town,count only,L+Mu,distinct
+K11,copy inflation: faces / distinct texts,43,26,,,,-,report,L,

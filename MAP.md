@@ -147,4 +147,13 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `guess` Signboard: *kāl kuṭai aracu · kāl kaṇ kuṟi oru · kāl kāl maru-*: "The quarter of King Umbrella. The quarter of the Marked Place, number one. Quarter by quarter, the Maru kin."
 - `measured` Long-text phrases (186): reads 111, partial 58, unread 8, nonsense 9 (was 76 / 73 / 8 / 29). By the parser rule alone, without three hand-marked signboard phrases: 108 reads, 11 nonsense.
 
+## Star names (from `jobs/out/star_names.md`)
+- `measured` Went against: numbers before a fish inside names do not bunch on 3, 6, 7. They bunch on 2 (136 of 191 distinct name texts); 3/6/7 are 15% in names against 36% in count slots.
+- `measured` In names the stroke form is locked to the fish: tall two with plain fish 65 of 73, short two with the marked crest fish 62 of 63 (P 1.6e-28); on new texts 14 of 16 and 17 of 17. In count slots the split is loose. Each fish takes one fixed number form in names (68% against 40% in counts).
+- `measured` Room-mates at Mohenjo-daro share the number word before a fish in 5 pairs against 0.74 (test designed after seeing the pairs; the earlier exact-match test gave 1 against 0.15).
+- `measured` Six + fish stands alone or before a closing sign in 13 of 15 texts, never as an amount. Tall two + plain fish is on 80 objects in 8 cities. Star-name seals carry the unicorn 67% against 56% (P 0.0007).
+- `guess` In names a number before a fish is spelled as part of a word, not counted. Attested Tamil star words all turn up in the name slot: *aṟu-mīn* Pleiades (17 objects), *mum-mīn* (21, incl. the Kish seal), *nāṇ-mīn* "lunar mansion" via four *nāl* / day *nāḷ* (7), *eḻu-mīn* Great Bear (1). Tall two + fish = *iru-mīn* "dark star, Saturn" (*iru* = two and black); "Venus" stays alive beside it.
+- `guess` Short two is a general name prefix (before 803 in 14 of 18, before 806 in 13 of 16).
+- `measured` Went against: name numbers following the star counts of the 28 lunar mansions; strokes drawn inside a fish as a written number; same-house sharing of exact compounds.
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.

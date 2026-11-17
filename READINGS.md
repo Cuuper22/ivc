@@ -636,3 +636,167 @@ Added by `work_scripts/sound_v4_readings.py` (fourth list: `jobs/out/sound_list_
 - Sound: *mū peṭṭi turumpu*
 - Word by word: `033` mū "three" · `590` peṭṭi "chest" · `416` turumpu "heap of threshed grain"
 
+
+# Star names
+
+Added 2026-11-17 by the star-names job (`jobs/out/star_names.md`, scripts `work_scripts/stars_*.py`). A number written directly before a fish inside a name is read as part of one star word, number + *mīn* "star" (DEDR 4885 fish / 4876 star), not as a count. Star words used: *aṟu-mīn* "the Pleiades" (six stacked strokes + fish; Tamil Lexicon p. 181), *eḻu-mīn* "the Great Bear" (seven + fish; Tamil Lexicon p. 544, Naṟṟiṇai 231), *mum-mīn* "Mṛgaśiras, the Three-star" (three + fish; Tamil Lexicon p. 3272), *nāṇ-mīn* "the asterism, lunar mansion" (four + fish, *nāl* "four" DEDR 3655 punning *nāḷ* "day, lunar mansion" DEDR 3656; Tamil Lexicon p. 2212, Kalittokai 104), *iru-mīn* "the Dark-star" (tall two + plain fish; *iru* "two" DEDR 474 punning *iru* "black" DEDR 2552, the pattern of the attested *maimmīṉ* "Saturn, the black star", Puṟanāṉūṟu 117; second live reading *veṇmīṉ* "Venus", Paṭṭiṉappālai 14), *or-mīn* "the Lone-star" (one + fish; *oru/ōr* "one", DEDR 990). Other values from `work_data/sound_v4/values_v4.csv`.
+
+## 81. The Great Bear.
+
+- Object: H-9 (SEAL:S Steatite)
+- Site and findspot: Harappa (F Trench I)
+- Signs: `017-220`
+- Sound: *eḻu-mīn*
+- Word by word: `017-220` eḻu-mīn "seven-star, the Great Bear" (the whole seal is the star name)
+
+## 82. The Pleiades.
+
+- Object: H-1028; 2 objects carry this exact text (SEAL:S Steatite 1, POT:T:s Clay 1, H-1086)
+- Site and findspot: Harappa (F-) x1, Harappa x1
+- Signs: `016-220`
+- Sound: *aṟu-mīn*
+- Word by word: `016-220` aṟu-mīn "six-star, the Pleiades" (a whole seal and a whole pot text: the name alone, never a count of fish)
+
+## 83. Quarter-share: manager of the Pleiades house.
+
+- Object: Ns-5 (SEAL:S Steatite)
+- Site and findspot: Nausharo
+- Signs: `820-002-016-220-740-090`
+- Sound: *kāl iru aṟu-mīn kuṭi āḷ*
+- Word by word: `820-002` kāl iru "quarter-share, two (opening formula)" · `016-220` aṟu-mīn "the Pleiades" · `740` kuṭi "house of" · `090` āḷ "manager"
+
+## 84. Quarter-share: keeper of the Pleiades.
+
+- Object: H-514 (SEAL:S Steatite)
+- Site and findspot: Harappa (AB-)
+- Signs: `820-002-016-220-151`
+- Sound: *kāl iru aṟu-mīn kā*
+- Word by word: `820-002` kāl iru "opening formula" · `016-220` aṟu-mīn "the Pleiades" · `151` kā "keeper"
+
+## 85. Pleiades-chief.
+
+- Object: K-150 (SEAL:S Steatite)
+- Site and findspot: Kalibangan (KLB-1)
+- Signs: `006-220-520`
+- Sound: *aṟu-mīn vēḷ*
+- Word by word: `006-220` aṟu-mīn "the Pleiades" (six written in one row, the only such six) · `520` vēḷ "chief"
+
+## 86. Three-star chief.
+
+- Object: M-1912 (SEAL:S Steatite)
+- Site and findspot: Mohenjo-daro (HR-A)
+- Signs: `003-220-520`
+- Sound: *mum-mīn vēḷ*
+- Word by word: `003-220` mum-mīn "Mṛgaśiras, the Three-star" · `520` vēḷ "chief"
+
+## 87. Of the Three-star house.
+
+- Object: M-294; 5 objects carry this exact text (SEAL:S Steatite 1, SEAL:R 2, TAB:B 2)
+- Site and findspot: Mohenjo-daro (HR-B) x1, (HR-A) x1, (DK) x3
+- Signs: `003-220-740`
+- Sound: *mum-mīn kuṭi*
+- Word by word: `003-220` mum-mīn "the Three-star" · `740` kuṭi "house of". Its room-mate M-266 (HR-B 1VIII, room 8, 5 ft against 6 ft) carries three + barred fish `013-233`: the same number word.
+
+## 88. Junior manager of the Three-star house.
+
+- Object: H-1056 (SEAL:S Steatite)
+- Site and findspot: Harappa (F Trench IV+V)
+- Signs: `003-220-740-090-400`
+- Sound: *mum-mīn kuṭi āḷ ciṟ*
+- Word by word: `003-220` mum-mīn "the Three-star" · `740` kuṭi "house of" · `090` āḷ "manager" · `400` ciṟ "junior"
+
+## 89. Of the Warrior-chest house of the Three-star.
+
+- Object: M-94 (SEAL:S Steatite)
+- Site and findspot: Mohenjo-daro (DKG South)
+- Signs: `003-220-590-390-740`
+- Sound: *mum-mīn peṭṭi maṟam kuṭi*
+- Word by word: `003-220` mum-mīn "the Three-star" · `590` peṭṭi "chest" · `390` maṟam "warrior" (or *parutti* "cotton", see `jobs/out/cotton_house.md`) · `740` kuṭi "house of"
+
+## 90. Threshing-pair: of the Three-star chest house (the Kish seal).
+
+- Object: Kish seal (SEAL:S), found in Mesopotamia
+- Site and findspot: Kish
+- Signs: `416-840-060-003-220-590-390-740`
+- Sound: *turumpu iṇai -iṉ mum-mīn peṭṭi maṟam kuṭi*
+- Word by word: `416` turumpu "heap of threshed grain" · `840` iṇai "pair" · `060` -iṉ "of" · `003-220` mum-mīn "the Three-star" · `590-390` peṭṭi maṟam (or peṭṭi parutti "boxed cotton") · `740` kuṭi "house of". The Three-star name travelled to Mesopotamia with the nine-city chest house.
+
+## 91. Share-holder: manager of the Asterism house.
+
+- Object: M-260 (SEAL:S Faience)
+- Site and findspot: Mohenjo-daro (DKG South)
+- Signs: `820-002-014-220-740-090`
+- Sound: *kāl iru nāṇ-mīn kuṭi āḷ*
+- Word by word: `820-002` opening formula · `014-220` nāṇ-mīn "the asterism, lunar mansion" (four stacked + fish) · `740` kuṭi "house of" · `090` āḷ "manager"
+
+## 92. Share-holder: Asterism-chief.
+
+- Object: M-75 (SEAL:S Steatite)
+- Site and findspot: Mohenjo-daro (VS-A)
+- Signs: `817-002-004-220-520`
+- Sound: *kāṇi iru nāṇ-mīn vēḷ*
+- Word by word: `817-002` kāṇi iru "share (opening formula)" · `004-220` nāṇ-mīn "the Asterism" · `520` vēḷ "chief"
+
+## 93. Asterism-chief.
+
+- Object: M-1206 (SEAL:S Steatite)
+- Site and findspot: Mohenjo-daro (DKG South)
+- Signs: `034-220-520`
+- Sound: *nāṇ-mīn vēḷ*
+- Word by word: `034-220` nāṇ-mīn "the Asterism" (four tall strokes) · `520` vēḷ "chief"
+
+## 94. Manager of the Dark-star house.
+
+- Object: H-502 (SEAL:S Steatite)
+- Site and findspot: Harappa (AB-)
+- Signs: `032-220-740-090`
+- Sound: *iru-mīn kuṭi āḷ*
+- Word by word: `032-220` iru-mīn "the Dark-star (Saturn); or veṇ-mīn, Venus" · `740` kuṭi "house of" · `090` āḷ "manager"
+
+## 95. Share-holder: Dark-star chief.
+
+- Object: M-1044 (SEAL:S Steatite)
+- Site and findspot: Mohenjo-daro (HR-B 5XXIX, room 37, 3 ft)
+- Signs: `861-002-032-220-520`
+- Sound: *kāṇi iru iru-mīn vēḷ*
+- Word by word: `861-002` kāṇi iru "opening formula" · `032-220` iru-mīn "the Dark-star" · `520` vēḷ "chief". Its room-mate M-240 (same room 37, 6 ft) reads `603-861-002-032-220-240-520` *[603] kāṇi iru iru-mīn mīmīn vēḷ* (603 unread): the same star name with the High-star crest added.
+
+## 96. King: of the Dark-star house of the two months.
+
+- Object: M-1686 (SEAL:S Steatite)
+- Site and findspot: Mohenjo-daro (DKG First Street)
+- Signs: `142-002-032-220-904-740`
+- Sound: *kō iru iru-mīn irutiṅkaḷ kuṭi*
+- Word by word: `142` kō "king, great man" · `002` iru · `032-220` iru-mīn "the Dark-star" · `904` irutiṅkaḷ "two months" · `740` kuṭi "house of"
+
+## 97. Price: of the Hill-share house of the two Bamboo-stars.
+
+- Object: M-788 (SEAL:S)
+- Site and findspot: Mohenjo-daro
+- Signs: `824-002-235-482-740`
+- Sound: *vilai iru vēymīn kōṭukāṇi kuṭi*
+- Word by word: `824` vilai "price" · `002-235` iru vēymīn "the two Bamboo-stars, Punarvasu (Castor and Pollux, a pair)" · `482` kōṭukāṇi "hill share" · `740` kuṭi "house of"
+
+## 98. Great measure, measure, one: Lone-star chief.
+
+- Object: M-65 (SEAL:S Steatite)
+- Site and findspot: Mohenjo-daro (DKG South)
+- Signs: `575-706-001-031-220-520`
+- Sound: *kōṭṭai kalam oru or-mīn vēḷ*
+- Word by word: `575` kōṭṭai "great grain measure" · `706` kalam "measure" · `001` oru "one" (short) · `031-220` or-mīn "the Lone-star" (tall one + fish) · `520` vēḷ "chief"
+
+## 99. One great measure: manager of the house of the Elder of the two Bright-stars.
+
+- Object: L-4 (SEAL:S Steatite)
+- Site and findspot: Lothal (SRG 2B 25)
+- Signs: `031-575-002-233-100-740-090`
+- Sound: *oru kōṭṭai iru vāḷmīn mutu kuṭi āḷ*
+- Word by word: `031` oru "one" · `575` kōṭṭai "great grain measure" · `002-233` iru vāḷmīn "two Bright-stars" (barred fish as the crest word) · `100` mutu "elder" · `740` kuṭi "house of" · `090` āḷ "manager"
+
+## 100. Share-holder: the Dark-star (a new text).
+
+- Object: second catalogue text 6211 (seal; no partner in the first catalogue, never used to choose a value)
+- Site and findspot: Chanhu-daro
+- Signs: `861-002-032-226`
+- Sound: *kāṇi iru iru-mīn*
+- Word by word: `861-002` kāṇi iru "opening formula" · `032-226` iru-mīn "the Dark-star" written with the caged fish, which room-mates use in place of the plain fish (two Mohenjo-daro rooms)
