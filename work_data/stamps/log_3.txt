@@ -1,0 +1,86 @@
+[stamps_3    0.1s] 1093 complete faces of 4+ signs (1028 seals)
+texts of 4+ signs on a seal in one city and a seal or impression in another: 9
+               text                               cities                                                                                                                                                                                                                                                                                               where
+817-002-803-233-520                Chanhu-daro / Harappa                                                                                                                                                                                                                                       Chanhu-daro:seal:C-67:Mound I ; Harappa:seal:H-501:FTrench VI
+    817-002-003-390 Chanhu-daro / Harappa / Mohenjo-daro                                                                                                                                                                                                                    Chanhu-daro:seal:C-66:- ; Harappa:seal:H-407:J ; Mohenjo-daro:seal:M-32:DKG. (S)
+    817-002-004-390             Dholavira / Mohenjo-daro                                                                                                                                                                                                                      Dholavira:seal:-:- ; Mohenjo-daro:seal:M-1844:DKE ; Mohenjo-daro:seal:M-984:HR
+    003-140-100-740               Harappa / Mohenjo-daro                                                                                                                                                                                                                        Harappa:seal:H-1032:AB ; Harappa:seal:H-62:AB ; Mohenjo-daro:seal:M-1108:DKB
+    061-142-400-740               Harappa / Mohenjo-daro                                                                                                                                                                                                                Harappa:seal:H-1679:ETrench 11W ; Harappa:seal:H-451:F ; Mohenjo-daro:seal:M-879:DKG
+061-171-035-740-090               Harappa / Mohenjo-daro                                                                                                                                                                                                                                    Harappa:seal:H-565:FTrench VI ; Mohenjo-daro:seal:M-265:DKG. (S)
+    820-002-003-390    Harappa / Mohenjo-daro / Nausharo                                                                                                                                                                             Harappa:seal:H-1680:E-ETTrench 10E ; Mohenjo-daro:seal:M-1729:DKG ; Nausharo:seal:Ns-7:- ; Mohenjo-daro:seal:M-1806:DKB
+    861-002-003-390            Kalibangan / Mohenjo-daro                                                                                                                                                                                                     Kalibangan:sealing:K-82:KLB-1 ; Mohenjo-daro:seal:M-1697:DKG. (S) ; Mohenjo-daro:seal:M-712:DKB
+    817-002-048-740                Lothal / Mohenjo-daro Lothal:sealing:L-161:SRG 3GX 10 ; Lothal:sealing:L-162:- ; Lothal:sealing:L-163:- ; Lothal:sealing:L-164:- ; Lothal:sealing:L-165:- ; Lothal:sealing:L-166:- ; Lothal:sealing:L-167:- ; Lothal:sealing:L-168:- ; Lothal:sealing:L-169:- ; Lothal:sealing:L-170:- ; Mohenjo-daro:seal:M-895:DKG. (S)
+[stamps_3    0.1s] deal 0
+[stamps_3    2.0s] deal 1000
+[stamps_3    4.3s] deal 2000
+[stamps_3    6.3s] deal 3000
+[stamps_3    8.5s] deal 4000
+
+City pairs: links against city-label deals
+      city_a       city_b  links  expected  ratio   P_ge
+     Harappa Mohenjo-daro      5      5.59   0.89 0.7234
+ Chanhu-daro      Harappa      2      0.26   7.63 0.0256
+      Lothal Mohenjo-daro      1      1.95   0.51 0.8832
+   Dholavira Mohenjo-daro      1      1.44   0.70 0.7964
+  Kalibangan Mohenjo-daro      1      1.04   0.96 0.6678
+ Chanhu-daro Mohenjo-daro      1      0.76   1.32 0.5448
+Mohenjo-daro     Nausharo      1      0.38   2.61 0.3250
+     Harappa     Nausharo      1      0.13   7.62 0.1246
+     Harappa       Lothal      0      0.67   0.00 1.0000
+all cross-city links 13; deals mean 16.7, P(deal >= real) 0.5800
+faces per city in the 4+ sign set: {'Mohenjo-daro': 688, 'Harappa': 190, 'Lothal': 60, 'Dholavira': 43, 'Kalibangan': 31, 'Chanhu-daro': 22, 'Nausharo': 11, 'Allahdino': 4, 'Gola Dhoro (Bagasra)': 4, 'Bala-kot': 3}
+second catalogue, sealings outside Harappa, 2+ signs: 33 of 177 have an exact seal twin; twin in the same city for 13; a random seal of that length is in that city 41.4% of the time
+second catalogue, sealings outside Harappa, 3+ signs: 23 of 143 have an exact seal twin; twin in the same city for 6; a random seal of that length is in that city 32.5% of the time
+    1619 MD 255-435-690-740 -> seal cities ['MD']
+    2374 MD 003-220-740 -> seal cities ['MD']
+    2810 MD 468-806-158-400 -> seal cities ['HP']
+    2812 MD 468-806-158-400 -> seal cities ['HP']
+    2864 MD 415-100-740-400 -> seal cities ['MD']
+    2937 MD 832-832-740 -> seal cities ['MD']
+    3213 MD 032-220-740 -> seal cities ['HP']
+    3218 MD 003-220-740 -> seal cities ['MD']
+    3223 MD 790-100-740 -> seal cities ['LL']
+    3244 MD 832-832-740 -> seal cities ['MD']
+    7203 LL 861-002-048-740 -> seal cities ['MD']
+    7205 LL 861-002-048-740 -> seal cities ['MD']
+    7206 LL 861-002-048-740 -> seal cities ['MD']
+    7228 LL 861-002-048-740 -> seal cities ['MD']
+    7230 LL 861-002-048-740 -> seal cities ['MD']
+    7231 LL 861-002-048-740 -> seal cities ['MD']
+    7232 LL 861-002-048-740 -> seal cities ['MD']
+    7233 LL 861-002-048-740 -> seal cities ['MD']
+    7234 LL 861-002-048-740 -> seal cities ['MD']
+    7279 LL 705-033-520 -> seal cities ['HP', 'MD']
+    8106 KB 861-002-004-405 -> seal cities ['MD']
+    8122 KB 861-002-003-390 -> seal cities ['CD', 'HP', 'MD']
+    9022 OS 017-585-740 -> seal cities ['MD']
+second catalogue, Harappa "sealings" (mostly moulded tablets), 2+ signs: 41 of 351 have an exact seal twin; twin in the same city for 26; a random seal of that length is in that city 17.1% of the time
+second catalogue, Harappa "sealings" (mostly moulded tablets), 3+ signs: 27 of 219 have an exact seal twin; twin in the same city for 18; a random seal of that length is in that city 16.0% of the time
+    4303 HP 820-820-740 -> seal cities ['MD']
+    4306 HP 840-032-740 -> seal cities ['LL']
+    4306 HP 840-032-740 -> seal cities ['LL']
+    4323 HP 468-806-158 -> seal cities ['HP', 'MD']
+    4326 HP 861-002-004-405 -> seal cities ['MD']
+    4341 HP 468-806-158-400 -> seal cities ['HP']
+    4361 HP 061-142-400-740 -> seal cities ['HP', 'MD']
+    4363 HP 013-840-740 -> seal cities ['HP', 'LL', 'MD']
+    4377 HP 016-220-520 -> seal cities ['HP']
+    4602 HP 590-390-740-400 -> seal cities ['HP']
+    4649 HP 255-435-156 -> seal cities ['MD']
+    4651 HP 003-550-615-615 -> seal cities ['HP', 'MD']
+    4690 HP 590-390-740-400 -> seal cities ['HP']
+    5242 HP 468-806-158 -> seal cities ['HP', 'MD']
+    5245 HP 468-806-158 -> seal cities ['HP', 'MD']
+    5250 HP 013-840-740 -> seal cities ['HP', 'LL', 'MD']
+    5251 HP 468-806-158 -> seal cities ['HP', 'MD']
+    5255 HP 468-806-158 -> seal cities ['HP', 'MD']
+    5279 HP 142-615-615 -> seal cities ['HP', 'MD']
+    5284 HP 468-806-158 -> seal cities ['HP', 'MD']
+    5296 HP 468-806-158 -> seal cities ['HP', 'MD']
+    5300 HP 240-503-017-740-400 -> seal cities ['MD']
+    5320 HP 415-220-520 -> seal cities ['MD']
+    5324 HP 840-032-740 -> seal cities ['LL']
+    5335 HP 484-336-740 -> seal cities ['HP']
+    5336 HP 484-336-740 -> seal cities ['HP']
+    5341 HP 832-832-740 -> seal cities ['MD']
+[stamps_3   10.7s] done step 3

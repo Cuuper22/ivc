@@ -296,4 +296,15 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `guess` A count-line seal is a quantity stamp pressed onto goods.
 - `measured` Went against: count-line seals differing from name seals in size (once length is matched), animal, findspot, time or being abroad; the short-horned bull is rarer on them (1.3% against 4.6%). Photo check of 30 restorations: 5 fit the top candidate, 3 fit another sign, 22 could not be judged.
 
+## Seals matched to their clay stamps (from `jobs/out/stamps.md`)
+- `measured` Impressions taken: 262 tag faces and 74 stamped pots. For impressions of 3+ signs every seal with the identical text is in another city (13 of 13); at 2+ signs 18 of 24 are in another city, none in the same building. Only 6 of 24 have a twin in their own city against 16.2% for a random seal of that length. Twin pairs carry different animals 15 times, the same 19 times. Shuffling signs inside texts gives 6.1 matches against 24.
+- `guess` The text belongs to many stones (a house, an office, a formula); the animal belongs to the individual stone. The stone that made an impression is almost never among the excavated seals.
+- `measured` Count-line seals have their text on an impression 24.5% against 4.3% for length-matched other seals; name seals 1.2%. Jar + man texts are 5.4% of impressions against 2.5% of seals (P 0.010).
+- `measured` 33 objects carry several impressions: typically a name or jar-man stamp plus a short front-word stamp (861-002 + one sign, or 317-920-002), sometimes with a 055 stamp.
+- `measured` Tag subtype letters match the backs in 20 photos: B wooden box, P plain token, L soft package (cloth, reeds, cords), R storage jar. Count lines sit on L 5 of 40 faces against 2 of 296 elsewhere (P 0.0003); jar-man texts on L 7 of 40.
+- `measured` Seal and tablet pairs in one area with the same number and thing: 89 against 69.5 (P 0.003), mostly Harappa F Trench I (seals 033-700 / 034-700 beside 29 and 17 tablets with the same text).
+- `measured` Lothal warehouse square: 7 different texts on 15 faces against 12.96 by chance; one jar-man stamp 8 times; the matching seals are at Mohenjo-daro. Kalibangan KLB-1: 2 texts against 7.35.
+- `guess` A store holds a few senders each stamping many packages; a transaction is two or three stamps on one lump (who + heading + sometimes how many).
+- `measured` Went against: the stamping stone staying in the same city as its impressions; office front and travelling names over-represented on impressions; stores receiving from many houses; city-to-city links above chance overall (13 against 16.7).
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.

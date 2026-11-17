@@ -1,0 +1,153 @@
+[stamps_2    0.2s] seals 2290 faces; impressions 336 faces (262 sealing, 74 stamped pot); moulded tablets 1108
+Impression faces by type and site:
+/home/claude/ivc/work_scripts/stamps_2_match.py:51: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  print('Impression faces by type and site:'); print(pd.crosstab(I.type, I.site).T.loc[lambda x: x.sum(1) > 0].to_string())
+type               POT:T:S  POT:T:s  TAG  TAG:B  TAG:C  TAG:L  TAG:O  TAG:P  TAG:PC  TAG:R  TAG:W
+site                                                                                             
+Allahdino                0        0    1      0      0      0      0      0       0      0      0
+Banawali                 0        0    1      0      0      0      0      0       0      0      0
+Chanhu-daro              0        0    0      0      0      0      0      1       0      0      0
+Desalpur                 0        0    1      0      0      0      0      0       0      0      0
+Dholavira                0        0   69      0      0      2      0      0       5      0      0
+Farmana                  0        0    1      0      0      0      0      0       0      0      0
+Ganweriwala              0        0    1      0      0      0      0      0       0      0      0
+Harappa                  1       50    6      0      0      6      0      4       0      3      0
+Hulas                    0        0    0      0      0      0      0      1       0      0      0
+Kalibangan               0        0   10      0      0     18      0      0       0      0      0
+Kanmer                   0        0    1      0      0      0      0      0       0      0      0
+Lakhanjo-daro            0        0    5      0      0      0      0      0       0      0      0
+Lothal                   0        0   70     10      0      6      1      3       0      0      1
+Mohenjo-daro             0       22    0      0      4      4      5      6       0      1      3
+Nausharo                 0        0    2      0      0      0      0      0       0      0      0
+Rakhigarhi               0        0    1      0      0      0      0      0       0      0      2
+Rupar                    0        0    0      0      0      3      0      0       0      0      0
+Salut                    0        0    1      0      0      0      0      0       0      0      0
+Tarkhanewala-dera        0        0    1      0      0      0      0      0       0      0      0
+Tell Umma                0        0    0      0      0      1      0      0       0      0      0
+Tepe Yahya               0        1    0      0      0      0      0      0       0      0      0
+Tigrana                  0        0    1      0      0      0      0      0       0      0      0
+[stamps_2    0.3s] matching every impression against every seal ...
+[stamps_2    0.3s]   impression 0/336
+[stamps_2    0.4s]   impression 50/336
+[stamps_2    0.6s]   impression 100/336
+[stamps_2    0.7s]   impression 150/336
+[stamps_2    0.9s]   impression 200/336
+[stamps_2    1.0s]   impression 250/336
+[stamps_2    1.1s]   impression 300/336
+
+== Matches (pairs impression-seal) by type ==
+match
+lost sign(s) fit          543
+one sign different        373
+one sign more or fewer    134
+exact                      82
+restored equal             26
+impressions with an exact seal twin: 40 of 176 complete impression faces (texts of 2+ signs: 24 of 131)
+exact matches where both animals recorded: agree 19 disagree 15
+
+== Control (a) order shuffle: impressions (2+ signs, complete) whose exact text is on a seal: 24 of 131; with signs shuffled inside each text 6.1 (max 12) of 200 shuffles
+== Control (b): a seal text recurs on ANOTHER seal 19.2% of the time at the impressions' length mix; impressions find a seal twin 18.3%
+
+== Where the nearest exact twin seal lies (one row per impression, texts of 2+ signs) ==
+place
+same room                       0
+same building                   0
+same block                      2
+same area                       0
+same city, other area           2
+same city, findspot unknown     2
+other city                     18
+texts of 3+ signs:
+place
+same room                       0
+same building                   0
+same block                      0
+same area                       0
+same city, other area           0
+same city, findspot unknown     0
+other city                     13
+(d) impressions whose twin seals include one in the same city: 6 of 24 (25.0%); a random seal of the same length lies in that city 16.2% of the time
+[stamps_2    1.3s] findspot shuffle (2,000 deals) ...
+[stamps_2    1.5s]   deal 0
+[stamps_2  110.4s]   deal 500
+[stamps_2  179.3s]   deal 1000
+[stamps_2  254.4s]   deal 1500
+
+== (c) Impressions with an exact twin seal at the same findspot level, real against seal findspots shuffled within city ==
+  room      real 0  shuffled mean 0.00  P(shuffle >= real) 1.0000
+  building  real 0  shuffled mean 0.01  P(shuffle >= real) 1.0000
+  block     real 2  shuffled mean 0.15  P(shuffle >= real) 0.0600
+  area_key  real 2  shuffled mean 2.28  P(shuffle >= real) 0.8505
+
+== Which seal kinds turn up as impressions (exact text, 2+ signs) ==
+                                   seals  on_impression  share  length_matched_other_seals_%  P_draws_ge
+skind                                                                                                   
+count line                            49             12   24.5                           4.3      0.0000
+damaged                              137              2    1.5                           3.7      0.8910
+name                                 569              7    1.2                           2.2      0.9730
+other                                738              8    1.1                           1.4      0.6895
+agent (jar + man)                     49              0    0.0                           0.1      1.0000
+office front 920-060-741              25              0    0.0                           0.1      1.0000
+travelling name 255-435-690(-740)     16              0    0.0                           0.1      1.0000
+travelling name 590-390(-740)         40              0    0.0                           0.2      1.0000
+
+Impression faces by text kind (their own text):
+skind
+damaged                              197
+other                                 77
+name                                  33
+agent (jar + man)                     17
+travelling name 590-390(-740)          5
+count line                             3
+office front 920-060-741               3
+travelling name 255-435-690(-740)      1
+
+== Multi-stamp objects: 33 ==
+ obj   cisi   type         site         area  stamps  readable                                                                                             texts                                                 kinds                               animals  distinct_texts  distinct_kinds
+1941   K-86  TAG:L   Kalibangan        KLB-1       4         1                                                             550-000-000-000-000 | 000 | 000 | 000                 damaged | damaged | damaged | damaged             bull | bull | bull | bull               0               0
+1942   K-87  TAG:L   Kalibangan        KLB-1       2         2                                                                     000-740 | 861-002-000-000-740                                     damaged | damaged                           Mult | Mult               0               0
+1943   K-88  TAG:L   Kalibangan        KLB-2       4         2                                 861-002-460-000-740 | 000-000-000-740 | 000-000 | 000-000-000-000                 damaged | damaged | damaged | damaged unicorn | unicorn | unicorn | unicorn               0               0
+1944   K-89  TAG:L   Kalibangan                    4         4 832-360-002-362-740-090 | 000-002-000-705-033-000 | 000-390-595-002-350-001 | 000-000-000-491-000       agent (jar + man) | damaged | damaged | damaged unicorn | unicorn | unicorn | unicorn               1               1
+1982      -    TAG       Lothal   SRG 3GX 10       2         1                                                                         000-740-000 | 000-000-000                                     damaged | damaged                                 - | -               0               0
+2110  L-188    TAG       Lothal    SRG 2B 1y       3         3                                                                       000-740 | 000-520 | 000-033                           damaged | damaged | damaged                             - | - | -               0               0
+2111  L-189    TAG       Lothal   SRG 3GX 10       2         1                                                                     000-220-740-090 | 000-000-000                           agent (jar + man) | damaged                                 - | -               0               1
+2112  L-190    TAG       Lothal   SRG 3GX 10       3         3                                   705-500-741-001-055-220-740-090 | 317-920-002-000-000-000 | 880                 agent (jar + man) | damaged | damaged                             - | - | -               2               1
+2113  L-191    TAG       Lothal                    2         2                                                     705-500-741-001-055-220-740-090 | 861-002-235                           agent (jar + man) | damaged                                 - | -               2               1
+2115  L-193    TAG       Lothal   SRG 3GX 10       3         2                                                   705-500-741-001-055-220-740-090 | 000 | 070-125                 agent (jar + man) | damaged | damaged           unicorn | unicorn | unicorn               2               1
+2116  L-196    TAG       Lothal   SRG 3GX 10       2         2                                                                     000-002-032-590-390 | 861-002               travelling name 590-390(-740) | damaged                                 - | -               1               1
+2117  L-197    TAG       Lothal                    2         2                                                 705-500-741-001-055-220-740-090 | 000-032-000-000                           agent (jar + man) | damaged                                 - | -               1               1
+2118  L-198    TAG       Lothal                    2         2                                                             000-000-055 | 000-002-032-590-390-740               damaged | travelling name 590-390(-740)                                 - | -               0               1
+2120  L-200    TAG       Lothal                    2         1                                                                     617-220-000-000 | 000-000-000                                     damaged | damaged                                 - | -               0               0
+2122  L-202    TAG       Lothal                    2         2                                                                     220-590-390-000 | 861-002-236               travelling name 590-390(-740) | damaged                                 - | -               1               1
+2124  L-205    TAG       Lothal     SRG 2E 2       2         2                                                                 000-760-740 | 000-002-803-798-740                                     damaged | damaged                                 - | -               0               0
+2127  L-208    TAG       Lothal                    2         2                                                                     000-002-000 | 820-002-220-234                                     damaged | damaged                                 - | -               1               0
+2128  L-210    TAG       Lothal      SRG 2B2       2         2                                                                 406-000-000-104 | 000-000-904-740                                     damaged | damaged                     unicorn | unicorn               0               0
+2129  L-211    TAG       Lothal                    3         3                                   000-231-100-740 | 000-002-220-233-388-740 | 000-240-335-760-740                           damaged | damaged | damaged                    bull | bull | bull               0               0
+2919 H-2584  TAG:R      Harappa                    3         3                                       705-033-095-520-468-806 | 798-231-550-527 | 055-255-435-690 damaged | damaged | travelling name 255-435-690(-740)                             - | - | -               3               1
+2920  M-426  TAG:W Mohenjo-daro     DKG. (N)       3         3                                                       000-705-595 | 000-705-595 | 000-530-000-000                           damaged | damaged | damaged                             - | - | -               0               0
+3681 M-1385  TAG:P Mohenjo-daro                    4         3                         817-002-032-760-740 | 817-002-032-760-740 | 817-002-032-760-740 | 000-000                       name | damaged | name | damaged unicorn | unicorn | unicorn | unicorn               1               1
+3868  Rgr-3  TAG:W   Rakhigarhi                    2         2                                                                         820-032-130 | 820-032-130                                         other | other                     unicorn | unicorn               1               1
+3872      -  TAG:L        Rupar                    3         3                                                       235-032-877-740 | 017-585-740 | 000-460-302                                 name | name | damaged           unicorn | unicorn | unicorn               2               1
+4156      -    TAG    Dholavira       Bailey       2         2                                                                 820-002-000-520 | 820-002-000-000                                     damaged | damaged                     unicorn | unicorn               0               0
+4304      -    TAG    Dholavira                    2         2                                                                         552-840-000 | 515-032-000                                     damaged | damaged                                 - | -               0               0
+4314      -    TAG    Dholavira                    2         2                                                                 820-002-000-520 | 000-002-000-520                                     damaged | damaged                     unicorn | unicorn               0               0
+4331      -    TAG    Dholavira                    2         2                                                                     000-055-740-090 | 000-740-090                 agent (jar + man) | agent (jar + man)                                 - | -               0               1
+4332      -    TAG    Dholavira                    2         2                                                                     000-740-090 | 000-055-740-000                           agent (jar + man) | damaged                                 - | -               0               1
+4335      - TAG:PC    Dholavira                    3         2                                                           000 | 000-220-840-032-740 | 000-760-740                           damaged | damaged | damaged                             - | - | -               0               0
+ 517 H-1722    TAG      Harappa            E       2         2                                                                         000-415-220-520 | 220-000                                     damaged | damaged                                 - | -               0               0
+5531 M-2035  TAG:C Mohenjo-daro     DKG. (S)       2         0                                                                         000-000-000 | 000-000-000                                     damaged | damaged                           Mult | Mult               0               0
+ 940 H-1720  TAG:L      Harappa ABTrench 39N       2         2                                                             326-405-090-405-893-413-033 | 792-000                                     damaged | damaged                                 - | -               1               0
+
+== Clusters (areas with 4+ impression faces) ==
+        site         area  impressions  objects  complete  distinct_texts  most_copies                        top_text  crests                                                                             kinds  twin_seals  twin_seals_same_area  twin_seals_other_city
+      Lothal   SRG 3GX 10           25       18        15               7            8 705-500-741-001-055-220-740-090       3 damaged 13, agent (jar + man) 9, other 1, name 1, travelling name 590-390(-740) 1           2                     0                      2
+     Harappa   FTrench 43           22       22        22               8            7                             440       1                                                               other 20, damaged 2           0                     0                      0
+  Kalibangan        KLB-1           16       12         8               2            7         091-056-002-417-890-892       1                                                                other 8, damaged 8           2                     0                      2
+Mohenjo-daro     DKG. (S)           10        9         5               4            2                         003-156       1                 damaged 5, count line 3, travelling name 590-390(-740) 1, other 1          12                     4                      6
+Mohenjo-daro           DK            9        9         4               4            1                     408-004-747       3                            damaged 5, other 2, name 1, office front 920-060-741 1           0                     0                      0
+   Dholavira  Middle Town            6        6         2               2            1                         220-740       2                                                        damaged 4, name 1, other 1           0                     0                      0
+     Harappa ABTrench 39N            6        5         4               4            1     326-405-090-405-893-413-033       0                                                                damaged 4, other 2           0                     0                      0
+   Dholavira       Castle            5        5         2               2            1                     220-794-148       1                                                                         damaged 5           0                     0                      0
+  Kalibangan        KLB-2            5        2         1               1            1                 861-002-033-520       2                                                                 damaged 4, name 1           0                     0                      0
+Mohenjo-daro     DKG. (N)            4        2         1               1            1                         171-035       0                                                                damaged 3, other 1           0                     0                      0
+[stamps_2  332.1s] done step 2
