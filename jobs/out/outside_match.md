@@ -88,3 +88,79 @@ Every one I could find or the repository audit lists carries one script only.
 - `measured` 407 is counted with a tall two on 9 of 28 places, 390 on 2 of 90 (P 3e-5): cloth by the piece, cotton in lots.
 - `guess` Umma 1931.120 = jar sealing "six cotton" from an Indus hand; Girsu wool texts with Ur-Lamma son of Meluhha are the cuneiform side to search.
 - `measured` Went against: no Meluhha-tagged cloth word in CDLI; no loan candidate fits a cotton word; 705-tree frame at chance.
+
+
+## Second way in
+
+Scripts: `work_scripts/abroad2_10` to `abroad2_14`. Tables and logs: `work_data/abroad2/`. Every sign number is a Lipi number. In this section "tree sign" means 390, 392, 405, 406 or 407, the family of cotton, thread and cloth signs.
+
+### Item 1. Sealed Girsu, Lagash and Umma tablets that name Guabba or Meluhha
+
+Prediction, written before the count: at least one sealed wool or cloth tablet has a seal that is not cuneiform (a picture seal, or an uninscribed one). Result: it went against.
+
+- `measured` CDLI search (abroad2_10) found 585 tablets from Girsu, Lagash and Umma naming Guabba or Meluhha (50 name Meluhha, 535 name only Guabba). Almost all are Ur III (abroad2_11).
+- `measured` 24 have a real seal record in CDLI. 33 have a seal block in their transcription (abroad2_12). Of those, 13 are about Meluhha or textiles. All 13 have a cuneiform legend or a note that the legend is broken. None is uninscribed, pictorial or foreign. Table `sealed_blocks.csv`, log `sealblocks_log.txt`.
+- The seal type is the standard Ur III cylinder with a name, a title (scribe) and a father's name. CDLI photo pages sit at `https://cdli.earth/P<number>`; I could not fetch the images from this workspace, so I did not look at the seals themselves, only their transcribed legends.
+
+| CDLI | Text | Date | Subject | Seal legend |
+|---|---|---|---|---|
+| P116633 | MVN 12 371 | Amar-Suen 3 | barley, "from Meluhha" account | Abba, son of Nigar-du |
+| P140868 | UTI 4 2849 | Shu-Suen 2 | furniture and hides, Meluhha-named | Lugal-nir, scribe, son of Ur-Shara |
+| P206053 | BM 025318 | Ibbi-Suen 3 | barley, "in Meluhha" | Abba-kala, son of Utu-bara |
+| P235705 | unpublished | Shu-Suen 1 | barley ration, sealed | [Ur]-Ishtaran, scribe |
+| P374962 | Nisaba 18 041 | Shulgi 42 | workmen and barley | Lu-Dumuzi, priest of Inanna |
+| P318542 | PPAC 5 323 | Amar-Suen 6 | Meluhha and wool, mixed | illegible |
+| P110419 | HSS 4 146 | Shu-Suen 9 | dead sheep, "weaver woman of Guabba" | broken |
+| P110431 | HSS 4 158 | Amar-Suen 5 | wool by the mina, merchants | Lu-Utu, scribe |
+| P116163 | MVN 11 150 | Amar-Suen 5 | the same wool account, a second copy | Lu-Utu, scribe |
+| P124726 | Orient 16 77 | undated | fat, singers | almost illegible |
+| P204420 | BM 025279 | Amar-Suen 2 | sheep and goats, textile office | Ur-nigar; Lu-Nin-[...] |
+| P206508 | BM 027774 | Shu-Suen 6 | cloth by the mina (tug2 lugal, tug2 us2) | Kuda-Baba, scribe, "overseer of weavers" |
+| P374155 | Nisaba 17 026 | Amar-Suen 4 | barley, work of the weaver women of Guabba | Lu-Naru, scribe |
+
+The best of these for the question is P206508: a sealed tablet of cloth by the mina, with the weavers' overseer on the seal. The seal is cuneiform. The hope that an Indus-style seal sits on a Lagash cloth tablet did not come true here. Girsu and Umma scribes sealed with their own cylinders even when the goods are Meluhha-named.
+
+Rescue tried (the one better test): I widened from the word "Meluhha" to the "weaver woman of Guabba" phrase, since Guabba is the port district. That brought in the textile group above but still no foreign seal. New idea not yet run: the CDLI seal-impression records that have no transcription (24 minus the 13 here) could hold a pictorial seal, and need a look at the photographs.
+
+### Item 2. Ashmolean 1931.120
+
+- `measured` CDLI P549950 is "Ashm 1931-0120", a clay sealing from Umma. I could not get the museum photo: the Ashmolean collections page is blocked from here and the CDLI image link returns 404.
+- `measured` I read Parpola's figure 7.16 (1994 PDF, page 131). It is a one-bit scan. A row of upright strokes shows, but too coarse to count. I did not count six or five by eye; the question of Tosi's six against the catalogue's five stays open until a clean photo is seen.
+- Reading, with the five-sign form and our values: `127 705 002 004 390` = [127, unvalued] kalam, two, four, cotton. The sixth sign, if Tosi is right, is the one to see. Note that values_master now lists 390 as maṟam "warrior" (strict reading), while the cotton reading (parutti) stays alive in our work. The count formula "2, 4, tree" still holds in either case.
+
+### Item 3. Every foreign object read whole (abroad2_13)
+
+Statement kinds: LOT (a counted thing), NAME plus jar ("of the house of"), NAME with no jar, OFFICE or man, MIXED (name plus lot). 69 foreign objects, 57 of them seals; 1969 home seals as the comparison.
+
+Prediction, written before the numbers: foreign seals lean to lot labels, with lot-bearing texts at least 1.3 times the home share; round seals more so; and the jar ending is rarer abroad.
+
+| Group | Lot-bearing | Ends in the jar |
+|---|---|---|
+| Foreign seals (57) | 28 (49%) vs home 894/1969 (45%), x1.08, P 0.34 | 11 vs home 631/1969, ratio 0.61, P(fewer) 0.026 |
+| Foreign square seals (32) | 14 (44%), x0.96, P 0.64 | 9, ratio 0.88, P 0.40 |
+| Foreign round seals (25) | 14 (56%), x1.23, P 0.20 | 2, ratio 0.25, P(fewer) 0.005 |
+| Trade-word texts, all foreign seals | 16/57 (28%) vs 512/1969 (26%), P 0.41 | |
+
+- `measured` Went against: the lot-label skew is not there. 1.08 is far under the 1.3 I predicted, and the round-seal 1.23 is not significant. The trade-word share is the same too.
+- `measured` What held: the jar ending is lost abroad, strongest on cylinders (2 of 25). The reading is that abroad the seal names the person but drops the "of the house" tail.
+- Rescue: the better test was to split by seal shape (done above, the table). The new idea is that the count signal needs the frame "2, 4, tree" rather than any number; that frame stands at 2 of 2 abroad (Umma, Salut) and 16 of 20 at home, which is the small sharp signal in the first round. Full table: `foreign_read_whole.csv`.
+
+### Item 4. Sesame
+
+Prediction, written before the number: sign 838 (our eḷ, sesame) is on fewer than 3 foreign objects and on none from Mesopotamian sites.
+
+- `measured` Result (abroad2_14): 838 appears on 0 of 69 foreign objects and on 19 of 5610 home objects (Mohenjo-daro 12, Chanhu-daro 2, Harappa 2, Gharo Bhiro 1, Kalibangan 1, Lothal 1). Among the 532 objects from port-type sites in my list, 3 carry it (Chanhu-daro 2, Lothal 1). Prediction held, but a zero in 69 is weak evidence either way.
+- `read` Munich oil project, article on sesame: sesame seed and oil are first attested in Mesopotamia in Middle Sargonic texts from the governor's palace at Adab, about 2280-2240 BCE (one tablet, CUSAS 11 326, may be earlier but is undated). Sumerian forms are giš-ì, ì-giš (oil) and še-giš-ì (seed). Later it appears at Girsu and Umma in Ur III, and also Susa and the Diyala. The article says the Adab texts tie sesame to a named field, which points to local growing, and that sesame goods are not on the Meluhha and Magan trade lists. It also notes Meluhhan boats and people are in the Adab archive. It gives no Dravidian etymology.
+- `read` Munich glossary entry "ellum": an Old Babylonian lexical list equates el-lu with the logogram i3.giš; later Nineveh lists and a medical text have it. Ur is named through UET 5 73, a letter about a sesame shortfall. That page itself proposes an Indus source and a Dravidian el or ellu, but gives no first-attestation claim and no Meluhha or Dilmun mention. This is the claim to be tested, not a finding: the word is first in an Old Babylonian list, 400 or so years after sesame appears at Adab.
+- So: the oil word "ellum" comes late, and the early texts do not tie sesame to Meluhha traders. This goes against a quick "sesame came with the Meluhha ships" story. What stays alive is the weaker link: Meluhhans were present at Adab in the same archive, and the plant itself came from South Asia.
+
+### Item 5. Paywalled sources
+
+Chrome tools were not connected, so ePSD2, ORACC and JSTOR could not be driven through a logged-in browser; ORACC and ePSD2 also fail TLS from the workspace. Used instead: CDLI JSON, the Munich oil project pages, and the Parpola PDF scan. JSTOR 3631775 (Parpola, Parpola and Brunswig) has no free copy that I found; I did not check its price. Next free route to try: the authors' pages and archive.org.
+
+### Notes for MAP.md (second way in)
+- `measured` 13 sealed Girsu, Lagash and Umma cloth, wool or Meluhha tablets: all cuneiform seals.
+- `measured` Foreign Indus seals do not skew to lot labels (x1.08); they do lose the jar ending (cylinders 2 of 25).
+- `measured` 838 is on 0 of 69 foreign objects.
+- `read` Sesame first at Adab, about 2280-2240 BCE; the word ellum comes later in lexical lists.
+- `open` Ashmolean 1931.120 sign count (five or six) needs a clean photo.
