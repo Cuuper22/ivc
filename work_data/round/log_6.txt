@@ -1,0 +1,28 @@
+impression texts 336 ordered pairs 277
+round texts with 2+ tokens: 37
+full        1
+ordered     8
+either     10
+dtype: int64
+        id          tier                             text  n_ordered
+2    148.1        abroad                  716-350-001-090          1
+4   1388.1          home      741-390-741-031-705-033-368          2
+5   1388.2          home                          033-700          1
+6   1924.1          home                          003-390          1
+14  3668.1          home  820-060-002-832-140-592-055-000          1
+27  5224.1  unknown site      000-033-220-001-032-061-000          2
+32  5229.1        abroad          055-220-091-001-093-031          1
+33  5231.1        abroad                          090-405          1
+148.1 350-001 in 1 impressions e.g. [('1944.3', '000-390-595-002-350-001', 'Kalibangan')]
+1388.1 741-031 in 1 impressions e.g. [('3679.1', '920-060-741-031-017-575-740', 'Mohenjo-daro')]
+1388.1 705-033 in 4 impressions e.g. [('1944.2', '000-002-000-705-033-000', 'Kalibangan'), ('2088.1', '705-033-520', 'Lothal'), ('2919.1', '705-033-095-520-468-806', 'Harappa')]
+1388.2 033-700 in 1 impressions e.g. [('3672.1', '000-033-700-000', 'Mohenjo-daro')]
+1924.1 003-390 in 2 impressions e.g. [('1938.1', '861-002-003-390', 'Kalibangan'), ('2408.1', '003-390', 'Mohenjo-daro')]
+3668.1 820-060 in 1 impressions e.g. [('2090.1', '820-060-000-000', 'Lothal')]
+5224.1 033-220 in 2 impressions e.g. [('1017.1', '033-220', 'Harappa'), ('1032.1', '033-220', 'Harappa')]
+5224.1 001-032 in 1 impressions e.g. [('2135.1', '575-223-001-032-226-233', 'Lothal')]
+5229.1 055-220 in 11 impressions e.g. [('2068.1', '705-500-741-001-055-220-740-090', 'Lothal'), ('2069.1', '705-500-741-001-055-220-740-090', 'Lothal'), ('2070.1', '705-500-741-001-055-220-740-090', 'Lothal')]
+5231.1 090-405 in 2 impressions e.g. [('940.1', '326-405-090-405-893-413-033', 'Harappa'), ('942.1', '920-326-405-090-405', 'Harappa')]
+full round real 1 square matched mean 0.23 range [0. 1.] P round lower 0.9760
+ordered round real 8 square matched mean 21.01 range [16. 27.] P round lower 0.0005
+either round real 10 square matched mean 21.92 range [17. 27.] P round lower 0.0005

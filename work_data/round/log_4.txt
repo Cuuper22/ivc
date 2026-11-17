@@ -1,0 +1,17 @@
+round texts with a step: 33 steps 107
+all non-round home distinct texts 3410
+ALL-KINDS model (full size): 8.994
+                      kind  train_texts  round_bits_per_step  same_size_all_kinds_mean  same_size_lo  same_size_hi  diff_vs_same_size  P_kind_lower  texts_kind_better_than_full_all  texts_scored
+11       tags and sealings          190                8.782                     8.944         8.670         9.206             -0.162         0.120                               22            33
+4   damaged or other seals         1045                8.961                     8.905         8.716         9.136              0.056         0.714                               23            33
+9                     seal         2002                9.114                     8.941         8.821         9.061              0.173         0.997                               20            33
+0                all seals         2002                9.114                     8.944         8.819         9.082              0.170         0.987                               20            33
+7                     pots          391                9.114                     8.884         8.628         9.094              0.230         0.983                               22            33
+5               name seals          928                9.385                     8.900         8.697         9.109              0.485         1.000                               14            33
+10                 tablets          855                9.421                     8.892         8.682         9.116              0.529         1.000                               13            33
+8                      rod           37                9.426                     9.315         9.014         9.581              0.111         0.761                               16            33
+6                    other           67                9.563                     9.157         8.870         9.438              0.405         0.993                               16            33
+2           copper tablets           98                9.629                     9.071         8.764         9.347              0.558         1.000                               15            33
+3         count-line seals           46                9.661                     9.260         8.975         9.551              0.401         1.000                               15            33
+1                   bangle           39                9.973                     9.302         9.015         9.551              0.671         1.000                               15            33
+all-kinds model on 400 home square seals (it saw them): 3.99

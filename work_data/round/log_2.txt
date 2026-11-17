@@ -1,0 +1,26 @@
+                    pattern  texts  round_real  square_matched_mean  P_vs_square  shuffled_mean  P_vs_shuffle
+0        A [person][stroke]     37           4               0.0235       0.0005         3.4070      0.457508
+1  B [other][person] at end     37           0               1.3305       1.0000         2.2122      1.000000
+2        C [stroke][person]     37           6               0.1145       0.0005         3.3740      0.057189
+3              any of A B C     37           9               1.4450       0.0005         7.6968      0.310338
+texts fitting each pattern:
+A [person][stroke] ['3899.1', '5227.1', '5228.1', '5229.1']
+B [other][person] at end []
+C [stroke][person] ['148.1', '3863.1', '3888.1', '4247.1', '5223.1', '5229.1']
+home 14 {'A [person][stroke]': 0, 'B [other][person] at end': 0, 'C [stroke][person]': 1}
+abroad 16 {'A [person][stroke]': 4, 'B [other][person] at end': 0, 'C [stroke][person]': 3}
+unknown site 7 {'A [person][stroke]': 0, 'B [other][person] at end': 0, 'C [stroke][person]': 2}
+round shared {'first': 6, 'last': 4, 'mid': 106, 'anyshare': 189} [('091', 3), ('090', 2), ('003', 2), ('190', 2)] [('090', 2), ('400', 2), ('700', 2), ('740', 2)]
+    measure  round_real  square_matched_mean  P_vs_square_higher  P_vs_square_lower  redeal_mean  P_vs_redeal_higher
+0     first           6              13.6500            0.927036           0.108446       9.6170            0.844431
+1      last           4              81.2160            1.000000           0.000500       9.6736            0.957608
+2       mid         106             111.4430            0.546727           0.469265      66.4996            0.002400
+3  anyshare         189             238.2985            0.913543           0.093453     174.1030            0.116977
+     group  tokens  first  middle  last  shuffled_first  shuffled_middle  shuffled_last
+0      090      10      2       6     2          2.4115            5.205         2.3835
+1      091       6      3       3     0          1.3115            3.348         1.3405
+2  093/095       2      0       1     1          0.3670            1.258         0.3750
+3  strokes      46      8      33     5          8.9810           28.071         8.9480
+texts with a person sign: 17 of 37
+texts with a stroke: 26
+both person and stroke: 10

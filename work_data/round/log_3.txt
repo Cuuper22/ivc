@@ -1,0 +1,86 @@
+                                           measure   home foreign  home_pct  foreign_pct  fisher_P_two_sided
+0   person signs (090 091 093 095), share of signs   2/56   18/97       3.6         18.6              0.0110
+1                     stroke signs, share of signs  16/56   30/97      28.6         30.9              0.8554
+2                                the man 090 alone   0/56   10/97       0.0         10.3              0.0139
+3                               twin men 091 alone   2/56    6/97       3.6          6.2              0.7111
+4                      texts holding a person sign   2/15   17/25      13.3         68.0              0.0011
+5                      texts holding a stroke sign  11/15   15/25      73.3         60.0              0.5024
+6                    short-horned bull on the seal   3/15   16/25      20.0         64.0              0.0098
+7                     pierced / boss recorded as P   7/15    2/25      46.7          8.0              0.0077
+8                          cylinder (type SEAL:CY)   6/15    3/25      40.0         12.0              0.0572
+9                                steatite recorded  13/15    5/25      86.7         20.0              0.0001
+10                    lost or unclear sign in text   6/15   12/25      40.0         48.0              0.7470
+
+animal
+animal   COMPOSITE  NONE  OTHER  SHORTHORN  UNICORN  UNKNOWN
+grp                                                         
+foreign          0     2      4         16        0        3
+home             5     4      2          3        1        0
+
+material
+material   -  Steatite  Stone
+grp                          
+foreign   19         5      1
+home       2        13      0
+
+boss
+boss_code   -  ?B  P  PB  PBCG  PBDG  PBSG  PBVG
+grp                                             
+foreign    10  13  0   1     0     1     0     0
+home        8   0  1   1     1     0     3     1
+
+number of usable signs per text
+         count      mean       std  min  25%  50%  75%  max
+grp                                                        
+foreign   25.0  3.880000  1.900000  0.0  3.0  4.0  5.0  8.0
+home      15.0  3.733333  2.282438  1.0  2.0  4.0  5.0  8.0
+
+home sites
+site          area         house         bin   
+Chanhu-daro   --           --                      1
+Dholavira     Lower Town-  35 x 13 x 4-  late      1
+Harappa       AB-          --                      1
+                                         late      1
+              FTrench VI   --            late      1
+Kalibangan    KLB-2-       --            middle    1
+Mohenjo-daro  DKE          Street 1I/II  late      1
+                           Trench EII              1
+                                         middle    1
+              DKG. (S)     1VIII         middle    1
+                           7V            middle    1
+                           Fore Lane1/7  middle    1
+              HRB          2X            middle    1
+              VSA          4XXIII        middle    1
+Rakhigarhi    --           --                      1
+dtype: int64
+
+foreign sites
+site
+Unknown               7
+Ur                    5
+Karzakan              3
+Failaka               2
+Susa                  2
+Janabiyah             1
+Girsu                 1
+Qala'at al-Bahrain    1
+Luristan              1
+Kalba                 1
+Saar                  1
+dtype: int64
+home seals at Mohenjo-daro: 60.6% ; home round at Mohenjo-daro 8 of 15 faces
+home seals by bin:
+bin
+middle    0.477
+late      0.403
+early     0.119
+Name: proportion, dtype: float64
+home round by bin:
+bin
+middle    7
+          4
+late      4
+Name: count, dtype: int64
+home round signs 33 foreign round signs 51 shared ['001', '002', '031', '033', '055', '060', '091', '255', '317', '384', '405', '700']
+shared pairs (adjacent, any order):
+{frozenset({'001', '091'})}
