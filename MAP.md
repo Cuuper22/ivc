@@ -24,6 +24,8 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `measured` Seal texts end in one of a handful of closing signs (jar, spear, plain person, comb, load-carrier). The mix of closers is the same at every site. Seal size goes with the closer: person 738 mm2, jar 645, spear 633, carrier 495, comb 420 (median face area).
 - `guess` The closing sign is the owner's class or office, the same system across the whole civilisation, and seal size follows rank. The slot before it is the house name. A seal reads: [opener] [who] [house] [class].
 
+- `measured` On photographs of house-mate pairs the shared sign is on both stones in 24 pairs and cut by the same hand in only 4. The rival reading (one carver repeating his own shapes) is out: different hands wrote the same sign for the same house.
+
 ## Live leads, in order
 
 1. Name slot. `guess` The slot right before the closing jar holds a house or family name. Next: build the list of pre-jar signs and pre-jar pairs with the houses they belong to; check whether one house keeps one pre-jar sign across depth (a family over generations); check the same slot before the other closing signs.

@@ -3,6 +3,16 @@
 Reading order = stored order reversed. A text is complete when it has no broken edge, no lost sign (000) and no ambiguous sign.
 Roles: opener, opener-strokes, count, amount, who, house, house-marker, class, class-tail, title-phrase, cap, cap-selector, plus roles learned from the data (head, second-slot, counted-thing, fixed-ending, phrase, mark). "Fully parsed" = every sign gets a role. "Tight" = fully parsed with at most 2 who-signs and at least half the signs in template roles.
 
+## Key findings
+
+- Parse coverage: 2,085 of 2,162 distinct complete texts (96.4%) get a role for every sign; 1,487 (68.8%) parse tightly (at most 2 who-signs, over half the signs in template roles). Seals 96.8% / 68.5%, tablets 97.2% / 76.0%, copper tablets 100% / 60.3%, pottery 94.8% / 66.9%. Full-parse rate is nearly flat across sites (92.9% to 100%).
+- The lexicon learned from other sites lifts held-out tight parsing at Mohenjo-daro from 50.8% (template only) to 61.9%, Harappa 65.4% to 73.1%, Lothal 44.3% to 62.0%, Dholavira 57.7% to 66.7%: the learned slots transfer.
+- The template needs one flip. The cap 060-920 and its relatives (920, 692, 550 or 820 before 060) sit at the START of the text in reading order: 115 of 118 texts, with 741/742/745 right after 060. It is a head formula, not a closing cap. Only 22 of the 118 carry a diamond/wheel opener as well, so the cap is an alternative opener.
+- Class is a closed set: 26 distinct class signs over 1,055 seal fillings, top 8 cover 84%, entropy 3.0 bits; who-slot has 384 types over 1,719 fillings (22% types/tokens, 175 seen once, 7.4 bits); house 192 types over 791 fillings (6.6 bits). Who and house behave like open-class names.
+- Class goes with seal size: Kruskal-Wallis p = 2e-5 (person-class seals largest, median 738 mm2; comb 412, carrier 475 to 559, jar 645). Class does not go with animal (Cramer V 0.098, p 0.18), material (p 0.54) or site (p 0.71).
+- Who-sign repeats inside Mohenjo-daro excavation houses: 19 same-house pairs share the last who-sign against 7.8 by shuffling (2.4 times, p = 0.002). The house-slot sign does not: 12 against 12.6 (p 0.60); five rescue variants (adjacent pre-class sign, jar-only seals, rare-sign sets, room level) all sit at 1.0 to 1.3 times chance. Reading under the template: the household element lives in the who slot, the house slot behaves like a recurring citywide name/office series.
+- Title phrase [A-variant][806][154/158]: 21 distinct complete texts, A-variant 467 in 6, 468 in 4; 12 end on the carrier, 5 follow a jar-class segment plus a count ([name] [house] [jar] [1] [title]), so the title can be appended to a full seal text.
+
 ## 1. Coverage
 
 Rows 5679; distinct complete texts 2162 (2284 counting each object type separately). Fully parsed: 2085 of 2162 (96.4%). Tight: 1487 (68.8%). All rows incl. broken/lost texts: 4270 of 5679 parse (75.2%).
@@ -215,6 +225,15 @@ Control: the same test on the last who-sign instead of the house sign, then on t
 | who-sign, area-section + block-house | 284 | 153 | 300 | 19 | 7.8 | 2.44 | 0.0020 |
 | class sign, area-section + block-house | 463 | 198 | 862 | 308 | 309.5 | 1.00 | 0.5195 |
 
+Rescue tests for the house slot (the first attempt above is null).
+
+| variant | seals | units | same-unit pairs | pairs sharing | shuffle mean | ratio | p |
+|---|---|---|---|---|---|---|---|
+| sign directly before the class (markers not skipped) | 463 | 198 | 862 | 18 | 14.1 | 1.27 | 0.1903 |
+| jar-closed seals only, house sign | 270 | 146 | 290 | 5 | 4.9 | 1.01 | 0.5415 |
+| any shared rare sign (<=100 uses) in who+house+marker slots | 463 | 198 | 862 | 10 | 10.4 | 0.97 | 0.5795 |
+| any shared rare sign in who+house+marker, down to room | 397 | 343 | 72 | 1 | 0.8 | 1.29 | 0.5398 |
+
 House sign appears 2+ times in one unit: 13 unit/sign cells. Largest:
 
 | unit | house sign | seals | examples |
@@ -250,9 +269,9 @@ Seals with a class sign: 1188; distinct class signs 26; top 8 cover 84.5%.
 | 617 | 21 | 412 | 24.9 | 17.3 | 43% | Bull1 (11) |
 
 Seal area by class (top 6 classes, 864 seals): Kruskal-Wallis H = 29.4, p = 2e-05. Direction: classes differ in size; order above.
-Class x animal (893 seals): Cramer V = 0.098, permutation p = 0.1829.
-Class x material (795 seals): Cramer V = 0.083, permutation p = 0.5437.
-Class x site (894 seals): Cramer V = 0.081, permutation p = 0.7141.
+Class x animal (893 seals): Cramer V = 0.098, permutation p = 0.1719.
+Class x material (795 seals): Cramer V = 0.083, permutation p = 0.5357.
+Class x site (894 seals): Cramer V = 0.081, permutation p = 0.7291.
 
 Class share by animal (top 6 animals; each row sums to 100% over the top 6 classes):
 
@@ -292,164 +311,164 @@ First who-sign: 281 distinct over 874 seals, top-8 25%. Last who-sign (next to t
 
 ## 4. The 40 most completely glossed texts
 
-Chosen from distinct complete texts of 4+ signs, fully parsed, at most 1 who-sign, scored by number of distinct template roles used; each role string used at most twice.
-
-**M-1672** (Mohenjo-daro, SEAL:S) reading order `920-060-741-003-220-520`  
-[Right parenthesis with small leaf at middle, sign 920] (cap) [A single small vertical line, then another ver.., sign 060] (cap) [Classic jar symbol with two horizontal handles.., sign 741] (cap-selector) [Three adjacent half-height simple vertical str.., sign 003] (count) [Fish with no other decoration, sign 220] (house) [Isocolese triangle on top of vertical line (ar.., sign 520] (class)  
-= "cap 920 cap 060 cap selector 741 count 3 house 220 spear class"
-
-**M-1114** (Mohenjo-daro, SEAL:S) reading order `920-060-741-002-140-740`  
-[Right parenthesis with small leaf at middle, sign 920] (cap) [A single small vertical line, then another ver.., sign 060] (cap) [Classic jar symbol with two horizontal handles.., sign 741] (cap-selector) [Two adjacent half-height simple vertical strokes, sign 002] (count) [Person with round breasts and one raised arm, sign 140] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
-= "cap 920 cap 060 cap selector 741 count 2 house 140 jar class"
-
-**Dlv-1** (Dholavira, SEAL:S) reading order `861-002-031-382-151`  
-[Diamond or leaf shape with a small diamond att.., sign 861] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [One full-height vertical stroke, sign 031] (count) [Upside-down heart symbol, with vertical stroke.., sign 382] (house) [Person carrying two burdens, , sign 151] (class)  
-= "opening mark two count 1 house 382 carrier class"
-
-**M-278** (Mohenjo-daro, SEAL:S) reading order `817-002-004-390-621`  
-[Diamond or leaf shape with a small diamond att.., sign 817] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Four adjacent half-height simple vertical stro.., sign 004] (count) [Simple tree with branches at the top, sign 390] (house) [Tall rectangle with vertical full height bar i.., sign 621] (class)  
-= "opening mark two count 4 house 390 class 621"
-
-**M-174** (Mohenjo-daro, SEAL:S) reading order `820-002-032-220-923-740`  
-[Wheel with 6 spokes with even angles, sign 820] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Two adjacent full-height vertical strokes, sign 032] (count) [Fish with no other decoration, sign 220] (house) [Right parenthesis drawn in outline, sign 923] (house-marker) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
-= "opening mark two count 2 house 220 house marker 923 jar class"
-
-**M-1714** (Mohenjo-daro, SEAL:S) reading order `861-740-031-243-617`  
-[Diamond or leaf shape with a small diamond att.., sign 861] (opener) [Classic jar symbol with two horizontal handles.., sign 740] (class-tail) [One full-height vertical stroke, sign 031] (count) [Fish with no arms, caret hat, diagonal hatchin.., sign 243] (house) [unlisted sign, sign 617] (class)  
-= "opening mark jar class count 1 house 243 class 617"
-
-**K-23** (Kalibangan, SEAL:S) reading order `033-820-002-441-740`  
-[Three adjacent full-height vertical strokes, sign 033] (count) [Wheel with 6 spokes with even angles, sign 820] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [unlisted sign, sign 441] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
-= "count 3 opening mark two house 441 jar class"
-
-**H-1043** (Harappa, SEAL:S) reading order `861-002-003-220-760-151`  
-[Diamond or leaf shape with a small diamond att.., sign 861] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Three adjacent half-height simple vertical str.., sign 003] (count) [Fish with no other decoration, sign 220] (house) [U with decorated branching at top, sign 760] (house-marker) [Person carrying two burdens, , sign 151] (class)  
-= "opening mark two count 3 house 220 house marker 760 carrier class"
-
-**C-12** (Chanhu-daro, SEAL:S) reading order `920-060-740-031-590-390-161`  
-[Right parenthesis with small leaf at middle, sign 920] (cap) [A single small vertical line, then another ver.., sign 060] (cap) [Classic jar symbol with two horizontal handles.., sign 740] (class-tail) [One full-height vertical stroke, sign 031] (count) [Square at bottom with vertical bar coming off .., sign 590] (who) [Simple tree with branches at the top, sign 390] (house) [Person carrying two burdens, triangle or diamo.., sign 161] (class)  
-= "cap 920 cap 060 jar class count 1 person 590 house 390 class 161"
-
-**M-101** (Mohenjo-daro, SEAL:S) reading order `817-002-168-740-503-390`  
-[Diamond or leaf shape with a small diamond att.., sign 817] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [The 'headphones' motif. Upside down U with sma.., sign 168] (who) [Classic jar symbol with two horizontal handles.., sign 740] (class-tail) [Tall isoceles triangle with horizontal stripes, sign 503] (house) [Simple tree with branches at the top, sign 390] (class)  
-= "opening mark two person 168 jar class house 503 class 390"
-
-**M-160** (Mohenjo-daro, SEAL:S) reading order `741-820-002-031-243-151`  
-[Classic jar symbol with two horizontal handles.., sign 741] (who) [Wheel with 6 spokes with even angles, sign 820] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [One full-height vertical stroke, sign 031] (count) [Fish with no arms, caret hat, diagonal hatchin.., sign 243] (house) [Person carrying two burdens, , sign 151] (class)  
-= "person 741 opening mark two count 1 house 243 carrier class"
-
-**M-90** (Mohenjo-daro, SEAL:S) reading order `817-002-031-013-840-740`  
-[Diamond or leaf shape with a small diamond att.., sign 817] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [One full-height vertical stroke, sign 031] (count) [Two small vertical strokes over one small vert.., sign 013] (who) [Two vertical leaves, slightly overlapping, sign 840] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
-= "opening mark two count 1 person 013 house 840 jar class"
-
-**H-1851** (Harappa, TAB:B) reading order `861-002-031-892-803-740`  
-[Diamond or leaf shape with a small diamond att.., sign 861] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [One full-height vertical stroke, sign 031] (count) [Bow and arrow, sign 892] (who) [Leaf with tree at bottom, sign 803] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
-= "opening mark two count 1 person 892 house 803 jar class"
-
-**-** (Bakkar Buthi, POT:T:g) reading order `861-002-840-032-844-405`  
-[Diamond or leaf shape with a small diamond att.., sign 861] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Two vertical leaves, slightly overlapping, sign 840] (who) [Two adjacent full-height vertical strokes, sign 032] (count) [unlisted sign, sign 844] (house) [Simple tree with branches at the top, sign 405] (class)  
-= "opening mark two person 840 count 2 house 844 class 405"
-
-**M-1974** (Mohenjo-daro, SEAL:R) reading order `820-002-521-400-031-064`  
-[Wheel with 6 spokes with even angles, sign 820] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Pitckfork with two vertical tines on ends, one.., sign 521] (house) [Vertical line with small horizontal lines comi.., sign 400] (class-tail) [One full-height vertical stroke, sign 031] (count) [Singly, symetrically bifurcated tall vertical .., sign 064] (who)  
-= "opening mark two house 521 comb class count 1 person 064"
-
-**M-706** (Mohenjo-daro, SEAL:S) reading order `031-861-002-240-773-740`  
-[One full-height vertical stroke, sign 031] (count) [Diamond or leaf shape with a small diamond att.., sign 861] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Fish with extra whiskers on cheeks, sign 240] (who) [U where one arm has a double headed pitchfork,.., sign 773] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
-= "count 1 opening mark two person 240 house 773 jar class"
-
-**M-1737** (Mohenjo-daro, SEAL:S) reading order `820-002-032-921-072-760-740`  
-[Wheel with 6 spokes with even angles, sign 820] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Two adjacent full-height vertical strokes, sign 032] (count) [Left parenthesis with small semicircle against.., sign 921] (who) [A single vertical line, with two person arms; .., sign 072] (house) [U with decorated branching at top, sign 760] (house-marker) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
-= "opening mark two count 2 person 921 house 072 house marker 760 jar class"
-
-**M-1383** (Mohenjo-daro, TAG:R) reading order `920-060-741-031-017-575-740`  
-[Right parenthesis with small leaf at middle, sign 920] (cap) [A single small vertical line, then another ver.., sign 060] (cap) [Classic jar symbol with two horizontal handles.., sign 741] (cap-selector) [One full-height vertical stroke, sign 031] (count) [Seven short vertical strokes, sign 017] (fixed-ending) [Trapezoid with no bottom line, small box resti.., sign 575] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
-= "cap 920 cap 060 cap selector 741 count 1 fixed-ending 017 house 575 jar class"
-
-**K-145** (Kalibangan, SEAL:S) reading order `820-002-032-220-231-585-740`  
-[Wheel with 6 spokes with even angles, sign 820] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Two adjacent full-height vertical strokes, sign 032] (count) [Fish with no other decoration, sign 220] (counted-thing) [Fish with a small vertical stroke in the body, sign 231] (house) [unlisted sign, sign 585] (house-marker) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
-= "opening mark two count 2 counted-thing 220 house 231 house marker 585 jar class"
-
-**M-375** (Mohenjo-daro, SEAL:R) reading order `820-002-032-220-233-100-740`  
-[Wheel with 6 spokes with even angles, sign 820] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Two adjacent full-height vertical strokes, sign 032] (count) [Fish with no other decoration, sign 220] (counted-thing) [Fish with a horizontal line through body, sign 233] (house) [Person with three heads, sign 100] (house-marker) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
-= "opening mark two count 2 counted-thing 220 house 233 house marker 100 jar class"
-
-**C-10** (Chanhu-daro, SEAL:S) reading order `817-002-032-220-231-740`  
-[Diamond or leaf shape with a small diamond att.., sign 817] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Two adjacent full-height vertical strokes, sign 032] (count) [Fish with no other decoration, sign 220] (counted-thing) [Fish with a small vertical stroke in the body, sign 231] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
-= "opening mark two count 2 counted-thing 220 house 231 jar class"
-
-**M-384** (Mohenjo-daro, SEAL:R) reading order `820-002-803-003-900-740`  
-[Wheel with 6 spokes with even angles, sign 820] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Leaf with tree at bottom, sign 803] (counted-thing) [Three adjacent half-height simple vertical str.., sign 003] (count) [Right parenthesis (perhaps with a backward cur.., sign 900] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
-= "opening mark two counted-thing 803 count 3 house 900 jar class"
-
-**M-21** (Mohenjo-daro, SEAL:S) reading order `861-002-032-692-362-740-001-350`  
-[Diamond or leaf shape with a small diamond att.., sign 861] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Two adjacent full-height vertical strokes, sign 032] (count) [An X but drawn in outline, sign 692] (head) [Trapezoid with inner rectangle, sign 362] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class-tail) [Simple, half-height vertical stroke, sign 001] (count) [Horizontal line with multiple lines out the to.., sign 350] (who)  
-= "opening mark two count 2 head 692 house 362 jar class count 1 person 350"
-
-**M-1763** (Mohenjo-daro, SEAL:S) reading order `861-002-032-220-740-565-001-416`  
-[Diamond or leaf shape with a small diamond att.., sign 861] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Two adjacent full-height vertical strokes, sign 032] (count) [Fish with no other decoration, sign 220] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class-tail) [X with vertical connection on left two tips, r.., sign 565] (who) [Simple, half-height vertical stroke, sign 001] (count) [Pitckfork with two stacked heads, sign 416] (counted-thing)  
-= "opening mark two count 2 house 220 jar class person 565 count 1 counted-thing 416"
+Chosen from distinct complete texts of 3+ signs, fully parsed, at most 1 who-sign, scored by number of distinct template roles used; each role string used once; title-phrase texts are favoured.
 
 **H-143** (Harappa, SEAL:R) reading order `032-877-740-001-469-806-154`  
 [Two adjacent full-height vertical strokes, sign 032] (count) [Diamond with four small diamonds at each vertex, sign 877] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class-tail) [Simple, half-height vertical stroke, sign 001] (count) [A with right leg only partially formed, possib.., sign 469] (title-phrase) [Leaf with tree at bottom, sign 806] (title-phrase) [Person carrying two burdens, jar handles for a.., sign 154] (title-phrase)  
-= "count 2 house 877 jar class count 1 title, grade 469"
-
-**H-27** (Harappa, SEAL:S) reading order `032-877-740-001-468-806-154`  
-[Two adjacent full-height vertical strokes, sign 032] (count) [Diamond with four small diamonds at each vertex, sign 877] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class-tail) [Simple, half-height vertical stroke, sign 001] (count) [A with right leg only partially formed, possib.., sign 468] (title-phrase) [Leaf with tree at bottom, sign 806] (title-phrase) [Person carrying two burdens, jar handles for a.., sign 154] (title-phrase)  
-= "count 2 house 877 jar class count 1 title, grade 468"
-
-**M-240** (Mohenjo-daro, SEAL:S) reading order `603-861-002-032-220-240-520`  
-[Tall rectangle with two horizontal hatches goi.., sign 603] (who) [Diamond or leaf shape with a small diamond att.., sign 861] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Two adjacent full-height vertical strokes, sign 032] (count) [Fish with no other decoration, sign 220] (counted-thing) [Fish with extra whiskers on cheeks, sign 240] (house) [Isocolese triangle on top of vertical line (ar.., sign 520] (class)  
-= "person 603 opening mark two count 2 counted-thing 220 house 240 spear class"
-
-**M-1346** (Mohenjo-daro, SEAL:R) reading order `820-002-803-233-032-861-740`  
-[Wheel with 6 spokes with even angles, sign 820] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Leaf with tree at bottom, sign 803] (counted-thing) [Fish with a horizontal line through body, sign 233] (who) [Two adjacent full-height vertical strokes, sign 032] (count) [Diamond or leaf shape with a small diamond att.., sign 861] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
-= "opening mark two counted-thing 803 person 233 count 2 house 861 jar class"
-
-**M-86** (Mohenjo-daro, SEAL:S) reading order `700-820-002-231-705-033-520`  
-[Simple U with no other decoration, sign 700] (amount) [Wheel with 6 spokes with even angles, sign 820] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Fish with a small vertical stroke in the body, sign 231] (who) [U with a long vertical stroke inserted into th.., sign 705] (fixed-ending) [Three adjacent full-height vertical strokes, sign 033] (count) [Isocolese triangle on top of vertical line (ar.., sign 520] (class)  
-= "amount opening mark two person 231 fixed-ending 705 count 3 spear class"
-
-**M-381** (Mohenjo-daro, SEAL:R) reading order `820-002-798-032-220-055-740`  
-[Wheel with 6 spokes with even angles, sign 820] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Leaf with 'pincers' coming off the right, poss.., sign 798] (who) [Two adjacent full-height vertical strokes, sign 032] (count) [Fish with no other decoration, sign 220] (counted-thing) [Four small vertical strokes above the same, ab.., sign 055] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
-= "opening mark two person 798 count 2 counted-thing 220 house 055 jar class"
-
-**M-1728** (Mohenjo-daro, SEAL:S) reading order `820-002-032-220-240-055-161`  
-[Wheel with 6 spokes with even angles, sign 820] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Two adjacent full-height vertical strokes, sign 032] (count) [Fish with no other decoration, sign 220] (counted-thing) [Fish with extra whiskers on cheeks, sign 240] (who) [Four small vertical strokes above the same, ab.., sign 055] (house) [Person carrying two burdens, triangle or diamo.., sign 161] (class)  
-= "opening mark two count 2 counted-thing 220 person 240 house 055 class 161"
-
-**M-1267** (Mohenjo-daro, SEAL:R) reading order `861-002-175-720-740-001-416`  
-[Diamond or leaf shape with a small diamond att.., sign 861] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Person sitting with bent knees, no small tange.., sign 175] (who) [unlisted sign, sign 720] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class-tail) [Simple, half-height vertical stroke, sign 001] (count) [Pitckfork with two stacked heads, sign 416] (counted-thing)  
-= "opening mark two person 175 house 720 jar class count 1 counted-thing 416"
-
-**H-597** (Harappa, SEAL:S) reading order `861-002-032-070-590-390-740`  
-[Diamond or leaf shape with a small diamond att.., sign 861] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Two adjacent full-height vertical strokes, sign 032] (count) [A single vertical line, with two person arms; .., sign 070] (who) [Square at bottom with vertical bar coming off .., sign 590] (fixed-ending) [Simple tree with branches at the top, sign 390] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
-= "opening mark two count 2 person 070 fixed-ending 590 house 390 jar class"
+= "count 2 / house 877 / jar class / count 1 / carrier title, grade 469"
 
 **M-371** (Mohenjo-daro, SEAL:R) reading order `467-806-154-032-384-142-617`  
 [A with right leg only partially formed, possib.., sign 467] (title-phrase) [Leaf with tree at bottom, sign 806] (title-phrase) [Person carrying two burdens, jar handles for a.., sign 154] (title-phrase) [Two adjacent full-height vertical strokes, sign 032] (count) [Upside-down heart symbol, possibly with vertic.., sign 384] (house-marker) [Person with staff, sign 142] (house) [unlisted sign, sign 617] (class)  
-= "carrier title, grade 467 count 2 house marker 384 house 142 class 617"
+= "carrier title, grade 467 / count 2 / house marker 384 / house 142 / class 617"
 
-**-** (Dholavira, SEAL:S) reading order `920-060-741-142-156`  
-[Right parenthesis with small leaf at middle, sign 920] (cap) [A single small vertical line, then another ver.., sign 060] (cap) [Classic jar symbol with two horizontal handles.., sign 741] (cap-selector) [Person with staff, sign 142] (house) [Person carrying two burdens, jar handles for a.., sign 156] (class)  
-= "cap 920 cap 060 cap selector 741 house 142 carrier class"
+**H-158** (Harappa, SEAL:R) reading order `590-405-740-001-472-806-154`  
+[Square at bottom with vertical bar coming off .., sign 590] (who) [Simple tree with branches at the top, sign 405] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class-tail) [Simple, half-height vertical stroke, sign 001] (count) [A with right leg only partially formed, possib.., sign 472] (title-phrase) [Leaf with tree at bottom, sign 806] (title-phrase) [Person carrying two burdens, jar handles for a.., sign 154] (title-phrase)  
+= "person 590 / house 405 / jar class / count 1 / carrier title, grade 472"
 
-**H-1198** (Harappa, TAB:I) reading order `820-031-001-061-740`  
-[Wheel with 6 spokes with even angles, sign 820] (opener) [One full-height vertical stroke, sign 031] (count) [Simple, half-height vertical stroke, sign 001] (count) [Simple lambda but reversed horizontally, and t.., sign 061] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
-= "opening mark count 1 count 1 house 061 jar class"
+**H-1788** (Harappa, TAB:B) reading order `861-002-470-806-154`  
+[Diamond or leaf shape with a small diamond att.., sign 861] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [A with right leg only partially formed, possib.., sign 470] (title-phrase) [Leaf with tree at bottom, sign 806] (title-phrase) [Person carrying two burdens, jar handles for a.., sign 154] (title-phrase)  
+= "opening mark / two / carrier title, grade 470"
 
-**-** (Dholavira, SEAL:S) reading order `920-060-741-005-368`  
-[Right parenthesis with small leaf at middle, sign 920] (cap) [A single small vertical line, then another ver.., sign 060] (cap) [Classic jar symbol with two horizontal handles.., sign 741] (cap-selector) [Five simple vertical strokes, sign 005] (count) [Vertical stroke with a triangular wing attache.., sign 368] (class)  
-= "cap 920 cap 060 cap selector 741 count 5 class 368"
+**H-58** (Harappa, SEAL:S) reading order `235-231-752-740-468-806-158`  
+[Fish with a caret shaped hat, sign 235] (who) [Fish with a small vertical stroke in the body, sign 231] (house) [U with decorated branching at top, sign 752] (house-marker) [Classic jar symbol with two horizontal handles.., sign 740] (class-tail) [A with right leg only partially formed, possib.., sign 468] (title-phrase) [Leaf with tree at bottom, sign 806] (title-phrase) [Person carrying two burdens, jar handles for a.., sign 158] (title-phrase)  
+= "person 235 / house 231 / house marker 752 / jar class / carrier title, grade 468"
+
+**M-1114** (Mohenjo-daro, SEAL:S) reading order `920-060-741-002-140-740`  
+[Right parenthesis with small leaf at middle, sign 920] (cap) [A single small vertical line, then another ver.., sign 060] (cap) [Classic jar symbol with two horizontal handles.., sign 741] (cap-selector) [Two adjacent half-height simple vertical strokes, sign 002] (count) [Person with round breasts and one raised arm, sign 140] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
+= "cap 920 / cap 060 / cap selector 741 / count 2 / house 140 / jar class"
+
+**M-1161** (Mohenjo-daro, SEAL:S) reading order `861-002-031-233-520`  
+[Diamond or leaf shape with a small diamond att.., sign 861] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [One full-height vertical stroke, sign 031] (count) [Fish with a horizontal line through body, sign 233] (house) [Isocolese triangle on top of vertical line (ar.., sign 520] (class)  
+= "opening mark / two / count 1 / house 233 / spear class"
+
+**M-1714** (Mohenjo-daro, SEAL:S) reading order `861-740-031-243-617`  
+[Diamond or leaf shape with a small diamond att.., sign 861] (opener) [Classic jar symbol with two horizontal handles.., sign 740] (class-tail) [One full-height vertical stroke, sign 031] (count) [Fish with no arms, caret hat, diagonal hatchin.., sign 243] (house) [unlisted sign, sign 617] (class)  
+= "opening mark / jar class / count 1 / house 243 / class 617"
+
+**M-174** (Mohenjo-daro, SEAL:S) reading order `820-002-032-220-923-740`  
+[Wheel with 6 spokes with even angles, sign 820] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Two adjacent full-height vertical strokes, sign 032] (count) [Fish with no other decoration, sign 220] (house) [Right parenthesis drawn in outline, sign 923] (house-marker) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
+= "opening mark / two / count 2 / house 220 / house marker 923 / jar class"
+
+**K-23** (Kalibangan, SEAL:S) reading order `033-820-002-441-740`  
+[Three adjacent full-height vertical strokes, sign 033] (count) [Wheel with 6 spokes with even angles, sign 820] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [unlisted sign, sign 441] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
+= "count 3 / opening mark / two / house 441 / jar class"
+
+**H-208** (Harappa, TAB:B) reading order `472-806-158-400`  
+[A with right leg only partially formed, possib.., sign 472] (title-phrase) [Leaf with tree at bottom, sign 806] (title-phrase) [Person carrying two burdens, jar handles for a.., sign 158] (title-phrase) [Vertical line with small horizontal lines comi.., sign 400] (class)  
+= "carrier title, grade 472 / comb class"
+
+**H-146** (Harappa, SEAL:R) reading order `031-467-806-154`  
+[One full-height vertical stroke, sign 031] (count) [A with right leg only partially formed, possib.., sign 467] (title-phrase) [Leaf with tree at bottom, sign 806] (title-phrase) [Person carrying two burdens, jar handles for a.., sign 154] (title-phrase)  
+= "count 1 / carrier title, grade 467"
+
+**C-12** (Chanhu-daro, SEAL:S) reading order `920-060-740-031-590-390-161`  
+[Right parenthesis with small leaf at middle, sign 920] (cap) [A single small vertical line, then another ver.., sign 060] (cap) [Classic jar symbol with two horizontal handles.., sign 740] (class-tail) [One full-height vertical stroke, sign 031] (count) [Square at bottom with vertical bar coming off .., sign 590] (who) [Simple tree with branches at the top, sign 390] (house) [Person carrying two burdens, triangle or diamo.., sign 161] (class)  
+= "cap 920 / cap 060 / jar class / count 1 / person 590 / house 390 / class 161"
+
+**M-1737** (Mohenjo-daro, SEAL:S) reading order `820-002-032-921-072-760-740`  
+[Wheel with 6 spokes with even angles, sign 820] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Two adjacent full-height vertical strokes, sign 032] (count) [Left parenthesis with small semicircle against.., sign 921] (who) [A single vertical line, with two person arms; .., sign 072] (house) [U with decorated branching at top, sign 760] (house-marker) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
+= "opening mark / two / count 2 / person 921 / house 072 / house marker 760 / jar class"
+
+**M-160** (Mohenjo-daro, SEAL:S) reading order `741-820-002-031-243-151`  
+[Classic jar symbol with two horizontal handles.., sign 741] (who) [Wheel with 6 spokes with even angles, sign 820] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [One full-height vertical stroke, sign 031] (count) [Fish with no arms, caret hat, diagonal hatchin.., sign 243] (house) [Person carrying two burdens, , sign 151] (class)  
+= "person 741 / opening mark / two / count 1 / house 243 / carrier class"
+
+**M-90** (Mohenjo-daro, SEAL:S) reading order `817-002-031-013-840-740`  
+[Diamond or leaf shape with a small diamond att.., sign 817] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [One full-height vertical stroke, sign 031] (count) [Two small vertical strokes over one small vert.., sign 013] (who) [Two vertical leaves, slightly overlapping, sign 840] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
+= "opening mark / two / count 1 / person 013 / house 840 / jar class"
+
+**M-101** (Mohenjo-daro, SEAL:S) reading order `817-002-168-740-503-390`  
+[Diamond or leaf shape with a small diamond att.., sign 817] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [The 'headphones' motif. Upside down U with sma.., sign 168] (who) [Classic jar symbol with two horizontal handles.., sign 740] (class-tail) [Tall isoceles triangle with horizontal stripes, sign 503] (house) [Simple tree with branches at the top, sign 390] (class)  
+= "opening mark / two / person 168 / jar class / house 503 / class 390"
+
+**-** (Bakkar Buthi, POT:T:g) reading order `861-002-840-032-844-405`  
+[Diamond or leaf shape with a small diamond att.., sign 861] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Two vertical leaves, slightly overlapping, sign 840] (who) [Two adjacent full-height vertical strokes, sign 032] (count) [unlisted sign, sign 844] (house) [Simple tree with branches at the top, sign 405] (class)  
+= "opening mark / two / person 840 / count 2 / house 844 / class 405"
+
+**M-706** (Mohenjo-daro, SEAL:S) reading order `031-861-002-240-773-740`  
+[One full-height vertical stroke, sign 031] (count) [Diamond or leaf shape with a small diamond att.., sign 861] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Fish with extra whiskers on cheeks, sign 240] (who) [U where one arm has a double headed pitchfork,.., sign 773] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
+= "count 1 / opening mark / two / person 240 / house 773 / jar class"
+
+**M-1974** (Mohenjo-daro, SEAL:R) reading order `820-002-521-400-031-064`  
+[Wheel with 6 spokes with even angles, sign 820] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Pitckfork with two vertical tines on ends, one.., sign 521] (house) [Vertical line with small horizontal lines comi.., sign 400] (class-tail) [One full-height vertical stroke, sign 031] (count) [Singly, symetrically bifurcated tall vertical .., sign 064] (who)  
+= "opening mark / two / house 521 / comb class / count 1 / person 064"
+
+**M-1957** (Mohenjo-daro, SEAL:R) reading order `820-013-474-806-154`  
+[Wheel with 6 spokes with even angles, sign 820] (opener) [Two small vertical strokes over one small vert.., sign 013] (who) [A with right leg only partially formed, possib.., sign 474] (title-phrase) [Leaf with tree at bottom, sign 806] (title-phrase) [Person carrying two burdens, jar handles for a.., sign 154] (title-phrase)  
+= "opening mark / person 013 / carrier title, grade 474"
+
+**M-1383** (Mohenjo-daro, TAG:R) reading order `920-060-741-031-017-575-740`  
+[Right parenthesis with small leaf at middle, sign 920] (cap) [A single small vertical line, then another ver.., sign 060] (cap) [Classic jar symbol with two horizontal handles.., sign 741] (cap-selector) [One full-height vertical stroke, sign 031] (count) [Seven short vertical strokes, sign 017] (fixed-ending) [Trapezoid with no bottom line, small box resti.., sign 575] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
+= "cap 920 / cap 060 / cap selector 741 / count 1 / fixed-ending 017 / house 575 / jar class"
+
+**M-221** (Mohenjo-daro, SEAL:S) reading order `820-002-032-220-335-760-740`  
+[Wheel with 6 spokes with even angles, sign 820] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Two adjacent full-height vertical strokes, sign 032] (count) [Fish with no other decoration, sign 220] (counted-thing) [M with the bottom of the legs connected by a h.., sign 335] (house) [U with decorated branching at top, sign 760] (house-marker) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
+= "opening mark / two / count 2 / counted-thing 220 / house 335 / house marker 760 / jar class"
+
+**M-384** (Mohenjo-daro, SEAL:R) reading order `820-002-803-003-900-740`  
+[Wheel with 6 spokes with even angles, sign 820] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Leaf with tree at bottom, sign 803] (counted-thing) [Three adjacent half-height simple vertical str.., sign 003] (count) [Right parenthesis (perhaps with a backward cur.., sign 900] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
+= "opening mark / two / counted-thing 803 / count 3 / house 900 / jar class"
+
+**C-10** (Chanhu-daro, SEAL:S) reading order `817-002-032-220-231-740`  
+[Diamond or leaf shape with a small diamond att.., sign 817] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Two adjacent full-height vertical strokes, sign 032] (count) [Fish with no other decoration, sign 220] (counted-thing) [Fish with a small vertical stroke in the body, sign 231] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
+= "opening mark / two / count 2 / counted-thing 220 / house 231 / jar class"
+
+**M-1763** (Mohenjo-daro, SEAL:S) reading order `861-002-032-220-740-565-001-416`  
+[Diamond or leaf shape with a small diamond att.., sign 861] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Two adjacent full-height vertical strokes, sign 032] (count) [Fish with no other decoration, sign 220] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class-tail) [X with vertical connection on left two tips, r.., sign 565] (who) [Simple, half-height vertical stroke, sign 001] (count) [Pitckfork with two stacked heads, sign 416] (counted-thing)  
+= "opening mark / two / count 2 / house 220 / jar class / person 565 / count 1 / counted-thing 416"
+
+**M-21** (Mohenjo-daro, SEAL:S) reading order `861-002-032-692-362-740-001-350`  
+[Diamond or leaf shape with a small diamond att.., sign 861] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Two adjacent full-height vertical strokes, sign 032] (count) [An X but drawn in outline, sign 692] (head) [Trapezoid with inner rectangle, sign 362] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class-tail) [Simple, half-height vertical stroke, sign 001] (count) [Horizontal line with multiple lines out the to.., sign 350] (who)  
+= "opening mark / two / count 2 / head 692 / house 362 / jar class / count 1 / person 350"
+
+**M-1728** (Mohenjo-daro, SEAL:S) reading order `820-002-032-220-240-055-161`  
+[Wheel with 6 spokes with even angles, sign 820] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Two adjacent full-height vertical strokes, sign 032] (count) [Fish with no other decoration, sign 220] (counted-thing) [Fish with extra whiskers on cheeks, sign 240] (who) [Four small vertical strokes above the same, ab.., sign 055] (house) [Person carrying two burdens, triangle or diamo.., sign 161] (class)  
+= "opening mark / two / count 2 / counted-thing 220 / person 240 / house 055 / class 161"
+
+**M-1346** (Mohenjo-daro, SEAL:R) reading order `820-002-803-233-032-861-740`  
+[Wheel with 6 spokes with even angles, sign 820] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Leaf with tree at bottom, sign 803] (counted-thing) [Fish with a horizontal line through body, sign 233] (who) [Two adjacent full-height vertical strokes, sign 032] (count) [Diamond or leaf shape with a small diamond att.., sign 861] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
+= "opening mark / two / counted-thing 803 / person 233 / count 2 / house 861 / jar class"
+
+**H-597** (Harappa, SEAL:S) reading order `861-002-032-070-590-390-740`  
+[Diamond or leaf shape with a small diamond att.., sign 861] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Two adjacent full-height vertical strokes, sign 032] (count) [A single vertical line, with two person arms; .., sign 070] (who) [Square at bottom with vertical bar coming off .., sign 590] (fixed-ending) [Simple tree with branches at the top, sign 390] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
+= "opening mark / two / count 2 / person 070 / fixed-ending 590 / house 390 / jar class"
+
+**M-1267** (Mohenjo-daro, SEAL:R) reading order `861-002-175-720-740-001-416`  
+[Diamond or leaf shape with a small diamond att.., sign 861] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Person sitting with bent knees, no small tange.., sign 175] (who) [unlisted sign, sign 720] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class-tail) [Simple, half-height vertical stroke, sign 001] (count) [Pitckfork with two stacked heads, sign 416] (counted-thing)  
+= "opening mark / two / person 175 / house 720 / jar class / count 1 / counted-thing 416"
+
+**M-86** (Mohenjo-daro, SEAL:S) reading order `700-820-002-231-705-033-520`  
+[Simple U with no other decoration, sign 700] (amount) [Wheel with 6 spokes with even angles, sign 820] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Fish with a small vertical stroke in the body, sign 231] (who) [U with a long vertical stroke inserted into th.., sign 705] (fixed-ending) [Three adjacent full-height vertical strokes, sign 033] (count) [Isocolese triangle on top of vertical line (ar.., sign 520] (class)  
+= "amount / opening mark / two / person 231 / fixed-ending 705 / count 3 / spear class"
+
+**M-381** (Mohenjo-daro, SEAL:R) reading order `820-002-798-032-220-055-740`  
+[Wheel with 6 spokes with even angles, sign 820] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Leaf with 'pincers' coming off the right, poss.., sign 798] (who) [Two adjacent full-height vertical strokes, sign 032] (count) [Fish with no other decoration, sign 220] (counted-thing) [Four small vertical strokes above the same, ab.., sign 055] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
+= "opening mark / two / person 798 / count 2 / counted-thing 220 / house 055 / jar class"
+
+**M-240** (Mohenjo-daro, SEAL:S) reading order `603-861-002-032-220-240-520`  
+[Tall rectangle with two horizontal hatches goi.., sign 603] (who) [Diamond or leaf shape with a small diamond att.., sign 861] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Two adjacent full-height vertical strokes, sign 032] (count) [Fish with no other decoration, sign 220] (counted-thing) [Fish with extra whiskers on cheeks, sign 240] (house) [Isocolese triangle on top of vertical line (ar.., sign 520] (class)  
+= "person 603 / opening mark / two / count 2 / counted-thing 220 / house 240 / spear class"
 
 **Rgr-1** (Rakhigarhi, SEAL:S) reading order `920-060-741-335-760-740`  
 [Right parenthesis with small leaf at middle, sign 920] (cap) [A single small vertical line, then another ver.., sign 060] (cap) [Classic jar symbol with two horizontal handles.., sign 741] (cap-selector) [M with the bottom of the legs connected by a h.., sign 335] (house) [U with decorated branching at top, sign 760] (house-marker) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
-= "cap 920 cap 060 cap selector 741 house 335 house marker 760 jar class"
+= "cap 920 / cap 060 / cap selector 741 / house 335 / house marker 760 / jar class"
 
-**M-870** (Mohenjo-daro, SEAL:S) reading order `920-060-741-460-740`  
-[Right parenthesis with small leaf at middle, sign 920] (cap) [A single small vertical line, then another ver.., sign 060] (cap) [Classic jar symbol with two horizontal handles.., sign 741] (cap-selector) [Three tall, thin isoceles triangles, sign 460] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
-= "cap 920 cap 060 cap selector 741 house 460 jar class"
+**H-134** (Harappa, SEAL:R) reading order `861-002-003-220-590-405-740`  
+[Diamond or leaf shape with a small diamond att.., sign 861] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Three adjacent half-height simple vertical str.., sign 003] (count) [Fish with no other decoration, sign 220] (counted-thing) [Square at bottom with vertical bar coming off .., sign 590] (fixed-ending) [Simple tree with branches at the top, sign 405] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
+= "opening mark / two / count 3 / counted-thing 220 / fixed-ending 590 / house 405 / jar class"
 
-**M-754** (Mohenjo-daro, SEAL:S) reading order `920-060-742-705-760-740`  
-[Right parenthesis with small leaf at middle, sign 920] (cap) [A single small vertical line, then another ver.., sign 060] (cap) [Classic jar symbol with two horizontal handles.., sign 742] (cap-selector) [U with a long vertical stroke inserted into th.., sign 705] (house) [U with decorated branching at top, sign 760] (house-marker) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
-= "cap 920 cap 060 cap selector 742 house 705 house marker 760 jar class"
+**L-217** (Lothal, TAB:B) reading order `920-060-741-821-740`  
+[Right parenthesis with small leaf at middle, sign 920] (cap) [A single small vertical line, then another ver.., sign 060] (cap) [Classic jar symbol with two horizontal handles.., sign 741] (cap-selector) [unlisted sign, sign 821] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
+= "cap 920 / cap 060 / cap selector 741 / house 821 / jar class"
+
+**M-59** (Mohenjo-daro, SEAL:S) reading order `920-060-742-003-368`  
+[Right parenthesis with small leaf at middle, sign 920] (cap) [A single small vertical line, then another ver.., sign 060] (cap) [Classic jar symbol with two horizontal handles.., sign 742] (cap-selector) [Three adjacent half-height simple vertical str.., sign 003] (count) [Vertical stroke with a triangular wing attache.., sign 368] (class)  
+= "cap 920 / cap 060 / cap selector 742 / count 3 / class 368"
+
+**H-1198** (Harappa, TAB:I) reading order `820-031-001-061-740`  
+[Wheel with 6 spokes with even angles, sign 820] (opener) [One full-height vertical stroke, sign 031] (count) [Simple, half-height vertical stroke, sign 001] (count) [Simple lambda but reversed horizontally, and t.., sign 061] (house) [Classic jar symbol with two horizontal handles.., sign 740] (class)  
+= "opening mark / count 1 / count 1 / house 061 / jar class"
+
+**M-1299** (Mohenjo-daro, SEAL:R) reading order `817-002-233-705-033-550-527`  
+[Diamond or leaf shape with a small diamond att.., sign 817] (opener) [Two adjacent half-height simple vertical strokes, sign 002] (opener-strokes) [Fish with a horizontal line through body, sign 233] (phrase) [U with a long vertical stroke inserted into th.., sign 705] (phrase) [Three adjacent full-height vertical strokes, sign 033] (count) [The 'pincer' motif. Right-pointing isocoles tr.., sign 550] (house) [Small box with horizontal hatching, vertical l.., sign 527] (class)  
+= "opening mark / two / phrase 233 / phrase 705 / count 3 / house 550 / class 527"
