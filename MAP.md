@@ -30,6 +30,11 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `measured` Name-slot signs repeat inside houses (19 pairs against 7.8). `060-920` is a second kind of opener.
 - `guess` Names are built from a household element plus a personal element, like family name + given name. Two openers = two kinds of owner or two institutions.
 
+- `measured` A name is up to three signs. The first is shared by house-mates (same fish variant 15 of 23 against 36% by chance) and goes with the animal; the last goes with the class sign.
+- `guess` Name = [house emblem] [self] [tag]. The marked fish signs are house or clan emblems: the fish variants are family crests.
+- `measured` At home the man sign closes the text (65 of 86); on round seals abroad it opens it (last on 1 of 7).
+- `guess` The round seals abroad are written in another language with the opposite word order: home says [name] [man], abroad says [man] [name]. Home language puts the title after the name.
+
 ## Live leads, in order
 
 1. Name slot. `guess` The slot right before the closing jar holds a house or family name. Next: build the list of pre-jar signs and pre-jar pairs with the houses they belong to; check whether one house keeps one pre-jar sign across depth (a family over generations); check the same slot before the other closing signs.

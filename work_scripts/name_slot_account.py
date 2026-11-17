@@ -82,7 +82,8 @@ print('first-locked:',[s for s in lock if first[s]>last[s]]); print('last-locked
 # ---- 25-seal table
 PICK=[('DKE Trench E-',['M-1738','M-47','M-323','M-865']),('DKG. (S) 1I',['M-1988','M-228','M-651','M-1680']),('DKG. (S) 4-',['M-1977','M-708','M-319']),
 ('DKG First Street-',['-','M-199','M-850','M-238','M-986']),('DKG. (N) 18-',['M-1849','M-217']),('DKG. (S) 7II',['M-1726','M-1746']),('DKG. (S) 6I',['M-1760','M-326']),('DKE Trench EI',['M-1814']),('DKG. (S) 8A-',['M-1753','M-208'])]
-OVERRIDE={'M-1680':'717'}
+OVERRIDE={'M-1680':'717','M-850':'-'}
+FIRSTPOOL={'235','240','233','231','798','806','140','013','590','017'}
 SIGNW={'861':'diamond+small diamond','817':'diamond+small diamond','820':'six-spoke wheel','002':'two short strokes','740':'jar','520':'spear','390':'tree','400':'comb','090':'plain person','151':'carrier','156':'carrier','154':'carrier','001':'one stroke','031':'one long stroke','032':'two long strokes','033':'three long strokes','700':'cup'}
 def w(s): return (SIGNW.get(s) or sh.get(s,'?')[:42]).replace('|',' ')
 out=[]; n=0
@@ -102,10 +103,12 @@ for n_,c,h,dp,sym,toks,roles,seg in out:
     kc=[k for k,x in enumerate(roles) if x in('class','class-tail')]
     a=(ko[-1]+1) if ko else 0; b=kc[0] if kc else len(toks)
     pre=' + '.join(f'{toks[k]} {w(toks[k])}' for k in ko)
-    nm=[]; 
+    nm=[]; nmk=[k for k in range(a,b) if roles[k] in('who','house','house-marker')]; first_name,last_name=nmk[0],nmk[-1]
+    if c not in OVERRIDE and segl[0] not in FIRSTPOOL: hh='-'
     for k in range(a,b):
         t=toks[k]
-        if roles[k] in('count','amount','counted-thing','title-phrase') : nm.append(f'{t} {w(t)} [not name: {roles[k]}]'); continue
+        if roles[k] in('count','amount','counted-thing','title-phrase') and not (roles[k]=='counted-thing' and first_name<k<last_name): nm.append(f'{t} {w(t)} [not name: {roles[k]}]'); continue
+        if roles[k]=='counted-thing' and first_name<k<last_name: nm.append(f'{t} {w(t)} [PERSONAL (parser: counted-thing)]'); continue
         tag='HOUSEHOLD' if t==hh else 'ENDER' if (t in('760','100','923') and k==b-1 and len(segl)>1) else 'PERSONAL'
         nm.append(f'{t} {w(t)} [{tag}]')
     cl=[f'{t} {w(t)}' for t,ro in zip(toks,roles) if ro in('class',)]
