@@ -7,7 +7,7 @@ SHAPES=f'{ROOT}/work_data/sign_shapes.csv'
 CNT={}
 for i in range(1,8): CNT[f'{i:03d}']=('S',i)            # short strokes 1-7
 CNT['012']=('T',2)
-for i in range(13,19): CNT[f'{i:03d}']=('T',i)           # stacked short strokes 013-018 (013=3 ... 018=8)
+for i in range(13,19): CNT[f'{i:03d}']=('T',i-10)           # stacked short strokes 013-018 (013=3 ... 018=8)
 for i in range(31,37): CNT[f'{i:03d}']=('F',i-30)        # full-height strokes 1-6
 for i in range(465,476): CNT[str(i)]=('A',0)             # A with comb of ticks (value = tick count, not coded)
 CARR={'151','153','154','155','156','158'}

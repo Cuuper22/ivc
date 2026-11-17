@@ -1,0 +1,205 @@
+tight seals with a name segment: 877 objects 871
+
+== Q1 lengths
+seglen
+1    391
+2    286
+3    155
+4     36
+5      7
+6      2
+distinct segments 552
+multi-sign names 486 single 391
+-- name-FIRST (names of 2+ signs)
+  235 (Fish with a caret shaped hat)                        49  as share of this sign total 0.72
+  240 (Fish with extra whiskers on cheeks)                  40  as share of this sign total 0.47
+  233 (Fish with a horizontal line through bo)              32  as share of this sign total 0.52
+  590 (Square at bottom with vertical bar com)              28  as share of this sign total 0.58
+  798 (Leaf with 'pincers' coming off the rig)              19  as share of this sign total 0.68
+  806 (Leaf with tree at bottom)                            17  as share of this sign total 0.68
+  415 (Pitchfork with tines)                                13  as share of this sign total 0.43
+  017 (Seven short vertical strokes)                        11  as share of this sign total 0.42
+  140 (Person with round breasts and one rais)              10  as share of this sign total 0.56
+  013 (Two small vertical strokes over one sm)              10  as share of this sign total 0.91
+  231 (Fish with a small vertical stroke in t)              10  as share of this sign total 0.36
+  705 (U with a long vertical stroke inserted)               9  as share of this sign total 0.21
+  176 (Person sitting with bent knees, four s)               8  as share of this sign total 0.20
+  255 (Unknown asymmetric animal? Perhaps a f)               8  as share of this sign total 0.40
+  741 (Classic jar symbol with two horizontal)               5  as share of this sign total 0.22
+-- name-LAST (names of 2+ signs)
+  100 (Person with three heads)                             42  as share of this sign total 0.95
+  760 (U with decorated branching at top)                   39  as share of this sign total 0.91
+  390 (Simple tree with branches at the top)                29  as share of this sign total 0.67
+  923 (Right parenthesis drawn in outline)                  16  as share of this sign total 0.84
+  220 (Fish with no other decoration)                       15  as share of this sign total 0.39
+  585 (?)                                                   15  as share of this sign total 0.94
+  840 (Two vertical leaves, slightly overlapp)              14  as share of this sign total 0.52
+  705 (U with a long vertical stroke inserted)              12  as share of this sign total 0.28
+  176 (Person sitting with bent knees, four s)              10  as share of this sign total 0.25
+  550 (The 'pincer' motif. Right-pointing iso)               9  as share of this sign total 0.45
+  055 (Four small vertical strokes above the )               8  as share of this sign total 0.50
+  405 (Simple tree with branches at the top)                 8  as share of this sign total 0.89
+  240 (Fish with extra whiskers on cheeks)                   8  as share of this sign total 0.09
+  142 (Person with staff)                                    8  as share of this sign total 0.32
+  904 (Two slightly nested right parentheses)                7  as share of this sign total 0.78
+-- STANDALONE (names of 1 sign)
+  220 (Fish with no other decoration)                       19  as share of this sign total 0.50
+  176 (Person sitting with bent knees, four s)              17  as share of this sign total 0.42
+  142 (Person with staff)                                   15  as share of this sign total 0.60
+  061 (Simple lambda but reversed horizontall)              14  as share of this sign total 0.70
+  233 (Fish with a horizontal line through bo)              11  as share of this sign total 0.18
+  016 (Six short vertical strokes)                          11  as share of this sign total 0.73
+  900 (Right parenthesis (perhaps with a back)               9  as share of this sign total 0.60
+  550 (The 'pincer' motif. Right-pointing iso)               9  as share of this sign total 0.45
+  803 (Leaf with tree at bottom)                             7  as share of this sign total 0.47
+  235 (Fish with a caret shaped hat)                         7  as share of this sign total 0.10
+  231 (Fish with a small vertical stroke in t)               7  as share of this sign total 0.25
+  416 (Pitckfork with two stacked heads)                     7  as share of this sign total 0.78
+  017 (Seven short vertical strokes)                         7  as share of this sign total 0.27
+  240 (Fish with extra whiskers on cheeks)                   7  as share of this sign total 0.08
+  390 (Simple tree with branches at the top)                 6  as share of this sign total 0.14
+-- concentration: first-sign types 146 top5 share 0.345679012345679 ; last-sign types 128 top5 share 0.29012345679012347
+-- signs in 2+ names, by tendency to END (n>=8 in multi)
+  last 1.00 first 0.00 n=42 100 (Person with three heads)
+  last 1.00 first 0.00 n=39 760 (U with decorated branching at top)
+  last 1.00 first 0.00 n=16 923 (Right parenthesis drawn in outline)
+  last 0.94 first 0.00 n=16 585 (?)
+  last 0.89 first 0.00 n=9 405 (Simple tree with branches at the top)
+  last 0.88 first 0.12 n=8 803 (Leaf with tree at bottom)
+  last 0.88 first 0.00 n=8 752 (U with decorated branching at top)
+  last 0.82 first 0.09 n=11 550 (The 'pincer' motif. Right-pointing iso)
+  last 0.80 first 0.10 n=10 142 (Person with staff)
+  last 0.79 first 0.21 n=19 220 (Fish with no other decoration)
+  last 0.78 first 0.05 n=37 390 (Simple tree with branches at the top)
+  last 0.78 first 0.11 n=9 690 (Two nested greater-than symbols, touch)
+-- by tendency to START
+  first 1.00 last 0.00 n=10 013 (Two small vertical strokes over one sm)
+  first 0.80 last 0.03 n=61 235 (Fish with a caret shaped hat)
+  first 0.77 last 0.14 n=22 806 (Leaf with tree at bottom)
+  first 0.77 last 0.08 n=13 140 (Person with round breasts and one rais)
+  first 0.76 last 0.24 n=25 798 (Leaf with 'pincers' coming off the rig)
+  first 0.64 last 0.14 n=50 233 (Fish with a horizontal line through bo)
+  first 0.62 last 0.09 n=45 590 (Square at bottom with vertical bar com)
+  first 0.58 last 0.05 n=19 017 (Seven short vertical strokes)
+  first 0.51 last 0.10 n=78 240 (Fish with extra whiskers on cheeks)
+  first 0.48 last 0.05 n=21 231 (Fish with a small vertical stroke in t)
+  first 0.45 last 0.03 n=29 415 (Pitchfork with tines)
+  first 0.44 last 0.56 n=9 615 (A grid of x by y cells)
+
+== Q2 HOUSE (area+block-house): seals in groups of 2+: 355 in 95 groups
+  any shared sign                               obs  55 chance  44.05 ratio  1.25  P 0.0370
+  multi: first in A, first in B                 obs  17 chance  10.80 ratio  1.57  P 0.0195
+  multi: first in A, last in B                  obs   4 chance   4.93 ratio  0.81  P 0.7836
+  multi: first in A, mid in B                   obs   1 chance   3.55 ratio  0.28  P 1.0000
+  multi: last in A, first in B                  obs   1 chance   1.00 ratio  1.00  P 0.6712
+  multi: last in A, last in B                   obs  11 chance   7.69 ratio  1.43  P 0.1174
+  multi: last in A, mid in B                    obs   1 chance   1.05 ratio  0.95  P 0.6887
+  multi: mid in A, first in B                   obs   7 chance   4.43 ratio  1.58  P 0.0745
+  multi: mid in A, last in B                    obs   1 chance   1.17 ratio  0.86  P 0.7621
+  multi: mid in A, mid in B                     obs   3 chance   3.31 ratio  0.91  P 0.6672
+  pair with a one-sign name sharing             obs  12 chance  10.23 ratio  1.17  P 0.3093
+  whole name                                    obs   3 chance   2.55 ratio  1.18  P 0.4843
+
+== Q2 ROOM (area+block-house+room): seals in groups of 2+: 139 in 55 groups
+  any shared sign                               obs   8 chance   6.27 ratio  1.28  P 0.2844
+  multi: first in A, last in B                  obs   1 chance   0.40 ratio  2.48  P 0.3348
+  multi: last in A, first in B                  obs   1 chance   0.23 ratio  4.36  P 0.2079
+  multi: last in A, last in B                   obs   2 chance   0.95 ratio  2.09  P 0.2444
+  multi: mid in A, first in B                   obs   1 chance   0.31 ratio  3.21  P 0.2734
+  multi: mid in A, last in B                    obs   1 chance   0.28 ratio  3.51  P 0.2554
+  pair with a one-sign name sharing             obs   2 chance   2.56 ratio  0.78  P 0.7516
+
+== segments on 3+ seals
+   19 seals  220                    sites {'Harappa': 3, 'Kalibangan': 2, 'Mohenjo-daro': 13, 'Nausharo': 1} houses[8] ['AB- -Pit I', 'DKG. (S) 1I', 'DKG. (S) 9IV', 'HRA 2X', 'HRB 1VIII', 'HRB 5XXIX']
+   17 seals  176                    sites {'Chanhu-daro': 1, 'Harappa': 3, 'Mohenjo-daro': 11, 'Dholavira': 2} houses[9] ['Castle- 47 x 67-', 'DKB 3VII', 'DKC 11-', 'DKE Trech EII', 'DKE Trench E-', 'DKG Central Street-']
+   15 seals  142                    sites {'Dholavira': 3, 'Harappa': 4, 'Lothal': 1, 'Mohenjo-daro': 6, 'Unknown': 1} houses[8] ['AB- -Pit II', 'Castle- 47 x 98 x 3-', 'DKC 11-', 'DKC Trench D-', 'DKE Trench E-', 'DKG. (S) 2II']
+   14 seals  061                    sites {'Banawali': 1, 'Harappa': 2, 'Mohenjo-daro': 9, 'Lakhanjo-daro': 1, 'Kalibangan': 1} houses[8] ['DKG. (S) 7III', 'DKG. (S) 8II', 'DKG. (S) 9VIII', 'DKG. (S) Long Lane10/12', 'HR- Main street E.-', 'HRA 2III']
+   14 seals  590-390                sites {'Allahdino': 1, 'Chanhu-daro': 1, 'Harappa': 4, 'Kish': 1, 'Mohenjo-daro': 6, 'Dholavira': 1} houses[7] ['-- 45 x 59 x 1-', '-- J7SW Quad', 'DKG. (S) 11III', 'DKG. (S) 1III', 'DKG. (S) 7IX', 'DKG. (S) 7VIII']
+   11 seals  016                    sites {'Dholavira': 3, 'Harappa': 1, 'Mohenjo-daro': 7} houses[8] ['Annexe- 58 x 19 x 4-', 'DKC 4-', 'DKG. (S) 10A-', 'DKG. (S) 1III', 'DKG. (S) 9VIII', 'HRB 2IX']
+   11 seals  233                    sites {'Chanhu-daro': 1, 'Harappa': 2, 'Lothal': 1, 'Mohenjo-daro': 7} houses[4] ['DKC Street C1 betw. 3/5-', 'DKE Trench E-', 'DKG. (S) 10I', 'DKG. (S) 1III']
+    9 seals  550                    sites {'Harappa': 2, 'Lothal': 2, 'Mohenjo-daro': 5} houses[3] ['DKG. (S) 12I', 'DKG. (S) 9IX', 'DKG. (S) Crooked Lane-']
+    9 seals  900                    sites {'Harappa': 3, 'Mohenjo-daro': 5, 'Nuhato': 1} houses[3] ['DKG. (S) 10I', 'DKG. (S) Crooked Lane-', 'VSA 2XVI']
+    7 seals  017                    sites {'Harappa': 2, 'Kalibangan': 1, 'Mohenjo-daro': 4} houses[3] ['DKC 10-', 'DKG. (S) 9IX', 'SD- Main Street-']
+    7 seals  231                    sites {'Chanhu-daro': 1, 'Harappa': 2, 'Kalibangan': 1, 'Mohenjo-daro': 3} houses[3] ['DKC 8-', 'DKG. (N) 18-', 'DKG. (S) 9VI']
+    7 seals  235                    sites {'Chanhu-daro': 1, 'Mohenjo-daro': 4, 'Dholavira': 2} houses[5] ['Castle- 48 x 1 x 1-', 'DKG. (S) 10I', 'DKG. (S) 7VIII', 'Lower Town- 25 x 94 x 1-', 'SDStupa -Lane']
+    7 seals  240                    sites {'Harappa': 2, 'Mohenjo-daro': 4, 'Nausharo': 1} houses[4] ['DKG. (S) 8A-', 'DKG. (S) 9III', 'DKG. (S) 9VIII', 'HRB 5XXIX']
+    7 seals  415-100                sites {'Mohenjo-daro': 7} houses[5] ['DKG First Street-', 'DKG. (N) 21IV', 'DKG. (S) 1III', 'DKG. (S) 9II', 'DKG. (S) Loop Lane-']
+    7 seals  416                    sites {'Dholavira': 1, 'Harappa': 1, 'Mohenjo-daro': 5} houses[5] ['DKC 12-', 'DKG. (N) West Street-', 'DKG. (S) 1VI', 'DKG. (S) 8III', 'LC 4-']
+    7 seals  803                    sites {'Banawali': 1, 'Harappa': 1, 'Mohenjo-daro': 5} houses[4] ['DKC 3-', 'DKG. (S) 10II', 'DKG. (S) 3VI', 'VSA 2XVI']
+    6 seals  097                    sites {'Harappa': 1, 'Mohenjo-daro': 5} houses[4] ['DKG First Street-', 'DKG. (S) 10IV', 'DKG. (S) 9AVIII', 'DKG. (S) Long Lane betw. 10A/12-']
+    6 seals  390                    sites {'Chanhu-daro': 1, 'Mohenjo-daro': 5} houses[3] ['DKG. (S) 1VI', 'DKG. (S) 7I', 'DKG. (S) 9XI']
+    6 seals  460                    sites {'Dholavira': 1, 'Harappa': 1, 'Mohenjo-daro': 4} houses[3] ['DKC 10-', 'DKE Trench EII', 'DKG. (S) Long Lane-']
+    6 seals  705                    sites {'Mohenjo-daro': 6} houses[6] ['DKG. (N) 20I', 'DKG. (S) 12V', 'DKG. (S) 1VI', 'HRA 1I', 'HRB 2V', 'HRB 6XLVIII']
+    6 seals  706                    sites {'Harappa': 3, 'Mohenjo-daro': 2, 'Dholavira': 1} houses[2] ['DKG First Street-', 'DKG. (N) 29I']
+    6 seals  840                    sites {'Harappa': 1, 'Lothal': 1, 'Mohenjo-daro': 2, 'Dholavira': 2} houses[4] ['DKG. (N) West Street-', 'LB 9-', 'Middle Town- 45 x 46 x 2-', 'Middle Town- 45 x 63 x 4-']
+    5 seals  013-840                sites {'Harappa': 1, 'Lothal': 1, 'Mohenjo-daro': 3} houses[1] ['HRB 2XII']
+    5 seals  017-585                sites {'Mohenjo-daro': 5} houses[5] ['DKB 2XIII', 'DKC Street C2 betw. 9/10-', 'DKG. (S) 4-', 'DKG. (S) 7I', 'DKG. (S) 7V']
+    5 seals  055                    sites {'Chanhu-daro': 1, 'Mohenjo-daro': 3, "Qala'at al-Bahrain": 1} houses[2] ['DKG. (S) Long Lane10/12', 'HRA 2III']
+    5 seals  140                    sites {'Harappa': 2, 'Mohenjo-daro': 3} houses[3] ['DKG. (S) 12V', 'DKG. (S) 4-', 'VSA 2VIII']
+    5 seals  255-435-690            sites {'Harappa': 1, 'Mohenjo-daro': 4} houses[3] ['DKG. (N) 22-', 'DKG. (S) 10II', 'DKG. (S) 9IV']
+    4 seals  140-100                sites {'Harappa': 2, 'Mohenjo-daro': 2} houses[2] ['DKB 4XIV', 'SDStupa StupaCourt']
+    4 seals  233-176                sites {'Kalibangan': 1, 'Lothal': 2, 'Mohenjo-daro': 1} houses[1] ['VSA 6 or 4(XXVII) or Lane 3-']
+    4 seals  240-233                sites {'Harappa': 2, 'Mohenjo-daro': 2} houses[2] ['DKG. (N) 22-', 'HRA 1I']
+    4 seals  240-415-100            sites {'Mohenjo-daro': 3, 'Gola Dhoro (Bagasra)': 1} houses[2] ['DKG First Street-', 'DKG. (S) 7II']
+    4 seals  388                    sites {'Harappa': 2, 'Mohenjo-daro': 2} houses[1] ['HRA 2III']
+    4 seals  531                    sites {'Chanhu-daro': 1, 'Harappa': 1, 'Kalibangan': 1, 'Mohenjo-daro': 1} houses[1] ['DKG. (N) 23II']
+    4 seals  590-405                sites {'Harappa': 2, 'Mohenjo-daro': 1, 'Lakhanjo-daro': 1} houses[1] ['DKG. (S) 12V']
+    4 seals  690                    sites {'Harappa': 1, 'Kalibangan': 1, 'Mohenjo-daro': 2} houses[2] ['DKC 2-', 'DKE Street 1I/II']
+    4 seals  760                    sites {'Mohenjo-daro': 3, 'Nausharo': 1} houses[2] ['DKG. (S) 1I', 'SDBath North Cells-']
+    3 seals  017-575                sites {'Khirsara': 1, 'Mohenjo-daro': 2} houses[1] ['DKG. (N) 15VI']
+    3 seals  171                    sites {'Harappa': 1, 'Mohenjo-daro': 2} houses[2] ['DKG. (S) 7VII', 'DKG. (S) 9VIII']
+    3 seals  231-705                sites {'Mohenjo-daro': 3} houses[2] ['DKE Trench EII', 'DKG. (S) Fore Lane7(I)/10']
+    3 seals  235-240                sites {'Harappa': 1, 'Mohenjo-daro': 2} houses[1] ['DKE Trench E-']
+    3 seals  235-482                sites {'Chanhu-daro': 1, 'Lothal': 1, 'Mohenjo-daro': 1} houses[1] ['HRB 2IX']
+    3 seals  384                    sites {'Harappa': 1, 'Mohenjo-daro': 2} houses[1] ['HRB 2Main street']
+    3 seals  415-220                sites {'Harappa': 1, 'Mohenjo-daro': 2} houses[1] ['HRB 8LXII']
+    3 seals  484-337                sites {'Harappa': 1, 'Mohenjo-daro': 2} houses[2] ['DKB 2III', 'DKG. (S) 8III']
+    3 seals  519                    sites {'Mohenjo-daro': 3} houses[3] ['DKG. (S) 3IV', 'DKG. (S) 3VI', 'DKG. (S) Crooked Lane-']
+    3 seals  590                    sites {'Mohenjo-daro': 2, 'Dholavira': 1} houses[2] ['South Reservoir3 48 x 38 x 1+2-', 'VSA 1I']
+    3 seals  615                    sites {'Harappa': 1, 'Mohenjo-daro': 2} houses[2] ['DKE Trench E-', 'DKG. (S) 7III']
+    3 seals  705-255                sites {'Mohenjo-daro': 3} houses[3] ['DKE Trench E-', 'DKG. (S) 12V', 'SD- 4-']
+    3 seals  798                    sites {'Harappa': 1, 'Mohenjo-daro': 2} houses[2] ['DKE Trench E-', 'DKG. (N) 18-']
+    3 seals  806                    sites {'Harappa': 2, 'Mohenjo-daro': 1} houses[0] []
+    3 seals  877                    sites {'Harappa': 3} houses[0] []
+    3 seals  910                    sites {'Harappa': 2, 'Mohenjo-daro': 1} houses[1] ['DKG. (S) 9II']
+    3 seals  923                    sites {'Harappa': 1, 'Mohenjo-daro': 2} houses[2] ['DKC 2-', 'HRB 2Main street 1']
+    3 seals  927                    sites {'Mohenjo-daro': 3} houses[3] ['DKG. (S) 1VII', 'DKG. (S) 7VIII', 'DKG. (S) Long Lane-']
+segments on 3+ seals: 54 covering seals 319 of 871
+of those, on 2+ sites: 46
+distinct segments 552 | on 2+ seals 111 | on 2+ sites 76 | multi-sign segments on 2+ sites 27 | multi-sign segments on 2+ seals 43 | multi-sign on 3+ seals 17
+
+== Q2 variant rare signs only (<=40 name-slot tokens), order kept: HOUSE seals 314
+  any shared sign                               obs  19 chance  14.58 ratio  1.30  P 0.1074
+  multi: first in A, first in B                 obs   1 chance   1.43 ratio  0.70  P 0.8516
+  multi: first in A, last in B                  obs   1 chance   0.63 ratio  1.60  P 0.4903
+  multi: last in A, first in B                  obs   1 chance   0.42 ratio  2.36  P 0.3538
+  multi: last in A, last in B                   obs   2 chance   1.52 ratio  1.31  P 0.4588
+  multi: mid in A, first in B                   obs   2 chance   1.54 ratio  1.30  P 0.4928
+  pair with a one-sign name sharing             obs  12 chance   9.19 ratio  1.31  P 0.1839
+  whole name                                    obs   3 chance   4.10 ratio  0.73  P 0.8861
+
+== Q2 variant rare signs only (<=15 tokens): HOUSE seals 205
+  any shared sign                               obs   4 chance   2.65 ratio  1.51  P 0.2699
+  multi: last in A, last in B                   obs   1 chance   0.17 ratio  5.76  P 0.1679
+  pair with a one-sign name sharing             obs   3 chance   1.92 ratio  1.56  P 0.3043
+  whole name                                    obs   1 chance   0.80 ratio  1.26  P 0.5682
+
+== Q2 variant who-role signs only: HOUSE seals 157
+  any shared sign                               obs  20 chance  12.09 ratio  1.65  P 0.0040
+  multi: first in A, first in B                 obs   3 chance   1.19 ratio  2.52  P 0.0310
+  multi: last in A, last in B                   obs   1 chance   0.65 ratio  1.54  P 0.5792
+  pair with a one-sign name sharing             obs  16 chance   9.58 ratio  1.67  P 0.0055
+  whole name                                    obs   9 chance   4.95 ratio  1.82  P 0.0150
+
+== Q2 variant segment minus house-markers 100/760: HOUSE seals 354
+  any shared sign                               obs  50 chance  40.48 ratio  1.24  P 0.0470
+  multi: first in A, first in B                 obs  13 chance   7.98 ratio  1.63  P 0.0250
+  multi: first in A, last in B                  obs   5 chance   6.38 ratio  0.78  P 0.8491
+  multi: last in A, first in B                  obs   1 chance   1.10 ratio  0.91  P 0.7036
+  multi: last in A, last in B                   obs   5 chance   3.24 ratio  1.55  P 0.1974
+  multi: last in A, mid in B                    obs   1 chance   1.02 ratio  0.98  P 0.6827
+  multi: mid in A, first in B                   obs   6 chance   3.04 ratio  1.98  P 0.0360
+  multi: mid in A, last in B                    obs   1 chance   1.29 ratio  0.78  P 0.7771
+  multi: mid in A, mid in B                     obs   3 chance   3.17 ratio  0.95  P 0.6427
+  pair with a one-sign name sharing             obs  17 chance  13.98 ratio  1.22  P 0.1914
+  whole name                                    obs   3 chance   2.60 ratio  1.15  P 0.5082
