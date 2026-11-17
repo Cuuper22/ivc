@@ -1,0 +1,59 @@
+[j3] 30 signs: A (word test) and B (time test)
+[B] 592 paṭṭi: class NAME signature holds in middle and in early+late -> too few: middle 3/9 against base 47%; early+late 0/1 against base 53%
+[B] 703 maṉai: class MEASURE signature holds in middle and in early+late -> failed: middle 0/3 against base 10%; early+late 2/5 against base 12%
+[B] 554 kaḷam: class NAME signature holds in middle and in early+late -> held: middle 4/4 against base 47%; early+late 3/3 against base 53%
+[B] 064 pāti: class THING signature holds in middle and in early+late -> failed: middle 0/3 against base 16%; early+late 1/3 against base 15%
+[B] 136 aṭimai: class THING signature holds in middle and in early+late -> too few: middle 0/2 against base 16%; early+late 4/6 against base 15%
+[B] 603 kūṭu: class NAME signature holds in middle and in early+late -> too few: middle 1/1 against base 47%; early+late 2/2 against base 53%
+[B] 098 ēvalaṉ: class NAME signature holds in middle and in early+late -> too few: middle 4/6 against base 47%; early+late 1/2 against base 53%
+[B] 408 kiḷai: class COUNTED signature holds in middle and in early+late -> too few: middle 2/3 against base 26%; early+late 2/2 against base 27%
+[B] 621 aṭai: class TITLE signature holds in middle and in early+late -> held: middle 3/4 against base 33%; early+late 9/10 against base 28%
+[B] 243 kayal: class NAME signature holds in middle and in early+late -> held: middle 4/6 against base 47%; early+late 3/4 against base 53%
+[B] 130 kaḷamar: class THING signature holds in middle and in early+late -> held: middle 1/3 against base 16%; early+late 3/6 against base 15%
+[B] 697 ney: class GOODS signature holds in middle and in early+late -> too few: middle 1/1 against base 51%; early+late 2/2 against base 27%
+[B] 776 malar: class NAME signature holds in middle and in early+late -> too few: middle 3/6 against base 47%; early+late 0/0 against base 53%
+[B] 804 ilai: class NAME signature holds in middle and in early+late -> too few: middle 0/1 against base 47%; early+late 1/3 against base 53%
+[B] 127 villavaṉ: class NAME signature holds in middle and in early+late -> too few: middle 0/2 against base 47%; early+late 0/1 against base 53%
+[B] 167 kūli: class TITLE signature holds in middle and in early+late -> too few: middle 12/13 against base 33%; early+late 2/2 against base 28%
+[B] 165 nāḷ: class DATE signature holds in middle and in early+late -> held: middle 5/9 against base 28%; early+late 5/10 against base 26%
+[B] 645 kar̤añcu: class THING signature holds in middle and in early+late -> held: middle 3/7 against base 16%; early+late 1/4 against base 15%
+[B] 236 vēymīn: class NAME signature holds in middle and in early+late -> failed: middle 4/5 against base 47%; early+late 1/6 against base 53%
+[B] 048 er̤uvar: class NAME signature holds in middle and in early+late -> too few: middle 4/4 against base 47%; early+late 2/2 against base 53%
+[B] 832 aṭai: class THING signature holds in middle and in early+late -> failed: middle 5/17 against base 16%; early+late 1/10 against base 15%
+[B] 460 mukkōṭu: class NAME signature holds in middle and in early+late -> held: middle 6/8 against base 47%; early+late 13/14 against base 53%
+[B] 222 aṭaimīn: class NAME signature holds in middle and in early+late -> held: middle 3/4 against base 47%; early+late 4/4 against base 53%
+[B] 821 mañcāṭi: class THING signature holds in middle and in early+late -> failed: middle 0/5 against base 16%; early+late 3/5 against base 15%
+[B] 792 aracu: class NAME signature holds in middle and in early+late -> held: middle 4/6 against base 47%; early+late 3/3 against base 53%
+[B] 350 kalappai: class THING signature holds in middle and in early+late -> held: middle 3/14 against base 16%; early+late 7/16 against base 15%
+[B] 027 toṇṭu: class NAME signature holds in middle and in early+late -> too few: middle 5/5 against base 47%; early+late 1/1 against base 53%
+[B] 201 kār: class OPENER signature holds in middle and in early+late -> too few: middle 4/4 against base 26%; early+late 1/1 against base 24%
+[B] 921 vil: class NAME signature holds in middle and in early+late -> held: middle 5/6 against base 47%; early+late 6/7 against base 53%
+[B] 232 kūṭumīn: class NAME signature holds in middle and in early+late -> failed: middle 1/3 against base 47%; early+late 2/3 against base 53%
+
+[j3] statuses: {'testing': np.int64(23), 'strict': np.int64(6), 'wide': np.int64(1)}  A: {'no': np.int64(12), 'direction only': np.int64(12), 'yes': np.int64(4), 'n/a': np.int64(2)}  B: {'too few': np.int64(13), 'held': np.int64(11), 'failed': np.int64(6)}
+
+[M] measure words inside names: name-senses and rules (predictions written before computing)
+[M] 705: uncounted 705 inside a name = Kalam "Ship" (the vessel sense of kalam); counted 705 keeps "n kalam" and moves out of the name as an allowance
+     prediction: uncounted name uses sit at coast / Gujarat / abroad sites more than counted uses
+     -> yes: uncounted 705 inside a name at Gujarat / coast / abroad sites, against counted 705 14/52 = 27% against 9%, P 0.000165
+[M] 700: uncounted 700 on a seal = nāḻi "the Measurer", a ration-issuer's seal (a title, out of the name)
+     prediction: such seals are smaller than seals of the same length (a low office)
+     -> yes: seals with an uncounted cup: x0.86 of seals of the same length (n 8), P 0.0552
+[M] 530: uncounted 530 in a name = paṟaiyaṉ "Drummer, the crier" (paṟai "proclamation")
+     prediction: the jar or a closing title stands within two signs after it more than after other signs
+     -> no: uncounted 530 with the jar or a closer within two after it 0/16 = 0% against 28%, P 1
+[M] 540: uncounted 540 = paṟai "Drum": the goods word on pots and bangles, a name word on seals; counted 540 is the rice measure
+     prediction: uncounted 540 ends its text more than other signs (a goods label)
+     -> yes: uncounted 540 last in its text 15/25 = 60% against 31%, P 0.00286
+[M] 575: 575 inside a seal name = kōṭṭai "Fort, store-house" (the holder of a store); on a goods line it stays the great measure
+     prediction: seals with it in a name are bigger than seals of the same length
+     -> no: seals with 575 inside a name: x0.92 of seals of the same length (n 18), P 0.902
+[M] 711: 711 is never a name word: on a goods line "pot, n vaḷḷam" it is a measure and the line is not a name (no hyphened name on goods tablets)
+     prediction: uncounted uses before a jar or closer are fewer than for other signs
+     -> yes: uncounted 711 before a jar or closer 1/21 = 5% against 32%, P 0.00298
+[M] 868: 705/706 + 868 = "half a kalam" (araikkāṇi as the fraction of the measure before it), read as an amount, never inside a name
+     prediction: on new texts 868 stands right after a kalam sign more than chance (fact glimpsed on first-catalogue texts)
+     -> n/a: too few, P nan
+[M] 861: 861 + count at the front = the share opener ("two shares:"), moved out of the name; the name starts after the count
+     prediction: the next word after the count is a crest or house word more than chance
+     -> yes: front 861 + count: the next word is a crest or house word 90/188 = 48% against 15%, P 1.52e-25

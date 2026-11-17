@@ -36,6 +36,8 @@ for s in sorted(set(v3.index) | set(v2.index) | set(J3)):
     b = v2.loc[s] if s in v2.index else None
     if a is not None:
         r = dict(sign=s, sound=a.sound, english_long=a.english, dedr=a.dedr, status=a.status, report=a.report, second_word=a.second_word)
+    elif b is None:
+        r = dict(sign=s, sound='', english_long='', dedr='', status='', report='sound_list_v7.md', second_word='')
     else:
         r = dict(sign=s, sound=b.sound, english_long=b.english, dedr=b.dedr, status=b.status, report=b.report, second_word=b.alt_sound)
     same = b is not None and (b.sound == r['sound'] or s in KEEP)

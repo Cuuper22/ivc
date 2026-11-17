@@ -248,3 +248,15 @@ print('\nFIRST NAME SIGN (the crest slot) by level, union; top signs per level')
 for l, g in U.groupby('lvl'):
     c = collections.Counter(g[g.first != ''].first)
     print(f'  level {l} ({len(g)} seals, {int((g["first"] != "").sum())} with a first name sign):', c.most_common(8))
+
+# ------------------------------------------------------------------ rescue idea: the earliest fish names are long stacks
+print('\nRESCUE IDEA: ARE THE EARLIEST FISH-BEARING NAMES LONG STACKS OF HOUSE ELEMENTS?')
+w = U[U.anymarked]
+for lab, df in [('first catalogue', FL[FL.anymarked]), ('union', w)]:
+    a, b = df[df.lvl == 0], df[df.lvl > 0]
+    t = [[int((a.nmlen >= 6).sum()), int((a.nmlen < 6).sum())], [int((b.nmlen >= 6).sum()), int((b.nmlen < 6).sum())]]
+    print(f'  {lab}: names with a marked fish and 6+ signs: earliest {t[0][0]}/{len(a)}; later {t[1][0]}/{len(b)} ({100 * t[1][0] / len(b):.1f}%); Fisher P {fisher_exact(t)[1]:.3g}')
+n6 = U[U.hasname]
+a, b = n6[n6.lvl == 0], n6[n6.lvl > 0]
+t = [[int((a.nmlen >= 6).sum()), int((a.nmlen < 6).sum())], [int((b.nmlen >= 6).sum()), int((b.nmlen < 6).sum())]]
+print(f'  all named seals with 6+ name signs: earliest {t[0][0]}/{len(a)} against later {t[1][0]}/{len(b)} ({100 * t[1][0] / len(b):.1f}%); Fisher P {fisher_exact(t)[1]:.3g}')

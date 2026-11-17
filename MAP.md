@@ -228,4 +228,14 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `measured` Side-by-side version (120 inscriptions, pick the real line of four; chance 25.8%): real picked 29.2% pooled; free shuffle 14.4%; the two same-job shuffles 34.2% and 22.2%. Seals 36.7%, tablets 22.7%. Went against: by plausibility of the English a reader cannot tell the real content words from other words of the same job. The frame is what the English tests see.
 - `guess` Content words (which crest is which word, which counted thing is which good) stand only on the outside-fact predictions, not on how the English reads. Decoy test launched to measure the false-alarm rate of those predictions.
 
+## Who's who (from `jobs/out/registry.md`, book `WHOSWHO.md`)
+- `measured` Registry: 1,190 seals read whole or nearly whole in 273 houses, 41 agents; 3,422 named faces, 439 houses. The top 20 houses are all at both Mohenjo-daro and Harappa and in all three date bins.
+- `measured` At Mohenjo-daro 5 of 24 "X's man" seals sit in a building that also holds an owner object with the master's crest, against 2.10 by chance (P 0.046); family members sit there at chance (44 of 588 against 49.5). Agent seals are bigger (718 against 581 mm2).
+- `guess` "X's man" is the manager who lives in X's house (*kuṭi āḷ*), not an agent posted away. Fourth version of this reading.
+- `measured` The quarter sign (061 or 820) stands right before the king sign 142 in 11 of 81 uses against 1.37 expected (P 1.3e-7), at both big cities; before the signboard's 611 in 2 of 6. Mohenjo-daro's 22 king objects carry 13 different crests.
+- `guess` Kings are quarter-kings (*kāl kō*): one for each city quarter, not one per city.
+- `measured` Same-house seal pairs share a building 1.41 times chance at Mohenjo-daro (P 0.08), no pull at block level: a house is one building. Same-crest pairs share a building 1.43 times, same-tag pairs 1.11; at Harappa same-tag pairs share a trench 1.68 times (P 0.011).
+- `measured` House names beside goods: Bounty with grain words 17% against 5.7%; Kalam with store words 26% against 12.7%. Went against: Boxed-cotton, Grain-heap, Granary with their goods; same name on seal and tablet found near each other (three tries); one king house per city.
+- Note after the blind tests: house names in English are labels for crests; the crest identities and findspots are measured, the words on them are the soft layer.
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.
