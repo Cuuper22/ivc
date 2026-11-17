@@ -1,0 +1,61 @@
+(a) redesign: agents and members against shuffled buildings (owner objects of the same crest as the landmark)
+  Mohenjo-daro agents  : 5 of 24 sit in a building with an owner object of their crest; shuffled 2.10 (ratio 2.38, P high 0.0459, P low 0.9920)
+  Mohenjo-daro members : 44 of 588 sit in a building with an owner object of their crest; shuffled 49.49 (ratio 0.89, P high 0.8164, P low 0.2435)
+  all cities   agents  : 5 of 30 sit in a building with an owner object of their crest; shuffled 2.40 (ratio 2.09, P high 0.0699, P low 0.9760)
+  all cities   members : 52 of 775 sit in a building with an owner object of their crest; shuffled 61.31 (ratio 0.85, P high 0.8982, P low 0.1238)
+  agents found in a building that also holds an owner object of their crest:
+     M-1746   Mohenjo-daro|DKG. (S)|7II          817-002-240-415-100-740-090      | owners there: M-1726 861-002-240-495-615-740
+     M-100    Mohenjo-daro|DKE|Trench E          861-002-705-255-740-090          | owners there: M-431 705-033-590-390-740, M-432 705-033-590-390-740
+     M-199    Mohenjo-daro|DKG|First Street      861-002-240-415-100-740-090      | owners there: Lipi-2388 861-002-240-637-740, M-2106 240-838-585-740-400
+     M-265    Mohenjo-daro|DKG. (S)|9VIII        061-171-035-740-090              | owners there: M-408 817-002-061-407
+     M-865    Mohenjo-daro|DKE|Trench E          820-001-235-240-740-090          | owners there: M-1738 692-060-235-240-226, M-47 861-002-235-760-740, M-323 235-415-220-520
+(a) new idea: are agent seals bigger than owner seals of the same crest? (face area mm2, same city)
+  agents median 718 mm2 (n 40); owners of the same crests 620 (n 320), P 0.0436; all owners 581 (P 0.0164)
+
+(b) redesign: every object carrying the house name anywhere; cup 700 left out of store words
+  [objects       ] Boxed-cotton           cotton       : 5 of 71 (7%) against 160 of 2893 (5.5%), one-sided P 0.3613
+  [distinct texts] Boxed-cotton           cotton       : 5 of 65 (8%) against 130 of 2482 (5.2%), one-sided P 0.2598
+  [objects       ] Bounty 806             grain        : 22 of 133 (17%) against 170 of 2969 (5.7%), one-sided P 1.378e-05
+  [distinct texts] Bounty 806             grain        : 13 of 106 (12%) against 133 of 2545 (5.2%), one-sided P 0.004656
+  [objects       ] Grain-heap 416         grain        : 1 of 57 (2%) against 222 of 3021 (7.3%), one-sided P 0.9868
+  [distinct texts] Grain-heap 416         grain        : 1 of 47 (2%) against 169 of 2581 (6.5%), one-sided P 0.9581
+  [objects       ] Granary 605            grain        : 0 of 15 (0%) against 256 of 3055 (8.4%), one-sided P 1
+  [distinct texts] Granary 605            grain        : 0 of 10 (0%) against 199 of 2611 (7.6%), one-sided P 1
+  [objects       ] Chest 590 (not +390)   store/measure: 27 of 155 (17%) against 369 of 2893 (12.8%), one-sided P 0.06333
+  [distinct texts] Chest 590 (not +390)   store/measure: 23 of 122 (19%) against 328 of 2482 (13.2%), one-sided P 0.05456
+  [objects       ] Kalam 705              store/measure: 55 of 213 (26%) against 368 of 2892 (12.7%), one-sided P 6.051e-07
+  [distinct texts] Kalam 705              store/measure: 35 of 180 (19%) against 323 of 2477 (13.0%), one-sided P 0.01286
+  [objects       ] Kalam 706              store/measure: 18 of 99 (18%) against 468 of 2992 (15.6%), one-sided P 0.2865
+  [distinct texts] Kalam 706              store/measure: 15 of 82 (18%) against 399 of 2553 (15.6%), one-sided P 0.3005
+(b) new idea: share of a house's objects that are goods objects (not seals)
+  trade-named: 89 goods of 206 objects (43%); distinct goods texts 39
+  star-named: 158 goods of 389 objects (41%); distinct goods texts 90
+  Fisher one-sided P 0.3005
+  distinct texts: trade 38 of 148 (26%) against star 89 of 306 (29%); P 0.8075
+
+(d) redesign: rare names only (full name on at most 3 seals)
+  Mohenjo-daro area_key: 14 rare-name seals with a goods twin; same area_key: 4 against 2.58 (ratio 1.55, P 0.2378)
+  Harappa      area_key: 10 rare-name seals with a goods twin; same area_key: 0 against 1.43 (ratio 0.00, P 1.0000)
+  Mohenjo-daro block   : 10 rare-name seals with a goods twin; same block: 0 against 0.50 (ratio 0.00, P 1.0000)
+  Harappa      block   : 4 rare-name seals with a goods twin; same block: 0 against 0.46 (ratio 0.00, P 1.0000)
+(d) new idea: does a name have a desk? pairs of DIFFERENT objects with one full name in one city, sharing an area, against shuffled areas
+  Mohenjo-daro tablet-tablet: 10 same-name pairs (different texts), same area 1 against 1.72 (ratio 0.58, P 0.8571)
+  Mohenjo-daro seal-seal    : 376 same-name pairs (different texts), same area 55 against 65.56 (ratio 0.84, P 0.8352)
+  Harappa      tablet-tablet: 170 same-name pairs (different texts), same area 18 against 12.96 (ratio 1.39, P 0.1169)
+  Harappa      seal-seal    : 54 same-name pairs (different texts), same area 4 against 5.93 (ratio 0.67, P 0.8432)
+
+(e) redesign: the link sign stands between two crests
+  linked pairs: 5 distinct over 30 objects
+     ('806', '850') 15: M-1535, M-1536, M-1540, M-1563, M-2050, M-2054
+     ('590', '803') 11: H-278, H-279, H-280, H-281, H-282, H-283
+     ('590', '790') 2: Lipi-135, Lipi-4284
+     ('440', '590') 1: Dlp-2
+     ('176', '806') 1: H-20
+  linked           same area   : 0.1063 over 5 pairs; random crest pairs 0.1013 (ratio 1.05, P 0.4073)
+  plain two-crest  same area   : 0.1004 over 339 pairs; random crest pairs 0.1007 (ratio 1.00, P 0.5472)
+  linked           city overlap: 0.5629 over 5 pairs; random crest pairs 0.4226 (ratio 1.33, P 0.0420)
+  plain two-crest  city overlap: 0.4190 over 339 pairs; random crest pairs 0.4219 (ratio 0.99, P 0.6462)
+(e) new idea: object kinds of link names against plain two-crest names
+  link: ctab 15, mtab 11, seal 4
+  plain: seal 549, mtab 161, ctab 32, tag 17, pot 6, rod 6
+  tablets: link 26 of 30 (87%) against plain 193 of 771 (25%); one-sided P 6.683e-12

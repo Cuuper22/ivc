@@ -20,3 +20,14 @@ Set built by `work_scripts/blind_build.py` (seeds in the script); scored by `wor
 1. Forced choice: show the four versions of one inscription side by side and ask which reads most like a real label. That does not depend on each reader's bar for "sense".
 2. Work the soft layer: test content words within a job class against each other (crest against crest) with outside facts, not slot facts.
 3. Look at what readers called odd in real seal lines and fix the English for names (a name is a name; show it as one).
+
+## Side-by-side test (forced choice), `work_data/blind2/`
+120 inscriptions (50 seals, 50 tablets, 20 other); each row shows four English lines of one text: real, S1 (words dealt freely), S2 and S2b (two separate deals among signs doing the same job). Three readers pick the one that reads most like a real label. Chance 25.8%. Scored by `work_scripts/blind2_score.py`.
+- `measured` Real picked best: reader A 33 of 120 (27.5%; A picked option "a" 80 times and said it fell back on the first option), reader B 33 (27.5%), reader C 39 (32.5%). Pooled 105 of 360 = 29.2%.
+- `measured` Who was picked best, pooled: real 29.2%, S1 14.4%, S2 34.2%, S2b 22.2%. One same-job shuffle was picked more often than the real list.
+- `measured` By kind, pooled: seals real best 36.7% (P 0.001), tablets 22.7%, rest 26.7%. At least two of three readers picked the real line on 32 of 120 items (20.1 expected by luck).
+- `measured` Without the 7 rows where a scrambled line has a give-away dangling "Child of": reader B 28 of 113, reader C 35 of 113.
+
+What it means. Went against: a reader shown four versions cannot pick the real one from same-job shuffles (29% against 26% chance), though free shuffles are picked out as worse (14%). By how plausible the English sounds, the real word on a crest, a name part or a counted thing cannot be told from another word of the same kind: "Four cups" and "Four porters" are equally good tablet lines. So the English-plausibility test measures the frame, and it has no power on the content words. The first test's 35% against 27% was within the spread between two same-job shuffles here (34% and 22%).
+
+Rescue (redesign once): test the content words by what the method itself does with a WRONG word. Hand a tester a list of signs with words, some real and some swapped from another sign of the same job, without saying which; the tester writes a prediction first and runs it on outside facts (object kind, picture side, findspot, counts, new texts). The share of decoys that "come true" is the false-alarm rate of the whole method; the share of real values that come true, set beside it, is what the word list is worth.

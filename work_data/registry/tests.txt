@@ -1,0 +1,166 @@
+GREAT HOUSES (rank by objects naming the house; at least 5 seals; title words left out):
+ rank house_key       english  sounds  seals  agents_kept  objects_all  n_cities
+    1       240     High-star   mīmīn     39            3          119         7
+    2       235   Bamboo-star  vēymīn     61            2          100         8
+    3       176           Tax    iṟai     26            1           88         5
+    4       705         Kalam   kalam     30            1           69         7
+    5       803         House      il     38            0           63         9
+    6       806        Bounty   viḷai     27            0           61         3
+    7       503          Hill   malai     16            0           60         3
+    8       415        Branch   kavar     23            0           56        10
+    9       220          Star     mīn     20            0           56         7
+   10       140          Lady   ammai     31            2           50         5
+   11       255         Chief   mutal     11            0           45         7
+   12       233 Scabbard-fish   vāḷai     29            2           44         5
+   13       798    Descendant   maru-     23            0           40         5
+   14       840          Peer    iṇai     17            1           37         6
+   15       231    First-star  orumīn     15            0           34         3
+   16       061       Quarter     kāl     24            3           33         7
+   17       900          Moon  tiṅkaḷ     19            1           29         6
+   18   032+220     Dark-star iru-mīn     17            1           25         6
+   19       590         Chest   peṭṭi     17            0           24         6
+   20       550          Gate     vāy     14            0           24         5
+
+G  clustering: same-house pairs sharing a building / block / area, against shuffles of house labels within site
+  Mohenjo-daro building top-20 houses: 23 pairs against 16.27 (ratio 1.41, P 0.0795); seals with a findspot 612
+  Mohenjo-daro block    top-20 houses: 48 pairs against 51.76 (ratio 0.93, P 0.6657); seals with a findspot 612
+  Mohenjo-daro area_key top-20 houses: 484 pairs against 518.12 (ratio 0.93, P 0.7466); seals with a findspot 714
+  Harappa      building top-20 houses: 1 pairs against 0.33 (ratio 3.00, P 0.2899); seals with a findspot 129
+  Harappa      block    top-20 houses: 7 pairs against 5.33 (ratio 1.31, P 0.2794); seals with a findspot 129
+  Harappa      area_key top-20 houses: 19 pairs against 16.34 (ratio 1.16, P 0.2829); seals with a findspot 177
+   240      Mohenjo-daro building 6 vs 1.62 (P 0.020) | block 7 vs 5.05 (P 0.258)
+   235      Mohenjo-daro building 8 vs 3.80 (P 0.069) | block 12 vs 12.38 (P 0.496)
+   176      Mohenjo-daro building 3 vs 0.71 (P 0.050) | block 4 vs 2.26 (P 0.208)
+   705      Mohenjo-daro building 1 vs 1.61 (P 0.791) | block 3 vs 5.16 (P 0.824)
+   803      Mohenjo-daro building 0 vs 1.45 (P 1.000) | block 2 vs 4.68 (P 0.913)
+   806      Mohenjo-daro building 0 vs 0.85 (P 1.000) | block 4 vs 2.56 (P 0.254)
+   503      Mohenjo-daro building 0 vs 0.29 (P 1.000) | block 1 vs 0.82 (P 0.546)
+   415      Mohenjo-daro building 1 vs 0.87 (P 0.561) | block 3 vs 2.63 (P 0.435)
+   220      Mohenjo-daro building 0 vs 0.34 (P 1.000) | block 1 vs 1.12 (P 0.648)
+   140      Mohenjo-daro building 2 vs 1.07 (P 0.270) | block 3 vs 3.33 (P 0.575)
+   255      Mohenjo-daro building 0 vs 0.21 (P 1.000) | block 1 vs 0.66 (P 0.471)
+   233      Mohenjo-daro building 1 vs 1.15 (P 0.672) | block 2 vs 3.89 (P 0.846)
+   798      Mohenjo-daro building 0 vs 0.51 (P 1.000) | block 0 vs 1.57 (P 1.000)
+   840      Mohenjo-daro building 0 vs 0.44 (P 1.000) | block 1 vs 1.36 (P 0.734)
+   231      Mohenjo-daro building 0 vs 0.32 (P 1.000) | block 1 vs 1.13 (P 0.663)
+   061      Mohenjo-daro building 1 vs 0.53 (P 0.405) | block 2 vs 1.60 (P 0.418)
+   900      Mohenjo-daro building 0 vs 0.08 (P 1.000) | block 1 vs 0.23 (P 0.206)
+   032+220  Mohenjo-daro building 0 vs 0.13 (P 1.000) | block 0 vs 0.39 (P 1.000)
+   590      Mohenjo-daro building 0 vs 0.17 (P 1.000) | block 0 vs 0.54 (P 1.000)
+   550      Mohenjo-daro building 0 vs 0.12 (P 1.000) | block 0 vs 0.37 (P 1.000)
+
+(a) agents vs family: is the seal found in a building / area where the house has another (owner) object?
+  by crest house       at building: agents away 22 of 27 (81%); members away 570 of 622 (92%); one-sided P 0.976
+  by crest house       at area_key: agents away 11 of 31 (35%); members away 351 of 786 (45%); one-sided P 0.884
+  by exact master name at building: agents away 11 of 11 (100%); members away 174 of 189 (92%); one-sided P 0.414
+  by exact master name at area_key: agents away 6 of 11 (55%); members away 162 of 260 (62%); one-sided P 0.800
+
+(b) goods words beside the house name (signs on the same goods object outside the name)
+  [objects] Boxed-cotton           cotton        : 0 of 6 (0%) against 7 of 880 (0.8%); one-sided P 1.0000
+  [objects] grain-named            grain         : 0 of 49 (0%) against 38 of 837 (4.5%); one-sided P 1.0000
+  [objects] Chest                  store/measure : 0 of 5 (0%) against 342 of 881 (38.8%); one-sided P 1.0000
+  [objects] Kalam                  store/measure : 5 of 33 (15%) against 337 of 853 (39.5%); one-sided P 0.9993
+  [objects] Cotton (390 as crest)  cotton        : 1 of 2 (50%) against 6 of 884 (0.7%); one-sided P 0.0157
+  [distinct texts] Boxed-cotton           cotton        : 0 of 6 (0%) against 6 of 597 (1.0%); one-sided P 1.0000
+  [distinct texts] grain-named            grain         : 0 of 24 (0%) against 29 of 579 (5.0%); one-sided P 1.0000
+  [distinct texts] Chest                  store/measure : 0 of 4 (0%) against 280 of 599 (46.7%); one-sided P 1.0000
+  [distinct texts] Kalam                  store/measure : 5 of 19 (26%) against 275 of 584 (47.1%); one-sided P 0.9806
+  [distinct texts] Cotton (390 as crest)  cotton        : 1 of 2 (50%) against 5 of 601 (0.8%); one-sided P 0.0198
+  what each grain/cotton/chest house object carries (distinct texts):
+     Boxed-cotton H-1109     mtab  Harappa      590-390-740                              cats=[]
+     Boxed-cotton H-1776     mtab  Harappa      550-060-590-390-740                      cats=[]
+     Boxed-cotton H-1802     mtab  Harappa      590-390-740-605-033                      cats=['grain']
+     Boxed-cotton H-816      mtab  Harappa      590-390-740-400-700-033                  cats=['store/measure']
+     Boxed-cotton M-437      tag   Mohenjo-daro 820-002-590-390-740                      cats=[]
+     Boxed-cotton M-1592     pot   Mohenjo-daro 590-390-740                              cats=[]
+     grain-named  H-1158     mtab  Harappa      605-760-740-400                          cats=[]
+     grain-named  H-1192     mtab  Harappa      416-220-767-740-400-004-220-700          cats=['store/measure']
+     grain-named  H-1799     mtab  Harappa      806-235-590-405-740-400                  cats=[]
+     grain-named  H-1852     mtab  Harappa      806-740-000-000                          cats=[]
+     grain-named  H-2119     mtab  Harappa      003-861-416-740                          cats=[]
+     grain-named  H-302      mtab  Harappa      004-700-220-416-220-740-760-400          cats=['store/measure']
+     grain-named  H-694      mtab  Harappa      806-368-235-590-390-740                  cats=[]
+     grain-named  H-770      mtab  Harappa      416-840-151-033-700                      cats=['store/measure']
+     grain-named  H-912      mtab  Harappa      416-220-760-740-400-004-700-220          cats=['store/measure']
+     grain-named  M-2054     ctab  Mohenjo-daro 780-806-845-061-407-850-900-740          cats=[]
+     grain-named  M-472      mtab  Mohenjo-daro 806-235-590-405-740-400                  cats=[]
+     grain-named  M-494      mtab  Mohenjo-daro 838-798-176-740-151-697-390-255-070-741-150-221-840-032-741-904-740-820-032-017-904-415-100-921 cats=['cotton']
+     Chest        H-207      mtab  Harappa      590-405-740-400                          cats=[]
+     Chest        Hls-1      tag   Hulas        590-407-740                              cats=[]
+     Chest        K-98       pot   Kalibangan   590-411-740-400                          cats=[]
+     Chest        M-1457     ctab  Mohenjo-daro 415-220-845-407-590-405-100-740-790      cats=['grain', 'ivory/metal/bead']
+     Kalam        Ch-2       pot   Chandigarh   705-050-740                              cats=[]
+     Kalam        H-1839     mtab  Harappa      033-700-705-630-175-100-740              cats=['store/measure']
+     Kalam        H-1840     mtab  Harappa      550-060-705-255-740-090-637-272-317      cats=[]
+     Kalam        H-1945     mtab  Harappa      700-032-705-717-388-740-400              cats=['store/measure']
+     Kalam        H-177      mtab  Harappa      817-002-031-706-151-033-700              cats=['store/measure']
+     Kalam        H-297      mtab  Harappa      706-630-336-151-400-034-700              cats=['store/measure']
+     Kalam        H-846      mtab  Harappa      705-031-100-740-400-033-700              cats=['store/measure']
+     Kalam        H-885      mtab  Harappa      705-400                                  cats=[]
+     Kalam        L-124      tag   Lothal       705-500-741-001-055-220-740-090          cats=[]
+     Kalam        L-146      tag   Lothal       705-033-520                              cats=[]
+     Kalam        L-190      tag   Lothal       705-500-741-001-055-220-740-090-317-920-002-000-000-000-880 cats=[]
+     Kalam        L-191      tag   Lothal       705-500-741-001-055-220-740-090-861-002-235 cats=[]
+
+(c) pairs of seals in one city: share building / area, against locations shuffled within site
+  Mohenjo-daro building same crest                     : 2520 pairs, 28 share against 19.54 (ratio 1.43, P 0.0559)
+  Mohenjo-daro building same tag      (different crest): 1823 pairs, 16 share against 14.40 (ratio 1.11, P 0.3477)
+  Mohenjo-daro building same personal (different crest): 190 pairs, 3 share against 1.50 (ratio 2.00, P 0.2008)
+  Mohenjo-daro area_key same crest                     : 3483 pairs, 596 share against 623.66 (ratio 0.96, P 0.7083)
+  Mohenjo-daro area_key same tag      (different crest): 2584 pairs, 425 share against 461.23 (ratio 0.92, P 0.7972)
+  Mohenjo-daro area_key same personal (different crest): 263 pairs, 45 share against 47.26 (ratio 0.95, P 0.5884)
+  Harappa      building same crest                     : 87 pairs, 2 share against 0.40 (ratio 5.04, P 0.0559)
+  Harappa      building same tag      (different crest): 97 pairs, 1 share against 0.42 (ratio 2.39, P 0.3487)
+  Harappa      building same personal (different crest): 4 pairs, 0 share against 0.01 (ratio 0.00, P 1.0000)
+  Harappa      area_key same crest                     : 180 pairs, 22 share against 19.75 (ratio 1.11, P 0.3337)
+  Harappa      area_key same tag      (different crest): 175 pairs, 32 share against 19.07 (ratio 1.68, P 0.0110)
+  Harappa      area_key same personal (different crest): 9 pairs, 0 share against 0.99 (ratio 0.00, P 1.0000)
+
+(d) same full name on a seal and on a goods object in one city: same area / same building?
+  Mohenjo-daro area_key: 79 seals whose full name is on a goods object in the same city; goods object in the same area_key: 22 against 17.44 (ratio 1.26, P 0.1588)
+  Harappa      area_key: 50 seals whose full name is on a goods object in the same city; goods object in the same area_key: 11 against 11.28 (ratio 0.98, P 0.6344)
+  Mohenjo-daro building: 55 seals whose full name is on a goods object in the same city; goods object in the same building: 1 against 0.63 (ratio 1.58, P 0.3936)
+  Harappa      building: 27 seals whose full name is on a goods object in the same city; goods object in the same building: 0 against 0.33 (ratio 0.00, P 1.0000)
+  Mohenjo-daro block   : 55 seals whose full name is on a goods object in the same city; goods object in the same block: 2 against 1.92 (ratio 1.04, P 0.5764)
+  Harappa      block   : 27 seals whose full name is on a goods object in the same city; goods object in the same block: 5 against 6.22 (ratio 0.80, P 0.8791)
+
+(e) names joining two crests with 690 "allied" or 407 "kindred"
+  linked crest pairs (690/407): 32 distinct, 90 objects; plain two-crest pairs: 336 distinct
+     ('255', '690') 18 objects: H-1937, H-1938, H-2039, H-61, H-834, Lipi-4290
+     ('806', '900') 15 objects: M-1535, M-1536, M-1540, M-1563, M-2050, M-2054
+     ('407', '803') 12 objects: H-278, H-279, H-280, H-281, H-282, H-283
+     ('240', '690') 6 objects: H-1308, H-1399, H-321, H-350, H-965, H-966
+     ('590', '690') 3 objects: H-1657, H-8, K-10
+     ('235', '690') 3 objects: H-12, M-377, M-671
+     ('590', '790') 2 objects: Lipi-135, Lipi-4284
+     ('407', '590') 2 objects: Hls-1, Lipi-139
+     ('055', '690') 2 objects: H-1797, H-209
+     ('231', '690') 2 objects: Lipi-2465, M-1548
+     ('233', '690') 2 objects: M-1156, M-628
+     ('390', '690') 2 objects: Lipi-4198, M-855
+     ('220', '407') 2 objects: M-1330, M-1344
+     ('440', '590') 1 objects: Dlp-2
+     ('407', '790') 1 objects: H-1714
+     ('690', '803') 1 objects: H-1842
+     ('176', '806') 1 objects: H-20
+     ('407', '575') 1 objects: H-689
+     ('140', '407') 1 objects: L-90
+     ('407', '806') 1 objects: M-1953
+     ('690', '741') 1 objects: M-1691
+     ('407', '798') 1 objects: M-1954
+     ('220', '690') 1 objects: M-1667
+     ('632', '690') 1 objects: M-38
+     ('125', '407') 1 objects: M-354
+     ('690', '806') 1 objects: M-369
+     ('407', '520') 1 objects: M-403
+     ('061', '407') 1 objects: M-408
+     ('371', '407') 1 objects: M-981
+     ('690', '904') 1 objects: M-994
+     ('055', '407') 1 objects: M-1308
+     ('235', '407') 1 objects: M-1310
+  linked 690/407       same area     share of member pairs: 0.0792 over 32 house pairs; random pairs 0.0949 (ratio 0.83, P 0.9405)
+  two crests, no link  same area     share of member pairs: 0.0997 over 336 house pairs; random pairs 0.0952 (ratio 1.05, P 0.0615)
+  linked 690/407       same building share of member pairs: 0.0020 over 32 house pairs; random pairs 0.0039 (ratio 0.51, P 0.8716)
+  two crests, no link  same building share of member pairs: 0.0044 over 336 house pairs; random pairs 0.0039 (ratio 1.13, P 0.1634)
+  linked 690/407       city overlap (shared cities / all cities): 0.447 over 32 pairs; random 0.425 (ratio 1.05, P 0.2439)
+  two crests, no link  city overlap (shared cities / all cities): 0.419 over 336 pairs; random 0.425 (ratio 0.98, P 0.7996)

@@ -115,7 +115,7 @@ def name_parts(x, name_idx):
     if not core: return None
     c0 = core[0]; crest = x[c0]
     pre = [x[q] for q in name_idx if q < c0 and x[q] in CNT]
-    key = crest; heng = word(crest); hsnd = SOUND.get(crest, f'[{crest}]')
+    key = '705' if crest == '706' else crest; heng = word(crest); hsnd = SOUND.get(crest, f'[{crest}]')
     if crest in ('220', '226') and pre:
         key = pre[-1] + '+' + crest; sw = STARNUM.get(pre[-1], 'Num')
         heng = f'{sw}-star'; hsnd = STARSND.get(sw, hsnd)
@@ -147,7 +147,7 @@ for n_, (fid, x, P, kind, site) in enumerate(zip(d.id, d.tok, d.P, d.kind, d.sit
 A = pd.DataFrame(rows)
 meta = d.set_index('id')
 def gm(col): return A.face_id.map(meta[col])
-A['object_id'] = gm('obj'); A['cisi'] = gm('cisi'); A['region'] = gm('region')
+A['object_id'] = gm('obj'); A['cisi'] = [c if c not in ('-', '') else f'Lipi-{o}' for c, o in zip(gm('cisi'), gm('obj'))]; A['region'] = gm('region')
 A['area'] = gm('area-section').map(clean); A['bh'] = gm('block-house').map(clean); A['room_raw'] = gm('room-grid').map(clean)
 A['symbol'] = gm('symbol').fillna(''); A['type'] = gm('type')
 A['hmm'] = pd.to_numeric(gm('horizontal(mm)'), errors='coerce'); A['vmm'] = pd.to_numeric(gm('vertical(mm)'), errors='coerce')
@@ -177,12 +177,12 @@ A['master'] = np.where(A.ending.str.startswith("X's man"), A.name_core, '')
 A['sounds'] = A.face_id.map(ENG.sounds).fillna(''); A['english'] = A.face_id.map(ENG.english).fillna('')
 A['grade'] = A.face_id.map(ENG.grade).fillna('')
 A['n_unread'] = [sum(1 for s in sg.split('-') if s not in READ and s not in ('000', 'ALT')) for sg in A.signs]
-A.to_csv(f'{OUT}/names_all.csv', index=False)
 print(f'[registry_build] names_all: {len(A)} faces with a name ({(A.kind == "seal").sum()} seals)', flush=True)
 
 # ---------- people.csv: seals, read whole or nearly whole ----------
 GOODSW = {'390', '405', '413', '416', '806', '838', '845', '844', '831', '501', '700', '705', '706', '711', '575', '590', '923', '226'}
 A['goods_line'] = [(e == 'none') and (c in GOODSW) and (f.split('-')[0] != c) for e, c, f in zip(A.ending, A.crest, A.name_full)]   # 'three cotton' with no ending: an amount, not a person
+A.to_csv(f'{OUT}/names_all.csv', index=False)
 Pp = A[(A.kind == 'seal') & (~A.damaged) & (A.n_unread <= 1) & A.grade.isin(['whole', 'part']) & (~A.goods_line)].copy()
 cols = ['cisi', 'object_id', 'face_id', 'site', 'area', 'bh', 'block', 'room_raw', 'bin', 'animal', 'stand', 'opener', 'office',
         'crest', 'house_key', 'house_en', 'personal', 'tag', 'ending', 'ending_signs', 'master', 'name_full', 'signs', 'sounds', 'english',

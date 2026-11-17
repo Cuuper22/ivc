@@ -35,7 +35,7 @@ svg{display:block;width:100%;height:auto;touch-action:manipulation}
 <div class="sl" id="sl"></div>
 </main>
 <script>
-/*UPDATED*/const UPDATED="Updated Tue 17 Nov 2026, 07:35 Pacific. 4 agents running: seventh pass on sounds; who is who (the great houses); the earliest levels; a side-by-side blind test.";/*END-UPDATED*/
+/*UPDATED*/const UPDATED="Updated Tue 17 Nov 2026, 07:50 Pacific. 4 agents running: decoy test; seventh pass on sounds; who is who (the great houses); the earliest levels.";/*END-UPDATED*/
 const SEAL=[
 ["Opener","b","kāṇi iru","The seal starts with a diamond sign and two strokes. On ration tablets the same diamond is counted like workers, so here it reads \"two shares\" or \"two hands\". Working reading."],
 ["Family crest","g","mīmīn","A fish sign with a mark on it. People whose seals were dug up in the same house share the same marked fish, so it works like a family crest. Sound guess: \"High star\"."],
@@ -118,8 +118,9 @@ const N=[
 ["time","g","600 years,|one system","Nothing changes across six centuries","2,666 objects were given an early, middle or late date from how deep they were dug up. Agents, family crests, the seven-city office, the cotton house, endings, spellings: all flat. Agent seals are 4.5%, 4.1%, 4.5%. Names recur across the three periods at exactly the chance rate and 39 of 49 keep their ending, so names and rank were inherited.",["cover","agent","office","bale"]],
 ["thick","r","Rule grew|over time","Administration thickened over time","Went against: agents, office seals and chiefs do not grow from early to late. Neither does overseas trade show a peak.",["time"]],
 ["corpus","b","Builder's|own check","The builder's own check: 44 of a random 60 make sense","All 5,679 inscribed faces run through one fixed set of rules: 2,201 come out whole. The agent that wrote the rules read a random 60 and called 44 sense. Strangers are harsher: see the blind test.",["cover","holes","starw"]],
-["blind","g","Blind test:|real wins","Blind test: the real word list beats scrambled ones","60 inscriptions, each put into English four ways: the real word list, and three with the words dealt to the wrong signs. Three readers who never saw the key graded all 240. Real lines read as sense 35 to 37% of the time; freely scrambled 10 to 17%; scrambled among equally common signs 7 to 8%. Every reader, every scramble, real wins.",["corpus"]],
-["soft","a","The soft|layer","Where the reading is soft","If words are only swapped among signs doing the same job (crest for crest, ending for ending), sense drops less: 35% to 27%. So the frame is solid and the exact word on each family crest and name part is the soft layer. Strangers also call most seal readings odd. A sharper side-by-side test is being built.",["blind"]]
+["blind","g","Blind test:|frame holds","Blind test: fully scrambled word lists read worse","60 inscriptions put into English four ways: the real word list and three with the words dealt to the wrong signs. Three readers who never saw the key graded all 240. Real lines read as sense 35 to 37% of the time; freely scrambled 10 to 17%; scrambled among equally common signs 7 to 8%.",["corpus"]],
+["soft","r","Pick the|real one","Readers can pick the real reading out of four","Went against. Shown the real line beside three scrambled ones, readers picked the real one 29% of the time; chance is 26%. A list scrambled only among signs doing the same job was picked 34% of the time. So how the English sounds proves the frame (opener, crest, title, measure) and says nothing about the exact word on each sign.",["blind"]],
+["decoy","a","Decoy|test","Decoy test: how often does a wrong word pass?","The exact words rest on predictions about outside facts: what kind of object, what picture is on the back, where it was dug up. So the method itself is now on trial: a tester gets real words mixed with wrong ones, not told which, and must predict first, then check. If wrong words pass as often as real ones, the word list is worth little.",["soft","cover"]]
 ];
 /*END-TREE*/
 const $=id=>document.getElementById(id),pt=$('pt'),pb=$('pb'),pl=$('pl'),NS="http://www.w3.org/2000/svg";
@@ -127,7 +128,7 @@ $('upd').textContent=UPDATED;
 const M={};N.forEach(n=>{M[n[0]]={id:n[0],st:n[1],lab:n[2],t:n[3],d:n[4],up:n[5],dn:[]};});
 N.forEach(n=>n[5].forEach(p=>M[p].dn.push(n[0])));
 const dep=id=>{const m=M[id];if(m.dp==null)m.dp=m.up.length?1+Math.max(...m.up.map(dep)):0;return m.dp;};
-const W=390,NW=61,NH=22,RH=30,MAXR=6;let rows=[],maxd=0;
+const W=390,NW=61,NH=21,RH=29,MAXR=6;let rows=[],maxd=0;
 N.forEach(n=>{maxd=Math.max(maxd,dep(n[0]));});
 for(let d=0;d<=maxd;d++){
   const L=N.map(n=>M[n[0]]).filter(m=>m.dp===d);
