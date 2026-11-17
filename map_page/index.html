@@ -35,7 +35,7 @@ svg{display:block;width:100%;height:auto;touch-action:manipulation}
 <div class="sl" id="sl"></div>
 </main>
 <script>
-/*UPDATED*/const UPDATED="Updated Tue 17 Nov 2026, 07:40 Pacific. 4 agents running: measures and pay scale; outside match, second way in; the signs behind the odd readings; the sixth pass on sounds.";/*END-UPDATED*/
+/*UPDATED*/const UPDATED="Updated Tue 17 Nov 2026, 07:55 Pacific. 3 agents running: pictures on the backs of tablets (sixth pass); outside match, second way in; the signs behind the odd readings.";/*END-UPDATED*/
 const SEAL=[
 ["Opener","b","kāṇi iru","The seal starts with a diamond sign and two strokes. On ration tablets the same diamond is counted like workers, so here it reads \"two shares\" or \"two hands\". Working reading."],
 ["Family crest","g","mīmīn","A fish sign with a mark on it. People whose seals were dug up in the same house share the same marked fish, so it works like a family crest. Sound guess: \"High star\"."],
@@ -67,9 +67,9 @@ const N=[
 ["twocount","g","Two ways|to count","Two ways of counting","Tall strokes count containers (cup, jar, box). Short strokes count living things and produce (trees, fish, crop, women).",["rationtab"]],
 ["hand","b","Diamond|= hand","The diamond sign is a \"hand\", a counted worker","3 diamonds always sit with 3 loads (22 of 22).",["rationtab"]],
 ["drav","g","Language:|Dravidian","The language is early Dravidian, ahead of every rival","Test: the word for each picture should sound like a word that does that sign's job. With full dictionaries and chance measured inside each one: Dravidian (the family of Tamil and Telugu) 7 of 9 against 1 expected; Munda 0 of 9; Sumerian 1 of 8; Sanskrit at chance. Burushaski and Elamite word lists were too small to run.",["jar","name","ending"]],
-["cup","b","Cup =|9.2 litres","One cup is about 9.2 litres","From three measured pots that carry stroke counts. Cups are counted 1, 2, 3, 4, 6 and never 5.",["twocount"]],
-["frac","r","Strokes =|fractions","Cup strokes are fractions (half, third, quarter)","Dropped early: measured pots get bigger with more strokes, not smaller.",["twocount"]],
-["weights","r","Numbers =|weights","Written numbers follow the weight system","Went against: the stone weights double (1, 2, 4, 8) but \"eight\" is written 7 times and \"seven\" 87 times.",["twocount"]],
+["cup","g","Twelve cups|= 1 kalam","The measures run in twelves","479 of 481 cup counts are 1, 2, 3, 4 or 6: exactly the numbers that divide 12. So 12 cups make the big measure (kalam, about 111 litres) and a cup is about 9.2 litres. That is why cups are never counted as 5. Two measured pots fit: the six-stroke pot holds 55.6 litres, half a kalam. Units are written big before small 85% of the time (69% if shuffled).",["twocount"]],
+["frac","b","Strokes =|shares","Cup strokes are shares of the big measure","First dropped as \"fractions\" after one counter-example; now back in a better form. Two cups is a sixth of a kalam, four a third, six a half, as in the old Tamil system of measures.",["cup"]],
+["weights","r","Numbers =|weights","Written numbers follow the weight system","Went against twice: the stone weights double (1, 2, 4, 8) but only 49% of container counts fall on those, and three is the commonest count.",["twocount"]],
 ["masters","g","Masters =|fish houses","The masters are the fish-crest families","In \"X's man\" seals, the master's name ends in a fish 18 of 50 times. For ordinary owners it is 7 of 602.",["agent","name"]],
 ["stamping","g","Agents|stamp goods","Agents did the stamping of goods","Clay lumps pressed onto goods are stamped by agent seals 20% of the time; only 7% of seals are agent seals.",["agent"]],
 ["abroad","g","Seals|abroad","Round seals abroad are written differently","Seals found in Bahrain, Iraq and Iran never use the jar and man together (0 of 15). A single stroke stands there instead, and the family crests are missing.",["agent"]],
@@ -114,6 +114,7 @@ const N=[
 ["outside","a","Outside|match","A text we can already read that lines up with ours","Still missing. The Indus traders' village in Iraq sat in the weaving district, but no cuneiform word for cotton or cloth is tied to the Indus land, and no object carries both scripts. An agent is on a second way in: wool tablets from that village that carry a seal stamp.",["umma","meso"]],
 ["ivory","b","Ivory on|copper","\"Three measures of ivory\"","A sign read as tusk: 11 of 12 copper tablets carrying it show an elephant on the picture side, where 14% is normal. Seven tablets read \"three kalam of ivory: of the house\".",["cover","deeds"]],
 ["grammar","g","Grammar|sketch","First grammar: owner first, count last","Owner comes before owned: \"child of\" is never first, 91 of 93. Things take their number in front (450 to 220) but measures take it after (315 to 49), which is the order of old Tamil accounts: thing, measure, count. No plural ending and no word for \"and\" were found.",["cover","holes"]],
+["grainday","b","Rations =|a day's grain","The rations come out as one person's grain","Worked through the ladder: the monthly chits of 3 to 4 cups are about 0.9 kg of grain a day, and \"three kalam\" a year is about 0.7 kg a day. A person eats roughly half a kilo to a kilo. No line that adds up the others was found (10 of 70, chance 15).",["cup","chief","ration"]],
 ["corpus","a","Whole corpus|in English","Every inscription run into English","All 5,679 inscribed faces were read by one fixed set of rules: 2,190 come out whole, 1,276 in part, 2,079 are damaged, 134 give nothing. A random 40 of the whole ones were then read by eye: 25 make sense as something a seal or tag would say, 13 are odd, 2 are nonsense. The odd ones mostly have number or measure words stuck inside house names; an agent is re-testing the dozen signs to blame.",["cover","holes","starw"]]
 ];
 /*END-TREE*/

@@ -179,4 +179,12 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `measured` Grammar: after the jar comes a person/title word or the end in 539 of 584 uses; "child of" is not text-first 91 of 93; things take the number before them 450 to 220; measure and share words take it after 315 to 49 (Old Tamil account order: thing, measure, count); 74% of fully read texts of 3+ signs end in a title, the jar or a verb word. No plural ending, no "and", no separate "for" ending found. Went against: modifier before head inside star names (25 to 22); verbs at the end of account lines (12 of 45).
 - `guess` Rivals alive: 692 assembly / district; 711 grain measure / pot; 060 "of" / "in"; 838 produce / sesame.
 
+## Measures ladder and rations (from `jobs/out/measures.md`)
+- `measured` 479 of 481 cup counts are 1, 2, 3, 4 or 6 (the divisors of 12 below 12). Only 49% of container counts fall on the weight series 1, 2, 4, 8; 3 is the commonest.
+- `measured` Lines with two or more measure signs keep a fixed order 85% of the time against 69% shuffled (P 0.002): grain > kōṭṭai > kalam > chest/bin/quarter > pot > cup; this agrees with the Tamil sizes in 27 of 37 meetings. Ceilings: quarter counts 1 to 3, never 4; kalam never above 5.
+- `measured` 3 hands x 4 cups = 12 cups on 21 tablets (one batch); 2 x 3 = 6 on 5 more. On account objects with two numbers they are equal 67 of 190 against 52.2 (P 0.006).
+- `guess` The ladder runs in twelves: 12 cups (cup = *marakkāl*, 9.24 L) = 1 *kalam* (110.9 L); cup counts are the whole shares of a kalam (2 = *patakku*, 4 = *tūṇi*, 6 = half). Five never appears because 5 does not divide 12. Wells' measured pots sit on it: six-stroke pot 55.56 L = half a kalam, three-stroke pot 27.30 L = a quarter.
+- `guess` Rations as grain: one *paṭi* a day for a month = 3.75 cups, about 0.9 kg a day, the 3 to 4 cup band on the chits. Three kalam a year = about 0.7 kg a day, one person's grain for a year; so "three-kalam" is a one-man yearly allowance.
+- `measured` Went against: total lines (one number = sum of the others 10 of 70 against 14.9 by chance); batch totals in whole kalam (0 of 16); ration size following rank (bondsman 4 cups, three-kalam holder 3). The paṭi size rests on the Tamil Lexicon (the sign is counted 3 times).
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.
