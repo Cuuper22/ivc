@@ -22,7 +22,7 @@ B = {
  '335': ('puṭṭi', 'a measure: on new texts faces with it carry a number', 'fresh', lambda: with_count('335', 'Mu')),
  '440': ('koḷ', 'a receipt word of the Harappa stores: on new texts it sits at Harappa more than chance', 'fresh', lambda: site_share('440', 'Harappa', 'Mu')),
  '460': ('mukkōṭu', 'a name-final house word: on new texts the jar or the spear follows it', 'fresh', lambda: adjacent('460', {'740', '520'}, 'next', 'Mu')),
- '595': ('peṭṭi', 'a chest like 590: on new texts it sits on copper tablets and tools (595 is on 3 copper tools in Lipi)', 'seen', lambda: on_kind('595', ['ctab', 'tool'])),
+ '595': ('peṭṭi', 'a chest like 590: on new texts it sits on copper tablets and tools (595 is on 3 copper tools in Lipi)', 'fresh (idea from Lipi tools, tested on new texts)', lambda: on_kind('595', ['ctab', 'tool'])),
  '630': ('pal', 'same word as 632 (building as pal): 630 stands in the frames of 632', 'fresh', lambda: frame_swap('630', '632')),
  '645': ('kaṭṭu', 'a counted bundle: on new texts faces with it carry a number', 'fresh', lambda: with_count('645', 'Mu')),
  '711': ('vaḷḷam', 'a grain measure rides with the cup: objects with it carry the cup 700', 'seen', lambda: cooccur('711', '700', 'L', 'object')),

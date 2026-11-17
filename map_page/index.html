@@ -35,7 +35,7 @@ svg{display:block;width:100%;height:auto;touch-action:manipulation}
 <div class="sl" id="sl"></div>
 </main>
 <script>
-/*UPDATED*/const UPDATED="Updated Tue 17 Nov 2026, 05:25 Pacific. 4 agents running: third pass on the sounds; the eight unread signs; cotton house or Chest-guard; the seal animals.";/*END-UPDATED*/
+/*UPDATED*/const UPDATED="Updated Tue 17 Nov 2026, 05:40 Pacific. 4 agents running: ship or measure; the eight unread signs; cotton house or Chest-guard; the seal animals.";/*END-UPDATED*/
 const SEAL=[
 ["Opener","b","kāṇi iru","The seal starts with a diamond sign and two strokes. On ration tablets the same diamond is counted like workers, so here it reads \"two shares\" or \"two hands\". Working reading."],
 ["Family crest","g","mīmīn","A fish sign with a mark on it. People whose seals were dug up in the same house share the same marked fish, so it works like a family crest. Sound guess: \"High star\"."],
@@ -60,12 +60,12 @@ const N=[
 ["loadtag","g","Load|tags","Load tags: \"n loads of crop, carried\"","A count sign, a leaf-on-tree sign, a load-carrier. The carrier follows only when the count is there: 36 of 36, and 14 of 14 in the second catalogue. Half were found at Harappa's granary area.",["template","shapes"]],
 ["jar","b","Jar =|house of","The jar means \"of\" or \"house of\"","The jar ends the text 557 of 743 times. When anything follows, it is the man sign 54 times.",["ending"]],
 ["spear","r","Spear =|castle","The spear class lived in the castles","Only true at two cities; overall 12 against 11.9 by chance.",["ending"]],
-["ration","g","Ration|tablets","Ration tablets: \"3 hands, 3 loads, 4 cups\"","22 three-faced tablets from one trench read this way; 4 cups to 3 loads on 21 of 22. The amount changes with the trench that issued it.",["loadtag"]],
+["rationtab","g","Ration|tablets","Ration tablets: \"3 hands, 3 loads, 4 cups\"","22 three-faced tablets from one trench read this way; 4 cups to 3 loads on 21 of 22. The amount changes with the trench that issued it.",["loadtag"]],
 ["agent","b","X's man|= agent","\"X's man\" = an agent of an outside master","Third version. The name in front is not the seal owner's own family and the seal is slightly larger.",["jar"]],
 ["v1","r","Servant|version","Version 1: a servant of a house-mate","Went against: these seals are bigger than owner seals, not smaller.",["jar"]],
 ["v2","r","House head|version","Version 2: head of his own house","Went against: his name matches his house's crest 4 of 20 times, 3.3 by chance.",["jar"]],
-["twocount","g","Two ways|to count","Two ways of counting","Tall strokes count containers (cup, jar, box). Short strokes count living things and produce (trees, fish, crop, women).",["ration"]],
-["hand","b","Diamond|= hand","The diamond sign is a \"hand\", a counted worker","3 diamonds always sit with 3 loads (22 of 22).",["ration"]],
+["twocount","g","Two ways|to count","Two ways of counting","Tall strokes count containers (cup, jar, box). Short strokes count living things and produce (trees, fish, crop, women).",["rationtab"]],
+["hand","b","Diamond|= hand","The diamond sign is a \"hand\", a counted worker","3 diamonds always sit with 3 loads (22 of 22).",["rationtab"]],
 ["drav","g","Language:|Dravidian","The language is early Dravidian, ahead of every rival","Test: the word for each picture should sound like a word that does that sign's job. With full dictionaries and chance measured inside each one: Dravidian (the family of Tamil and Telugu) 7 of 9 against 1 expected; Munda 0 of 9; Sumerian 1 of 8; Sanskrit at chance. Burushaski and Elamite word lists were too small to run.",["jar","name","ending"]],
 ["cup","b","Cup =|9.2 litres","One cup is about 9.2 litres","From three measured pots that carry stroke counts. Cups are counted 1, 2, 3, 4, 6 and never 5.",["twocount"]],
 ["frac","r","Strokes =|fractions","Cup strokes are fractions (half, third, quarter)","Dropped early: measured pots get bigger with more strokes, not smaller.",["twocount"]],
@@ -80,7 +80,7 @@ const N=[
 ["reversed","r","Order|reversed","Abroad the word order is simply reversed","Went against: 7 read in home order, 5 look reversed.",["abroad"]],
 ["meso","r","Names in|cuneiform","Mesopotamian records give Indus names to match","Went against: every recorded personal name of an Indus person is Sumerian or Akkadian. And the Mesopotamian name for the Indus land has no matching sign pair (0 objects).",["abroad"]],
 ["onelang","g","Acts like|1 language","The sounds behave like one language","Reading 1,386 complete texts with a sound on every sign: signs given the same word turn up in the same positions in 13 of 33 pairs (3.3 by chance), and inside names the house word comes before the kin or title word 121 times to 59.",["seven"]],
-["eye","g","Eye =|copper","Eye signs mean copper","Three eye-shaped signs sit on copper objects 4 times more than chance (28 of 147). In Dravidian, eye is kaṇ and copper is kaṉ: a pun.",["objkinds","drav"]],
+["eye","b","Eye =|copper","One eye sign means copper","Eye-shaped signs sit on copper objects 4 times more than chance. On unseen texts that holds for one of the three eye signs and went against for the other two. In Dravidian, eye is ka\u1e47 and copper is ka\u1e49: a pun.",["objkinds","drav"]],
 ["pots","g","Pots: how|much","Pots say how much, not whose","91 of 122 pots with one count use the tall container strokes. Only 9% name an owner. Tools say kind and amount; bangles say a kind and no owner.",["objkinds"]],
 ["dozen","b","Dozen,|seven, sale","Dozen, seven, sale","Signs on clay tags from the ports of Lothal and Kalibangan read as dozen, seven (on wooden-box sealings) and sale.",["objkinds"]],
 ["sesbone","b","Sesame,|not bone","Sesame, not bone","Settled for now: a jar sign stands right before this sign 3 of 19 times, so it is something packed in jars. And a bone rod and an ivory rod carry the very same text, so the sign is not naming the rod's material.",["sesame","objkinds"]],
@@ -94,7 +94,10 @@ const N=[
 ["pati","b","Measure|sign","A sign for \"measure\" or ration","Two signs take their number after them, in the tall container strokes, 86% and 82% of the time (35% is normal), and the number is nearly always three (65 of 69). Read as Dravidian pa\u1e6di, a measure. That one change clears the nonsense out of 15 long phrases.",["long","twocount"]],
 ["board","b","City gate|signboard","The city-gate signboard","Ten big signs once hung over a gate at the city of Dholavira. Reading: \"the quarters of King so-and-so, and of the Maru clan\". A wheel sign starts each of its three phrases, and that wheel starts texts 187 of 244 times elsewhere. Two of its signs have no sound yet.",["long"]],
 ["holes","a","8 unread|signs","Eight signs still without a sound","The long texts keep tripping on eight signs, including a joiner word and two on the signboard. An agent is working on them now.",["long"]],
-["v3","a","Sounds:|3rd pass","Third pass on the sounds","An agent is holding the 37 sounds still under test to a check they have never faced: what kind of object the text is written on.",["s89","objkinds"]],
+["v3","b","94 sounds|58 hold","94 sounds, 58 holding up","After the third pass, 58 sound values have a prediction that was written down first and then came true, most of them on 1,183 texts never used to pick a value. 17 are still under test and 19 are set aside. Inscriptions readable start to finish went from 955 to 1,222 of 3,600.",["s89","objkinds"]],
+["ration","b","Monthly|ration","\"Monthly allowance\"","A ladder sign: in Tamil the word for rung (pa\u1e6di) also means a food ration. If so, the month sign should follow it. On unseen texts it does, 5 of 7 times, where chance is under 1 in 100. A pot then reads \"monthly allowance, of the house\".",["v3"]],
+["deeds","b","Copper =|land deeds","Copper tablets are land records","Words for hill, field, sheaf-bundle and quarter each turn up on copper tablets 4 to 8 times more than chance on unseen texts. A text on 29 copper tablets reads \"of the house of the heir of Hill-Field\".",["v3","eye"]],
+["ship","a","Ship|+ sail","Ship and sail on the port tags","One sign sits at the port of Lothal 8 of 12 times (8% is normal): read as sail. Its neighbour, a hull with a stick in it, then reads ship, and 11 identical tags read \"by ship, first ward: one dozen fish\". But the long texts read that same hull sign as a measure. An agent is splitting the two.",["v3","pati","dozen"]],
 ["chest","b","Chest-|guard","The name that travelled reads \"Chest-guard\"","The box + tree pair is on 71 objects, in 21 different houses at one city, so it is no single family. Abroad it is over-represented, and the tree sign alone is on 5 of 14 foreign square seals against 10% at home. Mesopotamian texts list woods from the Indus land.",["s89","office"]],
 ["animal","a","The seal|animal","What the animal on the seal means","Most seals have an animal carved above the text: a one-horned bull, an elephant, a tiger. Nobody has checked it against the names and goods read so far. An agent is testing whether it marks a clan, a trade, a ward or a rank.",["name","ending","objkinds"]]
 ];

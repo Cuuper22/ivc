@@ -99,4 +99,15 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `measured` Went against: 390 on ivory rods (1.0 times chance); whorl check came in at P 0.011 where below 1e-6 was predicted (one site only).
 - Paid/blocked: cloth-impression lists need the Lothal sealing catalogue (Frenez; Joshi and Parpola); no free copy found.
 
+## Third pass on sounds (from `jobs/out/sound_list_v3.md`)
+"New texts" = the 1,183 second-catalogue texts with no partner in the first, never used to choose a value.
+- `measured` Value list now 94: 58 building on, 17 under test, 19 paused (was 89: 34/37/18). Complete texts with every sign on a built-on value: 477 distinct (was 317); 1,222 of 3,600 faces (was 955); goods objects 858 of 2,060 faces.
+- `measured` Month sign 920 follows ladder 320 in 5 of 7 new-text uses against 0.7% (P 3e-10). `guess` 320 = *paṭi* "rung" / "ration measure" (DEDR 3850/3849); 320-920 = "monthly allowance".
+- `measured` Land words sit on copper tablets on new texts: 503 x4.0, 615 16 of 86 x4.7, 845 x8.4; a count stands before 061. `guess` copper tablets are land and produce records; 503-615-752-740 (29 tablets) = "of the house of the heir of Hill-Field".
+- `measured` 595 is counted with short strokes 19 to 1 (so not a chest) and sits on copper tablets/tools 12 of 27 (x9.9). `guess` 595 = *paṭṭaṟai* "forge" (DEDR 3865).
+- `measured` 500 sits at Lothal 8 of 12 on new texts against 8%; pair 705-500 3 of 64 against 0.4%. `guess` 500 = *pāy* "sail" (DEDR 4088), 705 = *kalam* "ship" (DEDR 1305); the 11 Lothal tags = "by ship, first ward: one dozen fish; the house's agent".
+- `guess` 705 has two live readings: "ship" (here) and *paṭi* "measure" (long-texts job, from its count behaviour). Both stay alive; a job is splitting them.
+- `guess` Tag words: 890 *koṭu* "given" (7 of 9 on sealings), 892 *vil* "sale", 055 *paṉṉiru* "dozen". Measures: 575 *kōṭṭai*, 171 *niṟai*, 540 *paṟai*; 335 = *ūr* "town". Kin: 760 *maka* "child of" (jar follows 25 of 29), 690 *piṇai*, 803 *il*, 140 *ammai*, 840 *iṇai* "pair".
+- `measured` Went against: eye = copper for 790 (0 of 20 on new-text copper) and 832; the copper excess is 850 alone. 838 = bone (0 of 5 new-text rods). Paused: 167, 233, 832.
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.
