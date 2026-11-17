@@ -111,7 +111,7 @@ for(let d=0;d<=maxd;d++){
   L.sort((p,q)=>p.bx-q.bx);
   const k=Math.ceil(L.length/MAXR),sub=[];for(let i=0;i<k;i++)sub.push([]);
   L.forEach((m,i)=>sub[i%k].push(m));
-  sub.forEach((R,ri)=>{const y=6+NH/2+rows.length*RH;R.forEach((m,i)=>{m.x=W*(i+0.5)/R.length+(k>1?(ri%2?10:-10):0);m.x=Math.max(NW/2+1,Math.min(W-NW/2-1,m.x));m.y=y;});rows.push(R);});
+  sub.forEach((R,ri)=>{const y=6+NH/2+rows.length*RH;R.forEach((m,i)=>{m.x=W*(i+0.5)/R.length+(k>1&&R.length<6?(ri%2?10:-10):0);m.x=Math.max(NW/2+1,Math.min(W-NW/2-1,m.x));m.y=y;});rows.push(R);});
 }
 const sv=$('sv');sv.setAttribute('viewBox','0 0 '+W+' '+(rows.length*RH+8));
 const mk=(t,a,par)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);(par||sv).appendChild(e);return e;};
