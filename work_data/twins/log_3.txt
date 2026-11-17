@@ -1,0 +1,98 @@
+[t3    0.1s] stones in twin sets 187, pairs 191, background seals 1536
+[t3   22.8s] same animal done
+[t3   45.0s] same animal (seals with a beast only) done
+[t3   66.4s] same stand letter (unicorns) done
+[t3   98.5s] same time bin done
+[t3  116.4s] same city done
+[t3  118.9s] size done
+                                attribute                                subset  pairs  same  share  dealt_mean  ratio  P_more  P_less
+                              same animal                             all pairs    186  98.0  0.527      73.406  1.335   0.003   0.998
+                              same animal                         same building      0   0.0    NaN       0.000    NaN   1.000   1.000
+                              same animal             same city, other building     76  47.0  0.618      33.946  1.385   0.007   0.996
+                              same animal                      different cities    110  51.0  0.464      39.461  1.292   0.027   0.980
+                              same animal                         same time bin     51  27.0  0.529      19.795  1.364   0.035   0.982
+                              same animal                   different time bins     42  17.0  0.405      16.586  1.025   0.497   0.614
+                              same animal                      kind: count line     79  47.0  0.595      33.289  1.412   0.033   0.976
+                              same animal    kind: count line, different cities     46  26.0  0.565      17.313  1.502   0.038   0.976
+                              same animal                   kind: front formula      7   5.0  0.714       3.041  1.644   0.129   0.963
+                              same animal kind: front formula, different cities      3   1.0  0.333       1.186  0.843   0.806   0.711
+                              same animal                   kind: name + closer     79  43.0  0.544      31.041  1.385   0.012   0.992
+                              same animal kind: name + closer, different cities     46  23.0  0.500      16.627  1.383   0.055   0.968
+                              same animal                       kind: bare name     13   3.0  0.231       4.492  0.668   0.881   0.294
+                              same animal     kind: bare name, different cities     11   1.0  0.091       3.490  0.287   0.990   0.083
+    same animal (seals with a beast only)                             all pairs    133  88.0  0.662      66.101  1.331   0.010   0.992
+    same animal (seals with a beast only)                         same building      0   0.0    NaN       0.000    NaN   1.000   1.000
+    same animal (seals with a beast only)             same city, other building     54  41.0  0.759      31.114  1.318   0.034   0.976
+    same animal (seals with a beast only)                      different cities     79  47.0  0.595      34.987  1.343   0.029   0.980
+    same animal (seals with a beast only)                         same time bin     41  26.0  0.634      18.295  1.421   0.031   0.985
+    same animal (seals with a beast only)                   different time bins     30  17.0  0.567      15.220  1.117   0.359   0.736
+    same animal (seals with a beast only)                      kind: count line     65  46.0  0.708      30.207  1.523   0.024   0.984
+    same animal (seals with a beast only)    kind: count line, different cities     39  26.0  0.667      15.429  1.685   0.022   0.988
+    same animal (seals with a beast only)                   kind: front formula      5   5.0  1.000       2.803  1.784   0.099   0.970
+    same animal (seals with a beast only) kind: front formula, different cities      1   1.0  1.000       1.038  0.963   0.787   0.823
+    same animal (seals with a beast only)                   kind: name + closer     50  36.0  0.720      27.935  1.289   0.075   0.946
+    same animal (seals with a beast only) kind: name + closer, different cities     30  20.0  0.667      14.828  1.349   0.105   0.934
+    same animal (seals with a beast only)                       kind: bare name      7   1.0  0.143       3.895  0.257   0.990   0.067
+    same animal (seals with a beast only)     kind: bare name, different cities      6   0.0  0.000       3.077  0.000   1.000   0.028
+             same stand letter (unicorns)                             all pairs     51  14.0  0.275      10.591  1.322   0.188   0.875
+             same stand letter (unicorns)                         same building      0   0.0    NaN       0.000    NaN   1.000   1.000
+             same stand letter (unicorns)             same city, other building     22   9.0  0.409       4.890  1.840   0.062   0.970
+             same stand letter (unicorns)                      different cities     29   5.0  0.172       5.701  0.877   0.668   0.495
+             same stand letter (unicorns)                         same time bin     16   5.0  0.312       2.873  1.741   0.158   0.931
+             same stand letter (unicorns)                   different time bins     14   5.0  0.357       2.443  2.047   0.102   0.962
+             same stand letter (unicorns)                      kind: count line     30   7.0  0.233       4.881  1.434   0.232   0.854
+             same stand letter (unicorns)    kind: count line, different cities     20   4.0  0.200       2.787  1.435   0.295   0.841
+             same stand letter (unicorns)                   kind: front formula      3   1.0  0.333       0.435  2.297   0.364   0.938
+             same stand letter (unicorns) kind: front formula, different cities      0   0.0    NaN       0.182  0.000   1.000   0.828
+             same stand letter (unicorns)                   kind: name + closer     17   5.0  0.294       4.462  1.120   0.446   0.716
+             same stand letter (unicorns) kind: name + closer, different cities      9   1.0  0.111       2.129  0.470   0.877   0.378
+             same stand letter (unicorns)                       kind: bare name      1   1.0  1.000       0.669  1.495   0.489   0.859
+             same stand letter (unicorns)     kind: bare name, different cities      0   0.0    NaN       0.529  0.000   1.000   0.585
+                            same time bin                             all pairs     94  52.0  0.553      42.668  1.219   0.082   0.938
+                            same time bin                         same building      0   0.0    NaN       0.000    NaN   1.000   1.000
+                            same time bin             same city, other building     52  32.0  0.615      21.261  1.505   0.010   0.994
+                            same time bin                      different cities     42  20.0  0.476      21.407  0.934   0.670   0.423
+                            same time bin                         same time bin     52  52.0  1.000      15.051  3.455   0.000   1.000
+                            same time bin                   different time bins     42   0.0  0.000      11.472  0.000   1.000   0.000
+                            same time bin                      kind: count line     38  19.0  0.500      17.577  1.081   0.393   0.681
+                            same time bin    kind: count line, different cities     14   7.0  0.500       8.977  0.780   0.783   0.340
+                            same time bin                   kind: front formula      3   1.0  0.333       1.069  0.935   0.708   0.711
+                            same time bin kind: front formula, different cities      0   0.0    NaN       0.000    NaN   1.000   1.000
+                            same time bin                   kind: name + closer     38  24.0  0.632      18.082  1.327   0.096   0.939
+                            same time bin kind: name + closer, different cities     17   8.0  0.471       8.899  0.899   0.686   0.453
+                            same time bin                       kind: bare name      7   4.0  0.571       2.855  1.401   0.310   0.864
+                            same time bin     kind: bare name, different cities      7   4.0  0.571       2.161  1.851   0.151   0.946
+                                same city                             all pairs    191  77.0  0.403      69.006  1.116   0.186   0.844
+                                same city                         same building      0   0.0    NaN       0.000    NaN   1.000   1.000
+                                same city             same city, other building     77  77.0  1.000      28.200  2.730   0.000   1.000
+                                same city                      different cities    114   0.0  0.000      40.806  0.000   1.000   0.000
+                                same city                         same time bin     52  32.0  0.615      18.686  1.713   0.001   1.000
+                                same city                   different time bins     42  20.0  0.476      15.294  1.308   0.117   0.929
+                                same city                      kind: count line     79  33.0  0.418      27.796  1.187   0.226   0.817
+                                same city    kind: count line, different cities     46   0.0  0.000      16.238  0.000   1.000   0.000
+                                same city                   kind: front formula      7   4.0  0.571       2.793  1.432   0.284   0.882
+                                same city kind: front formula, different cities      3   0.0  0.000       1.154  0.000   1.000   0.259
+                                same city                   kind: name + closer     80  33.0  0.412      30.188  1.093   0.312   0.754
+                                same city kind: name + closer, different cities     47   0.0  0.000      17.641  0.000   1.000   0.000
+                                same city                       kind: bare name     14   3.0  0.214       4.546  0.660   0.876   0.287
+                                same city     kind: bare name, different cities     11   0.0  0.000       3.515  0.000   1.000   0.015
+size gap |log ratio| (lower = more alike)                             all pairs    166   NaN  0.537       0.659  0.815   0.995   0.005
+size gap |log ratio| (lower = more alike)                         same building      0   NaN    NaN         NaN    NaN     NaN     NaN
+size gap |log ratio| (lower = more alike)             same city, other building     68   NaN  0.476       0.636  0.749   0.995   0.005
+size gap |log ratio| (lower = more alike)                      different cities     98   NaN  0.580       0.676  0.858   0.943   0.057
+size gap |log ratio| (lower = more alike)                         same time bin     47   NaN  0.485       0.650  0.747   0.987   0.014
+size gap |log ratio| (lower = more alike)                   different time bins     39   NaN  0.395       0.647  0.610   0.999   0.001
+size gap |log ratio| (lower = more alike)                      kind: count line     68   NaN  0.451       0.630  0.715   0.980   0.020
+size gap |log ratio| (lower = more alike)    kind: count line, different cities     39   NaN  0.491       0.643  0.764   0.917   0.083
+size gap |log ratio| (lower = more alike)                   kind: front formula      6   NaN  0.488       0.589  0.829   0.681   0.319
+size gap |log ratio| (lower = more alike) kind: front formula, different cities      3   NaN  0.646       0.593  1.088   0.387   0.613
+size gap |log ratio| (lower = more alike)                   kind: name + closer     71   NaN  0.638       0.686  0.931   0.740   0.260
+size gap |log ratio| (lower = more alike) kind: name + closer, different cities     41   NaN  0.698       0.713  0.980   0.547   0.453
+size gap |log ratio| (lower = more alike)                       kind: bare name     13   NaN  0.407       0.702  0.580   0.969   0.031
+size gap |log ratio| (lower = more alike)     kind: bare name, different cities     11   NaN  0.443       0.715  0.619   0.925   0.075
+                differ in animal or stand                             all pairs    186 125.0  0.672     123.712  1.010   0.486   0.571
+                differ in animal or stand                         same building      0   0.0    NaN       0.000    NaN   1.000   1.000
+                differ in animal or stand             same city, other building     76  42.0  0.553      47.590  0.883   0.892   0.150
+                differ in animal or stand                      different cities    110  83.0  0.755      76.188  1.089   0.137   0.899
+
+SECOND CATALOGUE: twin pairs 247; same field symbol 136 (55.1%); dealt within site x length 96.5; ratio 1.41; P_more 0.0002; P_less 1.0000

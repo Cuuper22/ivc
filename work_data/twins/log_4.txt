@@ -1,0 +1,108 @@
+A  SAME BUILDING / BLOCK / AREA (twin pairs, both findspots known, same city)
+   level  pairs_with_both  real  dealt_mean  P_fewer  P_more
+    room               28     0      0.0344   0.9666  1.0000
+building               71     0      0.2704   0.7626  1.0000
+   block               71     2      1.5682   0.7926  0.4575
+area_key              114    18     12.2374   0.9520  0.0724
+   buildings with 2+ complete seals: 180; seal pairs inside one building: 2450
+
+B  RIVAL: animal dealt within site x length x format
+   same animal 98 of 186; dealt 83.8; ratio 1.17; P_more 0.0444
+   beast seals only: same animal 88 of 133; dealt 72.9; ratio 1.21; P_more 0.0348
+   pairs that are not unicorn+unicorn: 98, of which same animal 10: ('none', 10)
+   same format 156 of 191; dealt 138.1; ratio 1.13; P_more 0.0148
+
+C  KINDS
+                 kind  seals  twinned  twin_rate  expected_from_length  ratio  sets  pairs  cross_city  cross_bin  dated_pairs  mean_len
+        name + closer    540       91      0.169                 0.120  1.405    36     80          47         14           38     4.704
+        front formula    389       11      0.028                 0.042  0.679     5      7           3          2            3     5.468
+            bare name    337       25      0.074                 0.178  0.418    12     14          11          3            7     3.516
+           count line     81       49      0.605                 0.295  2.052    14     79          46         19           38     2.815
+         name + title     77        2      0.026                 0.158  0.165     1      1           0          1            1     4.195
+name + closer + title     54        2      0.037                 0.055  0.675     1      1           1          0            1     5.315
+                other     45        0      0.000                 0.071  0.000     0      0           0          0            0     5.733
+          front alone      8        4      0.500                 0.353  1.416     1      6           3          3            6     1.625
+         closer alone      5        3      0.600                 0.228  2.631     1      3           3          0            0     1.000
+   count line               twinned 49 vs dealt within length 23.7; P_more 0.0005; P_fewer 1.0000
+   front formula            twinned 11 vs dealt within length 16.2; P_more 0.9615; P_fewer 0.0710
+   name + closer            twinned 91 vs dealt within length 64.7; P_more 0.0005; P_fewer 1.0000
+   bare name                twinned 25 vs dealt within length 60.0; P_more 1.0000; P_fewer 0.0005
+   name + title             twinned 2 vs dealt within length 12.1; P_more 1.0000; P_fewer 0.0005
+   name + closer + title    twinned 2 vs dealt within length 3.0; P_more 0.8316; P_fewer 0.4063
+
+D  HOLDERS
+          signs          kind  length  stones  holders_known  distinct_holders  cities                        bins  max_in_one_bin  cities_in_that_bin
+        003-156    count line       2       7              7                 6       3 middle middle middle middle               4                   1
+        016-390    count line       2       6              6                 5       2 early late late late middle               3                   1
+        003-390    count line       2       5              5                 5       3     late late middle middle               2                   2
+        031-156    count line       2       5              5                 4       2        middle middle middle               3                   2
+        061-740 name + closer       2       5              5                 4       4        middle middle middle               3                   2
+    013-840-740 name + closer       3       4              4                 3       3             early late late               2                   2
+    005-900-740 name + closer       3       4              4                 4       2         early middle middle               2                   2
+        817-002   front alone       2       4              4                 4       2    early early early middle               3                   1
+820-002-003-390    count line       4       4              4                 3       3         early middle middle               2                   1
+    468-806-154 name + closer       3       4              4                 1       2                   late late               2                   2
+817-002-004-390    count line       4       3              3                 1       2                early middle               1                   1
+003-140-100-740 name + closer       4       3              3                 2       2          late middle middle               2                   1
+            740  closer alone       1       3              2                 2       3                                           0                   0
+    003-220-740 name + closer       3       3              3                 2       1                       early               1                   1
+        004-390    count line       2       3              3                 3       3        middle middle middle               3                   3
+    235-482-740 name + closer       3       3              3                 3       3                        late               1                   1
+        240-520 name + closer       2       3              3                 2       1              late late late               3                   1
+        176-740 name + closer       2       3              3                 3       1              late late late               3                   1
+        416-740 name + closer       2       3              3                 2       2             early late late               2                   1
+        142-617     bare name       2       3              3                 2       3                 late middle               1                   1
+        005-405    count line       2       3              3                 2       2                  early late               1                   1
+061-142-400-740 name + closer       4       3              3                 2       2          late middle middle               2                   1
+        061-151 name + closer       2       3              3                 3       2                  early late               1                   1
+        550-527 front formula       2       3              3                 3       2                  early late               1                   1
+        910-740 name + closer       2       3              3                 3       2                      middle               1                   1
+   texts 71; stones per text median 2.0, max 7; distinct holders = holders known in 48 of 71
+   texts with 2+ stones in ONE time bin: 32; of those in 2+ cities in that bin: 15
+   by kind: bare name: 12 texts, 25 stones, mean 2.08; closer alone: 1 texts, 3 stones, mean 3.00; count line: 14 texts, 49 stones, mean 3.50; front alone: 1 texts, 4 stones, mean 4.00; front formula: 5 texts, 11 stones, mean 2.20; name + closer: 36 texts, 91 stones, mean 2.53; name + closer + title: 1 texts, 2 stones, mean 2.00; name + title: 1 texts, 2 stones, mean 2.00
+   crest houses (complete name seals): stones / distinct texts, top 12:
+       stones  texts  cities
+crest                       
+235        56     53       7
+220        53     49       8
+240        41     39       6
+803        38     35       8
+741        35     34       8
+140        30     28       4
+233        28     26       5
+590        28     26       7
+061        26     16       6
+806        23     23       3
+176        22     19       3
+415        22     21       7
+   per city: Dholavira: 67 stones, 65 texts; Harappa: 270 stones, 260 texts; Lothal: 57 stones, 56 texts; Mohenjo-daro: 959 stones, 915 texts
+
+E  BACKS AND WEAR (twin members against all complete seals of the same site and length)
+  feature  twins_known  twins_yes  dealt_mean  P_more  P_fewer  all_seals_share
+unpierced          122          6      5.8256  0.5713   0.6633           0.0347
+   noboss          117          8     12.8992  0.9808   0.0524           0.0999
+     poor          187         59     52.6782  0.1172   0.9192           0.2533
+ textonly          183         34     36.0648  0.7275   0.3573           0.1975
+   twin members with no boss or not pierced:
+  cisi           signs         site                        building  animal stand5 boss condition         fmt
+ Dmd-1             740     Daimabad                                    none        NBMF      Good       round
+ H-681     468-806-154      Harappa                                    none          PN      Poor rectangular
+ M-329     698-861-002 Mohenjo-daro                                    none          NN      Fair      square
+ M-330     698-861-002 Mohenjo-daro       Mohenjo-daro|DKE|Trench E    none          NN      Fair      square
+ M-410             220 Mohenjo-daro     Mohenjo-daro|DKG. (S)|9VIII    Gavi          NN      Good rectangular
+M-1195         176-740 Mohenjo-daro Mohenjo-daro|DKG|Central Street    none        NBRF      Good      square
+M-1222         416-151 Mohenjo-daro             Mohenjo-daro|DKC|12 unicorn          PN      Poor      square
+     -     706-033-520    Dholavira                                    none          NN      Good rectangular
+     - 861-002-016-390    Dholavira   Dholavira|Middle Town|46 x 43    none          PN      Fair rectangular
+ Rhd-1         031-520  Rahman-deri                                    MISC          PN      Good       other
+
+F  ONE HOLDER, SEVERAL TEXTS
+   house-mate pairs (complete text, unicorn with the same stand letter): 269; related 3 (1.1%)
+   house-mate pairs with a different animal or stand letter: 1982; related 43 (2.2%)
+   same-holder pairs related: 3 vs texts dealt within site 5.02; ratio 0.60; P_more 0.8721
+                       building      a      b              text_a                      text_b    holder   relation
+       Mohenjo-daro|DKG. (S)|1I M-1822    M-9     745-171-032-031                 745-311-031 unicorn:W same crest
+Mohenjo-daro|DKG. (S)|Loop Lane M-1779 M-1810             003-156 920-156-002-003-140-100-740 unicorn:J same crest
+  Mohenjo-daro|DKG|First Street      -  M-199 861-002-240-637-740 861-002-240-415-100-740-090 unicorn:S same crest
+   relation counts, same holder: Counter({'': 266, 'same crest': 3})
+   relation counts, other holder: Counter({'': 1939, 'same crest': 30, 'one sign apart': 7, 'one inside the other': 6})
