@@ -32,12 +32,9 @@ What we currently act on, the live leads in order, and what each one says we sho
 
 - `measured` A name is up to three signs. The first is shared by house-mates (same fish variant 15 of 23 against 36% by chance) and goes with the animal; the last goes with the class sign.
 - `guess` Name = [house emblem] [self] [tag]. The marked fish signs are house or clan emblems: the fish variants are family crests.
-- `measured` At home the man sign closes the text (65 of 86); on round seals abroad it opens it (last on 1 of 7).
-- `guess` The round seals abroad are written in another language with the opposite word order: home says [name] [man], abroad says [man] [name]. Home language puts the title after the name.
-
-- `measured` Two counting systems: full-height strokes count containers (cup, jar, box); short strokes count living things and produce (trees, fish, crop, women).
-- `measured` 22 Harappa tablets read `3 diamonds | 4 cups | 3 loads`, 4 cups to 3 loads in 21 of 22. The cup count follows the trench the tablet came from.
-- `guess` READING: the three-faced tablets are ration or pay records: three porters, three of the diamond thing, four cups of the measure. Different work sites issued different amounts. The cup is the ration measure; it never goes above four because five makes the next unit up.
+- `measured` The jar ends the text 557 of 743 times; when a sign follows, it is the plain man sign 54 times (54 of that sign's 73 texts) or one of a few others (comb, X-with-table 679, barred rectangle 621). On round seals abroad jar and man never occur together (0 of 15); a single short stroke stands in that place, and the home house crests and name-enders are missing.
+- `guess` READING: the jar is the possessive ending. `[name] jar` = "of [name]", the seal owner. `[name] jar man` = "[name]'s man", a servant or agent sealing for a master. The signs after the jar are a short list of things one can be to a master (man, comb-thing, 679, 621). Possessor before possessed, title after name, count before thing: a head-last language.
+- `guess` Round seals abroad write a bare personal name in a foreign formula, with the single stroke doing the job of the jar. They are Indus signs fitted to another language's way of saying "X, servant of Y".
 
 ## Live leads, in order
 
