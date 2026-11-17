@@ -10,7 +10,8 @@
 3. For each dictionary / family and each sound distance: the pair is SOUND-ALIKE when some word for picture A and some word for picture
    B (different entries) are within the distance.  Score = number of sound-alike swap pairs.
    CONTROL R (2,000 runs): the same number of random pairs of pictured signs (each sign used 3+ times, no shared noun).
-   CONTROL S (2,000 runs): the pictures dealt at random among the signs of the swap pairs (pairs re-drawn if they share a noun).
+   CONTROL S (2,000 runs): the pictures dealt at random among the signs of the swap pairs (a dealt pair that shares a noun gets its
+   second sign re-drawn from the same signs).
 Output: work_data/lang_m/swap_pairs.csv, work_data/lang_m/swap_grid.csv
 """
 import sys, os, csv, collections, itertools, time
@@ -74,10 +75,13 @@ for _ in range(N):
     rand_pairs.append(out)
 shuf = []
 for _ in range(N):
-    while True:
-        perm = dict(zip(swap_signs, rng.permutation(swap_signs)))
-        if all(not set(P[perm[a]]) & set(P[perm[b]]) for a, b in pic_pairs): break
-    shuf.append([(perm[a], perm[b]) for a, b in pic_pairs])
+    perm = dict(zip(swap_signs, rng.permutation(swap_signs)))
+    out = []
+    for a, b in pic_pairs:
+        x, y = perm[a], perm[b]
+        while set(P[x]) & set(P[y]): y = swap_signs[rng.integers(len(swap_signs))]   # local repair when a dealt pair shares a noun
+        out.append((x, y))
+    shuf.append(out)
 
 mats = {}
 for fam, names in FAMILIES.items():

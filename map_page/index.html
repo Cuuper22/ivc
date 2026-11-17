@@ -35,7 +35,7 @@ svg{display:block;width:100%;height:auto;touch-action:manipulation}
 <div class="sl" id="sl"></div>
 </main>
 <script>
-/*UPDATED*/const UPDATED="Updated Tue 17 Nov 2026, 09:20 Pacific. Exact words failed four decoy tests; the frame passed its own. 2 agents running: language test by machine; findspot leads.";/*END-UPDATED*/
+/*UPDATED*/const UPDATED="Updated Tue 17 Nov 2026, 09:40 Pacific. The frame stands; the words and the language do not. Agents running: frame v2; findspot leads; blind descriptions of every sign drawing.";/*END-UPDATED*/
 const SEAL=[
 ["Opener","b","kāṇi iru","The seal starts with a diamond sign and two strokes. On ration tablets the same diamond is counted like workers, so here it reads \"two shares\" or \"two hands\". Working reading."],
 ["Family crest","g","mīmīn","A fish sign with a mark on it. People whose seals were dug up in the same house share the same marked fish, so it works like a family crest. Sound guess: \"High star\"."],
@@ -66,7 +66,7 @@ const N=[
 ["v2","r","House head|version","Version 2: head of his own house","Went against: his name matches his house's crest 4 of 20 times, 3.3 by chance.",["jar"]],
 ["twocount","g","Two ways|to count","Two ways of counting","Tall strokes count containers (cup, jar, box). Short strokes count living things and produce (trees, fish, crop, women).",["rationtab"]],
 ["hand","b","Diamond|= hand","The diamond sign is a \"hand\", a counted worker","3 diamonds always sit with 3 loads (22 of 22).",["rationtab"]],
-["drav","g","Language:|Dravidian","The language is early Dravidian, ahead of every rival","Test: the word for each picture should sound like a word that does that sign's job. With full dictionaries and chance measured inside each one: Dravidian (the family of Tamil and Telugu) 7 of 9 against 1 expected; Munda 0 of 9; Sumerian 1 of 8; Sanskrit at chance. Burushaski and Elamite word lists were too small to run.",["jar","name","ending"]],
+["drav","r","Language:|Dravidian","The language is early Dravidian","First measured as 7 of 9 picture-and-sound matches against 1 expected, with the rival languages near zero. That test used hand-chosen words. Redone by machine with nothing chosen, it does not hold: see the language box near the bottom.",["jar","name","ending"]],
 ["cup","g","Twelve cups|= 1 kalam","The measures run in twelves","479 of 481 cup counts are 1, 2, 3, 4 or 6: exactly the numbers that divide 12. So 12 cups make the big measure (kalam, about 111 litres) and a cup is about 9.2 litres. That is why cups are never counted as 5. Two measured pots fit: the six-stroke pot holds 55.6 litres, half a kalam. Units are written big before small 85% of the time (69% if shuffled).",["twocount"]],
 ["frac","b","Strokes =|shares","Cup strokes are shares of the big measure","First dropped as \"fractions\" after one counter-example; now back in a better form. Two cups is a sixth of a kalam, four a third, six a half, as in the old Tamil system of measures.",["cup"]],
 ["weights","r","Numbers =|weights","Written numbers follow the weight system","Went against twice: the stone weights double (1, 2, 4, 8) but only 49% of container counts fall on those, and three is the commonest count.",["twocount"]],
@@ -127,7 +127,8 @@ const N=[
 ["soft","r","Pick the|real one","Readers can pick the real reading out of four","Went against. Shown the real line beside three scrambled ones, readers picked the real one 29% of the time; chance is 26%. A list scrambled only among signs doing the same job was picked 34% of the time. So how the English sounds proves the frame (opener, crest, title, measure) and says nothing about the exact word on each sign.",["blind"]],
 ["decoy","r","Decoys pass|as often","Real words pass more often than wrong ones","Went against. 60 signs, half with their accepted word and half with a word taken from another sign doing the same job. Two testers, not told which, wrote a prediction for each from the word's meaning and then checked it. Accepted words came true 9 of 58 times. Wrong words came true 10 of 60 times. So the checks behind the word list cannot tell a right word from a wrong one of the same kind.",["soft","cover"]],
 ["replay","r","2nd decoy|test","Wrong words fail when tested the original way","Went against again. A fresh tester did what the word-building passes did: look at the sign, predict, one retry. Accepted words passed 17 of 29 times. Wrong words passed 19 of 30. The method passes six words in ten either way, so the exact Dravidian words are working labels and nothing more. What each sign does (its job) still stands.",["decoy"]],
-["lang","a","Which|language?","Which language, tested by machine","The language question is now being asked with no human choosing words: for signs whose picture and job are both firm, a program checks in each dictionary (Dravidian, Munda, Sumerian, Sanskrit) whether the word for the picture sounds like a word for the job, and compares that with pictures and jobs paired at random.",["replay","drav"]]
+["lang","r","Which|language?","Which language: no winner","Went against every language. A program checked 19 dictionaries (Dravidian, Indo-Aryan, Munda, Sumerian, Akkadian, Elamite, Burushaski) for whether the word for each sign's picture sounds like a word fitting the sign's job. No language beat its own controls. The famous pairs (fish sounds like star) are found, and just as many turn up in scrambled dictionaries. Dravidian leans ahead on two of three controls, which is a lead, not a result.",["replay","drav"]],
+["lang2","a","Sharper|lang. test","A sharper language test","The first machine test could name the picture on only 261 of 498 signs and had one catch-all job for most of them. Every sign drawing is now being described blind, and the finer jobs from the machine frame will be used, then the test reruns.",["lang","framem"]]
 ];
 /*END-TREE*/
 const $=id=>document.getElementById(id),pt=$('pt'),pb=$('pb'),pl=$('pl'),NS="http://www.w3.org/2000/svg";
@@ -135,7 +136,7 @@ $('upd').textContent=UPDATED;
 const M={};N.forEach(n=>{M[n[0]]={id:n[0],st:n[1],lab:n[2],t:n[3],d:n[4],up:n[5],dn:[]};});
 N.forEach(n=>n[5].forEach(p=>M[p].dn.push(n[0])));
 const dep=id=>{const m=M[id];if(m.dp==null)m.dp=m.up.length?1+Math.max(...m.up.map(dep)):0;return m.dp;};
-const W=390,NW=61,NH=20,RH=26,MAXR=6;let rows=[],maxd=0;
+const W=390,NW=61,NH=19,RH=25,MAXR=6;let rows=[],maxd=0;
 N.forEach(n=>{maxd=Math.max(maxd,dep(n[0]));});
 for(let d=0;d<=maxd;d++){
   const L=N.map(n=>M[n[0]]).filter(m=>m.dp===d);
