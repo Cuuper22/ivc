@@ -221,4 +221,9 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `guess` Rivals settled for now: 711 *vaḷḷam* grain measure (other face names a person 15 of 20 against 43%); 060 *-iṉ* "of" (P 0.08) over "in"; 407 *kiḷai* "kindred" (fish crest on its faces 65 of 127 against 20%; cloth has missed four times); 838 produce ahead of sesame; 692 assembly ahead of district. 421 to 424 = *paḻaṉam* "paddy field".
 - `measured` 405/406/407 cannot be told apart in the photos: the split is the first catalogue's. Next 25 signs: 11 came true; 14 stay testing after one redesign each.
 
+## Blind test (from `jobs/out/blind_test.md`)
+- `measured` Three blind readers, 60 whole inscriptions x 4 word lists. Graded "sense": real 35 to 37%; words dealt freely to wrong signs 10 to 17%; dealt among equally common signs 7 to 8%; dealt only among signs with the same job 27%. By two of three readers: real 18 of 60, same-job shuffle 16, free shuffle 6, frequency shuffle 4. Paired, real against same-job shuffle, pooled: seals 14 better / 5 worse, tablets 21 / 3.
+- `measured` Tablets read as sense for half the real lines (50 to 53%); seals for 9 to 27%.
+- `guess` The frame (opener, crest, ending, measure) is solid and carries much of the sense; the word list adds to it; the content words inside one job class are the soft layer. Went against: the builder's own 73% sense rate; strangers give about a third.
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.

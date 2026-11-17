@@ -35,7 +35,7 @@ svg{display:block;width:100%;height:auto;touch-action:manipulation}
 <div class="sl" id="sl"></div>
 </main>
 <script>
-/*UPDATED*/const UPDATED="Updated Tue 17 Nov 2026, 07:15 Pacific. 4 agents starting: seventh pass on sounds; the earliest levels; a second reader for the random draw; the measure words inside names.";/*END-UPDATED*/
+/*UPDATED*/const UPDATED="Updated Tue 17 Nov 2026, 07:35 Pacific. 4 agents running: seventh pass on sounds; who is who (the great houses); the earliest levels; a side-by-side blind test.";/*END-UPDATED*/
 const SEAL=[
 ["Opener","b","kāṇi iru","The seal starts with a diamond sign and two strokes. On ration tablets the same diamond is counted like workers, so here it reads \"two shares\" or \"two hands\". Working reading."],
 ["Family crest","g","mīmīn","A fish sign with a mark on it. People whose seals were dug up in the same house share the same marked fish, so it works like a family crest. Sound guess: \"High star\"."],
@@ -117,7 +117,9 @@ const N=[
 ["grainday","b","Rations =|daily grain","The rations come out as one person's grain","Worked through the ladder: the monthly chits of 3 to 4 cups are about 0.9 kg of grain a day, and \"three kalam\" a year is about 0.7 kg a day. A person eats roughly half a kilo to a kilo. No line that adds up the others was found (10 of 70, chance 15).",["cup","chief","ration"]],
 ["time","g","600 years,|one system","Nothing changes across six centuries","2,666 objects were given an early, middle or late date from how deep they were dug up. Agents, family crests, the seven-city office, the cotton house, endings, spellings: all flat. Agent seals are 4.5%, 4.1%, 4.5%. Names recur across the three periods at exactly the chance rate and 39 of 49 keep their ending, so names and rank were inherited.",["cover","agent","office","bale"]],
 ["thick","r","Rule grew|over time","Administration thickened over time","Went against: agents, office seals and chiefs do not grow from early to late. Neither does overseas trade show a peak.",["time"]],
-["corpus","g","3 in 4 make|sense","A random 60 read by eye: 44 make sense","All 5,679 inscribed faces run through one fixed set of rules: 2,201 come out whole. A fresh random 60 of those, read by eye after the rules were frozen: 44 make sense as something a seal or tag would say, 15 are odd, 1 is nonsense. The first draw was 25 of 40. The fix: a sign gets one word inside a name and another on an account (Moon / month, Twelve / dozen).",["cover","holes","starw"]]
+["corpus","b","Builder's|own check","The builder's own check: 44 of a random 60 make sense","All 5,679 inscribed faces run through one fixed set of rules: 2,201 come out whole. The agent that wrote the rules read a random 60 and called 44 sense. Strangers are harsher: see the blind test.",["cover","holes","starw"]],
+["blind","g","Blind test:|real wins","Blind test: the real word list beats scrambled ones","60 inscriptions, each put into English four ways: the real word list, and three with the words dealt to the wrong signs. Three readers who never saw the key graded all 240. Real lines read as sense 35 to 37% of the time; freely scrambled 10 to 17%; scrambled among equally common signs 7 to 8%. Every reader, every scramble, real wins.",["corpus"]],
+["soft","a","The soft|layer","Where the reading is soft","If words are only swapped among signs doing the same job (crest for crest, ending for ending), sense drops less: 35% to 27%. So the frame is solid and the exact word on each family crest and name part is the soft layer. Strangers also call most seal readings odd. A sharper side-by-side test is being built.",["blind"]]
 ];
 /*END-TREE*/
 const $=id=>document.getElementById(id),pt=$('pt'),pb=$('pb'),pl=$('pl'),NS="http://www.w3.org/2000/svg";
@@ -125,7 +127,7 @@ $('upd').textContent=UPDATED;
 const M={};N.forEach(n=>{M[n[0]]={id:n[0],st:n[1],lab:n[2],t:n[3],d:n[4],up:n[5],dn:[]};});
 N.forEach(n=>n[5].forEach(p=>M[p].dn.push(n[0])));
 const dep=id=>{const m=M[id];if(m.dp==null)m.dp=m.up.length?1+Math.max(...m.up.map(dep)):0;return m.dp;};
-const W=390,NW=61,NH=22,RH=31,MAXR=6;let rows=[],maxd=0;
+const W=390,NW=61,NH=22,RH=30,MAXR=6;let rows=[],maxd=0;
 N.forEach(n=>{maxd=Math.max(maxd,dep(n[0]));});
 for(let d=0;d<=maxd;d++){
   const L=N.map(n=>M[n[0]]).filter(m=>m.dp===d);
