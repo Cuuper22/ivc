@@ -1,0 +1,25 @@
+[mix    1.4s] chi2 79.5 dof 20 P 4.8e-09
+stand5           I     J     L     S     W    n
+site                                           
+Chanhu-daro   17.0  20.0  13.0  10.0  40.0   30
+Dholavira     16.0  28.0   0.0  24.0  32.0   25
+Harappa       15.0  10.0   4.0   5.0  65.0  182
+Kalibangan    26.0  21.0   0.0  11.0  42.0   19
+Lothal         5.0  14.0  14.0  19.0  48.0   21
+Mohenjo-daro   9.0  24.0   5.0  22.0  40.0  602
+[mix by bin    1.5s] early {'Harappa': {'I': 0, 'J': 1, 'L': 0, 'S': 1, 'W': 3}, 'Mohenjo-daro': {'I': 5, 'J': 23, 'L': 3, 'S': 16, 'W': 27}} P 0.84
+[mix by bin    1.5s] middle {'Harappa': {'I': 17, 'J': 11, 'L': 5, 'S': 5, 'W': 53}, 'Mohenjo-daro': {'I': 25, 'J': 47, 'L': 13, 'S': 46, 'W': 73}} P 8.9e-05
+[mix by bin    1.5s] late {'Harappa': {'I': 2, 'J': 5, 'L': 1, 'S': 2, 'W': 31}, 'Mohenjo-daro': {'I': 13, 'J': 55, 'L': 13, 'S': 51, 'W': 100}} P 0.0034
+[mix by size third    1.5s] small W share MD 0.20 HP 0.40 P 2.2e-06
+[mix by size third    1.5s] mid W share MD 0.28 HP 0.60 P 0.00044
+[mix by size third    1.5s] big W share MD 0.70 HP 0.91 P 0.024
+[text-home    1.7s] score separates Harappa from Mohenjo-daro texts (left-one-out) AUC 0.568
+[outliers    1.8s] Mohenjo-daro seals, most Harappa-like tenth of texts (61 seals): W 0.62 against 0.37 for the rest; size-matched expectation 0.42; Harappa itself W 0.65
+[outliers    2.1s] dealt W share for 61 random MD seals 0.40, P(as high) 0.001
+stand5   I    J   L    S    W
+hs                           
+False   51  140  32  118  200
+True     3    7   1   12   38
+[outliers    2.1s] Harappa seals, most MD-like tenth (19): W 0.63 against 0.66
+[twins hand    2.1s] different 1 of 6 share the letter [['M-850', 'M-869', 'L', 'S', 'False'], ['H-407', 'M-32', 'W', 'J', 'True'], ['M-204', 'M-823', 'S', 'S', 'False'], ['H-512', 'M-138', 'I', 'J', 'True'], ['L-23', 'M-1001', 'W', 'L', 'True'], ['H-71', 'M-178', 'I', 'L', 'True']]
+[twins hand    2.1s] same or near-same 1 of 3 share the letter [['H-451', 'M-879', 'W', 'J', 'True'], ['M-187', 'M-193', 'S', 'W', 'False'], ['K-19', 'M-224', 'W', 'W', 'True']]

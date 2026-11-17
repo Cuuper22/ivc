@@ -1,0 +1,63 @@
+[photo    0.7s] readable stands 45 of 60; best-kind share inside each letter 0.38
+[photo    0.7s] unreadable per letter {'L': 7, 'W': 4, 'S': 3, 'I': 1}
+[photo    0.7s] neck folds: I+W 18 of 22, J+S 6 of 22; Fisher P 0.00067
+[photo    0.7s] folds by letter {'I': {'0': 2, '1': 10}, 'J': {'0': 9, '1': 3}, 'L': {'0': 1, '1': 3}, 'S': {'0': 7, '1': 3}, 'W': {'0': 2, '1': 8}}
+[photo    0.7s] heart-shaped shoulder mark on letters {'W': 4} of 4
+[photo    8.5s] stand kind purity real 17 against dealt 15.6 (P 0.254)
+[photo   15.9s] bull style purity real 23 of 39 against dealt 16.6 (P 0.002)
+[cut   21.4s] {'feature': 'cut_top', 'seals': 844, 'V': np.float64(0.243), 'dealt': np.float64(0.069), 'P': np.float64(0.0)}
+stand5    I    J   L    S    W
+cut_top                       
+H         4    9   0    3   11
+R        25   71   4   22   26
+S        56  110  42  127  334
+[cut   26.6s] {'feature': 'cut_mid', 'seals': 827, 'V': np.float64(0.138), 'dealt': np.float64(0.077), 'P': np.float64(0.0)}
+stand5    I    J   L    S    W
+cut_mid                       
+A        76  163  45  146  351
+B         8   21   1    5    6
+C         1    1   0    0    3
+[cut   31.6s] {'feature': 'cut_end', 'seals': 822, 'V': np.float64(0.208), 'dealt': np.float64(0.071), 'P': np.float64(0.0)}
+stand5    I    J   L    S    W
+cut_end                       
+F        19   59   2   18  111
+N        65  125  44  132  247
+[cut   36.4s] {'feature': 'boss2', 'seals': 634, 'V': np.float64(0.109), 'dealt': np.float64(0.093), 'P': np.float64(0.244)}
+stand5   I    J   L   S    W
+boss2                       
+PB      42  130  23  99  212
+PBSG    10   14   2  13   50
+other    7    7   2   4   19
+[cut   42.0s] {'feature': 'matk', 'seals': 793, 'V': np.float64(0.091), 'dealt': np.float64(0.07), 'P': np.float64(0.167)}
+stand5     I    J   L    S    W
+matk                           
+other      4    5   0    1    5
+steatite  83  168  44  136  347
+[cut   46.9s] {'feature': 'thick3', 'seals': 290, 'V': np.float64(0.284), 'dealt': np.float64(0.115), 'P': np.float64(0.0)}
+stand5   I   J  L   S   W
+thick3                   
+mid      6  19  5  25  23
+thick    5  17  6  11  58
+thin    17  41  8  27  22
+[cut   53.1s] {'feature': 'size3', 'seals': 840, 'V': np.float64(0.307), 'dealt': np.float64(0.066), 'P': np.float64(0.0)}
+stand5   I   J   L   S    W
+size3                      
+big     16  37   8  14  196
+mid     26  78  13  64  102
+small   53  65  24  74   70
+[cut   58.1s] {'feature': 'condition', 'seals': 898, 'V': np.float64(0.089), 'dealt': np.float64(0.072), 'P': np.float64(0.103)}
+stand5      I   J   L   S    W
+condition                     
+Fair       27  58  14  39  107
+Fine        2   4   1   5   29
+Good       32  88  16  71  144
+Poor       41  45  17  41  116
+good        0   0   0   0    1
+[cut   63.0s] {'feature': 'bin', 'seals': 678, 'V': np.float64(0.12), 'dealt': np.float64(0.085), 'P': np.float64(0.067)}
+stand5   I   J   L   S    W
+bin                        
+early    7  25   3  17   34
+late    15  60  14  53  131
+middle  49  63  18  56  133
+[proportion   63.8s] 304 seals; thickness for its face, mean by letter (log units): {'I': {'mean': -0.053, 'count': 30}, 'J': {'mean': -0.021, 'count': 85}, 'L': {'mean': 0.008, 'count': 18}, 'S': {'mean': 0.003, 'count': 65}, 'W': {'mean': 0.028, 'count': 106}}
+[proportion   63.8s] spread 0.00097 against dealt 0.00127, P 0.4490

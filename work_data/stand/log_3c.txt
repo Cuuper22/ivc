@@ -1,0 +1,16 @@
+[R1 no L, no worn   20.2s] {'test': 'R1 no L, no worn', 'cell': 'same room', 'pairs': 81, 'share': 27, 'dealt': np.float64(24.9), 'ratio': np.float64(1.09), 'P': np.float64(0.33)}
+[R1 no L, no worn   20.2s] {'test': 'R1 no L, no worn', 'cell': 'same building', 'pairs': 672, 'share': 242, 'dealt': np.float64(209.4), 'ratio': np.float64(1.16), 'P': np.float64(0.0155)}
+[R1 no L, no worn   20.2s] {'test': 'R1 no L, no worn', 'cell': 'same building near depth', 'pairs': 389, 'share': 148, 'dealt': np.float64(122.6), 'ratio': np.float64(1.21), 'P': np.float64(0.0085)}
+[R1 no L, no worn   20.2s] {'test': 'R1 no L, no worn', 'cell': 'same building far depth', 'pairs': 120, 'share': 38, 'dealt': np.float64(36.8), 'ratio': np.float64(1.03), 'P': np.float64(0.4335)}
+[R1 no L, no worn   20.2s] {'test': 'R1 no L, no worn', 'cell': 'other building same block near', 'pairs': 693, 'share': 218, 'dealt': np.float64(219.6), 'ratio': np.float64(0.99), 'P': np.float64(0.5425)}
+[R1 no L, no worn   20.2s] {'test': 'R1 no L, no worn', 'cell': 'other block same area near', 'pairs': 6940, 'share': 2002, 'dealt': np.float64(2150.0), 'ratio': np.float64(0.93), 'P': np.float64(0.99)}
+[R2 folds vs smooth   55.2s] {'test': 'R2 folds vs smooth', 'cell': 'same room', 'pairs': 92, 'share': 46, 'dealt': np.float64(45.7), 'ratio': np.float64(1.01), 'P': np.float64(0.4815)}
+[R2 folds vs smooth   55.2s] {'test': 'R2 folds vs smooth', 'cell': 'same building', 'pairs': 1007, 'share': 545, 'dealt': np.float64(509.6), 'ratio': np.float64(1.07), 'P': np.float64(0.022)}
+[R2 folds vs smooth   55.2s] {'test': 'R2 folds vs smooth', 'cell': 'same building near depth', 'pairs': 593, 'share': 320, 'dealt': np.float64(300.8), 'ratio': np.float64(1.06), 'P': np.float64(0.0665)}
+[R2 folds vs smooth   55.2s] {'test': 'R2 folds vs smooth', 'cell': 'same building far depth', 'pairs': 167, 'share': 86, 'dealt': np.float64(84.4), 'ratio': np.float64(1.02), 'P': np.float64(0.422)}
+[R2 folds vs smooth   55.2s] {'test': 'R2 folds vs smooth', 'cell': 'other building same block near', 'pairs': 997, 'share': 514, 'dealt': np.float64(523.5), 'ratio': np.float64(0.98), 'P': np.float64(0.7145)}
+[R2 folds vs smooth   55.2s] {'test': 'R2 folds vs smooth', 'cell': 'other block same area near', 'pairs': 8938, 'share': 4480, 'dealt': np.float64(4539.1), 'ratio': np.float64(0.99), 'P': np.float64(0.913)}
+[R3   55.2s] twins pairs columns ['i', 'j', 'signs_a', 'signs_b', 'kind_a', 'kind_b', 'site_a', 'site_b', 'building_a', 'building_b', 'area_key_a', 'area_key_b', 'bin_a', 'bin_b', 'animal_a', 'animal_b', 'stand5_a', 'stand5_b', 'cisi_a', 'cisi_b', 'n_a', 'n_b', 'same_building', 'same_city', 'both_bin', 'diff_bin', 'same_bin', 'kind']
+[R3   55.4s] twins pairs columns ['i', 'j', 'signs_a', 'signs_b', 'kind_a', 'kind_b', 'site_a', 'site_b', 'building_a', 'building_b', 'area_key_a', 'area_key_b', 'bin_a', 'bin_b', 'animal_a', 'animal_b', 'stand5_a', 'stand5_b', 'cisi_a', 'cisi_b', 'n_a', 'n_b', 'same_building', 'same_city', 'both_bin', 'diff_bin', 'same_bin', 'kind']
+[R3   55.4s] twins same city other building: same letter 9 of 22 against 6.4 from the cities' letter mixes
+[R3   55.4s] twins different cities: same letter 5 of 29 against 8.4 from the cities' letter mixes

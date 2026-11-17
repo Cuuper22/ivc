@@ -1,0 +1,77 @@
+[base    0.9s] {'unicorn': 1248, 'none': 458, 'short-horned bull': 104, 'other': 81, 'zebu': 57, 'elephant': 41, 'composite': 38, 'rhinoceros': 25, 'goat': 25, 'tiger': 17, 'buffalo': 15}
+[Q1 size (square seals, log size against site x format median)    2.1s]
+                   count  median  dealt_median  P_bigger   pct
+sp                                                            
+buffalo               14  -0.030         0.012    0.6485  -3.0
+composite             31  -0.010         0.007    0.5820  -1.0
+elephant              35   0.089        -0.003    0.1995   9.0
+goat                  23  -0.153         0.010    0.9385 -14.0
+none                  57  -0.414        -0.002    1.0000 -34.0
+other                 31   0.000         0.002    0.6880   0.0
+rhinoceros            23   0.000         0.001    0.7060   0.0
+short-horned bull     74  -0.141         0.001    0.9770 -13.0
+tiger                 14  -0.112        -0.016    0.7540 -11.0
+unicorn             1088   0.006        -0.000    0.0455   1.0
+zebu                  43   0.224         0.003    0.0100  25.0
+[Q2    4.7s] {'feature': 'mat', 'seals': 1699, 'V': np.float64(0.127), 'dealt': np.float64(0.098), 'P': np.float64(0.0)}
+mat                clay  faience  other  steatite  terracotta     n
+sp                                                                 
+buffalo             0.0      0.0    0.0     100.0         0.0    13
+composite           0.0      0.0    0.0     100.0         0.0    35
+elephant            0.0      0.0    0.0     100.0         0.0    39
+goat                0.0     10.0    0.0      86.0         5.0    21
+none                4.0      2.0    3.0      89.0         2.0   357
+rhinoceros          0.0      0.0    0.0      95.0         5.0    21
+short-horned bull   0.0      0.0    0.0     100.0         0.0    80
+tiger               0.0      0.0    0.0     100.0         0.0    15
+unicorn             0.0      1.0    1.0      98.0         0.0  1068
+zebu                0.0      2.0    0.0      98.0         0.0    50
+[Q2    7.1s] {'feature': 'bin', 'seals': 1420, 'V': np.float64(0.102), 'dealt': np.float64(0.103), 'P': np.float64(0.53)}
+bin                early  late  middle    n
+sp                                         
+buffalo             17.0  25.0    58.0   12
+composite            7.0  37.0    57.0   30
+elephant             9.0  47.0    44.0   32
+goat                31.0   6.0    62.0   16
+none                14.0  45.0    41.0  303
+rhinoceros          31.0  31.0    38.0   16
+short-horned bull   18.0  30.0    52.0   60
+tiger                8.0  42.0    50.0   12
+unicorn             14.0  38.0    48.0  897
+zebu                10.0  26.0    64.0   42
+[Q2    9.9s] {'feature': 'kind', 'seals': 1928, 'V': np.float64(0.09), 'dealt': np.float64(0.07), 'P': np.float64(0.008)}
+kind               bare name  count line  front formula  name + closer  name + closer + title  name + title     n
+sp                                                                                                               
+buffalo                 21.0        14.0           21.0           36.0                    7.0           0.0    14
+composite               28.0         6.0           22.0           33.0                    3.0           8.0    36
+elephant                15.0         3.0           33.0           36.0                    5.0           8.0    39
+goat                    64.0         5.0            5.0           27.0                    0.0           0.0    22
+none                    36.0         4.0           22.0           32.0                    2.0           4.0   420
+rhinoceros              19.0         5.0           33.0           38.0                    5.0           0.0    21
+short-horned bull       34.0         1.0           17.0           34.0                    4.0          10.0    94
+tiger                   25.0         0.0           31.0           25.0                    0.0          19.0    16
+unicorn                 26.0         4.0           26.0           36.0                    3.0           5.0  1209
+zebu                    39.0         2.0           35.0           21.0                    4.0           0.0    57
+[Q2   12.8s] {'feature': 'fmt', 'seals': 2028, 'V': np.float64(0.483), 'dealt': np.float64(0.137), 'P': np.float64(0.0)}
+fmt                cylinder  other  rectangular  round  square     n
+sp                                                                  
+buffalo                 0.0    0.0          0.0    0.0   100.0    15
+composite               3.0    3.0          0.0    8.0    87.0    38
+elephant                0.0    0.0          0.0    0.0   100.0    41
+goat                    0.0    0.0          0.0    0.0   100.0    25
+none                    0.0    5.0         79.0    1.0    14.0   458
+rhinoceros              0.0    0.0          0.0    0.0   100.0    25
+short-horned bull       1.0    0.0          0.0   17.0    82.0   104
+tiger                   0.0    0.0          0.0    0.0   100.0    17
+unicorn                 0.0    0.0          0.0    0.0   100.0  1248
+zebu                    0.0    0.0          0.0    0.0   100.0    57
+[Q3 building   18.0s] beast_pairs: real 91 dealt 118.0 P(fewer) 0.067 P(more) 0.944
+[Q3 building   18.0s] beast_same: real 13 dealt 20.8 P(fewer) 0.085 P(more) 0.946
+[Q3 building   18.0s] all_same: real 1934 dealt 1742.1 P(fewer) 0.993 P(more) 0.007
+[Q3 building   18.0s] animal_pairs: real 2876 dealt 2764.8 P(fewer) 0.900 P(more) 0.102
+[Q3 building   18.0s] animal_same: real 1785 dealt 1601.3 P(fewer) 0.980 P(more) 0.021
+[Q3 building   18.0s] species_per_building: real 358 dealt 362.7 P(fewer) 0.274 P(more) 0.773
+[Q3 building (site x format)   23.0s] beast_same: real 13 dealt 20.4 P(fewer) 0.081 P(more) 0.949
+[Q3 building (site x format)   23.0s] animal_same: real 1785 dealt 1645.2 P(fewer) 0.967 P(more) 0.034
+[Q3 building (site x format)   23.0s] species_per_building: real 358 dealt 359.0 P(fewer) 0.470 P(more) 0.593
+[Q4   23.4s] same building same crest, both with an animal: same species 48 of 73 against 40.2 (P fewer 0.916)
