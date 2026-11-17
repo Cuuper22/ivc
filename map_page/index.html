@@ -112,8 +112,7 @@ const N=[
 ["starw","b","Dark-star,|Six-star","Star names: Six-star, Three-star, Dark-star","Six + fish (in Tamil, the Pleiades) is never an amount of fish in 13 of 15 texts. Three + fish is on 21 objects, one found in Mesopotamia. The commonest, two + fish on 80 objects in 8 cities, reads \"dark star\", an old name for Saturn, because the word for two also means black.",["spelled","seven"]],
 ["umma","g","Cotton label|in Iraq","A cotton label on cloth, found in Mesopotamia","A clay sealing said to come from the city of Umma in Iraq has cloth pressed into its back and an Indus text that ends \"2, 4, cotton\". At home \"2, 4\" is followed by one of the tree signs 16 of 20 times. A seal from Oman ends the same way.",["cotton","abroad","fibre"]],
 ["outside","a","Outside|match","A text we can already read that lines up with ours","Still missing. The Indus traders' village in Iraq sat in the weaving district, but no cuneiform word for cotton or cloth is tied to the Indus land, and no object carries both scripts. An agent is on a second way in: wool tablets from that village that carry a seal stamp.",["umma","meso"]],
-["corpus","g","Whole corpus|in English","Every inscription run into English","All 5,679 inscribed faces were read by one fixed set of rules: 2,190 come out whole, 1,276 in part, 2,079 are damaged, 134 give nothing. A random 40 of the whole ones were then read by eye: 25 make sense as something a seal or tag would say, 13 are odd, 2 are nonsense. The odd ones mostly have number or measure words stuck inside house names.",["cover","holes","starw"]],
-["odd","a","Fixing the|odd ones","The signs behind the odd readings","A dozen signs are to blame for the 15 odd or nonsense readings in the draw. The pass now running is re-testing them.",["corpus"]]
+["corpus","a","Whole corpus|in English","Every inscription run into English","All 5,679 inscribed faces were read by one fixed set of rules: 2,190 come out whole, 1,276 in part, 2,079 are damaged, 134 give nothing. A random 40 of the whole ones were then read by eye: 25 make sense as something a seal or tag would say, 13 are odd, 2 are nonsense. The odd ones mostly have number or measure words stuck inside house names; an agent is re-testing the dozen signs to blame.",["cover","holes","starw"]]
 ];
 /*END-TREE*/
 const $=id=>document.getElementById(id),pt=$('pt'),pb=$('pb'),pl=$('pl'),NS="http://www.w3.org/2000/svg";
@@ -121,7 +120,7 @@ $('upd').textContent=UPDATED;
 const M={};N.forEach(n=>{M[n[0]]={id:n[0],st:n[1],lab:n[2],t:n[3],d:n[4],up:n[5],dn:[]};});
 N.forEach(n=>n[5].forEach(p=>M[p].dn.push(n[0])));
 const dep=id=>{const m=M[id];if(m.dp==null)m.dp=m.up.length?1+Math.max(...m.up.map(dep)):0;return m.dp;};
-const W=390,NW=61,NH=24,RH=36,MAXR=6;let rows=[],maxd=0;
+const W=390,NW=61,NH=23,RH=33,MAXR=6;let rows=[],maxd=0;
 N.forEach(n=>{maxd=Math.max(maxd,dep(n[0]));});
 for(let d=0;d<=maxd;d++){
   const L=N.map(n=>M[n[0]]).filter(m=>m.dp===d);
