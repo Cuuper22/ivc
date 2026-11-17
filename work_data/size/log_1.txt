@@ -1,0 +1,54 @@
+[S1    1.0s] complete seal faces with a size: 1418; partnered with the second catalogue: 1316; not partnered (outside set): 102
+[S1    1.0s] second-catalogue new texts with a size: 0 (the second catalogue carries no measurement field)
+[S1    1.0s] headline split: training 711 faces (651 texts), test 707 (657 texts)
+[S1    1.4s] held-out share of size variation: {'a': np.float64(0.129), 'b': np.float64(0.294), 'c': np.float64(0.294), 'd': np.float64(0.309), 'e': np.float64(0.287), 'de': np.float64(0.31)}
+[S1    1.5s]   with bin added to the baseline: b 0.298  d 0.312  (text adds +0.013)
+[S1    1.6s]   with stand+animal added to the baseline: b 0.407  d 0.415  (text adds +0.008)
+[S1    1.7s]   with bin+stand+animal added to the baseline: b 0.407  d 0.414  (text adds +0.007)
+[S1    1.9s] outside set (102 faces, texts the second catalogue never had): {'a': np.float64(-0.094), 'b': np.float64(0.13), 'c': np.float64(0.139), 'd': np.float64(0.147), 'e': np.float64(0.136)}
+[S1    2.3s]   decoy 1/20: d-tokens 0.284  c-classes 0.296  e-phrases 0.286  cell-dealt extra +0.001
+[S1    2.8s]   decoy 2/20: d-tokens 0.292  c-classes 0.294  e-phrases 0.286  cell-dealt extra -0.001
+[S1    3.2s]   decoy 3/20: d-tokens 0.285  c-classes 0.295  e-phrases 0.286  cell-dealt extra -0.001
+[S1    3.6s]   decoy 4/20: d-tokens 0.293  c-classes 0.284  e-phrases 0.282  cell-dealt extra +0.001
+[S1    4.0s]   decoy 5/20: d-tokens 0.293  c-classes 0.311  e-phrases 0.285  cell-dealt extra +0.000
+[S1    4.5s]   decoy 6/20: d-tokens 0.295  c-classes 0.300  e-phrases 0.281  cell-dealt extra +0.000
+[S1    4.9s]   decoy 7/20: d-tokens 0.293  c-classes 0.291  e-phrases 0.292  cell-dealt extra -0.000
+[S1    5.3s]   decoy 8/20: d-tokens 0.292  c-classes 0.294  e-phrases 0.291  cell-dealt extra -0.001
+[S1    5.8s]   decoy 9/20: d-tokens 0.295  c-classes 0.298  e-phrases 0.293  cell-dealt extra -0.003
+[S1    6.2s]   decoy 10/20: d-tokens 0.292  c-classes 0.297  e-phrases 0.292  cell-dealt extra +0.002
+[S1    6.6s]   decoy 11/20: d-tokens 0.294  c-classes 0.292  e-phrases 0.292  cell-dealt extra -0.003
+[S1    7.1s]   decoy 12/20: d-tokens 0.291  c-classes 0.289  e-phrases 0.286  cell-dealt extra -0.001
+[S1    7.5s]   decoy 13/20: d-tokens 0.292  c-classes 0.284  e-phrases 0.287  cell-dealt extra +0.002
+[S1    7.9s]   decoy 14/20: d-tokens 0.293  c-classes 0.296  e-phrases 0.282  cell-dealt extra -0.001
+[S1    8.3s]   decoy 15/20: d-tokens 0.292  c-classes 0.301  e-phrases 0.291  cell-dealt extra +0.001
+[S1    8.7s]   decoy 16/20: d-tokens 0.293  c-classes 0.276  e-phrases 0.282  cell-dealt extra -0.001
+[S1    9.1s]   decoy 17/20: d-tokens 0.283  c-classes 0.292  e-phrases 0.283  cell-dealt extra -0.002
+[S1    9.5s]   decoy 18/20: d-tokens 0.291  c-classes 0.298  e-phrases 0.285  cell-dealt extra -0.000
+[S1    9.9s]   decoy 19/20: d-tokens 0.292  c-classes 0.298  e-phrases 0.293  cell-dealt extra -0.001
+[S1   10.4s]   decoy 20/20: d-tokens 0.294  c-classes 0.300  e-phrases 0.284  cell-dealt extra -0.000
+[S1   10.6s]   split 1: a 0.114 b 0.296 c 0.296 d 0.312 e 0.302
+[S1   10.8s]   split 2: a 0.126 b 0.311 c 0.309 d 0.326 e 0.314
+[S1   11.2s]   split 3: a 0.091 b 0.254 c 0.256 d 0.278 e 0.261
+[S1   11.4s]   split 4: a 0.092 b 0.255 c 0.260 d 0.280 e 0.257
+[S1   11.7s]   split 5: a 0.121 b 0.295 c 0.286 d 0.311 e 0.298
+[S1   12.0s]   split 6: a 0.110 b 0.280 c 0.282 d 0.286 e 0.279
+[S1   12.2s]   split 7: a 0.081 b 0.284 c 0.287 d 0.309 e 0.287
+[S1   12.5s]   split 8: a 0.128 b 0.300 c 0.302 d 0.313 e 0.295
+[S1   12.7s]   split 9: a 0.097 b 0.277 c 0.279 d 0.294 e 0.284
+[S1   13.0s]   split 10: a 0.095 b 0.275 c 0.262 d 0.291 e 0.278
+[S1   13.2s]   split 11: a 0.109 b 0.275 c 0.278 d 0.282 e 0.272
+[S1   13.4s]   split 12: a 0.111 b 0.280 c 0.284 d 0.305 e 0.283
+[S1   13.7s]   split 13: a 0.118 b 0.276 c 0.277 d 0.299 e 0.277
+[S1   13.9s]   split 14: a 0.115 b 0.266 c 0.265 d 0.285 e 0.268
+[S1   14.1s]   split 15: a 0.107 b 0.268 c 0.270 d 0.294 e 0.269
+[S1   14.3s]   split 16: a 0.119 b 0.338 c 0.338 d 0.355 e 0.340
+[S1   14.6s]   split 17: a 0.085 b 0.251 c 0.252 d 0.267 e 0.254
+[S1   14.8s]   split 18: a 0.133 b 0.314 c 0.316 d 0.329 e 0.315
+[S1   15.0s]   split 19: a 0.097 b 0.288 c 0.286 d 0.296 e 0.286
+[S1   15.3s]   split 20: a 0.132 b 0.310 c 0.310 d 0.336 e 0.314
+[S1   15.3s] P6: d beats b in 20 of 20 splits; mean extra 0.018
+[S1   15.3s] decoy d tokens dealt: mean 0.292 max 0.295
+[S1   15.3s] decoy c classes dealt: mean 0.294 max 0.311
+[S1   15.3s] decoy e phrases dealt: mean 0.287 max 0.293
+[S1   15.3s] decoy d sizes dealt in cell (extra over b): mean -0.000 max 0.002
+[S1   15.3s] done -> work_data/size/models.csv

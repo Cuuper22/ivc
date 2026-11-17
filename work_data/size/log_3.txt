@@ -1,0 +1,76 @@
+[S3    2.0s] title / closer ladder (mean residual logA; +0.10 = about 10% bigger than seals of same site, length, format):
+sign                              picture             job  seals  all_resid  ridge_weight  MD_resid  MD_n  HP_resid  HP_n  early_resid  early_n  middle_resid  middle_n  late_resid  late_n
+ 932         four rounded lines going 932 after-jar title      1      0.828           NaN     0.822     1       NaN     0        0.703        1           NaN         0         NaN       0
+ 224                             sign 224 after-jar title      1      0.427           NaN     0.427     1       NaN     0          NaN        0         0.437         1         NaN       0
+ 679                         X with table after-jar title     12      0.293         0.075     0.186    10     0.490     1          NaN        0         0.407         2      -0.015       6
+ 621                barred tall rectangle after-jar title     12      0.055         0.010     0.062    11       NaN     0       -0.107        4         0.204         4      -0.025       3
+ 161                  porter with diamond after-jar title     10      0.042         0.016    -0.034     5     0.221     3          NaN        0         0.198         3      -0.122       3
+ 565                             closed X after-jar title      9      0.041         0.010    -0.032     7     0.528     2        0.038        1        -0.022         6       0.290       2
+ 090                                  man after-jar title     59      0.004        -0.001     0.013    42    -0.168    10        0.102        6        -0.104        22       0.139      19
+ 520                                spear          closer    145      0.004        -0.033     0.032    97    -0.151    22       -0.141       14         0.040        55      -0.067      40
+ 740                                  jar          closer    644     -0.011        -0.031    -0.017   425    -0.000   125       -0.024       65        -0.045       224       0.012     193
+ 155                           porter 155          closer      4     -0.044        -0.017    -0.006     3       NaN     0          NaN        0           NaN         0      -0.050       3
+ 154                     porter with jars          closer     26     -0.080        -0.047    -0.048    10    -0.128    11          NaN        0        -0.061         7      -0.255      10
+ 527                          hatched box after-jar title     37     -0.091        -0.072    -0.177    24     0.227     5       -0.304        7        -0.048         5      -0.138      11
+ 151                               porter          closer     45     -0.100        -0.063    -0.093    28    -0.148     4        0.209        5        -0.153        16      -0.157       8
+ 241                 caged whiskered fish after-jar title     10     -0.132        -0.037    -0.151     9     0.070     1          NaN        0         0.142         3      -0.170       2
+ 158                 porter with jars 158          closer      5     -0.185        -0.021    -0.293     3     0.015     2       -0.077        1        -0.196         4         NaN       0
+ 400                                 comb after-jar title     64     -0.268        -0.185    -0.193    45    -0.485    14        0.227        3        -0.335        31      -0.241      19
+ 170 two leaves horizontally adjacent 170 after-jar title      1     -0.306           NaN       NaN     0       NaN     0          NaN        0           NaN         0         NaN       0
+ 481                             sign 481 after-jar title      1     -0.311           NaN    -0.321     1       NaN     0          NaN        0        -0.269         1         NaN       0
+ 686             an 'x' with vertical 686 after-jar title      1     -0.321           NaN    -0.348     1       NaN     0          NaN        0           NaN         0         NaN       0
+ 871       diamond with small diamond 871          closer      1     -0.525           NaN       NaN     0    -0.498     1          NaN        0        -0.445         1         NaN       0
+[S3    2.8s] {'pair': 'Mohenjo-daro vs Harappa', 'n_tc': 8, 'signs': '740 520 151 527 090 161 154 400', 'rho': np.float64(-0.09523809523809526), 'null_mean': np.float64(0.3544880952380953), 'share_null_ge': np.float64(0.884), 'all_other_rho': np.float64(0.3823103212576897), 'n_other': 76}
+[S3    3.7s] {'pair': 'early vs late', 'n_tc': 7, 'signs': '740 151 520 527 400 090 621', 'rho': np.float64(-0.28571428571428575), 'null_mean': np.float64(0.048500000000000015), 'share_null_ge': np.float64(0.775), 'all_other_rho': np.float64(0.05665349143610013), 'n_other': 45}
+[S3    4.3s] {'pair': 'middle vs late', 'n_tc': 9, 'signs': '520 090 740 400 151 161 154 527 621', 'rho': np.float64(0.45), 'null_mean': np.float64(0.3089583333333334), 'share_null_ge': np.float64(0.4005), 'all_other_rho': np.float64(0.3491729323308271), 'n_other': 76}
+[S3    4.9s] {'pair': 'early vs middle', 'n_tc': 7, 'signs': '740 151 520 527 400 090 621', 'rho': np.float64(-0.7500000000000002), 'null_mean': np.float64(-0.11619642857142859), 'share_null_ge': np.float64(0.9545), 'all_other_rho': np.float64(-0.11949934123847167), 'n_other': 45}
+[S3    5.6s] {'pair': 'early+middle vs late', 'n_tc': 9, 'signs': '520 090 740 400 151 161 154 527 621', 'rho': np.float64(0.3666666666666667), 'null_mean': np.float64(0.2552143344626949), 'share_null_ge': np.float64(0.42), 'all_other_rho': np.float64(0.27598692323814783), 'n_other': 83}
+[S3    6.4s] {'pair': 'MD early+middle vs MD late', 'n_tc': 8, 'signs': '520 151 527 740 090 400 621 154', 'rho': np.float64(0.6428571428571429), 'null_mean': np.float64(0.11217950093785825), 'share_null_ge': np.float64(0.082), 'all_other_rho': np.float64(0.13705645132957844), 'n_other': 75}
+[S3    6.4s] stacks: 139 adjacent title/closer pairs on seals; second sign higher on the ladder 87
+[S3    6.4s] 
+first second  size  sum  first_resid  second_resid
+  740    090    46   46       -0.011         0.004
+  740    400    11    0       -0.011        -0.268
+  740    679     9    9       -0.011         0.293
+  400    740     9    9       -0.268        -0.011
+  090    740     5    0        0.004        -0.011
+  090    400     4    0        0.004        -0.268
+  740    154     4    0       -0.011        -0.080
+  400    520     4    4       -0.268         0.004
+  740    565     4    4       -0.011         0.041
+  740    527     4    0       -0.011        -0.091
+  740    520     3    3       -0.011         0.004
+  520    400     3    0        0.004        -0.268
+  740    621     3    3       -0.011         0.055
+  158    400     2    0       -0.185        -0.268
+  740    151     2    0       -0.011        -0.100
+  621    740     2    0        0.055        -0.011
+  520    621     2    2        0.004         0.055
+  154    400     1    0       -0.080        -0.268
+  090    151     1    0        0.004        -0.100
+  155    740     1    1       -0.044        -0.011
+  154    740     1    1       -0.080        -0.011
+  241    400     1    0       -0.132        -0.268
+  400    151     1    1       -0.268        -0.100
+  679    155     1    0        0.293        -0.044
+  621    520     1    0        0.055         0.004
+  565    400     1    0        0.041        -0.268
+  565    740     1    0        0.041        -0.011
+  527    740     1    1       -0.091        -0.011
+  527    400     1    0       -0.091        -0.268
+  520    154     1    0        0.004        -0.080
+  520    740     1    0        0.004        -0.011
+  740    241     1    0       -0.011        -0.132
+  740    224     1    1       -0.011         0.427
+  740    170     1    0       -0.011        -0.306
+  740    161     1    1       -0.011         0.042
+  740    158     1    0       -0.011        -0.185
+  740    481     1    0       -0.011        -0.311
+  740    686     1    0       -0.011        -0.321
+  740    932     1    1       -0.011         0.828
+[S3    6.4s] 740-090: 46 seals, mean residual -0.020 against jar-final seals -0.004 (n 515)
+[S3    6.4s] 740-400: 11 seals, mean residual -0.653 against jar-final seals -0.004 (n 515)
+[S3    6.4s] 740-679: 9 seals, mean residual +0.300 against jar-final seals -0.004 (n 515)
+[S3    6.4s] 740-565: 4 seals, mean residual -0.221 against jar-final seals -0.004 (n 515)
+[S3    6.4s] 740-621: 3 seals, mean residual +0.073 against jar-final seals -0.004 (n 515)
+[S3    6.4s] 740-151: 2 seals, mean residual +0.340 against jar-final seals -0.004 (n 515)
