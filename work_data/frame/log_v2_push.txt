@@ -1,0 +1,105 @@
+[    1.3s] distinct first-catalogue texts 3499: half A 1758, half B 1741; vocabulary 708
+[    1.3s] held-out bits: one class (unigram-like) 6.792
+[    1.3s] held-out bits: v1 hand jobs 6.351
+[    1.3s] held-out bits: machine HMM10 classes 6.033
+[    1.3s] held-out bits: v2 base (14 classes) 6.153
+[    1.3s] push: 107 candidate signs (10+ uses in half A)
+[    1.3s]   step  1: sign 740 CLOSER -> X01  gain 0.0251  held-out 6.128 bits/sign  (1 added classes)
+[    1.3s]   step  2: sign 590 PERSONAL -> X02  gain 0.0192  held-out 6.109 bits/sign  (2 added classes)
+[    1.4s]   step  3: sign 220 CREST -> X03  gain 0.0188  held-out 6.090 bits/sign  (3 added classes)
+[    1.4s]   step  4: sign 415 PERSONAL -> X04  gain 0.0194  held-out 6.071 bits/sign  (4 added classes)
+[    1.5s]   step  5: sign 435 PERSONAL -> X05  gain 0.0142  held-out 6.057 bits/sign  (5 added classes)
+[    1.5s]   step  6: sign 255 PERSONAL -> X06  gain 0.0136  held-out 6.043 bits/sign  (6 added classes)
+[    1.6s]   step  7: sign 001 NUM_SHORT -> X07  gain 0.0121  held-out 6.031 bits/sign  (7 added classes)
+[    1.7s]   step  8: sign 176 PERSONAL -> X08  gain 0.0113  held-out 6.020 bits/sign  (8 added classes)
+[    1.7s]   step  9: sign 798 PERSONAL -> X09  gain 0.0120  held-out 6.008 bits/sign  (9 added classes)
+[    1.8s]   step 10: sign 840 PERSONAL -> X10  gain 0.0107  held-out 5.997 bits/sign  (10 added classes)
+[    1.9s]   step 11: sign 527 TITLE -> X11  gain 0.0097  held-out 5.987 bits/sign  (11 added classes)
+[    2.1s]   step 12: sign 741 SLOT -> X12  gain 0.0096  held-out 5.978 bits/sign  (12 added classes)
+[    2.2s]   step 13: sign 806 CREST -> X13  gain 0.0095  held-out 5.968 bits/sign  (13 added classes)
+[    2.4s]   step 14: sign 923 PERSONAL -> X14  gain 0.0094  held-out 5.959 bits/sign  (14 added classes)
+[    2.6s]   step 15: sign 520 CLOSER -> X15  gain 0.0090  held-out 5.950 bits/sign  (15 added classes)
+[    2.7s]   step 16: sign 550 OPEN -> X16  gain 0.0089  held-out 5.941 bits/sign  (16 added classes)
+[    2.9s]   step 17: sign 031 NUM_TALL -> X07  gain 0.0081  held-out 5.933 bits/sign  (16 added classes)
+[    3.1s]   step 18: sign 706 PERSONAL -> X17  gain 0.0093  held-out 5.924 bits/sign  (17 added classes)
+[    3.3s]   step 19: sign 705 MEASURE -> X17  gain 0.0089  held-out 5.915 bits/sign  (17 added classes)
+[    3.6s]   step 20: sign 690 AFTER_M -> X18  gain 0.0087  held-out 5.906 bits/sign  (18 added classes)
+[    3.8s]   step 21: sign 070 PERSONAL -> X19  gain 0.0078  held-out 5.898 bits/sign  (19 added classes)
+[    4.0s]   step 22: sign 140 CREST -> X07  gain 0.0076  held-out 5.891 bits/sign  (19 added classes)
+[    4.3s]   step 23: sign 061 PLACE -> X20  gain 0.0070  held-out 5.884 bits/sign  (20 added classes)
+[    4.5s]   step 24: sign 390 THING -> X21  gain 0.0064  held-out 5.877 bits/sign  (21 added classes)
+[    4.7s]   step 25: sign 555 PERSONAL -> X22  gain 0.0057  held-out 5.872 bits/sign  (22 added classes)
+[    5.1s]   step 26: sign 017 NUM_SHORT -> X23  gain 0.0055  held-out 5.866 bits/sign  (23 added classes)
+[    5.3s]   step 27: sign 575 PERSONAL -> X24  gain 0.0059  held-out 5.860 bits/sign  (24 added classes)
+[    5.7s]   step 28: sign 617 PERSONAL -> X25  gain 0.0048  held-out 5.855 bits/sign  (25 added classes)
+[    5.9s]   step 29: sign 142 PERSONAL -> X26  gain 0.0073  held-out 5.848 bits/sign  (26 added classes)
+[    6.3s]   step 30: sign 013 NUM_SHORT -> X27  gain 0.0046  held-out 5.843 bits/sign  (27 added classes)
+[    6.6s]   step 31: sign 060 SLOT -> X28  gain 0.0047  held-out 5.839 bits/sign  (28 added classes)
+[    6.9s]   step 32: sign 920 OPEN -> X29  gain 0.0088  held-out 5.830 bits/sign  (29 added classes)
+[    7.3s]   step 33: sign 692 OPEN -> X29  gain 0.0099  held-out 5.820 bits/sign  (29 added classes)
+[    7.6s]   step 34: sign 226 CREST -> X30  gain 0.0045  held-out 5.816 bits/sign  (30 added classes)
+[    7.9s]   step 35: sign 877 PERSONAL -> X31  gain 0.0039  held-out 5.812 bits/sign  (31 added classes)
+[    8.3s]   step 36: sign 904 PLACE -> X08  gain 0.0037  held-out 5.808 bits/sign  (31 added classes)
+[    8.6s]   step 37: sign 335 PLACE -> X32  gain 0.0036  held-out 5.804 bits/sign  (32 added classes)
+[    8.9s]   step 38: sign 845 PLACE -> X07  gain 0.0037  held-out 5.801 bits/sign  (32 added classes)
+[    9.3s]   step 39: sign 003 NUM_SHORT -> X33  gain 0.0036  held-out 5.797 bits/sign  (33 added classes)
+[    9.6s]   step 40: sign 388 PERSONAL -> X08  gain 0.0036  held-out 5.794 bits/sign  (33 added classes)
+[   10.0s]   step 41: sign 503 PLACE -> X34  gain 0.0034  held-out 5.790 bits/sign  (34 added classes)
+[   10.3s]   step 42: sign 495 PERSONAL -> X34  gain 0.0043  held-out 5.786 bits/sign  (34 added classes)
+[   10.7s]   step 43: sign 585 AFTER_M -> X35  gain 0.0032  held-out 5.783 bits/sign  (35 added classes)
+[   11.1s]   step 44: sign 165 PLACE -> X36  gain 0.0031  held-out 5.780 bits/sign  (36 added classes)
+[   11.5s]   step 45: sign 405 THING -> X21  gain 0.0030  held-out 5.776 bits/sign  (36 added classes)
+[   12.0s]   step 46: sign 407 THING -> X37  gain 0.0050  held-out 5.771 bits/sign  (37 added classes)
+[   12.4s]   step 47: sign 850 PERSONAL -> X07  gain 0.0033  held-out 5.768 bits/sign  (37 added classes)
+[   12.8s]   step 48: sign 384 PERSONAL -> X31  gain 0.0032  held-out 5.765 bits/sign  (37 added classes)
+[   13.2s]   step 49: sign 350 PERSONAL -> X38  gain 0.0027  held-out 5.762 bits/sign  (38 added classes)
+[   13.6s]   step 50: sign 632 PERSONAL -> X38  gain 0.0033  held-out 5.759 bits/sign  (38 added classes)
+[   14.0s]   step 51: sign 002 SLOT -> X39  gain 0.0025  held-out 5.756 bits/sign  (39 added classes)
+[   14.5s]   step 52: sign 742 SLOT -> X39  gain 0.0025  held-out 5.754 bits/sign  (39 added classes)
+[   14.9s]   step 53: sign 400 TITLE -> X40  gain 0.0023  held-out 5.752 bits/sign  (40 added classes)
+[   15.4s]   step 54: sign 595 PERSONAL -> X07  gain 0.0023  held-out 5.749 bits/sign  (40 added classes)
+[   15.9s]   step 55: sign 482 NAME_BACK -> X09  gain 0.0021  held-out 5.747 bits/sign  (40 added classes)
+[   16.4s]   step 56: sign 241 TITLE -> X09  gain 0.0026  held-out 5.745 bits/sign  (40 added classes)
+[   16.9s]   step 57: sign 104 PERSONAL -> X34  gain 0.0020  held-out 5.743 bits/sign  (40 added classes)
+[   17.3s]   step 58: sign 745 PERSONAL -> X12  gain 0.0027  held-out 5.740 bits/sign  (40 added classes)
+[   17.8s] push stopped: v2 base 6.153 -> v2 pushed 5.740 bits/sign on held-out half B, 40 classes added
+[   17.8s]   added class X01: 740
+[   17.8s]   added class X02: 590
+[   17.8s]   added class X03: 220
+[   17.8s]   added class X04: 415
+[   17.8s]   added class X05: 435
+[   17.8s]   added class X06: 255
+[   17.8s]   added class X07: 031 001 140 595 850 845
+[   17.8s]   added class X08: 176 904 388
+[   17.8s]   added class X09: 798 482 241
+[   17.8s]   added class X10: 840
+[   17.8s]   added class X11: 527
+[   17.8s]   added class X12: 741 745
+[   17.8s]   added class X13: 806
+[   17.8s]   added class X14: 923
+[   17.8s]   added class X15: 520
+[   17.8s]   added class X16: 550
+[   17.8s]   added class X17: 705 706
+[   17.8s]   added class X18: 690
+[   17.8s]   added class X19: 070
+[   17.8s]   added class X20: 061
+[   17.8s]   added class X21: 390 405
+[   17.8s]   added class X22: 555
+[   17.8s]   added class X23: 017
+[   17.8s]   added class X24: 575
+[   17.8s]   added class X25: 617
+[   17.8s]   added class X26: 142
+[   17.8s]   added class X27: 013
+[   17.8s]   added class X28: 060
+[   17.8s]   added class X29: 920 692
+[   17.8s]   added class X30: 226
+[   17.8s]   added class X31: 384 877
+[   17.8s]   added class X32: 335
+[   17.8s]   added class X33: 003
+[   17.8s]   added class X34: 503 495 104
+[   17.8s]   added class X35: 585
+[   17.8s]   added class X36: 165
+[   17.8s]   added class X37: 407
+[   17.8s]   added class X38: 350 632
+[   17.8s]   added class X39: 002 742
+[   17.8s]   added class X40: 400

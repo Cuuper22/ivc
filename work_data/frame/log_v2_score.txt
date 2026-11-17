@@ -1,0 +1,35 @@
+[    0.9s] new texts: 1183 lines with no partner; 482 complete and mapped; 482 with every sign seen (scored)
+[    0.9s] unigram 7.849  sign bigram 6.892 bits/sign on new texts
+[    0.9s] gap items: 77
+[    1.0s] gap: frequency only [0.156 0.273 0.351]; sign bigram [0.247 0.597 0.688]
+[    5.0s] v1 hand jobs (pooled)              bits 7.661 share 19.6% | decoy mean 7.824 best 7.739 (0 of 20 at or below) | mix 6.918
+[    5.0s]                                    gap top1/5/10 [0.234 0.442 0.597] decoy mean [0.17  0.329 0.42 ] | mixed with bigram [0.325 0.571 0.701] decoy-mix [0.3   0.559 0.667]
+[    9.4s] v1 hand jobs (by kind)             bits 7.756 share 9.7% | decoy mean 7.904 best 7.784 (0 of 20 at or below) | mix 6.926
+[    9.4s]                                    gap top1/5/10 [0.234 0.429 0.584] decoy mean [0.171 0.334 0.421] | mixed with bigram [0.325 0.571 0.688] decoy-mix [0.305 0.565 0.678]
+[    9.5s]   coverage [new texts] seals auto 65% (decoy 81%) pattern 26% (decoy 6%) | tags and sealings auto 52% (decoy 43%) pattern 31% (decoy 6%) | tablets auto 84% (decoy 88%) pattern 22% (decoy 9%) | copper tablets auto 68% (decoy 46%) pattern 14% (decoy 5%) | pots auto 76% (decoy 76%) pattern 22% (decoy 8%)
+[    9.7s]   coverage [first catalogue] seals auto 79% (decoy 85%) pattern 40% (decoy 6%) | tags and sealings auto 64% (decoy 52%) pattern 45% (decoy 8%) | tablets auto 82% (decoy 85%) pattern 46% (decoy 6%) | copper tablets auto 78% (decoy 67%) pattern 34% (decoy 7%) | pots auto 86% (decoy 82%) pattern 16% (decoy 7%)
+[   13.8s] machine HMM10 (pooled)             bits 7.576 share 28.5% | decoy mean 7.804 best 7.714 (0 of 20 at or below) | mix 6.937
+[   13.8s]                                    gap top1/5/10 [0.286 0.416 0.481] decoy mean [0.19  0.338 0.434] | mixed with bigram [0.312 0.558 0.662] decoy-mix [0.296 0.574 0.679]
+[   18.0s] machine HMM10 (by kind)            bits 7.718 share 13.7% | decoy mean 7.879 best 7.797 (0 of 20 at or below) | mix 6.959
+[   18.0s]                                    gap top1/5/10 [0.273 0.39  0.532] decoy mean [0.187 0.333 0.441] | mixed with bigram [0.338 0.545 0.688] decoy-mix [0.302 0.573 0.688]
+[   18.2s]   coverage [new texts] seals auto 77% (decoy 91%) | tags and sealings auto 18% (decoy 18%) | tablets auto 84% (decoy 92%) | copper tablets auto 18% (decoy 27%) | pots auto 73% (decoy 72%)
+[   18.5s]   coverage [first catalogue] seals auto 88% (decoy 93%) | tags and sealings auto 52% (decoy 32%) | tablets auto 89% (decoy 91%) | copper tablets auto 59% (decoy 52%) | pots auto 71% (decoy 69%)
+[   22.4s] machine exchange10 (pooled)        bits 7.532 share 33.1% | decoy mean 7.811 best 7.744 (0 of 20 at or below) | mix 6.911
+[   22.4s]                                    gap top1/5/10 [0.325 0.429 0.506] decoy mean [0.177 0.334 0.44 ] | mixed with bigram [0.312 0.558 0.649] decoy-mix [0.295 0.568 0.679]
+[   26.8s] machine exchange10 (by kind)       bits 7.602 share 25.8% | decoy mean 7.893 best 7.843 (0 of 20 at or below) | mix 6.895
+[   26.8s]                                    gap top1/5/10 [0.338 0.442 0.519] decoy mean [0.179 0.326 0.435] | mixed with bigram [0.338 0.558 0.636] decoy-mix [0.294 0.571 0.681]
+[   27.0s]   coverage [new texts] seals auto 68% (decoy 96%) | tags and sealings auto 10% (decoy 14%) | tablets auto 76% (decoy 94%) | copper tablets auto 23% (decoy 25%) | pots auto 63% (decoy 68%)
+[   27.1s]   coverage [first catalogue] seals auto 86% (decoy 97%) | tags and sealings auto 38% (decoy 23%) | tablets auto 88% (decoy 93%) | copper tablets auto 47% (decoy 47%) | pots auto 71% (decoy 67%)
+[   30.9s] v2 base (pooled)                   bits 7.536 share 32.7% | decoy mean 7.790 best 7.671 (0 of 20 at or below) | mix 6.881
+[   31.0s]                                    gap top1/5/10 [0.325 0.506 0.597] decoy mean [0.202 0.36  0.455] | mixed with bigram [0.325 0.597 0.74 ] decoy-mix [0.301 0.564 0.668]
+[   35.3s] v2 base (by kind)                  bits 7.664 share 19.4% | decoy mean 7.903 best 7.758 (0 of 20 at or below) | mix 6.904
+[   35.3s]                                    gap top1/5/10 [0.299 0.481 0.571] decoy mean [0.203 0.344 0.449] | mixed with bigram [0.338 0.584 0.714] decoy-mix [0.303 0.569 0.674]
+[   35.5s]   coverage [new texts] seals auto 57% (decoy 70%) pattern 29% (decoy 7%) | tags and sealings auto 37% (decoy 26%) pattern 33% (decoy 8%) | tablets auto 68% (decoy 76%) pattern 24% (decoy 15%) | copper tablets auto 23% (decoy 27%) pattern 45% (decoy 22%) | pots auto 56% (decoy 65%) pattern 29% (decoy 14%)
+[   35.8s]   coverage [first catalogue] seals auto 74% (decoy 76%) pattern 43% (decoy 7%) | tags and sealings auto 29% (decoy 32%) pattern 50% (decoy 8%) | tablets auto 77% (decoy 75%) pattern 56% (decoy 7%) | copper tablets auto 53% (decoy 49%) pattern 54% (decoy 23%) | pots auto 66% (decoy 69%) pattern 27% (decoy 9%)
+[   39.9s] v2 pushed (pooled)                 bits 7.386 share 48.3% | decoy mean 7.567 best 7.349 (1 of 20 at or below) | mix 6.932
+[   39.9s]                                    gap top1/5/10 [0.338 0.584 0.701] decoy mean [0.245 0.467 0.584] | mixed with bigram [0.338 0.623 0.727] decoy-mix [0.282 0.571 0.71 ]
+[   44.4s] v2 pushed (by kind)                bits 7.750 share 10.3% | decoy mean 7.970 best 7.722 (1 of 20 at or below) | mix 6.932
+[   44.4s]                                    gap top1/5/10 [0.312 0.584 0.688] decoy mean [0.24  0.454 0.555] | mixed with bigram [0.39  0.61  0.701] decoy-mix [0.296 0.588 0.687]
+[   44.6s]   coverage [new texts] seals auto 19% (decoy 23%) | tags and sealings auto 13% (decoy 9%) | tablets auto 34% (decoy 44%) | copper tablets auto 5% (decoy 10%) | pots auto 22% (decoy 25%)
+[   44.8s]   coverage [first catalogue] seals auto 34% (decoy 30%) | tags and sealings auto 2% (decoy 7%) | tablets auto 39% (decoy 33%) | copper tablets auto 22% (decoy 20%) | pots auto 38% (decoy 37%)
+[   44.8s] done

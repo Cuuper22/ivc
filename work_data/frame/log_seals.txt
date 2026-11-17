@@ -1,0 +1,60 @@
+[    1.1s] seal objects 2238; kinds: damaged 740, name seal 609, loose name 402, other 395, bare count 43, opener count 32, front alone 6, title alone 5, name + count 3, measure line 3
+[    1.3s]   n_count                real    75.000 | decoy mean     1.050 range 0.000 .. 10.000 (20 decoys with 3+ of each kind)
+[    1.3s]   n_name                 real   609.000 | decoy mean   103.650 range 6.000 .. 356.000 (20 decoys with 3+ of each kind)
+[    1.3s]   median_area_count      real   477.030 | decoy mean   498.915 range 479.285 .. 518.545 (2 decoys with 3+ of each kind)
+[    1.3s]   median_area_name       real   576.000 | decoy mean   585.452 range 517.500 .. 653.405 (2 decoys with 3+ of each kind)
+[    1.3s]   area_diff              real   -98.970 | decoy mean   -86.537 range -134.860 .. -38.215 (2 decoys with 3+ of each kind)
+[    1.3s]   no_animal_diff         real    -0.012 | decoy mean     0.091 range 0.083 .. 0.099 (2 decoys with 3+ of each kind)
+[    1.3s]   shorthorn_diff         real    -0.033 | decoy mean    -0.138 range -0.250 .. -0.025 (2 decoys with 3+ of each kind)
+[    1.3s]   round_diff             real     0.012 | decoy mean    -0.048 range -0.083 .. -0.013 (2 decoys with 3+ of each kind)
+[    1.3s]   port_store_diff        real    -0.007 | decoy mean    -0.047 range -0.250 .. 0.156 (2 decoys with 3+ of each kind)
+[    1.3s]   sealing_diff           real     0.169 | decoy mean     0.068 range 0.000 .. 0.135 (2 decoys with 3+ of each kind)
+[    1.3s]   early_diff             real     0.017 | decoy mean     0.087 range 0.000 .. 0.175 (2 decoys with 3+ of each kind)
+[    1.3s]   abroad_diff            real     0.010 | decoy mean    -0.048 range -0.083 .. -0.013 (2 decoys with 3+ of each kind)
+[    1.4s] 
+                n  median_area  no_animal  unicorn  shorthorn  round_or_cyl  rectangle  on_sealing  abroad  mean_len
+seal_kind                                                                                                           
+bare count     43       445.21      0.163    0.628      0.023         0.023      0.116       0.349   0.023     2.023
+front alone     6       232.50      0.333    0.000      0.000         0.167      0.167       0.667   0.167     1.667
+loose name    402       712.89      0.149    0.701      0.050         0.010      0.132       0.007   0.012     6.211
+measure line    3       208.02      0.667    0.333      0.000         0.000      0.667       0.000   0.000     2.000
+name + count    3       347.70      0.667    0.333      0.000         0.000      0.667       0.000   0.000     6.333
+name seal     609       576.00      0.199    0.619      0.046         0.002      0.176       0.057   0.003     4.271
+opener count   32       645.16      0.219    0.688      0.000         0.000      0.219       0.062   0.000     3.938
+other         395       556.96      0.213    0.552      0.066         0.028      0.180       0.015   0.025     3.886
+title alone     5       778.41      0.200    0.400      0.000         0.200      0.000       0.600   0.000     1.000
+[    1.4s]   (a) face area median: count-line 477 mm2 (n 72) against name seals 576 (n 567); Mann-Whitney P 0.137
+[    1.4s]   (a) no animal: count-line 14 of 75 (18.7%) against name seals 121 of 609 (19.9%); Fisher P 0.879
+[    1.4s]   (a) round or cylinder: count-line 1 of 75 (1.3%) against name seals 1 of 609 (0.2%); Fisher P 0.207
+[    1.4s]   (a) rectangle: count-line 12 of 75 (16.0%) against name seals 107 of 609 (17.6%); Fisher P 0.872
+[    1.4s]   (b) short-horned bull: count-line 1 of 75 (1.3%) against name seals 28 of 609 (4.6%); Fisher P 0.355
+[    1.4s]   (b) unicorn: count-line 49 of 75 (65.3%) against name seals 377 of 609 (61.9%); Fisher P 0.615
+[    1.4s]   (c) port or store/public, among seals with a classed findspot: count-line 7 of 52 (13.5%) against name seals 63 of 446 (14.1%); Fisher P 1
+[    1.4s]   (c) port only: count-line 2 of 52 (3.8%) against name seals 19 of 446 (4.3%); Fisher P 1
+[    1.4s]   (c) store/public only: count-line 5 of 52 (9.6%) against name seals 44 of 446 (9.9%); Fisher P 1
+[    1.4s]   (d) same text on a sealing or tag: count-line 17 of 75 (22.7%) against name seals 35 of 609 (5.7%); Fisher P 8.46e-06
+[    1.4s]   (d) length-matched: name seals of the same lengths would be on a sealing 7.8% of the time (count-line 22.7%)
+[    1.4s]   (e) early bin, among dated: count-line 7 of 54 (13.0%) against name seals 49 of 435 (11.3%); Fisher P 0.654
+[    1.4s]   (e) late bin, among dated: count-line 20 of 54 (37.0%) against name seals 189 of 435 (43.4%); Fisher P 0.386
+[    1.4s]   (f) found abroad: count-line 1 of 75 (1.3%) against name seals 2 of 609 (0.3%); Fisher P 0.295
+[    1.4s]   count-line seals by site: Mohenjo-daro 45, Harappa 14, Dholavira 4, Kalibangan 3, Banawali 2, Lothal 2, Khirsara 1, Chanhu-daro 1, Nausharo 1, Bhirrana 1, Shortughai 1
+[    1.4s]   name seals by site (top): Mohenjo-daro 402, Harappa 115, Dholavira 25, Lothal 18, Chanhu-daro 12, Kalibangan 11, Banawali 5, Nausharo 4
+[    1.4s]   count-line seals by findspot: house 45, unclassed 23, store/public 5, port 2
+[    1.4s]   name seals by findspot: house 383, unclassed 163, store/public 44, port 19
+[    1.4s]   count-line seals by animal: UNICORN 49, NONE 14, OTHER 3, COMPOSITE 2, UNKNOWN 1, BUFFALO 1, GOAT 1, ZEBU 1, SHORTHORN 1, ELEPHANT 1, RHINO 1
+[    1.4s]   count-line seals by shape: square 62, rectangle 12, cylinder 1
+[    1.4s] THINGS on count-line seals: 390 [tree] 41 (counted on tablets/tags 14x), 156 [porter with jars 156] 16 (counted on tablets/tags 26x), 407 [tree variant 407] 6 (counted on tablets/tags 13x), 405 [tree variant 405] 6 (counted on tablets/tags 7x), 426 [sign 426] 3 (counted on tablets/tags 0x), 872 [sign 872] 1 (counted on tablets/tags 0x), 430 [long horizontal at bottom 430] 1 (counted on tablets/tags 0x), 409 [sign 409] 1 (counted on tablets/tags 0x)
+[    1.4s]   share of count-line thing uses whose sign is counted on tablets/tags 2+ times: 92%; same for the sign after a number on name seals: 82%
+[    1.4s]   numbers on count-line seals: 003 [three strokes] 32, 004 [four strokes] 13, 016 [six stacked strokes] 12, 005 [five strokes] 9, 031 [one tall stroke] 5, 013 [three stacked strokes] 2, 015 [five stacked strokes] 2, 032 [two tall strokes] 1, 017 [seven stacked strokes] 1, 018 [eight stacked strokes] 1
+[    1.4s]   front words on count-line seals: 817-002 8, 861-002 8, 820-002 6, 692-060 2, 820 1, 817-368 1, 550-060 1, 824-002 1, 920-060 1, 817 1
+[    1.4s]   top counted things on tablets/tags: 700 [cup] 385, 740 [jar] 63, 861 [diamond] 30, 156 [porter with jars 156] 26, 142 [person with staff] 24, 590 [box with bar] 24, 220 [fish] 20, 585 [sign 585] 18, 806 [leaf on tree variant] 15, 055 [eight-stroke block] 15, 390 [tree] 14, 845 [two hatched leaves] 14, 407 [tree variant 407] 13, 840 [two leaves] 12, 923 [outlined bracket] 12
+[    1.4s]   examples opener count: Khirsara: 820-013-016-390 | Chanhu-daro: 817-002-003-390 | Mohenjo-daro: 861-002-004-407 | Dholavira: 861-002-016-390 | Dholavira: 861-002-016-405 | Mohenjo-daro: 861-002-015-390 | Harappa: 817-368-003-390 | Mohenjo-daro: 817-002-003-390 | Mohenjo-daro: 820-002-004-390 | Mohenjo-daro: 817-002-005-390 | Mohenjo-daro: 550-060-016-390 | Nausharo: 820-002-003-390
+[    1.4s]   examples bare count: Bhirrana: 003-003-390 | Banawali: 004-390 | Mohenjo-daro: 003-390 | Mohenjo-daro: 003-407 | Lothal: 003-156 | Mohenjo-daro: 016-390 | Mohenjo-daro: 031-156 | Harappa: 016-390 | Mohenjo-daro: 003-156 | Harappa: 003-430 | Harappa: 003-390 | Harappa: 003-405
+[   11.0s]   length-matched draw [area]: count-line 477.030 | draws mean 484.793; share of draws at or above 0.515, at or below 0.485
+[   11.0s]   length-matched draw [shorthorn]: count-line 0.013 | draws mean 0.036; share of draws at or above 0.949, at or below 0.213
+[   11.0s]   length-matched draw [no_animal]: count-line 0.187 | draws mean 0.182; share of draws at or above 0.513, at or below 0.617
+[   11.0s]   length-matched draw [port_store]: count-line 0.135 | draws mean 0.172; share of draws at or above 0.781, at or below 0.226
+[   11.0s]   length-matched draw [sealing]: count-line 0.227 | draws mean 0.070; share of draws at or above 0.000, at or below 1.000
+[   11.0s]   length-matched draw [early]: count-line 0.130 | draws mean 0.109; share of draws at or above 0.298, at or below 0.710
+[   11.0s]   length-matched draw [abroad]: count-line 0.013 | draws mean 0.015; share of draws at or above 0.709, at or below 0.670
+[   11.0s]   count-line texts also on sealings: Mohenjo-daro: 861-002-003-390 | Mohenjo-daro: 861-002-003-390 | Banawali: 004-390 | Mohenjo-daro: 003-390 | Lothal: 003-156 | Mohenjo-daro: 003-156 | Harappa: 003-390 | Mohenjo-daro: 003-156 | Harappa: 003-156 | Mohenjo-daro: 003-156 | Mohenjo-daro: 003-156 | Kalibangan: 003-390 | Harappa: 003-156 | Kalibangan: 004-390 | Harappa: 003-390 | Mohenjo-daro: 003-390 | Mohenjo-daro: 004-390
