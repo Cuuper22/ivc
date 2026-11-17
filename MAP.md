@@ -430,4 +430,12 @@ Rerun with one row per physical object, the shuffle among eligible objects, and 
 - `guess` Seal texts come in two shapes: [field][slot][short name][ending] or [long name][ending]. The field is a heading for the capacity the seal is used in, not part of the name, not a place, not a number.
 - `measured` Went against: fronted seals being bigger; one front family being the stamping family; the front replacing the crest (names behind a front start with a crest more often).
 
+## Stamps on one clay lump (from `jobs/out/lumps.md`)
+- `measured` Went against: the short stamp on a multi-stamp lump does not copy the name stamp beside it. Crest match 1 of 10 lumps against 0.67 by chance (P 0.67); heading match 1 of 4 against 1.00; with the widest rules still 1 match in 28.
+- `measured` Pairing is free both ways: one Lothal name stamp sits on 3 lumps with 3 different short stamps; `861-002-236` and `880-002` each go with 3 different names (catalogue overlap kept).
+- `measured` Name stamps and short stamps share a lump slightly less often than chance: 14 of 84 against 18.6 (P 0.08); widest rules 32 of 97 against 39.3 (P 0.04).
+- `measured` On 177 two-face tablets the cup count (2 strokes 54, 3 strokes 73, 4 strokes 49) does not follow the name's ending (P 0.91), crest class (P 0.68), front word (P 0.15) or trench (248 same-count pairs against 249.0).
+- `guess` A lump is a set of independent stamps: the short stamp belongs to the transaction, the name stamp to whoever was present. Untested.
+- Missing: neither catalogue records where each impression sits on the lump or the order of stamping; only 14 to 32 lumps are comparable. Redesigned once (three wider rule sets, class level): same null.
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.

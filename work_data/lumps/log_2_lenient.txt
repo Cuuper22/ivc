@@ -1,0 +1,131 @@
+steps {'all_lumps': 240, 'after_dup': 226, 'after_batch': 213, 'two_or_more_different': 199}
+stratum A lumps 84 by site {'Harappa': 23, 'Lothal': 23, 'Mohenjo-daro': 23, 'Kalibangan': 7, 'Dholavira': 6, 'Rupar': 1, 'Other': 1} by catalogue {'Mah': 54, 'Lipi': 30}
+lumps with name 70 with short 40 with both 26
+
+ELIGIBLE name+short lumps:
+  H-1722 Harappa | 000-415-220-520<na> / 220-000<sh>
+  H-1720 Harappa | 326-405-090-405-893-413-033<na> / 792-000<sh>
+  L-190 Lothal | 705-500-741-001-055-220-740-090<na> / 317-920-002-000-000-000<sh> / 880<sh>
+  L-191 Lothal | 705-500-741-001-055-220-740-090<na> / 861-002-235<sh>
+  L-193 Lothal | 705-500-741-001-055-220-740-090<na> / 000<un> / 070-125<sh>
+  L-196 Lothal | 000-002-032-590-390<na> / 861-002<sh>
+  L-198 Lothal | 000-000-055<sh> / 000-002-032-590-390-740<na>
+  L-202 Lothal | 220-590-390-000<na> / 861-002-236<sh>
+  M-426 Mohenjo-daro | 000-705-595<sh> / 000-530-000-000<na>
+  - Rupar | 235-032-877-740<na> / 017-585-740<na> / 000-460-302<sh>
+  - Dholavira | 820-002-000-520<na> / 820-002-000-000<sh>
+  Mah1616 Mohenjo-daro | 101-176<sh> / 240-415-100-740<na>
+  Mah2810 Mohenjo-daro | 540<sh> / 468-806-158-400<na>
+  Mah2835 Mohenjo-daro | 362-X277<sh> / 240-803-585-740-400<na>
+  Mah2844 Mohenjo-daro | 705-167-400<sh> / 240-032-220-840-000<na>
+  Mah2846 Mohenjo-daro | X225-060-803-740-101-X45<na> / X383-717<sh>
+  Mah2855 Mohenjo-daro | 002-368-740-900-000-900-X283<na> / 382-760-000<sh> / 000<un>
+  Mah4309 Harappa | 070-740-590<na> / 705-167<sh> / 032-408-700-700<na>
+  Mah4658 Harappa | 861-368-690<sh> / 687-840-032-740<na>
+  Mah5296 Harappa | 645<sh> / 468-806-158<na>
+  Mah5320 Harappa | 413-892-877<sh> / 415-220-520<na>
+  Mah5324 Harappa | 861-368-000<sh> / 840-032-740<na>
+  Mah5329 Harappa | 413<sh> / 315-416-031-002-240-000<na>
+  Mah7219 Lothal | 615-615-002-240-000<na> / 315-920-002-000<sh>
+  Mah7227 Lothal | 705-500-000<sh> / 388-741-000-267-000<na> / 000<un>
+  Mah7237 Lothal | 705-500-000<sh> / 000-032-590-000<na>
+
+=== ITEM 1: short stamp sign(s) vs crest of name stamp ===
+1a tail sign = crest-class sign of the name (frame v2 CREST class): eligible lumps 15; matches 1; chance 0.50; P_ge 0.4987; P_le 1.0000
+     H-1722 name ['000-415-220-520'] short ['220-000'] MATCH
+     L-190 name ['705-500-741-001-055-220-740-090'] short ['317-920-002-000-000-000', '880'] 
+     L-191 name ['705-500-741-001-055-220-740-090'] short ['861-002-235'] 
+     L-193 name ['705-500-741-001-055-220-740-090'] short ['070-125'] 
+     L-202 name ['220-590-390-000'] short ['861-002-236'] 
+     - name ['235-032-877-740', '017-585-740'] short ['000-460-302'] 
+     Mah1616 name ['240-415-100-740'] short ['101-176'] 
+     Mah2810 name ['468-806-158-400'] short ['540'] 
+     Mah2835 name ['240-803-585-740-400'] short ['362-X277'] 
+     Mah2844 name ['240-032-220-840-000'] short ['705-167-400'] 
+     Mah2846 name ['X225-060-803-740-101-X45'] short ['X383-717'] 
+     Mah5296 name ['468-806-158'] short ['645'] 
+     Mah5320 name ['415-220-520'] short ['413-892-877'] 
+     Mah5329 name ['315-416-031-002-240-000'] short ['413'] 
+     Mah7219 name ['615-615-002-240-000'] short ['315-920-002-000'] 
+1b tail sign = first non-number sign of the name body (FRAME definition of crest): eligible lumps 19; matches 0; chance 0.50; P_ge 1.0000; P_le 0.4992
+     H-1720 name ['326-405-090-405-893-413-033'] short ['792-000'] 
+     L-190 name ['705-500-741-001-055-220-740-090'] short ['317-920-002-000-000-000', '880'] 
+     L-191 name ['705-500-741-001-055-220-740-090'] short ['861-002-235'] 
+     L-193 name ['705-500-741-001-055-220-740-090'] short ['070-125'] 
+     L-198 name ['000-002-032-590-390-740'] short ['000-000-055'] 
+     L-202 name ['220-590-390-000'] short ['861-002-236'] 
+     - name ['235-032-877-740', '017-585-740'] short ['000-460-302'] 
+     Mah1616 name ['240-415-100-740'] short ['101-176'] 
+     Mah2810 name ['468-806-158-400'] short ['540'] 
+     Mah2835 name ['240-803-585-740-400'] short ['362-X277'] 
+     Mah2844 name ['240-032-220-840-000'] short ['705-167-400'] 
+     Mah2846 name ['X225-060-803-740-101-X45'] short ['X383-717'] 
+     Mah2855 name ['002-368-740-900-000-900-X283'] short ['382-760-000'] 
+     Mah4309 name ['070-740-590', '032-408-700-700'] short ['705-167'] 
+     Mah4658 name ['687-840-032-740'] short ['861-368-690'] 
+     Mah5296 name ['468-806-158'] short ['645'] 
+     Mah5320 name ['415-220-520'] short ['413-892-877'] 
+     Mah5329 name ['315-416-031-002-240-000'] short ['413'] 
+     Mah7219 name ['615-615-002-240-000'] short ['315-920-002-000'] 
+1c tail sign = any sign of the name body (control, widest): eligible lumps 23; matches 1; chance 1.09; P_ge 0.7186; P_le 0.6959
+     H-1722 name ['000-415-220-520'] short ['220-000'] MATCH
+     H-1720 name ['326-405-090-405-893-413-033'] short ['792-000'] 
+     L-190 name ['705-500-741-001-055-220-740-090'] short ['317-920-002-000-000-000', '880'] 
+     L-191 name ['705-500-741-001-055-220-740-090'] short ['861-002-235'] 
+     L-193 name ['705-500-741-001-055-220-740-090'] short ['070-125'] 
+     L-198 name ['000-002-032-590-390-740'] short ['000-000-055'] 
+     L-202 name ['220-590-390-000'] short ['861-002-236'] 
+     M-426 name ['000-530-000-000'] short ['000-705-595'] 
+     - name ['235-032-877-740', '017-585-740'] short ['000-460-302'] 
+     Mah1616 name ['240-415-100-740'] short ['101-176'] 
+     Mah2810 name ['468-806-158-400'] short ['540'] 
+     Mah2835 name ['240-803-585-740-400'] short ['362-X277'] 
+     Mah2844 name ['240-032-220-840-000'] short ['705-167-400'] 
+     Mah2846 name ['X225-060-803-740-101-X45'] short ['X383-717'] 
+     Mah2855 name ['002-368-740-900-000-900-X283'] short ['382-760-000'] 
+     Mah4309 name ['070-740-590', '032-408-700-700'] short ['705-167'] 
+     Mah4658 name ['687-840-032-740'] short ['861-368-690'] 
+     Mah5296 name ['468-806-158'] short ['645'] 
+     Mah5320 name ['415-220-520'] short ['413-892-877'] 
+     Mah5329 name ['315-416-031-002-240-000'] short ['413'] 
+     Mah7219 name ['615-615-002-240-000'] short ['315-920-002-000'] 
+     Mah7227 name ['388-741-000-267-000'] short ['705-500-000'] 
+     Mah7237 name ['000-032-590-000'] short ['705-500-000'] 
+1d short tails that are a CREST-class sign (any fish type): 2 of 23 stamps; chance 5.24; P_ge 0.9838  (draw: one sign from the pool of lump signs at the same site; pool rate of crest-class signs 0.135)
+
+=== ITEM 2: short stamp vs heading (field) of name stamp ===
+2a short stamp front word or tail shares a sign with the name stamp field (slot signs left out): eligible lumps 6; matches 1; chance 1.60; P_ge 1.0000; P_le 0.3962
+     L-190 name ['705-500-741-001-055-220-740-090'] short ['317-920-002-000-000-000', '880'] 
+     L-191 name ['705-500-741-001-055-220-740-090'] short ['861-002-235'] 
+     L-193 name ['705-500-741-001-055-220-740-090'] short ['070-125'] 
+     - name ['820-002-000-520'] short ['820-002-000-000'] MATCH
+     Mah7219 name ['615-615-002-240-000'] short ['315-920-002-000'] 
+     Mah7227 name ['388-741-000-267-000'] short ['705-500-000'] 
+2b same front word on both stamps: eligible lumps 1; matches 1; chance 1.00; P_ge 1.0000; P_le 1.0000
+     - name ['820-002-000-520'] short ['820-002-000-000'] MATCH
+
+=== ITEM 3: recurrence ===
+name stamps on 2+ eligible lumps: 1; of them with 2+ different short stamps: 1
+short stamps on 2+ eligible lumps: 1; of them with 2+ different name stamps: 1
+distinct (name, short) pairs: 29 on 26 lumps
+  names2: real 1; chance 1.00; P_ge 1.0000; P_le 1.0000
+  names_diff: real 1; chance 1.00; P_ge 1.0000; P_le 1.0000
+  shorts2: real 1; chance 1.00; P_ge 1.0000; P_le 1.0000
+  shorts_diff: real 1; chance 0.92; P_ge 0.9167; P_le 1.0000
+  pairs: real 29; chance 28.92; P_ge 0.9167; P_le 1.0000
+  tables:
+   short 705-500-000 on 2 lumps with names [('Mah7227', ['388-741-000-267-000']), ('Mah7237', ['000-032-590-000'])]
+   name 705-500-741-001-055-220-740-090 on 3 lumps with shorts [('L-190', ['317-920-002-000-000-000', '880']), ('L-191', ['861-002-235']), ('L-193', ['070-125'])]
+
+=== ITEM 4: order, mixing, picture field, find-spot ===
+4a lumps with one name and one short stamp: 23; name impression listed first 10; chance 11.5; P_ge 0.7916; P_le 0.3460 (order = catalogue impression order, not known to be stamping order)
+   Lipi: 9 lumps, name first 7
+   Mah: 14 lumps, name first 3
+4b lumps (A) carrying both a name stamp and a short stamp: 26 of 84; chance 31.33; P_ge 0.9532; P_le 0.0802 (role labels dealt among impressions of the same site, lump sizes kept)
+   lumps with 2+ name stamps: 37; chance 36.63; P_ge 0.5255; P_le 0.6655
+   lumps with 2+ short stamps: 8; chance 6.93; P_ge 0.3671; P_le 0.8112
+4c second-catalogue name stamps with a picture field: 25 of 71; chance 27.59; P_ge 0.9181; P_le 0.1703
+4c second-catalogue short stamps with a picture field: 16 of 31; chance 13.40; P_ge 0.1704; P_le 0.9185
+4d lump pairs sharing the same short stamp text and the same spot: 1 of 3 pairs (spot named for both); chance 0.39; P_ge 0.3507
+4d lump pairs sharing the same name stamp text and the same spot: 4 of 15 pairs (spot named for both); chance 2.29; P_ge 0.2472
+4e name ending class vs short front word: chi-square 18.62; chance 18.41; P_ge 0.4169  endings Counter({'other': 14, 'jar': 6, 'spear': 3, 'jar+man': 3}) fronts Counter({'none': 18, '861': 5, '880': 1, '820': 1, '920': 1})
