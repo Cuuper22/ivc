@@ -1,0 +1,30 @@
+(i)-(ii) s3_objects.csv: 902 rows = 902 objects (one row per object: faces already joined); stones after merging duplicate catalogue rows 899
+(i) a name keeps its own amount (old 38 against 21.6, P 0.003)
+  clean: one unit per (name, amount, trench), stones merged: 256 units; same-name pairs with the same amount 38 (different 77) against 21.6 (ratio 1.76, P 0.0030)
+  stricter: one unit per (name, amount, site): 228 units; same-name pairs with the same amount 1 (different 45) against 8.3 (ratio 0.12, P 1.0000)
+
+(ii) same name, different amount, one trench (old 9 against 3.5, P 0.011)
+  clean (stones, copies in a trench once, as in the old design): 203 signatures; pairs 9 against 3.43 (P 0.0113)
+     Harappa|ETrench 10W/11     027-032-740-400        033-031-700 x1  vs  034-700 x1
+     Harappa|ETrench 10W/11     027-032-740-400        033-031-700 x1  vs  700-034 x1
+     Harappa|ETrench 10W/11     027-032-740-400        034-700 x1  vs  700-034 x1
+     Harappa|F-                 176-740                032-700 x1  vs  033-700 x1
+     Harappa|FTrench I          176-740-400            032-700 x2  vs  033-700 x14
+     Harappa|FTrench I          176-740-400            032-700 x2  vs  034-700 x7
+     Harappa|FTrench I          176-740-400            033-700 x14  vs  034-700 x7
+     Harappa|FTrench I          234-400                034-700 x1  vs  700-034 x1
+     Harappa|FTrench III        176-740-400            033-700 x1  vs  034-700 x1
+  amount read the same when only the stroke-cup order differs (700-034 = 034-700): 203 signatures; pairs 7 against 2.87 (P 0.0227)
+     Harappa|ETrench 10W/11     027-032-740-400        033-031-700 x1  vs  034-700 x1
+     Harappa|ETrench 10W/11     027-032-740-400        033-031-700 x1  vs  700-034 x1
+     Harappa|F-                 176-740                032-700 x1  vs  033-700 x1
+     Harappa|FTrench I          176-740-400            032-700 x2  vs  033-700 x14
+     Harappa|FTrench I          176-740-400            032-700 x2  vs  034-700 x7
+     Harappa|FTrench I          176-740-400            033-700 x14  vs  034-700 x7
+     Harappa|FTrench III        176-740-400            033-700 x1  vs  034-700 x1
+
+(iii) count-line seal + record in one area with the same [number][thing] (old 89 against 69.5, P 0.003)
+  record rows 380 = 350 stones; record copy events (site, trench, full text) 295
+  A  as run (faces, every copy a separate record): 42 seals x 380 records; pairs 89 against 69.3 (ratio 1.28, P 0.0035)
+  B  clean: stones, moulded copies in one trench once: 42 seals x 295 records; pairs 43 against 43.7 (ratio 0.98, P 0.5902)
+  C  clean + identical count-line seals in one trench once: 36 seals x 295 records; pairs 28 against 28.3 (ratio 0.99, P 0.5927)

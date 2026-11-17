@@ -1,0 +1,19 @@
+dated rows 2666, distinct objects 2666, stones 2664: rows are objects (fault 1 absent)
+  agent seals (jar + man) among seals with an ending
+     as run: early 4.5% (n 111), middle 4.1% (n 411), late 4.5% (n 359); trend r +0.003, within-area shuffle P 1.0000
+     clean (8 rows dropped): early 4.5% (n 111), middle 4.2% (n 405), late 4.5% (n 357); trend r +0.002, within-area shuffle P 1.0000
+  fish crest first in the name (seals)
+     as run: early 12.3% (n 154), middle 12.6% (n 596), late 12.8% (n 514); trend r +0.005, within-area shuffle P 0.8900
+     clean (11 rows dropped): early 12.3% (n 154), middle 12.5% (n 591), late 12.5% (n 512); trend r +0.001, within-area shuffle P 1.0000
+  office opening 920-060-741 (all objects)
+     as run: early 1.4% (n 365), middle 0.9% (n 1536), late 0.8% (n 765); trend r -0.017, within-area shuffle P 0.4529
+     clean (116 rows dropped): early 1.4% (n 352), middle 0.9% (n 1446), late 0.8% (n 752); trend r -0.018, within-area shuffle P 0.4255
+  Harappa seals with no animal
+     as run: early 18.2% (n 11), middle 18.5% (n 195), late 33.7% (n 98); trend r +0.158, within-area shuffle P 0.0018
+     clean (2 rows dropped): early 18.2% (n 11), middle 18.7% (n 193), late 33.7% (n 98); trend r +0.156, within-area shuffle P 0.0032
+
+earliest level (Mohenjo-daro DK-G): fish crest first, clean count (no lost sign before it)
+  as reported: first catalogue 0 of 36, second catalogue 0 of 36, union 0 of 38 (the union adds 2 second-catalogue stones that
+  matched no first-catalogue stone, so no stone is counted twice); later levels 62 of 592 / 65 of 590 / 65 of 627 (work_data/early/log_1.txt).
+  first catalogue alone: 0 of 36 against 62 of 592 (10.5%), two-sided Fisher P 0.0397
+  union: 0 of 38 against 65 of 627 (10.4%), two-sided Fisher P 0.0422
