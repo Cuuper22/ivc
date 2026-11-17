@@ -1,0 +1,35 @@
+R1 one name, many records: share of a name's cup records on its modal count (names with 2+ cup records)
+  comb 740-400     names  11 mean modal share 0.627
+  jar only         names  16 mean modal share 0.756
+  name, no jar     names  20 mean modal share 0.836
+  comb minus jar-only -0.129 (P high 0.9203, P low 0.0797)
+  without name 176: {'comb 740-400': (np.float64(0.625), 10), 'jar only': (np.float64(0.7622222222222222), 15), 'name, no jar': (np.float64(0.8358333333333334), 20)}
+
+R2 the big measure on the other face, and the tablet format:
+  comb 740-400         records  150; with big measure 0; formats TAB:I 96; TAB:B 52; SEAL:R 2
+  jar only             records  247; with big measure 2; formats TAB:B 118; TAB:I 81; TAB:C 21
+  man 740-090          records   23; with big measure 1; formats TAG 7; TAB:B 7; TAB:I 6
+  other after-jar sign records   41; with big measure 2; formats TAB:B 22; TAB:I 10; TAB:C 4
+  name, no jar         records  230; with big measure 21; formats TAB:B 110; TAB:I 86; TAB:C 13
+  comb 0/150 against all other name records 26/541: Fisher P 0.0026
+  Harappa tablets comb      n  208 moulded TAB:B 95 incised TAB:I 113; any 705/706 on the object 3
+  Harappa tablets jar only  n  259 moulded TAB:B 155 incised TAB:I 104; any 705/706 on the object 6
+  Harappa tablets neither   n  616 moulded TAB:B 333 incised TAB:I 283; any 705/706 on the object 44
+
+R3 names against mounds (issues; names on 2+ issues):
+  72 names: 1.86 mounds per name against 1.93 (P low 0.1645); mounds: F 189; ET 160; D 31; E 26; AB 9; G 4; H 2; J 1; C 1
+
+R4 comb concentration in FTrench I without name 176:
+  all: FTrench I comb 39/86 against Harappa 0.220; trench chi 47.4 against 29.6 (P 0.0065)
+  without 176: FTrench I comb 17/64 against Harappa 0.183; trench chi 24.1 against 30.3 (P 0.7985)
+
+R5 copies over the whole of Harappa (signature only):
+  277 signatures with cups; Spearman copies~cups +0.043 (P high 0.2413); copies==cups 14 signatures
+  copies by cups: 1c: mean 1.00 max 1; 2c: mean 1.16 max 3; 3c: mean 1.30 max 18; 4c: mean 1.54 max 20; 6c: mean 1.00 max 1
+
+R6 copies per signature by ending:
+  400   signatures  104 objects  160 copies per signature 1.54; with 2+ copies 19; moulded-only signatures copies 1.34
+  jar   signatures  138 objects  187 copies per signature 1.36; with 2+ copies 27; moulded-only signatures copies 1.43
+  other signatures  291 objects  425 copies per signature 1.46; with 2+ copies 55; moulded-only signatures copies 1.43
+  comb minus jar-only copies per signature +0.18 (P high 0.2363)
+done

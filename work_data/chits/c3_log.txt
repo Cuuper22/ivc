@@ -1,0 +1,34 @@
+multi-face objects with a name face: 691; by group: jar only 247; name, no jar 230; comb 740-400 150; other after-jar sign 41; man 740-090 23
+  [all sites, objects] comb 740-400           rec  150 cups 100 [1 1; 2 27; 3 47; 4 25] mean 2.96 modal 0.47 | big 0 tree 0 porter 0 none 36 | 3 cup 47; no amount 36; 2 cup 27; 4 cup 25; ? cup 13; ? cup + ? tree 1
+  [all sites, objects] man 740-090            rec   23 cups   5 [2 1; 3 2; 4 2] mean 3.2 modal 0.4 | big 1 tree 1 porter 0 none 16 | no amount 16; 3 cup 2; 4 cup 2; 3 big + ? tree 1; 6 tree 1; 2 cup 1
+  [all sites, objects] jar only               rec  247 cups 102 [1 2; 2 30; 3 45; 4 25] mean 2.91 modal 0.441 | big 2 tree 2 porter 0 none 121 | no amount 121; 3 cup 45; 2 cup 30; 4 cup 24; ? cup 15; ? tree 5
+  [all sites, objects] other after-jar sign   rec   41 cups  20 [2 4; 3 8; 4 8] mean 3.2 modal 0.4 | big 0 tree 0 porter 0 none 17 | no amount 17; 3 cup 8; 4 cup 8; 2 cup 3; ? cup 2; 2 cup + ? big 1
+  [all sites, objects] name, no jar           rec  230 cups 109 [2 37; 3 40; 4 32] mean 2.95 modal 0.367 | big 5 tree 2 porter 1 none 85 | no amount 85; 3 cup 40; 2 cup 36; 4 cup 32; ? big 16; ? cup 8
+  [Harappa, objects] comb 740-400           rec  147 cups  98 [1 1; 2 26; 3 46; 4 25] mean 2.97 modal 0.469 | big 0 tree 0 porter 0 none 35 | 3 cup 46; no amount 35; 2 cup 26; 4 cup 25; ? cup 13; ? cup + ? tree 1
+  [Harappa, objects] man 740-090            rec   10 cups   5 [2 1; 3 2; 4 2] mean 3.2 modal 0.4 | big 0 tree 0 porter 0 none 5 | no amount 5; 3 cup 2; 4 cup 2; 2 cup 1
+  [Harappa, objects] jar only               rec  192 cups  99 [1 2; 2 29; 3 43; 4 25] mean 2.92 modal 0.434 | big 2 tree 0 porter 0 none 77 | no amount 77; 3 cup 43; 2 cup 29; 4 cup 24; ? cup 13; 1 cup 2
+  [Harappa, objects] other after-jar sign   rec   26 cups  19 [2 4; 3 7; 4 8] mean 3.21 modal 0.421 | big 0 tree 0 porter 0 none 5 | 4 cup 8; 3 cup 7; no amount 5; 2 cup 3; ? cup 2; 2 cup + ? big 1
+  [Harappa, objects] name, no jar           rec  192 cups 109 [2 37; 3 40; 4 32] mean 2.95 modal 0.367 | big 2 tree 2 porter 0 none 57 | no amount 57; 3 cup 40; 2 cup 36; 4 cup 32; ? big 13; ? cup 8
+  [Harappa, issues (copies in one trench once)] comb 740-400           rec  122 cups  73 [1 1; 2 24; 3 30; 4 18] mean 2.89 modal 0.411 | big 0 tree 0 porter 0 none 35 | no amount 35; 3 cup 30; 2 cup 24; 4 cup 18; ? cup 13; ? cup + ? tree 1
+  [Harappa, issues (copies in one trench once)] man 740-090            rec    9 cups   5 [2 1; 3 2; 4 2] mean 3.2 modal 0.4 | big 0 tree 0 porter 0 none 4 | no amount 4; 3 cup 2; 4 cup 2; 2 cup 1
+  [Harappa, issues (copies in one trench once)] jar only               rec  184 cups  95 [1 2; 2 28; 3 40; 4 25] mean 2.93 modal 0.421 | big 2 tree 0 porter 0 none 73 | no amount 73; 3 cup 40; 2 cup 28; 4 cup 24; ? cup 13; 1 cup 2
+  [Harappa, issues (copies in one trench once)] other after-jar sign   rec   22 cups  16 [2 4; 3 6; 4 6] mean 3.12 modal 0.375 | big 0 tree 0 porter 0 none 4 | 3 cup 6; 4 cup 6; no amount 4; 2 cup 3; ? cup 2; 2 cup + ? big 1
+  [Harappa, issues (copies in one trench once)] name, no jar           rec  185 cups 104 [2 37; 3 39; 4 28] mean 2.91 modal 0.375 | big 2 tree 2 porter 0 none 56 | no amount 56; 3 cup 39; 2 cup 36; 4 cup 28; ? big 12; ? cup 8
+
+tests (Harappa records with a cup count; group labels shuffled among them):
+  [objects] n 311: mean cups comb 2.97 / jar only 2.92 / man 3.20 / no-jar name 2.95; comb minus jar-only +0.05 (P low 0.6695, P high 0.3337)
+  [objects] modal cup share comb 0.47 / jar only 0.43 / man 0.40; comb minus jar-only +0.04 (P high 0.2945)
+  [issues] n 277: mean cups comb 2.89 / jar only 2.93 / man 3.20 / no-jar name 2.91; comb minus jar-only -0.04 (P low 0.3962, P high 0.6082)
+  [issues] modal cup share comb 0.41 / jar only 0.42 / man 0.40; comb minus jar-only -0.01 (P high 0.5850)
+
+one vote per name (Harappa, modal cup count of each name):
+  comb 740-400     names 51: 1 1; 2 22; 3 19; 4 9
+  jar only         names 75: 1 2; 2 22; 3 32; 4 19
+  man 740-090      names 4: 2 1; 3 2; 4 1
+  name, no jar     names 78: 2 30; 3 28; 4 20
+  comb without name 176: records 64 cups 1 1; 2 23; 3 24; 4 16, mean 2.86
+
+comb records whose other face is not a cup count (Harappa):
+  413-892-824 5; 000-700 5; 000 3; 033 2; 125-700 2; 687-690 2; 034-000 2; 700-000 2; 033-033 1; 032-116 1; 126-700 1; 817-368-690 1; 003-798-617 1; 390-700 1; 687-692 1; 000-000 1; 033-000 1; 220 1; 240-233-520 1; 000-000-000 1; 004-220-700 1; 681-690 1; 091-368 1; 820-060-869 1; 700 1; 000-032-904 1; 700-824 1; 025-032-690 1; 413 1; 820-001-060-869 1
+jar-only records with no cup count (Harappa), top other faces: 817-368-690 5; 235-220-176-740 5; 700 5; 000 4; 033-000 3; 745-000-000-000 3; 003-861 3; 745-700 2; 840-032-740 2; 700-000 2; 000-000 2; 697 2; 413-575-335-711-000 2; 413-892-824 2; 034 2; 240-705-033-550-525-400 2; 861-002-240-482-740 2; 740-400 2; 690 2; 220-235 1
+done

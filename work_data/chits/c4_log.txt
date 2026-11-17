@@ -1,0 +1,101 @@
+Harappa tablets 1083; with a trench 831; lost-sign free 772
+issues (signature + trench) 520; copies distribution: 1 493; 2 17; 3 3; 4 1; 5 1; 7 3; 13 1; 20 1
+issues with 3+ copies:
+   x20 ETrench 11       003-156 | 003-861 | 034-700                  name                          cups 4.0 TAB:I bins early,middle
+   x13 FTrench I        033-700 | 176-740-400                        name 176|400                  cups 3.0 TAB:B,TAB:I bins middle
+   x 7 FTrench I        034-700 | 176-740-400                        name 176|400                  cups 4.0 TAB:I bins middle
+   x 7 ETrench 11       347-741-176-740-090                          name 347-741-176|090          cups nan TAB:B bins early,middle
+   x 7 FGranery         803-415-220-318-920-255-436-690-590-407-740  name 803-415-220-318-920-255-436-690-590-407|jar cups nan TAB:B bins late,middle
+   x 5 FTrench I        605-760-740-400                              name 605-760|400              cups nan TAB:I bins early,middle
+   x 4 ETrench 11       034-700 | 176-156                            name 176-156|nojar            cups 4.0 TAB:B bins middle
+   x 3 ETrench 11       820                                          name 820|nojar                cups nan TAB:B,TAB:I bins early
+   x 3 FTrench I        013-840-740 | 033-700                        name 013-840|jar              cups 3.0 TAB:I bins middle
+   x 3 FTrench I        033-700 | 900-368                            name                          cups 3.0 TAB:I bins middle
+
+(a) names and trenches (records = issues; names on 2+ issues):
+  72 names on 2+ issues (203 issues): mean trenches per name 2.54 against 2.56 shuffled (P low 0.3585)
+    ending 400  : 18 names, 2.67 trenches per name against 2.73 (P low 0.3635)
+    ending jar  : 19 names, 2.21 trenches per name against 2.23 (P low 0.4795)
+    ending nojar: 31 names, 2.74 trenches per name against 2.75 (P low 0.4980)
+    ending 090  : 3 names, 2.00 trenches per name against 1.93 (P low 1.0000)
+  trenches by issues (issues, distinct names, comb names, tablets):
+    ETrench 11          56  49  10  70
+    F-                  50  48  11  53
+    FTrench I           45  42  13  71
+    ETrench 54          41  40   5  44
+    ETrench 10W/11      38  35   7  39
+    D-                  31  30   4  32
+    FGranery            26  25   6  33
+    FTrench IV+V        20  19   4  20
+    FTrench VI          20  20   5  20
+    E-                  11  11   2  11
+    FTrench III         10   9   3  10
+    AB-                  9   9   2   9
+  comb share by trench (tablets): ETrench 11 12/112; FTrench I 39/86; F- 12/65; ETrench 54 5/49; ETrench 10W/11 9/46; FGranery 7/37; D- 5/33; FTrench IV+V 4/23; FTrench VI 5/22; E- 2/14
+  comb tablets spread over trenches: chi 54.8 against 30.7 shuffled (P 0.0025)
+
+(b) copies against cups (issues with a cup count):
+  253 issues; Spearman copies~cups +0.069 (P high 0.1200); copies == cups 0.028 against 0.019 (P high 0.1345)
+  copies by cups: 1 cups: 1 1; 2 cups: 1 65; 2 3; 3 cups: 1 96; 2 3; 3 2; 13 1; 4 cups: 1 74; 2 4; 4 1; 7 1; 20 1; 6 cups: 1 1
+  issues with 2+ copies:  4c x20; 176|400 3c x13; 176|400 4c x7; 176-156|nojar 4c x4; 013-840|jar 3c x3;  3c x3; 416-220-760|400 4c x2; 516-775-400|nojar 4c x2; 240-904|jar 2c x2; 617-892|400 2c x2; 231-176|565 4c x2; 222|151 4c x2; 240-705-033-550-525-400|nojar 3c x2; 176|400 2c x2; 156-924-705|851 3c x2; 178|400 3c x2
+
+(c) faces that stay the same beside many different partner faces in one trench (multi-face tablets, copies once):
+  faces with 3+ different partners in one trench: 35; by type amount 31; name 4
+    ETrench 11       amount  034-700                partners  18  003-154 / 003-156 / 003-861 / 025-032-740 / 032-388-480-001 / 032-388-480-031 / 176-156 / 221-158
+    F-               amount  033-700                partners  10  032-140-156-400 / 091-500-ALT-390 / 137-400 / 176-740 / 176-740-400 / 219-740-804 / 220-550-526 / 229-151-400
+    ETrench 10W/11   amount  034-700                partners   9  001-415-365-798-740-400 / 027-032-740-400 / 097-400 / 137 / 176-100-740 / 201-060-031-176-740 / 416-861-002 / 
+    F-               amount  032-700                partners   9  003-335-740-400 / 032-226-400 / 055-255-435-690-921-400 / 142-032-511 / 176-740 / 219-072-520 / 382-760-740 / 
+    FTrench I        amount  032-700                partners   9  032-001-904-031-740 / 176-740-400 / 220-520 / 240-636-690-740 / 353-400-520-400 / 380-705-200 / 592-158-400 / 
+    FTrench I        amount  033-700                partners   8  013-840-740 / 033-384-740-400 / 059-032-740-400 / 176-740-400 / 178-740-400 / 255-436-690-740-400 / 798-240-23
+    FTrench I        amount  034-700                partners   8  061-142-400-740 / 176-740-400 / 217-742 / 234-400 / 255-435-154 / 337-740-400 / 840-257-032 / 900-368
+    D-               amount  033-700                partners   7  018-336-740 / 229-151 / 240-590-390-740 / 240-636-690-740 / 380-705-200 / 490-692-337-740 / 621-705-204-240-64
+    ETrench 54       amount  034-700                partners   7  031-384-740 / 176-740-590-892-352-297-400 / 220-176-740 / 231-176-740-565 / 240-100-740-400 / 590-741-371-455-
+    ETrench 54       amount  033-700                partners   7  067-143-740 / 100-067-740-400 / 380-705-200 / 415-578-032-824 / 491-920-032 / 741-368-400 / 799-840-760-740
+    ETrench 10W/11   amount  033-700                partners   6  003-156 / 003-861 / 028-032-740-400 / 415-578-032-876 / 519-176-740-400 / 799-840-760-740
+    ETrench 11       amount  032-700                partners   6  015-032-740-400 / 240-176-740-400 / 415-220-520 / 491-817-740-400 / 690-158-400 / 741-032-840-700
+    ETrench 11       amount  003-861                partners   6  003-154 / 003-156 / 034-700 / 061-255-740 / 327-740-090 / 416-740
+    FTrench IV+V     amount  033-700                partners   6  176-740-400 / 415-100-820-032 / 491-817-740-400 / 590-368-134-388 / 798-415-220-740-400 / 817-365-690
+    ETrench 10W/11   amount  032-700                partners   5  032-255-740 / 032-854-400 / 255-204-540-740 / 360-257 / 840-032-740-400
+    ETrench 11       amount  033-700                partners   5  091-368 / 142-151-400 / 144 / 352-400-520-400 / 831-892-400
+    ETrench 11       amount  700-034                partners   4  033-033-520 / 226-400 / 416-861 / 416-861-002
+    F-               amount  034-700                partners   4  031-384-156-400 / 236-400 / 240-642-690-740 / 792-740-090
+    FTrench III      amount  034-700                partners   4  013-060-032-740-400 / 176-740-400 / 240-637-740-400 / 255-435-156
+    FTrench VI       amount  033-700                partners   4  027-032-740-400 / 176-740-400 / 817-002-495-615-740 / 820-002-240-220-520
+    D-               amount  034-700                partners   3  002-382-740 / 415-220-520 / 491-817-740-400
+    D-               amount  700-032                partners   3  140-400 / 240-630-690-740 / 617-892-740-400
+    D-               amount  032-700                partners   3  004-900-740 / 176-336-740-400 / 820-002-554-526
+    EC               amount  034-700                partners   3  221-740-151 / 222-740-151 / 416-861-002
+    ETrench 54       amount  032-700                partners   3  140-001-031-740 / 491-817-740 / 829-617-400
+    ETrench 54       amount  700-033                partners   3  137-400 / 240-520 / 240-904-740-400
+    FGranery         amount  032-700                partners   3  220-550-525 / 240-100-740-400 / 382-740-400
+    FGranery         amount  033-700                partners   3  362-740-090 / 792-999-158 / 820-002-137
+    FTrench I        amount  700-032                partners   3  018-336-740-400 / 118-156-400 / 220-550-526
+    FTrench VI       amount  032-700                partners   3  219-072-520 / 220-233-268-760-740 / 415-100-820-400
+    FTrench VI       amount  034-700                partners   3  415-578-032-824 / 416-861-002 / 799-840-714-740
+    ETrench 11       name    415-220-520            partners   5  003-645-032-590 / 032-700 / 110 / 415-220-520 / 575-869
+    ETrench 10W/11   name    027-032-740-400        partners   3  033-031-700 / 034-700 / 700-034
+    ETrench 11       name    740-400                partners   3  336-740 / 413 / 820
+    FTrench I        name    176-740-400            partners   3  032-700 / 033-700 / 034-700
+
+  non-amount faces with 3+ different partners anywhere at Harappa (copies once per trench):
+    name   415-220-520            partners   8 trenches  5 [P092 + P050 + P217]  003-645-032-590 / 032-700 / 034-700 / 090-700 / 110 / 415-220-520 / 575-869 / 700-034
+    thing  413-575-335-711-033-700 partners   6 trenches  8 [P099 + P289 + P308 + P319 + P147 + cup]  156-924-705-740-851 / 220-705-033-550-525-400 / 240-705-033-550-525-400 / 741-530-390-002-803-798-740 / 850-741-048-740 
+    thing  415-578-032-824        partners   5 trenches  4 [P092 + P290 + P145 + sign 824]  033-700 / 034-700 / 692-060-240-636-740 / 799-840-714-740 / 799-840-760-740
+    name   176-740-400            partners   5 trenches  6 [seated person with four ticks + jar + comb]  032-700 / 033-700 / 034-700 / 817-365-690 / 817-368-690-032-700
+    name   027-032-740-400        partners   5 trenches  2 [P141 + P145 + jar + comb]  033-031-700 / 033-700 / 034-700 / 687-690 / 700-034
+    name   617-892-740-400        partners   4 trenches  4 [sign 617 + P182 + jar + comb]  033-700 / 700-032 / 820-001-060-869 / 820-060-869
+    name   799-840-760-740        partners   4 trenches  3 [sign 799 + P349 + P332 + jar]  033-700 / 034-700 / 415-578-032-824 / 415-578-032-876
+    name   740-400                partners   4 trenches  2 [jar + comb]  034 / 336-740 / 413 / 820
+    thing  413-892-824            partners   4 trenches  5 [P099 + P182 + sign 824]  171-032-031-240-636-740-400 / 235-555-526 / 415-100-740 / 924-740
+    name   817-368-690            partners   3 trenches  3 [P385 + P202 + P255]  171-032-031-240-630-740 / 495-776-740-400 / 679-840-032-740
+    name   491-817-740-400        partners   3 trenches  3 [sign 491 + P385 + jar + comb]  032-700 / 033-700 / 034-700
+    name   681-690                partners   3 trenches  3 [sign 681 + P255]  014-032-740-400 / 059-032-740 / 255-072-520
+    name   255-435-156            partners   3 trenches  3 [P073 + P188 + porter with jars]  034-700 / 590 / 706-868
+    thing  590-705-868            partners   3 trenches  5 [P276 + big measure (U with stroke) + P388]  240-231-520-400 / 255-435-156-400 / 550-525-400-034-700
+    name   125-700                partners   3 trenches  2 [P035 + cup]  014-700 / 144 / 240-636-740-400
+    name   176-740                partners   3 trenches  2 [seated person with four ticks + jar]  032-700 / 033-700 / 034
+    name   137-400                partners   3 trenches  4 [P019 + comb]  033-700 / 688-797-740 / 700-033
+    name   240-520                partners   3 trenches  3 [P062 + P217]  033-700 / 034-700 / 700-033
+    thing  144                    partners   3 trenches  2 [P032]  014-700 / 033-700 / 125-700
+    thing  003-156                partners   3 trenches  2 [P123 + porter with jars]  003-861 / 033-700 / 034-700
+done
