@@ -36,6 +36,9 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `guess` READING: the jar is the possessive ending. `[name] jar` = "of [name]", the seal owner. `[name] jar man` = "[name]'s man", a servant or agent sealing for a master. The signs after the jar are a short list of things one can be to a master (man, comb-thing, 679, 621). Possessor before possessed, title after name, count before thing: a head-last language.
 - `guess` Round seals abroad write a bare personal name in a foreign formula, with the single stroke doing the job of the jar. They are Indus signs fitted to another language's way of saying "X, servant of Y".
 
+- `measured` 3 diamonds = 3 loads on 22 of 22 tablets; diamond, its second drawing and the wheel share one slot and go with nothing in the world. One cup stroke is about 9.2 litres on three measured pots; cup counts are 1, 2, 3, 4, 6 and never 5.
+- `guess` READING: the diamond is "hand", a head counted for work. The ration tablet reads: 3 hands, 3 loads, 4 cups (about 37 litres), a gang leader's chit handed in at the depot. The seal opener `diamond + two strokes` puts the same head-count word in front of a name.
+
 ## Live leads, in order
 
 1. Name slot. `guess` The slot right before the closing jar holds a house or family name. Next: build the list of pre-jar signs and pre-jar pairs with the houses they belong to; check whether one house keeps one pre-jar sign across depth (a family over generations); check the same slot before the other closing signs.
