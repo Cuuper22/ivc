@@ -1,0 +1,54 @@
+copper tablets 190 (sites Mohenjo-daro 189; Kalibangan 1); faces 230
+
+(1) heading strings and their 2-sign pieces on copper faces
+  whole heading faces on copper: 0
+  piece 415-220        on 4 copper faces: M-507 415-220-845-407; M-508 415-220-845-407; M-1456 415-220-845-407; M-1457 415-220-845-407
+  pieces with no copper face: 26 of 27
+
+(2) single signs of the headings on copper:
+  sign 032 Two adjacent full-height verti: copper faces 26; all faces 574
+  sign 033 Three adjacent full-height ver: copper faces 32; all faces 517
+  sign 034 Four adjacent full-height vert: copper faces 0; all faces 183
+  sign 220 Fish with no other decoration : copper faces 13; all faces 473
+  sign 335 M with the bottom of the legs : copper faces 0; all faces 43
+  sign 368 Vertical stroke with a triangu: copper faces 2; all faces 117
+  sign 413 Vertical line with small horiz: copper faces 0; all faces 56
+  sign 415 Pitchfork with tines          : copper faces 4; all faces 176
+  sign 520 Isocolese triangle on top of v: copper faces 11; all faces 317
+  sign 575 Trapezoid with no bottom line : copper faces 0; all faces 80
+  sign 578 Tall table. Underside has a ho: copper faces 0; all faces 5
+  sign 690 Two nested greater-than symbol: copper faces 10; all faces 118
+  sign 700 cup                           : copper faces 2; all faces 575
+  sign 711 U with X going from side to si: copper faces 0; all faces 21
+  sign 817 Diamond or leaf shape with a s: copper faces 0; all faces 220
+  sign 824 sign 824                      : copper faces 0; all faces 32
+  sign 892 Bow and arrow                 : copper faces 0; all faces 88
+
+(3) the picture-replacing signs 777 780 781 782 753 749 841 341 (and 957) across the corpus
+  777: faces 7; by (site, kind): ('Mohenjo-daro', 'ctab') 6; ('Harappa', 'seal') 1; Harappa 1: H-598 seal 777-255-435-002-240-639-740
+  780: faces 2; by (site, kind): ('Mohenjo-daro', 'ctab') 1; ('Mohenjo-daro', 'seal') 1; Harappa 0
+  781: faces 2; by (site, kind): ('Mohenjo-daro', 'ctab') 2; Harappa 0
+  782: faces 3; by (site, kind): ('Mohenjo-daro', 'ctab') 3; Harappa 0
+  753: faces 2; by (site, kind): ('Mohenjo-daro', 'ctab') 2; Harappa 0
+  749: faces 6; by (site, kind): ('Mohenjo-daro', 'ctab') 6; Harappa 0
+  841: faces 1; by (site, kind): ('Mohenjo-daro', 'ctab') 1; Harappa 0
+  341: faces 2; by (site, kind): ('Mohenjo-daro', 'ctab') 2; Harappa 0
+  957: faces 2; by (site, kind): ('Mohenjo-daro', 'ctab') 2; Harappa 0
+  picture-replacing signs inside a heading string: none
+  picture-replacing signs on a partner face of a heading tablet: none
+
+(4) the shape: does a name keep its heading, as a copper text keeps its picture?
+  pairs of heading issues with the same name: 10; same heading in 8; chance 2.61; P(>=) 0.0008
+  names per heading (distinct, issues with a name partner): 413-575 6; 413-892 10; 415-220-520 0; 817-368-690 6; 415-578 3
+  copper (from jobs/out/copper.md, rerun-able in work_scripts/copper_2_pairs.py): one text one picture, 21 of 21 pairs against 0.059 chance; 8 of 13 pictures cover 2+ text families
+  copper count faces: big measure on 20 (705) + 14 (706) of 58 against 6.4% of Harappa tablets; Harappa big measure sits under heading 413-575 (8 of 13 tablets) and nowhere else among headings
+
+(5) control: share of Harappa 2-sign pieces from tablet faces (length 3+) that occur on a copper face
+  Harappa tablet pairs seen 4+ times: 157; on copper 13.4%; heading pairs 18; on copper 5.6% (1)
+
+(6) the big-measure line: faces with 705/706 then 033 (three big measures), where they stand
+  faces with 705/706-033: 148; by (site, kind): ('Mohenjo-daro', 'seal') 64; ('Mohenjo-daro', 'ctab') 31; ('Harappa', 'seal') 22; ('Harappa', 'mtab') 12; ('Mohenjo-daro', 'mtab') 6; ('Dholavira', 'seal') 3; ('Chanhu-daro', 'seal') 3; ('Kalibangan', 'tag') 1
+  Harappa clay-tablet objects with a 705/706-033 face: 11; of them beside the 413-575 heading: 5
+  Harappa 705/706-033 tablet faces: 000-235-233-705-033-740-400; 000-235-705-033; 000-705-033-550-525; 220-705-033-550-525-400; 235-705-033; 235-705-033-176-740; 240-705-033-550-525-400; 817-002-832-235-705-033-520
+  copper 705/706-033 faces: 235-705-033-845-407-321-407; 705-033-923-740-001; 706-033-923-740; 706-033-923-740-001; 798-231-705-033-904-100-740; 806-235-233-705-033-585-407
+done

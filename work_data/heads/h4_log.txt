@@ -1,0 +1,61 @@
+heading issues with a name partner: 32; distinct names 23; families 4
+names under exactly one heading: 21 of 23 (91%); under 2+ headings: 2
+names under 2+ headings: observed 2, chance 6.11 (max 8); P(chance <= observed) 0.0018
+names on 2+ heading issues: 8; of these under one heading only 6, under several 2
+repeated names all under ONE heading: observed 6, chance 1.90; P(>=) 0.0023
+
+NAMES UNDER 2+ HEADINGS
+  name [176]
+      under 413-892      H-787    (none)         mound ?   bin undated  cups [3]  sig 033-700-176-740-400 | 413-892-824
+      under 817-368-690  H-1827   ETrench 54     mound E   bin early    cups [2]  sig 176-740-400 | 817-368-690-032-700
+      mounds ['E']; headings ['413-892', '817-368-690']
+  name [240-636]
+      under 413-892      H-2086   ETrench 54     mound E   bin early    cups []  sig 240-636-740 | 413-892
+      under 415-578      H-360    FTrench I      mound F   bin middle   cups []  sig 415-578-032-824 | 692-060-240-636-740
+      mounds ['E', 'F']; headings ['413-892', '415-578']
+
+NAMES REPEATED UNDER ONE HEADING (2+ issues)
+  [240-705-033-550-525-400] under 413-575: 2 issues; trenches ['ETrench 11', 'FTrench Ab']; mounds ['E', 'F']; cups [[3], [3]]
+  [851-741-048] under 413-575: 2 issues; trenches ['FTrench 37', 'FTrench I']; mounds ['F']; cups [[3], []]
+  [156-924-705] under 413-575: 2 issues; trenches ['ETTrench 27', 'ETrench 32']; mounds ['E', 'ET']; cups [[3], [3]]
+  [171-032-031-240-636] under 413-892: 3 issues; trenches ['FTrench I', 'FTrench IV+V', 'FTrench VI']; mounds ['F']; cups [[], [], []]
+  [799-840-760] under 415-578: 2 issues; trenches ['ETrench 11', 'ETrench 54']; mounds ['E']; cups [[3], [4]]
+  [679-840-032] under 817-368-690: 2 issues; trenches ['(none)', 'FTrench VI']; mounds ['F']; cups [[], []]
+
+WHERE ELSE THE HEADING NAMES STAND (all Harappa jar faces with that name; tablets of any kind)
+  [176] under headings ['413-892', '817-368-690']; Harappa objects with this name 51; trenches 14; mounds 5
+  [240-636] under headings ['413-892', '415-578']; Harappa objects with this name 7; trenches 3; mounds 2
+  [415-100] under headings ['413-892']; Harappa objects with this name 4; trenches 3; mounds 3
+  [679-840-032] under headings ['817-368-690']; Harappa objects with this name 3; trenches 2; mounds 1
+  [240-760] under headings ['817-368-690']; Harappa objects with this name 3; trenches 2; mounds 2
+  [171-032-031-240-636] under headings ['413-892']; Harappa objects with this name 3; trenches 3; mounds 1
+  [851-741-048] under headings ['413-575']; Harappa objects with this name 3; trenches 3; mounds 2
+  [799-840-760] under headings ['415-578']; Harappa objects with this name 3; trenches 3; mounds 1
+  [156-924-705] under headings ['413-575']; Harappa objects with this name 3; trenches 2; mounds 2
+  [924] under headings ['413-892']; Harappa objects with this name 1; trenches 1; mounds 1
+  [495-776] under headings ['817-368-690']; Harappa objects with this name 1; trenches 1; mounds 1
+  [141] under headings ['413-892']; Harappa objects with this name 1; trenches 1; mounds 0
+  [530-390-002-803-798] under headings ['413-575']; Harappa objects with this name 1; trenches 1; mounds 1
+  [799-840-714] under headings ['415-578']; Harappa objects with this name 1; trenches 1; mounds 1
+  [850-741-048] under headings ['413-575']; Harappa objects with this name 1; trenches 1; mounds 1
+  [000-165-032] under headings ['817-368-690']; Harappa objects with this name 1; trenches 1; mounds 1
+  [171-032-031-240-630] under headings ['817-368-690']; Harappa objects with this name 1; trenches 1; mounds 1
+  [220-705-033-550-525-400] under headings ['413-575']; Harappa objects with this name 0; trenches 0; mounds 0
+  [415-220-520] under headings ['413-892']; Harappa objects with this name 0; trenches 0; mounds 0
+  [171-032-031-240-000] under headings ['413-892']; Harappa objects with this name 0; trenches 0; mounds 0
+  [240-705-033-550-525-400] under headings ['413-575']; Harappa objects with this name 0; trenches 0; mounds 0
+  [235-555-526] under headings ['413-892']; Harappa objects with this name 0; trenches 0; mounds 0
+  [229-151] under headings ['413-892']; Harappa objects with this name 0; trenches 0; mounds 0
+
+heading names that stand on another Harappa object: 9 of 23
+
+TIE VIA NAMES: heading names that also stand before a jar on a seal (any city): 4 of 21; all Harappa tablet names 24.3% (46 of 189); exact binomial P(>= 4) 0.7891
+   176: seals -, H-352, H-354, H-56, M-1000, M-1195
+   240-636: seals M-228
+   415-100: seals M-1886, M-231, M-727, M-839, M-850, M-869
+   495-776: seals K-63
+   413-575     : 0 of 6 names on seals
+   413-892     : 3 of 9 names on seals
+   817-368-690 : 2 of 5 names on seals
+   415-578     : 1 of 3 names on seals
+done

@@ -1,0 +1,47 @@
+Harappa stones 1918; with 2+ faces 747; distinct issues 1656
+candidate face occurrences (not amount, not lost, no jar, no lost sign): 441 on 378 tablets, 253 distinct strings
+TIER A (exact string, >= 4 different partners): 4: 415-220-520, 413-892-824, 413-575-335-711-033-700, 415-578-032-824
+TIER B (family, >= 4 different partners): 5
+
+HEADING FAMILIES: 5 on 50 tablets (47 issues)
+  [413-575] faces 413-575-335-711 ; 413-575-335-711-033 ; 413-575-335-711-033-700
+      kind office line (jar only 4; name no jar 4; jar + other 3; thing 1; lost 1); shape PERSONAL PERSONAL; objects 13, issues 11, partners 7 (raw strings 7), trenches 11 (ETTrench 27 2; ETrench 11 2; FGranery 1; FTrench IV+V 1; FTrench Ab 1; FTrench I 1; ETrench 55 1; (none) 1; ETrench 10W/11 1; ETrench 32 1; FTrench 37 1); mounds F 5; E 5; ET 2;  1; bins middle 9; late 2; undated 2; moulded 13 incised 0
+  [413-892] faces 413-892 ; 413-892-824
+      kind office line (comb 5; name no jar 3; jar only 3; lost 2); shape PERSONAL PERSONAL; objects 13, issues 13, partners 9 (raw strings 9), trenches 7 ((none) 4; ETrench 54 4; FTrench I 1; FTrench VI 1; FTrench IV+V 1; AB- 1; ETrench 11 1); mounds E 5;  4; F 3; AB 1; bins middle 5; undated 4; early 4; moulded 5 incised 8
+  [415-220-520] faces 415-220-520
+      kind side face (thing 7; amount 5; name no jar 1); shape PERSONAL CREST CLOSER; objects 13, issues 13, partners 8 (raw strings 9), trenches 6 (ETrench 11 5; FTrench IV+V 2; (none) 2; FGranery 2; F- 1; D- 1); mounds F 5; E 5;  2; D 1; bins middle 7; undated 4; early 2; moulded 2 incised 11
+  [817-368-690] faces 817-368-690 ; 817-368-690-032-700 ; 817-368-690-034-700
+      kind office line (jar only 6; comb 2); shape OPEN SLOT AFTER_M; objects 8, issues 7, partners 5 (raw strings 5), trenches 6 ((none) 2; ETrench 54 2; D- 1; FTrench VI 1; FGranery 1; FTrench I 1); mounds F 3;  2; E 2; D 1; bins middle 4; undated 3; early 1; moulded 4 incised 4
+  [415-578] faces 415-578-032-824
+      kind office line (jar only 4; amount 3); shape PERSONAL MEASURE; objects 4, issues 4, partners 5 (raw strings 5), trenches 4 (FTrench I 1; FTrench VI 1; ETrench 54 1; ETrench 11 1); mounds F 2; E 2; bins middle 4; moulded 0 incised 4
+
+P2 moulded share: heading tablets 23/50 = 0.460; all Harappa 2+-face tablets 0.473
+  same trenches, same number: chance 27.1 moulded of 50; P(real >= chance) 0.9270; P(real <= chance) 0.1270
+  counting issues once: moulded 20/47 = 0.426
+
+P4 partner diversity: distinct partners per object, real vs partner faces dealt at random (4000 deals) among all 2-face Harappa tablets
+  heading face 413-575-335-711-033-700          tablets  10 distinct partners   6 chance   9.3 (P fewer 0.005)
+  heading face 413-892-824                      tablets  11 distinct partners   9 chance  10.2 (P fewer 0.209)
+  heading face 415-220-520                      tablets  14 distinct partners   9 chance  12.7 (P fewer 0.014)
+  heading face 817-368-690                      tablets   6 distinct partners   4 chance   5.8 (P fewer 0.031)
+  control jar-name faces: 2 repeated faces (8+ tablets): distinct partners 17 against chance 36.4; 1 of 2 individually below chance at P <= 0.05
+  control amount faces: 9 repeated faces (8+ tablets): distinct partners 320 against chance 288.2; 0 of 9 individually below chance at P <= 0.05
+
+per heading family: moulded count against tablets of the same trenches (4000 deals)
+  413-575            moulded 13 of 13; chance 8.2; P(more) 0.0002; P(fewer) 1.0000
+  413-892            moulded 5 of 13; chance 7.5; P(more) 0.9635; P(fewer) 0.1197
+  415-220-520        moulded 2 of 13; chance 5.6; P(more) 0.9963; P(fewer) 0.0280
+  415-578            moulded 0 of 4; chance 1.8; P(more) 1.0000; P(fewer) 0.0595
+  817-368-690        moulded 4 of 8; chance 4.7; P(more) 0.8195; P(fewer) 0.4339
+
+near misses: families with exactly 3 different partners (not headings by the rule)
+  [003-156] tablets 21 partners ['003-861', 'AMT:cup=3', 'AMT:cup=4']
+  [091-368] tablets 3 partners ['388-740-400', '388-740-400-033-700', 'AMT:cup=3']
+  [125-700] tablets 3 partners ['144', '240-636-740-400', 'AMT:cup=4']
+  [137-400] tablets 5 partners ['688-797-740', 'AMT:cup=3', 'AMT:cup=4']
+  [144] tablets 2 partners ['125-700', 'AMT:cup=3', 'AMT:cup=4']
+  [255-435-156] tablets 3 partners ['590', '705-868', 'AMT:cup=4']
+  [255-435-156-400] tablets 10 partners ['220-440-154-400', '590-705-868', 'AMT:cup=4']
+  [590-705-868] tablets 5 partners ['240-231-520-400', '255-435-156-400', '550-525-400-034-700']
+  [681-690] tablets 3 partners ['014-032-740-400', '059-032-740', '255-072-520']
+done
