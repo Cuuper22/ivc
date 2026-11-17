@@ -35,6 +35,10 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `measured` At home the man sign closes the text (65 of 86); on round seals abroad it opens it (last on 1 of 7).
 - `guess` The round seals abroad are written in another language with the opposite word order: home says [name] [man], abroad says [man] [name]. Home language puts the title after the name.
 
+- `measured` Two counting systems: full-height strokes count containers (cup, jar, box); short strokes count living things and produce (trees, fish, crop, women).
+- `measured` 22 Harappa tablets read `3 diamonds | 4 cups | 3 loads`, 4 cups to 3 loads in 21 of 22. The cup count follows the trench the tablet came from.
+- `guess` READING: the three-faced tablets are ration or pay records: three porters, three of the diamond thing, four cups of the measure. Different work sites issued different amounts. The cup is the ration measure; it never goes above four because five makes the next unit up.
+
 ## Live leads, in order
 
 1. Name slot. `guess` The slot right before the closing jar holds a house or family name. Next: build the list of pre-jar signs and pre-jar pairs with the houses they belong to; check whether one house keeps one pre-jar sign across depth (a family over generations); check the same slot before the other closing signs.
