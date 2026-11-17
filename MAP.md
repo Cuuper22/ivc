@@ -445,4 +445,12 @@ Bits per sign = how surprised the sign-order model is by the next sign on texts 
 - `measured` 850 does not split: two profiles do worse than one on held-out occurrences (-0.141 bits per occurrence); redesign (left context) ranks 21 of 21. One clean group exists (12 Mohenjo-daro copper tablets: counted thing, 850, place word) that does not help prediction.
 - All gains are small (at most 0.0015 bits per sign over all held-out texts; 0.0113 on new texts for 001). Control on 20 frequency-matched signs: running.
 
+## More seals from abroad, read off plates through a browser (from `jobs/out/gulf2.md`)
+- `measured` 14 new inscribed objects found outside the Indus region (Bahrain 5, Failaka 1, Iran 3, Mesopotamia 3, Yale unprovenanced 2); 12 have 2+ drawn signs. 5 more are probably seals we already hold, 4 maybes. Source: Vidale, Desset and Frenez 2021 Fig. 4 (reprint of Laursen 2010's plate) and Laursen 2010 Table 1.
+- `measured` Person sign 090/091 on 9 of the 12 new texts; matched home seals give 0.72 (P 0.00005). Strict count (only the 3 clear or author-named cases): 3 of 12 against 0.74 (P 0.034). Same direction as the earlier 12 of 16.
+- `measured` Order is stranger than at home: 15 steps in 6 new texts, sign-pair model 8.44 bits per step against 5.96 for matched home texts (P 0.007), frame v2 8.34 against 6.52 (P 0.0085). Pooled with the 21 earlier round seals (83 steps): +3.44 bits (sign pair) and +2.18 (frame v2), both P 0.0005. Which signs appear is not stranger (6.71 against 7.22); only their order is.
+- `measured` Stroke-then-person unit: one new case (Jalalabad, stroke group eroded), 6 becomes 7; no chance value. No known last sign is a jar or closer.
+- Went against / weak: 54 of 84 drawn signs unnamed (low-resolution plates); only conspicuous signs were named, so the 9 of 12 leans high; order test rests on few steps.
+- Blocked: Fuls corpus (sign-in wall), Parpola 1994, CISI 3, Kjaerum, Al-Sindi (not online). Next: re-key unnamed signs from a sharper plate into `work_data/gulf2/sequences.csv` (`signs_best`) and rerun `work_scripts/gulf2_01_checks.py`.
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.

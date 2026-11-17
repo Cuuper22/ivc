@@ -1,0 +1,56 @@
+[    0.1s] home pool
+[    1.2s] built 10 fold models on home texts (3437 distinct home texts, 704 usable signs)
+texts A 12 B 16
+G2-02 090-090-055-002-ALT
+G2-03 090-ALT-031-ALT-ALT
+G2-04 055-ALT-090-090-031
+G2-06 220-ALT-ALT-ALT-ALT-ALT-ALT
+G2-07 091-ALT-ALT-ALT
+G2-08 ALT-ALT-ALT-ALT-ALT
+G2-09 220-090-090-527
+G2-10 ALT-ALT-ALT-ALT-ALT-ALT-ALT
+G2-11 ALT-090-090-ALT
+G2-12 ALT-ALT-090-ALT-ALT
+G2-13 741-032-090-003-090
+G2-14 090-ALT-090-090-032
+A new: texts 12; with a person sign 9 (75%); matched-home expectation 0.72 (6%), 95% range [0,3], P(home draw >= real) 0.0002; person tokens 16 of 61 drawn signs (26%); home matched person share 1.1%; identified tokens 28 of 61; all home seal texts of 2+ signs with a person sign 4.5%
+B new+maybe: texts 16; with a person sign 10 (62%); matched-home expectation 0.99 (6%), 95% range [0,3], P(home draw >= real) 0.0002; person tokens 17 of 84 drawn signs (20%); home matched person share 1.2%; identified tokens 30 of 84; all home seal texts of 2+ signs with a person sign 4.5%
+A texts with >=1 step 6 steps 15
+  unigram    real 6.71 control 7.22 [6.27,8.37] diff -0.51 P(real higher) 0.8301
+  sign pair  real 8.44 control 5.96 [4.29,7.94] diff +2.47 P(real higher) 0.0070
+  frame v2   real 8.34 control 6.52 [5.21,8.00] diff +1.82 P(real higher) 0.0085
+  mix        real 7.96 control 5.90 [4.49,7.55] diff +2.06 P(real higher) 0.0095
+  pooled with old round seals: texts 27 steps 83
+  unigram    real 7.97 control 7.23 [6.81,7.67] diff +0.74 P 0.0015
+  sign pair  real 9.29 control 5.86 [5.11,6.69] diff +3.44 P 0.0005
+  frame v2   real 8.84 control 6.66 [6.05,7.29] diff +2.18 P 0.0005
+B texts with >=1 step 6 steps 15
+  unigram    real 6.71 control 7.22 [6.27,8.37] diff -0.51 P(real higher) 0.8301
+  sign pair  real 8.44 control 5.96 [4.29,7.94] diff +2.47 P(real higher) 0.0070
+  frame v2   real 8.34 control 6.52 [5.21,8.00] diff +1.82 P(real higher) 0.0085
+  mix        real 7.96 control 5.90 [4.49,7.55] diff +2.06 P(real higher) 0.0095
+  pooled with old round seals: texts 27 steps 83
+  unigram    real 7.97 control 7.23 [6.81,7.67] diff +0.74 P 0.0015
+  sign pair  real 9.29 control 5.86 [5.11,6.69] diff +3.44 P 0.0005
+  frame v2   real 8.84 control 6.66 [6.05,7.29] diff +2.18 P 0.0005
+job classes (frame v2):
+G2-02 090:TITLE 090:TITLE 055:PERSONAL 002:SLOT ALT:-
+G2-03 090:TITLE ALT:- 031:NUM_TALL ALT:- ALT:-
+G2-04 055:PERSONAL ALT:- 090:TITLE 090:TITLE 031:NUM_TALL
+G2-06 220:CREST ALT:- ALT:- ALT:- ALT:- ALT:- ALT:-
+G2-07 091:OPEN ALT:- ALT:- ALT:-
+G2-08 ALT:- ALT:- ALT:- ALT:- ALT:-
+G2-09 220:CREST 090:TITLE 090:TITLE 527:TITLE
+G2-10 ALT:- ALT:- ALT:- ALT:- ALT:- ALT:- ALT:-
+G2-11 ALT:- 090:TITLE 090:TITLE ALT:-
+G2-12 ALT:- ALT:- 090:TITLE ALT:- ALT:-
+G2-13 741:SLOT 032:NUM_NAME 090:TITLE 003:NUM_SHORT 090:TITLE
+G2-14 090:TITLE ALT:- 090:TITLE 090:TITLE 032:NUM_NAME
+G2-M1 ALT:- ALT:- ALT:- ALT:- ALT:- ALT:-
+G2-M2 ALT:- ALT:- ALT:- ALT:-
+G2-M3 ALT:- ALT:- ALT:- ALT:- ALT:- ALT:-
+G2-M4 090:TITLE ALT:- 002:SLOT ALT:- ALT:- ALT:- ALT:-
+known last signs ['031', '527', '090', '032'] classes ['NUM_TALL', 'TITLE', 'TITLE', 'NUM_NAME']
+known first signs ['090', '090', '055', '220', '091', '220', '741', '090']
+jar 740/741/700 anywhere in set A: [('G2-13', '741')]
+short stroke directly before a person sign: ['G2-13']
