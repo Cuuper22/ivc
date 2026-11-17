@@ -57,6 +57,7 @@ UPD = {  # sign: (sound, English, tier, basis, note)
 }
 for s, (snd, en, t, b, note) in UPD.items():
     V5[s] = (snd, en); TIER5[s] = t; NOTE5[s] = (NOTE5.get(s, '') + ' | ' if s in NOTE4 else '') + note; BASIS5[s] = b
+V5['390'] = ('parutti', 'cotton (cotton_house.md; base value)')
 STRICT5 = dict(TIER5)
 for s, b in BASIS5.items():
     if b == 'seen' and TIER5[s] == 'building': STRICT5[s] = 'testing'

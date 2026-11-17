@@ -170,4 +170,13 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `measured` Seeded draw of 40 whole faces read by eye: 25 sense, 13 odd, 2 nonsense. Odd ones are mostly number or measure words inside house names. Signs blamed: 904, 900, 824, 840, 055, 690, 806, 501, 368, keeper counts, 861, and 060 away from an opener.
 - Open: multi-face tablets are read face by face, not as one record; some counts attach to the wrong neighbour.
 
+## Fifth pass: next signs, grammar (from `jobs/out/sound_list_v5.md`)
+- `measured` Fully read complete faces: strict 1,825 of 3,600 (909 distinct texts; seals 682 of 1,540, goods objects 1,143 of 2,060), wide 2,004. Was strict 1,418 / wide 1,861. New-text lines: strict 213 of 627, wide 250. 8 of the 13 wide-only values moved to strict on predictions all written before any was computed.
+- `measured` 923: 11 of 12 of its copper tablets show the elephant on the picture side against 14% of pictured copper tablets (P 6e-9); the horned-animal prediction got 0 of 12. `guess` 923 = *maruppu* "tusk, ivory" (DEDR 4720); `706-033-923-740` on seven copper tablets = "three kalam of ivory: of the house".
+- `measured` 692 seals are 1.45 times bigger at equal length (42 seals). 711 takes tall counts 15 to 0. 370/371 share a face with a cotton/thread sign 12 of 24 against 9%. 060: the sign two places after is a fish crest 30 of 205 against 5.8%.
+- `guess` New words: 692 *kūṭṭam* "assembly"; 711 *vaḷḷam* "grain measure"; 370/371 *katir* "spindle"; 838 *viḷai* "produce" (third reading, beside sesame); 491/495 *kompu* horn; 565 *maṟavaṉ* warrior; 850 *kāṇi* share; 868 half-share; 519 *vēli* hedge; 405 *nūl* thread (wide).
+- `measured` Went against: 407 as cloth, twice (5 of 20 against 52%; 16 of 46 against 45%); now testing as *kiḷai* "kindred". 048: three tries missed. 167 paused.
+- `measured` Grammar: after the jar comes a person/title word or the end in 539 of 584 uses; "child of" is not text-first 91 of 93; things take the number before them 450 to 220; measure and share words take it after 315 to 49 (Old Tamil account order: thing, measure, count); 74% of fully read texts of 3+ signs end in a title, the jar or a verb word. No plural ending, no "and", no separate "for" ending found. Went against: modifier before head inside star names (25 to 22); verbs at the end of account lines (12 of 45).
+- `guess` Rivals alive: 692 assembly / district; 711 grain measure / pot; 060 "of" / "in"; 838 produce / sesame.
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.

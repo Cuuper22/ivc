@@ -26,6 +26,9 @@ def obj_numbers(cat):
         for (a, b, v, ser) in runs(t):
             if v is None: continue
             left = t[a - 1] if a > 0 else 'START'; right = t[b] if b < len(t) else 'END'
+            # the opener formula "817/861/820 + two strokes" keeps its own two: split it off a longer run
+            if left in ('817', '861', '820') and b - a > 1 and t[a] == '002':
+                v -= 2
             # pick the owner: a unit sign if one is adjacent, else the right-hand sign (count-first default)
             if right in UNITS: own, side = right, 'n X'
             elif left in UNITS: own, side = left, 'X n'
@@ -36,7 +39,7 @@ def obj_numbers(cat):
 
 objs_n = {}
 objs_n.update(obj_numbers('L')); objs_n.update(obj_numbers('Mu'))
-multi = {k: v for k, v in objs_n.items() if len(v) >= 2 and k[0] not in ('-', '')}
+multi = {k: v for k, v in objs_n.items() if len(v) >= 2 and k[0] not in ('-', '', None)}
 print('objects with 2+ numbers:', len(multi), ' with 3+:', sum(len(v) >= 3 for v in multi.values()))
 
 def sum_hit(vals):

@@ -1,0 +1,95 @@
+#!/usr/bin/env python3
+"""Writes jobs/out/sound_list_v5.md from the fifth-pass tables (work_data/sound_v5/).  Narrative numbers were copied
+from the script outputs; the tables are generated from the CSVs.  Run last."""
+import pandas as pd
+ROOT = '/home/claude/ivc'; O = f'{ROOT}/work_data/sound_v5'
+v = pd.read_csv(f'{O}/values_v5.csv', dtype=str).fillna('')
+cov = pd.read_csv(f'{O}/coverage_v5.csv')
+j1 = pd.read_csv(f'{O}/job1_tests.csv'); j1b = pd.read_csv(f'{O}/job1b_tests.csv')
+j2 = pd.read_csv(f'{O}/job2_tests.csv'); j2b = pd.read_csv(f'{O}/job2b_tests.csv')
+g1 = pd.read_csv(f'{O}/job3_grammar.csv'); g2 = pd.read_csv(f'{O}/job3b_grammar.csv')
+gain = pd.read_csv(f'{O}/gains_v4wide.csv', dtype=str)
+SH = pd.read_csv(f'{ROOT}/work_data/sign_shapes.csv', dtype=str).set_index('lipi_wells_number').shape_description.to_dict()
+L = []; A = L.append
+def c(lst, grp):
+    r = cov[(cov.list == lst) & (cov.group == grp)].iloc[0]; return int(r.faces), int(r.of_faces), int(r.distinct)
+A('# Sound list, fifth version: wide made strict, the next 25 signs, and the grammar\n')
+A('Scripts (in `work_scripts/`, run in this order): `sound_v5_common.py` (fourth-pass kit plus the new fact kinds: sign two places away, reverse face, copper-tablet image, Harappa period), `sound_v5_job1.py` and `sound_v5_job1b.py` (job 1, two rounds), `sound_v5_link.py` (the tree-sign link), `sound_v5_job2.py` and `sound_v5_job2b.py` (job 2 and its new words), `sound_v5_values.py` (the list and the counts), `sound_v5_job3.py` and `sound_v5_job3b.py` (grammar), `sound_v5_cands.py`, `sound_v5_readings.py` (READINGS 101-120), `sound_v5_report.py` (this file). Tables: `work_data/sound_v5/`.\n')
+A('Plain words used below:')
+A('- **Reads whole** (start to finish): every sign on the face is a number, a base value or a value we are building on. Counted on the 3,600 complete faces of the first catalogue (Lipi); "distinct texts" counts each different sign string once.')
+A('- **Strict** count: a value counts only if the fact that came true had NOT been printed while the word was being chosen. **Wide** count: also counts values whose fact had been glimpsed in the sign profiles while choosing.')
+A('- **Fresh / seen**: fresh = a kind of fact not printed for that sign before the prediction; seen = a kind that was.')
+A('- **New texts**: the second catalogue (Mahadevan 1977) texts with no partner in the first catalogue; never used to choose a value.')
+A('- **Building on / testing / paused**: building on = a prediction for the word came true and we read with it; testing = none has yet; paused = three different words failed.')
+A('- **P** = how often chance alone gives a result at least this strong. Small P means the reading is pointed to; P near 1 means the data points the other way. "yes" = right direction with P at or under 0.1; "direction only" = right direction, P above 0.1.')
+A('- **Two places away**: the sign standing two positions after (or before) the sign in reading order, with the start and end of the text counted as positions.')
+A('- **Reverse face**: on an object with two or more inscribed faces, what is written on the other face(s).')
+A('- **Frames**: the pair (sign on the left, sign on the right) around a sign in a distinct text. Two signs that share frames more than signs of the same frequency do are standing in for each other.')
+A('- **Gain** of a sign: complete faces that would read whole if this sign alone got a built-on value (counted, not guessed).')
+A('- **DEDR** = Burrow and Emeneau, Dravidian Etymological Dictionary (local copy), entry number. **Tamil Lexicon** = University of Madras Tamil Lexicon, read on dsal.uchicago.edu.\n')
+s4, s5, w4, w5 = c('fourth list, strict', 'all'), c('fifth list, strict', 'all'), c('fourth list, wide', 'all'), c('fifth list, wide', 'all')
+A('## 1. What was found\n')
+A(f'1. **Fully read faces: strict {s5[0]} of 3,600 (was {s4[0]}), wide {w5[0]} (was {w4[0]}).** Distinct texts: strict {s5[2]} (was {s4[2]}), wide {w5[2]} (was {w4[2]}) of 2,162. '
+  f'Seals: strict {c("fifth list, strict","seals")[0]} of 1,540 (was {c("fourth list, strict","seals")[0]}), wide {c("fifth list, wide","seals")[0]} (was {c("fourth list, wide","seals")[0]}). '
+  f'Goods objects: strict {c("fifth list, strict","goods")[0]} of 2,060 (was {c("fourth list, strict","goods")[0]}), wide {c("fifth list, wide","goods")[0]} (was {c("fourth list, wide","goods")[0]}). '
+  f'New texts read whole: strict {c("fifth list, strict","new texts all")[0]} of 627 complete lines (was {c("fourth list, strict","new texts all")[0]}), wide {c("fifth list, wide","new texts all")[0]} (was {c("fourth list, wide","new texts all")[0]}); '
+  f'new-text seals {c("fifth list, strict","new texts seals")[0]} / {c("fifth list, wide","new texts seals")[0]} of 346, goods {c("fifth list, strict","new texts goods")[0]} / {c("fifth list, wide","new texts goods")[0]} of 281 (strict / wide). '
+  f'The strict count rose by {s5[0] - s4[0]} faces; the gap between strict and wide shrank from {w4[0] - s4[0]} faces to {w5[0] - s5[0]}. Half of all complete faces now read whole on the strict count alone.')
+A('2. **8 of the 13 wide-only values are now strict.** Each got one new prediction on a kind of fact never printed for it, all 13 written into `sound_v5_job1.py` before any was computed: 4 came true (233, 060, 435, 388). The 9 misses got one redesigned test each, again all written before running (`sound_v5_job1b.py`): 4 more came true (240, 097, 923, 104). The five still wide-only: 382, 790, 550, 877, 831.')
+A('3. **Sign 923 is ivory: *maruppu* "tusk".** The crescent-horn reading predicted horned beasts on the copper tablets that carry it: 0 of 12 (against). DEDR 4720 *maruppu* is "horn of a beast, elephant\'s tusk, horns of the crescent moon"; the tusk sense predicts the elephant on the image side: 11 of 12 copper tablets with 923 show the elephant, against 14% of copper tablets with an image (P 6e-9). The seven copper tablets `706-033-923-740` now read "three kalam of ivory: of the house", an ivory account stamped with the elephant. This is the web paying: *kalam* the measure (job 1 of the fourth pass) and the tusk meet on one object type nobody was looking at.')
+A('4. **The joiner 060 links an opener to a name.** Fresh: the sign two places after 060 is a fish crest 30 of 205 times against 5.8% (P 3e-6): `[month / assembly / gate]-060-[ward]-[crest] ...`. The opener stands before it 137 of 188 times (73%; the eight-signs job got the same 73%).')
+A('5. **The office sign 692 marks big seals: x1.45 at equal length (42 seals, P 8e-6), fresh.** Read *kūṭṭam* "assembly, council" (DEDR 1882): the outline X as joined bars. Openings `692-060-...` now read "of the Assembly: ...". The eight-signs job reads 692 as *nāṭu* "district" (DEDR 3638) on its own test (never followed by a ward jar, 0 of 42); both stay alive. The split: a district word should not make a seal bigger, an assembly office should; the seal size is the number for *kūṭṭam*.')
+A('6. **The spindle: 370/371 read *katir* "spindle" (Tamil Lexicon p. 712, sense 6), and stand with cotton.** The picture is a shaft through a ring: a spindle with its whorl. Prediction, fresh: faces with 370/371 carry a fibre sign (390, 405, 406, 407) on 12 of 24 against 9% (P 3e-7). Two Farmana seals and a Mohenjo-daro tablet read `371-390` / `370-390` *katir parutti* "spindle: cotton". This ties the cotton reading of 390 (cotton-house report) to a second, independent sign.')
+A('7. **The second catalogue\'s merges are word links.** Where Mahadevan draws two Lipi signs as one, the Lipi variant took the main sign\'s word, and each one stood in the main sign\'s frames: 525 and 526 as the guard 527 (frames P 0.035 and 0.017; neither ever takes the jar, 0 of 11 and 0 of 13 against 33%); 838 as produce 806 (11 shared frames against 2, P 0.041); 491 as 495 the banded horn (P 0.05 and 0.07); 161 as the carriers (7 against 2, P 0.029). Read: 838 is *viḷai* "produce" (not sesame), 525/526 *kāval* "guard", 491/495 *kompu* "horn", 161 *kā* "keeper".')
+A('8. **Two counting orders, measured on the read texts.** Things take the number before them (450 to 220, 67%); measure and share words take it after (315 to 49, 87%): "three chests", but *kāṇi iru* "shares two" and *kalam mū* "kalam three". That is the Old Tamil account order (thing, measure, count).')
+A('9. **The grain-ration line reads whole on 13 faces**: `413-575-335-711-033-700` *nel kōṭṭai ūr vaḷḷam mū nāḻi* (10 copies) and its variants, now that 711 *vaḷḷam* came true fresh (counts after it are tall strokes 15 to 0, P 1e-5).')
+A('10. **Possessor before possessed, title last.** *maka* "child of" is not text-first in 91 of 93 texts; the jar is not first in 1,122 of 1,132; 730 of 993 read texts of 3+ signs end in a closing title, the jar or a verb word (74%).\n')
+A('What it opens: the ivory account (elephant copper tablets) as a commodity class beside cotton and grain; the merge rule as a cheap way to give words to every Lipi variant Mahadevan folds into a valued sign; the Assembly openings as an institution to map by site.\n')
+A('## 2. Job 1: wide into strict\n')
+A('All 13 predictions were written in one go into `sound_v5_job1.py` before any was computed, and no sign profile was printed first. Round two (`sound_v5_job1b.py`) redesigned the test for the 9 misses, again all written before running.\n')
+A('| round | sign | word | kind of fact | prediction | outcome | number | P |'); A('|---|---|---|---|---|---|---|---|')
+for nm, df in [('1', j1), ('2', j1b)]:
+    for r in df.itertuples(): A(f'| {nm} | {r.sign:03d} | *{r.word}* | {r.kind} | {r.prediction} | {r.outcome} | {r.result} | {r.p:.2g} |')
+A('\nMoved to strict: 233, 060, 435, 388 (round one), 240, 097, 923, 104 (round two). 923 changed meaning on the way: horn went against (0 of 12), tusk came true (11 of 12). 104 at P 0.048 rests on 14 Mohenjo-daro objects, 13 of them in the DK area where the jewellery hoards were dug.\n')
+A('## 3. Job 2: the next 25 signs\n')
+A('Ranking: `work_data/sound_v5/gains_v4wide.csv` (faces each sign alone keeps from reading, under the fourth wide list). Top 25 after the signs already done: 407 (48 faces), 692 (18), 165 (15), 645 (15), 167 (14), 711 (13), 236 (12), 048 (12), 832 (11), 526, 868, 222 (10 each), 161, 495, 460, 838, 525, 491, 370 (9 each), 565, 519, 850, 347 (8 each), 821, 792 (7 each); plus 405 for the thread reading.\n')
+A('Order kept for each: picture (shape table and the second catalogue\'s glyph drawing) and slot (first / middle / last share) printed, nothing else; word chosen; predictions A and B written into `sound_v5_job2.py`; run; on a double miss one new word C written into `sound_v5_job2b.py` and run.\n')
+A('**The links built for 407 and 048.** The crosswalk maps Lipi 405, 406 and 407 all to one second-catalogue sign (M169, a stalk with side branches; the 390 tree is M162, a trident). On the 92 partnered texts a rule learned from the signs around the tree splits 405 from 407 no better than always guessing 405 (55 of 102 right with what follows, 59 with the object kind, against 50 for always-405): the second catalogue\'s tree carries no trace of the split, so on the new texts M169 was tested as one tree family. 048, the bracketed seven, maps to M113, which occurs on no new text (the plain seven M112 does, 15 times); 048 was tested on first-catalogue facts never printed for it.\n')
+A('| stage | sign | word | prediction | outcome | number | P | fact |'); A('|---|---|---|---|---|---|---|---|')
+for df in (j2, j2b):
+    for r in df.itertuples(): A(f'| {r.stage} | {r.sign:03d} | *{r.word}* | {r.prediction} | {r.outcome} | {r.result} | {r.p:.2g} | {r.fresh} |')
+A('\n**405 and 407 as thread and cloth.** Thread *nūl* (405) came true on the new texts: the tree family has a count of 3 or more right before it on 6 of 48 uses against 3.2% (P 0.004; the lot-count kind had been printed for 405 in the cotton job, so this is wide only). Cloth *tuṇi* (407) went against twice: the other face of its tablets carries an amount on 5 of 20 against 52%, and on the new texts the tree family sits on goods objects 16 of 46 against 45%. 407 stays testing under *kiḷai* "kindred" (its names end in the house ending 4 of 4 on new-text seals, P 0.36).\n')
+A('## 4. The whole list\n')
+nb = v[v.tier_v5 != 'base']
+A(f'{(nb.tier_v5 == "building").sum()} building on, {(nb.tier_v5 == "testing").sum()} testing, {(nb.tier_v5 == "paused").sum()} paused ({len(nb)} values beyond the base set). Strict: {(nb.strict_v5 == "building").sum()} / {(nb.strict_v5 == "testing").sum()} / {(nb.strict_v5 == "paused").sum()}. Still wide-only: {", ".join(nb[(nb.tier_v5 == "building") & (nb.strict_v5 != "building")].sign)}. Base values (numbers, jar, man, fish, spear, comb, carriers, staff-bearer, tree, elder, cup, load comb) are listed at the end.\n')
+for t, title in [('building', 'Building on'), ('testing', 'Testing'), ('paused', 'Paused')]:
+    A(f'### {title}\n'); A('| sign | picture | sound | English | strict | v4 | evidence |'); A('|---|---|---|---|---|---|---|')
+    for r in nb[nb.tier_v5 == t].itertuples():
+        A(f'| {r.sign} | {str(SH.get(r.sign, ""))[:60]} | *{r.sound}* | {r.english} | {r.strict_v5} | {r.tier_v4} | {r.note[-260:]} |')
+    A('')
+A('### Base values\n'); A(', '.join(f'{r.sign} *{r.sound}* "{r.english}"' for r in v[v.tier_v5 == 'base'].itertuples()) + '\n')
+A('## 5. The grammar sketch\n')
+A('Predictions written into `sound_v5_job3.py` before the numbers; the redesigns (a null means the test was wrong) in `sound_v5_job3b.py`, also written before running. Test bed: 1,224 distinct texts that read whole under the fifth wide list (both catalogues); scans over all 2,885 distinct texts.\n')
+A('| claim | prediction | outcome | number | what it means |'); A('|---|---|---|---|---|')
+for df in (g1, g2):
+    for r in df.itertuples(): A(f'| {r.claim} | {r.prediction} | {r.outcome} | {r.number} | {r.meaning} |')
+A('\nThe sketch, as we build on it:\n')
+A('- **Possessive.** The jar *kuṭi* closes a name; what follows it is a person or class word or nothing: 539 of 584 jar uses (92%). Of the 45 others the commonest is the seat 679 *kaṭṭil* (10): "of X\'s house, the seat-holder". Numbers stand before the jar 40 times: inside names numbers are spelled words (star-names job), so "Pair-two house" is a name, not a count.')
+A('- **Joiner 060.** Opener + 060 + noun: opener before it 73%, noun after it 149 of 188. Read *-iṉ* "of" here, *uḷ* "in" in the eight-signs job; the 34 cases with a number after 060 do not favour the month opener (4 of 34 against 52 of 146), so the "in the month, n" date reading is not what they are. Both readings stay alive.')
+A('- **No dative suffix found; the issuing closer is a person word.** No sign closes names in the jar\'s place while never meeting the jar. Dropping that condition: the comb 400 *ciṟ* "junior hand" closes 27 names on objects that are 72% goods, the carrier 158 *kā* 7 (68%), against the jar\'s 34%. An issue tablet names the house and then the hand who took the goods: "of X\'s house, junior hand". The "for X" sense sits in that closing title.')
+A('- **No plural suffix.** On goods objects only one sign follows counted nouns three times as often as uncounted ones, and on 6 uses (415). The number alone makes the plural, as Dravidian does with non-human nouns. (The first scan listed name signs; those were spelled numbers inside names.)')
+A('- **No "and".** Only the comb repeats after two nouns inside one text (4 texts): two persons, each "junior hand". Lists are written by juxtaposition.')
+A('- **Two counting orders**: count + thing (67%), measure/share + count (87%).')
+A('- **Possessor first**: *maka* after its owner, jar never opening.')
+A('- **Head-last ending**: 74% of read texts end in a title, the jar or a verb word.\n')
+A('## 6. What went against, and the rescue tried\n')
+A('- **Five values stay wide-only.** 382 *aracu*: jar two places after 2 of 15, seals x1.15 on 6 (both direction). 790 *maṇi*: a number two places away 2 of 76 against 11%; Harappa mound E 4 of 21 against 25%. 550 *vāy*: closing sign two places after 49 of 96 against 52%; seals x0.91. 877 *nālkāṇi*: fish crest two places after 0 of 22; seals x0.93. 831 *tiṉai*: reverse face 2 of 4; Harappa Period 3C dating too few. Next for each: the copper-tablet image and the stand pattern on unicorn seals, the two fact kinds not yet used on them.')
+A('- **Cloth 407**: both cloth predictions went against (5 of 20; 16 of 46). Rescue: *kiḷai* "kindred", direction only (4 of 4, P 0.36). Testing.')
+A('- **The 405/407 link**: no rule built from the texts splits M169 (55 of 102 against 50). The split has to come from the drawings: Lipi\'s own sign pictures or photographs of the M169 objects.')
+A('- **048**: man two places after 0 of 17; trade words 0 of 18; rescue *kōvai* "string of seven" frames 1 against 0 (direction). Testing; it is on no new text.')
+A('- **165, 645, 167, 236, 222, 460, 821, 792, 832**: two predictions and one new word each without a yes. 167 is paused (third word failed: *poli*, *kā*, *tūkku*; number two places before 0 of 14). 236 counts with short strokes 7 to 0, so it is not a container: the crest reading (*vēymīn*, frames of 235 5 against 3) is the one alive. 645 has a rival from the eight-signs job (*kuṟi* "mark, tally", count before it 10 of 22).')
+A('- **Grammar against**: modifier before head inside star names did not hold (marker then plain fish 25, plain fish then marker 22; first version 130 against 160). Star names compound in both orders, read as two stars side by side. Verbs at the end of account lines did not hold: given/sale/received/price stand last 12 of 45 against 28% for any goods sign; last or right before the closing hand 20 of 49 (41%). Next: read 892 and 440 as nouns ("sale", "purchase") heading the line, and test the line-initial slot.')
+A('- **Rivals with the eight-signs job** (both stay alive, split named): 692 *kūṭṭam* against *nāṭu* (seal size against ward jars), 525-527 *kāval* "guard" against *katavu* "door" (both agree the three drawings are one sign), 711 *vaḷḷam* against *pāṉai* (both a measure vessel with tall counts), 060 *-iṉ* against *uḷ*.')
+A('- **Smaller misses inside signs that came true**: 692 sites 6 against 8; 405 reverse face 2 of 7; 838 a number two places before 0 of 9; 565 takes the jar 10 of 18 (more, not less); 491/495 horned non-unicorn beasts 2 of 19; 161 jar 4 of 15 (direction).')
+open(f'{ROOT}/jobs/out/sound_list_v5.md', 'w').write('\n'.join(L) + '\n')
+print('wrote jobs/out/sound_list_v5.md', len(L), 'lines')

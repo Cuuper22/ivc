@@ -1,1 +1,9 @@
-
+claim,prediction,number,outcome,meaning
+G1b,half of the other signs after the jar are title/person words,"5 of 45 (11%); commonest: [('679', 10), ('001', 5), ('565', 4), ('032', 2), ('061', 2), ('790', 2), ('820', 2), ('031', 1)]",no,"jar + title = ""of X's house, the [title]"": a second title in the man's place"
+G2b,month opener before 060 more often when a number follows,"month before 060 when a number follows 4/34 (12%) against 52/146 (36%) when a noun follows, P 1; openers before 060+number [('692', 4), ('920', 4), ('820', 4), ('550', 3)]",no,"060 + number after the month is a date: ""in the month, n"" (uḷ ""in""), and 060 + noun after gate/district is an address"
+G3b,a name-closing sign on goods objects at 2x the jar share,"jar goods share 34%; candidates (sign, sound, texts ending name+sign, goods share): [('400', 'ciṟ', 27, np.float64(0.72)), ('158', 'kā', 7, np.float64(0.68)), ('700', 'nāḻi?', 6, np.float64(0.83))]",yes,"the closing sign of issue tablets after a name: ""for/by X"" read as the agent or recipient ending"
+G4b,no plural suffix on counted goods nouns,"after counted goods nouns 150, uncounted 972; 3x+ signs: [('415', 6, 3)]",no,"empty list = the number alone makes the plural, as Dravidian does with non-human nouns"
+G6b,things: number before 70%+; measures/shares: number after 70%+,"things: before 450, after 220 (67% before); measures and shares: before 49, after 315 (87% after)",no,"count + thing, but measure/share + count: ""kāṇi iru"" two shares, ""kalam mū"" three kalam, the order Old Tamil uses for measures"
+G7b,"maka not first 97%+, jar not first 99%+",maka not first 91 of 93 (97.8%); jar not first 1122 of 1132 (99.1%),yes,possessor before possessed
+G8b,markers before the plain fish in names 70%+,marker then plain fish 25; plain fish then marker 22 (53% before),no,"modifier before head inside names: ""Branch-Star"", ""Descendant-Star"""
+G9b,verbs last or right before a closing person sign 60%+,"20 of 49 (41%); by sign {'440': 4, '824': 6, '892': 9, '890': 1}",no,"verb + agent: ""sold, junior hand""; the act stands at the end of the goods phrase"

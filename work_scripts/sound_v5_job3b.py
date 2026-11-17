@@ -15,7 +15,7 @@ G8b inside names (seal texts closing with the jar), crest/marker signs stand bef
 G9b verbs: given/sale/received/price stand last or right before a closing person sign (comb, carrier, man) in 60%+ of uses
     on goods faces (the act, then who did it: "sale, junior hand")."""
 from sound_v5_job3 import *
-rows = []
+rows.clear()
 TITLE = {'525', '526', '527', '842', '565', '161', '255', '095', '617', '104', '140'}
 oth = collections.Counter()
 for x in R:

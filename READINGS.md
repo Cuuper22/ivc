@@ -800,3 +800,168 @@ Added 2026-11-17 by the star-names job (`jobs/out/star_names.md`, scripts `work_
 - Signs: `861-002-032-226`
 - Sound: *kāṇi iru iru-mīn*
 - Word by word: `861-002` kāṇi iru "opening formula" · `032-226` iru-mīn "the Dark-star" written with the caged fish, which room-mates use in place of the plain fish (two Mohenjo-daro rooms)
+
+## Twenty more: texts that read whole for the first time in the fifth pass
+
+Added by `work_scripts/sound_v5_readings.py` (fifth list: `jobs/out/sound_list_v5.md`). None of these texts read start to finish before this pass. New words they rest on: kalai "stag" (347), araikkāṇi "half-share" (868), kompu "horn" (491/495), katir "spindle" (370/371), maṟavaṉ "warrior" (565), kāval "guard" (525/526, variants of 527), kūṭṭam "assembly" (692), vēli "hedge" (519), kā "keeper" (161), viḷai "produce" (838, the second catalogue draws it as 806), maruppu "tusk, ivory" (923), vaḷḷam "grain measure" (711). Cotton 390 is read *parutti* (cotton house report). A double dagger (‡) marks a word whose prediction came true on a fact seen while choosing; a dagger (†) a word under test. Reading order = stored order reversed. "New text" = second catalogue (Mahadevan 1977) text with no partner in the first catalogue, never used to choose a value.
+
+## 101. The Stag of the first ward: agent of the Tax house. A tablet in 8 copies.
+
+- Object: H-2024; 8 objects carry this exact text (TAB:B Clay 6, TAB:B Faience 2)
+- Site and findspot: Harappa (ETrench 11) x7, Harappa (ETrench 10W/11) x1
+- Signs: `347-741-176-740-090`
+- Sound: *kalai orukuṭi iṟai kuṭi āḷ*
+- Word by word: `347` kalai "stag" · `741` orukuṭi "first ward" · `176` iṟai "tax, levy" · `740` kuṭi "house of" · `090` āḷ "manager"
+
+## 102. Chest: one kalam, half-share. A store chit in 5 copies (5 more write the kalam with 706).
+
+- Object: Lipi row 234.1; 5 objects carry this exact text (TAB:I Steatite 5)
+- Site and findspot: Harappa (FTrench IV+V) x1, Harappa (E-ETTrench 10W) x1, Harappa (ETrench 10W/11) x1, Harappa (FTrench I) x1
+- Signs: `590-705-868`
+- Sound: *peṭṭi kalam araikkāṇi*
+- Word by word: `590` peṭṭi "chest" · `705` kalam "grain measure (a kalam); ship where it stands uncounted before the sail 500" · `868` araikkāṇi "half-share (a fraction ending)"
+
+## 103. Junior hand of the Horn-share house.
+
+- Object: H-2173; 3 objects carry this exact text (TAB:I Steatite 3)
+- Site and findspot: Harappa (ETrench 11) x1, Harappa (D-) x1, Harappa (FTrench IV+V) x1
+- Signs: `491-817-740-400`
+- Sound: *kompu kāṇi kuṭi ciṟ*
+- Word by word: `491` kompu "horn (variant of 495)" · `817` kāṇi "share, holding" · `740` kuṭi "house of" · `400` ciṟ "junior"
+
+## 104. Spindle: cotton. Two seals from Farmana.
+
+- Object: Lipi row 153.1; 2 objects carry this exact text (SEAL:S Steatite 2)
+- Site and findspot: Farmana (Central Area-) x2
+- Signs: `371-390`
+- Sound: *katir parutti*
+- Word by word: `371` katir "spindle (same drawing code as 370)" · `390` parutti "cotton (cotton_house.md; base value)"
+
+## 105. Spindle: cotton (a tablet).
+
+- Object: M-436; 2 objects carry this exact text (TAB:B Copper 2)
+- Site and findspot: Mohenjo-daro (SD-) x2
+- Signs: `370-390`
+- Sound: *katir parutti*
+- Word by word: `370` katir "spindle (also ear of grain, ray)" · `390` parutti "cotton (cotton_house.md; base value)"
+
+## 106. The warrior of the First-star Tax house.
+
+- Object: H-2141; 2 objects carry this exact text (TAB:I Steatite 2)
+- Site and findspot: Harappa (ETrench 54) x2
+- Signs: `231-176-740-565`
+- Sound: *orumīn iṟai kuṭi maṟavaṉ*
+- Word by word: `231` orumīn "First-star" · `176` iṟai "tax, levy" · `740` kuṭi "house of" · `565` maṟavaṉ "warrior (crossed arrows)"
+
+## 107. Bamboo-star, gate-guard. At Harappa and on a Lothal seal.
+
+- Object: H-2084; 2 objects carry this exact text (TAB:I Steatite 1, SEAL:S Steatite 1)
+- Site and findspot: Harappa (ETrench 54) x1, Lothal (SRG 3CX 8) x1
+- Signs: `235-555-526`
+- Sound: *vēymīn vāy kāval*
+- Word by word: `235` vēymīn "Bamboo-star (Punarvasu)" · `555` vāy "gate" · `526` kāval "guard (variant of 527)"
+
+## 108. Of the Assembly: of the High-star Many house.
+
+- Object: H-360; 2 objects carry this exact text (TAB:I Steatite 1, TAB:B - 1)
+- Site and findspot: Harappa (FTrench I) x1, Harappa (--) x1
+- Signs: `692-060-240-636-740`
+- Sound: *kūṭṭam -iṉ mīmīn pal kuṭi*
+- Word by word: `692` kūṭṭam "assembly, council (an office opening)" · `060` -iṉ "of (joiner after an opener)" · `240` mīmīn "High-star (house crest)" · `636` pal "many" · `740` kuṭi "house of"
+
+## 109. Of the Hedge house. Two seals.
+
+- Object: M-264; 2 objects carry this exact text (SEAL:S Steatite 1, SEAL:R Steatite 1)
+- Site and findspot: Mohenjo-daro (DKG. (S)) x2
+- Signs: `519-740`
+- Sound: *vēli kuṭi*
+- Word by word: `519` vēli "fence, hedged plot (a name element)" · `740` kuṭi "house of"
+
+## 110. The royal guard (a Chanhu-daro seal).
+
+- Object: C-61; 1 object carry this exact text (SEAL:S Steatite 1)
+- Site and findspot: Chanhu-daro (--) x1
+- Signs: `388-526`
+- Sound: *aracu kāval*
+- Word by word: `388` aracu "pipal; royal (house name)" · `526` kāval "guard (variant of 527)"
+
+## 111. In the month: of the house, one boxed-cotton keeper.
+
+- Object: C-12; 1 object carry this exact text (SEAL:S Steatite 1)
+- Site and findspot: Chanhu-daro (--) x1
+- Signs: `920-060-740-031-590-390-161`
+- Sound: *tiṅkaḷ? -iṉ kuṭi oru peṭṭi parutti kā*
+- Word by word: `920` tiṅkaḷ? "month (head of a date formula)" · `060` -iṉ "of (joiner after an opener)" · `740` kuṭi "house of" · `031` oru "one" · `590` peṭṭi "chest" · `390` parutti "cotton (cotton_house.md; base value)" · `161` kā "keeper, load-carrier (variant)"
+
+## 112. Of the Produce-and-Ivory house.
+
+- Object: Grb-1; 1 object carry this exact text (SEAL:R - 1)
+- Site and findspot: Gharo Bhiro (--) x1
+- Signs: `838-923-740`
+- Sound: *viḷai maruppu kuṭi*
+- Word by word: `838` viḷai "produce (variant of 806, as the second catalogue draws it)" · `923` maruppu "tusk, ivory (horn; the counted thing on elephant copper tablets)" · `740` kuṭi "house of"
+
+## 113. Of the Assembly: Descendant of High-star Star, the chief.
+
+- Object: H-423; 1 object carry this exact text (SEAL:S Steatite 1)
+- Site and findspot: Harappa (--) x1
+- Signs: `692-060-798-240-220-520`
+- Sound: *kūṭṭam -iṉ maru- mīmīn mīn vēḷ*
+- Word by word: `692` kūṭṭam "assembly, council (an office opening)" · `060` -iṉ "of (joiner after an opener)" · `798` maru- "descendant, clan member" · `240` mīmīn "High-star (house crest)" · `220` mīn "star" · `520` vēḷ "chief"
+
+## 114. The lady of the first ward: her bondsman, the keeper.
+
+- Object: H-1666; 1 object carry this exact text (SEAL:S Steatite 1)
+- Site and findspot: Harappa (FTrench 36) x1
+- Signs: `140-741-097-161`
+- Sound: *ammai orukuṭi aṭimai kā*
+- Word by word: `140` ammai "lady" · `741` orukuṭi "first ward" · `097` aṭimai "bondsman, servant (a ration receiver)" · `161` kā "keeper, load-carrier (variant)"
+
+## 115. Assembly, fort, forge: a quarter. Seal H-1.
+
+- Object: H-1; 1 object carry this exact text (SEAL:S Steatite 1)
+- Site and findspot: Harappa (FTrench A) x1
+- Signs: `692-575-595-820`
+- Sound: *kūṭṭam kōṭṭai paṭṭaṟai kāl*
+- Word by word: `692` kūṭṭam "assembly, council (an office opening)" · `575` kōṭṭai "great grain measure" · `595` paṭṭaṟai "forge, smithy" · `820` kāl "quarter-share"
+
+## 116. Two shares: of the High-star Horn-Field house.
+
+- Object: M-1726; 1 object carry this exact text (SEAL:S Steatite 1)
+- Site and findspot: Mohenjo-daro (DKG. (S)) x1
+- Signs: `861-002-240-495-615-740`
+- Sound: *kāṇi iru mīmīn kompu vayal kuṭi*
+- Word by word: `861` kāṇi "share, holding (a "hand")" · `002` iru "two" · `240` mīmīn "High-star (house crest)" · `495` kompu "horn (horn-blower; a name word)" · `615` vayal "field" · `740` kuṭi "house of"
+
+## 117. Two shares: of the Dark-star house, the warrior; one threshed heap.
+
+- Object: M-1763; 1 object carry this exact text (SEAL:S Faience 1)
+- Site and findspot: Mohenjo-daro (DKG. (S)) x1
+- Signs: `861-002-032-220-740-565-001-416`
+- Sound: *kāṇi iru iru mīn kuṭi maṟavaṉ oru turumpu*
+- Word by word: `861` kāṇi "share, holding (a "hand")" · `002` iru "two" · `032` iru "two" · `220` mīn "star" · `740` kuṭi "house of" · `565` maṟavaṉ "warrior (crossed arrows)" · `001` oru "one" · `416` turumpu "heap of threshed grain"
+
+## 118. Of the Assembly: of the house allied to the Chief Staff; of the Assembly: of the Home house. A new text, on two seals.
+
+- Object: second catalogue texts 1012, 2690 (seal; no partner in the first catalogue)
+- Site: Mohenjo-daro
+- Signs: `692-060-255-435-690-740-692-060-803-740`
+- Sound: *kūṭṭam -iṉ mutal kōl piṇai kuṭi kūṭṭam -iṉ il kuṭi*
+- Word by word: `692` kūṭṭam "assembly, council (an office opening)" · `060` -iṉ "of (joiner after an opener)" · `255` mutal "chief, first" · `435` kōl "rod, sceptre: mutal kōl "chief staff", an office" · `690` piṇai "bound, allied" · `740` kuṭi "house of" · `692` kūṭṭam "assembly, council (an office opening)" · `060` -iṉ "of (joiner after an opener)" · `803` il "house" · `740` kuṭi "house of"
+
+## 119. Produce of the Descendant-Tax house, the keeper: cup, cup, cup of cotton. A new-text tag, two copies.
+
+- Object: second catalogue texts 1623, 2847 (sealing; no partner in the first catalogue)
+- Site: Mohenjo-daro
+- Signs: `838-798-176-740-151-700-700-700-390`
+- Sound: *viḷai maru- iṟai kuṭi kā nāḻi? nāḻi? nāḻi? parutti*
+- Word by word: `838` viḷai "produce (variant of 806, as the second catalogue draws it)" · `798` maru- "descendant, clan member" · `176` iṟai "tax, levy" · `740` kuṭi "house of" · `151` kā "keeper" · `700` nāḻi? "cup measure" · `700` nāḻi? "cup measure" · `700` nāḻi? "cup measure" · `390` parutti "cotton (cotton_house.md; base value)"
+
+## 120. Produce: of the servant house of Branch-Star; the three-kalam chief; the bondsman keeper. A new-text seal from Harappa.
+
+- Object: second catalogue text 4254 (seal; no partner in the first catalogue)
+- Site: Harappa
+- Signs: `806-415-220-717-740-705-033-520-097-161`
+- Sound: *viḷai kavar mīn aṭi kuṭi kalam mū vēḷ aṭimai kā*
+- Word by word: `806` viḷai "produce, ripened crop" · `415` kavar "branch (of a line)" · `220` mīn "star" · `717` aṭi "foot; servant (aṭiyāṉ)" · `740` kuṭi "house of" · `705` kalam "grain measure (a kalam); ship where it stands uncounted before the sail 500" · `033` mū "three" · `520` vēḷ "chief" · `097` aṭimai "bondsman, servant (a ration receiver)" · `161` kā "keeper, load-carrier (variant)"
+
