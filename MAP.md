@@ -370,4 +370,11 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `measured` Went against: neighbours at the same depth sharing the letter (1.00); same-hand twins sharing it (1 of 3); sorting the 40 biggest buildings into household / office / shop (about 4 per class expected by chance).
 - Recheck launched: every other room, building and house-mate pair count in the project for the same two faults.
 
+## Seal-cutting hands and unfinished stones (from `jobs/out/hands.md`)
+- `measured` Photos: 1,600 of 2,290 seal faces have one; about 754 panels were opened. Of 60 blank-animal, animal-seal-sized stones: text cut with the animal field smooth 6 (L-55, L-58, L-97, M-315, M-1195, M-1232); text-only by design 27; worn or broken 3; hairline sketch 4; cannot tell 20. Animal cut with the text field empty: 1 (K-35). Text-first 6 to 1. Lothal holds 3 of the 6. No two share a house.
+- `measured` Four stones carry signs drawn in thin scratches (C-31, H-613, L-62, M-1228, the last with a few signs already cut deep): the guide stage.
+- `measured` Same hand, judged blind (pair kinds looked up after all 120 were judged): pairs from different cities that share a text alike 7 of 37 (19%); pairs sharing nothing 4 of 32 (12.5%); P about 0.3. Mohenjo-daro: same building 8 of 35 (23%), same area different building 7 of 31 (23%), different areas 4 of 19 (21%).
+- `guess` A seal's text was drawn thin, cut, and the animal added after; seals were cut in city shops working to shared styles, and no building had its own cutter.
+- `measured` Went against: text-sharing pairs across cities being cut by the same hand more than unrelated pairs (small gap, not significant); a building effect on hands; guide lines or ghost signs on finished stones (none in 40). No certain recut stone.
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.
