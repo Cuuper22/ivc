@@ -438,4 +438,11 @@ Rerun with one row per physical object, the shuffle among eligible objects, and 
 - `guess` A lump is a set of independent stamps: the short stamp belongs to the transaction, the name stamp to whoever was present. Untested.
 - Missing: neither catalogue records where each impression sits on the lump or the order of stamping; only 14 to 32 lumps are comparable. Redesigned once (three wider rule sets, class level): same null.
 
+## Signs that do more than one job (from `jobs/out/splits.md`)
+Bits per sign = how surprised the sign-order model is by the next sign on texts it was not fitted on; lower is better. Unsplit frame v2: 7.0598 on first-catalogue held-out texts, 7.5362 on the new texts. Each split is ranked against 20 random splits of the same sizes and 20 shuffled within site and object kind (rank 1 of 21 = beats all).
+- `measured` 001 splits into three uses: after a name part or closer on seals (108), right after a front word, slot or measure on seals (67), on short Harappa tablet and pot texts (30). First catalogue 7.0598 -> 7.0584, rank 1 against both decoy kinds; new texts (52 occurrences) 7.5362 -> 7.5248, rank 1 against both. Went against: with each use as its own one-sign class the split ranks 21 of 21; the two-way split ranks 6.
+- `measured` 824 splits into two uses: opener of a seal text before the slot (10), closer of a Harappa tablet after a name part (22, last sign in 20). 7.0598 -> 7.0583, rank 1. Went against: the two uses are seals against Harappa tablets, so the site-and-kind decoys tie it 20 of 20; no 824 on the new texts.
+- `measured` 850 does not split: two profiles do worse than one on held-out occurrences (-0.141 bits per occurrence); redesign (left context) ranks 21 of 21. One clean group exists (12 Mohenjo-daro copper tablets: counted thing, 850, place word) that does not help prediction.
+- All gains are small (at most 0.0015 bits per sign over all held-out texts; 0.0113 on new texts for 001). Control on 20 frequency-matched signs: running.
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.

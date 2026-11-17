@@ -1,0 +1,22 @@
+distinct texts 3499; copy events 4476
+sign 850: 37 occurrences in distinct texts; held-out bits per occurrence (higher=better; K=1 is one profile): K1 -9.560, K2 -9.701, K3 -9.563; gain K2 over K1 -0.141, K3 over K2 0.137
+  K=2 weights [0.61 0.39]; sizes [22 15]; agreement across 5 refits 0.962 (min 0.811)
+  group 0 (share 0.61): left: PERSONAL 0.22, ^ 0.17, THING 0.09 | right: PERSONAL 0.34, MEASURE 0.16, SLOT 0.12 | kind: seal 0.62, pot 0.10, copper tablet 0.10 | length: len5+ 0.90, len2 0.05, len3-4 0.03
+  group 1 (share 0.39): left: ^ 0.19, PERSONAL 0.18, CREST 0.14 | right: $ 0.18, SLOT 0.14, NUM_TALL 0.09 | kind: tablet 0.31, seal 0.29, pot 0.26 | length: len3-4 0.50, len2 0.29, len5+ 0.12
+  copy events with 850: 53 rows; group sizes [34, 19]
+    group 0: n 34; at text start 0.18, at end 0.03; kinds {'seal': 15, 'copper tablet': 12, 'other': 4}; sites {'Mohenjo-daro': 28, 'Harappa': 3, 'Chanhu-daro': 1}; left {'THING': 12, 'PERSONAL': 7, '^': 4}; right {'PLACE': 12, 'PERSONAL': 9, 'MEASURE': 6}
+    group 1: n 19; at text start 0.53, at end 0.47; kinds {'tablet': 7, 'seal': 5, 'pot': 4}; sites {'Harappa': 7, 'Mohenjo-daro': 6, 'Kalibangan': 3}; left {'^': 6, 'PERSONAL': 3, 'CREST': 3}; right {'$': 6, 'SLOT': 2, 'CLOSER': 2}
+sign 824: 19 occurrences in distinct texts; held-out bits per occurrence (higher=better; K=1 is one profile): K1 -6.547, K2 -5.848, K3 -5.848; gain K2 over K1 0.699, K3 over K2 -0.000
+  K=2 weights [0.53 0.47]; sizes [10  9]; agreement across 5 refits 1.000 (min 1.000)
+  group 0 (share 0.53): left: ^ 0.52, NUM_NAME 0.03, PERSONAL 0.03 | right: SLOT 0.60, PERSONAL 0.04, $ 0.03 | kind: seal 0.80, tablet 0.05, pot 0.04 | length: len5+ 0.53, len3-4 0.38, len1 0.04
+  group 1 (share 0.47): left: PERSONAL 0.26, THING 0.11, NUM_NAME 0.11 | right: $ 0.36, PERSONAL 0.11, SLOT 0.04 | kind: tablet 0.79, seal 0.04, pot 0.04 | length: len2 0.51, len3-4 0.31, len1 0.14
+  copy events with 824: 32 rows; group sizes [10, 22]
+    group 0: n 10; at text start 1.00, at end 0.00; kinds {'seal': 10}; sites {'Mohenjo-daro': 6, 'Harappa': 1, 'Lothal': 1}; left {'^': 7}; right {'SLOT': 10}
+    group 1: n 22; at text start 0.14, at end 0.91; kinds {'tablet': 22}; sites {'Harappa': 22}; left {'PERSONAL': 13, 'NUM_NAME': 4, 'THING': 1}; right {'$': 17, 'PERSONAL': 1}
+sign 001: 187 occurrences in distinct texts; held-out bits per occurrence (higher=better; K=1 is one profile): K1 -8.199, K2 -8.031, K3 -8.004; gain K2 over K1 0.168, K3 over K2 0.028
+  K=2 weights [0.78 0.22]; sizes [154  33]; agreement across 5 refits 0.969 (min 0.968)
+  group 0 (share 0.78): left: PERSONAL 0.27, OPEN 0.17, CLOSER 0.16 | right: PERSONAL 0.40, NUM_SHORT 0.18, CREST 0.15 | kind: seal 0.85, copper tablet 0.08, tag 0.04 | length: len5+ 0.88, len3-4 0.11, len2 0.00
+  group 1 (share 0.22): left: ^ 0.19, PERSONAL 0.15, MEASURE 0.13 | right: PLACE 0.17, $ 0.16, PERSONAL 0.16 | kind: seal 0.44, tablet 0.23, pot 0.21 | length: len3-4 0.49, len5+ 0.35, len2 0.12
+  copy events with 001: 205 rows; group sizes [163, 42]
+    group 0: n 163; at text start 0.01, at end 0.09; kinds {'seal': 134, 'copper tablet': 14, 'tag': 10}; sites {'Mohenjo-daro': 98, 'Harappa': 23, 'Lothal': 14}; left {'PERSONAL': 41, 'OPEN': 27, 'CLOSER': 25}; right {'PERSONAL': 67, 'NUM_SHORT': 26, 'CREST': 23}
+    group 1: n 42; at text start 0.29, at end 0.24; kinds {'seal': 12, 'tablet': 12, 'pot': 12}; sites {'Harappa': 21, 'Mohenjo-daro': 10, 'Lothal': 3}; left {'^': 11, 'MEASURE': 8, 'PERSONAL': 5}; right {'PLACE': 8, '$': 8, 'NUM_TALL': 6}
