@@ -33,3 +33,7 @@ slm/runs/
 
 # make targets write here (see Makefile)
 build/
+
+# large working files of the language test (rebuilt by work_scripts/lang_m_*.py)
+work_data/lang_m/raw/
+work_data/lang_m/evidence.csv
