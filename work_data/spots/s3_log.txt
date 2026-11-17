@@ -1,0 +1,93 @@
+(a) What kinds of record are there?  (902 multi-face objects)
+  kinds, all sites: amount+name 356; name+thing 176; amount+thing 94; name+name 88; thing+thing 41; lost+name 29; amount+amount+thing 24; amount+lost 20; lost+thing 20; amount+name+thing 9; name+name+thing 6; amount+name+name 5
+  with no wholly-lost face: 816; kinds: amount+name 356; name+thing 176; amount+thing 94; name+name 88; thing+thing 41; amount+amount+thing 24; amount+name+thing 9; name+name+thing 6
+  two-face objects 832: amount+name 356 (43%); name+thing 176 (21%); amount+thing 94 (11%); name+name 88 (11%); thing+thing 41 (5%); lost+name 29 (3%); amount+lost 20 (2%); lost+thing 20 (2%)
+  by site (top kinds):
+     Chanhu-daro       2  name+name 1; name+thing 1
+     Dholavira         7  name+name 4; thing+thing 2; lost+name+name 1
+     Farmana           1  name+name 1
+     Harappa         750  amount+name 343; name+thing 120; amount+thing 92; name+name 56; lost+name 26
+     Kalibangan        9  amount+name 4; amount+name+name+thing 1; lost+lost+lost+thing 1; lost+lost+name+name 1; name+name 1
+     Kanmer            2  thing+thing 2
+     Kot-Diji          1  amount+lost 1
+     Lakhanjo-daro     1  name+thing 1
+     Lothal           18  name+name 4; amount+name+name 2; amount+name 2; name+thing 2; lost+name 2
+     Mohenjo-daro    107  name+thing 51; name+name 20; thing+thing 13; amount+name 5; name+name+thing 4
+     Rajanpur          1  amount+name 1
+     Rakhigarhi        1  name+name 1
+     Rupar             1  name+name+thing 1
+     Unknown           1  amount+name 1
+  by trench (top 14 by objects; main kinds):
+     Harappa|(no area)                   137  amount+name 62; name+thing 20; amount+thing 17; name+name 15
+     Harappa|ETrench 11                  130  amount+name 33; name+thing 24; amount+amount+thing 21; amount+thing 16
+     Harappa|FTrench I                    90  amount+name 57; amount+thing 15; name+thing 9; name+name 4
+     Harappa|F-                           68  amount+name 35; name+thing 10; amount+thing 6; lost+thing 5
+     Harappa|ETrench 10W/11               48  amount+name 22; name+thing 8; name+name 5; amount+thing 4
+     Harappa|ETrench 54                   46  amount+name 27; name+thing 7; amount+thing 6; name+name 2
+     Mohenjo-daro|DKG. (S)                35  name+thing 14; name+name 8; thing+thing 3; name+name+thing 2
+     Harappa|D-                           35  amount+name 20; name+thing 8; name+name 3; amount+thing 2
+     Harappa|FTrench IV+V                 28  amount+name 12; name+thing 8; amount+thing 3; lost+name 2
+     Harappa|FTrench VI                   24  amount+name 11; name+name 2; amount+lost 2; lost+name 2
+     Harappa|FGranery                     21  amount+name 8; name+thing 5; name+name 3; amount+lost 1
+     Mohenjo-daro|(no area)               18  name+thing 12; thing+thing 3; name+name 2; lost+name+name+name 1
+     Harappa|FTrench III                  17  amount+name 10; amount+thing 3; amount+lost 2; name+name 1
+     Mohenjo-daro|DK-                     17  name+thing 13; name+name 2; amount+name 1; thing+thing 1
+  by object format (TAB:B moulded miniature, TAB:I incised miniature, TAB:C copper): TAB:B: amount+name 190, name+thing 61, amount+thing 42; TAB:I: amount+name 154, name+thing 67, amount+thing 49; TAB:C: name+thing 31, amount+name 4, thing+thing 3
+
+(b) Batches: 5+ identical tablets (same faces, no lost sign) in one site + trench
+  batches of 5+: 3, holding 42 objects; of 3+: 6
+     Harappa|ETrench 11             x 20 amount+amount+thing 003-156 | 003-861 | 034-700                        formats TAB:I
+     Harappa|FTrench I              x 15 amount+name    033-700 | 176-740-400                              formats SEAL:R,TAB:B,TAB:I
+     Harappa|FTrench I              x  7 amount+name    034-700 | 176-740-400                              formats TAB:I
+
+  pairs of DIFFERENT signatures inside one trench (3+ copies each, name+amount records): share the name, share the amount, share both-or-neither
+  batches of 5+: 2 name+amount signatures in 1 trenches
+     name_same_amount_differs      1 pairs in one trench; trench labels shuffled within site: 1.0  (P high 1.0000, P low 1.0000)
+     amount_same_name_differs      0 pairs in one trench; trench labels shuffled within site: 0.0  (P high 1.0000, P low 1.0000)
+     neither                       0 pairs in one trench; trench labels shuffled within site: 0.0  (P high 1.0000, P low 1.0000)
+  batches of 3+: 4 name+amount signatures in 2 trenches
+     name_same_amount_differs      1 pairs in one trench; trench labels shuffled within site: 0.5  (P high 0.5135, P low 1.0000)
+     amount_same_name_differs      1 pairs in one trench; trench labels shuffled within site: 1.0  (P high 1.0000, P low 1.0000)
+     neither                       1 pairs in one trench; trench labels shuffled within site: 1.5  (P high 1.0000, P low 0.5135)
+  every signature (1+ copies): 203 name+amount signatures in 31 trenches
+     name_same_amount_differs      9 pairs in one trench; trench labels shuffled within site: 3.5  (P high 0.0107, P low 0.9967)
+     amount_same_name_differs    282 pairs in one trench; trench labels shuffled within site: 275.6  (P high 0.3436, P low 0.6771)
+     neither                    1226 pairs in one trench; trench labels shuffled within site: 1236.7  (P high 0.7637, P low 0.2582)
+
+(c) Same name face with different amount faces: an account running over time?
+  name+amount records with no lost sign: 290; distinct name faces 193
+  name faces on 2+ records: 46; with 2+ different amounts: 25
+  pairs with one name: amount identical 263, amount differs 299; amounts shuffled within site gives identical 112.1 (P high 0.0010: small P = a name keeps ITS amount more than chance)
+  same-name pairs 562: different amount 299, same amount 263; of the differing pairs 159 are in the same trench, 140 in different trenches/sites; with both depths known 195, median depth gap 2.3 ft
+  name faces with several amounts (all records, sorted by number of distinct amounts):
+     027-032-740-400                4 records, 4 amounts [700-034 x1; 033-031-700 x1; 034-700 x1; 033-700 x1] in 2 trenches, depths [4.2]
+     176-740-400                    31 records, 4 amounts [033-700 x20; 034-700 x8; 032-700 x2; 700-034 x1] in 5 trenches, depths [9.0, 11.3, 11.7, 12.0, 12.0, 12.0, 12.0, 12.2, 12.6, 13.0, 13.0, 13.0, 13.0, 13.0, 13.5, 14.0, 15.0, 15.2, 15.2, 15.2, 15.2, 15.2, 15.7, 16.0, 16.0, 16.4, 19.5]
+     137-400                        4 records, 3 amounts [700-033 x2; 034-700 x1; 033-700 x1] in 4 trenches, depths []
+     176-740                        4 records, 3 amounts [032-700 x2; 034 x1; 033-700 x1] in 3 trenches, depths [12.0, 13.2]
+     240-520                        4 records, 3 amounts [034-700 x2; 700-033 x1; 033-700 x1] in 4 trenches, depths []
+     415-220-520                    5 records, 3 amounts [034-700 x3; 032-700 x1; 700-034 x1] in 5 trenches, depths [5.3, 6.0, 7.0]
+     491-817-740-400                3 records, 3 amounts [032-700 x1; 034-700 x1; 033-700 x1] in 3 trenches, depths [5.2, 6.0]
+     028-032-740-400                2 records, 2 amounts [033-700 x1; 032-700 x1] in 2 trenches, depths []
+     061-255-740                    3 records, 2 amounts [003-861 x2; 031-861-003 x1] in 3 trenches, depths [14.0]
+     140-061-740-400                2 records, 2 amounts [034-700 x1; 033-700 x1] in 2 trenches, depths []
+     176-336-740-400                2 records, 2 amounts [032-700 x1; 700-034 x1] in 2 trenches, depths [1.0, 13.0]
+     220-236-400                    3 records, 2 amounts [033-700 x2; 032-700 x1] in 2 trenches, depths []
+     220-520                        2 records, 2 amounts [032-700 x1; 033-700 x1] in 2 trenches, depths [9.5]
+     233-550-526                    2 records, 2 amounts [033-700 x1; 032-700 x1] in 2 trenches, depths []
+  name + trench groups where the amount changes and depths are known: 4
+     176-740                      Harappa|F-                   [(12.0, '033-700'), (13.2, '032-700')]
+     176-740-400                  Harappa|FTrench I            [(11.3, '034-700'), (11.7, '033-700'), (12.0, '034-700'), (12.0, '033-700'), (12.0, '034-700'), (12.0, '033-700'), (12.2, '033-700'), (12.6, '034-700'), (13.0, '033-700'), (13.0, '033-700'), (13.0, '033-700'), (13.0, '033-700'), (13.0, '033-700'), (13.5, '033-700'), (14.0, '034-700'), (15.0, '034-700'), (15.2, '033-700'), (15.2, '033-700'), (15.2, '033-700'), (15.2, '033-700'), (15.7, '032-700'), (16.0, '034-700'), (16.0, '032-700')]
+     176-740-400                  Harappa|FTrench III          [(16.4, '033-700'), (19.5, '034-700')]
+     234-400                      Harappa|FTrench I            [(16.0, '034-700'), (17.0, '700-034')]
+
+(d) Cups and the big measure (12 cups = 1 big measure, 705/706): ceiling check
+  cup counts on the 902 records (count run right before 700): {1: 3, 2: 97, 3: 146, 4: 121, 6: 2}
+  records breaking the cup rule (a count of 5, or above 6): 0
+  records with both a cup count and a big-measure count: 1
+     object 1388 Harappa: cups [3], big [1]  033-700 | 741-390-741-031-705-033-368
+  all objects in the catalogue, cup counts: {1: 4, 2: 100, 3: 154, 4: 126, 5: 1, 6: 3, 7: 1} ; breaking the rule: 2
+      ('434', 'Harappa', '001-034-700')
+      ('735', 'Harappa', '000-017-700-400')
+  all objects with a cup count AND a big-measure count: 2
+      ('1211', 'Harappa', [3], [3], ['817-002-031-706-151-033-700'])
+      ('1388', 'Harappa', [3], [1], ['741-390-741-031-705-033-368', '033-700'])

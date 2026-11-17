@@ -1,0 +1,8 @@
+distinct (name, amount, trench) triples: 256 from 290 records
+pairs of triples with one name: same amount 38, different 77; shuffled same-amount 21.6 (P high 0.0030, P low 0.9980)
+176-740-400: 27 records with depth; cups by depth Spearman -0.184, shuffle P two-sided 0.3562
+   cups 2: n 2, depth median 15.8 ft, range 15.7-16.0
+   cups 3: n 17, depth median 13.0 ft, range 9.0-16.4
+   cups 4: n 8, depth median 13.3 ft, range 11.3-19.5
+names with 4+ depth-dated records and 2+ amounts: [('176-740-400', 27, np.float64(-0.18))]
+176-740-400 records by format and amount: {('SEAL:R', '033-700'): np.int64(2), ('TAB:B', '033-700'): np.int64(1), ('TAB:I', '032-700'): np.int64(2), ('TAB:I', '033-700'): np.int64(17), ('TAB:I', '034-700'): np.int64(8), ('TAB:I', '700-034'): np.int64(1)}

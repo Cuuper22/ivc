@@ -1,0 +1,142 @@
+[s2] office objects with 142: {'Dholavira': 3, 'Harappa': 12, 'Lothal': 1, 'Mohenjo-daro': 21, 'Unknown': 1}
+
+(a) Are the holders of 142 spread one per area/block more than chance?
+    cross = pairs of 142-objects in the SAME place with DIFFERENT holder (fewer = one holder per place); apart = pairs with the SAME holder in DIFFERENT places (fewer = a holder stays in his own place)
+  Mohenjo-daro holder key (office words skipped)  area_key n=21 places= 7 holders=16 | cross 35 vs shuffle 35.0 (P low 0.7065) | apart 5 vs 5.0 (P low 0.7065)
+  Mohenjo-daro holder key (office words skipped)  block    n=16 places=14 holders=12 | cross 2 vs shuffle 1.9 (P low 1.0000) | apart 3 vs 2.9 (P low 1.0000)
+  Mohenjo-daro holder key (office words skipped)  building n=16 places=15 holders=12 | cross 1 vs shuffle 1.0 (P low 1.0000) | apart 3 vs 3.0 (P low 1.0000)
+  Mohenjo-daro registry crest                     area_key n=21 places= 7 holders=13 | cross 34 vs shuffle 31.9 (P low 0.9550) | apart 22 vs 19.9 (P low 0.9550)
+  Mohenjo-daro registry crest                     block    n=16 places=14 holders=10 | cross 2 vs shuffle 1.7 (P low 1.0000) | apart 16 vs 15.7 (P low 1.0000)
+  Mohenjo-daro registry crest                     building n=16 places=15 holders=10 | cross 1 vs shuffle 0.9 (P low 1.0000) | apart 16 vs 15.9 (P low 1.0000)
+  Harappa      holder key (office words skipped)  area_key n= 9 places= 8 holders= 5 | cross 1 vs shuffle 0.7 (P low 1.0000) | apart 10 vs 9.7 (P low 1.0000)
+  Harappa      holder key (office words skipped)  block    n= 4 places= 4 holders= 4 | cross 0 vs shuffle 0.0 (P low 1.0000) | apart 0 vs 0.0 (P low 1.0000)
+  Harappa      holder key (office words skipped)  building n= 4 places= 4 holders= 4 | cross 0 vs shuffle 0.0 (P low 1.0000) | apart 0 vs 0.0 (P low 1.0000)
+  Harappa      registry crest                     area_key n= 9 places= 8 holders= 3 | cross 0 vs shuffle 0.7 (P low 0.3227) | apart 11 vs 11.7 (P low 0.3227)
+  Harappa      registry crest                     block    n= 4 places= 4 holders= 3 | cross 0 vs shuffle 0.0 (P low 1.0000) | apart 1 vs 1.0 (P low 1.0000)
+  Harappa      registry crest                     building n= 4 places= 4 holders= 3 | cross 0 vs shuffle 0.0 (P low 1.0000) | apart 1 vs 1.0 (P low 1.0000)
+
+  the objects (Mohenjo-daro, then Harappa): id, area, block, building, holder key, signs
+     M-71      seal  area Mohenjo-daro|DK              block -                              holder 095    crest 095      095-390-002-142-279-151
+     M-400     seal  area Mohenjo-daro|DK              block -                              holder 617    crest 142      820-013-142-617
+     M-837     seal  area Mohenjo-daro|DK              block -                              holder 575    crest 575      575-125-741-031-061-142-740
+     M-981     seal  area Mohenjo-daro|DK              block -                              holder 371    crest 371      371-407-001-142-617
+     M-2063    pot   area Mohenjo-daro|DK              block Mohenjo-daro|DK|Betw. 7&8      holder 480    crest 480      480-142-740
+     M-1976    seal  area Mohenjo-daro|DKC             block Mohenjo-daro|DKC|Trench D      holder 617    crest 142      817-002-142-617
+     M-382     seal  area Mohenjo-daro|DKC             block Mohenjo-daro|DKC|blk11         holder 617    crest 142      142-617
+     M-717     seal  area Mohenjo-daro|DKE             block Mohenjo-daro|DKE|Trench E      holder (none) crest 061      861-002-061-142-740
+     M-879     seal  area Mohenjo-daro|DKG             block -                              holder 400    crest 061      061-142-400-740
+     M-1916    seal  area Mohenjo-daro|DKG             block Mohenjo-daro|DKG|First Street  holder 518    crest 518      518-002-142-604-740
+     M-1686    seal  area Mohenjo-daro|DKG             block Mohenjo-daro|DKG|First Street  holder 220    crest 142      142-002-032-220-904-740
+     M-1335    seal  area Mohenjo-daro|DKG. (N)        block Mohenjo-daro|DKG. (N)|blk14    holder 617    crest 142      142-617
+     M-328     seal  area Mohenjo-daro|DKG. (N)        block Mohenjo-daro|DKG. (N)|blk21    holder 157    crest 142      142-157
+     M-1772    seal  area Mohenjo-daro|DKG. (S)        block Mohenjo-daro|DKG. (S)|blk1     holder 705    crest 705      705-255-435-798-002-061-142-400-740
+     M-1315    seal  area Mohenjo-daro|DKG. (S)        block Mohenjo-daro|DKG. (S)|blk10    holder 240    crest 240      240-142-617
+     M-1828    seal  area Mohenjo-daro|DKG. (S)        block Mohenjo-daro|DKG. (S)|blk2     holder (none) crest 142      142-156
+     M-164     seal  area Mohenjo-daro|DKG. (S)        block Mohenjo-daro|DKG. (S)|blk3     holder (none) crest 061      817-002-061-142-740
+     M-282     seal  area Mohenjo-daro|DKG. (S)        block Mohenjo-daro|DKG. (S)|blk3     holder 368    crest 368      817-368-142-156
+     M-1977    seal  area Mohenjo-daro|DKG. (S)        block Mohenjo-daro|DKG. (S)|blk4     holder 140    crest 140      140-746-142-617
+     M-972     seal  area Mohenjo-daro|DKG. (S)        block Mohenjo-daro|DKG. (S)|blk7     holder 066    crest 066      066-142-740
+     M-145     seal  area Mohenjo-daro|SDBath Cells    block Mohenjo-daro|SDBath Cells|North holder 880    crest 880      880-142-400-740
+     H-1422    pot   area -                            block -                              holder (none) crest 142      142-740
+     H-1864    mtab  area -                            block -                              holder 062    crest 062      817-002-062-142-740
+     H-1060    seal  area -                            block -                              holder (none) crest 142      142
+     H-72      seal  area Harappa|AB                   block Harappa|AB|Pit II              holder 617    crest 142      142-617
+     H-1672    seal  area Harappa|E-ETTrench 10E       block -                              holder 400    crest 061      033-061-142-400-740
+     H-2103    mtab  area Harappa|ETrench 11           block -                              holder 400    crest 142      142-400-740
+     H-1995    mtab  area Harappa|ETrench 11           block -                              holder 151    crest 142      142-151-400
+     H-1679    seal  area Harappa|ETrench 11W          block -                              holder 400    crest 061      061-142-400-740
+     H-451     seal  area Harappa|F                    block -                              holder 400    crest 061      061-142-400-740
+     H-780     mtab  area Harappa|FTrench I            block Harappa|FTrench I|M            holder 400    crest 061      061-142-400-740
+     H-471     seal  area Harappa|FTrench IV+V         block Harappa|FTrench IV+V|I         holder 368    crest 368      368-061-142-400-740
+     H-1147    mtab  area Harappa|FTrench VI           block Harappa|FTrench VI|O           holder (none) crest 142      142-400
+
+(b) Counts and wards with the pair 061/820 + 142 (both catalogues; second catalogue only the 1,183 texts with no Lipi partner)
+  texts with the pair: Lipi 11, second catalogue new 0; quarter-without-142 texts 379; 142-without-quarter-before texts 101
+  count right before the quarter sign      pair texts 5 of 11 (45%) | other quarter-sign texts 36 of 379 (9%) | one-sided P 0.0029
+  count right after 142                    pair texts 0 of 11 (0%) | other quarter-sign texts 55 of 379 (15%) | one-sided P 1.0000
+  any count in text                        pair texts 6 of 11 (55%) | other quarter-sign texts 232 of 379 (61%) | one-sided P 0.7787
+  ward sign 741/742/745 in text            pair texts 1 of 11 (9%) | other quarter-sign texts 11 of 379 (3%) | one-sided P 0.2941
+  741 before the quarter sign              pair texts 1 of 11 (9%) | other quarter-sign texts 6 of 379 (2%) | one-sided P 0.1828
+  text ends in jar                         pair texts 10 of 11 (91%) | other quarter-sign texts 126 of 379 (33%) | one-sided P 0.0002
+  all faces: ward sign in 5.8%
+  every pair text, in reading order:
+     H-1662    Harappa      546-002-140-061-142-ALT-033   (before quarter: 140; after 142: ALT)
+     H-1672    Harappa      033-061-142-400-740   (before quarter: 033; after 142: 400)
+     H-1679    Harappa      061-142-400-740   (before quarter: START; after 142: 400)
+     H-451     Harappa      061-142-400-740   (before quarter: START; after 142: 400)
+     H-471     Harappa      368-061-142-400-740   (before quarter: 368; after 142: 400)
+     H-780     Harappa      061-142-400-740   (before quarter: START; after 142: 400)
+     M-1772    Mohenjo-daro 705-255-435-798-002-061-142-400-740   (before quarter: 002; after 142: 400)
+     M-164     Mohenjo-daro 817-002-061-142-740   (before quarter: 002; after 142: 740)
+     M-717     Mohenjo-daro 861-002-061-142-740   (before quarter: 002; after 142: 740)
+     M-837     Mohenjo-daro 575-125-741-031-061-142-740   (before quarter: 031; after 142: 740)
+     M-879     Mohenjo-daro 061-142-400-740   (before quarter: START; after 142: 400)
+  counts that precede the quarter sign, by number series:
+     H-1672    count 033 = series F value 3
+     M-1772    count 002 = series S value 2
+     M-164     count 002 = series S value 2
+     M-717     count 002 = series S value 2
+     M-837     count 031 = series F value 1
+
+(c) Does the office stay with a house across time bins?
+  142-objects with a time bin: 25 of 38; by bin {'middle': 16, 'late': 7, 'early': 2}
+  key hold     : same-holder pairs inside one site: same bin 11 (shuffle 9.9), different bins 5 (shuffle 6.1; P high 0.6817); same-bin P high 0.4427
+  key house_key: same-holder pairs inside one site: same bin 13 (shuffle 15.7), different bins 17 (shuffle 14.3; P high 0.1040); same-bin P high 1.0000
+  holders that hold 142 in 2+ bins (site, key, bins, ids):
+     Harappa      holder 400    bins ['middle', 'middle', 'middle', 'middle', 'middle'] ids H-1672, H-2103, H-1679, H-451, H-780
+     Mohenjo-daro holder 617    bins ['early', 'late', 'middle'] ids M-1976, M-382, M-1335
+
+(d) Other signs with 142's behaviour: text position and one holder per area (Mohenjo-daro + Harappa, located named objects)
+  142: 112 uses, mean relative position 0.49; right before it: {'START': 29, '001': 25, '061': 11, '597': 9, '000': 6}; right after it: {'617': 29, '615': 25, '400': 12, '740': 10, 'END': 8}
+  signs on 6+ located named objects at the two big cities: 148
+  signs tested at area level: 148; with P low <= 0.05: 32 (chance alone gives about 7.4); at block level tested 121, <= 0.05: 15
+  signs with fewer cross-holder same-area pairs than shuffled (P<=0.05, 4+ different holders):
+     sign 740: 1048 objects, 187 holders, cross 36681 vs shuffle 37134.8, P 0.001; block P 0.000999000999000999; mean relative position 0.85, usually after 000, before END
+     sign 690: 58 objects, 17 holders, cross 52 vs shuffle 76.3, P 0.001; block P 0.001998001998001998; mean relative position 0.59, usually after 435, before 740
+     sign 400: 306 objects, 76 holders, cross 2938 vs shuffle 3215.4, P 0.001; block P 0.000999000999000999; mean relative position 0.94, usually after 740, before END
+     sign 090: 91 objects, 34 holders, cross 365 vs shuffle 394.5, P 0.001; block P 0.6973026973026973; mean relative position 0.72, usually after 740, before END
+     sign 176: 138 objects, 30 holders, cross 441 vs shuffle 612.6, P 0.001; block P 0.000999000999000999; mean relative position 0.35, usually after START, before 740
+     sign 503: 65 objects, 19 holders, cross 98 vs shuffle 154.1, P 0.001; block P 0.2987012987012987; mean relative position 0.15, usually after START, before 615
+     sign 920: 85 objects, 37 holders, cross 284 vs shuffle 302.6, P 0.001; block P 0.001998001998001998; mean relative position 0.2, usually after START, before 060
+     sign 741: 112 objects, 64 holders, cross 516 vs shuffle 535.5, P 0.001; block P 1.0; mean relative position 0.36, usually after 060, before 001
+     sign 752: 38 objects, 11 holders, cross 10 vs shuffle 57.7, P 0.001; block P 0.36563436563436563; mean relative position 0.66, usually after 615, before 740
+     sign 615: 46 objects, 13 holders, cross 28 vs shuffle 74.1, P 0.001; block P 0.41058941058941056; mean relative position 0.52, usually after 615, before 615
+     sign 407: 41 objects, 11 holders, cross 36 vs shuffle 60.8, P 0.001; block P 0.001998001998001998; mean relative position 0.83, usually after 845, before END
+     sign 255: 77 objects, 25 holders, cross 97 vs shuffle 113.3, P 0.003; block P 0.014985014985014986; mean relative position 0.37, usually after START, before 435
+     sign 630: 22 objects, 7 holders, cross 10 vs shuffle 24.1, P 0.003; block P 0.017982017982017984; mean relative position 0.26, usually after START, before 740
+     sign 104: 13 objects, 5 holders, cross 5 vs shuffle 11.7, P 0.005; block P 1.0; mean relative position 0.25, usually after START, before 645
+     sign 923: 30 objects, 12 holders, cross 45 vs shuffle 54.4, P 0.005; block P 1.0; mean relative position 0.58, usually after 033, before 740
+     sign 156: 52 objects, 18 holders, cross 108 vs shuffle 125.5, P 0.006; block P 0.8561438561438561; mean relative position 0.83, usually after 003, before END
+     sign 590: 104 objects, 39 holders, cross 406 vs shuffle 426.1, P 0.008; block P 0.003996003996003996; mean relative position 0.43, usually after START, before 390
+     sign 706: 45 objects, 25 holders, cross 95 vs shuffle 101.7, P 0.008; block P 1.0; mean relative position 0.37, usually after START, before 033
+     sign 803: 83 objects, 41 holders, cross 266 vs shuffle 279.1, P 0.008; block P 0.001998001998001998; mean relative position 0.35, usually after START, before 740
+     sign 645: 11 objects, 5 holders, cross 2 vs shuffle 8.0, P 0.009; block P nan; mean relative position 0.44, usually after 104, before END
+     sign 097: 17 objects, 4 holders, cross 1 vs shuffle 4.6, P 0.010; block P 0.2987012987012987; mean relative position 0.42, usually after START, before 151
+     sign 415: 96 objects, 26 holders, cross 263 vs shuffle 282.5, P 0.010; block P 0.054945054945054944; mean relative position 0.31, usually after START, before 220
+     sign 760: 72 objects, 29 holders, cross 216 vs shuffle 225.3, P 0.012; block P 0.000999000999000999; mean relative position 0.62, usually after 000, before 740
+     sign 384: 16 objects, 6 holders, cross 5 vs shuffle 7.9, P 0.019; block P 1.0; mean relative position 0.4, usually after START, before 740
+     sign 368: 55 objects, 35 holders, cross 136 vs shuffle 140.7, P 0.020; block P 0.000999000999000999; mean relative position 0.53, usually after 817, before END
+     sign 240: 200 objects, 66 holders, cross 1518 vs shuffle 1539.7, P 0.026; block P 0.17482517482517482; mean relative position 0.39, usually after START, before 520
+     sign 700: 15 objects, 7 holders, cross 1 vs shuffle 2.6, P 0.026; block P 0.08291708291708291; mean relative position 0.73, usually after 033, before END
+     sign 565: 11 objects, 7 holders, cross 5 vs shuffle 6.6, P 0.031; block P 1.0; mean relative position 0.75, usually after 740, before END
+     sign 222: 10 objects, 4 holders, cross 1 vs shuffle 3.7, P 0.035; block P 0.21078921078921078; mean relative position 0.54, usually after 233, before 740
+     sign 927: 6 objects, 4 holders, cross 0 vs shuffle 2.4, P 0.035; block P 1.0; mean relative position 0.48, usually after START, before 740
+     sign 838: 10 objects, 5 holders, cross 5 vs shuffle 7.1, P 0.043; block P 1.0; mean relative position 0.26, usually after START, before 798
+  for comparison, sign 142 itself in the same table:
+     142: 30 objects, 13 holders, area cross 35 vs 34.2, P 0.7772227772227772; block P 1.0
+  signs with 142's text position (within 0.12 of its mean relative position) and 5+ holders, best area P first:
+     sign 690: 58 objects, 17 holders, rel pos 0.59, area P 0.000999000999000999, block P 0.001998001998001998
+     sign 615: 46 objects, 13 holders, rel pos 0.52, area P 0.000999000999000999, block P 0.41058941058941056
+     sign 255: 77 objects, 25 holders, rel pos 0.37, area P 0.002997002997002997, block P 0.014985014985014986
+     sign 923: 30 objects, 12 holders, rel pos 0.58, area P 0.004995004995004995, block P 1.0
+     sign 590: 104 objects, 39 holders, rel pos 0.43, area P 0.007992007992007992, block P 0.003996003996003996
+     sign 706: 45 objects, 25 holders, rel pos 0.37, area P 0.007992007992007992, block P 1.0
+     sign 645: 11 objects, 5 holders, rel pos 0.44, area P 0.008991008991008992, block P nan
+     sign 384: 16 objects, 6 holders, rel pos 0.4, area P 0.01898101898101898, block P 1.0
+     sign 368: 55 objects, 35 holders, rel pos 0.53, area P 0.01998001998001998, block P 0.000999000999000999
+     sign 240: 200 objects, 66 holders, rel pos 0.39, area P 0.025974025974025976, block P 0.17482517482517482
+     sign 904: 28 objects, 14 holders, rel pos 0.55, area P 0.060939060939060936, block P 1.0
+     sign 482: 17 objects, 9 holders, rel pos 0.59, area P 0.08491508491508491, block P 0.0899100899100899
+     sign 220: 219 objects, 74 holders, rel pos 0.44, area P 0.19480519480519481, block P 0.011988011988011988
+     sign 455: 17 objects, 13 holders, rel pos 0.43, area P 0.21578421578421578, block P 1.0
+     sign 233: 108 objects, 44 holders, rel pos 0.43, area P 0.22977022977022976, block P 1.0

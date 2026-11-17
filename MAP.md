@@ -279,4 +279,12 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `guess` The language of the script is not identified. Limits named by the test: only 261 of 498 signs get a picture by rule; one coarse "name" job; flat word lists that merge same-spelled words; OCR-damaged Munda, Sumerian, Elamite lists.
 - Redesign under way: pictures for all glyphs described blind from the images; finer jobs from frame v2; then rerun.
 
+## Findspot leads, word-free (from `jobs/out/spots.md`)
+- `measured` [crest][jar 740][man 090] seals: at Mohenjo-daro 5 of 24 share a building with an owner object of the same crest (2.09 by shuffle, P 0.044); block level 9 of 24 against 5.28; pooled over cities block level 11 of 30 against 6.35 (P 0.024). Those buildings hold 9 same-crest objects against 2.94. These seals are bigger (Mohenjo-daro median 778 against 629 mm2). At Harappa the building test is 0 of 6; with all object kinds the mound matches 18 of 31 against 14.84 (P 0.030).
+- `measured` They do not copy the master's stand pattern or animal (chance). They carry stand S or J on 15 of 21 against 47% of all unicorn seals (P 0.021).
+- `measured` Signs 061/820 + 142: a count (1, 2, 3) stands right before the first sign in 5 of 11 pair texts against 9% elsewhere (P 0.003); 10 of 11 end in the jar. The text `061-142-400-740` is identical on four objects in two cities. Went against: holders spread one per city area (35 against 35.0; 14 blocks against 13.6).
+- `guess` The pair with its count reads as a numbered office or division ("first / second / third" of something) held by a house; the one-per-quarter picture is not shown.
+- `measured` Tablets as records (816 readable of 902): amount + name 356 (343 at Harappa, 5 at Mohenjo-daro); name + thing 176; amount + thing 94; name + name 88. Same name with a different amount in one trench: 9 pairs against 3.5 (P 0.011); a name keeps its own amount: 38 against 21.6 (P 0.003). Cup ceiling holds on all 902 (1, 2, 3, 4, 6). Went against: amounts drifting with depth.
+- `guess` Harappa tablets are issue chits: a fixed amount per named recipient, stepped by issue.
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.

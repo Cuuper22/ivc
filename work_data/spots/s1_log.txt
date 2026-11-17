@@ -1,0 +1,66 @@
+[s1] loaded people.csv 1190 and names_all.csv (undamaged, no goods lines) 2540
+
+(a) Is the manager found where an owner object of his master crest was found?  (managers = seals jar+man; own objects any kind)
+  Mohenjo-daro         building seals: 5 of 24 in a building/area with a master-crest owner object; shuffle 2.09 (ratio 2.39, P 0.0444) | family members 44 of 588 | managers of any object kind: 5 of 33, shuffle 2.73, P 0.1309
+  Mohenjo-daro         block    seals: 9 of 24 in a building/area with a master-crest owner object; shuffle 5.28 (ratio 1.71, P 0.0436) | family members 109 of 588 | managers of any object kind: 10 of 33, shuffle 6.36, P 0.0680
+  Mohenjo-daro         area_key seals: 17 of 26 in a building/area with a master-crest owner object; shuffle 15.47 (ratio 1.10, P 0.3249) | family members 379 of 688 | managers of any object kind: 24 of 42, shuffle 22.45, P 0.3638
+  Harappa              building seals: 0 of 6 in a building/area with a master-crest owner object; shuffle 0.20 (ratio 0.00, P 1.0000) | family members 6 of 123 | managers of any object kind: 0 of 10, shuffle 0.45, P 1.0000
+  Harappa              block    seals: 2 of 6 in a building/area with a master-crest owner object; shuffle 1.06 (ratio 1.88, P 0.2837) | family members 21 of 123 | managers of any object kind: 4 of 10, shuffle 3.02, P 0.3468
+  Harappa              area_key seals: 3 of 7 in a building/area with a master-crest owner object; shuffle 1.97 (ratio 1.52, P 0.2899) | family members 51 of 170 | managers of any object kind: 11 of 31, shuffle 9.85, P 0.3508
+  Harappa              mound    seals: 5 of 7 in a building/area with a master-crest owner object; shuffle 3.89 (ratio 1.28, P 0.2851) | family members 97 of 170 | managers of any object kind: 18 of 31, shuffle 14.84, P 0.0295
+  Kalibangan           building seals: 0 of 0; no test | members 0 of 21
+  Kalibangan           block    seals: 0 of 0; no test | members 0 of 21
+  Kalibangan           area_key seals: 0 of 0; no test | members 2 of 24
+  Lothal               building seals: 0 of 0; no test | members 0 of 0
+  Lothal               block    seals: 0 of 0; no test | members 0 of 0
+  Lothal               area_key seals: 0 of 2 in a building/area with a master-crest owner object; shuffle 0.03 (ratio 0.00, P 1.0000) | family members 0 of 30 | managers of any object kind: 0 of 11, shuffle 0.20, P 1.0000
+  Dholavira            building seals: 0 of 0; no test | members 0 of 33
+  Dholavira            block    seals: 0 of 0; no test | members 0 of 33
+  Dholavira            area_key seals: 0 of 0; no test | members 1 of 36
+  pooled (all cities)  building seals: 5 of 30 in a building/area with a master-crest owner object; shuffle 2.33 (ratio 2.14, P 0.0722) | family members 52 of 775 | managers of any object kind: 5 of 43, shuffle 3.13, P 0.2069
+  pooled (all cities)  block    seals: 11 of 30 in a building/area with a master-crest owner object; shuffle 6.35 (ratio 1.73, P 0.0240) | family members 132 of 775 | managers of any object kind: 14 of 43, shuffle 9.40, P 0.0395
+  pooled (all cities)  area_key seals: 20 of 36 in a building/area with a master-crest owner object; shuffle 17.45 (ratio 1.15, P 0.1920) | family members 435 of 968 | managers of any object kind: 35 of 85, shuffle 32.53, P 0.2804
+
+  managers available with a findspot (seals read whole/nearly whole): Mohenjo-daro 28 (with building 24, with area 26); Harappa 8 (with building 6, with area 7); Kalibangan 0 (with building 0, with area 0); Lothal 2 (with building 0, with area 2); Dholavira 0 (with building 0, with area 0)
+
+(b) MAIN HOUSE: does the manager sit in the building that holds MORE of the master crest than other buildings do?
+  level building : 27 managers whose master crest has owner objects in the same city: master-crest objects in the manager's own building total 9; shuffle 2.94 (ratio 3.06, P 0.0104)
+  level area_key : 31 managers whose master crest has owner objects in the same city: master-crest objects in the manager's own area_key total 76; shuffle 70.87 (ratio 1.07, P 0.3799)
+  managers sitting with their master crest, and how that building ranks among all places holding the crest in the city:
+     M-1746    Mohenjo-daro|DKG. (S)|7II          crest 240: 1 of the crest's 27 objects in this city sit here; the most any place holds 3; rank 4 of 23 places
+     M-100     Mohenjo-daro|DKE|Trench E          crest 705: 2 of the crest's 25 objects in this city sit here; the most any place holds 2; rank 1 of 22 places
+     M-199     Mohenjo-daro|DKG|First Street      crest 240: 2 of the crest's 27 objects in this city sit here; the most any place holds 3; rank 2 of 23 places
+     M-265     Mohenjo-daro|DKG. (S)|9VIII        crest 061: 1 of the crest's 12 objects in this city sit here; the most any place holds 1; rank 1 of 12 places
+     M-865     Mohenjo-daro|DKE|Trench E          crest 235: 3 of the crest's 38 objects in this city sit here; the most any place holds 3; rank 1 of 33 places
+  all 27 usable managers: building is the single biggest holder of the crest in 3; holds any 5
+  benchmark, ordinary owner seals at Mohenjo-daro: their building (leaving the seal itself out) is a top holder of their own crest in 25 of 588
+
+(c) Are managers' seals bigger inside each site?  (face area mm2; all named undamaged seals, not only the whole-read ones)
+  Banawali        managers 1 (1250 mm2) | others median 352
+  Gola Dhoro (Bagasra) managers 1 (697 mm2) | others median 393
+  Harappa         managers   8 median 524 | all other seals  245 median 581 (P 0.5875) | owners of the same crests  18 median 581 (P 0.5222)
+  Lothal          managers   2 median 881 | all other seals   53 median 412 (P 0.0920) | owners of the same crests   3 median 488 (P 0.2000)
+  Mohenjo-daro    managers  33 median 778 | all other seals  833 median 629 (P 0.0266) | owners of the same crests 208 median 639 (P 0.0474)
+  Nausharo        managers 1 (1054 mm2) | others median 626
+  pooled over 5 sites (45 managers): a manager's seal sits at the 60.2th percentile of its own site's seal sizes on average; label shuffle inside site gives 50.3 (P 0.0130)
+  managers 758 mm2 vs plain "house of" owner seals 645 mm2 (all sites pooled); MWU P 0.03409
+
+(d) Household mark: does the manager share the stand letter / animal with the master crest's seals?
+  manager vs master-crest owner seals in the same building : stand letter   match 1 of 5 pairs; shuffle 1.35 (P 0.7756)
+  manager vs master-crest owner seals in the same building : animal species match 5 of 5 pairs; shuffle 3.25 (P 0.1799)
+  manager vs master-crest owner seals in the same area_key : stand letter   match 4 of 32 pairs; shuffle 8.75 (P 0.9790)
+  manager vs master-crest owner seals in the same area_key : animal species match 40 of 63 pairs; shuffle 40.94 (P 0.5872)
+  manager vs master-crest owner seals in the same site     : stand letter   match 38 of 139 pairs; shuffle 39.81 (P 0.6337)
+  manager vs master-crest owner seals in the same site     : animal species match 184 of 291 pairs; shuffle 190.62 (P 0.6447)
+  manager vs ALL other seals in the same building : stand letter   match 16 of 70 pairs; shuffle 19.20 (P 0.7916)
+  manager vs ALL other seals in the same building : animal species match 83 of 124 pairs; shuffle 80.88 (P 0.4873)
+  manager vs ALL other seals in the same area_key : stand letter   match 442 of 1628 pairs; shuffle 456.02 (P 0.6097)
+  manager vs ALL other seals in the same area_key : animal species match 2319 of 4542 pairs; shuffle 2952.77 (P 0.9695)
+
+  the managers that sit with master-crest owner seals, with their marks:
+     M-1746    Mohenjo-daro|DKG. (S)|7II        animal unicorn            stand S | master seals: M-1726 unicorn/W
+     M-199     Mohenjo-daro|DKG|First Street    animal unicorn            stand S | master seals: Lipi-2388 unicorn/S
+     M-265     Mohenjo-daro|DKG. (S)|9VIII      animal zebu               stand - | master seals: M-408 none/-
+     M-865     Mohenjo-daro|DKE|Trench E        animal unicorn            stand W | master seals: M-1738 unicorn/S; M-47 unicorn/J; M-323 unicorn/L
+
+  manager stand letter vs master-crest owner seals anywhere in the same city (not only the same building):
