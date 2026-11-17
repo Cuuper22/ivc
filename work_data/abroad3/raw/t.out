@@ -1,0 +1,2708 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+<head>
+  <!-- force compatibility mode (quirks mode) off in IE  to avoid IE8/9/10 rendering as IE7 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortlink" href="/node/2959996" />
+<meta property="twitter:card" content="summary" />
+<meta property="og:url" content="/collections-online" />
+<meta property="og:title" content="SEARCH THE COLLECTION" />
+<meta property="og:description" content="Search more than 300,000 objects from the Ashmolean Museum’s world-famous collection, from Egyptian mummies and classical sculpture to Pre-Raphaelite paintings and contemporary art." />
+<meta property="og:image" content="https://www.ashmolean.org/sites/default/files/ashmolean-online-collections-2020-appeal-banner.jpg" />
+<meta name="description" content="Search more than 300,000 objects from the Ashmolean Museum’s world-famous collection, from Egyptian mummies and classical sculpture to Pre-Raphaelite paintings and contemporary art." />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:600,600i,700,700i,300,300i,400,400i%7CLora:400,400i,700,700i%7CAbril+Fatface:400,400i,700,700i%7COpen+Sans:400,400i,700,700i,600,600i%7CFira+Sans:400,400i,700,700i%7COswald:500,500i,700,700i" />
+<link rel="canonical" href="https://www.ashmolean.org/collections-online" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  <title>SEARCH THE COLLECTION | Ashmolean Museum</title>
+  <style>
+@import url("https://www.ashmolean.org/modules/system/system.base.css?to156f");
+</style>
+<style>
+@import url("https://www.ashmolean.org/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?to156f");
+@import url("https://www.ashmolean.org/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?to156f");
+@import url("https://www.ashmolean.org/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.slider.min.css?to156f");
+</style>
+<style>
+@import url("https://www.ashmolean.org/modules/field/theme/field.css?to156f");
+@import url("https://www.ashmolean.org/sites/all/modules/contrib/media_preview_slider/css/slider-styles.css?to156f");
+@import url("https://www.ashmolean.org/modules/node/node.css?to156f");
+@import url("https://www.ashmolean.org/sites/all/modules/contrib/views/css/views.css?to156f");
+@import url("https://www.ashmolean.org/sites/all/modules/custom/ckeditor/css/ckeditor.css?to156f");
+@import url("https://www.ashmolean.org/sites/all/modules/contrib/entity_embed/css/entity_embed.css?to156f");
+</style>
+<style>
+@import url("https://www.ashmolean.org/sites/all/modules/contrib/ctools/css/ctools.css?to156f");
+@import url("https://www.ashmolean.org/sites/all/libraries/fancybox/source/jquery.fancybox.css?to156f");
+@import url("https://www.ashmolean.org/sites/all/modules/contrib/panels/css/panels.css?to156f");
+@import url("https://www.ashmolean.org/sites/all/modules/contrib/panels/plugins/layouts/onecol/onecol.css?to156f");
+</style>
+<style>select.field-add-more-type option[value=custom_css]{display:none}
+select.field-add-more-type option[value=custom_javascript]{display:none}
+select.field-add-more-type option[value=web_application]{display:none}
+.field-name-field-advanced-section-content .field-name-field-enable-widget-bg-color,.field-name-field-advanced-section-content .field-name-field-widget-background-colour,.field-name-field-advanced-section-content .field-name-field-title-text-colour{display:none;}
+.field-name-field-advanced-tab-content .field-name-field-enable-widget-bg-color,.field-name-field-advanced-tab-content .field-name-field-widget-background-colour,.field-name-field-advanced-tab-content .field-name-field-title-text-colour{display:none;}
+select.field-add-more-type option[value=custom_css]{display:none}
+select.field-add-more-type option[value=custom_javascript]{display:none}
+select.field-add-more-type option[value=web_application]{display:none}
+.field-name-field-advanced-section-content .field-name-field-enable-widget-bg-color,.field-name-field-advanced-section-content .field-name-field-widget-background-colour,.field-name-field-advanced-section-content .field-name-field-title-text-colour{display:none;}
+.field-name-field-advanced-tab-content .field-name-field-enable-widget-bg-color,.field-name-field-advanced-tab-content .field-name-field-widget-background-colour,.field-name-field-advanced-tab-content .field-name-field-title-text-colour{display:none;}
+</style>
+<style>
+@import url("https://www.ashmolean.org/sites/all/libraries/swiper/css/swiper.min.css?to156f");
+@import url("https://www.ashmolean.org/sites/all/modules/features/oxdrupal_core_paragraph_bundles/css/oxdrupal_core_paragraph.css?to156f");
+</style>
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.css" media="all" crossorigin="anonymous" integrity="sha256-0XAFLBbK7DgQ8t7mRWU5BF2OMm9tjtfH945Z7TTeNIo=" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.3.1/7.x-3.x/drupal-bootstrap.css" media="all" crossorigin="anonymous" integrity="sha256-9zGXDrcvPKxQmSI/s9Rm9jypcvR2INe5SG/jot1Dqg0=" />
+<style>
+@import url("https://www.ashmolean.org/sites/all/themes/custom/oxtheme/../../../libraries/fontawesome/css/all.css?to156f");
+@import url("https://www.ashmolean.org/sites/all/themes/custom/oxtheme/../../../libraries/fontawesome/css/v4-shims.min.css?to156f");
+@import url("https://www.ashmolean.org/sites/all/themes/custom/oxtheme/../../../libraries/dataTables/css/jquery.dataTables.css?to156f");
+@import url("https://www.ashmolean.org/sites/default/files/themes/oxtheme_style.css?to156f");
+</style>
+<style>
+@import url("https://www.ashmolean.org/sites/default/files/themes/custom/css/ashmolean.web.ox.ac.uk/oxdrupal_custom_colours.css?to156f");
+@import url("https://www.ashmolean.org/sites/default/files/themes/custom/css/ashmolean.web.ox.ac.uk/oxdrupal_custom_fonts.css?to156f");
+@import url("https://www.ashmolean.org/sites/default/files/themes/custom/css/ashmolean.web.ox.ac.uk/custom_settings.css?to156f");
+</style>
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="https://www.ashmolean.org/sites/all/modules/contrib/jquery_update/replace/jquery/3.6/jquery.min.js?v=3.6.0"></script>
+<script>jQuery.migrateMute=true;jQuery.migrateTrace=false;</script>
+<script src="https://www.ashmolean.org/sites/all/modules/contrib/jquery_update/replace/jquery-migrate/3/jquery-migrate.min.js?v=3"></script>
+<script src="https://www.ashmolean.org/misc/jquery-extend-3.4.0.js?v=3.6.0"></script>
+<script src="https://www.ashmolean.org/misc/jquery-html-prefilter-3.5.0-backport.js?v=3.6.0"></script>
+<script src="https://www.ashmolean.org/misc/jquery.once.js?v=1.2"></script>
+<script src="https://www.ashmolean.org/misc/drupal.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.10.2"></script>
+<script src="https://www.ashmolean.org/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js?v=1.10.2"></script>
+<script src="https://www.ashmolean.org/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.mouse.min.js?v=1.10.2"></script>
+<script src="https://www.ashmolean.org/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.slider.min.js?v=1.10.2"></script>
+<script src="https://www.ashmolean.org/misc/form-single-submit.js?v=7.103.15+7.103.1:drupal"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.js"></script>
+<script src="https://www.ashmolean.org/sites/all/modules/custom/entityreference/js/entityreference.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/modules/contrib/media_preview_slider/js/slider.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/modules/contrib/fancybox/fancybox.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/libraries/fancybox/source/jquery.fancybox.pack.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/libraries/fancybox/lib/jquery.mousewheel.pack.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/modules/features/oxdrupal_responsive_header/oxdrupal_responsive_header.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/modules/features/oxdrupal_listings/js/youtube_videos_global_variables.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/modules/features/oxdrupal_listings/js/call_to_actions.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/modules/features/oxdrupal_listings/js/tile_rollover_height.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/modules/features/oxdrupal_listings/js/scrolltowidget.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/modules/custom/oxdrupal_feedback/js/oxdrupal_feedback.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/modules/custom/oxdrupal_widgets/oxdrupal_webforms/js/oxdrupal_webforms.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/modules/custom/google_analytics/googleanalytics.js?to156f"></script>
+<script src="https://www.googletagmanager.com/gtag/js?id=UA-12735427-1"></script>
+<script>if (window.navigator.useragent != 'Mosaic Wraith') {window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("set", "developer_id.dMDhkMT", true);gtag("config", "UA-12735427-1", {"groups":"default","cookie_domain":".www.ashmolean.org","anonymize_ip":true});}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.0/core.js" crossorigin="anonymous" integrity="sha512-Zb/49B03Pvr5qzNelm8HxpBm5QYIpsEErXq7E6hdNfEGE2rP0Ex7Beu9Ts6Rwcok3LABILg3Bv0YOldPvyknRg=="></script>
+<script src="https://www.ashmolean.org/sites/all/libraries/sweetalert/sweetalert2.all.min.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/modules/features/oxdrupal_listings/js/javascript_pagination.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/modules/features/oxdrupal_feeds/js/oxdrupal_feeds.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/libraries/twig/js/js/twig.min.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/libraries/jquery.truncate/jquery.truncate.js?to156f"></script>
+<script src="https://cc.cdn.civiccomputing.com/9/cookieControl-9.11.min.js" crossorigin="anonymous" integrity="sha256-286j9iL2PIO+NrkgKCC1VFKXpPhZ25zHUz14d3cEkPg="></script>
+<script src="https://www.ashmolean.org/sites/all/modules/features/oxdrupal_site_settings/js/oxdrupal_site_settings_cookies.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/libraries/swiper/js/swiper.min.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/modules/custom/oxdrupal_widgets/oxdrupal_slideshow/js/slideshow_height.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/modules/custom/oxdrupal_widgets/oxdrupal_vacancies/js/oxdrupal_vacancies.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/libraries/moment/moment.min.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/modules/features/oxdrupal_core_paragraph_bundles/js/taxonomy_filter_selects.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/modules/features/oxdrupal_theme_top_nav/js/wide_menu.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/themes/custom/oxtheme/js/header.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/modules/features/oxdrupal_wysiwyg/oxdrupal_wysiwyg_circled_list.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/themes/custom/oxtheme/js/accessibility.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/themes/custom/oxtheme/../../../libraries/dataTables/js/jquery.dataTables.min.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/themes/custom/oxtheme/js/dataTables.js?to156f"></script>
+<script src="https://www.ashmolean.org/sites/all/themes/custom/oxtheme/js/youtube_placeholder.js?to156f"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"oxtheme_flex","theme_token":"eFiygAAsMxEf6mAz2TnUbB7LJZHr5uGK2sr9z9sZpDs","js":{"sites\/all\/themes\/contrib\/bootstrap\/js\/bootstrap.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/3.6\/jquery.min.js":1,"0":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery-migrate\/3\/jquery-migrate.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.mouse.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.slider.min.js":1,"misc\/form-single-submit.js":1,"https:\/\/cdn.jsdelivr.net\/npm\/bootstrap@3.4.1\/dist\/js\/bootstrap.js":1,"sites\/all\/modules\/custom\/entityreference\/js\/entityreference.js":1,"sites\/all\/modules\/contrib\/media_preview_slider\/js\/slider.js":1,"sites\/all\/modules\/contrib\/fancybox\/fancybox.js":1,"sites\/all\/libraries\/fancybox\/source\/jquery.fancybox.pack.js":1,"sites\/all\/libraries\/fancybox\/lib\/jquery.mousewheel.pack.js":1,"sites\/all\/modules\/features\/oxdrupal_responsive_header\/oxdrupal_responsive_header.js":1,"sites\/all\/modules\/features\/oxdrupal_listings\/js\/youtube_videos_global_variables.js":1,"sites\/all\/modules\/features\/oxdrupal_listings\/js\/call_to_actions.js":1,"sites\/all\/modules\/features\/oxdrupal_listings\/js\/tile_rollover_height.js":1,"sites\/all\/modules\/features\/oxdrupal_listings\/js\/scrolltowidget.js":1,"sites\/all\/modules\/custom\/oxdrupal_feedback\/js\/oxdrupal_feedback.js":1,"sites\/all\/modules\/custom\/oxdrupal_widgets\/oxdrupal_webforms\/js\/oxdrupal_webforms.js":1,"sites\/all\/modules\/custom\/google_analytics\/googleanalytics.js":1,"https:\/\/www.googletagmanager.com\/gtag\/js?id=UA-12735427-1":1,"1":1,"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/core-js\/2.5.0\/core.js":1,"sites\/all\/libraries\/sweetalert\/sweetalert2.all.min.js":1,"sites\/all\/modules\/features\/oxdrupal_listings\/js\/javascript_pagination.js":1,"sites\/all\/modules\/features\/oxdrupal_feeds\/js\/oxdrupal_feeds.js":1,"sites\/all\/libraries\/twig\/js\/js\/twig.min.js":1,"sites\/all\/libraries\/jquery.truncate\/jquery.truncate.js":1,"https:\/\/cc.cdn.civiccomputing.com\/9\/cookieControl-9.11.min.js":1,"sites\/all\/modules\/features\/oxdrupal_site_settings\/js\/oxdrupal_site_settings_cookies.js":1,"sites\/all\/libraries\/swiper\/js\/swiper.min.js":1,"sites\/all\/modules\/custom\/oxdrupal_widgets\/oxdrupal_slideshow\/js\/slideshow_height.js":1,"sites\/all\/modules\/custom\/oxdrupal_widgets\/oxdrupal_vacancies\/js\/oxdrupal_vacancies.js":1,"sites\/all\/libraries\/moment\/moment.min.js":1,"sites\/all\/modules\/features\/oxdrupal_core_paragraph_bundles\/js\/taxonomy_filter_selects.js":1,"sites\/all\/modules\/features\/oxdrupal_theme_top_nav\/js\/wide_menu.js":1,"sites\/all\/themes\/custom\/oxtheme\/js\/header.js":1,"sites\/all\/modules\/features\/oxdrupal_wysiwyg\/oxdrupal_wysiwyg_circled_list.js":1,"sites\/all\/themes\/custom\/oxtheme\/js\/accessibility.js":1,"sites\/all\/themes\/custom\/oxtheme\/..\/..\/..\/libraries\/dataTables\/js\/jquery.dataTables.min.js":1,"sites\/all\/themes\/custom\/oxtheme\/js\/dataTables.js":1,"sites\/all\/themes\/custom\/oxtheme\/js\/youtube_placeholder.js":1},"css":{"modules\/system\/system.base.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.slider.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/media_preview_slider\/css\/slider-styles.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/custom\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/entity_embed\/css\/entity_embed.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/libraries\/fancybox\/source\/jquery.fancybox.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/modules\/contrib\/panels\/plugins\/layouts\/onecol\/onecol.css":1,"0":1,"1":1,"2":1,"3":1,"4":1,"5":1,"6":1,"7":1,"8":1,"9":1,"sites\/all\/libraries\/swiper\/css\/swiper.min.css":1,"sites\/all\/modules\/features\/oxdrupal_core_paragraph_bundles\/css\/oxdrupal_core_paragraph.css":1,"https:\/\/cdn.jsdelivr.net\/npm\/bootstrap@3.4.1\/dist\/css\/bootstrap.css":1,"https:\/\/cdn.jsdelivr.net\/npm\/@unicorn-fail\/drupal-bootstrap-styles@0.0.2\/dist\/3.3.1\/7.x-3.x\/drupal-bootstrap.css":1,"sites\/all\/themes\/custom\/oxtheme\/..\/..\/..\/libraries\/fontawesome\/css\/all.css":1,"sites\/all\/themes\/custom\/oxtheme\/..\/..\/..\/libraries\/fontawesome\/css\/v4-shims.min.css":1,"sites\/all\/themes\/custom\/oxtheme\/..\/..\/..\/libraries\/dataTables\/css\/jquery.dataTables.css":1,"sites\/default\/files\/themes\/oxtheme_style.css":1,"sites\/default\/files\/themes\/custom\/css\/ashmolean.web.ox.ac.uk\/oxdrupal_custom_colours.css":1,"sites\/default\/files\/themes\/custom\/css\/ashmolean.web.ox.ac.uk\/oxdrupal_custom_fonts.css":1,"sites\/default\/files\/themes\/custom\/css\/ashmolean.web.ox.ac.uk\/custom_settings.css":1,"sites\/default\/files\/themes\/custom\/css\/ashmolean.web.ox.ac.uk\/custom.css":1}},"fancybox":{"selectors":[".fancybox"]},"googleanalytics":{"account":["UA-12735427-1"],"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"currentPath":"node\/2959996","currentPathIsAdmin":false,"oxdrupal_site_settings_cookies":{"analyticsCookies":"\u0027_ga\u0027, \u0027_gid\u0027, \u0027_gat*\u0027, \u0027_gat_gtag_*\u0027,\u0027_clck\u0027,\u0027_clsk\u0027, \u0027_ttp\u0027","functionalCookies":"","essentialCookies":"\u0027quickedit\u0027, \u0027ajs_anonymous_id\u0027, \u0027ajs_group_id\u0027, \u0027ajs_user_id\u0027, \u0027TSNGUID\u0027, \u0027login_idle_session_timeout\u0027, \u0027staging-login_idle_session_timeout\u0027, \u0027SimpleSAMLAuthToken\u0027, \u0027SimpleSAMLSessionID\u0027, \u0027SSESS*\u0027, \u0027CookieControl\u0027, \u0027has_js\u0027, \u0027Drupal.toolbar.collapsed\u0027, \u0027Drupal.tableDrag.showWeight\u0027, \u0027NO_CACHE\u0027","apiKey":"33682ad9b7be72b5c2a4af66e77916ccbecad0ed","product":"CUSTOM","position":"left","analyticsCookieOnAccept":"window.clarity(\u0027consent\u0027);\r\n\/* TikTok Pixel *\/\r\n!function (w, d, t) {\r\n  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=[\u0022page\u0022,\u0022track\u0022,\u0022identify\u0022,\u0022instances\u0022,\u0022debug\u0022,\u0022on\u0022,\u0022off\u0022,\u0022once\u0022,\u0022ready\u0022,\u0022alias\u0022,\u0022group\u0022,\u0022enableCookie\u0022,\u0022disableCookie\u0022],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i\u003Cttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n\u003Cttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i=\u0022https:\/\/analytics.tiktok.com\/i18n\/pixel\/events.js\u0022;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement(\u0022script\u0022);o.type=\u0022text\/javascript\u0022,o.async=!0,o.src=i+\u0022?sdkid=\u0022+e+\u0022\u0026lib=\u0022+t;var a=document.getElementsByTagName(\u0022script\u0022)[0];a.parentNode.insertBefore(o,a)};\r\n  ttq.load(\u0027CTTTNL3C77U8UG3MLK80\u0027);\r\n  ttq.page();\r\n}(window, document, \u0027ttq\u0027);\r\n\r\n\/* Reddit Pixel *\/\r\n\r\n\/* Meta Pixel *\/\r\n!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?\r\nn.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;\r\nn.push=n;n.loaded=!0;n.version=\u00272.0\u0027;n.queue=[];t=b.createElement(e);t.async=!0;\r\nt.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,\r\ndocument,\u0027script\u0027,\u0027https:\/\/connect.facebook.net\/en_US\/fbevents.js\u0027);\r\nfbq(\u0027consent\u0027, \u0027grant\u0027);\r\nfbq(\u0027init\u0027, \u00271992446304404948\u0027);\r\nfbq(\u0027set\u0027,\u0027agent\u0027,\u0027tmgoogletagmanager\u0027, \u00271992446304404948\u0027);\r\nfbq(\u0027track\u0027, \u0022PageView\u0022);\r\nfbq(\u0027consent\u0027, \u0027grant\u0027);\r\n\r\n\/* MS Clarity *\/\r\n\/*\r\n(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src=\u0022https:\/\/www.clarity.ms\/tag\/\u0022+i+\u0022?ref=gtm2\u0022;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,\u0022clarity\u0022,\u0022script\u0022,\u0022ovcqbk5cql\u0022);\r\n*\/","analyticsCookieOnDecline":"window.clarity(\u0027consent\u0027, false)\r\n\/* Meta Pixel *\/\r\nfbq(\u0027consent\u0027, \u0027revoke\u0027);","functionalCookieOnAccept":"","functionalCookieOnDecline":"","branding":{"fontColor":"#000000","notifyFontColor":"#000000","backgroundColor":"#ffffff"}},"oxdrupal_vacancies":{"vacanciesAPIBaseURL":"https:\/\/wnrkuv8ox6.execute-api.eu-west-2.amazonaws.com\/production","vacanciesAPIKey":"64QfQNjElP1jVVmS1ZeIW2By9Uq0dIyC6Pvsww17"},"urlIsAjaxTrusted":{"\/collections-online":true},"ogContext":{"groupType":"node","gid":"135731"},"bootstrap":{"anchorsFix":"0","anchorsSmoothScrolling":"0","formHasError":1,"popoverEnabled":1,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":1,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+        <!-- Google Tag Manager -->
+      <script>
+        jQuery(document).ready(function(){
+        
+          // Start GTM if Analytics cookies have been accepted.
+          setTimeout(startGTM, 1000);
+
+          function startGTM() {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5WV2RXL')
+          }
+        })
+      </script>
+      <!-- End Google Tag Manager -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.ashmolean.org/sites/default/files/styles/apple-touch-icon-180x180/public/ashmolean/site-favicon/ashmolean_favicon_180px.png?itok=PK5jL_8k"><link rel="icon" type="image/png" href="https://www.ashmolean.org/sites/default/files/styles/favicon-32x32/public/ashmolean/site-favicon/ashmolean_favicon_180px.png?itok=Haly9i7H" sizes="32x32"><link rel="icon" type="image/png" href="https://www.ashmolean.org/sites/default/files/styles/favicon-16x16/public/ashmolean/site-favicon/ashmolean_favicon_180px.png?itok=qTdzxhcq" sizes="16x16"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="https://www.ashmolean.org/sites/default/files/styles/mstile-144x144/public/ashmolean/site-favicon/ashmolean_favicon_180px.png?itok=1KffrybE"><meta name="theme-color" content="#ffffff" /></head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-2959996 node-type-oxdrupal-basic-page og-context og-context-node og-context-node-135731 no-background-image content-position-default header_topbar header_header_links search_ header crest_none widget-titles-centered page-title-align-centre page-title-margin-top-double page-title-margin-bottom-double page-subtitle-margin-top-single page-subtitle-margin-bottom-single chevron-right custom_advanced" >
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WV2RXL"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  <div class="skip-link">
+    <a href="#" tabindex="0" class="element-invisible element-focusable pause-animated-content">Pause animated content</a>
+  </div>
+  <div id="skip-link">
+    <a href="#main-content" tabindex="0" aria-flowto="main-content" aria-label="Skip to main content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    
+<header id="header" class="region-fullwidth mobile_style_two_level_no_crest sticky_header wide-content-width header">
+    <div id="topbar" class="sub-container sub-container" >
+    <div class="container">
+                              <div id="topbar-links" class="primary_link_position_right">
+        <a class='fas fa-ellipsis-h topbar-links-trigger' role='button' aria-label='Secondary menu' tabindex='0'></a>        <div class="links-container">
+                    <div class="primary-links primary_link_icons_0">
+              <div class="region region-header-links">
+    <div class="block-views-header-links-blk block block-views clearfix">
+      
+  <div class="view view-header-links view-id-header_links view-display-id-blk block-header-links view-dom-id-39574eb78ab0a3646fb56dbbd8272fe4">
+        
+  
+  
+      <div 
+   >
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class=""><a href="http://www.ox.ac.uk" title="http://www.ox.ac.uk"><div class="fa-2x fa fa-none" ></div><span>University of Oxford</span></a></div>
+</div>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class=""><a href="/venue-hire" title="https://www.ashmolean.org/venue-hire"><div class="fa-2x fa fa-none" ></div><span>Venue Hire</span></a></div>
+</div>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd views-row-last">
+      
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class=""><a href="/working-ashmolean" title="https://www.ashmolean.org/working-ashmolean"><div class="fa-2x fa fa-none" ></div><span>Working for us</span></a></div>
+</div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div></div>
+  </div>
+          </div>
+                    <div class="secondary-links secondary_link_icons_1">
+              <div class="region region-topbar">
+    <div class="block-views-social-media-links-blk-topbar block block-views clearfix">
+      
+  <div class="view view-social-media-links view-id-social_media_links view-display-id-blk_topbar block-social-media-links view-dom-id-894162615619b733266e1839ef3bce37">
+        
+  
+  
+      <div 
+   >
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class=""><a href="https://www.instagram.com/ashmoleanmuseum/" title="Instagram" target="_blank"><div class="fa-2x fab fa-instagram" ></div><span class="sr-only">Instagram</span></a></div>
+</div>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class=""><a href="https://www.youtube.com/ashmoleanmuseum" title="YouTube" target="_blank"><div class="fa-2x fab fa-youtube" ></div><span class="sr-only">YouTube</span></a></div>
+</div>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class=""><a href="https://www.facebook.com/ashmoleanmuseum/" title="Facebook" target="_blank"><div class="fa-2x fab fa-facebook-f" ></div><span class="sr-only">Facebook</span></a></div>
+</div>  </div>  </div>
+  <div class="views-row views-row-4 views-row-even">
+      
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class=""><a href="https://www.threads.com/@ashmoleanmuseum" title="Threads"><div class="fa-2x fa fa-threads" ></div><span class="sr-only">Threads</span></a></div>
+</div>  </div>  </div>
+  <div class="views-row views-row-5 views-row-odd">
+      
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class=""><a href="https://bsky.app/profile/ashmoleanmuseum.bsky.social" title="Bluesky"><div class="fa-2x fa fa-bluesky" ></div><span class="sr-only">Bluesky</span></a></div>
+</div>  </div>  </div>
+  <div class="views-row views-row-6 views-row-even">
+      
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class=""><a href="https://www.tiktok.com/@ashmoleanmuseum" title="TikTok" target="_blank"><div class="fa-2x fa fa-tiktok" ></div><span class="sr-only">TikTok</span></a></div>
+</div>  </div>  </div>
+  <div class="views-row views-row-7 views-row-odd views-row-last">
+      
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class=""><a href="https://x.com/AshmoleanMuseum" title="X" target="_blank"><div class="fa-2x fa fa-x-twitter" ></div><span class="sr-only">Twitter</span></a></div>
+</div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div></div>
+  </div>
+          </div>
+        </div>
+                      </div>
+    </div>
+  </div>
+    <div id="header-main" class="sub-container desktop-header-padding">
+    <div class="container">
+      <div id="header-wrapper">
+                
+      <div id='logo-container'>
+        <a href='/'>
+          <img src='https://www.ashmolean.org/sites/default/files/styles/site_logo/public/styles/site_logo/public/ashmolean/site-logo/ash_lock_up-crop.png?itok=JoHc7EPR' alt='Logo'/>
+        </a>
+      </div>
+                    
+    <div id='sticky-logo-container'>
+      <a href='/'>
+        
+      <img src='https://www.ashmolean.org/sites/default/files/styles/site_logo_mobile/public/styles/site_logo_mobile/public/ashmolean/site-mobile-logo/ash_mobile.png?itok=OMQges-W' alt='Logo'/>
+    
+      </a>
+    </div>
+          <div id="header-inline-container">
+                              
+    <div id='mobile-branding-container'>
+      <a href='/'>
+        
+          <img src='https://www.ashmolean.org/sites/default/files/styles/site_logo_mobile/public/styles/site_logo_mobile/public/ashmolean/site-mobile-logo/ash_mobile.png?itok=OMQges-W' alt='Logo'/>
+        
+      </a>
+    </div>
+            <div id="mobile-icon-container">
+                        
+    <div id='mobile-links'>
+      <a class='fas fa-ellipsis-h topbar-links-trigger' role='button' aria-label='Secondary menu' tabindex='0'></a>
+      <div class='links-container'>
+        <div class='primary-links'>
+            <div class="region region-header-links">
+    <div class="block-views-header-links-blk block block-views clearfix">
+      
+  <div class="view view-header-links view-id-header_links view-display-id-blk block-header-links view-dom-id-39574eb78ab0a3646fb56dbbd8272fe4">
+        
+  
+  
+      <div 
+   >
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class=""><a href="http://www.ox.ac.uk" title="http://www.ox.ac.uk"><div class="fa-2x fa fa-none" ></div><span>University of Oxford</span></a></div>
+</div>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class=""><a href="/venue-hire" title="https://www.ashmolean.org/venue-hire"><div class="fa-2x fa fa-none" ></div><span>Venue Hire</span></a></div>
+</div>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd views-row-last">
+      
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class=""><a href="/working-ashmolean" title="https://www.ashmolean.org/working-ashmolean"><div class="fa-2x fa fa-none" ></div><span>Working for us</span></a></div>
+</div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div></div>
+  </div>
+
+        </div>
+        <div class='secondary-links'>
+            <div class="region region-topbar">
+    <div class="block-views-social-media-links-blk-topbar block block-views clearfix">
+      
+  <div class="view view-social-media-links view-id-social_media_links view-display-id-blk_topbar block-social-media-links view-dom-id-894162615619b733266e1839ef3bce37">
+        
+  
+  
+      <div 
+   >
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class=""><a href="https://www.instagram.com/ashmoleanmuseum/" title="Instagram" target="_blank"><div class="fa-2x fab fa-instagram" ></div><span class="sr-only">Instagram</span></a></div>
+</div>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class=""><a href="https://www.youtube.com/ashmoleanmuseum" title="YouTube" target="_blank"><div class="fa-2x fab fa-youtube" ></div><span class="sr-only">YouTube</span></a></div>
+</div>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class=""><a href="https://www.facebook.com/ashmoleanmuseum/" title="Facebook" target="_blank"><div class="fa-2x fab fa-facebook-f" ></div><span class="sr-only">Facebook</span></a></div>
+</div>  </div>  </div>
+  <div class="views-row views-row-4 views-row-even">
+      
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class=""><a href="https://www.threads.com/@ashmoleanmuseum" title="Threads"><div class="fa-2x fa fa-threads" ></div><span class="sr-only">Threads</span></a></div>
+</div>  </div>  </div>
+  <div class="views-row views-row-5 views-row-odd">
+      
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class=""><a href="https://bsky.app/profile/ashmoleanmuseum.bsky.social" title="Bluesky"><div class="fa-2x fa fa-bluesky" ></div><span class="sr-only">Bluesky</span></a></div>
+</div>  </div>  </div>
+  <div class="views-row views-row-6 views-row-even">
+      
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class=""><a href="https://www.tiktok.com/@ashmoleanmuseum" title="TikTok" target="_blank"><div class="fa-2x fa fa-tiktok" ></div><span class="sr-only">TikTok</span></a></div>
+</div>  </div>  </div>
+  <div class="views-row views-row-7 views-row-odd views-row-last">
+      
+  <div class="views-field views-field-field-link">        <div class="field-content"><div class=""><a href="https://x.com/AshmoleanMuseum" title="X" target="_blank"><div class="fa-2x fa fa-x-twitter" ></div><span class="sr-only">Twitter</span></a></div>
+</div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div></div>
+  </div>
+
+        </div>
+      </div>
+      
+    </div>
+              <div id="header-inline-menu-search">
+                            <div id="main-links" class=" case-upper-all">
+                <a id="main-links-trigger" role="button" class="fas fa-bars" aria-label="Main menu" tabindex="0"></a>
+                <div class="links-container">
+                  <nav id="main-menu" name="Main navigation">
+                      <div class="region region-navigation">
+      <div class="region region-navigation">
+    <div id='block-menu-block-top-nav' class="block block-menu-block clearfix">
+      
+  <div class="menu-block-wrapper menu-block-top_nav menu-name-menu-og-135731 parent-mlid-0 menu-level-1 wide-menu top_nav_level_one_item_style_underlined">
+  <ul class="menu nav navbar-nav none" aria-expanded="false"><li class="first expanded menu-mlid-36536 menu-item-no-link">
+      <div class='item-container has-sub-items'>
+        <div tabindex="0" class="first expanded menu-mlid-36536 menu-item-no-link"><span>VISIT</span></div> <a class="mobile-expand fas fa-plus" tabindex="0" role="button" aria-haspopup= "true" aria-controls="submenu-container-36536" aria-label="Expand: VISIT"></a>
+      </div>
+    <ul id="submenu-container-36536" aria-labelledby="submenu-36536" class="menu nav navbar-nav none" aria-expanded="false"><li class="first expanded menu-mlid-113736">
+      <div class='item-container has-sub-items'>
+        <a href="/plan-your-visit" title="plan_your_visit" class="navmenu" aria-expanded="false" aria-haspopup="true" id="submenu-button-113736" aria-controls="submenu-container-113736"><span>PLAN YOUR VISIT</span><span class="icon" aria-hidden="true"></span></a> <a class="mobile-expand fas fa-plus" tabindex="0" role="button" aria-haspopup= "true" aria-controls="submenu-container-113736" aria-label="Expand: PLAN YOUR VISIT"></a>
+      </div>
+    <ul id="submenu-container-113736" aria-labelledby="submenu-113736" class="menu nav navbar-nav none" aria-expanded="false"><li class="first leaf menu-mlid-163046">
+      <div class='item-container '>
+        <a href="https://ashmolean.org/plan-your-visit#widget-id-2152791" title="book_tickets" class="navmenu"><span>BOOK TICKETS</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-362271">
+      <div class='item-container '>
+        <a href="/christmas" title="christmas" class="navmenu"><span>CHRISTMAS</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-42846">
+      <div class='item-container '>
+        <a href="/directions" title="directions" class="navmenu"><span>DIRECTIONS</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-42806">
+      <div class='item-container '>
+        <a href="/access" title="access" class="navmenu"><span>ACCESS</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-40741">
+      <div class='item-container '>
+        <a href="/floor-guide" title="galleries" class="navmenu"><span>GALLERIES</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-504801">
+      <div class='item-container '>
+        <a href="/sitefiles/ashmolean-museum-floor-plan-oct-2026" title="pdf_floor_plan" class="navmenu"><span>PDF FLOOR PLAN</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-44641">
+      <div class='item-container '>
+        <a href="/visiting-group" title="group_visiting" class="navmenu"><span>VISITING AS A GROUP</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-504806">
+      <div class='item-container '>
+        <a href="/audio-guides" title="audio_guides" class="navmenu"><span>AUDIO GUIDES</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="last leaf menu-mlid-154461">
+      <div class='item-container '>
+        <a href="/faqs" title="faqs" class="navmenu"><span>FAQs</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+</ul></li>
+<li class="leaf menu-mlid-496676">
+      <div class='item-container '>
+        <a href="/families" title="families" class="navmenu"><span>FAMILIES</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="last leaf menu-mlid-40751">
+      <div class='item-container '>
+        <a href="/cafe-and-restaurant" title="cafe_restaurant" class="navmenu"><span>CAFÉ AND RESTAURANT</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+</ul></li>
+<li class="expanded menu-mlid-504766 menu-item-no-link">
+      <div class='item-container has-sub-items'>
+        <div tabindex="0" class="expanded menu-mlid-504766 menu-item-no-link"><span>WHAT'S ON</span></div> <a class="mobile-expand fas fa-plus" tabindex="0" role="button" aria-haspopup= "true" aria-controls="submenu-container-504766" aria-label="Expand: WHAT'S ON"></a>
+      </div>
+    <ul id="submenu-container-504766" aria-labelledby="submenu-504766" class="menu nav navbar-nav none" aria-expanded="false"><li class="first expanded menu-mlid-40761">
+      <div class='item-container has-sub-items'>
+        <a href="/exhibitions" title="exhibitions" class="navmenu" aria-expanded="false" aria-haspopup="true" id="submenu-button-40761" aria-controls="submenu-container-40761"><span>EXHIBITIONS</span><span class="icon" aria-hidden="true"></span></a> <a class="mobile-expand fas fa-plus" tabindex="0" role="button" aria-haspopup= "true" aria-controls="submenu-container-40761" aria-label="Expand: EXHIBITIONS"></a>
+      </div>
+    <ul id="submenu-container-40761" aria-labelledby="submenu-40761" class="menu nav navbar-nav none" aria-expanded="false"><li class="first leaf menu-mlid-525161">
+      <div class='item-container '>
+        <a href="/exhibition/aphrodite-the-making-of-a-goddess" title="aphrodite" class="navmenu"><span>APHRODITE: THE MAKING OF A GODDESS</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="last leaf menu-mlid-154676">
+      <div class='item-container '>
+        <a href="/exhibitions" title="free_exhibitions" class="navmenu"><span>FREE EXHIBITIONS &amp; DISPLAYS</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+</ul></li>
+<li class="last leaf menu-mlid-176576">
+      <div class='item-container '>
+        <a href="/events" title="events" class="navmenu"><span>EVENTS</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+</ul></li>
+<li class="expanded menu-mlid-141856 menu-item-no-link">
+      <div class='item-container has-sub-items'>
+        <div tabindex="0" class="expanded menu-mlid-141856 menu-item-no-link"><span>STORIES</span></div> <a class="mobile-expand fas fa-plus" tabindex="0" role="button" aria-haspopup= "true" aria-controls="submenu-container-141856" aria-label="Expand: STORIES"></a>
+      </div>
+    <ul id="submenu-container-141856" aria-labelledby="submenu-141856" class="menu nav navbar-nav none" aria-expanded="false"><li class="first leaf menu-mlid-504791">
+      <div class='item-container '>
+        <a href="/stories" title="stories_and_films" class="navmenu"><span>STORIES &amp; FILMS</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-504811">
+      <div class='item-container '>
+        <a href="/podcasts" title="podcasts" class="navmenu"><span>PODCASTS</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="last leaf menu-mlid-187331">
+      <div class='item-container '>
+        <a href="/ashmoleanfromhome" title="ashfromhome" class="navmenu"><span>THINGS TO DO AT HOME</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+</ul></li>
+<li class="expanded active-trail menu-mlid-39587 menu-item-no-link">
+      <div class='item-container has-sub-items'>
+        <div tabindex="0" class="expanded active-trail menu-mlid-39587 menu-item-no-link active"><span>COLLECTIONS</span></div> <a class="mobile-expand fas fa-plus" tabindex="0" role="button" aria-haspopup= "true" aria-controls="submenu-container-39587" aria-label="Expand: COLLECTIONS"></a>
+      </div>
+    <ul id="submenu-container-39587" aria-labelledby="submenu-39587" class="menu nav navbar-nav none" aria-expanded="false"><li class="first leaf menu-mlid-40766">
+      <div class='item-container '>
+        <a href="/highlights" title="collection_highlights" class="navmenu"><span>COLLECTION HIGHLIGHTS</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf active-trail menu-mlid-62721 active">
+      <div class='item-container '>
+        <a href="/collections-online" title="collections_online" class="navmenu active-trail active"><span>COLLECTIONS ONLINE</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="expanded menu-mlid-142201 menu-item-no-link">
+      <div class='item-container has-sub-items'>
+        <div tabindex="0" class="expanded menu-mlid-142201 menu-item-no-link"><span>USING OUR COLLECTIONS</span></div> <a class="mobile-expand fas fa-plus" tabindex="0" role="button" aria-haspopup= "true" aria-controls="submenu-container-142201" aria-label="Expand: USING OUR COLLECTIONS"></a>
+      </div>
+    <ul id="submenu-container-142201" aria-labelledby="submenu-142201" class="menu nav navbar-nav none" aria-expanded="false"><li class="first leaf menu-mlid-156946">
+      <div class='item-container '>
+        <a href="/studyrooms" title="study_rooms" class="navmenu"><span>STUDY ROOMS</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-40826">
+      <div class='item-container '>
+        <a href="/loans" title="loans" class="navmenu"><span>LOANS</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="last leaf menu-mlid-40776">
+      <div class='item-container '>
+        <a href="/ordering-images" title="ordering_images" class="navmenu"><span>ORDERING IMAGES</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+</ul></li>
+<li class="expanded menu-mlid-40781">
+      <div class='item-container has-sub-items'>
+        <a href="/departments" title="departments" class="navmenu" aria-expanded="false" aria-haspopup="true" id="submenu-button-40781" aria-controls="submenu-container-40781"><span>DEPARTMENTS</span><span class="icon" aria-hidden="true"></span></a> <a class="mobile-expand fas fa-plus" tabindex="0" role="button" aria-haspopup= "true" aria-controls="submenu-container-40781" aria-label="Expand: DEPARTMENTS"></a>
+      </div>
+    <ul id="submenu-container-40781" aria-labelledby="submenu-40781" class="menu nav navbar-nav none" aria-expanded="false"><li class="first leaf menu-mlid-40796">
+      <div class='item-container '>
+        <a href="/antiquities" title="antiquities" class="navmenu"><span>ANTIQUITIES</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-40806">
+      <div class='item-container '>
+        <a href="/cast-gallery-department" title="cast_gallery" class="navmenu"><span>CAST GALLERY</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-40801">
+      <div class='item-container '>
+        <a href="/heberden-coin-room" title="coins" class="navmenu"><span>COINS</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-40791">
+      <div class='item-container '>
+        <a href="/eastern-art" title="eastern_art" class="navmenu"><span>EASTERN ART</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-40786">
+      <div class='item-container '>
+        <a href="/western-art" title="western_art" class="navmenu"><span>WESTERN ART</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="last leaf menu-mlid-40816">
+      <div class='item-container '>
+        <a href="/conservation" title="conservation" class="navmenu"><span>CONSERVATION</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+</ul></li>
+<li class="last expanded menu-mlid-39592">
+      <div class='item-container has-sub-items'>
+        <a href="/research" title="research" class="navmenu" aria-expanded="false" aria-haspopup="true" id="submenu-button-39592" aria-controls="submenu-container-39592"><span>RESEARCH</span><span class="icon" aria-hidden="true"></span></a> <a class="mobile-expand fas fa-plus" tabindex="0" role="button" aria-haspopup= "true" aria-controls="submenu-container-39592" aria-label="Expand: RESEARCH"></a>
+      </div>
+    <ul id="submenu-container-39592" aria-labelledby="submenu-39592" class="menu nav navbar-nav none" aria-expanded="false"><li class="first leaf menu-mlid-40831">
+      <div class='item-container '>
+        <a href="/research-projects" title="projects" class="navmenu"><span>PROJECTS</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-41246">
+      <div class='item-container '>
+        <a href="/research-profiles" title="research_profiles" class="navmenu"><span>RESEARCH PROFILES</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-40841">
+      <div class='item-container '>
+        <a href="/partnerships" title="partnerships" class="navmenu"><span>PARTNERSHIPS</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-40836">
+      <div class='item-container '>
+        <a href="/publications" title="publications" class="navmenu"><span>PUBLICATIONS</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-212756">
+      <div class='item-container '>
+        <a href="/early-career-research-opportunities" title="early_career_opportunities" class="navmenu"><span>EARLY CAREER RESEARCH OPPORTUNITIES</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="last leaf menu-mlid-223071">
+      <div class='item-container '>
+        <a href="/doctoral-research-opportunities" title="doctoral_opportunities" class="navmenu"><span>DOCTORAL RESEARCH OPPORTUNITIES</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+</ul></li>
+</ul></li>
+<li class="expanded menu-mlid-39597 menu-item-no-link">
+      <div class='item-container has-sub-items'>
+        <div tabindex="0" class="expanded menu-mlid-39597 menu-item-no-link"><span>LEARN</span></div> <a class="mobile-expand fas fa-plus" tabindex="0" role="button" aria-haspopup= "true" aria-controls="submenu-container-39597" aria-label="Expand: LEARN"></a>
+      </div>
+    <ul id="submenu-container-39597" aria-labelledby="submenu-39597" class="menu nav navbar-nav none" aria-expanded="false"><li class="first expanded menu-mlid-43981">
+      <div class='item-container has-sub-items'>
+        <a href="/schools" title="schools" class="navmenu" aria-expanded="false" aria-haspopup="true" id="submenu-button-43981" aria-controls="submenu-container-43981"><span>SCHOOLS</span><span class="icon" aria-hidden="true"></span></a> <a class="mobile-expand fas fa-plus" tabindex="0" role="button" aria-haspopup= "true" aria-controls="submenu-container-43981" aria-label="Expand: SCHOOLS"></a>
+      </div>
+    <ul id="submenu-container-43981" aria-labelledby="submenu-43981" class="menu nav navbar-nav none" aria-expanded="false"><li class="first leaf menu-mlid-40846">
+      <div class='item-container '>
+        <a href="/primary-schools" title="primary_schools" class="navmenu"><span>PRIMARY SCHOOLS</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-40851">
+      <div class='item-container '>
+        <a href="/secondary-schools" title="secondary_schools" class="navmenu"><span>SECONDARY SCHOOLS</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="last leaf menu-mlid-40866">
+      <div class='item-container '>
+        <a href="/learning-resources" title="learning_resources" class="navmenu"><span>LEARNING RESOURCES</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+</ul></li>
+<li class="leaf menu-mlid-40821">
+      <div class='item-container '>
+        <a href="/university-teaching" title="academic_engagement" class="navmenu"><span>ACADEMIC ENGAGEMENT</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-40856">
+      <div class='item-container '>
+        <a href="/young-people" title="young_people" class="navmenu"><span>YOUNG PEOPLE</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-40861">
+      <div class='item-container '>
+        <a href="/adult-groups" title="adult_groups" class="navmenu"><span>ADULT GROUPS</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-205231">
+      <div class='item-container '>
+        <a href="/home-learning" title="home_learning" class="navmenu"><span>HOME LEARNING</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="last leaf menu-mlid-43986">
+      <div class='item-container '>
+        <a href="/learning-case-studies-and-projects" title="case_studies" class="navmenu"><span>CASE STUDIES AND PROJECTS</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+</ul></li>
+<li class="expanded menu-mlid-39607 menu-item-no-link">
+      <div class='item-container has-sub-items'>
+        <div tabindex="0" class="expanded menu-mlid-39607 menu-item-no-link"><span>JOIN & SUPPORT</span></div> <a class="mobile-expand fas fa-plus" tabindex="0" role="button" aria-haspopup= "true" aria-controls="submenu-container-39607" aria-label="Expand: JOIN & SUPPORT"></a>
+      </div>
+    <ul id="submenu-container-39607" aria-labelledby="submenu-39607" class="menu nav navbar-nav none" aria-expanded="false"><li class="first expanded menu-mlid-42831">
+      <div class='item-container has-sub-items'>
+        <a href="/membership" title="become_a_member" class="navmenu" aria-expanded="false" aria-haspopup="true" id="submenu-button-42831" aria-controls="submenu-container-42831"><span>BECOME A MEMBER</span><span class="icon" aria-hidden="true"></span></a> <a class="mobile-expand fas fa-plus" tabindex="0" role="button" aria-haspopup= "true" aria-controls="submenu-container-42831" aria-label="Expand: BECOME A MEMBER"></a>
+      </div>
+    <ul id="submenu-container-42831" aria-labelledby="submenu-42831" class="menu nav navbar-nav none" aria-expanded="false"><li class="first leaf menu-mlid-261601">
+      <div class='item-container '>
+        <a href="/membership" title="join_online" class="navmenu"><span>JOIN ONLINE</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-261596">
+      <div class='item-container '>
+        <a href="/gift-membership" title="gift_membership" class="navmenu"><span>GIFT MEMBERSHIP</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-142781">
+      <div class='item-container '>
+        <a href="/your-membership" title="existing_members" class="navmenu"><span>EXISTING MEMBERS</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-460776">
+      <div class='item-container '>
+        <a href="https://tickets.ox.ac.uk/WebStore/MemberPortal/Account/Logon?cg=ashmemaccount&amp;c=renewmembership" title="member_login" class="navmenu"><span>MEMBER ACCOUNT LOGIN</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="last leaf menu-mlid-64251">
+      <div class='item-container '>
+        <a href="/members-events" title="member_events" class="navmenu"><span>MEMBER EVENTS</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+</ul></li>
+<li class="leaf menu-mlid-41666">
+      <div class='item-container '>
+        <a href="/become-patron" title="become_patron" class="navmenu"><span>BECOME A PATRON</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-42826">
+      <div class='item-container '>
+        <a href="/bringing-history-to-life-2025-appeal" title="donate" class="navmenu"><span>DONATE</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-41656">
+      <div class='item-container '>
+        <a href="/support" title="ways_to_support" class="navmenu"><span>WAYS TO SUPPORT</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="last leaf menu-mlid-41701">
+      <div class='item-container '>
+        <a href="/working-ashmolean" title="working_for_us" class="navmenu"><span>WORKING FOR US</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+</ul></li>
+<li class="last expanded menu-mlid-39602 menu-item-no-link">
+      <div class='item-container has-sub-items'>
+        <div tabindex="0" class="last expanded menu-mlid-39602 menu-item-no-link"><span>SHOP</span></div> <a class="mobile-expand fas fa-plus" tabindex="0" role="button" aria-haspopup= "true" aria-controls="submenu-container-39602" aria-label="Expand: SHOP"></a>
+      </div>
+    <ul id="submenu-container-39602" aria-labelledby="submenu-39602" class="menu nav navbar-nav none" aria-expanded="false"><li class="first leaf menu-mlid-41686">
+      <div class='item-container '>
+        <a href="https://shop.ashmolean.org/" title="gift_shop" class="navmenu"><span>GIFT SHOP</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="leaf menu-mlid-41691">
+      <div class='item-container '>
+        <a href="/prints-and-images" title="prints_images" class="navmenu"><span>PRINTS AND IMAGES</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+<li class="last leaf menu-mlid-41696">
+      <div class='item-container '>
+        <a href="/brand-licensing" title="brand_licensing" class="navmenu"><span>BRAND LICENSING</span><span class="icon" aria-hidden="true"></span></a> 
+      </div>
+    </li>
+</ul></li>
+</ul></div>
+
+</div>
+  </div>
+  </div>
+                  </nav>
+                </div>
+              </div>
+                            <div class="search-container search_style_slimline search_collapse_1250">
+                <a id="search-mobile-trigger" role="button" class="fas fa-search" aria-label="Activate search" tabindex="0"></a>
+                  <div class="region region-search">
+    <div id='block-search-form' class="block block-search clearfix">
+      
+  <form role="search" class="form-search content-search" action="/collections-online" method="post" id="search-block-form--2" accept-charset="UTF-8"><div><div>
+      <div class="element-invisible">Search form</div>
+    <div style="display:flex;">
+    <input title="Enter the terms you wish to search for" aria-label="Enter the terms you wish to search for" class="form-control form-text" type="text" id="edit-search-block-form--4" name="search_block_form" value="" size="15" maxlength="128" /><div class="form-actions input-group-btn form-wrapper form-group" id="edit-actions--2"><button class="btn btn-primary form-submit" aria-label="Search" type="submit" id="edit-submit--2" name="op" value="&lt;span class=&quot;icon fas fa-search&quot;&gt;&lt;span class=&quot;hide&quot;&gt;Search&lt;/span&gt;&lt;/span&gt;"><span class="icon fas fa-search"><span class="hide">Search</span></span></button>
+</div><input type="hidden" name="form_build_id" value="form-hDIwfxyZbARA_hyYi6hKuTtK2TUHQTuk5tZKA-ynAN4" />
+<input type="hidden" name="form_id" value="search_block_form" />
+  </div>
+</div>
+</div></form>
+</div>
+  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div id="wrapper-main" class="wrapper wrapper-main region-fullwidth wide-content-width">
+
+    <!-- REGION PREFACE -->
+    <div id="preface">
+                            </div>
+    <!-- END REGION PREFACE -->
+
+    <!-- main container -->
+    <div id="main-container" class="container">
+
+        <!-- REGION CONTENT -->
+        <div id="maincontent" class="row">
+          
+                    
+            <div  class="col-sm-12">
+              
+                <div id="main-content" role="main">
+
+                                                                            <div class="row">
+                          <div class="h1_row col-xs-12 col-sm-12 col-lg-12 col-md-12 col-lg-12">
+                              <div class="header-title">
+                                  <h1 class="page-header row element-invisible">SEARCH THE COLLECTION</h1>
+
+                                                                                            </div>
+                          </div>
+                      </div>
+                                    
+                                                        <div class="region region-content">
+    <div id='block-system-main' class="block block-system clearfix">
+      
+  <div class="panelizer-view-mode node node-full node-oxdrupal-basic-page node-2959996"  >
+          <div class="bootstrap-twocol-stacked" >
+      <div class="row">
+      <div class="panel-panel top col-xs-12 col-sm-12 col-md-12 col-lg-12"><div class="panel-pane pane-entity-field pane-node-field-region-1"  >
+  
+      
+  
+  <div class="pane-content">
+    
+<div class="paragraphs-items paragraphs-items-field-region-1 paragraphs-items-field-region-1-full paragraphs-items-full">
+  
+<div class="field field-name-field-region-1 field-type-paragraphs field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item private-show even">
+
+                <div class="entity entity-paragraphs-item paragraphs-item-wysiwyg-content-area widget-width-12-columns widget-style-main paragraphs-item-4572051">
+      <div id="widget-id-4572051"></div>
+    <div class="content">
+        
+<div class="field field-name-field-content field-type-text-with-summary field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item private-show even">
+
+                <div class="layoutmanager">
+<div class="container-fluid layout-container">
+<div class="row layout-row">
+<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 layout-column">
+<div class="layout-column-one layout-column-editable"></div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 layout-column">
+<div class="layout-column-two layout-column-editable"></div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 layout-column">
+<div class="layout-column-three layout-column-editable"></div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 layout-column">
+<div class="layout-column-four layout-column-editable">
+<p class="rtecenter"><a class="btn btn-info wysiwyg-button-fill" href="https://www.ashmolean.org/collections-online-contact-form"><span class="fas fa-fw fa-pencil"> </span> LEAVE FEEDBACK</a></p>
+<p class="rtecenter">About our Online Collections</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+      </div>
+            </div>
+</div>
+  </div>
+</div>
+      </div>
+                        <div class="field-item private-show odd">
+
+                <div class="entity entity-paragraphs-item paragraphs-item-wysiwyg-content-area margin-bottom widget-width-12-columns widget-style-main paragraphs-item-4046741">
+      <div id="widget-id-4046741"></div>
+    <div class="content">
+        
+<div class="field field-name-field-content field-type-text-with-summary field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item private-show even">
+
+                <div data-museum="ash" id="root" style="min-height: 500px"> </div>
+<script src="https://prod-webapp-oc.s3.eu-west-1.amazonaws.com/import-chunks.js"></script><script>
+<!--//--><![CDATA[// ><!--
+
+    window.dynamicContent = {
+        homeBelowSearch: ['#widget-id-4196806', '#widget-id-4047021', '#widget-id-4050296', '#widget-id-4047961', '#widget-id-4228401', '#widget-id-4047066'],
+        homeBelowCollectionThemes: [],
+        ashDetailPageBelowDescription: [],
+        ashDetailPageBottom: ['#widget-id-4557531'],
+    };
+
+//--><!]]>
+</script>      </div>
+            </div>
+</div>
+  </div>
+</div>
+      </div>
+                        <div class="field-item private-show even">
+
+                <div class="entity entity-paragraphs-item paragraphs-item-wysiwyg-content-area margin-bottom widget-width-8-columns widget-style-main paragraphs-item-4196806">
+      <div id="widget-id-4196806"></div>
+    <div class="content">
+        
+<div class="field field-name-field-content field-type-text-with-summary field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item private-show even">
+
+                <h3 class="rtecenter">The Ashmolean's world-famous collections range from Egyptian mummies and classical sculpture to Pre-Raphaelite paintings and contemporary art. We continually add to and update our online collection records.</h3>
+      </div>
+            </div>
+</div>
+  </div>
+</div>
+      </div>
+                        <div class="field-item private-show odd">
+
+                <div class="panelizer-view-mode paragraphs-item paragraphs-item-full paragraphs-item-grid-listing paragraphs-item-4047021 margin-bottom widget-width-12-columns" id="panelizer-item-4047021" >
+      <div id="widget-id-4047021"></div>
+          <div class="panel-display panel-1col clearfix" >
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-grid-listing-widget"  >
+  
+      
+  
+  <div class="pane-content">
+    <div id="listing-wrapper-4047021" class="listing-wrapper grid-listing-wrapper with-title no-link no-controls" style="">
+            <div class="widget-header ">
+            <h2 class="widget-title">COLLECTION THEMES</h2>                         <div class="clearfix"></div>
+        </div>
+                
+      <!-- Free-text filter input box -->
+      
+        <span class="display-style-debug" data-toggle="tooltip" title="This is output using display style grid"></span>
+        
+        <div id="listing_4047021" class="item-listing grid-listing view-content row items-per-row-3 item-style-tile_text_displayed items-per-row-3" data-items-per-row="3">
+                                <div class="listing-item-wrapper display-style-grid item-style-tile_text_displayed item-style-grouping-tile items-per-row-3 item-1 item-odd item-first row-1 row-odd first-in-row column-1 column-odd col-xs-12 col-sm-6 col-md-4">
+                        <!-- tile_text_displayed -->
+<span class="item-style-debug" data-toggle="tooltip" title="This is output using item style tile_text_displayed TWIG template"></span>
+
+<article  aria-label="Italian drawings" about="https://www.ashmolean.org/collections/italian-drawings" class="listing-item display-style-grid item-style-tile_text_displayed item-style-grouping-tile borderon " typeof="sioc:Item foaf:Document">
+                <div class="teaser-field image-wrapper">
+                      <a
+              class="listing-item-link"
+              href="/collections/italian-drawings"
+                                        >
+              <span class="screen-reader-only">Italian drawings</span>
+            </a>
+                                            <div class="teaser-field image ">
+                  <img typeof="foaf:Image" class="img-responsive" src="https://www.ashmolean.org/sites/default/files/styles/listing_tile_text_displayed_image/public/ashmolean/images/media/italian-drawing-header-2-1728px.jpg?itok=mCbQeq5T" width="600" height="400" alt="" />
+                  <div class="clearfix"></div>
+              </div>
+                                      </div>
+    
+                
+    
+            
+            <div class="text-box-wrapper generic-text-box static">
+                                    <div class="button_hard text-box">
+                                <a
+        class="listing-item-link"
+        href="/collections/italian-drawings"
+                          tabindex="-1"
+              >
+        <span class="screen-reader-only">Italian drawings</span>
+      </a>
+    
+                            
+    
+    
+            <div class="listing-title">
+                            <h3 class="text-center">Italian drawings</h3>
+                    </div>
+    
+            
+                    <div class="teaser-field text-wrapper">
+                                                                                    <div class="teaser-field listing-item-teaser-text teaser-text">
+                                                    <div class="text-center">
+                                <p>Our latest Italian Drawings Online Catalogue sheds new light on more than 2,350 drawings in our renowned collection, dating from the 1430s to the 1950s. Enjoy the highlights.</p>
+
+                            </div>
+                                            </div>
+                            
+                                        
+            
+        
+            </div>
+        
+    
+                                            
+        
+                                                    
+        
+        
+        
+        
+        
+            </div>
+        </div>
+
+        
+    </article>
+
+<div class="listing-spacer listing-item-spacer"></div>
+                    </div>
+                                    <div class="listing-item-wrapper display-style-grid item-style-tile_text_displayed item-style-grouping-tile items-per-row-3 item-2 item-even row-1 row-odd column-2 column-even col-xs-12 col-sm-6 col-md-4">
+                        <!-- tile_text_displayed -->
+<span class="item-style-debug" data-toggle="tooltip" title="This is output using item style tile_text_displayed TWIG template"></span>
+
+<article  aria-label="Myths and Legends of Crete" about="https://www.ashmolean.org/collections/myths-and-legends-of-crete" class="listing-item display-style-grid item-style-tile_text_displayed item-style-grouping-tile borderon " typeof="sioc:Item foaf:Document">
+                <div class="teaser-field image-wrapper">
+                      <a
+              class="listing-item-link"
+              href="/collections/myths-and-legends-of-crete"
+                                        >
+              <span class="screen-reader-only">Myths and Legends of Crete</span>
+            </a>
+                                            <div class="teaser-field image ">
+                  <img typeof="foaf:Image" class="img-responsive" src="https://www.ashmolean.org/sites/default/files/styles/listing_tile_text_displayed_image/public/ashmolean/images/media/rs11907_an_1896-1908_g_261-a-lrg-attic-red-figure-cup-1000.jpg?itok=7h_xihCw" width="600" height="400" alt="" />
+                  <div class="clearfix"></div>
+              </div>
+                                      </div>
+    
+                
+    
+            
+            <div class="text-box-wrapper generic-text-box static">
+                                    <div class="button_hard text-box">
+                                <a
+        class="listing-item-link"
+        href="/collections/myths-and-legends-of-crete"
+                          tabindex="-1"
+              >
+        <span class="screen-reader-only">Myths and Legends of Crete</span>
+      </a>
+    
+                            
+    
+    
+            <div class="listing-title">
+                            <h3 class="text-center">Myths and Legends of Crete</h3>
+                    </div>
+    
+            
+                    <div class="teaser-field text-wrapper">
+                                                                                    <div class="teaser-field listing-item-teaser-text teaser-text">
+                                                    <div class="text-center">
+                                <p>Explore myths and legends of the island of Crete, including the long-lasting myth of the Labyrinth and the Minotaur.</p>
+
+                            </div>
+                                            </div>
+                            
+                                        
+            
+        
+            </div>
+        
+    
+                                            
+        
+                                                    
+        
+        
+        
+        
+        
+            </div>
+        </div>
+
+        
+    </article>
+
+<div class="listing-spacer listing-item-spacer"></div>
+                    </div>
+                                    <div class="listing-item-wrapper display-style-grid item-style-tile_text_displayed item-style-grouping-tile items-per-row-3 item-3 item-odd item-last row-1 row-odd last-in-row column-3 column-odd col-xs-12 col-sm-6 col-md-4">
+                        <!-- tile_text_displayed -->
+<span class="item-style-debug" data-toggle="tooltip" title="This is output using item style tile_text_displayed TWIG template"></span>
+
+<article  aria-label="Japanese landscape prints" about="https://www.ashmolean.org/collections/japanese-landscape-prints" class="listing-item display-style-grid item-style-tile_text_displayed item-style-grouping-tile borderon " typeof="sioc:Item foaf:Document">
+                <div class="teaser-field image-wrapper">
+                      <a
+              class="listing-item-link"
+              href="/collections/japanese-landscape-prints"
+                                        >
+              <span class="screen-reader-only">Japanese landscape prints</span>
+            </a>
+                                            <div class="teaser-field image ">
+                  <img typeof="foaf:Image" class="img-responsive" src="https://www.ashmolean.org/sites/default/files/styles/listing_tile_text_displayed_image/public/ashmolean/images/media/detail-from-the-suijin-woods-and-massaki-on-the-sumida-river-woodblock-print-by-hiroshige.jpg?itok=kXIqm7eb" width="600" height="400" alt="" />
+                  <div class="clearfix"></div>
+              </div>
+                                      </div>
+    
+                
+    
+            
+            <div class="text-box-wrapper generic-text-box static">
+                                    <div class="button_hard text-box">
+                                <a
+        class="listing-item-link"
+        href="/collections/japanese-landscape-prints"
+                          tabindex="-1"
+              >
+        <span class="screen-reader-only">Japanese landscape prints</span>
+      </a>
+    
+                            
+    
+    
+            <div class="listing-title">
+                            <h3 class="text-center">Japanese landscape prints</h3>
+                    </div>
+    
+            
+                    <div class="teaser-field text-wrapper">
+                                                                                    <div class="teaser-field listing-item-teaser-text teaser-text">
+                                                    <div class="text-center">
+                                <p>Discover highlights from the master of Japanese landscape prints, Utagawa Hiroshige, as well as selected artworks by Hokusai and Kuniyoshi.</p>
+
+                            </div>
+                                            </div>
+                            
+                                        
+            
+        
+            </div>
+        
+    
+                                            
+        
+                                                    
+        
+        
+        
+        
+        
+            </div>
+        </div>
+
+        
+    </article>
+
+<div class="listing-spacer listing-item-spacer"></div>
+                    </div>
+                        </div>
+                <div class="row"></div>          </div>
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div>
+      </div>
+                        <div class="field-item private-show even">
+
+                <div class="panelizer-view-mode paragraphs-item paragraphs-item-full paragraphs-item-grid-listing paragraphs-item-4050296 margin-bottom widget-width-12-columns" id="panelizer-item-4050296" >
+      <div id="widget-id-4050296"></div>
+          <div class="panel-display panel-1col clearfix" >
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-grid-listing-widget"  >
+  
+      
+  
+  <div class="pane-content">
+    <div id="listing-wrapper-4050296" class="listing-wrapper grid-listing-wrapper widget-background-colour-applied with-title no-link no-controls" style="background-color:#ffffff">
+            <div class="widget-header ">
+            <h2 class="widget-title" style="color: #000000; background-color: inherit;">DISCOVER OBJECTS</h2>                         <div class="clearfix"></div>
+        </div>
+                
+      <!-- Free-text filter input box -->
+      
+        <span class="display-style-debug" data-toggle="tooltip" title="This is output using display style grid"></span>
+        
+        <div id="listing_4050296" class="item-listing grid-listing view-content row items-per-row-4 item-style-tile_text_displayed items-per-row-4" data-items-per-row="4">
+                                <div class="listing-item-wrapper display-style-grid item-style-tile_text_displayed item-style-grouping-tile items-per-row-4 item-1 item-odd item-first row-1 row-odd first-in-row column-1 column-odd col-xs-12 col-sm-6 col-md-3">
+                        <!-- tile_text_displayed -->
+<span class="item-style-debug" data-toggle="tooltip" title="This is output using item style tile_text_displayed TWIG template"></span>
+
+<article  aria-label="PAINTINGS" about="https://www.ashmolean.org/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22webCategory%22%3A%22Paintings%22%7D%7D/%7B%7D/1/16/random/desc/catalogue" class="listing-item display-style-grid item-style-tile_text_displayed item-style-grouping-tile borderon " typeof="sioc:Item foaf:Document">
+                <div class="teaser-field image-wrapper">
+                      <a
+              class="listing-item-link"
+              href="/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22webCategory%22%3A%22Paintings%22%7D%7D/%7B%7D/1/16/random/desc/catalogue"
+                                        >
+              <span class="screen-reader-only">PAINTINGS</span>
+            </a>
+                                            <div class="teaser-field image ">
+                  <img typeof="foaf:Image" class="img-responsive" src="https://www.ashmolean.org/sites/default/files/styles/listing_tile_text_displayed_image/public/ashmolean/images/media/asparagus_by_adriaen_coorte_wa1940_2_22_1000px.jpg?itok=0nXIMxH-" width="600" height="400" alt="" />
+                  <div class="clearfix"></div>
+              </div>
+                                      </div>
+    
+                
+    
+            
+            <div class="text-box-wrapper generic-text-box static">
+                                    <div class="button_hard text-box">
+                                <a
+        class="listing-item-link"
+        href="/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22webCategory%22%3A%22Paintings%22%7D%7D/%7B%7D/1/16/random/desc/catalogue"
+                          tabindex="-1"
+              >
+        <span class="screen-reader-only">PAINTINGS</span>
+      </a>
+    
+                            
+    
+    
+            <div class="listing-title">
+                            <h3 class="text-center">PAINTINGS</h3>
+                    </div>
+    
+            
+        
+    
+                                            
+        
+                                                    
+        
+        
+        
+        
+        
+            </div>
+        </div>
+
+        
+    </article>
+
+<div class="listing-spacer listing-item-spacer"></div>
+                    </div>
+                                    <div class="listing-item-wrapper display-style-grid item-style-tile_text_displayed item-style-grouping-tile items-per-row-4 item-2 item-even row-1 row-odd column-2 column-even col-xs-12 col-sm-6 col-md-3">
+                        <!-- tile_text_displayed -->
+<span class="item-style-debug" data-toggle="tooltip" title="This is output using item style tile_text_displayed TWIG template"></span>
+
+<article  aria-label="PRINTS" about="https://www.ashmolean.org/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22webCategory%22%3A%22Prints%22%7D%7D/%7B%7D/1/16/random/desc/catalogue" class="listing-item display-style-grid item-style-tile_text_displayed item-style-grouping-tile borderon " typeof="sioc:Item foaf:Document">
+                <div class="teaser-field image-wrapper">
+                      <a
+              class="listing-item-link"
+              href="/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22webCategory%22%3A%22Prints%22%7D%7D/%7B%7D/1/16/random/desc/catalogue"
+                                        >
+              <span class="screen-reader-only">PRINTS</span>
+            </a>
+                                            <div class="teaser-field image ">
+                  <img typeof="foaf:Image" class="img-responsive" src="https://www.ashmolean.org/sites/default/files/styles/listing_tile_text_displayed_image/public/ashmolean/images/media/rs58358_ea_x_4431-a-lrg-ducks-swimming-japanese-1500.jpg?itok=OJLnK5Ic" width="600" height="400" alt="" />
+                  <div class="clearfix"></div>
+              </div>
+                                      </div>
+    
+                
+    
+            
+            <div class="text-box-wrapper generic-text-box static">
+                                    <div class="button_hard text-box">
+                                <a
+        class="listing-item-link"
+        href="/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22webCategory%22%3A%22Prints%22%7D%7D/%7B%7D/1/16/random/desc/catalogue"
+                          tabindex="-1"
+              >
+        <span class="screen-reader-only">PRINTS</span>
+      </a>
+    
+                            
+    
+    
+            <div class="listing-title">
+                            <h3 class="text-center">PRINTS</h3>
+                    </div>
+    
+            
+        
+    
+                                            
+        
+                                                    
+        
+        
+        
+        
+        
+            </div>
+        </div>
+
+        
+    </article>
+
+<div class="listing-spacer listing-item-spacer"></div>
+                    </div>
+                                    <div class="listing-item-wrapper display-style-grid item-style-tile_text_displayed item-style-grouping-tile items-per-row-4 item-3 item-odd row-1 row-odd column-3 column-odd col-xs-12 col-sm-6 col-md-3">
+                        <!-- tile_text_displayed -->
+<span class="item-style-debug" data-toggle="tooltip" title="This is output using item style tile_text_displayed TWIG template"></span>
+
+<article  aria-label="CERAMICS" about="https://www.ashmolean.org/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22webCategory%22%3A%22Ceramics%22%7D%7D/%7B%7D/1/16/random/desc/catalogue" class="listing-item display-style-grid item-style-tile_text_displayed item-style-grouping-tile borderon " typeof="sioc:Item foaf:Document">
+                <div class="teaser-field image-wrapper">
+                      <a
+              class="listing-item-link"
+              href="/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22webCategory%22%3A%22Ceramics%22%7D%7D/%7B%7D/1/16/random/desc/catalogue"
+                                        >
+              <span class="screen-reader-only">CERAMICS</span>
+            </a>
+                                            <div class="teaser-field image ">
+                  <img typeof="foaf:Image" class="img-responsive" src="https://www.ashmolean.org/sites/default/files/styles/listing_tile_text_displayed_image/public/ashmolean/images/media/fritware-bowl-ea_1978_2256.jpg?itok=OVGn2YB7" width="600" height="400" alt="" />
+                  <div class="clearfix"></div>
+              </div>
+                                      </div>
+    
+                
+    
+            
+            <div class="text-box-wrapper generic-text-box static">
+                                    <div class="button_hard text-box">
+                                <a
+        class="listing-item-link"
+        href="/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22webCategory%22%3A%22Ceramics%22%7D%7D/%7B%7D/1/16/random/desc/catalogue"
+                          tabindex="-1"
+              >
+        <span class="screen-reader-only">CERAMICS</span>
+      </a>
+    
+                            
+    
+    
+            <div class="listing-title">
+                            <h3 class="text-center">CERAMICS</h3>
+                    </div>
+    
+            
+        
+    
+                                            
+        
+                                                    
+        
+        
+        
+        
+        
+            </div>
+        </div>
+
+        
+    </article>
+
+<div class="listing-spacer listing-item-spacer"></div>
+                    </div>
+                                    <div class="listing-item-wrapper display-style-grid item-style-tile_text_displayed item-style-grouping-tile items-per-row-4 item-4 item-even row-1 row-odd last-in-row column-4 column-even col-xs-12 col-sm-6 col-md-3">
+                        <!-- tile_text_displayed -->
+<span class="item-style-debug" data-toggle="tooltip" title="This is output using item style tile_text_displayed TWIG template"></span>
+
+<article  aria-label="SCULPTURE" about="https://www.ashmolean.org/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22webCategory%22%3A%22Sculpture%22%7D%7D/%7B%7D/1/16/random/desc/catalogue" class="listing-item display-style-grid item-style-tile_text_displayed item-style-grouping-tile borderon " typeof="sioc:Item foaf:Document">
+                <div class="teaser-field image-wrapper">
+                      <a
+              class="listing-item-link"
+              href="/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22webCategory%22%3A%22Sculpture%22%7D%7D/%7B%7D/1/16/random/desc/catalogue"
+                                        >
+              <span class="screen-reader-only">SCULPTURE</span>
+            </a>
+                                            <div class="teaser-field image ">
+                  <img typeof="foaf:Image" class="img-responsive" src="https://www.ashmolean.org/sites/default/files/styles/listing_tile_text_displayed_image/public/ashmolean/images/media/baroque18004_0.jpg?itok=vB3d7WoF" width="600" height="400" alt="" />
+                  <div class="clearfix"></div>
+              </div>
+                                      </div>
+    
+                
+    
+            
+            <div class="text-box-wrapper generic-text-box static">
+                                    <div class="button_hard text-box">
+                                <a
+        class="listing-item-link"
+        href="/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22webCategory%22%3A%22Sculpture%22%7D%7D/%7B%7D/1/16/random/desc/catalogue"
+                          tabindex="-1"
+              >
+        <span class="screen-reader-only">SCULPTURE</span>
+      </a>
+    
+                            
+    
+    
+            <div class="listing-title">
+                            <h3 class="text-center">SCULPTURE</h3>
+                    </div>
+    
+            
+        
+    
+                                            
+        
+                                                    
+        
+        
+        
+        
+        
+            </div>
+        </div>
+
+        
+    </article>
+
+<div class="listing-spacer listing-item-spacer"></div>
+                    </div>
+                                    <div class="listing-item-wrapper display-style-grid item-style-tile_text_displayed item-style-grouping-tile items-per-row-4 item-5 item-odd row-2 row-even first-in-row column-1 column-odd col-xs-12 col-sm-6 col-md-3">
+                        <!-- tile_text_displayed -->
+<span class="item-style-debug" data-toggle="tooltip" title="This is output using item style tile_text_displayed TWIG template"></span>
+
+<article  aria-label="TEXTILES" about="https://www.ashmolean.org/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22webCategory%22%3A%22Textiles%22%7D%7D/%7B%7D/1/16/random/desc/catalogue" class="listing-item display-style-grid item-style-tile_text_displayed item-style-grouping-tile borderon " typeof="sioc:Item foaf:Document">
+                <div class="teaser-field image-wrapper">
+                      <a
+              class="listing-item-link"
+              href="/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22webCategory%22%3A%22Textiles%22%7D%7D/%7B%7D/1/16/random/desc/catalogue"
+                                        >
+              <span class="screen-reader-only">TEXTILES</span>
+            </a>
+                                            <div class="teaser-field image ">
+                  <img typeof="foaf:Image" class="img-responsive" src="https://www.ashmolean.org/sites/default/files/styles/listing_tile_text_displayed_image/public/ashmolean/images/media/textiles18008402jpg.jpg?itok=w_t9u6Pr" width="600" height="400" alt="" />
+                  <div class="clearfix"></div>
+              </div>
+                                      </div>
+    
+                
+    
+            
+            <div class="text-box-wrapper generic-text-box static">
+                                    <div class="button_hard text-box">
+                                <a
+        class="listing-item-link"
+        href="/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22webCategory%22%3A%22Textiles%22%7D%7D/%7B%7D/1/16/random/desc/catalogue"
+                          tabindex="-1"
+              >
+        <span class="screen-reader-only">TEXTILES</span>
+      </a>
+    
+                            
+    
+    
+            <div class="listing-title">
+                            <h3 class="text-center">TEXTILES</h3>
+                    </div>
+    
+            
+        
+    
+                                            
+        
+                                                    
+        
+        
+        
+        
+        
+            </div>
+        </div>
+
+        
+    </article>
+
+<div class="listing-spacer listing-item-spacer"></div>
+                    </div>
+                                    <div class="listing-item-wrapper display-style-grid item-style-tile_text_displayed item-style-grouping-tile items-per-row-4 item-6 item-even row-2 row-even column-2 column-even col-xs-12 col-sm-6 col-md-3">
+                        <!-- tile_text_displayed -->
+<span class="item-style-debug" data-toggle="tooltip" title="This is output using item style tile_text_displayed TWIG template"></span>
+
+<article  aria-label="COINS" about="https://www.ashmolean.org/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22webCategory%22%3A%22Coins%22%7D%7D/%7B%7D/1/16/random/desc/catalogue" class="listing-item display-style-grid item-style-tile_text_displayed item-style-grouping-tile borderon " typeof="sioc:Item foaf:Document">
+                <div class="teaser-field image-wrapper">
+                      <a
+              class="listing-item-link"
+              href="/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22webCategory%22%3A%22Coins%22%7D%7D/%7B%7D/1/16/random/desc/catalogue"
+                                        >
+              <span class="screen-reader-only">COINS</span>
+            </a>
+                                            <div class="teaser-field image ">
+                  <img typeof="foaf:Image" class="img-responsive" src="https://www.ashmolean.org/sites/default/files/styles/listing_tile_text_displayed_image/public/ashmolean/images/media/rs31378_hcr_4915-c-pow-crondall-hoard-black-bgd.jpg?itok=WEH3Vc1E" width="600" height="400" alt="" />
+                  <div class="clearfix"></div>
+              </div>
+                                      </div>
+    
+                
+    
+            
+            <div class="text-box-wrapper generic-text-box static">
+                                    <div class="button_hard text-box">
+                                <a
+        class="listing-item-link"
+        href="/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22webCategory%22%3A%22Coins%22%7D%7D/%7B%7D/1/16/random/desc/catalogue"
+                          tabindex="-1"
+              >
+        <span class="screen-reader-only">COINS</span>
+      </a>
+    
+                            
+    
+    
+            <div class="listing-title">
+                            <h3 class="text-center">COINS</h3>
+                    </div>
+    
+            
+        
+    
+                                            
+        
+                                                    
+        
+        
+        
+        
+        
+            </div>
+        </div>
+
+        
+    </article>
+
+<div class="listing-spacer listing-item-spacer"></div>
+                    </div>
+                                    <div class="listing-item-wrapper display-style-grid item-style-tile_text_displayed item-style-grouping-tile items-per-row-4 item-7 item-odd row-2 row-even column-3 column-odd col-xs-12 col-sm-6 col-md-3">
+                        <!-- tile_text_displayed -->
+<span class="item-style-debug" data-toggle="tooltip" title="This is output using item style tile_text_displayed TWIG template"></span>
+
+<article  aria-label="DRAWINGS" about="https://www.ashmolean.org/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22webCategory%22%3A%22Drawings%22%7D%7D/%7B%7D/1/16/random/desc/catalogue" class="listing-item display-style-grid item-style-tile_text_displayed item-style-grouping-tile borderon " typeof="sioc:Item foaf:Document">
+                <div class="teaser-field image-wrapper">
+                      <a
+              class="listing-item-link"
+              href="/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22webCategory%22%3A%22Drawings%22%7D%7D/%7B%7D/1/16/random/desc/catalogue"
+                                        >
+              <span class="screen-reader-only">DRAWINGS</span>
+            </a>
+                                            <div class="teaser-field image ">
+                  <img typeof="foaf:Image" class="img-responsive" src="https://www.ashmolean.org/sites/default/files/styles/listing_tile_text_displayed_image/public/ashmolean/images/page/600detail_10.jpg?itok=WIfJE8r_" width="600" height="400" alt="" />
+                  <div class="clearfix"></div>
+              </div>
+                                      </div>
+    
+                
+    
+            
+            <div class="text-box-wrapper generic-text-box static">
+                                    <div class="button_hard text-box">
+                                <a
+        class="listing-item-link"
+        href="/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22webCategory%22%3A%22Drawings%22%7D%7D/%7B%7D/1/16/random/desc/catalogue"
+                          tabindex="-1"
+              >
+        <span class="screen-reader-only">DRAWINGS</span>
+      </a>
+    
+                            
+    
+    
+            <div class="listing-title">
+                            <h3 class="text-center">DRAWINGS</h3>
+                    </div>
+    
+            
+        
+    
+                                            
+        
+                                                    
+        
+        
+        
+        
+        
+            </div>
+        </div>
+
+        
+    </article>
+
+<div class="listing-spacer listing-item-spacer"></div>
+                    </div>
+                                    <div class="listing-item-wrapper display-style-grid item-style-tile_text_displayed item-style-grouping-tile items-per-row-4 item-8 item-even row-2 row-even last-in-row column-4 column-even col-xs-12 col-sm-6 col-md-3">
+                        <!-- tile_text_displayed -->
+<span class="item-style-debug" data-toggle="tooltip" title="This is output using item style tile_text_displayed TWIG template"></span>
+
+<article  aria-label="PHOTOGRAPHY" about="https://www.ashmolean.org/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22objectNames.objectName%22%3A%22photograph%22%7D%7D/%7B%7D/1/16/random/desc/catalogue" class="listing-item display-style-grid item-style-tile_text_displayed item-style-grouping-tile borderon " typeof="sioc:Item foaf:Document">
+                <div class="teaser-field image-wrapper">
+                      <a
+              class="listing-item-link"
+              href="/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22objectNames.objectName%22%3A%22photograph%22%7D%7D/%7B%7D/1/16/random/desc/catalogue"
+                                        >
+              <span class="screen-reader-only">PHOTOGRAPHY</span>
+            </a>
+                                            <div class="teaser-field image ">
+                  <img typeof="foaf:Image" class="img-responsive" src="https://www.ashmolean.org/sites/default/files/styles/listing_tile_text_displayed_image/public/ashmolean/images/media/rs65500_wa_oa_1352-a_lrg-tall-1500.jpg?itok=KpJxfse4" width="600" height="400" alt="" />
+                  <div class="clearfix"></div>
+              </div>
+                                      </div>
+    
+                
+    
+            
+            <div class="text-box-wrapper generic-text-box static">
+                                    <div class="button_hard text-box">
+                                <a
+        class="listing-item-link"
+        href="/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22objectNames.objectName%22%3A%22photograph%22%7D%7D/%7B%7D/1/16/random/desc/catalogue"
+                          tabindex="-1"
+              >
+        <span class="screen-reader-only">PHOTOGRAPHY</span>
+      </a>
+    
+                            
+    
+    
+            <div class="listing-title">
+                            <h3 class="text-center">PHOTOGRAPHY</h3>
+                    </div>
+    
+            
+        
+    
+                                            
+        
+                                                    
+        
+        
+        
+        
+        
+            </div>
+        </div>
+
+        
+    </article>
+
+<div class="listing-spacer listing-item-spacer"></div>
+                    </div>
+                                    <div class="listing-item-wrapper display-style-grid item-style-tile_text_displayed item-style-grouping-tile items-per-row-4 item-9 item-odd row-3 row-odd first-in-row column-1 column-odd col-xs-12 col-sm-6 col-md-3">
+                        <!-- tile_text_displayed -->
+<span class="item-style-debug" data-toggle="tooltip" title="This is output using item style tile_text_displayed TWIG template"></span>
+
+<article  aria-label="JEWELLERY" about="https://www.ashmolean.org/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22objectNames.objectName%22%3A%22personal%20AND%20ornament%22%7D%7D/%7B%7D/1/16/random/desc/catalogue" class="listing-item display-style-grid item-style-tile_text_displayed item-style-grouping-tile borderon " typeof="sioc:Item foaf:Document">
+                <div class="teaser-field image-wrapper">
+                      <a
+              class="listing-item-link"
+              href="/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22objectNames.objectName%22%3A%22personal%20AND%20ornament%22%7D%7D/%7B%7D/1/16/random/desc/catalogue"
+                                        >
+              <span class="screen-reader-only">JEWELLERY</span>
+            </a>
+                                            <div class="teaser-field image ">
+                  <img typeof="foaf:Image" class="img-responsive" src="https://www.ashmolean.org/sites/default/files/styles/listing_tile_text_displayed_image/public/ashmolean/images/media/wa_1964_29_12-a-s.jpg?itok=gW5t_yMC" width="600" height="400" alt="" />
+                  <div class="clearfix"></div>
+              </div>
+                                      </div>
+    
+                
+    
+            
+            <div class="text-box-wrapper generic-text-box static">
+                                    <div class="button_hard text-box">
+                                <a
+        class="listing-item-link"
+        href="/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22objectNames.objectName%22%3A%22personal%20AND%20ornament%22%7D%7D/%7B%7D/1/16/random/desc/catalogue"
+                          tabindex="-1"
+              >
+        <span class="screen-reader-only">JEWELLERY</span>
+      </a>
+    
+                            
+    
+    
+            <div class="listing-title">
+                            <h3 class="text-center">JEWELLERY</h3>
+                    </div>
+    
+            
+        
+    
+                                            
+        
+                                                    
+        
+        
+        
+        
+        
+            </div>
+        </div>
+
+        
+    </article>
+
+<div class="listing-spacer listing-item-spacer"></div>
+                    </div>
+                                    <div class="listing-item-wrapper display-style-grid item-style-tile_text_displayed item-style-grouping-tile items-per-row-4 item-10 item-even row-3 row-odd column-2 column-even col-xs-12 col-sm-6 col-md-3">
+                        <!-- tile_text_displayed -->
+<span class="item-style-debug" data-toggle="tooltip" title="This is output using item style tile_text_displayed TWIG template"></span>
+
+<article  aria-label="TILES" about="https://www.ashmolean.org/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22objectNames.objectName%22%3A%22tile%22%7D%7D/%7B%7D/1/16/random/desc/catalogue" class="listing-item display-style-grid item-style-tile_text_displayed item-style-grouping-tile borderon " typeof="sioc:Item foaf:Document">
+                <div class="teaser-field image-wrapper">
+                      <a
+              class="listing-item-link"
+              href="/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22objectNames.objectName%22%3A%22tile%22%7D%7D/%7B%7D/1/16/random/desc/catalogue"
+                                        >
+              <span class="screen-reader-only">TILES</span>
+            </a>
+                                            <div class="teaser-field image ">
+                  <img typeof="foaf:Image" class="img-responsive" src="https://www.ashmolean.org/sites/default/files/styles/listing_tile_text_displayed_image/public/ashmolean/images/media/ea_1977_15-a-l_cropped.jpg?itok=G3X7sKfO" width="600" height="400" alt="" />
+                  <div class="clearfix"></div>
+              </div>
+                                      </div>
+    
+                
+    
+            
+            <div class="text-box-wrapper generic-text-box static">
+                                    <div class="button_hard text-box">
+                                <a
+        class="listing-item-link"
+        href="/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22objectNames.objectName%22%3A%22tile%22%7D%7D/%7B%7D/1/16/random/desc/catalogue"
+                          tabindex="-1"
+              >
+        <span class="screen-reader-only">TILES</span>
+      </a>
+    
+                            
+    
+    
+            <div class="listing-title">
+                            <h3 class="text-center">TILES</h3>
+                    </div>
+    
+            
+        
+    
+                                            
+        
+                                                    
+        
+        
+        
+        
+        
+            </div>
+        </div>
+
+        
+    </article>
+
+<div class="listing-spacer listing-item-spacer"></div>
+                    </div>
+                                    <div class="listing-item-wrapper display-style-grid item-style-tile_text_displayed item-style-grouping-tile items-per-row-4 item-11 item-odd row-3 row-odd column-3 column-odd col-xs-12 col-sm-6 col-md-3">
+                        <!-- tile_text_displayed -->
+<span class="item-style-debug" data-toggle="tooltip" title="This is output using item style tile_text_displayed TWIG template"></span>
+
+<article  aria-label="CASTS" about="https://www.ashmolean.org/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22objectNames.objectName%22%3A%22cast%22%7D%7D/%7B%7D/1/16/random/desc/catalogue" class="listing-item display-style-grid item-style-tile_text_displayed item-style-grouping-tile borderon " typeof="sioc:Item foaf:Document">
+                <div class="teaser-field image-wrapper">
+                      <a
+              class="listing-item-link"
+              href="/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22objectNames.objectName%22%3A%22cast%22%7D%7D/%7B%7D/1/16/random/desc/catalogue"
+                                        >
+              <span class="screen-reader-only">CASTS</span>
+            </a>
+                                            <div class="teaser-field image ">
+                  <img typeof="foaf:Image" class="img-responsive" src="https://www.ashmolean.org/sites/default/files/styles/listing_tile_text_displayed_image/public/ashmolean/images/media/cast_of_apollo_cga_59_sq_1000px.jpg?itok=RtneYSAO" width="600" height="400" alt="" />
+                  <div class="clearfix"></div>
+              </div>
+                                      </div>
+    
+                
+    
+            
+            <div class="text-box-wrapper generic-text-box static">
+                                    <div class="button_hard text-box">
+                                <a
+        class="listing-item-link"
+        href="/collections-online#/search/advanced-search/Main%20collection/%7B%22Main%20collection%22%3A%7B%22objectNames.objectName%22%3A%22cast%22%7D%7D/%7B%7D/1/16/random/desc/catalogue"
+                          tabindex="-1"
+              >
+        <span class="screen-reader-only">CASTS</span>
+      </a>
+    
+                            
+    
+    
+            <div class="listing-title">
+                            <h3 class="text-center">CASTS</h3>
+                    </div>
+    
+            
+        
+    
+                                            
+        
+                                                    
+        
+        
+        
+        
+        
+            </div>
+        </div>
+
+        
+    </article>
+
+<div class="listing-spacer listing-item-spacer"></div>
+                    </div>
+                                    <div class="listing-item-wrapper display-style-grid item-style-tile_text_displayed item-style-grouping-tile items-per-row-4 item-12 item-even item-last row-3 row-odd last-in-row column-4 column-even col-xs-12 col-sm-6 col-md-3">
+                        <!-- tile_text_displayed -->
+<span class="item-style-debug" data-toggle="tooltip" title="This is output using item style tile_text_displayed TWIG template"></span>
+
+<article  aria-label="ARCHIVES" about="https://www.ashmolean.org/collections-online#/search/advanced-search/Main%20collection/%257B%2522Main%2520collection%2522%253A%257B%2522webCategory%2522%253A%2522%255C%2522archives%255C%2522%2522%252C%2522objectNumberSorting1%2522%253A%2522%255C%2522GB%252F1648%252FAJE%255C%2522%2522%257D%257D/%257B%2522catalogue%2522%253A%257B%2522archiveLevelType%2522%253A%255B%2522Fonds%2522%255D%257D%257D/1/16/_score/desc/catalogue" class="listing-item display-style-grid item-style-tile_text_displayed item-style-grouping-tile borderon " typeof="sioc:Item foaf:Document">
+                <div class="teaser-field image-wrapper">
+                      <a
+              class="listing-item-link"
+              href="https://www.ashmolean.org/collections-online#/search/advanced-search/Main%20collection/%257B%2522Main%2520collection%2522%253A%257B%2522webCategory%2522%253A%2522%255C%2522archives%255C%2522%2522%252C%2522objectNumberSorting1%2522%253A%2522%255C%2522GB%252F1648%252FAJE%255C%2522%2522%257D%257D/%257B%2522catalogue%2522%253A%257B%2522archiveLevelType%2522%253A%255B%2522Fonds%2522%255D%257D%257D/1/16/_score/desc/catalogue"
+                                        >
+              <span class="screen-reader-only">ARCHIVES</span>
+            </a>
+                                            <div class="teaser-field image ">
+                  <img typeof="foaf:Image" class="img-responsive" src="https://www.ashmolean.org/sites/default/files/styles/listing_tile_text_displayed_image/public/ashmolean/images/media/creating_the_first_europeans_1200x1198.jpg?itok=fHNkaEE-" width="600" height="400" alt="" />
+                  <div class="clearfix"></div>
+              </div>
+                                      </div>
+    
+                
+    
+            
+            <div class="text-box-wrapper generic-text-box static">
+                                    <div class="button_hard text-box">
+                                <a
+        class="listing-item-link"
+        href="https://www.ashmolean.org/collections-online#/search/advanced-search/Main%20collection/%257B%2522Main%2520collection%2522%253A%257B%2522webCategory%2522%253A%2522%255C%2522archives%255C%2522%2522%252C%2522objectNumberSorting1%2522%253A%2522%255C%2522GB%252F1648%252FAJE%255C%2522%2522%257D%257D/%257B%2522catalogue%2522%253A%257B%2522archiveLevelType%2522%253A%255B%2522Fonds%2522%255D%257D%257D/1/16/_score/desc/catalogue"
+                          tabindex="-1"
+              >
+        <span class="screen-reader-only">ARCHIVES</span>
+      </a>
+    
+                            
+    
+    
+            <div class="listing-title">
+                            <h3 class="text-center">ARCHIVES</h3>
+                    </div>
+    
+            
+        
+    
+                                            
+        
+                                                    
+        
+        
+        
+        
+        
+            </div>
+        </div>
+
+        
+    </article>
+
+<div class="listing-spacer listing-item-spacer"></div>
+                    </div>
+                        </div>
+                <div class="row"></div>          </div>
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div>
+      </div>
+                        <div class="field-item private-show odd">
+
+                <div class="panelizer-view-mode paragraphs-item paragraphs-item-full paragraphs-item-grid-listing paragraphs-item-4228401 margin-bottom widget-width-12-columns" id="panelizer-item-4228401" >
+      <div id="widget-id-4228401"></div>
+          <div class="panel-display panel-1col clearfix" >
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-grid-listing-widget"  >
+  
+      
+  
+  <div class="pane-content">
+    <div id="listing-wrapper-4228401" class="listing-wrapper grid-listing-wrapper with-title no-link no-controls" style="">
+            <div class="widget-header ">
+            <h2 class="widget-title">IN THE SPOTLIGHT: SEASONAL HIGHLIGHTS</h2>                         <div class="clearfix"></div>
+        </div>
+                
+      <!-- Free-text filter input box -->
+      
+        <span class="display-style-debug" data-toggle="tooltip" title="This is output using display style grid"></span>
+        
+        <div id="listing_4228401" class="item-listing grid-listing view-content row items-per-row-3 item-style-card_banner_image items-per-row-3" data-items-per-row="3">
+                                <div class="listing-item-wrapper display-style-grid item-style-card_banner_image item-style-grouping-card items-per-row-3 item-1 item-odd item-first row-1 row-odd first-in-row column-1 column-odd col-xs-12 col-sm-6 col-md-4">
+                        
+
+<span class="item-style-debug" data-toggle="tooltip" title="This is output using item style card_banner_image TWIG template"></span>
+<article aria-label="The White Cloud" about="https://collections.ashmolean.org/object/373312" class="listing-item display-style-grid item-style-card_banner_image item-style-grouping-card borderon" typeof="sioc:Item foaf:Document">
+            <div class="teaser-field image-wrapper">
+                                <div class="teaser-field image ">
+                        <img typeof="foaf:Image" class="img-responsive" src="https://www.ashmolean.org/sites/default/files/styles/card_banner_image/public/ashmolean/images/media/white-cloud-1000px.jpg?itok=kY7tqPAZ" width="780" height="520" alt="" />
+                        <div class="clearfix"></div>
+                    </div>
+                                    </div>
+                                
+
+<div class="text-wrapper stacked-text-box static">
+          <a class="listing-item-link" href="https://collections.ashmolean.org/object/373312">
+        <span class="screen-reader-only">The White Cloud</span>
+      </a>
+            <div class="text-row text-row-title">
+                    <div class="listing-title">
+                <h3 class="text-center">The White Cloud</h3>
+            </div>
+            </div>
+
+                        <div class="text-row text-row-metadata text-center">
+        
+                                    
+            </div> 
+            <div class="text-row text-row-listing-text text-center">
+            <div class="teaser-field listing-item-teaser-text teaser-text"><p>Samuel Palmer, oil and tempera on canvas, c. 1833 - 1834, on display in the 19th-Century Gallery 67.</p>
+</div>
+        </div>
+    
+        </div>
+        </article>
+<div class="listing-spacer listing-item-spacer"></div>
+                    </div>
+                                    <div class="listing-item-wrapper display-style-grid item-style-card_banner_image item-style-grouping-card items-per-row-3 item-2 item-even row-1 row-odd column-2 column-even col-xs-12 col-sm-6 col-md-4">
+                        
+
+<span class="item-style-debug" data-toggle="tooltip" title="This is output using item style card_banner_image TWIG template"></span>
+<article aria-label="Venetian Storage Jar for Quince Pickle or Mostardo" about="https://collections.ashmolean.org/object/1324775" class="listing-item display-style-grid item-style-card_banner_image item-style-grouping-card borderon" typeof="sioc:Item foaf:Document">
+            <div class="teaser-field image-wrapper">
+                                <div class="teaser-field image ">
+                        <img typeof="foaf:Image" class="img-responsive" src="https://www.ashmolean.org/sites/default/files/styles/card_banner_image/public/ashmolean/images/media/rs1215195_wa_2024_53-b_lrg-quice-storage-jar-1000px.jpg?itok=N1Q7TRQa" width="780" height="520" alt="Colourful 16th-century Venetian storage jar for quince pickle, with orange quince decorations and green and blue flowers" />
+                        <div class="clearfix"></div>
+                    </div>
+                                    </div>
+                                
+
+<div class="text-wrapper stacked-text-box static">
+          <a class="listing-item-link" href="https://collections.ashmolean.org/object/1324775">
+        <span class="screen-reader-only">Venetian Storage Jar for Quince Pickle or Mostardo</span>
+      </a>
+            <div class="text-row text-row-title">
+                    <div class="listing-title">
+                <h3 class="text-center">Venetian Storage Jar for Quince Pickle or Mostardo</h3>
+            </div>
+            </div>
+
+                        <div class="text-row text-row-metadata text-center">
+        
+                                    
+            </div> 
+            <div class="text-row text-row-listing-text text-center">
+            <div class="teaser-field listing-item-teaser-text teaser-text"><p>Made for a great Venetian household or specialist retailer, c. 1530-1570. </p>
+</div>
+        </div>
+    
+        </div>
+        </article>
+<div class="listing-spacer listing-item-spacer"></div>
+                    </div>
+                                    <div class="listing-item-wrapper display-style-grid item-style-card_banner_image item-style-grouping-card items-per-row-3 item-3 item-odd item-last row-1 row-odd last-in-row column-3 column-odd col-xs-12 col-sm-6 col-md-4">
+                        
+
+<span class="item-style-debug" data-toggle="tooltip" title="This is output using item style card_banner_image TWIG template"></span>
+<article aria-label="Autumn Chrysanthemum" about="https://collections.ashmolean.org/object/759126" class="listing-item display-style-grid item-style-card_banner_image item-style-grouping-card borderon" typeof="sioc:Item foaf:Document">
+            <div class="teaser-field image-wrapper">
+                                <div class="teaser-field image ">
+                        <img typeof="foaf:Image" class="img-responsive" src="https://www.ashmolean.org/sites/default/files/styles/card_banner_image/public/ashmolean/images/media/autumn-chrysanthemums-1728.jpg?itok=eprOQqpp" width="780" height="520" alt="" />
+                        <div class="clearfix"></div>
+                    </div>
+                                    </div>
+                                
+
+<div class="text-wrapper stacked-text-box static">
+          <a class="listing-item-link" href="https://collections.ashmolean.org/object/759126">
+        <span class="screen-reader-only">Autumn Chrysanthemum</span>
+      </a>
+            <div class="text-row text-row-title">
+                    <div class="listing-title">
+                <h3 class="text-center">Autumn Chrysanthemum</h3>
+            </div>
+            </div>
+
+                        <div class="text-row text-row-metadata text-center">
+        
+                                    
+            </div> 
+            <div class="text-row text-row-listing-text text-center">
+            <div class="teaser-field listing-item-teaser-text teaser-text"><p>The 19th-century Chinese artist Xu Gu is renowned for his depictions of flowers, fruits, birds, and fish using the side of a dry brush, a skill that is evident in this painting.</p>
+</div>
+        </div>
+    
+        </div>
+        </article>
+<div class="listing-spacer listing-item-spacer"></div>
+                    </div>
+                        </div>
+                <div class="row"></div>          </div>
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div>
+      </div>
+                        <div class="field-item private-show even">
+
+                <div class="panelizer-view-mode paragraphs-item paragraphs-item-full paragraphs-item-grid-listing paragraphs-item-4047066 widget-width-12-columns" id="panelizer-item-4047066" >
+      <div id="widget-id-4047066"></div>
+          <div class="panel-display panel-1col clearfix" >
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-grid-listing-widget"  >
+  
+      
+  
+  <div class="pane-content">
+    <div id="listing-wrapper-4047066" class="listing-wrapper grid-listing-wrapper with-title no-link no-controls" style="">
+            <div class="widget-header ">
+            <h2 class="widget-title">MORE TO EXPLORE</h2>                         <div class="clearfix"></div>
+        </div>
+                
+      <!-- Free-text filter input box -->
+      
+        <span class="display-style-debug" data-toggle="tooltip" title="This is output using display style grid"></span>
+        
+        <div id="listing_4047066" class="item-listing grid-listing view-content row items-per-row-3 item-style-tile_text_displayed items-per-row-3" data-items-per-row="3">
+                                <div class="listing-item-wrapper display-style-grid item-style-tile_text_displayed item-style-grouping-tile items-per-row-3 item-1 item-odd item-first row-1 row-odd first-in-row column-1 column-odd col-xs-12 col-sm-6 col-md-4">
+                        <!-- tile_text_displayed -->
+<span class="item-style-debug" data-toggle="tooltip" title="This is output using item style tile_text_displayed TWIG template"></span>
+
+<article  aria-label="Collection highlights" about="https://www.ashmolean.org/highlights" class="listing-item display-style-grid item-style-tile_text_displayed item-style-grouping-tile borderon " typeof="sioc:Item foaf:Document">
+                <div class="teaser-field image-wrapper">
+                      <a
+              class="listing-item-link"
+              href="/highlights"
+                                        >
+              <span class="screen-reader-only">Collection highlights</span>
+            </a>
+                                            <div class="teaser-field image ">
+                  <img typeof="foaf:Image" class="img-responsive" src="https://www.ashmolean.org/sites/default/files/styles/listing_tile_text_displayed_image/public/ashmolean/images/media/alfred1800840_0_0.jpg?itok=a8s7V-2z" width="600" height="400" alt="" />
+                  <div class="clearfix"></div>
+              </div>
+                                      </div>
+    
+                
+    
+            
+            <div class="text-box-wrapper generic-text-box static">
+                                    <div class="button_hard text-box">
+                                <a
+        class="listing-item-link"
+        href="/highlights"
+                          tabindex="-1"
+              >
+        <span class="screen-reader-only">Collection highlights</span>
+      </a>
+    
+                            
+    
+    
+            <div class="listing-title">
+                            <h3 class="text-center">Collection highlights</h3>
+                    </div>
+    
+            
+                    <div class="teaser-field text-wrapper">
+                                                                                    <div class="teaser-field listing-item-teaser-text teaser-text">
+                                                    <div class="text-center">
+                                <p>A selection of the Ashmolean's most treasured objects, chosen by our curators.</p>
+
+                            </div>
+                                            </div>
+                            
+                                        
+            
+        
+            </div>
+        
+    
+                                            
+        
+                                                    
+        
+        
+        
+        
+        
+            </div>
+        </div>
+
+        
+    </article>
+
+<div class="listing-spacer listing-item-spacer"></div>
+                    </div>
+                                    <div class="listing-item-wrapper display-style-grid item-style-tile_text_displayed item-style-grouping-tile items-per-row-3 item-2 item-even row-1 row-odd column-2 column-even col-xs-12 col-sm-6 col-md-4">
+                        <!-- tile_text_displayed -->
+<span class="item-style-debug" data-toggle="tooltip" title="This is output using item style tile_text_displayed TWIG template"></span>
+
+<article  aria-label="Research at the Ashmolean" about="https://www.ashmolean.org/research" class="listing-item display-style-grid item-style-tile_text_displayed item-style-grouping-tile borderon " typeof="sioc:Item foaf:Document">
+                <div class="teaser-field image-wrapper">
+                      <a
+              class="listing-item-link"
+              href="/research"
+                                        >
+              <span class="screen-reader-only">Research at the Ashmolean</span>
+            </a>
+                                            <div class="teaser-field image ">
+                  <img typeof="foaf:Image" class="img-responsive" src="https://www.ashmolean.org/sites/default/files/styles/listing_tile_text_displayed_image/public/ashmolean/images/media/guernico_1284px.jpg?itok=mYcVv1e2" width="600" height="400" alt="" />
+                  <div class="clearfix"></div>
+              </div>
+                                      </div>
+    
+                
+    
+            
+            <div class="text-box-wrapper generic-text-box static">
+                                    <div class="button_hard text-box">
+                                <a
+        class="listing-item-link"
+        href="/research"
+                          tabindex="-1"
+              >
+        <span class="screen-reader-only">Research at the Ashmolean</span>
+      </a>
+    
+                            
+    
+    
+            <div class="listing-title">
+                            <h3 class="text-center">Research at the Ashmolean</h3>
+                    </div>
+    
+            
+                    <div class="teaser-field text-wrapper">
+                                                                                    <div class="teaser-field listing-item-teaser-text teaser-text">
+                                                    <div class="text-center">
+                                <p>Discover the Ashmolean's latest research projects, meet our researchers and more.</p>
+
+                            </div>
+                                            </div>
+                            
+                                        
+            
+        
+            </div>
+        
+    
+                                            
+        
+                                                    
+        
+        
+        
+        
+        
+            </div>
+        </div>
+
+        
+    </article>
+
+<div class="listing-spacer listing-item-spacer"></div>
+                    </div>
+                                    <div class="listing-item-wrapper display-style-grid item-style-tile_text_displayed item-style-grouping-tile items-per-row-3 item-3 item-odd item-last row-1 row-odd last-in-row column-3 column-odd col-xs-12 col-sm-6 col-md-4">
+                        <!-- tile_text_displayed -->
+<span class="item-style-debug" data-toggle="tooltip" title="This is output using item style tile_text_displayed TWIG template"></span>
+
+<article  aria-label="Introducing the collections" about="https://www.ashmolean.org/collections/article/introducing-the-collections" class="listing-item display-style-grid item-style-tile_text_displayed item-style-grouping-tile borderon " typeof="sioc:Item foaf:Document">
+                <div class="teaser-field image-wrapper">
+                      <a
+              class="listing-item-link"
+              href="/collections/article/introducing-the-collections"
+                                        >
+              <span class="screen-reader-only">Introducing the collections</span>
+            </a>
+                                            <div class="teaser-field image ">
+                  <img typeof="foaf:Image" class="img-responsive" src="https://www.ashmolean.org/sites/default/files/styles/listing_tile_text_displayed_image/public/ashmolean/images/media/story-gallery-visitors-summer-2023.jpg?itok=JlLP1uuZ" width="600" height="400" alt="" />
+                  <div class="clearfix"></div>
+              </div>
+                                      </div>
+    
+                
+    
+            
+            <div class="text-box-wrapper generic-text-box static">
+                                    <div class="button_hard text-box">
+                                <a
+        class="listing-item-link"
+        href="/collections/article/introducing-the-collections"
+                          tabindex="-1"
+              >
+        <span class="screen-reader-only">Introducing the collections</span>
+      </a>
+    
+                            
+    
+    
+            <div class="listing-title">
+                            <h3 class="text-center">Introducing the collections</h3>
+                    </div>
+    
+            
+                    <div class="teaser-field text-wrapper">
+                                                                                    <div class="teaser-field listing-item-teaser-text teaser-text">
+                                                    <div class="text-center">
+                                <p>Get an overview of the Ashmolean's collections and dip into our history.</p>
+
+                            </div>
+                                            </div>
+                            
+                                        
+            
+        
+            </div>
+        
+    
+                                            
+        
+                                                    
+        
+        
+        
+        
+        
+            </div>
+        </div>
+
+        
+    </article>
+
+<div class="listing-spacer listing-item-spacer"></div>
+                    </div>
+                        </div>
+                <div class="row"></div>          </div>
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div>
+      </div>
+                        <div class="field-item private-show odd">
+
+                <div class="panelizer-view-mode paragraphs-item paragraphs-item-full paragraphs-item-banner-listing paragraphs-item-4557531 margin-bottom widget-width-12-columns" id="panelizer-item-4557531" >
+      <div id="widget-id-4557531"></div>
+          <div class="panel-display panel-1col clearfix" >
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-banner-listing-widget"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="listing-wrapper banner-listing-wrapper no-title no-link">
+
+<!--Listings -->
+<span class="display-style-debug" data-toggle="tooltip" title="This is output using display style banner"></span>
+<div class="item-listing banner-listing view-content row items-per-row-1" data-items-per-row="1">
+                <div class="listing-item-wrapper display-style-banner item-style-breaker_without_image item-style-grouping-breaker items-per-row-1 item-1 item-odd item-first item-last row-1 row-odd first-in-row last-in-row column-1 column-odd col-xs-12 col-sm-12 col-md-12">
+                  <!-- breaker_without_image -->
+<span class="item-style-debug" data-toggle="tooltip" title="This is output using item style breaker_without_image TWIG template"></span>
+
+<article  aria-label="EXPLORE THE COLLECTIONS" about="https://www.ashmolean.org/collections-online" class="listing-item display-style-banner item-style-breaker_without_image item-style-grouping-breaker borderon " typeof="sioc:Item foaf:Document">
+        
+    
+    
+          
+            <div class="text-box-wrapper generic-text-box static">
+                                    <div class="button_hard text-box">
+                                <a
+        class="listing-item-link"
+        href="/collections-online"
+                      >
+        <span class="screen-reader-only">EXPLORE THE COLLECTIONS</span>
+      </a>
+    
+        
+    
+    
+            <div class="listing-title">
+                            <h3>EXPLORE THE COLLECTIONS</h3>
+                    </div>
+    
+            
+                    <div class="teaser-field text-wrapper">
+                                                                                                                                <div class="teaser-field listing-item-teaser-text teaser-text">
+                                                    <div class="">
+                                
+<div class="field field-name-field-item-text field-type-text-long field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item private-show even">
+
+                <p>Search our extensive online collections to discover objects and artworks from across the world and time, and delve into some of our collection highlights.</p>
+      </div>
+            </div>
+</div>
+
+                            </div>
+                                            </div>
+                            
+            
+                                        
+        
+            </div>
+        
+    
+            
+        
+                            
+        
+        
+        
+        
+            <div class="call-to-action-wrapper">
+
+
+                            <a
+                  class="btn btn-primary btn-cta hvr-icon-grow"
+                  href="/collections-online"
+                  aria-label="SEARCH THE COLLECTIONS. Link to /collections-online"
+                                                    >
+                    SEARCH THE COLLECTIONS
+                </a>
+                    </div>
+        
+            </div>
+        </div>
+
+        
+    </article>
+
+<div class="listing-spacer listing-item-spacer"></div>
+            </div>
+        </div>
+</div>
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div>
+      </div>
+            </div>
+</div>
+</div>
+  </div>
+
+  
+  </div>
+</div>
+    </div>
+  
+  
+  </div>
+</div>
+
+</div>
+  </div>
+                </div>
+            </div>
+
+                                <!-- Optional feedback form -->
+                            <div id="oxdrupal_feedback_form_wrapper" role="form">
+                                      </div>
+                            <!-- End Optional feedback form -->
+        </div>
+
+        <!-- REGION POSTSCRIPT -->
+        <div id="postscript">
+                                                </div><!-- END REGION POSTSCRIPT -->
+
+    </div><!-- end content container -->
+</div>
+<footer class="region-fullwidth wide-content-width footer-no-img">
+    <!-- REGION PREFOOTER LOGOS -->
+    <div id="wrapper-prefooter-logos" class="wrapper">
+        <div class="container">
+            <div id="prefooter-logos" class="row">
+                          </div>
+        </div><!-- end prefooter-logos container -->
+    </div><!-- end prefooter-logos wrapper -->
+    <!-- END REGION PREFOOTER LOGOS -->
+
+    <!-- REGION FOOTER TOP -->
+    <div id="wrapper-footer" class="wrapper">
+              <div id="footer" class="container">
+            <div class="row">
+              <div class="panelizer-view-mode node node-full node-oxdrupal-site-footer node-135761"  >
+          <div class="bootstrap-threecol-stacked" >
+      <div class="row">
+      <div class="panel-pane pane-entity-field pane-node-field-region-1"  >
+  
+      
+  
+  <div class="pane-content">
+    
+<div class="paragraphs-items paragraphs-items-field-region-1 paragraphs-items-field-region-1-full paragraphs-items-full">
+  
+<div class="field field-name-field-region-1 field-type-paragraphs field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item private-show even">
+
+                <div class="entity entity-paragraphs-item paragraphs-item-wysiwyg-content-area margin-bottom widget-width-12-columns widget-style-main paragraphs-item-146662">
+      <div id="widget-id-146662"></div>
+    <div class="content">
+        
+<div class="field field-name-field-content field-type-text-with-summary field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item private-show even">
+
+                <div class="layoutmanager">
+<div class="container-fluid layout-container pad_area">
+<div class="row layout-row">
+<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 layout-column">
+<div class="layout-column-one layout-column-editable">
+<div class="foot_head">
+<div class="file file-image file-image-png embed-image small">
+                        <img class="img-responsive" alt="University of Oxford" src="https://www.ashmolean.org/sites/default/files/styles/mt_image_small/public/ashmolean/images/media/oxweb-logo-rect.png?itok=DgolEgJd" />
+        </div>
+</div>
+<div class="foot_head"> </div>
+<div class="foot_head"><u><a href="https://www.ashmolean.org/about"><strong>About</strong></a></u></div>
+<ul>
+<li><u><a href="https://www.ashmolean.org/history-ashmolean">Our history</a></u></li>
+<li><u><a href="https://www.ashmolean.org/working-ashmolean">Working for us</a></u></li>
+<li><a href="https://www.ashmolean.org/press"><u>Press</u></a></li>
+<li><u><a href="https://www.ashmolean.org/venue-hire">Venue hire</a></u></li>
+<li class="last_link"><u><a href="https://www.ashmolean.org/contact">Contact</a></u></li>
+</ul>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 layout-column">
+<div class="layout-column-two layout-column-editable">
+<div class="foot_head"><strong>Collections</strong></div>
+<ul>
+<li><u>Selected<a href="https://www.ashmolean.org/highlights"> treasures</a></u></li>
+<li><u><a href="https://www.ashmolean.org/departments">Curatorial departments</a></u></li>
+<li class="last_link"><u><a href="http://collections.ashmolean.org/">Online collections</a></u></li>
+</ul>
+<ul>
+<li><u><a href="https://www.ashmolean.org/support"><strong><span class="foot_head">Get involved</span></strong></a></u></li>
+<li><u><a href="https://www.ashmolean.org/volunteering">Volunteer</a></u></li>
+<li><u><a href="https://www.ashmolean.org/membership">Membership</a></u></li>
+<li><a href="https://www.campaign.ox.ac.uk/ashmolean/give?id=72c07e53-f0e6-4041-afd7-47fb240572a1"><u>Donate</u></a></li>
+<li class="last_link"><u><a href="https://www.ashmolean.org/corporate-advisory-board">Corporate</a></u><a href="https://www.ashmolean.org/corporate-advisory-board"><u> membership</u></a></li>
+</ul>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 layout-column">
+<div class="layout-column-three layout-column-editable">
+<div class="foot_head">
+<ul>
+<li class="last_link"><u><a href="https://www.glam.ox.ac.uk/privacy-notice-ashmolean-museum-website">Privacy policy</a></u></li>
+<li class="last_link"><u><a href="https://www.ashmolean.org/terms">Terms &amp; copyright</a></u></li>
+<li class="last_link"><u><a href="https://www.ashmolean.org/picture-library-terms-and-conditions">Image policy</a></u></li>
+<li class="last_link"><u><a href="https://www.ashmolean.org/platform-accessibility">Accessibility</a></u></li>
+<li class="last_link"><u><a href="https://www.ashmolean.org/cookies">Cookies</a></u></li>
+</ul>
+</div>
+<div class="foot_head"> </div>
+<div class="foot_head"> </div>
+<div class="foot_head"><strong>Stay in touch</strong></div>
+<div class="foot_head"><u><a href="https://www.ashmolean.org/newsletter">Sign up to our email newsletter</a></u><br />
+ </div>
+<p class="social_link_foot"><a href="https://twitter.com/AshmoleanMuseum"><i class="fa fa-3x fa-twitter"> </i><span class="sr-only">Twitter</span></a> <a href="https://www.facebook.com/ashmoleanmuseum/"><i class="fa fa-3x fa-facebook-square"> </i><span class="sr-only">Facebook</span></a> <a href="https://www.instagram.com/ashmoleanmuseum/?hl=en"><i class="fa fa-3x fa-instagram"> </i><span class="sr-only">Instagram</span></a></p>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 layout-column">
+<div class="layout-column-four layout-column-editable">
+<div class="foot_head"><strong>Commercial </strong></div>
+<ul>
+<li class="foot_head"><u><a href="https://shop.ashmolean.org/">Shop</a></u></li>
+<li class="foot_head"><u><a href="https://www.ashmolean.org/brand-licensing">Brand Licensing</a></u></li>
+<li class="foot_head"><u><a href="https://www.ashmolean.org/prints-and-images">Prints and Images</a></u></li>
+<li class="foot_head"><u><a href="https://www.ashmolean.org/venue-hire">Venue Hire</a></u></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+      </div>
+            </div>
+</div>
+  </div>
+</div>
+      </div>
+            </div>
+</div>
+</div>
+  </div>
+
+  
+  </div>
+    </div>
+  
+  
+  </div>
+</div>
+            </div>
+        </div>
+      <!-- end container -->
+    </div> <!-- end wrapper -->
+    <div id="wrapper-footer-bottom" class="wrapper">
+        <div id="footer-bottom" class="container">
+            <div class="row">
+                              
+<div class="paragraphs-items paragraphs-items-field-region-4 paragraphs-items-field-region-4-full paragraphs-items-full">
+  
+<div class="field field-name-field-region-4 field-type-paragraphs field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item private-show even">
+
+                <div class="entity empty-paragraphs-item paragraphs-item-wysiwyg-content-area widget-width-12-columns widget-style-main paragraphs-item-176346">
+      <div id="widget-id-176346"></div>
+    <div class="content">
+          </div>
+</div>
+      </div>
+                        <div class="field-item private-show odd">
+
+                <div class="entity entity-paragraphs-item paragraphs-item-reusable-content paragraphs-item-1121101">
+    <div id="widget-id-1121101"></div>
+    <div class="content">
+        
+<div id="node-905156" class="reusable_content node node-reusable-content node--reusable_content--reusable_content_widget clearfix" about="/reusablecontent/glam-shared-footer-2020" typeof="sioc:Item foaf:Document">
+  
+<div class="paragraphs-items paragraphs-items-field-reusable-content paragraphs-items-field-reusable-content-full paragraphs-items-full">
+  
+<div class="field field-name-field-reusable-content field-type-paragraphs field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item private-show even">
+
+                        <div id="#widget-id-1121101-1819576"></div>
+                    <div class="entity entity-paragraphs-item paragraphs-item-wysiwyg-content-area margin-top margin-bottom widget-width-12-columns widget-style-main paragraphs-item-1819576">
+    <div class="content">
+        
+<div class="field field-name-field-content field-type-text-with-summary field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item private-show even">
+
+                <div class="container wrapper-main">
+<p class="rtecenter">Explore the University of Oxford’s other gardens, libraries and museums</p>
+<p class="rtecenter"> </p>
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-lg-2">
+<div class="file file-image file-image-png embed-image align-center"><a href="http://bit.ly/313ysPf"><img alt="Ashmolean Museum" class="img-responsive" src="https://www.ashmolean.org/sitefiles/glamfooter-ashmoleanlogo2020.png" /></a></div>
+</div>
+<div class="col-xs-12 col-sm-4 col-lg-2">
+<div class="file file-image file-image-png embed-image align-center"><a href="http://bit.ly/2uJWsLd"><img alt="Bodleian Libraries" class="img-responsive" src="https://www.ashmolean.org/files/glamfooter-bodleianlogo2020png" /></a></div>
+</div>
+<div class="col-xs-12 col-sm-4 col-lg-2">
+<div class="file file-image file-image-png embed-image align-center"><a href="http://bit.ly/2t4Ha3j"><img alt="Oxford Botanic Garden and Arboretum" class="img-responsive" src="https://www.ashmolean.org/files/glamfooter-obghalogo2019png" /></a></div>
+</div>
+<div class="col-xs-12 col-sm-4 col-lg-2">
+<div class="file file-image file-image-png embed-image align-center"><a href="http://bit.ly/2uISy5e"><img alt="History of Science Museum" class="img-responsive" src="https://www.ashmolean.org/files/glamfooter-hsmlogo2019png" /></a></div>
+</div>
+<div class="col-xs-12 col-sm-4 col-lg-2">
+<div class="file file-image file-image-png embed-image align-center"><a href="http://bit.ly/2RyRUAr"><img alt="Museum of Natural History" class="img-responsive" src="https://www.ashmolean.org/files/glamfooter-oumlogo2019png" /></a></div>
+</div>
+<div class="col-xs-12 col-sm-4 col-lg-2">
+<div class="file file-image file-image-png embed-image align-center"><a href="http://bit.ly/2t8QO56"><img alt="Pitt Rivers Museum" class="img-responsive" src="https://www.ashmolean.org/files/glamfooter-prmlogo2019png" /></a></div>
+</div>
+</div>
+<hr /></div>
+      </div>
+            </div>
+</div>
+  </div>
+</div>
+      </div>
+            </div>
+</div>
+</div>
+</div>
+    </div>
+</div>
+      </div>
+                        <div class="field-item private-show even">
+
+                <div class="entity entity-paragraphs-item paragraphs-item-wysiwyg-content-area margin-bottom widget-width-12-columns widget-style-main paragraphs-item-3911326">
+      <div id="widget-id-3911326"></div>
+    <div class="content">
+        
+<div class="field field-name-field-content field-type-text-with-summary field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item private-show even">
+
+                <div class="layoutmanager">
+<div class="container-fluid layout-container">
+<div class="row layout-row">
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 layout-column ">
+<div class="layout-column-one layout-column-editable">
+<div class="file file-image file-image-jpeg embed-image medium align-center">
+                        <img class="img-responsive" alt="UKRI Research England logo" src="https://www.ashmolean.org/sites/default/files/styles/mt_image_medium/public/ashmolean/images/media/research_england_logo-new-one-380.jpg?itok=cYscChYQ" title="UKRI Research England logo" />
+        </div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 layout-column">
+<div class="layout-column-two layout-column-editable">
+<div class="file file-image file-image-jpeg embed-image medium align-center">
+                        <img class="img-responsive" alt="Arts Council logo 2022" src="https://www.ashmolean.org/sites/default/files/styles/mt_image_medium/public/ashmolean/images/media/arts-council_jpeg_black-1500-370.jpg?itok=dhxW7MxS" title="Arts Council logo 2022" />
+        </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+      </div>
+            </div>
+</div>
+  </div>
+</div>
+      </div>
+                        <div class="field-item private-show odd">
+
+                <div class="entity entity-paragraphs-item paragraphs-item-wysiwyg-content-area widget-width-12-columns widget-style-main paragraphs-item-2188821">
+      <div id="widget-id-2188821"></div>
+    <div class="content">
+          <div class="widget-header">
+          <h2 class="widget-title">
+        Coronavirus notice script (DO NOT EDIT)      </h2>
+      </div>
+        
+<div class="field field-name-field-content field-type-text-with-summary field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item private-show even">
+
+                <div id="coronavirus_script_widget"> </div>
+<script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+    jQuery(document).ready(function() {
+        // Extract variables.
+        var variable_widget = jQuery('#widget-id-2188826').parent();
+        var noticeText = "";
+        if (jQuery(variable_widget).find('.field-name-field-content').length) {
+            if (jQuery(variable_widget).find('.field-name-field-content').find('.field-item').length) {
+                noticeText = jQuery(variable_widget).find('.field-name-field-content').find('.field-item').html();
+            }
+        }
+        // Hide placeholder widgets.
+        var script_widget = jQuery("#coronavirus_script_widget").parents('.entity-paragraphs-item.paragraphs-item-wysiwyg-content-area');
+        script_widget.hide();
+        variable_widget.hide();
+        // Create container.
+        var containerElement = document.createElement('div');
+        containerElement.setAttribute('id', 'coronavirus_notice');
+        // Create text.
+        var textElement = document.createElement('p');
+        textElement.innerHTML = noticeText;
+        // Add text to container.
+        containerElement.appendChild(textElement);
+        // Insert container.
+        jQuery('#main-content').prepend(containerElement);
+    });
+
+//--><!]]>
+</script>      </div>
+            </div>
+</div>
+  </div>
+</div>
+      </div>
+                        <div class="field-item private-show even">
+
+                <div class="entity entity-paragraphs-item paragraphs-item-wysiwyg-content-area margin-top margin-bottom widget-width-12-columns widget-style-main paragraphs-item-2188826 widget-background-colour-applied" style="background-color: #faef77">
+      <div id="widget-id-2188826"></div>
+    <div class="content">
+        
+<div class="field field-name-field-content field-type-text-with-summary field-label-hidden">
+    <div class="field-items">
+                  <div class="field-item private-show even">
+
+                <!-- <div class="oxdrupal-notification-main oxdrupal-notification oxdrupal-warning"><p><strong>The Museum remains open as usual while our main entrance is closed for maintenance work. Until Wednesday 10 June, please use the entrance on St Giles.</strong></div>
+<div class="oxdrupal-notification-main oxdrupal-notification oxdrupal-warning">
+<p><a href="https://bit.ly/4f9zDSg"><strong>Help us save Fra Angelico's Crucifixion for the public</strong></a></p>
+</div>
+<div class="oxdrupal-notification-main oxdrupal-notification oxdrupal-information">
+<p><strong>To mark the state funeral of Her Majesty The Queen, the Museum will be closed on Monday 19 September.</strong></p>
+</div>
+<div class="oxdrupal-notification-main oxdrupal-notification oxdrupal-warning">
+<p><strong>On Tuesday 5 July, due to essential work in the Museum, there will be disruption to lifts and toilets in the building, and our phones will not be available.</strong><br />
+        <br />
+        <a href="https://www.ashmolean.org/faqs#widget-id-3630496">Full information <span class="fas fa-fw fa-angle-right" style="font-size: 1rem;"></span></a></p>
+</div>
+<p>Comment out: Draft Coronavirus warning content – will not display</p>
+<div class="oxdrupal-notification-main oxdrupal-notification oxdrupal-warning">
+<h4>The Museum is temporarily closed.</h4>
+<p>We will reopen when government guidance allows. For more information, please <a href="https://www.ashmolean.org/closure">click here</a>.</p>
+<div class="oxdrupal-notification-icon fas fa-exclamation-triangle">&nbsp;</div>
+</div>
+<div class="oxdrupal-notification-main oxdrupal-notification oxdrupal-warning">
+<p><strong>The Ashmolean reopens on Monday 10 August.</strong> <a href="https://www.ashmolean.org/plan/your/visit">Plan your visit <span class="fas fa-fw fa-angle-right" style="font-size: 1rem;"></span></a></p>
+</div>
+<div class="oxdrupal-notification-main oxdrupal-notification oxdrupal-warning">
+<p><strong>In line with government guidance the Museum will reopen on 2 December. </strong><br />
+        <br /> Tickets are available <a href="https://www.ashmolean.org/plan-your-visit">to book online</a>.<br />
+        <br /> We look forward to welcoming you back.</p>
+<div class="oxdrupal-notification-icon fas fa-exclamation-triangle">&nbsp;</div>
+<div class="oxdrupal-notification-main oxdrupal-notification oxdrupal-warning">
+<p>The Museum reopens on 2 December. <a href="https://www.ashmolean.org/plan-your-visit">Plan your visit <span class="fas fa-fw fa-angle-right"></span></a></p>
+<div class="oxdrupal-notification-icon fas fa-exclamation-triangle">&nbsp;</div>
+</div>
+<p>    Comment out: Draft Coronavirus warning content – will not display<br />
+End of comment -->
+      </div>
+            </div>
+</div>
+  </div>
+</div>
+      </div>
+            </div>
+</div>
+</div>
+                          </div>
+        </div> <!-- end container -->
+    </div> <!-- end wrapper -->
+
+    <!-- REGION POSTFOOTER LOGOS -->
+    <div id="wrapper-postfooter-logos" class="wrapper">
+        <div class="container">
+            <div id="postfooter-logos" class="row">
+                                                        </div>
+        </div><!-- end postfooter-logos container -->
+    </div><!-- end postfooter-logos wrapper -->
+    <!-- END REGION POSTFOOTER LOGOS -->
+
+</footer>
+<div role="complementary" aria-label="Powered by Oxford Mosaic banner">
+  <div class="powered-by-wrapper wrapper region-fullwidth">
+    <div class="container">
+      <div class="powered-by">
+        <a href="http://oxfordmosaic.web.ox.ac.uk/" target="_blank">
+          <img class="om-logo" src ="/sites/all/themes/custom/oxtheme/images/logo/mosaic-logo.png" alt="Oxford Mosaic logo" />
+          <div class="pb-text">
+            <span class="pb">powered by</span>
+            <span class="om">oxford mosaic</span>
+          </div>
+          <img class="it-logo" src ="/sites/all/themes/custom/oxtheme/images/logo/it-services-logo.png" alt="IT Services logo" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://www.ashmolean.org/sites/all/themes/contrib/bootstrap/js/bootstrap.js?to156f"></script>
+
+  <a class="hide" href="/sitelist.html">List of site pages</a>
+</body>
+</html>

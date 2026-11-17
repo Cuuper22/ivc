@@ -1,0 +1,75 @@
+== (a) kottai 575
+lines with 575: 101
+count after 575: [(2, 4), (1, 4), (6, 1), (3, 1), (4, 1)]
+count before 575: [(7, 16), (1, 2), (9, 2), (8, 1), (3, 1), (2, 1)]
+a1 lines with 575 and a counted kalam:
+      face          site                                                     text after kalam_counts
+25  1172.1       Harappa      000-794-575-595-002-055-706-033-240-233-840-032-740  None     [(3, F)]
+49  2593.1  Mohenjo-daro                                  575-706-001-031-220-520  None    [(2, FS)]
+91   M4271       Harappa  000-190-794-575-595-002-055-705-033-240-233-840-032-740  None     [(3, F)]
+a3 seven-kottai lines: 16; jar follows 575 on 14
+a3 seven-kottai seals median face 412 mm2 (n 11) against all seals 499; one-sided P 0.858; median signs 6.0 against 4.0
+
+== (b) person count x cup count
+all tablets: 26 of 36 multiply to 6 or 12; shuffled 22.1; P 0.0283
+distinct texts: 8 of 14 multiply to 6 or 12; shuffled 6.0; P 0.1895
+     obj  cup  person  who  prod                                                       text
+0    264    3       2  140     6                                  032-140-156-400 | 033-700
+1    370    2       2  176     4  491-920-002-176-740-335-740-317 | 413-575-335-740-032-700
+2    476    4       2  861     8                                      034-700 | 416-861-002
+4    596    2       3  176     6                              032-700 | 235-705-033-176-740
+5    621    4       2  861     8                                      416-861-002 | 034-700
+6    646    4       1  176     4                              034-700 | 201-060-031-176-740
+8    693    3       3  861     9                                033-700 | 003-861 | 003-156
+9    769    4       3  861    12                                003-861 | 034-700 | 003-156
+10   794    4       3  861    12                                034-700 | 003-861 | 003-154
+12   844    4       3  861    12                                034-700 | 003-861 | 003-156
+30   922    2       3  158     6                                      032-700 | 494-003-158
+31  1607    3       2  137     6                                      820-002-137 | 033-700
+32  1611    3       2  137     6                                        820-002-137-033-700
+34  1732    3       1  100     3                              705-031-100-740-400 | 033-700
+
+== (c) nirai 171
+counts after 171: [(5, 20), (3, 8)]  series: [('F', 28)]
+cup count distribution [(1, 4), (2, 102), (3, 157), (4, 129), (5, 1), (6, 3), (7, 1)]; share of 3 or 5 among cup counts 0.398
+c: nirai counts that are 3 or 5: 28 of 28; P under the cup distribution 6.3e-12
+   nirai counts 2/4/8: 0; cup counts 2/4/8 share 0.582
+   objects with 171 that also carry a cup sign: 3 of 35:  {'375': '036-700 | 171-033-700-415', '1692': '036-700 | 171-035-415', '1250': '171-035-415 | 033-700'}
+   kinds with 171: [('seal', 21), ('mtab', 13), ('tag', 2), ('pot', 1)]
+
+== (d) after 320-920
+      face          site  kind                                         text         next  count unit_after
+0    259.1       Harappa  seal          861-002-798-320-920-017-575-740-400  017-575-740    7.0        575
+1    569.2       Harappa  mtab                  798-240-233-320-920-740-400      740-400    NaN           
+2   1082.1       Harappa  seal              321-405-002-806-233-320-920-740          740    NaN           
+3   1105.1       Harappa  seal                              235-320-920-740          740    NaN           
+4   1273.1       Harappa  mtab                  798-240-233-320-920-740-400      740-400    NaN           
+5   1316.1     Dholavira  seal                  820-000-175-235-320-920-520          520    NaN           
+6   1655.1       Harappa  mtab                          233-320-920-740-400      740-400    NaN           
+7   2638.1  Mohenjo-daro  seal                      821-001-233-320-920-740          740    NaN           
+8   3186.1  Mohenjo-daro  seal                          415-220-320-920-520          520    NaN           
+9   3311.1  Mohenjo-daro  seal                          415-220-320-920-520          520    NaN           
+10  3330.1  Mohenjo-daro  seal                                  320-920-740          740    NaN           
+11  3434.1  Mohenjo-daro  seal                              220-320-920-550          550    NaN           
+12  3651.1  Mohenjo-daro  seal              320-920-742-803-415-220-371-406  742-803-415    NaN           
+13  3815.1  Mohenjo-daro   pot                                  320-920-740          740    NaN           
+14   M1176  Mohenjo-daro  seal                      000-415-220-320-920-520          520    NaN           
+15   M1497  Mohenjo-daro  seal                          220-320-920-550-000      550-000    NaN           
+16   M2029  Mohenjo-daro  seal                  820-820-001-233-320-920-740          740    NaN           
+17   M4661       Harappa   tag                          233-320-920-740-400      740-400    NaN           
+18   M5253       Harappa   tag  806-415-220-320-920-255-435-690-590-390-740  255-435-690    NaN           
+what follows the phrase: [('740', 10), ('520', 4), ('550', 2), ('017', 1), ('742', 1), ('255', 1)]
+
+== (e) multi-face tablets as one record
+multi-face account objects: 845
+e1 cross-face repeat (objects): 82 of 179 against 59.3 shuffled, P 0.0000
+e1 cross-face repeat (distinct records): 52 of 138 against 41.0 shuffled, P 0.0120
+e2 total across faces (objects): 1 of 34 against 3.7 shuffled, P 0.9887
+e2 total across faces (distinct records): 1 of 15 against 3.3 shuffled, P 0.9810
+e3 distinct records with a kalam count and a cup count: 5; cup count = kalam count on 2
+       cisi                                               text                                                                              english
+129   H-768              000-235-233-705-033-740-400 | 032-700     Junior of the [lost sign]-Bamboo-star-Scabbard-fish three kalam house. Two cups.
+134   H-774  240-705-033-550-525-400 | 413-575-335-711-033-700  High-star three kalam Gate-Guard, junior. Grain-Great measure-Town-Pot; Three cups.
+187   H-846                      705-031-100-740-400 | 033-700                                     Junior of the one kalam Elder house. Three cups.
+639  H-2139                      235-705-033-176-740 | 032-700                                  Of the Bamboo-star three kalam Tax house. Two cups.
+668  H-1813  220-705-033-550-525-400 | 413-575-335-711-033-700       Star three kalam Gate-Guard, junior. Grain-Great measure-Town-Pot; Three cups.

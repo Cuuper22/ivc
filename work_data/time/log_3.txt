@@ -1,0 +1,108 @@
+   level  seals agent  office  boxcot noanimal  short fishcrest  median_mm2  median_ft
+0      0     36  0/23       1       1     6/36      2      0/36     574.475      21.75
+1      1    107  6/66       3       3   14/107      2     9/107     588.040      17.80
+2      2     91  0/53       1       2    14/91      5     11/91     630.010      14.50
+3      3    125  4/72       3       4   32/125     12    15/125     524.410      11.60
+4      4    142  6/93       0       3   24/142      7    13/142     552.070       8.40
+5      5     72  4/45       2       0    14/72      3      8/72     663.060       6.15
+6      6     55  1/31       1       0    14/55      1      6/55     524.410       4.30
+D1 DK-G seals agent      Spearman rho +0.029 P 0.5718 (n 383)
+D1 DK-G seals office     Spearman rho -0.028 P 0.4804 (n 628)
+D1 DK-G seals boxcot     Spearman rho -0.059 P 0.1395 (n 628)
+D1 DK-G seals noanimal   Spearman rho +0.061 P 0.1255 (n 628)
+D1 DK-G seals short      Spearman rho -0.005 P 0.9104 (n 628)
+D1 DK-G seals fishcrest  Spearman rho +0.040 P 0.3135 (n 628)
+D1 DK-G seal size rho -0.006 P 0.8755
+
+D2 boxcot: n 43; by site and bin:
+bin           early  late  middle
+site                             
+Dholavira         0     1       1
+Harappa           2     5      10
+Mohenjo-daro      5     6      13
+ earliest: [['H-533', 'Harappa', 'Period 3B-2', 'B layer-map'], ['M-851', 'Mohenjo-daro', 'Period 3B-2', 'B layer-map'], ['H-1692', 'Harappa', 'Period 3B', 'A excavator'], ['H-75', 'Harappa', 'Period 3B/C', 'B layer-map'], ['M-1902', 'Mohenjo-daro', 'Period 3B/C', 'B layer-map']]
+
+D2 office: n 25; by site and bin:
+bin           early  late  middle
+site                             
+Dholavira         0     0       1
+Harappa           1     0       3
+Kalibangan        0     0       1
+Mohenjo-daro      4     6       9
+ earliest: [['M-974', 'Mohenjo-daro', 'Period 3B-2', 'B layer-map'], ['H-2128', 'Harappa', 'Period 3B', 'A excavator'], ['M-1902', 'Mohenjo-daro', 'Period 3B/C', 'B layer-map'], ['H-175', 'Harappa', 'Period 3B/C', 'A excavator'], ['M-1190', 'Mohenjo-daro', 'Period 3B/C', 'B layer-map']]
+
+D2 ship: n 7; by site and bin:
+bin           early  late  middle
+site                             
+Harappa           0     2       1
+Mohenjo-daro      1     2       1
+ earliest: [['M-664', 'Mohenjo-daro', 'Period 3B/C', 'B layer-map'], ['H-239', 'Harappa', 'Period 3C-1', 'B layer-map'], ['H-1033', 'Harappa', 'Period 3C-3', 'B layer-map'], ['H-756', 'Harappa', 'Period 3C-3', 'B layer-map'], ['M-128', 'Mohenjo-daro', 'Period 3C-4', 'B layer-map']]
+
+D2 short: n 60; by site and bin:
+bin           early  late  middle
+site                             
+Dholavira         0     2       2
+Harappa           0     0       5
+Kalibangan        0     0       1
+Mohenjo-daro      9    18      23
+ earliest: [['M-1090', 'Mohenjo-daro', 'Period 3B-2', 'B layer-map'], ['M-1079', 'Mohenjo-daro', 'Period 3B-2', 'B layer-map'], ['H-78', 'Harappa', 'Period 3B/C', 'A excavator'], ['H-82', 'Harappa', 'Period 3B/C', 'B layer-map'], ['M-1883', 'Mohenjo-daro', 'Period 3B/C', 'B layer-map']]
+
+D3 unshuffled early vs late, all sites
+      feature   early     late  early_pct  late_pct       p
+0      agent   5/111   16/359     4.5045    4.4568  1.0000
+1  fishcrest  17/161   59/547    10.5590   10.7861  1.0000
+2     office   4/181    5/611     2.2099    0.8183  0.1268
+3     boxcot   5/181   10/611     2.7624    1.6367  0.3523
+4      short   9/181   20/611     4.9724    3.2733  0.2682
+5   noanimal  37/181  137/611    20.4420   22.4223  0.6104
+6       ship   1/365    4/765     0.2740    0.5229  1.0000
+7        cup  46/118   31/104    38.9831   29.8077  0.1606
+
+D4 Harappa tablets with a cup sign, by period code:
+             sum  count      mean
+time                             
+Period 3B-1    2      3  0.666667
+Period 3B     43     97  0.443299
+Period 3B/C  219    432  0.506944
+Period 3C-1   27     58  0.465517
+Period 3C     32     60  0.533333
+Period 3C-2    8     29  0.275862
+Period 3C-3   20     35  0.571429
+Period 3C-4    3     16  0.187500
+Period 4       4      6  0.666667
+Period 5A      2      3  0.666667
+D4 rho -0.008 P 0.83 (n 739)
+Harappa seals no-animal by period:
+             sum  count
+time                   
+Period 3A      0      1
+Period 3B-1    0      2
+Period 3B      1      6
+Period 3B-2    1      2
+Period 3B/C   12     88
+Period 3C-1    6     44
+Period 3C     10     16
+Period 3C-2    8     47
+Period 3C-3   16     53
+Period 3C-4   11     26
+Period 4       4     15
+Period 5A      1      2
+Period 5B      1      2
+Harappa dated objects by kind and period:
+kind         bangle  mtab  other  pot  rod  seal  tag
+time                                                 
+Period 1          0     0      0    2    0     0    0
+Period 2          0     0      0   29    0     0    1
+Period 3A         0     0      0    0    0     1    0
+Period 3B-1       0     3      0    0    0     2    0
+Period 3B         0    97      1    4    0     6    0
+Period 3B-2       0     0      0    0    0     2    0
+Period 3B/C       2   432      5    2    2    88    5
+Period 3C-1       0    58      1    1    0    44    1
+Period 3C         2    60      1   43    0    16    1
+Period 3C-2       0    29      3    3    0    47    1
+Period 3C-3       0    35      0    1    0    53    1
+Period 3C-4       0    16      0    0    1    26    0
+Period 4          0     6      0    1    0    15    0
+Period 5A         0     3      0    0    0     2    0
+Period 5B         0     0      0    0    0     2    0

@@ -965,3 +965,181 @@ Added by `work_scripts/sound_v5_readings.py` (fifth list: `jobs/out/sound_list_v
 - Sound: *viḷai kavar mīn aṭi kuṭi kalam mū vēḷ aṭimai kā*
 - Word by word: `806` viḷai "produce, ripened crop" · `415` kavar "branch (of a line)" · `220` mīn "star" · `717` aṭi "foot; servant (aṭiyāṉ)" · `740` kuṭi "house of" · `705` kalam "grain measure (a kalam); ship where it stands uncounted before the sail 500" · `033` mū "three" · `520` vēḷ "chief" · `097` aṭimai "bondsman, servant (a ration receiver)" · `161` kā "keeper, load-carrier (variant)"
 
+## Twenty more: copper tablets with their pictures, and texts opened by the sixth pass
+
+Added by `work_scripts/sound_v6_readings.py` (sixth list: `jobs/out/sound_list_v6.md`). Readings 121-134 are Mohenjo-daro copper tablets: one face carries the text, the other a picture; all copies of one text carry the same picture (a "set"). The picture is named as read from the photographs. New words they rest on: kiḷai "kindred" (407/406/408), par̤aṉam "paddy field" (421-424), paṭi "ration" (321, 323, variants of 320), maka "child of" (772/773), irutiṅkaḷ "two months" (927), mutu "elder" (101), pal "many" (642), cūṭu "sheaves" (844), ūr "town" (336), vaḷḷam "grain measure" (711). A dagger (†) marks a word under test, a double dagger (‡) a word whose fact was seen while choosing. Reading order = stored order reversed. "New text" = second-catalogue (Mahadevan 1977) text with no partner in the first catalogue.
+
+## 121. Bamboo-star: three kalam; sheaves of the kindred, the kindred's ration.
+
+- Objects: M-534, M-535, M-536, M-537, M-538, M-539, M-541, M-542 ...; 14 objects carry this exact text (TAB:C Copper 14)
+- Site and findspot: Mohenjo-daro (DK-) x8, Mohenjo-daro (--) x3, Mohenjo-daro (DKC) x1, Mohenjo-daro (SD-) x1
+- Picture: a hare among plants (on two copies the sign 753 is written on that side instead)
+- Signs: `235-705-033-845-407-321-407`
+- Sound: *vēymīn kalam mū cūṭu kiḷai paṭi kiḷai*
+- Word by word: `235` vēymīn "Bamboo-star (Punarvasu)" · `705` kalam "grain measure (a kalam); ship where it stands uncounted before the sail 500" · `033` mū "three" · `845` cūṭu "bundle of sheaves" · `407` kiḷai "kindred, family (the branching tree: kiḷai "to branch, multiply as families")" · `321` paṭi "rung; ration measure (variant of 320)" · `407` kiḷai "kindred, family (the branching tree: kiḷai "to branch, multiply as families")"
+
+## 122. Produce: sheaves, a quarter; the kindred's share; of the Month house.
+
+- Objects: M-2054, M-582, M-583, M-585, M-586, M-587, M-588, M-602 ...; 14 objects carry this exact text (TAB:C Copper 14)
+- Site and findspot: Mohenjo-daro (DK-) x4, Mohenjo-daro (--) x3, Mohenjo-daro (DKG. (S)) x2, Mohenjo-daro (SD-) x2
+- Picture: a horned figure with a bow (on four copies a flowering-plant sign, 777 / 780 / 781 / 782, is written on that side instead)
+- Signs: `806-845-061-407-850-900-740`
+- Sound: *viḷai cūṭu kāl kiḷai kāṇi tiṅkaḷ kuṭi*
+- Word by word: `806` viḷai "produce, ripened crop" · `845` cūṭu "bundle of sheaves" · `061` kāl "quarter" · `407` kiḷai "kindred, family (the branching tree: kiḷai "to branch, multiply as families")" · `850` kāṇi "share (the bare diamond)" · `900` tiṅkaḷ "month (counted)" · `740` kuṭi "house of"
+
+## 123. First-star, the Seven Maidens; the staff-bearer chief; two kindreds.
+
+- Objects: M-547, M-548, M-549, M-1555, M-1556, M-1557, M-1558; 8 objects carry this exact text (TAB:C Copper 8)
+- Site and findspot: Mohenjo-daro (--) x4, Mohenjo-daro (HR-) x2, Mohenjo-daro (DKG. (S)) x1, Mohenjo-daro (DK-) x1
+- Picture: a goat with a marked body and a trough (on four copies sign 777 instead)
+- Signs: `231-017-585-095-520-032-407`
+- Sound: *orumīn ēḻu kaṉṉi? kōlaṉ vēḷ iru kiḷai*
+- Word by word: `231` orumīn "First-star" · `017` ēḻu "seven" · `585` kaṉṉi? "maiden (of the Seven)" · `095` kōlaṉ "staff-bearer" · `520` vēḷ "chief" · `032` iru "two" · `407` kiḷai "kindred, family (the branching tree: kiḷai "to branch, multiply as families")"
+
+## 124. Descendant of High-star: sheaves, a quarter, the kindred.
+
+- Objects: M-567, M-568, M-569, M-1515, M-1516, M-1517; 6 objects carry this exact text (TAB:C Copper 6)
+- Site and findspot: Mohenjo-daro (DK-) x3, Mohenjo-daro (HR-) x1, Mohenjo-daro (--) x1, Mohenjo-daro (DKG. (S)) x1
+- Picture: a tiger
+- Signs: `798-240-845-061-407`
+- Sound: *maru- mīmīn cūṭu kāl kiḷai*
+- Word by word: `798` maru- "descendant, clan member" · `240` mīmīn "High-star (house crest)" · `845` cūṭu "bundle of sheaves" · `061` kāl "quarter" · `407` kiḷai "kindred, family (the branching tree: kiḷai "to branch, multiply as families")"
+
+## 125. Branch-Star: sheaves of the kindred.
+
+- Objects: M-507, M-508, M-1456, M-1457; 4 objects carry this exact text (TAB:C Copper 4)
+- Site and findspot: Mohenjo-daro (DK-) x2, Mohenjo-daro (VSA) x1, Mohenjo-daro (DKG) x1
+- Picture: an endless knot
+- Signs: `415-220-845-407`
+- Sound: *kavar mīn cūṭu kiḷai*
+- Word by word: `415` kavar "branch (of a line)" · `220` mīn "star" · `845` cūṭu "bundle of sheaves" · `407` kiḷai "kindred, family (the branching tree: kiḷai "to branch, multiply as families")"
+
+## 126. Of the house allied to the Chief Staff; month: three fields.
+
+- Objects: M-1476, M-1479, M-1480; 3 objects carry this exact text (TAB:C Copper 3)
+- Site and findspot: Mohenjo-daro (--) x2, Mohenjo-daro (DK-) x1
+- Picture: a water buffalo; copies write the field sign as 422, 423 or 424
+- Signs: `255-435-690-740-900-003-422`
+- Sound: *mutal kōl piṇai kuṭi tiṅkaḷ mū par̤aṉam*
+- Word by word: `255` mutal "chief, first" · `435` kōl "rod, sceptre: mutal kōl "chief staff", an office" · `690` piṇai "bound, allied" · `740` kuṭi "house of" · `900` tiṅkaḷ "month (counted)" · `003` mū "three" · `422` par̤aṉam "paddy field, farmland (grid with plants); with 421/423/424"
+
+## 127. Three fields: of the Tax-Elder house.
+
+- Objects: M-1497, M-1499; 2 objects carry this exact text (TAB:C Copper 2)
+- Site and findspot: Mohenjo-daro (DK-) x1, Mohenjo-daro (--) x1
+- Picture: a goat with a marked body (the sister set 003-421-176-100-740-790 writes the field sign 421)
+- Signs: `003-422-176-100-740`
+- Sound: *mū par̤aṉam iṟai mutu kuṭi*
+- Word by word: `003` mū "three" · `422` par̤aṉam "paddy field, farmland (grid with plants); with 421/423/424" · `176` iṟai "tax, levy" · `100` mutu "elder" · `740` kuṭi "house of"
+
+## 128. Produce of the Bamboo-star Scabbard house: three kalam; the Maiden kindred.
+
+- Objects: M-1523, M-1524; 3 objects carry this exact text (TAB:C Copper 3)
+- Site and findspot: Mohenjo-daro (VSA) x2, Mohenjo-daro (--) x1
+- Picture: a spotted composite beast
+- Signs: `806-235-233-705-033-585-407`
+- Sound: *viḷai vēymīn vāḷai kalam mū kaṉṉi? kiḷai*
+- Word by word: `806` viḷai "produce, ripened crop" · `235` vēymīn "Bamboo-star (Punarvasu)" · `233` vāḷai "scabbard-fish (a counted fish good; also a crest "Bright-star" vāḷmīn)" · `705` kalam "grain measure (a kalam); ship where it stands uncounted before the sail 500" · `033` mū "three" · `585` kaṉṉi? "maiden (of the Seven)" · `407` kiḷai "kindred, family (the branching tree: kiḷai "to branch, multiply as families")"
+
+## 129. Scabbard-fish, the Maiden kindred: five kalam.
+
+- Objects: M-513, M-514, M-515; 3 objects carry this exact text (TAB:C Copper 3)
+- Site and findspot: Mohenjo-daro (DKE) x1, Mohenjo-daro (DKC) x1, Mohenjo-daro (DK-) x1
+- Picture: no picture: the other face carries the amount 706-005 "kalam five"
+- Signs: `233-585-407`
+- Sound: *vāḷai kaṉṉi? kiḷai*
+- Word by word: `233` vāḷai "scabbard-fish (a counted fish good; also a crest "Bright-star" vāḷmīn)" · `585` kaṉṉi? "maiden (of the Seven)" · `407` kiḷai "kindred, family (the branching tree: kiḷai "to branch, multiply as families")"
+
+## 130. Descendant of First-star: three kalam, two months: of the Elder house.
+
+- Objects: M-606, M-1568; 2 objects carry this exact text (TAB:C Copper 2)
+- Site and findspot: Mohenjo-daro (DKG. (S)) x1, Mohenjo-daro (DK-) x1
+- Picture: sign 957 on the picture side
+- Signs: `798-231-705-033-904-100-740`
+- Sound: *maru- orumīn kalam mū irutiṅkaḷ mutu kuṭi*
+- Word by word: `798` maru- "descendant, clan member" · `231` orumīn "First-star" · `705` kalam "grain measure (a kalam); ship where it stands uncounted before the sail 500" · `033` mū "three" · `904` irutiṅkaḷ "two months" · `100` mutu "elder" · `740` kuṭi "house of"
+
+## 131. Of the house of the heir of Hill-Field.
+
+- Objects: M-551, M-552, M-553, M-554, M-555, M-556, M-557, M-558 ...; 29 objects carry this exact text (TAB:C Copper 29)
+- Site and findspot: Mohenjo-daro (DK-) x13, Mohenjo-daro (--) x5, Mohenjo-daro (HRB) x4, Mohenjo-daro (DKG. (S)) x2
+- Picture: a branch-horned beast with a trough (stag); on two copies of the short form 503-615-740 the deer sign 341 is written in its place
+- Signs: `503-615-752-740`
+- Sound: *malai vayal maka kuṭi*
+- Word by word: `503` malai "hill" · `615` vayal "field" · `752` maka "child of" · `740` kuṭi "house of"
+
+## 132. Three kalam of ivory: of the house; one.
+
+- Objects: M-527, M-528, M-529, M-530; 4 objects carry this exact text (TAB:C Copper 4)
+- Site and findspot: Mohenjo-daro (DK-) x2, Mohenjo-daro (DKE) x1, Mohenjo-daro (VSA) x1
+- Picture: an elephant
+- Signs: `706-033-923-740-001`
+- Sound: *kalam mū maruppu kuṭi oru*
+- Word by word: `706` kalam "grain measure (variant of 705)" · `033` mū "three" · `923` maruppu "tusk, ivory (horn; the counted thing on elephant copper tablets)" · `740` kuṭi "house of" · `001` oru "one"
+
+## 133. Of the royal house of the Seven Maidens.
+
+- Objects: M-578, M-580, M-581, M-1534; 4 objects carry this exact text (TAB:C Copper 4)
+- Site and findspot: Mohenjo-daro (DK-) x2, Mohenjo-daro (DKG. (S)) x1, Mohenjo-daro (VSA) x1
+- Picture: a spotted, long-necked composite beast
+- Signs: `017-585-388-740`
+- Sound: *ēḻu kaṉṉi? aracu kuṭi*
+- Word by word: `017` ēḻu "seven" · `585` kaṉṉi? "maiden (of the Seven)" · `388` aracu "pipal; royal (house name)" · `740` kuṭi "house of"
+
+## 134. First-star: of the house allied to the Chief Staff.
+
+- Objects: M-1548; 2 objects carry this exact text (TAB:C Copper 2)
+- Site and findspot: Mohenjo-daro (HR-) x1, Mohenjo-daro (--) x1
+- Picture: signs 479-749 on the picture side
+- Signs: `231-255-435-690-740`
+- Sound: *orumīn mutal kōl piṇai kuṭi*
+- Word by word: `231` orumīn "First-star" · `255` mutal "chief, first" · `435` kōl "rod, sceptre: mutal kōl "chief staff", an office" · `690` piṇai "bound, allied" · `740` kuṭi "house of"
+
+## 135. Spindle, one; first ward: a bundle of cotton.
+
+- Object: M-1889; 1 object carry this exact text (SEAL:S Steatite 1)
+- Site and findspot: Mohenjo-daro (DKG. (S)) x1
+- Signs: `371-031-741-844-390`
+- Sound: *katir oru orukuṭi cūṭu parutti*
+- Word by word: `371` katir "spindle (same drawing code as 370)" · `031` oru "one" · `741` orukuṭi "first ward" · `844` cūṭu "bundle of sheaves (variant of 845)" · `390` parutti "cotton (cotton_house.md; base value)"
+
+## 136. Of the Assembly: of the Produce-Scabbard-Ivory house; a quarter for the kindred.
+
+- Object: M-171; 1 object carry this exact text (SEAL:S Steatite 1)
+- Site and findspot: Mohenjo-daro (HR-) x1
+- Signs: `692-060-806-233-923-740-061-407`
+- Sound: *kūṭṭam -iṉ viḷai vāḷai maruppu kuṭi kāl kiḷai*
+- Word by word: `692` kūṭṭam "assembly, council (an office opening)" · `060` -iṉ "of (joiner after an opener)" · `806` viḷai "produce, ripened crop" · `233` vāḷai "scabbard-fish (a counted fish good; also a crest "Bright-star" vāḷmīn)" · `923` maruppu "tusk, ivory (horn; the counted thing on elephant copper tablets)" · `740` kuṭi "house of" · `061` kāl "quarter" · `407` kiḷai "kindred, family (the branching tree: kiḷai "to branch, multiply as families")"
+
+## 137. Two quarters: agent of the Elder house.
+
+- Object: H-45; 1 object carry this exact text (SEAL:S Steatite 1)
+- Site and findspot: Harappa (F-) x1
+- Signs: `820-002-101-740-090`
+- Sound: *kāl iru mutu kuṭi āḷ*
+- Word by word: `820` kāl "quarter-share" · `002` iru "two" · `101` mutu "elder (bracketed, variant of 100)" · `740` kuṭi "house of" · `090` āḷ "manager"
+
+## 138. Three shares: of the Two-Months house.
+
+- Object: M-1893; 1 object carry this exact text (SEAL:S Steatite 1)
+- Site and findspot: Mohenjo-daro (DKG. (S)) x1
+- Signs: `817-033-927-740`
+- Sound: *kāṇi mū irutiṅkaḷ kuṭi*
+- Word by word: `817` kāṇi "share, holding" · `033` mū "three" · `927` irutiṅkaḷ "two months (variant of 904, M294)" · `740` kuṭi "house of"
+
+## 139. Horn-Field, the Tax-Elder: one; three fields. A new text.
+
+- Object: second catalogue text 2395 (seal; no partner in the first catalogue)
+- Site: Mohenjo-daro
+- Signs: `495-615-176-100-001-033-422`
+- Sound: *kompu vayal iṟai mutu oru mū par̤aṉam*
+- Word by word: `495` kompu "horn (horn-blower; a name word)" · `615` vayal "field" · `176` iṟai "tax, levy" · `100` mutu "elder" · `001` oru "one" · `033` mū "three" · `422` par̤aṉam "paddy field, farmland (grid with plants); with 421/423/424"
+
+## 140. Twelve, twelve; of Branch: the house of the child of High-star. A new text.
+
+- Object: second catalogue text 4106 (seal; no partner in the first catalogue)
+- Site: Harappa
+- Signs: `055-055-415-060-240-773-740`
+- Sound: *paṉṉiru paṉṉiru kavar -iṉ mīmīn maka kuṭi*
+- Word by word: `055` paṉṉiru "dozen" · `055` paṉṉiru "dozen" · `415` kavar "branch (of a line)" · `060` -iṉ "of (joiner after an opener)" · `240` mīmīn "High-star (house crest)" · `773` maka "child of (variant of 752/760)" · `740` kuṭi "house of"
+

@@ -192,4 +192,33 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `measured` The jar ending is dropped abroad: 11 of 57 foreign seals, 2 of 25 on cylinders (P 0.005).
 - Open: 24 CDLI seal records with no transcription need their photographs; the Ashmolean sealing photo (five or six signs) was not reachable from the workspace. Fix made: `values_master.csv` had 390 as "warrior"; set to *parutti* "cotton" with the old word as second.
 
+## Odd readings fixed (from `jobs/out/odd_readings.md`)
+- `measured` New seeded draw of 60 whole faces, read by eye after the rules were frozen: 44 sense, 15 odd, 1 nonsense (73% sense; first draw of 40 was 25 / 13 / 2, 62%). Same reader designed the rules. Grades now: whole 2,201, part 1,268, damaged 2,079, none 131. 902 multi-face objects joined into one record each (306 whole).
+- `guess` Slot rules: a sign has one word in names and one in count lines (904 "Dark-moon" / "two months"; 900 "Moon" / "month"; 840 "Peer" / "pair"; 055 "Twelve" / "dozen"; 690 "Ally" / "bound"; 806 "Bounty" / "produce"; 861 "Tribute" / "share"). 368 text-final = "standard-bearer" (jar on the face 1 of 32 against 39.5%). 824 before strokes = opener "worth two".
+- `measured` 840-032 ends a name 35 of 42 against 12% (new texts 4 of 7 against 0 of 33). Went against: name-sense for 900, 368, 861, 824 on first-catalogue tests; house-mates sharing these signs.
+- Open: 10 of the 16 odd lines are measure words left inside a name or on a goods line.
+
+## Outside match, third way in: the photograph (appended to `jobs/out/outside_match.md`)
+- `measured` The Umma sealing photo (harappa.com scan, saved in `work_data/abroad3/`) shows the catalogue's five signs `127 705 002 004 390`; back is woven cloth with a rim and a string lump. Sign 127 is the weakest match, 705 the strongest. The right end is broken, so Tosi's sixth sign may be lost there.
+- `measured` 11 of 5,610 home faces share the tail `002 004 390`; none shares four signs. Of the 10 contiguous matches 6 are Mohenjo-daro; 8 of the 10 seals carry the short-horned bull; 5 open with the diamond 817.
+- `guess` The Umma label is the Mohenjo-daro "2, 4, cotton" line with its opener replaced by a person sign plus the kalam measure.
+- `measured` Went against: no CDLI text puts a jar word on a line with Dilmun, Magan or Meluhha (918 texts); 18 of 21 seal records on Guabba/Meluhha tablets have Sumerian legends, 3 are unseen. Umma packs cloth in baskets, not jars.
+
+## History through depth (from `jobs/out/history.md`)
+- `measured` 2,666 of 4,694 objects get a time bin (early: to Harappa Period 3B, before about 2200 BC; middle; late: 3C-3 on). Nothing in the system moves with time: agent seals 4.5 / 4.1 / 4.5%; fish-crest names 12.3 / 12.6 / 12.8%; office opening 1.4 / 0.9 / 0.8%; Boxed-cotton house 1.9 / 1.6 / 1.6%; endings, text length, star names, fish spelling all flat.
+- `measured` The axis itself works: inscription-only seals at Harappa go 14 of 99 to 33 of 98 (P 0.0018), matching the excavators.
+- `measured` The office and the Boxed-cotton house are already in two or three cities in the earliest bin. Full names recur across bins at the shuffled rate (65 against 65.2); 39 of 49 recurring names keep their ending. Produce house 806 rises (3, 11, 18), Chest house 590 falls. Late seals are bigger (713 / 676 / 767 mm2).
+- `guess` The system was fixed from the first city levels to the end, so one key reads six centuries; names and rank are inherited. Time is a free held-back test set for sound values.
+- `measured` *niṟai* (171): 28 of 28 counts are 5 or 3, in tall strokes (P 6e-12), the two non-binary steps of the stone weights. Joined tablet faces repeat a number on 52 of 138 records against 41.0 (P 0.012).
+- `measured` Went against: administration thickening with time; a trade peak for the overseas bull and the ship word; totals across faces (1 of 15); persons x cups = 6 or 12 (7 of 10, P 0.26).
+- Open: earliest DK-G level at Mohenjo-daro has 0 of 36 fish-crest seals against 9 to 15 in later levels.
+
+## Sixth pass: pictures on the backs of tablets (from `jobs/out/sound_list_v6.md`)
+- `measured` Fully read complete faces: strict 1,970 of 3,600, wide 2,160 (was 1,825 / 2,004). Seals strict 738 of 1,540; goods objects 1,232 of 2,060; copper tablets strict 135 of 196 (was 69). New texts strict 215 of 627. `work_data/values_master3.csv`: 189 signs, 153 strict (47 base values), 8 wide, 26 testing, 2 paused.
+- `measured` Predicted first: tablets showing the gharial carry sign 255, 11 of 53 against 3.1 by shuffle (P 0.0002); all 11 are copies of one Harappa text, so per distinct text the tie does not hold. Same footing as the elephant-ivory result (copies of two texts). Sign 923 "ivory" is on 1 of 49 elephant seals and 0 of 48 ivory rods.
+- `guess` 255 = *mutal* "chief", punning *mutalai* "crocodile" (DEDR 4952). Copper tablet sets are crop and allowance records for a named house, one animal per record; the animal belongs to the record, not to a house.
+- `measured` On some copies the picture side is written as a sign: deer sign 341 for the stag, 753 for the hare, 777/780/781/782 for the horned archer, 777 for the goat. Copies of one copper text swap 421/422/423/424, 904/905, 407/408, 231/220, 705/706.
+- `guess` Rivals settled for now: 711 *vaḷḷam* grain measure (other face names a person 15 of 20 against 43%); 060 *-iṉ* "of" (P 0.08) over "in"; 407 *kiḷai* "kindred" (fish crest on its faces 65 of 127 against 20%; cloth has missed four times); 838 produce ahead of sesame; 692 assembly ahead of district. 421 to 424 = *paḻaṉam* "paddy field".
+- `measured` 405/406/407 cannot be told apart in the photos: the split is the first catalogue's. Next 25 signs: 11 came true; 14 stay testing after one redesign each.
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.

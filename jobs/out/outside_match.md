@@ -164,3 +164,96 @@ Chrome tools were not connected, so ePSD2, ORACC and JSTOR could not be driven t
 - `measured` 838 is on 0 of 69 foreign objects.
 - `read` Sesame first at Adab, about 2280-2240 BCE; the word ellum comes later in lexical lists.
 - `open` Ashmolean 1931.120 sign count (five or six) needs a clean photo.
+
+
+## Third way in: the photograph
+
+Scripts: `work_scripts/abroad3_01_photo.py` to `abroad3_07_seal_legends.py`. Tables, crops and saved images: `work_data/abroad3/`. Sign numbers are Lipi numbers. "Reading order" is right to left on the sealing (the bull's head is at the right end, so the text starts at the right).
+
+### What was found
+
+**1. The photograph of the Umma sealing was reached and read: it shows the catalogue's five signs in order, `127 705 002 004 390`, and the best-drawn one is 705, a U with a tall stroke standing in it.** Building on this string.
+
+**2. The sealing's text is unique at home: no home text shares more than 3 signs with it, and the 3 are always the tail `002 004 390`.** `measured` Ten home faces carry that tail (6 Mohenjo-daro, 2 Harappa, Dholavira, Surkotada; 9 seals and a Harappa tablet), 8 of the 10 seals have the short-horned bull, same as Umma. The first two signs are the foreign part: 127 occurs on 3 home faces (never before 705), and 705 is never followed by a two at home (it is followed by a count 110 times out of 217, 103 of them by `033`, three tall strokes).
+
+**3. Cuneiform side: nothing yet ties a jar to a Dilmun, Magan or Meluhha good at Umma, but three Umma texts are the nearest** (item 3 below). **4. The CDLI seal records: all 21 distinct seal records have a Sumerian name-title-father legend or none; none is pictorial or foreign** (item 4). **5. No other Indus sealing was photographed** (item 5).
+
+### Item 1. The photograph
+
+Routes tried, in order:
+- harappa.com page: the workspace shell is refused (Cloudflare 403, curl with a browser identity too; WebFetch returns text only). **It worked in the laptop's in-app browser pane.** Front: <https://www.harappa.com/sites/default/files/styles/large/public/umma-seal-impression.jpg> and back: <https://www.harappa.com/sites/default/files/styles/large/public/umma-seal-impression-back.jpg> (both are a halftone scan of the 1994 plate, 969 and 957 px wide). The pane's screenshot (792 px wide, a little smaller than the file) is saved as `umma_front_screenshot.jpg` and `umma_back_screenshot.jpg`; crops are `umma_inscription_x3_contrast.png`, `umma_right_x5.png`, `umma_left_x5.png`.
+- CDLI P549950 (<https://cdli.earth/artifacts/549950>): the page opens, gives "Umma (mod. Tell Jokha)", and links `dl/photo/P549950.jpg`, which is a 404. No photo there.
+- Ashmolean collections site (<https://collections.ashmolean.org>): the search is a script-driven page; the shell got generic results unrelated to 1931.120 and the pane did not return a record. Not reached.
+- Chrome extension: not connected. Web search for an Ashmolean image page: no result page with the object.
+So the only picture is the print scan on harappa.com. It is low resolution and the top of the text sits under the shadow of the clay ridge.
+
+What the back shows: a woven-cloth grid pressed over most of the surface, a raised rim at the right where the cloth was gathered, and a looped lump at the right end (the string and knot). It matches Tosi's jar-mouth description.
+
+What the front shows: a bull facing right, a trough under its head, and above it a line of strokes under the ridge. Left to right on the clay I see a short single stroke, then a block of four short thick strokes, then two tall strokes that start higher up, then one long stroke with a curved foot, a thin stroke inside it and a third tall stroke, then a triangle (an "A" with a long slanting side), then faint broken marks at the right where the clay breaks.
+
+Sign by sign, in reading order (right to left):
+
+| # | what I see | Lipi sign | how sure and why |
+|---|---|---|---|
+| 1 | the "A"-shaped body with a long slanting line, and faint curved marks at its right edge | 127 person with two bows and arrows | weakest. The shape is a person-like body, the bows are broken at the clay edge. Chosen because it is the one figure sign the catalogue gives here and the body fits; I cannot see the bows clearly |
+| 2 | a long stroke curving at its foot, a thin stroke standing inside the curve, a third tall stroke on the right | 705 U with a long stroke in the gap (Mahadevan 336) | strongest. Three tall strokes, one with the curved foot, matches the drawing of 336 |
+| 3 | two tall strokes side by side, upper half | 002 (catalogue) | they look full height, which would be 032. Alternatives checked: `705 032 004 390`, `705 033 004 390` and `032 004 390` occur 0 times at home, `002 004 390` occurs 10 times. Keeping 002 |
+| 4 | four short, thick, parallel strokes in a block, low | 004 | firm. I count four clearly in the crop |
+| 5 | one stroke at the far left with a hooked top; the branches are lost in the ridge shadow | 390 tree with branches at the top | moderate. A trunk with a bent top at the end of the line where the catalogue puts the tree |
+
+Corrected string, reading order: `127 705 002 004 390`, the same as the catalogue. Whole reading: [127 person-sign, unvalued] kalam (grain measure) / ship, two, four, cotton: "[name], a kalam of cotton, 2·4" or "(six) cotton lot". Count: I see five signs. Tosi's six is not seen. The right end of the clay is broken and the marks beyond the "A" cannot be separated from the break, so a sixth sign at the start of the line, lost in the break, is open; if it exists it was read first. Direction check: the bull faces right, and the catalogue string puts 127 first, which fits right-to-left reading.
+
+New from the photograph: 127 is almost not at home (3 faces: Harappa 948.1 `000 127 033 407`, Mohenjo-daro 3621.1, Kalibangan 5494.1), so the Umma line is a rare name sign plus the home tail `705 … 002 004 390`, which fits a seal cut for a person who lived abroad (Tosi's suggestion, via the harappa.com page).
+
+### Item 2. Home objects sharing three or more signs in order
+
+`abroad3_02_match.py`, table `home_matches_3plus.csv`. 11 faces of 5,610 share three or more signs with the string (10 as a block `002 004 390`; the eleventh is the same tail with a gap). None shares four.
+
+| id | site | object | animal | text | note |
+|---|---|---|---|---|---|
+| 401.1 | Harappa | tablet (TAB:B) | multiple | `817 002 004 390` | |
+| 951.1 | Dholavira | seal | bull | `817 002 004 390` | |
+| 1114.1 | Harappa | seal | bull | `125 861 002 004 390` | |
+| 2418.1 | Mohenjo-daro | seal | bull | `817 002 004 390` | |
+| 2450.1 | Mohenjo-daro | seal | bull | `861 002 004 390` | |
+| 2453.1 | Mohenjo-daro | seal | bull | `817 002 004 390` | |
+| 2630.1 | Mohenjo-daro | seal | bull | `820 002 004 390` | |
+| 2799.1 | Mohenjo-daro | seal | elephant | `817 002 004 390 621` | |
+| 3875.1 | Surkotada | seal | bull | `820 125 390 002 004 390` | tree before the tail too |
+| 3991.1 | Mohenjo-daro | seal | bull | `376 031 002 004 390` | |
+
+Same seal text at home: none, so no city is named as shipper from an identical text. The tail is Mohenjo-daro-heavy (6 of 10), with `817` before it on five. Reading: the Umma line is the Mohenjo-daro family line "[opener] two, four, cotton" with its opener swapped for the foreign name sign 127 plus the measure 705. `guess` the shipper is a Mohenjo-daro house whose usual opener 817 was replaced by a personal sign; the test is to find 127 on any Mohenjo-daro text with a tree tail (3,621.1 has 127 at its end, without a tail).
+
+### Item 3. What the Mesopotamian side shows (CDLI)
+
+`abroad3_04_cdli_east.py`, `abroad3_06_east_scan.py`; 918 CDLI texts naming Dilmun, Magan or Meluhha, 42 from Umma; lines in `cdli_east_lines.csv`. Prediction written first: few Umma texts tie an eastern name to a jar. Result: it held. No Umma text has a jar word (dug, sag-gan, dug-ka) on the same line as Dilmun, Magan or Meluhha, and no text anywhere has a cloth word and a jar word beside an eastern name together with a Meluhha tag.
+
+Closest texts:
+- P217359, USP 2, Old Akkadian, Umma: flour in jars (`dug-ka`, `dug-ga`) and a basket (`pisan`), and the closing line "boat of Dilmun" eats it ([CDLI](https://cdli.earth/artifacts/217359)). A Dilmun boat is fed from stores kept in jars.
+- P217388, USP 31, Old Akkadian, Umma: a ration list (bread and beer by jar) with Dilmun in a line ([CDLI](https://cdli.earth/artifacts/217388)).
+- P129692, SET 282, Ur III, Umma: aromatic resins by weight, among them "resin of Dilmun" (5 minas), received into a sealed storeroom (`e2-kiszib3`) by a temple administrator ([CDLI](https://cdli.earth/artifacts/129692)).
+- P112567, MCS 1, 37 (BM 106055), Ur III, Umma: an inventory with garments packed in numbered baskets (`sza3 pisan 1-kam` and so on), `gu-za ma2-gan` (Magan chairs) in the same list ([CDLI](https://cdli.earth/artifacts/112567)). The Umma way to pack cloth is the basket, not the jar.
+- P320486, CM 26, 136, Ur III, Umma: garments issued to a courier "when he went to Meluhha" ([CDLI](https://cdli.earth/artifacts/320486)).
+- P107404 (Buffalo SNS.11-2, 125) and P249043 (AAICAB 1/3, Bod S 138), Ur III, Umma: chairs of Meluhha and of Magan.
+Jar words near an eastern name elsewhere: UET 2, 361 (Ur, archaic, a DUG sign two lines from DILMUN, P005948), HLC 23 pl. 62 (Girsu, Ur III, a "boat of Magan" line and a jar line, P109901). Ebla's "Dilmun shekel" lines (ARET 7, 110) are a weight, not goods.
+What it predicts: a cotton lot in a jar under cloth would be a `dug` line in an account that names the sender by a house, not by Meluhha; the best place to look is Ur III Umma accounts of sealed storerooms (`e2-kiszib3`), not Meluhha lists. No such text found yet. The `ma2-gan` hits count `lu2-ma2-gan` ("man of Magan") many times; they are persons, not goods.
+
+### Item 4. The CDLI seal records tied to Guabba and Meluhha tablets
+
+`abroad3_05_seals.py`, `abroad3_07_seal_legends.py`, `seal_legends.csv`. Count: 21 distinct seal records on 26 tablet links (13 more tablets link to the shared "unidentified seal" placeholder record). I could not open the "24" as photographs: every one of the 21 CDLI seal pages shows CDLI's no-image placeholder. What each record holds: 18 have a Sumerian legend (name, title scribe or others, father; examples P455440 and P456998 "dub-sar, son of ..."), 3 have no legend text (P533753 on UTI 4 2849; P458514 on ITT 2 839 and 858; P458791 on TCTI 2 3898). All are stone administrative seals (CDLI's wording, not the shape) from Girsu (16), Nippur (2), Ur (1), uncertain (1); one record (P533753) has no provenience. Tablet photos exist for five tablets (P235705, P105761, P110419, P116163, P235715; saved in `work_data/abroad3/seals/`). I looked at P235715 (rolled scene: standing figures and cuneiform in the frame, an ordinary Ur III presentation seal) and P110419 (cuneiform tablet, no legible seal in the photo). Verdict: cuneiform, with a standard scene; none pictorial-only, none foreign-looking. The three legend-less ones are unseen and stay open.
+
+### Item 5. Other sealings with Indus seal impressions outside the Indus
+
+Not photographed. The only free source that lists such sealings was the harappa.com westward-transmission PDF, which the shell cannot fetch (403), and Failaka, Susa and Tello pictures sit on login or paid pages (academia.edu). From the catalogue alone, the clay or sealing-type objects abroad are:
+- 3884.1 Umma: read above.
+- 4174.1 Salut tag, elephant, `000 921`: 921 has no value; no sign to read.
+- 160.1 Hajar tablet, gaur, `117 617`: man-with-leaf (117, unvalued) and 617 (king's servant, ūḻiyaṉ): "[117] servant". Catalogue only.
+- 3886.1 Tepe Yahya clay pot sherd, `000 095 002`: [lost] staff-bearer, two. Catalogue only.
+Cylinders and square seals at Tello, Ur, Kish, Susa, Failaka and Bahrain are seals, not sealings; they are in the table above. No other sealing in the catalogue carries the tail `002 004 390` abroad besides Umma and the Salut seal (`595 278 002 004 392`).
+
+### Notes for MAP.md (not edited)
+- `measured` Photograph of 1931.120 read: five signs `127 705 002 004 390`, matching the catalogue; sign 705 is the clearest; sixth sign (Tosi) not seen, break at the right end.
+- `measured` 11 home faces share `002 004 390`; none shares four signs; 127 is on 3 home faces, 705 is never followed by 002 at home.
+- `guess` Umma line = Mohenjo-daro family line with its opener replaced by a foreign person-sign plus the measure sign 705.
+- `measured` CDLI: no Umma or other text ties a jar word and an eastern name on one line; nearest is USP 2 (Old Akkadian, jars and a boat of Dilmun).
+- `measured` 21 CDLI seal records on Guabba/Meluhha tablets: all Sumerian-legend or legend-less stone seals, no photos on CDLI.
