@@ -35,7 +35,7 @@ svg{display:block;width:100%;height:auto;touch-action:manipulation}
 <div class="sl" id="sl"></div>
 </main>
 <script>
-/*UPDATED*/const UPDATED="Updated Tue 17 Nov 2026, 08:15 Pacific. 3 agents running: two decoy testers; the earliest levels.";/*END-UPDATED*/
+/*UPDATED*/const UPDATED="Updated Tue 17 Nov 2026, 08:25 Pacific. 2 agents running: the two decoy testers.";/*END-UPDATED*/
 const SEAL=[
 ["Opener","b","kāṇi iru","The seal starts with a diamond sign and two strokes. On ration tablets the same diamond is counted like workers, so here it reads \"two shares\" or \"two hands\". Working reading."],
 ["Family crest","g","mīmīn","A fish sign with a mark on it. People whose seals were dug up in the same house share the same marked fish, so it works like a family crest. Sound guess: \"High star\"."],
@@ -117,6 +117,7 @@ const N=[
 ["grainday","b","Rations =|daily grain","The rations come out as one person's grain","Worked through the ladder: the monthly chits of 3 to 4 cups are about 0.9 kg of grain a day, and \"three kalam\" a year is about 0.7 kg a day. A person eats roughly half a kilo to a kilo. No line that adds up the others was found (10 of 70, chance 15).",["cup","chief","ration"]],
 ["time","g","600 years,|one system","Nothing changes across six centuries","2,666 objects were given an early, middle or late date from how deep they were dug up. Agents, family crests, the seven-city office, the cotton house, endings, spellings: all flat. Agent seals are 4.5%, 4.1%, 4.5%. Names recur across the three periods at exactly the chance rate and 39 of 49 keep their ending, so names and rank were inherited.",["cover","agent","office","bale"]],
 ["timetest","g","Jobs hold|over time","Signs keep their jobs in every period","A check the words were never fitted to: 87 of 122 signs do the job they were given (opener, title, measure, counted thing) in every time period they appear in. If jobs are dealt out at random, 39 do. Like the blind test, this vouches for the job of each sign, not for the exact word.",["time"]],
+["layers","g","Grew in|3 layers","How the writing grew","First, before the cities: counting on pots. 25 of 38 of the oldest objects carry a number or the cup sign, and most are one sign long. Then names on seals. At the deepest level of the biggest city a family crest is never first in a name (0 of 38; later about 11%). One level up, crest-first names and house managers arrive together.",["time","agent","twocount"]],
 ["thick","r","Rule grew|over time","Administration thickened over time","Went against: agents, office seals and chiefs do not grow from early to late. Neither does overseas trade show a peak.",["time"]],
 ["quarterk","g","Quarter|kings","A king for each quarter of the city","The sign read as quarter stands right before the king sign 11 of 81 times, where chance gives 1.4, in both big cities. And one city has 13 different family crests on its 22 king objects. So not one king per city: one per quarter. The city-gate signboard opens the same way.",["board","time"]],
 ["corpus","b","Builder's|own check","The builder's own check: 44 of a random 60 make sense","All 5,679 inscribed faces run through one fixed set of rules: 2,201 come out whole. The agent that wrote the rules read a random 60 and called 44 sense. Strangers are harsher: see the blind test.",["cover","holes","starw"]],
@@ -130,7 +131,7 @@ $('upd').textContent=UPDATED;
 const M={};N.forEach(n=>{M[n[0]]={id:n[0],st:n[1],lab:n[2],t:n[3],d:n[4],up:n[5],dn:[]};});
 N.forEach(n=>n[5].forEach(p=>M[p].dn.push(n[0])));
 const dep=id=>{const m=M[id];if(m.dp==null)m.dp=m.up.length?1+Math.max(...m.up.map(dep)):0;return m.dp;};
-const W=390,NW=61,NH=21,RH=29,MAXR=6;let rows=[],maxd=0;
+const W=390,NW=61,NH=21,RH=28,MAXR=6;let rows=[],maxd=0;
 N.forEach(n=>{maxd=Math.max(maxd,dep(n[0]));});
 for(let d=0;d<=maxd;d++){
   const L=N.map(n=>M[n[0]]).filter(m=>m.dp===d);

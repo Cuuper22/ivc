@@ -245,4 +245,12 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `guess` New words: 554 *kaḷam* threshing floor; 645 *kaḻañcu* gold weight; 460 Three-peaks; 792 royal; 921 *vil* bow; wide: 167 *kūli* wages, 165 *nāḷ* day, 130 threshing-floor men, 697 woven, 201 rain season. 127 (opens the cotton label found in Iraq) = *villavaṉ* bowman, 4 faces, untestable.
 - `measured` Went against: 530 as "Drummer", 575 as "Fort" (twice each). 19 of 20 new wide values came true only on a redesign that used facts already seen.
 
+## The earliest levels (from `jobs/out/early.md`)
+- `measured` Before the cities (38 objects, 32 pots): 25 of 38 carry a stroke number or the cup; 24 of 35 texts are one sign long; the jar is on 3 of 35 against 896 of 2,122 later (P 1.9e-5), though on pots alone the change is not significant. Names arrive with seals and tablets.
+- `measured` Earliest Mohenjo-daro level (DK-G Early I, 20.5 ft and deeper): a fish crest is first in the name on 0 of 38 seals against about 11% later (P 0.0125). Fish are present (18%, same as later) but never first: 0 of 7 against 65 of 120 (P 0.0055), inside long stacked names. This holds for DK-G only; other areas' deepest thirds are not short of fish crests.
+- `measured` One level up, crest-first fish (0 of 35 to 12 of 95) and the "X's man" form (0 of 21 to 6 of 51) arrive together. The office opening, Boxed-cotton pair, overseas bull and star names are already at the earliest level. Seal pictures are not yet fixed there: rare creatures 7 of 36 against 25 of 592; the standard stand 8 of 36 against 254 of 592.
+- `measured` The Dholavira stage II seal reads "2, 4, cotton", the same tail as the Umma sealing; 5 of the 38 earliest Mohenjo-daro seals carry the cotton tree. The second catalogue's level column is depth in feet and covers mostly the same stones (589 of 626).
+- `guess` The system grew in layers: a counting kit with the jar on pots; then a name-jar-title formula on seals with stacked house names; then crest-first great houses with their managers, as the seal picture settles.
+- Open: Kenoyer and Meadow's inscribed-objects PDF (harappa.com, needs a browser) would fill the gap between Periods 3A and 3B-1 (only 7 dated objects).
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.
