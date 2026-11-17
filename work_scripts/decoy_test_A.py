@@ -113,10 +113,11 @@ def run_item(sign, typ, S, direction):
         outcome = np.array([any((x in S) and x != sign for x in t) for t in toks])
         strata = (d.site.astype(str) + '|' + d.kind.astype(str)).values
     elif typ == 'COMU':
-        toks = [tuple(t) for t in faces_all('Mu')]
+        FM = faces_all('Mu')   # runner fix: each row is (tokens, parse, site, kind)
+        toks = [tuple(r[0]) for r in FM]
         has = np.array([sign in t for t in toks])
         outcome = np.array([any((x in S) and x != sign for x in t) for t in toks])
-        strata = np.array(['Mu'] * len(toks))
+        strata = np.array([str(r[2]) + '|' + str(r[3]) for r in FM])
     base = float(outcome.mean())
     n = int(has.sum())
     if n < 3:

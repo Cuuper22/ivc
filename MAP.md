@@ -253,4 +253,10 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `guess` The system grew in layers: a counting kit with the jar on pots; then a name-jar-title formula on seals with stacked house names; then crest-first great houses with their managers, as the seal picture settles.
 - Open: Kenoyer and Meadow's inscribed-objects PDF (harappa.com, needs a browser) would fill the gap between Periods 3A and 3B-1 (only 7 dated objects).
 
+## Decoy test (from `jobs/out/decoy_test.md`)
+- `measured` Went against. 60 signs, 30 with their accepted word and 30 with a word from another sign of the same job; two blind testers, predictions from word meaning written first, one run each. Came true: real 9 of 58 (15.5%), decoy 10 of 60 (16.7%). Right direction at all: 27 of 58 against 25 of 60.
+- `guess` The "came true" counts of the sound passes, and the strict / wide labels, do not separate the accepted word from another word of the same job. Counts of "inscriptions read whole" mean "a word on every sign", with the job of each sign supported and the exact word not.
+- Standing without words: template, name = crest + self + tag, manager in the master's building, quarter before king, measures in twelves, unit order, system flat over time, findspot results. Standing as language evidence: the pun test across language families (small numbers).
+- Redesign under way: method replay with decoys (testers may look at data before predicting, as the sound passes did).
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.
