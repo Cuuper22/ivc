@@ -1,0 +1,49 @@
+=== 692 teru "street"
+P692a  after 692-060 a ward jar follows: 0 of 42 (0.00)
+P692a  after 920-060 a ward jar follows: 48 of 63 (0.76)
+P692a  after 550-060 a ward jar follows: 0 of 24 (0.00)
+P692a  after 820-060 a ward jar follows: 0 of 24 (0.00)
+P692b  lines with 692 and 550: 1; expected by chance 1.7
+P692b  lines with 692 and 820: 1; expected by chance 3.5
+P692b  lines with 692 and 920: 7; expected by chance 2.1
+P692b  lines with 550 and 820: 4; expected by chance 5.2
+P692b  lines with 920 and 550: 2; expected by chance 3.2
+P692b  lines with 920 and 820: 4; expected by chance 6.4
+P692c  692 in Mohenjo-daro + Harappa: 69 of 75 = 0.92; all lines 0.82; one-sided binomial P 0.0108
+P692d  Mahadevan 150: 63 uses, first in line 51 (0.81), 123 right after 44 (0.70)
+=== 525 katavu "door" (525/526/527)
+P525a  525: 9 uses, directly after 550: 8 (0.89); kinds {'TAB': 9}; next {'400': 7, '$': 2}
+P525a  526: 13 uses, directly after 550: 5 (0.38); kinds {'TAB': 8, 'SEAL': 5}; next {'$': 13}
+P525a  527: 59 uses, directly after 550: 22 (0.37); kinds {'TAB': 4, 'SEAL': 50, 'MISC': 1, 'ROD': 1, 'TAG': 1, 'POT': 2}; next {'$': 48, '400': 3, '061': 1, '001': 1}
+P525a  lines with two of the three signs: 525&(526|527) 0; 526&527 0
+P525c  crosswalk partners {'525': [254], '526': [254], '527': [254], '550': [216], '400': [176]}
+P525c  Mahadevan [254]: 73 uses, 550-partner on its left 29, comb-partner on its right 4
+=== 335 kūṭu "bin" and 711 pāṉai "pot"
+P335a  335: on tablets 21 of 34 = 0.62; all lines 0.37; binomial P 3.35e-03
+P335a  711: on tablets 16 of 16 = 1.00; all lines 0.37; binomial P 1.44e-07
+P335b  335: after 575 15 of 34 = 0.44; followed by 711/740/760 29 of 34 = 0.85
+P711a  count after 711: tall 11, short 0; tall share 1.00 (all counts 0.35); binomial P 9.65e-06
+P711b  slot after 413-575-335 filled by: {'711': 13, '740': 1, '000': 1}; count after it: {'033': 10, '032': 1, '000': 3}; sign after the count: {'700': 7, '740': 2}
+P711c  every count after the slot is 032 or 033: True
+=== 842 tuṇai "helper"
+P842a  uses 5, last in line 5, jar in the line 0
+P842b  seal lines ending in a known closer that are line 2 or later: 22 of 1073 = 0.021; lines ending in 842 that are line 2+: 3 of 5
+P842c  face areas of the 842 seals (mm2): [1502, 1648, 2209, 0, 1340]; median 1501.54
+P842d  M-23: sign before = 871; slot-table last share n/a (texts n/a)
+P842d  M-234: sign before = 535; slot-table last share n/a (texts n/a)
+P842d  M-626: sign before = 374; slot-table last share n/a (texts n/a)
+P842d  M-1014: sign before = 391; slot-table last share n/a (texts n/a)
+P842d  C-54: sign before = 032; slot-table last share 0.04 (texts 162)
+=== 611 kuṭai
+P611a  sites {'Harappa': 2, 'Dholavira': 2, 'Lothal': 1, 'Mohenjo-daro': 1}
+P611   H-3 SEAL:S Harappa: 703[?]-615[vayal]-611[?]-002[iru]-017[ēḻu]-585[kaṉṉi?]-740[kuṭi]   (611 at place 3 of 7)
+P611   - MISC Dholavira: 820[kāl]-611[?]-388[aracu]-820[kāl]-850[kaṇ]-645[?]-031[oru]-821[?]-798[maru-]   (611 at place 2 of 9)
+P611   L-116 MISC Lothal: 820[kāl]-611[?]-000[?]   (611 at place 2 of 3)
+P611   M-56 SEAL:S Mohenjo-daro: 840[iṇai]-611[?]-550[vāy]-060[?]-235[vēymīn]-032[iru]-877[nālkāṇi]-740[kuṭi]   (611 at place 2 of 8)
+P611   H-1076 SEAL:R Harappa: 820[kāl]-002[iru]-706[kaḷam]-611[?]-740[kuṭi]   (611 at place 4 of 5)
+P611   - SEAL Dholavira: 000[?]-611[?]   (611 at place 2 of 2)
+=== 645 kuṟi
+P645a  non-seal 16 of 22 = 0.73; all lines 0.53; binomial P 5.03e-02
+P645b  count directly before: 10 of 22 = 0.45
+P645c  frame ...070-741-150-267-840-032 : [('M-495', '070-741-150-267-840-032')]
+P645d  pot lines with 645: ['000-645-840-740', '031-645', '032-645', '645-999-645', '645-999-645']

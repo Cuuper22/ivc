@@ -1,0 +1,13 @@
+stage,sign,word,prediction,outcome,p,result,fresh
+M1,705/706,measure,new texts: a count follows it,yes,8.201429604086834e-09,a count right after it 28/64 = 44% against 14.1% (Mu),fresh
+M2,705/706,measure,new texts: the count after it is tall strokes,yes,1.4298243571350387e-13,counts after it: tall 28 of 28 (100%) against 35% tall for all counts (Mu),fresh
+M3,705/706,measure,new texts: grain/measure words on the same face,direction only,0.2852938639676785,faces with a grain/measure word (Mu) 8/66 = 12% against 9%,fresh
+M4,705/706,measure,"new texts: on miniature tablets, copper tablets, pots",no,0.9990814932037899,"faces on ctab/mtab/pot 5/66 = 8% against 21% for all faces, x0.4 (Mu)",fresh
+M5,705/706,measure,Lipi: Harappa objects with it lie in mound F (granary area),no,0.5876130054952864,Harappa objects from mound F 30/90 = 33% against 34%,fresh
+M6,705/706,measure,"both catalogues: count after it varies on goods objects, fixed on seals",yes,0.014681910559085477,"count after it is not three: goods objects 8/69 against seals 3/118 [values by kind: ctab: 3x35; mtab: 1x3, 3x18; other: 3x1, 4x1, 5x1; pot: 2x1, 3x1, 5x1; seal: 1x1, 2x2, 3x115; tag: 2x1, 3x6]",fresh
+S1,705/706,ship,new texts: at Lothal,direction only,0.12146397763131232,faces at Lothal (Mu) 8/66 = 12% against 8%,seen in v3
+S2,705/706,ship,both catalogues: coast and abroad,yes,0.06758661562949358,faces at coast/abroad sites (LM) 43/384 = 11% against 9%,fresh
+S2b,705/706,ship,both catalogues: abroad only,no,0.8940686471075308,faces abroad (LM) 1/384 = 0% against 1%,fresh
+S3,705/706,ship,new texts: sail 500 follows it,yes,0.0016754382303269888,next sign in ['500']: 3/64 = 5% against 0.4% (Mu),seen in v3
+S4,705/706,ship,new texts: on sealings/tags,direction only,0.27074166132913624,"faces on tag 17/66 = 26% against 22% for all faces, x1.2 (Mu)",seen in v3
+S5,705/706,ship,new texts: trade-tag words on the same face,yes,0.049412510277708425,faces with a trade-tag word (Mu) 15/66 = 23% against 15%,fresh

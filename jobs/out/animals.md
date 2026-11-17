@@ -1,0 +1,74 @@
+# The animal on the seal
+
+Scripts (all in `work_scripts/`, rerun with `python3`, in this order): `animal_base.py` (builds `work_data/animal/animal_base.csv`, one row per seal face, 2,290 faces), `animal_common.py` (loader and shuffle helpers), `animal_sheet.py` and `animal_photocheck.py` (photo sheets in `work_scripts/animal_out/`), `animal_2_assoc.py` (what the animal goes with), `animal_3_rooms.py`, `animal_4_pairs.py` (house-mates and other pairs), `animal_1_slots.py` (sign by slot scan), `animal_5_fishcrest.py`, `animal_13_compgoat.py`, `animal_6_agents.py`, `animal_12_agentmix.py`, `animal_7_abroad.py`, `animal_10_origin.py`, `animal_8_picturesigns.py`, `animal_9_cult.py`, `animal_11_readings.py`. Tables are in `work_data/animal/` (`assoc_*.csv`, `rooms.csv`, `pairs.csv`, `slots_SPECIES.csv`, `slots_LETTER.csv`, `photocheck_key.csv`). Reading order = stored order reversed. Every test wrote its prediction into the script before its number; where a number changed my mind the report says so.
+
+Terms used. **Species** = the animal itself (unicorn, elephant ...). **Stand letter** = the catalogue's one-letter code after the colon on unicorn seals (`Bull1:W`, `:J`, `:S`, `:I`, `:L`); it names the kind of stand drawn in front of the unicorn (a post with a head on it). **Trough** = the feeding box under the head of the short-horned bull, rhinoceros, tiger and buffalo. **Crest** = the marked fish sign that opens a name (231, 233, 235, 240), the family name in the template. **House-mates** = seals dug out of the same room within 5 ft of depth. **Shuffle within site** = the animal labels are mixed among seals of the same site (and the same seal shape and size third) many thousand times; the share of shuffles that look as strong as the real data is P. A ratio is real count divided by the count the shuffles give.
+
+## What was found
+
+1. **The unicorn's stand letter is a household mark; the species is not.** Two seals from the same room carry the same stand letter 38.1% of the time against 17.2% by chance (139 pairs, ratio 2.22, P 0.0003; ratio 1.95, P 0.0003 even when the shuffle also holds seal size fixed). The same pairs share the species only 68.6% against 61.2% (ratio 1.12). The share falls with distance: same room 1.79, same house block (other room) 1.27, same area 1.13 (letter, `animal_4_pairs.py`). It points toward: the letter belongs to a household or the workshop that cut for it, and fades across a neighbourhood. It opens a second house-mate marker that is independent of the crest (letter against first name sign P 0.91; against crest P 0.62), so crest plus letter can sort seals into houses where the room is lost.
+2. **The species is not a clan, not a ward, not a rank, not a god written in the text.** On seals with a beast, shuffled within site and seal shape: first name sign P 0.47, crest P 0.75, last name sign P 0.68, ending class sign P 0.91, ending form P 0.91, area inside Mohenjo-daro P 0.86, office opening P 0.63. Agents do not carry their master's animal: same species 70.0% against 67.3% (227 pairs of an "X's man" seal with an owner seal of the same crest, P 0.32), 76.5% against 68.7% on exact same master (17 pairs, P 0.23). Agents use the same species mix as owners (unicorn 81.8% against 83.1%). All 1,568 sign-by-slot-by-species cells in the scan: none at q below 0.25, none at P below 0.001 (1.6 expected by chance). It points toward: the animal is a property of the stone's use, written next to the text and not in it. It opens the point that the animal can be set aside when reading names.
+3. **The short-horned bull with a trough is the overseas seal.** Seals found in the Gulf, Mesopotamia, Iran and Central Asia carry it on 14 of 26 beast seals (54%) against 92 of 1,575 at home (5.8%), Fisher P 7e-11. All 13 round seals abroad carry it, and at home the 12 round seals are 6 short-horned bull, 5 composite beast, 1 unicorn. Abroad square seals are ordinary (1 short-horned bull in 13). So the beast follows the format: round overseas-style stone, short-horned bull. It points toward: species is the circuit the stone was cut for. It opens a way to flag overseas-circuit stones at home: the two round short-horned seals at Mohenjo-daro, M-415 (`832-256`) and M-416 (`016-405-001-255-324`).
+4. **Composite beasts and goats sit outside the fish houses.** One of 67 composite-beast and goat seals carries a marked fish sign, against 22.3% of the other beast seals at the same sites (binomial P 1e-6); on texts of 3+ signs 1 of 34 against 26.1% (P 0.0004). Composite alone 1 of 42 (shuffle P 0.001), goat 0 of 25 (P 0.006). The one exception is M-302 (`235-231-520`, Bamboo-star First-star chief). It points toward: the fish crest is a class of house and those stones do not belong to it. It opens a line with the masters note (fish houses are the great houses with agents).
+5. **Goats are the local beast of Banawali.** 8 of the 25 goat seals are from the Eastern Headwaters region, 7 of them from Banawali (7 of 12 beast seals there), against 17 of 1,576 elsewhere (Fisher P 9e-10). It points toward: a provincial emblem in the same sense as finding 3.
+6. **Stand letter W is the large, later format.** W seals have a median face of 912 mm2 against 500 (I), 524 (L), 629 (S), 645 (J); median depth 6.0 ft against 6.8 to 9.0; W is 61% of Harappa unicorn seals with a letter against 36% at Mohenjo-daro. Letter against seal size P 0.0003, against depth band P 0.003. In the sign scan W over-uses the tree 405 (22 against 13.4, ratio 1.64, P 0.0003) and produce 806 (20 against 12.8, P 0.0005), and under-uses 390 (29 against 42.5, P 0.002); each of these is at q 0.23 over 936 cells, so they are leads, not facts.
+
+## The committed reading of the animal system
+
+The seal carries three separate marks and each says a different thing.
+
+- **Text, crest:** the family (fish houses are the great houses).
+- **Stand letter on the unicorn:** the household's own stand pattern, the cutter's house style. Local to a room, fading over a neighbourhood, not the family name, not inherited by agents.
+- **Species:** the **circuit licence** of the stone, which exchange network it works in. The unicorn is the home civic default (43 to 71% of all seals at every large site, 22 of 26 beast seals on the 7-city office opening). The short-horned bull with trough is the overseas-format seal. Composite beasts and goats are stones outside the fish-house system (provincial at Banawali, ritual-scene at Mohenjo-daro). Elephant, zebu, rhinoceros, tiger and buffalo carry no text signature at all and read as dress inside the home circuit: zebu and elephant seals are a little larger (medians 730 and 625 mm2 against 632 for the unicorn).
+
+It is a circuit and not a clan because agents do not carry the master's animal and the first name sign does not predict it. It is a circuit and not a ward because the area inside Mohenjo-daro does not predict it. It is a circuit and not a rank because the ending (spearman, carrier, comb, jar-man) does not predict it and agents have the same species mix as owners.
+
+## Words it pins
+
+None by a sign found under one animal. The scan (`animal_1_slots.py`, five slots, 1,568 cells) found no sign tied to a species, so no word for an animal or its group could be tested against DEDR. Facts that stand in place of a word: the fish crest is a house class that composite and goat stones do not belong to (supports fish = *mīn* "star" as a great-house name, MAP); the two-men sign 091 is the abroad round-seal formula (it opens 3 of the 14 abroad short-horned seals, e.g. Karzakan `091-031-455-220`); the overseas seal texts are written with the same vocabulary as home (ratio 1.11, P 0.23) so the circuit changes the picture, not the names. DEDR (local copy) has *ēṟu* "bull", *kāḷai* "steer, ox; warrior", *erumai* "buffalo", *uruvai* "tiger"; *yāṉai* and *puli* are not headwords in the local copy. The reverse test (does a text sign that pictures an animal sit under that animal) gave nothing: deer signs 340-348 (6 on unicorn, 2 on short-horned, 0 elsewhere), animal 255/256 (ratio 1.1 to 1.5, P 0.06 to 0.38), horn-triangles 490/500/502 (0 on every non-unicorn species). Elephant seals do over-use the spear 520 "chief" (9 against 4.2, P 0.018, q 0.89); a lead, noted.
+
+## What went against, and the rescue tried
+
+- **Clan reading of the species: against.** Room-mates share species 1.12 (P 0.029), agents 1.04, first sign P 0.47. Rescue 1: use the stand letter in place of the species (works, ratio 2.2). Rescue 2: read the species as a clan at province scale (works at Banawali for goats and for the overseas round seals), so the species clan reading stands only as province, which is what the circuit reading says.
+- **Short-horned bull as an overseas marker at home: against.** At home its seals do not use the abroad signs (man 090/091 in 4.3% against 5.6%), do not end in the jar less (30.4% against 32.2%), are not at port towns (7 of 124 against 85 of 1,451, P 0.60) and share no sign vocabulary with the abroad ones (ratio 1.11, P 0.23; 0.95 against all abroad beast seals). Rescue: the carrier is the round format, not the signs (13 of 13 abroad round seals; 6 of 12 round seals at home). Standing.
+- **Short-horned bull and fish crests: against out of Mohenjo-daro.** Mohenjo-daro 22 of 63 (ratio 1.67, P 0.006), elsewhere 2 of 43 (0.41). One site only; the stand is dropped to a Mohenjo-daro note.
+- **Second stand code (the catalogue `cult` column, S/R/H plus A/B/C plus N/F): against.** Room-mates share it at 1.04 (P 0.39). It describes the drawing of the stand, not the house. Rescue: it does not track the letter (chi-square 77.9, P 0.0003) so it is its own detail; left alone.
+- **Rank by size: partly.** Animal against size within site P 0.0007 (V 0.126), carried by zebu and elephant being larger and goat shorter; no ending effect (P 0.91).
+- **Text length goes with the animal (P 0.0003, V 0.175).** Goat seals are 88% texts of 3 signs or fewer at Mohenjo-daro. Read as room on the stone, not meaning.
+- **The no-animal seals (474) are a separate format** (mostly rectangular, short texts, 210 tight parses), so they sit outside the species tests; the earlier V 0.208 between first name sign and animal does not survive the within-site shuffle (P 0.47).
+- **Fish avoidance by composite and goat** was first seen in the shuffle test and then retested with a different base (all other seals at the same sites, texts of 3+ signs). Both tests use the same 67 seals, so they are two looks at one set.
+- Photo check below: 0 labels clearly wrong.
+
+## Photo check of the animal column
+
+30 seals drawn at random across labels (fixed seed), looked at with the labels hidden (`photocheck_key.csv`). 23 clearly match the label (unicorns with a stand, zebu, elephants, buffalo, rhinoceros, tigers, short-horned bulls, goats, a composite, and the text-only seals labelled no animal). 6 are too broken to judge (M-1079, M-1049, M-1003, M-1176, M-1064, M-755). 1 is doubtful: M-267 is labelled buffalo and looks like a heavy beast with a trough that I could not call a buffalo. 0 are clearly wrong. Label meanings from the sheets: `Bull1` = unicorn, `Gaur` = short-horned bull with head low (trough on 83 of 106), `Bull3` = long-horned goat or ibex, `Comp` and `CompBull` = composite beasts, the letter after `Bull1:` = the stand drawn in front. `-` in the column (125 seals) means blank and is left out of every species test.
+
+## Fifteen seals read whole
+
+Sounds and English from the working sound table (`work_data/sound_v3/values_v3.csv`; values are guesses built on slots, the jar is *kuṭi* "house of", man *āḷ* "manager", spear *vēḷ* "chief", comb *ciṟ* "junior", carrier *kā* "keeper"). Object id is the catalogue id with the Lipi id in brackets.
+
+| # | Seal (Lipi id) | Site | Animal | Text | Sounds | English |
+|---|---|---|---|---|---|---|
+| 1 | M-1881 (2219.1) | Mohenjo-daro | short-horned bull | 617-741-176-100-740 | *ūḻiyaṉ orukuṭi iṟai mutu kuṭi* | The king's servant of the first ward: of the Tax-Elder house |
+| 2 | M-246 (2769.1) | Mohenjo-daro | short-horned bull | 817-002-233-235-503-740 | *kāṇi iru varimīn vēymīn malai kuṭi* | Two shares: of the Striped-star Bamboo-star Hill house |
+| 3 | Karzakan seal (5227.1) | Karzakan | short-horned bull, round seal abroad | 091-031-455-220 | *iruvar oru ampu mīn* | The two men, one: Arrow-star |
+| 4 | M-260 (2783.1) | Mohenjo-daro | zebu | 820-002-014-220-740-090 | *kāl iru nāl mīn kuṭi āḷ* | Quarter, two: the Four-star house's manager (agent) |
+| 5 | M-265 (2788.1) | Mohenjo-daro | zebu | 061-171-035-740-090 | *kāl niṟai ai kuṭi āḷ* | Quarter: the Full-weight-five house's manager (agent) |
+| 6 | M-1152 (3513.1) | Mohenjo-daro | elephant | 861-002-235-840-032-740 | *kāṇi iru vēymīn iṇai iru kuṭi* | Two shares: of the Bamboo-star Pair-two house |
+| 7 | M-1161 (3521.1) | Mohenjo-daro | elephant | 861-002-031-233-520 | *kāṇi iru oru varimīn vēḷ* | Two shares: one Striped-star, chief |
+| 8 | M-1136 (3503.1) | Mohenjo-daro | rhinoceros | 820-002-240-717-740 | *kāl iru mīmīn tāḷ kuṭi* | Quarter two: of the High-star Stem house |
+| 9 | M-289 (2809.1) | Mohenjo-daro | tiger | 817-002-240-176-740 | *kāṇi iru mīmīn iṟai kuṭi* | Two shares: of the High-star Tax house |
+| 10 | M-267 (2790.1) | Mohenjo-daro | buffalo (photo doubtful) | 679-002-155-630-740 | *kaṭṭil iru kā pal kuṭi* | Seat two: of the Keeper-Many house |
+| 11 | M-302 (2821.1) | Mohenjo-daro | composite bull (the one fish-crest composite) | 235-231-520 | *vēymīn orumīn vēḷ* | Bamboo-star First-star, chief |
+| 12 | M-1224 (3559.1) | Mohenjo-daro | multi-headed beast | 840-032-740-090-400 | *iṇai iru kuṭi āḷ ciṟ* | The Pair-two house's manager, junior |
+| 13 | B-8 (32.1) | Banawali | goat | 061-740 | *kāl kuṭi* | Quarter: of the house |
+| 14 | M-1746 (2283.1) | Mohenjo-daro | unicorn, stand letter S | 817-002-240-415-100-740-090 | *kāṇi iru mīmīn kavar mutu kuṭi āḷ* | Two shares: the High-star Branch-Elder house's manager (agent) |
+| 15 | M-647 (3091.1) | Mohenjo-daro | unicorn, stand letter S, 7-city office opening | 920-060-741-233-235-100-740 | *tiṅkaḷ? 060(no sound) orukuṭi varimīn vēymīn mutu kuṭi* | [Office opening: month, 060, first ward] of the Striped-star Bamboo-star Elder house |
+
+Read across the table: the names inside (Striped-star, High-star, Bamboo-star, Tax) are the same name stock under every beast; the beast does not change what the text says.
+
+## Next
+
+1. Crest plus letter: test whether pairs sharing both crest and letter, found in different rooms, still share a third sign (a family seen through two marks). Predicts a ratio above the 1.2 of crest alone.
+2. Round-format seals at home (12 of them) as the list of overseas-circuit stones; read their names against the abroad round seals (finding 3).
+3. Letter W against the produce signs 405/806 on the large later seals, with the Harappa granary seals as the check set.
