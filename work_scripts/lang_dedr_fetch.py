@@ -20,3 +20,14 @@ for p in range(1, N+1):
 with open("/tmp/dedr/dedr_entries.tsv","w") as o:
     for k,v in ents.items(): o.write(f"{k}\t{v}\n")
 print("entries", len(ents))
+
+# Split pages into one line per numbered entry (NFC-normalised) for lang_dedr_grep.py -> /tmp/dedr/dedr_text.txt
+import glob, unicodedata
+with open('/tmp/dedr/dedr_text.txt', 'w') as out:
+    for f in sorted(glob.glob('/tmp/dedr/pages/*.html')):
+        t = open(f, encoding='utf8', errors='ignore').read()
+        t = re.sub(r"<script.*?</script>", " ", t, flags=re.S); t = re.sub(r"<[^>]+>", " ", t)
+        t = unicodedata.normalize('NFC', re.sub(r"\s+", " ", html.unescape(t)))
+        for p in re.split(r" (?=\d{1,4}[a-z]?A? (?:\[|\(|Ta\.|Ma\.|Ka\.|Tu\.|Te\.|Ko\.|To\.|Koḍ\.|Kol\.|Nk\.|Pa\.|Ga\.|Go\.|Konḍa|Pe\.|Manḍ\.|Kui|Kuwi|Kur\.|Malt\.|Br\.|Ir\.|Kor\.|Bel\.|PāMu))", t):
+            out.write(p.strip() + "\n")
+print("wrote /tmp/dedr/dedr_text.txt")

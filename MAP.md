@@ -40,6 +40,9 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `measured` 3 diamonds = 3 loads on 22 of 22 tablets; diamond, its second drawing and the wheel share one slot and go with nothing in the world. One cup stroke is about 9.2 litres on three measured pots; cup counts are 1, 2, 3, 4, 6 and never 5.
 - `guess` READING: the diamond is "hand", a head counted for work. The ration tablet reads: 3 hands, 3 loads, 4 cups (about 37 litres), a gang leader's chit handed in at the depot. The seal opener `diamond + two strokes` puts the same head-count word in front of a name.
 
+- `measured` Picture-and-slot puns work in Dravidian for 7 of 9 picture words against 0.97 by chance; 9 of 12 pairs work fully only there. Sumerian and Elamite word order does not fit the measured order.
+- `guess` SOUNDS (first list, early Dravidian): jar = -kuṭi "house of"; man = āḷ "manager of a house"; fish = mīn "star"; spear = vēḷ "chief"; comb = ciṟ "junior"; load-carrier = kā "keeper"; person with staff = kō "king". `[crest] jar man` = "[crest]-kuṭi āḷ", head of the [crest] house. The jar ending and the house crest are the same fact seen twice: the crest names the house, the jar says "house".
+
 ## Live leads, in order
 
 1. Name slot. `guess` The slot right before the closing jar holds a house or family name. Next: build the list of pre-jar signs and pre-jar pairs with the houses they belong to; check whether one house keeps one pre-jar sign across depth (a family over generations); check the same slot before the other closing signs.

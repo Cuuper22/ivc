@@ -1,4 +1,4 @@
-"""grep the local DEDR text (built by lang_dedr_fetch.py + the split step in lang_build_dedr_text.py).
+"""grep the local DEDR text (built by lang_dedr_fetch.py).
 usage: python3 lang_dedr_grep.py REGEX [maxchars]"""
 import re, sys, unicodedata
 rx = re.compile(unicodedata.normalize("NFC", sys.argv[1])); n = int(sys.argv[2]) if len(sys.argv) > 2 else 400
