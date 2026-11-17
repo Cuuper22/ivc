@@ -94,3 +94,18 @@ t = df[(df.unit == 'faces') & (df.strength == 'P<=0.1')]
 print('TALLY faces, P<=0.1:', t.groupby('points_to').size().to_dict())
 t = df[(df.catalogue == 'Mu') & (df.strength.isin(['P<=0.1', 'direction only']))]
 print('NEW TEXTS, any direction:', t.groupby('points_to').size().to_dict(), flush=True)
+
+# K12 (added after the run above; post hoc, labelled so): the two roles of 335 split apart.
+# role G = 335 right after 575 (the grain-line formula); role N = every other use of 335.
+print('\nK12 (post hoc) role split, distinct texts, both catalogues', flush=True)
+G, N_ = [], []
+for r in FACES.drop_duplicates('tok').itertuples():
+    for i, t in enumerate(r.tok):
+        if t == S: (G if i > 0 and r.tok[i - 1] == '575' else N_).append((r, i))
+def summ(L, nm):
+    n = len(L)
+    f = lambda c: sum(c(r, i) for r, i in L)
+    print(f"  {nm}: uses {n}; tablet {f(lambda r,i: r.kind in TAB)}; 413 on face {f(lambda r,i: '413' in r.tok)}; cup/measure word {f(lambda r,i: bool(MEAS & set(r.tok)))}; "
+          f"jar/maka right after {f(lambda r,i: i+1<len(r.tok) and r.tok[i+1] in ('740','760','752'))}; 711 right after {f(lambda r,i: i+1<len(r.tok) and r.tok[i+1]=='711')}; "
+          f"seal {f(lambda r,i: r.kind=='seal')}; sites {sorted({r.site for r,i in L})}", flush=True)
+summ(G, 'G (575-335 grain-line role)'); summ(N_, 'N (all other uses)')

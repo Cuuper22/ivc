@@ -11,8 +11,8 @@ for _,r in d.iterrows():
     for i,x in enumerate(t):
         if x=='705':
             win=t[i+1:i+5]
-            hit=[s for s in win if s in('390','405','407','392')]
-            rows.append((r.id,r.site,r.type,r.cls,' '.join(t),bool(hit),hit[:1]))
+            found=[s for s in win if s in('390','405','407','392')]
+            rows.append((r.id,r.site,r.type,r.cls,' '.join(t),bool(found),found[:1]))
 x=pd.DataFrame(rows,columns=['id','site','type','cls','text','tree_within4','tree'])
 print('705 places',len(x),'with tree within next 4 signs',x.tree_within4.sum())
 print(x[x.tree_within4].drop_duplicates('text').to_string())

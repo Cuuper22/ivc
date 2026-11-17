@@ -1,0 +1,61 @@
+test,what,k,n,share,base,P,points_to,strength,signs,catalogue,unit
+G1,jar 740 on the face,7,87,8%,32.9%,3.9e-08,kaaval guard,P<=0.1,F (525+526+527),L,faces
+G1,jar 740 on the face,7,74,9%,36.3%,1.4e-07,kaaval guard,P<=0.1,F (525+526+527),L,distinct
+G1,jar 740 on the face,1,9,11%,25.9%,0.28,kaaval guard,direction only,F (525+526+527),Mu,faces
+G1,jar 740 on the face,1,9,11%,27.3%,0.25,kaaval guard,direction only,F (525+526+527),Mu,distinct
+G2,last sign of the text,67,87,77%,28.7%,1.3e-20,kaaval guard,P<=0.1,F (525+526+527),L,faces
+G2,last sign of the text,58,74,78%,24.3%,2e-22,kaaval guard,P<=0.1,F (525+526+527),L,distinct
+G2,last sign of the text,7,9,78%,28.0%,0.0028,kaaval guard,P<=0.1,F (525+526+527),Mu,faces
+G2,last sign of the text,7,9,78%,25.3%,0.0014,kaaval guard,P<=0.1,F (525+526+527),Mu,distinct
+G3,060 or ward jar right after,1,87,1%,2.4%,0.38,kaaval guard,direction only,F (525+526+527),L,faces
+G3,060 or ward jar right after,1,74,1%,3.0%,0.34,kaaval guard,direction only,F (525+526+527),L,distinct
+G3,060 or ward jar right after,0,9,0%,2.7%,0.78,kaaval guard,direction only,F (525+526+527),Mu,faces
+G3,060 or ward jar right after,0,9,0%,3.1%,0.76,kaaval guard,direction only,F (525+526+527),Mu,distinct
+G4,count right before/after,3,87,3%,24.3%,1.2e-07,kaaval guard,P<=0.1,F (525+526+527),L,faces
+G4,count right before/after,3,74,4%,25.8%,7.9e-07,kaaval guard,P<=0.1,F (525+526+527),L,distinct
+G4,count right before/after,0,9,0%,20.8%,0.12,kaaval guard,direction only,F (525+526+527),Mu,faces
+G4,count right before/after,0,9,0%,21.8%,0.11,kaaval guard,direction only,F (525+526+527),Mu,distinct
+G5,face is a seal,58,87,67%,40.3%,6.3e-07,kaaval guard,P<=0.1,F (525+526+527),L,faces
+G5,face is a seal,53,74,72%,56.2%,0.0045,kaaval guard,P<=0.1,F (525+526+527),L,distinct
+G5,face is a seal,8,9,89%,55.0%,0.039,kaaval guard,P<=0.1,F (525+526+527),Mu,faces
+G5,face is a seal,8,9,89%,63.9%,0.11,kaaval guard,direction only,F (525+526+527),Mu,distinct
+G6,face is a tag / sealing,1,87,1%,4.6%,0.086,kaaval guard,P<=0.1,F (525+526+527),L,faces
+G6,face is a tag / sealing,1,74,1%,4.7%,0.14,kaaval guard,direction only,F (525+526+527),L,distinct
+G6,face is a tag / sealing,1,9,11%,22.0%,0.38,kaaval guard,direction only,F (525+526+527),Mu,faces
+G6,face is a tag / sealing,1,9,11%,17.7%,0.51,kaaval guard,direction only,F (525+526+527),Mu,distinct
+G7,sign before the gate is a name part,32,87,37%,0.2%,1.4e-61,kaaval guard,P<=0.1,F (525+526+527),L,faces
+G7,sign before the gate is a name part,29,74,39%,0.3%,8.3e-54,kaaval guard,P<=0.1,F (525+526+527),L,distinct
+G7,sign before the gate is a name part,5,9,56%,0.3%,1.5e-11,kaaval guard,P<=0.1,F (525+526+527),Mu,faces
+G7,sign before the gate is a name part,5,9,56%,0.3%,3.7e-11,kaaval guard,P<=0.1,F (525+526+527),Mu,distinct
+G1,jar 740 on the face,7,63,11%,32.9%,5.8e-05,kaaval guard,P<=0.1,527 alone,L,faces
+G1,jar 740 on the face,7,58,12%,36.3%,3.3e-05,kaaval guard,P<=0.1,527 alone,L,distinct
+G1,jar 740 on the face,1,9,11%,25.9%,0.28,kaaval guard,direction only,527 alone,Mu,faces
+G1,jar 740 on the face,1,9,11%,27.3%,0.25,kaaval guard,direction only,527 alone,Mu,distinct
+G2,last sign of the text,52,63,83%,28.7%,9.7e-19,kaaval guard,P<=0.1,527 alone,L,faces
+G2,last sign of the text,47,58,81%,24.3%,1.5e-19,kaaval guard,P<=0.1,527 alone,L,distinct
+G2,last sign of the text,7,9,78%,28.0%,0.0028,kaaval guard,P<=0.1,527 alone,Mu,faces
+G2,last sign of the text,7,9,78%,25.3%,0.0014,kaaval guard,P<=0.1,527 alone,Mu,distinct
+G3,060 or ward jar right after,1,63,2%,2.4%,0.56,kaaval guard,direction only,527 alone,L,faces
+G3,060 or ward jar right after,1,58,2%,3.0%,0.47,kaaval guard,direction only,527 alone,L,distinct
+G3,060 or ward jar right after,0,9,0%,2.7%,0.78,kaaval guard,direction only,527 alone,Mu,faces
+G3,060 or ward jar right after,0,9,0%,3.1%,0.76,kaaval guard,direction only,527 alone,Mu,distinct
+G4,count right before/after,3,63,5%,24.3%,3.8e-05,kaaval guard,P<=0.1,527 alone,L,faces
+G4,count right before/after,3,58,5%,25.8%,4.6e-05,kaaval guard,P<=0.1,527 alone,L,distinct
+G4,count right before/after,0,9,0%,20.8%,0.12,kaaval guard,direction only,527 alone,Mu,faces
+G4,count right before/after,0,9,0%,21.8%,0.11,kaaval guard,direction only,527 alone,Mu,distinct
+G5,face is a seal,53,63,84%,40.3%,1e-12,kaaval guard,P<=0.1,527 alone,L,faces
+G5,face is a seal,49,58,84%,56.2%,4.3e-06,kaaval guard,P<=0.1,527 alone,L,distinct
+G5,face is a seal,8,9,89%,55.0%,0.039,kaaval guard,P<=0.1,527 alone,Mu,faces
+G5,face is a seal,8,9,89%,63.9%,0.11,kaaval guard,direction only,527 alone,Mu,distinct
+G6,face is a tag / sealing,1,63,2%,4.6%,0.21,kaaval guard,direction only,527 alone,L,faces
+G6,face is a tag / sealing,1,58,2%,4.7%,0.24,kaaval guard,direction only,527 alone,L,distinct
+G6,face is a tag / sealing,1,9,11%,22.0%,0.38,kaaval guard,direction only,527 alone,Mu,faces
+G6,face is a tag / sealing,1,9,11%,17.7%,0.51,kaaval guard,direction only,527 alone,Mu,distinct
+G7,sign before the gate is a name part,24,63,38%,0.2%,5.1e-47,kaaval guard,P<=0.1,527 alone,L,faces
+G7,sign before the gate is a name part,24,58,41%,0.3%,1.7e-45,kaaval guard,P<=0.1,527 alone,L,distinct
+G7,sign before the gate is a name part,5,9,56%,0.3%,1.5e-11,kaaval guard,P<=0.1,527 alone,Mu,faces
+G7,sign before the gate is a name part,5,9,56%,0.3%,3.7e-11,kaaval guard,P<=0.1,527 alone,Mu,distinct
+G8,frames shared with class closers,6,3,,median 6,0.75,direction only,direction only,F (525+526+527),L+Mu,distinct
+G8,frames shared with class closers,5,3,,median 6,0.75,direction only,direction only,527 alone,L+Mu,distinct
+G8,frames shared with place/thing words,3,3,,median 6,0.75,direction only,direction only,F (525+526+527),L+Mu,distinct
+G8,frames shared with place/thing words,3,3,,median 6,0.75,direction only,direction only,527 alone,L+Mu,distinct

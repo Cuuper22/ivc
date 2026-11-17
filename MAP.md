@@ -156,4 +156,11 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `guess` Short two is a general name prefix (before 803 in 14 of 18, before 806 in 13 of 16).
 - `measured` Went against: name numbers following the star counts of the 28 lunar mansions; strokes drawn inside a fish as a written number; same-house sharing of exact compounds.
 
+## Outside match through cotton (from `jobs/out/outside_match.md`)
+- `measured` The sealing said to be from Umma in Mesopotamia (Ashmolean 1931.120; cloth impression on the back per Parpola's caption; Tosi: cloth tied over a jar mouth) reads `127 705 002 004 390`: it ends "2, 4, tree sign". A seal from Salut in Oman ends `002 004 392`. At home `002-004` is followed by a tree sign in 16 of 20 places. A jar sherd from Ra's al-Junayz has `004 405`; a 4 before a tree sign is 39 of 90 at home and 3 of 6 abroad (chance 2.8%).
+- `measured` 407 is counted with a tall two on 9 of 28 places against 2 of 90 for 390 (P 3e-5): 407 counted by the piece, 390 in lots.
+- `guess` The Umma sealing is a cotton lot label on a cloth-covered jar or bale: the Indus cotton line found in Mesopotamia on cloth. 407 = cloth by the piece, 390 = raw cotton by the lot.
+- `measured` No match yet in cuneiform: no Meluhha-tagged cloth word in 202 CDLI Meluhha texts; no cotton word in Sumerian; no object with both scripts; loan candidates weak (word-shape test 196 against 139 by shuffle, P 0.07). The Meluhha village at Guabba sits in the weaving district (Vermaak 2008); Ur-Lamma "son of Meluhha" is in a Girsu wool text.
+- Next way in: a Guabba or Girsu wool tablet carrying a non-cuneiform seal impression; the Ashmolean photo (Tosi counts six signs, the catalogue five). Not reached: ePSD2 and ORACC (blocked from the workspace), Parpola-Parpola-Brunswig 1977 (JSTOR), Laursen and Steinkeller 2017.
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.
