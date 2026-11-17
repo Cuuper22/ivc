@@ -35,7 +35,7 @@ svg{display:block;width:100%;height:auto;touch-action:manipulation}
 <div class="sl" id="sl"></div>
 </main>
 <script>
-/*UPDATED*/const UPDATED="Updated Tue 17 Nov 2026, 08:40 Pacific. Decoy test went against the exact words. 2 agents running: the second decoy test (method replay).";/*END-UPDATED*/
+/*UPDATED*/const UPDATED="Updated Tue 17 Nov 2026, 08:55 Pacific. Both decoy tests went against the exact words; the frame stands. 3 agents running: language test by machine; the frame book; second replay tester.";/*END-UPDATED*/
 const SEAL=[
 ["Opener","b","kāṇi iru","The seal starts with a diamond sign and two strokes. On ration tablets the same diamond is counted like workers, so here it reads \"two shares\" or \"two hands\". Working reading."],
 ["Family crest","g","mīmīn","A fish sign with a mark on it. People whose seals were dug up in the same house share the same marked fish, so it works like a family crest. Sound guess: \"High star\"."],
@@ -124,7 +124,8 @@ const N=[
 ["blind","g","Blind test:|frame holds","Blind test: fully scrambled word lists read worse","60 inscriptions put into English four ways: the real word list and three with the words dealt to the wrong signs. Three readers who never saw the key graded all 240. Real lines read as sense 35 to 37% of the time; freely scrambled 10 to 17%; scrambled among equally common signs 7 to 8%.",["corpus"]],
 ["soft","r","Pick the|real one","Readers can pick the real reading out of four","Went against. Shown the real line beside three scrambled ones, readers picked the real one 29% of the time; chance is 26%. A list scrambled only among signs doing the same job was picked 34% of the time. So how the English sounds proves the frame (opener, crest, title, measure) and says nothing about the exact word on each sign.",["blind"]],
 ["decoy","r","Decoys pass|as often","Real words pass more often than wrong ones","Went against. 60 signs, half with their accepted word and half with a word taken from another sign doing the same job. Two testers, not told which, wrote a prediction for each from the word's meaning and then checked it. Accepted words came true 9 of 58 times. Wrong words came true 10 of 60 times. So the checks behind the word list cannot tell a right word from a wrong one of the same kind.",["soft","cover"]],
-["replay","a","Second|decoy test","One more try, the way the words were first chosen","In the first decoy test the testers predicted blind. The passes that built the word list looked at each sign's data first. Fresh testers are now doing it that way on the same mixed list. If wrong words still pass as often, the exact words have no support and only the frame stands.",["decoy"]]
+["replay","r","2nd decoy|test","Wrong words fail when tested the original way","Went against again. A fresh tester did what the word-building passes did: look at the sign, predict, one retry. Accepted words passed 17 of 29 times. Wrong words passed 19 of 30. The method passes six words in ten either way, so the exact Dravidian words are working labels and nothing more. What each sign does (its job) still stands.",["decoy"]],
+["lang","a","Which|language?","Which language, tested by machine","The language question is now being asked with no human choosing words: for signs whose picture and job are both firm, a program checks in each dictionary (Dravidian, Munda, Sumerian, Sanskrit) whether the word for the picture sounds like a word for the job, and compares that with pictures and jobs paired at random.",["replay","drav"]]
 ];
 /*END-TREE*/
 const $=id=>document.getElementById(id),pt=$('pt'),pb=$('pb'),pl=$('pl'),NS="http://www.w3.org/2000/svg";
@@ -132,7 +133,7 @@ $('upd').textContent=UPDATED;
 const M={};N.forEach(n=>{M[n[0]]={id:n[0],st:n[1],lab:n[2],t:n[3],d:n[4],up:n[5],dn:[]};});
 N.forEach(n=>n[5].forEach(p=>M[p].dn.push(n[0])));
 const dep=id=>{const m=M[id];if(m.dp==null)m.dp=m.up.length?1+Math.max(...m.up.map(dep)):0;return m.dp;};
-const W=390,NW=61,NH=21,RH=28,MAXR=6;let rows=[],maxd=0;
+const W=390,NW=61,NH=20,RH=27,MAXR=6;let rows=[],maxd=0;
 N.forEach(n=>{maxd=Math.max(maxd,dep(n[0]));});
 for(let d=0;d<=maxd;d++){
   const L=N.map(n=>M[n[0]]).filter(m=>m.dp===d);

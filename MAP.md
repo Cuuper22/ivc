@@ -1,3 +1,6 @@
+# STANDING NOTE (2026-11-17, after the decoy tests)
+Two blind decoy tests (`jobs/out/decoy_test.md`) show that the prediction procedure used in the sound passes passes a WRONG word of the same job as often as the accepted word (blind: 9 of 58 against 10 of 60; full method with one redesign: 17 of 29 against 19 of 30). So below, wherever a line gives a Dravidian word for a sign and says a prediction "came true" or labels it strict / wide: the JOB of the sign (opener, crest, title, measure, counted thing, place word) is supported; the exact WORD is not. Counts of faces "read whole" mean "a word on every sign". Lines that need no word (template, name structure, findspots, counts, measures in twelves, unit order, time) stand as written. Any new pass on words must mix in decoys and report real against decoy.
+
 # Map
 
 Live picture of this map for Cúper: the page source is `map_page/index.html` (edit the `TREE` list and the `UPDATED` line), published as artifact slug `57d0ac8f-6e19-4e2c-a1ae-49ada7c71964`. Republish it every time this file changes.
@@ -258,5 +261,6 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `guess` The "came true" counts of the sound passes, and the strict / wide labels, do not separate the accepted word from another word of the same job. Counts of "inscriptions read whole" mean "a word on every sign", with the job of each sign supported and the exact word not.
 - Standing without words: template, name = crest + self + tag, manager in the master's building, quarter before king, measures in twelves, unit order, system flat over time, findspot results. Standing as language evidence: the pun test across language families (small numbers).
 - Redesign under way: method replay with decoys (testers may look at data before predicting, as the sound passes did).
+- `measured` Method replay (look first, predict, one redesign): real 17 of 29 passed, decoy 19 of 30. Went against a second time. Decision recorded in the standing note at the top of this file.
 
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.
