@@ -10,6 +10,9 @@ Date 2026-11-17. Word-free: sign numbers, job classes, counts only. Scripts in `
 4. **001 splits into three uses only in the class-joining scheme, with a small gain.** Three-profile groups (205 copy events): group 0, 108 events, mostly seals, after a name part or a closer and before a name part or a short number; group 1, 67 events, mostly seals, right after a front word, slot or measure and before a name part or crest; group 2, 30 events, tablets and pots, mostly Harappa, short texts (median 4 signs), at text start 30% and text end 33%. The three-way split (variants joining their best v2 class) takes first-catalogue held-out bits from 7.0598 to 7.0584, rank 1 of 21 against both decoy kinds, 8 of 10 fits better; on the 52 new-text occurrences it takes 7.5362 to 7.5248, rank 1 of 21 against both, and inside the texts carrying 001 it is 7.4820 to 7.4470. The same split with variants as their own one-sign classes does not gain (rank 21 of 21 on the first catalogue). Two-way versions are weaker (mixture 2: rank 6 against stricter decoys on the first catalogue; left-context rule: rank 2). So: a three-use 001 holds in one scheme on both held-out sets and fails in the other.
 5. **Overall effect on the model is small.** Over all held-out signs (not only those in texts with the split sign) the best gains are 0.0015 bits per sign (824), 0.0014 (001, first catalogue; 0.0113 on new texts). The frame's headline gap to the sign-pair model is 0.644 bits per sign on new texts (7.536 against 6.892), so one split closes about 0.2% of it on the first catalogue and about 1.8% on new texts (001 three-way: 0.0113 / 0.644).
 
+6. **Control: 824 and 001 are rarer than a typical busy sign, not unique.** Of 20 signs matched to 824 by frequency and spread over the classes, 3 pass the plain bar (rank 1 against both decoy kinds); 1 passes the stricter bar that drops empty ties; 0 pass on both held-out sets. Of 20 matched to 001, 4 (mixture 3) and 9 (mixture 2) pass the plain bar; 2 pass the strict bar on the first catalogue, 0 on both sets. 001 three-way passes both sets; 824 passes the first (and has no new-text occurrences). Two controls (798, 090) pass on the first catalogue, 798 with a bigger gain than 001's. Details in "Control" below.
+7. **By-kind grammar agrees with the pooled grammar** (table below): 824 gain 0.0015, 001 three-way 0.0027 (first catalogue) and 0.0120 (new texts), 850 about zero.
+
 ## Terms
 
 - **Bits per sign**: how many yes/no questions the model needs, on average, to guess the next sign of a text it has not seen; lower is better. Counted over all held-out texts ("all") or only over held-out texts that contain the split sign ("with sign").
@@ -100,4 +103,130 @@ Meaning: 824 gains in both schemes; 850 gains in neither beyond what random spli
 - 824: the groups coincide with site and object kind, so the stricter decoy gives no extra information; the second held-out set cannot test it.
 - 001: the gain exists only in the class-joining scheme with three groups; every one-sign-class variant of 001 (except the tied seal-versus-other rule) ranks 21 of 21 on the first catalogue; two-group versions rank 2 to 17.
 - Scale: all effects are 0.0005 to 0.0113 bits per sign over all texts.
-- Not run: a control that applies the same clustering to frequency-matched other signs; the by-kind grammar was scored for real splits and unsplit frames only (columns `realk_*`, `U0k`, `U1k` in the test CSVs, not tabulated here).
+- Control: the plain bar (rank 1 against both decoy kinds) is passed by 3 of 20 signs matched to 824 and 4 to 9 of 20 matched to 001, many with empty ties; the strict bar (added after seeing them) is passed on both held-out sets by none of the controls but the control signs 798 and 090 pass on the first catalogue and 798 gains more than 001 does. The strict bar was set after seeing the control results.
+
+## Control: do other busy signs split just as well?
+
+Same clustering, same label-free scoring, same 20 + 20 decoys, same folds, run on 20 control signs matched to each target by number of occurrences in distinct first-catalogue texts and spread round-robin over the 14 classes (rule fixed before any control score, `work_scripts/split_5_pick.py`; list in `work_data/split/controls.csv`). 824-matched controls (target 19 occurrences, controls 11 to 36): mixture of 2 profiles, the only mixture split 824 had. 001-matched controls (target 187, controls 108 to 346): mixture of 2 and mixture of 3. Scheme S2, pooled grammar. Scripts `split_2_test.py`, `split_6_controls.py`; results `controls_result.csv`.
+
+Two bars. **Plain bar** (the one asked for): real split better than the unsplit frame, rank 1 of 21 against decoys A and against decoys B on the first catalogue. **Strict bar** (added after seeing the controls, because many plain-bar passes are empty: the real split and all decoys tie because the clustering put almost every occurrence in one group): plain bar, plus at most 1 tie among the 20 decoys of each kind, plus an overall gain of at least 0.0001 bits per sign. The real 824 (mixture 2: 1 tie, gain 0.0011) and the real 001 (mixture 3: 0 ties, gain 0.0014) both pass the strict bar on the first catalogue; 001 mixture 3 also passes it on new texts (gain 0.0113).
+
+| control group | split | controls | plain bar, first catalogue | strict bar, first catalogue | strict bar on first catalogue AND new texts | strict bar on new texts alone |
+|---|---|---|---|---|---|---|
+| matched to 824 | mixture 2 | 20 | 3 (158, 222, 243) | 1 (158, gain 0.0002) | 0 | 0 |
+| matched to 001 | mixture 2 | 20 | 9 | 2 (090, 798) | 0 | 3 |
+| matched to 001 | mixture 3 | 20 | 4 | 2 (090, 798) | 0 | 3 |
+
+What it means: by the plain bar, 3 of 20 signs matched to 824 and 4 of 20 matched to 001 (mixture 3) pass as 824 and 001 do, so the plain bar alone is not special to them; on the strict bar 1 of 20 and 2 of 20 pass on the first catalogue and 0 of 20 pass on both sets, while 001's three-way split passes both. Direction: 824 and 001 (three-way) are rarer than a typical busy sign, but 001 is not unique: control signs 798 (a name part) and 090 (an after-jar title) pass on the first catalogue with gains 0.0089 and 0.0012 (798's gain is larger than 001's 0.0014), and neither repeats on new texts. For 824 the control count is small and its gain (0.0011) is larger than the 0.0002 of its one strict control. The class-joining scheme passes for scattered signs; with each variant as a one-sign class (S1) the first-catalogue strict bar passes for 11 of 20 (mixture 2) and 10 of 20 (mixture 3) 001-matched controls and 0 of 20 824-matched, so S1 is not a useful test of 001 (the real 001 fails it, most controls pass it).
+
+### 824-matched controls (mixture 2, S2, pooled grammar, all held-out texts)
+
+| sign | class | occ. | first cat. unsplit | real | rank A / B | strict hold | new texts real (unsplit) | rank A / B | strict hold |
+|---|---|---|---|---|---|---|---|---|---|
+| 104 | PERSONAL | 20 | 7.0598 | 7.0601 | 6 / 3 | no | 7.5364 (7.5362) | 1 / 1 | no |
+| 621 | TITLE | 18 | 7.0598 | 7.0598 | 1 / 1 | no | 7.5362 (7.5362) | 1 / 1 | no |
+| 752 | AFTER_M | 21 | 7.0598 | 7.0598 | 1 / 3 | no | 7.5362 (7.5362) | 1 / 1 | no |
+| 845 | PLACE | 21 | 7.0598 | 7.0604 | 1 / 15 | no | 7.5446 (7.5362) | 1 / 20 | no |
+| 365 | SLOT | 17 | 7.0598 | 7.0602 | 15 / 19 | no | 7.5348 (7.5362) | 12 / 3 | no |
+| 171 | MEASURE | 22 | 7.0598 | 7.0598 | 1 / 1 | no | 7.5362 (7.5362) | 1 / 1 | no |
+| 091 | OPEN | 16 | 7.0598 | 7.0602 | 13 / 18 | no | 7.5326 (7.5362) | 17 / 11 | no |
+| 035 | NUM_TALL | 25 | 7.0598 | 7.0602 | 21 / 21 | no | 7.5363 (7.5362) | 18 / 21 | no |
+| 482 | NAME_BACK | 26 | 7.0598 | 7.0602 | 1 / 20 | no | 7.5359 (7.5362) | 1 / 4 | no |
+| 158 | CLOSER | 29 | 7.0598 | 7.0596 | 1 / 1 | yes | 7.5364 (7.5362) | 1 / 19 | no |
+| 222 | CREST | 12 | 7.0598 | 7.0587 | 1 / 1 | plain only | 7.5330 (7.5362) | 1 / 1 | plain only |
+| 406 | THING | 12 | 7.0598 | 7.0605 | 1 / 1 | no | 7.5371 (7.5362) | 1 / 1 | no |
+| 013 | NUM_SHORT | 36 | 7.0598 | 7.0583 | 8 / 2 | no | 7.5369 (7.5362) | 9 / 2 | no |
+| 236 | PERSONAL | 20 | 7.0598 | 7.0595 | 16 / 15 | no | 7.5376 (7.5362) | 18 / 21 | no |
+| 679 | TITLE | 17 | 7.0598 | 7.0595 | 1 / 4 | no | 7.5371 (7.5362) | 1 / 19 | no |
+| 519 | PLACE | 14 | 7.0598 | 7.0598 | 1 / 1 | no | 7.5362 (7.5362) | 1 / 1 | no |
+| 034 | NUM_TALL | 30 | 7.0598 | 7.0610 | 21 / 21 | no | 7.5395 (7.5362) | 21 / 21 | no |
+| 360 | OPEN | 11 | 7.0598 | 7.0603 | 6 / 18 | no | 7.5362 (7.5362) | 1 / 1 | no |
+| 243 | CREST | 11 | 7.0598 | 7.0595 | 1 / 1 | plain only | 7.5334 (7.5362) | 1 / 1 | plain only |
+| 480 | MEASURE | 33 | 7.0598 | 7.0602 | 18 / 17 | no | 7.5401 (7.5362) | 1 / 21 | no |
+
+### 001-matched controls, mixture 3
+
+| sign | class | occ. | first cat. unsplit | real | rank A / B | strict hold | new texts real (unsplit) | rank A / B | strict hold |
+|---|---|---|---|---|---|---|---|---|---|
+| 235 | CREST | 194 | 7.0598 | 7.0602 | 11 / 21 | no | 7.5373 (7.5362) | 13 / 20 | no |
+| 741 | SLOT | 199 | 7.0598 | 7.0596 | 16 / 19 | no | 7.5262 (7.5362) | 1 / 1 | yes |
+| 817 | OPEN | 172 | 7.0598 | 7.0611 | 21 / 21 | no | 7.5410 (7.5362) | 21 / 21 | no |
+| 590 | PERSONAL | 169 | 7.0598 | 7.0515 | 21 / 21 | no | 7.5339 (7.5362) | 21 / 21 | no |
+| 705 | MEASURE | 164 | 7.0598 | 7.0598 | 1 / 1 | plain only | 7.5361 (7.5362) | 1 / 1 | plain only |
+| 031 | NUM_TALL | 217 | 7.0598 | 7.0598 | 1 / 1 | no | 7.5362 (7.5362) | 1 / 1 | no |
+| 520 | CLOSER | 221 | 7.0598 | 7.0597 | 21 / 5 | no | 7.5370 (7.5362) | 17 / 21 | no |
+| 003 | NUM_SHORT | 156 | 7.0598 | 7.0600 | 11 / 21 | no | 7.5380 (7.5362) | 17 / 21 | no |
+| 390 | THING | 226 | 7.0598 | 7.0597 | 3 / 1 | no | 7.5445 (7.5362) | 21 / 21 | no |
+| 090 | TITLE | 143 | 7.0598 | 7.0586 | 1 / 1 | yes | 7.5453 (7.5362) | 21 / 21 | no |
+| 100 | NAME_BACK | 110 | 7.0598 | 7.0596 | 2 / 1 | no | 7.5340 (7.5362) | 1 / 1 | yes |
+| 760 | AFTER_M | 108 | 7.0598 | 7.0597 | 6 / 3 | no | 7.5361 (7.5362) | 9 / 2 | no |
+| 032 | NUM_NAME | 346 | 7.0598 | 7.0598 | 1 / 1 | no | 7.5362 (7.5362) | 1 / 1 | no |
+| 233 | CREST | 172 | 7.0598 | 7.0597 | 21 / 2 | no | 7.5376 (7.5362) | 21 / 21 | no |
+| 060 | SLOT | 207 | 7.0598 | 7.0605 | 21 / 21 | no | 7.5362 (7.5362) | 1 / 1 | plain only |
+| 861 | OPEN | 209 | 7.0598 | 7.0603 | 21 / 21 | no | 7.5344 (7.5362) | 1 / 1 | yes |
+| 033 | NUM_TALL | 242 | 7.0598 | 7.0598 | 1 / 1 | plain only | 7.5361 (7.5362) | 1 / 1 | plain only |
+| 798 | PERSONAL | 128 | 7.0598 | 7.0514 | 1 / 1 | yes | 7.5391 (7.5362) | 1 / 1 | no |
+| 400 | TITLE | 288 | 7.0598 | 7.0597 | 8 / 2 | no | 7.5374 (7.5362) | 17 / 21 | no |
+| 820 | OPEN | 213 | 7.0598 | 7.0595 | 16 / 3 | no | 7.5365 (7.5362) | 17 / 21 | no |
+
+### 001-matched controls, mixture 2
+
+| sign | class | occ. | first cat. unsplit | real | rank A / B | strict hold | new texts real (unsplit) | rank A / B | strict hold |
+|---|---|---|---|---|---|---|---|---|---|
+| 235 | CREST | 194 | 7.0598 | 7.0598 | 1 / 1 | plain only | 7.5362 (7.5362) | 1 / 1 | no |
+| 741 | SLOT | 199 | 7.0598 | 7.0600 | 21 / 21 | no | 7.5256 (7.5362) | 1 / 1 | yes |
+| 817 | OPEN | 172 | 7.0598 | 7.0612 | 21 / 21 | no | 7.5399 (7.5362) | 21 / 21 | no |
+| 590 | PERSONAL | 169 | 7.0598 | 7.0507 | 20 / 21 | no | 7.5292 (7.5362) | 21 / 21 | no |
+| 705 | MEASURE | 164 | 7.0598 | 7.0598 | 1 / 1 | plain only | 7.5361 (7.5362) | 1 / 1 | plain only |
+| 031 | NUM_TALL | 217 | 7.0598 | 7.0598 | 1 / 1 | no | 7.5362 (7.5362) | 1 / 1 | no |
+| 520 | CLOSER | 221 | 7.0598 | 7.0606 | 21 / 21 | no | 7.5362 (7.5362) | 2 / 1 | no |
+| 003 | NUM_SHORT | 156 | 7.0598 | 7.0598 | 1 / 1 | plain only | 7.5362 (7.5362) | 1 / 1 | no |
+| 390 | THING | 226 | 7.0598 | 7.0598 | 1 / 1 | plain only | 7.5362 (7.5362) | 1 / 1 | plain only |
+| 090 | TITLE | 143 | 7.0598 | 7.0582 | 1 / 1 | yes | 7.5447 (7.5362) | 21 / 21 | no |
+| 100 | NAME_BACK | 110 | 7.0598 | 7.0596 | 2 / 1 | no | 7.5340 (7.5362) | 1 / 1 | yes |
+| 760 | AFTER_M | 108 | 7.0598 | 7.0602 | 21 / 21 | no | 7.5361 (7.5362) | 9 / 2 | no |
+| 032 | NUM_NAME | 346 | 7.0598 | 7.0598 | 1 / 1 | no | 7.5362 (7.5362) | 1 / 1 | no |
+| 233 | CREST | 172 | 7.0598 | 7.0598 | 21 / 21 | no | 7.5362 (7.5362) | 1 / 1 | no |
+| 060 | SLOT | 207 | 7.0598 | 7.0598 | 1 / 1 | plain only | 7.5362 (7.5362) | 1 / 1 | plain only |
+| 861 | OPEN | 209 | 7.0598 | 7.0601 | 21 / 21 | no | 7.5361 (7.5362) | 1 / 1 | plain only |
+| 033 | NUM_TALL | 242 | 7.0598 | 7.0598 | 1 / 1 | plain only | 7.5362 (7.5362) | 1 / 1 | plain only |
+| 798 | PERSONAL | 128 | 7.0598 | 7.0509 | 1 / 1 | yes | 7.5397 (7.5362) | 2 / 1 | no |
+| 400 | TITLE | 288 | 7.0598 | 7.0598 | 1 / 1 | plain only | 7.5362 (7.5362) | 1 / 1 | no |
+| 820 | OPEN | 213 | 7.0598 | 7.0611 | 21 / 21 | no | 7.5339 (7.5362) | 1 / 1 | yes |
+
+## By-kind grammar (class transitions learned per object kind, backed off to the pooled table)
+
+Bits per sign over all held-out texts with the by-kind grammar for the real split and the unsplit frame; decoys were scored with the pooled grammar only, so no rank exists for this grammar. Gain = unsplit minus real (positive = split helps). Note the by-kind grammar alone is worse than the pooled one on the new texts (7.6636 against 7.5362 unsplit), as already in `frame_v2.md`.
+
+| sign | split | held-out set | occ. | S2 unsplit (kind) | S2 real (kind) | S2 gain, kind | S2 gain, pooled | S1 gain, kind |
+|---|---|---|---|---|---|---|---|---|
+| 850 | mix2 | first catalogue | 48 | 7.0595 | 7.0594 | +0.0001 | -0.0003 | +0.0004 |
+| 850 | mix2 | new texts | 7 | 7.6636 | 7.6636 | +0.0000 | +0.0000 | +0.0006 |
+| 850 | mix3 | first catalogue | 48 | 7.0595 | 7.0595 | -0.0001 | -0.0004 | +0.0010 |
+| 850 | mix3 | new texts | 7 | 7.6636 | 7.6893 | -0.0257 | +0.0010 | -0.0004 |
+| 850 | pos | first catalogue | 48 | 7.0595 | 7.0596 | -0.0001 | -0.0002 | +0.0012 |
+| 850 | pos | new texts | 7 | 7.6636 | 7.6621 | +0.0015 | +0.0014 | -0.0003 |
+| 850 | kind | first catalogue | 48 | 7.0595 | 7.0590 | +0.0004 | -0.0008 | +0.0009 |
+| 850 | kind | new texts | 7 | 7.6636 | 7.6841 | -0.0205 | +0.0038 | -0.0015 |
+| 850 | left | first catalogue | 48 | 7.0595 | 7.0590 | +0.0004 | -0.0019 | +0.0008 |
+| 850 | left | new texts | 7 | 7.6636 | 7.6887 | -0.0251 | +0.0042 | +0.0024 |
+| 824 | mix2 | first catalogue | 28 | 7.0595 | 7.0579 | +0.0015 | +0.0011 | +0.0006 |
+| 824 | mix2 | new texts | 0 | 7.6636 | 7.6634 | +0.0001 | +0.0008 | -0.0000 |
+| 824 | pos | first catalogue | 28 | 7.0595 | 7.0584 | +0.0011 | +0.0015 | -0.0000 |
+| 824 | pos | new texts | 0 | 7.6636 | 7.6645 | -0.0009 | -0.0011 | -0.0000 |
+| 824 | kind | first catalogue | 28 | 7.0595 | 7.0580 | +0.0014 | +0.0011 | +0.0006 |
+| 824 | kind | new texts | 0 | 7.6636 | 7.6634 | +0.0001 | +0.0008 | -0.0000 |
+| 824 | left | first catalogue | 28 | 7.0595 | 7.0581 | +0.0014 | +0.0015 | -0.0002 |
+| 824 | left | new texts | 0 | 7.6636 | 7.6639 | -0.0003 | -0.0008 | -0.0000 |
+| 001 | mix2 | first catalogue | 244 | 7.0595 | 7.0576 | +0.0019 | +0.0005 | -0.0013 |
+| 001 | mix2 | new texts | 52 | 7.6636 | 7.6635 | +0.0000 | +0.0000 | -0.0019 |
+| 001 | mix3 | first catalogue | 244 | 7.0595 | 7.0567 | +0.0027 | +0.0014 | -0.0033 |
+| 001 | mix3 | new texts | 52 | 7.6636 | 7.6516 | +0.0120 | +0.0113 | -0.0250 |
+| 001 | pos | first catalogue | 244 | 7.0595 | 7.0595 | -0.0000 | -0.0000 | -0.0010 |
+| 001 | pos | new texts | 52 | 7.6636 | 7.6635 | +0.0000 | +0.0000 | +0.0012 |
+| 001 | kind | first catalogue | 244 | 7.0595 | 7.0596 | -0.0002 | +0.0000 | -0.0003 |
+| 001 | kind | new texts | 52 | 7.6636 | 7.6635 | +0.0000 | +0.0000 | -0.0007 |
+| 001 | left | first catalogue | 244 | 7.0595 | 7.0579 | +0.0016 | +0.0007 | -0.0010 |
+| 001 | left | new texts | 52 | 7.6636 | 7.6596 | +0.0040 | +0.0021 | -0.0022 |
+
+Meaning: the by-kind grammar gives the same picture as the pooled one. 824 gains 0.0011 to 0.0015 on the first catalogue (pooled 0.0011 to 0.0015); 001 three-way gains 0.0027 on the first catalogue and 0.0120 on new texts (pooled 0.0014 and 0.0113); 850 gains between -0.0001 and +0.0004 on the first catalogue and loses 0.02 to 0.03 on new texts for three of its five splits. The one-sign-class scheme (S1) with the by-kind grammar is negative for all five 001 splits on the first catalogue (-0.0003 to -0.0033), i.e. it agrees with the pooled result that S1 does not help 001.

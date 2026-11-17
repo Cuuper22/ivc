@@ -1,0 +1,74 @@
+12:37:54 [sense_run] events_lipi.json events with a scorable text 3429 face-texts 3986 distinct texts 2805
+12:37:54 [sense_run] events_new.json events with a scorable text 715 face-texts 754 distinct texts 644
+12:37:54 [sense_run] Indus problem: words 119 max senses 25 texts 3449 texts truncated at 10 signs 11
+12:37:54 [sense_run] weights: new texts 715.0000000000001 Lipi 3429.0
+12:37:55 [sense_run] similarity tables built 2s
+12:37:55 [sense_run] strongest-labelled pool 55 taken 30
+12:37:56 [sense_run] REAL ('ov', 'new', 'all') 0.83468
+12:37:56 [sense_run] REAL ('ov', 'new', 'sub') 0.86858
+12:37:56 [sense_run] REAL ('ov', 'lipi', 'all') 0.86129
+12:37:56 [sense_run] REAL ('ov', 'lipi', 'sub') 0.88596
+12:37:56 [sense_run] REAL ('ov', 'all', 'all') 0.8567
+12:37:56 [sense_run] REAL ('ov', 'all', 'sub') 0.88287
+12:37:56 [sense_run] REAL ('lift', 'new', 'all') 0.07729
+12:37:56 [sense_run] REAL ('lift', 'new', 'sub') 0.075
+12:37:56 [sense_run] REAL ('lift', 'lipi', 'all') 0.08858
+12:37:56 [sense_run] REAL ('lift', 'lipi', 'sub') 0.07442
+12:37:56 [sense_run] REAL ('lift', 'all', 'all') 0.08663
+12:37:56 [sense_run] REAL ('lift', 'all', 'sub') 0.07452
+12:37:56 [sense_run] REAL ('cos', 'new', 'all') 0.25416
+12:37:56 [sense_run] REAL ('cos', 'new', 'sub') 0.25755
+12:37:56 [sense_run] REAL ('cos', 'lipi', 'all') 0.26399
+12:37:56 [sense_run] REAL ('cos', 'lipi', 'sub') 0.26389
+12:37:56 [sense_run] REAL ('cos', 'all', 'all') 0.26229
+12:37:56 [sense_run] REAL ('cos', 'all', 'sub') 0.26276
+12:38:05 [sense_run] A: 50/1000 shuffles (9s)
+12:38:15 [sense_run] A: 100/1000 shuffles (19s)
+12:38:24 [sense_run] A: 150/1000 shuffles (28s)
+12:38:33 [sense_run] A: 200/1000 shuffles (37s)
+12:38:42 [sense_run] A: 250/1000 shuffles (47s)
+12:38:52 [sense_run] A: 300/1000 shuffles (56s)
+12:39:01 [sense_run] A: 350/1000 shuffles (66s)
+12:39:11 [sense_run] A: 400/1000 shuffles (75s)
+12:39:20 [sense_run] A: 450/1000 shuffles (85s)
+12:39:29 [sense_run] A: 500/1000 shuffles (94s)
+12:39:39 [sense_run] A: 550/1000 shuffles (103s)
+12:39:48 [sense_run] A: 600/1000 shuffles (112s)
+12:39:56 [sense_run] A: 650/1000 shuffles (121s)
+12:40:05 [sense_run] A: 700/1000 shuffles (129s)
+12:40:14 [sense_run] A: 750/1000 shuffles (138s)
+12:40:23 [sense_run] A: 800/1000 shuffles (147s)
+12:40:31 [sense_run] A: 850/1000 shuffles (156s)
+12:40:40 [sense_run] A: 900/1000 shuffles (164s)
+12:40:49 [sense_run] A: 950/1000 shuffles (174s)
+12:40:59 [sense_run] A: 1000/1000 shuffles (184s)
+12:40:59 [sense_run] A mean |change in sense count| per sign vs real: 7.831097826086956
+12:41:09 [sense_run] B: 50/1000 shuffles (10s)
+12:41:18 [sense_run] B: 100/1000 shuffles (19s)
+12:41:28 [sense_run] B: 150/1000 shuffles (28s)
+12:41:37 [sense_run] B: 200/1000 shuffles (38s)
+12:41:47 [sense_run] B: 250/1000 shuffles (47s)
+12:41:56 [sense_run] B: 300/1000 shuffles (57s)
+12:42:06 [sense_run] B: 350/1000 shuffles (67s)
+12:42:16 [sense_run] B: 400/1000 shuffles (76s)
+12:42:25 [sense_run] B: 450/1000 shuffles (86s)
+12:42:34 [sense_run] B: 500/1000 shuffles (95s)
+12:42:43 [sense_run] B: 550/1000 shuffles (104s)
+12:42:52 [sense_run] B: 600/1000 shuffles (113s)
+12:43:01 [sense_run] B: 650/1000 shuffles (122s)
+12:43:11 [sense_run] B: 700/1000 shuffles (132s)
+12:43:20 [sense_run] B: 750/1000 shuffles (141s)
+12:43:29 [sense_run] B: 800/1000 shuffles (150s)
+12:43:38 [sense_run] B: 850/1000 shuffles (158s)
+12:43:47 [sense_run] B: 900/1000 shuffles (167s)
+12:43:56 [sense_run] B: 950/1000 shuffles (177s)
+12:44:05 [sense_run] B: 1000/1000 shuffles (186s)
+12:44:06 [sense_run] B mean |change in sense count| per sign vs real: 2.0260652173913045
+12:44:06 [sense_run] core results saved 372s
+12:44:07 [sense_run] MASS ov class real {'n_signs': 108, 'mean_pct': 0.448, 'top1': 0.093, 'chance_top1': 0.111, 'top10': 0.123, 'chance_top10': 0.169, 'mean_rank': 19.843, 'mean_pool': 36.343} 1s
+12:44:09 [sense_run] MASS ov all real {'n_signs': 108, 'mean_pct': 0.471, 'top1': 0.004, 'chance_top1': 0.008, 'top10': 0.072, 'chance_top10': 0.101, 'mean_rank': 63.468, 'mean_pool': 119.0} 3s
+12:44:11 [sense_run] MASS lift class real {'n_signs': 108, 'mean_pct': 0.481, 'top1': 0.079, 'chance_top1': 0.111, 'top10': 0.128, 'chance_top10': 0.169, 'mean_rank': 18.366, 'mean_pool': 36.343} 1s
+12:44:13 [sense_run] MASS lift all real {'n_signs': 108, 'mean_pct': 0.501, 'top1': 0.003, 'chance_top1': 0.008, 'top10': 0.068, 'chance_top10': 0.101, 'mean_rank': 59.912, 'mean_pool': 119.0} 3s
+12:44:15 [sense_run] MASS cos class real {'n_signs': 108, 'mean_pct': 0.493, 'top1': 0.102, 'chance_top1': 0.111, 'top10': 0.148, 'chance_top10': 0.169, 'mean_rank': 18.037, 'mean_pool': 36.343} 1s
+12:44:18 [sense_run] MASS cos all real {'n_signs': 108, 'mean_pct': 0.501, 'top1': 0.0, 'chance_top1': 0.008, 'top10': 0.065, 'chance_top10': 0.101, 'mean_rank': 59.861, 'mean_pool': 119.0} 3s
+12:44:18 [sense_run] mass run saved 384s
