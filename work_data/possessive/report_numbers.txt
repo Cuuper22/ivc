@@ -1,0 +1,53 @@
+distinct (site,text) non-tablet complete texts 1764; jar uses 733; jar last 583; jar followed 150
+   sign                      label                                                         shape  after_jar  texts_with_sign  share_after_jar median_face_mm2  n_area                         animals                                   sites              types     name_last_sign
+0   090                        man                          Person with two arms and two legs,          50               68             0.74           778.0      47  Bull1:J:10;Bull1:W:9;Bull1:S:9      Mohenjo-daro:34;Harappa:8;Lothal:3  SEAL:S:47;TAG:L:2    100:8;-:7;101:3
+1   400                       comb  Vertical line with small horizontal lines coming off one sid         16               75             0.21           258.0      10             :9;Bull1:I:3;Bult:1  Mohenjo-daro:10;Harappa:3;Kalibangan:1     SEAL:S:6;ROD:5  176:3;920:2;240:2
+2   001                     stroke                           Simple, half-height vertical stroke         14              110             0.13           504.0      14             :8;Bull1:W:4;Rhin:1    Mohenjo-daro:8;Harappa:5;Dholavira:1  SEAL:R:8;SEAL:S:6    -:3;405:2;443:1
+3   679                    table-X                                     An 'X' with a 'table' hat         10               13             0.77           713.0       9            Bull1:W:4;:3;Bull1:1                Mohenjo-daro:9;Harappa:1  SEAL:S:6;SEAL:R:4  240:2;798:1;575:1
+4   140            breasted person                  Person with round breasts and one raised arm          4               61             0.07          1676.0       4            Bull1:1;:1;Bull1:J:1  Mohenjo-daro:2;Chanhu-daro:1;Harappa:1  SEAL:S:3;SEAL:R:1  365:1;233:1;176:1
+5   565      x with vertical (565)  X with vertical connection on left two tips, right tips both          4                9             0.44           692.0       4      Bull1:J:2;Bull1:W:1;Buff:1                          Mohenjo-daro:4           SEAL:S:4    235:1;-:1;220:1
+6   061            reversed lambda  Simple lambda but reversed horizontally, and the leg may not          3               42             0.07           569.0       3                    :2;Bull1:W:1                Harappa:2;Mohenjo-daro:1  SEAL:R:2;SEAL:S:1  235:1;806:1;923:1
+7   550                     pincer  The 'pincer' motif. Right-pointing isocoles triangle on left          3               56             0.05           506.0       3          :1;Bull1:W:1;Bull1:L:1                 Mohenjo-daro:2;Lothal:1  SEAL:S:2;SEAL:R:1  443:1;808:1;220:1
+8   621           barred rectangle  Tall rectangle with vertical full height bar inside, and a h          3               15             0.20           732.0       3     T-M-T:1;Bull1:U:1;Bull1:W:1              Mohenjo-daro:2;Dholavira:1           SEAL:S:3  798:1;514:1;390:1
+9   151                     porter                                Person carrying two burdens,           2               48             0.04          1084.0       2             Bull1:W:1;Bull1:J:1            Chanhu-daro:1;Mohenjo-daro:1           SEAL:S:2        100:1;231:1
+10  031                          1                               One full-height vertical stroke          2              133             0.02           658.0       2             Bull1:L:1;Bull1:U:1            Chanhu-daro:1;Mohenjo-daro:1           SEAL:S:2                -:2
+11  063  lambda but reversed (063)  Simple lambda but reversed horizontally, and the leg may not          2                7             0.29           396.0       2                              :2                    Harappa:1;Nausharo:1           SEAL:R:2        918:1;176:1
+12  233                barred fish                      Fish with a horizontal line through body          2              108             0.02           877.0       2                Gaur:1;Bull1:W:1                 Lothal:1;Mohenjo-daro:1           SEAL:S:2        176:1;798:1
+13  170               caged leaves  Two leaves horizontally adjacent, with a small horizontal li          1                1             1.00           420.0       1                          Rhin:1                             Allahdino:1           SEAL:S:1                -:1
+14  892        bow and arrow (892)                                                 Bow and arrow          1               29             0.03           360.0       1                              :1                              Desalpur:1              TAG:1                -:1
+15  527            small box (527)  Small box with horizontal hatching, vertical lines coming fr          1               42             0.02                       0                             -:1                               Harappa:1             MISC:1              914:1
+pairs after jar [(('090', '400'), 3), (('140', '840'), 2), (('001', '004'), 2), (('140', '845'), 2), (('550', '527'), 2), (('170', '072'), 1), (('031', '590'), 1), (('892', '002'), 1), (('001', '354'), 1), (('001', '468'), 1), (('468', '806'), 1), (('061', '409'), 1), (('845', '407'), 1), (('001', '469'), 1), (('001', '472'), 1)]
+
+size by form (distinct site+text, seals with a measured face)
+                     n  n_area  median     q1      q3  meanlen
+cls                                                           
+X's man (jar 090)   48      46   758.2  476.9  1062.9      6.0
+jar 679             10       9   712.9  468.0  1089.0      6.3
+jar comb            10      10   257.6  201.0   405.1      4.5
+jar other           51      50   645.2  481.8   888.2      6.1
+jar stroke          10      10   504.1  336.5  1097.4      6.5
+of X (jar last)    538     491   645.2  429.5   861.4      5.3
+man vs owner area: median 758.2049999999999 645.16 n 46 491 MWU p 0.09855270764625321
+square seals man median 778.0 45 owner median 713.0 410 MWU p 0.4831
+Mohenjo-daro man median 778.0 33 owner median 653.0 327 MWU p 0.1807
+Harappa man median 524.0 8 owner median 691.0 91 MWU p 0.4839
+name length 1 man 724.0 11 owner 576.0 108 p 0.1758
+name length 2 man 471.0 9 owner 576.0 139 p 0.7482
+name length 3 man 853.0 15 owner 713.0 82 p 0.1928
+               size  median
+c2                         
+carrier          60   524.0
+comb (no jar)    37   503.0
+man (no jar)      6   607.0
+other             3   567.0
+spear           122   638.0
+
+name-bearing jar texts 695 {'owner': 559, 'servant': 53, 'other-rel:400': 18, 'other-rel:': 10, 'other-rel:679': 9, 'other-rel:140': 4, 'other-rel:061': 3, 'other-rel:550': 3, 'other-rel:565': 3, 'other-rel:621': 3, 'other-rel:151': 2, 'other-rel:063': 2, 'other-rel:233': 2, 'other-rel:527': 1, 'other-rel:232': 1, 'other-rel:368': 1, 'other-rel:845': 1, 'other-rel:555': 1, 'other-rel:632': 1, 'other-rel:515': 1, 'other-rel:411': 1, 'other-rel:520': 1, 'other-rel:832': 1, 'other-rel:932': 1, 'other-rel:374': 1, 'other-rel:503': 1, 'other-rel:436': 1, 'other-rel:165': 1, 'other-rel:224': 1, 'other-rel:904': 1, 'other-rel:746': 1, 'other-rel:686': 1, 'other-rel:045': 1, 'other-rel:481': 1, 'other-rel:240': 1, 'other-rel:159': 1, 'other-rel:066': 1}
+servants (named, complete) 53 owners 559
+exact-name pairs 58 distinct servants matched 13 place {'other site': 34, 'same site': 19, 'same area': 5}
+last-two pairs 53 place {'same site': 32, 'other site': 18, 'same area': 2, 'same house': 1}
+servant name also an owner seal elsewhere (any site, same site, n): (13, 8, 53)
+owner name also on another owner seal (any, same site, n): (159, 101, 559)
+servant name also on another servant seal: (6, 4, 53)
+multi-sign: servant->owner (5, 3, 42) owner->owner (66, 45, 401)
+same-site exact servant/owner matches real 8 null (owner names shuffled over owner sites) mean 9.2 max 12

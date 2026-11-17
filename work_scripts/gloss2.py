@@ -63,9 +63,11 @@ def label(s):
     if s == 'ALT': return 'unclear sign'
     if s in CNT: return countlabel(s)
     d = shapes().get(s) or ''
-    d = d.lower().split(',')[0].split(';')[0]
+    d = d.lower().split(',')[0].split(';')[0].split('.')[0]
     for w in ('simple ', 'classic '): d = d.replace(w, '')
-    d = ' '.join(d.split()[:4])
+    w = d.split()[:3]
+    while w and w[-1] in ('with', 'a', 'of', 'the', 'on', 'in', 'and', 'or', 'at', 'to', 'an', 'no', 'one', 'two', 'bottom', 'small', 'where', 'two'): w.pop()
+    d = ' '.join(w)
     return f'{d} ({s})' if d else f'sign {s}'
 
 
@@ -75,7 +77,8 @@ def countlabel(s):
 
 
 def plural(noun, n):
-    if n == 1 or noun.endswith(('fish', 'wheel-s')): return noun
+    if n == 1 or noun.endswith(('fish', 'wheel-s')) or '(' in noun or noun.startswith('sign '): return noun
+    if noun.endswith(('x', 's')): return noun + 'es'
     if noun.endswith(('man',)) and noun.split()[-1] == 'man': return noun[:-3] + 'men'
     return noun + 's'
 
@@ -99,8 +102,10 @@ def learn(d):
         if len(nm) >= 2:
             first[nm[0]] += 1; last[nm[-1]] += 1
             for s in nm: mult[s] += 1
-    crest = {s for s, k in first.items() if k >= 8 and k / mult[s] >= 0.6}
-    tag = {s for s, k in last.items() if k >= 8 and k / mult[s] >= 0.6}
+    crest = {s for s, k in first.items() if k >= 8 and k / mult[s] >= 0.4 and k > last[s]}
+    tag = {s for s, k in last.items() if k >= 8 and k / mult[s] >= 0.4 and k > first[s]}
+    crest |= {'231', '233', '235', '240'}     # marked fish signs: house crests (jobs/out/name_slot.md)
+    tag.discard('231'); tag.discard('233'); tag.discard('235'); tag.discard('240')
     both = crest & tag
     for s in both:
         (crest if first[s] >= last[s] else tag).discard(s)
@@ -168,6 +173,7 @@ def parse_face(x, lex, own=None):
         # relation noun = first free sign after the final jar; the rest is tail
         for q, i in enumerate(rest):
             if q == 0: R[i] = 'relation'; rel = x[i]
+            elif x[i] in RELATION and R[rest[q - 1]] == 'relation': R[i] = 'relation'; rel += '+' + x[i]
             else: R[i] = 'tail'
         # a free-sign run between two jars: a second name; keep as name
     else:
@@ -175,35 +181,51 @@ def parse_face(x, lex, own=None):
         free = [i for i in range(n) if R[i] is None]
         if free and x[free[-1]] in ENDINGS:
             R[free[-1]] = 'ending'; ending_kind = 'ending'; rel = x[free[-1]]
-    # 6. name = free signs left (before the ending); crest / self / tag
-    nm_idx = [i for i in range(n) if R[i] is None]
-    name = [x[i] for i in nm_idx]
-    if nm_idx:
-        m = len(nm_idx)
-        for q, i in enumerate(nm_idx):
-            s = x[i]
-            if x[i] in ('000', 'ALT'): R[i] = 'lost'
+    # 6. names = free signs, grouped by the jars that cut them; crest / self / tag inside each group
+    groups = []; cur = []
+    for i in range(n):
+        if R[i] is None: cur.append(i)
+        elif R[i] == 'poss':
+            if cur: groups.append(cur)
+            cur = []
+        elif cur and R[i] in ('relation', 'ending', 'tail', 'count', 'counted', 'load-count', 'opener') and False: pass
+    if cur: groups.append(cur)
+    for g in groups:
+        m = len(g)
+        for q, i in enumerate(g):
+            s_ = x[i]
+            if s_ in ('000', 'ALT'): R[i] = 'lost'
             elif m == 1: R[i] = 'self'
-            elif q == 0 and s in crest: R[i] = 'crest'
-            elif q == m - 1 and s in tag: R[i] = 'tag'
+            elif q == 0 and s_ in crest: R[i] = 'crest'
+            elif q == m - 1 and s_ in tag: R[i] = 'tag'
             else: R[i] = 'self'
-    return dict(roles=R, name=name, name_idx=nm_idx, ending_kind=ending_kind, relation=rel, jars=jars)
+    # the name that owns the relation: group just before the final jar (or the only group)
+    master = None
+    if jars:
+        for g in groups:
+            if g and g[-1] < jars[-1] and g[-1] > (jars[-2] if len(jars) > 1 else -1): master = g
+    elif groups: master = groups[0]
+    nm_idx = master or []
+    name = [x[i] for i in nm_idx]
+    names = [[x[i] for i in g] for g in groups]
+    return dict(roles=R, name=name, names=names, name_idx=nm_idx, ending_kind=ending_kind, relation=rel, jars=jars)
 
 
 def is_tight(x, r, lex):
-    """Every sign has a grammar role, the name has at most three signs, and the text ends in a licensed way."""
+    """Every sign has a grammar role, every name has at most four signs (crest + two selves + tag at the most),
+    at most two names (X of Y), no unexplained tail, and the text closes in a licensed way."""
     R = r['roles']
-    if 'lost' in R: return False
-    if len(r['name']) > 3: return False
-    if any(k in R for k in ('tail',)): return False
-    if r['jars']:
-        if len(r['jars']) > 1: return False
-        return True
-    if r['ending_kind'] == 'ending': return True
-    # no jar, no closing noun: fine if the face is only a counted phrase / load tag / opener+count
-    has_name = bool(r['name'])
-    if not has_name: return True
-    return False
+    if 'lost' in R or 'tail' in R: return False
+    if any(len(g) > 4 for g in r['names']): return False
+    if len(r['jars']) > 2: return False
+    if r['jars'] or r['ending_kind'] == 'ending': return True
+    if not r['names']: return True            # only counted phrases / load tag / opener
+    return len(x) <= 4 or any(k in R for k in ('count', 'counted', 'load-count')) and len(r['names'][0]) <= 4   # bare name, or name beside a counted phrase
+
+
+def is_strict(x, r):
+    """Stricter: names at most three signs (crest + self + tag), one jar at most."""
+    return is_tight(x, r, None) and all(len(g) <= 3 for g in r['names']) and len(r['jars']) <= 1
 
 
 def old_style_tight(R):
@@ -306,6 +328,21 @@ def sentence(x, r):
         elif role == 'ending': pieces.append(('end', label(x[k]))); k += 1
         elif role == 'tail': pieces.append(('tail', label(x[k]))); k += 1
         else: k += 1
+    # merge name pieces and counted phrases that sit in one run before a jar / ending into one bracketed name
+    merged = []; i = 0
+    while i < len(pieces):
+        if pieces[i][0] in ('name', 'np'):
+            j = i
+            while j < len(pieces) and pieces[j][0] in ('name', 'np'): j += 1
+            run = pieces[i:j]
+            if j < len(pieces) and pieces[j][0] in ('poss', 'end') and any(k == 'name' or True for k, _ in run):
+                items = []
+                for k_, t_ in run: items += t_ if k_ == 'name' else [t_]
+                merged.append(('name', items))
+            else: merged += run
+            i = j
+        else: merged.append(pieces[i]); i += 1
+    pieces = merged
     out = []; i = 0
     while i < len(pieces):
         kind, t = pieces[i]
@@ -323,7 +360,7 @@ def sentence(x, r):
             if i + 1 < len(pieces) and pieces[i + 1][0] == 'rel': out.append(f"Of-ending, {pieces[i + 1][1]}."); i += 2
             else: out.append('Of-ending.'); i += 1
         elif kind == 'np': out.append(t[0].upper() + t[1:] + '.'); i += 1
-        elif kind in ('rel', 'end', 'tail'): out.append(f'+{t}.'); i += 1
+        elif kind in ('rel', 'end', 'tail'): out.append(f'Then {t}.'); i += 1
         else: i += 1
     return ' '.join(out)
 
@@ -345,6 +382,7 @@ def main():
         r = parse_face(x, lex, own)
         res.append(r)
     d['tight2'] = [is_tight(x, r, lex) for x, r in zip(d.tok, res)]
+    d['strict2'] = [is_strict(x, r) for x, r in zip(d.tok, res)]
     d['old_style2'] = [old_style_tight(r['roles']) for r in res]
     d['template'] = [template(x, r) for x, r in zip(d.tok, res)]
     d['gloss'] = [sentence(x, r) for x, r in zip(d.tok, res)]
@@ -356,26 +394,26 @@ def main():
     d['obj'] = [object_id(i) for i in d['id']]
     # old parser for comparison
     lex1 = lexicon_from(d)
-    d['tight1'] = [ (is_parsed(gloss_text(x, lex1, f)) and
-                     sum(1 for r in gloss_text(x, lex1, f) if r == 'who') <= 2 and
-                     sum(1 for r in gloss_text(x, lex1, f) if r in ('opener','opener-strokes','count','amount','class','class-tail','title-phrase','cap','cap-selector','house','house-marker','fixed-ending')) * 2 > len(x))
-                   for x, f in zip(d.tok, d.flg)]
+    TEMPLATE = {'opener', 'opener-strokes', 'count', 'amount', 'class', 'class-tail', 'house', 'title-phrase', 'cap', 'cap-selector'}
+    def tight1(r):
+        return ('unknown' not in r and r.count('who') <= 2 and sum(q in TEMPLATE or q in ('house-marker',) for q in r) >= 0.5 * len(r))
+    d['tight1'] = [tight1(gloss_text(x, lex1, f)) for x, f in zip(d.tok, d.flg)]
     # tablet / multi-face records: faces of one object read together
     rec = {}
     for o, g in d.groupby('obj'):
         if len(g) > 1:
             rec[o] = ' | '.join(g.gloss)
     d['record'] = [rec.get(o, '') for o in d.obj]
-    out = d[['id', 'obj', 'cisi', 'site', 'type', 'reading', 'template', 'name', 'ending', 'relation', 'gloss', 'record', 'tight2', 'old_style2']].copy()
+    out = d[['id', 'obj', 'cisi', 'site', 'type', 'reading', 'template', 'name', 'ending', 'relation', 'gloss', 'record', 'tight2', 'strict2', 'old_style2']].copy()
     out.columns = ['id', 'object', 'cisi', 'site', 'type', 'reading_order_text', 'template', 'name_signs', 'ending_kind', 'relation_sign',
-                   'gloss', 'multi_face_record', 'tight', 'tight_old_rule']
+                   'gloss', 'multi_face_record', 'tight', 'strict', 'tight_old_rule']
     out.to_csv(f'{ROOT}/work_data/gloss2_all.csv', index=False)
     with open(f'{ROOT}/work_data/gloss2_lexicon.txt', 'w') as f:
         f.write('crest signs (first sign of multi-sign names): ' + ' '.join(sorted(lex['crest'])) + '\n')
         f.write('tag signs (last sign of multi-sign names): ' + ' '.join(sorted(lex['tag'])) + '\n')
     c = d[d.complete_txt].drop_duplicates('tok')
     print('distinct complete texts', len(c))
-    print('gloss2 tight', int(c.tight2.sum()), round(100 * c.tight2.mean(), 1), '| same-rule-as-parser-1 on gloss2 roles', round(100 * c.old_style2.mean(), 1),
+    print('strict (names<=3, one jar)', int(c.strict2.sum()), round(100*c.strict2.mean(),1)); print('gloss2 tight', int(c.tight2.sum()), round(100 * c.tight2.mean(), 1), '| same-rule-as-parser-1 on gloss2 roles', round(100 * c.old_style2.mean(), 1),
           '| parser 1 tight', int(c.tight1.sum()), round(100 * c.tight1.mean(), 1))
     for g, s in c.groupby('group'):
         print(g, len(s), round(100 * s.tight2.mean(), 1), round(100 * s.tight1.mean(), 1))
