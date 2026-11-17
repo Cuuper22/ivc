@@ -1,5 +1,7 @@
 # Who's Who of the Indus Cities
 
+Note (2026-11-17): the English and Dravidian words here are working labels for each sign's job; two decoy tests (jobs/out/decoy_test.md) showed the exact words are not established. See FRAME.md for what is measured.
+
 People and families of Mohenjo-daro, Harappa, Lothal, Dholavira and the other Indus cities (about 2600 to 1800 BC), read from their own seals.
 
 Every statement is marked `measured` (a number came out of the catalogue data and can be rerun) or `guess` (a reading we act on). Numbers, tests and scripts: `jobs/out/registry.md`; the tables are `work_data/registry/people.csv` (one row per person) and `houses.csv` (one row per family).

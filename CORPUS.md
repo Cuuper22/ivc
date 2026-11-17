@@ -1,5 +1,7 @@
 # The Indus corpus in English
 
+Note (2026-11-17): the English and Dravidian words here are working labels for each sign's job; two decoy tests (jobs/out/decoy_test.md) showed the exact words are not established. See FRAME.md for what is measured.
+
 ## Key (read this first)
 
 - **A seal** is a small stone or clay stamp with a few signs cut in mirror image; **a tablet, tag, pot, rod** and the rest are other objects that carry signs. Each side of an object with signs is one **face**, and this book reads one face at a time (5,679 faces in the Lipi catalogue).

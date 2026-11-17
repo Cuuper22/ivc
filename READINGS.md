@@ -1,5 +1,7 @@
 # Readings
 
+Note (2026-11-17): the English and Dravidian words here are working labels for each sign's job; two decoy tests (jobs/out/decoy_test.md) showed the exact words are not established. See FRAME.md for what is measured.
+
 Forty inscriptions read whole under the second sound list (`jobs/out/sound_list_v2.md`; script `work_scripts/sound_v2_readings.py`). Every sign in these texts is a number, one of the first values (jar, man, fish, spear, comb, carrier, staff-bearer, tree, three-headed person) or a value whose own prediction came true. Reading order = stored order reversed. Ranked by how many objects carry the exact text, then how many cities.
 
 How a seal reads: [holding or office stamp] [name: house + self + tag] [ending]. The jar *kuṭi* is "of the house of"; jar + man *kuṭi āḷ* is "agent of the house of"; spear *vēḷ*, carrier *kā* and comb *ciṟ* say what the named person is. Word meanings are guesses built on measured slots; DEDR entry numbers are in the sound list.
