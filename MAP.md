@@ -20,6 +20,9 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `measured` After `person-with-two-loads (154/158)` + `leaf-on-tree (806)` the next stored sign is one of 11 A-shaped variants (465-475): 23 of 23 on held-back Harappa texts, 6 of 6 at other sites.
 - `guess` `[A-variant] [leaf-on-tree] [load-carrier with jar head]` is a title with a graded or numbered slot: a carrier or porter of grade N, with the closing jar fused into the carrier's head.
 
+- `measured` Seal texts end in one of a handful of closing signs (jar, spear, plain person, comb, load-carrier). The mix of closers is the same at every site. Seal size goes with the closer: person 738 mm2, jar 645, spear 633, carrier 495, comb 420 (median face area).
+- `guess` The closing sign is the owner's class or office, the same system across the whole civilisation, and seal size follows rank. The slot before it is the house name. A seal reads: [opener] [who] [house] [class].
+
 ## Live leads, in order
 
 1. Name slot. `guess` The slot right before the closing jar holds a house or family name. Next: build the list of pre-jar signs and pre-jar pairs with the houses they belong to; check whether one house keeps one pre-jar sign across depth (a family over generations); check the same slot before the other closing signs.
