@@ -45,10 +45,10 @@ for n in EL['name']:
 print('of the earliest first signs, how many also lead a name at a later level:', sum(1 for s in firsts if later.get(s, 0) > 0), 'of', len(firsts), '; only at the earliest level:', [s for s in firsts if later.get(s, 0) == 0])
 # stacked tail shared by two earliest stones
 for t in ('240-255-435-690-740',):
-    hit = G[G.faces.apply(lambda f: t in '-'.join(max(f, key=len)))]
-    print(f'\nthe tail {t}: {len(hit)} seals in DK-G; by level {hit.lvl.astype(int).value_counts().sort_index().to_dict()}')
-    hit2 = T[T.faces.apply(lambda fs: any('255-435-690' in '-'.join(x) for x in fs))]
-    print(f'   255-435-690 anywhere: {len(hit2)} objects, sites {hit2.site.value_counts().to_dict()}, dated bins {hit2.bin.value_counts().to_dict()}')
+    sel = G[G.faces.apply(lambda f: t in '-'.join(max(f, key=len)))]
+    print(f'\nthe tail {t}: {len(sel)} seals in DK-G; by level {sel.lvl.astype(int).value_counts().sort_index().to_dict()}')
+    sel2 = T[T.faces.apply(lambda fs: any('255-435-690' in '-'.join(x) for x in fs))]
+    print(f'   255-435-690 anywhere: {len(sel2)} objects, sites {sel2.site.value_counts().to_dict()}, dated bins {sel2.bin.value_counts().to_dict()}')
 G.groupby('lvl').agg(n=('ending', 'size')).to_csv(f'{OUTE}/carry_by_level.csv')
 
 # ---- tests on the first catalogue's differences, and the same animal check on the second catalogue

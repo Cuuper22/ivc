@@ -52,7 +52,7 @@ pre = pre[~pre.index.duplicated()]
 pre['group'] = np.where(pre['rank'] == 0, 'Harappa/Dholavira before the cities', 'other Early Harappan label')
 
 
-def profile(tk):
+def sign_counts(tk):
     ks = [klass(a) for a in tk]
     return dict(n_signs=len([a for a in tk if a not in ('000', 'ALT')]), number=ks.count('number'), measure=ks.count('measure'),
                 house=ks.count('house'), goods=ks.count('goods'), other=ks.count('other'), lost=ks.count('lost'),
@@ -61,7 +61,7 @@ def profile(tk):
 
 rows = []
 for o, r in pre.iterrows():
-    p = profile(r.toks); p.update(obj=o, cisi=r.cisi, site=r.site, kind=r.kind, period=r.period if r.time == '-' else r.time, group=r.group, text=r.txt)
+    p = sign_counts(r.toks); p.update(obj=o, cisi=r.cisi, site=r.site, kind=r.kind, period=r.period if r.time == '-' else r.time, group=r.group, text=r.txt)
     rows.append(p)
 P = pd.DataFrame(rows)
 P['class'] = np.select([(P.number + P.measure > 0) & (P.house == 0) & (P.goods == 0) & (P.other == 0),

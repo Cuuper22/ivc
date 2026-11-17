@@ -238,4 +238,11 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `measured` House names beside goods: Bounty with grain words 17% against 5.7%; Kalam with store words 26% against 12.7%. Went against: Boxed-cotton, Grain-heap, Granary with their goods; same name on seal and tablet found near each other (three tries); one king house per city.
 - Note after the blind tests: house names in English are labels for crests; the crest identities and findspots are measured, the words on them are the soft layer.
 
+## Seventh pass: time test, merged table (from `jobs/out/sound_list_v7.md`)
+- `measured` Time test: of 122 strict and wide values with dated uses, 87 do their assigned job in every time bin they appear in; with jobs shuffled among values 39.2 do (P 0.001). Of 70 values with 3+ uses in all three bins, 52 hold in all three (shuffled 21.0). Hold rate early 86%, middle 77%, late 83%. Four fail everywhere (482, 575, 850, 717): the assigned job is wrong for those. This tests the job each sign does, which is the frame; it does not separate one word from another of the same job.
+- `measured` Fully read complete faces: strict 2,025 of 3,600, wide 2,369. Corpus grades over 5,679 faces: whole 2,644 (strict-only 2,284), part 847, damaged 2,079, none 109. `work_data/values_master4.csv`: 195 signs (160 strict, 28 wide, 7 testing) with separate English for name / count / end / front; `work_scripts/corpus_build3.py`; `CORPUS.md` regenerated.
+- `measured` Uncounted 705 inside a name sits at coast and abroad sites 14 of 52 against 9% (P 0.0002). 861 with its count in front is an opener (P 1e-25).
+- `guess` New words: 554 *kaḷam* threshing floor; 645 *kaḻañcu* gold weight; 460 Three-peaks; 792 royal; 921 *vil* bow; wide: 167 *kūli* wages, 165 *nāḷ* day, 130 threshing-floor men, 697 woven, 201 rain season. 127 (opens the cotton label found in Iraq) = *villavaṉ* bowman, 4 faces, untestable.
+- `measured` Went against: 530 as "Drummer", 575 as "Fort" (twice each). 19 of 20 new wide values came true only on a redesign that used facts already seen.
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.

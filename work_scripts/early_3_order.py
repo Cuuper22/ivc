@@ -86,9 +86,9 @@ seals = Z[Z.kind == 'seal'].groupby('stage').size().reindex(range(8), fill_value
 print('objects dated per stage:', dict(zip(STAGES, base.tolist())), '| seals:', seals.tolist())
 rows, firsts = [], []
 for lab, f, scope in FEATS:
-    hit = Z[Z.apply(f, axis=1)]
-    if scope == 'seal': hit = hit[hit.kind == 'seal']
-    cnt = hit.groupby('stage').size().reindex(range(8), fill_value=0)
+    sel = Z[Z.apply(f, axis=1)]
+    if scope == 'seal': sel = sel[sel.kind == 'seal']
+    cnt = sel.groupby('stage').size().reindex(range(8), fill_value=0)
     den = seals if scope == 'seal' else base
     first_seen = next((i for i in range(8) if cnt[i] >= 1), None)
     first_solid = next((i for i in range(8) if cnt[i] >= 3 and den[i] > 0 and cnt[i] / den[i] >= 0.01), None)
@@ -96,7 +96,7 @@ for lab, f, scope in FEATS:
                first_solid=STAGES[first_solid] if first_solid is not None else '-', total=int(cnt.sum()))
     rows.append(row)
     if first_seen is not None:
-        o = hit.sort_values('rank').iloc[0]
+        o = sel.sort_values('rank').iloc[0]
         firsts.append(dict(feature=lab, first_seen=STAGES[first_seen], object=o.cisi, site=o.site, kind=o.kind, dating=o.time, text=' | '.join('-'.join(t) for t in o.faces)))
 O = pd.DataFrame(rows); O.to_csv(f'{OUTE}/order_of_appearance.csv', index=False)
 pd.DataFrame(firsts).to_csv(f'{OUTE}/order_first_objects.csv', index=False)
@@ -110,9 +110,9 @@ for site in ['Harappa', 'Mohenjo-daro']:
     print(f'\n{site} ONLY: objects per stage', s.groupby('stage').size().reindex(range(8), fill_value=0).tolist())
     line = []
     for lab, f, scope in FEATS:
-        hit = s[s.apply(f, axis=1)]
-        if scope == 'seal': hit = hit[hit.kind == 'seal']
-        cnt = hit.groupby('stage').size().reindex(range(8), fill_value=0)
+        sel = s[s.apply(f, axis=1)]
+        if scope == 'seal': sel = sel[sel.kind == 'seal']
+        cnt = sel.groupby('stage').size().reindex(range(8), fill_value=0)
         fs = next((i for i in range(8) if cnt[i] >= 1), None)
         line.append(f'{lab[:40]}: first {STAGES[fs] if fs is not None else "-"} ({cnt.tolist()})')
     print('\n'.join('  ' + l for l in line))

@@ -1143,3 +1143,168 @@ Added by `work_scripts/sound_v6_readings.py` (sixth list: `jobs/out/sound_list_v
 - Sound: *paṉṉiru paṉṉiru kavar -iṉ mīmīn maka kuṭi*
 - Word by word: `055` paṉṉiru "dozen" · `055` paṉṉiru "dozen" · `415` kavar "branch (of a line)" · `060` -iṉ "of (joiner after an opener)" · `240` mīmīn "High-star (house crest)" · `773` maka "child of (variant of 752/760)" · `740` kuṭi "house of"
 
+## Twenty more: texts opened by the seventh pass
+
+Added by `work_scripts/sound_v7_readings.py` (seventh list: `jobs/out/sound_list_v7.md`, `work_data/values_master4.csv`). Every text below read whole for the first time in this pass. New words they rest on: kar̤añcu "gold weight" (645), aṭaimīn "Shut-in-fish" (222), er̤uvar "the Seven" (048), kūli "wages" (167), toṇṭu "nine" (027), ēvalaṉ "attendant" (098), nāḷ "day" (165), kūṭu "store" (603), aracu "royal" (792), kaḷam "threshing floor" (554), vil "bow" (921), mukkōṭu "Three-peaks" (460), ney "woven" (697), aṭai "stored" (621), kār "rain season" (201), kayal "carp" (243); and the measure rule of this pass: an uncounted kalam inside a name is "Ship" (706 in reading 159). A dagger (†) marks a word under test, a double dagger (‡) a word whose fact was seen while choosing. Reading order = stored order reversed. "New text" = second-catalogue (Mahadevan 1977) text with no partner in the first catalogue.
+
+## 141. Agent of the Bamboo-star High-star house of the goldsmith's gold-weight chest.
+
+- Objects: M-2026, M-464, M-465, M-466, M-467, M-1415, M-1416; 7 objects carry this exact text (TAB:B - 5, TAB:B Faience 2)
+- Site and findspot: Mohenjo-daro (DK-) x5, Mohenjo-daro (DKG. (S)) x2
+- Signs: `104-645-590-235-240-740-090`
+- Sound: *taṭṭāṉ kar̤añcu peṭṭi vēymīn mīmīn kuṭi āḷ*
+- Word by word: `104` taṭṭāṉ "goldsmith (person with the seed-weight at his foot)" · `645` kar̤añcu "a gold weight (counted)" · `590` peṭṭi "chest" · `235` vēymīn "Bamboo-star (Punarvasu)" · `240` mīmīn "High-star (house crest)" · `740` kuṭi "house of" · `090` āḷ "manager"
+
+## 142. Of the Bamboo-star Scabbard-fish Shut-in-fish house.
+
+- Objects: M-572, M-574, M-1521, M-1522; 4 objects carry this exact text (TAB:C Copper 4)
+- Site and findspot: Mohenjo-daro (DK-) x3, Mohenjo-daro (--) x1
+- Picture: a rhinoceros
+- Signs: `235-233-222-740`
+- Sound: *vēymīn vāḷai aṭaimīn kuṭi*
+- Word by word: `235` vēymīn "Bamboo-star (Punarvasu)" · `233` vāḷai "scabbard-fish (a counted fish good; also a crest "Bright-star" vāḷmīn)" · `222` aṭaimīn "Shut-in-fish (crest)" · `740` kuṭi "house of"
+
+## 143. Two shares: of the house of the Seven.
+
+- Objects: L-161, L-162, L-163, L-164, L-165, L-166, L-167, L-168 ...; 11 objects carry this exact text (TAG:B Clay 9, TAG:B - 1, SEAL:S Steatite 1)
+- Site and findspot: Lothal (--) x9, Lothal (SRG 3GX 10) x1, Mohenjo-daro (DKG. (S)) x1
+- Signs: `817-002-048-740`
+- Sound: *kāṇi iru er̤uvar kuṭi*
+- Word by word: `817` kāṇi "share, holding" · `002` iru "two" · `048` er̤uvar‡ "the Seven (a house name)" · `740` kuṭi "house of"
+
+## 144. Kalam as wages.
+
+- Objects: H-1166, H-1878, H-2049, M-2020, M-2020, M-1397; 6 objects carry this exact text (TAB:B Clay 3, TAB:I Steatite 2, TAB:B Faience 1)
+- Site and findspot: Mohenjo-daro (DKG. (S)) x2, Harappa (FTrench I) x1, Harappa (E-) x1, Harappa (ETrench 54) x1
+- Signs: `705-167`
+- Sound: *kalam kūli*
+- Word by word: `705` kalam "grain measure (a kalam); ship where it stands uncounted before the sail 500" · `167` kūli‡ "wages, pay, freight (closes kalam chits)"
+
+## 145. Junior of the Nine-Two house.
+
+- Objects: H-2208, H-2207, H-2204, H-303, H-917; 5 objects carry this exact text (TAB:I Steatite 5)
+- Site and findspot: Harappa (ETrench 10W/11) x3, Harappa (FTrench VI) x2
+- Signs: `027-032-740-400`
+- Sound: *toṇṭu iru kuṭi ciṟ*
+- Word by word: `027` toṇṭu‡ "Nine (a spelled number in a name)" · `032` iru "two" · `740` kuṭi "house of" · `400` ciṟ "junior"
+
+## 146. The junior attendant.
+
+- Objects: H-1331, H-2034, H-2033, H-347, H-1332; 5 objects carry this exact text (TAB:I Steatite 5)
+- Site and findspot: Harappa (AB-) x1, Harappa (EC) x1, Harappa (ETrench 11) x1, Harappa (FTrench I) x1
+- Signs: `098-400`
+- Sound: *ēvalaṉ ciṟ*
+- Word by word: `098` ēvalaṉ‡ "servant, attendant (raised arm: at command)" · `400` ciṟ "junior"
+
+## 147. Three cups; month and day.
+
+- Objects: M-511, M-512; 2 objects carry this exact text (TAB:C Copper 2)
+- Site and findspot: Mohenjo-daro (DKG. (S)) x2
+- Signs: `003-700-900-165`
+- Sound: *mū nāḻi? tiṅkaḷ nāḷ*
+- Word by word: `003` mū "three" · `700` nāḻi? "cup measure" · `900` tiṅkaḷ "month (counted)" · `165` nāḷ‡ "day (after the month: a date)"
+
+## 148. Of the Assembly: of the High-star Store house.
+
+- Objects: H-1138, H-1846, H-1137; 3 objects carry this exact text (TAB:B Faience 2, TAB:B - 1)
+- Site and findspot: Harappa (--) x2, Harappa (ETrench 10W/11) x1
+- Signs: `692-060-240-603-740`
+- Sound: *kūṭṭam -iṉ mīmīn kūṭu kuṭi*
+- Word by word: `692` kūṭṭam "assembly, council (an office opening)" · `060` -iṉ "of (joiner after an opener)" · `240` mīmīn "High-star (house crest)" · `603` kūṭu‡ "grain receptacle, pen" · `740` kuṭi "house of"
+
+## 149. Agent of the Royal house.
+
+- Objects: H-2143; 2 objects carry this exact text (TAB:I Steatite 1, TAB:I - 1)
+- Site and findspot: Harappa (F-) x1, Harappa (--) x1
+- Signs: `792-740-090`
+- Sound: *aracu kuṭi āḷ*
+- Word by word: `792` aracu "royal (house name; variant of 384/388)" · `740` kuṭi "house of" · `090` āḷ "manager"
+
+## 150. Two quarters: the threshing-floor guard.
+
+- Objects: H-1146, H-833; 2 objects carry this exact text (TAB:B - 1, TAB:B Faience 1)
+- Site and findspot: Harappa (--) x1, Harappa (D-) x1
+- Signs: `820-002-554-526`
+- Sound: *kāl iru kaḷam kāval*
+- Word by word: `820` kāl "quarter-share" · `002` iru "two" · `554` kaḷam "threshing floor (kaḷam kāval: threshing-floor guard)" · `526` kāval "guard (variant of 527)"
+
+## 151. High-star, chief of bow and arrow.
+
+- Object: H-64; 1 object carry this exact text (SEAL:S Steatite 1)
+- Site and findspot: Harappa (FTrench I) x1
+- Signs: `240-921-070-520`
+- Sound: *mīmīn vil ampu vēḷ*
+- Word by word: `240` mīmīn "High-star (house crest)" · `921` vil "bow (vil-ampu vēḷ: chief of bow and arrow)" · `070` ampu "arrow" · `520` vēḷ "chief"
+
+## 152. Horn of Three-peaks, chief.
+
+- Object: Lipi row 131.1; 1 object carry this exact text (SEAL:S Steatite 1)
+- Site and findspot: Dholavira (--) x1
+- Signs: `495-460-520`
+- Sound: *kompu mukkōṭu vēḷ*
+- Word by word: `495` kompu "horn (horn-blower; a name word)" · `460` mukkōṭu "Three-peaks" · `520` vēḷ "chief"
+
+## 153. Of the Assembly: of the Threshing-floor house of the Descendant of Branch-Star.
+
+- Object: H-133; 1 object carry this exact text (SEAL:R Steatite 1)
+- Site and findspot: Harappa (FTrench IV+V) x1
+- Signs: `692-060-798-415-220-554-740`
+- Sound: *kūṭṭam -iṉ maru- kavar mīn kaḷam kuṭi*
+- Word by word: `692` kūṭṭam "assembly, council (an office opening)" · `060` -iṉ "of (joiner after an opener)" · `798` maru- "descendant, clan member" · `415` kavar "branch (of a line)" · `220` mīn "star" · `554` kaḷam "threshing floor (kaḷam kāval: threshing-floor guard)" · `740` kuṭi "house of"
+
+## 154. Keeper of the Produce-Descendant Tax house: woven cotton.
+
+- Objects: M-494, M-495; 2 objects carry this exact text (TAB:B Clay 2)
+- Site and findspot: Mohenjo-daro (DKE) x1, Mohenjo-daro (DKG. (S)) x1
+- Signs: `838-798-176-740-151-697-390`
+- Sound: *viḷai maru- iṟai kuṭi kā ney parutti*
+- Word by word: `838` viḷai "produce (variant of 806)" · `798` maru- "descendant, clan member" · `176` iṟai "tax, levy" · `740` kuṭi "house of" · `151` kā "keeper" · `697` ney‡ "weaving, woven (with cotton)" · `390` parutti "cotton (cotton_house.md; base value)"
+
+## 155. Two shares: the Star chief; stored.
+
+- Object: M-1709; 1 object carry this exact text (SEAL:S Steatite 1)
+- Site and findspot: Mohenjo-daro (DKB) x1
+- Signs: `817-002-220-520-621`
+- Sound: *kāṇi iru mīn vēḷ aṭai*
+- Word by word: `817` kāṇi "share, holding" · `002` iru "two" · `220` mīn "star" · `520` vēḷ "chief" · `621` aṭai‡ "shut in, stored, pledged (a closing word)"
+
+## 156. Two quarters: sheaves of cotton, stored.
+
+- Object: M-1675; 1 object carry this exact text (SEAL:S Steatite 1)
+- Site and findspot: Mohenjo-daro (DKG) x1
+- Signs: `820-002-844-390-621`
+- Sound: *kāl iru cūṭu parutti aṭai*
+- Word by word: `820` kāl "quarter-share" · `002` iru "two" · `844` cūṭu "bundle of sheaves (variant of 845)" · `390` parutti "cotton (cotton_house.md; base value)" · `621` aṭai‡ "shut in, stored, pledged (a closing word)"
+
+## 157. In the rain season: of the Two-Boxed-cotton house.
+
+- Object: M-1739; 1 object carry this exact text (SEAL:S Steatite 1)
+- Site and findspot: Mohenjo-daro (HRA) x1
+- Signs: `201-060-032-590-390-740`
+- Sound: *kār -iṉ iru peṭṭi parutti kuṭi*
+- Word by word: `201` kār‡ "the rain season and its crop (a date head before -iṉ)" · `060` -iṉ "of (joiner after an opener)" · `032` iru "two" · `590` peṭṭi "chest" · `390` parutti "cotton (cotton_house.md; base value)" · `740` kuṭi "house of"
+
+## 158. Three lots of two gold weights; the chest.
+
+- Objects: H-2149, H-941; 2 objects carry this exact text (TAB:I Steatite 2)
+- Site and findspot: Harappa (ETrench 11) x1, Harappa (FGranery) x1
+- Signs: `003-645-032-590`
+- Sound: *mū kar̤añcu iru peṭṭi*
+- Word by word: `003` mū "three" · `645` kar̤añcu "a gold weight (counted)" · `032` iru "two" · `590` peṭṭi "chest"
+
+## 159. Forge, Ship, Carp: the king's servant.
+
+- Object: M-25; 1 object carry this exact text (SEAL:S - 1)
+- Site and findspot: Mohenjo-daro (--) x1
+- Signs: `595-706-243-617`
+- Sound: *paṭṭaṟai kalam kayal ūḻiyaṉ*
+- Word by word: `595` paṭṭaṟai "forge, smithy" · `706` kalam "grain measure (variant of 705)" · `243` kayal‡ "carp (a crest fish)" · `617` ūḻiyaṉ "(king's) servant"
+
+## 160. In the month, first ward: five banners; kalam as wages.
+
+- Object: H-175; 1 object carry this exact text (TAB:B Clay 1)
+- Site and findspot: Harappa (F-) x1
+- Signs: `920-060-741-005-368-705-167`
+- Sound: *tiṅkaḷ? -iṉ orukuṭi ai koṭi kalam kūli*
+- Word by word: `920` tiṅkaḷ? "month (head of a date formula)" · `060` -iṉ "of (joiner after an opener)" · `741` orukuṭi "first ward" · `005` ai "five" · `368` koṭi "banner (of a line)" · `705` kalam "grain measure (a kalam); ship where it stands uncounted before the sail 500" · `167` kūli‡ "wages, pay, freight (closes kalam chits)"
+

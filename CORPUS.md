@@ -146,7 +146,7 @@ Per site (faces):
 - `176-740` *iṟai kuṭi* : Of the Tax house.  (2 copies: 702.1, 719.1)
 - `220` *mīn* : Star.  (2 copies: 984.1, 4108.1)
 - `540` *paṟai* : Rice measure.  (2 copies: 3913.1, 4094.1)
-- `540-540` *paṟai paṟai* : Rice measure-Rice measure.  (2 copies: 1015.1, 1028.1)
+- `540-540` *paṟai paṟai* : Two rice measures.  (2 copies: 1015.1, 1028.1)
 - `700-033` *nāḻi? mū* : Three cups.  (2 copies: 701.1, 717.1)
 - `740` *kuṭi* : Of the house.  (2 copies: 327.1, 4131.1)
 - `001-033-415-175-740` *oru mū kavar iṟai kuṭi* : Of the Four-Branch-Tax house.  (718.1)
@@ -173,9 +173,9 @@ Per site (faces):
 - `382-220-016` *aracu mīn āṟu* : King; Six Star.  (715.1)
 - `408-003` *kiḷai mū* : Three lots.  (625.1)
 - `413` *nel* : Grain.  (440.1)
-- `495-817` *kompu kāṇi* : Horn-Share.  (700.1)
+- `495-817` *kompu kāṇi* : Horn, share.  (700.1)
 - `550` *vāy* : Gate.  (335.1)
-- `590-697` *peṭṭi ney* : Chest-Woven.  (193.1)
+- `590-697` *peṭṭi ney* : Chest, woven.  (193.1)
 - `692` *kūṭṭam* : Assembly.  (201.1)
 - `697-031` *ney oru* : One woven.  (969.1)
 - `700-031` *nāḻi? oru* : One cup.  (3912.1)
@@ -369,9 +369,9 @@ Per site (faces):
 - `700-032` *nāḻi? iru* : Two cups.  (18 copies: 409.1, 504.1, 557.1, 570.1, 599.1, 923.1, 1049.2, 1243.2, 1343.2, 1378.2, 1668.1, 1670.1, 1685.2, 1702.2, 1706.2, 1725.1, 1735.2, 1736.2)
 - `415-220-520` *kavar mīn vēḷ* : Branch-Star, chief.  (16 copies: 221.1, 481.1, 816.1, 841.1, 848.1, 913.1, 913.2, 1341.1, 1366.1, 1383.1, 1677.2, 1818.1, 1819.2, 1820.1, 1821.2, 4069.1)
 - `700-034` *nāḻi? nāl* : Four cups.  (14 copies: 396.1, 468.1, 488.1, 549.1, 762.1, 815.1, 831.1, 938.1, 1377.2, 1739.2, 1774.2, 1813.1, 1818.2, 1825.2)
-- `413-892-824` *nel vil vilai* : Grain-Sale-Price.  (11 copies: 295.1, 438.2, 459.1, 472.2, 556.1, 1323.1, 1677.1, 1678.1, 1787.1, 1788.1, 1864.1)
+- `413-892-824` *nel vil vilai* : Grain, sale, price.  (11 copies: 295.1, 438.2, 459.1, 472.2, 556.1, 1323.1, 1677.1, 1678.1, 1787.1, 1788.1, 1864.1)
 - `255-435-156-400` *mutal kōl kā ciṟ* : Chief-Rod-Keeper, junior.  (10 copies: 234.2, 390.2, 647.1, 671.2, 1321.2, 1377.1, 1653.1, 1778.2, 1779.2, 4052.1)
-- `413-575-335-711-033-700` *nel kōṭṭai ūr vaḷḷam mū nāḻi?* : Grain-Great measure-Town-Vaḷḷam measure; Three cups.  (10 copies: 300.2, 581.2, 653.2, 687.2, 689.2, 867.2, 916.2, 1236.2, 1665.2, 1666.2)
+- `413-575-335-711-033-700` *nel kōṭṭai ūr vaḷḷam mū nāḻi?* : Grain, great measure, town, vaḷḷam measure; Three cups.  (10 copies: 300.2, 581.2, 653.2, 687.2, 689.2, 867.2, 916.2, 1236.2, 1665.2, 1666.2)
 - `347-741-176-740-090` *kalai orukuṭi iṟai kuṭi āḷ* : Manager of the Stag-First-ward-Tax house.  (8 copies: 677.1, 800.1, 807.1, 842.1, 880.1, 882.1, 884.1, 886.1)
 - `840-032-740` *iṇai iru kuṭi* : Of the Peer-Two house.  (8 copies: 535.1, 535.2, 694.1, 1215.1, 1215.2, 1328.1, 1625.1, 1715.2)
 - `137-400` *vēḷāḷaṉ ciṟ* : Cultivator, junior.  (7 copies: 392.2, 598.2, 644.1, 830.2, 1246.2, 1853.1, 5396.1)
@@ -381,16 +381,16 @@ Per site (faces):
 - `416-861-002` *turumpu kāṇi iru* : Grain-heap; Two shares.  (6 copies: 476.2, 488.2, 518.2, 621.1, 665.2, 1792.1)
 - `605-760-740-400` *kutir maka kuṭi ciṟ* : Junior of the child of Granary house.  (6 copies: 266.1, 1309.1, 1762.1, 1763.1, 1764.1, 1765.1)
 - `742` *irukuṭi* : Second-ward house.  (6 copies: 3980.1, 3980.2, 3980.3, 4409.1, 4409.2, 4409.3)
-- `817-368-690` *kāṇi koṭi piṇai* : share: Banner-Bound.  (6 copies: 405.1, 1054.1, 1262.1, 1322.1, 3976.1, 4935.1)
+- `817-368-690` *kāṇi koṭi piṇai* : share: Banner, bound.  (6 copies: 405.1, 1054.1, 1262.1, 1322.1, 3976.1, 4935.1)
 - `027-032-740-400` *toṇṭu iru kuṭi ciṟ* : Junior of the Nine-Two house.  (5 copies: 549.2, 630.2, 659.2, 1325.1, 1797.2)
 - `098-400` *ēvalaṉ ciṟ* : Attendant, junior.  (5 copies: 281.1, 520.1, 797.1, 1367.1, 4082.1)
 - `240-482-752-740` *mīmīn kōṭukāṇi maka kuṭi* : Of the High-star child of Hill-share house.  (5 copies: 1023.1, 1230.1, 1231.1, 1232.1, 1637.2)
 - `240-705-033-550-525-400` *mīmīn kalam mū vāy kāval ciṟ* : High-star-Gate-Guard, junior (allowance: three kalam).  (5 copies: 512.2, 635.1, 867.1, 916.1, 1666.1)
 - `465-806-158` *(n) viḷai kā* : N loads of produce, carried by the porter.  (5 copies: 1223.1, 1626.1, 1628.1, 3965.1, 3966.1)
-- `590-705-868` *peṭṭi kalam araikkāṇi* : Chest-Kalam-Half-share.  (5 copies: 234.1, 532.1, 647.2, 1778.1, 1781.1)
-- `590-706-868` *peṭṭi kalam araikkāṇi* : Chest-Kalam-Half-share.  (5 copies: 390.1, 671.1, 1321.1, 1779.1, 4052.2)
+- `590-705-868` *peṭṭi kalam araikkāṇi* : Chest, half a kalam.  (5 copies: 234.1, 532.1, 647.2, 1778.1, 1781.1)
+- `590-706-868` *peṭṭi kalam araikkāṇi* : Chest, half a kalam.  (5 copies: 390.1, 671.1, 1321.1, 1779.1, 4052.2)
 - `617-892-740-400` *ūḻiyaṉ vil kuṭi ciṟ* : Junior of the King's servant-Sale house.  (5 copies: 681.1, 897.1, 1256.1, 1735.1, 1736.1)
-- `900-368` *tiṅkaḷ koṭi* : Month-Banner.  (5 copies: 732.2, 1329.1, 1807.2, 1808.2, 1809.2)
+- `900-368` *tiṅkaḷ koṭi* : Month, banner.  (5 copies: 732.2, 1329.1, 1807.2, 1808.2, 1809.2)
 - `176-156` *iṟai kā* : Tax, keeper.  (4 copies: 772.2, 773.2, 890.1, 895.1)
 - `220` *mīn* : Star.  (4 copies: 250.1, 553.2, 1767.1, 1850.1)
 - `235-240-740-090` *vēymīn mīmīn kuṭi āḷ* : Manager of the Bamboo-star-High-star house.  (4 copies: 574.1, 666.1, 902.1, 904.1)
@@ -400,7 +400,7 @@ Per site (faces):
 - `033-033-520` *mū mū vēḷ* : Six chiefs.  (3 copies: 628.2, 831.2, 876.2)
 - `061-255-740` *kāl mutal kuṭi* : Of the Quarter-Chief house.  (3 copies: 840.1, 1327.2, 1801.2)
 - `090-400` *āḷ ciṟ* : Manager, junior.  (3 copies: 417.1, 1308.1, 4597.1)
-- `125-700` *vēṭṭuvaṉ nāḻi?* : Hunter-Cup.  (3 copies: 658.3, 1776.2, 4031.2)
+- `125-700` *vēṭṭuvaṉ nāḻi?* : Hunter, cup.  (3 copies: 658.3, 1776.2, 4031.2)
 - `140-001-031-740` *ammai oru oru kuṭi* : Of the Lady-Two house.  (3 copies: 371.2, 383.2, 400.2)
 - `171-032-031-240-636-740-400` *niṟai iru oru mīmīn pal kuṭi ciṟ* : Junior of the High-star-Many house (allowance: three full measures).  (3 copies: 1323.2, 1787.2, 1864.2)
 - `231-798-176-740` *orumīn maru- iṟai kuṭi* : Of the First-star-Descendant-Tax house.  (3 copies: 1206.1, 1604.1, 1605.1)
@@ -413,10 +413,10 @@ Per site (faces):
 - `503-016-740-400` *malai āṟu kuṭi ciṟ* : Junior of the Hill-Six house.  (3 copies: 737.1, 1614.1, 1615.1)
 - `679-840-032-740` *kaṭṭil iṇai iru kuṭi* : Of the Throne-Peer-Two house.  (3 copies: 1262.2, 3976.2, 4935.2)
 - `692-060-240-603-740` *kūṭṭam -iṉ mīmīn kūṭu kuṭi* : Assembly: of the High-star-Store house.  (3 copies: 198.1, 686.2, 3975.1)
-- `705-167` *kalam kūli* : Kalam-Wages.  (3 copies: 250.2, 377.2, 389.1)
-- `706-167` *kalam kūli* : Kalam-Wages.  (3 copies: 1010.1, 1035.1, 1227.2)
+- `705-167` *kalam kūli* : Kalam, wages.  (3 copies: 250.2, 377.2, 389.1)
+- `706-167` *kalam kūli* : Kalam, wages.  (3 copies: 1010.1, 1035.1, 1227.2)
 - `717-740-400` *aṭi kuṭi ciṟ* : Junior of the Servant house.  (3 copies: 427.2, 905.1, 1212.1)
-- `745-700` *mukuṭi nāḻi?* : Third-ward house-Cup.  (3 copies: 1023.2, 1637.1, 1639.2)
+- `745-700` *mukuṭi nāḻi?* : Third-ward house, cup.  (3 copies: 1023.2, 1637.1, 1639.2)
 - `798-415-220-740-400` *maru- kavar mīn kuṭi ciṟ* : Junior of the Descendant-Branch-Star house.  (3 copies: 1234.1, 1641.1, 1659.1)
 - `817-002` *kāṇi iru* : two shares.  (3 copies: 1314.1, 1315.1, 1769.1)
 - `817-002-240-904-740` *kāṇi iru mīmīn irutiṅkaḷ kuṭi* : two shares: of the High-star-Dark-moon house.  (3 copies: 280.1, 1602.1, 3959.1)
@@ -432,28 +432,28 @@ Per site (faces):
 - `033-700-125` *mū nāḻi? vēṭṭuvaṉ* : Three cups; Hunter.  (2 copies: 498.1, 1271.2)
 - `034` *nāl* : Four.  (2 copies: 879.1, 1269.2)
 - `036-700` *āṟu nāḻi?* : Six cups.  (2 copies: 375.1, 1692.1)
-- `091-368` *iruvar koṭi* : The pair-Banner.  (2 copies: 654.2, 774.2)
+- `091-368` *iruvar koṭi* : The pair, banner.  (2 copies: 654.2, 774.2)
 - `140-061-740-400` *ammai kāl kuṭi ciṟ* : Junior of the Lady-Quarter house.  (2 copies: 382.2, 921.2)
 - `171-035-415` *niṟai ai kavar* : Five full measures; Branch.  (2 copies: 1250.1, 1692.2)
 - `175-176-100-740-400` *iṟai iṟai mutu kuṭi ciṟ* : Junior of the Tax-Tax-Elder house.  (2 copies: 494.1, 1636.1)
 - `176-100-740` *iṟai mutu kuṭi* : Of the Tax-Elder house.  (2 copies: 1213.1, 3932.2)
 - `176-336-740-400` *iṟai ūr kuṭi ciṟ* : Junior of the Tax-Town house.  (2 copies: 1362.1, 1774.1)
 - `220-032-590-690` *mīn iru peṭṭi piṇai* : Star; Two chests; Bound.  (2 copies: 902.2, 904.2)
-- `220-142-590-455` *mīn kō peṭṭi ampu* : Star-King-Chest-Arrow.  (2 copies: 491.1, 589.1)
+- `220-142-590-455` *mīn kō peṭṭi ampu* : Star, king, chest, arrow.  (2 copies: 491.1, 589.1)
 - `220-440-154-400` *mīn koḷ kā ciṟ* : Star-Received-Keeper, junior.  (2 copies: 220.1, 1653.2)
 - `220-520` *mīn vēḷ* : Star, chief.  (2 copies: 282.2, 1351.1)
-- `220-550-526` *mīn vāy kāval* : Star-Gate-Guard.  (2 copies: 1364.1, 1378.1)
+- `220-550-526` *mīn vāy kāval* : Star, gate, guard.  (2 copies: 1364.1, 1378.1)
 - `222-740-151` *aṭaimīn kuṭi kā* : Keeper of the Shut-in-fish house.  (2 copies: 508.2, 509.2)
 - `226-400` *kūṭumīn ciṟ* : Fish-crate, junior.  (2 copies: 815.2, 1771.1)
 - `231-176-740-565` *orumīn iṟai kuṭi maṟavaṉ* : Warrior of the First-star-Tax house.  (2 copies: 397.2, 418.2)
-- `233-550-526` *vāḷai vāy kāval* : Scabbard-fish-Gate-Guard.  (2 copies: 945.2, 1845.2)
+- `233-550-526` *vāḷai vāy kāval* : Scabbard-fish, gate, guard.  (2 copies: 945.2, 1845.2)
 - `235-590-390-740` *vēymīn peṭṭi parutti kuṭi* : Of the Bamboo-star-Boxed-cotton house.  (2 copies: 1741.1, 3967.1)
 - `240-100-740-400` *mīmīn mutu kuṭi ciṟ* : Junior of the High-star-Elder house.  (2 copies: 406.2, 1276.1)
 - `240-176-740-400` *mīmīn iṟai kuṭi ciṟ* : Junior of the High-star-Tax house.  (2 copies: 746.1, 753.2)
 - `240-904-740` *mīmīn irutiṅkaḷ kuṭi* : Of the High-star-Dark-moon house.  (2 copies: 316.1, 1672.2)
 - `255-033` *mutal mū* : Three chiefs.  (2 copies: 162.2, 310.2)
 - `255-435-690-740` *mutal kōl piṇai kuṭi* : Of the Chief-Rod-Ally house.  (2 copies: 516.2, 938.2)
-- `413-575-335-711-033` *nel kōṭṭai ūr vaḷḷam mū* : Grain-Great measure-Town; Three vaḷḷam measures.  (2 copies: 561.2, 742.2)
+- `413-575-335-711-033` *nel kōṭṭai ūr vaḷḷam mū* : Grain, great measure, town; Three vaḷḷam measures.  (2 copies: 561.2, 742.2)
 - `413-575-335-740-032-700` *nel kōṭṭai ūr kuṭi iru nāḻi?* : Of the Grain-Great measure-Town house; Two cups.  (2 copies: 370.2, 1700.2)
 - `415-100-740` *kavar mutu kuṭi* : Of the Branch-Elder house.  (2 copies: 459.2, 1733.3)
 - `415-100-740-090-400` *kavar mutu kuṭi āḷ ciṟ* : Manager of the Branch-Elder house; Junior.  (2 copies: 811.1, 1221.1)
@@ -474,7 +474,7 @@ Per site (faces):
 - `792-740-090` *aracu kuṭi āḷ* : Manager of the Royal house.  (2 copies: 740.1, 752.2)
 - `798-240-233-320-920-740-400` *maru- mīmīn vāḷai paṭi tiṅkaḷ? kuṭi ciṟ* : Junior of the Descendant-High-star-Scabbard-fish-Ration measure-Month house.  (2 copies: 569.2, 1273.1)
 - `806-368-235-590-390-740` *viḷai koṭi vēymīn peṭṭi parutti kuṭi* : Of the Bounty-Banner-Bamboo-star-Boxed-cotton house.  (2 copies: 1599.1, 1600.1)
-- `820-002-554-526` *kāl iru kaḷam kāval* : two quarters: Threshing-floor-Guard.  (2 copies: 682.2, 1719.1)
+- `820-002-554-526` *kāl iru kaḷam kāval* : two quarters: Threshing-floor, guard.  (2 copies: 682.2, 1719.1)
 - `831-892-400` *tiṉai vil ciṟ* : Millet-Sale, junior.  (2 copies: 249.1, 863.2)
 - `850-740` *kāṇi kuṭi* : Of the Share house.  (2 copies: 3949.1, 3949.2)
 - `001-100-700-032` *oru mutu nāḻi? iru* : One elder; Two cups.  (1227.3)
@@ -525,8 +525,8 @@ Per site (faces):
 - `055-255-435-690-921-400` *paṉṉiru mutal kōl piṇai vil ciṟ* : Twelve-Chief-Rod-Ally-Bow, junior.  (1240.1)
 - `061-142-400-740` *kāl kō ciṟ kuṭi* : Of the Quarter-King-Junior house.  (1671.1)
 - `090-400-740-090-400` *āḷ ciṟ kuṭi āḷ ciṟ* : Manager of the Manager-Junior house; Junior.  (554.2)
-- `090-700` *āḷ nāḻi?* : Manager-Cup.  (1366.2)
-- `091-368-033-700` *iruvar koṭi mū nāḻi?* : The pair-Banner; Three cups.  (499.1)
+- `090-700` *āḷ nāḻi?* : Manager, cup.  (1366.2)
+- `091-368-033-700` *iruvar koṭi mū nāḻi?* : The pair, banner; Three cups.  (499.1)
 - `097-151-400` *aṭimai kā ciṟ* : Bondsman-Keeper, junior.  (627.2)
 - `097-400` *aṭimai ciṟ* : Bondsman, junior.  (637.2)
 - `098` *ēvalaṉ* : Attendant.  (1675.1)
@@ -536,9 +536,9 @@ Per site (faces):
 - `140-400` *ammai ciṟ* : Lady, junior.  (1725.2)
 - `142-001` *kō oru* : One king.  (1266.1)
 - `142-151-400` *kō kā ciṟ* : King-Keeper, junior.  (869.2)
-- `142-617` *kō ūḻiyaṉ* : King-King's servant.  (1218.1)
+- `142-617` *kō ūḻiyaṉ* : King, king's servant.  (1218.1)
 - `156` *kā* : Keeper.  (470.2)
-- `167-706` *kūli kalam* : Wages-Kalam.  (808.1)
+- `167-706` *kūli kalam* : Wages, kalam.  (808.1)
 - `171-032-031-240-630-740` *niṟai iru oru mīmīn pal kuṭi* : Of the High-star-Many house (allowance: three full measures).  (405.2)
 - `171-033-700-415` *niṟai mū nāḻi? kavar* : Full measure; Three cups; Branch.  (375.2)
 - `175-482-335-740-400` *iṟai kōṭukāṇi ūr kuṭi ciṟ* : Junior of the Tax-Hill-share-Town house.  (1021.1)
@@ -550,17 +550,17 @@ Per site (faces):
 - `220-032-700` *mīn iru nāḻi?* : Star; Two cups.  (485.1)
 - `220-176-740` *mīn iṟai kuṭi* : Of the Star-Tax house.  (467.2)
 - `220-240-740-090` *mīn mīmīn kuṭi āḷ* : Manager of the Star-High-star house.  (217.1)
-- `220-550-525` *mīn vāy kāval* : Star-Gate-Guard.  (313.1)
+- `220-550-525` *mīn vāy kāval* : Star, gate, guard.  (313.1)
 - `220-705-033-550-525-400` *mīn kalam mū vāy kāval ciṟ* : Star-Gate-Guard, junior (allowance: three kalam).  (653.1)
 - `220-740-090` *mīn kuṭi āḷ* : Manager of the Star house.  (4084.1)
 - `231-390-100-740-090-400` *orumīn parutti mutu kuṭi āḷ ciṟ* : Manager of the First-star-Cotton-Elder house; Junior.  (578.2)
-- `233-220` *vāḷai mīn* : Scabbard-fish-Star.  (416.1)
+- `233-220` *vāḷai mīn* : Scabbard-fish, Star.  (416.1)
 - `233-520` *vāḷai vēḷ* : Scabbard-fish, chief.  (1274.2)
-- `233-550` *vāḷai vāy* : Scabbard-fish-Gate.  (1682.2)
-- `233-550-527` *vāḷai vāy kāval* : Scabbard-fish-Gate-Guard.  (1061.1)
+- `233-550` *vāḷai vāy* : Scabbard-fish, gate.  (1682.2)
+- `233-550-527` *vāḷai vāy kāval* : Scabbard-fish, gate, guard.  (1061.1)
 - `235-176-740-400` *vēymīn iṟai kuṭi ciṟ* : Junior of the Bamboo-star-Tax house.  (423.1)
 - `235-232-400` *vēymīn kūṭumīn ciṟ* : Bamboo-star-Cluster-star, junior.  (1685.1)
-- `235-555-526` *vēymīn vāy kāval* : Bamboo-star-Gate-Guard.  (472.1)
+- `235-555-526` *vēymīn vāy kāval* : Bamboo-star, gate, guard.  (472.1)
 - `235-705-033-176-740` *vēymīn kalam mū iṟai kuṭi* : Of the Bamboo-star-Tax house (allowance: three kalam).  (596.2)
 - `235-717-741-400` *vēymīn aṭi orukuṭi ciṟ* : Bamboo-star-Servant-First-ward, junior.  (1350.2)
 - `235-740-151` *vēymīn kuṭi kā* : Keeper of the Bamboo-star house.  (784.2)
@@ -584,9 +584,9 @@ Per site (faces):
 - `390-032-700` *parutti iru nāḻi?* : Cotton; Two cups.  (1717.2)
 - `390-155-004-390` *parutti kā nāl parutti* : Cotton, keeper; Four cottons.  (519.2)
 - `413` *nel* : Grain.  (305.1)
-- `413-137` *nel vēḷāḷaṉ* : Grain-Cultivator.  (1018.2)
+- `413-137` *nel vēḷāḷaṉ* : Grain, cultivator.  (1018.2)
 - `413-575-335-711-033-740` *nel kōṭṭai ūr vaḷḷam mū kuṭi* : Of the Grain-Great measure-Town house (allowance: three vaḷḷam measures).  (635.2)
-- `415-100-820-032` *kavar mutu kāl iru* : Branch-Elder; Two quarters.  (1690.1)
+- `415-100-820-032` *kavar mutu kāl iru* : Branch, elder; Two quarters.  (1690.1)
 - `415-100-820-400` *kavar mutu kāl ciṟ* : Branch-Elder-Quarter, junior.  (1703.1)
 - `415-240-495-463-752-740` *kavar mīmīn kompu mukkōṭu maka kuṭi* : Of the Branch-High-star-Horn child of Three-peaks house.  (601.2)
 - `416-220-740-760-400` *turumpu mīn kuṭi maka ciṟ* : Child of of the Grain-heap-Star house; Junior.  (1324.2)
@@ -594,7 +594,7 @@ Per site (faces):
 - `416-840-151` *turumpu iṇai kā* : Grain-heap-Peer, keeper.  (1662.1)
 - `435-003-550` *kōl mū vāy* : Rod; Three gates.  (373.2)
 - `440-740-400` *koḷ kuṭi ciṟ* : Junior of the Received house.  (790.1)
-- `455-370` *ampu katir* : Arrow-Spindle.  (1687.1)
+- `455-370` *ampu katir* : Arrow, spindle.  (1687.1)
 - `455-740-400` *ampu kuṭi ciṟ* : Junior of the Arrow house.  (297.2)
 - `467-806-154-400` *(n) viḷai kā ciṟ* : N loads of produce, carried by the porter; Junior.  (592.1)
 - `467-806-158-740` *(n) viḷai kā kuṭi* : N loads of produce, carried by the porter; Of the house.  (1034.1)
@@ -602,10 +602,10 @@ Per site (faces):
 - `475-806-158-400` *(n) viḷai kā ciṟ* : N loads of produce, carried by the porter; Junior.  (745.1)
 - `491-920-032` *kompu tiṅkaḷ? iru* : Horn; Two months.  (414.2)
 - `495-463-740-400` *kompu mukkōṭu kuṭi ciṟ* : Junior of the Horn-Three-peaks house.  (1220.1)
-- `495-776` *kompu malar* : Horn-Bloom.  (235.1)
+- `495-776` *kompu malar* : Horn, bloom.  (235.1)
 - `495-776-740-400` *kompu malar kuṭi ciṟ* : Junior of the Horn-Bloom house.  (1322.2)
 - `519-176-740-400` *vēli iṟai kuṭi ciṟ* : Junior of the Fence-Tax house.  (550.2)
-- `530-413` *paṟai nel* : Proclamation-Grain.  (4138.1)
+- `530-413` *paṟai nel* : Proclamation, grain.  (4138.1)
 - `550-060-003-390` *vāy -iṉ mū parutti* : gate: Three cottons.  (374.2)
 - `550-060-590-390-740` *vāy -iṉ peṭṭi parutti kuṭi* : gate: of the Boxed-cotton house.  (378.1)
 - `550-060-705-255-740-090` *vāy -iṉ kalam mutal kuṭi āḷ* : gate: manager of the Ship-Chief house.  (788.1)
@@ -613,13 +613,13 @@ Per site (faces):
 - `550-525-400-034-700` *vāy kāval ciṟ nāl nāḻi?* : Gate-Guard, junior; Four cups.  (532.2)
 - `554-525-400` *kaḷam kāval ciṟ* : Threshing-floor-Guard, junior.  (624.2)
 - `590-390-740-400` *peṭṭi parutti kuṭi ciṟ* : Junior of the Boxed-cotton house.  (1705.1)
-- `590-741-371-455-004-390` *peṭṭi orukuṭi katir ampu nāl parutti* : Chest-First-ward house-Spindle-Arrow; Four cottons.  (394.2)
+- `590-741-371-455-004-390` *peṭṭi orukuṭi katir ampu nāl parutti* : Chest, first-ward house, spindle, arrow; Four cottons.  (394.2)
 - `690-154-400` *piṇai kā ciṟ* : Ally-Keeper, junior.  (780.2)
 - `690-158-400` *piṇai kā ciṟ* : Ally-Keeper, junior.  (834.2)
 - `692` *kūṭṭam* : Assembly.  (305.2)
 - `692-060-061-760-740` *kūṭṭam -iṉ kāl maka kuṭi* : Assembly: of the child of Quarter house.  (664.1)
 - `700` *nāḻi?* : Cup.  (580.1)
-- `700-824` *nāḻi? vilai* : Cup-Price.  (806.1)
+- `700-824` *nāḻi? vilai* : Cup, price.  (806.1)
 - `705-031-100-740-400` *kalam oru mutu kuṭi ciṟ* : Junior of the Elder house (allowance: one kalam).  (1732.1)
 - `705-630-175-100-740` *kalam pal iṟai mutu kuṭi* : Of the Ship-Many-Tax-Elder house.  (593.2)
 - `705-717-388-740-400` *kalam aṭi aracu kuṭi ciṟ* : Junior of the Ship-Servant-King house.  (923.2)
@@ -638,45 +638,45 @@ Per site (faces):
 - `817-004-390` *kāṇi nāl parutti* : four shares: Cotton.  (1669.2)
 - `817-013-004-405` *kāṇi mū nāl nūl* : three shares: Four threads.  (787.1)
 - `817-368` *kāṇi koṭi* : share: Banner.  (1715.1)
-- `817-368-645-900-033-700` *kāṇi koṭi kar̤añcu tiṅkaḷ mū nāḻi?* : share: Banner-Gold weight-Month; Three cups.  (1786.2)
-- `817-368-690-032-700` *kāṇi koṭi piṇai iru nāḻi?* : share: Banner-Bound; Two cups.  (463.1)
-- `817-368-690-034-700` *kāṇi koṭi piṇai nāl nāḻi?* : share: Banner-Bound; Four cups.  (1785.2)
+- `817-368-645-900-033-700` *kāṇi koṭi kar̤añcu tiṅkaḷ mū nāḻi?* : share: Banner, gold weight, month; Three cups.  (1786.2)
+- `817-368-690-032-700` *kāṇi koṭi piṇai iru nāḻi?* : share: Banner, bound; Two cups.  (463.1)
+- `817-368-690-034-700` *kāṇi koṭi piṇai nāl nāḻi?* : share: Banner, bound; Four cups.  (1785.2)
 - `820-002` *kāl iru* : two quarters.  (466.1)
 - `820-002-104` *kāl iru taṭṭāṉ* : two quarters: Goldsmith.  (1269.1)
 - `820-002-137` *kāl iru vēḷāḷaṉ* : two quarters: Cultivator.  (1607.1)
 - `820-002-137-033-700` *kāl iru vēḷāḷaṉ mū nāḻi?* : two quarters: Cultivator; Three cups.  (1611.1)
 - `820-002-240-220-520` *kāl iru mīmīn mīn vēḷ* : two quarters: High-star-Star, chief.  (1258.1)
-- `820-002-382-760-382` *kāl iru aracu maka aracu* : two quarters: child of King-King.  (448.1)
+- `820-002-382-760-382` *kāl iru aracu maka aracu* : two quarters: Child of King, king.  (448.1)
 - `820-031-001-061-740` *kāl oru oru kāl kuṭi* : one quarter: of the house (allowance: one quarter).  (4059.1)
 - `820-033` *kāl mū* : three quarters.  (447.1)
-- `820-060-550-526` *kāl -iṉ vāy kāval* : quarter: Gate-Guard.  (1619.1)
+- `820-060-550-526` *kāl -iṉ vāy kāval* : quarter: Gate, guard.  (1619.1)
 - `821-740` *mañcāṭi kuṭi* : Of the Mañcāṭi weight house.  (1210.1)
-- `824-892-413` *vilai vil nel* : Price-Sale-Grain.  (887.2)
-- `831-892` *tiṉai vil* : Millet-Sale.  (1790.2)
+- `824-892-413` *vilai vil nel* : Price, sale, grain.  (887.2)
+- `831-892` *tiṉai vil* : Millet, sale.  (1790.2)
 - `840-032` *iṇai iru* : Two pairs.  (1219.1)
 - `840-032-740-400` *iṇai iru kuṭi ciṟ* : Junior of the Peer-Two house.  (567.2)
-- `850-741-048-740` *kāṇi orukuṭi er̤uvar kuṭi* : Of the Share-First-ward-The Seven house.  (1236.1)
+- `850-741-048-740` *kāṇi orukuṭi er̤uvar kuṭi* : Of the Share-First-ward-Seven house.  (1236.1)
 - `861-002-004-405` *kāṇi iru nāl nūl* : two shares: Four threads.  (1622.1)
 - `861-002-004-407` *kāṇi iru nāl kiḷai* : two shares: Four kindreds.  (789.1)
 - `861-002-031-892-803-740` *kāṇi iru oru vil il kuṭi* : two shares: of the One-Sale-Home house.  (1024.2)
 - `861-002-035-405` *kāṇi iru ai nūl* : two shares: Five threads.  (409.2)
 - `861-002-175-752-740` *kāṇi iru iṟai maka kuṭi* : two shares: of the child of Tax house.  (594.2)
 - `861-002-470-806-154` *kāṇi iru (n) viḷai kā* : two shares: N loads of produce, carried by the porter.  (805.1)
-- `861-002-920-817-408` *kāṇi iru tiṅkaḷ? kāṇi kiḷai* : two shares: Month-Share-Lot.  (771.2)
+- `861-002-920-817-408` *kāṇi iru tiṅkaḷ? kāṇi kiḷai* : two shares: Month, share, lot.  (771.2)
 - `861-740-400` *kāṇi kuṭi ciṟ* : share: junior of the house.  (1728.1)
 - `877-861-740` *nālkāṇi kāṇi kuṭi* : Of the Four shares-Tribute house.  (1363.1)
-- `892-692` *vil kūṭṭam* : Sale-Assembly.  (1382.3)
+- `892-692` *vil kūṭṭam* : Sale, assembly.  (1382.3)
 - `892-740` *vil kuṭi* : Of the Sale house.  (461.2)
-- `900-165-480-031` *tiṅkaḷ nāḷ kuṉṟi oru* : Month-Day; One seed-weight.  (1621.1)
-- `904-705` *irutiṅkaḷ kalam* : Two months-Kalam.  (1620.1)
+- `900-165-480-031` *tiṅkaḷ nāḷ kuṉṟi oru* : Month, day; One seed-weight.  (1621.1)
+- `904-705` *irutiṅkaḷ kalam* : Two months, kalam.  (1620.1)
 - `920-017-575-740-400` *tiṅkaḷ? ēḻu kōṭṭai kuṭi ciṟ* : Junior of the Month-Seven-Great measure house.  (1318.1)
-- `920-060-741-005-368-705-167` *tiṅkaḷ? -iṉ orukuṭi ai koṭi kalam kūli* : month in first ward: Five banners; Kalam-Wages.  (1209.1)
+- `920-060-741-005-368-705-167` *tiṅkaḷ? -iṉ orukuṭi ai koṭi kalam kūli* : month in first ward: Five banners; Kalam, wages.  (1209.1)
 - `920-060-741-176-156` *tiṅkaḷ? -iṉ orukuṭi iṟai kā* : month in first ward: Tax, keeper.  (257.1)
 
 **tag or sealing** (2 faces)
 
 - `803-233-032-904-740` *il vāḷai iru irutiṅkaḷ kuṭi* : Of the Home-Scabbard-fish-Two-Dark-moon house.  (1265.1)
-- `861-370-240` *kāṇi katir mīmīn* : share: Spindle-High-star.  (941.1)
+- `861-370-240` *kāṇi katir mīmīn* : share: Spindle, High-star.  (941.1)
 
 ### Mohenjo-daro
 
@@ -688,40 +688,40 @@ Per site (faces):
 - `002` *iru* : Two.  (2168.1)
 - `002-064` *iru pāti* : Two portions.  (2170.1)
 - `033` *mū* : Three.  (3832.2)
-- `175-090-595-032-705` *iṟai āḷ paṭṭaṟai iru kalam* : Tax-Manager; Two forges; Kalam.  (3823.1)
+- `175-090-595-032-705` *iṟai āḷ paṭṭaṟai iru kalam* : Tax, manager; Two forges; Kalam.  (3823.1)
 - `405` *nūl* : Thread.  (3834.1)
-- `413-220-440` *nel mīn koḷ* : Grain-Star-Received.  (3826.1)
-- `500-706-064` *pāy kalam pāti* : Sail-Kalam-Portion.  (3827.1)
-- `630-845` *pal cūṭu* : Many-Sheaf-bundle.  (2187.1)
-- `705-840` *kalam iṇai* : Kalam-Pair.  (4032.1)
+- `413-220-440` *nel mīn koḷ* : Grain, Star, received.  (3826.1)
+- `500-706-064` *pāy kalam pāti* : Sail, kalam, portion.  (3827.1)
+- `630-845` *pal cūṭu* : Many, sheaf-bundle.  (2187.1)
+- `705-840` *kalam iṇai* : Kalam, pair.  (4032.1)
 - `740` *kuṭi* : Of the house.  (3839.1)
 - `820` *kāl* : quarter.  (3833.1)
-- `831-585` *tiṉai kaṉṉi?* : Millet-Maiden.  (2173.1)
+- `831-585` *tiṉai kaṉṉi?* : Millet, maiden.  (2173.1)
 - `850` *kāṇi* : Share.  (3838.1)
 - `892-031` *vil oru* : One sale.  (5524.1)
 
 **copper tablet** (153 faces)
 
 - `503-615-752-740` *malai vayal maka kuṭi* : Of the Hill child of Field house.  (29 copies: 2275.1, 2308.1, 2458.1, 2520.1, 3023.1, 3024.1, 3025.1, 3026.1, 3027.1, 3028.1, 3029.1, 3030.1, 3031.1, 3032.1, 3033.1, 3034.1, 3035.1, 3036.1, 3037.1, 3760.1, 3761.1, 3762.1, 3763.1, 3764.1, 3765.1, 3766.1, 3767.1, 3768.1, 4025.1)
-- `235-705-033-845-407-321-407` *vēymīn kalam mū cūṭu kiḷai paṭi kiḷai* : Bamboo-star; Three kalam; Sheaf-bundle-Kindred-Ration-Kindred.  (14 copies: 3006.1, 3007.1, 3008.1, 3009.1, 3010.1, 3011.1, 3013.1, 3014.1, 3058.1, 3753.1, 3754.1, 3755.1, 3756.1, 3787.1)
+- `235-705-033-845-407-321-407` *vēymīn kalam mū cūṭu kiḷai paṭi kiḷai* : Bamboo-star; Three kalam; Sheaf-bundle, kindred, ration, kindred.  (14 copies: 3006.1, 3007.1, 3008.1, 3009.1, 3010.1, 3011.1, 3013.1, 3014.1, 3058.1, 3753.1, 3754.1, 3755.1, 3756.1, 3787.1)
 - `806-845-061-407-850-900-740` *viḷai cūṭu kāl kiḷai kāṇi tiṅkaḷ kuṭi* : Of the Bounty-Sheaf-bundle-Quarter-Kindred-Share-Moon house.  (14 copies: 2287.2, 3052.1, 3053.1, 3054.1, 3055.1, 3056.1, 3057.1, 3063.2, 3065.1, 3784.1, 3785.1, 3786.1, 3796.2, 4029.1)
 - `231-017-585-095-520-032-407` *orumīn ēḻu kaṉṉi? kōlaṉ vēḷ iru kiḷai* : First-star-Seven-Maiden-Staff-bearer, chief; Two kindreds.  (8 copies: 3019.1, 3020.1, 3021.1, 3791.1, 3792.1, 3793.1, 3794.1, 5587.1)
 - `706-033-923-740` *kalam mū maruppu kuṭi* : Of the Ivory house (allowance: three kalam).  (7 copies: 3747.1, 3748.1, 3749.1, 3750.1, 3751.1, 3752.1, 4023.1)
-- `798-240-845-061-407` *maru- mīmīn cūṭu kāl kiḷai* : Descendant-High-star-Sheaf-bundle-Quarter-Kindred.  (6 copies: 3038.1, 3039.1, 3040.1, 3770.1, 3771.1, 3772.1)
+- `798-240-845-061-407` *maru- mīmīn cūṭu kāl kiḷai* : Descendant, High-star, sheaf-bundle, quarter, kindred.  (6 copies: 3038.1, 3039.1, 3040.1, 3770.1, 3771.1, 3772.1)
 - `017-585-388-740` *ēḻu kaṉṉi? aracu kuṭi* : Of the Seven-Maiden-King house.  (4 copies: 3048.1, 3050.1, 3051.1, 3783.1)
 - `235-233-222-740` *vēymīn vāḷai aṭaimīn kuṭi* : Of the Bamboo-star-Scabbard-fish-Shut-in-fish house.  (4 copies: 3042.1, 3044.2, 3774.1, 3775.1)
-- `415-220-845-407` *kavar mīn cūṭu kiḷai* : Branch-Star-Sheaf-bundle-Kindred.  (4 copies: 2983.1, 2984.1, 3733.1, 3734.1)
+- `415-220-845-407` *kavar mīn cūṭu kiḷai* : Branch, Star, sheaf-bundle, kindred.  (4 copies: 2983.1, 2984.1, 3733.1, 3734.1)
 - `706-033-923-740-001` *kalam mū maruppu kuṭi oru* : Of the Ivory house (allowance: three kalam); One.  (4 copies: 3001.1, 3002.1, 3003.1, 3004.1)
 - `003-421-176-100-740-790` *mū par̤aṉam iṟai mutu kuṭi maṇi* : Gem of the Three-Field-Tax-Elder house.  (3 copies: 3015.1, 3016.1, 3017.1)
 - `005-706` *ai kalam* : Five kalam.  (3 copies: 2989.1, 2990.1, 2991.1)
-- `233-585-407` *vāḷai kaṉṉi? kiḷai* : Scabbard-fish-Maiden-Kindred.  (3 copies: 2989.2, 2990.2, 2991.2)
+- `233-585-407` *vāḷai kaṉṉi? kiḷai* : Scabbard-fish, maiden, kindred.  (3 copies: 2989.2, 2990.2, 2991.2)
 - `255-435-690-740-900-003-422` *mutal kōl piṇai kuṭi tiṅkaḷ mū par̤aṉam* : Month of the Chief-Rod-Ally house; Three fields.  (3 copies: 3742.1, 3745.1, 3746.1)
 - `503-615-740` *malai vayal kuṭi* : Of the Hill-Field house.  (3 copies: 2522.1, 2992.2, 2993.2)
 - `806-233-384-740` *viḷai vāḷai aracu kuṭi* : Of the Bounty-Scabbard-fish-King house.  (3 copies: 2981.1, 3059.2, 3790.1)
-- `806-235-233-705-033-585-407` *viḷai vēymīn vāḷai kalam mū kaṉṉi? kiḷai* : Produce-Bamboo-star-Scabbard-fish; Three kalam; Maiden-Kindred.  (3 copies: 2523.1, 3776.1, 3777.1)
-- `900-165` *tiṅkaḷ nāḷ* : Month-Day.  (3 copies: 2985.1, 2986.1, 3735.2)
+- `806-235-233-705-033-585-407` *viḷai vēymīn vāḷai kalam mū kaṉṉi? kiḷai* : Produce, Bamboo-star, Scabbard-fish; Three kalam; Maiden, kindred.  (3 copies: 2523.1, 3776.1, 3777.1)
+- `900-165` *tiṅkaḷ nāḷ* : Month, day.  (3 copies: 2985.1, 2986.1, 3735.2)
 - `003-422-176-100-740` *mū par̤aṉam iṟai mutu kuṭi* : Of the Three-Field-Tax-Elder house.  (2 copies: 3757.1, 3759.1)
-- `003-700-900-165` *mū nāḻi? tiṅkaḷ nāḷ* : Three cups; Month-Day.  (2 copies: 2987.1, 2988.1)
+- `003-700-900-165` *mū nāḻi? tiṅkaḷ nāḷ* : Three cups; Month, day.  (2 copies: 2987.1, 2988.1)
 - `032-220-176-740` *iru mīn iṟai kuṭi* : Of the Two-Star-Tax house.  (2 copies: 2987.2, 2988.2)
 - `231-255-435-690-740` *orumīn mutal kōl piṇai kuṭi* : Of the First-star-Chief-Rod-Ally house.  (2 copies: 2465.1, 3788.1)
 - `798-231-705-033-904-100-740` *maru- orumīn kalam mū irutiṅkaḷ mutu kuṭi* : Of the Descendant-First-star-Dark-moon-Elder house (allowance: three kalam).  (2 copies: 3067.2, 3797.2)
@@ -731,7 +731,7 @@ Per site (faces):
 - `003-422` *mū par̤aṉam* : Three fields.  (2488.1)
 - `032-220-773-740` *iru mīn maka kuṭi* : Of the Two-Star-Child of house.  (3041.1)
 - `035` *ai* : Five.  (3737.1)
-- `142-617-001-004-407` *kō ūḻiyaṉ oru nāl kiḷai* : King-King's servant; Five kindreds.  (3735.1)
+- `142-617-001-004-407` *kō ūḻiyaṉ oru nāl kiḷai* : King, king's servant; Five kindreds.  (3735.1)
 - `220-017-585-095-520-032-407` *mīn ēḻu kaṉṉi? kōlaṉ vēḷ iru kiḷai* : Star-Seven-Maiden-Staff-bearer, chief; Two kindreds.  (2284.2)
 - `220-017-585-095-520-032-408` *mīn ēḻu kaṉṉi? kōlaṉ vēḷ iru kiḷai* : Star-Seven-Maiden-Staff-bearer, chief; Two lots.  (3061.2)
 - `233-798-740` *vāḷai maru- kuṭi* : Of the Scabbard-fish-Descendant house.  (3736.1)
@@ -746,7 +746,7 @@ Per site (faces):
 - `806-231-176-740` *viḷai orumīn iṟai kuṭi* : Of the Bounty-First-star-Tax house.  (3730.1)
 - `806-845-407-850-900-740` *viḷai cūṭu kiḷai kāṇi tiṅkaḷ kuṭi* : Of the Bounty-Sheaf-bundle-Kindred-Share-Moon house.  (3064.1)
 - `831-233-176-740` *tiṉai vāḷai iṟai kuṭi* : Of the Millet-Scabbard-fish-Tax house.  (3727.1)
-- `831-590-125-407-002` *tiṉai peṭṭi vēṭṭuvaṉ kiḷai iru* : Millet-Chest-Hunter; Two kindreds.  (4030.1)
+- `831-590-125-407-002` *tiṉai peṭṭi vēṭṭuvaṉ kiḷai iru* : Millet, chest, hunter; Two kindreds.  (4030.1)
 - `861-368-001-142-617` *kāṇi koṭi oru kō ūḻiyaṉ* : share: Banner; One king; King's servant.  (3044.1)
 - `904-032-904` *irutiṅkaḷ iru irutiṅkaḷ* : Two months; Two two months.  (3798.1)
 
@@ -755,15 +755,15 @@ Per site (faces):
 - `031-156` *oru kā* : One porter.  (2 copies: 3566.1, 3566.2)
 - `031-100-740` *oru mutu kuṭi* : Of the One-Elder house.  (3843.1)
 - `032-840` *iru iṇai* : Two pairs.  (3071.1)
-- `900-165` *tiṅkaḷ nāḷ* : Month-Day.  (3844.1)
+- `900-165` *tiṅkaḷ nāḷ* : Month, day.  (3844.1)
 
 **pot** (30 faces)
 
 - `033-151` *mū kā* : Three porters.  (2 copies: 3820.1, 3820.2)
-- `370-002-550-527` *katir iru vāy kāval* : Two spindles; Gate-Guard.  (2 copies: 3670.1, 3677.1)
+- `370-002-550-527` *katir iru vāy kāval* : Two spindles; Gate, guard.  (2 copies: 3670.1, 3677.1)
 - `792-740` *aracu kuṭi* : Of the Royal house.  (2 copies: 2918.1, 3678.1)
 - `005-740` *ai kuṭi* : Of the Five house.  (2155.1)
-- `012-165` *iru nāḷ* : Two daies.  (2156.1)
+- `012-165` *iru nāḷ* : Two days.  (2156.1)
 - `032` *iru* : Two.  (3809.1)
 - `032-158` *iru kā* : Two porters.  (2209.1)
 - `033` *mū* : Three.  (3808.1)
@@ -783,7 +783,7 @@ Per site (faces):
 - `700-031` *nāḻi? oru* : One cup.  (3810.1)
 - `705-033-032-790` *kalam mū iru maṇi* : Five kalam; Gem.  (3673.1)
 - `740` *kuṭi* : Of the house.  (3811.1)
-- `790-153` *maṇi kā* : Gem-Porter.  (5519.1)
+- `790-153` *maṇi kā* : Gem, porter.  (5519.1)
 - `861-002-176-740` *kāṇi iru iṟai kuṭi* : two shares: of the Tax house.  (2165.2)
 - `920-540-740` *tiṅkaḷ? paṟai kuṭi* : Of the Month-Drum house.  (3675.1)
 
@@ -796,7 +796,7 @@ Per site (faces):
 - `034-700-097-151` *nāl nāḻi? aṭimai kā* : Bondsman, keeper (allowance: four cups).  (2527.1)
 - `140-176-740-400` *ammai iṟai kuṭi ciṟ* : Junior of the Lady-Tax house.  (2356.1)
 - `176-740-400` *iṟai kuṭi ciṟ* : Junior of the Tax house.  (4036.1)
-- `390-390-390` *parutti parutti parutti* : Cotton-Cotton-Cotton.  (5533.1)
+- `390-390-390` *parutti parutti parutti* : Three cottons.  (5533.1)
 - `690-435-760-740-400` *piṇai kōl maka kuṭi ciṟ* : Junior of the Ally child of Rod house.  (2210.1)
 
 **seal** (582 faces)
@@ -940,7 +940,7 @@ Per site (faces):
 - `226-621` *kūṭumīn aṭai* : Fish-crate-Stored.  (3366.1)
 - `231-233-804` *orumīn vāḷai ilai* : First-star-Scabbard-fish-Leaf.  (2773.1)
 - `231-740-151` *orumīn kuṭi kā* : Keeper of the First-star house.  (2733.1)
-- `232-048-740` *kūṭumīn er̤uvar kuṭi* : Of the Cluster-star-The Seven house.  (3550.1)
+- `232-048-740` *kūṭumīn er̤uvar kuṭi* : Of the Cluster-star-Seven house.  (3550.1)
 - `233-032-877-740` *vāḷai iru nālkāṇi kuṭi* : Of the Scabbard-fish-Two-Four shares house.  (2741.1)
 - `233-055-752-740` *vāḷai paṉṉiru maka kuṭi* : Of the Scabbard-fish child of Twelve house.  (2893.1)
 - `233-176-740-090` *vāḷai iṟai kuṭi āḷ* : Manager of the Scabbard-fish-Tax house.  (2754.1)
@@ -1153,7 +1153,7 @@ Per site (faces):
 - `817-002-017-585-840-032-740` *kāṇi iru ēḻu kaṉṉi? iṇai iru kuṭi* : two shares: of the Seven-Maiden-Peer-Two house.  (3190.1)
 - `817-002-031-013-840-740` *kāṇi iru oru mū iṇai kuṭi* : two shares: of the Four-Peer house.  (2617.1)
 - `817-002-032-220-240-585-740` *kāṇi iru iru mīn mīmīn kaṉṉi? kuṭi* : two shares: of the Two-Star-High-star-Maiden house.  (3146.1)
-- `817-002-048-740` *kāṇi iru er̤uvar kuṭi* : two shares: of the The Seven house.  (3300.1)
+- `817-002-048-740` *kāṇi iru er̤uvar kuṭi* : two shares: of the Seven house.  (3300.1)
 - `817-002-061-142-740` *kāṇi iru kāl kō kuṭi* : two shares: of the Quarter-King house.  (2690.1)
 - `817-002-061-407` *kāṇi iru kāl kiḷai* : two shares: Quarter-Kindred.  (2904.1)
 - `817-002-104-615-740` *kāṇi iru taṭṭāṉ vayal kuṭi* : two shares: of the Goldsmith-Field house.  (3481.1)
@@ -1349,22 +1349,22 @@ Per site (faces):
 - `004-700-097-400` *nāl nāḻi? aṭimai ciṟ* : Bondsman, junior (allowance: four cups).  (4 copies: 2962.1, 2963.1, 2964.1, 3710.1)
 - `550-060-690-740` *vāy -iṉ piṇai kuṭi* : gate: of the Ally house.  (4 copies: 2322.2, 2382.2, 3725.2, 3726.2)
 - `384-740` *aracu kuṭi* : Of the King house.  (3 copies: 3714.1, 3714.2, 3714.3)
-- `705-167` *kalam kūli* : Kalam-Wages.  (3 copies: 2367.1, 2367.2, 3689.1)
+- `705-167` *kalam kūli* : Kalam, wages.  (3 copies: 2367.1, 2367.2, 3689.1)
 - `003-220-740` *mū mīn kuṭi* : Of the Three-Star house.  (2 copies: 3720.1, 3723.1)
-- `016-840-002-803-140-850` *āṟu iṇai iru il ammai kāṇi* : Six lots of two pairs; House; Lady-Share.  (2 copies: 2972.1, 2973.1)
-- `142-617` *kō ūḻiyaṉ* : King-King's servant.  (2 copies: 2252.1, 2960.1)
+- `016-840-002-803-140-850` *āṟu iṇai iru il ammai kāṇi* : Six lots of two pairs; House; Lady, share.  (2 copies: 2972.1, 2973.1)
+- `142-617` *kō ūḻiyaṉ* : King, king's servant.  (2 copies: 2252.1, 2960.1)
 - `235-520` *vēymīn vēḷ* : Bamboo-star, chief.  (2 copies: 2969.1, 2970.1)
-- `323-690` *paṭi piṇai* : Ration-Bound.  (2 copies: 3725.1, 3726.1)
-- `370-390` *katir parutti* : Spindle-Cotton.  (2 copies: 3846.1, 3846.2)
+- `323-690` *paṭi piṇai* : Ration, bound.  (2 copies: 3725.1, 3726.1)
+- `370-390` *katir parutti* : Spindle, cotton.  (2 copies: 3846.1, 3846.2)
 - `540` *paṟai* : Rice measure.  (2 copies: 2955.1, 3706.1)
 - `705-033-590-390-740` *kalam mū peṭṭi parutti kuṭi* : Of the Boxed-cotton house (allowance: three kalam).  (2 copies: 2925.1, 2926.1)
-- `706-167` *kalam kūli* : Kalam-Wages.  (2 copies: 2934.1, 2934.2)
+- `706-167` *kalam kūli* : Kalam, wages.  (2 copies: 2934.1, 2934.2)
 - `798-415-220-740-400` *maru- kavar mīn kuṭi ciṟ* : Junior of the Descendant-Branch-Star house.  (2 copies: 2953.1, 2954.1)
 - `803-335-760-740` *il ūr maka kuṭi* : Of the Home child of Town house.  (2 copies: 2436.1, 3696.1)
 - `838-798-176-740-151-697-390` *viḷai maru- iṟai kuṭi kā ney parutti* : Keeper of the Produce-Descendant-Tax house; Woven; Cotton.  (2 copies: 2975.1, 2976.1)
-- `140-136-400-255-435-016-615` *ammai aṭimai ciṟ mutal kōl āṟu vayal* : Lady-Bondsman-Junior-Chief; Six rods; Field.  (2971.1)
+- `140-136-400-255-435-016-615` *ammai aṭimai ciṟ mutal kōl āṟu vayal* : Lady, bondsman, junior, chief; Six rods; Field.  (2971.1)
 - `220-100-740` *mīn mutu kuṭi* : Of the Star-Elder house.  (2958.1)
-- `220-798-550-527` *mīn maru- vāy kāval* : Star-Descendant-Gate-Guard.  (2432.2)
+- `220-798-550-527` *mīn maru- vāy kāval* : Star, descendant, gate, guard.  (2432.2)
 - `220-840-032-740` *mīn iṇai iru kuṭi* : Of the Star-Peer-Two house.  (2432.1)
 - `235-176-740` *vēymīn iṟai kuṭi* : Of the Bamboo-star-Tax house.  (2931.1)
 - `240-415-100-740` *mīmīn kavar mutu kuṭi* : Of the High-star-Branch-Elder house.  (3705.2)
@@ -1377,7 +1377,7 @@ Per site (faces):
 - `503-033-740-400` *malai mū kuṭi ciṟ* : Junior of the Hill-Three house.  (3697.1)
 - `550-525-400` *vāy kāval ciṟ* : Gate-Guard, junior.  (3684.1)
 - `615-740-090` *vayal kuṭi āḷ* : Manager of the Field house.  (2969.3)
-- `690-323` *piṇai paṭi* : Bound-Ration.  (2322.1)
+- `690-323` *piṇai paṭi* : Bound, ration.  (2322.1)
 - `741-904-740-820-032-017-904-415-100-740` *orukuṭi irutiṅkaḷ kuṭi kāl iru ēḻu irutiṅkaḷ kavar mutu kuṭi* : Of the First-ward-Dark-moon house; Of the Quarter-9-Dark-moon-Branch-Elder house.  (2976.3)
 - `741-904-740-820-032-017-904-415-100-921` *orukuṭi irutiṅkaḷ kuṭi kāl iru ēḻu irutiṅkaḷ kavar mutu vil* : Of the First-ward-Dark-moon house; 9 quarters; Two months; Branch; Elder; Bow.  (2975.3)
 - `803-003-220-740-792-740-090` *il mū mīn kuṭi aracu kuṭi āḷ* : Of the Home-Three-Star house; Manager of the Royal house.  (3713.1)
@@ -1403,8 +1403,8 @@ Per site (faces):
 
 **other** (2 faces)
 
-- `776-233` *malar vāḷai* : Bloom-Scabbard-fish.  (4244.2)
-- `820-611-388-820-850-645-031-821-798` *kāl kuṭai aracu kāl kāṇi kar̤añcu oru mañcāṭi maru-* : quarter: Umbrella-King-Quarter-Share-Gold weight; One mañcāṭi weight; Descendant.  (144.1)
+- `776-233` *malar vāḷai* : Bloom, Scabbard-fish.  (4244.2)
+- `820-611-388-820-850-645-031-821-798` *kāl kuṭai aracu kāl kāṇi kar̤añcu oru mañcāṭi maru-* : quarter: Umbrella, king, quarter, share, gold weight; One mañcāṭi weight; Descendant.  (144.1)
 
 **pot** (1 faces)
 
@@ -1582,7 +1582,7 @@ Per site (faces):
 - `550-740` *vāy kuṭi* : Of the Gate house.  (2025.1)
 - `575` *kōṭṭai* : Great measure.  (5506.2)
 - `590-540-002-605-760-740` *peṭṭi paṟai iru kutir maka kuṭi* : Of the Chest-Drum-Two-Granary-Child of house.  (2061.1)
-- `817-002-048` *kāṇi iru er̤uvar* : two shares: The Seven.  (2038.1)
+- `817-002-048` *kāṇi iru er̤uvar* : two shares: Seven.  (2038.1)
 - `817-002-233-740-090` *kāṇi iru vāḷai kuṭi āḷ* : two shares: manager of the Scabbard-fish house.  (2013.1)
 - `820-002-031-415` *kāl iru oru kavar* : two quarters: One Branch.  (1996.1)
 - `820-002-240-806-740` *kāl iru mīmīn viḷai kuṭi* : two quarters: of the High-star-Bounty house.  (2037.1)
@@ -1602,7 +1602,7 @@ Per site (faces):
 **tag or sealing** (28 faces)
 
 - `705-500-741-001-055-220-740-090` *kalam pāy orukuṭi oru paṉṉiru mīn kuṭi āḷ* : Manager of the Ship-Sail-First-ward-One-Twelve-Star house.  (11 copies: 2068.1, 2069.1, 2070.1, 2071.1, 2072.1, 2112.1, 2113.1, 2115.1, 2117.1, 2125.1, 5388.1)
-- `817-002-048-740` *kāṇi iru er̤uvar kuṭi* : two shares: of the The Seven house.  (10 copies: 2093.1, 2094.1, 2095.1, 2096.1, 2097.1, 2098.1, 2099.1, 2100.1, 2101.1, 2102.1)
+- `817-002-048-740` *kāṇi iru er̤uvar kuṭi* : two shares: of the Seven house.  (10 copies: 2093.1, 2094.1, 2095.1, 2096.1, 2097.1, 2098.1, 2099.1, 2100.1, 2101.1, 2102.1)
 - `550-002-415-390` *vāy iru kavar parutti* : Gate; Two Branch; Cotton.  (2087.1)
 - `617-002-240-220-233-520` *ūḻiyaṉ iru mīmīn mīn vāḷai vēḷ* : King's servant-Two-High-star-Star-Scabbard-fish, chief.  (2077.1)
 - `692-031-001-015-140` *kūṭṭam oru oru ai ammai* : Assembly; Seven ladies.  (2084.1)
@@ -1694,7 +1694,7 @@ Per site (faces):
 **tablet** (2 faces)
 
 - `032-700` *iru nāḻi?* : Two cups.  (3895.2)
-- `820-002-233-555` *kāl iru vāḷai vāy* : two quarters: Scabbard-fish-Gate.  (3894.1)
+- `820-002-233-555` *kāl iru vāḷai vāy* : two quarters: Scabbard-fish, gate.  (3894.1)
 
 ### Banawali
 
@@ -1718,7 +1718,7 @@ Per site (faces):
 **tablet** (3 faces)
 
 - `156` *kā* : Keeper.  (5242.1)
-- `382-382-382` *aracu aracu aracu* : King-King-King.  (5242.2)
+- `382-382-382` *aracu aracu aracu* : Three kings.  (5242.2)
 - `740` *kuṭi* : Of the house.  (5241.1)
 
 **tag or sealing** (2 faces)
@@ -1729,7 +1729,7 @@ Per site (faces):
 
 **pot** (1 faces)
 
-- `520-382` *vēḷ aracu* : Chief-King.  (5563.1)
+- `520-382` *vēḷ aracu* : Chief, king.  (5563.1)
 
 **seal** (1 faces)
 
@@ -1966,7 +1966,7 @@ Per site (faces):
 
 **pot** (1 faces)
 
-- `861-002-840-032-844-405` *kāṇi iru iṇai iru cūṭu nūl* : two shares: Two pairs; Sheaves-Thread.  (18.1)
+- `861-002-840-032-844-405` *kāṇi iru iṇai iru cūṭu nūl* : two shares: Two pairs; Sheaves, thread.  (18.1)
 
 ### Derawar Ther
 
@@ -2009,20 +2009,20 @@ Per site (faces):
 | copies | signs | sounds | English | first ids |
 |---|---|---|---|---|
 | 11 | `803-415-220-318-920-255-436-690-590-407-740` | il kavar mīn [318] tiṅkaḷ? mutal [436] piṇai peṭṭi kiḷai kuṭi | Of the Home-Branch-Star-[318]-Month-Chief-[436]-Ally-Chest-Kindred house. | 291.1, 1300.1, 1301.1, 1302.1, 1303.1, 1304.1, 1305.1, 1306.1 ... |
-| 8 | `091-056-002-417-890-892` | iruvar [056] iru [417] koṭu vil | The pair; Two [056]; [417]-Given-Sale. | 1927.1, 1928.1, 1929.1, 1930.1, 1931.1, 1932.1, 1933.1, 5281.1 |
-| 6 | `905-032-597-142-617` | [905] iru [597] kō ūḻiyaṉ | Two [905]; [597]-King-King's servant. | 3045.1, 3046.1, 3778.1, 3780.1, 3781.1, 3782.2 |
-| 4 | `415-578-032-824` | kavar [578] iru vilai | Branch-[578]; Two prices. | 222.1, 407.2, 484.2, 1379.1 |
+| 8 | `091-056-002-417-890-892` | iruvar [056] iru [417] koṭu vil | The pair; Two [056]; [417], given, sale. | 1927.1, 1928.1, 1929.1, 1930.1, 1931.1, 1932.1, 1933.1, 5281.1 |
+| 6 | `905-032-597-142-617` | [905] iru [597] kō ūḻiyaṉ | Two [905]; [597], king, king's servant. | 3045.1, 3046.1, 3778.1, 3780.1, 3781.1, 3782.2 |
+| 4 | `415-578-032-824` | kavar [578] iru vilai | Branch, [578]; Two prices. | 222.1, 407.2, 484.2, 1379.1 |
 | 4 | `440-740-400-840-712` | koḷ kuṭi ciṟ iṇai [712] | Junior of the Received house; Pair; [712]. | 776.1, 907.1, 1207.1, 1610.1 |
 | 4 | `736-904-158-400` | [736] irutiṅkaḷ kā ciṟ | [736]-Dark-moon-Keeper, junior. | 1253.1, 1254.1, 1255.1, 1699.1 |
 | 3 | `028-032-740-400` | [028] iru kuṭi ciṟ | Junior of the house (allowance: two [028]). | 544.2, 1344.1, 1844.1 |
 | 3 | `156-924-705-740-851` | kā [924] kalam kuṭi [851] | [851] of the Keeper-[924]-Ship house. | 581.1, 687.1, 689.1 |
 | 3 | `220-236-400` | mīn [236] ciṟ | Star-[236], junior. | 751.2, 927.2, 3969.1 |
 | 3 | `234-400` | [234] ciṟ | [234], junior. | 1770.1, 1825.1, 1826.2 |
-| 3 | `380-705-200` | [380] kalam [200] | [380]-Kalam-[200]. | 270.1, 395.2, 1759.1 |
-| 3 | `391-595-850-480-001-821` | [391] paṭṭaṟai kāṇi kuṉṟi oru mañcāṭi | [391]-Forge-Share; One seed-weight; Mañcāṭi weight. | 2362.1, 2368.1, 2370.1 |
+| 3 | `380-705-200` | [380] kalam [200] | [380], kalam, [200]. | 270.1, 395.2, 1759.1 |
+| 3 | `391-595-850-480-001-821` | [391] paṭṭaṟai kāṇi kuṉṟi oru mañcāṭi | [391], forge, share; One seed-weight; Mañcāṭi weight. | 2362.1, 2368.1, 2370.1 |
 | 3 | `484-337-740` | [484] [337] kuṭi | Of the [484]-[337] house. | 1247.1, 1248.1, 1431.1 |
 | 3 | `799-840-760-740` | [799] iṇai maka kuṭi | Of the [799] child of Peer house. | 407.3, 484.3, 672.2 |
-| 3 | `851-741-048-740` | [851] orukuṭi er̤uvar kuṭi | Of the [851]-First-ward-The Seven house. | 300.1, 742.1, 1772.1 |
+| 3 | `851-741-048-740` | [851] orukuṭi er̤uvar kuṭi | Of the [851]-First-ward-Seven house. | 300.1, 742.1, 1772.1 |
 | 3 | `910-740` | [910] kuṭi | Of the [910] house. | 1118.1, 1136.1, 3341.1 |
 | 2 | `004-783-740` | nāl [783] kuṭi | Of the house (allowance: four [783]). | 1311.1, 1312.1 |
 | 2 | `017-410` | ēḻu [410] | Seven [410]. | 1.1, 2.1 |
@@ -2042,26 +2042,26 @@ Per site (faces):
 | 2 | `354-463-798-740` | [354] mukkōṭu maru- kuṭi | Of the [354]-Three-peaks-Descendant house. | 1224.1, 1631.1 |
 | 2 | `368-330-741-590-390-151` | koṭi [330] orukuṭi peṭṭi parutti kā | Banner-[330]-First-ward-Boxed-cotton, keeper. | 1214.1, 1214.2 |
 | 2 | `491-920-002-176-740-335-740-317` | kompu tiṅkaḷ? iru iṟai kuṭi ūr kuṭi [317] | Of the Horn-Month-Two-Tax house; [317] of the Town house. | 370.1, 1700.1 |
-| 2 | `510-697` | [510] ney | [510]-Woven. | 194.1, 1596.1 |
-| 2 | `511-130-920` | [511] kaḷamar tiṅkaḷ? | [511]-Husbandman-Month. | 3822.1, 3832.1 |
+| 2 | `510-697` | [510] ney | [510], woven. | 194.1, 1596.1 |
+| 2 | `511-130-920` | [511] kaḷamar tiṅkaḷ? | [511], husbandman, month. | 3822.1, 3832.1 |
 | 2 | `516-775-400` | [516] [775] ciṟ | [516]-[775], junior. | 396.2, 468.2 |
 | 2 | `531-740` | [531] kuṭi | Of the [531] house. | 1096.1, 1892.1 |
-| 2 | `631-405` | [631] nūl | [631]-Thread. | 3829.1, 3830.1 |
+| 2 | `631-405` | [631] nūl | [631], thread. | 3829.1, 3830.1 |
 | 2 | `678-400` | [678] ciṟ | [678], junior. | 255.2, 4072.1 |
-| 2 | `681-690` | [681] piṇai | [681]-Bound. | 640.1, 1326.1 |
-| 2 | `687-690` | [687] piṇai | [687]-Bound. | 1797.1, 1799.1 |
+| 2 | `681-690` | [681] piṇai | [681], bound. | 640.1, 1326.1 |
+| 2 | `687-690` | [687] piṇai | [687], bound. | 1797.1, 1799.1 |
 | 2 | `698-861-002` | [698] kāṇi iru | [698]; Two shares. | 2847.1, 2848.1 |
 | 2 | `703-615-740` | [703] vayal kuṭi | Of the [703]-Field house. | 1143.1, 2363.1 |
-| 2 | `704-167` | [704] kūli | [704]-Wages. | 3690.1, 3690.2 |
-| 2 | `744-760-095-595-001-142-617` | [744] maka kōlaṉ paṭṭaṟai oru kō ūḻiyaṉ | child of [744]-Staff-bearer; One forge; King-King's servant. | 2994.1, 2995.1 |
+| 2 | `704-167` | [704] kūli | [704], wages. | 3690.1, 3690.2 |
+| 2 | `744-760-095-595-001-142-617` | [744] maka kōlaṉ paṭṭaṟai oru kō ūḻiyaṉ | Child of [744], staff-bearer; One forge; King, king's servant. | 2994.1, 2995.1 |
 | 2 | `829-892-400` | [829] vil ciṟ | [829]-Sale, junior. | 1353.1, 1355.1 |
 | 2 | `861-002-236` | kāṇi iru [236] | two shares: [236]. | 2073.1, 2074.1 |
 | 2 | `877-159-400` | nālkāṇi [159] ciṟ | Four shares-[159], junior. | 3283.1, 3610.1 |
 | 2 | `896-154-400` | [896] kā ciṟ | [896]-Keeper, junior. | 1683.1, 1684.1 |
 | 2 | `912-740` | [912] kuṭi | Of the [912] house. | 2023.1, 3903.1 |
-| 2 | `920-060-741-350-504` | tiṅkaḷ? -iṉ orukuṭi kalappai [504] | month in first ward: Plough-[504]. | 491.2, 589.2 |
+| 2 | `920-060-741-350-504` | tiṅkaḷ? -iṉ orukuṭi kalappai [504] | month in first ward: Plough, [504]. | 491.2, 589.2 |
 | 2 | `920-220-892-202-400` | tiṅkaḷ? mīn vil [202] ciṟ | Month-Star-Sale-[202], junior. | 1216.1, 1217.1 |
-| 2 | `920-632-930` | tiṅkaḷ? pal [930] | Month-Many-[930]. | 1396.1, 1397.1 |
+| 2 | `920-632-930` | tiṅkaḷ? pal [930] | Month, many, [930]. | 1396.1, 1397.1 |
 | 1 | `001-415-365-798-740-400` | oru kavar [365] maru- kuṭi ciṟ | Junior of the One-Branch-[365]-Descendant house. | 649.2 |
 | 1 | `001-904-832` | oru irutiṅkaḷ [832] | One two months; [832]. | 1545.1 |
 | 1 | `002-825-060-032-220-233-840-032-740` | iru [825] -iṉ iru mīn vāḷai iṇai iru kuṭi | Of the Inner-Two-Star-Scabbard-fish-Peer-Two house (allowance: two [825]). | 2041.1 |
@@ -2082,7 +2082,7 @@ Per site (faces):
 | 1 | `013-840-740-170-072` | mū iṇai kuṭi [170] [072] | [170] of the Three-Peer house; [072]. | 11.1 |
 | 1 | `015-140-822` | ai ammai [822] | Five ladies; [822]. | 113.1 |
 | 1 | `015-409` | ai [409] | Five [409]. | 2051.1 |
-| 1 | `016-220-776-825-005-909-095-390` | āṟu mīn malar [825] ai [909] kōlaṉ parutti | Six Star; Bloom-[825]; Five [909]; Staff-bearer-Cotton. | 121.1 |
+| 1 | `016-220-776-825-005-909-095-390` | āṟu mīn malar [825] ai [909] kōlaṉ parutti | Six Star; Bloom, [825]; Five [909]; Staff-bearer, cotton. | 121.1 |
 | 1 | `016-405-001-255-324` | āṟu nūl oru mutal [324] | Six lots of one thread; Chief; [324]. | 2912.1 |
 | 1 | `016-853-440-760-740` | āṟu [853] koḷ maka kuṭi | Of the child of Received house (allowance: six [853]). | 2225.1 |
 | 1 | `017-585-090-680-740` | ēḻu kaṉṉi? āḷ [680] kuṭi | Of the Seven-Maiden-Manager-[680] house. | 3647.1 |
@@ -2107,7 +2107,7 @@ Per site (faces):
 | 1 | `032-168-235-233-706-033-807-388-740` | iru [168] vēymīn vāḷai kalam mū [807] aracu kuṭi | Of the Bamboo-star-Scabbard-fish-[807]-King house (allowance: two [168] and three kalam). | 3114.1 |
 | 1 | `032-172-002-705-033-520` | iru [172] iru kalam mū vēḷ | Two lots of two [172]; Three kalam; Chief. | 1445.1 |
 | 1 | `032-220-240-033-812-740` | iru mīn mīmīn mū [812] kuṭi | Of the Two-Star-High-star house (allowance: three [812]). | 2837.1 |
-| 1 | `032-220-455-710` | iru mīn ampu [710] | Two Star; Arrow-[710]. | 1830.1 |
+| 1 | `032-220-455-710` | iru mīn ampu [710] | Two Star; Arrow, [710]. | 1830.1 |
 
 ## Part 3. Multi-face objects read as one record (902 objects with 2 or more faces; 365 with every face whole)
 
@@ -2116,9 +2116,9 @@ Each object: who (house or person) + what (goods words) + amount. Faces are sepa
 - object 153 (seal, Farmana) `371-390 / 371-390` : Spindle-Cotton.
 - object 198 (tablet, Harappa) `692-060-240-603-740 / 034-700` : Four cups, for the High-star-Store house.
 - object 229 (tablet, Harappa) `032-001-904-031-740 / 032-700` : Two cups, for the Three-Dark-moon-One house.
-- object 234 (tablet, Harappa) `590-705-868 / 255-435-156-400` : Chief-Rod-Keeper, junior: chest kalam half share.
+- object 234 (tablet, Harappa) `590-705-868 / 255-435-156-400` : Chief-Rod-Keeper, junior: chest, half a kalam.
 - object 249 (tablet, Harappa) `831-892-400 / 032-700` : Two cups, for Millet-Sale, junior.
-- object 250 (tablet, Harappa) `220 / 705-167` : Star, kalam wages.
+- object 250 (tablet, Harappa) `220 / 705-167` : Star, kalam, wages.
 - object 257 (tablet, Harappa) `920-060-741-176-156 / 032-700` : Two cups, for Tax, keeper.
 - object 260 (tablet, Harappa) `033-700 / 176-740-400` : Three cups, for the junior of the Tax house.
 - object 264 (tablet, Harappa) `032-140-156-400 / 033-700` : Three cups, for Two-Lady-Keeper, junior.
@@ -2130,21 +2130,21 @@ Each object: who (house or person) + what (goods words) + amount. Faces are sepa
 - object 297 (tablet, Harappa) `240-233-520 / 455-740-400` : High-star-Scabbard-fish, chief and the junior of the Arrow house.
 - object 305 (tablet, Harappa) `413 / 692` : Grain, assembly.
 - object 310 (tablet, Harappa) `033-590-416 / 255-033` : Three chests and three chiefs of grain heap.
-- object 313 (tablet, Harappa) `220-550-525 / 032-700` : Two cups of star gate guard.
+- object 313 (tablet, Harappa) `220-550-525 / 032-700` : Two cups of star, gate, guard.
 - object 316 (tablet, Harappa) `240-904-740 / 700-033` : Three cups, for the High-star-Dark-moon house.
 - object 317 (tablet, Harappa) `032-226-400 / 032-700` : Two cups, for Two-Fish-crate, junior.
 - object 371 (tablet, Harappa) `032-700 / 140-001-031-740` : Two cups, for the Lady-Two house.
 - object 373 (tablet, Harappa) `700-033 / 435-003-550` : Three cups and three gates of rod.
 - object 375 (tablet, Harappa) `036-700 / 171-033-700-415` : Six cups and three cups of full measure, branch.
-- object 377 (tablet, Harappa) `700-033 / 705-167` : Three cups of kalam wages.
+- object 377 (tablet, Harappa) `700-033 / 705-167` : Three cups of kalam, wages.
 - object 382 (tablet, Harappa) `034-700 / 140-061-740-400` : Four cups, for the junior of the Lady-Quarter house.
 - object 383 (tablet, Harappa) `032-700 / 140-001-031-740` : Two cups, for the Lady-Two house.
-- object 390 (tablet, Harappa) `590-706-868 / 255-435-156-400` : Chief-Rod-Keeper, junior: chest kalam half share.
+- object 390 (tablet, Harappa) `590-706-868 / 255-435-156-400` : Chief-Rod-Keeper, junior: chest, half a kalam.
 - object 392 (tablet, Harappa) `700-033 / 137-400` : Three cups, for Cultivator, junior.
-- object 394 (tablet, Harappa) `034-700 / 590-741-371-455-004-390` : Four cups and four cottons of chest-first-ward house-spindle-arrow.
+- object 394 (tablet, Harappa) `034-700 / 590-741-371-455-004-390` : Four cups and four cottons of chest, first-ward house, spindle, arrow.
 - object 397 (tablet, Harappa) `034-700 / 231-176-740-565` : Four cups, for the warrior of the First-star-Tax house.
 - object 400 (tablet, Harappa) `032-700 / 140-001-031-740` : Two cups, for the Lady-Two house.
-- object 405 (tablet, Harappa) `817-368-690 / 171-032-031-240-630-740` : Three full measures of banner bound, for the High-star-Many house.
+- object 405 (tablet, Harappa) `817-368-690 / 171-032-031-240-630-740` : Three full measures of banner, bound, for the High-star-Many house.
 - object 406 (tablet, Harappa) `034-700 / 240-100-740-400` : Four cups, for the junior of the High-star-Elder house.
 - object 409 (tablet, Harappa) `700-032 / 861-002-035-405` : Two cups and five threads.
 - object 410 (tablet, Harappa) `700-033 / 240-904-740-400` : Three cups, for the junior of the High-star-Dark-moon house.
@@ -2156,25 +2156,25 @@ Each object: who (house or person) + what (goods words) + amount. Faces are sepa
 - object 427 (tablet, Harappa) `034-700 / 717-740-400` : Four cups, for the junior of the Servant house.
 - object 437 (tablet, Harappa) `700-033 / 240-520` : Three cups, for High-star, chief.
 - object 453 (tablet, Harappa) `032-700 / 491-817-740` : Two cups, for the Horn-Share house.
-- object 459 (tablet, Harappa) `413-892-824 / 415-100-740` : The Branch-Elder house: grain sale price.
+- object 459 (tablet, Harappa) `413-892-824 / 415-100-740` : The Branch-Elder house: grain, sale, price.
 - object 461 (tablet, Harappa) `031-700 / 892-740` : One cup, for the Sale house.
-- object 463 (tablet, Harappa) `817-368-690-032-700 / 176-740-400` : Two cups of banner bound, for the junior of the Tax house.
+- object 463 (tablet, Harappa) `817-368-690-032-700 / 176-740-400` : Two cups of banner, bound, for the junior of the Tax house.
 - object 466 (tablet, Harappa) `820-002 / 003-861` : Three shares.
 - object 467 (tablet, Harappa) `034-700 / 220-176-740` : Four cups, for the Star-Tax house.
-- object 472 (tablet, Harappa) `235-555-526 / 413-892-824` : Bamboo star gate guard, grain sale price.
+- object 472 (tablet, Harappa) `235-555-526 / 413-892-824` : Bamboo-star, gate, guard, grain, sale, price.
 - object 476 (tablet, Harappa) `034-700 / 416-861-002` : Four cups and two shares of grain heap.
 - object 480 (tablet, Harappa) `034-700 / 382-760-740-400` : Four cups, for the junior of the child of King house.
 - object 485 (tablet, Harappa) `220-032-700 / 803-240-415-220-520` : Two cups of star, for Home-High-star-Branch-Star, chief.
 - object 488 (tablet, Harappa) `700-034 / 416-861-002` : Four cups and two shares of grain heap.
 - object 490 (tablet, Harappa) `032-700 / 015-032-740-400` : Two cups, for the junior of the Seven house.
-- object 499 (tablet, Harappa) `091-368-033-700 / 388-740-400-033-700` : Three cups of the pair-banner, for the junior of the King house.
+- object 499 (tablet, Harappa) `091-368-033-700 / 388-740-400-033-700` : Three cups of the pair, banner, for the junior of the King house.
 - object 508 (tablet, Harappa) `034-700 / 222-740-151` : Four cups, for the keeper of the Shut-in-fish house.
 - object 509 (tablet, Harappa) `034-700 / 222-740-151` : Four cups, for the keeper of the Shut-in-fish house.
 - object 515 (tablet, Harappa) `033-700 / 240-520` : Three cups, for High-star, chief.
 - object 516 (tablet, Harappa) `700-033 / 255-435-690-740` : Three cups, for the Chief-Rod-Ally house.
 - object 518 (tablet, Harappa) `034-700 / 416-861-002` : Four cups and two shares of grain heap.
 - object 519 (tablet, Harappa) `032-700 / 390-155-004-390` : Two cups and four cottons, for Cotton, keeper.
-- object 532 (tablet, Harappa) `590-705-868 / 550-525-400-034-700` : Four cups of chest kalam half share, for Gate-Guard, junior.
+- object 532 (tablet, Harappa) `590-705-868 / 550-525-400-034-700` : Four cups of chest, half a kalam, for Gate-Guard, junior.
 - object 535 (tablet, Harappa) `840-032-740 / 840-032-740` : The Peer-Two house.
 - object 549 (tablet, Harappa) `700-034 / 027-032-740-400` : Four cups, for the junior of the Nine-Two house.
 - object 550 (tablet, Harappa) `033-700 / 519-176-740-400` : Three cups, for the junior of the Fence-Tax house.
@@ -2198,18 +2198,18 @@ Each object: who (house or person) + what (goods words) + amount. Faces are sepa
 - object 642 (tablet, Harappa) `137 / 034-700` : Four cups of cultivator.
 - object 643 (tablet, Harappa) `032-255-740 / 032-700` : Two cups, for the Two-Chief house.
 - object 646 (tablet, Harappa) `034-700 / 201-060-031-176-740` : Four cups, for the Rain-season-Inner-One-Tax house.
-- object 647 (tablet, Harappa) `255-435-156-400 / 590-705-868` : Chief-Rod-Keeper, junior: chest kalam half share.
-- object 653 (tablet, Harappa) `220-705-033-550-525-400 / 413-575-335-711-033-700` : Three kalam and three cups of grain-great measure-town-vaḷḷam measure, for Star-Gate-Guard, junior.
-- object 654 (tablet, Harappa) `388-740-400 / 091-368` : The junior of the King house: the pair-banner.
+- object 647 (tablet, Harappa) `255-435-156-400 / 590-705-868` : Chief-Rod-Keeper, junior: chest, half a kalam.
+- object 653 (tablet, Harappa) `220-705-033-550-525-400 / 413-575-335-711-033-700` : Three kalam and three cups of grain, great measure, town, vaḷḷam measure, for Star-Gate-Guard, junior.
+- object 654 (tablet, Harappa) `388-740-400 / 091-368` : The junior of the King house: the pair, banner.
 - object 659 (tablet, Harappa) `034-700 / 027-032-740-400` : Four cups, for the junior of the Nine-Two house.
 - object 665 (tablet, Harappa) `034-700 / 416-861-002` : Four cups and two shares of grain heap.
-- object 671 (tablet, Harappa) `590-706-868 / 255-435-156-400` : Chief-Rod-Keeper, junior: chest kalam half share.
+- object 671 (tablet, Harappa) `590-706-868 / 255-435-156-400` : Chief-Rod-Keeper, junior: chest, half a kalam.
 - object 675 (tablet, Harappa) `700-033 / 235-923-740` : Three cups, for the Bamboo-star-Ivory house.
-- object 682 (tablet, Harappa) `032-700 / 820-002-554-526` : Two cups of threshing floor guard.
+- object 682 (tablet, Harappa) `032-700 / 820-002-554-526` : Two cups of threshing-floor, guard.
 - object 686 (tablet, Harappa) `034-700 / 692-060-240-603-740` : Four cups, for the High-star-Store house.
 - object 693 (tablet, Harappa) `033-700 / 003-861 / 003-156` : Three cups and three shares and three porters.
 - object 729 (tablet, Harappa) `235-220-176-740 / 861-002-240-482-740` : Two shares the Bamboo-star-Star-Tax house and the High-star-Hill-share house.
-- object 732 (tablet, Harappa) `033-700 / 900-368` : Three cups of month banner.
+- object 732 (tablet, Harappa) `033-700 / 900-368` : Three cups of month, banner.
 - object 740 (tablet, Harappa) `792-740-090 / 034-700` : Four cups, for the manager of the Royal house.
 - object 743 (tablet, Harappa) `240-520 / 034-700` : Four cups, for High-star, chief.
 - object 749 (tablet, Harappa) `032-700 / 798-017-575-740-400` : Two cups and seven great measures, for the junior of the Descendant house.
@@ -2218,13 +2218,13 @@ Each object: who (house or person) + what (goods words) + amount. Faces are sepa
 - object 769 (tablet, Harappa) `003-861 / 034-700 / 003-156` : Three shares and four cups and three porters.
 - object 772 (tablet, Harappa) `034-700 / 176-156` : Four cups, for Tax, keeper.
 - object 773 (tablet, Harappa) `034-700 / 176-156` : Four cups, for Tax, keeper.
-- object 774 (tablet, Harappa) `033-700 / 091-368` : Three cups of the pair-banner.
+- object 774 (tablet, Harappa) `033-700 / 091-368` : Three cups of the pair, banner.
 - object 780 (tablet, Harappa) `034-700 / 690-154-400` : Four cups, for Ally-Keeper, junior.
 - object 784 (tablet, Harappa) `034-700 / 235-740-151` : Four cups, for the keeper of the Bamboo-star house.
 - object 786 (tablet, Harappa) `033-255 / 033-590-416` : Three chiefs and three chests of grain heap.
 - object 794 (tablet, Harappa) `034-700 / 003-861 / 003-154` : Four cups and three shares and three porters.
 - object 801 (tablet, Harappa) `032-700 / 491-817-740-400` : Two cups, for the junior of the Horn-Share house.
-- object 806 (tablet, Harappa) `700-824 / 240-152-740-400` : The junior of the High-star-Keeper house: cup price.
+- object 806 (tablet, Harappa) `700-824 / 240-152-740-400` : The junior of the High-star-Keeper house: cup, price.
 - object 814 (tablet, Harappa) `032-388-480-001 / 034-700` : Two King and one seed-weight and four cups.
 - object 815 (tablet, Harappa) `700-034 / 226-400` : Four cups, for Fish-crate, junior.
 - object 829 (tablet, Harappa) `032-700 / 741-032-840-700` : Two cups and two pairs of first-ward house, cup.
@@ -2252,7 +2252,7 @@ Each object: who (house or person) + what (goods words) + amount. Faces are sepa
 - object 861 (tablet, Harappa) `003-861 / 034-700 / 003-156` : Three shares and four cups and three porters.
 - object 863 (tablet, Harappa) `033-700 / 831-892-400` : Three cups, for Millet-Sale, junior.
 - object 866 (tablet, Harappa) `034-700 / 032-388-480-031` : Four cups and two king and one seed-weight.
-- object 867 (tablet, Harappa) `240-705-033-550-525-400 / 413-575-335-711-033-700` : Three kalam and three cups of grain-great measure-town-vaḷḷam measure, for High-star-Gate-Guard, junior.
+- object 867 (tablet, Harappa) `240-705-033-550-525-400 / 413-575-335-711-033-700` : Three kalam and three cups of grain, great measure, town, vaḷḷam measure, for High-star-Gate-Guard, junior.
 - object 869 (tablet, Harappa) `033-700 / 142-151-400` : Three cups, for King-Keeper, junior.
 - object 870 (tablet, Harappa) `034-700 / 003-861 / 003-156` : Four cups and three shares and three porters.
 - object 876 (tablet, Harappa) `700-032-032 / 033-033-520` : Four cups and six chiefs.
@@ -2263,26 +2263,26 @@ Each object: who (house or person) + what (goods words) + amount. Faces are sepa
 - object 902 (tablet, Harappa) `235-240-740-090 / 220-032-590-690` : Two chests of star, bound, for the manager of the Bamboo-star-High-star house.
 - object 904 (tablet, Harappa) `235-240-740-090 / 220-032-590-690` : Two chests of star, bound, for the manager of the Bamboo-star-High-star house.
 - object 913 (tablet, Harappa) `415-220-520 / 415-220-520` : Branch-Star, chief.
-- object 916 (tablet, Harappa) `240-705-033-550-525-400 / 413-575-335-711-033-700` : Three kalam and three cups of grain-great measure-town-vaḷḷam measure, for High-star-Gate-Guard, junior.
+- object 916 (tablet, Harappa) `240-705-033-550-525-400 / 413-575-335-711-033-700` : Three kalam and three cups of grain, great measure, town, vaḷḷam measure, for High-star-Gate-Guard, junior.
 - object 921 (tablet, Harappa) `033-700 / 140-061-740-400` : Three cups, for the junior of the Lady-Quarter house.
 - object 923 (tablet, Harappa) `700-032 / 705-717-388-740-400` : Two cups, for the junior of the Ship-Servant-King house.
 - object 930 (tablet, Harappa) `033-700 / 032-790-740` : Three cups, for the Two-Gem house.
 - object 937 (tablet, Harappa) `235-220-176-740 / 861-002-240-482-740` : Two shares the Bamboo-star-Star-Tax house and the High-star-Hill-share house.
 - object 938 (tablet, Harappa) `700-034 / 255-435-690-740` : Four cups, for the Chief-Rod-Ally house.
-- object 945 (tablet, Harappa) `033-700 / 233-550-526` : Three cups of scabbard fish gate guard.
-- object 1018 (tablet, Harappa) `034-700 / 413-137` : Four cups of grain cultivator.
+- object 945 (tablet, Harappa) `033-700 / 233-550-526` : Three cups of scabbard-fish, gate, guard.
+- object 1018 (tablet, Harappa) `034-700 / 413-137` : Four cups of grain, cultivator.
 - object 1021 (tablet, Harappa) `175-482-335-740-400 / 032-700` : Two cups, for the junior of the Tax-Hill-share-Town house.
-- object 1023 (tablet, Harappa) `240-482-752-740 / 745-700` : The High-star child of Hill-share house: third-ward house-cup.
+- object 1023 (tablet, Harappa) `240-482-752-740 / 745-700` : The High-star child of Hill-share house: third-ward house, cup.
 - object 1024 (tablet, Harappa) `700-033 / 861-002-031-892-803-740` : Three cups, for the One-Sale-Home house.
 - object 1051 (tablet, Harappa) `175-817-740-400 / 033-033` : Six, for the junior of the Tax-Share house.
 - object 1052 (tablet, Harappa) `491-817-740-400 / 034-700` : Four cups, for the junior of the Horn-Share house.
 - object 1057 (tablet, Harappa) `240-590-390-740 / 033-700` : Three cups, for the High-star-Boxed-cotton house.
 - object 1058 (tablet, Harappa) `240-636-690-740 / 033-700` : Three cups, for the High-star-Many-Ally house.
-- object 1061 (tablet, Harappa) `233-550-527 / 032-700` : Two cups of scabbard fish gate guard.
+- object 1061 (tablet, Harappa) `233-550-527 / 032-700` : Two cups of scabbard-fish, gate, guard.
 - object 1168 (seal, Harappa) `861-741 / 861-741-240-630-740` : Share First-ward and the First-ward-High-star-Many house.
 - object 1201 (seal, Harappa) `468-806-154-400 / 017-090` : N loads of produce, carried by the porter and seven managers of junior.
 - object 1215 (tablet, Harappa) `840-032-740 / 840-032-740` : The Peer-Two house.
-- object 1236 (tablet, Harappa) `850-741-048-740 / 413-575-335-711-033-700` : Three cups of grain-great measure-town-vaḷḷam measure, for the Share-First-ward-The Seven house.
+- object 1236 (tablet, Harappa) `850-741-048-740 / 413-575-335-711-033-700` : Three cups of grain, great measure, town, vaḷḷam measure, for the Share-First-ward-Seven house.
 - object 1240 (tablet, Harappa) `055-255-435-690-921-400 / 032-700` : Two cups, for Twelve-Chief-Rod-Ally-Bow, junior.
 - object 1246 (tablet, Harappa) `034-700 / 137-400` : Four cups, for Cultivator, junior.
 - object 1249 (tablet, Harappa) `176-336-740 / 033-700` : Three cups, for the Tax-Town house.
@@ -2290,7 +2290,7 @@ Each object: who (house or person) + what (goods words) + amount. Faces are sepa
 - object 1256 (tablet, Harappa) `617-892-740-400 / 033-700` : Three cups, for the junior of the King's servant-Sale house.
 - object 1258 (tablet, Harappa) `820-002-240-220-520 / 033-700` : Three cups, for High-star-Star, chief.
 - object 1260 (tablet, Harappa) `176-740-400 / 033-700` : Three cups, for the junior of the Tax house.
-- object 1262 (tablet, Harappa) `817-368-690 / 679-840-032-740` : Share the Throne-Peer-Two house: banner bound.
+- object 1262 (tablet, Harappa) `817-368-690 / 679-840-032-740` : Share the Throne-Peer-Two house: banner, bound.
 - object 1263 (tablet, Harappa) `692-060-240-642-740 / 033-700` : Three cups, for the High-star-Many house.
 - object 1269 (tablet, Harappa) `820-002-104 / 034` : Four of goldsmith.
 - object 1273 (tablet, Harappa) `798-240-233-320-920-740-400 / 033-700` : Three cups, for the junior of the Descendant-High-star-Scabbard-fish-Ration measure-Month house.
@@ -2298,14 +2298,14 @@ Each object: who (house or person) + what (goods words) + amount. Faces are sepa
 - object 1276 (tablet, Harappa) `240-100-740-400 / 032-700` : Two cups, for the junior of the High-star-Elder house.
 - object 1318 (tablet, Harappa) `920-017-575-740-400 / 033-700` : Three cups, for the junior of the Month-Seven-Great measure house.
 - object 1319 (tablet, Harappa) `706-630-336-151-400 / 034-700` : Four cups, for Ship-Many-Town-Keeper, junior.
-- object 1321 (tablet, Harappa) `590-706-868 / 255-435-156-400` : Chief-Rod-Keeper, junior: chest kalam half share.
-- object 1322 (tablet, Harappa) `817-368-690 / 495-776-740-400` : Share the junior of the Horn-Bloom house: banner bound.
-- object 1323 (tablet, Harappa) `413-892-824 / 171-032-031-240-636-740-400` : Three full measures of grain sale price, for the junior of the High-star-Many house.
+- object 1321 (tablet, Harappa) `590-706-868 / 255-435-156-400` : Chief-Rod-Keeper, junior: chest, half a kalam.
+- object 1322 (tablet, Harappa) `817-368-690 / 495-776-740-400` : Share the junior of the Horn-Bloom house: banner, bound.
+- object 1323 (tablet, Harappa) `413-892-824 / 171-032-031-240-636-740-400` : Three full measures of grain, sale, price, for the junior of the High-star-Many house.
 - object 1324 (tablet, Harappa) `004-700-220 / 416-220-740-760-400` : Four cups of star, junior, for Child of of the Grain-heap-Star house.
 - object 1325 (tablet, Harappa) `027-032-740-400 / 033-700` : Three cups, for the junior of the Nine-Two house.
 - object 1327 (tablet, Harappa) `031-861-003 / 061-255-740` : One lot of three shares, for the Quarter-Chief house.
 - object 1328 (tablet, Harappa) `840-032-740 / 033-700` : Three cups, for the Peer-Two house.
-- object 1329 (tablet, Harappa) `900-368 / 034-700` : Four cups of month banner.
+- object 1329 (tablet, Harappa) `900-368 / 034-700` : Four cups of month, banner.
 - object 1330 (tablet, Harappa) `176-740-400 / 034-700` : Four cups, for the junior of the Tax house.
 - object 1331 (tablet, Harappa) `176-740-400 / 033-700` : Three cups, for the junior of the Tax house.
 - object 1334 (tablet, Harappa) `176-740-400 / 034-700` : Four cups, for the junior of the Tax house.
@@ -2323,8 +2323,8 @@ Each object: who (house or person) + what (goods words) + amount. Faces are sepa
 - object 1351 (tablet, Harappa) `220-520 / 033-700` : Three cups, for Star, chief.
 - object 1362 (tablet, Harappa) `176-336-740-400 / 032-700` : Two cups, for the junior of the Tax-Town house.
 - object 1363 (tablet, Harappa) `877-861-740 / 033-700` : Three cups, for the Four shares-Tribute house.
-- object 1364 (tablet, Harappa) `220-550-526 / 033-700` : Three cups of star gate guard.
-- object 1366 (tablet, Harappa) `415-220-520 / 090-700` : Branch-Star, chief: manager cup.
+- object 1364 (tablet, Harappa) `220-550-526 / 033-700` : Three cups of star, gate, guard.
+- object 1366 (tablet, Harappa) `415-220-520 / 090-700` : Branch-Star, chief: manager, cup.
 - object 1369 (tablet, Harappa) `240-642-690-740 / 034-700` : Four cups, for the High-star-Many-Ally house.
 - object 1370 (tablet, Harappa) `013-060-032-740-400 / 034-700` : Four cups, for the junior of the Three-within-Two house.
 - object 1371 (seal, Harappa) `176-740-400 / 033-700` : Three cups, for the junior of the Tax house.
@@ -2333,34 +2333,34 @@ Each object: who (house or person) + what (goods words) + amount. Faces are sepa
 - object 1374 (tablet, Harappa) `176-740-400 / 033-700 / 033-700` : Three cups, for the junior of the Tax house.
 - object 1375 (tablet, Harappa) `033-700 / 176-740-400` : Three cups, for the junior of the Tax house.
 - object 1376 (tablet, Harappa) `176-740-400 / 033-700` : Three cups, for the junior of the Tax house.
-- object 1378 (tablet, Harappa) `220-550-526 / 700-032` : Two cups of star gate guard.
+- object 1378 (tablet, Harappa) `220-550-526 / 700-032` : Two cups of star, gate, guard.
 - object 1386 (seal, Harappa) `700 / 033` : Three of the measurer.
 - object 1388 (seal, Harappa) `741-390-741-031-705-033-368 / 033-700` : One lot of three kalam and three cups, for First-ward-Cotton-First-ward and Banner.
 - object 1540 (seal, Harappa) `861-002-032-070-590-390-740 / 861-002-032-070-590-390-740` : Two shares the Two-Arrow-Boxed-cotton house.
 - object 1602 (tablet, Harappa) `817-002-240-904-740 / 032-700` : Two cups, for the High-star-Dark-moon house.
 - object 1607 (tablet, Harappa) `820-002-137 / 033-700` : Three cups of cultivator.
-- object 1620 (tablet, Harappa) `904-705 / 032-700` : Two cups of two months-kalam.
+- object 1620 (tablet, Harappa) `904-705 / 032-700` : Two cups of two months, kalam.
 - object 1633 (tablet, Harappa) `240-590-390-740 / 033-700` : Three cups, for the High-star-Boxed-cotton house.
-- object 1637 (tablet, Harappa) `745-700 / 240-482-752-740` : The High-star child of Hill-share house: third-ward house-cup.
+- object 1637 (tablet, Harappa) `745-700 / 240-482-752-740` : The High-star child of Hill-share house: third-ward house, cup.
 - object 1653 (tablet, Harappa) `255-435-156-400 / 220-440-154-400` : Chief-Rod-Keeper, junior and Star-Received-Keeper, junior.
 - object 1656 (tablet, Harappa) `697 / 790-717-740` : The Gem-Servant house: woven.
 - object 1657 (tablet, Harappa) `790-717-740 / 697` : The Gem-Servant house: woven.
 - object 1659 (tablet, Harappa) `798-415-220-740-400 / 033-700` : Three cups, for the junior of the Descendant-Branch-Star house.
 - object 1662 (tablet, Harappa) `416-840-151 / 033-700` : Three cups, for Grain-heap-Peer, keeper.
-- object 1665 (tablet, Harappa) `741-530-390-002-803-798-740 / 413-575-335-711-033-700` : Three cups of grain-great measure-town-vaḷḷam measure, for the First-ward-Proclamation-Cotton-Two-Home-Descendant house.
-- object 1666 (tablet, Harappa) `240-705-033-550-525-400 / 413-575-335-711-033-700` : Three kalam and three cups of grain-great measure-town-vaḷḷam measure, for High-star-Gate-Guard, junior.
+- object 1665 (tablet, Harappa) `741-530-390-002-803-798-740 / 413-575-335-711-033-700` : Three cups of grain, great measure, town, vaḷḷam measure, for the First-ward-Proclamation-Cotton-Two-Home-Descendant house.
+- object 1666 (tablet, Harappa) `240-705-033-550-525-400 / 413-575-335-711-033-700` : Three kalam and three cups of grain, great measure, town, vaḷḷam measure, for High-star-Gate-Guard, junior.
 - object 1668 (tablet, Harappa) `700-032 / 104-004-390` : Two cups and four cottons of goldsmith.
 - object 1669 (tablet, Harappa) `032-700 / 817-004-390` : Two cups of cotton.
 - object 1671 (tablet, Harappa) `061-142-400-740 / 034-700` : Four cups, for the Quarter-King-Junior house.
 - object 1672 (tablet, Harappa) `700-033 / 240-904-740` : Three cups, for the High-star-Dark-moon house.
 - object 1675 (tablet, Harappa) `098 / 032-700` : Two cups of attendant.
-- object 1677 (tablet, Harappa) `413-892-824 / 415-220-520` : Branch-Star, chief: grain sale price.
-- object 1678 (tablet, Harappa) `413-892-824 / 033-700-176-740-400` : Three cups of grain sale price, for the junior of the Tax house.
+- object 1677 (tablet, Harappa) `413-892-824 / 415-220-520` : Branch-Star, chief: grain, sale, price.
+- object 1678 (tablet, Harappa) `413-892-824 / 033-700-176-740-400` : Three cups of grain, sale, price, for the junior of the Tax house.
 - object 1680 (tablet, Harappa) `016-220-520-400 / 700-033` : Three cups, for Six-Star-Chief, junior.
 - object 1681 (tablet, Harappa) `033-384-740-400 / 033-700` : Three cups, for the junior of the Three-King house.
 - object 1685 (tablet, Harappa) `235-232-400 / 700-032` : Two cups, for Bamboo-star-Cluster-star, junior.
-- object 1687 (tablet, Harappa) `455-370 / 032-700` : Two cups of arrow spindle.
-- object 1690 (tablet, Harappa) `415-100-820-032 / 033-700` : Two quarters and three cups of branch elder.
+- object 1687 (tablet, Harappa) `455-370 / 032-700` : Two cups of arrow, spindle.
+- object 1690 (tablet, Harappa) `415-100-820-032 / 033-700` : Two quarters and three cups of branch, elder.
 - object 1692 (tablet, Harappa) `036-700 / 171-035-415` : Six cups and five full measures of branch.
 - object 1695 (tablet, Harappa) `861-002-240-482-740 / 235-220-176-740` : Two shares the High-star-Hill-share house and the Bamboo-star-Star-Tax house.
 - object 1696 (tablet, Harappa) `861-002-240-482-740 / 235-220-176-740` : Two shares the High-star-Hill-share house and the Bamboo-star-Star-Tax house.
@@ -2375,7 +2375,7 @@ Each object: who (house or person) + what (goods words) + amount. Faces are sepa
 - object 1711 (tablet, Harappa) `033-700 / 692-001-240-642-740` : Three cups, for the Assembly-One-High-star-Many house.
 - object 1712 (tablet, Harappa) `034-700 / 692-060-240-636-740` : Four cups, for the High-star-Many house.
 - object 1715 (tablet, Harappa) `817-368 / 840-032-740` : Share the Peer-Two house: banner.
-- object 1719 (tablet, Harappa) `820-002-554-526 / 032-700` : Two cups of threshing floor guard.
+- object 1719 (tablet, Harappa) `820-002-554-526 / 032-700` : Two cups of threshing-floor, guard.
 - object 1724 (tablet, Harappa) `817-002-495-615-740 / 033-700` : Three cups, for the Horn-Field house.
 - object 1725 (tablet, Harappa) `700-032 / 140-400` : Two cups, for Lady, junior.
 - object 1732 (tablet, Harappa) `705-031-100-740-400 / 033-700` : One kalam and three cups, for the junior of the Elder house.
@@ -2385,14 +2385,14 @@ Each object: who (house or person) + what (goods words) + amount. Faces are sepa
 - object 1741 (tablet, Harappa) `235-590-390-740 / 033-700` : Three cups, for the Bamboo-star-Boxed-cotton house.
 - object 1758 (tablet, Harappa) `013-840-740-400 / 003-798-617` : Three descendants of king's servant, for the junior of the Three-Peer house.
 - object 1774 (tablet, Harappa) `176-336-740-400 / 700-034` : Four cups, for the junior of the Tax-Town house.
-- object 1776 (tablet, Harappa) `240-636-740-400 / 125-700` : The junior of the High-star-Many house: hunter cup.
-- object 1778 (tablet, Harappa) `590-705-868 / 255-435-156-400` : Chief-Rod-Keeper, junior: chest kalam half share.
-- object 1779 (tablet, Harappa) `590-706-868 / 255-435-156-400` : Chief-Rod-Keeper, junior: chest kalam half share.
-- object 1781 (tablet, Harappa) `590-705-868 / 240-231-520-400` : High-star-First-star-Chief, junior: chest kalam half share.
+- object 1776 (tablet, Harappa) `240-636-740-400 / 125-700` : The junior of the High-star-Many house: hunter, cup.
+- object 1778 (tablet, Harappa) `590-705-868 / 255-435-156-400` : Chief-Rod-Keeper, junior: chest, half a kalam.
+- object 1779 (tablet, Harappa) `590-706-868 / 255-435-156-400` : Chief-Rod-Keeper, junior: chest, half a kalam.
+- object 1781 (tablet, Harappa) `590-705-868 / 240-231-520-400` : High-star-First-star-Chief, junior: chest, half a kalam.
 - object 1782 (tablet, Harappa) `491-817-740-400 / 033-700` : Three cups, for the junior of the Horn-Share house.
-- object 1785 (tablet, Harappa) `240-760-740 / 817-368-690-034-700` : Four cups of banner bound, for the child of High-star house.
-- object 1786 (tablet, Harappa) `002-840-032-740 / 817-368-645-900-033-700` : Three cups of banner-gold weight-month, for the Two-Peer-Two house.
-- object 1787 (tablet, Harappa) `413-892-824 / 171-032-031-240-636-740-400` : Three full measures of grain sale price, for the junior of the High-star-Many house.
+- object 1785 (tablet, Harappa) `240-760-740 / 817-368-690-034-700` : Four cups of banner, bound, for the child of High-star house.
+- object 1786 (tablet, Harappa) `002-840-032-740 / 817-368-645-900-033-700` : Three cups of banner, gold weight, month, for the Two-Peer-Two house.
+- object 1787 (tablet, Harappa) `413-892-824 / 171-032-031-240-636-740-400` : Three full measures of grain, sale, price, for the junior of the High-star-Many house.
 - object 1792 (tablet, Harappa) `416-861-002 / 034-700` : Two shares and four cups of grain heap.
 - object 1793 (tablet, Harappa) `416-220-760-740-400 / 004-700-220` : Four cups of star, for the junior of the Grain-heap child of Star house.
 - object 1801 (tablet, Harappa) `003-861 / 061-255-740` : Three shares, for the Quarter-Chief house.
@@ -2400,9 +2400,9 @@ Each object: who (house or person) + what (goods words) + amount. Faces are sepa
 - object 1803 (tablet, Harappa) `003-861 / 031-520` : Three shares and one chief.
 - object 1804 (tablet, Harappa) `013-840-740 / 033-700` : Three cups, for the Three-Peer house.
 - object 1805 (tablet, Harappa) `013-840-740 / 033-700` : Three cups, for the Three-Peer house.
-- object 1807 (tablet, Harappa) `033-700 / 900-368` : Three cups of month banner.
-- object 1808 (tablet, Harappa) `033-700 / 900-368` : Three cups of month banner.
-- object 1809 (tablet, Harappa) `033-700 / 900-368` : Three cups of month banner.
+- object 1807 (tablet, Harappa) `033-700 / 900-368` : Three cups of month, banner.
+- object 1808 (tablet, Harappa) `033-700 / 900-368` : Three cups of month, banner.
+- object 1809 (tablet, Harappa) `033-700 / 900-368` : Three cups of month, banner.
 - object 1810 (tablet, Harappa) `004-900-740 / 032-700` : Two cups, for the Four-Moon house.
 - object 1813 (tablet, Harappa) `700-034 / 176-740-400` : Four cups, for the junior of the Tax house.
 - object 1814 (tablet, Harappa) `033-700 / 176-740-400` : Three cups, for the junior of the Tax house.
@@ -2418,53 +2418,53 @@ Each object: who (house or person) + what (goods words) + amount. Faces are sepa
 - object 1839 (tablet, Harappa) `176-740-400 / 032-700` : Two cups, for the junior of the Tax house.
 - object 1842 (tablet, Harappa) `240-636-690-740 / 032-700` : Two cups, for the High-star-Many-Ally house.
 - object 1843 (tablet, Harappa) `240-636-690-740 / 032-700` : Two cups, for the High-star-Many-Ally house.
-- object 1845 (tablet, Harappa) `032-700 / 233-550-526` : Two cups of scabbard fish gate guard.
+- object 1845 (tablet, Harappa) `032-700 / 233-550-526` : Two cups of scabbard-fish, gate, guard.
 - object 1852 (tablet, Harappa) `382-760-740 / 032-700` : Two cups, for the child of King house.
 - object 1853 (tablet, Harappa) `137-400 / 033-700` : Three cups, for Cultivator, junior.
 - object 1855 (tablet, Harappa) `176-740-400 / 033-700` : Three cups, for the junior of the Tax house.
 - object 1856 (tablet, Harappa) `033-700 / 176-740-400` : Three cups, for the junior of the Tax house.
 - object 1858 (seal, Harappa) `031-388-740 / 034-700` : Four cups, for the One-King house.
 - object 1861 (tablet, Harappa) `034-700 / 255-435-156` : Four cups, for Chief-Rod, keeper.
-- object 1864 (tablet, Harappa) `413-892-824 / 171-032-031-240-636-740-400` : Three full measures of grain sale price, for the junior of the High-star-Many house.
+- object 1864 (tablet, Harappa) `413-892-824 / 171-032-031-240-636-740-400` : Three full measures of grain, sale, price, for the junior of the High-star-Many house.
 - object 1945 (pot, Kalibangan) `700-798-740 / 032` : Two, for the Cup-Descendant house.
 - object 2176 (seal, Mohenjo-daro) `798-017-575-740-679 / 575-740-679` : Seven great measures, for the throne of the Descendant house and the throne of the Great measure house.
-- object 2322 (tablet, Mohenjo-daro) `690-323 / 550-060-690-740` : Gate the Ally house: bound ration.
-- object 2367 (tablet, Mohenjo-daro) `705-167 / 705-167` : Kalam wages.
-- object 2432 (tablet, Mohenjo-daro) `220-840-032-740 / 220-798-550-527` : The Star-Peer-Two house: star descendant gate guard.
+- object 2322 (tablet, Mohenjo-daro) `690-323 / 550-060-690-740` : Gate the Ally house: bound, ration.
+- object 2367 (tablet, Mohenjo-daro) `705-167 / 705-167` : Kalam, wages.
+- object 2432 (tablet, Mohenjo-daro) `220-840-032-740 / 220-798-550-527` : The Star-Peer-Two house: star, descendant, gate, guard.
 - object 2488 (copper tablet, Mohenjo-daro) `003-422 / 705-033-923-740-001` : Three fields and three kalam and one, for the Ivory house.
 - object 2836 (seal, Mohenjo-daro) `575-031 / 575-031-002-003-390` : One great measure and six cottons, for Great measure.
-- object 2934 (tablet, Mohenjo-daro) `706-167 / 706-167` : Kalam wages.
+- object 2934 (tablet, Mohenjo-daro) `706-167 / 706-167` : Kalam, wages.
 - object 2955 (tablet, Mohenjo-daro) `540 / 473-806-158-400` : N loads of produce, carried by the porter of rice measure, junior.
 - object 2978 (seal, Mohenjo-daro) `323-690 / 550-060-690-740` : Gate Ration-Ally and the Ally house.
-- object 2987 (copper tablet, Mohenjo-daro) `003-700-900-165 / 032-220-176-740` : Three cups of month day, for the Two-Star-Tax house.
-- object 2988 (copper tablet, Mohenjo-daro) `003-700-900-165 / 032-220-176-740` : Three cups of month day, for the Two-Star-Tax house.
-- object 2989 (copper tablet, Mohenjo-daro) `005-706 / 233-585-407` : Five kalam of scabbard fish maiden kindred.
-- object 2990 (copper tablet, Mohenjo-daro) `005-706 / 233-585-407` : Five kalam of scabbard fish maiden kindred.
-- object 2991 (copper tablet, Mohenjo-daro) `005-706 / 233-585-407` : Five kalam of scabbard fish maiden kindred.
+- object 2987 (copper tablet, Mohenjo-daro) `003-700-900-165 / 032-220-176-740` : Three cups of month, day, for the Two-Star-Tax house.
+- object 2988 (copper tablet, Mohenjo-daro) `003-700-900-165 / 032-220-176-740` : Three cups of month, day, for the Two-Star-Tax house.
+- object 2989 (copper tablet, Mohenjo-daro) `005-706 / 233-585-407` : Five kalam of scabbard-fish, maiden, kindred.
+- object 2990 (copper tablet, Mohenjo-daro) `005-706 / 233-585-407` : Five kalam of scabbard-fish, maiden, kindred.
+- object 2991 (copper tablet, Mohenjo-daro) `005-706 / 233-585-407` : Five kalam of scabbard-fish, maiden, kindred.
 - object 3044 (copper tablet, Mohenjo-daro) `861-368-001-142-617 / 235-233-222-740` : One king of banner, king's servant, for the Bamboo-star-Scabbard-fish-Shut-in-fish house.
 - object 3556 (seal, Mohenjo-daro) `034-220-520 / 861-002-255-435-690-740` : Two shares Four-Star, chief and the Chief-Rod-Ally house.
 - object 3566 (other, Mohenjo-daro) `031-156 / 031-156` : One porter.
 - object 3706 (tablet, Mohenjo-daro) `540 / 467-806-158-400` : N loads of produce, carried by the porter of rice measure, junior.
 - object 3714 (tablet, Mohenjo-daro) `384-740 / 384-740 / 384-740` : The King house.
-- object 3725 (tablet, Mohenjo-daro) `323-690 / 550-060-690-740` : Gate the Ally house: ration bound.
-- object 3726 (tablet, Mohenjo-daro) `323-690 / 550-060-690-740` : Gate the Ally house: ration bound.
+- object 3725 (tablet, Mohenjo-daro) `323-690 / 550-060-690-740` : Gate the Ally house: ration, bound.
+- object 3726 (tablet, Mohenjo-daro) `323-690 / 550-060-690-740` : Gate the Ally house: ration, bound.
 - object 3730 (copper tablet, Mohenjo-daro) `806-231-176-740 / 590-407-740` : The Bounty-First-star-Tax house and the Chest-Kindred house.
-- object 3734 (copper tablet, Mohenjo-daro) `415-220-845-407 / 590-405-100-740-790` : The gem of the Chest-Thread-Elder house: branch star sheaf bundle kindred.
-- object 3735 (copper tablet, Mohenjo-daro) `142-617-001-004-407 / 900-165` : Five kindreds of king-king's servant, month day.
+- object 3734 (copper tablet, Mohenjo-daro) `415-220-845-407 / 590-405-100-740-790` : The gem of the Chest-Thread-Elder house: branch, star, sheaf-bundle, kindred.
+- object 3735 (copper tablet, Mohenjo-daro) `142-617-001-004-407 / 900-165` : Five kindreds of king, king's servant, month, day.
 - object 3737 (copper tablet, Mohenjo-daro) `035 / 773-740` : Five, for the Child of house.
 - object 3820 (pot, Mohenjo-daro) `033-151 / 033-151` : Three porters.
-- object 3846 (tablet, Mohenjo-daro) `370-390 / 370-390` : Spindle cotton.
+- object 3846 (tablet, Mohenjo-daro) `370-390 / 370-390` : Spindle, cotton.
 - object 3868 (tag or sealing, Rakhigarhi) `820-032-130 / 820-032-130` : Two quarters husbandman.
 - object 3932 (tablet, Harappa) `034-700 / 176-100-740` : Four cups, for the Tax-Elder house.
 - object 3949 (tablet, Harappa) `850-740 / 850-740` : The Share house.
 - object 3959 (tablet, Harappa) `817-002-240-904-740 / 032-700` : Two cups, for the High-star-Dark-moon house.
 - object 3970 (tablet, Harappa) `861-002-240-482-740 / 235-220-176-740` : Two shares the High-star-Hill-share house and the Bamboo-star-Star-Tax house.
 - object 3971 (tablet, Harappa) `861-002-240-482-740 / 235-220-176-740` : Two shares the High-star-Hill-share house and the Bamboo-star-Star-Tax house.
-- object 3976 (tablet, Harappa) `817-368-690 / 679-840-032-740` : Share the Throne-Peer-Two house: banner bound.
+- object 3976 (tablet, Harappa) `817-368-690 / 679-840-032-740` : Share the Throne-Peer-Two house: banner, bound.
 - object 3980 (tablet, Harappa) `742 / 742 / 742` : Second-ward house.
 - object 4016 (tablet, Mohenjo-daro) `927-740-031-095 / 927-740` : One staff-bearer, for the Two-moons house.
-- object 4031 (tablet, Harappa) `240-636-740-400 / 125-700` : The junior of the High-star-Many house: hunter cup.
-- object 4052 (tablet, Harappa) `255-435-156-400 / 590-706-868` : Chief-Rod-Keeper, junior: chest kalam half share.
+- object 4031 (tablet, Harappa) `240-636-740-400 / 125-700` : The junior of the High-star-Many house: hunter, cup.
+- object 4052 (tablet, Harappa) `255-435-156-400 / 590-706-868` : Chief-Rod-Keeper, junior: chest, half a kalam.
 - object 4056 (tablet, Harappa) `416-220-760-740-400 / 004-700-220` : Four cups of star, for the junior of the Grain-heap child of Star house.
 - object 4059 (tablet, Harappa) `820-031-001-061-740 / 033-700` : One quarter and three cups, for the house.
 - object 4069 (tablet, Harappa) `415-220-520 / 034-700` : Four cups, for Branch-Star, chief.
@@ -2475,6 +2475,6 @@ Each object: who (house or person) + what (goods words) + amount. Faces are sepa
 - object 4087 (tablet, Harappa) `176-740-400 / 033-700` : Three cups, for the junior of the Tax house.
 - object 4088 (tablet, Harappa) `176-740-400 / 033-700` : Three cups, for the junior of the Tax house.
 - object 4409 (tablet, Harappa) `742 / 742 / 742` : Second-ward house.
-- object 4935 (tablet, Harappa) `817-368-690 / 679-840-032-740` : Share the Throne-Peer-Two house: banner bound.
-- object 5242 (tablet, Lakhanjo-daro) `156 / 382-382-382` : Keeper, king king king.
+- object 4935 (tablet, Harappa) `817-368-690 / 679-840-032-740` : Share the Throne-Peer-Two house: banner, bound.
+- object 5242 (tablet, Lakhanjo-daro) `156 / 382-382-382` : Keeper, three kings.
 - object 5470 (tablet, Harappa) `176-740-400 / 033-700` : Three cups, for the junior of the Tax house.

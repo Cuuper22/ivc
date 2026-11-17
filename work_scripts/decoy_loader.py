@@ -23,6 +23,7 @@ Functions (all return None or (came_true_direction, P, text))
   time_share(s, bin)    objects carrying s are in a time bin (early / middle / late) more than all dated objects
   pic_share(s, labels)  objects carrying s show one of the picture labels more than all objects with a picture
   profile(s)            kinds, neighbours, positions, sites of a sign
+  strat_shuffle_p(has, outcome, strata)   the shuffle test of the rules: shuffles inside site|kind strata, seeded, one-sided P
 """
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))

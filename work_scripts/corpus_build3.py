@@ -143,7 +143,7 @@ def countvalue(x, idx):
         tot += v
     return tot
 def plural(w):
-    if w[:1].islower() and w not in UNITS and not w.endswith('s') and not w.startswith('['): return w[:-1] + 'ies' if w.endswith('y') else w + 's'
+    if w[:1].islower() and w not in UNITS and not w.endswith('s') and not w.startswith('['): return w[:-1] + 'ies' if w.endswith('y') and w[-2:-1] not in 'aeiou' else w + 's'
     return w
 
 def np_piece(x, cidx, thing, order, kind):
@@ -324,7 +324,7 @@ def build(x, r, kind):
             if i + 1 < len(mg) and mg[i + 1][0] == 'rel': s_ = f'{mg[i + 1][1]} of the house'; i += 2
             else: s_ = 'Of the house'; i += 1
             out.append(s_); parts.append(('who', s_))
-        elif kd == 'nmg': out.append(t); parts.append(('what', t)); i += 1
+        elif kd == 'nmg': out.append(cap(t)); parts.append(('what', cap(t))); i += 1
         elif kd == 'allowp':
             a_ = f'allowance: {t}'
             if out: out[-1] = out[-1] + f' ({a_})'

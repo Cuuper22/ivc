@@ -1,0 +1,61 @@
+item,sign,prediction,base_rate,observed,P,outcome
+1,137,cultivator: shares a face with grain/field/granary signs more than faces in general [dir=greater],0.0650,"n=16, share 0.0000, shuffle mean 0.0607",1.0000,against
+2,220,star: shares a face with other star names or month signs more than baseline (calendar vocabulary) [dir=greater],0.0673,"n=467, share 0.0857, shuffle mean 0.0716",0.1294,right direction only
+3,400,"junior: shares a face with other person/title signs (elder, king, servant...) more than baseline [dir=greater]",0.0956,"n=494, share 0.0911, shuffle mean 0.0790",0.1580,right direction only
+4,235,house: sits on seals/tags (household identity/property marks) more than on all objects [dir=greater],0.5222,"n=248, share 0.6573, shuffle mean 0.6013",0.0210,came true
+5,717,second ward: shares a face with the first/third ward signs more than baseline [dir=greater],0.0419,"n=54, share 0.0556, shuffle mean 0.0567",0.6009,against
+6,440,received/bought: sits on tags (transaction tokens) more than all objects [dir=greater],0.0454,"n=58, share 0.0000, shuffle mean 0.0298",1.0000,against
+7,176,cup measure: shares a face with grain/commodity signs more than baseline [dir=greater],0.0650,"n=217, share 0.0230, shuffle mean 0.0787",0.9998,against
+8,904,two months: sits on copper/moulded tablets (dated or terms-type texts) more than all objects [dir=greater],0.3038,"n=61, share 0.3770, shuffle mean 0.3343",0.2571,right direction only
+9,463,ration measure: shares a face with grain signs more than baseline [dir=greater],0.0650,"n=27, share 0.0370, shuffle mean 0.0497",0.7477,against
+10,692,assembly/council: objects carrying it show a several-figure or scene picture more than picture objects in general [dir=greater],0.0477,"n=42, share 0.0476, shuffle mean 0.0198",0.2026,right direction only
+11,585,maiden: objects carrying it show a human figure or scene picture more than picture objects in general [dir=greater],0.0521,"n=38, share 0.0263, shuffle mean 0.0249",0.7115,right direction only
+12,752,paddy: shares a face with measure/share signs more than baseline (grain is measured) [dir=greater],0.1442,"n=53, share 0.0755, shuffle mean 0.1110",0.8612,against
+13,435,rod/sceptre: shares a face with king/staff-bearer/elder signs more than baseline [dir=greater],0.0382,"n=75, share 0.0400, shuffle mean 0.0472",0.7021,against
+14,840,tax/levy: sits on tags or copper tablets (administrative objects) more than all objects [dir=greater],0.0859,"n=128, share 0.0312, shuffle mean 0.0814",0.9960,against
+15,741,first ward: shares a face with the second/third ward signs more than baseline [dir=greater],0.0125,"n=222, share 0.0180, shuffle mean 0.0160",0.4809,right direction only
+16,390,kindred/family: sits on seals (group/lineage identity) more than all objects [dir=greater],0.4768,"n=275, share 0.6909, shuffle mean 0.5528",0.0002,came true
+17,700,pair: on the NEW TEXTS faces with it hold a count sign LESS often than baseline (it is already a number word) [dir=less],,"could not run: TypeError(""unhashable type: 'dict'"")",,could not run
+18,335,town: sits on tags (origin of goods) more than all objects [dir=greater],0.0454,"n=41, share 0.0244, shuffle mean 0.0252",0.6853,against
+19,632,crate of fish: objects carrying it show a fish picture more than picture objects in general [dir=greater],0.0132,"n=19, share 0.0000, shuffle mean 0.0000",1.0000,against
+20,690,bound/allied: shares a face with the pair/partner signs more than baseline [dir=greater],0.1058,"n=118, share 0.0254, shuffle mean 0.1400",1.0000,against
+21,255,banner: objects carrying it show the unicorn (the animal faced by a standard) more than picture objects in general [dir=greater],0.6057,"n=83, share 0.5181, shuffle mean 0.5059",0.4373,right direction only
+22,519,third ward: shares a face with the first/second ward signs more than baseline [dir=greater],0.0481,"n=17, share 0.0588, shuffle mean 0.0469",0.5597,right direction only
+23,527,guard: objects carrying it show tiger/rhino/elephant more than picture objects in general [dir=greater],0.0570,"n=39, share 0.0513, shuffle mean 0.0450",0.5383,right direction only
+24,097,Three-peaks: shares a face with other hill signs more than baseline [dir=greater],0.0250,"n=19, share 0.0000, shuffle mean 0.0247",1.0000,against
+25,100,elder: shares a face with other person/title signs more than baseline [dir=greater],0.1550,"n=134, share 0.1642, shuffle mean 0.1580",0.4601,right direction only
+26,095,staff-bearer: shares a face with the rod/king signs more than baseline [dir=greater],0.0225,"n=30, share 0.0000, shuffle mean 0.0312",1.0000,against
+27,070,half-share: shares a face with other share signs more than baseline [dir=greater],0.0984,"n=37, share 0.2162, shuffle mean 0.1533",0.1892,right direction only
+28,171,weight/full measure: faces with it hold a count sign more often than baseline [dir=greater],0.4686,"n=28, share 0.8929, shuffle mean 0.4924",0.0002,came true
+29,495,horn: objects carrying it show a horned animal more than picture objects in general [dir=greater],0.7514,"n=15, share 0.7333, shuffle mean 0.8241",0.9424,against
+30,605,spindle: sits on tools (spinning gear) more than all objects [dir=greater],0.0036,"n=15, share 0.0000, shuffle mean 0.0027",1.0000,against
+31,500,granary: shares a face with grain/stock signs more than baseline [dir=greater],0.0609,"n=24, share 0.0417, shuffle mean 0.0324",0.5575,right direction only
+32,900,month: faces with it hold a count sign more often than baseline (months are counted) [dir=greater],0.4686,"n=110, share 0.5455, shuffle mean 0.4678",0.0500,came true
+33,530,proclamation: sits on copper/moulded tablets (public notices) more than all objects [dir=greater],0.3038,"n=18, share 0.1111, shuffle mean 0.2957",0.9930,against
+34,413,child of: shares a face with person/title signs more than baseline [dir=greater],0.1747,"n=56, share 0.0179, shuffle mean 0.1935",1.0000,against
+35,140,Bamboo-star: shares a face with other star names more than baseline [dir=greater],0.1009,"n=109, share 0.1101, shuffle mean 0.1169",0.6333,against
+36,745,given: faces with it hold a count sign more often than baseline (things given are counted) [dir=greater],0.4686,"n=36, share 0.2500, shuffle mean 0.5009",1.0000,against
+37,711,grain measure: shares a face with grain signs more than baseline [dir=greater],0.0613,"n=21, share 0.0000, shuffle mean 0.0491",1.0000,against
+38,861,quarter-share: shares a face with other share signs more than baseline [dir=greater],0.0581,"n=272, share 0.0515, shuffle mean 0.0776",0.9738,against
+39,151,keeper: shares a face with guard/granary/house signs more than baseline [dir=greater],0.0572,"n=93, share 0.0430, shuffle mean 0.0731",0.9246,against
+40,104,goldsmith: sits on bangles/rods/tools (metal-working) more than all objects [dir=greater],0.0228,"n=26, share 0.0385, shuffle mean 0.0257",0.4923,right direction only
+41,384,pipal/royal: objects carrying it show a pipal-leaf picture more than picture objects in general [dir=greater],0.0018,"n=17, share 0.0000, shuffle mean 0.0008",1.0000,against
+42,142,arrow: objects carrying it show the bow-bearing figure more than picture objects in general [dir=greater],0.0049,"n=43, share 0.0000, shuffle mean 0.0237",1.0000,against
+43,501,heap/stock: shares a face with grain signs more than baseline [dir=greater],0.0595,"n=31, share 0.0000, shuffle mean 0.0465",1.0000,against
+44,407,First-star: shares a face with other star names more than baseline [dir=greater],0.1000,"n=127, share 0.1969, shuffle mean 0.0862",0.0002,came true
+45,742,king: objects carrying it show unicorn/elephant/tiger/rhino more than picture objects in general [dir=greater],0.6618,"n=27, share 0.7407, shuffle mean 0.7384",0.6015,right direction only
+46,820,share: shares a face with other share signs more than baseline [dir=greater],0.0637,"n=237, share 0.0464, shuffle mean 0.0857",0.9952,against
+47,615,foot/servant: shares a face with the servant sign 482 more than baseline [dir=greater],0.0072,"n=73, share 0.0000, shuffle mean 0.0044",1.0000,against
+48,806,produce: shares a face with grain signs more than baseline [dir=greater],0.0458,"n=133, share 0.1805, shuffle mean 0.0884",0.0002,came true
+49,320,paddy field: shares a face with paddy/heap/sheaves/produce signs more than baseline [dir=greater],0.0486,"n=20, share 0.1000, shuffle mean 0.0434",0.2146,right direction only
+50,416,heap of threshed grain: shares a face with paddy/produce/sheaves/field signs more than baseline [dir=greater],0.0419,"n=57, share 0.0175, shuffle mean 0.0315",0.8416,against
+51,503,hill: shares a face with other hill signs more than baseline [dir=greater],0.0141,"n=82, share 0.0122, shuffle mean 0.0115",0.6133,right direction only
+52,091,the pair/partners: shares a face with the pair/bound signs more than baseline [dir=greater],0.1215,"n=28, share 0.0714, shuffle mean 0.0613",0.5503,right direction only
+53,482,servant: shares a face with sign 615 (foot/servant) more than baseline [dir=greater],0.0129,"n=41, share 0.0000, shuffle mean 0.0074",1.0000,against
+54,233,scabbard-fish: objects carrying it show a fish or gharial picture more than picture objects in general [dir=greater],0.0384,"n=120, share 0.0083, shuffle mean 0.0164",0.9008,against
+55,845,bundle of sheaves: shares a face with grain signs more than baseline [dir=greater],0.0585,"n=55, share 0.3273, shuffle mean 0.1973",0.0062,came true
+56,480,seed-weight: shares a face with measure signs more than baseline [dir=greater],0.1375,"n=42, share 0.0952, shuffle mean 0.0810",0.4525,right direction only
+57,679,warrior: objects carrying it show the bow-bearing figure more than picture objects in general [dir=greater],0.0049,"n=13, share 0.0000, shuffle mean 0.0000",1.0000,against
+58,231,chest: sits on pots (containers) more than all objects [dir=greater],0.1340,"n=94, share 0.0319, shuffle mean 0.0981",0.9984,against
+59,055,hill share: shares a face with hill or share signs more than baseline [dir=greater],0.1104,"n=61, share 0.0984, shuffle mean 0.1450",0.9030,against
+60,923,dozen: on the NEW TEXTS faces with it hold a count sign more often than baseline [dir=greater],,"could not run: TypeError(""unhashable type: 'dict'"")",,could not run
