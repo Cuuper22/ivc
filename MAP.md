@@ -26,6 +26,10 @@ What we currently act on, the live leads in order, and what each one says we sho
 
 - `measured` On photographs of house-mate pairs the shared sign is on both stones in 24 pairs and cut by the same hand in only 4. The rival reading (one carver repeating his own shapes) is out: different hands wrote the same sign for the same house.
 
+- `measured` The template parses 68.8% of 2,162 distinct texts tightly, and roles learned at other sites raise parsing on unseen Mohenjo-daro and Harappa texts by 8 to 11 points. Class is a closed set of 26 signs tied to seal size; the name slot holds 384 different signs.
+- `measured` Name-slot signs repeat inside houses (19 pairs against 7.8). `060-920` is a second kind of opener.
+- `guess` Names are built from a household element plus a personal element, like family name + given name. Two openers = two kinds of owner or two institutions.
+
 ## Live leads, in order
 
 1. Name slot. `guess` The slot right before the closing jar holds a house or family name. Next: build the list of pre-jar signs and pre-jar pairs with the houses they belong to; check whether one house keeps one pre-jar sign across depth (a family over generations); check the same slot before the other closing signs.
