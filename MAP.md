@@ -49,6 +49,9 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `measured` A marked fish is a mark plus the plain fish: scribes sometimes wrote it out as two signs (second sign is the plain fish in 40 of 528 swaps against 133 of 3,332). The barred fish = branch sign 415 + plain fish in 7 name frames.
 - `guess` SOUNDS, second list (89 signs, `jobs/out/sound_list.md`): building on the ones whose checks came true (176 iṟai "tax", 415 kavar "branch", 255 mutal "chief", 679 kaṭṭil "throne", diamond kāṇi "share", marked fish as "[mark]-mīn" star names); testing the 17 that pointed the right way; the 38 that went against each get their rescue try from the report.
 
+- `measured` The masters in "X's man" are fish-named (18 of 50 against 7 of 602 for owners). Goods tags are stamped by agents three times as often as seals are agents' (20% against 7%). One three-sign prefix stamps 38 objects in 7 cities; one name is on 71 objects in 9 cities, two of them abroad.
+- `guess` The fish (star) houses are the great houses: they keep agents, and agents do the sealing of goods. The seven-city prefix is an office of the whole civilisation; the nine-city name is a trading house with a branch in Mesopotamia and one in Central Asia.
+
 ## Live leads, in order
 
 1. Name slot. `guess` The slot right before the closing jar holds a house or family name. Next: build the list of pre-jar signs and pre-jar pairs with the houses they belong to; check whether one house keeps one pre-jar sign across depth (a family over generations); check the same slot before the other closing signs.

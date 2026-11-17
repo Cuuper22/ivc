@@ -44,9 +44,12 @@ PICT = {
 CORE = {'en': dict(jar=r"(?:an? |the )?(?:big |large |small |earthen |clay |water-?|brass |copper )?(?:pot|jar|pitcher|vessel|jug)(?: for (?:water|holding water))?",
                    man=r"(?:an? |the )?(?:man|male|husband|male person|human being)", fish=r"(?:an? |the )?(?:big |large |small )?fish",
                    seven=r"(?:the )?(?:numeral )?seven", comb=r"(?:an? |the )?(?:[\w-]+ )?comb", spear=r"(?:an? |the )?(?:[\w-]+ )?(?:spear|lance|javelin|pike|trident)",
-                   staff=r"(?:an? |the )?(?:[\w-]+ )?(?:staff|rod|stick|sceptre|scepter|cane|cudgel)", carrier=r".*", tree=r"(?:an? |the )?tree"),
-        'de': dict(jar=r".*", man=r".*", fish=r".*", seven=r".*", comb=r".*", spear=r".*", staff=r".*", carrier=r".*", tree=r".*")}
+                   staff=r"(?:an? |the )?(?:[\w-]+ )?(?:staff|rod|stick|sceptre|scepter|cane|cudgel)", carrier=None, tree=r"(?:an? |the )?tree"),
+        'de': dict(jar=r"(?:ein |der |das |die )?(?:krug|topf|gefäß|gefäss|kanne|wasserkrug)", man=r"(?:ein |der )?(?:mann|mensch|gatte|ehemann)", fish=r"(?:ein |der )?fisch",
+                   seven=r"(?:die )?(?:zahl )?(?:sieben|7)", comb=r"(?:ein |der )?kamm", spear=r"(?:ein |der |die )?(?:speer|lanze)",
+                   staff=r"(?:ein |der )?(?:stab|stock|szepter|zepter)", carrier=None, tree=r"(?:ein |der )?baum")}
 def core_ok(lang, s, g):
+    if CORE[lang][s] is None: return bool(re.search(PICT[lang][s], g[:120]))      # carrier: the gloss itself must say carrying pole / yoke
     items = [x.strip() for x in re.split(r'[,;(]', g)[:3]]          # the plain noun must be one of the first three terms of the gloss
     return any(re.fullmatch(CORE[lang][s], x) for x in items)
 def load(names, lang):
@@ -75,7 +78,7 @@ def analyse(rows, lang, need='narrow', L=3, extra_pic=None, core=False):
         p_all = allp / N
         pics = collections.OrderedDict()                      # picture word (headword) -> its rows
         for i in range(N):
-            if P.search(rows[i][1]) and (not core or core_ok(lang, s, rows[i][1])): pics.setdefault(rows[i][0], []).append(i)
+            if core_ok(lang, s, rows[i][1]) or (not core and P.search(rows[i][1])): pics.setdefault(rows[i][0], []).append(i)
         q_all = q_len = 1.0; hit_words = []; looks = {}
         for hw, ids in pics.items():
             la = [(rows[j][0], rows[j][1]) for i in ids for j in idx.get(kc[i], ()) if j != i]
@@ -102,7 +105,7 @@ def size_matched(rows, lang, need, L, size, core, draws=30, seed=5):
     rnd = random.Random(seed); H = []; E = []; PS = []; nslots = []
     allpic = set()
     for s_ in SLOTS:
-        P = re.compile(PICT[lang][s_]); allpic |= {i for i, (_, g, _) in enumerate(rows) if P.search(g) and (not core or core_ok(lang, s_, g))}
+        P = re.compile(PICT[lang][s_]); allpic |= {i for i, (_, g, _) in enumerate(rows) if core_ok(lang, s_, g) or (not core and P.search(g))}
     rest = [i for i in range(len(rows)) if i not in allpic]
     if len(rest) + len(allpic) <= size: return None
     for _ in range(draws):
