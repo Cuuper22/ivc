@@ -125,20 +125,28 @@ def werchikwar(f):
         elif cur: buf.append(l)
     flush(); save('burushaski_werchikwar_yasin', rows)
 
-# --- Sumerian: Halloran's Sumerian Lexicon v3 (English), "reading: n., gloss"
+# --- Sumerian: Halloran's Sumerian Lexicon v3 (English). "reading, reading: n., gloss" then "v., gloss" lines for the same word
 def halloran():
-    L = read_lines(f'{RAW}/sumerian_201604.txt'); rows = []; cur = None; buf = []
-    def flush():
-        if cur: rows.append((cur, first_gloss(' '.join(buf).replace(';', ','))))
+    L = read_lines(f'{RAW}/sumerian_201604.txt')[205:]; rows = []; cur = []     # lines before 205 are the introduction
+    POS = r"(?:n|v|adj|adv|prep|conj|pron|num|part)"
     for l in L:
         l = nfc(l).strip()
         if not l or l.startswith('Sumerian Lexicon'): continue
-        m = re.match(r"^([A-Za-zšĝḫṣṭ0-9ₓ,’' ]{1,30}?)\s*(?:\([^)]*\))?\s*:\s*(?:\S{1,6}:\s*)?((?:n|v|adj|adv|prep|conj|pron|num|part)\.,?\s.*)$", l)
-        if m:
-            flush(); cur = re.split(r'[, ]', m.group(1).strip())[0].lower(); buf = [re.sub(r'^(?:(?:n|v|adj|adv|prep|conj|pron|num|part)\.,?\s*)+', '', m.group(2))]
-        elif cur and not re.match(r'^(v|adj|n)\.,', l): buf.append(l)
-        elif cur: buf.append(re.sub(r'^(?:(?:n|v|adj|adv|prep|conj|pron|num|part)\.,?\s*)+', '', l))
-    flush(); save('sumerian_halloran', rows)
+        m = re.match(r"^(%s)\.,?\s*(.*)$" % POS, l)
+        if m and cur:                                      # another sense line of the current word
+            g = first_gloss(m.group(2).replace(';', ','))
+            if g: rows += [(h, g) for h in cur]
+            continue
+        m = re.match(r"^([^:—\[\]]{1,45}?)\s*(?::|—|–)\s*(.*)$", l)
+        if m and not re.match(r'^\(?cf', m.group(2)):
+            heads = [re.sub(r'[^a-zšĝḫ]', '', re.sub(r'\(.*?\)', '', t).lower()) for t in re.split(r'[,;]', m.group(1))]
+            heads = [h for h in heads if len(h) >= 2 and h not in ('and', 'prep', 'adj', 'see', 'also')][:3]
+            t = re.sub(r"^(?:(?:%s)\.,?\s*)+" % POS, '', m.group(2).strip())
+            g = first_gloss(t.replace(';', ','))
+            cur = heads
+            if heads and g: rows += [(h, g) for h in heads]
+        else: cur = cur
+    save('sumerian_halloran', rows)
 
 # --- Elamite: Hinz and Koch, Elamisches Woerterbuch 1987 (German); headword with hyphens, dialect tag, German gloss. Personal names left out.
 def elamite():
@@ -159,20 +167,31 @@ def elamite():
 
 # --- Indo-Aryan: Turner's Comparative Dictionary of the Indo-Aryan Languages (OCR), "NUMBER headword- pos. 'gloss'"
 def turner():
-    T = ' '.join(read_lines(f'{RAW}/turner_cdial.txt')); rows = []
-    for m in re.finditer(r"(?<!\d)(\d{1,5}) ([a-zA-Zāīūṛṝḷṃṭḍṇśṣḥñĉčĝ̀-ͯ]{2,25})-? (?:[a-z]{1,4}\. ){0,3}[‘'’]([^'’‘]{2,80})[’']", T):
-        rows.append((m.group(2), m.group(3).lower()))
+    L = [nfc(l).strip() for l in read_lines(f'{RAW}/turner_cdial.txt')]; rows = []
+    head = re.compile(r"^\*?([a-zA-Zāīūṛṝḷṃṭḍṇśṣḥñĉčĝ\u0300-\u036f]{2,25})-(?:\s|$)")
+    for i, l in enumerate(L):
+        m = head.match(l)
+        if not m: continue
+        t = ' '.join(x for x in L[i:i + 3] if x)
+        g = re.search(r"^[^‘'’]{0,40}[‘'’]([^'’‘]{2,80})[’']", t[m.end():])
+        if g: rows.append((m.group(1), g.group(1).lower()))
     save('indoaryan_turner', rows)
 
+SL = {'A':'ā','I':'ī','U':'ū','f':'ṛ','F':'ṝ','x':'ḷ','X':'ḹ','E':'ai','O':'au','K':'kh','G':'gh','N':'ṅ','C':'ch','J':'jh','Y':'ñ','w':'ṭ','W':'ṭh','q':'ḍ','Q':'ḍh','R':'ṇ','T':'th','D':'dh','P':'ph','B':'bh','S':'ś','z':'ṣ','M':'ṃ','H':'ḥ','L':'ḷ'}
+def slp1_to_iast(w): return ''.join(SL.get(c, c) for c in w)
 # --- Indo-Aryan: Monier-Williams (the file the earlier Sanskrit run used), SLP1 key, English gloss
 def mw():
     p = 'evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/dev-tools/ashtadhyayi/assets/mw.xml'
     if not os.path.exists(p): print('mw.xml not on disk, skipped'); return
-    gl = collections.OrderedDict()
+    rows = []
     for line in open(p, encoding='utf-8'):
         m = re.search(r'<key1>([^<]+)</key1>.*?<body>(.*?)</body>', line)
-        if m: gl.setdefault(m.group(1), ''); gl[m.group(1)] += ' ' + re.sub(r'<[^>]+>', ' ', html.unescape(m.group(2)))
-    save('sanskrit_monier_williams', [(h, first_gloss(g[:600])) for h, g in gl.items()])
+        if not m: continue
+        b = re.sub(r'<(s|ls|ab|lex)\b[^>]*>.*?</\1>', ' ', m.group(2)); b = re.sub(r'<[^>]+>', ' ', html.unescape(b))
+        b = re.sub(r'\s+', ' ', b).strip(' ,;')
+        b = re.split(r'[.\[]', b)[0].strip()[:200].lower()
+        if b: rows.append((slp1_to_iast(m.group(1)), b))
+    save('sanskrit_monier_williams', rows)
 
 if __name__ == '__main__':
     import sys

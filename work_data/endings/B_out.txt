@@ -11,3 +11,42 @@ head: seals with a house-mate 20
   whole name identical to a mate: observed 0 (0.00), shuffled mean 0.1, P(sim>=obs) 1.000
   any sign shared with a mate: observed 5 (0.25), shuffled mean 6.5, P(sim>=obs) 0.860
   crest test, multi-sign names only: n 14 observed 3 shuffled mean 2.8 P 0.577
+
+owner-jar: seals with a house-mate 251
+  first sign = first sign of a mate: observed 19 (0.08), shuffled mean 17.0, P(sim>=obs) 0.337
+  whole name identical to a mate: observed 2 (0.01), shuffled mean 1.7, P(sim>=obs) 0.523
+  any sign shared with a mate: observed 93 (0.37), shuffled mean 75.0, P(sim>=obs) 0.013
+  crest test, multi-sign names only: n 179 observed 13 shuffled mean 11.4 P 0.340
+
+heads with clean name and a house-mate: 20  with first-sign match 4  same name 0  any sign 5
+  head        name             house       first_match same_name           any_sign
+M-1746 240-415-100      DKG. (S)|7II            M-1726                M-1726 M-1879
+ M-199 240-415-100 DKG|First Street-                 -           - M-41 M-758 M-850
+ M-265         061    DKG. (S)|9VIII             M-408                        M-408
+ M-865     235-240     DKE|Trench E- M-1738 M-47 M-323            M-1738 M-47 M-323
+ M-944 368-060-233     DKG. (S)|1III                                          M-210
+head first sign found on a seal of another house in the same area (n,k) (24, 15)
+owner-jar first sign found on a seal of another house in the same area (n,k) (290, 158)
+
+houses with a head seal 27 with 2+ 1  distribution {1: 26, 2: 1}
+house size: houses with head 9.59 7.0  without 2.98 2.0
+mean house size seen by a head seal 10.5 vs random seal of the same area 11.42 P(sim>=obs) 0.7425
+mean house size of owner-jar seals 9.61
+           houses  seals  heads  heads_per_100_seals
+sizeclass                                           
+1             122    122      3                  2.5
+2              46     92      1                  1.1
+3-4            59    197      6                  3.0
+5-8            36    224      7                  3.1
+9+             28    411     11                  2.7
+  cisi                  reading_order_text    face  hmm  vmm  symbol material          house area-section room-grid
+M-1674         683-861-002-231-222-740-090 2766.76 52.6 52.6 Bull1:J Steatite DKG. (N)|17III     DKG. (N)       23-
+M-1165             692-060-140-920-740-090 2404.34 47.8 50.3    Tigr Steatite  DKG. (S)|9VII     DKG. (S)       52-
+  M-26                 692-060-531-740-090 1354.24 36.8 36.8 Bull1:J Steatite  DKG. (N)|23II     DKG. (N)       11-
+  M-24         140-906-002-235-240-740-090 1267.36 35.6 35.6 Bull1:W Steatite         SD-|8-          SD-        4-
+ M-304         090-550-534-742-220-740-090 1256.68 35.6 35.3   Scene Steatite   DKG. (S)|1II     DKG. (S)        7-
+  M-15                 861-002-176-740-090 1175.85 33.5 35.1 Bull1:W Steatite DKG. (S)|10III     DKG. (S)       56-
+ M-648         361-741-032-220-100-740-090 1155.75 34.5 33.5 Bull1:J        -                         DKB  -23 P/18
+  M-53 140-920-190-297-002-016-220-740-090 1065.90 33.0 32.3 Bull1:W Steatite   DKG. (S)|8A-     DKG. (S)       44-
+ M-739 692-550-350-031-002-415-100-740-090  976.50 31.5 31.0 Bull1:J        -                          --        --
+ M-297             060-703-575-240-740-090  961.00 31.0 31.0    Othr Steatite   DKG. (S)|9AV     DKG. (S)       75-
