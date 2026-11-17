@@ -107,7 +107,7 @@ $('upd').textContent=UPDATED;
 const M={};N.forEach(n=>{M[n[0]]={id:n[0],st:n[1],lab:n[2],t:n[3],d:n[4],up:n[5],dn:[]};});
 N.forEach(n=>n[5].forEach(p=>M[p].dn.push(n[0])));
 const dep=id=>{const m=M[id];if(m.dp==null)m.dp=m.up.length?1+Math.max(...m.up.map(dep)):0;return m.dp;};
-const W=390,NW=61,NH=25,RH=45,MAXR=6;let rows=[],maxd=0;
+const W=390,NW=61,NH=25,RH=40,MAXR=6;let rows=[],maxd=0;
 N.forEach(n=>{maxd=Math.max(maxd,dep(n[0]));});
 for(let d=0;d<=maxd;d++){
   const L=N.map(n=>M[n[0]]).filter(m=>m.dp===d);
