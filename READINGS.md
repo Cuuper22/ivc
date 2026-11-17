@@ -308,3 +308,167 @@ How a seal reads: [holding or office stamp] [name: house + self + tag] [ending].
 - The name `176-415-100` stands on 1 objects in 1 cities.
 - Word by word: `820` kāl "quarter-share" · `002` iru "two" · `176` iṟai "tax" · `415` kavar "branch" · `100` mutu "elder" · `740` kuṭi "house of"
 
+## Twenty more: goods objects read under the third sound list
+
+Added by `work_scripts/sound_v3_readings.py` (third list: `jobs/out/sound_list_v3.md`). Each text below became fully sounded in this pass because a value it needs moved to "building on" or got its word: paṭi "ration, allowance" (320), ūr "town" (335), vilai "price" (824), cūṭu "sheaf-bundle" (845), viḷai "produce" (806), malai "hill" (503), vayal "field" (615), kāl "quarter" (061), ūḻiyaṉ "servant" (617), paṟai "drum-measure" (540), niṟai "full weight" (171), koḷ "received" (440), iṟai "tax" (175), ammai "lady" (140), kōṭṭai "great measure; fort" (575). A dagger (†) marks a word still under test: kalam "ship" (705), nel "grain" (413), vaḷḷam "measure" (711), mīmīn "High-star" (240), kiḷai "lot" (407). Reading order = stored order reversed. Object id, site and findspot are from the first catalogue (Lipi).
+
+## 41. Of the house of the heir of Hill-Field: on 29 copper tablets, all at Mohenjo-daro.
+
+- Object: Lipi row 2275.1; 29 objects carry this exact text (TAB:C Copper 29)
+- Site and findspot: Mohenjo-daro (DK-) x13, Mohenjo-daro (--) x5, Mohenjo-daro (HRB) x4, Mohenjo-daro (DKG. (S)) x2
+- Signs: `503-615-752-740`
+- Sound: *malai vayal maka kuṭi*
+- Word by word: `503` malai "hill" · `615` vayal "field" · `752` maka "child of" · `740` kuṭi "house of"
+
+## 42. By ship (kalam pāy, ship-sail), first ward: one dozen fish; the house's agent.
+
+- Object: L-124; 11 objects carry this exact text (TAG:L Clay 5, TAG Clay 5, TAG:W Clay 1)
+- Site and findspot: Lothal (SRG 3GX 10) x8, Lothal (--) x2, Lothal (SRG-) x1
+- Signs: `705-500-741-001-055-220-740-090`
+- Sound: *kalam pāy orukuṭi oru paṉṉiru mīn kuṭi āḷ*
+- Word by word: `705` kalam† "vessel, ship (hull with a mast)" · `500` pāy "sail (ship)" · `741` orukuṭi "first ward" · `001` oru "one" · `055` paṉṉiru "dozen" · `220` mīn "star" · `740` kuṭi "house of" · `090` āḷ "manager"
+
+## 43. Descendant of the High-star house: sheaf-bundles, a quarter, the lot.
+
+- Object: M-567; 6 objects carry this exact text (TAB:C Copper 6)
+- Site and findspot: Mohenjo-daro (DK-) x3, Mohenjo-daro (HR-) x1, Mohenjo-daro (--) x1, Mohenjo-daro (DKG. (S)) x1
+- Signs: `798-240-845-061-407`
+- Sound: *maru- mīmīn cūṭu kāl kiḷai*
+- Word by word: `798` maru- "descendant, clan member" · `240` mīmīn† "High-star" · `845` cūṭu "bundle of sheaves" · `061` kāl "quarter" · `407` kiḷai† "herd, lot"
+
+## 44. Branch-Star: sheaf-bundles, the lot.
+
+- Object: M-507; 4 objects carry this exact text (TAB:C Copper 4)
+- Site and findspot: Mohenjo-daro (DK-) x2, Mohenjo-daro (VSA) x1, Mohenjo-daro (DKG) x1
+- Signs: `415-220-845-407`
+- Sound: *kavar mīn cūṭu kiḷai*
+- Word by word: `415` kavar "branch (of a line)" · `220` mīn "star" · `845` cūṭu "bundle of sheaves" · `407` kiḷai† "herd, lot"
+
+## 45. Produce: of the First-star Tax house.
+
+- Object: M-1452; 1 object carry this exact text (TAB:C Copper 1)
+- Site and findspot: Mohenjo-daro (DKG. (S)) x1
+- Signs: `806-231-176-740`
+- Sound: *viḷai orumīn iṟai kuṭi*
+- Word by word: `806` viḷai "produce, ripened crop" · `231` orumīn "First-star" · `176` iṟai "tax, levy" · `740` kuṭi "house of"
+
+## 46. Holder of a share: Banner; one, the king's servant.
+
+- Object: M-574; 1 object carry this exact text (TAB:C Copper 1)
+- Site and findspot: Mohenjo-daro (DK-) x1
+- Signs: `861-368-001-142-617`
+- Sound: *kāṇi koṭi oru kō ūḻiyaṉ*
+- Word by word: `861` kāṇi "share, holding (a "hand")" · `368` koṭi "banner (of a line)" · `001` oru "one" · `142` kō "king" · `617` ūḻiyaṉ "(king's) servant"
+
+## 47. The king's servant: one; four lots.
+
+- Object: M-1458; 1 object carry this exact text (TAB:C Copper 1)
+- Site and findspot: Mohenjo-daro (--) x1
+- Signs: `142-617-001-004-407`
+- Sound: *kō ūḻiyaṉ oru nāl kiḷai*
+- Word by word: `142` kō "king" · `617` ūḻiyaṉ "(king's) servant" · `001` oru "one" · `004` nāl "four" · `407` kiḷai† "herd, lot"
+
+## 48. Of the Hill-Three-peaks house (on a copper object).
+
+- Object: M-1980; 2 objects carry this exact text (SEAL:R Steatite 1, MISC Copper 1)
+- Site and findspot: Mohenjo-daro (DKG. (S)) x1, Chanhu-daro (--) x1
+- Signs: `503-463-740`
+- Sound: *malai mukkōṭu kuṭi*
+- Word by word: `503` malai "hill" · `463` mukkōṭu "Three-peaks" · `740` kuṭi "house of"
+
+## 49. A paṟai measure, a paṟai measure: two drum-measures of grain.
+
+- Object: H-1740; 2 objects carry this exact text (POT:T:s Clay 2)
+- Site and findspot: Harappa (FTrench 43) x2
+- Signs: `540-540`
+- Sound: *paṟai paṟai*
+- Word by word: `540` paṟai "drum; a rice measure" · `540` paṟai "drum; a rice measure"
+
+## 50. The month's paṟai measure, of the house.
+
+- Object: M-1379; 1 object carry this exact text (POT:T:s Clay 1)
+- Site and findspot: Mohenjo-daro (DK-) x1
+- Signs: `920-540-740`
+- Sound: *tiṅkaḷ? paṟai kuṭi*
+- Word by word: `920` tiṅkaḷ? "month (head of a date formula)" · `540` paṟai "drum; a rice measure" · `740` kuṭi "house of"
+
+## 51. Monthly allowance (paṭi tiṅkaḷ), of the house.
+
+- Object: M-935; 2 objects carry this exact text (SEAL:S Steatite 1, POT:T:g Clay 1)
+- Site and findspot: Mohenjo-daro (DKG. (N)) x1, Mohenjo-daro (--) x1
+- Signs: `320-920-740`
+- Sound: *paṭi tiṅkaḷ? kuṭi*
+- Word by word: `320` paṭi "ration measure, daily allowance" · `920` tiṅkaḷ? "month (head of a date formula)" · `740` kuṭi "house of"
+
+## 52. One; three: of the Branch-Tax house.
+
+- Object: Lipi row 718.1; 1 object carry this exact text (POT:T:g Clay 1)
+- Site and findspot: Harappa (E-ETTrench 10E) x1
+- Signs: `001-033-415-175-740`
+- Sound: *oru mū kavar iṟai kuṭi*
+- Word by word: `001` oru "one" · `033` mū "three" · `415` kavar "branch (of a line)" · `175` iṟai "tax" · `740` kuṭi "house of"
+
+## 53. Full weight: five.
+
+- Object: M-2067; 2 objects carry this exact text (POT:T:g Clay 1, TAG:C Paste 1)
+- Site and findspot: Mohenjo-daro (DK-) x1, Mohenjo-daro (DKG. (N)) x1
+- Signs: `171-035`
+- Sound: *niṟai ai*
+- Word by word: `171` niṟai "weight, full measure" · `035` ai "five"
+
+## 54. Grain, fish: received.
+
+- Object: M-1632; 1 object carry this exact text (BNGL Stoneware 1)
+- Site and findspot: Mohenjo-daro (MN-) x1
+- Signs: `413-220-440`
+- Sound: *nel mīn koḷ*
+- Word by word: `413` nel† "paddy, grain" · `220` mīn "star" · `440` koḷ "received, bought"
+
+## 55. Junior hand of the Lady-Tax house (an ivory rod).
+
+- Object: M-2098; 1 object carry this exact text (ROD Ivory 1)
+- Site and findspot: Mohenjo-daro (DKG. (S)) x1
+- Signs: `140-176-740-400`
+- Sound: *ammai iṟai kuṭi ciṟ*
+- Word by word: `140` ammai "lady" · `176` iṟai "tax, levy" · `740` kuṭi "house of" · `400` ciṟ "junior"
+
+## 56. Grain: sale, price. A sale chit, issued in 11 copies.
+
+- Object: H-1187; 11 objects carry this exact text (TAB:I Steatite 5, TAB:B Faience 2, TAB:B - 2)
+- Site and findspot: Harappa (--) x4, Harappa (ETrench 54) x3, Harappa (AB-) x1, Harappa (FTrench I) x1
+- Signs: `413-892-824`
+- Sound: *nel vil vilai*
+- Word by word: `413` nel† "paddy, grain" · `892` vil "sale, price" · `824` vilai "price"
+
+## 57. Grain of Fort-town (kōṭṭai ūr): measure (vaḷḷam), three cups.
+
+- Object: Lipi row 300.2; 10 objects carry this exact text (TAB:B Faience 6, TAB:B Clay 3, TAB:B - 1)
+- Site and findspot: Harappa (ETTrench 27) x2, Harappa (ETrench 11) x2, Harappa (FTrench I) x1, Harappa (ETrench 10W/11) x1
+- Signs: `413-575-335-711-033-700`
+- Sound: *nel kōṭṭai ūr vaḷḷam mū nāḻi?*
+- Word by word: `413` nel† "paddy, grain" · `575` kōṭṭai "great grain measure" · `335` ūr "town" · `711` vaḷḷam† "grain measure" · `033` mū "three" · `700` nāḻi? "cup measure"
+
+## 58. Grain, of the Fort-town house: two cups.
+
+- Object: H-2016; 2 objects carry this exact text (TAB:B Clay 1, TAB:B Faience 1)
+- Site and findspot: Harappa (--) x1, Harappa (D-) x1
+- Signs: `413-575-335-740-032-700`
+- Sound: *nel kōṭṭai ūr kuṭi iru nāḻi?*
+- Word by word: `413` nel† "paddy, grain" · `575` kōṭṭai "great grain measure" · `335` ūr "town" · `740` kuṭi "house of" · `032` iru "two" · `700` nāḻi? "cup measure"
+
+## 59. Received: of the Elder house (granary area).
+
+- Object: H-757; 2 objects carry this exact text (TAB:B Faience 1, TAB:B - 1)
+- Site and findspot: Harappa (FGranery) x1, Harappa (--) x1
+- Signs: `440-100-740`
+- Sound: *koḷ mutu kuṭi*
+- Word by word: `440` koḷ "received, bought" · `100` mutu "elder" · `740` kuṭi "house of"
+
+## 60. Fish received; the carrier, junior hand.
+
+- Object: H-1142; 2 objects carry this exact text (TAB:B Faience 1, TAB:B - 1)
+- Site and findspot: Harappa (FTrench VI) x1, Harappa (--) x1
+- Signs: `220-440-154-400`
+- Sound: *mīn koḷ kā ciṟ*
+- Word by word: `220` mīn "star" · `440` koḷ "received, bought" · `154` kā "keeper" · `400` ciṟ "junior"
+

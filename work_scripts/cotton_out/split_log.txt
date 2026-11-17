@@ -1,0 +1,103 @@
+faces 5679, objects 4694
+
+== S0 the pair: 73 faces on 71 objects
+S1 what follows the pair (by object class):
+      faces  jar_next  pair_is_last
+cls                                
+pot       1         1             0
+seal     47        33             0
+tabB     19        17             0
+tabI      1         0             0
+tag       5         2             2
+base: share of faces ending in the jar, by object class:
+            n  ends_in_jar
+cls                       
+bngl     50.0        0.040
+impl     23.0        0.043
+other    87.0        0.092
+pot     635.0        0.131
+rod      42.0        0.071
+seal   2290.0        0.317
+tabB   1108.0        0.199
+tabC    230.0        0.430
+tabI    952.0        0.116
+tag     262.0        0.218
+
+S1b among the 164 bigrams with n>=10 (no lost sign, no jar): 590-390 has n 73, jar right after 0.73, count right before 0.30, on seals 0.64, on tags/pots 0.082
+   jar_rate: percentile of 590-390 among bigrams = 87  (median of bigrams 0.00)
+   count_rate: percentile of 590-390 among bigrams = 86  (median of bigrams 0.02)
+   seal_rate: percentile of 590-390 among bigrams = 57  (median of bigrams 0.56)
+   tagpot_rate: percentile of 590-390 among bigrams = 80  (median of bigrams 0.00)
+   fish-crest-first bigrams (22): median jar_rate 0.00, count_rate 0.17, tagpot 0.000
+   counted-pair bigrams (count_rate>=0.4, 18): median jar_rate 0.00, count_rate 0.60, tagpot 0.022
+
+== S2 counts in front of the pair
+what stands right before 590 (count sign or none): {'none': 51, '002': 9, '032': 7, '033': 5, '031': 1}
+box 590 NOT followed by 390 (155 places): {'none': 133, '032': 13, '033': 5, '031': 2, '017': 2}
+tall-stroke count right before the box: with 390 13/73, without 20/155: ratio 1.23, one-sided P 0.216
+count values before the pair (n 22): [(1, 1), (2, 16), (3, 5)]; share >=3: 0.23
+count values before box-without-390 (n 22): [(1, 2), (2, 13), (3, 5), (7, 2)]; share >=3: 0.32
+
+== S3 sign 390 on its own (not right after 590)
+390 places 289; after the box 73; elsewhere 216; of those with a count right before 90 (0.42)
+   count values before 390 elsewhere: [(1, 1), (2, 3), (3, 30), (4, 26), (5, 9), (6, 15), (7, 4), (8, 2)]; share >=3: 0.96
+   390 elsewhere: jar right after 0.02; on seals 0.69; text is 390 only 11
+   counted rate (count right before, all places) for 390 = 0.31; rank 10 of 84 signs with n>=30; median of all 0.13
+      sign 405: n 118, count right before 0.22
+      sign 407: n 142, count right before 0.20
+      sign 590: n 228, count right before 0.19
+      sign 413: n 56, count right before 0.02
+      sign 806: n 135, count right before 0.17
+      sign 220: n 473, count right before 0.30
+
+== S4 what follows the box 590 (all faces)
+sign after box, n, jar right after the pair, counted-rate of that sign (count right before it, anywhere):
+   ('390', 73, np.float64(0.73), np.float64(0.31))
+   ('405', 28, np.float64(0.89), np.float64(0.22))
+   ('407', 19, np.float64(0.89), np.float64(0.2))
+   ('000', 14, np.float64(0.07), None)
+   ('705', 7, np.float64(0.0), np.float64(0.07))
+   ('706', 7, np.float64(0.0), np.float64(0.12))
+   ('892', 7, np.float64(0.14), np.float64(0.03))
+   ('235', 7, np.float64(0.0), np.float64(0.19))
+   ('740', 6, np.float64(0.0), np.float64(0.06))
+   ('741', 4, np.float64(0.0), np.float64(0.04))
+   ('416', 3, np.float64(0.0), np.float64(0.14))
+   ('455', 2, np.float64(0.0), np.float64(0.07))
+   ('690', 2, np.float64(0.0), np.float64(0.03))
+   ('406', 2, np.float64(1.0), None)
+   box with 838 on the same face 1 (chance 0.8); box then 838 adjacent 0; 838 then box 0
+   box with 413 on the same face 0 (chance 2.2); box then 413 adjacent 0; 413 then box 0
+   box with 806 on the same face 16 (chance 5.3); box then 806 adjacent 0; 806 then box 1
+   box with 405 on the same face 28 (chance 4.7); box then 405 adjacent 28; 405 then box 0
+   box with 407 on the same face 24 (chance 5.1); box then 407 adjacent 19; 407 then box 3
+   box with 392 on the same face 1 (chance 0.2); box then 392 adjacent 1; 392 then box 0
+   box with 390 on the same face 76 (chance 11.2); box then 390 adjacent 73; 390 then box 2
+tree family right after the box: 123 of 209 box places (0.59); base share of tree family among all sign places 0.029
+keeper/title signs (carriers, spear, man, comb) right after the box: 2 of 209
+
+== S5 who-part / what-part (long texts)
+long-text phrases containing box+tree-family: 17 of 310; kinds: {'owner phrase': np.int64(13), 'title phrase': np.int64(2), 'name': np.int64(1), 'account line with name': np.int64(1)}
+all phrase kinds: {'owner phrase': np.int64(120), 'account line with name': np.int64(63), 'name': np.int64(54), 'title phrase': np.int64(28), 'account line': np.int64(23), 'agent phrase': np.int64(9), 'junior phrase': np.int64(7), 'opening formula': np.int64(2), 'seat phrase': np.int64(2), 'owner phrase with relation sign 090+400': np.int64(2)}
+   H-1657 line 1 [owner phrase] 921-690-002-032-220-235-806-003-900-032-590-405-740
+   H-8 line 1 [owner phrase] 921-690-002-706-033-590-405-740
+   H-39 line 1 [owner phrase] 920-060-745-235-240-231-590-390-740
+   H-180 line 1 [title phrase] 368-330-741-590-390-151
+   H-180 line 1 [title phrase] 368-330-741-590-390-151
+   H-196 line 1 [name] 590-407
+   H-278 line 1 [owner phrase] 803-415-220-318-920-255-436-690-590-407-740
+   H-597 line 1 [owner phrase] 861-002-032-070-590-390-740
+   H-597 line 1 [owner phrase] 861-002-032-070-590-390-740
+   L-114 line 1 [owner phrase] 920-060-803-032-220-904-590-407-740
+   M-1954 line 1 [owner phrase] 861-002-798-415-220-705-033-752-031-590-407-740
+   M-12 line 1 [owner phrase] 371-892-202-368-002-233-590-390-740
+   M-359 line 1 [owner phrase] 632-705-385-388-002-803-235-220-590-405-740
+   M-855 line 1 [account line with name] 544-690-817-002-590-390-832-260-861
+   M-900 line 1 [owner phrase] 820-002-838-798-415-220-233-590-390-740
+   M-1457 line 1 [owner phrase] 590-405-100-740
+   - line 1 [owner phrase] 060-820-001-240-463-220-590-390-740
+
+== S6 is there a separate name in front?
+non-count signs in front of the pair: 0 on 19 faces (the pair IS the whole name), 1 on 21, 2+ on 33 (n 73)
+box+405: n 28; jar right after 0.89; on seals 0.54; on tablets 0.39; tag/pot 0.00; count right before box 0.11; nothing in front 0.21; materials {'faience': 6, 'steatite': 12, '-': 8, 'copper': 2}
+box+407: n 19; jar right after 0.89; on seals 0.26; on tablets 0.63; tag/pot 0.05; count right before box 0.05; nothing in front 0.21; materials {'steatite': 5, 'clay': 8, 'faience': 1, '-': 4, 'copper': 1}
