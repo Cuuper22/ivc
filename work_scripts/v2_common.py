@@ -87,6 +87,8 @@ def faces_all(cat='L'):
         out += list(zip(d.tok, d.P, d.site, d.group))
     if cat == 'M':
         out += list(zip(M.tok, M.P, M.site_l, M.cls))
+    elif cat == 'Mu':
+        m = M[~M.partnered]; out += list(zip(m.tok, m.P, m.site_l, m.cls))
     elif 'M' in cat:
         m = M[~M.partnered]; out += list(zip(m.tok, m.P, m.site_l, m.cls))
     return out
@@ -232,7 +234,7 @@ def ending_of_names(s, ending, pos=None, cat='L'):
         se = objs[objs.seal]
         for nm, e in zip(se.name, se.ending): rows.append((nm, e))
     if 'M' in cat:
-        m = M[(M.cls == 'seal') & ((~M.partnered) if cat == 'LM' else True)]
+        m = M[(M.cls == 'seal') & ((~M.partnered) if cat in ('LM', 'Mu') else True)]
         for x, P in zip(m.tok, m.P): rows.append((tuple(P['name']), name_end(x, P)))
     rows = [(nm, e) for nm, e in rows if nm and e != 'none' and '000' not in nm]
     def hit(nm):

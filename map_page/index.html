@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indus script: the map so far</title>
+<style>
+:root{--bg:#faf9f5;--card:#fff;--tx:#1f1e1c;--tx2:#5f5e5a;--tx3:#888780;--bd:#dcdad1;--sel:#eceade;--g:#3b8a3e;--b:#2f77c7;--a:#d19a1c;--r:#cf4343;--n:#9a988f}
+@media (prefers-color-scheme:dark){:root{--bg:#1b1b19;--card:#262624;--tx:#f1efe8;--tx2:#b4b2a9;--tx3:#888780;--bd:#3a3a36;--sel:#34342f;--g:#6dbb5f;--b:#6aa9ee;--a:#e6b84a;--r:#ee7b78;--n:#77766f}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:640px;margin:0 auto;padding:14px 14px 40px}
+h1{font-size:19px;font-weight:600;margin:0 0 2px}.sub{font-size:13px;color:var(--tx2);margin:0 0 10px}
+.lg{display:flex;flex-wrap:wrap;gap:5px 12px;font-size:12px;color:var(--tx2);margin:0 0 10px}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;flex:none}
+.g{background:var(--g)}.b{background:var(--b)}.a{background:var(--a)}.r{background:var(--r)}.n{background:var(--n)}
+#pn{position:sticky;top:0;z-index:2;background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:10px 12px;margin:0 0 12px;min-height:120px}
+#pt{font-size:14px;font-weight:600;margin:0 0 4px}#pb{font-size:13px;color:var(--tx2);margin:0}
+.sl{display:flex;gap:4px;margin:0 0 6px}.sl button{flex:1;padding:7px 2px;font:11px/1.3 inherit;font-size:11px;border:1px solid var(--bd);border-radius:8px;background:var(--card);color:var(--tx)}
+.sl button .dot{display:block;margin:0 auto 4px}.sl small{color:var(--tx3);font-size:11px}
+.cap{font-size:12px;color:var(--tx3);margin:0 0 10px}
+.gh{font-size:13px;font-weight:600;margin:16px 0 4px}
+.rw{display:flex;align-items:flex-start;gap:8px;width:100%;text-align:left;padding:9px 8px;font:13px/1.35 inherit;font-size:13px;border:0;border-radius:8px;background:transparent;color:var(--tx)}
+.rw .dot{margin-top:3px}.rw.c{padding-left:28px;color:var(--tx2)}.on{background:var(--sel)!important}
+.ct{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:0 0 12px}.ct div{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:6px 4px;text-align:center;font-size:11px;color:var(--tx2)}.ct b{display:block;font-size:17px;color:var(--tx);font-weight:600}
+</style></head><body><main>
+<h1>Indus script: the map so far</h1>
+<p class="sub" id="upd"></p>
+<div class="lg"><span><span class="dot g"></span>Measured, held up</span><span><span class="dot b"></span>Working reading</span><span><span class="dot a"></span>Being tested now</span><span><span class="dot r"></span>Tried, went against</span><span><span class="dot n"></span>Groundwork done</span></div>
+<div class="ct" id="ct"></div>
+<div id="pn"><p id="pt">Tap any line</p><p id="pb">The Indus script is a set of about 700 signs from 4,000 years ago that nobody can read. It survives on seals (small carved stone stamps: an animal plus a short row of signs) and tablets (tiny tokens with signs on two or three faces). Start with the five blocks below: one real seal, piece by piece. Then tap any line in the tree.</p></div>
+<div class="sl" id="sl"></div>
+<p class="cap">One real seal (object M-1746, from the city of Mohenjo-daro), taken apart.</p>
+<div id="tr"></div>
+</main>
+<script>
+/*UPDATED*/const UPDATED="Updated Tue 17 Nov 2026, 04:25 Pacific. 2 agents running.";/*END-UPDATED*/
+const SEAL=[
+["Opener","b","kāṇi iru","The seal starts with a diamond sign and two strokes. On ration tablets the same diamond is counted like workers, so here it reads \"two shares\" or \"two hands\". Working reading."],
+["Family crest","g","mīmīn","A fish sign with a mark on it. People whose seals were dug up in the same house share the same marked fish, so it works like a family crest. Sound guess: \"High star\"."],
+["Personal part","b","kavar mutu","The signs between the crest and the ending change from person to person. Sound guess: \"branch, elder\", a junior line of the family."],
+["Ending","b","kuṭi","A jar-shaped sign. It ends most seal texts and reads \"of\" or \"house of\". In old Tamil the word for pot sounds like the word for house."],
+["Who","b","āḷ","A plain stick-figure man after the jar: \"X's man\", an agent working for that house. Whole seal: two shares, man of the High-star Branch-Elder house."]];
+/*TREE*/
+const TREE=[
+["Groundwork",[
+["n","Read the old archive","15 reader agents went through 6 months of earlier AI notes that had talked every result down. They dug out 296 buried finds, merged into 77 leads."],
+["n","Gave every sign a picture in words","The catalogue only had sign numbers. A second catalogue's descriptions turned out to use the same numbers, so 498 signs now have a shape: jar, fish, man carrying two loads, six-spoke wheel."],
+["n","Linked the two sign catalogues","Two scholars numbered the signs differently. Matching 2,332 whole texts gave 366 sign pairs, so anything found in one catalogue can be checked in the other."],
+["n","Rules, map, diary, plain-English readings","Files in the repo: the working rules, what we currently believe, what was tried, and inscriptions written out in English."]]],
+["Where things were dug up",[
+["g","Seals from the same room share a rare sign","At the city of Mohenjo-daro, two seals found in one room at the same depth share an uncommon sign 5 times where chance gives 0.7. This was the first evidence from outside the signs themselves."],
+["g","Different hands carved the shared sign","On photographs, the shared sign is on both stones in 24 pairs and looks cut by the same carver in only 4. So it is a shared word, not one carver's habit."]]],
+["How a seal text is built",[
+["g","Every seal follows one template","Opener, then a name, then an ending. A program using this gives every sign a job in 90% of 2,162 texts, and 89% in the second catalogue it was never built from."],
+["g","A name = family crest + personal part + tag","Names are 1 to 3 signs. When two house-mates' names both start with a fish, it is the same fish in 15 of 23 pairs (36% by chance)."],
+["g","A marked fish is a mark plus a plain fish","Scribes sometimes wrote the marked fish out as two separate signs. In those swaps the second sign is the plain fish 40 of 528 times against 133 of 3,332 for other signs."],
+["g","The ending says what the person is","Jar, spear, load-carrier or comb. The same name keeps the same ending across seals, and the city, house or era does not predict it at all."],
+["b","The jar means \"of\" or \"house of\"","The jar ends the text 557 of 743 times. When anything follows, it is the man sign 54 times."],
+["b","\"X's man\" = an agent of an outside master","Third version. The name in front is not the seal owner's own family and the seal is slightly larger."],
+["r","Version 1: a servant of a house-mate","Went against: these seals are bigger than owner seals, not smaller.",1],
+["r","Version 2: head of his own house","Went against: his name matches his house's crest 4 of 20 times, 3.3 by chance.",1],
+["r","Seal size shows rank","Mostly went against: bigger seals just carry longer texts."]]],
+["Accounts on tablets",[
+["g","Load tags: \"n loads of crop, carried\"","A count sign, a leaf-on-tree sign, a load-carrier. The carrier follows only when the count is there: 36 of 36, and 14 of 14 in the second catalogue. Half were found at Harappa's granary area."],
+["g","Ration tablets: \"3 hands, 3 loads, 4 cups\"","22 three-faced tablets from one trench read this way; 4 cups to 3 loads on 21 of 22. The amount changes with the trench that issued it."],
+["g","Two ways of counting","Tall strokes count containers (cup, jar, box). Short strokes count living things and produce (trees, fish, crop, women)."],
+["b","One cup is about 9.2 litres","From three measured pots that carry stroke counts. Cups are counted 1, 2, 3, 4, 6 and never 5."],
+["b","The diamond sign is a \"hand\", a counted worker","3 diamonds always sit with 3 loads (22 of 22)."],
+["r","Cup strokes are fractions (half, third, quarter)","Dropped early: measured pots get bigger with more strokes, not smaller."],
+["r","Written numbers follow the weight system","Went against: the stone weights double (1, 2, 4, 8) but \"eight\" is written 7 times and \"seven\" 87 times."]]],
+["Who ran things",[
+["g","The masters are the fish-crest families","In \"X's man\" seals, the master's name ends in a fish 18 of 50 times. For ordinary owners it is 7 of 602."],
+["g","Agents did the stamping of goods","Clay lumps pressed onto goods are stamped by agent seals 20% of the time; only 7% of seals are agent seals."],
+["g","One office in 7 cities, one name in 9","A fixed three-sign opening appears on 38 objects across 7 cities. One two-sign name is on 71 objects in 9 cities, including one in Mesopotamia and one in Central Asia."],
+["r","The spear class lived in the castles","Only true at two cities; overall 12 against 11.9 by chance."]]],
+["Seals found abroad",[
+["g","Round seals abroad are written differently","Seals found in Bahrain, Iraq and Iran never use the jar and man together (0 of 15). A single stroke stands there instead, and the family crests are missing."],
+["b","They write foreign names with Indus signs","The layout matches the Mesopotamian wording \"X, servant of Y\"."],
+["r","Abroad the word order is simply reversed","Went against: 7 read in home order, 5 look reversed."]]],
+["Sounds and language",[
+["g","The language is early Dravidian, ahead of every rival","Test: the word for each picture should sound like a word that does that sign's job. With full dictionaries and chance measured inside each one: Dravidian (the family of Tamil and Telugu) 7 of 9 against 1 expected; Munda 0 of 9; Sumerian 1 of 8; Sanskrit at chance. Burushaski and Elamite word lists were too small to run."],
+["b","First seven sounds","Jar kuṭi (house of), man āḷ, fish mīn (also star), spear vēḷ (chief), comb ciṟ (junior), carrier kā (keeper), staff-person kō (king)."],
+["a","89 more sound guesses","Each came with a fresh prediction. 10 came true, 17 lean the right way, 38 went against. An agent is giving the 38 a second try now."],
+["a","The name that travelled","An agent is checking the nine-city name against Mesopotamian records of traders from the Indus, and whether the Mesopotamian name for the Indus land can be written in Indus signs."]]]];
+/*END-TREE*/
+const $=id=>document.getElementById(id),pt=$('pt'),pb=$('pb');let cur=null;
+function show(el,t,b){if(cur)cur.classList.remove('on');cur=el;el.classList.add('on');pt.textContent=t;pb.textContent=b;}
+$('upd').textContent=UPDATED;
+SEAL.forEach(s=>{const x=document.createElement('button');x.innerHTML='<span class="dot '+s[1]+'"></span>'+s[0]+'<br><small></small>';x.querySelector('small').textContent=s[2];x.onclick=()=>show(x,s[0]+": "+s[2],s[3]);$('sl').appendChild(x);});
+const n={g:0,b:0,a:0,r:0,n:0};
+TREE.forEach(g=>{const h=document.createElement('p');h.className='gh';h.textContent=g[0];$('tr').appendChild(h);
+g[1].forEach(r=>{n[r[0]]++;const x=document.createElement('button');x.className='rw'+(r[3]?' c':'');x.innerHTML='<span class="dot '+r[0]+'"></span><span></span>';x.lastChild.textContent=r[1];x.onclick=()=>show(x,r[1],r[2]);$('tr').appendChild(x);});});
+[["g","held up"],["b","readings"],["a","testing"],["r","against"],["n","groundwork"]].forEach(k=>{const d=document.createElement('div');d.innerHTML='<b></b>'+k[1];d.firstChild.textContent=n[k[0]];d.firstChild.style.color='var(--'+k[0]+')';$('ct').appendChild(d);});
+</script></body></html>

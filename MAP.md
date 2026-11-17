@@ -1,5 +1,7 @@
 # Map
 
+Live picture of this map for Cúper: the page source is `map_page/index.html` (edit the `TREE` list and the `UPDATED` line), published as artifact slug `57d0ac8f-6e19-4e2c-a1ae-49ada7c71964`. Republish it every time this file changes.
+
 What we currently act on, the live leads in order, and what each one says we should see next. `measured` = a number came out of data. `guess` = we act as if.
 
 ## Beliefs
