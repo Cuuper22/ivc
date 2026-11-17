@@ -138,4 +138,13 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `measured` Went against the measure: 705 not on tablets/pots more than chance on new texts (5 of 66 against 21%); not in Harappa mound F (30 of 90 against 34%); 1 of 384 faces abroad.
 - Open: 167 closes only kalam tablets; 407 and 048 are missing from new texts and need a crosswalk link to be tested.
 
+## The eight unread signs (from `jobs/out/eight_signs.md`)
+- `measured` 060: left neighbour is a head word (month, outline-X, gate, wheel) in 159 of 217 uses (about 22.5 times chance); two 060s in a line 2 of 215; reversed 2 of 207. Dative, plural and "and" went against.
+- `guess` 060 = *uḷ* "in" (DEDR 698), a place/time ending; genitive stays as a weaker second reading.
+- `measured` 335 on tablets 62% against 37%; 15 of its 21 tablet lines carry grain header 413. 711: all 16 uses are Harappa tablets, tall count follows 11 of 11. 525 after the gate sign 8 of 9; 525/526/527 replace each other in 5 identical frames. 692 with its test word in the second catalogue 6 lines against 2.24.
+- `guess` 335 *kūṭu* "bin" (1883); 711 *pāṉai* "pot" (4124); 525/526/527 *katavu* "door" (1187); 692 *nāṭu* "district" (3638); 842 *tuṇai* "deputy" (3308; 5 objects, test set after seeing data); 611 *kuṭai* "umbrella", a ruling house name (1663; 6 uses); 645 *kuṟi* "mark" (1847).
+- `guess` Clashes kept alive: 335 = *ūr* "town" (third pass) against "bin"; 527 = *kāval* "guard" (fourth pass) against "door". A job is splitting them.
+- `guess` Signboard: *kāl kuṭai aracu · kāl kaṇ kuṟi oru · kāl kāl maru-*: "The quarter of King Umbrella. The quarter of the Marked Place, number one. Quarter by quarter, the Maru kin."
+- `measured` Long-text phrases (186): reads 111, partial 58, unread 8, nonsense 9 (was 76 / 73 / 8 / 29). By the parser rule alone, without three hand-marked signboard phrases: 108 reads, 11 nonsense.
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.
