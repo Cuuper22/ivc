@@ -1,0 +1,853 @@
+{
+ "seeds": {
+  "A": 7,
+  "B": 11,
+  "C": 3,
+  "D": 5
+ },
+ "catalogue_rows": 5679,
+ "A_first_pass": {
+  "house": {
+   "seals": 979,
+   "pairs": 3821,
+   "shuffles": 2000,
+   "measures": {
+    "all_signs_overlap": {
+     "observed": 0.03357353352153804,
+     "chance": 0.03292249065722681,
+     "ratio": 1.01977501857589,
+     "p": 0.271864067966017
+    },
+    "shares_rare_sign": {
+     "observed": 0.004449097095001309,
+     "chance": 0.0033929599581261445,
+     "ratio": 1.3112730919048172,
+     "p": 0.15892053973013492
+    },
+    "shares_sign_pair": {
+     "observed": 0.031405391258832765,
+     "chance": 0.029612666841141062,
+     "ratio": 1.0605391073795847,
+     "p": 0.28235882058970513
+    },
+    "same_stored_last_sign": {
+     "observed": 0.021460350693535725,
+     "chance": 0.02373292331850301,
+     "ratio": 0.9042438811911759,
+     "p": 0.8380809595202399
+    },
+    "same_stored_last_two": {
+     "observed": 0.011515310128238681,
+     "chance": 0.01224810259094478,
+     "ratio": 0.9401709401709402,
+     "p": 0.6686656671664168
+    },
+    "same_stored_first_sign": {
+     "observed": 0.1554566867312222,
+     "chance": 0.1437517665532583,
+     "ratio": 1.0814245310413446,
+     "p": 0.10744627686156921
+    },
+    "middle_signs_overlap": {
+     "observed": 0.022884204381109774,
+     "chance": 0.022540931401406224,
+     "ratio": 1.0152288729152574,
+     "p": 0.38580709645177413
+    },
+    "identical_text": {
+     "observed": 0.0,
+     "chance": 7.40643810520806e-05,
+     "ratio": 0.0,
+     "p": 1.0
+    },
+    "same_animal": {
+     "observed": 0.1274535461920963,
+     "chance": 0.10829128500392568,
+     "ratio": 1.1769510924861217,
+     "p": 0.0009995002498750624
+    }
+   }
+  },
+  "room": {
+   "seals": 849,
+   "pairs": 333,
+   "shuffles": 2000,
+   "measures": {
+    "all_signs_overlap": {
+     "observed": 0.035017152381905794,
+     "chance": 0.030846052140467522,
+     "ratio": 1.1352231469506637,
+     "p": 0.11744127936031984
+    },
+    "shares_rare_sign": {
+     "observed": 0.012012012012012012,
+     "chance": 0.004057057057057058,
+     "ratio": 2.9607698001480376,
+     "p": 0.047476261869065464
+    },
+    "shares_sign_pair": {
+     "observed": 0.036036036036036036,
+     "chance": 0.026072072072072072,
+     "ratio": 1.38217000691085,
+     "p": 0.1724137931034483
+    },
+    "same_stored_last_sign": {
+     "observed": 0.03003003003003003,
+     "chance": 0.02006306306306306,
+     "ratio": 1.4967819188744202,
+     "p": 0.1409295352323838
+    },
+    "same_stored_last_two": {
+     "observed": 0.018018018018018018,
+     "chance": 0.010135135135135136,
+     "ratio": 1.7777777777777777,
+     "p": 0.13193403298350825
+    },
+    "same_stored_first_sign": {
+     "observed": 0.14414414414414414,
+     "chance": 0.132966966966967,
+     "ratio": 1.0840598039658518,
+     "p": 0.3058470764617691
+    },
+    "middle_signs_overlap": {
+     "observed": 0.030841254019687455,
+     "chance": 0.021125644581878714,
+     "ratio": 1.4598964732249002,
+     "p": 0.00849575212393803
+    },
+    "identical_text": {
+     "observed": 0.0,
+     "chance": 9.159159159159159e-05,
+     "ratio": 0.0,
+     "p": 1.0
+    },
+    "same_animal": {
+     "observed": 0.14114114114114115,
+     "chance": 0.1097882882882883,
+     "ratio": 1.2855755685936625,
+     "p": 0.0544727636181909
+    }
+   }
+  }
+ },
+ "B_depth_matched": {
+  "seals": 969,
+  "pairs": {
+   "same_house_other_room": 1778,
+   "same_house_any_room": 1971,
+   "same_room": 193
+  },
+  "depth_band_ft": 3.0,
+  "max_depth_gap_ft": 3.0,
+  "shuffles": 2000,
+  "rows": [
+   {
+    "where": "same_room",
+    "measure": "all_signs_overlap",
+    "observed": 0.03268674807180964,
+    "chance": 0.032253563739207576,
+    "ratio": 1.013430588201188,
+    "p": 0.46026986506746626
+   },
+   {
+    "where": "same_room",
+    "measure": "middle_signs_overlap",
+    "observed": 0.03255436549741449,
+    "chance": 0.02257632874006334,
+    "ratio": 1.4419689698991847,
+    "p": 0.022988505747126436
+   },
+   {
+    "where": "same_room",
+    "measure": "end_signs_overlap",
+    "observed": 0.03921805225453108,
+    "chance": 0.03565097932785972,
+    "ratio": 1.1000553980261587,
+    "p": 0.31384307846076964
+   },
+   {
+    "where": "same_room",
+    "measure": "shares_rare_sign",
+    "observed": 0.02072538860103627,
+    "chance": 0.0038709412785818877,
+    "ratio": 5.354095324491458,
+    "p": 0.008995502248875561
+   },
+   {
+    "where": "same_room",
+    "measure": "shares_sign_pair",
+    "observed": 0.031088082901554404,
+    "chance": 0.02928070423317756,
+    "ratio": 1.0617259289251975,
+    "p": 0.4397801099450275
+   },
+   {
+    "where": "same_room",
+    "measure": "same_animal",
+    "observed": 0.15544041450777202,
+    "chance": 0.1148616264390229,
+    "ratio": 1.3532841152157231,
+    "p": 0.05297351324337831
+   },
+   {
+    "where": "same_house_other_room",
+    "measure": "all_signs_overlap",
+    "observed": 0.03491323424462279,
+    "chance": 0.03308885261704753,
+    "ratio": 1.0551358383045089,
+    "p": 0.11644177911044477
+   },
+   {
+    "where": "same_house_other_room",
+    "measure": "middle_signs_overlap",
+    "observed": 0.022774013060008643,
+    "chance": 0.022415044768607423,
+    "ratio": 1.0160146140731319,
+    "p": 0.39980009995002497
+   },
+   {
+    "where": "same_house_other_room",
+    "measure": "end_signs_overlap",
+    "observed": 0.03860505932730115,
+    "chance": 0.035690727630557154,
+    "ratio": 1.0816551493965296,
+    "p": 0.1424287856071964
+   },
+   {
+    "where": "same_house_other_room",
+    "measure": "shares_rare_sign",
+    "observed": 0.0044994375703037125,
+    "chance": 0.0030082137997495587,
+    "ratio": 1.4957173491718914,
+    "p": 0.15242378810594703
+   },
+   {
+    "where": "same_house_other_room",
+    "measure": "shares_sign_pair",
+    "observed": 0.03543307086614173,
+    "chance": 0.03062142769093449,
+    "ratio": 1.1571332082805446,
+    "p": 0.11294352823588207
+   },
+   {
+    "where": "same_house_other_room",
+    "measure": "same_animal",
+    "observed": 0.12148481439820022,
+    "chance": 0.10957542140921735,
+    "ratio": 1.1086867185708225,
+    "p": 0.06596701649175413
+   },
+   {
+    "where": "same_house_any_room",
+    "measure": "all_signs_overlap",
+    "observed": 0.03469521708006016,
+    "chance": 0.03300947245166038,
+    "ratio": 1.051068511648237,
+    "p": 0.1199400299850075
+   },
+   {
+    "where": "same_house_any_room",
+    "measure": "middle_signs_overlap",
+    "observed": 0.023731703582798764,
+    "chance": 0.022430155799681203,
+    "ratio": 1.0580266938286742,
+    "p": 0.18690654672663667
+   },
+   {
+    "where": "same_house_any_room",
+    "measure": "end_signs_overlap",
+    "observed": 0.03866508349521357,
+    "chance": 0.03568637266008783,
+    "ratio": 1.0834691399851117,
+    "p": 0.11544227886056972
+   },
+   {
+    "where": "same_house_any_room",
+    "measure": "shares_rare_sign",
+    "observed": 0.0060882800608828,
+    "chance": 0.0030897183308117773,
+    "ratio": 1.9704967925937753,
+    "p": 0.01899050474762619
+   },
+   {
+    "where": "same_house_any_room",
+    "measure": "shares_sign_pair",
+    "observed": 0.0350076103500761,
+    "chance": 0.03049373417752909,
+    "ratio": 1.148026350143542,
+    "p": 0.11344327836081959
+   },
+   {
+    "where": "same_house_any_room",
+    "measure": "same_animal",
+    "observed": 0.1248097412480974,
+    "chance": 0.1100739695616003,
+    "ratio": 1.1338715387951062,
+    "p": 0.026986506746626688
+   }
+  ]
+ },
+ "C_grid": {
+  "seals": 845,
+  "shuffles": 3000,
+  "depth_band_ft": 3.0,
+  "cells": [
+   {
+    "part": "middle",
+    "rarity_cutoff": 20,
+    "max_depth_gap_ft": 2,
+    "pairs": 148,
+    "observed": 1,
+    "expected": 0.08566666666666667,
+    "ratio": 11.673151750972762,
+    "p": 0.08263912029323559
+   },
+   {
+    "part": "middle",
+    "rarity_cutoff": 20,
+    "max_depth_gap_ft": 3,
+    "pairs": 193,
+    "observed": 1,
+    "expected": 0.09266666666666666,
+    "ratio": 10.79136690647482,
+    "p": 0.08997000999666778
+   },
+   {
+    "part": "middle",
+    "rarity_cutoff": 20,
+    "max_depth_gap_ft": 5,
+    "pairs": 259,
+    "observed": 1,
+    "expected": 0.142,
+    "ratio": 7.042253521126761,
+    "p": 0.13495501499500168
+   },
+   {
+    "part": "middle",
+    "rarity_cutoff": 20,
+    "max_depth_gap_ft": 99,
+    "pairs": 333,
+    "observed": 1,
+    "expected": 0.173,
+    "ratio": 5.780346820809249,
+    "p": 0.15694768410529825
+   },
+   {
+    "part": "middle",
+    "rarity_cutoff": 40,
+    "max_depth_gap_ft": 2,
+    "pairs": 148,
+    "observed": 3,
+    "expected": 0.172,
+    "ratio": 17.44186046511628,
+    "p": 0.0013328890369876708
+   },
+   {
+    "part": "middle",
+    "rarity_cutoff": 40,
+    "max_depth_gap_ft": 3,
+    "pairs": 193,
+    "observed": 3,
+    "expected": 0.22866666666666666,
+    "ratio": 13.119533527696793,
+    "p": 0.0026657780739753416
+   },
+   {
+    "part": "middle",
+    "rarity_cutoff": 40,
+    "max_depth_gap_ft": 5,
+    "pairs": 259,
+    "observed": 3,
+    "expected": 0.44,
+    "ratio": 6.818181818181818,
+    "p": 0.015328223925358214
+   },
+   {
+    "part": "middle",
+    "rarity_cutoff": 40,
+    "max_depth_gap_ft": 99,
+    "pairs": 333,
+    "observed": 3,
+    "expected": 0.5783333333333334,
+    "ratio": 5.187319884726224,
+    "p": 0.022325891369543487
+   },
+   {
+    "part": "middle",
+    "rarity_cutoff": 80,
+    "max_depth_gap_ft": 2,
+    "pairs": 148,
+    "observed": 4,
+    "expected": 0.553,
+    "ratio": 7.2332730560578655,
+    "p": 0.0036654448517160947
+   },
+   {
+    "part": "middle",
+    "rarity_cutoff": 80,
+    "max_depth_gap_ft": 3,
+    "pairs": 193,
+    "observed": 5,
+    "expected": 0.728,
+    "ratio": 6.868131868131869,
+    "p": 0.000999666777740753
+   },
+   {
+    "part": "middle",
+    "rarity_cutoff": 80,
+    "max_depth_gap_ft": 5,
+    "pairs": 259,
+    "observed": 5,
+    "expected": 1.0456666666666667,
+    "ratio": 4.781638508128785,
+    "p": 0.005664778407197601
+   },
+   {
+    "part": "middle",
+    "rarity_cutoff": 80,
+    "max_depth_gap_ft": 99,
+    "pairs": 333,
+    "observed": 5,
+    "expected": 1.3816666666666666,
+    "ratio": 3.618817852834741,
+    "p": 0.012662445851382872
+   },
+   {
+    "part": "middle",
+    "rarity_cutoff": 150,
+    "max_depth_gap_ft": 2,
+    "pairs": 148,
+    "observed": 6,
+    "expected": 2.294,
+    "ratio": 2.6155187445510024,
+    "p": 0.02465844718427191
+   },
+   {
+    "part": "middle",
+    "rarity_cutoff": 150,
+    "max_depth_gap_ft": 3,
+    "pairs": 193,
+    "observed": 7,
+    "expected": 2.868333333333333,
+    "ratio": 2.440441603718768,
+    "p": 0.02332555814728424
+   },
+   {
+    "part": "middle",
+    "rarity_cutoff": 150,
+    "max_depth_gap_ft": 5,
+    "pairs": 259,
+    "observed": 8,
+    "expected": 4.112,
+    "ratio": 1.9455252918287937,
+    "p": 0.05898033988670443
+   },
+   {
+    "part": "middle",
+    "rarity_cutoff": 150,
+    "max_depth_gap_ft": 99,
+    "pairs": 333,
+    "observed": 9,
+    "expected": 5.050333333333334,
+    "ratio": 1.782060590060062,
+    "p": 0.06697767410863045
+   },
+   {
+    "part": "ends",
+    "rarity_cutoff": 20,
+    "max_depth_gap_ft": 2,
+    "pairs": 148,
+    "observed": 0,
+    "expected": 0.03933333333333333,
+    "ratio": 0.0,
+    "p": 1.0
+   },
+   {
+    "part": "ends",
+    "rarity_cutoff": 20,
+    "max_depth_gap_ft": 3,
+    "pairs": 193,
+    "observed": 0,
+    "expected": 0.06066666666666667,
+    "ratio": 0.0,
+    "p": 1.0
+   },
+   {
+    "part": "ends",
+    "rarity_cutoff": 20,
+    "max_depth_gap_ft": 5,
+    "pairs": 259,
+    "observed": 0,
+    "expected": 0.11833333333333333,
+    "ratio": 0.0,
+    "p": 1.0
+   },
+   {
+    "part": "ends",
+    "rarity_cutoff": 20,
+    "max_depth_gap_ft": 99,
+    "pairs": 333,
+    "observed": 0,
+    "expected": 0.13866666666666666,
+    "ratio": 0.0,
+    "p": 1.0
+   },
+   {
+    "part": "ends",
+    "rarity_cutoff": 40,
+    "max_depth_gap_ft": 2,
+    "pairs": 148,
+    "observed": 1,
+    "expected": 0.08766666666666667,
+    "ratio": 11.406844106463877,
+    "p": 0.08397200933022327
+   },
+   {
+    "part": "ends",
+    "rarity_cutoff": 40,
+    "max_depth_gap_ft": 3,
+    "pairs": 193,
+    "observed": 1,
+    "expected": 0.147,
+    "ratio": 6.802721088435375,
+    "p": 0.14261912695768078
+   },
+   {
+    "part": "ends",
+    "rarity_cutoff": 40,
+    "max_depth_gap_ft": 5,
+    "pairs": 259,
+    "observed": 1,
+    "expected": 0.30366666666666664,
+    "ratio": 3.2930845225027445,
+    "p": 0.27190936354548484
+   },
+   {
+    "part": "ends",
+    "rarity_cutoff": 40,
+    "max_depth_gap_ft": 99,
+    "pairs": 333,
+    "observed": 1,
+    "expected": 0.338,
+    "ratio": 2.9585798816568047,
+    "p": 0.2919026991002999
+   },
+   {
+    "part": "ends",
+    "rarity_cutoff": 80,
+    "max_depth_gap_ft": 2,
+    "pairs": 148,
+    "observed": 1,
+    "expected": 0.33066666666666666,
+    "ratio": 3.024193548387097,
+    "p": 0.2859046984338554
+   },
+   {
+    "part": "ends",
+    "rarity_cutoff": 80,
+    "max_depth_gap_ft": 3,
+    "pairs": 193,
+    "observed": 1,
+    "expected": 0.47533333333333333,
+    "ratio": 2.1037868162692845,
+    "p": 0.38353882039320225
+   },
+   {
+    "part": "ends",
+    "rarity_cutoff": 80,
+    "max_depth_gap_ft": 5,
+    "pairs": 259,
+    "observed": 1,
+    "expected": 0.7666666666666667,
+    "ratio": 1.3043478260869565,
+    "p": 0.5494835054981673
+   },
+   {
+    "part": "ends",
+    "rarity_cutoff": 80,
+    "max_depth_gap_ft": 99,
+    "pairs": 333,
+    "observed": 2,
+    "expected": 0.8836666666666667,
+    "ratio": 2.263296869105998,
+    "p": 0.2239253582139287
+   },
+   {
+    "part": "ends",
+    "rarity_cutoff": 150,
+    "max_depth_gap_ft": 2,
+    "pairs": 148,
+    "observed": 1,
+    "expected": 0.8753333333333333,
+    "ratio": 1.1424219345011424,
+    "p": 0.5878040653115628
+   },
+   {
+    "part": "ends",
+    "rarity_cutoff": 150,
+    "max_depth_gap_ft": 3,
+    "pairs": 193,
+    "observed": 1,
+    "expected": 1.169,
+    "ratio": 0.8554319931565441,
+    "p": 0.6937687437520826
+   },
+   {
+    "part": "ends",
+    "rarity_cutoff": 150,
+    "max_depth_gap_ft": 5,
+    "pairs": 259,
+    "observed": 1,
+    "expected": 1.663,
+    "ratio": 0.6013229104028863,
+    "p": 0.8197267577474175
+   },
+   {
+    "part": "ends",
+    "rarity_cutoff": 150,
+    "max_depth_gap_ft": 99,
+    "pairs": 333,
+    "observed": 3,
+    "expected": 2.516,
+    "ratio": 1.192368839427663,
+    "p": 0.4571809396867711
+   }
+  ],
+  "pairs_behind_headline_cell": [
+   {
+    "room": "DKG. (S) / 8A- / 44-",
+    "seal_1": "M-1923",
+    "find_no_1": "DK1082945",
+    "depth_1": "-4.5 ft",
+    "text_1": "740-760-440-853-016-043",
+    "seal_2": "M-53",
+    "find_no_2": "DK10916128",
+    "depth_2": "-6.6 ft",
+    "text_2": "090-740-220-016-002-297-190-920-140",
+    "shared": {
+     "016": 49
+    }
+   },
+   {
+    "room": "DKG. (S) / 7I / 15-",
+    "seal_1": "M-1661",
+    "find_no_1": "DK6791436",
+    "depth_1": "-13.1 ft",
+    "text_1": "520-070-219-002-861-032-520-919-140",
+    "seal_2": "M-1045",
+    "find_no_2": "DK6792447",
+    "depth_2": "-13.3 ft",
+    "text_2": "740-100-415-070-032-002-820-000",
+    "shared": {
+     "070": 38
+    }
+   },
+   {
+    "room": "DKG. (S) / 10I / 10-",
+    "seal_1": "M-92",
+    "find_no_1": "DK6422407",
+    "depth_1": "-12.5 ft",
+    "text_1": "740-798-460-350-002-814-084",
+    "seal_2": "M-195",
+    "find_no_2": "DK6596415",
+    "depth_2": "-12.7 ft",
+    "text_2": "298-350-590-032-900-853",
+    "shared": {
+     "350": 48
+    }
+   },
+   {
+    "room": "DKG. (S) / 9XI / 70-",
+    "seal_1": "M-153",
+    "find_no_1": "DK12877361",
+    "depth_1": "-11.5 ft",
+    "text_1": "269-130-190",
+    "seal_2": "M-1112",
+    "find_no_2": "DK12878366",
+    "depth_2": "-11.4 ft",
+    "text_2": "740-585-220-002-130-035-171",
+    "shared": {
+     "130": 16
+    }
+   },
+   {
+    "room": "DKG. (N) / 16II / 11-",
+    "seal_1": "M-723",
+    "find_no_1": "DK1164954",
+    "depth_1": "-4.6 ft",
+    "text_1": "740-460-510-235-220-032-002-861",
+    "seal_2": "M-937",
+    "find_no_2": "DK1169066",
+    "depth_2": "-5.0 ft",
+    "text_2": "740-460-503-031-002-900-615",
+    "shared": {
+     "460": 39
+    }
+   }
+  ]
+ },
+ "D_other_sites": {
+  "Harappa": {
+   "seals": 202,
+   "shuffles": 3000,
+   "cells": [
+    {
+     "part": "middle",
+     "rarity_cutoff": 40,
+     "pairs": 79,
+     "observed": 0,
+     "expected": 0.06566666666666666,
+     "p": 1.0
+    },
+    {
+     "part": "middle",
+     "rarity_cutoff": 80,
+     "pairs": 79,
+     "observed": 0,
+     "expected": 0.3486666666666667,
+     "p": 1.0
+    },
+    {
+     "part": "middle",
+     "rarity_cutoff": 150,
+     "pairs": 79,
+     "observed": 3,
+     "expected": 1.503,
+     "p": 0.19726757747417528
+    },
+    {
+     "part": "whole text",
+     "rarity_cutoff": 40,
+     "pairs": 79,
+     "observed": 0,
+     "expected": 0.14133333333333334,
+     "p": 1.0
+    },
+    {
+     "part": "whole text",
+     "rarity_cutoff": 80,
+     "pairs": 79,
+     "observed": 0,
+     "expected": 0.7483333333333333,
+     "p": 1.0
+    },
+    {
+     "part": "whole text",
+     "rarity_cutoff": 150,
+     "pairs": 79,
+     "observed": 4,
+     "expected": 2.4506666666666668,
+     "p": 0.22659113628790403
+    }
+   ]
+  },
+  "Kalibangan": {
+   "seals": 39,
+   "shuffles": 3000,
+   "cells": [
+    {
+     "part": "middle",
+     "rarity_cutoff": 40,
+     "pairs": 15,
+     "observed": 0,
+     "expected": 0.0,
+     "p": 1.0
+    },
+    {
+     "part": "middle",
+     "rarity_cutoff": 80,
+     "pairs": 15,
+     "observed": 0,
+     "expected": 0.0,
+     "p": 1.0
+    },
+    {
+     "part": "middle",
+     "rarity_cutoff": 150,
+     "pairs": 15,
+     "observed": 0,
+     "expected": 0.03133333333333333,
+     "p": 1.0
+    },
+    {
+     "part": "whole text",
+     "rarity_cutoff": 40,
+     "pairs": 15,
+     "observed": 0,
+     "expected": 0.0,
+     "p": 1.0
+    },
+    {
+     "part": "whole text",
+     "rarity_cutoff": 80,
+     "pairs": 15,
+     "observed": 0,
+     "expected": 0.0,
+     "p": 1.0
+    },
+    {
+     "part": "whole text",
+     "rarity_cutoff": 150,
+     "pairs": 15,
+     "observed": 0,
+     "expected": 0.105,
+     "p": 1.0
+    }
+   ]
+  },
+  "Chanhu-daro": {
+   "seals": 52,
+   "shuffles": 3000,
+   "cells": [
+    {
+     "part": "middle",
+     "rarity_cutoff": 40,
+     "pairs": 3,
+     "observed": 1,
+     "expected": 0.007666666666666666,
+     "p": 0.007997334221926024
+    },
+    {
+     "part": "middle",
+     "rarity_cutoff": 80,
+     "pairs": 3,
+     "observed": 1,
+     "expected": 0.008333333333333333,
+     "p": 0.00866377874041986
+    },
+    {
+     "part": "middle",
+     "rarity_cutoff": 150,
+     "pairs": 3,
+     "observed": 1,
+     "expected": 0.024333333333333332,
+     "p": 0.02465844718427191
+    },
+    {
+     "part": "whole text",
+     "rarity_cutoff": 40,
+     "pairs": 3,
+     "observed": 1,
+     "expected": 0.008666666666666666,
+     "p": 0.008997000999666778
+    },
+    {
+     "part": "whole text",
+     "rarity_cutoff": 80,
+     "pairs": 3,
+     "observed": 1,
+     "expected": 0.018666666666666668,
+     "p": 0.01899366877707431
+    },
+    {
+     "part": "whole text",
+     "rarity_cutoff": 150,
+     "pairs": 3,
+     "observed": 1,
+     "expected": 0.07366666666666667,
+     "p": 0.07364211929356881
+    }
+   ]
+  }
+ }
+}
