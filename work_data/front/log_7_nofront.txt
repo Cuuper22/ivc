@@ -1,0 +1,60 @@
+front words by rule: v2 OPEN ['091', '360', '545', '550', '556', '692', '817', '820', '824', '861', '880', '920']; added by position [('201', 5, 5, 5), ('347', 9, 8, 8), ('263', 6, 5, 4)]
+complete seal copy events 1535; with a front 437 (0.285)
+
+NUMERIC (labels dealt within site, 3000 deals):
+                                         attribute  fronted  frontless  observed  dealt   P_high    P_low
+   size residual, median difference (front - none)    0.007      0.000     0.007  0.003 0.365545 0.651116
+                   raw log area, median difference    6.469      6.338     0.131  0.016 0.000333 1.000000
+                      text length, mean difference    5.310      4.230     1.080  0.030 0.000333 1.000000
+name length (name + closer texts), mean difference    2.710      3.630    -0.920  0.010 1.000000 0.000333
+
+ending: chi2 35.6 against 7.1 dealt within site, P 0.0005
+hasf        no front  front
+ecls                       
+comb           0.024  0.014
+count line     0.044  0.082
+jar            0.334  0.421
+man            0.026  0.039
+no closer      0.415  0.304
+other          0.015  0.018
+porter         0.056  0.025
+spear          0.087  0.096
+
+animal: chi2 10.2 against 4.9 dealt within site, P 0.0645
+hasf               no front  front
+anim3                             
+elephant              0.018  0.021
+none                  0.205  0.169
+other                 0.098  0.085
+short-horned bull     0.057  0.032
+unicorn               0.598  0.659
+zebu                  0.023  0.034
+
+format: chi2 3.1 against 3.8 dealt within site, P 0.5612
+hasf         no front  front
+fmt                         
+cylinder        0.005  0.000
+other           0.010  0.011
+rectangular     0.171  0.151
+round           0.010  0.009
+square          0.804  0.828
+
+time bin: chi2 2.4 against 2.3 dealt within site, P 0.3363
+hasf    no front  front
+bin                    
+early      0.135  0.155
+late       0.371  0.402
+middle     0.494  0.443
+
+city: chi2 4.4 against 2.0 dealt within fmt, P 0.1199
+hasf   no front  front
+siteg                 
+HP        0.183  0.156
+MD        0.608  0.666
+other     0.209  0.178
+
+ADDITION TEST: the rest of a fronted text (after the front unit) is a whole attested frontless text in 152 of 578 (0.263); frontless texts of matched length with k signs cut: 0.177 (20 rounds, max 0.197); ratio 1.49
+by front unit (6+ texts): {'091': {'sum': 1, 'size': 12}, '347-741': {'sum': 0, 'size': 8}, '545': {'sum': 1, 'size': 8}, '550': {'sum': 1, 'size': 7}, '550-060': {'sum': 11, 'size': 24}, '692': {'sum': 0, 'size': 11}, '692-060': {'sum': 6, 'size': 30}, '817': {'sum': 2, 'size': 10}, '817-002': {'sum': 34, 'size': 111}, '817-368': {'sum': 4, 'size': 14}, '820': {'sum': 5, 'size': 31}, '820-002': {'sum': 17, 'size': 67}, '820-060': {'sum': 8, 'size': 21}, '824-002': {'sum': 3, 'size': 6}, '861': {'sum': 1, 'size': 11}, '861-002': {'sum': 35, 'size': 105}, '920': {'sum': 0, 'size': 12}, '920-060': {'sum': 2, 'size': 12}, '920-060-741': {'sum': 13, 'size': 31}, '920-060-742': {'sum': 1, 'size': 6}}
+hits by body length: {1: {'sum': 16, 'size': 41}, 2: {'sum': 78, 'size': 154}, 3: {'sum': 46, 'size': 186}, 4: {'sum': 11, 'size': 97}, 5: {'sum': 1, 'size': 52}, 6: {'sum': 0, 'size': 23}, 7: {'sum': 0, 'size': 12}, 8: {'sum': 0, 'size': 9}, 9: {'sum': 0, 'size': 2}, 10: {'sum': 0, 'size': 2}}
+frontless name + closer texts that also stand whole behind a front: 125 of 1182
+examples: 692-060 + 003-426; 820-002 + 236; 817-002 + 003-390; 692-060 + 531-740; 861-002 + 416-740; 861-002 + 016-390; 820-002 + 005-900-740; 920-060-741 + 176-156; 817-002 + 240-904-740; 820 + 798-740; 550-060 + 003-390; 550-060 + 590-390-740; 817-002 + 004-390; 820 + 033; 920-060 + 415-220-520; 091-368 + 033-700; 861-002 + 590-390-740; 820-002 + 003-390; 201-060 + 031-176-740; 550-060 + 803-740; 861-002 + 004-407; 817-002 + 004-390; 201-060 + 240-233-520; 861-002 + 240-643-740; 817-368 + 003-390; 692-060 + 176-740; 820 + 840-032-740; 861-002 + 003-220-590-405-740; 817-002 + 097-161; 692-060 + 240-636-740

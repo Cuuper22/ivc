@@ -1,0 +1,245 @@
+front words by rule: v2 OPEN ['091', '360', '545', '550', '556', '692', '817', '820', '824', '861', '880', '920']; added by position [('201', 5, 5, 5), ('347', 9, 8, 8), ('263', 6, 5, 4)]
+copy events with a name and a closer: 1522; with a front 340
+
+[all names] texts 1522, distinct names 906, fronted texts 340
+  names with AND without a front: 73 against 103.98 dealt (ratio 0.70; P low 0.0005, P high 1.0000)
+  names with two different front WORDS: 22 against 37.74 dealt (ratio 0.58; P low 0.0005, P high 1.0000)
+  names with two different front UNITS (word+slot): 23 against 38.80 dealt (ratio 0.59; P low 0.0005, P high 1.0000)
+
+[names of 2+ signs] texts 1209, distinct names 797, fronted texts 254
+  names with AND without a front: 44 against 70.56 dealt (ratio 0.62; P low 0.0005, P high 1.0000)
+  names with two different front WORDS: 13 against 23.50 dealt (ratio 0.55; P low 0.0005, P high 1.0000)
+  names with two different front UNITS (word+slot): 13 against 24.26 dealt (ratio 0.54; P low 0.0005, P high 1.0000)
+
+[name + same ending] texts 1522, distinct names 1013, fronted texts 340
+  names with AND without a front: 56 against 93.41 dealt (ratio 0.60; P low 0.0005, P high 1.0000)
+  names with two different front WORDS: 23 against 31.08 dealt (ratio 0.74; P low 0.0220, P high 0.9905)
+  names with two different front UNITS (word+slot): 24 against 32.01 dealt (ratio 0.75; P low 0.0210, P high 0.9900)
+
+[seals only] texts 855, distinct names 682, fronted texts 265
+  names with AND without a front: 49 against 49.34 dealt (ratio 0.99; P low 0.5187, P high 0.5952)
+  names with two different front WORDS: 21 against 22.67 dealt (ratio 0.93; P low 0.3543, P high 0.7676)
+  names with two different front UNITS (word+slot): 22 against 23.57 dealt (ratio 0.93; P low 0.3598, P high 0.7576)
+
+[all names, dealt within length + site + object kind (redesign)] texts 1522, distinct names 906, fronted texts 340
+  names with AND without a front: 73 against 89.02 dealt (ratio 0.82; P low 0.0025, P high 0.9985)
+  names with two different front WORDS: 22 against 33.26 dealt (ratio 0.66; P low 0.0015, P high 1.0000)
+  names with two different front UNITS (word+slot): 23 against 34.10 dealt (ratio 0.67; P low 0.0010, P high 0.9995)
+
+[names of 2+ signs, dealt within length + site + kind] texts 1209, distinct names 797, fronted texts 254
+  names with AND without a front: 44 against 56.49 dealt (ratio 0.78; P low 0.0030, P high 0.9995)
+  names with two different front WORDS: 13 against 19.33 dealt (ratio 0.67; P low 0.0170, P high 0.9935)
+  names with two different front UNITS (word+slot): 13 against 19.88 dealt (ratio 0.65; P low 0.0105, P high 0.9960)
+
+[seals only, names of 2+ signs] texts 699, distinct names 609, fronted texts 209
+  names with AND without a front: 30 against 27.94 dealt (ratio 1.07; P low 0.8321, P high 0.2919)
+  names with two different front WORDS: 12 against 13.46 dealt (ratio 0.89; P low 0.3438, P high 0.7941)
+  names with two different front UNITS (word+slot): 12 against 14.01 dealt (ratio 0.86; P low 0.2594, P high 0.8496)
+
+CASES written: 77 names, 377 texts (f2_cases.csv). Names of 2+ signs:
+           name  nlen       front                        text   kind         site                                           building    bin            animal  area_mm2 size_resid   cisi
+        003-220     2           -         003-220-740-090-400   seal      Harappa                Harappa|Harappa|FTrench IV+V|I13/11 middle           unicorn    231.04     -1.093 H-1056
+        003-220     2           -                 003-220-520   seal Mohenjo-daro                   Mohenjo-daro|Mohenjo-daro|HRA|2X   late          elephant    778.41      0.352 M-1912
+        003-220     2 920-060-741     920-060-741-003-220-520   seal Mohenjo-daro                Mohenjo-daro|Mohenjo-daro|VSA|4XXII middle           unicorn   1176.49      0.464 M-1672
+        003-220     2           -                 003-220-740   seal Mohenjo-daro                Mohenjo-daro|Mohenjo-daro|HRB|1VIII  early             Scene    852.64      0.443  M-294
+        003-220     2           -                 003-220-740 tablet Mohenjo-daro                    Mohenjo-daro|Mohenjo-daro|HRA|2  early              none       NaN            M-1439
+        003-220     2           -                 003-220-740   seal Mohenjo-daro                                                                        none    212.75     -0.515 M-1441
+        003-220     2           -                 003-220-740 tablet Mohenjo-daro                                                                        none    180.00            M-1442
+        003-220     2           -                 003-220-740   seal Mohenjo-daro                                                                        none    162.00     -0.788 M-1443
+003-220-590-405     4     861-002 861-002-003-220-590-405-740   seal      Harappa                                                    middle              none    722.68      0.214  H-134
+003-220-590-405     4           -         003-220-590-405-740 copper Mohenjo-daro                          Mohenjo-daro|DKG. (S)|2IV middle              none    415.80             M-605
+        005-900     2     820-002         820-002-005-900-740   seal      Harappa                  Harappa|Harappa|FTrench VI|P11/11 middle           unicorn    524.41     -0.273 H-1045
+        005-900     2           -                 005-900-740   seal      Harappa                                                    middle           unicorn    316.84     -0.811  H-512
+        005-900     2           -                 005-900-740   seal Mohenjo-daro             Mohenjo-daro|Mohenjo-daro|DKG. (S)|10I middle           unicorn    691.53      0.233  M-138
+        005-900     2           -             005-900-740-090   seal Mohenjo-daro        Mohenjo-daro|Mohenjo-daro|DKG. (S)|Low Lane   late           unicorn    499.22     -0.256  M-194
+        005-900     2           -                 005-900-740   seal Mohenjo-daro                 Mohenjo-daro|Mohenjo-daro|VSA|2XVI  early              none    407.62      0.193 M-1368
+        005-900     2           -                 005-900-740   seal Mohenjo-daro                                                                     unicorn    306.00      -0.59 M-1852
+        016-220     2           -             016-220-520-400 tablet      Harappa                   Harappa|Harappa|FTrench III|N9/3 middle              none     99.40            H-1121
+        016-220     2     820-002         820-002-016-220-151   seal      Harappa                          Harappa|Harappa|AB|R24/17 middle           unicorn    466.56      -0.39  H-514
+        016-220     2           -             016-220-520-400 tablet      Harappa                    Harappa|Harappa|FTrench I|M12/7 middle              none    146.85             H-789
+        016-220     2           -                 016-220-520 tablet      Harappa                                Harappa|AB-|-P24/16 middle              none     90.17             H-942
+        016-220     2     820-002     820-002-016-220-740-090   seal     Nausharo                                                                     unicorn   1054.00       0.31   Ns-5
+        017-575     2         920         920-017-575-740-400 tablet      Harappa                                                    middle              none    161.98             H-296
+        017-575     2           -                 017-575-740   seal     Khirsara                                                                        none    276.00      0.229  Krs-2
+        017-575     2     820-002         820-002-017-575-740   seal Mohenjo-daro                                                    middle           unicorn    961.00      0.344  M-728
+        017-575     2     817-002     817-002-017-575-740-679   seal Mohenjo-daro            Mohenjo-daro|Mohenjo-daro|DKG. (N)|15VI   late           unicorn    712.89      -0.07  M-792
+        017-585     2     817-002         817-002-017-585-740   seal Mohenjo-daro               Mohenjo-daro|Mohenjo-daro|DKG. (S)|4 middle           unicorn    930.25      0.312 M-1708
+        017-585     2           -                 017-585-740   seal Mohenjo-daro              Mohenjo-daro|Mohenjo-daro|DKG. (S)|7I   late           unicorn    712.89      0.264 M-1777
+        017-585     2     820-002         820-002-017-585-740   seal Mohenjo-daro Mohenjo-daro|Mohenjo-daro|DKC|Street C2 betw. 9/10 middle        rhinoceros    778.41      0.133 M-1138
+        017-585     2           -                 017-585-740    tag        Rupar                                                                     unicorn       NaN                 -
+        031-176     2     201-060         201-060-031-176-740 tablet      Harappa                                                    middle              none    114.61            H-1824
+        031-176     2           -                 031-176-740   seal Mohenjo-daro             Mohenjo-daro|Mohenjo-daro|DKE|Trench E  early           unicorn    744.93      0.308  M-155
+        031-350     2           -             031-350-400-520   seal      Harappa                  Harappa|Harappa|FTrench VI|O10/19   late           unicorn    299.29     -0.663  H-530
+        031-350     2         545     545-031-350-400-740-090   seal Mohenjo-daro           Mohenjo-daro|Mohenjo-daro|DKE|Trench EII                     zebu    364.81      -0.74  M-263
+        032-220     2           -             032-220-740-090   seal      Harappa                           Harappa|Harappa|AB|P24/6 middle           unicorn    272.25     -0.758  H-502
+        032-220     2           -                 032-220-740   seal      Harappa                           Harappa|Harappa|AB|Pit I                     none    168.30     -0.489  H-669
+        032-220     2     861-002         861-002-032-220-520   seal Mohenjo-daro                Mohenjo-daro|Mohenjo-daro|HRB|5XXIX   late              bull    146.56     -1.547 M-1044
+    032-220-923     3           -             032-220-923-740   seal Mohenjo-daro                                                                     unicorn    852.64      0.289  M-124
+    032-220-923     3     820-002     820-002-032-220-923-740   seal Mohenjo-daro                 Mohenjo-daro|Mohenjo-daro|HRB|2XII  early           unicorn    645.16      -0.17  M-174
+        032-760     2     817-002         817-002-032-760-740    tag Mohenjo-daro                                                                     unicorn       NaN            M-1385
+        032-760     2           -                 032-760-740   seal     Nausharo                                                           short-horned bull       NaN             Ns-58
+        061-142     2           -             061-142-400-740   seal      Harappa                                                    middle           unicorn    462.00     -0.229 H-1679
+        061-142     2           -             061-142-400-740   seal      Harappa                                                    middle           unicorn    580.81        0.0  H-451
+        061-142     2           -             061-142-400-740 tablet      Harappa                    Harappa|Harappa|FTrench I|M12/7 middle              none    168.30             H-780
+        061-142     2     817-002         817-002-061-142-740   seal Mohenjo-daro            Mohenjo-daro|Mohenjo-daro|DKG. (S)|3III middle           unicorn    595.36     -0.145  M-164
+        061-142     2     861-002         861-002-061-142-740   seal Mohenjo-daro             Mohenjo-daro|Mohenjo-daro|DKE|Trench E  early           unicorn    778.41      0.133  M-717
+        061-142     2           -             061-142-400-740   seal Mohenjo-daro                                                      late           unicorn    712.89       0.11  M-879
+    220-840-032     3           -             220-840-032-740 tablet Mohenjo-daro        Mohenjo-daro|Mohenjo-daro|HRA|Deadmans Lane  early              Mult       NaN            M-2014
+    220-840-032     3     861-002     861-002-220-840-032-740 tablet Mohenjo-daro              Mohenjo-daro|Mohenjo-daro|DKG. (S)|7V middle             Scene    429.30             M-453
+    233-001-760     3     861-002     861-002-233-001-760-740   seal Mohenjo-daro                                                                     unicorn   1225.00      0.504 M-1670
+    233-001-760     3           -             233-001-760-740   seal    Dholavira Dholavira|Dholavira|South Reservoir5|48 x 38 x 1+2                  unicorn    231.00     -0.955      -
+        233-803     2     817-002         817-002-233-803-740   seal       Jhukar                                                                     unicorn    529.00     -0.191   Jk-2
+        233-803     2           -                 233-803-740   seal Mohenjo-daro         Mohenjo-daro|Mohenjo-daro|DKG|First Street middle short-horned bull    852.64      0.443  M-238
+    235-240-455     3     820-060     820-060-235-240-455-740   seal Mohenjo-daro               Mohenjo-daro|Mohenjo-daro|DKG. (S)|4   late           unicorn   1285.16      0.552  M-808
+    235-240-455     3           -             235-240-455-740   seal Mohenjo-daro              Mohenjo-daro|Mohenjo-daro|DKG. (S)|7V middle short-horned bull    384.16     -0.518 M-1096
+        235-482     2           -                 235-482-740   seal  Chanhu-daro                                                                     unicorn    806.56      0.511   C-59
+        235-482     2           -                 235-482-740   seal       Lothal                                                                     unicorn    524.41       0.08   L-23
+        235-482     2     824-002         824-002-235-482-740   seal Mohenjo-daro                                                                     unicorn    650.25     -0.057  M-788
+        235-482     2           -                 235-482-740   seal Mohenjo-daro                  Mohenjo-daro|Mohenjo-daro|HRB|2IX   late           unicorn    161.29     -1.231 M-1001
+    235-590-390     3           -             235-590-390-740 tablet      Harappa                                                                        none    112.00             H-857
+    235-590-390     3     861-002     861-002-235-590-390-740   seal Mohenjo-daro                 Mohenjo-daro|Mohenjo-daro|HRB|3XIV middle              none    582.55      0.292 M-1343
+    235-590-390     3           -             235-590-390-740 tablet      Harappa                                                                        Phyt       NaN            H-1107
+    235-840-032     3     861-002     861-002-235-840-032-740   seal Mohenjo-daro                   Mohenjo-daro|Mohenjo-daro|DKC|12 middle          elephant   1011.24      0.312 M-1152
+    235-840-032     3     817-002     817-002-235-840-032-740   seal      Harappa                                                                     unicorn    576.00     -0.301 H-1048
+        240-176     2           -             240-176-740-400 tablet      Harappa                                                    middle              Fish    109.20            H-2200
+        240-176     2           -             240-176-740-400 tablet      Harappa                                                    middle              Fish     75.84            H-2201
+        240-176     2     817-002         817-002-240-176-740   seal Mohenjo-daro                                                                       tiger    676.00     -0.018  M-289
+        240-233     2           -                 240-233-520 tablet      Harappa                                                    middle              none       NaN             H-874
+        240-233     2     201-060         201-060-240-233-520   seal      Harappa                                                      late           unicorn   1267.36      0.648   H-17
+        240-233     2           -             240-233-740-679   seal Mohenjo-daro                   Mohenjo-daro|Mohenjo-daro|HRA|1I   late           unicorn   1011.24      0.459 M-1720
+    240-415-100     3     817-002 817-002-240-415-100-740-090   seal Mohenjo-daro             Mohenjo-daro|Mohenjo-daro|DKG. (S)|7II middle           unicorn    712.89     -0.199 M-1746
+    240-415-100     3     817-002     817-002-240-415-100-740   seal Mohenjo-daro                                                                     unicorn    764.50      0.033  M-144
+    240-415-100     3     861-002 861-002-240-415-100-740-090   seal Mohenjo-daro         Mohenjo-daro|Mohenjo-daro|DKG|First Street middle           unicorn    424.36     -0.718  M-199
+    240-415-100     3           -             240-415-100-740 tablet Mohenjo-daro                  Mohenjo-daro|Mohenjo-daro|HRB|2IX  early              none    639.80            M-1418
+        240-636     2           -             240-636-740-400 tablet      Harappa                                                                        none    162.00             H-298
+        240-636     2     692-060         692-060-240-636-740 tablet      Harappa                          Harappa|FTrench I|-M11/12 middle              Bult    100.65             H-360
+        240-636     2     692-060         692-060-240-636-740 tablet      Harappa                                                                        none    258.50             H-823
+        240-636     2           -             240-636-740-400 tablet      Harappa                          Harappa|FTrench I|-M11/10 middle              none    125.40             H-894
+        240-636     2           -                 240-636-740 tablet      Harappa                                                                        none       NaN             H-919
+        240-636     2           -                 240-636-740   seal Mohenjo-daro              Mohenjo-daro|Mohenjo-daro|DKG. (S)|1I middle           unicorn    280.50     -0.677  M-228
+        240-636     2           -             240-636-740-400 tablet      Harappa                                                                        none    136.00            H-1178
+        240-637     2           -             240-637-740-400 tablet      Harappa                         Harappa|FTrench III|-N9/10 middle              Bult     97.28             H-983
+        240-637     2     861-002         861-002-240-637-740   seal Mohenjo-daro         Mohenjo-daro|Mohenjo-daro|DKG|First Street middle           unicorn    475.24      -0.37      -
+        240-643     2     861-002         861-002-240-643-740   seal      Harappa                    Harappa|Harappa|FTrench I|M12/7 middle           unicorn    580.81     -0.171   H-51
+        240-643     2           -                 240-643-740   seal Mohenjo-daro            Mohenjo-daro|Mohenjo-daro|HRA|3Street 1   late           unicorn    930.25       0.53 M-1719
+        240-904     2     817-002         817-002-240-904-740 tablet      Harappa                                Harappa|Harappa|F|3 middle             Bull2    289.56                 -
+        240-904     2           -                 240-904-740 tablet      Harappa                                                    middle              none    181.56                 -
+        240-904     2           -             240-904-740-400 tablet      Harappa                                                    middle              none    108.50            H-1897
+        240-904     2     817-002         817-002-240-904-740 tablet      Harappa                                                      late             Bull2    245.82             H-697
+        240-904     2           -                 240-904-740 tablet      Harappa                                                                        none    161.50             H-781
+        240-904     2     817-002         817-002-240-904-740 tablet      Harappa                                                                       Bull2    416.00            H-1100
+    255-435-690     3           -             255-435-690-740 tablet      Harappa                                                     early              Bult    189.00            H-1938
+    255-435-690     3           -             255-435-690-740 tablet      Harappa                                                                        Bult    168.15            H-1937
+    255-435-690     3           -             255-435-690-740 tablet Mohenjo-daro             Mohenjo-daro|Mohenjo-daro|DKE|Trench E  early             Scene    452.12             M-455
+    255-435-690     3     817-002     817-002-255-435-690-740   seal Mohenjo-daro            Mohenjo-daro|Mohenjo-daro|DKG. (S)|10II middle           unicorn    652.78     -0.158  M-816
+    255-435-690     3           -             255-435-690-740   seal Mohenjo-daro              Mohenjo-daro|Mohenjo-daro|DKG. (N)|22   late           unicorn    823.69      0.254  M-857
+    255-435-690     3           -             255-435-690-740   seal Mohenjo-daro               Mohenjo-daro|Mohenjo-daro|HR|38 X/03   late           unicorn       NaN             M-950
+    255-435-690     3     861-002     861-002-255-435-690-740   seal Mohenjo-daro             Mohenjo-daro|Mohenjo-daro|DKG. (S)|9IV   late short-horned bull   1006.50      0.308 M-1206
+        415-100     2           -                 415-100-740 tablet      Harappa                                                     early              none       NaN            H-1991
+        415-100     2           -         415-100-740-090-400 tablet      Harappa                                                    middle              Phyt    399.32            H-1978
+        415-100     2           -         415-100-740-090-400 tablet      Harappa                     Harappa|Harappa|FGranery|I9/20 middle              Phyt    408.80             H-188
+        415-100     2           -                 415-100-740 tablet      Harappa                      Harappa|Harappa|FGranery|K9/5 middle              none    117.15             H-847
+        415-100     2           -                 415-100-740   seal Mohenjo-daro       Mohenjo-daro|Mohenjo-daro|DKG. (S)|Loop Lane middle short-horned bull    528.99     -0.043 M-1886
+        415-100     2           -             415-100-740-400   seal Mohenjo-daro             Mohenjo-daro|Mohenjo-daro|DKG. (S)|9II middle           unicorn    240.25     -0.988  M-231
+        415-100     2 920-060-741     920-060-741-415-100-740    tag Mohenjo-daro             Mohenjo-daro|Mohenjo-daro|DKE|Trench E   late           unicorn       NaN             M-427
+        415-100     2     820-002         820-002-415-100-740   seal Mohenjo-daro            Mohenjo-daro|Mohenjo-daro|DKG. (N)|21IV   late           unicorn    930.25      0.312  M-727
+        415-100     2     817-002         817-002-415-100-740   seal Mohenjo-daro            Mohenjo-daro|Mohenjo-daro|DKG. (S)|1III middle           unicorn    745.28       0.09  M-839
+        415-100     2     861-002         861-002-415-100-740   seal Mohenjo-daro         Mohenjo-daro|Mohenjo-daro|DKG|First Street middle           unicorn    778.41      0.133  M-850
+        415-100     2     861-002         861-002-415-100-740   seal Mohenjo-daro                                                                     unicorn       NaN             M-869
+        415-220     2           -                 415-220-520 tablet      Harappa                         Harappa|FTrench VI|-O10/18 middle              Bult    160.05            H-1326
+        415-220     2     920-060         920-060-415-220-520   seal      Harappa                                                    middle           unicorn    704.18       0.06 H-1669
+        415-220     2           -                 415-220-520 tablet      Harappa                                                    middle              none    140.13            H-2148
+        415-220     2           -                 415-220-520 tablet      Harappa                                                    middle              Bult     72.00            H-2240
+        415-220     2           -                 415-220-520 tablet      Harappa                                                     early              none     74.80            H-2146
+        415-220     2           -                 415-220-520 tablet      Harappa                                                     early              none    117.26            H-2149
+        415-220     2           -                 415-220-520 tablet      Harappa                                                                     unicorn       NaN            H-1992
+        415-220     2           -                 415-220-520 tablet      Harappa                        Harappa|FTrench IV+V|-I12/1 middle              none    100.32             H-319
+        415-220     2           -                 415-220-520 tablet      Harappa                       Harappa|FTrench IV+V|-I13/22 middle              none       NaN             H-346
+        415-220     2           -                 415-220-520 tablet      Harappa                           Harappa|FTrench I|-M12/6 middle              Fish     73.66             H-364
+        415-220     2           -                 415-220-520 tablet      Harappa                                                                        none    160.00             H-786
+        415-220     2           -                 415-220-520 tablet      Harappa                                                    middle              none    106.40             H-938
+        415-220     2           -                 415-220-520 tablet      Harappa                                 Harappa|D-|-Q31/18                     none    115.52             H-939
+        415-220     2           -                 415-220-520 tablet      Harappa                            Harappa|FGranery|-I9/24 middle              none    136.92             H-940
+        415-220     2           -                 415-220-520 tablet      Harappa                            Harappa|FGranery|-J8/18 middle              none     99.40             H-941
+        415-220     2           -                 415-220-520   seal Mohenjo-daro              Mohenjo-daro|Mohenjo-daro|DKB|24 P/23  early           unicorn    961.00      0.563   M-37
+        415-220     2     820-060         820-060-415-220-520   seal Mohenjo-daro                Mohenjo-daro|Mohenjo-daro|HRB|8LXII   late           unicorn    852.64      0.224  M-163
+        415-220     2           -                 415-220-520 tablet      Harappa                                                                        none     91.00            H-1284
+        440-760     2           -                 440-760-740   seal      Harappa                                                                        none    240.00     -1.089  H-101
+        440-760     2     550-060         550-060-440-760-740   seal Mohenjo-daro             Mohenjo-daro|Mohenjo-daro|DKC|Trench D middle           unicorn    466.56     -0.389  M-149
+        470-806     2     861-002         861-002-470-806-154 tablet      Harappa                                                    middle              none    361.76            H-1788
+        470-806     2           -             470-806-158-400 tablet      Harappa                   Harappa|Harappa|FTrench I|M10/25 middle              Othr       NaN             H-189
+        484-337     2           -                 484-337-740 tablet      Harappa                                                                        none    180.50             H-216
+        484-337     2           -                 484-337-740 tablet      Harappa                                                                        none    112.00             H-217
+        484-337     2           -                 484-337-740   seal      Harappa                 Harappa|Harappa|FTrench III|N10/16 middle           unicorn    712.89      0.092  H-441
+        484-337     2 920-060-741     920-060-741-484-337-740   seal Mohenjo-daro                 Mohenjo-daro|Mohenjo-daro|DKB|2III  early           unicorn    930.25      0.229  M-755
+        495-615     2     817-002         817-002-495-615-740 tablet      Harappa                   Harappa|Harappa|FTrench VI|O9/20 middle              none       NaN             H-838
+        495-615     2           -                 495-615-740   seal Mohenjo-daro            Mohenjo-daro|Mohenjo-daro|DKG. (S)|7III  early           buffalo    524.41     -0.052  M-269
+        503-007     2     817-002         817-002-503-007-740   seal Mohenjo-daro                    Mohenjo-daro|Mohenjo-daro|DKC|8   late              none    628.65      0.387  M-362
+        503-007     2           -                 503-007-740   seal Mohenjo-daro                                                      late           unicorn    645.16      0.164  M-861
+    503-017-760     3     817-368     817-368-503-017-760-740   seal Mohenjo-daro            Mohenjo-daro|Mohenjo-daro|DKG. (S)|9III   late           unicorn    806.56      0.086 M-1717
+    503-017-760     3           -             503-017-760-740   seal Mohenjo-daro            Mohenjo-daro|Mohenjo-daro|DKG. (N)|16II   late           unicorn       NaN             M-859
+        503-460     2     817-002         817-002-503-460-740   seal Mohenjo-daro       Mohenjo-daro|Mohenjo-daro|DKG. (S)|Long Lane  early           unicorn   1156.00      0.529   M-58
+        503-460     2           -             503-460-158-400   seal Mohenjo-daro                Mohenjo-daro|Mohenjo-daro|VSA|2VIII middle           unicorn    466.56     -0.324  M-961
+        503-460     2           -                 503-460-740   seal Mohenjo-daro                                                                        none    284.58     -0.225 M-1307
+        503-460     2     880-002         880-002-503-460-740   seal Mohenjo-daro             Mohenjo-daro|Mohenjo-daro|DKC|Trench D   late              none    180.67     -0.877 M-1318
+    519-415-220     3           -             519-415-220-520   seal       Lothal                                                                        none    290.83      0.149   L-98
+    519-415-220     3     817-002     817-002-519-415-220-520   seal Mohenjo-daro                   Mohenjo-daro|Mohenjo-daro|HRB|1V middle           unicorn       NaN             M-650
+        590-390     2           -                 590-390-740   seal    Allahdino                                                                     unicorn    655.50      0.303   Ad-1
+        590-390     2           -                 590-390-740   seal  Chanhu-daro                                                                     unicorn   1228.20      0.931    C-2
+        590-390     2     550-060         550-060-590-390-740 tablet      Harappa                                                    middle          elephant    123.00            H-1776
+        590-390     2     861-002         861-002-590-390-740   seal      Harappa                                                     early              none    223.50     -1.126 H-1692
+        590-390     2           -             590-390-740-400   seal      Harappa                     Harappa|Harappa|FGranery|I9/19 middle           unicorn    196.00     -1.086   H-75
+        590-390     2           -             590-390-740-400 tablet      Harappa                Harappa|Harappa|FTrench IV+V|I12/11   late              none     57.76             H-816
+        590-390     2 920-060-741     920-060-741-590-390-151   seal Mohenjo-daro           Mohenjo-daro|Mohenjo-daro|DKG. (S)|11III middle              zebu    466.56     -0.494 M-1902
+        590-390     2     817-002         817-002-590-390-740   seal    Dholavira                                                                     unicorn    400.00      -0.47      -
+        590-390     2     820-002         820-002-590-390-740    tag Mohenjo-daro           Mohenjo-daro|Mohenjo-daro|DKG. (S)|11III middle              zebu    466.56             M-437
+        590-390     2     817-002     817-002-590-390-740-621   seal Mohenjo-daro            Mohenjo-daro|Mohenjo-daro|DKG. (S)|1III  early           unicorn    731.68     -0.044  M-851
+        590-390     2           -                 590-390-151   seal      Harappa                                                                     unicorn    637.50     -0.112 H-1046
+        605-760     2           -             605-760-740-400 tablet      Harappa                          Harappa|FTrench I|-M11/25 middle              Gavi     99.40            H-1158
+        605-760     2           -             605-760-740-400 tablet      Harappa                          Harappa|FTrench I|-M11/13  early              Gavi    123.12             H-287
+        605-760     2           -             605-760-740-400 tablet      Harappa                          Harappa|FTrench I|-M11/11 middle              Gavi     96.60             H-879
+        605-760     2           -             605-760-740-400 tablet      Harappa                                                    middle              Gavi    106.40             H-880
+        605-760     2     861-002         861-002-605-760-740   seal Mohenjo-daro              Mohenjo-daro|Mohenjo-daro|DKG. (N)|19   late           unicorn   1089.00      0.469 M-1704
+        605-760     2           -                 605-760-740   seal Mohenjo-daro         Mohenjo-daro|Mohenjo-daro|DKG|First Street middle           unicorn    318.08     -0.552  M-986
+        705-033     2           -                 705-033-520    tag       Lothal                                                                     unicorn   1130.30             L-146
+        705-033     2           -                 705-033-520   seal Mohenjo-daro             Mohenjo-daro|Mohenjo-daro|DKG. (N)|20I   late           unicorn    795.24      0.373  M-122
+        705-033     2     820-060         820-060-705-033-520   seal Mohenjo-daro             Mohenjo-daro|Mohenjo-daro|DKG. (S)|1VI middle          CompBull    930.25      0.312  M-303
+        705-033     2           -                 705-033-520   seal Mohenjo-daro             Mohenjo-daro|Mohenjo-daro|DKG. (S)|12V middle              none    633.36      0.287 M-1359
+        705-255     2     550-060     550-060-705-255-740-090 tablet      Harappa                                                    middle              Bird    191.40            H-1840
+        705-255     2     861-002     861-002-705-255-740-090   seal Mohenjo-daro             Mohenjo-daro|Mohenjo-daro|DKE|Trench E   late           unicorn    852.64      0.142  M-100
+        705-255     2           -                 705-255-740   seal Mohenjo-daro             Mohenjo-daro|Mohenjo-daro|DKG. (S)|12V middle          elephant    388.08     -0.353  M-286
+        705-255     2     861-002         861-002-705-255-740   seal Mohenjo-daro                     Mohenjo-daro|Mohenjo-daro|SD|4  early           unicorn    712.89      0.045  M-785
+        706-033     2           -                 706-033-520   seal      Harappa                                                                     unicorn    900.00      0.325   H-53
+        706-033     2     861-002         861-002-706-033-520   seal Mohenjo-daro             Mohenjo-daro|Mohenjo-daro|DKG. (N)|29I   late           unicorn    852.64      0.224  M-781
+        706-033     2           -                 706-033-520   seal    Dholavira                                                                        none    307.38      0.336      -
+        803-233     2     817-002         817-002-803-233-520   seal  Chanhu-daro     Chanhu-daro|Chanhu-daro|Mound I|loc. 9sq. 13/J                  unicorn    524.41     -0.199   C-67
+        803-233     2     817-002         817-002-803-233-520   seal      Harappa                    Harappa|Harappa|FTrench VI|P9/5   late           unicorn    466.56      -0.39  H-501
+        803-233     2           -             803-233-520-400   seal Mohenjo-daro                                                    middle           unicorn    580.81     -0.105 M-1781
+        803-233     2     820-060         820-060-803-233-520   seal Mohenjo-daro                Mohenjo-daro|Mohenjo-daro|DKB|1 107 middle           unicorn    484.00     -0.352  M-931
+    832-255-070     3           -             832-255-070-520 tablet      Harappa                               Harappa|Harappa|EC|3  early              none    256.00            H-1916
+    832-255-070     3     817-002     817-002-832-255-070-520   seal       Lothal                                                                        none    209.52     -0.112   L-92
+        840-032     2           -                 840-032-740 tablet      Harappa                                                    middle              Mult    198.44            H-1977
+        840-032     2           -             840-032-740-400 tablet      Harappa                                                                        none       NaN            H-1923
+        840-032     2           -                 840-032-740 tablet      Harappa                                                    middle              none    135.00            H-2187
+        840-032     2         820             820-840-032-740   seal      Harappa                      Harappa|Harappa|FGranery|K9/2 middle        rhinoceros    930.25      0.471   H-88
+        840-032     2           -                 840-032-740 tablet      Harappa                          Harappa|Harappa|AB|Q24/22   late             Scene    312.84             H-182
+        840-032     2           -                 840-032-740 tablet      Harappa                                                                        none    105.00             H-306
+        840-032     2           -                 840-032-740 tablet      Harappa                                                                        Phyt    210.00             H-723
+        840-032     2           -                 840-032-740 tablet      Harappa                                                                        none       NaN             H-825
+        840-032     2           -                 840-032-740   seal       Lothal                                                                        none    246.49     -0.742   L-59
+        840-032     2           -                 840-032-740 tablet Mohenjo-daro          Mohenjo-daro|Mohenjo-daro|VSA|Lane 5XXVII   late             Scene    501.60                 -
+        840-032     2 920-060-741     920-060-741-840-032-740   seal Mohenjo-daro     Mohenjo-daro|Mohenjo-daro|DKG. (N)|West Street   late           unicorn    767.29      0.036  M-113
+        840-032     2           -         840-032-740-090-400   seal Mohenjo-daro                     Mohenjo-daro|Mohenjo-daro|LB|9                     Mult    524.41     -0.272 M-1224
+
+with/without pairs: 862 (names 73)
+object kinds (fronted -> frontless):
+nk      copper  other  pot  seal  tablet  tag
+fk                                           
+pot          1      2    2     4      25    0
+seal         2      5   15   208     266    9
+tablet       0      8   16    54     230    0
+tag          0      0    1     9       5    0
+same city 0.50; same building 0; same ending 0.27
+seal-seal pairs with sizes 190: fronted minus frontless residual size mean +0.129, fronted larger in 111; sign-flip P (larger) 0.0030
+seal-seal pairs with both animals known 208: same animal 100
+base: same-name frontless seal pairs same animal 0.55 of 151

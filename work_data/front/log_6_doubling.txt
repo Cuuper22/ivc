@@ -1,0 +1,54 @@
+front words by rule: v2 OPEN ['091', '360', '545', '550', '556', '692', '817', '820', '824', '861', '880', '920']; added by position [('201', 5, 5, 5), ('347', 9, 8, 8), ('263', 6, 5, 4)]
+
+FRONT WORDS INSIDE A TEXT (complete copy events):
+front  inside_uses  followed_by_slot  share_restart                                sign_before
+  861           82                36           0.44  003 29; 416 6; 603 3; 125 2; 216 2; 031 2
+  550           51                 3           0.06   033 9; 003 6; 233 6; 002 4; 220 3; 740 3
+  920           49                 6           0.12 320 10; 318 10; 140 8; 491 3; 317 2; 031 2
+  820           40                 5           0.12   595 3; 100 3; 033 3; 140 2; 220 2; 741 2
+  817           18                 3           0.17   491 5; 310 1; 495 1; 920 1; 276 1; 175 1
+  824           17                 0           0.00                892 11; 032 4; 700 1; 852 1
+  692            9                 1           0.11   491 1; 001 1; 892 1; 490 1; 687 1; 032 1
+  360            4                 1           0.25                 832 1; 268 1; 520 1; 064 1
+  880            2                 0           0.00                               065 1; 689 1
+  556            1                 0           0.00                                      060 1
+  263            1                 0           0.00                                      104 1
+  347            1                 0           0.00                                      061 1
+  091            1                 0           0.00                                      220 1
+
+texts with a front at the start AND a front+slot restart inside: 1 of 603 fronted texts
+    ('920-401-692-060-255', 'seal', 'Mohenjo-daro', 'M-317')
+fronted texts with any second front word inside: 36: 817-013-240-233-324-920-740, 820-611-388-820-850-645-031-821-798, 861-002-798-320-920-017-575-740-400, 861-002-920-817-408, 692-700-318-920-740, 817-002-491-692-100-740, 692-575-595-820, 550-060-556, 545-576-861, 820-002-820-595-350-294, 820-060-550-526, 820-002-390-817-740, 820-060-443-740-550-527, 820-002-803-322-920-390, 861-297-820, 861-002-032-692-362-740-001-350, 817-002-240-550-527, 920-368-060-463-820-390, 820-550-798-065-220-820-413, 692-060-920-255-740, 556-817-740, 920-401-692-060-255, 550-060-415-220-705-033-550-527, 820-140-820-812-820-001-415-220-740-679, 263-368-820-760-740, 692-550-350-031-002-415-100-740-090, 817-002-235-550-527, 920-060-741-550-527, 692-060-140-920-740-090, 817-002-233-705-033-550-527
+
+861 right after a number: 34 texts; kinds Counter({'tablet': 30, 'seal': 4}); e.g. ['003-861', '003-861', '003-861', '003-861', '003-861', '003-861', '003-861', '003-861', '003-861', '003-861', '003-861', '003-861']
+
+objects with 2+ faces whose first sign is readable on 2+ faces: 703; kinds {'tablet': 605, 'copper': 38, 'seal': 35, 'other': 11, 'tag': 11, 'pot': 3}
+objects with a front on 2+ faces: 7 against 7.45 with faces dealt among 2+ face objects of the same site and kind (P high 0.6681, P low 0.5342); objects with a front on any face 108 against 107.45
+multi-face objects with a front: 108; front on every face: 7
+kind
+copper     1 objects, all faces fronted 0
+other      3 objects, all faces fronted 0
+pot        1 objects, all faces fronted 0
+seal      10 objects, all faces fronted 3
+tablet    87 objects, all faces fronted 1
+tag        6 objects, all faces fronted 3
+
+the multi-face objects with a front on 2+ faces:
+stone   kind         site   cisi                                                           faces  fronted_faces  n_faces
+ 1168   seal      Harappa  H-102                                   861-741 | 861-741-240-630-740              2        2
+ 1540   seal      Harappa  H-597       861-002-032-070-590-390-740 | 861-002-032-070-590-390-740              2        2
+ 2397   seal Mohenjo-daro M-1927                               817-002-005-390 | 817-002-005-000              2        2
+ 3681    tag Mohenjo-daro M-1385 817-002-032-760-740 | 817-002-032-760-740 | 817-002-032-760-740              3        3
+  374 tablet      Harappa H-1893                           820-001-097-151-000 | 550-060-003-390              2        2
+ 3868    tag   Rakhigarhi  Rgr-3                                       820-032-130 | 820-032-130              2        2
+ 4156    tag    Dholavira      -                               820-002-000-520 | 820-002-000-000              2        2
+
+sample of multi-face seals with one fronted face:
+stone kind         site   cisi                                                                                 faces  fronted_faces  n_faces
+ 1594 seal      Harappa  H-688                                                     165-831-861-002-233-520 | 820-140              1        2
+ 2357 seal Mohenjo-daro M-1928                                           031-003-156 | 031-850 | 861-002-220-233-000              1        3
+ 2844 seal Mohenjo-daro  M-326 920-060-741-235-904-740 | 645-003-820 | 171-032-031-171-000-000 | 840-461 | 169 | 511              1        6
+ 2978 seal Mohenjo-daro  M-501                                                             323-690 | 550-060-690-740              1        2
+ 3555 seal Mohenjo-daro M-1205                                                                         550-000 | 790              1        2
+ 3556 seal Mohenjo-daro M-1206                                                 034-220-520 | 861-002-255-435-690-740              1        2
+ 3565 seal Mohenjo-daro M-1233                                         575-741-402 | 740-000 | 820 | 002-850-700-033              1        4

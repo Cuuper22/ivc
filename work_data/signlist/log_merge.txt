@@ -1,0 +1,16 @@
+[merge 11:04:07] pairs with 2+ kinds: 74; vetoed by co-occurrence 2, by numeral 2; MERGED PAIRS: 70
+[merge 11:04:07] merged pairs by which kinds agree: {'c+d': 25, 'b+c+d': 15, 'b+c': 10, 'b+d': 8, 'a+b': 5, 'a+b+c+d': 3, 'a+c': 1, 'a+b+c': 1, 'a+b+d': 1, 'a+c+d': 1}
+[merge 11:04:08] C1 band: merged pairs mean 3.58, 95th pct 7, max 11; real 70; P 0.0010
+[merge 11:04:10] C2 band x class: merged pairs mean 17.51, 95th pct 23, max 35; real 70; P 0.0010
+[merge 11:04:10] merged pairs with corpus AND form evidence: 40; corpus only (a+b): 5; form only (c+d): 25
+[merge 11:04:12]    C1 band, cross: real 40 against mean 2.74 (max 11), P 0.0010
+[merge 11:04:12]    C1 band, ab: real 5 against mean 0.62 (max 4), P 0.0010
+[merge 11:04:12]    C1 band, cd: real 25 against mean 0.29 (max 3), P 0.0010
+[merge 11:04:13]    C2 band x class, cross: real 40 against mean 10.34 (max 20), P 0.0010
+[merge 11:04:13]    C2 band x class, ab: real 5 against mean 2.17 (max 8), P 0.0739
+[merge 11:04:13]    C2 band x class, cd: real 25 against mean 4.98 (max 14), P 0.0010
+[merge 11:04:13] RULE v2 (needs a form kind; eye in c): merged pairs 63; by kinds: {'c+d': 25, 'b+c+d': 15, 'b+c': 9, 'b+d': 8, 'a+b+c+d': 3, 'a+b+c': 1, 'a+b+d': 1, 'a+c+d': 1}
+[merge 11:04:15]    v2 C1 band: real 63 against mean 3.08 (95th pct 6, max 11), P 0.0010
+[merge 11:04:16]    v2 C2 band x class: real 63 against mean 15.17 (95th pct 20, max 28), P 0.0010
+[merge 11:04:16] groups: 29, holding 76 eligible signs; signs removed by merging: 47
+[merge 11:04:17] rare signs (<5 uses): 418; form-only links (c and d both): 23 pairs, 12 rare signs

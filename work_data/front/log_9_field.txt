@@ -1,0 +1,73 @@
+front words by rule: v2 OPEN ['091', '360', '545', '550', '556', '692', '817', '820', '824', '861', '880', '920']; added by position [('201', 5, 5, 5), ('347', 9, 8, 8), ('263', 6, 5, 4)]
+field type by object kind (complete copy events):
+kind                     copper  other  pot  seal  tablet  tag
+typ                                                           
+classic                       1      3    3   356      81   21
+front word inside field       0      0    0     4       1    0
+front word, no slot           0     10    8    77      27   11
+none                        190    115  285   921    1164   30
+other                         1      0    0   144      19   11
+pre + front word              0      0    0    33       2    1
+
+NAMES AFTER EACH KIND OF FIELD:
+                  field objects  texts  name_closer  name_len_mean  crest_first  text_len_mean  seal_share  MD_share
+                classic    seal    356          228           2.52        0.364           5.46       1.000     0.685
+                classic     all    465          296           2.34        0.348           5.27       0.766     0.555
+       pre + front word    seal     33           25           2.64        0.360           7.12       1.000     0.667
+       pre + front word     all     36           26           2.58        0.346           7.14       0.917     0.611
+front word inside field    seal      4            4           1.75        0.500           6.25       1.000     0.750
+front word inside field     all      5            4           1.75        0.500           5.80       0.800     0.600
+                  other    seal    144           89           2.42        0.326           5.81       1.000     0.576
+                  other     all    175          111           2.39        0.297           5.87       0.823     0.503
+    front word, no slot    seal     77           34           3.76        0.029           4.56       1.000     0.571
+    front word, no slot     all    133           41           3.51        0.024           4.02       0.579     0.361
+                   none    seal    921          473           3.24        0.230           3.88       1.000     0.611
+                   none     all   2705         1042           2.88        0.248           3.21       0.340     0.342
+name length, other minus none (seals): -0.82, dealt +0.02, P low 0.0003, P high 1.0000 (n 89 / 473)
+name length, other minus classic (seals): -0.11, dealt +0.03, P low 0.2026, P high 0.8267 (n 89 / 228)
+name length, classic minus none (seals): -0.71, dealt +0.01, P low 0.0003, P high 1.0000 (n 228 / 473)
+
+non-classic fields with 2+ texts:
+typ               fieldstr     slot
+other             705-500      741     12
+                  260          368      3
+pre + front word  603-861      002      3
+other             851          741      3
+                  255-070      741      2
+                  125-390      741      2
+                  066          741      2
+                  368-572      741      2
+                  579-250      741      2
+                  891          060      2
+                  806          368      2
+pre + front word  317-920      002      2
+                  741-820      002      2
+                  491-920      002      2
+other             690          060      2
+                  345          741      2
+                  361          741      2
+                  617          741      2
+                  634          368      2
+pre + front word  717-533-861  002      2
+
+slot after field, by field type: {'classic': {'': 0, '002': 293, '060': 130, '365': 3, '368': 26, '741': 12, '742': 1, '745': 0}, 'front word inside field': {'': 0, '002': 0, '060': 1, '365': 0, '368': 0, '741': 1, '742': 2, '745': 1}, 'front word, no slot': {'': 133, '002': 0, '060': 0, '365': 0, '368': 0, '741': 0, '742': 0, '745': 0}, 'other': {'': 0, '002': 0, '060': 28, '365': 4, '368': 25, '741': 99, '742': 12, '745': 7}, 'pre + front word': {'': 0, '002': 30, '060': 3, '365': 0, '368': 2, '741': 0, '742': 1, '745': 0}}
+
+'other' fields: 175 texts; field strings in 3+ texts: 5 strings covering 24 texts; text-openings of the same length from texts without a boundary: 7.34 strings / 27.0 texts (P high 0.6773)
+
+RIVAL, room on the stone: name length (seals, name + closer) by face-area half within site group and format
+  small stones: fielded 2.26 (n 117), unfielded 2.43 (n 249); difference -0.16, dealt +0.04, P low 0.0953; total text length fielded 5.61, unfielded 3.57
+  big stones: fielded 2.63 (n 191), unfielded 4.14 (n 197); difference -1.51, dealt -0.01, P low 0.0003; total text length fielded 6.12, unfielded 5.25
+name length distribution, seals: {False: {1: 97, 2: 127, 3: 61, 4: 50, 5: 50, 6: 31, 7: 30}, True: {1: 69, 2: 117, 3: 65, 4: 33, 5: 15, 6: 3, 7: 6}}
+
+Positions in seal names (name + closer): class of each sign, fielded names against unfielded names of 4+ signs
+  fielded, position 0: PERSONAL 0.36, CREST 0.35, NUM_SHORT 0.09, NUM_NAME 0.06, PLACE 0.06, NUM_TALL 0.03
+  fielded, position 1: PERSONAL 0.35, CREST 0.33, AFTER_M 0.05, THING 0.05, NUM_NAME 0.04, PLACE 0.03
+  fielded, position -1: PERSONAL 0.41, CREST 0.17, AFTER_M 0.13, THING 0.08, NAME_BACK 0.07, PLACE 0.06
+  unfielded 4+, position 0: PERSONAL 0.50, CREST 0.20, NUM_NAME 0.08, PLACE 0.06, MEASURE 0.04, NUM_SHORT 0.04
+  unfielded 4+, position 1: PERSONAL 0.44, CREST 0.12, SLOT 0.09, THING 0.07, MEASURE 0.06, NUM_TALL 0.04
+  unfielded 4+, position -1: PERSONAL 0.36, CREST 0.14, AFTER_M 0.14, PLACE 0.09, THING 0.07, NUM_TALL 0.07
+first sign of a long unfielded name is a sign seen in 'other' fields: 0.689 (n 161); short unfielded names (1-2 signs): 0.571; signs in 'other' fields: 141 kinds
+
+DECOY slot sets: each real slot sign swapped for a sign of about the same frequency (within 35%), not a front word, slot, closer, title or number; the same field rule applied; seals, fields with no front word
+  real slots: {'n': 150, 'name_closer': 95, 'name_len': np.float64(2.357894736842105), 'crest_first': np.float64(0.3263157894736842), 'rest_is_whole_text': np.float64(0.24)}
+  decoys (mean of 20): texts 67.5, name+closer 46.9, name length 1.65 (range 0.79-1.98), crest first 0.114 (max 0.394), rest is a whole attested frontless text 0.142 (max 0.269)

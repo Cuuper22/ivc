@@ -1,0 +1,46 @@
+front words by rule: v2 OPEN ['091', '360', '545', '550', '556', '692', '817', '820', '824', '861', '880', '920']; added by position [('201', 5, 5, 5), ('347', 9, 8, 8), ('263', 6, 5, 4)]
+seal name + closer texts: 855, fronted 265
+class of the first name sign (share):
+hasf       no front  front
+c1                        
+AFTER_M       0.008  0.008
+CLOSER        0.002  0.000
+CREST         0.192  0.309
+MEASURE       0.029  0.019
+NAME_BACK     0.007  0.000
+NUM_NAME      0.044  0.064
+NUM_SHORT     0.085  0.117
+NUM_TALL      0.049  0.019
+OPEN          0.000  0.019
+PERSONAL      0.475  0.347
+PLACE         0.069  0.083
+SLOT          0.022  0.004
+THING         0.012  0.008
+TITLE         0.007  0.004
+name length (share):
+hasf  no front  front
+nlen                 
+1        0.169  0.211
+2        0.222  0.332
+3        0.124  0.226
+4        0.147  0.113
+5        0.151  0.057
+6        0.186  0.060
+  name length 1: crest-first fronted 0.232 (n 56), frontless 0.180 (n 100)
+  name length 2: crest-first fronted 0.295 (n 88), frontless 0.237 (n 131)
+  name length 3: crest-first fronted 0.450 (n 60), frontless 0.342 (n 73)
+  name length 4: crest-first fronted 0.267 (n 30), frontless 0.103 (n 87)
+P1 crest-first share, fronted minus frontless: +0.118; dealt within site and name length +0.057; P low 0.9867, P high 0.0213
+number-first share, fronted 0.200 against frontless 0.178; difference +0.022, dealt +0.001, P high 0.2453, P low 0.8167
+
+P2 distinct fronted seal names 224: found as the TAIL of a longer frontless name 0.152, as the HEAD 0.103
+   distinct frontless seal names 507: as tail 0.099, as head 0.081
+ name_len  fronted_n  fronted_tail  fronted_head  frontless_n  frontless_tail  frontless_head
+        1         35         0.543         0.400           57           0.456           0.491
+        2         72         0.153         0.111           97           0.216           0.124
+        3         56         0.054         0.018           67           0.045           0.015
+        4         30         0.033         0.000           87           0.000           0.000
+
+P3 the extra first sign x where frontless x + n matches a fronted name n: 93 matches; classes {'NUM_TALL': 11, 'CREST': 38, 'NUM_NAME': 3, 'NUM_SHORT': 5, 'PERSONAL': 24, 'PLACE': 6, 'TITLE': 1, 'SLOT': 2, 'MEASURE': 2, 'AFTER_M': 1}; top [('240', 11), ('031', 8), ('235', 7), ('220', 5), ('233', 4), ('806', 4), ('032', 3), ('003', 3), ('803', 3), ('519', 2), ('231', 2), ('140', 2)]
+   same for frontless names as n: 125 matches; classes {'NUM_NAME': 4, 'NUM_SHORT': 5, 'PERSONAL': 33, 'NUM_TALL': 15, 'PLACE': 7, 'CREST': 55, 'TITLE': 1, 'SLOT': 2, 'MEASURE': 3}; top [('240', 13), ('235', 12), ('031', 10), ('233', 7), ('806', 7), ('803', 6), ('220', 5), ('032', 4), ('033', 4), ('003', 2), ('415', 2), ('495', 2)]
+examples (fronted name n : signs x seen before it in frontless names): 706-033: ['031', '233', '806']; 220: ['003', '006', '016', '032', '034', '415']; 817: ['175', '276', '491']; 460: ['031', '495', '503', '510']; 335-760: ['803']; 235: ['220', '240', '806']; 388: ['031', '235']; 176: ['031', '140', '220', '231', '233', '235', '240', '519', '791']; 772: ['235', '240']; 705-033: ['031', '176', '233', '240']; 235-240-923: ['806']; 552-840-760: ['003']; 061: ['140', '877']; 017-575: ['798']; 840-032: ['002', '220', '679', '803']; 005-900: ['033', '877']; 240: ['031', '220', '235', '806']; 101: ['031', '853']; 255: ['032', '061', '705']; 233: ['240', '803']; 255-435-690: ['055', '231', '233']; 235-233-705-033: ['808']; 048: ['232']; 904: ['240', '690', '736']; 061-142: ['033']; 590-390: ['235', '240']; 760: ['032', '240', '315', '382', '440', '445', '605', '742', '797']; 440: ['220']; 415-100: ['240']; 142: ['061', '066', '480']
