@@ -118,4 +118,12 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `measured` Went against: no second whorl site (2 of 71 clay/stone objects outside Karanpura; 5 whorl-shaped objects with photos carry no 390). Rescues that came true: 390 on terracotta seals 4 of 11 against 154 of 1,798 steatite; 390 as whole pot text at Kalibangan 3 of 90 against 1 of 545. No dye sign found. Count before the box is mostly 2, not big lots.
 - Unopened: the Kenoyer and Meadow inscribed-objects PDF may list other inscribed whorls.
 
+## The seal animal (from `jobs/out/animals.md`)
+- `measured` The stand drawn in front of the unicorn (catalogue letter W, J, S, I, L) is shared by seals from the same room 38.1% against 17.2% by chance (139 pairs, P 0.0003), fading with distance (room 1.79, block 1.27, area 1.13) and independent of the crest (P 0.91).
+- `measured` The species does not follow crest, first name sign, ending, or area (P 0.47 to 0.91); agents do not carry their master's animal. No sign is tied to a species (1,568 cells).
+- `measured` Short-horned bull with trough is 14 of 26 beast seals abroad against 92 of 1,575 at home (P 7e-11); all 13 round seals abroad carry it. Composite beasts and goats carry a marked fish 1 of 67 against 22.3% (P 1e-6). Goats are the local beast at Banawali (7 of 12; 8 of 25 goat seals from the eastern headwaters against 17 of 1,576).
+- `guess` A seal carries three separate marks: crest in the text = family; stand pattern = the household; species = which exchange circuit the stone is cut for (short-horned bull = overseas trade). Composite-beast and goat seals belong to people outside the fish houses.
+- `measured` Went against: animal as clan, ward or rank; the catalogue's cult-stand code as a house mark (1.04).
+- Photo check of the animal column: 23 of 30 clear matches, 6 too broken, 1 doubtful, 0 wrong.
+
 Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.
