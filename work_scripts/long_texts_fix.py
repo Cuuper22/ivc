@@ -120,3 +120,26 @@ for l in LL:
         if l[i:i + 3] == ('255', '435', '690'): blk['255-435-690'] += 1; blk['then jar'] += (i + 3 < len(l) and l[i + 3] == '740'); blk['line-final'] += (i + 3 == len(l))
         if l[i:i + 3] == ('255', '435', '156'): blk['255-435-156'] += 1
 print('   block', dict(blk), '; in short lines:', sum(1 for l in short_lines for i in range(len(l) - 1) if l[i:i + 2] == ('255', '435')))
+# ---------- swap test: signs that stand in the same frame (one position changed, rest of the line identical)
+frames = collections.defaultdict(set)
+for l in LL:
+    if len(l) < 3: continue
+    for i in range(len(l)):
+        frames[(l[:i], l[i + 1:])].add(l[i])
+swaps = collections.Counter()
+for fr, ss in frames.items():
+    ss = sorted(ss)
+    for i in range(len(ss)):
+        for j in range(i + 1, len(ss)): swaps[(ss[i], ss[j])] += 1
+fs = collections.Counter(s for fr, ss in frames.items() for s in ss)
+tot_swaps = sum(swaps.values())
+print('E. same-frame swaps: total pairs', tot_swaps)
+def swapinfo(a, b):
+    k = tuple(sorted((a, b))); n = swaps.get(k, 0)
+    exp = fs[a] * fs[b] / max(1, sum(fs.values())) * 0 + (swaps_row(a) * swaps_row(b) / (2 * tot_swaps))
+    return n, round(exp, 2)
+_row = collections.Counter()
+for (a, b), n in swaps.items(): _row[a] += n; _row[b] += n
+def swaps_row(a): return _row[a]
+for a, b in (('435', '070'), ('705', '706'), ('435', '455'), ('070', '455'), ('435', '690'), ('413', '575'), ('705', '711'), ('706', '711')):
+    n, e = swapinfo(a, b); print(f'   swaps {a}~{b}: {n} frames against {e} expected from their frame counts (frames: {fs[a]}, {fs[b]})')

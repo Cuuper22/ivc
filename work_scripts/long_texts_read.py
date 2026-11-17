@@ -38,8 +38,18 @@ for t in T:
                 breaks.append((p[i], p[i + 1], f'{a}>{b}'))
         potjar = any(p[i] in {f'{k:03d}' for k in range(31, 37)} and p[i + 1] == '740' for i in range(len(p) - 1))
         mark = 'nonsense' if breaks else ('partial' if (unv or lost) else 'reads')
+        reason = ''
+        if breaks: reason = 'word-pair that the corpus avoids: ' + ', '.join(b[2] for b in breaks)
+        if mark != 'unread' and any(a in p for a in ('705', '706')):
+            mark = 'nonsense'; reason = 'old value kaḷam "threshing floor" with a fixed "three" after it'
+        elif '435' in p:
+            mark = 'nonsense'; reason = 'old value miṉ "flash" inside a title block'
+        elif potjar:
+            mark = 'nonsense'; reason = 'jar read as "house of" where a tall count stands in front of it (a counted pot)'
+        elif p in (['176', '175'],):
+            mark = 'nonsense'; reason = 'two drawings of the seated person side by side read as "tax tax"'
         if len(p) == 1 and unv: mark = 'unread'
-        phr.append(dict(signs=p, kind=kind, face=face, line=line, sound=sd, english=en, unvalued=unv, lost=lost, breaks=breaks, mark=mark, potjar=potjar,
+        phr.append(dict(signs=p, kind=kind, face=face, line=line, sound=sd, english=en, unvalued=unv, lost=lost, breaks=breaks, mark=mark, reason=reason, potjar=potjar,
                         roles=P['roles']))
         pos += len(p)
     assert pos == len(flat), (t['rank'], pos, len(flat))

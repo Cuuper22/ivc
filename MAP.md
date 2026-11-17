@@ -79,3 +79,5 @@ What we currently act on, the live leads in order, and what each one says we sho
 - `guess` Eye = *kaṇ*, punning *kaṉ* "copper" (DEDR 1402). Sign 055 = dozen, 048 = seven (on the Lothal wooden-box sealings), 892 = "sale".
 - `guess` Sign 838 is *eḷ* sesame or *eḷumpu* bone (DEDR 839): 4 of 42 ivory/bone rods carry it (28 times chance); both stay alive.
 - `measured` Went against: 838 on tags/pots (1 of 19); crop 806 with the cup (0 of 133); fish 220 as a coast sign. No bead, carnelian or cotton sign found yet.
+
+Page format note: `map_page/index.html` is a dependency graph. Data is the `N` list between `/*TREE*/` markers: [id, status, short label with | as line break (12 chars a line at most), title, detail, [ids it rests on]]. Before publishing run the script through `node --check`.
