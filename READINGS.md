@@ -1,285 +1,310 @@
 # Readings
 
-Forty inscriptions read whole with the working sound table (`jobs/out/sound_list.md`, script `work_scripts/sound_readings.py`), the surest first. Reading order = stored order reversed. Sureness = share of the signs whose value is one of the first seven, a number, or a value whose own prediction came true on the data (`work_data/sound/checks.csv`); every sign in these texts has a working sound.
+Forty inscriptions read whole under the second sound list (`jobs/out/sound_list_v2.md`; script `work_scripts/sound_v2_readings.py`). Every sign in these texts is a number, one of the first values (jar, man, fish, spear, comb, carrier, staff-bearer, tree, three-headed person) or a value whose own prediction came true. Reading order = stored order reversed. Ranked by how many objects carry the exact text, then how many cities.
 
-Each sign is written `number picture [measured slot / working sound]`. The measured slot is the role the possessive parser (`work_scripts/gloss2.py`) gives the sign from position alone; the working sound is the early Dravidian value we build on. Copies: number of faces in the corpus with exactly this text.
+How a seal reads: [holding or office stamp] [name: house + self + tag] [ending]. The jar *kuṭi* is "of the house of"; jar + man *kuṭi āḷ* is "agent of the house of"; spear *vēḷ*, carrier *kā* and comb *ciṟ* say what the named person is. Word meanings are guesses built on measured slots; DEDR entry numbers are in the sound list.
 
-## 1. C-10: SEAL:S, Chanhu-daro, loc. 174sq. 9/D, depth +10 ft
+## 1. Junior hand of the Tax house
 
-- Text: `817-002-032-220-231-740` (1 copy; animal: Bull1:W; sureness 100%)
-- Sound: *kāṇi iru iru mīn puḷḷimīn kuṭi*
-- English: two shares (kāṇi): of the Two-Star-Spot-star house
-- Signs: `817` share [opener / kāṇi] · `002` two [opener / iru] · `032` two [count / iru] · `220` star [counted / mīn] · `231` Spot-star [self / puḷḷimīn] · `740` house of [poss / kuṭi]
+- Signs: `176-740-400`
+- Sound: *iṟai kuṭi ciṟ*
+- Objects: 39 (TAB 36, SEAL 2, ROD 1); cities: Harappa 38, Mohenjo-daro 1; example -
+- Word by word: `176` iṟai "tax" · `740` kuṭi "house of" · `400` ciṟ "junior"
 
-## 2. H-2197: TAB:I, Harappa, ETTrench 28
+## 2. Branch-Star the spearman (chief)
 
-- Text: `231-390-100-740-090-400` (1 copy; animal: -; sureness 100%)
-- Sound: *puḷḷimīn maṟam mutu kuṭi āḷ ciṟ*
-- English: manager junior of the Spot-star-Warrior-Elder house
-- Signs: `231` Spot-star [crest / puḷḷimīn] · `390` warrior [self / maṟam] · `100` elder [tag / mutu] · `740` house of [poss / kuṭi] · `090` manager [relation / āḷ] · `400` junior [relation / ciṟ]
+- Signs: `415-220-520`
+- Sound: *kavar mīn vēḷ*
+- Objects: 17 (TAB 16, SEAL 1); cities: Harappa 16, Mohenjo-daro 1; example H-1326
+- The name `415-220` stands on 26 objects in 2 cities.
+- Word by word: `415` kavar "branch" · `220` mīn "star" · `520` vēḷ "chief"
 
-## 3. M-1746: SEAL:S, Mohenjo-daro, DKG. (S), 7II, 88-, depth -10.8 ft
+## 3. Junior hand of the Crop-Bamboo-star-Chest-Kindred house
 
-- Text: `817-002-240-415-100-740-090` (1 copy; animal: Bull1:S; sureness 100%)
-- Sound: *kāṇi iru mīmīn kavar mutu kuṭi āḷ*
-- English: two shares (kāṇi): manager of the High-star-Branch-Elder house
-- Signs: `817` share [opener / kāṇi] · `002` two [opener / iru] · `240` High-star [crest / mīmīn] · `415` branch [self / kavar] · `100` elder [tag / mutu] · `740` house of [poss / kuṭi] · `090` manager [relation / āḷ]
+- Signs: `806-235-590-405-740-400`
+- Sound: *(crop) vēymīn peṭṭi kiḷai kuṭi ciṟ*
+- Objects: 8 (TAB 8); cities: Harappa 7, Mohenjo-daro 1; example H-204
+- The name `806-235-590-405` stands on 9 objects in 2 cities.
+- Word by word: `806` (crop) "crop" · `235` vēymīn "Bamboo-star" · `590` peṭṭi "chest" · `405` kiḷai "kindred" · `740` kuṭi "house of" · `400` ciṟ "junior"
 
-## 4. M-595: SEAL:S, Mohenjo-daro, HRB, 8LVI, 337AA/10, depth -3.0 ft
+## 4. Of the Bamboo-star-Star-Tax house
 
-- Text: `820-002-176-415-100-740` (1 copy; animal: Bull1:W; sureness 100%)
-- Sound: *kāl iru iṟai kavar mutu kuṭi*
-- English: two quarters (kāl): of the Tax-Branch-Elder house
-- Signs: `820` quarter-share [opener / kāl] · `002` two [opener / iru] · `176` tax [self / iṟai] · `415` branch [self / kavar] · `100` elder [tag / mutu] · `740` house of [poss / kuṭi]
+- Signs: `235-220-176-740`
+- Sound: *vēymīn mīn iṟai kuṭi*
+- Objects: 7 (TAB 7); cities: Harappa 7; example H-2010
+- The name `235-220-176` stands on 7 objects in 1 cities.
+- Word by word: `235` vēymīn "Bamboo-star" · `220` mīn "star" · `176` iṟai "tax" · `740` kuṭi "house of"
 
-## 5. M-144: SEAL:S, Mohenjo-daro, DKG
+## 5. Junior hand of the Descendant-Branch-Star house
 
-- Text: `817-002-240-415-100-740` (1 copy; animal: Bull1:J; sureness 100%)
-- Sound: *kāṇi iru mīmīn kavar mutu kuṭi*
-- English: two shares (kāṇi): of the High-star-Branch-Elder house
-- Signs: `817` share [opener / kāṇi] · `002` two [opener / iru] · `240` High-star [crest / mīmīn] · `415` branch [self / kavar] · `100` elder [tag / mutu] · `740` house of [poss / kuṭi]
-
-## 6. M-199: SEAL:S, Mohenjo-daro, DKG, First Street-, 1-, depth -20.3 ft
-
-- Text: `861-002-240-415-100-740-090` (1 copy; animal: Bull1:S; sureness 100%)
-- Sound: *kāṇi iru mīmīn kavar mutu kuṭi āḷ*
-- English: two shares (kāṇi): manager of the High-star-Branch-Elder house
-- Signs: `861` share [opener / kāṇi] · `002` two [opener / iru] · `240` High-star [crest / mīmīn] · `415` branch [self / kavar] · `100` elder [tag / mutu] · `740` house of [poss / kuṭi] · `090` manager [relation / āḷ]
-
-## 7. M-260: SEAL:S, Mohenjo-daro, DKG. (S), 12V, 89-, depth -16.9 ft
-
-- Text: `820-002-014-220-740-090` (1 copy; animal: Zebu; sureness 100%)
-- Sound: *kāl iru nāl mīn kuṭi āḷ*
-- English: two quarters (kāl): manager of the Four-Star house
-- Signs: `820` quarter-share [opener / kāl] · `002` two [opener / iru] · `014` four [count / nāl] · `220` star [counted / mīn] · `740` house of [poss / kuṭi] · `090` manager [relation / āḷ]
-
-## 8. M-357: SEAL:R, Mohenjo-daro, HRA, 2II, 737 X/03, depth -8.0 ft
-
-- Text: `820-001-806-240-472-806-100-740` (1 copy; animal: -; sureness 100%)
-- Sound: *kāl oru (crop) mīmīn (n) (crop) mutu kuṭi*
-- English: one quarter (kāl): Crop-High-star n crop of the Elder house
-- Signs: `820` quarter-share [opener / kāl] · `001` one [opener / oru] · `806` crop [crest / (crop)] · `240` High-star [self / mīmīn] · `472` n loads [count / (n)] · `806` crop [counted / (crop)] · `100` elder [tag / mutu] · `740` house of [poss / kuṭi]
-
-## 9. M-375: SEAL:R, Mohenjo-daro, HR-, depth -4.0 ft
-
-- Text: `820-002-032-220-233-100-740` (1 copy; animal: -; sureness 100%)
-- Sound: *kāl iru iru mīn varimīn mutu kuṭi*
-- English: two quarters (kāl): of the Two-Star-Striped-star-Elder house
-- Signs: `820` quarter-share [opener / kāl] · `002` two [opener / iru] · `032` two [count / iru] · `220` star [counted / mīn] · `233` Striped-star [crest / varimīn] · `100` elder [tag / mutu] · `740` house of [poss / kuṭi]
-
-## 10. M-629: SEAL:S, Mohenjo-daro, DK-
-
-- Text: `861-002-798-240-176-740-679` (1 copy; animal: Bull1:W; sureness 100%)
-- Sound: *kāṇi iru maru- mīmīn iṟai kuṭi kaṭṭil*
-- English: two shares (kāṇi): seat of the Descendant-High-star-Tax house
-- Signs: `861` share [opener / kāṇi] · `002` two [opener / iru] · `798` descendant [self / maru-] · `240` High-star [self / mīmīn] · `176` tax [tag / iṟai] · `740` house of [poss / kuṭi] · `679` seat [relation / kaṭṭil]
-
-## 11. M-865: SEAL:S, Mohenjo-daro, DKE, Trench E-, -1008/0779, depth -1.25 ft
-
-- Text: `820-001-235-240-740-090` (1 copy; animal: Bull1:W; sureness 100%)
-- Sound: *kāl oru vēymīn mīmīn kuṭi āḷ*
-- English: one quarter (kāl): manager of the Bamboo-star-High-star house
-- Signs: `820` quarter-share [opener / kāl] · `001` one [opener / oru] · `235` Bamboo-star [crest / vēymīn] · `240` High-star [self / mīmīn] · `740` house of [poss / kuṭi] · `090` manager [relation / āḷ]
-
-## 12. Ns-5: SEAL:S, Nausharo
-
-- Text: `820-002-016-220-740-090` (1 copy; animal: Bull1:J; sureness 100%)
-- Sound: *kāl iru āṟu mīn kuṭi āḷ*
-- English: two quarters (kāl): manager of the Six-Star house
-- Signs: `820` quarter-share [opener / kāl] · `002` two [opener / iru] · `016` six [count / āṟu] · `220` star [counted / mīn] · `740` house of [poss / kuṭi] · `090` manager [relation / āḷ]
-
-## 13. -: SEAL:R, Dholavira, 45 x 58 x 1-, depth 250 cm
-
-- Text: `806-455-220-013-472-806-154` (1 copy; animal: -; sureness 100%)
-- Sound: *(crop) ampu mīn mū (n) (crop) kā*
-- English: Crop-Arrow star, three n loads of crop, carried
-- Signs: `806` crop [crest / (crop)] · `455` arrow [self / ampu] · `220` star [counted / mīn] · `013` three [count / mū] · `472` n loads [load-count / (n)] · `806` crop [load-crop / (crop)] · `154` keeper [load-carried / kā]
-
-## 14. -: SEAL:S, Gola Dhoro (Bagasra), Trench Eo 11-, depth 66 cm
-
-- Text: `033-820-240-415-100-740-090` (1 copy; animal: Bull1:S; sureness 100%)
-- Sound: *mū kāl mīmīn kavar mutu kuṭi āḷ*
-- English: three quarter-share manager of the High-star-Branch-Elder house
-- Signs: `033` three [count / mū] · `820` quarter-share [counted / kāl] · `240` High-star [crest / mīmīn] · `415` branch [self / kavar] · `100` elder [tag / mutu] · `740` house of [poss / kuṭi] · `090` manager [relation / āḷ]
-
-## 15. H-203: TAB:B, Harappa, F-, depth -6.5 ft
-
-- Text: `798-415-220-740-400` (5 copies; animal: -; sureness 100%)
+- Signs: `798-415-220-740-400`
 - Sound: *maru- kavar mīn kuṭi ciṟ*
-- English: junior of the Descendant-Branch-Star house
-- Signs: `798` descendant [self / maru-] · `415` branch [self / kavar] · `220` star [self / mīn] · `740` house of [poss / kuṭi] · `400` junior [relation / ciṟ]
+- Objects: 5 (TAB 5); cities: Harappa 3, Mohenjo-daro 2; example H-203
+- The name `798-415-220` stands on 7 objects in 2 cities.
+- Word by word: `798` maru- "descendant" · `415` kavar "branch" · `220` mīn "star" · `740` kuṭi "house of" · `400` ciṟ "junior"
 
-## 16. H-1978: TAB:B, Harappa, ET-
+## 6. N loads of crop, carried
 
-- Text: `415-100-740-090-400` (2 copies; animal: Phyt; sureness 100%)
+- Signs: `465-806-158`
+- Sound: *(n) (crop) kā*
+- Objects: 5 (TAB 5); cities: Harappa 5; example H-190
+- Word by word: `465` (n) "n loads" · `806` (crop) "crop" · `158` kā "keeper"
+
+## 7. Of the Three-star house
+
+- Signs: `003-220-740`
+- Sound: *mū mīn kuṭi*
+- Objects: 5 (SEAL 3, TAB 2); cities: Mohenjo-daro 5; example M-294
+- Word by word: `003` mū "three" · `220` mīn "star" · `740` kuṭi "house of"
+
+## 8. Holder of two shares: Four-Warrior
+
+- Signs: `817-002-004-390`
+- Sound: *iru kāṇi nāl maṟam*
+- Objects: 4 (SEAL 3, TAB 1); cities: Mohenjo-daro 2, Harappa 1, Dholavira 1; example H-2003
+- Word by word: `817` kāṇi "share" · `002` iru "two" · `004` nāl "four" · `390` maṟam "warrior"
+
+## 9. Holder of two quarter-shares: Three-Warrior
+
+- Signs: `820-002-003-390`
+- Sound: *iru kāl mū maṟam*
+- Objects: 4 (SEAL 4); cities: Mohenjo-daro 2, Harappa 1, Nausharo 1; example H-1680
+- Word by word: `820` kāl "quarter-share" · `002` iru "two" · `003` mū "three" · `390` maṟam "warrior"
+
+## 10. N loads of crop, carried
+
+- Signs: `468-806-154`
+- Sound: *(n) (crop) kā*
+- Objects: 4 (SEAL 4); cities: Harappa 3, Mohenjo-daro 1; example H-152
+- Word by word: `468` (n) "n loads" · `806` (crop) "crop" · `154` kā "keeper"
+
+## 11. Holder of two shares: Three-Warrior
+
+- Signs: `817-002-003-390`
+- Sound: *iru kāṇi mū maṟam*
+- Objects: 3 (SEAL 3); cities: Chanhu-daro 1, Harappa 1, Mohenjo-daro 1; example C-66
+- Word by word: `817` kāṇi "share" · `002` iru "two" · `003` mū "three" · `390` maṟam "warrior"
+
+## 12. Of the Bamboo-star-Hill-share house
+
+- Signs: `235-482-740`
+- Sound: *vēymīn kōṭukāṇi kuṭi*
+- Objects: 3 (SEAL 3); cities: Chanhu-daro 1, Lothal 1, Mohenjo-daro 1; example C-59
+- The name `235-482` stands on 4 objects in 3 cities.
+- Word by word: `235` vēymīn "Bamboo-star" · `482` kōṭukāṇi "hill share" · `740` kuṭi "house of"
+
+## 13. Holder of two shares: Three-Warrior
+
+- Signs: `861-002-003-390`
+- Sound: *iru kāṇi mū maṟam*
+- Objects: 3 (SEAL 2, TAG 1); cities: Mohenjo-daro 2, Kalibangan 1; example K-82
+- Word by word: `861` kāṇi "share" · `002` iru "two" · `003` mū "three" · `390` maṟam "warrior"
+
+## 14. Of the Branch-Elder house
+
+- Signs: `415-100-740`
+- Sound: *kavar mutu kuṭi*
+- Objects: 3 (TAB 2, SEAL 1); cities: Harappa 2, Mohenjo-daro 1; example H-1991
+- The name `415-100` stands on 16 objects in 2 cities.
+- Word by word: `415` kavar "branch" · `100` mutu "elder" · `740` kuṭi "house of"
+
+## 15. Of the First-star-Descendant-Tax house
+
+- Signs: `231-798-176-740`
+- Sound: *orumīn maru- iṟai kuṭi*
+- Objects: 3 (TAB 3); cities: Harappa 3; example H-171
+- The name `231-798-176` stands on 3 objects in 1 cities.
+- Word by word: `231` orumīn "First-star" · `798` maru- "descendant" · `176` iṟai "tax" · `740` kuṭi "house of"
+
+## 16. Of the Tax-Elder house
+
+- Signs: `176-100-740`
+- Sound: *iṟai mutu kuṭi*
+- Objects: 3 (TAB 2, SEAL 1); cities: Harappa 3; example H-1080
+- The name `176-100` stands on 9 objects in 2 cities.
+- Word by word: `176` iṟai "tax" · `100` mutu "elder" · `740` kuṭi "house of"
+
+## 17. Four cups, for Star
+
+- Signs: `004-700-220`
+- Sound: *nāl nāḻi? mīn*
+- Objects: 3 (TAB 3); cities: Harappa 3; example H-302
+- Word by word: `004` nāl "four" · `700` nāḻi? "cups" · `220` mīn "star"
+
+## 18. Of the Chest-Warrior house
+
+- Signs: `590-390-740`
+- Sound: *peṭṭi maṟam kuṭi*
+- Objects: 2 (SEAL 2); cities: Allahdino 1, Chanhu-daro 1; example Ad-1
+- The name `590-390` stands on 20 objects in 5 cities.
+- Word by word: `590` peṭṭi "chest" · `390` maṟam "warrior" · `740` kuṭi "house of"
+
+## 19. Of the Seven-Maiden house
+
+- Signs: `017-585-740`
+- Sound: *ēḻu kaṉṉi? kuṭi*
+- Objects: 2 (SEAL 1, TAG 1); cities: Mohenjo-daro 1, Rupar 1; example M-1777
+- Word by word: `017` ēḻu "seven" · `585` kaṉṉi? "maiden" · `740` kuṭi "house of"
+
+## 20. Holder of two shares: of the Two-Arrow-Chest-Warrior house
+
+- Signs: `861-002-032-070-590-390-740`
+- Sound: *iru kāṇi iru ampu peṭṭi maṟam kuṭi*
+- Objects: 2 (SEAL 2); cities: Harappa 2; example H-597
+- The name `590-390` stands on 20 objects in 5 cities.
+- Word by word: `861` kāṇi "share" · `002` iru "two" · `032` iru "two" · `070` ampu "arrow" · `590` peṭṭi "chest" · `390` maṟam "warrior" · `740` kuṭi "house of"
+
+## 21. Of the Crop-Banner-Bamboo-star-Chest-Warrior house
+
+- Signs: `806-368-235-590-390-740`
+- Sound: *(crop) koṭi vēymīn peṭṭi maṟam kuṭi*
+- Objects: 2 (TAB 2); cities: Harappa 2; example H-694
+- The name `806-368-235-590-390` stands on 2 objects in 1 cities.
+- Word by word: `806` (crop) "crop" · `368` koṭi "banner" · `235` vēymīn "Bamboo-star" · `590` peṭṭi "chest" · `390` maṟam "warrior" · `740` kuṭi "house of"
+
+## 22. Agent of the Branch-Elder house
+
+- Signs: `415-100-740-090-400`
 - Sound: *kavar mutu kuṭi āḷ ciṟ*
-- English: manager junior of the Branch-Elder house
-- Signs: `415` branch [self / kavar] · `100` elder [tag / mutu] · `740` house of [poss / kuṭi] · `090` manager [relation / āḷ] · `400` junior [relation / ciṟ]
+- Objects: 2 (TAB 2); cities: Harappa 2; example H-1978
+- The name `415-100` stands on 16 objects in 2 cities.
+- Word by word: `415` kavar "branch" · `100` mutu "elder" · `740` kuṭi "house of" · `090` āḷ "manager" · `400` ciṟ "junior"
 
-## 17. M-850: SEAL:S, Mohenjo-daro, DKG, First Street-, 10-, depth -15.9 ft
+## 23. Holder of two shares: of the Branch-Elder house
 
-- Text: `861-002-415-100-740` (2 copies; animal: Bull1:L; sureness 100%)
-- Sound: *kāṇi iru kavar mutu kuṭi*
-- English: two shares (kāṇi): of the Branch-Elder house
-- Signs: `861` share [opener / kāṇi] · `002` two [opener / iru] · `415` branch [self / kavar] · `100` elder [tag / mutu] · `740` house of [poss / kuṭi]
+- Signs: `861-002-415-100-740`
+- Sound: *iru kāṇi kavar mutu kuṭi*
+- Objects: 2 (SEAL 2); cities: Mohenjo-daro 2; example M-850
+- The name `415-100` stands on 16 objects in 2 cities.
+- Word by word: `861` kāṇi "share" · `002` iru "two" · `415` kavar "branch" · `100` mutu "elder" · `740` kuṭi "house of"
 
-## 18. C-60: SEAL:S, Chanhu-daro, loc. 159sq; 6/F, depth +8.4 ft
+## 24. Six-star-Chief, junior hand
 
-- Text: `861-002-032-176-740` (1 copy; animal: Bull1:W; sureness 100%)
-- Sound: *kāṇi iru iru iṟai kuṭi*
-- English: two shares (kāṇi): two tax of the house
-- Signs: `861` share [opener / kāṇi] · `002` two [opener / iru] · `032` two [count / iru] · `176` tax [counted / iṟai] · `740` house of [poss / kuṭi]
+- Signs: `016-220-520-400`
+- Sound: *āṟu mīn vēḷ ciṟ*
+- Objects: 2 (TAB 2); cities: Harappa 2; example H-1121
+- Word by word: `016` āṟu "six" · `220` mīn "star" · `520` vēḷ "chief" · `400` ciṟ "junior"
 
-## 19. H-1056: SEAL:S, Harappa, FTrench IV+V, -I13/11, depth -10.25 ft
+## 25. Star-King-Chest-Arrow
 
-- Text: `003-220-740-090-400` (1 copy; animal: Bull1; sureness 100%)
-- Sound: *mū mīn kuṭi āḷ ciṟ*
-- English: manager junior of the Three-Star house
-- Signs: `003` three [count / mū] · `220` star [counted / mīn] · `740` house of [poss / kuṭi] · `090` manager [relation / āḷ] · `400` junior [relation / ciṟ]
+- Signs: `220-142-590-455`
+- Sound: *mīn kō peṭṭi ampu*
+- Objects: 2 (TAB 2); cities: Harappa 2; example H-2127
+- The name `220-142-590-455` stands on 2 objects in 1 cities.
+- Word by word: `220` mīn "star" · `142` kō "king" · `590` peṭṭi "chest" · `455` ampu "arrow"
 
-## 20. H-1906: TAB:B, Harappa, depth -0.0 m
+## 26. Junior hand of the Chest-Warrior house
 
-- Text: `090-400-740-090-400` (1 copy; animal: -; sureness 100%)
-- Sound: *āḷ ciṟ kuṭi āḷ ciṟ*
-- English: manager junior of the Manager-Junior house
-- Signs: `090` manager [self / āḷ] · `400` junior [tag / ciṟ] · `740` house of [poss / kuṭi] · `090` manager [relation / āḷ] · `400` junior [relation / ciṟ]
+- Signs: `590-390-740-400`
+- Sound: *peṭṭi maṟam kuṭi ciṟ*
+- Objects: 2 (SEAL 1, TAB 1); cities: Harappa 2; example H-75
+- The name `590-390` stands on 20 objects in 5 cities.
+- Word by word: `590` peṭṭi "chest" · `390` maṟam "warrior" · `740` kuṭi "house of" · `400` ciṟ "junior"
 
-## 21. H-1672: SEAL:S, Harappa, E-ETTrench 10E
+## 27. N loads of crop, carried junior hand
 
-- Text: `033-061-142-400-740` (1 copy; animal: Bull1:W; sureness 100%)
-- Sound: *mū kāl kō ciṟ kuṭi*
-- English: three quarter of the King-Junior house
-- Signs: `033` three [count / mū] · `061` quarter [counted / kāl] · `142` king [self / kō] · `400` junior [tag / ciṟ] · `740` house of [poss / kuṭi]
+- Signs: `472-806-158-400`
+- Sound: *(n) (crop) kā ciṟ*
+- Objects: 2 (TAB 2); cities: Harappa 2; example H-208
+- Word by word: `472` (n) "n loads" · `806` (crop) "crop" · `158` kā "keeper" · `400` ciṟ "junior"
 
-## 22. H-1788: TAB:B, Harappa, ET-
+## 28. Of the Bamboo-star-Chest-Warrior house
 
-- Text: `861-002-470-806-154` (1 copy; animal: -; sureness 100%)
-- Sound: *kāṇi iru (n) (crop) kā*
-- English: two shares (kāṇi): n loads of crop, carried
-- Signs: `861` share [opener / kāṇi] · `002` two [opener / iru] · `470` n loads [load-count / (n)] · `806` crop [load-crop / (crop)] · `154` keeper [load-carried / kā]
+- Signs: `235-590-390-740`
+- Sound: *vēymīn peṭṭi maṟam kuṭi*
+- Objects: 2 (TAB 2); cities: Harappa 2; example H-857
+- The name `235-590-390` stands on 3 objects in 2 cities.
+- Word by word: `235` vēymīn "Bamboo-star" · `590` peṭṭi "chest" · `390` maṟam "warrior" · `740` kuṭi "house of"
 
-## 23. H-1678: SEAL:S, Harappa, FTrench 41
+## 29. Holder of two shares: of the Tax house
 
-- Text: `032-220-240-233-520` (1 copy; animal: Bull1:W; sureness 100%)
-- Sound: *iru mīn mīmīn varimīn vēḷ*
-- English: Two-Star-High-star-Striped-star chief
-- Signs: `032` two [count / iru] · `220` star [counted / mīn] · `240` High-star [crest / mīmīn] · `233` Striped-star [self / varimīn] · `520` chief [ending / vēḷ]
+- Signs: `861-002-176-740`
+- Sound: *iru kāṇi iṟai kuṭi*
+- Objects: 2 (POT 1, SEAL 1); cities: Mohenjo-daro 2; example M-2060
+- Word by word: `861` kāṇi "share" · `002` iru "two" · `176` iṟai "tax" · `740` kuṭi "house of"
 
-## 24. H-154: SEAL:R, Harappa, FTrench IV+V, -I12/20, depth -5.33 ft
+## 30. Of the Two-star-Tax house
 
-- Text: `817-013-467-806-154` (1 copy; animal: -; sureness 100%)
-- Sound: *kāṇi mū (n) (crop) kā*
-- English: three shares (kāṇi): n loads of crop, carried
-- Signs: `817` share [opener / kāṇi] · `013` three [opener / mū] · `467` n loads [load-count / (n)] · `806` crop [load-crop / (crop)] · `154` keeper [load-carried / kā]
+- Signs: `032-220-176-740`
+- Sound: *iru mīn iṟai kuṭi*
+- Objects: 2 (TAB 2); cities: Mohenjo-daro 2; example M-511
+- Word by word: `032` iru "two" · `220` mīn "star" · `176` iṟai "tax" · `740` kuṭi "house of"
 
-## 25. H-231: TAB:B, Harappa, FTrench VI, -O11/16, depth -5.58 ft
+## 31. Three cups, for Hunter
 
-- Text: `820-002-240-220-520` (1 copy; animal: -; sureness 100%)
-- Sound: *kāl iru mīmīn mīn vēḷ*
-- English: two quarters (kāl): High-star-Star chief
-- Signs: `820` quarter-share [opener / kāl] · `002` two [opener / iru] · `240` High-star [crest / mīmīn] · `220` star [self / mīn] · `520` chief [ending / vēḷ]
+- Signs: `033-700-125`
+- Sound: *mū nāḻi? vēṭṭuvaṉ*
+- Objects: 2 (TAB 2); cities: Harappa 2; example H-1921
+- Word by word: `033` mū "three" · `700` nāḻi? "cups" · `125` vēṭṭuvaṉ "Hunter"
 
-## 26. H-514: SEAL:S, Harappa, AB-, -R24/17, depth -19.5 ft
+## 32. Of the Bamboo-star-Descendant house
 
-- Text: `820-002-016-220-151` (1 copy; animal: Bull1:W; sureness 100%)
-- Sound: *kāl iru āṟu mīn kā*
-- English: two quarters (kāl): Six-Star keeper
-- Signs: `820` quarter-share [opener / kāl] · `002` two [opener / iru] · `016` six [count / āṟu] · `220` star [counted / mīn] · `151` keeper [ending / kā]
+- Signs: `235-798-740`
+- Sound: *vēymīn maru- kuṭi*
+- Objects: 2 (SEAL 2); cities: Mohenjo-daro 2; example M-1809
+- The name `235-798` stands on 2 objects in 1 cities.
+- Word by word: `235` vēymīn "Bamboo-star" · `798` maru- "descendant" · `740` kuṭi "house of"
 
-## 27. H-787: TAB:B, Harappa
+## 33. Of the Bamboo-star-First-star-Child-of house; n loads of crop, carried
 
-- Text: `033-700-176-740-400` (1 copy; animal: -; sureness 100%)
-- Sound: *mū nāḻi? iṟai kuṭi ciṟ*
-- English: three cup measure junior of the Tax house
-- Signs: `033` three [count / mū] · `700` cup measure [counted / nāḻi?] · `176` tax [self / iṟai] · `740` house of [poss / kuṭi] · `400` junior [relation / ciṟ]
+- Signs: `235-231-752-740-468-806-158`
+- Sound: *vēymīn orumīn maka kuṭi (n) (crop) kā*
+- Objects: 1 (SEAL 1); cities: Harappa 1; example H-58
+- The name `235-231-752` stands on 1 objects in 1 cities.
+- Word by word: `235` vēymīn "Bamboo-star" · `231` orumīn "First-star" · `752` maka "child of" · `740` kuṭi "house of" · `468` (n) "n loads" · `806` (crop) "crop" · `158` kā "keeper"
 
-## 28. K-78: TAB:B, Kalibangan, KLB-2-, XA2-, depth -1.3 m
+## 34. Holder of two shares: of the Three-star-Chest-Kindred house
 
-- Text: `820-002-390-817-740` (1 copy; animal: Gavi; sureness 100%)
-- Sound: *kāl iru maṟam kāṇi kuṭi*
-- English: two quarters (kāl): of the Warrior-Share house
-- Signs: `820` quarter-share [opener / kāl] · `002` two [opener / iru] · `390` warrior [self / maṟam] · `817` share [self / kāṇi] · `740` house of [poss / kuṭi]
+- Signs: `861-002-003-220-590-405-740`
+- Sound: *iru kāṇi mū mīn peṭṭi kiḷai kuṭi*
+- Objects: 1 (SEAL 1); cities: Harappa 1; example H-134
+- The name `590-405` stands on 7 objects in 2 cities.
+- Word by word: `861` kāṇi "share" · `002` iru "two" · `003` mū "three" · `220` mīn "star" · `590` peṭṭi "chest" · `405` kiḷai "kindred" · `740` kuṭi "house of"
 
-## 29. L-41: SEAL:S, Lothal, SRG 2M 28, depth -2.5 ft
+## 35. Crop-Arrow-Star-Three; n loads of crop, carried
 
-- Text: `817-002-233-740-090` (1 copy; animal: Bull; sureness 100%)
-- Sound: *kāṇi iru varimīn kuṭi āḷ*
-- English: two shares (kāṇi): manager of the Striped-star house
-- Signs: `817` share [opener / kāṇi] · `002` two [opener / iru] · `233` Striped-star [self / varimīn] · `740` house of [poss / kuṭi] · `090` manager [relation / āḷ]
+- Signs: `806-455-220-013-472-806-154`
+- Sound: *(crop) ampu mīn mū (n) (crop) kā*
+- Objects: 1 (SEAL 1); cities: Dholavira 1; example -
+- The name `806-455` stands on 1 objects in 1 cities.
+- Word by word: `806` (crop) "crop" · `455` ampu "arrow" · `220` mīn "star" · `013` mū "three" · `472` (n) "n loads" · `806` (crop) "crop" · `154` kā "keeper"
 
-## 30. L-83: SEAL:L, Lothal, SRG 3B-C 5, depth -4.3 ft
+## 36. Holder of two quarter-shares: of the Two-star-First-star-Maiden house
 
-- Text: `820-002-240-806-740` (1 copy; animal: -; sureness 100%)
-- Sound: *kāl iru mīmīn (crop) kuṭi*
-- English: two quarters (kāl): of the High-star-Crop house
-- Signs: `820` quarter-share [opener / kāl] · `002` two [opener / iru] · `240` High-star [crest / mīmīn] · `806` crop [self / (crop)] · `740` house of [poss / kuṭi]
+- Signs: `820-002-032-220-231-585-740`
+- Sound: *iru kāl iru mīn orumīn kaṉṉi? kuṭi*
+- Objects: 1 (SEAL 1); cities: Kalibangan 1; example K-145
+- The name `231-585` stands on 1 objects in 1 cities.
+- Word by word: `820` kāl "quarter-share" · `002` iru "two" · `032` iru "two" · `220` mīn "star" · `231` orumīn "First-star" · `585` kaṉṉi? "maiden" · `740` kuṭi "house of"
 
-## 31. M-1770: SEAL:S, Mohenjo-daro, DKG. (S), 1VI, 52-, depth -16.0 ft
+## 37. Holder of two shares: of the Two-star-First-star house
 
-- Text: `390-090-390-176-740` (1 copy; animal: Bull1:U; sureness 100%)
-- Sound: *maṟam āḷ maṟam iṟai kuṭi*
-- English: of the Warrior-Manager-Warrior-Tax house
-- Signs: `390` warrior [self / maṟam] · `090` manager [self / āḷ] · `390` warrior [self / maṟam] · `176` tax [tag / iṟai] · `740` house of [poss / kuṭi]
+- Signs: `817-002-032-220-231-740`
+- Sound: *iru kāṇi iru mīn orumīn kuṭi*
+- Objects: 1 (SEAL 1); cities: Chanhu-daro 1; example C-10
+- Word by word: `817` kāṇi "share" · `002` iru "two" · `032` iru "two" · `220` mīn "star" · `231` orumīn "First-star" · `740` kuṭi "house of"
 
-## 32. M-1957: SEAL:R, Mohenjo-daro, HR-, -38 W/19, depth -3.5 ft
+## 38. Agent of the First-star-Warrior-Elder house
 
-- Text: `820-013-474-806-154` (1 copy; animal: -; sureness 100%)
-- Sound: *kāl mū (n) (crop) kā*
-- English: three quarters (kāl): n loads of crop, carried
-- Signs: `820` quarter-share [opener / kāl] · `013` three [opener / mū] · `474` n loads [load-count / (n)] · `806` crop [load-crop / (crop)] · `154` keeper [load-carried / kā]
+- Signs: `231-390-100-740-090-400`
+- Sound: *orumīn maṟam mutu kuṭi āḷ ciṟ*
+- Objects: 1 (TAB 1); cities: Harappa 1; example H-2197
+- The name `231-390-100` stands on 1 objects in 1 cities.
+- Word by word: `231` orumīn "First-star" · `390` maṟam "warrior" · `100` mutu "elder" · `740` kuṭi "house of" · `090` āḷ "manager" · `400` ciṟ "junior"
 
-## 33. M-15: SEAL:S, Mohenjo-daro, DKG. (S), 10III, 56-, depth -7.7 ft
+## 39. Office stamp, first ward: Chest-Warrior the carrier
 
-- Text: `861-002-176-740-090` (1 copy; animal: Bull1:W; sureness 100%)
-- Sound: *kāṇi iru iṟai kuṭi āḷ*
-- English: two shares (kāṇi): manager of the Tax house
-- Signs: `861` share [opener / kāṇi] · `002` two [opener / iru] · `176` tax [self / iṟai] · `740` house of [poss / kuṭi] · `090` manager [relation / āḷ]
+- Signs: `920-060-741-590-390-151`
+- Sound: *tiṅkaḷ? orukuṭi peṭṭi maṟam kā*
+- Objects: 1 (SEAL 1); cities: Mohenjo-daro 1; example M-1902
+- The name `590-390` stands on 20 objects in 5 cities.
+- Word by word: `920` tiṅkaḷ? "month" · `060` mark "mark" · `741` orukuṭi "first ward" · `590` peṭṭi "chest" · `390` maṟam "warrior" · `151` kā "keeper"
 
-## 34. M-75: SEAL:S, Mohenjo-daro, VSA, Lane 3XXV, -29AA/05, depth -5.0 ft
+## 40. Holder of two quarter-shares: of the Tax-Branch-Elder house
 
-- Text: `817-002-004-220-520` (1 copy; animal: Bull1:W; sureness 100%)
-- Sound: *kāṇi iru nāl mīn vēḷ*
-- English: two shares (kāṇi): Four-Star chief
-- Signs: `817` share [opener / kāṇi] · `002` two [opener / iru] · `004` four [count / nāl] · `220` star [counted / mīn] · `520` chief [ending / vēḷ]
+- Signs: `820-002-176-415-100-740`
+- Sound: *iru kāl iṟai kavar mutu kuṭi*
+- Objects: 1 (SEAL 1); cities: Mohenjo-daro 1; example M-595
+- The name `176-415-100` stands on 1 objects in 1 cities.
+- Word by word: `820` kāl "quarter-share" · `002` iru "two" · `176` iṟai "tax" · `415` kavar "branch" · `100` mutu "elder" · `740` kuṭi "house of"
 
-## 35. M-164: SEAL:S, Mohenjo-daro, DKG. (S), 3III, 36-, depth -12.4 ft
-
-- Text: `817-002-061-142-740` (1 copy; animal: Bull1:X; sureness 100%)
-- Sound: *kāṇi iru kāl kō kuṭi*
-- English: two shares (kāṇi): of the Quarter-King house
-- Signs: `817` share [opener / kāṇi] · `002` two [opener / iru] · `061` quarter [crest / kāl] · `142` king [self / kō] · `740` house of [poss / kuṭi]
-
-## 36. M-267: SEAL:S, Mohenjo-daro, DKG. (S), 4-, 13-, depth -9.1 ft
-
-- Text: `679-002-155-630-740` (1 copy; animal: Buff; sureness 100%)
-- Sound: *kaṭṭil iru kā pal kuṭi*
-- English: Seat two keeper of the Many house
-- Signs: `679` seat [self / kaṭṭil] · `002` two [count / iru] · `155` keeper [counted / kā] · `630` many [self / pal] · `740` house of [poss / kuṭi]
-
-## 37. M-289: SEAL:S, Mohenjo-daro, DK-
-
-- Text: `817-002-240-176-740` (1 copy; animal: Tigr; sureness 100%)
-- Sound: *kāṇi iru mīmīn iṟai kuṭi*
-- English: two shares (kāṇi): of the High-star-Tax house
-- Signs: `817` share [opener / kāṇi] · `002` two [opener / iru] · `240` High-star [crest / mīmīn] · `176` tax [tag / iṟai] · `740` house of [poss / kuṭi]
-
-## 38. M-653: SEAL:S, Mohenjo-daro, SDStupa, -Lane, -23JJ/18, depth -9.0 ft
-
-- Text: `861-002-235-740-679` (1 copy; animal: Bull1:W; sureness 100%)
-- Sound: *kāṇi iru vēymīn kuṭi kaṭṭil*
-- English: two shares (kāṇi): seat of the Bamboo-star house
-- Signs: `861` share [opener / kāṇi] · `002` two [opener / iru] · `235` Bamboo-star [self / vēymīn] · `740` house of [poss / kuṭi] · `679` seat [relation / kaṭṭil]
-
-## 39. M-717: SEAL:S, Mohenjo-daro, DKE, Trench E-, -1015/1258, depth -5.5 ft
-
-- Text: `861-002-061-142-740` (1 copy; animal: Bull1:J; sureness 100%)
-- Sound: *kāṇi iru kāl kō kuṭi*
-- English: two shares (kāṇi): of the Quarter-King house
-- Signs: `861` share [opener / kāṇi] · `002` two [opener / iru] · `061` quarter [crest / kāl] · `142` king [self / kō] · `740` house of [poss / kuṭi]
-
-## 40. M-727: SEAL:S, Mohenjo-daro, DKG. (N), 21IV, 23-, depth -7.6 ft
-
-- Text: `820-002-415-100-740` (1 copy; animal: Bull1:W; sureness 100%)
-- Sound: *kāl iru kavar mutu kuṭi*
-- English: two quarters (kāl): of the Branch-Elder house
-- Signs: `820` quarter-share [opener / kāl] · `002` two [opener / iru] · `415` branch [self / kavar] · `100` elder [tag / mutu] · `740` house of [poss / kuṭi]
