@@ -2,7 +2,7 @@
 """HANDS step 1b: the row-by-row judgements of the candidate photos (looked at sheets cand_sheet_01..11 and cand_verify.jpg
 one by one, 2026-11-17) and the tally. Categories: a unfinished (text cut, animal field empty and smooth), b inscription-only
 by design (text fills the face), c worn / broken-away, d animal cut, text field empty, e cannot tell, f hairline sketch: signs drawn in thin scratches, a few cut deep (found at the recut look, recut_sheet_1.jpg)."""
-import sys; sys.path.insert(0, "/home/claude/ivc/work_scripts")
+import sys; sys.path.insert(0, "/home/antigravity/Cuuper22/ivc/work_scripts")
 from hands_common import *
 from math import comb
 J = {  # candidate cisi -> (category, note)

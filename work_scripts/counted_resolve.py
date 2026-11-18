@@ -2,7 +2,7 @@
 Estimate each sign's attraction to a count on either side from the data (EM, fractional ownership), then give each
 count to the side with more ownership. Output: work_data/counted/instances_resolved.csv (same format as instances.csv,
 only owned adjacencies) and owner_rates.csv."""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from counted_common import *
 inst=pd.read_csv(f'{ROOT}/work_data/counted/instances.csv',dtype=str,keep_default_na=False)
 rows=load()

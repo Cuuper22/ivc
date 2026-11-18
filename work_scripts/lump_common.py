@@ -14,7 +14,7 @@ Plain words
 """
 import sys, os
 import numpy as np, pandas as pd
-ROOT = '/home/claude/ivc'; OUT = f'{ROOT}/work_data/lumps'
+ROOT = '/home/antigravity/Cuuper22/ivc'; OUT = f'{ROOT}/work_data/lumps'
 SLOT = {'002', '060', '741', '742', '368', '365'}
 OPEN = {'820', '861', '817', '920', '692', '880', '824', '545', '091', '550', '360', '556', '347', '201', '263'}
 

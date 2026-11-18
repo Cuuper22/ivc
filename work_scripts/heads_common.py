@@ -33,7 +33,7 @@ import numpy as np, pandas as pd
 with contextlib.redirect_stdout(io.StringIO()):
     from chits_common import *          # load, name_rows, jar_parse, ending_label, amount_of, face_type, TITLES, NUM, UNITS, pic, fmt_counter, V2
     from recheck_common import stone_map, pvalue_hi, pvalue_lo
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 HOUT = f'{ROOT}/work_data/heads'; os.makedirs(HOUT, exist_ok=True)
 T0 = time.time()
 

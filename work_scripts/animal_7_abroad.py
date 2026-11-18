@@ -3,7 +3,7 @@ Found by the scan: abroad seals (Gulf, Mesopotamia, Iran, Central Asia) are shor
 PREDICTIONS written before these numbers: if the short-horned bull marks the overseas-trade circuit, then at HOME its seals (a) use the 'abroad' signs man 090 / twin-men 091 / single stroke 001 more than chance, (b) end with the jar 740 less than chance, (c) sit more at the port/coast towns (Lothal, Chanhu-daro, Gola Dhoro, Kalibangan?) - no: predicted at coast sites: Lothal, Chanhu-daro, Gola Dhoro, Nausharo, Allahdino.
 Null: animal labels shuffled inside site x shape x size tercile (a)(b); for (c) Fisher against the other animals.
 """
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from animal_common import *
 from scipy.stats import fisher_exact
 rng=np.random.default_rng(4); NP=5000

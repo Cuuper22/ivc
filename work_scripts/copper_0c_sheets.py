@@ -2,7 +2,7 @@
 """COPPER step 0c: third photo batch, targeted after step 1: copies in sets where a catalogue code disagreed or the
 picture was not yet read (stag set, goat set, tiger set, composite sets, archer set, buffalo set, hare set), and the
 copies said to carry one sign on the picture face. Writes sheets/b3_NN.jpg and photo_sample3.csv."""
-import sys; sys.path.insert(0, '/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from copper_common import *
 from PIL import Image, ImageDraw
 L = load_L(); L = L[(L.site == 'Mohenjo-daro')]

@@ -2,7 +2,7 @@
 Prediction first: 705 (ship / measure) followed within 4 signs by a count then tree-family 390 is enriched on tags/tablets/sealings against seals.
 Reading order = stored reversed."""
 import sys
-sys.path.insert(0,'/home/claude/ivc/work_scripts')
+sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from cotton_common import *
 d=faces()
 rows=[]

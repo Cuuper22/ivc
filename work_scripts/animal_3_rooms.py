@@ -2,7 +2,7 @@
 PREDICTION (written before the numbers): clan reading says same-room pairs share coarse animal above chance by a clear margin (ratio >=1.5); the earlier 12.5% vs 11.0% (all labels) is the baseline to beat.
 Three label sets: coarse animal group (UNI, SHORT, ...), unicorn stand type (W, J, S, I, L, ...) for unicorn seals, and fine = both.
 """
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from animal_common import *
 rng=np.random.default_rng(11); NP=3000
 d=b[(b.room_key!='')&b.depth_ft.notna()&(b.g!='')&(b.g!='NONE')].copy()

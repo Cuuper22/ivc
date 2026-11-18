@@ -51,7 +51,7 @@ SWAPS (lang_m2_swaps.py): lang_m swap rule unchanged, pictures from the blind li
 """
 import re, csv, collections, unicodedata, os
 import numpy as np
-ROOT = '/home/claude/ivc'; OUT = f'{ROOT}/work_data/lang_m2'; LEX = '/tmp/lang_m2/lex'
+ROOT = '/home/antigravity/Cuuper22/ivc'; OUT = f'{ROOT}/work_data/lang_m2'; LEX = '/tmp/lang_m2/lex'
 os.makedirs(OUT, exist_ok=True)
 
 PIC_EN_SYN = {   # lang_m picture term lists (gloss synonyms); a blind noun takes every list it appears in

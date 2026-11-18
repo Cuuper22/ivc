@@ -32,7 +32,7 @@
      P645d: on pots the count before it is 1 or 2.
 """
 import sys, collections, math, statistics
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from holes_common import *
 import pandas as pd
 ls = lines(True)

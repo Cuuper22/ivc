@@ -1,7 +1,7 @@
 """Shared loader for the diamond/measure job. Reading order = stored order reversed."""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 import pandas as pd, collections, re, numpy as np
-ROOT='/home/claude/ivc'
+ROOT='/home/antigravity/Cuuper22/ivc'
 DATA=f'{ROOT}/research/data/open_prototype/lipi/metadata_filtered.csv'
 CNT={}
 for i in range(1,8): CNT[f'{i:03d}']=('S',i)

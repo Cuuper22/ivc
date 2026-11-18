@@ -13,7 +13,7 @@ the same object Lipi lists as a seal (same site, same text, and Lipi has no impr
 Run: python3 recheck_08_countline_impressions.py   (seconds)
 """
 import sys, io, contextlib, collections
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 import numpy as np, pandas as pd
 from scipy.stats import fisher_exact
 from recheck_common import *

@@ -6,7 +6,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import pandas as pd
 import long_common as LC
 from long_common import build_objects, SH, snd, gloss_en, CNT
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 HOLES = f'{ROOT}/work_data/holes'
 os.makedirs(HOLES, exist_ok=True)
 EIGHT = ['060', '335', '711', '525', '692', '842', '611', '645']

@@ -2,7 +2,7 @@
 Sets (shapes from sign_shapes.csv): DEER 340-348 ; ANIMAL255 = 255,256 ; HORN 490,500,502 ; ANIMALLEG 121.
 PREDICTIONS written before numbers: the text sign for an animal is the same word as the seal animal? If the seal animal is the name of the owner's group, the deer signs would sit under the deer-like animals (goat/antelope/composite) and horn signs under bulls (UNI, SHORT, ZEBU). Expect ratio >1.5 in those pairs; otherwise none.
 Null: labels shuffled inside site x shape x size tercile."""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from animal_common import *
 rng=np.random.default_rng(8); NP=5000
 d=b[(b.g!='')&(b.g!='NONE')].copy().reset_index(drop=True)

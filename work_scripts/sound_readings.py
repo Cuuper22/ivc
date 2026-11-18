@@ -7,7 +7,7 @@ import pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from gloss2 import load2, learn, parse_face
 from sound_values import ALL_SOUNDS, OLD
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 chk = pd.read_csv(f'{ROOT}/work_data/sound/checks.csv', dtype=str)
 PASSED = set(chk[chk.came_true == 'yes'].sign) | set(OLD) | {'233', '235', '240', '231'}   # fish: 'mark + mīn' split test came true
 NUM = {f'{i:03d}': i for i in range(1, 8)}; NUM.update({'012': 2}); NUM.update({f'{i:03d}': i - 10 for i in range(13, 19)}); NUM.update({f'{i:03d}': i - 30 for i in range(31, 37)})

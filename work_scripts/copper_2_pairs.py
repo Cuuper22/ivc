@@ -20,7 +20,7 @@ Predictions written 2026-11-17 before the numbers:
       222 or 233, the composite texts share 585 or 597).
 Writes work_data/copper/pairs_A.csv, pairs_B.csv, exceptions.csv, log_2.txt.
 """
-import sys; sys.path.insert(0, '/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from copper_common import *
 say = say_to(f'{OUT}/log_2.txt')
 L = pd.read_csv(f'{OUT}/objects.csv', dtype=str).fillna('')

@@ -15,7 +15,7 @@ RULE (fixed before any score exists)
   5. Number signs (stroke counts) are dropped (they are numbers, not pictures).
 """
 import csv, re, os, collections
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 OUT = f'{ROOT}/work_data/lang_m'; os.makedirs(OUT, exist_ok=True)
 
 # canonical noun -> spellings that may appear in a shape description

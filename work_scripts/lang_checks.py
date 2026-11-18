@@ -1,5 +1,5 @@
 # Checks that the Dravidian sound values predict and the other candidates do not.
-# Reading order = reverse of stored order. Run from /home/claude/ivc:  python3 work_scripts/lang_checks.py
+# Reading order = reverse of stored order. Run from /home/antigravity/Cuuper22/ivc:  python3 work_scripts/lang_checks.py
 #  C1  spear 520 = vel 'spear' ~ vel 'chief, petty ruler' (DEDR 5536/5545): spear-closer seals sit in citadels.
 #  C2  person-with-staff 142 = kol 'staff' ~ ko/kon 'king' (DEDR 2237/2177): 142 seals are larger than other seals.
 #  C3  comb 400 = ciippu/cirppu 'comb' ~ ciru/ciir 'small, young' (DEDR 1610/1594): comb seals are the smallest and

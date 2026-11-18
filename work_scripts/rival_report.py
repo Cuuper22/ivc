@@ -1,4 +1,4 @@
-"""Print the side-by-side tables from the pun-test JSON files (work_data/lexicons/pun_results_*.json). Run from /home/claude/ivc."""
+"""Print the side-by-side tables from the pun-test JSON files (work_data/lexicons/pun_results_*.json). Run from /home/antigravity/Cuuper22/ivc."""
 import json, sys
 def fmt(sm): return f"{sm['hits']}/{sm['slots_with_picture_word']} (chance {sm['expected_len']:.2f}, P {sm['P_len']:.1e})"
 if len(sys.argv) > 1 and sys.argv[1] == "detail": mode_list = ()

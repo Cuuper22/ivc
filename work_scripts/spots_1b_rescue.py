@@ -8,7 +8,7 @@ PREDICTION: W (the large-format stand) is over-represented among managers becaus
 Writes work_data/spots/s1b_log.txt.
 """
 import pandas as pd, numpy as np, collections
-ROOT='/home/claude/ivc'; OUT=f'{ROOT}/work_data/spots'
+ROOT='/home/antigravity/Cuuper22/ivc'; OUT=f'{ROOT}/work_data/spots'
 LOG=open(f'{OUT}/s1b_log.txt','w')
 def say(*a):
     s=' '.join(str(x) for x in a); print(s,flush=True); LOG.write(s+'\n')

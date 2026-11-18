@@ -6,12 +6,12 @@ Run:  python3 decoy_replay_A.py look      -> prints step-1 profiles (Lipi only)
       python3 decoy_replay_A.py run2      -> runs second predictions for the items that did not come true, writes CSV
 """
 import sys, collections, json
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from decoy_loader import *
 import numpy as np, pandas as pd
 from scipy.stats import binomtest
 
-ITEMS = pd.read_csv('/home/claude/ivc/work_data/decoy/test_list.csv', dtype=str).fillna('')
+ITEMS = pd.read_csv('/home/antigravity/Cuuper22/ivc/work_data/decoy/test_list.csv', dtype=str).fillna('')
 NUM = set(VAL)
 
 # ---------------- step 1: Lipi-only look ----------------
@@ -212,7 +212,7 @@ if __name__ == '__main__' and sys.argv[1:] == ['run1']:
         res[i] = dict(item=i, sign=r.sign, word=f"{r.sound} ({r.english})", first_prediction=pred, first_base=fmt(base),
                       first_observed=f"{fmt(out['obs'])} (n={out['n']})", first_P=fmt(out['P']), first_outcome=v)
         print(f"#{i} {r.sign} {r.english}: base {fmt(base)} obs {fmt(out['obs'])} n={out['n']} P={fmt(out['P'])} -> {v}", flush=True)
-    json.dump(res, open('/home/claude/ivc/work_data/decoy/replay_A_stage1.json', 'w'), ensure_ascii=False, indent=1)
+    json.dump(res, open('/home/antigravity/Cuuper22/ivc/work_data/decoy/replay_A_stage1.json', 'w'), ensure_ascii=False, indent=1)
 
 # ---------------- step 4: one redesign for items whose first prediction did not come true ----------------
 HAR_F = {'Harappa': ('F',)}
@@ -263,7 +263,7 @@ SECOND = {
 
 ORDER = {'came true': 3, 'right direction only': 2, 'against': 1, 'too few': 0}
 if __name__ == '__main__' and sys.argv[1:] == ['run2']:
-    res = {int(k): v for k, v in json.load(open('/home/claude/ivc/work_data/decoy/replay_A_stage1.json')).items()}
+    res = {int(k): v for k, v in json.load(open('/home/antigravity/Cuuper22/ivc/work_data/decoy/replay_A_stage1.json')).items()}
     for i in sorted(res):
         R = res[i]
         if R['first_outcome'] == 'came true':
@@ -275,6 +275,6 @@ if __name__ == '__main__' and sys.argv[1:] == ['run2']:
                      final='came true' if v == 'came true' else max([R['first_outcome'], v], key=ORDER.get))
             print(f"#{i} {R['sign']} {R['word']}: base {fmt(base)} obs {fmt(out['obs'])} n={out['n']} P={fmt(out['P'])} -> {v}", flush=True)
     cols = 'item,sign,word,first_prediction,first_base,first_observed,first_P,first_outcome,second_prediction,second_base,second_observed,second_P,second_outcome,final'.split(',')
-    pd.DataFrame([res[i] for i in sorted(res)])[cols].to_csv('/home/claude/ivc/work_data/decoy/replay_A.csv', index=False)
+    pd.DataFrame([res[i] for i in sorted(res)])[cols].to_csv('/home/antigravity/Cuuper22/ivc/work_data/decoy/replay_A.csv', index=False)
     df = pd.DataFrame([res[i] for i in sorted(res)])
     print('first_outcome:', df.first_outcome.value_counts().to_dict()); print('final:', df.final.value_counts().to_dict())

@@ -1,8 +1,8 @@
 """Part 2: X elsewhere. For each candidate X, find every object whose text contains X as a contiguous run (not as a longer name's piece), by group/site/abroad."""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from masters_common import *
 from collections import Counter
-C=pd.read_csv('/home/claude/ivc/work_data/masters/census.csv',dtype=str,keep_default_na=False)
+C=pd.read_csv('/home/antigravity/Cuuper22/ivc/work_data/masters/census.csv',dtype=str,keep_default_na=False)
 def grp(t):
     if t.startswith('SEAL'): return 'seal'
     if t.startswith('TAB:C'): return 'copper'
@@ -26,4 +26,4 @@ if __name__=='__main__':
     P=[]
     for x in cands:
         o,r=profile(x); P.append(o); print(o)
-    pd.DataFrame(P).to_csv('/home/claude/ivc/work_data/masters/candidate_profiles.csv',index=False)
+    pd.DataFrame(P).to_csv('/home/antigravity/Cuuper22/ivc/work_data/masters/candidate_profiles.csv',index=False)

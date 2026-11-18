@@ -4,7 +4,7 @@ import warnings; warnings.filterwarnings('ignore')
 import pandas as pd, numpy as np, collections, random, re, math
 from scipy import stats
 random.seed(11); np.random.seed(11)
-ROOT='/home/claude/ivc'
+ROOT='/home/antigravity/Cuuper22/ivc'
 o=pd.read_csv(f'{ROOT}/work_data/name_rows.csv',dtype=str).fillna('')
 sh=pd.read_csv(f'{ROOT}/work_data/sign_shapes.csv',dtype=str).set_index('lipi_wells_number').shape_description.to_dict()
 def W(s,n=30): return f'{s} [{sh.get(s,"?")[:n]}]'

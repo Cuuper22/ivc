@@ -39,7 +39,7 @@ from gloss2 import WORDS
 from gloss import A_VARIANTS
 import pandas as pd
 
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 M = pd.read_csv(f'{ROOT}/work_data/values_master.csv', dtype=str).fillna('')
 MAS = M.set_index('sign')
 READ = {s for s, st in zip(M.sign, M.status) if st in ('strict', 'wide')}

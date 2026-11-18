@@ -16,7 +16,7 @@ its 20 decoys rescored.
 Run: python3 recheck_12_frame_newtexts.py   (several minutes; run in the background)
 """
 import sys, io, contextlib, collections
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from recheck_common import log_to, OUT, stone_map, ROOT
 say = log_to(f'{OUT}/r12_log.txt')
 with contextlib.redirect_stdout(io.StringIO()):

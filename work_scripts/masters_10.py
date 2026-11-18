@@ -1,9 +1,9 @@
 """Part 2: tablet-head X's against the trench they come from and the cup count on the back."""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from masters_common import *
 from collections import Counter
 import numpy as np, random
-H=pd.read_csv('/home/claude/ivc/work_data/masters/tablet_heads.csv',dtype=str,keep_default_na=False)
+H=pd.read_csv('/home/antigravity/Cuuper22/ivc/work_data/masters/tablet_heads.csv',dtype=str,keep_default_na=False)
 H=H[H.grp=='tablet'].copy()
 def cup(b):
     for s in b.split('|'):

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Forty surest whole readings under the second sound list; writes /home/claude/ivc/READINGS.md.
+"""Forty surest whole readings under the second sound list; writes /home/antigravity/Cuuper22/ivc/READINGS.md.
 A text qualifies when it is complete and every sign is a number, a base value, or a value in the 'building' tier
 (work_data/sound_v2/values_v2.csv); the cap mark 060 is read only inside the `920-060-jar+n` office prefix.
 Ranked by how many objects carry the exact text, then sites, then length; one entry per text."""

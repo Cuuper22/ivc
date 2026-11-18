@@ -3,7 +3,7 @@
 names on the other seals of the same house, against chance (house labels shuffled among seals of the same area and 3-ft depth band)?
 One head per house? Heads in bigger houses?  Output tables work_data/endings/B_*.csv"""
 import pandas as pd, numpy as np, collections, re
-R='/home/claude/ivc'
+R='/home/antigravity/Cuuper22/ivc'
 f=pd.read_csv(f'{R}/work_data/endings/faces.csv',dtype=str,keep_default_na=False)
 f=f[(f.isseal=='True')&(f.site=='Mohenjo-daro')].copy()
 f['face']=pd.to_numeric(f.face,errors='coerce')

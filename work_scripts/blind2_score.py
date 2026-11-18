@@ -18,7 +18,7 @@ For each reader and for all readers pooled it prints:
   agreement: share of items where two readers chose the same best letter (chance about 25%), and share of items where at least two readers
     picked the real line (and where all picked it)."""
 import csv, sys, os, itertools, collections
-D = '/home/claude/ivc/work_data/blind2'
+D = '/home/antigravity/Cuuper22/ivc/work_data/blind2'
 LET = 'abcd'
 
 def pb_tail(ps, k):

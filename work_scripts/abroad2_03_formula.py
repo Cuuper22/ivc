@@ -3,7 +3,7 @@
  P5 fibre signs (405,407) sit next to the man sign (090) on foreign round seals (Susa, Ur): 2 of 2. At home fibre signs next to 090 are rarer than on those two.
  P6 a tree sign directly after 004 abroad: 3 of 6 places, home 39 of 90."""
 import sys
-sys.path.insert(0,'/home/claude/ivc/work_scripts')
+sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from cotton_common import *
 from scipy.stats import binomtest
 d=faces()

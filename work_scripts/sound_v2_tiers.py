@@ -5,7 +5,7 @@ import os, sys
 import pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from sound_values import VALUES, OLD
-OUT = '/home/claude/ivc/work_data/sound_v2'
+OUT = '/home/antigravity/Cuuper22/ivc/work_data/sound_v2'
 
 # sign -> (sound, English)
 V2 = {s: (snd, gl) for (s, pic, pw, jw, snd, gl, kind, t) in VALUES}

@@ -16,7 +16,7 @@ import pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from gloss import load, parse_row, OPENERS, COUNTS, A_VARIANTS, CAP_HEADS, CAP_SEL, lexicon_from, gloss_text, is_parsed
 
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 SHAPES = f'{ROOT}/work_data/sign_shapes.csv'
 RATES = f'{ROOT}/work_data/counted/owner_rates.csv'
 

@@ -1,6 +1,6 @@
 """DEDR grep: python3 holes_dedr.py 'regex' [maxhits] ; looks at Tamil-headed entries (first 400 chars)."""
 import re, sys, unicodedata
-P = '/home/claude/ivc/work_data/lexicons/dedr/dedr_entries.tsv'
+P = '/home/antigravity/Cuuper22/ivc/work_data/lexicons/dedr/dedr_entries.tsv'
 E = [l.rstrip('\n').split('\t', 1) for l in open(P, encoding='utf8')]
 def grep(rx, k=14, n=230, anyhead=False):
     r = re.compile(rx, re.I); out = []

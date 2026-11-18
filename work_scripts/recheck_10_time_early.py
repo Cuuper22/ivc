@@ -14,7 +14,7 @@ swelling a share. Clean run: stones merged, copy events once.
 Run: python3 recheck_10_time_early.py   (about 1-2 minutes)
 """
 import sys, io, contextlib
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 import numpy as np, pandas as pd
 from scipy.stats import fisher_exact
 from recheck_common import *

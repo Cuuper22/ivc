@@ -1,5 +1,5 @@
 """Commodity table from resolved counts: one row per counted thing (n>=12 owned 'n X' counts, or X n counts)."""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from counted_common import *
 import math
 d=pd.read_csv(f'{ROOT}/work_data/counted/instances_resolved.csv',dtype=str,keep_default_na=False)

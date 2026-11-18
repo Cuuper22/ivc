@@ -14,7 +14,7 @@ Predictions written before running:
 """
 import collections, re, time
 import numpy as np, pandas as pd
-ROOT = '/home/claude/ivc'; OUT = f'{ROOT}/work_data/stamps'
+ROOT = '/home/antigravity/Cuuper22/ivc'; OUT = f'{ROOT}/work_data/stamps'
 rng = np.random.default_rng(41); T0 = time.time()
 O = pd.read_csv(f'{OUT}/objects.csv', dtype=str).fillna('')
 O['n'] = O.n.astype(int); O['lost'] = O.lost.astype(int)

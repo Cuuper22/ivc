@@ -2,7 +2,7 @@
 """Second pass for master/servant pairs: all object types, broken texts allowed when the name before the jar is intact,
 three match levels. Writes work_data/possessive/master_servant_pairs_wide.csv."""
 import sys, collections
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 import numpy as np, pandas as pd
 from gloss2 import *
 d = load2(); lex = learn(d); own = lex['owner']
@@ -45,7 +45,7 @@ for lv, f in levels.items():
             if lv != 'exact name' and o['name'] == s['name']: continue
             out.append(dict(level=lv, servant_name='-'.join(s['name']), servant_cisi=s.cisi, servant_site=s.site, servant_house=s.house, servant_type=s.type, servant_text=s.text,
                             owner_name='-'.join(o['name']), owner_cisi=o.cisi, owner_site=o.site, owner_house=o.house, owner_type=o.type, owner_text=o.text, place=place(s, o)))
-O = pd.DataFrame(out); O.to_csv('/home/claude/ivc/work_data/possessive/master_servant_pairs_wide.csv', index=False)
+O = pd.DataFrame(out); O.to_csv('/home/antigravity/Cuuper22/ivc/work_data/possessive/master_servant_pairs_wide.csv', index=False)
 for lv in levels:
     s = O[O.level == lv]
     print(lv, 'pairs', len(s), 'servants matched', s.servant_cisi.nunique(), 'of', len(srv), s.place.value_counts().to_dict())
@@ -68,7 +68,7 @@ print('multi-sign owners with another owner of same name', hit, 'of', len(mo))
 e = O[(O.level == 'exact name') & (O.servant_name.str.count('-') >= 1)]
 rank = {'same house': 0, 'same area': 1, 'same site': 2, 'other site': 3}
 e = e.assign(r=e.place.map(rank)).sort_values(['r', 'servant_name'])
-e.drop(columns='r').to_csv('/home/claude/ivc/work_data/possessive/master_servant_pairs_multisign.csv', index=False)
+e.drop(columns='r').to_csv('/home/antigravity/Cuuper22/ivc/work_data/possessive/master_servant_pairs_multisign.csv', index=False)
 print('multi-sign exact pairs', len(e), 'servants', e.servant_cisi.nunique(), e.place.value_counts().to_dict())
 print(e[['servant_name','servant_cisi','servant_site','servant_house','owner_cisi','owner_site','owner_house','place']].to_string())
 # animals / zones

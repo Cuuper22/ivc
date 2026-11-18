@@ -9,7 +9,7 @@ import sys, os, re, io, collections, random
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import numpy as np, pandas as pd
 from PIL import Image, ImageDraw, ImageFont
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 OUT = f'{ROOT}/work_data/hands'; os.makedirs(OUT, exist_ok=True)
 IMG = f'{ROOT}/evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images'
 FILES = set(os.listdir(IMG))

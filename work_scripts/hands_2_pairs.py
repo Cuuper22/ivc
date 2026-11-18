@@ -20,7 +20,7 @@ the same area, 60 pairs from different areas; no seal used more than twice; seed
 PREDICTIONS (written first): text-sharing pairs alike (same or near) 25-35 percent, control 10-18 percent. Mohenjo-daro
 same-building alike about 25 percent, other buildings in the same area about 18 percent, different areas about 15 percent;
 so a building does NOT get its seals from one cutter (gap under 10 points)."""
-import sys; sys.path.insert(0, "/home/claude/ivc/work_scripts")
+import sys; sys.path.insert(0, "/home/antigravity/Cuuper22/ivc/work_scripts")
 from hands_common import *
 S = load(); S['n'] = S.n.astype(int)
 tally = pd.read_csv(f'{ROOT}/work_data/twins/photo_tally.csv', dtype=str)

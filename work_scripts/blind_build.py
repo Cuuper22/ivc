@@ -24,7 +24,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import corpus_build2 as cb
 from sound_v4_common import d, lex, parse_face
 
-ROOT = '/home/claude/ivc'; OUT = f'{ROOT}/work_data/blind'
+ROOT = '/home/antigravity/Cuuper22/ivc'; OUT = f'{ROOT}/work_data/blind'
 SEED_S1, SEED_S2, SEED_S3 = 20261201, 20261202, 20261203     # seeds of the three scrambled tables
 SEED_DRAW = 20261204                                          # seed of the draw of 60 inscriptions
 SEED_ORDER = 20261205                                         # seed of the order of the 240 lines

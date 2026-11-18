@@ -19,7 +19,7 @@ SKELETON: the normalised form with the vowels a e i o u removed.
 Output: work_data/lang_m/lex/<dict>.tsv  and  work_data/lang_m/lex_sizes.csv
 """
 import os, re, csv, json, unicodedata, collections
-ROOT = '/home/claude/ivc'; LX = f'{ROOT}/work_data/lexicons'; OUT = f'{ROOT}/work_data/lang_m'; RAW = f'{OUT}/raw'
+ROOT = '/home/antigravity/Cuuper22/ivc'; LX = f'{ROOT}/work_data/lexicons'; OUT = f'{ROOT}/work_data/lang_m'; RAW = f'{OUT}/raw'
 os.makedirs(f'{OUT}/lex', exist_ok=True)
 def log(*a): print('[lang_m_lexicons]', *a, flush=True)
 

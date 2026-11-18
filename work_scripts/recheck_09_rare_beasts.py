@@ -13,7 +13,7 @@ the same city x format), so the 91-odd pairs stay fixed and only the species mov
 Run: python3 recheck_09_rare_beasts.py   (about 1 minute)
 """
 import sys, io, contextlib
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 import numpy as np, pandas as pd
 from recheck_common import *
 say = log_to(f'{OUT}/r09_log.txt')

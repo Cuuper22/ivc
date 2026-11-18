@@ -1,9 +1,9 @@
 """Part 4: openers by role, city, era; do seals of one X share the opener?"""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from masters_common import *
 from collections import Counter
 import random, itertools
-C=pd.read_csv('/home/claude/ivc/work_data/masters/census.csv',dtype=str,keep_default_na=False)
+C=pd.read_csv('/home/antigravity/Cuuper22/ivc/work_data/masters/census.csv',dtype=str,keep_default_na=False)
 S=C[C.grp=='seal'].copy()
 S['role']=S.noun.map(lambda n:{'none':'owner','090':'man','400':'comb'}.get(n,'other-noun'))
 print(pd.crosstab(S.role,S.opener).to_string()); 

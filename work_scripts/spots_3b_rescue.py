@@ -9,7 +9,7 @@ Writes work_data/spots/s3b_log.txt.
 """
 import pandas as pd, numpy as np, re
 from scipy.stats import spearmanr
-ROOT='/home/claude/ivc'; OUT=f'{ROOT}/work_data/spots'
+ROOT='/home/antigravity/Cuuper22/ivc'; OUT=f'{ROOT}/work_data/spots'
 LOG=open(f'{OUT}/s3b_log.txt','w')
 def say(*a):
     s=' '.join(str(x) for x in a); print(s,flush=True); LOG.write(s+'\n')

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Writes the report table of round seals (one row per object) from work_data/round/round_list.csv. Output: work_data/round/round_table.md"""
 import pandas as pd, os
-R = '/home/claude/ivc/work_data/round'
+R = '/home/antigravity/Cuuper22/ivc/work_data/round'
 L = pd.read_csv(f'{R}/round_list.csv', dtype=str).fillna('')
 def clean(x): return '' if x in ('-', '--', '0', '0.0', 'nan') else x
 rows = []

@@ -8,7 +8,7 @@ the same, or worse (sense > odd > nonsense), with an exact two-sided sign test P
 Run: python3 blind_score.py            (only after grades.csv exists)"""
 import csv, sys, collections
 from math import comb
-D = '/home/claude/ivc/work_data/blind'
+D = '/home/antigravity/Cuuper22/ivc/work_data/blind'
 RANK = {'sense': 2, 'odd': 1, 'nonsense': 0}
 TABLES = ['real', 'S1', 'S2', 'S3']
 NAMES = {'real': 'real table', 'S1': 'S1 free shuffle', 'S2': 'S2 shuffle within slot class', 'S3': 'S3 shuffle within frequency band'}

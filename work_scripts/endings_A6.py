@@ -2,7 +2,7 @@
 """A6: size controlled for sign count; do houses (Mohenjo-daro area+block-house) keep one ending or mix?"""
 import pandas as pd, numpy as np, collections, re
 from scipy import stats
-R='/home/claude/ivc'
+R='/home/antigravity/Cuuper22/ivc'
 d=pd.read_csv(f'{R}/work_data/endings/A5_seals.csv',dtype=str,keep_default_na=False)
 d['face']=pd.to_numeric(d.face,errors='coerce'); d['ntok']=d.reading_order_text.str.split('-').str.len()
 x=d[d.face.notna()&d.E.isin(['jar','jar+man','spear','porter','comb'])].copy()

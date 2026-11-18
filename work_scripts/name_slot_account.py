@@ -4,7 +4,7 @@
 import warnings; warnings.filterwarnings('ignore')
 import pandas as pd, numpy as np, collections, itertools, random, re
 random.seed(5)
-ROOT='/home/claude/ivc'
+ROOT='/home/antigravity/Cuuper22/ivc'
 o=pd.read_csv(f'{ROOT}/work_data/name_rows.csv',dtype=str).fillna('')
 sh=pd.read_csv(f'{ROOT}/work_data/sign_shapes.csv',dtype=str).set_index('lipi_wells_number').shape_description.to_dict()
 for c in ['tight','has_class']: o[c]=o[c]=='True'
@@ -114,5 +114,5 @@ for n_,c,h,dp,sym,toks,roles,seg in out:
     cl=[f'{t} {w(t)}' for t,ro in zip(toks,roles) if ro in('class',)]
     tail=[f'{t} {w(t)}' for t,ro in zip(toks,roles) if ro=='class-tail']
     lines.append(f'| {n_} | {c} | {h} ({dp.strip()}) | {sym or "none"} | {pre or "none"} | '+' ; '.join(nm)+' | '+(cl[-1] if cl else '?')+f' | {"-".join(toks)} |')
-open('/home/claude/ivc/jobs/out/name_slot_tabs/seals25.md','w').write('\n'.join(lines))
+open('/home/antigravity/Cuuper22/ivc/jobs/out/name_slot_tabs/seals25.md','w').write('\n'.join(lines))
 for x in out: print(x[0],x[1],x[2],x[3],x[4],'|','-'.join(x[5]),'|',' '.join(x[6]))

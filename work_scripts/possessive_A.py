@@ -2,11 +2,11 @@
 """Part A of the possessive model: what follows the jar, servant vs owner seals, master-servant pairs.
 Writes work_data/possessive/*.csv and prints tables used in jobs/out/possessive_model.md."""
 import sys, os, collections, itertools
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 import numpy as np, pandas as pd
 from scipy import stats
 from gloss2 import *
-OUT = '/home/claude/ivc/work_data/possessive'; os.makedirs(OUT, exist_ok=True)
+OUT = '/home/antigravity/Cuuper22/ivc/work_data/possessive'; os.makedirs(OUT, exist_ok=True)
 d = load2(); lex = learn(d); own = lex['owner']
 d['r'] = [parse_face(x, lex, own) for x in d.tok]
 d['h'] = pd.to_numeric(d['horizontal(mm)'], errors='coerce'); d['v'] = pd.to_numeric(d['vertical(mm)'], errors='coerce')

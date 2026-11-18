@@ -15,7 +15,7 @@ tablets spread the comb over up to 20 names by chance while in the data they are
 Run: python3 recheck_14_chits.py   (about 1-2 minutes)
 """
 import sys, io, contextlib, collections
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 import numpy as np, pandas as pd
 from recheck_common import *
 say = log_to(f'{OUT}/r14_log.txt')

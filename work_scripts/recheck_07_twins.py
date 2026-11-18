@@ -13,7 +13,7 @@ as many pairs.
 Run: python3 recheck_07_twins.py   (about 2 minutes)
 """
 import sys, itertools, collections
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 import numpy as np, pandas as pd
 from recheck_common import *
 say = log_to(f'{OUT}/r07_log.txt')

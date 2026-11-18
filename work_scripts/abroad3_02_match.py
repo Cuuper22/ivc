@@ -3,7 +3,7 @@ Prediction first: (a) if the photograph's five signs are right, at least one hom
 (b) objects sharing 3+ signs in order are goods tags / craft-town objects, with unicorn or bull as animal on most.
 Query is in reading order (toks column is reading order)."""
 import sys
-sys.path.insert(0,'/home/claude/ivc/work_scripts')
+sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from cotton_common import *
 import itertools, csv
 Q=['127','705','002','004','390']
@@ -37,7 +37,7 @@ for _,r in d.iterrows():
     if len(s)>=3 or len(c)>=3:
         rows.append(dict(id=r.id,cisi=r.cisi,site=r.site,type=r.type,material=r.material,animal=r.symbol,text=' '.join(t),shared_in_order=' '.join(s),n_shared=len(s),contig=' '.join(c),n_contig=len(c)))
 out=pd.DataFrame(rows).sort_values(['n_contig','n_shared'],ascending=False)
-out.to_csv('/home/claude/ivc/work_data/abroad3/home_matches_3plus.csv',index=False)
+out.to_csv('/home/antigravity/Cuuper22/ivc/work_data/abroad3/home_matches_3plus.csv',index=False)
 print(len(out),'home faces share >=3 signs in order (subsequence) or contiguous')
 print(out.n_shared.value_counts().to_dict(), out.n_contig.value_counts().to_dict())
 pd.set_option('display.width',250,'display.max_colwidth',60,'display.max_rows',200)

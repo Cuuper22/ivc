@@ -14,7 +14,7 @@ import sys, os, re, collections, json
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import pandas as pd, numpy as np
 from sense_common import *
-ROOT = '/home/claude/ivc'; OUT = f'{ROOT}/work_data/sense'
+ROOT = '/home/antigravity/Cuuper22/ivc'; OUT = f'{ROOT}/work_data/sense'
 MAXS = 25
 def log(*a): print('[sense_build]', *a, flush=True)
 V = pd.read_csv(f'{ROOT}/work_data/values_master4.csv', dtype=str).fillna('')

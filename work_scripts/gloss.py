@@ -8,7 +8,7 @@ Import: from gloss import load, Lexicon, gloss_text
 import re, sys, collections, os
 import pandas as pd
 
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 DATA = f'{ROOT}/research/data/open_prototype/lipi/metadata_filtered.csv'
 SHAPES = f'{ROOT}/work_data/sign_shapes.csv'
 

@@ -1,7 +1,7 @@
 """New idea from the cuneiform side: Ur III cloth is graded 1..5 ('N-kam us2', e.g. CM 26,136 line 1, fourth grade). If the number before a tree sign is a cloth GRADE it should sit in 1..5 and 1-2 should be common; if it is a LOT COUNT it should run 3 to 8 and avoid 1-2.
 Prediction first: against the grade idea (earlier job: 96% of counts before 390 are 3 or more)."""
 import sys
-sys.path.insert(0,'/home/claude/ivc/work_scripts')
+sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from cotton_common import *
 d=faces()
 for tree in ['390','405','407']:

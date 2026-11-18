@@ -26,10 +26,10 @@ Plain words
 Writes work_data/lumps/impressions.csv and lumps.csv.
 """
 import sys, os, re, collections
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 import numpy as np, pandas as pd
 from front_common import load, front_set, parse, V2, NUMS, CLOSERS, TITLES, SLOT
-ROOT = '/home/claude/ivc'; OUT = f'{ROOT}/work_data/lumps'
+ROOT = '/home/antigravity/Cuuper22/ivc'; OUT = f'{ROOT}/work_data/lumps'
 print('loading first catalogue ...', flush=True)
 D = load()
 F, _, _, _ = front_set(D, say=lambda *a: None)

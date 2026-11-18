@@ -3,7 +3,7 @@
 usage: python3 sound_dedr.py word1 word2 ...   -> entry numbers + opening of each entry that has the
 word as a whole token in its Tamil (Ta.) part."""
 import re, sys, unicodedata
-F = '/home/claude/ivc/work_data/lexicons/dedr/dedr_entries.tsv'
+F = '/home/antigravity/Cuuper22/ivc/work_data/lexicons/dedr/dedr_entries.tsv'
 E = []
 for line in open(F, encoding='utf-8'):
     if '\t' in line:

@@ -13,7 +13,7 @@ from scipy.stats import mannwhitneyu, binomtest, fisher_exact
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from gloss2 import load2, learn, parse_face, CNT
 
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 rng = np.random.default_rng(11)
 SHORT = {f'{i:03d}' for i in range(1, 8)} | {'012'} | {f'{i:03d}' for i in range(13, 19)}
 TALL = {f'{i:03d}' for i in range(31, 37)}

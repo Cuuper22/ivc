@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """lang_m: turns grid.csv and swap_grid.csv into the markdown tables of jobs/out/language_machine.md (work_data/lang_m/tables.md)."""
 import csv
-OUT = '/home/claude/ivc/work_data/lang_m'
+OUT = '/home/antigravity/Cuuper22/ivc/work_data/lang_m'
 g = list(csv.DictReader(open(f'{OUT}/grid.csv'))); s = list(csv.DictReader(open(f'{OUT}/swap_grid.csv')))
 L = []
 def p(x): return f'{float(x):.3f}'.rstrip('0').rstrip('.') if float(x) < 1 else '1'

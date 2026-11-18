@@ -14,7 +14,7 @@ from gloss import A_VARIANTS
 from gloss2 import load2, learn, parse_face, CNT, NOUN, CARRIED, RELATION, ENDINGS, WORDS
 from sound_v2_tiers import V2, CLASS, TIER
 
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 DATA = f'{ROOT}/research/data/open_prototype/lipi/metadata_filtered.csv'
 OUTDIR = f'{ROOT}/work_data/long_texts'
 os.makedirs(OUTDIR, exist_ok=True)

@@ -15,7 +15,7 @@ Numbers computed below: left-neighbour closedness, class match left/right, chain
 counts left of 060, counts right, records vs seals, second catalogue repeat.
 """
 import sys, collections, math
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from holes_common import *
 ls = lines(True)
 FISH = {'220','235','240','233','231','226','236'}

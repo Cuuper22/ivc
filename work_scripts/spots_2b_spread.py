@@ -10,7 +10,7 @@ Writes work_data/spots/s2b_*.csv and s2b_log.txt.  Run: python3 spots_2b_spread.
 import os, random, collections
 import numpy as np, pandas as pd
 random.seed(5); np.random.seed(5)
-ROOT = '/home/claude/ivc'; OUT = f'{ROOT}/work_data/spots'
+ROOT = '/home/antigravity/Cuuper22/ivc'; OUT = f'{ROOT}/work_data/spots'
 LOG = open(f'{OUT}/s2b_log.txt', 'w')
 def say(*a):
     s = ' '.join(str(x) for x in a); print(s, flush=True); LOG.write(s + '\n')

@@ -10,7 +10,7 @@ Writes work_data/stamps/city_texts.csv, city_links.csv; stdout -> log_3.txt
 """
 import collections, itertools, time
 import numpy as np, pandas as pd
-ROOT = '/home/claude/ivc'; OUT = f'{ROOT}/work_data/stamps'
+ROOT = '/home/antigravity/Cuuper22/ivc'; OUT = f'{ROOT}/work_data/stamps'
 T0 = time.time()
 def log(*a): print(f'[stamps_3 {time.time()-T0:6.1f}s]', *a, flush=True)
 rng = np.random.default_rng(23)

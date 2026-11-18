@@ -3,11 +3,11 @@ Prediction first: (a) foreign seals skew to lot labels (a count right before a t
 Statement kinds: LOT (has a counted thing), NAME-POSS (ends in the jar: 'of the house of X'), NAME (name parts only, no jar), TITLE/OFFICE (ends in a class sign: man, spear, carrier, comb), MIXED (name + lot).
 Uses the gloss2 parser's template column; reads English from values_master."""
 import sys, csv, collections
-sys.path.insert(0,'/home/claude/ivc/work_scripts')
+sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from cotton_common import *
-OUTD='/home/claude/ivc/work_data/abroad2'
-g=pd.read_csv('/home/claude/ivc/work_data/gloss2_all.csv',dtype=str,keep_default_na=False)
-vm=pd.read_csv('/home/claude/ivc/work_data/values_master.csv',dtype=str,keep_default_na=False).set_index('sign')
+OUTD='/home/antigravity/Cuuper22/ivc/work_data/abroad2'
+g=pd.read_csv('/home/antigravity/Cuuper22/ivc/work_data/gloss2_all.csv',dtype=str,keep_default_na=False)
+vm=pd.read_csv('/home/antigravity/Cuuper22/ivc/work_data/values_master.csv',dtype=str,keep_default_na=False).set_index('sign')
 d=faces(); 
 fs={'Altyn Depe','Failaka','Girsu','Gonur Depe','Hajar','Janabiyah','Kalba','Karzakan','Kish','Luristan','Miri Qalat','Murda Sang','Nippur',"Qala'at al-Bahrain","Ra's al-Junayz",'Saar','Salut','Shortughai','Sibri','Susa','Tell Umma','Tello','Tepe Yahya','Ur','Unknown','Ornach area','Nindowari-damb'}
 d=d.merge(g[['id','template','ending_kind','gloss']],on='id',how='left')

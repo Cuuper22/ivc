@@ -1,8 +1,8 @@
 """Part 2: tablets headed by X jar [noun]: what is on the other face, where. Part 1 add-on: agent-specific first signs."""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from masters_common import *
 from collections import Counter
-C=pd.read_csv('/home/claude/ivc/work_data/masters/census.csv',dtype=str,keep_default_na=False)
+C=pd.read_csv('/home/antigravity/Cuuper22/ivc/work_data/masters/census.csv',dtype=str,keep_default_na=False)
 # first-sign enrichment
 man=C[(C.noun=='090')&(C.grp=='seal')]; own=C[(C.noun=='none')&(C.grp=='seal')]
 fs=lambda df:Counter(x.split('-')[0] for x in df.X)
@@ -22,7 +22,7 @@ for r in T.itertuples():
     b=backs(r.object,r.id)
     rows.append(dict(id=r.id,cisi=r.cisi,site=r.site,grp=r.grp,type=r.type,X=r.X,noun=r.noun,area=r._asdict()['_16'] if False else '',back='|'.join(b)))
 T2=pd.DataFrame(rows).merge(M[['id','area-section','block-house','period','material']],on='id')
-T2.to_csv('/home/claude/ivc/work_data/masters/tablet_heads.csv',index=False)
+T2.to_csv('/home/antigravity/Cuuper22/ivc/work_data/masters/tablet_heads.csv',index=False)
 def cupcount(b):
     for s in b.split('|'):
         t=s.split('-')

@@ -10,7 +10,7 @@ Plain words as in the scripts named. Checks: (1) faces as objects, (2) shuffle p
 Run: python3 recheck_13_other_pairs.py   (about 2 minutes)
 """
 import sys, re, csv, collections, random, io, contextlib
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 import numpy as np, pandas as pd
 from recheck_common import *
 say = log_to(f'{OUT}/r13_log.txt')

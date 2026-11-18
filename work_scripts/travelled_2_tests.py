@@ -3,7 +3,7 @@ Reading order = stored order reversed (gloss2_all is already in reading order). 
 Run: python3 travelled_2_tests.py"""
 import pandas as pd, numpy as np, re, random, collections, math
 from scipy import stats
-R='/home/claude/ivc/'
+R='/home/antigravity/Cuuper22/ivc/'
 random.seed(7); np.random.seed(7)
 G=pd.read_csv(R+'work_data/gloss2_all.csv',dtype=str)
 M=pd.read_csv(R+'research/data/open_prototype/lipi/metadata_filtered.csv',dtype=str)

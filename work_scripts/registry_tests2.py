@@ -24,7 +24,7 @@ import collections, random, re
 import pandas as pd, numpy as np
 from scipy.stats import fisher_exact, mannwhitneyu
 random.seed(11)
-ROOT = '/home/claude/ivc'; OUT = f'{ROOT}/work_data/registry'
+ROOT = '/home/antigravity/Cuuper22/ivc'; OUT = f'{ROOT}/work_data/registry'
 LOG = open(f'{OUT}/tests2.txt', 'w')
 def say(*a):
     s = ' '.join(str(x) for x in a); print(s, flush=True); LOG.write(s + '\n')

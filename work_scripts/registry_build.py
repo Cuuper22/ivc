@@ -26,7 +26,7 @@ with contextlib.redirect_stdout(io.StringIO()):
     from sound_v4_common import d, CNT
 import pandas as pd, numpy as np
 
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 OUT = f'{ROOT}/work_data/registry'; os.makedirs(OUT, exist_ok=True)
 V3 = pd.read_csv(f'{ROOT}/work_data/values_master3.csv', dtype=str).fillna('')
 V2 = pd.read_csv(f'{ROOT}/work_data/values_master2.csv', dtype=str).fillna('')

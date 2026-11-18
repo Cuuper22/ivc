@@ -20,7 +20,7 @@ Output: work_data/lang_m/jobs.csv (sign, nouns, job, occurrences, role counts, s
 import sys, os, csv, collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import v2_common as v
-ROOT = '/home/claude/ivc'; OUT = f'{ROOT}/work_data/lang_m'
+ROOT = '/home/antigravity/Cuuper22/ivc'; OUT = f'{ROOT}/work_data/lang_m'
 def log(*a): print('[lang_m_jobs]', *a, flush=True)
 
 faces = [(tuple(x), p['roles']) for x, p, _, _ in v.faces_all('LM')]

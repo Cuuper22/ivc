@@ -1,5 +1,5 @@
 import sys,collections as C
-sys.path.insert(0,'/home/claude/ivc/work_scripts')
+sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from carrier_load import load
 rows=load()
 A={f'{i:03d}' for i in range(465,476)}

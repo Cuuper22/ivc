@@ -8,7 +8,7 @@ Second fix: the old table had one row per FACE, so two faces of one stone made a
 PREDICTION (fixed first): with the proper deal the chance rises to about 28% and the room excess shrinks; if the
 real share stays near 38% the room effect stands (ratio about 1.35), if it is near 30% it was the null.
 """
-import sys; sys.path.insert(0, '/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from animal_common import *
 rng = np.random.default_rng(5)
 d = b[(b.g == 'UNI') & b.stand_sfx.isin(['W', 'J', 'S', 'I', 'L'])].copy().reset_index(drop=True)

@@ -3,7 +3,7 @@
 (name, amount, trench)), and what is left when each name gives at most one same-amount pair per site.
 Run: python3 recheck_06b_keep_pairs.py (seconds)"""
 import sys, collections
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 import pandas as pd
 from recheck_common import *
 say = log_to(f'{OUT}/r06b_log.txt')

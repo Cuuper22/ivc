@@ -3,7 +3,7 @@
 object kind (identical texts once, with copies and ids), then the 100 most common PART inscriptions.
 Run after corpus_build2.py."""
 import pandas as pd, collections
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 c = pd.read_csv(f'{ROOT}/work_data/corpus_english2.csv', dtype=str).fillna('')
 G = ['whole', 'part', 'damaged', 'none']
 tot = c.grade.value_counts()

@@ -4,7 +4,7 @@ Image files on that page: /sites/default/files/styles/large/public/umma-seal-imp
 The pane screenshot was copied to work_data/abroad3/umma_front_screenshot.jpg (792 px wide); this script makes the enlarged crops that were read.
 Prediction first: the strokes show one row of five signs in the order 127 705 002 004 390 (right to left on the sealing)."""
 from PIL import Image, ImageOps
-D='/home/claude/ivc/work_data/abroad3/'
+D='/home/antigravity/Cuuper22/ivc/work_data/abroad3/'
 im=Image.open(D+'umma_front_screenshot.jpg').convert('L')
 def crop(box,k,name,eq=False):
     c=im.crop(box); c=ImageOps.equalize(c) if eq else ImageOps.autocontrast(c,cutoff=1)

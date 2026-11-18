@@ -3,8 +3,8 @@
 testing, paused.  Writes work_data/sound_v3/values_v3.csv.  Import: from sound_v3_values import V3, TIER3"""
 import os, sys, csv
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-OUT3 = '/home/claude/ivc/work_data/sound_v3'
-rows = list(csv.DictReader(open('/home/claude/ivc/work_data/sound_v2/values_v2.csv')))
+OUT3 = '/home/antigravity/Cuuper22/ivc/work_data/sound_v3'
+rows = list(csv.DictReader(open('/home/antigravity/Cuuper22/ivc/work_data/sound_v2/values_v2.csv')))
 V3 = {r['sign']: (r['sound'], r['english']) for r in rows}
 TIER3 = {r['sign']: r['tier'] for r in rows}
 OLDTIER = dict(TIER3)

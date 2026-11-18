@@ -5,9 +5,9 @@ Predictions written first:
  P3 the box-tree pair 590-390 abroad (Kish, Gonur, unprovenanced 3335) keeps the name use (jar after) as at home.
 Reading order = stored order reversed (goods_common). Output tables work_data/abroad2/."""
 import sys
-sys.path.insert(0,'/home/claude/ivc/work_scripts')
+sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from cotton_common import *
-OUTD='/home/claude/ivc/work_data/abroad2'
+OUTD='/home/antigravity/Cuuper22/ivc/work_data/abroad2'
 d=faces()
 TREE={'390','392','405','406','407'}
 fsites={'Altyn Depe','Failaka','Girsu','Gonur Depe','Hajar','Janabiyah','Kalba','Karzakan','Kish','Luristan','Miri Qalat','Murda Sang','Nippur',"Qala'at al-Bahrain","Ra's al-Junayz",'Saar','Salut','Shortughai','Sibri','Susa','Tell Umma','Tello','Tepe Yahya','Ur','Unknown','Ornach area','Nindowari-damb'}

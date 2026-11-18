@@ -1,10 +1,10 @@
 """Checks behind the institution table: animals per X, 176, 048, 590-390, copper tablet spread, Lothal tag areas, first-sign tag test."""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from masters_common import *
 from collections import Counter
 import random, itertools
 from scipy.stats import fisher_exact
-C=pd.read_csv('/home/claude/ivc/work_data/masters/census.csv',dtype=str,keep_default_na=False); C['face']=C.face.astype(float)
+C=pd.read_csv('/home/antigravity/Cuuper22/ivc/work_data/masters/census.csv',dtype=str,keep_default_na=False); C['face']=C.face.astype(float)
 S=C[C.grp=='seal']
 man=S[S.noun=='090']; own=S[S.noun=='none']
 F=lambda df:df.X.str.split('-').str[0].isin(['692','545','853','683'])
@@ -45,7 +45,7 @@ for X in ['503-615-752','806-845-061-407-850-900','706-033-923']:
     cc=D[D.type=='TAB:C'][D[D.type=='TAB:C'].toks.map(lambda t:'-'.join(t).startswith(X))].merge(M[['id','area-section','block-house','horizontal(mm)','vertical(mm)','symbol']],on='id',suffixes=('','_m'))
     print(X,len(cc),'blocks',cc['area-section'].nunique(),dict(Counter(cc['area-section']).most_common(8)),'houses',cc['block-house'].nunique(),'size',cc['horizontal(mm)_m'].astype(float).median(),cc['vertical(mm)_m'].astype(float).median(),dict(Counter(cc['symbol_m'])))
 # Lothal tag areas
-T=pd.read_csv('/home/claude/ivc/work_data/masters/tags.csv',dtype=str,keep_default_na=False)
+T=pd.read_csv('/home/antigravity/Cuuper22/ivc/work_data/masters/tags.csv',dtype=str,keep_default_na=False)
 L=T[T.site=='Lothal']; print('Lothal tag rows',len(L),'objects',L.object.nunique(),dict(Counter(L['area-section'])))
 print('Lothal by kind',dict(Counter(L.kind)))
 print('Lothal 3GX 10 by text', L[L['area-section']=='SRG 3GX 10'].reading_order_text.value_counts().to_dict())

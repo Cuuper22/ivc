@@ -3,7 +3,7 @@ Idea (from the abroad finding and Banawali goats): species marks a community of 
 more than other Mohenjo-daro seals do; GOAT seals at Mohenjo-daro should use the signs of Banawali goat seals more than other Mohenjo-daro seals.
 PREDICTION written before numbers: ratio >1.3 for both. Score = share of a seal's signs that occur on the reference seals (excluding common signs seen on >150 faces: 032, 060, 740 etc.).
 Null: Mohenjo-daro labels shuffled inside shape x size tercile."""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from animal_common import *
 rng=np.random.default_rng(6); NP=5000
 ABR=['Persian Gulf','Mesopotamia','Iranian Plateau','Central Asia']

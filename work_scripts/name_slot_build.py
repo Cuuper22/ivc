@@ -2,8 +2,8 @@
 """Build the seal-level name table: one row per seal face with parsed roles.
 Name = the 'who' signs of a tightly parsed seal text (reading order). Writes work_data/name_rows.csv."""
 import sys, pandas as pd, re
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
-ROOT = '/home/claude/ivc'
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
+ROOT = '/home/antigravity/Cuuper22/ivc'
 d = pd.read_csv(f'{ROOT}/research/data/open_prototype/lipi/metadata_filtered.csv', dtype=str).fillna('')
 g = pd.read_csv(f'{ROOT}/work_data/gloss_all.csv', dtype=str).fillna('')
 assert len(d) == len(g) and (d.id.values == g.id.values).all()

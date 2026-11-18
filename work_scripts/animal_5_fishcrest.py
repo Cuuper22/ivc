@@ -1,7 +1,7 @@
 """Targeted follow-up from the slot scan: do short-horned-bull seals (animal with feeding trough) carry marked-fish signs (231,233,235,240) more than chance?
 PREDICTION written before the number: yes, ratio > 1.5 (scan gave 235: 2.1x, 233 at name start 4.7x). Splits: Mohenjo-daro vs all other sites (the second half is out-of-sample for the first).
 Null: animal labels shuffled inside site x shape x size tercile."""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from animal_common import *
 rng=np.random.default_rng(1); NP=5000
 d=b[(b.g!='')&(b.g!='NONE')].copy().reset_index(drop=True)

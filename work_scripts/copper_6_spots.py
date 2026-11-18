@@ -24,7 +24,7 @@ Predictions written 2026-11-17 before the numbers:
  P6.3 Lots that hold copper tablets hold several different sets (an office holding many kinds).
 Writes work_data/copper/spots_objects.csv, spots_lots.csv, log_6.txt.
 """
-import sys; sys.path.insert(0, '/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from copper_common import *
 say = say_to(f'{OUT}/log_6.txt')
 L = pd.read_csv(f'{OUT}/objects.csv', dtype=str).fillna('')

@@ -2,7 +2,7 @@
 Prediction first: Umma texts that tie Dilmun/Magan/Meluhha to a jar word are few (under 10); a cloth-or-fibre word with them is rarer still;
 the tie is mostly boats (ma2) and copper, not jars."""
 import json, time, re, sys, urllib.parse, urllib.request, os, csv
-OUT='/home/claude/ivc/work_data/abroad3'; os.makedirs(OUT,exist_ok=True)
+OUT='/home/antigravity/Cuuper22/ivc/work_data/abroad3'; os.makedirs(OUT,exist_ok=True)
 TERMS=['dilmun','dilmun{ki}','dilmun-na','ma2-gan','ma2-gan{ki}','ma-gan','ma-gan{ki}','magan','ma2-gan-na','me-luh-ha','me-luh-ha{ki}','me-lu-uh-ha','me-lu-ha']
 def get(url):
     for k in range(4):

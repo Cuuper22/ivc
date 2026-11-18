@@ -1,6 +1,6 @@
 """Composite beasts and goats and the marked-fish houses: second test, a different way. Count marked fish (231,233,235,240) ANYWHERE in the text on composite+goat seals (67) against the rate on all other animal seals at the same sites.
 PREDICTION written before numbers: composite+goat seals carry marked fish at less than half the rate of the rest (<9%)."""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from animal_common import *
 from scipy.stats import binomtest, fisher_exact
 FISH={'231','233','235','240'}

@@ -18,7 +18,7 @@ same word, not a pun), whose gloss (first 5 words: its main sense) contains a jo
 """
 import re, csv, collections, unicodedata
 import numpy as np
-ROOT = '/home/claude/ivc'; OUT = f'{ROOT}/work_data/lang_m'
+ROOT = '/home/antigravity/Cuuper22/ivc'; OUT = f'{ROOT}/work_data/lang_m'
 
 PIC_EN = {
     'person': 'man person human male', 'fish': 'fish', 'bird': 'bird', 'duck': 'duck', 'jar': 'jar pot pitcher waterpot',

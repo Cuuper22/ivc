@@ -8,11 +8,11 @@ Mahadevan partner, for audit and for the parser port).
 """
 import sys, pickle, collections, csv
 import numpy as np
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from mah_common import *
 from crosswalk_em import SEEDS, GROUP
 
-W = '/home/claude/ivc/work_data'
+W = '/home/antigravity/Cuuper22/ivc/work_data'
 
 
 def pairs_from(o, thr=0.5):

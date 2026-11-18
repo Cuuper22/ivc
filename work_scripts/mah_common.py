@@ -8,7 +8,7 @@ Mahadevan lines are stored in reading order (S1 first read). Site comes from the
 """
 import sys, os, collections
 import pandas as pd
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 sys.path.insert(0, f'{ROOT}/work_scripts')
 MAH = f'{ROOT}/research/data/mahadevan_20260905/concordance_rows.csv'
 S = [f'S{i}' for i in range(1, 15)]

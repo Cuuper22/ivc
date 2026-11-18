@@ -12,7 +12,7 @@ Data 2: the same test on the second-catalogue lumps of stratum B (lump_common), 
 Output: work_data/lumps/log_3.txt
 """
 import sys, os, collections
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from lump_common import *
 from front_common import load, front_set, parse, CLOSERS
 rng = np.random.default_rng(3030); NS = 20000

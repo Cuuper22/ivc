@@ -3,7 +3,7 @@ Prediction written first: if Sumerian cloth words took any Dravidian words (or t
 Method: pick words by gloss keyword only (no hand picking). Sumerian: sumerian_wiktionary.tsv + sumerian_halloran.tsv headwords whose gloss has a textile keyword. Dravidian: DEDR entries whose first Tamil gloss has a textile keyword (headword = first Tamil form). Skeleton: C1 class + C2 class (None if no 2nd consonant). Match = C1 equal and (C2 equal or one has none). Null: same number of random words from each full lexicon, 20000 draws."""
 import re, random, unicodedata, collections
 random.seed(1)
-L='/home/claude/ivc/work_data/lexicons'
+L='/home/antigravity/Cuuper22/ivc/work_data/lexicons'
 KW=re.compile(r'\b(cloth|garment|thread|yarn|wool|flax|linen|spindle|weav|warp|spin|textile|cotton|rope|string)',re.I)
 def nrm(s):
     s=unicodedata.normalize('NFD',s.lower())

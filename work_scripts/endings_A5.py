@@ -9,7 +9,7 @@ import pandas as pd, numpy as np, collections
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import cross_val_predict, StratifiedKFold
 from sklearn.preprocessing import OneHotEncoder
-R='/home/claude/ivc'
+R='/home/antigravity/Cuuper22/ivc'
 d=pd.read_csv(f'{R}/work_data/endings/A3_seals.csv',dtype=str,keep_default_na=False)
 for c in ['face']: d[c]=pd.to_numeric(d[c],errors='coerce')
 d['E1']=d.E.replace({'jar+man':'jar'})          # case-level ending: jar / spear / porter / comb

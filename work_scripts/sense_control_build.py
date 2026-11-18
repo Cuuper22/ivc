@@ -12,7 +12,7 @@ import sys, os, re, json, collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import numpy as np, pandas as pd
 from sense_common import *
-ROOT = '/home/claude/ivc'; OUT = f'{ROOT}/work_data/sense'
+ROOT = '/home/antigravity/Cuuper22/ivc'; OUT = f'{ROOT}/work_data/sense'
 W = wn()
 def log(*a): print('[sense_control_build]', *a, flush=True)
 sents = set()

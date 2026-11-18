@@ -1,5 +1,5 @@
 import re,sys,collections as C
-sys.path.insert(0,'/home/claude/ivc/work_scripts')
+sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from carrier_load import load
 rows=load()
 pat=re.compile(r'(?<!\d)4(6[5-9]|7[0-5])(?!\d)')

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Pick 60 glossed texts across the grammar and write GLOSSES.md."""
-import sys; sys.path.insert(0, '/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 import pandas as pd, numpy as np
 from gloss2 import *
 d = load2(); lex = learn(d); own = lex['owner']
@@ -62,4 +62,4 @@ Sixty inscriptions read with the possessive model (`work_scripts/gloss2.py`, sam
 
 How to read a line. The sign numbers in backticks are in reading order (left to right as printed here). A name is written in square brackets as crest, self, tag: a crest is the first sign of a family name (a fish-hat sign, a crop sign), a tag is a closing name sign (branching-U, three-headed person). `Of [...]` is a name followed by the jar sign 740, the possessive ending: the seal's owner. `[...]'s man` is the same with the man sign 090 after the jar. `(opening: ...)` is the opener at the head of the text (diamond or wheel plus two strokes, or the 060 cap). A sign written as `(NNN)` has no name yet and is described by its shape. Counts come before the counted thing: "Three porters" is `003 156`. Names are not translated: the crest and tag labels describe the sign pictures, not their meaning.
 """
-open('/home/claude/ivc/GLOSSES.md', 'w').write(hdr + '\n'.join(body) + '\n')
+open('/home/antigravity/Cuuper22/ivc/GLOSSES.md', 'w').write(hdr + '\n'.join(body) + '\n')

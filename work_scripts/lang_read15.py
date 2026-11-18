@@ -1,6 +1,6 @@
 # Read real seal texts aloud with the first Dravidian sound values (guesses built in language_candidates.md).
 # Reading order = stored order reversed. Picks complete seal texts whose signs all have a value (openers allowed),
-# prints cisi id, signs, sound string and gloss. Run from /home/claude/ivc.
+# prints cisi id, signs, sound string and gloss. Run from /home/antigravity/Cuuper22/ivc.
 import csv,re,collections
 R=list(csv.DictReader(open('research/data/open_prototype/lipi/metadata_filtered.csv',encoding='utf-8')))
 V={ # sign: (sound, gloss)

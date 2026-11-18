@@ -1,7 +1,7 @@
 """Do agents carry their master's animal? Agent seal = `X jar man` (X = master). Owner seals = `X jar` with the same X (or the same first sign of X, the house crest).
 PREDICTION written before the numbers: clan/house reading predicts agents carry the master's species and stand letter above chance (ratio >=1.5). If animal is a mark of the person and not the house, ratio ~1.
 Null: agent labels shuffled among agents of the same site."""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from animal_common import *
 rng=np.random.default_rng(2); NP=5000
 d=b[(b.g!='')&(b.g!='NONE')&(b.X_c!='')].copy().reset_index(drop=True)

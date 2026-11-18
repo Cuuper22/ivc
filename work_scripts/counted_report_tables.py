@@ -1,5 +1,5 @@
 """Make the markdown tables used in jobs/out/counted_things.md (all numbers from the CSVs in work_data/counted)."""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from counted_common import *
 sh=shapes()
 raw=pd.read_csv(f'{ROOT}/work_data/counted/sign_by_count.csv',dtype={'sign':str})

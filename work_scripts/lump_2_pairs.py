@@ -8,7 +8,7 @@ Chance = short-stamp sets dealt among eligible lumps of the same site, 20,000 de
 Output: work_data/lumps/log_2.txt
 """
 import sys, os, collections
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from lump_common import *
 rng = np.random.default_rng(2026)
 NS = 20000

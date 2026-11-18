@@ -19,7 +19,7 @@ import corpus_build2 as cb
 import render_names as rn
 from sound_v4_common import d, lex, parse_face
 
-ROOT = '/home/claude/ivc'; OUT = f'{ROOT}/work_data/blind2'
+ROOT = '/home/antigravity/Cuuper22/ivc'; OUT = f'{ROOT}/work_data/blind2'
 SEED_S1, SEED_S2, SEED_S2B = 20261211, 20261212, 20261213
 SEED_DRAW, SEED_ROWS, SEED_OPT = 20261214, 20261215, 20261216
 N_SEAL, N_TAB, N_REST = 50, 50, 20

@@ -17,7 +17,7 @@ Predictions written 2026-11-17 before the numbers:
       (expected to be too few to test; then the rescue is P4.2 and the shapes).
 Writes work_data/copper/picsign_ties.csv, picsign_elsewhere.csv, log_4.txt.
 """
-import sys; sys.path.insert(0, '/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from copper_common import *
 say = say_to(f'{OUT}/log_4.txt')
 L = pd.read_csv(f'{OUT}/objects.csv', dtype=str).fillna('')

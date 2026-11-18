@@ -2,7 +2,7 @@
 """Writes jobs/out/sound_list_v5.md from the fifth-pass tables (work_data/sound_v5/).  Narrative numbers were copied
 from the script outputs; the tables are generated from the CSVs.  Run last."""
 import pandas as pd
-ROOT = '/home/claude/ivc'; O = f'{ROOT}/work_data/sound_v5'
+ROOT = '/home/antigravity/Cuuper22/ivc'; O = f'{ROOT}/work_data/sound_v5'
 v = pd.read_csv(f'{O}/values_v5.csv', dtype=str).fillna('')
 cov = pd.read_csv(f'{O}/coverage_v5.csv')
 j1 = pd.read_csv(f'{O}/job1_tests.csv'); j1b = pd.read_csv(f'{O}/job1b_tests.csv')

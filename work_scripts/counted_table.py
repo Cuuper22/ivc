@@ -1,6 +1,6 @@
 """Counted-thing measurement: for each sign, how often a count sign is right before it (reading order).
 Writes work_data/counted/sign_by_count.csv, sign_summary.csv"""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from counted_common import *
 rows=load(); sh=shapes()
 occ=collections.Counter(); occ1=collections.Counter()   # occurrences, occurrences at pos>=1

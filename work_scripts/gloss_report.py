@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Coverage + world tests + 40 glosses for gloss.py.  Writes jobs/out/gloss_report.md.  Runs in seconds."""
 import sys, collections, math, re
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 import numpy as np, pandas as pd
 from scipy import stats
 from gloss import *
@@ -271,5 +271,5 @@ for row in picked:
     P(f'**{row.cisi}** ({row.site}, {row.type}) reading order `{"-".join(row.tok)}`  ')
     P(' '.join(parts) + f'  \n= "{plain(row.tok, row.roles)}"\n')
 
-open('/home/claude/ivc/jobs/out/gloss_report.md', 'w').write('\n'.join(L))
+open('/home/antigravity/Cuuper22/ivc/jobs/out/gloss_report.md', 'w').write('\n'.join(L))
 print('\n'.join(L[:60]))

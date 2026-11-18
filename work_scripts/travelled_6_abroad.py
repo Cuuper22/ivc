@@ -1,6 +1,6 @@
 """Job: the travelled name. Step 6: every object found abroad: its text, and which adjacent sign pairs (2-grams, no lost/count/jar signs) also stand on home objects, with home counts and sites. Run: python3 travelled_6_abroad.py"""
 import pandas as pd, collections, re
-R='/home/claude/ivc/'
+R='/home/antigravity/Cuuper22/ivc/'
 G=pd.read_csv(R+'work_data/gloss2_all.csv',dtype=str)
 M=pd.read_csv(R+'research/data/open_prototype/lipi/metadata_filtered.csv',dtype=str)
 D=G.merge(M[['id','region']],on='id'); D['toks']=D.reading_order_text.str.split('-')

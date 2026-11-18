@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """HANDS step 2 score: join the blind judgements (work_data/hands/xc_judged_raw.txt: id|features|call, S same, N near, D different,
 U cannot tell) with the key AFTER all 120 were judged; write work_data/hands/cross_city_judged.csv and the table."""
-import sys; sys.path.insert(0, "/home/claude/ivc/work_scripts")
+import sys; sys.path.insert(0, "/home/antigravity/Cuuper22/ivc/work_scripts")
 from hands_common import *
 from math import comb
 K = pd.read_csv(f'{OUT}/hands_pairs_key.csv', dtype=str).fillna('')

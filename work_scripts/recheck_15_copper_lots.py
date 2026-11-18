@@ -15,7 +15,7 @@ sides (where both are given). Two faces of one tablet: the table has one row per
 Run: python3 recheck_15_copper_lots.py   (about 1 minute)
 """
 import sys, itertools
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 import numpy as np, pandas as pd
 from recheck_common import *
 say = log_to(f'{OUT}/r15_log.txt')

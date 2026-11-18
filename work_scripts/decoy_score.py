@@ -5,7 +5,7 @@ right direction only / against, the real-versus-decoy difference with Fisher's e
 Run: python3 decoy_score.py [results.csv] [key.csv]"""
 import sys, os, csv, collections
 from scipy.stats import fisher_exact
-D = '/home/claude/ivc/work_data/decoy'
+D = '/home/antigravity/Cuuper22/ivc/work_data/decoy'
 rp = sys.argv[1] if len(sys.argv) > 1 else f'{D}/results.csv'
 kp = sys.argv[2] if len(sys.argv) > 2 else f'{D}/KEY_do_not_open.csv'
 def log(*a): print('[decoy_score]', *a, flush=True)

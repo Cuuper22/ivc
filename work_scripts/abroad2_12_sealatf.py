@@ -1,6 +1,6 @@
 """Item 1 continued: read the seal blocks in the ATF of every candidate. Prediction: the legends are Ur III cuneiform (owner, 'dumu', 'ARAD2 of ...'); non-cuneiform (uninscribed, pictorial) seals are noted in CDLI as '$ seal impression ... ' or '@seal' with a '$' comment."""
 import json, re, csv
-OUT='/home/claude/ivc/work_data/abroad2'
+OUT='/home/antigravity/Cuuper22/ivc/work_data/abroad2'
 A={a['id']:a for a in json.load(open(f'{OUT}/cdli_meluhha_guabba_full.json'))}
 rows=list(csv.DictReader(open(f'{OUT}/sealed_candidates_all.csv')))
 res=[]

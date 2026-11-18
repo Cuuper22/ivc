@@ -4,7 +4,7 @@ Run: python3 second_port.py  -> prints tables; writes work_data/mahadevan_parsed
 """
 import sys, collections, random, math
 import numpy as np
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from mah_common import *
 import gloss2
 from gloss2 import learn, parse_face, is_tight, is_strict, template, sentence

@@ -1,7 +1,7 @@
 """Shared loader for the goods job. Reading order = stored order reversed. One row per text face."""
 import pandas as pd, numpy as np, re, collections
 from scipy.stats import fisher_exact, hypergeom
-ROOT='/home/claude/ivc'
+ROOT='/home/antigravity/Cuuper22/ivc'
 DATA=f'{ROOT}/research/data/open_prototype/lipi/metadata_filtered.csv'
 OUT=f'{ROOT}/work_scripts/goods_out'
 CNT={}

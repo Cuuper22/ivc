@@ -1,5 +1,5 @@
 """Gloss 30 real texts sign by sign using the commodity lexicon. Writes work_data/counted/gloss30.md (draft lines)."""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from counted_common import *
 LEX={'000':'<lost>','861':'OPENER-diamond','817':'OPENER-diamond','820':'OPENER-wheel','740':'jar','741':'jar-dot','400':'comb','090':'man','091':'two-men','097':'man-bracketed',
 '806':'crop','154':'carried','158':'carried','155':'carried','156':'porter-load','151':'porter','700':'cup-measure','220':'fish','235':'fish-hat','240':'fish-whisker','233':'fish-line','231':'fish-dot','226':'fish-caged','236':'fish-hat-caged',

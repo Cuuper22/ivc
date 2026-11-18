@@ -9,9 +9,9 @@ Unit: bits per step between neighbouring identified signs; ALT (a sign not match
 Texts here = status 'new', not pseudo-script, 2+ drawn signs. Sensitivity: add the four 'maybe' rows as extra texts.
 """
 import sys, csv
-sys.path.insert(0,'/home/claude/ivc/work_scripts')
+sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from abroad4_common import *
-GD='/home/claude/ivc/work_data/gulf2'
+GD='/home/antigravity/Cuuper22/ivc/work_data/gulf2'
 rows=list(csv.DictReader(open(f'{GD}/sequences.csv')))
 def toks(r): return tuple(t for t in r['signs_best'].split('-') if t)
 def want(r, maybe=False):

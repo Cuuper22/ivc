@@ -2,7 +2,7 @@
 """Short picture-words for signs (what the sign LOOKS like, from work_data/sign_shapes.csv; no meanings).
 Signs not in the hand list get the first words of their shape description; signs with no description get 'sign NNN'."""
 import pandas as pd, re
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 _sh = pd.read_csv(f'{ROOT}/work_data/sign_shapes.csv', dtype=str).fillna('')
 SHAPE = dict(zip(_sh.lipi_wells_number, _sh.shape_description))
 PIC = {

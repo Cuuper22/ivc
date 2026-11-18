@@ -18,7 +18,7 @@ short  : the short English the corpus builder uses (derived from english; manual
 import sys, os, re, csv, collections
 import pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 from sound_dedr import look
 
 V4 = pd.read_csv(f'{ROOT}/work_data/sound_v4/values_v4.csv', dtype=str).fillna('')

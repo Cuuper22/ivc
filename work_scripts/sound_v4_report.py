@@ -4,7 +4,7 @@ sound_v4_job2.py, sound_v4_job2b.py, sound_v4_values.py, sound_v4_cands.py, soun
 The prose sections are written here by hand from those tables."""
 import csv, collections
 import pandas as pd
-ROOT = '/home/claude/ivc'; O = f'{ROOT}/work_data/sound_v4'
+ROOT = '/home/antigravity/Cuuper22/ivc'; O = f'{ROOT}/work_data/sound_v4'
 SH = pd.read_csv(f'{ROOT}/work_data/sign_shapes.csv', dtype=str).set_index('lipi_wells_number').shape_description.to_dict()
 V = pd.read_csv(f'{O}/values_v4.csv', dtype=str).fillna('')
 J1 = pd.read_csv(f'{O}/job1_tests.csv'); G = pd.read_csv(f'{O}/job1_grade.csv')

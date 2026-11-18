@@ -1,5 +1,5 @@
 """Multi-face tablets as records: group faces by cisi, pair the cup face with the other faces."""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from counted_common import *
 a=pd.read_csv(DATA,dtype=str,keep_default_na=False)
 a=a[(a.cisi!='-')&a['type'].str.startswith('TAB')]

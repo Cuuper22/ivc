@@ -1,6 +1,6 @@
 """Count distributions per counted thing: BEFORE (n X) and AFTER (X n) frames, series split.
 Writes work_data/counted/before_table.csv, after_table.csv"""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from counted_common import *
 import numpy as np
 from scipy.stats import chi2_contingency

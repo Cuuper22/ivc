@@ -3,11 +3,11 @@
 Part 1 (this block): LOOK helper = Step 1, Lipi (first catalogue) only. No new texts, no picture side, no time bin.
 Later blocks (appended): predictions, run helpers, outcomes."""
 import sys, collections
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from decoy_loader import *
 import pandas as pd, numpy as np
 
-TL = pd.read_csv('/home/claude/ivc/work_data/decoy/test_list.csv', dtype=str).fillna('')
+TL = pd.read_csv('/home/antigravity/Cuuper22/ivc/work_data/decoy/test_list.csv', dtype=str).fillna('')
 SIGN = {int(r.item): r.sign for r in TL.itertuples()}
 _FL = faces_all('L'); _KL = kfaces('L')
 _KIND_ALL = collections.Counter(k for x, k, s in _KL); _SITE_ALL = collections.Counter(s for x, k, s in _KL)
@@ -229,7 +229,7 @@ if __name__ == '__main__' and len(sys.argv) > 1 and sys.argv[1] == 'stage1':
         obs, base, p, out = run_spec(i, FIRST[i])
         results[i] = dict(obs=obs, base=base, p=p, out=out)
         print(f'[stage1] item {i} sign {SIGN[i]} -> {out} | {obs} vs {base} | P={p}', flush=True)
-        json.dump(results, open('/home/claude/ivc/work_data/decoy/replay_B_stage1.json', 'w'))
+        json.dump(results, open('/home/antigravity/Cuuper22/ivc/work_data/decoy/replay_B_stage1.json', 'w'))
     print('[stage1] done', flush=True)
 
 
@@ -286,7 +286,7 @@ NEED2 = None  # set at run time: every item whose first outcome was not 'came tr
 
 if __name__ == '__main__' and len(sys.argv) > 1 and sys.argv[1] == 'stage2':
     import json
-    st = json.load(open('/home/claude/ivc/work_data/decoy/replay_B_stage1.json'))
+    st = json.load(open('/home/antigravity/Cuuper22/ivc/work_data/decoy/replay_B_stage1.json'))
     need = sorted(int(i) for i, v in st.items() if v['out'] != 'came true')
     assert need == sorted(SECOND), (set(need) ^ set(SECOND))
     r2 = {}
@@ -294,7 +294,7 @@ if __name__ == '__main__' and len(sys.argv) > 1 and sys.argv[1] == 'stage2':
         obs, base, p, out = run_spec(i, SECOND[i])
         r2[i] = dict(obs=obs, base=base, p=p, out=out)
         print(f'[stage2] item {i} sign {SIGN[i]} -> {out} | {obs} vs {base} | P={p}', flush=True)
-        json.dump(r2, open('/home/claude/ivc/work_data/decoy/replay_B_stage2.json', 'w'))
+        json.dump(r2, open('/home/antigravity/Cuuper22/ivc/work_data/decoy/replay_B_stage2.json', 'w'))
     print('[stage2] done', flush=True)
 
 
@@ -304,11 +304,11 @@ if __name__ == '__main__' and len(sys.argv) > 1 and sys.argv[1] == 'stage2':
 # =====================================================================================================
 if __name__ == '__main__' and len(sys.argv) > 1 and sys.argv[1] == 'write':
     import json, csv
-    s1 = json.load(open('/home/claude/ivc/work_data/decoy/replay_B_stage1.json'))
-    s2 = json.load(open('/home/claude/ivc/work_data/decoy/replay_B_stage2.json'))
+    s1 = json.load(open('/home/antigravity/Cuuper22/ivc/work_data/decoy/replay_B_stage1.json'))
+    s2 = json.load(open('/home/antigravity/Cuuper22/ivc/work_data/decoy/replay_B_stage2.json'))
     RANK = {'came true': 3, 'right direction only': 2, 'too few': 1, 'against': 0}
     fmt = lambda p: '' if p is None else f'{p:.4g}'
-    with open('/home/claude/ivc/work_data/decoy/replay_B.csv', 'w', newline='') as f:
+    with open('/home/antigravity/Cuuper22/ivc/work_data/decoy/replay_B.csv', 'w', newline='') as f:
         w = csv.writer(f)
         w.writerow(['item', 'sign', 'word', 'first_prediction', 'first_base', 'first_observed', 'first_P', 'first_outcome',
                     'second_prediction', 'second_base', 'second_observed', 'second_P', 'second_outcome', 'final'])
@@ -319,5 +319,5 @@ if __name__ == '__main__' and len(sys.argv) > 1 and sys.argv[1] == 'write':
             else: fin = max([a['out'], b['out']], key=lambda o: RANK[o])
             w.writerow([i, SIGN[i], word, FIRST[i][3], a['base'], a['obs'], fmt(a['p']), a['out'],
                         SECOND[i][3] if b else '', b['base'] if b else '', b['obs'] if b else '', fmt(b['p']) if b else '', b['out'] if b else '', fin])
-    df = pd.read_csv('/home/claude/ivc/work_data/decoy/replay_B.csv')
+    df = pd.read_csv('/home/antigravity/Cuuper22/ivc/work_data/decoy/replay_B.csv')
     print('first_outcome', df.first_outcome.value_counts().to_dict()); print('final', df.final.value_counts().to_dict())

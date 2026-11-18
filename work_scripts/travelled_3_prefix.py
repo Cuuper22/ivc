@@ -2,7 +2,7 @@
 Run: python3 travelled_3_prefix.py"""
 import pandas as pd, numpy as np, collections, re
 from scipy import stats
-R='/home/claude/ivc/'
+R='/home/antigravity/Cuuper22/ivc/'
 np.random.seed(3)
 G=pd.read_csv(R+'work_data/gloss2_all.csv',dtype=str)
 M=pd.read_csv(R+'research/data/open_prototype/lipi/metadata_filtered.csv',dtype=str)

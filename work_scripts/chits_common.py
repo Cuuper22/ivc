@@ -23,7 +23,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import numpy as np, pandas as pd
 with contextlib.redirect_stdout(io.StringIO()):
     from measures_common import objs, NUM, UNITS, runs, ROOT
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 OUT = f'{ROOT}/work_data/chits'; os.makedirs(OUT, exist_ok=True)
 T0 = time.time()
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """HANDS step 3 score: join blind judgements (md_judged_raw.txt: id|features|call) with the key AFTER all 180 were judged."""
-import sys; sys.path.insert(0, "/home/claude/ivc/work_scripts")
+import sys; sys.path.insert(0, "/home/antigravity/Cuuper22/ivc/work_scripts")
 from hands_common import *
 K = pd.read_csv(f'{OUT}/hands_md_key.csv', dtype=str).fillna('')
 J = pd.DataFrame([l.rstrip('\n').split('|') for l in open(f'{OUT}/md_judged_raw.txt')], columns=['pid', 'features', 'call'])

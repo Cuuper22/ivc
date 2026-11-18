@@ -2,7 +2,7 @@
 """sense_report.py -- turns work_data/sense/results_*.json and the per-sign arrays into the tables of jobs/out/sense_test.md
 (writes work_data/sense/tables.md; the prose of the report is written by hand around these tables).  Run: python3 sense_report.py"""
 import json, numpy as np, pandas as pd
-D = '/home/claude/ivc/work_data/sense'
+D = '/home/antigravity/Cuuper22/ivc/work_data/sense'
 VN = {'ov': 'category overlap', 'lift': 'category lift', 'cos': 'vector closeness'}
 core = json.load(open(f'{D}/results_core.json')); N = core['N']
 def pz(real, arr):

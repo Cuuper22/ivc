@@ -7,7 +7,7 @@ the text (animal shrunk, legs/back flattened, clipped by the text band, text ban
 = even; (2) GUIDE: a ruled line or scratch under the text or around the field; (3) ERASED: a ghost sign, a doubled stroke or a
 patch. Predictions (written first): text first 15-25 of 40, animal first at most 5, rest even; guide lines in at most 4;
 erased/ghost signs in at most 3."""
-import sys; sys.path.insert(0, "/home/claude/ivc/work_scripts")
+import sys; sys.path.insert(0, "/home/antigravity/Cuuper22/ivc/work_scripts")
 from hands_common import *
 S = load(); S['n'] = S.n.astype(int)
 E = S[(S.photo != '') & (~S.animal.isin(['none', ''])) & (S.type == 'SEAL:S') & (S.preservation == 'complete') & S.condition.isin(['Fair', 'Good', 'Fine'])

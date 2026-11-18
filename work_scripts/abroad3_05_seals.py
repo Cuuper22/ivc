@@ -3,8 +3,8 @@ fetch the CDLI seal page, record legend transliteration (if any), and whether a 
 Prediction first: all seal records whose legend is missing are still ordinary Ur III cuneiform cylinders (seen as photo or line-art);
 none is an Indus-type or other foreign pictorial seal."""
 import json, re, urllib.request, csv, time, os
-OUT='/home/claude/ivc/work_data/abroad3'; os.makedirs(OUT+'/seals',exist_ok=True)
-A=json.load(open('/home/claude/ivc/work_data/abroad2/cdli_meluhha_guabba_full.json'))
+OUT='/home/antigravity/Cuuper22/ivc/work_data/abroad3'; os.makedirs(OUT+'/seals',exist_ok=True)
+A=json.load(open('/home/antigravity/Cuuper22/ivc/work_data/abroad2/cdli_meluhha_guabba_full.json'))
 UA={'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) Chrome/124'}
 def get(u,binary=False):
     for k in range(3):

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """A3: the sign right before each ending; sub-endings; which name last-signs are 'jar names', 'spear names', 'porter names'."""
 import pandas as pd, numpy as np, collections
-R='/home/claude/ivc'
+R='/home/antigravity/Cuuper22/ivc'
 d=pd.read_csv(f'{R}/work_data/endings/A2_seals.csv',dtype=str,keep_default_na=False)
 for c in ['face']: d[c]=pd.to_numeric(d[c],errors='coerce')
 d=d[~d.name.str.contains('000|ALT')].copy()

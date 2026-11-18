@@ -1,7 +1,7 @@
 """Second stand code: the catalogue's `cult` column (S/R/H + A/B/C + N/F) on unicorn seals, as a room-mate mark, and its link to the letter W/J/S/I/L.
 PREDICTION written before numbers: the 3-letter code behaves like the letter (room-mates share it, ratio ~1.5-2) since both describe the object in front of the unicorn; the third letter (N vs F) is a finer carving detail and shares the least.
 Null: labels shuffled inside area x 3-ft depth x size tercile."""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from animal_common import *
 from scipy.stats import chi2_contingency
 rng=np.random.default_rng(12); NP=3000

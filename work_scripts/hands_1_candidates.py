@@ -12,7 +12,7 @@ rest inscription-only by design (b) or worn (c); (d) animal-cut / text-empty wil
 text is cut first). Unfinished ones will be SCATTERED in houses, not in workshop clusters, with Lothal the one city
 over-represented (>= 3 of the (a) ones against ~2.9 by share of pool). Within-site shuffle will not make the clusters
 look unusual (P > 0.1)."""
-import sys; sys.path.insert(0, "/home/claude/ivc/work_scripts")
+import sys; sys.path.insert(0, "/home/antigravity/Cuuper22/ivc/work_scripts")
 from hands_common import *
 S = load(); S['n'] = S.n.astype(int)
 A = S[(S.photo != '') & (S.animal == 'none')].copy()

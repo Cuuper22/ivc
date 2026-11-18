@@ -1,6 +1,6 @@
 """Item 1 table. Prediction (from abroad2_10): <30% of Meluhha/Guabba tablets sealed; sealed ones mostly cuneiform-legend; 0-2 uninscribed/pictorial seals on wool/cloth tablets."""
 import json, re, csv, collections
-OUT='/home/claude/ivc/work_data/abroad2'
+OUT='/home/antigravity/Cuuper22/ivc/work_data/abroad2'
 A=json.load(open(f'{OUT}/cdli_meluhha_guabba_full.json'))
 def nm(x,k): 
     m=re.search(r"'%s': '([^']*)'"%k,str(x)); return m.group(1) if m else ''

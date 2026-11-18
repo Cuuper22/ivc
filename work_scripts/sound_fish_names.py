@@ -6,7 +6,7 @@ import pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from gloss2 import load2, learn, parse_face
 from sound_values import ALL_SOUNDS
-ROOT = '/home/claude/ivc'; OUT = f'{ROOT}/work_data/sound'
+ROOT = '/home/antigravity/Cuuper22/ivc'; OUT = f'{ROOT}/work_data/sound'
 VAL = {f'{i:03d}': i for i in range(1, 8)}; VAL.update({'012': 2}); VAL.update({f'{i:03d}': i - 10 for i in range(13, 19)}); VAL.update({f'{i:03d}': i - 30 for i in range(31, 37)})
 print('stage 1/3: parsing ...', flush=True)
 d = load2(); lex = learn(d); d['P'] = [parse_face(x, lex) for x in d.tok]

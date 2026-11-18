@@ -5,7 +5,7 @@
  Empty cell = use `short` as before. Words were fixed from the slot census (odd_1_slots.py) and the name-sense tests (odd_2_names.py)
  BEFORE the new draw of 60 (odd_6_draw.py)."""
 import pandas as pd
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 M = pd.read_csv(f'{ROOT}/work_data/values_master.csv', dtype=str).fillna('')
 for c in ('short_name', 'short_count', 'short_final', 'short_open', 'slot_note'): M[c] = ''
 SL = {

@@ -25,7 +25,7 @@ log('loading the catalogue (gloss parser) ...')
 with contextlib.redirect_stdout(io.StringIO()):
     from sound_v4_common import d
 import pandas as pd, numpy as np
-ROOT = '/home/claude/ivc'; OUT = f'{ROOT}/work_data/stamps'; os.makedirs(OUT, exist_ok=True)
+ROOT = '/home/antigravity/Cuuper22/ivc'; OUT = f'{ROOT}/work_data/stamps'; os.makedirs(OUT, exist_ok=True)
 IMG = f'{ROOT}/evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images'
 
 def blank(v): return str(v).strip() in ('', '-', '--', '- -')

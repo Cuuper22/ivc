@@ -6,7 +6,7 @@
  X4  the signboard's third phrase has a sibling: a wheel next to maru- (798) on another object (pot H-1402 820-798-740).
 """
 import sys, math, collections
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from holes_common import *
 ls = lines(True); out = []
 def P(s): out.append(s); print(s)

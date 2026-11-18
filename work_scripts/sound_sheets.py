@@ -3,7 +3,7 @@
 'Lipi / Mahadevan'. Output: work_data/sound/sheet_1..4.png"""
 import pandas as pd
 from PIL import Image, ImageDraw
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 d = pd.read_csv(f'{ROOT}/work_data/sound/top80.csv', dtype=str).fillna('')
 T = 150
 for k in range(4):

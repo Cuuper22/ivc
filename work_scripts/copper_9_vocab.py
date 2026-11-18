@@ -11,7 +11,7 @@ Prediction written 2026-11-17 before the numbers:
       carry a closed set of phrases used nowhere else.
 Writes work_data/copper/vocab.csv, log_9.txt.
 """
-import sys; sys.path.insert(0, '/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from copper_common import *
 say = say_to(f'{OUT}/log_9.txt')
 pairs_by_kind = collections.defaultdict(set); signs_by_kind = collections.defaultdict(set)

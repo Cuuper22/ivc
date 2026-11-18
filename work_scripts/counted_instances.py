@@ -1,7 +1,7 @@
 """Build one row per (count sign, counted sign) adjacency, both frames, with metadata.
 frame=B: count right before the sign (n X); frame=A: count right after (X n).
 Output work_data/counted/instances.csv (rows) and rows.csv (one per object with token list)."""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from counted_common import *
 rows=load(); inst=[]; objs=[]
 seen=set()

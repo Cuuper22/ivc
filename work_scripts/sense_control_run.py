@@ -7,7 +7,7 @@ import sys, os, json, time, collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import numpy as np, pandas as pd
 from sense_core import *
-D = '/home/claude/ivc/work_data/sense'; N = int(sys.argv[1]) if len(sys.argv) > 1 else 1000
+D = '/home/antigravity/Cuuper22/ivc/work_data/sense'; N = int(sys.argv[1]) if len(sys.argv) > 1 else 1000
 VERS = ['ov', 'lift', 'cos']
 def log(*a): print(time.strftime('%H:%M:%S'), '[sense_control_run]', *a, flush=True)
 SS = pd.read_csv(f'{D}/control_senses.csv').fillna(''); W = pd.read_csv(f'{D}/control_words.csv'); EM = np.load(f'{D}/control_emb.npy').astype(np.float32)

@@ -21,7 +21,7 @@ RULE for "two catalogue rows are the same stone" (decided from the data, see rec
 import re, collections
 import numpy as np, pandas as pd
 
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 LIPI = f'{ROOT}/research/data/open_prototype/lipi/metadata_filtered.csv'
 OUT = f'{ROOT}/work_data/recheck'
 EMPTY = {'', '-', '--', '- -'}

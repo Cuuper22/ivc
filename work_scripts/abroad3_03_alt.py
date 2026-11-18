@@ -1,7 +1,7 @@
 """Alternative reading of the tall strokes after 705 in the photograph: 033 (three full-height strokes) or 032 (two full-height) instead of 002.
 Prediction first: home texts show 705 033 004 390 or 033 004 390 at least as often as 705 002 004 390 (0 times)."""
 import sys
-sys.path.insert(0,'/home/claude/ivc/work_scripts')
+sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from cotton_common import *
 d=faces(); d=d[d.id!='3884.1']
 def find(seq):

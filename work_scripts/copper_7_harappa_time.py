@@ -20,7 +20,7 @@ Predictions written 2026-11-17 before the numbers:
       its expected share.
 Writes work_data/copper/harappa_compare.csv, names_on_seals.csv, time.csv, log_7.txt.
 """
-import sys; sys.path.insert(0, '/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from copper_common import *
 with contextlib.redirect_stdout(io.StringIO()):
     import chits_common as CC

@@ -1,6 +1,6 @@
 """Scan the CDLI texts that mention Meluhha for textile / fibre / tree-product words. Prediction: if the Meluhha trade included cloth or cotton, a cloth word (tug2, gada, siki, ...) appears in the same text more often than in matched random Ur III texts. (Control not run here; this is the listing.)"""
 import json, re, collections, csv
-OUT='/home/claude/ivc/work_data/abroad2'
+OUT='/home/antigravity/Cuuper22/ivc/work_data/abroad2'
 rows=[json.loads(l) for l in open(f'{OUT}/cdli_meluhha_atf.jsonl')]
 print(len(rows))
 per=collections.Counter(); 

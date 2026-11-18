@@ -1,7 +1,7 @@
 """Shared loader for the masters job. Reading order = stored order reversed (gloss2 file already in reading order)."""
 import pandas as pd, re
-G=pd.read_csv('/home/claude/ivc/work_data/gloss2_all.csv',dtype=str)
-M=pd.read_csv('/home/claude/ivc/research/data/open_prototype/lipi/metadata_filtered.csv',dtype=str)
+G=pd.read_csv('/home/antigravity/Cuuper22/ivc/work_data/gloss2_all.csv',dtype=str)
+M=pd.read_csv('/home/antigravity/Cuuper22/ivc/research/data/open_prototype/lipi/metadata_filtered.csv',dtype=str)
 D=G.merge(M[['id','region','area-section','block-house','room-grid','period','symbol','material','class','horizontal(mm)','vertical(mm)','depth','excavation-idno','shape']],on='id',how='left')
 def num(x):
     try: return float(x)

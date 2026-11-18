@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """gulf2 step 2: person-sign test using only the texts where a man sign is clear on the page or stated by the authors
 (G2-09 two men drawn clearly, G2-13 Jalalabad authors name #90, G2-14 BM photo). Same matched-home draw as gulf2_01 over the 12 texts of set A."""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from abroad4_common import *
 import csv
-rows=[r for r in csv.DictReader(open('/home/claude/ivc/work_data/gulf2/sequences.csv')) if r['dup_status']=='new' and 'pseudo' not in r['flag'] and len([t for t in r['signs_best'].split('-') if t and t!='-'])>=2]
+rows=[r for r in csv.DictReader(open('/home/antigravity/Cuuper22/ivc/work_data/gulf2/sequences.csv')) if r['dup_status']=='new' and 'pseudo' not in r['flag'] and len([t for t in r['signs_best'].split('-') if t and t!='-'])>=2]
 lens=[len(r['signs_best'].split('-')) for r in rows]
 hd=[x for x,v in home_distinct.items() if v[1]=='seal' and len([s for s in x if real(s)])>=2]
 bylen=collections.defaultdict(list)

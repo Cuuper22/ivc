@@ -1,6 +1,6 @@
 """Job: the travelled name. Step 7: markdown table of all 71 objects with 590-390 + summary counts for opener/ending. Output: travelled_out/table.md"""
 import pandas as pd, collections, os
-R='/home/claude/ivc/'
+R='/home/antigravity/Cuuper22/ivc/'
 d=pd.read_csv(R+'work_scripts/travelled_out/t590_390.csv',dtype=str,keep_default_na=False)
 S=R+'evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/'
 files=os.listdir(S)

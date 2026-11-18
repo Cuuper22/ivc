@@ -1,6 +1,6 @@
 """Shared loader and helpers for the animal job. Reading order = stored order reversed."""
 import pandas as pd, numpy as np
-ROOT='/home/claude/ivc'; OUT=f'{ROOT}/work_data/animal'
+ROOT='/home/antigravity/Cuuper22/ivc'; OUT=f'{ROOT}/work_data/animal'
 b=pd.read_csv(f'{OUT}/animal_base.csv',dtype=str,keep_default_na=False)
 for c in ['depth_ft','face','seglen']: b[c]=pd.to_numeric(b[c],errors='coerce')
 b['office']=b.office.eq('True'); b['has_jar']=b.has_jar.eq('True'); b['tight']=b.tight_nr.eq('True')

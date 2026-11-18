@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """COPPER step 8: the set table for the report (markdown), one row per text family with 2+ copies, plus single-copy
 texts in a short list. Reads objects.csv, m77_objects.csv, spots_objects.csv. Writes work_data/copper/set_table.md."""
-import sys; sys.path.insert(0, '/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from copper_common import *
 say = print
 L = pd.read_csv(f'{OUT}/objects.csv', dtype=str).fillna('')

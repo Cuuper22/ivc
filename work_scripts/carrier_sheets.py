@@ -1,6 +1,6 @@
 import sys,os
 from PIL import Image,ImageDraw
-D='/home/claude/ivc/evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/'
+D='/home/antigravity/Cuuper22/ivc/evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/'
 O='/tmp/carrier_sheets/';os.makedirs(O,exist_ok=True)
 objs=sys.argv[1:]
 files=[]

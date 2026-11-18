@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(0,'/home/claude/ivc/work_scripts')
+sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from holes_common import *
 ls=lines(True)
 for sg in sys.argv[1:]:

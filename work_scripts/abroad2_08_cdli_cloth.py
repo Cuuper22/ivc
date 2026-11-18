@@ -1,6 +1,6 @@
 """Search CDLI for cloth words tied to Meluhha / Dilmun / Magan / the East. Prediction first: if Indus cotton cloth was a recognised import, some Ur III or Akkadian text names a cloth with an eastern adjective (tug2 me-luh-ha, tug2 dilmun, tug2 ma-gan). Result stored in work_data/abroad2/cdli_cloth_east.csv"""
 import json, time, urllib.parse, urllib.request, csv, re
-OUT='/home/claude/ivc/work_data/abroad2'
+OUT='/home/antigravity/Cuuper22/ivc/work_data/abroad2'
 def get(u):
     for k in range(4):
         try: return urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':'ivc-research'}),timeout=60).read()

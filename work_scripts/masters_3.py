@@ -1,9 +1,9 @@
 """Part 1 on seals only + Part 4 openers. Agent seals = SEAL* objects, X jar {man,comb,679,621}."""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from masters_common import *
 from collections import Counter
 import random
-C=pd.read_csv('/home/claude/ivc/work_data/masters/census.csv',dtype=str,keep_default_na=False); C['face']=C.face.astype(float)
+C=pd.read_csv('/home/antigravity/Cuuper22/ivc/work_data/masters/census.csv',dtype=str,keep_default_na=False); C['face']=C.face.astype(float)
 NOUN={'090':'man','400':'comb','679':'679','621':'621'}
 ag=C[C.noun.isin(NOUN)&(C.grp=='seal')].copy(); ag['n']=ag.noun.map(NOUN)
 own=C[(C.noun=='none')&(C.grp=='seal')]

@@ -5,9 +5,9 @@ import pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from sound_values import VALUES, OLD
 from sound_v2_tiers import V2, TIER, CLASS, CHANGED
-R = '/home/claude/ivc/work_data/sound_v2'
+R = '/home/antigravity/Cuuper22/ivc/work_data/sound_v2'
 PIC = {s: pic for (s, pic, *_ ) in VALUES}
-ck = pd.read_csv('/home/claude/ivc/work_data/sound/checks.csv', dtype=str).set_index('sign')
+ck = pd.read_csv('/home/antigravity/Cuuper22/ivc/work_data/sound/checks.csv', dtype=str).set_index('sign')
 t1 = pd.read_csv(f'{R}/try1.csv', dtype=str).fillna('').set_index('sign')
 t2 = pd.read_csv(f'{R}/try2.csv', dtype=str).fillna('').set_index('sign')
 sh = pd.read_csv(f'{R}/sharpen.csv', dtype=str).fillna('').set_index('sign')
@@ -125,5 +125,5 @@ tail = f'''
 - 590 *peṭṭi*: chest-guard seals (`590-390`) should sit with goods (tags, sealings) and in warehouse findspots (Lothal SRG 3GX 10, Harappa mound F) more than other names.
 - 061 new word: a leg (*tāḷ*, DEDR 3185, is now 717's) or a foot measure; first check its counts on all texts.
 '''
-open('/home/claude/ivc/jobs/out/sound_list_v2.md', 'w').write(head + '\n'.join(rows) + tail)
+open('/home/antigravity/Cuuper22/ivc/jobs/out/sound_list_v2.md', 'w').write(head + '\n'.join(rows) + tail)
 print('written', len(B), len(T), len(P_))

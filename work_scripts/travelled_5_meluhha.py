@@ -2,7 +2,7 @@
 Also searches the sesame sign 838 (ellu/ilu loan) and carnelian-like commodity contexts. Run: python3 travelled_5_meluhha.py"""
 import pandas as pd, collections, numpy as np
 from scipy import stats
-R='/home/claude/ivc/'
+R='/home/antigravity/Cuuper22/ivc/'
 G=pd.read_csv(R+'work_data/gloss2_all.csv',dtype=str)
 M=pd.read_csv(R+'research/data/open_prototype/lipi/metadata_filtered.csv',dtype=str)
 D=G.merge(M[['id','region']],on='id'); D['toks']=D.reading_order_text.str.split('-')

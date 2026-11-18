@@ -12,7 +12,7 @@ A phrase passes the count rule when the clean count is 8 or more (the order and 
 Run: python3 recheck_11_phrases.py   (about 1 minute)
 """
 import sys, io, contextlib, collections
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 import numpy as np, pandas as pd
 from recheck_common import *
 say = log_to(f'{OUT}/r11_log.txt')

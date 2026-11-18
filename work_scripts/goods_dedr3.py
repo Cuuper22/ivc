@@ -1,7 +1,7 @@
 """Find DEDR entries (Tamil side, also entries packed inside other lines) by Tamil headword.
 usage: python3 goods_dedr3.py word ...   prints 'entry-number | start of entry'"""
 import sys,re,unicodedata
-P='/home/claude/ivc/work_data/lexicons/dedr/dedr_entries.tsv'
+P='/home/antigravity/Cuuper22/ivc/work_data/lexicons/dedr/dedr_entries.tsv'
 txt=' '.join(l.rstrip('\n').replace('\t',' ',1) for l in open(P,encoding='utf8'))
 txt=unicodedata.normalize('NFC',txt)
 ents=[(m.group(1),m.start()) for m in re.finditer(r'(?<![\w.])(\d{1,4}) (?:\([a-z]\) )?(?=(?:Ta|Ma|Ko|To|Ka|Koḍ|Tu|Te|Kol|Nk|Pa|Ga|Go|Kui|Kur|Br|Ir)\.)',txt)]

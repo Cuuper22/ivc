@@ -24,7 +24,7 @@ import os, re, sys, io, contextlib, collections, random
 import numpy as np, pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 random.seed(202); np.random.seed(202)
-ROOT = '/home/claude/ivc'; OUT = f'{ROOT}/work_data/spots'; os.makedirs(OUT, exist_ok=True)
+ROOT = '/home/antigravity/Cuuper22/ivc'; OUT = f'{ROOT}/work_data/spots'; os.makedirs(OUT, exist_ok=True)
 LOG = open(f'{OUT}/s2_log.txt', 'w')
 def say(*a):
     s = ' '.join(str(x) for x in a); print(s, flush=True); LOG.write(s + '\n')

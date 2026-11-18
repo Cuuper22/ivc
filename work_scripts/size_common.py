@@ -34,7 +34,7 @@ import numpy as np, pandas as pd
 with contextlib.redirect_stdout(io.StringIO()):
     from twins_common import seals, crest_of, text_kind
     from frame2_pictures import pic, pic_book
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 OUT = f'{ROOT}/work_data/size'; os.makedirs(OUT, exist_ok=True)
 T0 = time.time()
 def log(tag, *a): print(f'[{tag} {time.time()-T0:6.1f}s]', *a, flush=True)

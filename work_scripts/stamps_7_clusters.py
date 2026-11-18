@@ -7,7 +7,7 @@ New idea: impression texts that name a house (a crest) at Lothal against Lothal'
 stamped in the warehouse square are crests of Lothal seals?
 """
 import numpy as np, pandas as pd
-OUT = '/home/claude/ivc/work_data/stamps'; rng = np.random.default_rng(53)
+OUT = '/home/antigravity/Cuuper22/ivc/work_data/stamps'; rng = np.random.default_rng(53)
 I = pd.read_csv(f'{OUT}/impressions.csv', dtype=str).fillna(''); I['lost'] = I.lost.astype(int)
 C = I[(I.lost == 0) & (I.area != '')]
 for (site, area) in [('Lothal', 'SRG 3GX 10'), ('Kalibangan', 'KLB-1'), ('Mohenjo-daro', 'DKG. (S)'), ('Harappa', 'FTrench 43'), ('Mohenjo-daro', 'DK')]:
@@ -17,7 +17,7 @@ for (site, area) in [('Lothal', 'SRG 3GX 10'), ('Kalibangan', 'KLB-1'), ('Mohenj
     print(f'{site} {area}: {k} complete faces, {real} different texts; draws from other places {dr.mean():.2f} '
           f'(P fewer-or-equal {(dr <= real).mean():.4f}, P more-or-equal {(dr >= real).mean():.4f})')
 O = pd.read_csv(f'{OUT}/objects.csv', dtype=str).fillna('')
-NA = pd.read_csv('/home/claude/ivc/work_data/registry/names_all.csv', dtype=str).fillna('')
+NA = pd.read_csv('/home/antigravity/Cuuper22/ivc/work_data/registry/names_all.csv', dtype=str).fillna('')
 cr = dict(zip(NA.face_id, NA.crest))
 L = I[I.site == 'Lothal']; Ls = O[(O.site == 'Lothal') & (O.tier == 'seal')]
 ci = {cr.get(f, '') for f in L.face} - {''}; cs = {cr.get(f, '') for f in Ls.face} - {''}

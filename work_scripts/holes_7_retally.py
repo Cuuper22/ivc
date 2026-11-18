@@ -5,9 +5,9 @@
 Marks as in long_texts_read.py: reads = every sign valued and no avoided class pair; partial = an unvalued or lost sign; unread = one unvalued sign alone;
 nonsense = an avoided class pair.  Output: work_data/holes/retally_phrases.csv and the counts."""
 import sys, json, collections
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 import long_common as LC
-HOLES = '/home/claude/ivc/work_data/holes'
+HOLES = '/home/antigravity/Cuuper22/ivc/work_data/holes'
 from long_common import *
 from sound_v2_tiers import CLASS
 NEW = {'060': ('uḷ', 'in'), '335': ('kūṭu', 'bin'), '711': ('pāṉai', 'pot'), '525': ('katavu', 'door'), '526': ('katavu', 'door'), '527': ('katavu', 'door'),

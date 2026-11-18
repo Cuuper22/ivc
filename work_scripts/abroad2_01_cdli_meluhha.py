@@ -3,7 +3,7 @@ and list the lines that mention cloth, wool, thread, weaving, wood, copper etc. 
 Prediction written first: if Meluhha cloth/cotton is a real trade item, some Ur III/Sargonic text has a cloth word within a few lines of Meluhha.
 Output: work_data/abroad2/cdli_meluhha_atf.jsonl, cdli_meluhha_textile_lines.csv, log."""
 import json, time, re, sys, urllib.parse, urllib.request, os, csv
-OUT='/home/claude/ivc/work_data/abroad2'; os.makedirs(OUT,exist_ok=True)
+OUT='/home/antigravity/Cuuper22/ivc/work_data/abroad2'; os.makedirs(OUT,exist_ok=True)
 TERMS=['me-luh-ha','me-luh-ha{ki}','me-lu-uh-ha','me-lu-ha','me-luh-ha-ke4','me-luh-hi','me-lu-ha{ki}','meluhha']
 def get(url):
     for k in range(4):

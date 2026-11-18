@@ -1,7 +1,7 @@
 """Second way in, item 1. Prediction first: among Girsu/Lagash/Umma tablets mentioning Meluhha or Guabba, a minority (<30%) are sealed, and nearly all sealed ones carry a cuneiform legend (Ur III administrative seals); an uninscribed/pictorial seal on a wool or cloth tablet would be rare (0-2 cases).
 Pulls CDLI search JSON, keeps seals/impressions fields."""
 import json, time, urllib.parse, urllib.request, re, csv
-OUT='/home/claude/ivc/work_data/abroad2'
+OUT='/home/antigravity/Cuuper22/ivc/work_data/abroad2'
 def get(u):
     for k in range(4):
         try: return urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':'ivc-research'}),timeout=90).read()

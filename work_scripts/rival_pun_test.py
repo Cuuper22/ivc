@@ -1,5 +1,5 @@
 """The picture-word pun test, identical for every language, run on the full dictionaries in work_data/lexicons/tsv/.
-Run from /home/claude/ivc:  python3 work_scripts/rival_pun_test.py [out.json]
+Run from /home/antigravity/Cuuper22/ivc:  python3 work_scripts/rival_pun_test.py [out.json]
 Rule (same as lang_pun_chance.py): for each of 9 pictures, a PICTURE WORD is a dictionary entry whose first gloss names the pictured thing.
 A HIT = some OTHER entry whose headword shares the first L letters (diacritics, case and punctuation removed) and whose gloss carries the
 meaning the SLOT needs. Chance for a slot = the share of ALL entries of the same dictionary (same key length) that have such a look-alike,

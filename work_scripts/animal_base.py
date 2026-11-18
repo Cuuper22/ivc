@@ -2,8 +2,8 @@
 Reading order = stored order reversed. Animal coarse classes come from the catalogue `symbol` column (checked on photos, see animal_photocheck.md in jobs/out).
 Template pieces: name_rows.csv (tight parse) + masters census (jar and the sign after it)."""
 import pandas as pd, numpy as np, re, sys
-sys.path.insert(0,'/home/claude/ivc/work_scripts')
-ROOT='/home/claude/ivc'
+sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
+ROOT='/home/antigravity/Cuuper22/ivc'
 M=pd.read_csv(f'{ROOT}/research/data/open_prototype/lipi/metadata_filtered.csv',dtype=str,keep_default_na=False)
 G=pd.read_csv(f'{ROOT}/work_data/gloss2_all.csv',dtype=str,keep_default_na=False)
 N=pd.read_csv(f'{ROOT}/work_data/name_rows.csv',dtype=str,keep_default_na=False)

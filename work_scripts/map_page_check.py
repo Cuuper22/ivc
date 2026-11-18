@@ -1,5 +1,5 @@
 import re
-h=open('/home/claude/ivc/map_page/index.html').read()
+h=open('/home/antigravity/Cuuper22/ivc/map_page/index.html').read()
 js="\n".join(re.findall(r'<script[^>]*>(.*?)</script>',h,flags=re.S))
 stub='''const mkEl=()=>({children:[],attrs:{},classList:{toggle(){},add(){},remove(){}},setAttribute(k,v){this.attrs[k]=v},appendChild(c){return c},addEventListener(){},querySelector(){return mkEl()},set textContent(v){},set innerHTML(v){},style:{}});
 const els={};globalThis.document={getElementById:id=>els[id]||(els[id]=mkEl()),createElementNS:()=>mkEl(),createElement:()=>mkEl(),createTextNode:()=>mkEl()};

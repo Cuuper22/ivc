@@ -28,7 +28,7 @@ import numpy as np, pandas as pd
 with contextlib.redirect_stdout(io.StringIO()):
     from recheck_common import stone_map, faces as lipi_faces
 
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 OUTF = f'{ROOT}/work_data/front'
 os.makedirs(OUTF, exist_ok=True)
 T0 = time.time()

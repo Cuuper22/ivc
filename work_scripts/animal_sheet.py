@@ -1,8 +1,8 @@
 # Make contact sheets of seal photos for a list of animal labels (to read what each catalogue label looks like).
 import pandas as pd, os, re, sys, random
 from PIL import Image, ImageDraw
-R='/home/claude/ivc/evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images'
-M=pd.read_csv('/home/claude/ivc/research/data/open_prototype/lipi/metadata_filtered.csv',dtype=str,keep_default_na=False)
+R='/home/antigravity/Cuuper22/ivc/evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images'
+M=pd.read_csv('/home/antigravity/Cuuper22/ivc/research/data/open_prototype/lipi/metadata_filtered.csv',dtype=str,keep_default_na=False)
 fs=os.listdir(R); pre={}
 for f in fs: pre.setdefault(f.split('_')[0],[]).append(f)
 def pick(c):

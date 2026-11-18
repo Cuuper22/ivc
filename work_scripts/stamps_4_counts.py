@@ -11,7 +11,7 @@ Writes work_data/stamps/countline_vs_records.csv; stdout -> log_4.txt
 """
 import re, collections, time
 import numpy as np, pandas as pd
-ROOT = '/home/claude/ivc'; OUT = f'{ROOT}/work_data/stamps'
+ROOT = '/home/antigravity/Cuuper22/ivc'; OUT = f'{ROOT}/work_data/stamps'
 T0 = time.time()
 rng = np.random.default_rng(31)
 D = pd.read_csv(f'{ROOT}/research/data/open_prototype/lipi/metadata_filtered.csv', dtype=str).fillna('').set_index('id')

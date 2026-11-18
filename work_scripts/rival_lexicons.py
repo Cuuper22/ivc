@@ -1,5 +1,5 @@
 """Turn every downloaded dictionary into one plain table per language: headword TAB first-sense gloss (lower case).
-Run from /home/claude/ivc:  python3 work_scripts/rival_lexicons.py
+Run from /home/antigravity/Cuuper22/ivc:  python3 work_scripts/rival_lexicons.py
 Input : work_data/lexicons/raw/*   (downloads, see work_data/lexicons/SOURCES.md)   /tmp/dedr/dedr_text.txt (DEDR, from lang_dedr_fetch.py)
 Output: work_data/lexicons/tsv/<name>.tsv   and a size report on screen.
 A gloss is the text after the headword up to the first full stop (cap 200 characters), like the Tamil gloss of lang_pun_chance.py."""

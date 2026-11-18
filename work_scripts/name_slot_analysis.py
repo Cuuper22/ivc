@@ -5,7 +5,7 @@ with roles who/house/house-marker/fixed-ending/phrase/head/second-slot/mark."""
 import pandas as pd, numpy as np, collections, random, itertools, math, re
 from scipy import stats
 random.seed(7); np.random.seed(7)
-ROOT='/home/claude/ivc'
+ROOT='/home/antigravity/Cuuper22/ivc'
 o=pd.read_csv(f'{ROOT}/work_data/name_rows.csv',dtype=str).fillna('')
 sh=pd.read_csv(f'{ROOT}/work_data/sign_shapes.csv',dtype=str).set_index('lipi_wells_number').shape_description.to_dict()
 def S(s): return f'{s} ({sh.get(s,"?")[:38]})'

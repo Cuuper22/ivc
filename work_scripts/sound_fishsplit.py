@@ -3,7 +3,7 @@
 swapped for two signs (spell2.csv), the share whose second sign is the plain fish 220."""
 import pandas as pd, collections
 from scipy.stats import fisher_exact
-sp = pd.read_csv('/home/claude/ivc/work_data/sound/spell2.csv', dtype=str)
+sp = pd.read_csv('/home/antigravity/Cuuper22/ivc/work_data/sound/spell2.csv', dtype=str)
 sp['frames'] = sp.frames.astype(int); sp['second'] = sp.two.str.split('-').str[1]
 g = sp.groupby('one').apply(lambda t: pd.Series(dict(frames=t.frames.sum(), fish_end=t[t.second == '220'].frames.sum())))
 fish = ['233', '235', '240', '231', '226', '236']

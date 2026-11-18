@@ -14,7 +14,7 @@ Test types:
   COMU  : same on the NEW TEXTS (Mu); one stratum
 """
 import sys, csv, time
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from decoy_loader import *
 
 # ---------------- sign sets taken from the word meanings on the list ----------------
@@ -143,7 +143,7 @@ if __name__ == '__main__':
         except Exception as e:
             rows.append((item, sign, pred + ' [dir=%s]' % direction, '', 'could not run: %r' % (e,), '', 'could not run'))
         print(item, sign, rows[-1][-1], rows[-1][4], 'P=%s' % rows[-1][5], '%.1fs' % (time.time() - t0), flush=True)
-    with open('/home/claude/ivc/work_data/decoy/results_A.csv', 'w', newline='') as f:
+    with open('/home/antigravity/Cuuper22/ivc/work_data/decoy/results_A.csv', 'w', newline='') as f:
         w = csv.writer(f)
         w.writerow(['item', 'sign', 'prediction', 'base_rate', 'observed', 'P', 'outcome'])
         w.writerows(rows)

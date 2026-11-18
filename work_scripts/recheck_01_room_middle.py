@@ -15,7 +15,7 @@ Run: python3 recheck_01_room_middle.py   (about 1 minute)
 """
 import sys, collections, random, re, importlib.util
 import numpy as np
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from recheck_common import *
 say = log_to(f'{OUT}/r01_log.txt')
 spec = importlib.util.spec_from_file_location('fr', f'{ROOT}/research/extensions_20261117/findspot_room/findspot_room.py')

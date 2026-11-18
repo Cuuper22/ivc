@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """One row per hole sign: every slot, counts before/after, jar, object kinds, sites, neighbours, second-catalogue partner.  -> work_data/holes/slots_eight.csv"""
 import sys, collections
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from holes_common import *
 import pandas as pd
 ls = lines(True)

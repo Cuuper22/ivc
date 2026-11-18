@@ -1,9 +1,9 @@
 """Part 4 redesign: opener against X's first sign / last sign / animal / site (mutual information, shuffle p)."""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from masters_common import *
 import numpy as np, random
 from collections import Counter
-C=pd.read_csv('/home/claude/ivc/work_data/masters/census.csv',dtype=str,keep_default_na=False)
+C=pd.read_csv('/home/antigravity/Cuuper22/ivc/work_data/masters/census.csv',dtype=str,keep_default_na=False)
 S=C[C.grp=='seal'].copy()
 S['opn']=S.opener.map(lambda o:'cap' if o=='060-920' else ('count' if o in('diamond','wheel','twin') else 'none'))
 S['f']=S.X.str.split('-').str[0]; S['l']=S.X.str.split('-').str[-1]

@@ -1,6 +1,6 @@
 """Part 1/2: census of X (signs before the jar, opener removed) over ALL object types, and what tablet-headed X's issue.
 Writes work_data/masters/census.csv, x_summary.csv"""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from masters_common import *
 from collections import Counter
 def grp(t):
@@ -20,12 +20,12 @@ for r in D.itertuples():
 C=pd.DataFrame(rows)
 # attach area & other columns by merge
 C=C.merge(M[['id','area-section','block-house','period']],on='id')
-C.to_csv('/home/claude/ivc/work_data/masters/census.csv',index=False)
+C.to_csv('/home/antigravity/Cuuper22/ivc/work_data/masters/census.csv',index=False)
 # per object (collapse faces): keep first face per object
 S=C.groupby('X').agg(n=('id','size'),objs=('object','nunique'),sites=('site',lambda s:len(set(s))),site_list=('site',lambda s:dict(Counter(s))),
    grps=('grp',lambda s:dict(Counter(s))),nouns=('noun',lambda s:dict(Counter(s))),animals=('sym',lambda s:dict(Counter(x for x in s if x not in('','-')))),
    med_face=('face',lambda s:s[s>0].median())).sort_values('n',ascending=False)
-S.to_csv('/home/claude/ivc/work_data/masters/x_summary.csv')
+S.to_csv('/home/antigravity/Cuuper22/ivc/work_data/masters/x_summary.csv')
 pd.set_option('display.width',250,'display.max_colwidth',120)
 print(len(C),'texts with X;',C.X.nunique(),'distinct X')
 print(S.head(40)[['n','sites','grps','nouns','animals']].to_string())

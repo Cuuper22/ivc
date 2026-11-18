@@ -2,12 +2,12 @@
 import sys,os; sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 import pandas as pd
 from sound_values import ALL_SOUNDS
-V=pd.read_csv('/home/claude/ivc/work_data/sound_v3/values_v3.csv',dtype=str,keep_default_na=False).set_index('sign')
+V=pd.read_csv('/home/antigravity/Cuuper22/ivc/work_data/sound_v3/values_v3.csv',dtype=str,keep_default_na=False).set_index('sign')
 def snd(s):
     if s in V.index and V.loc[s,'sound']: return V.loc[s,'sound'],V.loc[s,'english']
     if s in ALL_SOUNDS: return ALL_SOUNDS[s]
     return None
-b=pd.read_csv('/home/claude/ivc/work_data/animal/animal_base.csv',dtype=str,keep_default_na=False)
+b=pd.read_csv('/home/antigravity/Cuuper22/ivc/work_data/animal/animal_base.csv',dtype=str,keep_default_na=False)
 def full(t): 
     x=t.split('-'); return all(snd(s) for s in x) and len(x)>=2
 b['ok']=b.reading_order_text.map(full)

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Step 2: each reading measured in Lipi numbers and in Mahadevan numbers.  Run: python3 second_measure.py"""
 import sys, collections
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from mah_common import *
 
 # ---- sign sets in the two numberings

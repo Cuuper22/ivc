@@ -14,7 +14,7 @@
          R711a: lines with 711 and no cup/jar after the count still carry a tall count (2 of 2).
 """
 import sys, collections, math, statistics
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from holes_common import *
 import pandas as pd
 ls = lines(True); N = len(ls)

@@ -1,7 +1,7 @@
 """Job: the travelled name. Step 4: contact sheets of the photos of 590-390 objects (one primary photo per object, labelled). Output: travelled_out/sheet_N.jpg"""
 import pandas as pd, os, re
 from PIL import Image, ImageDraw, ImageOps
-R='/home/claude/ivc/'
+R='/home/antigravity/Cuuper22/ivc/'
 S=R+'evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/'
 d=pd.read_csv(R+'work_scripts/travelled_out/t590_390.csv',dtype=str)
 files=sorted(os.listdir(S))

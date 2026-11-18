@@ -1,5 +1,5 @@
 """Two counting systems test + count-value distribution shapes per counted thing."""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from counted_common import *
 from scipy.stats import chi2_contingency, fisher_exact
 import numpy as np

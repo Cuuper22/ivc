@@ -22,7 +22,7 @@ import os, re, collections, random, math
 import pandas as pd, numpy as np
 from scipy.stats import fisher_exact
 random.seed(7); np.random.seed(7)
-ROOT = '/home/claude/ivc'; OUT = f'{ROOT}/work_data/registry'
+ROOT = '/home/antigravity/Cuuper22/ivc'; OUT = f'{ROOT}/work_data/registry'
 LOG = open(f'{OUT}/tests.txt', 'w')
 def say(*a):
     s = ' '.join(str(x) for x in a); print(s, flush=True); LOG.write(s + '\n')

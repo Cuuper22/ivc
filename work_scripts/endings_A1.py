@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """A. Endings: which names take which ending; do names take several. Output printed + work_data/endings/A1_*.csv"""
 import pandas as pd, numpy as np, random, collections
-R='/home/claude/ivc'
+R='/home/antigravity/Cuuper22/ivc'
 d=pd.read_csv(f'{R}/work_data/endings/faces.csv',dtype=str,keep_default_na=False)
 for c in ['face','hmm','vmm']: d[c]=pd.to_numeric(d[c],errors='coerce')
 d['jarman']=d.jarman=='True'; d['isseal']=d.isseal=='True'

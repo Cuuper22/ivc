@@ -13,7 +13,7 @@ confined to seals that can carry the property? (c) identical texts in one house 
 Run: python3 recheck_03_name_slot.py   (about 1-2 minutes)
 """
 import sys, re, collections, itertools, random
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 import numpy as np, pandas as pd
 from recheck_common import *
 say = log_to(f'{OUT}/r03_log.txt')

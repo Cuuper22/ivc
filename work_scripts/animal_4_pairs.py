@@ -6,7 +6,7 @@ PREDICTIONS (written before the numbers): the stand letter is a mark of the hous
  Q5 same ending sign: ratio ~1.
 Null: labels shuffled inside site x seal-shape x seal-size tercile. Pairs counted once.
 """
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from animal_common import *
 rng=np.random.default_rng(5); NP=2000
 d=b[(b.g!='')&(b.g!='NONE')].copy().reset_index(drop=True)

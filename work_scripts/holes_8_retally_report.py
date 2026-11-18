@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Tally and per-sign effect of the new values on the 186 long-text phrases.  Reads retally_phrases.csv (holes_7_retally.py) and read.json."""
 import json, collections, pandas as pd
-HOLES = '/home/claude/ivc/work_data/holes'
+HOLES = '/home/antigravity/Cuuper22/ivc/work_data/holes'
 d = pd.read_csv(f'{HOLES}/retally_phrases.csv', keep_default_na=False)
-T = json.load(open('/home/claude/ivc/work_data/long_texts/read.json'))
+T = json.load(open('/home/antigravity/Cuuper22/ivc/work_data/long_texts/read.json'))
 old_unv = []
 for t in T:
     for p in t['read']: old_unv.append(p['unvalued'])

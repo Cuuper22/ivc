@@ -4,7 +4,7 @@ Prose sections are in this file; tables are filled from the CSVs."""
 import pandas as pd, sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from sound_values import VALUES
-ROOT = '/home/claude/ivc'; S = f'{ROOT}/work_data/sound'
+ROOT = '/home/antigravity/Cuuper22/ivc'; S = f'{ROOT}/work_data/sound'
 prof = pd.read_csv(f'{S}/profile.csv', dtype=str).fillna('').set_index('sign')
 chk = pd.read_csv(f'{S}/checks.csv', dtype=str).fillna('').set_index('sign')
 rd = pd.read_csv(f'{S}/readable_names.csv', dtype=str).fillna('')

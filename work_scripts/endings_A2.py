@@ -2,7 +2,7 @@
 """A2: each ending against seal size, animal, material, type, zone, period, region, name length, crest type."""
 import pandas as pd, numpy as np, collections, random
 from scipy import stats
-R='/home/claude/ivc'
+R='/home/antigravity/Cuuper22/ivc'
 d=pd.read_csv(f'{R}/work_data/endings/A_seals.csv',dtype=str,keep_default_na=False)
 for c in ['face','hmm','vmm']: d[c]=pd.to_numeric(d[c],errors='coerce')
 d['th']=pd.to_numeric(d['thickness(mm)'],errors='coerce')

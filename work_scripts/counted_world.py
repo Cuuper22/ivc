@@ -1,7 +1,7 @@
 """Tie counted things to metadata: for each counted sign, enrichment of object type / material / site / area / animal
 among objects where it is counted, against all objects in the corpus (and against all objects carrying the sign).
 Prints top over-represented attributes with binomial p. Output work_data/counted/world_<frame>.csv"""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from counted_common import *
 from scipy.stats import binomtest
 d=pd.read_csv(f'{ROOT}/work_data/counted/instances_resolved.csv',dtype=str,keep_default_na=False)

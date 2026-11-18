@@ -1,7 +1,7 @@
 """How over-represented are the box/tree-family signs among objects found abroad? (objects, not faces; identical-text copies collapsed within the foreign set only because the foreign set has none.)
 Prediction first: box 590 and tree signs (390,392,405,406,407) appear on a larger share of foreign objects than of home objects (earlier job: tree 5 of 14 foreign square seals vs 9.8%)."""
 import sys
-sys.path.insert(0,'/home/claude/ivc/work_scripts')
+sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from cotton_common import *
 d=faces()
 fs={'Altyn Depe','Failaka','Girsu','Gonur Depe','Hajar','Janabiyah','Kalba','Karzakan','Kish','Luristan','Miri Qalat','Murda Sang','Nippur',"Qala'at al-Bahrain","Ra's al-Junayz",'Saar','Salut','Shortughai','Sibri','Susa','Tell Umma','Tello','Tepe Yahya','Ur','Unknown','Ornach area','Nindowari-damb'}

@@ -1,6 +1,6 @@
 """Where each counted thing lives. One row per counted thing (sign + frame), shares over objects where it is counted.
 Output work_data/counted/where.csv"""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from counted_common import *
 d=pd.read_csv(f'{ROOT}/work_data/counted/instances_resolved.csv',dtype=str,keep_default_na=False)
 allr=pd.read_csv(DATA,dtype=str,keep_default_na=False)

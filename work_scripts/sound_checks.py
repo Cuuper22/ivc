@@ -8,7 +8,7 @@ from scipy.stats import mannwhitneyu, binomtest
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from gloss2 import load2, learn, parse_face, CNT
 from sound_values import VALUES
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 rng = np.random.default_rng(7)
 SHORT = {f'{i:03d}' for i in range(1, 8)} | {f'{i:03d}' for i in range(12, 19)}
 TALL = {f'{i:03d}' for i in range(31, 37)}

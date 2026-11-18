@@ -2,7 +2,7 @@
 """Build the ending table: one row per text face with its ending (jar / spear / porter / comb / none), name, object, findspot.
 Reading order = stored order reversed. Output work_data/endings/faces.csv"""
 import pandas as pd, numpy as np, re
-R='/home/claude/ivc'
+R='/home/antigravity/Cuuper22/ivc'
 m=pd.read_csv(f'{R}/research/data/open_prototype/lipi/metadata_filtered.csv',dtype=str)
 g=pd.read_csv(f'{R}/work_data/gloss2_all.csv',dtype=str)
 g=g[['id','reading_order_text','template','name_signs','ending_kind','relation_sign','tight']]

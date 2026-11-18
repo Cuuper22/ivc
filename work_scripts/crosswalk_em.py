@@ -9,7 +9,7 @@ known matches. Output: for every Lipi sign its Mahadevan partner(s) with positio
 """
 import sys, os, pickle, math, collections, time
 import numpy as np
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from mah_common import *
 
 SEEDS = {'740': 342, '002': 99, '861': 267, '817': 267, '820': 391, '700': 328, '220': 59,
@@ -104,5 +104,5 @@ if __name__ == '__main__':
     noseed = '--noseed' in sys.argv
     t0 = time.time()
     out = run(use_seeds=not noseed)
-    pickle.dump(out, open(f'/home/claude/ivc/work_data/crosswalk_em_raw{"_noseed" if noseed else ""}.pkl', 'wb'))
+    pickle.dump(out, open(f'/home/antigravity/Cuuper22/ivc/work_data/crosswalk_em_raw{"_noseed" if noseed else ""}.pkl', 'wb'))
     print('done', round(time.time() - t0), 's')

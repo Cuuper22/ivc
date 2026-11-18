@@ -14,7 +14,7 @@ Writes work_data/copper/objects.csv (one row per first-catalogue object), m77_ob
 (one row per text: copies in each catalogue, union copies, pictures by source, picture-side signs, findspots, bins),
 and log_1.txt.
 """
-import sys; sys.path.insert(0, '/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from copper_common import *
 say = say_to(f'{OUT}/log_1.txt')
 say('loading the two catalogues')

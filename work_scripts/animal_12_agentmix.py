@@ -1,7 +1,7 @@
 """Do agent seals (`X jar man`) favour particular animals compared with owner seals (`X jar`)?
 PREDICTION written before the numbers: if animal were rank/office, agents (junior to the master) would use common beasts (unicorn) more and rare beasts less; ratio for rare beasts (not unicorn) <0.8.
 Null: labels shuffled inside site x shape."""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from animal_common import *
 rng=np.random.default_rng(9); NP=5000
 d=b[(b.g!='')&(b.g!='NONE')&b.noun_c.isin(['090','none'])&(b.X_c!='')].copy().reset_index(drop=True)

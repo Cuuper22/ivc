@@ -9,7 +9,7 @@ identical full text (a possible double entry)?
 Run: python3 recheck_02_photo_pairs.py   (seconds)
 """
 import sys, re, glob
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from recheck_common import *
 say = log_to(f'{OUT}/r02_log.txt')
 d = faces(); f2s, _ = stone_map(d)

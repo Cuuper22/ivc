@@ -9,7 +9,7 @@ Run: python3 sound_v7_master.py"""
 import os, sys
 import pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 v3 = pd.read_csv(f'{ROOT}/work_data/values_master3.csv', dtype=str).fillna('').set_index('sign')
 v2 = pd.read_csv(f'{ROOT}/work_data/values_master2.csv', dtype=str).fillna('').set_index('sign')
 

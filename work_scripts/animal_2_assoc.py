@@ -8,7 +8,7 @@ PREDICTIONS written before the numbers (committed reading: animal = clan/lineage
  P6 office opening 920-060-741 : animal mix differs from site baseline.
  P7 material, shape: control; expected to go with animal through seal type only.
 """
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from animal_common import *
 from scipy.stats import chi2_contingency
 rng=np.random.default_rng(7); NP=3000

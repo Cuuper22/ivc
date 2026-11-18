@@ -36,7 +36,7 @@ import sys, os, collections, time, re
 import numpy as np, pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 OUT = f'{ROOT}/work_data/frame'
 os.makedirs(OUT, exist_ok=True)
 T0 = time.time()

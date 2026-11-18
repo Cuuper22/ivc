@@ -3,7 +3,7 @@
 Reading order = stored text reversed."""
 import re, collections, math, itertools
 import pandas as pd
-ROOT='/home/claude/ivc'
+ROOT='/home/antigravity/Cuuper22/ivc'
 d=pd.read_csv(f'{ROOT}/research/data/open_prototype/lipi/metadata_filtered.csv',dtype=str).fillna('')
 sh=pd.read_csv(f'{ROOT}/work_data/sign_shapes.csv',dtype=str).set_index('lipi_wells_number')['shape_description'].to_dict()
 st=pd.read_csv(f'{ROOT}/work_data/slot_table.csv',dtype=str)

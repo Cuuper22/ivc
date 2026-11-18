@@ -15,7 +15,7 @@ Run: python3 -I work_scripts/signlist_6_yardsticks.py   Output: work_data/signli
 """
 import re, csv, collections, sys, os
 import numpy as np
-OUT = '/home/claude/ivc/work_data/signlist'
+OUT = '/home/antigravity/Cuuper22/ivc/work_data/signlist'
 fh = open(f'{OUT}/log_yardsticks.txt', 'w')
 def say(*a):
     s = ' '.join(str(x) for x in a); print(s, flush=True); fh.write(s + '\n'); fh.flush()

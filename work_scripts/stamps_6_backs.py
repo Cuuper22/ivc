@@ -7,7 +7,7 @@ BACKS_SEEN = what the back photographs in the CISI image set show (looked at one
 """
 import pandas as pd, re
 from scipy.stats import fisher_exact
-OUT = '/home/claude/ivc/work_data/stamps'
+OUT = '/home/antigravity/Cuuper22/ivc/work_data/stamps'
 BACKS_SEEN = {
  'L-162': ('TAG:B', 'straight edge and corner: wooden box'), 'L-168': ('TAG:B', 'curved profile wrapped over an edge: box lid'),
  'M-1383': ('TAG:R', 'impression sits on the shoulder of a large storage jar (whole-jar photo)'),

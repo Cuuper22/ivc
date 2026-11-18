@@ -2,7 +2,7 @@
 """Assemble jobs/out/name_slot.md from name_rows.csv and the 25-seal table. Run after name_slot_build.py and name_slot_account.py."""
 import warnings; warnings.filterwarnings('ignore')
 import pandas as pd, collections
-ROOT='/home/claude/ivc'
+ROOT='/home/antigravity/Cuuper22/ivc'
 o=pd.read_csv(f'{ROOT}/work_data/name_rows.csv',dtype=str).fillna('')
 sh=pd.read_csv(f'{ROOT}/work_data/sign_shapes.csv',dtype=str).set_index('lipi_wells_number').shape_description.to_dict()
 for c in ['tight','has_class']: o[c]=o[c]=='True'

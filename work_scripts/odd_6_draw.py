@@ -3,7 +3,7 @@
 Seed 20261119 (earlier draws: 20261117, and 20261118 on the rules before the 390 fix and the fifth-pass values). Rules were frozen (corpus_build2.py, values_master2.csv) before this was run.
 Faces are drawn as they occur (copies count as often as they occur). Writes work_data/odd/corpus_draw60b.csv."""
 import random, pandas as pd
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 SEED = 20261119
 c = pd.read_csv(f'{ROOT}/work_data/corpus_english2.csv', dtype=str).fillna('')
 w = c[c.grade == 'whole'].reset_index(drop=True)

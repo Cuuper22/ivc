@@ -20,7 +20,7 @@ Output: /tmp/lang_m2/lex/<dict>.tsv (the Sanskrit table is ~30 MB, so all tables
 """
 import os, re, csv, json, html, shutil, unicodedata, collections, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-ROOT = '/home/claude/ivc'; LX = f'{ROOT}/work_data/lexicons'; M1 = f'{ROOT}/work_data/lang_m'
+ROOT = '/home/antigravity/Cuuper22/ivc'; LX = f'{ROOT}/work_data/lexicons'; M1 = f'{ROOT}/work_data/lang_m'
 OUT = '/tmp/lang_m2/lex'; REP = f'{ROOT}/work_data/lang_m2'
 os.makedirs(OUT, exist_ok=True); os.makedirs(REP, exist_ok=True)
 def log(*a): print('[lang_m2_lexicons]', *a, flush=True)

@@ -8,7 +8,7 @@ PREDICTIONS (written before the numbers):
  S5 Stand-type letters (W,J,S,I,L) show no over-used signs beyond W's tie to seal size (big seals take longer, rarer signs).
 Reporting: ratio=obs/chance, P one-sided (over or under), Benjamini-Hochberg q over all cells.
 """
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from animal_common import *
 rng=np.random.default_rng(3); NP=4000
 mode=sys.argv[1] if len(sys.argv)>1 else 'SPECIES'

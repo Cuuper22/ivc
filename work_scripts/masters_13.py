@@ -1,9 +1,9 @@
 """Remaining numbers: agent-name last signs, 176 comb tablets, 415-100 chain counts, Lothal tag who-list, 920-060-741 office prefix."""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from masters_common import *
 from collections import Counter
 from scipy.stats import fisher_exact
-C=pd.read_csv('/home/claude/ivc/work_data/masters/census.csv',dtype=str,keep_default_na=False)
+C=pd.read_csv('/home/antigravity/Cuuper22/ivc/work_data/masters/census.csv',dtype=str,keep_default_na=False)
 S=C[C.grp=='seal']; man=S[S.noun=='090']; own=S[S.noun=='none']
 for L in ['220','240','035','101']:
     a=(man.X.str.split('-').str[-1]==L).sum(); c=(own.X.str.split('-').str[-1]==L).sum()
@@ -22,7 +22,7 @@ print('  with jar close',sum('740' in t for t in p.toks))
 x=D[D.toks.map(lambda t:any(t[i:i+2]==['415','100'] for i in range(len(t)-1)))]
 print('415-100 objects',len(x),x.object.nunique(),'sites',dict(Counter(x.site)),dict(Counter(x.type.str.split(':').str[0])))
 # Lothal tags who
-T=pd.read_csv('/home/claude/ivc/work_data/masters/tags.csv',dtype=str,keep_default_na=False)
+T=pd.read_csv('/home/antigravity/Cuuper22/ivc/work_data/masters/tags.csv',dtype=str,keep_default_na=False)
 L=T[T.site=='Lothal']
 print('Lothal tag rows',len(L),'objects',L.object.nunique())
 def lothal_kind(tx):

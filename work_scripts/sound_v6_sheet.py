@@ -3,7 +3,7 @@
 usage: python3 sound_v6_sheet.py OUT.jpg CISI_FILE_STEM [...]   (file stems as in the photo folder, e.g. M-552_B)"""
 import sys, os
 from PIL import Image, ImageDraw
-IMG = '/home/claude/ivc/evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images'
+IMG = '/home/antigravity/Cuuper22/ivc/evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images'
 out, stems = sys.argv[1], sys.argv[2:]
 H = 200; ims = []
 for s in stems:

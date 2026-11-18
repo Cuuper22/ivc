@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Slot summary of each of the eight signs: every slot, neighbours, object kinds, sites, findspots, counts after/before."""
 import sys, collections
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from holes_common import *
 ls = lines(True)
 base_kind = collections.Counter(kind(L['type']) for L in ls)

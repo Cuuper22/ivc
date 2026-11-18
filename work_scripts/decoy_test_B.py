@@ -20,7 +20,7 @@ Procedure (same for all 60 items, fixed in advance):
   co-occurrence sets never include the sign itself; "number sign" = any sign in VAL other than the sign itself.
 """
 import sys, csv, time
-sys.path.insert(0, '/home/claude/ivc/work_scripts')
+sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from decoy_loader import *
 import numpy as np
 
@@ -153,7 +153,7 @@ if __name__ == '__main__':
         r = run(i); s, en, pr, cat, direc, text = P[i]
         rows.append((i, s, r, text, direc, cat))
         print(f'[{i:2d}/60 {100*i/60:5.1f}% {time.time()-t0:5.0f}s] sign {s} ({en}): n={r["n"]} obs={r["obs"]} base={r["base"]} P={r["P"]} -> {r["outcome"]}', flush=True)
-    with open('/home/claude/ivc/work_data/decoy/results_B.csv', 'w', newline='') as fh:
+    with open('/home/antigravity/Cuuper22/ivc/work_data/decoy/results_B.csv', 'w', newline='') as fh:
         w = csv.writer(fh); w.writerow(['item', 'sign', 'prediction', 'base_rate', 'observed', 'P', 'outcome'])
         for i, s, r, text, direc, cat in rows:
             pred = f'[{"new texts" if cat == "Mu" else "Lipi"}; {"higher" if direc == "greater" else "lower"}] {text}'

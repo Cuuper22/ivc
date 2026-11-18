@@ -9,7 +9,7 @@ import sys, os, json, time, collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import numpy as np, pandas as pd
 from sense_core import *
-ROOT = '/home/claude/ivc'; D = f'{ROOT}/work_data/sense'
+ROOT = '/home/antigravity/Cuuper22/ivc'; D = f'{ROOT}/work_data/sense'
 N = int(sys.argv[1]) if len(sys.argv) > 1 else 1000
 K = int(sys.argv[2]) if len(sys.argv) > 2 else 1   # keep only each word's first K senses
 VERS = ['ov', 'lift', 'cos']

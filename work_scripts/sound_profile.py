@@ -7,7 +7,7 @@ import sys, os, collections, statistics
 import pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from gloss2 import load2, learn, parse_face, CNT
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 OUT = f'{ROOT}/work_data/sound'
 
 # signs that already have a working sound or a job of their own in this run

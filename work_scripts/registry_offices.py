@@ -10,7 +10,7 @@ PREDICTION (written before counting): king 142 is held by one house per city (on
 Writes work_data/registry/offices.csv and offices.txt.  Run: python3 registry_offices.py (a few seconds).
 """
 import collections, pandas as pd
-ROOT = '/home/claude/ivc'; OUT = f'{ROOT}/work_data/registry'
+ROOT = '/home/antigravity/Cuuper22/ivc'; OUT = f'{ROOT}/work_data/registry'
 P = pd.read_csv(f'{OUT}/people.csv', dtype=str).fillna('')
 A = pd.read_csv(f'{OUT}/names_all.csv', dtype=str).fillna('')
 A = A[(A.damaged == 'False') & (A.goods_line == 'False')]

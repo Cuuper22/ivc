@@ -14,7 +14,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 with contextlib.redirect_stdout(io.StringIO()):
     from sound_v3_common import d, M
 from recheck_common import stone_map, EMPTY
-ROOT = '/home/claude/ivc'; OUT = f'{ROOT}/work_data/sense'; os.makedirs(OUT, exist_ok=True)
+ROOT = '/home/antigravity/Cuuper22/ivc'; OUT = f'{ROOT}/work_data/sense'; os.makedirs(OUT, exist_ok=True)
 def log(*a): print('[sense_corpus]', *a, flush=True)
 def known(x): return str(x).strip() not in EMPTY and str(x).strip() != ''
 

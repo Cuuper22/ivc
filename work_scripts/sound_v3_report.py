@@ -5,7 +5,7 @@ import csv, os
 import pandas as pd
 from sound_values import VALUES
 from sound_v3_values import V3, TIER3, OLDTIER, NOTE
-ROOT = '/home/claude/ivc'; O = f'{ROOT}/work_data/sound_v3'
+ROOT = '/home/antigravity/Cuuper22/ivc'; O = f'{ROOT}/work_data/sound_v3'
 PIC = {v[0]: v[1] for v in VALUES}
 PIC.update({'890': 'bow without arrow (right-facing bow)', '048': 'seven short strokes in brackets', '391': 'three-pronged tree with a caret hat',
             '417': 'two pitchforks facing each other', '806': 'leaf on a tree', '500': 'tall triangle with a divider (horn or sail shape)'})

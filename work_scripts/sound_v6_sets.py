@@ -3,7 +3,7 @@
 with the catalogue picture code, the other face (when the picture side is a single big sign), and photo files.
 Writes work_data/sound_v6/ctab_objects.csv and ctab_sets.csv."""
 import os, collections, pandas as pd
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 IMG = f'{ROOT}/evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images'
 files = os.listdir(IMG)
 import sys; sys.path.insert(0, f'{ROOT}/work_scripts')

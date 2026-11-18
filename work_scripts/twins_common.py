@@ -18,7 +18,7 @@ Loaders: seals() -> one row per seal face with every attribute used in the job.
 import sys, os, re, io, contextlib, time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import numpy as np, pandas as pd
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 OUT = f'{ROOT}/work_data/twins'; os.makedirs(OUT, exist_ok=True)
 IMG = f'{ROOT}/evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images'
 T0 = time.time()

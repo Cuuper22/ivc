@@ -1,7 +1,7 @@
 # usage: carrier_crop.py out.png scale file:fx0,fy0,fx1,fy1 ...  (fractions of image)
 import sys
 from PIL import Image,ImageDraw
-D='/home/claude/ivc/evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/'
+D='/home/antigravity/Cuuper22/ivc/evidence/tmp/002390x_3335_yajnadevam_repo_trace_20260531/repo/public/seal_images/'
 out,s=sys.argv[1],float(sys.argv[2]);cr=[]
 for a in sys.argv[3:]:
     f,b=a.split(':');x0,y0,x1,y1=map(float,b.split(','))

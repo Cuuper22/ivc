@@ -17,7 +17,7 @@ import numpy as np, pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import recheck_common as rc
 
-ROOT = '/home/claude/ivc'
+ROOT = '/home/antigravity/Cuuper22/ivc'
 OUT = f'{ROOT}/work_data/signlist'; os.makedirs(OUT, exist_ok=True)
 EMPTY = {'', '-', '--', '- -'}
 

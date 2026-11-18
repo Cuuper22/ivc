@@ -20,7 +20,7 @@ Writes work_data/stamps/matches.csv, kinds.csv, multistamp.csv, clusters.csv, ci
 """
 import os, sys, collections, itertools, random, time
 import numpy as np, pandas as pd
-ROOT = '/home/claude/ivc'; OUT = f'{ROOT}/work_data/stamps'
+ROOT = '/home/antigravity/Cuuper22/ivc'; OUT = f'{ROOT}/work_data/stamps'
 T0 = time.time()
 def log(*a): print(f'[stamps_2 {time.time()-T0:6.1f}s]', *a, flush=True)
 rng = np.random.default_rng(17); random.seed(17)

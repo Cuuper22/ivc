@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """A4: every clean name that occurs with two or more endings (listed), with objects, sites, houses; shuffle test; sign-level."""
 import pandas as pd, numpy as np, collections, random
-R='/home/claude/ivc'
+R='/home/antigravity/Cuuper22/ivc'
 d=pd.read_csv(f'{R}/work_data/endings/A3_seals.csv',dtype=str,keep_default_na=False)
 d['E1']=d.E.replace({'jar+man':'jar'})
 d['loc']=d.apply(lambda r: f"{r.site[:5]} {r['area-section']} {r['block-house']}".replace(' -- ',' ').strip() if r.site!='Unknown' else 'unk',axis=1)

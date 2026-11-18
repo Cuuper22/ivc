@@ -3,7 +3,7 @@
 Sample (fixed before looking): up to 2 objects per distinct text among tablets whose first-catalogue picture code is
 vague (Othr / blank / '-'), then 1 per text among tablets with a specific code, to check the code. 48 objects.
 Each sheet row = one object, all its photos, labelled with CISI number. Writes work_data/copper/sheets/sheet_NN.jpg."""
-import sys; sys.path.insert(0, '/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from copper_common import *
 from PIL import Image, ImageDraw
 L = load_L(); L = L[(L.site == 'Mohenjo-daro') & (L.photos != '')]

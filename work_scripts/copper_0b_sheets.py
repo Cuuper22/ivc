@@ -2,7 +2,7 @@
 """COPPER step 0b: second photo batch. The first sample (copper_0_sheets.py) was cut at 40 vague objects in text order
 and so missed the texts late in the sort (the big stag set among them). Batch 2: up to 2 objects per distinct text not
 yet looked at, any catalogue code, texts with most copies first. Writes sheets/b2_NN.jpg and photo_sample2.csv."""
-import sys; sys.path.insert(0, '/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from copper_common import *
 from PIL import Image, ImageDraw
 L = load_L(); L = L[(L.site == 'Mohenjo-daro')]

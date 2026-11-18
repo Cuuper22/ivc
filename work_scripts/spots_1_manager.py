@@ -30,7 +30,7 @@ import os, re, collections, random, sys
 import numpy as np, pandas as pd
 from scipy.stats import mannwhitneyu
 random.seed(101); np.random.seed(101)
-ROOT = '/home/claude/ivc'; OUT = f'{ROOT}/work_data/spots'; os.makedirs(OUT, exist_ok=True)
+ROOT = '/home/antigravity/Cuuper22/ivc'; OUT = f'{ROOT}/work_data/spots'; os.makedirs(OUT, exist_ok=True)
 LOG = open(f'{OUT}/s1_log.txt', 'w')
 def say(*a):
     s = ' '.join(str(x) for x in a); print(s, flush=True); LOG.write(s + '\n')

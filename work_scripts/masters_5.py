@@ -1,5 +1,5 @@
 """Part 3: every TAG row: parse, kind of seal that made it, subtype, site. Output work_data/masters/tags.csv"""
-import sys; sys.path.insert(0,'/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0,'/home/antigravity/Cuuper22/ivc/work_scripts')
 from masters_common import *
 from collections import Counter
 T=D[D.type.str.startswith('TAG')].copy()
@@ -23,7 +23,7 @@ def kind(t):
     return 'name/other, no ending'
 T['kind']=T.reading_order_text.map(kind)
 T=T.merge(M[['id','material','shape','symbol','area-section']],on='id',suffixes=('','_m'))
-T.to_csv('/home/claude/ivc/work_data/masters/tags.csv',index=False)
+T.to_csv('/home/antigravity/Cuuper22/ivc/work_data/masters/tags.csv',index=False)
 print(len(T),'tag rows,',T.object.nunique(),'objects')
 print(T.kind.value_counts().to_string())
 print(pd.crosstab(T.kind,T.type).to_string())

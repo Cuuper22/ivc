@@ -17,7 +17,7 @@ Predictions written 2026-11-17 before the numbers:
  P5.3 The drawn-differently pairs share frames elsewhere in the corpus at least twice as often as matched random pairs.
 Writes work_data/copper/swaps.csv and log_5.txt.
 """
-import sys; sys.path.insert(0, '/home/claude/ivc/work_scripts')
+import sys; sys.path.insert(0, '/home/antigravity/Cuuper22/ivc/work_scripts')
 from copper_common import *
 say = say_to(f'{OUT}/log_5.txt')
 L = pd.read_csv(f'{OUT}/objects.csv', dtype=str).fillna('')

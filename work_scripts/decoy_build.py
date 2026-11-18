@@ -20,7 +20,7 @@ import pandas as pd
 from sound_v3_common import d, lex, parse_face     # corpus only (this loader never reads the value lists)
 from gloss2 import CNT
 
-ROOT = '/home/claude/ivc'; OUT = f'{ROOT}/work_data/decoy'
+ROOT = '/home/antigravity/Cuuper22/ivc'; OUT = f'{ROOT}/work_data/decoy'
 SEED_DRAW, SEED_HALF, SEED_MATCH, SEED_ORDER = 20261301, 20261302, 20261303, 20261304
 N_TOTAL, N_DECOY, MIN_FACES = 60, 30, 15
 MEASURE_KEEP = {'705', '706', '700', '320', '575', '540', '171', '711', '061', '480', '817', '820', '861', '176', '175'}
