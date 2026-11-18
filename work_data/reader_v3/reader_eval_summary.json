@@ -1,0 +1,118 @@
+{
+  "coverage": {
+    "lipi_intact_total": 3600,
+    "lipi_intact_parsed": 3137,
+    "lipi_intact_parsed_pct": 87.14,
+    "lipi_intact_all_admin_glossed": 2806,
+    "lipi_intact_all_admin_glossed_pct": 77.94,
+    "lipi_intact_every_token_anchored": 2358,
+    "lipi_intact_every_token_anchored_pct": 65.5,
+    "lipi_parsed_token_anchored_share": 91.85,
+    "lipi_admin_len3_total": 2172,
+    "lipi_admin_len3_parsed": 1912,
+    "lipi_admin_len3_parsed_pct": 88.03,
+    "mah_unseen_invocab_total": 482,
+    "mah_unseen_invocab_parsed": 313,
+    "mah_unseen_invocab_parsed_pct": 64.94,
+    "mah_unseen_invocab_token_anchored_share": 92.82,
+    "mah_unseen_all_total": 627,
+    "mah_unseen_all_parsed": 370,
+    "mah_unseen_all_parsed_pct": 59.01
+  },
+  "task_A_unseen_artifact_kind": {
+    "n_lipi_events": 4349,
+    "n_new_events": 980,
+    "classes": {
+      "ctab": 38,
+      "mtab": 85,
+      "pot": 77,
+      "rod": 9,
+      "seal": 580,
+      "tag": 185,
+      "tool": 6
+    },
+    "fixed_ll_gain": {
+      "real": -0.07765,
+      "decoy_mean": -0.14068,
+      "decoy_sd": 0.03839,
+      "decoy_max": -0.02743,
+      "z": 1.64,
+      "n_decoys_ge_real": 83,
+      "p_emp": 0.04198
+    },
+    "fixed_macro_discrim": {
+      "real": 0.90084,
+      "decoy_mean": 0.5061,
+      "decoy_sd": 0.12262,
+      "decoy_max": 0.83941,
+      "z": 3.22,
+      "n_decoys_ge_real": 0,
+      "p_emp": 0.0005
+    },
+    "rival_refit_ll_gain": {
+      "real": -0.07765,
+      "decoy_mean": -0.10758,
+      "decoy_sd": 0.02903,
+      "decoy_max": -0.01191,
+      "z": 1.03,
+      "n_decoys_ge_real": 296,
+      "p_emp": 0.14843
+    },
+    "rival_refit_macro_discrim": {
+      "real": 0.90084,
+      "decoy_mean": 0.6534,
+      "decoy_sd": 0.12077,
+      "decoy_max": 1.04388,
+      "z": 2.05,
+      "n_decoys_ge_real": 55,
+      "p_emp": 0.02799
+    }
+  },
+  "task_B_unseen_seal_zone": {
+    "n_lipi_events": 779,
+    "n_new_events": 197,
+    "classes": {
+      "citadel": 52,
+      "craft_chanhu_vs": 46,
+      "east_headwaters": 9,
+      "hr_elite": 49,
+      "maritime_gulf_west": 41
+    },
+    "fixed_ll_gain": {
+      "real": -0.05696,
+      "decoy_mean": -0.08286,
+      "decoy_sd": 0.02872,
+      "decoy_max": -0.00116,
+      "z": 0.9,
+      "n_decoys_ge_real": 388,
+      "p_emp": 0.1944
+    },
+    "fixed_macro_discrim": {
+      "real": 0.19854,
+      "decoy_mean": 0.10039,
+      "decoy_sd": 0.05528,
+      "decoy_max": 0.26397,
+      "z": 1.78,
+      "n_decoys_ge_real": 70,
+      "p_emp": 0.03548
+    },
+    "rival_refit_ll_gain": {
+      "real": -0.05696,
+      "decoy_mean": -0.03315,
+      "decoy_sd": 0.02237,
+      "decoy_max": 0.03096,
+      "z": -1.06,
+      "n_decoys_ge_real": 1702,
+      "p_emp": 0.85107
+    },
+    "rival_refit_macro_discrim": {
+      "real": 0.19854,
+      "decoy_mean": 0.13362,
+      "decoy_sd": 0.0532,
+      "decoy_max": 0.31473,
+      "z": 1.22,
+      "n_decoys_ge_real": 235,
+      "p_emp": 0.11794
+    }
+  }
+}

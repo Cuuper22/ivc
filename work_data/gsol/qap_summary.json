@@ -1,0 +1,1049 @@
+{
+  "config": {
+    "N_signs": 120,
+    "N_decoy_solves": 12,
+    "M_cap": 900
+  },
+  "modes": {
+    "free": {
+      "dravidian": {
+        "M_pool": 900,
+        "lipi_objective": {
+          "total": 6.69086,
+          "sem": 3.71967,
+          "swap": 1.96724,
+          "base": 4.9972,
+          "split3": 0.52354,
+          "unary": 0.42892
+        },
+        "zeroshot_vs_1000_shuffles": {
+          "new_sem": {
+            "real": 3.12961,
+            "shuf_mean": 2.64855,
+            "shuf_sd": 0.18373,
+            "z": 2.618,
+            "P": 0.002
+          },
+          "new_cos": {
+            "real": 1.78822,
+            "shuf_mean": 1.37703,
+            "shuf_sd": 0.15915,
+            "z": 2.584,
+            "P": 0.003
+          },
+          "heldout_mah_swaps": {
+            "real": -0.06501,
+            "shuf_mean": -0.09793,
+            "shuf_sd": 0.24539,
+            "z": 0.134,
+            "P": 0.4126,
+            "raw_skel_rate": 0.0944,
+            "n_pairs": 16
+          },
+          "combined_zeroshot": {
+            "real": 3.10686,
+            "shuf_mean": 2.61427,
+            "shuf_sd": 0.19805,
+            "z": 2.487,
+            "P": 0.005
+          }
+        },
+        "vs_decoy_lipi_solves": {
+          "lipi_total": {
+            "real": 6.69086,
+            "decoy_mean": 6.67502,
+            "decoy_sd": 0.33142,
+            "z_vs_decoy_solves": 0.048,
+            "P_vs_decoy_solves": 0.4615
+          },
+          "rebus_compound_lock": {
+            "real": 5.68789,
+            "decoy_mean": 5.64063,
+            "decoy_sd": 0.77418,
+            "z_vs_decoy_solves": 0.061,
+            "P_vs_decoy_solves": 0.6154
+          },
+          "zeroshot_new_sem": {
+            "real": 3.12961,
+            "decoy_mean": 2.46918,
+            "decoy_sd": 0.35991,
+            "z_vs_decoy_solves": 1.835,
+            "P_vs_decoy_solves": 0.0769
+          },
+          "zeroshot_combined": {
+            "real": 3.10686,
+            "decoy_mean": 2.4282,
+            "decoy_sd": 0.36114,
+            "z_vs_decoy_solves": 1.879,
+            "P_vs_decoy_solves": 0.0769
+          }
+        },
+        "elapsed_s": 18.4
+      },
+      "munda": {
+        "M_pool": 900,
+        "lipi_objective": {
+          "total": 8.32866,
+          "sem": 3.98397,
+          "swap": 2.76858,
+          "base": 7.3728,
+          "split3": 0.12053,
+          "unary": 0.7711
+        },
+        "zeroshot_vs_1000_shuffles": {
+          "new_sem": {
+            "real": 3.39241,
+            "shuf_mean": 2.51652,
+            "shuf_sd": 0.3525,
+            "z": 2.485,
+            "P": 0.001
+          },
+          "new_cos": {
+            "real": 2.58131,
+            "shuf_mean": 1.67024,
+            "shuf_sd": 0.33213,
+            "z": 2.743,
+            "P": 0.001
+          },
+          "heldout_mah_swaps": {
+            "real": 0.01394,
+            "shuf_mean": 0.09738,
+            "shuf_sd": 0.31692,
+            "z": -0.263,
+            "P": 0.5764,
+            "raw_skel_rate": 0.0944,
+            "n_pairs": 16
+          },
+          "combined_zeroshot": {
+            "real": 3.39729,
+            "shuf_mean": 2.5506,
+            "shuf_sd": 0.3655,
+            "z": 2.317,
+            "P": 0.001
+          }
+        },
+        "vs_decoy_lipi_solves": {
+          "lipi_total": {
+            "real": 8.32866,
+            "decoy_mean": 8.33857,
+            "decoy_sd": 0.47382,
+            "z_vs_decoy_solves": -0.021,
+            "P_vs_decoy_solves": 0.4615
+          },
+          "rebus_compound_lock": {
+            "real": 8.20417,
+            "decoy_mean": 9.22378,
+            "decoy_sd": 1.32508,
+            "z_vs_decoy_solves": -0.769,
+            "P_vs_decoy_solves": 0.7692
+          },
+          "zeroshot_new_sem": {
+            "real": 3.39241,
+            "decoy_mean": 2.20944,
+            "decoy_sd": 0.29124,
+            "z_vs_decoy_solves": 4.062,
+            "P_vs_decoy_solves": 0.0769
+          },
+          "zeroshot_combined": {
+            "real": 3.39729,
+            "decoy_mean": 2.18374,
+            "decoy_sd": 0.30731,
+            "z_vs_decoy_solves": 3.949,
+            "P_vs_decoy_solves": 0.0769
+          }
+        },
+        "elapsed_s": 18.1
+      },
+      "indo_aryan": {
+        "M_pool": 900,
+        "lipi_objective": {
+          "total": 8.74848,
+          "sem": 3.99549,
+          "swap": 5.58138,
+          "base": 5.61639,
+          "split3": 0.20904,
+          "unary": 0.79197
+        },
+        "zeroshot_vs_1000_shuffles": {
+          "new_sem": {
+            "real": 3.58514,
+            "shuf_mean": 3.24421,
+            "shuf_sd": 0.35653,
+            "z": 0.956,
+            "P": 0.2038
+          },
+          "new_cos": {
+            "real": 3.16942,
+            "shuf_mean": 2.71153,
+            "shuf_sd": 0.41635,
+            "z": 1.1,
+            "P": 0.1598
+          },
+          "heldout_mah_swaps": {
+            "real": -0.06544,
+            "shuf_mean": 0.19504,
+            "shuf_sd": 0.40945,
+            "z": -0.636,
+            "P": 0.6154,
+            "raw_skel_rate": 0.0194,
+            "n_pairs": 16
+          },
+          "combined_zeroshot": {
+            "real": 3.56224,
+            "shuf_mean": 3.31247,
+            "shuf_sd": 0.38453,
+            "z": 0.65,
+            "P": 0.2787
+          }
+        },
+        "vs_decoy_lipi_solves": {
+          "lipi_total": {
+            "real": 8.74848,
+            "decoy_mean": 9.10625,
+            "decoy_sd": 0.42637,
+            "z_vs_decoy_solves": -0.839,
+            "P_vs_decoy_solves": 0.8462
+          },
+          "rebus_compound_lock": {
+            "real": 6.51287,
+            "decoy_mean": 9.19482,
+            "decoy_sd": 1.4058,
+            "z_vs_decoy_solves": -1.908,
+            "P_vs_decoy_solves": 1.0
+          },
+          "zeroshot_new_sem": {
+            "real": 3.58514,
+            "decoy_mean": 2.18698,
+            "decoy_sd": 0.59324,
+            "z_vs_decoy_solves": 2.357,
+            "P_vs_decoy_solves": 0.0769
+          },
+          "zeroshot_combined": {
+            "real": 3.56224,
+            "decoy_mean": 2.15261,
+            "decoy_sd": 0.59184,
+            "z_vs_decoy_solves": 2.382,
+            "P_vs_decoy_solves": 0.0769
+          }
+        },
+        "elapsed_s": 16.3
+      },
+      "elamite": {
+        "M_pool": 900,
+        "lipi_objective": {
+          "total": 8.04132,
+          "sem": 2.71579,
+          "swap": 5.22076,
+          "base": 7.35374,
+          "split3": 0.14124,
+          "unary": 0.8962
+        },
+        "zeroshot_vs_1000_shuffles": {
+          "new_sem": {
+            "real": 2.18463,
+            "shuf_mean": 1.6514,
+            "shuf_sd": 0.24792,
+            "z": 2.151,
+            "P": 0.016
+          },
+          "new_cos": {
+            "real": 2.22904,
+            "shuf_mean": 1.76901,
+            "shuf_sd": 0.23493,
+            "z": 1.958,
+            "P": 0.037
+          },
+          "heldout_mah_swaps": {
+            "real": 0.37733,
+            "shuf_mean": 0.1662,
+            "shuf_sd": 0.376,
+            "z": 0.562,
+            "P": 0.2837,
+            "raw_skel_rate": 0.0583,
+            "n_pairs": 16
+          },
+          "combined_zeroshot": {
+            "real": 2.3167,
+            "shuf_mean": 1.70957,
+            "shuf_sd": 0.27664,
+            "z": 2.195,
+            "P": 0.015
+          }
+        },
+        "vs_decoy_lipi_solves": {
+          "lipi_total": {
+            "real": 8.04132,
+            "decoy_mean": 8.15608,
+            "decoy_sd": 0.49878,
+            "z_vs_decoy_solves": -0.23,
+            "P_vs_decoy_solves": 0.6154
+          },
+          "rebus_compound_lock": {
+            "real": 8.32057,
+            "decoy_mean": 9.75875,
+            "decoy_sd": 1.18348,
+            "z_vs_decoy_solves": -1.215,
+            "P_vs_decoy_solves": 0.8462
+          },
+          "zeroshot_new_sem": {
+            "real": 2.18463,
+            "decoy_mean": 0.74861,
+            "decoy_sd": 0.26843,
+            "z_vs_decoy_solves": 5.35,
+            "P_vs_decoy_solves": 0.0769
+          },
+          "zeroshot_combined": {
+            "real": 2.3167,
+            "decoy_mean": 0.77623,
+            "decoy_sd": 0.25452,
+            "z_vs_decoy_solves": 6.052,
+            "P_vs_decoy_solves": 0.0769
+          }
+        },
+        "elapsed_s": 16.9
+      },
+      "sumerian": {
+        "M_pool": 900,
+        "lipi_objective": {
+          "total": 8.11065,
+          "sem": 3.34719,
+          "swap": 4.77185,
+          "base": 5.57033,
+          "split3": 0.67608,
+          "unary": 1.00847
+        },
+        "zeroshot_vs_1000_shuffles": {
+          "new_sem": {
+            "real": 2.73997,
+            "shuf_mean": 2.10502,
+            "shuf_sd": 0.22408,
+            "z": 2.834,
+            "P": 0.001
+          },
+          "new_cos": {
+            "real": 2.08933,
+            "shuf_mean": 1.45279,
+            "shuf_sd": 0.20626,
+            "z": 3.086,
+            "P": 0.001
+          },
+          "heldout_mah_swaps": {
+            "real": 0.13963,
+            "shuf_mean": 0.13324,
+            "shuf_sd": 0.34676,
+            "z": 0.018,
+            "P": 0.4036,
+            "raw_skel_rate": 0.0583,
+            "n_pairs": 16
+          },
+          "combined_zeroshot": {
+            "real": 2.78884,
+            "shuf_mean": 2.15166,
+            "shuf_sd": 0.24998,
+            "z": 2.549,
+            "P": 0.007
+          }
+        },
+        "vs_decoy_lipi_solves": {
+          "lipi_total": {
+            "real": 8.11065,
+            "decoy_mean": 8.11642,
+            "decoy_sd": 0.54882,
+            "z_vs_decoy_solves": -0.011,
+            "P_vs_decoy_solves": 0.4615
+          },
+          "rebus_compound_lock": {
+            "real": 6.91685,
+            "decoy_mean": 8.12999,
+            "decoy_sd": 1.43089,
+            "z_vs_decoy_solves": -0.848,
+            "P_vs_decoy_solves": 0.8462
+          },
+          "zeroshot_new_sem": {
+            "real": 2.73997,
+            "decoy_mean": 1.50819,
+            "decoy_sd": 0.13254,
+            "z_vs_decoy_solves": 9.294,
+            "P_vs_decoy_solves": 0.0769
+          },
+          "zeroshot_combined": {
+            "real": 2.78884,
+            "decoy_mean": 1.59199,
+            "decoy_sd": 0.18226,
+            "z_vs_decoy_solves": 6.567,
+            "P_vs_decoy_solves": 0.0769
+          }
+        },
+        "elapsed_s": 17.3
+      },
+      "akkadian": {
+        "M_pool": 613,
+        "lipi_objective": {
+          "total": 7.45665,
+          "sem": 1.98644,
+          "swap": 6.35297,
+          "base": 6.33928,
+          "split3": 0.64595,
+          "unary": 0.89873
+        },
+        "zeroshot_vs_1000_shuffles": {
+          "new_sem": {
+            "real": 1.55176,
+            "shuf_mean": 0.87673,
+            "shuf_sd": 0.26542,
+            "z": 2.543,
+            "P": 0.001
+          },
+          "new_cos": {
+            "real": 1.44555,
+            "shuf_mean": 0.69679,
+            "shuf_sd": 0.22273,
+            "z": 3.362,
+            "P": 0.001
+          },
+          "heldout_mah_swaps": {
+            "real": 1.07797,
+            "shuf_mean": 0.55556,
+            "shuf_sd": 0.53198,
+            "z": 0.982,
+            "P": 0.1798,
+            "raw_skel_rate": 0.1167,
+            "n_pairs": 16
+          },
+          "combined_zeroshot": {
+            "real": 1.92906,
+            "shuf_mean": 1.07117,
+            "shuf_sd": 0.3273,
+            "z": 2.621,
+            "P": 0.008
+          }
+        },
+        "vs_decoy_lipi_solves": {
+          "lipi_total": {
+            "real": 7.45665,
+            "decoy_mean": 8.06859,
+            "decoy_sd": 0.33725,
+            "z_vs_decoy_solves": -1.815,
+            "P_vs_decoy_solves": 0.9231
+          },
+          "rebus_compound_lock": {
+            "real": 7.56099,
+            "decoy_mean": 8.72314,
+            "decoy_sd": 1.05257,
+            "z_vs_decoy_solves": -1.104,
+            "P_vs_decoy_solves": 0.8462
+          },
+          "zeroshot_new_sem": {
+            "real": 1.55176,
+            "decoy_mean": 0.84523,
+            "decoy_sd": 0.26455,
+            "z_vs_decoy_solves": 2.671,
+            "P_vs_decoy_solves": 0.0769
+          },
+          "zeroshot_combined": {
+            "real": 1.92906,
+            "decoy_mean": 1.03513,
+            "decoy_sd": 0.31822,
+            "z_vs_decoy_solves": 2.809,
+            "P_vs_decoy_solves": 0.0769
+          }
+        },
+        "elapsed_s": 10.9
+      },
+      "burushaski": {
+        "M_pool": 900,
+        "lipi_objective": {
+          "total": 9.71973,
+          "sem": 1.66538,
+          "swap": 7.85691,
+          "base": 10.74606,
+          "split3": 0.06026,
+          "unary": 1.53126
+        },
+        "zeroshot_vs_1000_shuffles": {
+          "new_sem": {
+            "real": 1.3867,
+            "shuf_mean": 1.01508,
+            "shuf_sd": 0.17521,
+            "z": 2.121,
+            "P": 0.024
+          },
+          "new_cos": {
+            "real": 1.04264,
+            "shuf_mean": 0.70711,
+            "shuf_sd": 0.13413,
+            "z": 2.502,
+            "P": 0.016
+          },
+          "heldout_mah_swaps": {
+            "real": 0.97318,
+            "shuf_mean": 0.28065,
+            "shuf_sd": 0.41899,
+            "z": 1.653,
+            "P": 0.0849,
+            "raw_skel_rate": 0.0778,
+            "n_pairs": 16
+          },
+          "combined_zeroshot": {
+            "real": 1.72731,
+            "shuf_mean": 1.1133,
+            "shuf_sd": 0.2249,
+            "z": 2.73,
+            "P": 0.011
+          }
+        },
+        "vs_decoy_lipi_solves": {
+          "lipi_total": {
+            "real": 9.71973,
+            "decoy_mean": 9.57915,
+            "decoy_sd": 0.45448,
+            "z_vs_decoy_solves": 0.309,
+            "P_vs_decoy_solves": 0.3077
+          },
+          "rebus_compound_lock": {
+            "real": 12.30745,
+            "decoy_mean": 11.00642,
+            "decoy_sd": 1.73093,
+            "z_vs_decoy_solves": 0.752,
+            "P_vs_decoy_solves": 0.3077
+          },
+          "zeroshot_new_sem": {
+            "real": 1.3867,
+            "decoy_mean": 0.90672,
+            "decoy_sd": 0.27314,
+            "z_vs_decoy_solves": 1.757,
+            "P_vs_decoy_solves": 0.1538
+          },
+          "zeroshot_combined": {
+            "real": 1.72731,
+            "decoy_mean": 1.00939,
+            "decoy_sd": 0.26651,
+            "z_vs_decoy_solves": 2.694,
+            "P_vs_decoy_solves": 0.0769
+          }
+        },
+        "elapsed_s": 17.4
+      }
+    },
+    "anchored": {
+      "dravidian": {
+        "M_pool": 900,
+        "lipi_objective": {
+          "total": 6.72919,
+          "sem": 3.79256,
+          "swap": 1.62962,
+          "base": 3.13578,
+          "split3": 0.52731,
+          "unary": 1.16328
+        },
+        "zeroshot_vs_1000_shuffles": {
+          "new_sem": {
+            "real": 3.30471,
+            "shuf_mean": 2.72413,
+            "shuf_sd": 0.16875,
+            "z": 3.44,
+            "P": 0.001
+          },
+          "new_cos": {
+            "real": 2.29159,
+            "shuf_mean": 1.60958,
+            "shuf_sd": 0.15459,
+            "z": 4.412,
+            "P": 0.001
+          },
+          "heldout_mah_swaps": {
+            "real": -0.20089,
+            "shuf_mean": 0.02655,
+            "shuf_sd": 0.2474,
+            "z": -0.919,
+            "P": 0.8302,
+            "raw_skel_rate": 0.0667,
+            "n_pairs": 16
+          },
+          "combined_zeroshot": {
+            "real": 3.2344,
+            "shuf_mean": 2.73342,
+            "shuf_sd": 0.19181,
+            "z": 2.612,
+            "P": 0.005
+          }
+        },
+        "vs_decoy_lipi_solves": {
+          "lipi_total": {
+            "real": 6.72919,
+            "decoy_mean": 7.17914,
+            "decoy_sd": 0.32122,
+            "z_vs_decoy_solves": -1.401,
+            "P_vs_decoy_solves": 0.9231
+          },
+          "rebus_compound_lock": {
+            "real": 4.56271,
+            "decoy_mean": 6.63225,
+            "decoy_sd": 1.01496,
+            "z_vs_decoy_solves": -2.039,
+            "P_vs_decoy_solves": 0.9231
+          },
+          "zeroshot_new_sem": {
+            "real": 3.30471,
+            "decoy_mean": 2.13298,
+            "decoy_sd": 0.583,
+            "z_vs_decoy_solves": 2.01,
+            "P_vs_decoy_solves": 0.0769
+          },
+          "zeroshot_combined": {
+            "real": 3.2344,
+            "decoy_mean": 2.06901,
+            "decoy_sd": 0.57776,
+            "z_vs_decoy_solves": 2.017,
+            "P_vs_decoy_solves": 0.0769
+          }
+        },
+        "elapsed_s": 19.1
+      },
+      "munda": {
+        "M_pool": 900,
+        "lipi_objective": {
+          "total": 7.7289,
+          "sem": 3.58304,
+          "swap": 2.84518,
+          "base": 5.6029,
+          "split3": 0.0452,
+          "unary": 1.18
+        },
+        "zeroshot_vs_1000_shuffles": {
+          "new_sem": {
+            "real": 3.05413,
+            "shuf_mean": 2.16884,
+            "shuf_sd": 0.41649,
+            "z": 2.126,
+            "P": 0.002
+          },
+          "new_cos": {
+            "real": 2.48777,
+            "shuf_mean": 1.54329,
+            "shuf_sd": 0.35768,
+            "z": 2.641,
+            "P": 0.001
+          },
+          "heldout_mah_swaps": {
+            "real": 0.30524,
+            "shuf_mean": 0.06034,
+            "shuf_sd": 0.35126,
+            "z": 0.697,
+            "P": 0.2408,
+            "raw_skel_rate": 0.15,
+            "n_pairs": 16
+          },
+          "combined_zeroshot": {
+            "real": 3.16097,
+            "shuf_mean": 2.18996,
+            "shuf_sd": 0.43755,
+            "z": 2.219,
+            "P": 0.002
+          }
+        },
+        "vs_decoy_lipi_solves": {
+          "lipi_total": {
+            "real": 7.7289,
+            "decoy_mean": 8.84921,
+            "decoy_sd": 0.61178,
+            "z_vs_decoy_solves": -1.831,
+            "P_vs_decoy_solves": 1.0
+          },
+          "rebus_compound_lock": {
+            "real": 6.8055,
+            "decoy_mean": 9.67184,
+            "decoy_sd": 2.03251,
+            "z_vs_decoy_solves": -1.41,
+            "P_vs_decoy_solves": 1.0
+          },
+          "zeroshot_new_sem": {
+            "real": 3.05413,
+            "decoy_mean": 2.16482,
+            "decoy_sd": 0.20127,
+            "z_vs_decoy_solves": 4.419,
+            "P_vs_decoy_solves": 0.0769
+          },
+          "zeroshot_combined": {
+            "real": 3.16097,
+            "decoy_mean": 2.15186,
+            "decoy_sd": 0.22588,
+            "z_vs_decoy_solves": 4.468,
+            "P_vs_decoy_solves": 0.0769
+          }
+        },
+        "elapsed_s": 19.4
+      },
+      "indo_aryan": {
+        "M_pool": 900,
+        "lipi_objective": {
+          "total": 9.20941,
+          "sem": 3.80506,
+          "swap": 5.47633,
+          "base": 6.20742,
+          "split3": 0.16384,
+          "unary": 1.28227
+        },
+        "zeroshot_vs_1000_shuffles": {
+          "new_sem": {
+            "real": 3.15686,
+            "shuf_mean": 3.08565,
+            "shuf_sd": 0.17362,
+            "z": 0.41,
+            "P": 0.3417
+          },
+          "new_cos": {
+            "real": 2.66561,
+            "shuf_mean": 2.49226,
+            "shuf_sd": 0.17094,
+            "z": 1.014,
+            "P": 0.1558
+          },
+          "heldout_mah_swaps": {
+            "real": -0.06544,
+            "shuf_mean": -0.03396,
+            "shuf_sd": 0.25041,
+            "z": -0.126,
+            "P": 0.3227,
+            "raw_skel_rate": 0.0194,
+            "n_pairs": 16
+          },
+          "combined_zeroshot": {
+            "real": 3.13396,
+            "shuf_mean": 3.07376,
+            "shuf_sd": 0.19188,
+            "z": 0.314,
+            "P": 0.3796
+          }
+        },
+        "vs_decoy_lipi_solves": {
+          "lipi_total": {
+            "real": 9.20941,
+            "decoy_mean": 9.4288,
+            "decoy_sd": 0.32468,
+            "z_vs_decoy_solves": -0.676,
+            "P_vs_decoy_solves": 0.7692
+          },
+          "rebus_compound_lock": {
+            "real": 7.57161,
+            "decoy_mean": 8.5903,
+            "decoy_sd": 1.01059,
+            "z_vs_decoy_solves": -1.008,
+            "P_vs_decoy_solves": 0.9231
+          },
+          "zeroshot_new_sem": {
+            "real": 3.15686,
+            "decoy_mean": 2.8347,
+            "decoy_sd": 0.43006,
+            "z_vs_decoy_solves": 0.749,
+            "P_vs_decoy_solves": 0.3846
+          },
+          "zeroshot_combined": {
+            "real": 3.13396,
+            "decoy_mean": 2.7774,
+            "decoy_sd": 0.43294,
+            "z_vs_decoy_solves": 0.824,
+            "P_vs_decoy_solves": 0.3846
+          }
+        },
+        "elapsed_s": 16.4
+      },
+      "elamite": {
+        "M_pool": 900,
+        "lipi_objective": {
+          "total": 8.42469,
+          "sem": 2.22459,
+          "swap": 5.72422,
+          "base": 6.93196,
+          "split3": 0.65725,
+          "unary": 1.63899
+        },
+        "zeroshot_vs_1000_shuffles": {
+          "new_sem": {
+            "real": 1.70973,
+            "shuf_mean": 0.9104,
+            "shuf_sd": 0.33068,
+            "z": 2.417,
+            "P": 0.001
+          },
+          "new_cos": {
+            "real": 1.6349,
+            "shuf_mean": 0.82464,
+            "shuf_sd": 0.33611,
+            "z": 2.411,
+            "P": 0.001
+          },
+          "heldout_mah_swaps": {
+            "real": -0.24416,
+            "shuf_mean": 0.23403,
+            "shuf_sd": 0.53493,
+            "z": -0.894,
+            "P": 0.6623,
+            "raw_skel_rate": 0.0,
+            "n_pairs": 16
+          },
+          "combined_zeroshot": {
+            "real": 1.62427,
+            "shuf_mean": 0.99231,
+            "shuf_sd": 0.37435,
+            "z": 1.688,
+            "P": 0.05
+          }
+        },
+        "vs_decoy_lipi_solves": {
+          "lipi_total": {
+            "real": 8.42469,
+            "decoy_mean": 8.26978,
+            "decoy_sd": 0.65074,
+            "z_vs_decoy_solves": 0.238,
+            "P_vs_decoy_solves": 0.3077
+          },
+          "rebus_compound_lock": {
+            "real": 8.89958,
+            "decoy_mean": 9.83786,
+            "decoy_sd": 1.67543,
+            "z_vs_decoy_solves": -0.56,
+            "P_vs_decoy_solves": 0.6154
+          },
+          "zeroshot_new_sem": {
+            "real": 1.70973,
+            "decoy_mean": 0.64412,
+            "decoy_sd": 0.24047,
+            "z_vs_decoy_solves": 4.431,
+            "P_vs_decoy_solves": 0.0769
+          },
+          "zeroshot_combined": {
+            "real": 1.62427,
+            "decoy_mean": 0.69246,
+            "decoy_sd": 0.28272,
+            "z_vs_decoy_solves": 3.296,
+            "P_vs_decoy_solves": 0.0769
+          }
+        },
+        "elapsed_s": 15.1
+      },
+      "sumerian": {
+        "M_pool": 900,
+        "lipi_objective": {
+          "total": 8.12369,
+          "sem": 2.65816,
+          "swap": 5.41867,
+          "base": 5.53485,
+          "split3": 0.28437,
+          "unary": 1.57492
+        },
+        "zeroshot_vs_1000_shuffles": {
+          "new_sem": {
+            "real": 2.05864,
+            "shuf_mean": 1.24425,
+            "shuf_sd": 0.29199,
+            "z": 2.789,
+            "P": 0.001
+          },
+          "new_cos": {
+            "real": 1.62851,
+            "shuf_mean": 0.84745,
+            "shuf_sd": 0.2767,
+            "z": 2.823,
+            "P": 0.001
+          },
+          "heldout_mah_swaps": {
+            "real": -0.17673,
+            "shuf_mean": -0.04264,
+            "shuf_sd": 0.32393,
+            "z": -0.414,
+            "P": 0.4845,
+            "raw_skel_rate": 0.0194,
+            "n_pairs": 16
+          },
+          "combined_zeroshot": {
+            "real": 1.99678,
+            "shuf_mean": 1.22933,
+            "shuf_sd": 0.30906,
+            "z": 2.483,
+            "P": 0.003
+          }
+        },
+        "vs_decoy_lipi_solves": {
+          "lipi_total": {
+            "real": 8.12369,
+            "decoy_mean": 8.75868,
+            "decoy_sd": 0.37497,
+            "z_vs_decoy_solves": -1.693,
+            "P_vs_decoy_solves": 1.0
+          },
+          "rebus_compound_lock": {
+            "real": 7.25196,
+            "decoy_mean": 9.29514,
+            "decoy_sd": 1.56606,
+            "z_vs_decoy_solves": -1.305,
+            "P_vs_decoy_solves": 0.9231
+          },
+          "zeroshot_new_sem": {
+            "real": 2.05864,
+            "decoy_mean": 1.54462,
+            "decoy_sd": 0.29433,
+            "z_vs_decoy_solves": 1.746,
+            "P_vs_decoy_solves": 0.1538
+          },
+          "zeroshot_combined": {
+            "real": 1.99678,
+            "decoy_mean": 1.57504,
+            "decoy_sd": 0.32582,
+            "z_vs_decoy_solves": 1.294,
+            "P_vs_decoy_solves": 0.2308
+          }
+        },
+        "elapsed_s": 14.6
+      },
+      "akkadian": {
+        "M_pool": 613,
+        "lipi_objective": {
+          "total": 7.39344,
+          "sem": 1.75014,
+          "swap": 7.10921,
+          "base": 5.04346,
+          "split3": 0.37288,
+          "unary": 1.31529
+        },
+        "zeroshot_vs_1000_shuffles": {
+          "new_sem": {
+            "real": 1.51174,
+            "shuf_mean": 0.77973,
+            "shuf_sd": 0.30518,
+            "z": 2.399,
+            "P": 0.003
+          },
+          "new_cos": {
+            "real": 1.23617,
+            "shuf_mean": 0.54443,
+            "shuf_sd": 0.24131,
+            "z": 2.867,
+            "P": 0.001
+          },
+          "heldout_mah_swaps": {
+            "real": 0.423,
+            "shuf_mean": 0.441,
+            "shuf_sd": 0.51751,
+            "z": -0.035,
+            "P": 0.4725,
+            "raw_skel_rate": 0.0583,
+            "n_pairs": 16
+          },
+          "combined_zeroshot": {
+            "real": 1.65979,
+            "shuf_mean": 0.93408,
+            "shuf_sd": 0.34108,
+            "z": 2.128,
+            "P": 0.018
+          }
+        },
+        "vs_decoy_lipi_solves": {
+          "lipi_total": {
+            "real": 7.39344,
+            "decoy_mean": 8.38811,
+            "decoy_sd": 0.44251,
+            "z_vs_decoy_solves": -2.248,
+            "P_vs_decoy_solves": 1.0
+          },
+          "rebus_compound_lock": {
+            "real": 6.54519,
+            "decoy_mean": 8.84485,
+            "decoy_sd": 1.25658,
+            "z_vs_decoy_solves": -1.83,
+            "P_vs_decoy_solves": 0.9231
+          },
+          "zeroshot_new_sem": {
+            "real": 1.51174,
+            "decoy_mean": 0.71012,
+            "decoy_sd": 0.20683,
+            "z_vs_decoy_solves": 3.876,
+            "P_vs_decoy_solves": 0.0769
+          },
+          "zeroshot_combined": {
+            "real": 1.65979,
+            "decoy_mean": 0.84725,
+            "decoy_sd": 0.24833,
+            "z_vs_decoy_solves": 3.272,
+            "P_vs_decoy_solves": 0.0769
+          }
+        },
+        "elapsed_s": 8.3
+      },
+      "burushaski": {
+        "M_pool": 900,
+        "lipi_objective": {
+          "total": 8.54626,
+          "sem": 2.42142,
+          "swap": 7.9049,
+          "base": 4.82028,
+          "split3": 0.16384,
+          "unary": 1.63826
+        },
+        "zeroshot_vs_1000_shuffles": {
+          "new_sem": {
+            "real": 1.78646,
+            "shuf_mean": 1.44325,
+            "shuf_sd": 0.30806,
+            "z": 1.114,
+            "P": 0.1518
+          },
+          "new_cos": {
+            "real": 1.43311,
+            "shuf_mean": 1.01676,
+            "shuf_sd": 0.25204,
+            "z": 1.652,
+            "P": 0.045
+          },
+          "heldout_mah_swaps": {
+            "real": 0.68476,
+            "shuf_mean": 0.18271,
+            "shuf_sd": 0.38895,
+            "z": 1.291,
+            "P": 0.1229,
+            "raw_skel_rate": 0.0583,
+            "n_pairs": 16
+          },
+          "combined_zeroshot": {
+            "real": 2.02613,
+            "shuf_mean": 1.5072,
+            "shuf_sd": 0.33588,
+            "z": 1.545,
+            "P": 0.0619
+          }
+        },
+        "vs_decoy_lipi_solves": {
+          "lipi_total": {
+            "real": 8.54626,
+            "decoy_mean": 9.70423,
+            "decoy_sd": 0.65029,
+            "z_vs_decoy_solves": -1.781,
+            "P_vs_decoy_solves": 0.9231
+          },
+          "rebus_compound_lock": {
+            "real": 6.54047,
+            "decoy_mean": 10.95841,
+            "decoy_sd": 1.33231,
+            "z_vs_decoy_solves": -3.316,
+            "P_vs_decoy_solves": 1.0
+          },
+          "zeroshot_new_sem": {
+            "real": 1.78646,
+            "decoy_mean": 0.86121,
+            "decoy_sd": 0.28462,
+            "z_vs_decoy_solves": 3.251,
+            "P_vs_decoy_solves": 0.0769
+          },
+          "zeroshot_combined": {
+            "real": 2.02613,
+            "decoy_mean": 0.92422,
+            "decoy_sd": 0.29478,
+            "z_vs_decoy_solves": 3.738,
+            "P_vs_decoy_solves": 0.0769
+          }
+        },
+        "elapsed_s": 13.9
+      }
+    }
+  }
+}

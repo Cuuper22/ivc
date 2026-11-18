@@ -1,0 +1,908 @@
+{
+  "part_a_k1_fine_and_crosscity": {
+    "fine_slot_controls": {
+      "v2_base_band_cat": {
+        "movable_signs_of_184": 174,
+        "n_cells_ge2": 25,
+        "fixed_new": {
+          "real": 0.192281,
+          "mean": 0.032203,
+          "sd": 0.045104,
+          "z": 3.549,
+          "P": 0.001
+        },
+        "refit_new": {
+          "real": 0.192281,
+          "mean": 0.125616,
+          "sd": 0.024654,
+          "z": 2.704,
+          "P": 0.003
+        }
+      },
+      "hmm10_band_cat": {
+        "movable_signs_of_184": 184,
+        "n_cells_ge2": 30,
+        "fixed_new": {
+          "real": 0.192281,
+          "mean": 0.019339,
+          "sd": 0.046232,
+          "z": 3.741,
+          "P": 0.001
+        },
+        "refit_new": {
+          "real": 0.192281,
+          "mean": 0.119518,
+          "sd": 0.024099,
+          "z": 3.019,
+          "P": 0.001
+        }
+      },
+      "v2_x_hmm10_cat": {
+        "movable_signs_of_184": 168,
+        "n_cells_ge2": 26,
+        "fixed_new": {
+          "real": 0.192281,
+          "mean": 0.02555,
+          "sd": 0.043741,
+          "z": 3.812,
+          "P": 0.001
+        },
+        "refit_new": {
+          "real": 0.192281,
+          "mean": 0.124809,
+          "sd": 0.025289,
+          "z": 2.668,
+          "P": 0.003
+        }
+      },
+      "v2_x_hmm10_band_cat": {
+        "movable_signs_of_184": 146,
+        "n_cells_ge2": 36,
+        "fixed_new": {
+          "real": 0.192281,
+          "mean": 0.045187,
+          "sd": 0.0433,
+          "z": 3.397,
+          "P": 0.001
+        },
+        "refit_new": {
+          "real": 0.192281,
+          "mean": 0.125554,
+          "sd": 0.02466,
+          "z": 2.706,
+          "P": 0.007
+        }
+      }
+    },
+    "cross_city_splits": {
+      "train_MD_lipi_test_NonMD_new": {
+        "fixed_B_cat": {
+          "real": 0.142509,
+          "mean": 0.032013,
+          "sd": 0.038588,
+          "z": 2.864,
+          "P": 0.001
+        },
+        "refit_B_cat": {
+          "real": 0.142509,
+          "mean": 0.107635,
+          "sd": 0.026788,
+          "z": 1.302,
+          "P": 0.0989
+        }
+      },
+      "train_Harappa_lipi_test_MD_new": {
+        "fixed_B_cat": {
+          "real": 0.172013,
+          "mean": 7e-06,
+          "sd": 0.050343,
+          "z": 3.417,
+          "P": 0.001
+        },
+        "refit_B_cat": {
+          "real": 0.172013,
+          "mean": 0.0937,
+          "sd": 0.034277,
+          "z": 2.285,
+          "P": 0.011
+        }
+      }
+    }
+  },
+  "part_b_morphophonetic_equal_pool": {
+    "dravidian": {
+      "M_pool": 580,
+      "lipi_objective": {
+        "total": 11.08095,
+        "sem": 1.28927,
+        "swap": 2.47335,
+        "base": 7.72922,
+        "split3": 0.84369,
+        "unary": 1.69576
+      },
+      "zeroshot_vs_1000_shuffles": {
+        "new_sem": {
+          "real": 1.00439,
+          "shuf_mean": 0.52585,
+          "shuf_sd": 0.30058,
+          "z": 1.592,
+          "P": 0.007
+        },
+        "new_cos": {
+          "real": 0.55142,
+          "shuf_mean": 0.24825,
+          "shuf_sd": 0.19015,
+          "z": 1.594,
+          "P": 0.029
+        },
+        "heldout_mah_swaps": {
+          "real": -0.39432,
+          "shuf_mean": -0.22993,
+          "shuf_sd": 0.24135,
+          "z": -0.681,
+          "P": 0.7572,
+          "raw_skel_rate": 0.0389,
+          "n_pairs": 16
+        },
+        "combined_zeroshot": {
+          "real": 0.86638,
+          "shuf_mean": 0.44538,
+          "shuf_sd": 0.31253,
+          "z": 1.347,
+          "P": 0.0559
+        }
+      },
+      "vs_decoy_lipi_solves": {
+        "lipi_total": {
+          "real": 11.08095,
+          "decoy_mean": 9.81774,
+          "decoy_sd": 0.82537,
+          "z": 1.53,
+          "P": 0.1429
+        },
+        "rebus_compound_lock": {
+          "real": 8.89836,
+          "decoy_mean": 7.84855,
+          "decoy_sd": 0.95153,
+          "z": 1.103,
+          "P": 0.1905
+        },
+        "zeroshot_new_sem": {
+          "real": 1.00439,
+          "decoy_mean": 0.75337,
+          "decoy_sd": 0.27414,
+          "z": 0.916,
+          "P": 0.2381
+        },
+        "heldout_mah_swaps": {
+          "real": -0.39432,
+          "decoy_mean": -0.13754,
+          "decoy_sd": 0.26407,
+          "z": -0.972,
+          "P": 0.9524
+        },
+        "zeroshot_combined": {
+          "real": 0.86638,
+          "decoy_mean": 0.70523,
+          "decoy_sd": 0.27004,
+          "z": 0.597,
+          "P": 0.2857
+        }
+      },
+      "elapsed_s": 15.4
+    },
+    "munda": {
+      "M_pool": 580,
+      "lipi_objective": {
+        "total": 23.22857,
+        "sem": 1.53806,
+        "swap": 3.28517,
+        "base": 21.55018,
+        "split3": 0.05838,
+        "unary": 2.02919
+      },
+      "zeroshot_vs_1000_shuffles": {
+        "new_sem": {
+          "real": 1.46089,
+          "shuf_mean": 1.02624,
+          "shuf_sd": 0.36672,
+          "z": 1.185,
+          "P": 0.1319
+        },
+        "new_cos": {
+          "real": 1.09167,
+          "shuf_mean": 0.67083,
+          "shuf_sd": 0.29911,
+          "z": 1.407,
+          "P": 0.0639
+        },
+        "heldout_mah_swaps": {
+          "real": 0.16945,
+          "shuf_mean": 0.13874,
+          "shuf_sd": 0.32098,
+          "z": 0.096,
+          "P": 0.4066,
+          "raw_skel_rate": 0.1556,
+          "n_pairs": 16
+        },
+        "combined_zeroshot": {
+          "real": 1.5202,
+          "shuf_mean": 1.0748,
+          "shuf_sd": 0.39076,
+          "z": 1.14,
+          "P": 0.1369
+        }
+      },
+      "vs_decoy_lipi_solves": {
+        "lipi_total": {
+          "real": 23.22857,
+          "decoy_mean": 19.41792,
+          "decoy_sd": 2.04526,
+          "z": 1.863,
+          "P": 0.0476
+        },
+        "rebus_compound_lock": {
+          "real": 20.39063,
+          "decoy_mean": 16.88861,
+          "decoy_sd": 1.95008,
+          "z": 1.796,
+          "P": 0.0476
+        },
+        "zeroshot_new_sem": {
+          "real": 1.46089,
+          "decoy_mean": 0.94216,
+          "decoy_sd": 0.30278,
+          "z": 1.713,
+          "P": 0.0952
+        },
+        "heldout_mah_swaps": {
+          "real": 0.16945,
+          "decoy_mean": 0.05175,
+          "decoy_sd": 0.29205,
+          "z": 0.403,
+          "P": 0.3333
+        },
+        "zeroshot_combined": {
+          "real": 1.5202,
+          "decoy_mean": 0.96028,
+          "decoy_sd": 0.34981,
+          "z": 1.601,
+          "P": 0.0952
+        }
+      },
+      "elapsed_s": 15.6
+    },
+    "indo_aryan": {
+      "M_pool": 580,
+      "lipi_objective": {
+        "total": 15.75055,
+        "sem": 0.36387,
+        "swap": 6.4613,
+        "base": 9.94227,
+        "split3": 0.17891,
+        "unary": 2.51518
+      },
+      "zeroshot_vs_1000_shuffles": {
+        "new_sem": {
+          "real": 0.30767,
+          "shuf_mean": 0.18211,
+          "shuf_sd": 0.11575,
+          "z": 1.085,
+          "P": 0.1369
+        },
+        "new_cos": {
+          "real": 0.20826,
+          "shuf_mean": 0.09242,
+          "shuf_sd": 0.09774,
+          "z": 1.185,
+          "P": 0.1089
+        },
+        "heldout_mah_swaps": {
+          "real": 0.40714,
+          "shuf_mean": 0.35293,
+          "shuf_sd": 0.45996,
+          "z": 0.118,
+          "P": 0.3726,
+          "raw_skel_rate": 0.0583,
+          "n_pairs": 16
+        },
+        "combined_zeroshot": {
+          "real": 0.45017,
+          "shuf_mean": 0.30564,
+          "shuf_sd": 0.19641,
+          "z": 0.736,
+          "P": 0.2198
+        }
+      },
+      "vs_decoy_lipi_solves": {
+        "lipi_total": {
+          "real": 15.75055,
+          "decoy_mean": 14.53784,
+          "decoy_sd": 1.02578,
+          "z": 1.182,
+          "P": 0.1905
+        },
+        "rebus_compound_lock": {
+          "real": 11.10029,
+          "decoy_mean": 10.27057,
+          "decoy_sd": 1.12042,
+          "z": 0.741,
+          "P": 0.3333
+        },
+        "zeroshot_new_sem": {
+          "real": 0.30767,
+          "decoy_mean": 0.43548,
+          "decoy_sd": 0.24459,
+          "z": -0.523,
+          "P": 0.7619
+        },
+        "heldout_mah_swaps": {
+          "real": 0.40714,
+          "decoy_mean": 0.08959,
+          "decoy_sd": 0.42262,
+          "z": 0.751,
+          "P": 0.1905
+        },
+        "zeroshot_combined": {
+          "real": 0.45017,
+          "decoy_mean": 0.46683,
+          "decoy_sd": 0.27185,
+          "z": -0.061,
+          "P": 0.5238
+        }
+      },
+      "elapsed_s": 15.3
+    },
+    "elamite": {
+      "M_pool": 580,
+      "lipi_objective": {
+        "total": 14.20256,
+        "sem": 0.74402,
+        "swap": 7.88978,
+        "base": 7.00618,
+        "split3": 0.08663,
+        "unary": 2.39908
+      },
+      "zeroshot_vs_1000_shuffles": {
+        "new_sem": {
+          "real": 0.63923,
+          "shuf_mean": 0.3944,
+          "shuf_sd": 0.13253,
+          "z": 1.847,
+          "P": 0.0559
+        },
+        "new_cos": {
+          "real": 0.68868,
+          "shuf_mean": 0.4088,
+          "shuf_sd": 0.15918,
+          "z": 1.758,
+          "P": 0.0549
+        },
+        "heldout_mah_swaps": {
+          "real": 1.25911,
+          "shuf_mean": 0.30029,
+          "shuf_sd": 0.53281,
+          "z": 1.8,
+          "P": 0.0699,
+          "raw_skel_rate": 0.1139,
+          "n_pairs": 16
+        },
+        "combined_zeroshot": {
+          "real": 1.07992,
+          "shuf_mean": 0.4995,
+          "shuf_sd": 0.23018,
+          "z": 2.522,
+          "P": 0.024
+        }
+      },
+      "vs_decoy_lipi_solves": {
+        "lipi_total": {
+          "real": 14.20256,
+          "decoy_mean": 14.93861,
+          "decoy_sd": 1.13889,
+          "z": -0.646,
+          "P": 0.8095
+        },
+        "rebus_compound_lock": {
+          "real": 8.41931,
+          "decoy_mean": 9.71427,
+          "decoy_sd": 1.16728,
+          "z": -1.109,
+          "P": 0.8571
+        },
+        "zeroshot_new_sem": {
+          "real": 0.63923,
+          "decoy_mean": 0.35077,
+          "decoy_sd": 0.10744,
+          "z": 2.685,
+          "P": 0.0476
+        },
+        "heldout_mah_swaps": {
+          "real": 1.25911,
+          "decoy_mean": 0.28945,
+          "decoy_sd": 0.41096,
+          "z": 2.359,
+          "P": 0.0476
+        },
+        "zeroshot_combined": {
+          "real": 1.07992,
+          "decoy_mean": 0.45208,
+          "decoy_sd": 0.14603,
+          "z": 4.3,
+          "P": 0.0476
+        }
+      },
+      "elapsed_s": 14.7
+    },
+    "sumerian": {
+      "M_pool": 580,
+      "lipi_objective": {
+        "total": 12.43547,
+        "sem": 1.17773,
+        "swap": 5.10513,
+        "base": 5.92042,
+        "split3": 1.09605,
+        "unary": 2.59529
+      },
+      "zeroshot_vs_1000_shuffles": {
+        "new_sem": {
+          "real": 1.09212,
+          "shuf_mean": 0.70921,
+          "shuf_sd": 0.1368,
+          "z": 2.799,
+          "P": 0.004
+        },
+        "new_cos": {
+          "real": 0.78415,
+          "shuf_mean": 0.46808,
+          "shuf_sd": 0.12391,
+          "z": 2.551,
+          "P": 0.012
+        },
+        "heldout_mah_swaps": {
+          "real": 0.2925,
+          "shuf_mean": 0.28856,
+          "shuf_sd": 0.36836,
+          "z": 0.011,
+          "P": 0.4925,
+          "raw_skel_rate": 0.0778,
+          "n_pairs": 16
+        },
+        "combined_zeroshot": {
+          "real": 1.19449,
+          "shuf_mean": 0.8102,
+          "shuf_sd": 0.18952,
+          "z": 2.028,
+          "P": 0.027
+        }
+      },
+      "vs_decoy_lipi_solves": {
+        "lipi_total": {
+          "real": 12.43547,
+          "decoy_mean": 13.19463,
+          "decoy_sd": 0.96839,
+          "z": -0.784,
+          "P": 0.7143
+        },
+        "rebus_compound_lock": {
+          "real": 8.44967,
+          "decoy_mean": 9.32585,
+          "decoy_sd": 0.94552,
+          "z": -0.927,
+          "P": 0.8095
+        },
+        "zeroshot_new_sem": {
+          "real": 1.09212,
+          "decoy_mean": 0.63183,
+          "decoy_sd": 0.18972,
+          "z": 2.426,
+          "P": 0.0952
+        },
+        "heldout_mah_swaps": {
+          "real": 0.2925,
+          "decoy_mean": 0.25755,
+          "decoy_sd": 0.21974,
+          "z": 0.159,
+          "P": 0.4762
+        },
+        "zeroshot_combined": {
+          "real": 1.19449,
+          "decoy_mean": 0.72198,
+          "decoy_sd": 0.22331,
+          "z": 2.116,
+          "P": 0.0952
+        }
+      },
+      "elapsed_s": 14.7
+    },
+    "akkadian": {
+      "M_pool": 580,
+      "lipi_objective": {
+        "total": 14.25797,
+        "sem": 0.62995,
+        "swap": 5.0829,
+        "base": 9.33027,
+        "split3": 0.25424,
+        "unary": 2.35806
+      },
+      "zeroshot_vs_1000_shuffles": {
+        "new_sem": {
+          "real": 0.54109,
+          "shuf_mean": 0.36694,
+          "shuf_sd": 0.1023,
+          "z": 1.702,
+          "P": 0.0619
+        },
+        "new_cos": {
+          "real": 0.44821,
+          "shuf_mean": 0.29569,
+          "shuf_sd": 0.09841,
+          "z": 1.55,
+          "P": 0.0749
+        },
+        "heldout_mah_swaps": {
+          "real": 0.59645,
+          "shuf_mean": 0.30008,
+          "shuf_sd": 0.44055,
+          "z": 0.673,
+          "P": 0.2168,
+          "raw_skel_rate": 0.0778,
+          "n_pairs": 16
+        },
+        "combined_zeroshot": {
+          "real": 0.74985,
+          "shuf_mean": 0.47197,
+          "shuf_sd": 0.18424,
+          "z": 1.508,
+          "P": 0.0769
+        }
+      },
+      "vs_decoy_lipi_solves": {
+        "lipi_total": {
+          "real": 14.25797,
+          "decoy_mean": 14.26766,
+          "decoy_sd": 1.1709,
+          "z": -0.008,
+          "P": 0.619
+        },
+        "rebus_compound_lock": {
+          "real": 10.47946,
+          "decoy_mean": 9.65697,
+          "decoy_sd": 0.96638,
+          "z": 0.851,
+          "P": 0.1905
+        },
+        "zeroshot_new_sem": {
+          "real": 0.54109,
+          "decoy_mean": 0.40523,
+          "decoy_sd": 0.12256,
+          "z": 1.109,
+          "P": 0.1905
+        },
+        "heldout_mah_swaps": {
+          "real": 0.59645,
+          "decoy_mean": 0.4062,
+          "decoy_sd": 0.57626,
+          "z": 0.33,
+          "P": 0.381
+        },
+        "zeroshot_combined": {
+          "real": 0.74985,
+          "decoy_mean": 0.5474,
+          "decoy_sd": 0.24741,
+          "z": 0.818,
+          "P": 0.1429
+        }
+      },
+      "elapsed_s": 14.8
+    },
+    "burushaski": {
+      "M_pool": 580,
+      "lipi_objective": {
+        "total": 17.20788,
+        "sem": 0.86458,
+        "swap": 6.62049,
+        "base": 10.92746,
+        "split3": 0.08851,
+        "unary": 2.91622
+      },
+      "zeroshot_vs_1000_shuffles": {
+        "new_sem": {
+          "real": 0.71436,
+          "shuf_mean": 0.5011,
+          "shuf_sd": 0.12888,
+          "z": 1.655,
+          "P": 0.0789
+        },
+        "new_cos": {
+          "real": 0.73849,
+          "shuf_mean": 0.45489,
+          "shuf_sd": 0.16025,
+          "z": 1.77,
+          "P": 0.0619
+        },
+        "heldout_mah_swaps": {
+          "real": 0.03737,
+          "shuf_mean": 0.35176,
+          "shuf_sd": 0.44603,
+          "z": -0.705,
+          "P": 0.6743,
+          "raw_skel_rate": 0.0194,
+          "n_pairs": 16
+        },
+        "combined_zeroshot": {
+          "real": 0.72744,
+          "shuf_mean": 0.62421,
+          "shuf_sd": 0.20949,
+          "z": 0.493,
+          "P": 0.2907
+        }
+      },
+      "vs_decoy_lipi_solves": {
+        "lipi_total": {
+          "real": 17.20788,
+          "decoy_mean": 16.01585,
+          "decoy_sd": 1.16721,
+          "z": 1.021,
+          "P": 0.2381
+        },
+        "rebus_compound_lock": {
+          "real": 12.27094,
+          "decoy_mean": 11.1429,
+          "decoy_sd": 1.25432,
+          "z": 0.899,
+          "P": 0.2857
+        },
+        "zeroshot_new_sem": {
+          "real": 0.71436,
+          "decoy_mean": 0.45863,
+          "decoy_sd": 0.2013,
+          "z": 1.27,
+          "P": 0.1905
+        },
+        "heldout_mah_swaps": {
+          "real": 0.03737,
+          "decoy_mean": 0.34121,
+          "decoy_sd": 0.5015,
+          "z": -0.606,
+          "P": 0.7143
+        },
+        "zeroshot_combined": {
+          "real": 0.72744,
+          "decoy_mean": 0.57806,
+          "decoy_sd": 0.2384,
+          "z": 0.627,
+          "P": 0.3333
+        }
+      },
+      "elapsed_s": 14.6
+    }
+  },
+  "part_c_sample_new_readings": [
+    {
+      "site": "Mohenjo-daro",
+      "kind": "seal",
+      "signs": "820-001-705-390",
+      "classes": "OPEN-NUM_SHORT-MEASURE-THING",
+      "readings": {
+        "dravidian": "kār̤ ('seed') · an ('inferior reddish paddy maturing in three months') · aril ('interlacing as of bamboo stalks growing together') · āral ('brownish or greenish sand-eel')",
+        "munda": "hira ('a diamond') · podo ('two fig trees receive this name hor podo') · dhar ('edge') · kare ('oil cake (b')",
+        "indo_aryan": "gir ('to go round') · bhadrapadā ('the third or fourth lunar asterism') · citi ('layer') · kutū ('leather oil vessel')",
+        "elamite": "hu-un ('me licht') · ba-h-si-li ('er möge behüten!') · pi-ut ('zicklein - lies pi-tü gi§') · hu-ti-e ('ne weg{7)')",
+        "sumerian": "miusa ('selected for breeding') · lukal ('dear one') · kbdug ('ameasuring jar with a capacity of 20 sila') · gib ('penis')",
+        "akkadian": "Abum ('abu') · Šabāṭum ('the eleventh month of the babylonian calendar') · eršum ('bed') · agannum ('a large bowl')",
+        "burushaski": "deh ('house and outbuildings in one place') · boso ('calf (both m') · bilis ('bilis ct-') · bil ('shovel')"
+      }
+    },
+    {
+      "site": "Mohenjo-daro",
+      "kind": "seal",
+      "signs": "090-090-831-585",
+      "classes": "TITLE-TITLE-PERSONAL-AFTER_M",
+      "readings": {
+        "dravidian": "uṇṇi ('tick on dogs') · uṇṇi ('tick on dogs') · añal ('sp. of gnat') · pār ('expanse')",
+        "munda": "gita ('a variety of the rice plant') · gita ('a variety of the rice plant') · edel ('the cotton tree') · atom ('to remove')",
+        "indo_aryan": "kikka ('infant') · kikka ('infant') · Sipharuha ('banyan tree') · dabba ('box')",
+        "elamite": "kar-ru-ip ('vielleicht berufsbezeichnung im personenplural im sinne von abwehrer') · kar-ru-ip ('vielleicht berufsbezeichnung im personenplural im sinne von abwehrer') · qa-as-si-it-ri ('du als schmiedender') · du-hi ('ache eigentum')",
+        "sumerian": "sunsimu ('_ horned aurochs cow') · sunsimu ('_ horned aurochs cow') · gs ('plow') · kuus ('_ to be tired')",
+        "akkadian": "mâtum ('to die') · mâtum ('to die') · adārum ('an indigenous tree') · adāmum ('to own a share in a common fund')",
+        "burushaski": "wel ('and pl') · wel ('and pl') · chukus ('bowstring (8') · hasi ('early brealfast')"
+      }
+    },
+    {
+      "site": "Mohenjo-daro",
+      "kind": "seal",
+      "signs": "220-798-740",
+      "classes": "CREST-PERSONAL-CLOSER",
+      "readings": {
+        "dravidian": "ār̤ ('to dig') · ār ('to shout') · to ('breed worms')",
+        "munda": "hara ('to grow') · hur ('swan') · horo ('the rice plant')",
+        "indo_aryan": "kana ('a grain of corn') · sak ('to dress') · mūsā ('crucible')",
+        "elamite": "pu-hu-e ('sein kind') · pa-a-h ('ich hütete') · a-ap-ti ('köcher')",
+        "sumerian": "im ('clay') · dug ('_ standard size earthen jar') · kusa ('_ leather cord')",
+        "akkadian": "nūnum ('fish') · asum ('myrtle') · kīam ('thus')",
+        "burushaski": "haiti ('outside-room of a house') · chii ('mountain') · dy ('ploughshare')"
+      }
+    },
+    {
+      "site": "Mohenjo-daro",
+      "kind": "seal",
+      "signs": "615-615-741-004-390",
+      "classes": "PLACE-PLACE-SLOT-NUM_SHORT-THING",
+      "readings": {
+        "dravidian": "to ('be charged with rain') · to ('be charged with rain') · tol ('old') · ēr̤u ('seven') · āral ('brownish or greenish sand-eel')",
+        "munda": "khep ('trip') · khep ('trip') · bhar ('load') · hore ('a kind of pulse') · kare ('oil cake (b')",
+        "indo_aryan": "mfd ('earth') · mfd ('earth') · suruksa ('a fine tree') · saka ('diospyros or strychnos') · kutū ('leather oil vessel')",
+        "elamite": "gu-ut-ti-me ('nacht') · gu-ut-ti-me ('nacht') · pi-ti-na ('für den krug[7)') · u-ha-an ('offen') · hu-ti-e ('ne weg{7)')",
+        "sumerian": "abala ('drawing of water') · abala ('drawing of water') · kisal ('courtyard') · smase ('grain boat') · gib ('penis')",
+        "akkadian": "petûm ('to open') · petûm ('to open') · kanākum ('to seal') · anna ('yes') · agannum ('a large bowl')",
+        "burushaski": "dara ('wealth') · dara ('wealth') · didiy ('bare') · set ('silt') · bil ('shovel')"
+      }
+    },
+    {
+      "site": "Mohenjo-daro",
+      "kind": "seal",
+      "signs": "806-806-400",
+      "classes": "CREST-CREST-TITLE",
+      "readings": {
+        "dravidian": "kūr ('to bend') · kūr ('to bend') · to ('be worm-eaten')",
+        "munda": "piri ('a small round basket for keeping snakes') · piri ('a small round basket for keeping snakes') · eher ('to sit on the ground with the knees')",
+        "indo_aryan": "kakka ('senior male relative') · kakka ('senior male relative') · Sri ('light')",
+        "elamite": "sil-hi-ni ('dein starkes^) gemacht \\ könig : \"die kraft') · sil-hi-ni ('dein starkes^) gemacht \\ könig : \"die kraft') · pu-ti ('stegel')",
+        "sumerian": "simu ('to have horns') · simu ('to have horns') · kisi ('chamber pot')",
+        "akkadian": "šurānum ('cat') · šurānum ('cat') · niākum ('to have sex with')",
+        "burushaski": "hont ('kernels (of apricot stones') · hont ('kernels (of apricot stones') · day ('sleep')"
+      }
+    },
+    {
+      "site": "Mohenjo-daro",
+      "kind": "seal",
+      "signs": "032-840-032-156",
+      "classes": "NUM_NAME-PERSONAL-NUM_NAME-THING",
+      "readings": {
+        "dravidian": "irai ('intestinal worm') · ēṉam ('wild hog') · irai ('intestinal worm') · aṇ ('upper part')",
+        "munda": "here ('husk after removal from grain') · paro ('a plant so named') · here ('husk after removal from grain') · tàni ('a wild dog')",
+        "indo_aryan": "nik ('to go out') · baru ('a kind of reed or grass') · nik ('to go out') · ajani ('she-goat')",
+        "elamite": "ei-pi-ha ('ich habe geformt mit könig') · zu-tm-ki-ir ('me könig er') · ei-pi-ha ('ich habe geformt mit könig') · r-w-i-da-li-ra ('mann aus hidali')",
+        "sumerian": "su ('to fill up') · ur ('dog') · su ('to fill up') · kalu ('a-vessel')",
+        "akkadian": "šina ('they') · šarratum ('queen') · šina ('they') · mūtum ('death')",
+        "burushaski": "wah ('bad smell') · weral ('tasteless') · wah ('bad smell') · awala ('slipping j fell')"
+      }
+    },
+    {
+      "site": "Mohenjo-daro",
+      "kind": "seal",
+      "signs": "032-705-742-350-460",
+      "classes": "NUM_NAME-MEASURE-SLOT-PERSONAL-PERSONAL",
+      "readings": {
+        "dravidian": "irai ('intestinal worm') · aril ('interlacing as of bamboo stalks growing together') · toḷ ('to perforate') · to ('grow') · to ('grow old')",
+        "munda": "here ('husk after removal from grain') · dhar ('edge') · bhar ('full') · karu ('handles on a box or trunk by which') · boar ('a species of fish')",
+        "indo_aryan": "nik ('to go out') · citi ('layer') · sarjavana ('teak tree or forest') · kulinga ('fork-tailed shrike') · asana ('the tree terminalia. tomentosa')",
+        "elamite": "ei-pi-ha ('ich habe geformt mit könig') · pi-ut ('zicklein - lies pi-tü gi§') · e-ip-ti-h ('diese verbalform hat auch die zweifel von könig') · na-ru-de ('göttin narunde') · su-un-ki-me ('ne königsherrschaft')",
+        "sumerian": "su ('to fill up') · kbdug ('ameasuring jar with a capacity of 20 sila') · ksde ('a fish measure') · kisalmah ('main courtyard') · sutia ('goods')",
+        "akkadian": "šina ('they') · eršum ('bed') · kankum ('under seal') · šizbum ('milk') · šiqdum ('almond tree')",
+        "burushaski": "wah ('bad smell') · bilis ('bilis ct-') · dayom ('flour') · yalyu ('hairy caterpillar') · zuroy ('clouds')"
+      }
+    },
+    {
+      "site": "Mohenjo-daro",
+      "kind": "seal",
+      "signs": "032-390-832",
+      "classes": "NUM_NAME-THING-PERSONAL",
+      "readings": {
+        "dravidian": "irai ('intestinal worm') · āral ('brownish or greenish sand-eel') · vār ('to comb as hair')",
+        "munda": "here ('husk after removal from grain') · kare ('oil cake (b') · khel ('to play')",
+        "indo_aryan": "nik ('to go out') · kutū ('leather oil vessel') · vaptravapana ('sowing seed land')",
+        "elamite": "ei-pi-ha ('ich habe geformt mit könig') · hu-ti-e ('ne weg{7)') · xia-pu-ri ('meinem gott (für sonstiges na-pir')",
+        "sumerian": "su ('to fill up') · gib ('penis') · gasea ('milk for barley porridge')",
+        "akkadian": "šina ('they') · agannum ('a large bowl') · šīnātum ('urine')",
+        "burushaski": "wah ('bad smell') · bil ('shovel') · topfau ('the seed-sowing')"
+      }
+    },
+    {
+      "site": "Mohenjo-daro",
+      "kind": "seal",
+      "signs": "140-005-390",
+      "classes": "CREST-NUM_SHORT-THING",
+      "readings": {
+        "dravidian": "māl ('bamboo ladder') · ottu ('to keep time with cymbals or with the') · āral ('brownish or greenish sand-eel')",
+        "munda": "kome ('a large forest tree') · hira ('diamond') · kare ('oil cake (b')",
+        "indo_aryan": "baara ('the fruit') · sva ('one') · kutū ('leather oil vessel')",
+        "elamite": "har-ku-ra ('mann aus harku') · hu-ni-iia ('von mir') · hu-ti-e ('ne weg{7)')",
+        "sumerian": "masanse ('animals') · simus ('light rays') · gib ('penis')",
+        "akkadian": "nēšum ('lion') · Ninua ('nineveh') · agannum ('a large bowl')",
+        "burushaski": "barn ('they throw it three times into the fire') · sat ('power') · bil ('shovel')"
+      }
+    },
+    {
+      "site": "Mohenjo-daro",
+      "kind": "seal",
+      "signs": "920-455-740-350",
+      "classes": "OPEN-PERSONAL-CLOSER-PERSONAL",
+      "readings": {
+        "dravidian": "āmpi ('common mushroom') · kaṇ ('joint in bamboo or cane') · to ('breed worms') · to ('grow')",
+        "munda": "ehet ('a rice field') · kus ('a kind of grass') · horo ('the rice plant') · karu ('handles on a box or trunk by which')",
+        "indo_aryan": "kOya ('inside of fruit') · Saimbala ('silk cotton tree') · mūsā ('crucible') · kulinga ('fork-tailed shrike')",
+        "elamite": "har-ri-nu-ip ('landarbeiter') · zf-in ('kleinkind') · a-ap-ti ('köcher') · na-ru-de ('göttin narunde')",
+        "sumerian": "qg ('wild mountain boar ? (cf') · udunitah ('male sheep') · kusa ('_ leather cord') · kisalmah ('main courtyard')",
+        "akkadian": "Ayyārum ('the second month of the babylonian calendar') · kunukkum ('seal') · kīam ('thus') · šizbum ('milk')",
+        "burushaski": "pan ('space in house at either side of fireplace') · pfet ('central part of inner part of house') · dy ('ploughshare') · yalyu ('hairy caterpillar')"
+      }
+    },
+    {
+      "site": "Mohenjo-daro",
+      "kind": "seal",
+      "signs": "861-002-717-705-892",
+      "classes": "OPEN-SLOT-PERSONAL-MEASURE-PERSONAL",
+      "readings": {
+        "dravidian": "kaṛ ('extreme end') · ār̤ ('to sink') · vār̤ ('to exist') · aril ('interlacing as of bamboo stalks growing together') · to ('gnaw as white ants')",
+        "munda": "hu-ri ('a kind of plant (h') · huri ('a kind of shrub used as medicine') · huli ('\\hue and cry') · dhar ('edge') · soro ('a wooden bar placed crosswise to close an')",
+        "indo_aryan": "gaura ('white') · kuna ('an insect living in clothes') · Sauna ('relating to dogs') · citi ('layer') · vartadruna ('pellet-bow')",
+        "elamite": "a-hi-an ('früchte omen rs') · hi-an ('säulenhalle') · pu-hu ('in strichschrift des 23') · pi-ut ('zicklein - lies pi-tü gi§') · kak-za-ma-ak ('es wurde zum schmieden gegeben')",
+        "sumerian": "amas ('sheepfold') · us ('male bird') · musa ('to name') · kbdug ('ameasuring jar with a capacity of 20 sila') · aapin ('_ part ofaseeder plow')",
+        "akkadian": "bīšum ('possession') · īnum ('eye') · nišum ('mankind') · eršum ('bed') · qištum ('forest')",
+        "burushaski": "duhu ('duhuwt') · het ('shaft of plough') · time ('measures of') · bilis ('bilis ct-') · tambuck ('pellet-bow (ie')"
+      }
+    },
+    {
+      "site": "Mohenjo-daro",
+      "kind": "seal",
+      "signs": "820-002-416-740",
+      "classes": "OPEN-SLOT-PERSONAL-CLOSER",
+      "readings": {
+        "dravidian": "kār̤ ('seed') · ār̤ ('to sink') · vār ('length') · to ('breed worms')",
+        "munda": "hira ('a diamond') · huri ('a kind of shrub used as medicine') · chat ('j marchapril') · horo ('the rice plant')",
+        "indo_aryan": "gir ('to go round') · kuna ('an insect living in clothes') · kankatakara ('comb-maker') · mūsā ('crucible')",
+        "elamite": "hu-un ('me licht') · hi-an ('säulenhalle') · hi-h ('ich betete') · a-ap-ti ('köcher')",
+        "sumerian": "miusa ('selected for breeding') · us ('male bird') · musdub ('comb orset hair') · kusa ('_ leather cord')",
+        "akkadian": "Abum ('abu') · īnum ('eye') · kalbum ('dog also as an invective') · kīam ('thus')",
+        "burushaski": "deh ('house and outbuildings in one place') · het ('shaft of plough') · dhedimi ('taking a rake he draws line') · dy ('ploughshare')"
+      }
+    },
+    {
+      "site": "Mohenjo-daro",
+      "kind": "seal",
+      "signs": "140-920-575-226",
+      "classes": "CREST-OPEN-PERSONAL-CREST",
+      "readings": {
+        "dravidian": "māl ('bamboo ladder') · āmpi ('common mushroom') · pīr ('sponge gourd') · ar̤al ('to burn')",
+        "munda": "kome ('a large forest tree') · ehet ('a rice field') · tum ('small') · dher ('many')",
+        "indo_aryan": "baara ('the fruit') · kOya ('inside of fruit') · dubb ('sink') · kanda ('pounding')",
+        "elamite": "har-ku-ra ('mann aus harku') · har-ri-nu-ip ('landarbeiter') · da-h ('ache ich sandte') · ap-tarri5 ('schafback')",
+        "sumerian": "masanse ('animals') · qg ('wild mountain boar ? (cf') · kius ('to set on the ground') · kilim ('rodents or other very small mammals')",
+        "akkadian": "nēšum ('lion') · Ayyārum ('the second month of the babylonian calendar') · dāmum ('blood') · mannum ('who?')",
+        "burushaski": "barn ('they throw it three times into the fire') · pan ('space in house at either side of fireplace') · hesa ('yuza'r') · hutin ('hut'i-')"
+      }
+    },
+    {
+      "site": "Mohenjo-daro",
+      "kind": "seal",
+      "signs": "220-740-679",
+      "classes": "CREST-CLOSER-TITLE",
+      "readings": {
+        "dravidian": "ār̤ ('to dig') · to ('breed worms') · pūl ('black-berried feather-foil')",
+        "munda": "hara ('to grow') · horo ('the rice plant') · jama ('applied to flowers or fruit that do not')",
+        "indo_aryan": "kana ('a grain of corn') · mūsā ('crucible') · didimanaka ('a bird of the pecking class')",
+        "elamite": "pu-hu-e ('sein kind') · a-ap-ti ('köcher') · zip-pi-i5 ('(königliche')",
+        "sumerian": "im ('clay') · kusa ('_ leather cord') · tud ('to bear')",
+        "akkadian": "nūnum ('fish') · kīam ('thus') · Sāmerīna ('the ancient capital of the northern kingdom of')",
+        "burushaski": "haiti ('outside-room of a house') · dy ('ploughshare') · dohor ('dohorria-: (do-')"
+      }
+    },
+    {
+      "site": "Mohenjo-daro",
+      "kind": "seal",
+      "signs": "031-001-760-740",
+      "classes": "NUM_TALL-NUM_SHORT-AFTER_M-CLOSER",
+      "readings": {
+        "dravidian": "kīr̤ ('place or space below') · an ('inferior reddish paddy maturing in three months') · tār ('cord') · to ('breed worms')",
+        "munda": "hora ('road') · podo ('two fig trees receive this name hor podo') · red’ ('slender root of a plant') · horo ('the rice plant')",
+        "indo_aryan": "kanika ('grain') · bhadrapadā ('the third or fourth lunar asterism') · amisa ('flesh') · mūsā ('crucible')",
+        "elamite": "pa-uah ('könig liest das wort pa') · ba-h-si-li ('er möge behüten!') · aj-ti ('ache köcher') · a-ap-ti ('köcher')",
+        "sumerian": "sumu ('to enlarge') · lukal ('dear one') · kisaa ('socle') · kusa ('_ leather cord')",
+        "akkadian": "qinnum ('nest') · Šabāṭum ('the eleventh month of the babylonian calendar') · iṣum ('tree') · kīam ('thus')",
+        "burushaski": "hilt ('brick') · boso ('calf (both m') · dota ('plants raised to grow') · dy ('ploughshare')"
+      }
+    }
+  ]
+}

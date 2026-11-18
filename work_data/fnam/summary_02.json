@@ -1,0 +1,95 @@
+{
+  "heldout": {
+    "n_site_locked_discoveries": 89,
+    "n_testable_on_new_texts": 58,
+    "obs_new_hit_events": 126,
+    "within_kind_shuf_mean_hits": 77.53,
+    "within_kind_shuf_sd_hits": 9.56,
+    "z_new_hits": 5.07,
+    "p_new_hits": 0.000999000999000999,
+    "blind_classified_new_docs": 253,
+    "blind_correct_new_docs": 68,
+    "blind_accuracy": 0.2688,
+    "shuf_mean_correct_docs": 44.66,
+    "z_doc_classifier": 4.88,
+    "p_doc_classifier": 0.000999000999000999
+  },
+  "sender_receiver": {
+    "shared_3_4_gram_stems": 129,
+    "pure_cross_city_stems": 72,
+    "stem_3gram_cross_city_pair_rate": 0.7183,
+    "exact_3plus_sign_impressions_all_other_city": "13/13 (100%)",
+    "p_all_13_other_city_vs_seal_distribution": 0.59819,
+    "top_sender_to_receiver_flows": [
+      {
+        "sender_seal": "Mohenjo-daro",
+        "receiver_tag": "Lothal",
+        "stem_links": 231
+      },
+      {
+        "sender_seal": "Mohenjo-daro",
+        "receiver_tag": "Harappa",
+        "stem_links": 130
+      },
+      {
+        "sender_seal": "Harappa",
+        "receiver_tag": "Lothal",
+        "stem_links": 86
+      },
+      {
+        "sender_seal": "Harappa",
+        "receiver_tag": "Mohenjo-daro",
+        "stem_links": 47
+      },
+      {
+        "sender_seal": "Mohenjo-daro",
+        "receiver_tag": "Rakhigarhi",
+        "stem_links": 29
+      },
+      {
+        "sender_seal": "Mohenjo-daro",
+        "receiver_tag": "other",
+        "stem_links": 17
+      },
+      {
+        "sender_seal": "Mohenjo-daro",
+        "receiver_tag": "Dholavira",
+        "stem_links": 15
+      },
+      {
+        "sender_seal": "Mohenjo-daro",
+        "receiver_tag": "Rupar",
+        "stem_links": 13
+      },
+      {
+        "sender_seal": "Dholavira",
+        "receiver_tag": "Lothal",
+        "stem_links": 10
+      },
+      {
+        "sender_seal": "Mohenjo-daro",
+        "receiver_tag": "Kalibangan",
+        "stem_links": 9
+      }
+    ]
+  },
+  "kober_grid": {
+    "unique_city_locked_stems": 61,
+    "obs_same_city_kober_triplets": 26,
+    "ctrl_same_city_triplets_mean": 1.66,
+    "z_same_city_triplets": 18.51,
+    "p_same_city_triplets": 0.000999000999000999,
+    "obs_cross_city_parallel_frame_pairs": 47,
+    "ctrl_freq_matched_mean": 84.67,
+    "z_parallel_frames": -1.76,
+    "p_parallel_frames": 0.987012987012987
+  },
+  "habitat": {
+    "obs_habitat_match_rate": 0.3603,
+    "hits": 49,
+    "total_tokens": 136,
+    "city_perm_mean": 0.2431,
+    "z_habitat": 2.15,
+    "p_habitat": 0.024
+  }
+}

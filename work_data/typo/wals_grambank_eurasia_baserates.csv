@@ -1,0 +1,9 @@
+feature_id,source_proxy,eurasia_hits,eurasia_total,eurasia_families,raw_eurasia_rate,family_stratified_rate
+G1_Possessor_Suffix_NoHeadPrefix,"Grambank GB432=1 & GB431=0 & GB075=1 (dependent suffix/postposition on possessor, no head possessive prefix)",172,430,29,0.4,0.4974
+G2_RightHeaded_Possessor_Possessed,Grambank GB065=1 (pragmatically unmarked Possessor-Possessed NP order; WALS 86A-1),368,549,32,0.6703,0.723
+G3_NumNoun_Discrete_AccountingSplit,Grambank GB024=1 (Numeral-Noun order for discrete count nouns; WALS 89A-1),309,543,30,0.5691,0.6582
+G4_NoSortalCLF_StemAllomorphy,Grambank GB057=0 (no obligatory numeral sortal classifier chain Num+CLF+N; WALS 55A-1),277,532,32,0.5207,0.6524
+G5_NonPureDecimal_OctonalDuodecimal,WALS 131A != 131A-1 / Grambank GB333=0 or hybrid/subtractive/duodecimal-sexagesimal metrology,14,60,22,0.2333,0.336
+G6_RightHeaded_Compounding_StrictHeadFinal,"WALS 86A-1 & 85A-1 / Grambank GB065=1 & GB074=0 & GB075=1 (strict head-final nominal modifiers, no prepositions)",244,496,31,0.4919,0.5304
+G7_SuffixingOnly_NoInfix_NoPrefix,"Grambank GB080=1 & GB079=0 & GB081=0 (suffixing/enclitic, zero productive infixation & lexical prefixation; WALS 26A-2)",155,500,31,0.31,0.3743
+JOINT_All6_Morphosyntax_Grambank,Simultaneous satisfaction of G1+G2+G3+G4+G6+G7 in Grambank Eurasia (matching families: Austroasiatic/Dravidian/Indo-European/Sino-Tibetan/Tungusic/Turkic/Uralic),31,368,27,0.0842,0.0551

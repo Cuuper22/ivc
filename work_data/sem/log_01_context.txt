@@ -1,0 +1,14 @@
+[sem_01] Loading sign metadata from SQLite, sign_shapes.csv, crosswalk, and classes_v2.csv ...
+[sem_01] SQLite verified: 5679 lipi_numeric witnesses, 182 Mayig P descriptions.
+[sem_01] Building Lipi physical objects (stone_map) and merging stamps, copper animals, and spots ...
+[sem_01] Lipi physical stones: 4691 -> copy-events: 4476 (moulded batch duplicates collapsed: 215, duplicate row merges: 3)
+[sem_01] Building Mahadevan physical objects & held-out new-text events ...
+[sem_01] Mahadevan held-out new texts: 1183 lines -> 1050 objects -> 990 copy-events (moulded batch duplicates collapsed: 60)
+[sem_01] Mahadevan full corpus: 3573 lines -> 2906 objects -> 2706 copy-events
+[sem_01] --- Context Summary (Lipi 4,476 events vs Held-Out New Texts 990 events) ---
+[sem_01] Lipi circuits: {'eastern_headwaters': 269, 'riverine_core': 3682, 'overland_west_north': 25, 'coastal_home': 455, 'unknown': 29, 'gulf_oman': 16}
+[sem_01] New  circuits: {'riverine_core': 866, 'coastal_home': 79, 'eastern_headwaters': 34, 'unknown': 2, 'overland_west_north': 7, 'gulf_oman': 2}
+[sem_01] Lipi subtypes: {'seal_all': 2227, 'mtab_all': 1138, 'tab_flat_chit': 1008, 'tab_moulded': 647, 'pot_all': 569, 'tab_incised': 491, 'pot_graffito': 486, 'seal_bar_rect': 378, 'seal_tiny': 353, 'tag_all': 207, 'seal_giant': 181, 'copper_tablet': 151, 'tab_prism': 130, 'pot_small_stamped': 60, 'bangle_all': 48, 'pot_storage_jar': 44, 'ivory_bone_rod': 40, 'seal_round_cyl': 39, 'bangle_stoneware': 38, 'tag_L_bale': 24, 'ctab_picsign': 22, 'pot_painted': 19}
+[sem_01] Lipi zones   : {'har_mound_F': 614, 'md_DKG_south': 547, 'md_DK_other': 528, 'har_mound_E': 421, 'har_F_platforms_quarters': 205, 'md_HR_elite': 200, 'har_mound_AB': 125, 'md_DKG_north': 121, 'md_VS_MN_craft': 111, 'md_VS_dyers': 99, 'har_area_DGH': 87, 'klb_citadel': 87, 'har_F_granary': 86, 'klb_lower_town': 75, 'lothal_town_dock_bead': 71, 'md_citadel': 61, 'dhol_middle_town': 58, 'dhol_citadel_bailey': 56, 'chanhu_mound2_workshops': 52, 'lothal_acropolis_res': 36}
+[sem_01] New  zones   : {'har_mound_F': 195, 'md_DKG_south': 185, 'md_DK_other': 131, 'har_F_platforms_quarters': 65, 'md_HR_elite': 55, 'har_F_granary': 46, 'md_DKG_north': 42, 'har_area_DGH': 36, 'md_citadel': 35, 'md_VS_MN_craft': 34, 'md_VS_dyers': 34, 'har_mound_AB': 26, 'chanhu_mound2_workshops': 16, 'klb_lower_town': 8, 'klb_citadel': 8}
+[sem_01] Done writing work_data/sem/ context tables.

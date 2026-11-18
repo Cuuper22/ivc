@@ -1,0 +1,27 @@
+[   0.0s] [gsol_03] Part A: Running Fine-Slot Rival Control & Cross-City Split on K=1...
+[   0.1s] [gsol_01] Directional adjacent-bigram scorable events: Lipi=3321 (3856 faces), New=701 (738 faces)
+[   3.8s] [gsol_03] Fine control [v2_base_band_cat      ] (movable=174/184): Fixed z=+3.55 (P=0.001) | Refit z=+2.70 (P=0.003)
+[   7.6s] [gsol_03] Fine control [hmm10_band_cat        ] (movable=184/184): Fixed z=+3.74 (P=0.001) | Refit z=+3.02 (P=0.001)
+[  11.3s] [gsol_03] Fine control [v2_x_hmm10_cat        ] (movable=168/184): Fixed z=+3.81 (P=0.001) | Refit z=+2.67 (P=0.003)
+[  15.2s] [gsol_03] Fine control [v2_x_hmm10_band_cat   ] (movable=146/184): Fixed z=+3.40 (P=0.001) | Refit z=+2.71 (P=0.007)
+[  15.2s] [gsol_01] Directional adjacent-bigram scorable events: Lipi=1442 (1500 faces), New=316 (332 faces)
+[  17.4s] [gsol_03] Cross-City [MD Lipi -> Non-MD New           ]: Fixed B_cat z=+2.86 (P=0.001) | Refit B_cat z=+1.30 (P=0.099)
+[  17.4s] [gsol_01] Directional adjacent-bigram scorable events: Lipi=1286 (1740 faces), New=385 (406 faces)
+[  19.5s] [gsol_03] Cross-City [Harappa Lipi -> MD New          ]: Fixed B_cat z=+3.42 (P=0.001) | Refit B_cat z=+2.29 (P=0.011)
+[  19.5s] [gsol_03] Part B: Running Morpho-Phonetic & Rebus-Locked Redesign Solver across all 7 languages at EQUAL M=580 (N_DECOY=20)...
+[  19.6s] [gsol_02] Built top-120 sign problem: Lipi events=3187 (edge sum=3187.0), New events=683 (edge sum=683.0), pictured signs=87, Lipi swap pairs=65, Lipi compound-base=13, Lipi splits=43, Held-out Mahadevan-only swaps=16, splits=2
+[  27.1s] [gsol_02] Loaded lexicon dravidian   : raw=12739 | active 1-to-1 pool M= 580 | pictured signs with L-nouns=87/87
+[  27.4s] [gsol_02] Loaded lexicon munda       : raw=15824 | active 1-to-1 pool M= 580 | pictured signs with L-nouns=87/87
+[  27.6s] [gsol_02] Loaded lexicon indo_aryan  : raw= 6993 | active 1-to-1 pool M= 580 | pictured signs with L-nouns=83/87
+[  27.7s] [gsol_02] Loaded lexicon elamite     : raw= 2441 | active 1-to-1 pool M= 580 | pictured signs with L-nouns=57/87
+[  27.9s] [gsol_02] Loaded lexicon sumerian    : raw= 3039 | active 1-to-1 pool M= 580 | pictured signs with L-nouns=80/87
+[  28.0s] [gsol_02] Loaded lexicon akkadian    : raw=  718 | active 1-to-1 pool M= 580 | pictured signs with L-nouns=64/87
+[  28.2s] [gsol_02] Loaded lexicon burushaski  : raw= 1318 | active 1-to-1 pool M= 580 | pictured signs with L-nouns=63/87
+[  43.6s] [gsol_03] [morphophon M=580] dravidian   (15.4s) | Lipi lock vs decoy z=+1.10 (P=0.191) | Lipi tot z=+1.53 | New sem z=+1.59 (P=0.007) | HO-swap z=-0.68 (P=0.757)
+[  59.2s] [gsol_03] [morphophon M=580] munda       (15.6s) | Lipi lock vs decoy z=+1.80 (P=0.048) | Lipi tot z=+1.86 | New sem z=+1.19 (P=0.132) | HO-swap z=+0.10 (P=0.407)
+[  74.5s] [gsol_03] [morphophon M=580] indo_aryan  (15.3s) | Lipi lock vs decoy z=+0.74 (P=0.333) | Lipi tot z=+1.18 | New sem z=+1.08 (P=0.137) | HO-swap z=+0.12 (P=0.373)
+[  89.2s] [gsol_03] [morphophon M=580] elamite     (14.7s) | Lipi lock vs decoy z=-1.11 (P=0.857) | Lipi tot z=-0.65 | New sem z=+1.85 (P=0.056) | HO-swap z=+1.80 (P=0.070)
+[ 103.9s] [gsol_03] [morphophon M=580] sumerian    (14.7s) | Lipi lock vs decoy z=-0.93 (P=0.809) | Lipi tot z=-0.78 | New sem z=+2.80 (P=0.004) | HO-swap z=+0.01 (P=0.492)
+[ 118.7s] [gsol_03] [morphophon M=580] akkadian    (14.8s) | Lipi lock vs decoy z=+0.85 (P=0.191) | Lipi tot z=-0.01 | New sem z=+1.70 (P=0.062) | HO-swap z=+0.67 (P=0.217)
+[ 133.3s] [gsol_03] [morphophon M=580] burushaski  (14.6s) | Lipi lock vs decoy z=+0.90 (P=0.286) | Lipi tot z=+1.02 | New sem z=+1.66 (P=0.079) | HO-swap z=-0.70 (P=0.674)
+[ 133.3s] [gsol_03] Saved eval_redesign_summary.json and all 7 qap_words_<lang>_morphophon.csv tables!

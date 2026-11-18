@@ -1,0 +1,26 @@
+[   0.0s] [gsol_02] Starting Global Dictionary QAP Solver: N=120 signs, 7 languages, N_DECOY_SOLVES=12, M_CAP=900...
+[   0.1s] [gsol_02] Built top-120 sign problem: Lipi events=3187 (edge sum=3187.0), New events=683 (edge sum=683.0), pictured signs=87, Lipi swap pairs=65, Lipi compound-base=13, Lipi splits=43, Held-out Mahadevan-only swaps=16, splits=2
+[   6.5s] [gsol_02] Loaded lexicon dravidian   : raw=12739 | active 1-to-1 pool M= 900 | pictured signs with L-nouns=87/87
+[   6.8s] [gsol_02] Loaded lexicon munda       : raw=15824 | active 1-to-1 pool M= 900 | pictured signs with L-nouns=87/87
+[   7.2s] [gsol_02] Loaded lexicon indo_aryan  : raw= 6993 | active 1-to-1 pool M= 900 | pictured signs with L-nouns=83/87
+[   7.5s] [gsol_02] Loaded lexicon elamite     : raw= 2441 | active 1-to-1 pool M= 900 | pictured signs with L-nouns=57/87
+[   7.8s] [gsol_02] Loaded lexicon sumerian    : raw= 3039 | active 1-to-1 pool M= 900 | pictured signs with L-nouns=80/87
+[   7.9s] [gsol_02] Loaded lexicon akkadian    : raw=  718 | active 1-to-1 pool M= 613 | pictured signs with L-nouns=64/87
+[   8.2s] [gsol_02] Loaded lexicon burushaski  : raw= 1318 | active 1-to-1 pool M= 900 | pictured signs with L-nouns=63/87
+[   8.2s] [gsol_02] ================ SOLVER MODE: FREE ================
+[  26.6s] [gsol_02] [free    ] dravidian   (M= 900, 18.4s) | Lipi tot=+6.6909 (vs decoy-solve z=+0.05 P=0.462) | New sem z=+2.62 (P=0.002) | HO-swap z=+0.13 | New vs decoy-solve z=+1.88
+[  44.7s] [gsol_02] [free    ] munda       (M= 900, 18.1s) | Lipi tot=+8.3287 (vs decoy-solve z=-0.02 P=0.462) | New sem z=+2.48 (P=0.001) | HO-swap z=-0.26 | New vs decoy-solve z=+3.95
+[  61.0s] [gsol_02] [free    ] indo_aryan  (M= 900, 16.3s) | Lipi tot=+8.7485 (vs decoy-solve z=-0.84 P=0.846) | New sem z=+0.96 (P=0.204) | HO-swap z=-0.64 | New vs decoy-solve z=+2.38
+[  78.0s] [gsol_02] [free    ] elamite     (M= 900, 16.9s) | Lipi tot=+8.0413 (vs decoy-solve z=-0.23 P=0.615) | New sem z=+2.15 (P=0.016) | HO-swap z=+0.56 | New vs decoy-solve z=+6.05
+[  95.3s] [gsol_02] [free    ] sumerian    (M= 900, 17.3s) | Lipi tot=+8.1106 (vs decoy-solve z=-0.01 P=0.462) | New sem z=+2.83 (P=0.001) | HO-swap z=+0.02 | New vs decoy-solve z=+6.57
+[ 106.2s] [gsol_02] [free    ] akkadian    (M= 613, 10.9s) | Lipi tot=+7.4567 (vs decoy-solve z=-1.81 P=0.923) | New sem z=+2.54 (P=0.001) | HO-swap z=+0.98 | New vs decoy-solve z=+2.81
+[ 123.5s] [gsol_02] [free    ] burushaski  (M= 900, 17.4s) | Lipi tot=+9.7197 (vs decoy-solve z=+0.31 P=0.308) | New sem z=+2.12 (P=0.024) | HO-swap z=+1.65 | New vs decoy-solve z=+2.69
+[ 123.5s] [gsol_02] ================ SOLVER MODE: ANCHORED ================
+[ 142.7s] [gsol_02] [anchored] dravidian   (M= 900, 19.1s) | Lipi tot=+6.7292 (vs decoy-solve z=-1.40 P=0.923) | New sem z=+3.44 (P=0.001) | HO-swap z=-0.92 | New vs decoy-solve z=+2.02
+[ 162.0s] [gsol_02] [anchored] munda       (M= 900, 19.4s) | Lipi tot=+7.7289 (vs decoy-solve z=-1.83 P=1.000) | New sem z=+2.13 (P=0.002) | HO-swap z=+0.70 | New vs decoy-solve z=+4.47
+[ 178.4s] [gsol_02] [anchored] indo_aryan  (M= 900, 16.4s) | Lipi tot=+9.2094 (vs decoy-solve z=-0.68 P=0.769) | New sem z=+0.41 (P=0.342) | HO-swap z=-0.13 | New vs decoy-solve z=+0.82
+[ 193.6s] [gsol_02] [anchored] elamite     (M= 900, 15.1s) | Lipi tot=+8.4247 (vs decoy-solve z=+0.24 P=0.308) | New sem z=+2.42 (P=0.001) | HO-swap z=-0.89 | New vs decoy-solve z=+3.30
+[ 208.2s] [gsol_02] [anchored] sumerian    (M= 900, 14.6s) | Lipi tot=+8.1237 (vs decoy-solve z=-1.69 P=1.000) | New sem z=+2.79 (P=0.001) | HO-swap z=-0.41 | New vs decoy-solve z=+1.29
+[ 216.5s] [gsol_02] [anchored] akkadian    (M= 613,  8.3s) | Lipi tot=+7.3934 (vs decoy-solve z=-2.25 P=1.000) | New sem z=+2.40 (P=0.003) | HO-swap z=-0.04 | New vs decoy-solve z=+3.27
+[ 230.4s] [gsol_02] [anchored] burushaski  (M= 900, 13.9s) | Lipi tot=+8.5463 (vs decoy-solve z=-1.78 P=0.923) | New sem z=+1.11 (P=0.152) | HO-swap z=+1.29 | New vs decoy-solve z=+3.74
+[ 230.4s] [gsol_02] Saved qap_summary.json and all 14 qap_words_<lang>_<mode>.csv tables!

@@ -1,0 +1,17 @@
+[sem_03] Running domain-level rescues for the 4 narrow Pass-1 null sub-domains ...
+[sem_03] Saved 11 domain-level rescue results to work_data/sem/domain_rescues.csv:
+[sem_03]   [dhol_citadel_bailey] CLASS:TALL_NUM (031-036 capacity strokes): 18/56 vs 11/88, lift=1.534x, OR=3.238, P_shuf=0.0045
+[sem_03]   [dhol_citadel_bailey] BUNDLE:706_or_033-520 (kalam measure / 3-kalam chief): 4/56 vs 0/88, lift=2.798x, OR=15.171, P_shuf=0.01399
+[sem_03]   [pot_storage_jar_vs_small] BUNDLE:BULK_LOT (055 dozen | 540 vessel | TREE_FIBRE | 035 five-tall): 11/44 vs 3/58, lift=1.836x, OR=5.443, P_shuf=0.0065
+[sem_03]   [pot_storage_jar_vs_small] BUNDLE:TALL_CAPACITY_ONLY (tall strokes without goblet stamp 440/697): 8/44 vs 10/58, lift=1.025x, OR=1.076, P_shuf=0.55372
+[sem_03]   [lothal_town_dock_bead] SIGN:406 (coastal tree/fibre variant): 3/71 vs 7/3682, lift=6.912x, OR=25.04, P_shuf=0.007
+[sem_03]   [lothal_town_dock_bead] SIGN:111 (artisan/staff person): 3/71 vs 11/3682, lift=3.953x, OR=16.313, P_shuf=0.02649
+[sem_03]   [lothal_town_dock_bead] SIGN:527 (after-jar title closer): 5/71 vs 53/3682, lift=2.945x, OR=5.611, P_shuf=0.03198
+[sem_03]   [lothal_town_dock_bead] SIGN:575 (dry measure / port bin): 4/71 vs 61/3682, lift=2.488x, OR=3.926, P_shuf=0.07246
+[sem_03]   [chanhu_bead_seal_core] SIGN:220@COUNTED (counted fish / bead-weight tally): 3/26 vs 58/3507, lift=4.673x, OR=8.782, P_shuf=0.02399
+[sem_03]   [chanhu_bead_seal_core] SIGN:909 (left-arc workshop sign): 3/26 vs 0/3507, lift=22.642x, OR=1044.787, P_shuf=0.0005
+[sem_03]   [chanhu_bead_seal_core] PHRASE:032-220 (tall-two + fish in workshop core): 3/26 vs 56/3507, lift=4.706x, OR=9.098, P_shuf=0.02749
+[sem_03] Exported work_data/sem/sign_anchors.csv: 219 anchored (sign, slot) rows covering 175 distinct Indus signs!
+[sem_03] Tier breakdown (signs): {'TIER_2_FDR_FWER': 75, 'TIER_1_NEW_REPLICATED': 61, 'TIER_3_SLOT_OR_MULTITEXT_LEAD': 51, 'TIER_1B_MAH_FULL_REPLICATED': 32}
+[sem_03] Exported work_data/sem/phrase_anchors.csv: 239 distinct anchored phrases!
+[sem_03] Tier breakdown (phrases): {'TIER_2_FDR_FWER': 109, 'TIER_1_NEW_REPLICATED': 50, 'TIER_3_SLOT_OR_MULTITEXT_LEAD': 46, 'TIER_1B_MAH_FULL_REPLICATED': 34}

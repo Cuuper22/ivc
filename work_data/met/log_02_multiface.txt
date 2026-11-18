@@ -1,0 +1,96 @@
+=== STEP 3A: MULTI-FACE OBJECT INVENTORY (DEDUPLICATED EVENTS) ===
+Lipi multi-face events by face count: {2: 805, 3: 41, 4: 7, 5: 2, 6: 1, 7: 1}
+Lipi multi-face events by kind: {'mtab': 730, 'ctab': 38, 'seal': 36, 'tag': 33, 'tool': 6, 'pot': 6, 'other': 6, 'rod': 1, 'bangle': 1}
+Held-out M_new_clean multi-face events by face count: {2: 101, 3: 12, 4: 2}
+Held-out M_new_clean multi-face events by kind: {'seal': 55, 'tag': 32, 'mtab': 18, 'ctab': 5, 'pot': 4, 'other': 1}
+
+All 4- to 7-face objects in deduplicated corpus (n=13):
+  H-316   (L, Harappa, TAB:I, 4 faces): f1:3(F,cup); f3:3(F,cup) | 176 740 400 | 033 700 | 176 740 400 | 033 700
+  H-912   (L, Harappa, TAB:I, 4 faces): f1:4(S,cup); f3:4(S,cup) | 416 220 760 740 400 | 004 700 220 | 416 220 760 740 400 | 004 700 220
+  K-86    (L, Kalibangan, TAG:L, 4 faces): no pure counts | 550 000 000 000 000 | 000 | 000 | 000
+  K-88    (L, Kalibangan, TAG:L, 4 faces): no pure counts | 861 002 460 000 740 | 000 000 000 740 | 000 000 | 000 000 000 000
+  K-89    (L, Kalibangan, TAG:L, 4 faces): f1:2(S,bare); f1:3(F,kalam); f2:1(S,other) | 832 360 002 362 740 090 | 000 002 000 705 033 000 | 000 390 595 002 350 001 | 000 000 000 491 0
+  L-66    (L, Lothal, SEAL:S, 5 faces): f0:3(T,bare); f4:2(F,fish_plain) | 013 | 647 | 000 | 220 | 000 000 000 032 220 904 000
+  M-326   (L, Mohenjo-daro, SEAL:S, 7 faces): f1:3(S,kalancu); f2:3(F,nirai) | 920 060 741 235 904 740 | 645 003 820 | 171 032 031 171 000 000 | 000 111 390 | 840 461 | 169 |
+  M-331   (L, Mohenjo-daro, SEAL:S, 4 faces): f0:4(S,other); f1:1(S,other); f3:3(S,bare) | 073 251 ALT 492 004 | 899 001 | 899 380 484 899 | 003
+  M-1233  (L, Mohenjo-daro, SEAL:S, 5 faces): f4:2(S,bare_diamond); f4:3(F,cup) | 575 741 402 | 000 | 740 000 | 820 | 002 850 700 033
+  M-1385  (L, Mohenjo-daro, TAG:P, 4 faces): f0:2(F,other); f1:2(F,other); f2:2(F,other) | 817 002 032 760 740 | 817 002 032 760 740 | 817 002 032 760 740 | 000 000
+  H-1150  (L, Harappa, TAB:B, 6 faces): no pure counts | 742 | 742 | 742 | 742 | 742 | 742
+  M2405   (Mnew_clean, Mohenjo-daro, seal, 4 faces): f0:3(S,kalancu); f1:3(F,nirai) | 820 003 645 510 | 171 X94 171 000 | X408 | 000
+  M7048   (Mnew_clean, Lothal, seal, 4 faces): f0:3(T,bare) | 013 | X158 | 171 | 220
+
+=== TEST E1: NAIVE UNCONVERTED CROSS-FACE SUM (v_i = sum of other faces' counts) ===
+Lipi account events with >=3 counts across >=2 faces: 2/29 hit raw sum vs shuffle 5.58 (P=0.9860) -> NULL as expected (series differ across faces!).
+Launching FOUR honestly different rescues: (R1) Cross-face parity / 12:1 annual-monthly rate, (R2) Crew x Cup = {6,12} kalam factorization, (R3) Recipient-level ledger invariance & roll-up, (R4) Block-027/Heading/Copper rate locks.
+
+=== RESCUE R1: CROSS-FACE PARITY (v_faceA == v_faceB) & 12:1 KALAM-CUP RATE ===
+  Lipi deduplicated account events (n=135): real=47/135 (34.8%) | global shuffle=38.1 (P=0.0390) | series-matched shuffle=38.6 (z=+1.79, P=0.0450)
+  Lipi distinct multi-face templates (n=125): real=43/125 (34.4%) | global shuffle=35.1 (P=0.0589) | series-matched shuffle=35.9 (z=+1.64, P=0.0689)
+  HELD-OUT M_new_clean account events (n=8): real=4/8 (50.0%) | global shuffle=2.8 (P=0.2438) | series-matched shuffle=2.9 (z=+0.97, P=0.2977)
+  Combined Lipi + M_new_clean account events (n=143): real=51/143 (35.7%) | global shuffle=41.4 (P=0.0310) | series-matched shuffle=41.8 (z=+1.90, P=0.0390)
+  Annual-to-Monthly 12:1 Rate (distinct templates with kalam + cup): 2/5 have kalam_count == cup_count (chance 34.7%, binom P=0.5656):
+    H-2139 : 3 kalam (= 36 cups/yr) <-> 2 cups/mo | match=False | 032 700 | 235 705 033 176 740
+    H-1813 : 3 kalam (= 36 cups/yr) <-> 3 cups/mo | match=True | 220 705 033 550 525 400 | 413 575 335 711 033 700
+    H-1812 : 3 kalam (= 36 cups/yr) <-> 3 cups/mo | match=True | 240 705 033 550 525 400 | 413 575 335 711 033 700
+    H-768  : 3 kalam (= 36 cups/yr) <-> 2 cups/mo | match=False | 000 235 233 705 033 740 400 | 032 700
+    H-846  : 1 kalam (= 12 cups/yr) <-> 3 cups/mo | match=False | 705 031 100 740 400 | 033 700
+
+=== RESCUE R2: CREW / PERSON COUNT x CUP COUNT = {6, 12} (HALF OR WHOLE KALAM) ===
+  All deduplicated crew+cup events (Lipi + M_new): 4/5 (80.0%) multiply to 6 or 12 | within-set shuffle=2.80 (P=0.3996) | Harappa cup-pool draw=2.62 (P=0.2298)
+    H-1287  (F-         ): 2 x woman(140) * 3 cups =  6 [HIT] | 032 140 156 400 | 033 700
+    H-2238  (ETrench 10W/11): 3 x diamond_hand(861) * 3 cups =  9 [miss] | 033 700 | 003 861 | 003 156
+    H-2239  (ETrench 11 ): 3 x diamond_hand(861) * 4 cups = 12 [HIT] | 003 861 | 034 700 | 003 156
+    H-2237  (ETrench 11 ): 3 x diamond_hand(861) * 4 cups = 12 [HIT] | 034 700 | 003 861 | 003 154
+    H-1902  (--         ): 3 x porter(158) * 2 cups =  6 [HIT] | 032 700 | 494 003 158
+  Distinct crew+cup text templates: 4/5 (80.0%) multiply to 6 or 12 | within-set shuffle=2.82 (P=0.4096) | Harappa cup-pool draw=2.64 (P=0.2138)
+    H-1287  (F-         ): 2 x woman(140) * 3 cups =  6 [HIT] | 032 140 156 400 | 033 700
+    H-2238  (ETrench 10W/11): 3 x diamond_hand(861) * 3 cups =  9 [miss] | 033 700 | 003 861 | 003 156
+    H-2239  (ETrench 11 ): 3 x diamond_hand(861) * 4 cups = 12 [HIT] | 003 861 | 034 700 | 003 156
+    H-2237  (ETrench 11 ): 3 x diamond_hand(861) * 4 cups = 12 [HIT] | 034 700 | 003 861 | 003 154
+    H-1902  (--         ): 3 x porter(158) * 2 cups =  6 [HIT] | 032 700 | 494 003 158
+  RIVAL TEST — Excluding E-Trench-11 & 003-156 gang batch (distinct templates): 2/2 (100.0%) multiply to 6 or 12 | within-set shuffle=1.01 (P=0.5045) | Harappa cup-pool draw=1.03 (P=0.2537)
+    H-1287  (F-         ): 2 x woman(140) * 3 cups =  6 [HIT] | 032 140 156 400 | 033 700
+    H-1902  (--         ): 3 x porter(158) * 2 cups =  6 [HIT] | 032 700 | 494 003 158
+  HELD-OUT M_new_clean crew+cup events: n=0
+
+=== RESCUE R3: RECIPIENT-LEVEL LEDGER INVARIANCE & CUMULATIVE KALAM TOTALS ===
+R3a. Recipient Ration Lock on Harappa deduplicated (name, cup, trench) units (n=160 units, 122 names):
+     All names: 32/88 (36.4%) same-amount pairs vs shuffle 29.9 (P=0.3077)
+     Personal names (excluding generic title 176, n=145 units): 12/30 (40.0%) vs shuffle 10.2 (ratio 1.18x, P=0.2927)
+R3b. Cumulative Recipient Totals (2-6 events per name, n=26 names): 5/26 (19.2%) sum to a multiple of 6 cups (half/whole kalam) vs shuffle 7.0 (P=0.8861)
+R3c. Cross-Object Recipient Matches (exact name stem on both Seal and Tablet/Sealing): 60 houses/persons saved to cross_object_ledgers.csv.
+
+=== RESCUE R4: SLANTED-BLOCK (025-028/B119) TABLETS & COPPER ANIMAL-UNIT MATRIX ===
+Slanted 3-row block (025-029 / M119) deduplicated events (n=19):
+  H-2115  (L         , Harappa     , mtab): block=028, partner_cups=3 | 033 700 | 028 032 740 400
+  H-2208  (L         , Harappa     , mtab): block=027, partner_cups=4 | 700 034 | 027 032 740 400
+  H-2207  (L         , Harappa     , mtab): block=027, partner_cups=4 | 033 031 700 | 027 032 740 400
+  H-2209  (L         , Harappa     , mtab): block=025, partner_cups=3 | 033 700 | 025 032 740 400
+  H-2205  (L         , Harappa     , mtab): block=027, partner_cups=None | 034 | 027 032 740
+  H-2204  (L         , Harappa     , mtab): block=027, partner_cups=4 | 034 700 | 027 032 740 400
+  H-2109  (L         , Harappa     , mtab): block=025, partner_cups=None | 025 032 690 | 681 740 400
+  H-2206  (L         , Harappa     , mtab): block=025, partner_cups=4 | 034 700 | 025 032 740
+  H-65    (L         , Harappa     , seal): block=028, partner_cups=None | 028 032 740
+  H-303   (L         , Harappa     , mtab): block=027, partner_cups=3 | 027 032 740 400 | 033 700
+  H-322   (L         , Harappa     , mtab): block=028, partner_cups=2 | 028 032 740 400 | 032 700
+  H-917   (L         , Harappa     , mtab): block=027, partner_cups=None | 687 690 | 027 032 740 400
+  H-967   (L         , Harappa     , mtab): block=028, partner_cups=None | 028 032 740 400
+  M-1848  (L         , Mohenjo-daro, seal): block=029, partner_cups=None | 029 032
+  M-1078  (L         , Mohenjo-daro, seal): block=028, partner_cups=None | 920 060 741 028 388 000 000
+  Nd-1    (L         , Nindowari-damb, seal): block=026, partner_cups=None | 257 060 026 760 740 066 632 220 817
+  -       (L         , Ra's al-Junayz, pot ): block=029, partner_cups=None | 000 220 029 740
+  H-1398  (L         , Harappa     , pot ): block=029, partner_cups=None | 029 036
+  -       (L         , Lakhanjo-daro, seal): block=029, partner_cups=None | 281 002 029 032 740
+
+Mohenjo-daro Copper Tablets (deduplicated events with animal & count, n=47):
+  NMI(Animal Emblem ; Metrological Unit:Count) = 0.6378 vs shuffle 0.4390 +- 0.0296 (z=+6.7, P=0.0010)
+    Buff         (n= 2): {'other:3': 2}
+    Bull1        (n= 4): {'staff_man:1': 3, 'forge:1': 1}
+    Comp         (n= 8): {'seven_585:3': 2, 'other:2': 2, 'jar:1;kalam:3;other:3': 1, 'fish_marked:3': 1, 'fish_plain:2': 1, 'seven_585:7': 1}
+    Elep         (n= 6): {'jar:1;kalam:3': 3, 'kalam:3': 3}
+    Gaur         (n= 3): {'other:2': 2, 'other:3': 1}
+    Goat         (n= 4): {'other:3': 3, 'seven_585:7;tree_407:2': 1}
+    Hare         (n= 6): {'kalam:3': 6}
+    Othr         (n=12): {'other:2': 3, 'other:1': 2, 'seven_585:7': 2, 'seven_585:7;tree_407:2': 1, 'bare:4;other:2;other:2': 1, 'bare:3': 1, 'other:3': 1, 'other:2;other:2;tree_407:4': 1}
+
+Saved multiface_records.csv, crew_kalam_equations.csv, recipient_ledgers.csv, cross_object_ledgers.csv, and multiface_summary.json.

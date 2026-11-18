@@ -1,0 +1,68 @@
+{
+  "oos_signs": {
+    "test": "OOS_NewTexts_SIGNS",
+    "n_units": 68,
+    "real_hits": 148.0,
+    "decoy_hits_mean": 87.41,
+    "decoy_hits_sd": 16.91,
+    "z_hits": 3.583,
+    "p_hits": 0.0025,
+    "real_loglift": 0.5116,
+    "decoy_loglift_mean": -0.2253,
+    "z_loglift": 6.245,
+    "p_loglift": 0.0005
+  },
+  "oos_phrases": {
+    "test": "OOS_NewTexts_PHRASES",
+    "n_units": 101,
+    "real_hits": 108.0,
+    "decoy_hits_mean": 41.5,
+    "decoy_hits_sd": 10.67,
+    "z_hits": 6.231,
+    "p_hits": 0.0005,
+    "real_loglift": 0.5135,
+    "decoy_loglift_mean": -0.1381,
+    "z_loglift": 8.822,
+    "p_loglift": 0.0005
+  },
+  "coherence_new_texts": {
+    "n_inscriptions": 694,
+    "real_same_dom": 0.0625,
+    "decoy_same_dom": 0.0531,
+    "z_same_dom": 0.708,
+    "p_same_dom": 0.22539,
+    "real_cat_lift": 0.0034,
+    "decoy_cat_lift": -0.0008,
+    "z_cat_lift": 3.538,
+    "p_cat_lift": 0.0005
+  },
+  "ideographic_boundary": {
+    "all": {
+      "group": "ALL_SLOTS",
+      "n": 138,
+      "hits": 70,
+      "real_rate": 0.5072,
+      "shuf_mean": 0.3538,
+      "z": 4.658,
+      "p": 0.0005
+    },
+    "functional_slots": {
+      "group": "NON_NAME_SLOTS (COUNTED/SOLO/FRONT/ENDING/MEASURE/THING)",
+      "n": 52,
+      "hits": 29,
+      "real_rate": 0.5577,
+      "shuf_mean": 0.4016,
+      "z": 3.187,
+      "p": 0.0045
+    },
+    "name_slots": {
+      "group": "NAME_SLOTS (NAME/CREST/PRE_CLOSER/PERSONAL)",
+      "n": 86,
+      "hits": 41,
+      "real_rate": 0.4767,
+      "shuf_mean": 0.3379,
+      "z": 3.221,
+      "p": 0.001
+    }
+  }
+}

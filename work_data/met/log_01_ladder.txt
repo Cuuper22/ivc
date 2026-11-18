@@ -1,0 +1,87 @@
+=== STEP 1: CORPUS & DEDUPLICATION SUMMARY ===
+Lipi: 5679 faces -> 4691 physical stones -> 4476 deduplicated copy events
+Mahadevan unseen (standard ~partnered): 990 copy events (1050 objects)
+Mahadevan unseen (decontaminated of 9 split 121-121=056 twins): 987 copy events (1041 objects)
+Combined deduplicated corpus (Lipi + M_new_clean): 5463 copy events
+
+Numeral boundary audit (Lipi events): 243 cross-series false merges eliminated;
+Within-series additive compounds: 47, of which 44/47 (93.6%) obey non-increasing order (v1 >= v2).
+
+Saved numeral_inventory.csv (65 numeral signs across 6 series S, F, T, B, A, J).
+  Series S: 10/11 signs attested, Lipi events=1389, M_new_clean events=296
+  Series F: 11/11 signs attested, Lipi events=1489, M_new_clean events=192
+  Series T: 9/11 signs attested, Lipi events=200, M_new_clean events=37
+  Series B: 10/13 signs attested, Lipi events=110, M_new_clean events=21
+  Series A: 10/11 signs attested, Lipi events=41, M_new_clean events=7
+  Series J: 8/8 signs attested, Lipi events=330, M_new_clean events=87
+
+=== STEP 2A: NUMERAL-SYSTEM SPLIT (COMMODITY -> SERIES SELECTION) ===
+Lipi deduplicated events (n=1582 across 33 unit/commodity groups):
+  Real NMI(Commodity ; Series) = 0.2606 (chi2=2851.3, dof=128, analytic P=0.00e+00)
+  Global shuffle (1,000x): mean=0.0216, max=0.0302, P=0.0010
+  RIVAL TEST — Stratified within (site x object_kind) (1,000x): mean=0.0514 +- 0.0035, max=0.0646, z=+59.4, P=0.0010
+  Seals only (n=702): real NMI=0.2657 vs shuffle 0.0431 (max 0.0633), z=+46.4, P=0.0010
+  Tablets only (mtab+ctab) (n=697): real NMI=0.3222 vs shuffle 0.0425 (max 0.0655), z=+49.7, P=0.0010
+  HELD-OUT M_new_clean (n=233): NMI=0.3306 vs shuffle 0.1094 (z=+19.1, P=0.0010)
+  HELD-OUT Lipi->M_new_clean series prediction accuracy: 174/233 = 74.7% vs (site x kind)-stratified shuffle 42.6% (z=+11.4, P=0.0010)
+
+--- Graphic Packing Transition (S -> T -> B) across deduplicated corpus ---
+  Values 1-5   (n=1064): S=1003 ( 94.3%), T=  61 (  5.7%), B=   0 (  0.0%)
+  Values 6-8   (n= 208): S=  17 (  8.2%), T= 163 ( 78.4%), B=  28 ( 13.5%)
+  Values 9-10  (n=  26): S=   9 ( 34.6%), T=   2 (  7.7%), B=  15 ( 57.7%)
+  Value 12     (n=  79): S=   0 (  0.0%), T=   0 (  0.0%), B=  79 (100.0%)
+  Value 24     (n=   9): S=   0 (  0.0%), T=   0 (  0.0%), B=   9 (100.0%)
+
+--- Syntactic Count-Direction Split ('UNIT n' vs 'n ITEM') ---
+  Lipi events         : Standards post-counted 173/198 (87.4%) vs Containers/Items 114/988 (11.5%); gap=+0.758 vs group-shuffle -0.012 (P=0.0020)
+  Held-out M_new_clean: Standards post-counted 33/39 (84.6%) vs Containers/Items 3/115 (2.6%); gap=+0.820 vs group-shuffle -0.046 (P=0.0120)
+
+=== STEP 2B: DIRECTED CONVERSION LADDER (PAIRWISE PRECEDENCE & DAG) ===
+Fitted Lipi topological rank order (1 = largest / earliest on line):
+  Rank  1: parai        | Lipi first= 2, second= 1 | M_new first= 0, second= 1
+  Rank  2: grain_hdr    | Lipi first=62, second= 3 | M_new first= 5, second= 0
+  Rank  3: two_dozen    | Lipi first= 2, second= 0 | M_new first= 0, second= 0
+  Rank  4: kottai       | Lipi first=55, second=24 | M_new first= 5, second= 4
+  Rank  5: kalam        | Lipi first=44, second=26 | M_new first= 9, second= 6
+  Rank  6: chest        | Lipi first=17, second=18 | M_new first= 2, second= 6
+  Rank  7: bin_town     | Lipi first=25, second=38 | M_new first= 1, second= 2
+  Rank  8: granary      | Lipi first= 1, second= 2 | M_new first= 0, second= 0
+  Rank  9: quarter      | Lipi first= 7, second=14 | M_new first= 1, second= 2
+  Rank 10: nirai        | Lipi first= 2, second= 4 | M_new first= 0, second= 0
+  Rank 11: dozen        | Lipi first= 4, second= 9 | M_new first= 2, second= 2
+  Rank 12: vallam       | Lipi first=10, second=45 | M_new first= 0, second= 0
+  Rank 13: cup          | Lipi first= 7, second=45 | M_new first= 1, second= 3
+  Rank 14: pati         | Lipi first= 1, second=10 | M_new first= 1, second= 1
+
+Global DAG Order Consistency:
+  Lipi deduplicated events: 206/239 = 86.2% vs refitted within-line shuffle 62.2% +- 2.2% (P=0.0010)
+  Raw ratio vs 1,000 interior sign decoys: real 86.2% vs sparse decoy mean 85.3% (P=0.4456; sparse decoys average only 122.7 ordered pairs!)
+  RESCUE (Domain Co-Occurrence x Order Lock vs 1,000 interior decoys): Lipi ordered pairs=206 vs decoy mean=122.7 (max=326, P=0.0410); Held-out M_new ordered pairs=19 vs decoy mean=20.1 (max=73, P=0.5165)
+  HELD-OUT M_new_clean directional accuracy (frozen Lipi DAG rank!): 19/27 = 70.4% vs shuffle 49.8% (exact binom P=0.02612, perm P=0.0340)
+
+=== STEP 2C: EXACT CONVERSION RATIOS & BASE FINGERPRINTS ===
+1. CUP 700 -> KALAM 705/706 (Ratio R = 12, Base-12 fractional shares {1,2,3,4,6}):
+   Lipi deduplicated events (n=431): hist={np.int64(1): 9, np.int64(2): 124, np.int64(3): 180, np.int64(4): 114, np.int64(6): 3, np.int64(7): 1}
+     Divisors of 12 {1,2,3,4,6}: 430/431 = 99.77% vs non-cup draw 85.6% (P=0.0010)
+   HELD-OUT M_new_clean (n=7): hist={np.int64(2): 2, np.int64(3): 3, np.int64(4): 2}
+     Divisors of 12 {1,2,3,4,6}: 7/7 = 100.00% vs non-cup draw 85.7% (P=0.3407)
+   Competing bases on cup (n=438): Base-12 divisors=99.77% | Binary {1,2,4,8}=57.3% | Decimal {1,2,5,10}=30.8%
+   Tall-5 exclusion on cup 700: 0/422 (0.0%) vs 51/1200 (4.2%) on other tall-counted signs, Fisher P=1.594e-07
+
+2. VALLAM 711 -> CUP 700 (Ratio R = 4 cups = 1/3 kalam; conditional ceiling <= 3 cups when 711 precedes 700):
+   Events with 711 + cup: 10 (hist={np.int64(3): 10}); >=4 cups: 0/10 (0.0%) vs 120/428 (28.0%) without 711 (Fisher P=0.03912; distinct templates 3: 0/3 vs 16/54, P=0.3643)
+
+3. KALAM 705/706 -> KOTTAI 575 (Ratio R = 6 kalam = 72 cups, ceiling = 5 on tall counts):
+   Lipi tall-counted events (n=142): hist={np.int64(1): 6, np.int64(2): 2, np.int64(3): 126, np.int64(4): 2, np.int64(5): 6}
+   HELD-OUT M_new_clean tall-counted events (n=28): hist={np.int64(2): 1, np.int64(3): 23, np.int64(5): 4}
+   Tall counts >= 6 on kalam: 0/170 (0.0%, max=5) vs 358/2430 (14.7%) on non-kalam/cup signs (Fisher P=4.576e-12)
+
+4. QUARTER 061-063 & INFIXED JAR-MOUTH 741-748 (Ratio R = 4, ceiling = 3):
+   Quarter 061-063 owned counts: Lipi={np.int64(1): 4, np.int64(2): 11, np.int64(3): 1, np.int64(9): 1}, M_new_clean={np.int64(1): 2, np.int64(2): 1, np.int64(6): 1}; <=3 share=90.5% (n=21)
+   Infixed Jar-Mouth strokes (741=1, 742-4=2, 745-7=3, 748=4): Lipi={1: 213, 2: 62, 3: 52, 4: 3}, M_new_clean={1: 47, 2: 14, 3: 26}; <=3 share=99.28% (n=417)
+
+5. NIRAI 171 WEIGHT STANDARD (Non-binary stone-weight factors {3, 5} only):
+   Lipi events (n=25): hist={np.int64(3): 8, np.int64(5): 17} -> {3,5} share=100.0% vs other F-counts 35.0% (perm P=0.0010, exact binom P=2.673e-12)
+   HELD-OUT M_new_clean (n=6): hist={np.int64(3): 3, np.int64(5): 3} -> {3,5} share=100.0% vs other F-counts 34.2% (perm P=0.0030, exact binom P=1.517e-03)
+
+Saved unit_ladder.csv, commodity_series.csv, ladder_order_pairs.csv, and ladder_summary.json.

@@ -1,0 +1,8 @@
+[sem_02    0.0s] Loading Lipi (4,476) and held-out Mahadevan new-text (990) copy-events ...
+[sem_02    0.1s] Total testable features (>=3 Lipi events): 2129 (signs=383, phrases2=766, phrases3=166, slot_signs=814)
+[sem_02    0.2s] Running 2,000 stratum-aware shuffles across 57 domains ...
+[sem_02   54.3s] Sweep complete! Saved 3150 candidate rows to work_data/sem/sweep_all_hits.csv
+[sem_02   54.3s] Primary (SIGN + PHRASE) hits at shuffle P <= 0.05: 1293 (signs=574, phrases=719)
+[sem_02   54.3s] Surviving within-domain FDR q <= 0.05: 330 | Westfall-Young FWER P <= 0.05: 229
+[sem_02   54.3s] Replicated on strictly held-out Mahadevan new texts: 103 primary associations!
+[sem_02   54.3s] Slot-specific redesign rescues (unmasked when split by slot): 335 (strictly missed at ANY-slot P>0.05 -> rescued at slot P<=0.05: 217)

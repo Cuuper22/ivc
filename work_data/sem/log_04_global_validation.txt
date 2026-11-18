@@ -1,0 +1,18 @@
+[sem_02    0.0s] Loading Lipi (4,476) and held-out Mahadevan new-text (990) copy-events ...
+[sem_02    0.1s] Total testable features (>=3 Lipi events): 2129 (signs=383, phrases2=766, phrases3=166, slot_signs=814)
+[sem_04] === Global Test 1: Zero-Leakage Lipi -> Held-Out New Texts Context Prediction ===
+[sem_04]   [SIGNS] 68 Lipi-anchored units tested blind on held-out Mahadevan `new texts`:
+[sem_04]     Total target-domain hits: real = 148 (expected from marginals 62.1) vs frequency-matched decoys = 87.4 +- 16.9 (z = +3.58, P = 0.00250)
+[sem_04]     Mean log2-lift per unit : real = +0.5116 vs frequency-matched decoys = -0.2253 +- 0.1180 (z = +6.25, P = 0.00050)
+[sem_04]   [PHRASES] 101 Lipi-anchored units tested blind on held-out Mahadevan `new texts`:
+[sem_04]     Total target-domain hits: real = 108 (expected from marginals 29.9) vs frequency-matched decoys = 41.5 +- 10.7 (z = +6.23, P = 0.00050)
+[sem_04]     Mean log2-lift per unit : real = +0.5135 vs frequency-matched decoys = -0.1381 +- 0.0738 (z = +8.82, P = 0.00050)
+[sem_04] === Global Test 2: Inscription-Internal Physical-Domain Coherence on Held-Out New Texts ===
+[sem_04]   Scored 694 held-out `new text` inscriptions containing >=2 Lipi-anchored signs:
+[sem_04]     Same-physical-domain co-occurrence: real = 0.0625 vs class+freq matched decoys = 0.0531 +- 0.0134 (z = +0.71, P = 0.22539)
+[sem_04]     Lipi-learned CATS coherence lift  : real = +0.0034 vs class+freq matched decoys = -0.0008 +- 0.0012 (z = +3.54, P = 0.00050)
+[sem_04] === Global Test 3: Visual Glyph Iconography vs. Contextual Physical Domain by Slot ===
+[sem_04]   [ALL_SLOTS] n=138 pictured anchors: visual-to-context match = 50.7% (70/138) vs shuffled = 35.4% +- 3.3% (z = +4.66, P = 0.00050)
+[sem_04]   [NON_NAME_SLOTS (COUNTED/SOLO/FRONT/ENDING/MEASURE/THING)] n=52 pictured anchors: visual-to-context match = 55.8% (29/52) vs shuffled = 40.2% +- 4.9% (z = +3.19, P = 0.00450)
+[sem_04]   [NAME_SLOTS (NAME/CREST/PRE_CLOSER/PERSONAL)] n=86 pictured anchors: visual-to-context match = 47.7% (41/86) vs shuffled = 33.8% +- 4.3% (z = +3.22, P = 0.00100)
+[sem_04] Saved work_data/sem/global_validation.json.

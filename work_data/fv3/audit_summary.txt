@@ -1,0 +1,380 @@
+=== 1. INTACT LIPI OVERVIEW ===
+Total Lipi faces: 5679, Intact faces: 3600, Distinct intact Events: 2855, Distinct intact Texts: 2162
+
+Breakdown by v2_kind x kind (All 3,600 intact faces):
+kind                 ctab  mtab  other  pot  seal  tag   All
+v2_kind                                                     
+bare count line         0   353      4    9    49    3   418
+front alone             0    11      3    3     8    0    25
+loose name text        17   140      4    9   404   17   591
+measure line            0     2      1    3     3    1    10
+name text              86   491     16   28   615   28  1264
+one picture            24     0      0    0     0    0    24
+opener + count line     0     8      1    0    33    1    43
+other                  60   347    100  237   420   28  1192
+record                  9     5      0    0     3    0    17
+title alone             0     1      2    8     5    0    16
+All                   196  1358    131  297  1540   78  3600
+
+Breakdown of `other` (1,192) and `loose name text` (591) by raw_kind:
+raw_kind         bangle  ctab  mtab  other  pot  rod  seal  tag  tool   All
+v2_kind                                                                    
+loose name text       1    17   140      1    9    1   404   17     1   591
+other                38    60   347     39  237    9   420   28    14  1192
+All                  39    77   487     40  246   10   824   45    15  1783
+
+Length distribution of intact faces by parsed vs loose vs other:
+len_bin                  1    2    3    4    5    6    7   8+   All
+kind  status                                                       
+ctab  loose name text    0    0    0    0    6    5    4    2    17
+      other              0    9    7    6   17    1   20    0    60
+      v2_parsed         24    3    5   56    5    1   25    0   119
+mtab  loose name text    0    5   15   26   57   14    8   15   140
+      other             40  169   79   30   12   15    2    0   347
+      v2_parsed          5  426  182  160   63   22   12    1   871
+other loose name text    0    1    0    1    2    0    0    0     4
+      other             50   22   16    4    2    4    0    2   100
+      v2_parsed          4    6    8    4    5    0    0    0    27
+pot   loose name text    0    4    2    2    0    1    0    0     9
+      other            168   43   22    3    0    1    0    0   237
+      v2_parsed         10   29    8    3    1    0    0    0    51
+seal  loose name text    0   11   22   25   95   90   73   88   404
+      other             49   72   86   79   67   30   19   18   420
+      v2_parsed          8  163  137  137  129   77   44   21   716
+tag   loose name text    0    0    0    0    1    3    2   11    17
+      other              6    1    7    1    2    9    0    2    28
+      v2_parsed          0    9    4   15    4    1    0    0    33
+All                    364  973  600  552  468  274  209  160  3600
+
+=== 2. DIAGNOSING 591 LOOSE NAME TEXTS ===
+
+Top 40 structural skeletons in `loose name text` (NS = run of V2_NAMESIGN):
+   179  NS SLOT NS CLOSER                              [seal:139, mtab:39, tag:1]  ex: 066-741-235-495-017-740
+    38  NS CLOSER NS                                   [seal:16, ctab:15, mtab:6, other:1]  ex: 219-740-804
+    34  NS SLOT NS CLOSER TITLE                        [seal:13, tag:11, mtab:10]  ex: 066-741-103-740-090
+    20  NS OPEN SLOT NS CLOSER                         [seal:20]  ex: 317-920-002-016-740
+    20  OPEN SLOT SLOT NS CLOSER                       [seal:17, tag:2, mtab:1]  ex: 920-060-741-590-406-740
+    16  NS OPEN NS CLOSER                              [mtab:12, seal:4]  ex: 803-415-220-318-920-255-436-690-590-407-740
+    12  NS OPEN CLOSER                                 [seal:8, mtab:3, pot:1]  ex: 491-817-740
+    10  NS SLOT NS TITLE                               [seal:10]  ex: 634-368-298-554-527
+     9  NS SLOT NS CLOSER NS                           [seal:6, ctab:2, mtab:1]  ex: 921-690-002-706-033-590-405-740-001-354
+     9  NS TITLE CLOSER                                [seal:6, mtab:2, tag:1]  ex: 033-061-142-400-740
+     9  NS CLOSER NS CLOSER                            [seal:9]  ex: 032-877-740-001-468-806-154
+     8  NS OPEN NS TITLE                               [mtab:6, seal:2]  ex: 240-705-033-550-525-400
+     7  NS CLOSER CLOSER                               [mtab:5, seal:2]  ex: 240-100-740-151
+     7  OPEN SLOT NS CLOSER NS                         [seal:7]  ex: 861-002-240-923-101-740-140-845-407
+     7  OPEN NS SLOT NS CLOSER                         [seal:7]  ex: 920-455-220-002-803-706-033-017-585-740
+     7  NS OPEN CLOSER TITLE                           [mtab:7]  ex: 798-240-233-320-920-740-400
+     6  SLOT NS SLOT NS CLOSER                         [seal:3, mtab:3]  ex: 741-298-002-717-140-740
+     6  NS CLOSER TITLE TITLE                          [seal:3, mtab:3]  ex: 003-220-740-090-400
+     6  CLOSER NS                                      [seal:4, pot:2]  ex: 871-390
+     5  SLOT NS CLOSER                                 [seal:3, mtab:2]  ex: 002-840-740
+     5  NS OPEN TITLE                                  [mtab:3, seal:2]  ex: 233-550-527
+     5  TITLE NS                                       [mtab:3, other:1, pot:1]  ex: 400-031-384-156
+     4  NS CLOSER TITLE NS CLOSER                      [mtab:4]  ex: 440-740-400-840-712
+     4  OPEN SLOT NS OPEN TITLE                        [seal:4]  ex: 817-002-240-550-527
+     4  TITLE NS CLOSER                                [mtab:4]  ex: 621-705-204-240-642-740
+     4  NS SLOT NS TITLE CLOSER                        [seal:4]  ex: 705-255-435-798-002-061-142-400-740
+     4  NS SLOT SLOT NS CLOSER                         [seal:4]  ex: 260-368-002-455-740
+     4  TITLE TITLE                                    [mtab:3, seal:1]  ex: 090-400
+     4  OPEN TITLE                                     [seal:3, other:1]  ex: 550-527
+     4  NS CLOSER NS TITLE                             [mtab:3, seal:1]  ex: 176-740-590-892-352-297-400
+     4  NS SLOT TITLE                                  [mtab:2, seal:2]  ex: 235-717-741-400
+     3  NS SLOT OPEN TITLE                             [pot:2, seal:1]  ex: 590-125-002-550-527
+     3  NS OPEN NS SLOT NS CLOSER                      [seal:3]  ex: 390-550-207-002-222-740
+     3  NS TITLE NS CLOSER                             [seal:3]  ex: 390-090-390-176-740
+     3  NS TITLE NS                                    [seal:1, mtab:1, other:1]  ex: 632-390-400-375
+     3  NS TITLE CLOSER TITLE                          [mtab:3]  ex: 352-400-520-400
+     2  NS OPEN SLOT NS CLOSER TITLE                   [tag:1, seal:1]  ex: 832-360-002-362-740-090
+     2  NS OPEN SLOT NS CLOSER NS CLOSER NS            [mtab:2]  ex: 491-920-002-176-740-335-740-317
+     2  CLOSER NS SLOT NS                              [tag:1, seal:1]  ex: 740-892-002-032-394
+     2  OPEN CLOSER                                    [seal:1, pot:1]  ex: 550-740
+
+Top 35 exact failure patterns in `loose name text`:
+   117  mid_SLOT(002)                                            ex: 032-420-455-002-061-740
+    88  internal_OPEN                                            ex: 317-920-002-016-740
+    80  mid_SLOT(741)                                            ex: 066-741-235-495-017-740
+    22  multi_SLOT                                               ex: 920-060-741-590-406-740
+    17  post_END(PERSONAL)                                       ex: 632-390-400-375
+    17  mid_SLOT(060)                                            ex: 201-060-031-176-740
+    12  mid_SLOT(742)                                            ex: 146-742-220-798-740
+    11  internal_OPEN; mid_SLOT(002)                             ex: 321-405-002-806-233-320-920-740
+    11  other_loose                                              ex: 861-740-400
+     8  initial_SLOT                                             ex: 741-031-221-400
+     7  mid_SLOT(368)                                            ex: 634-368-298-554-527
+     7  multi_END(TITLE:400,CLOSER:740)                          ex: 033-061-142-400-740
+     6  multi_END(CLOSER:740,CLOSER:151)                         ex: 240-100-740-151
+     6  multi_END(CLOSER:740,TITLE:090,TITLE:400)                ex: 003-220-740-090-400
+     5  post_END(NUM_SHORT)                                      ex: 705-033-923-740-001
+     4  multi_END(TITLE:090,TITLE:400); initial_END              ex: 090-400
+     4  post_END(PERSONAL); initial_END                          ex: 090-951
+     4  multi_END(CLOSER:740,TITLE:400,CLOSER:712)               ex: 440-740-400-840-712
+     4  post_END(PLACE_THING)                                    ex: 817-002-806-235-233-555-527-061-405
+     4  multi_END(CLOSER:740,CLOSER:154)                         ex: 032-877-740-001-468-806-154
+     4  initial_SLOT; mid_SLOT(741)                              ex: 368-330-741-590-390-151
+     4  mid_SLOT(368); multi_SLOT                                ex: 260-368-002-455-740
+     3  multi_END(CLOSER:740,TITLE:400)                          ex: 176-740-590-892-352-297-400
+     3  multi_END(TITLE:400,CLOSER:520,TITLE:400)                ex: 352-400-520-400
+     3  multi_END(TITLE:679,CLOSER:740); initial_END             ex: 679-840-032-740
+     3  multi_END(TITLE:400,CLOSER:520)                          ex: 031-350-400-520
+     3  multi_END(TITLE:090,CLOSER:740)                          ex: 703-090-740
+     3  internal_OPEN; initial_SLOT                              ex: 741-820-002-031-243-151
+     3  post_END(PLACE_NUM_SHORT_PLACE)                          ex: 255-435-690-740-900-003-422
+     2  internal_OPEN; multi_SLOT                                ex: 821-550-368-002-220-740-090
+     2  initial_SLOT; mid_SLOT(002)                              ex: 741-298-002-717-140-740
+     2  internal_OPEN; multi_END(CLOSER:740,CLOSER:740); post_END(PERSONAL)  ex: 491-920-002-176-740-335-740-317
+     2  mid_SLOT(365)                                            ex: 001-415-365-798-740-400
+     2  mid_SLOT(002); post_END(NUM_SHORT_PERSONAL)              ex: 921-690-002-706-033-590-405-740-001-354
+     2  post_END(PERSONAL_THING)                                 ex: 072-740-590-407
+
+=== 3. DIAGNOSING 1,192 OTHER FACES ===
+
+Top 45 class skeletons in `other` across all kinds:
+   129  PERSONAL                                       [pot:43, seal:38, other:25, mtab:23]  ex: 415
+    91  PERSONAL+                                      [seal:33, mtab:31, pot:16, other:8, ctab:2, tag:1]  ex: 350-308-374
+    48  THING NUM_TALL                                 [mtab:44, pot:4]  ex: 700-033
+    48  NUM_TALL                                       [pot:38, other:5, mtab:3, seal:2]  ex: 031
+    47  NUM_NAME                                       [pot:39, tag:6, other:2]  ex: 032
+    29  NUM_SHORT OPEN                                 [mtab:29]  ex: 003-861
+    28  PERSONAL THING                                 [seal:13, mtab:13, other:2]  ex: 415-390
+    26  NUM_SHORT                                      [pot:20, seal:4, other:2]  ex: 007
+    25  THING                                          [pot:11, other:8, mtab:4, seal:2]  ex: 156
+    18  SLOT                                           [pot:11, mtab:6, other:1]  ex: 002
+    18  THING NUM_NAME                                 [mtab:18]  ex: 700-032
+    16  PERSONAL+ OPEN                                 [mtab:11, other:4, seal:1]  ex: 413-892-824
+    16  NUM_TALL PERSONAL                              [pot:5, mtab:4, seal:3, other:3, tag:1]  ex: 033-111
+    14  CREST MEASURE NUM_TALL PLACE THING PERSONAL THING  [ctab:14]  ex: 235-705-033-845-407-321-407
+    13  OPEN SLOT PERSONAL                             [seal:7, mtab:4, tag:2]  ex: 820-002-236
+    13  CREST                                          [pot:5, mtab:4, seal:3, other:1]  ex: 220
+    11  PERSONAL OPEN SLOT                             [mtab:6, seal:4, other:1]  ex: 416-861-002
+    10  PERSONAL+ PLACE PERSONAL NUM_TALL THING        [mtab:10]  ex: 413-575-335-711-033-700
+    10  CREST PERSONAL+                                [seal:6, mtab:3, other:1]  ex: 235-555-526
+    10  PERSONAL OPEN                                  [seal:6, mtab:3, pot:1]  ex: 495-817
+     9  PERSONAL NUM_TALL                              [pot:4, mtab:3, seal:1, other:1]  ex: 255-033
+     9  PERSONAL MEASURE PERSONAL                      [mtab:8, seal:1]  ex: 590-705-868
+     9  PERSONAL AFTER_M                               [mtab:7, other:1, seal:1]  ex: 681-690
+     8  MEASURE PERSONAL                               [mtab:6, seal:1, other:1]  ex: 705-167
+     8  OPEN PERSONAL SLOT THING PERSONAL+             [tag:8]  ex: 091-056-002-417-890-892
+     7  OPEN SLOT AFTER_M                              [mtab:7]  ex: 817-368-690
+     7  PERSONAL NUM_SHORT THING                       [seal:6, mtab:1]  ex: 104-004-405
+     7  MEASURE                                        [other:6, pot:1]  ex: 705
+     6  PLACE SLOT                                     [mtab:6]  ex: 900-368
+     6  PERSONAL CREST PERSONAL                        [seal:4, mtab:1, other:1]  ex: 415-220-074
+     6  NUM_SHORT PERSONAL                             [ctab:3, pot:1, seal:1, other:1]  ex: 005-411
+     6  OPEN SLOT PERSONAL THING                       [seal:5, tag:1]  ex: 820-060-142-156
+     6  PERSONAL CREST PLACE PLACE THING               [ctab:6]  ex: 798-240-845-061-407
+     6  MEASURE NUM_NAME PERSONAL+                     [ctab:6]  ex: 905-032-597-142-617
+     5  PERSONAL+ THING                                [seal:4, mtab:1]  ex: 510-460-156
+     5  NUM_SHORT CREST                                [seal:3, pot:2]  ex: 014-220
+     5  CREST OPEN PERSONAL                            [mtab:5]  ex: 220-550-525
+     5  OPEN PERSONAL+                                 [other:3, mtab:1, seal:1]  ex: 824-892-413
+     5  OPEN SLOT PERSONAL+                            [seal:5]  ex: 817-002-142-617
+     4  PERSONAL+ SLOT PERSONAL                        [seal:4]  ex: 072-308-002-236
+     4  NUM_NAME CREST                                 [seal:2, pot:1, mtab:1]  ex: 032-220
+     4  PERSONAL MEASURE NUM_NAME OPEN                 [mtab:4]  ex: 415-578-032-824
+     4  OPEN PERSONAL                                  [other:1, mtab:1, seal:1, pot:1]  ex: 556-534
+     4  OPEN SLOT CREST PERSONAL                       [seal:3, mtab:1]  ex: 817-002-235-804
+     4  PERSONAL+ SLOT NUM_SHORT THING                 [seal:3, mtab:1]  ex: 561-500-741-005-407
+
+--- `other` on seal (420 faces, len1=49, len2=72, len3+=299) ---
+    38  PERSONAL                                    ex: 415
+    33  PERSONAL+                                   ex: 388-526
+    13  PERSONAL THING                              ex: 415-390
+     7  OPEN SLOT PERSONAL                          ex: 820-002-236
+     6  PERSONAL NUM_SHORT THING                    ex: 104-004-405
+     6  CREST PERSONAL+                             ex: 140-706-064
+     6  PERSONAL OPEN                               ex: 590-820
+     5  OPEN SLOT PERSONAL THING                    ex: 820-060-142-156
+     5  OPEN SLOT PERSONAL+                         ex: 817-002-142-617
+     4  PERSONAL+ THING                             ex: 510-460-156
+     4  NUM_SHORT                                   ex: 007
+     4  PERSONAL+ SLOT PERSONAL                     ex: 072-308-002-236
+     4  PERSONAL CREST PERSONAL                     ex: 640-140-595
+     4  PERSONAL OPEN SLOT                          ex: 575-861-368
+     3  NUM_SHORT CREST                             ex: 014-220
+  Top final signs (len>=2) on seal `other`: 390(THING):41, 156(THING):20, 617(PERSONAL):19, 368(SLOT):17, 226(CREST):13, 405(THING):13, 820(OPEN):12, 220(CREST):9, 031(NUM_TALL):9, 892(PERSONAL):7, 001(NUM_SHORT):7, 590(PERSONAL):7, 595(PERSONAL):7, 002(SLOT):7, 236(PERSONAL):6
+  Top initial signs (len>=2) on seal `other`: 861(OPEN):20, 820(OPEN):18, 920(OPEN):15, 817(OPEN):13, 032(NUM_NAME):11, 031(NUM_TALL):11, 140(CREST):8, 003(NUM_SHORT):7, 575(PERSONAL):7, 033(NUM_TALL):6, 142(PERSONAL):6, 590(PERSONAL):6
+
+--- `other` on mtab (347 faces, len1=40, len2=169, len3+=138) ---
+    44  THING NUM_TALL                              ex: 700-033
+    31  PERSONAL+                                   ex: 117-617
+    29  NUM_SHORT OPEN                              ex: 003-861
+    23  PERSONAL                                    ex: 413
+    18  THING NUM_NAME                              ex: 700-032
+    13  PERSONAL THING                              ex: 125-700
+    11  PERSONAL+ OPEN                              ex: 413-892-824
+    10  PERSONAL+ PLACE PERSONAL NUM_TALL THING     ex: 413-575-335-711-033-700
+     8  PERSONAL MEASURE PERSONAL                   ex: 590-705-868
+     7  OPEN SLOT AFTER_M                           ex: 817-368-690
+     7  PERSONAL AFTER_M                            ex: 681-690
+     6  MEASURE PERSONAL                            ex: 705-167
+     6  PERSONAL OPEN SLOT                          ex: 416-861-002
+     6  PLACE SLOT                                  ex: 900-368
+     6  SLOT                                        ex: 742
+  Top final signs (len>=2) on mtab `other`: 033(NUM_TALL):37, 032(NUM_NAME):29, 861(OPEN):29, 700(THING):25, 824(OPEN):17, 690(AFTER_M):17, 167(PERSONAL):14, 034(NUM_TALL):14, 868(PERSONAL):10, 526(PERSONAL):8, 617(PERSONAL):7, 156(THING):6, 002(SLOT):6, 368(SLOT):6, 390(THING):4
+  Top initial signs (len>=2) on mtab `other`: 700(THING):65, 003(NUM_SHORT):33, 413(PERSONAL):24, 590(PERSONAL):13, 820(OPEN):12, 817(OPEN):10, 033(NUM_TALL):9, 220(CREST):9, 415(PERSONAL):7, 900(PLACE):7, 705(MEASURE):6, 416(PERSONAL):6
+
+--- `other` on ctab (60 faces, len1=0, len2=9, len3+=51) ---
+    14  CREST MEASURE NUM_TALL PLACE THING PERSONAL THING  ex: 235-705-033-845-407-321-407
+     6  PERSONAL CREST PLACE PLACE THING            ex: 798-240-845-061-407
+     6  MEASURE NUM_NAME PERSONAL+                  ex: 905-032-597-142-617
+     4  PERSONAL CREST PLACE THING                  ex: 415-220-845-407
+     3  CREST+ MEASURE NUM_TALL AFTER_M THING       ex: 806-235-233-705-033-585-407
+     3  PLACE PLACE                                 ex: 900-165
+     3  NUM_SHORT PERSONAL                          ex: 005-706
+     3  CREST AFTER_M THING                         ex: 233-585-407
+     2  PERSONAL+                                   ex: 479-749
+     2  NUM_SHORT THING PLACE PLACE                 ex: 003-700-900-165
+     2  PERSONAL AFTER_M PERSONAL+ NUM_SHORT PERSONAL+  ex: 744-760-095-595-001-142-617
+     2  NUM_NAME THING THING                        ex: 032-071-407
+     1  PERSONAL CREST PLACE PERSONAL THING         ex: 798-240-845-063-407
+     1  NUM_SHORT PLACE                             ex: 003-422
+     1  PLACE PERSONAL+                             ex: 615-343-595
+  Top final signs (len>=2) on ctab `other`: 407(THING):35, 617(PERSONAL):11, 165(PLACE):5, 706(PERSONAL):3, 749(PERSONAL):2, 422(PLACE):1, 595(PERSONAL):1, 904(PLACE):1, 002(SLOT):1
+  Top initial signs (len>=2) on ctab `other`: 235(CREST):14, 798(PERSONAL):7, 905(MEASURE):6, 415(PERSONAL):4, 003(NUM_SHORT):3, 806(CREST):3, 900(PLACE):3, 005(NUM_SHORT):3, 233(CREST):3, 479(PERSONAL):2, 744(PERSONAL):2, 032(NUM_NAME):2
+
+--- `other` on tag (28 faces, len1=6, len2=1, len3+=21) ---
+     8  OPEN PERSONAL SLOT THING PERSONAL+          ex: 091-056-002-417-890-892
+     6  NUM_NAME                                    ex: 032
+     2  OPEN SLOT PERSONAL                          ex: 861-002-236
+     2  OPEN NUM_NAME PERSONAL                      ex: 820-032-130
+     1  OPEN PERSONAL CREST                         ex: 861-370-240
+     1  OPEN NUM_TALL NUM_SHORT+ CREST              ex: 692-031-001-015-140
+     1  OPEN SLOT PERSONAL THING                    ex: 550-002-415-390
+     1  PERSONAL+                                   ex: 111-590-317
+     1  PERSONAL+ NUM_SHORT NUM_NAME CREST+         ex: 575-223-001-032-226-233
+     1  OPEN NUM_SHORT NAME_BACK                    ex: 861-013-100
+     1  PERSONAL+ MEASURE NUM_SHORT PERSONAL NUM_SHORT PLACE  ex: 391-595-850-480-001-821-004-904
+     1  PERSONAL+ PLACE THING CREST SLOT CREST PERSONAL  ex: 388-906-615-627-220-002-140-484
+     1  PERSONAL MEASURE SLOT NUM_SHORT THING       ex: 127-705-002-004-390
+     1  NUM_TALL PERSONAL                           ex: 033-136
+  Top final signs (len>=2) on tag `other`: 892(PERSONAL):8, 236(PERSONAL):2, 390(THING):2, 130(PERSONAL):2, 240(CREST):1, 140(CREST):1, 317(PERSONAL):1, 233(CREST):1, 100(NAME_BACK):1, 904(PLACE):1, 484(PERSONAL):1, 136(PERSONAL):1
+  Top initial signs (len>=2) on tag `other`: 091(OPEN):8, 861(OPEN):4, 820(OPEN):2, 692(OPEN):1, 550(OPEN):1, 111(PERSONAL):1, 575(PERSONAL):1, 391(PERSONAL):1, 388(PERSONAL):1, 127(PERSONAL):1, 033(NUM_TALL):1
+
+--- `other` on pot (237 faces, len1=168, len2=43, len3+=26) ---
+    43  PERSONAL                                    ex: 234
+    39  NUM_NAME                                    ex: 032
+    38  NUM_TALL                                    ex: 031
+    20  NUM_SHORT                                   ex: 001
+    16  PERSONAL+                                   ex: 350-308-374
+    11  THING                                       ex: 156
+    11  SLOT                                        ex: 002
+     5  NUM_TALL PERSONAL                           ex: 033-111
+     5  CREST                                       ex: 220
+     4  THING NUM_TALL                              ex: 700-033
+     4  PERSONAL NUM_TALL                           ex: 893-031
+     3  NUM_TALL CREST                              ex: 033-235
+     2  NUM_SHORT CREST                             ex: 016-220
+     2  NUM_NAME PERSONAL NUM_TALL                  ex: 032-999-031
+     2  NUM_SHORT NUM_TALL                          ex: 005-031
+  Top final signs (len>=2) on pot `other`: 031(NUM_TALL):8, 697(PERSONAL):5, 034(NUM_TALL):5, 220(CREST):4, 033(NUM_TALL):4, 790(PERSONAL):4, 032(NUM_NAME):3, 002(SLOT):2, 645(PERSONAL):2, 540(PERSONAL):2, 411(PERSONAL):2, 255(PERSONAL):2, 405(THING):1, 374(PERSONAL):1, 235(CREST):1
+  Top initial signs (len>=2) on pot `other`: 033(NUM_TALL):8, 031(NUM_TALL):6, 032(NUM_NAME):5, 700(THING):4, 003(NUM_SHORT):4, 510(PERSONAL):3, 480(MEASURE):3, 861(OPEN):2, 002(SLOT):2, 540(PERSONAL):2, 005(NUM_SHORT):2, 034(NUM_TALL):2
+
+--- `other` on other (100 faces, len1=50, len2=22, len3+=28) ---
+    25  PERSONAL                                    ex: 790
+     8  PERSONAL+                                   ex: 540-540-909
+     8  THING                                       ex: 390
+     6  MEASURE                                     ex: 705
+     5  NUM_TALL                                    ex: 031
+     4  PERSONAL+ OPEN                              ex: 326-252-268-360
+     3  OPEN PERSONAL+                              ex: 920-632-930
+     3  PERSONAL+ MEASURE NUM_SHORT PERSONAL        ex: 391-595-850-480-001-821
+     3  NUM_TALL PERSONAL                           ex: 031-136
+     2  NUM_SHORT                                   ex: 005
+     2  NUM_NAME                                    ex: 032
+     2  PERSONAL THING                              ex: 631-405
+     1  NUM_SHORT CREST PERSONAL+ NUM_SHORT PERSONAL+ THING  ex: 016-220-776-825-005-909-095-390
+     1  OPEN PERSONAL+ OPEN PERSONAL+ NUM_TALL PERSONAL+  ex: 820-611-388-820-850-645-031-821-798
+     1  SLOT NUM_SHORT THING                        ex: 002-005-405
+  Top final signs (len>=2) on other `other`: 390(THING):3, 405(THING):3, 064(PERSONAL):3, 821(PERSONAL):3, 136(PERSONAL):3, 033(NUM_TALL):2, 930(PERSONAL):2, 590(PERSONAL):2, 002(SLOT):2, 840(PERSONAL):2, 920(OPEN):2, 031(NUM_TALL):2, 909(PERSONAL):1, 798(PERSONAL):1, 534(PERSONAL):1
+  Top initial signs (len>=2) on other `other`: 031(NUM_TALL):5, 391(PERSONAL):3, 002(SLOT):2, 920(OPEN):2, 817(OPEN):2, 511(PERSONAL):2, 631(PERSONAL):2, 892(PERSONAL):2, 540(PERSONAL):1, 016(NUM_SHORT):1, 820(OPEN):1, 556(OPEN):1
+
+=== 4. LIPI SIGN POSITIONAL PROFILES & 5-FOLD CV BITS-PER-SIGN CLASS MOVES ===
+5-fold Lipi CV baseline (v2_base, 14 classes): 6.87148 bits/sign
+
+Top 50 single-sign class moves by 5-fold Lipi CV bits/sign gain (uses >= 5):
+sign  uses  occ_len2p  v2_class best_cv_class  cv_gain_bits_per_sign  cv_gain_total_bits  p_init  p_fin  p_after_open  p_after_num  p_before_num  p_after_closer  p_before_closer
+ 220   359        224     CREST         PLACE               0.013047              169.54   0.112  0.058         0.009        0.384         0.058           0.000            0.263
+ 415   125         85  PERSONAL      NUM_NAME               0.012976              168.62   0.235  0.047         0.012        0.059         0.000           0.000            0.000
+ 590   169        118  PERSONAL         PLACE               0.012366              160.70   0.229  0.085         0.000        0.144         0.017           0.025            0.051
+ 706    78         53  PERSONAL       MEASURE               0.010945              142.23   0.226  0.057         0.000        0.075         0.566           0.000            0.038
+ 031   217        148  NUM_TALL         PLACE               0.007912              102.81   0.324  0.149         0.047        0.088         0.108           0.027            0.047
+ 001   187        126 NUM_SHORT         PLACE               0.007584               98.55   0.063  0.095         0.159        0.087         0.246           0.151            0.016
+ 798   128         89  PERSONAL         CREST               0.007443               96.73   0.180  0.011         0.022        0.045         0.056           0.000            0.360
+ 840    92         61  PERSONAL         PLACE               0.007264               94.40   0.180  0.033         0.033        0.230         0.410           0.016            0.180
+ 140   101         67     CREST         PLACE               0.006990               90.84   0.448  0.045         0.045        0.164         0.015           0.060            0.030
+ 176   122         84  PERSONAL     NAME_BACK               0.006631               86.17   0.202  0.012         0.000        0.107         0.000           0.000            0.619
+ 923    35         26  PERSONAL     NAME_BACK               0.006285               81.67   0.077  0.000         0.000        0.192         0.038           0.000            0.923
+ 550   100         69      OPEN         PLACE               0.005522               71.76   0.391  0.072         0.029        0.145         0.029           0.043            0.029
+ 575    66         40  PERSONAL         PLACE               0.005274               68.53   0.400  0.025         0.050        0.350         0.050           0.000            0.325
+ 435    55         36  PERSONAL     NAME_BACK               0.004834               62.82   0.056  0.083         0.000        0.056         0.056           0.000            0.028
+ 226    35         24     CREST         THING               0.004639               60.28   0.125  0.667         0.000        0.542         0.083           0.000            0.000
+ 440    42         31  PERSONAL         PLACE               0.003838               49.88   0.226  0.065         0.065        0.065         0.065           0.000            0.258
+ 741   199        142      SLOT      NUM_NAME               0.003156               41.01   0.120  0.014         0.028        0.035         0.197           0.007            0.000
+ 617    56         43  PERSONAL         THING               0.003136               40.75   0.186  0.605         0.093        0.070         0.047           0.000            0.023
+ 017    65         49 NUM_SHORT         PLACE               0.003123               40.58   0.204  0.000         0.041        0.143         0.000           0.020            0.102
+ 460    37         26  PERSONAL       AFTER_M               0.002879               37.41   0.038  0.000         0.000        0.115         0.038           0.000            0.538
+ 526     9          9  PERSONAL        CLOSER               0.002574               33.44   0.000  1.000         0.333        0.000         0.000           0.000            0.000
+ 201     5          5     PLACE          OPEN               0.002548               33.11   1.000  0.000         0.000        0.000         0.000           0.000            0.000
+ 773     9          8  PERSONAL     NAME_BACK               0.002420               31.45   0.125  0.000         0.000        0.000         0.000           0.000            1.000
+ 142    63         40  PERSONAL         PLACE               0.002420               31.45   0.300  0.025         0.025        0.150         0.050           0.000            0.225
+ 125    55         44  PERSONAL         PLACE               0.002372               30.82   0.295  0.068         0.045        0.136         0.023           0.000            0.000
+ 336    10          8  PERSONAL       AFTER_M               0.002341               30.42   0.000  0.000         0.000        0.250         0.000           0.000            0.875
+ 636    12          6  PERSONAL     NAME_BACK               0.002166               28.15   0.000  0.000         0.000        0.000         0.000           0.000            0.833
+ 742    48         27      SLOT      NUM_NAME               0.002162               28.09   0.111  0.074         0.111        0.000         0.037           0.000            0.074
+ 066    16          8  PERSONAL         PLACE               0.002108               27.39   0.375  0.125         0.125        0.125         0.000           0.125            0.000
+ 760   108         72   AFTER_M     NAME_BACK               0.002097               27.24   0.000  0.014         0.014        0.181         0.000           0.014            0.931
+ 337    12          8  PERSONAL     NAME_BACK               0.002074               26.96   0.125  0.000         0.125        0.000         0.000           0.000            0.875
+ 255   101         66  PERSONAL      NUM_NAME               0.002055               26.70   0.273  0.045         0.045        0.045         0.015           0.000            0.182
+ 831    16         15  PERSONAL         PLACE               0.002028               26.36   0.533  0.067         0.067        0.133         0.000           0.000            0.000
+ 362     5          4  PERSONAL         PLACE               0.002003               26.03   0.500  0.000         0.250        0.000         0.000           0.000            0.750
+ 491    14         11  PERSONAL         PLACE               0.001968               25.58   0.818  0.000         0.000        0.000         0.273           0.000            0.000
+ 615    40         28     PLACE      PERSONAL               0.001960               25.47   0.250  0.071         0.036        0.036         0.107           0.000            0.321
+ 297    15         12  PERSONAL         PLACE               0.001940               25.21   0.083  0.000         0.083        0.000         0.083           0.000            0.000
+ 495    26         18  PERSONAL         PLACE               0.001939               25.20   0.500  0.000         0.000        0.000         0.111           0.056            0.000
+ 595    44         29  PERSONAL         PLACE               0.001915               24.88   0.103  0.310         0.103        0.000         0.207           0.000            0.000
+ 772    10          8  PERSONAL     NAME_BACK               0.001910               24.83   0.000  0.000         0.000        0.125         0.000           0.000            1.000
+ 500    14          9  PERSONAL         PLACE               0.001879               24.42   0.111  0.000         0.111        0.000         0.000           0.111            0.000
+ 611     6          4  PERSONAL         PLACE               0.001860               24.16   0.000  0.000         0.250        0.000         0.000           0.000            0.250
+ 555    23         17  PERSONAL        CLOSER               0.001835               23.85   0.059  0.059         0.000        0.059         0.000           0.059            0.000
+ 388    52         35  PERSONAL         PLACE               0.001777               23.09   0.286  0.029         0.000        0.143         0.057           0.000            0.429
+ 408     9          7   MEASURE         PLACE               0.001774               23.05   0.571  0.429         0.143        0.286         0.571           0.000            0.000
+ 821     9          9  PERSONAL         PLACE               0.001762               22.90   0.444  0.111         0.000        0.333         0.222           0.000            0.222
+ 877    20         15  PERSONAL         PLACE               0.001737               22.57   0.333  0.133         0.000        0.533         0.133           0.000            0.467
+ 064    14          9  PERSONAL         THING               0.001728               22.45   0.111  0.778         0.000        0.333         0.000           0.000            0.000
+ 013    36         27 NUM_SHORT          SLOT               0.001727               22.44   0.222  0.000         0.407        0.074         0.333           0.037            0.037
+ 065    15         10  PERSONAL          SLOT               0.001723               22.39   0.000  0.100         0.000        0.000         0.000           0.000            0.000
+
+PERSONAL signs with strong final rate (p_fin >= 0.35, occ_len2p >= 8):
+sign  uses  occ_len2p v2_class best_cv_class  cv_gain_bits_per_sign  cv_gain_total_bits  p_init  p_fin  p_after_open  p_after_num  p_before_num  p_after_closer  p_before_closer
+ 526     9          9 PERSONAL        CLOSER               0.002574               33.44   0.000  1.000         0.333        0.000         0.000             0.0            0.000
+ 064    14          9 PERSONAL         THING               0.001728               22.45   0.111  0.778         0.000        0.333         0.000             0.0            0.000
+ 136    10          8 PERSONAL        CLOSER               0.000005                0.07   0.125  0.750         0.000        0.250         0.000             0.0            0.000
+ 617    56         43 PERSONAL         THING               0.003136               40.75   0.186  0.605         0.093        0.070         0.047             0.0            0.023
+ 298     9          8 PERSONAL         THING               0.000761                9.88   0.000  0.500         0.000        0.125         0.000             0.0            0.000
+ 236    20         17 PERSONAL         CREST               0.000524                6.81   0.059  0.412         0.000        0.000         0.000             0.0            0.000
+ 111    15          8 PERSONAL         PLACE               0.000912               11.85   0.125  0.375         0.000        0.125         0.000             0.0            0.000
+
+PERSONAL signs with strong initial rate (p_init >= 0.45, occ_len2p >= 8):
+sign  uses  occ_len2p v2_class best_cv_class  cv_gain_bits_per_sign  cv_gain_total_bits  p_init  p_fin  p_after_open  p_after_num  p_before_num  p_after_closer  p_before_closer
+ 853    11         10 PERSONAL          OPEN               0.001199               15.58   0.900  0.000         0.000        0.100         0.300           0.000            0.000
+ 491    14         11 PERSONAL         PLACE               0.001968               25.58   0.818  0.000         0.000        0.000         0.273           0.000            0.000
+ 510    12          9 PERSONAL         CREST               0.000248                3.22   0.667  0.000         0.000        0.000         0.000           0.000            0.000
+ 371    10          8 PERSONAL     NUM_SHORT               0.000747                9.71   0.625  0.000         0.000        0.125         0.125           0.000            0.000
+ 831    16         15 PERSONAL         PLACE               0.002028               26.36   0.533  0.067         0.067        0.133         0.000           0.000            0.000
+ 416    38         26 PERSONAL         PLACE               0.000676                8.78   0.500  0.192         0.000        0.115         0.038           0.000            0.231
+ 413    28         18 PERSONAL      NUM_TALL               0.000032                0.41   0.500  0.278         0.056        0.056         0.000           0.000            0.000
+ 495    26         18 PERSONAL         PLACE               0.001939               25.20   0.500  0.000         0.000        0.000         0.111           0.056            0.000
+ 104    20         16 PERSONAL         PLACE               0.001366               17.75   0.500  0.188         0.000        0.125         0.188           0.000            0.000
+ 190    11         10 PERSONAL         PLACE               0.000383                4.98   0.500  0.100         0.100        0.000         0.100           0.000            0.000
+ 072    14         11 PERSONAL         PLACE               0.000002                0.02   0.455  0.091         0.000        0.000         0.000           0.000            0.364
+
+PERSONAL signs with strong after-number rate (p_after_num >= 0.35, occ_len2p >= 6):
+sign  uses  occ_len2p v2_class best_cv_class  cv_gain_bits_per_sign  cv_gain_total_bits  p_init  p_fin  p_after_open  p_after_num  p_before_num  p_after_closer  p_before_closer
+ 384    25         16 PERSONAL         PLACE               0.001049               13.63   0.062  0.000         0.000        0.562         0.000             0.0            0.688
+ 130    14          9 PERSONAL         THING               0.000399                5.19   0.111  0.222         0.000        0.556         0.000             0.0            0.000
+ 877    20         15 PERSONAL         PLACE               0.001737               22.57   0.333  0.133         0.000        0.533         0.133             0.0            0.467
+ 999    15          6 PERSONAL       MEASURE               0.000945               12.28   0.000  0.000         0.000        0.500         0.667             0.0            0.167
+ 215     9          6 PERSONAL         THING               0.000798               10.38   0.167  0.667         0.000        0.500         0.000             0.0            0.167
+ 812     9          8 PERSONAL         PLACE               0.001562               20.29   0.000  0.125         0.125        0.375         0.000             0.0            0.125
+ 575    66         40 PERSONAL         PLACE               0.005274               68.53   0.400  0.025         0.050        0.350         0.050             0.0            0.325

@@ -1,0 +1,112 @@
+{
+  "total_unique_phrases": 181193,
+  "tamil_sense_rows": 76563,
+  "tamil_unique_phrases_bge": 30971,
+  "m2v_model": "minishlab/potion-multilingual-128M",
+  "m2v_dim": 256,
+  "bge_model": "minishlab/potion-base-32M",
+  "bge_dim": 512,
+  "dicts": {
+    "akkadian_wiktionary": {
+      "rows": 658,
+      "unique_norm": 629,
+      "unique_p1": 614
+    },
+    "burushaski_lorimer": {
+      "rows": 1270,
+      "unique_norm": 1270,
+      "unique_p1": 1212
+    },
+    "dedr_kannada": {
+      "rows": 10165,
+      "unique_norm": 7300,
+      "unique_p1": 4784
+    },
+    "dedr_malayalam": {
+      "rows": 7048,
+      "unique_norm": 5371,
+      "unique_p1": 4475
+    },
+    "dedr_tamil": {
+      "rows": 12612,
+      "unique_norm": 7895,
+      "unique_p1": 6891
+    },
+    "dedr_telugu": {
+      "rows": 7728,
+      "unique_norm": 6100,
+      "unique_p1": 4078
+    },
+    "elamite_hinzkoch": {
+      "rows": 2439,
+      "unique_norm": 2433,
+      "unique_p1": 2022
+    },
+    "kannada_wiktionary": {
+      "rows": 2331,
+      "unique_norm": 2278,
+      "unique_p1": 1888
+    },
+    "mundari_bhadra": {
+      "rows": 4568,
+      "unique_norm": 4501,
+      "unique_p1": 4007
+    },
+    "oia_turner": {
+      "rows": 7062,
+      "unique_norm": 6836,
+      "unique_p1": 4915
+    },
+    "proto_indoiranian_wiktionary": {
+      "rows": 743,
+      "unique_norm": 730,
+      "unique_p1": 634
+    },
+    "sanskrit_mw": {
+      "rows": 161894,
+      "unique_norm": 150227,
+      "unique_p1": 85025
+    },
+    "santali_bodding5": {
+      "rows": 1808,
+      "unique_norm": 1808,
+      "unique_p1": 1618
+    },
+    "santali_campbell": {
+      "rows": 10600,
+      "unique_norm": 10596,
+      "unique_p1": 8562
+    },
+    "santali_wiktionary": {
+      "rows": 760,
+      "unique_norm": 744,
+      "unique_p1": 625
+    },
+    "sumerian_halloran": {
+      "rows": 2932,
+      "unique_norm": 2932,
+      "unique_p1": 2389
+    },
+    "sumerian_wiktionary": {
+      "rows": 785,
+      "unique_norm": 640,
+      "unique_p1": 711
+    },
+    "tamil_wiktionary": {
+      "rows": 9488,
+      "unique_norm": 8671,
+      "unique_p1": 6986
+    },
+    "telugu_wiktionary": {
+      "rows": 14352,
+      "unique_norm": 13848,
+      "unique_p1": 10386
+    }
+  },
+  "sanity_cosines": {
+    "grain_vs_barley": 0.276,
+    "grain_vs_king": 0.077,
+    "house_vs_german_haus": 0.716,
+    "king_vs_german_koenig": 0.616
+  }
+}

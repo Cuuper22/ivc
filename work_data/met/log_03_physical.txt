@@ -1,0 +1,59 @@
+=== STEP 3B: PHYSICAL OBJECT & VOLUMETRIC METROLOGY ===
+SQLite provenance check: 4075 artifacts, 5858 witnesses; Lipi physical stones=4691
+
+=== TEST P1: INSCRIBED POTTERY WALL THICKNESS (th_mm) vs CAPACITY VALUE ===
+POT:T:g sherds with wall thickness & capacity mark (n=12):
+  -       (Nuhato      ): cup_equiv= 1.0 (cup_700_bare ) | wall th=14.0 mm | sherd=nanxnan mm | 700
+  K-404   (Kalibangan  ): cup_equiv= 1.0 (tall_F(1)    ) | wall th= 4.0 mm | sherd=49.0x48.0 mm | 850 031 000
+  K-164   (Kalibangan  ): cup_equiv= 3.0 (tall_F(3)    ) | wall th= 7.0 mm | sherd=51.0x28.0 mm | 033
+  K-163   (Kalibangan  ): cup_equiv= 3.0 (tall_F(3)    ) | wall th= 7.0 mm | sherd=58.0x41.0 mm | 033
+  K-165   (Kalibangan  ): cup_equiv= 3.0 (tall_F(3)    ) | wall th=12.5 mm | sherd=54.0x42.0 mm | 031 032
+  K-176   (Kalibangan  ): cup_equiv= 4.0 (tall_F(4)    ) | wall th=11.5 mm | sherd=79.0x61.0 mm | 034 007
+  K-397   (Kalibangan  ): cup_equiv= 5.0 (tall_F(5)    ) | wall th= 9.0 mm | sherd=79.0x45.0 mm | 035 685 000
+  K-170   (Kalibangan  ): cup_equiv= 5.0 (tall_F(5)    ) | wall th=20.0 mm | sherd=184.0x148.0 mm | 035
+  K-173   (Kalibangan  ): cup_equiv= 6.0 (tall_F(6)    ) | wall th=19.0 mm | sherd=132.0x75.0 mm | 003 033 033
+  K-174   (Kalibangan  ): cup_equiv= 8.0 (tall_F(8)    ) | wall th=12.0 mm | sherd=112.0x46.0 mm | 034 999 034
+  K-183   (Kalibangan  ): cup_equiv=10.0 (tall_F(10)   ) | wall th=12.0 mm | sherd=78.0x61.0 mm | 033 033 034
+  K-417   (Kalibangan  ): cup_equiv=12.0 (055_dozen(12)) | wall th=24.5 mm | sherd=197.0x115.0 mm | 055 740 400
+  Spearman rho(capacity_cups, wall_thickness_mm) = +0.5177 (two-sided P=0.08468)
+  1,000-permutation test: null mean=+0.0029 +- 0.3120, one-sided P=0.0559
+  RIVAL TEST A — Within Kalibangan only (n=11): rho=+0.7067 vs shuffle +0.0011, P=0.0050
+  RIVAL TEST B — Partial Spearman controlling for sherd area & sign count (n=11): partial_rho=+0.4220 vs shuffle +0.0090, P=0.1389
+
+=== TEST P2: WHOLE VESSEL VOLUMES & GOBLET STAMP (POT:T:s) vs GRAFFITO (POT:T:g) SPLIT ===
+1. Wells' 3 measured whole jars ([(np.int64(3), np.float64(27.3)), (np.int64(6), np.float64(55.56)), (np.int64(7), np.float64(65.89))]):
+   Litres per stroke: [np.float64(9.1), np.float64(9.26), np.float64(9.41)] -> mean=9.26 L (1 cup), CV=1.69%
+   Chance that 3 sorted jars in [15, 100] L match [np.int64(3), np.int64(6), np.int64(7)] within CV<=1.69%: P=0.0037
+2. Complete Mohenjo-daro pithos M-2066 (outer 600 x 580 mm, text='033 004 000'):
+   Geometric ovoid inner capacity: 84.0-97.5 L (= 9.1-10.6 cups, i.e. ~1 kalam = 110.9 L or 9-10 cups!).
+3. Goblet Stamps POT:T:s (n=74, median stamp 17.0x13.0 mm) vs Graffiti POT:T:g (n=532):
+   Goblet vocabulary (540-540, 440, 416, 013): 24/74 (32.4%) on POT:T:s vs 4/532 (0.8%) on POT:T:g (Fisher P=4.158e-20)
+
+=== TEST P3: INSCRIBED BRONZE IMPLEMENTS (IMPL), KANMER DISCS & IVORY RODS (ROD) ===
+Inscribed copper/bronze implements with 3D dimensions (n=7):
+  M-2121  (Mohenjo-daro): 109.5x283.2x11.9 mm -> box= 369.0 cm3 (~ 2135 g Cu) | 391 595 850 480 001 821 | 006 911
+  -       (Mohenjo-daro): 105.9x237.5x10.2 mm -> box= 256.5 cm3 (~ 1484 g Cu) | 391 595 850 480 001 821
+  M-2124  (Mohenjo-daro):  78.7x289.6x 3.3 mm -> box=  75.2 cm3 (~  435 g Cu) | ALT
+  K-122   (Kalibangan  ):  65.0x145.0x 5.0 mm -> box=  47.1 cm3 (~  273 g Cu) | 817 628 266 | 005
+  M-2122  (Mohenjo-daro):  59.9x138.4x 5.1 mm -> box=  42.3 cm3 (~  245 g Cu) | ALT ALT
+  C-40    (Chanhu-daro ):  68.0x 87.0x 7.0 mm -> box=  41.4 cm3 (~  240 g Cu) | 016 220 776 825 005 909 095 390 | 066 900 031 235 240 835 000 740
+  M-2118  (Mohenjo-daro):  23.1x132.6x 7.6 mm -> box=  23.3 cm3 (~  135 g Cu) | 391 595 850 480 001 821 | 803 151 004 005 913
+Kanmer circular terracotta tokens (n=3): diameters=[33.9, 34.3, 34.3] mm (CV=0.68%), thicknesses=[15.7, 16.1, 16.6] mm, all carrying '031 136'!
+Ivory/bone rods (n=41 stones): comb 400 appears on 12/41 (29.3%) vs 80/2238 (3.57%) on seals (Fisher P=2.748e-08)
+
+=== TEST P4: SEAL & TABLET PHYSICAL SIZE ACROSS THE METROLOGICAL LADDER ===
+Seal face area scaling across metrological grades (all seals median=605 mm2, n=1775):
+  7-kottai (017-575, n= 8): median=467 mm2 | len+site resid=-0.385
+  5-kalam  (705+5,   n= 3): median=1242 mm2 | len+site resid=+0.109
+  3-kalam  (705+3,   n=82): median=812 mm2 | len+site resid=+0.062
+  Junior comb (740-400, n=11): median=240 mm2 | len+site resid=-0.855
+  5-kalam > 3-kalam test: raw MWU P=0.0622; RIVAL TEST (controlling for sign count & site): resid gap=+0.048 (~+5%), MWU P=0.4763, 1,000-perm P=0.4845
+
+Tablet size vs cup count (2,3,4) on clay/steatite mtab (n=370): Spearman rho=-0.2893 (P=0.000) -> NULL.
+Launching REDESIGN: High-rung capacity records (kalam 705/706 & kottai 575) vs single-cup chits (700) across ALL tablets (mtab + ctab):
+  All tablets (mtab+ctab): High-rung (575/705/706, n=88) median area=268 mm2 vs Cup-only (700, n=362) median=116 mm2 (MWU P=1.704e-23)
+  RIVAL TEST — Strictly within Harappa clay/steatite mtab:
+    2D Area: High-rung (n=49) median=170 mm2 vs Cup-only (n=352) median=116 mm2 (MWU P=8.345e-08)
+    3D Volume: High-rung (n=26) median=732 mm3 vs Cup-only (n=98) median=359 mm3 (MWU P=1.222e-05, 1,000-perm median-gap P=0.0010)
+
+Saved physical_pots.csv, physical_tools_rods.csv, physical_scaling_rungs.csv, and physical_summary.json.

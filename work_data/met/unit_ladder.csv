@@ -1,0 +1,18 @@
+ladder_rung,dag_rank,unit_group,lipi_signs,metrological_system,ratio_to_lower,lower_unit,cup_equivalents,physical_estimate,owned_counts_lipi,owned_counts_mnew,owned_counts_total,dominant_series,dominant_side,max_observed_count,value_distribution,structural_constraint
+1,2,grain_hdr,413,capacity_grain,,kottai,,grain_domain_header,2,1,3,F,before,3,1:1 3:2,Tablet grain-office header preceding 575 or 892
+2,4,kottai,575,capacity_grain,6,kalam,72.0,665.3 L (at 6 kalam),23,8,31,T,before,7,1:8 2:4 7:19,Great grain measure; takes stacked 7 before (017-575) or 1-3 after
+3,8,granary,605,container,,kalam,,granary_store,3,1,4,F,after,3,2:2 3:2,Large storage granary container
+4,6,chest,590,container,,kalam,,chest_store,23,6,29,F,before,7,1:5 2:17 3:5 7:2,Square storage chest / strongbox; precedes kalam on tablets
+5,1,parai,540,capacity_grain,,kalam,,drum/bowtie_measure,0,0,0,,,,,Bowtie measure; stamped doubled (540-540) on Harappa goblets & rods
+6,5,kalam,704|705|706|707,capacity_grain,3,vallam (12x cup),12.0,110.9 L (~72 kg grain),156,32,188,F,after,24,1:6 2:15 3:149 4:2 5:13 12:2 24:1,Primary wholesale grain measure; post-counted in tall strokes 1-5
+7,7,bin_town,335|336,container,,vallam,,store_bin_or_town,6,1,7,S,before,8,2:4 3:1 8:2,Stands between 575 and 711 in Harappa grain office formula
+8,12,vallam,711,capacity_grain,4,cup,4.0,37.0 L (1/3 kalam),3,0,3,F,after,3,3:3,Sub-kalam measure (tuni/vallam = 4 cups); caps following cup 700 at 3
+9,13,cup,700|701|703,capacity_grain,8,pati,1.0,9.24 L (~6 kg grain),431,7,438,F,before,7,1:9 2:126 3:183 4:116 6:3 7:1,"Standard ration measure (marakkal); counts {1,2,3,4,6} = exact divisors of 12"
+10,14,pati,320|321|323,capacity_grain,4,quarter,0.125,1.16 L (~0.75 kg/day),1,0,1,F,after,2,2:1,Daily ration allowance (1/8 cup; 30 pati = 3.75 cups/month)
+11,9,quarter,061|062|063,fraction,,,0.25,1/4 fractional unit,17,4,21,S,before,9,1:6 2:12 3:1 6:1 9:1,"Quarter fraction; owned counts {1,2,3} (<4)"
+12,10,nirai,171,weight,,kalancu,,"weight_standard (takes 3,5)",25,6,31,F,after,5,3:11 5:20,"High stone-weight standard; post-counted exclusively in {3 (032+031/M94), 5 (035)}"
+13,,kalancu,645,weight,,kunri,,precious_metal_weight,14,1,15,S,before,7,1:4 2:3 3:7 7:1,"Small metal/gold weight unit on seals, bronze axes & multi-face prisms"
+14,3,two_dozen,056,bundle_discrete,2,dozen,24.0,24 discrete items (8x3),1,0,1,F,before,1,1:1,Double-dozen block (24 = 2x055); photo-verified 8x3 strokes & M 121-121
+15,11,dozen,055|057,bundle_discrete,12,item,12.0,12 discrete items (4x3),3,3,6,S,before,1,1:6,"Dozen block (12 = 4x3); multiplied by 1 or 2, precedes kalam & goods"
+16,,block_slanted,025|026|027|028|029|B119,bundle_discrete,,item,9.0,6-10 slanted block,0,0,0,,,,,3-row slanted stroke block before 032-740 on Harappa steatite tablets
+17,,seven_bkt,048|049,bundle_discrete,7,item,7.0,7 bracketed unit,0,0,0,,,,,Bracketed 7-unit after 861-002 or 741

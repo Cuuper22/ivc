@@ -1,0 +1,35 @@
+[   0.0s] [gsol_01] Starting Step 1 K=1 / K=2 Audit with N_SHUF=1000...
+[   0.2s] [gsol_01] Encoding 46 label-only phrases not in /tmp/dict_emb/phrases.json...
+[   8.4s] [gsol_01] Directional adjacent-bigram scorable events: Lipi=3321 (3856 faces), New=701 (738 faces)
+[   8.6s] [gsol_01] Encoding 1039 label-only phrases not in /tmp/dict_emb/phrases.json...
+[  15.8s] [gsol_01] Built external priors from control_texts.json (1519 sentences, 3673 ordered bigrams)
+[  15.8s] [gsol_01] --- Evaluating K=1 (values_master4 + dict senses) ---
+[  63.5s] [gsol_01] Bag-of-signs K=1 lift new: A z=2.822 | B_cat z=2.563 | B_nsens z=2.456
+[  68.9s] [gsol_01] Dir K=1 dir_cat_pmi_lipi     | New A z= +4.41 (P=0.001) | B_cat z= +3.45 (P=0.002)
+[  71.2s] [gsol_01] Dir K=1 dir_cat_pmi_ext      | New A z= -0.73 (P=0.769) | B_cat z= -0.40 (P=0.676)
+[  73.5s] [gsol_01] Dir K=1 bge_cos              | New A z= -1.06 (P=0.854) | B_cat z= -0.96 (P=0.803)
+[  76.2s] [gsol_01] Dir K=1 bge_bilin_lipi       | New A z= +5.19 (P=0.001) | B_cat z= +3.52 (P=0.001)
+[  78.9s] [gsol_01] Dir K=1 bge_bilin_ext        | New A z= -0.59 (P=0.719) | B_cat z= -0.74 (P=0.738)
+[  81.6s] [gsol_01] Dir K=1 m2v_cos              | New A z= -0.76 (P=0.783) | B_cat z= -0.77 (P=0.779)
+[  83.8s] [gsol_01] Dir K=1 m2v_bilin_lipi       | New A z= +4.91 (P=0.001) | B_cat z= +3.37 (P=0.001)
+[  86.1s] [gsol_01] Dir K=1 m2v_bilin_ext        | New A z= -1.75 (P=0.967) | B_cat z= -1.51 (P=0.929)
+[  88.6s] [gsol_01] Dir K=1 gemma_cos            | New A z= -0.02 (P=0.516) | B_cat z= -0.00 (P=0.486)
+[  90.9s] [gsol_01] Dir K=1 gemma_bilin_lipi     | New A z= +5.10 (P=0.001) | B_cat z= +3.47 (P=0.001)
+[ 186.6s] [gsol_01] Rival Refit Audit K=1 (each decoy learns its own Lipi model -> New): cat B_cat z= +2.64 (P=0.003) | bge B_cat z= +2.24 (P=0.006)
+[ 190.6s] [gsol_01] Pure-Dict K=1 New: fixed A z= +3.14 | fixed B_cat z= +2.22 | refit B_cat z= +0.66
+[ 190.6s] [gsol_01] Computing per-sign and per-bigram K=1 attribution on unseen Mahadevan `new texts`...
+[ 190.9s] [gsol_01] --- Evaluating K=2 (values_master4 + dict senses) ---
+[ 359.3s] [gsol_01] Bag-of-signs K=2 lift new: A z=2.139 | B_cat z=1.963 | B_nsens z=1.742
+[ 368.3s] [gsol_01] Dir K=2 dir_cat_pmi_lipi     | New A z= +3.62 (P=0.001) | B_cat z= +2.90 (P=0.002)
+[ 371.5s] [gsol_01] Dir K=2 dir_cat_pmi_ext      | New A z= -0.20 (P=0.579) | B_cat z= -0.12 (P=0.542)
+[ 374.8s] [gsol_01] Dir K=2 bge_cos              | New A z= -1.14 (P=0.851) | B_cat z= -0.90 (P=0.791)
+[ 377.5s] [gsol_01] Dir K=2 bge_bilin_lipi       | New A z= +4.87 (P=0.001) | B_cat z= +3.35 (P=0.001)
+[ 379.7s] [gsol_01] Dir K=2 bge_bilin_ext        | New A z= -0.96 (P=0.822) | B_cat z= -0.87 (P=0.780)
+[ 382.0s] [gsol_01] Dir K=2 m2v_cos              | New A z= -0.41 (P=0.651) | B_cat z= -0.23 (P=0.547)
+[ 384.3s] [gsol_01] Dir K=2 m2v_bilin_lipi       | New A z= +4.70 (P=0.001) | B_cat z= +3.22 (P=0.001)
+[ 386.9s] [gsol_01] Dir K=2 m2v_bilin_ext        | New A z= -0.61 (P=0.703) | B_cat z= -0.39 (P=0.614)
+[ 389.0s] [gsol_01] Dir K=2 gemma_cos            | New A z= +0.01 (P=0.515) | B_cat z= +0.27 (P=0.381)
+[ 391.1s] [gsol_01] Dir K=2 gemma_bilin_lipi     | New A z= +4.76 (P=0.001) | B_cat z= +3.26 (P=0.001)
+[ 502.4s] [gsol_01] Rival Refit Audit K=2 (each decoy learns its own Lipi model -> New): cat B_cat z= +2.03 (P=0.017) | bge B_cat z= +2.44 (P=0.007)
+[ 507.5s] [gsol_01] Pure-Dict K=2 New: fixed A z= +3.52 | fixed B_cat z= +2.75 | refit B_cat z= +1.22
+[ 507.5s] [gsol_01] Saved k1_audit_results.json, k1_bigram_drivers_new.csv, k1_sign_drivers_new.csv.
