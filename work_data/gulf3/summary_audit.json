@@ -1,0 +1,198 @@
+{
+  "audit1_elamite_artifact": "Elamite Mode 1 +5.82 sigma was inflated by 3 artifacts: (1) el-ti-pi ('eyes') matched 'hand' via a German grammatical footnote; (2) vowel-initial words (a-a-in, el-ti, a-h-hu-im) had vowels stripped, producing fake consonant onsets n/l/h; (3) na-ak-ti-na is a secondary gloss. After cleaning, ALL 5 candidate languages score at chance on pictographic acrophony.",
+  "audit1_clean_5lang": [
+    {
+      "language": "Sumerian",
+      "tested": 13,
+      "core_obs": 0,
+      "core_null": 0.22,
+      "core_z": -0.48,
+      "core_p": 1.0,
+      "all_obs": 0,
+      "all_null": 1.91,
+      "all_z": -1.47,
+      "all_p": 1.0,
+      "elam_obs": 0,
+      "elam_null": 0.47,
+      "elam_z": -0.71,
+      "elam_p": 1.0,
+      "core_hits": "",
+      "elam_hits": ""
+    },
+    {
+      "language": "Akkadian",
+      "tested": 14,
+      "core_obs": 1,
+      "core_null": 0.59,
+      "core_z": 0.55,
+      "core_p": 0.4608,
+      "all_obs": 2,
+      "all_null": 2.11,
+      "all_z": -0.09,
+      "all_p": 0.6412,
+      "elam_obs": 1,
+      "elam_null": 0.34,
+      "elam_z": 1.12,
+      "elam_p": 0.2914,
+      "core_hits": "G3-B03:455-220->sn=Ur-Suen*",
+      "elam_hits": "G3-B03:455-220->sn=Luh-issan*"
+    },
+    {
+      "language": "Dravidian",
+      "tested": 21,
+      "core_obs": 1,
+      "core_null": 1.2,
+      "core_z": -0.21,
+      "core_p": 0.7456,
+      "all_obs": 2,
+      "all_null": 2.64,
+      "all_z": -0.44,
+      "all_p": 0.7701,
+      "elam_obs": 0,
+      "elam_null": 0.2,
+      "elam_z": -0.46,
+      "elam_p": 1.0,
+      "core_hits": "G3-M07:255-744-796->nk=Lu-Enki*",
+      "elam_hits": ""
+    },
+    {
+      "language": "Elamite",
+      "tested": 19,
+      "core_obs": 0,
+      "core_null": 0.8,
+      "core_z": -0.91,
+      "core_p": 1.0,
+      "all_obs": 1,
+      "all_null": 1.97,
+      "all_z": -0.72,
+      "all_p": 0.8756,
+      "elam_obs": 2,
+      "elam_null": 2.1,
+      "elam_z": -0.08,
+      "elam_p": 0.6492,
+      "core_hits": "",
+      "elam_hits": "G3-M06:415-803-328->ht=Hita; G3-U04:384-055->th=Siruk-tuh*"
+    },
+    {
+      "language": "OIA",
+      "tested": 20,
+      "core_obs": 0,
+      "core_null": 0.0,
+      "core_z": 0.0,
+      "core_p": 1.0,
+      "all_obs": 3,
+      "all_null": 1.23,
+      "all_z": 1.74,
+      "all_p": 0.1089,
+      "elam_obs": 0,
+      "elam_null": 0.33,
+      "elam_z": -0.59,
+      "elam_p": 1.0,
+      "core_hits": "",
+      "elam_hits": ""
+    }
+  ],
+  "audit2_rival": {
+    "within_gulf_cooc_all": {
+      "obs": 13,
+      "n": 30,
+      "null": 12.29,
+      "z": 0.35,
+      "p": 0.4607
+    },
+    "within_gulf_cooc_nonfish": {
+      "obs": 9,
+      "n": 30,
+      "null": 8.65,
+      "z": 0.2,
+      "p": 0.5375
+    },
+    "order_man_first_all": {
+      "obs": 8,
+      "total": 13,
+      "pct": 61.5,
+      "null": 6.04,
+      "z": 1.15,
+      "p": 0.1938
+    },
+    "order_man_first_nonfish": {
+      "obs": 7,
+      "total": 9,
+      "pct": 77.8,
+      "null": 3.95,
+      "z": 2.11,
+      "p": 0.0388
+    },
+    "order_man_first_nonfish_pairs": {
+      "obs": 14,
+      "total": 17,
+      "pct": 82.4,
+      "null": 8.43,
+      "z": 2.34,
+      "p": 0.0142
+    },
+    "cdli_family_counts": {
+      "Lu/Ur-Enki/dingira/Nanshe (MAN + FISH 220/235)": 206,
+      "Lu/Ur-Gesz (MAN + TREE 405/407/413)": 41,
+      "Lu/Ur-E2 (MAN + TEMPLE 604/603)": 121,
+      "Lu/Ur-Nanna/Suen (MAN + MOON 924)": 51,
+      "Lu/Ur-Utu/Samas (MAN + SUN 190)": 25
+    }
+  },
+  "audit3_hub_top": [
+    [
+      "G3-F02(Failaka)",
+      5
+    ],
+    [
+      "G3-B04(Saar)",
+      4
+    ],
+    [
+      "G3-M11(Mesopotamia? (Yale))",
+      3
+    ],
+    [
+      "G3-M01(Ur)",
+      3
+    ],
+    [
+      "G3-B02(Qala'at al-Bahrain)",
+      2
+    ],
+    [
+      "G3-M12(Mesopotamia? (Yale))",
+      2
+    ],
+    [
+      "G3-U02(Unknown (Gulf/WA))",
+      1
+    ],
+    [
+      "G3-B03(Karzakkan)",
+      1
+    ],
+    [
+      "G3-B05(Janabiyah)",
+      1
+    ],
+    [
+      "G3-U04(West Asia (museum))",
+      1
+    ]
+  ],
+  "audit3_repeated_bigrams": {
+    "091-032": [
+      "G3-B06(Karzakkan)",
+      "G3-I05(Sistan (McMahon BM))"
+    ],
+    "740-740": [
+      "G3-B07(Karzakkan)",
+      "G3-M08(Near East (Ur/Babylon))"
+    ],
+    "001-090": [
+      "G3-F03(Failaka)",
+      "G3-M11(Mesopotamia? (Yale))"
+    ]
+  }
+}

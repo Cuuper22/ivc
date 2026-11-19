@@ -1,0 +1,46 @@
+uid,laursen,site,group,seq,n_tok,bg_supported,bg_rate,bigrams,city_links
+G3-B02,7,Qala'at al-Bahrain,Laursen_G3_Bahrain,160-090-055-060-190,5,1,0.25,160-090(1),
+G3-B03,8,Karzakkan,Laursen_G3_Bahrain,091-031-455-220,4,1,0.333,455-220(10),031->Chanhu-daro
+G3-B04,9,Saar,Laursen_G3_Bahrain,055-220-091-001-093-031,6,1,0.2,055-220(6),031->Chanhu-daro|055-220->Lothal
+G3-B05,10,Janabiyah,Laursen_Outlier_Bahrain,220-831-055-121-099-055,6,0,0.0,,
+G3-B06,11,Karzakkan,Laursen_G3_Bahrain,091-032-034,3,2,1.0,091-032(1)|032-034(1),032->Chanhu-daro
+G3-B07,56,Karzakkan,Laursen_G3_Bahrain,740-740,2,1,1.0,740-740(2),
+G3-F01,12,Failaka,Laursen_Outlier_Failaka,090-001-761-890,4,1,0.333,090-001(1),
+G3-F02,13,Failaka,Laursen_Outlier_Failaka,090-604-220-415-061-803-924,7,0,0.0,,
+G3-F03,,Failaka,Lipi_Failaka,716-350-001-090,4,1,0.333,350-001(1),
+G3-M01,16,Ur,Laursen_G3_Mesopotamia,528-220-924-340-093,5,0,0.0,,
+G3-M02,17,Ur,Laursen_G3_Mesopotamia,837-090-145-001-031,5,1,0.25,001-031(6),031->Chanhu-daro
+G3-M03,18,Ur,Laursen_G3_Mesopotamia,090-405,2,1,1.0,090-405(3),405->Harappa
+G3-M05,20,Ur,Laursen_G3_Mesopotamia,093-013-798,3,0,0.0,,
+G3-M06,21,Ur,Laursen_G3_Mesopotamia,415-803-001-328-004-002,6,0,0.0,,
+G3-M07,22,Girsu,Laursen_G3_Mesopotamia,255-013-744-796-740,5,0,0.0,,
+G3-M08,23,Near East (Ur/Babylon),Laursen_G3_Mesopotamia,467-798-001-740-740,5,1,0.25,740-740(2),
+G3-M09,24,Near East (Ur/BM),Laursen_Outlier_Mesopotamia,235-091-604-603,4,0,0.0,,
+G3-M10,25,Mesopotamia?,Laursen_G3_Mesopotamia,095-003-235-001-904-061-003,7,1,0.167,001-904(4),
+G3-M11,26,Mesopotamia? (Yale),Laursen_G3_Mesopotamia,160-384-133-001-090-061,6,0,0.0,,
+G3-M12,27,Mesopotamia? (Yale),Laursen_G3_Mesopotamia,061-725-090-002-340,5,1,0.25,090-002(1),
+G3-I01,14,Susa,Laursen_G2_Iran,090-365-090-407-604-700,6,0,0.0,,
+G3-I02,15,Luristan,Laursen_G2_Iran,091-840-413-831,4,0,0.0,,
+G3-I03,,Susa,Lipi_Iran_Cylinder,924-001-319-031-055-002-150-416,8,2,0.286,031-055(1)|055-002(1),031->Chanhu-daro
+G3-I04,,Jalalabad (Fars),VDF2021_Iran,741-032-090-003-090,5,2,0.5,741-032(9)|032-090(1),032->Chanhu-daro
+G3-I05,,Sistan (McMahon BM),BM_Iran,090-831-091-032,4,1,0.333,091-032(1),032->Chanhu-daro
+G3-I06,28,Western Iran (Ligabue),Laursen_G2_LinearElamite,LE:za-si-ri2,2,0,0.0,,
+G3-U01,,Unknown (Gulf/WA),Lipi_Unknown_Round,190-091-603-000,3,0,0.0,,
+G3-U02,,Unknown (Gulf/WA),Lipi_Unknown_Cyl,032-132-000-055-090,4,0,0.0,,032->Chanhu-daro
+G3-U03,,Unknown (Gulf/WA),Lipi_Unknown_Cyl,000-000-139-145,2,0,0.0,,
+G3-U04,,West Asia (museum),Mahadevan_WA,095-384-091-055,4,0,0.0,,
+G3-U05,,West Asia (museum),Mahadevan_WA,220-220-340,3,0,0.0,,
+G3-H01,1,Chanhu-daro,Laursen_G1_Indus,632-390-400-375-031,5,3,0.75,632-390(1)|390-400(3)|400-375(1),390->Lothal|031->Chanhu-daro
+G3-H02,2,Mohenjo-daro,Laursen_G3_Indus,016-405-001-255-324,5,4,1.0,016-405(2)|405-001(1)|001-255(2)|255-324(1),405->Harappa
+G3-H03,3,Mohenjo-daro,Laursen_G1_Indus,820-060-002-832-140-592-055,7,6,1.0,820-060(23)|060-002(1)|002-832(7)|832-140(1)|140-592(2)|592-055(1),
+G3-H04,4,Mohenjo-daro,Laursen_G1_Indus,140-001-000,2,1,1.0,140-001(3),
+G3-H05,5,Mohenjo-daro,Laursen_G1_Indus,832-256-031,3,1,0.5,832-256(1),031->Chanhu-daro
+G3-H06,,Dholavira,Lipi_Dholavira_Round,000-255-368-001-091-806,5,4,1.0,255-368(1)|368-001(10)|001-091(1)|091-806(1),
+G3-S01,,Kish,Abroad_Square,416-840-060-003-220-590-390-740,8,6,0.857,416-840(5)|060-003(6)|003-220(16)|220-590(9)|590-390(70)|390-740(56),390->Lothal
+G3-S02,,Kish,Abroad_Square,240-643-000,2,1,1.0,240-643(2),
+G3-S03,,Tell Umma,Abroad_Square,127-705-002-004-390,5,3,0.75,705-002(2)|002-004(20)|004-390(22),390->Lothal
+G3-S04,,Tello,Abroad_Square,384-440-390-220-000,4,0,0.0,,390->Lothal
+G3-S05,,Gonur Depe,Abroad_Square,285-002-235-220-125-590-390-740,8,6,0.857,285-002(2)|002-235(36)|235-220(16)|125-590(1)|590-390(70)|390-740(56),390->Lothal
+G3-S06,,Salut,Abroad_Square,595-278-002-004-392,5,1,0.25,002-004(20),595->Harappa
+G3-S07,,West Asia (excav.),Abroad_Square,388-443-390-176-156,5,3,0.75,388-443(3)|390-176(1)|176-156(4),390->Lothal|388-443->Harappa
+G3-S08,,West Asia (excav.),Abroad_Square,350-151-320,3,1,0.5,350-151(1),320->Mohenjo-daro

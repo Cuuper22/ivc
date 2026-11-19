@@ -1,0 +1,186 @@
+{
+  "n_total_seals": 48,
+  "n_abroad_gulf_tested": 30,
+  "n_signs_unblurred": 40,
+  "test1": {
+    "calque_fit": "27/30",
+    "head_man": {
+      "obs": 14,
+      "null": 0.26,
+      "z": 27.33,
+      "p": 0.001
+    },
+    "twin_man": {
+      "obs": 12,
+      "null": 0.07,
+      "z": 44.55,
+      "p": 0.001
+    },
+    "disz_001": {
+      "obs": 9,
+      "null": 1.8,
+      "z": 5.68,
+      "p": 0.001
+    },
+    "stem_edges": {
+      "obs": 53,
+      "null": 52.08,
+      "z": 0.08,
+      "p": 0.4486
+    },
+    "stem_lcc": {
+      "obs": 19,
+      "null": 23.78,
+      "z": -1.43,
+      "p": 0.9301
+    },
+    "recurring_stem_signs": {
+      "055": [
+        "G3-B02",
+        "G3-B04",
+        "G3-B05",
+        "G3-I03",
+        "G3-U02",
+        "G3-U04"
+      ],
+      "220": [
+        "G3-B03",
+        "G3-B04",
+        "G3-B05",
+        "G3-F02",
+        "G3-M01",
+        "G3-U05"
+      ],
+      "061": [
+        "G3-F02",
+        "G3-M10",
+        "G3-M11",
+        "G3-M12"
+      ],
+      "831": [
+        "G3-B05",
+        "G3-I02",
+        "G3-I05"
+      ],
+      "604": [
+        "G3-F02",
+        "G3-M09",
+        "G3-I01"
+      ],
+      "924": [
+        "G3-F02",
+        "G3-M01",
+        "G3-I03"
+      ],
+      "340": [
+        "G3-M01",
+        "G3-M12",
+        "G3-U05"
+      ],
+      "190": [
+        "G3-B02",
+        "G3-U01"
+      ],
+      "160": [
+        "G3-B02",
+        "G3-M11"
+      ],
+      "415": [
+        "G3-F02",
+        "G3-M06"
+      ],
+      "803": [
+        "G3-F02",
+        "G3-M06"
+      ],
+      "145": [
+        "G3-M02",
+        "G3-U03"
+      ],
+      "798": [
+        "G3-M05",
+        "G3-M08"
+      ],
+      "235": [
+        "G3-M09",
+        "G3-M10"
+      ],
+      "603": [
+        "G3-M09",
+        "G3-U01"
+      ],
+      "384": [
+        "G3-M11",
+        "G3-U04"
+      ]
+    }
+  },
+  "test4": {
+    "cosmo_seals": {
+      "obs": 15,
+      "null": 0.83,
+      "z": 15.99,
+      "p": 0.0005
+    },
+    "man_plus_cosmo": {
+      "obs": 17,
+      "null": 0.41,
+      "z": 26.31,
+      "p": 0.0005
+    }
+  },
+  "acrophony_top": [
+    {
+      "language": "Elamite (Hinz-Koch)",
+      "n_tested": 8,
+      "core_hits": 5,
+      "core_null": 2.74,
+      "core_z": 1.65,
+      "core_p": 0.1004,
+      "all_hits": 8,
+      "all_null": 5.4,
+      "all_z": 2.05,
+      "all_p": 0.033,
+      "core_examples": "G3-F01(761-890->kn=Ku-Nanna); G3-F03(716-350->lh=Aliahhi); G3-M02(837-145->mr=Amurru); G3-M08(467-798->nl=Lu-Enlilla (stem)); G3-M10(235-904->nk=Lu-Enki (stem))"
+    },
+    {
+      "language": "Indo-Aryan OIA (Turner)",
+      "n_tested": 22,
+      "core_hits": 5,
+      "core_null": 4.93,
+      "core_z": 0.03,
+      "core_p": 0.5342,
+      "all_hits": 12,
+      "all_null": 12.75,
+      "all_z": -0.29,
+      "all_p": 0.6792,
+      "core_examples": "G3-B02(160-055-190->smr=Samar); G3-M01(528-220-924-340->rm=Rimum); G3-M02(837-145->nk=Lu-Enki (stem)); G3-M07(255-744-796->mkn=Makkan); G3-U05(220-220-340->mr=Amurru)"
+    },
+    {
+      "language": "Dravidian Tamil (DEDR)",
+      "n_tested": 22,
+      "core_hits": 8,
+      "core_null": 9.04,
+      "core_z": -0.36,
+      "core_p": 0.6877,
+      "all_hits": 13,
+      "all_null": 12.96,
+      "all_z": 0.01,
+      "all_p": 0.5807,
+      "core_examples": "G3-B02(160-055-190->mkn=Makkan); G3-B04(055-220->nk=Lu-Enki (stem)); G3-B05(220-831-055->kn=Ku-Nanna); G3-F03(716-350->nk=Lu-Enki (stem)); G3-M08(467-798->kn=Ku-Nanna); G3-M12(725-340->mr=Amurru)"
+    },
+    {
+      "language": "Burushaski (Lorimer)",
+      "n_tested": 18,
+      "core_hits": 4,
+      "core_null": 4.87,
+      "core_z": -0.43,
+      "core_p": 0.7371,
+      "all_hits": 12,
+      "all_null": 12.07,
+      "all_z": -0.03,
+      "all_p": 0.6327,
+      "core_examples": "G3-B05(220-831-055->glm=Ur-Igalim (stem)); G3-F01(761-890->rb=Ur-Baba); G3-F03(716-350->lh=Aliahhi); G3-M02(837-145->lm=Ur-Lamma (stem))"
+    }
+  ]
+}
