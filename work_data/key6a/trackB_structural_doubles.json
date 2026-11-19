@@ -1,0 +1,403 @@
+{
+  "n_shuf": 5000,
+  "allograph_5000shuf_tests": {
+    "503_495": {
+      "label": "503 *malai vs 495 (M205)",
+      "base": "503",
+      "cand": "495",
+      "n_base": 79,
+      "n_cand": 21,
+      "cosL": 0.9642,
+      "cosR": 0.7863,
+      "cosMean": 0.8753,
+      "cosMean_rank": "1/169",
+      "cosMean_z": 2.918,
+      "cosMean_p_5000": 0.0002,
+      "exact_frame_swaps": 8,
+      "swaps_rank": "1/169",
+      "swaps_null_mean": 0.67,
+      "swaps_z": 7.459,
+      "swaps_p_5000": 0.0002,
+      "sample_swaps": [
+        "002-[X]-460",
+        "002-[X]-615",
+        "240-[X]-070",
+        "BOS-[X]-017",
+        "BOS-[X]-033",
+        "BOS-[X]-460",
+        "BOS-[X]-463",
+        "BOS-[X]-615"
+      ]
+    },
+    "550_555": {
+      "label": "550 *nāṭu vs 555 (M222)",
+      "base": "550",
+      "cand": "555",
+      "n_base": 97,
+      "n_cand": 20,
+      "cosL": 0.2868,
+      "cosR": 0.5648,
+      "cosMean": 0.4258,
+      "cosMean_rank": "86/169",
+      "cosMean_z": 0.329,
+      "cosMean_p_5000": 0.4939,
+      "exact_frame_swaps": 9,
+      "swaps_rank": "1/169",
+      "swaps_null_mean": 1.6572,
+      "swaps_z": 5.023,
+      "swaps_p_5000": 0.0002,
+      "sample_swaps": [
+        "002-[X]-527",
+        "033-[X]-527",
+        "060-[X]-526",
+        "233-[X]-527",
+        "233-[X]-EOS",
+        "235-[X]-527",
+        "240-[X]-527",
+        "740-[X]-527"
+      ]
+    },
+    "550_554": {
+      "label": "550 *nāṭu vs 554 (M226)",
+      "base": "550",
+      "cand": "554",
+      "n_base": 97,
+      "n_cand": 11,
+      "cosL": 0.7658,
+      "cosR": 0.4936,
+      "cosMean": 0.6297,
+      "cosMean_rank": "4/169",
+      "cosMean_z": 1.529,
+      "cosMean_p_5000": 0.0162,
+      "exact_frame_swaps": 3,
+      "swaps_rank": "24/169",
+      "swaps_null_mean": 1.7112,
+      "swaps_z": 0.809,
+      "swaps_p_5000": 0.24695,
+      "sample_swaps": [
+        "BOS-[X]-525",
+        "BOS-[X]-527",
+        "BOS-[X]-740"
+      ]
+    },
+    "061_063": {
+      "label": "061 *kāl vs 063 (M343)",
+      "base": "061",
+      "cand": "063",
+      "n_base": 82,
+      "n_cand": 10,
+      "cosL": 0.3746,
+      "cosR": 0.438,
+      "cosMean": 0.4063,
+      "cosMean_rank": "36/169",
+      "cosMean_z": 0.705,
+      "cosMean_p_5000": 0.21076,
+      "exact_frame_swaps": 2,
+      "swaps_rank": "20/169",
+      "swaps_null_mean": 0.9158,
+      "swaps_z": 0.9,
+      "swaps_p_5000": 0.24615,
+      "sample_swaps": [
+        "740-[X]-407",
+        "845-[X]-407"
+      ]
+    },
+    "861_824": {
+      "label": "861 *kāṇam vs 824 (M284)",
+      "base": "861",
+      "cand": "824",
+      "n_base": 254,
+      "n_cand": 25,
+      "cosL": 0.5694,
+      "cosR": 0.5654,
+      "cosMean": 0.5674,
+      "cosMean_rank": "16/169",
+      "cosMean_z": 1.015,
+      "cosMean_p_5000": 0.08878,
+      "exact_frame_swaps": 3,
+      "swaps_rank": "29/169",
+      "swaps_null_mean": 1.8886,
+      "swaps_z": 0.673,
+      "swaps_p_5000": 0.30114,
+      "sample_swaps": [
+        "892-[X]-EOS",
+        "BOS-[X]-002",
+        "BOS-[X]-368"
+      ]
+    },
+    "384_388": {
+      "label": "384 vs 388 pipal pair",
+      "base": "384",
+      "cand": "388",
+      "n_base": 38,
+      "n_cand": 44,
+      "cosL": 0.859,
+      "cosR": 0.8096,
+      "cosMean": 0.8343,
+      "cosMean_rank": "4/169",
+      "cosMean_z": 1.995,
+      "cosMean_p_5000": 0.0152,
+      "exact_frame_swaps": 4,
+      "swaps_rank": "6/169",
+      "swaps_null_mean": 1.2702,
+      "swaps_z": 2.012,
+      "swaps_p_5000": 0.07479,
+      "sample_swaps": [
+        "002-[X]-740",
+        "031-[X]-740",
+        "033-[X]-740",
+        "BOS-[X]-740"
+      ]
+    },
+    "527_526": {
+      "label": "527 vs 526 (M254)",
+      "base": "527",
+      "cand": "526",
+      "n_base": 50,
+      "n_cand": 13,
+      "cosL": 0.9539,
+      "cosR": 0.9979,
+      "cosMean": 0.9759,
+      "cosMean_rank": "1/169",
+      "cosMean_z": 4.267,
+      "cosMean_p_5000": 0.0002,
+      "exact_frame_swaps": 4,
+      "swaps_rank": "2/169",
+      "swaps_null_mean": 0.3944,
+      "swaps_z": 5.313,
+      "swaps_p_5000": 0.0054,
+      "sample_swaps": [
+        "388-[X]-EOS",
+        "550-[X]-EOS",
+        "554-[X]-EOS",
+        "555-[X]-EOS"
+      ]
+    }
+  },
+  "inverse_cage_175_to_176": {
+    "base": "175",
+    "caged_locked": "176",
+    "cosL": 0.9095,
+    "cosR": 0.1955,
+    "cL_minus_cR": 0.7141,
+    "dF400": 0.6635,
+    "composite_score": 2.2871,
+    "null_mean": 0.5416,
+    "z_5000": 2.054,
+    "p_score_5000": 0.0048,
+    "p_joint_5000": 0.0024,
+    "benchmarks": [
+      {
+        "pair": "220->226",
+        "cosL": 0.76,
+        "cosR": 0.517,
+        "cL_minus_cR": 0.243,
+        "dF400": 0.563
+      },
+      {
+        "pair": "235->236",
+        "cosL": 0.756,
+        "cosR": 0.118,
+        "cL_minus_cR": 0.639,
+        "dF400": 0.535
+      },
+      {
+        "pair": "240->241",
+        "cosL": 0.331,
+        "cosR": 0.077,
+        "cL_minus_cR": 0.253,
+        "dF400": 0.839
+      },
+      {
+        "pair": "590->592",
+        "cosL": 0.71,
+        "cosR": 0.217,
+        "cL_minus_cR": 0.493,
+        "dF400": 0.341
+      },
+      {
+        "pair": "803->804",
+        "cosL": 0.353,
+        "cosR": 0.0,
+        "cL_minus_cR": 0.353,
+        "dF400": 0.838
+      },
+      {
+        "pair": "175->176",
+        "cosL": 0.91,
+        "cosR": 0.195,
+        "cL_minus_cR": 0.714,
+        "dF400": 0.663
+      }
+    ]
+  },
+  "metrology_and_binding_fisher": {
+    "171_bef_tall_3_5": {
+      "label": "171 before tall {5,3} (035/032/033)",
+      "obs_hits": 20,
+      "obs_total": 21,
+      "obs_pct": 95.24,
+      "bg_hits": 506,
+      "bg_total": 11019,
+      "bg_pct": 4.59,
+      "odds_ratio": 415.53,
+      "fisher_p": 5.149465905124538e-26
+    },
+    "480_bef_numerals": {
+      "label": "480 before numerals {1,2,3}",
+      "obs_hits": 19,
+      "obs_total": 23,
+      "obs_pct": 82.61,
+      "bg_hits": 652,
+      "bg_total": 11017,
+      "bg_pct": 5.92,
+      "odds_ratio": 75.51,
+      "fisher_p": 4.295884404441632e-20
+    },
+    "335_bef_711_vallam": {
+      "label": "335 before 711 (*vaḷḷam 4-cup)",
+      "obs_hits": 13,
+      "obs_total": 28,
+      "obs_pct": 46.43,
+      "bg_hits": 0,
+      "bg_total": 11012,
+      "bg_pct": 0.0,
+      "odds_ratio": 999.0,
+      "fisher_p": 6.488029273452755e-36
+    },
+    "575_kottai_bef_335": {
+      "label": "575 (*kōṭṭai 72-cup) before 335",
+      "obs_hits": 16,
+      "obs_total": 60,
+      "obs_pct": 26.67,
+      "bg_hits": 12,
+      "bg_total": 10980,
+      "bg_pct": 0.11,
+      "odds_ratio": 332.36,
+      "fisher_p": 1.889537474558402e-30
+    },
+    "595_bef_001_002": {
+      "label": "595 (hatched 590) before {001,002}",
+      "obs_hits": 19,
+      "obs_total": 38,
+      "obs_pct": 50.0,
+      "bg_hits": 831,
+      "bg_total": 11002,
+      "bg_pct": 7.55,
+      "odds_ratio": 12.24,
+      "fisher_p": 4.976767570929974e-12
+    },
+    "590_bef_001_002_baseline": {
+      "label": "590 (unhatched base) before {001,002}",
+      "obs_hits": 1,
+      "obs_total": 177,
+      "obs_pct": 0.56,
+      "bg_hits": 849,
+      "bg_total": 10863,
+      "bg_pct": 7.82,
+      "odds_ratio": 0.07,
+      "fisher_p": 0.9999993839676441
+    },
+    "503_495_bef_460_kanni": {
+      "label": "503/495 (*mālai) before 460 (*kaṇṇi)",
+      "obs_hits": 11,
+      "obs_total": 99,
+      "obs_pct": 11.11,
+      "bg_hits": 24,
+      "bg_total": 10941,
+      "bg_pct": 0.22,
+      "odds_ratio": 56.86,
+      "fisher_p": 5.957075949914105e-15
+    },
+    "240_235_bef_482_ko": {
+      "label": "240/235 (*mīṉ) before 482 (*kō)",
+      "obs_hits": 19,
+      "obs_total": 497,
+      "obs_pct": 3.82,
+      "bg_hits": 14,
+      "bg_total": 10543,
+      "bg_pct": 0.13,
+      "odds_ratio": 29.89,
+      "fisher_p": 8.456089328538762e-18
+    },
+    "482_ko_bef_740_752": {
+      "label": "482 (*kō) before 740/752 (*kuṭi)",
+      "obs_hits": 31,
+      "obs_total": 33,
+      "obs_pct": 93.94,
+      "bg_hits": 1491,
+      "bg_total": 11007,
+      "bg_pct": 13.55,
+      "odds_ratio": 98.93,
+      "fisher_p": 6.427124970063332e-25
+    },
+    "142_bef_615_617_accu": {
+      "label": "142 (*kōl) before 615/617 (*accu)",
+      "obs_hits": 46,
+      "obs_total": 76,
+      "obs_pct": 60.53,
+      "bg_hits": 163,
+      "bg_total": 10964,
+      "bg_pct": 1.49,
+      "odds_ratio": 101.6,
+      "fisher_p": 2.4271376699313032e-61
+    },
+    "555_bef_527_526": {
+      "label": "555 (*nāṭu var) before 527/526",
+      "obs_hits": 19,
+      "obs_total": 19,
+      "obs_pct": 100.0,
+      "bg_hits": 42,
+      "bg_total": 11021,
+      "bg_pct": 0.38,
+      "odds_ratio": 999.0,
+      "fisher_p": 5.599441079740275e-45
+    },
+    "900_bef_165_kun": {
+      "label": "900 (*tiṅkaḷ) before 165 (*kūṉ)",
+      "obs_hits": 8,
+      "obs_total": 92,
+      "obs_pct": 8.7,
+      "bg_hits": 7,
+      "bg_total": 10948,
+      "bg_pct": 0.06,
+      "odds_ratio": 148.86,
+      "fisher_p": 1.0462447813650758e-13
+    },
+    "104_bef_645": {
+      "label": "104 (*taṇṭu) before 645 (weight)",
+      "obs_hits": 7,
+      "obs_total": 19,
+      "obs_pct": 36.84,
+      "bg_hits": 15,
+      "bg_total": 11021,
+      "bg_pct": 0.14,
+      "odds_ratio": 428.01,
+      "fisher_p": 2.140086612897761e-15
+    }
+  },
+  "hatching_590_to_595_proof": {
+    "num001_002_vs_590_or": 176.0,
+    "num001_002_vs_590_p": 8.549469137704527e-16,
+    "lipi_ctab": {
+      "base": "4/217",
+      "comp": "6/47",
+      "or": 7.79,
+      "p": 0.002827067027347957
+    },
+    "new_ctab": {
+      "base": "0/42",
+      "comp": "9/25",
+      "or": 999.0,
+      "p": 4.7780278871461364e-05
+    }
+  },
+  "catalog_double_scan_hits": [
+    {
+      "target": "142",
+      "best_new_pair": "832-832",
+      "exact_full_texts": 2,
+      "shared_frames": 2
+    }
+  ]
+}
