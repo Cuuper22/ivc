@@ -1,0 +1,1240 @@
+{
+  "lexicon": {
+    "hinz_koch_raw": 2460,
+    "hinz_koch_clean": 2097,
+    "hinz_koch_dropped": {
+      "too_short": 129,
+      "german_stop": 16,
+      "ocr_garbage": 51,
+      "no_hyphen_ocr": 43,
+      "bad_syllable_struct": 15
+    },
+    "lex_a_count": 117,
+    "lex_b_count": 2192
+  },
+  "test_c1": {
+    "n_mapped_full": 41,
+    "n_mapped_strict": 36,
+    "n_graphic_universal": 16,
+    "n_specific_compound": 25,
+    "iran_seals_decoded_RL": [
+      {
+        "uid": "G3-I01",
+        "site": "Susa",
+        "seq": "090-365-090-407-604-700",
+        "mapped_n": 6,
+        "total_n": 6,
+        "translit": "š-te-š-š-ri-ku",
+        "spans": [
+          "šteššriku"
+        ],
+        "matches": []
+      },
+      {
+        "uid": "G3-I02",
+        "site": "Luristan",
+        "seq": "091-840-413-831",
+        "mapped_n": 4,
+        "total_n": 4,
+        "translit": "šš-pu-ru-ke",
+        "spans": [
+          "ššpuruke"
+        ],
+        "matches": []
+      },
+      {
+        "uid": "G3-I03",
+        "site": "Susa",
+        "seq": "924-001-319-031-055-002-150-416",
+        "mapped_n": 6,
+        "total_n": 8,
+        "translit": "sa | ši-u-?-zu-?-ni",
+        "spans": [
+          "šiu"
+        ],
+        "matches": []
+      },
+      {
+        "uid": "G3-I04",
+        "site": "Jalalabad (Fars)",
+        "seq": "741-032-090-003-090",
+        "mapped_n": 5,
+        "total_n": 5,
+        "translit": "mu-zu-š-ša-š",
+        "spans": [
+          "muzuššaš"
+        ],
+        "matches": []
+      },
+      {
+        "uid": "G3-I05",
+        "site": "Sistan (McMahon BM)",
+        "seq": "090-831-091-032",
+        "mapped_n": 4,
+        "total_n": 4,
+        "translit": "š-ke-šš-zu",
+        "spans": [
+          "škeššzu"
+        ],
+        "matches": []
+      }
+    ],
+    "iran_seals_decoded_LR": [
+      {
+        "uid": "G3-I01",
+        "site": "Susa",
+        "seq": "090-365-090-407-604-700",
+        "mapped_n": 6,
+        "total_n": 6,
+        "translit": "ku-ri-š-š-te-š",
+        "spans": [
+          "kuriššteš"
+        ],
+        "matches": []
+      },
+      {
+        "uid": "G3-I02",
+        "site": "Luristan",
+        "seq": "091-840-413-831",
+        "mapped_n": 4,
+        "total_n": 4,
+        "translit": "ke-ru-pu-šš",
+        "spans": [
+          "kerupušš"
+        ],
+        "matches": []
+      },
+      {
+        "uid": "G3-I03",
+        "site": "Susa",
+        "seq": "924-001-319-031-055-002-150-416",
+        "mapped_n": 6,
+        "total_n": 8,
+        "translit": "ni-?-zu-?-u-ši | sa",
+        "spans": [
+          "uši"
+        ],
+        "matches": []
+      },
+      {
+        "uid": "G3-I04",
+        "site": "Jalalabad (Fars)",
+        "seq": "741-032-090-003-090",
+        "mapped_n": 5,
+        "total_n": 5,
+        "translit": "š-ša-š-zu-mu",
+        "spans": [
+          "ššašzumu"
+        ],
+        "matches": []
+      },
+      {
+        "uid": "G3-I05",
+        "site": "Sistan (McMahon BM)",
+        "seq": "090-831-091-032",
+        "mapped_n": 4,
+        "total_n": 4,
+        "translit": "zu-šš-ke-š",
+        "spans": [
+          "zušškeš"
+        ],
+        "matches": []
+      }
+    ],
+    "shuffle_results": [
+      {
+        "map": "strict_26",
+        "dataset": "Iran_5",
+        "n_items": 5,
+        "dir": "RL",
+        "metrics": {
+          "A_exact": {
+            "obs": 0,
+            "null1_mean": 0.016,
+            "null1_sd": 0.129,
+            "null1_z": -0.13,
+            "null1_p": 1.0,
+            "null2_mean": 0.015,
+            "null2_sd": 0.121,
+            "null2_z": -0.12,
+            "null2_p": 1.0
+          },
+          "A_near_ed1": {
+            "obs": 0,
+            "null1_mean": 0.348,
+            "null1_sd": 0.534,
+            "null1_z": -0.65,
+            "null1_p": 1.0,
+            "null2_mean": 0.258,
+            "null2_sd": 0.475,
+            "null2_z": -0.54,
+            "null2_p": 1.0
+          },
+          "A_skel": {
+            "obs": 0,
+            "null1_mean": 0.455,
+            "null1_sd": 0.6,
+            "null1_z": -0.76,
+            "null1_p": 1.0,
+            "null2_mean": 0.361,
+            "null2_sd": 0.549,
+            "null2_z": -0.66,
+            "null2_p": 1.0
+          },
+          "B_exact": {
+            "obs": 0,
+            "null1_mean": 0.076,
+            "null1_sd": 0.27,
+            "null1_z": -0.28,
+            "null1_p": 1.0,
+            "null2_mean": 0.078,
+            "null2_sd": 0.27,
+            "null2_z": -0.29,
+            "null2_p": 1.0
+          },
+          "B_skel": {
+            "obs": 2,
+            "null1_mean": 1.327,
+            "null1_sd": 0.845,
+            "null1_z": 0.8,
+            "null1_p": 0.4133,
+            "null2_mean": 1.293,
+            "null2_sd": 0.845,
+            "null2_z": 0.84,
+            "null2_p": 0.3979
+          }
+        }
+      },
+      {
+        "map": "strict_26",
+        "dataset": "Iran_5",
+        "n_items": 5,
+        "dir": "LR",
+        "metrics": {
+          "A_exact": {
+            "obs": 0,
+            "null1_mean": 0.011,
+            "null1_sd": 0.106,
+            "null1_z": -0.11,
+            "null1_p": 1.0,
+            "null2_mean": 0.014,
+            "null2_sd": 0.117,
+            "null2_z": -0.12,
+            "null2_p": 1.0
+          },
+          "A_near_ed1": {
+            "obs": 1,
+            "null1_mean": 0.329,
+            "null1_sd": 0.52,
+            "null1_z": 1.29,
+            "null1_p": 0.3057,
+            "null2_mean": 0.269,
+            "null2_sd": 0.483,
+            "null2_z": 1.51,
+            "null2_p": 0.2509
+          },
+          "A_skel": {
+            "obs": 0,
+            "null1_mean": 0.45,
+            "null1_sd": 0.597,
+            "null1_z": -0.75,
+            "null1_p": 1.0,
+            "null2_mean": 0.369,
+            "null2_sd": 0.548,
+            "null2_z": -0.67,
+            "null2_p": 1.0
+          },
+          "B_exact": {
+            "obs": 0,
+            "null1_mean": 0.078,
+            "null1_sd": 0.273,
+            "null1_z": -0.28,
+            "null1_p": 1.0,
+            "null2_mean": 0.071,
+            "null2_sd": 0.261,
+            "null2_z": -0.27,
+            "null2_p": 1.0
+          },
+          "B_skel": {
+            "obs": 2,
+            "null1_mean": 1.321,
+            "null1_sd": 0.838,
+            "null1_z": 0.81,
+            "null1_p": 0.4137,
+            "null2_mean": 1.308,
+            "null2_sd": 0.848,
+            "null2_z": 0.82,
+            "null2_p": 0.4059
+          }
+        }
+      },
+      {
+        "map": "strict_26",
+        "dataset": "Gulf_Mesop_28",
+        "n_items": 28,
+        "dir": "RL",
+        "metrics": {
+          "A_exact": {
+            "obs": 0,
+            "null1_mean": 0.007,
+            "null1_sd": 0.083,
+            "null1_z": -0.08,
+            "null1_p": 1.0,
+            "null2_mean": 0.013,
+            "null2_sd": 0.112,
+            "null2_z": -0.11,
+            "null2_p": 1.0
+          },
+          "A_near_ed1": {
+            "obs": 0,
+            "null1_mean": 0.229,
+            "null1_sd": 0.42,
+            "null1_z": -0.55,
+            "null1_p": 1.0,
+            "null2_mean": 0.181,
+            "null2_sd": 0.385,
+            "null2_z": -0.47,
+            "null2_p": 1.0
+          },
+          "A_skel": {
+            "obs": 0,
+            "null1_mean": 0.258,
+            "null1_sd": 0.437,
+            "null1_z": -0.59,
+            "null1_p": 1.0,
+            "null2_mean": 0.22,
+            "null2_sd": 0.414,
+            "null2_z": -0.53,
+            "null2_p": 1.0
+          },
+          "B_exact": {
+            "obs": 0,
+            "null1_mean": 0.051,
+            "null1_sd": 0.22,
+            "null1_z": -0.23,
+            "null1_p": 1.0,
+            "null2_mean": 0.06,
+            "null2_sd": 0.238,
+            "null2_z": -0.25,
+            "null2_p": 1.0
+          },
+          "B_skel": {
+            "obs": 0,
+            "null1_mean": 0.534,
+            "null1_sd": 0.499,
+            "null1_z": -1.07,
+            "null1_p": 1.0,
+            "null2_mean": 0.554,
+            "null2_sd": 0.497,
+            "null2_z": -1.11,
+            "null2_p": 1.0
+          }
+        }
+      },
+      {
+        "map": "strict_26",
+        "dataset": "Gulf_Mesop_28",
+        "n_items": 28,
+        "dir": "LR",
+        "metrics": {
+          "A_exact": {
+            "obs": 0,
+            "null1_mean": 0.007,
+            "null1_sd": 0.082,
+            "null1_z": -0.08,
+            "null1_p": 1.0,
+            "null2_mean": 0.011,
+            "null2_sd": 0.104,
+            "null2_z": -0.11,
+            "null2_p": 1.0
+          },
+          "A_near_ed1": {
+            "obs": 0,
+            "null1_mean": 0.226,
+            "null1_sd": 0.419,
+            "null1_z": -0.54,
+            "null1_p": 1.0,
+            "null2_mean": 0.187,
+            "null2_sd": 0.39,
+            "null2_z": -0.48,
+            "null2_p": 1.0
+          },
+          "A_skel": {
+            "obs": 0,
+            "null1_mean": 0.258,
+            "null1_sd": 0.437,
+            "null1_z": -0.59,
+            "null1_p": 1.0,
+            "null2_mean": 0.23,
+            "null2_sd": 0.421,
+            "null2_z": -0.55,
+            "null2_p": 1.0
+          },
+          "B_exact": {
+            "obs": 0,
+            "null1_mean": 0.054,
+            "null1_sd": 0.226,
+            "null1_z": -0.24,
+            "null1_p": 1.0,
+            "null2_mean": 0.06,
+            "null2_sd": 0.237,
+            "null2_z": -0.25,
+            "null2_p": 1.0
+          },
+          "B_skel": {
+            "obs": 0,
+            "null1_mean": 0.543,
+            "null1_sd": 0.498,
+            "null1_z": -1.09,
+            "null1_p": 1.0,
+            "null2_mean": 0.567,
+            "null2_sd": 0.496,
+            "null2_z": -1.14,
+            "null2_p": 1.0
+          }
+        }
+      },
+      {
+        "map": "strict_26",
+        "dataset": "Mainland_Top50",
+        "n_items": 50,
+        "dir": "RL",
+        "metrics": {
+          "A_exact": {
+            "obs": 1,
+            "null1_mean": 0.216,
+            "null1_sd": 0.621,
+            "null1_z": 1.26,
+            "null1_p": 0.1536,
+            "null2_mean": 0.305,
+            "null2_sd": 0.798,
+            "null2_z": 0.87,
+            "null2_p": 0.1944
+          },
+          "A_near_ed1": {
+            "obs": 5,
+            "null1_mean": 6.063,
+            "null1_sd": 3.558,
+            "null1_z": -0.3,
+            "null1_p": 0.6099,
+            "null2_mean": 4.908,
+            "null2_sd": 3.413,
+            "null2_z": 0.03,
+            "null2_p": 0.4643
+          },
+          "A_skel": {
+            "obs": 5,
+            "null1_mean": 6.936,
+            "null1_sd": 3.438,
+            "null1_z": -0.56,
+            "null1_p": 0.7381,
+            "null2_mean": 6.199,
+            "null2_sd": 3.496,
+            "null2_z": -0.34,
+            "null2_p": 0.6389
+          },
+          "B_exact": {
+            "obs": 4,
+            "null1_mean": 1.364,
+            "null1_sd": 1.638,
+            "null1_z": 1.61,
+            "null1_p": 0.0972,
+            "null2_mean": 1.598,
+            "null2_sd": 1.831,
+            "null2_z": 1.31,
+            "null2_p": 0.136
+          },
+          "B_skel": {
+            "obs": 21,
+            "null1_mean": 15.303,
+            "null1_sd": 4.635,
+            "null1_z": 1.23,
+            "null1_p": 0.1496,
+            "null2_mean": 15.879,
+            "null2_sd": 4.897,
+            "null2_z": 1.05,
+            "null2_p": 0.1936
+          }
+        }
+      },
+      {
+        "map": "strict_26",
+        "dataset": "Mainland_Top50",
+        "n_items": 50,
+        "dir": "LR",
+        "metrics": {
+          "A_exact": {
+            "obs": 0,
+            "null1_mean": 0.212,
+            "null1_sd": 0.616,
+            "null1_z": -0.34,
+            "null1_p": 1.0,
+            "null2_mean": 0.304,
+            "null2_sd": 0.749,
+            "null2_z": -0.41,
+            "null2_p": 1.0
+          },
+          "A_near_ed1": {
+            "obs": 13,
+            "null1_mean": 6.127,
+            "null1_sd": 3.521,
+            "null1_z": 1.95,
+            "null1_p": 0.062,
+            "null2_mean": 4.937,
+            "null2_sd": 3.409,
+            "null2_z": 2.37,
+            "null2_p": 0.0356
+          },
+          "A_skel": {
+            "obs": 4,
+            "null1_mean": 6.97,
+            "null1_sd": 3.413,
+            "null1_z": -0.87,
+            "null1_p": 0.8506,
+            "null2_mean": 6.246,
+            "null2_sd": 3.48,
+            "null2_z": -0.65,
+            "null2_p": 0.7714
+          },
+          "B_exact": {
+            "obs": 3,
+            "null1_mean": 1.408,
+            "null1_sd": 1.638,
+            "null1_z": 0.97,
+            "null1_p": 0.1812,
+            "null2_mean": 1.548,
+            "null2_sd": 1.752,
+            "null2_z": 0.83,
+            "null2_p": 0.2126
+          },
+          "B_skel": {
+            "obs": 19,
+            "null1_mean": 15.3,
+            "null1_sd": 4.543,
+            "null1_z": 0.81,
+            "null1_p": 0.2697,
+            "null2_mean": 15.793,
+            "null2_sd": 4.861,
+            "null2_z": 0.66,
+            "null2_p": 0.3253
+          }
+        }
+      },
+      {
+        "map": "full_30",
+        "dataset": "Iran_5",
+        "n_items": 5,
+        "dir": "RL",
+        "metrics": {
+          "A_exact": {
+            "obs": 0,
+            "null1_mean": 0.009,
+            "null1_sd": 0.092,
+            "null1_z": -0.09,
+            "null1_p": 1.0,
+            "null2_mean": 0.01,
+            "null2_sd": 0.099,
+            "null2_z": -0.1,
+            "null2_p": 1.0
+          },
+          "A_near_ed1": {
+            "obs": 0,
+            "null1_mean": 0.244,
+            "null1_sd": 0.441,
+            "null1_z": -0.55,
+            "null1_p": 1.0,
+            "null2_mean": 0.196,
+            "null2_sd": 0.399,
+            "null2_z": -0.49,
+            "null2_p": 1.0
+          },
+          "A_skel": {
+            "obs": 0,
+            "null1_mean": 0.311,
+            "null1_sd": 0.489,
+            "null1_z": -0.64,
+            "null1_p": 1.0,
+            "null2_mean": 0.264,
+            "null2_sd": 0.459,
+            "null2_z": -0.58,
+            "null2_p": 1.0
+          },
+          "B_exact": {
+            "obs": 0,
+            "null1_mean": 0.055,
+            "null1_sd": 0.228,
+            "null1_z": -0.24,
+            "null1_p": 1.0,
+            "null2_mean": 0.064,
+            "null2_sd": 0.244,
+            "null2_z": -0.26,
+            "null2_p": 1.0
+          },
+          "B_skel": {
+            "obs": 0,
+            "null1_mean": 0.854,
+            "null1_sd": 0.736,
+            "null1_z": -1.16,
+            "null1_p": 1.0,
+            "null2_mean": 0.838,
+            "null2_sd": 0.716,
+            "null2_z": -1.17,
+            "null2_p": 1.0
+          }
+        }
+      },
+      {
+        "map": "full_30",
+        "dataset": "Iran_5",
+        "n_items": 5,
+        "dir": "LR",
+        "metrics": {
+          "A_exact": {
+            "obs": 0,
+            "null1_mean": 0.008,
+            "null1_sd": 0.091,
+            "null1_z": -0.09,
+            "null1_p": 1.0,
+            "null2_mean": 0.013,
+            "null2_sd": 0.113,
+            "null2_z": -0.11,
+            "null2_p": 1.0
+          },
+          "A_near_ed1": {
+            "obs": 0,
+            "null1_mean": 0.234,
+            "null1_sd": 0.435,
+            "null1_z": -0.54,
+            "null1_p": 1.0,
+            "null2_mean": 0.19,
+            "null2_sd": 0.398,
+            "null2_z": -0.48,
+            "null2_p": 1.0
+          },
+          "A_skel": {
+            "obs": 0,
+            "null1_mean": 0.297,
+            "null1_sd": 0.484,
+            "null1_z": -0.61,
+            "null1_p": 1.0,
+            "null2_mean": 0.273,
+            "null2_sd": 0.465,
+            "null2_z": -0.59,
+            "null2_p": 1.0
+          },
+          "B_exact": {
+            "obs": 0,
+            "null1_mean": 0.049,
+            "null1_sd": 0.215,
+            "null1_z": -0.23,
+            "null1_p": 1.0,
+            "null2_mean": 0.06,
+            "null2_sd": 0.238,
+            "null2_z": -0.25,
+            "null2_p": 1.0
+          },
+          "B_skel": {
+            "obs": 0,
+            "null1_mean": 0.819,
+            "null1_sd": 0.72,
+            "null1_z": -1.14,
+            "null1_p": 1.0,
+            "null2_mean": 0.824,
+            "null2_sd": 0.701,
+            "null2_z": -1.17,
+            "null2_p": 1.0
+          }
+        }
+      },
+      {
+        "map": "full_30",
+        "dataset": "Gulf_Mesop_28",
+        "n_items": 28,
+        "dir": "RL",
+        "metrics": {
+          "A_exact": {
+            "obs": 0,
+            "null1_mean": 0.281,
+            "null1_sd": 0.627,
+            "null1_z": -0.45,
+            "null1_p": 1.0,
+            "null2_mean": 0.315,
+            "null2_sd": 0.673,
+            "null2_z": -0.47,
+            "null2_p": 1.0
+          },
+          "A_near_ed1": {
+            "obs": 1,
+            "null1_mean": 2.325,
+            "null1_sd": 1.616,
+            "null1_z": -0.82,
+            "null1_p": 0.8644,
+            "null2_mean": 2.192,
+            "null2_sd": 1.619,
+            "null2_z": -0.74,
+            "null2_p": 0.8398
+          },
+          "A_skel": {
+            "obs": 1,
+            "null1_mean": 2.903,
+            "null1_sd": 1.8,
+            "null1_z": -1.06,
+            "null1_p": 0.9176,
+            "null2_mean": 2.546,
+            "null2_sd": 1.742,
+            "null2_z": -0.89,
+            "null2_p": 0.8858
+          },
+          "B_exact": {
+            "obs": 1,
+            "null1_mean": 0.645,
+            "null1_sd": 0.91,
+            "null1_z": 0.39,
+            "null1_p": 0.4109,
+            "null2_mean": 0.943,
+            "null2_sd": 1.109,
+            "null2_z": 0.05,
+            "null2_p": 0.5269
+          },
+          "B_skel": {
+            "obs": 5,
+            "null1_mean": 6.527,
+            "null1_sd": 2.182,
+            "null1_z": -0.7,
+            "null1_p": 0.8218,
+            "null2_mean": 6.557,
+            "null2_sd": 2.281,
+            "null2_z": -0.68,
+            "null2_p": 0.815
+          }
+        }
+      },
+      {
+        "map": "full_30",
+        "dataset": "Gulf_Mesop_28",
+        "n_items": 28,
+        "dir": "LR",
+        "metrics": {
+          "A_exact": {
+            "obs": 0,
+            "null1_mean": 0.269,
+            "null1_sd": 0.618,
+            "null1_z": -0.43,
+            "null1_p": 1.0,
+            "null2_mean": 0.317,
+            "null2_sd": 0.679,
+            "null2_z": -0.47,
+            "null2_p": 1.0
+          },
+          "A_near_ed1": {
+            "obs": 1,
+            "null1_mean": 2.342,
+            "null1_sd": 1.621,
+            "null1_z": -0.83,
+            "null1_p": 0.8634,
+            "null2_mean": 2.206,
+            "null2_sd": 1.684,
+            "null2_z": -0.72,
+            "null2_p": 0.8278
+          },
+          "A_skel": {
+            "obs": 0,
+            "null1_mean": 2.887,
+            "null1_sd": 1.692,
+            "null1_z": -1.71,
+            "null1_p": 1.0,
+            "null2_mean": 2.515,
+            "null2_sd": 1.642,
+            "null2_z": -1.53,
+            "null2_p": 1.0
+          },
+          "B_exact": {
+            "obs": 1,
+            "null1_mean": 0.634,
+            "null1_sd": 0.888,
+            "null1_z": 0.41,
+            "null1_p": 0.4197,
+            "null2_mean": 0.953,
+            "null2_sd": 1.101,
+            "null2_z": 0.04,
+            "null2_p": 0.5433
+          },
+          "B_skel": {
+            "obs": 4,
+            "null1_mean": 6.537,
+            "null1_sd": 2.15,
+            "null1_z": -1.18,
+            "null1_p": 0.9146,
+            "null2_mean": 6.561,
+            "null2_sd": 2.19,
+            "null2_z": -1.17,
+            "null2_p": 0.9154
+          }
+        }
+      },
+      {
+        "map": "full_30",
+        "dataset": "Mainland_Top50",
+        "n_items": 50,
+        "dir": "RL",
+        "metrics": {
+          "A_exact": {
+            "obs": 1,
+            "null1_mean": 0.221,
+            "null1_sd": 0.558,
+            "null1_z": 1.39,
+            "null1_p": 0.1708,
+            "null2_mean": 0.373,
+            "null2_sd": 0.742,
+            "null2_z": 0.84,
+            "null2_p": 0.2615
+          },
+          "A_near_ed1": {
+            "obs": 5,
+            "null1_mean": 7.338,
+            "null1_sd": 3.565,
+            "null1_z": -0.66,
+            "null1_p": 0.7678,
+            "null2_mean": 6.358,
+            "null2_sd": 3.657,
+            "null2_z": -0.37,
+            "null2_p": 0.6521
+          },
+          "A_skel": {
+            "obs": 6,
+            "null1_mean": 9.114,
+            "null1_sd": 3.802,
+            "null1_z": -0.82,
+            "null1_p": 0.8212,
+            "null2_mean": 8.171,
+            "null2_sd": 3.707,
+            "null2_z": -0.59,
+            "null2_p": 0.7487
+          },
+          "B_exact": {
+            "obs": 3,
+            "null1_mean": 1.574,
+            "null1_sd": 1.552,
+            "null1_z": 0.92,
+            "null1_p": 0.2294,
+            "null2_mean": 1.967,
+            "null2_sd": 1.787,
+            "null2_z": 0.58,
+            "null2_p": 0.3125
+          },
+          "B_skel": {
+            "obs": 31,
+            "null1_mean": 22.09,
+            "null1_sd": 5.707,
+            "null1_z": 1.56,
+            "null1_p": 0.07,
+            "null2_mean": 22.622,
+            "null2_sd": 5.94,
+            "null2_z": 1.41,
+            "null2_p": 0.095
+          }
+        }
+      },
+      {
+        "map": "full_30",
+        "dataset": "Mainland_Top50",
+        "n_items": 50,
+        "dir": "LR",
+        "metrics": {
+          "A_exact": {
+            "obs": 0,
+            "null1_mean": 0.223,
+            "null1_sd": 0.565,
+            "null1_z": -0.39,
+            "null1_p": 1.0,
+            "null2_mean": 0.367,
+            "null2_sd": 0.728,
+            "null2_z": -0.5,
+            "null2_p": 1.0
+          },
+          "A_near_ed1": {
+            "obs": 13,
+            "null1_mean": 7.303,
+            "null1_sd": 3.551,
+            "null1_z": 1.6,
+            "null1_p": 0.0824,
+            "null2_mean": 6.349,
+            "null2_sd": 3.618,
+            "null2_z": 1.84,
+            "null2_p": 0.0616
+          },
+          "A_skel": {
+            "obs": 8,
+            "null1_mean": 9.146,
+            "null1_sd": 3.942,
+            "null1_z": -0.29,
+            "null1_p": 0.6317,
+            "null2_mean": 8.198,
+            "null2_sd": 3.822,
+            "null2_z": -0.05,
+            "null2_p": 0.5349
+          },
+          "B_exact": {
+            "obs": 2,
+            "null1_mean": 1.558,
+            "null1_sd": 1.56,
+            "null1_z": 0.28,
+            "null1_p": 0.4197,
+            "null2_mean": 1.958,
+            "null2_sd": 1.801,
+            "null2_z": 0.02,
+            "null2_p": 0.5165
+          },
+          "B_skel": {
+            "obs": 21,
+            "null1_mean": 22.086,
+            "null1_sd": 5.535,
+            "null1_z": -0.2,
+            "null1_p": 0.6101,
+            "null2_mean": 22.62,
+            "null2_sd": 5.903,
+            "null2_z": -0.27,
+            "null2_p": 0.6391
+          }
+        }
+      }
+    ]
+  },
+  "test_c2": {
+    "cohorts": {
+      "Iran_Indus": {
+        "n": 5,
+        "cyl": 3,
+        "rnd": 2,
+        "man_090_091": 4,
+        "man_any": 5,
+        "fish": 0,
+        "s831": 2,
+        "s604": 1,
+        "s924": 1,
+        "s032": 2,
+        "s055": 1,
+        "s001": 1,
+        "jar_cup": 2,
+        "plant_comb": 3,
+        "bg_tot": 22,
+        "bg_dir_hit": 7,
+        "bg_undir_hit": 11,
+        "bg_dir_pct": 31.8,
+        "bg_undir_pct": 50.0,
+        "n_tokens": 27,
+        "n_types": 20
+      },
+      "Bahrain": {
+        "n": 7,
+        "cyl": 0,
+        "rnd": 7,
+        "man_090_091": 5,
+        "man_any": 5,
+        "fish": 3,
+        "s831": 1,
+        "s604": 0,
+        "s924": 0,
+        "s032": 1,
+        "s055": 3,
+        "s001": 1,
+        "jar_cup": 1,
+        "plant_comb": 0,
+        "bg_tot": 20,
+        "bg_dir_hit": 3,
+        "bg_undir_hit": 11,
+        "bg_dir_pct": 15.0,
+        "bg_undir_pct": 55.0,
+        "n_tokens": 27,
+        "n_types": 17
+      },
+      "Failaka_UAE": {
+        "n": 4,
+        "cyl": 0,
+        "rnd": 4,
+        "man_090_091": 4,
+        "man_any": 4,
+        "fish": 1,
+        "s831": 0,
+        "s604": 1,
+        "s924": 1,
+        "s032": 0,
+        "s055": 0,
+        "s001": 2,
+        "jar_cup": 0,
+        "plant_comb": 1,
+        "bg_tot": 12,
+        "bg_dir_hit": 2,
+        "bg_undir_hit": 4,
+        "bg_dir_pct": 16.7,
+        "bg_undir_pct": 33.3,
+        "n_tokens": 16,
+        "n_types": 13
+      },
+      "Mesopotamia_Round": {
+        "n": 12,
+        "cyl": 0,
+        "rnd": 12,
+        "man_090_091": 6,
+        "man_any": 9,
+        "fish": 4,
+        "s831": 0,
+        "s604": 1,
+        "s924": 1,
+        "s032": 0,
+        "s055": 0,
+        "s001": 5,
+        "jar_cup": 2,
+        "plant_comb": 2,
+        "bg_tot": 42,
+        "bg_dir_hit": 5,
+        "bg_undir_hit": 14,
+        "bg_dir_pct": 11.9,
+        "bg_undir_pct": 33.3,
+        "n_tokens": 54,
+        "n_types": 35
+      },
+      "Unknown_Gulf_WA": {
+        "n": 5,
+        "cyl": 2,
+        "rnd": 3,
+        "man_090_091": 3,
+        "man_any": 4,
+        "fish": 1,
+        "s831": 0,
+        "s604": 0,
+        "s924": 0,
+        "s032": 1,
+        "s055": 2,
+        "s001": 0,
+        "jar_cup": 0,
+        "plant_comb": 0,
+        "bg_tot": 11,
+        "bg_dir_hit": 3,
+        "bg_undir_hit": 5,
+        "bg_dir_pct": 27.3,
+        "bg_undir_pct": 45.5,
+        "n_tokens": 16,
+        "n_types": 13
+      },
+      "Indus_Home_Round": {
+        "n": 6,
+        "cyl": 0,
+        "rnd": 6,
+        "man_090_091": 1,
+        "man_any": 3,
+        "fish": 3,
+        "s831": 0,
+        "s604": 0,
+        "s924": 0,
+        "s032": 0,
+        "s055": 1,
+        "s001": 3,
+        "jar_cup": 0,
+        "plant_comb": 2,
+        "bg_tot": 21,
+        "bg_dir_hit": 8,
+        "bg_undir_hit": 13,
+        "bg_dir_pct": 38.1,
+        "bg_undir_pct": 61.9,
+        "n_tokens": 27,
+        "n_types": 21
+      },
+      "Abroad_Square": {
+        "n": 8,
+        "cyl": 0,
+        "rnd": 0,
+        "man_090_091": 0,
+        "man_any": 2,
+        "fish": 4,
+        "s831": 0,
+        "s604": 0,
+        "s924": 0,
+        "s032": 0,
+        "s055": 0,
+        "s001": 0,
+        "jar_cup": 3,
+        "plant_comb": 5,
+        "bg_tot": 32,
+        "bg_dir_hit": 10,
+        "bg_undir_hit": 22,
+        "bg_dir_pct": 31.2,
+        "bg_undir_pct": 68.8,
+        "n_tokens": 40,
+        "n_types": 29
+      }
+    },
+    "similarity_to_iran": {
+      "Bahrain": {
+        "jaccard": 0.233,
+        "cosine": 0.422,
+        "n_shared": 7,
+        "shared": [
+          "001",
+          "031",
+          "032",
+          "055",
+          "090",
+          "091",
+          "831"
+        ]
+      },
+      "Failaka_UAE": {
+        "jaccard": 0.179,
+        "cosine": 0.589,
+        "n_shared": 5,
+        "shared": [
+          "001",
+          "090",
+          "091",
+          "604",
+          "924"
+        ]
+      },
+      "Mesopotamia_Round": {
+        "jaccard": 0.17,
+        "cosine": 0.489,
+        "n_shared": 8,
+        "shared": [
+          "001",
+          "002",
+          "003",
+          "031",
+          "090",
+          "091",
+          "604",
+          "924"
+        ]
+      },
+      "Unknown_Gulf_WA": {
+        "jaccard": 0.138,
+        "cosine": 0.381,
+        "n_shared": 4,
+        "shared": [
+          "032",
+          "055",
+          "090",
+          "091"
+        ]
+      },
+      "Indus_Home_Round": {
+        "jaccard": 0.139,
+        "cosine": 0.193,
+        "n_shared": 5,
+        "shared": [
+          "001",
+          "002",
+          "031",
+          "055",
+          "091"
+        ]
+      },
+      "Abroad_Square": {
+        "jaccard": 0.089,
+        "cosine": 0.093,
+        "n_shared": 4,
+        "shared": [
+          "002",
+          "003",
+          "416",
+          "840"
+        ]
+      },
+      "Mainland_Full": {
+        "jaccard": 0.028,
+        "cosine": 0.251,
+        "n_shared": 20,
+        "shared": []
+      }
+    },
+    "fisher_iran_vs_prov_GM": {
+      "cylinder_vs_prov_GM": {
+        "iran": "3/5",
+        "prov_GM": "0/23",
+        "fisher_p": 0.00305
+      },
+      "fish_absent_vs_prov_GM": {
+        "iran": "0/5",
+        "prov_GM": "8/23",
+        "fisher_p": 0.28083
+      },
+      "s831_vs_prov_GM": {
+        "iran": "2/5",
+        "prov_GM": "1/23",
+        "fisher_p": 0.07326
+      },
+      "s032_vs_prov_GM": {
+        "iran": "2/5",
+        "prov_GM": "1/23",
+        "fisher_p": 0.07326
+      },
+      "man090_091_vs_prov_GM": {
+        "iran": "4/5",
+        "prov_GM": "15/23",
+        "fisher_p": 1.0
+      },
+      "bg_dir_vs_prov_GM": {
+        "iran": "7/22",
+        "prov_GM": "10/74",
+        "fisher_p": 0.06084
+      }
+    },
+    "rival_perm_prov28": {
+      "pool": "Provenanced_28",
+      "N_pool": 28,
+      "p_cyl_ge3": 0.0029,
+      "p_fish_0": 0.15338,
+      "p_831_ge2": 0.07389,
+      "p_032_ge2": 0.07869,
+      "p_joint_iran_profile": 0.0013
+    },
+    "rival_perm_all33": {
+      "pool": "All_Gulf_WA_33",
+      "N_pool": 33,
+      "p_cyl_ge3": 0.0173,
+      "p_fish_0": 0.18628,
+      "p_831_ge2": 0.05439,
+      "p_032_ge2": 0.10599,
+      "p_joint_iran_profile": 0.0078
+    }
+  },
+  "test_c3": {
+    "monte_carlo_rival": {
+      "N_MC": 10000,
+      "p_random_bucket_within_7.6pct_of_ban_10L": 0.1535,
+      "p_random_bucket_within_3.8pct_of_12sila_9.6L": 0.0726,
+      "p_random_bucket_or_ladder_within_7.6pct_of_any_PE_UrIII_rung": 0.5509,
+      "p_random_weight_unit_within_0.5pct_of_Dilmun_1365g_div100": 0.0068
+    },
+    "structural_comparison": {
+      "indus_2series_NMI": 0.2606,
+      "indus_2series_z": 59.4,
+      "indus_cup_tall5_count": "0/422 (Fisher P=1.59e-7)",
+      "pe_intact_numerals_Born2025": 8011,
+      "pe_systems_Born2025": {
+        "C": 1678,
+        "S": 107,
+        "D": 96,
+        "B": 18
+      },
+      "pe_cross_system_signs_Born2025": "11/244 (4.5%, all headers/qualifiers, 0 commodities)",
+      "sign_inventory_at_10583": {
+        "Indus": {
+          "types": 548,
+          "hapaxes": 205,
+          "top100_pct": 74.6
+        },
+        "Proto_Elamite": {
+          "types": 508,
+          "hapaxes": 185,
+          "top100_pct": 73.5
+        },
+        "Linear_Elamite_Hatamti": {
+          "distinct_signs": 69,
+          "phonemic_values": 67,
+          "deciphered_token_pct": 97.3
+        }
+      }
+    }
+  }
+}

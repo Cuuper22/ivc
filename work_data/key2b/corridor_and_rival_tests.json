@@ -1,0 +1,188 @@
+{
+  "corpus_baselines": {
+    "mainland_reps": 4435,
+    "Harappa_reps": 1778,
+    "Mohenjo_daro_reps": 1729,
+    "Twin_Capitals_reps": 3507,
+    "Twin_Capitals_share": 0.7908,
+    "Lothal_reps": 177,
+    "Lothal_share": 0.0399,
+    "MD_DKGS_reps": 547,
+    "MD_DKGS_share": 0.3164,
+    "MD_DKGS_B7_10_LongLane_reps": 261,
+    "MD_DKGS_B7_10_LongLane_share": 0.151,
+    "median_mainland_seal_area_mm2": 606.2
+  },
+  "test1_direction_reversal": {
+    "mainland_803_before_415_reps": {
+      "fwd": 16,
+      "rev": 0,
+      "adj_fwd": 12,
+      "adj_rev": 0,
+      "p_binom_ord": 3.0517578125e-05,
+      "p_binom_adj": 0.00048828125
+    },
+    "mainland_803_before_415_unique_matrices": {
+      "fwd": 9,
+      "rev": 0,
+      "p_binom": 0.00390625,
+      "sites": {
+        "Harappa": 5,
+        "Mohenjo-daro": 4
+      }
+    },
+    "mainland_415_before_220_reps": {
+      "fwd": 87,
+      "rev": 0,
+      "adj_fwd": 86,
+      "adj_rev": 0,
+      "p_binom_ord": 1.2924697071141057e-26,
+      "p_binom_adj": 2.5849394142282115e-26
+    },
+    "mainland_717_before_803_reps": {
+      "fwd": 2,
+      "rev": 0,
+      "adj_fwd": 1,
+      "adj_rev": 0,
+      "p_binom_ord": 0.5,
+      "p_binom_adj": 1.0
+    },
+    "mainland_090_position": {
+      "initial": 32,
+      "final": 116,
+      "total": 164,
+      "final_pct": 70.7,
+      "initial_pct": 19.5,
+      "p_fin_vs_init": 2.197285607678162e-12
+    },
+    "Failaka_13_audit": {
+      "uid": "G3-F02",
+      "laursen": "13",
+      "gadd": "",
+      "site": "Failaka",
+      "region": "Persian Gulf",
+      "shape": "round",
+      "dir_fixed_in_key1": "False",
+      "seq_verified": "090-604-220-415-061-803-924",
+      "seq_reversed": "924-803-061-415-220-604-090",
+      "fwd_adj": 0,
+      "rev_adj": 87,
+      "p_adj": "1.292e-26",
+      "fwd_ord": 13,
+      "rev_ord": 170,
+      "p_ord": "4.729e-36",
+      "verdict": "STRONG_REVERSED"
+    },
+    "Ur_21_Gadd16_audit": {
+      "uid": "G3-M06",
+      "laursen": "21",
+      "gadd": "16",
+      "site": "Ur",
+      "region": "Mesopotamia",
+      "shape": "round",
+      "dir_fixed_in_key1": "False",
+      "seq_verified": "415-803-001-328-004-002",
+      "seq_reversed": "002-004-328-001-803-415",
+      "fwd_adj": 0,
+      "rev_adj": 35,
+      "p_adj": "5.821e-11",
+      "fwd_ord": 18,
+      "rev_ord": 128,
+      "p_ord": "1.238e-21",
+      "verdict": "STRONG_REVERSED"
+    }
+  },
+  "test2_city_to_gulf_corridors_and_rivals": {
+    "bahrain_lothal_055_220": {
+      "all_objects_contig_055_220": {
+        "Lothal": 11
+      },
+      "reps_contig_055_220": {
+        "Lothal": 6
+      },
+      "unique_matrices_contig_055_220": [
+        [
+          "Lothal",
+          "705-500-741-001-055-220-740-090"
+        ]
+      ],
+      "unique_matrices_unordered_055_220": {
+        "Mohenjo-daro": 5,
+        "Lothal": 1,
+        "Harappa": 1
+      },
+      "p_fisher_contig_reps_lothal": 3.7218212308896242e-09,
+      "rival_p_fisher_unique_matrix_lothal": 0.039909808342728295,
+      "rival_verdict": "All 11 Lipi + 3 events_new Lothal 055-220 tags come from 1 single warehouse seal matrix (705-500-741-001-055-220-740-090); inflating naive count, YET it remains the ONLY contiguous 055-220 matrix on the entire mainland (Harappa/MD use reversed 220-055 in 5/6 matrices!), AND single-sign 055 across distinct matrices is independently 4.4x enriched at Lothal.",
+      "single_sign_055_lothal": {
+        "lothal": 8,
+        "total_reps": 52,
+        "pct": 15.4,
+        "OR": 4.53,
+        "p_fisher": 0.0009174161548498757
+      },
+      "bahrain_vs_meso_failaka_055_220_p": 0.03611971104231166
+    },
+    "failaka_ur_twin_capitals_803_415": {
+      "reps_site_breakdown": {
+        "Harappa": 12,
+        "Mohenjo-daro": 4
+      },
+      "unique_matrices_site_breakdown": {
+        "Harappa": 5,
+        "Mohenjo-daro": 4
+      },
+      "p_twin_capitals_reps": 0.023203664928765983,
+      "rival_p_twin_capitals_unique_matrices": 0.12062715564805986,
+      "seal_areas_mm2": [
+        930.25,
+        2088.49,
+        814.35,
+        1049.4,
+        558.92
+      ],
+      "median_seal_area_mm2": 930.2,
+      "rival_verdict": "11 of 15 Harappa objects are 1 Mound F Granary gharial moulded-tablet stamp; collapsing to unique matrices still yields 9/9 = 100% Twin Capitals (5 Harappa + 4 Mohenjo-daro, 0 Gujarat/Lothal) with giant elite seal median 930.2 mm2 vs 606.2 mm2 mainland median."
+    },
+    "mohenjo_daro_190_and_415_100": {
+      "sign_190_md": {
+        "md": 8,
+        "total": 10,
+        "OR": 6.28,
+        "p_fisher": 0.010217288335770187,
+        "median_area_mm2": 930.2
+      },
+      "pair_415_100_md": {
+        "md": 29,
+        "total": 43,
+        "OR": 3.28,
+        "p_fisher": 0.0001389056467252679
+      },
+      "sign_061_twin_capitals": {
+        "twin": 79,
+        "total": 87,
+        "lothal": 0,
+        "OR": 2.65,
+        "p_fisher": 0.0027160283620083375
+      }
+    },
+    "rival_test_MD_DKGS_clustering": {
+      "MD_DKGS_baseline_pct": 31.6,
+      "MD_DKGS_B7_10_LongLane_baseline_pct": 15.1,
+      "415_220_in_DKGS": {
+        "n": 11,
+        "total": 43,
+        "pct": 25.6,
+        "p_fisher": 0.8490744175286654
+      },
+      "061_in_DKGS_B7_10_LongLane": {
+        "n": 13,
+        "total": 50,
+        "pct": 26.0,
+        "OR": 2.03,
+        "p_fisher": 0.029465431856937792
+      },
+      "rival_verdict": "DKG.(S) accounts for 31.6% of all Mohenjo-daro seals; 415-220 (25.6%), 803 (30.4%), 415 (30.0%) and 190 (25.0%) show NO enrichment in DKG.(S) over baseline. ONLY 061 (k\u0101l 'quarter') is significantly enriched in DKG.(S) Blocks 7\u201310 / Long Lane (26.0% vs 15.1%, OR=2.03, p=0.0295), alongside the 603-861-002 Long Lane 10/12 pair (M-714, M-1273)."
+    }
+  }
+}

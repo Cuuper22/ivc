@@ -1,0 +1,49 @@
+uid,laursen,gadd,site,region,shape,dir_fixed_in_key1,seq_verified,seq_reversed,fwd_adj,rev_adj,p_adj,fwd_ord,rev_ord,p_ord,verdict
+G3-B01,6,,Qala'at al-Bahrain,Persian Gulf,round,False,091-000,091,0,0,1.000e+00,0,0,1.000e+00,AMBIGUOUS
+G3-B02,7,,Qala'at al-Bahrain,Persian Gulf,round,True,160-090-055-060-190,190-060-055-090-160,1,1,1.000e+00,3,18,1.490e-03,REVERSED_ORDER
+G3-B03,8,,Karzakkan,Persian Gulf,round,False,091-031-455-220,220-455-031-091,10,3,9.229e-02,24,13,9.887e-02,AMBIGUOUS
+G3-B04,9,,Saar,Persian Gulf,round,False,055-220-091-001-093-031,031-093-001-091-220-055,6,3,5.078e-01,40,56,1.253e-01,AMBIGUOUS
+G3-B05,10,,Janabiyah,Persian Gulf,round,False,220-831-055-121-099-055,055-099-121-055-831-220,0,0,1.000e+00,13,15,8.506e-01,AMBIGUOUS
+G3-B06,11,,Karzakkan,Persian Gulf,round,False,091-032-034,034-032-091,2,0,5.000e-01,3,0,2.500e-01,AMBIGUOUS
+G3-B07,56,,Karzakkan,Persian Gulf,round,False,740-740,740-740,3,3,1.000e+00,0,0,1.000e+00,AMBIGUOUS
+G3-F01,12,,Failaka,Persian Gulf,round,False,090-001-761-890,890-761-001-090,1,1,1.000e+00,3,12,3.516e-02,AMBIGUOUS
+G3-F02,13,,Failaka,Persian Gulf,round,False,090-604-220-415-061-803-924,924-803-061-415-220-604-090,0,87,1.292e-26,13,170,4.729e-36,STRONG_REVERSED
+G3-F03,,,Failaka,Persian Gulf,round,False,716-350-001-090,090-001-350-716,2,3,1.000e+00,17,4,7.197e-03,FORWARD_ORDER
+G3-F04,,,Kalba,Persian Gulf,round,False,091,091,0,0,1.000e+00,0,0,1.000e+00,AMBIGUOUS
+G3-M01,16,2,Ur,Mesopotamia,round,False,528-220-924-340-093,093-340-924-220-528,0,0,1.000e+00,0,0,1.000e+00,AMBIGUOUS
+G3-M02,17,3,Ur,Mesopotamia,round,False,837-090-145-001-031,031-001-145-090-837,6,7,1.000e+00,18,31,8.543e-02,AMBIGUOUS
+G3-M03,18,4,Ur,Mesopotamia,round,False,090-405,405-090,3,2,1.000e+00,3,2,1.000e+00,AMBIGUOUS
+G3-M04,19,5,Ur,Mesopotamia,round,False,000-090,090,0,0,1.000e+00,0,0,1.000e+00,AMBIGUOUS
+G3-M05,20,15,Ur,Mesopotamia,round,False,093-013-798,798-013-093,0,0,1.000e+00,1,0,1.000e+00,AMBIGUOUS
+G3-M06,21,16,Ur,Mesopotamia,round,False,415-803-001-328-004-002,002-004-328-001-803-415,0,35,5.821e-11,18,128,1.238e-21,STRONG_REVERSED
+G3-M07,22,,Girsu,Mesopotamia,round,False,255-013-744-796-740,740-796-744-013-255,0,0,1.000e+00,94,2,1.176e-25,FORWARD_ORDER
+G3-M08,23,17,Near East (Ur/Babylon),Mesopotamia,round,False,467-798-001-740-740,740-740-001-798-467,4,27,3.395e-05,316,58,4.289e-44,STRONG_REVERSED
+G3-M09,24,18,Near East (Ur/BM),Mesopotamia,round,False,235-091-604-603,603-604-091-235,0,0,1.000e+00,1,0,1.000e+00,AMBIGUOUS
+G3-M10,25,,Mesopotamia?,Mesopotamia,round,False,095-003-235-001-904-061-003,003-061-904-001-235-003-095,4,5,1.000e+00,46,28,4.739e-02,AMBIGUOUS
+G3-M11,26,,Mesopotamia? (Yale),Mesopotamia,round,False,160-384-133-001-090-061,061-090-001-133-384-160,4,1,3.750e-01,26,8,2.935e-03,FORWARD_ORDER
+G3-M12,27,,Mesopotamia? (Yale),Mesopotamia,round,False,061-725-090-002-340,340-002-090-725-061,2,0,5.000e-01,7,48,1.309e-08,REVERSED_ORDER
+G3-I01,14,,Susa,Iranian Plateau,round,False,090-365-090-407-604-700,700-604-407-090-365-090,0,0,1.000e+00,7,2,1.797e-01,AMBIGUOUS
+G3-I02,15,,Luristan,Iranian Plateau,round,False,091-840-413-831,831-413-840-091,0,0,1.000e+00,3,0,2.500e-01,AMBIGUOUS
+G3-I03,,,Susa,Iranian Plateau,cylinder,False,924-001-319-031-055-002-150-416,416-150-002-055-031-319-001-924,2,4,6.875e-01,70,78,5.652e-01,AMBIGUOUS
+G3-I04,,,Jalalabad (Fars),Iranian Plateau,cylinder,False,741-032-090-003-090,090-003-090-032-741,10,0,1.953e-03,82,19,1.659e-10,STRONG_FORWARD
+G3-I05,,,Sistan (McMahon BM),Iranian Plateau,cylinder,False,090-831-091-032,032-091-831-090,1,1,1.000e+00,3,11,5.737e-02,AMBIGUOUS
+G3-I06,28,,Western Iran (Ligabue),Iranian Plateau,round,False,LE:za-si-ri2,,0,0,1.000e+00,0,0,1.000e+00,AMBIGUOUS
+G3-U01,,,Unknown (Gulf/WA),Mesopotamia/Gulf,round,False,190-091-603-000,603-091-190,2,0,5.000e-01,3,0,2.500e-01,AMBIGUOUS
+G3-U02,,,Unknown (Gulf/WA),Mesopotamia/Gulf,cylinder,False,032-132-000-055-090,090-055-132-032,3,0,2.500e-01,26,3,1.524e-05,FORWARD_ORDER
+G3-U03,,,Unknown (Gulf/WA),Mesopotamia/Gulf,cylinder,False,000-000-139-145,145-139,1,0,1.000e+00,1,0,1.000e+00,AMBIGUOUS
+G3-U04,,,West Asia (museum),Mesopotamia/Gulf,round,False,095-384-091-055,055-091-384-095,0,0,1.000e+00,0,0,1.000e+00,AMBIGUOUS
+G3-U05,,,West Asia (museum),Mesopotamia/Gulf,round,False,220-220-340,340-220-220,1,1,1.000e+00,0,0,1.000e+00,AMBIGUOUS
+G3-H01,1,,Chanhu-daro,Indus (Gulf round),round,False,632-390-400-375-031,031-375-400-390-632,5,0,6.250e-02,24,22,8.830e-01,AMBIGUOUS
+G3-H02,2,,Mohenjo-daro,Indus (Gulf round),round,False,016-405-001-255-324,324-255-001-405-016,7,0,1.562e-02,17,12,4.583e-01,AMBIGUOUS
+G3-H03,3,,Mohenjo-daro,Indus (Gulf round),round,False,820-060-002-832-140-592-055,055-592-140-832-002-060-820,36,2,5.399e-09,212,26,1.914e-37,STRONG_FORWARD
+G3-H04,4,,Mohenjo-daro,Indus (Gulf round),round,False,140-001-000,001-140,3,1,6.250e-01,6,3,5.078e-01,AMBIGUOUS
+G3-H05,5,,Mohenjo-daro,Indus (Gulf round),round,False,832-256-031,031-256-832,1,0,1.000e+00,1,0,1.000e+00,AMBIGUOUS
+G3-H06,,,Dholavira,Indus (Gulf round),round,False,000-255-368-001-091-806,806-091-001-368-255,13,1,1.831e-03,34,18,3.648e-02,STRONG_FORWARD
+G3-S01,,,Kish,Mesopotamia (square),square,False,416-840-060-003-220-590-390-740,740-390-590-220-003-060-840-416,164,2,2.964e-46,850,67,1.366e-173,STRONG_FORWARD
+G3-S02,,,Kish,Mesopotamia (square),square,False,240-643-000,643-240,2,0,5.000e-01,2,0,5.000e-01,AMBIGUOUS
+G3-S03,,,Tell Umma,Mesopotamia (tag),tag,False,127-705-002-004-390,390-004-002-705-127,44,12,2.088e-05,132,63,8.696e-07,STRONG_FORWARD
+G3-S04,,,Tello,Mesopotamia (square),square,False,384-440-390-220-000,220-390-440-384,0,1,1.000e+00,6,24,1.431e-03,REVERSED_ORDER
+G3-S05,,,Gonur Depe,Central Asia (square),square,False,285-002-235-220-125-590-390-740,740-390-590-125-220-235-002-285,185,12,5.392e-41,1292,113,0.000e+00,STRONG_FORWARD
+G3-S06,,,Salut,Persian Gulf (square),square,False,595-278-002-004-392,392-004-002-278-595,20,0,1.907e-06,28,4,1.930e-05,STRONG_FORWARD
+G3-S07,,,West Asia (excav.),Mesopotamia (square),square,False,388-443-390-176-156,156-176-390-443-388,8,0,7.812e-03,11,5,2.101e-01,STRONG_FORWARD
+G3-S08,,,West Asia (excav.),Mesopotamia (square),square,False,350-151-320,320-151-350,1,0,1.000e+00,1,0,1.000e+00,AMBIGUOUS
