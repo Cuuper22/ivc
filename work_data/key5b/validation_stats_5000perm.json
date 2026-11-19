@@ -1,0 +1,513 @@
+{
+  "n_permutations": 5000,
+  "corpus_summary": {
+    "intact_faces_total": 4163,
+    "lipi_intact_faces": 3600,
+    "new_intact_faces": 563,
+    "faces_100pct_k4": 1776,
+    "faces_100pct_strict_zero_x": 1736,
+    "faces_100pct_flagged_mahadevan_x": 40,
+    "faces_100pct_len3plus_k4": 725,
+    "faces_100pct_len3plus_strict": 705,
+    "faces_50pct": 3610,
+    "physical_stones": 3562,
+    "batch_dedup_events": 3351,
+    "moulded_copies_collapsed": 211
+  },
+  "test_5b1_city_specialization": {
+    "n_dedup_objects": 3212,
+    "n_cities": 9,
+    "chi2_obs": 175.521,
+    "chi2_null_mean": 18.518,
+    "p_pooled_5000": 0.0002,
+    "chi2_strat_null_mean": 136.03,
+    "p_object_stratified_5000": 0.0036,
+    "seals_only_n": 1749,
+    "seals_only_chi2_obs": 17.196,
+    "seals_only_chi2_null_mean": 18.207,
+    "seals_only_p_5000": 0.52929,
+    "coastal_pay_sail_test": {
+      "coastal_hits": 4,
+      "coastal_total": 214,
+      "inland_hits": 9,
+      "inland_total": 2998,
+      "odds_ratio": 6.326,
+      "p_5000": 0.006
+    },
+    "harappa_core_granary_test": {
+      "harappa_hits": 492,
+      "harappa_total": 1290,
+      "odds_ratio": 6.744,
+      "p_5000": 0.0002
+    }
+  },
+  "test_5b2_object_function": {
+    "n_seals": 1822,
+    "n_tablets_pots_tags": 1261,
+    "n_copper_tablets_separate": 131,
+    "headline_accounting_on_tpt": {
+      "feature": "COMPOSITE: Accounting/Ration/Measure/Tax",
+      "predicted_direction": "non_seal",
+      "seals_hits": 327,
+      "seals_pct": 17.95,
+      "tablets_pct": 62.66,
+      "copper_tablets_pct": 25.19,
+      "tags_pct": 17.99,
+      "pots_pct": 7.35,
+      "tpt_hits": 540,
+      "or_seal_vs_tpt": 0.292,
+      "or_tpt_vs_seal": 3.424,
+      "p_pooled_5000": 0.0002,
+      "p_site_strat_5000": 0.0002
+    },
+    "headline_identity_on_seals": {
+      "feature": "COMPOSITE: Clan/Elite-Title/House-Ending",
+      "predicted_direction": "seal",
+      "seals_hits": 1129,
+      "seals_pct": 61.96,
+      "tablets_pct": 61.51,
+      "copper_tablets_pct": 67.18,
+      "tags_pct": 56.83,
+      "pots_pct": 16.18,
+      "tpt_hits": 615,
+      "or_seal_vs_tpt": 1.711,
+      "or_tpt_vs_seal": 0.584,
+      "p_pooled_5000": 0.0002,
+      "p_site_strat_5000": 0.0002
+    },
+    "headline_trade_distribution": {
+      "feature": "COMPOSITE: Trade/Bale/Cloth/Sail",
+      "predicted_direction": "either",
+      "seals_hits": 427,
+      "seals_pct": 23.44,
+      "tablets_pct": 19.18,
+      "copper_tablets_pct": 61.83,
+      "tags_pct": 31.65,
+      "pots_pct": 7.06,
+      "tpt_hits": 218,
+      "or_seal_vs_tpt": 1.464,
+      "or_tpt_vs_seal": 0.683,
+      "p_pooled_5000": 0.0002,
+      "p_site_strat_5000": 0.007
+    }
+  },
+  "test_5b3_seal_size_vs_rank": {
+    "n_square_seals": 1070,
+    "ols_log_area_slope_per_sign": 0.1102,
+    "kruskal_wallis_9roles_n": 671,
+    "kw_H_raw_area": 61.194,
+    "kw_H_len_resid": 23.031,
+    "kw_p_len_strat_5000": 0.0032,
+    "kw_H_len_site_resid": 23.328,
+    "kw_p_len_site_strat_5000": 0.0018,
+    "elite_vs_subordinate": {
+      "n_elite": 399,
+      "n_subordinate": 144,
+      "elite_median_mm2": 778.4,
+      "subordinate_median_mm2": 524.4,
+      "diff_mean_mm2": 327.4,
+      "diff_resid_log": 0.2131,
+      "p_len_strat_5000": 0.0002,
+      "diff_resid_log_site": 0.2231,
+      "p_len_site_strat_5000": 0.0002
+    },
+    "per_role": [
+      {
+        "role": "*ammā (matron/lady)",
+        "n_seals": 41,
+        "mean_len": 5.8,
+        "median_area_mm2": 852.6,
+        "mean_area_mm2": 1183.6,
+        "resid_log_len": 0.2047,
+        "resid_log_len_site": 0.1933,
+        "resid_mm2_len": 325.5,
+        "p_two_len_strat_5000": 0.0068,
+        "p_larger_5000": 0.0044,
+        "p_smaller_5000": 0.9958
+      },
+      {
+        "role": "*talai (chief)",
+        "n_seals": 42,
+        "mean_len": 5.95,
+        "median_area_mm2": 778.4,
+        "mean_area_mm2": 922.7,
+        "resid_log_len": 0.0359,
+        "resid_log_len_site": 0.0274,
+        "resid_mm2_len": 52.3,
+        "p_two_len_strat_5000": 0.56109,
+        "p_larger_5000": 0.27914,
+        "p_smaller_5000": 0.72106
+      },
+      {
+        "role": "*vil-āḷ (merchant)",
+        "n_seals": 28,
+        "mean_len": 6.18,
+        "median_area_mm2": 743.7,
+        "mean_area_mm2": 950.1,
+        "resid_log_len": 0.0247,
+        "resid_log_len_site": 0.0366,
+        "resid_mm2_len": 60.6,
+        "p_two_len_strat_5000": 0.87622,
+        "p_larger_5000": 0.43131,
+        "p_smaller_5000": 0.56889
+      },
+      {
+        "role": "*vēḷ (lord)",
+        "n_seals": 119,
+        "mean_len": 4.89,
+        "median_area_mm2": 712.9,
+        "mean_area_mm2": 781.1,
+        "resid_log_len": 0.0182,
+        "resid_log_len_site": 0.0238,
+        "resid_mm2_len": 0.1,
+        "p_two_len_strat_5000": 0.67487,
+        "p_larger_5000": 0.33953,
+        "p_smaller_5000": 0.66067
+      },
+      {
+        "role": "*mīṉ (star-house)",
+        "n_seals": 302,
+        "mean_len": 5.71,
+        "median_area_mm2": 781.2,
+        "mean_area_mm2": 877.6,
+        "resid_log_len": 0.0449,
+        "resid_log_len_site": 0.0469,
+        "resid_mm2_len": 28.0,
+        "p_two_len_strat_5000": 0.06799,
+        "p_larger_5000": 0.03519,
+        "p_smaller_5000": 0.96501
+      },
+      {
+        "role": "*kuṭiy-āḷ (manager)",
+        "n_seals": 40,
+        "mean_len": 6.1,
+        "median_area_mm2": 751.0,
+        "mean_area_mm2": 836.1,
+        "resid_log_len": -0.0617,
+        "resid_log_len_site": -0.0573,
+        "resid_mm2_len": -46.8,
+        "p_two_len_strat_5000": 0.37632,
+        "p_larger_5000": 0.81044,
+        "p_smaller_5000": 0.18976
+      },
+      {
+        "role": "*tai (weaver)",
+        "n_seals": 166,
+        "mean_len": 4.92,
+        "median_area_mm2": 682.5,
+        "mean_area_mm2": 742.9,
+        "resid_log_len": -0.0414,
+        "resid_log_len_site": -0.0409,
+        "resid_mm2_len": -40.2,
+        "p_two_len_strat_5000": 0.24755,
+        "p_larger_5000": 0.87223,
+        "p_smaller_5000": 0.12797
+      },
+      {
+        "role": "*kā (guard/porter)",
+        "n_seals": 99,
+        "mean_len": 3.6,
+        "median_area_mm2": 524.4,
+        "mean_area_mm2": 575.7,
+        "resid_log_len": -0.113,
+        "resid_log_len_site": -0.1154,
+        "resid_mm2_len": -96.1,
+        "p_two_len_strat_5000": 0.02939,
+        "p_larger_5000": 0.9846,
+        "p_smaller_5000": 0.0156
+      },
+      {
+        "role": "*cikka (junior)",
+        "n_seals": 48,
+        "mean_len": 4.31,
+        "median_area_mm2": 521.0,
+        "mean_area_mm2": 549.5,
+        "resid_log_len": -0.2348,
+        "resid_log_len_site": -0.2462,
+        "resid_mm2_len": -182.7,
+        "p_two_len_strat_5000": 0.0012,
+        "p_larger_5000": 1.0,
+        "p_smaller_5000": 0.0002
+      },
+      {
+        "role": "*aṭi (base/foundational)",
+        "n_seals": 13,
+        "mean_len": 5.54,
+        "median_area_mm2": 742.5,
+        "mean_area_mm2": 993.8,
+        "resid_log_len": 0.1221,
+        "resid_log_len_site": 0.1168,
+        "resid_mm2_len": 158.3,
+        "p_two_len_strat_5000": 0.34173,
+        "p_larger_5000": 0.17137,
+        "p_smaller_5000": 0.82883
+      }
+    ]
+  },
+  "test_5b4_network_and_houses": {
+    "intercity_network": {
+      "n_city_pairs_with_shared_len2plus": 35,
+      "n_city_pairs_with_shared_len3plus": 29,
+      "top_edges": [
+        {
+          "city_a": "Harappa",
+          "city_b": "Mohenjo-daro",
+          "shared_formulas_len2plus": 464,
+          "shared_formulas_len3plus": 195,
+          "top_len3_examples": "590-390-740 (Of the Bale-Weaving House); 176-740-400 (Junior of the Tax/Tribute House); 415-100-740 (Of the Branch-Chief House); 705-033-520 (3 kalam (~333 L), Lord (*vēḷ)); 840-032-740 (Of the Pair/Pact 2 House)",
+          "top_len2_examples": "740-400 (House, Junior (*cikka)); 861-002 (2 kāṇam-shares); 033-700 (3 measures); 817-002 (2 kāṇam-shares); 176-740 (Of the Tax/Tribute House)"
+        },
+        {
+          "city_a": "Lothal",
+          "city_b": "Mohenjo-daro",
+          "shared_formulas_len2plus": 108,
+          "shared_formulas_len3plus": 30,
+          "top_len3_examples": "590-390-740 (Of the Bale-Weaving House); 705-033-520 (3 kalam (~333 L), Lord (*vēḷ)); 840-032-740 (Of the Pair/Pact 2 House); 415-220-520 (Branch-Star, Lord (*vēḷ)); 590-405-740 (Of the Bale-Weaving House)",
+          "top_len2_examples": "861-002 (2 kāṇam-shares); 817-002 (2 kāṇam-shares); 176-740 (Of the Tax/Tribute House); 100-740 (Of the Chief House); 760-740 (Of the Youth/Scion House)"
+        },
+        {
+          "city_a": "Dholavira",
+          "city_b": "Mohenjo-daro",
+          "shared_formulas_len2plus": 85,
+          "shared_formulas_len3plus": 31,
+          "top_len3_examples": "590-390-740 (Of the Bale-Weaving House); 840-032-740 (Of the Pair/Pact 2 House); 233-705-033 (Dawn-Star 3 kalam (~333 L)); 706-033-520 (3 kalam (~333 L), Lord (*vēḷ)); 002-004-390 (2 4 Woven-Cloths)",
+          "top_len2_examples": "740-400 (House, Junior (*cikka)); 861-002 (2 kāṇam-shares); 817-002 (2 kāṇam-shares); 176-740 (Of the Tax/Tribute House); 100-740 (Of the Chief House)"
+        },
+        {
+          "city_a": "Harappa",
+          "city_b": "Lothal",
+          "shared_formulas_len2plus": 82,
+          "shared_formulas_len3plus": 19,
+          "top_len3_examples": "590-390-740 (Of the Bale-Weaving House); 705-033-520 (3 kalam (~333 L), Lord (*vēḷ)); 840-032-740 (Of the Pair/Pact 2 House); 415-220-520 (Branch-Star, Lord (*vēḷ)); 590-405-740 (Of the Bale-Weaving House)",
+          "top_len2_examples": "861-002 (2 kāṇam-shares); 817-002 (2 kāṇam-shares); 176-740 (Of the Tax/Tribute House); 100-740 (Of the Chief House); 760-740 (Of the Youth/Scion House)"
+        },
+        {
+          "city_a": "Dholavira",
+          "city_b": "Harappa",
+          "shared_formulas_len2plus": 67,
+          "shared_formulas_len3plus": 22,
+          "top_len3_examples": "590-390-740 (Of the Bale-Weaving House); 840-032-740 (Of the Pair/Pact 2 House); 233-705-033 (Dawn-Star 3 kalam (~333 L)); 706-033-520 (3 kalam (~333 L), Lord (*vēḷ)); 002-004-390 (2 4 Woven-Cloths)",
+          "top_len2_examples": "740-400 (House, Junior (*cikka)); 861-002 (2 kāṇam-shares); 817-002 (2 kāṇam-shares); 176-740 (Of the Tax/Tribute House); 100-740 (Of the Chief House)"
+        },
+        {
+          "city_a": "Chanhu-daro",
+          "city_b": "Mohenjo-daro",
+          "shared_formulas_len2plus": 66,
+          "shared_formulas_len3plus": 18,
+          "top_len3_examples": "590-390-740 (Of the Bale-Weaving House); 002-032-220 (2 Two-Star (*irumīṉ)); 002-003-390 (2 3 Woven-Cloths); 861-002-032 (2 kāṇam-shares — 2); 002-803-233 (2 Millet/Grain Dawn-Star)",
+          "top_len2_examples": "861-002 (2 kāṇam-shares); 817-002 (2 kāṇam-shares); 176-740 (Of the Tax/Tribute House); 100-740 (Of the Chief House); 705-033 (3 kalam (~333 L))"
+        },
+        {
+          "city_a": "Kalibangan",
+          "city_b": "Mohenjo-daro",
+          "shared_formulas_len2plus": 65,
+          "shared_formulas_len3plus": 12,
+          "top_len3_examples": "002-032-220 (2 Two-Star (*irumīṉ)); 176-100-740 (Of the Tax/Tribute Chief House); 002-003-390 (2 3 Woven-Cloths); 003-220-740 (Of the Three-Star (Orion/*mummīṉ) House); 820-002-032 (2 quarter-shares — 2)",
+          "top_len2_examples": "740-400 (House, Junior (*cikka)); 861-002 (2 kāṇam-shares); 817-002 (2 kāṇam-shares); 176-740 (Of the Tax/Tribute House); 100-740 (Of the Chief House)"
+        },
+        {
+          "city_a": "Chanhu-daro",
+          "city_b": "Harappa",
+          "shared_formulas_len2plus": 49,
+          "shared_formulas_len3plus": 14,
+          "top_len3_examples": "590-390-740 (Of the Bale-Weaving House); 002-032-220 (2 Two-Star (*irumīṉ)); 002-003-390 (2 3 Woven-Cloths); 861-002-032 (2 kāṇam-shares — 2); 002-803-233 (2 Millet/Grain Dawn-Star)",
+          "top_len2_examples": "861-002 (2 kāṇam-shares); 817-002 (2 kāṇam-shares); 176-740 (Of the Tax/Tribute House); 100-740 (Of the Chief House); 705-033 (3 kalam (~333 L))"
+        },
+        {
+          "city_a": "Harappa",
+          "city_b": "Kalibangan",
+          "shared_formulas_len2plus": 49,
+          "shared_formulas_len3plus": 7,
+          "top_len3_examples": "002-032-220 (2 Two-Star (*irumīṉ)); 176-100-740 (Of the Tax/Tribute Chief House); 002-003-390 (2 3 Woven-Cloths); 003-220-740 (Of the Three-Star (Orion/*mummīṉ) House); 861-002-003 (2 kāṇam-shares — 3)",
+          "top_len2_examples": "740-400 (House, Junior (*cikka)); 861-002 (2 kāṇam-shares); 817-002 (2 kāṇam-shares); 176-740 (Of the Tax/Tribute House); 100-740 (Of the Chief House)"
+        },
+        {
+          "city_a": "Dholavira",
+          "city_b": "Lothal",
+          "shared_formulas_len2plus": 29,
+          "shared_formulas_len3plus": 3,
+          "top_len3_examples": "590-390-740 (Of the Bale-Weaving House); 840-032-740 (Of the Pair/Pact 2 House); 233-705-033 (Dawn-Star 3 kalam (~333 L))",
+          "top_len2_examples": "861-002 (2 kāṇam-shares); 817-002 (2 kāṇam-shares); 176-740 (Of the Tax/Tribute House); 100-740 (Of the Chief House); 760-740 (Of the Youth/Scion House)"
+        },
+        {
+          "city_a": "Kalibangan",
+          "city_b": "Lothal",
+          "shared_formulas_len2plus": 24,
+          "shared_formulas_len3plus": 1,
+          "top_len3_examples": "233-176-740 (Of the Dawn-Star Tax/Tribute House)",
+          "top_len2_examples": "861-002 (2 kāṇam-shares); 817-002 (2 kāṇam-shares); 176-740 (Of the Tax/Tribute House); 100-740 (Of the Chief House); 760-740 (Of the Youth/Scion House)"
+        },
+        {
+          "city_a": "Foreign",
+          "city_b": "Mohenjo-daro",
+          "shared_formulas_len2plus": 22,
+          "shared_formulas_len3plus": 8,
+          "top_len3_examples": "590-390-740 (Of the Bale-Weaving House); 002-004-390 (2 4 Woven-Cloths); 003-220-590 (Three-Star (Orion/*mummīṉ) Bale/Sack-Load); 220-590-390 (Star Bale-Weaving); 220-590-390-740 (Of the Star Bale-Weaving House)",
+          "top_len2_examples": "760-740 (Of the Youth/Scion House); 590-390 (Bale-Weaving); 615-615 (Loom-Reed/Plot Loom-Reed/Plot); 390-740 (Of the Weave/Cloth House); 590-390-740 (Of the Bale-Weaving House)"
+        }
+      ],
+      "mutai_tai_sites_count": 12,
+      "mutai_tai_sites": [
+        "Allahdino",
+        "Chanhu-daro",
+        "Dholavira",
+        "Gonur Depe",
+        "Harappa",
+        "Kalibangan",
+        "Kish",
+        "Lakhanjo-daro",
+        "Lohumjo-daro",
+        "Lothal",
+        "Mohenjo-daro",
+        "Unknown"
+      ],
+      "mutai_tai_dedup_events": 87,
+      "travel_test_trade_office_vs_starclan": {
+        "n_trade_office_phrases": 464,
+        "n_star_clan_phrases": 89,
+        "mean_cities_trade_office": 2.207,
+        "mean_cities_star_clan": 2.573,
+        "raw_diff": -0.366,
+        "p_raw_5000": 0.9844,
+        "freq_len_resid_diff": -0.392,
+        "p_freq_len_resid_5000": 0.9996,
+        "strict_trade_only_mean_cities": 2.159,
+        "strict_trade_only_resid_diff": -0.36,
+        "p_strict_trade_resid_5000": 0.9968,
+        "len3_redesign_n_trade_office": 235,
+        "len3_redesign_n_star_clan": 31,
+        "len3_redesign_mean_trade_office": 1.872,
+        "len3_redesign_mean_star_clan": 1.774,
+        "len3_redesign_diff": 0.098,
+        "len3_redesign_p_5000": 0.34293
+      }
+    },
+    "mohenjo_daro_spatial_coherence": [
+      {
+        "label": "Same-Room (<=3ft): Shared Numeral+Star Clan (*mīṉ compound)",
+        "n_seals": 96,
+        "n_pairs": 5,
+        "obs": 3,
+        "exp": 1.07,
+        "ratio": 2.797,
+        "p_5000": 0.04859,
+        "examples": [
+          "M-57+M-130 (DKG. (S)|12V|95-: ['NUM2+220_min'])",
+          "M-240+M-1044 (HRB|5XXIX|37-: ['NUM2+220_min'])",
+          "M-367+M-723 (DKG. (N)|16II|11-: ['NUM2+220_min'])"
+        ]
+      },
+      {
+        "label": "Same-Room (<=3ft): Shared Star-Clan Subtype (*mīṉ/*oḷi-mīṉ/*veṭi-mīṉ/*uḷ-mīṉ)",
+        "n_seals": 258,
+        "n_pairs": 22,
+        "obs": 10,
+        "exp": 8.7,
+        "ratio": 1.15,
+        "p_5000": 0.34673,
+        "examples": [
+          "M-1686+M-64 (DKG|First Street-|21-: ['220_min'])",
+          "M-1713+M-1090 (DKG|First Street-|1-: ['220_min'])",
+          "M-1882+M-1044 (HRB|5XXIX|37-: ['220_min'])",
+          "M-240+M-1044 (HRB|5XXIX|37-: ['220_min', 'NUM2+220_min'])",
+          "M-23+M-365 (DKG. (S)|1III|1-: ['220_min'])",
+          "M-23+M-814 (DKG. (S)|1III|1-: ['235_olimin'])",
+          "M-57+M-130 (DKG. (S)|12V|95-: ['220_min', 'NUM2+220_min'])",
+          "M-367+M-723 (DKG. (N)|16II|11-: ['220_min', 'NUM2+220_min'])"
+        ]
+      },
+      {
+        "label": "Same-Room (<=3ft): Shared Craft/Trade/Office Role",
+        "n_seals": 657,
+        "n_pairs": 111,
+        "obs": 13,
+        "exp": 18.64,
+        "ratio": 0.697,
+        "p_5000": 0.94341,
+        "examples": [
+          "M-1661+M-855 (DKG. (S)|7I|15-: ['861_kanam'])",
+          "M-1842+M-834 (DKG. (S)|7IX|31-: ['861_kanam'])",
+          "M-1701+M-850 (DKG|First Street-|10-: ['861_kanam'])",
+          "M-1927+M-924 (DKG|First Street-|21-: ['861_kanam'])",
+          "M-214+M-1311 (DKG. (S)|1III|17-: ['400_cikka'])",
+          "M-21+M-28 (DKG. (S)|9VIII|21-: ['861_kanam'])",
+          "M-210+M-663 (DKG. (S)|1III|2-: ['861_kanam'])",
+          "M-170+M-232 (DKG. (S)|9IX|65-: ['390_tai'])"
+        ]
+      },
+      {
+        "label": "Same-Room (<=3ft): Any Shared Locked T5 Content Root (excl. *kuṭi & nums)",
+        "n_seals": 770,
+        "n_pairs": 158,
+        "obs": 23,
+        "exp": 28.54,
+        "ratio": 0.806,
+        "p_5000": 0.89422,
+        "examples": [
+          "M-53+M-157 (DKG. (S)|8A-|44-: ['900_tinkal'])",
+          "M-1661+M-855 (DKG. (S)|7I|15-: ['861_kanam'])",
+          "M-1842+M-834 (DKG. (S)|7IX|31-: ['861_kanam'])",
+          "M-1701+M-850 (DKG|First Street-|10-: ['861_kanam'])",
+          "M-1686+M-64 (DKG|First Street-|21-: ['220_min'])",
+          "M-1927+M-924 (DKG|First Street-|21-: ['861_kanam'])",
+          "M-1713+M-1090 (DKG|First Street-|1-: ['220_min'])",
+          "M-214+M-1311 (DKG. (S)|1III|17-: ['400_cikka'])"
+        ]
+      },
+      {
+        "label": "Same-House (<=3ft): Shared Numeral+Star Clan (*mīṉ compound)",
+        "n_seals": 106,
+        "n_pairs": 31,
+        "obs": 5,
+        "exp": 5.49,
+        "ratio": 0.911,
+        "p_5000": 0.69366,
+        "examples": [
+          "M-1763+M-1148 (DKG. (S)|1I: ['NUM2+220_min'])",
+          "M-57+M-130 (DKG. (S)|12V: ['NUM2+220_min'])",
+          "M-240+M-1044 (HRB|5XXIX: ['NUM2+220_min'])",
+          "M-367+M-723 (DKG. (N)|16II: ['NUM2+220_min'])",
+          "M-721+M-1299 (DKC|Street C3 betw. 11/12-: ['NUM2+233_vetimin'])"
+        ]
+      },
+      {
+        "label": "Same-House (<=3ft): Shared Craft/Trade/Office Role",
+        "n_seals": 745,
+        "n_pairs": 1136,
+        "obs": 211,
+        "exp": 197.72,
+        "ratio": 1.067,
+        "p_5000": 0.16437,
+        "examples": [
+          "M-308+M-1141 (DKG. (N)|13III: ['520_vel'])",
+          "M-1696+M-1880 (DKB|3VII: ['861_kanam'])",
+          "M-1696+M-795 (DKB|3VII: ['861_kanam'])",
+          "M-1880+M-795 (DKB|3VII: ['154_ka', '861_kanam'])",
+          "M-1953+M-916 (DKC|11-: ['806_kampu'])",
+          "M-1850+M-7 (DKC|12-: ['861_kanam'])",
+          "M-1850+M-1152 (DKC|12-: ['861_kanam'])",
+          "M-7+M-1152 (DKC|12-: ['861_kanam'])"
+        ]
+      },
+      {
+        "label": "Same-House (<=3ft): Master *kuṭi + Attached *kuṭiy-āḷ/*cikka Pairing",
+        "n_seals": 441,
+        "n_pairs": 413,
+        "obs": 59,
+        "exp": 61.95,
+        "ratio": 0.952,
+        "p_5000": 0.65267,
+        "examples": [
+          "M-1923+M-53 (DKG. (S)|8A-)",
+          "M-1753+M-53 (DKG. (S)|8A-)",
+          "M-53+M-157 (DKG. (S)|8A-)",
+          "M-1743+M-835 (DKG. (N)|18-)",
+          "M-966+M-835 (DKG. (N)|18-)",
+          "M-112+M-835 (DKG. (N)|18-)",
+          "M-217+M-835 (DKG. (N)|18-)",
+          "M-239+M-835 (DKG. (N)|18-)"
+        ]
+      }
+    ]
+  }
+}
