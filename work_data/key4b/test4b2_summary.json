@@ -1,0 +1,116 @@
+{
+  "n_shuf": 5000,
+  "total_1blank_intact_lipi": 1126,
+  "total_1blank_intact_new": 73,
+  "top30_1blank_intact_lipi": 761,
+  "top30_1blank_intact_new": 38,
+  "test4b2a_raw_dedr_compound_honest_null": {
+    "vis_plus_dedr_comp_lexshuf": {
+      "obs": 11,
+      "null_mean": 12.678,
+      "null_sd": 2.908,
+      "z": -0.577,
+      "p": 0.77045
+    },
+    "triple_lock_vis_rebus_comp_lexshuf": {
+      "obs": 2,
+      "null_mean": 1.2116,
+      "null_sd": 1.1101,
+      "z": 0.71,
+      "p": 0.34873
+    },
+    "vis_plus_dedr_comp_within_known_perm": {
+      "obs": 11,
+      "null_mean": 9.6908,
+      "null_sd": 3.3195,
+      "z": 0.394,
+      "p": 0.35493
+    },
+    "triple_lock_within_known_perm": {
+      "obs": 2,
+      "null_mean": 2.2552,
+      "null_sd": 1.4266,
+      "z": -0.179,
+      "p": 0.67487
+    }
+  },
+  "test4b2b_redesign_head_final_and_unseen_replication": {
+    "wave2_vs_locked19_lipi": {
+      "fwd": 650,
+      "rev": 86,
+      "rate": 0.8832,
+      "null_mean": 0.8266,
+      "null_sd": 0.0449,
+      "z": 1.262,
+      "p": 0.07678
+    },
+    "wave2_vs_locked19_new": {
+      "fwd": 98,
+      "rev": 10,
+      "rate": 0.9074,
+      "null_mean": 0.8112,
+      "null_sd": 0.0518,
+      "z": 1.857,
+      "p": 0.0108
+    },
+    "full49_head_final_lipi_tokens": {
+      "fwd": 1353,
+      "rev": 431,
+      "rate": 0.7584,
+      "null_mean": 0.4842,
+      "null_sd": 0.1027,
+      "z": 2.671,
+      "p": 0.006
+    },
+    "full49_head_final_lipi_types": {
+      "fwd": 147,
+      "rev": 82,
+      "rate": 0.6419,
+      "null_mean": 0.5002,
+      "null_sd": 0.0583,
+      "z": 2.429,
+      "p": 0.007
+    },
+    "full49_head_final_new_tokens": {
+      "fwd": 183,
+      "rev": 76,
+      "rate": 0.7066,
+      "null_mean": 0.4857,
+      "null_sd": 0.1008,
+      "z": 2.19,
+      "p": 0.011
+    },
+    "full49_head_final_new_types": {
+      "fwd": 71,
+      "rev": 29,
+      "rate": 0.71,
+      "null_mean": 0.4974,
+      "null_sd": 0.0695,
+      "z": 3.057,
+      "p": 0.001
+    },
+    "unseen_new_physical_replication": {
+      "n_attested_in_new": 27,
+      "n_or_ge_1_5": 21,
+      "pct_or_ge_1_5": 77.8,
+      "n_p_lt_005": 13,
+      "pct_p_lt_005": 48.1,
+      "exact_binom_p_vs_5pct": 1.26e-10,
+      "replicated_p05_signs": [
+        "700",
+        "861",
+        "060",
+        "590",
+        "741",
+        "615",
+        "233",
+        "415",
+        "920",
+        "760",
+        "140",
+        "142",
+        "503"
+      ]
+    }
+  }
+}

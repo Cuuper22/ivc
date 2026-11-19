@@ -1,0 +1,77 @@
+{
+  "n_shuf": 5000,
+  "n_signs": 19,
+  "pdrav_2branch": {
+    "phon_exact": {
+      "obs": 14,
+      "n": 19,
+      "null_mu": 8.7556,
+      "null_sd": 2.002,
+      "z": 2.62,
+      "p": 0.0068
+    },
+    "phon_stem": {
+      "obs": 18,
+      "n": 19,
+      "null_mu": 13.3722,
+      "null_sd": 1.6414,
+      "z": 2.819,
+      "p": 0.0026
+    },
+    "ascii_exact": {
+      "obs": 14,
+      "n": 19,
+      "null_mu": 11.464,
+      "null_sd": 1.8115,
+      "z": 1.4,
+      "p": 0.12517
+    },
+    "direct_polysemy_domperm": {
+      "obs": 15,
+      "n": 19,
+      "null_mu": 12.0962,
+      "null_sd": 1.8022,
+      "z": 1.611,
+      "p": 0.08898
+    }
+  },
+  "pdrav_2lang": {
+    "phon_exact": {
+      "obs": 15,
+      "n": 19,
+      "null_mu": 11.0198,
+      "null_sd": 1.8374,
+      "z": 2.166,
+      "p": 0.0246
+    },
+    "phon_stem": {
+      "obs": 18,
+      "n": 19,
+      "null_mu": 15.151,
+      "null_sd": 1.3249,
+      "z": 2.15,
+      "p": 0.03039
+    },
+    "ascii_exact": {
+      "obs": 15,
+      "n": 19,
+      "null_mu": 13.626,
+      "null_sd": 1.5569,
+      "z": 0.883,
+      "p": 0.28174
+    },
+    "direct_polysemy_domperm": {
+      "obs": 15,
+      "n": 19,
+      "null_mu": 12.8436,
+      "null_sd": 1.7068,
+      "z": 1.263,
+      "p": 0.16517
+    }
+  },
+  "status_counts": {
+    "building on it": 7,
+    "testing it": 11,
+    "null": 1
+  }
+}

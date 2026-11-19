@@ -1,0 +1,491 @@
+{
+  "results": {
+    "lipi_intact_3600": {
+      "T0_Baseline_K3A": {
+        "n_signs_in_tier": 33,
+        "n_faces": 3600,
+        "total_tokens": 13209,
+        "covered_tokens": 6019,
+        "token_pct": 45.57,
+        "faces_100pct": 364,
+        "faces_100pct_pct": 10.11,
+        "faces_100pct_len3plus": 116,
+        "faces_75pct": 585,
+        "faces_75pct_pct": 16.25,
+        "faces_50pct": 2058,
+        "faces_50pct_pct": 57.17
+      },
+      "T1_Plus_4B_Wave2": {
+        "n_signs_in_tier": 51,
+        "n_faces": 3600,
+        "total_tokens": 13209,
+        "covered_tokens": 8348,
+        "token_pct": 63.2,
+        "faces_100pct": 1045,
+        "faces_100pct_pct": 29.03,
+        "faces_100pct_len3plus": 305,
+        "faces_75pct": 1526,
+        "faces_75pct_pct": 42.39,
+        "faces_50pct": 2747,
+        "faces_50pct_pct": 76.31
+      },
+      "T2_Plus_4A_Ligatures": {
+        "n_signs_in_tier": 82,
+        "n_faces": 3600,
+        "total_tokens": 13209,
+        "covered_tokens": 9155,
+        "token_pct": 69.31,
+        "faces_100pct": 1286,
+        "faces_100pct_pct": 35.72,
+        "faces_100pct_len3plus": 433,
+        "faces_75pct": 1842,
+        "faces_75pct_pct": 51.17,
+        "faces_50pct": 3023,
+        "faces_50pct_pct": 83.97
+      },
+      "T3_Plus_4D_PureAllo": {
+        "n_signs_in_tier": 98,
+        "n_faces": 3600,
+        "total_tokens": 13209,
+        "covered_tokens": 9416,
+        "token_pct": 71.28,
+        "faces_100pct": 1394,
+        "faces_100pct_pct": 38.72,
+        "faces_100pct_len3plus": 501,
+        "faces_75pct": 1990,
+        "faces_75pct_pct": 55.28,
+        "faces_50pct": 3062,
+        "faces_50pct_pct": 85.06
+      },
+      "T4_Master_BuildingOnIt": {
+        "n_signs_in_tier": 103,
+        "n_faces": 3600,
+        "total_tokens": 13209,
+        "covered_tokens": 9576,
+        "token_pct": 72.5,
+        "faces_100pct": 1463,
+        "faces_100pct_pct": 40.64,
+        "faces_100pct_len3plus": 563,
+        "faces_75pct": 2050,
+        "faces_75pct_pct": 56.94,
+        "faces_50pct": 3088,
+        "faces_50pct_pct": 85.78
+      },
+      "T5_Master_Plus_ExtNumsMeas": {
+        "n_signs_in_tier": 114,
+        "n_faces": 3600,
+        "total_tokens": 13209,
+        "covered_tokens": 9777,
+        "token_pct": 74.02,
+        "faces_100pct": 1532,
+        "faces_100pct_pct": 42.56,
+        "faces_100pct_len3plus": 612,
+        "faces_75pct": 2127,
+        "faces_75pct_pct": 59.08,
+        "faces_50pct": 3139,
+        "faces_50pct_pct": 87.19
+      },
+      "T6_Frontier_Plus_TestingIt": {
+        "n_signs_in_tier": 134,
+        "n_faces": 3600,
+        "total_tokens": 13209,
+        "covered_tokens": 10473,
+        "token_pct": 79.29,
+        "faces_100pct": 1737,
+        "faces_100pct_pct": 48.25,
+        "faces_100pct_len3plus": 788,
+        "faces_75pct": 2433,
+        "faces_75pct_pct": 67.58,
+        "faces_50pct": 3251,
+        "faces_50pct_pct": 90.31
+      }
+    },
+    "new_intact_627": {
+      "T0_Baseline_K3A": {
+        "n_signs_in_tier": 33,
+        "n_faces": 563,
+        "total_tokens": 1994,
+        "covered_tokens": 913,
+        "token_pct": 45.79,
+        "faces_100pct": 96,
+        "faces_100pct_pct": 17.05,
+        "faces_100pct_len3plus": 23,
+        "faces_75pct": 121,
+        "faces_75pct_pct": 21.49,
+        "faces_50pct": 278,
+        "faces_50pct_pct": 49.38
+      },
+      "T1_Plus_4B_Wave2": {
+        "n_signs_in_tier": 51,
+        "n_faces": 563,
+        "total_tokens": 1994,
+        "covered_tokens": 1339,
+        "token_pct": 67.15,
+        "faces_100pct": 174,
+        "faces_100pct_pct": 30.91,
+        "faces_100pct_len3plus": 72,
+        "faces_75pct": 263,
+        "faces_75pct_pct": 46.71,
+        "faces_50pct": 426,
+        "faces_50pct_pct": 75.67
+      },
+      "T2_Plus_4A_Ligatures": {
+        "n_signs_in_tier": 82,
+        "n_faces": 563,
+        "total_tokens": 1994,
+        "covered_tokens": 1471,
+        "token_pct": 73.77,
+        "faces_100pct": 227,
+        "faces_100pct_pct": 40.32,
+        "faces_100pct_len3plus": 102,
+        "faces_75pct": 320,
+        "faces_75pct_pct": 56.84,
+        "faces_50pct": 459,
+        "faces_50pct_pct": 81.53
+      },
+      "T3_Plus_4D_PureAllo": {
+        "n_signs_in_tier": 98,
+        "n_faces": 563,
+        "total_tokens": 1994,
+        "covered_tokens": 1477,
+        "token_pct": 74.07,
+        "faces_100pct": 230,
+        "faces_100pct_pct": 40.85,
+        "faces_100pct_len3plus": 103,
+        "faces_75pct": 326,
+        "faces_75pct_pct": 57.9,
+        "faces_50pct": 461,
+        "faces_50pct_pct": 81.88
+      },
+      "T4_Master_BuildingOnIt": {
+        "n_signs_in_tier": 103,
+        "n_faces": 563,
+        "total_tokens": 1994,
+        "covered_tokens": 1483,
+        "token_pct": 74.37,
+        "faces_100pct": 231,
+        "faces_100pct_pct": 41.03,
+        "faces_100pct_len3plus": 104,
+        "faces_75pct": 329,
+        "faces_75pct_pct": 58.44,
+        "faces_50pct": 463,
+        "faces_50pct_pct": 82.24
+      },
+      "T5_Master_Plus_ExtNumsMeas": {
+        "n_signs_in_tier": 114,
+        "n_faces": 563,
+        "total_tokens": 1994,
+        "covered_tokens": 1507,
+        "token_pct": 75.58,
+        "faces_100pct": 244,
+        "faces_100pct_pct": 43.34,
+        "faces_100pct_len3plus": 113,
+        "faces_75pct": 343,
+        "faces_75pct_pct": 60.92,
+        "faces_50pct": 471,
+        "faces_50pct_pct": 83.66
+      },
+      "T6_Frontier_Plus_TestingIt": {
+        "n_signs_in_tier": 134,
+        "n_faces": 563,
+        "total_tokens": 1994,
+        "covered_tokens": 1632,
+        "token_pct": 81.85,
+        "faces_100pct": 296,
+        "faces_100pct_pct": 52.58,
+        "faces_100pct_len3plus": 154,
+        "faces_75pct": 396,
+        "faces_75pct_pct": 70.34,
+        "faces_50pct": 494,
+        "faces_50pct_pct": 87.74
+      }
+    },
+    "combined_intact_4227": {
+      "T0_Baseline_K3A": {
+        "n_signs_in_tier": 33,
+        "n_faces": 4163,
+        "total_tokens": 15203,
+        "covered_tokens": 6932,
+        "token_pct": 45.6,
+        "faces_100pct": 460,
+        "faces_100pct_pct": 11.05,
+        "faces_100pct_len3plus": 139,
+        "faces_75pct": 706,
+        "faces_75pct_pct": 16.96,
+        "faces_50pct": 2336,
+        "faces_50pct_pct": 56.11
+      },
+      "T1_Plus_4B_Wave2": {
+        "n_signs_in_tier": 51,
+        "n_faces": 4163,
+        "total_tokens": 15203,
+        "covered_tokens": 9687,
+        "token_pct": 63.72,
+        "faces_100pct": 1219,
+        "faces_100pct_pct": 29.28,
+        "faces_100pct_len3plus": 377,
+        "faces_75pct": 1789,
+        "faces_75pct_pct": 42.97,
+        "faces_50pct": 3173,
+        "faces_50pct_pct": 76.22
+      },
+      "T2_Plus_4A_Ligatures": {
+        "n_signs_in_tier": 82,
+        "n_faces": 4163,
+        "total_tokens": 15203,
+        "covered_tokens": 10626,
+        "token_pct": 69.89,
+        "faces_100pct": 1513,
+        "faces_100pct_pct": 36.34,
+        "faces_100pct_len3plus": 535,
+        "faces_75pct": 2162,
+        "faces_75pct_pct": 51.93,
+        "faces_50pct": 3482,
+        "faces_50pct_pct": 83.64
+      },
+      "T3_Plus_4D_PureAllo": {
+        "n_signs_in_tier": 98,
+        "n_faces": 4163,
+        "total_tokens": 15203,
+        "covered_tokens": 10893,
+        "token_pct": 71.65,
+        "faces_100pct": 1624,
+        "faces_100pct_pct": 39.01,
+        "faces_100pct_len3plus": 604,
+        "faces_75pct": 2316,
+        "faces_75pct_pct": 55.63,
+        "faces_50pct": 3523,
+        "faces_50pct_pct": 84.63
+      },
+      "T4_Master_BuildingOnIt": {
+        "n_signs_in_tier": 103,
+        "n_faces": 4163,
+        "total_tokens": 15203,
+        "covered_tokens": 11059,
+        "token_pct": 72.74,
+        "faces_100pct": 1694,
+        "faces_100pct_pct": 40.69,
+        "faces_100pct_len3plus": 667,
+        "faces_75pct": 2379,
+        "faces_75pct_pct": 57.15,
+        "faces_50pct": 3551,
+        "faces_50pct_pct": 85.3
+      },
+      "T5_Master_Plus_ExtNumsMeas": {
+        "n_signs_in_tier": 114,
+        "n_faces": 4163,
+        "total_tokens": 15203,
+        "covered_tokens": 11284,
+        "token_pct": 74.22,
+        "faces_100pct": 1776,
+        "faces_100pct_pct": 42.66,
+        "faces_100pct_len3plus": 725,
+        "faces_75pct": 2470,
+        "faces_75pct_pct": 59.33,
+        "faces_50pct": 3610,
+        "faces_50pct_pct": 86.72
+      },
+      "T6_Frontier_Plus_TestingIt": {
+        "n_signs_in_tier": 134,
+        "n_faces": 4163,
+        "total_tokens": 15203,
+        "covered_tokens": 12105,
+        "token_pct": 79.62,
+        "faces_100pct": 2033,
+        "faces_100pct_pct": 48.83,
+        "faces_100pct_len3plus": 942,
+        "faces_75pct": 2829,
+        "faces_75pct_pct": 67.96,
+        "faces_50pct": 3745,
+        "faces_50pct_pct": 89.96
+      }
+    },
+    "combined_all_6862": {
+      "T0_Baseline_K3A": {
+        "n_signs_in_tier": 33,
+        "n_faces": 6790,
+        "total_tokens": 23710,
+        "covered_tokens": 9826,
+        "token_pct": 41.44,
+        "faces_100pct": 647,
+        "faces_100pct_pct": 9.53,
+        "faces_100pct_len3plus": 158,
+        "faces_75pct": 963,
+        "faces_75pct_pct": 14.18,
+        "faces_50pct": 3307,
+        "faces_50pct_pct": 48.7
+      },
+      "T1_Plus_4B_Wave2": {
+        "n_signs_in_tier": 51,
+        "n_faces": 6790,
+        "total_tokens": 23710,
+        "covered_tokens": 13567,
+        "token_pct": 57.22,
+        "faces_100pct": 1517,
+        "faces_100pct_pct": 22.34,
+        "faces_100pct_len3plus": 415,
+        "faces_75pct": 2259,
+        "faces_75pct_pct": 33.27,
+        "faces_50pct": 4647,
+        "faces_50pct_pct": 68.44
+      },
+      "T2_Plus_4A_Ligatures": {
+        "n_signs_in_tier": 82,
+        "n_faces": 6790,
+        "total_tokens": 23710,
+        "covered_tokens": 14871,
+        "token_pct": 62.72,
+        "faces_100pct": 1861,
+        "faces_100pct_pct": 27.41,
+        "faces_100pct_len3plus": 591,
+        "faces_75pct": 2728,
+        "faces_75pct_pct": 40.18,
+        "faces_50pct": 5132,
+        "faces_50pct_pct": 75.58
+      },
+      "T3_Plus_4D_PureAllo": {
+        "n_signs_in_tier": 98,
+        "n_faces": 6790,
+        "total_tokens": 23710,
+        "covered_tokens": 15206,
+        "token_pct": 64.13,
+        "faces_100pct": 1991,
+        "faces_100pct_pct": 29.32,
+        "faces_100pct_len3plus": 669,
+        "faces_75pct": 2906,
+        "faces_75pct_pct": 42.8,
+        "faces_50pct": 5205,
+        "faces_50pct_pct": 76.66
+      },
+      "T4_Master_BuildingOnIt": {
+        "n_signs_in_tier": 103,
+        "n_faces": 6790,
+        "total_tokens": 23710,
+        "covered_tokens": 15426,
+        "token_pct": 65.06,
+        "faces_100pct": 2065,
+        "faces_100pct_pct": 30.41,
+        "faces_100pct_len3plus": 735,
+        "faces_75pct": 2986,
+        "faces_75pct_pct": 43.98,
+        "faces_50pct": 5255,
+        "faces_50pct_pct": 77.39
+      },
+      "T5_Master_Plus_ExtNumsMeas": {
+        "n_signs_in_tier": 114,
+        "n_faces": 6790,
+        "total_tokens": 23710,
+        "covered_tokens": 15742,
+        "token_pct": 66.39,
+        "faces_100pct": 2158,
+        "faces_100pct_pct": 31.78,
+        "faces_100pct_len3plus": 803,
+        "faces_75pct": 3106,
+        "faces_75pct_pct": 45.74,
+        "faces_50pct": 5344,
+        "faces_50pct_pct": 78.7
+      },
+      "T6_Frontier_Plus_TestingIt": {
+        "n_signs_in_tier": 134,
+        "n_faces": 6790,
+        "total_tokens": 23710,
+        "covered_tokens": 16878,
+        "token_pct": 71.19,
+        "faces_100pct": 2453,
+        "faces_100pct_pct": 36.13,
+        "faces_100pct_len3plus": 1042,
+        "faces_75pct": 3585,
+        "faces_75pct_pct": 52.8,
+        "faces_50pct": 5587,
+        "faces_50pct_pct": 82.28
+      }
+    }
+  },
+  "cross_lever_synergy_inherited_pure": {
+    "817": "Key4D_PureAllo(861)",
+    "707": "Key4D_PureAllo(705)",
+    "178": "Key4D_PureAllo(176)",
+    "157": "Key4D_PureAllo(156)",
+    "899": "Key4D_PureAllo(900)",
+    "014": "Key4D_PureAllo(004)",
+    "062": "Key4D_PureAllo(061)",
+    "005": "Key4D_PureAllo(015)",
+    "323": "Key4D_PureAllo(320)",
+    "322": "Key4D_PureAllo(320)",
+    "324": "Key4D_PureAllo(320)",
+    "325": "Key4D_PureAllo(320)",
+    "408": "Key4D_PureAllo(406)",
+    "409": "Key4D_PureAllo(406)",
+    "219": "Key4D_PureAllo(097)",
+    "216": "Key4D_PureAllo(215)"
+  },
+  "cross_lever_synergy_inherited_workshop": {
+    "402": "Key4D_WorkshopAllo(400)",
+    "803": "Key4D_WorkshopAllo(806)",
+    "177": "Key4D_WorkshopAllo(176)",
+    "752": "Key4D_WorkshopAllo(760)",
+    "716": "Key4D_WorkshopAllo(717)"
+  },
+  "top_15_remaining_after_T5": [
+    [
+      "240",
+      297
+    ],
+    [
+      "060",
+      196
+    ],
+    [
+      "798",
+      121
+    ],
+    [
+      "550",
+      97
+    ],
+    [
+      "142",
+      83
+    ],
+    [
+      "440",
+      63
+    ],
+    [
+      "692",
+      62
+    ],
+    [
+      "435",
+      62
+    ],
+    [
+      "617",
+      60
+    ],
+    [
+      "585",
+      52
+    ],
+    [
+      "595",
+      51
+    ],
+    [
+      "845",
+      51
+    ],
+    [
+      "527",
+      50
+    ],
+    [
+      "416",
+      49
+    ],
+    [
+      "013",
+      44
+    ]
+  ]
+}

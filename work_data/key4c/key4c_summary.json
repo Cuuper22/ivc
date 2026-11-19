@@ -1,0 +1,455 @@
+{
+  "lexicon_meta": {
+    "sangam_pure_n": 86,
+    "sangam_loan_n": 15,
+    "sangam_pure_absent_from_dedr": 40,
+    "rival_ia_n": 86,
+    "rival_ia_verified_mw": 80,
+    "rival_sum_n": 86,
+    "rival_sum_verified_halloran": 60
+  },
+  "test_4c1": {
+    "n_shuffles": 5000,
+    "lipi_recurring_l19_num_bigrams": 140,
+    "lipi_all_l19_num_bigrams": 238,
+    "raw_dedr_rec": {
+      "pairs": 16,
+      "words": 11,
+      "lipi_mass": 212,
+      "new_mass": 31
+    },
+    "sangam_pure_rec": {
+      "pairs": 18,
+      "words": 13,
+      "lipi_mass": 235,
+      "new_mass": 40,
+      "words_replicated_in_new": 9,
+      "newly_unlocked_beyond_dedr": [
+        "aṟumīṉ",
+        "aṭikkuṭi",
+        "irukāl",
+        "kaḷappāy",
+        "mummīṉ",
+        "muttiṅkaḷ",
+        "nāḷmīṉ",
+        "orukuṭi",
+        "orutalai"
+      ]
+    },
+    "sangam_pure_all": {
+      "pairs": 26,
+      "words": 15,
+      "lipi_mass": 243,
+      "new_mass": 41,
+      "words_replicated_in_new": 9,
+      "newly_unlocked_beyond_dedr": [
+        "aṟumīṉ",
+        "aṭikkuṭi",
+        "eḻumīṉ",
+        "irukāl",
+        "kaḷappāy",
+        "mummīṉ",
+        "muttiṅkaḷ",
+        "nāḷmīṉ",
+        "orukuṭi",
+        "orutalai"
+      ]
+    },
+    "prakrit_loan_hits_rec": 0,
+    "rival_ia_rec": {
+      "pairs": 7,
+      "words": 5,
+      "lipi_mass": 133,
+      "new_mass": 28,
+      "hits": [
+        "gṛhapati",
+        "dvādaśa",
+        "tripāda",
+        "trimāsa",
+        "cāturmāsya",
+        "tripāda",
+        "dvādaśa"
+      ]
+    },
+    "rival_sum_rec": {
+      "pairs": 2,
+      "words": 1,
+      "lipi_mass": 25,
+      "new_mass": 6,
+      "hits": [
+        "mul-mul",
+        "mul-mul"
+      ]
+    },
+    "null_perm19_rec_words": {
+      "mean": 6.8836,
+      "std": 1.9974105661565824,
+      "z": 3.0621646363717687,
+      "p": 0.004599080183963208
+    },
+    "null_perm19_rec_pairs": {
+      "mean": 9.2338,
+      "std": 2.7939038529892093,
+      "z": 3.1376169192869705,
+      "p": 0.0033993201359728054
+    },
+    "null_perm19_rec_lipi_mass": {
+      "mean": 123.0126,
+      "std": 82.43123815062229,
+      "z": 1.3585553548931446,
+      "p": 0.09658068386322735
+    },
+    "null_perm19_rec_new_mass": {
+      "mean": 20.7342,
+      "std": 13.494471850135625,
+      "z": 1.4276809210437065,
+      "p": 0.10277944411117776
+    },
+    "null_perm19_all_words": {
+      "mean": 9.4722,
+      "std": 2.104308148194202,
+      "z": 2.6268966380915475,
+      "p": 0.011397720455908818
+    },
+    "null_perm19_all_lipi_mass": {
+      "mean": 128.0904,
+      "std": 82.43936606776845,
+      "z": 1.3938680691156666,
+      "p": 0.09258148370325935
+    },
+    "null_draw19_rec_words": {
+      "mean": 0.388,
+      "std": 0.7426751061282805,
+      "z": 16.981853701477856,
+      "p": 0.0001999600079984003
+    },
+    "null_draw19_rec_pairs": {
+      "mean": 0.5106,
+      "std": 1.029805680673781,
+      "z": 16.98320404346288,
+      "p": 0.0001999600079984003
+    },
+    "null_draw19_rec_lipi_mass": {
+      "mean": 8.072,
+      "std": 23.647195477916487,
+      "z": 9.59640225463194,
+      "p": 0.0003999200159968006
+    },
+    "null_draw19_rec_new_mass": {
+      "mean": 1.2764,
+      "std": 4.184436036192714,
+      "z": 9.254198096246531,
+      "p": 0.0007998400319936012
+    },
+    "null_draw19_all_words": {
+      "mean": 0.4636,
+      "std": 0.8530067784682738,
+      "z": 17.04136516488498,
+      "p": 0.0001999600079984003
+    }
+  },
+  "test_4c2": {
+    "indus_lipi": {
+      "header_init": {
+        "k": 1074,
+        "n": 1377,
+        "p": 0.7799564270152506
+      },
+      "mod_before_gen": {
+        "k": 783,
+        "n": 792,
+        "p": 0.9886363636363636
+      },
+      "owner_before_title": {
+        "k": 354,
+        "n": 387,
+        "p": 0.9147286821705426
+      },
+      "num_before_comm": {
+        "k": 632,
+        "n": 719,
+        "p": 0.8789986091794159
+      },
+      "meas_before_num": {
+        "k": 218,
+        "n": 264,
+        "p": 0.8257575757575758
+      },
+      "pot_short": {
+        "k": 286,
+        "n": 297,
+        "p": 0.9629629629629629
+      }
+    },
+    "indus_mah": {
+      "header_init": {
+        "k": 1050,
+        "n": 1344,
+        "p": 0.78125
+      },
+      "mod_before_gen": {
+        "k": 710,
+        "n": 720,
+        "p": 0.9861111111111112
+      },
+      "owner_before_title": {
+        "k": 285,
+        "n": 307,
+        "p": 0.9283387622149837
+      },
+      "num_before_comm": {
+        "k": 471,
+        "n": 476,
+        "p": 0.9894957983193278
+      },
+      "meas_before_num": {
+        "k": 142,
+        "n": 169,
+        "p": 0.8402366863905325
+      },
+      "pot_short": {
+        "k": 74,
+        "n": 86,
+        "p": 0.8604651162790697
+      }
+    },
+    "account_reversal_fisher_p_lipi": 7.538466020432776e-98,
+    "account_reversal_fisher_p_mah": 3.46731957399736e-107,
+    "ur3_cdli_counts": {
+      "ur3_meas_num_before": 3319,
+      "ur3_meas_after": 200,
+      "ur3_comm_num_before": 1685,
+      "ur3_comm_after": 629
+    },
+    "tradition_scores": {
+      "Tamil-Brahmi": {
+        "mae_align": 0.8424860982857266,
+        "dir_cos": 0.8991976009478567,
+        "sign_agree": 6
+      },
+      "Prakrit-Brahmi": {
+        "mae_align": 0.6913848076011025,
+        "dir_cos": 0.4211519591342586,
+        "sign_agree": 4
+      },
+      "Ur-III-Sumerian": {
+        "mae_align": 0.3772378982695007,
+        "dir_cos": -0.4274428043307799,
+        "sign_agree": 2
+      }
+    },
+    "tradition_axes": {
+      "Tamil-Brahmi": {
+        "header_init": {
+          "k": 17,
+          "n": 17,
+          "p": 1.0
+        },
+        "mod_before_gen": {
+          "k": 24,
+          "n": 24,
+          "p": 1.0
+        },
+        "owner_before_title": {
+          "k": 8,
+          "n": 15,
+          "p": 0.5333333333333333
+        },
+        "num_before_comm": {
+          "k": 5,
+          "n": 5,
+          "p": 1.0
+        },
+        "meas_before_num": {
+          "k": 5,
+          "n": 5,
+          "p": 1.0
+        },
+        "pot_short": {
+          "k": 10,
+          "n": 10,
+          "p": 1.0
+        }
+      },
+      "Prakrit-Brahmi": {
+        "header_init": {
+          "k": 15,
+          "n": 18,
+          "p": 0.8333333333333334
+        },
+        "mod_before_gen": {
+          "k": 24,
+          "n": 24,
+          "p": 1.0
+        },
+        "owner_before_title": {
+          "k": 7,
+          "n": 16,
+          "p": 0.4375
+        },
+        "num_before_comm": {
+          "k": 5,
+          "n": 5,
+          "p": 1.0
+        },
+        "meas_before_num": {
+          "k": 0,
+          "n": 5,
+          "p": 0.0
+        },
+        "pot_short": {
+          "k": 3,
+          "n": 5,
+          "p": 0.6
+        }
+      },
+      "Ur-III-Sumerian": {
+        "header_init": {
+          "k": 0,
+          "n": 22,
+          "p": 0.0
+        },
+        "mod_before_gen": {
+          "k": 0,
+          "n": 22,
+          "p": 0.0
+        },
+        "owner_before_title": {
+          "k": 19,
+          "n": 19,
+          "p": 1.0
+        },
+        "num_before_comm": {
+          "k": 1685,
+          "n": 2314,
+          "p": 0.7281763180639585
+        },
+        "meas_before_num": {
+          "k": 200,
+          "n": 3519,
+          "p": 0.05683432793407218
+        },
+        "pot_short": {
+          "k": 0,
+          "n": 5,
+          "p": 0.0
+        }
+      }
+    },
+    "null_flip_mae": {
+      "mean": 0.508875224263752,
+      "std": 0.14750237128376154,
+      "z": 2.261732276697993,
+      "p": 0.015596880623875225
+    },
+    "null_flip_cos": {
+      "mean": -0.01470300148128439,
+      "std": 0.4050298828732863,
+      "z": 2.2563782107777346,
+      "p": 0.015596880623875225
+    },
+    "perm_gap_tb_vs_pkt": {
+      "obs_gap": 0.15110129068462408,
+      "null_mean": -0.00017329754912826631,
+      "null_std": 0.06638272810412832,
+      "z": 2.278824515865967,
+      "p": 0.009998000399920015
+    },
+    "perm_gap_tb_vs_ur3": {
+      "obs_gap": 0.4697504379560924,
+      "null_mean": -0.0003190529441377618,
+      "null_std": 0.09706552388753682,
+      "z": 4.842805891048067,
+      "p": 0.0001999600079984003
+    }
+  },
+  "test_4c3": {
+    "cup_dist": {
+      "1": 9,
+      "2": 126,
+      "3": 183,
+      "4": 116,
+      "6": 3,
+      "7": 1
+    },
+    "cup_total": 438,
+    "kalam_dist": {
+      "1": 6,
+      "2": 15,
+      "3": 149,
+      "4": 2,
+      "5": 13,
+      "12": 2,
+      "24": 1
+    },
+    "kalam_total": 188,
+    "systems": {
+      "Old_Tamil_Chola": {
+        "step_matches": 3,
+        "super_mult": 12,
+        "cup_divisor_hits": 437,
+        "cup_divisor_rate": 0.997716894977169,
+        "mean_log_liter_err": 0.11686849901123783,
+        "liter_sim": 0.8897021821878182,
+        "composite_score": 2.887419077164987
+      },
+      "Vedic_Arthasastra": {
+        "step_matches": 1,
+        "super_mult": 16,
+        "cup_divisor_hits": 251,
+        "cup_divisor_rate": 0.5730593607305936,
+        "mean_log_liter_err": 2.365392474695142,
+        "liter_sim": 0.09391243488031713,
+        "composite_score": 1.000305128944244
+      },
+      "Ur_III_Sumerian": {
+        "step_matches": 0,
+        "super_mult": 30,
+        "cup_divisor_hits": 321,
+        "cup_divisor_rate": 0.7328767123287672,
+        "mean_log_liter_err": 0.4265108605841205,
+        "liter_sim": 0.6527827759348039,
+        "composite_score": 1.385659488263571
+      },
+      "Vedic_Arthasastra_shifted": {
+        "step_matches": 1,
+        "super_mult": 64,
+        "cup_divisor_hits": 251,
+        "cup_divisor_rate": 0.5730593607305936,
+        "mean_log_liter_err": 0.8579675579509072,
+        "liter_sim": 0.42402300932319537,
+        "composite_score": 1.3304157033871222
+      }
+    },
+    "mc_stats": {
+      "Old_Tamil_Chola": {
+        "obs": 2.887419077164987,
+        "null_mean": 1.2027202410089493,
+        "null_std": 0.31778331995116627,
+        "z": 5.301407375361693,
+        "p": 0.0003999200159968006
+      },
+      "Vedic_Arthasastra": {
+        "obs": 1.000305128944244,
+        "null_mean": 1.2027202410089493,
+        "null_std": 0.31778331995116627,
+        "z": -0.636959523538902,
+        "p": 0.7734453109378124
+      },
+      "Vedic_Arthasastra_shifted": {
+        "obs": 1.3304157033871222,
+        "null_mean": 1.2027202410089493,
+        "null_std": 0.31778331995116627,
+        "z": 0.40183185951294087,
+        "p": 0.3143371325734853
+      },
+      "Ur_III_Sumerian": {
+        "obs": 1.385659488263571,
+        "null_mean": 1.2027202410089493,
+        "null_std": 0.31778331995116627,
+        "z": 0.5756729059370835,
+        "p": 0.2555488902219556
+      }
+    }
+  }
+}
