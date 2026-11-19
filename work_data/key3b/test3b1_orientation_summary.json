@@ -1,0 +1,63 @@
+{
+  "total_seals_audited": 48,
+  "laursen_intact_animal_round_seals": 24,
+  "animal_facing_right_on_impression": 23,
+  "animal_facing_left_on_impression": 1,
+  "gulf_animal_right_pct": 95.8,
+  "abroad_only_intact_animal_round_seals": 20,
+  "abroad_animal_facing_right": 19,
+  "abroad_animal_facing_left": 1,
+  "abroad_animal_right_pct": 95.0,
+  "abroad_animal_compass_vs_mainland_fisher": {
+    "odds_ratio": 0.605,
+    "p_two_sided": 0.4698
+  },
+  "sole_animal_left_exception": "G3-M09 (Gadd 18 / BM 129059 / Laursen #24 \u2014 verified directly on Gadd Pl. III #18 showing BOTH stone face and impression)",
+  "mainland_animal_right_baseline_konasukawa2011": {
+    "right": 1728,
+    "left": 55,
+    "total": 1783,
+    "pct": 96.9
+  },
+  "animal_compass_vs_mainland_fisher": {
+    "odds_ratio": 0.732,
+    "p_two_sided": 0.5326
+  },
+  "gulf_round_directional_tested": 25,
+  "strict_reversed_positive_script": {
+    "count": 3,
+    "uids": [
+      "G3-F02",
+      "G3-M06",
+      "G3-M12"
+    ],
+    "pct": 12.0
+  },
+  "extended_reversed_incl_qalaat7": {
+    "count": 4,
+    "uids": [
+      "G3-B02",
+      "G3-F02",
+      "G3-M06",
+      "G3-M12"
+    ],
+    "pct": 16.0
+  },
+  "mainland_lr_baseline_fuls2022_table2_5": {
+    "lr": 215,
+    "rl_and_other_dir": 4261,
+    "total_directional": 4476,
+    "pct": 4.8
+  },
+  "strict_rev_vs_mainland_fisher": {
+    "odds_ratio": 2.7,
+    "p_greater": 0.118,
+    "p_two_sided": 0.118
+  },
+  "extended_rev_vs_mainland_fisher": {
+    "odds_ratio": 3.77,
+    "p_greater": 0.0309,
+    "p_two_sided": 0.0309
+  },
+  "gadd17_fix_note": "G3-M08 (Gadd 17 / BM 120228) is 100% standard R->L (fwd_ord 316:58 p=4.29e-44; Gadd Pl. III #17 confirms twin 740 jars at far LEFT and bull facing RIGHT over manger). Key #2B's STRONG_REVERSED tag was a 740-001 reverse-adjacency artifact."
+}

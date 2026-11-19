@@ -1,0 +1,145 @@
+{
+  "n_shuf": 5000,
+  "pdrav_2branch": {
+    "phon_exact": {
+      "prim15": {
+        "obs": 5,
+        "null_mean": 3.0816,
+        "null_sd": 1.5293,
+        "z": 1.254,
+        "p": 0.17017
+      },
+      "all20": {
+        "obs": 7,
+        "null_mean": 3.5662,
+        "null_sd": 1.6846,
+        "z": 2.038,
+        "p": 0.05079
+      }
+    },
+    "phon_stem": {
+      "prim15": {
+        "obs": 12,
+        "null_mean": 6.057,
+        "null_sd": 1.7699,
+        "z": 3.358,
+        "p": 0.0016
+      },
+      "all20": {
+        "obs": 14,
+        "null_mean": 7.0964,
+        "null_sd": 1.9936,
+        "z": 3.463,
+        "p": 0.0016
+      }
+    },
+    "ascii_exact": {
+      "prim15": {
+        "obs": 6,
+        "null_mean": 4.6064,
+        "null_sd": 1.6983,
+        "z": 0.821,
+        "p": 0.29254
+      },
+      "all20": {
+        "obs": 9,
+        "null_mean": 5.3684,
+        "null_sd": 1.8971,
+        "z": 1.914,
+        "p": 0.05379
+      }
+    },
+    "direct_polysemy_domperm": {
+      "prim15": {
+        "obs": 9,
+        "null_mean": 5.0188,
+        "null_sd": 1.6311,
+        "z": 2.441,
+        "p": 0.0162
+      },
+      "all20": {
+        "obs": 12,
+        "null_mean": 6.1144,
+        "null_sd": 1.9056,
+        "z": 3.089,
+        "p": 0.0038
+      }
+    }
+  },
+  "pdrav_2lang": {
+    "phon_exact": {
+      "prim15": {
+        "obs": 6,
+        "null_mean": 4.3486,
+        "null_sd": 1.6648,
+        "z": 0.992,
+        "p": 0.23375
+      },
+      "all20": {
+        "obs": 8,
+        "null_mean": 5.0002,
+        "null_sd": 1.8742,
+        "z": 1.601,
+        "p": 0.10318
+      }
+    },
+    "phon_stem": {
+      "prim15": {
+        "obs": 13,
+        "null_mean": 8.129,
+        "null_sd": 1.7982,
+        "z": 2.709,
+        "p": 0.004
+      },
+      "all20": {
+        "obs": 16,
+        "null_mean": 9.6736,
+        "null_sd": 2.0655,
+        "z": 3.063,
+        "p": 0.003
+      }
+    },
+    "ascii_exact": {
+      "prim15": {
+        "obs": 7,
+        "null_mean": 6.4204,
+        "null_sd": 1.7858,
+        "z": 0.325,
+        "p": 0.47291
+      },
+      "all20": {
+        "obs": 10,
+        "null_mean": 7.4942,
+        "null_sd": 2.0205,
+        "z": 1.24,
+        "p": 0.16137
+      }
+    },
+    "direct_polysemy_domperm": {
+      "prim15": {
+        "obs": 10,
+        "null_mean": 6.4094,
+        "null_sd": 1.5641,
+        "z": 2.296,
+        "p": 0.0238
+      },
+      "all20": {
+        "obs": 14,
+        "null_mean": 7.8984,
+        "null_sd": 1.9231,
+        "z": 3.173,
+        "p": 0.0014
+      }
+    }
+  },
+  "status_counts_primary15": {
+    "null": 2,
+    "testing it": 8,
+    "building on it": 5
+  },
+  "status_counts_all20": {
+    "null": 2,
+    "testing it": 10,
+    "building on it": 8
+  }
+}

@@ -1,0 +1,397 @@
+{
+  "prosopography_counts": {
+    "total_curated_pns": 92,
+    "by_cohort": {
+      "UR3_UET3_SEATRADE": 30,
+      "MELUHHA_DIRECT_TAGGED": 22,
+      "MELUHHA_ASSOC_FOREIGN": 4,
+      "UR3_GIRSU_GUABBA_ASSOC": 12,
+      "OB_UET5_ALIK_TILMUN": 24
+    },
+    "direct_meluhha_assimilation": {
+      "total": 22,
+      "Sumerian": 12,
+      "Sumerian_pct": 54.5,
+      "Akkadian_or_Ambiguous": 4,
+      "Akkadian_pct": 18.2,
+      "Non_Sumerian_Foreign": 6,
+      "Foreign_pct": 27.3
+    }
+  },
+  "test3b3a_theophoric_calque": {
+    "curated_UR3_UET3_SEATRADE": {
+      "total_pns": 30,
+      "theophoric_pns": 21,
+      "Moon_Nanna_Suen": 7,
+      "Moon_pct_all": 23.3,
+      "Moon_pct_theo": 33.3,
+      "Sun_Utu_Samas": 1,
+      "Enlil": 1,
+      "Enki_Ea": 1,
+      "Lagash_Local": 3,
+      "Other_Deity": 8,
+      "None_Secular": 9
+    },
+    "curated_UR3_GIRSU_MELUHHA": {
+      "total_pns": 34,
+      "theophoric_pns": 18,
+      "Moon_Nanna_Suen": 0,
+      "Moon_pct_all": 0.0,
+      "Moon_pct_theo": 0.0,
+      "Sun_Utu_Samas": 2,
+      "Enlil": 0,
+      "Enki_Ea": 0,
+      "Lagash_Local": 8,
+      "Other_Deity": 8,
+      "None_Secular": 16
+    },
+    "curated_OB_UET5_ALIK_TILMUN": {
+      "total_pns": 24,
+      "theophoric_pns": 16,
+      "Moon_Nanna_Suen": 10,
+      "Moon_pct_all": 41.7,
+      "Moon_pct_theo": 62.5,
+      "Sun_Utu_Samas": 0,
+      "Enlil": 0,
+      "Enki_Ea": 1,
+      "Lagash_Local": 1,
+      "Other_Deity": 4,
+      "None_Secular": 8
+    },
+    "perm_curated_ur3_vs_girsu_moon": {
+      "obs_diff_pp": 23.3,
+      "z": 2.98,
+      "p_perm_ge": 0.0038,
+      "fisher_or": "inf",
+      "fisher_p_gt": 0.003277,
+      "fisher_p_two": 0.003277
+    },
+    "perm_curated_ur3_vs_ob_moon": {
+      "obs_diff_pp": -18.3,
+      "z": -1.42,
+      "p_perm_ge": 0.9608,
+      "fisher_or": 0.43,
+      "fisher_p_two": 0.2381
+    },
+    "cdli_automated_scan": {
+      "n_docs": {
+        "CDLI_UR3_GIRSU_GUABBA": 609,
+        "CDLI_UR3_UR_UET3": 33,
+        "CDLI_OB_UR_LARSA": 37
+      },
+      "pn_theophoric_hits": {
+        "CDLI_UR3_GIRSU_GUABBA": {
+          "Moon_Nanna_Suen": 81,
+          "Sun_Utu_Samas": 189,
+          "Enlil": 29,
+          "Enki_Ea": 33,
+          "Lagash_Local": 623,
+          "Inzak_Dilmun": 0
+        },
+        "CDLI_UR3_UR_UET3": {
+          "Moon_Nanna_Suen": 22,
+          "Sun_Utu_Samas": 1,
+          "Enlil": 5,
+          "Enki_Ea": 1,
+          "Lagash_Local": 3,
+          "Inzak_Dilmun": 0
+        },
+        "CDLI_OB_UR_LARSA": {
+          "Moon_Nanna_Suen": 7,
+          "Sun_Utu_Samas": 0,
+          "Enlil": 21,
+          "Enki_Ea": 0,
+          "Lagash_Local": 0,
+          "Inzak_Dilmun": 0
+        }
+      },
+      "institutional_tablet_hits": {
+        "CDLI_UR3_GIRSU_GUABBA": {
+          "e2_ninmarki_nanshe_ningirsu": 32,
+          "e2_kiszib_sealhouse": 11,
+          "e2_nanna_or_tithe": 3,
+          "e2_enki": 3
+        },
+        "CDLI_UR3_UR_UET3": {
+          "e2_nanna_or_tithe": 10,
+          "e2_kiszib_sealhouse": 3
+        }
+      },
+      "perm_cdli_ur3_vs_girsu_moon_pn": {
+        "ur3_moon": 22,
+        "ur3_tot_theo": 32,
+        "girsu_moon": 81,
+        "girsu_tot_theo": 955,
+        "z": 10.93,
+        "p_perm_ge": 0.0002,
+        "fisher_or": 23.74,
+        "fisher_p_gt": "8.030e-16"
+      },
+      "fisher_institutional_e2_nanna": {
+        "ur3_tablets": "10/33",
+        "girsu_tablets": "3/609",
+        "odds_ratio": 87.83,
+        "p_gt": "7.833e-12"
+      }
+    }
+  },
+  "test3b3b_phonetic_test": {
+    "locked_11_dravidian_roots": [
+      [
+        "220",
+        "m\u012b\u1e49",
+        "mn"
+      ],
+      [
+        "820",
+        "k\u0101l",
+        "kl"
+      ],
+      [
+        "320",
+        "pa\u1e6di",
+        "pt"
+      ],
+      [
+        "090",
+        "\u0101\u1e37",
+        "l"
+      ],
+      [
+        "154",
+        "k\u0101",
+        "k"
+      ],
+      [
+        "740",
+        "ku\u1e6d-",
+        "kt"
+      ],
+      [
+        "400",
+        "cikk-",
+        "ck"
+      ],
+      [
+        "705",
+        "kalam",
+        "klm"
+      ],
+      [
+        "520",
+        "v\u0113l",
+        "vl"
+      ],
+      [
+        "850",
+        "ka\u1e47",
+        "kn"
+      ],
+      [
+        "390",
+        "tai",
+        "t"
+      ]
+    ],
+    "strict_foreign_meluhhan_pns": [
+      [
+        "Nanasa",
+        "ns"
+      ],
+      [
+        "Samar",
+        "smr"
+      ],
+      [
+        "[...]ibra",
+        "br"
+      ],
+      [
+        "Dadi",
+        "d"
+      ],
+      [
+        "Inusadu",
+        "nsd"
+      ],
+      [
+        "Meluhha",
+        "mlh"
+      ]
+    ],
+    "expanded_foreign_pns": [
+      [
+        "Nanasa",
+        "ns"
+      ],
+      [
+        "Samar",
+        "smr"
+      ],
+      [
+        "[...]ibra",
+        "br"
+      ],
+      [
+        "Dadi",
+        "d"
+      ],
+      [
+        "Inusadu",
+        "nsd"
+      ],
+      [
+        "Meluhha",
+        "mlh"
+      ],
+      [
+        "Ba-alla",
+        "bl"
+      ],
+      [
+        "Arab-irina",
+        "rbrn"
+      ],
+      [
+        "Rimum",
+        "rm"
+      ],
+      [
+        "Yagli-El",
+        "gl"
+      ]
+    ],
+    "strict6_vs_locked8_2c": {
+      "n_pns": 6,
+      "n_roots": 8,
+      "exact_obs": 0,
+      "exact_null": 0.04,
+      "exact_z": -0.19,
+      "exact_p": 1.0,
+      "exact_matches": [],
+      "substr_obs": 0,
+      "substr_null": 0.39,
+      "substr_z": -0.6,
+      "substr_p": 1.0,
+      "pns_hit_obs": 0,
+      "pns_hit_null": 0.37,
+      "pns_hit_z": -0.62,
+      "pns_hit_p": 1.0,
+      "substr_matches": []
+    },
+    "strict6_voicing_folded_vs_locked8": {
+      "n_pns": 6,
+      "n_roots": 8,
+      "exact_obs": 0,
+      "exact_null": 0.1,
+      "exact_z": -0.31,
+      "exact_p": 1.0,
+      "exact_matches": [],
+      "substr_obs": 0,
+      "substr_null": 0.48,
+      "substr_z": -0.68,
+      "substr_p": 1.0,
+      "pns_hit_obs": 0,
+      "pns_hit_null": 0.45,
+      "pns_hit_z": -0.7,
+      "pns_hit_p": 1.0,
+      "substr_matches": []
+    },
+    "expanded10_vs_locked8_2c": {
+      "n_pns": 10,
+      "n_roots": 8,
+      "exact_obs": 0,
+      "exact_null": 0.21,
+      "exact_z": -0.46,
+      "exact_p": 1.0,
+      "exact_matches": [],
+      "substr_obs": 0,
+      "substr_null": 0.84,
+      "substr_z": -0.92,
+      "substr_p": 1.0,
+      "pns_hit_obs": 0,
+      "pns_hit_null": 0.78,
+      "pns_hit_z": -0.95,
+      "pns_hit_p": 1.0,
+      "substr_matches": []
+    },
+    "strict6_vs_all_indus_stems": {
+      "n_pns": 6,
+      "n_roots": 66,
+      "exact_obs": 0,
+      "exact_null": 0.13,
+      "exact_z": -0.36,
+      "exact_p": 1.0,
+      "exact_matches": [],
+      "substr_obs": 2,
+      "substr_null": 1.85,
+      "substr_z": 0.11,
+      "substr_p": 0.5471,
+      "pns_hit_obs": 2,
+      "pns_hit_null": 1.49,
+      "pns_hit_z": 0.51,
+      "pns_hit_p": 0.4585,
+      "substr_matches": [
+        [
+          "Samar",
+          "smr",
+          "mr"
+        ],
+        [
+          "Meluhha",
+          "mlh",
+          "ml"
+        ]
+      ]
+    },
+    "expanded10_vs_all_indus_stems": {
+      "n_pns": 10,
+      "n_roots": 66,
+      "exact_obs": 0,
+      "exact_null": 0.84,
+      "exact_z": -0.9,
+      "exact_p": 1.0,
+      "exact_matches": [],
+      "substr_obs": 6,
+      "substr_null": 6.07,
+      "substr_z": -0.03,
+      "substr_p": 0.5687,
+      "pns_hit_obs": 3,
+      "pns_hit_null": 3.27,
+      "pns_hit_z": -0.22,
+      "pns_hit_p": 0.7235,
+      "substr_matches": [
+        [
+          "Samar",
+          "smr",
+          "mr"
+        ],
+        [
+          "Meluhha",
+          "mlh",
+          "ml"
+        ],
+        [
+          "Rimum",
+          "rm",
+          "kvrmn"
+        ],
+        [
+          "Rimum",
+          "rm",
+          "pnrmn"
+        ],
+        [
+          "Rimum",
+          "rm",
+          "rmn"
+        ],
+        [
+          "Rimum",
+          "rm",
+          "trmp"
+        ]
+      ]
+    }
+  }
+}

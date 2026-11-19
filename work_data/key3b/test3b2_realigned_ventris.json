@@ -1,0 +1,1274 @@
+{
+  "regimes": [
+    {
+      "regime": "BEFORE_KEY1",
+      "flipped_uids": [],
+      "n_gulf_abroad": 30,
+      "calque_grammar": {
+        "head_initial_man": 14,
+        "head_man_z": 22.49,
+        "head_man_p": 0.001,
+        "final_man": 5,
+        "any_man": 24,
+        "twin_man": 12,
+        "twin_z": 28.05,
+        "disz_001_divider": 9,
+        "disz_z": 5.79,
+        "total_calque_fit": 27,
+        "total_calque_pct": 90.0
+      },
+      "man_to_cosmo_order": {
+        "all_seals": "8/13",
+        "all_seals_pct": 61.5,
+        "all_seals_z": 1.12,
+        "all_seals_p": 0.2028,
+        "all_pairs": "17/26",
+        "all_pairs_pct": 65.4,
+        "all_pairs_z": 1.3,
+        "all_pairs_p": 0.1278,
+        "nonfish_seals": "7/9",
+        "nonfish_seals_pct": 77.8,
+        "nonfish_seals_z": 2.07,
+        "nonfish_seals_p": 0.0394,
+        "nonfish_pairs": "14/17",
+        "nonfish_pairs_pct": 82.4,
+        "nonfish_pairs_z": 2.29,
+        "nonfish_pairs_p": 0.0158,
+        "nonfish_details": [
+          {
+            "uid": "G3-B02",
+            "site": "Qala'at al-Bahrain",
+            "seq": "160-090-055-060-190",
+            "order": "MAN->COSMO"
+          },
+          {
+            "uid": "G3-F02",
+            "site": "Failaka",
+            "seq": "090-604-220-415-061-803-924",
+            "order": "MAN->COSMO"
+          },
+          {
+            "uid": "G3-M01",
+            "site": "Ur",
+            "seq": "528-220-924-340-093",
+            "order": "COSMO->MAN"
+          },
+          {
+            "uid": "G3-M03",
+            "site": "Ur",
+            "seq": "090-405",
+            "order": "MAN->COSMO"
+          },
+          {
+            "uid": "G3-M09",
+            "site": "Near East (Ur/BM)",
+            "seq": "235-091-604-603",
+            "order": "MAN->COSMO"
+          },
+          {
+            "uid": "G3-M12",
+            "site": "Mesopotamia? (Yale)",
+            "seq": "061-725-090-002-340",
+            "order": "MAN->COSMO"
+          },
+          {
+            "uid": "G3-I01",
+            "site": "Susa",
+            "seq": "090-365-090-407-604-700",
+            "order": "MAN->COSMO"
+          },
+          {
+            "uid": "G3-I02",
+            "site": "Luristan",
+            "seq": "091-840-413-831",
+            "order": "MAN->COSMO"
+          },
+          {
+            "uid": "G3-U01",
+            "site": "Unknown (Gulf/WA)",
+            "seq": "190-091-603",
+            "order": "COSMO->MAN"
+          }
+        ]
+      },
+      "ventris_network": {
+        "n_pair_locks": 15,
+        "same_order_locks": 8,
+        "reversed_order_locks": 7,
+        "same_order_pct": 53.3,
+        "same_order_binom_p": 1.0,
+        "same_order_with_contiguity": 7,
+        "repeated_contiguous_bigrams": {
+          "091-032": [
+            "G3-B06(Karzakkan)",
+            "G3-I05(Sistan (McMahon BM))"
+          ],
+          "740-740": [
+            "G3-B07(Karzakkan)",
+            "G3-M08(Near East (Ur/Babylon))"
+          ],
+          "001-090": [
+            "G3-F03(Failaka)",
+            "G3-M11(Mesopotamia? (Yale))"
+          ]
+        },
+        "pair_locks": [
+          {
+            "seal1": "G3-B02",
+            "site1": "Qala'at al-Bahrain",
+            "seq1": "160-090-055-060-190",
+            "seal2": "G3-M11",
+            "site2": "Mesopotamia? (Yale)",
+            "seq2": "160-384-133-001-090-061",
+            "shared": "090|160",
+            "order1": "160->090",
+            "order2": "160->090",
+            "same_order": true,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-B02",
+            "site1": "Qala'at al-Bahrain",
+            "seq1": "160-090-055-060-190",
+            "seal2": "G3-U02",
+            "site2": "Unknown (Gulf/WA)",
+            "seq2": "032-132-055-090",
+            "shared": "055|090",
+            "order1": "090->055",
+            "order2": "055->090",
+            "same_order": false,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-B03",
+            "site1": "Karzakkan",
+            "seq1": "091-031-455-220",
+            "seal2": "G3-B04",
+            "site2": "Saar",
+            "seq2": "055-220-091-001-093-031",
+            "shared": "091|220",
+            "order1": "091->220",
+            "order2": "220->091",
+            "same_order": false,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-B04",
+            "site1": "Saar",
+            "seq1": "055-220-091-001-093-031",
+            "seal2": "G3-B05",
+            "site2": "Janabiyah",
+            "seq2": "220-831-055-121-099-055",
+            "shared": "055|220",
+            "order1": "055->220",
+            "order2": "220->055",
+            "same_order": false,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-B04",
+            "site1": "Saar",
+            "seq1": "055-220-091-001-093-031",
+            "seal2": "G3-M01",
+            "site2": "Ur",
+            "seq2": "528-220-924-340-093",
+            "shared": "093|220",
+            "order1": "220->093",
+            "order2": "220->093",
+            "same_order": true,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-B04",
+            "site1": "Saar",
+            "seq1": "055-220-091-001-093-031",
+            "seal2": "G3-U04",
+            "site2": "West Asia (museum)",
+            "seq2": "095-384-091-055",
+            "shared": "055|091",
+            "order1": "055->091",
+            "order2": "091->055",
+            "same_order": false,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-F02",
+            "site1": "Failaka",
+            "seq1": "090-604-220-415-061-803-924",
+            "seal2": "G3-M01",
+            "site2": "Ur",
+            "seq2": "528-220-924-340-093",
+            "shared": "220|924",
+            "order1": "220->924",
+            "order2": "220->924",
+            "same_order": true,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-F02",
+            "site1": "Failaka",
+            "seq1": "090-604-220-415-061-803-924",
+            "seal2": "G3-M06",
+            "site2": "Ur",
+            "seq2": "415-803-001-328-004-002",
+            "shared": "415|803",
+            "order1": "415->803",
+            "order2": "415->803",
+            "same_order": true,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-F02",
+            "site1": "Failaka",
+            "seq1": "090-604-220-415-061-803-924",
+            "seal2": "G3-M11",
+            "site2": "Mesopotamia? (Yale)",
+            "seq2": "160-384-133-001-090-061",
+            "shared": "061|090",
+            "order1": "090->061",
+            "order2": "090->061",
+            "same_order": true,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-F02",
+            "site1": "Failaka",
+            "seq1": "090-604-220-415-061-803-924",
+            "seal2": "G3-M12",
+            "site2": "Mesopotamia? (Yale)",
+            "seq2": "061-725-090-002-340",
+            "shared": "061|090",
+            "order1": "090->061",
+            "order2": "061->090",
+            "same_order": false,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-F02",
+            "site1": "Failaka",
+            "seq1": "090-604-220-415-061-803-924",
+            "seal2": "G3-I01",
+            "site2": "Susa",
+            "seq2": "090-365-090-407-604-700",
+            "shared": "090|604",
+            "order1": "090->604",
+            "order2": "090->604",
+            "same_order": true,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-M01",
+            "site1": "Ur",
+            "seq1": "528-220-924-340-093",
+            "seal2": "G3-U05",
+            "site2": "West Asia (museum)",
+            "seq2": "220-220-340",
+            "shared": "220|340",
+            "order1": "220->340",
+            "order2": "220->340",
+            "same_order": true,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-M09",
+            "site1": "Near East (Ur/BM)",
+            "seq1": "235-091-604-603",
+            "seal2": "G3-U01",
+            "site2": "Unknown (Gulf/WA)",
+            "seq2": "190-091-603",
+            "shared": "091|603",
+            "order1": "091->603",
+            "order2": "091->603",
+            "same_order": true,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-M11",
+            "site1": "Mesopotamia? (Yale)",
+            "seq1": "160-384-133-001-090-061",
+            "seal2": "G3-M12",
+            "site2": "Mesopotamia? (Yale)",
+            "seq2": "061-725-090-002-340",
+            "shared": "061|090",
+            "order1": "090->061",
+            "order2": "061->090",
+            "same_order": false,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-I02",
+            "site1": "Luristan",
+            "seq1": "091-840-413-831",
+            "seal2": "G3-I05",
+            "site2": "Sistan (McMahon BM)",
+            "seq2": "090-831-091-032",
+            "shared": "091|831",
+            "order1": "091->831",
+            "order2": "831->091",
+            "same_order": false,
+            "contig_both": false
+          }
+        ]
+      },
+      "mainland_gradient": {
+        "Indus_Home_Round": {
+          "n": 6,
+          "mean_bg_support_pct": 87.5,
+          "zero_bg_support": "0/6",
+          "tot_fwd_adj": 65,
+          "tot_rev_adj": 4,
+          "tot_fwd_ord": 294,
+          "tot_rev_ord": 81,
+          "ord_fwd_pct": 78.4
+        },
+        "Abroad_Square": {
+          "n": 8,
+          "mean_bg_support_pct": 62.1,
+          "zero_bg_support": "1/8",
+          "tot_fwd_adj": 424,
+          "tot_rev_adj": 27,
+          "tot_fwd_ord": 2322,
+          "tot_rev_ord": 276,
+          "ord_fwd_pct": 89.4
+        },
+        "Bahrain_Failaka": {
+          "n": 9,
+          "mean_bg_support_pct": 42.0,
+          "zero_bg_support": "2/9",
+          "tot_fwd_adj": 25,
+          "tot_rev_adj": 101,
+          "tot_fwd_ord": 116,
+          "tot_rev_ord": 288,
+          "ord_fwd_pct": 28.7
+        },
+        "Iran_Round_Cyl": {
+          "n": 5,
+          "mean_bg_support_pct": 22.4,
+          "zero_bg_support": "2/5",
+          "tot_fwd_adj": 13,
+          "tot_rev_adj": 5,
+          "tot_fwd_ord": 165,
+          "tot_rev_ord": 110,
+          "ord_fwd_pct": 60.0
+        },
+        "Mesopotamia_Ur_Round": {
+          "n": 11,
+          "mean_bg_support_pct": 29.2,
+          "zero_bg_support": "5/11",
+          "tot_fwd_adj": 23,
+          "tot_rev_adj": 77,
+          "tot_fwd_ord": 530,
+          "tot_rev_ord": 305,
+          "ord_fwd_pct": 63.5
+        }
+      },
+      "focal_seals": {
+        "G3-F02": {
+          "site": "Failaka",
+          "seq": "090-604-220-415-061-803-924",
+          "bg_supported": "0/6",
+          "fwd_adj": 0,
+          "rev_adj": 87,
+          "fwd_ord": 13,
+          "rev_ord": 170
+        },
+        "G3-M06": {
+          "site": "Ur",
+          "seq": "415-803-001-328-004-002",
+          "bg_supported": "0/5",
+          "fwd_adj": 0,
+          "rev_adj": 35,
+          "fwd_ord": 18,
+          "rev_ord": 128
+        },
+        "G3-M12": {
+          "site": "Mesopotamia? (Yale)",
+          "seq": "061-725-090-002-340",
+          "bg_supported": "2/4",
+          "fwd_adj": 2,
+          "rev_adj": 0,
+          "fwd_ord": 7,
+          "rev_ord": 48
+        },
+        "G3-M11": {
+          "site": "Mesopotamia? (Yale)",
+          "seq": "160-384-133-001-090-061",
+          "bg_supported": "4/5",
+          "fwd_adj": 4,
+          "rev_adj": 1,
+          "fwd_ord": 26,
+          "rev_ord": 8
+        },
+        "G3-B02": {
+          "site": "Qala'at al-Bahrain",
+          "seq": "160-090-055-060-190",
+          "bg_supported": "1/4",
+          "fwd_adj": 1,
+          "rev_adj": 1,
+          "fwd_ord": 3,
+          "rev_ord": 18
+        },
+        "G3-M08": {
+          "site": "Near East (Ur/Babylon)",
+          "seq": "467-798-001-740-740",
+          "bg_supported": "2/4",
+          "fwd_adj": 4,
+          "rev_adj": 27,
+          "fwd_ord": 316,
+          "rev_ord": 58
+        }
+      }
+    },
+    {
+      "regime": "AFTER_STRICT_3FLIP",
+      "flipped_uids": [
+        "G3-F02",
+        "G3-M06",
+        "G3-M12"
+      ],
+      "n_gulf_abroad": 30,
+      "calque_grammar": {
+        "head_initial_man": 13,
+        "head_man_z": 20.83,
+        "head_man_p": 0.001,
+        "final_man": 6,
+        "any_man": 24,
+        "twin_man": 12,
+        "twin_z": 28.05,
+        "disz_001_divider": 9,
+        "disz_z": 5.79,
+        "total_calque_fit": 27,
+        "total_calque_pct": 90.0
+      },
+      "man_to_cosmo_order": {
+        "all_seals": "6/13",
+        "all_seals_pct": 46.2,
+        "all_seals_z": -0.05,
+        "all_seals_p": 0.6357,
+        "all_pairs": "13/26",
+        "all_pairs_pct": 50.0,
+        "all_pairs_z": -0.0,
+        "all_pairs_p": 0.5681,
+        "nonfish_seals": "5/9",
+        "nonfish_seals_pct": 55.6,
+        "nonfish_seals_z": 0.68,
+        "nonfish_seals_p": 0.3697,
+        "nonfish_pairs": "11/17",
+        "nonfish_pairs_pct": 64.7,
+        "nonfish_pairs_z": 1.03,
+        "nonfish_pairs_p": 0.2118,
+        "nonfish_details": [
+          {
+            "uid": "G3-B02",
+            "site": "Qala'at al-Bahrain",
+            "seq": "160-090-055-060-190",
+            "order": "MAN->COSMO"
+          },
+          {
+            "uid": "G3-F02",
+            "site": "Failaka",
+            "seq": "924-803-061-415-220-604-090",
+            "order": "COSMO->MAN"
+          },
+          {
+            "uid": "G3-M01",
+            "site": "Ur",
+            "seq": "528-220-924-340-093",
+            "order": "COSMO->MAN"
+          },
+          {
+            "uid": "G3-M03",
+            "site": "Ur",
+            "seq": "090-405",
+            "order": "MAN->COSMO"
+          },
+          {
+            "uid": "G3-M09",
+            "site": "Near East (Ur/BM)",
+            "seq": "235-091-604-603",
+            "order": "MAN->COSMO"
+          },
+          {
+            "uid": "G3-M12",
+            "site": "Mesopotamia? (Yale)",
+            "seq": "340-002-090-725-061",
+            "order": "COSMO->MAN"
+          },
+          {
+            "uid": "G3-I01",
+            "site": "Susa",
+            "seq": "090-365-090-407-604-700",
+            "order": "MAN->COSMO"
+          },
+          {
+            "uid": "G3-I02",
+            "site": "Luristan",
+            "seq": "091-840-413-831",
+            "order": "MAN->COSMO"
+          },
+          {
+            "uid": "G3-U01",
+            "site": "Unknown (Gulf/WA)",
+            "seq": "190-091-603",
+            "order": "COSMO->MAN"
+          }
+        ]
+      },
+      "ventris_network": {
+        "n_pair_locks": 15,
+        "same_order_locks": 6,
+        "reversed_order_locks": 9,
+        "same_order_pct": 40.0,
+        "same_order_binom_p": 0.6072,
+        "same_order_with_contiguity": 5,
+        "repeated_contiguous_bigrams": {
+          "091-032": [
+            "G3-B06(Karzakkan)",
+            "G3-I05(Sistan (McMahon BM))"
+          ],
+          "740-740": [
+            "G3-B07(Karzakkan)",
+            "G3-M08(Near East (Ur/Babylon))"
+          ],
+          "001-090": [
+            "G3-F03(Failaka)",
+            "G3-M11(Mesopotamia? (Yale))"
+          ]
+        },
+        "pair_locks": [
+          {
+            "seal1": "G3-B02",
+            "site1": "Qala'at al-Bahrain",
+            "seq1": "160-090-055-060-190",
+            "seal2": "G3-M11",
+            "site2": "Mesopotamia? (Yale)",
+            "seq2": "160-384-133-001-090-061",
+            "shared": "090|160",
+            "order1": "160->090",
+            "order2": "160->090",
+            "same_order": true,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-B02",
+            "site1": "Qala'at al-Bahrain",
+            "seq1": "160-090-055-060-190",
+            "seal2": "G3-U02",
+            "site2": "Unknown (Gulf/WA)",
+            "seq2": "032-132-055-090",
+            "shared": "055|090",
+            "order1": "090->055",
+            "order2": "055->090",
+            "same_order": false,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-B03",
+            "site1": "Karzakkan",
+            "seq1": "091-031-455-220",
+            "seal2": "G3-B04",
+            "site2": "Saar",
+            "seq2": "055-220-091-001-093-031",
+            "shared": "091|220",
+            "order1": "091->220",
+            "order2": "220->091",
+            "same_order": false,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-B04",
+            "site1": "Saar",
+            "seq1": "055-220-091-001-093-031",
+            "seal2": "G3-B05",
+            "site2": "Janabiyah",
+            "seq2": "220-831-055-121-099-055",
+            "shared": "055|220",
+            "order1": "055->220",
+            "order2": "220->055",
+            "same_order": false,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-B04",
+            "site1": "Saar",
+            "seq1": "055-220-091-001-093-031",
+            "seal2": "G3-M01",
+            "site2": "Ur",
+            "seq2": "528-220-924-340-093",
+            "shared": "093|220",
+            "order1": "220->093",
+            "order2": "220->093",
+            "same_order": true,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-B04",
+            "site1": "Saar",
+            "seq1": "055-220-091-001-093-031",
+            "seal2": "G3-U04",
+            "site2": "West Asia (museum)",
+            "seq2": "095-384-091-055",
+            "shared": "055|091",
+            "order1": "055->091",
+            "order2": "091->055",
+            "same_order": false,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-F02",
+            "site1": "Failaka",
+            "seq1": "924-803-061-415-220-604-090",
+            "seal2": "G3-M01",
+            "site2": "Ur",
+            "seq2": "528-220-924-340-093",
+            "shared": "220|924",
+            "order1": "924->220",
+            "order2": "220->924",
+            "same_order": false,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-F02",
+            "site1": "Failaka",
+            "seq1": "924-803-061-415-220-604-090",
+            "seal2": "G3-M06",
+            "site2": "Ur",
+            "seq2": "002-004-328-001-803-415",
+            "shared": "415|803",
+            "order1": "803->415",
+            "order2": "803->415",
+            "same_order": true,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-F02",
+            "site1": "Failaka",
+            "seq1": "924-803-061-415-220-604-090",
+            "seal2": "G3-M11",
+            "site2": "Mesopotamia? (Yale)",
+            "seq2": "160-384-133-001-090-061",
+            "shared": "061|090",
+            "order1": "061->090",
+            "order2": "090->061",
+            "same_order": false,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-F02",
+            "site1": "Failaka",
+            "seq1": "924-803-061-415-220-604-090",
+            "seal2": "G3-M12",
+            "site2": "Mesopotamia? (Yale)",
+            "seq2": "340-002-090-725-061",
+            "shared": "061|090",
+            "order1": "061->090",
+            "order2": "090->061",
+            "same_order": false,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-F02",
+            "site1": "Failaka",
+            "seq1": "924-803-061-415-220-604-090",
+            "seal2": "G3-I01",
+            "site2": "Susa",
+            "seq2": "090-365-090-407-604-700",
+            "shared": "090|604",
+            "order1": "604->090",
+            "order2": "090->604",
+            "same_order": false,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-M01",
+            "site1": "Ur",
+            "seq1": "528-220-924-340-093",
+            "seal2": "G3-U05",
+            "site2": "West Asia (museum)",
+            "seq2": "220-220-340",
+            "shared": "220|340",
+            "order1": "220->340",
+            "order2": "220->340",
+            "same_order": true,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-M09",
+            "site1": "Near East (Ur/BM)",
+            "seq1": "235-091-604-603",
+            "seal2": "G3-U01",
+            "site2": "Unknown (Gulf/WA)",
+            "seq2": "190-091-603",
+            "shared": "091|603",
+            "order1": "091->603",
+            "order2": "091->603",
+            "same_order": true,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-M11",
+            "site1": "Mesopotamia? (Yale)",
+            "seq1": "160-384-133-001-090-061",
+            "seal2": "G3-M12",
+            "site2": "Mesopotamia? (Yale)",
+            "seq2": "340-002-090-725-061",
+            "shared": "061|090",
+            "order1": "090->061",
+            "order2": "090->061",
+            "same_order": true,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-I02",
+            "site1": "Luristan",
+            "seq1": "091-840-413-831",
+            "seal2": "G3-I05",
+            "site2": "Sistan (McMahon BM)",
+            "seq2": "090-831-091-032",
+            "shared": "091|831",
+            "order1": "091->831",
+            "order2": "831->091",
+            "same_order": false,
+            "contig_both": false
+          }
+        ]
+      },
+      "mainland_gradient": {
+        "Indus_Home_Round": {
+          "n": 6,
+          "mean_bg_support_pct": 87.5,
+          "zero_bg_support": "0/6",
+          "tot_fwd_adj": 65,
+          "tot_rev_adj": 4,
+          "tot_fwd_ord": 294,
+          "tot_rev_ord": 81,
+          "ord_fwd_pct": 78.4
+        },
+        "Abroad_Square": {
+          "n": 8,
+          "mean_bg_support_pct": 62.1,
+          "zero_bg_support": "1/8",
+          "tot_fwd_adj": 424,
+          "tot_rev_adj": 27,
+          "tot_fwd_ord": 2322,
+          "tot_rev_ord": 276,
+          "ord_fwd_pct": 89.4
+        },
+        "Bahrain_Failaka": {
+          "n": 9,
+          "mean_bg_support_pct": 43.9,
+          "zero_bg_support": "1/9",
+          "tot_fwd_adj": 112,
+          "tot_rev_adj": 14,
+          "tot_fwd_ord": 273,
+          "tot_rev_ord": 131,
+          "ord_fwd_pct": 67.6
+        },
+        "Iran_Round_Cyl": {
+          "n": 5,
+          "mean_bg_support_pct": 22.4,
+          "zero_bg_support": "2/5",
+          "tot_fwd_adj": 13,
+          "tot_rev_adj": 5,
+          "tot_fwd_ord": 165,
+          "tot_rev_ord": 110,
+          "ord_fwd_pct": 60.0
+        },
+        "Mesopotamia_Ur_Round": {
+          "n": 11,
+          "mean_bg_support_pct": 30.2,
+          "zero_bg_support": "5/11",
+          "tot_fwd_adj": 56,
+          "tot_rev_adj": 44,
+          "tot_fwd_ord": 681,
+          "tot_rev_ord": 154,
+          "ord_fwd_pct": 81.6
+        }
+      },
+      "focal_seals": {
+        "G3-F02": {
+          "site": "Failaka",
+          "seq": "924-803-061-415-220-604-090",
+          "bg_supported": "1/6",
+          "fwd_adj": 87,
+          "rev_adj": 0,
+          "fwd_ord": 170,
+          "rev_ord": 13
+        },
+        "G3-M06": {
+          "site": "Ur",
+          "seq": "002-004-328-001-803-415",
+          "bg_supported": "3/5",
+          "fwd_adj": 35,
+          "rev_adj": 0,
+          "fwd_ord": 128,
+          "rev_ord": 18
+        },
+        "G3-M12": {
+          "site": "Mesopotamia? (Yale)",
+          "seq": "340-002-090-725-061",
+          "bg_supported": "0/4",
+          "fwd_adj": 0,
+          "rev_adj": 2,
+          "fwd_ord": 48,
+          "rev_ord": 7
+        },
+        "G3-M11": {
+          "site": "Mesopotamia? (Yale)",
+          "seq": "160-384-133-001-090-061",
+          "bg_supported": "4/5",
+          "fwd_adj": 4,
+          "rev_adj": 1,
+          "fwd_ord": 26,
+          "rev_ord": 8
+        },
+        "G3-B02": {
+          "site": "Qala'at al-Bahrain",
+          "seq": "160-090-055-060-190",
+          "bg_supported": "1/4",
+          "fwd_adj": 1,
+          "rev_adj": 1,
+          "fwd_ord": 3,
+          "rev_ord": 18
+        },
+        "G3-M08": {
+          "site": "Near East (Ur/Babylon)",
+          "seq": "467-798-001-740-740",
+          "bg_supported": "2/4",
+          "fwd_adj": 4,
+          "rev_adj": 27,
+          "fwd_ord": 316,
+          "rev_ord": 58
+        }
+      }
+    },
+    {
+      "regime": "AFTER_EXTENDED_4FLIP_QALAAT7",
+      "flipped_uids": [
+        "G3-B02",
+        "G3-F02",
+        "G3-M06",
+        "G3-M12"
+      ],
+      "n_gulf_abroad": 30,
+      "calque_grammar": {
+        "head_initial_man": 12,
+        "head_man_z": 19.18,
+        "head_man_p": 0.001,
+        "final_man": 7,
+        "any_man": 24,
+        "twin_man": 12,
+        "twin_z": 28.05,
+        "disz_001_divider": 9,
+        "disz_z": 5.79,
+        "total_calque_fit": 27,
+        "total_calque_pct": 90.0
+      },
+      "man_to_cosmo_order": {
+        "all_seals": "5/13",
+        "all_seals_pct": 38.5,
+        "all_seals_z": -0.63,
+        "all_seals_p": 0.8256,
+        "all_pairs": "11/26",
+        "all_pairs_pct": 42.3,
+        "all_pairs_z": -0.66,
+        "all_pairs_p": 0.797,
+        "nonfish_seals": "4/9",
+        "nonfish_seals_pct": 44.4,
+        "nonfish_seals_z": 0.01,
+        "nonfish_seals_p": 0.6273,
+        "nonfish_pairs": "9/17",
+        "nonfish_pairs_pct": 52.9,
+        "nonfish_pairs_z": 0.21,
+        "nonfish_pairs_p": 0.4987,
+        "nonfish_details": [
+          {
+            "uid": "G3-B02",
+            "site": "Qala'at al-Bahrain",
+            "seq": "190-060-055-090-160",
+            "order": "COSMO->MAN"
+          },
+          {
+            "uid": "G3-F02",
+            "site": "Failaka",
+            "seq": "924-803-061-415-220-604-090",
+            "order": "COSMO->MAN"
+          },
+          {
+            "uid": "G3-M01",
+            "site": "Ur",
+            "seq": "528-220-924-340-093",
+            "order": "COSMO->MAN"
+          },
+          {
+            "uid": "G3-M03",
+            "site": "Ur",
+            "seq": "090-405",
+            "order": "MAN->COSMO"
+          },
+          {
+            "uid": "G3-M09",
+            "site": "Near East (Ur/BM)",
+            "seq": "235-091-604-603",
+            "order": "MAN->COSMO"
+          },
+          {
+            "uid": "G3-M12",
+            "site": "Mesopotamia? (Yale)",
+            "seq": "340-002-090-725-061",
+            "order": "COSMO->MAN"
+          },
+          {
+            "uid": "G3-I01",
+            "site": "Susa",
+            "seq": "090-365-090-407-604-700",
+            "order": "MAN->COSMO"
+          },
+          {
+            "uid": "G3-I02",
+            "site": "Luristan",
+            "seq": "091-840-413-831",
+            "order": "MAN->COSMO"
+          },
+          {
+            "uid": "G3-U01",
+            "site": "Unknown (Gulf/WA)",
+            "seq": "190-091-603",
+            "order": "COSMO->MAN"
+          }
+        ]
+      },
+      "ventris_network": {
+        "n_pair_locks": 15,
+        "same_order_locks": 6,
+        "reversed_order_locks": 9,
+        "same_order_pct": 40.0,
+        "same_order_binom_p": 0.6072,
+        "same_order_with_contiguity": 5,
+        "repeated_contiguous_bigrams": {
+          "055-090": [
+            "G3-B02(Qala'at al-Bahrain)",
+            "G3-U02(Unknown (Gulf/WA))"
+          ],
+          "091-032": [
+            "G3-B06(Karzakkan)",
+            "G3-I05(Sistan (McMahon BM))"
+          ],
+          "740-740": [
+            "G3-B07(Karzakkan)",
+            "G3-M08(Near East (Ur/Babylon))"
+          ],
+          "001-090": [
+            "G3-F03(Failaka)",
+            "G3-M11(Mesopotamia? (Yale))"
+          ]
+        },
+        "pair_locks": [
+          {
+            "seal1": "G3-B02",
+            "site1": "Qala'at al-Bahrain",
+            "seq1": "190-060-055-090-160",
+            "seal2": "G3-M11",
+            "site2": "Mesopotamia? (Yale)",
+            "seq2": "160-384-133-001-090-061",
+            "shared": "090|160",
+            "order1": "090->160",
+            "order2": "160->090",
+            "same_order": false,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-B02",
+            "site1": "Qala'at al-Bahrain",
+            "seq1": "190-060-055-090-160",
+            "seal2": "G3-U02",
+            "site2": "Unknown (Gulf/WA)",
+            "seq2": "032-132-055-090",
+            "shared": "055|090",
+            "order1": "055->090",
+            "order2": "055->090",
+            "same_order": true,
+            "contig_both": true
+          },
+          {
+            "seal1": "G3-B03",
+            "site1": "Karzakkan",
+            "seq1": "091-031-455-220",
+            "seal2": "G3-B04",
+            "site2": "Saar",
+            "seq2": "055-220-091-001-093-031",
+            "shared": "091|220",
+            "order1": "091->220",
+            "order2": "220->091",
+            "same_order": false,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-B04",
+            "site1": "Saar",
+            "seq1": "055-220-091-001-093-031",
+            "seal2": "G3-B05",
+            "site2": "Janabiyah",
+            "seq2": "220-831-055-121-099-055",
+            "shared": "055|220",
+            "order1": "055->220",
+            "order2": "220->055",
+            "same_order": false,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-B04",
+            "site1": "Saar",
+            "seq1": "055-220-091-001-093-031",
+            "seal2": "G3-M01",
+            "site2": "Ur",
+            "seq2": "528-220-924-340-093",
+            "shared": "093|220",
+            "order1": "220->093",
+            "order2": "220->093",
+            "same_order": true,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-B04",
+            "site1": "Saar",
+            "seq1": "055-220-091-001-093-031",
+            "seal2": "G3-U04",
+            "site2": "West Asia (museum)",
+            "seq2": "095-384-091-055",
+            "shared": "055|091",
+            "order1": "055->091",
+            "order2": "091->055",
+            "same_order": false,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-F02",
+            "site1": "Failaka",
+            "seq1": "924-803-061-415-220-604-090",
+            "seal2": "G3-M01",
+            "site2": "Ur",
+            "seq2": "528-220-924-340-093",
+            "shared": "220|924",
+            "order1": "924->220",
+            "order2": "220->924",
+            "same_order": false,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-F02",
+            "site1": "Failaka",
+            "seq1": "924-803-061-415-220-604-090",
+            "seal2": "G3-M06",
+            "site2": "Ur",
+            "seq2": "002-004-328-001-803-415",
+            "shared": "415|803",
+            "order1": "803->415",
+            "order2": "803->415",
+            "same_order": true,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-F02",
+            "site1": "Failaka",
+            "seq1": "924-803-061-415-220-604-090",
+            "seal2": "G3-M11",
+            "site2": "Mesopotamia? (Yale)",
+            "seq2": "160-384-133-001-090-061",
+            "shared": "061|090",
+            "order1": "061->090",
+            "order2": "090->061",
+            "same_order": false,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-F02",
+            "site1": "Failaka",
+            "seq1": "924-803-061-415-220-604-090",
+            "seal2": "G3-M12",
+            "site2": "Mesopotamia? (Yale)",
+            "seq2": "340-002-090-725-061",
+            "shared": "061|090",
+            "order1": "061->090",
+            "order2": "090->061",
+            "same_order": false,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-F02",
+            "site1": "Failaka",
+            "seq1": "924-803-061-415-220-604-090",
+            "seal2": "G3-I01",
+            "site2": "Susa",
+            "seq2": "090-365-090-407-604-700",
+            "shared": "090|604",
+            "order1": "604->090",
+            "order2": "090->604",
+            "same_order": false,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-M01",
+            "site1": "Ur",
+            "seq1": "528-220-924-340-093",
+            "seal2": "G3-U05",
+            "site2": "West Asia (museum)",
+            "seq2": "220-220-340",
+            "shared": "220|340",
+            "order1": "220->340",
+            "order2": "220->340",
+            "same_order": true,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-M09",
+            "site1": "Near East (Ur/BM)",
+            "seq1": "235-091-604-603",
+            "seal2": "G3-U01",
+            "site2": "Unknown (Gulf/WA)",
+            "seq2": "190-091-603",
+            "shared": "091|603",
+            "order1": "091->603",
+            "order2": "091->603",
+            "same_order": true,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-M11",
+            "site1": "Mesopotamia? (Yale)",
+            "seq1": "160-384-133-001-090-061",
+            "seal2": "G3-M12",
+            "site2": "Mesopotamia? (Yale)",
+            "seq2": "340-002-090-725-061",
+            "shared": "061|090",
+            "order1": "090->061",
+            "order2": "090->061",
+            "same_order": true,
+            "contig_both": false
+          },
+          {
+            "seal1": "G3-I02",
+            "site1": "Luristan",
+            "seq1": "091-840-413-831",
+            "seal2": "G3-I05",
+            "site2": "Sistan (McMahon BM)",
+            "seq2": "090-831-091-032",
+            "shared": "091|831",
+            "order1": "091->831",
+            "order2": "831->091",
+            "same_order": false,
+            "contig_both": false
+          }
+        ]
+      },
+      "mainland_gradient": {
+        "Indus_Home_Round": {
+          "n": 6,
+          "mean_bg_support_pct": 87.5,
+          "zero_bg_support": "0/6",
+          "tot_fwd_adj": 65,
+          "tot_rev_adj": 4,
+          "tot_fwd_ord": 294,
+          "tot_rev_ord": 81,
+          "ord_fwd_pct": 78.4
+        },
+        "Abroad_Square": {
+          "n": 8,
+          "mean_bg_support_pct": 62.1,
+          "zero_bg_support": "1/8",
+          "tot_fwd_adj": 424,
+          "tot_rev_adj": 27,
+          "tot_fwd_ord": 2322,
+          "tot_rev_ord": 276,
+          "ord_fwd_pct": 89.4
+        },
+        "Bahrain_Failaka": {
+          "n": 9,
+          "mean_bg_support_pct": 43.9,
+          "zero_bg_support": "1/9",
+          "tot_fwd_adj": 112,
+          "tot_rev_adj": 14,
+          "tot_fwd_ord": 288,
+          "tot_rev_ord": 116,
+          "ord_fwd_pct": 71.3
+        },
+        "Iran_Round_Cyl": {
+          "n": 5,
+          "mean_bg_support_pct": 22.4,
+          "zero_bg_support": "2/5",
+          "tot_fwd_adj": 13,
+          "tot_rev_adj": 5,
+          "tot_fwd_ord": 165,
+          "tot_rev_ord": 110,
+          "ord_fwd_pct": 60.0
+        },
+        "Mesopotamia_Ur_Round": {
+          "n": 11,
+          "mean_bg_support_pct": 30.2,
+          "zero_bg_support": "5/11",
+          "tot_fwd_adj": 56,
+          "tot_rev_adj": 44,
+          "tot_fwd_ord": 681,
+          "tot_rev_ord": 154,
+          "ord_fwd_pct": 81.6
+        }
+      },
+      "focal_seals": {
+        "G3-F02": {
+          "site": "Failaka",
+          "seq": "924-803-061-415-220-604-090",
+          "bg_supported": "1/6",
+          "fwd_adj": 87,
+          "rev_adj": 0,
+          "fwd_ord": 170,
+          "rev_ord": 13
+        },
+        "G3-M06": {
+          "site": "Ur",
+          "seq": "002-004-328-001-803-415",
+          "bg_supported": "3/5",
+          "fwd_adj": 35,
+          "rev_adj": 0,
+          "fwd_ord": 128,
+          "rev_ord": 18
+        },
+        "G3-M12": {
+          "site": "Mesopotamia? (Yale)",
+          "seq": "340-002-090-725-061",
+          "bg_supported": "0/4",
+          "fwd_adj": 0,
+          "rev_adj": 2,
+          "fwd_ord": 48,
+          "rev_ord": 7
+        },
+        "G3-M11": {
+          "site": "Mesopotamia? (Yale)",
+          "seq": "160-384-133-001-090-061",
+          "bg_supported": "4/5",
+          "fwd_adj": 4,
+          "rev_adj": 1,
+          "fwd_ord": 26,
+          "rev_ord": 8
+        },
+        "G3-B02": {
+          "site": "Qala'at al-Bahrain",
+          "seq": "190-060-055-090-160",
+          "bg_supported": "1/4",
+          "fwd_adj": 1,
+          "rev_adj": 1,
+          "fwd_ord": 18,
+          "rev_ord": 3
+        },
+        "G3-M08": {
+          "site": "Near East (Ur/Babylon)",
+          "seq": "467-798-001-740-740",
+          "bg_supported": "2/4",
+          "fwd_adj": 4,
+          "rev_adj": 27,
+          "fwd_ord": 316,
+          "rev_ord": 58
+        }
+      }
+    }
+  ]
+}
