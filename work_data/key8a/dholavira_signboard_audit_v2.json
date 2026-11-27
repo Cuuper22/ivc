@@ -1,0 +1,633 @@
+{
+  "object_id": "144.1",
+  "site": "Dholavira",
+  "location": "North Gate, Western Chamber (originally mounted above 3.5 m central passageway lintel)",
+  "material": "White gypsum / stone-paste inlays originally set in decayed wooden frame (~3 m long)",
+  "lipi_9sign_reading_order": [
+    "820",
+    "611",
+    "388",
+    "820",
+    "850",
+    "645",
+    "031",
+    "821",
+    "798"
+  ],
+  "expanded_10sign_reading_order": [
+    "820",
+    "611",
+    "388",
+    "820",
+    "850",
+    "645?",
+    "031",
+    "820",
+    "820",
+    "798"
+  ],
+  "reading_summary_key8a": {
+    "locked_out_of_10_strict_phonetic": 8,
+    "locked_out_of_10_with_corpus_645": 9,
+    "all_10_glossed_with_611_architectural": 10,
+    "caveat_on_sign_6": "Corpus sign 645 (27C/5N) is rescued via FIX-only 2-branch PhonSt (1109 *kaṭa <-> 1113 *kaṭam; RAW pdrav_2branch misaligns eid=1109 onto cid=5091 mē, leaving 0 *kaṭa entries in RAW; 104->645 P=2.14e-15, 645->590 P=4.31e-9), while Dholavira Sign #6 itself shows 5 gypsum strips in an inverted-V+apex (Bisht Fig. 8.4) amid documented late-Harappan disturbance and 19 loose gypsum pieces (ASI card 24.03.95, img_016.jpg), keeping the epigraphic identification of Sign #6 = 645 vs damaged gable transparently flagged.",
+    "caveat_on_611": "611 has only 6 corpus occurrences (4 intact Lipi, 0 unseen New) and 0 Sangam bigram hits; its architectural-portal/canopy reading (*nukam 2-br / *kuṭai 2-br / *matalai 2L) is grounded by all 6 findspots (Dholavira N. Gate, H-3 Granary 2767mm2, L-116 820-611, M-56 1176mm2, H-1076 w/ 820) while its exact single Proto-Dravidian root remains open between *nukam and *kuṭai.",
+    "full_gloss_reading": "*kāl  [611: *nukam/*kuṭai portal-lintel]  *aracu/*āku (veined pipal-leaf royal emblem)  |  *kāl  *kaṇ/*kaṉ (eye/copper)  [645?: *kaṭa/*kaṭam passage-tax tally]  *oru (1)  *kāl-*kāl (paired quarters, 821 *iru-kāl (2x 820))  *toṭu / *iṭukku (bound house-guild)"
+  },
+  "positions_10": [
+    {
+      "pos": 1,
+      "lipi_sign": "820",
+      "m77": "M391",
+      "status_key7a": "LOCKED",
+      "status_key8a": "LOCKED",
+      "transliteration": "*kāl",
+      "gloss": "wheel/quarter (quarter / administrative ward / wheel)",
+      "lever": "Key2A"
+    },
+    {
+      "pos": 2,
+      "lipi_sign": "611",
+      "m77": "M256",
+      "status_key7a": "UNSOLVED",
+      "status_key8a": "LOCKED_ARCHITECTURAL_TESTING_PHONETIC",
+      "transliteration": "*nukam / *kuṭai (open; 2L *matalai)",
+      "gloss": "gate-lintel / canopy-bar / citadel portal (DEDR 3694 *nukam 2-br 'protecting bar' / 1663 *kuṭai 2-br 'canopy' PhonSt w/ 1655 *kuṭi; 4689 *matalai 2L 'lintel')",
+      "lever": "Key #8A Architectural/Site/Photo Audit (6/6 findspots: Dholavira N. Gate, H-3 Granary 2767mm2, L-116 820-611, M-56 1176mm2 w/ 877, H-1076 w/ 820; 820 co-occurrence P=0.0013)"
+    },
+    {
+      "pos": 3,
+      "lipi_sign": "388",
+      "m77": "M327",
+      "status_key7a": "TESTING_IT",
+      "status_key8a": "LOCKED",
+      "transliteration": "*aracu / *āku (*atti)",
+      "gloss": "diagonally/chevron-veined pipal (Ficus religiosa) leaf with central midrib and twin outward-curling top buds / royal emblem (DEDR 202 *aracu pipal & 201 *aracaṉ king — BOTH 2-br FIX & RAW; also 144 *atti fig PhonSt w/ 145/149 *attu in FIX)",
+      "lever": "Key #8A Botanical Paradigm + Distributional + DEDR Audit (pipal-leaf paradigm with locked 384 *āku/*takaṭu, cosMean(384,388)=0.834, 388->443 P=1.47e-11, 585->388 P=1.12e-05, 388->740 P=7.13e-07)"
+    },
+    {
+      "pos": 4,
+      "lipi_sign": "820",
+      "m77": "M391",
+      "status_key7a": "LOCKED",
+      "status_key8a": "LOCKED",
+      "transliteration": "*kāl",
+      "gloss": "wheel/quarter (quarter / administrative ward / wheel)",
+      "lever": "Key2A"
+    },
+    {
+      "pos": 5,
+      "lipi_sign": "850",
+      "m77": "M261",
+      "status_key7a": "LOCKED",
+      "status_key8a": "LOCKED",
+      "transliteration": "*kaṇ/*kaṉ",
+      "gloss": "eye/copper (eye / copper / jewel-precinct)",
+      "lever": "Key2A"
+    },
+    {
+      "pos": 6,
+      "lipi_sign": "645?",
+      "m77": "M137 (Bisht Fig. 8.4: 5-piece inverted-V + apex)",
+      "status_key7a": "HONEST_NULL_EPIGRAPHIC_OPEN",
+      "status_key8a": "LOCKED_CORPUS_645_EPIGRAPHIC_CAVEAT_ON_144_1",
+      "transliteration": "*kaṭa / *kaṭam",
+      "gloss": "cross / passage-tax tally (DEDR 1109 *kaṭa 'pass through, traverse, cross' <-> 1113 *kaṭam 'debt, obligation, duty, tax, tribute' — FIX-only 2-br PhonSt bridge because pdrav_2branch RAW misaligns eid=1109 onto cid=5091 mē; 144.1 Sign #6 physically disturbed — 19 loose gypsum strips on ASI 24.03.95 card)",
+      "lever": "Key #8A Post-Hoc Rescue + Bisht 2015 Photo/Card Audit (104->645 P=2.14e-15, 645->590 P=4.31e-09, counted tally slot 11/27; 064 visually ruled out)"
+    },
+    {
+      "pos": 7,
+      "lipi_sign": "031",
+      "m77": "M86",
+      "status_key7a": "LOCKED",
+      "status_key8a": "LOCKED",
+      "transliteration": "*oru",
+      "gloss": "1 (tall) (numeral 1, tall stroke)",
+      "lever": "Num"
+    },
+    {
+      "pos": 8,
+      "lipi_sign": "820",
+      "m77": "M391 (part 1 of Lipi 821 = *iru-kāl (2x 820))",
+      "status_key7a": "LOCKED",
+      "status_key8a": "LOCKED",
+      "transliteration": "*kāl",
+      "gloss": "wheel/quarter (paired 820-820 = Lipi 821 *iru-kāl (2x 820))",
+      "lever": "Key2A"
+    },
+    {
+      "pos": 9,
+      "lipi_sign": "820",
+      "m77": "M391 (part 2 of Lipi 821 = *iru-kāl (2x 820))",
+      "status_key7a": "LOCKED",
+      "status_key8a": "LOCKED",
+      "transliteration": "*kāl",
+      "gloss": "wheel/quarter (paired 820-820 = Lipi 821 *iru-kāl (2x 820))",
+      "lever": "Key2A"
+    },
+    {
+      "pos": 10,
+      "lipi_sign": "798",
+      "m77": "M53",
+      "status_key7a": "LOCKED",
+      "status_key8a": "LOCKED",
+      "transliteration": "*toṭu / *iṭukku",
+      "gloss": "Bound/grasped house-guild (M53 pincered shell/crab): PhonEx DEDR 3544 tōṭu ('shell') <-> 3536 toṭu ('bind, tie, build house') + DIRECT 444 iṭukku ('grasp w/ pincers'); MD HR elite rep (L OR=1.70, N OR=3.17); 798-740 (39x), 798-415 (20x); triggers Pure 4D cluster (193,797,195)",
+      "lever": "Key5A_TrackA_RebusLock"
+    }
+  ],
+  "sign_388_pipal_audit": {
+    "lipi_intact": 39,
+    "new_intact": 5,
+    "comb_intact": 44,
+    "all_occurrences": 71,
+    "photo_morphology": "Key #7D sheet_388.png (M-88_a, M-212_a, M-948_A) confirms a diagonally/chevron-veined pipal (Ficus religiosa) leaf with central midrib and twin outward-curling top buds — botanical counterpart of locked plain pipal-leaf 384 (*āku/*takaṭu).",
+    "cos_384_vs_388": {
+      "cosL": 0.859,
+      "cosR": 0.8096,
+      "cosMean": 0.8343
+    },
+    "fisher_388_to_443": {
+      "a_both": 5,
+      "b_left_only": 38,
+      "c_right_only": 2,
+      "d_neither": 10995,
+      "left_total": 43,
+      "right_total": 7,
+      "odds_ratio": 723.355,
+      "fisher_p": 1.471964835082555e-11
+    },
+    "fisher_585_to_388": {
+      "a_both": 4,
+      "b_left_only": 45,
+      "c_right_only": 28,
+      "d_neither": 10963,
+      "left_total": 49,
+      "right_total": 32,
+      "odds_ratio": 34.803,
+      "fisher_p": 1.1240189399397496e-05
+    },
+    "fisher_388_to_740": {
+      "a_both": 19,
+      "b_left_only": 24,
+      "c_right_only": 1455,
+      "d_neither": 9542,
+      "left_total": 43,
+      "right_total": 1474,
+      "odds_ratio": 5.192,
+      "fisher_p": 7.12933365966619e-07
+    },
+    "fisher_388_to_527_526": {
+      "a_both": 4,
+      "b_left_only": 39,
+      "c_right_only": 57,
+      "d_neither": 10940,
+      "left_total": 43,
+      "right_total": 61,
+      "odds_ratio": 19.685,
+      "fisher_p": 8.860847483859688e-05
+    },
+    "dedr_transparency_finding": {
+      "201_aracan": {
+        "fix": {
+          "cid": "201",
+          "phon": "aracaQ",
+          "stem": "aracaQ",
+          "sense": "king , sovereign , prince; queen; kingliness , king , kingdom , government; politics; king's palace"
+        },
+        "raw": {
+          "cid": "201",
+          "phon": "aracaQ",
+          "stem": "aracaQ",
+          "sense": "king , sovereign , prince; queen; kingliness , king , kingdom , government; politics; king's palace"
+        },
+        "2lang": {
+          "cid": "201",
+          "phon": "aracaQ",
+          "stem": "aracaQ",
+          "sense": "king , sovereign , prince; queen; kingliness , king , kingdom , government; politics; king's palace"
+        }
+      },
+      "202_aracu": {
+        "fix": {
+          "cid": "202",
+          "phon": "aracu",
+          "stem": "arac",
+          "sense": "pipal , ficus religiosa; a tree , prob. pipal"
+        },
+        "raw": {
+          "cid": "202",
+          "phon": "aracu",
+          "stem": "arac",
+          "sense": "pipal , ficus religiosa; a tree , prob. pipal"
+        },
+        "2lang": {
+          "cid": "202",
+          "phon": "aracu",
+          "stem": "arac",
+          "sense": "pipal , ficus religiosa; a tree , prob. pipal"
+        }
+      },
+      "144_atti": {
+        "fix": {
+          "cid": "144",
+          "phon": "atti",
+          "stem": "att",
+          "sense": "country fig , ficus glomerata; f. racemosa; green figs or plantains"
+        },
+        "raw": null,
+        "2lang": {
+          "cid": "144",
+          "phon": "atti",
+          "stem": "att",
+          "sense": "country fig , ficus glomerata; f. racemosa; green figs or plantains"
+        }
+      },
+      "145_attu": {
+        "fix": {
+          "cid": "145",
+          "phon": "attu",
+          "stem": "att",
+          "sense": "to unite , make to fit in , apply; sewing"
+        },
+        "raw": {
+          "cid": "145",
+          "phon": "attu",
+          "stem": "att",
+          "sense": "to unite , make to fit in , apply; sewing"
+        },
+        "2lang": {
+          "cid": "145",
+          "phon": "attu",
+          "stem": "att",
+          "sense": "to unite , make to fit in , apply; sewing"
+        }
+      },
+      "3895_panai_pipal": {
+        "fix": null,
+        "raw": null,
+        "2lang": {
+          "cid": "3895",
+          "phon": "paNai",
+          "stem": "paN",
+          "sense": "pipal"
+        }
+      },
+      "3891_panai_estate": {
+        "fix": {
+          "cid": "3884",
+          "phon": "paNai",
+          "stem": "paN",
+          "sense": "agricultural tract , paddy field , garden; field"
+        },
+        "raw": {
+          "cid": "3891",
+          "phon": "paNai",
+          "stem": "paN",
+          "sense": "agricultural tract , paddy field , garden; field"
+        },
+        "2lang": {
+          "cid": "3884",
+          "phon": "paNai",
+          "stem": "paN",
+          "sense": "agricultural tract , paddy field , garden; field"
+        }
+      },
+      "141_aku": {
+        "fix": {
+          "cid": "141",
+          "phon": "aku",
+          "stem": "aku",
+          "sense": "leaf , blade , plate"
+        },
+        "raw": null,
+        "2lang": {
+          "cid": "141",
+          "phon": "aku",
+          "stem": "aku",
+          "sense": "leaf , blade , plate"
+        }
+      },
+      "2995_takatu": {
+        "fix": {
+          "cid": "2995",
+          "phon": "takaTu",
+          "stem": "takaT",
+          "sense": "quality of being thin and flat , metal plate , leaf blade , outer petal , layer of earth; thin metal plate , spangle; copper leaf written ov"
+        },
+        "raw": {
+          "cid": "2995",
+          "phon": "takaTu",
+          "stem": "takaT",
+          "sense": "quality of being thin and flat , metal plate , leaf blade , outer petal , layer of earth; thin metal plate , spangle; copper leaf written ov"
+        },
+        "2lang": {
+          "cid": "2995",
+          "phon": "takaTu",
+          "stem": "takaT",
+          "sense": "quality of being thin and flat , metal plate , leaf blade , outer petal , layer of earth; thin metal plate , spangle; copper leaf written ov"
+        }
+      },
+      "explanation": "CRITICAL DEDR DISCOVERY: DEDR 201 (aracaṉ 'king') and DEDR 202 (aracu 'pipal') are BOTH in 2-branch pdrav_2branch_fixed AND pdrav_2branch RAW (NOT IA-filtered!). They fail Single-HW solely because Tamil masculine aracaṉ precedes stem aracu in DEDR 201 (aracaQ vs aracu). Meanwhile 144 atti (fig) <-> 145/149 attu IS an exact 2-branch PhonSt pair in FIX, and 3895 paṇai (pipal) is SDr 2L while 3891 paṇai (estate) is 2-branch FIX & RAW."
+    },
+    "family_members": {
+      "384": "LOCKED Key #7A (*āku / *takaṭu plain pipal/fig leaf, 44C)",
+      "388": "LOCKED Key #8A (*aracu / *āku (*atti) diagonally/chevron-veined pipal-leaf with central midrib and twin outward-curling top buds, 44C/5N)",
+      "382": "LOCKED Key #8A (*aracu / *āku stemmed pipal-leaf, 17C/2N, M325); same botanical paradigm as 384/388/380",
+      "380": "Stemless pipal/fig leaf (12C/5N, M323); tested independently in Wave-6 disjoint cohort",
+      "443": "STRUCTURAL Key #8A (Backward Gamma w/ serif, 7C/3N, M128); 5/7 occurrences immediately follow 388 (388-443-740, P=1.47e-11)"
+    }
+  },
+  "sign_611_portal_audit": {
+    "lipi_intact": 4,
+    "lipi_all": 6,
+    "new_intact": 0,
+    "cooccurrence_with_820_lipi": {
+      "n_611_with_820": 3,
+      "n_611_total": 6,
+      "n_lipi_with_820": 237,
+      "n_lipi_total": 5679,
+      "odds_ratio": 23.244,
+      "fisher_p": 0.0013071765510717752
+    },
+    "all_6_lipi_findspots": [
+      {
+        "text_id": "144.1",
+        "cisi": "-",
+        "site": "Dholavira",
+        "type": "MISC",
+        "intact": "True",
+        "area_mm2": "1110000.0",
+        "tokens": "820-611-388-820-850-645-031-821-798",
+        "has_820": true,
+        "co_occurs_with": [
+          "820",
+          "388",
+          "820"
+        ]
+      },
+      {
+        "text_id": "1064.1",
+        "cisi": "H-3",
+        "site": "Harappa",
+        "type": "SEAL:S",
+        "intact": "True",
+        "area_mm2": "2766.76",
+        "tokens": "703-615-611-002-017-585-740",
+        "has_820": false,
+        "co_occurs_with": [
+          "615",
+          "585",
+          "740"
+        ]
+      },
+      {
+        "text_id": "2065.1",
+        "cisi": "L-116",
+        "site": "Lothal",
+        "type": "MISC",
+        "intact": "False",
+        "area_mm2": "849.95",
+        "tokens": "820-611-000",
+        "has_820": true,
+        "co_occurs_with": [
+          "820"
+        ]
+      },
+      {
+        "text_id": "2584.1",
+        "cisi": "M-56",
+        "site": "Mohenjo-daro",
+        "type": "SEAL:S",
+        "intact": "True",
+        "area_mm2": "1176.49",
+        "tokens": "840-611-550-060-235-032-877-740",
+        "has_820": false,
+        "co_occurs_with": [
+          "877",
+          "740"
+        ]
+      },
+      {
+        "text_id": "3930.1",
+        "cisi": "H-1076",
+        "site": "Harappa",
+        "type": "SEAL:R",
+        "intact": "True",
+        "area_mm2": "462.0",
+        "tokens": "820-002-706-611-740",
+        "has_820": true,
+        "co_occurs_with": [
+          "820",
+          "740"
+        ]
+      },
+      {
+        "text_id": "4204.1",
+        "cisi": "-",
+        "site": "Dholavira",
+        "type": "SEAL",
+        "intact": "False",
+        "area_mm2": "",
+        "tokens": "000-611",
+        "has_820": false,
+        "co_occurs_with": []
+      }
+    ],
+    "lothal_L116_parallel": "Lothal L-116 (2065.1, steatite MISC 849.95 mm2, Phase III, photo L-116_A.jpg) carries exact opening bigram 820-611-000 matching Dholavira Signboard tokens #1-#2 (820-611-388-...); M3221 confirms Lothal 611-820 pairing.",
+    "photo_morphology": "H-3_a (Harappa Mound F Granary, giant 2,766.76 mm2 square seal, co-occurring with 585!), M-56_a (1,176.49 mm2, co-occurring with 877!), L-116_A, and Bisht img_014 all confirm a vertical post topped by twin symmetric rectangular boxes/canopy-lintel (M256).",
+    "dedr_audit": {
+      "3694_nukam": {
+        "fix": {
+          "cid": "3694",
+          "phon": "nukam",
+          "stem": "nuk",
+          "sense": "yoke , burden , power , strength , protecting bar; yoke , harness which joins the necks"
+        },
+        "raw": {
+          "cid": "3694",
+          "phon": "nukam",
+          "stem": "nuk",
+          "sense": "yoke , burden , power , strength , protecting bar; yoke , harness which joins the necks"
+        },
+        "2lang": {
+          "cid": "3694",
+          "phon": "nukam",
+          "stem": "nuk",
+          "sense": "yoke , burden , power , strength , protecting bar; yoke , harness which joins the necks"
+        }
+      },
+      "1663_kutai": {
+        "fix": {
+          "cid": "1663",
+          "phon": "kuTai",
+          "stem": "kuT",
+          "sense": "umbrella , parasol , canopy; umbrella"
+        },
+        "raw": {
+          "cid": "1663",
+          "phon": "kuTai",
+          "stem": "kuT",
+          "sense": "umbrella , parasol , canopy; umbrella"
+        },
+        "2lang": {
+          "cid": "1663",
+          "phon": "kuTai",
+          "stem": "kuT",
+          "sense": "umbrella , parasol , canopy; umbrella"
+        }
+      },
+      "1655_kuti": {
+        "fix": {
+          "cid": "1655",
+          "phon": "kuTi",
+          "stem": "kuT",
+          "sense": "house , abode , home , family , lineage , town , tenants; hut , temple; hut; small hut , cottage; family , lineage , allegiance , servitude"
+        },
+        "raw": {
+          "cid": "1655",
+          "phon": "kuTi",
+          "stem": "kuT",
+          "sense": "house , abode , home , family , lineage , town , tenants; hut , temple; hut; small hut , cottage; family , lineage , allegiance , servitude"
+        },
+        "2lang": {
+          "cid": "1655",
+          "phon": "kuTi",
+          "stem": "kuT",
+          "sense": "house , abode , home , family , lineage , town , tenants; hut , temple; hut; small hut , cottage; family , lineage , allegiance , servitude"
+        }
+      },
+      "4689_matalai": {
+        "fix": null,
+        "raw": null,
+        "2lang": {
+          "cid": "4689",
+          "phon": "matalai",
+          "stem": "matal",
+          "sense": "prop , post , cornices on sides or"
+        }
+      },
+      "note": "3694 *nukam ('yoke, protecting bar of a door') is 2-branch FIX & RAW (direct architectural match); 1663 *kuṭai ('umbrella, canopy') is 2-branch FIX & RAW with PhonSt to 1655 *kuṭi ('house, temple') — note H-3 contains BOTH 611 and 585; 4689 *matalai ('doorway lintel') is SDr 2L only. 0 Sangam compound hits."
+    }
+  },
+  "sign_6_and_645_audit": {
+    "corpus_645_stats": {
+      "lipi_intact": 22,
+      "new_intact": 5,
+      "comb_intact": 27,
+      "all_occurrences": 34,
+      "counted_tally_adjacent": "11/27",
+      "fisher_104_to_645": {
+        "a_both": 7,
+        "b_left_only": 12,
+        "c_right_only": 15,
+        "d_neither": 11006,
+        "left_total": 19,
+        "right_total": 22,
+        "odds_ratio": 428.011,
+        "fisher_p": 2.140086612897761e-15
+      },
+      "fisher_645_to_590": {
+        "a_both": 7,
+        "b_left_only": 13,
+        "c_right_only": 140,
+        "d_neither": 10880,
+        "left_total": 20,
+        "right_total": 147,
+        "odds_ratio": 41.846,
+        "fisher_p": 4.312229980877138e-09
+      }
+    },
+    "sign_064_ruled_out": "Direct photo inspection of M-361_a and M-932_a confirms Lipi 064 is a tall slender bifurcated vertical stem (Y-fork), visually incompatible with Bisht Fig. 8.4 Sign #6 (wide 5-piece inverted-V + vertical apex).",
+    "bisht_2015_verbatim": {
+      "local_txt_verified": true,
+      "source_provenance": "Dholavira-Bisht2015.pdf/.txt (Kalyanaraman excerpt reproducing verbatim R. S. Bisht 2015, ASI, Sec. 8.1.1 pp. 228-231, p. 111-112, and original ASI Figs. 8.2-8.7).",
+      "sec_8_1_1_excerpt": "This inscription was found lying in the western chamber of north gate, and the nature of find indicates that it could have been fitted on a wooden signboard, most probably fitted above the lintel of the central passageway of the gate. The central passageway of north gate itself measures 3.5 m in width and the length of the inscription along with the wooden frame impression is also more or less same thereby indicating the probable location. The inscription consists of 10 large-sized letters of the typical Harappan script, and is actually gypsum inlays cut into various sizes and shapes...",
+      "p_111_112_excerpt": "The north gate is also remarkable for yielding a spectacularly large inscription made up of 10 unusually big Harappan letters which were surely inlaid on a wooden board since decayed but fairly determinable for its size and shape which matched well with the width of the doorsill of the gate and suggesting thereby that it was originally sported on the facade, right above the door of the gate so as to be visible from afar for its white brilliance.",
+      "late_harappan_vandalism_note": "Bisht p. 112 notes the central pillar of the western chamber of the North Gate was robbed out and the chamber suffered late-Harappan vandalism, directly explaining physical displacement of Signs #6-#10.",
+      "asi_field_card_img_016": {
+        "file": "work_data/key7d/dholavira_pdf_imgs/img_016.jpg (Bisht Fig. 8.7)",
+        "header": "NORTH GATE / SITE DHR / WESTERN CHAMBER",
+        "locus": "47 x 53?",
+        "description": "Pieces of Harappan Inscription (19 Nos of assorted sizes)",
+        "object_material": "Stone Paste",
+        "period": "Harappan",
+        "date": "24.03.95 (24 March 1995)",
+        "visual_observation": "Shows 4 elongated white gypsum/stone-paste inlay strips (7-9 cm long beside a 0-10 cm scale bar; 4th strip broken cleanly in two) next to the original handwritten ASI field tag."
+      }
+    },
+    "dedr_audit_645": {
+      "1109_kata": {
+        "fix": {
+          "cid": "1109",
+          "phon": "kaTa",
+          "stem": "kaT",
+          "sense": "to pass through , traverse , cross , exceed , excel , win , overcome , transgress; to cause to go , drive , transport , pass; boat; passing "
+        },
+        "raw": {
+          "cid": "5091",
+          "phon": "me",
+          "stem": "me",
+          "sense": "that which is above , etc; mege the upper side , surface , etc; upwardly; upper; what is above"
+        },
+        "2lang": {
+          "cid": "1109",
+          "phon": "kaTa",
+          "stem": "kaT",
+          "sense": "to pass through , traverse , cross , exceed , excel , win , overcome , transgress; to cause to go , drive , transport , pass; boat; passing "
+        }
+      },
+      "1113_katam": {
+        "fix": {
+          "cid": "1113",
+          "phon": "kaTam",
+          "stem": "kaT",
+          "sense": "debt , religious obligations , duty; obligation , debt , loan of money , tax; duty , obligation , tax , tribute"
+        },
+        "raw": {
+          "cid": "1113",
+          "phon": "kaTam",
+          "stem": "kaT",
+          "sense": "debt , religious obligations , duty; obligation , debt , loan of money , tax; duty , obligation , tax , tribute"
+        },
+        "2lang": {
+          "cid": "1113",
+          "phon": "kaTam",
+          "stem": "kaT",
+          "sense": "debt , religious obligations , duty; obligation , debt , loan of money , tax; duty , obligation , tax , tribute"
+        }
+      },
+      "1473_karu_bug": {
+        "fix": {
+          "cid": "1473",
+          "phon": "karuka",
+          "stem": "karuk",
+          "sense": "to gnaw , bite by degrees; woodpecker; to gnaw , pick , nibble , bore"
+        },
+        "raw": {
+          "cid": "1473",
+          "phon": "karuka",
+          "stem": "karuk",
+          "sense": "to gnaw , bite by degrees; woodpecker; to gnaw , pick , nibble , bore"
+        },
+        "2lang": {
+          "cid": "1473",
+          "phon": "karuka",
+          "stem": "karuk",
+          "sense": "to gnaw , bite by degrees; woodpecker; to gnaw , pick , nibble , bore"
+        }
+      },
+      "1348_kalancu": {
+        "fix": null,
+        "raw": null,
+        "2lang": {
+          "cid": "1348",
+          "phon": "kaZaJcu",
+          "stem": "kaZaJc",
+          "sense": "a weight = 1/6 oz. troy; a drachm , weight"
+        }
+      },
+      "explanation": "FIX-ONLY 2-BRANCH PhonSt BRIDGE: 1109 *kaṭa ('pass through, traverse, cross') <-> 1113 *kaṭam ('debt, obligation, duty, tax, tribute') holds cleanly in pdrav_2branch_fixed (FIX) ONLY, because pdrav_2branch (RAW) misaligns eid=1109 onto cid=5091 mē (leaving 0 *kaṭa entries in RAW). Parser bug also noted: DEDR 1473 kāru ('pincers') was glued with 1474 Ma. kāruka ('gnaw') by an unclosed '(' in raw TSV; 1348 kaḻañcu ('gold weight') is SDr 2L only."
+    }
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "counts": {
+    "total_lipi_824": 32,
+    "total_unseen_new_824": 0,
+    "824a_all": 10,
+    "824a_intact": 7,
+    "824a_photo_verified": 6,
+    "824a_initial_all": 10,
+    "824a_before_002_all": 9,
+    "824b_all": 22,
+    "824b_intact": 18,
+    "824b_photo_verified": 8,
+    "h2085_normalized_to_824b": true
+  },
+  "cos_824a_vs_861_817": {
+    "key7a_buggy_pos0_824a_vs_817": {
+      "cosL": 0.9991,
+      "cosR": 0.9822,
+      "cosMean": 0.9907
+    },
+    "key7a_buggy_pos0_824a_vs_861": {
+      "cosL": 0.9804,
+      "cosR": 0.948,
+      "cosMean": 0.9642
+    },
+    "clean_exogenous_824a_vs_817": {
+      "cosL": 0.9991,
+      "cosR": 0.9954,
+      "cosMean": 0.9973
+    },
+    "clean_exogenous_824a_vs_861": {
+      "cosL": 0.9804,
+      "cosR": 0.9607,
+      "cosMean": 0.9705
+    },
+    "clean_exogenous_824a_vs_824b": {
+      "cosL": 0.0,
+      "cosR": 0.0,
+      "cosMean": 0.0
+    }
+  },
+  "m284_m286_group": {
+    "877_intact_total": 25,
+    "880_intact_total": 8,
+    "824b_intact_total": 18,
+    "cos_877_vs_861": {
+      "cosL": 0.7592,
+      "cosR": 0.3468,
+      "cosMean": 0.553
+    },
+    "cos_877_vs_820": {
+      "cosL": 0.7665,
+      "cosR": 0.3317,
+      "cosMean": 0.5491
+    },
+    "cos_880_vs_861": {
+      "cosL": 0.9542,
+      "cosR": 0.8589,
+      "cosMean": 0.9066
+    },
+    "cos_880_vs_817": {
+      "cosL": 0.9725,
+      "cosR": 0.8821,
+      "cosMean": 0.9273
+    },
+    "cos_824b_vs_877": {
+      "cosL": 0.1966,
+      "cosR": 0.5203,
+      "cosMean": 0.3584
+    },
+    "fisher_824a_to_002": {
+      "a_both": 6,
+      "b_left_only": 1,
+      "c_right_only": 650,
+      "d_neither": 10383,
+      "left_total": 7,
+      "right_total": 656,
+      "odds_ratio": 95.843,
+      "fisher_p": 2.8630996737005007e-07
+    },
+    "fisher_892_to_824b": {
+      "a_both": 12,
+      "b_left_only": 47,
+      "c_right_only": 6,
+      "d_neither": 10975,
+      "left_total": 59,
+      "right_total": 18,
+      "odds_ratio": 467.021,
+      "fisher_p": 2.9834789666387663e-24
+    },
+    "fisher_032_to_824b": {
+      "a_both": 4,
+      "b_left_only": 390,
+      "c_right_only": 14,
+      "d_neither": 10632,
+      "left_total": 394,
+      "right_total": 18,
+      "odds_ratio": 7.789,
+      "fisher_p": 0.0032840420197786098
+    },
+    "fisher_032_to_877": {
+      "a_both": 9,
+      "b_left_only": 385,
+      "c_right_only": 5,
+      "d_neither": 10641,
+      "left_total": 394,
+      "right_total": 14,
+      "odds_ratio": 49.75,
+      "fisher_p": 1.4668515326397536e-10
+    },
+    "fisher_877_to_740": {
+      "a_both": 9,
+      "b_left_only": 10,
+      "c_right_only": 1465,
+      "d_neither": 9556,
+      "left_total": 19,
+      "right_total": 1474,
+      "odds_ratio": 5.871,
+      "fisher_p": 0.0003442701813093802
+    },
+    "fisher_880_to_002": {
+      "a_both": 4,
+      "b_left_only": 4,
+      "c_right_only": 652,
+      "d_neither": 10380,
+      "left_total": 8,
+      "right_total": 656,
+      "odds_ratio": 15.92,
+      "fisher_p": 0.0007132545281120557
+    },
+    "shared_032_preceding": "Both 877 (9/25 intact: 032-877, P=1.47e-10) and 824b (4/18 intact: 415-578-032-824b, P=3.28e-03) are directly preceded by numeral 032 (*iru = 2, two tall strokes)!",
+    "photo_morphology_synthesis": {
+      "877": "Carved stone (M-874_a, M-217_a, M-880_a) shows an outer diamond divided by an internal cross into 4 small diamonds/quarters (M284: *nāl-kāṇam). On M-880_a, 877 sits directly beside 861 (*kāṇam)!",
+      "880": "Carved stone (M-6_a 692x739, M-296_a, M-225_a) shows an outer diamond (861 *kāṇam) enclosing an internal 6-spoked wheel (820 *kāl) — literally an explicit 861+820 compound ligature (*kāṇam-*kāl)! On M-6_a, 880 sits directly beside 820 (*kāl)!",
+      "824b": "Carved stone on 8 Harappa tablets (H-301, H-360, H-786, H-787, H-905, H-906, H-907, H-988) shows the exact M284 4-quartered diamond/wheel (*nāl-kāṇam) closing 413-892-824b (12x incl. reversed H-2085) & 415-578-032-824b (4x)."
+    },
+    "dedr_2branch_audit": {
+      "1479": {
+        "in_fix": true,
+        "in_raw": true,
+        "headword_fix": "kal",
+        "stem_fix": "kal",
+        "sense_fix": "leg , foot , base , quarter , family , relationship; footsoldier; herd of cows , cow"
+      },
+      "1483": {
+        "in_fix": true,
+        "in_raw": true,
+        "headword_fix": "kal",
+        "stem_fix": "kal",
+        "sense_fix": "wheel , cart; wheel"
+      },
+      "3655": {
+        "in_fix": true,
+        "in_raw": true,
+        "headword_fix": "nal",
+        "stem_fix": "nal",
+        "sense_fix": "four; fourth; fourfold; forty; 400"
+      },
+      "1444": {
+        "in_fix": true,
+        "in_raw": true,
+        "headword_fix": "kaNam",
+        "stem_fix": "kaN",
+        "sense_fix": "an ancient weight; the fraction 1/80; property , possession , hereditary right"
+      },
+      "1159": {
+        "in_fix": true,
+        "in_raw": false,
+        "headword_fix": "kaN",
+        "stem_fix": "kaN",
+        "sense_fix": "eye , aperture , orifice , star; and 1182; nir tears"
+      },
+      "3808": {
+        "in_fix": true,
+        "in_raw": false,
+        "headword_fix": "paku",
+        "stem_fix": "pak",
+        "sense_fix": "to be split , divided , be at variance , separate; to distribute , apportion , classify , give , divide , cut , tear off"
+      },
+      "4097": {
+        "in_fix": true,
+        "in_raw": true,
+        "headword_fix": "pal",
+        "stem_fix": "pal",
+        "sense_fix": "part , portion , share , section , dividing; portion , share"
+      },
+      "5359": {
+        "in_fix": true,
+        "in_raw": true,
+        "headword_fix": "varam",
+        "stem_fix": "var",
+        "sense_fix": "hire , rent , lease of land , share , share , portion; advance given to cultivators to enable them to carry on cultivati"
+      }
+    }
+  }
+}
