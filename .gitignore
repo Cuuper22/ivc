@@ -37,3 +37,7 @@ build/
 # large working files of the language test (rebuilt by work_scripts/lang_m_*.py)
 work_data/lang_m/raw/
 work_data/lang_m/evidence.csv
+
+# regenerable contact sheets and PDF image dumps (rebuilt by work_scripts/key7d_find_photos.py)
+work_data/key7d/sheet_*.png
+work_data/key7d/dholavira_pdf_imgs/
