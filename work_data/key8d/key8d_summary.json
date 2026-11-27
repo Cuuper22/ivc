@@ -1,0 +1,6323 @@
+{
+  "meta": {
+    "script": "work_scripts/key8d_external_bridges.py",
+    "milestone": "M3_buried_external_locks",
+    "nshuf": 5000,
+    "seed": 20261130,
+    "module_seeds": {
+      "copper_bilinguals": 20261141,
+      "meluhha_endemism": 20261152,
+      "precity_continuity": 20261163,
+      "animal_standletter_227": 20261174,
+      "megalithic_graffiti": 20261185
+    },
+    "denominators": {
+      "lex227": 227,
+      "glossary_227": 227,
+      "tier_224": 224,
+      "tier_220": 220,
+      "lipi_intact_faces": 3600,
+      "lipi_intact_tokens": 13209,
+      "new_intact_faces": 563,
+      "new_intact_tokens": 1994,
+      "comb_intact_faces": 4163,
+      "comb_intact_tokens": 15203
+    }
+  },
+  "copper_bilinguals": {
+    "whole_corpus_decoding": {
+      "n_lipi_ctabs": 189,
+      "n_m77_ctabs": 135,
+      "clean_obverse_tokens": 895,
+      "decoded_227_tokens": 852,
+      "decoded_227_token_pct": 95.2,
+      "decoded_224_tokens": 852,
+      "decoded_224_token_pct": 95.2,
+      "intact_obverse_faces": 164,
+      "intact_full_227_faces": 131,
+      "intact_full_227_pct": 79.88,
+      "intact_full_224_faces": 131,
+      "intact_full_224_pct": 79.88,
+      "all_readable_full_227_faces": 153
+    },
+    "test6a_picsign_enrichment": {
+      "strict_9": {
+        "label": "strict_9_single_sign_picture_face",
+        "signs": [
+          "341",
+          "749",
+          "753",
+          "777",
+          "780",
+          "781",
+          "782",
+          "841",
+          "957"
+        ],
+        "n_signs": 9,
+        "r3_total_uses": 27,
+        "r3_copper_uses": 25,
+        "r3_copper_share": 0.9259,
+        "r3_picture_face_uses": 24,
+        "r3_picture_face_share": 0.8889,
+        "outside_copper_occurrences": {
+          "777": [
+            "H-598 (seals)"
+          ],
+          "780": [
+            "M-167 (seals)"
+          ]
+        },
+        "events_lipi_unweighted": {
+          "ctab_in_set": 24,
+          "tot_in_set": 26,
+          "set_ctab_pct": 92.31,
+          "bg_ctab": 743,
+          "bg_tot": 17008,
+          "bg_ctab_pct": 4.37,
+          "fisher_p_1sided": 1.0169643889733261e-30
+        },
+        "events_lipi_batch_weighted": {
+          "ctab_in_set": 25,
+          "tot_in_set": 27,
+          "set_ctab_pct": 92.59,
+          "bg_ctab": 940,
+          "bg_tot": 17820,
+          "bg_ctab_pct": 5.27,
+          "fisher_p_1sided": 4.9577598548174534e-30
+        },
+        "rarity_matched_perm_picface_share": {
+          "obs": 0.888889,
+          "null_mean": 0.019519,
+          "null_sd": 0.035352,
+          "z": 24.592,
+          "p_perm": 0.0002,
+          "max_null": 0.22222
+        },
+        "rarity_matched_perm_ctab_share": {
+          "obs": 0.925926,
+          "null_mean": 0.019519,
+          "null_sd": 0.035352,
+          "z": 25.64,
+          "p_perm": 0.0002,
+          "max_null": 0.22222
+        }
+      },
+      "copper_4_10_plus_479": {
+        "label": "copper_4_picsign_10_sign_plus_479",
+        "signs": [
+          "341",
+          "479",
+          "749",
+          "753",
+          "777",
+          "780",
+          "781",
+          "782",
+          "841",
+          "957"
+        ],
+        "n_signs": 10,
+        "r3_total_uses": 29,
+        "r3_copper_uses": 27,
+        "r3_copper_share": 0.931,
+        "r3_picture_face_uses": 26,
+        "r3_picture_face_share": 0.8966,
+        "outside_copper_occurrences": {
+          "777": [
+            "H-598 (seals)"
+          ],
+          "780": [
+            "M-167 (seals)"
+          ]
+        },
+        "events_lipi_unweighted": {
+          "ctab_in_set": 26,
+          "tot_in_set": 28,
+          "set_ctab_pct": 92.86,
+          "bg_ctab": 741,
+          "bg_tot": 17006,
+          "bg_ctab_pct": 4.36,
+          "fisher_p_1sided": 2.2537433403306816e-33
+        },
+        "events_lipi_batch_weighted": {
+          "ctab_in_set": 27,
+          "tot_in_set": 29,
+          "set_ctab_pct": 93.1,
+          "bg_ctab": 938,
+          "bg_tot": 17818,
+          "bg_ctab_pct": 5.26,
+          "fisher_p_1sided": 1.5935669096050577e-32
+        },
+        "rarity_matched_perm_picface_share": {
+          "obs": 0.896552,
+          "null_mean": 0.01509,
+          "null_sd": 0.030271,
+          "z": 29.119,
+          "p_perm": 0.0002,
+          "max_null": 0.17241
+        },
+        "rarity_matched_perm_ctab_share": {
+          "obs": 0.931034,
+          "null_mean": 0.01509,
+          "null_sd": 0.030271,
+          "z": 30.258,
+          "p_perm": 0.0002,
+          "max_null": 0.17241
+        }
+      }
+    },
+    "test6b_bilingual_locks": {
+      "lock1_341_stag": {
+        "sign": "341",
+        "m77": "X184",
+        "locked_root": "*mā (deer / great)",
+        "source_lever": "Key7A_4D_WorkshopAllo(347)",
+        "shape_desc": "Deer facing to the right (see also P303)",
+        "cluster_4d": "347:347|345|341|342|343",
+        "obverse_short_family": "503-615-740",
+        "obverse_short_lipi_copies": 3,
+        "obverse_short_lipi_341_copies": 2,
+        "obverse_short_lipi_341_ids": [
+          "M-516",
+          "M-517"
+        ],
+        "obverse_short_m77_copies": 3,
+        "obverse_short_m77_x184_copies": 2,
+        "obverse_short_m77_x184_ids": [
+          "3334",
+          "3398"
+        ],
+        "twin_stag_family": "503-615-752-740",
+        "twin_lipi_copies": 30,
+        "twin_lipi_eye_stag": 4,
+        "twin_lipi_eye_specific_total": 4,
+        "twin_m77_copies": 20,
+        "twin_m77_fs_147_145": 19,
+        "twin_m77_fs_coded_total": 19,
+        "twin_m77_fs_counts": {
+          "147": 12,
+          "145": 7
+        },
+        "fisher_341_on_503_615_all_ctab": {
+          "table": [
+            [
+              2,
+              0
+            ],
+            [
+              31,
+              156
+            ]
+          ],
+          "p_1sided": 0.029719689294157376
+        },
+        "fisher_341_on_503_615_among_picsign_ctab": {
+          "table": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              21
+            ]
+          ],
+          "p_1sided": 0.003952569169960474
+        },
+        "honest_caveat_3rd_copy": "Third copy of 503-615-740 (Lipi obj=2522 / VS 3500 / M77 1707, unphotographed) is coded cat='Rhin' / fs='113' (rhinoceros) rather than 341 or stag."
+      },
+      "lock2_923_elephant": {
+        "sign": "923",
+        "locked_root": "*maruppu",
+        "source_lever": "Key3A",
+        "formula": "706/705-033-923-740[-001]",
+        "lipi_923_elephant_table": [
+          [
+            11,
+            2
+          ],
+          [
+            0,
+            176
+          ]
+        ],
+        "lipi_elephants_carrying_923": "11/11",
+        "lipi_fisher_p_1sided": 3.810307068921849e-16,
+        "lipi_non_elephant_923_notes": [
+          "-: 705-033-923-740-001 (pic=no picture (text both faces), second=003-422)",
+          "M-531: 000-923-000 (pic=none, second=none)"
+        ],
+        "m77_923_elephant_table": [
+          [
+            6,
+            3
+          ],
+          [
+            1,
+            125
+          ]
+        ],
+        "m77_elephants_carrying_923": "6/7",
+        "m77_fisher_p_1sided": 7.671610694365869e-08,
+        "seal_corpus_923_contrast": {
+          "n_seals_with_923": 28,
+          "animal_breakdown": {
+            "Bull1": 18,
+            "None": 7,
+            "Zebu": 1,
+            "Elep": 1,
+            "Tigr": 1
+          },
+          "interpretation": "Unicorn-dominated on seals (commodity/account indexing on copper tablets, not a seal-animal cliché)."
+        }
+      },
+      "dedup_family_permutation": {
+        "n_distinct_emblem_families": 27,
+        "obverse_only_two_pair_923_407": {
+          "obs": 4.0,
+          "null_mean": 0.8098,
+          "null_sd": 0.757983,
+          "z": 4.209,
+          "p_perm": 0.0004
+        },
+        "individual_family_fishers": {
+          "923_x_ELEPHANT": {
+            "table": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                26
+              ]
+            ],
+            "p_1sided": 0.03703703703703704
+          },
+          "407_x_PLANT_VESSEL_PF": {
+            "table": [
+              [
+                3,
+                4
+              ],
+              [
+                0,
+                20
+              ]
+            ],
+            "p_1sided": 0.011965811965811965
+          }
+        },
+        "noncircular_341_indel_twin_stag_check": {
+          "pf341_families": [
+            "503-615-740"
+          ],
+          "n_other_families": 26,
+          "n_1indel_twins_of_pf341": 1,
+          "n_stag_picture_families": 2,
+          "twin_stag_hits": 1,
+          "matched_twin_families": [
+            "503-615-752-740"
+          ],
+          "table": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              24
+            ]
+          ],
+          "fisher_p_1sided": 0.07692307692307691
+        },
+        "plant_vessel_families": [
+          "231-017-585-095-520-032-407",
+          "235-705-033-845-407-321-407",
+          "806-845-061-407-850-900-740"
+        ],
+        "plant_vessel_families_with_407": [
+          "231-017-585-095-520-032-407",
+          "235-705-033-845-407-321-407",
+          "806-845-061-407-850-900-740"
+        ],
+        "families_with_845_vari": [
+          {
+            "family": "235-705-033-845-407-321-407",
+            "copies_L": 14,
+            "emblems": [
+              "HARE",
+              "PLANT_VESSEL_PF"
+            ]
+          },
+          {
+            "family": "415-220-845-407",
+            "copies_L": 3,
+            "emblems": [
+              "KNOT_LOOP"
+            ]
+          },
+          {
+            "family": "798-240-845-061-407",
+            "copies_L": 7,
+            "emblems": [
+              "GAUR",
+              "TIGER"
+            ]
+          },
+          {
+            "family": "806-845-061-407-850-900-740",
+            "copies_L": 16,
+            "emblems": [
+              "HUMAN_ARCHER",
+              "PLANT_VESSEL_PF"
+            ]
+          }
+        ]
+      }
+    },
+    "test6c_176_384_swap": {
+      "family_template": "806-233-{384|176}-740",
+      "sign_176_root": "*iṟai/*iru",
+      "sign_176_lever": "Key3A",
+      "sign_384_root": "*āku / *takaṭu",
+      "sign_384_lever": "Key7A_Rescue_TIER1B_Direct",
+      "lipi_complete_copies": {
+        "384": 3,
+        "176": 2
+      },
+      "lipi_all_copies": {
+        "384": 6,
+        "176": 2
+      },
+      "m77_copies": {
+        "384": 6,
+        "176": 5
+      },
+      "corpus_uses": {
+        "176": 97,
+        "384": 19
+      },
+      "shared_frames": 8,
+      "min_frame_set": 14,
+      "frame_overlap": 0.5714,
+      "frame_overlap_perm": {
+        "obs": 0.571429,
+        "null_mean": 0.086758,
+        "null_sd": 0.099188,
+        "z": 4.886,
+        "p_perm": 0.0054
+      },
+      "out_of_copper_zero_leakage": {
+        "corpus_uses": {
+          "176": 90,
+          "384": 18
+        },
+        "shared_frames": 7,
+        "min_frame_set": 13,
+        "frame_overlap": 0.5385,
+        "frame_overlap_perm": {
+          "obs": 0.538462,
+          "null_mean": 0.087806,
+          "null_sd": 0.102229,
+          "z": 4.408,
+          "p_perm": 0.007
+        }
+      },
+      "shared_reverse_emblems": "striped horned beast (M-505, M-1449; M77 fs=135 7x) and picture-face sign 749 / X346 (M-597, M-1550; M77 3313, 3343)"
+    }
+  },
+  "meluhha_endemism": {
+    "lexicon_inventory": {
+      "Dravidian": {
+        "tsv": "pdrav_2branch_fixed.tsv",
+        "n_etyma": 3411,
+        "is_de": false,
+        "tier": "primary7"
+      },
+      "RawPDrav": {
+        "tsv": "pdrav_2branch.tsv",
+        "n_etyma": 3256,
+        "is_de": false,
+        "tier": "audit_raw"
+      },
+      "Dravidian_2Lang": {
+        "tsv": "pdrav_2lang_fixed.tsv",
+        "n_etyma": 5095,
+        "is_de": false,
+        "tier": "daughter_audit"
+      },
+      "Dravidian_Tamil": {
+        "tsv": "dedr_tamil.tsv",
+        "n_etyma": 3447,
+        "is_de": false,
+        "tier": "daughter_audit"
+      },
+      "Munda": {
+        "tsv": "pmunda_cognates.tsv",
+        "n_etyma": 1417,
+        "is_de": false,
+        "tier": "primary7"
+      },
+      "Munda_Santali": {
+        "tsv": "santali_campbell.tsv",
+        "n_etyma": 12001,
+        "is_de": false,
+        "tier": "daughter_control"
+      },
+      "Indo-Aryan": {
+        "tsv": "oia_cognates.tsv",
+        "n_etyma": 6338,
+        "is_de": false,
+        "tier": "primary7"
+      },
+      "Indo-Aryan_Turner": {
+        "tsv": "oia_turner.tsv",
+        "n_etyma": 9254,
+        "is_de": false,
+        "tier": "daughter_control"
+      },
+      "Elamite": {
+        "tsv": "elamite_roots.tsv",
+        "n_etyma": 2437,
+        "is_de": true,
+        "tier": "primary7"
+      },
+      "Sumerian": {
+        "tsv": "sumerian_roots.tsv",
+        "n_etyma": 3385,
+        "is_de": false,
+        "tier": "primary7"
+      },
+      "Sumerian_Halloran": {
+        "tsv": "sumerian_halloran.tsv",
+        "n_etyma": 3257,
+        "is_de": false,
+        "tier": "daughter_control"
+      },
+      "Akkadian": {
+        "tsv": "akkadian_roots.tsv",
+        "n_etyma": 716,
+        "is_de": false,
+        "tier": "primary7"
+      },
+      "Burushaski": {
+        "tsv": "burushaski_all.tsv",
+        "n_etyma": 1743,
+        "is_de": false,
+        "tier": "primary7"
+      }
+    },
+    "zero_nsem_in_dedr_2lang": [
+      "V13_algaum_steatite",
+      "V14_dusia_stone",
+      "V16_nir_agate"
+    ],
+    "exact_skeleton_primary": {
+      "Full_S1_16": {
+        "Dravidian": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1_16",
+          "family": "Dravidian",
+          "tier": "primary7",
+          "n_etyma": 3411,
+          "K_tested": 16,
+          "hits": 2,
+          "hit_rate": 0.125,
+          "null_mu": 1.159,
+          "null_sd": 0.885,
+          "z": 0.951,
+          "p_perm": 0.31454,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "RawPDrav": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1_16",
+          "family": "RawPDrav",
+          "tier": "audit_raw",
+          "n_etyma": 3256,
+          "K_tested": 16,
+          "hits": 2,
+          "hit_rate": 0.125,
+          "null_mu": 1.043,
+          "null_sd": 0.84,
+          "z": 1.14,
+          "p_perm": 0.26335,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_2Lang": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1_16",
+          "family": "Dravidian_2Lang",
+          "tier": "daughter_audit",
+          "n_etyma": 5095,
+          "K_tested": 16,
+          "hits": 4,
+          "hit_rate": 0.25,
+          "null_mu": 1.508,
+          "null_sd": 0.926,
+          "z": 2.692,
+          "p_perm": 0.0228,
+          "pass_nominal_05": true,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_Tamil": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1_16",
+          "family": "Dravidian_Tamil",
+          "tier": "daughter_audit",
+          "n_etyma": 3447,
+          "K_tested": 16,
+          "hits": 4,
+          "hit_rate": 0.25,
+          "null_mu": 1.519,
+          "null_sd": 0.97,
+          "z": 2.558,
+          "p_perm": 0.02719,
+          "pass_nominal_05": true,
+          "pass_bonf7_00714": false
+        },
+        "Munda": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1_16",
+          "family": "Munda",
+          "tier": "primary7",
+          "n_etyma": 1417,
+          "K_tested": 16,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.04,
+          "null_sd": 0.199,
+          "z": -0.203,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda_Santali": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1_16",
+          "family": "Munda_Santali",
+          "tier": "daughter_control",
+          "n_etyma": 12001,
+          "K_tested": 16,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.33,
+          "null_sd": 0.541,
+          "z": -0.61,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1_16",
+          "family": "Indo-Aryan",
+          "tier": "primary7",
+          "n_etyma": 6338,
+          "K_tested": 16,
+          "hits": 1,
+          "hit_rate": 0.0625,
+          "null_mu": 0.092,
+          "null_sd": 0.301,
+          "z": 3.014,
+          "p_perm": 0.08918,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan_Turner": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1_16",
+          "family": "Indo-Aryan_Turner",
+          "tier": "daughter_control",
+          "n_etyma": 9254,
+          "K_tested": 16,
+          "hits": 1,
+          "hit_rate": 0.0625,
+          "null_mu": 0.164,
+          "null_sd": 0.393,
+          "z": 2.127,
+          "p_perm": 0.15537,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Elamite": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1_16",
+          "family": "Elamite",
+          "tier": "primary7",
+          "n_etyma": 2437,
+          "K_tested": 16,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.006,
+          "null_sd": 0.075,
+          "z": -0.075,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1_16",
+          "family": "Sumerian",
+          "tier": "primary7",
+          "n_etyma": 3385,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian_Halloran": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1_16",
+          "family": "Sumerian_Halloran",
+          "tier": "daughter_control",
+          "n_etyma": 3257,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.014,
+          "null_sd": 0.117,
+          "z": -0.118,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Burushaski": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1_16",
+          "family": "Burushaski",
+          "tier": "primary7",
+          "n_etyma": 1743,
+          "K_tested": 16,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.049,
+          "null_sd": 0.216,
+          "z": -0.227,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        }
+      },
+      "Full_S1S2_22": {
+        "Dravidian": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1S2_22",
+          "family": "Dravidian",
+          "tier": "primary7",
+          "n_etyma": 3411,
+          "K_tested": 22,
+          "hits": 3,
+          "hit_rate": 0.1364,
+          "null_mu": 1.647,
+          "null_sd": 1.054,
+          "z": 1.284,
+          "p_perm": 0.19336,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "RawPDrav": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1S2_22",
+          "family": "RawPDrav",
+          "tier": "audit_raw",
+          "n_etyma": 3256,
+          "K_tested": 22,
+          "hits": 3,
+          "hit_rate": 0.1364,
+          "null_mu": 1.539,
+          "null_sd": 1.023,
+          "z": 1.429,
+          "p_perm": 0.16477,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_2Lang": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1S2_22",
+          "family": "Dravidian_2Lang",
+          "tier": "daughter_audit",
+          "n_etyma": 5095,
+          "K_tested": 22,
+          "hits": 5,
+          "hit_rate": 0.2273,
+          "null_mu": 2.11,
+          "null_sd": 1.099,
+          "z": 2.631,
+          "p_perm": 0.0198,
+          "pass_nominal_05": true,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_Tamil": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1S2_22",
+          "family": "Dravidian_Tamil",
+          "tier": "daughter_audit",
+          "n_etyma": 3447,
+          "K_tested": 22,
+          "hits": 5,
+          "hit_rate": 0.2273,
+          "null_mu": 2.315,
+          "null_sd": 1.181,
+          "z": 2.273,
+          "p_perm": 0.04039,
+          "pass_nominal_05": true,
+          "pass_bonf7_00714": false
+        },
+        "Munda": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1S2_22",
+          "family": "Munda",
+          "tier": "primary7",
+          "n_etyma": 1417,
+          "K_tested": 22,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.051,
+          "null_sd": 0.224,
+          "z": -0.227,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda_Santali": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1S2_22",
+          "family": "Munda_Santali",
+          "tier": "daughter_control",
+          "n_etyma": 12001,
+          "K_tested": 22,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.334,
+          "null_sd": 0.543,
+          "z": -0.614,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1S2_22",
+          "family": "Indo-Aryan",
+          "tier": "primary7",
+          "n_etyma": 6338,
+          "K_tested": 21,
+          "hits": 1,
+          "hit_rate": 0.0476,
+          "null_mu": 0.131,
+          "null_sd": 0.356,
+          "z": 2.442,
+          "p_perm": 0.12537,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan_Turner": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1S2_22",
+          "family": "Indo-Aryan_Turner",
+          "tier": "daughter_control",
+          "n_etyma": 9254,
+          "K_tested": 21,
+          "hits": 1,
+          "hit_rate": 0.0476,
+          "null_mu": 0.207,
+          "null_sd": 0.444,
+          "z": 1.789,
+          "p_perm": 0.19056,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Elamite": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1S2_22",
+          "family": "Elamite",
+          "tier": "primary7",
+          "n_etyma": 2437,
+          "K_tested": 22,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.007,
+          "null_sd": 0.083,
+          "z": -0.084,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1S2_22",
+          "family": "Sumerian",
+          "tier": "primary7",
+          "n_etyma": 3385,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.002,
+          "null_sd": 0.04,
+          "z": -0.04,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian_Halloran": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1S2_22",
+          "family": "Sumerian_Halloran",
+          "tier": "daughter_control",
+          "n_etyma": 3257,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.023,
+          "null_sd": 0.15,
+          "z": -0.153,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Akkadian": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1S2_22",
+          "family": "Akkadian",
+          "tier": "primary7",
+          "n_etyma": 716,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Burushaski": {
+          "mode": "exact_skeleton",
+          "stratum": "Full_S1S2_22",
+          "family": "Burushaski",
+          "tier": "primary7",
+          "n_etyma": 1743,
+          "K_tested": 22,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.049,
+          "null_sd": 0.216,
+          "z": -0.227,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        }
+      },
+      "S1_StrictIndusPlusTop_5": {
+        "Dravidian": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "Dravidian",
+          "tier": "primary7",
+          "n_etyma": 3411,
+          "K_tested": 5,
+          "hits": 1,
+          "hit_rate": 0.2,
+          "null_mu": 0.732,
+          "null_sd": 0.634,
+          "z": 0.423,
+          "p_perm": 0.63427,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "RawPDrav": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "RawPDrav",
+          "tier": "audit_raw",
+          "n_etyma": 3256,
+          "K_tested": 5,
+          "hits": 1,
+          "hit_rate": 0.2,
+          "null_mu": 0.673,
+          "null_sd": 0.616,
+          "z": 0.531,
+          "p_perm": 0.59728,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_2Lang": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "Dravidian_2Lang",
+          "tier": "daughter_audit",
+          "n_etyma": 5095,
+          "K_tested": 5,
+          "hits": 3,
+          "hit_rate": 0.6,
+          "null_mu": 0.962,
+          "null_sd": 0.663,
+          "z": 3.073,
+          "p_perm": 0.0158,
+          "pass_nominal_05": true,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_Tamil": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "Dravidian_Tamil",
+          "tier": "daughter_audit",
+          "n_etyma": 3447,
+          "K_tested": 5,
+          "hits": 3,
+          "hit_rate": 0.6,
+          "null_mu": 0.945,
+          "null_sd": 0.706,
+          "z": 2.911,
+          "p_perm": 0.0182,
+          "pass_nominal_05": true,
+          "pass_bonf7_00714": false
+        },
+        "Munda": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "Munda",
+          "tier": "primary7",
+          "n_etyma": 1417,
+          "K_tested": 5,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.022,
+          "null_sd": 0.148,
+          "z": -0.151,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda_Santali": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "Munda_Santali",
+          "tier": "daughter_control",
+          "n_etyma": 12001,
+          "K_tested": 5,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.169,
+          "null_sd": 0.38,
+          "z": -0.443,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "Indo-Aryan",
+          "tier": "primary7",
+          "n_etyma": 6338,
+          "K_tested": 5,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.036,
+          "null_sd": 0.186,
+          "z": -0.193,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan_Turner": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "Indo-Aryan_Turner",
+          "tier": "daughter_control",
+          "n_etyma": 9254,
+          "K_tested": 5,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.087,
+          "null_sd": 0.288,
+          "z": -0.302,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Elamite": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "Elamite",
+          "tier": "primary7",
+          "n_etyma": 2437,
+          "K_tested": 5,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "Sumerian",
+          "tier": "primary7",
+          "n_etyma": 3385,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian_Halloran": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "Sumerian_Halloran",
+          "tier": "daughter_control",
+          "n_etyma": 3257,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.014,
+          "null_sd": 0.117,
+          "z": -0.118,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Burushaski": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "Burushaski",
+          "tier": "primary7",
+          "n_etyma": 1743,
+          "K_tested": 5,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        }
+      },
+      "S1_StrictIndus_NoTop_4": {
+        "Dravidian": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "Dravidian",
+          "tier": "primary7",
+          "n_etyma": 3411,
+          "K_tested": 4,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.165,
+          "null_sd": 0.393,
+          "z": -0.42,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "RawPDrav": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "RawPDrav",
+          "tier": "audit_raw",
+          "n_etyma": 3256,
+          "K_tested": 4,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.135,
+          "null_sd": 0.358,
+          "z": -0.375,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_2Lang": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "Dravidian_2Lang",
+          "tier": "daughter_audit",
+          "n_etyma": 5095,
+          "K_tested": 4,
+          "hits": 2,
+          "hit_rate": 0.5,
+          "null_mu": 0.255,
+          "null_sd": 0.488,
+          "z": 3.577,
+          "p_perm": 0.0216,
+          "pass_nominal_05": true,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_Tamil": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "Dravidian_Tamil",
+          "tier": "daughter_audit",
+          "n_etyma": 3447,
+          "K_tested": 4,
+          "hits": 2,
+          "hit_rate": 0.5,
+          "null_mu": 0.301,
+          "null_sd": 0.517,
+          "z": 3.285,
+          "p_perm": 0.02719,
+          "pass_nominal_05": true,
+          "pass_bonf7_00714": false
+        },
+        "Munda": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "Munda",
+          "tier": "primary7",
+          "n_etyma": 1417,
+          "K_tested": 4,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.022,
+          "null_sd": 0.148,
+          "z": -0.151,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda_Santali": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "Munda_Santali",
+          "tier": "daughter_control",
+          "n_etyma": 12001,
+          "K_tested": 4,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.017,
+          "null_sd": 0.131,
+          "z": -0.133,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "Indo-Aryan",
+          "tier": "primary7",
+          "n_etyma": 6338,
+          "K_tested": 4,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.005,
+          "null_sd": 0.073,
+          "z": -0.074,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan_Turner": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "Indo-Aryan_Turner",
+          "tier": "daughter_control",
+          "n_etyma": 9254,
+          "K_tested": 4,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.028,
+          "null_sd": 0.168,
+          "z": -0.168,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Elamite": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "Elamite",
+          "tier": "primary7",
+          "n_etyma": 2437,
+          "K_tested": 4,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "Sumerian",
+          "tier": "primary7",
+          "n_etyma": 3385,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian_Halloran": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "Sumerian_Halloran",
+          "tier": "daughter_control",
+          "n_etyma": 3257,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.014,
+          "null_sd": 0.117,
+          "z": -0.118,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Burushaski": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "Burushaski",
+          "tier": "primary7",
+          "n_etyma": 1743,
+          "K_tested": 4,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        }
+      },
+      "S12_StrictIndusPlusTop_9": {
+        "Dravidian": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Dravidian",
+          "tier": "primary7",
+          "n_etyma": 3411,
+          "K_tested": 9,
+          "hits": 2,
+          "hit_rate": 0.2222,
+          "null_mu": 1.208,
+          "null_sd": 0.85,
+          "z": 0.932,
+          "p_perm": 0.34893,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "RawPDrav": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "RawPDrav",
+          "tier": "audit_raw",
+          "n_etyma": 3256,
+          "K_tested": 9,
+          "hits": 2,
+          "hit_rate": 0.2222,
+          "null_mu": 1.154,
+          "null_sd": 0.843,
+          "z": 1.003,
+          "p_perm": 0.32513,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_2Lang": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Dravidian_2Lang",
+          "tier": "daughter_audit",
+          "n_etyma": 5095,
+          "K_tested": 9,
+          "hits": 4,
+          "hit_rate": 0.4444,
+          "null_mu": 1.549,
+          "null_sd": 0.871,
+          "z": 2.814,
+          "p_perm": 0.0136,
+          "pass_nominal_05": true,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_Tamil": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Dravidian_Tamil",
+          "tier": "daughter_audit",
+          "n_etyma": 3447,
+          "K_tested": 9,
+          "hits": 4,
+          "hit_rate": 0.4444,
+          "null_mu": 1.711,
+          "null_sd": 0.958,
+          "z": 2.389,
+          "p_perm": 0.03579,
+          "pass_nominal_05": true,
+          "pass_bonf7_00714": false
+        },
+        "Munda": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Munda",
+          "tier": "primary7",
+          "n_etyma": 1417,
+          "K_tested": 9,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.033,
+          "null_sd": 0.18,
+          "z": -0.182,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda_Santali": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Munda_Santali",
+          "tier": "daughter_control",
+          "n_etyma": 12001,
+          "K_tested": 9,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.169,
+          "null_sd": 0.38,
+          "z": -0.443,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Indo-Aryan",
+          "tier": "primary7",
+          "n_etyma": 6338,
+          "K_tested": 8,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.072,
+          "null_sd": 0.262,
+          "z": -0.274,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan_Turner": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Indo-Aryan_Turner",
+          "tier": "daughter_control",
+          "n_etyma": 9254,
+          "K_tested": 8,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.127,
+          "null_sd": 0.351,
+          "z": -0.361,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Elamite": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Elamite",
+          "tier": "primary7",
+          "n_etyma": 2437,
+          "K_tested": 9,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.001,
+          "null_sd": 0.037,
+          "z": -0.037,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Sumerian",
+          "tier": "primary7",
+          "n_etyma": 3385,
+          "K_tested": 5,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian_Halloran": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Sumerian_Halloran",
+          "tier": "daughter_control",
+          "n_etyma": 3257,
+          "K_tested": 5,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.022,
+          "null_sd": 0.145,
+          "z": -0.149,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Akkadian": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Akkadian",
+          "tier": "primary7",
+          "n_etyma": 716,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Burushaski": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Burushaski",
+          "tier": "primary7",
+          "n_etyma": 1743,
+          "K_tested": 9,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        }
+      },
+      "S12_StrictIndus_NoTop_8": {
+        "Dravidian": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Dravidian",
+          "tier": "primary7",
+          "n_etyma": 3411,
+          "K_tested": 8,
+          "hits": 1,
+          "hit_rate": 0.125,
+          "null_mu": 0.641,
+          "null_sd": 0.684,
+          "z": 0.525,
+          "p_perm": 0.53249,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "RawPDrav": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "RawPDrav",
+          "tier": "audit_raw",
+          "n_etyma": 3256,
+          "K_tested": 8,
+          "hits": 1,
+          "hit_rate": 0.125,
+          "null_mu": 0.616,
+          "null_sd": 0.669,
+          "z": 0.574,
+          "p_perm": 0.5171,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_2Lang": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Dravidian_2Lang",
+          "tier": "daughter_audit",
+          "n_etyma": 5095,
+          "K_tested": 8,
+          "hits": 3,
+          "hit_rate": 0.375,
+          "null_mu": 0.842,
+          "null_sd": 0.75,
+          "z": 2.876,
+          "p_perm": 0.0184,
+          "pass_nominal_05": true,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_Tamil": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Dravidian_Tamil",
+          "tier": "daughter_audit",
+          "n_etyma": 3447,
+          "K_tested": 8,
+          "hits": 3,
+          "hit_rate": 0.375,
+          "null_mu": 1.066,
+          "null_sd": 0.828,
+          "z": 2.334,
+          "p_perm": 0.05059,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Munda",
+          "tier": "primary7",
+          "n_etyma": 1417,
+          "K_tested": 8,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.033,
+          "null_sd": 0.18,
+          "z": -0.182,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda_Santali": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Munda_Santali",
+          "tier": "daughter_control",
+          "n_etyma": 12001,
+          "K_tested": 8,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.017,
+          "null_sd": 0.131,
+          "z": -0.133,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Indo-Aryan",
+          "tier": "primary7",
+          "n_etyma": 6338,
+          "K_tested": 7,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.041,
+          "null_sd": 0.199,
+          "z": -0.207,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan_Turner": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Indo-Aryan_Turner",
+          "tier": "daughter_control",
+          "n_etyma": 9254,
+          "K_tested": 7,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.068,
+          "null_sd": 0.258,
+          "z": -0.262,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Elamite": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Elamite",
+          "tier": "primary7",
+          "n_etyma": 2437,
+          "K_tested": 8,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.001,
+          "null_sd": 0.037,
+          "z": -0.037,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Sumerian",
+          "tier": "primary7",
+          "n_etyma": 3385,
+          "K_tested": 5,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian_Halloran": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Sumerian_Halloran",
+          "tier": "daughter_control",
+          "n_etyma": 3257,
+          "K_tested": 5,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.022,
+          "null_sd": 0.145,
+          "z": -0.149,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Akkadian": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Akkadian",
+          "tier": "primary7",
+          "n_etyma": 716,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Burushaski": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Burushaski",
+          "tier": "primary7",
+          "n_etyma": 1743,
+          "K_tested": 8,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        }
+      },
+      "S1_IndusBiota_NoTop_7": {
+        "Dravidian": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "Dravidian",
+          "tier": "primary7",
+          "n_etyma": 3411,
+          "K_tested": 7,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.48,
+          "null_sd": 0.635,
+          "z": -0.756,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "RawPDrav": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "RawPDrav",
+          "tier": "audit_raw",
+          "n_etyma": 3256,
+          "K_tested": 7,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.386,
+          "null_sd": 0.582,
+          "z": -0.663,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_2Lang": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "Dravidian_2Lang",
+          "tier": "daughter_audit",
+          "n_etyma": 5095,
+          "K_tested": 7,
+          "hits": 2,
+          "hit_rate": 0.2857,
+          "null_mu": 0.642,
+          "null_sd": 0.714,
+          "z": 1.903,
+          "p_perm": 0.11618,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_Tamil": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "Dravidian_Tamil",
+          "tier": "daughter_audit",
+          "n_etyma": 3447,
+          "K_tested": 7,
+          "hits": 2,
+          "hit_rate": 0.2857,
+          "null_mu": 0.618,
+          "null_sd": 0.708,
+          "z": 1.952,
+          "p_perm": 0.10578,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "Munda",
+          "tier": "primary7",
+          "n_etyma": 1417,
+          "K_tested": 7,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.022,
+          "null_sd": 0.148,
+          "z": -0.151,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda_Santali": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "Munda_Santali",
+          "tier": "daughter_control",
+          "n_etyma": 12001,
+          "K_tested": 7,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.13,
+          "null_sd": 0.342,
+          "z": -0.38,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "Indo-Aryan",
+          "tier": "primary7",
+          "n_etyma": 6338,
+          "K_tested": 7,
+          "hits": 1,
+          "hit_rate": 0.1429,
+          "null_mu": 0.036,
+          "null_sd": 0.189,
+          "z": 5.116,
+          "p_perm": 0.03519,
+          "pass_nominal_05": true,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan_Turner": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "Indo-Aryan_Turner",
+          "tier": "daughter_control",
+          "n_etyma": 9254,
+          "K_tested": 7,
+          "hits": 1,
+          "hit_rate": 0.1429,
+          "null_mu": 0.075,
+          "null_sd": 0.271,
+          "z": 3.419,
+          "p_perm": 0.07299,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Elamite": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "Elamite",
+          "tier": "primary7",
+          "n_etyma": 2437,
+          "K_tested": 7,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "Sumerian",
+          "tier": "primary7",
+          "n_etyma": 3385,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian_Halloran": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "Sumerian_Halloran",
+          "tier": "daughter_control",
+          "n_etyma": 3257,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.014,
+          "null_sd": 0.117,
+          "z": -0.118,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Burushaski": {
+          "mode": "exact_skeleton",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "Burushaski",
+          "tier": "primary7",
+          "n_etyma": 1743,
+          "K_tested": 7,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        }
+      },
+      "S12_TransitMineralsZagros_10": {
+        "Dravidian": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "Dravidian",
+          "tier": "primary7",
+          "n_etyma": 3411,
+          "K_tested": 10,
+          "hits": 1,
+          "hit_rate": 0.1,
+          "null_mu": 0.125,
+          "null_sd": 0.342,
+          "z": 2.558,
+          "p_perm": 0.12078,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "RawPDrav": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "RawPDrav",
+          "tier": "audit_raw",
+          "n_etyma": 3256,
+          "K_tested": 10,
+          "hits": 1,
+          "hit_rate": 0.1,
+          "null_mu": 0.133,
+          "null_sd": 0.354,
+          "z": 2.447,
+          "p_perm": 0.12857,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_2Lang": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "Dravidian_2Lang",
+          "tier": "daughter_audit",
+          "n_etyma": 5095,
+          "K_tested": 10,
+          "hits": 1,
+          "hit_rate": 0.1,
+          "null_mu": 0.175,
+          "null_sd": 0.408,
+          "z": 2.023,
+          "p_perm": 0.16397,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_Tamil": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "Dravidian_Tamil",
+          "tier": "daughter_audit",
+          "n_etyma": 3447,
+          "K_tested": 10,
+          "hits": 1,
+          "hit_rate": 0.1,
+          "null_mu": 0.287,
+          "null_sd": 0.512,
+          "z": 1.392,
+          "p_perm": 0.25995,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "Munda",
+          "tier": "primary7",
+          "n_etyma": 1417,
+          "K_tested": 10,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.018,
+          "null_sd": 0.133,
+          "z": -0.135,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda_Santali": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "Munda_Santali",
+          "tier": "daughter_control",
+          "n_etyma": 12001,
+          "K_tested": 10,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.052,
+          "null_sd": 0.222,
+          "z": -0.235,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "Indo-Aryan",
+          "tier": "primary7",
+          "n_etyma": 6338,
+          "K_tested": 10,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.03,
+          "null_sd": 0.169,
+          "z": -0.175,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan_Turner": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "Indo-Aryan_Turner",
+          "tier": "daughter_control",
+          "n_etyma": 9254,
+          "K_tested": 10,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.033,
+          "null_sd": 0.179,
+          "z": -0.185,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Elamite": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "Elamite",
+          "tier": "primary7",
+          "n_etyma": 2437,
+          "K_tested": 10,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.006,
+          "null_sd": 0.075,
+          "z": -0.075,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "Sumerian",
+          "tier": "primary7",
+          "n_etyma": 3385,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.002,
+          "null_sd": 0.04,
+          "z": -0.04,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian_Halloran": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "Sumerian_Halloran",
+          "tier": "daughter_control",
+          "n_etyma": 3257,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.001,
+          "null_sd": 0.037,
+          "z": -0.037,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Burushaski": {
+          "mode": "exact_skeleton",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "Burushaski",
+          "tier": "primary7",
+          "n_etyma": 1743,
+          "K_tested": 10,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.049,
+          "null_sd": 0.216,
+          "z": -0.227,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        }
+      },
+      "Ctrl_NativeSum_6": {
+        "Dravidian": {
+          "mode": "exact_skeleton",
+          "stratum": "Ctrl_NativeSum_6",
+          "family": "Dravidian",
+          "tier": "primary7",
+          "n_etyma": 3411,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.088,
+          "null_sd": 0.288,
+          "z": -0.304,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "RawPDrav": {
+          "mode": "exact_skeleton",
+          "stratum": "Ctrl_NativeSum_6",
+          "family": "RawPDrav",
+          "tier": "audit_raw",
+          "n_etyma": 3256,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.077,
+          "null_sd": 0.27,
+          "z": -0.286,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_2Lang": {
+          "mode": "exact_skeleton",
+          "stratum": "Ctrl_NativeSum_6",
+          "family": "Dravidian_2Lang",
+          "tier": "daughter_audit",
+          "n_etyma": 5095,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.118,
+          "null_sd": 0.329,
+          "z": -0.358,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_Tamil": {
+          "mode": "exact_skeleton",
+          "stratum": "Ctrl_NativeSum_6",
+          "family": "Dravidian_Tamil",
+          "tier": "daughter_audit",
+          "n_etyma": 3447,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.108,
+          "null_sd": 0.314,
+          "z": -0.342,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda": {
+          "mode": "exact_skeleton",
+          "stratum": "Ctrl_NativeSum_6",
+          "family": "Munda",
+          "tier": "primary7",
+          "n_etyma": 1417,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda_Santali": {
+          "mode": "exact_skeleton",
+          "stratum": "Ctrl_NativeSum_6",
+          "family": "Munda_Santali",
+          "tier": "daughter_control",
+          "n_etyma": 12001,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.031,
+          "null_sd": 0.175,
+          "z": -0.178,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan": {
+          "mode": "exact_skeleton",
+          "stratum": "Ctrl_NativeSum_6",
+          "family": "Indo-Aryan",
+          "tier": "primary7",
+          "n_etyma": 6338,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.024,
+          "null_sd": 0.154,
+          "z": -0.155,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan_Turner": {
+          "mode": "exact_skeleton",
+          "stratum": "Ctrl_NativeSum_6",
+          "family": "Indo-Aryan_Turner",
+          "tier": "daughter_control",
+          "n_etyma": 9254,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.036,
+          "null_sd": 0.188,
+          "z": -0.193,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Elamite": {
+          "mode": "exact_skeleton",
+          "stratum": "Ctrl_NativeSum_6",
+          "family": "Elamite",
+          "tier": "primary7",
+          "n_etyma": 2437,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Burushaski": {
+          "mode": "exact_skeleton",
+          "stratum": "Ctrl_NativeSum_6",
+          "family": "Burushaski",
+          "tier": "primary7",
+          "n_etyma": 1743,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        }
+      }
+    },
+    "legacy_prefix_audit": {
+      "Full_S1_16": {
+        "Dravidian": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1_16",
+          "family": "Dravidian",
+          "tier": "primary7",
+          "n_etyma": 3411,
+          "K_tested": 16,
+          "hits": 2,
+          "hit_rate": 0.125,
+          "null_mu": 1.558,
+          "null_sd": 0.997,
+          "z": 0.443,
+          "p_perm": 0.4933,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "RawPDrav": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1_16",
+          "family": "RawPDrav",
+          "tier": "audit_raw",
+          "n_etyma": 3256,
+          "K_tested": 16,
+          "hits": 2,
+          "hit_rate": 0.125,
+          "null_mu": 1.424,
+          "null_sd": 0.957,
+          "z": 0.602,
+          "p_perm": 0.43911,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_2Lang": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1_16",
+          "family": "Dravidian_2Lang",
+          "tier": "daughter_audit",
+          "n_etyma": 5095,
+          "K_tested": 16,
+          "hits": 4,
+          "hit_rate": 0.25,
+          "null_mu": 2.103,
+          "null_sd": 1.092,
+          "z": 1.737,
+          "p_perm": 0.10178,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_Tamil": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1_16",
+          "family": "Dravidian_Tamil",
+          "tier": "daughter_audit",
+          "n_etyma": 3447,
+          "K_tested": 16,
+          "hits": 4,
+          "hit_rate": 0.25,
+          "null_mu": 2.188,
+          "null_sd": 1.15,
+          "z": 1.577,
+          "p_perm": 0.12877,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1_16",
+          "family": "Munda",
+          "tier": "primary7",
+          "n_etyma": 1417,
+          "K_tested": 16,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.227,
+          "null_sd": 0.458,
+          "z": -0.495,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda_Santali": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1_16",
+          "family": "Munda_Santali",
+          "tier": "daughter_control",
+          "n_etyma": 12001,
+          "K_tested": 16,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.994,
+          "null_sd": 0.86,
+          "z": -1.155,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1_16",
+          "family": "Indo-Aryan",
+          "tier": "primary7",
+          "n_etyma": 6338,
+          "K_tested": 16,
+          "hits": 1,
+          "hit_rate": 0.0625,
+          "null_mu": 0.786,
+          "null_sd": 0.831,
+          "z": 0.257,
+          "p_perm": 0.56909,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan_Turner": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1_16",
+          "family": "Indo-Aryan_Turner",
+          "tier": "daughter_control",
+          "n_etyma": 9254,
+          "K_tested": 16,
+          "hits": 1,
+          "hit_rate": 0.0625,
+          "null_mu": 0.966,
+          "null_sd": 0.907,
+          "z": 0.038,
+          "p_perm": 0.64747,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Elamite": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1_16",
+          "family": "Elamite",
+          "tier": "primary7",
+          "n_etyma": 2437,
+          "K_tested": 16,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.028,
+          "null_sd": 0.165,
+          "z": -0.17,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1_16",
+          "family": "Sumerian",
+          "tier": "primary7",
+          "n_etyma": 3385,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian_Halloran": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1_16",
+          "family": "Sumerian_Halloran",
+          "tier": "daughter_control",
+          "n_etyma": 3257,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.025,
+          "null_sd": 0.157,
+          "z": -0.161,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Burushaski": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1_16",
+          "family": "Burushaski",
+          "tier": "primary7",
+          "n_etyma": 1743,
+          "K_tested": 16,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.098,
+          "null_sd": 0.302,
+          "z": -0.323,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        }
+      },
+      "Full_S1S2_22": {
+        "Dravidian": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1S2_22",
+          "family": "Dravidian",
+          "tier": "primary7",
+          "n_etyma": 3411,
+          "K_tested": 22,
+          "hits": 3,
+          "hit_rate": 0.1364,
+          "null_mu": 2.296,
+          "null_sd": 1.172,
+          "z": 0.601,
+          "p_perm": 0.41072,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "RawPDrav": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1S2_22",
+          "family": "RawPDrav",
+          "tier": "audit_raw",
+          "n_etyma": 3256,
+          "K_tested": 22,
+          "hits": 3,
+          "hit_rate": 0.1364,
+          "null_mu": 2.175,
+          "null_sd": 1.161,
+          "z": 0.71,
+          "p_perm": 0.36713,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_2Lang": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1S2_22",
+          "family": "Dravidian_2Lang",
+          "tier": "daughter_audit",
+          "n_etyma": 5095,
+          "K_tested": 22,
+          "hits": 5,
+          "hit_rate": 0.2273,
+          "null_mu": 3.025,
+          "null_sd": 1.284,
+          "z": 1.539,
+          "p_perm": 0.12677,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_Tamil": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1S2_22",
+          "family": "Dravidian_Tamil",
+          "tier": "daughter_audit",
+          "n_etyma": 3447,
+          "K_tested": 22,
+          "hits": 5,
+          "hit_rate": 0.2273,
+          "null_mu": 3.352,
+          "null_sd": 1.339,
+          "z": 1.231,
+          "p_perm": 0.18836,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1S2_22",
+          "family": "Munda",
+          "tier": "primary7",
+          "n_etyma": 1417,
+          "K_tested": 22,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.244,
+          "null_sd": 0.476,
+          "z": -0.512,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda_Santali": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1S2_22",
+          "family": "Munda_Santali",
+          "tier": "daughter_control",
+          "n_etyma": 12001,
+          "K_tested": 22,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 1.072,
+          "null_sd": 0.904,
+          "z": -1.186,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1S2_22",
+          "family": "Indo-Aryan",
+          "tier": "primary7",
+          "n_etyma": 6338,
+          "K_tested": 21,
+          "hits": 1,
+          "hit_rate": 0.0476,
+          "null_mu": 1.412,
+          "null_sd": 0.965,
+          "z": -0.427,
+          "p_perm": 0.83703,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan_Turner": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1S2_22",
+          "family": "Indo-Aryan_Turner",
+          "tier": "daughter_control",
+          "n_etyma": 9254,
+          "K_tested": 21,
+          "hits": 1,
+          "hit_rate": 0.0476,
+          "null_mu": 1.74,
+          "null_sd": 1.032,
+          "z": -0.718,
+          "p_perm": 0.91062,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Elamite": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1S2_22",
+          "family": "Elamite",
+          "tier": "primary7",
+          "n_etyma": 2437,
+          "K_tested": 22,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.035,
+          "null_sd": 0.186,
+          "z": -0.188,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1S2_22",
+          "family": "Sumerian",
+          "tier": "primary7",
+          "n_etyma": 3385,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.002,
+          "null_sd": 0.04,
+          "z": -0.04,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian_Halloran": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1S2_22",
+          "family": "Sumerian_Halloran",
+          "tier": "daughter_control",
+          "n_etyma": 3257,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.035,
+          "null_sd": 0.183,
+          "z": -0.189,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Akkadian": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1S2_22",
+          "family": "Akkadian",
+          "tier": "primary7",
+          "n_etyma": 716,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Burushaski": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Full_S1S2_22",
+          "family": "Burushaski",
+          "tier": "primary7",
+          "n_etyma": 1743,
+          "K_tested": 22,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.098,
+          "null_sd": 0.302,
+          "z": -0.323,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        }
+      },
+      "S1_StrictIndusPlusTop_5": {
+        "Dravidian": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "Dravidian",
+          "tier": "primary7",
+          "n_etyma": 3411,
+          "K_tested": 5,
+          "hits": 1,
+          "hit_rate": 0.2,
+          "null_mu": 0.934,
+          "null_sd": 0.713,
+          "z": 0.092,
+          "p_perm": 0.73165,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "RawPDrav": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "RawPDrav",
+          "tier": "audit_raw",
+          "n_etyma": 3256,
+          "K_tested": 5,
+          "hits": 1,
+          "hit_rate": 0.2,
+          "null_mu": 0.859,
+          "null_sd": 0.692,
+          "z": 0.204,
+          "p_perm": 0.69546,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_2Lang": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "Dravidian_2Lang",
+          "tier": "daughter_audit",
+          "n_etyma": 5095,
+          "K_tested": 5,
+          "hits": 3,
+          "hit_rate": 0.6,
+          "null_mu": 1.265,
+          "null_sd": 0.79,
+          "z": 2.196,
+          "p_perm": 0.06499,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_Tamil": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "Dravidian_Tamil",
+          "tier": "daughter_audit",
+          "n_etyma": 3447,
+          "K_tested": 5,
+          "hits": 3,
+          "hit_rate": 0.6,
+          "null_mu": 1.299,
+          "null_sd": 0.814,
+          "z": 2.09,
+          "p_perm": 0.07319,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "Munda",
+          "tier": "primary7",
+          "n_etyma": 1417,
+          "K_tested": 5,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.049,
+          "null_sd": 0.215,
+          "z": -0.226,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda_Santali": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "Munda_Santali",
+          "tier": "daughter_control",
+          "n_etyma": 12001,
+          "K_tested": 5,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.331,
+          "null_sd": 0.503,
+          "z": -0.658,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "Indo-Aryan",
+          "tier": "primary7",
+          "n_etyma": 6338,
+          "K_tested": 5,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.134,
+          "null_sd": 0.352,
+          "z": -0.381,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan_Turner": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "Indo-Aryan_Turner",
+          "tier": "daughter_control",
+          "n_etyma": 9254,
+          "K_tested": 5,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.321,
+          "null_sd": 0.544,
+          "z": -0.589,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Elamite": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "Elamite",
+          "tier": "primary7",
+          "n_etyma": 2437,
+          "K_tested": 5,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "Sumerian",
+          "tier": "primary7",
+          "n_etyma": 3385,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian_Halloran": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "Sumerian_Halloran",
+          "tier": "daughter_control",
+          "n_etyma": 3257,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.025,
+          "null_sd": 0.157,
+          "z": -0.161,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Burushaski": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndusPlusTop_5",
+          "family": "Burushaski",
+          "tier": "primary7",
+          "n_etyma": 1743,
+          "K_tested": 5,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        }
+      },
+      "S1_StrictIndus_NoTop_4": {
+        "Dravidian": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "Dravidian",
+          "tier": "primary7",
+          "n_etyma": 3411,
+          "K_tested": 4,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.3,
+          "null_sd": 0.519,
+          "z": -0.579,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "RawPDrav": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "RawPDrav",
+          "tier": "audit_raw",
+          "n_etyma": 3256,
+          "K_tested": 4,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.256,
+          "null_sd": 0.488,
+          "z": -0.524,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_2Lang": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "Dravidian_2Lang",
+          "tier": "daughter_audit",
+          "n_etyma": 5095,
+          "K_tested": 4,
+          "hits": 2,
+          "hit_rate": 0.5,
+          "null_mu": 0.506,
+          "null_sd": 0.662,
+          "z": 2.258,
+          "p_perm": 0.07998,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_Tamil": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "Dravidian_Tamil",
+          "tier": "daughter_audit",
+          "n_etyma": 3447,
+          "K_tested": 4,
+          "hits": 2,
+          "hit_rate": 0.5,
+          "null_mu": 0.57,
+          "null_sd": 0.678,
+          "z": 2.108,
+          "p_perm": 0.09698,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "Munda",
+          "tier": "primary7",
+          "n_etyma": 1417,
+          "K_tested": 4,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.049,
+          "null_sd": 0.215,
+          "z": -0.226,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda_Santali": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "Munda_Santali",
+          "tier": "daughter_control",
+          "n_etyma": 12001,
+          "K_tested": 4,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.064,
+          "null_sd": 0.248,
+          "z": -0.257,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "Indo-Aryan",
+          "tier": "primary7",
+          "n_etyma": 6338,
+          "K_tested": 4,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.041,
+          "null_sd": 0.201,
+          "z": -0.203,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan_Turner": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "Indo-Aryan_Turner",
+          "tier": "daughter_control",
+          "n_etyma": 9254,
+          "K_tested": 4,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.174,
+          "null_sd": 0.41,
+          "z": -0.424,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Elamite": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "Elamite",
+          "tier": "primary7",
+          "n_etyma": 2437,
+          "K_tested": 4,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "Sumerian",
+          "tier": "primary7",
+          "n_etyma": 3385,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian_Halloran": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "Sumerian_Halloran",
+          "tier": "daughter_control",
+          "n_etyma": 3257,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.025,
+          "null_sd": 0.157,
+          "z": -0.161,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Burushaski": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_StrictIndus_NoTop_4",
+          "family": "Burushaski",
+          "tier": "primary7",
+          "n_etyma": 1743,
+          "K_tested": 4,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        }
+      },
+      "S12_StrictIndusPlusTop_9": {
+        "Dravidian": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Dravidian",
+          "tier": "primary7",
+          "n_etyma": 3411,
+          "K_tested": 9,
+          "hits": 2,
+          "hit_rate": 0.2222,
+          "null_mu": 1.641,
+          "null_sd": 0.942,
+          "z": 0.381,
+          "p_perm": 0.55449,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "RawPDrav": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "RawPDrav",
+          "tier": "audit_raw",
+          "n_etyma": 3256,
+          "K_tested": 9,
+          "hits": 2,
+          "hit_rate": 0.2222,
+          "null_mu": 1.579,
+          "null_sd": 0.939,
+          "z": 0.449,
+          "p_perm": 0.5165,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_2Lang": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Dravidian_2Lang",
+          "tier": "daughter_audit",
+          "n_etyma": 5095,
+          "K_tested": 9,
+          "hits": 4,
+          "hit_rate": 0.4444,
+          "null_mu": 2.152,
+          "null_sd": 1.01,
+          "z": 1.831,
+          "p_perm": 0.08818,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_Tamil": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Dravidian_Tamil",
+          "tier": "daughter_audit",
+          "n_etyma": 3447,
+          "K_tested": 9,
+          "hits": 4,
+          "hit_rate": 0.4444,
+          "null_mu": 2.401,
+          "null_sd": 1.027,
+          "z": 1.557,
+          "p_perm": 0.13917,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Munda",
+          "tier": "primary7",
+          "n_etyma": 1417,
+          "K_tested": 9,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.066,
+          "null_sd": 0.251,
+          "z": -0.262,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda_Santali": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Munda_Santali",
+          "tier": "daughter_control",
+          "n_etyma": 12001,
+          "K_tested": 9,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.363,
+          "null_sd": 0.536,
+          "z": -0.677,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Indo-Aryan",
+          "tier": "primary7",
+          "n_etyma": 6338,
+          "K_tested": 8,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.748,
+          "null_sd": 0.603,
+          "z": -1.239,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan_Turner": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Indo-Aryan_Turner",
+          "tier": "daughter_control",
+          "n_etyma": 9254,
+          "K_tested": 8,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 1.075,
+          "null_sd": 0.714,
+          "z": -1.507,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Elamite": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Elamite",
+          "tier": "primary7",
+          "n_etyma": 2437,
+          "K_tested": 9,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.007,
+          "null_sd": 0.083,
+          "z": -0.084,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Sumerian",
+          "tier": "primary7",
+          "n_etyma": 3385,
+          "K_tested": 5,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian_Halloran": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Sumerian_Halloran",
+          "tier": "daughter_control",
+          "n_etyma": 3257,
+          "K_tested": 5,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.033,
+          "null_sd": 0.179,
+          "z": -0.185,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Akkadian": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Akkadian",
+          "tier": "primary7",
+          "n_etyma": 716,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Burushaski": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndusPlusTop_9",
+          "family": "Burushaski",
+          "tier": "primary7",
+          "n_etyma": 1743,
+          "K_tested": 9,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        }
+      },
+      "S12_StrictIndus_NoTop_8": {
+        "Dravidian": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Dravidian",
+          "tier": "primary7",
+          "n_etyma": 3411,
+          "K_tested": 8,
+          "hits": 1,
+          "hit_rate": 0.125,
+          "null_mu": 1.007,
+          "null_sd": 0.803,
+          "z": -0.009,
+          "p_perm": 0.72705,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "RawPDrav": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "RawPDrav",
+          "tier": "audit_raw",
+          "n_etyma": 3256,
+          "K_tested": 8,
+          "hits": 1,
+          "hit_rate": 0.125,
+          "null_mu": 0.976,
+          "null_sd": 0.794,
+          "z": 0.03,
+          "p_perm": 0.71486,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_2Lang": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Dravidian_2Lang",
+          "tier": "daughter_audit",
+          "n_etyma": 5095,
+          "K_tested": 8,
+          "hits": 3,
+          "hit_rate": 0.375,
+          "null_mu": 1.393,
+          "null_sd": 0.911,
+          "z": 1.764,
+          "p_perm": 0.11038,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_Tamil": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Dravidian_Tamil",
+          "tier": "daughter_audit",
+          "n_etyma": 3447,
+          "K_tested": 8,
+          "hits": 3,
+          "hit_rate": 0.375,
+          "null_mu": 1.672,
+          "null_sd": 0.925,
+          "z": 1.435,
+          "p_perm": 0.17776,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Munda",
+          "tier": "primary7",
+          "n_etyma": 1417,
+          "K_tested": 8,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.066,
+          "null_sd": 0.251,
+          "z": -0.262,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda_Santali": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Munda_Santali",
+          "tier": "daughter_control",
+          "n_etyma": 12001,
+          "K_tested": 8,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.096,
+          "null_sd": 0.303,
+          "z": -0.317,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Indo-Aryan",
+          "tier": "primary7",
+          "n_etyma": 6338,
+          "K_tested": 7,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.654,
+          "null_sd": 0.535,
+          "z": -1.222,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan_Turner": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Indo-Aryan_Turner",
+          "tier": "daughter_control",
+          "n_etyma": 9254,
+          "K_tested": 7,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.928,
+          "null_sd": 0.618,
+          "z": -1.501,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Elamite": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Elamite",
+          "tier": "primary7",
+          "n_etyma": 2437,
+          "K_tested": 8,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.007,
+          "null_sd": 0.083,
+          "z": -0.084,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Sumerian",
+          "tier": "primary7",
+          "n_etyma": 3385,
+          "K_tested": 5,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian_Halloran": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Sumerian_Halloran",
+          "tier": "daughter_control",
+          "n_etyma": 3257,
+          "K_tested": 5,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.033,
+          "null_sd": 0.179,
+          "z": -0.185,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Akkadian": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Akkadian",
+          "tier": "primary7",
+          "n_etyma": 716,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Burushaski": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_StrictIndus_NoTop_8",
+          "family": "Burushaski",
+          "tier": "primary7",
+          "n_etyma": 1743,
+          "K_tested": 8,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        }
+      },
+      "S1_IndusBiota_NoTop_7": {
+        "Dravidian": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "Dravidian",
+          "tier": "primary7",
+          "n_etyma": 3411,
+          "K_tested": 7,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.76,
+          "null_sd": 0.763,
+          "z": -0.996,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "RawPDrav": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "RawPDrav",
+          "tier": "audit_raw",
+          "n_etyma": 3256,
+          "K_tested": 7,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.635,
+          "null_sd": 0.711,
+          "z": -0.894,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_2Lang": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "Dravidian_2Lang",
+          "tier": "daughter_audit",
+          "n_etyma": 5095,
+          "K_tested": 7,
+          "hits": 2,
+          "hit_rate": 0.2857,
+          "null_mu": 1.087,
+          "null_sd": 0.884,
+          "z": 1.033,
+          "p_perm": 0.28934,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_Tamil": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "Dravidian_Tamil",
+          "tier": "daughter_audit",
+          "n_etyma": 3447,
+          "K_tested": 7,
+          "hits": 2,
+          "hit_rate": 0.2857,
+          "null_mu": 1.065,
+          "null_sd": 0.881,
+          "z": 1.061,
+          "p_perm": 0.28234,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "Munda",
+          "tier": "primary7",
+          "n_etyma": 1417,
+          "K_tested": 7,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.055,
+          "null_sd": 0.228,
+          "z": -0.241,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda_Santali": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "Munda_Santali",
+          "tier": "daughter_control",
+          "n_etyma": 12001,
+          "K_tested": 7,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.572,
+          "null_sd": 0.639,
+          "z": -0.894,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "Indo-Aryan",
+          "tier": "primary7",
+          "n_etyma": 6338,
+          "K_tested": 7,
+          "hits": 1,
+          "hit_rate": 0.1429,
+          "null_mu": 0.319,
+          "null_sd": 0.519,
+          "z": 1.313,
+          "p_perm": 0.29314,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan_Turner": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "Indo-Aryan_Turner",
+          "tier": "daughter_control",
+          "n_etyma": 9254,
+          "K_tested": 7,
+          "hits": 1,
+          "hit_rate": 0.1429,
+          "null_mu": 0.525,
+          "null_sd": 0.679,
+          "z": 0.699,
+          "p_perm": 0.43011,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Elamite": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "Elamite",
+          "tier": "primary7",
+          "n_etyma": 2437,
+          "K_tested": 7,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "Sumerian",
+          "tier": "primary7",
+          "n_etyma": 3385,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian_Halloran": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "Sumerian_Halloran",
+          "tier": "daughter_control",
+          "n_etyma": 3257,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.025,
+          "null_sd": 0.157,
+          "z": -0.161,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Burushaski": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S1_IndusBiota_NoTop_7",
+          "family": "Burushaski",
+          "tier": "primary7",
+          "n_etyma": 1743,
+          "K_tested": 7,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        }
+      },
+      "S12_TransitMineralsZagros_10": {
+        "Dravidian": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "Dravidian",
+          "tier": "primary7",
+          "n_etyma": 3411,
+          "K_tested": 10,
+          "hits": 1,
+          "hit_rate": 0.1,
+          "null_mu": 0.195,
+          "null_sd": 0.422,
+          "z": 1.91,
+          "p_perm": 0.18456,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "RawPDrav": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "RawPDrav",
+          "tier": "audit_raw",
+          "n_etyma": 3256,
+          "K_tested": 10,
+          "hits": 1,
+          "hit_rate": 0.1,
+          "null_mu": 0.218,
+          "null_sd": 0.452,
+          "z": 1.733,
+          "p_perm": 0.20176,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_2Lang": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "Dravidian_2Lang",
+          "tier": "daughter_audit",
+          "n_etyma": 5095,
+          "K_tested": 10,
+          "hits": 1,
+          "hit_rate": 0.1,
+          "null_mu": 0.292,
+          "null_sd": 0.528,
+          "z": 1.34,
+          "p_perm": 0.25835,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_Tamil": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "Dravidian_Tamil",
+          "tier": "daughter_audit",
+          "n_etyma": 3447,
+          "K_tested": 10,
+          "hits": 1,
+          "hit_rate": 0.1,
+          "null_mu": 0.457,
+          "null_sd": 0.634,
+          "z": 0.857,
+          "p_perm": 0.38652,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "Munda",
+          "tier": "primary7",
+          "n_etyma": 1417,
+          "K_tested": 10,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.172,
+          "null_sd": 0.396,
+          "z": -0.434,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda_Santali": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "Munda_Santali",
+          "tier": "daughter_control",
+          "n_etyma": 12001,
+          "K_tested": 10,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.201,
+          "null_sd": 0.423,
+          "z": -0.476,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "Indo-Aryan",
+          "tier": "primary7",
+          "n_etyma": 6338,
+          "K_tested": 10,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.386,
+          "null_sd": 0.584,
+          "z": -0.662,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan_Turner": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "Indo-Aryan_Turner",
+          "tier": "daughter_control",
+          "n_etyma": 9254,
+          "K_tested": 10,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.313,
+          "null_sd": 0.526,
+          "z": -0.596,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Elamite": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "Elamite",
+          "tier": "primary7",
+          "n_etyma": 2437,
+          "K_tested": 10,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.028,
+          "null_sd": 0.165,
+          "z": -0.17,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "Sumerian",
+          "tier": "primary7",
+          "n_etyma": 3385,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.002,
+          "null_sd": 0.04,
+          "z": -0.04,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Sumerian_Halloran": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "Sumerian_Halloran",
+          "tier": "daughter_control",
+          "n_etyma": 3257,
+          "K_tested": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.001,
+          "null_sd": 0.037,
+          "z": -0.037,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Burushaski": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "S12_TransitMineralsZagros_10",
+          "family": "Burushaski",
+          "tier": "primary7",
+          "n_etyma": 1743,
+          "K_tested": 10,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.098,
+          "null_sd": 0.302,
+          "z": -0.323,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        }
+      },
+      "Ctrl_NativeSum_6": {
+        "Dravidian": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Ctrl_NativeSum_6",
+          "family": "Dravidian",
+          "tier": "primary7",
+          "n_etyma": 3411,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.088,
+          "null_sd": 0.288,
+          "z": -0.304,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "RawPDrav": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Ctrl_NativeSum_6",
+          "family": "RawPDrav",
+          "tier": "audit_raw",
+          "n_etyma": 3256,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.077,
+          "null_sd": 0.27,
+          "z": -0.286,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_2Lang": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Ctrl_NativeSum_6",
+          "family": "Dravidian_2Lang",
+          "tier": "daughter_audit",
+          "n_etyma": 5095,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.118,
+          "null_sd": 0.329,
+          "z": -0.358,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Dravidian_Tamil": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Ctrl_NativeSum_6",
+          "family": "Dravidian_Tamil",
+          "tier": "daughter_audit",
+          "n_etyma": 3447,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.108,
+          "null_sd": 0.314,
+          "z": -0.342,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Ctrl_NativeSum_6",
+          "family": "Munda",
+          "tier": "primary7",
+          "n_etyma": 1417,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Munda_Santali": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Ctrl_NativeSum_6",
+          "family": "Munda_Santali",
+          "tier": "daughter_control",
+          "n_etyma": 12001,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.051,
+          "null_sd": 0.222,
+          "z": -0.23,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Ctrl_NativeSum_6",
+          "family": "Indo-Aryan",
+          "tier": "primary7",
+          "n_etyma": 6338,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.085,
+          "null_sd": 0.285,
+          "z": -0.298,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Indo-Aryan_Turner": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Ctrl_NativeSum_6",
+          "family": "Indo-Aryan_Turner",
+          "tier": "daughter_control",
+          "n_etyma": 9254,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.111,
+          "null_sd": 0.328,
+          "z": -0.338,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Elamite": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Ctrl_NativeSum_6",
+          "family": "Elamite",
+          "tier": "primary7",
+          "n_etyma": 2437,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.023,
+          "null_sd": 0.149,
+          "z": -0.152,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        },
+        "Burushaski": {
+          "mode": "legacy_prefix_audit",
+          "stratum": "Ctrl_NativeSum_6",
+          "family": "Burushaski",
+          "tier": "primary7",
+          "n_etyma": 1743,
+          "K_tested": 6,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "null_mu": 0.0,
+          "null_sd": 0.0,
+          "z": 0.0,
+          "p_perm": 1.0,
+          "pass_nominal_05": false,
+          "pass_bonf7_00714": false
+        }
+      }
+    },
+    "endemism_gradient_fisher_drav2lang": {
+      "s1_strict_indus_vs_transit_c": {
+        "strict_indus": "3/5",
+        "transit_c": "1/8",
+        "fisher_p_1sided": 0.11888
+      },
+      "s12_strict_indus_vs_transit_c": {
+        "strict_indus": "4/9",
+        "transit_c": "1/10",
+        "fisher_p_1sided": 0.1192
+      }
+    },
+    "honest_caveats": [
+      "Strict 2-branch Dravidian (pdrav_2branch_fixed: P=0.63427 on S1_5, P=0.34893 on S12_9) and RawPDrav (P=0.59728, P=0.32513) drop South-Dravidian-only coastal/crop etyma (DEDR 854 eḷ 'sesame', DEDR 4638 mañci 'cargo boat') and remain non-significant.",
+      "Dravidian_2Lang nominal P=0.01580 (S1_5) / P=0.01360 (S12_9) passes P < 0.05 but sits just shy of 7-family Bonferroni (0.00714), while ALL 6 rivals plus larger daughter lexicons (Indo-Aryan_Turner 9,254 etyma; Munda_Santali 12,001 etyma) score 0 hits across all evaluated items (P = 1.000; self-source-excluded items omitted per family).",
+      "Three transit minerals in Stratum C (V13_algaum_steatite, V14_dusia_stone, V16_nir_agate) have n_sem = 0 in DEDR (pdrav_2lang_fixed)."
+    ]
+  },
+  "precity_continuity": {
+    "precity_38": {
+      "total_rows": 38,
+      "readable_summary": {
+        "n_objects": 36,
+        "n_tokens": 55,
+        "decoded_227_tok": 46,
+        "decoded_227_tok_pct": 83.64,
+        "decoded_224_tok": 46,
+        "decoded_220_tok": 46,
+        "full_227_objects": 29,
+        "full_227_obj_pct": 80.56
+      },
+      "intact_summary": {
+        "n_objects": 29,
+        "n_tokens": 46,
+        "decoded_227_tok": 38,
+        "decoded_227_tok_pct": 82.61,
+        "decoded_224_tok": 38,
+        "decoded_220_tok": 38,
+        "full_227_objects": 23,
+        "full_227_obj_pct": 79.31
+      },
+      "tiers_identical_227_224_220": true,
+      "remaining_unknown_signs": {
+        "411": 4,
+        "698": 3,
+        "893": 1,
+        "697": 1
+      },
+      "breakdowns": {
+        "group": {
+          "Harappa/Dholavira before the cities": {
+            "all_rows": 35,
+            "readable": {
+              "n_objects": 33,
+              "n_tokens": 50,
+              "decoded_227_tok": 42,
+              "decoded_227_tok_pct": 84.0,
+              "decoded_224_tok": 42,
+              "decoded_220_tok": 42,
+              "full_227_objects": 27,
+              "full_227_obj_pct": 81.82
+            },
+            "intact": {
+              "n_objects": 26,
+              "n_tokens": 41,
+              "decoded_227_tok": 34,
+              "decoded_227_tok_pct": 82.93,
+              "decoded_224_tok": 34,
+              "decoded_220_tok": 34,
+              "full_227_objects": 21,
+              "full_227_obj_pct": 80.77
+            }
+          },
+          "other Early Harappan label": {
+            "all_rows": 3,
+            "readable": {
+              "n_objects": 3,
+              "n_tokens": 5,
+              "decoded_227_tok": 4,
+              "decoded_227_tok_pct": 80.0,
+              "decoded_224_tok": 4,
+              "decoded_220_tok": 4,
+              "full_227_objects": 2,
+              "full_227_obj_pct": 66.67
+            },
+            "intact": {
+              "n_objects": 3,
+              "n_tokens": 5,
+              "decoded_227_tok": 4,
+              "decoded_227_tok_pct": 80.0,
+              "decoded_224_tok": 4,
+              "decoded_220_tok": 4,
+              "full_227_objects": 2,
+              "full_227_obj_pct": 66.67
+            }
+          }
+        },
+        "site": {
+          "Dholavira": {
+            "all_rows": 3,
+            "readable": {
+              "n_objects": 3,
+              "n_tokens": 13,
+              "decoded_227_tok": 13,
+              "decoded_227_tok_pct": 100.0,
+              "decoded_224_tok": 13,
+              "decoded_220_tok": 13,
+              "full_227_objects": 3,
+              "full_227_obj_pct": 100.0
+            },
+            "intact": {
+              "n_objects": 2,
+              "n_tokens": 11,
+              "decoded_227_tok": 11,
+              "decoded_227_tok_pct": 100.0,
+              "decoded_224_tok": 11,
+              "decoded_220_tok": 11,
+              "full_227_objects": 2,
+              "full_227_obj_pct": 100.0
+            }
+          },
+          "Harappa": {
+            "all_rows": 32,
+            "readable": {
+              "n_objects": 30,
+              "n_tokens": 37,
+              "decoded_227_tok": 29,
+              "decoded_227_tok_pct": 78.38,
+              "decoded_224_tok": 29,
+              "decoded_220_tok": 29,
+              "full_227_objects": 24,
+              "full_227_obj_pct": 80.0
+            },
+            "intact": {
+              "n_objects": 24,
+              "n_tokens": 30,
+              "decoded_227_tok": 23,
+              "decoded_227_tok_pct": 76.67,
+              "decoded_224_tok": 23,
+              "decoded_220_tok": 23,
+              "full_227_objects": 19,
+              "full_227_obj_pct": 79.17
+            }
+          },
+          "Kalibangan": {
+            "all_rows": 1,
+            "readable": {
+              "n_objects": 1,
+              "n_tokens": 2,
+              "decoded_227_tok": 1,
+              "decoded_227_tok_pct": 50.0,
+              "decoded_224_tok": 1,
+              "decoded_220_tok": 1,
+              "full_227_objects": 0,
+              "full_227_obj_pct": 0.0
+            },
+            "intact": {
+              "n_objects": 1,
+              "n_tokens": 2,
+              "decoded_227_tok": 1,
+              "decoded_227_tok_pct": 50.0,
+              "decoded_224_tok": 1,
+              "decoded_220_tok": 1,
+              "full_227_objects": 0,
+              "full_227_obj_pct": 0.0
+            }
+          },
+          "Rahman-deri": {
+            "all_rows": 2,
+            "readable": {
+              "n_objects": 2,
+              "n_tokens": 3,
+              "decoded_227_tok": 3,
+              "decoded_227_tok_pct": 100.0,
+              "decoded_224_tok": 3,
+              "decoded_220_tok": 3,
+              "full_227_objects": 2,
+              "full_227_obj_pct": 100.0
+            },
+            "intact": {
+              "n_objects": 2,
+              "n_tokens": 3,
+              "decoded_227_tok": 3,
+              "decoded_227_tok_pct": 100.0,
+              "decoded_224_tok": 3,
+              "decoded_220_tok": 3,
+              "full_227_objects": 2,
+              "full_227_obj_pct": 100.0
+            }
+          }
+        },
+        "kind": {
+          "other": {
+            "all_rows": 1,
+            "readable": {
+              "n_objects": 1,
+              "n_tokens": 1,
+              "decoded_227_tok": 1,
+              "decoded_227_tok_pct": 100.0,
+              "decoded_224_tok": 1,
+              "decoded_220_tok": 1,
+              "full_227_objects": 1,
+              "full_227_obj_pct": 100.0
+            },
+            "intact": {
+              "n_objects": 1,
+              "n_tokens": 1,
+              "decoded_227_tok": 1,
+              "decoded_227_tok_pct": 100.0,
+              "decoded_224_tok": 1,
+              "decoded_220_tok": 1,
+              "full_227_objects": 1,
+              "full_227_obj_pct": 100.0
+            }
+          },
+          "pot": {
+            "all_rows": 32,
+            "readable": {
+              "n_objects": 30,
+              "n_tokens": 38,
+              "decoded_227_tok": 29,
+              "decoded_227_tok_pct": 76.32,
+              "decoded_224_tok": 29,
+              "decoded_220_tok": 29,
+              "full_227_objects": 23,
+              "full_227_obj_pct": 76.67
+            },
+            "intact": {
+              "n_objects": 25,
+              "n_tokens": 32,
+              "decoded_227_tok": 24,
+              "decoded_227_tok_pct": 75.0,
+              "decoded_224_tok": 24,
+              "decoded_220_tok": 24,
+              "full_227_objects": 19,
+              "full_227_obj_pct": 76.0
+            }
+          },
+          "seal": {
+            "all_rows": 3,
+            "readable": {
+              "n_objects": 3,
+              "n_tokens": 13,
+              "decoded_227_tok": 13,
+              "decoded_227_tok_pct": 100.0,
+              "decoded_224_tok": 13,
+              "decoded_220_tok": 13,
+              "full_227_objects": 3,
+              "full_227_obj_pct": 100.0
+            },
+            "intact": {
+              "n_objects": 3,
+              "n_tokens": 13,
+              "decoded_227_tok": 13,
+              "decoded_227_tok_pct": 100.0,
+              "decoded_224_tok": 13,
+              "decoded_220_tok": 13,
+              "full_227_objects": 3,
+              "full_227_obj_pct": 100.0
+            }
+          },
+          "tag": {
+            "all_rows": 2,
+            "readable": {
+              "n_objects": 2,
+              "n_tokens": 3,
+              "decoded_227_tok": 3,
+              "decoded_227_tok_pct": 100.0,
+              "decoded_224_tok": 3,
+              "decoded_220_tok": 3,
+              "full_227_objects": 2,
+              "full_227_obj_pct": 100.0
+            },
+            "intact": {
+              "n_objects": 0,
+              "n_tokens": 0,
+              "decoded_227_tok": 0,
+              "decoded_227_tok_pct": 0.0,
+              "decoded_224_tok": 0,
+              "decoded_220_tok": 0,
+              "full_227_objects": 0,
+              "full_227_obj_pct": 0.0
+            }
+          }
+        },
+        "period": {
+          "Dholavira stage 1": {
+            "all_rows": 1,
+            "readable": {
+              "n_objects": 1,
+              "n_tokens": 7,
+              "decoded_227_tok": 7,
+              "decoded_227_tok_pct": 100.0,
+              "decoded_224_tok": 7,
+              "decoded_220_tok": 7,
+              "full_227_objects": 1,
+              "full_227_obj_pct": 100.0
+            },
+            "intact": {
+              "n_objects": 1,
+              "n_tokens": 7,
+              "decoded_227_tok": 7,
+              "decoded_227_tok_pct": 100.0,
+              "decoded_224_tok": 7,
+              "decoded_220_tok": 7,
+              "full_227_objects": 1,
+              "full_227_obj_pct": 100.0
+            }
+          },
+          "Dholavira stage 2": {
+            "all_rows": 2,
+            "readable": {
+              "n_objects": 2,
+              "n_tokens": 6,
+              "decoded_227_tok": 6,
+              "decoded_227_tok_pct": 100.0,
+              "decoded_224_tok": 6,
+              "decoded_220_tok": 6,
+              "full_227_objects": 2,
+              "full_227_obj_pct": 100.0
+            },
+            "intact": {
+              "n_objects": 1,
+              "n_tokens": 4,
+              "decoded_227_tok": 4,
+              "decoded_227_tok_pct": 100.0,
+              "decoded_224_tok": 4,
+              "decoded_220_tok": 4,
+              "full_227_objects": 1,
+              "full_227_obj_pct": 100.0
+            }
+          },
+          "Early": {
+            "all_rows": 1,
+            "readable": {
+              "n_objects": 1,
+              "n_tokens": 1,
+              "decoded_227_tok": 1,
+              "decoded_227_tok_pct": 100.0,
+              "decoded_224_tok": 1,
+              "decoded_220_tok": 1,
+              "full_227_objects": 1,
+              "full_227_obj_pct": 100.0
+            },
+            "intact": {
+              "n_objects": 1,
+              "n_tokens": 1,
+              "decoded_227_tok": 1,
+              "decoded_227_tok_pct": 100.0,
+              "decoded_224_tok": 1,
+              "decoded_220_tok": 1,
+              "full_227_objects": 1,
+              "full_227_obj_pct": 100.0
+            }
+          },
+          "I": {
+            "all_rows": 1,
+            "readable": {
+              "n_objects": 1,
+              "n_tokens": 2,
+              "decoded_227_tok": 2,
+              "decoded_227_tok_pct": 100.0,
+              "decoded_224_tok": 2,
+              "decoded_220_tok": 2,
+              "full_227_objects": 1,
+              "full_227_obj_pct": 100.0
+            },
+            "intact": {
+              "n_objects": 1,
+              "n_tokens": 2,
+              "decoded_227_tok": 2,
+              "decoded_227_tok_pct": 100.0,
+              "decoded_224_tok": 2,
+              "decoded_220_tok": 2,
+              "full_227_objects": 1,
+              "full_227_obj_pct": 100.0
+            }
+          },
+          "Period 1": {
+            "all_rows": 2,
+            "readable": {
+              "n_objects": 2,
+              "n_tokens": 4,
+              "decoded_227_tok": 1,
+              "decoded_227_tok_pct": 25.0,
+              "decoded_224_tok": 1,
+              "decoded_220_tok": 1,
+              "full_227_objects": 1,
+              "full_227_obj_pct": 50.0
+            },
+            "intact": {
+              "n_objects": 1,
+              "n_tokens": 3,
+              "decoded_227_tok": 0,
+              "decoded_227_tok_pct": 0.0,
+              "decoded_224_tok": 0,
+              "decoded_220_tok": 0,
+              "full_227_objects": 0,
+              "full_227_obj_pct": 0.0
+            }
+          },
+          "Period 2": {
+            "all_rows": 30,
+            "readable": {
+              "n_objects": 28,
+              "n_tokens": 33,
+              "decoded_227_tok": 28,
+              "decoded_227_tok_pct": 84.85,
+              "decoded_224_tok": 28,
+              "decoded_220_tok": 28,
+              "full_227_objects": 23,
+              "full_227_obj_pct": 82.14
+            },
+            "intact": {
+              "n_objects": 23,
+              "n_tokens": 27,
+              "decoded_227_tok": 23,
+              "decoded_227_tok_pct": 85.19,
+              "decoded_224_tok": 23,
+              "decoded_220_tok": 23,
+              "full_227_objects": 19,
+              "full_227_obj_pct": 82.61
+            }
+          },
+          "Period 3A": {
+            "all_rows": 1,
+            "readable": {
+              "n_objects": 1,
+              "n_tokens": 2,
+              "decoded_227_tok": 1,
+              "decoded_227_tok_pct": 50.0,
+              "decoded_224_tok": 1,
+              "decoded_220_tok": 1,
+              "full_227_objects": 0,
+              "full_227_obj_pct": 0.0
+            },
+            "intact": {
+              "n_objects": 1,
+              "n_tokens": 2,
+              "decoded_227_tok": 1,
+              "decoded_227_tok_pct": 50.0,
+              "decoded_224_tok": 1,
+              "decoded_220_tok": 1,
+              "full_227_objects": 0,
+              "full_227_obj_pct": 0.0
+            }
+          }
+        }
+      },
+      "flagship_glosses": [
+        {
+          "obj": "4164",
+          "cisi": "-",
+          "site": "Dholavira",
+          "kind": "seal",
+          "period": "Dholavira stage 1",
+          "group": "Harappa/Dholavira before the cities",
+          "text": "104-031-002-423-001-003-423",
+          "is_intact": true,
+          "n_readable": 7,
+          "decoded_227": 7,
+          "decoded_224": 7,
+          "decoded_220": 7,
+          "full_227": true,
+          "unknown_signs": "",
+          "domains": "Tax/Levy|Numeral|Numeral|Granary/Measure|Numeral|Numeral|Granary/Measure",
+          "sounds_227": "*taṇṭu *oru *iru *iṟu/*pāl *oru *mū *iṟu/*pāl",
+          "gloss_227": "*taṇṭu (tax-levy/stride) + *oru (1) + *iru (2) + *iṟu/*pāl (3-comb-unit) + *oru (1) + *mū (3) + *iṟu/*pāl (3-comb-unit)"
+        },
+        {
+          "obj": "4289",
+          "cisi": "-",
+          "site": "Dholavira",
+          "kind": "tag",
+          "period": "Dholavira stage 2",
+          "group": "Harappa/Dholavira before the cities",
+          "text": "240-220-000-000-000",
+          "is_intact": false,
+          "n_readable": 2,
+          "decoded_227": 2,
+          "decoded_224": 2,
+          "decoded_220": 2,
+          "full_227": true,
+          "unknown_signs": "",
+          "domains": "Star-Clan|Star-Clan",
+          "sounds_227": "*katir-mīṉ *mīṉ [000] [000] [000]",
+          "gloss_227": "*katir-mīṉ (rayed-star) + *mīṉ (star) + [000] + [000] + [000]"
+        },
+        {
+          "obj": "5269",
+          "cisi": "Rhd-1",
+          "site": "Rahman-deri",
+          "kind": "seal",
+          "period": "I",
+          "group": "other Early Harappan label",
+          "text": "031-520",
+          "is_intact": true,
+          "n_readable": 2,
+          "decoded_227": 2,
+          "decoded_224": 2,
+          "decoded_220": 2,
+          "full_227": true,
+          "unknown_signs": "",
+          "domains": "Numeral|Title/Rank",
+          "sounds_227": "*oru *vēḷ",
+          "gloss_227": "*oru (1) + *vēḷ (lord)"
+        },
+        {
+          "obj": "590",
+          "cisi": "Rhd-269",
+          "site": "Rahman-deri",
+          "kind": "other",
+          "period": "Early",
+          "group": "other Early Harappan label",
+          "text": "705",
+          "is_intact": true,
+          "n_readable": 1,
+          "decoded_227": 1,
+          "decoded_224": 1,
+          "decoded_220": 1,
+          "full_227": true,
+          "unknown_signs": "",
+          "domains": "Maritime",
+          "sounds_227": "*kalam",
+          "gloss_227": "*kalam (ship/kalam-measure)"
+        },
+        {
+          "obj": "950",
+          "cisi": "H-1538",
+          "site": "Harappa",
+          "kind": "tag",
+          "period": "Period 2",
+          "group": "Harappa/Dholavira before the cities",
+          "text": "740-000",
+          "is_intact": false,
+          "n_readable": 1,
+          "decoded_227": 1,
+          "decoded_224": 1,
+          "decoded_220": 1,
+          "full_227": true,
+          "unknown_signs": "",
+          "domains": "Civic/House",
+          "sounds_227": "*kuṭi [000]",
+          "gloss_227": "*kuṭi (house) + [000]"
+        },
+        {
+          "obj": "951",
+          "cisi": "-",
+          "site": "Dholavira",
+          "kind": "seal",
+          "period": "Dholavira stage 2",
+          "group": "Harappa/Dholavira before the cities",
+          "text": "817-002-004-390",
+          "is_intact": true,
+          "n_readable": 4,
+          "decoded_227": 4,
+          "decoded_224": 4,
+          "decoded_220": 4,
+          "full_227": true,
+          "unknown_signs": "",
+          "domains": "Granary/Measure|Numeral|Numeral|Textile/Trade",
+          "sounds_227": "*kāṇam *iru *nāl *tai",
+          "gloss_227": "*kāṇam (kāṇam-share) + *iru (2) + *nāl (4) + *tai (weave/cloth)"
+        }
+      ]
+    },
+    "precity_vs_mature_4134": {
+      "overall": {
+        "label": "all_intact_precity_29_vs_mature_4134",
+        "precity_tokens": "38/46 (82.61%)",
+        "mature_tokens": "13709/15157 (90.45%)",
+        "token_fisher_or": 0.502,
+        "token_fisher_p_2sided": 0.07819,
+        "token_perm_p_2sided": 0.08258,
+        "precity_faces_full": "23/29 (79.31%)",
+        "mature_faces_full": "2962/4134 (71.65%)",
+        "face_fisher_or": 1.517,
+        "face_fisher_p_2sided": 0.41566,
+        "face_perm_p_2sided": 0.41292
+      },
+      "pots_vs_pots": {
+        "label": "pots_intact_precity_25_vs_mature",
+        "precity_tokens": "24/32 (75.00%)",
+        "mature_tokens": "454/525 (86.48%)",
+        "token_fisher_or": 0.469,
+        "token_fisher_p_2sided": 0.11069,
+        "token_perm_p_2sided": 0.11258,
+        "precity_faces_full": "19/25 (76.00%)",
+        "mature_faces_full": "254/318 (79.87%)",
+        "face_fisher_or": 0.798,
+        "face_fisher_p_2sided": 0.61143,
+        "face_perm_p_2sided": 0.79124
+      },
+      "seals_vs_seals": {
+        "label": "seals_intact_precity_3_vs_mature",
+        "precity_tokens": "13/13 (100.00%)",
+        "mature_tokens": "7346/8213 (89.44%)",
+        "token_fisher_or": "inf",
+        "token_fisher_p_2sided": 0.38507,
+        "token_perm_p_2sided": 0.38492,
+        "precity_faces_full": "3/3 (100.00%)",
+        "mature_faces_full": "1183/1853 (63.84%)",
+        "face_fisher_or": "inf",
+        "face_fisher_p_2sided": 0.55744,
+        "face_perm_p_2sided": 0.32454
+      },
+      "domain_shift_12": {
+        "Calendar/Mod": {
+          "precity_n": 1,
+          "precity_tot": 46,
+          "precity_pct": 2.17,
+          "mature_n": 642,
+          "mature_tot": 13709,
+          "mature_pct": 4.68,
+          "odds_ratio": 0.452,
+          "fisher_p_2sided": 0.724400082800956
+        },
+        "Civic/House": {
+          "precity_n": 3,
+          "precity_tot": 46,
+          "precity_pct": 6.52,
+          "mature_n": 2194,
+          "mature_tot": 13709,
+          "mature_pct": 16.0,
+          "odds_ratio": 0.366,
+          "fisher_p_2sided": 0.10368640999972148
+        },
+        "Craft/Measure": {
+          "precity_n": 0,
+          "precity_tot": 46,
+          "precity_pct": 0.0,
+          "mature_n": 131,
+          "mature_tot": 13709,
+          "mature_pct": 0.96,
+          "odds_ratio": 0.0,
+          "fisher_p_2sided": 1.0
+        },
+        "Grammar/Civic": {
+          "precity_n": 0,
+          "precity_tot": 46,
+          "precity_pct": 0.0,
+          "mature_n": 438,
+          "mature_tot": 13709,
+          "mature_pct": 3.19,
+          "odds_ratio": 0.0,
+          "fisher_p_2sided": 0.40506207939698624
+        },
+        "Granary/Measure": {
+          "precity_n": 7,
+          "precity_tot": 46,
+          "precity_pct": 15.22,
+          "mature_n": 1965,
+          "mature_tot": 13709,
+          "mature_pct": 14.33,
+          "odds_ratio": 1.073,
+          "fisher_p_2sided": 0.8330031228069458
+        },
+        "Maritime": {
+          "precity_n": 1,
+          "precity_tot": 46,
+          "precity_pct": 2.17,
+          "mature_n": 334,
+          "mature_tot": 13709,
+          "mature_pct": 2.44,
+          "odds_ratio": 0.89,
+          "fisher_p_2sided": 1.0
+        },
+        "Numeral": {
+          "precity_n": 26,
+          "precity_tot": 46,
+          "precity_pct": 56.52,
+          "mature_n": 2846,
+          "mature_tot": 13709,
+          "mature_pct": 20.76,
+          "odds_ratio": 4.962,
+          "fisher_p_2sided": 1.244345386961984e-07
+        },
+        "Star-Clan": {
+          "precity_n": 3,
+          "precity_tot": 46,
+          "precity_pct": 6.52,
+          "mature_n": 1256,
+          "mature_tot": 13709,
+          "mature_pct": 9.16,
+          "odds_ratio": 0.692,
+          "fisher_p_2sided": 0.7964530311808071
+        },
+        "Tax/Levy": {
+          "precity_n": 2,
+          "precity_tot": 46,
+          "precity_pct": 4.35,
+          "mature_n": 404,
+          "mature_tot": 13709,
+          "mature_pct": 2.95,
+          "odds_ratio": 1.497,
+          "fisher_p_2sided": 0.39555824363020753
+        },
+        "Textile/Trade": {
+          "precity_n": 2,
+          "precity_tot": 46,
+          "precity_pct": 4.35,
+          "mature_n": 1613,
+          "mature_tot": 13709,
+          "mature_pct": 11.77,
+          "odds_ratio": 0.341,
+          "fisher_p_2sided": 0.16483230286188594
+        },
+        "Title/Rank": {
+          "precity_n": 1,
+          "precity_tot": 46,
+          "precity_pct": 2.17,
+          "mature_n": 1723,
+          "mature_tot": 13709,
+          "mature_pct": 12.57,
+          "odds_ratio": 0.155,
+          "fisher_p_2sided": 0.025372829675249876
+        },
+        "Vessel/Pot": {
+          "precity_n": 0,
+          "precity_tot": 46,
+          "precity_pct": 0.0,
+          "mature_n": 163,
+          "mature_tot": 13709,
+          "mature_pct": 1.19,
+          "odds_ratio": 0.0,
+          "fisher_p_2sided": 1.0
+        }
+      }
+    },
+    "dkg_early1_38": {
+      "total_seals": 38,
+      "readable_summary": {
+        "n_objects": 38,
+        "n_tokens": 152,
+        "decoded_227_tok": 134,
+        "decoded_227_tok_pct": 88.16,
+        "decoded_224_tok": 134,
+        "decoded_220_tok": 134,
+        "full_227_objects": 24,
+        "full_227_obj_pct": 63.16
+      },
+      "intact_summary": {
+        "n_objects": 26,
+        "n_tokens": 115,
+        "decoded_227_tok": 100,
+        "decoded_227_tok_pct": 86.96,
+        "decoded_224_tok": 100,
+        "decoded_220_tok": 100,
+        "full_227_objects": 15,
+        "full_227_obj_pct": 57.69
+      },
+      "tiers_identical_227_224_220": true,
+      "flagship_glosses": [
+        {
+          "src": "first",
+          "id": "M-1691",
+          "depth_ft": 26.9,
+          "text": "906-741-240-255-435-690-740",
+          "is_intact": true,
+          "n_readable": 7,
+          "decoded_227": 7,
+          "decoded_224": 7,
+          "decoded_220": 7,
+          "full_227": true,
+          "unknown_signs": "",
+          "sounds_227": "*kaṇṭāḷam *oru-kuṭi *katir-mīṉ *mutal *tōṭṭi *kaṭṭu *kuṭi",
+          "gloss_227": "*kaṇṭāḷam (pack-bale) + *oru-kuṭi (single-house) + *katir-mīṉ (rayed-star) + *mutal (principal/first) + *tōṭṭi (attendant) + *kaṭṭu (bundle/store) + *kuṭi (house)"
+        },
+        {
+          "src": "first",
+          "id": "M-369",
+          "depth_ft": 23.6,
+          "text": "920-060-742-806-415-220-240-255-435-690-740",
+          "is_intact": true,
+          "n_readable": 11,
+          "decoded_227": 11,
+          "decoded_224": 11,
+          "decoded_220": 11,
+          "full_227": true,
+          "unknown_signs": "",
+          "sounds_227": "*tiṅkaḷ *-uḷ *iru-kuṭi *kampu *kavar *mīṉ *katir-mīṉ *mutal *tōṭṭi *kaṭṭu *kuṭi",
+          "gloss_227": "*tiṅkaḷ (month/moon) + *-uḷ (in/of) + *iru-kuṭi (twin-house) + *kampu (millet/grain) + *kavar (branch/control) + *mīṉ (star) + *katir-mīṉ (rayed-star) + *mutal (principal/first) + *tōṭṭi (attendant) + *kaṭṭu (bundle/store) + *kuṭi (house)"
+        }
+      ]
+    }
+  },
+  "animal_standletter_227": {
+    "join_verification": {
+      "animal_base_rows": 2290,
+      "r3_lipi_matched": 2290,
+      "token_diffs": 0,
+      "intact_seal_faces": 1540
+    },
+    "test8b1_per_animal_decoding": [
+      {
+        "animal": "UNICORN",
+        "n_all": 1269,
+        "n_intact": 947,
+        "intact_tokens": 4454,
+        "decoded_227_tok_pct": 89.36,
+        "decoded_224_tok_pct": 88.37,
+        "intact_full_227_faces": 580,
+        "intact_full_227_pct": 61.25,
+        "median_face_mm2": 645.2
+      },
+      {
+        "animal": "SHORTHORN",
+        "n_all": 106,
+        "n_intact": 77,
+        "intact_tokens": 382,
+        "decoded_227_tok_pct": 84.82,
+        "decoded_224_tok_pct": 84.29,
+        "intact_full_227_faces": 36,
+        "intact_full_227_pct": 46.75,
+        "median_face_mm2": 481.8
+      },
+      {
+        "animal": "ZEBU",
+        "n_all": 58,
+        "n_intact": 40,
+        "intact_tokens": 146,
+        "decoded_227_tok_pct": 89.04,
+        "decoded_224_tok_pct": 88.36,
+        "intact_full_227_faces": 26,
+        "intact_full_227_pct": 65.0,
+        "median_face_mm2": 820.7
+      },
+      {
+        "animal": "COMPOSITE",
+        "n_all": 42,
+        "n_intact": 23,
+        "intact_tokens": 90,
+        "decoded_227_tok_pct": 80.0,
+        "decoded_224_tok_pct": 77.78,
+        "intact_full_227_faces": 13,
+        "intact_full_227_pct": 56.52,
+        "median_face_mm2": 645.2
+      },
+      {
+        "animal": "ELEPHANT",
+        "n_all": 41,
+        "n_intact": 29,
+        "intact_tokens": 131,
+        "decoded_227_tok_pct": 86.26,
+        "decoded_224_tok_pct": 83.97,
+        "intact_full_227_faces": 14,
+        "intact_full_227_pct": 48.28,
+        "median_face_mm2": 625.0
+      },
+      {
+        "animal": "RHINO",
+        "n_all": 25,
+        "n_intact": 20,
+        "intact_tokens": 87,
+        "decoded_227_tok_pct": 85.06,
+        "decoded_224_tok_pct": 83.91,
+        "intact_full_227_faces": 10,
+        "intact_full_227_pct": 50.0,
+        "median_face_mm2": 714.2
+      },
+      {
+        "animal": "GOAT",
+        "n_all": 25,
+        "n_intact": 20,
+        "intact_tokens": 33,
+        "decoded_227_tok_pct": 81.82,
+        "decoded_224_tok_pct": 81.82,
+        "intact_full_227_faces": 14,
+        "intact_full_227_pct": 70.0,
+        "median_face_mm2": 414.8
+      },
+      {
+        "animal": "TIGER",
+        "n_all": 18,
+        "n_intact": 12,
+        "intact_tokens": 51,
+        "decoded_227_tok_pct": 84.31,
+        "decoded_224_tok_pct": 82.35,
+        "intact_full_227_faces": 5,
+        "intact_full_227_pct": 41.67,
+        "median_face_mm2": 600.4
+      },
+      {
+        "animal": "BUFFALO",
+        "n_all": 17,
+        "n_intact": 14,
+        "intact_tokens": 48,
+        "decoded_227_tok_pct": 91.67,
+        "decoded_224_tok_pct": 91.67,
+        "intact_full_227_faces": 11,
+        "intact_full_227_pct": 78.57,
+        "median_face_mm2": 481.8
+      },
+      {
+        "animal": "NONE",
+        "n_all": 474,
+        "n_intact": 299,
+        "intact_tokens": 1366,
+        "decoded_227_tok_pct": 89.31,
+        "decoded_224_tok_pct": 88.58,
+        "intact_full_227_faces": 187,
+        "intact_full_227_pct": 62.54,
+        "median_face_mm2": 347.7
+      },
+      {
+        "animal": "OTHER",
+        "n_all": 46,
+        "n_intact": 28,
+        "intact_tokens": 77,
+        "decoded_227_tok_pct": 90.91,
+        "decoded_224_tok_pct": 88.31,
+        "intact_full_227_faces": 21,
+        "intact_full_227_pct": 75.0,
+        "median_face_mm2": 470.9
+      },
+      {
+        "animal": "BULL_OTHER",
+        "n_all": 44,
+        "n_intact": 9,
+        "intact_tokens": 31,
+        "decoded_227_tok_pct": 87.1,
+        "decoded_224_tok_pct": 87.1,
+        "intact_full_227_faces": 5,
+        "intact_full_227_pct": 55.56,
+        "median_face_mm2": 146.6
+      },
+      {
+        "animal": "UNKNOWN",
+        "n_all": 125,
+        "n_intact": 22,
+        "intact_tokens": 83,
+        "decoded_227_tok_pct": 90.36,
+        "decoded_224_tok_pct": 89.16,
+        "intact_full_227_faces": 15,
+        "intact_full_227_pct": 68.18,
+        "median_face_mm2": 150.6
+      }
+    ],
+    "test8b2_composite_goat_star_avoidance": {
+      "old4_marked_fish": {
+        "all_beast_cg_sites_1532": {
+          "label": "old4_marked_fish_all_1532",
+          "n_total": 1532,
+          "cg_hits": 1,
+          "cg_n": 67,
+          "cg_pct": 1.49,
+          "other_hits": 326,
+          "other_n": 1465,
+          "other_pct": 22.25,
+          "odds_ratio": 0.0529,
+          "fisher_p_2sided": 2.1615635486922725e-06,
+          "fisher_p_less": 1.3931879084085958e-06,
+          "site_perm_less": {
+            "obs": 1.0,
+            "null_mean": 11.8026,
+            "null_sd": 2.990555,
+            "z": -3.612,
+            "p_perm": 0.0002
+          }
+        },
+        "all_beast_len_ge3": {
+          "label": "old4_marked_fish_all_len3",
+          "n_total": 1152,
+          "cg_hits": 1,
+          "cg_n": 28,
+          "cg_pct": 3.57,
+          "other_hits": 309,
+          "other_n": 1124,
+          "other_pct": 27.49,
+          "odds_ratio": 0.0977,
+          "fisher_p_2sided": 0.0021985296748004346,
+          "fisher_p_less": 0.0015882936668225709,
+          "site_perm_less": {
+            "obs": 1.0,
+            "null_mean": 6.898,
+            "null_sd": 2.190287,
+            "z": -2.693,
+            "p_perm": 0.0036
+          }
+        },
+        "intact_beast_cg_sites_1094": {
+          "label": "old4_marked_fish_intact_1094",
+          "n_total": 1094,
+          "cg_hits": 1,
+          "cg_n": 43,
+          "cg_pct": 2.33,
+          "other_hits": 249,
+          "other_n": 1051,
+          "other_pct": 23.69,
+          "odds_ratio": 0.0767,
+          "fisher_p_2sided": 0.0002815814087614252,
+          "fisher_p_less": 0.00015996072905135372,
+          "site_perm_less": {
+            "obs": 1.0,
+            "null_mean": 6.7972,
+            "null_sd": 2.270661,
+            "z": -2.553,
+            "p_perm": 0.004
+          }
+        },
+        "intact_beast_len_ge3": {
+          "label": "old4_marked_fish_intact_len3",
+          "n_total": 884,
+          "cg_hits": 1,
+          "cg_n": 17,
+          "cg_pct": 5.88,
+          "other_hits": 240,
+          "other_n": 867,
+          "other_pct": 27.68,
+          "odds_ratio": 0.1633,
+          "fisher_p_2sided": 0.052639134190575185,
+          "fisher_p_less": 0.03173376485403046,
+          "site_perm_less": {
+            "obs": 1.0,
+            "null_mean": 4.279,
+            "null_sd": 1.752077,
+            "z": -1.871,
+            "p_perm": 0.04719
+          }
+        }
+      },
+      "star_marked_12": {
+        "all_beast_cg_sites_1532": {
+          "label": "star_marked_12_all_1532",
+          "n_total": 1532,
+          "cg_hits": 2,
+          "cg_n": 67,
+          "cg_pct": 2.99,
+          "other_hits": 382,
+          "other_n": 1465,
+          "other_pct": 26.08,
+          "odds_ratio": 0.0872,
+          "fisher_p_2sided": 9.931278371549142e-07,
+          "fisher_p_less": 7.364742478208579e-07,
+          "site_perm_less": {
+            "obs": 2.0,
+            "null_mean": 15.1238,
+            "null_sd": 3.294942,
+            "z": -3.983,
+            "p_perm": 0.0002
+          }
+        },
+        "all_beast_len_ge3": {
+          "label": "star_marked_12_all_len3",
+          "n_total": 1152,
+          "cg_hits": 2,
+          "cg_n": 28,
+          "cg_pct": 7.14,
+          "other_hits": 354,
+          "other_n": 1124,
+          "other_pct": 31.49,
+          "odds_ratio": 0.1673,
+          "fisher_p_2sided": 0.00353273068343558,
+          "fisher_p_less": 0.0026059683493515283,
+          "site_perm_less": {
+            "obs": 2.0,
+            "null_mean": 8.3054,
+            "null_sd": 2.379089,
+            "z": -2.65,
+            "p_perm": 0.004
+          }
+        },
+        "intact_beast_cg_sites_1094": {
+          "label": "star_marked_12_intact_1094",
+          "n_total": 1094,
+          "cg_hits": 2,
+          "cg_n": 43,
+          "cg_pct": 4.65,
+          "other_hits": 295,
+          "other_n": 1051,
+          "other_pct": 28.07,
+          "odds_ratio": 0.125,
+          "fisher_p_2sided": 0.0003093217092485081,
+          "fisher_p_less": 0.00013900014609896072,
+          "site_perm_less": {
+            "obs": 2.0,
+            "null_mean": 9.5652,
+            "null_sd": 2.539259,
+            "z": -2.979,
+            "p_perm": 0.0006
+          }
+        },
+        "intact_beast_len_ge3": {
+          "label": "star_marked_12_intact_len3",
+          "n_total": 884,
+          "cg_hits": 2,
+          "cg_n": 17,
+          "cg_pct": 11.76,
+          "other_hits": 280,
+          "other_n": 867,
+          "other_pct": 32.3,
+          "odds_ratio": 0.2795,
+          "fisher_p_2sided": 0.11146950134755612,
+          "fisher_p_less": 0.0548573074163576,
+          "site_perm_less": {
+            "obs": 2.0,
+            "null_mean": 5.4812,
+            "null_sd": 1.939175,
+            "z": -1.795,
+            "p_perm": 0.05459
+          }
+        }
+      },
+      "star_full_14": {
+        "all_beast_cg_sites_1532": {
+          "label": "star_full_14_all_1532",
+          "n_total": 1532,
+          "cg_hits": 4,
+          "cg_n": 67,
+          "cg_pct": 5.97,
+          "other_hits": 509,
+          "other_n": 1465,
+          "other_pct": 34.74,
+          "odds_ratio": 0.1193,
+          "fisher_p_2sided": 8.255639634365276e-08,
+          "fisher_p_less": 4.58030680137403e-08,
+          "site_perm_less": {
+            "obs": 4.0,
+            "null_mean": 21.2122,
+            "null_sd": 3.560914,
+            "z": -4.834,
+            "p_perm": 0.0002
+          }
+        },
+        "all_beast_len_ge3": {
+          "label": "star_full_14_all_len3",
+          "n_total": 1152,
+          "cg_hits": 4,
+          "cg_n": 28,
+          "cg_pct": 14.29,
+          "other_hits": 468,
+          "other_n": 1124,
+          "other_pct": 41.64,
+          "odds_ratio": 0.2336,
+          "fisher_p_2sided": 0.003083193245261148,
+          "fisher_p_less": 0.0021278747863987383,
+          "site_perm_less": {
+            "obs": 4.0,
+            "null_mean": 11.2632,
+            "null_sd": 2.587676,
+            "z": -2.807,
+            "p_perm": 0.0036
+          }
+        },
+        "intact_beast_cg_sites_1094": {
+          "label": "star_full_14_intact_1094",
+          "n_total": 1094,
+          "cg_hits": 3,
+          "cg_n": 43,
+          "cg_pct": 6.98,
+          "other_hits": 383,
+          "other_n": 1051,
+          "other_pct": 36.44,
+          "odds_ratio": 0.1308,
+          "fisher_p_2sided": 2.4742136528942768e-05,
+          "fisher_p_less": 1.2680261404352029e-05,
+          "site_perm_less": {
+            "obs": 3.0,
+            "null_mean": 12.9672,
+            "null_sd": 2.807009,
+            "z": -3.551,
+            "p_perm": 0.0004
+          }
+        },
+        "intact_beast_len_ge3": {
+          "label": "star_full_14_intact_len3",
+          "n_total": 884,
+          "cg_hits": 3,
+          "cg_n": 17,
+          "cg_pct": 17.65,
+          "other_hits": 362,
+          "other_n": 867,
+          "other_pct": 41.75,
+          "odds_ratio": 0.2989,
+          "fisher_p_2sided": 0.04908284496515048,
+          "fisher_p_less": 0.03571331337820595,
+          "site_perm_less": {
+            "obs": 3.0,
+            "null_mean": 7.0024,
+            "null_sd": 2.016137,
+            "z": -1.985,
+            "p_perm": 0.03839
+          }
+        }
+      }
+    },
+    "test8b3_beast9_12domains_matrix": {
+      "n_intact_beast9": 1182,
+      "face_presence_site2_global": {
+        "obs": 59.002271,
+        "null_mean": 64.878017,
+        "null_sd": 10.571661,
+        "z": -0.556,
+        "p_perm": 0.69546,
+        "cramers_v": 0.044
+      },
+      "face_presence_site2_shape_global": {
+        "obs": 59.002271,
+        "null_mean": 64.733655,
+        "null_sd": 10.451574,
+        "z": -0.548,
+        "p_perm": 0.68766,
+        "cramers_v": 0.044
+      },
+      "token_counts_site2_global": {
+        "obs": 70.243042,
+        "null_mean": 85.70221,
+        "null_sd": 13.709874,
+        "z": -1.128,
+        "p_perm": 0.87682,
+        "cramers_v": 0.0427
+      },
+      "honest_global_null_flag": true,
+      "surgical_exception_goat_star_clan": {
+        "group": "GOAT",
+        "domain": "Star-Clan",
+        "obs": 0,
+        "null_exp": 6.529,
+        "ratio": 0.0,
+        "p_over": 1.0,
+        "p_under": 0.0004
+      },
+      "none_299_vs_beast9_1182_contrast": {
+        "Calendar/Mod": {
+          "none_n": 48,
+          "none_pct": 16.05,
+          "beast9_n": 238,
+          "beast9_pct": 20.14,
+          "odds_ratio": 0.759,
+          "fisher_p_2sided": 0.11936
+        },
+        "Civic/House": {
+          "none_n": 149,
+          "none_pct": 49.83,
+          "beast9_n": 641,
+          "beast9_pct": 54.23,
+          "odds_ratio": 0.838,
+          "fisher_p_2sided": 0.17388
+        },
+        "Craft/Measure": {
+          "none_n": 9,
+          "none_pct": 3.01,
+          "beast9_n": 35,
+          "beast9_pct": 2.96,
+          "odds_ratio": 1.017,
+          "fisher_p_2sided": 1.0
+        },
+        "Grammar/Civic": {
+          "none_n": 32,
+          "none_pct": 10.7,
+          "beast9_n": 163,
+          "beast9_pct": 13.79,
+          "odds_ratio": 0.749,
+          "fisher_p_2sided": 0.1801
+        },
+        "Granary/Measure": {
+          "none_n": 140,
+          "none_pct": 46.82,
+          "beast9_n": 507,
+          "beast9_pct": 42.89,
+          "odds_ratio": 1.172,
+          "fisher_p_2sided": 0.24015
+        },
+        "Maritime": {
+          "none_n": 29,
+          "none_pct": 9.7,
+          "beast9_n": 114,
+          "beast9_pct": 9.64,
+          "odds_ratio": 1.006,
+          "fisher_p_2sided": 1.0
+        },
+        "Numeral": {
+          "none_n": 181,
+          "none_pct": 60.54,
+          "beast9_n": 703,
+          "beast9_pct": 59.48,
+          "odds_ratio": 1.045,
+          "fisher_p_2sided": 0.79186
+        },
+        "Star-Clan": {
+          "none_n": 92,
+          "none_pct": 30.77,
+          "beast9_n": 419,
+          "beast9_pct": 35.45,
+          "odds_ratio": 0.809,
+          "fisher_p_2sided": 0.13449
+        },
+        "Tax/Levy": {
+          "none_n": 37,
+          "none_pct": 12.37,
+          "beast9_n": 85,
+          "beast9_pct": 7.19,
+          "odds_ratio": 1.823,
+          "fisher_p_2sided": 0.00638
+        },
+        "Textile/Trade": {
+          "none_n": 118,
+          "none_pct": 39.46,
+          "beast9_n": 372,
+          "beast9_pct": 31.47,
+          "odds_ratio": 1.42,
+          "fisher_p_2sided": 0.01082
+        },
+        "Title/Rank": {
+          "none_n": 98,
+          "none_pct": 32.78,
+          "beast9_n": 477,
+          "beast9_pct": 40.36,
+          "odds_ratio": 0.721,
+          "fisher_p_2sided": 0.01682
+        },
+        "Vessel/Pot": {
+          "none_n": 14,
+          "none_pct": 4.68,
+          "beast9_n": 47,
+          "beast9_pct": 3.98,
+          "odds_ratio": 1.186,
+          "fisher_p_2sided": 0.62461
+        }
+      }
+    },
+    "test8b4_unicorn_stand_letters": {
+      "n_intact_lettered": 825,
+      "n_all_lettered": 1011,
+      "sl6_counts_intact": {
+        "W": 329,
+        "J": 165,
+        "S": 142,
+        "I": 80,
+        "L": 42,
+        "rest": 67
+      },
+      "physical_area_and_depth": {
+        "intact_825_area_mm2": {
+          "w_n": 329,
+          "w_median": 928.56,
+          "non_w_n": 496,
+          "non_w_median": 580.81,
+          "mannwhitney_u": 121103.0,
+          "mannwhitney_p_2sided": 4.309946805550267e-32,
+          "kruskal_h": 149.024,
+          "kruskal_p": 2.1540209016878678e-30
+        },
+        "all_1011_area_mm2": {
+          "w_n": 405,
+          "w_median": 912.04,
+          "non_w_n": 606,
+          "non_w_median": 600.0,
+          "mannwhitney_u": 174604.5,
+          "mannwhitney_p_2sided": 3.784449004200315e-30,
+          "kruskal_h": 136.801,
+          "kruskal_p": 8.560892002327604e-28
+        },
+        "intact_825_depth_ft": {
+          "w_n": 266,
+          "w_median": 5.81,
+          "non_w_n": 388,
+          "non_w_median": 7.6,
+          "mannwhitney_u": 43042.0,
+          "mannwhitney_p_2sided": 0.0003086120292351926,
+          "kruskal_h": 17.288,
+          "kruskal_p": 0.0039853128629178895
+        },
+        "all_1011_depth_ft": {
+          "w_n": 324,
+          "w_median": 6.0,
+          "non_w_n": 470,
+          "non_w_median": 7.65,
+          "mannwhitney_u": 63388.5,
+          "mannwhitney_p_2sided": 5.9361984477273624e-05,
+          "kruskal_h": 18.72,
+          "kruskal_p": 0.0021669706859707713
+        }
+      },
+      "matrix_6x12_intact_tokens_site2": {
+        "obs": 79.032704,
+        "null_mean": 54.93445,
+        "null_sd": 10.797078,
+        "z": 2.232,
+        "p_perm": 0.0214,
+        "cramers_v": 0.0673
+      },
+      "matrix_6x12_intact_presence_site2": {
+        "obs": 47.704179,
+        "null_mean": 40.626588,
+        "null_sd": 8.122368,
+        "z": 0.871,
+        "p_perm": 0.18356,
+        "cramers_v": 0.0592
+      },
+      "matrix_6x12_intact_tokens_site2_sz3": {
+        "obs": 79.032704,
+        "null_mean": 59.881582,
+        "null_sd": 11.22768,
+        "z": 1.706,
+        "p_perm": 0.05299,
+        "cramers_v": 0.0673
+      },
+      "matrix_6x12_all1011_tokens_site2": {
+        "obs": 80.309548,
+        "null_mean": 54.357737,
+        "null_sd": 10.630965,
+        "z": 2.441,
+        "p_perm": 0.0162,
+        "cramers_v": 0.0628
+      },
+      "top_standletter_domain_cells": [
+        {
+          "group": "W",
+          "domain": "Star-Clan",
+          "obs": 198,
+          "null_exp": 157.036,
+          "ratio": 1.261,
+          "p_over": 0.0002,
+          "p_under": 1.0
+        },
+        {
+          "group": "J",
+          "domain": "Granary/Measure",
+          "obs": 67,
+          "null_exp": 90.684,
+          "ratio": 0.739,
+          "p_over": 0.9996,
+          "p_under": 0.0006
+        },
+        {
+          "group": "J",
+          "domain": "Civic/House",
+          "obs": 152,
+          "null_exp": 126.413,
+          "ratio": 1.202,
+          "p_over": 0.0028,
+          "p_under": 0.9984
+        }
+      ],
+      "w_workshop_sign_proof": {
+        "405": {
+          "sign": "405",
+          "root": "*tai",
+          "gloss": "weave/cloth",
+          "domain": "Textile/Trade",
+          "direction": "over",
+          "w_share_of_sign": "22/22 (100.0%)",
+          "w_rate": "22/329 (6.69%)",
+          "non_w_rate": "0/496 (0.00%)",
+          "overall_fisher_or": "inf",
+          "overall_fisher_p_2sided": 1.064626660475235e-09,
+          "cross_capital": {
+            "Mohenjo-daro": {
+              "w": "8/199",
+              "non_w": "0/350",
+              "odds_ratio": "inf",
+              "fisher_p_2sided": 0.00027202452029991513
+            },
+            "Harappa": {
+              "w": "12/96",
+              "non_w": "0/55",
+              "odds_ratio": "inf",
+              "fisher_p_2sided": 0.004110751434584958
+            }
+          },
+          "site2_sz3_perm": {
+            "obs": 22.0,
+            "null_mean": 13.986,
+            "null_sd": 1.938906,
+            "z": 4.133,
+            "p_perm": 0.0002,
+            "ratio": 1.573
+          }
+        },
+        "390": {
+          "sign": "390",
+          "root": "*tai",
+          "gloss": "weave/cloth",
+          "domain": "Textile/Trade",
+          "direction": "under",
+          "w_share_of_sign": "27/107 (25.2%)",
+          "w_rate": "27/329 (8.21%)",
+          "non_w_rate": "80/496 (16.13%)",
+          "overall_fisher_or": 0.465,
+          "overall_fisher_p_2sided": 0.0009666408294365975,
+          "cross_capital": {
+            "Mohenjo-daro": {
+              "w": "19/199",
+              "non_w": "51/350",
+              "odds_ratio": 0.619,
+              "fisher_p_2sided": 0.10984555763891976
+            },
+            "Harappa": {
+              "w": "5/96",
+              "non_w": "11/55",
+              "odds_ratio": 0.22,
+              "fisher_p_2sided": 0.010998872350196538
+            }
+          },
+          "site2_sz3_perm": {
+            "obs": 27.0,
+            "null_mean": 37.3536,
+            "null_sd": 4.190188,
+            "z": -2.471,
+            "p_perm": 0.0078,
+            "ratio": 0.723
+          }
+        },
+        "806": {
+          "sign": "806",
+          "root": "*kampu",
+          "gloss": "millet/grain",
+          "domain": "Granary/Measure",
+          "direction": "over",
+          "w_share_of_sign": "18/20 (90.0%)",
+          "w_rate": "18/329 (5.47%)",
+          "non_w_rate": "2/496 (0.40%)",
+          "overall_fisher_or": 14.296,
+          "overall_fisher_p_2sided": 3.742068655645337e-06,
+          "cross_capital": {
+            "Mohenjo-daro": {
+              "w": "9/199",
+              "non_w": "2/350",
+              "odds_ratio": 8.242,
+              "fisher_p_2sided": 0.0024699702806606568
+            },
+            "Harappa": {
+              "w": "9/96",
+              "non_w": "0/55",
+              "odds_ratio": "inf",
+              "fisher_p_2sided": 0.02658756784261507
+            }
+          },
+          "site2_sz3_perm": {
+            "obs": 18.0,
+            "null_mean": 12.23,
+            "null_sd": 1.812445,
+            "z": 3.184,
+            "p_perm": 0.0014,
+            "ratio": 1.472
+          }
+        },
+        "240": {
+          "sign": "240",
+          "root": "*katir-mīṉ",
+          "gloss": "rayed-star",
+          "domain": "Star-Clan",
+          "direction": "over",
+          "w_share_of_sign": "54/92 (58.7%)",
+          "w_rate": "54/329 (16.41%)",
+          "non_w_rate": "38/496 (7.66%)",
+          "overall_fisher_or": 2.367,
+          "overall_fisher_p_2sided": 0.00016600584902694033,
+          "cross_capital": {
+            "Mohenjo-daro": {
+              "w": "35/199",
+              "non_w": "29/350",
+              "odds_ratio": 2.362,
+              "fisher_p_2sided": 0.0014214479087247202
+            },
+            "Harappa": {
+              "w": "15/96",
+              "non_w": "3/55",
+              "odds_ratio": 3.21,
+              "fisher_p_2sided": 0.07216560055751192
+            }
+          },
+          "site2_sz3_perm": {
+            "obs": 54.0,
+            "null_mean": 42.6944,
+            "null_sd": 3.936967,
+            "z": 2.872,
+            "p_perm": 0.0032,
+            "ratio": 1.265
+          }
+        }
+      },
+      "cooccurrence_405_806_on_intact_lettered": 4
+    }
+  },
+  "megalithic_graffiti": {
+    "sources": {
+      "R25": {
+        "citation": "Rajan, K. & R. Sivanantham (2025). Indus Signs and Graffiti Marks of Tamil Nadu: A Morphological Study. TN Dept. of Archaeology Pub. No. 357, p. 35 & fn. 1.",
+        "archive_url": "https://archive.org/details/k-rajan-r-sivanantham-indus-signs-and-graffiti-marks-of-tamil-nadu",
+        "n_m77_ids": 22
+      },
+      "M01": {
+        "citation": "Mahadevan, I. (2001). The Indus-Like Symbols on Megalithic Pottery: New Evidence. Studia Orientalia 94: 379-386, p. 384 (Sulur dish BM 1935.4-19.15 & Sanur pottery).",
+        "archive_url": "https://zenodo.org/records/19237655",
+        "n_m77_ids": 6
+      },
+      "K19": {
+        "citation": "Sivanantham, R. & M. Seran (2019). Keeladi: An Urban Settlement of Sangam Age on the Banks of River Vaigai. TN Dept. of Archaeology, Annexure p. 58.",
+        "archive_url": "https://archive.org/details/keeladibookenglish18092019",
+        "n_m77_ids": 4
+      },
+      "S06": {
+        "citation": "Mahadevan, I. (2006). A Note on the Muruku Sign of the Indus Script in light of the Mayiladuthurai Stone Axe Discovery. harappa.com (Sembiyankandiyur Neolithic stone celt).",
+        "archive_url": "https://web.archive.org/web/20060904034700/http://www.harappa.com/arrow/stone_celt_indus_signs.html",
+        "n_m77_ids": 4,
+        "supplementary_unique_ids": 2
+      },
+      "Lal1960": {
+        "citation": "Lal, B. B. (1960). From the Megalithic to the Harappa: Tracing Back the Graffiti on the Pottery. Ancient India 16: 4-24.",
+        "archive_url": "https://archive.org/details/dli.calcutta.02625",
+        "reported_overlap": "47/53 (88.7%) Megalithic symbols common to Harappan/Chalcolithic",
+        "lal_1960_native_m77_ids": 0,
+        "integrity_note": "Published 17 years before Mahadevan (1977); zero M77 IDs guessed from unlabelled drawings (only Symbol 47 explicitly mapped by Mahadevan 2001 to M77 47/48)."
+      }
+    },
+    "corpus_pottery_denominators": {
+      "m77_universe_signs": 417,
+      "lipi_objects_pot_all": 630,
+      "lipi_objects_pot_t_g": 533,
+      "bin_sizes_417": {
+        "B0": 112,
+        "B1": 94,
+        "B2": 95,
+        "B3": 51,
+        "B4": 43,
+        "B5": 22
+      }
+    },
+    "counts": {
+      "n_rajan_2025": 22,
+      "n_mahadevan_2001": 6,
+      "n_keeladi_2019": 4,
+      "n_union_megalithic": 28,
+      "n_union_all_tn": 30,
+      "n_cw_mapped_megalithic": 22,
+      "n_locked_227_megalithic": 20
+    },
+    "freq_matched_tests": {
+      "union_megalithic_28": {
+        "label": "PRIMARY: Union Megalithic Pottery Graffiti (R25+M01+K19)",
+        "n_signs": 28,
+        "n_cw_mapped": 22,
+        "n_locked_227": 20,
+        "bin_counts": {
+          "B0": 4,
+          "B1": 2,
+          "B2": 3,
+          "B3": 7,
+          "B4": 5,
+          "B5": 7
+        },
+        "corpus_token_share_pct": 27.69,
+        "corpus_token_fraction": "5619/20294",
+        "corpus_pot_token_share_pct": 31.14,
+        "corpus_pot_token_fraction": "355/1140",
+        "metrics": {
+          "comb_potg_rate": {
+            "obs": 0.076178,
+            "freq_matched": {
+              "null_mean": 0.045049,
+              "null_sd": 0.010966,
+              "z": 2.839,
+              "p": 0.0086,
+              "ratio": 1.691
+            },
+            "uniform": {
+              "null_mean": 0.046825,
+              "null_sd": 0.018794,
+              "z": 1.562,
+              "p": 0.07059,
+              "ratio": 1.627
+            }
+          },
+          "lipi_potg_rate": {
+            "obs": 0.074893,
+            "freq_matched": {
+              "null_mean": 0.045049,
+              "null_sd": 0.011219,
+              "z": 2.66,
+              "p": 0.0102,
+              "ratio": 1.662
+            },
+            "uniform": {
+              "null_mean": 0.047336,
+              "null_sd": 0.018848,
+              "z": 1.462,
+              "p": 0.08598,
+              "ratio": 1.582
+            }
+          },
+          "comb_pot_rate": {
+            "obs": 0.087529,
+            "freq_matched": {
+              "null_mean": 0.053222,
+              "null_sd": 0.012761,
+              "z": 2.688,
+              "p": 0.0098,
+              "ratio": 1.645
+            },
+            "uniform": {
+              "null_mean": 0.056001,
+              "null_sd": 0.021969,
+              "z": 1.435,
+              "p": 0.09138,
+              "ratio": 1.563
+            }
+          },
+          "m77_pot_rate": {
+            "obs": 0.043568,
+            "freq_matched": {
+              "null_mean": 0.025709,
+              "null_sd": 0.015578,
+              "z": 1.146,
+              "p": 0.14797,
+              "ratio": 1.695
+            },
+            "uniform": {
+              "null_mean": 0.031474,
+              "null_sd": 0.022257,
+              "z": 0.543,
+              "p": 0.26735,
+              "ratio": 1.384
+            }
+          },
+          "locked_227_count": {
+            "obs": 20.0,
+            "freq_matched": {
+              "null_mean": 18.5448,
+              "null_sd": 1.294113,
+              "z": 1.124,
+              "p": 0.22995,
+              "ratio": 1.078
+            },
+            "uniform": {
+              "null_mean": 9.161,
+              "null_sd": 2.381893,
+              "z": 4.551,
+              "p": 0.0002,
+              "ratio": 2.183
+            }
+          },
+          "mean_m77_freq": {
+            "obs": 129.75,
+            "freq_matched": {
+              "null_mean": 103.17295,
+              "null_sd": 21.08128,
+              "z": 1.261,
+              "p": 0.16677,
+              "ratio": 1.258
+            },
+            "uniform": {
+              "null_mean": 32.333471,
+              "null_sd": 16.962629,
+              "z": 5.743,
+              "p": 0.0002,
+              "ratio": 4.013
+            }
+          }
+        }
+      },
+      "rajan_2025_22": {
+        "label": "SINGLE-SOURCE REPLICATION: Rajan & Sivanantham 2025",
+        "n_signs": 22,
+        "n_cw_mapped": 17,
+        "n_locked_227": 15,
+        "bin_counts": {
+          "B0": 3,
+          "B1": 2,
+          "B2": 3,
+          "B3": 6,
+          "B4": 4,
+          "B5": 4
+        },
+        "corpus_token_share_pct": 12.85,
+        "corpus_token_fraction": "2607/20294",
+        "corpus_pot_token_share_pct": 13.68,
+        "corpus_pot_token_fraction": "156/1140",
+        "metrics": {
+          "comb_potg_rate": {
+            "obs": 0.07403,
+            "freq_matched": {
+              "null_mean": 0.044915,
+              "null_sd": 0.013516,
+              "z": 2.154,
+              "p": 0.03159,
+              "ratio": 1.648
+            },
+            "uniform": {
+              "null_mean": 0.046547,
+              "null_sd": 0.021239,
+              "z": 1.294,
+              "p": 0.10678,
+              "ratio": 1.59
+            }
+          },
+          "lipi_potg_rate": {
+            "obs": 0.074273,
+            "freq_matched": {
+              "null_mean": 0.045229,
+              "null_sd": 0.013892,
+              "z": 2.091,
+              "p": 0.03199,
+              "ratio": 1.642
+            },
+            "uniform": {
+              "null_mean": 0.047074,
+              "null_sd": 0.021151,
+              "z": 1.286,
+              "p": 0.10538,
+              "ratio": 1.578
+            }
+          },
+          "comb_pot_rate": {
+            "obs": 0.087796,
+            "freq_matched": {
+              "null_mean": 0.053202,
+              "null_sd": 0.015585,
+              "z": 2.22,
+              "p": 0.02639,
+              "ratio": 1.65
+            },
+            "uniform": {
+              "null_mean": 0.055567,
+              "null_sd": 0.024931,
+              "z": 1.293,
+              "p": 0.10978,
+              "ratio": 1.58
+            }
+          },
+          "m77_pot_rate": {
+            "obs": 0.046051,
+            "freq_matched": {
+              "null_mean": 0.025853,
+              "null_sd": 0.017649,
+              "z": 1.144,
+              "p": 0.12438,
+              "ratio": 1.781
+            },
+            "uniform": {
+              "null_mean": 0.030826,
+              "null_sd": 0.024687,
+              "z": 0.617,
+              "p": 0.25715,
+              "ratio": 1.494
+            }
+          },
+          "locked_227_count": {
+            "obs": 15.0,
+            "freq_matched": {
+              "null_mean": 13.7086,
+              "null_sd": 1.242093,
+              "z": 1.04,
+              "p": 0.26135,
+              "ratio": 1.094
+            },
+            "uniform": {
+              "null_mean": 7.1302,
+              "null_sd": 2.154571,
+              "z": 3.653,
+              "p": 0.0006,
+              "ratio": 2.104
+            }
+          },
+          "mean_m77_freq": {
+            "obs": 75.909091,
+            "freq_matched": {
+              "null_mean": 83.374736,
+              "null_sd": 22.014791,
+              "z": -0.339,
+              "p": 0.4837,
+              "ratio": 0.91
+            },
+            "uniform": {
+              "null_mean": 32.230018,
+              "null_sd": 19.728511,
+              "z": 2.214,
+              "p": 0.05279,
+              "ratio": 2.355
+            }
+          }
+        }
+      },
+      "all_tn_30": {
+        "label": "SENSITIVITY: All Tamil Nadu (+2 Sembiyankandiyur Celt)",
+        "n_signs": 30,
+        "n_cw_mapped": 24,
+        "n_locked_227": 20,
+        "bin_counts": {
+          "B0": 4,
+          "B1": 2,
+          "B2": 5,
+          "B3": 7,
+          "B4": 5,
+          "B5": 7
+        },
+        "corpus_token_share_pct": 27.84,
+        "corpus_token_fraction": "5649/20294",
+        "corpus_pot_token_share_pct": 31.14,
+        "corpus_pot_token_fraction": "355/1140",
+        "metrics": {
+          "comb_potg_rate": {
+            "obs": 0.06983,
+            "freq_matched": {
+              "null_mean": 0.044727,
+              "null_sd": 0.010992,
+              "z": 2.284,
+              "p": 0.0214,
+              "ratio": 1.561
+            },
+            "uniform": {
+              "null_mean": 0.046507,
+              "null_sd": 0.017933,
+              "z": 1.301,
+              "p": 0.10518,
+              "ratio": 1.501
+            }
+          },
+          "lipi_potg_rate": {
+            "obs": 0.068652,
+            "freq_matched": {
+              "null_mean": 0.04523,
+              "null_sd": 0.011387,
+              "z": 2.057,
+              "p": 0.03359,
+              "ratio": 1.518
+            },
+            "uniform": {
+              "null_mean": 0.046911,
+              "null_sd": 0.017901,
+              "z": 1.214,
+              "p": 0.12158,
+              "ratio": 1.463
+            }
+          },
+          "comb_pot_rate": {
+            "obs": 0.080235,
+            "freq_matched": {
+              "null_mean": 0.052555,
+              "null_sd": 0.012574,
+              "z": 2.201,
+              "p": 0.02539,
+              "ratio": 1.527
+            },
+            "uniform": {
+              "null_mean": 0.055615,
+              "null_sd": 0.021331,
+              "z": 1.154,
+              "p": 0.12637,
+              "ratio": 1.443
+            }
+          },
+          "m77_pot_rate": {
+            "obs": 0.040664,
+            "freq_matched": {
+              "null_mean": 0.025397,
+              "null_sd": 0.014686,
+              "z": 1.039,
+              "p": 0.16137,
+              "ratio": 1.601
+            },
+            "uniform": {
+              "null_mean": 0.03103,
+              "null_sd": 0.020545,
+              "z": 0.469,
+              "p": 0.29534,
+              "ratio": 1.31
+            }
+          },
+          "locked_227_count": {
+            "obs": 20.0,
+            "freq_matched": {
+              "null_mean": 19.0636,
+              "null_sd": 1.44332,
+              "z": 0.649,
+              "p": 0.37013,
+              "ratio": 1.049
+            },
+            "uniform": {
+              "null_mean": 9.8464,
+              "null_sd": 2.458783,
+              "z": 4.13,
+              "p": 0.0004,
+              "ratio": 2.031
+            }
+          },
+          "mean_m77_freq": {
+            "obs": 121.8,
+            "freq_matched": {
+              "null_mean": 97.31278,
+              "null_sd": 19.672954,
+              "z": 1.245,
+              "p": 0.16417,
+              "ratio": 1.252
+            },
+            "uniform": {
+              "null_mean": 32.1156,
+              "null_sd": 16.294999,
+              "z": 5.504,
+              "p": 0.0002,
+              "ratio": 3.793
+            }
+          }
+        }
+      }
+    },
+    "sulur_sanur_sequence_lock": {
+      "sulur_artifact": "Sulur terracotta dish (BM 1935.4-19.15) + Sanur pottery (Lal Symbol 47 -> M77 47/48)",
+      "full_5sign_formula_lipi": "033-700 || 176-740-400",
+      "full_5sign_formula_gloss": "*mū-*aḷa ('3 measures/bowls') || *iṟai-*kuṭi-*cikka ('tribute-house-junior')",
+      "signs_locked_227": "5/5 (100%)",
+      "bigram_ranks": {
+        "740_400_M342_176": {
+          "m77": {
+            "rank": 2,
+            "count": 184,
+            "of_unique": 2758
+          },
+          "lipi": {
+            "rank": 1,
+            "count": 233,
+            "of_unique": 3779
+          },
+          "combined": {
+            "rank": 1,
+            "count": 263,
+            "of_unique": 4094
+          }
+        },
+        "033_700_M89_328": {
+          "m77": {
+            "rank": 4,
+            "count": 124,
+            "of_unique": 2758
+          },
+          "lipi": {
+            "rank": 4,
+            "count": 142,
+            "of_unique": 3779
+          },
+          "combined": {
+            "rank": 4,
+            "count": 145,
+            "of_unique": 4094
+          }
+        },
+        "176_740_M48_342_celt": {
+          "m77": {
+            "rank": 5,
+            "count": 114,
+            "of_unique": 2758
+          },
+          "lipi": {
+            "rank": 5,
+            "count": 124,
+            "of_unique": 3779
+          },
+          "combined": {
+            "rank": 6,
+            "count": 138,
+            "of_unique": 4094
+          }
+        }
+      },
+      "sulur_12_decompositions": {
+        "observed_sum": 308,
+        "rank_of_12": 1,
+        "exact_p_1_of_12": 0.0833,
+        "top_4_sums": [
+          {
+            "pairs": "(89, 328) + (342, 176)",
+            "sum": 308,
+            "c1": 124,
+            "c2": 184
+          },
+          {
+            "pairs": "(328, 89) + (342, 176)",
+            "sum": 184,
+            "c1": 0,
+            "c2": 184
+          },
+          {
+            "pairs": "(89, 328) + (176, 342)",
+            "sum": 134,
+            "c1": 124,
+            "c2": 10
+          },
+          {
+            "pairs": "(328, 89) + (176, 342)",
+            "sum": 10,
+            "c1": 0,
+            "c2": 10
+          }
+        ],
+        "median_sum": 2.0
+      },
+      "multiface_cooccurrence_972": {
+        "n_multiface_objects": 972,
+        "n_with_033_700": 133,
+        "n_with_740_400": 145,
+        "n_both_any_face": 37,
+        "n_both_opposite_faces": 36,
+        "expected_both": 19.84,
+        "lift": 1.86,
+        "fisher_p_any_face": 2.2854062143597626e-05,
+        "fisher_p_opposite_face": 6.006376961832444e-05
+      },
+      "exact_5sign_harappa_twins": {
+        "count": 16,
+        "cisi_ids": [
+          "Lipi:260",
+          "H-1822",
+          "H-233",
+          "H-309",
+          "H-316",
+          "H-352",
+          "H-353",
+          "H-355",
+          "H-356",
+          "H-357",
+          "H-934",
+          "H-979",
+          "H-987",
+          "H-1344",
+          "H-1345",
+          "H-1346"
+        ],
+        "records": [
+          {
+            "id": "260",
+            "cisi": "Lipi:260",
+            "site": "Harappa",
+            "kind": "mtab",
+            "faces": "033-700 || 176-740-400"
+          },
+          {
+            "id": "550",
+            "cisi": "H-1822",
+            "site": "Harappa",
+            "kind": "mtab",
+            "faces": "033-700 || 519-176-740-400"
+          },
+          {
+            "id": "1260",
+            "cisi": "H-233",
+            "site": "Harappa",
+            "kind": "mtab",
+            "faces": "176-740-400 || 033-700"
+          },
+          {
+            "id": "1331",
+            "cisi": "H-309",
+            "site": "Harappa",
+            "kind": "mtab",
+            "faces": "176-740-400 || 033-700"
+          },
+          {
+            "id": "1338",
+            "cisi": "H-316",
+            "site": "Harappa",
+            "kind": "mtab",
+            "faces": "176-740-400 || 033-700 || 176-740-400 || 033-700"
+          },
+          {
+            "id": "1371",
+            "cisi": "H-352",
+            "site": "Harappa",
+            "kind": "seal",
+            "faces": "176-740-400 || 033-700"
+          },
+          {
+            "id": "1372",
+            "cisi": "H-353",
+            "site": "Harappa",
+            "kind": "mtab",
+            "faces": "176-740-400 || 033-700"
+          },
+          {
+            "id": "1374",
+            "cisi": "H-355",
+            "site": "Harappa",
+            "kind": "mtab",
+            "faces": "176-740-400 || 033-700 || 033-700"
+          },
+          {
+            "id": "1375",
+            "cisi": "H-356",
+            "site": "Harappa",
+            "kind": "mtab",
+            "faces": "033-700 || 176-740-400"
+          },
+          {
+            "id": "1376",
+            "cisi": "H-357",
+            "site": "Harappa",
+            "kind": "mtab",
+            "faces": "176-740-400 || 033-700"
+          },
+          {
+            "id": "1814",
+            "cisi": "H-934",
+            "site": "Harappa",
+            "kind": "mtab",
+            "faces": "033-700 || 176-740-400"
+          },
+          {
+            "id": "1856",
+            "cisi": "H-979",
+            "site": "Harappa",
+            "kind": "mtab",
+            "faces": "033-700 || 176-740-400"
+          },
+          {
+            "id": "1863",
+            "cisi": "H-987",
+            "site": "Harappa",
+            "kind": "mtab",
+            "faces": "817-365-690 || 033-700 || 176-740-400"
+          },
+          {
+            "id": "4085",
+            "cisi": "H-1344",
+            "site": "Harappa",
+            "kind": "mtab",
+            "faces": "176-740-400 || 033-700"
+          },
+          {
+            "id": "4086",
+            "cisi": "H-1345",
+            "site": "Harappa",
+            "kind": "mtab",
+            "faces": "176-740-400 || 033-700"
+          },
+          {
+            "id": "4087",
+            "cisi": "H-1346",
+            "site": "Harappa",
+            "kind": "mtab",
+            "faces": "176-740-400 || 033-700"
+          }
+        ]
+      }
+    },
+    "honest_nulls": [
+      {
+        "id": "megalithic_freq_matched_locked_227",
+        "metric": "locked_227_count on union_megalithic_28",
+        "obs": 20,
+        "null_mean": 18.5448,
+        "p_freq_matched": 0.22995,
+        "note": "Raw overlap is 20/28 (P = 0.00020 uniform), but frequency-matched null is already 18.54/28 because the 227-sign lexicon saturates ~90% of high-frequency Indus signs (ceiling effect)."
+      },
+      {
+        "id": "lal_1960_unmapped_drawings",
+        "metric": "Lal (1960) native M77 IDs",
+        "obs": 0,
+        "note": "Published 17 years before Mahadevan (1977); excluded from numeric concordance rather than guessing M77 codes from drawings."
+      }
+    ]
+  },
+  "honest_nulls": [
+    {
+      "id": "copper_503_615_740_3rd_copy_rhin",
+      "module": "copper_bilinguals",
+      "summary": "Third copy of 503-615-740 (Lipi obj=2522 / VS 3500 / M77 1707, unphotographed) is coded cat='Rhin' / fs='113' (rhinoceros) rather than 341 or stag."
+    },
+    {
+      "id": "meluhha_strict_2branch_and_bonf7",
+      "module": "meluhha_endemism",
+      "summary": "Strict 2-branch Dravidian (pdrav_2branch_fixed) scores 1/5 (P=0.63427) because coastal/crop eḷ (854) and mañci (4638) are South-Dravidian-only; Dravidian_2Lang nominal P=0.01580 passes P<0.05 but not Bonf-7 (0.00714). Three Stratum C stones have n_sem=0 in DEDR."
+    },
+    {
+      "id": "animal_beast9_12domains_global_null",
+      "module": "animal_standletter_227",
+      "summary": "Global BEAST9 (n=1,182 intact) x 12 Domains is null: face-presence chi2=59.00, P_site=0.69546, P_site_shape=0.68766; token-counts P=0.87682 (confirming species is a circuit emblem orthogonal to text vocabulary outside surgical GOAT/COMPOSITE Star-Clan avoidance)."
+    },
+    {
+      "id": "megalithic_freq_matched_locked_227_ceiling",
+      "module": "megalithic_graffiti",
+      "summary": "Frequency-matched locked_227 on union_megalithic_28 is 20/28 vs null 18.54 (P=0.22995; raw uniform P=0.00020) due to ~90% high-frequency saturation of the 227-sign lexicon."
+    },
+    {
+      "id": "megalithic_lal_1960_zero_native_m77_ids",
+      "module": "megalithic_graffiti",
+      "summary": "B. B. Lal (1960) reported 47/53 (88.7%) Megalithic-Harappan overlap 17 years before Mahadevan (1977); 0 M77 IDs were guessed from drawings."
+    }
+  ]
+}
