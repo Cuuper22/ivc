@@ -1,0 +1,6211 @@
+{
+  "milestone": "M2_sangam_arch_multiface",
+  "n_permutations": 5000,
+  "lexicon_sizes": {
+    "key6a": 163,
+    "key7a": 227,
+    "key8a_strict_phonetic": 266,
+    "key8a_full": 272
+  },
+  "headline_attested_compounds": 52,
+  "multiface_100_272": 434,
+  "multiface_100_266_strict": 426,
+  "intact_multiface_raw": 606,
+  "test_8b1_sangam": {
+    "n_permutations": 5000,
+    "rng_seed": 20261181,
+    "corpus_counts": {
+      "lipi_records": 4476,
+      "new_records": 990,
+      "key7a_signs_total": 227,
+      "key7a_signs_phonetic": 220,
+      "key8a_signs_total": 272,
+      "key8a_signs_strict_locked": 266,
+      "key8a_signs_phonetic": 262,
+      "lipi_ge2_bigrams_227": 911,
+      "lipi_ge2_bigrams_272": 1004,
+      "comb_ge2_bigrams_272": 1230
+    },
+    "lexicon_sizes": {
+      "tier1_frozen_pure_dravidian": 170,
+      "tier1_quarantined_prakrit_loans": 30,
+      "tier1_mw_rival_ia": 107,
+      "tier1_halloran_rival_sumerian": 86,
+      "tier2_expanded_pure_dravidian": 220,
+      "tier2_mw_rival_ia": 140,
+      "tier2_halloran_rival_sumerian": 114,
+      "tier4_uncurated_strict_phoneme_dict": 14206,
+      "tier4_uncurated_cplace_dict": 13695
+    },
+    "headline_attested_compounds": 52,
+    "headline_attested_compounds_comb": 54,
+    "prakrit_loan_control": {
+      "words": 0,
+      "pairs": 0,
+      "lipi_mass": 0,
+      "new_mass": 0,
+      "key7a_227_lipi_ge2": {
+        "words": 0,
+        "pairs": 0,
+        "lipi_mass": 0,
+        "new_mass": 0,
+        "word_list": []
+      },
+      "key8a_272_lipi_ge2": {
+        "words": 0,
+        "pairs": 0,
+        "lipi_mass": 0,
+        "new_mass": 0,
+        "word_list": []
+      },
+      "key8a_272_comb_ge2": {
+        "words": 0,
+        "pairs": 0,
+        "lipi_mass": 0,
+        "new_mass": 0,
+        "word_list": []
+      }
+    },
+    "tier1_frozen_170": {
+      "key7a_227_full_lipi_ge2": {
+        "cut": "t1_227_full_lipi_ge2",
+        "n_bigrams_tested": 911,
+        "obs_words": 38,
+        "obs_pairs": 58,
+        "obs_lipi_mass": 979,
+        "obs_new_mass": 159,
+        "obs_word_list": [
+          "aṟumīṉ",
+          "aṭikkuṭi",
+          "irukalam",
+          "irukuṭi",
+          "irukāl",
+          "irumīṉ",
+          "irupaṟai",
+          "irutiṅkaḷ",
+          "iruviṇai",
+          "iṟaikkuṭi",
+          "kavartalai",
+          "kaḷappāy",
+          "kaṭṭukkuṭi",
+          "kaṭṭumūṭai",
+          "koṭikkaṭṭu",
+          "kuṭiyāḷ",
+          "kāluḷ",
+          "kōkkuṭi",
+          "kūṭṭukkuṭi",
+          "mukkuṭi",
+          "mukkāl",
+          "mummīṉ",
+          "mutaṟkuṭi",
+          "muttiṅkaḷ",
+          "mālaikkaṇṇi",
+          "nāḷmīṉ",
+          "nāṭṭukkuṭi",
+          "nāṭṭuḷ",
+          "orukuṭi",
+          "orutalai",
+          "paṭikkaṭṭu",
+          "tiṅkaḷmutal",
+          "tiṅkaḷuḷ",
+          "toṭṭikkaṭṭu",
+          "uṭkuṭi",
+          "varikkāl",
+          "vēḷir",
+          "īraṭi"
+        ],
+        "perm_words": {
+          "mean": 16.5706,
+          "std": 4.1387,
+          "z": 5.1779,
+          "p": 0.0002
+        },
+        "perm_pairs": {
+          "mean": 23.9986,
+          "std": 6.8481,
+          "z": 4.9651,
+          "p": 0.0002
+        },
+        "perm_lipi_mass": {
+          "mean": 232.778,
+          "std": 135.1814,
+          "z": 5.5202,
+          "p": 0.0004
+        },
+        "perm_new_mass": {
+          "mean": 32.4248,
+          "std": 18.2894,
+          "z": 6.9207,
+          "p": 0.0002
+        },
+        "dedr_draw_words": {
+          "mean": 1.3588,
+          "std": 1.5085,
+          "z": 24.289,
+          "p": 0.0002
+        },
+        "dedr_draw_lipi_mass": {
+          "mean": 25.0586,
+          "std": 49.4554,
+          "z": 19.2889,
+          "p": 0.0002
+        }
+      },
+      "key7a_227_w5_ge1_lipi_ge2": {
+        "cut": "t1_227_w5_ge1_lipi_ge2",
+        "n_bigrams_tested": 83,
+        "obs_words": 1,
+        "obs_pairs": 1,
+        "obs_lipi_mass": 16,
+        "obs_new_mass": 0,
+        "obs_word_list": [
+          "kūṭṭukkuṭi"
+        ],
+        "perm_words": {
+          "mean": 1.5062,
+          "std": 1.0597,
+          "z": -0.4777,
+          "p": 0.82923
+        },
+        "perm_pairs": {
+          "mean": 2.185,
+          "std": 1.8875,
+          "z": -0.6278,
+          "p": 0.82923
+        },
+        "perm_lipi_mass": {
+          "mean": 13.132,
+          "std": 16.5714,
+          "z": 0.1731,
+          "p": 0.34013
+        },
+        "perm_new_mass": {
+          "mean": 1.601,
+          "std": 2.2046,
+          "z": -0.7262,
+          "p": 1.0
+        },
+        "dedr_draw_words": {
+          "mean": 0.3122,
+          "std": 0.6428,
+          "z": 1.07,
+          "p": 0.22795
+        },
+        "dedr_draw_lipi_mass": {
+          "mean": 3.2076,
+          "std": 7.3553,
+          "z": 1.7392,
+          "p": 0.13237
+        }
+      },
+      "key7a_227_w5_both_lipi_ge2": {
+        "cut": "t1_227_w5_both_lipi_ge2",
+        "n_bigrams_tested": 2,
+        "obs_words": 0,
+        "obs_pairs": 0,
+        "obs_lipi_mass": 0,
+        "obs_new_mass": 0,
+        "obs_word_list": [],
+        "perm_words": {
+          "mean": 0.0182,
+          "std": 0.1337,
+          "z": -0.1361,
+          "p": 1.0
+        },
+        "perm_pairs": {
+          "mean": 0.0182,
+          "std": 0.1337,
+          "z": -0.1361,
+          "p": 1.0
+        },
+        "perm_lipi_mass": {
+          "mean": 0.1422,
+          "std": 1.0529,
+          "z": -0.1351,
+          "p": 1.0
+        },
+        "perm_new_mass": {
+          "mean": 0.0,
+          "std": 0.0,
+          "z": 0.0,
+          "p": 1.0
+        },
+        "dedr_draw_words": {
+          "mean": 0.0012,
+          "std": 0.0346,
+          "z": -0.0347,
+          "p": 1.0
+        },
+        "dedr_draw_lipi_mass": {
+          "mean": 0.0104,
+          "std": 0.3012,
+          "z": -0.0345,
+          "p": 1.0
+        }
+      },
+      "key8a_272_full_lipi_ge2": {
+        "cut": "t1_272_full_lipi_ge2",
+        "n_bigrams_tested": 1004,
+        "obs_words": 38,
+        "obs_pairs": 61,
+        "obs_lipi_mass": 988,
+        "obs_new_mass": 160,
+        "obs_word_list": [
+          "aṟumīṉ",
+          "aṭikkuṭi",
+          "irukalam",
+          "irukuṭi",
+          "irukāl",
+          "irumīṉ",
+          "irupaṟai",
+          "irutiṅkaḷ",
+          "iruviṇai",
+          "iṟaikkuṭi",
+          "kavartalai",
+          "kaḷappāy",
+          "kaṭṭukkuṭi",
+          "kaṭṭumūṭai",
+          "koṭikkaṭṭu",
+          "kuṭiyāḷ",
+          "kāluḷ",
+          "kōkkuṭi",
+          "kūṭṭukkuṭi",
+          "mukkuṭi",
+          "mukkāl",
+          "mummīṉ",
+          "mutaṟkuṭi",
+          "muttiṅkaḷ",
+          "mālaikkaṇṇi",
+          "nāḷmīṉ",
+          "nāṭṭukkuṭi",
+          "nāṭṭuḷ",
+          "orukuṭi",
+          "orutalai",
+          "paṭikkaṭṭu",
+          "tiṅkaḷmutal",
+          "tiṅkaḷuḷ",
+          "toṭṭikkaṭṭu",
+          "uṭkuṭi",
+          "varikkāl",
+          "vēḷir",
+          "īraṭi"
+        ],
+        "perm_words": {
+          "mean": 15.0518,
+          "std": 4.1254,
+          "z": 5.5627,
+          "p": 0.0002
+        },
+        "perm_pairs": {
+          "mean": 22.1566,
+          "std": 6.9812,
+          "z": 5.564,
+          "p": 0.0002
+        },
+        "perm_lipi_mass": {
+          "mean": 203.9432,
+          "std": 128.3619,
+          "z": 6.1082,
+          "p": 0.0002
+        },
+        "perm_new_mass": {
+          "mean": 28.3902,
+          "std": 17.4397,
+          "z": 7.5466,
+          "p": 0.0002
+        },
+        "dedr_draw_words": {
+          "mean": 1.434,
+          "std": 1.593,
+          "z": 22.9537,
+          "p": 0.0002
+        },
+        "dedr_draw_lipi_mass": {
+          "mean": 24.8816,
+          "std": 50.4519,
+          "z": 19.0898,
+          "p": 0.0002
+        }
+      },
+      "key8a_272_full_comb_ge2": {
+        "cut": "t1_272_full_comb_ge2",
+        "n_bigrams_tested": 1230,
+        "obs_words": 40,
+        "obs_pairs": 68,
+        "obs_lipi_mass": 993,
+        "obs_new_mass": 172,
+        "obs_word_list": [
+          "aṟumīṉ",
+          "aṭikkuṭi",
+          "irukalam",
+          "irukuṭi",
+          "irukāl",
+          "irumīṉ",
+          "irupaṟai",
+          "irutiṅkaḷ",
+          "iruviṇai",
+          "iṟaikkuṭi",
+          "kavartalai",
+          "kaḷappāy",
+          "kaṭṭukkuṭi",
+          "kaṭṭumūṭai",
+          "koṭikkaṭṭu",
+          "kuṭiyiṟai",
+          "kuṭiyāḷ",
+          "kāluḷ",
+          "kōkkuṭi",
+          "kūṭṭukkuṭi",
+          "mukkuṭi",
+          "mukkāl",
+          "mummīṉ",
+          "mutalāḷ",
+          "mutaṟkuṭi",
+          "muttiṅkaḷ",
+          "mālaikkaṇṇi",
+          "nāḷmīṉ",
+          "nāṭṭukkuṭi",
+          "nāṭṭuḷ",
+          "orukuṭi",
+          "orutalai",
+          "paṭikkaṭṭu",
+          "tiṅkaḷmutal",
+          "tiṅkaḷuḷ",
+          "toṭṭikkaṭṭu",
+          "uṭkuṭi",
+          "varikkāl",
+          "vēḷir",
+          "īraṭi"
+        ],
+        "perm_words": {
+          "mean": 17.0476,
+          "std": 4.2969,
+          "z": 5.3417,
+          "p": 0.0002
+        },
+        "perm_pairs": {
+          "mean": 25.5406,
+          "std": 7.3945,
+          "z": 5.742,
+          "p": 0.0002
+        },
+        "perm_lipi_mass": {
+          "mean": 204.8754,
+          "std": 127.7156,
+          "z": 6.1709,
+          "p": 0.0002
+        },
+        "perm_new_mass": {
+          "mean": 33.6464,
+          "std": 17.933,
+          "z": 7.715,
+          "p": 0.0002
+        },
+        "dedr_draw_words": {
+          "mean": 1.5906,
+          "std": 1.6937,
+          "z": 22.6772,
+          "p": 0.0002
+        },
+        "dedr_draw_lipi_mass": {
+          "mean": 26.637,
+          "std": 52.934,
+          "z": 18.256,
+          "p": 0.0002
+        }
+      },
+      "key8a_272_w56_ge1_lipi_ge2": {
+        "cut": "t1_272_w56_ge1_lipi_ge2",
+        "n_bigrams_tested": 176,
+        "obs_words": 2,
+        "obs_pairs": 4,
+        "obs_lipi_mass": 25,
+        "obs_new_mass": 1,
+        "obs_word_list": [
+          "kūṭṭukkuṭi",
+          "nāṭṭukkuṭi"
+        ],
+        "perm_words": {
+          "mean": 2.3474,
+          "std": 1.3035,
+          "z": -0.2665,
+          "p": 0.72865
+        },
+        "perm_pairs": {
+          "mean": 3.343,
+          "std": 2.3298,
+          "z": 0.282,
+          "p": 0.39492
+        },
+        "perm_lipi_mass": {
+          "mean": 17.6362,
+          "std": 18.6404,
+          "z": 0.395,
+          "p": 0.25695
+        },
+        "perm_new_mass": {
+          "mean": 2.2712,
+          "std": 2.7862,
+          "z": -0.4563,
+          "p": 0.62128
+        },
+        "dedr_draw_words": {
+          "mean": 0.5194,
+          "std": 0.8028,
+          "z": 1.8442,
+          "p": 0.11978
+        },
+        "dedr_draw_lipi_mass": {
+          "mean": 4.327,
+          "std": 8.3986,
+          "z": 2.4615,
+          "p": 0.04299
+        }
+      },
+      "key8a_272_w56_both_lipi_ge2": {
+        "cut": "t1_272_w56_both_lipi_ge2",
+        "n_bigrams_tested": 9,
+        "obs_words": 0,
+        "obs_pairs": 0,
+        "obs_lipi_mass": 0,
+        "obs_new_mass": 0,
+        "obs_word_list": [],
+        "perm_words": {
+          "mean": 0.0478,
+          "std": 0.2216,
+          "z": -0.2157,
+          "p": 1.0
+        },
+        "perm_pairs": {
+          "mean": 0.0552,
+          "std": 0.2701,
+          "z": -0.2043,
+          "p": 1.0
+        },
+        "perm_lipi_mass": {
+          "mean": 0.2484,
+          "std": 1.3263,
+          "z": -0.1873,
+          "p": 1.0
+        },
+        "perm_new_mass": {
+          "mean": 0.0218,
+          "std": 0.1901,
+          "z": -0.1147,
+          "p": 1.0
+        },
+        "dedr_draw_words": {
+          "mean": 0.0016,
+          "std": 0.04,
+          "z": -0.04,
+          "p": 1.0
+        },
+        "dedr_draw_lipi_mass": {
+          "mean": 0.0144,
+          "std": 0.3597,
+          "z": -0.04,
+          "p": 1.0
+        }
+      },
+      "rival_ia_227": {
+        "cut": "t1_ia_227_lipi_ge2",
+        "n_bigrams_tested": 911,
+        "obs_words": 12,
+        "obs_pairs": 26,
+        "obs_lipi_mass": 265,
+        "obs_new_mass": 43,
+        "obs_word_list": [
+          "antargṛha",
+          "cāturmāsya",
+          "daṇḍapāla",
+          "dvibhāga",
+          "dvidroṇa",
+          "dvipāda",
+          "gṛhapati",
+          "rājagṛha",
+          "rājaputra",
+          "tribhāga",
+          "trimāsa",
+          "tripāda"
+        ],
+        "perm_words": {
+          "mean": 6.7372,
+          "std": 1.7594,
+          "z": 2.9912,
+          "p": 0.0052
+        },
+        "perm_pairs": {
+          "mean": 14.2926,
+          "std": 4.6786,
+          "z": 2.5023,
+          "p": 0.0172
+        },
+        "perm_lipi_mass": {
+          "mean": 152.7408,
+          "std": 108.0153,
+          "z": 1.0393,
+          "p": 0.12957
+        },
+        "perm_new_mass": {
+          "mean": 19.724,
+          "std": 12.2212,
+          "z": 1.9046,
+          "p": 0.06119
+        }
+      },
+      "rival_sumerian_227": {
+        "cut": "t1_sum_227_lipi_ge2",
+        "n_bigrams_tested": 911,
+        "obs_words": 1,
+        "obs_pairs": 21,
+        "obs_lipi_mass": 200,
+        "obs_new_mass": 43,
+        "obs_word_list": [
+          "mul-mul"
+        ],
+        "perm_words": {
+          "mean": 1.4078,
+          "std": 0.9257,
+          "z": -0.4405,
+          "p": 0.85723
+        },
+        "perm_pairs": {
+          "mean": 2.7702,
+          "std": 2.4434,
+          "z": 7.4608,
+          "p": 0.0002
+        },
+        "perm_lipi_mass": {
+          "mean": 20.452,
+          "std": 34.8575,
+          "z": 5.1509,
+          "p": 0.008
+        },
+        "perm_new_mass": {
+          "mean": 3.3418,
+          "std": 5.7308,
+          "z": 6.9202,
+          "p": 0.0024
+        }
+      },
+      "rival_ia_272": {
+        "cut": "t1_ia_272_lipi_ge2",
+        "n_bigrams_tested": 1004,
+        "obs_words": 12,
+        "obs_pairs": 29,
+        "obs_lipi_mass": 291,
+        "obs_new_mass": 49,
+        "obs_word_list": [
+          "antargṛha",
+          "cāturmāsya",
+          "daṇḍapāla",
+          "dvibhāga",
+          "dvidroṇa",
+          "dvipāda",
+          "gṛhapati",
+          "rājagṛha",
+          "rājaputra",
+          "tribhāga",
+          "trimāsa",
+          "tripāda"
+        ],
+        "perm_words": {
+          "mean": 6.5412,
+          "std": 1.7714,
+          "z": 3.0817,
+          "p": 0.0056
+        },
+        "perm_pairs": {
+          "mean": 13.9558,
+          "std": 4.7998,
+          "z": 3.1343,
+          "p": 0.0042
+        },
+        "perm_lipi_mass": {
+          "mean": 142.3426,
+          "std": 106.5285,
+          "z": 1.3955,
+          "p": 0.10178
+        },
+        "perm_new_mass": {
+          "mean": 18.1912,
+          "std": 11.6754,
+          "z": 2.6388,
+          "p": 0.0202
+        }
+      },
+      "rival_sumerian_272": {
+        "cut": "t1_sum_272_lipi_ge2",
+        "n_bigrams_tested": 1004,
+        "obs_words": 1,
+        "obs_pairs": 21,
+        "obs_lipi_mass": 200,
+        "obs_new_mass": 43,
+        "obs_word_list": [
+          "mul-mul"
+        ],
+        "perm_words": {
+          "mean": 1.3772,
+          "std": 0.9378,
+          "z": -0.4022,
+          "p": 0.83883
+        },
+        "perm_pairs": {
+          "mean": 2.549,
+          "std": 2.3181,
+          "z": 7.9596,
+          "p": 0.0002
+        },
+        "perm_lipi_mass": {
+          "mean": 18.6692,
+          "std": 32.3204,
+          "z": 5.6104,
+          "p": 0.006
+        },
+        "perm_new_mass": {
+          "mean": 2.9852,
+          "std": 5.522,
+          "z": 7.2465,
+          "p": 0.0016
+        }
+      }
+    },
+    "tier2_expanded_attested_w56": {
+      "key7a_227_full_lipi_ge2": {
+        "cut": "t2_227_full_lipi_ge2",
+        "n_bigrams_tested": 911,
+        "obs_words": 46,
+        "obs_pairs": 76,
+        "obs_lipi_mass": 1131,
+        "obs_new_mass": 175,
+        "obs_word_list": [
+          "aṟumīṉ",
+          "aṭikkuṭi",
+          "irukalam",
+          "irukuṭi",
+          "irukāl",
+          "irumīṉ",
+          "irupaṟai",
+          "irutiṅkaḷ",
+          "iruviṇai",
+          "iṟaikkuṭi",
+          "iṟaimūṭai",
+          "kavartalai",
+          "kaḷappāy",
+          "kaṭṭukkuṭi",
+          "kaṭṭumūṭai",
+          "koṭikkaṭṭu",
+          "kuṭiyaṟai",
+          "kuṭiyāḷ",
+          "kāluḷ",
+          "kōkkuṭi",
+          "kūṭṭukkaṭṭu",
+          "kūṭṭukkuṭi",
+          "mukkuṭi",
+          "mukkāl",
+          "mummīṉ",
+          "muppāl",
+          "mutaṟkuṭi",
+          "muttiṅkaḷ",
+          "mālaikkaṇṇi",
+          "mūṭaikkuṭi",
+          "nāḷmīṉ",
+          "nāṭṭukkuṭi",
+          "nāṭṭumeṭṭu",
+          "nāṭṭuḷ",
+          "orukuṭi",
+          "orutalai",
+          "paḷḷikkuṭi",
+          "paḷḷiyāḷ",
+          "paṭikkaṭṭu",
+          "tiṅkaḷmutal",
+          "tiṅkaḷuḷ",
+          "toṭṭikkaṭṭu",
+          "uṭkuṭi",
+          "varikkāl",
+          "vēḷir",
+          "īraṭi"
+        ],
+        "perm_words": {
+          "mean": 19.8226,
+          "std": 4.7991,
+          "z": 5.4546,
+          "p": 0.0002
+        },
+        "perm_pairs": {
+          "mean": 28.239,
+          "std": 7.7151,
+          "z": 6.1906,
+          "p": 0.0002
+        },
+        "perm_lipi_mass": {
+          "mean": 268.7916,
+          "std": 146.321,
+          "z": 5.8926,
+          "p": 0.0006
+        },
+        "perm_new_mass": {
+          "mean": 37.655,
+          "std": 19.6969,
+          "z": 6.9729,
+          "p": 0.0002
+        },
+        "dedr_draw_words": {
+          "mean": 1.6138,
+          "std": 1.7107,
+          "z": 25.9465,
+          "p": 0.0002
+        },
+        "dedr_draw_lipi_mass": {
+          "mean": 31.5574,
+          "std": 61.9156,
+          "z": 17.7571,
+          "p": 0.0002
+        }
+      },
+      "key7a_227_w5_ge1_lipi_ge2": {
+        "cut": "t2_227_w5_ge1_lipi_ge2",
+        "n_bigrams_tested": 83,
+        "obs_words": 9,
+        "obs_pairs": 17,
+        "obs_lipi_mass": 160,
+        "obs_new_mass": 16,
+        "obs_word_list": [
+          "iṟaimūṭai",
+          "kuṭiyaṟai",
+          "kūṭṭukkaṭṭu",
+          "kūṭṭukkuṭi",
+          "muppāl",
+          "mūṭaikkuṭi",
+          "nāṭṭumeṭṭu",
+          "paḷḷikkuṭi",
+          "paḷḷiyāḷ"
+        ],
+        "perm_words": {
+          "mean": 3.4126,
+          "std": 1.5739,
+          "z": 3.55,
+          "p": 0.0018
+        },
+        "perm_pairs": {
+          "mean": 4.642,
+          "std": 2.6208,
+          "z": 4.7154,
+          "p": 0.0004
+        },
+        "perm_lipi_mass": {
+          "mean": 33.9366,
+          "std": 25.1752,
+          "z": 5.0074,
+          "p": 0.0002
+        },
+        "perm_new_mass": {
+          "mean": 4.2514,
+          "std": 3.374,
+          "z": 3.4821,
+          "p": 0.0042
+        },
+        "dedr_draw_words": {
+          "mean": 0.4124,
+          "std": 0.7233,
+          "z": 11.872,
+          "p": 0.0002
+        },
+        "dedr_draw_lipi_mass": {
+          "mean": 4.466,
+          "std": 8.7265,
+          "z": 17.8232,
+          "p": 0.0002
+        }
+      },
+      "key7a_227_w5_both_lipi_ge2": {
+        "cut": "t2_227_w5_both_lipi_ge2",
+        "n_bigrams_tested": 2,
+        "obs_words": 1,
+        "obs_pairs": 1,
+        "obs_lipi_mass": 9,
+        "obs_new_mass": 0,
+        "obs_word_list": [
+          "paḷḷiyāḷ"
+        ],
+        "perm_words": {
+          "mean": 0.0436,
+          "std": 0.2042,
+          "z": 4.6831,
+          "p": 0.04379
+        },
+        "perm_pairs": {
+          "mean": 0.0436,
+          "std": 0.2042,
+          "z": 4.6831,
+          "p": 0.04379
+        },
+        "perm_lipi_mass": {
+          "mean": 0.3508,
+          "std": 1.6563,
+          "z": 5.2219,
+          "p": 0.023
+        },
+        "perm_new_mass": {
+          "mean": 0.0,
+          "std": 0.0,
+          "z": 0.0,
+          "p": 1.0
+        },
+        "dedr_draw_words": {
+          "mean": 0.0024,
+          "std": 0.0489,
+          "z": 20.3859,
+          "p": 0.0026
+        },
+        "dedr_draw_lipi_mass": {
+          "mean": 0.0216,
+          "std": 0.4404,
+          "z": 20.3859,
+          "p": 0.0026
+        }
+      },
+      "key8a_272_full_lipi_ge2": {
+        "cut": "t2_272_full_lipi_ge2",
+        "n_bigrams_tested": 1004,
+        "obs_words": 52,
+        "obs_pairs": 90,
+        "obs_lipi_mass": 1202,
+        "obs_new_mass": 186,
+        "obs_word_list": [
+          "aracukuṭi",
+          "aracuvēḷ",
+          "aṟumīṉ",
+          "aṭikkuṭi",
+          "irukalam",
+          "irukuṭi",
+          "irukāl",
+          "irumīṉ",
+          "irupaṟai",
+          "irutiṅkaḷ",
+          "iruviṇai",
+          "iṟaikkuṭi",
+          "iṟaimūṭai",
+          "kavartalai",
+          "kaḷappāy",
+          "kaṭṭukkuṭi",
+          "kaṭṭumūṭai",
+          "koṭikkaṭṭu",
+          "kuṭikkuṭai",
+          "kuṭiyaṟai",
+          "kuṭiyāḷ",
+          "kāluḷ",
+          "kōkkuṭi",
+          "kūṭṭukkaṭṭu",
+          "kūṭṭukkuṭi",
+          "mukkuṭi",
+          "mukkāl",
+          "mummīṉ",
+          "muppāl",
+          "mutaṟkuṭi",
+          "muttiṅkaḷ",
+          "mālaikkaṇṇi",
+          "mālaikkuṭi",
+          "mūṭaikkuṭi",
+          "nāḷmīṉ",
+          "nāṭṭukkuṭi",
+          "nāṭṭumeṭṭu",
+          "nāṭṭuḷ",
+          "orukuṭi",
+          "orutalai",
+          "paḷḷikkuṭi",
+          "paḷḷiyāḷ",
+          "paṭikkaṭṭu",
+          "taṇṭukkaṭam",
+          "tiṅkaḷmutal",
+          "tiṅkaḷuḷ",
+          "toṭṭikkaṭṭu",
+          "toṭṭikkuṭi",
+          "uṭkuṭi",
+          "varikkāl",
+          "vēḷir",
+          "īraṭi"
+        ],
+        "perm_words": {
+          "mean": 18.6862,
+          "std": 4.8327,
+          "z": 6.8934,
+          "p": 0.0002
+        },
+        "perm_pairs": {
+          "mean": 26.8388,
+          "std": 7.8299,
+          "z": 8.0667,
+          "p": 0.0002
+        },
+        "perm_lipi_mass": {
+          "mean": 240.0336,
+          "std": 138.5189,
+          "z": 6.9447,
+          "p": 0.0002
+        },
+        "perm_new_mass": {
+          "mean": 33.7702,
+          "std": 19.0763,
+          "z": 7.9801,
+          "p": 0.0002
+        },
+        "dedr_draw_words": {
+          "mean": 1.7226,
+          "std": 1.8082,
+          "z": 27.8056,
+          "p": 0.0002
+        },
+        "dedr_draw_lipi_mass": {
+          "mean": 32.3752,
+          "std": 62.5134,
+          "z": 18.71,
+          "p": 0.0002
+        }
+      },
+      "key8a_272_full_comb_ge2": {
+        "cut": "t2_272_full_comb_ge2",
+        "n_bigrams_tested": 1230,
+        "obs_words": 54,
+        "obs_pairs": 97,
+        "obs_lipi_mass": 1207,
+        "obs_new_mass": 198,
+        "obs_word_list": [
+          "aracukuṭi",
+          "aracuvēḷ",
+          "aṟumīṉ",
+          "aṭikkuṭi",
+          "irukalam",
+          "irukuṭi",
+          "irukāl",
+          "irumīṉ",
+          "irupaṟai",
+          "irutiṅkaḷ",
+          "iruviṇai",
+          "iṟaikkuṭi",
+          "iṟaimūṭai",
+          "kavartalai",
+          "kaḷappāy",
+          "kaṭṭukkuṭi",
+          "kaṭṭumūṭai",
+          "koṭikkaṭṭu",
+          "kuṭikkuṭai",
+          "kuṭiyaṟai",
+          "kuṭiyiṟai",
+          "kuṭiyāḷ",
+          "kāluḷ",
+          "kōkkuṭi",
+          "kūṭṭukkaṭṭu",
+          "kūṭṭukkuṭi",
+          "mukkuṭi",
+          "mukkāl",
+          "mummīṉ",
+          "muppāl",
+          "mutalāḷ",
+          "mutaṟkuṭi",
+          "muttiṅkaḷ",
+          "mālaikkaṇṇi",
+          "mālaikkuṭi",
+          "mūṭaikkuṭi",
+          "nāḷmīṉ",
+          "nāṭṭukkuṭi",
+          "nāṭṭumeṭṭu",
+          "nāṭṭuḷ",
+          "orukuṭi",
+          "orutalai",
+          "paḷḷikkuṭi",
+          "paḷḷiyāḷ",
+          "paṭikkaṭṭu",
+          "taṇṭukkaṭam",
+          "tiṅkaḷmutal",
+          "tiṅkaḷuḷ",
+          "toṭṭikkaṭṭu",
+          "toṭṭikkuṭi",
+          "uṭkuṭi",
+          "varikkāl",
+          "vēḷir",
+          "īraṭi"
+        ],
+        "perm_words": {
+          "mean": 21.5074,
+          "std": 5.2477,
+          "z": 6.1918,
+          "p": 0.0002
+        },
+        "perm_pairs": {
+          "mean": 31.442,
+          "std": 8.6234,
+          "z": 7.6024,
+          "p": 0.0002
+        },
+        "perm_lipi_mass": {
+          "mean": 246.7184,
+          "std": 140.325,
+          "z": 6.8433,
+          "p": 0.0004
+        },
+        "perm_new_mass": {
+          "mean": 40.8894,
+          "std": 19.6113,
+          "z": 8.0112,
+          "p": 0.0004
+        },
+        "dedr_draw_words": {
+          "mean": 1.866,
+          "std": 1.865,
+          "z": 27.9534,
+          "p": 0.0002
+        },
+        "dedr_draw_lipi_mass": {
+          "mean": 31.7488,
+          "std": 62.0137,
+          "z": 18.9515,
+          "p": 0.0002
+        }
+      },
+      "key8a_272_w56_ge1_lipi_ge2": {
+        "cut": "t2_272_w56_ge1_lipi_ge2",
+        "n_bigrams_tested": 176,
+        "obs_words": 16,
+        "obs_pairs": 31,
+        "obs_lipi_mass": 231,
+        "obs_new_mass": 27,
+        "obs_word_list": [
+          "aracukuṭi",
+          "aracuvēḷ",
+          "iṟaimūṭai",
+          "kuṭikkuṭai",
+          "kuṭiyaṟai",
+          "kūṭṭukkaṭṭu",
+          "kūṭṭukkuṭi",
+          "muppāl",
+          "mālaikkuṭi",
+          "mūṭaikkuṭi",
+          "nāṭṭukkuṭi",
+          "nāṭṭumeṭṭu",
+          "paḷḷikkuṭi",
+          "paḷḷiyāḷ",
+          "taṇṭukkaṭam",
+          "toṭṭikkuṭi"
+        ],
+        "perm_words": {
+          "mean": 5.8636,
+          "std": 2.028,
+          "z": 4.9983,
+          "p": 0.0002
+        },
+        "perm_pairs": {
+          "mean": 7.9464,
+          "std": 3.3869,
+          "z": 6.8067,
+          "p": 0.0002
+        },
+        "perm_lipi_mass": {
+          "mean": 47.1132,
+          "std": 27.7191,
+          "z": 6.6339,
+          "p": 0.0002
+        },
+        "perm_new_mass": {
+          "mean": 6.4628,
+          "std": 4.1518,
+          "z": 4.9465,
+          "p": 0.0002
+        },
+        "dedr_draw_words": {
+          "mean": 0.7084,
+          "std": 0.9291,
+          "z": 16.4593,
+          "p": 0.0002
+        },
+        "dedr_draw_lipi_mass": {
+          "mean": 6.399,
+          "std": 10.2653,
+          "z": 21.8796,
+          "p": 0.0002
+        }
+      },
+      "key8a_272_w56_both_lipi_ge2": {
+        "cut": "t2_272_w56_both_lipi_ge2",
+        "n_bigrams_tested": 9,
+        "obs_words": 2,
+        "obs_pairs": 3,
+        "obs_lipi_mass": 18,
+        "obs_new_mass": 2,
+        "obs_word_list": [
+          "nāṭṭumeṭṭu",
+          "paḷḷiyāḷ"
+        ],
+        "perm_words": {
+          "mean": 0.0918,
+          "std": 0.3076,
+          "z": 6.2044,
+          "p": 0.0054
+        },
+        "perm_pairs": {
+          "mean": 0.1038,
+          "std": 0.3626,
+          "z": 7.9881,
+          "p": 0.002
+        },
+        "perm_lipi_mass": {
+          "mean": 0.4784,
+          "std": 1.8099,
+          "z": 9.6809,
+          "p": 0.0002
+        },
+        "perm_new_mass": {
+          "mean": 0.0374,
+          "std": 0.245,
+          "z": 8.0114,
+          "p": 0.0122
+        },
+        "dedr_draw_words": {
+          "mean": 0.0024,
+          "std": 0.0489,
+          "z": 40.8208,
+          "p": 0.0002
+        },
+        "dedr_draw_lipi_mass": {
+          "mean": 0.0204,
+          "std": 0.4238,
+          "z": 42.4232,
+          "p": 0.0002
+        }
+      },
+      "key8a_272_w56_ge1_comb_ge2": {
+        "cut": "t2_272_w56_ge1_comb_ge2",
+        "n_bigrams_tested": 216,
+        "obs_words": 16,
+        "obs_pairs": 33,
+        "obs_lipi_mass": 233,
+        "obs_new_mass": 29,
+        "obs_word_list": [
+          "aracukuṭi",
+          "aracuvēḷ",
+          "iṟaimūṭai",
+          "kuṭikkuṭai",
+          "kuṭiyaṟai",
+          "kūṭṭukkaṭṭu",
+          "kūṭṭukkuṭi",
+          "muppāl",
+          "mālaikkuṭi",
+          "mūṭaikkuṭi",
+          "nāṭṭukkuṭi",
+          "nāṭṭumeṭṭu",
+          "paḷḷikkuṭi",
+          "paḷḷiyāḷ",
+          "taṇṭukkaṭam",
+          "toṭṭikkuṭi"
+        ],
+        "perm_words": {
+          "mean": 6.496,
+          "std": 2.0937,
+          "z": 4.5393,
+          "p": 0.0002
+        },
+        "perm_pairs": {
+          "mean": 9.0814,
+          "std": 3.6271,
+          "z": 6.5943,
+          "p": 0.0002
+        },
+        "perm_lipi_mass": {
+          "mean": 48.1316,
+          "std": 26.847,
+          "z": 6.886,
+          "p": 0.0002
+        },
+        "perm_new_mass": {
+          "mean": 7.6636,
+          "std": 4.1757,
+          "z": 5.1097,
+          "p": 0.0002
+        },
+        "dedr_draw_words": {
+          "mean": 0.8362,
+          "std": 0.9911,
+          "z": 15.2993,
+          "p": 0.0002
+        },
+        "dedr_draw_lipi_mass": {
+          "mean": 6.467,
+          "std": 10.1799,
+          "z": 22.2529,
+          "p": 0.0002
+        }
+      },
+      "rival_ia_272": {
+        "cut": "t2_ia_272_lipi_ge2",
+        "n_bigrams_tested": 1004,
+        "obs_words": 16,
+        "obs_pairs": 35,
+        "obs_lipi_mass": 367,
+        "obs_new_mass": 59,
+        "obs_word_list": [
+          "antargṛha",
+          "cāturmāsya",
+          "daṇḍapāla",
+          "dvibhāga",
+          "dvidroṇa",
+          "dvipāda",
+          "gṛhapati",
+          "kośagṛha",
+          "patrapāla",
+          "rājadvāra",
+          "rājagṛha",
+          "rājaputra",
+          "tribhāga",
+          "trimāsa",
+          "tripāda",
+          "ṣaṭkula"
+        ],
+        "perm_words": {
+          "mean": 9.2328,
+          "std": 2.7452,
+          "z": 2.4651,
+          "p": 0.0228
+        },
+        "perm_pairs": {
+          "mean": 17.6236,
+          "std": 5.8793,
+          "z": 2.9555,
+          "p": 0.008
+        },
+        "perm_lipi_mass": {
+          "mean": 165.2336,
+          "std": 110.7152,
+          "z": 1.8224,
+          "p": 0.07538
+        },
+        "perm_new_mass": {
+          "mean": 22.5992,
+          "std": 14.0185,
+          "z": 2.5966,
+          "p": 0.0212
+        }
+      },
+      "rival_ia_272_w56": {
+        "cut": "t2_ia_272_w56_ge1_lipi_ge2",
+        "n_bigrams_tested": 176,
+        "obs_words": 6,
+        "obs_pairs": 11,
+        "obs_lipi_mass": 59,
+        "obs_new_mass": 6,
+        "obs_word_list": [
+          "kośagṛha",
+          "patrapāla",
+          "rājadvāra",
+          "rājagṛha",
+          "rājaputra",
+          "tribhāga"
+        ],
+        "perm_words": {
+          "mean": 3.5172,
+          "std": 1.5165,
+          "z": 1.6372,
+          "p": 0.09798
+        },
+        "perm_pairs": {
+          "mean": 5.3638,
+          "std": 2.7034,
+          "z": 2.0848,
+          "p": 0.04099
+        },
+        "perm_lipi_mass": {
+          "mean": 27.2346,
+          "std": 21.2929,
+          "z": 1.4918,
+          "p": 0.08378
+        },
+        "perm_new_mass": {
+          "mean": 3.6558,
+          "std": 3.1718,
+          "z": 0.7391,
+          "p": 0.23975
+        }
+      },
+      "rival_sumerian_272": {
+        "cut": "t2_sum_272_lipi_ge2",
+        "n_bigrams_tested": 1004,
+        "obs_words": 4,
+        "obs_pairs": 26,
+        "obs_lipi_mass": 223,
+        "obs_new_mass": 45,
+        "obs_word_list": [
+          "dumu-lu",
+          "es-su",
+          "gu-gur",
+          "mul-mul"
+        ],
+        "perm_words": {
+          "mean": 6.7754,
+          "std": 2.5284,
+          "z": -1.0977,
+          "p": 0.92282
+        },
+        "perm_pairs": {
+          "mean": 11.293,
+          "std": 5.194,
+          "z": 2.8315,
+          "p": 0.0148
+        },
+        "perm_lipi_mass": {
+          "mean": 87.368,
+          "std": 74.7176,
+          "z": 1.8153,
+          "p": 0.05999
+        },
+        "perm_new_mass": {
+          "mean": 13.5038,
+          "std": 12.0882,
+          "z": 2.6055,
+          "p": 0.02719
+        }
+      },
+      "rival_sumerian_272_w56": {
+        "cut": "t2_sum_272_w56_ge1_lipi_ge2",
+        "n_bigrams_tested": 176,
+        "obs_words": 2,
+        "obs_pairs": 2,
+        "obs_lipi_mass": 4,
+        "obs_new_mass": 0,
+        "obs_word_list": [
+          "dumu-lu",
+          "gu-gur"
+        ],
+        "perm_words": {
+          "mean": 1.512,
+          "std": 1.1418,
+          "z": 0.4274,
+          "p": 0.45491
+        },
+        "perm_pairs": {
+          "mean": 2.1266,
+          "std": 2.0082,
+          "z": -0.063,
+          "p": 0.52889
+        },
+        "perm_lipi_mass": {
+          "mean": 8.4316,
+          "std": 12.6537,
+          "z": -0.3502,
+          "p": 0.57029
+        },
+        "perm_new_mass": {
+          "mean": 0.9502,
+          "std": 1.8347,
+          "z": -0.5179,
+          "p": 1.0
+        }
+      },
+      "unseen_new_full_272": {
+        "words": 45,
+        "pairs": 55,
+        "new_mass": 203,
+        "word_list": [
+          "aracukuṭi",
+          "aracuvēḷ",
+          "aṟumīṉ",
+          "aṭikkuṭi",
+          "irukalam",
+          "irukuṭi",
+          "irukāl",
+          "irumīṉ",
+          "irutiṅkaḷ",
+          "iruviṇai",
+          "iṟaikkuṭi",
+          "iṟaimūṭai",
+          "kavartalai",
+          "kaḷappāy",
+          "kaṭṭukkuṭi",
+          "kaṭṭumūṭai",
+          "koṭikkaṭṭu",
+          "kuṭikkuṭai",
+          "kuṭiyaṟai",
+          "kuṭiyiṟai",
+          "kuṭiyāḷ",
+          "kāluḷ",
+          "kōkkuṭi",
+          "kūṭṭukkuṭi",
+          "mukkuṭi",
+          "mummīṉ",
+          "muppaṟai",
+          "muppāl",
+          "mutalāḷ",
+          "mutaṟkuṭi",
+          "muttiṅkaḷ",
+          "mālaikkaṇṇi",
+          "mūṭaikkuṭi",
+          "nāṭṭukkuṭi",
+          "nāṭṭumeṭṭu",
+          "nāṭṭuḷ",
+          "paḷḷikkuṭi",
+          "tiṅkaḷmutal",
+          "tiṅkaḷuḷ",
+          "toṭṭikkaṭṭu",
+          "toṭṭikkuṭi",
+          "varikkāl",
+          "vēḷir",
+          "āṟukāl",
+          "īraṭi"
+        ]
+      },
+      "unseen_new_w56": {
+        "words": 13,
+        "pairs": 16,
+        "new_mass": 31,
+        "word_list": [
+          "aracukuṭi",
+          "aracuvēḷ",
+          "iṟaimūṭai",
+          "kuṭikkuṭai",
+          "kuṭiyaṟai",
+          "kūṭṭukkuṭi",
+          "muppaṟai",
+          "muppāl",
+          "mūṭaikkuṭi",
+          "nāṭṭukkuṭi",
+          "nāṭṭumeṭṭu",
+          "paḷḷikkuṭi",
+          "toṭṭikkuṭi"
+        ]
+      },
+      "w56_compound_table": [
+        {
+          "compound": "nāṭṭumeṭṭu",
+          "origin": "Tier2_Wave56_Expanded",
+          "both_w56": true,
+          "non_numeral": true,
+          "lipi_mass": 71,
+          "new_mass": 9,
+          "pairs": "550-527(26/2), 555-527(18/5), 550-525(9/0), 554-527(6/2), 550-526(5/0), 555-526(4/0), 554-526(3/0)",
+          "dedr_id": "3638+5059",
+          "gloss": "district custom-house / provincial toll-station",
+          "source": "Chola/Vijayanagara inscriptions; DEDR 3638+5059"
+        },
+        {
+          "compound": "paḷḷikkuṭi",
+          "origin": "Tier2_Wave56_Expanded",
+          "both_w56": false,
+          "non_numeral": true,
+          "lipi_mass": 28,
+          "new_mass": 3,
+          "pairs": "585-740(28/3)",
+          "dedr_id": "4018+1655",
+          "gloss": "shrine/hamlet household, palace settlement",
+          "source": "Chola inscriptions (SII); U. Madras Tamil Lexicon"
+        },
+        {
+          "compound": "aracukuṭi",
+          "origin": "Tier2_Wave56_Expanded",
+          "both_w56": false,
+          "non_numeral": true,
+          "lipi_mass": 22,
+          "new_mass": 5,
+          "pairs": "388-740(20/5), 382-740(2/0)",
+          "dedr_id": "201+1655",
+          "gloss": "royal household / crown-tenant family",
+          "source": "U. Madras Tamil Lexicon (aracu+kuṭi); Chola SII"
+        },
+        {
+          "compound": "kūṭṭukkuṭi",
+          "origin": "Tier1_Frozen170",
+          "both_w56": false,
+          "non_numeral": true,
+          "lipi_mass": 22,
+          "new_mass": 1,
+          "pairs": "636-740(16/0), 269-740(3/0), 221-740(2/0), 267-740(1/1)",
+          "dedr_id": "1882+1655",
+          "gloss": "joint/united household, store-house clan",
+          "source": "U. Madras Tamil Lexicon (kūṭṭukkuṭi / kūṭukkuṭi)"
+        },
+        {
+          "compound": "mūṭaikkuṭi",
+          "origin": "Tier2_Wave56_Expanded",
+          "both_w56": false,
+          "non_numeral": true,
+          "lipi_mass": 19,
+          "new_mass": 3,
+          "pairs": "336-740(8/3), 337-740(11/0)",
+          "dedr_id": "5037+1655",
+          "gloss": "bale-packing/granary household",
+          "source": "Chola commercial guild compounds; DEDR 5037+1655"
+        },
+        {
+          "compound": "muppāl",
+          "origin": "Tier2_Wave56_Expanded",
+          "both_w56": false,
+          "non_numeral": false,
+          "lipi_mass": 21,
+          "new_mass": 0,
+          "pairs": "003-422(8/0), 003-423(6/0), 003-426(4/0), 003-421(3/0)",
+          "dedr_id": "5052+4097",
+          "gloss": "three divisions / threefold share",
+          "source": "Tirukkuṟaḷ; Sangam; Tamil Lexicon (muppāl)"
+        },
+        {
+          "compound": "kuṭikkuṭai",
+          "origin": "Tier2_Wave56_Expanded",
+          "both_w56": false,
+          "non_numeral": true,
+          "lipi_mass": 9,
+          "new_mass": 1,
+          "pairs": "740-679(9/1)",
+          "dedr_id": "1655+1663",
+          "gloss": "shelter/canopy of the subjects/households",
+          "source": "Tirukkuṟaḷ 389; Sangam (kuṭi+kuṭai)"
+        },
+        {
+          "compound": "iṟaimūṭai",
+          "origin": "Tier2_Wave56_Expanded",
+          "both_w56": false,
+          "non_numeral": true,
+          "lipi_mass": 7,
+          "new_mass": 2,
+          "pairs": "176-336(4/2), 176-337(3/0)",
+          "dedr_id": "521+5037",
+          "gloss": "tribute grain-sack / tax-bale",
+          "source": "Chola revenue records (SII); DEDR 521+5037"
+        },
+        {
+          "compound": "paḷḷiyāḷ",
+          "origin": "Tier2_Wave56_Expanded",
+          "both_w56": true,
+          "non_numeral": true,
+          "lipi_mass": 9,
+          "new_mass": 0,
+          "pairs": "585-095(9/0)",
+          "dedr_id": "4018+399",
+          "gloss": "temple/palace attendant, hamlet labourer",
+          "source": "U. Madras Tamil Lexicon (paḷḷiyāḷ); Chola SII"
+        },
+        {
+          "compound": "nāṭṭukkuṭi",
+          "origin": "Tier1_Frozen170",
+          "both_w56": false,
+          "non_numeral": true,
+          "lipi_mass": 5,
+          "new_mass": 2,
+          "pairs": "554-740(4/1), 552-740(1/1)",
+          "dedr_id": "3638+1655",
+          "gloss": "district household/resident",
+          "source": "Chola inscriptions (SII)"
+        },
+        {
+          "compound": "mālaikkuṭi",
+          "origin": "Tier2_Wave56_Expanded",
+          "both_w56": false,
+          "non_numeral": true,
+          "lipi_mass": 6,
+          "new_mass": 0,
+          "pairs": "776-740(4/0), 783-740(2/0)",
+          "dedr_id": "4827+1655",
+          "gloss": "garland-makers' / hill-lineage household",
+          "source": "Chola SII; DEDR 4827+1655"
+        },
+        {
+          "compound": "kuṭiyaṟai",
+          "origin": "Tier2_Wave56_Expanded",
+          "both_w56": false,
+          "non_numeral": true,
+          "lipi_mass": 4,
+          "new_mass": 1,
+          "pairs": "740-621(4/1)",
+          "dedr_id": "1655+322",
+          "gloss": "household chamber / family room",
+          "source": "U. Madras Tamil Lexicon (kuṭi+aṟai)"
+        },
+        {
+          "compound": "kūṭṭukkaṭṭu",
+          "origin": "Tier2_Wave56_Expanded",
+          "both_w56": false,
+          "non_numeral": true,
+          "lipi_mass": 3,
+          "new_mass": 0,
+          "pairs": "636-690(3/0)",
+          "dedr_id": "1882+1147",
+          "gloss": "joined frame/pack, granary-store assembly",
+          "source": "U. Madras Tamil Lexicon (kūṭṭukkaṭṭu)"
+        },
+        {
+          "compound": "toṭṭikkuṭi",
+          "origin": "Tier2_Wave56_Expanded",
+          "both_w56": false,
+          "non_numeral": true,
+          "lipi_mass": 2,
+          "new_mass": 1,
+          "pairs": "354-740(2/1)",
+          "dedr_id": "3485+1655",
+          "gloss": "cattle-yard/enclosure household",
+          "source": "U. Madras Tamil Lexicon; DEDR 3485+1655"
+        },
+        {
+          "compound": "aracuvēḷ",
+          "origin": "Tier2_Wave56_Expanded",
+          "both_w56": false,
+          "non_numeral": true,
+          "lipi_mass": 2,
+          "new_mass": 1,
+          "pairs": "382-520(2/1)",
+          "dedr_id": "201+5545",
+          "gloss": "royal chieftain / sovereign lord",
+          "source": "Sangam royal title compounds (aracu+vēḷ)"
+        },
+        {
+          "compound": "taṇṭukkaṭam",
+          "origin": "Tier2_Wave56_Expanded",
+          "both_w56": false,
+          "non_numeral": true,
+          "lipi_mass": 3,
+          "new_mass": 0,
+          "pairs": "104-645(3/0)",
+          "dedr_id": "3054+1113",
+          "gloss": "collected revenue duty / levy obligation",
+          "source": "Chola SII (taṇṭu + kaṭam)"
+        }
+      ]
+    },
+    "tier3_non_numeral_lexical_only": {
+      "key7a_227_frozen170": {
+        "cut": "t3_drav_227_frozen170_lexonly",
+        "n_bigrams_tested": 570,
+        "obs_words": 21,
+        "obs_pairs": 28,
+        "obs_lipi_mass": 655,
+        "obs_new_mass": 106,
+        "obs_word_list": [
+          "aṭikkuṭi",
+          "iṟaikkuṭi",
+          "kavartalai",
+          "kaḷappāy",
+          "kaṭṭukkuṭi",
+          "kaṭṭumūṭai",
+          "koṭikkaṭṭu",
+          "kuṭiyāḷ",
+          "kāluḷ",
+          "kōkkuṭi",
+          "kūṭṭukkuṭi",
+          "mutaṟkuṭi",
+          "mālaikkaṇṇi",
+          "nāṭṭukkuṭi",
+          "nāṭṭuḷ",
+          "paṭikkaṭṭu",
+          "tiṅkaḷmutal",
+          "tiṅkaḷuḷ",
+          "toṭṭikkaṭṭu",
+          "uṭkuṭi",
+          "varikkāl"
+        ],
+        "perm_words": {
+          "mean": 5.6738,
+          "std": 2.9165,
+          "z": 5.255,
+          "p": 0.0002
+        },
+        "perm_pairs": {
+          "mean": 7.0652,
+          "std": 3.9759,
+          "z": 5.2654,
+          "p": 0.0004
+        },
+        "perm_lipi_mass": {
+          "mean": 58.4552,
+          "std": 64.7585,
+          "z": 9.2118,
+          "p": 0.0002
+        },
+        "perm_new_mass": {
+          "mean": 9.457,
+          "std": 10.7342,
+          "z": 8.994,
+          "p": 0.0002
+        },
+        "dedr_draw_words": {
+          "mean": 0.1822,
+          "std": 0.4611,
+          "z": 45.1447,
+          "p": 0.0002
+        },
+        "dedr_draw_lipi_mass": {
+          "mean": 1.9896,
+          "std": 9.8317,
+          "z": 66.419,
+          "p": 0.0002
+        }
+      },
+      "key8a_272_frozen170": {
+        "cut": "t3_drav_272_frozen170_lexonly",
+        "n_bigrams_tested": 630,
+        "obs_words": 21,
+        "obs_pairs": 31,
+        "obs_lipi_mass": 664,
+        "obs_new_mass": 107,
+        "obs_word_list": [
+          "aṭikkuṭi",
+          "iṟaikkuṭi",
+          "kavartalai",
+          "kaḷappāy",
+          "kaṭṭukkuṭi",
+          "kaṭṭumūṭai",
+          "koṭikkaṭṭu",
+          "kuṭiyāḷ",
+          "kāluḷ",
+          "kōkkuṭi",
+          "kūṭṭukkuṭi",
+          "mutaṟkuṭi",
+          "mālaikkaṇṇi",
+          "nāṭṭukkuṭi",
+          "nāṭṭuḷ",
+          "paṭikkaṭṭu",
+          "tiṅkaḷmutal",
+          "tiṅkaḷuḷ",
+          "toṭṭikkaṭṭu",
+          "uṭkuṭi",
+          "varikkāl"
+        ],
+        "perm_words": {
+          "mean": 4.7824,
+          "std": 2.716,
+          "z": 5.971,
+          "p": 0.0002
+        },
+        "perm_pairs": {
+          "mean": 5.9798,
+          "std": 3.796,
+          "z": 6.5911,
+          "p": 0.0004
+        },
+        "perm_lipi_mass": {
+          "mean": 46.223,
+          "std": 54.9373,
+          "z": 11.2451,
+          "p": 0.0002
+        },
+        "perm_new_mass": {
+          "mean": 7.4222,
+          "std": 9.1677,
+          "z": 10.8618,
+          "p": 0.0002
+        },
+        "dedr_draw_words": {
+          "mean": 0.1902,
+          "std": 0.4678,
+          "z": 44.4813,
+          "p": 0.0002
+        },
+        "dedr_draw_lipi_mass": {
+          "mean": 1.9,
+          "std": 9.8094,
+          "z": 67.4966,
+          "p": 0.0002
+        }
+      },
+      "key8a_272_expanded": {
+        "cut": "t3_drav_272_expanded_lexonly",
+        "n_bigrams_tested": 630,
+        "obs_words": 34,
+        "obs_pairs": 56,
+        "obs_lipi_mass": 857,
+        "obs_new_mass": 133,
+        "obs_word_list": [
+          "aracukuṭi",
+          "aracuvēḷ",
+          "aṭikkuṭi",
+          "iṟaikkuṭi",
+          "iṟaimūṭai",
+          "kavartalai",
+          "kaḷappāy",
+          "kaṭṭukkuṭi",
+          "kaṭṭumūṭai",
+          "koṭikkaṭṭu",
+          "kuṭikkuṭai",
+          "kuṭiyaṟai",
+          "kuṭiyāḷ",
+          "kāluḷ",
+          "kōkkuṭi",
+          "kūṭṭukkaṭṭu",
+          "kūṭṭukkuṭi",
+          "mutaṟkuṭi",
+          "mālaikkaṇṇi",
+          "mālaikkuṭi",
+          "mūṭaikkuṭi",
+          "nāṭṭukkuṭi",
+          "nāṭṭumeṭṭu",
+          "nāṭṭuḷ",
+          "paḷḷikkuṭi",
+          "paḷḷiyāḷ",
+          "paṭikkaṭṭu",
+          "taṇṭukkaṭam",
+          "tiṅkaḷmutal",
+          "tiṅkaḷuḷ",
+          "toṭṭikkaṭṭu",
+          "toṭṭikkuṭi",
+          "uṭkuṭi",
+          "varikkāl"
+        ],
+        "perm_words": {
+          "mean": 7.0612,
+          "std": 3.4911,
+          "z": 7.7165,
+          "p": 0.0002
+        },
+        "perm_pairs": {
+          "mean": 8.7894,
+          "std": 4.8677,
+          "z": 9.6988,
+          "p": 0.0002
+        },
+        "perm_lipi_mass": {
+          "mean": 69.9846,
+          "std": 74.4651,
+          "z": 10.5689,
+          "p": 0.0002
+        },
+        "perm_new_mass": {
+          "mean": 11.2916,
+          "std": 12.1902,
+          "z": 9.9841,
+          "p": 0.0002
+        },
+        "dedr_draw_words": {
+          "mean": 0.2396,
+          "std": 0.5406,
+          "z": 62.4497,
+          "p": 0.0002
+        },
+        "dedr_draw_lipi_mass": {
+          "mean": 2.4954,
+          "std": 12.0519,
+          "z": 70.9019,
+          "p": 0.0002
+        }
+      },
+      "key8a_272_expanded_comb": {
+        "cut": "t3_drav_272_expanded_lexonly_comb",
+        "n_bigrams_tested": 796,
+        "obs_words": 36,
+        "obs_pairs": 61,
+        "obs_lipi_mass": 860,
+        "obs_new_mass": 143,
+        "obs_word_list": [
+          "aracukuṭi",
+          "aracuvēḷ",
+          "aṭikkuṭi",
+          "iṟaikkuṭi",
+          "iṟaimūṭai",
+          "kavartalai",
+          "kaḷappāy",
+          "kaṭṭukkuṭi",
+          "kaṭṭumūṭai",
+          "koṭikkaṭṭu",
+          "kuṭikkuṭai",
+          "kuṭiyaṟai",
+          "kuṭiyiṟai",
+          "kuṭiyāḷ",
+          "kāluḷ",
+          "kōkkuṭi",
+          "kūṭṭukkaṭṭu",
+          "kūṭṭukkuṭi",
+          "mutalāḷ",
+          "mutaṟkuṭi",
+          "mālaikkaṇṇi",
+          "mālaikkuṭi",
+          "mūṭaikkuṭi",
+          "nāṭṭukkuṭi",
+          "nāṭṭumeṭṭu",
+          "nāṭṭuḷ",
+          "paḷḷikkuṭi",
+          "paḷḷiyāḷ",
+          "paṭikkaṭṭu",
+          "taṇṭukkaṭam",
+          "tiṅkaḷmutal",
+          "tiṅkaḷuḷ",
+          "toṭṭikkaṭṭu",
+          "toṭṭikkuṭi",
+          "uṭkuṭi",
+          "varikkāl"
+        ],
+        "perm_words": {
+          "mean": 8.8116,
+          "std": 3.8927,
+          "z": 6.9845,
+          "p": 0.0002
+        },
+        "perm_pairs": {
+          "mean": 10.8374,
+          "std": 5.3903,
+          "z": 9.3061,
+          "p": 0.0002
+        },
+        "perm_lipi_mass": {
+          "mean": 70.003,
+          "std": 70.4795,
+          "z": 11.2089,
+          "p": 0.0002
+        },
+        "perm_new_mass": {
+          "mean": 14.1996,
+          "std": 12.759,
+          "z": 10.0948,
+          "p": 0.0002
+        },
+        "dedr_draw_words": {
+          "mean": 0.2852,
+          "std": 0.5803,
+          "z": 61.5472,
+          "p": 0.0002
+        },
+        "dedr_draw_lipi_mass": {
+          "mean": 2.4814,
+          "std": 11.5596,
+          "z": 74.1826,
+          "p": 0.0002
+        }
+      },
+      "rival_ia_272_lexonly": {
+        "cut": "t3_ia_272_lexonly",
+        "n_bigrams_tested": 630,
+        "obs_words": 8,
+        "obs_pairs": 15,
+        "obs_lipi_mass": 236,
+        "obs_new_mass": 45,
+        "obs_word_list": [
+          "antargṛha",
+          "daṇḍapāla",
+          "gṛhapati",
+          "kośagṛha",
+          "patrapāla",
+          "rājadvāra",
+          "rājagṛha",
+          "rājaputra"
+        ],
+        "perm_words": {
+          "mean": 4.0274,
+          "std": 2.3794,
+          "z": 1.6695,
+          "p": 0.08098
+        },
+        "perm_pairs": {
+          "mean": 5.7084,
+          "std": 3.9586,
+          "z": 2.3472,
+          "p": 0.03639
+        },
+        "perm_lipi_mass": {
+          "mean": 45.0096,
+          "std": 54.5436,
+          "z": 3.5016,
+          "p": 0.0188
+        },
+        "perm_new_mass": {
+          "mean": 7.1384,
+          "std": 9.1027,
+          "z": 4.1594,
+          "p": 0.009
+        }
+      },
+      "rival_sumerian_272_lexonly": {
+        "cut": "t3_sum_272_lexonly",
+        "n_bigrams_tested": 630,
+        "obs_words": 3,
+        "obs_pairs": 25,
+        "obs_lipi_mass": 218,
+        "obs_new_mass": 45,
+        "obs_word_list": [
+          "dumu-lu",
+          "gu-gur",
+          "mul-mul"
+        ],
+        "perm_words": {
+          "mean": 5.9588,
+          "std": 2.4567,
+          "z": -1.2044,
+          "p": 0.93641
+        },
+        "perm_pairs": {
+          "mean": 9.9968,
+          "std": 5.1166,
+          "z": 2.9323,
+          "p": 0.0148
+        },
+        "perm_lipi_mass": {
+          "mean": 76.131,
+          "std": 71.1632,
+          "z": 1.9936,
+          "p": 0.05359
+        },
+        "perm_new_mass": {
+          "mean": 12.153,
+          "std": 11.8955,
+          "z": 2.7613,
+          "p": 0.02659
+        }
+      }
+    },
+    "tier4_automated_dedr_tamil_dict": {
+      "key7a_227_exact_phoneme": {
+        "label": "t4_227_uncurated_exact_phoneme",
+        "keep_vowel_length": true,
+        "dictionary_size": 14206,
+        "n_bigrams_tested": 911,
+        "obs_words": 11,
+        "obs_pairs": 22,
+        "obs_lipi_mass": 249,
+        "obs_new_mass": 27,
+        "perm_words": {
+          "mean": 5.5924,
+          "std": 2.2672,
+          "z": 2.3852,
+          "p": 0.0234
+        },
+        "perm_pairs": {
+          "mean": 7.2612,
+          "std": 3.3978,
+          "z": 4.3377,
+          "p": 0.0016
+        },
+        "perm_lipi_mass": {
+          "mean": 66.544,
+          "std": 68.6402,
+          "z": 2.6582,
+          "p": 0.03379
+        },
+        "perm_new_mass": {
+          "mean": 8.5498,
+          "std": 9.7911,
+          "z": 1.8844,
+          "p": 0.04439
+        },
+        "top_matches": [
+          {
+            "pair": "740-090",
+            "roots": "kuṭi+āḷ",
+            "matched_headword": "kuṭiy-āḷ",
+            "source": "DEDR:1655",
+            "gloss": "tenant",
+            "lipi_mass": 100,
+            "new_mass": 20
+          },
+          {
+            "pair": "003-390",
+            "roots": "mū+tai",
+            "matched_headword": "mutai",
+            "source": "DEDR:4954",
+            "gloss": "ground long under cultivation",
+            "lipi_mass": 29,
+            "new_mass": 1
+          },
+          {
+            "pair": "004-390",
+            "roots": "nāl+tai",
+            "matched_headword": "nantai",
+            "source": "DEDR:3067",
+            "gloss": "our father",
+            "lipi_mass": 23,
+            "new_mass": 2
+          },
+          {
+            "pair": "003-156",
+            "roots": "mū+kā",
+            "matched_headword": "mukkā",
+            "source": "WIKT",
+            "gloss": "Colloquial form of முக்கால் (mukkāl).",
+            "lipi_mass": 17,
+            "new_mass": 0
+          },
+          {
+            "pair": "520-032",
+            "roots": "vēḷ+iru",
+            "matched_headword": "vēḷir",
+            "source": "DEDR:5544",
+            "gloss": "a class of ancient chiefs in the Tamil country, the Cāḷukyas, petty chiefs",
+            "lipi_mass": 10,
+            "new_mass": 1
+          },
+          {
+            "pair": "003-422",
+            "roots": "mū+pāl",
+            "matched_headword": "muppāl",
+            "source": "WIKT",
+            "gloss": "the three divisions: அறம் (aṟam), பொருள் (poruḷ) and இன்பம் (iṉpam); the three genders: ஆண",
+            "lipi_mass": 8,
+            "new_mass": 0
+          },
+          {
+            "pair": "004-405",
+            "roots": "nāl+tai",
+            "matched_headword": "nantai",
+            "source": "DEDR:3067",
+            "gloss": "our father",
+            "lipi_mass": 7,
+            "new_mass": 3
+          },
+          {
+            "pair": "003-423",
+            "roots": "mū+pāl",
+            "matched_headword": "muppāl",
+            "source": "WIKT",
+            "gloss": "the three divisions: அறம் (aṟam), பொருள் (poruḷ) and இன்பம் (iṉpam); the three genders: ஆண",
+            "lipi_mass": 6,
+            "new_mass": 0
+          },
+          {
+            "pair": "001-100",
+            "roots": "oru+talai",
+            "matched_headword": "oru-talai",
+            "source": "DEDR:1025",
+            "gloss": "onesidedness",
+            "lipi_mass": 5,
+            "new_mass": 0
+          },
+          {
+            "pair": "033-820",
+            "roots": "mū+kāl",
+            "matched_headword": "mukkāl",
+            "source": "WIKT",
+            "gloss": "three-quarters; three leg",
+            "lipi_mass": 5,
+            "new_mass": 0
+          },
+          {
+            "pair": "491-817",
+            "roots": "mālai+kaṇ",
+            "matched_headword": "mālaikkaṇ",
+            "source": "WIKT",
+            "gloss": "night blindness, nyctalopia; defective sight",
+            "lipi_mass": 5,
+            "new_mass": 0
+          },
+          {
+            "pair": "003-154",
+            "roots": "mū+kā",
+            "matched_headword": "mukkā",
+            "source": "WIKT",
+            "gloss": "Colloquial form of முக்கால் (mukkāl).",
+            "lipi_mass": 4,
+            "new_mass": 0
+          },
+          {
+            "pair": "003-405",
+            "roots": "mū+tai",
+            "matched_headword": "mutai",
+            "source": "DEDR:4954",
+            "gloss": "ground long under cultivation",
+            "lipi_mass": 4,
+            "new_mass": 0
+          },
+          {
+            "pair": "003-426",
+            "roots": "mū+pāl",
+            "matched_headword": "muppāl",
+            "source": "WIKT",
+            "gloss": "the three divisions: அறம் (aṟam), பொருள் (poruḷ) and இன்பம் (iṉpam); the three genders: ஆண",
+            "lipi_mass": 4,
+            "new_mass": 0
+          },
+          {
+            "pair": "003-158",
+            "roots": "mū+kā",
+            "matched_headword": "mukkā",
+            "source": "WIKT",
+            "gloss": "Colloquial form of முக்கால் (mukkāl).",
+            "lipi_mass": 3,
+            "new_mass": 0
+          },
+          {
+            "pair": "003-421",
+            "roots": "mū+pāl",
+            "matched_headword": "muppāl",
+            "source": "WIKT",
+            "gloss": "the three divisions: அறம் (aṟam), பொருள் (poruḷ) and இன்பம் (iṉpam); the three genders: ஆண",
+            "lipi_mass": 3,
+            "new_mass": 0
+          },
+          {
+            "pair": "033-061",
+            "roots": "mū+kāl",
+            "matched_headword": "mukkāl",
+            "source": "WIKT",
+            "gloss": "three-quarters; three leg",
+            "lipi_mass": 3,
+            "new_mass": 0
+          },
+          {
+            "pair": "033-151",
+            "roots": "mū+kā",
+            "matched_headword": "mukkā",
+            "source": "WIKT",
+            "gloss": "Colloquial form of முக்கால் (mukkāl).",
+            "lipi_mass": 3,
+            "new_mass": 0
+          },
+          {
+            "pair": "034-390",
+            "roots": "nāl+tai",
+            "matched_headword": "nantai",
+            "source": "DEDR:3067",
+            "gloss": "our father",
+            "lipi_mass": 3,
+            "new_mass": 0
+          },
+          {
+            "pair": "323-690",
+            "roots": "paṭi+kaṭṭu",
+            "matched_headword": "paṭikkaṭṭu",
+            "source": "DEDR:3850",
+            "gloss": "flight of steps",
+            "lipi_mass": 3,
+            "new_mass": 0
+          },
+          {
+            "pair": "031-100",
+            "roots": "oru+talai",
+            "matched_headword": "oru-talai",
+            "source": "DEDR:1025",
+            "gloss": "onesidedness",
+            "lipi_mass": 2,
+            "new_mass": 0
+          },
+          {
+            "pair": "700-892",
+            "roots": "aḷa+vil",
+            "matched_headword": "aḷavil",
+            "source": "WIKT",
+            "gloss": "as regards",
+            "lipi_mass": 2,
+            "new_mass": 0
+          }
+        ]
+      },
+      "key8a_272_exact_phoneme": {
+        "label": "t4_272_uncurated_exact_phoneme",
+        "keep_vowel_length": true,
+        "dictionary_size": 14206,
+        "n_bigrams_tested": 1004,
+        "obs_words": 11,
+        "obs_pairs": 22,
+        "obs_lipi_mass": 249,
+        "obs_new_mass": 27,
+        "perm_words": {
+          "mean": 5.2854,
+          "std": 2.2287,
+          "z": 2.5641,
+          "p": 0.0192
+        },
+        "perm_pairs": {
+          "mean": 6.7962,
+          "std": 3.3272,
+          "z": 4.5696,
+          "p": 0.001
+        },
+        "perm_lipi_mass": {
+          "mean": 58.999,
+          "std": 64.0385,
+          "z": 2.967,
+          "p": 0.02939
+        },
+        "perm_new_mass": {
+          "mean": 7.6634,
+          "std": 9.0412,
+          "z": 2.1387,
+          "p": 0.03399
+        },
+        "top_matches": [
+          {
+            "pair": "740-090",
+            "roots": "kuṭi+āḷ",
+            "matched_headword": "kuṭiy-āḷ",
+            "source": "DEDR:1655",
+            "gloss": "tenant",
+            "lipi_mass": 100,
+            "new_mass": 20
+          },
+          {
+            "pair": "003-390",
+            "roots": "mū+tai",
+            "matched_headword": "mutai",
+            "source": "DEDR:4954",
+            "gloss": "ground long under cultivation",
+            "lipi_mass": 29,
+            "new_mass": 1
+          },
+          {
+            "pair": "004-390",
+            "roots": "nāl+tai",
+            "matched_headword": "nantai",
+            "source": "DEDR:3067",
+            "gloss": "our father",
+            "lipi_mass": 23,
+            "new_mass": 2
+          },
+          {
+            "pair": "003-156",
+            "roots": "mū+kā",
+            "matched_headword": "mukkā",
+            "source": "WIKT",
+            "gloss": "Colloquial form of முக்கால் (mukkāl).",
+            "lipi_mass": 17,
+            "new_mass": 0
+          },
+          {
+            "pair": "520-032",
+            "roots": "vēḷ+iru",
+            "matched_headword": "vēḷir",
+            "source": "DEDR:5544",
+            "gloss": "a class of ancient chiefs in the Tamil country, the Cāḷukyas, petty chiefs",
+            "lipi_mass": 10,
+            "new_mass": 1
+          },
+          {
+            "pair": "003-422",
+            "roots": "mū+pāl",
+            "matched_headword": "muppāl",
+            "source": "WIKT",
+            "gloss": "the three divisions: அறம் (aṟam), பொருள் (poruḷ) and இன்பம் (iṉpam); the three genders: ஆண",
+            "lipi_mass": 8,
+            "new_mass": 0
+          },
+          {
+            "pair": "004-405",
+            "roots": "nāl+tai",
+            "matched_headword": "nantai",
+            "source": "DEDR:3067",
+            "gloss": "our father",
+            "lipi_mass": 7,
+            "new_mass": 3
+          },
+          {
+            "pair": "003-423",
+            "roots": "mū+pāl",
+            "matched_headword": "muppāl",
+            "source": "WIKT",
+            "gloss": "the three divisions: அறம் (aṟam), பொருள் (poruḷ) and இன்பம் (iṉpam); the three genders: ஆண",
+            "lipi_mass": 6,
+            "new_mass": 0
+          },
+          {
+            "pair": "001-100",
+            "roots": "oru+talai",
+            "matched_headword": "oru-talai",
+            "source": "DEDR:1025",
+            "gloss": "onesidedness",
+            "lipi_mass": 5,
+            "new_mass": 0
+          },
+          {
+            "pair": "033-820",
+            "roots": "mū+kāl",
+            "matched_headword": "mukkāl",
+            "source": "WIKT",
+            "gloss": "three-quarters; three leg",
+            "lipi_mass": 5,
+            "new_mass": 0
+          },
+          {
+            "pair": "491-817",
+            "roots": "mālai+kaṇ",
+            "matched_headword": "mālaikkaṇ",
+            "source": "WIKT",
+            "gloss": "night blindness, nyctalopia; defective sight",
+            "lipi_mass": 5,
+            "new_mass": 0
+          },
+          {
+            "pair": "003-154",
+            "roots": "mū+kā",
+            "matched_headword": "mukkā",
+            "source": "WIKT",
+            "gloss": "Colloquial form of முக்கால் (mukkāl).",
+            "lipi_mass": 4,
+            "new_mass": 0
+          },
+          {
+            "pair": "003-405",
+            "roots": "mū+tai",
+            "matched_headword": "mutai",
+            "source": "DEDR:4954",
+            "gloss": "ground long under cultivation",
+            "lipi_mass": 4,
+            "new_mass": 0
+          },
+          {
+            "pair": "003-426",
+            "roots": "mū+pāl",
+            "matched_headword": "muppāl",
+            "source": "WIKT",
+            "gloss": "the three divisions: அறம் (aṟam), பொருள் (poruḷ) and இன்பம் (iṉpam); the three genders: ஆண",
+            "lipi_mass": 4,
+            "new_mass": 0
+          },
+          {
+            "pair": "003-158",
+            "roots": "mū+kā",
+            "matched_headword": "mukkā",
+            "source": "WIKT",
+            "gloss": "Colloquial form of முக்கால் (mukkāl).",
+            "lipi_mass": 3,
+            "new_mass": 0
+          },
+          {
+            "pair": "003-421",
+            "roots": "mū+pāl",
+            "matched_headword": "muppāl",
+            "source": "WIKT",
+            "gloss": "the three divisions: அறம் (aṟam), பொருள் (poruḷ) and இன்பம் (iṉpam); the three genders: ஆண",
+            "lipi_mass": 3,
+            "new_mass": 0
+          },
+          {
+            "pair": "033-061",
+            "roots": "mū+kāl",
+            "matched_headword": "mukkāl",
+            "source": "WIKT",
+            "gloss": "three-quarters; three leg",
+            "lipi_mass": 3,
+            "new_mass": 0
+          },
+          {
+            "pair": "033-151",
+            "roots": "mū+kā",
+            "matched_headword": "mukkā",
+            "source": "WIKT",
+            "gloss": "Colloquial form of முக்கால் (mukkāl).",
+            "lipi_mass": 3,
+            "new_mass": 0
+          },
+          {
+            "pair": "034-390",
+            "roots": "nāl+tai",
+            "matched_headword": "nantai",
+            "source": "DEDR:3067",
+            "gloss": "our father",
+            "lipi_mass": 3,
+            "new_mass": 0
+          },
+          {
+            "pair": "323-690",
+            "roots": "paṭi+kaṭṭu",
+            "matched_headword": "paṭikkaṭṭu",
+            "source": "DEDR:3850",
+            "gloss": "flight of steps",
+            "lipi_mass": 3,
+            "new_mass": 0
+          },
+          {
+            "pair": "031-100",
+            "roots": "oru+talai",
+            "matched_headword": "oru-talai",
+            "source": "DEDR:1025",
+            "gloss": "onesidedness",
+            "lipi_mass": 2,
+            "new_mass": 0
+          },
+          {
+            "pair": "700-892",
+            "roots": "aḷa+vil",
+            "matched_headword": "aḷavil",
+            "source": "WIKT",
+            "gloss": "as regards",
+            "lipi_mass": 2,
+            "new_mass": 0
+          }
+        ]
+      },
+      "key8a_272_consonant_place": {
+        "label": "t4_272_uncurated_consonant_place",
+        "keep_vowel_length": false,
+        "dictionary_size": 13695,
+        "n_bigrams_tested": 1004,
+        "obs_words": 14,
+        "obs_pairs": 32,
+        "obs_lipi_mass": 312,
+        "obs_new_mass": 32,
+        "perm_words": {
+          "mean": 8.182,
+          "std": 3.0659,
+          "z": 1.8977,
+          "p": 0.05559
+        },
+        "perm_pairs": {
+          "mean": 10.5472,
+          "std": 4.4827,
+          "z": 4.7857,
+          "p": 0.0004
+        },
+        "perm_lipi_mass": {
+          "mean": 88.4458,
+          "std": 82.4568,
+          "z": 2.7112,
+          "p": 0.03259
+        },
+        "perm_new_mass": {
+          "mean": 12.2304,
+          "std": 12.7974,
+          "z": 1.5448,
+          "p": 0.06439
+        },
+        "top_matches": [
+          {
+            "pair": "740-090",
+            "roots": "kuṭi+āḷ",
+            "matched_headword": "kuṭiy-āḷ",
+            "source": "DEDR:1655",
+            "gloss": "tenant",
+            "lipi_mass": 100,
+            "new_mass": 20
+          },
+          {
+            "pair": "003-390",
+            "roots": "mū+tai",
+            "matched_headword": "mutai",
+            "source": "DEDR:4954",
+            "gloss": "ground long under cultivation",
+            "lipi_mass": 29,
+            "new_mass": 1
+          },
+          {
+            "pair": "004-390",
+            "roots": "nāl+tai",
+            "matched_headword": "nantai",
+            "source": "DEDR:3067",
+            "gloss": "our father",
+            "lipi_mass": 23,
+            "new_mass": 2
+          },
+          {
+            "pair": "003-156",
+            "roots": "mū+kā",
+            "matched_headword": "mukkā",
+            "source": "WIKT",
+            "gloss": "Colloquial form of முக்கால் (mukkāl).",
+            "lipi_mass": 17,
+            "new_mass": 0
+          },
+          {
+            "pair": "636-740",
+            "roots": "kūṭu+kuṭi",
+            "matched_headword": "kuṭukuṭi",
+            "source": "DEDR:1659",
+            "gloss": "hookah",
+            "lipi_mass": 16,
+            "new_mass": 0
+          },
+          {
+            "pair": "630-740",
+            "roots": "kūṭu+kuṭi",
+            "matched_headword": "kuṭukuṭi",
+            "source": "DEDR:1659",
+            "gloss": "hookah",
+            "lipi_mass": 12,
+            "new_mass": 0
+          },
+          {
+            "pair": "520-032",
+            "roots": "vēḷ+iru",
+            "matched_headword": "vēḷir",
+            "source": "DEDR:5544",
+            "gloss": "a class of ancient chiefs in the Tamil country, the Cāḷukyas, petty chiefs",
+            "lipi_mass": 10,
+            "new_mass": 1
+          },
+          {
+            "pair": "031-156",
+            "roots": "oru+kā",
+            "matched_headword": "orukka",
+            "source": "DEDR:1025",
+            "gloss": "for each",
+            "lipi_mass": 9,
+            "new_mass": 0
+          },
+          {
+            "pair": "003-422",
+            "roots": "mū+pāl",
+            "matched_headword": "muppāl",
+            "source": "WIKT",
+            "gloss": "the three divisions: அறம் (aṟam), பொருள் (poruḷ) and இன்பம் (iṉpam); the three genders: ஆண",
+            "lipi_mass": 8,
+            "new_mass": 0
+          },
+          {
+            "pair": "220-705",
+            "roots": "mīṉ+kalam",
+            "matched_headword": "miṉkalam",
+            "source": "WIKT",
+            "gloss": "battery",
+            "lipi_mass": 7,
+            "new_mass": 4
+          },
+          {
+            "pair": "004-405",
+            "roots": "nāl+tai",
+            "matched_headword": "nantai",
+            "source": "DEDR:3067",
+            "gloss": "our father",
+            "lipi_mass": 7,
+            "new_mass": 3
+          },
+          {
+            "pair": "003-423",
+            "roots": "mū+pāl",
+            "matched_headword": "muppāl",
+            "source": "WIKT",
+            "gloss": "the three divisions: அறம் (aṟam), பொருள் (poruḷ) and இன்பம் (iṉpam); the three genders: ஆண",
+            "lipi_mass": 6,
+            "new_mass": 0
+          },
+          {
+            "pair": "001-100",
+            "roots": "oru+talai",
+            "matched_headword": "oru-talai",
+            "source": "DEDR:1025",
+            "gloss": "onesidedness",
+            "lipi_mass": 5,
+            "new_mass": 0
+          },
+          {
+            "pair": "033-820",
+            "roots": "mū+kāl",
+            "matched_headword": "mukkal",
+            "source": "DEDR:5007",
+            "gloss": "stench of things owing to dampness. ?",
+            "lipi_mass": 5,
+            "new_mass": 0
+          },
+          {
+            "pair": "491-817",
+            "roots": "mālai+kaṇ",
+            "matched_headword": "mālaikkaṇ",
+            "source": "WIKT",
+            "gloss": "night blindness, nyctalopia; defective sight",
+            "lipi_mass": 5,
+            "new_mass": 0
+          },
+          {
+            "pair": "003-154",
+            "roots": "mū+kā",
+            "matched_headword": "mukkā",
+            "source": "WIKT",
+            "gloss": "Colloquial form of முக்கால் (mukkāl).",
+            "lipi_mass": 4,
+            "new_mass": 0
+          },
+          {
+            "pair": "003-405",
+            "roots": "mū+tai",
+            "matched_headword": "mutai",
+            "source": "DEDR:4954",
+            "gloss": "ground long under cultivation",
+            "lipi_mass": 4,
+            "new_mass": 0
+          },
+          {
+            "pair": "003-426",
+            "roots": "mū+pāl",
+            "matched_headword": "muppāl",
+            "source": "WIKT",
+            "gloss": "the three divisions: அறம் (aṟam), பொருள் (poruḷ) and இன்பம் (iṉpam); the three genders: ஆண",
+            "lipi_mass": 4,
+            "new_mass": 0
+          },
+          {
+            "pair": "031-136",
+            "roots": "oru+kā",
+            "matched_headword": "orukka",
+            "source": "DEDR:1025",
+            "gloss": "for each",
+            "lipi_mass": 4,
+            "new_mass": 0
+          },
+          {
+            "pair": "637-740",
+            "roots": "kūṭu+kuṭi",
+            "matched_headword": "kuṭukuṭi",
+            "source": "DEDR:1659",
+            "gloss": "hookah",
+            "lipi_mass": 4,
+            "new_mass": 0
+          },
+          {
+            "pair": "031-151",
+            "roots": "oru+kā",
+            "matched_headword": "orukka",
+            "source": "DEDR:1025",
+            "gloss": "for each",
+            "lipi_mass": 3,
+            "new_mass": 1
+          },
+          {
+            "pair": "003-158",
+            "roots": "mū+kā",
+            "matched_headword": "mukkā",
+            "source": "WIKT",
+            "gloss": "Colloquial form of முக்கால் (mukkāl).",
+            "lipi_mass": 3,
+            "new_mass": 0
+          },
+          {
+            "pair": "003-421",
+            "roots": "mū+pāl",
+            "matched_headword": "muppāl",
+            "source": "WIKT",
+            "gloss": "the three divisions: அறம் (aṟam), பொருள் (poruḷ) and இன்பம் (iṉpam); the three genders: ஆண",
+            "lipi_mass": 3,
+            "new_mass": 0
+          },
+          {
+            "pair": "033-061",
+            "roots": "mū+kāl",
+            "matched_headword": "mukkal",
+            "source": "DEDR:5007",
+            "gloss": "stench of things owing to dampness. ?",
+            "lipi_mass": 3,
+            "new_mass": 0
+          },
+          {
+            "pair": "033-151",
+            "roots": "mū+kā",
+            "matched_headword": "mukkā",
+            "source": "WIKT",
+            "gloss": "Colloquial form of முக்கால் (mukkāl).",
+            "lipi_mass": 3,
+            "new_mass": 0
+          },
+          {
+            "pair": "034-390",
+            "roots": "nāl+tai",
+            "matched_headword": "nantai",
+            "source": "DEDR:3067",
+            "gloss": "our father",
+            "lipi_mass": 3,
+            "new_mass": 0
+          },
+          {
+            "pair": "220-706",
+            "roots": "mīṉ+kalam",
+            "matched_headword": "miṉkalam",
+            "source": "WIKT",
+            "gloss": "battery",
+            "lipi_mass": 3,
+            "new_mass": 0
+          },
+          {
+            "pair": "269-740",
+            "roots": "kūṭu+kuṭi",
+            "matched_headword": "kuṭukuṭi",
+            "source": "DEDR:1659",
+            "gloss": "hookah",
+            "lipi_mass": 3,
+            "new_mass": 0
+          },
+          {
+            "pair": "323-690",
+            "roots": "paṭi+kaṭṭu",
+            "matched_headword": "paṭikkaṭṭu",
+            "source": "DEDR:3850",
+            "gloss": "flight of steps",
+            "lipi_mass": 3,
+            "new_mass": 0
+          },
+          {
+            "pair": "031-100",
+            "roots": "oru+talai",
+            "matched_headword": "oru-talai",
+            "source": "DEDR:1025",
+            "gloss": "onesidedness",
+            "lipi_mass": 2,
+            "new_mass": 0
+          },
+          {
+            "pair": "221-740",
+            "roots": "kūṭu+kuṭi",
+            "matched_headword": "kuṭukuṭi",
+            "source": "DEDR:1659",
+            "gloss": "hookah",
+            "lipi_mass": 2,
+            "new_mass": 0
+          },
+          {
+            "pair": "700-892",
+            "roots": "aḷa+vil",
+            "matched_headword": "aḷavil",
+            "source": "WIKT",
+            "gloss": "as regards",
+            "lipi_mass": 2,
+            "new_mass": 0
+          }
+        ]
+      },
+      "key8a_272_exact_phoneme_lexonly": {
+        "label": "t4_272_uncurated_exact_phoneme_lexonly",
+        "keep_vowel_length": true,
+        "dictionary_size": 14206,
+        "n_bigrams_tested": 630,
+        "obs_words": 4,
+        "obs_pairs": 4,
+        "obs_lipi_mass": 110,
+        "obs_new_mass": 20,
+        "perm_words": {
+          "mean": 2.3054,
+          "std": 1.5892,
+          "z": 1.0663,
+          "p": 0.21056
+        },
+        "perm_pairs": {
+          "mean": 2.8428,
+          "std": 2.201,
+          "z": 0.5258,
+          "p": 0.31874
+        },
+        "perm_lipi_mass": {
+          "mean": 21.7722,
+          "std": 33.9096,
+          "z": 2.6019,
+          "p": 0.03079
+        },
+        "perm_new_mass": {
+          "mean": 3.4684,
+          "std": 5.7393,
+          "z": 2.8804,
+          "p": 0.03259
+        },
+        "top_matches": [
+          {
+            "pair": "740-090",
+            "roots": "kuṭi+āḷ",
+            "matched_headword": "kuṭiy-āḷ",
+            "source": "DEDR:1655",
+            "gloss": "tenant",
+            "lipi_mass": 100,
+            "new_mass": 20
+          },
+          {
+            "pair": "491-817",
+            "roots": "mālai+kaṇ",
+            "matched_headword": "mālaikkaṇ",
+            "source": "WIKT",
+            "gloss": "night blindness, nyctalopia; defective sight",
+            "lipi_mass": 5,
+            "new_mass": 0
+          },
+          {
+            "pair": "323-690",
+            "roots": "paṭi+kaṭṭu",
+            "matched_headword": "paṭikkaṭṭu",
+            "source": "DEDR:3850",
+            "gloss": "flight of steps",
+            "lipi_mass": 3,
+            "new_mass": 0
+          },
+          {
+            "pair": "700-892",
+            "roots": "aḷa+vil",
+            "matched_headword": "aḷavil",
+            "source": "WIKT",
+            "gloss": "as regards",
+            "lipi_mass": 2,
+            "new_mass": 0
+          }
+        ]
+      }
+    }
+  },
+  "test_8b2_wave56_archaeology": {
+    "n_permutations": 5000,
+    "corpus_counts": {
+      "intact_faces": 4163,
+      "intact_stones": 3505,
+      "intact_batch_dedup": 3299,
+      "all_batch_dedup": 5363,
+      "n_sq_seals": 1070,
+      "corpus_median_mm2": 645.16,
+      "dated_stones_raw": 2635,
+      "dated_dedup_n": 2589,
+      "dated_bin_counts": {
+        "middle": 1490,
+        "late": 755,
+        "early": 344
+      }
+    },
+    "elite_vs_sub_272": {
+      "n_elite": 469,
+      "n_sub": 158,
+      "elite_median_mm2": 778.4,
+      "sub_median_mm2": 531.2,
+      "elite_mean_mm2": 888.7,
+      "sub_mean_mm2": 573.6,
+      "diff_resid_log_len": 0.2025,
+      "p_len_5000": 0.0002,
+      "diff_resid_log_lensite": 0.211,
+      "p_lensite_5000": 0.0002
+    },
+    "elite_vs_sub_272_strict_no692": {
+      "n_elite": 455,
+      "n_sub": 158,
+      "elite_median_mm2": 778.4,
+      "sub_median_mm2": 531.2,
+      "elite_mean_mm2": 883.2,
+      "sub_mean_mm2": 573.6,
+      "diff_resid_log_len": 0.1929,
+      "p_len_5000": 0.0002,
+      "diff_resid_log_lensite": 0.2024,
+      "p_lensite_5000": 0.0002
+    },
+    "seal_area_rows": [
+      {
+        "role": "W5: 692 [PRECINCT-HEADER] (giant seals)",
+        "n_seals": 25,
+        "mean_len": 5.12,
+        "median_area_mm2": 976.5,
+        "mean_area_mm2": 1062.2,
+        "resid_log_len": 0.314,
+        "resid_log_len_site": 0.2926,
+        "resid_mm2_len": 261.9,
+        "p_two_len_5000": 0.0004,
+        "p_two_lensite_5000": 0.003,
+        "p_larger_lensite_5000": 0.0018,
+        "p_smaller_lensite_5000": 0.9984,
+        "status": "SIG_LARGER"
+      },
+      {
+        "role": "W5: 585 *paḷḷi (citadel shrine/palace)",
+        "n_seals": 13,
+        "mean_len": 6.15,
+        "median_area_mm2": 900.0,
+        "mean_area_mm2": 1105.9,
+        "resid_log_len": 0.2517,
+        "resid_log_len_site": 0.242,
+        "resid_mm2_len": 218.5,
+        "p_two_len_5000": 0.06219,
+        "p_two_lensite_5000": 0.09998,
+        "p_larger_lensite_5000": 0.05199,
+        "p_smaller_lensite_5000": 0.94821,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5/6: 527/526/525 *meṭṭu (district gate)",
+        "n_seals": 32,
+        "mean_len": 4.94,
+        "median_area_mm2": 720.9,
+        "mean_area_mm2": 804.9,
+        "resid_log_len": 0.0492,
+        "resid_log_len_site": 0.0456,
+        "resid_mm2_len": 20.0,
+        "p_two_len_5000": 0.53909,
+        "p_two_lensite_5000": 0.57688,
+        "p_larger_lensite_5000": 0.28774,
+        "p_smaller_lensite_5000": 0.71246,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 621 *aṟai/*paṭi (seal-excl. chamber)",
+        "n_seals": 12,
+        "mean_len": 4.83,
+        "median_area_mm2": 684.6,
+        "mean_area_mm2": 735.5,
+        "resid_log_len": 0.0338,
+        "resid_log_len_site": 0.041,
+        "resid_mm2_len": -40.6,
+        "p_two_len_5000": 0.73625,
+        "p_two_lensite_5000": 0.72625,
+        "p_larger_lensite_5000": 0.36093,
+        "p_smaller_lensite_5000": 0.63927,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5/6: 297-cl *kōṇ (chevron-fold share)",
+        "n_seals": 26,
+        "mean_len": 6.15,
+        "median_area_mm2": 764.3,
+        "mean_area_mm2": 1003.4,
+        "resid_log_len": 0.0925,
+        "resid_log_len_site": 0.1025,
+        "resid_mm2_len": 116.0,
+        "p_two_len_5000": 0.43091,
+        "p_two_lensite_5000": 0.26995,
+        "p_larger_lensite_5000": 0.13717,
+        "p_smaller_lensite_5000": 0.86303,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 890 *vil (right-bow grant)",
+        "n_seals": 3,
+        "mean_len": 4.0,
+        "median_area_mm2": 1224.0,
+        "mean_area_mm2": 1539.0,
+        "resid_log_len": 0.7218,
+        "resid_log_len_site": 0.692,
+        "resid_mm2_len": 833.2,
+        "p_two_len_5000": 0.02559,
+        "p_two_lensite_5000": 0.05299,
+        "p_larger_lensite_5000": 0.03599,
+        "p_smaller_lensite_5000": 0.96421,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 048/049 *[BRACKET]-ēḻ (7-bundle)",
+        "n_seals": 4,
+        "mean_len": 3.75,
+        "median_area_mm2": 552.6,
+        "mean_area_mm2": 625.8,
+        "resid_log_len": -0.0656,
+        "resid_log_len_site": -0.0784,
+        "resid_mm2_len": -59.0,
+        "p_two_len_5000": 0.84323,
+        "p_two_lensite_5000": 0.76965,
+        "p_larger_lensite_5000": 0.61348,
+        "p_smaller_lensite_5000": 0.38672,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 243 *katir-mīṉ-vari (hatched fish)",
+        "n_seals": 7,
+        "mean_len": 4.57,
+        "median_area_mm2": 524.4,
+        "mean_area_mm2": 735.9,
+        "resid_log_len": -0.0492,
+        "resid_log_len_site": -0.0659,
+        "resid_mm2_len": -18.2,
+        "p_two_len_5000": 0.78044,
+        "p_two_lensite_5000": 0.68906,
+        "p_larger_lensite_5000": 0.65047,
+        "p_smaller_lensite_5000": 0.34973,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 347-cl *mā (deer / great)",
+        "n_seals": 3,
+        "mean_len": 4.33,
+        "median_area_mm2": 392.0,
+        "mean_area_mm2": 437.9,
+        "resid_log_len": -0.3758,
+        "resid_log_len_site": -0.3858,
+        "resid_mm2_len": -296.0,
+        "p_two_len_5000": 0.18136,
+        "p_two_lensite_5000": 0.16217,
+        "p_larger_lensite_5000": 0.92042,
+        "p_smaller_lensite_5000": 0.07978,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 384 *āku/*takaṭu (plain pipal-leaf)",
+        "n_seals": 7,
+        "mean_len": 5.29,
+        "median_area_mm2": 625.0,
+        "mean_area_mm2": 902.4,
+        "resid_log_len": 0.0438,
+        "resid_log_len_site": 0.0559,
+        "resid_mm2_len": 88.2,
+        "p_two_len_5000": 0.76465,
+        "p_two_lensite_5000": 0.96301,
+        "p_larger_lensite_5000": 0.4851,
+        "p_smaller_lensite_5000": 0.5151,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5/6: 070/072/515 [ARROW-PRE-VĒḶ]",
+        "n_seals": 27,
+        "mean_len": 6.78,
+        "median_area_mm2": 650.0,
+        "mean_area_mm2": 764.7,
+        "resid_log_len": -0.1509,
+        "resid_log_len_site": -0.1263,
+        "resid_mm2_len": -175.4,
+        "p_two_len_5000": 0.08738,
+        "p_two_lensite_5000": 0.13017,
+        "p_larger_lensite_5000": 0.93481,
+        "p_smaller_lensite_5000": 0.06539,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 095 *āḷ-[BATON] (citadel issuer)",
+        "n_seals": 3,
+        "mean_len": 5.67,
+        "median_area_mm2": 841.0,
+        "mean_area_mm2": 966.6,
+        "resid_log_len": 0.2209,
+        "resid_log_len_site": 0.3045,
+        "resid_mm2_len": 120.3,
+        "p_two_len_5000": 0.43691,
+        "p_two_lensite_5000": 0.26635,
+        "p_larger_lensite_5000": 0.13097,
+        "p_smaller_lensite_5000": 0.87003,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 510-cl *taṭṭam (garland-frame)",
+        "n_seals": 12,
+        "mean_len": 5.17,
+        "median_area_mm2": 668.9,
+        "mean_area_mm2": 630.0,
+        "resid_log_len": -0.2837,
+        "resid_log_len_site": -0.2732,
+        "resid_mm2_len": -174.2,
+        "p_two_len_5000": 0.04899,
+        "p_two_lensite_5000": 0.05139,
+        "p_larger_lensite_5000": 0.97401,
+        "p_smaller_lensite_5000": 0.02619,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5/6: 636/639/267-cl *kūṭu (new granary)",
+        "n_seals": 14,
+        "mean_len": 5.57,
+        "median_area_mm2": 602.9,
+        "mean_area_mm2": 647.0,
+        "resid_log_len": -0.1971,
+        "resid_log_len_site": -0.2109,
+        "resid_mm2_len": -191.3,
+        "p_two_len_5000": 0.13497,
+        "p_two_lensite_5000": 0.09918,
+        "p_larger_lensite_5000": 0.95361,
+        "p_smaller_lensite_5000": 0.04659,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 605 *mūṭai-vari (tall box tax)",
+        "n_seals": 1,
+        "mean_len": 5.0,
+        "median_area_mm2": 1089.0,
+        "mean_area_mm2": 1089.0,
+        "resid_log_len": 0.0,
+        "resid_log_len_site": 0.0,
+        "resid_mm2_len": 0.0,
+        "p_two_len_5000": 1.0,
+        "p_two_lensite_5000": 1.0,
+        "p_larger_lensite_5000": 1.0,
+        "p_smaller_lensite_5000": 1.0,
+        "status": "TOO_FEW_SEALS"
+      },
+      {
+        "role": "W5: 137/139 *āḷ (ration-man)",
+        "n_seals": 1,
+        "mean_len": 2.0,
+        "median_area_mm2": 272.2,
+        "mean_area_mm2": 272.2,
+        "resid_log_len": 0.0,
+        "resid_log_len_site": 0.0,
+        "resid_mm2_len": 0.0,
+        "p_two_len_5000": 1.0,
+        "p_two_lensite_5000": 1.0,
+        "p_larger_lensite_5000": 1.0,
+        "p_smaller_lensite_5000": 1.0,
+        "status": "TOO_FEW_SEALS"
+      },
+      {
+        "role": "W5/6: 468-cl *pārai (plough/crop)",
+        "n_seals": 5,
+        "mean_len": 6.6,
+        "median_area_mm2": 1176.5,
+        "mean_area_mm2": 1210.7,
+        "resid_log_len": 0.3147,
+        "resid_log_len_site": 0.2937,
+        "resid_mm2_len": 285.6,
+        "p_two_len_5000": 0.12957,
+        "p_two_lensite_5000": 0.14697,
+        "p_larger_lensite_5000": 0.07199,
+        "p_smaller_lensite_5000": 0.92821,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 484/067 *kō-vari (hatched peak)",
+        "n_seals": 6,
+        "mean_len": 6.17,
+        "median_area_mm2": 798.8,
+        "mean_area_mm2": 789.0,
+        "resid_log_len": -0.0432,
+        "resid_log_len_site": -0.0632,
+        "resid_mm2_len": -99.5,
+        "p_two_len_5000": 0.79184,
+        "p_two_lensite_5000": 0.80024,
+        "p_larger_lensite_5000": 0.59408,
+        "p_smaller_lensite_5000": 0.40612,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 906 *kaṇṭāḷam (pack-bale)",
+        "n_seals": 6,
+        "mean_len": 6.5,
+        "median_area_mm2": 937.8,
+        "mean_area_mm2": 898.7,
+        "resid_log_len": 0.0468,
+        "resid_log_len_site": 0.0518,
+        "resid_mm2_len": -17.9,
+        "p_two_len_5000": 0.78424,
+        "p_two_lensite_5000": 0.59708,
+        "p_larger_lensite_5000": 0.30314,
+        "p_smaller_lensite_5000": 0.69706,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 336-cl *mūṭai (closed grain-bin)",
+        "n_seals": 7,
+        "mean_len": 6.0,
+        "median_area_mm2": 756.2,
+        "mean_area_mm2": 813.0,
+        "resid_log_len": 0.0608,
+        "resid_log_len_site": 0.0509,
+        "resid_mm2_len": -61.4,
+        "p_two_len_5000": 0.78244,
+        "p_two_lensite_5000": 0.80984,
+        "p_larger_lensite_5000": 0.40112,
+        "p_smaller_lensite_5000": 0.59908,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 422-cl *iṟu/*pāl (3-comb unit)",
+        "n_seals": 6,
+        "mean_len": 4.33,
+        "median_area_mm2": 534.8,
+        "mean_area_mm2": 664.2,
+        "resid_log_len": -0.0517,
+        "resid_log_len_site": -0.0406,
+        "resid_mm2_len": -69.8,
+        "p_two_len_5000": 0.89922,
+        "p_two_lensite_5000": 0.87682,
+        "p_larger_lensite_5000": 0.56649,
+        "p_smaller_lensite_5000": 0.43371,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 388/382 *aracu/*āku (royal pipal)",
+        "n_seals": 18,
+        "mean_len": 5.39,
+        "median_area_mm2": 749.4,
+        "mean_area_mm2": 889.6,
+        "resid_log_len": 0.1096,
+        "resid_log_len_site": 0.1022,
+        "resid_mm2_len": 66.6,
+        "p_two_len_5000": 0.29874,
+        "p_two_lensite_5000": 0.22076,
+        "p_larger_lensite_5000": 0.11078,
+        "p_smaller_lensite_5000": 0.88942,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 824a *kāṇam (seal-initial split)",
+        "n_seals": 5,
+        "mean_len": 5.2,
+        "median_area_mm2": 841.0,
+        "mean_area_mm2": 808.9,
+        "resid_log_len": 0.147,
+        "resid_log_len_site": 0.1658,
+        "resid_mm2_len": 1.9,
+        "p_two_len_5000": 0.43211,
+        "p_two_lensite_5000": 0.36573,
+        "p_larger_lensite_5000": 0.18016,
+        "p_smaller_lensite_5000": 0.82004,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 877 *nāl-kāṇam (4-diamond)",
+        "n_seals": 8,
+        "mean_len": 4.75,
+        "median_area_mm2": 600.2,
+        "mean_area_mm2": 713.6,
+        "resid_log_len": -0.0375,
+        "resid_log_len_site": -0.0524,
+        "resid_mm2_len": -55.5,
+        "p_two_len_5000": 0.77704,
+        "p_two_lensite_5000": 0.83243,
+        "p_larger_lensite_5000": 0.57628,
+        "p_smaller_lensite_5000": 0.42392,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 880 *kāṇam-*kāl (ligature)",
+        "n_seals": 5,
+        "mean_len": 4.0,
+        "median_area_mm2": 712.9,
+        "mean_area_mm2": 1232.1,
+        "resid_log_len": 0.3605,
+        "resid_log_len_site": 0.3288,
+        "resid_mm2_len": 526.3,
+        "p_two_len_5000": 0.12058,
+        "p_two_lensite_5000": 0.12717,
+        "p_larger_lensite_5000": 0.06079,
+        "p_smaller_lensite_5000": 0.93941,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 645 *kaṭa/*kaṭam (passage-tax)",
+        "n_seals": 3,
+        "mean_len": 7.67,
+        "median_area_mm2": 645.2,
+        "mean_area_mm2": 622.9,
+        "resid_log_len": -0.3828,
+        "resid_log_len_site": -0.377,
+        "resid_mm2_len": -392.0,
+        "p_two_len_5000": 0.15377,
+        "p_two_lensite_5000": 0.13357,
+        "p_larger_lensite_5000": 0.93721,
+        "p_smaller_lensite_5000": 0.06299,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 679 *kuṭai/*maccu (canopy-roof)",
+        "n_seals": 7,
+        "mean_len": 4.43,
+        "median_area_mm2": 1011.2,
+        "mean_area_mm2": 1071.0,
+        "resid_log_len": 0.4259,
+        "resid_log_len_site": 0.408,
+        "resid_mm2_len": 329.0,
+        "p_two_len_5000": 0.02919,
+        "p_two_lensite_5000": 0.14897,
+        "p_larger_lensite_5000": 0.07678,
+        "p_smaller_lensite_5000": 0.92342,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 371/370 *katir (spindle/ray)",
+        "n_seals": 6,
+        "mean_len": 5.83,
+        "median_area_mm2": 1187.1,
+        "mean_area_mm2": 1226.2,
+        "resid_log_len": 0.3848,
+        "resid_log_len_site": 0.4076,
+        "resid_mm2_len": 365.8,
+        "p_two_len_5000": 0.06679,
+        "p_two_lensite_5000": 0.09558,
+        "p_larger_lensite_5000": 0.05259,
+        "p_smaller_lensite_5000": 0.94761,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 501 *pāy (harpoon/sail allo)",
+        "n_seals": 1,
+        "mean_len": 4.0,
+        "median_area_mm2": 1260.0,
+        "mean_area_mm2": 1260.0,
+        "resid_log_len": 0.0,
+        "resid_log_len_site": 0.0,
+        "resid_mm2_len": 0.0,
+        "p_two_len_5000": 1.0,
+        "p_two_lensite_5000": 1.0,
+        "p_larger_lensite_5000": 1.0,
+        "p_smaller_lensite_5000": 1.0,
+        "status": "TOO_FEW_SEALS"
+      },
+      {
+        "role": "W6: 554/552 *nāṭu (new bowtie allos)",
+        "n_seals": 6,
+        "mean_len": 4.83,
+        "median_area_mm2": 694.4,
+        "mean_area_mm2": 677.9,
+        "resid_log_len": 0.0113,
+        "resid_log_len_site": 0.0126,
+        "resid_mm2_len": -98.2,
+        "p_two_len_5000": 0.97081,
+        "p_two_lensite_5000": 0.9838,
+        "p_larger_lensite_5000": 0.5009,
+        "p_smaller_lensite_5000": 0.4993,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 921 *vil (bow/sale rescue)",
+        "n_seals": 8,
+        "mean_len": 6.75,
+        "median_area_mm2": 625.2,
+        "mean_area_mm2": 1410.3,
+        "resid_log_len": 0.1466,
+        "resid_log_len_site": 0.1276,
+        "resid_mm2_len": 472.7,
+        "p_two_len_5000": 0.43071,
+        "p_two_lensite_5000": 0.54389,
+        "p_larger_lensite_5000": 0.27115,
+        "p_smaller_lensite_5000": 0.72905,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 792 *meṭṭi (pair/chief)",
+        "n_seals": 3,
+        "mean_len": 4.0,
+        "median_area_mm2": 392.0,
+        "mean_area_mm2": 502.6,
+        "resid_log_len": -0.2278,
+        "resid_log_len_site": -0.2394,
+        "resid_mm2_len": -203.3,
+        "p_two_len_5000": 0.46151,
+        "p_two_lensite_5000": 0.39072,
+        "p_larger_lensite_5000": 0.80364,
+        "p_smaller_lensite_5000": 0.19656,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 136 *kā (yoke/guard W6)",
+        "n_seals": 3,
+        "mean_len": 2.33,
+        "median_area_mm2": 580.8,
+        "mean_area_mm2": 516.8,
+        "resid_log_len": -0.0183,
+        "resid_log_len_site": -0.0379,
+        "resid_mm2_len": -48.6,
+        "p_two_len_5000": 0.91002,
+        "p_two_lensite_5000": 0.9864,
+        "p_larger_lensite_5000": 0.5107,
+        "p_smaller_lensite_5000": 0.4899,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 924 *vari-tiṅkaḷ (hatched moon)",
+        "n_seals": 3,
+        "mean_len": 4.0,
+        "median_area_mm2": 800.7,
+        "mean_area_mm2": 903.7,
+        "resid_log_len": 0.388,
+        "resid_log_len_site": 0.3764,
+        "resid_mm2_len": 197.8,
+        "p_two_len_5000": 0.17936,
+        "p_two_lensite_5000": 0.21696,
+        "p_larger_lensite_5000": 0.10798,
+        "p_smaller_lensite_5000": 0.89222,
+        "status": "HONEST_NULL"
+      }
+    ],
+    "object_site_rows": [
+      {
+        "hits_in_target": 41,
+        "total_in_target": 1787,
+        "hits_outside": 18,
+        "total_outside": 1512,
+        "pct_in_target": 2.29,
+        "pct_outside": 1.19,
+        "share_of_sign_in_target_pct": 69.5,
+        "odds_ratio": 1.949,
+        "null_mean_hits": 31.69,
+        "p_strat_5000": 0.003,
+        "prediction": "692 [PRECINCT-HEADER] -> Seals",
+        "contrast": "seals_vs_rest (site-strat)",
+        "status": "CONFIRMED"
+      },
+      {
+        "hits_in_target": 6,
+        "total_in_target": 1281,
+        "hits_outside": 40,
+        "total_outside": 2018,
+        "pct_in_target": 0.47,
+        "pct_outside": 1.98,
+        "share_of_sign_in_target_pct": 13.0,
+        "odds_ratio": 0.233,
+        "null_mean_hits": 7.32,
+        "p_strat_5000": 0.80104,
+        "prediction": "585 *paḷḷi -> Harappa Site",
+        "contrast": "Harappa_vs_rest (obj-kind-strat)",
+        "status": "HONEST_NULL"
+      },
+      {
+        "hits_in_target": 3,
+        "total_in_target": 111,
+        "hits_outside": 3,
+        "total_outside": 918,
+        "pct_in_target": 2.7,
+        "pct_outside": 0.33,
+        "share_of_sign_in_target_pct": 50.0,
+        "odds_ratio": 8.472,
+        "null_mean_hits": 1.25,
+        "p_strat_5000": 0.10638,
+        "prediction": "585 *paḷḷi -> Harappa Mound AB Citadel (within Harappa)",
+        "contrast": "MoundAB_vs_Harappa (obj-kind-strat)",
+        "status": "HONEST_NULL"
+      },
+      {
+        "hits_in_target": 15,
+        "total_in_target": 130,
+        "hits_outside": 31,
+        "total_outside": 3169,
+        "pct_in_target": 11.54,
+        "pct_outside": 0.98,
+        "share_of_sign_in_target_pct": 32.6,
+        "odds_ratio": 13.203,
+        "null_mean_hits": 3.13,
+        "p_strat_5000": 0.0002,
+        "prediction": "585 *paḷḷi -> Copper Tablets (MD Citadel)",
+        "contrast": "copper_tablets_vs_rest (site-strat)",
+        "status": "CONFIRMED"
+      },
+      {
+        "hits_in_target": 36,
+        "total_in_target": 1475,
+        "hits_outside": 10,
+        "total_outside": 1824,
+        "pct_in_target": 2.44,
+        "pct_outside": 0.55,
+        "share_of_sign_in_target_pct": 78.3,
+        "odds_ratio": 4.538,
+        "null_mean_hits": 31.99,
+        "p_strat_5000": 0.08398,
+        "prediction": "585 *paḷḷi -> Mohenjo-daro Site",
+        "contrast": "MD_vs_rest (obj-kind-strat)",
+        "status": "TREND"
+      },
+      {
+        "hits_in_target": 48,
+        "total_in_target": 1787,
+        "hits_outside": 24,
+        "total_outside": 1512,
+        "pct_in_target": 2.69,
+        "pct_outside": 1.59,
+        "share_of_sign_in_target_pct": 66.7,
+        "odds_ratio": 1.711,
+        "null_mean_hits": 41.27,
+        "p_strat_5000": 0.03659,
+        "prediction": "527/526/525 *meṭṭu -> Seals",
+        "contrast": "seals_vs_rest (site-strat)",
+        "status": "CONFIRMED"
+      },
+      {
+        "hits_in_target": 25,
+        "total_in_target": 1787,
+        "hits_outside": 1,
+        "total_outside": 1512,
+        "pct_in_target": 1.4,
+        "pct_outside": 0.07,
+        "share_of_sign_in_target_pct": 96.2,
+        "odds_ratio": 21.439,
+        "null_mean_hits": 18.53,
+        "p_strat_5000": 0.001,
+        "prediction": "621 *aṟai/*paṭi -> Seals (Seal-Exclusive Chambers)",
+        "contrast": "seals_vs_rest (site-strat)",
+        "status": "CONFIRMED"
+      },
+      {
+        "hits_in_target": 45,
+        "total_in_target": 1787,
+        "hits_outside": 4,
+        "total_outside": 1512,
+        "pct_in_target": 2.52,
+        "pct_outside": 0.26,
+        "share_of_sign_in_target_pct": 91.8,
+        "odds_ratio": 9.739,
+        "null_mean_hits": 31.59,
+        "p_strat_5000": 0.0002,
+        "prediction": "297-cl *kōṇ -> Seals (Chevron Shares)",
+        "contrast": "seals_vs_rest (site-strat)",
+        "status": "CONFIRMED"
+      },
+      {
+        "hits_in_target": 9,
+        "total_in_target": 219,
+        "hits_outside": 5,
+        "total_outside": 5144,
+        "pct_in_target": 4.11,
+        "pct_outside": 0.1,
+        "share_of_sign_in_target_pct": 64.3,
+        "odds_ratio": 44.049,
+        "null_mean_hits": 0.79,
+        "p_strat_5000": 0.0002,
+        "prediction": "890 *vil -> Kalibangan Site (Grant Sealings)",
+        "contrast": "Kalibangan_vs_rest (obj-kind-strat, all)",
+        "status": "CONFIRMED"
+      },
+      {
+        "hits_in_target": 8,
+        "total_in_target": 359,
+        "hits_outside": 6,
+        "total_outside": 5004,
+        "pct_in_target": 2.23,
+        "pct_outside": 0.12,
+        "share_of_sign_in_target_pct": 57.1,
+        "odds_ratio": 18.986,
+        "null_mean_hits": 1.47,
+        "p_strat_5000": 0.0002,
+        "prediction": "890 *vil -> Tags & Sealings (Grant Sealings)",
+        "contrast": "tags_vs_rest (site-strat, all)",
+        "status": "CONFIRMED"
+      },
+      {
+        "hits_in_target": 3,
+        "total_in_target": 236,
+        "hits_outside": 13,
+        "total_outside": 5127,
+        "pct_in_target": 1.27,
+        "pct_outside": 0.25,
+        "share_of_sign_in_target_pct": 18.8,
+        "odds_ratio": 5.065,
+        "null_mean_hits": 1.14,
+        "p_strat_5000": 0.08678,
+        "prediction": "048/049 *[BRACKET]-ēḻ -> Lothal Site (Box Sealings)",
+        "contrast": "Lothal_vs_rest (obj-kind-strat, all)",
+        "status": "TREND"
+      },
+      {
+        "hits_in_target": 3,
+        "total_in_target": 359,
+        "hits_outside": 13,
+        "total_outside": 5004,
+        "pct_in_target": 0.84,
+        "pct_outside": 0.26,
+        "share_of_sign_in_target_pct": 18.8,
+        "odds_ratio": 3.235,
+        "null_mean_hits": 1.83,
+        "p_strat_5000": 0.25675,
+        "prediction": "048/049 *[BRACKET]-ēḻ -> Tags & Sealings",
+        "contrast": "tags_vs_rest (site-strat, all)",
+        "status": "HONEST_NULL"
+      },
+      {
+        "hits_in_target": 22,
+        "total_in_target": 775,
+        "hits_outside": 0,
+        "total_outside": 2524,
+        "pct_in_target": 2.84,
+        "pct_outside": 0.0,
+        "share_of_sign_in_target_pct": 100.0,
+        "odds_ratio": 150.766,
+        "null_mean_hits": 9.37,
+        "p_strat_5000": 0.0002,
+        "prediction": "167/868 *mukku/*kuntāṇi -> Harappa Tablets (Kalam)",
+        "contrast": "tablets_vs_rest (site-strat)",
+        "status": "CONFIRMED"
+      },
+      {
+        "hits_in_target": 17,
+        "total_in_target": 1281,
+        "hits_outside": 5,
+        "total_outside": 2018,
+        "pct_in_target": 1.33,
+        "pct_outside": 0.25,
+        "share_of_sign_in_target_pct": 77.3,
+        "odds_ratio": 5.415,
+        "null_mean_hits": 19.69,
+        "p_strat_5000": 0.9772,
+        "prediction": "167/868 *mukku/*kuntāṇi -> Harappa Site",
+        "contrast": "Harappa_vs_rest (obj-kind-strat)",
+        "status": "HONEST_NULL"
+      },
+      {
+        "hits_in_target": 12,
+        "total_in_target": 775,
+        "hits_outside": 26,
+        "total_outside": 2524,
+        "pct_in_target": 1.55,
+        "pct_outside": 1.03,
+        "share_of_sign_in_target_pct": 31.6,
+        "odds_ratio": 1.511,
+        "null_mean_hits": 13.19,
+        "p_strat_5000": 0.74645,
+        "prediction": "468-cl *pārai -> Tablets (Granary Plough/Crop)",
+        "contrast": "tablets_vs_rest (site-strat)",
+        "status": "HONEST_NULL"
+      },
+      {
+        "hits_in_target": 11,
+        "total_in_target": 434,
+        "hits_outside": 7,
+        "total_outside": 595,
+        "pct_in_target": 2.53,
+        "pct_outside": 1.18,
+        "share_of_sign_in_target_pct": 61.1,
+        "odds_ratio": 2.184,
+        "null_mean_hits": 8.98,
+        "p_strat_5000": 0.24255,
+        "prediction": "468-cl *pārai -> Harappa Mound F Granary (within Harappa)",
+        "contrast": "MoundF_vs_Harappa (obj-kind-strat)",
+        "status": "HONEST_NULL"
+      },
+      {
+        "hits_in_target": 8,
+        "total_in_target": 130,
+        "hits_outside": 16,
+        "total_outside": 3169,
+        "pct_in_target": 6.15,
+        "pct_outside": 0.5,
+        "share_of_sign_in_target_pct": 33.3,
+        "odds_ratio": 12.922,
+        "null_mean_hits": 1.23,
+        "p_strat_5000": 0.0002,
+        "prediction": "422-cl *iṟu/*pāl -> Copper Tablets",
+        "contrast": "copper_tablets_vs_rest (site-strat)",
+        "status": "CONFIRMED"
+      },
+      {
+        "hits_in_target": 2,
+        "total_in_target": 130,
+        "hits_outside": 32,
+        "total_outside": 3169,
+        "pct_in_target": 1.54,
+        "pct_outside": 1.01,
+        "share_of_sign_in_target_pct": 5.9,
+        "odds_ratio": 1.532,
+        "null_mean_hits": 1.27,
+        "p_strat_5000": 0.36613,
+        "prediction": "384 *āku/*takaṭu -> Copper Tablets (MD)",
+        "contrast": "copper_tablets_vs_rest (site-strat)",
+        "status": "HONEST_NULL"
+      },
+      {
+        "hits_in_target": 14,
+        "total_in_target": 1475,
+        "hits_outside": 20,
+        "total_outside": 1824,
+        "pct_in_target": 0.95,
+        "pct_outside": 1.1,
+        "share_of_sign_in_target_pct": 41.2,
+        "odds_ratio": 0.864,
+        "null_mean_hits": 16.33,
+        "p_strat_5000": 0.88002,
+        "prediction": "384 *āku/*takaṭu -> Mohenjo-daro Site",
+        "contrast": "MD_vs_rest (obj-kind-strat)",
+        "status": "HONEST_NULL"
+      },
+      {
+        "hits_in_target": 6,
+        "total_in_target": 1787,
+        "hits_outside": 5,
+        "total_outside": 1512,
+        "pct_in_target": 0.34,
+        "pct_outside": 0.33,
+        "share_of_sign_in_target_pct": 54.5,
+        "odds_ratio": 1.015,
+        "null_mean_hits": 7.42,
+        "p_strat_5000": 0.91682,
+        "prediction": "347-cl *mā -> Seals",
+        "contrast": "seals_vs_rest (site-strat)",
+        "status": "HONEST_NULL"
+      },
+      {
+        "hits_in_target": 15,
+        "total_in_target": 1787,
+        "hits_outside": 0,
+        "total_outside": 1512,
+        "pct_in_target": 0.84,
+        "pct_outside": 0.0,
+        "share_of_sign_in_target_pct": 100.0,
+        "odds_ratio": 26.453,
+        "null_mean_hits": 9.96,
+        "p_strat_5000": 0.0008,
+        "prediction": "243 *katir-mīṉ-vari -> Seals (Hatched Fish)",
+        "contrast": "seals_vs_rest (site-strat)",
+        "status": "CONFIRMED"
+      },
+      {
+        "hits_in_target": 10,
+        "total_in_target": 10,
+        "hits_outside": 0,
+        "total_outside": 22,
+        "pct_in_target": 100.0,
+        "pct_outside": 0.0,
+        "share_of_sign_in_target_pct": 100.0,
+        "odds_ratio": 945.0,
+        "null_mean_hits": 3.16,
+        "p_strat_5000": 0.0002,
+        "prediction": "824a vs 824b -> Seals vs Harappa Tablets (Exog. Split)",
+        "contrast": "824a_seals_vs_824b_tablets",
+        "status": "CONFIRMED"
+      },
+      {
+        "hits_in_target": 10,
+        "total_in_target": 2776,
+        "hits_outside": 0,
+        "total_outside": 2587,
+        "pct_in_target": 0.36,
+        "pct_outside": 0.0,
+        "share_of_sign_in_target_pct": 100.0,
+        "odds_ratio": 19.641,
+        "null_mean_hits": 6.9,
+        "p_strat_5000": 0.0162,
+        "prediction": "824a *kāṇam -> Seals (all-dedup)",
+        "contrast": "seals_vs_rest (site-strat, all)",
+        "status": "CONFIRMED"
+      },
+      {
+        "hits_in_target": 22,
+        "total_in_target": 1161,
+        "hits_outside": 0,
+        "total_outside": 4202,
+        "pct_in_target": 1.89,
+        "pct_outside": 0.0,
+        "share_of_sign_in_target_pct": 100.0,
+        "odds_ratio": 165.961,
+        "null_mean_hits": 10.79,
+        "p_strat_5000": 0.0002,
+        "prediction": "824b *nāl-kāṇam -> Harappa Tablets (all-dedup)",
+        "contrast": "tablets_vs_rest (site-strat, all)",
+        "status": "CONFIRMED"
+      },
+      {
+        "hits_in_target": 14,
+        "total_in_target": 130,
+        "hits_outside": 10,
+        "total_outside": 3169,
+        "pct_in_target": 10.77,
+        "pct_outside": 0.32,
+        "share_of_sign_in_target_pct": 58.3,
+        "odds_ratio": 38.126,
+        "null_mean_hits": 1.66,
+        "p_strat_5000": 0.0002,
+        "prediction": "095 *āḷ-[BATON] -> Copper Tablets (MD Citadel)",
+        "contrast": "copper_tablets_vs_rest (site-strat)",
+        "status": "CONFIRMED"
+      },
+      {
+        "hits_in_target": 34,
+        "total_in_target": 1787,
+        "hits_outside": 23,
+        "total_outside": 1512,
+        "pct_in_target": 1.9,
+        "pct_outside": 1.52,
+        "share_of_sign_in_target_pct": 59.6,
+        "odds_ratio": 1.256,
+        "null_mean_hits": 33.12,
+        "p_strat_5000": 0.45771,
+        "prediction": "388/382 *aracu/*āku -> Seals (Royal Pipal)",
+        "contrast": "seals_vs_rest (site-strat)",
+        "status": "HONEST_NULL"
+      },
+      {
+        "hits_in_target": 5,
+        "total_in_target": 359,
+        "hits_outside": 15,
+        "total_outside": 5004,
+        "pct_in_target": 1.39,
+        "pct_outside": 0.3,
+        "share_of_sign_in_target_pct": 25.0,
+        "odds_ratio": 4.698,
+        "null_mean_hits": 1.32,
+        "p_strat_5000": 0.0052,
+        "prediction": "906 *kaṇṭāḷam -> Tags & Sealings (Pack-Bale)",
+        "contrast": "tags_vs_rest (site-strat, all)",
+        "status": "CONFIRMED"
+      },
+      {
+        "hits_in_target": 8,
+        "total_in_target": 359,
+        "hits_outside": 8,
+        "total_outside": 5004,
+        "pct_in_target": 2.23,
+        "pct_outside": 0.16,
+        "share_of_sign_in_target_pct": 50.0,
+        "odds_ratio": 14.234,
+        "null_mean_hits": 3.55,
+        "p_strat_5000": 0.003,
+        "prediction": "880 *kāṇam-*kāl -> Tags & Sealings (Package Header)",
+        "contrast": "tags_vs_rest (site-strat, all)",
+        "status": "CONFIRMED"
+      },
+      {
+        "hits_in_target": 3,
+        "total_in_target": 14,
+        "hits_outside": 10,
+        "total_outside": 5349,
+        "pct_in_target": 21.43,
+        "pct_outside": 0.19,
+        "share_of_sign_in_target_pct": 23.1,
+        "odds_ratio": 145.609,
+        "null_mean_hits": 0.03,
+        "p_strat_5000": 0.0002,
+        "prediction": "391 *toṇṭu -> Bronze/Copper Implements (IMPL, all)",
+        "contrast": "IMPL_vs_rest (site-strat, all)",
+        "status": "CONFIRMED"
+      },
+      {
+        "hits_in_target": 4,
+        "total_in_target": 130,
+        "hits_outside": 4,
+        "total_outside": 3169,
+        "pct_in_target": 3.08,
+        "pct_outside": 0.13,
+        "share_of_sign_in_target_pct": 50.0,
+        "odds_ratio": 25.119,
+        "null_mean_hits": 0.61,
+        "p_strat_5000": 0.001,
+        "prediction": "905 *iru-tiṅkaḷ -> Copper Tablets (MD)",
+        "contrast": "copper_tablets_vs_rest (site-strat)",
+        "status": "CONFIRMED"
+      },
+      {
+        "hits_in_target": 3,
+        "total_in_target": 46,
+        "hits_outside": 8,
+        "total_outside": 5317,
+        "pct_in_target": 6.52,
+        "pct_outside": 0.15,
+        "share_of_sign_in_target_pct": 27.3,
+        "odds_ratio": 46.299,
+        "null_mean_hits": 0.11,
+        "p_strat_5000": 0.0004,
+        "prediction": "924 *vari-tiṅkaḷ -> Foreign/Overland Trade",
+        "contrast": "Foreign_vs_rest (obj-kind-strat, all)",
+        "status": "CONFIRMED"
+      },
+      {
+        "hits_in_target": 4,
+        "total_in_target": 1281,
+        "hits_outside": 0,
+        "total_outside": 2018,
+        "pct_in_target": 0.31,
+        "pct_outside": 0.0,
+        "share_of_sign_in_target_pct": 100.0,
+        "odds_ratio": 14.22,
+        "null_mean_hits": 2.83,
+        "p_strat_5000": 0.11818,
+        "prediction": "501 *pāy -> Harappa Site (Photo Allograph)",
+        "contrast": "Harappa_vs_rest (obj-kind-strat)",
+        "status": "HONEST_NULL"
+      }
+    ],
+    "time_rows": [
+      {
+        "feature": "COVERAGE272: 100%-Decoded Intact Objects (272 Signs)",
+        "n_objects": 1765,
+        "total_hits": 1222,
+        "early_hits": 167,
+        "early_pct": 70.17,
+        "middle_hits": 700,
+        "middle_pct": 69.79,
+        "late_hits": 355,
+        "late_pct": 67.75,
+        "trend_r": -0.0193,
+        "p_area_5000": 0.43491,
+        "p_area_kind_5000": 0.35133,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W56_ALL: Any Wave-5 or Wave-6 Sign (109 Signs)",
+        "n_objects": 2589,
+        "total_hits": 639,
+        "early_hits": 83,
+        "early_pct": 24.13,
+        "middle_hits": 347,
+        "middle_pct": 23.29,
+        "late_hits": 209,
+        "late_pct": 27.68,
+        "trend_r": 0.0348,
+        "p_area_5000": 0.22755,
+        "p_area_kind_5000": 0.26355,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W5: 692 [PRECINCT-HEADER]",
+        "n_objects": 2589,
+        "total_hits": 46,
+        "early_hits": 5,
+        "early_pct": 1.45,
+        "middle_hits": 20,
+        "middle_pct": 1.34,
+        "late_hits": 21,
+        "late_pct": 2.78,
+        "trend_r": 0.0402,
+        "p_area_5000": 0.12278,
+        "p_area_kind_5000": 0.14437,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W5: 585 *paḷḷi (citadel shrine)",
+        "n_objects": 2589,
+        "total_hits": 35,
+        "early_hits": 3,
+        "early_pct": 0.87,
+        "middle_hits": 17,
+        "middle_pct": 1.14,
+        "late_hits": 15,
+        "late_pct": 1.99,
+        "trend_r": 0.0341,
+        "p_area_5000": 0.15077,
+        "p_area_kind_5000": 0.11858,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W5/6: 527/526/525 *meṭṭu (district gate)",
+        "n_objects": 2589,
+        "total_hits": 50,
+        "early_hits": 12,
+        "early_pct": 3.49,
+        "middle_hits": 21,
+        "middle_pct": 1.41,
+        "late_hits": 17,
+        "late_pct": 2.25,
+        "trend_r": -0.013,
+        "p_area_5000": 0.56669,
+        "p_area_kind_5000": 0.5225,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W5: 621 *aṟai/*paṭi (chamber)",
+        "n_objects": 2589,
+        "total_hits": 14,
+        "early_hits": 3,
+        "early_pct": 0.87,
+        "middle_hits": 5,
+        "middle_pct": 0.34,
+        "late_hits": 6,
+        "late_pct": 0.79,
+        "trend_r": 0.0065,
+        "p_area_5000": 0.94221,
+        "p_area_kind_5000": 0.94341,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W5/6: 297-cl *kōṇ (chevron share)",
+        "n_objects": 2589,
+        "total_hits": 24,
+        "early_hits": 5,
+        "early_pct": 1.45,
+        "middle_hits": 11,
+        "middle_pct": 0.74,
+        "late_hits": 8,
+        "late_pct": 1.06,
+        "trend_r": -0.0052,
+        "p_area_5000": 0.87003,
+        "p_area_kind_5000": 0.88562,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W5: 890 *vil (right-bow grant)",
+        "n_objects": 2589,
+        "total_hits": 7,
+        "early_hits": 0,
+        "early_pct": 0.0,
+        "middle_hits": 6,
+        "middle_pct": 0.4,
+        "late_hits": 1,
+        "late_pct": 0.13,
+        "trend_r": -0.0013,
+        "p_area_5000": 1.0,
+        "p_area_kind_5000": 1.0,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W5: 048/049 *[BRACKET]-ēḻ (7-bundle)",
+        "n_objects": 2589,
+        "total_hits": 9,
+        "early_hits": 0,
+        "early_pct": 0.0,
+        "middle_hits": 5,
+        "middle_pct": 0.34,
+        "late_hits": 4,
+        "late_pct": 0.53,
+        "trend_r": 0.0267,
+        "p_area_5000": 0.10318,
+        "p_area_kind_5000": 0.10258,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W5: 167/868 *mukku (kalam-unit)",
+        "n_objects": 2589,
+        "total_hits": 21,
+        "early_hits": 2,
+        "early_pct": 0.58,
+        "middle_hits": 19,
+        "middle_pct": 1.28,
+        "late_hits": 0,
+        "late_pct": 0.0,
+        "trend_r": -0.0363,
+        "p_area_5000": 0.29154,
+        "p_area_kind_5000": 0.21656,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W5/6: 468-cl *pārai (plough/crop)",
+        "n_objects": 2589,
+        "total_hits": 27,
+        "early_hits": 2,
+        "early_pct": 0.58,
+        "middle_hits": 14,
+        "middle_pct": 0.94,
+        "late_hits": 11,
+        "late_pct": 1.46,
+        "trend_r": 0.0284,
+        "p_area_5000": 0.37273,
+        "p_area_kind_5000": 0.38292,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W5: 422-cl *iṟu/*pāl (3-comb unit)",
+        "n_objects": 2589,
+        "total_hits": 10,
+        "early_hits": 2,
+        "early_pct": 0.58,
+        "middle_hits": 3,
+        "middle_pct": 0.2,
+        "late_hits": 5,
+        "late_pct": 0.66,
+        "trend_r": 0.0139,
+        "p_area_5000": 0.78884,
+        "p_area_kind_5000": 0.65847,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W5: 384 *āku/*takaṭu (copper leaf)",
+        "n_objects": 2589,
+        "total_hits": 17,
+        "early_hits": 3,
+        "early_pct": 0.87,
+        "middle_hits": 8,
+        "middle_pct": 0.54,
+        "late_hits": 6,
+        "late_pct": 0.79,
+        "trend_r": 0.0023,
+        "p_area_5000": 1.0,
+        "p_area_kind_5000": 1.0,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W5: 347-cl *mā (deer / great)",
+        "n_objects": 2589,
+        "total_hits": 10,
+        "early_hits": 1,
+        "early_pct": 0.29,
+        "middle_hits": 6,
+        "middle_pct": 0.4,
+        "late_hits": 3,
+        "late_pct": 0.4,
+        "trend_r": 0.0041,
+        "p_area_5000": 1.0,
+        "p_area_kind_5000": 1.0,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W5: 243 *katir-mīṉ-vari (hatched fish)",
+        "n_objects": 2589,
+        "total_hits": 10,
+        "early_hits": 0,
+        "early_pct": 0.0,
+        "middle_hits": 6,
+        "middle_pct": 0.4,
+        "late_hits": 4,
+        "late_pct": 0.53,
+        "trend_r": 0.0238,
+        "p_area_5000": 0.33893,
+        "p_area_kind_5000": 0.39332,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W5: 095 *āḷ-[BATON] (citadel issuer)",
+        "n_objects": 2589,
+        "total_hits": 8,
+        "early_hits": 0,
+        "early_pct": 0.0,
+        "middle_hits": 3,
+        "middle_pct": 0.2,
+        "late_hits": 5,
+        "late_pct": 0.66,
+        "trend_r": 0.0411,
+        "p_area_5000": 0.09438,
+        "p_area_kind_5000": 0.15217,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W5/6: 070/072/515 [ARROW-PRE-VĒḶ]",
+        "n_objects": 2589,
+        "total_hits": 48,
+        "early_hits": 7,
+        "early_pct": 2.03,
+        "middle_hits": 25,
+        "middle_pct": 1.68,
+        "late_hits": 16,
+        "late_pct": 2.12,
+        "trend_r": 0.0063,
+        "p_area_5000": 0.78524,
+        "p_area_kind_5000": 0.78444,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W5/6: 636/639/267-cl *kūṭu (new granary)",
+        "n_objects": 2589,
+        "total_hits": 30,
+        "early_hits": 6,
+        "early_pct": 1.74,
+        "middle_hits": 17,
+        "middle_pct": 1.14,
+        "late_hits": 7,
+        "late_pct": 0.93,
+        "trend_r": -0.0215,
+        "p_area_5000": 0.24795,
+        "p_area_kind_5000": 0.25075,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W6: 388/382 *aracu/*āku (royal pipal)",
+        "n_objects": 2589,
+        "total_hits": 44,
+        "early_hits": 5,
+        "early_pct": 1.45,
+        "middle_hits": 23,
+        "middle_pct": 1.54,
+        "late_hits": 16,
+        "late_pct": 2.12,
+        "trend_r": 0.019,
+        "p_area_5000": 0.29514,
+        "p_area_kind_5000": 0.29354,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W6: 824a/824b/877/880 (M284/M286 split)",
+        "n_objects": 2589,
+        "total_hits": 43,
+        "early_hits": 7,
+        "early_pct": 2.03,
+        "middle_hits": 29,
+        "middle_pct": 1.95,
+        "late_hits": 7,
+        "late_pct": 0.93,
+        "trend_r": -0.0326,
+        "p_area_5000": 0.08438,
+        "p_area_kind_5000": 0.08638,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W6: 645 *kaṭa/*kaṭam (passage-tax)",
+        "n_objects": 2589,
+        "total_hits": 11,
+        "early_hits": 1,
+        "early_pct": 0.29,
+        "middle_hits": 7,
+        "middle_pct": 0.47,
+        "late_hits": 3,
+        "late_pct": 0.4,
+        "trend_r": 0.0024,
+        "p_area_5000": 1.0,
+        "p_area_kind_5000": 1.0,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W6: 679 *kuṭai/*maccu (canopy-roof)",
+        "n_objects": 2589,
+        "total_hits": 12,
+        "early_hits": 0,
+        "early_pct": 0.0,
+        "middle_hits": 5,
+        "middle_pct": 0.34,
+        "late_hits": 7,
+        "late_pct": 0.93,
+        "trend_r": 0.0459,
+        "p_area_5000": 0.13217,
+        "p_area_kind_5000": 0.14337,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W6: 501 *pāy (harpoon/sail allo)",
+        "n_objects": 2589,
+        "total_hits": 2,
+        "early_hits": 0,
+        "early_pct": 0.0,
+        "middle_hits": 0,
+        "middle_pct": 0.0,
+        "late_hits": 2,
+        "late_pct": 0.26,
+        "trend_r": 0.037,
+        "p_area_5000": 0.96341,
+        "p_area_kind_5000": 0.96361,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W6: 554/552 *nāṭu (bowtie allos)",
+        "n_objects": 2589,
+        "total_hits": 11,
+        "early_hits": 1,
+        "early_pct": 0.29,
+        "middle_hits": 8,
+        "middle_pct": 0.54,
+        "late_hits": 2,
+        "late_pct": 0.26,
+        "trend_r": -0.007,
+        "p_area_5000": 0.77265,
+        "p_area_kind_5000": 0.77524,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W6: 921 *vil (bow/sale)",
+        "n_objects": 2589,
+        "total_hits": 13,
+        "early_hits": 2,
+        "early_pct": 0.58,
+        "middle_hits": 6,
+        "middle_pct": 0.4,
+        "late_hits": 5,
+        "late_pct": 0.66,
+        "trend_r": 0.0081,
+        "p_area_5000": 0.87782,
+        "p_area_kind_5000": 0.84563,
+        "interpretation": "STABLE_600YRS"
+      },
+      {
+        "feature": "W6: 371/370 *katir (spindle/ray)",
+        "n_objects": 2589,
+        "total_hits": 9,
+        "early_hits": 1,
+        "early_pct": 0.29,
+        "middle_hits": 6,
+        "middle_pct": 0.4,
+        "late_hits": 2,
+        "late_pct": 0.26,
+        "trend_r": -0.0045,
+        "p_area_5000": 1.0,
+        "p_area_kind_5000": 1.0,
+        "interpretation": "STABLE_600YRS"
+      }
+    ],
+    "w56_stable_ak_count": 24,
+    "w56_strict_stable_count": 24,
+    "w56_total_families": 24,
+    "honest_nulls_area": [
+      {
+        "role": "W5: 585 *paḷḷi (citadel shrine/palace)",
+        "n_seals": 13,
+        "mean_len": 6.15,
+        "median_area_mm2": 900.0,
+        "mean_area_mm2": 1105.9,
+        "resid_log_len": 0.2517,
+        "resid_log_len_site": 0.242,
+        "resid_mm2_len": 218.5,
+        "p_two_len_5000": 0.06219,
+        "p_two_lensite_5000": 0.09998,
+        "p_larger_lensite_5000": 0.05199,
+        "p_smaller_lensite_5000": 0.94821,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5/6: 527/526/525 *meṭṭu (district gate)",
+        "n_seals": 32,
+        "mean_len": 4.94,
+        "median_area_mm2": 720.9,
+        "mean_area_mm2": 804.9,
+        "resid_log_len": 0.0492,
+        "resid_log_len_site": 0.0456,
+        "resid_mm2_len": 20.0,
+        "p_two_len_5000": 0.53909,
+        "p_two_lensite_5000": 0.57688,
+        "p_larger_lensite_5000": 0.28774,
+        "p_smaller_lensite_5000": 0.71246,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 621 *aṟai/*paṭi (seal-excl. chamber)",
+        "n_seals": 12,
+        "mean_len": 4.83,
+        "median_area_mm2": 684.6,
+        "mean_area_mm2": 735.5,
+        "resid_log_len": 0.0338,
+        "resid_log_len_site": 0.041,
+        "resid_mm2_len": -40.6,
+        "p_two_len_5000": 0.73625,
+        "p_two_lensite_5000": 0.72625,
+        "p_larger_lensite_5000": 0.36093,
+        "p_smaller_lensite_5000": 0.63927,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5/6: 297-cl *kōṇ (chevron-fold share)",
+        "n_seals": 26,
+        "mean_len": 6.15,
+        "median_area_mm2": 764.3,
+        "mean_area_mm2": 1003.4,
+        "resid_log_len": 0.0925,
+        "resid_log_len_site": 0.1025,
+        "resid_mm2_len": 116.0,
+        "p_two_len_5000": 0.43091,
+        "p_two_lensite_5000": 0.26995,
+        "p_larger_lensite_5000": 0.13717,
+        "p_smaller_lensite_5000": 0.86303,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 890 *vil (right-bow grant)",
+        "n_seals": 3,
+        "mean_len": 4.0,
+        "median_area_mm2": 1224.0,
+        "mean_area_mm2": 1539.0,
+        "resid_log_len": 0.7218,
+        "resid_log_len_site": 0.692,
+        "resid_mm2_len": 833.2,
+        "p_two_len_5000": 0.02559,
+        "p_two_lensite_5000": 0.05299,
+        "p_larger_lensite_5000": 0.03599,
+        "p_smaller_lensite_5000": 0.96421,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 048/049 *[BRACKET]-ēḻ (7-bundle)",
+        "n_seals": 4,
+        "mean_len": 3.75,
+        "median_area_mm2": 552.6,
+        "mean_area_mm2": 625.8,
+        "resid_log_len": -0.0656,
+        "resid_log_len_site": -0.0784,
+        "resid_mm2_len": -59.0,
+        "p_two_len_5000": 0.84323,
+        "p_two_lensite_5000": 0.76965,
+        "p_larger_lensite_5000": 0.61348,
+        "p_smaller_lensite_5000": 0.38672,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 243 *katir-mīṉ-vari (hatched fish)",
+        "n_seals": 7,
+        "mean_len": 4.57,
+        "median_area_mm2": 524.4,
+        "mean_area_mm2": 735.9,
+        "resid_log_len": -0.0492,
+        "resid_log_len_site": -0.0659,
+        "resid_mm2_len": -18.2,
+        "p_two_len_5000": 0.78044,
+        "p_two_lensite_5000": 0.68906,
+        "p_larger_lensite_5000": 0.65047,
+        "p_smaller_lensite_5000": 0.34973,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 347-cl *mā (deer / great)",
+        "n_seals": 3,
+        "mean_len": 4.33,
+        "median_area_mm2": 392.0,
+        "mean_area_mm2": 437.9,
+        "resid_log_len": -0.3758,
+        "resid_log_len_site": -0.3858,
+        "resid_mm2_len": -296.0,
+        "p_two_len_5000": 0.18136,
+        "p_two_lensite_5000": 0.16217,
+        "p_larger_lensite_5000": 0.92042,
+        "p_smaller_lensite_5000": 0.07978,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 384 *āku/*takaṭu (plain pipal-leaf)",
+        "n_seals": 7,
+        "mean_len": 5.29,
+        "median_area_mm2": 625.0,
+        "mean_area_mm2": 902.4,
+        "resid_log_len": 0.0438,
+        "resid_log_len_site": 0.0559,
+        "resid_mm2_len": 88.2,
+        "p_two_len_5000": 0.76465,
+        "p_two_lensite_5000": 0.96301,
+        "p_larger_lensite_5000": 0.4851,
+        "p_smaller_lensite_5000": 0.5151,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5/6: 070/072/515 [ARROW-PRE-VĒḶ]",
+        "n_seals": 27,
+        "mean_len": 6.78,
+        "median_area_mm2": 650.0,
+        "mean_area_mm2": 764.7,
+        "resid_log_len": -0.1509,
+        "resid_log_len_site": -0.1263,
+        "resid_mm2_len": -175.4,
+        "p_two_len_5000": 0.08738,
+        "p_two_lensite_5000": 0.13017,
+        "p_larger_lensite_5000": 0.93481,
+        "p_smaller_lensite_5000": 0.06539,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 095 *āḷ-[BATON] (citadel issuer)",
+        "n_seals": 3,
+        "mean_len": 5.67,
+        "median_area_mm2": 841.0,
+        "mean_area_mm2": 966.6,
+        "resid_log_len": 0.2209,
+        "resid_log_len_site": 0.3045,
+        "resid_mm2_len": 120.3,
+        "p_two_len_5000": 0.43691,
+        "p_two_lensite_5000": 0.26635,
+        "p_larger_lensite_5000": 0.13097,
+        "p_smaller_lensite_5000": 0.87003,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 510-cl *taṭṭam (garland-frame)",
+        "n_seals": 12,
+        "mean_len": 5.17,
+        "median_area_mm2": 668.9,
+        "mean_area_mm2": 630.0,
+        "resid_log_len": -0.2837,
+        "resid_log_len_site": -0.2732,
+        "resid_mm2_len": -174.2,
+        "p_two_len_5000": 0.04899,
+        "p_two_lensite_5000": 0.05139,
+        "p_larger_lensite_5000": 0.97401,
+        "p_smaller_lensite_5000": 0.02619,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5/6: 636/639/267-cl *kūṭu (new granary)",
+        "n_seals": 14,
+        "mean_len": 5.57,
+        "median_area_mm2": 602.9,
+        "mean_area_mm2": 647.0,
+        "resid_log_len": -0.1971,
+        "resid_log_len_site": -0.2109,
+        "resid_mm2_len": -191.3,
+        "p_two_len_5000": 0.13497,
+        "p_two_lensite_5000": 0.09918,
+        "p_larger_lensite_5000": 0.95361,
+        "p_smaller_lensite_5000": 0.04659,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5/6: 468-cl *pārai (plough/crop)",
+        "n_seals": 5,
+        "mean_len": 6.6,
+        "median_area_mm2": 1176.5,
+        "mean_area_mm2": 1210.7,
+        "resid_log_len": 0.3147,
+        "resid_log_len_site": 0.2937,
+        "resid_mm2_len": 285.6,
+        "p_two_len_5000": 0.12957,
+        "p_two_lensite_5000": 0.14697,
+        "p_larger_lensite_5000": 0.07199,
+        "p_smaller_lensite_5000": 0.92821,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 484/067 *kō-vari (hatched peak)",
+        "n_seals": 6,
+        "mean_len": 6.17,
+        "median_area_mm2": 798.8,
+        "mean_area_mm2": 789.0,
+        "resid_log_len": -0.0432,
+        "resid_log_len_site": -0.0632,
+        "resid_mm2_len": -99.5,
+        "p_two_len_5000": 0.79184,
+        "p_two_lensite_5000": 0.80024,
+        "p_larger_lensite_5000": 0.59408,
+        "p_smaller_lensite_5000": 0.40612,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 906 *kaṇṭāḷam (pack-bale)",
+        "n_seals": 6,
+        "mean_len": 6.5,
+        "median_area_mm2": 937.8,
+        "mean_area_mm2": 898.7,
+        "resid_log_len": 0.0468,
+        "resid_log_len_site": 0.0518,
+        "resid_mm2_len": -17.9,
+        "p_two_len_5000": 0.78424,
+        "p_two_lensite_5000": 0.59708,
+        "p_larger_lensite_5000": 0.30314,
+        "p_smaller_lensite_5000": 0.69706,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 336-cl *mūṭai (closed grain-bin)",
+        "n_seals": 7,
+        "mean_len": 6.0,
+        "median_area_mm2": 756.2,
+        "mean_area_mm2": 813.0,
+        "resid_log_len": 0.0608,
+        "resid_log_len_site": 0.0509,
+        "resid_mm2_len": -61.4,
+        "p_two_len_5000": 0.78244,
+        "p_two_lensite_5000": 0.80984,
+        "p_larger_lensite_5000": 0.40112,
+        "p_smaller_lensite_5000": 0.59908,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W5: 422-cl *iṟu/*pāl (3-comb unit)",
+        "n_seals": 6,
+        "mean_len": 4.33,
+        "median_area_mm2": 534.8,
+        "mean_area_mm2": 664.2,
+        "resid_log_len": -0.0517,
+        "resid_log_len_site": -0.0406,
+        "resid_mm2_len": -69.8,
+        "p_two_len_5000": 0.89922,
+        "p_two_lensite_5000": 0.87682,
+        "p_larger_lensite_5000": 0.56649,
+        "p_smaller_lensite_5000": 0.43371,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 388/382 *aracu/*āku (royal pipal)",
+        "n_seals": 18,
+        "mean_len": 5.39,
+        "median_area_mm2": 749.4,
+        "mean_area_mm2": 889.6,
+        "resid_log_len": 0.1096,
+        "resid_log_len_site": 0.1022,
+        "resid_mm2_len": 66.6,
+        "p_two_len_5000": 0.29874,
+        "p_two_lensite_5000": 0.22076,
+        "p_larger_lensite_5000": 0.11078,
+        "p_smaller_lensite_5000": 0.88942,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 824a *kāṇam (seal-initial split)",
+        "n_seals": 5,
+        "mean_len": 5.2,
+        "median_area_mm2": 841.0,
+        "mean_area_mm2": 808.9,
+        "resid_log_len": 0.147,
+        "resid_log_len_site": 0.1658,
+        "resid_mm2_len": 1.9,
+        "p_two_len_5000": 0.43211,
+        "p_two_lensite_5000": 0.36573,
+        "p_larger_lensite_5000": 0.18016,
+        "p_smaller_lensite_5000": 0.82004,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 877 *nāl-kāṇam (4-diamond)",
+        "n_seals": 8,
+        "mean_len": 4.75,
+        "median_area_mm2": 600.2,
+        "mean_area_mm2": 713.6,
+        "resid_log_len": -0.0375,
+        "resid_log_len_site": -0.0524,
+        "resid_mm2_len": -55.5,
+        "p_two_len_5000": 0.77704,
+        "p_two_lensite_5000": 0.83243,
+        "p_larger_lensite_5000": 0.57628,
+        "p_smaller_lensite_5000": 0.42392,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 880 *kāṇam-*kāl (ligature)",
+        "n_seals": 5,
+        "mean_len": 4.0,
+        "median_area_mm2": 712.9,
+        "mean_area_mm2": 1232.1,
+        "resid_log_len": 0.3605,
+        "resid_log_len_site": 0.3288,
+        "resid_mm2_len": 526.3,
+        "p_two_len_5000": 0.12058,
+        "p_two_lensite_5000": 0.12717,
+        "p_larger_lensite_5000": 0.06079,
+        "p_smaller_lensite_5000": 0.93941,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 645 *kaṭa/*kaṭam (passage-tax)",
+        "n_seals": 3,
+        "mean_len": 7.67,
+        "median_area_mm2": 645.2,
+        "mean_area_mm2": 622.9,
+        "resid_log_len": -0.3828,
+        "resid_log_len_site": -0.377,
+        "resid_mm2_len": -392.0,
+        "p_two_len_5000": 0.15377,
+        "p_two_lensite_5000": 0.13357,
+        "p_larger_lensite_5000": 0.93721,
+        "p_smaller_lensite_5000": 0.06299,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 679 *kuṭai/*maccu (canopy-roof)",
+        "n_seals": 7,
+        "mean_len": 4.43,
+        "median_area_mm2": 1011.2,
+        "mean_area_mm2": 1071.0,
+        "resid_log_len": 0.4259,
+        "resid_log_len_site": 0.408,
+        "resid_mm2_len": 329.0,
+        "p_two_len_5000": 0.02919,
+        "p_two_lensite_5000": 0.14897,
+        "p_larger_lensite_5000": 0.07678,
+        "p_smaller_lensite_5000": 0.92342,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 371/370 *katir (spindle/ray)",
+        "n_seals": 6,
+        "mean_len": 5.83,
+        "median_area_mm2": 1187.1,
+        "mean_area_mm2": 1226.2,
+        "resid_log_len": 0.3848,
+        "resid_log_len_site": 0.4076,
+        "resid_mm2_len": 365.8,
+        "p_two_len_5000": 0.06679,
+        "p_two_lensite_5000": 0.09558,
+        "p_larger_lensite_5000": 0.05259,
+        "p_smaller_lensite_5000": 0.94761,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 554/552 *nāṭu (new bowtie allos)",
+        "n_seals": 6,
+        "mean_len": 4.83,
+        "median_area_mm2": 694.4,
+        "mean_area_mm2": 677.9,
+        "resid_log_len": 0.0113,
+        "resid_log_len_site": 0.0126,
+        "resid_mm2_len": -98.2,
+        "p_two_len_5000": 0.97081,
+        "p_two_lensite_5000": 0.9838,
+        "p_larger_lensite_5000": 0.5009,
+        "p_smaller_lensite_5000": 0.4993,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 921 *vil (bow/sale rescue)",
+        "n_seals": 8,
+        "mean_len": 6.75,
+        "median_area_mm2": 625.2,
+        "mean_area_mm2": 1410.3,
+        "resid_log_len": 0.1466,
+        "resid_log_len_site": 0.1276,
+        "resid_mm2_len": 472.7,
+        "p_two_len_5000": 0.43071,
+        "p_two_lensite_5000": 0.54389,
+        "p_larger_lensite_5000": 0.27115,
+        "p_smaller_lensite_5000": 0.72905,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 792 *meṭṭi (pair/chief)",
+        "n_seals": 3,
+        "mean_len": 4.0,
+        "median_area_mm2": 392.0,
+        "mean_area_mm2": 502.6,
+        "resid_log_len": -0.2278,
+        "resid_log_len_site": -0.2394,
+        "resid_mm2_len": -203.3,
+        "p_two_len_5000": 0.46151,
+        "p_two_lensite_5000": 0.39072,
+        "p_larger_lensite_5000": 0.80364,
+        "p_smaller_lensite_5000": 0.19656,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 136 *kā (yoke/guard W6)",
+        "n_seals": 3,
+        "mean_len": 2.33,
+        "median_area_mm2": 580.8,
+        "mean_area_mm2": 516.8,
+        "resid_log_len": -0.0183,
+        "resid_log_len_site": -0.0379,
+        "resid_mm2_len": -48.6,
+        "p_two_len_5000": 0.91002,
+        "p_two_lensite_5000": 0.9864,
+        "p_larger_lensite_5000": 0.5107,
+        "p_smaller_lensite_5000": 0.4899,
+        "status": "HONEST_NULL"
+      },
+      {
+        "role": "W6: 924 *vari-tiṅkaḷ (hatched moon)",
+        "n_seals": 3,
+        "mean_len": 4.0,
+        "median_area_mm2": 800.7,
+        "mean_area_mm2": 903.7,
+        "resid_log_len": 0.388,
+        "resid_log_len_site": 0.3764,
+        "resid_mm2_len": 197.8,
+        "p_two_len_5000": 0.17936,
+        "p_two_lensite_5000": 0.21696,
+        "p_larger_lensite_5000": 0.10798,
+        "p_smaller_lensite_5000": 0.89222,
+        "status": "HONEST_NULL"
+      }
+    ],
+    "honest_nulls_obj_site": [
+      {
+        "hits_in_target": 6,
+        "total_in_target": 1281,
+        "hits_outside": 40,
+        "total_outside": 2018,
+        "pct_in_target": 0.47,
+        "pct_outside": 1.98,
+        "share_of_sign_in_target_pct": 13.0,
+        "odds_ratio": 0.233,
+        "null_mean_hits": 7.32,
+        "p_strat_5000": 0.80104,
+        "prediction": "585 *paḷḷi -> Harappa Site",
+        "contrast": "Harappa_vs_rest (obj-kind-strat)",
+        "status": "HONEST_NULL"
+      },
+      {
+        "hits_in_target": 3,
+        "total_in_target": 111,
+        "hits_outside": 3,
+        "total_outside": 918,
+        "pct_in_target": 2.7,
+        "pct_outside": 0.33,
+        "share_of_sign_in_target_pct": 50.0,
+        "odds_ratio": 8.472,
+        "null_mean_hits": 1.25,
+        "p_strat_5000": 0.10638,
+        "prediction": "585 *paḷḷi -> Harappa Mound AB Citadel (within Harappa)",
+        "contrast": "MoundAB_vs_Harappa (obj-kind-strat)",
+        "status": "HONEST_NULL"
+      },
+      {
+        "hits_in_target": 3,
+        "total_in_target": 359,
+        "hits_outside": 13,
+        "total_outside": 5004,
+        "pct_in_target": 0.84,
+        "pct_outside": 0.26,
+        "share_of_sign_in_target_pct": 18.8,
+        "odds_ratio": 3.235,
+        "null_mean_hits": 1.83,
+        "p_strat_5000": 0.25675,
+        "prediction": "048/049 *[BRACKET]-ēḻ -> Tags & Sealings",
+        "contrast": "tags_vs_rest (site-strat, all)",
+        "status": "HONEST_NULL"
+      },
+      {
+        "hits_in_target": 17,
+        "total_in_target": 1281,
+        "hits_outside": 5,
+        "total_outside": 2018,
+        "pct_in_target": 1.33,
+        "pct_outside": 0.25,
+        "share_of_sign_in_target_pct": 77.3,
+        "odds_ratio": 5.415,
+        "null_mean_hits": 19.69,
+        "p_strat_5000": 0.9772,
+        "prediction": "167/868 *mukku/*kuntāṇi -> Harappa Site",
+        "contrast": "Harappa_vs_rest (obj-kind-strat)",
+        "status": "HONEST_NULL"
+      },
+      {
+        "hits_in_target": 12,
+        "total_in_target": 775,
+        "hits_outside": 26,
+        "total_outside": 2524,
+        "pct_in_target": 1.55,
+        "pct_outside": 1.03,
+        "share_of_sign_in_target_pct": 31.6,
+        "odds_ratio": 1.511,
+        "null_mean_hits": 13.19,
+        "p_strat_5000": 0.74645,
+        "prediction": "468-cl *pārai -> Tablets (Granary Plough/Crop)",
+        "contrast": "tablets_vs_rest (site-strat)",
+        "status": "HONEST_NULL"
+      },
+      {
+        "hits_in_target": 11,
+        "total_in_target": 434,
+        "hits_outside": 7,
+        "total_outside": 595,
+        "pct_in_target": 2.53,
+        "pct_outside": 1.18,
+        "share_of_sign_in_target_pct": 61.1,
+        "odds_ratio": 2.184,
+        "null_mean_hits": 8.98,
+        "p_strat_5000": 0.24255,
+        "prediction": "468-cl *pārai -> Harappa Mound F Granary (within Harappa)",
+        "contrast": "MoundF_vs_Harappa (obj-kind-strat)",
+        "status": "HONEST_NULL"
+      },
+      {
+        "hits_in_target": 2,
+        "total_in_target": 130,
+        "hits_outside": 32,
+        "total_outside": 3169,
+        "pct_in_target": 1.54,
+        "pct_outside": 1.01,
+        "share_of_sign_in_target_pct": 5.9,
+        "odds_ratio": 1.532,
+        "null_mean_hits": 1.27,
+        "p_strat_5000": 0.36613,
+        "prediction": "384 *āku/*takaṭu -> Copper Tablets (MD)",
+        "contrast": "copper_tablets_vs_rest (site-strat)",
+        "status": "HONEST_NULL"
+      },
+      {
+        "hits_in_target": 14,
+        "total_in_target": 1475,
+        "hits_outside": 20,
+        "total_outside": 1824,
+        "pct_in_target": 0.95,
+        "pct_outside": 1.1,
+        "share_of_sign_in_target_pct": 41.2,
+        "odds_ratio": 0.864,
+        "null_mean_hits": 16.33,
+        "p_strat_5000": 0.88002,
+        "prediction": "384 *āku/*takaṭu -> Mohenjo-daro Site",
+        "contrast": "MD_vs_rest (obj-kind-strat)",
+        "status": "HONEST_NULL"
+      },
+      {
+        "hits_in_target": 6,
+        "total_in_target": 1787,
+        "hits_outside": 5,
+        "total_outside": 1512,
+        "pct_in_target": 0.34,
+        "pct_outside": 0.33,
+        "share_of_sign_in_target_pct": 54.5,
+        "odds_ratio": 1.015,
+        "null_mean_hits": 7.42,
+        "p_strat_5000": 0.91682,
+        "prediction": "347-cl *mā -> Seals",
+        "contrast": "seals_vs_rest (site-strat)",
+        "status": "HONEST_NULL"
+      },
+      {
+        "hits_in_target": 34,
+        "total_in_target": 1787,
+        "hits_outside": 23,
+        "total_outside": 1512,
+        "pct_in_target": 1.9,
+        "pct_outside": 1.52,
+        "share_of_sign_in_target_pct": 59.6,
+        "odds_ratio": 1.256,
+        "null_mean_hits": 33.12,
+        "p_strat_5000": 0.45771,
+        "prediction": "388/382 *aracu/*āku -> Seals (Royal Pipal)",
+        "contrast": "seals_vs_rest (site-strat)",
+        "status": "HONEST_NULL"
+      },
+      {
+        "hits_in_target": 4,
+        "total_in_target": 1281,
+        "hits_outside": 0,
+        "total_outside": 2018,
+        "pct_in_target": 0.31,
+        "pct_outside": 0.0,
+        "share_of_sign_in_target_pct": 100.0,
+        "odds_ratio": 14.22,
+        "null_mean_hits": 2.83,
+        "p_strat_5000": 0.11818,
+        "prediction": "501 *pāy -> Harappa Site (Photo Allograph)",
+        "contrast": "Harappa_vs_rest (obj-kind-strat)",
+        "status": "HONEST_NULL"
+      }
+    ]
+  },
+  "test_8b3_multiface": {
+    "n_permutations": 5000,
+    "corpus_counts": {
+      "total_multiface_all_intact_and_frag": 921,
+      "lipi_multiface_all": 824,
+      "unseen_mah_multiface_all": 97,
+      "intact_multiface_raw": 606,
+      "intact_multiface_batch_dedup": 558,
+      "decoded_100pct_multiface_163_raw": 305,
+      "decoded_100pct_multiface_163_dedup": 269,
+      "decoded_100pct_multiface_227_raw": 378,
+      "decoded_100pct_multiface_227_dedup": 341,
+      "decoded_100pct_multiface_266_strict_raw": 426,
+      "decoded_100pct_multiface_266_strict_dedup": 387,
+      "decoded_100pct_multiface_272_raw": 434,
+      "decoded_100pct_multiface_272_dedup": 395,
+      "decoded_100pct_multiface_key8a_raw": 434,
+      "decoded_100pct_multiface_key8a_dedup": 395,
+      "progression": {
+        "163_signs": {
+          "raw": 305,
+          "pct": 50.33,
+          "dedup": 269
+        },
+        "227_signs": {
+          "raw": 378,
+          "pct": 62.38,
+          "dedup": 341
+        },
+        "266_strict": {
+          "raw": 426,
+          "pct": 70.3,
+          "dedup": 387
+        },
+        "272_full": {
+          "raw": 434,
+          "pct": 71.62,
+          "dedup": 395
+        }
+      },
+      "decoded_272_by_kind": {
+        "tablets": 369,
+        "seals": 38,
+        "pots": 3,
+        "copper tablets": 14,
+        "other objects": 2,
+        "tags and sealings": 8
+      },
+      "decoded_272_by_site": {
+        "Harappa": 361,
+        "Farmana": 1,
+        "Kalibangan": 5,
+        "Lothal": 2,
+        "Mohenjo-daro": 59,
+        "Rupar": 1,
+        "Unknown": 1,
+        "Rajanpur": 1,
+        "Lakhanjo-daro": 1,
+        "Chanhu-daro": 1,
+        "other": 1
+      },
+      "decoded_272_with_split824": 8
+    },
+    "test_8b3a_complementarity": {
+      "strict_who_meas_2face": {
+        "label": "2-face WHO vs MEAS pool (batch-dedup, 272 signs)",
+        "n_objects": 375,
+        "obs_complementary": 306,
+        "obs_complementary_pct": 81.6,
+        "obs_both_who": 58,
+        "obs_both_meas": 11,
+        "null_repair_mean": 188.63,
+        "p_repair_5000": 0.0002,
+        "null_poolpair_mean": 180.56,
+        "p_poolpair_5000": 0.0002
+      },
+      "all_nonident_2face": {
+        "label": "All non-identical 2-face objects (batch-dedup, 272 signs)",
+        "n_objects": 511,
+        "obs_complementary": 306,
+        "obs_complementary_pct": 59.88,
+        "obs_both_who": 58,
+        "obs_both_meas": 11,
+        "null_repair_mean": 181.85,
+        "p_repair_5000": 0.0002,
+        "null_poolpair_mean": 177.03,
+        "p_poolpair_5000": 0.0002
+      },
+      "ge2_face_nonident_with_both_who_and_meas": {
+        "k": 323,
+        "n": 534,
+        "pct": 60.49
+      }
+    },
+    "test_8b3b_comm_to_measure": {
+      "n_comm_unit": 351,
+      "chi2_unit": 100.33,
+      "null_chi2_unit_mean": 77.587,
+      "p_unit_5000": 0.04919,
+      "comm_unit_table": {
+        "Grain_Tax_ari_kampu_parai": {
+          "ala_cup_9.2L": 9,
+          "kalam_111L": 0,
+          "pati_1.16L": 0,
+          "other_unit": 3,
+          "kottai_665L": 0
+        },
+        "Tribute_irai": {
+          "ala_cup_9.2L": 46,
+          "kalam_111L": 0,
+          "pati_1.16L": 0,
+          "other_unit": 0,
+          "kottai_665L": 1
+        },
+        "Share_kanam": {
+          "ala_cup_9.2L": 29,
+          "kalam_111L": 0,
+          "pati_1.16L": 0,
+          "other_unit": 0,
+          "kottai_665L": 0
+        },
+        "Textile_Bale": {
+          "ala_cup_9.2L": 25,
+          "kalam_111L": 5,
+          "pati_1.16L": 0,
+          "other_unit": 0,
+          "kottai_665L": 0
+        },
+        "Star_Clan_min": {
+          "ala_cup_9.2L": 61,
+          "kalam_111L": 2,
+          "pati_1.16L": 0,
+          "other_unit": 0,
+          "kottai_665L": 1
+        },
+        "Other": {
+          "ala_cup_9.2L": 94,
+          "kalam_111L": 1,
+          "pati_1.16L": 5,
+          "other_unit": 4,
+          "kottai_665L": 1
+        },
+        "Sale_vil": {
+          "ala_cup_9.2L": 4,
+          "kalam_111L": 0,
+          "pati_1.16L": 0,
+          "other_unit": 0,
+          "kottai_665L": 0
+        },
+        "Porter_Guard_ka": {
+          "ala_cup_9.2L": 22,
+          "kalam_111L": 7,
+          "pati_1.16L": 0,
+          "other_unit": 0,
+          "kottai_665L": 0
+        },
+        "Month_tinkal": {
+          "ala_cup_9.2L": 17,
+          "kalam_111L": 0,
+          "pati_1.16L": 0,
+          "other_unit": 0,
+          "kottai_665L": 0
+        },
+        "Maritime_turai_pay": {
+          "ala_cup_9.2L": 3,
+          "kalam_111L": 0,
+          "pati_1.16L": 0,
+          "other_unit": 0,
+          "kottai_665L": 0
+        },
+        "Pact_inai": {
+          "ala_cup_9.2L": 11,
+          "kalam_111L": 0,
+          "pati_1.16L": 0,
+          "other_unit": 0,
+          "kottai_665L": 0
+        }
+      },
+      "n_comm_cups": 311,
+      "chi2_cups": 68.067,
+      "null_chi2_cups_mean": 27.893,
+      "p_chi2_cups_5000": 0.006,
+      "kw_H_cups": 14.114,
+      "p_kw_cups_5000": 0.14837,
+      "comm_cups_summary": {
+        "Grain_Tax_ari_kampu_parai": {
+          "n": 9,
+          "mean_cups": 2.89,
+          "counts": {
+            "1": 0,
+            "2": 2,
+            "3": 6,
+            "4": 1
+          }
+        },
+        "Tribute_irai": {
+          "n": 46,
+          "mean_cups": 3.11,
+          "counts": {
+            "1": 0,
+            "2": 10,
+            "3": 21,
+            "4": 15
+          }
+        },
+        "Share_kanam": {
+          "n": 29,
+          "mean_cups": 3.07,
+          "counts": {
+            "1": 0,
+            "2": 10,
+            "3": 7,
+            "4": 12
+          }
+        },
+        "Textile_Bale": {
+          "n": 25,
+          "mean_cups": 2.76,
+          "counts": {
+            "1": 0,
+            "2": 9,
+            "3": 13,
+            "4": 3
+          }
+        },
+        "Star_Clan_min": {
+          "n": 57,
+          "mean_cups": 3.11,
+          "counts": {
+            "1": 0,
+            "2": 14,
+            "3": 23,
+            "4": 20
+          }
+        },
+        "Other": {
+          "n": 92,
+          "mean_cups": 2.9,
+          "counts": {
+            "1": 1,
+            "2": 33,
+            "3": 32,
+            "4": 26
+          }
+        },
+        "Sale_vil": {
+          "n": 4,
+          "mean_cups": 2.0,
+          "counts": {
+            "1": 1,
+            "2": 2,
+            "3": 1,
+            "4": 0
+          }
+        },
+        "Porter_Guard_ka": {
+          "n": 22,
+          "mean_cups": 3.27,
+          "counts": {
+            "1": 0,
+            "2": 4,
+            "3": 8,
+            "4": 10
+          }
+        },
+        "Month_tinkal": {
+          "n": 16,
+          "mean_cups": 2.94,
+          "counts": {
+            "1": 0,
+            "2": 3,
+            "3": 11,
+            "4": 2
+          }
+        },
+        "Pact_inai": {
+          "n": 11,
+          "mean_cups": 2.91,
+          "counts": {
+            "1": 0,
+            "2": 2,
+            "3": 8,
+            "4": 1
+          }
+        }
+      }
+    },
+    "test_8b3c_rank_to_contract_and_ration": {
+      "n_rank_cups": 269,
+      "kw_H_rank_cups": 3.154,
+      "p_kw_rank_cups_5000": 0.52929,
+      "elite_vs_junior_diff_cups": 0.118,
+      "p_elite_vs_junior_5000": 0.25095,
+      "rank_cups_summary": {
+        "Manager_al": {
+          "n": 9,
+          "mean_cups": 3.11,
+          "median_cups": 3.0,
+          "dist": {
+            "4": 2,
+            "3": 6,
+            "2": 1
+          }
+        },
+        "Junior_cikka": {
+          "n": 135,
+          "mean_cups": 2.96,
+          "median_cups": 3.0,
+          "dist": {
+            "2": 41,
+            "4": 38,
+            "3": 55,
+            "1": 1
+          }
+        },
+        "House_kuti_palli": {
+          "n": 73,
+          "mean_cups": 2.93,
+          "median_cups": 3.0,
+          "dist": {
+            "3": 37,
+            "2": 19,
+            "4": 16,
+            "1": 1
+          }
+        },
+        "Elite_vel_talai_ko_aracu": {
+          "n": 37,
+          "mean_cups": 3.08,
+          "median_cups": 3.0,
+          "dist": {
+            "2": 11,
+            "3": 12,
+            "4": 14
+          }
+        },
+        "Guard_Porter_ka": {
+          "n": 15,
+          "mean_cups": 3.27,
+          "median_cups": 3.0,
+          "dist": {
+            "3": 5,
+            "4": 7,
+            "2": 3
+          }
+        }
+      },
+      "n_rank_partner_class": 435,
+      "chi2_rank_partner_class": 67.116,
+      "null_chi2_rp_mean": 34.255,
+      "p_rank_partner_class_5000": 0.0008,
+      "rank_partner_table": {
+        "Manager_al": {
+          "MEASURE_RATION": 9,
+          "WHO_OFFICE_HOUSE": 7,
+          "COUNT_ONLY": 0,
+          "OTHER_UNDEC": 0,
+          "COMMODITY_TAX_SHARE": 4
+        },
+        "Junior_cikka": {
+          "MEASURE_RATION": 146,
+          "WHO_OFFICE_HOUSE": 7,
+          "COUNT_ONLY": 1,
+          "OTHER_UNDEC": 3,
+          "COMMODITY_TAX_SHARE": 14
+        },
+        "Elite_vel_talai_ko_aracu": {
+          "MEASURE_RATION": 40,
+          "WHO_OFFICE_HOUSE": 16,
+          "COUNT_ONLY": 2,
+          "OTHER_UNDEC": 10,
+          "COMMODITY_TAX_SHARE": 7
+        },
+        "House_kuti_palli": {
+          "MEASURE_RATION": 82,
+          "WHO_OFFICE_HOUSE": 25,
+          "COUNT_ONLY": 2,
+          "OTHER_UNDEC": 15,
+          "COMMODITY_TAX_SHARE": 23
+        },
+        "Guard_Porter_ka": {
+          "MEASURE_RATION": 16,
+          "WHO_OFFICE_HOUSE": 1,
+          "COUNT_ONLY": 0,
+          "OTHER_UNDEC": 0,
+          "COMMODITY_TAX_SHARE": 5
+        }
+      }
+    },
+    "test_8b3d_numeral_arithmetic": {
+      "batch_dedup": {
+        "label": "Batch-dedup multi-face objects (272 signs)",
+        "n_objects": 142,
+        "obs_eq_f1_f2": 48,
+        "obs_eq_pct": 33.8,
+        "null_eq_mean": 39.99,
+        "p_eq_5000": 0.05139,
+        "obs_prod12_f1_f2": 5,
+        "obs_prod12_pct": 3.52,
+        "null_prod12_mean": 12.49,
+        "p_prod12_5000": 0.999,
+        "obs_any_facepair_eq": 50,
+        "obs_any_facepair_prod12": 5,
+        "examples_eq": [
+          "176-740-400 || 176-740-400 || 033-700 || 033-700",
+          "013-840-740 || 033-700",
+          "176-740-400 || 033-700 || 033-700",
+          "817-002-240-904-740 || 032-700",
+          "240-705-033-550-525-400 || 413-575-335-711-033-700",
+          "033-384-740-400 || 033-700",
+          "491-920-002-176-740-335-740-317 || 413-575-335-740-032-700",
+          "820-002-139 || 390-032-700",
+          "820-002-554-526 || 032-700",
+          "013-840-740-400 || 003-798-617",
+          "416-220-760-740-400 || 416-220-760-740-400 || 004-700-220 || 004-700-220",
+          "013-840-740 || 033-700"
+        ],
+        "examples_prod12": [
+          "013-060-032-740-400 || 034-700",
+          "840-032-740-090-400 || 853-016-390-401",
+          "003-861 || 034-700 || 003-156",
+          "034-700 || 003-861 || 003-154",
+          "700-034 || 033-033-520"
+        ]
+      },
+      "raw_physical": {
+        "label": "Raw physical multi-face objects (272 signs)",
+        "n_objects": 163,
+        "obs_eq_f1_f2": 49,
+        "obs_eq_pct": 30.06,
+        "null_eq_mean": 47.21,
+        "p_eq_5000": 0.39032,
+        "obs_prod12_f1_f2": 24,
+        "obs_prod12_pct": 14.72,
+        "null_prod12_mean": 20.69,
+        "p_prod12_5000": 0.20796,
+        "obs_any_facepair_eq": 70,
+        "obs_any_facepair_prod12": 24,
+        "examples_eq": [
+          "176-740-400 || 176-740-400 || 033-700 || 033-700",
+          "013-840-740 || 033-700",
+          "176-740-400 || 033-700 || 033-700",
+          "817-002-240-904-740 || 032-700",
+          "240-705-033-550-525-400 || 413-575-335-711-033-700",
+          "033-384-740-400 || 033-700",
+          "491-920-002-176-740-335-740-317 || 413-575-335-740-032-700",
+          "820-002-139 || 390-032-700",
+          "820-002-554-526 || 032-700",
+          "013-840-740-400 || 003-798-617",
+          "416-220-760-740-400 || 416-220-760-740-400 || 004-700-220 || 004-700-220",
+          "013-840-740 || 033-700"
+        ],
+        "examples_prod12": [
+          "013-060-032-740-400 || 034-700",
+          "840-032-740-090-400 || 853-016-390-401",
+          "003-861 || 034-700 || 003-156",
+          "034-700 || 003-861 || 003-154",
+          "700-034 || 033-033-520",
+          "003-861 || 034-700 || 003-156",
+          "034-700 || 003-861 || 003-156",
+          "003-861 || 034-700 || 003-156",
+          "003-861 || 034-700 || 003-156",
+          "003-861 || 034-700 || 003-156",
+          "034-700 || 003-861 || 003-156",
+          "003-861 || 034-700 || 003-156"
+        ]
+      }
+    },
+    "top20_newly_unlocked_records": [
+      {
+        "obj_id": "L:1227",
+        "ref_id": "H-196",
+        "catalogue": "Lipi",
+        "site": "Harappa",
+        "object_kind": "tablets",
+        "lipi_type": "TAB:B",
+        "findspot": "FTrench III|--|-N9/8",
+        "n_faces": 3,
+        "total_signs": 10,
+        "unlocked_tier": "Key7A_227",
+        "is_strict_266": false,
+        "has_wave56_sign": true,
+        "has_split_824": false,
+        "is_complementary_who_meas": true,
+        "numeral_equality": false,
+        "numeral_prod12": false,
+        "face_classes": "WHO_OFFICE_HOUSE || MEASURE_RATION || WHO_OFFICE_HOUSE",
+        "face_signs": "072-740-590-407 || 706-167 || 001-100-700-032",
+        "proto_dravidian_faces": "[ARROW-PRE-VĒḶ] *kuṭi/*kuṭam *mūṭai *kōṭi || 705 *mukku || *oru *talai *aḷa *iru",
+        "english_unified_transaction": "[Pre-Vēḷ-Arrow] · House · Bale(*mūṭai) · New-Cloth(*kōṭi) || Kalam · Kalam-Ring(*mukku) || 1 · Chief(*talai) · 2 aḷa-Cup(9.2L)",
+        "copies_in_corpus": 1
+      },
+      {
+        "obj_id": "L:1323",
+        "ref_id": "H-301",
+        "catalogue": "Lipi",
+        "site": "Harappa",
+        "object_kind": "tablets",
+        "lipi_type": "TAB:I",
+        "findspot": "FTrench I|--|-M11/20",
+        "n_faces": 2,
+        "total_signs": 10,
+        "unlocked_tier": "Key8A_266_Strict",
+        "is_strict_266": true,
+        "has_wave56_sign": true,
+        "has_split_824": true,
+        "is_complementary_who_meas": false,
+        "numeral_equality": false,
+        "numeral_prod12": false,
+        "face_classes": "COMMODITY_TAX_SHARE || WHO_OFFICE_HOUSE",
+        "face_signs": "413-892-824b || 171-032-031-240-636-740-400",
+        "proto_dravidian_faces": "*ari *vil *nāl-kāṇam || *tūṅku *iru *oru *katir-mīṉ *kūṭu *kuṭi/*kuṭam *cikka/*cikkam",
+        "english_unified_transaction": "Grain-Tax(*ari) · Sale(*vil) · 4-Share(*nāl-kāṇam) || 2 Weight-Std(*tūṅku) · 1 · Rayed-Star · Granary-House (*kūṭṭukkuṭi) · Junior(*cikka)",
+        "copies_in_corpus": 3
+      },
+      {
+        "obj_id": "L:1666",
+        "ref_id": "H-774",
+        "catalogue": "Lipi",
+        "site": "Harappa",
+        "object_kind": "tablets",
+        "lipi_type": "TAB:B",
+        "findspot": "FTrench Ab|--|--",
+        "n_faces": 2,
+        "total_signs": 12,
+        "unlocked_tier": "Key8A_266_Strict",
+        "is_strict_266": true,
+        "has_wave56_sign": true,
+        "has_split_824": false,
+        "is_complementary_who_meas": true,
+        "numeral_equality": true,
+        "numeral_prod12": false,
+        "face_classes": "WHO_OFFICE_HOUSE || MEASURE_RATION",
+        "face_signs": "240-705-033-550-525-400 || 413-575-335-711-033-700",
+        "proto_dravidian_faces": "*katir-mīṉ *kalam/*kaḷam *mū *nāṭu *uḻalai/*meṭṭu *cikka/*cikkam || *ari *kōṭṭai *koḍame *vaḷḷam *mū *aḷa",
+        "english_unified_transaction": "Rayed-Star · Kalam(111L) · 3 · District-Gate (*nāṭṭumeṭṭu) · Junior(*cikka) || Grain-Tax(*ari) · Kōṭṭai(665L) · Grain-Bin(*koḍame) · Vaḷḷam(37L) · 3 aḷa-cups (27.6L)",
+        "copies_in_corpus": 3
+      },
+      {
+        "obj_id": "L:2488",
+        "ref_id": "Lipi-2488",
+        "catalogue": "Lipi",
+        "site": "Mohenjo-daro",
+        "object_kind": "copper tablets",
+        "lipi_type": "TAB:C",
+        "findspot": "L-|--|--",
+        "n_faces": 2,
+        "total_signs": 7,
+        "unlocked_tier": "Key7A_227",
+        "is_strict_266": true,
+        "has_wave56_sign": true,
+        "has_split_824": false,
+        "is_complementary_who_meas": true,
+        "numeral_equality": true,
+        "numeral_prod12": false,
+        "face_classes": "MEASURE_RATION || WHO_OFFICE_HOUSE",
+        "face_signs": "003-422 || 705-033-923-740-001",
+        "proto_dravidian_faces": "*mū *iṟu || *kalam/*kaḷam *mū *maruppu *kuṭi/*kuṭam *oru",
+        "english_unified_transaction": "3 share-units (*muppāl) || Kalam(111L) · 3 · Ivory(*maruppu) · House · 1",
+        "copies_in_corpus": 1
+      },
+      {
+        "obj_id": "L:653",
+        "ref_id": "H-1813",
+        "catalogue": "Lipi",
+        "site": "Harappa",
+        "object_kind": "tablets",
+        "lipi_type": "TAB:B",
+        "findspot": "ETrench 10W/11|--|--",
+        "n_faces": 2,
+        "total_signs": 12,
+        "unlocked_tier": "Key8A_266_Strict",
+        "is_strict_266": true,
+        "has_wave56_sign": true,
+        "has_split_824": false,
+        "is_complementary_who_meas": true,
+        "numeral_equality": true,
+        "numeral_prod12": false,
+        "face_classes": "WHO_OFFICE_HOUSE || MEASURE_RATION",
+        "face_signs": "220-705-033-550-525-400 || 413-575-335-711-033-700",
+        "proto_dravidian_faces": "*mīṉ *kalam/*kaḷam *mū *nāṭu *uḻalai/*meṭṭu *cikka/*cikkam || *ari *kōṭṭai *koḍame *vaḷḷam *mū *aḷa",
+        "english_unified_transaction": "Star-Clan(*mīṉ) · Kalam(111L) · 3 · District-Gate (*nāṭṭumeṭṭu) · Junior(*cikka) || Grain-Tax(*ari) · Kōṭṭai(665L) · Grain-Bin(*koḍame) · Vaḷḷam(37L) · 3 aḷa-cups (27.6L)",
+        "copies_in_corpus": 1
+      },
+      {
+        "obj_id": "L:2989",
+        "ref_id": "M-513",
+        "catalogue": "Lipi",
+        "site": "Mohenjo-daro",
+        "object_kind": "copper tablets",
+        "lipi_type": "TAB:C",
+        "findspot": "DKE|Trench E-|-1010/0860",
+        "n_faces": 2,
+        "total_signs": 5,
+        "unlocked_tier": "Key7A_227",
+        "is_strict_266": true,
+        "has_wave56_sign": true,
+        "has_split_824": false,
+        "is_complementary_who_meas": true,
+        "numeral_equality": false,
+        "numeral_prod12": false,
+        "face_classes": "MEASURE_RATION || WHO_OFFICE_HOUSE",
+        "face_signs": "005-706 || 233-585-407",
+        "proto_dravidian_faces": "*ai 705 || *veṭi-mīṉ *paḷḷi *kōṭi",
+        "english_unified_transaction": "5 kalams || Dawn-Star · Citadel-Shrine(*paḷḷi) · New-Cloth(*kōṭi)",
+        "copies_in_corpus": 3
+      },
+      {
+        "obj_id": "L:1236",
+        "ref_id": "H-205",
+        "catalogue": "Lipi",
+        "site": "Harappa",
+        "object_kind": "tablets",
+        "lipi_type": "TAB:B",
+        "findspot": "FGranery|--|-J9/24",
+        "n_faces": 2,
+        "total_signs": 10,
+        "unlocked_tier": "Key7A_227",
+        "is_strict_266": true,
+        "has_wave56_sign": true,
+        "has_split_824": false,
+        "is_complementary_who_meas": true,
+        "numeral_equality": false,
+        "numeral_prod12": false,
+        "face_classes": "WHO_OFFICE_HOUSE || MEASURE_RATION",
+        "face_signs": "850-741-048-740 || 413-575-335-711-033-700",
+        "proto_dravidian_faces": "*kaṇ/*kaṉ *oru-kuṭi *[BRACKET]-ēḻ *kuṭi/*kuṭam || *ari *kōṭṭai *koḍame *vaḷḷam *mū *aḷa",
+        "english_unified_transaction": "Copper/Eye(*kaṇ) · 1st-House · 7 · House || Grain-Tax(*ari) · Kōṭṭai(665L) · Grain-Bin(*koḍame) · Vaḷḷam(37L) · 3 aḷa-cups (27.6L)",
+        "copies_in_corpus": 1
+      },
+      {
+        "obj_id": "L:1678",
+        "ref_id": "H-787",
+        "catalogue": "Lipi",
+        "site": "Harappa",
+        "object_kind": "tablets",
+        "lipi_type": "TAB:B",
+        "findspot": "--|--|--",
+        "n_faces": 2,
+        "total_signs": 8,
+        "unlocked_tier": "Key8A_266_Strict",
+        "is_strict_266": true,
+        "has_wave56_sign": true,
+        "has_split_824": true,
+        "is_complementary_who_meas": false,
+        "numeral_equality": false,
+        "numeral_prod12": false,
+        "face_classes": "COMMODITY_TAX_SHARE || WHO_OFFICE_HOUSE",
+        "face_signs": "413-892-824b || 033-700-176-740-400",
+        "proto_dravidian_faces": "*ari *vil *nāl-kāṇam || *mū *aḷa *iṟai/*iru *kuṭi/*kuṭam *cikka/*cikkam",
+        "english_unified_transaction": "Grain-Tax(*ari) · Sale(*vil) · 4-Share(*nāl-kāṇam) || 3 aḷa-cups (27.6L) · Tribute(*iṟai) · House · Junior(*cikka)",
+        "copies_in_corpus": 1
+      },
+      {
+        "obj_id": "L:1786",
+        "ref_id": "H-904",
+        "catalogue": "Lipi",
+        "site": "Harappa",
+        "object_kind": "tablets",
+        "lipi_type": "TAB:I",
+        "findspot": "D-|--|-S20/7",
+        "n_faces": 2,
+        "total_signs": 10,
+        "unlocked_tier": "Key8A_266_Strict",
+        "is_strict_266": true,
+        "has_wave56_sign": true,
+        "has_split_824": false,
+        "is_complementary_who_meas": true,
+        "numeral_equality": false,
+        "numeral_prod12": false,
+        "face_classes": "WHO_OFFICE_HOUSE || MEASURE_RATION",
+        "face_signs": "002-840-032-740 || 817-368-645-900-033-700",
+        "proto_dravidian_faces": "*iru *iṇai *iru *kuṭi/*kuṭam || *kāṇam *koṭi *kaṭa/*kaṭam *tiṅkaḷ *mū *aḷa",
+        "english_unified_transaction": "2 · Pact(*iṇai) · 2 · House || Share(*kāṇam) · Grant(*koṭi) · Passage-Tax(*kaṭam) · Month(*tiṅkaḷ) · 3 aḷa-cups (27.6L)",
+        "copies_in_corpus": 1
+      },
+      {
+        "obj_id": "L:1240",
+        "ref_id": "H-209",
+        "catalogue": "Lipi",
+        "site": "Harappa",
+        "object_kind": "tablets",
+        "lipi_type": "TAB:B",
+        "findspot": "F-|--|--",
+        "n_faces": 2,
+        "total_signs": 8,
+        "unlocked_tier": "Key8A_266_Strict",
+        "is_strict_266": true,
+        "has_wave56_sign": true,
+        "has_split_824": false,
+        "is_complementary_who_meas": true,
+        "numeral_equality": false,
+        "numeral_prod12": false,
+        "face_classes": "WHO_OFFICE_HOUSE || MEASURE_RATION",
+        "face_signs": "055-255-435-690-921-400 || 032-700",
+        "proto_dravidian_faces": "*paṉṉiru *mutal *tōṭṭi *kaṭṭu *vil *cikka/*cikkam || *iru *aḷa",
+        "english_unified_transaction": "12 · Principal(*mutal) · Watchman(*tōṭṭi) · Store-Bundle(*kaṭṭu) · Sale(*vil) · Junior(*cikka) || 2 aḷa-cups (18.4L)",
+        "copies_in_corpus": 1
+      },
+      {
+        "obj_id": "L:1677",
+        "ref_id": "H-786",
+        "catalogue": "Lipi",
+        "site": "Harappa",
+        "object_kind": "tablets",
+        "lipi_type": "TAB:B",
+        "findspot": "--|--|--",
+        "n_faces": 2,
+        "total_signs": 6,
+        "unlocked_tier": "Key8A_266_Strict",
+        "is_strict_266": true,
+        "has_wave56_sign": true,
+        "has_split_824": true,
+        "is_complementary_who_meas": false,
+        "numeral_equality": false,
+        "numeral_prod12": false,
+        "face_classes": "COMMODITY_TAX_SHARE || WHO_OFFICE_HOUSE",
+        "face_signs": "413-892-824b || 415-220-520",
+        "proto_dravidian_faces": "*ari *vil *nāl-kāṇam || *kavar *mīṉ *vēḷ/*vēl",
+        "english_unified_transaction": "Grain-Tax(*ari) · Sale(*vil) · 4-Share(*nāl-kāṇam) || Control(*kavar) · Star-Clan(*mīṉ) · Lord(*vēḷ)",
+        "copies_in_corpus": 1
+      },
+      {
+        "obj_id": "L:459",
+        "ref_id": "H-1991",
+        "catalogue": "Lipi",
+        "site": "Harappa",
+        "object_kind": "tablets",
+        "lipi_type": "TAB:B",
+        "findspot": "ETrench 54|--|--",
+        "n_faces": 2,
+        "total_signs": 6,
+        "unlocked_tier": "Key8A_266_Strict",
+        "is_strict_266": true,
+        "has_wave56_sign": true,
+        "has_split_824": true,
+        "is_complementary_who_meas": false,
+        "numeral_equality": false,
+        "numeral_prod12": false,
+        "face_classes": "COMMODITY_TAX_SHARE || WHO_OFFICE_HOUSE",
+        "face_signs": "413-892-824b || 415-100-740",
+        "proto_dravidian_faces": "*ari *vil *nāl-kāṇam || *kavar *talai *kuṭi/*kuṭam",
+        "english_unified_transaction": "Grain-Tax(*ari) · Sale(*vil) · 4-Share(*nāl-kāṇam) || Control(*kavar) · Chief(*talai) · House",
+        "copies_in_corpus": 1
+      },
+      {
+        "obj_id": "L:472",
+        "ref_id": "H-2084",
+        "catalogue": "Lipi",
+        "site": "Harappa",
+        "object_kind": "tablets",
+        "lipi_type": "TAB:I",
+        "findspot": "ETrench 54|--|--",
+        "n_faces": 2,
+        "total_signs": 6,
+        "unlocked_tier": "Key8A_266_Strict",
+        "is_strict_266": true,
+        "has_wave56_sign": true,
+        "has_split_824": true,
+        "is_complementary_who_meas": false,
+        "numeral_equality": false,
+        "numeral_prod12": false,
+        "face_classes": "WHO_OFFICE_HOUSE || COMMODITY_TAX_SHARE",
+        "face_signs": "235-555-526 || 413-892-824b",
+        "proto_dravidian_faces": "*oḷi-mīṉ *nāṭu *uḻalai || *ari *vil *nāl-kāṇam",
+        "english_unified_transaction": "Bright-Star · District-Gate (*nāṭṭumeṭṭu) || Grain-Tax(*ari) · Sale(*vil) · 4-Share(*nāl-kāṇam)",
+        "copies_in_corpus": 1
+      },
+      {
+        "obj_id": "L:532",
+        "ref_id": "H-2069",
+        "catalogue": "Lipi",
+        "site": "Harappa",
+        "object_kind": "tablets",
+        "lipi_type": "TAB:I",
+        "findspot": "E-ETTrench 10W|--|--",
+        "n_faces": 2,
+        "total_signs": 8,
+        "unlocked_tier": "Key8A_266_Strict",
+        "is_strict_266": true,
+        "has_wave56_sign": true,
+        "has_split_824": false,
+        "is_complementary_who_meas": true,
+        "numeral_equality": false,
+        "numeral_prod12": false,
+        "face_classes": "MEASURE_RATION || WHO_OFFICE_HOUSE",
+        "face_signs": "590-705-868 || 550-525-400-034-700",
+        "proto_dravidian_faces": "*mūṭai *kalam/*kaḷam *mukku || *nāṭu *uḻalai/*meṭṭu *cikka/*cikkam *nāl *aḷa",
+        "english_unified_transaction": "Bale(*mūṭai) · Kalam(111L) · Kalam-Ring(*mukku) || District-Gate (*nāṭṭumeṭṭu) · Junior(*cikka) · 4 aḷa-cups (36.8L)",
+        "copies_in_corpus": 1
+      },
+      {
+        "obj_id": "L:1321",
+        "ref_id": "H-299",
+        "catalogue": "Lipi",
+        "site": "Harappa",
+        "object_kind": "tablets",
+        "lipi_type": "TAB:I",
+        "findspot": "--|--|--",
+        "n_faces": 2,
+        "total_signs": 7,
+        "unlocked_tier": "Key7A_227",
+        "is_strict_266": true,
+        "has_wave56_sign": true,
+        "has_split_824": false,
+        "is_complementary_who_meas": true,
+        "numeral_equality": false,
+        "numeral_prod12": false,
+        "face_classes": "MEASURE_RATION || WHO_OFFICE_HOUSE",
+        "face_signs": "590-706-868 || 255-435-156-400",
+        "proto_dravidian_faces": "*mūṭai 705 *mukku || *mutal *tōṭṭi 154 *cikka/*cikkam",
+        "english_unified_transaction": "Bale(*mūṭai) · Kalam · Kalam-Ring(*mukku) || Principal(*mutal) · Watchman(*tōṭṭi) · Guard(*kā) · Junior(*cikka)",
+        "copies_in_corpus": 4
+      },
+      {
+        "obj_id": "L:1778",
+        "ref_id": "H-896",
+        "catalogue": "Lipi",
+        "site": "Harappa",
+        "object_kind": "tablets",
+        "lipi_type": "TAB:I",
+        "findspot": "FTrench I|--|-M11/18",
+        "n_faces": 2,
+        "total_signs": 7,
+        "unlocked_tier": "Key7A_227",
+        "is_strict_266": true,
+        "has_wave56_sign": true,
+        "has_split_824": false,
+        "is_complementary_who_meas": true,
+        "numeral_equality": false,
+        "numeral_prod12": false,
+        "face_classes": "MEASURE_RATION || WHO_OFFICE_HOUSE",
+        "face_signs": "590-705-868 || 255-435-156-400",
+        "proto_dravidian_faces": "*mūṭai *kalam/*kaḷam *mukku || *mutal *tōṭṭi 154 *cikka/*cikkam",
+        "english_unified_transaction": "Bale(*mūṭai) · Kalam(111L) · Kalam-Ring(*mukku) || Principal(*mutal) · Watchman(*tōṭṭi) · Guard(*kā) · Junior(*cikka)",
+        "copies_in_corpus": 2
+      },
+      {
+        "obj_id": "L:1319",
+        "ref_id": "H-297",
+        "catalogue": "Lipi",
+        "site": "Harappa",
+        "object_kind": "tablets",
+        "lipi_type": "TAB:I",
+        "findspot": "--|--|--",
+        "n_faces": 2,
+        "total_signs": 7,
+        "unlocked_tier": "Key7A_227",
+        "is_strict_266": true,
+        "has_wave56_sign": true,
+        "has_split_824": false,
+        "is_complementary_who_meas": true,
+        "numeral_equality": false,
+        "numeral_prod12": false,
+        "face_classes": "WHO_OFFICE_HOUSE || MEASURE_RATION",
+        "face_signs": "706-630-336-151-400 || 034-700",
+        "proto_dravidian_faces": "705 *kūṭu *mūṭai *kā *cikka/*cikkam || *nāl *aḷa",
+        "english_unified_transaction": "Kalam · Granary(*kūṭu) · Grain-Bin(*mūṭai) · Guard(*kā) · Junior(*cikka) || 4 aḷa-cups (36.8L)",
+        "copies_in_corpus": 1
+      },
+      {
+        "obj_id": "L:1712",
+        "ref_id": "H-823",
+        "catalogue": "Lipi",
+        "site": "Harappa",
+        "object_kind": "tablets",
+        "lipi_type": "TAB:B",
+        "findspot": "--|--|--",
+        "n_faces": 2,
+        "total_signs": 7,
+        "unlocked_tier": "Key7A_227",
+        "is_strict_266": false,
+        "has_wave56_sign": true,
+        "has_split_824": false,
+        "is_complementary_who_meas": true,
+        "numeral_equality": false,
+        "numeral_prod12": false,
+        "face_classes": "MEASURE_RATION || WHO_OFFICE_HOUSE",
+        "face_signs": "034-700 || 692-060-240-636-740",
+        "proto_dravidian_faces": "*nāl *aḷa || [PRECINCT-HEADER] *-uḷ *katir-mīṉ *kūṭu *kuṭi/*kuṭam",
+        "english_unified_transaction": "4 aḷa-cups (36.8L) || In [Precinct-Header] · Rayed-Star · Granary-House (*kūṭṭukkuṭi)",
+        "copies_in_corpus": 1
+      },
+      {
+        "obj_id": "L:1781",
+        "ref_id": "H-899",
+        "catalogue": "Lipi",
+        "site": "Harappa",
+        "object_kind": "tablets",
+        "lipi_type": "TAB:I",
+        "findspot": "D-|--|-S30/4",
+        "n_faces": 2,
+        "total_signs": 7,
+        "unlocked_tier": "Key7A_227",
+        "is_strict_266": true,
+        "has_wave56_sign": true,
+        "has_split_824": false,
+        "is_complementary_who_meas": true,
+        "numeral_equality": false,
+        "numeral_prod12": false,
+        "face_classes": "MEASURE_RATION || WHO_OFFICE_HOUSE",
+        "face_signs": "590-705-868 || 240-231-520-400",
+        "proto_dravidian_faces": "*mūṭai *kalam/*kaḷam *mukku || *katir-mīṉ *uḷ-mīṉ *vēḷ/*vēl *cikka/*cikkam",
+        "english_unified_transaction": "Bale(*mūṭai) · Kalam(111L) · Kalam-Ring(*mukku) || Rayed-Star · Inner-Star · Lord(*vēḷ) · Junior(*cikka)",
+        "copies_in_corpus": 1
+      },
+      {
+        "obj_id": "L:295",
+        "ref_id": "H-1187",
+        "catalogue": "Lipi",
+        "site": "Harappa",
+        "object_kind": "tablets",
+        "lipi_type": "TAB:I",
+        "findspot": "AB-|--|-P24/11",
+        "n_faces": 2,
+        "total_signs": 5,
+        "unlocked_tier": "Key8A_266_Strict",
+        "is_strict_266": true,
+        "has_wave56_sign": true,
+        "has_split_824": true,
+        "is_complementary_who_meas": false,
+        "numeral_equality": false,
+        "numeral_prod12": false,
+        "face_classes": "COMMODITY_TAX_SHARE || WHO_OFFICE_HOUSE",
+        "face_signs": "413-892-824b || 924-740",
+        "proto_dravidian_faces": "*ari *vil *nāl-kāṇam || *vari-tiṅkaḷ *kuṭi/*kuṭam",
+        "english_unified_transaction": "Grain-Tax(*ari) · Sale(*vil) · 4-Share(*nāl-kāṇam) || Trade-Month(*vari-tiṅkaḷ) · House",
+        "copies_in_corpus": 1
+      }
+    ]
+  },
+  "honest_nulls_count": 45,
+  "honest_nulls": [
+    {
+      "test_id": "K8B1_T1_W56_FROZEN170",
+      "tested_hypothesis": "Tier 1 Frozen-170 Sangam lexicon isolated to Wave-5/6 bigrams (Lipi>=2)",
+      "observed": "2 words / 4 pairs (mass=25)",
+      "p_value": 0.72865,
+      "note": "Expected null on Frozen-170 because Frozen-170 predates Wave-5/6 roots (*palli, *aracu, *arai, *ma, *parai, *pal); resolved in Tier 2 & Tier 3."
+    },
+    {
+      "test_id": "K8B2A_AREA_W5_585_pa_i_citadel_shrine_p",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W5: 585 *paḷḷi (citadel shrine/palace)",
+      "observed": "n=13, med=900.0 mm2, resid_ls=+0.2420",
+      "p_value": 0.09998,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W5_6_527_526_525_me_u_distri",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W5/6: 527/526/525 *meṭṭu (district gate)",
+      "observed": "n=32, med=720.9 mm2, resid_ls=+0.0456",
+      "p_value": 0.57688,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W5_621_a_ai_pa_i_seal_excl_c",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W5: 621 *aṟai/*paṭi (seal-excl. chamber)",
+      "observed": "n=12, med=684.6 mm2, resid_ls=+0.0410",
+      "p_value": 0.72625,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W5_6_297_cl_k_chevron_fold_s",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W5/6: 297-cl *kōṇ (chevron-fold share)",
+      "observed": "n=26, med=764.3 mm2, resid_ls=+0.1025",
+      "p_value": 0.26995,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W5_890_vil_right_bow_grant",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W5: 890 *vil (right-bow grant)",
+      "observed": "n=3, med=1224.0 mm2, resid_ls=+0.6920",
+      "p_value": 0.05299,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W5_048_049_BRACKET_7_bundle",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W5: 048/049 *[BRACKET]-ēḻ (7-bundle)",
+      "observed": "n=4, med=552.6 mm2, resid_ls=-0.0784",
+      "p_value": 0.76965,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W5_243_katir_m_vari_hatched",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W5: 243 *katir-mīṉ-vari (hatched fish)",
+      "observed": "n=7, med=524.4 mm2, resid_ls=-0.0659",
+      "p_value": 0.68906,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W5_347_cl_m_deer_great",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W5: 347-cl *mā (deer / great)",
+      "observed": "n=3, med=392.0 mm2, resid_ls=-0.3858",
+      "p_value": 0.16217,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W5_384_ku_taka_u_plain_pipal",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W5: 384 *āku/*takaṭu (plain pipal-leaf)",
+      "observed": "n=7, med=625.0 mm2, resid_ls=+0.0559",
+      "p_value": 0.96301,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W5_6_070_072_515_ARROW_PRE_V",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W5/6: 070/072/515 [ARROW-PRE-VĒḶ]",
+      "observed": "n=27, med=650.0 mm2, resid_ls=-0.1263",
+      "p_value": 0.13017,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W5_095_BATON_citadel_issuer",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W5: 095 *āḷ-[BATON] (citadel issuer)",
+      "observed": "n=3, med=841.0 mm2, resid_ls=+0.3045",
+      "p_value": 0.26635,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W5_510_cl_ta_am_garland_fram",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W5: 510-cl *taṭṭam (garland-frame)",
+      "observed": "n=12, med=668.9 mm2, resid_ls=-0.2732",
+      "p_value": 0.05139,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W5_6_636_639_267_cl_k_u_new",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W5/6: 636/639/267-cl *kūṭu (new granary)",
+      "observed": "n=14, med=602.9 mm2, resid_ls=-0.2109",
+      "p_value": 0.09918,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W5_6_468_cl_p_rai_plough_cro",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W5/6: 468-cl *pārai (plough/crop)",
+      "observed": "n=5, med=1176.5 mm2, resid_ls=+0.2937",
+      "p_value": 0.14697,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W5_484_067_k_vari_hatched_pe",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W5: 484/067 *kō-vari (hatched peak)",
+      "observed": "n=6, med=798.8 mm2, resid_ls=-0.0632",
+      "p_value": 0.80024,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W5_906_ka_am_pack_bale",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W5: 906 *kaṇṭāḷam (pack-bale)",
+      "observed": "n=6, med=937.8 mm2, resid_ls=+0.0518",
+      "p_value": 0.59708,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W5_336_cl_m_ai_closed_grain",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W5: 336-cl *mūṭai (closed grain-bin)",
+      "observed": "n=7, med=756.2 mm2, resid_ls=+0.0509",
+      "p_value": 0.80984,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W5_422_cl_i_u_p_l_3_comb_uni",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W5: 422-cl *iṟu/*pāl (3-comb unit)",
+      "observed": "n=6, med=534.8 mm2, resid_ls=-0.0406",
+      "p_value": 0.87682,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W6_388_382_aracu_ku_royal_pi",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W6: 388/382 *aracu/*āku (royal pipal)",
+      "observed": "n=18, med=749.4 mm2, resid_ls=+0.1022",
+      "p_value": 0.22076,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W6_824a_k_am_seal_initial_sp",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W6: 824a *kāṇam (seal-initial split)",
+      "observed": "n=5, med=841.0 mm2, resid_ls=+0.1658",
+      "p_value": 0.36573,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W6_877_n_l_k_am_4_diamond",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W6: 877 *nāl-kāṇam (4-diamond)",
+      "observed": "n=8, med=600.2 mm2, resid_ls=-0.0524",
+      "p_value": 0.83243,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W6_880_k_am_k_l_ligature",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W6: 880 *kāṇam-*kāl (ligature)",
+      "observed": "n=5, med=712.9 mm2, resid_ls=+0.3288",
+      "p_value": 0.12717,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W6_645_ka_a_ka_am_passage_ta",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W6: 645 *kaṭa/*kaṭam (passage-tax)",
+      "observed": "n=3, med=645.2 mm2, resid_ls=-0.3770",
+      "p_value": 0.13357,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W6_679_ku_ai_maccu_canopy_ro",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W6: 679 *kuṭai/*maccu (canopy-roof)",
+      "observed": "n=7, med=1011.2 mm2, resid_ls=+0.4080",
+      "p_value": 0.14897,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W6_371_370_katir_spindle_ray",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W6: 371/370 *katir (spindle/ray)",
+      "observed": "n=6, med=1187.1 mm2, resid_ls=+0.4076",
+      "p_value": 0.09558,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W6_554_552_n_u_new_bowtie_al",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W6: 554/552 *nāṭu (new bowtie allos)",
+      "observed": "n=6, med=694.4 mm2, resid_ls=+0.0126",
+      "p_value": 0.9838,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W6_921_vil_bow_sale_rescue",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W6: 921 *vil (bow/sale rescue)",
+      "observed": "n=8, med=625.2 mm2, resid_ls=+0.1276",
+      "p_value": 0.54389,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W6_792_me_i_pair_chief",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W6: 792 *meṭṭi (pair/chief)",
+      "observed": "n=3, med=392.0 mm2, resid_ls=-0.2394",
+      "p_value": 0.39072,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W6_136_k_yoke_guard_W6",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W6: 136 *kā (yoke/guard W6)",
+      "observed": "n=3, med=580.8 mm2, resid_ls=-0.0379",
+      "p_value": 0.9864,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2A_AREA_W6_924_vari_ti_ka_hatched_mo",
+      "tested_hypothesis": "Carved square seal area residual (len+city) for W6: 924 *vari-tiṅkaḷ (hatched moon)",
+      "observed": "n=3, med=800.7 mm2, resid_ls=+0.3764",
+      "p_value": 0.21696,
+      "note": "HONEST_NULL (P_two_lensite >= 0.05)."
+    },
+    {
+      "test_id": "K8B2B_OBJ_585_pa_i_Harappa_Site",
+      "tested_hypothesis": "Stratified object/site enrichment: 585 *paḷḷi -> Harappa Site",
+      "observed": "6/46 (13.0%), OR=0.23x",
+      "p_value": 0.80104,
+      "note": "HONEST_NULL (Harappa_vs_rest (obj-kind-strat), P >= 0.05)."
+    },
+    {
+      "test_id": "K8B2B_OBJ_585_pa_i_Harappa_Mound_AB_Ci",
+      "tested_hypothesis": "Stratified object/site enrichment: 585 *paḷḷi -> Harappa Mound AB Citadel (within Harappa)",
+      "observed": "3/6 (50.0%), OR=8.47x",
+      "p_value": 0.10638,
+      "note": "HONEST_NULL (MoundAB_vs_Harappa (obj-kind-strat), P >= 0.05)."
+    },
+    {
+      "test_id": "K8B2B_OBJ_048_049_BRACKET_Tags_Sealing",
+      "tested_hypothesis": "Stratified object/site enrichment: 048/049 *[BRACKET]-ēḻ -> Tags & Sealings",
+      "observed": "3/16 (18.8%), OR=3.23x",
+      "p_value": 0.25675,
+      "note": "HONEST_NULL (tags_vs_rest (site-strat, all), P >= 0.05)."
+    },
+    {
+      "test_id": "K8B2B_OBJ_167_868_mukku_kunt_i_Harappa",
+      "tested_hypothesis": "Stratified object/site enrichment: 167/868 *mukku/*kuntāṇi -> Harappa Site",
+      "observed": "17/22 (77.3%), OR=5.42x",
+      "p_value": 0.9772,
+      "note": "HONEST_NULL (Harappa_vs_rest (obj-kind-strat), P >= 0.05)."
+    },
+    {
+      "test_id": "K8B2B_OBJ_468_cl_p_rai_Tablets_Granary",
+      "tested_hypothesis": "Stratified object/site enrichment: 468-cl *pārai -> Tablets (Granary Plough/Crop)",
+      "observed": "12/38 (31.6%), OR=1.51x",
+      "p_value": 0.74645,
+      "note": "HONEST_NULL (tablets_vs_rest (site-strat), P >= 0.05)."
+    },
+    {
+      "test_id": "K8B2B_OBJ_468_cl_p_rai_Harappa_Mound_F",
+      "tested_hypothesis": "Stratified object/site enrichment: 468-cl *pārai -> Harappa Mound F Granary (within Harappa)",
+      "observed": "11/18 (61.1%), OR=2.18x",
+      "p_value": 0.24255,
+      "note": "HONEST_NULL (MoundF_vs_Harappa (obj-kind-strat), P >= 0.05)."
+    },
+    {
+      "test_id": "K8B2B_OBJ_384_ku_taka_u_Copper_Tablets",
+      "tested_hypothesis": "Stratified object/site enrichment: 384 *āku/*takaṭu -> Copper Tablets (MD)",
+      "observed": "2/34 (5.9%), OR=1.53x",
+      "p_value": 0.36613,
+      "note": "HONEST_NULL (copper_tablets_vs_rest (site-strat), P >= 0.05)."
+    },
+    {
+      "test_id": "K8B2B_OBJ_384_ku_taka_u_Mohenjo_daro_S",
+      "tested_hypothesis": "Stratified object/site enrichment: 384 *āku/*takaṭu -> Mohenjo-daro Site",
+      "observed": "14/34 (41.2%), OR=0.86x",
+      "p_value": 0.88002,
+      "note": "HONEST_NULL (MD_vs_rest (obj-kind-strat), P >= 0.05)."
+    },
+    {
+      "test_id": "K8B2B_OBJ_347_cl_m_Seals",
+      "tested_hypothesis": "Stratified object/site enrichment: 347-cl *mā -> Seals",
+      "observed": "6/11 (54.5%), OR=1.01x",
+      "p_value": 0.91682,
+      "note": "HONEST_NULL (seals_vs_rest (site-strat), P >= 0.05)."
+    },
+    {
+      "test_id": "K8B2B_OBJ_388_382_aracu_ku_Seals_Royal",
+      "tested_hypothesis": "Stratified object/site enrichment: 388/382 *aracu/*āku -> Seals (Royal Pipal)",
+      "observed": "34/57 (59.6%), OR=1.26x",
+      "p_value": 0.45771,
+      "note": "HONEST_NULL (seals_vs_rest (site-strat), P >= 0.05)."
+    },
+    {
+      "test_id": "K8B2B_OBJ_501_p_y_Harappa_Site_Photo_A",
+      "tested_hypothesis": "Stratified object/site enrichment: 501 *pāy -> Harappa Site (Photo Allograph)",
+      "observed": "4/4 (100.0%), OR=14.22x",
+      "p_value": 0.11818,
+      "note": "HONEST_NULL (Harappa_vs_rest (obj-kind-strat), P >= 0.05)."
+    },
+    {
+      "test_id": "K8B3C_RANK_TO_CUPS_KW",
+      "tested_hypothesis": "Multi-face Recipient Rank -> exact *ala cup count (KW H, 272 signs)",
+      "observed": "n=269, KW H=3.15",
+      "p_value": 0.52929,
+      "note": "HONEST_NULL (Elite vs Junior diff=+0.118 cups, P=0.25095)."
+    },
+    {
+      "test_id": "K8B3D_NUM_EQ_DEDUP",
+      "tested_hypothesis": "Multi-face cross-face numeral equality n1==n2 (batch-dedup)",
+      "observed": "48/142 (33.8%)",
+      "p_value": 0.05139,
+      "note": "HONEST_NULL after batch deduplication."
+    },
+    {
+      "test_id": "K8B3D_NUM_PROD12_DEDUP",
+      "tested_hypothesis": "Multi-face cross-face numeral product n1*n2==12 (batch-dedup)",
+      "observed": "5/142 (3.52%)",
+      "p_value": 0.999,
+      "note": "HONEST_NULL after batch deduplication."
+    }
+  ]
+}

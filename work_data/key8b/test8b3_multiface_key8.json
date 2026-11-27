@@ -1,0 +1,931 @@
+{
+  "n_permutations": 5000,
+  "corpus_counts": {
+    "total_multiface_all_intact_and_frag": 921,
+    "lipi_multiface_all": 824,
+    "unseen_mah_multiface_all": 97,
+    "intact_multiface_raw": 606,
+    "intact_multiface_batch_dedup": 558,
+    "decoded_100pct_multiface_163_raw": 305,
+    "decoded_100pct_multiface_163_dedup": 269,
+    "decoded_100pct_multiface_227_raw": 378,
+    "decoded_100pct_multiface_227_dedup": 341,
+    "decoded_100pct_multiface_266_strict_raw": 426,
+    "decoded_100pct_multiface_266_strict_dedup": 387,
+    "decoded_100pct_multiface_272_raw": 434,
+    "decoded_100pct_multiface_272_dedup": 395,
+    "decoded_100pct_multiface_key8a_raw": 434,
+    "decoded_100pct_multiface_key8a_dedup": 395,
+    "progression": {
+      "163_signs": {
+        "raw": 305,
+        "pct": 50.33,
+        "dedup": 269
+      },
+      "227_signs": {
+        "raw": 378,
+        "pct": 62.38,
+        "dedup": 341
+      },
+      "266_strict": {
+        "raw": 426,
+        "pct": 70.3,
+        "dedup": 387
+      },
+      "272_full": {
+        "raw": 434,
+        "pct": 71.62,
+        "dedup": 395
+      }
+    },
+    "decoded_272_by_kind": {
+      "tablets": 369,
+      "seals": 38,
+      "pots": 3,
+      "copper tablets": 14,
+      "other objects": 2,
+      "tags and sealings": 8
+    },
+    "decoded_272_by_site": {
+      "Harappa": 361,
+      "Farmana": 1,
+      "Kalibangan": 5,
+      "Lothal": 2,
+      "Mohenjo-daro": 59,
+      "Rupar": 1,
+      "Unknown": 1,
+      "Rajanpur": 1,
+      "Lakhanjo-daro": 1,
+      "Chanhu-daro": 1,
+      "other": 1
+    },
+    "decoded_272_with_split824": 8
+  },
+  "test_8b3a_complementarity": {
+    "strict_who_meas_2face": {
+      "label": "2-face WHO vs MEAS pool (batch-dedup, 272 signs)",
+      "n_objects": 375,
+      "obs_complementary": 306,
+      "obs_complementary_pct": 81.6,
+      "obs_both_who": 58,
+      "obs_both_meas": 11,
+      "null_repair_mean": 188.63,
+      "p_repair_5000": 0.0002,
+      "null_poolpair_mean": 180.56,
+      "p_poolpair_5000": 0.0002
+    },
+    "all_nonident_2face": {
+      "label": "All non-identical 2-face objects (batch-dedup, 272 signs)",
+      "n_objects": 511,
+      "obs_complementary": 306,
+      "obs_complementary_pct": 59.88,
+      "obs_both_who": 58,
+      "obs_both_meas": 11,
+      "null_repair_mean": 181.85,
+      "p_repair_5000": 0.0002,
+      "null_poolpair_mean": 177.03,
+      "p_poolpair_5000": 0.0002
+    },
+    "ge2_face_nonident_with_both_who_and_meas": {
+      "k": 323,
+      "n": 534,
+      "pct": 60.49
+    }
+  },
+  "test_8b3b_comm_to_measure": {
+    "n_comm_unit": 351,
+    "chi2_unit": 100.33,
+    "null_chi2_unit_mean": 77.587,
+    "p_unit_5000": 0.04919,
+    "comm_unit_table": {
+      "Grain_Tax_ari_kampu_parai": {
+        "ala_cup_9.2L": 9,
+        "kalam_111L": 0,
+        "pati_1.16L": 0,
+        "other_unit": 3,
+        "kottai_665L": 0
+      },
+      "Tribute_irai": {
+        "ala_cup_9.2L": 46,
+        "kalam_111L": 0,
+        "pati_1.16L": 0,
+        "other_unit": 0,
+        "kottai_665L": 1
+      },
+      "Share_kanam": {
+        "ala_cup_9.2L": 29,
+        "kalam_111L": 0,
+        "pati_1.16L": 0,
+        "other_unit": 0,
+        "kottai_665L": 0
+      },
+      "Textile_Bale": {
+        "ala_cup_9.2L": 25,
+        "kalam_111L": 5,
+        "pati_1.16L": 0,
+        "other_unit": 0,
+        "kottai_665L": 0
+      },
+      "Star_Clan_min": {
+        "ala_cup_9.2L": 61,
+        "kalam_111L": 2,
+        "pati_1.16L": 0,
+        "other_unit": 0,
+        "kottai_665L": 1
+      },
+      "Other": {
+        "ala_cup_9.2L": 94,
+        "kalam_111L": 1,
+        "pati_1.16L": 5,
+        "other_unit": 4,
+        "kottai_665L": 1
+      },
+      "Sale_vil": {
+        "ala_cup_9.2L": 4,
+        "kalam_111L": 0,
+        "pati_1.16L": 0,
+        "other_unit": 0,
+        "kottai_665L": 0
+      },
+      "Porter_Guard_ka": {
+        "ala_cup_9.2L": 22,
+        "kalam_111L": 7,
+        "pati_1.16L": 0,
+        "other_unit": 0,
+        "kottai_665L": 0
+      },
+      "Month_tinkal": {
+        "ala_cup_9.2L": 17,
+        "kalam_111L": 0,
+        "pati_1.16L": 0,
+        "other_unit": 0,
+        "kottai_665L": 0
+      },
+      "Maritime_turai_pay": {
+        "ala_cup_9.2L": 3,
+        "kalam_111L": 0,
+        "pati_1.16L": 0,
+        "other_unit": 0,
+        "kottai_665L": 0
+      },
+      "Pact_inai": {
+        "ala_cup_9.2L": 11,
+        "kalam_111L": 0,
+        "pati_1.16L": 0,
+        "other_unit": 0,
+        "kottai_665L": 0
+      }
+    },
+    "n_comm_cups": 311,
+    "chi2_cups": 68.067,
+    "null_chi2_cups_mean": 27.893,
+    "p_chi2_cups_5000": 0.006,
+    "kw_H_cups": 14.114,
+    "p_kw_cups_5000": 0.14837,
+    "comm_cups_summary": {
+      "Grain_Tax_ari_kampu_parai": {
+        "n": 9,
+        "mean_cups": 2.89,
+        "counts": {
+          "1": 0,
+          "2": 2,
+          "3": 6,
+          "4": 1
+        }
+      },
+      "Tribute_irai": {
+        "n": 46,
+        "mean_cups": 3.11,
+        "counts": {
+          "1": 0,
+          "2": 10,
+          "3": 21,
+          "4": 15
+        }
+      },
+      "Share_kanam": {
+        "n": 29,
+        "mean_cups": 3.07,
+        "counts": {
+          "1": 0,
+          "2": 10,
+          "3": 7,
+          "4": 12
+        }
+      },
+      "Textile_Bale": {
+        "n": 25,
+        "mean_cups": 2.76,
+        "counts": {
+          "1": 0,
+          "2": 9,
+          "3": 13,
+          "4": 3
+        }
+      },
+      "Star_Clan_min": {
+        "n": 57,
+        "mean_cups": 3.11,
+        "counts": {
+          "1": 0,
+          "2": 14,
+          "3": 23,
+          "4": 20
+        }
+      },
+      "Other": {
+        "n": 92,
+        "mean_cups": 2.9,
+        "counts": {
+          "1": 1,
+          "2": 33,
+          "3": 32,
+          "4": 26
+        }
+      },
+      "Sale_vil": {
+        "n": 4,
+        "mean_cups": 2.0,
+        "counts": {
+          "1": 1,
+          "2": 2,
+          "3": 1,
+          "4": 0
+        }
+      },
+      "Porter_Guard_ka": {
+        "n": 22,
+        "mean_cups": 3.27,
+        "counts": {
+          "1": 0,
+          "2": 4,
+          "3": 8,
+          "4": 10
+        }
+      },
+      "Month_tinkal": {
+        "n": 16,
+        "mean_cups": 2.94,
+        "counts": {
+          "1": 0,
+          "2": 3,
+          "3": 11,
+          "4": 2
+        }
+      },
+      "Pact_inai": {
+        "n": 11,
+        "mean_cups": 2.91,
+        "counts": {
+          "1": 0,
+          "2": 2,
+          "3": 8,
+          "4": 1
+        }
+      }
+    }
+  },
+  "test_8b3c_rank_to_contract_and_ration": {
+    "n_rank_cups": 269,
+    "kw_H_rank_cups": 3.154,
+    "p_kw_rank_cups_5000": 0.52929,
+    "elite_vs_junior_diff_cups": 0.118,
+    "p_elite_vs_junior_5000": 0.25095,
+    "rank_cups_summary": {
+      "Manager_al": {
+        "n": 9,
+        "mean_cups": 3.11,
+        "median_cups": 3.0,
+        "dist": {
+          "4": 2,
+          "3": 6,
+          "2": 1
+        }
+      },
+      "Junior_cikka": {
+        "n": 135,
+        "mean_cups": 2.96,
+        "median_cups": 3.0,
+        "dist": {
+          "2": 41,
+          "4": 38,
+          "3": 55,
+          "1": 1
+        }
+      },
+      "House_kuti_palli": {
+        "n": 73,
+        "mean_cups": 2.93,
+        "median_cups": 3.0,
+        "dist": {
+          "3": 37,
+          "2": 19,
+          "4": 16,
+          "1": 1
+        }
+      },
+      "Elite_vel_talai_ko_aracu": {
+        "n": 37,
+        "mean_cups": 3.08,
+        "median_cups": 3.0,
+        "dist": {
+          "2": 11,
+          "3": 12,
+          "4": 14
+        }
+      },
+      "Guard_Porter_ka": {
+        "n": 15,
+        "mean_cups": 3.27,
+        "median_cups": 3.0,
+        "dist": {
+          "3": 5,
+          "4": 7,
+          "2": 3
+        }
+      }
+    },
+    "n_rank_partner_class": 435,
+    "chi2_rank_partner_class": 67.116,
+    "null_chi2_rp_mean": 34.255,
+    "p_rank_partner_class_5000": 0.0008,
+    "rank_partner_table": {
+      "Manager_al": {
+        "MEASURE_RATION": 9,
+        "WHO_OFFICE_HOUSE": 7,
+        "COUNT_ONLY": 0,
+        "OTHER_UNDEC": 0,
+        "COMMODITY_TAX_SHARE": 4
+      },
+      "Junior_cikka": {
+        "MEASURE_RATION": 146,
+        "WHO_OFFICE_HOUSE": 7,
+        "COUNT_ONLY": 1,
+        "OTHER_UNDEC": 3,
+        "COMMODITY_TAX_SHARE": 14
+      },
+      "Elite_vel_talai_ko_aracu": {
+        "MEASURE_RATION": 40,
+        "WHO_OFFICE_HOUSE": 16,
+        "COUNT_ONLY": 2,
+        "OTHER_UNDEC": 10,
+        "COMMODITY_TAX_SHARE": 7
+      },
+      "House_kuti_palli": {
+        "MEASURE_RATION": 82,
+        "WHO_OFFICE_HOUSE": 25,
+        "COUNT_ONLY": 2,
+        "OTHER_UNDEC": 15,
+        "COMMODITY_TAX_SHARE": 23
+      },
+      "Guard_Porter_ka": {
+        "MEASURE_RATION": 16,
+        "WHO_OFFICE_HOUSE": 1,
+        "COUNT_ONLY": 0,
+        "OTHER_UNDEC": 0,
+        "COMMODITY_TAX_SHARE": 5
+      }
+    }
+  },
+  "test_8b3d_numeral_arithmetic": {
+    "batch_dedup": {
+      "label": "Batch-dedup multi-face objects (272 signs)",
+      "n_objects": 142,
+      "obs_eq_f1_f2": 48,
+      "obs_eq_pct": 33.8,
+      "null_eq_mean": 39.99,
+      "p_eq_5000": 0.05139,
+      "obs_prod12_f1_f2": 5,
+      "obs_prod12_pct": 3.52,
+      "null_prod12_mean": 12.49,
+      "p_prod12_5000": 0.999,
+      "obs_any_facepair_eq": 50,
+      "obs_any_facepair_prod12": 5,
+      "examples_eq": [
+        "176-740-400 || 176-740-400 || 033-700 || 033-700",
+        "013-840-740 || 033-700",
+        "176-740-400 || 033-700 || 033-700",
+        "817-002-240-904-740 || 032-700",
+        "240-705-033-550-525-400 || 413-575-335-711-033-700",
+        "033-384-740-400 || 033-700",
+        "491-920-002-176-740-335-740-317 || 413-575-335-740-032-700",
+        "820-002-139 || 390-032-700",
+        "820-002-554-526 || 032-700",
+        "013-840-740-400 || 003-798-617",
+        "416-220-760-740-400 || 416-220-760-740-400 || 004-700-220 || 004-700-220",
+        "013-840-740 || 033-700"
+      ],
+      "examples_prod12": [
+        "013-060-032-740-400 || 034-700",
+        "840-032-740-090-400 || 853-016-390-401",
+        "003-861 || 034-700 || 003-156",
+        "034-700 || 003-861 || 003-154",
+        "700-034 || 033-033-520"
+      ]
+    },
+    "raw_physical": {
+      "label": "Raw physical multi-face objects (272 signs)",
+      "n_objects": 163,
+      "obs_eq_f1_f2": 49,
+      "obs_eq_pct": 30.06,
+      "null_eq_mean": 47.21,
+      "p_eq_5000": 0.39032,
+      "obs_prod12_f1_f2": 24,
+      "obs_prod12_pct": 14.72,
+      "null_prod12_mean": 20.69,
+      "p_prod12_5000": 0.20796,
+      "obs_any_facepair_eq": 70,
+      "obs_any_facepair_prod12": 24,
+      "examples_eq": [
+        "176-740-400 || 176-740-400 || 033-700 || 033-700",
+        "013-840-740 || 033-700",
+        "176-740-400 || 033-700 || 033-700",
+        "817-002-240-904-740 || 032-700",
+        "240-705-033-550-525-400 || 413-575-335-711-033-700",
+        "033-384-740-400 || 033-700",
+        "491-920-002-176-740-335-740-317 || 413-575-335-740-032-700",
+        "820-002-139 || 390-032-700",
+        "820-002-554-526 || 032-700",
+        "013-840-740-400 || 003-798-617",
+        "416-220-760-740-400 || 416-220-760-740-400 || 004-700-220 || 004-700-220",
+        "013-840-740 || 033-700"
+      ],
+      "examples_prod12": [
+        "013-060-032-740-400 || 034-700",
+        "840-032-740-090-400 || 853-016-390-401",
+        "003-861 || 034-700 || 003-156",
+        "034-700 || 003-861 || 003-154",
+        "700-034 || 033-033-520",
+        "003-861 || 034-700 || 003-156",
+        "034-700 || 003-861 || 003-156",
+        "003-861 || 034-700 || 003-156",
+        "003-861 || 034-700 || 003-156",
+        "003-861 || 034-700 || 003-156",
+        "034-700 || 003-861 || 003-156",
+        "003-861 || 034-700 || 003-156"
+      ]
+    }
+  },
+  "top20_newly_unlocked_records": [
+    {
+      "obj_id": "L:1227",
+      "ref_id": "H-196",
+      "catalogue": "Lipi",
+      "site": "Harappa",
+      "object_kind": "tablets",
+      "lipi_type": "TAB:B",
+      "findspot": "FTrench III|--|-N9/8",
+      "n_faces": 3,
+      "total_signs": 10,
+      "unlocked_tier": "Key7A_227",
+      "is_strict_266": false,
+      "has_wave56_sign": true,
+      "has_split_824": false,
+      "is_complementary_who_meas": true,
+      "numeral_equality": false,
+      "numeral_prod12": false,
+      "face_classes": "WHO_OFFICE_HOUSE || MEASURE_RATION || WHO_OFFICE_HOUSE",
+      "face_signs": "072-740-590-407 || 706-167 || 001-100-700-032",
+      "proto_dravidian_faces": "[ARROW-PRE-VĒḶ] *kuṭi/*kuṭam *mūṭai *kōṭi || 705 *mukku || *oru *talai *aḷa *iru",
+      "english_unified_transaction": "[Pre-Vēḷ-Arrow] · House · Bale(*mūṭai) · New-Cloth(*kōṭi) || Kalam · Kalam-Ring(*mukku) || 1 · Chief(*talai) · 2 aḷa-Cup(9.2L)",
+      "copies_in_corpus": 1
+    },
+    {
+      "obj_id": "L:1323",
+      "ref_id": "H-301",
+      "catalogue": "Lipi",
+      "site": "Harappa",
+      "object_kind": "tablets",
+      "lipi_type": "TAB:I",
+      "findspot": "FTrench I|--|-M11/20",
+      "n_faces": 2,
+      "total_signs": 10,
+      "unlocked_tier": "Key8A_266_Strict",
+      "is_strict_266": true,
+      "has_wave56_sign": true,
+      "has_split_824": true,
+      "is_complementary_who_meas": false,
+      "numeral_equality": false,
+      "numeral_prod12": false,
+      "face_classes": "COMMODITY_TAX_SHARE || WHO_OFFICE_HOUSE",
+      "face_signs": "413-892-824b || 171-032-031-240-636-740-400",
+      "proto_dravidian_faces": "*ari *vil *nāl-kāṇam || *tūṅku *iru *oru *katir-mīṉ *kūṭu *kuṭi/*kuṭam *cikka/*cikkam",
+      "english_unified_transaction": "Grain-Tax(*ari) · Sale(*vil) · 4-Share(*nāl-kāṇam) || 2 Weight-Std(*tūṅku) · 1 · Rayed-Star · Granary-House (*kūṭṭukkuṭi) · Junior(*cikka)",
+      "copies_in_corpus": 3
+    },
+    {
+      "obj_id": "L:1666",
+      "ref_id": "H-774",
+      "catalogue": "Lipi",
+      "site": "Harappa",
+      "object_kind": "tablets",
+      "lipi_type": "TAB:B",
+      "findspot": "FTrench Ab|--|--",
+      "n_faces": 2,
+      "total_signs": 12,
+      "unlocked_tier": "Key8A_266_Strict",
+      "is_strict_266": true,
+      "has_wave56_sign": true,
+      "has_split_824": false,
+      "is_complementary_who_meas": true,
+      "numeral_equality": true,
+      "numeral_prod12": false,
+      "face_classes": "WHO_OFFICE_HOUSE || MEASURE_RATION",
+      "face_signs": "240-705-033-550-525-400 || 413-575-335-711-033-700",
+      "proto_dravidian_faces": "*katir-mīṉ *kalam/*kaḷam *mū *nāṭu *uḻalai/*meṭṭu *cikka/*cikkam || *ari *kōṭṭai *koḍame *vaḷḷam *mū *aḷa",
+      "english_unified_transaction": "Rayed-Star · Kalam(111L) · 3 · District-Gate (*nāṭṭumeṭṭu) · Junior(*cikka) || Grain-Tax(*ari) · Kōṭṭai(665L) · Grain-Bin(*koḍame) · Vaḷḷam(37L) · 3 aḷa-cups (27.6L)",
+      "copies_in_corpus": 3
+    },
+    {
+      "obj_id": "L:2488",
+      "ref_id": "Lipi-2488",
+      "catalogue": "Lipi",
+      "site": "Mohenjo-daro",
+      "object_kind": "copper tablets",
+      "lipi_type": "TAB:C",
+      "findspot": "L-|--|--",
+      "n_faces": 2,
+      "total_signs": 7,
+      "unlocked_tier": "Key7A_227",
+      "is_strict_266": true,
+      "has_wave56_sign": true,
+      "has_split_824": false,
+      "is_complementary_who_meas": true,
+      "numeral_equality": true,
+      "numeral_prod12": false,
+      "face_classes": "MEASURE_RATION || WHO_OFFICE_HOUSE",
+      "face_signs": "003-422 || 705-033-923-740-001",
+      "proto_dravidian_faces": "*mū *iṟu || *kalam/*kaḷam *mū *maruppu *kuṭi/*kuṭam *oru",
+      "english_unified_transaction": "3 share-units (*muppāl) || Kalam(111L) · 3 · Ivory(*maruppu) · House · 1",
+      "copies_in_corpus": 1
+    },
+    {
+      "obj_id": "L:653",
+      "ref_id": "H-1813",
+      "catalogue": "Lipi",
+      "site": "Harappa",
+      "object_kind": "tablets",
+      "lipi_type": "TAB:B",
+      "findspot": "ETrench 10W/11|--|--",
+      "n_faces": 2,
+      "total_signs": 12,
+      "unlocked_tier": "Key8A_266_Strict",
+      "is_strict_266": true,
+      "has_wave56_sign": true,
+      "has_split_824": false,
+      "is_complementary_who_meas": true,
+      "numeral_equality": true,
+      "numeral_prod12": false,
+      "face_classes": "WHO_OFFICE_HOUSE || MEASURE_RATION",
+      "face_signs": "220-705-033-550-525-400 || 413-575-335-711-033-700",
+      "proto_dravidian_faces": "*mīṉ *kalam/*kaḷam *mū *nāṭu *uḻalai/*meṭṭu *cikka/*cikkam || *ari *kōṭṭai *koḍame *vaḷḷam *mū *aḷa",
+      "english_unified_transaction": "Star-Clan(*mīṉ) · Kalam(111L) · 3 · District-Gate (*nāṭṭumeṭṭu) · Junior(*cikka) || Grain-Tax(*ari) · Kōṭṭai(665L) · Grain-Bin(*koḍame) · Vaḷḷam(37L) · 3 aḷa-cups (27.6L)",
+      "copies_in_corpus": 1
+    },
+    {
+      "obj_id": "L:2989",
+      "ref_id": "M-513",
+      "catalogue": "Lipi",
+      "site": "Mohenjo-daro",
+      "object_kind": "copper tablets",
+      "lipi_type": "TAB:C",
+      "findspot": "DKE|Trench E-|-1010/0860",
+      "n_faces": 2,
+      "total_signs": 5,
+      "unlocked_tier": "Key7A_227",
+      "is_strict_266": true,
+      "has_wave56_sign": true,
+      "has_split_824": false,
+      "is_complementary_who_meas": true,
+      "numeral_equality": false,
+      "numeral_prod12": false,
+      "face_classes": "MEASURE_RATION || WHO_OFFICE_HOUSE",
+      "face_signs": "005-706 || 233-585-407",
+      "proto_dravidian_faces": "*ai 705 || *veṭi-mīṉ *paḷḷi *kōṭi",
+      "english_unified_transaction": "5 kalams || Dawn-Star · Citadel-Shrine(*paḷḷi) · New-Cloth(*kōṭi)",
+      "copies_in_corpus": 3
+    },
+    {
+      "obj_id": "L:1236",
+      "ref_id": "H-205",
+      "catalogue": "Lipi",
+      "site": "Harappa",
+      "object_kind": "tablets",
+      "lipi_type": "TAB:B",
+      "findspot": "FGranery|--|-J9/24",
+      "n_faces": 2,
+      "total_signs": 10,
+      "unlocked_tier": "Key7A_227",
+      "is_strict_266": true,
+      "has_wave56_sign": true,
+      "has_split_824": false,
+      "is_complementary_who_meas": true,
+      "numeral_equality": false,
+      "numeral_prod12": false,
+      "face_classes": "WHO_OFFICE_HOUSE || MEASURE_RATION",
+      "face_signs": "850-741-048-740 || 413-575-335-711-033-700",
+      "proto_dravidian_faces": "*kaṇ/*kaṉ *oru-kuṭi *[BRACKET]-ēḻ *kuṭi/*kuṭam || *ari *kōṭṭai *koḍame *vaḷḷam *mū *aḷa",
+      "english_unified_transaction": "Copper/Eye(*kaṇ) · 1st-House · 7 · House || Grain-Tax(*ari) · Kōṭṭai(665L) · Grain-Bin(*koḍame) · Vaḷḷam(37L) · 3 aḷa-cups (27.6L)",
+      "copies_in_corpus": 1
+    },
+    {
+      "obj_id": "L:1678",
+      "ref_id": "H-787",
+      "catalogue": "Lipi",
+      "site": "Harappa",
+      "object_kind": "tablets",
+      "lipi_type": "TAB:B",
+      "findspot": "--|--|--",
+      "n_faces": 2,
+      "total_signs": 8,
+      "unlocked_tier": "Key8A_266_Strict",
+      "is_strict_266": true,
+      "has_wave56_sign": true,
+      "has_split_824": true,
+      "is_complementary_who_meas": false,
+      "numeral_equality": false,
+      "numeral_prod12": false,
+      "face_classes": "COMMODITY_TAX_SHARE || WHO_OFFICE_HOUSE",
+      "face_signs": "413-892-824b || 033-700-176-740-400",
+      "proto_dravidian_faces": "*ari *vil *nāl-kāṇam || *mū *aḷa *iṟai/*iru *kuṭi/*kuṭam *cikka/*cikkam",
+      "english_unified_transaction": "Grain-Tax(*ari) · Sale(*vil) · 4-Share(*nāl-kāṇam) || 3 aḷa-cups (27.6L) · Tribute(*iṟai) · House · Junior(*cikka)",
+      "copies_in_corpus": 1
+    },
+    {
+      "obj_id": "L:1786",
+      "ref_id": "H-904",
+      "catalogue": "Lipi",
+      "site": "Harappa",
+      "object_kind": "tablets",
+      "lipi_type": "TAB:I",
+      "findspot": "D-|--|-S20/7",
+      "n_faces": 2,
+      "total_signs": 10,
+      "unlocked_tier": "Key8A_266_Strict",
+      "is_strict_266": true,
+      "has_wave56_sign": true,
+      "has_split_824": false,
+      "is_complementary_who_meas": true,
+      "numeral_equality": false,
+      "numeral_prod12": false,
+      "face_classes": "WHO_OFFICE_HOUSE || MEASURE_RATION",
+      "face_signs": "002-840-032-740 || 817-368-645-900-033-700",
+      "proto_dravidian_faces": "*iru *iṇai *iru *kuṭi/*kuṭam || *kāṇam *koṭi *kaṭa/*kaṭam *tiṅkaḷ *mū *aḷa",
+      "english_unified_transaction": "2 · Pact(*iṇai) · 2 · House || Share(*kāṇam) · Grant(*koṭi) · Passage-Tax(*kaṭam) · Month(*tiṅkaḷ) · 3 aḷa-cups (27.6L)",
+      "copies_in_corpus": 1
+    },
+    {
+      "obj_id": "L:1240",
+      "ref_id": "H-209",
+      "catalogue": "Lipi",
+      "site": "Harappa",
+      "object_kind": "tablets",
+      "lipi_type": "TAB:B",
+      "findspot": "F-|--|--",
+      "n_faces": 2,
+      "total_signs": 8,
+      "unlocked_tier": "Key8A_266_Strict",
+      "is_strict_266": true,
+      "has_wave56_sign": true,
+      "has_split_824": false,
+      "is_complementary_who_meas": true,
+      "numeral_equality": false,
+      "numeral_prod12": false,
+      "face_classes": "WHO_OFFICE_HOUSE || MEASURE_RATION",
+      "face_signs": "055-255-435-690-921-400 || 032-700",
+      "proto_dravidian_faces": "*paṉṉiru *mutal *tōṭṭi *kaṭṭu *vil *cikka/*cikkam || *iru *aḷa",
+      "english_unified_transaction": "12 · Principal(*mutal) · Watchman(*tōṭṭi) · Store-Bundle(*kaṭṭu) · Sale(*vil) · Junior(*cikka) || 2 aḷa-cups (18.4L)",
+      "copies_in_corpus": 1
+    },
+    {
+      "obj_id": "L:1677",
+      "ref_id": "H-786",
+      "catalogue": "Lipi",
+      "site": "Harappa",
+      "object_kind": "tablets",
+      "lipi_type": "TAB:B",
+      "findspot": "--|--|--",
+      "n_faces": 2,
+      "total_signs": 6,
+      "unlocked_tier": "Key8A_266_Strict",
+      "is_strict_266": true,
+      "has_wave56_sign": true,
+      "has_split_824": true,
+      "is_complementary_who_meas": false,
+      "numeral_equality": false,
+      "numeral_prod12": false,
+      "face_classes": "COMMODITY_TAX_SHARE || WHO_OFFICE_HOUSE",
+      "face_signs": "413-892-824b || 415-220-520",
+      "proto_dravidian_faces": "*ari *vil *nāl-kāṇam || *kavar *mīṉ *vēḷ/*vēl",
+      "english_unified_transaction": "Grain-Tax(*ari) · Sale(*vil) · 4-Share(*nāl-kāṇam) || Control(*kavar) · Star-Clan(*mīṉ) · Lord(*vēḷ)",
+      "copies_in_corpus": 1
+    },
+    {
+      "obj_id": "L:459",
+      "ref_id": "H-1991",
+      "catalogue": "Lipi",
+      "site": "Harappa",
+      "object_kind": "tablets",
+      "lipi_type": "TAB:B",
+      "findspot": "ETrench 54|--|--",
+      "n_faces": 2,
+      "total_signs": 6,
+      "unlocked_tier": "Key8A_266_Strict",
+      "is_strict_266": true,
+      "has_wave56_sign": true,
+      "has_split_824": true,
+      "is_complementary_who_meas": false,
+      "numeral_equality": false,
+      "numeral_prod12": false,
+      "face_classes": "COMMODITY_TAX_SHARE || WHO_OFFICE_HOUSE",
+      "face_signs": "413-892-824b || 415-100-740",
+      "proto_dravidian_faces": "*ari *vil *nāl-kāṇam || *kavar *talai *kuṭi/*kuṭam",
+      "english_unified_transaction": "Grain-Tax(*ari) · Sale(*vil) · 4-Share(*nāl-kāṇam) || Control(*kavar) · Chief(*talai) · House",
+      "copies_in_corpus": 1
+    },
+    {
+      "obj_id": "L:472",
+      "ref_id": "H-2084",
+      "catalogue": "Lipi",
+      "site": "Harappa",
+      "object_kind": "tablets",
+      "lipi_type": "TAB:I",
+      "findspot": "ETrench 54|--|--",
+      "n_faces": 2,
+      "total_signs": 6,
+      "unlocked_tier": "Key8A_266_Strict",
+      "is_strict_266": true,
+      "has_wave56_sign": true,
+      "has_split_824": true,
+      "is_complementary_who_meas": false,
+      "numeral_equality": false,
+      "numeral_prod12": false,
+      "face_classes": "WHO_OFFICE_HOUSE || COMMODITY_TAX_SHARE",
+      "face_signs": "235-555-526 || 413-892-824b",
+      "proto_dravidian_faces": "*oḷi-mīṉ *nāṭu *uḻalai || *ari *vil *nāl-kāṇam",
+      "english_unified_transaction": "Bright-Star · District-Gate (*nāṭṭumeṭṭu) || Grain-Tax(*ari) · Sale(*vil) · 4-Share(*nāl-kāṇam)",
+      "copies_in_corpus": 1
+    },
+    {
+      "obj_id": "L:532",
+      "ref_id": "H-2069",
+      "catalogue": "Lipi",
+      "site": "Harappa",
+      "object_kind": "tablets",
+      "lipi_type": "TAB:I",
+      "findspot": "E-ETTrench 10W|--|--",
+      "n_faces": 2,
+      "total_signs": 8,
+      "unlocked_tier": "Key8A_266_Strict",
+      "is_strict_266": true,
+      "has_wave56_sign": true,
+      "has_split_824": false,
+      "is_complementary_who_meas": true,
+      "numeral_equality": false,
+      "numeral_prod12": false,
+      "face_classes": "MEASURE_RATION || WHO_OFFICE_HOUSE",
+      "face_signs": "590-705-868 || 550-525-400-034-700",
+      "proto_dravidian_faces": "*mūṭai *kalam/*kaḷam *mukku || *nāṭu *uḻalai/*meṭṭu *cikka/*cikkam *nāl *aḷa",
+      "english_unified_transaction": "Bale(*mūṭai) · Kalam(111L) · Kalam-Ring(*mukku) || District-Gate (*nāṭṭumeṭṭu) · Junior(*cikka) · 4 aḷa-cups (36.8L)",
+      "copies_in_corpus": 1
+    },
+    {
+      "obj_id": "L:1321",
+      "ref_id": "H-299",
+      "catalogue": "Lipi",
+      "site": "Harappa",
+      "object_kind": "tablets",
+      "lipi_type": "TAB:I",
+      "findspot": "--|--|--",
+      "n_faces": 2,
+      "total_signs": 7,
+      "unlocked_tier": "Key7A_227",
+      "is_strict_266": true,
+      "has_wave56_sign": true,
+      "has_split_824": false,
+      "is_complementary_who_meas": true,
+      "numeral_equality": false,
+      "numeral_prod12": false,
+      "face_classes": "MEASURE_RATION || WHO_OFFICE_HOUSE",
+      "face_signs": "590-706-868 || 255-435-156-400",
+      "proto_dravidian_faces": "*mūṭai 705 *mukku || *mutal *tōṭṭi 154 *cikka/*cikkam",
+      "english_unified_transaction": "Bale(*mūṭai) · Kalam · Kalam-Ring(*mukku) || Principal(*mutal) · Watchman(*tōṭṭi) · Guard(*kā) · Junior(*cikka)",
+      "copies_in_corpus": 4
+    },
+    {
+      "obj_id": "L:1778",
+      "ref_id": "H-896",
+      "catalogue": "Lipi",
+      "site": "Harappa",
+      "object_kind": "tablets",
+      "lipi_type": "TAB:I",
+      "findspot": "FTrench I|--|-M11/18",
+      "n_faces": 2,
+      "total_signs": 7,
+      "unlocked_tier": "Key7A_227",
+      "is_strict_266": true,
+      "has_wave56_sign": true,
+      "has_split_824": false,
+      "is_complementary_who_meas": true,
+      "numeral_equality": false,
+      "numeral_prod12": false,
+      "face_classes": "MEASURE_RATION || WHO_OFFICE_HOUSE",
+      "face_signs": "590-705-868 || 255-435-156-400",
+      "proto_dravidian_faces": "*mūṭai *kalam/*kaḷam *mukku || *mutal *tōṭṭi 154 *cikka/*cikkam",
+      "english_unified_transaction": "Bale(*mūṭai) · Kalam(111L) · Kalam-Ring(*mukku) || Principal(*mutal) · Watchman(*tōṭṭi) · Guard(*kā) · Junior(*cikka)",
+      "copies_in_corpus": 2
+    },
+    {
+      "obj_id": "L:1319",
+      "ref_id": "H-297",
+      "catalogue": "Lipi",
+      "site": "Harappa",
+      "object_kind": "tablets",
+      "lipi_type": "TAB:I",
+      "findspot": "--|--|--",
+      "n_faces": 2,
+      "total_signs": 7,
+      "unlocked_tier": "Key7A_227",
+      "is_strict_266": true,
+      "has_wave56_sign": true,
+      "has_split_824": false,
+      "is_complementary_who_meas": true,
+      "numeral_equality": false,
+      "numeral_prod12": false,
+      "face_classes": "WHO_OFFICE_HOUSE || MEASURE_RATION",
+      "face_signs": "706-630-336-151-400 || 034-700",
+      "proto_dravidian_faces": "705 *kūṭu *mūṭai *kā *cikka/*cikkam || *nāl *aḷa",
+      "english_unified_transaction": "Kalam · Granary(*kūṭu) · Grain-Bin(*mūṭai) · Guard(*kā) · Junior(*cikka) || 4 aḷa-cups (36.8L)",
+      "copies_in_corpus": 1
+    },
+    {
+      "obj_id": "L:1712",
+      "ref_id": "H-823",
+      "catalogue": "Lipi",
+      "site": "Harappa",
+      "object_kind": "tablets",
+      "lipi_type": "TAB:B",
+      "findspot": "--|--|--",
+      "n_faces": 2,
+      "total_signs": 7,
+      "unlocked_tier": "Key7A_227",
+      "is_strict_266": false,
+      "has_wave56_sign": true,
+      "has_split_824": false,
+      "is_complementary_who_meas": true,
+      "numeral_equality": false,
+      "numeral_prod12": false,
+      "face_classes": "MEASURE_RATION || WHO_OFFICE_HOUSE",
+      "face_signs": "034-700 || 692-060-240-636-740",
+      "proto_dravidian_faces": "*nāl *aḷa || [PRECINCT-HEADER] *-uḷ *katir-mīṉ *kūṭu *kuṭi/*kuṭam",
+      "english_unified_transaction": "4 aḷa-cups (36.8L) || In [Precinct-Header] · Rayed-Star · Granary-House (*kūṭṭukkuṭi)",
+      "copies_in_corpus": 1
+    },
+    {
+      "obj_id": "L:1781",
+      "ref_id": "H-899",
+      "catalogue": "Lipi",
+      "site": "Harappa",
+      "object_kind": "tablets",
+      "lipi_type": "TAB:I",
+      "findspot": "D-|--|-S30/4",
+      "n_faces": 2,
+      "total_signs": 7,
+      "unlocked_tier": "Key7A_227",
+      "is_strict_266": true,
+      "has_wave56_sign": true,
+      "has_split_824": false,
+      "is_complementary_who_meas": true,
+      "numeral_equality": false,
+      "numeral_prod12": false,
+      "face_classes": "MEASURE_RATION || WHO_OFFICE_HOUSE",
+      "face_signs": "590-705-868 || 240-231-520-400",
+      "proto_dravidian_faces": "*mūṭai *kalam/*kaḷam *mukku || *katir-mīṉ *uḷ-mīṉ *vēḷ/*vēl *cikka/*cikkam",
+      "english_unified_transaction": "Bale(*mūṭai) · Kalam(111L) · Kalam-Ring(*mukku) || Rayed-Star · Inner-Star · Lord(*vēḷ) · Junior(*cikka)",
+      "copies_in_corpus": 1
+    },
+    {
+      "obj_id": "L:295",
+      "ref_id": "H-1187",
+      "catalogue": "Lipi",
+      "site": "Harappa",
+      "object_kind": "tablets",
+      "lipi_type": "TAB:I",
+      "findspot": "AB-|--|-P24/11",
+      "n_faces": 2,
+      "total_signs": 5,
+      "unlocked_tier": "Key8A_266_Strict",
+      "is_strict_266": true,
+      "has_wave56_sign": true,
+      "has_split_824": true,
+      "is_complementary_who_meas": false,
+      "numeral_equality": false,
+      "numeral_prod12": false,
+      "face_classes": "COMMODITY_TAX_SHARE || WHO_OFFICE_HOUSE",
+      "face_signs": "413-892-824b || 924-740",
+      "proto_dravidian_faces": "*ari *vil *nāl-kāṇam || *vari-tiṅkaḷ *kuṭi/*kuṭam",
+      "english_unified_transaction": "Grain-Tax(*ari) · Sale(*vil) · 4-Share(*nāl-kāṇam) || Trade-Month(*vari-tiṅkaḷ) · House",
+      "copies_in_corpus": 1
+    }
+  ]
+}
