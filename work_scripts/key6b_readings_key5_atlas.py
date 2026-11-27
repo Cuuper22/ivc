@@ -11,7 +11,7 @@ Part 1:
   - Decodes every intact face across Lipi (3,600) and unseen Mahadevan new texts (563 with mapped Lipi digits;
     flagging any unmapped Mahadevan `X###` tokens transparently so both mapped 2,262 and strict zero-X 2,212
     counts are crystal clear).
-  - Generates `/home/antigravity/Cuuper22/ivc/READINGS_KEY5.md` (5 chapters) and
+  - Generates `READINGS_KEY5.md` (5 chapters) and
     `work_data/key6b/decoded_2262_corpus.csv`.
 
 Part 2 (5,000 exact permutations each, stone + moulded-batch deduplicated):
@@ -32,7 +32,7 @@ from collections import Counter, defaultdict
 
 import numpy as np
 
-ROOT = "/home/antigravity/Cuuper22/ivc"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LEX_PATH = os.path.join(ROOT, "work_data", "key5a", "master_lexicon_after_key5a.csv")
 CORPUS_PATH = os.path.join(ROOT, "work_data", "reader_v3", "corpus_soundfree_readings.csv")
 LIPI_PATH = os.path.join(ROOT, "research", "data", "open_prototype", "lipi", "metadata_filtered.csv")
@@ -2175,7 +2175,7 @@ def main():
     )
 
     # =========================================================================
-    # PART 1 DELIVERABLE: `/home/antigravity/Cuuper22/ivc/READINGS_KEY5.md`
+    # PART 1 DELIVERABLE: `READINGS_KEY5.md`
     # =========================================================================
     generate_readings_key5(
         lex=lex,
@@ -2510,7 +2510,7 @@ def build_explorer_json(lex, faces_strict, intact_faces, r3_rows, lipi_by_id, va
 
 
 # =============================================================================
-# 7. GENERATE `/home/antigravity/Cuuper22/ivc/READINGS_KEY5.md`
+# 7. GENERATE `READINGS_KEY5.md`
 # =============================================================================
 def generate_readings_key5(lex, faces_2262, faces_strict, intact_faces, r3_rows, lipi_by_id, dedup_events, val_stats):
     cs = val_stats["corpus_summary"]
@@ -2863,7 +2863,7 @@ def generate_report_key6b(val_stats, t6b1_rows, t6b2_rows, t6b3_city_rows, t6b3_
     lines.append("# Key #6B Report: 140-Sign Translation Book (`READINGS_KEY5.md`), Stratigraphic Continuity & Blind Physical Atlas")
     lines.append("")
     lines.append("**Script:** `work_scripts/key6b_readings_key5_atlas.py` (rerunnable, exit 0, exact `N = 5,000` permutations)")
-    lines.append("**Deliverables:** [`READINGS_KEY5.md`](file:///home/antigravity/Cuuper22/ivc/READINGS_KEY5.md) · `work_data/key6b/decoded_2262_corpus.csv` · `work_data/key6b/explorer_data.json` · `work_data/key6b/validation_key5_5000perm.json` · `work_data/key6b/test6b1_seal_area.csv` · `work_data/key6b/test6b2_time_stability.csv` · `work_data/key6b/test6b3_city_object.csv`")
+    lines.append("**Deliverables:** `READINGS_KEY5.md` · `work_data/key6b/decoded_2262_corpus.csv` · `work_data/key6b/explorer_data.json` · `work_data/key6b/validation_key5_5000perm.json` · `work_data/key6b/test6b1_seal_area.csv` · `work_data/key6b/test6b2_time_stability.csv` · `work_data/key6b/test6b3_city_object.csv`")
     lines.append("")
     lines.append("## Headline Findings")
     lines.append("")

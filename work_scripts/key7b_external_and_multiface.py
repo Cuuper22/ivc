@@ -31,7 +31,7 @@ from collections import Counter, defaultdict
 
 import numpy as np
 
-BASE = "/home/antigravity/Cuuper22/ivc"
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_DIR = os.path.join(BASE, "work_data", "key7b")
 REPORT_MD = os.path.join(BASE, "jobs", "out", "key7b_external_and_multiface.md")
 os.makedirs(OUT_DIR, exist_ok=True)

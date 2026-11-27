@@ -30,7 +30,7 @@ import random
 import re
 from pathlib import Path
 
-ROOT = Path("/home/antigravity/Cuuper22/ivc")
+ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "work_data" / "key3b"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 

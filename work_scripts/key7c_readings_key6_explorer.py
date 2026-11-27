@@ -19,7 +19,7 @@ import re
 import sys
 from collections import Counter, defaultdict
 
-ROOT = "/home/antigravity/Cuuper22/ivc"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "work_scripts"))
 
 import key6b_readings_key5_atlas as k6b
@@ -1105,7 +1105,7 @@ def main():
     five_wave = build_five_wave_7family()
 
     # -------------------------------------------------------------------------
-    # STEP 3: GENERATE `/home/antigravity/Cuuper22/ivc/READINGS_KEY6.md`
+    # STEP 3: GENERATE `READINGS_KEY6.md`
     # -------------------------------------------------------------------------
     stats_bundle = {
         "n_intact": n_intact,

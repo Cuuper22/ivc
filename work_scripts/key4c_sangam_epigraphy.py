@@ -5,7 +5,7 @@ with Matched Rival Epigraphic Controls (Early Indo-Aryan/Prakrit Brahmi & Ur III
 and 5,000-Shuffle Blind Statistical Tests.
 
 Strictly rerunnable script. Saves all outputs to:
-  /home/antigravity/Cuuper22/ivc/work_data/key4c/
+  work_data/key4c/
 """
 
 import csv
@@ -18,7 +18,7 @@ from collections import Counter, defaultdict
 
 import numpy as np
 
-BASE = "/home/antigravity/Cuuper22/ivc"
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_DIR = f"{BASE}/work_data/key4c"
 os.makedirs(OUT_DIR, exist_ok=True)
 

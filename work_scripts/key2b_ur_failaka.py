@@ -53,7 +53,7 @@ def fisher_exact(table, alternative="greater"):
     return odds, min(1.0, pval)
 
 
-ROOT = Path("/home/antigravity/Cuuper22/ivc")
+ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "work_data" / "key2b"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 

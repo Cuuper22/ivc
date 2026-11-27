@@ -34,7 +34,7 @@ import time
 from collections import Counter, defaultdict
 import numpy as np
 
-ROOT = "/home/antigravity/Cuuper22/ivc"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_DIR = os.path.join(ROOT, "work_data", "key4d")
 os.makedirs(OUT_DIR, exist_ok=True)
 

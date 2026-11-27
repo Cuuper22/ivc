@@ -13,7 +13,7 @@ import json
 import os
 from collections import Counter
 
-ROOT = "/home/antigravity/Cuuper22/ivc"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_DIR = os.path.join(ROOT, "work_data", "key4_master")
 os.makedirs(OUT_DIR, exist_ok=True)
 

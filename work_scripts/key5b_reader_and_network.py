@@ -17,7 +17,7 @@ Part 1:
       * `test5b2_object_functions.csv`
       * `test5b3_seal_size_ranks.csv`
       * `test5b4_intercity_network.csv`
-  - Generates the human-readable bilingual book `/home/antigravity/Cuuper22/ivc/READINGS_KEY4.md`.
+  - Generates the human-readable bilingual book `READINGS_KEY4.md`.
 
 Part 2:
   - 4 blind archaeological & spatial network validation tests (5,000 exact permutations each),
@@ -35,7 +35,7 @@ from collections import Counter, defaultdict
 
 import numpy as np
 
-ROOT = "/home/antigravity/Cuuper22/ivc"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LEX_PATH = os.path.join(ROOT, "work_data", "key4_master", "master_locked_lexicon.csv")
 CORPUS_PATH = os.path.join(ROOT, "work_data", "reader_v3", "corpus_soundfree_readings.csv")
 LIPI_PATH = os.path.join(ROOT, "research", "data", "open_prototype", "lipi", "metadata_filtered.csv")
